@@ -1,0 +1,107 @@
+{
+  "note": "Häufige Glaubens- und Verständnisfragen — Cluster D des Audits 2026-07-27. Erklärt Grundwissen und benennt Meinungsverschiedenheiten, ohne Partei zu ergreifen.",
+  "eintraege": [
+    {
+      "id": "isa-und-maryam",
+      "titel": "Isa (Jesus) und Maryam im Islam",
+      "tags": [
+        "jesus im islam",
+        "isa",
+        "maryam",
+        "maria",
+        "ist jesus gottes sohn",
+        "kreuzigung",
+        "christentum unterschied"
+      ],
+      "text": "Isa, der Sohn Maryams, ist im Islam einer der größten Gesandten Allahs und einer der fünf Entschlossenen. Der Koran nennt ihn al-Masih, den Messias, berichtet von seiner Geburt ohne Vater als Zeichen Allahs, von seinen Wundern mit Allahs Erlaubnis und davon, dass er das Evangelium brachte und einen Gesandten nach sich ankündigte. Maryam hat als einzige Frau eine ganze Sure ihres Namens; der Koran nennt sie auserwählt und rein vor allen Frauen der Welt — Muslime ehren sie in hohem Maß. Der Unterschied zum christlichen Bekenntnis liegt an zwei Stellen: Isa ist Diener und Gesandter Allahs, nicht Gottes Sohn und kein Teil einer Dreiheit; und nach dem Koran wurde er nicht gekreuzigt, sondern zu Allah erhoben. Wer Isa nicht anerkennt, ist kein Muslim — der Glaube an alle Propheten gehört zu den sechs Glaubensartikeln.",
+      "belege": ["Koran 3:45", "Koran 3:42", "Koran 4:171", "Koran 5:75", "Koran 19:16"]
+    },
+    {
+      "id": "sunniten-und-schiiten",
+      "titel": "Sunniten und Schiiten — worum geht es?",
+      "tags": [
+        "sunniten",
+        "schiiten",
+        "unterschied sunniten schiiten",
+        "spaltung",
+        "ali",
+        "kalifat",
+        "wer hat recht"
+      ],
+      "text": "Der Ursprung der Trennung ist historisch, nicht theologisch: Nach dem Tod des Propheten ﷺ im Jahr 632 stellte sich die Frage der Nachfolge in der Führung der Gemeinde. Die spätere sunnitische Mehrheit erkannte die Wahl Abu Bakrs und der folgenden Kalifen an, während sich eine Gruppe für Ali ibn Abi Talib und seine Nachkommen aussprach — aus dieser Partei (arabisch schia) wurde mit der Zeit eine eigene Tradition mit eigener Hadith-Sammlung, eigener Rechtslehre und eigenen Gedenktagen. Gemeinsam sind beiden der Koran, der Glaube an den einen Gott, an Muhammad ﷺ als Propheten, das Gebet, das Fasten, Zakat und Hadsch. Unterschiede zeigen sich in der Autorität der Imame, in Einzelheiten des Gebets und in der Bewertung mancher Gefährten. Der Koran mahnt eindringlich, gemeinsam am Seil Allahs festzuhalten und sich nicht zu spalten. Salati folgt in Inhalten der sunnitischen Mehrheitstradition und nennt es, wo sich Ansichten unterscheiden.",
+      "belege": ["Koran 3:103", "Koran 6:159", "Koran 49:10"]
+    },
+    {
+      "id": "dschihad",
+      "titel": "Was Dschihad bedeutet",
+      "tags": [
+        "dschihad",
+        "jihad",
+        "heiliger krieg",
+        "gewalt im islam",
+        "terror",
+        "was bedeutet dschihad wirklich"
+      ],
+      "text": "Das arabische Wort Dschihad heißt wörtlich Anstrengung oder Mühe, nicht Krieg — für Krieg steht im Arabischen das Wort Qital. Der Koran verwendet Dschihad zuerst für die Anstrengung auf dem Weg Allahs überhaupt: gegen die eigenen niederen Neigungen, für Wissen, für Gerechtigkeit, mit Vermögen und eigener Person. Wo der Koran von bewaffnetem Kampf spricht, ist er an Bedingungen gebunden: Er ist Verteidigung gegen die, die kämpfen, er darf die Grenzen nicht überschreiten, und Nichtkämpfende sind geschützt; endet der Angriff, endet der Kampf. Ausdrücklich gilt: Es gibt keinen Zwang im Glauben — Menschen zum Islam zu nötigen, ist untersagt. Terror gegen Zivilisten widerspricht diesen Grundlagen; der Koran stellt die ungerechtfertigte Tötung eines Menschen der Tötung der ganzen Menschheit gleich. Über Fragen von Krieg und Frieden urteilen zudem nicht Einzelpersonen, sondern anerkannte Gelehrte und legitime Autoritäten.",
+      "belege": ["Koran 22:78", "Koran 2:190", "Koran 2:256", "Koran 5:32", "Koran 29:69"]
+    },
+    {
+      "id": "warum-auf-arabisch-beten",
+      "titel": "Warum betet man auf Arabisch?",
+      "tags": [
+        "warum arabisch",
+        "gebet auf arabisch",
+        "muss ich arabisch koennen",
+        "uebersetzung im gebet",
+        "arabisch lernen",
+        "verstehe ich nichts"
+      ],
+      "text": "Der Koran wurde nach eigener Aussage als arabischer Koran herabgesandt; für Muslime ist er Allahs Wort im Wortlaut, eine Übersetzung gibt nur den Sinn wieder. Deshalb wird im Gebet der arabische Text rezitiert — dadurch beten Muslime weltweit dieselben Worte, und ein Reisender kann sich überall in jede Reihe stellen. Wer die Worte noch nicht kann, ist nicht ausgeschlossen: Man beginnt mit al-Fatiha und einer kurzen Sure, spricht sie zunächst nach der Umschrift und lernt Stück für Stück. Bittgebete außerhalb der festen Rezitation dürfen in jeder Sprache gesprochen werden — Allah versteht jedes Herz. Ob ein Anfänger die Fatiha übergangsweise in Übersetzung sprechen darf, wird von den Rechtsschulen unterschiedlich beantwortet; einig sind sich alle, dass das Ziel der arabische Text ist. Salati bietet dafür Umschrift, Wort-für-Wort-Übersetzung und Hörübungen an.",
+      "belege": ["Koran 12:2", "Koran 41:44", "Koran 26:195", "Koran 43:3"]
+    },
+    {
+      "id": "warum-laesst-allah-leid-zu",
+      "titel": "Warum lässt Allah Leid zu?",
+      "tags": [
+        "warum leid",
+        "warum laesst allah das zu",
+        "ungerechtigkeit",
+        "krankheit",
+        "pruefung",
+        "sinn von leid",
+        "zweifel"
+      ],
+      "text": "Der Koran verschweigt das Leid nicht, sondern erklärt es zum Teil der Prüfung: Tod und Leben sind erschaffen, um zu prüfen, wer am besten handelt, und geprüft wird mit Schlechtem wie mit Gutem. Dazu gehört die Zusage, dass niemandem mehr auferlegt wird, als er tragen kann, und dass mit der Bedrängnis Erleichterung kommt. Ein zweiter Teil der Antwort liegt in der Freiheit des Menschen: Viel Unrecht in der Welt geht auf menschliche Entscheidungen zurück, und der Auftrag lautet, dagegen einzutreten statt es hinzunehmen. Der dritte Teil ist das Jenseits — der Ausgleich, den diese Welt schuldig bleibt, wird dort vollzogen; kein Unrecht bleibt ungesehen. Der Koran verspricht denen, die geduldig bleiben, Segen und Rechtleitung. Wer den Boden unter den Füßen verliert, darf klagen: Auch Propheten haben ihre Not vor Allah ausgesprochen, und das gehört ausdrücklich zum Glauben, nicht dagegen.",
+      "belege": ["Koran 67:2", "Koran 21:35", "Koran 2:155", "Koran 2:286", "Koran 94:6"]
+    },
+    {
+      "id": "menschen-ohne-botschaft",
+      "titel": "Was ist mit Menschen, die nie vom Islam gehört haben?",
+      "tags": [
+        "nie vom islam gehoert",
+        "andere religionen",
+        "wer kommt ins paradies",
+        "gerechtigkeit allahs",
+        "ungehoerte botschaft",
+        "kinder verstorben"
+      ],
+      "text": "Der Koran beantwortet das mit einem klaren Grundsatz: Allah bestraft nicht, bevor Er einen Gesandten geschickt hat; Gesandte wurden ausdrücklich geschickt, damit die Menschen kein Argument gegen Allah haben. Wen die Botschaft nachweislich nie in verständlicher Form erreicht hat, den trifft daher nicht dieselbe Verantwortung wie jemanden, der sie kannte und ablehnte. Die klassischen Gelehrten sprechen hier von den „Leuten der Zwischenzeit“ und gehen überwiegend davon aus, dass sie am Jüngsten Tag eine eigene Prüfung erfahren. Wie es einem bestimmten Menschen ergeht, entscheidet niemand von uns: Über das Schicksal Einzelner im Jenseits urteilt allein Allah, und Muslime sprechen keinem namentlich Paradies oder Hölle zu. Für Kinder, die vor der Reife sterben, gilt nach der Mehrheitsmeinung, dass sie nicht zur Rechenschaft gezogen werden. Was bleibt, ist die eigene Aufgabe: freundlich einladen, nicht richten.",
+      "belege": ["Koran 17:15", "Koran 4:165", "Koran 6:131", "Koran 16:125"]
+    },
+    {
+      "id": "sufismus-tasawwuf",
+      "titel": "Was ist Sufismus (Tasawwuf)?",
+      "tags": [
+        "sufismus",
+        "tasawwuf",
+        "sufi",
+        "derwisch",
+        "mystik im islam",
+        "tariqa",
+        "ihsan"
+      ],
+      "text": "Tasawwuf, im Deutschen meist Sufismus genannt, bezeichnet die Beschäftigung mit der inneren Seite des Glaubens: Aufrichtigkeit der Absicht, Reinigung des Herzens von Hochmut, Neid und Heuchelei, beständiges Gedenken Allahs. Sein klassischer Bezugspunkt ist der Begriff Ihsan aus dem Hadith Dschibril — Allah zu dienen, als sähe man Ihn. In diesem Sinn ist Tasawwuf keine eigene Religion und keine Sekte, sondern ein Fachgebiet neben Aqida und Fiqh, und viele große Gelehrte der Geschichte waren zugleich Rechtsgelehrte und Sufis. Über die Jahrhunderte bildeten sich Orden (Tariqa) mit eigenen Lehrerketten und Dhikr-Formen. Beurteilt werden solche Formen daran, ob sie sich an Koran und Sunna halten; wo Praktiken darüber hinausgehen — etwa übersteigerte Verehrung von Lehrern oder Gräbern — widersprechen ihnen andere Gelehrte deutlich. Diese Bewertung ist ein bekannter innerislamischer Meinungsstreit, kein Randthema; wer tiefer einsteigen will, sollte kundige Gelehrte fragen.",
+      "belege": ["an-Nawawī Nr. 2 — Sahih Muslim 8", "Koran 91:9", "Koran 26:89"]
+    }
+  ]
+}

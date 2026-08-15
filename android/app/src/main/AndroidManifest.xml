@@ -1,0 +1,200 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+  <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+  <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+  <uses-permission android:name="android.permission.ACTIVITY_RECOGNITION" tools:node="remove"/>
+  <uses-permission android:name="android.permission.CAMERA"/>
+  <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+  <uses-permission android:name="android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK"/>
+  <uses-permission android:name="android.permission.INTERNET"/>
+  <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS"/>
+  <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" android:maxSdkVersion="32" tools:replace="android:maxSdkVersion"/>
+  <!-- Hifz-Rezitations-Check nimmt seit 2026-07-20 echt ueber das Mikrofon auf
+       (src/features/hifz, @fugood/react-native-audio-pcm-stream + whisper.rn).
+       app.config.ts setzt dafuer expo-audio recordAudioAndroid:true — das wirkt
+       aber NUR beim `expo prebuild`, und dieses Projekt checkt android/ ein und
+       baut ohne Prebuild (eas.json hat keinen Prebuild-Schritt). Der Eintrag
+       fehlte deshalb in der ausgelieferten APK, die Aufnahme haette auf Geraeten
+       nicht starten koennen. Beim naechsten Prebuild bleibt er unveraendert. -->
+  <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+  <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+  <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM"/>
+  <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+  <uses-permission android:name="android.permission.VIBRATE"/>
+  <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" android:maxSdkVersion="32" tools:replace="android:maxSdkVersion"/>
+  <uses-permission android:name="com.google.android.gms.permission.ACTIVITY_RECOGNITION" tools:node="remove"/>
+  <queries>
+    <intent>
+      <action android:name="android.intent.action.VIEW"/>
+      <category android:name="android.intent.category.BROWSABLE"/>
+      <data android:scheme="https"/>
+    </intent>
+  </queries>
+  <application android:name=".MainApplication" android:label="@string/app_name" android:icon="@mipmap/ic_launcher" android:roundIcon="@mipmap/ic_launcher_round" android:allowBackup="true" android:theme="@style/AppTheme" android:supportsRtl="true" android:enableOnBackInvokedCallback="false">
+    <meta-data android:name="com.google.firebase.messaging.default_notification_color" android:resource="@color/notification_icon_color"/>
+    <meta-data android:name="com.google.firebase.messaging.default_notification_icon" android:resource="@drawable/notification_icon"/>
+    <meta-data android:name="expo.modules.notifications.default_notification_color" android:resource="@color/notification_icon_color"/>
+    <meta-data android:name="expo.modules.notifications.default_notification_icon" android:resource="@drawable/notification_icon"/>
+    <!-- expo-updates (EAS Update). Dieses Projekt baut Android OHNE `expo
+         prebuild`, daher stehen die Werte hier von Hand - sie muessen exakt dem
+         entsprechen, was der Config-Plugin aus app.config.ts `updates` erzeugen
+         wuerde (@expo/config-plugins AndroidConfig.Updates):
+           ENABLED                     <- updates.enabled (Default true)
+           EXPO_UPDATE_URL             <- updates.url
+           EXPO_UPDATES_CHECK_ON_LAUNCH<- updates.checkAutomatically
+                                          'ON_ERROR_RECOVERY' => ERROR_RECOVERY_ONLY
+           EXPO_UPDATES_LAUNCH_WAIT_MS <- updates.fallbackToCacheTimeout
+           EXPO_RUNTIME_VERSION        <- runtimeVersion-Policy 'appVersion';
+                                          @string/expo_runtime_version wird in
+                                          app/build.gradle aus versionName
+                                          generiert (resValue), damit beide nicht
+                                          auseinanderlaufen koennen.
+         Der Update-KANAL steht bewusst nicht hier: den setzt EAS Build beim
+         Bauen aus eas.json (channel "production"/"preview"). -->
+    <meta-data android:name="expo.modules.updates.ENABLED" android:value="true"/>
+    <meta-data android:name="expo.modules.updates.ENABLE_BSDIFF_PATCH_SUPPORT" android:value="true"/>
+    <!-- Diese ID MUSS die aus app.config.ts (`extra.eas.projectId`) sein.
+         Bis 1.41.0 stand hier 35aa8788-… = @salatipro/salatibox, waehrend
+         app.config.ts auf f698729e-… = @salatibox/salatibox zeigt. Da Android
+         hier lokal gebaut wird (kein prebuild, das die Datei erzeugen wuerde),
+         fragten Android-Installationen ihre Updates bei einem anderen Projekt
+         ab als iOS-Installationen — ein Update haette immer nur eine der
+         beiden Plattformen erreicht. -->
+    <meta-data android:name="expo.modules.updates.EXPO_UPDATE_URL" android:value="https://u.expo.dev/f698729e-6b73-428e-b757-cef7662c4ce6"/>
+    <meta-data android:name="expo.modules.updates.EXPO_RUNTIME_VERSION" android:value="@string/expo_runtime_version"/>
+    <meta-data android:name="expo.modules.updates.EXPO_UPDATES_CHECK_ON_LAUNCH" android:value="ERROR_RECOVERY_ONLY"/>
+    <meta-data android:name="expo.modules.updates.EXPO_UPDATES_LAUNCH_WAIT_MS" android:value="0"/>
+    <service android:name="com.reactnativeandroidwidget.RNWidgetCollectionService" android:permission="android.permission.BIND_REMOTEVIEWS"/>
+    <!-- PER-WIDGET Konfiguration (react-native-android-widget): die 5 Widget-
+         Provider zeigen per android:configure auf diese Activity. Android
+         startet sie beim Platzieren/Bearbeiten und hostet den RN-Config-Screen
+         (registerWidgetConfigurationScreen in index.android.js). Manuell
+         gepflegt, da dieses Projekt ohne expo prebuild baut. -->
+    <!-- Theme BEWUSST @style/AppTheme (nicht die Splash-Theme wie MainActivity):
+         die Splash->App-Transition laeuft nur ueber SplashScreenManager.
+         registerOnActivity(), das ausschliesslich MainActivity aufruft. Mit der
+         Splash-Theme wuerde diese Config-Activity im Splash-Zustand haengen
+         (falsches/kein Fenster-Theme -> Fehldarstellung/Absturz-Risiko). Portrait
+         + configChanges spiegeln MainActivity, damit eine Rotation die RN-Activity
+         nicht neu erzeugt (Recreate mit non-null savedInstanceState ist ein
+         bekannter RN-Crash-Vektor; die native Activity uebergibt onCreate zudem
+         null, s. WidgetConfigurationActivity.java). -->
+    <activity android:name=".WidgetConfigurationActivity" android:exported="true" android:theme="@style/AppTheme" android:screenOrientation="portrait" android:configChanges="keyboard|keyboardHidden|orientation|screenSize|screenLayout|uiMode|smallestScreenSize|locale|layoutDirection">
+      <intent-filter>
+        <action android:name="android.appwidget.action.APPWIDGET_CONFIGURE"/>
+      </intent-filter>
+    </activity>
+    <service android:name="expo.modules.audio.service.AudioControlsService" android:exported="false" android:foregroundServiceType="mediaPlayback">
+      <intent-filter>
+        <action android:name="androidx.media3.session.MediaSessionService"/>
+      </intent-filter>
+    </service>
+    <!-- Orientierung ENTsperrt (Play-Console-Empfehlung Android 16, große Displays/
+         Foldables): kein android:screenOrientation mehr, dafür resizeableActivity=true.
+         Rotation/Resize ist sicher, weil android:configChanges bereits
+         orientation|screenSize|screenLayout|smallestScreenSize abfängt — die
+         RN-Activity wird bei Drehung NICHT neu erzeugt (kein Recreate mit non-null
+         savedInstanceState, der bekannte RN-Crash-Vektor), React Native re-layoutet
+         nur. Die App-UI ist durchgängig responsiv (ScrollView + MaxContentWidth,
+         Flexbox-Grids, Mushaf-Doppelseite ≥900px). Nur WidgetConfigurationActivity
+         bleibt bewusst Portrait (s. Kommentar oben). -->
+    <activity android:name=".MainActivity" android:supportsPictureInPicture="true" android:resizeableActivity="true" android:configChanges="keyboard|keyboardHidden|orientation|screenSize|screenLayout|uiMode|smallestScreenSize|assetsPaths|locale|layoutDirection" android:launchMode="singleTask" android:windowSoftInputMode="adjustResize" android:theme="@style/Theme.App.SplashScreen" android:exported="true">
+      <intent-filter>
+        <action android:name="android.intent.action.VIEW"/>
+        <category android:name="android.intent.category.DEFAULT"/>
+        <category android:name="android.intent.category.BROWSABLE"/>
+        <data android:scheme="salatibox"/>
+      </intent-filter>
+    </activity>
+    <!-- Custom-Icon/Name-Auswahl (settings.tsx "App-Icon"-Abschnitt, react-native-change-icon):
+         die LAUNCHER-Kategorie sitzt bewusst NICHT mehr direkt auf .MainActivity, sondern auf den
+         drei activity-alias-Eintraegen unten (Standard-Pattern fuer dynamische App-Icons, siehe
+         react-native-change-icon-Doku). Nur EIN Alias ist zur Laufzeit enabled=true, PackageManager.
+         setComponentEnabledSetting() schaltet um. Namenskonvention ".MainActivity<Name>" ist von der
+         Library vorgegeben, nicht frei waehlbar.
+         ACHTUNG: ein "expo prebuild" mit dem Clean Flag regeneriert AndroidManifest.xml aus
+         app.config.ts und verwirft diese drei Aliase wieder (kein Config Plugin dafuer vorhanden)
+         - nach einem Clean Prebuild muessen sie hier erneut ergaenzt werden. Bekannte Android
+         Plattform Einschraenkung: bei bereits installierten Bestandsnutzern kann das an den
+         Homescreen gepinnte Icon nach DIESEM Update auf manchen OEM Launchern kurz
+         verschwinden/grau werden, da es vorher direkt an .MainActivity gepinnt war und jetzt ueber
+         den neuen .MainActivityDefault Alias laeuft - beim naechsten Update/Neupinnen behebt sich
+         das von selbst, ist aber vor einem Store Release an echte Nutzer nochmal manuell zu
+         pruefen. -->
+    <activity-alias android:name=".MainActivityDefault" android:enabled="true" android:exported="true" android:icon="@mipmap/ic_launcher" android:roundIcon="@mipmap/ic_launcher_round" android:label="@string/app_name" android:targetActivity=".MainActivity">
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN"/>
+        <category android:name="android.intent.category.LAUNCHER"/>
+      </intent-filter>
+    </activity-alias>
+    <activity-alias android:name=".MainActivityEmerald" android:enabled="false" android:exported="true" android:icon="@mipmap/ic_launcher_emerald" android:roundIcon="@mipmap/ic_launcher_round_emerald" android:label="@string/app_name" android:targetActivity=".MainActivity">
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN"/>
+        <category android:name="android.intent.category.LAUNCHER"/>
+      </intent-filter>
+    </activity-alias>
+    <activity-alias android:name=".MainActivitySalatibox" android:enabled="false" android:exported="true" android:icon="@mipmap/ic_launcher_light" android:roundIcon="@mipmap/ic_launcher_round_light" android:label="@string/app_name_salatibox" android:targetActivity=".MainActivity">
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN"/>
+        <category android:name="android.intent.category.LAUNCHER"/>
+      </intent-filter>
+    </activity-alias>
+    <uses-native-library android:name="libOpenCL.so" android:required="false"/>
+    <uses-native-library android:name="libcdsprpc.so" android:required="false"/>
+    <!-- Zeichnet die Homescreen-Widgets genau zur Gebetszeit neu.
+         updatePeriodMillis allein (30 Min, im Doze ausgesetzt) liess das
+         Widget nach einer Gebetszeit auf dem alten Stand stehen, bis der
+         Nutzer die App oeffnete. Siehe alarm/WidgetAlarmReceiver.kt.
+         exported="false" reicht: BOOT_COMPLETED/TIME_SET sind geschuetzte
+         System-Broadcasts, der eigene WIDGET_ALARM kommt aus derselben App. -->
+    <receiver android:name=".alarm.WidgetAlarmReceiver" android:exported="false">
+      <intent-filter>
+        <action android:name="de.salatibox.de.WIDGET_ALARM"/>
+        <action android:name="android.intent.action.BOOT_COMPLETED"/>
+        <action android:name="android.intent.action.TIME_SET"/>
+        <action android:name="android.intent.action.TIMEZONE_CHANGED"/>
+      </intent-filter>
+    </receiver>
+    <receiver android:name=".widget.SalatiPrayer" android:exported="false" android:label="Gebetszeiten · Prayer Times">
+      <intent-filter>
+        <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+        <action android:name="de.salatibox.de.WIDGET_CLICK"/>
+      </intent-filter>
+      <meta-data android:name="android.appwidget.provider" android:resource="@xml/widgetprovider_salatiprayer"/>
+    </receiver>
+    <receiver android:name=".widget.SalatiWisdom" android:exported="false" android:label="Dua des Tages · Daily Dua">
+      <intent-filter>
+        <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+        <action android:name="de.salatibox.de.WIDGET_CLICK"/>
+      </intent-filter>
+      <meta-data android:name="android.appwidget.provider" android:resource="@xml/widgetprovider_salatiwisdom"/>
+    </receiver>
+    <receiver android:name=".widget.SalatiStreak" android:exported="false" android:label="Lernserie · Streak">
+      <intent-filter>
+        <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+        <action android:name="de.salatibox.de.WIDGET_CLICK"/>
+      </intent-filter>
+      <meta-data android:name="android.appwidget.provider" android:resource="@xml/widgetprovider_salatistreak"/>
+    </receiver>
+    <receiver android:name=".widget.SalatiCountdown" android:exported="false" android:label="Countdown · Next Prayer">
+      <intent-filter>
+        <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+        <action android:name="de.salatibox.de.WIDGET_CLICK"/>
+      </intent-filter>
+      <meta-data android:name="android.appwidget.provider" android:resource="@xml/widgetprovider_salaticountdown"/>
+    </receiver>
+    <receiver android:name=".widget.SalatiQibla" android:exported="false" android:label="Qibla-Richtung · Qibla">
+      <intent-filter>
+        <action android:name="android.appwidget.action.APPWIDGET_UPDATE"/>
+        <action android:name="de.salatibox.de.WIDGET_CLICK"/>
+      </intent-filter>
+      <meta-data android:name="android.appwidget.provider" android:resource="@xml/widgetprovider_salatiqibla"/>
+    </receiver>
+    <!-- Play-Console-Empfehlung 2026-07-19: entfernt die von ML Kit's Barcode-
+         Scanner-AAR fest vorgegebene Portrait-Sperre für Android-16-Großbild-
+         geräte. (MainActivity ist inzwischen ebenfalls entsperrt, s. oben; diese
+         AAR-Aktivität hatte eine EIGENE, in der Bibliothek fest verdrahtete
+         Portrait-Sperre, die nur per Manifest-Merger-Override zu entfernen ist.) -->
+    <activity android:name="com.google.mlkit.vision.codescanner.internal.GmsBarcodeScanningDelegateActivity"
+      tools:node="merge" tools:remove="android:screenOrientation"/>
+  </application>
+</manifest>

@@ -1,0 +1,2730 @@
+{
+  "nav": {
+    "prayerTimes": "Sala",
+    "qibla": "Kibla",
+    "quran": "Qur'an",
+    "calendar": "Kalenda",
+    "duas": "Dua",
+    "settings": "Mipangilio",
+    "more": "Zaidi",
+    "hadith": "Hadithi",
+    "mosques": "Misikiti",
+    "learn": "Jifunze Kusoma Qur'an",
+    "quiz": "Mazoezi na Maswali",
+    "hifz": "Tilawa",
+    "tasbih": "Tasbihi",
+    "guides": "Sala na Ibada",
+    "phrases": "Misemo na khutba",
+    "wisdom": "Hekima",
+    "tracker": "Kifuatiliaji cha Sala",
+    "khatmah": "Mpango wa Khatma",
+    "names": "Majina 99 ya Allah",
+    "fasting": "Funga",
+    "zakat": "Kikokotoo cha Zaka",
+    "zakatFitr": "Kikokotoo cha Zaka al-Fitr",
+    "mirath": "Kikokotoo cha Urithi",
+    "hijriConverter": "Kibadilisha Tarehe",
+    "halal": "Halali Karibu",
+    "halalScanner": "Skana ya Halali",
+    "study": "Masomo",
+    "sync": "Usawazishaji",
+    "impressum": "Taarifa za Kisheria",
+    "datenschutz": "Sera ya Faragha",
+    "agb": "Masharti ya Matumizi",
+    "changelog": "Mapya",
+    "tvConnect": "Unganisha TV",
+    "home": "Nyumbani",
+    "radio": "Redio ya Qur'an",
+    "themes": "Aya za Mada",
+    "achievements": "Beji",
+    "journeys": "Mipango ya Kila Siku",
+    "search": "Tafuta",
+    "gettingStarted": "Hatua za Kwanza",
+    "lernen": "Jifunze",
+    "media": "Media",
+    "lizenzen": "Vyanzo na leseni"
+  },
+  "common": {
+    "openSettings": "Fungua mipangilio ya mfumo",
+    "continue": "Endelea",
+    "clearSearch": "Futa utafutaji",
+    "openQuran": "Nenda kwenye Qur'an",
+    "loading": "Inapakia…",
+    "error": "Kuna hitilafu.",
+    "offline": "Nje ya mtandao - data ya mwisho iliyohifadhiwa inaonyeshwa.",
+    "retry": "Jaribu tena",
+    "done": "Imekamilika",
+    "cancel": "Ghairi",
+    "save": "Hifadhi",
+    "reset": "Weka upya",
+    "recommended": "Inapendekezwa",
+    "search": "Tafuta…",
+    "locating": "Inatafuta mahali…",
+    "useLocation": "Tumia eneo la sasa",
+    "refresh": "Onyesha upya",
+    "dismiss": "Funga",
+    "credit": "Imetengenezwa na Domenic Moran",
+    "new": "Mpya"
+  },
+  "quran": {
+    "surahN": "Sura {n}",
+    "surahs": "Sura",
+    "juz": "Juzuu",
+    "juzItem": "Juzuu",
+    "verse": "Aya",
+    "verses": "aya",
+    "searchPlaceholder": "Tafuta sura…",
+    "continueReading": "Endelea kusoma",
+    "recentlyRead": "Imesomwa hivi karibuni",
+    "bookmarks": "Alama za kurasa",
+    "noBookmarks": "Bado hakuna alama za kurasa - gusa ⊕ karibu na aya kwenye Msomaji.",
+    "listError": "Orodha ya sura haikuweza kupakiwa.",
+    "loadError": "Sura haikuweza kupakiwa.",
+    "playSurah": "Cheza sura",
+    "pause": "Simamisha",
+    "playbackSpeed": "Kasi ya kuchezea",
+    "chooseReciter": "Chagua msomaji",
+    "chooseTranslation": "Chagua tafsiri",
+    "tafsir": "Tafsiri",
+    "chooseTafsir": "Chagua tafsiri",
+    "notePlaceholder": "Dokezo lako kuhusu aya hii …",
+    "noteLabel": "Dokezo langu",
+    "transliteration": "Matamshi",
+    "isolatedLetters": "Herufi peke yake",
+    "tajweed": "Rangi za Tajwid",
+    "tajweedLegend": {
+      "ghunnah": "Ghunnah (sauti ya puani)",
+      "idgham": "Idgham (kuunganisha)",
+      "ikhafa": "Ikhfa (kuficha)",
+      "iqlab": "Iqlab (kubadilisha)",
+      "qalqalah": "Qalqalah (mrindimo)",
+      "madd": "Madd (kurefusha)",
+      "silent": "Herufi kimya"
+    },
+    "wordInfo": {
+      "title": "Taarifa za neno",
+      "translationLabel": "Maana",
+      "translationLanguageNote": "Maana ya kila neno kwa sasa inapatikana kwa Kiingereza pekee.",
+      "pronunciationLabel": "Kwa nini hutamkwa hivi?",
+      "lettersLabel": "Herufi",
+      "rootNote": "Mzizi wa neno haupatikani kwa sasa (hakuna chanzo cha kuaminika).",
+      "noData": "Hakuna taarifa zinazopatikana kwa neno hili kwa sasa. Angalia muunganisho wako wa intaneti.",
+      "rules": {
+        "ghunnah": "Ghunnah: sauti ya puani inayotamkwa kwa muda wa harakati mbili hivi.",
+        "idghamGhunnah": "Idgham na ghunnah: herufi inaungana na nun/mim inayofuata ikiambatana na sauti ya puani.",
+        "idghamNoGhunnah": "Idgham bila ghunnah: herufi inaungana kabisa na inayofuata, bila sauti ya puani.",
+        "ikhafa": "Ikhfa: nun/tanwin hutamkwa kwa kuficha - si kwa wazi wala kuunganika kabisa.",
+        "iqlab": "Iqlab: nun/tanwin inabadilika kuwa sauti ya mim kabla ya herufi ba.",
+        "qalqalah": "Qalqalah: herufi ق ط ب ج د hutoa mrindimo mfupi wa sauti zinapokuwa na sukuni, hasa wakati wa kusimama mwishoni mwa neno.",
+        "madd": "Madd: sauti inarefushwa, kutoka harakati 2 hadi 6 kulingana na kaida.",
+        "sunLetter": "Kaida ya herufi za jua: 'L' katika al- haitamkwi, badala yake herufi inayofuata inarudufishwa.",
+        "hamzatWasl": "Hamza ya kuunganisha: hutamkwa mwanzoni mwa usomaji tu, huachwa kimya wakati wa kuendelea kusoma katikati ya aya.",
+        "silentLetter": "Herufi kimya: huandikwa lakini haitamkwi."
+      }
+    },
+    "wordByWord": "Neno kwa neno",
+    "offline": "Nje ya mtandao",
+    "download": "Pakua",
+    "searchAyahs": "Tafuta Aya",
+    "searchAyahsPlaceholder": "Weka neno au mada…",
+    "searchResultsCount": "Matokeo {count}",
+    "searchNoResults": "Hakuna matokeo kwa \"{query}\".",
+    "searchError": "Utafutaji umeshindwa.",
+    "searchArabicNote": "Utafutaji wa Kiarabu unalinganisha maandishi halisi - maumbo yaliyotokana (mfano \"اصبر\" badala ya \"صبر\") yanahesabiwa kama matokeo tofauti.",
+    "loadMore": "Pakia zaidi",
+    "tafsirCount": "Tafsiri {count}",
+    "tafsirMultiHint": "Unaweza kuchagua hadi tafsiri 3 kwa wakati mmoja - gusa kuchagua/kuondoa.",
+    "viewSettings": "Muonekano na uchezaji",
+    "rangeTitle": "Cheza sehemu",
+    "rangeFrom": "Kutoka aya",
+    "rangeTo": "Hadi aya",
+    "rangeLoop": "Rudia",
+    "rangePlay": "Cheza sehemu",
+    "rangeSelectSurah": "Chagua sura",
+    "rangeCrossSurahHint": "Uchezaji unaenea katika sura kadhaa.",
+    "focusMode": "Hali ya Umakini",
+    "beginnerMode": "Jifunze kusoma",
+    "focusExit": "Ondoka kwenye Hali ya Umakini",
+    "sepia": "Sepia",
+    "mushafTitle": "Msahafu",
+    "mushafPage": "Ukurasa",
+    "mushafUthmani": "Uthmani",
+    "mushafIndopak": "IndoPak",
+    "mushafFontFallback": "IndoPak inahitaji herufi ambazo fonti yako haina – imeonyeshwa kwa {{font}}.",
+    "mushafGoTo": "Nenda",
+    "mushafNext": "Ukurasa unaofuata",
+    "mushafPrev": "Ukurasa uliopita",
+    "mushafOpen": "Muonekano wa Msahafu",
+    "pageMode": "Hali ya ukurasa",
+    "mushafDesc": "Kusoma ukurasa kwa ukurasa kama Msahafu wa kuchapishwa",
+    "shareImage": "Shiriki kama picha",
+    "reciteCheck": "Kagua usomaji",
+    "labelAll": "Vyote",
+    "labels": {
+      "favorite": "Vipendwa",
+      "memorize": "Kuhifadhi",
+      "reflect": "Kutafakari"
+    },
+    "searchInSurah": "Tafuta kwenye sura …",
+    "searchNext": "Matokeo yanayofuata",
+    "copyVerse": "Nakili aya",
+    "mushafWordInfo": "Taarifa za neno",
+    "followAlong": "Fuata pamoja",
+    "translation": "Tafsiri",
+    "fontSize": "Ukubwa wa fonti",
+    "mushafPlayAyah": "Sikiliza aya",
+    "khatmahGoTo": "Nenda kwenye ukurasa wa leo",
+    "secondTranslation": "Tafsiri ya pili",
+    "chooseSecondTranslation": "Chagua tafsiri ya pili",
+    "tajweedPracticeHint": "Gusa kaida ili kuangazia kwa muda mfupi matukio yote yake kwenye ukurasa.",
+    "mushafPlayPage": "Cheza ukurasa",
+    "history": {
+      "title": "Historia",
+      "empty": "Bado hakuna aya zilizosomwa - sura ulizosoma hivi karibuni zitaonekana hapa.",
+      "justNow": "Sasa hivi",
+      "minutesAgo": "dakika {n} zilizopita",
+      "hoursAgo": "saa {n} zilizopita",
+      "yesterday": "Jana",
+      "daysAgo": "siku {n} zilizopita"
+    },
+    "tafsirMore": "Onyesha zaidi",
+    "tafsirLess": "Onyesha kidogo",
+    "sajdaTitle": "Aya ya sijda",
+    "sajdaHintObligatory": "Kwa mtazamo ulioenea zaidi, sijda ni wajibu mahali hapa.",
+    "sajdaHintRecommended": "Sijda inapendekezwa unaposoma aya hii.",
+    "compareReciters": "Linganisha wasomaji",
+    "compareHint": "Itacheza {verse} mfululizo kwa wasomaji wawili.",
+    "compareReciterA": "Msomaji A",
+    "compareReciterB": "Msomaji B",
+    "comparePlay": "Cheza A → B",
+    "compareStageA": "Msomaji A …",
+    "compareStageB": "Msomaji B …",
+    "compareLoadError": "Sauti haikuweza kupakiwa.",
+    "chooseReciterA": "Chagua msomaji A",
+    "chooseReciterB": "Chagua msomaji B"
+  },
+  "hadith": {
+    "languagesNote": "Ensaiklopidia ya hadithi za Mtume zilizotafsiriwa — katika lugha zote 14 za programu",
+    "loadError": "Mkusanyiko haukuweza kupakiwa.",
+    "backToBooks": "Rudi kwenye sura",
+    "itemLoadError": "Hadithi haikuweza kupakiwa.",
+    "reference": "Kitabu {book}, Hadithi {hadith}",
+    "today": "Hadithi ya Leo",
+    "todaySource": "An-Nawawi 40, Na. {n}",
+    "searchTitle": "Tafuta Hadithi",
+    "searchAllHint": "Inatafuta katika mikusanyiko yote 13 - herufi 3 angalau",
+    "searchPlaceholder": "Neno la kutafuta …",
+    "searchedProgress": "Mikusanyiko {x}/{y} imetafutwa",
+    "resultsCount": "Matokeo {n}",
+    "noResults": "Hakuna matokeo yaliyopatikana",
+    "shareText": "Shiriki hadithi",
+    "shareImage": "Shiriki kama picha",
+    "topicsTitle": "Kwa mada",
+    "topicsSubtitle": "Ensaiklopidia ya Hadithi za Mtume Zilizotafsiriwa — kwa lugha zote 14 za programu",
+    "topicsCount": "Hadithi {n} zinapatikana kwa lugha yako",
+    "topicsSource": "Chanzo: HadeethEnc.com — kimenukuliwa bila mabadiliko",
+    "topicsEmpty": "Bado hakuna hadithi kwa lugha yako katika mada hii.",
+    "explanation": "Ufafanuzi",
+    "benefits": "Manufaa"
+  },
+  "search": {
+    "globalTitle": "Utafutaji wa jumla",
+    "title": "Tafuta",
+    "placeholder": "Qur’an, Hadithi, dua, kozi…",
+    "hint": "Weka angalau herufi 2",
+    "noResults": "Hakuna matokeo ya \"{query}\"",
+    "sectionQuran": "Qur’an",
+    "sectionHadith": "Hadithi",
+    "sectionDuas": "Dua",
+    "sectionCourses": "Kozi",
+    "moreDesc": "Tafuta Qur’an, Hadithi, dua na kozi kwa wakati mmoja"
+  },
+  "share": {
+    "action": "Shiriki",
+    "dialogTitle": "Shiriki kama picha",
+    "linkFooter": "Imeshirikiwa kutoka programu ya Salati",
+    "linkCopiedHint": "Kiungo kimenakiliwa kwenye ubao wa kunakili – kibandike unaposhiriki",
+    "courseComplete": {
+      "cardTitle": "Kozi imekamilika!",
+      "cardSubtitle": "Masomo {n} yamekamilika",
+      "shareCta": "Shiriki mafanikio"
+    }
+  },
+  "duas": {
+    "offlineNote": "Inapatikana kabisa nje ya mtandao",
+    "countOne": "Dua 1",
+    "countMany": "Dua {n}",
+    "shareText": "Sambaza dua",
+    "shareImage": "Shiriki kama picha"
+  },
+  "learn": {
+    "title": "Jifunze Kusoma Qur'an",
+    "subtitle": "Kutoka alfabeti hadi sura ya kwanza - hatua kwa hatua",
+    "locked": "Imefungwa - kamilisha kwanza somo lililopita",
+    "start": "Anza",
+    "back": "Rudi",
+    "next": "Endelea",
+    "startQuiz": "Anza maswali",
+    "passed": "Umefaulu! Somo linalofuata limefunguliwa.",
+    "failed": "Angalau 70% sahihi zinahitajika kufaulu - jaribu tena.",
+    "retry": "Jaribu tena",
+    "backToCourse": "Rudi kwenye muhtasari",
+    "phaseRead": "Jifunze kusoma",
+    "deepenCta": "Kozi zaidi za masomo",
+    "deepenCtaDesc": "Imani, historia, fiqhi na lahaja katika sehemu ya Masomo",
+    "lessonTitles": {
+      "letters-1": "Alfabeti 1 · ا ب ت ث",
+      "letters-2": "Alfabeti 2 · ج ح خ د",
+      "letters-3": "Alfabeti 3 · ذ ر ز س",
+      "letters-4": "Alfabeti 4 · ش ص ض ط",
+      "letters-5": "Alfabeti 5 · ظ ع غ ف",
+      "letters-6": "Alfabeti 6 · ق ك ل م",
+      "letters-7": "Alfabeti 7 · ن ه و ي",
+      "similar": "Kutofautisha herufi zinazofanana",
+      "forms-1": "Maumbo ya kuunganisha 1",
+      "forms-2": "Maumbo ya kuunganisha 2",
+      "forms-3": "Maumbo ya kuunganisha 3",
+      "fatha": "Fat-ha - sauti ya 'a'",
+      "kasra": "Kasra - sauti ya 'i'",
+      "damma": "Dhamma - sauti ya 'u'",
+      "tanwin": "Tanwini - an, in, un",
+      "sukun": "Sukuni - bila sauti",
+      "shadda": "Shadda - kurudufisha",
+      "madd": "Sauti ndefu (Madd)",
+      "hamza-extras": "Hamza na alama maalum",
+      "sun-moon": "Herufi za jua na za mwezi",
+      "words-1": "Kusoma maneno ya kwanza",
+      "words-2": "Maneno kutoka Qur'an",
+      "reading-fatiha": "Kusoma Al-Fatiha",
+      "reading-ikhlas": "Kusoma Al-Ikhlas",
+      "vocab-1": "Msamiati wa Qur'an 1",
+      "vocab-2": "Msamiati wa Qur'an 2",
+      "vocab-3": "Msamiati wa Qur'an 3",
+      "vocab-4": "Msamiati wa Qur'an 4",
+      "vocab-5": "Msamiati wa Qur'an 5",
+      "vocab-6": "Msamiati wa Qur'an 6",
+      "vocab-7": "Msamiati wa Qur'an 7",
+      "vocab-8": "Msamiati wa Qur'an 8",
+      "vocab-9": "Msamiati wa Qur'an 9",
+      "vocab-10": "Msamiati wa Qur'an 10",
+      "vocab-11": "Msamiati wa Qur'an 11",
+      "reading-fatiha-deep": "Al-Fatiha - neno kwa neno",
+      "salah-words-1": "Maneno ya sala: Takbira na mwanzo",
+      "salah-words-2": "Maneno ya sala: Ruku na Sijida",
+      "salah-words-3": "Maneno ya sala: Tashahhud na Salawat",
+      "salah-words-4": "Maneno ya sala: Taslim na mwisho",
+      "reading-falaq": "Kusoma: Al-Falaq",
+      "reading-nas": "Kusoma: An-Nas"
+    },
+    "concepts": {
+      "similar": "Herufi nyingi za Kiarabu zina umbo la msingi linalofanana (mfano ب ت ث) na hutofautiana tu kwa idadi na mahali pa nukta juu au chini yake. Nukta moja zaidi au pungufu inatoa herufi tofauti kabisa - hivyo umakini ni muhimu tangu mwanzo.",
+      "forms": "Herufi za Kiarabu huandikwa zikiwa zimeunganishwa, karibu kama maandishi ya mkono. Umbo hubadilika kulingana na nafasi katika neno: peke yake, mwanzoni mwa neno, katikati ya neno na mwishoni mwa neno - husomwa na kuandikwa daima kutoka kulia kwenda kushoto.",
+      "nonConnector": "Herufi fulani (mfano ا د ذ ر ز و) huungana upande wa kulia tu, si upande wa kushoto. Baada ya herufi kama hii, herufi inayofuata katika neno huanza tena kwa umbo lake peke yake au la mwanzo - hii hutambulika kwa pengo dogo katika umbo la neno.",
+      "fatha": "Fat-ha (ـَ) ni mstari mfupi wa mshazari JUU ya herufi na hutoa sauti fupi ya 'a', mfano بَ = ba. Ni sauti ya kawaida zaidi katika Qur'an.",
+      "kasra": "Kasra (ـِ) ni mstari mfupi wa mshazari CHINI ya herufi na hutoa sauti fupi ya 'i', mfano بِ = bi.",
+      "damma": "Dhamma (ـُ) ni alama ndogo yenye umbo la و JUU ya herufi na hutoa sauti fupi ya 'u', mfano بُ = bu.",
+      "tanwinFatha": "Tanwini ni mwisho wa sauti mbili katika Kiarabu unaoonyesha kuwa neno si maalum. Fat-ha mbili (ـً) mwishoni mwa neno hutamkwa kama -an, mfano كِتَابًا (kitaban) = 'kitabu'.",
+      "tanwinKasra": "Kasra mbili (ـٍ) mwishoni mwa neno hutamkwa kama -in na pia huonyesha kutokuwa maalum, mfano خَيْرٍ (khayrin) = 'jambo jema'.",
+      "tanwinDamma": "Dhamma mbili (ـٌ) mwishoni mwa neno hutamkwa kama -un na huonyesha kutokuwa maalum, mfano نُورٌ (nurun) = 'mwanga'.",
+      "sukun": "Sukuni (duara dogo ـْ juu ya herufi) inamaanisha: hakuna sauti - herufi hutamkwa bila sauti na hufunga silabi, mfano قَدْ (qad).",
+      "shadda": "Shadda (alama ndogo yenye umbo la w ـّ juu ya herufi) hurudufisha herufi: hutamkwa kwa msisitizo na kwa muda mrefu zaidi, mfano رَبَّ (rabba), si raba.",
+      "maddAlif": "Alif (ا) baada ya fat-ha hurefusha sauti ya 'a' takribani mara mbili: ā, mfano قَالَ (qāla). Kurefusha huku ni sehemu ya lazima ya usomaji sahihi (Tajwid).",
+      "maddWaw": "Waw (و) baada ya dhamma hurefusha sauti ya 'u' takribani mara mbili: ū, mfano نُور (nūr).",
+      "maddYa": "Ya (ي) baada ya kasra hurefusha sauti ya 'i' takribani mara mbili: ī, mfano دِين (dīn).",
+      "hamza": "Hamza (ء) ni kizuizi cha koo - katika Kiswahili inaweza kufananishwa na sitisho fupi. Inaweza kusimama peke yake au kubeba juu ya alif, waw, au ya.",
+      "hamzaAlif": "Ikiwa hamza iko juu ya alif (أ), sauti ya 'a' au 'u' hufuata mwanzoni mwa neno. Ikiwa iko chini ya alif (إ), sauti ya 'i' hufuata.",
+      "taMarbuta": "Ta marbuta (ة) huwa mwishoni mwa neno tu, mara nyingi katika maneno ya kike. Wakati wa kusimama hutamkwa kama -a, wakati wa kuunganisha na neno linalofuata kama -at.",
+      "alifMaqsura": "Alif maqsura (ى) huonekana kama ya bila nukta, lakini hutamkwa kama alif ya kawaida yaani ā ndefu - usiichanganye na sauti ya ya.",
+      "lamAlif": "Lam (ل) na alif (ا) huungana katika Kiarabu na kuwa umbo maalum لا (lā) - herufi zote mbili huandikwa zikiwa zimeungana, lakini hutokea mara kwa mara (mfano katika neno 'hapana', lā).",
+      "sunLetters": "Kuna herufi za jua 14: ت ث د ذ ر ز س ش ص ض ط ظ ل ن. Ikiwa mojawapo inafuata kiambishi 'al-', L huungana kabisa nayo na kurudufishwa (shadda) - L haitamkwi. Mfano: al-shams inakuwa ash-shams, al-nūr inakuwa an-nūr.",
+      "moonLetters": "Herufi 14 zilizobaki huitwa herufi za mwezi: ء ب ج ح خ ع غ ف ق ك م ه و ي. Baada yake, L ya kiambishi 'al-' husikika wazi, hakuna kuungana kunakotokea. Mifano: al-qamar, al-kitāb, al-bayt.",
+      "wordByWordRecap": "Sasa soma aya nzima kwa pamoja - maneno yote uliyojifunza mmoja mmoja, yanapoungana huunda sentensi kamili."
+    },
+    "quiz": {
+      "nameOfLetter": "Herufi hii inaitwaje?",
+      "glyphOfLetter": "Ni alama gani inayolingana na jina hili?",
+      "formInitial": "Herufi hii inaonekanaje mwanzoni mwa neno?",
+      "formMedial": "Herufi hii inaonekanaje katikati ya neno?",
+      "formFinal": "Herufi hii inaonekanaje mwishoni mwa neno?",
+      "readSyllable": "Hii husomwaje?",
+      "readWord": "Neno hili husomwaje?",
+      "readAyah": "Aya hii husomwaje?",
+      "meaningOfWord": "Neno hili lina maana gani?",
+      "soundOfLetter": "Hii ni herufi gani? (sikiliza)"
+    },
+    "tapToListen": "Gusa kusikiliza",
+    "contentFallbackNotice": "Bado haijatafsiriwa kwa lugha yako – inaonyeshwa kwa Kiingereza.",
+    "placementCta": "Jaribio la Kiwango",
+    "placementCtaDesc": "Tayari unajua herufi au zaidi? Anza mbele zaidi moja kwa moja",
+    "practicePronunciation": "Fanya mazoezi ya matamshi",
+    "listening": "Inasikiliza…",
+    "pronunciationGood": "Matamshi mazuri!",
+    "pronunciationRetry": "Jaribu tena",
+    "placementRepeatCta": "Jaribio la Maarifa",
+    "placementRepeatDesc": "Pima tena vituo vyote muhimu - maendeleo yako yanabaki yamehifadhiwa daima",
+    "easeVerse": {
+      "arabic": "وَلَقَدْ يَسَّرْنَا الْقُرْآنَ لِلذِّكْرِ فَهَلْ مِن مُّدَّكِرٍ",
+      "title": "Qur'ani ni rahisi kujifunza",
+      "translation": "Na hakika Tumeifanya Qur'ani kuwa rahisi kukumbukwa (yaani kujifunza na kuizingatia). Basi je, yupo mwenye kukumbuka (yaani anayejitahidi)?",
+      "reference": "Surat Al-Qamar (54), aya 17 - imerudiwa katika aya za 22, 32 na 40",
+      "explanation": "Ibn Kathir anaeleza kuwa Mwenyezi Mungu amerahisisha kusoma, kuhifadhi na kuelewa Qur'ani kwa yeyote anayejaribu kwa dhati, bila kujali umri au lugha. Kinachohitajika ni hatua ya kwanza tu na juhudi kidogo."
+    },
+    "nextLesson": "Somo linalofuata",
+    "podcastIntro": "Podikasti ya hatua hii",
+    "podcastOptional": "Si lazima — sikiliza kwanza au anza moja kwa moja",
+    "videoIntro": "Video ya awamu hii",
+    "videoOptional": "Hiari – tazama au anza moja kwa moja",
+    "tableView": "Tazama jedwali",
+    "tableViewDesc": "Jedwali la sarufi la kurejelea"
+  },
+  "practice": {
+    "title": "Mazoezi na Maswali",
+    "subtitle": "Chagua unachotaka kufanyia mazoezi - kwa mtindo wa mchezo na alama bora na mfululizo",
+    "streakDays": "siku za mfululizo",
+    "streakJokerUsed": "Joker imetumika",
+    "playAgain": "Cheza tena",
+    "backToHub": "Rudi kwenye muhtasari",
+    "bestStreak": "Mfululizo bora",
+    "quiz": {
+      "connectsLeft": "Je, herufi hii inaunganika upande wa kushoto (na herufi inayofuata)?",
+      "whichNonConnector": "Ni herufi gani ISIYOUNGANIKA upande wa kushoto?",
+      "isSunLetter": "Je, hii ni herufi ya jua?"
+    },
+    "modes": {
+      "letters": {
+        "title": "Maswali ya herufi",
+        "desc": "Majina na alama za herufi zote 28"
+      },
+      "forms": {
+        "title": "Maswali ya maumbo",
+        "desc": "Kutambua maumbo ya mwanzo, kati na mwisho"
+      },
+      "connections": {
+        "title": "Maswali ya muungano",
+        "desc": "Ni herufi gani zinazoungana?"
+      },
+      "harakat": {
+        "title": "Maswali ya harakati",
+        "desc": "Kusoma silabi zenye Fat-ha, Kasra na Dhamma"
+      },
+      "words": {
+        "title": "Maswali ya maneno",
+        "desc": "Kusoma maneno halisi kutoka kwenye kozi"
+      },
+      "rules": {
+        "title": "Maswali ya kaida",
+        "desc": "Herufi za jua/mwezi na sauti ndefu"
+      },
+      "knowledge": {
+        "title": "Maarifa ya Kiislamu",
+        "desc": "Nguzo, sala, sherehe na zaidi"
+      },
+      "quran": {
+        "title": "Maswali ya Qur'an",
+        "desc": "Sura, aya na mambo kuhusu Qur'an"
+      },
+      "mix": {
+        "title": "Mchanganyiko",
+        "desc": "Maswali ya nasibu kutoka maeneo yote"
+      },
+      "seerah": {
+        "title": "Maswali ya Sira",
+        "desc": "Maisha na wasifu wa Mtume Muhammad ﷺ"
+      },
+      "sahaba": {
+        "title": "Maswali ya Masahaba",
+        "desc": "Masahaba, wake wa Mtume ﷺ na maimamu wanne wakuu"
+      },
+      "akhlaq": {
+        "title": "Maswali ya Akhlaq",
+        "desc": "Sidq, hilm, sabr, ikhlas, tawadu', amanah, rahma, haya na adl - sifa za tabia kutoka Qur'an na Sunnah"
+      },
+      "nikah": {
+        "title": "Maswali ya Ndoa na Familia",
+        "desc": "Kusudi la ndoa, haki, mkataba wa ndoa, talaka na malezi ya watoto"
+      },
+      "dialects": {
+        "title": "Maswali ya Lahaja",
+        "desc": "Misemo ya kila siku kutoka lahaja za Maghrib, Levant, Ghuba na Misri"
+      }
+    },
+    "puzzle": {
+      "title": "Fumbo la sentensi",
+      "desc": "Kupanga maneno",
+      "hint": "Panga maneno katika mpangilio sahihi",
+      "empty": "Gusa maneno hapa chini",
+      "next": "Endelea"
+    },
+    "matchingGame": {
+      "title": "Tafuta jozi",
+      "desc": "Neno na matamshi",
+      "hint": "Unganisha kila neno na matamshi yake",
+      "points": "pointi"
+    },
+    "listen": {
+      "title": "Sikiliza na chagua",
+      "desc": "Chagua neno unalosikia",
+      "hint": "Sikiliza kisha andika matamshi",
+      "play": "Sikiliza",
+      "placeholder": "Weka matamshi …",
+      "check": "Kagua",
+      "unavailableReading": "Zoezi hili linahitaji sauti na limefichwa wakati aina ya mazoezi imewekwa kwa kusoma."
+    },
+    "mistakes": {
+      "title": "Makosa yangu",
+      "desc": "Fanya mazoezi ya majibu yasiyo sahihi",
+      "empty": "Hakuna makosa yaliyobaki - vizuri sana!",
+      "clearedHint": "Maswali yaliyojibiwa kwa usahihi yameondolewa kwenye mkusanyiko."
+    },
+    "intro": {
+      "gotIt": "Nimeelewa, twende!",
+      "whatLabel": "Utakachofanya",
+      "whyLabel": "Kwa nini inasaidia",
+      "reopenA11y": "Onyesha maelezo tena",
+      "quizMode": {
+        "title": "Jaribio",
+        "what": "Utaona swali lenye majibu 3-4 na kugusa jibu sahihi. Jibu lisilo sahihi linaingia moja kwa moja kwenye mkusanyiko wa makosa yako.",
+        "why": "Kukumbuka jibu kwa makusudi kunakaa vizuri zaidi akilini kuliko kusoma tu - unaona mara moja unachokijua na kisichojulikana bado."
+      },
+      "puzzle": {
+        "title": "Fumbo la sentensi",
+        "what": "Sentensi ya Kiarabu iko mbele yako ikiwa imechanganywa kwa maneno tofauti. Gusa maneno kwa mpangilio hadi sentensi irejee sahihi.",
+        "why": "Mpangilio wa sentensi za Kiarabu mara nyingi hufuata kanuni tofauti na Kiswahili. Kuupanga wewe mwenyewe kunafanya sarufi ikae akilini zaidi kuliko kusoma tu."
+      },
+      "matching": {
+        "title": "Tafuta jozi",
+        "what": "Upande wa kushoto kuna maneno ya Kiarabu, upande wa kulia matamshi yake - vyote viwili kwa mpangilio wa nasibu. Gusa neno upande wa kushoto kwanza, kisha matamshi yanayolingana upande wa kulia.",
+        "why": "Kulinganisha kwa makusudi kunakuzoeza kuunganisha maandishi ya Kiarabu moja kwa moja na sauti yake - ujuzi wa msingi wa kusoma kwa ufasaha bila kutegemea matamshi yaliyoandikwa."
+      },
+      "listen": {
+        "title": "Sikiliza na chagua",
+        "what": "Unasikiliza neno au silabi ya Kiarabu kisha unachagua neno sahihi kati ya chaguo 3-4 za Kiarabu.",
+        "why": "Kiarabu kina sauti zisizopatikana katika Kiswahili. Kusikiliza na kuyarudia mwenyewe pekee ndiko kunakozoeza sikio lako tofauti hizi - kusoma tu hakutoshi."
+      },
+      "duel": {
+        "title": "Duwaa la jaribio",
+        "what": "Mnashindana kwa maswali yaleyale: ama kwa zamu kwenye kifaa kimoja, au kila mmoja kwa wakati wake - unacheza zamu yako, unatuma msimbo kwa rafiki, naye anauingiza na kujaribu kuvuka alama zako.",
+        "why": "Ushindani unakuhamasisha kurudia unachopaswa kuwa tayari unakijua - na hali ya msimbo inafanya kazi hata kama hamna wakati mmoja."
+      },
+      "mistakes": {
+        "title": "Makosa yangu",
+        "what": "Kila swali ulilokosea kwenye jaribio linaonekana tena hapa moja kwa moja. Ukijibu kwa usahihi, linaondoka kwenye mkusanyiko.",
+        "why": "Maarifa yanakaa vizuri zaidi akilini unaporudia hasa mapengo ambayo bado hujayafahamu vizuri - badala ya kurudia kila kitu bila mpangilio."
+      },
+      "placement": {
+        "title": "Jaribio la kiwango",
+        "what": "Unajibu vikundi vifupi vya maswali kwa vituo vinavyofuatana vya kozi. Ukipita kituo, unaendelea moja kwa moja hadi kinachofuata - jaribio linaisha kwenye kituo cha kwanza usichopita.",
+        "why": "Hivyo unagundua kiwango chako halisi cha maarifa ndani ya dakika chache, badala ya kupoteza muda kwenye somo la 1 na mambo unayoyajua tayari."
+      },
+      "write": {
+        "title": "Fanya Mazoezi ya Kuandika",
+        "what": "Chora herufi inayoonyeshwa kwa kidole chako kutoka kumbukumbu - mfano unabaki umefichwa. Ukigusa 'Linganisha' ndipo umbo halisi linapowekwa juu ya mchoro wako kwa uwazi nusu.",
+        "why": "Kunakili mfano unaoonekana hakukai akilini vizuri, kwa sababu ubongo wako haulazimiki kukumbuka chochote. Kukumbuka kutoka kumbukumbu tu - na kujilinganisha kwa uaminifu baadaye - ndiko kunakofanya umbo la herufi likae akilini kweli."
+      }
+    },
+    "correctAnswerLabel": "Jibu sahihi",
+    "wrongListTitle": "Zilizojibiwa vibaya"
+  },
+  "hifz": {
+    "title": "Tilawa",
+    "recognitionNoteCta": "Utambuzi huu una uhakika kiasi gani?",
+    "recognitionDisclaimer": "Utambuzi huu hutumia modeli ndogo ya sauti inayofanya kazi kwenye kifaa chako. Hufanya makosa na hauwezi kuchukua nafasi ya mwalimu halisi. Kwa maoni ya kina na sahihi ya tilawa, tunapendekeza programu ya Tarteel, inayotumia mfumo wa seva na inayofanya kazi vizuri zaidi.",
+    "subtitle": "Aya kwa aya: sikiliza, funika, sema, weka alama",
+    "searchNoResults": "Hakuna sura iliyopatikana kwa \"{query}\".",
+    "memorized": "imehifadhiwa",
+    "tapToReveal": "Gusa kuonyesha",
+    "listen": "Sikiliza",
+    "reveal": "Onyesha",
+    "hide": "Ficha",
+    "micCheck": "Sema",
+    "autoMarked": "Imewekwa alama kiotomatiki kama »Ninajua«",
+    "reciteFromReaderHint": "Gusa »Sema« kukagua usomaji wako wa aya hii.",
+    "listening": "Ninasikiliza…",
+    "micError": "Utambuzi wa sauti haupatikani au umeghairiwa.",
+    "stillLearning": "Bado ninajifunza",
+    "gotIt": "Ninajua",
+    "grade": {
+      "excellent": "Bora sana!",
+      "good": "Vizuri - karibu kamili",
+      "retry": "Fanya mazoezi tena"
+    },
+    "micMissedHint": "Maneno yaliyowekwa alama hayakutambulika - yaseme wazi zaidi katika jaribio linalofuata.",
+    "micNote": "Ukaguzi huu hulinganisha maneno. Hauwezi kutathmini maelezo madogo ya Tajwid (urefu wa Madd, Ghunnah) - hii inahitaji mwalimu.",
+    "modeFast": "Haraka (Kivinjari)",
+    "modePrecise": "Sahihi (mfano wa ndani)",
+    "stopRecording": "Simama na kagua",
+    "transcribing": "Inatathminiwa …",
+    "modelDownload": "Mfano unapakiwa mara moja: {p} %",
+    "letterTips": {
+      "qaf": "ق hutoka kwa kina cha kaakaa laini - nzito zaidi kuliko ك",
+      "kaf": "ك hutoka mbele zaidi kutoka nyuma ya ulimi - nyepesi zaidi kuliko ق",
+      "hha": "ح ni pumzi iliyosisitizwa kutoka katikati ya koo, bila msuguano",
+      "kha": "خ inasugua nyuma ya kaakaa - kama 'kh' katika 'khabari'",
+      "ha": "ه ni 'h' nyepesi kama katika 'hela'",
+      "ain": "ع ni sauti ya koo iliyosisitizwa - koo hubana kwa wazi",
+      "hamza": "ء ni kizuizi kifupi cha koo",
+      "dhal": "ذ ni 'th' laini (ulimi kwenye meno) kama 'this' ya Kiingereza",
+      "zay": "ز ni 'z' yenye sauti kama katika 'zebra'",
+      "zza": "ظ ni mwenzake mzito na msisitizo wa ذ - ulimi kwenye meno, kinywa kimejaa",
+      "sin": "س ni 's' nyepesi na kali",
+      "sad": "ص ni 's' nzito, yenye msisitizo - sehemu ya nyuma ya kinywa hujaa",
+      "ta": "ت ni 't' nyepesi kwenye meno ya juu",
+      "tta": "ط ni 't' nzito, yenye msisitizo - na kinywa kamili",
+      "dal": "د ni 'd' nyepesi kwenye meno ya juu",
+      "dad": "ض hutoka kando ya ulimi hadi meno ya nyuma - nzito na kamili",
+      "ghain": "غ ni 'r' ya kaakaa inayozunguka, kama r ya Kifaransa"
+    },
+    "nearLabel": "ilisikika kama",
+    "expectedLabel": "Ilitarajiwa",
+    "recognizedLabel": "Imetambuliwa",
+    "closestGuessLabel": "Dhana ya karibu zaidi (haijahakikishwa)",
+    "notRecognizedLabel": "Haikutambuliwa katika rekodi yako",
+    "youSaid": "Ulisema: \"{transcript}\"",
+    "tapWordHint": "Gusa neno lililoangaziwa kuona kilichotambuliwa",
+    "gapTestCta": "Hali ya mazoezi (bila sauti)",
+    "gapTest": {
+      "title": "Jaribio la Tilawa",
+      "noKnownVerses": "Bado hakuna aya iliyowekwa alama \"Ninajua\" - hifadhi aya chache kwanza, kisha unaweza kujijaribu hapa bila sauti.",
+      "backCta": "Rudi kwenye Sura",
+      "progressLabel": "Aya {current} kati ya {total}",
+      "tapGapHint": "Gusa nafasi tupu ili kuonyesha neno",
+      "revealWordA11y": "Onyesha neno",
+      "correctBtn": "Nimekumbuka sawa",
+      "retryBtn": "Ninahitaji mazoezi zaidi",
+      "summaryTitle": "Duru ya jaribio imekamilika",
+      "summaryResult": "{correct} kati ya {total} zilikumbukwa sawa",
+      "restartCta": "Anza upya",
+      "doneCta": "Imekamilika"
+    },
+    "modelNeededHint": "Pakua modeli ya sauti kwanza. Upakuaji unaendelea chinichini — unaweza kuondoka skrini hii.",
+    "surahRecite": {
+      "cta": "Soma sura nzima",
+      "intro": "Anza na usome sura nzima mfululizo — aya hufunuliwa zinapotambuliwa.",
+      "start": "Anza kisomo",
+      "stop": "Simamisha",
+      "finalizing": "Inatathmini usomaji mzima…",
+      "doneAll": "Sura nzima imetambuliwa — hongera!",
+      "doneSome": "Yametambuliwa maneno {n} kati ya {total}."
+    },
+    "speechError": {
+      "heading": "Ukaguzi wa kisomo umeshindwa",
+      "showDetails": "Onyesha maelezo ya kiufundi",
+      "hideDetails": "Ficha maelezo",
+      "model": "Modeli",
+      "permission": "Maikrofoni",
+      "yes": "ndiyo",
+      "no": "hapana",
+      "unknown": "haijulikani",
+      "code": "Msimbo",
+      "unavailableMsg": "Utambuzi wa kifaani haupatikani kwenye kifaa/toleo hili.",
+      "permissionMsg": "Ruhusa ya maikrofoni haipo. Ruhusu programu itumie maikrofoni katika mipangilio ya mfumo kisha ujaribu tena.",
+      "audioInitMsg": "Maikrofoni haikuweza kuanzishwa. Funga programu nyingine zinazotumia maikrofoni kisha ujaribu tena.",
+      "modelDownloadMsg": "Upakuaji wa modeli ya sauti haukukamilika. Angalia muunganisho wako kisha upakue tena.",
+      "modelInitMsg": "Modeli ya sauti haikuweza kupakiwa. Imewekwa upya — ipakue tena.",
+      "transcribeMsg": "Uchambuzi wa rekodi umeshindwa. Tafadhali jaribu tena.",
+      "noSpeechMsg": "Hakuna sauti iliyotambuliwa. Soma kwa sauti kubwa zaidi na karibu na maikrofoni.",
+      "unknownMsg": "Hitilafu isiyotarajiwa imetokea. Fungua maelezo na utoe ujumbe."
+    }
+  },
+  "tasbih": {
+    "title": "Tasbihi",
+    "today": "Jumla ya leo",
+    "tapHint": "Gusa duara kuhesabu",
+    "addCustom": "Dhikri yako",
+    "customTextPlaceholder": "Maandishi ya dhikri",
+    "customTargetPlaceholder": "Lengo (idadi)",
+    "deleteCustom": "Futa dhikri yako",
+    "dailyGoal": "Lengo la kila siku",
+    "customGoal": "Lengo lako",
+    "customGoalPlaceholder": "Lengo (idadi)",
+    "history": "Historia (siku 7)",
+    "afterSalahCta": "Dhikr baada ya sala (33/33/34)"
+  },
+  "guides": {
+    "title": "Sala na Ibada",
+    "subtitle": "Hatua kwa hatua: udhu, kuoga, sala, rakaa, witr na zaidi",
+    "steps": "hatua"
+  },
+  "phrases": {
+    "title": "Misemo na khutba ya Ijumaa",
+    "subtitle": "Kinachosemwa, maana yake na jibu lake",
+    "reply": "Jibu",
+    "tapToHear": "Gusa ili kusikiliza"
+  },
+  "wisdom": {
+    "title": "Hekima",
+    "today": "Hekima ya Leo",
+    "share": "Shiriki",
+    "shareImage": "Shiriki kama picha"
+  },
+  "settings": {
+    "groups": {
+      "prayer": "Sala na Hesabu",
+      "notifications": "Arifa",
+      "reminders": "Vikumbusho",
+      "quran": "Quran na Kisomo",
+      "language": "Lugha na Onyesho",
+      "learning": "Kujifunza na Mazoezi",
+      "data": "Hifadhi na Data",
+      "about": "Kuhusu na Kisheria"
+    },
+    "moreReminders": {
+      "title": "Vikumbusho vingine"
+    },
+    "location": "Eneo",
+    "current": "Sasa",
+    "search": "Tafuta mipangilio",
+    "searchNoResults": "Hakuna mipangilio iliyopatikana",
+    "useMyLocation": "Tumia eneo la sasa",
+    "locating": "Inatafuta mahali…",
+    "searchCity": "Tafuta jiji…",
+    "cityInvalid": "Matokeo haya hayana viwianishi vinavyotumika. Tafadhali chagua jingine.",
+    "savedLocations": {
+      "title": "Maeneo yaliyohifadhiwa",
+      "namePlaceholder": "Jina (mfano Nyumbani, Kazini)…",
+      "saveCurrent": "Hifadhi eneo la sasa",
+      "delete": "Futa eneo lililohifadhiwa"
+    },
+    "method": "Njia ya hesabu",
+    "asrSchool": "Madhehebu ya Asr",
+    "language": "Lugha",
+    "hadithLanguage": "Lugha ya Hadithi",
+    "timeFormat": "Muundo wa muda",
+    "format24": "Saa 24 (14:30)",
+    "format12": "Saa 12 (2:30 PM)",
+    "fontSize": "Ukubwa wa fonti ya Qur'an",
+    "fontSmall": "Ndogo",
+    "fontMedium": "Wastani",
+    "fontLarge": "Kubwa",
+    "fontXLarge": "Kubwa zaidi",
+    "quranFont": {
+      "title": "Fonti ya Qur’ani",
+      "preview": "Hakiki",
+      "hint": {
+        "kfgqpc": "Hati rasmi ya Uthmani ya Kituo cha Mfalme Fahd (toleo la Madina)",
+        "amiriQuran": "Kama Amiri, kwa nafasi zaidi ya alama za Qur’ani zilizopangana",
+        "amiri": "Naskh ya kale kwa mtindo wa machapisho ya zamani",
+        "scheherazade": "Harakati wazi sana, inafaa pia mtindo wa IndoPak",
+        "lateef": "Mistari myembamba, karibu na machapisho ya Asia Kusini",
+        "harmattan": "Muundo wa herufi za Afrika Magharibi, kama unavyochapishwa huko",
+        "noto": "Ya kisasa na safi, rahisi kusoma kwenye skrini ndogo",
+        "notoSans": "Bila serifu, utofautishaji wa juu — kwa uoni hafifu"
+      }
+    },
+    "quranSukun": {
+      "title": "Alama ya sukuni",
+      "madina": "Chapa ya Madina (kulabu)",
+      "kreis": "Duara",
+      "hint": "Inahusu “KFGQPC HAFS Uthmanic” pekee. Msahafu wa Madina uliochapishwa huandika sukuni kama kulabu ndogo; duara humaanisha herufi iliyoandikwa lakini haisomwi. Ukichagua “Duara”, zote mbili zitafanana."
+    },
+    "appearance": "Muonekano",
+    "themeAuto": "Kiotomatiki (mpangilio wa mfumo)",
+    "themeLight": "Mwanga",
+    "themeDark": "Giza",
+    "notifications": "Arifa za sala",
+    "resetDefaults": "Rejesha mipangilio ya kawaida",
+    "asrEarlier": "Mapema zaidi (Shafi'i/Maliki/Hanbali - kawaida)",
+    "asrLater": "Baadaye (Hanafi)",
+    "iqama": {
+      "title": "Muda wa Ikama",
+      "enable": "Onyesha muda wa Ikama",
+      "enableHint": "Huonyesha muda uliohesabiwa wa swala ya jamaa (Ikama) kando ya muda wa Adhana.",
+      "offsetHint": "Muda wa kusubiri baada ya Adhana, kwa dakika - unaweza kubadilishwa kwa kila swala.",
+      "minutesShort": "dak"
+    },
+    "highLatitude": {
+      "title": "Kanuni ya latitudo za juu",
+      "hint": "Kaskazini mwa takriban latitudo 48°, wakati wa kiangazi jua halishuki chini vya kutosha kufikia pembe za Fajr na Isha. Kanuni hii huamua jinsi nyakati hizo mbili zinavyopatikana kutokana na urefu wa usiku. Kulingana na kanuni, Fajr na Isha zinaweza kutofautiana hadi saa moja, na hakuna suluhisho linalokubalika kwa wote. Ukitaka kufuata msikiti wako, chagua kanuni inayolingana na nyakati zake.",
+      "auto": "Otomatiki (inapendekezwa)",
+      "autoDesc": "Hufuata latitudo yako: kwa pembe kuanzia takriban 48°, katikati ya usiku karibu na ikweta.",
+      "middleOfNight": "Katikati ya usiku",
+      "middleOfNightDesc": "Kanuni thabiti: Fajr mapema, Isha baadaye.",
+      "seventhOfNight": "Sehemu ya saba ya usiku",
+      "seventhOfNightDesc": "Kanuni thabiti: Fajr baadaye, Isha mapema.",
+      "twilightAngle": "Kwa kutumia pembe",
+      "twilightAngleDesc": "Kanuni thabiti: hutumiwa na programu nyingi."
+    },
+    "timeAdjust": {
+      "title": "Marekebisho ya dakika",
+      "hint": "Husogeza kila wakati wa swala hadi dakika 60 ili nyakati zilingane na msikiti wako. Huathiri onyesho, arifa, wijeti na uhamishaji wa kalenda.",
+      "sunrise": "Macheo",
+      "reset": "Rejesha marekebisho yote",
+      "minutesShort": "dak"
+    },
+    "pace": {
+      "title": "Bajeti ya muda ya kila siku",
+      "min10": "Dakika 10/siku · Somo 1, marudio mafupi",
+      "min20": "Dakika 20/siku · Masomo 2 (yanapendekezwa)",
+      "min45": "Dakika 45/siku · Masomo 5",
+      "min90": "Saa 1.5/siku · Masomo 10",
+      "min240": "Saa 4/siku · kasi ya juu (Masomo 25)",
+      "freeUnlock": "Fungua masomo yote",
+      "freeUnlockHint": "Jifunze bila mpangilio - kwa waliozoea"
+    },
+    "display": {
+      "title": "MUONEKANO",
+      "transliteration": "Onyesha matamshi",
+      "transliterationHint": "Onyesha/ficha matamshi ya Kilatini kwenye maneno na msamiati",
+      "isolatedLetters": "Onyesha umbo la herufi peke yake",
+      "isolatedLettersHint": "Onyesha maneno pia kwa herufi peke yake, zisizounganika - kwa kusaidia kukumbuka"
+    },
+    "reviewReminder": {
+      "title": "Kikumbusho cha Marudio",
+      "enable": "Kikumbusho cha kila siku",
+      "hint": "Kikumbusho cha ndani kwa muda uliochaguliwa, ikiwa kuna marudio yaliyofika muda wake (programu tu, si wavuti)",
+      "hour9": "Asubuhi · Saa 9",
+      "hour14": "Mchana · Saa 2",
+      "hour18": "Jioni · Saa 6",
+      "hour21": "Usiku · Saa 9"
+    },
+    "verseOfDay": {
+      "title": "Aya/Hadithi ya Siku",
+      "enable": "Kikumbusho cha kila siku",
+      "hint": "Aya au hadithi maarufu kwa muda uliochaguliwa, mpya kila siku (programu tu, si wavuti)"
+    },
+    "jumuah": {
+      "title": "Kikumbusho cha Ijumaa",
+      "enable": "Kikumbusho cha Ijumaa",
+      "hint": "Kikumbusho kabla ya sala ya Ijumaa pamoja na kumbukumbu kuhusu Surat Al-Kahf (programu tu, si wavuti)"
+    },
+    "sunnah": {
+      "title": "Sala za Sunnah",
+      "duha": "Sala ya Duha",
+      "duhaHint": "Kikumbusho asubuhi, muda mfupi baada ya jua kuchomoza",
+      "tahajjud": "Tahajjud",
+      "tahajjudHint": "Kikumbusho usiku sana, kabla ya Fajr",
+      "witr": "Sala ya Witr",
+      "witrHint": "Kikumbusho baada ya Isha, kabla ya kulala"
+    },
+    "preAdhan": {
+      "title": "Kikumbusho Kabla ya Adhana",
+      "enable": "Kikumbusho cha ziada kabla ya muda wa sala",
+      "hint": "Kikumbusho dakika X kabla ya kila sala iliyowashwa, k.m. kwa udhu au safari ya kwenda msikitini",
+      "minutes": "dakika {n} kabla"
+    },
+    "weeklySummary": {
+      "title": "Muhtasari wa wiki",
+      "enable": "Kikumbusho cha kila wiki",
+      "hint": "Muhtasari mfupi wa masomo na sala, kila Jumapili jioni saa 8 (programu tu, si wavuti)"
+    },
+    "notificationsOverview": {
+      "navLabel": "Arifa",
+      "navHint": "Simamia vikumbusho vyote mahali pamoja",
+      "title": "Arifa",
+      "subtitle": "Muhtasari wa vikumbusho vyote vya programu - mabadiliko yanatumika mara moja kwa kikumbusho husika.",
+      "blocked": "Arifa za Salati zimezimwa katika mipangilio ya mfumo. Vikumbusho haviwezi kufika hadi uziruhusu.",
+      "groupPrayerTimes": "Nyakati za sala",
+      "groupQuran": "Qur'an na maarifa",
+      "groupOther": "Nyingine",
+      "prayerHint": "Kikumbusho wakati wa sala",
+      "journeyTitle": "Kikumbusho cha safari ya aya",
+      "journeyHint": "Kinawaka kiotomatiki wakati safari ya aya ikiendelea - hakihitaji swichi tofauti",
+      "zakatManageLink": "Simamia tarehe ya zaka"
+    },
+    "dashboard": {
+      "navLabel": "Dashibodi",
+      "navHint": "Rekebisha mpangilio na uonekano wa kadi za skrini kuu"
+    },
+    "widgets": {
+      "title": "Vijenzi vya skrini kuu",
+      "hint": "Bonyeza kwa muda mrefu skrini kuu na uongeze Salati: nyakati za sala, dua ya siku na mfululizo zinapatikana kila moja katika mandhari ya rangi nyeusi na nyepesi.",
+      "perWidgetHint": "Kidokezo: bonyeza kwa muda mrefu wijeti iliyowekwa kisha gusa Sanidi ili kuweka rangi na maudhui ya wijeti hiyo kivyake."
+    },
+    "support": {
+      "title": "Msaada",
+      "copyReport": "Nakili ripoti ya hitilafu",
+      "copyReportHint": "Nakili hitilafu za hivi karibuni zilizorekodiwa kama maandishi - hubaki kwenye kifaa, hazitumwi kiotomatiki",
+      "copied": "Imenakiliwa",
+      "replayOnboarding": "Rudia utangulizi"
+    },
+    "backup": {
+      "title": "Hifadhi nakala ya maendeleo",
+      "hint": "Hakuna akaunti, hakuna wingu - maendeleo yako yanabaki kwenye kifaa hiki pekee. Yahamishe kama faili ili kuyarejesha ukibadilisha kifaa au programu.",
+      "exportButton": "Hamisha maendeleo",
+      "exportError": "Kuhamisha kumeshindwa. Tafadhali jaribu tena.",
+      "importButton": "Ingiza maendeleo",
+      "importConfirmTitle": "Ingiza maendeleo?",
+      "importConfirmBody": "Hii itabadilisha maendeleo yako ya sasa ya masomo, maendeleo ya hifadhi (hifz), na alamisho kwenye kifaa hiki. Hili haliwezi kutenduliwa.",
+      "importConfirmAction": "Badilisha",
+      "importSuccess": "Maendeleo yameingizwa.",
+      "importInvalidFile": "Faili hii si nakala halali ya maendeleo ya Salati.",
+      "importUnsupportedVersion": "Nakala hii iliundwa kwa toleo jipya zaidi la programu na haiwezi kuingizwa hapa.",
+      "importError": "Kuingiza kumeshindwa. Tafadhali angalia faili.",
+      "downloadedRecitersNote": "Masheikh waliopakuliwa hapo awali: {list} - wapakue tena ikihitajika.",
+      "goToDownloads": "Nenda kwenye upakuaji wa masheikh"
+    },
+    "legal": "Kisheria",
+    "legalFeedback": "Toa maoni / ripoti hitilafu",
+    "legalFeedbackSubject": "Salati Feedback",
+    "legalVersion": "Toleo la programu",
+    "updates": {
+      "check": "Angalia masasisho",
+      "checking": "Inaangalia …",
+      "upToDate": "Ni ya hivi punde",
+      "ready": "Sasisho tayari",
+      "restart": "Anzisha upya sasa",
+      "failed": "Hakuna muunganisho"
+    },
+    "exercise": {
+      "title": "Aina ya mazoezi unayopendelea",
+      "mixed": "Mchanganyiko (yanapendekezwa)",
+      "audio": "Mazoezi zaidi ya kusikiliza",
+      "reading": "Mazoezi zaidi ya kusoma",
+      "speech": "Mazoezi ya kuzungumza (kipaza sauti)",
+      "speechHint": "Zima ikiwa huwezi kuzungumza kwa sauti kubwa sasa - mazoezi yataendelea bila kipaza sauti.",
+      "mixedDesc": "Aina zote za mazoezi kwa uwiano sawa.",
+      "audioDesc": "Msisitizo katika kusikiliza na kutambua.",
+      "readingDesc": "Msisitizo katika kusoma maandishi ya Kiarabu."
+    },
+    "notifPrefs": {
+      "sound": "Sauti",
+      "soundHint": "Arifa yenye mlio",
+      "vibrate": "Mtetemo",
+      "vibrateHint": "Itetemeke inapofika",
+      "headsUp": "Onyesha juu ya programu nyingine",
+      "headsUpHint": "Bango huonekana mara moja mbele (Android)",
+      "ongoingCountdown": "Onyesha sala inayofuata daima",
+      "ongoingCountdownHint": "Arifa isiyoweza kuondolewa yenye muda wa sala inayofuata (Android)",
+      "liveActivity": "Live Activity kwenye skrini iliyofungwa",
+      "liveActivityHint": "Inaonyesha sala inayofuata kwenye skrini iliyofungwa na Dynamic Island (iOS)"
+    },
+    "adhkar": {
+      "title": "Vikumbusho vya Adhkar",
+      "morning": "Adhkar za asubuhi",
+      "morningHint": "Kikumbusho cha kila siku cha dua za asubuhi",
+      "evening": "Adhkar za jioni",
+      "eveningHint": "Kikumbusho cha kila siku cha dua za jioni"
+    },
+    "offlinePack": {
+      "title": "Nje ya mtandao",
+      "download": "Kifurushi kamili cha nje ya mtandao",
+      "hint": "Pakia sura zote 114 (maandishi + tafsiri) kwa matumizi nje ya mtandao",
+      "done": "Sura zote zinapatikana nje ya mtandao"
+    },
+    "reciterAudioPack": {
+      "title": "Sauti ya qari",
+      "hint": "Pakua usomaji kamili wa {reciter} — muhimu kwa hali ya ndege au mtandao dhaifu.",
+      "download": "Pakua qari kamili",
+      "resume": "Endelea na qari ({n}/114 zimepakuliwa)",
+      "done": "Qari kamili anapatikana nje ya mtandao",
+      "progress": "{n} / {total} sura",
+      "startAction": "Pakua",
+      "partialTitle": "Imepakuliwa kwa sehemu",
+      "partialBody": "Sura {n} hazikuweza kupakuliwa (mf. hitilafu za mtandao). Anza tena ili kupata zilizobaki.",
+      "chooseReciter": "Chagua qari wa kupakua",
+      "downloadedTitle": "Maqari waliopakuliwa",
+      "noDownloads": "Hakuna pakiti ya qari iliyopakuliwa bado.",
+      "packStatus": "{n}/114 sura",
+      "packComplete": "Kamili",
+      "deleteAction": "Futa",
+      "deleteConfirmTitle": "Futa pakiti ya qari?",
+      "deleteConfirmBody": "Sura zote zilizopakuliwa za {reciter} zitaondolewa kwenye kifaa hiki.",
+      "confirmTitle": "Pakua msomaji kamili?",
+      "confirmBody": "Sura zote 114 zitapakuliwa kwenye kifaa hiki. Hii huchukua muda na huhitaji mamia ya megabaiti — ni afadhali kupitia Wi-Fi."
+    },
+    "storage": {
+      "title": "Simamia hifadhi",
+      "openHint": "Sauti za waqarii, miundo ya AI na akiba kwa muhtasari",
+      "subtitle": "Muhtasari wa nafasi ya hifadhi ambayo Salati inatumia kwenye kifaa hiki.",
+      "total": "Jumla iliyotumika",
+      "loading": "Inahesabu…",
+      "unsupported": "Usimamizi wa hifadhi haupatikani kwenye jukwaa hili.",
+      "reciterAudio": {
+        "title": "Sauti ya qari",
+        "empty": "Bado hakuna upakuaji wa qari."
+      },
+      "kiModel": {
+        "title": "Muundo wa AI wa Salati",
+        "notDownloaded": "Haijapakuliwa"
+      },
+      "whisperModel": {
+        "title": "Utambuzi wa sauti (hali ya usahihi ya Hifz)",
+        "notDownloaded": "Haijapakuliwa",
+        "delete": "Futa muundo",
+        "deleteConfirm": "Kweli ufute muundo huu? Upakuaji ({size}) utahitaji kuanzishwa upya kwa ukaguzi ujao wa usahihi.",
+        "download": "Pakua"
+      },
+      "cache": {
+        "title": "Akiba (Cache)",
+        "hint": "Maandishi/tafsiri zilizohifadhiwa kwa matumizi nje ya mtandao pamoja na faili za muda zilizosalia.",
+        "clear": "Futa akiba",
+        "clearConfirmTitle": "Futa akiba?",
+        "clearConfirmBody": "Sura/tafsiri zilizohifadhiwa zitaondolewa na kupakuliwa upya inapohitajika. Upakuaji wa sauti za qari na miundo ya AI HAVITAathirika.",
+        "clearAction": "Futa"
+      },
+      "offlineQuran": {
+        "title": "Qur'ani ya nje ya mtandao (maandishi + tafsiri)",
+        "hint": "Maandishi na tafsiri ya sura zilizopakuliwa kwa matumizi ya nje ya mtandao. Huondolewa unapofuta akiba.",
+        "empty": "Bado hakuna sura zilizopakuliwa nje ya mtandao.",
+        "surahs": "Sura {n} kati ya 114"
+      },
+      "podcast": {
+        "title": "Vipakuliwa vya podikasti",
+        "empty": "Hakuna vipindi vilivyopakuliwa",
+        "deleteAll": "Futa vyote",
+        "deleteAllConfirmTitle": "Futa vipakuliwa vyote?",
+        "deleteAllConfirmBody": "Vipindi vyote vilivyopakuliwa vitaondolewa kwenye kifaa chako."
+      },
+      "video": {
+        "title": "Upakuaji wa video",
+        "empty": "Hakuna video zilizopakuliwa",
+        "deleteAll": "Futa zote",
+        "deleteAllConfirmTitle": "Futa upakuaji wote?",
+        "deleteAllConfirmBody": "Video zote zilizopakuliwa zitaondolewa kwenye kifaa chako."
+      }
+    },
+    "appIcon": {
+      "title": "Aikoni na jina la programu",
+      "hint": "Chagua aikoni mbadala kwa skrini kuu (Android pekee).",
+      "iosHint": "Uchaguzi wa aikoni na jina haupatikani kwenye iOS katika toleo hili — jina la programu haliwezi kubadilishwa wakati wa kuendesha kwenye iOS (kizuizi cha Apple).",
+      "variantDefault": "Salati (chaguo-msingi)",
+      "variantEmerald": "Salati (zumaridi)",
+      "variantSalatibox": "Salatibox"
+    },
+    "lateNotif": {
+      "title": "Arifa inachelewa kufika?",
+      "hint": "Android huchelewesha kengele kwa dakika kadhaa kuokoa betri. Mipangilio miwili hii inarekebisha:",
+      "exactAlarm": "1. Ruhusu kengele na vikumbusho (chagua Salati)",
+      "battery": "2. Zima uboreshaji wa betri kwa Salati",
+      "notGranted": "Kwa sasa haijaruhusiwa — tafadhali washa hapa chini, la sivyo vikumbusho vinaweza kuchelewa.",
+      "batteryPromptTitle": "Zima uboreshaji wa betri?",
+      "batteryPromptBody": "Ili vikumbusho vya nyakati za sala vifike kwa wakati, Salati inapaswa kuondolewa kwenye uboreshaji wa betri wa kifaa chako.",
+      "batteryPromptLater": "Baadaye",
+      "batteryPromptOpen": "Fungua mipangilio"
+    },
+    "azan": {
+      "title": "Adhana",
+      "hint": "Adhana hii husikika kwenye skrini ya nyakati za sala. Gusa aikoni ya kucheza ili kuisikiliza.",
+      "systemDefault": "Sauti ya kawaida (bila adhana kamili)",
+      "option": "Adhana {n}",
+      "preview": "Sikiliza",
+      "standardShort": "Chaguo-msingi",
+      "credit": "Rekodi: Adhana 1 – Adam-synagda (CC0 1.0) · Adhana 2 – Andrewler (CC BY-SA 4.0) · Adhana 3 – Islamic Center Malmö (CC BY 3.0), Wikimedia Commons.",
+      "fajrNote": "Adhana 3 ina sentensi ya alfajiri “Sala ni bora kuliko usingizi” na imechaguliwa hapa tayari.",
+      "iosLimit": "Arifa hucheza kipande kifupi (Apple huruhusu sekunde 30 pekee). Adhana kamili husikika baadaye ndani ya programu.",
+      "notification": "Adhana kama sauti ya arifa",
+      "notificationHint": "Wakati wa sala, adhana uliyochagua husikika badala ya sauti fupi ya mfumo.",
+      "perPrayerHint": "Huchaguliwa kando kwa kila sala. “Chaguo-msingi” maana yake sauti fupi ya mfumo badala ya adhana."
+    },
+    "travel": {
+      "title": "Hali ya Safari",
+      "enable": "Kidokezo cha Qasr wakati wa safari",
+      "enableHint": "Huonyesha kidokezo kuhusu Qasr na Jam' ukiwa umbali wa zaidi ya kilomita 85 kutoka nyumbani.",
+      "setHome": "Weka eneo la sasa kama nyumbani",
+      "home": "Nyumbani: {location}"
+    },
+    "udhiyah": {
+      "title": "Kikumbusho cha Udhiyah",
+      "enable": "Kumbusha kabla ya Eid al-Adha",
+      "hint": "Kikumbusho cha mara moja siku chache kabla ya Eid al-Adha kuandaa mnyama wa kuchinja (udhiyah/qurbani) (programu tu, si wavuti)"
+    },
+    "recitationModel": {
+      "title": "Modeli ya kisomo",
+      "base": "Kawaida – simu yoyote",
+      "turbo": "Haraka na sahihi – simu yenye nguvu",
+      "hint": "Modeli kubwa hutambua kwa usahihi zaidi lakini inahitaji hifadhi/RAM zaidi. Modeli uliyochagua hupakuliwa wakati wa kisomo chako kijacho (Wi-Fi inapendekezwa)."
+    },
+    "ramadan": {
+      "title": "Ramadhani",
+      "hint": "Vikumbusho vya saumu. Huonekana wakati wa Ramadhani pekee.",
+      "suhoor": "Kengele ya daku",
+      "suhoorHint": "Hukuamsha kabla ya saumu kuanza ili bado uweze kula na kunywa.",
+      "lead": "Dakika {n} kabla",
+      "leadHint": "Muda gani kabla ya sala ya alfajiri kengele hulia.",
+      "iftar": "Kikumbusho cha futari",
+      "iftarHint": "Hukuarifu dakika {n} kabla ya machweo ili uweze kuandaa futari."
+    },
+    "methodHint": "Fomula ya Alfajiri na Isha — ukiwa na shaka, tumia ya nchi yako.",
+    "asrEarlierDesc": "Alasiri huanza pale kivuli kinapokuwa kirefu sawa na kitu chenyewe.",
+    "asrLaterDesc": "Alasiri huanza tu kivuli kikiwa mara mbili — yaani takribani saa moja baadaye.",
+    "methodPickerHint": "Kila mbinu ni uamuzi wa mamlaka au jumuiya fulani — ileile ambayo misikiti ya nchi husika hupiga chapa kalenda zao kwayo.",
+    "methodForCountry": "Ya kawaida {country}",
+    "methodCountryHint": "Katika {country} jamaa nyingi hufuata {method}. Mpangilio wako unatofautiana — ni sawa ikiwa umekusudia hivyo.",
+    "methodCountryApply": "Badilisha kwenda {method}",
+    "methodParamsFooter": "Pembe za mbinu hii: {params}",
+    "prayerHelpFooter": "Ikiwa nyakati hazilingani na ratiba ya msikiti wako: hapa kuna njia ya haraka na maelezo kamili.",
+    "methodParams": {
+      "minutesAfterMaghrib": "dakika {n} baada ya Magharibi",
+      "degree": "°",
+      "decimal": "."
+    },
+    "methodRegions": {
+      "worldwide": "Duniani kote",
+      "europe": "Ulaya",
+      "northAmerica": "Amerika Kaskazini",
+      "arabia": "Rasi ya Uarabuni",
+      "middleEast": "Mashariki ya Kati",
+      "northAfrica": "Afrika Kaskazini",
+      "southAsia": "Asia Kusini",
+      "southeastAsia": "Asia ya Kusini-Mashariki"
+    }
+  },
+  "tracker": {
+    "title": "Kifuatiliaji cha Sala",
+    "subtitle": "Weka alama za sala zako 5 na jenga mfululizo",
+    "today": "Leo",
+    "week": "Siku 7 zilizopita",
+    "streakDays": "siku mfululizo",
+    "shareStats": "Shiriki takwimu kama picha",
+    "qada": {
+      "title": "Kihesabu cha qadha (swala)",
+      "desc": "Weka kwa kila sala idadi ya swala ulizokosa unazopaswa kulipa, na punguza unapozitekeleza. Kwa mkono kabisa - haihesabiwi kutoka kifuatiliaji cha kila siku.",
+      "none": "Hakuna swala za kulipa",
+      "decrease": "Punguza moja",
+      "increase": "Ongeza moja",
+      "total": "Jumla: {n}",
+      "step": "Hatua",
+      "adjustHint": "Tumia − na + kubadilisha kihesabu kwa hatua uliyochagua.",
+      "makeUp": "Imelipwa",
+      "makeUpOne": "Sala moja imelipwa: {prayer}",
+      "makeUpDay": "Lipa siku nzima (sala 5)",
+      "doneTotal": "Zilizolipwa tayari: {n}"
+    },
+    "streakDayOne": "siku mfululizo",
+    "taraweeh": {
+      "title": "Kifuatiliaji cha Taraweeh",
+      "desc": "Weka idadi ya rakaa za Taraweeh ulizosali usiku huu.",
+      "tonight": "Usiku huu",
+      "decrease": "Punguza mbili",
+      "increase": "Ongeza mbili",
+      "summary": "{nights} usiku zilizosaliwa · jumla rakaa {total}"
+    },
+    "day": {
+      "previous": "Siku iliyotangulia",
+      "next": "Siku inayofuata",
+      "backToToday": "Rudi kwa leo",
+      "select": "Gusa ili kuhariri siku hii",
+      "limitHint": "Unaweza kujaza hadi siku {n} zilizopita."
+    },
+    "exempt": {
+      "toggle": "Siku ya kusamehewa",
+      "desc": "Kwa siku ambazo sala haitakiwi (mf. hedhi). Siku hiyo haihesabiwi kuwa imetimizwa wala kukoswa.",
+      "marked": "Siku hii imewekwa alama ya kusamehewa — sala haziwezi kutiwa alama hapa."
+    },
+    "history": {
+      "title": "Historia",
+      "week": "Wiki",
+      "month": "Mwezi",
+      "tapHint": "Gusa siku ili kuihariri."
+    },
+    "month": {
+      "empty": "Bado hakuna kilichorekodiwa mwezi huu.",
+      "days": "Siku {tracked} kati ya {days} zimerekodiwa",
+      "prayers": "Sala {done} kati ya {possible}",
+      "full": "Siku {n} kamili",
+      "exempt": "Siku {n} za kusamehewa",
+      "notTracked": "Haijarekodiwa"
+    },
+    "patterns": {
+      "title": "Uchambuzi",
+      "empty": "Ukirekodi siku chache, uchambuzi utaonekana hapa.",
+      "mostMissed": "Inayokoswa zaidi: {prayer}",
+      "mostMissedDetail": "Mara {n} katika siku {days} zilizorekodiwa.",
+      "allDone": "Sala zote zilitimizwa kila siku iliyorekodiwa.",
+      "noSingle": "Hakuna sala moja inayokoswa kwa wazi zaidi ya nyingine.",
+      "basis": "Msingi: siku {tracked} zilizorekodiwa kati ya {days} za mwisho.",
+      "weeks": "Wiki za hivi karibuni",
+      "weekDetail": "Sala {done} kati ya {possible} katika siku {tracked} zilizorekodiwa",
+      "weekEmpty": "Hakuna maingizo wiki hii"
+    }
+  },
+  "fasting": {
+    "title": "Funga",
+    "total": "Jumla ya siku za funga",
+    "suhoor": "Daku hadi",
+    "iftar": "Futari",
+    "untilSuhoorEnd": "Hadi mwisho wa daku",
+    "untilIftar": "Hadi futari",
+    "afterIftar": "Muda wa funga wa leo umekwisha",
+    "fastedToday": "Nimefunga leo",
+    "markToday": "Umefunga leo? Gusa kuweka alama",
+    "recommended": "Siku za funga zinazopendekezwa",
+    "recommendedText": "Ramadhani (lazima) · Jumatatu na Alhamisi · 'siku nyeupe' (13-15 za kila mwezi wa Hijria) · Siku ya Arafa · Ashura.",
+    "qada": {
+      "title": "Kihesabu cha Qadha",
+      "desc": "Weka siku ngapi za Ramadhani unabaki kulipa, kisha punguza hesabu hapa kila unapolipa. Ni kwa mkono kabisa - haihesabiwi kiotomatiki kutoka kifuatiliaji chako cha kila siku.",
+      "decrease": "Siku moja imelipwa",
+      "increase": "Ongeza siku moja",
+      "owed": "Bado siku {n} zinabaki kulipwa",
+      "doneAll": "Hakuna siku za Qadha zilizobaki"
+    },
+    "ramadanCard": {
+      "heading": "Ramadhani"
+    }
+  },
+  "khatmah": {
+    "title": "Mpango wa Khatma",
+    "subtitle": "Qur'an nzima kwa kasi yako - chagua idadi ya siku",
+    "days": "Siku",
+    "day": "Siku",
+    "behind": "siku nyuma",
+    "read": "Soma",
+    "newPlan": "Anza mpango mpya",
+    "resetConfirmTitle": "Ufute mpango?",
+    "resetConfirmBody": "Maendeleo yako (siku {done} kati ya {total}) yatapotea na hayawezi kurudishwa.",
+    "resetConfirmAction": "Futa",
+    "customLabel": "Au idadi yako ya siku (1-365):",
+    "behindOne": "siku nyuma"
+  },
+  "zakat": {
+    "title": "Kikokotoo cha Zaka",
+    "subtitle": "2.5% ya mali inayostahili zaka juu ya nisabu",
+    "cash": "Fedha taslimu na akaunti",
+    "gold": "Dhahabu (thamani)",
+    "silver": "Fedha (thamani)",
+    "business": "Mali/bidhaa za biashara",
+    "debts": "Madeni yanayoweza kupunguzwa",
+    "goldPrice": "Bei ya dhahabu kwa gramu (ya sasa)",
+    "currencyLabel": "Sarafu",
+    "base": "Msingi",
+    "nisab": "Nisabu",
+    "due": "Zaka inayodaiwa",
+    "belowNisab": "Chini ya nisabu - hakuna zaka inayodaiwa.",
+    "note": "Kikokotoo rahisi (nisabu kwa gramu 85 za dhahabu). Kwa mambo maalum (kilimo, mifugo, pensheni) muulize mtu mwenye elimu.",
+    "reminder": {
+      "title": "Kikumbusho cha kila mwaka",
+      "desc": "Zaka inadaiwa baada ya mwaka mzima wa Hijria tangu kufikia nisabu - weka tarehe pale mali yako inapofikia kiwango hicho.",
+      "setToday": "Weka leo kama tarehe ya kumbukumbu",
+      "due": "Kikumbusho kinachofuata: {date}",
+      "noAnchor": "Bado hakuna tarehe iliyowekwa."
+    },
+    "goldPriceRef": "Tumia ≈ {price} {currency}/g (hadi Julai 2026 - hakiki bei ya sasa)",
+    "goldPriceLive": "Tumia ≈ {price} {currency}/g (bei ya sasa ya {date})",
+    "priceMissing": "Weka bei ya dhahabu ili kuhesabu kama zaka inadaiwa.",
+    "fitrLinkTitle": "Kikokotoo cha Zaka al-Fitr",
+    "fitrLinkDesc": "Wajibu tofauti kwa kila mwanafamilia, mwishoni mwa Ramadhani"
+  },
+  "zakatFitr": {
+    "title": "Zaka al-Fitr",
+    "subtitle": "Kiasi maalum kwa kila mtu mwishoni mwa Ramadhani - tofauti na zaka ya mali",
+    "intro": "Zaka al-Fitr ni wajibu tofauti na zaka ya mali iliyo hapo juu. Ni kiasi maalum kwa kila mwanafamilia, kinachodaiwa kabla ya sala ya Idi.",
+    "disclaimer": "Kiasi kwa kila mtu kinategemea nchi na madhehebu (sawa na takribani kilo 2.5-3 za chakula kikuu). Kama huna uhakika, uliza msikiti wako wa karibu.",
+    "householdSize": "Idadi ya watu nyumbani",
+    "amountPerPerson": "Kiasi kwa kila mtu",
+    "amountMissing": "Weka kiasi kwa kila mtu ili kukokotoa jumla.",
+    "total": "Jumla ya kiasi"
+  },
+  "names": {
+    "title": "Majina 99 ya Allah",
+    "subtitle": "al-Asma al-Husna - gusa kusikiliza",
+    "learn": "Jifunze",
+    "quizPrompt": "Jina hili lina maana gani?",
+    "quizResult": "Raundi imekamilika - kila raundi huuliza maswali 10 mapya ya nasibu."
+  },
+  "halal": {
+    "title": "Halali Karibu",
+    "osmNote": "Data: © OpenStreetMap (huenda haijakamilika)",
+    "empty": "Hakuna maeneo ya halali yaliyopatikana ndani ya kilomita 5 - data ya OSM hapa huenda haijakamilika."
+  },
+  "scanner": {
+    "title": "Skana ya Halali",
+    "subtitle": "Skani bakodi ili kulinganisha viungo na sifa zinazojulikana za halali/haramu.",
+    "scanPrompt": "Elekeza kamera kwenye bakodi",
+    "manualEntryLabel": "Namba ya bakodi",
+    "manualEntryPlaceholder": "mfano 4008400123456",
+    "checkButton": "Kagua bidhaa",
+    "scanAgain": "Skani bidhaa nyingine",
+    "loading": "Inatafuta bidhaa…",
+    "notFound": "Bidhaa haikupatikana kwenye hifadhidata ya Open Food Facts.",
+    "fetchError": "Data ya bidhaa haikuweza kupakiwa. Angalia muunganisho na ujaribu tena.",
+    "webNotice": "Uskanishaji wa bakodi kwa kamera unapatikana kwenye programu ya simu. Kwenye wavuti, tafadhali weka bakodi kwa mkono.",
+    "cameraPermissionDenied": "Ufikiaji wa kamera umekataliwa. Iwashe kwenye mipangilio ya kifaa ili kuskani bakodi.",
+    "matchedIngredientsTitle": "Viungo vilivyopatikana",
+    "productNameFallback": "Bidhaa isiyojulikana",
+    "barcodeLabel": "Bakodi: {code}",
+    "statuses": {
+      "halal": "Hakuna tatizo",
+      "haram": "Haramu",
+      "mashbooh": "Yenye Shaka (Mashbuh)",
+      "unknown": "Haijulikani"
+    },
+    "statusHints": {
+      "halal": "Hakuna kiungo cha kutiliwa shaka kilichopatikana kwenye data zilizopo.",
+      "haram": "Ina kiungo kisichoruhusiwa kwa uwazi.",
+      "mashbooh": "yenye mgogoro kidini - ukiwa na shaka kagua chanzo",
+      "unknown": "hakuna data ya kutosha"
+    },
+    "reasons": {
+      "alcohol": "Ina pombe/ethanol - haikubaliki hata kama kibeba harufu.",
+      "pork": "Ina nguruwe au kitokanacho na nguruwe (mfano jelatini, mafuta ya nguruwe, rennet, enzaimu ya nguruwe).",
+      "gelatinUnknownOrigin": "Jelatini bila kuainisha chanzo cha wanyama - inaweza kutoka ng'ombe, samaki, au nguruwe.",
+      "animalRennetUnknown": "Rennet ya wanyama bila uthibitisho wa uchinjaji unaokubalika kihalali.",
+      "carmine": "Karmini/kochinili (E120) - rangi nyekundu kutoka wadudu, yenye mgogoro miongoni mwa wanazuoni.",
+      "lCysteine": "L-sisteine (E920) - mara nyingi hutolewa kutoka manyoya au nywele, chanzo mara nyingi hakielezwi.",
+      "monoDiglycerides": "Mono-/diglyceridi (E471) au vichanganyaji vinavyofanana - chanzo cha wanyama au mimea mara nyingi hakiwezi kutambulika.",
+      "vanillaExtractAlcohol": "Dondoo ya vanila mara nyingi hutengenezwa kwa kutumia pombe kama kiyeyusha.",
+      "halalCertified": "Imeainishwa waziwazi kama iliyothibitishwa kuwa halali."
+    },
+    "disclaimerTitle": "Si Uthibitisho Rasmi",
+    "disclaimerBody": "Skana hii SI ukaguzi wa halali ulioidhinishwa. Tathmini hii inategemea ulinganishaji wa kiotomatiki wa data za umma za viungo (Open Food Facts) na orodha ya maneno yanayojulikana - inaweza kuwa na makosa na haichukui nafasi ya uthibitisho rasmi. Kwa bidhaa muhimu, kagua chanzo mwenyewe au wasiliana na mtengenezaji."
+  },
+  "time": {
+    "hoursShort": "sa",
+    "minutesShort": "dk",
+    "secondsShort": "sek"
+  },
+  "prayer": {
+    "loading": "Inapakia nyakati za sala…",
+    "unavailable": "Nyakati za sala hazipatikani kwa sasa (nje ya mtandao na hakuna hifadhi ya muda).",
+    "next": "Sala inayofuata",
+    "timeLeft": "imebaki {time}",
+    "icsExport": "Hamisha kalenda (.ics)",
+    "playAzan": "Cheza Adhana",
+    "weekView": "Muhtasari wa wiki",
+    "travel": {
+      "banner": "Safarini · kilomita {km} kutoka nyumbani",
+      "qasrTitle": "Qasr na Jam'",
+      "qasrDesc": "Ukiwa msafiri unaweza kufupisha Dhuhr, Asr na Isha hadi rakaa 2 (Qasr) na kuunganisha Dhuhr na Asr au Maghrib na Isha (Jam')."
+    },
+    "sunrise": "Macheo (Shuruq)",
+    "iqama": "Ikama",
+    "lateWarning": {
+      "title": "Vikumbusho vinaweza kuchelewa",
+      "body": "Bila ruhusa ya “Kengele na vikumbusho”, Android huahirisha arifa ya swala hadi karibu saa moja.",
+      "action": "Ruhusu sasa"
+    }
+  },
+  "prayerWeek": {
+    "title": "Muhtasari wa wiki",
+    "subtitle": "Nyakati zote 5 za sala kwa siku 7 zijazo",
+    "loading": "Inapakia nyakati za wiki…",
+    "unavailable": "Nyakati za wiki hazipatikani kwa sasa (bila mtandao na hakuna akiba).",
+    "locationHint": "Kwa {location} — mbinu ya hesabu/madhehebu ya Asr kama ilivyo kwenye mipangilio."
+  },
+  "dashboard": {
+    "reorder": {
+      "title": "Rekebisha dashibodi",
+      "subtitle": "Amua mpangilio na uonekano wa kadi za skrini kuu – kadi ya sala inayofuata na jedwali la nyakati za sala hubaki kuonekana kila wakati.",
+      "locked": "Huonekana kila wakati",
+      "moveUp": "Sogeza juu",
+      "moveDown": "Sogeza chini",
+      "reset": "Rejesha mpangilio chaguo-msingi"
+    },
+    "cards": {
+      "hero": "Sala inayofuata",
+      "ramadanCard": "Hesabu ya kurudi nyuma ya Ramadhani",
+      "travelBanner": "Arifa ya hali ya safari",
+      "prayerTable": "Jedwali la nyakati za sala"
+    }
+  },
+  "qibla": {
+    "noMagnetometer": "Hakuna kipima sumaku kilichopatikana kwenye kifaa hiki - mwelekeo unategemea tu mwelekeo wa Al-Kaaba, si mwelekeo wa kifaa.",
+    "bearingInfo": "Mwelekeo wa Al-Kaaba kutoka eneo lako",
+    "locationFailed": "Eneo halikuweza kubainika - hesabu inatumia mahali pa mwisho palipowekwa.",
+    "north": "K",
+    "east": "M",
+    "south": "J",
+    "west": "G",
+    "enableCompass": "Washa dira",
+    "dir": {
+      "n": "Kaskazini",
+      "no": "Kaskazini Mashariki",
+      "o": "Mashariki",
+      "so": "Kusini Mashariki",
+      "s": "Kusini",
+      "sw": "Kusini Magharibi",
+      "w": "Magharibi",
+      "nw": "Kaskazini Magharibi"
+    },
+    "deviceHeading": "Mwelekeo wa kifaa: {deg}°",
+    "aligned": "Mwelekeo ni sahihi - unaelekea Al-Kaaba",
+    "calibrateHint": "Mwelekeo si sahihi? Sawazisha dira: sogeza simu mara kadhaa kwa umbo la 8, mbali na chuma/sumaku.",
+    "accuracyDisclaimer": "Mwelekeo huu unatokana na data ya sumaku ya kifaa chako na unaweza kupotoka kidogo kutokana na chuma au vifaa vya elektroniki karibu.",
+    "distanceKm": "Kilomita {km} hadi Kaaba",
+    "ar": {
+      "compassTab": "Dira",
+      "cameraTab": "Kamera",
+      "instruction": "Sogeza simu yako hadi alama ya Kaaba iwe katikati.",
+      "turnLeft": "Geuka kushoto",
+      "turnRight": "Geuka kulia",
+      "permissionTitle": "Ufikiaji wa kamera unahitajika",
+      "permissionBody": "Salati inaonyesha mwelekeo wa Kibla juu ya picha ya kamera. Picha inaonyeshwa moja kwa moja tu na haihifadhiwi wala kutumwa.",
+      "cameraDenied": "Ufikiaji wa kamera ulikataliwa. Uruhusu katika mipangilio ya kifaa, au endelea kutumia dira.",
+      "backToCompass": "Rudi kwenye dira",
+      "notAvailableWeb": "Mwonekano wa AR unahitaji kamera ya simu na haupatikani kwenye wavuti."
+    }
+  },
+  "calendar": {
+    "offlineNotice": "Nje ya mtandao - data ya Hijria inahesabiwa kwa ndani na inaweza kutofautiana kwa ±siku 1 na tarehe rasmi.",
+    "sightingNotice": "Tarehe zinazotegemea kuonekana kwa mwezi (mfano mwanzo wa Ramadhani/Eid) ni makadirio - tarehe ya kuonekana ya eneo lako inaweza kutofautiana.",
+    "weekdays": {
+      "mo": "Jtt",
+      "tu": "Jnn",
+      "we": "Jtn",
+      "th": "Alh",
+      "fr": "Ijm",
+      "sa": "Jmo",
+      "su": "Jpl"
+    },
+    "months": {
+      "1": "Januari",
+      "2": "Februari",
+      "3": "Machi",
+      "4": "Aprili",
+      "5": "Mei",
+      "6": "Juni",
+      "7": "Julai",
+      "8": "Agosti",
+      "9": "Septemba",
+      "10": "Oktoba",
+      "11": "Novemba",
+      "12": "Desemba"
+    },
+    "holidaysThisMonth": "Matukio ya mwezi huu",
+    "hijriSuffix": "AH",
+    "days": {
+      "newYear": "Mwaka Mpya wa Kiislamu (Muharram 1)",
+      "ashura": "Siku ya Ashura (Muharram 10)",
+      "mawlid": "Siku ya Kuzaliwa kwa Mtume صلى الله عليه وسلم (Maulidi, Rabi' al-awwal 12)",
+      "miraj": "Isra na Miraji (Rajab 27)",
+      "ramadanStart": "Mwanzo wa Ramadhani",
+      "laylatAlQadr": "Laylat al-Qadr (mara nyingi husherehekewa usiku wa 27)",
+      "eidFitr": "Eid al-Fitr (Sherehe ya kumaliza Funga)",
+      "arafah": "Siku ya Arafa (Dhul-Hijjah 9)",
+      "eidAdha": "Eid al-Adha (Sherehe ya Dhabihu)"
+    },
+    "upcoming": "Matukio yajayo"
+  },
+  "hijriConverter": {
+    "title": "Kibadilisha Tarehe za Hijria",
+    "subtitle": "Badilisha tarehe yoyote kati ya kalenda ya Gregori na Hijria.",
+    "modeGregorianToHijri": "Gregori → Hijria",
+    "modeHijriToGregorian": "Hijria → Gregori",
+    "gregorianDate": "Tarehe ya Gregori",
+    "hijriDate": "Tarehe ya Hijria",
+    "day": "Siku",
+    "month": "Mwezi",
+    "year": "Mwaka",
+    "result": "Matokeo",
+    "loading": "Inakokotoa …",
+    "offlineNotice": "Nje ya mtandao - imekokotolewa kwa ndani, inaweza kutofautiana hadi siku 1.",
+    "disclaimer": "Tarehe za Hijria hutegemea njia ya kuona mwezi na zinaweza kutofautiana kwa siku 1 kulingana na eneo.",
+    "error": {
+      "incomplete": "Tafadhali jaza siku, mwezi na mwaka kwa tarakimu.",
+      "range": "Thamani iko nje ya kiwango — mwezi 1–12, mwaka kuanzia 1.",
+      "nonexistent": "Tarehe hiyo haipo — tafadhali angalia siku."
+    }
+  },
+  "mosques": {
+    "title": "Misikiti",
+    "loadError": "Misikiti haikuweza kupakiwa.",
+    "empty": "Hakuna misikiti iliyopatikana ndani ya kilomita {km}.",
+    "osmNote": "Data ya eneo kutoka © wachangiaji wa OpenStreetMap, huenda haijakamilika au ni ya zamani.",
+    "openRoute": "Fungua njia",
+    "kmAway": "kilomita {km}",
+    "map": "Ramani",
+    "list": "Orodha",
+    "mapError": "Ramani haikuweza kupakiwa. Tumia mwonekano wa orodha.",
+    "offlineCached": "Hakuna muunganisho wa intaneti — inaonyesha misikiti iliyopakiwa mara ya mwisho."
+  },
+  "a11y": {
+    "up": "Juu",
+    "down": "Chini",
+    "left": "Kushoto",
+    "right": "Kulia",
+    "close": "Funga",
+    "back": "Rudi",
+    "playAudio": "Sikiliza",
+    "addBookmark": "Ongeza alama ya ukurasa",
+    "removeBookmark": "Ondoa alama ya ukurasa",
+    "share": "Shiriki aya",
+    "noteAyah": "Dokezo kwa aya",
+    "bookmarks": "Alama za kurasa",
+    "previousMonth": "Mwezi uliopita",
+    "nextMonth": "Mwezi unaofuata",
+    "markDone": "Weka alama kama imekamilika",
+    "markNotDone": "Ondoa alama",
+    "search": "Tafuta",
+    "decrease": "Punguza",
+    "increase": "Ongeza"
+  },
+  "study": {
+    "title": "Masomo",
+    "subtitle": "Kozi zilizopangwa zenye marejeleo ya vyanzo - hatua kwa hatua na maswali",
+    "source": "Chanzo",
+    "sections": {
+      "quranArabic": "Kuzama zaidi katika Kiarabu cha Qur'an",
+      "islamicStudies": "Imani na Historia",
+      "bonus": "Ziada"
+    },
+    "reorder": {
+      "cta": "Rekebisha mpangilio",
+      "ctaDesc": "Amua mwenyewe mpangilio wa kuonyesha kozi zako",
+      "title": "Mpangilio wa kozi",
+      "subtitle": "Makundi yanabaki sawa – panga upya kozi ndani ya kila kundi",
+      "moveUp": "Sogeza juu",
+      "moveDown": "Sogeza chini",
+      "reset": "Rejesha mpangilio chaguo-msingi"
+    },
+    "placementCtaDesc": "Tayari unajua mada hii? Anza mbele zaidi moja kwa moja",
+    "courses": {
+      "tajwid": {
+        "title": "Tajwid - kaida za usomaji",
+        "desc": "Nun Sakinah, Qalqalah, aina za Madd, Waqf - na sauti za aya"
+      },
+      "aqida": {
+        "title": "Aqida - misingi ya imani",
+        "desc": "Nguzo sita za imani, zimeelezwa kwa urahisi"
+      },
+      "fiqh-ibadat": {
+        "title": "Fiqhi ya Ibada",
+        "desc": "Tohara, swala, funga, zaka na hija kama somo: masharti, nguzo, wajibati na vibatilisho - tofauti za madhehebu zimetajwa (masomo 24)"
+      },
+      "seerah": {
+        "title": "Sira - maisha ya Mtume ﷺ",
+        "desc": "Kwa mpangilio wa wakati kutoka Makka hadi Madina"
+      },
+      "prophets": {
+        "title": "Hadithi za Manabii",
+        "desc": "Kutoka Adam hadi Isa - na ushahidi wa Qur'an"
+      },
+      "sahaba": {
+        "title": "Masahaba na Wanazuoni",
+        "desc": "Abu Bakr, Umar, Uthman, Ali, Khadija, Bilal, Aisha, Fatima, Salman al-Farisi, waliobaki wa Kumi waliobashiriwa + maimamu wanne wakuu - wasifu wenye vyanzo (masomo 15)"
+      },
+      "akhlaq": {
+        "title": "Akhlaq - tabia na fadhila",
+        "desc": "Fadhila kutoka sidq hadi adl na magonjwa ya moyo: hasadi, kiburi, umbea, riya, ubahili - pamoja na shukrani, tawakali na toba, zenye vyanzo (masomo 14)"
+      },
+      "nikah": {
+        "title": "Fiqhi ya Ndoa na Familia",
+        "desc": "Kusudi la ndoa, haki na wajibu, mkataba wa ndoa, talaka, maharimu, khuluu na eda, nafaka, hadhana, malezi ya watoto - yenye vyanzo (masomo 9)"
+      },
+      "nawawi40": {
+        "title": "Hadithi 40 (an-Nawawi)",
+        "desc": "Hadithi 42 muhimu (an-Nawawi + Ibn Rajab), zenye maelezo, kabisa nje ya mtandao"
+      },
+      "grammar": {
+        "title": "Sarufi ya Qur'an",
+        "desc": "Kozi ya msingi ya Nahw + kuzama zaidi: kuelewa muundo wa sentensi za Qur'an (masomo 16)"
+      },
+      "amau": {
+        "title": "Kiarabu cha Kila Siku",
+        "desc": "Maneno 869 na sentensi za kila siku: msamiati wote 699 + sentensi zote 170 za kila siku, katika masomo 54"
+      },
+      "madinah": {
+        "title": "Kiarabu cha Madina",
+        "desc": "Kozi ya kawaida (Dr. V. Abdur Rahim): Vitabu 1-4 kamili (masomo 83, msamiati 872)"
+      },
+      "dialects": {
+        "title": "Lahaja za Kiarabu",
+        "desc": "Maghrib, Levant, Ghuba, Misri - lahaja nne kuu za mazungumzo zikilinganishwa na Kiarabu fasaha (masomo 28: salamu, namba, maswali, familia, chakula, hisia, misemo)"
+      }
+    },
+    "dialects": {
+      "reorderTitle": "Mpangilio wa vikundi vya lahaja",
+      "groups": {
+        "maghrebi": "Maghrib",
+        "levantine": "Levant",
+        "gulf": "Ghuba",
+        "egyptian": "Misri"
+      },
+      "moveUp": "Hamisha juu",
+      "moveDown": "Hamisha chini"
+    },
+    "todayGoal": "Leo: masomo {x}/{y} yamekamilika",
+    "streak": "Siku {n} za mfululizo wa kujifunza",
+    "weeklyReview": {
+      "cta": "Muhtasari wa Wiki",
+      "ctaDesc": "Wiki hii kwa nambari",
+      "title": "Muhtasari Wako wa Wiki",
+      "subtitle": "Uliyojifunza katika siku 7 zilizopita",
+      "lessons": "Masomo",
+      "questions": "Maswali yaliyojibiwa",
+      "best": "Matokeo bora",
+      "streak": "Siku mfululizo",
+      "empty": "Bado hujajifunza chochote wiki hii - anza sasa!",
+      "shareImage": "Shiriki kama picha"
+    },
+    "streakOne": "Siku 1 ya mfululizo wa kujifunza"
+  },
+  "review": {
+    "title": "Marudio",
+    "emptyTitle": "Hakuna kilichofika muda wake",
+    "emptyText": "Kila kitu bado kipya kichwani. Kamilisha masomo - marudio yataonekana hapa wakati sahihi.",
+    "passed": "Vizuri sana! Vipindi vinaongezeka - ulichojifunza kimekita mizizi.",
+    "failed": "Hakuna tatizo - mada hizi zitakuja tena mapema zaidi.",
+    "due": "yamefika muda wake",
+    "start": "Rudia sasa"
+  },
+  "exam": {
+    "title": "Mtihani wa Mwisho",
+    "passed": "Umefaulu! Umeimudu kozi hii.",
+    "failed": "Bado hujafaulu (kuanzia 80%). Rudia masomo na ujaribu tena.",
+    "locked": "Kamilisha masomo yote kwanza",
+    "start": "Anza mtihani",
+    "done": "Mtihani umefaulu"
+  },
+  "weak": {
+    "title": "Fanya Mazoezi ya Udhaifu",
+    "emptyTitle": "Hakuna udhaifu",
+    "emptyText": "Kwa sasa hakuna ulichojibu vibaya hivi karibuni. Endelea hivyo hivyo!",
+    "passed": "Kujifunza kutokana na makosa - hivyo ndivyo maendeleo yanavyofanyika.",
+    "failed": "Endelea - mada hizi zitaendelea kuonekana hapa.",
+    "suggest": "Umejibu vibaya hivi karibuni - fanya mazoezi maalum sasa"
+  },
+  "write": {
+    "title": "Fanya Mazoezi ya Kuandika",
+    "subtitle": "Chora herufi kutoka kumbukumbu kisha ulinganishe na mfano - sikiliza jina lake",
+    "clear": "Futa",
+    "hit": "Sahihi",
+    "next": "Endelea",
+    "compare": "Linganisha",
+    "drawFromMemory": "Chora kutoka kumbukumbu - mfano utaonekana tu unapolinganisha.",
+    "hint": "Linganisha mstari wako na mfano wa nusu-uwazi na ujitathmini kwa uaminifu - kwa 'Endelea' unaenda kwenye herufi inayofuata."
+  },
+  "landing": {
+    "title": "Salati",
+    "tagline": "Rafiki yako wa sala, Qur'an na maarifa",
+    "subtitle": "Nyakati za sala, Kibla, Qur'an na usomaji, Dua, Hadithi, kitafuta misikiti na njia kamili ya kujifunza - inatumika nje ya mtandao, bila matangazo, bila ufuatiliaji.",
+    "ctaTry": "Jaribu Msomaji wa Qur'an",
+    "ctaStudy": "Gundua njia ya kujifunza",
+    "heroDownload": "Pakua bure",
+    "heroAppStore": "Pakua kutoka App Store",
+    "heroApk": "Pakua APK (Android)",
+    "heroDownloadNote": "Bure, bila matangazo. iPhone kupitia App Store, Android kama APK moja kwa moja. Google Play inakuja hivi karibuni.",
+    "heroDownloadNotePlay": "Bure, bila matangazo. iPhone kupitia App Store, Android kwenye Google Play au kama APK moja kwa moja.",
+    "heroPlay": "Ipate kwenye Google Play",
+    "featuresTitle": "Kila kitu unachohitaji",
+    "f1Title": "Nyakati za sala na Kibla",
+    "f1Desc": "Nyakati sahihi kwa eneo lako, dira ya Al-Kaaba",
+    "f2Title": "Qur'an",
+    "f2Desc": "Wasomaji wote na tafsiri, alama za kurasa, urambazaji wa Juzuu",
+    "f3Title": "Jifunze Kusoma Qur'an",
+    "f3Desc": "Masomo kutoka alfabeti hadi sura za kwanza, na sauti",
+    "f4Title": "Masomo",
+    "f4Desc": "Kozi kutoka Aqida hadi Sarufi - na Jaribio la Kiwango",
+    "f5Title": "Dua na Hadithi",
+    "f5Desc": "Dua na mikusanyiko ya Hadithi yenye marejeleo ya vyanzo",
+    "f6Title": "Kitafuta Misikiti",
+    "f6Desc": "Misikiti na maeneo ya sala karibu nawe",
+    "f7Title": "Maswali na Tasbihi",
+    "f7Desc": "Hali za maswali, kihesabu Dhikr chenye malengo na takwimu za kila siku",
+    "f8Title": "Faragha na nje ya mtandao",
+    "f8Desc": "Hakuna ufuatiliaji, hakuna matangazo, hakuna akaunti inayohitajika",
+    "screenshotsTitle": "Muonekano wa programu",
+    "tabletTitle": "Pia yuko nyumbani kwenye kompyuta kibao",
+    "tabletLead": "Kwenye skrini kubwa, ukurasa wa mwanzo na mipangilio hukaa katika safu mbili na orodha huonekana kama gridi — badala ya mpangilio wa simu uliyonyooshwa.",
+    "storeTitle": "Pakua Salati",
+    "storeSoon": "Itapatikana hivi karibuni",
+    "storeAvailable": "Inapatikana sasa",
+    "footer": "Salati - sala, Qur'an na maarifa katika programu moja.",
+    "apkButton": "Pakua APK ya Android moja kwa moja",
+    "apkHint": "Usakinishaji wa moja kwa moja bila duka - Android itauliza ruhusa ya vyanzo visivyojulikana.",
+    "apkDownloading": "Inapakua … {p} %",
+    "tvTitle": "Pia kwa televisheni",
+    "tvDesc": "Salati TV ni programu-mwenza ya bure kwa Android TV na Google TV: msomaji wa Qur'an wenye tilawa na neno linalosomwa likiangaziwa moja kwa moja, saa tulivu ya sala kwa sebule, wasomaji wenye sura kamili, Redio ya Qur'an saa 24, video za kujifunza, podikasti na maswali ya maarifa.",
+    "tvF1Title": "Saa ya sala sebuleni",
+    "tvF1Desc": "Onyesho kubwa na tulivu la nyakati tano za sala – hukokotolewa kabisa kwenye kifaa, bila mtandao.",
+    "tvF2Title": "Msomaji wa Qur'an wenye kuangazia maneno",
+    "tvF2Desc": "Kiarabu, matamshi na tafsiri – tilawa huangazia neno linalosomwa moja kwa moja na kusonga aya baada ya aya.",
+    "tvF3Title": "Simu yako kama rimoti",
+    "tvF3Desc": "Changanua msimbo wa QR na simu yako itaendesha televisheni kwenye Wi-Fi ile ile – na kujibu maswali kama skrini ya pili. Bila akaunti, kila kitu kwenye kifaa.",
+    "tvBadge": "Salati TV · Inakuja hivi karibuni Google Play Store",
+    "tvBadgeLive": "Salati TV · kwenye Google Play Store",
+    "trust1Title": "Bure 100%",
+    "trust1Desc": "Vipengele vyote, milele. Hakuna usajili, hakuna vizuizi vya malipo.",
+    "trust2Title": "Hakuna matangazo, hakuna ufuatiliaji",
+    "trust2Desc": "Hakuna akaunti inayohitajika. Data yako inabaki yako.",
+    "trust3Title": "AI inafanya kazi kwa ndani kwenye kifaa chako",
+    "trust3Desc": "Ukaguzi wa usomaji unachakata rekodi yako moja kwa moja kwenye kifaa - haiondoki kamwe.",
+    "trust4Title": "Inatumika nje ya mtandao",
+    "trust4Desc": "Ikishapakiwa mara moja, ipo daima: Qur'an, kozi, dua - hata bila intaneti.",
+    "ctaKi": "Salati AI (Beta)",
+    "faqTitle": "Maswali yanayoulizwa mara kwa mara",
+    "faq1Q": "Je, Salati ni bure kweli?",
+    "faq1A": "Ndiyo, kabisa. Vipengele vyote vinapatikana bila usajili wa malipo, bila manunuzi ndani ya programu na bila matangazo. Hakuna toleo la premium - unachokiona ndiyo programu kamili.",
+    "faq2Q": "Je, data yangu inafuatiliwa?",
+    "faq2A": "Hapana. Salati haihitaji akaunti, haina SDK za matangazo au uchambuzi na haitumi data yoyote ya matumizi kwetu. Mipangilio, alamisho na maendeleo ya kujifunza hubaki kwenye kifaa chako.",
+    "faq3Q": "Je, programu inafanya kazi bila intaneti?",
+    "faq3A": "Maudhui makuu ndiyo: Kurani, kozi, dua na hadithi hufanya kazi bila intaneti baada ya kupakiwa mara ya kwanza. Intaneti inahitajika tu kwa mambo kama sauti ya usomaji mara ya kwanza, kitafuta misikiti na usasishaji wa nyakati za swala.",
+    "faq4Q": "Salati inapatikana kwa lugha zipi?",
+    "faq4A": "Lugha 14: Kijerumani, Kiingereza, Kituruki, Kiarabu, Kihispania, Kifaransa, Kiindonesia, Kimalei, Kirusi, Kiurdu, Kiajemi, Kibengali, Kiswahili na Kipashto.",
+    "faq5Q": "Nyakati za swala zinatoka wapi na kuna mbinu zipi za kukokotoa?",
+    "faq5A": "Nyakati hukokotolewa kwa eneo lako kupitia API ya AlAdhan. Unaweza kuchagua kati ya mbinu 13 za kukokotoa (zikiwemo Diyanet, Muslim World League, ISNA, Umm al-Qura) na kubadilisha Asr kati ya wakati wa mapema na wakati wa Hanafi.",
+    "faq6Q": "Maudhui na vyanzo vinatoka wapi?",
+    "faq6A": "Matini ya Kurani, tafsiri na usomaji vinatoka kwenye vyanzo huria vinavyotambulika (alquran.cloud, quran.com, islamic.network). Dua na hadithi zina marejeo ya vyanzo, na matini za kozi zimepitiwa kihariri. Salati haichukui nafasi ya wanazuoni - kwa maswali muhimu, tafadhali muulize mtu mwenye ujuzi.",
+    "faq7Q": "Je, programu inapatikana kwa iOS na Android?",
+    "faq7A": "iOS: Salati inapatikana kwenye App Store. Android: unaweza kupakua APK moja kwa moja kwenye ukurasa huu; orodha ya Google Play inakaguliwa. Salati pia inafanya kazi kwenye kivinjari chochote cha kisasa.",
+    "faq8Q": "Salati AI ni nini na je, maswali yangu yanabaki ya faragha?",
+    "faq8A": "AI ya Salati hujibu maswali kutoka Qur'ani, hadithi 40 za an-Nawawi, dua zilizothibitishwa na matini za kozi za Salati pekee. Hunukuu vifungu vinavyofaa neno kwa neno na hutaja chanzo kwa kila kifungu - haitungi chochote yenyewe, hivyo haiwezi kubuni chochote. Kila kitu hufanya kazi kwenye kifaa: maswali yako hayatoki kwenye kifaa chako wala hayafiki seva yoyote.",
+    "tvApkButton": "Pakua APK kwa Fire TV"
+  },
+  "tvRemote": {
+    "back": "Rudi",
+    "clock": "Saa ya sala",
+    "connectedTo": "Imeunganishwa na {name}",
+    "connecting": "Inaunganisha …",
+    "denied": "Muunganisho umekataliwa – tafadhali changanua msimbo wa QR tena.",
+    "disconnect": "Tenganisha",
+    "dpad": "Vidhibiti",
+    "error": "Muunganisho umeshindikana. Je, simu na TV ziko kwenye Wi-Fi moja?",
+    "home": "Nyumbani",
+    "manualCodePlaceholder": "Msimbo kutoka kwenye TV",
+    "manualConnect": "Unganisha",
+    "manualHostPlaceholder": "Anwani, k.m. 192.168.1.50:8787",
+    "manualInvalid": "Anwani au msimbo si sahihi — vyote viwili vinaonekana kwenye TV.",
+    "manualOpen": "Hakuna msimbo QR? Weka kwa mkono",
+    "openOnTv": "Fungua kwenye TV",
+    "pairing": "Unganisha",
+    "permissionBody": "Ili kuchanganua msimbo wa QR kwenye televisheni yako, Salati inahitaji ruhusa ya kamera. Hakuna kinachorekodiwa au kuhifadhiwa.",
+    "podcasts": "Podikasti",
+    "quiz": "Maswali",
+    "quizDone": "Raundi imeisha – rudi kwenye TV kwa raundi mpya.",
+    "quizProgress": "Swali {i} / {n}",
+    "quran": "Soma Qur’ani",
+    "radio": "Redio ya Qur'an",
+    "reciters": "Wasomaji",
+    "reels": "Reels",
+    "retry": "Changanua tena",
+    "scanHint": "Fungua Salati TV, gusa Unganisha na uchanganue msimbo wa QR kwenye televisheni.",
+    "settings": "Mipangilio",
+    "title": "Unganisha Salati TV",
+    "videos": "Video",
+    "webOnly": "Kuoanisha na TV hufanya kazi tu katika programu ya simu ya Salati (iOS/Android) kwenye Wi-Fi ile ile ya televisheni."
+  },
+  "placement": {
+    "title": "Jaribio la Kiwango",
+    "step": "Kituo {n}/{total}",
+    "recommendation": "Tunapendekeza uanzie hapa - kila kitu kabla ya hapa kinahesabiwa kuwa umepitisha.",
+    "confirm": "Anzia hapa"
+  },
+  "mirath": {
+    "title": "Kikokotoo cha Urithi (Mirath)",
+    "subtitle": "Sehemu maalum za urithi kulingana na Surat An-Nisa 4:11-12/176 kwa mume/mke, wazazi, watoto na ndugu wa kweli",
+    "deceasedGender": "Jinsia ya marehemu",
+    "genderMale": "Mwanaume",
+    "genderFemale": "Mwanamke",
+    "hasWife": "Mke(wake) aliye hai",
+    "hasHusband": "Mume aliye hai",
+    "wivesCount": "Idadi ya wake",
+    "sons": "Wana",
+    "daughters": "Binti",
+    "fatherAlive": "Baba yu hai",
+    "motherAlive": "Mama yu hai",
+    "fullBrothers": "Kaka wa kweli (wazazi wamoja)",
+    "fullSisters": "Dada wa kweli (wazazi wamoja)",
+    "resultTitle": "Sehemu za mali ya urithi",
+    "noHeirs": "Tafadhali taja angalau mrithi mmoja.",
+    "husband": "Mume",
+    "wife": "Mke(wake)",
+    "father": "Baba",
+    "mother": "Mama",
+    "son": "Mwana/Wana",
+    "daughter": "Binti",
+    "brother": "Kaka",
+    "sister": "Dada",
+    "gharrawaynNote": "Hali maalum ya 'Gharrawayn' imetumika: mama anapata 1/3 ya kilichobaki baada ya sehemu ya mwenzi (maoni ya wengi wa wanazuoni).",
+    "awlNote": "Awl imetumika: jumla ya sehemu maalum ilizidi mali yote ya urithi na ilipunguzwa kwa uwiano (mazoezi yanayotambulika tangu enzi za makhalifa).",
+    "unresolvedNote": "Kilichobaki hakijasuluhishwa - kwa muundo huu wa warithi kuna maoni tofauti ya wanazuoni (mfano radd au jamaa wengine). Tafadhali shauriana na mtu mwenye elimu.",
+    "disclaimer": "Kikokotoo rahisi: kinajumuisha tu mume/mke, wazazi, watoto na ndugu wa kweli. Wajukuu, ndugu wa nusu, babu na bibi na hali maalum HAZIJUMUISHWI. Kwa mgawanyo halisi wa urithi, daima shauriana na mtu mwenye elimu ya sheria ya urithi ya Kiislamu."
+  },
+  "sync": {
+    "title": "Hamisha Maendeleo",
+    "intro": "Hamisha maendeleo yako ya kujifunza, alama za kurasa na takwimu kwenda kifaa kingine au kivinjari - bila akaunti na bila seva yako mwenyewe. Msimbo utatengenezwa, ambao wewe mwenyewe utauhamisha (mfano kupitia dokezo au ujumbe kwako mwenyewe).",
+    "exportTitle": "Tengeneza msimbo",
+    "exportButton": "Tengeneza msimbo",
+    "exportHint": "Nakili msimbo huu na uuhamishe kwenye kifaa chako kingine - kupitia programu ya madokezo, ujumbe kwako mwenyewe au barua pepe.",
+    "copyButton": "Nakili",
+    "copied": "Imenakiliwa!",
+    "importTitle": "Bandika msimbo",
+    "importPlaceholder": "Bandika msimbo hapa…",
+    "importButton": "Tumia",
+    "importSuccess": "Maendeleo yametumika! Anzisha programu upya ili kila kitu kisasishwe kila mahali.",
+    "importError": "Msimbo huu si sahihi au umeharibika.",
+    "confirmTitle": "Kubadilisha maendeleo?",
+    "confirmBody": "Msimbo huu uliundwa tarehe {date}. Maendeleo yako ya sasa kwenye kifaa hiki yatabadilishwa kabisa.",
+    "confirmAction": "Badilisha"
+  },
+  "impressum": {
+    "title": "Taarifa za Kisheria",
+    "subtitle": "Taarifa kwa mujibu wa § 5 ya DDG ya Ujerumani",
+    "providerSection": "Mtoa Huduma",
+    "company": "Kampuni",
+    "companyValue": "Salatibox - mmiliki Domenic Moran",
+    "owner": "Mmiliki",
+    "ownerValue": "Domenic Moran",
+    "address": "Anwani",
+    "addressValue": "Heidelberger Str. 36\n12059 Berlin\nUjerumani",
+    "contactSection": "Mawasiliano",
+    "phone": "Simu",
+    "email": "Barua pepe",
+    "website": "Tovuti",
+    "taxSection": "Taarifa za kodi",
+    "smallBusiness": "Biashara Ndogo",
+    "smallBusinessValue": "Kulingana na § 19 UStG, hakuna kodi ya ongezeko la thamani inayotozwa.",
+    "vatId": "Namba ya VAT",
+    "responsibleSection": "Mwenye Jukumu la Maudhui",
+    "responsibleText": "Mwenye jukumu kulingana na § 18 Abs. 2 MStV: Domenic Moran, Heidelberger Str. 36, 12059 Berlin.",
+    "disputeSection": "Utatuzi wa Migogoro",
+    "disputeVsbgText": "Hatuko tayari wala kulazimika kushiriki katika taratibu za utatuzi wa migogoro mbele ya chombo cha usuluhishi wa watumiaji (§ 36 VSBG).",
+    "liabilitySection": "Kanusho la Dhima",
+    "liabilityContentTitle": "Dhima ya Maudhui",
+    "liabilityContentText": "Kama mtoa huduma tunawajibika kwa maudhui yetu wenyewe katika programu hii chini ya sheria za jumla, kwa mujibu wa § 7(1) ya DDG. Hata hivyo kwa mujibu wa §§ 8 hadi 10 ya DDG hatuna wajibu wa kufuatilia taarifa za wengine zinazopitishwa au kuhifadhiwa, wala kuchunguza mazingira yanayoashiria shughuli haramu. Tunapopata taarifa za ukiukaji kama huo, tunaondoa maudhui husika mara moja.",
+    "liabilityLinksTitle": "Dhima ya Vyanzo vya Data vya Nje",
+    "liabilityLinksText": "Programu hii hupakia data ya Qur'an, hadithi, ramani na bidhaa kutoka vyanzo vya nje vya umma. Ni vipi hasa imeelezwa kikamilifu katika taarifa ya faragha na chini ya „Vyanzo na leseni\" katika mipangilio. Usahihi wa maudhui hayo ya nje ni jukumu la watoa huduma husika; tunayakagua kadri ya ujuzi wetu, lakini hatuwezi kuyafuatilia kila mabadiliko bila kukoma.",
+    "copyrightTitle": "Hakimiliki",
+    "copyrightText": "Maudhui yaliyoundwa na waendeshaji wa programu yako chini ya sheria ya hakimiliki ya Ujerumani. Kunakili, kubadilisha, kusambaza na aina yoyote ya matumizi nje ya mipaka ya hakimiliki kunahitaji idhini ya maandishi. Maudhui ya wahusika wengine - matini na tafsiri za Qur'an, hadithi, data ya ramani na bidhaa, fonti pamoja na modeli za AI na utambuzi wa sauti - yameorodheshwa pamoja na mmiliki wa haki na leseni chini ya „Vyanzo na leseni\" katika mipangilio. Ukiona maudhui yoyote katika Salati yanakiuka haki, tuandikie salatibox@gmail.com - tutayakagua na kuondoa maudhui husika mara moja."
+  },
+  "datenschutz": {
+    "title": "Sera ya Faragha",
+    "subtitle": "Taarifa kwa mujibu wa Ibara ya 13 na 14 ya GDPR",
+    "intro": "Taarifa hii inahusu programu ya Salati (Android na iOS), toleo la wavuti kwenye salati.pro na programu ya Salati TV. Salati huchakata data binafsi kwa kiwango kidogo iwezekanavyo: hakuna akaunti ya mtumiaji, hakuna usajili, hakuna matangazo, hakuna ufuatiliaji na hakuna programu ya uchambuzi. Maendeleo yako ya kujifunza, takwimu na mipangilio hubaki kwenye kifaa chako pekee. Hata hivyo baadhi ya vipengele huitisha huduma za wahusika wengine - ni zipi, data gani hutumwa na kwa msingi gani wa kisheria, imeelezwa kikamilifu hapa chini.",
+    "controllerSection": "Mdhibiti wa data",
+    "controllerText": "Salatibox - mmiliki Domenic Moran, Heidelberger Str. 36, 12059 Berlin, Ujerumani. Barua pepe: salatibox@gmail.com, simu: +49 30 767 645 46. Sheria haihitaji kuteua afisa wa ulinzi wa data.",
+    "locationSection": "Data ya eneo",
+    "locationText": "Nyakati za sala, mwelekeo wa Kibla, utafutaji wa misikiti na utafutaji wa maeneo halali karibu unahitaji eneo lako. Programu huliomba tu kwa ruhusa yako na tu „wakati wa kutumia programu\".\n\nViwianishi vyako hutumwa kwa huduma huru zifuatazo: api.aladhan.com (Islamic Network) kwa nyakati za sala na kalenda ya mwezi, overpass-api.de kwa utafutaji wa misikiti na maeneo halali, na tile.openstreetmap.org kwa kuonyesha ramani. Ukiandika jina la mji kwa mkono badala yake, maandishi yako ya utafutaji huenda kwa nominatim.openstreetmap.org.\n\nHatuhifadhi viwianishi vyako kwenye seva zetu. Huduma zilizotajwa huvipokea bila jina, akaunti au kitambulisho cha kifaa, lakini - kama ilivyo kwa kila ombi la mtandao - pamoja na anwani yako ya IP. Unaweza kuondoa ruhusa ya eneo wakati wowote katika mipangilio ya mfumo na kuandika jina la mji badala yake. Msingi wa kisheria: Ibara ya 6(1)(a) ya GDPR (idhini iliyotolewa kwa kutoa ruhusa ya eneo), inayoweza kutenguliwa wakati wowote.",
+    "notificationsSection": "Arifa",
+    "notificationsText": "Vikumbusho vya sala, arifa za daku na futari pamoja na vikumbusho vya kujifunza hupangwa kienyeji na mfumo wa uendeshaji wa kifaa chako. Hakuna seva ya push, hakuna tokeni za push na hakuna usafirishaji wowote kwetu au kwa wahusika wengine. Msingi wa kisheria: Ibara ya 6(1)(a) (ruhusa ya arifa).",
+    "storageSection": "Hifadhi ya kienyeji",
+    "storageText": "Maendeleo ya kujifunza, alamisho, kifuatiliaji cha sala, takwimu, visomo vilivyopakuliwa na mipangilio yote huhifadhiwa kwenye kifaa chako pekee, na katika toleo la wavuti katika hifadhi ya kivinjari chako. Hatuendeshi seva yoyote inayopokea au kuhifadhi data hii. Unaweza kuifuta katika programu chini ya Mipangilio na „Hifadhi\", au kuiondoa kabisa kwa kuondoa programu.",
+    "syncSection": "Uhamisho kati ya vifaa",
+    "syncText": "Kipengele cha „hamisha maendeleo\" huunda msimbo kwenye kifaa chako pekee. Msimbo huo wewe mwenyewe ndiwe unaupeleka, kwa mfano kwa dokezo au ujumbe kwako mwenyewe - sisi hatuupokei, hatuuoni wala hatuuhifadhi wakati wowote.",
+    "rightsSection": "Haki zako",
+    "rightsText": "Kwa mujibu wa GDPR una haki zifuatazo: kupata taarifa (Ibara ya 15), kusahihisha (16), kufuta (17), kuzuia uchakataji (18), uhamishaji wa data (20) na kupinga uchakataji unaotegemea maslahi halali (21). Idhini uliyotoa unaweza kuitengua wakati wowote kwa siku zijazo (Ibara ya 7(3)), kwa vitendo kwa kuondoa ruhusa husika katika mipangilio ya mfumo.\n\nKivitendo maombi ya kupata taarifa na kufuta mara nyingi hayatakuwa na kitu, kwa sababu hatujahifadhi chochote kukuhusu na bila akaunti hatuwezi kukuunganisha na chochote; data iliyo kwenye kifaa chako unaweza kuiona na kuifuta mwenyewe. Hata hivyo tutajibu ombi lako - tuandikie salatibox@gmail.com.\n\nBila kujali hayo, una haki ya kuwasilisha malalamiko kwa mamlaka ya usimamizi wa ulinzi wa data (Ibara ya 77). Mamlaka yenye mamlaka kwetu ni Kamishna wa Berlin wa Ulinzi wa Data na Uhuru wa Habari, Alt-Moabit 59-61, 10555 Berlin, Ujerumani. Unaweza pia kuwasiliana na mamlaka ya mahali unapoishi kawaida.",
+    "cookiesSection": "Vidakuzi na hifadhi ya kienyeji",
+    "cookiesText": "Salati haiweki vidakuzi vya ufuatiliaji au matangazo na haiingizi programu yoyote ya uchambuzi. Hata hivyo programu na toleo la wavuti huhifadhi data kwenye kifaa chako ili vipengele viweze kufanya kazi kabisa: mipangilio yako na data ya kujifunza, na katika toleo la wavuti pia modeli ya AI na historia yako ya mazungumzo ya AI katika hifadhi ya kivinjari. Uhifadhi huu ni wa lazima kabisa kwa vipengele ulivyoomba wazi na hivyo hauhitaji idhini kwa mujibu wa § 25(2) Na. 2 ya TDDDG ya Ujerumani. Unaweza kuufuta kupitia mipangilio ya kivinjari au kupitia „Hifadhi\" katika programu.",
+    "changesSection": "Mabadiliko ya taarifa hii",
+    "changesText": "Tunasasisha taarifa hii ya faragha kila uchakataji wa data katika programu unapobadilika. Toleo la sasa linapatikana daima katika programu na kwenye salati.pro/datenschutz.",
+    "lastUpdated": "Imesasishwa: Julai 2026",
+    "noCollectionSection": "Tusiyoyafanya",
+    "noCollectionText": "- Hakuna akaunti ya mtumiaji, usajili wala kuingia - kiufundi hatuwezi kukutambua.\n- Hakuna matangazo wala mitandao ya matangazo.\n- Hakuna programu ya uchambuzi, ufuatiliaji au uhusishaji (hakuna Google Analytics, hakuna Firebase, hakuna SDK ya Facebook).\n- Ripoti za hitilafu hazitumwi popote: kumbukumbu za makosa hubaki kwenye kifaa.\n- Hakuna arifa za push na hivyo hakuna tokeni za push.\n- Hakuna kuuza wala kushiriki data kwa madhumuni ya matangazo.\n- Hakuna kufuatilia eneo chinichini - eneo huombwa tu wakati unatumia programu.",
+    "thirdPartySection": "Wapokeaji: huduma za nje",
+    "thirdPartyText": "Kwa maudhui yasiyokuja pamoja na programu, Salati huitisha violesura vya umma vya wahusika wengine. Kila ombi kama hilo kiufundi hulazimu kutuma anwani yako ya IP kwa mtoa huduma, pamoja na data ya ombi iliyotajwa hapa chini. Hatutumi majina, vitambulisho vya akaunti wala vitambulisho vya matangazo - havipo kabisa.\n\n- api.aladhan.com (Islamic Network): nyakati za sala, kalenda ya mwezi, ubadilishaji wa Hijria. Hutumwa: viwianishi au jina la mji, tarehe, mbinu ya hesabu.\n- overpass-api.de, nominatim.openstreetmap.org, tile.openstreetmap.org (OpenStreetMap): utafutaji wa misikiti na maeneo halali, utafutaji wa mji, vipande vya ramani. Hutumwa: viwianishi na kipenyo cha utafutaji, au maandishi yako ya utafutaji.\n- api.alquran.cloud, cdn.islamic.network (Islamic Network): matini ya Qur'an, tafsiri, tafsir, sauti ya kisomo. Hutumwa: sura, aya au toleo lililoombwa.\n- api.quran.com, audio.qurancdn.com, verses.quran.com, mirrors.quranicaudio.com (Quran.com / QuranicAudio): uchambuzi neno kwa neno, tafsiri, tafsir, sauti ya kisomo. Hutumwa: sehemu iliyoombwa.\n- www.mp3quran.net: orodha ya vituo vya redio ya Qur'an. Hutumwa: lugha ya programu uliyochagua.\n- cdn.jsdelivr.net (jsDelivr): makusanyo ya hadithi. Hutumwa: kusanyo na namba iliyoombwa.\n- hadeethenc.com (Ensaiklopidia ya Hadithi za Mtume Zilizotafsiriwa): hadithi zilizopangwa kwa mada. Hutumwa: lugha iliyochaguliwa na mada au namba ya hadithi iliyoombwa.\n- unpkg.com: maktaba ya ramani ya Leaflet kwa ramani ya misikiti.\n- world.openfoodfacts.org (Open Food Facts): kichanganuzi cha halali. Hutumwa: msimbopau uliochanganuliwa.\n- api.gold-api.com, api.frankfurter.dev: bei ya dhahabu na viwango vya kubadilisha fedha kwa nisabu ya zaka. Hutumwa: sarafu iliyochaguliwa.\n- huggingface.co: upakuaji wa mara moja wa modeli ya utambuzi wa sauti kwa ukaguzi wa kisomo.\n\nWatoa huduma hawa ni wadhibiti huru wa data wanayopokea; sera zao za faragha hutumika kwa nyongeza. Msingi wa kisheria: Ibara ya 6(1)(f) (maslahi halali ya kutoa kipengele ulichoitisha), na kwa data ya eneo pia Ibara ya 6(1)(a).\n\nUsomaji kwa sauti: Ukiomba herufi, silabi au maneno ya Kiarabu yasomwe, programu hukabidhi maandishi kwa injini ya sauti ya mfumo wako wa uendeshaji. Kutegemea kifaa na mipangilio yake, injini hiyo inaweza kutumia sauti ya wingu; hapo maandishi yanayosomwa hufika kwa mtoa mfumo wako, mfano Google au Apple. Katika mipangilio ya mfumo unaweza kuchagua sauti inayofanya kazi ndani ya kifaa.",
+    "ownInfraSection": "Miundombinu yetu wenyewe",
+    "ownInfraText": "Salati haihifadhi akaunti za watumiaji wala data ya kujifunza kwenye seva zake. Hata hivyo, kwa kusambaza maudhui na toleo la wavuti tunatumia watoa huduma watatu ambao kumbukumbu zao za seva kiufundi huwa na anwani za IP:\n\n- Cloudflare R2 (Cloudflare, Inc., Marekani): vipindi vya podikasti pamoja na majalada na orodha ya vipindi, vipeperushi vya PDF, video za kujifunza, reels, mkusanyiko wa vyanzo vya AI pamoja na faili za modeli za AI na za ukaguzi wa kisomo, pamoja na tafsiri ya Kijerumani ya Qur'ani.\n- Supabase Storage (Supabase, Inc., Marekani): masasisho ya maudhui ya kozi na orodha ya vipindi kwa matoleo ya zamani ya programu - maombi ya kusoma tu, bila kuingia. Hifadhi hii iko katika eneo la EU Frankfurt (eu-central-1).\n- Vercel (Vercel, Inc., Marekani): mwenyeji wa toleo la wavuti salati.pro.\n\nKutoka kumbukumbu hizo hatuundi wasifu wa watumiaji wala hatuziunganishi na chochote. Msingi wa kisheria: Ibara ya 6(1)(f) (maslahi halali ya usambazaji salama na unaofanya kazi).",
+    "aiSection": "Salati AI",
+    "aiText": "Kipengele cha AI hujibu maswali kwa kutegemea tu mkusanyiko wa vyanzo unaokuja na programu (tafsiri ya Qur'an, hadithi, dua zilizohakikiwa, matini za kozi za Salati). Swali lako, historia ya mazungumzo na jibu havitoki kwenye kifaa chako - hakuna seva inayopokea au kuhifadhi unachoandika.\n\nKwa hilo hakuna tena modeli ya lugha inayopakuliwa. Korpasi ya vyanzo ya Kijerumani imejengwa ndani ya programu; kwa kila lugha nyingine ya programu, Salati hupakua korpasi iliyotafsiriwa (MB 1.6-3.3) mara moja kutoka hifadhi yetu ya Cloudflare R2 na kuihifadhi kwenye kifaa. Toleo la wavuti hupakia korpasi kutoka salati.pro na, kwa ajili ya utafutaji bora wa vifungu pekee, modeli ya utafutaji (takribani MB 118) kutoka CDN ya Hugging Face pamoja na maktaba yake kupitia CDN ya jsDelivr (esm.run). Katika mchakato huo anwani yako ya IP hutumwa kwa mtoa huduma husika. Historia yako ya mazungumzo (kiwango cha juu ni maingizo 40) huhifadhiwa na kivinjari katika hifadhi yake yenyewe; unaweza kuiondoa wakati wowote kupitia „Futa historia“.\n\nMajibu ya AI huzalishwa na mashine na kwa uwazi si fatwa. Msingi wa kisheria: Ibara ya 6(1)(f) (kutoa kipengele ulichoomba).",
+    "legalBasisSection": "Misingi ya kisheria",
+    "legalBasisText": "- Ibara ya 6(1)(a) (idhini): ruhusa za eneo, kamera na maikrofoni pamoja na arifa. Kila mojawapo unaweza kuitengua wakati wowote katika mipangilio ya mfumo; uhalali wa uchakataji uliofanyika kabla ya hapo haubadiliki.\n- Ibara ya 6(1)(b) (utekelezaji wa mkataba): kutoa vipengele vya bure vya programu vilivyoelezwa katika masharti ya matumizi.\n- Ibara ya 6(1)(f) (maslahi halali): kupata maudhui kutoka kwa watoa huduma waliotajwa hapo juu pamoja na uendeshaji, usambazaji na usalama unaohitajika kiufundi wa programu na tovuti.\n\nKamera (kichanganuzi cha msimbopau kwa ukaguzi wa halali) na maikrofoni (ukaguzi wa kisomo) huchakatwa kwenye kifaa pekee; wala picha wala rekodi za sauti hazitumwi au kuhifadhiwa.",
+    "retentionSection": "Muda wa kuhifadhi",
+    "retentionText": "Sisi wenyewe hatuhifadhi data yoyote binafsi kukuhusu - hakuna hifadhidata ya watumiaji. Data iliyo kwenye kifaa chako hubaki hadi uifute katika programu au uondoe programu. Kumbukumbu za seva za watoa huduma wetu wa usambazaji (Cloudflare, Supabase, Vercel) hufutwa huko kiotomatiki baada ya vipindi vyao vifupi vya kawaida; sisi hatuzichambui. Muda ambao watoa huduma huru wa nje huhifadhi kumbukumbu zao za ufikiaji hutegemea sera zao za faragha. Ukituandikia barua pepe, tunaihifadhi kwa muda unaohitajika kushughulikia ombi lako na kutimiza wajibu wa kisheria wa kuhifadhi.",
+    "transferSection": "Uhamisho kwa nchi za tatu",
+    "transferText": "Baadhi ya watoa huduma waliotajwa wako nje ya EU na EEA, hasa Marekani: Cloudflare, Vercel, Supabase, Hugging Face, jsDelivr, unpkg na Quran.com. Kwa watoa huduma tuliokuwa na uhusiano wa kimkataba nao (Cloudflare, Supabase, Vercel), vifungu vya kawaida vya mkataba vya Tume ya Ulaya ni sehemu ya masharti ya huduma; kwa Marekani pia inatumika uamuzi wa Tume wa tarehe 10 Julai 2023 (EU-US Data Privacy Framework). Kwa violesura vingine vya umma tu hakuna uhusiano wa kimkataba; hapo kutumwa kwa anwani yako ya IP ni matokeo ya kiufundi yasiyoepukika ya ombi lako mwenyewe na hutegemea Ibara ya 49(1)(b). Licha ya dhamana hizi, ufikiaji wa mamlaka katika nchi za tatu hauwezi kutengwa kabisa. Vinavyotumwa ni anwani yako ya IP na data ya ombi inayohitajika kiufundi pekee."
+  },
+  "agb": {
+    "title": "Masharti ya Matumizi",
+    "subtitle": "Masharti ya jumla ya matumizi ya programu",
+    "intro": "Kwa kutumia programu hii, unakubali masharti ya matumizi yafuatayo. Yanaongezea Taarifa za Kisheria na Sera ya Faragha.",
+    "scopeSection": "Wigo wa Matumizi",
+    "scopeText": "Masharti haya ya matumizi yanahusu matumizi ya programu ya Salati (mtoa huduma: Salatibox - mmiliki Domenic Moran) kwenye iOS, Android, Android TV na wavuti na watu binafsi.",
+    "freeUseSection": "Matumizi ya Bure",
+    "freeUseText": "Programu hii inaweza kutumika bure kabisa. Hakuna akaunti ya mtumiaji inayohitajika, hakuna manunuzi ndani ya programu, michango au matangazo.",
+    "religiousContentSection": "Maudhui ya Kidini",
+    "religiousContentText": "Mahesabu ya nyakati za sala, tafsiri za Qur'an, tafsiri za maana na hadithi tunazitoa kwa kadiri ya uwezo wetu wa maarifa na kwa kutumia mbinu za hesabu na vyanzo vinavyotambulika - lakini bila dhamana ya usahihi kamili wa kidini au kitaaluma. Iwapo huna uhakika, hasa kuhusu masuala ya kina ya kidini, tunapendekeza kushauriana na wanazuoni wa eneo lako au msikiti wa karibu.",
+    "externalSourcesSection": "Vyanzo vya Data vya Nje na Upatikanaji",
+    "externalSourcesText": "Maandiko ya Qur'an, visomo, hadithi, data za ramani na huduma za mahali hutoka kwa sehemu kutoka kwa huduma za umma za nje kutoka kwa wahusika wengine (angalia Sera ya Faragha). Hatuhakikishii upatikanaji, ukamilifu au usahihi wake; hatuwezi kuhakikisha uendeshaji usiokatika wa programu kila wakati.",
+    "personalUseSection": "Matumizi Binafsi",
+    "personalUseText": "Maudhui yaliyopakuliwa - kama vile sauti za usomaji, maandiko ya Qur'an na tafsiri - yanaweza kutumika tu kwa madhumuni binafsi, yasiyo ya kibiashara. Kusambaza tena, kuweka wazi kwa umma au matumizi ya kibiashara hairuhusiwi isipokuwa wenye haki husika wameruhusu wazi.",
+    "liabilitySection": "Kikomo cha Dhima",
+    "liabilityText": "Tunawajibika bila kikomo kwa nia mbaya na uzembe mkubwa, pia kulingana na masharti ya Sheria ya Dhima ya Bidhaa ya Ujerumani. Kwa uzembe mdogo tunawajibika tu pale kunapokuwa na uvunjaji wa wajibu muhimu wa kimkataba na kwa kiwango cha hasara inayotarajiwa na ya kawaida kwa aina hiyo ya mkataba. Kwa kuwa programu hii inatolewa bure, dhima yoyote zaidi imetengwa.",
+    "changesSection": "Mabadiliko ya Masharti Haya",
+    "changesText": "Tunarekebisha masharti haya ya matumizi inapohitajika, kwa mfano wakati vipengele vya programu au hali ya kisheria inabadilika. Toleo la sasa daima linapatikana ndani ya programu.",
+    "lawSection": "Sheria Inayotumika",
+    "lawText": "Sheria ya Ujerumani inatumika, bila kujumuisha Mkataba wa Umoja wa Mataifa kuhusu Mikataba ya Kimataifa ya Uuzaji wa Bidhaa, kwa kadiri sheria inavyoruhusu.",
+    "aiSection": "Salati AI",
+    "aiText": "Kipengele cha AI huzalisha majibu yake kimashine kutoka mkusanyiko wa vyanzo unaokuja na programu. Kimewekewa alama kama maudhui yaliyozalishwa na AI na kwa uwazi si fatwa, si maoni ya wanazuoni na si ushauri wa kisheria, kodi, kifedha au kiafya. Majibu ya kimashine yanaweza kuwa pungufu au yenye makosa; hii inahusu hasa matokeo ya hesabu kama zaka au mgao wa mirathi na maswali ya kisheria ya kina. Hakiki taarifa muhimu na, ukiwa na shaka, muulize mwanazuoni mwenye sifa. Unachoandika hakitoki kwenye kifaa chako; hatutoi dhamana ya upatikanaji wala usahihi wa AI.",
+    "sourcesSection": "Vyanzo na leseni",
+    "sourcesText": "Salati hujumuisha maudhui ya wahusika wengine - miongoni mwao matini na tafsiri za Qur'an, makusanyo ya hadithi, data ya ramani na bidhaa, fonti pamoja na modeli za AI na utambuzi wa sauti. Nani mwenye haki na kwa leseni gani tunatumia maudhui hayo kumeorodheshwa kikamilifu chini ya „Vyanzo na leseni\" katika mipangilio. Maudhui ya Salati yenyewe - matini za kozi, maelezo, vipeperushi, podikasti na video - unaweza kuyapakua na kuyatumia kwa matumizi binafsi. Ukiona maudhui yoyote katika Salati yanakiuka haki, tuandikie salatibox@gmail.com - tutayakagua na kuondoa maudhui husika mara moja."
+  },
+  "changelog": {
+    "title": "Mapya",
+    "subtitle": "Vipengele vipya vyote, maboresho na marekebisho ya Salati kwa muhtasari.",
+    "versionLabel": "Toleo {version}",
+    "latest": "Toleo la sasa",
+    "typeFeature": "Vipengele vipya",
+    "typeImprovement": "Maboresho",
+    "typeFix": "Marekebisho ya hitilafu",
+    "footer": "Asante kwa kutumia Salati."
+  },
+  "more": {
+    "sections": {
+      "learning": "Kujifunza na Maarifa",
+      "practice": "Sala na Maisha ya Kila Siku",
+      "tools": "Zana",
+      "app": "Programu"
+    },
+    "kiDesc": "Maswali kuhusu Qur'an na Dua - hufanya kazi 100% kwa ndani"
+  },
+  "radio": {
+    "title": "Redio ya Qur'an",
+    "subtitle": "Mitiririko ya usomaji ya saa 24/7 - gusa kucheza",
+    "live": "MOJA KWA MOJA"
+  },
+  "widgets": {
+    "qibla": "Kibla",
+    "remaining": "baada ya {t}",
+    "themeTitle": "Rangi ya wijeti",
+    "themeHint": "Hutumika kwa wijeti zote zilizowekwa katika uonyeshaji upya unaofuata.",
+    "theme_dark": "Nyeusi",
+    "theme_light": "Angavu",
+    "theme_transparent": "Uwazi",
+    "theme_black": "Nyeusi Tii",
+    "theme_white": "Nyeupe",
+    "theme_purple": "Zambarau",
+    "theme_orange": "Machungwa",
+    "nextPrayer": "Sala inayofuata",
+    "offline": "Nje ya mtandao - fungua programu",
+    "duaOfDay": "Dua ya Leo",
+    "streakLabel": "Siku za mfululizo wa kujifunza",
+    "todayLessons": "Leo: masomo {n}"
+  },
+  "prayers": {
+    "fajr": "Fajr",
+    "dhuhr": "Dhuhr",
+    "asr": "Asr",
+    "maghrib": "Maghrib",
+    "isha": "Isha"
+  },
+  "duel": {
+    "title": "Mashindano ya Maswali",
+    "subtitle": "Wachezaji 2, kifaa 1 - nani anajua zaidi?",
+    "player1": "Mchezaji 1",
+    "player2": "Mchezaji 2",
+    "turn": "Zamu ya {p}",
+    "winner": "{p} anashinda!",
+    "tie": "Sare!",
+    "rematch": "Mechi tena",
+    "modeLocal": "Kifaa 1",
+    "modeAsync": "Kwa msimbo",
+    "you": "Wewe",
+    "opponent": "Mpinzani",
+    "asyncIntro": "Cheza zamu yako na utume msimbo kwa rafiki - au weka msimbo wake na ushindane na alama zake.",
+    "asyncStart": "Anza mashindano mapya",
+    "asyncImport": "Weka msimbo",
+    "asyncImportPlaceholder": "Bandika msimbo wa mashindano…",
+    "asyncImportButton": "Pakia maswali",
+    "asyncCodeHint": "Tuma msimbo huu kwa mpinzani wako (mazungumzo, barua pepe …). Anauweka na kushindana na alama zako.",
+    "asyncYourScore": "Alama zako",
+    "asyncYouWin": "Umeshinda!",
+    "asyncOpponentWin": "Mpinzani wako ameshinda!",
+    "asyncNewDuel": "Mashindano mapya",
+    "asyncBack": "Rudi"
+  },
+  "achievements": {
+    "title": "Beji",
+    "subtitle": "Vituo muhimu ulivyofikia katika Salati - kwa ndani kabisa, bila akaunti.",
+    "badges": {
+      "first-lesson": {
+        "title": "Hatua ya Kwanza",
+        "desc": "Somo la kwanza katika \"Jifunze Kusoma Qur'an\" limefaulu."
+      },
+      "first-surah": {
+        "title": "Sura ya Kwanza",
+        "desc": "Umeimudu sura nzima kama zoezi la kusoma (Al-Fatiha, Al-Ikhlas, Al-Falaq au An-Nas)."
+      },
+      "bookmark-first": {
+        "title": "Imehifadhiwa",
+        "desc": "Umeweka alama yako ya kwanza ya ukurasa katika Qur'an."
+      },
+      "streak-7": {
+        "title": "Wiki Moja ya Kudumu",
+        "desc": "Umefanya mazoezi kwa siku 7 mfululizo."
+      },
+      "prayer-week": {
+        "title": "Wiki Kamili",
+        "desc": "Umeweka alama za sala zote 5 kwenye kifuatiliaji kwa siku 7 mfululizo."
+      },
+      "hifz-10": {
+        "title": "Aya 10",
+        "desc": "Umeweka alama za aya 10 kama \"Ninajua\" katika Kuhifadhi."
+      },
+      "quiz-25": {
+        "title": "Mpenda Mazoezi",
+        "desc": "Umekamilisha vipindi 25 vya mazoezi."
+      },
+      "course-complete": {
+        "title": "Kozi ya Kwanza",
+        "desc": "Umekamilisha kozi nzima ya masomo."
+      },
+      "grammar-complete": {
+        "title": "Misingi ya Sarufi",
+        "desc": "Umekamilisha kozi ya sarufi kikamilifu."
+      },
+      "tajwid-complete": {
+        "title": "Kaida za Tajwid",
+        "desc": "Umekamilisha kozi ya Tajwid kikamilifu."
+      },
+      "khatmah-complete": {
+        "title": "Khatma",
+        "desc": "Umekamilisha mpango wa Khatma hadi mwisho."
+      },
+      "streak-30": {
+        "title": "Mwezi Mmoja wa Kudumu",
+        "desc": "Umefanya mazoezi kwa siku 30 mfululizo."
+      },
+      "hifz-50": {
+        "title": "Aya 50",
+        "desc": "Umeweka alama za aya 50 kama \"Ninajua\" katika Kuhifadhi."
+      },
+      "curriculum-complete": {
+        "title": "Umejifunza Kusoma Qur'an",
+        "desc": "Umekamilisha kozi nzima ya \"Jifunze Kusoma Qur'an\"."
+      },
+      "streak-100": {
+        "title": "Siku 100",
+        "desc": "Umefanya mazoezi kwa siku 100 mfululizo - uvumilivu wa kuvutia."
+      },
+      "note-first": {
+        "title": "Dokezo la Kwanza",
+        "desc": "Umeandika dokezo lako la kwanza la kibinafsi kwenye aya."
+      },
+      "hifz-explorer": {
+        "title": "Mgunduzi wa Hifzi",
+        "desc": "Umeanza kuhifadhi katika sura 3 tofauti."
+      },
+      "bookmark-collections": {
+        "title": "Msimamizi",
+        "desc": "Umepanga alama za kurasa katika mikusanyiko yote 3 (Vipendwa, Kuhifadhi, Kutafakari)."
+      },
+      "offline-audio": {
+        "title": "Tayari Nje ya Mtandao",
+        "desc": "Umepakua qiraa ya sura 3 kusikiliza bila mtandao."
+      },
+      "fasting-tracker": {
+        "title": "Kifuatiliaji cha Kufunga",
+        "desc": "Umeweka alama za siku 10 za kufunga katika kifuatiliaji cha kufunga."
+      },
+      "surah-explorer": {
+        "title": "Mgunduzi wa Sura",
+        "desc": "Umeendelea kusoma katika sura 10 tofauti."
+      },
+      "review-master": {
+        "title": "Bingwa wa Marudio",
+        "desc": "Umefikisha somo katika kiwango cha juu zaidi cha mfumo wa marudio."
+      },
+      "courses-3": {
+        "title": "Kozi tatu",
+        "desc": "Umemaliza kozi tatu za masomo kikamilifu."
+      },
+      "courses-all": {
+        "title": "Kozi zote",
+        "desc": "Umemaliza kila kozi ya masomo kikamilifu."
+      }
+    },
+    "fresh": "Mpya"
+  },
+  "themes": {
+    "title": "Aya za Mada",
+    "subtitle": "Makusanyo ya aya zilizochaguliwa kuhusu mada za maisha - kwa kutafakari na kupata tena.",
+    "versesCount": "aya",
+    "collections": {
+      "patience": {
+        "title": "Subira (Sabr)",
+        "intro": "Subira katika Qur'an si uvumilivu tu bila kufanya kitu, bali ni msimamo hai - unaohusiana na sala, tawakkul na ahadi ya kwamba itapata thawabu. Aya hizi zinaonyesha jinsi Sabr inavyohusiana kwa karibu na nguvu ya ndani."
+      },
+      "gratitude": {
+        "title": "Shukrani (Shukr)",
+        "intro": "Shukrani katika Qur'an inabadilisha mtazamo: si kwa sababu kila kitu ni kamili, bali kwa sababu kutambua wema wenyewe tayari ni aina ya ukaribu na Allah. Aya hizi zinaalika kuangalia kwa uangalifu."
+      },
+      "worry": {
+        "title": "Hofu na Wasiwasi",
+        "intro": "Wasiwasi unapokuwa mkubwa, Qur'an inazungumzia mara kwa mara nafuu inayokuja, na mioyo inayotulia kwa kumkumbuka Allah. Aya hizi ni kwa nyakati ambazo akili ina kelele."
+      },
+      "family": {
+        "title": "Familia",
+        "intro": "Wazazi, watoto, wenzi wa ndoa - Qur'an inaeleza familia kama mahali pa huruma na wajibu wa pamoja, si tu wajibu. Aya hizi zinaeleza kwa nini familia ina uzito mkubwa katika Uislamu."
+      },
+      "forgiveness": {
+        "title": "Msamaha",
+        "intro": "Msamaha katika Qur'an si udhaifu, bali ni mojawapo ya fadhila za juu kabisa - msamaha unaoombwa kutoka kwa Allah, na ule unaotolewa mwenyewe kwa wengine. Aya hizi zinaonyesha pande zote mbili."
+      },
+      "hope": {
+        "title": "Matumaini na Tawakkul",
+        "intro": "Kumtegemea Allah katika Qur'an haimaanishi kutofanya chochote, bali kuachilia baada ya juhudi bora zaidi - na ahadi kwamba baada ya ugumu hufuata nafuu. Aya hizi zinasaidia katika nyakati ngumu."
+      }
+    }
+  },
+  "journeys": {
+    "title": "Mipango ya Kila Siku",
+    "subtitle": "Safari za aya zilizoteuliwa kuhusu mada moja - siku baada ya siku.",
+    "tabCollections": "Makusanyo",
+    "tabJourneys": "Mipango ya Kila Siku",
+    "days": "siku",
+    "day": "Siku",
+    "start": "Anza mpango",
+    "newPlan": "Anza mpango mpya",
+    "progress": "Maendeleo",
+    "behind": "siku nyuma",
+    "complete": "Safari imekamilika",
+    "markDone": "Weka alama imekamilika",
+    "versesOfDay": "Aya za leo",
+    "reflection": "Tafakari",
+    "read": "Soma",
+    "reminder": "Kikumbusho cha kila siku",
+    "items": {
+      "selfDiscovery": {
+        "title": "Kujitambua",
+        "subtitle": "Siku kumi za kusimama na kutafakari maana, roho, na mwelekeo wako mwenyewe.",
+        "days": {
+          "0": {
+            "title": "Kwa nini upo hapa?",
+            "text": "Qur'an inajibu swali la maana moja kwa moja: mwanadamu aliumbwa ili amwabudu Muumba wake. Hiyo si kizuizi, bali ni dira - mahali fulani thabiti ambapo kila kitu kingine kinapata nafasi yake."
+          },
+          "1": {
+            "title": "Roho yako inajua yote mawili",
+            "text": "Umeumbwa na uwezo wa kutambua baya na jema. Kujitambua kunaanza kwa kuichukulia sauti ya ndani kwa uzito, badala ya kuizima."
+          },
+          "2": {
+            "title": "Ishara zinazokuzunguka na zilizo ndani yako",
+            "text": "Qur'an haielekezi tu kwenye ulimwengu wa nje, bali pia kwako mwenyewe kama mahali pa ufahamu. Wakati mwingine jibu si maarifa zaidi, bali kuangalia kwa makini zaidi - ndani."
+          },
+          "3": {
+            "title": "Mtihani kama kioo",
+            "text": "Nyakati ngumu si bahati mbaya katika Qur'an - ni sehemu ya kile kinachofanya imani, na nafsi, kuwa za kweli. Kinachokupinga sasa pia kinakuonyesha wewe ni nani kweli."
+          },
+          "4": {
+            "title": "Njiani kuelekea kwa Mola wako",
+            "text": "Aya hii inaeleza maisha kama mwendo, si utuvu: uko njiani, kwa juhudi, lakini na lengo wazi. Kujitambua hapa hakumaanishi 'kufika', bali kujua mwelekeo."
+          },
+          "5": {
+            "title": "Kinachohesabika mwishoni",
+            "text": "Siku ya Hesabu, wala mali wala cheo havitasaidia - moyo mnyofu tu. Kikumbusho kisicho na raha lakini cha ukombozi kuhusu kile kinachostahili kujitahidia kweli."
+          },
+          "6": {
+            "title": "Kuomba uongofu",
+            "text": "Ombi hili fupi kutoka Al-Fatiha ni miongoni mwa maswali ya kweli zaidi ya kujitambua: si 'mimi ni nani', bali 'niende wapi'. Kulirudia kila siku kunaweka dira ikiwa sahihi."
+          },
+          "7": {
+            "title": "Kuwa na kiasi",
+            "text": "Kuwa na kiasi - bila ubadhirifu wala ubahili - kunaelezwa hapa kama sifa ya wanyofu. Katika kujitambua pia, ukomavu mara nyingi haupo katika uliokithiri, bali katika uwiano."
+          },
+          "8": {
+            "title": "Kutakasa roho",
+            "text": "Mafanikio hapa hayapimwi kwa vitu vya nje, bali jinsi unavyoishughulikia roho yako mwenyewe - unaitakasa au unairuhusu ioze? Uamuzi wa kibinafsi sana, unaofanywa kila siku."
+          },
+          "9": {
+            "title": "Karibu zaidi kuliko unavyofikiri",
+            "text": "Safari hii haiishii kwa umbali, bali kwa ukaribu: Allah yuko karibu zaidi nawe kuliko wewe mwenyewe wakati mwingine. Katika Qur'an, kujitambua hakumwondoi mtu kwa Mungu - kunamrudisha moja kwa moja Kwake."
+          }
+        }
+      },
+      "sabrJourney": {
+        "title": "Safari ya Subira",
+        "subtitle": "Siku saba, hali saba zinazohitaji subira - kutoka maisha ya kila siku hadi majanga.",
+        "days": {
+          "0": {
+            "title": "Mambo manne yanayookoa",
+            "text": "Sura hii fupi inafupisha kile kinachomlinda mtu dhidi ya hasara: imani, matendo mema - na kushauriana kwa haki NA subira. Subira hapa si jambo la binafsi, bali kitu kinachobeba jamii nzima."
+          },
+          "1": {
+            "title": "Kujibu ubaya kwa wema",
+            "text": "Anayebaki na subira anaweza kubadilisha hata uadui kuwa ukaribu wa kweli - moja ya aina ngumu zaidi ya subira. Qur'an inaita hii waziwazi kuwa sifa inayotolewa kwa wachache tu."
+          },
+          "2": {
+            "title": "Subira katika hasara",
+            "text": "Hofu, njaa, kupoteza mali au wapendwa - Qur'an hapa haihidi kinga dhidi ya hayo, bali mtazamo wa kukabiliana nayo: 'Sisi ni wa Allah, na Kwake tutarejea.'"
+          },
+          "3": {
+            "title": "Subira si udhaifu",
+            "text": "Kuchagua subira badala ya kulipiza kisasi kunaelezwa hapa wazi kuwa njia bora zaidi - ikibebwa na Allah mwenyewe, si kwa nguvu zako pekee. Hii inaondoa shinikizo la kubeba kila kitu peke yako."
+          },
+          "4": {
+            "title": "Subira na dhikri",
+            "text": "Subira hapa iko karibu na sala na sifa, asubuhi na jioni. Kikumbusho kwamba subira mara chache hujitegemea peke yake - inaishi kwa uhusiano na Allah unaofanywa upya kila siku."
+          },
+          "5": {
+            "title": "Subira na shukrani",
+            "text": "Utulivu na ukimya - kama upepo unaotulia - vinaelezwa hapa kama ishara kwa wale wanaoweza kufanya yote mawili: kuwa na subira NA shukrani. Hizi mbili zimeunganika kwa karibu zaidi kuliko inavyoonekana mwanzoni."
+          },
+          "6": {
+            "title": "Kinachobaki",
+            "text": "Kila unachomiliki kitapita - kilicho kwa Allah kinabaki. Sura hii inamaliza safari kwa ahadi: subira haisahauliki, inalipwa kulingana na bora ya uliyoyafanya."
+          }
+        }
+      },
+      "gratitudeJourney": {
+        "title": "Shukrani",
+        "subtitle": "Siku tano za kuelekeza macho kwa uangalifu kwenye kile kilichopo tayari.",
+        "days": {
+          "0": {
+            "title": "Neema zisizohesabika",
+            "text": "Ungejaribu kuhesabu kila neema katika maisha yako, usingefika mwisho kamwe. Hatua ya kwanza kuelekea shukrani ni rahisi: kuangalia kweli kile kilichopo tayari."
+          },
+          "1": {
+            "title": "Kuomba uwezo wa kushukuru",
+            "text": "Hata Nabii Sulaiman aliomba kikamilifu uwezo wa kushukuru - kwa hivyo shukrani kwake haikuwa hali ya kiotomatiki, bali kitu cha kupigania. Hii inaondoa shinikizo la kujiboresha."
+          },
+          "2": {
+            "title": "Shukrani kama tendo",
+            "text": "Familia ya Daudi hawaambiwi 'jisikieni shukrani', bali 'fanyeni kazi kwa shukrani'. Shukrani hapa inajionyesha si tu moyoni, bali katika kile mikono yako inachofanya."
+          },
+          "3": {
+            "title": "Neema gani ungeikana?",
+            "text": "Aya hii inarudiwa zaidi ya mara 30 katika Surat ar-Rahman - karibu kama kiitikio kinachokusudia kuamsha. Jiulize leo, kwa uhalisi: ni neema gani hivi karibuni umeichukulia kama ya kawaida?"
+          },
+          "4": {
+            "title": "Shukrani inaongeza",
+            "text": "Ahadi yenye athari ya moja kwa moja: anayeshukuru atapewa zaidi. Si kama mfumo wa malipo, bali kwa sababu shukrani inafungua macho yako kwa kile kilichopo tayari - na kufanya zaidi yake kuonekana."
+          }
+        }
+      },
+      "newBeginning": {
+        "title": "Mwanzo Mpya",
+        "subtitle": "Siku saba kwa yeyote anayetaka kuanza upya.",
+        "days": {
+          "0": {
+            "title": "Hatua ya kwanza: kutubu",
+            "text": "Toba ya kweli katika Qur'an ni waziwazi mwanzo wa kitu kipya, si mwisho. Hatua ya kwanza ya mwanzo mpya mara chache huwa ya kushangaza - ni rahisi tu: kurudi kwa uaminifu."
+          },
+          "1": {
+            "title": "Usikate tamaa kamwe",
+            "text": "Haijalishi kiasi gani kimepita: aya hii inakataza waziwazi kukata tamaa na rehema ya Allah. Hakuna kosa kubwa mno kufanya mwanzo mpya kuwa jambo lisilowezekana."
+          },
+          "2": {
+            "title": "Kabla haijachelewa",
+            "text": "Muendelezo wa moja kwa moja wa jana: kutubu hapa kunaelezwa kama mwendo hai - kuelekea Allah, na sasa, si siku fulani. Mwanzo mpya ni kitenzi, si hali inayotokea tu."
+          },
+          "3": {
+            "title": "Mabadiliko yanaanzia ndani yako",
+            "text": "Kabla hali za nje hazijabadilika, kitu fulani ndani lazima kisogee kwanza. Aya hii inaweka jukumu - na uwezekano - wa mabadiliko ya kweli moja kwa moja mikononi mwako."
+          },
+          "4": {
+            "title": "Ubaya unakuwa wema",
+            "text": "Kwa wale wanaotubu, kuamini, na kutenda, Allah hapa anaahidi kitu cha kushangaza: makosa ya zamani hayasamehewi tu, bali yanageuzwa kuwa matendo mema. Historia yako haipaswi kukufafanua."
+          },
+          "5": {
+            "title": "Kuomba nafasi ya ndani",
+            "text": "Kabla ya kusimama mbele ya Farao, Musa kwanza aliomba jambo la kibinafsi sana: kifua chenye nafasi, jukumu lililorahisishwa. Mwanzo wako mpya nao unaweza kuanza na ombi hili, si ukamilifu wa mara moja."
+          },
+          "6": {
+            "title": "Msamaha unaobeba",
+            "text": "Ahadi hii inakamilisha duara: yeyote anayetubu, kuamini, kutenda mema, na kubaki njiani anapata msamaha unaomsaidia. Mwanzo mpya si wakati mmoja tu - ni mwelekeo unaouchagua upya kila siku."
+          }
+        }
+      },
+      "ramadanPrep": {
+        "title": "Maandalizi ya Ramadhani",
+        "subtitle": "Siku kumi za kuandaa moyo na mazoea kabla mwezi haujafika.",
+        "days": {
+          "0": {
+            "title": "Kwa nini tunafunga",
+            "text": "Swaumu iliwajibishwa kwa waumini waliokuwa kabla yetu na kwetu kwa lengo moja: taqwa, moyo ulio macho usiomsahau Allah. Ramadhani si mpango wa kupunguza uzito, ni mazoezi ya roho. Jiulize leo: unataka mwezi huu ubadilishe nini ndani yako?"
+          },
+          "1": {
+            "title": "Siku chache tu",
+            "text": "Qur'an inaita swaumu 'siku zinazohesabika'. Kabla ya kuanza mwezi huonekana mrefu, na ukiisha huonekana mfupi kwa kushangaza. Weka sasa lengo dogo na la uhalisia ili siku hizo zisikuponyoke."
+          },
+          "2": {
+            "title": "Mwezi wa Qur'an",
+            "text": "Ramadhani imetukuzwa kwa sababu Qur'an iliteremshwa ndani yake; swaumu na Kitabu vinakwenda pamoja. Panga leo lini na kiasi gani unataka kusoma, hata kama ni aya chache tu kwa siku."
+          },
+          "3": {
+            "title": "Yuko karibu",
+            "text": "Katikati kabisa ya aya za swaumu, Allah anasema: Mimi niko karibu, naitikia dua ya mwenye kuomba. Ramadhani ni mwezi wa dua. Anza orodha ndogo ya mambo unayotaka kuyaomba kwa kweli."
+          },
+          "4": {
+            "title": "Usiku wenye thamani ya maisha yote",
+            "text": "Lailatul-Qadr ni bora kuliko miezi elfu. Hakuna ajuaye kwa hakika ni usiku upi, na ndiyo maana yake: unatakiwa kutafutwa. Anayejiandaa sasa hatasimama bila maandalizi katika usiku kumi za mwisho."
+          },
+          "5": {
+            "title": "Chukua masurufu sahihi",
+            "text": "Kwa kila safari unafunga masurufu, na Qur'an inasema masurufu bora ni taqwa. Swaumu huacha mchana wazi ili la msingi lionekane. Fikiria ni mazoea gani unataka kuyaacha nyuma mwezi huu."
+          },
+          "6": {
+            "title": "Jizoeze kwa ajili ya usiku",
+            "text": "Kuamka usiku ni kugumu, na Qur'an inasema wazi: saa za usiku huacha athari ya ndani zaidi. Huhitaji masaa; anza usiku huu kwa dakika chache za ziada za Swala na ukue kutoka hapo."
+          },
+          "7": {
+            "title": "Kutoa hukuzidishwa",
+            "text": "Punje moja huwa mia saba: hivyo ndivyo Qur'an inavyoelezea kutoa. Ukarimu katika Ramadhani si shughuli ya pembeni, ni sehemu ya swaumu. Amua leo utakachotoa, hata kikiwa kidogo lakini cha kudumu."
+          },
+          "8": {
+            "title": "Imerahisishwa",
+            "text": "Allah anasema ameifanya Qur'an nyepesi kukumbukwa, kisha anauliza: yupo anayekumbuka? Mwaliko huo ni wa kibinafsi. Kiwango chako kiwe chochote, Kitabu kiko ndani ya uwezo wako mwezi huu."
+          },
+          "9": {
+            "title": "Anza mbio sasa",
+            "text": "Qur'an inazungumza kuhusu kukimbilia msamaha na pepo ambayo upana wake ni mbingu na ardhi. Ramadhani ni uwanja wa mbio wa mwaka. Usisubiri siku ya kwanza ya swaumu: anza leo, na uingie mwezini ukiwa tayari unatembea."
+          }
+        }
+      },
+      "griefLoss": {
+        "title": "Huzuni na Kufiwa",
+        "subtitle": "Siku saba za faraja tulivu kwa moyo unaoomboleza.",
+        "days": {
+          "0": {
+            "title": "Sisi ni wa Kwake",
+            "text": "'Hakika sisi ni wa Allah, na Kwake tunarejea': maneno haya si kanuni ya kukaririwa, bali ni ukweli wa kuegemea. Aya inayofuata mara moja inawaahidi wenye subira baraka na rehema. Huzuni yako inaonekana, na haipotei bure."
+          },
+          "1": {
+            "title": "Wepesi uko pamoja na uzito",
+            "text": "Aya haisemi wepesi huja baada ya uzito, bali pamoja nao, na inasema hivyo mara mbili. Hata katika siku nzito kabisa kuna nyakati za nafuu: usingizi, neno jema, kumbukumbu inayokufanya utabasamu. Jiruhusu kuziona bila hatia."
+          },
+          "2": {
+            "title": "Njia anayopita kila mmoja",
+            "text": "Kila nafsi itaonja mauti; hakuna aliye tofauti, na hakuna aliyechaguliwa peke yake. Uliyempoteza alipita njia ambayo sote tutaipita. Katika Qur'an, mauti si mwisho bali ni kurejea."
+          },
+          "3": {
+            "title": "Kinachobaki",
+            "text": "Kila kilicho juu ya ardhi kitatoweka, na unabaki uso wa Mola wako, mwenye utukufu na ukarimu. Kufiwa kunapotikisa kilichoonekana imara, aya hii inamwelekeza Yule asiyebadilika. Shikamana na kisichoweza kuchukuliwa kutoka kwako."
+          },
+          "4": {
+            "title": "Utulivu wa moyo",
+            "text": "'Hakika kwa kumkumbuka Allah nyoyo hutulia.' Huzuni hukaza kifua; dhikri huilegeza, polepole na kwa upole. Dakika chache za dhikri tulivu leo si jambo dogo."
+          },
+          "5": {
+            "title": "Mwambie yote",
+            "text": "Yaqub, nabii, alimlilia mwanawe akasema: Ninashtaki huzuni na masikitiko yangu kwa Allah tu. Kuomboleza si upungufu wa imani. Peleka uzito wote kwa Yule awezaye kuubeba."
+          },
+          "6": {
+            "title": "Nafsi iliyotulia",
+            "text": "'Ewe nafsi iliyotulia, rejea kwa Mola wako, hali ya kuridhika na kuridhiwa.' Aya hizi ni mlango wa matumaini, kwa aliyetangulia na kwako pia. Muombe Allah amjaalie yeye, na siku moja wewe pia, marejeo haya laini."
+          }
+        }
+      },
+      "examTime": {
+        "title": "Kipindi cha Mitihani",
+        "subtitle": "Siku saba za umakini, utulivu na tawakkul kwa masomo na mitihani.",
+        "days": {
+          "0": {
+            "title": "Omba zaidi",
+            "text": "'Mola wangu, nizidishie elimu' ndiyo nyongeza pekee ambayo Nabii aliamrishwa kuiomba. Fanya dua hii fupi kuwa sehemu ya kila kikao cha kusoma. Elimu haikusanywi tu, pia hutunukiwa."
+          },
+          "1": {
+            "title": "Si zaidi ya uwezo wako",
+            "text": "Allah hakalifishi nafsi ila kwa kadiri ya uwezo wake. Mtihani ulio mbele yako umo ndani ya ahadi hiyo. Fanya leo unachoweza, na ukatae sauti inayosema ni kubwa mno kwako."
+          },
+          "2": {
+            "title": "Jambo moja, kisha linalofuata",
+            "text": "'Ukimaliza, simama kwa kazi inayofuata, na kwa Mola wako elekeza shauku yako.' Aya hizi zinaeleza mdundo tulivu: kamilisha jambo moja, kisha nenda kwa linalofuata. Soma kwa vipindi vya umakini na uache mapumziko yawe mapumziko kweli."
+          },
+          "3": {
+            "title": "Kujua kuna thamani",
+            "text": "'Je, wanaweza kuwa sawa wanaojua na wasiojua?' Qur'an inachukulia kujifunza kuwa heshima, si mzigo. Juhudi unayofanya sasa hivi ina thamani yake yenyewe, alama iwe yoyote itakayotoka."
+          },
+          "4": {
+            "title": "Kupandishwa daraja",
+            "text": "Allah huwapandisha daraja walioamini na waliopewa elimu. Kujifunza kwa uaminifu ni aina ya ibada. Anza kwa Bismillah, na masomo yako yatakuwa zaidi ya alama kwenye mtihani."
+          },
+          "5": {
+            "title": "Amua, kisha tawakali",
+            "text": "'Na ukishaazimia, mtegemee Allah.' Tawakkul haichukui nafasi ya maandalizi, inayakamilisha. Jiandae kadri uwezavyo, kisha ingia kwa moyo mtulivu: umefanya sehemu yako."
+          },
+          "6": {
+            "title": "Yeye anatosha",
+            "text": "Anayemtegemea Allah, Yeye humtosheleza. Ukishamkabidhi matokeo, huyabebi tena peke yako. Ingia, toa kilicho bora kwako, na uachie matokeo kwa Yule anayeyaamua vyema."
+          }
+        }
+      },
+      "rizqWork": {
+        "title": "Riziki na Kazi",
+        "subtitle": "Siku saba kuhusu riziki, kazi ya halali na kumwamini Mruzuku.",
+        "days": {
+          "0": {
+            "title": "Riziki yako imeandikwa",
+            "text": "Hakuna kiumbe duniani ambaye riziki yake haiko kwa Allah; ya shomoro na yako pia. Hili haliondoi juhudi, linaondoa hofu ndani yake. Fanya kazi leo bila woga kwamba kilicho chako kinaweza kupotea."
+          },
+          "1": {
+            "title": "Swali, kisha tawanyikeni",
+            "text": "'Swala ikimalizika, tawanyikeni katika ardhi na mtafute fadhila za Allah.' Kazi na ibada si wapinzani; aya inaziweka katika sentensi moja. Linda Swala zako ndani ya siku ya kazi na uziache zipange siku hiyo."
+          },
+          "2": {
+            "title": "Tembea katika ardhi",
+            "text": "Allah ameifanya ardhi iwe rahisi kutumika: 'tembeeni katika pande zake na mle katika riziki Yake.' Kutafuta riziki ni sehemu ya mpango wenyewe. Toka nje, bisha milango, jifunze: harakati inatarajiwa kutoka kwako."
+          },
+          "3": {
+            "title": "Istighfar hufungua milango",
+            "text": "Nuh aliwaambia watu wake: ombeni msamaha, naye atawaletea mvua, mali na watoto. Qur'an inaunganisha istighfar na riziki kwa namna halisi kabisa. Mambo yanapoonekana yamekwama, hapa ndipo pa kuanzia."
+          },
+          "4": {
+            "title": "Halali na njema",
+            "text": "'Kuleni katika vilivyo halali na vizuri ardhini.' Jinsi unavyopata ni muhimu sawa na kiasi unachopata. Kipato kidogo kilicho safi ni msingi bora kuliko kikubwa kisicho safi."
+          },
+          "5": {
+            "title": "Dunia zote mbili",
+            "text": "Tafuta makazi ya Akhera kwa alichokupa Allah, wala usisahau fungu lako la dunia. Aya inaruhusu azma na kuipa mwelekeo. Fanya kazi kwa bidii, furahia kilicho chako, na uweke lengo mbele ya macho."
+          },
+          "6": {
+            "title": "Unachotoa hurudi",
+            "text": "'Chochote mtakachotoa, Yeye atakilipa, naye ni mbora wa wanaoruzuku.' Kutoa hakupunguzi riziki, kunaiita. Jenga mazoea ya kutoa kutoka kipato chako, hata kiwe kidogo, na uiamini ahadi."
+          }
+        }
+      }
+    },
+    "behindOne": "siku nyuma",
+    "continuePlan": "Endelea",
+    "activeSection": "Inayoendelea",
+    "allSection": "Mipango yote"
+  },
+  "ki": {
+    "title": "Salati AI",
+    "subtitle": "Hujibu tu kutoka Qur'an, Hadithi 40 za an-Nawawi, dua zilizothibitishwa na maandiko ya kozi ya Salati - hufanya kazi 100% kwenye kifaa chako.",
+    "aiDisclosure": "Jibu lililoandaliwa kwa msaada wa AI - si fatwa wala maoni ya mwanachuoni. Linaundwa tu na nukuu za neno kwa neno kutoka vyanzo vilivyotajwa; sehemu inayofaa inaweza kukosekana au kutokamilika - soma chanzo kilichounganishwa.",
+    "webOnlyNote": "AI ya asili inapatikana tu kwenye programu. Tumia toleo la kivinjari.",
+    "openWebVersion": "Fungua toleo la kivinjari",
+    "deleteModel": "Futa muundo",
+    "deleteModelConfirm": "Una uhakika unataka kufuta modeli? Ni mabaki ya matoleo ya awali - AI haihitaji tena wala haitaipakua upya. Utaachia {size}.",
+    "inputPlaceholder": "Swali lako …",
+    "send": "Uliza",
+    "sourcesLabel": "Vyanzo",
+    "noAnswer": "Sikupata chochote kuhusu hili katika vyanzo vyangu vya ndani. Kwa jibu la kutegemewa, tafadhali muulize mwanachuoni.",
+    "clearHistory": "Futa historia",
+    "welcome": "Salamu! Niulize swali - nitatafuta sehemu zinazolingana kutoka Qur'an, Hadithi 40 za an-Nawawi, dua zilizothibitishwa na maandiko ya kozi ya Salati, na kujibu kwa msingi huo tu.",
+    "clearHistoryConfirm": "Una uhakika unataka kufuta mazungumzo yaliyopita? Hatua hii haiwezi kutenduliwa.",
+    "examplesTitle": "Kwa mfano:",
+    "example1": "Nguzo tano za Uislamu ni zipi?",
+    "example2": "Ninatawadhaje?",
+    "example3": "Sala ya isha ni nini?",
+    "example4": "Ni mambo gani yanayoivunja funga?",
+    "example5": "Nitoe zaka kiasi gani?",
+    "example6": "Uislamu unasema nini kuhusu subira?",
+    "germanSourcesNote": "Vyanzo vya AI (tafsiri ya Qur’ani, hadithi, maandishi ya kozi) kwa sasa vipo kwa Kijerumani pekee, hivyo majibu pia huja kwa Kijerumani.",
+    "partlyGermanSourcesNote": "Tafsiri ya Qur'ani, hadithi, maandishi ya kozi na miongozo vipo kwa lugha yako. Baadhi ya vifungu vya maarifa ya msingi bado vipo kwa Kijerumani.",
+    "feedbackQuestion": "Je, hili lilisaidia?",
+    "feedbackThanks": "Asante — maoni yako yanabaki kwenye kifaa chako.",
+    "feedbackGood": "Lilisaidia",
+    "feedbackBad": "Halikusaidia"
+  },
+  "onboarding": {
+    "skip": "Ruka",
+    "next": "Endelea",
+    "welcomeTitle": "Karibu Salati",
+    "welcomeTagline": "Nyakati za swala, Qur'ani, qibla na kozi za kujifunza katika programu moja.",
+    "welcomePrivacy": "Bila akaunti, bila ufuatiliaji - kila kitu kinabaki kwenye kifaa chako.",
+    "locationTitle": "Mahali ulipo",
+    "locationHint": "Salati inahitaji mahali ulipo ili kupata nyakati sahihi za swala. Tumia kitambua-mahali au tafuta mji wako.",
+    "methodTitle": "Njia ya kukokotoa",
+    "methodHint": "Chagua njia inayotumika katika eneo au jamii yako. Unaweza kuibadilisha wakati wowote kwenye Mipangilio.",
+    "notifTitle": "Arifa za swala",
+    "notifHint": "Pokea ukumbusho kila wakati wa swala. Unaweza kubadilisha hili wakati wowote kwenye Mipangilio.",
+    "newToIslam": "Ni mgeni katika Uislamu? Angalia hatua zako za kwanza",
+    "offlineTitle": "Fanya ipatikane nje ya mtandao",
+    "offlineHint": "Pakua modeli sasa ili ukaguzi wa kisomo na AI vifanye kazi bila intaneti. Yote ni hiari.",
+    "offlineSpeech": "Modeli ya sauti (ukaguzi wa kisomo)",
+    "offlineReady": "Imepakuliwa",
+    "offlineLater": "Unaweza kufanya hivi wakati wowote katika Mipangilio.",
+    "done": "Tayari"
+  },
+  "dhikrAfterSalah": {
+    "title": "Dhikr Baada ya Sala",
+    "subtitle": "33x SubhanAllah, 33x Alhamdulillah, 34x Allahu Akbar",
+    "tapHint": "Gusa duara ili kuhesabu",
+    "totalProgress": "Jumla: {count} / {total}",
+    "completeTitle": "Masha Allah!",
+    "completeSubtitle": "Umekamilisha mfululizo mzima wa dhikr baada ya sala.",
+    "restartCta": "Anza upya",
+    "doneCta": "Imekamilika"
+  },
+  "gettingStarted": {
+    "title": "Hatua za Kwanza",
+    "subtitle": "Ni mgeni katika Uislamu au umetamka Shahada hivi punde? Hizi ni hatua zako za kwanza, kwa mpangilio wenye maana.",
+    "cta": "Anza",
+    "steps": {
+      "shahada": {
+        "title": "Elewa Shahada",
+        "desc": "Maana ya Shahada - imeelezwa katika kozi ya msingi ya Aqida"
+      },
+      "wudu": {
+        "title": "Jifunze udhu",
+        "desc": "Udhu hatua kwa hatua, pamoja na dua"
+      },
+      "howToPray": {
+        "title": "Jifunze sala yako ya kwanza",
+        "desc": "Mfuatano na hali za sala"
+      },
+      "prayerTimes": {
+        "title": "Weka nyakati za sala",
+        "desc": "Weka eneo lako, mbinu ya hesabu na vikumbusho"
+      },
+      "duas": {
+        "title": "Dua muhimu",
+        "desc": "Dua za maisha ya kila siku, kulala na zaidi"
+      },
+      "alphabet": {
+        "title": "Jifunze alfabeti ya Kiarabu",
+        "desc": "Hatua zako za kwanza kuelekea kusoma Qur'an"
+      }
+    }
+  },
+  "prayAlong": {
+    "customize": "Badilisha mwonekano",
+    "fontSize": "Ukubwa wa maandishi",
+    "show": "Onyesha",
+    "showTranslation": "Tafsiri",
+    "showArabic": "Kiarabu",
+    "showNotes": "Maelekezo",
+    "arrangement": "Mpangilio",
+    "translitFirst": "Matamshi kwanza",
+    "arabicFirst": "Kiarabu kwanza"
+  },
+  "learnToPray": {
+    "title": "Jifunze kusali",
+    "subtitle": "Jifunze kwa utulivu — Kiarabu, matamshi na tafsiri kwa kila hatua.",
+    "intro": "Jinsi ya kusali, hatua kwa hatua. Chukua muda wako: kila hatua inaonyesha maandishi ya Kiarabu, matamshi ya Kilatini na tafsiri yake. Gusa maandishi ya Kiarabu ili kuyasikia. Kufuatana wakati wa sala, tumia hali ya kusali pamoja.",
+    "pickPrompt": "Ungependa kujifunza sala gani?",
+    "coreTitle": "Al-Fatiha na sura fupi",
+    "coreSubtitle": "Al-Fatiha kamili (aya 7) pamoja na Al-Ikhlas na Al-Kawthar — matini za kwanza kuhifadhiwa.",
+    "surahsTitle": "Sura mbili fupi",
+    "surahsSubtitle": "Al-Ikhlas na Al-Kawthar — sura za kwanza kuhifadhiwa."
+  },
+  "widgetConfig": {
+    "opacity": "Ukolezi wa mandharinyuma",
+    "accentColor": "Rangi ya mkazo",
+    "fontSize": "Ukubwa wa fonti",
+    "fontSmall": "Ndogo",
+    "fontMedium": "Wastani",
+    "fontLarge": "Kubwa",
+    "corners": "Pembe",
+    "cornerSharp": "Kali",
+    "cornerRounded": "Mviringo",
+    "cornerRound": "Duara",
+    "timeFormat": "Muundo wa saa",
+    "timeAuto": "Otomatiki",
+    "time24h": "Saa 24",
+    "time12h": "Saa 12",
+    "showHijri": "Onyesha tarehe ya Kiislamu",
+    "showSunrise": "Onyesha macheo",
+    "highlightNext": "Angazia sala inayofuata",
+    "showCountdown": "Onyesha kihesabu",
+    "showArabic": "Onyesha maandishi ya Kiarabu",
+    "showSource": "Onyesha chanzo",
+    "showBearing": "Onyesha digrii",
+    "showDirection": "Onyesha mwelekeo",
+    "streakLarge": "Namba kubwa",
+    "showStreakLabel": "Onyesha lebo",
+    "duaSelection": "Uteuzi",
+    "duaDaily": "Kila siku",
+    "duaRandom": "Nasibu",
+    "title": "Sanidi wijeti",
+    "typeCountdown": "Hesabu ya kurudi nyuma",
+    "typeStreak": "Mfululizo wa kujifunza",
+    "color": "Rangi",
+    "transparent": "Mandharinyuma angavu",
+    "content": "Maudhui",
+    "showCoords": "Onyesha eneo",
+    "showNextTime": "Onyesha wakati wa sala inayofuata",
+    "showTranslation": "Onyesha tafsiri",
+    "showDistance": "Onyesha umbali",
+    "cancel": "Ghairi",
+    "done": "Imekamilika",
+    "textColor": "Rangi ya maandishi",
+    "previewHint": "Mabadiliko yanahusu wijeti hii pekee. Bonyeza kwa muda mrefu wijeti kwenye skrini ya nyumbani ili kuisanidi kivyake."
+  },
+  "podcast": {
+    "listenOnSpotify": "Sikiliza kwenye Spotify",
+    "title": "Lugha ya Qurani",
+    "subtitle": "Elewa Kiarabu, kipindi baada ya kipindi",
+    "heroDesc": "Podikasti: sarufi ya Qurani, kipindi baada ya kipindi.",
+    "empty": "Inakuja hivi karibuni.",
+    "episodeLabel": "Kipindi",
+    "play": "Cheza",
+    "pause": "Simamisha",
+    "seek": "Nafasi",
+    "volume": "Sauti",
+    "previous": "Kipindi kilichotangulia",
+    "next": "Kipindi kinachofuata",
+    "showTranscript": "Soma unaposikiliza",
+    "hideTranscript": "Ficha maandishi",
+    "settings": "Mipangilio",
+    "repeat": "Rudia",
+    "sleepTimer": "Kipima muda cha kulala",
+    "speed": "Kasi",
+    "off": "Zima",
+    "endOfEpisode": "Mwisho wa kipindi",
+    "autoplay": "Cheza kiotomatiki",
+    "download": "Pakua",
+    "downloaded": "Imepakuliwa",
+    "offline": "Nje ya mtandao",
+    "cancelDownload": "Ghairi upakuaji",
+    "deleteDownload": "Futa upakuaji",
+    "deleteDownloadConfirmTitle": "Futa upakuaji?",
+    "deleteDownloadConfirmBody": "Kipindi hiki kitaondolewa kwenye kifaa chako.",
+    "moreEpisodes": "Vipindi vingine",
+    "series": "Mfululizo"
+  },
+  "lernen": {
+    "learnDesc": "Masomo 2000+ shirikishi — hatua kwa hatua.",
+    "hifzDesc": "Hifadhi Qurani kwa msaada wa utambuzi wa sauti.",
+    "more": "Kujifunza zaidi"
+  },
+  "reels": {
+    "title": "Reels",
+    "comingSoonTitle": "Reels zinakuja hivi karibuni",
+    "comingSoonDesc": "Klipu fupi za kutelezesha zitaonekana hapa hivi karibuni.",
+    "errorTitle": "Imeshindwa kupakia reels",
+    "errorDesc": "Angalia muunganisho wako na ujaribu tena.",
+    "retry": "Jaribu tena",
+    "share": "Shiriki",
+    "back": "Rudi",
+    "mute": "Zima sauti",
+    "unmute": "Washa sauti",
+    "webOnlyNote": "Reels huchezwa katika programu ya Salati. Fungua programu ili kuziangalia.",
+    "forYou": "Kwa ajili yako",
+    "all": "Zote",
+    "like": "Penda",
+    "play": "Cheza",
+    "pause": "Simamisha",
+    "seek": "Nafasi"
+  },
+  "video": {
+    "title": "Video",
+    "subtitle": "Video za kujifunza — kuelewa Qur’an hatua kwa hatua.",
+    "heroDesc": "Video za kujifunza: sarufi, tajwidi na zaidi — za kutazama.",
+    "reelsTitle": "Reels",
+    "reelsDesc": "Klipu fupi — maarifa kwa vipande vidogo.",
+    "empty": "Inakuja hivi karibuni.",
+    "moreEpisodes": "Video zaidi",
+    "episodeLabel": "Kipindi",
+    "topics": "Mada",
+    "continue": "Endelea kutazama",
+    "play": "Cheza",
+    "pause": "Simamisha",
+    "seek": "Nafasi",
+    "previous": "Video iliyotangulia",
+    "next": "Video inayofuata",
+    "fullscreen": "Skrini nzima",
+    "download": "Pakua",
+    "offline": "Nje ya mtandao",
+    "cancelDownload": "Ghairi upakuaji",
+    "deleteDownload": "Futa upakuaji",
+    "deleteDownloadConfirmTitle": "Futa upakuaji?",
+    "deleteDownloadConfirmBody": "Video itaondolewa kwenye kifaa chako.",
+    "continueWatching": "Endelea kutazama",
+    "playlists": "Orodha za kucheza",
+    "playlist": "Orodha ya kucheza",
+    "newPlaylist": "Orodha mpya",
+    "playlistNamePlaceholder": "Jina la orodha",
+    "createPlaylist": "Tengeneza orodha",
+    "addToPlaylist": "Ongeza kwenye orodha",
+    "removeFromPlaylist": "Ondoa kwenye orodha",
+    "deletePlaylist": "Futa orodha",
+    "deletePlaylistConfirmTitle": "Futa orodha?",
+    "deletePlaylistConfirmBody": "Orodha itaondolewa. Video zitabaki.",
+    "playlistEmpty": "Bado hakuna video kwenye orodha hii.",
+    "noPlaylists": "Bado hakuna orodha. Tengeneza moja kukusanya video.",
+    "playAll": "Cheza zote",
+    "videos": "Video",
+    "autoplay": "Cheza kiotomatiki",
+    "autoplayHint": "Cheza video inayofuata kiotomatiki",
+    "backgroundPlay": "Endelea chinichini",
+    "backgroundPlayHint": "Sauti inaendelea unapotoka kwenye programu",
+    "pip": "Picha ndani ya picha",
+    "settings": "Mipangilio",
+    "speed": "Kasi",
+    "renamePlaylist": "Badilisha jina"
+  },
+  "media": {
+    "title": "Media",
+    "subtitle": "Podikasti, video na reels mahali pamoja.",
+    "contentLanguage": "Maudhui kwa {lang}",
+    "languages": {
+      "de": "Kijerumani"
+    }
+  },
+  "handouts": {
+    "title": "Nyenzo za Kujifunza",
+    "subtitle": "Nyenzo za kujifunza za PDF za kusoma na kupakua.",
+    "empty": "Inakuja hivi karibuni.",
+    "pages": "kurasa",
+    "read": "Soma",
+    "download": "Pakua",
+    "offline": "Nje ya mtandao",
+    "cancelDownload": "Ghairi upakuaji",
+    "deleteDownload": "Futa upakuaji",
+    "deleteDownloadConfirmTitle": "Futa upakuaji?",
+    "deleteDownloadConfirmBody": "PDF itaondolewa kwenye kifaa chako.",
+    "openInBrowser": "Fungua katika kivinjari",
+    "viewerError": "PDF haikuweza kupakiwa."
+  },
+  "lizenzen": {
+    "title": "Vyanzo na leseni",
+    "subtitle": "Wamiliki wa haki na leseni za maudhui yanayotumika katika Salati",
+    "intro": "Salati hutumia matini, sauti, data, fonti na modeli kutoka kwa wahusika wengine. Hapa wameorodheshwa wamiliki wote wa haki na leseni tunazozitumia. Pale leseni inapohitaji kutajwa - kwa mfano Apache-2.0, MIT au ODbL - ukurasa huu hutimiza hitaji hilo.",
+    "categories": {
+      "quran": "Matini ya Qur'an na tafsiri",
+      "recitation": "Visomo",
+      "hadith": "Makusanyo ya hadithi",
+      "font": "Fonti",
+      "ai": "Modeli za AI",
+      "speech": "Utambuzi wa sauti",
+      "maps": "Ramani na data ya maeneo",
+      "prayerTimes": "Nyakati za sala na kalenda",
+      "data": "Vyanzo vingine vya data",
+      "images": "Picha",
+      "software": "Maktaba za programu"
+    },
+    "terms": {
+      "providerTerms": "Masharti ya matumizi ya mtoa huduma",
+      "reciterRights": "Haki za wasomaji na watoa huduma husika",
+      "publicDomain": "Unlicense (mali ya umma)",
+      "fontEula": "Leseni ya mtengenezaji (imejumuishwa ndani ya fonti)",
+      "hadeethencTerms": "Kunukuu bila mabadiliko pamoja na kutaja chanzo (masharti ya mtoa huduma)",
+      "rassoulRelease": "Imetolewa huru na mwandishi - kunakili bila mabadiliko kwa kutaja chanzo"
+    },
+    "distributedSection": "Tunachosambaza sisi wenyewe",
+    "distributedText": "Maudhui mengi kifaa chako hukichukua moja kwa moja kutoka kwa mtoa huduma husika - hatuyasambazi upya, hapo kutaja chanzo kunatosha. Tunachosambaza sisi wenyewe: modeli ya lugha Qwen2.5-1.5B-Instruct na modeli ya utambuzi wa sauti ya Tarteel (zote mbili kutoka hifadhi yetu wenyewe), fonti ya KFGQPC HAFS na maktaba zote za programu zilizomo ndani ya kifurushi cha programu. Kwa kazi hizi maandishi kamili ya leseni yameambatishwa - yanafunguka hapo hapo chini ya kila kipengele. Pia tunatoa wenyewe tafsiri ya Kijerumani ya Abu-r-Ridā Muhammad Ibn Ahmad Ibn Rassoul - mwandishi aliiweka huru bila hakimiliki, lakini anataka chanzo kitajwe.",
+    "moreTextsSection": "Maandishi mengine ya leseni",
+    "moreTextsIntro": "Leseni za maktaba ndogo zinazoendeshwa ndani ya kifurushi cha programu, pamoja na orodha kamili ya taarifa zote za hakimiliki (NOTICE). Leseni za MIT na BSD zinadai taarifa halisi ya mwenye haki - iko katika NOTICE, si katika maandishi ya leseni yenyewe.",
+    "appliesTo": "Inahusu:",
+    "showFullText": "Onyesha maandishi kamili",
+    "hideFullText": "Ficha maandishi kamili",
+    "originalOnly": "Maandishi ya leseni yanaonyeshwa katika lugha yake ya asili na hayatafsiriwi - tafsiri si leseni.",
+    "changesSection": "Mabadiliko kwenye kazi za wengine",
+    "changesText": "Leseni ya Apache-2.0 inatutaka tueleze mabadiliko yetu wenyewe. Qwen2.5-1.5B-Instruct tunaisambaza kama faili ya GGUF yenye ukadiriaji Q4_K_M, na tarteel-ai/whisper-base-ar-quran kama faili ya GGML yenye ukadiriaji q5_0 pamoja na toleo la ONNX kwa kivinjari. Modeli zote mbili zilibadilishwa tu kuwa muundo mwingine wa faili na kupunguzwa ukubwa - hakuna mafunzo upya wala uzito uliobadilishwa. Fonti ya KFGQPC HAFS tunaisambaza bila mabadiliko.",
+    "ownContentSection": "Maudhui yetu wenyewe",
+    "ownContentText": "Matini za kozi, maelezo, maswali ya jaribio, vipeperushi pamoja na podikasti na video za Salati ni kazi zetu wenyewe. Unaweza kuzipakua na kuzitumia kwa matumizi binafsi; kusambaza upya au matumizi ya kibiashara kunahitaji idhini yetu.",
+    "noticeSection": "Ilani kuhusu haki",
+    "noticeText": "Tunajitahidi kutaja kila chanzo kwa usahihi. Ikiwa taja limekosekana, taarifa ya leseni si sahihi au maudhui katika Salati yanakiuka haki zako, tafadhali tuandikie salatibox@gmail.com - tutasahihisha taarifa au kuondoa maudhui mara moja."
+  },
+  "mosqueMatch": {
+    "title": "Linganisha na msikiti wangu",
+    "subtitle": "Andika nyakati kutoka ratiba — programu itapata mpangilio unaolingana",
+    "introFooter": "Hesabu hufanywa kwa mahali hapa na tarehe hii. Ikiwa msikiti wako uko mahali pengine, weka kwanza mahali katika mipangilio.",
+    "forDate": "Nyakati za",
+    "enterTitle": "Nyakati za msikiti wako",
+    "enterFooter": "Wakati mmoja unatosha; kadiri unavyoweka zaidi, ndivyo matokeo yanavyokuwa sahihi zaidi. Weka nyakati za adhana, si za ikama. Muundo: 05:12",
+    "placeholder": "--:--",
+    "search": "Tafuta mpangilio unaolingana",
+    "needInput": "Weka angalau wakati mmoja, kwa mfano 05:12.",
+    "resultTitle": "Hii inalingana zaidi",
+    "resultAngles": "Pembe",
+    "resultExact": "Mbinu hii inagusa nyakati zako bila marekebisho yoyote — matokeo ya kuaminika sana.",
+    "resultAdjusted": "Mbinu hii hailingani hadi dakika; sehemu iliyobaki imewekwa katika marekebisho ya dakika. Hivyo nyakati hubaki sahihi mwaka mzima.",
+    "resultWarn": "Tofauti ni kubwa. Angalia mahali na kama kweli uliweka nyakati za adhana — nyakati za ikama huwa baadaye kwa makusudi.",
+    "deviation": "Tofauti ya wastani",
+    "noAdjust": "hayahitajiki",
+    "apply": "Tumia",
+    "appliedShort": "Imetumika",
+    "applied": "Imehifadhiwa. Onyesho, arifa, wijeti na uhamishaji wa kalenda sasa hutumia mpangilio huu.",
+    "applyFooter": "Huweka mbinu ya kukokotoa, madhehebu ya Alasiri, kanuni ya latitudo za juu na marekebisho ya dakika.",
+    "whyTitle": "Kwa nini tusisogeze tu?",
+    "whyText": "Kusogeza dakika tu ni sahihi kwa siku ile moja uliyoandika. Mbinu hutofautiana katika pembe ya jua, na pembe hiyo hufanya kazi tofauti mwaka mzima — nchini Ujerumani kwa zaidi ya saa moja kati ya Desemba na Juni. Ndiyo maana programu hutafuta mbinu kwanza, kisha ndipo husogeza dakika."
+  },
+  "prayerSource": {
+    "title": "Nyakati zako za sala zinatoka wapi",
+    "subtitle": "Chanzo, mbinu na jinsi ya kufikia nyakati zako mwenyewe",
+    "intro": "Nyakati za sala ni matokeo ya hesabu, si vipimo. Wakati unaopatikana hutegemea mamlaka inayotumika kama msingi — tofauti huanzia dakika chache hadi zaidi ya saa moja. Salati huonyesha ni ipi.",
+    "currentTitle": "Kinachotumika sasa",
+    "currentFooter": "Thamani hizi hutumika sawasawa kwa onyesho, arifa, wijeti, saa na uhamishaji wa kalenda.",
+    "angles": "Pembe",
+    "noAdjust": "hakuna",
+    "adjustCount": "{n} zimerekebishwa",
+    "countryTitle": "Kuhusu nchi yako",
+    "countryFooter": "Katika {country} jamaa nyingi hufuata {method}. Salati haibadilishi yenyewe — uamuzi ni wako.",
+    "howTitle": "Jinsi ya kupata nyakati zako",
+    "howMosque": "Linganisha na msikiti wangu",
+    "howMosqueHint": "Andika nyakati kutoka ratiba, programu itafanya mengine",
+    "howSettings": "Chagua mamlaka mwenyewe",
+    "howSettingsHint": "Mbinu ya kukokotoa, madhehebu ya Alasiri, kanuni ya latitudo za juu na marekebisho ya dakika",
+    "howMosques": "Misikiti iliyo karibu",
+    "howMosquesHint": "Tafuta jamaa iliyo karibu na uwaulize nyakati zao",
+    "dataTitle": "Chanzo cha data",
+    "dataText": "Ikiwa kuna intaneti, Salati huchukua nyakati kutoka AlAdhan, inayoakisi vigezo vya mamlaka husika. Bila intaneti, programu hukokotoa nyakati zilezile yenyewe (maktaba ya adhan, leseni ya MIT) — kwa pembe zilezile kabisa, ili nje ya mtandao isitofautiane na mtandaoni.",
+    "methodTitle": "Mbinu huamua nini",
+    "methodText": "Alfajiri huanza jua linapofika pembe fulani chini ya upeo wa macho; Isha vivyo hivyo jioni. Mamlaka huweka pembe hizi tofauti — kati ya 12° na 20°. Baadhi hukokotoa Isha si kwa pembe bali kwa idadi maalum ya dakika baada ya Magharibi. Nyingine huongeza tahadhari ya dakika chache kwa macheo, adhuhuri na machweo.",
+    "asrTitle": "Alasiri: urefu mbili wa kivuli",
+    "asrText": "Alasiri huanza kivuli cha kitu kinapoongezeka kwa urefu wa kitu chenyewe (Shafi‘i, Maliki, Hanbali) au mara mbili yake (Hanafi). Hiyo ni tofauti ya takriban dakika 45 hadi 90 — si kasoro ya hesabu, bali madhehebu mawili.",
+    "highLatTitle": "Kaskazini mwa latitudo 48°",
+    "highLatText": "Katika sehemu kubwa ya Ujerumani jua halishuki chini vya kutosha usiku wa kiangazi kufikia pembe za Alfajiri na Isha. Hapo kanuni mbadala hutoa nyakati zote mbili kutokana na urefu wa usiku. Hakuna kanuni inayokubalika kwa wote — Berlin tofauti huzidi saa moja. Ndiyo maana kanuni zote zinaweza kuchaguliwa, na ndiyo maana ratiba ya msikiti wako mwenyewe ni jibu bora ukiwa na shaka.",
+    "sourcesTitle": "Vyanzo",
+    "sourcesFooter": "Hufungua kurasa katika kivinjari.",
+    "sources": {
+      "aladhan": "AlAdhan — muhtasari wa mbinu za kukokotoa",
+      "adhan": "adhan — maktaba ya hesabu nje ya mtandao",
+      "diyanet": "Diyanet — maelezo ya tahadhari ya muda (temkin)",
+      "moonsighting": "Moonsighting Committee — maelezo ya utaratibu",
+      "highLat": "Baraza la Ulaya la Fatwa na Utafiti — latitudo za juu"
+    }
+  }
+}

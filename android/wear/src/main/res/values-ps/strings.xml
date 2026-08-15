@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Sichtbare Texte der Wear-OS-App (App-Screen, Kachel, Komplikation).
+  Generiert fuer alle 14 Salati-App-Sprachen (src/lib/locale-detect.ts).
+  values/ ist Englisch (Fallback fuer alle nicht gelisteten Uhr-Sprachen),
+  values-de/-tr/-ar/-es/-fr/-in/-bn/-fa/-ms/-ur/-ru/-sw/-ps die uebrigen 13.
+  Gebetsnamen sind wortgleich mit prayers.* aus src/locales/<lang>.json.
+-->
+<resources>
+    <string name="app_name">Salati</string>
+    <string name="tile_label">راتلونکی لمونځ</string>
+    <string name="next_prayer">راتلونکی لمونځ</string>
+    <string name="prayer_fajr">فجر</string>
+    <string name="prayer_dhuhr">ماسپخین</string>
+    <string name="prayer_asr">مازیګر</string>
+    <string name="prayer_maghrib">ماښام</string>
+    <string name="prayer_isha">ماخستن</string>
+    <string name="today">نن</string>
+    <string name="no_data_title">لا د لمانځه وختونه نشته</string>
+    <string name="no_data_body">په ټیلیفون کې سلاتي پرانیزئ</string>
+    <string name="in_hours_minutes">%1$d ساعته %2$d دقیقې وروسته</string>
+    <string name="in_minutes">%1$d دقیقې وروسته</string>
+    <string name="time_now">اوس</string>
+    <string name="stale_data">وختونه ممکن زاړه وي</string>
+    <string name="qibla">قبله</string>
+    <string name="qibla_no_compass">په دې ساعت کې قطب‌نما نشته</string>
+    <string name="qibla_aligned">تاسو کعبې ته مخ یاست</string>
+    <string name="qibla_distance">کعبې ته %1$d کیلومتره</string>
+    <string name="complication_description">راتلونکی لمونځ او د هغه وخت ښیي</string>
+    <string name="loading">بارېږي…</string>
+</resources>

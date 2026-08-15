@@ -1,0 +1,23 @@
+# OSX
+#
+.DS_Store
+
+# Android/IntelliJ
+#
+build/
+.idea
+.gradle
+local.properties
+*.iml
+*.hprof
+.cxx/
+
+# generated inline modules
+app/src/main/java/inline/
+
+# Bundle artifacts
+*.jsbundle
+
+# llama.rn kopiert seine Hexagon-DSP-.so-Dateien beim Build in
+# app/src/main/assets/ggml-hexagon/ - generiert, nicht Source.
+app/src/main/assets/

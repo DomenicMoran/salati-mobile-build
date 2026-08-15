@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+# Kein Nutzen im Index, aber teuer zu crawlen:
+Disallow: /models/
+Disallow: /rag/
+
+Sitemap: https://www.salati.pro/sitemap.xml

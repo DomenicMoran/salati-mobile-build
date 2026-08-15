@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Sichtbare Texte der Wear-OS-App (App-Screen, Kachel, Komplikation).
+  Generiert fuer alle 14 Salati-App-Sprachen (src/lib/locale-detect.ts).
+  values/ ist Englisch (Fallback fuer alle nicht gelisteten Uhr-Sprachen),
+  values-de/-tr/-ar/-es/-fr/-in/-bn/-fa/-ms/-ur/-ru/-sw/-ps die uebrigen 13.
+  Gebetsnamen sind wortgleich mit prayers.* aus src/locales/<lang>.json.
+-->
+<resources>
+    <string name="app_name">Salati</string>
+    <string name="tile_label">Sala inayofuata</string>
+    <string name="next_prayer">Sala inayofuata</string>
+    <string name="prayer_fajr">Fajr</string>
+    <string name="prayer_dhuhr">Dhuhr</string>
+    <string name="prayer_asr">Asr</string>
+    <string name="prayer_maghrib">Maghrib</string>
+    <string name="prayer_isha">Isha</string>
+    <string name="today">Leo</string>
+    <string name="no_data_title">Bado hakuna nyakati za sala</string>
+    <string name="no_data_body">Fungua Salati kwenye simu</string>
+    <string name="in_hours_minutes">baada ya saa %1$d dk %2$d</string>
+    <string name="in_minutes">baada ya dk %1$d</string>
+    <string name="time_now">sasa</string>
+    <string name="stale_data">Nyakati zinaweza kuwa za zamani</string>
+    <string name="qibla">Kibla</string>
+    <string name="qibla_no_compass">Saa hii haina dira</string>
+    <string name="qibla_aligned">Unaelekea Kaaba</string>
+    <string name="qibla_distance">km %1$d hadi Kaaba</string>
+    <string name="complication_description">Inaonyesha sala inayofuata na wakati wake</string>
+    <string name="loading">Inapakia…</string>
+</resources>

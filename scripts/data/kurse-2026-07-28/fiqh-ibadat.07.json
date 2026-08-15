@@ -1,0 +1,241 @@
+{
+  "lessons": [
+    {
+      "id": "fiqh-18",
+      "source": "Quran 2:183; Quran 2:185; Quran 2:187; Quran 97:1; Sahih al-Bukhari 8",
+      "title": {
+        "de": "Das Fasten im Ramadan - Pflicht und Grenzen",
+        "en": "Fasting in Ramadan - obligation and limits",
+        "tr": "Ramazan orucu - farziyet ve sınırlar",
+        "ar": "صيام رمضان - الفرض والحدود",
+        "es": "El ayuno de Ramadán: obligación y límites",
+        "fr": "Le jeûne de Ramadan : obligation et limites",
+        "id": "Puasa Ramadan - kewajiban dan batasannya",
+        "bn": "রমজানের রোজা - ফরজ ও সীমা",
+        "fa": "روزهٔ رمضان - وجوب و مرزها",
+        "ms": "Puasa Ramadan - kewajipan dan batasnya",
+        "ur": "رمضان کے روزے - فرضیت اور حدود",
+        "sw": "Kufunga Ramadhani - wajibu na mipaka",
+        "ru": "Пост в рамадан - обязанность и границы",
+        "ps": "د رمضان روژه - فرضیت او پولې"
+      },
+      "story": [{ "ref": "fasten-ramadan" }, { "ref": "ramadan-monat" }, { "ref": "fasten-bricht" }],
+      "storyQuiz": [
+        {
+          "q": { "de": "Von wann bis wann wird im Ramadan gefastet?", "en": "From when to when does one fast in Ramadan?", "tr": "Ramazanda ne zamandan ne zamana oruç tutulur?", "ar": "من متى إلى متى يكون الصيام في رمضان؟", "es": "¿Desde cuándo y hasta cuándo se ayuna en Ramadán?", "fr": "De quand à quand jeûne-t-on en Ramadan ?", "id": "Dari kapan sampai kapan puasa Ramadan?", "bn": "রমজানে কখন থেকে কখন পর্যন্ত রোজা?", "fa": "در رمضان از کی تا کی روزه می‌گیرند؟", "ms": "Dari bila hingga bila puasa Ramadan?", "ur": "رمضان میں کب سے کب تک روزہ؟", "sw": "Kuanzia lini hadi lini hufungwa Ramadhani?", "ru": "С какого и до какого времени постятся в рамадан?", "ps": "په رمضان کې له کله تر کله روژه نیول کېږي؟" },
+          "options": [
+            { "de": "Von der Morgendämmerung bis zum Sonnenuntergang", "en": "From dawn until sunset", "tr": "Fecirden gün batımına kadar", "ar": "من الفجر إلى غروب الشمس", "es": "Desde el alba hasta la puesta del sol", "fr": "De l'aube au coucher du soleil", "id": "Dari fajar sampai matahari terbenam", "bn": "ভোর থেকে সূর্যাস্ত পর্যন্ত", "fa": "از سپیده‌دم تا غروب", "ms": "Dari fajar hingga matahari terbenam", "ur": "طلوعِ فجر سے غروبِ آفتاب تک", "sw": "Kuanzia alfajiri hadi machweo", "ru": "От рассвета до заката", "ps": "له سهاره تر لمر لوېدو" },
+            { "de": "Von Sonnenaufgang bis Mitternacht", "en": "From sunrise until midnight", "tr": "Gün doğumundan gece yarısına", "ar": "من الشروق إلى منتصف الليل", "es": "Desde el amanecer hasta la medianoche", "fr": "Du lever du soleil à minuit", "id": "Dari terbit matahari sampai tengah malam", "bn": "সূর্যোদয় থেকে মধ্যরাত পর্যন্ত", "fa": "از طلوع آفتاب تا نیمه‌شب", "ms": "Dari matahari terbit hingga tengah malam", "ur": "طلوعِ آفتاب سے آدھی رات تک", "sw": "Kuanzia mawio hadi usiku wa manane", "ru": "От восхода до полуночи", "ps": "له لمر راختو تر نیمې شپې" },
+            { "de": "Volle 24 Stunden", "en": "A full 24 hours", "tr": "Tam 24 saat", "ar": "أربعًا وعشرين ساعة كاملة", "es": "Veinticuatro horas completas", "fr": "24 heures complètes", "id": "Penuh 24 jam", "bn": "পূর্ণ ২৪ ঘণ্টা", "fa": "تمام ۲۴ ساعت", "ms": "Genap 24 jam", "ur": "پورے ۲۴ گھنٹے", "sw": "Saa 24 kamili", "ru": "Полные 24 часа", "ps": "بشپړ ۲۴ ساعته" },
+            { "de": "Nur nachts", "en": "Only at night", "tr": "Yalnız geceleri", "ar": "بالليل فقط", "es": "Solo de noche", "fr": "Seulement la nuit", "id": "Hanya di malam hari", "bn": "কেবল রাতে", "fa": "تنها در شب", "ms": "Hanya pada waktu malam", "ur": "صرف رات کو", "sw": "Usiku tu", "ru": "Только ночью", "ps": "یوازې د شپې" }
+          ]
+        },
+        {
+          "q": { "de": "Was gilt, wenn jemand aus Vergesslichkeit isst?", "en": "What applies if someone eats out of forgetfulness?", "tr": "Unutarak yiyen kimse için ne geçerlidir?", "ar": "ما الحكم إذا أكل أحد ناسيًا؟", "es": "¿Qué ocurre si alguien come por olvido?", "fr": "Que se passe-t-il si l'on mange par oubli ?", "id": "Bagaimana bila seseorang makan karena lupa?", "bn": "কেউ ভুলে খেয়ে ফেললে কী হয়?", "fa": "اگر کسی از روی فراموشی بخورد چه می‌شود؟", "ms": "Bagaimana jika seseorang makan kerana terlupa?", "ur": "اگر کوئی بھول کر کھا لے تو؟", "sw": "Itakuwaje mtu akila kwa kusahau?", "ru": "Что если кто-то поел по забывчивости?", "ps": "که څوک له هېرې وخوري، څه کېږي؟" },
+          "options": [
+            { "de": "Er setzt das Fasten einfach fort", "en": "They simply continue the fast", "tr": "Orucuna devam eder", "ar": "يُتمّ صومه", "es": "Simplemente continúa el ayuno", "fr": "Il poursuit simplement son jeûne", "id": "Ia cukup melanjutkan puasanya", "bn": "সে রোজা চালিয়ে যায়", "fa": "روزه‌اش را ادامه می‌دهد", "ms": "Dia cukup meneruskan puasanya", "ur": "وہ روزہ جاری رکھے", "sw": "Huendelea tu na funga yake", "ru": "Он просто продолжает пост", "ps": "روژه یې دوام لري" },
+            { "de": "Er muss den Tag nachholen und zusätzlich sühnen", "en": "They must make up the day and expiate as well", "tr": "Günü kaza eder ve ayrıca kefaret öder", "ar": "يقضي اليوم ويكفّر", "es": "Debe reponer el día y además expiar", "fr": "Il doit rattraper le jour et expier en plus", "id": "Ia harus mengqada dan membayar kafarat", "bn": "দিনটি কাজা ও কাফফারা দিতে হবে", "fa": "باید آن روز را قضا و کفاره دهد", "ms": "Dia mesti mengqada dan membayar kaffarah", "ur": "دن کی قضا اور کفارہ لازم", "sw": "Ni lazima alipe siku na atoe kafara", "ru": "Он должен восполнить день и искупить", "ps": "ورځ قضا او کفاره ورکوي" },
+            { "de": "Sein Fasten des ganzen Monats ist hinfällig", "en": "Their fast for the whole month is void", "tr": "Bütün ayın orucu boşa gider", "ar": "يبطل صيام الشهر كله", "es": "Su ayuno de todo el mes queda anulado", "fr": "Son jeûne du mois entier est nul", "id": "Puasanya sebulan penuh batal", "bn": "পুরো মাসের রোজা বাতিল", "fa": "روزهٔ همهٔ ماهش باطل است", "ms": "Puasanya sebulan penuh terbatal", "ur": "پورے مہینے کا روزہ باطل", "sw": "Funga ya mwezi mzima inabatilika", "ru": "Его пост за весь месяц аннулируется", "ps": "د ټولې میاشتې روژه یې باطلېږي" },
+            { "de": "Er darf den Rest des Tages essen", "en": "They may eat for the rest of the day", "tr": "Günün kalanında yiyebilir", "ar": "له أن يأكل بقية اليوم", "es": "Puede comer el resto del día", "fr": "Il peut manger le reste de la journée", "id": "Ia boleh makan sisa hari itu", "bn": "সে বাকি দিন খেতে পারে", "fa": "می‌تواند باقی روز را بخورد", "ms": "Dia boleh makan sepanjang baki hari itu", "ur": "باقی دن کھا سکتا ہے", "sw": "Anaweza kula siku iliyobaki", "ru": "Он может есть остаток дня", "ps": "پاتې ورځ خوړلی شي" }
+          ]
+        },
+        {
+          "q": { "de": "Welches Ziel nennt der Koran für das Fasten?", "en": "What purpose does the Quran name for fasting?", "tr": "Kur'an oruç için hangi amacı zikreder?", "ar": "أي غاية ذكرها القرآن للصيام؟", "es": "¿Qué finalidad nombra el Corán para el ayuno?", "fr": "Quel but le Coran assigne-t-il au jeûne ?", "id": "Tujuan apa yang disebut Al-Qur'an bagi puasa?", "bn": "কুরআন রোজার কোন উদ্দেশ্য বলে?", "fa": "قرآن برای روزه چه هدفی می‌گوید؟", "ms": "Apakah tujuan puasa yang disebut Al-Quran?", "ur": "قرآن روزے کا کون سا مقصد بتاتا ہے؟", "sw": "Ni lengo gani Qur'ani inalitaja kwa kufunga?", "ru": "Какую цель поста называет Коран?", "ps": "قرآن د روژې کومه موخه یادوي؟" },
+          "options": [
+            { "de": "„Damit ihr gottesfürchtig werden möget“", "en": "“That you may become mindful of God”", "tr": "„Umulur ki takvâya erersiniz“", "ar": "«لَعَلَّكُمْ تَتَّقُونَ»", "es": "«Para que seáis temerosos de Dios»", "fr": "« Afin que vous atteigniez la piété »", "id": "“Agar kamu bertakwa”", "bn": "“যাতে তোমরা তাকওয়া অর্জন করো”", "fa": "«باشد که پرهیزگار شوید»", "ms": "“Agar kamu bertakwa”", "ur": "”تاکہ تم متقی بن جاؤ“", "sw": "“Ili mpate kumcha Mungu”", "ru": "«Чтобы вы стали богобоязненными»", "ps": "«چې پرهېزګار شئ»" },
+            { "de": "Damit man Gewicht verliert", "en": "So that one loses weight", "tr": "Kilo vermek için", "ar": "لإنقاص الوزن", "es": "Para perder peso", "fr": "Pour perdre du poids", "id": "Agar berat badan turun", "bn": "যাতে ওজন কমে", "fa": "برای کاهش وزن", "ms": "Supaya berat badan turun", "ur": "تاکہ وزن کم ہو", "sw": "Ili kupunguza uzito", "ru": "Чтобы похудеть", "ps": "چې وزن کم شي" },
+            { "de": "Damit die Nächte länger werden", "en": "So that the nights grow longer", "tr": "Geceler uzasın diye", "ar": "لتطول الليالي", "es": "Para que las noches se alarguen", "fr": "Pour que les nuits s'allongent", "id": "Agar malam menjadi panjang", "bn": "যাতে রাত দীর্ঘ হয়", "fa": "تا شب‌ها بلندتر شود", "ms": "Supaya malam menjadi panjang", "ur": "تاکہ راتیں لمبی ہوں", "sw": "Ili usiku uwe mrefu", "ru": "Чтобы ночи стали длиннее", "ps": "چې شپې اوږدې شي" },
+            { "de": "Damit man mehr arbeitet", "en": "So that one works more", "tr": "Daha çok çalışmak için", "ar": "للعمل أكثر", "es": "Para trabajar más", "fr": "Pour travailler davantage", "id": "Agar bekerja lebih banyak", "bn": "যাতে বেশি কাজ হয়", "fa": "برای کار بیشتر", "ms": "Supaya bekerja lebih banyak", "ur": "تاکہ زیادہ کام ہو", "sw": "Ili kufanya kazi zaidi", "ru": "Чтобы больше работать", "ps": "چې ډېر کار وشي" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fiqh-19",
+      "source": "Quran 2:184; Quran 2:185; Quran 2:286; Quran 22:78",
+      "title": {
+        "de": "Ausnahmen, Nachholen und Fidya",
+        "en": "Exemptions, making up and fidyah",
+        "tr": "Ruhsatlar, kaza ve fidye",
+        "ar": "الأعذار والقضاء والفدية",
+        "es": "Excepciones, reposición y fidya",
+        "fr": "Dispenses, rattrapage et fidya",
+        "id": "Keringanan, mengqada dan fidyah",
+        "bn": "ছাড়, কাজা ও ফিদিয়া",
+        "fa": "معافیت‌ها، قضا و فدیه",
+        "ms": "Keringanan, mengqada dan fidyah",
+        "ur": "رخصتیں، قضا اور فدیہ",
+        "sw": "Vibali, kulipa na fidia",
+        "ru": "Освобождения, восполнение и фидья",
+        "ps": "معافۍ، قضا او فدیه"
+      },
+      "story": [
+        { "ref": "fasten-ausnahmen" },
+        { "ref": "fastentage-nachholen-periode" },
+        {
+          "title": {
+            "de": "Fidya - wenn Nachholen nicht mehr möglich ist",
+            "en": "Fidyah - when making up is no longer possible",
+            "tr": "Fidye - kaza artık mümkün değilse",
+            "ar": "الفدية - إذا تعذّر القضاء",
+            "es": "Fidya: cuando ya no es posible reponer",
+            "fr": "Fidya : quand le rattrapage n'est plus possible",
+            "id": "Fidyah - bila mengqada tidak lagi mungkin",
+            "bn": "ফিদিয়া - যখন কাজা আর সম্ভব নয়",
+            "fa": "فدیه - آنگاه که قضا ممکن نیست",
+            "ms": "Fidyah - apabila mengqada tidak lagi mungkin",
+            "ur": "فدیہ - جب قضا ممکن نہ رہے",
+            "sw": "Fidia - pale kulipa hakuwezekani tena",
+            "ru": "Фидья - когда восполнение уже невозможно",
+            "ps": "فدیه - کله چې قضا نور ممکنه نه وي"
+          },
+          "text": {
+            "de": "Der Koran unterscheidet zwei Wege. Wer nur vorübergehend verhindert ist - krank oder auf Reisen -, holt die Tage später nach: „so eine (gleiche) Anzahl von anderen Tagen“. Wer dauerhaft nicht fasten kann, etwa im hohen Alter oder bei einer chronischen Erkrankung, für den nennt derselbe Vers die Fidya: die Speisung eines Bedürftigen für jeden versäumten Tag. Wie viel das heute konkret ist, bemisst sich am ortsüblichen Preis einer Mahlzeit - dafür fragt man am besten die örtliche Moschee oder eine Zakat-Stelle. Wer einen Fastentag ohne Grund absichtlich bricht, hat mehr zu klären als eine Nachholung; auch hier ist der Weg die Rückfrage bei einer Gelehrten oder einem Gelehrten, nicht die eigene Schätzung. Der Grundsatz bleibt derselbe wie überall im Fiqh: Allah legt niemandem mehr auf, als er tragen kann.",
+            "en": "The Quran distinguishes two routes. Whoever is only temporarily prevented - ill or travelling - makes the days up later: “then an equal number of other days”. For whoever permanently cannot fast, for instance in old age or with a chronic illness, the same verse names the fidyah: feeding a person in need for each missed day. How much that is in practice today is measured by the local price of a meal - for that it is best to ask the local mosque or a zakat office. Whoever deliberately breaks a fast day without reason has more to settle than a make-up; here too the way is to ask a scholar, not to estimate for oneself. The principle stays the same as everywhere in fiqh: Allah does not burden anyone beyond their capacity.",
+            "tr": "Kur'an iki yol ayırır. Geçici olarak engelli olan - hasta ya da yolcu - günleri sonra kaza eder: „başka günlerde sayısınca“. Sürekli oruç tutamayan, örneğin ileri yaşta ya da müzmin hastalıkta olan için aynı âyet fidyeyi zikreder: her gün için bir yoksulu doyurmak. Bunun bugün somut karşılığı, yörede bir öğünün fiyatına göre belirlenir; bunun için en iyisi yerel camiye ya da bir zekât kurumuna sormaktır. Bir oruç gününü sebepsiz kasten bozan kimsenin kazadan fazlası vardır; burada da yol kendi tahmini değil, bir âlime sormaktır. İlke fıkhın her yerindeki gibidir: Allah kimseye gücünün üstünde yük yüklemez.",
+            "ar": "يفرّق القرآن بين طريقين. فمن مُنع مؤقّتًا - مريضًا أو مسافرًا - قضى الأيام بعدُ: «فَعِدَّةٌ مِنْ أَيَّامٍ أُخَرَ». وأما من عجز عجزًا دائمًا، ككبير السنّ أو صاحب المرض المزمن، فقد ذكرت له الآية نفسها الفدية: إطعام مسكين عن كل يوم. وأما مقدارها اليوم فيُقاس بسعر وجبة في البلد، والأولى سؤال المسجد المحلي أو جهة الزكاة. ومن أفطر يومًا عمدًا بلا عذر فعليه أكثر من القضاء، والطريق هنا أيضًا سؤال أهل العلم لا التقدير الشخصي. والأصل واحد في الفقه كله: لا يكلّف الله نفسًا إلا وسعها.",
+            "es": "El Corán distingue dos vías. Quien solo está impedido temporalmente - enfermo o de viaje - repone los días después: «un número igual de otros días». Para quien no puede ayunar de forma permanente, por ejemplo por edad avanzada o enfermedad crónica, la misma aleya nombra la fidya: alimentar a un necesitado por cada día perdido. Cuánto es eso hoy se mide por el precio local de una comida; para ello lo mejor es preguntar en la mezquita local o en una oficina de zakat. Quien rompe adrede un día de ayuno sin motivo tiene más que resolver que una reposición; también aquí el camino es preguntar a un sabio, no estimar por cuenta propia. El principio sigue siendo el mismo que en todo el fiqh: Allah no impone a nadie más de lo que puede soportar.",
+            "fr": "Le Coran distingue deux voies. Celui qui n'est empêché que temporairement - malade ou en voyage - rattrape les jours plus tard : « un nombre égal d'autres jours ». Pour celui qui ne peut durablement pas jeûner, par exemple en raison d'un grand âge ou d'une maladie chronique, le même verset nomme la fidya : nourrir un nécessiteux pour chaque jour manqué. Combien cela représente aujourd'hui se mesure au prix local d'un repas ; le mieux est de demander à la mosquée locale ou à un organisme de zakat. Celui qui rompt volontairement un jour de jeûne sans motif a plus à régler qu'un rattrapage ; là encore, la voie est d'interroger un savant, non d'estimer soi-même. Le principe reste le même que partout en fiqh : Allah n'impose à personne plus qu'il ne peut porter.",
+            "id": "Al-Qur'an membedakan dua jalan. Siapa yang terhalang sementara - sakit atau bepergian - mengqada hari-hari itu kemudian: “maka (wajib mengganti) sebanyak hari (yang ditinggalkan) pada hari-hari yang lain”. Bagi yang secara tetap tidak mampu berpuasa, misalnya karena usia lanjut atau penyakit menahun, ayat yang sama menyebut fidyah: memberi makan seorang miskin untuk setiap hari yang ditinggalkan. Berapa nilainya kini diukur dari harga sepiring makanan setempat - untuk itu sebaiknya bertanya kepada masjid setempat atau lembaga zakat. Siapa yang sengaja membatalkan puasa tanpa alasan, urusannya lebih dari sekadar qada; di sini pun jalannya bertanya kepada ulama, bukan menaksir sendiri. Prinsipnya tetap sama seperti di seluruh fikih: Allah tidak membebani seseorang melebihi kesanggupannya.",
+            "bn": "কুরআন দুটি পথ আলাদা করে। যে সাময়িকভাবে বাধাগ্রস্ত - অসুস্থ বা সফরে - সে পরে দিনগুলো কাজা করে: “অন্য দিনগুলোতে সমসংখ্যক”। যে স্থায়ীভাবে রোজা রাখতে অক্ষম, যেমন অতি বৃদ্ধ বা দীর্ঘস্থায়ী রোগী, তার জন্য একই আয়াত ফিদিয়ার কথা বলে: প্রতিটি ছুটে যাওয়া দিনের জন্য একজন অভাবীকে খাওয়ানো। আজকের দিনে তা কত, তা নির্ধারিত হয় স্থানীয় এক বেলা খাবারের দামে - এর জন্য স্থানীয় মসজিদ বা যাকাত সংস্থাকে জিজ্ঞেস করা উত্তম। যে বিনা কারণে ইচ্ছাকৃত রোজা ভাঙে, তার বিষয় কাজার চেয়ে বেশি; এখানেও পথ হলো আলেমকে জিজ্ঞেস করা, নিজে অনুমান করা নয়। মূলনীতি ফিকহের সর্বত্র একই: আল্লাহ কারও উপর তার সাধ্যের বাইরে বোঝা চাপান না।",
+            "fa": "قرآن دو راه را جدا می‌کند. آن که تنها به‌طور موقت بازمانده است - بیمار یا مسافر - روزها را بعداً قضا می‌کند: «شماری از روزهای دیگر». و آن که به‌طور دائم نمی‌تواند روزه بگیرد، مثلاً در کهنسالی یا بیماری مزمن، همان آیه برایش فدیه را می‌گوید: اطعام یک نیازمند برای هر روزِ از دست رفته. اینکه امروز اندازه‌اش چقدر است، به بهای یک وعده غذا در همان شهر سنجیده می‌شود - بهتر است از مسجد محل یا نهاد زکات بپرسند. هر که بی‌عذر و عمداً روزه‌ای را بشکند، کارش بیش از قضاست؛ اینجا نیز راه پرسیدن از اهل علم است نه برآورد شخصی. اصل همان است که در سراسر فقه: خدا هیچ‌کس را بیش از توانش تکلیف نمی‌کند.",
+            "ms": "Al-Quran membezakan dua jalan. Sesiapa yang terhalang sementara - sakit atau bermusafir - mengqada hari-hari itu kemudian: “maka (gantilah) sebanyak hari itu pada hari-hari yang lain”. Bagi yang secara berterusan tidak mampu berpuasa, misalnya kerana usia lanjut atau penyakit kronik, ayat yang sama menyebut fidyah: memberi makan seorang miskin bagi setiap hari yang ditinggalkan. Berapa nilainya kini diukur pada harga satu hidangan setempat - untuk itu eloklah bertanya kepada masjid setempat atau badan zakat. Sesiapa yang sengaja membatalkan puasa tanpa sebab, urusannya lebih daripada sekadar qada; di sini juga jalannya bertanya kepada ulama, bukan menganggar sendiri. Prinsipnya tetap sama seperti di seluruh fiqh: Allah tidak membebani seseorang melebihi kemampuannya.",
+            "ur": "قرآن دو راستے الگ کرتا ہے۔ جو عارضی طور پر معذور ہے - بیمار یا مسافر - وہ دن بعد میں قضا کرے: ”تو دوسرے دنوں میں اتنی ہی گنتی“۔ اور جو مستقل طور پر روزہ نہ رکھ سکے، جیسے انتہائی بڑھاپا یا دائمی بیماری، اسی آیت میں اس کے لیے فدیہ ہے: ہر چھوٹے دن کے بدلے ایک مسکین کو کھانا کھلانا۔ آج اس کی مقدار مقامی طور پر ایک وقت کے کھانے کی قیمت سے متعین ہوتی ہے - اس کے لیے مقامی مسجد یا زکات کے ادارے سے پوچھنا بہتر ہے۔ جو بلا عذر جان بوجھ کر روزہ توڑے، اس کا معاملہ محض قضا سے بڑھ کر ہے؛ یہاں بھی راستہ اہلِ علم سے پوچھنا ہے، اپنا اندازہ نہیں۔ اصول وہی رہتا ہے جو پوری فقہ میں ہے: اللہ کسی پر اس کی طاقت سے زیادہ بوجھ نہیں ڈالتا۔",
+            "sw": "Qur'ani inatofautisha njia mbili. Aliyezuiwa kwa muda tu - mgonjwa au msafiri - hulipa siku hizo baadaye: “basi ni idadi ya siku nyingine”. Kwa asiyeweza kufunga kwa kudumu, kwa mfano kwa uzee au ugonjwa sugu, aya hiyo hiyo inamtajia fidia: kumlisha mhitaji kwa kila siku iliyokosekana. Kiasi chake leo hupimwa kwa bei ya mlo mmoja mahali hapo - kwa hilo ni bora kuuliza msikiti wa karibu au ofisi ya zaka. Anayevunja siku ya funga kwa makusudi bila sababu ana zaidi ya kulipa tu; hapa pia njia ni kuuliza mwanachuoni, si kukadiria mwenyewe. Msingi unabaki ule ule katika fiqhi yote: Mwenyezi Mungu hamkalifishi mtu kuliko uwezo wake.",
+            "ru": "Коран различает два пути. Кто задержан лишь временно - болен или в пути - восполняет дни позже: «то же число других дней». Для того, кто постоянно не может поститься, например в преклонном возрасте или при хронической болезни, тот же аят называет фидью: накормить нуждающегося за каждый пропущенный день. Сколько это сегодня, измеряется местной ценой одной трапезы - об этом лучше спросить в местной мечети или в закятной службе. Кто намеренно и без причины нарушает день поста, тому предстоит уладить больше, чем восполнение; и здесь путь - спросить учёного, а не оценивать самому. Принцип остаётся тем же, что и во всём фикхе: Аллах не возлагает ни на кого сверх его возможностей.",
+            "ps": "قرآن دوه لارې بېلوي. څوک چې یوازې لنډمهاله خنډ لري - ناروغ یا مسافر - ورځې وروسته قضا کوي: «نو د نورو ورځو شمېر». او څوک چې د تل لپاره روژه نه شي نیولی، لکه ډېر زوړ یا د اوږدمهاله ناروغۍ خاوند، همدا آیت ورته فدیه یادوي: د هرې پاتې ورځې لپاره یو بېوزله ته خواړه. دا چې نن یې اندازه څومره ده، د سیمې د یوې وعدې خوړو په بیه سنجول کېږي - غوره ده له سیمه‌ییز جومات یا د زکات له ادارې پوښتنه وشي. څوک چې بې عذره قصداً روژه ماته کړي، کار یې تر قضا زیات دی؛ دلته هم لار له عالم پوښتنه ده نه خپل اټکل. اصل هماغه دی چې په ټوله فقه کې: الله پر هیچا د هغه له وسې زیات بار نه ږدي."
+          }
+        }
+      ],
+      "storyQuiz": [
+        {
+          "q": { "de": "Was macht ein Kranker oder Reisender mit den versäumten Tagen?", "en": "What does a sick person or traveller do with the missed days?", "tr": "Hasta ya da yolcu kaçırdığı günleri ne yapar?", "ar": "ماذا يفعل المريض أو المسافر بالأيام الفائتة؟", "es": "¿Qué hace un enfermo o viajero con los días perdidos?", "fr": "Que fait un malade ou un voyageur des jours manqués ?", "id": "Apa yang dilakukan orang sakit atau musafir dengan hari yang tertinggal?", "bn": "রোগী বা মুসাফির ছুটে যাওয়া দিনগুলো কী করে?", "fa": "بیمار یا مسافر با روزهای از دست رفته چه می‌کند؟", "ms": "Apa yang dibuat orang sakit atau musafir dengan hari yang tertinggal?", "ur": "بیمار یا مسافر چھوٹے دنوں کا کیا کرے؟", "sw": "Mgonjwa au msafiri hufanya nini na siku zilizokosekana?", "ru": "Что делает больной или путник с пропущенными днями?", "ps": "ناروغ یا مسافر له پاتې ورځو سره څه کوي؟" },
+          "options": [
+            { "de": "Er holt sie an anderen Tagen nach", "en": "They make them up on other days", "tr": "Başka günlerde kaza eder", "ar": "يقضيها في أيام أُخر", "es": "Los repone en otros días", "fr": "Il les rattrape d'autres jours", "id": "Ia mengqadanya pada hari lain", "bn": "সে অন্য দিনগুলোতে কাজা করে", "fa": "در روزهای دیگر قضا می‌کند", "ms": "Dia mengqadanya pada hari lain", "ur": "دوسرے دنوں میں قضا کرے", "sw": "Huzilipa katika siku nyingine", "ru": "Он восполняет их в другие дни", "ps": "په نورو ورځو کې یې قضا کوي" },
+            { "de": "Er zahlt in jedem Fall Fidya statt nachzuholen", "en": "They always pay fidyah instead of making up", "tr": "Kaza yerine her hâlde fidye öder", "ar": "يدفع الفدية بدل القضاء دائمًا", "es": "Siempre paga fidya en vez de reponer", "fr": "Il paie toujours la fidya au lieu de rattraper", "id": "Ia selalu membayar fidyah, bukan mengqada", "bn": "সে সর্বদা কাজার বদলে ফিদিয়া দেয়", "fa": "همیشه به‌جای قضا فدیه می‌دهد", "ms": "Dia sentiasa membayar fidyah ganti qada", "ur": "وہ ہمیشہ قضا کے بجائے فدیہ دے", "sw": "Hulipa fidia badala ya kulipa siku", "ru": "Он всегда платит фидью вместо восполнения", "ps": "تل د قضا پر ځای فدیه ورکوي" },
+            { "de": "Sie verfallen ersatzlos", "en": "They lapse without replacement", "tr": "Karşılıksız düşer", "ar": "تسقط بلا بدل", "es": "Se pierden sin sustitución", "fr": "Ils sont perdus sans compensation", "id": "Gugur begitu saja tanpa ganti", "bn": "বিনা বদলে বাতিল হয়ে যায়", "fa": "بی‌جایگزین ساقط می‌شود", "ms": "Gugur begitu sahaja tanpa ganti", "ur": "بغیر بدل کے ساقط ہو جاتے ہیں", "sw": "Huanguka bila badali", "ru": "Они пропадают без возмещения", "ps": "بې بدله ساقطېږي" },
+            { "de": "Er muss den ganzen Ramadan wiederholen", "en": "They must repeat the whole of Ramadan", "tr": "Bütün ramazanı tekrar tutmalıdır", "ar": "يعيد رمضان كله", "es": "Debe repetir todo el Ramadán", "fr": "Il doit refaire tout le Ramadan", "id": "Ia harus mengulang seluruh Ramadan", "bn": "তাকে পুরো রমজান আবার রাখতে হবে", "fa": "باید همهٔ رمضان را از سر بگیرد", "ms": "Dia mesti mengulang seluruh Ramadan", "ur": "پورا رمضان دہرانا ہوگا", "sw": "Ni lazima arudie Ramadhani nzima", "ru": "Он должен повторить весь рамадан", "ps": "باید ټول رمضان بیا ونیسي" }
+          ]
+        },
+        {
+          "q": { "de": "Was ist die Fidya?", "en": "What is the fidyah?", "tr": "Fidye nedir?", "ar": "ما الفدية؟", "es": "¿Qué es la fidya?", "fr": "Qu'est-ce que la fidya ?", "id": "Apa itu fidyah?", "bn": "ফিদিয়া কী?", "fa": "فدیه چیست؟", "ms": "Apakah fidyah?", "ur": "فدیہ کیا ہے؟", "sw": "Fidia ni nini?", "ru": "Что такое фидья?", "ps": "فدیه څه ده؟" },
+          "options": [
+            { "de": "Die Speisung eines Bedürftigen für jeden versäumten Tag", "en": "Feeding a needy person for each missed day", "tr": "Her kaçan gün için bir yoksulu doyurmak", "ar": "إطعام مسكين عن كل يوم", "es": "Alimentar a un necesitado por cada día perdido", "fr": "Nourrir un nécessiteux pour chaque jour manqué", "id": "Memberi makan seorang miskin untuk setiap hari", "bn": "প্রতিটি ছুটে যাওয়া দিনের জন্য একজন অভাবীকে খাওয়ানো", "fa": "اطعام یک نیازمند برای هر روز", "ms": "Memberi makan seorang miskin bagi setiap hari", "ur": "ہر چھوٹے دن کے بدلے ایک مسکین کو کھانا", "sw": "Kumlisha mhitaji kwa kila siku iliyokosekana", "ru": "Кормление нуждающегося за каждый пропущенный день", "ps": "د هرې پاتې ورځې لپاره یو بېوزله ته خواړه" },
+            { "de": "Ein zusätzlicher Fastenmonat", "en": "An extra month of fasting", "tr": "Fazladan bir ay oruç", "ar": "شهر صيام إضافي", "es": "Un mes adicional de ayuno", "fr": "Un mois de jeûne supplémentaire", "id": "Sebulan puasa tambahan", "bn": "অতিরিক্ত এক মাস রোজা", "fa": "یک ماه روزهٔ افزون", "ms": "Sebulan puasa tambahan", "ur": "ایک اضافی ماہ کے روزے", "sw": "Mwezi wa ziada wa kufunga", "ru": "Дополнительный месяц поста", "ps": "یوه زیاتي میاشت روژه" },
+            { "de": "Eine Pflichtabgabe auf Gold", "en": "An obligatory levy on gold", "tr": "Altın üzerinden farz bir vergi", "ar": "زكاة واجبة على الذهب", "es": "Una tasa obligatoria sobre el oro", "fr": "Un prélèvement obligatoire sur l'or", "id": "Pungutan wajib atas emas", "bn": "সোনার উপর ফরজ কর", "fa": "پرداختی واجب بر طلا", "ms": "Cukai wajib ke atas emas", "ur": "سونے پر لازمی ادائیگی", "sw": "Ada ya lazima juu ya dhahabu", "ru": "Обязательный сбор с золота", "ps": "پر سرو زرو فرض ورکړه" },
+            { "de": "Ein zusätzliches Nachtgebet im Ramadan", "en": "An extra night prayer in Ramadan", "tr": "Ramazanda fazladan gece namazı", "ar": "صلاة ليل زائدة في رمضان", "es": "Una oración nocturna extra en Ramadán", "fr": "Une prière nocturne en plus durant le Ramadan", "id": "Salat malam tambahan di Ramadan", "bn": "রমজানে অতিরিক্ত রাতের নামাজ", "fa": "نماز شب افزون در رمضان", "ms": "Solat malam tambahan pada Ramadan", "ur": "رمضان میں اضافی رات کی نماز", "sw": "Swala ya ziada ya usiku Ramadhani", "ru": "Дополнительная ночная молитва в рамадан", "ps": "په رمضان کې زیاتي د شپې لمونځ" }
+          ]
+        },
+        {
+          "q": { "de": "Woran bemisst sich die Höhe der Fidya heute?", "en": "By what is the amount of fidyah measured today?", "tr": "Fidyenin miktarı bugün neye göre belirlenir?", "ar": "بماذا يُقدَّر مقدار الفدية اليوم؟", "es": "¿Según qué se mide hoy la cuantía de la fidya?", "fr": "À quoi se mesure aujourd'hui le montant de la fidya ?", "id": "Berdasarkan apa besaran fidyah diukur hari ini?", "bn": "আজ ফিদিয়ার পরিমাণ কীসের ভিত্তিতে নির্ধারিত হয়?", "fa": "امروز اندازهٔ فدیه با چه سنجیده می‌شود؟", "ms": "Berdasarkan apakah kadar fidyah diukur hari ini?", "ur": "آج فدیے کی مقدار کس سے متعین ہوتی ہے؟", "sw": "Kiasi cha fidia leo hupimwa kwa nini?", "ru": "Чем измеряется размер фидьи сегодня?", "ps": "نن د فدیې اندازه په څه سنجول کېږي؟" },
+          "options": [
+            { "de": "Am ortsüblichen Preis einer Mahlzeit; die Moschee gibt Auskunft", "en": "By the local price of a meal; the mosque gives guidance", "tr": "Yörede bir öğünün fiyatına göre; cami bilgi verir", "ar": "بسعر وجبة في البلد، والمسجد يبيّن ذلك", "es": "Por el precio local de una comida; la mezquita informa", "fr": "Au prix local d'un repas ; la mosquée renseigne", "id": "Pada harga sepiring makanan setempat; masjid memberi keterangan", "bn": "স্থানীয় এক বেলা খাবারের দামে; মসজিদ জানায়", "fa": "به بهای یک وعده غذا در همان شهر؛ مسجد راهنمایی می‌کند", "ms": "Pada harga satu hidangan setempat; masjid memberi keterangan", "ur": "مقامی ایک وقت کے کھانے کی قیمت سے؛ مسجد رہنمائی کرے", "sw": "Kwa bei ya mlo mmoja mahali hapo; msikiti hutoa maelezo", "ru": "Местной ценой одной трапезы; мечеть подскажет", "ps": "د سیمې د یوې وعدې په بیه؛ جومات معلومات ورکوي" },
+            { "de": "An einem weltweit festen Betrag", "en": "By a globally fixed amount", "tr": "Dünya çapında sabit bir miktara göre", "ar": "بمبلغ ثابت عالميًّا", "es": "Por una cantidad fija mundial", "fr": "À un montant fixe mondial", "id": "Pada jumlah tetap sedunia", "bn": "বিশ্বজুড়ে নির্দিষ্ট এক অঙ্কে", "fa": "به مبلغی ثابت در سراسر جهان", "ms": "Pada jumlah tetap sedunia", "ur": "دنیا بھر میں ایک مقررہ رقم سے", "sw": "Kwa kiasi kisichobadilika duniani kote", "ru": "Всемирно фиксированной суммой", "ps": "په نړیواله ټاکلې اندازه" },
+            { "de": "Am Goldpreis des Vorjahres", "en": "By last year's gold price", "tr": "Geçen yılın altın fiyatına göre", "ar": "بسعر الذهب العام الماضي", "es": "Por el precio del oro del año pasado", "fr": "Au cours de l'or de l'an dernier", "id": "Pada harga emas tahun lalu", "bn": "গত বছরের সোনার দামে", "fa": "به بهای طلای سال گذشته", "ms": "Pada harga emas tahun lalu", "ur": "گزشتہ سال کی سونے کی قیمت سے", "sw": "Kwa bei ya dhahabu ya mwaka jana", "ru": "Ценой золота прошлого года", "ps": "د تېر کال د سرو زرو په بیه" },
+            { "de": "An der Zahl der Rakat im Tarawih", "en": "By the number of rak'ahs in tarawih", "tr": "Teravihteki rekât sayısına göre", "ar": "بعدد ركعات التراويح", "es": "Por el número de rakas del tarawih", "fr": "Au nombre de rak'ats du tarawih", "id": "Pada jumlah rakaat tarawih", "bn": "তারাবিহর রাকাত সংখ্যায়", "fa": "به شمار رکعت‌های تراویح", "ms": "Pada bilangan rakaat tarawih", "ur": "تراویح کی رکعتوں کی تعداد سے", "sw": "Kwa idadi ya rakaa za tarawehe", "ru": "Числом ракатов таравиха", "ps": "د تراویحو د رکعتونو په شمېر" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fiqh-20",
+      "source": "Quran 2:184; Quran 2:185; Quran 97:1; Quran 97:3; Quran 97:4; Quran 97:5",
+      "title": {
+        "de": "Freiwilliges Fasten, Lailat al-Qadr und Schawwal",
+        "en": "Voluntary fasting, Laylat al-Qadr and Shawwal",
+        "tr": "Nafile oruç, Kadir Gecesi ve Şevval",
+        "ar": "صيام التطوّع وليلة القدر وشوّال",
+        "es": "Ayuno voluntario, Laylat al-Qadr y Shawwal",
+        "fr": "Jeûne surérogatoire, Laylat al-Qadr et Chawwal",
+        "id": "Puasa sunah, Lailatulqadar dan Syawal",
+        "bn": "নফল রোজা, লাইলাতুল কদর ও শাওয়াল",
+        "fa": "روزهٔ مستحب، شب قدر و شوال",
+        "ms": "Puasa sunat, Lailatulqadar dan Syawal",
+        "ur": "نفلی روزے، شبِ قدر اور شوال",
+        "sw": "Funga za sunna, Laylat al-Qadr na Shawwal",
+        "ru": "Добровольный пост, Ляйлят аль-Кадр и шавваль",
+        "ps": "نفلي روژې، د قدر شپه او شوال"
+      },
+      "story": [{ "ref": "freiwilliges-fasten" }, { "ref": "lailat-al-qadr" }, { "ref": "schawwal" }],
+      "storyQuiz": [
+        {
+          "q": { "de": "In welchem Zeitraum wird Lailat al-Qadr gesucht?", "en": "In which period is Laylat al-Qadr sought?", "tr": "Kadir Gecesi hangi dönemde aranır?", "ar": "في أي مدة تُلتمس ليلة القدر؟", "es": "¿En qué periodo se busca Laylat al-Qadr?", "fr": "Dans quelle période cherche-t-on Laylat al-Qadr ?", "id": "Pada rentang mana Lailatulqadar dicari?", "bn": "লাইলাতুল কদর কোন সময়ে খোঁজা হয়?", "fa": "شب قدر در چه بازه‌ای جسته می‌شود؟", "ms": "Pada tempoh manakah Lailatulqadar dicari?", "ur": "شبِ قدر کس عرصے میں تلاش کی جاتی ہے؟", "sw": "Laylat al-Qadr hutafutwa katika kipindi kipi?", "ru": "В какой период ищут Ляйлят аль-Кадр?", "ps": "د قدر شپه په کومه موده کې لټول کېږي؟" },
+          "options": [
+            { "de": "In den letzten zehn Nächten des Ramadan", "en": "In the last ten nights of Ramadan", "tr": "Ramazanın son on gecesinde", "ar": "في العشر الأواخر من رمضان", "es": "En las últimas diez noches de Ramadán", "fr": "Dans les dix dernières nuits de Ramadan", "id": "Pada sepuluh malam terakhir Ramadan", "bn": "রমজানের শেষ দশ রাতে", "fa": "در ده شب پایانی رمضان", "ms": "Pada sepuluh malam terakhir Ramadan", "ur": "رمضان کے آخری دس راتوں میں", "sw": "Katika kumi za mwisho za Ramadhani", "ru": "В последние десять ночей рамадана", "ps": "د رمضان په وروستیو لسو شپو کې" },
+            { "de": "In den ersten drei Nächten des Ramadan", "en": "In the first three nights of Ramadan", "tr": "Ramazanın ilk üç gecesinde", "ar": "في الليالي الثلاث الأولى من رمضان", "es": "En las tres primeras noches de Ramadán", "fr": "Dans les trois premières nuits de Ramadan", "id": "Pada tiga malam pertama Ramadan", "bn": "রমজানের প্রথম তিন রাতে", "fa": "در سه شب نخست رمضان", "ms": "Pada tiga malam pertama Ramadan", "ur": "رمضان کی پہلی تین راتوں میں", "sw": "Katika usiku tatu wa kwanza wa Ramadhani", "ru": "В первые три ночи рамадана", "ps": "د رمضان په لومړیو درېو شپو کې" },
+            { "de": "Im Monat Schawwal", "en": "In the month of Shawwal", "tr": "Şevval ayında", "ar": "في شهر شوّال", "es": "En el mes de Shawwal", "fr": "Au mois de Chawwal", "id": "Pada bulan Syawal", "bn": "শাওয়াল মাসে", "fa": "در ماه شوال", "ms": "Pada bulan Syawal", "ur": "ماہِ شوال میں", "sw": "Katika mwezi wa Shawwal", "ru": "В месяце шавваль", "ps": "د شوال په میاشت کې" },
+            { "de": "In der Nacht vor dem Opferfest", "en": "On the night before Eid al-Adha", "tr": "Kurban bayramından önceki gecede", "ar": "ليلة عيد الأضحى", "es": "La noche previa a la Fiesta del Sacrificio", "fr": "La nuit précédant l'Aïd al-Adha", "id": "Pada malam sebelum Idul Adha", "bn": "ঈদুল আজহার আগের রাতে", "fa": "شب پیش از عید قربان", "ms": "Pada malam sebelum Aidiladha", "ur": "عید الاضحیٰ سے پہلی رات", "sw": "Usiku kabla ya Idi ya Hija", "ru": "В ночь перед Курбан-байрамом", "ps": "د لوی اختر تر مخه شپه" }
+          ]
+        },
+        {
+          "q": { "de": "Was zeichnet freiwilliges Fasten aus?", "en": "What characterises voluntary fasting?", "tr": "Nafile orucun özelliği nedir?", "ar": "بماذا يتميّز صيام التطوّع؟", "es": "¿Qué caracteriza el ayuno voluntario?", "fr": "Qu'est-ce qui caractérise le jeûne surérogatoire ?", "id": "Apa ciri puasa sunah?", "bn": "নফল রোজার বৈশিষ্ট্য কী?", "fa": "روزهٔ مستحب چه ویژگی دارد؟", "ms": "Apakah ciri puasa sunat?", "ur": "نفلی روزے کی خصوصیت کیا ہے؟", "sw": "Funga ya sunna ina sifa gani?", "ru": "Чем отличается добровольный пост?", "ps": "نفلي روژه څه ځانګړتیا لري؟" },
+          "options": [
+            { "de": "Es ist keine Pflicht; wer es lässt, sündigt nicht", "en": "It is not obligatory; whoever leaves it does not sin", "tr": "Farz değildir; terk eden günaha girmez", "ar": "ليس بواجب، ولا إثم على من تركه", "es": "No es obligatorio; quien lo deja no peca", "fr": "Il n'est pas obligatoire ; celui qui l'omet ne pèche pas", "id": "Bukan kewajiban; yang meninggalkannya tidak berdosa", "bn": "এটি ফরজ নয়; ছেড়ে দিলে গুনাহ নেই", "fa": "واجب نیست؛ ترک‌کننده گناه نمی‌کند", "ms": "Bukan wajib; yang meninggalkannya tidak berdosa", "ur": "یہ فرض نہیں؛ چھوڑنے پر گناہ نہیں", "sw": "Si wajibu; anayeiacha hatendi dhambi", "ru": "Он не обязателен; кто оставил, не грешит", "ps": "فرض نه دی؛ پرېښودونکی ګناه نه کوي" },
+            { "de": "Es ersetzt das Ramadan-Fasten", "en": "It replaces the Ramadan fast", "tr": "Ramazan orucunun yerine geçer", "ar": "يقوم مقام صيام رمضان", "es": "Sustituye el ayuno de Ramadán", "fr": "Il remplace le jeûne de Ramadan", "id": "Menggantikan puasa Ramadan", "bn": "রমজানের রোজার বদলে", "fa": "جانشین روزهٔ رمضان است", "ms": "Menggantikan puasa Ramadan", "ur": "رمضان کے روزے کا بدل", "sw": "Hubadilisha funga ya Ramadhani", "ru": "Он заменяет пост рамадана", "ps": "د رمضان د روژې ځای نیسي" },
+            { "de": "Es ist nur im Ramadan möglich", "en": "It is possible only in Ramadan", "tr": "Yalnız ramazanda mümkündür", "ar": "لا يكون إلا في رمضان", "es": "Solo es posible en Ramadán", "fr": "Il n'est possible qu'en Ramadan", "id": "Hanya mungkin pada Ramadan", "bn": "কেবল রমজানেই সম্ভব", "fa": "تنها در رمضان ممکن است", "ms": "Hanya boleh pada Ramadan", "ur": "صرف رمضان میں ممکن", "sw": "Inawezekana Ramadhani tu", "ru": "Он возможен только в рамадан", "ps": "یوازې په رمضان کې ممکن دی" },
+            { "de": "Es ist für Reisende verboten", "en": "It is forbidden for travellers", "tr": "Yolculara yasaktır", "ar": "محرّم على المسافر", "es": "Está prohibido para los viajeros", "fr": "Il est interdit aux voyageurs", "id": "Terlarang bagi musafir", "bn": "মুসাফিরের জন্য নিষিদ্ধ", "fa": "بر مسافر حرام است", "ms": "Haram bagi musafir", "ur": "مسافر کے لیے ممنوع", "sw": "Ni haramu kwa wasafiri", "ru": "Он запрещён путникам", "ps": "پر مسافر منع دی" }
+          ]
+        },
+        {
+          "q": { "de": "Womit beginnt der Monat Schawwal?", "en": "What does the month of Shawwal begin with?", "tr": "Şevval ayı neyle başlar?", "ar": "بماذا يبدأ شهر شوّال؟", "es": "¿Con qué comienza el mes de Shawwal?", "fr": "Par quoi commence le mois de Chawwal ?", "id": "Bulan Syawal dimulai dengan apa?", "bn": "শাওয়াল মাস কী দিয়ে শুরু হয়?", "fa": "ماه شوال با چه آغاز می‌شود؟", "ms": "Bulan Syawal bermula dengan apa?", "ur": "ماہِ شوال کا آغاز کس سے ہوتا ہے؟", "sw": "Mwezi wa Shawwal huanza na nini?", "ru": "С чего начинается месяц шавваль?", "ps": "د شوال میاشت په څه پیلېږي؟" },
+          "options": [
+            { "de": "Mit dem Fest des Fastenbrechens", "en": "With the festival of breaking the fast", "tr": "Ramazan Bayramı ile", "ar": "بعيد الفطر", "es": "Con la fiesta de la ruptura del ayuno", "fr": "Par la fête de la rupture du jeûne", "id": "Dengan Idulfitri", "bn": "ঈদুল ফিতর দিয়ে", "fa": "با عید فطر", "ms": "Dengan Aidilfitri", "ur": "عید الفطر سے", "sw": "Kwa Idi ya kufungua funga", "ru": "С праздника разговения", "ps": "د کوچني اختر سره" },
+            { "de": "Mit dem Opferfest", "en": "With the festival of sacrifice", "tr": "Kurban Bayramı ile", "ar": "بعيد الأضحى", "es": "Con la Fiesta del Sacrificio", "fr": "Par la fête du sacrifice", "id": "Dengan Iduladha", "bn": "ঈদুল আজহা দিয়ে", "fa": "با عید قربان", "ms": "Dengan Aidiladha", "ur": "عید الاضحیٰ سے", "sw": "Kwa Idi ya Hija", "ru": "С праздника жертвоприношения", "ps": "د لوی اختر سره" },
+            { "de": "Mit der Pilgerfahrt", "en": "With the pilgrimage", "tr": "Hac ile", "ar": "بالحج", "es": "Con la peregrinación", "fr": "Par le pèlerinage", "id": "Dengan ibadah haji", "bn": "হজ দিয়ে", "fa": "با حج", "ms": "Dengan ibadah haji", "ur": "حج سے", "sw": "Kwa hija", "ru": "С паломничества", "ps": "له حج سره" },
+            { "de": "Mit dem islamischen Neujahr", "en": "With the Islamic new year", "tr": "Hicri yılbaşı ile", "ar": "برأس السنة الهجرية", "es": "Con el año nuevo islámico", "fr": "Par le nouvel an islamique", "id": "Dengan tahun baru Islam", "bn": "ইসলামি নববর্ষ দিয়ে", "fa": "با سال نو هجری", "ms": "Dengan tahun baru Islam", "ur": "اسلامی نئے سال سے", "sw": "Kwa mwaka mpya wa Kiislamu", "ru": "С исламского нового года", "ps": "د اسلامي نوي کال سره" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fiqh-21",
+      "source": "Quran 2:43; Quran 2:110; Quran 9:103; Quran 2:261; Quran 57:18; Sahih al-Bukhari 2707",
+      "title": {
+        "de": "Zakat - Pflicht, Nisab und Haul",
+        "en": "Zakat - obligation, nisab and hawl",
+        "tr": "Zekât - farziyet, nisap ve havl",
+        "ar": "الزكاة - الوجوب والنصاب والحول",
+        "es": "El zakat: obligación, nisab y haul",
+        "fr": "La zakat : obligation, nisab et hawl",
+        "id": "Zakat - kewajiban, nisab dan haul",
+        "bn": "যাকাত - ফরজিয়ত, নিসাব ও হাওল",
+        "fa": "زکات - وجوب، نصاب و حول",
+        "ms": "Zakat - kewajipan, nisab dan haul",
+        "ur": "زکات - فرضیت، نصاب اور حول",
+        "sw": "Zaka - wajibu, nisabu na hauli",
+        "ru": "Закят - обязанность, нисаб и хауль",
+        "ps": "زکات - فرضیت، نصاب او حول"
+      },
+      "story": [{ "ref": "zakat" }, { "ref": "sadaqa" }, { "ref": "spenden-und-waqf" }],
+      "storyQuiz": [
+        {
+          "q": { "de": "Wie hoch ist der Zakat-Satz auf Vermögen?", "en": "What is the zakat rate on wealth?", "tr": "Mal üzerindeki zekât oranı nedir?", "ar": "كم مقدار الزكاة في المال؟", "es": "¿Cuál es el tipo del zakat sobre el patrimonio?", "fr": "Quel est le taux de la zakat sur les biens ?", "id": "Berapa kadar zakat atas harta?", "bn": "সম্পদের উপর যাকাতের হার কত?", "fa": "نرخ زکات بر دارایی چقدر است؟", "ms": "Berapakah kadar zakat ke atas harta?", "ur": "مال پر زکات کی شرح کتنی ہے؟", "sw": "Kiwango cha zaka juu ya mali ni kipi?", "ru": "Какова ставка закята с имущества?", "ps": "پر مال د زکات کچه څومره ده؟" },
+          "options": [
+            { "de": "2,5 Prozent", "en": "2.5 percent", "tr": "Yüzde 2,5", "ar": "ربع العشر (٢٫٥٪)", "es": "2,5 por ciento", "fr": "2,5 pour cent", "id": "2,5 persen", "bn": "২.৫ শতাংশ", "fa": "۲٫۵ درصد", "ms": "2.5 peratus", "ur": "ڈھائی فیصد", "sw": "Asilimia 2.5", "ru": "2,5 процента", "ps": "۲٫۵ سلنه" },
+            { "de": "10 Prozent", "en": "10 percent", "tr": "Yüzde 10", "ar": "العشر (١٠٪)", "es": "10 por ciento", "fr": "10 pour cent", "id": "10 persen", "bn": "১০ শতাংশ", "fa": "۱۰ درصد", "ms": "10 peratus", "ur": "دس فیصد", "sw": "Asilimia 10", "ru": "10 процентов", "ps": "۱۰ سلنه" },
+            { "de": "25 Prozent", "en": "25 percent", "tr": "Yüzde 25", "ar": "٢٥٪", "es": "25 por ciento", "fr": "25 pour cent", "id": "25 persen", "bn": "২৫ শতাংশ", "fa": "۲۵ درصد", "ms": "25 peratus", "ur": "پچیس فیصد", "sw": "Asilimia 25", "ru": "25 процентов", "ps": "۲۵ سلنه" },
+            { "de": "1 Prozent", "en": "1 percent", "tr": "Yüzde 1", "ar": "١٪", "es": "1 por ciento", "fr": "1 pour cent", "id": "1 persen", "bn": "১ শতাংশ", "fa": "۱ درصد", "ms": "1 peratus", "ur": "ایک فیصد", "sw": "Asilimia 1", "ru": "1 процент", "ps": "۱ سلنه" }
+          ]
+        },
+        {
+          "q": { "de": "Wie lange muss das Vermögen über dem Nisab liegen?", "en": "How long must the wealth stay above the nisab?", "tr": "Mal ne kadar süre nisabın üstünde kalmalıdır?", "ar": "كم يجب أن يبقى المال فوق النصاب؟", "es": "¿Cuánto debe permanecer el patrimonio por encima del nisab?", "fr": "Combien de temps les biens doivent-ils dépasser le nisab ?", "id": "Berapa lama harta harus berada di atas nisab?", "bn": "সম্পদ কতদিন নিসাবের উপরে থাকতে হবে?", "fa": "دارایی چه مدت باید بالای نصاب بماند؟", "ms": "Berapa lama harta mesti melebihi nisab?", "ur": "مال کتنی مدت نصاب سے اوپر رہنا چاہیے؟", "sw": "Mali lazima ibaki juu ya nisabu kwa muda gani?", "ru": "Сколько имущество должно оставаться выше нисаба?", "ps": "مال باید څومره موده تر نصاب پورته وي؟" },
+          "options": [
+            { "de": "Ein Mondjahr", "en": "One lunar year", "tr": "Bir kamerî yıl", "ar": "حولًا قمريًّا", "es": "Un año lunar", "fr": "Une année lunaire", "id": "Satu tahun hijriah", "bn": "এক চান্দ্র বছর", "fa": "یک سال قمری", "ms": "Satu tahun qamariah", "ur": "ایک قمری سال", "sw": "Mwaka mmoja wa mwezi", "ru": "Один лунный год", "ps": "یو سپوږمیز کال" },
+            { "de": "Einen Monat", "en": "One month", "tr": "Bir ay", "ar": "شهرًا", "es": "Un mes", "fr": "Un mois", "id": "Satu bulan", "bn": "এক মাস", "fa": "یک ماه", "ms": "Satu bulan", "ur": "ایک ماہ", "sw": "Mwezi mmoja", "ru": "Один месяц", "ps": "یوه میاشت" },
+            { "de": "Fünf Jahre", "en": "Five years", "tr": "Beş yıl", "ar": "خمس سنوات", "es": "Cinco años", "fr": "Cinq ans", "id": "Lima tahun", "bn": "পাঁচ বছর", "fa": "پنج سال", "ms": "Lima tahun", "ur": "پانچ سال", "sw": "Miaka mitano", "ru": "Пять лет", "ps": "پنځه کاله" },
+            { "de": "Nur einen Tag", "en": "Just one day", "tr": "Yalnız bir gün", "ar": "يومًا واحدًا", "es": "Solo un día", "fr": "Un seul jour", "id": "Hanya satu hari", "bn": "কেবল একদিন", "fa": "تنها یک روز", "ms": "Hanya satu hari", "ur": "صرف ایک دن", "sw": "Siku moja tu", "ru": "Всего один день", "ps": "یوازې یوه ورځ" }
+          ]
+        },
+        {
+          "q": { "de": "Worin unterscheidet sich Sadaqa von Zakat?", "en": "How does sadaqah differ from zakat?", "tr": "Sadaka zekâttan nasıl ayrılır?", "ar": "بمَ تختلف الصدقة عن الزكاة؟", "es": "¿En qué se diferencia el sadaqa del zakat?", "fr": "En quoi la sadaqa diffère-t-elle de la zakat ?", "id": "Apa beda sedekah dengan zakat?", "bn": "সাদাকা যাকাত থেকে কীভাবে আলাদা?", "fa": "صدقه با زکات چه فرقی دارد؟", "ms": "Apakah beza sedekah dengan zakat?", "ur": "صدقہ زکات سے کیسے مختلف ہے؟", "sw": "Sadaka inatofautianaje na zaka?", "ru": "Чем садака отличается от закята?", "ps": "صدقه له زکات څخه څنګه توپیر لري؟" },
+          "options": [
+            { "de": "Sadaqa ist freiwillig, Zakat ist Pflicht", "en": "Sadaqah is voluntary, zakat is obligatory", "tr": "Sadaka gönüllüdür, zekât farzdır", "ar": "الصدقة تطوّع والزكاة فريضة", "es": "El sadaqa es voluntario, el zakat obligatorio", "fr": "La sadaqa est volontaire, la zakat obligatoire", "id": "Sedekah bersifat sukarela, zakat wajib", "bn": "সাদাকা ঐচ্ছিক, যাকাত ফরজ", "fa": "صدقه داوطلبانه است و زکات واجب", "ms": "Sedekah bersifat sukarela, zakat wajib", "ur": "صدقہ اختیاری، زکات فرض", "sw": "Sadaka ni ya hiari, zaka ni wajibu", "ru": "Садака добровольна, закят обязателен", "ps": "صدقه رضاکاره ده، زکات فرض" },
+            { "de": "Sadaqa ist Pflicht, Zakat freiwillig", "en": "Sadaqah is obligatory, zakat voluntary", "tr": "Sadaka farz, zekât gönüllüdür", "ar": "الصدقة فريضة والزكاة تطوّع", "es": "El sadaqa es obligatorio, el zakat voluntario", "fr": "La sadaqa est obligatoire, la zakat volontaire", "id": "Sedekah wajib, zakat sukarela", "bn": "সাদাকা ফরজ, যাকাত ঐচ্ছিক", "fa": "صدقه واجب است و زکات داوطلبانه", "ms": "Sedekah wajib, zakat sukarela", "ur": "صدقہ فرض، زکات اختیاری", "sw": "Sadaka ni wajibu, zaka ni hiari", "ru": "Садака обязательна, закят добровольный", "ps": "صدقه فرض ده، زکات رضاکاره" },
+            { "de": "Beide sind völlig identisch", "en": "The two are entirely identical", "tr": "İkisi tamamen aynıdır", "ar": "هما سواء تمامًا", "es": "Ambos son idénticos", "fr": "Les deux sont identiques", "id": "Keduanya sama persis", "bn": "দুটো সম্পূর্ণ একই", "fa": "هر دو کاملاً یکسان‌اند", "ms": "Kedua-duanya sama sahaja", "ur": "دونوں بالکل ایک ہیں", "sw": "Vyote viwili ni sawa kabisa", "ru": "Оба полностью одинаковы", "ps": "دواړه بشپړ یو دي" },
+            { "de": "Sadaqa darf nur an Verwandte gehen", "en": "Sadaqah may go only to relatives", "tr": "Sadaka yalnız akrabaya verilir", "ar": "الصدقة للأقارب فقط", "es": "El sadaqa solo puede ir a parientes", "fr": "La sadaqa ne va qu'aux proches", "id": "Sedekah hanya untuk kerabat", "bn": "সাদাকা কেবল আত্মীয়দের", "fa": "صدقه تنها به خویشان می‌رسد", "ms": "Sedekah hanya untuk kaum kerabat", "ur": "صدقہ صرف رشتہ داروں کو", "sw": "Sadaka ni kwa jamaa tu", "ru": "Садака идёт только родственникам", "ps": "صدقه یوازې خپلوانو ته" }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Platzhalter fuer die Tile-Vorschau im Wear-OS-Tile-Karussell-Editor
+     (androidx.wear.tiles.PREVIEW-Meta-Data im Manifest). Ungetestet, siehe
+     ic_tile_launcher.xml. -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="200dp"
+    android:height="200dp"
+    android:viewportWidth="200"
+    android:viewportHeight="200">
+  <path
+      android:fillColor="#0B0B0D"
+      android:pathData="M0,0h200v200h-200z"/>
+  <path
+      android:fillColor="#D4AF37"
+      android:pathData="M100,42c-4,12 -21,29 -21,50c0,18.2 14.8,33 33,33c12.4,0 23.1,-7 28.7,-17.3c1.7,20.2 -14.8,37.9 -37.2,37.9c-25.1,0 -45.4,-20.3 -45.4,-45.4c0,-27.6 23.4,-49.4 41.9,-58.2z"/>
+</vector>

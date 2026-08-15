@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!--
+  Info.plist der watchOS-App.
+
+  @bacons/apple-targets legt diese Datei beim Prebuild nur an, wenn sie NICHT
+  existiert (node_modules/@bacons/apple-targets/build/with-widget.js:
+  `if (!fs.existsSync(filePath))`) — eine eingecheckte Datei bleibt also
+  erhalten. Fuer den Typ "watch" waere der generierte Inhalt ein leeres dict
+  (target.js: getTargetInfoPlistForType("watch") -> {}); alle uebrigen Schluessel
+  (CFBundle*, WKCompanionAppBundleIdentifier, Orientierung) kommen weiterhin
+  ueber GENERATE_INFOPLIST_FILE / INFOPLIST_KEY_*-Build-Settings dazu und
+  duerfen hier NICHT dupliziert werden.
+
+  Der einzige Grund fuer diese Datei: der Kompass der Qibla-Ansicht
+  (WatchHeadingProvider.swift) fragt Standortfreigabe an, um trueHeading statt
+  nur magneticHeading zu bekommen. Ohne diesen Schluessel wuerde die Anfrage
+  wirkungslos verpuffen. Wortlaut identisch zur iPhone-App (app.config.ts,
+  ios.infoPlist.NSLocationWhenInUseUsageDescription).
+-->
+<plist version="1.0">
+<dict>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Salati nutzt deinen Standort, um Gebetszeiten und die Qibla-Richtung für deinen Ort zu berechnen.</string>
+</dict>
+</plist>

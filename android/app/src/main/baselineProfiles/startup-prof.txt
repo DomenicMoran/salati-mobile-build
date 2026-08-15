@@ -1,0 +1,62 @@
+# Startup-Profil - steuert die DEX-Anordnung (AGPs "dex layout optimization").
+#
+# WOZU: Ohne dieses Profil verteilt R8 die Klassen ohne Ruecksicht auf den
+# Startpfad. Gemessen an der Release-APK vom 2026-07-30 lagen MainActivity und
+# MainApplication in classes3.dex - Android musste beim Kaltstart also drei
+# DEX-Dateien oeffnen, bevor es die erste eigene Klasse fand. Mit dem Profil
+# wandern die hier genannten Klassen nach classes.dex.
+#
+# Das ist die Play-Console-Empfehlung "Klassen neu buendeln". Sie braucht KEIN
+# AGP 9: DEX-Layout-Optimierung gibt es seit AGP 8.1 und ist seit 8.3
+# eingeschaltet - AGP meldete beim Bauen sogar selbst, was fehlt:
+#   "Dex optimization based on startup profile is enabled, but there are no
+#    input baseline profiles found in the baselineProfiles sources. You should
+#    add app/src/main/baselineProfiles/startup-prof.txt, for instance."
+#
+# WARUM VON HAND und nicht generiert: der uebliche Weg (Baseline Profile Gradle
+# Plugin + Macrobenchmark-Modul) setzt einen Emulator-Lauf je Build voraus.
+# Hier steht deshalb nur, was beim Start unstrittig gebraucht wird: die beiden
+# Einstiegsklassen aus dem AndroidManifest. Bewusst schmal - die Empfehlung
+# lautet, den Startpfad in EINER DEX-Datei zu halten; ein zu breites Profil
+# kehrt den Gewinn um.
+#
+# KEINE PLATZHALTER: R8 lehnt sie in einem ART-Profil ab und bricht den Build
+# ab ("Unable to parse rule at line N from ART profile"). Anders als in
+# baseline-prof.txt, wo der Task expandArtProfileWildcards sie vorher aufloest,
+# gibt es das fuer startup-prof.txt nicht. Nur exakte Namen.
+#
+# Dass die React- und Expo-Klassen hier fehlen, ist kein Versehen: R8 benennt
+# sie um, sie sind in der fertigen APK unter ihren Originalnamen gar nicht
+# vorhanden. Die Einstiegsklassen bleiben, weil das Manifest sie referenziert -
+# und an ihnen haengt die Startkette.
+#
+# GEGENPROBE nach jedem Release-Build:
+#   node scripts/pruefe-dex-layout.mjs
+#
+# Format: ART-Profil (HRF), eine Regel je Zeile.
+
+# --- Einstiegspunkte aus dem AndroidManifest ---
+Lde/salatibox/de/MainActivity;
+Lde/salatibox/de/MainApplication;
+
+# --- Die Startkette, wie sie im Quelltext der beiden Klassen steht
+#     (Importe von MainApplication.kt und MainActivity.kt, 1:1 uebernommen -
+#     nicht geraten). Ohne diese Klassen kommt kein erster Frame zustande. ---
+Lcom/facebook/react/ReactApplication;
+Lcom/facebook/react/ReactActivity;
+Lcom/facebook/react/ReactActivityDelegate;
+Lcom/facebook/react/ReactHost;
+Lcom/facebook/react/ReactPackage;
+Lcom/facebook/react/PackageList;
+Lcom/facebook/react/ReactNativeApplicationEntryPoint;
+Lcom/facebook/react/common/ReleaseLevel;
+Lcom/facebook/react/defaults/DefaultNewArchitectureEntryPoint;
+Lcom/facebook/react/defaults/DefaultReactActivityDelegate;
+Lexpo/modules/ApplicationLifecycleDispatcher;
+Lexpo/modules/ExpoReactHostFactory;
+Lexpo/modules/ReactActivityDelegateWrapper;
+Lexpo/modules/splashscreen/SplashScreenManager;
+
+# --- Eigene Native-Pakete, die MainApplication beim Start registriert ---
+Lde/salatibox/de/alarm/ExactAlarmPackage;
+Lde/salatibox/de/wear/WearSyncPackage;

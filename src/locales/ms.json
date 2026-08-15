@@ -1,0 +1,2730 @@
+{
+  "nav": {
+    "prayerTimes": "Solat",
+    "qibla": "Kiblat",
+    "quran": "Al-Quran",
+    "calendar": "Kalendar",
+    "duas": "Doa",
+    "settings": "Tetapan",
+    "more": "Lagi",
+    "hadith": "Hadis",
+    "mosques": "Masjid",
+    "learn": "Belajar Membaca Al-Quran",
+    "quiz": "Latihan & Kuiz",
+    "hifz": "Tilawah",
+    "tasbih": "Tasbih",
+    "guides": "Solat & Amalan",
+    "phrases": "Ungkapan & khutbah",
+    "wisdom": "Hikmah",
+    "tracker": "Penjejak Solat",
+    "khatmah": "Rancangan Khatam",
+    "names": "99 Nama Allah",
+    "fasting": "Puasa",
+    "zakat": "Kalkulator Zakat",
+    "zakatFitr": "Kalkulator Zakat Fitrah",
+    "mirath": "Kalkulator Faraid",
+    "hijriConverter": "Penukar Tarikh",
+    "halal": "Halal Berdekatan",
+    "halalScanner": "Pengimbas Halal",
+    "study": "Kajian",
+    "sync": "Segerak",
+    "impressum": "Notis Undang-undang",
+    "datenschutz": "Dasar Privasi",
+    "agb": "Terma Penggunaan",
+    "changelog": "Apa Baharu",
+    "tvConnect": "Sambung TV",
+    "home": "Utama",
+    "radio": "Radio Al-Quran",
+    "themes": "Ayat Bertema",
+    "achievements": "Lencana",
+    "journeys": "Pelan Harian",
+    "search": "Cari",
+    "gettingStarted": "Langkah Pertama",
+    "lernen": "Belajar",
+    "media": "Media",
+    "lizenzen": "Sumber & lesen"
+  },
+  "common": {
+    "openSettings": "Buka tetapan sistem",
+    "continue": "Teruskan",
+    "clearSearch": "Kosongkan carian",
+    "openQuran": "Pergi ke al-Quran",
+    "loading": "Memuatkan…",
+    "error": "Sesuatu tidak kena.",
+    "offline": "Luar talian - data terakhir yang disimpan dipaparkan.",
+    "retry": "Cuba lagi",
+    "done": "Selesai",
+    "cancel": "Batal",
+    "save": "Simpan",
+    "reset": "Tetapkan semula",
+    "recommended": "Disyorkan",
+    "search": "Cari…",
+    "locating": "Mencari lokasi…",
+    "useLocation": "Gunakan lokasi semasa",
+    "refresh": "Segar semula",
+    "dismiss": "Tutup",
+    "credit": "Dibangunkan oleh Domenic Moran",
+    "new": "Baharu"
+  },
+  "quran": {
+    "surahN": "Surah {n}",
+    "surahs": "Surah",
+    "juz": "Juzuk",
+    "juzItem": "Juzuk",
+    "verse": "Ayat",
+    "verses": "ayat",
+    "searchPlaceholder": "Cari surah…",
+    "continueReading": "Sambung membaca",
+    "recentlyRead": "Baru dibaca",
+    "bookmarks": "Penanda halaman",
+    "noBookmarks": "Belum ada penanda halaman - ketik ⊕ di sebelah ayat dalam Pembaca.",
+    "listError": "Senarai surah tidak dapat dimuatkan.",
+    "loadError": "Surah tidak dapat dimuatkan.",
+    "playSurah": "Mainkan surah",
+    "pause": "Jeda",
+    "playbackSpeed": "Kelajuan main balik",
+    "chooseReciter": "Pilih qari",
+    "chooseTranslation": "Pilih terjemahan",
+    "tafsir": "Tafsir",
+    "chooseTafsir": "Pilih tafsir",
+    "notePlaceholder": "Nota peribadi untuk ayat ini …",
+    "noteLabel": "Nota saya",
+    "transliteration": "Transliterasi",
+    "isolatedLetters": "Huruf terasing",
+    "tajweed": "Warna tajwid",
+    "tajweedLegend": {
+      "ghunnah": "Ghunnah (bunyi dengung)",
+      "idgham": "Idgham (peleburan)",
+      "ikhafa": "Ikhfa (penyamaran)",
+      "iqlab": "Iqlab (penukaran)",
+      "qalqalah": "Qalqalah (bunyi pantulan)",
+      "madd": "Mad (pemanjangan)",
+      "silent": "Huruf senyap"
+    },
+    "wordInfo": {
+      "title": "Maklumat perkataan",
+      "translationLabel": "Maksud",
+      "translationLanguageNote": "Maksud kata demi kata kini hanya tersedia dalam bahasa Inggeris.",
+      "pronunciationLabel": "Mengapa disebut begini?",
+      "lettersLabel": "Huruf",
+      "rootNote": "Kata akar tidak tersedia buat masa ini (tiada sumber yang boleh dipercayai).",
+      "noData": "Tiada data tersedia untuk perkataan ini buat masa ini. Semak sambungan internet anda.",
+      "rules": {
+        "ghunnah": "Ghunnah: bunyi dengung yang disebut melalui hidung selama kira-kira dua harakat.",
+        "idghamGhunnah": "Idgham dengan ghunnah: huruf melebur ke nun/mim seterusnya disertai bunyi dengung.",
+        "idghamNoGhunnah": "Idgham tanpa ghunnah: huruf melebur sepenuhnya ke huruf seterusnya, tanpa bunyi dengung.",
+        "ikhafa": "Ikhfa: nun/tanwin disebut secara samar - tidak jelas dan tidak melebur sepenuhnya.",
+        "iqlab": "Iqlab: nun/tanwin bertukar menjadi bunyi mim sebelum huruf ba.",
+        "qalqalah": "Qalqalah: huruf ق ط ب ج د menghasilkan pantulan bunyi yang ringkas apabila bersukun, terutamanya semasa berhenti di hujung perkataan.",
+        "madd": "Mad: vokal dipanjangkan, 2 hingga 6 harakat bergantung pada kaedahnya.",
+        "sunLetter": "Kaedah huruf syamsiah: 'L' pada al- tidak disebut, huruf seterusnya digandakan (syaddah) sebagai gantinya.",
+        "hamzatWasl": "Hamzah wasal: hanya disebut pada awal bacaan, dilangkau secara senyap apabila disambung dari perkataan sebelumnya.",
+        "silentLetter": "Huruf senyap: ditulis tetapi tidak disebut."
+      }
+    },
+    "wordByWord": "Kata demi kata",
+    "offline": "Luar talian",
+    "download": "Muat turun",
+    "searchAyahs": "Cari Ayat",
+    "searchAyahsPlaceholder": "Masukkan perkataan atau topik…",
+    "searchResultsCount": "{count} keputusan",
+    "searchNoResults": "Tiada keputusan untuk \"{query}\".",
+    "searchError": "Carian gagal.",
+    "searchArabicNote": "Carian Arab memadankan teks secara literal - bentuk terbitan (cth. \"اصبر\" bukannya \"صبر\") dikira sebagai keputusan berasingan.",
+    "loadMore": "Muat lagi",
+    "tafsirCount": "{count} tafsir",
+    "tafsirMultiHint": "Pilih sehingga 3 sekali gus - ketik untuk pilih/batal pilih.",
+    "viewSettings": "Paparan & main balik",
+    "rangeTitle": "Mainkan sebahagian",
+    "rangeFrom": "Dari ayat",
+    "rangeTo": "Hingga ayat",
+    "rangeLoop": "Ulang",
+    "rangePlay": "Mainkan bahagian",
+    "rangeSelectSurah": "Pilih surah",
+    "rangeCrossSurahHint": "Main balik merangkumi beberapa surah.",
+    "focusMode": "Mod fokus",
+    "beginnerMode": "Belajar membaca",
+    "focusExit": "Keluar daripada mod fokus",
+    "sepia": "Sepia",
+    "mushafTitle": "Mashaf",
+    "mushafPage": "Halaman",
+    "mushafUthmani": "Uthmani",
+    "mushafIndopak": "IndoPak",
+    "mushafFontFallback": "IndoPak memerlukan huruf yang tiada pada fon anda – dipaparkan dengan {{font}}.",
+    "mushafGoTo": "Pergi",
+    "mushafNext": "Halaman seterusnya",
+    "mushafPrev": "Halaman sebelumnya",
+    "mushafOpen": "Paparan Mashaf",
+    "pageMode": "Mod halaman",
+    "mushafDesc": "Membaca mengikut halaman seperti mashaf cetak",
+    "shareImage": "Kongsi sebagai imej",
+    "reciteCheck": "Semak bacaan",
+    "labelAll": "Semua",
+    "labels": {
+      "favorite": "Kegemaran",
+      "memorize": "Hafazan",
+      "reflect": "Renungan"
+    },
+    "searchInSurah": "Cari dalam surah …",
+    "searchNext": "Keputusan seterusnya",
+    "copyVerse": "Salin ayat",
+    "mushafWordInfo": "Maklumat perkataan",
+    "followAlong": "Ikuti bacaan",
+    "translation": "Terjemahan",
+    "fontSize": "Saiz fon",
+    "mushafPlayAyah": "Dengar ayat",
+    "khatmahGoTo": "Ke halaman hari ini",
+    "secondTranslation": "Terjemahan kedua",
+    "chooseSecondTranslation": "Pilih terjemahan kedua",
+    "tajweedPracticeHint": "Ketik kaedah untuk serlahkan seketika semua kemunculannya pada halaman ini.",
+    "mushafPlayPage": "Mainkan halaman",
+    "history": {
+      "title": "Sejarah",
+      "empty": "Belum ada ayat dibaca - surah yang baru dibaca akan muncul di sini.",
+      "justNow": "Baru sahaja",
+      "minutesAgo": "{n} minit lalu",
+      "hoursAgo": "{n} jam lalu",
+      "yesterday": "Semalam",
+      "daysAgo": "{n} hari lalu"
+    },
+    "tafsirMore": "Tunjukkan lagi",
+    "tafsirLess": "Tunjukkan kurang",
+    "sajdaTitle": "Ayat sajdah",
+    "sajdaHintObligatory": "Menurut pandangan yang paling meluas, sujud (sajdah) adalah wajib di tempat ini.",
+    "sajdaHintRecommended": "Sujud (sajdah) digalakkan semasa membaca ayat ini.",
+    "compareReciters": "Bandingkan qari",
+    "compareHint": "Akan memainkan {verse} berturut-turut dengan dua qari.",
+    "compareReciterA": "Qari A",
+    "compareReciterB": "Qari B",
+    "comparePlay": "Mainkan A → B",
+    "compareStageA": "Qari A …",
+    "compareStageB": "Qari B …",
+    "compareLoadError": "Audio tidak dapat dimuatkan.",
+    "chooseReciterA": "Pilih qari A",
+    "chooseReciterB": "Pilih qari B"
+  },
+  "hadith": {
+    "languagesNote": "Ensiklopedia hadis nabawi terjemahan — dalam kesemua 14 bahasa apl",
+    "loadError": "Koleksi tidak dapat dimuatkan.",
+    "backToBooks": "Kembali ke bab",
+    "itemLoadError": "Hadis tidak dapat dimuatkan.",
+    "reference": "Kitab {book}, Hadis {hadith}",
+    "today": "Hadis hari ini",
+    "todaySource": "An-Nawawi 40, No. {n}",
+    "searchTitle": "Carian Hadis",
+    "searchAllHint": "Mencari dalam kesemua 13 koleksi - sekurang-kurangnya 3 aksara",
+    "searchPlaceholder": "Kata carian …",
+    "searchedProgress": "{x}/{y} koleksi dicari",
+    "resultsCount": "{n} keputusan",
+    "noResults": "Tiada keputusan dijumpai",
+    "shareText": "Kongsi hadis",
+    "shareImage": "Kongsi sebagai imej",
+    "topicsTitle": "Mengikut tema",
+    "topicsSubtitle": "Ensiklopedia Hadis Nabawi Terjemahan — dalam kesemua 14 bahasa apl",
+    "topicsCount": "{n} hadis tersedia dalam bahasa anda",
+    "topicsSource": "Sumber: HadeethEnc.com — dipaparkan tanpa perubahan",
+    "topicsEmpty": "Belum ada hadis dalam bahasa anda untuk tema ini.",
+    "explanation": "Penjelasan",
+    "benefits": "Faedah"
+  },
+  "search": {
+    "globalTitle": "Carian global",
+    "title": "Carian",
+    "placeholder": "Al-Quran, Hadis, doa, kursus…",
+    "hint": "Masukkan sekurang-kurangnya 2 aksara",
+    "noResults": "Tiada hasil untuk \"{query}\"",
+    "sectionQuran": "Al-Quran",
+    "sectionHadith": "Hadis",
+    "sectionDuas": "Doa",
+    "sectionCourses": "Kursus",
+    "moreDesc": "Cari Al-Quran, Hadis, doa dan kursus serentak"
+  },
+  "share": {
+    "action": "Kongsi",
+    "dialogTitle": "Kongsi sebagai imej",
+    "linkFooter": "Dikongsi daripada aplikasi Salati",
+    "linkCopiedHint": "Pautan disalin ke papan keratan – tampal semasa berkongsi",
+    "courseComplete": {
+      "cardTitle": "Kursus selesai!",
+      "cardSubtitle": "{n} pelajaran dikuasai",
+      "shareCta": "Kongsi pencapaian"
+    }
+  },
+  "duas": {
+    "offlineNote": "Tersedia sepenuhnya secara luar talian",
+    "countOne": "1 doa",
+    "countMany": "{n} doa",
+    "shareText": "Kongsi doa",
+    "shareImage": "Kongsi sebagai imej"
+  },
+  "learn": {
+    "title": "Belajar Membaca Al-Quran",
+    "subtitle": "Dari abjad hingga surah pertama - langkah demi langkah",
+    "locked": "Berkunci - selesaikan pelajaran sebelumnya dahulu",
+    "start": "Mula",
+    "back": "Kembali",
+    "next": "Seterusnya",
+    "startQuiz": "Mula kuiz",
+    "passed": "Lulus! Pelajaran seterusnya telah dibuka.",
+    "failed": "Sekurang-kurangnya 70% betul untuk lulus - cuba lagi.",
+    "retry": "Cuba lagi",
+    "backToCourse": "Ke senarai kursus",
+    "phaseRead": "Belajar membaca",
+    "deepenCta": "Lebih banyak kursus kajian",
+    "deepenCtaDesc": "Akidah, sejarah, fiqh dan dialek dalam bahagian Kajian",
+    "lessonTitles": {
+      "letters-1": "Abjad 1 · ا ب ت ث",
+      "letters-2": "Abjad 2 · ج ح خ د",
+      "letters-3": "Abjad 3 · ذ ر ز س",
+      "letters-4": "Abjad 4 · ش ص ض ط",
+      "letters-5": "Abjad 5 · ظ ع غ ف",
+      "letters-6": "Abjad 6 · ق ك ل م",
+      "letters-7": "Abjad 7 · ن ه و ي",
+      "similar": "Membezakan huruf yang serupa",
+      "forms-1": "Bentuk sambungan 1",
+      "forms-2": "Bentuk sambungan 2",
+      "forms-3": "Bentuk sambungan 3",
+      "fatha": "Fathah - bunyi a",
+      "kasra": "Kasrah - bunyi i",
+      "damma": "Dhommah - bunyi u",
+      "tanwin": "Tanwin - an, in, un",
+      "sukun": "Sukun - tanpa vokal",
+      "shadda": "Syaddah - penggandaan",
+      "madd": "Vokal panjang (Mad)",
+      "hamza-extras": "Hamzah & tanda khas",
+      "sun-moon": "Huruf syamsiah dan qamariah",
+      "words-1": "Membaca perkataan pertama",
+      "words-2": "Perkataan daripada Al-Quran",
+      "reading-fatiha": "Membaca Al-Fatihah",
+      "reading-ikhlas": "Membaca Al-Ikhlas",
+      "vocab-1": "Perbendaharaan Kata Al-Quran 1",
+      "vocab-2": "Perbendaharaan Kata Al-Quran 2",
+      "vocab-3": "Perbendaharaan Kata Al-Quran 3",
+      "vocab-4": "Perbendaharaan Kata Al-Quran 4",
+      "vocab-5": "Perbendaharaan Kata Al-Quran 5",
+      "vocab-6": "Perbendaharaan Kata Al-Quran 6",
+      "vocab-7": "Perbendaharaan Kata Al-Quran 7",
+      "vocab-8": "Perbendaharaan Kata Al-Quran 8",
+      "vocab-9": "Perbendaharaan Kata Al-Quran 9",
+      "vocab-10": "Perbendaharaan Kata Al-Quran 10",
+      "vocab-11": "Perbendaharaan Kata Al-Quran 11",
+      "reading-fatiha-deep": "Al-Fatihah - kata demi kata",
+      "salah-words-1": "Perkataan solat: Takbir & pembukaan",
+      "salah-words-2": "Perkataan solat: Rukuk & sujud",
+      "salah-words-3": "Perkataan solat: Tasyahud & selawat",
+      "salah-words-4": "Perkataan solat: Salam & penutup",
+      "reading-falaq": "Membaca: Al-Falaq",
+      "reading-nas": "Membaca: An-Nas"
+    },
+    "concepts": {
+      "similar": "Banyak huruf Arab berkongsi bentuk asas yang sama (cth. ب ت ث) dan hanya berbeza pada bilangan dan kedudukan titik di atas atau di bawahnya. Satu titik lebih atau kurang menghasilkan huruf yang sama sekali berbeza - jadi perhatian teliti penting sejak awal.",
+      "forms": "Huruf Arab ditulis bersambung, seakan tulisan tangan bersambung. Bentuknya berubah mengikut kedudukan dalam perkataan: berasingan (sendiri), pada awal perkataan, di tengah perkataan dan pada akhir perkataan - sentiasa dibaca dan ditulis dari kanan ke kiri.",
+      "nonConnector": "Sesetengah huruf (cth. ا د ذ ر ز و) hanya bersambung ke kanan, bukan ke kiri. Selepas huruf sebegini, huruf seterusnya dalam perkataan kembali kepada bentuk berasingan atau bentuk awalnya - ini dapat dikenali melalui jurang kecil pada bentuk perkataan.",
+      "fatha": "Fathah (ـَ) ialah garis condong kecil DI ATAS huruf dan menghasilkan bunyi a pendek, cth. بَ = ba. Ia vokal yang paling kerap muncul dalam Al-Quran.",
+      "kasra": "Kasrah (ـِ) ialah garis condong kecil DI BAWAH huruf dan menghasilkan bunyi i pendek, cth. بِ = bi.",
+      "damma": "Dhommah (ـُ) ialah tanda kecil berbentuk و DI ATAS huruf dan menghasilkan bunyi u pendek, cth. بُ = bu.",
+      "tanwinFatha": "Tanwin ialah akhiran vokal berganda dalam bahasa Arab yang menandakan perkataan itu tidak tentu (seperti 'sebuah' dalam bahasa Melayu). Fathatain (ـً) pada akhir perkataan berbunyi -an, cth. كِتَابًا (kitāban) = 'sebuah buku'.",
+      "tanwinKasra": "Kasratain (ـٍ) pada akhir perkataan berbunyi -in dan juga menandakan ketidaktentuan, cth. خَيْرٍ (khayrin) = 'suatu kebaikan'.",
+      "tanwinDamma": "Dhommatain (ـٌ) pada akhir perkataan berbunyi -un dan menandakan ketidaktentuan, cth. نُورٌ (nūrun) = 'sebuah cahaya'.",
+      "sukun": "Sukun (bulatan kecil ـْ di atas huruf) bermaksud: tiada vokal - huruf disebut tanpa vokal dan menutup suku kata, cth. قَدْ (qad).",
+      "shadda": "Syaddah (tanda kecil berbentuk w ـّ di atas huruf) menggandakan huruf: disebut dengan tekanan dan lebih panjang, cth. رَبَّ (rabba), bukan raba.",
+      "maddAlif": "Alif (ا) selepas fathah memanjangkan bunyi a kepada kira-kira dua kali panjangnya: ā, cth. قَالَ (qāla). Pemanjangan ini adalah sebahagian tetap daripada bacaan yang betul (tajwid).",
+      "maddWaw": "Wau (و) selepas dhommah memanjangkan bunyi u kepada kira-kira dua kali panjangnya: ū, cth. نُور (nūr).",
+      "maddYa": "Ya (ي) selepas kasrah memanjangkan bunyi i kepada kira-kira dua kali panjangnya: ī, cth. دِين (dīn).",
+      "hamza": "Hamzah (ء) ialah hentian glotis - dalam bahasa Melayu boleh dirasai seperti jeda pada perkataan 'ta'at'. Ia boleh berdiri sendiri atau menumpang pada alif, wau, atau ya.",
+      "hamzaAlif": "Jika hamzah berada di atas alif (أ), diikuti bunyi a atau u pada awal perkataan. Jika di bawah alif (إ), diikuti bunyi i.",
+      "taMarbuta": "Ta marbutah (ة) hanya berada pada akhir perkataan, biasanya pada kata nama feminin. Semasa berhenti (waqaf) ia berbunyi -a, semasa disambung dengan perkataan seterusnya berbunyi -at.",
+      "alifMaqsura": "Alif maqsurah (ى) kelihatan seperti ya tanpa titik, tetapi disebut seperti alif biasa iaitu ā panjang - jangan keliru dengan bunyi ya.",
+      "lamAlif": "Lam (ل) dan alif (ا) melebur menjadi ligatur tersendiri لا (lā) dalam bahasa Arab - kedua-dua huruf ditulis menyatu, namun sangat kerap muncul (cth. dalam perkataan 'tidak', lā).",
+      "sunLetters": "Terdapat 14 huruf syamsiah: ت ث د ذ ر ز س ش ص ض ط ظ ل ن. Jika salah satunya mengikuti kata sandang 'al-', huruf L melebur sepenuhnya dengannya dan digandakan (syaddah) - L tidak disebut. Contoh: al-shams menjadi asy-syams, al-nūr menjadi an-nūr.",
+      "moonLetters": "14 huruf lain dipanggil huruf qamariah: ء ب ج ح خ ع غ ف ق ك م ه و ي. Selepas huruf-huruf ini, huruf L pada kata sandang 'al-' tetap jelas kedengaran, tiada peleburan berlaku. Contoh: al-qamar, al-kitāb, al-bayt.",
+      "wordByWordRecap": "Sekarang baca keseluruhan ayat sekali gus - semua perkataan yang baru sahaja anda pelajari satu demi satu, bersama-sama membentuk ayat yang lengkap."
+    },
+    "quiz": {
+      "nameOfLetter": "Apakah nama huruf ini?",
+      "glyphOfLetter": "Tanda manakah yang sepadan dengan nama ini?",
+      "formInitial": "Bagaimanakah bentuk huruf ini pada awal perkataan?",
+      "formMedial": "Bagaimanakah bentuk huruf ini di tengah perkataan?",
+      "formFinal": "Bagaimanakah bentuk huruf ini pada akhir perkataan?",
+      "readSyllable": "Bagaimanakah ini dibaca?",
+      "readWord": "Bagaimanakah perkataan ini dibaca?",
+      "readAyah": "Bagaimanakah ayat ini dibaca?",
+      "meaningOfWord": "Apakah maksud perkataan ini?",
+      "soundOfLetter": "Huruf apakah ini? (dengar)"
+    },
+    "tapToListen": "Ketik untuk mendengar",
+    "contentFallbackNotice": "Belum diterjemahkan ke bahasa anda – dipaparkan dalam bahasa Inggeris.",
+    "placementCta": "Ujian penempatan",
+    "placementCtaDesc": "Sudah tahu huruf atau lebih? Terus mula dari bahagian lebih maju",
+    "practicePronunciation": "Latih sebutan",
+    "listening": "Mendengar…",
+    "pronunciationGood": "Sebutan yang bagus!",
+    "pronunciationRetry": "Cuba lagi",
+    "placementRepeatCta": "Ujian pengetahuan",
+    "placementRepeatDesc": "Uji semula semua pencapaian - kemajuan anda sentiasa kekal tersimpan",
+    "easeVerse": {
+      "arabic": "وَلَقَدْ يَسَّرْنَا الْقُرْآنَ لِلذِّكْرِ فَهَلْ مِن مُّدَّكِرٍ",
+      "title": "Al-Quran mudah dipelajari",
+      "translation": "Dan sesungguhnya Kami telah mudahkan Al-Quran untuk peringatan, maka adakah sesiapa yang mahu mengambil peringatan?",
+      "reference": "Surah Al-Qamar (54), ayat 17 - diulang pada ayat 22, 32 dan 40",
+      "explanation": "Ibnu Kathir menjelaskan bahawa Allah telah memudahkan pembacaan, hafazan dan pemahaman Al-Quran bagi sesiapa yang berusaha dengan ikhlas, tanpa mengira usia atau bahasa. Yang diperlukan hanyalah langkah pertama dan sedikit usaha."
+    },
+    "nextLesson": "Pelajaran seterusnya",
+    "podcastIntro": "Podcast untuk fasa ini",
+    "podcastOptional": "Pilihan — dengar dahulu atau terus mula",
+    "videoIntro": "Video untuk fasa ini",
+    "videoOptional": "Pilihan – tonton atau terus mula",
+    "tableView": "Lihat jadual",
+    "tableViewDesc": "Jadual tatabahasa untuk rujukan"
+  },
+  "practice": {
+    "title": "Latihan & Kuiz",
+    "subtitle": "Pilih apa yang ingin anda latih - secara santai dengan skor terbaik dan jujukan",
+    "streakDays": "jujukan hari",
+    "streakJokerUsed": "Joker digunakan",
+    "playAgain": "Main lagi",
+    "backToHub": "Kembali ke ringkasan",
+    "bestStreak": "Jujukan terbaik",
+    "quiz": {
+      "connectsLeft": "Adakah huruf ini bersambung ke kiri (ke huruf seterusnya)?",
+      "whichNonConnector": "Huruf manakah yang TIDAK bersambung ke kiri?",
+      "isSunLetter": "Adakah ini huruf syamsiah?"
+    },
+    "modes": {
+      "letters": {
+        "title": "Kuiz huruf",
+        "desc": "Nama dan tanda kesemua 28 huruf"
+      },
+      "forms": {
+        "title": "Kuiz bentuk",
+        "desc": "Mengenali bentuk awal, tengah dan akhir"
+      },
+      "connections": {
+        "title": "Kuiz sambungan",
+        "desc": "Huruf manakah yang bersambung?"
+      },
+      "harakat": {
+        "title": "Kuiz harakat",
+        "desc": "Membaca suku kata dengan fathah, kasrah dan dhommah"
+      },
+      "words": {
+        "title": "Kuiz perkataan",
+        "desc": "Membaca perkataan sebenar daripada kursus"
+      },
+      "rules": {
+        "title": "Kuiz kaedah",
+        "desc": "Huruf syamsiah/qamariah dan vokal panjang"
+      },
+      "knowledge": {
+        "title": "Pengetahuan Islam",
+        "desc": "Rukun, solat, perayaan dan banyak lagi"
+      },
+      "quran": {
+        "title": "Kuiz Al-Quran",
+        "desc": "Surah, ayat dan fakta tentang Al-Quran"
+      },
+      "mix": {
+        "title": "Campuran",
+        "desc": "Soalan rawak daripada semua kategori"
+      },
+      "seerah": {
+        "title": "Kuiz sirah",
+        "desc": "Kehidupan dan riwayat Nabi Muhammad ﷺ"
+      },
+      "sahaba": {
+        "title": "Kuiz sahabat",
+        "desc": "Sahabat, isteri-isteri Nabi ﷺ dan empat imam besar"
+      },
+      "akhlaq": {
+        "title": "Kuiz akhlak",
+        "desc": "Sidq, hilm, sabar, ikhlas, tawaduk, amanah, rahmah, malu dan adil - sifat akhlak daripada Al-Quran dan sunnah"
+      },
+      "nikah": {
+        "title": "Kuiz perkahwinan & keluarga",
+        "desc": "Tujuan perkahwinan, hak, akad nikah, talak dan pendidikan anak"
+      },
+      "dialects": {
+        "title": "Kuiz dialek",
+        "desc": "Frasa harian daripada dialek Maghribi, Levantin, Teluk dan Mesir"
+      }
+    },
+    "puzzle": {
+      "title": "Teka-teki ayat",
+      "desc": "Menyusun perkataan",
+      "hint": "Susun perkataan mengikut urutan yang betul",
+      "empty": "Ketik perkataan di bawah",
+      "next": "Seterusnya"
+    },
+    "matchingGame": {
+      "title": "Cari pasangan",
+      "desc": "Perkataan & transliterasi",
+      "hint": "Sambungkan setiap perkataan dengan transliterasinya",
+      "points": "mata"
+    },
+    "listen": {
+      "title": "Dengar & pilih",
+      "desc": "Pilih perkataan yang didengar",
+      "hint": "Dengar lalu taip transliterasinya",
+      "play": "Dengar",
+      "placeholder": "Masukkan transliterasi …",
+      "check": "Semak",
+      "unavailableReading": "Latihan ini memerlukan bunyi dan disembunyikan selagi jenis latihan ditetapkan kepada membaca."
+    },
+    "mistakes": {
+      "title": "Kesilapan saya",
+      "desc": "Latih jawapan yang salah",
+      "empty": "Tiada kesilapan tersisa - hebat!",
+      "clearedHint": "Soalan yang dijawab dengan betul telah dikeluarkan daripada koleksi."
+    },
+    "intro": {
+      "gotIt": "Faham, jom mula!",
+      "whatLabel": "Apa yang anda akan buat",
+      "whyLabel": "Kenapa ini membantu",
+      "reopenA11y": "Tunjukkan penjelasan semula",
+      "quizMode": {
+        "title": "Kuiz",
+        "what": "Anda akan melihat soalan dengan 3-4 jawapan dan ketik jawapan yang betul. Jawapan salah akan masuk secara automatik ke koleksi kesilapan anda.",
+        "why": "Mengingat semula jawapan secara aktif lebih melekat berbanding sekadar membaca - anda terus tahu apa yang sudah dikuasai dan apa yang masih perlu dilatih."
+      },
+      "puzzle": {
+        "title": "Teka-teki ayat",
+        "what": "Satu ayat Arab tersusun rambang dalam perkataan berasingan di hadapan anda. Ketik perkataan mengikut urutan sehingga ayat itu tersusun betul semula.",
+        "why": "Susunan ayat Arab sering mengikuti peraturan yang berbeza daripada bahasa Melayu. Menyusun semula sendiri membuat tatabahasa lebih melekat berbanding sekadar membaca."
+      },
+      "matching": {
+        "title": "Cari pasangan",
+        "what": "Perkataan Arab di sebelah kiri, transliterasinya di sebelah kanan - kedua-duanya dalam urutan rawak. Ketik dahulu perkataan di kiri, kemudian transliterasi yang sepadan di kanan.",
+        "why": "Memadankan secara sedar melatih anda menghubungkan tulisan Arab terus dengan bunyinya - kemahiran asas untuk membaca lancar tanpa bergantung pada transliterasi."
+      },
+      "listen": {
+        "title": "Dengar & pilih",
+        "what": "Anda mendengar satu perkataan atau suku kata Arab dan memilih perkataan yang betul daripada 3-4 pilihan Arab.",
+        "why": "Bahasa Arab mempunyai bunyi yang tiada dalam bahasa Melayu. Hanya dengan mendengar dan menghasilkan semula sendiri, telinga anda dilatih mengenali perbezaan ini - membaca sahaja tidak mencukupi."
+      },
+      "duel": {
+        "title": "Duel kuiz",
+        "what": "Anda bertanding dengan soalan yang sama: sama ada bergilir-gilir pada satu peranti, atau masing-masing pada masa sendiri - anda main giliran anda, hantar kod kepada rakan, dia memasukkannya dan cuba mengatasi skor anda.",
+        "why": "Persaingan mendorong anda mengulang kaji sesuatu yang sepatutnya sudah anda kuasai - dan mod kod tetap berfungsi walaupun anda berdua tiada masa serentak."
+      },
+      "mistakes": {
+        "title": "Kesilapan saya",
+        "what": "Setiap soalan yang anda jawab salah dalam satu kuiz akan muncul semula di sini secara automatik. Jawab dengan betul dan ia akan hilang daripada koleksi.",
+        "why": "Pengetahuan paling melekat apabila anda mengulang tepat jurang yang belum dikuasai - bukan mengulang semuanya secara rawak."
+      },
+      "placement": {
+        "title": "Ujian penempatan",
+        "what": "Anda menjawab blok soalan pendek untuk peringkat berturutan dalam kursus. Lulus satu blok, ia automatik ke blok seterusnya - ujian tamat pada blok pertama yang tidak anda lulus.",
+        "why": "Dengan ini anda dapat mengetahui tahap pengetahuan sebenar anda dalam beberapa minit, tanpa membazir masa pada pelajaran 1 dengan perkara yang sudah anda tahu."
+      },
+      "write": {
+        "title": "Latihan menulis",
+        "what": "Lukis huruf yang dipaparkan dengan jari daripada ingatan - contoh kekal tersembunyi. Hanya apabila anda ketik 'Bandingkan', bentuk sebenar akan bertindih lut sinar di atas lukisan anda.",
+        "why": "Menekap contoh yang kelihatan hampir tidak melekat, kerana otak anda tidak perlu mengingati apa-apa. Hanya dengan mengingat daripada ingatan - dan membandingkan secara jujur selepas itu - bentuk huruf itu benar-benar melekat."
+      }
+    },
+    "correctAnswerLabel": "Jawapan betul",
+    "wrongListTitle": "Dijawab salah"
+  },
+  "hifz": {
+    "title": "Tilawah",
+    "recognitionNoteCta": "Sejauh mana ketepatan pengecaman ini?",
+    "recognitionDisclaimer": "Pengecaman ini menggunakan model suara kecil yang berjalan pada peranti anda. Ia boleh melakukan kesilapan dan tidak dapat menggantikan guru sebenar. Untuk maklum balas tilawah yang serius dan tepat, kami mengesyorkan aplikasi Tarteel, yang menggunakan sistem berasaskan pelayan dan berfungsi dengan jauh lebih baik.",
+    "subtitle": "Ayat demi ayat: dengar, tutup, sebut, tanda",
+    "searchNoResults": "Tiada surah dijumpai untuk \"{query}\".",
+    "memorized": "dihafal",
+    "tapToReveal": "Ketik untuk memaparkan",
+    "listen": "Dengar",
+    "reveal": "Papar",
+    "hide": "Sembunyi",
+    "micCheck": "Sebut",
+    "autoMarked": "Ditandakan secara automatik sebagai »Boleh«",
+    "reciteFromReaderHint": "Ketik »Sebut« untuk menyemak bacaan anda bagi ayat ini.",
+    "listening": "Sedang mendengar…",
+    "micError": "Pengecaman suara tidak tersedia atau dibatalkan.",
+    "stillLearning": "Masih berlatih",
+    "gotIt": "Boleh",
+    "grade": {
+      "excellent": "Cemerlang!",
+      "good": "Bagus - hampir sempurna",
+      "retry": "Latih lagi"
+    },
+    "micMissedHint": "Perkataan yang ditandakan tidak dikesan - sebut dengan lebih jelas pada percubaan seterusnya.",
+    "micNote": "Semakan ini membandingkan perkataan. Perincian tajwid yang halus (panjang mad, ghunnah) tidak dapat dinilai - untuk itu diperlukan seorang guru.",
+    "modeFast": "Pantas (Pelayar)",
+    "modePrecise": "Tepat (model tempatan)",
+    "stopRecording": "Henti & nilai",
+    "transcribing": "Sedang dinilai …",
+    "modelDownload": "Model sedang dimuatkan sekali: {p} %",
+    "letterTips": {
+      "qaf": "ق keluar dari pangkal lelangit lembut belakang - lebih tebal daripada ك",
+      "kaf": "ك keluar dari bahagian belakang lidah lebih ke depan - lebih nipis daripada ق",
+      "hha": "ح ialah hembusan tertekan daripada tengah kerongkong, tanpa geseran",
+      "kha": "خ bergesel di lelangit belakang - seperti 'kh' pada 'khas'",
+      "ha": "ه ialah h ringan seperti pada 'hari'",
+      "ain": "ع ialah bunyi kerongkong tertekan - kerongkong menyempit dengan jelas",
+      "hamza": "ء ialah hentian glotis pendek seperti jeda pada 'ta'at'",
+      "dhal": "ذ ialah th lembut (lidah pada gigi) seperti 'th' dalam bahasa Inggeris 'this'",
+      "zay": "ز ialah s bersuara seperti pada 'zebra'",
+      "zza": "ظ ialah pasangan tebal dan tegas bagi ذ - lidah pada gigi, rongga mulut penuh",
+      "sin": "س ialah s ringan dan tajam",
+      "sad": "ص ialah s tebal yang tegas - bahagian belakang mulut terisi penuh",
+      "ta": "ت ialah t ringan pada gigi atas",
+      "tta": "ط ialah t tebal yang tegas - dengan rongga mulut penuh",
+      "dal": "د ialah d ringan pada gigi atas",
+      "dad": "ض keluar dari sisi lidah ke gigi geraham - tebal dan penuh",
+      "ghain": "غ ialah r bergolek lelangit, seperti r bahasa Perancis"
+    },
+    "nearLabel": "kedengaran seperti",
+    "expectedLabel": "Dijangka",
+    "recognizedLabel": "Dikenali",
+    "closestGuessLabel": "Anggaran terdekat (tidak pasti)",
+    "notRecognizedLabel": "Tidak dikenali dalam rakaman anda",
+    "youSaid": "Anda berkata: \"{transcript}\"",
+    "tapWordHint": "Ketik perkataan yang diserlahkan untuk melihat apa yang dikenali",
+    "gapTestCta": "Mod latihan (tanpa bunyi)",
+    "gapTest": {
+      "title": "Ujian Tilawah",
+      "noKnownVerses": "Belum ada ayat yang ditanda \"Sudah Hafal\" - hafal beberapa ayat dahulu, kemudian anda boleh menguji diri di sini tanpa bunyi.",
+      "backCta": "Kembali ke Surah",
+      "progressLabel": "Ayat {current} daripada {total}",
+      "tapGapHint": "Ketik ruang kosong untuk memaparkan perkataan",
+      "revealWordA11y": "Paparkan perkataan",
+      "correctBtn": "Ingat dengan betul",
+      "retryBtn": "Perlu berlatih lagi",
+      "summaryTitle": "Sesi ujian selesai",
+      "summaryResult": "{correct} daripada {total} diingat dengan betul",
+      "restartCta": "Mula semula",
+      "doneCta": "Selesai"
+    },
+    "modelNeededHint": "Muat turun model pertuturan dahulu. Muat turun berterusan di latar belakang — anda boleh tinggalkan skrin ini.",
+    "surahRecite": {
+      "cta": "Baca seluruh surah",
+      "intro": "Mula dan baca seluruh surah tanpa henti — ayat terbuka apabila dikenali.",
+      "start": "Mula bacaan",
+      "stop": "Berhenti",
+      "finalizing": "Menilai keseluruhan bacaan…",
+      "doneAll": "Keseluruhan surah dikenali — syabas!",
+      "doneSome": "{n} daripada {total} perkataan dikenali."
+    },
+    "speechError": {
+      "heading": "Semakan bacaan gagal",
+      "showDetails": "Tunjukkan butiran teknikal",
+      "hideDetails": "Sembunyikan butiran",
+      "model": "Model",
+      "permission": "Mikrofon",
+      "yes": "ya",
+      "no": "tidak",
+      "unknown": "tidak diketahui",
+      "code": "Kod",
+      "unavailableMsg": "Pengecaman pada peranti tidak tersedia pada peranti/binaan ini.",
+      "permissionMsg": "Akses mikrofon tiada. Benarkan apl menggunakan mikrofon dalam tetapan sistem, kemudian cuba lagi.",
+      "audioInitMsg": "Mikrofon tidak dapat dimulakan. Tutup apl lain yang menggunakan mikrofon dan cuba lagi.",
+      "modelDownloadMsg": "Muat turun model suara tidak lengkap. Semak sambungan anda dan muat turun semula.",
+      "modelInitMsg": "Model suara tidak dapat dimuatkan. Ia telah ditetapkan semula — muat turun semula.",
+      "transcribeMsg": "Analisis rakaman gagal. Sila cuba lagi.",
+      "noSpeechMsg": "Tiada pertuturan dikesan. Bacalah sedikit lebih kuat dan lebih dekat dengan mikrofon.",
+      "unknownMsg": "Ralat tidak dijangka berlaku. Buka butiran dan sampaikan mesej itu."
+    }
+  },
+  "tasbih": {
+    "title": "Tasbih",
+    "today": "Jumlah hari ini",
+    "tapHint": "Ketik bulatan untuk mengira",
+    "addCustom": "Zikir sendiri",
+    "customTextPlaceholder": "Teks zikir",
+    "customTargetPlaceholder": "Sasaran (bilangan)",
+    "deleteCustom": "Padam zikir sendiri",
+    "dailyGoal": "Sasaran harian",
+    "customGoal": "Sasaran sendiri",
+    "customGoalPlaceholder": "Sasaran (bilangan)",
+    "history": "Sejarah (7 hari)",
+    "afterSalahCta": "Zikir selepas solat (33/33/34)"
+  },
+  "guides": {
+    "title": "Solat & Amalan",
+    "subtitle": "Langkah demi langkah: wuduk, mandi wajib, solat, rakaat, witir dan banyak lagi",
+    "steps": "langkah"
+  },
+  "phrases": {
+    "title": "Ungkapan & khutbah Jumaat",
+    "subtitle": "Apa yang diucapkan, maknanya dan jawapannya",
+    "reply": "Jawapan",
+    "tapToHear": "Ketik untuk mendengar"
+  },
+  "wisdom": {
+    "title": "Hikmah",
+    "today": "Hikmah hari ini",
+    "share": "Kongsi",
+    "shareImage": "Kongsi sebagai imej"
+  },
+  "settings": {
+    "groups": {
+      "prayer": "Solat & Pengiraan",
+      "notifications": "Pemberitahuan",
+      "reminders": "Peringatan",
+      "quran": "Al-Quran & Tilawah",
+      "language": "Bahasa & Paparan",
+      "learning": "Pembelajaran & Latihan",
+      "data": "Storan & Data",
+      "about": "Perihal & Undang-undang"
+    },
+    "moreReminders": {
+      "title": "Peringatan lain"
+    },
+    "location": "Lokasi",
+    "current": "Semasa",
+    "search": "Cari tetapan",
+    "searchNoResults": "Tiada tetapan dijumpai",
+    "useMyLocation": "Gunakan lokasi semasa",
+    "locating": "Mencari lokasi…",
+    "searchCity": "Cari bandar…",
+    "cityInvalid": "Hasil ini tiada koordinat yang boleh digunakan. Sila pilih yang lain.",
+    "savedLocations": {
+      "title": "Lokasi disimpan",
+      "namePlaceholder": "Nama (cth. Rumah, Pejabat)…",
+      "saveCurrent": "Simpan lokasi semasa",
+      "delete": "Padam lokasi disimpan"
+    },
+    "method": "Kaedah pengiraan",
+    "asrSchool": "Mazhab Asar",
+    "language": "Bahasa",
+    "hadithLanguage": "Bahasa hadis",
+    "timeFormat": "Format masa",
+    "format24": "24 jam (14:30)",
+    "format12": "12 jam (2:30 PM)",
+    "fontSize": "Saiz fon Al-Quran",
+    "fontSmall": "Kecil",
+    "fontMedium": "Sederhana",
+    "fontLarge": "Besar",
+    "fontXLarge": "Sangat besar",
+    "quranFont": {
+      "title": "Fon Al-Quran",
+      "preview": "Pratonton",
+      "hint": {
+        "kfgqpc": "Tulisan Uthmani rasmi Kompleks Raja Fahd (edisi Madinah)",
+        "amiriQuran": "Seperti Amiri, dengan ruang lebih untuk tanda Al-Quran bertindih",
+        "amiri": "Naskh klasik bergaya cetakan lama",
+        "scheherazade": "Baris sangat jelas, sesuai juga untuk gaya IndoPak",
+        "lateef": "Garisan halus, hampir dengan cetakan Asia Selatan",
+        "harmattan": "Bentuk huruf Afrika Barat, seperti cetakan di rantau itu",
+        "noto": "Moden dan bersih, mudah dibaca pada skrin kecil",
+        "notoSans": "Tanpa serif, kontras tertinggi — untuk penglihatan lemah"
+      }
+    },
+    "quranSukun": {
+      "title": "Tanda sukun",
+      "madina": "Cetakan Madinah (cangkuk)",
+      "kreis": "Bulatan",
+      "hint": "Hanya untuk “KFGQPC HAFS Uthmanic”. Mushaf Madinah bercetak menulis sukun sebagai cangkuk kecil; bulatan di situ bermaksud huruf yang ditulis tetapi tidak disebut. Dengan “Bulatan” kedua-duanya kelihatan sama."
+    },
+    "appearance": "Rupa",
+    "themeAuto": "Automatik (tetapan sistem)",
+    "themeLight": "Terang",
+    "themeDark": "Gelap",
+    "notifications": "Pemberitahuan solat",
+    "resetDefaults": "Tetapkan semula ke lalai",
+    "asrEarlier": "Lebih awal (Syafi'i/Maliki/Hanbali - standard)",
+    "asrLater": "Lebih lewat (Hanafi)",
+    "iqama": {
+      "title": "Waktu Iqamah",
+      "enable": "Papar waktu Iqamah",
+      "enableHint": "Memaparkan waktu solat berjemaah (Iqamah) yang dikira, di samping waktu Azan.",
+      "offsetHint": "Jarak masa selepas Azan, dalam minit - boleh diselaraskan bagi setiap solat.",
+      "minutesShort": "min"
+    },
+    "highLatitude": {
+      "title": "Peraturan latitud tinggi",
+      "hint": "Di utara kira-kira latitud 48°, pada musim panas matahari tidak turun cukup rendah untuk mencapai sudut Subuh dan Isyak. Peraturan ini menetapkan cara kedua-dua waktu itu diperoleh daripada panjang malam. Bergantung pada peraturan, waktu Subuh dan Isyak boleh berbeza sehingga sejam, dan tiada penyelesaian yang disepakati semua. Jika anda mahu mengikut masjid anda, pilih peraturan yang sepadan dengan waktunya.",
+      "auto": "Automatik (disyorkan)",
+      "autoDesc": "Mengikut latitud anda: berdasarkan sudut dari kira-kira 48°, pertengahan malam lebih dekat dengan khatulistiwa.",
+      "middleOfNight": "Pertengahan malam",
+      "middleOfNightDesc": "Peraturan tetap: Subuh lebih awal, Isyak lebih lewat.",
+      "seventhOfNight": "Satu pertujuh malam",
+      "seventhOfNightDesc": "Peraturan tetap: Subuh lebih lewat, Isyak lebih awal.",
+      "twilightAngle": "Berdasarkan sudut",
+      "twilightAngleDesc": "Peraturan tetap: digunakan oleh kebanyakan aplikasi."
+    },
+    "timeAdjust": {
+      "title": "Pelarasan minit",
+      "hint": "Mengalih setiap waktu solat sehingga 60 minit supaya waktunya sepadan dengan masjid anda. Berkuat kuasa pada paparan, pemberitahuan, widget dan eksport kalendar.",
+      "sunrise": "Matahari terbit",
+      "reset": "Set semula semua pelarasan",
+      "minutesShort": "min"
+    },
+    "pace": {
+      "title": "Bajet masa harian",
+      "min10": "10 min/hari · 1 pelajaran, ulangkaji ringkas",
+      "min20": "20 min/hari · 2 pelajaran (disyorkan)",
+      "min45": "45 min/hari · 5 pelajaran",
+      "min90": "1.5 jam/hari · 10 pelajaran",
+      "min240": "4 jam/hari · kelajuan maksimum (25 pelajaran)",
+      "freeUnlock": "Buka semua pelajaran",
+      "freeUnlockHint": "Belajar tanpa urutan - untuk yang mahir"
+    },
+    "display": {
+      "title": "PAPARAN",
+      "transliteration": "Papar transliterasi",
+      "transliterationHint": "Papar/sembunyikan transliterasi Latin pada perkataan dan perbendaharaan kata",
+      "isolatedLetters": "Papar bentuk huruf terasing",
+      "isolatedLettersHint": "Papar perkataan tambahan dalam huruf terasing, tidak bersambung - bagi membantu mengingati"
+    },
+    "reviewReminder": {
+      "title": "Peringatan ulangkaji",
+      "enable": "Peringatan harian",
+      "hint": "Peringatan tempatan pada masa yang dipilih, jika ada ulangkaji yang perlu (hanya aplikasi, bukan web)",
+      "hour9": "Pagi · 9 pagi",
+      "hour14": "Tengah hari · 2 petang",
+      "hour18": "Petang · 6 petang",
+      "hour21": "Malam · 9 malam"
+    },
+    "verseOfDay": {
+      "title": "Ayat/Hadis Hari Ini",
+      "enable": "Peringatan harian",
+      "hint": "Ayat atau hadis yang terkenal pada masa yang dipilih, baharu setiap hari (hanya aplikasi, bukan web)"
+    },
+    "jumuah": {
+      "title": "Peringatan Jumaat",
+      "enable": "Peringatan hari Jumaat",
+      "hint": "Peringatan sebelum solat Jumaat dengan nota mengenai Surah Al-Kahfi (hanya aplikasi, bukan web)"
+    },
+    "sunnah": {
+      "title": "Solat Sunat",
+      "duha": "Solat Dhuha",
+      "duhaHint": "Peringatan pada waktu pagi, sejurus selepas matahari terbit",
+      "tahajjud": "Tahajud",
+      "tahajjudHint": "Peringatan lewat malam, sebelum Subuh",
+      "witr": "Solat Witir",
+      "witrHint": "Peringatan selepas Isyak, sebelum tidur"
+    },
+    "preAdhan": {
+      "title": "Peringatan Sebelum Azan",
+      "enable": "Peringatan tambahan sebelum waktu solat",
+      "hint": "Peringatan X minit sebelum setiap solat yang diaktifkan, contohnya untuk wuduk atau perjalanan ke masjid",
+      "minutes": "{n} minit sebelum"
+    },
+    "weeklySummary": {
+      "title": "Ringkasan mingguan",
+      "enable": "Peringatan mingguan",
+      "hint": "Ringkasan ringkas pelajaran dan solat, setiap malam Ahad jam 8 (hanya aplikasi, bukan web)"
+    },
+    "notificationsOverview": {
+      "navLabel": "Pemberitahuan",
+      "navHint": "Urus semua peringatan di satu tempat",
+      "title": "Pemberitahuan",
+      "subtitle": "Gambaran keseluruhan semua peringatan dalam aplikasi - perubahan terpakai serta-merta pada peringatan berkenaan.",
+      "blocked": "Pemberitahuan untuk Salati dimatikan dalam tetapan sistem. Peringatan tidak dapat sampai sehingga anda membenarkannya.",
+      "groupPrayerTimes": "Waktu solat",
+      "groupQuran": "Al-Quran & pengetahuan",
+      "groupOther": "Lain-lain",
+      "prayerHint": "Peringatan pada waktu solat",
+      "journeyTitle": "Peringatan perjalanan ayat",
+      "journeyHint": "Aktif secara automatik semasa perjalanan ayat sedang berjalan - tiada suis berasingan diperlukan",
+      "zakatManageLink": "Urus tarikh sasaran zakat"
+    },
+    "dashboard": {
+      "navLabel": "Papan pemuka",
+      "navHint": "Sesuaikan susunan dan keterlihatan kad skrin utama"
+    },
+    "widgets": {
+      "title": "Widget skrin utama",
+      "hint": "Tekan lama skrin utama dan tambah Salati: waktu solat, doa harian dan streak masing-masing tersedia dalam tema warna gelap dan terang.",
+      "perWidgetHint": "Petua: tekan lama widget yang diletakkan dan ketik Konfigur untuk menetapkan warna dan kandungan widget itu secara individu."
+    },
+    "support": {
+      "title": "Sokongan",
+      "copyReport": "Salin laporan ralat",
+      "copyReportHint": "Salin ralat yang direkodkan terkini sebagai teks - kekal pada peranti, tidak dihantar secara automatik",
+      "copied": "Disalin",
+      "replayOnboarding": "Main semula pengenalan"
+    },
+    "backup": {
+      "title": "Sandarkan kemajuan",
+      "hint": "Tiada akaun, tiada awan - kemajuan anda kekal setempat pada peranti ini. Eksport sebagai fail untuk memulihkannya semasa bertukar peranti atau aplikasi.",
+      "exportButton": "Eksport kemajuan",
+      "exportError": "Eksport gagal. Sila cuba lagi.",
+      "importButton": "Import kemajuan",
+      "importConfirmTitle": "Import kemajuan?",
+      "importConfirmBody": "Ini akan menulis ganti kemajuan pelajaran, kemajuan hafazan dan penanda halaman semasa anda pada peranti ini. Tindakan ini tidak boleh dibuat asal.",
+      "importConfirmAction": "Tulis ganti",
+      "importSuccess": "Kemajuan diimport.",
+      "importInvalidFile": "Fail ini bukan sandaran kemajuan Salati yang sah.",
+      "importUnsupportedVersion": "Sandaran ini dibuat dengan versi aplikasi yang lebih baharu dan tidak boleh diimport di sini.",
+      "importError": "Import gagal. Sila semak fail tersebut.",
+      "downloadedRecitersNote": "Qari yang pernah dimuat turun: {list} - muat turun semula jika perlu.",
+      "goToDownloads": "Pergi ke muat turun qari"
+    },
+    "legal": "Undang-undang",
+    "legalFeedback": "Beri maklum balas / laporkan pepijat",
+    "legalFeedbackSubject": "Salati Feedback",
+    "legalVersion": "Versi apl",
+    "updates": {
+      "check": "Cari kemas kini",
+      "checking": "Memeriksa …",
+      "upToDate": "Terkini",
+      "ready": "Kemas kini sedia",
+      "restart": "Mula semula sekarang",
+      "failed": "Tiada sambungan"
+    },
+    "exercise": {
+      "title": "Jenis latihan digemari",
+      "mixed": "Campuran (disyorkan)",
+      "audio": "Lebih banyak latihan mendengar",
+      "reading": "Lebih banyak latihan membaca",
+      "speech": "Latihan bertutur (mikrofon)",
+      "speechHint": "Matikan jika anda tidak boleh bercakap dengan kuat sekarang - latihan akan berjalan tanpa mikrofon.",
+      "mixedDesc": "Semua jenis latihan dengan bahagian yang sama.",
+      "audioDesc": "Fokus pada mendengar dan mengecam.",
+      "readingDesc": "Fokus pada membaca tulisan Arab."
+    },
+    "notifPrefs": {
+      "sound": "Bunyi",
+      "soundHint": "Pemberitahuan dengan nada dering",
+      "vibrate": "Getaran",
+      "vibrateHint": "Bergetar apabila tiba",
+      "headsUp": "Papar di atas aplikasi lain",
+      "headsUpHint": "Sepanduk muncul serta-merta di hadapan (Android)",
+      "ongoingCountdown": "Papar solat seterusnya secara berterusan",
+      "ongoingCountdownHint": "Pemberitahuan yang tidak boleh dibuang dengan masa solat seterusnya (Android)",
+      "liveActivity": "Live Activity pada skrin kunci",
+      "liveActivityHint": "Memaparkan solat seterusnya pada skrin kunci dan Dynamic Island (iOS)"
+    },
+    "adhkar": {
+      "title": "Peringatan zikir",
+      "morning": "Zikir pagi",
+      "morningHint": "Peringatan harian untuk zikir pagi",
+      "evening": "Zikir petang",
+      "eveningHint": "Peringatan harian untuk zikir petang"
+    },
+    "offlinePack": {
+      "title": "Luar talian",
+      "download": "Pakej luar talian penuh",
+      "hint": "Muatkan kesemua 114 surah (teks + terjemahan) untuk kegunaan luar talian",
+      "done": "Semua surah tersedia secara luar talian"
+    },
+    "reciterAudioPack": {
+      "title": "Audio qari",
+      "hint": "Muat turun bacaan penuh oleh {reciter} — berguna untuk mod pesawat atau isyarat lemah.",
+      "download": "Muat turun qari sepenuhnya",
+      "resume": "Sambung qari ({n}/114 telah dimuat turun)",
+      "done": "Qari sepenuhnya tersedia secara luar talian",
+      "progress": "{n} / {total} surah",
+      "startAction": "Muat turun",
+      "partialTitle": "Dimuat turun sebahagian",
+      "partialBody": "{n} surah gagal dimuat turun (cth. ralat rangkaian). Mula semula untuk melengkapkan bakinya.",
+      "chooseReciter": "Pilih qari untuk dimuat turun",
+      "downloadedTitle": "Qari yang dimuat turun",
+      "noDownloads": "Belum ada pek qari dimuat turun.",
+      "packStatus": "{n}/114 surah",
+      "packComplete": "Lengkap",
+      "deleteAction": "Padam",
+      "deleteConfirmTitle": "Padam pek qari?",
+      "deleteConfirmBody": "Semua surah yang dimuat turun oleh {reciter} akan dialih keluar daripada peranti ini.",
+      "confirmTitle": "Muat turun qari lengkap?",
+      "confirmBody": "Kesemua 114 surah akan dimuat turun ke peranti ini. Ia mengambil masa dan memerlukan beberapa ratus megabait — sebaiknya guna Wi-Fi."
+    },
+    "storage": {
+      "title": "Urus storan",
+      "openHint": "Audio qari, model AI dan cache sepintas lalu",
+      "subtitle": "Gambaran keseluruhan ruang storan yang digunakan oleh Salati pada peranti ini.",
+      "total": "Jumlah digunakan",
+      "loading": "Mengira…",
+      "unsupported": "Pengurusan storan tidak tersedia pada platform ini.",
+      "reciterAudio": {
+        "title": "Audio qari",
+        "empty": "Belum ada muat turun qari."
+      },
+      "kiModel": {
+        "title": "Model AI Salati",
+        "notDownloaded": "Belum dimuat turun"
+      },
+      "whisperModel": {
+        "title": "Pengecaman suara (mod ketepatan Hifz)",
+        "notDownloaded": "Belum dimuat turun",
+        "delete": "Padam model",
+        "deleteConfirm": "Padam model ini? Muat turun ({size}) perlu dimulakan semula untuk semakan ketepatan seterusnya.",
+        "download": "Muat turun"
+      },
+      "cache": {
+        "title": "Cache",
+        "hint": "Teks/terjemahan cache untuk penggunaan luar talian serta fail sementara yang tertinggal.",
+        "clear": "Kosongkan cache",
+        "clearConfirmTitle": "Kosongkan cache?",
+        "clearConfirmBody": "Surah/terjemahan cache akan dialih keluar dan dimuat semula jika perlu. Muat turun audio qari dan model AI TIDAK terjejas.",
+        "clearAction": "Kosongkan"
+      },
+      "offlineQuran": {
+        "title": "Al-Quran luar talian (teks + terjemahan)",
+        "hint": "Teks dan terjemahan surah yang dimuat turun untuk kegunaan luar talian. Dialih keluar apabila anda mengosongkan cache.",
+        "empty": "Belum ada surah dimuat turun untuk luar talian.",
+        "surahs": "{n} daripada 114 surah"
+      },
+      "podcast": {
+        "title": "Muat turun podcast",
+        "empty": "Tiada episod dimuat turun",
+        "deleteAll": "Padam semua",
+        "deleteAllConfirmTitle": "Padam semua muat turun?",
+        "deleteAllConfirmBody": "Semua episod yang dimuat turun akan dialih keluar daripada peranti anda."
+      },
+      "video": {
+        "title": "Muat turun video",
+        "empty": "Tiada video dimuat turun",
+        "deleteAll": "Padam semua",
+        "deleteAllConfirmTitle": "Padam semua muat turun?",
+        "deleteAllConfirmBody": "Semua video yang dimuat turun akan dialih keluar daripada peranti anda."
+      }
+    },
+    "appIcon": {
+      "title": "Ikon & nama aplikasi",
+      "hint": "Pilih ikon alternatif untuk skrin utama (Android sahaja).",
+      "iosHint": "Pemilihan ikon dan nama tidak tersedia pada iOS dalam versi ini — nama aplikasi tidak boleh diubah semasa masa jalan pada iOS (sekatan Apple).",
+      "variantDefault": "Salati (lalai)",
+      "variantEmerald": "Salati (zamrud)",
+      "variantSalatibox": "Salatibox"
+    },
+    "lateNotif": {
+      "title": "Pemberitahuan lewat tiba?",
+      "hint": "Android melengahkan penggera untuk penjimatan bateri selama beberapa minit. Dua tetapan ini menyelesaikannya:",
+      "exactAlarm": "1. Benarkan penggera & peringatan (pilih Salati)",
+      "battery": "2. Matikan pengoptimuman bateri untuk Salati",
+      "notGranted": "Buat masa ini tidak dibenarkan — sila aktifkan di bawah, jika tidak peringatan mungkin lewat.",
+      "batteryPromptTitle": "Matikan pengoptimuman bateri?",
+      "batteryPromptBody": "Supaya peringatan waktu solat tiba tepat pada masanya, Salati perlu dikecualikan daripada pengoptimuman bateri peranti anda.",
+      "batteryPromptLater": "Kemudian",
+      "batteryPromptOpen": "Buka tetapan"
+    },
+    "azan": {
+      "title": "Azan",
+      "hint": "Azan ini dimainkan pada skrin waktu solat. Ketik ikon main untuk mendengarnya.",
+      "systemDefault": "Nada standard (tanpa azan penuh)",
+      "option": "Azan {n}",
+      "preview": "Dengar",
+      "standardShort": "Lalai",
+      "credit": "Rakaman: Azan 1 – Adam-synagda (CC0 1.0) · Azan 2 – Andrewler (CC BY-SA 4.0) · Azan 3 – Islamic Center Malmö (CC BY 3.0), Wikimedia Commons.",
+      "fajrNote": "Azan 3 mengandungi kalimat Subuh “Solat lebih baik daripada tidur” dan sudah dipilih di sini.",
+      "iosLimit": "Pemberitahuan memainkan cebisan pendek (Apple hanya membenarkan 30 saat). Azan penuh kemudian dimainkan dalam apl.",
+      "notification": "Azan sebagai bunyi pemberitahuan",
+      "notificationHint": "Pada waktu solat, azan yang dipilih berbunyi menggantikan nada sistem yang pendek.",
+      "perPrayerHint": "Boleh dipilih berasingan bagi setiap solat. “Lalai” bermaksud nada sistem pendek, bukan azan."
+    },
+    "travel": {
+      "title": "Mod perjalanan",
+      "enable": "Petunjuk qasar semasa bermusafir",
+      "enableHint": "Memaparkan petunjuk tentang qasar dan jamak jika anda berada lebih daripada 85 km dari kampung halaman.",
+      "setHome": "Tetapkan lokasi semasa sebagai kampung halaman",
+      "home": "Kampung halaman: {location}"
+    },
+    "udhiyah": {
+      "title": "Peringatan Udhiyah",
+      "enable": "Ingatkan sebelum Eid al-Adha",
+      "hint": "Peringatan sekali sebelum Eid al-Adha untuk menyediakan haiwan korban (udhiyah/qurban) (hanya aplikasi, bukan web)"
+    },
+    "recitationModel": {
+      "title": "Model bacaan",
+      "base": "Standard – mana-mana telefon",
+      "turbo": "Pantas & tepat – telefon berkuasa",
+      "hint": "Model lebih besar mengecam dengan lebih tepat tetapi memerlukan lebih banyak storan/RAM. Model yang dipilih dimuat turun pada bacaan anda seterusnya (Wi-Fi disyorkan)."
+    },
+    "ramadan": {
+      "title": "Ramadan",
+      "hint": "Peringatan untuk puasa. Hanya muncul semasa Ramadan.",
+      "suhoor": "Penggera sahur",
+      "suhoorHint": "Mengejutkan anda sebelum puasa bermula supaya anda masih boleh makan dan minum.",
+      "lead": "{n} min sebelum",
+      "leadHint": "Berapa lama sebelum solat Subuh penggera berbunyi.",
+      "iftar": "Peringatan berbuka",
+      "iftarHint": "Memberitahu {n} minit sebelum matahari terbenam supaya anda boleh menyediakan juadah berbuka."
+    },
+    "methodHint": "Formula untuk Subuh dan Isyak — jika ragu, guna milik negara anda.",
+    "asrEarlierDesc": "Asar bermula apabila bayang sama panjang dengan objeknya.",
+    "asrLaterDesc": "Asar hanya bermula apabila bayang dua kali ganda — kira-kira sejam lebih lewat.",
+    "methodPickerHint": "Setiap kaedah ialah ketetapan sesebuah pihak berkuasa atau persatuan — yang sama digunakan masjid di negara berkenaan untuk mencetak takwimnya.",
+    "methodForCountry": "Lazim di {country}",
+    "methodCountryHint": "Di {country} kebanyakan jemaah mengikut {method}. Tetapan anda berbeza — tidak mengapa jika itu memang kehendak anda.",
+    "methodCountryApply": "Tukar kepada {method}",
+    "methodParamsFooter": "Sudut kaedah ini: {params}",
+    "prayerHelpFooter": "Jika waktunya tidak sepadan dengan jadual masjid anda: di sini ada jalan cepat dan penerangan penuh.",
+    "methodParams": {
+      "minutesAfterMaghrib": "{n} min selepas Maghrib",
+      "degree": "°",
+      "decimal": "."
+    },
+    "methodRegions": {
+      "worldwide": "Seluruh dunia",
+      "europe": "Eropah",
+      "northAmerica": "Amerika Utara",
+      "arabia": "Semenanjung Arab",
+      "middleEast": "Timur Tengah",
+      "northAfrica": "Afrika Utara",
+      "southAsia": "Asia Selatan",
+      "southeastAsia": "Asia Tenggara"
+    }
+  },
+  "tracker": {
+    "title": "Penjejak Solat",
+    "subtitle": "Tandakan 5 waktu solat anda dan bina jujukan",
+    "today": "Hari ini",
+    "week": "7 hari terakhir",
+    "streakDays": "hari berturut-turut",
+    "shareStats": "Kongsi statistik sebagai imej",
+    "qada": {
+      "title": "Kaunter qada (solat)",
+      "desc": "Masukkan bagi setiap solat berapa qada yang perlu diqada, dan kurangkan apabila selesai. Manual sepenuhnya - tidak dikira daripada penjejak harian.",
+      "none": "Tiada qada tertunggak",
+      "decrease": "Kurang satu",
+      "increase": "Tambah satu",
+      "total": "Jumlah: {n}",
+      "step": "Langkah",
+      "adjustHint": "Guna − dan + untuk mengubah pengira mengikut langkah yang dipilih.",
+      "makeUp": "Sudah diqada",
+      "makeUpOne": "Satu solat diqada: {prayer}",
+      "makeUpDay": "Qada satu hari penuh (5 solat)",
+      "doneTotal": "Sudah diqada: {n}"
+    },
+    "streakDayOne": "hari berturut-turut",
+    "taraweeh": {
+      "title": "Penjejak Tarawih",
+      "desc": "Masukkan berapa rakaat Tarawih yang anda solat malam ini.",
+      "tonight": "Malam ini",
+      "decrease": "Kurang dua",
+      "increase": "Tambah dua",
+      "summary": "{nights} malam disolat · jumlah {total} rakaat"
+    },
+    "day": {
+      "previous": "Hari sebelumnya",
+      "next": "Hari berikutnya",
+      "backToToday": "Kembali ke hari ini",
+      "select": "Ketik untuk mengubah hari ini",
+      "limitHint": "Anda boleh mengisi sehingga {n} hari ke belakang."
+    },
+    "exempt": {
+      "toggle": "Hari uzur",
+      "desc": "Untuk hari-hari apabila solat gugur (cth. haid). Hari itu tidak dikira sebagai tertunai mahupun tertinggal.",
+      "marked": "Hari ini ditanda uzur — solat tidak boleh ditanda di sini."
+    },
+    "history": {
+      "title": "Sejarah",
+      "week": "Minggu",
+      "month": "Bulan",
+      "tapHint": "Ketik satu hari untuk mengubahnya."
+    },
+    "month": {
+      "empty": "Bulan ini belum ada catatan.",
+      "days": "{tracked} daripada {days} hari dicatat",
+      "prayers": "{done} daripada {possible} solat",
+      "full": "{n} hari penuh",
+      "exempt": "{n} hari uzur",
+      "notTracked": "Belum dicatat"
+    },
+    "patterns": {
+      "title": "Analisis",
+      "empty": "Sebaik anda mencatat beberapa hari, analisis akan muncul di sini.",
+      "mostMissed": "Paling kerap tertinggal: {prayer}",
+      "mostMissedDetail": "{n} kali dalam {days} hari dicatat.",
+      "allDone": "Semua solat tertunai pada setiap hari yang dicatat.",
+      "noSingle": "Tiada satu solat pun yang jelas lebih kerap tertinggal berbanding yang lain.",
+      "basis": "Asas: {tracked} hari dicatat daripada {days} hari terakhir.",
+      "weeks": "Beberapa minggu lalu",
+      "weekDetail": "{done} daripada {possible} solat dalam {tracked} hari dicatat",
+      "weekEmpty": "Tiada catatan minggu ini"
+    }
+  },
+  "fasting": {
+    "title": "Puasa",
+    "total": "Jumlah hari berpuasa",
+    "suhoor": "Sahur hingga",
+    "iftar": "Berbuka",
+    "untilSuhoorEnd": "Ke penghujung waktu sahur",
+    "untilIftar": "Ke waktu berbuka",
+    "afterIftar": "Waktu puasa hari ini telah tamat",
+    "fastedToday": "Berpuasa hari ini",
+    "markToday": "Berpuasa hari ini? Ketik untuk tandakan",
+    "recommended": "Hari puasa yang digalakkan",
+    "recommendedText": "Ramadan (wajib) · Isnin & Khamis · 'hari-hari putih' (13.–15. setiap bulan Hijrah) · hari Arafah · Asyura.",
+    "qada": {
+      "title": "Pengira Qada",
+      "desc": "Masukkan berapa hari Ramadan yang masih perlu anda ganti, dan kirakan turun di sini setiap kali anda menggantinya. Sepenuhnya manual - tidak dikira secara automatik daripada penjejak harian anda.",
+      "decrease": "Satu hari telah diganti",
+      "increase": "Tambah satu hari",
+      "owed": "Masih {n} hari perlu diganti",
+      "doneAll": "Tiada hari qada tertunggak"
+    },
+    "ramadanCard": {
+      "heading": "Ramadan"
+    }
+  },
+  "khatmah": {
+    "title": "Rancangan Khatam",
+    "subtitle": "Keseluruhan Al-Quran mengikut kelajuan anda - pilih bilangan hari",
+    "days": "Hari",
+    "day": "Hari",
+    "behind": "hari ketinggalan",
+    "read": "Baca",
+    "newPlan": "Mula rancangan baharu",
+    "resetConfirmTitle": "Buang rancangan ini?",
+    "resetConfirmBody": "Kemajuan anda ({done} daripada {total} hari) akan hilang dan tidak boleh dipulihkan.",
+    "resetConfirmAction": "Buang",
+    "customLabel": "Atau bilangan hari sendiri (1-365):",
+    "behindOne": "hari ketinggalan"
+  },
+  "zakat": {
+    "title": "Kalkulator Zakat",
+    "subtitle": "2.5% daripada harta yang wajib zakat melebihi nisab",
+    "cash": "Wang tunai & akaun",
+    "gold": "Emas (nilai)",
+    "silver": "Perak (nilai)",
+    "business": "Harta/barangan perniagaan",
+    "debts": "Hutang yang boleh ditolak",
+    "goldPrice": "Harga emas setiap gram (semasa)",
+    "currencyLabel": "Mata wang",
+    "base": "Asas",
+    "nisab": "Nisab",
+    "due": "Zakat wajib dibayar",
+    "belowNisab": "Di bawah nisab - tiada zakat wajib dibayar.",
+    "note": "Kalkulator ringkas (nisab berdasarkan 85 g emas). Untuk kes khas (pertanian, ternakan, pencen) tanya seorang yang berilmu.",
+    "reminder": {
+      "title": "Peringatan tahunan",
+      "desc": "Zakat wajib selepas genap satu tahun Hijrah sejak mencapai nisab - tetapkan tarikh sasaran apabila harta anda mencapai ambang tersebut.",
+      "setToday": "Tetapkan hari ini sebagai tarikh sasaran",
+      "due": "Peringatan seterusnya: {date}",
+      "noAnchor": "Belum ada tarikh sasaran ditetapkan."
+    },
+    "goldPriceRef": "Guna ≈ {price} {currency}/g (setakat Julai 2026 - semak harga semasa)",
+    "goldPriceLive": "Guna ≈ {price} {currency}/g (kadar semasa {date})",
+    "priceMissing": "Masukkan harga emas untuk mengira sama ada zakat wajib dibayar.",
+    "fitrLinkTitle": "Kalkulator Zakat Fitrah",
+    "fitrLinkDesc": "Kewajipan berasingan bagi setiap ahli keluarga, pada akhir Ramadan"
+  },
+  "zakatFitr": {
+    "title": "Zakat Fitrah",
+    "subtitle": "Jumlah tetap bagi setiap orang pada akhir Ramadan - berasingan daripada zakat harta",
+    "intro": "Zakat Fitrah adalah kewajipan berasingan daripada zakat harta di atas. Ia adalah jumlah tetap bagi setiap ahli keluarga, wajib dibayar sebelum solat Aidilfitri.",
+    "disclaimer": "Jumlah bagi setiap orang bergantung kepada negara dan mazhab (bersamaan kira-kira 2,5-3 kg makanan asasi). Jika tidak pasti, tanya masjid tempatan anda.",
+    "householdSize": "Bilangan ahli keluarga",
+    "amountPerPerson": "Jumlah bagi setiap orang",
+    "amountMissing": "Masukkan jumlah bagi setiap orang untuk mengira jumlah keseluruhan.",
+    "total": "Jumlah keseluruhan"
+  },
+  "names": {
+    "title": "99 Nama Allah",
+    "subtitle": "al-Asma al-Husna - ketik untuk mendengar",
+    "learn": "Belajar",
+    "quizPrompt": "Apakah maksud nama ini?",
+    "quizResult": "Pusingan selesai - setiap pusingan mengemukakan 10 soalan rawak baharu."
+  },
+  "halal": {
+    "title": "Halal Berdekatan",
+    "osmNote": "Data: © OpenStreetMap (mungkin tidak lengkap)",
+    "empty": "Tiada tempat halal dijumpai dalam radius 5 km - data OSM di sini mungkin tidak lengkap."
+  },
+  "scanner": {
+    "title": "Pengimbas Halal",
+    "subtitle": "Imbas kod bar untuk memadankan bahan dengan ciri halal/haram yang diketahui.",
+    "scanPrompt": "Halakan kamera ke kod bar",
+    "manualEntryLabel": "Nombor kod bar",
+    "manualEntryPlaceholder": "cth. 4008400123456",
+    "checkButton": "Semak produk",
+    "scanAgain": "Imbas produk lain",
+    "loading": "Mencari produk…",
+    "notFound": "Produk tidak dijumpai dalam pangkalan data Open Food Facts.",
+    "fetchError": "Data produk tidak dapat dimuatkan. Semak sambungan dan cuba lagi.",
+    "webNotice": "Imbasan kod bar melalui kamera tersedia dalam aplikasi mudah alih. Pada web, sila masukkan kod bar secara manual.",
+    "cameraPermissionDenied": "Akses kamera ditolak. Aktifkan dalam tetapan peranti untuk mengimbas kod bar.",
+    "matchedIngredientsTitle": "Bahan yang dijumpai",
+    "productNameFallback": "Produk tidak diketahui",
+    "barcodeLabel": "Kod bar: {code}",
+    "statuses": {
+      "halal": "Tiada penemuan",
+      "haram": "Haram",
+      "mashbooh": "Diragui (Syubhah)",
+      "unknown": "Tidak diketahui"
+    },
+    "statusHints": {
+      "halal": "Tiada bahan yang mencurigakan dijumpai dalam data yang tersedia.",
+      "haram": "Mengandungi bahan yang jelas tidak dibenarkan.",
+      "mashbooh": "diperdebatkan dari segi agama - semak sumber jika ragu-ragu",
+      "unknown": "data tidak mencukupi"
+    },
+    "reasons": {
+      "alcohol": "Mengandungi alkohol/etanol - sebagai pembawa perisa juga tidak dibenarkan.",
+      "pork": "Mengandungi babi atau bahan terbitan babi (cth. gelatin, lemak babi, renin, enzim daripada babi).",
+      "gelatinUnknownOrigin": "Gelatin tanpa keterangan sumber haiwan - boleh berasal daripada lembu, ikan, atau babi.",
+      "animalRennetUnknown": "Renin haiwan tanpa bukti sembelihan yang mematuhi syarak halal.",
+      "carmine": "Karmin/kokineal (E120) - pewarna merah daripada serangga, diperdebatkan di kalangan ulama.",
+      "lCysteine": "L-sistein (E920) - sering diperoleh daripada bulu atau rambut, sumbernya jarang dinyatakan.",
+      "monoDiglycerides": "Mono-/digliserida (E471) atau pengemulsi serupa - sumber haiwan atau tumbuhan sering tidak dapat dikenal pasti.",
+      "vanillaExtractAlcohol": "Ekstrak vanila sering dihasilkan dengan alkohol sebagai pelarut.",
+      "halalCertified": "Ditandakan secara jelas sebagai bersijil halal."
+    },
+    "disclaimerTitle": "Bukan pensijilan rasmi",
+    "disclaimerBody": "Pengimbas ini BUKAN pemeriksaan halal bersijil. Penilaian ini berdasarkan padanan automatik data bahan awam (Open Food Facts) dengan senarai istilah yang diketahui - ia mungkin mengandungi kesilapan dan tidak menggantikan pensijilan rasmi. Untuk produk penting, semak sendiri sumbernya atau hubungi pengeluar."
+  },
+  "time": {
+    "hoursShort": "j",
+    "minutesShort": "min",
+    "secondsShort": "s"
+  },
+  "prayer": {
+    "loading": "Memuatkan waktu solat…",
+    "unavailable": "Waktu solat tidak tersedia buat masa ini (luar talian & tiada cache).",
+    "next": "Solat seterusnya",
+    "timeLeft": "baki {time}",
+    "icsExport": "Eksport kalendar (.ics)",
+    "playAzan": "Mainkan azan",
+    "weekView": "Gambaran mingguan",
+    "travel": {
+      "banner": "Sedang bermusafir · {km} km dari kampung halaman",
+      "qasrTitle": "Qasar & Jamak",
+      "qasrDesc": "Sebagai musafir, anda boleh memendekkan solat Zohor, Asar dan Isyak kepada 2 rakaat (qasar) dan menggabungkan Zohor dengan Asar atau Maghrib dengan Isyak (jamak)."
+    },
+    "sunrise": "Syuruk (terbit)",
+    "iqama": "Iqamah",
+    "lateWarning": {
+      "title": "Peringatan boleh tiba lewat",
+      "body": "Tanpa kebenaran “Penggera & peringatan”, Android menangguhkan pemberitahuan solat sehingga kira-kira sejam.",
+      "action": "Benarkan sekarang"
+    }
+  },
+  "prayerWeek": {
+    "title": "Gambaran mingguan",
+    "subtitle": "Kesemua 5 waktu solat untuk 7 hari akan datang",
+    "loading": "Memuatkan waktu mingguan…",
+    "unavailable": "Waktu mingguan tidak tersedia buat masa ini (luar talian & tiada cache).",
+    "locationHint": "Untuk {location} — kaedah pengiraan/mazhab Asar seperti dalam tetapan."
+  },
+  "dashboard": {
+    "reorder": {
+      "title": "Sesuaikan papan pemuka",
+      "subtitle": "Tentukan susunan dan keterlihatan kad skrin utama – kad solat seterusnya dan jadual waktu solat sentiasa kelihatan.",
+      "locked": "Sentiasa kelihatan",
+      "moveUp": "Alih ke atas",
+      "moveDown": "Alih ke bawah",
+      "reset": "Pulihkan susunan lalai"
+    },
+    "cards": {
+      "hero": "Solat seterusnya",
+      "ramadanCard": "Detik imbas Ramadan",
+      "travelBanner": "Notis mod perjalanan",
+      "prayerTable": "Jadual waktu solat"
+    }
+  },
+  "qibla": {
+    "noMagnetometer": "Tiada magnetometer dijumpai pada peranti ini - arah hanya berdasarkan bearing ke Kaabah, bukan orientasi peranti.",
+    "bearingInfo": "Arah ke Kaabah dari lokasi anda",
+    "locationFailed": "Lokasi tidak dapat ditentukan - pengiraan menggunakan lokasi terakhir yang ditetapkan.",
+    "north": "U",
+    "east": "T",
+    "south": "S",
+    "west": "B",
+    "enableCompass": "Aktifkan kompas",
+    "dir": {
+      "n": "Utara",
+      "no": "Timur Laut",
+      "o": "Timur",
+      "so": "Tenggara",
+      "s": "Selatan",
+      "sw": "Barat Daya",
+      "w": "Barat",
+      "nw": "Barat Laut"
+    },
+    "deviceHeading": "Arah peranti: {deg}°",
+    "aligned": "Arah adalah betul - anda menghadap ke Kaabah",
+    "calibrateHint": "Arah salah? Tentukur kompas: gerakkan telefon beberapa kali dalam bentuk angka 8, jauh daripada logam/magnet.",
+    "accuracyDisclaimer": "Arah ini berdasarkan data magnetometer peranti anda dan mungkin sedikit menyimpang disebabkan oleh logam atau peranti elektronik berhampiran.",
+    "distanceKm": "{km} km ke Kaabah",
+    "ar": {
+      "compassTab": "Kompas",
+      "cameraTab": "Kamera",
+      "instruction": "Gerakkan telefon anda sehingga penanda Kaabah berada di tengah.",
+      "turnLeft": "Pusing ke kiri",
+      "turnRight": "Pusing ke kanan",
+      "permissionTitle": "Akses kamera diperlukan",
+      "permissionBody": "Salati memaparkan arah kiblat pada imej kamera. Imej hanya dipaparkan secara langsung dan tidak disimpan atau dihantar.",
+      "cameraDenied": "Akses kamera ditolak. Benarkannya dalam tetapan peranti, atau teruskan menggunakan kompas.",
+      "backToCompass": "Kembali ke kompas",
+      "notAvailableWeb": "Paparan AR memerlukan kamera telefon dan tidak tersedia di web."
+    }
+  },
+  "calendar": {
+    "offlineNotice": "Luar talian - data Hijrah dikira secara tempatan dan boleh berbeza ±1 hari daripada tarikh rasmi.",
+    "sightingNotice": "Tarikh yang bergantung kepada cerapan anak bulan (cth. permulaan Ramadan/Eidulfitri) adalah pengiraan - tarikh cerapan tempatan mungkin berbeza.",
+    "weekdays": {
+      "mo": "Isn",
+      "tu": "Sel",
+      "we": "Rab",
+      "th": "Kha",
+      "fr": "Jum",
+      "sa": "Sab",
+      "su": "Ahd"
+    },
+    "months": {
+      "1": "Januari",
+      "2": "Februari",
+      "3": "Mac",
+      "4": "April",
+      "5": "Mei",
+      "6": "Jun",
+      "7": "Julai",
+      "8": "Ogos",
+      "9": "September",
+      "10": "Oktober",
+      "11": "November",
+      "12": "Disember"
+    },
+    "holidaysThisMonth": "Peristiwa bulan ini",
+    "hijriSuffix": "H",
+    "days": {
+      "newYear": "Tahun Baharu Islam (1 Muharam)",
+      "ashura": "Hari Asyura (10 Muharam)",
+      "mawlid": "Maulidur Rasul صلى الله عليه وسلم (12 Rabiulawal)",
+      "miraj": "Israk dan Mikraj (27 Rejab)",
+      "ramadanStart": "Permulaan Ramadan",
+      "laylatAlQadr": "Lailatulqadar (sering disambut pada malam ke-27)",
+      "eidFitr": "Eidulfitri (perayaan berbuka puasa)",
+      "arafah": "Hari Arafah (9 Zulhijah)",
+      "eidAdha": "Eiduladha (perayaan korban)"
+    },
+    "upcoming": "Peristiwa akan datang"
+  },
+  "hijriConverter": {
+    "title": "Penukar Tarikh Hijri",
+    "subtitle": "Tukar sebarang tarikh antara kalendar Masihi dan Hijri.",
+    "modeGregorianToHijri": "Masihi → Hijri",
+    "modeHijriToGregorian": "Hijri → Masihi",
+    "gregorianDate": "Tarikh Masihi",
+    "hijriDate": "Tarikh Hijri",
+    "day": "Hari",
+    "month": "Bulan",
+    "year": "Tahun",
+    "result": "Keputusan",
+    "loading": "Mengira …",
+    "offlineNotice": "Luar talian - dikira secara tempatan, mungkin berbeza sehingga 1 hari.",
+    "disclaimer": "Tarikh Hijri bergantung pada kaedah cerapan anak bulan dan boleh berbeza 1 hari mengikut kawasan.",
+    "error": {
+      "incomplete": "Sila isi hari, bulan dan tahun dalam angka.",
+      "range": "Nilai di luar julat — bulan 1–12, tahun bermula 1.",
+      "nonexistent": "Tarikh itu tidak wujud — sila semak harinya."
+    }
+  },
+  "mosques": {
+    "title": "Masjid",
+    "loadError": "Masjid tidak dapat dimuatkan.",
+    "empty": "Tiada masjid dijumpai dalam radius {km} km.",
+    "osmNote": "Data lokasi daripada © Penyumbang OpenStreetMap, mungkin tidak lengkap atau lapuk.",
+    "openRoute": "Buka laluan",
+    "kmAway": "{km} km jauh",
+    "map": "Peta",
+    "list": "Senarai",
+    "mapError": "Peta tidak dapat dimuatkan. Gunakan paparan senarai.",
+    "offlineCached": "Tiada sambungan internet — memaparkan masjid yang terakhir dimuatkan."
+  },
+  "a11y": {
+    "up": "Atas",
+    "down": "Bawah",
+    "left": "Kiri",
+    "right": "Kanan",
+    "close": "Tutup",
+    "back": "Kembali",
+    "playAudio": "Dengar",
+    "addBookmark": "Tambah penanda halaman",
+    "removeBookmark": "Buang penanda halaman",
+    "share": "Kongsi ayat",
+    "noteAyah": "Nota untuk ayat",
+    "bookmarks": "Penanda halaman",
+    "previousMonth": "Bulan sebelumnya",
+    "nextMonth": "Bulan seterusnya",
+    "markDone": "Tandakan selesai",
+    "markNotDone": "Buang tanda",
+    "search": "Cari",
+    "decrease": "Kurangkan",
+    "increase": "Tambah"
+  },
+  "study": {
+    "title": "Kajian",
+    "subtitle": "Kursus berstruktur dengan rujukan sumber - langkah demi langkah dengan kuiz",
+    "source": "Sumber",
+    "sections": {
+      "quranArabic": "Mendalami bahasa Arab Al-Quran",
+      "islamicStudies": "Akidah & sejarah",
+      "bonus": "Bonus"
+    },
+    "reorder": {
+      "cta": "Susun semula susunan",
+      "ctaDesc": "Tentukan sendiri susunan kursus anda dipaparkan",
+      "title": "Susunan kursus",
+      "subtitle": "Kategori kekal sama – susun semula kursus dalam setiap kategori",
+      "moveUp": "Alih ke atas",
+      "moveDown": "Alih ke bawah",
+      "reset": "Pulihkan susunan lalai"
+    },
+    "placementCtaDesc": "Sudah tahu tentang topik ini? Terus mula dari bahagian lebih maju",
+    "courses": {
+      "tajwid": {
+        "title": "Tajwid - kaedah bacaan",
+        "desc": "Nun sakinah, qalqalah, jenis-jenis mad, waqaf - dengan audio ayat"
+      },
+      "aqida": {
+        "title": "Akidah - asas keimanan",
+        "desc": "Enam rukun iman, dijelaskan dengan mudah difahami"
+      },
+      "fiqh-ibadat": {
+        "title": "Fiqh Ibadat",
+        "desc": "Taharah, solat, puasa, zakat dan haji sebagai bahan pelajaran: syarat, rukun, wajibat dan pembatal - perbezaan mazhab disebut (24 pelajaran)"
+      },
+      "seerah": {
+        "title": "Sirah - kehidupan Nabi ﷺ",
+        "desc": "Secara kronologi daripada Makkah hingga Madinah"
+      },
+      "prophets": {
+        "title": "Kisah para nabi",
+        "desc": "Daripada Adam hingga Isa - dengan bukti daripada Al-Quran"
+      },
+      "sahaba": {
+        "title": "Sahabat & ulama",
+        "desc": "Abu Bakar, Umar, Uthman, Ali, Khadijah, Bilal, Aisyah, Fatimah, Salman al-Farisi, baki Sepuluh yang dijanjikan syurga + empat imam besar - riwayat hidup bersumber (15 pelajaran)"
+      },
+      "akhlaq": {
+        "title": "Akhlak - watak & kebajikan",
+        "desc": "Keutamaan dari sidq hingga adil dan penyakit hati: hasad, kibr, ghibah, riak, bakhil - serta syukur, tawakal dan taubat, bersumber (14 pelajaran)"
+      },
+      "nikah": {
+        "title": "Fiqh perkahwinan & keluarga",
+        "desc": "Tujuan perkahwinan, hak dan kewajipan, akad nikah, talak, mahram, khuluk dan idah, nafkah, hadanah, pendidikan anak - bersumber (9 pelajaran)"
+      },
+      "nawawi40": {
+        "title": "40 Hadis (an-Nawawi)",
+        "desc": "42 hadis teras (an-Nawawi + Ibn Rajab), dengan penjelasan, lengkap secara luar talian"
+      },
+      "grammar": {
+        "title": "Tatabahasa Al-Quran",
+        "desc": "Kursus asas nahu + pendalaman: memahami struktur ayat Al-Quran (16 pelajaran)"
+      },
+      "amau": {
+        "title": "Bahasa Arab harian",
+        "desc": "869 perkataan & ayat harian: kesemua 699 perbendaharaan kata + kesemua 170 ayat harian, dalam 54 pelajaran"
+      },
+      "madinah": {
+        "title": "Bahasa Arab Madinah",
+        "desc": "Kursus klasik (Dr. V. Abdur Rahim): Buku 1–4 lengkap (83 pelajaran, 872 perbendaharaan kata)"
+      },
+      "dialects": {
+        "title": "Dialek bahasa Arab",
+        "desc": "Maghribi, Levantin, Teluk, Mesir - empat dialek pertuturan utama berbanding bahasa Arab fasih (28 pelajaran: salam, nombor, soalan, keluarga, makanan, perasaan, ungkapan)"
+      }
+    },
+    "dialects": {
+      "reorderTitle": "Susunan kumpulan dialek",
+      "groups": {
+        "maghrebi": "Maghribi",
+        "levantine": "Levantin",
+        "gulf": "Teluk",
+        "egyptian": "Mesir"
+      },
+      "moveUp": "Alih ke atas",
+      "moveDown": "Alih ke bawah"
+    },
+    "todayGoal": "Hari ini: {x}/{y} pelajaran selesai",
+    "streak": "{n} hari jujukan pembelajaran",
+    "weeklyReview": {
+      "cta": "Ringkasan Mingguan",
+      "ctaDesc": "Minggu ini dalam angka",
+      "title": "Ringkasan Mingguan Anda",
+      "subtitle": "Apa yang anda pelajari dalam 7 hari lepas",
+      "lessons": "Pelajaran",
+      "questions": "Soalan dijawab",
+      "best": "Markah terbaik",
+      "streak": "Hari berturut-turut",
+      "empty": "Belum belajar apa-apa minggu ini - mulakan sekarang!",
+      "shareImage": "Kongsi sebagai imej"
+    },
+    "streakOne": "1 hari jujukan pembelajaran"
+  },
+  "review": {
+    "title": "Ulangkaji",
+    "emptyTitle": "Tiada yang tertunggak",
+    "emptyText": "Semuanya masih segar dalam ingatan. Selesaikan pelajaran - ulangkaji akan muncul di sini pada masa yang tepat.",
+    "passed": "Hebat! Jarak semakin membesar - apa yang dipelajari sudah kekal.",
+    "failed": "Tiada masalah - topik ini akan muncul lagi lebih cepat.",
+    "due": "tertunggak",
+    "start": "Ulangkaji sekarang"
+  },
+  "exam": {
+    "title": "Peperiksaan akhir",
+    "passed": "Lulus! Anda telah menguasai kursus ini.",
+    "failed": "Belum lulus (dari 80%). Ulangkaji pelajaran dan cuba lagi.",
+    "locked": "Selesaikan semua pelajaran dahulu",
+    "start": "Mula peperiksaan",
+    "done": "Peperiksaan lulus"
+  },
+  "weak": {
+    "title": "Latih kelemahan",
+    "emptyTitle": "Tiada kelemahan",
+    "emptyText": "Buat masa ini tiada apa yang baru-baru ini anda jawab salah. Teruskan!",
+    "passed": "Belajar daripada kesilapan - begitulah kemajuan berlaku.",
+    "failed": "Terus berusaha - topik ini akan terus muncul di sini.",
+    "suggest": "Baru sahaja dijawab salah - latih secara khusus sekarang"
+  },
+  "write": {
+    "title": "Latihan menulis",
+    "subtitle": "Lukis huruf daripada ingatan dan kemudian bandingkan dengan contoh - dengar namanya",
+    "clear": "Padam",
+    "hit": "Tepat",
+    "next": "Seterusnya",
+    "compare": "Bandingkan",
+    "drawFromMemory": "Lukis daripada ingatan - contoh hanya muncul semasa membandingkan.",
+    "hint": "Bandingkan garisan anda dengan contoh lut sinar dan nilai secara jujur - dengan 'Seterusnya' ke huruf berikutnya."
+  },
+  "landing": {
+    "title": "Salati",
+    "tagline": "Rakan anda untuk solat, Al-Quran dan ilmu",
+    "subtitle": "Waktu solat, kiblat, Al-Quran dengan bacaan, doa, hadis, pencari masjid dan laluan pembelajaran yang lengkap - boleh digunakan secara luar talian, tanpa iklan, tanpa penjejakan.",
+    "ctaTry": "Cuba Pembaca Al-Quran",
+    "ctaStudy": "Terokai laluan pembelajaran",
+    "heroDownload": "Muat turun percuma",
+    "heroAppStore": "Muat turun di App Store",
+    "heroApk": "Muat turun APK (Android)",
+    "heroDownloadNote": "Percuma, tanpa iklan. iPhone di App Store, Android sebagai APK terus. Google Play tidak lama lagi.",
+    "heroDownloadNotePlay": "Percuma, tanpa iklan. iPhone di App Store, Android di Google Play atau sebagai APK terus.",
+    "heroPlay": "Dapatkan di Google Play",
+    "featuresTitle": "Semua yang anda perlukan",
+    "f1Title": "Waktu solat & kiblat",
+    "f1Desc": "Waktu tepat untuk lokasi anda, kompas ke Kaabah",
+    "f2Title": "Al-Quran",
+    "f2Desc": "Semua qari dan terjemahan, penanda halaman, navigasi juzuk",
+    "f3Title": "Belajar membaca Al-Quran",
+    "f3Desc": "Pelajaran daripada abjad hingga surah pertama, dengan audio",
+    "f4Title": "Kajian",
+    "f4Desc": "Kursus daripada akidah hingga tatabahasa - dengan ujian penempatan",
+    "f5Title": "Doa & hadis",
+    "f5Desc": "Doa dan koleksi hadis dengan rujukan sumber",
+    "f6Title": "Pencari masjid",
+    "f6Desc": "Masjid dan surau berdekatan anda",
+    "f7Title": "Kuiz & tasbih",
+    "f7Desc": "Mod kuiz, pengira zikir dengan sasaran dan statistik harian",
+    "f8Title": "Peribadi & luar talian",
+    "f8Desc": "Tiada penjejakan, tiada iklan, tiada akaun diperlukan",
+    "screenshotsTitle": "Sekilas pandang aplikasi",
+    "tabletTitle": "Selesa juga pada tablet",
+    "tabletLead": "Pada skrin besar, laman utama dan tetapan dipaparkan dalam dua lajur dan senarai sebagai grid — bukan susun atur telefon yang diregangkan.",
+    "storeTitle": "Muat turun Salati",
+    "storeSoon": "Akan tersedia tidak lama lagi",
+    "storeAvailable": "Tersedia sekarang",
+    "footer": "Salati - solat, Al-Quran dan ilmu dalam satu aplikasi.",
+    "apkButton": "Muat turun terus APK Android",
+    "apkHint": "Pemasangan terus tanpa kedai aplikasi - Android akan meminta kebenaran untuk sumber tidak dikenali.",
+    "apkDownloading": "Memuat turun … {p} %",
+    "tvTitle": "Untuk televisyen juga",
+    "tvDesc": "Salati TV ialah aplikasi pendamping percuma untuk Android TV dan Google TV: pembaca al-Quran dengan bacaan dan perkataan yang dibaca ditanda secara langsung, jam solat yang tenang untuk ruang tamu, qari dengan surah penuh, Radio Al-Quran 24 jam, video pembelajaran, podcast dan kuiz pengetahuan.",
+    "tvF1Title": "Jam solat di ruang tamu",
+    "tvF1Desc": "Paparan besar dan tenang bagi lima waktu solat – dikira sepenuhnya pada peranti, tanpa internet.",
+    "tvF2Title": "Pembaca al-Quran dengan tanda perkataan",
+    "tvF2Desc": "Arab, transliterasi & terjemahan – bacaan menanda perkataan yang dilafazkan secara langsung dan beralih ayat demi ayat.",
+    "tvF3Title": "Telefon sebagai alat kawalan",
+    "tvF3Desc": "Imbas kod QR dan telefon anda mengawal televisyen dalam Wi-Fi yang sama – serta menjawab kuiz sebagai skrin kedua. Tanpa akaun, semuanya setempat.",
+    "tvBadge": "Salati TV · Tidak lama lagi di Google Play Store",
+    "tvBadgeLive": "Salati TV · di Google Play Store",
+    "trust1Title": "100% percuma",
+    "trust1Desc": "Semua ciri, selama-lamanya. Tiada langganan, tiada sekatan berbayar.",
+    "trust2Title": "Tiada iklan, tiada penjejakan",
+    "trust2Desc": "Tiada akaun diperlukan. Data anda kekal milik anda.",
+    "trust3Title": "AI berjalan secara tempatan pada peranti anda",
+    "trust3Desc": "Semakan bacaan memproses rakaman anda terus pada peranti - ia tidak pernah meninggalkannya.",
+    "trust4Title": "Boleh digunakan secara luar talian",
+    "trust4Desc": "Sekali dimuatkan, sentiasa bersama: Al-Quran, kursus, doa - walaupun tanpa internet.",
+    "ctaKi": "AI Salati (Beta)",
+    "faqTitle": "Soalan lazim",
+    "faq1Q": "Adakah Salati benar-benar percuma?",
+    "faq1A": "Ya, sepenuhnya. Semua ciri boleh digunakan tanpa langganan, tanpa pembelian dalam aplikasi dan tanpa iklan. Tiada versi premium - apa yang anda lihat ialah aplikasi penuh.",
+    "faq2Q": "Adakah data saya dijejaki?",
+    "faq2A": "Tidak. Salati tidak memerlukan akaun, tidak mengandungi SDK iklan atau analitik dan tidak menghantar data penggunaan kepada kami. Tetapan, penanda dan kemajuan pembelajaran kekal pada peranti anda.",
+    "faq3Q": "Adakah aplikasi berfungsi luar talian?",
+    "faq3A": "Kandungan teras ya: Al-Quran, kursus, doa dan hadis berfungsi luar talian selepas dimuatkan buat kali pertama. Internet hanya diperlukan untuk perkara seperti audio tilawah pada mainan pertama, pencari masjid dan pengemaskinian waktu solat.",
+    "faq4Q": "Apakah bahasa yang disokong Salati?",
+    "faq4A": "14 bahasa: Jerman, Inggeris, Turki, Arab, Sepanyol, Perancis, Indonesia, Melayu, Rusia, Urdu, Parsi, Bengali, Swahili dan Pashto.",
+    "faq5Q": "Dari mana waktu solat datang dan apakah kaedah pengiraan yang ada?",
+    "faq5A": "Waktu dikira untuk lokasi anda melalui API AlAdhan. Anda boleh memilih daripada 13 kaedah pengiraan (termasuk Diyanet, Liga Muslim Sedunia, ISNA, Umm al-Qura) dan menukar Asar antara waktu awal dan waktu Hanafi.",
+    "faq6Q": "Dari mana kandungan dan sumbernya?",
+    "faq6A": "Teks Al-Quran, terjemahan dan tilawah datang daripada sumber terbuka yang mantap (alquran.cloud, quran.com, islamic.network). Doa dan hadis disertakan sumbernya, dan teks kursus telah disemak secara editorial. Salati tidak menggantikan ulama - untuk soalan penting, sila rujuk orang yang berkelayakan.",
+    "faq7Q": "Adakah aplikasi tersedia untuk iOS dan Android?",
+    "faq7A": "iOS: Salati tersedia di App Store. Android: anda boleh memuat turun APK terus di halaman ini; penyenaraian Google Play sedang disemak. Salati juga berfungsi dalam mana-mana pelayar moden.",
+    "faq8Q": "Apakah AI Salati dan adakah soalan saya kekal peribadi?",
+    "faq8A": "AI Salati menjawab soalan hanya daripada al-Quran, 40 hadis an-Nawawi, doa yang disahkan dan teks kursus Salati. Ia memetik bahagian yang sesuai secara harfiah dan menyatakan sumber bagi setiap bahagian - ia tidak merumuskan apa-apa sendiri, jadi ia juga tidak boleh mereka-reka. Semuanya berjalan setempat: soalan anda tidak meninggalkan peranti dan tidak sampai ke mana-mana pelayan.",
+    "tvApkButton": "Muat turun APK untuk Fire TV"
+  },
+  "tvRemote": {
+    "back": "Kembali",
+    "clock": "Jam solat",
+    "connectedTo": "Bersambung dengan {name}",
+    "connecting": "Menyambung …",
+    "denied": "Sambungan ditolak – sila imbas kod QR sekali lagi.",
+    "disconnect": "Putuskan",
+    "dpad": "Kawalan",
+    "error": "Sambungan gagal. Adakah telefon dan TV pada Wi-Fi yang sama?",
+    "home": "Utama",
+    "manualCodePlaceholder": "Kod pada TV",
+    "manualConnect": "Sambung",
+    "manualHostPlaceholder": "Alamat, cth. 192.168.1.50:8787",
+    "manualInvalid": "Alamat atau kod salah — kedua-duanya dipaparkan pada TV.",
+    "manualOpen": "Tiada kod QR? Masukkan secara manual",
+    "openOnTv": "Buka pada TV",
+    "pairing": "Sambung",
+    "permissionBody": "Untuk mengimbas kod QR pada televisyen anda, Salati memerlukan akses kamera. Tiada apa-apa dirakam atau disimpan.",
+    "podcasts": "Podcast",
+    "quiz": "Kuiz",
+    "quizDone": "Pusingan tamat – kembali ke TV untuk pusingan baharu.",
+    "quizProgress": "Soalan {i} / {n}",
+    "quran": "Baca Al-Quran",
+    "radio": "Radio Al-Quran",
+    "reciters": "Qari",
+    "reels": "Reels",
+    "retry": "Imbas semula",
+    "scanHint": "Buka Salati TV, ketik Sambung dan imbas kod QR pada televisyen.",
+    "settings": "Tetapan",
+    "title": "Sambung Salati TV",
+    "videos": "Video",
+    "webOnly": "Pemasangan TV hanya berfungsi dalam aplikasi telefon Salati (iOS/Android) pada Wi-Fi yang sama dengan televisyen."
+  },
+  "placement": {
+    "title": "Ujian penempatan",
+    "step": "Peringkat {n}/{total}",
+    "recommendation": "Kami mencadangkan anda mula di sini - semua sebelum ini dianggap lulus.",
+    "confirm": "Mula di sini"
+  },
+  "mirath": {
+    "title": "Kalkulator Faraid",
+    "subtitle": "Bahagian faraid tetap menurut surah An-Nisa 4:11-12/176 untuk pasangan, ibu bapa, anak dan adik-beradik seibu sebapa",
+    "deceasedGender": "Jantina si mati",
+    "genderMale": "Lelaki",
+    "genderFemale": "Perempuan",
+    "hasWife": "Isteri yang masih hidup",
+    "hasHusband": "Suami yang masih hidup",
+    "wivesCount": "Bilangan isteri",
+    "sons": "Anak lelaki",
+    "daughters": "Anak perempuan",
+    "fatherAlive": "Bapa masih hidup",
+    "motherAlive": "Ibu masih hidup",
+    "fullBrothers": "Adik-beradik lelaki seibu sebapa",
+    "fullSisters": "Adik-beradik perempuan seibu sebapa",
+    "resultTitle": "Bahagian harta pusaka",
+    "noHeirs": "Sila nyatakan sekurang-kurangnya seorang waris.",
+    "husband": "Suami",
+    "wife": "Isteri",
+    "father": "Bapa",
+    "mother": "Ibu",
+    "son": "Anak lelaki",
+    "daughter": "Anak perempuan",
+    "brother": "Adik-beradik lelaki",
+    "sister": "Adik-beradik perempuan",
+    "gharrawaynNote": "Kes khas 'Gharrawain' digunakan: ibu menerima 1/3 daripada baki selepas bahagian pasangan (pendapat majoriti ulama).",
+    "awlNote": "Aul digunakan: jumlah bahagian tetap melebihi keseluruhan harta pusaka dan dikurangkan secara berkadar (amalan yang diiktiraf sejak zaman khalifah).",
+    "unresolvedNote": "Baki belum diselesaikan - untuk susunan waris ini terdapat pendapat ulama yang berbeza (cth. radd atau saudara lain). Sila rujuk seorang yang berilmu.",
+    "disclaimer": "Kalkulator ringkas: hanya meliputi pasangan, ibu bapa, anak dan adik-beradik seibu sebapa. Cucu, adik-beradik tiri, datuk nenek dan kes khas TIDAK diliputi. Untuk pembahagian faraid sebenar, sentiasa rujuk seorang yang berilmu dalam undang-undang faraid Islam."
+  },
+  "sync": {
+    "title": "Pindahkan kemajuan",
+    "intro": "Pindahkan kemajuan pembelajaran, penanda halaman dan statistik anda ke peranti lain atau ke pelayar web - tanpa akaun dan tanpa pelayan sendiri. Satu kod akan dijana, yang anda pindahkan sendiri (cth. melalui nota atau mesej kepada diri sendiri).",
+    "exportTitle": "Jana kod",
+    "exportButton": "Jana kod",
+    "exportHint": "Salin kod ini dan pindahkan ke peranti lain anda - melalui aplikasi nota, mesej kepada diri sendiri atau e-mel.",
+    "copyButton": "Salin",
+    "copied": "Disalin!",
+    "importTitle": "Tampal kod",
+    "importPlaceholder": "Tampal kod di sini…",
+    "importButton": "Terapkan",
+    "importSuccess": "Kemajuan diterapkan! Mula semula aplikasi supaya semuanya dikemas kini di mana-mana.",
+    "importError": "Kod ini tidak sah atau rosak.",
+    "confirmTitle": "Ganti kemajuan?",
+    "confirmBody": "Kod ini dicipta pada {date}. Kemajuan anda pada peranti ini akan diganti sepenuhnya.",
+    "confirmAction": "Ganti"
+  },
+  "impressum": {
+    "title": "Notis Undang-undang",
+    "subtitle": "Maklumat menurut § 5 DDG Jerman",
+    "providerSection": "Penyedia perkhidmatan",
+    "company": "Syarikat",
+    "companyValue": "Salatibox - pemilik Domenic Moran",
+    "owner": "Pemilik",
+    "ownerValue": "Domenic Moran",
+    "address": "Alamat",
+    "addressValue": "Heidelberger Str. 36\n12059 Berlin\nJerman",
+    "contactSection": "Hubungi",
+    "phone": "Telefon",
+    "email": "E-mel",
+    "website": "Laman web",
+    "taxSection": "Keterangan cukai",
+    "smallBusiness": "Perniagaan kecil",
+    "smallBusinessValue": "Menurut § 19 UStG, tiada cukai nilai tambah dikenakan.",
+    "vatId": "No. Cukai Nilai Tambah",
+    "responsibleSection": "Bertanggungjawab bagi kandungan",
+    "responsibleText": "Bertanggungjawab menurut § 18 Abs. 2 MStV: Domenic Moran, Heidelberger Str. 36, 12059 Berlin.",
+    "disputeSection": "Penyelesaian pertikaian",
+    "disputeVsbgText": "Kami tidak bersedia atau berkewajipan untuk mengambil bahagian dalam prosedur penyelesaian pertikaian di hadapan badan timbang tara pengguna (§ 36 VSBG).",
+    "liabilitySection": "Penafian liabiliti",
+    "liabilityContentTitle": "Liabiliti bagi kandungan",
+    "liabilityContentText": "Sebagai penyedia perkhidmatan kami bertanggungjawab terhadap kandungan kami sendiri dalam aplikasi ini menurut undang-undang am, selaras dengan § 7(1) DDG. Namun menurut §§ 8 hingga 10 DDG kami tidak diwajibkan memantau maklumat pihak ketiga yang dihantar atau disimpan, atau menyiasat keadaan yang menunjukkan aktiviti menyalahi undang-undang. Sebaik kami mengetahui pelanggaran sedemikian, kami akan mengeluarkan kandungan berkenaan dengan segera.",
+    "liabilityLinksTitle": "Liabiliti bagi sumber data luaran",
+    "liabilityLinksText": "Aplikasi ini memuatkan data al-Quran, hadis, peta dan produk daripada sumber luaran yang bersifat awam. Sumber mana satu dijelaskan sepenuhnya dalam notis privasi dan di bawah „Sumber & lesen\" dalam tetapan. Ketepatan kandungan pihak ketiga itu menjadi tanggungjawab penyedianya masing-masing; kami menyemaknya sebaik pengetahuan kami, tetapi tidak dapat mengawasinya secara berterusan bagi setiap perubahan.",
+    "copyrightTitle": "Hak cipta",
+    "copyrightText": "Kandungan yang dihasilkan oleh pengendali aplikasi tertakluk kepada undang-undang hak cipta Jerman. Penggandaan, pengubahsuaian, penyebaran dan sebarang bentuk pengeksploitasian di luar had hak cipta memerlukan kebenaran bertulis. Kandungan pihak ketiga - teks dan terjemahan al-Quran, hadis, data peta dan produk, fon serta model AI dan pengecaman pertuturan - didokumenkan bersama pemegang hak dan lesennya di bawah „Sumber & lesen\" dalam tetapan. Jika anda berpendapat sesuatu kandungan dalam Salati melanggar hak, tulis kepada salatibox@gmail.com - kami akan menyemaknya dan mengeluarkan kandungan berkenaan dengan segera."
+  },
+  "datenschutz": {
+    "title": "Dasar Privasi",
+    "subtitle": "Maklumat menurut Perkara 13 dan 14 GDPR",
+    "intro": "Pernyataan ini terpakai bagi aplikasi Salati (Android dan iOS), versi web di salati.pro serta aplikasi Salati TV. Salati memproses data peribadi sesedikit mungkin: tiada akaun pengguna, tiada pendaftaran, tiada iklan, tiada penjejakan dan tiada perisian analitik. Kemajuan pembelajaran, statistik dan tetapan anda kekal pada peranti anda. Namun beberapa fungsi memang memanggil perkhidmatan pihak ketiga - yang mana satu, data apa yang dihantar dan atas dasar undang-undang apa, dijelaskan sepenuhnya di bawah.",
+    "controllerSection": "Pihak bertanggungjawab",
+    "controllerText": "Salatibox - pemilik Domenic Moran, Heidelberger Str. 36, 12059 Berlin, Jerman. E-mel: salatibox@gmail.com, telefon: +49 30 767 645 46. Undang-undang tidak mewajibkan pelantikan pegawai perlindungan data.",
+    "locationSection": "Data lokasi",
+    "locationText": "Waktu solat, arah kiblat, carian masjid dan carian tempat halal berdekatan memerlukan lokasi anda. Aplikasi hanya memintanya dengan kebenaran anda dan hanya „semasa menggunakan aplikasi\".\n\nKoordinat anda kemudian dihantar kepada perkhidmatan bebas berikut: api.aladhan.com (Islamic Network) untuk waktu solat dan kalendar bulanan, overpass-api.de untuk carian masjid dan halal, serta tile.openstreetmap.org untuk paparan peta. Jika anda menaip nama bandar secara manual, teks carian anda dihantar ke nominatim.openstreetmap.org.\n\nKami tidak menyimpan koordinat anda pada pelayan kami sendiri. Perkhidmatan yang disebut menerimanya tanpa nama, akaun atau pengenal peranti, tetapi - seperti setiap permintaan internet - bersama alamat IP anda. Anda boleh menarik balik kebenaran lokasi pada bila-bila masa dalam tetapan sistem dan memasukkan nama bandar sebagai ganti. Dasar undang-undang: Perkara 6(1)(a) GDPR (persetujuan melalui pemberian kebenaran lokasi), boleh ditarik balik bila-bila masa.",
+    "notificationsSection": "Pemberitahuan",
+    "notificationsText": "Peringatan solat, makluman sahur dan berbuka serta peringatan pembelajaran dijadualkan secara setempat oleh sistem pengendalian peranti anda. Tiada pelayan tolak, tiada token tolak dan tiada penghantaran kepada kami atau pihak ketiga. Dasar undang-undang: Perkara 6(1)(a) GDPR (kebenaran pemberitahuan).",
+    "storageSection": "Storan setempat",
+    "storageText": "Kemajuan pembelajaran, penanda buku, penjejak solat, statistik, bacaan yang dimuat turun dan semua tetapan disimpan hanya pada peranti anda, dan dalam versi web dalam storan pelayar anda. Kami tidak mengendalikan pelayan yang menerima atau menyimpan data ini. Anda boleh memadamnya dalam aplikasi di bawah Tetapan dan „Storan\", atau membuangnya sepenuhnya dengan menyahpasang aplikasi.",
+    "syncSection": "Pemindahan antara peranti",
+    "syncText": "Fungsi „pindahkan kemajuan\" menjana kod hanya pada peranti anda. Kod itu anda sendiri yang menyampaikannya, misalnya melalui nota atau mesej kepada diri sendiri - kami tidak pernah menerimanya, melihatnya atau menyimpannya.",
+    "rightsSection": "Hak anda",
+    "rightsText": "Menurut GDPR anda mempunyai hak berikut: akses (Perkara 15), pembetulan (Perkara 16), penghapusan (Perkara 17), pengehadan pemprosesan (Perkara 18), kemudahalihan data (Perkara 20) dan bantahan terhadap pemprosesan berasaskan kepentingan sah (Perkara 21). Persetujuan yang diberikan boleh anda tarik balik bila-bila masa untuk masa hadapan (Perkara 7(3)), secara praktikal dengan menarik balik kebenaran berkenaan dalam tetapan sistem.\n\nDalam amalan, permintaan akses dan penghapusan lazimnya tidak membuahkan apa-apa, kerana kami tidak menyimpan apa-apa tentang anda dan tanpa akaun kami tidak dapat mengaitkan apa-apa dengan anda; data pada peranti anda boleh anda lihat dan padam sendiri. Walau begitu kami tetap akan menjawab permintaan anda - tulis kepada salatibox@gmail.com.\n\nTanpa mengira itu, anda berhak membuat aduan kepada pihak berkuasa penyeliaan perlindungan data (Perkara 77). Pihak berkuasa yang berwenang bagi kami ialah Pesuruhjaya Berlin bagi Perlindungan Data dan Kebebasan Maklumat, Alt-Moabit 59-61, 10555 Berlin, Jerman. Anda juga boleh menghubungi pihak berkuasa di tempat kediaman biasa anda.",
+    "cookiesSection": "Kuki & storan setempat",
+    "cookiesText": "Salati tidak menetapkan kuki penjejakan atau pengiklanan dan tidak menyertakan perisian analitik. Namun aplikasi dan versi web menyimpan data pada peranti anda supaya fungsinya dapat berjalan: tetapan dan data pembelajaran anda, dan dalam versi web juga model AI serta sejarah sembang AI dalam storan pelayar. Penyimpanan ini benar-benar perlu bagi fungsi yang anda minta secara jelas, maka ia tidak memerlukan persetujuan menurut § 25(2) No. 2 TDDDG Jerman. Anda boleh memadamnya melalui tetapan pelayar atau melalui „Storan\" dalam aplikasi.",
+    "changesSection": "Perubahan pernyataan ini",
+    "changesText": "Kami mengemas kini notis privasi ini setiap kali pemprosesan data dalam aplikasi berubah. Versi semasa sentiasa tersedia dalam aplikasi dan di salati.pro/datenschutz.",
+    "lastUpdated": "Dikemas kini: Julai 2026",
+    "noCollectionSection": "Apa yang kami tidak lakukan",
+    "noCollectionText": "- Tiada akaun pengguna, pendaftaran atau log masuk - secara teknikal kami tidak dapat mengenal pasti anda.\n- Tiada iklan dan tiada rangkaian iklan.\n- Tiada perisian analitik, penjejakan atau atribusi (tiada Google Analytics, tiada Firebase, tiada SDK Facebook).\n- Tiada penghantaran laporan ranap: log ralat kekal pada peranti.\n- Tiada pemberitahuan tolak, maka tiada token tolak.\n- Tiada penjualan atau perkongsian data untuk tujuan pengiklanan.\n- Tiada penentuan lokasi di latar belakang - lokasi hanya diminta semasa anda menggunakan aplikasi.",
+    "thirdPartySection": "Penerima: perkhidmatan luaran",
+    "thirdPartyText": "Untuk kandungan yang tidak disertakan dalam aplikasi, Salati memanggil antara muka awam pihak ketiga. Setiap panggilan itu secara teknikal pasti menghantar alamat IP anda kepada penyedia, bersama data permintaan yang disenaraikan. Kami tidak menghantar nama, pengenal akaun atau pengenal pengiklanan - semuanya memang tidak wujud.\n\n- api.aladhan.com (Islamic Network): waktu solat, kalendar bulanan, penukaran Hijrah. Dihantar: koordinat atau nama bandar, tarikh, kaedah pengiraan.\n- overpass-api.de, nominatim.openstreetmap.org, tile.openstreetmap.org (OpenStreetMap): carian masjid dan halal, carian bandar, jubin peta. Dihantar: koordinat dan jejari carian, atau teks carian anda.\n- api.alquran.cloud, cdn.islamic.network (Islamic Network): teks al-Quran, terjemahan, tafsir, audio bacaan. Dihantar: surah, ayat atau edisi yang diminta.\n- api.quran.com, audio.qurancdn.com, verses.quran.com, mirrors.quranicaudio.com (Quran.com / QuranicAudio): analisis kata demi kata, terjemahan, tafsir, audio bacaan. Dihantar: bahagian yang diminta.\n- www.mp3quran.net: senarai stesen radio al-Quran. Dihantar: bahasa aplikasi yang anda pilih.\n- cdn.jsdelivr.net (jsDelivr): koleksi hadis. Dihantar: koleksi dan nombor yang diminta.\n- hadeethenc.com (Ensiklopedia Hadis Nabawi Terjemahan): hadis yang disusun mengikut tema. Dihantar: bahasa yang dipilih dan tema atau nombor hadis yang diminta.\n- unpkg.com: pustaka peta Leaflet untuk peta masjid.\n- world.openfoodfacts.org (Open Food Facts): pengimbas halal. Dihantar: kod bar yang diimbas.\n- api.gold-api.com, api.frankfurter.dev: harga emas dan kadar tukaran untuk nisab zakat. Dihantar: mata wang yang dipilih.\n- huggingface.co: muat turun sekali sahaja bagi model pengecaman pertuturan untuk semakan bacaan.\n\nPenyedia ini bertanggungjawab secara bebas ke atas data yang mereka terima; notis privasi mereka sendiri turut terpakai. Dasar undang-undang: Perkara 6(1)(f) GDPR (kepentingan sah menyediakan fungsi yang anda panggil), dan bagi data lokasi juga Perkara 6(1)(a).\n\nBacaan suara: jika anda meminta huruf, suku kata atau perkataan Arab dibacakan, aplikasi menyerahkan teks itu kepada enjin pertuturan sistem pengendalian anda. Bergantung pada peranti dan tetapannya, enjin itu mungkin menggunakan suara awan; teks yang dibacakan kemudian sampai kepada penyedia sistem anda, misalnya Google atau Apple. Dalam tetapan sistem anda boleh memilih suara yang berjalan pada peranti.",
+    "ownInfraSection": "Infrastruktur kami sendiri",
+    "ownInfraText": "Salati tidak menyimpan akaun pengguna atau data pembelajaran pada pelayan sendiri. Namun untuk menyampaikan kandungan dan versi web, kami menggunakan tiga penyedia yang log pelayannya secara teknikal mengandungi alamat IP:\n\n- Cloudflare R2 (Cloudflare, Inc., AS): episod podcast berserta kulit dan indeks episod, bahan PDF, video pembelajaran, reels, himpunan sumber AI serta fail model AI dan semakan bacaan, serta tafsir bahasa Jerman.\n- Supabase Storage (Supabase, Inc., AS): kemas kini kandungan kursus dan indeks episod untuk versi aplikasi lama - permintaan baca sahaja, tanpa log masuk. Storan ini terletak di rantau EU Frankfurt (eu-central-1).\n- Vercel (Vercel, Inc., AS): pengehosan versi web salati.pro.\n\nDaripada log itu kami tidak membina profil pengguna dan tidak menggabungkannya dengan apa-apa. Dasar undang-undang: Perkara 6(1)(f) GDPR (kepentingan sah bagi penyampaian yang selamat dan berfungsi).",
+    "aiSection": "Salati AI",
+    "aiText": "Fungsi AI menjawab soalan semata-mata daripada korpus sumber yang disertakan dalam aplikasi (terjemahan al-Quran, hadis, doa yang disemak, teks kursus Salati). Soalan anda, sejarah sembang dan jawapannya tidak meninggalkan peranti anda - tiada pelayan yang menerima atau menyimpan input anda.\n\nUntuk itu tiada lagi model bahasa dimuat turun. Korpus sumber bahasa Jerman terbina dalam aplikasi; bagi setiap bahasa aplikasi yang lain, Salati memuat turun korpus terjemahan (1.6-3.3 MB) sekali sahaja daripada storan Cloudflare R2 kami dan menyimpannya secara setempat. Versi web memuatkan korpus daripada salati.pro dan, semata-mata untuk carian petikan yang lebih baik, sebuah model carian (kira-kira 118 MB) daripada CDN Hugging Face berserta pustakanya melalui CDN jsDelivr (esm.run). Dalam proses itu alamat IP anda dihantar kepada penyedia berkenaan. Sejarah sembang anda (maksimum 40 entri) disimpan pelayar dalam storannya sendiri; anda boleh membuangnya bila-bila masa melalui „Padam sejarah“.\n\nJawapan AI dijana mesin dan secara jelas bukan fatwa. Dasar undang-undang: Perkara 6(1)(f) GDPR (penyediaan fungsi yang anda minta).",
+    "legalBasisSection": "Dasar undang-undang",
+    "legalBasisText": "- Perkara 6(1)(a) GDPR (persetujuan): kebenaran lokasi, kamera dan mikrofon serta pemberitahuan. Setiap satu boleh anda tarik balik bila-bila masa dalam tetapan sistem; kesahihan pemprosesan sebelum itu tidak terjejas.\n- Perkara 6(1)(b) GDPR (pelaksanaan kontrak): penyediaan fungsi aplikasi percuma yang diterangkan dalam syarat penggunaan.\n- Perkara 6(1)(f) GDPR (kepentingan sah): pengambilan kandungan daripada penyedia yang disebut di atas serta pengendalian, penyampaian dan keselamatan aplikasi dan laman web yang perlu dari segi teknikal.\n\nKamera (pengimbas kod bar untuk semakan halal) dan mikrofon (semakan bacaan) diproses sepenuhnya pada peranti; imej mahupun rakaman audio tidak dihantar atau disimpan.",
+    "retentionSection": "Tempoh penyimpanan",
+    "retentionText": "Kami sendiri tidak menyimpan sebarang data peribadi tentang anda - tiada pangkalan data pengguna. Data pada peranti anda kekal sehingga anda memadamnya dalam aplikasi atau menyahpasang aplikasi. Log pelayan penyedia penyampaian kami (Cloudflare, Supabase, Vercel) dipadam di sana secara automatik selepas tempoh singkat yang lazim; kami tidak menganalisisnya. Berapa lama penyedia pihak ketiga bebas menyimpan log akses mereka tertakluk kepada notis privasi mereka sendiri. Jika anda menghantar e-mel kepada kami, kami menyimpannya selama yang perlu untuk mengendalikan permintaan anda dan mematuhi kewajipan penyimpanan berkanun.",
+    "transferSection": "Pemindahan ke negara ketiga",
+    "transferText": "Sebahagian penyedia yang disebut berpangkalan di luar EU dan EEA, terutamanya di Amerika Syarikat: Cloudflare, Vercel, Supabase, Hugging Face, jsDelivr, unpkg dan Quran.com. Bagi penyedia yang mempunyai hubungan kontrak dengan kami (Cloudflare, Supabase, Vercel), klausa kontrak standard Suruhanjaya Eropah menjadi sebahagian daripada syarat perkhidmatan; bagi Amerika Syarikat turut terpakai keputusan kecukupan Suruhanjaya bertarikh 10 Julai 2023 (EU-US Data Privacy Framework). Bagi antara muka awam yang lain tiada hubungan kontrak; di sana penghantaran alamat IP anda ialah akibat teknikal yang tidak dapat dielakkan daripada permintaan anda sendiri dan bersandarkan Perkara 49(1)(b) GDPR. Walaupun ada jaminan ini, capaian pihak berkuasa di negara ketiga tidak dapat diketepikan sepenuhnya. Yang dihantar hanyalah alamat IP anda dan data permintaan yang perlu dari segi teknikal."
+  },
+  "agb": {
+    "title": "Terma Penggunaan",
+    "subtitle": "Terma dan syarat am penggunaan aplikasi",
+    "intro": "Dengan menggunakan aplikasi ini, anda bersetuju dengan terma penggunaan berikut. Terma ini melengkapi Notis Undang-undang dan Dasar Privasi.",
+    "scopeSection": "Skop",
+    "scopeText": "Syarat penggunaan ini terpakai bagi penggunaan aplikasi Salati (penyedia: Salatibox - pemilik Domenic Moran) pada iOS, Android, Android TV dan web oleh individu persendirian.",
+    "freeUseSection": "Penggunaan Percuma",
+    "freeUseText": "Aplikasi ini sepenuhnya percuma untuk digunakan. Tiada akaun pengguna diperlukan, tiada pembelian dalam aplikasi, langganan atau iklan.",
+    "religiousContentSection": "Kandungan Keagamaan",
+    "religiousContentText": "Pengiraan waktu solat, terjemahan Al-Quran, tafsir dan hadis disediakan mengikut pengetahuan terbaik kami dengan menggunakan kaedah pengiraan dan sumber yang diiktiraf - namun tanpa jaminan ketepatan agama atau ilmiah yang mutlak. Sekiranya anda tidak pasti, terutamanya berkenaan soalan agama yang terperinci, kami mengesyorkan agar anda berunding dengan ulama tempatan atau masjid di kawasan anda.",
+    "externalSourcesSection": "Sumber Data Luaran & Ketersediaan",
+    "externalSourcesText": "Teks Al-Quran, bacaan, hadis, data peta dan perkhidmatan lokasi sebahagiannya berasal daripada perkhidmatan awam pihak ketiga luaran (lihat Dasar Privasi). Kami tidak menjamin ketersediaan, kelengkapan atau ketepatannya; kami tidak dapat menjamin operasi aplikasi tanpa gangguan pada setiap masa.",
+    "personalUseSection": "Kegunaan Peribadi",
+    "personalUseText": "Kandungan yang dimuat turun - seperti audio bacaan, teks Al-Quran dan terjemahan - hanya boleh digunakan untuk tujuan peribadi dan bukan komersial. Pengedaran semula, penyediaan kepada umum atau penggunaan komersial tidak dibenarkan melainkan pemegang hak berkenaan membenarkannya secara nyata.",
+    "liabilitySection": "Had Liabiliti",
+    "liabilityText": "Kami bertanggungjawab tanpa had bagi kesengajaan dan kecuaian teruk, serta di bawah peruntukan Akta Liabiliti Produk Jerman. Bagi kecuaian ringan, kami hanya bertanggungjawab bagi pelanggaran kewajipan kontrak yang material dan terhad kepada kerugian yang boleh dijangka serta lazim bagi jenis kontrak ini. Memandangkan aplikasi ini disediakan secara percuma, sebarang liabiliti tambahan adalah dikecualikan.",
+    "changesSection": "Perubahan kepada Terma Ini",
+    "changesText": "Kami menyesuaikan terma penggunaan ini apabila perlu, contohnya apabila ciri aplikasi atau kedudukan undang-undang berubah. Versi terkini sentiasa boleh diakses dalam aplikasi.",
+    "lawSection": "Undang-undang Yang Terpakai",
+    "lawText": "Undang-undang Jerman terpakai, tidak termasuk Konvensyen Bangsa-Bangsa Bersatu mengenai Kontrak Jualan Antarabangsa Barangan, setakat yang dibenarkan oleh undang-undang.",
+    "aiSection": "Salati AI",
+    "aiText": "Fungsi AI menjana jawapannya secara mesin daripada korpus sumber yang disertakan. Ia ditandakan sebagai kandungan janaan AI dan secara jelas bukan fatwa, bukan pandangan ulama dan bukan nasihat undang-undang, cukai, kewangan atau kesihatan. Jawapan janaan mesin boleh tidak lengkap atau salah; ini terutamanya berlaku bagi hasil pengiraan seperti zakat atau bahagian pusaka dan bagi soalan undang-undang yang terperinci. Semak semula maklumat penting dan, jika ragu, rujuk kepada ulama yang berkelayakan. Input anda tidak meninggalkan peranti anda; kami tidak menjamin ketersediaan mahupun ketepatan AI.",
+    "sourcesSection": "Sumber & lesen",
+    "sourcesText": "Salati menyertakan kandungan pihak ketiga - antaranya teks dan terjemahan al-Quran, koleksi hadis, data peta dan produk, fon serta model AI dan pengecaman pertuturan. Siapa pemegang hak dan di bawah lesen apa kami menggunakannya disenaraikan sepenuhnya di bawah „Sumber & lesen\" dalam tetapan. Kandungan milik Salati sendiri - teks kursus, penjelasan, bahan, penerbitan podcast dan video - boleh anda muat turun dan gunakan untuk kegunaan peribadi. Jika anda berpendapat sesuatu kandungan dalam Salati melanggar hak, tulis kepada salatibox@gmail.com - kami akan menyemaknya dan mengeluarkan kandungan berkenaan dengan segera."
+  },
+  "changelog": {
+    "title": "Apa Baharu",
+    "subtitle": "Semua ciri baharu, penambahbaikan dan pembaikan pepijat Salati sepintas lalu.",
+    "versionLabel": "Versi {version}",
+    "latest": "Versi semasa",
+    "typeFeature": "Ciri baharu",
+    "typeImprovement": "Penambahbaikan",
+    "typeFix": "Pembaikan pepijat",
+    "footer": "Terima kasih kerana menggunakan Salati."
+  },
+  "more": {
+    "sections": {
+      "learning": "Pembelajaran & Ilmu",
+      "practice": "Solat & Kehidupan Harian",
+      "tools": "Alat",
+      "app": "Aplikasi"
+    },
+    "kiDesc": "Soalan tentang Al-Quran & doa - berjalan 100% secara tempatan"
+  },
+  "radio": {
+    "title": "Radio Al-Quran",
+    "subtitle": "Siaran bacaan 24/7 - ketik untuk main",
+    "live": "LANGSUNG"
+  },
+  "widgets": {
+    "qibla": "Kiblat",
+    "remaining": "dalam {t}",
+    "themeTitle": "Warna widget",
+    "themeHint": "Digunakan pada semua widget yang diletakkan pada penyegaran seterusnya.",
+    "theme_dark": "Gelap",
+    "theme_light": "Cerah",
+    "theme_transparent": "Lutsinar",
+    "theme_black": "Hitam",
+    "theme_white": "Putih",
+    "theme_purple": "Ungu",
+    "theme_orange": "Jingga",
+    "nextPrayer": "Solat seterusnya",
+    "offline": "Luar talian - buka aplikasi",
+    "duaOfDay": "Doa hari ini",
+    "streakLabel": "Hari jujukan pembelajaran",
+    "todayLessons": "Hari ini: {n} pelajaran"
+  },
+  "prayers": {
+    "fajr": "Subuh",
+    "dhuhr": "Zohor",
+    "asr": "Asar",
+    "maghrib": "Maghrib",
+    "isha": "Isyak"
+  },
+  "duel": {
+    "title": "Duel Kuiz",
+    "subtitle": "2 pemain, 1 peranti - siapa lebih tahu?",
+    "player1": "Pemain 1",
+    "player2": "Pemain 2",
+    "turn": "Giliran {p}",
+    "winner": "{p} menang!",
+    "tie": "Seri!",
+    "rematch": "Ulang perlawanan",
+    "modeLocal": "1 peranti",
+    "modeAsync": "Melalui kod",
+    "you": "Anda",
+    "opponent": "Lawan",
+    "asyncIntro": "Mainkan giliran anda dan hantar kod kepada rakan - atau masukkan kod rakan dan bersaing dengan skornya.",
+    "asyncStart": "Mula duel baharu",
+    "asyncImport": "Masukkan kod",
+    "asyncImportPlaceholder": "Tampal kod duel…",
+    "asyncImportButton": "Muatkan soalan",
+    "asyncCodeHint": "Hantar kod ini kepada lawan anda (sembang, e-mel …). Dia memasukkannya dan bersaing dengan skor anda.",
+    "asyncYourScore": "Skor anda",
+    "asyncYouWin": "Anda menang!",
+    "asyncOpponentWin": "Lawan anda menang!",
+    "asyncNewDuel": "Duel baharu",
+    "asyncBack": "Kembali"
+  },
+  "achievements": {
+    "title": "Lencana",
+    "subtitle": "Pencapaian yang telah anda raih dalam Salati - sepenuhnya tempatan, tanpa akaun.",
+    "badges": {
+      "first-lesson": {
+        "title": "Langkah pertama",
+        "desc": "Lulus pelajaran pertama dalam \"Belajar Membaca Al-Quran\"."
+      },
+      "first-surah": {
+        "title": "Surah pertama",
+        "desc": "Menguasai satu surah penuh sebagai latihan membaca (Al-Fatihah, Al-Ikhlas, Al-Falaq atau An-Nas)."
+      },
+      "bookmark-first": {
+        "title": "Disimpan",
+        "desc": "Membuat penanda halaman pertama anda dalam Al-Quran."
+      },
+      "streak-7": {
+        "title": "Satu minggu bertahan",
+        "desc": "Berlatih 7 hari berturut-turut."
+      },
+      "prayer-week": {
+        "title": "Minggu lengkap",
+        "desc": "Menandakan kesemua 5 solat dalam penjejak selama 7 hari berturut-turut."
+      },
+      "hifz-10": {
+        "title": "10 ayat",
+        "desc": "Menandakan 10 ayat sebagai \"boleh\" dalam hafazan."
+      },
+      "quiz-25": {
+        "title": "Peminat latihan",
+        "desc": "Menyelesaikan 25 sesi latihan."
+      },
+      "course-complete": {
+        "title": "Kursus pertama",
+        "desc": "Menyelesaikan satu kursus kajian sepenuhnya."
+      },
+      "grammar-complete": {
+        "title": "Asas tatabahasa",
+        "desc": "Menyelesaikan kursus tatabahasa sepenuhnya."
+      },
+      "tajwid-complete": {
+        "title": "Kaedah tajwid",
+        "desc": "Menyelesaikan kursus tajwid sepenuhnya."
+      },
+      "khatmah-complete": {
+        "title": "Khatam",
+        "desc": "Menyelesaikan satu rancangan khatam sehingga akhir."
+      },
+      "streak-30": {
+        "title": "Satu bulan bertahan",
+        "desc": "Berlatih 30 hari berturut-turut."
+      },
+      "hifz-50": {
+        "title": "50 ayat",
+        "desc": "Menandakan 50 ayat sebagai \"boleh\" dalam hafazan."
+      },
+      "curriculum-complete": {
+        "title": "Sudah tahu membaca Al-Quran",
+        "desc": "Menyelesaikan keseluruhan kursus \"Belajar Membaca Al-Quran\"."
+      },
+      "streak-100": {
+        "title": "100 hari",
+        "desc": "Berlatih 100 hari berturut-turut - ketekunan yang mengagumkan."
+      },
+      "note-first": {
+        "title": "Nota pertama",
+        "desc": "Menulis nota peribadi pertama anda pada satu ayat."
+      },
+      "hifz-explorer": {
+        "title": "Peneroka hafazan",
+        "desc": "Mula menghafal dalam 3 surah yang berbeza."
+      },
+      "bookmark-collections": {
+        "title": "Kurator",
+        "desc": "Menyusun penanda halaman ke dalam ketiga-tiga koleksi (Kegemaran, Hafazan, Renungan)."
+      },
+      "offline-audio": {
+        "title": "Sedia luar talian",
+        "desc": "Memuat turun bacaan 3 surah untuk didengar secara luar talian."
+      },
+      "fasting-tracker": {
+        "title": "Penjejak puasa",
+        "desc": "Menandakan 10 hari berpuasa dalam penjejak puasa."
+      },
+      "surah-explorer": {
+        "title": "Peneroka surah",
+        "desc": "Terus membaca dalam 10 surah yang berbeza."
+      },
+      "review-master": {
+        "title": "Pakar ulang kaji",
+        "desc": "Membawa satu pelajaran ke tahap tertinggi dalam sistem ulang kaji."
+      },
+      "courses-3": {
+        "title": "Tiga kursus",
+        "desc": "Menyelesaikan tiga kursus pengajian sepenuhnya."
+      },
+      "courses-all": {
+        "title": "Semua kursus",
+        "desc": "Menyelesaikan setiap kursus pengajian sepenuhnya."
+      }
+    },
+    "fresh": "Baharu"
+  },
+  "themes": {
+    "title": "Ayat Bertema",
+    "subtitle": "Koleksi ayat pilihan tentang tema kehidupan - untuk direnungi dan ditemui semula.",
+    "versesCount": "ayat",
+    "collections": {
+      "patience": {
+        "title": "Kesabaran (Sabar)",
+        "intro": "Kesabaran dalam Al-Quran bukanlah ketabahan pasif, tetapi satu sikap aktif - berkait dengan solat, tawakal dan janji bahawa ia akan diberi ganjaran. Ayat-ayat ini menunjukkan betapa rapatnya sabar berkait dengan kekuatan dalaman."
+      },
+      "gratitude": {
+        "title": "Kesyukuran (Syukur)",
+        "intro": "Kesyukuran dalam Al-Quran mengubah pandangan: bukan kerana segalanya sempurna, tetapi kerana menyedari kebaikan itu sendiri sudah menjadi satu bentuk kedekatan dengan Allah. Ayat-ayat ini menjemput untuk melihat secara sedar."
+      },
+      "worry": {
+        "title": "Ketakutan & Kebimbangan",
+        "intro": "Apabila kebimbangan membesar, Al-Quran berulang kali bercakap tentang kelapangan yang akan datang, dan hati yang menjadi tenang melalui mengingati Allah. Ayat-ayat ini untuk saat-saat apabila fikiran bising."
+      },
+      "family": {
+        "title": "Keluarga",
+        "intro": "Ibu bapa, anak, pasangan - Al-Quran menggambarkan keluarga sebagai tempat kasih sayang dan tanggungjawab bersama, bukan sekadar kewajipan. Ayat-ayat ini menjelaskan mengapa keluarga begitu penting dalam Islam."
+      },
+      "forgiveness": {
+        "title": "Keampunan",
+        "intro": "Keampunan dalam Al-Quran bukanlah kelemahan, tetapi salah satu kebajikan tertinggi - baik keampunan yang dimohon daripada Allah, mahupun yang diberikan sendiri kepada orang lain. Ayat-ayat ini menunjukkan kedua-dua sisi."
+      },
+      "hope": {
+        "title": "Harapan & Tawakal",
+        "intro": "Bertawakal kepada Allah dalam Al-Quran tidak bermaksud tidak berbuat apa-apa, tetapi melepaskan selepas usaha terbaik - dengan janji bahawa selepas kesukaran datang kelapangan. Ayat-ayat ini menyokong dalam masa sukar."
+      }
+    }
+  },
+  "journeys": {
+    "title": "Pelan Harian",
+    "subtitle": "Perjalanan ayat pilihan mengenai satu tema - hari demi hari.",
+    "tabCollections": "Koleksi",
+    "tabJourneys": "Pelan Harian",
+    "days": "hari",
+    "day": "Hari",
+    "start": "Mula pelan",
+    "newPlan": "Mula pelan baharu",
+    "progress": "Kemajuan",
+    "behind": "hari ketinggalan",
+    "complete": "Perjalanan selesai",
+    "markDone": "Tandakan selesai",
+    "versesOfDay": "Ayat hari ini",
+    "reflection": "Renungan",
+    "read": "Baca",
+    "reminder": "Peringatan harian",
+    "items": {
+      "selfDiscovery": {
+        "title": "Penemuan Diri",
+        "subtitle": "Sepuluh hari untuk berhenti seketika dan merenung makna, jiwa, dan hala tuju diri sendiri.",
+        "days": {
+          "0": {
+            "title": "Kenapa kamu di sini?",
+            "text": "Al-Quran menjawab persoalan makna secara langsung: manusia dicipta untuk beribadat kepada Penciptanya. Itu bukan sangkar, tetapi kompas - satu titik tetap yang menjadikan segala yang lain menemui tempatnya."
+          },
+          "1": {
+            "title": "Jiwamu kenal kedua-duanya",
+            "text": "Kamu dicipta dengan keupayaan mengenali yang salah dan yang betul. Penemuan diri bermula dengan mengambil serius suara batin itu, bukan membisukannya."
+          },
+          "2": {
+            "title": "Tanda di sekelilingmu dan dalam dirimu",
+            "text": "Al-Quran tidak hanya menunjuk kepada dunia luar, tetapi turut menunjuk kepada dirimu sendiri sebagai tempat renungan. Kadangkala jawapannya bukan lebih banyak ilmu, tetapi melihat dengan lebih teliti - ke dalam diri."
+          },
+          "3": {
+            "title": "Ujian sebagai cermin",
+            "text": "Saat-saat sukar bukan kebetulan dalam Al-Quran - ia sebahagian daripada yang menjadikan iman, dan diri, itu benar. Apa yang mencabarmu sekarang turut menunjukkan siapa kamu sebenarnya."
+          },
+          "4": {
+            "title": "Dalam perjalanan menuju Tuhanmu",
+            "text": "Ayat ini menggambarkan kehidupan sebagai pergerakan, bukan kediaman: kamu sedang dalam perjalanan, dengan usaha, tetapi dengan matlamat yang jelas. Penemuan diri di sini bukan bermaksud 'sampai', tetapi mengetahui arah tuju."
+          },
+          "5": {
+            "title": "Apa yang penting pada akhirnya",
+            "text": "Pada Hari Perhitungan, harta mahupun status tidak membantu - hanya hati yang ikhlas. Peringatan yang tidak selesa tetapi membebaskan tentang apa yang sebenarnya wajar diperjuangkan."
+          },
+          "6": {
+            "title": "Memohon petunjuk",
+            "text": "Permohonan ringkas dari Al-Fatihah ini adalah antara soalan penemuan-diri paling jujur yang ada: bukan 'siapa aku', tetapi 'ke mana aku patut pergi'. Mengulanginya setiap hari mengekalkan kompas itu terarah."
+          },
+          "7": {
+            "title": "Menjaga keseimbangan",
+            "text": "Bersikap sederhana - tidak boros, tidak juga kedekut - digambarkan di sini sebagai sifat orang yang ikhlas. Dalam penemuan diri juga, kematangan jarang wujud pada titik ekstrem, tetapi pada keseimbangan."
+          },
+          "8": {
+            "title": "Menyucikan jiwa",
+            "text": "Kejayaan di sini tidak diukur pada perkara luaran, tetapi bagaimana kamu melayan jiwamu sendiri - adakah kamu menyucikannya, atau membiarkannya rosak? Keputusan yang sangat peribadi, dibuat setiap hari."
+          },
+          "9": {
+            "title": "Lebih dekat daripada sangkaanmu",
+            "text": "Perjalanan ini berakhir bukan dengan jarak, tetapi kedekatan: Allah lebih dekat denganmu berbanding dirimu sendiri kadangkala. Dalam Al-Quran, penemuan diri tidak menjauhkan daripada Tuhan - ia membawa terus kembali kepada-Nya."
+          }
+        }
+      },
+      "sabrJourney": {
+        "title": "Perjalanan Sabar",
+        "subtitle": "Tujuh hari, tujuh situasi yang memerlukan kesabaran - daripada kehidupan seharian hingga krisis.",
+        "days": {
+          "0": {
+            "title": "Empat perkara yang menyelamatkan",
+            "text": "Surah pendek ini merumuskan apa yang melindungi seseorang daripada kerugian: iman, amal soleh - serta saling menasihati dalam kebenaran DAN kesabaran. Sabar di sini bukan urusan peribadi, tetapi sesuatu yang menyokong seluruh masyarakat."
+          },
+          "1": {
+            "title": "Membalas kejahatan dengan kebaikan",
+            "text": "Sesiapa yang kekal sabar boleh mengubah permusuhan menjadi kedekatan sebenar - salah satu bentuk sabar yang paling mencabar. Al-Quran secara jelas menyebut ini sebagai sifat yang hanya dikurniakan kepada sedikit orang."
+          },
+          "2": {
+            "title": "Sabar dalam kehilangan",
+            "text": "Ketakutan, kelaparan, kehilangan harta atau orang tersayang - Al-Quran di sini tidak menjanjikan kekebalan daripadanya, tetapi sikap untuk menghadapinya: 'Kami milik Allah, dan kepada-Nya kami kembali.'"
+          },
+          "3": {
+            "title": "Sabar bukan kelemahan",
+            "text": "Memilih sabar berbanding membalas dendam digambarkan di sini secara jelas sebagai jalan yang lebih baik - disokong oleh Allah sendiri, bukan sekadar oleh kekuatanmu. Itu mengangkat tekanan perlu memikul semuanya sendirian."
+          },
+          "4": {
+            "title": "Sabar dan zikir",
+            "text": "Sabar di sini berdiri tepat di sisi solat dan pujian, pagi dan petang. Peringatan bahawa sabar jarang bertahan sendirian - ia hidup daripada hubungan dengan Allah yang diperbaharui setiap hari."
+          },
+          "5": {
+            "title": "Sabar dan kesyukuran",
+            "text": "Ketenangan dan kesenyapan - seperti angin yang reda - digambarkan di sini sebagai tanda bagi mereka yang mampu melakukan kedua-duanya: bersabar DAN bersyukur. Kedua-duanya lebih rapat berkait berbanding yang kelihatan pada pandangan pertama."
+          },
+          "6": {
+            "title": "Apa yang kekal",
+            "text": "Segala yang kamu miliki akan lenyap - apa yang ada di sisi Allah kekal selamanya. Surah ini menutup perjalanan dengan satu janji: kesabaran tidak dilupakan, tetapi diberi ganjaran mengikut yang terbaik daripada apa yang kamu lakukan."
+          }
+        }
+      },
+      "gratitudeJourney": {
+        "title": "Kesyukuran",
+        "subtitle": "Lima hari untuk secara sedar mengarahkan pandangan kepada apa yang sudah ada.",
+        "days": {
+          "0": {
+            "title": "Nikmat yang tidak terhitung",
+            "text": "Jika kamu cuba mengira setiap nikmat dalam hidupmu, kamu tidak akan sampai ke penghujungnya. Langkah pertama menuju kesyukuran itu ringkas: benar-benar melihat apa yang sudah ada."
+          },
+          "1": {
+            "title": "Memohon agar dapat bersyukur",
+            "text": "Malah Nabi Sulaiman sendiri memohon secara aktif agar dapat bersyukur - jadi kesyukuran baginya bukanlah keadaan automatik, tetapi sesuatu yang diperjuangkan. Itu mengangkat tekanan kesempurnaan diri."
+          },
+          "2": {
+            "title": "Kesyukuran sebagai perbuatan",
+            "text": "Kepada keluarga Daud tidak dikatakan 'rasalah syukur', tetapi 'bekerjalah dengan syukur'. Syukur di sini terzahir bukan sahaja di hati, tetapi pada apa yang dilakukan oleh tanganmu."
+          },
+          "3": {
+            "title": "Nikmat mana yang akan kamu ingkari?",
+            "text": "Ayat ini berulang lebih 30 kali dalam Surah ar-Rahman - hampir seperti bait yang bertujuan membangkitkan kesedaran. Tanya dirimu hari ini, secara khusus: nikmat mana yang baru-baru ini kamu anggap biasa sahaja?"
+          },
+          "4": {
+            "title": "Syukur melipatgandakan",
+            "text": "Satu janji dengan kesan langsung: sesiapa yang bersyukur akan diberikan lebih banyak. Bukan sebagai sistem ganjaran, tetapi kerana syukur membuka matamu kepada apa yang sudah ada - dan menjadikan lebih banyak daripadanya kelihatan."
+          }
+        }
+      },
+      "newBeginning": {
+        "title": "Permulaan Baharu",
+        "subtitle": "Tujuh hari untuk sesiapa yang ingin memulakan semula dari kosong.",
+        "days": {
+          "0": {
+            "title": "Langkah pertama: bertaubat",
+            "text": "Taubat yang ikhlas dalam Al-Quran secara jelas adalah permulaan sesuatu yang baharu, bukan penghujungnya. Langkah pertama permulaan baharu jarang dramatik - ia hanya sesederhana ini: kembali dengan jujur."
+          },
+          "1": {
+            "title": "Jangan sekali-kali berputus asa",
+            "text": "Tidak kira berapa banyak yang telah berlalu: ayat ini secara jelas melarang berputus asa daripada rahmat Allah. Tiada kesilapan yang terlalu besar untuk menjadikan permulaan baharu mustahil."
+          },
+          "2": {
+            "title": "Sebelum terlambat",
+            "text": "Sambungan terus daripada semalam: bertaubat di sini digambarkan sebagai pergerakan aktif - menuju Allah, dan sekarang, bukan suatu hari nanti. Permulaan baharu ialah kata kerja, bukan keadaan yang berlaku begitu sahaja."
+          },
+          "3": {
+            "title": "Perubahan bermula dalam dirimu",
+            "text": "Sebelum keadaan luaran berubah, sesuatu di dalam mesti bergerak dahulu. Ayat ini meletakkan tanggungjawab - dan kemungkinan - perubahan sebenar terus di tanganmu."
+          },
+          "4": {
+            "title": "Keburukan bertukar kebaikan",
+            "text": "Bagi mereka yang bertaubat, beriman, dan bertindak, Allah di sini menjanjikan sesuatu yang luar biasa: kesilapan lalu bukan sahaja diampunkan, malah diubah menjadi amal kebaikan. Masa lalumu tidak perlu menentukan siapa dirimu."
+          },
+          "5": {
+            "title": "Memohon kelapangan dalaman",
+            "text": "Sebelum berdiri di hadapan Firaun, Musa terlebih dahulu memohon sesuatu yang sangat peribadi: dada yang lapang, tugas yang diringankan. Permulaan baharumu juga boleh bermula dengan permohonan ini, bukan kesempurnaan segera."
+          },
+          "6": {
+            "title": "Keampunan yang menyokong",
+            "text": "Janji ini melengkapkan lingkaran: sesiapa yang bertaubat, beriman, berbuat baik, dan kekal di jalan-Nya akan menemui keampunan yang menyokongnya. Permulaan baharu bukanlah satu detik sahaja - ia adalah hala tuju yang kamu pilih semula setiap hari."
+          }
+        }
+      },
+      "ramadanPrep": {
+        "title": "Persediaan Ramadan",
+        "subtitle": "Sepuluh hari untuk menyiapkan hati dan kebiasaan sebelum bulan itu tiba.",
+        "days": {
+          "0": {
+            "title": "Mengapa kita berpuasa",
+            "text": "Puasa diwajibkan ke atas orang-orang beriman sebelum kita dan ke atas kita dengan satu tujuan: takwa, hati yang sedar dan tidak melupakan Allah. Ramadan bukan diet, tetapi latihan untuk jiwa. Tanyakan dirimu hari ini: apa yang engkau mahu bulan ini ubah dalam dirimu?"
+          },
+          "1": {
+            "title": "Hanya beberapa hari",
+            "text": "Al-Quran menyebut puasa sebagai 'beberapa hari yang tertentu'. Sebelum bermula, bulan itu terasa panjang, dan apabila berakhir terasa sangat singkat. Tetapkan sekarang satu matlamat kecil yang realistik supaya hari-hari itu tidak berlalu begitu sahaja."
+          },
+          "2": {
+            "title": "Bulan Al-Quran",
+            "text": "Ramadan dimuliakan kerana Al-Quran diturunkan di dalamnya; puasa dan Kitab itu tidak terpisah. Rancang hari ini bila dan berapa banyak engkau mahu membaca, walaupun hanya beberapa ayat sehari."
+          },
+          "3": {
+            "title": "Dia dekat",
+            "text": "Tepat di tengah ayat-ayat puasa, Allah berfirman: Aku dekat, Aku memperkenankan doa orang yang berdoa. Ramadan ialah bulan doa. Mulakan senarai kecil berisi perkara yang benar-benar engkau mahu pohon."
+          },
+          "4": {
+            "title": "Malam yang bernilai seumur hidup",
+            "text": "Lailatulqadar lebih baik daripada seribu bulan. Tiada siapa tahu dengan pasti malam yang mana, dan itulah maksudnya: ia mahu dicari. Sesiapa yang bersiap sekarang tidak akan berdiri tanpa persediaan pada sepuluh malam terakhir."
+          },
+          "5": {
+            "title": "Bawa bekalan yang betul",
+            "text": "Untuk setiap perjalanan engkau menyiapkan bekalan, dan Al-Quran berkata sebaik-baik bekalan ialah takwa. Puasa mengosongkan hari supaya yang hakiki menjadi kelihatan. Fikirkan tabiat apa yang engkau mahu tinggalkan bulan ini."
+          },
+          "6": {
+            "title": "Berlatih untuk malam-malamnya",
+            "text": "Bangun malam itu berat, dan Al-Quran berkata jujur mengenainya: jam-jam malam meninggalkan kesan yang lebih mendalam. Engkau tidak perlukan berjam-jam; mulakan malam ini dengan beberapa minit solat tambahan dan berkembanglah dari situ."
+          },
+          "7": {
+            "title": "Memberi itu berlipat ganda",
+            "text": "Sebutir biji menjadi tujuh ratus: begitulah Al-Quran menggambarkan sedekah. Kemurahan hati di bulan Ramadan bukan kegiatan sampingan, tetapi sebahagian daripada puasa. Putuskan hari ini apa yang akan engkau beri, walaupun kecil tetapi tetap."
+          },
+          "8": {
+            "title": "Sudah dimudahkan",
+            "text": "Allah berfirman bahawa Dia memudahkan Al-Quran untuk diingati, lalu bertanya: adakah sesiapa yang mahu mengambil pelajaran? Undangan itu bersifat peribadi. Walau apa pun tahapmu, Kitab itu berada dalam jangkauanmu bulan ini."
+          },
+          "9": {
+            "title": "Mulakan perlumbaan sekarang",
+            "text": "Al-Quran berbicara tentang berlumba menuju keampunan dan syurga yang luasnya seluas langit dan bumi. Ramadan ialah litar perlumbaan tahun ini. Jangan tunggu hari puasa pertama: mulakan hari ini dan masuki bulan itu dalam keadaan sudah bergerak."
+          }
+        }
+      },
+      "griefLoss": {
+        "title": "Kesedihan & Kehilangan",
+        "subtitle": "Tujuh hari penghiburan yang tenang untuk hati yang berduka.",
+        "days": {
+          "0": {
+            "title": "Kita milik-Nya",
+            "text": "'Sesungguhnya kami milik Allah dan kepada-Nya kami kembali': kata-kata ini bukan sekadar ucapan, tetapi kebenaran tempat bersandar. Ayat berikutnya menjanjikan keberkatan dan rahmat bagi orang-orang yang sabar. Dukamu dilihat, dan ia tidak sia-sia."
+          },
+          "1": {
+            "title": "Kemudahan bersama kesukaran",
+            "text": "Ayat itu tidak mengatakan kemudahan datang selepas kesukaran, tetapi bersamanya, dan ia disebut dua kali. Walaupun pada hari-hari paling berat ada saat-saat kelegaan: tidur, kata-kata yang baik, kenangan yang membuatmu tersenyum. Benarkan dirimu menyedarinya tanpa rasa bersalah."
+          },
+          "2": {
+            "title": "Jalan yang dilalui semua orang",
+            "text": "Setiap jiwa akan merasai mati; tiada siapa terkecuali, dan tiada siapa dipilih seorang diri. Orang yang engkau kehilangan menempuh jalan yang akan kita semua tempuh. Dalam Al-Quran, kematian bukan pengakhiran tetapi satu kepulangan."
+          },
+          "3": {
+            "title": "Yang kekal",
+            "text": "Segala yang ada di bumi akan binasa, dan kekallah wajah Tuhanmu yang penuh keagungan dan kemuliaan. Apabila kehilangan menggoncang apa yang kelihatan kukuh, ayat ini menunjuk kepada Yang tidak berubah. Berpeganglah pada apa yang tidak boleh diambil daripadamu."
+          },
+          "4": {
+            "title": "Ketenangan untuk hati",
+            "text": "'Ketahuilah, hanya dengan mengingati Allah hati menjadi tenteram.' Duka menyesakkan dada; zikir melonggarkannya, perlahan dan lembut. Beberapa minit zikir yang hening hari ini bukanlah perkara kecil."
+          },
+          "5": {
+            "title": "Ceritakan semuanya kepada-Nya",
+            "text": "Yaakub, seorang nabi, menangisi anaknya dan berkata: Hanya kepada Allah aku mengadukan kesusahan dan kesedihanku. Berduka bukanlah tanda kurang iman. Bawalah seluruh beban itu kepada Dia yang mampu memikulnya."
+          },
+          "6": {
+            "title": "Jiwa yang tenang",
+            "text": "'Wahai jiwa yang tenang, kembalilah kepada Tuhanmu dengan reda dan diredai.' Ayat-ayat ini ialah pintu harapan, bagi yang telah pergi dahulu dan bagimu. Pohonlah kepada Allah agar menganugerahkan kepadanya, dan kelak kepadamu, kepulangan yang lembut itu."
+          }
+        }
+      },
+      "examTime": {
+        "title": "Musim Peperiksaan",
+        "subtitle": "Tujuh hari fokus, ketenangan, dan tawakal untuk belajar dan peperiksaan.",
+        "days": {
+          "0": {
+            "title": "Pohonlah lebih",
+            "text": "'Ya Tuhanku, tambahkanlah kepadaku ilmu' ialah satu-satunya tambahan yang diperintahkan kepada Nabi untuk dipohon. Jadikan doa ringkas ini sebahagian daripada setiap sesi belajar. Ilmu bukan sekadar dikumpul, ia juga dianugerahkan."
+          },
+          "1": {
+            "title": "Tidak melebihi kemampuanmu",
+            "text": "Allah tidak membebani sesuatu jiwa melainkan sekadar kemampuannya. Peperiksaan di hadapanmu termasuk dalam janji itu. Buat hari ini apa yang engkau mampu, dan tolak suara yang berkata ia terlalu berat bagimu."
+          },
+          "2": {
+            "title": "Satu perkara, kemudian yang berikutnya",
+            "text": "'Maka apabila engkau telah selesai, berusahalah bersungguh-sungguh untuk urusan berikutnya, dan hanya kepada Tuhanmulah engkau berharap.' Ayat-ayat itu menggambarkan rentak yang tenang: selesaikan satu perkara, kemudian beralih kepada yang berikutnya. Belajarlah dalam blok yang fokus dan biarkan rehat benar-benar menjadi rehat."
+          },
+          "3": {
+            "title": "Tahu itu bernilai",
+            "text": "'Adakah sama orang-orang yang mengetahui dengan orang-orang yang tidak mengetahui?' Al-Quran memperlakukan belajar sebagai kehormatan, bukan bebanan. Usaha yang engkau lakukan sekarang bernilai pada dirinya sendiri, walau apa pun keputusannya nanti."
+          },
+          "4": {
+            "title": "Diangkat beberapa darjat",
+            "text": "Allah mengangkat orang-orang yang beriman dan orang-orang yang diberi ilmu beberapa darjat. Belajar dengan jujur ialah salah satu bentuk ibadah. Mulakan dengan Bismillah, maka pembelajaranmu menjadi lebih daripada sekadar markah di kertas ujian."
+          },
+          "5": {
+            "title": "Putuskan, kemudian bertawakal",
+            "text": "'Kemudian apabila engkau telah berazam, bertawakallah kepada Allah.' Tawakal tidak menggantikan persediaan, ia memahkotainya. Bersiaplah sebaik mungkin, kemudian masuklah dengan hati yang tenang: engkau sudah menunaikan bahagianmu."
+          },
+          "6": {
+            "title": "Dia mencukupi",
+            "text": "Sesiapa yang bertawakal kepada Allah, maka Dia mencukupinya. Sebaik sahaja keputusan itu engkau serahkan kepada-Nya, engkau tidak lagi memikulnya seorang diri. Masuklah, berikan yang terbaik, dan serahkan hasilnya kepada Dia yang menetapkannya dengan baik."
+          }
+        }
+      },
+      "rizqWork": {
+        "title": "Rezeki & Kerja",
+        "subtitle": "Tujuh hari tentang rezeki, kerja yang jujur, dan kepercayaan kepada Pemberi rezeki.",
+        "days": {
+          "0": {
+            "title": "Rezekimu sudah tertulis",
+            "text": "Tiada satu makhluk pun di bumi yang rezekinya tidak dijamin Allah; rezeki burung pipit mahupun rezekimu. Ini tidak meniadakan usaha, tetapi mencabut panik daripadanya. Bekerjalah hari ini tanpa takut kehilangan apa yang memang untukmu."
+          },
+          "1": {
+            "title": "Solat, kemudian bertebaranlah",
+            "text": "'Apabila solat telah ditunaikan, bertebaranlah kamu di bumi dan carilah kurniaan Allah.' Kerja dan ibadah bukan saingan; ayat itu menyatukan kedua-duanya dalam satu ayat. Jaga solatmu di tengah hari bekerja dan biarkan solat itu menyusunnya."
+          },
+          "2": {
+            "title": "Berjalanlah di bumi",
+            "text": "Allah menjadikan bumi mudah diterokai: 'maka berjalanlah di segala penjurunya dan makanlah daripada rezeki-Nya'. Mencari rezeki ialah sebahagian daripada rancangan itu sendiri. Keluarlah, ketuk pintu-pintu, teruslah belajar: gerakan memang diharapkan daripadamu."
+          },
+          "3": {
+            "title": "Istighfar membuka pintu",
+            "text": "Nuh berkata kepada kaumnya: pohonlah keampunan, nescaya Dia menghantar hujan, harta, dan anak-anak. Al-Quran mengaitkan istighfar dengan rezeki secara sangat nyata. Apabila segalanya terasa buntu, dari sinilah engkau boleh bermula."
+          },
+          "4": {
+            "title": "Halal dan baik",
+            "text": "'Makanlah daripada apa yang halal dan baik yang terdapat di bumi.' Cara engkau mencari nafkah sama penting dengan jumlahnya. Pendapatan kecil yang bersih ialah asas yang lebih kukuh daripada pendapatan besar yang tidak bersih."
+          },
+          "5": {
+            "title": "Dua dunia",
+            "text": "Carilah negeri akhirat dengan apa yang telah Allah kurniakan kepadamu, dan jangan lupakan bahagianmu di dunia. Ayat itu membenarkan cita-cita dan memberinya arah. Bekerjalah keras, nikmati apa yang menjadi milikmu, dan pastikan destinasi sentiasa di hadapan mata."
+          },
+          "6": {
+            "title": "Apa yang engkau beri akan kembali",
+            "text": "'Apa sahaja yang kamu infakkan, Dia akan menggantikannya, dan Dialah sebaik-baik pemberi rezeki.' Memberi tidak mengecilkan rezeki, malah mengundangnya. Biasakan memberi daripada pendapatanmu, sekecil mana pun, dan percayalah pada janji itu."
+          }
+        }
+      }
+    },
+    "behindOne": "hari ketinggalan",
+    "continuePlan": "Teruskan",
+    "activeSection": "Aktif",
+    "allSection": "Semua pelan"
+  },
+  "ki": {
+    "title": "Salati AI",
+    "subtitle": "Hanya menjawab daripada Al-Quran, 40 Hadis an-Nawawi, doa yang disahkan & teks kursus Salati - berjalan 100% pada peranti anda.",
+    "aiDisclosure": "Jawapan dibantu AI - bukan fatwa atau pendapat ulama. Ia hanya terdiri daripada petikan harfiah daripada sumber yang dinyatakan; bahagian yang sesuai mungkin tiada atau tidak lengkap - baca sumber yang dipautkan.",
+    "webOnlyNote": "AI native hanya tersedia dalam aplikasi. Gunakan versi pelayar.",
+    "openWebVersion": "Buka versi pelayar",
+    "deleteModel": "Padam model",
+    "deleteModelConfirm": "Betul-betul mahu memadam model? Ia baki daripada versi terdahulu - AI tidak lagi memerlukannya dan tidak akan memuat turunnya semula. Anda membebaskan {size}.",
+    "inputPlaceholder": "Soalan anda …",
+    "send": "Tanya",
+    "sourcesLabel": "Sumber",
+    "noAnswer": "Saya tidak menjumpai apa-apa mengenai ini dalam sumber tempatan saya. Untuk jawapan yang boleh dipercayai, sila tanya seorang ulama.",
+    "clearHistory": "Padam sejarah",
+    "welcome": "Salam! Tanya saya soalan - saya akan mencari bahagian yang sesuai daripada Al-Quran, 40 Hadis an-Nawawi, doa yang disahkan dan teks kursus Salati, dan menjawab hanya berdasarkan itu.",
+    "clearHistoryConfirm": "Betul mahu padam perbualan sebelum ini? Tindakan ini tidak boleh dibatalkan.",
+    "examplesTitle": "Contohnya:",
+    "example1": "Apakah lima rukun Islam?",
+    "example2": "Bagaimana cara mengambil wuduk?",
+    "example3": "Apakah solat Isyak?",
+    "example4": "Apakah yang membatalkan puasa?",
+    "example5": "Berapa zakat yang perlu saya bayar?",
+    "example6": "Apakah kata Islam tentang kesabaran?",
+    "germanSourcesNote": "Sumber AI (terjemahan al-Quran, hadis, teks kursus) buat masa ini hanya ada dalam bahasa Jerman, jadi jawapannya juga dalam bahasa Jerman.",
+    "partlyGermanSourcesNote": "Terjemahan al-Quran, hadis, teks kursus dan panduan tersedia dalam bahasa anda. Sebahagian petikan pengetahuan asas terpilih masih dalam bahasa Jerman.",
+    "feedbackQuestion": "Adakah ini membantu?",
+    "feedbackThanks": "Terima kasih — maklum balas anda kekal pada peranti anda.",
+    "feedbackGood": "Membantu",
+    "feedbackBad": "Tidak membantu"
+  },
+  "onboarding": {
+    "skip": "Langkau",
+    "next": "Teruskan",
+    "welcomeTitle": "Selamat datang ke Salati",
+    "welcomeTagline": "Waktu solat, Al-Quran, kiblat dan kursus pembelajaran dalam satu aplikasi.",
+    "welcomePrivacy": "Tiada akaun, tiada penjejakan - semuanya kekal pada peranti anda.",
+    "locationTitle": "Lokasi anda",
+    "locationHint": "Salati memerlukan lokasi anda untuk waktu solat yang tepat. Gunakan lokasi peranti atau cari bandar anda.",
+    "methodTitle": "Kaedah pengiraan",
+    "methodHint": "Pilih kaedah yang digunakan di kawasan atau komuniti anda. Anda boleh mengubahnya pada bila-bila masa dalam Tetapan.",
+    "notifTitle": "Notifikasi solat",
+    "notifHint": "Terima peringatan pada setiap waktu solat. Anda boleh melaraskannya pada bila-bila masa dalam Tetapan.",
+    "newToIslam": "Baru memeluk Islam? Lihat langkah pertama anda",
+    "offlineTitle": "Jadikan tersedia luar talian",
+    "offlineHint": "Muat turun model sekarang supaya semakan bacaan dan AI berfungsi tanpa internet. Semua pilihan.",
+    "offlineSpeech": "Model pertuturan (semakan bacaan)",
+    "offlineReady": "Dimuat turun",
+    "offlineLater": "Anda boleh lakukan ini bila-bila masa dalam Tetapan.",
+    "done": "Selesai"
+  },
+  "dhikrAfterSalah": {
+    "title": "Zikir Selepas Solat",
+    "subtitle": "33x Subhanallah, 33x Alhamdulillah, 34x Allahu Akbar",
+    "tapHint": "Ketik bulatan untuk mengira",
+    "totalProgress": "Jumlah: {count} / {total}",
+    "completeTitle": "Masya Allah!",
+    "completeSubtitle": "Anda telah melengkapkan keseluruhan rangkaian zikir selepas solat.",
+    "restartCta": "Mula semula",
+    "doneCta": "Selesai"
+  },
+  "gettingStarted": {
+    "title": "Langkah Pertama",
+    "subtitle": "Baru memeluk Islam atau baru sahaja melafazkan Syahadah? Berikut langkah pertama anda, mengikut susunan yang bermakna.",
+    "cta": "Mula",
+    "steps": {
+      "shahada": {
+        "title": "Memahami kalimah syahadah",
+        "desc": "Maksud Syahadah - diterangkan dalam kursus asas Aqida"
+      },
+      "wudu": {
+        "title": "Belajar wuduk",
+        "desc": "Wuduk langkah demi langkah, berserta doa"
+      },
+      "howToPray": {
+        "title": "Belajar solat pertama anda",
+        "desc": "Susunan dan pergerakan solat"
+      },
+      "prayerTimes": {
+        "title": "Tetapkan waktu solat",
+        "desc": "Tetapkan lokasi, kaedah pengiraan dan peringatan anda"
+      },
+      "duas": {
+        "title": "Doa asas",
+        "desc": "Doa untuk kehidupan seharian, tidur dan banyak lagi"
+      },
+      "alphabet": {
+        "title": "Belajar abjad Arab",
+        "desc": "Langkah pertama anda ke arah membaca Al-Quran"
+      }
+    }
+  },
+  "prayAlong": {
+    "customize": "Sesuaikan paparan",
+    "fontSize": "Saiz huruf",
+    "show": "Tunjuk",
+    "showTranslation": "Terjemahan",
+    "showArabic": "Arab",
+    "showNotes": "Panduan",
+    "arrangement": "Susunan",
+    "translitFirst": "Transliterasi dahulu",
+    "arabicFirst": "Arab dahulu"
+  },
+  "learnToPray": {
+    "title": "Belajar solat",
+    "subtitle": "Belajar dengan tenang — teks Arab, transliterasi dan terjemahan pada setiap langkah.",
+    "intro": "Cara solat, langkah demi langkah. Ambil masa anda: setiap langkah menunjukkan teks Arab, transliterasi Latin dan terjemahannya. Ketik teks Arab untuk mendengarnya. Untuk mengikuti semasa solat, gunakan mod solat bersama.",
+    "pickPrompt": "Solat mana yang ingin anda pelajari?",
+    "coreTitle": "Al-Fatihah & surah pendek",
+    "coreSubtitle": "Al-Fatihah lengkap (7 ayat) serta Al-Ikhlas dan Al-Kawthar — teks pertama yang dihafal.",
+    "surahsTitle": "Dua surah pendek",
+    "surahsSubtitle": "Al-Ikhlas dan Al-Kawthar — surah pertama yang dihafal."
+  },
+  "widgetConfig": {
+    "opacity": "Kelegapan latar",
+    "accentColor": "Warna aksen",
+    "fontSize": "Saiz fon",
+    "fontSmall": "Kecil",
+    "fontMedium": "Sederhana",
+    "fontLarge": "Besar",
+    "corners": "Sudut",
+    "cornerSharp": "Tajam",
+    "cornerRounded": "Bulat",
+    "cornerRound": "Membulat",
+    "timeFormat": "Format masa",
+    "timeAuto": "Auto",
+    "time24h": "24 jam",
+    "time12h": "12 jam",
+    "showHijri": "Tunjuk tarikh Hijrah",
+    "showSunrise": "Tunjuk matahari terbit",
+    "highlightNext": "Serlahkan solat seterusnya",
+    "showCountdown": "Tunjuk kira detik",
+    "showArabic": "Tunjuk teks Arab",
+    "showSource": "Tunjuk sumber",
+    "showBearing": "Tunjuk darjah",
+    "showDirection": "Tunjuk arah",
+    "streakLarge": "Nombor besar",
+    "showStreakLabel": "Tunjuk label",
+    "duaSelection": "Pemilihan",
+    "duaDaily": "Harian",
+    "duaRandom": "Rawak",
+    "title": "Konfigur widget",
+    "typeCountdown": "Kira detik",
+    "typeStreak": "Rentetan pembelajaran",
+    "color": "Warna",
+    "transparent": "Latar lutsinar",
+    "content": "Kandungan",
+    "showCoords": "Tunjuk lokasi",
+    "showNextTime": "Tunjuk waktu solat seterusnya",
+    "showTranslation": "Tunjuk terjemahan",
+    "showDistance": "Tunjuk jarak",
+    "cancel": "Batal",
+    "done": "Selesai",
+    "textColor": "Warna teks",
+    "previewHint": "Perubahan hanya untuk widget ini. Tekan lama widget di skrin utama untuk mengkonfigurnya secara individu."
+  },
+  "podcast": {
+    "listenOnSpotify": "Dengar di Spotify",
+    "title": "Bahasa Al-Quran",
+    "subtitle": "Fahami bahasa Arab, episod demi episod",
+    "heroDesc": "Podkas: tatabahasa Al-Quran, episod demi episod.",
+    "empty": "Akan datang.",
+    "episodeLabel": "Episod",
+    "play": "Main",
+    "pause": "Jeda",
+    "seek": "Kedudukan",
+    "volume": "Kelantangan",
+    "previous": "Episod sebelumnya",
+    "next": "Episod seterusnya",
+    "showTranscript": "Baca sambil dengar",
+    "hideTranscript": "Sembunyikan transkrip",
+    "settings": "Tetapan",
+    "repeat": "Ulang",
+    "sleepTimer": "Pemasa tidur",
+    "speed": "Kelajuan",
+    "off": "Mati",
+    "endOfEpisode": "Akhir episod",
+    "autoplay": "Main automatik",
+    "download": "Muat turun",
+    "downloaded": "Dimuat turun",
+    "offline": "Luar talian",
+    "cancelDownload": "Batal muat turun",
+    "deleteDownload": "Padam muat turun",
+    "deleteDownloadConfirmTitle": "Padam muat turun?",
+    "deleteDownloadConfirmBody": "Episod ini akan dialih keluar daripada peranti anda.",
+    "moreEpisodes": "Episod lain",
+    "series": "Siri"
+  },
+  "lernen": {
+    "learnDesc": "2000+ pelajaran interaktif — langkah demi langkah.",
+    "hifzDesc": "Hafal Al-Quran dengan pengecaman suara.",
+    "more": "Pembelajaran lanjut"
+  },
+  "reels": {
+    "title": "Reels",
+    "comingSoonTitle": "Reels akan datang",
+    "comingSoonDesc": "Klip pendek untuk dileret akan muncul di sini tidak lama lagi.",
+    "errorTitle": "Gagal memuatkan reels",
+    "errorDesc": "Semak sambungan anda dan cuba lagi.",
+    "retry": "Cuba lagi",
+    "share": "Kongsi",
+    "back": "Kembali",
+    "mute": "Senyapkan",
+    "unmute": "Hidupkan bunyi",
+    "webOnlyNote": "Reels dimainkan dalam aplikasi Salati. Buka aplikasi untuk menontonnya.",
+    "forYou": "Untuk anda",
+    "all": "Semua",
+    "like": "Suka",
+    "play": "Main",
+    "pause": "Jeda",
+    "seek": "Kedudukan"
+  },
+  "video": {
+    "title": "Video",
+    "subtitle": "Video pembelajaran — memahami al-Qur’an langkah demi langkah.",
+    "heroDesc": "Video pembelajaran: tatabahasa, tajwid dan banyak lagi — untuk ditonton.",
+    "reelsTitle": "Reels",
+    "reelsDesc": "Klip pendek — ilmu dalam bahagian kecil.",
+    "empty": "Akan datang.",
+    "moreEpisodes": "Lagi video",
+    "episodeLabel": "Episod",
+    "topics": "Topik",
+    "continue": "Sambung menonton",
+    "play": "Main",
+    "pause": "Jeda",
+    "seek": "Kedudukan",
+    "previous": "Video sebelumnya",
+    "next": "Video seterusnya",
+    "fullscreen": "Skrin penuh",
+    "download": "Muat turun",
+    "offline": "Luar talian",
+    "cancelDownload": "Batalkan muat turun",
+    "deleteDownload": "Padam muat turun",
+    "deleteDownloadConfirmTitle": "Padam muat turun?",
+    "deleteDownloadConfirmBody": "Video akan dialih keluar daripada peranti anda.",
+    "continueWatching": "Sambung tonton",
+    "playlists": "Senarai main",
+    "playlist": "Senarai main",
+    "newPlaylist": "Senarai main baharu",
+    "playlistNamePlaceholder": "Nama senarai main",
+    "createPlaylist": "Cipta senarai main",
+    "addToPlaylist": "Tambah ke senarai main",
+    "removeFromPlaylist": "Buang dari senarai main",
+    "deletePlaylist": "Padam senarai main",
+    "deletePlaylistConfirmTitle": "Padam senarai main?",
+    "deletePlaylistConfirmBody": "Senarai main akan dibuang. Video kekal.",
+    "playlistEmpty": "Belum ada video dalam senarai main ini.",
+    "noPlaylists": "Belum ada senarai main. Cipta satu untuk mengumpul video.",
+    "playAll": "Main semua",
+    "videos": "Video",
+    "autoplay": "Main automatik",
+    "autoplayHint": "Main video seterusnya secara automatik",
+    "backgroundPlay": "Teruskan di latar belakang",
+    "backgroundPlayHint": "Audio terus dimainkan apabila anda keluar aplikasi",
+    "pip": "Gambar dalam gambar",
+    "settings": "Tetapan",
+    "speed": "Kelajuan",
+    "renamePlaylist": "Namakan semula"
+  },
+  "media": {
+    "title": "Media",
+    "subtitle": "Podcast, video dan reel di satu tempat.",
+    "contentLanguage": "Kandungan dalam bahasa {lang}",
+    "languages": {
+      "de": "Jerman"
+    }
+  },
+  "handouts": {
+    "title": "Bahan Pembelajaran",
+    "subtitle": "Bahan pembelajaran PDF untuk dibaca dan dimuat turun.",
+    "empty": "Akan datang.",
+    "pages": "halaman",
+    "read": "Baca",
+    "download": "Muat turun",
+    "offline": "Luar talian",
+    "cancelDownload": "Batalkan muat turun",
+    "deleteDownload": "Padam muat turun",
+    "deleteDownloadConfirmTitle": "Padam muat turun?",
+    "deleteDownloadConfirmBody": "PDF akan dialih keluar daripada peranti anda.",
+    "openInBrowser": "Buka dalam pelayar",
+    "viewerError": "PDF tidak dapat dimuatkan."
+  },
+  "lizenzen": {
+    "title": "Sumber & lesen",
+    "subtitle": "Pemegang hak dan lesen bagi kandungan yang digunakan dalam Salati",
+    "intro": "Salati menggunakan teks, audio, data, fon dan model daripada pihak ketiga. Semua pemegang hak dan lesen yang menjadi asas penggunaannya disenaraikan di sini. Apabila sesuatu lesen menuntut penyebutan - contohnya Apache-2.0, MIT atau ODbL - halaman ini memenuhinya.",
+    "categories": {
+      "quran": "Teks al-Quran & terjemahan",
+      "recitation": "Bacaan",
+      "hadith": "Koleksi hadis",
+      "font": "Fon",
+      "ai": "Model AI",
+      "speech": "Pengecaman pertuturan",
+      "maps": "Peta & data tempat",
+      "prayerTimes": "Waktu solat & kalendar",
+      "data": "Sumber data lain",
+      "images": "Imej",
+      "software": "Pustaka perisian"
+    },
+    "terms": {
+      "providerTerms": "Syarat penggunaan penyedia",
+      "reciterRights": "Hak qari dan penyedia berkenaan",
+      "publicDomain": "Unlicense (domain awam)",
+      "fontEula": "Lesen pengeluar (terbenam dalam fon)",
+      "hadeethencTerms": "Paparan tanpa perubahan dengan penyebutan sumber (syarat penyedia)",
+      "rassoulRelease": "Dibebaskan oleh penulis - penerbitan semula tanpa ubahan dengan menyebut sumber"
+    },
+    "distributedSection": "Yang kami edarkan sendiri",
+    "distributedText": "Kebanyakan kandungan diambil oleh peranti anda terus daripada penyedia masing-masing - kami tidak mengedarkannya semula, jadi menyebut sumber sudah memadai di situ. Yang kami edarkan sendiri: model bahasa Qwen2.5-1.5B-Instruct dan model pengecaman pertuturan daripada Tarteel (kedua-duanya dari storan kami sendiri), fon KFGQPC HAFS serta semua pustaka perisian di dalam pakej aplikasi. Bagi karya-karya ini teks lesen penuh disertakan - boleh dibuka terus pada entri berkenaan. Kami turut menyampaikan sendiri tafsir bahasa Jerman oleh Abu-r-Ridā Muhammad Ibn Ahmad Ibn Rassoul - penulis membebaskannya daripada hak cipta, tetapi mensyaratkan sumber disebut.",
+    "moreTextsSection": "Teks lesen lain",
+    "moreTextsIntro": "Lesen pustaka lebih kecil yang turut berjalan dalam pakej aplikasi, serta senarai lengkap semua notis hak cipta (NOTICE). Lesen MIT dan BSD menuntut notis asal pemegang hak - ia berada dalam NOTICE, bukan dalam teks lesen itu sendiri.",
+    "appliesTo": "Terpakai untuk:",
+    "showFullText": "Papar teks penuh",
+    "hideFullText": "Sembunyikan teks penuh",
+    "originalOnly": "Teks lesen dipaparkan dalam bahasa asalnya dan tidak diterjemahkan - terjemahan bukanlah lesen itu.",
+    "changesSection": "Perubahan pada karya pihak ketiga",
+    "changesText": "Lesen Apache-2.0 mewajibkan kami menyatakan perubahan kami sendiri. Qwen2.5-1.5B-Instruct kami edarkan sebagai fail GGUF dengan kuantisasi Q4_K_M, dan tarteel-ai/whisper-base-ar-quran sebagai fail GGML dengan kuantisasi q5_0 serta versi ONNX untuk pelayar. Kedua-dua model hanya ditukar ke format fail lain dan dikecilkan - tiada latihan semula dan tiada pemberat yang diubah. Fon KFGQPC HAFS kami edarkan tanpa perubahan.",
+    "ownContentSection": "Kandungan kami sendiri",
+    "ownContentText": "Teks kursus, penjelasan, soalan kuiz, bahan serta penerbitan podcast dan video Salati ialah karya kami sendiri. Anda boleh memuat turun dan menggunakannya untuk kegunaan peribadi; penyebaran semula atau penggunaan komersial memerlukan kebenaran kami.",
+    "noticeSection": "Notis mengenai hak",
+    "noticeText": "Kami berusaha menyebut setiap sumber dengan betul. Jika ada penyebutan yang tertinggal, keterangan lesen yang salah atau kandungan dalam Salati yang melanggar hak anda, sila tulis kepada salatibox@gmail.com - kami akan membetulkan keterangan itu atau mengeluarkan kandungan tersebut dengan segera."
+  },
+  "mosqueMatch": {
+    "title": "Padankan dengan masjid saya",
+    "subtitle": "Taip waktu daripada jadual — apl akan cari tetapan yang sepadan",
+    "introFooter": "Pengiraan dibuat untuk lokasi dan tarikh ini. Jika masjid anda di tempat lain, tetapkan lokasi dahulu dalam tetapan.",
+    "forDate": "Waktu bagi",
+    "enterTitle": "Waktu di masjid anda",
+    "enterFooter": "Satu waktu pun memadai; lebih banyak anda isi, lebih tepat padanannya. Isikan waktu azan, bukan waktu iqamah. Format: 05:12",
+    "placeholder": "--:--",
+    "search": "Cari tetapan yang sepadan",
+    "needInput": "Isikan sekurang-kurangnya satu waktu, contohnya 05:12.",
+    "resultTitle": "Ini yang paling sepadan",
+    "resultAngles": "Sudut",
+    "resultExact": "Kaedah ini menepati waktu anda tanpa sebarang pembetulan — keputusan yang sangat meyakinkan.",
+    "resultAdjusted": "Kaedah ini tidak menepati sampai ke minit; bakinya dimasukkan ke pembetulan minit. Dengan itu waktunya kekal betul sepanjang tahun.",
+    "resultWarn": "Perbezaannya besar. Semak lokasi dan sama ada anda benar-benar mengisi waktu azan — waktu iqamah memang lebih lewat.",
+    "deviation": "Perbezaan purata",
+    "noAdjust": "tidak perlu",
+    "apply": "Guna pakai",
+    "appliedShort": "Telah digunakan",
+    "applied": "Disimpan. Paparan, pemberitahuan, widget dan eksport kalendar kini menggunakan tetapan ini.",
+    "applyFooter": "Menetapkan kaedah pengiraan, mazhab Asar, peraturan latitud tinggi dan pembetulan minit.",
+    "whyTitle": "Kenapa tidak sekadar dianjak?",
+    "whyText": "Anjakan minit semata-mata hanya betul untuk hari yang anda taip. Kaedah berbeza pada sudut matahari, dan sudut itu memberi kesan berlainan sepanjang tahun — di Jerman lebih sejam antara Disember dan Jun. Sebab itu apl mencari kaedahnya dahulu, kemudian barulah menganjak minit."
+  },
+  "prayerSource": {
+    "title": "Dari mana waktu solat anda datang",
+    "subtitle": "Sumber, kaedah dan cara menepati waktu anda sendiri",
+    "intro": "Waktu solat ialah hasil pengiraan, bukan ukuran. Waktu yang terhasil bergantung pada pihak berkuasa yang dijadikan asas — bezanya dari beberapa minit hingga lebih sejam. Salati menunjukkan yang mana satu.",
+    "currentTitle": "Yang berkuat kuasa sekarang",
+    "currentFooter": "Nilai ini terpakai sama untuk paparan, pemberitahuan, widget, jam dan eksport kalendar.",
+    "angles": "Sudut",
+    "noAdjust": "tiada",
+    "adjustCount": "{n} diselaraskan",
+    "countryTitle": "Nota tentang negara anda",
+    "countryFooter": "Di {country} kebanyakan jemaah mengikut {method}. Salati tidak menukarnya sendiri — anda yang memutuskan.",
+    "howTitle": "Begini cara menepati waktu anda",
+    "howMosque": "Padankan dengan masjid saya",
+    "howMosqueHint": "Taip waktu daripada jadual, selebihnya apl yang uruskan",
+    "howSettings": "Pilih sendiri pihak berkuasanya",
+    "howSettingsHint": "Kaedah pengiraan, mazhab Asar, peraturan latitud tinggi dan pembetulan minit",
+    "howMosques": "Masjid berdekatan",
+    "howMosquesHint": "Cari jemaah berdekatan dan tanya waktunya",
+    "dataTitle": "Sumber data",
+    "dataText": "Ketika dalam talian, Salati mengambil waktu daripada API AlAdhan yang mencerminkan parameter pihak berkuasa. Ketika luar talian, apl mengira sendiri waktu yang sama (pustaka adhan, lesen MIT) — dengan sudut yang sama tepat, supaya hasil luar talian tidak berbeza daripada dalam talian.",
+    "methodTitle": "Apa yang ditetapkan oleh kaedah",
+    "methodText": "Subuh bermula apabila matahari mencapai sudut tertentu di bawah ufuk, begitu juga Isyak pada waktu petang. Pihak berkuasa menetapkan sudut ini secara berbeza — antara 12° dan 20°. Sesetengahnya mengira Isyak bukan dengan sudut, tetapi sekian minit tetap selepas Maghrib. Ada juga yang menambah margin beberapa minit pada terbit, tengah hari dan terbenam.",
+    "asrTitle": "Asar: dua panjang bayang",
+    "asrText": "Asar bermula apabila bayang sesuatu objek bertambah sepanjang objek itu sendiri (Syafie, Maliki, Hanbali) atau dua kali ganda (Hanafi). Bezanya kira-kira 45 hingga 90 minit — bukan ketidaktepatan pengiraan, tetapi dua mazhab.",
+    "highLatTitle": "Di utara latitud 48°",
+    "highLatText": "Di kebanyakan kawasan Jerman, matahari pada musim panas tidak turun cukup rendah pada waktu malam untuk mencapai sudut Subuh dan Isyak. Peraturan ganti kemudian menerbitkan kedua-dua waktu itu daripada panjang malam. Tiada peraturan yang disepakati semua — di Berlin jurangnya melebihi sejam. Sebab itu semua peraturan boleh dipilih, dan sebab itu jadual masjid anda sendiri ialah jawapan yang lebih baik jika ragu.",
+    "sourcesTitle": "Sumber",
+    "sourcesFooter": "Membuka halaman dalam pelayar.",
+    "sources": {
+      "aladhan": "AlAdhan — gambaran kaedah pengiraan",
+      "adhan": "adhan — pustaka bagi pengiraan luar talian",
+      "diyanet": "Diyanet — penjelasan margin masa (temkin)",
+      "moonsighting": "Moonsighting Committee — penerangan kaedahnya",
+      "highLat": "Majlis Fatwa dan Penyelidikan Eropah — latitud tinggi"
+    }
+  }
+}

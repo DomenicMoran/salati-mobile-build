@@ -1,0 +1,7 @@
+{
+  "name": "salati-watch-sync",
+  "version": "1.0.0",
+  "description": "Lokales Expo-Module: schickt die Gebetszeiten-Nutzlast aus der iOS-App-Group per WatchConnectivity an die Apple Watch.",
+  "main": "index.ts",
+  "private": true
+}

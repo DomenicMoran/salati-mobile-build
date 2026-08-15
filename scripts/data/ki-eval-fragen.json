@@ -1,0 +1,805 @@
+{
+  "hinweis": "Mehrsprachiger Fragenkatalog für scripts/ki-retrieval-eval.mjs. `ids` ist die Erwartung als Regex auf die Doc-ID — NICHT auf den Text. Grund: alle 14 Korpora tragen dieselben Doc-IDs (scripts/build-ki-korpus.mjs baut sie aus derselben deutschen Referenz), damit ist eine EINZIGE Erwartung für alle Sprachen gültig und muss nicht 14-mal als Textmuster gepflegt werden. Die IDs stammen aus dem deutschen Lauf (die Fragen sind dort alle 'ok'), d. h. gemessen wird: findet die Zielsprache DIESELBEN Quellen wie Deutsch? Die Fragen sind sinngemäss übersetzt und so formuliert, wie ein Nutzer sie tippt.",
+  "fragen": [
+    {
+      "id": "allah",
+      "ids": "^(w-wer-ist-allah|w-tauhid|k-aqida)",
+      "f": {
+        "de": "Wer ist Allah",
+        "en": "Who is Allah",
+        "tr": "Allah kimdir",
+        "ar": "من هو الله",
+        "es": "Quién es Alá",
+        "fr": "Qui est Allah",
+        "ru": "Кто такой Аллах",
+        "id": "Siapakah Allah",
+        "ms": "Siapakah Allah",
+        "bn": "আল্লাহ কে",
+        "ur": "اللہ کون ہے",
+        "fa": "الله کیست",
+        "ps": "الله څوک دی",
+        "sw": "Allah ni nani"
+      }
+    },
+    {
+      "id": "fuenf-saeulen",
+      "ids": "^(w-fuenf-saeulen|w-die-fuenf-gebete|w-iman-islam-ihsan|k-nawawi40-nawawi-03|h-nawawi-03)",
+      "f": {
+        "de": "Was sind die fünf Säulen",
+        "en": "What are the five pillars of Islam",
+        "tr": "İslam'ın beş şartı nedir",
+        "ar": "ما هي أركان الإسلام الخمسة",
+        "es": "Cuáles son los cinco pilares del Islam",
+        "fr": "Quels sont les cinq piliers de l'islam",
+        "ru": "Каковы пять столпов ислама",
+        "id": "Apa saja lima rukun Islam",
+        "ms": "Apakah lima rukun Islam",
+        "bn": "ইসলামের পাঁচটি স্তম্ভ কি",
+        "ur": "اسلام کے پانچ ارکان کیا ہیں",
+        "fa": "پنج رکن اسلام چیست",
+        "ps": "د اسلام پنځه ارکان څه دي",
+        "sw": "Nguzo tano za Uislamu ni zipi"
+      }
+    },
+    {
+      "id": "ischa",
+      "ids": "^(w-gebet-ischa|w-die-fuenf-gebete|w-rakat-uebersicht)",
+      "f": {
+        "de": "Was ist Ischa",
+        "en": "What is the Isha prayer",
+        "tr": "İşa namazı nedir",
+        "ar": "ما هي صلاة العشاء",
+        "es": "Qué es la oración del Isha",
+        "fr": "Qu'est-ce que la prière de l'Icha",
+        "ru": "Что такое молитва Иша",
+        "id": "Apa itu salat Isya",
+        "ms": "Apakah solat Isyak",
+        "bn": "ইশার নামাজ কি",
+        "ur": "عشاء کی نماز کیا ہے",
+        "fa": "نماز عشا چیست",
+        "ps": "د عشاء لمونځ څه دی",
+        "sw": "Sala ya Isha ni nini"
+      }
+    },
+    {
+      "id": "wie-oft-beten",
+      "ids": "^(w-die-fuenf-gebete|w-gebet-ablauf|w-fuenf-saeulen)",
+      "f": {
+        "de": "Wie oft muss man beten",
+        "en": "How often must a Muslim pray each day",
+        "tr": "Günde kaç vakit namaz kılınır",
+        "ar": "كم مرة يجب أن نصلي في اليوم",
+        "es": "Cuántas veces al día hay que rezar",
+        "fr": "Combien de fois par jour faut-il prier",
+        "ru": "Сколько раз в день нужно молиться",
+        "id": "Berapa kali sehari harus salat",
+        "ms": "Berapa kali sehari perlu solat",
+        "bn": "দিনে কতবার নামাজ পড়তে হয়",
+        "ur": "دن میں کتنی بار نماز پڑھنی ہے",
+        "fa": "روزی چند بار باید نماز خواند",
+        "ps": "په ورځ کې څو ځله لمونځ کول پکار دي",
+        "sw": "Mara ngapi kwa siku tunapaswa kusali"
+      }
+    },
+    {
+      "id": "wudu",
+      "ids": "^(g-wudu|w-wudu-kurz|w-wudu-bricht)",
+      "f": {
+        "de": "Wie mache ich Wudu",
+        "en": "How do I perform wudu",
+        "tr": "Abdest nasıl alınır",
+        "ar": "كيف أتوضأ",
+        "es": "Cómo hago el wudu",
+        "fr": "Comment faire les ablutions wudu",
+        "ru": "Как совершать омовение вуду",
+        "id": "Bagaimana cara berwudu",
+        "ms": "Bagaimana cara berwuduk",
+        "bn": "ওজু কিভাবে করব",
+        "ur": "وضو کیسے کریں",
+        "fa": "چگونه وضو بگیرم",
+        "ps": "وضو څنګه وکړم",
+        "sw": "Nachukuaje udhu"
+      }
+    },
+    {
+      "id": "letzter-prophet",
+      "ids": "^(w-letzter-prophet|w-propheten-allgemein|k-seerah)",
+      "f": {
+        "de": "Wer ist der letzte Prophet",
+        "en": "Who is the last prophet",
+        "tr": "Son peygamber kimdir",
+        "ar": "من هو خاتم الأنبياء",
+        "es": "Quién es el último profeta",
+        "fr": "Qui est le dernier prophète",
+        "ru": "Кто последний пророк",
+        "id": "Siapa nabi terakhir",
+        "ms": "Siapakah nabi terakhir",
+        "bn": "শেষ নবী কে",
+        "ur": "آخری نبی کون ہیں",
+        "fa": "آخرین پیامبر کیست",
+        "ps": "وروستی پیغمبر څوک دی",
+        "sw": "Nabii wa mwisho ni nani"
+      }
+    },
+    {
+      "id": "fadschr",
+      "ids": "^(w-gebet-fadschr|w-die-fuenf-gebete|w-rakat-uebersicht)",
+      "f": {
+        "de": "Wann ist Fadschr",
+        "en": "When is the Fajr prayer time",
+        "tr": "Sabah namazı vakti ne zaman",
+        "ar": "متى وقت صلاة الفجر",
+        "es": "Cuándo es la oración del Fayr",
+        "fr": "Quand est la prière du Fajr",
+        "ru": "Когда время молитвы Фаджр",
+        "id": "Kapan waktu salat Subuh",
+        "ms": "Bilakah waktu solat Subuh",
+        "bn": "ফজরের নামাজের সময় কখন",
+        "ur": "فجر کی نماز کا وقت کب ہے",
+        "fa": "وقت نماز صبح چه زمانی است",
+        "ps": "د سهار لمانځه وخت کله دی",
+        "sw": "Wakati wa sala ya Alfajiri ni lini"
+      }
+    },
+    {
+      "id": "adhan",
+      "ids": "^(w-adhan|w-dschumua|w-die-fuenf-gebete)",
+      "f": {
+        "de": "Was ist der Adhan",
+        "en": "What is the adhan",
+        "tr": "Ezan nedir",
+        "ar": "ما هو الأذان",
+        "es": "Qué es el adhan",
+        "fr": "Qu'est-ce que l'adhan",
+        "ru": "Что такое азан",
+        "id": "Apa itu azan",
+        "ms": "Apakah azan",
+        "bn": "আজান কি",
+        "ur": "اذان کیا ہے",
+        "fa": "اذان چیست",
+        "ps": "اذان څه دی",
+        "sw": "Adhana ni nini"
+      }
+    },
+    {
+      "id": "freitagsgebet",
+      "ids": "^(w-dschumua|w-freitag-bedeutung|g-jumuah|w-freitagsgebet-und-arbeit)",
+      "f": {
+        "de": "Was ist das Freitagsgebet",
+        "en": "What is the Friday prayer",
+        "tr": "Cuma namazı nedir",
+        "ar": "ما هي صلاة الجمعة",
+        "es": "Qué es la oración del viernes",
+        "fr": "Qu'est-ce que la prière du vendredi",
+        "ru": "Что такое пятничная молитва",
+        "id": "Apa itu salat Jumat",
+        "ms": "Apakah solat Jumaat",
+        "bn": "জুমার নামাজ কি",
+        "ur": "جمعہ کی نماز کیا ہے",
+        "fa": "نماز جمعه چیست",
+        "ps": "د جمعې لمونځ څه دی",
+        "sw": "Sala ya Ijumaa ni nini"
+      }
+    },
+    {
+      "id": "qibla",
+      "ids": "^(w-qibla|w-mekka-und-kaaba|w-gebet-im-flugzeug)",
+      "f": {
+        "de": "Was ist die Qibla",
+        "en": "What is the qibla",
+        "tr": "Kıble nedir",
+        "ar": "ما هي القبلة",
+        "es": "Qué es la alquibla",
+        "fr": "Qu'est-ce que la qibla",
+        "ru": "Что такое кибла",
+        "id": "Apa itu kiblat",
+        "ms": "Apakah kiblat",
+        "bn": "কিবলা কি",
+        "ur": "قبلہ کیا ہے",
+        "fa": "قبله چیست",
+        "ps": "قبله څه ده",
+        "sw": "Kibla ni nini"
+      }
+    },
+    {
+      "id": "ghusl",
+      "ids": "^(w-ghusl|g-ghusl)",
+      "f": {
+        "de": "Was ist Ghusl",
+        "en": "What is ghusl",
+        "tr": "Gusül nedir",
+        "ar": "ما هو الغسل",
+        "es": "Qué es el ghusl",
+        "fr": "Qu'est-ce que le ghusl",
+        "ru": "Что такое гусль",
+        "id": "Apa itu mandi wajib",
+        "ms": "Apakah mandi wajib",
+        "bn": "গোসল কি",
+        "ur": "غسل کیا ہے",
+        "fa": "غسل چیست",
+        "ps": "غسل څه دی",
+        "sw": "Josho la ghusl ni nini"
+      }
+    },
+    {
+      "id": "tayammum",
+      "ids": "^(g-tayammum|w-tayammum)",
+      "f": {
+        "de": "Was ist Tayammum",
+        "en": "What is tayammum",
+        "tr": "Teyemmüm nedir",
+        "ar": "ما هو التيمم",
+        "es": "Qué es el tayamum",
+        "fr": "Qu'est-ce que le tayammum",
+        "ru": "Что такое таяммум",
+        "id": "Apa itu tayamum",
+        "ms": "Apakah tayamum",
+        "bn": "তায়াম্মুম কি",
+        "ur": "تیمم کیا ہے",
+        "fa": "تیمم چیست",
+        "ps": "تیمم څه دی",
+        "sw": "Tayammum ni nini"
+      }
+    },
+    {
+      "id": "tauhid",
+      "ids": "^(w-tauhid|k-aqida-aqida-10|w-wer-ist-allah)",
+      "f": {
+        "de": "Was bedeutet Tauhid",
+        "en": "What does tawhid mean",
+        "tr": "Tevhid ne demek",
+        "ar": "ما معنى التوحيد",
+        "es": "Qué significa el tawhid",
+        "fr": "Que signifie le tawhid",
+        "ru": "Что означает таухид",
+        "id": "Apa arti tauhid",
+        "ms": "Apakah maksud tauhid",
+        "bn": "তাওহীদ মানে কি",
+        "ur": "توحید کا کیا مطلب ہے",
+        "fa": "توحید یعنی چه",
+        "ps": "توحید څه معنی لري",
+        "sw": "Tawhidi maana yake nini"
+      }
+    },
+    {
+      "id": "schirk",
+      "ids": "^(w-schirk|k-aqida-aqida-11|w-tauhid)",
+      "f": {
+        "de": "Was ist Schirk",
+        "en": "What is shirk",
+        "tr": "Şirk nedir",
+        "ar": "ما هو الشرك",
+        "es": "Qué es el shirk",
+        "fr": "Qu'est-ce que le chirk",
+        "ru": "Что такое ширк",
+        "id": "Apa itu syirik",
+        "ms": "Apakah syirik",
+        "bn": "শিরক কি",
+        "ur": "شرک کیا ہے",
+        "fa": "شرک چیست",
+        "ps": "شرک څه دی",
+        "sw": "Shirki ni nini"
+      }
+    },
+    {
+      "id": "nach-dem-tod",
+      "ids": "^(w-jenseits|w-tod-und-trauer|k-aqida-aqida-08)",
+      "f": {
+        "de": "Was passiert nach dem Tod",
+        "en": "What happens after death",
+        "tr": "Ölümden sonra ne olur",
+        "ar": "ماذا يحدث بعد الموت",
+        "es": "Qué ocurre después de la muerte",
+        "fr": "Que se passe-t-il après la mort",
+        "ru": "Что происходит после смерти",
+        "id": "Apa yang terjadi setelah kematian",
+        "ms": "Apa berlaku selepas kematian",
+        "bn": "মৃত্যুর পর কি হয়",
+        "ur": "موت کے بعد کیا ہوتا ہے",
+        "fa": "پس از مرگ چه می‌شود",
+        "ps": "له مرګ وروسته څه کیږي",
+        "sw": "Nini hutokea baada ya kifo"
+      }
+    },
+    {
+      "id": "paradies",
+      "ids": "^(w-paradies-hoelle|k-aqida-aqida-08|w-jenseits)",
+      "f": {
+        "de": "Was ist das Paradies",
+        "en": "What is paradise",
+        "tr": "Cennet nedir",
+        "ar": "ما هي الجنة",
+        "es": "Qué es el paraíso",
+        "fr": "Qu'est-ce que le paradis",
+        "ru": "Что такое рай",
+        "id": "Apa itu surga",
+        "ms": "Apakah syurga",
+        "bn": "জান্নাত কি",
+        "ur": "جنت کیا ہے",
+        "fa": "بهشت چیست",
+        "ps": "جنت څه دی",
+        "sw": "Pepo ni nini"
+      }
+    },
+    {
+      "id": "schahada",
+      "ids": "^(w-schahada|w-wie-werde-ich-muslim|w-fuenf-saeulen)",
+      "f": {
+        "de": "Was ist die Schahada",
+        "en": "What is the shahada",
+        "tr": "Kelime-i şehadet nedir",
+        "ar": "ما هي الشهادة",
+        "es": "Qué es la shahada",
+        "fr": "Qu'est-ce que la chahada",
+        "ru": "Что такое шахада",
+        "id": "Apa itu syahadat",
+        "ms": "Apakah syahadah",
+        "bn": "শাহাদাহ কি",
+        "ur": "شہادت کیا ہے",
+        "fa": "شهادتین چیست",
+        "ps": "شهادت څه دی",
+        "sw": "Shahada ni nini"
+      }
+    },
+    {
+      "id": "zakat",
+      "ids": "^(w-zakat|w-zakat-empfaenger|w-zakat-al-fitr|w-fuenf-saeulen)",
+      "f": {
+        "de": "Wie viel Zakat muss ich zahlen",
+        "en": "How much zakat do I have to pay",
+        "tr": "Ne kadar zekat vermeliyim",
+        "ar": "كم مقدار الزكاة الواجبة",
+        "es": "Cuánto zakat debo pagar",
+        "fr": "Combien de zakat dois-je payer",
+        "ru": "Сколько закята нужно платить",
+        "id": "Berapa besar zakat yang harus dibayar",
+        "ms": "Berapa banyak zakat perlu dibayar",
+        "bn": "কত যাকাত দিতে হয়",
+        "ur": "کتنی زکوٰۃ ادا کرنی ہے",
+        "fa": "چقدر زکات باید بدهم",
+        "ps": "څومره زکات ورکول پکار دي",
+        "sw": "Zaka kiasi gani ninapaswa kutoa"
+      }
+    },
+    {
+      "id": "fasten-wann",
+      "ids": "^(w-fasten-ramadan|w-ramadan-monat|w-freiwilliges-fasten)",
+      "f": {
+        "de": "Wann muss ich fasten",
+        "en": "When do Muslims have to fast",
+        "tr": "Ne zaman oruç tutulur",
+        "ar": "متى يجب الصيام",
+        "es": "Cuándo hay que ayunar",
+        "fr": "Quand faut-il jeûner",
+        "ru": "Когда нужно поститься",
+        "id": "Kapan wajib berpuasa",
+        "ms": "Bilakah wajib berpuasa",
+        "bn": "কখন রোজা রাখতে হয়",
+        "ur": "روزہ کب رکھنا ہے",
+        "fa": "چه زمانی باید روزه گرفت",
+        "ps": "روژه کله نیول کیږي",
+        "sw": "Ni lini tunapaswa kufunga"
+      }
+    },
+    {
+      "id": "fasten-bricht",
+      "ids": "^(w-fasten-bricht|w-fasten-ramadan)",
+      "f": {
+        "de": "Was bricht das Fasten",
+        "en": "What breaks the fast",
+        "tr": "Orucu ne bozar",
+        "ar": "ما الذي يفطر الصائم",
+        "es": "Qué rompe el ayuno",
+        "fr": "Qu'est-ce qui rompt le jeûne",
+        "ru": "Что нарушает пост",
+        "id": "Apa yang membatalkan puasa",
+        "ms": "Apakah yang membatalkan puasa",
+        "bn": "কি রোজা ভাঙে",
+        "ur": "روزہ کس چیز سے ٹوٹتا ہے",
+        "fa": "چه چیزی روزه را باطل می‌کند",
+        "ps": "روژه په څه ماتیږي",
+        "sw": "Nini hubatilisha saumu"
+      }
+    },
+    {
+      "id": "hadsch",
+      "ids": "^(w-hadsch|g-hajj-umrah|w-fuenf-saeulen|w-dhul-hidscha)",
+      "f": {
+        "de": "Was ist Hadsch",
+        "en": "What is the hajj",
+        "tr": "Hac nedir",
+        "ar": "ما هو الحج",
+        "es": "Qué es el hach",
+        "fr": "Qu'est-ce que le hajj",
+        "ru": "Что такое хадж",
+        "id": "Apa itu haji",
+        "ms": "Apakah haji",
+        "bn": "হজ কি",
+        "ur": "حج کیا ہے",
+        "fa": "حج چیست",
+        "ps": "حج څه دی",
+        "sw": "Hija ni nini"
+      }
+    },
+    {
+      "id": "fatiha",
+      "ids": "^(w-fatiha-im-gebet|q:1:|w-warum-auf-arabisch-beten)",
+      "f": {
+        "de": "Was ist die Fatiha",
+        "en": "What is Surah al-Fatiha",
+        "tr": "Fatiha suresi nedir",
+        "ar": "ما هي سورة الفاتحة",
+        "es": "Qué es la sura Al-Fatiha",
+        "fr": "Qu'est-ce que la sourate Al-Fatiha",
+        "ru": "Что такое сура аль-Фатиха",
+        "id": "Apa itu surah Al-Fatihah",
+        "ms": "Apakah surah Al-Fatihah",
+        "bn": "সূরা ফাতিহা কি",
+        "ur": "سورہ فاتحہ کیا ہے",
+        "fa": "سوره فاتحه چیست",
+        "ps": "سوره فاتحه څه ده",
+        "sw": "Sura al-Fatiha ni nini"
+      }
+    },
+    {
+      "id": "tadschwied",
+      "ids": "^(w-was-ist-tadschwied|k-tajwid-tajwid-01)",
+      "f": {
+        "de": "Was ist Tadschwied",
+        "en": "What is tajwid",
+        "tr": "Tecvid nedir",
+        "ar": "ما هو التجويد",
+        "es": "Qué es el taywid",
+        "fr": "Qu'est-ce que le tajwid",
+        "ru": "Что такое таджвид",
+        "id": "Apa itu tajwid",
+        "ms": "Apakah tajwid",
+        "bn": "তাজবীদ কি",
+        "ur": "تجوید کیا ہے",
+        "fa": "تجوید چیست",
+        "ps": "تجوید څه دی",
+        "sw": "Tajwidi ni nini"
+      }
+    },
+    {
+      "id": "idgham",
+      "ids": "^(k-tajwid-tajwid-03|w-nun-sakinah-regeln|w-mim-sakinah-regeln)",
+      "f": {
+        "de": "Was ist Idgham",
+        "en": "What is idgham",
+        "tr": "İdgam nedir",
+        "ar": "ما هو الإدغام",
+        "es": "Qué es el idgham",
+        "fr": "Qu'est-ce que l'idgham",
+        "ru": "Что такое идгам",
+        "id": "Apa itu idgham",
+        "ms": "Apakah idgham",
+        "bn": "ইদগাম কি",
+        "ur": "ادغام کیا ہے",
+        "fa": "ادغام چیست",
+        "ps": "ادغام څه دی",
+        "sw": "Idgham ni nini"
+      }
+    },
+    {
+      "id": "salam",
+      "ids": "^(w-salam-gruss|h-nawawi-3[456]|h-nawawi-07)",
+      "f": {
+        "de": "Wie grüßt man als Muslim",
+        "en": "How do Muslims greet each other",
+        "tr": "Müslümanlar nasıl selamlaşır",
+        "ar": "كيف يسلم المسلمون على بعضهم",
+        "es": "Cómo se saludan los musulmanes",
+        "fr": "Comment les musulmans se saluent-ils",
+        "ru": "Как мусульмане приветствуют друг друга",
+        "id": "Bagaimana cara mengucapkan salam",
+        "ms": "Bagaimana cara memberi salam",
+        "bn": "মুসলিমরা কিভাবে সালাম দেয়",
+        "ur": "مسلمان ایک دوسرے کو سلام کیسے کرتے ہیں",
+        "fa": "مسلمانان چگونه سلام می‌کنند",
+        "ps": "مسلمانان یو بل ته څنګه سلام وايي",
+        "sw": "Waislamu husalimianaje"
+      }
+    },
+    {
+      "id": "niesen",
+      "ids": "^(w-dua-beim-niesen|k-nawawi40-nawawi-33|h-nawawi-33)",
+      "f": {
+        "de": "Was sagt man beim Niesen",
+        "en": "What do you say when someone sneezes",
+        "tr": "Hapşıran birine ne denir",
+        "ar": "ماذا يقال عند العطاس",
+        "es": "Qué se dice al estornudar",
+        "fr": "Que dit-on quand on éternue",
+        "ru": "Что говорят при чихании",
+        "id": "Apa yang diucapkan saat bersin",
+        "ms": "Apa yang diucapkan ketika bersin",
+        "bn": "হাঁচি দিলে কি বলতে হয়",
+        "ur": "چھینک آنے پر کیا کہتے ہیں",
+        "fa": "هنگام عطسه چه می‌گویند",
+        "ps": "د پرنجې پر مهال څه ویل کیږي",
+        "sw": "Unasema nini mtu akipiga chafya"
+      }
+    },
+    {
+      "id": "alkohol",
+      "ids": "^(w-alkohol|w-halal-und-haram-essen|w-arbeit-mit-alkohol)",
+      "f": {
+        "de": "Ist Alkohol verboten",
+        "en": "Is alcohol forbidden in Islam",
+        "tr": "Alkol haram mı",
+        "ar": "هل الخمر حرام",
+        "es": "Está prohibido el alcohol en el islam",
+        "fr": "L'alcool est-il interdit en islam",
+        "ru": "Запрещён ли алкоголь в исламе",
+        "id": "Apakah alkohol haram",
+        "ms": "Adakah alkohol haram",
+        "bn": "মদ কি হারাম",
+        "ur": "کیا شراب حرام ہے",
+        "fa": "آیا الکل حرام است",
+        "ps": "ایا شراب حرام دي",
+        "sw": "Je pombe ni haramu"
+      }
+    },
+    {
+      "id": "schwein",
+      "ids": "^(w-schweinefleisch|w-halal-und-haram-essen|w-gelatine)",
+      "f": {
+        "de": "Darf ich Schweinefleisch essen",
+        "en": "Can I eat pork",
+        "tr": "Domuz eti yenir mi",
+        "ar": "هل يجوز أكل لحم الخنزير",
+        "es": "Puedo comer carne de cerdo",
+        "fr": "Puis-je manger du porc",
+        "ru": "Можно ли есть свинину",
+        "id": "Bolehkah makan daging babi",
+        "ms": "Bolehkah makan daging babi",
+        "bn": "শুকরের মাংস খাওয়া যাবে কি",
+        "ur": "کیا سور کا گوشت کھا سکتے ہیں",
+        "fa": "آیا خوردن گوشت خوک جایز است",
+        "ps": "ایا د خنزیر غوښه خوړل روا دي",
+        "sw": "Naweza kula nyama ya nguruwe"
+      }
+    },
+    {
+      "id": "eltern",
+      "ids": "^(w-eltern-ehren|w-verwandtschaftsbande|w-familie-vom-islam)",
+      "f": {
+        "de": "Was sagt der Islam über die Eltern",
+        "en": "What does Islam say about parents",
+        "tr": "İslam anne babaya nasıl davranmayı emreder",
+        "ar": "ماذا يقول الإسلام عن بر الوالدين",
+        "es": "Qué dice el islam sobre los padres",
+        "fr": "Que dit l'islam au sujet des parents",
+        "ru": "Что ислам говорит о родителях",
+        "id": "Apa kata Islam tentang orang tua",
+        "ms": "Apa kata Islam tentang ibu bapa",
+        "bn": "ইসলাম পিতামাতা সম্পর্কে কি বলে",
+        "ur": "اسلام والدین کے بارے میں کیا کہتا ہے",
+        "fa": "اسلام درباره والدین چه می‌گوید",
+        "ps": "اسلام د مور او پلار په اړه څه وایي",
+        "sw": "Uislamu unasema nini kuhusu wazazi"
+      }
+    },
+    {
+      "id": "zorn",
+      "ids": "^(w-zorn-beherrschen|d:anger|k-akhlaq)",
+      "f": {
+        "de": "Wie gehe ich mit Wut um",
+        "en": "How do I control my anger",
+        "tr": "Öfkemi nasıl kontrol ederim",
+        "ar": "كيف أتحكم في غضبي",
+        "es": "Cómo controlo mi ira",
+        "fr": "Comment maîtriser ma colère",
+        "ru": "Как справиться с гневом",
+        "id": "Bagaimana mengendalikan amarah",
+        "ms": "Bagaimana mengawal kemarahan",
+        "bn": "রাগ কিভাবে নিয়ন্ত্রণ করব",
+        "ur": "غصے پر قابو کیسے پاؤں",
+        "fa": "چگونه خشمم را کنترل کنم",
+        "ps": "خپله غصه څنګه کنټرول کړم",
+        "sw": "Nawezaje kudhibiti hasira yangu"
+      }
+    },
+    {
+      "id": "geduld",
+      "ids": "^(w-geduld|k-akhlaq-akhlaq-03|k-nawawi40-nawawi-16)",
+      "f": {
+        "de": "Wie werde ich geduldiger",
+        "en": "How can I become more patient",
+        "tr": "Nasıl daha sabırlı olurum",
+        "ar": "كيف أصبح أكثر صبرا",
+        "es": "Cómo puedo ser más paciente",
+        "fr": "Comment devenir plus patient",
+        "ru": "Как стать терпеливее",
+        "id": "Bagaimana agar lebih sabar",
+        "ms": "Bagaimana untuk lebih sabar",
+        "bn": "কিভাবে আরও ধৈর্যশীল হব",
+        "ur": "زیادہ صابر کیسے بنوں",
+        "fa": "چگونه صبورتر شوم",
+        "ps": "څنګه نور صبرناک شم",
+        "sw": "Nawezaje kuwa mvumilivu zaidi"
+      }
+    },
+    {
+      "id": "riba",
+      "ids": "^(w-riba-zinsen|q:2:27[5-9])",
+      "f": {
+        "de": "Was ist Riba",
+        "en": "What is riba",
+        "tr": "Faiz riba nedir",
+        "ar": "ما هو الربا",
+        "es": "Qué es la riba",
+        "fr": "Qu'est-ce que le riba",
+        "ru": "Что такое риба",
+        "id": "Apa itu riba",
+        "ms": "Apakah riba",
+        "bn": "রিবা কি",
+        "ur": "ربا کیا ہے",
+        "fa": "ربا چیست",
+        "ps": "ربا څه دی",
+        "sw": "Riba ni nini"
+      }
+    },
+    {
+      "id": "tauba",
+      "ids": "^(w-istighfar-und-tauba|w-umgang-mit-fehlern-und-reue|w-suenden-vor-dem-islam)",
+      "f": {
+        "de": "Wie bereue ich eine Sünde",
+        "en": "How do I repent from a sin",
+        "tr": "Günahtan nasıl tövbe edilir",
+        "ar": "كيف أتوب من الذنب",
+        "es": "Cómo me arrepiento de un pecado",
+        "fr": "Comment se repentir d'un péché",
+        "ru": "Как покаяться в грехе",
+        "id": "Bagaimana cara bertaubat dari dosa",
+        "ms": "Bagaimana cara bertaubat daripada dosa",
+        "bn": "গুনাহ থেকে কিভাবে তওবা করব",
+        "ur": "گناہ سے توبہ کیسے کریں",
+        "fa": "چگونه از گناه توبه کنم",
+        "ps": "له ګناه څخه څنګه توبه وباسم",
+        "sw": "Nitatubuje dhambi"
+      }
+    },
+    {
+      "id": "abu-bakr",
+      "ids": "^(w-die-vier-kalifen|k-sahaba-sahaba-01)",
+      "f": {
+        "de": "Wer war Abu Bakr",
+        "en": "Who was Abu Bakr",
+        "tr": "Ebu Bekir kimdir",
+        "ar": "من هو أبو بكر",
+        "es": "Quién fue Abu Bakr",
+        "fr": "Qui était Abou Bakr",
+        "ru": "Кто такой Абу Бакр",
+        "id": "Siapa Abu Bakar",
+        "ms": "Siapakah Abu Bakar",
+        "bn": "আবু বকর কে ছিলেন",
+        "ur": "ابو بکر کون تھے",
+        "fa": "ابوبکر که بود",
+        "ps": "ابوبکر څوک و",
+        "sw": "Abu Bakr alikuwa nani"
+      }
+    },
+    {
+      "id": "isa",
+      "ids": "^(w-isa-und-maryam|w-propheten-allgemein|k-prophets-prophet-10)",
+      "f": {
+        "de": "Was sagt der Islam über Jesus",
+        "en": "What does Islam say about Jesus",
+        "tr": "İslam İsa hakkında ne der",
+        "ar": "ماذا يقول الإسلام عن عيسى",
+        "es": "Qué dice el islam sobre Jesús",
+        "fr": "Que dit l'islam au sujet de Jésus",
+        "ru": "Что ислам говорит об Исе Иисусе",
+        "id": "Apa kata Islam tentang Nabi Isa",
+        "ms": "Apa kata Islam tentang Nabi Isa",
+        "bn": "ইসলাম ঈসা সম্পর্কে কি বলে",
+        "ur": "اسلام عیسیٰ کے بارے میں کیا کہتا ہے",
+        "fa": "اسلام درباره عیسی چه می‌گوید",
+        "ps": "اسلام د عیسی په اړه څه وایي",
+        "sw": "Uislamu unasema nini kuhusu Isa Yesu"
+      }
+    },
+    {
+      "id": "muslim-werden",
+      "ids": "^(w-wie-werde-ich-muslim|w-schahada|w-suenden-vor-dem-islam)",
+      "f": {
+        "de": "Wie werde ich Muslim",
+        "en": "How do I become a Muslim",
+        "tr": "Nasıl Müslüman olunur",
+        "ar": "كيف أدخل في الإسلام",
+        "es": "Cómo me hago musulmán",
+        "fr": "Comment devenir musulman",
+        "ru": "Как стать мусульманином",
+        "id": "Bagaimana cara masuk Islam",
+        "ms": "Bagaimana cara memeluk Islam",
+        "bn": "কিভাবে মুসলিম হব",
+        "ur": "مسلمان کیسے بنوں",
+        "fa": "چگونه مسلمان شوم",
+        "ps": "څنګه مسلمان شم",
+        "sw": "Nawezaje kuwa Mwislamu"
+      }
+    },
+    {
+      "id": "menstruation",
+      "ids": "^(w-menstruation-gebet-fasten|w-istihada-zwischenblutung|w-fastentage-nachholen-periode)",
+      "f": {
+        "de": "Darf ich während der Periode beten",
+        "en": "Can a woman pray during her period",
+        "tr": "Kadın regl döneminde namaz kılabilir mi",
+        "ar": "هل تصلي المرأة أثناء الحيض",
+        "es": "Puede una mujer rezar durante la menstruación",
+        "fr": "Une femme peut-elle prier pendant ses règles",
+        "ru": "Можно ли молиться во время месячных",
+        "id": "Bolehkah wanita salat saat haid",
+        "ms": "Bolehkah wanita solat ketika haid",
+        "bn": "মাসিকের সময় নামাজ পড়া যাবে কি",
+        "ur": "کیا عورت حیض میں نماز پڑھ سکتی ہے",
+        "fa": "آیا زن در دوران عادت ماهانه نماز می‌خواند",
+        "ps": "ایا ښځه د حیض پر مهال لمونځ کولی شي",
+        "sw": "Je mwanamke anaweza kusali akiwa katika hedhi"
+      }
+    },
+    {
+      "id": "mahr",
+      "ids": "^(w-mahr-morgengabe|w-eheschliessung-ablauf|k-nikah-nikah-03|w-ehe-im-islam)",
+      "f": {
+        "de": "Was ist Mahr",
+        "en": "What is the mahr",
+        "tr": "Mehir nedir",
+        "ar": "ما هو المهر",
+        "es": "Qué es el mahr",
+        "fr": "Qu'est-ce que le mahr",
+        "ru": "Что такое махр",
+        "id": "Apa itu mahar",
+        "ms": "Apakah mahar",
+        "bn": "মোহর কি",
+        "ur": "مہر کیا ہے",
+        "fa": "مهریه چیست",
+        "ps": "مهر څه دی",
+        "sw": "Mahari ni nini"
+      }
+    },
+    {
+      "id": "tarawih",
+      "ids": "^(w-tarawih|w-ramadan-monat)",
+      "f": {
+        "de": "Was ist Tarawih",
+        "en": "What is the tarawih prayer",
+        "tr": "Teravih namazı nedir",
+        "ar": "ما هي صلاة التراويح",
+        "es": "Qué es la oración del tarawih",
+        "fr": "Qu'est-ce que la prière de tarawih",
+        "ru": "Что такое молитва таравих",
+        "id": "Apa itu salat tarawih",
+        "ms": "Apakah solat terawih",
+        "bn": "তারাবীহ নামাজ কি",
+        "ur": "تراویح کی نماز کیا ہے",
+        "fa": "نماز تراویح چیست",
+        "ps": "د تراویحو لمونځ څه دی",
+        "sw": "Sala ya tarawehe ni nini"
+      }
+    },
+    {
+      "id": "zakat-al-fitr",
+      "ids": "^(w-zakat-al-fitr|w-eid|w-schawwal)",
+      "f": {
+        "de": "Was ist Zakat al-Fitr",
+        "en": "What is zakat al-fitr",
+        "tr": "Fitre nedir",
+        "ar": "ما هي زكاة الفطر",
+        "es": "Qué es el zakat al-fitr",
+        "fr": "Qu'est-ce que la zakat al-fitr",
+        "ru": "Что такое закят аль-фитр",
+        "id": "Apa itu zakat fitrah",
+        "ms": "Apakah zakat fitrah",
+        "bn": "যাকাতুল ফিতর কি",
+        "ur": "صدقہ فطر کیا ہے",
+        "fa": "زکات فطره چیست",
+        "ps": "د فطرې زکات څه دی",
+        "sw": "Zaka ya fitri ni nini"
+      }
+    }
+  ]
+}

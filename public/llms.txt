@@ -1,0 +1,55 @@
+# Salati
+
+> Kostenlose App für Gebetszeiten, Koran und islamisches Grundlagenwissen —
+> als Web-App unter https://www.salati.pro, als Android-/iOS-App und als
+> Android-TV-App (Salati TV). Ohne Werbung, ohne Nutzerkonto, ohne Tracking;
+> die Inhalte funktionieren offline.
+
+Anbieter: Salatibox — Inh. Domenic Moran, Berlin (Impressum: /impressum).
+Sprachen der Oberfläche: de, en, tr, ar, es, fr, id, bn, fa, ms, ur, ru, sw, ps.
+
+## Was die App kann
+
+- **Gebetszeiten** (/prayer): Berechnung nach wählbarer Methode und Rechtsschule,
+  Benachrichtigungen inkl. Adhan, Wochenübersicht, Android-Homescreen-Widgets.
+- **Qibla** (/qibla): Kompass plus Entfernungsangabe zur Kaaba.
+- **Koran** (/quran): alle 114 Suren, arabischer Text (KFGQPC-Hafs), Übersetzungen
+  und Tafsir-Auswahl, Rezitationen mehrerer Rezitatoren, Lesezeichen, Mushaf-Ansicht,
+  Khatmah-Plan.
+- **Auswendiglernen** (/hifz): Vers-für-Vers-Training mit Lückentest und
+  Spracherkennung (Whisper, läuft auf dem Gerät).
+- **Duas und Dhikr** (/duas, /tasbih, /dhikr-after-salah): Bittgebete nach Themen,
+  digitale Gebetskette.
+- **Hadith** (/hadith): durchsuchbare Sammlungen mit Einzelnachweisen.
+- **Lernpfad und Kurse** (/lernen, /study): 12 Kurse (u. a. Medina-Arabisch, Tajwid,
+  Aqida, Sira, 40 Hadithe an-Nawawi, Grammatik, Dialekte) mit Lektionen, Übungen,
+  Einstufungs- und Abschlusstests.
+- **Wissen als Podcast, Video und Handout** (/podcast, /videos, /handouts).
+- **Werkzeuge**: Moschee-Finder (/mosques), Halal-Scanner (/halal-scanner),
+  Zakat- und Erbrechner (/zakat, /mirath), Hijri-Umrechner (/hijri-converter),
+  Fastenkalender (/fasting), Gewohnheits-Tracker (/tracker).
+- **Wissens-KI** (/ki): beantwortet Fragen aus einem kuratierten, in der App
+  hinterlegten Wissenskorpus. Kein externer KI-Dienst; die Antworten sind als
+  KI-generiert gekennzeichnet und ersetzen keine Gelehrtenauskunft.
+
+## Grenzen (ehrlich)
+
+- Die Web-Fassung kann keine Benachrichtigungen zur Gebetszeit senden — dafür
+  braucht es die native App.
+- Gebetszeiten kommen von der Aladhan-API und werden lokal zwischengespeichert;
+  ohne Netz zeigt die App den letzten bekannten Stand.
+- Übersetzungen der Oberfläche sind vollständig, Kursinhalte liegen überwiegend
+  auf Deutsch vor.
+- Die App gibt keine Fatwas. Inhalte sind Lern- und Nachschlagematerial.
+
+## Links
+
+- Startseite: https://www.salati.pro/
+- Gebetszeiten: https://www.salati.pro/prayer
+- Koran: https://www.salati.pro/quran
+- Lernen: https://www.salati.pro/lernen
+- Kurse: https://www.salati.pro/study
+- Podcast: https://www.salati.pro/podcast
+- Datenschutz: https://www.salati.pro/datenschutz
+- Impressum: https://www.salati.pro/impressum
+- Sitemap: https://www.salati.pro/sitemap.xml

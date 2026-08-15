@@ -1,0 +1,7 @@
+{
+  "name": "salati-live-activity",
+  "version": "1.0.0",
+  "description": "Lokales Expo-Module: iOS Live Activity (ActivityKit) Start/Update/End-Bridge fuer 'naechstes Gebet'.",
+  "main": "index.ts",
+  "private": true
+}

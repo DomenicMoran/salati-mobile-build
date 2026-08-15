@@ -1,0 +1,384 @@
+{
+  "lessons": [
+    {
+      "id": "fiqh-05",
+      "source": "Quran 5:6; Quran 4:43; Quran 22:78; Quran 2:286; Quran 64:16",
+      "title": {
+        "de": "Wenn Wasser oder Kraft fehlen - Masch, Tayammum, Krankengebet",
+        "en": "When water or strength is lacking - masah, tayammum, prayer when ill",
+        "tr": "Su ya da güç yoksa - mesh, teyemmüm, hasta namazı",
+        "ar": "إذا فُقد الماء أو القوة - المسح والتيمّم وصلاة المريض",
+        "es": "Cuando falta agua o fuerza: masah, tayammum, oración del enfermo",
+        "fr": "Quand l'eau ou la force manque : masah, tayammoum, prière du malade",
+        "id": "Bila air atau tenaga tidak ada - mengusap, tayamum, salat orang sakit",
+        "bn": "পানি বা শক্তি না থাকলে - মাসেহ, তায়াম্মুম, অসুস্থের নামাজ",
+        "fa": "آنگاه که آب یا توان نیست - مسح، تیمم، نماز بیمار",
+        "ms": "Apabila air atau tenaga tiada - sapuan, tayamum, solat orang sakit",
+        "ur": "جب پانی یا طاقت نہ ہو - مسح، تیمم، مریض کی نماز",
+        "sw": "Maji au nguvu vinapokosekana - kupaka, tayamamu, swala ya mgonjwa",
+        "ru": "Когда нет воды или сил - масх, таяммум, молитва больного",
+        "ps": "کله چې اوبه یا وس نه وي - مسح، تیمم، د ناروغ لمونځ"
+      },
+      "story": [{ "ref": "ueber-socken-streichen" }, { "ref": "tayammum" }, { "ref": "gebet-krank" }],
+      "storyQuiz": [
+        {
+          "q": {
+            "de": "Wie lange gilt der Masch über die Fußbekleidung auf Reisen?",
+            "en": "How long does wiping over footwear apply when travelling?",
+            "tr": "Yolculukta mest üzerine mesh ne kadar sürer?",
+            "ar": "كم مدة المسح على الخفّين في السفر؟",
+            "es": "¿Cuánto vale el masah sobre el calzado en viaje?",
+            "fr": "Combien de temps vaut le masah sur les chaussons en voyage ?",
+            "id": "Berapa lama masa mengusap khuf dalam perjalanan?",
+            "bn": "সফরে মোজার উপর মাসেহ কত সময় চলে?",
+            "fa": "مسح بر پاپوش در سفر چه مدت اعتبار دارد؟",
+            "ms": "Berapa lama sapuan atas sarung kaki ketika bermusafir?",
+            "ur": "سفر میں موزوں پر مسح کی مدت کتنی ہے؟",
+            "sw": "Kupaka juu ya soksi husimama muda gani safarini?",
+            "ru": "Сколько действует протирание обуви в пути?",
+            "ps": "په سفر کې د موزو پر سر مسح څومره وخت اعتبار لري؟"
+          },
+          "options": [
+            { "de": "Drei Tage und Nächte", "en": "Three days and nights", "tr": "Üç gün üç gece", "ar": "ثلاثة أيام بلياليها", "es": "Tres días y noches", "fr": "Trois jours et nuits", "id": "Tiga hari tiga malam", "bn": "তিন দিন-রাত", "fa": "سه شبانه‌روز", "ms": "Tiga hari tiga malam", "ur": "تین دن رات", "sw": "Siku tatu na usiku wake", "ru": "Трое суток", "ps": "درې ورځې او شپې" },
+            { "de": "Einen Tag und eine Nacht", "en": "One day and night", "tr": "Bir gün bir gece", "ar": "يوم وليلة", "es": "Un día y una noche", "fr": "Un jour et une nuit", "id": "Sehari semalam", "bn": "এক দিন-রাত", "fa": "یک شبانه‌روز", "ms": "Sehari semalam", "ur": "ایک دن رات", "sw": "Siku moja na usiku", "ru": "Сутки", "ps": "یوه ورځ او شپه" },
+            { "de": "Eine ganze Woche", "en": "A whole week", "tr": "Bir hafta", "ar": "أسبوع كامل", "es": "Una semana entera", "fr": "Une semaine entière", "id": "Satu pekan penuh", "bn": "পুরো এক সপ্তাহ", "fa": "یک هفتهٔ تمام", "ms": "Satu minggu penuh", "ur": "پورا ایک ہفتہ", "sw": "Wiki nzima", "ru": "Целую неделю", "ps": "بشپړه اونۍ" },
+            { "de": "Unbegrenzt", "en": "Indefinitely", "tr": "Sınırsız", "ar": "بلا حدّ", "es": "Sin límite", "fr": "Sans limite", "id": "Tanpa batas", "bn": "সীমাহীন", "fa": "بی‌حد", "ms": "Tanpa had", "ur": "لامحدود", "sw": "Bila kikomo", "ru": "Неограниченно", "ps": "بې حده" }
+          ]
+        },
+        {
+          "q": {
+            "de": "Wann tritt Tayammum an die Stelle von Wudu und Ghusl?",
+            "en": "When does tayammum take the place of wudu and ghusl?",
+            "tr": "Teyemmüm ne zaman abdest ve guslün yerini alır?",
+            "ar": "متى يقوم التيمّم مقام الوضوء والغسل؟",
+            "es": "¿Cuándo sustituye el tayammum al wudu y al ghusl?",
+            "fr": "Quand le tayammoum remplace-t-il le wudu et le ghousl ?",
+            "id": "Kapan tayamum menggantikan wudu dan mandi wajib?",
+            "bn": "তায়াম্মুম কখন অজু ও গোসলের স্থান নেয়?",
+            "fa": "تیمم چه وقت جانشین وضو و غسل می‌شود؟",
+            "ms": "Bilakah tayamum menggantikan wuduk dan mandi wajib?",
+            "ur": "تیمم کب وضو اور غسل کی جگہ لیتا ہے؟",
+            "sw": "Ni lini tayamamu huchukua nafasi ya udhu na josho?",
+            "ru": "Когда таяммум заменяет омовение малое и полное?",
+            "ps": "تیمم کله د اودس او غسل ځای نیسي؟"
+          },
+          "options": [
+            { "de": "Wenn kein Wasser da ist oder es dem Körper schaden würde", "en": "When there is no water or it would harm the body", "tr": "Su yoksa ya da bedene zarar verecekse", "ar": "إذا لم يوجد ماء أو كان يضرّ بالبدن", "es": "Cuando no hay agua o dañaría al cuerpo", "fr": "Quand il n'y a pas d'eau ou qu'elle nuirait au corps", "id": "Bila tidak ada air atau air memudaratkan badan", "bn": "যখন পানি নেই বা তা শরীরের ক্ষতি করবে", "fa": "وقتی آب نباشد یا به بدن زیان رساند", "ms": "Apabila tiada air atau ia memudaratkan badan", "ur": "جب پانی نہ ہو یا بدن کو نقصان دے", "sw": "Maji yasipopatikana au yakidhuru mwili", "ru": "Когда нет воды или она навредит телу", "ps": "کله چې اوبه نه وي یا بدن ته زیان ورسوي" },
+            { "de": "Immer, wenn man wenig Zeit hat", "en": "Whenever one is short of time", "tr": "Vakit dar olduğunda", "ar": "كلما ضاق الوقت", "es": "Siempre que se tenga poco tiempo", "fr": "Dès que l'on manque de temps", "id": "Setiap kali waktu sempit", "bn": "যখনই সময় কম থাকে", "fa": "هرگاه وقت کم باشد", "ms": "Setiap kali masa sempit", "ur": "جب بھی وقت کم ہو", "sw": "Kila muda unapokuwa mfupi", "ru": "Всегда, когда мало времени", "ps": "هر کله چې وخت لږ وي" },
+            { "de": "Nur auf Reisen", "en": "Only when travelling", "tr": "Yalnız yolculukta", "ar": "في السفر فقط", "es": "Solo en viaje", "fr": "Seulement en voyage", "id": "Hanya dalam perjalanan", "bn": "কেবল সফরে", "fa": "تنها در سفر", "ms": "Hanya ketika bermusafir", "ur": "صرف سفر میں", "sw": "Safarini pekee", "ru": "Только в пути", "ps": "یوازې په سفر کې" },
+            { "de": "Nur im Winter", "en": "Only in winter", "tr": "Yalnız kışın", "ar": "في الشتاء فقط", "es": "Solo en invierno", "fr": "Seulement en hiver", "id": "Hanya di musim dingin", "bn": "কেবল শীতকালে", "fa": "تنها در زمستان", "ms": "Hanya pada musim sejuk", "ur": "صرف سردیوں میں", "sw": "Wakati wa baridi pekee", "ru": "Только зимой", "ps": "یوازې په ژمي کې" }
+          ]
+        },
+        {
+          "q": {
+            "de": "Wie betet jemand, der nicht stehen kann?",
+            "en": "How does someone pray who cannot stand?",
+            "tr": "Ayakta duramayan biri nasıl namaz kılar?",
+            "ar": "كيف يصلّي من لا يستطيع القيام؟",
+            "es": "¿Cómo ora quien no puede ponerse de pie?",
+            "fr": "Comment prie celui qui ne peut pas se tenir debout ?",
+            "id": "Bagaimana salat orang yang tidak mampu berdiri?",
+            "bn": "যে দাঁড়াতে পারে না, সে কীভাবে নামাজ পড়ে?",
+            "fa": "کسی که نمی‌تواند بایستد چگونه نماز می‌خواند؟",
+            "ms": "Bagaimana solat orang yang tidak mampu berdiri?",
+            "ur": "جو کھڑا نہ ہو سکے وہ نماز کیسے پڑھے؟",
+            "sw": "Asiyeweza kusimama huswalije?",
+            "ru": "Как молится тот, кто не может стоять?",
+            "ps": "څوک چې ودرېدای نشي، لمونځ څنګه کوي؟"
+          },
+          "options": [
+            { "de": "Im Sitzen, sonst liegend, notfalls mit Kopfbewegungen", "en": "Sitting, otherwise lying, if need be with head movements", "tr": "Oturarak, olmazsa yatarak, gerekirse başla ima ederek", "ar": "قاعدًا، وإلا مضطجعًا، وإلا بالإيماء", "es": "Sentado, si no acostado, y si hace falta con gestos de cabeza", "fr": "Assis, sinon allongé, au besoin par gestes de la tête", "id": "Duduk, jika tidak berbaring, bila perlu dengan isyarat kepala", "bn": "বসে, নইলে শুয়ে, প্রয়োজনে মাথার ইশারায়", "fa": "نشسته، وگرنه خوابیده، و در صورت نیاز با اشارهٔ سر", "ms": "Duduk, jika tidak berbaring, jika perlu dengan isyarat kepala", "ur": "بیٹھ کر، ورنہ لیٹ کر، ضرورت پر سر کے اشارے سے", "sw": "Akiwa amekaa, la sivyo amelala, ikibidi kwa ishara ya kichwa", "ru": "Сидя, иначе лёжа, при необходимости движениями головы", "ps": "ناست، که نه پروت، او که اړ شي په سر اشاره" },
+            { "de": "Er lässt das Gebet aus", "en": "They omit the prayer", "tr": "Namazı terk eder", "ar": "يترك الصلاة", "es": "Omite la oración", "fr": "Il abandonne la prière", "id": "Ia meninggalkan salat", "bn": "সে নামাজ ছেড়ে দেয়", "fa": "نماز را ترک می‌کند", "ms": "Dia meninggalkan solat", "ur": "وہ نماز چھوڑ دے", "sw": "Huacha swala", "ru": "Он оставляет молитву", "ps": "لمونځ پرېږدي" },
+            { "de": "Er holt alles nach der Genesung nach", "en": "They make everything up after recovery", "tr": "İyileşince hepsini kaza eder", "ar": "يقضيها كلها بعد الشفاء", "es": "Lo recupera todo tras sanar", "fr": "Il rattrape tout après la guérison", "id": "Ia mengqadanya semua setelah sembuh", "bn": "সুস্থ হয়ে সব কাজা করে", "fa": "همه را پس از بهبود قضا می‌کند", "ms": "Dia mengqadakan semuanya selepas sembuh", "ur": "صحت یابی کے بعد سب قضا کرے", "sw": "Huyalipa yote baada ya kupona", "ru": "Он восполняет всё после выздоровления", "ps": "له روغېدو وروسته یې ټول قضا کوي" },
+            { "de": "Er betet nur die Fatiha ohne Bewegungen", "en": "They pray only the Fatiha without movements", "tr": "Yalnız Fâtiha'yı hareketsiz okur", "ar": "يقرأ الفاتحة فقط بلا حركة", "es": "Reza solo la Fatiha sin movimientos", "fr": "Il ne récite que la Fatiha sans gestes", "id": "Ia hanya membaca Al-Fatihah tanpa gerakan", "bn": "কেবল ফাতিহা পড়ে, কোনো নড়াচড়া ছাড়া", "fa": "تنها فاتحه را بی‌حرکت می‌خواند", "ms": "Dia hanya membaca Al-Fatihah tanpa pergerakan", "ur": "صرف فاتحہ بغیر حرکت کے پڑھے", "sw": "Husoma Al-Fatiha tu bila miondoko", "ru": "Он читает только Фатиху без движений", "ps": "یوازې فاتحه بې حرکته لولي" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fiqh-06",
+      "source": "Quran 4:43; Quran 5:6; Quran 2:222; Quran 2:185; Quran 22:78",
+      "title": {
+        "de": "Ghusl - Pflichtanlässe und die Taharah der Frau",
+        "en": "Ghusl - when it is obligatory, and a woman's purity",
+        "tr": "Gusül - farz olduğu hâller ve kadının tahâreti",
+        "ar": "الغسل - موجباته وطهارة المرأة",
+        "es": "Ghusl - cuándo es obligatorio y la pureza de la mujer",
+        "fr": "Ghousl - quand il est obligatoire et la pureté de la femme",
+        "id": "Mandi wajib - sebab-sebabnya dan kesucian perempuan",
+        "bn": "গোসল - ফরজ হওয়ার কারণ ও নারীর পবিত্রতা",
+        "fa": "غسل - موجبات آن و طهارت زن",
+        "ms": "Mandi wajib - sebab-sebabnya dan kesucian wanita",
+        "ur": "غسل - موجبات اور عورت کی طہارت",
+        "sw": "Josho - sababu zake na tohara ya mwanamke",
+        "ru": "Гусль - когда обязателен, и чистота женщины",
+        "ps": "غسل - موجبات یې او د ښځې طهارت"
+      },
+      "story": [{ "ref": "ghusl" }, { "ref": "ghusl-und-beschneidung-nach-schahada" }, { "ref": "menstruation-gebet-fasten" }],
+      "storyQuiz": [
+        {
+          "q": {
+            "de": "Wann wird Ghusl zur Pflicht?",
+            "en": "When does ghusl become obligatory?",
+            "tr": "Gusül ne zaman farz olur?",
+            "ar": "متى يجب الغسل؟",
+            "es": "¿Cuándo se hace obligatorio el ghusl?",
+            "fr": "Quand le ghousl devient-il obligatoire ?",
+            "id": "Kapan mandi wajib menjadi wajib?",
+            "bn": "গোসল কখন ফরজ হয়?",
+            "fa": "غسل چه وقت واجب می‌شود؟",
+            "ms": "Bilakah mandi wajib menjadi wajib?",
+            "ur": "غسل کب فرض ہوتا ہے؟",
+            "sw": "Ni lini josho huwa wajibu?",
+            "ru": "Когда полное омовение становится обязательным?",
+            "ps": "غسل کله واجبېږي؟"
+          },
+          "options": [
+            { "de": "Nach Verkehr oder Samenerguss und nach Ende von Menstruation und Wochenbett", "en": "After intercourse or emission and after menstruation or postnatal bleeding ends", "tr": "İlişki ya da meniden sonra, hayız ve nifasın bitiminde", "ar": "بعد الجماع أو الإنزال وبانقطاع الحيض والنفاس", "es": "Tras la relación o la emisión y al terminar menstruación o puerperio", "fr": "Après le rapport ou l'éjaculation et à la fin des menstrues ou des lochies", "id": "Setelah hubungan atau keluar mani dan setelah haid atau nifas berakhir", "bn": "সহবাস বা বীর্যপাতের পর এবং হায়েজ-নিফাস শেষে", "fa": "پس از آمیزش یا انزال و با پایان حیض و نفاس", "ms": "Selepas persetubuhan atau keluar mani dan selepas haid atau nifas berakhir", "ur": "جماع یا انزال کے بعد اور حیض و نفاس کے ختم پر", "sw": "Baada ya kujamiiana au kutoka manii na hedhi au nifasi kumalizika", "ru": "После близости или семяизвержения и по окончании месячных или послеродового периода", "ps": "له جماع یا انزال وروسته او د حیض او نفاس په پای" },
+            { "de": "Vor jedem Pflichtgebet", "en": "Before every obligatory prayer", "tr": "Her farz namazdan önce", "ar": "قبل كل صلاة مفروضة", "es": "Antes de cada oración obligatoria", "fr": "Avant chaque prière obligatoire", "id": "Sebelum setiap salat fardu", "bn": "প্রতিটি ফরজ নামাজের আগে", "fa": "پیش از هر نماز واجب", "ms": "Sebelum setiap solat fardu", "ur": "ہر فرض نماز سے پہلے", "sw": "Kabla ya kila swala ya faradhi", "ru": "Перед каждой обязательной молитвой", "ps": "تر هر فرض لمانځه مخکې" },
+            { "de": "Einmal im Monat", "en": "Once a month", "tr": "Ayda bir", "ar": "مرة في الشهر", "es": "Una vez al mes", "fr": "Une fois par mois", "id": "Sebulan sekali", "bn": "মাসে একবার", "fa": "ماهی یک بار", "ms": "Sebulan sekali", "ur": "مہینے میں ایک بار", "sw": "Mara moja kwa mwezi", "ru": "Раз в месяц", "ps": "په میاشت کې یو ځل" },
+            { "de": "Nur vor dem Hadsch", "en": "Only before hajj", "tr": "Yalnız hacdan önce", "ar": "قبل الحج فقط", "es": "Solo antes del hach", "fr": "Seulement avant le hajj", "id": "Hanya sebelum haji", "bn": "কেবল হজের আগে", "fa": "تنها پیش از حج", "ms": "Hanya sebelum haji", "ur": "صرف حج سے پہلے", "sw": "Kabla ya hija tu", "ru": "Только перед хаджем", "ps": "یوازې تر حج مخکې" }
+          ]
+        },
+        {
+          "q": {
+            "de": "Was gilt für Gebet und Fasten während der Menstruation?",
+            "en": "What applies to prayer and fasting during menstruation?",
+            "tr": "Hayız günlerinde namaz ve oruç için ne geçerlidir?",
+            "ar": "ما حكم الصلاة والصيام في أيام الحيض؟",
+            "es": "¿Qué rige para oración y ayuno durante la menstruación?",
+            "fr": "Qu'en est-il de la prière et du jeûne pendant les menstrues ?",
+            "id": "Apa hukum salat dan puasa saat haid?",
+            "bn": "হায়েজের সময় নামাজ ও রোজার বিধান কী?",
+            "fa": "در ایام حیض حکم نماز و روزه چیست؟",
+            "ms": "Apakah hukum solat dan puasa ketika haid?",
+            "ur": "حیض کے دنوں میں نماز اور روزے کا کیا حکم ہے؟",
+            "sw": "Ni ipi hukumu ya swala na funga wakati wa hedhi?",
+            "ru": "Что с молитвой и постом во время месячных?",
+            "ps": "د حیض په ورځو کې د لمانځه او روژې حکم څه دی؟"
+          },
+          "options": [
+            { "de": "Das Gebet entfällt ganz, die Fastentage werden nachgeholt", "en": "Prayer lapses entirely, the fasting days are made up", "tr": "Namaz tamamen düşer, oruç günleri kaza edilir", "ar": "تسقط الصلاة ويُقضى الصوم", "es": "La oración se suprime del todo; los días de ayuno se recuperan", "fr": "La prière est levée entièrement, les jours de jeûne sont rattrapés", "id": "Salat gugur sama sekali, hari puasa diqada", "bn": "নামাজ পুরোপুরি রহিত, রোজা কাজা করা হয়", "fa": "نماز به‌کلی ساقط است و روزه قضا می‌شود", "ms": "Solat gugur sepenuhnya, hari puasa diqada", "ur": "نماز بالکل ساقط، روزے کی قضا", "sw": "Swala huondoka kabisa, siku za funga hulipwa", "ru": "Молитва полностью отпадает, дни поста восполняются", "ps": "لمونځ بشپړ ساقط دی، د روژې ورځې قضا کېږي" },
+            { "de": "Beides wird später nachgeholt", "en": "Both are made up later", "tr": "İkisi de sonra kaza edilir", "ar": "يُقضى الأمران", "es": "Ambos se recuperan después", "fr": "Les deux sont rattrapés plus tard", "id": "Keduanya diqada kemudian", "bn": "দুটোই পরে কাজা করা হয়", "fa": "هر دو بعداً قضا می‌شود", "ms": "Kedua-duanya diqada kemudian", "ur": "دونوں بعد میں قضا", "sw": "Vyote viwili hulipwa baadaye", "ru": "И то и другое восполняется позже", "ps": "دواړه وروسته قضا کېږي" },
+            { "de": "Beides wird normal verrichtet", "en": "Both are performed as normal", "tr": "İkisi de normal yapılır", "ar": "يُؤدَّيان كالمعتاد", "es": "Ambos se hacen con normalidad", "fr": "Les deux se font normalement", "id": "Keduanya dikerjakan seperti biasa", "bn": "দুটোই স্বাভাবিকভাবে আদায় হয়", "fa": "هر دو مانند همیشه انجام می‌شود", "ms": "Kedua-duanya dilakukan seperti biasa", "ur": "دونوں معمول کے مطابق ادا", "sw": "Vyote viwili hufanywa kama kawaida", "ru": "И то и другое совершается как обычно", "ps": "دواړه لکه معمول ترسره کېږي" },
+            { "de": "Nur das Fasten entfällt", "en": "Only the fasting lapses", "tr": "Yalnız oruç düşer", "ar": "يسقط الصوم فقط", "es": "Solo se suprime el ayuno", "fr": "Seul le jeûne est levé", "id": "Hanya puasa yang gugur", "bn": "কেবল রোজা রহিত", "fa": "تنها روزه ساقط است", "ms": "Hanya puasa yang gugur", "ur": "صرف روزہ ساقط", "sw": "Funga pekee huondoka", "ru": "Отпадает только пост", "ps": "یوازې روژه ساقطېږي" }
+          ]
+        },
+        {
+          "q": {
+            "de": "Was wird beim Annehmen des Islam empfohlen?",
+            "en": "What is recommended when accepting Islam?",
+            "tr": "İslam'a girerken ne tavsiye edilir?",
+            "ar": "بماذا يُوصى عند الدخول في الإسلام؟",
+            "es": "¿Qué se recomienda al abrazar el islam?",
+            "fr": "Que recommande-t-on lors de l'entrée en islam ?",
+            "id": "Apa yang dianjurkan ketika masuk Islam?",
+            "bn": "ইসলাম গ্রহণের সময় কী মুস্তাহাব?",
+            "fa": "هنگام پذیرش اسلام چه توصیه می‌شود؟",
+            "ms": "Apakah yang dianjurkan ketika memeluk Islam?",
+            "ur": "قبولِ اسلام کے وقت کیا مستحب ہے؟",
+            "sw": "Ni nini kinachopendekezwa mtu anapoingia Uislamu?",
+            "ru": "Что рекомендуется при принятии ислама?",
+            "ps": "د اسلام په منلو کې څه سپارښتنه کېږي؟"
+          },
+          "options": [
+            { "de": "Ein Ghusl", "en": "A ghusl", "tr": "Bir gusül", "ar": "الاغتسال", "es": "Un ghusl", "fr": "Un ghousl", "id": "Mandi wajib", "bn": "একটি গোসল", "fa": "یک غسل", "ms": "Mandi wajib", "ur": "ایک غسل", "sw": "Josho", "ru": "Полное омовение", "ps": "یو غسل" },
+            { "de": "Eine Pilgerfahrt im selben Jahr", "en": "A pilgrimage in the same year", "tr": "Aynı yıl hacca gitmek", "ar": "حجّ في العام نفسه", "es": "Una peregrinación ese mismo año", "fr": "Un pèlerinage la même année", "id": "Berhaji pada tahun yang sama", "bn": "একই বছরে হজ", "fa": "حج در همان سال", "ms": "Menunaikan haji pada tahun sama", "ur": "اسی سال حج", "sw": "Hija katika mwaka huo huo", "ru": "Паломничество в тот же год", "ps": "په همدې کال کې حج" },
+            { "de": "Ein Fastenmonat", "en": "A month of fasting", "tr": "Bir ay oruç", "ar": "صيام شهر", "es": "Un mes de ayuno", "fr": "Un mois de jeûne", "id": "Berpuasa sebulan", "bn": "এক মাস রোজা", "fa": "یک ماه روزه", "ms": "Berpuasa sebulan", "ur": "ایک ماہ کے روزے", "sw": "Mwezi wa kufunga", "ru": "Месяц поста", "ps": "یوه میاشت روژه" },
+            { "de": "Eine Namensänderung", "en": "A change of name", "tr": "İsim değiştirmek", "ar": "تغيير الاسم", "es": "Un cambio de nombre", "fr": "Un changement de nom", "id": "Mengganti nama", "bn": "নাম পরিবর্তন", "fa": "تغییر نام", "ms": "Menukar nama", "ur": "نام کی تبدیلی", "sw": "Kubadili jina", "ru": "Смена имени", "ps": "د نوم بدلون" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fiqh-07",
+      "source": "Quran 2:222; Quran 2:185; Quran 65:6; Quran 2:286; Quran 31:14; Quran 4:103",
+      "title": {
+        "de": "Nifas, Istihada und die Zeit um die Geburt",
+        "en": "Nifas, istihada and the time around childbirth",
+        "tr": "Nifas, istihâze ve doğum çevresindeki dönem",
+        "ar": "النفاس والاستحاضة وزمن الولادة",
+        "es": "Nifas, istihada y el tiempo en torno al parto",
+        "fr": "Nifas, istihada et la période autour de l'accouchement",
+        "id": "Nifas, istihadah dan masa sekitar melahirkan",
+        "bn": "নিফাস, ইস্তিহাদা ও সন্তান জন্মের সময়",
+        "fa": "نفاس، استحاضه و دوران زایمان",
+        "ms": "Nifas, istihadah dan masa sekitar kelahiran",
+        "ur": "نفاس، استحاضہ اور ولادت کا زمانہ",
+        "sw": "Nifasi, istihadha na kipindi cha kuzaa",
+        "ru": "Нифас, истихада и время вокруг родов",
+        "ps": "نفاس، استحاضه او د زېږون شاوخوا وخت"
+      },
+      "story": [{ "ref": "nifas-wochenbett" }, { "ref": "istihada-zwischenblutung" }, { "ref": "schwangerschaft-und-stillen" }],
+      "storyQuiz": [
+        {
+          "q": {
+            "de": "Was ist Nifas?",
+            "en": "What is nifas?",
+            "tr": "Nifas nedir?",
+            "ar": "ما النفاس؟",
+            "es": "¿Qué es el nifas?",
+            "fr": "Qu'est-ce que le nifas ?",
+            "id": "Apa itu nifas?",
+            "bn": "নিফাস কী?",
+            "fa": "نفاس چیست؟",
+            "ms": "Apakah nifas?",
+            "ur": "نفاس کیا ہے؟",
+            "sw": "Nifasi ni nini?",
+            "ru": "Что такое нифас?",
+            "ps": "نفاس څه شی دی؟"
+          },
+          "options": [
+            { "de": "Die Blutung nach der Geburt", "en": "The bleeding after childbirth", "tr": "Doğum sonrası kanama", "ar": "الدم بعد الولادة", "es": "El sangrado tras el parto", "fr": "Le saignement après l'accouchement", "id": "Darah setelah melahirkan", "bn": "সন্তান প্রসবের পরের রক্তস্রাব", "fa": "خون پس از زایمان", "ms": "Darah selepas bersalin", "ur": "ولادت کے بعد کا خون", "sw": "Damu baada ya kujifungua", "ru": "Кровотечение после родов", "ps": "تر زېږون وروسته وینه" },
+            { "de": "Die monatliche Regel", "en": "The monthly period", "tr": "Aylık âdet", "ar": "الحيض الشهري", "es": "La regla mensual", "fr": "Les règles mensuelles", "id": "Haid bulanan", "bn": "মাসিক ঋতুস্রাব", "fa": "عادت ماهانه", "ms": "Haid bulanan", "ur": "ماہانہ حیض", "sw": "Hedhi ya mwezi", "ru": "Месячные", "ps": "میاشتنی حیض" },
+            { "de": "Eine Blutung außerhalb der Regel", "en": "Bleeding outside the period", "tr": "Âdet dışı kanama", "ar": "دم خارج العادة", "es": "Sangrado fuera de la regla", "fr": "Un saignement hors règles", "id": "Darah di luar haid", "bn": "ঋতুস্রাবের বাইরের রক্তক্ষরণ", "fa": "خونی بیرون از عادت", "ms": "Darah di luar haid", "ur": "حیض کے علاوہ خون", "sw": "Damu nje ya hedhi", "ru": "Кровотечение вне цикла", "ps": "له حیض بهر وینه" },
+            { "de": "Eine Form der Waschung", "en": "A form of washing", "tr": "Bir tür yıkanma", "ar": "نوع من الاغتسال", "es": "Una forma de ablución", "fr": "Une forme de lavage", "id": "Salah satu bentuk mandi", "bn": "এক ধরনের গোসল", "fa": "گونه‌ای از شستشو", "ms": "Sejenis mandian", "ur": "غسل کی ایک قسم", "sw": "Aina ya kuoga", "ru": "Вид омовения", "ps": "د لمبېدو یو ډول" }
+          ]
+        },
+        {
+          "q": {
+            "de": "Wie wird Istihada im Gebet behandelt?",
+            "en": "How is istihada handled with regard to prayer?",
+            "tr": "İstihâze namazda nasıl değerlendirilir?",
+            "ar": "كيف تُعامَل المستحاضة في الصلاة؟",
+            "es": "¿Cómo se trata la istihada respecto a la oración?",
+            "fr": "Comment traite-t-on l'istihada pour la prière ?",
+            "id": "Bagaimana istihadah diperlakukan dalam salat?",
+            "bn": "নামাজের ক্ষেত্রে ইস্তিহাদার বিধান কী?",
+            "fa": "استحاضه در نماز چگونه رفتار می‌شود؟",
+            "ms": "Bagaimana istihadah diperlakukan dalam solat?",
+            "ur": "استحاضہ نماز میں کیسے برتا جاتا ہے؟",
+            "sw": "Istihadha hushughulikiwaje kuhusu swala?",
+            "ru": "Как истихада учитывается в молитве?",
+            "ps": "استحاضه په لمانځه کې څنګه چلند کېږي؟"
+          },
+          "options": [
+            { "de": "Sie hindert das Gebet nicht; man reinigt sich und betet", "en": "It does not prevent prayer; one cleans oneself and prays", "tr": "Namaza engel değildir; temizlenip namaz kılınır", "ar": "لا تمنع الصلاة؛ تتطهّر وتصلّي", "es": "No impide la oración; una se limpia y ora", "fr": "Elle n'empêche pas la prière ; on se purifie et l'on prie", "id": "Tidak menghalangi salat; ia bersuci lalu salat", "bn": "এটি নামাজে বাধা নয়; পবিত্র হয়ে নামাজ পড়া হয়", "fa": "مانع نماز نیست؛ پاکیزه می‌شود و نماز می‌خواند", "ms": "Ia tidak menghalang solat; bersuci lalu solat", "ur": "یہ نماز سے نہیں روکتا؛ پاکی حاصل کر کے نماز پڑھی جائے", "sw": "Haizuii swala; hujitakasa na kuswali", "ru": "Она не препятствует молитве: очищаются и молятся", "ps": "لمونځ نه منع کوي؛ پاکېږي او لمونځ کوي" },
+            { "de": "Sie hebt das Gebet auf wie die Menstruation", "en": "It lifts prayer like menstruation does", "tr": "Hayız gibi namazı düşürür", "ar": "تُسقط الصلاة كالحيض", "es": "Suprime la oración como la menstruación", "fr": "Elle lève la prière comme les menstrues", "id": "Menggugurkan salat seperti haid", "bn": "হায়েজের মতো নামাজ রহিত করে", "fa": "مانند حیض نماز را ساقط می‌کند", "ms": "Menggugurkan solat seperti haid", "ur": "حیض کی طرح نماز ساقط کرتا ہے", "sw": "Huondoa swala kama hedhi", "ru": "Она снимает молитву, как месячные", "ps": "لکه حیض لمونځ ساقطوي" },
+            { "de": "Man betet nur im Sitzen", "en": "One prays only sitting", "tr": "Yalnız oturarak kılınır", "ar": "يُصلّى قاعدًا فقط", "es": "Se ora solo sentada", "fr": "On prie uniquement assise", "id": "Salat hanya sambil duduk", "bn": "কেবল বসে নামাজ পড়া হয়", "fa": "تنها نشسته نماز خوانده می‌شود", "ms": "Solat hanya sambil duduk", "ur": "صرف بیٹھ کر نماز", "sw": "Huswali akiwa amekaa tu", "ru": "Молятся только сидя", "ps": "یوازې ناست لمونځ کېږي" },
+            { "de": "Man holt alle Gebete später nach", "en": "One makes up all prayers later", "tr": "Bütün namazlar sonra kaza edilir", "ar": "تُقضى الصلوات كلها لاحقًا", "es": "Se recuperan todas las oraciones después", "fr": "On rattrape toutes les prières plus tard", "id": "Semua salat diqada kemudian", "bn": "সব নামাজ পরে কাজা করা হয়", "fa": "همهٔ نمازها بعداً قضا می‌شود", "ms": "Semua solat diqada kemudian", "ur": "تمام نمازیں بعد میں قضا", "sw": "Swala zote hulipwa baadaye", "ru": "Все молитвы восполняются позже", "ps": "ټول لمونځونه وروسته قضا کېږي" }
+          ]
+        },
+        {
+          "q": {
+            "de": "Was gilt für eine Schwangere oder Stillende beim Fasten?",
+            "en": "What applies to a pregnant or nursing woman regarding fasting?",
+            "tr": "Hamile veya emziren bir kadın için oruçta ne geçerlidir?",
+            "ar": "ما حكم الحامل والمرضع في الصيام؟",
+            "es": "¿Qué rige para una embarazada o lactante en el ayuno?",
+            "fr": "Qu'en est-il d'une femme enceinte ou allaitante pour le jeûne ?",
+            "id": "Apa hukum puasa bagi perempuan hamil atau menyusui?",
+            "bn": "গর্ভবতী বা স্তন্যদায়ী নারীর রোজার বিধান কী?",
+            "fa": "حکم روزهٔ زن باردار یا شیرده چیست؟",
+            "ms": "Apakah hukum puasa bagi wanita hamil atau menyusu?",
+            "ur": "حاملہ یا دودھ پلانے والی عورت کے روزے کا کیا حکم ہے؟",
+            "sw": "Ni ipi hukumu ya funga kwa mjamzito au anayenyonyesha?",
+            "ru": "Что с постом для беременной или кормящей?",
+            "ps": "د امیندوارې یا شیدې ورکوونکې ښځې د روژې حکم څه دی؟"
+          },
+          "options": [
+            { "de": "Sie darf das Fasten aufschieben, wenn sie Schaden fürchtet", "en": "She may postpone the fast if she fears harm", "tr": "Zarar korkusu varsa orucunu erteleyebilir", "ar": "لها أن تؤخّر الصوم إذا خافت الضرر", "es": "Puede aplazar el ayuno si teme un daño", "fr": "Elle peut différer le jeûne si elle craint un dommage", "id": "Ia boleh menunda puasa bila khawatir mudarat", "bn": "ক্ষতির আশঙ্কা থাকলে সে রোজা পিছিয়ে দিতে পারে", "fa": "اگر بیم زیان دارد می‌تواند روزه را به تأخیر اندازد", "ms": "Dia boleh menangguhkan puasa jika bimbang mudarat", "ur": "نقصان کا اندیشہ ہو تو روزہ مؤخر کر سکتی ہے", "sw": "Anaweza kuahirisha funga akihofia madhara", "ru": "Она может отложить пост, если опасается вреда", "ps": "که د زیان وېره ولري، روژه ځنډولی شي" },
+            { "de": "Sie muss in jedem Fall fasten", "en": "She must fast in any case", "tr": "Her hâlükârda oruç tutmalıdır", "ar": "يجب عليها الصوم في كل حال", "es": "Debe ayunar en todo caso", "fr": "Elle doit jeûner dans tous les cas", "id": "Ia wajib berpuasa dalam keadaan apa pun", "bn": "যেকোনো অবস্থায় তাকে রোজা রাখতেই হবে", "fa": "در هر حال باید روزه بگیرد", "ms": "Dia wajib berpuasa dalam apa keadaan sekalipun", "ur": "ہر حال میں روزہ رکھنا لازم", "sw": "Ni lazima afunge kwa hali yoyote", "ru": "Она обязана поститься в любом случае", "ps": "په هر حال کې باید روژه ونیسي" },
+            { "de": "Sie ist für immer vom Fasten befreit", "en": "She is exempt from fasting forever", "tr": "Ömür boyu oruçtan muaftır", "ar": "تُعفى من الصوم أبدًا", "es": "Queda exenta del ayuno para siempre", "fr": "Elle est dispensée du jeûne à jamais", "id": "Ia bebas dari puasa selamanya", "bn": "সে চিরতরে রোজা থেকে অব্যাহতি পায়", "fa": "برای همیشه از روزه معاف است", "ms": "Dia dikecualikan daripada puasa selamanya", "ur": "وہ ہمیشہ کے لیے روزے سے مستثنیٰ", "sw": "Amesamehewa funga milele", "ru": "Она навсегда освобождена от поста", "ps": "د تل لپاره له روژې معاف ده" },
+            { "de": "Sie fastet nur die Hälfte des Tages", "en": "She fasts only half the day", "tr": "Günün yalnız yarısını tutar", "ar": "تصوم نصف اليوم فقط", "es": "Ayuna solo medio día", "fr": "Elle ne jeûne qu'une demi-journée", "id": "Ia berpuasa setengah hari saja", "bn": "সে কেবল অর্ধেক দিন রোজা রাখে", "fa": "تنها نیم‌روز روزه می‌گیرد", "ms": "Dia berpuasa setengah hari sahaja", "ur": "صرف آدھا دن روزہ", "sw": "Hufunga nusu ya siku tu", "ru": "Она постится только полдня", "ps": "یوازې نیمه ورځ روژه نیسي" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fiqh-08",
+      "source": "Quran 17:78; Quran 4:103; Quran 2:238; Quran 5:58; Quran 62:9; Sahih al-Bukhari 8",
+      "title": {
+        "de": "Das Gebet - Stellung, Zeiten und Zahl der Rakat",
+        "en": "The prayer - its place, times and number of rak'ahs",
+        "tr": "Namaz - yeri, vakitleri ve rekât sayısı",
+        "ar": "الصلاة - منزلتها وأوقاتها وعدد ركعاتها",
+        "es": "La oración: su lugar, tiempos y número de rakas",
+        "fr": "La prière : sa place, ses temps et le nombre de rak'ats",
+        "id": "Salat - kedudukan, waktu dan jumlah rakaat",
+        "bn": "নামাজ - মর্যাদা, সময় ও রাকাতের সংখ্যা",
+        "fa": "نماز - جایگاه، وقت‌ها و شمار رکعت‌ها",
+        "ms": "Solat - kedudukan, waktu dan bilangan rakaat",
+        "ur": "نماز - مقام، اوقات اور رکعتوں کی تعداد",
+        "sw": "Swala - hadhi, nyakati na idadi ya rakaa",
+        "ru": "Молитва - её место, времена и число ракатов",
+        "ps": "لمونځ - مقام، وختونه او د رکعتونو شمېر"
+      },
+      "story": [{ "ref": "die-fuenf-gebete" }, { "ref": "rakat-uebersicht" }, { "ref": "adhan" }],
+      "storyQuiz": [
+        {
+          "q": {
+            "de": "Wie viele Fard-Rakat hat das Maghrib-Gebet?",
+            "en": "How many fard rak'ahs does the Maghrib prayer have?",
+            "tr": "Akşam namazının farzı kaç rekâttır?",
+            "ar": "كم عدد ركعات فرض المغرب؟",
+            "es": "¿Cuántas rakas fard tiene la oración del Magreb?",
+            "fr": "Combien de rak'ats fard compte la prière du Maghrib ?",
+            "id": "Berapa rakaat fardu salat Magrib?",
+            "bn": "মাগরিব নামাজের ফরজ কত রাকাত?",
+            "fa": "نماز مغرب چند رکعت فرض دارد؟",
+            "ms": "Berapa rakaat fardu solat Maghrib?",
+            "ur": "مغرب کی فرض رکعتیں کتنی ہیں؟",
+            "sw": "Swala ya Magharibi ina rakaa ngapi za faradhi?",
+            "ru": "Сколько обязательных ракатов в магрибе?",
+            "ps": "د ماښام لمونځ څو فرض رکعته لري؟"
+          },
+          "options": [
+            { "de": "Drei", "en": "Three", "tr": "Üç", "ar": "ثلاث", "es": "Tres", "fr": "Trois", "id": "Tiga", "bn": "তিন", "fa": "سه", "ms": "Tiga", "ur": "تین", "sw": "Tatu", "ru": "Три", "ps": "درې" },
+            { "de": "Zwei", "en": "Two", "tr": "İki", "ar": "ركعتان", "es": "Dos", "fr": "Deux", "id": "Dua", "bn": "দুই", "fa": "دو", "ms": "Dua", "ur": "دو", "sw": "Mbili", "ru": "Два", "ps": "دوه" },
+            { "de": "Vier", "en": "Four", "tr": "Dört", "ar": "أربع", "es": "Cuatro", "fr": "Quatre", "id": "Empat", "bn": "চার", "fa": "چهار", "ms": "Empat", "ur": "چار", "sw": "Nne", "ru": "Четыре", "ps": "څلور" },
+            { "de": "Fünf", "en": "Five", "tr": "Beş", "ar": "خمس", "es": "Cinco", "fr": "Cinq", "id": "Lima", "bn": "পাঁচ", "fa": "پنج", "ms": "Lima", "ur": "پانچ", "sw": "Tano", "ru": "Пять", "ps": "پنځه" }
+          ]
+        },
+        {
+          "q": {
+            "de": "Wann beginnt die Zeit des Asr-Gebets?",
+            "en": "When does the time of the Asr prayer begin?",
+            "tr": "İkindi namazının vakti ne zaman başlar?",
+            "ar": "متى يبدأ وقت صلاة العصر؟",
+            "es": "¿Cuándo empieza el tiempo de la oración de Asr?",
+            "fr": "Quand commence le temps de la prière d'Asr ?",
+            "id": "Kapan waktu salat Asar dimulai?",
+            "bn": "আসরের নামাজের সময় কখন শুরু হয়?",
+            "fa": "وقت نماز عصر کی آغاز می‌شود؟",
+            "ms": "Bilakah waktu solat Asar bermula?",
+            "ur": "عصر کا وقت کب شروع ہوتا ہے؟",
+            "sw": "Wakati wa swala ya Alasiri huanza lini?",
+            "ru": "Когда начинается время молитвы аср?",
+            "ps": "د مازدیګر د لمانځه وخت کله پیلېږي؟"
+          },
+          "options": [
+            { "de": "Wenn der Schatten deutlich länger wird", "en": "When the shadow grows noticeably longer", "tr": "Gölge belirgin şekilde uzayınca", "ar": "إذا صار الظل أطول بوضوح", "es": "Cuando la sombra se alarga notablemente", "fr": "Quand l'ombre s'allonge nettement", "id": "Ketika bayangan memanjang jelas", "bn": "যখন ছায়া স্পষ্টভাবে দীর্ঘ হয়", "fa": "وقتی سایه آشکارا بلندتر شود", "ms": "Apabila bayang memanjang dengan jelas", "ur": "جب سایہ نمایاں طور پر لمبا ہو جائے", "sw": "Kivuli kinapoongezeka waziwazi", "ru": "Когда тень заметно удлиняется", "ps": "کله چې سیوری په ښکاره اوږد شي" },
+            { "de": "Direkt nach Sonnenuntergang", "en": "Right after sunset", "tr": "Güneş battıktan hemen sonra", "ar": "بعد الغروب مباشرة", "es": "Justo tras la puesta del sol", "fr": "Juste après le coucher du soleil", "id": "Tepat setelah matahari terbenam", "bn": "সূর্যাস্তের ঠিক পরে", "fa": "درست پس از غروب", "ms": "Sejurus selepas matahari terbenam", "ur": "غروبِ آفتاب کے فوراً بعد", "sw": "Mara baada ya machweo", "ru": "Сразу после заката", "ps": "سملاسي تر لمر لوېدو وروسته" },
+            { "de": "Mit der Morgendämmerung", "en": "At dawn", "tr": "Fecirle birlikte", "ar": "مع طلوع الفجر", "es": "Con el alba", "fr": "À l'aube", "id": "Saat fajar", "bn": "ভোরের সাথে", "fa": "با سپیده‌دم", "ms": "Ketika fajar", "ur": "طلوعِ فجر کے ساتھ", "sw": "Alfajiri", "ru": "На рассвете", "ps": "له سبا سره" },
+            { "de": "Nach dem Verschwinden der Abendröte", "en": "After the evening glow disappears", "tr": "Şafak kızıllığı kaybolunca", "ar": "بعد مغيب الشفق", "es": "Tras desaparecer el arrebol", "fr": "Après la disparition du crépuscule", "id": "Setelah mega merah hilang", "bn": "সন্ধ্যার লালিমা মিলিয়ে গেলে", "fa": "پس از ناپدیدشدن شفق", "ms": "Selepas mega merah hilang", "ur": "شفق غائب ہونے کے بعد", "sw": "Baada ya wekundu wa jioni kutoweka", "ru": "После исчезновения вечерней зари", "ps": "تر شفق له منځه تللو وروسته" }
+          ]
+        },
+        {
+          "q": {
+            "de": "Wozu dient der Adhan?",
+            "en": "What is the adhan for?",
+            "tr": "Ezan neye yarar?",
+            "ar": "ما وظيفة الأذان؟",
+            "es": "¿Para qué sirve el adán?",
+            "fr": "À quoi sert l'adhan ?",
+            "id": "Untuk apa azan itu?",
+            "bn": "আজানের উদ্দেশ্য কী?",
+            "fa": "اذان برای چیست؟",
+            "ms": "Untuk apakah azan?",
+            "ur": "اذان کس لیے ہے؟",
+            "sw": "Adhana ni kwa ajili ya nini?",
+            "ru": "Для чего служит азан?",
+            "ps": "اذان د څه لپاره دی؟"
+          },
+          "options": [
+            { "de": "Er ruft zum Gebet und zeigt den Beginn der Zeit an", "en": "It calls to prayer and marks the start of its time", "tr": "Namaza çağırır ve vaktin girdiğini bildirir", "ar": "يدعو إلى الصلاة ويعلن دخول وقتها", "es": "Llama a la oración y señala el inicio de su tiempo", "fr": "Il appelle à la prière et annonce le début de son temps", "id": "Menyeru kepada salat dan menandai masuknya waktu", "bn": "নামাজের ডাক দেয় ও ওয়াক্ত শুরু জানায়", "fa": "به نماز فرا می‌خواند و آغاز وقت را اعلام می‌کند", "ms": "Menyeru kepada solat dan menandakan masuk waktu", "ur": "نماز کی طرف بلاتا اور وقت کے آغاز کا اعلان کرتا ہے", "sw": "Huita kwenye swala na kutangaza kuingia kwa wakati", "ru": "Он призывает к молитве и возвещает начало её времени", "ps": "لمانځه ته بلنه ورکوي او د وخت پیل اعلانوي" },
+            { "de": "Er ersetzt eine Rakat", "en": "It replaces one rak'ah", "tr": "Bir rekâtın yerine geçer", "ar": "يقوم مقام ركعة", "es": "Sustituye una raka", "fr": "Il remplace une rak'at", "id": "Menggantikan satu rakaat", "bn": "একটি রাকাতের বদলে গণ্য", "fa": "جانشین یک رکعت است", "ms": "Menggantikan satu rakaat", "ur": "ایک رکعت کا بدل ہے", "sw": "Hubadilisha rakaa moja", "ru": "Он заменяет один ракат", "ps": "د یوه رکعت ځای نیسي" },
+            { "de": "Er ist nur am Freitag vorgesehen", "en": "It is only meant for Friday", "tr": "Yalnız cuma için öngörülmüştür", "ar": "مشروع يوم الجمعة فقط", "es": "Solo está previsto para el viernes", "fr": "Il n'est prévu que le vendredi", "id": "Hanya untuk hari Jumat", "bn": "কেবল জুমার জন্য নির্ধারিত", "fa": "تنها برای روز جمعه است", "ms": "Hanya untuk hari Jumaat", "ur": "صرف جمعے کے لیے ہے", "sw": "Ni ya Ijumaa pekee", "ru": "Он предусмотрен только для пятницы", "ps": "یوازې د جمعې لپاره دی" },
+            { "de": "Er beendet das Gebet", "en": "It ends the prayer", "tr": "Namazı bitirir", "ar": "يُنهي الصلاة", "es": "Termina la oración", "fr": "Il met fin à la prière", "id": "Mengakhiri salat", "bn": "নামাজ শেষ করে", "fa": "نماز را پایان می‌دهد", "ms": "Mengakhiri solat", "ur": "نماز ختم کرتا ہے", "sw": "Humaliza swala", "ru": "Он завершает молитву", "ps": "لمونځ پای ته رسوي" }
+          ]
+        }
+      ]
+    }
+  ]
+}

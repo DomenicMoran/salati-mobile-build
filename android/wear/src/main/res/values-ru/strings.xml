@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Sichtbare Texte der Wear-OS-App (App-Screen, Kachel, Komplikation).
+  Generiert fuer alle 14 Salati-App-Sprachen (src/lib/locale-detect.ts).
+  values/ ist Englisch (Fallback fuer alle nicht gelisteten Uhr-Sprachen),
+  values-de/-tr/-ar/-es/-fr/-in/-bn/-fa/-ms/-ur/-ru/-sw/-ps die uebrigen 13.
+  Gebetsnamen sind wortgleich mit prayers.* aus src/locales/<lang>.json.
+-->
+<resources>
+    <string name="app_name">Salati</string>
+    <string name="tile_label">Следующая молитва</string>
+    <string name="next_prayer">Следующая молитва</string>
+    <string name="prayer_fajr">Фаджр</string>
+    <string name="prayer_dhuhr">Зухр</string>
+    <string name="prayer_asr">Аср</string>
+    <string name="prayer_maghrib">Магриб</string>
+    <string name="prayer_isha">Иша</string>
+    <string name="today">Сегодня</string>
+    <string name="no_data_title">Времён молитв пока нет</string>
+    <string name="no_data_body">Откройте Salati на телефоне</string>
+    <string name="in_hours_minutes">через %1$d ч %2$d мин</string>
+    <string name="in_minutes">через %1$d мин</string>
+    <string name="time_now">сейчас</string>
+    <string name="stale_data">Время может быть устаревшим</string>
+    <string name="qibla">Кибла</string>
+    <string name="qibla_no_compass">В этих часах нет компаса</string>
+    <string name="qibla_aligned">Вы обращены к Каабе</string>
+    <string name="qibla_distance">%1$d км до Каабы</string>
+    <string name="complication_description">Показывает следующую молитву и её время</string>
+    <string name="loading">Загрузка…</string>
+</resources>

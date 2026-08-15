@@ -1,0 +1,51 @@
+{
+  "note": "Pflichten und Praxis rund um die beiden Feste und den Ramadan — die Bonus-Beobachtung des Audits 2026-07-27: Salati hat Screens für Zakat al-Fitr, Udhiyah und Khatmah, aber bisher keinen Wissenseintrag dazu.",
+  "eintraege": [
+    {
+      "id": "zakat-al-fitr",
+      "titel": "Zakat al-Fitr — die Fastenabgabe",
+      "tags": [
+        "zakat al fitr",
+        "fitrana",
+        "fastenabgabe",
+        "wie viel zakat al fitr",
+        "wann zahlen",
+        "fuer wen zahlen",
+        "eid al fitr"
+      ],
+      "text": "Zakat al-Fitr ist die Abgabe am Ende des Ramadan. Sie ist für jede Muslimin und jeden Muslim fällig, die am Abend des letzten Fastentags mehr als den eigenen Tagesbedarf besitzen — das Familienoberhaupt zahlt für alle, die es versorgt, einschließlich der Kinder und eines Kindes, das noch vor dem Fest geboren wird. Bemessen wird sie klassisch in Naturalien: ein Saʿ des ortsüblichen Grundnahrungsmittels, etwa Weizen, Reis oder Datteln, was rund 2,5 bis 3 Kilogramm entspricht. Viele Gemeinden geben deshalb jedes Jahr einen Geldbetrag an, der diesem Wert entspricht; ob Geld statt Naturalien zulässig ist, beantworten die Rechtsschulen unterschiedlich — die hanafitische Schule erlaubt es ausdrücklich, andere bevorzugen Lebensmittel. Gezahlt wird vor dem Eid-Gebet, damit sie ihren Zweck erfüllt: dass niemand am Festtag Mangel leidet. Wer sie zu spät gibt, gibt sie als gewöhnliche Spende und holt sie trotzdem nach. Salati rechnet den örtlichen Betrag im Zakat-al-Fitr-Bereich aus.",
+      "belege": ["Koran 87:14", "Koran 87:15", "Koran 9:103", "Koran 2:110"]
+    },
+    {
+      "id": "udhiyah-opfertier",
+      "titel": "Udhiyah — das Opfer zu Eid al-Adha",
+      "tags": [
+        "udhiyah",
+        "qurban",
+        "opfertier",
+        "eid al adha",
+        "opferfest",
+        "wann schlachten",
+        "fleisch verteilen",
+        "opfer spenden"
+      ],
+      "text": "Die Udhiyah ist das Opfer an den Tagen des Opferfests, in Erinnerung an Ibrahim und seinen Sohn. Der Koran stellt klar, worum es geht: Weder Fleisch noch Blut erreichen Allah, sondern die Gottesfurcht des Gebenden. Geopfert wird ein Schaf oder eine Ziege für einen Haushalt oder ein Anteil an einem Rind oder Kamel, das sich sieben Personen teilen; das Tier muss gesund sein und ein Mindestalter erreicht haben. Die Zeit beginnt nach dem Eid-Gebet am zehnten Dhul-Hidscha; wie weit sie reicht, beantworten die Rechtsschulen unterschiedlich — die schafiitische Schule lässt sie bis zum Sonnenuntergang des dreizehnten laufen, die hanafitische bis zum Sonnenuntergang des zwölften; wer vorher schlachtet, hat gewöhnliches Fleisch, kein Opfer. Üblich ist die Dreiteilung: ein Teil für die eigene Familie, ein Teil für Verwandte und Nachbarn, ein Teil für Bedürftige. Ob die Udhiyah Pflicht oder nachdrückliche Sunna ist, bewerten die Rechtsschulen unterschiedlich — die hanafitische Schule sieht sie für Bemittelte als verpflichtend. In Deutschland lassen die meisten sie über Hilfsorganisationen im Ausland durchführen. Wer opfern will, verzichtet ab dem ersten Dhul-Hidscha auf Haar- und Nagelschnitt.",
+      "belege": ["Koran 22:37", "Koran 22:36", "Koran 108:2", "Koran 22:28"]
+    },
+    {
+      "id": "khatmah-koran-durchlesen",
+      "titel": "Khatmah — den Koran ganz durchlesen",
+      "tags": [
+        "khatmah",
+        "koran durchlesen",
+        "koran im ramadan",
+        "leseplan",
+        "wie schaffe ich den koran",
+        "dschuz pro tag",
+        "khatm"
+      ],
+      "text": "Eine Khatmah ist ein vollständiger Durchgang durch den Koran. Der klassische Rhythmus ist der Monat: Der Koran ist in dreißig Dschuz eingeteilt, ein Dschuz pro Tag ergibt in einem Monat einen ganzen Durchgang — deshalb ist die Khatmah im Ramadan so verbreitet. Praktisch sind das rund zwanzig Seiten am Tag, aufteilbar in vier Blöcke von je fünf Seiten nach den Gebeten; wer das für zu viel hält, nimmt einen halben Dschuz und braucht zwei Monate. Der Koran selbst gibt das Maß vor: lest, was euch leicht fällt, und denkt über die Zeichen nach — Verständnis geht vor Tempo, und eine langsame Lesung mit Übersetzung ist mehr wert als ein gehetzter Durchgang. Überliefert ist der Rat, den Koran nicht in weniger als drei Tagen zu lesen. Zum Abschluss ist ein Bittgebet üblich. Salati führt einen Khatmah-Plan mit Tagespensum, Fortschrittsanzeige und Erinnerung; verpasste Tage lassen sich neu verteilen, statt aufzugeben.",
+      "belege": ["Koran 73:20", "Koran 38:29", "Koran 73:4", "Koran 47:24"]
+    }
+  ]
+}

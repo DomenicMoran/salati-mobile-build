@@ -1,0 +1,36 @@
+Salati 1.32.0 — Release-Notes (de)
+Erzeugt aus src/features/changelog/changelog.ts (node scripts/release-notes.mjs 1.32.0).
+Massgeblich sind store/release-notes-1.32.0.json (Play) und store/whatsnew-1.32.0.json (ASC);
+diese Datei ist die Copy-Paste-Fassung fuer die Konsolen.
+
+=== GOOGLE PLAY — "Was ist neu" (de-DE, 489/500 Zeichen) ===
+--- ab hier kopieren ---
+Salati KI antwortet jetzt in deiner Sprache: Der geprüfte Wissensspeicher liegt in allen 14 App-Sprachen vor – wer auf Türkisch, Russisch oder Bengalisch fragt, bekommt die Antwort auch in dieser Sprache, ohne Umweg über eine Übersetzung
+
+Gebetszeiten funktionieren jetzt auch ohne Internet: Die App berechnet sie selbst, wenn der Server nicht erreichbar ist – samt Benachrichtigungen und Kalender-Export
+
+Tadschwid-Kurs: zwei falsche Beispiele im Kapitel zur Ra-Aussprache richtiggestellt
+--- bis hier kopieren ---
+
+=== APP STORE CONNECT — "Neue Funktionen" (de-DE, 1591/4000 Zeichen) ===
+--- ab hier kopieren ---
+Salati KI antwortet jetzt in deiner Sprache: Der geprüfte Wissensspeicher liegt in allen 14 App-Sprachen vor – wer auf Türkisch, Russisch oder Bengalisch fragt, bekommt die Antwort auch in dieser Sprache, ohne Umweg über eine Übersetzung
+
+Gebetszeiten funktionieren jetzt auch ohne Internet: Die App berechnet sie selbst, wenn der Server nicht erreichbar ist – samt Benachrichtigungen und Kalender-Export
+
+KI-Chat mit Gesprächsverlauf, antippbaren Quellen (ein Tipp öffnet den Vers im Koran-Reader) und Beispielfragen für den Einstieg
+
+Gebetszeiten lassen sich auf deine Moschee justieren: Minuten-Korrektur für jedes einzelne Gebet, dazu eine Regel für hohe Breitengrade – dadurch sind Fadschr und Ischa im europäischen Sommer endlich brauchbar
+
+Rezitations-Prüfung im Hifz-Trainer: neues Modell mit 55 statt 148 MB Download bei gleicher Genauigkeit
+
+Praxis-Anleitungen (Wudu, Ghusl, Gebet, Janazah, Hadsch) jetzt vollständig in allen 14 Sprachen, die 40 Hadithe von an-Nawawi neu auf Deutsch und Tafsir in 12 statt 3 Ausgaben
+
+Bedienung: Jeder Bildschirm hat jetzt einen sichtbaren Zurück-Knopf, „Fertig" scrollt bei Datenschutz, AGB und Impressum nicht mehr aus dem Bild, dazu bessere Kontraste und Beschriftungen für die Sprachausgabe
+
+App und Web-Version starten spürbar schneller, der Podcast lädt zügiger und ist jetzt nach Lernweg statt nach Erscheinungsdatum sortiert
+
+Witr-Anleitung korrigiert: In allen drei Rakat wird nach Al-Fatiha eine weitere Sure gelesen, der Dua al-Qunut folgt erst danach
+
+Tadschwid-Kurs: zwei falsche Beispiele im Kapitel zur Ra-Aussprache richtiggestellt
+--- bis hier kopieren ---

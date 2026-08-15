@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Sichtbare Texte der Wear-OS-App (App-Screen, Kachel, Komplikation).
+  Generiert fuer alle 14 Salati-App-Sprachen (src/lib/locale-detect.ts).
+  values/ ist Englisch (Fallback fuer alle nicht gelisteten Uhr-Sprachen),
+  values-de/-tr/-ar/-es/-fr/-in/-bn/-fa/-ms/-ur/-ru/-sw/-ps die uebrigen 13.
+  Gebetsnamen sind wortgleich mit prayers.* aus src/locales/<lang>.json.
+-->
+<resources>
+    <string name="app_name">Salati</string>
+    <string name="tile_label">Salat berikutnya</string>
+    <string name="next_prayer">Salat berikutnya</string>
+    <string name="prayer_fajr">Subuh</string>
+    <string name="prayer_dhuhr">Zuhur</string>
+    <string name="prayer_asr">Asar</string>
+    <string name="prayer_maghrib">Magrib</string>
+    <string name="prayer_isha">Isya</string>
+    <string name="today">Hari ini</string>
+    <string name="no_data_title">Belum ada jadwal salat</string>
+    <string name="no_data_body">Buka Salati di ponsel</string>
+    <string name="in_hours_minutes">%1$d j %2$d mnt lagi</string>
+    <string name="in_minutes">%1$d mnt lagi</string>
+    <string name="time_now">sekarang</string>
+    <string name="stale_data">Jadwal mungkin sudah usang</string>
+    <string name="qibla">Kiblat</string>
+    <string name="qibla_no_compass">Jam ini tidak punya kompas</string>
+    <string name="qibla_aligned">Kamu menghadap Kakbah</string>
+    <string name="qibla_distance">%1$d km ke Kakbah</string>
+    <string name="complication_description">Menampilkan salat berikutnya dan waktunya</string>
+    <string name="loading">Memuat…</string>
+</resources>

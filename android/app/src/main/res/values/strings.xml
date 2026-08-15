@@ -1,0 +1,13 @@
+<resources>
+  <string name="app_name">Salati</string>
+  <!-- Alternativer App-Name für die Icon/Name-Auswahl (settings.tsx,
+       "MainActivitySalatibox"-Alias unten in AndroidManifest.xml) -->
+  <string name="app_name_salatibox" translatable="false">Salatibox</string>
+  <string name="expo_system_ui_user_interface_style" translatable="false">automatic</string>
+  <string name="widget_salatiprayer_description" translatable="false">Nächstes Gebet + alle Zeiten des Tages</string>
+  <string name="widget_salatiwisdom_description" translatable="false">Jeden Tag eine geprüfte Dua mit Übersetzung</string>
+  <string name="widget_salatistreak_description" translatable="false">Deine tägliche Lernserie auf einen Blick</string>
+  <string name="widget_salaticountdown_description" translatable="false">Nächstes Gebet groß + Restzeit</string>
+  <string name="widget_salatiqibla_description" translatable="false">Richtung und Entfernung zur Kaaba</string>
+  <string name="expo_splash_screen_resize_mode" translatable="false">contain</string>
+</resources>

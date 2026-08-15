@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Sichtbare Texte der Wear-OS-App (App-Screen, Kachel, Komplikation).
+  Generiert fuer alle 14 Salati-App-Sprachen (src/lib/locale-detect.ts).
+  values/ ist Englisch (Fallback fuer alle nicht gelisteten Uhr-Sprachen),
+  values-de/-tr/-ar/-es/-fr/-in/-bn/-fa/-ms/-ur/-ru/-sw/-ps die uebrigen 13.
+  Gebetsnamen sind wortgleich mit prayers.* aus src/locales/<lang>.json.
+-->
+<resources>
+    <string name="app_name">Salati</string>
+    <string name="tile_label">نماز بعدی</string>
+    <string name="next_prayer">نماز بعدی</string>
+    <string name="prayer_fajr">فجر</string>
+    <string name="prayer_dhuhr">ظهر</string>
+    <string name="prayer_asr">عصر</string>
+    <string name="prayer_maghrib">مغرب</string>
+    <string name="prayer_isha">عشاء</string>
+    <string name="today">امروز</string>
+    <string name="no_data_title">هنوز اوقات نماز موجود نیست</string>
+    <string name="no_data_body">سلاتی را روی گوشی باز کنید</string>
+    <string name="in_hours_minutes">%1$d ساعت و %2$d دقیقه دیگر</string>
+    <string name="in_minutes">%1$d دقیقه دیگر</string>
+    <string name="time_now">اکنون</string>
+    <string name="stale_data">ممکن است اوقات قدیمی باشد</string>
+    <string name="qibla">قبله</string>
+    <string name="qibla_no_compass">این ساعت قطب‌نما ندارد</string>
+    <string name="qibla_aligned">رو به کعبه هستید</string>
+    <string name="qibla_distance">%1$d کیلومتر تا کعبه</string>
+    <string name="complication_description">نماز بعدی و زمان آن را نشان می‌دهد</string>
+    <string name="loading">در حال بارگذاری…</string>
+</resources>

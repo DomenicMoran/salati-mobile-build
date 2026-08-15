@@ -1,0 +1,190 @@
+name: Android Release APK
+
+# Baut die signierte Release-APK auf einem kostenlosen ubuntu-Runner
+# (öffentliches Repo = unbegrenzte Minuten). Kein Windows-260-Zeichen-Pfad-
+# Problem hier, daher können auch New-Arch-Native-Libs (Hintergrund-Download)
+# gebaut werden. Signing kommt AUSSCHLIESSLICH aus verschlüsselten
+# Actions-Secrets — nie aus dem (öffentlichen) Code.
+
+on:
+  push:
+    branches: [main]
+    # Der iOS-Workflow kann die APK nicht beeinflussen. Ohne diese Ausnahme
+    # startete jede iOS-Korrektur einen zusaetzlichen 30-Minuten-Android-Lauf,
+    # und am Ende liefen drei gleiche Builds nebeneinander (2026-08-07).
+    paths-ignore:
+      - '.github/workflows/ios.yml'
+      - '.github/workflows/watch-check.yml'
+  workflow_dispatch:
+    inputs:
+      abis:
+        description: >-
+          Architekturen. Voreinstellung = die realen Telefon-ABIs.
+          "arm64-v8a,armeabi-v7a,x86_64" ergibt eine APK, die auch auf einem
+          Emulator laeuft — noetig fuer die Store-Screenshots
+          (scripts/device-screenshots.mjs), denn alle AVDs hier sind x86_64 und
+          die ausgelieferte APK enthaelt kein x86 mehr. So eine APK ist NICHT
+          zum Ausliefern gedacht; die Veroeffentlichungs-Schritte unten laufen
+          bei `workflow_dispatch` ohnehin nicht.
+        required: false
+        default: 'arm64-v8a,armeabi-v7a'
+
+jobs:
+  build-android:
+    runs-on: ubuntu-latest
+    steps:
+      # Platte freiräumen, BEVOR irgendetwas ausgecheckt wird.
+      #
+      # WARUM: Drei Läufe am 2026-08-07 starben nach rund 30 Minuten mitten im
+      # NDK-C++-Schritt mit "No space left on device" — nicht am Speicher, an
+      # der Platte. Der ubuntu-Runner bringt rund 14 GB frei mit; node_modules,
+      # Gradle-Caches, NDK-Zwischenstände und die beiden Ausgaben (APK + AAB)
+      # passen da nicht mehr hinein, seit der Build auch die nativen
+      # Reanimated-Codegen-Objekte übersetzt.
+      #
+      # Entfernt werden ausschließlich vorinstallierte Toolchains, die dieser
+      # Build nicht anfasst (.NET, Haskell, CodeQL, vorgeladene Docker-Images) —
+      # zusammen rund 25 GB. Android-SDK, NDK und Java bleiben unangetastet.
+      - name: Platte freiräumen (vorinstallierte Toolchains)
+        run: |
+          echo "vorher:"; df -h / | tail -1
+          sudo rm -rf /usr/share/dotnet /usr/local/lib/android/sdk/ndk/2[0-6].* \
+                      /opt/ghc /usr/local/.ghcup /opt/hostedtoolcache/CodeQL \
+                      /usr/local/share/powershell /usr/share/swift || true
+          sudo docker image prune --all --force >/dev/null 2>&1 || true
+          echo "nachher:"; df -h / | tail -1
+
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: pnpm installieren
+        run: npm install -g pnpm@10.33.0
+
+      - name: pnpm install
+        run: pnpm install --no-frozen-lockfile
+
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: 17
+
+      - uses: android-actions/setup-android@v3
+
+      - name: Keystore aus Secret dekodieren
+        env:
+          RELEASE_KEYSTORE_BASE64: ${{ secrets.RELEASE_KEYSTORE_BASE64 }}
+        run: echo "$RELEASE_KEYSTORE_BASE64" | base64 -d > "$RUNNER_TEMP/release.jks"
+
+      - name: gradlew ausführbar machen
+        working-directory: android
+        run: chmod +x ./gradlew
+
+      - name: Gradle-Heap für R8 erhöhen (CI-only, überschreibt Projekt-gradle.properties)
+        run: |
+          mkdir -p ~/.gradle
+          echo "org.gradle.jvmargs=-Xmx6g -XX:MaxMetaspaceSize=1g -XX:+UseParallelGC" >> ~/.gradle/gradle.properties
+
+      - name: Gradle assembleRelease (signiert)
+        working-directory: android
+        env:
+          ORG_GRADLE_PROJECT_RELEASE_STORE_FILE: ${{ runner.temp }}/release.jks
+          ORG_GRADLE_PROJECT_RELEASE_STORE_PASSWORD: ${{ secrets.RELEASE_STORE_PASSWORD }}
+          ORG_GRADLE_PROJECT_RELEASE_KEY_ALIAS: ${{ secrets.RELEASE_KEY_ALIAS }}
+          ORG_GRADLE_PROJECT_RELEASE_KEY_PASSWORD: ${{ secrets.RELEASE_KEY_PASSWORD }}
+        # Nur reale Phone-ABIs (arm64-v8a deckt praktisch alle modernen Geräte,
+        # armeabi-v7a alte 32-Bit) — x86/x86_64 sind Emulator-only und halbieren
+        # sonst die native Build-Zeit + APK-Größe unnötig.
+        run: ./gradlew :app:assembleRelease --no-daemon -PreactNativeArchitectures=${{ inputs.abis || 'arm64-v8a,armeabi-v7a' }}
+
+      - name: APK als Artefakt hochladen
+        # Darf den Lauf NICHT abbrechen: sonst wird das AAB gar nicht gebaut.
+        # Am 2026-08-07 war assembleRelease erfolgreich, der Upload scheiterte
+        # am kontoweiten Speicher-Kontingent — und bundleRelease wurde
+        # uebersprungen, obwohl es nichts damit zu tun hat.
+        continue-on-error: true
+        uses: actions/upload-artifact@v4
+        with:
+          name: salati-release-apk
+          path: android/app/build/outputs/apk/release/app-release.apk
+          if-no-files-found: warn
+          # 5 Tage genügen: die Artefakte werden direkt nach dem Lauf
+          # heruntergeladen und in die Stores geladen. Der Standard (90 Tage)
+          # hatte den Konto-Speicher gefüllt, bis kein Upload mehr durchging.
+          retention-days: 5
+
+      # Zusätzlich das AAB für den Play Store (bundleRelease) — ebenfalls signiert,
+      # gratis auf demselben Runner. `eas submit`/Play-Upload braucht AAB, nicht APK.
+      - name: Gradle bundleRelease (AAB, signiert)
+        working-directory: android
+        env:
+          ORG_GRADLE_PROJECT_RELEASE_STORE_FILE: ${{ runner.temp }}/release.jks
+          ORG_GRADLE_PROJECT_RELEASE_STORE_PASSWORD: ${{ secrets.RELEASE_STORE_PASSWORD }}
+          ORG_GRADLE_PROJECT_RELEASE_KEY_ALIAS: ${{ secrets.RELEASE_KEY_ALIAS }}
+          ORG_GRADLE_PROJECT_RELEASE_KEY_PASSWORD: ${{ secrets.RELEASE_KEY_PASSWORD }}
+        run: ./gradlew :app:bundleRelease --no-daemon -PreactNativeArchitectures=${{ inputs.abis || 'arm64-v8a,armeabi-v7a' }}
+
+      - name: AAB als Artefakt hochladen
+        continue-on-error: true
+        uses: actions/upload-artifact@v4
+        with:
+          name: salati-release-aab
+          path: android/app/build/outputs/bundle/release/app-release.aab
+          if-no-files-found: warn
+          # 5 Tage genügen: die Artefakte werden direkt nach dem Lauf
+          # heruntergeladen und in die Stores geladen. Der Standard (90 Tage)
+          # hatte den Konto-Speicher gefüllt, bis kein Upload mehr durchging.
+          retention-days: 5
+
+      # Screenshot-Build abholbar machen.
+      #
+      # Ein `workflow_dispatch` veroeffentlicht nichts (die Schritte darunter
+      # haengen an push/main) — dann liegt die APK aber auch nirgends, denn der
+      # Artefakt-Speicher ist seit dem 2026-08-07 dauerhaft am Kontingent
+      # (Neuberechnung alle 6-12 h, Loeschen half nicht). Genau der Lauf, den
+      # man fuer die Store-Aufnahmen braucht, war damit umsonst.
+      #
+      # Deshalb: bei einem Dispatch die APK unter einem EIGENEN Schluessel nach
+      # R2 legen. Nicht `app/salati.apk` — das ist die ausgelieferte Datei, und
+      # ein Screenshot-Build mit x86_64 gehoert dort nicht hin.
+      - name: Screenshot-APK nach R2 (nur bei manuellem Start)
+        if: github.event_name == 'workflow_dispatch'
+        env:
+          CLOUDFLARE_ID: ${{ secrets.CLOUDFLARE_ID }}
+          CLOUDFLARE_SEC: ${{ secrets.CLOUDFLARE_SEC }}
+          CLOUDFLARE_S3_API: ${{ secrets.CLOUDFLARE_S3_API }}
+          CLOUDFLARE_BUCKET: ${{ secrets.CLOUDFLARE_BUCKET }}
+          R2_KEY: app/_screenshot-build.apk
+        run: node scripts/ci-release-upload.mjs --apk android/app/build/outputs/apk/release/app-release.apk
+
+      # Direkt dorthin, wo die Dateien hingehören — wie die iOS-IPA zu Apple.
+      # Der Zwischenspeicher oben ist nur noch Rückfallebene; er hat die
+      # Auslieferung am 2026-08-07 dreimal blockiert, obwohl der Build fertig
+      # war (Begründung in scripts/ci-release-upload.mjs).
+      #
+      # Läuft NUR bei einem Push auf main mit gesetzten Secrets — ein
+      # `workflow_dispatch` zum Ausprobieren veröffentlicht damit nichts.
+      - name: APK zur Webseite (Cloudflare R2)
+        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+        env:
+          CLOUDFLARE_ID: ${{ secrets.CLOUDFLARE_ID }}
+          CLOUDFLARE_SEC: ${{ secrets.CLOUDFLARE_SEC }}
+          CLOUDFLARE_S3_API: ${{ secrets.CLOUDFLARE_S3_API }}
+          CLOUDFLARE_BUCKET: ${{ secrets.CLOUDFLARE_BUCKET }}
+        run: node scripts/ci-release-upload.mjs --apk android/app/build/outputs/apk/release/app-release.apk
+
+      # Die Release-Notes-Datei traegt die Version im Namen; fehlt sie, bricht
+      # der Schritt ab, statt eine Version ohne "Was ist neu" zu veroeffentlichen.
+      - name: AAB in den Play Store (Produktions-Track)
+        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+        env:
+          PLAY_SERVICE_ACCOUNT_BASE64: ${{ secrets.PLAY_SERVICE_ACCOUNT_BASE64 }}
+        run: |
+          VERSION=$(node -e "console.log(require('./app.json')?.expo?.version ?? '')" 2>/dev/null || true)
+          [ -n "$VERSION" ] || VERSION=$(grep -oP "(?<=^const VERSION = ')[^']+" app.config.ts)
+          NOTES="store/play-notes-$VERSION.json"
+          echo "Version $VERSION, Notizen: $NOTES"
+          test -f "$NOTES"
+          node scripts/ci-release-upload.mjs --aab android/app/build/outputs/bundle/release/app-release.aab --notes "$NOTES"

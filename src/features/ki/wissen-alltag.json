@@ -1,0 +1,675 @@
+{
+  "hinweis": "Kuratierte Wissensschicht „Bittgebete/Adhkar und Alltagsethik“ für die Salati-KI (Ergänzung zu wissen-de.json). Regeln: (1) nur unstrittiges Grundwissen, keine Rechtsurteile in Einzelfällen; (2) jedes Bittgebet wird mit deutscher Umschrift UND deutscher Übersetzung genannt und stammt aus den geprüften Dua-Daten der App (src/features/duas/data/duas.json bzw. Korpus-Dokumente d:*) — nichts frei formuliert; (3) jede „Koran X:Y“-Angabe muss zeichengenau zu apps/mobile/public/rag/korpus-de.json passen (Prüfskript: node scripts/check-ki-wissen.mjs src/features/ki/wissen-alltag.json); (4) Hadith-Belege nur aus den 40 Nawawi-Hadithen der App; (5) Sprache: Deutsch, warm, klar, 3-6 Sätze, Umschrift deutsch-phonetisch (sch statt sh, dsch statt j, ch statt kh).",
+  "eintraege": [
+    {
+      "id": "salam-gruss",
+      "titel": "Der Salam — wie Muslime grüßen",
+      "tags": [
+        "salam",
+        "gruessen",
+        "as-salamu alaikum",
+        "wie gruesst man",
+        "begruessung",
+        "antwort auf salam",
+        "friede sei mit dir"
+      ],
+      "text": "Der islamische Gruß lautet „As-salamu alaikum wa rahmatullahi wa barakatuh“ — „Friede sei mit euch und Allahs Barmherzigkeit und Sein Segen“. Wer gegrüßt wird, antwortet „Wa alaikumu s-salam wa rahmatullahi wa barakatuh“ — „Und mit euch sei der Friede und Allahs Barmherzigkeit und Sein Segen“. Kürzer geht auch: „As-salamu alaikum“ und als Antwort „Wa alaikumu s-salam“. Der Koran verlangt, einen Gruß mit einem schöneren zu erwidern oder ihn wenigstens gleichwertig zurückzugeben. Man grüßt auch beim Betreten von Häusern — fremde Häuser erst, nachdem man sich bemerkbar gemacht hat. Der Salam ist kein bloßes „Hallo“: Man wünscht dem anderen Frieden und Barmherzigkeit, und genau das schafft Nähe, auch zwischen Fremden.",
+      "belege": [
+        "Koran 4:86",
+        "Koran 24:27",
+        "Koran 24:61",
+        "Koran 6:54"
+      ]
+    },
+    {
+      "id": "dua-etikette",
+      "titel": "Dua — wie man bittet und wann es besonders erhört wird",
+      "tags": [
+        "dua",
+        "bittgebet",
+        "wie bete ich um etwas",
+        "wird meine dua erhoert",
+        "zeiten der erhoerung",
+        "beten um hilfe"
+      ],
+      "text": "Dua heißt, Allah unmittelbar anzusprechen — in jeder Sprache, an jedem Ort, ohne Vermittler. Allah sagt: „Ruft Mich an, so erhöre Ich euch“ und „Ich bin nahe; Ich erhöre den Ruf des Bittenden, wenn er Mich anruft“. Schön ist es, mit Lob Allahs und dem Segensspruch auf den Propheten ﷺ zu beginnen, Ihn mit Seinen schönsten Namen anzurufen und demütig, leise und ohne Eile zu bitten. Als besonders geöffnet gelten das letzte Drittel der Nacht, die Zeit zwischen Adhan und Iqama, der Moment in der Niederwerfung, die Freitagsstunde, der Augenblick des Fastenbrechens und die Reise. Wichtig ist auch erlaubtes Einkommen: Der Prophet ﷺ beschrieb einen Reisenden, der die Hände zum Himmel streckt, dessen Speise, Trank und Kleidung aber unerlaubt sind — „wie sollte ihm da erhört werden?“ Und wer nicht sofort bekommt, worum er bittet, ist nicht abgewiesen; Gelehrte erinnern daran, dass Allah entweder gibt, ein Übel abwendet oder es für das Jenseits aufhebt.",
+      "belege": [
+        "Koran 2:186",
+        "Koran 40:60",
+        "Koran 7:55",
+        "Koran 7:180",
+        "an-Nawawī Nr. 10 — Sahih Muslim 1015",
+        "an-Nawawī Nr. 19 — Sunan at-Tirmidhi (hasan sahih)"
+      ]
+    },
+    {
+      "id": "dua-vor-und-nach-dem-essen",
+      "titel": "Bittgebet vor und nach dem Essen",
+      "tags": [
+        "dua vor dem essen",
+        "was sagt man vor dem essen",
+        "bismillah essen",
+        "dua nach dem essen",
+        "danken fuer essen",
+        "gastgeber"
+      ],
+      "text": "Vor dem Essen sagt man „Bismillah“ — „Im Namen Allahs“. Wer es vergessen hat und erst mittendrin daran denkt, sagt „Bismillahi fi awwalihi wa achirih“ — „Im Namen Allahs, an seinem Anfang und an seinem Ende“. Nach dem Essen ist überliefert: „Alhamdu lillahil-ladhi at'amani hadha wa razaqanihi min ghairi haulin minni wa la quwwa“ — „Alles Lob gebührt Allah, Der mich dies essen ließ und es mir beschert hat, ohne meine Macht und Kraft“. Für den Gastgeber betet man „Allahumma barik lahum fima razaqtahum, waghfir lahum warhamhum“ — „O Allah, segne sie in dem, was Du ihnen beschert hast, vergib ihnen und erbarme Dich ihrer“. Der Koran verbindet Essen und Dank direkt: „Esst von den guten Dingen, mit denen Wir euch versorgt haben, und seid Allah dankbar.“",
+      "belege": [
+        "Koran 2:172",
+        "Koran 5:88",
+        "an-Nawawī Nr. 10 — Sahih Muslim 1015"
+      ]
+    },
+    {
+      "id": "dua-haus-verlassen",
+      "titel": "Bittgebet beim Verlassen und Betreten des Hauses",
+      "tags": [
+        "was sagt man wenn man das haus verlaesst",
+        "dua haus verlassen",
+        "dua wohnung betreten",
+        "bismillahi tawakkaltu",
+        "schutz unterwegs",
+        "tuer"
+      ],
+      "text": "Beim Verlassen des Hauses sagt man „Bismillahi tawakkaltu ala Allah, wa la haula wa la quwwata illa billah“ — „Im Namen Allahs, ich vertraue auf Allah, und es gibt keine Macht und keine Kraft außer bei Allah“. Beim Nachhausekommen ist überliefert: „Bismillahi waladschna, wa bismillahi charadschna, wa ala Allahi Rabbina tawakkalna“ — „Im Namen Allahs treten wir ein, im Namen Allahs gehen wir hinaus, und auf Allah, unseren Herrn, vertrauen wir“. Beides sind kurze Sätze, die den Tag in den richtigen Rahmen setzen: Ich gehe los mit Allahs Namen, nicht mit meiner eigenen Kraft. Der Koran sagt dazu: „Wer sich auf Allah verlässt, dem ist Er seine Genüge.“ Und wer zu Hause ankommt, kann den Gruß aussprechen — der Salam gehört auch der eigenen Familie.",
+      "belege": [
+        "Koran 65:3",
+        "Koran 24:61"
+      ]
+    },
+    {
+      "id": "dua-schlafen-und-aufwachen",
+      "titel": "Bittgebet zum Schlafengehen und beim Aufwachen",
+      "tags": [
+        "dua vor dem schlafen",
+        "was sagt man vor dem einschlafen",
+        "dua beim aufwachen",
+        "nachtgebet worte",
+        "schlaf",
+        "morgens aufstehen"
+      ],
+      "text": "Vor dem Einschlafen sagt man „Bismika Allahumma amutu wa ahya“ — „In Deinem Namen, o Allah, sterbe ich und lebe ich“. Wer sich hinlegt, kann hinzufügen: „Bismika Rabbi wada'tu dschanbi wa bika arfa'uh, fa-in amsakta nafsi farhamha, wa in arsaltaha fahfazha bima tahfazu bihi ibadakas-salihin“ — „In Deinem Namen, mein Herr, lege ich mich auf meine Seite, und durch Dich erhebe ich mich wieder. Wenn Du meine Seele zurückhältst, dann erbarme Dich ihrer, und wenn Du sie zurückschickst, dann bewahre sie so, wie Du Deine rechtschaffenen Diener bewahrst“. Beim Aufwachen sagt man „Alhamdu lillahil-ladhi ahyana ba'da ma amatana wa ilaihin-nuschur“ — „Alles Lob gebührt Allah, Der uns nach unserem Tod (Schlaf) wiederbelebt hat, und zu Ihm ist die Auferstehung“. Der Koran nennt den Schlaf ein Zeichen Allahs, eine Ruhe für den Körper und zugleich eine kleine Form des Sterbens: Allah beruft die Seelen ab, hält die eine zurück und gibt die andere für eine Frist frei.",
+      "belege": [
+        "Koran 39:42",
+        "Koran 78:9",
+        "Koran 30:23"
+      ]
+    },
+    {
+      "id": "dua-reise",
+      "titel": "Bittgebet auf Reisen",
+      "tags": [
+        "dua reise",
+        "was sagt man beim autofahren",
+        "reisegebet",
+        "dua flugzeug",
+        "heimkehr",
+        "jemanden verabschieden"
+      ],
+      "text": "Beim Losfahren sagt man das Reisegebet, das der Koran selbst vorgibt: „Subhanal-ladhi sachchara lana hadha wa ma kunna lahu muqrinin, wa inna ila Rabbina lamunqalibun“ — „Preis sei Dem, Der uns dies dienstbar gemacht hat, während wir es sonst nicht hätten bewältigen können. Und wahrlich, zu unserem Herrn werden wir zurückkehren“. Bei der Heimkehr ist überliefert: „Ayibuna ta'ibuna abiduna li-Rabbina hamidun“ — „Wir kehren zurück, bereuen, dienen und loben unseren Herrn“. Wer jemanden verabschiedet, sagt „Astaudi'ullaha dinaka wa amanataka wa chawatima amalik“ — „Ich vertraue Allah deine Religion, dein anvertrautes Gut und den Ausgang deiner Taten an“. Die Reise gilt als Zeit, in der Bittgebete besonders angenommen werden — und der Koran erinnert daran, dass der beste Reisevorrat die Gottesfurcht ist.",
+      "belege": [
+        "Koran 43:13",
+        "Koran 43:14",
+        "Koran 2:197"
+      ]
+    },
+    {
+      "id": "dua-beim-niesen",
+      "titel": "Was man beim Niesen sagt",
+      "tags": [
+        "niesen",
+        "was sagt man wenn jemand niest",
+        "alhamdulillah niesen",
+        "yarhamukallah",
+        "gesundheit wuenschen"
+      ],
+      "text": "Wer niest, sagt „Alhamdulillah“ — „Alles Lob gebührt Allah“. Wer das hört, antwortet „Yarhamukallah“ — „Möge Allah dir barmherzig sein“. Das ist mehr als Höflichkeit: Ein winziger Alltagsmoment wird zu Dank und zu einem Bittgebet füreinander. Der Prophet ﷺ sagte, dass „Alhamdulillah“ die Waagschale füllt — ein Wort, das leicht auszusprechen und schwer an Gewicht ist. Wer die Antwort nicht kennt, kann auf Deutsch etwas Freundliches sagen; die Formel schließt niemanden aus.",
+      "belege": [
+        "an-Nawawī Nr. 23 — Sahih Muslim"
+      ]
+    },
+    {
+      "id": "dua-moschee-betreten",
+      "titel": "Bittgebet beim Betreten und Verlassen der Moschee",
+      "tags": [
+        "moschee betreten",
+        "was sagt man in der moschee",
+        "dua masdschid",
+        "moschee verlassen",
+        "erstes mal moschee"
+      ],
+      "text": "Beim Betreten der Moschee sagt man „Allahumma iftah li abwaba rahmatik“ — „O Allah, öffne mir die Tore Deiner Barmherzigkeit“. Beim Hinausgehen sagt man „Allahumma inni as'aluka min fadlik“ — „O Allah, ich bitte Dich um Deine Gunst“. Verbreitete Praxis ist es, mit dem rechten Fuß einzutreten und vor dem Hinsetzen zwei Rakat zu beten (Tahiyyat al-Masdschid), sofern nicht gerade das Gemeinschaftsgebet beginnt. In der Moschee gilt Ruhe: kein lautes Weltgespräch, kein Drängeln, Handy stumm. Der Koran sagt: „Die Gebetsstätten gehören Allah; so ruft neben Allah niemanden an“ — die Moschee ist ein Ort, an dem alles auf Ihn ausgerichtet ist. Und sie zu besuchen ist selbst ein Zeichen des Glaubens: „Allahs Gebetsstätten bevölkert nur, wer an Allah und den Jüngsten Tag glaubt.“",
+      "belege": [
+        "Koran 9:18",
+        "Koran 72:18"
+      ]
+    },
+    {
+      "id": "dua-toilette",
+      "titel": "Bittgebet vor und nach der Toilette",
+      "tags": [
+        "dua toilette",
+        "was sagt man vor der toilette",
+        "wc",
+        "ghufranak",
+        "reinheit",
+        "sauberkeit"
+      ],
+      "text": "Vor dem Betreten der Toilette sagt man „Allahumma inni a'udhu bika minal-chubuthi wal-chaba'ith“ — „O Allah, ich suche Zuflucht bei Dir vor den männlichen und weiblichen Satanen“. Beim Hinausgehen sagt man „Ghufranak“ — „(Ich bitte um) Deine Vergebung“. Beides sind sehr kurze Sätze, die man leicht lernt; man spricht sie leise oder im Herzen, bevor man eintritt. Verbreitete Praxis ist, mit dem linken Fuß hineinzugehen und mit dem rechten hinaus und den Namen Allahs nicht in den Raum hineinzutragen. Der Hintergrund ist die hohe Bedeutung der Reinheit: „Reinheit ist die Hälfte des Glaubens“, sagte der Prophet ﷺ, und der Koran sagt, dass Allah die liebt, die sich rein halten.",
+      "belege": [
+        "Koran 2:222",
+        "an-Nawawī Nr. 23 — Sahih Muslim"
+      ]
+    },
+    {
+      "id": "dua-bei-sorgen-und-angst",
+      "titel": "Bittgebet bei Sorgen, Angst und Druck",
+      "tags": [
+        "dua bei angst",
+        "dua bei sorgen",
+        "panik",
+        "stress",
+        "traurig",
+        "was tun wenn es mir schlecht geht",
+        "kummer"
+      ],
+      "text": "Bei Sorge und Kummer ist überliefert: „Allahumma inni a'udhu bika minal-hammi wal-hazan, wal-adschzi wal-kasal, wal-buchli wal-dschubn, wa dala'id-daini wa ghalabatir-ridschal“ — „O Allah, ich suche Zuflucht bei Dir vor Sorge und Kummer, vor Unfähigkeit und Trägheit, vor Geiz und Feigheit, vor der Last der Schulden und der Übermacht der Menschen“. Sehr kurz und sehr stark ist die Dua von Yunus: „La ilaha illa anta subhanaka inni kuntu minaz-zalimin“ — „Es gibt keinen Gott außer Dir. Gepriesen seist Du! Ich gehörte wahrlich zu den Ungerechten“. Wenn Angst vor Menschen oder Umständen drückt, sagt man „Hasbunallahu wa ni'mal-wakil“ — „Allah genügt uns, und Er ist der beste Sachwalter“. Der Koran verspricht: „Im Gedenken Allahs finden die Herzen Ruhe“ und „mit der Erschwernis ist Erleichterung“. Bittgebet und ärztliche oder psychologische Hilfe schließen einander nicht aus — beides darf und soll man nutzen.",
+      "belege": [
+        "Koran 13:28",
+        "Koran 2:186",
+        "Koran 94:5",
+        "Koran 94:6",
+        "Koran 21:87",
+        "Koran 3:173"
+      ]
+    },
+    {
+      "id": "dua-bei-krankheit",
+      "titel": "Bittgebet bei Krankheit und beim Krankenbesuch",
+      "tags": [
+        "dua bei krankheit",
+        "krank",
+        "heilung",
+        "krankenbesuch",
+        "schmerzen",
+        "was sagt man zu einem kranken"
+      ],
+      "text": "Für einen Kranken betet man: „Allahumma Rabban-nas, adhhibil-ba's, ischfi wa antasch-Schafi, la schifa'a illa schifa'uk, schifa'an la yughadiru saqama“ — „O Allah, Herr der Menschen, nimm das Leid hinweg. Heile, denn Du bist der Heilende. Es gibt keine Heilung außer Deiner Heilung — eine Heilung, die keine Krankheit zurücklässt“. Beim Krankenbesuch ist überliefert, siebenmal zu sagen: „As'alullahal-Azima Rabbal-arschil-azimi an yaschfiyak“ — „Ich bitte Allah, den Gewaltigen, den Herrn des gewaltigen Throns, dass Er dich heilt“. Bei Schmerzen legt man die Hand auf die Stelle, sagt dreimal „Bismillah“ und dann siebenmal „A'udhu billahi wa qudratihi min scharri ma adschidu wa uhadhir“ — „Ich suche Zuflucht bei Allah und Seiner Macht vor dem Übel dessen, was ich spüre und befürchte“. Der Koran lässt Ibrahim sagen: „und Der, wenn ich krank bin, mich heilt“ — Heilung kommt von Allah, ärztliche Behandlung ist der Weg dorthin, kein Widerspruch. Krankheit ist zugleich Prüfung, und den Standhaften gilt frohe Botschaft: Sie sind es, die sagen „Wir gehören Allah, und zu Ihm kehren wir zurück“.",
+      "belege": [
+        "Koran 26:80",
+        "Koran 2:155",
+        "Koran 2:156"
+      ]
+    },
+    {
+      "id": "dua-fuer-verstorbene",
+      "titel": "Bittgebet für Verstorbene",
+      "tags": [
+        "dua fuer verstorbene",
+        "todesfall",
+        "beileid",
+        "friedhof besuchen",
+        "trauer",
+        "was sagt man wenn jemand stirbt"
+      ],
+      "text": "Wenn eine Todesnachricht kommt, sagt man „Inna lillahi wa inna ilaihi radschi'un“ — „Wahrlich, wir gehören Allah, und wahrlich, zu Ihm kehren wir zurück“. Im Totengebet ist überliefert: „Allahumma-ghfir lihayyina wa mayyitina, wa schahidina wa gha'ibina, wa saghirina wa kabirina, wa dhakarina wa unthana“ — „O Allah, vergib unseren Lebenden und unseren Toten, den Anwesenden und den Abwesenden unter uns, unseren Jungen und unseren Alten, unseren Männern und unseren Frauen“. Beim Grabbesuch grüßt man: „As-salamu alaikum ahlad-diyari minal-mu'minina wal-muslimin“ — „Friede sei mit euch, ihr Bewohner dieser Stätten, Gläubige und Muslime“. Für Eltern und Geschwister im Glauben nennt der Koran fertige Worte: „Unser Herr, vergib uns und unseren Brüdern, die uns im Glauben vorausgegangen sind“ und „Unser Herr, vergib mir und meinen Eltern“. Das aufrichtige Bittgebet ist das Beste, was man einem Verstorbenen noch schenken kann.",
+      "belege": [
+        "Koran 2:156",
+        "Koran 59:10",
+        "Koran 14:41",
+        "Koran 71:28"
+      ]
+    },
+    {
+      "id": "morgen-und-abend-adhkar",
+      "titel": "Morgen- und Abend-Adhkar",
+      "tags": [
+        "morgen adhkar",
+        "abend adhkar",
+        "morgengebete",
+        "dhikr morgens",
+        "tagesroutine",
+        "schutz am morgen"
+      ],
+      "text": "Der Koran ruft dazu auf, Allahs viel zu gedenken und Ihn „morgens und abends“ zu preisen — daraus ist eine feste Gewohnheit geworden: die Adhkar am Morgen (nach dem Fadschr) und am Abend (nach dem Asr oder Maghrib). Man beginnt zum Beispiel mit „Asbahna wa asbahal-mulku lillah, walhamdu lillah“ — „Wir sind in den Morgen eingetreten, und mit uns die Herrschaft Allahs, und alles Lob gebührt Allah“; am Abend heißt es „Amsaina wa amsal-mulku lillah, walhamdu lillah“. Dazu gehören unter anderem „Raditu billahi Rabban, wa bil-islami dinan, wa bi-Muhammadin sallallahu alaihi wa sallama nabiyya“ — „Ich bin zufrieden mit Allah als Herrn, mit dem Islam als Religion und mit Muhammad ﷺ als Propheten“ — und der Schutzsatz „Bismillahil-ladhi la yadurru ma'a ismihi schai'un fil-ardi wa la fis-sama'i wa huwas-Sami'ul-Alim“, dreimal gesprochen. Wichtiger als die Menge ist die Beständigkeit: lieber drei Formeln jeden Tag als zwanzig einmal in der Woche.",
+      "belege": [
+        "Koran 33:41",
+        "Koran 33:42",
+        "Koran 30:17",
+        "Koran 7:205"
+      ]
+    },
+    {
+      "id": "dhikr-nach-dem-gebet",
+      "titel": "Dhikr nach dem Pflichtgebet (33/33/34 und Ajat al-Kursi)",
+      "tags": [
+        "dhikr nach dem gebet",
+        "33 mal subhanallah",
+        "tasbih",
+        "was macht man nach dem gebet",
+        "ajat al-kursi",
+        "gebetskette"
+      ],
+      "text": "Nach jedem Pflichtgebet gibt es ein festes kleines Programm. Man sagt dreimal „Astaghfirullah“ — „Ich bitte Allah um Vergebung“ — und dann „Allahumma antas-salamu wa minkas-salam, tabarakta ya dhal-dschalali wal-ikram“ — „O Allah, Du bist der Frieden und von Dir kommt der Frieden. Gesegnet bist Du, o Besitzer von Majestät und Ehre“. Danach folgen 33-mal „Subhanallah“ (Gepriesen sei Allah), 33-mal „Alhamdulillah“ (Alles Lob gebührt Allah) und 34-mal „Allahu akbar“ (Allah ist größer); in einer anderen Fassung 33-mal Allahu akbar und zum Hundertsten das Tahlil: „La ilaha illallahu wahdahu la scharika lah, lahul-mulku wa lahul-hamd, wa huwa ala kulli schai'in qadir“. Anschließend rezitiert man Ajat al-Kursi (Koran 2:255). Der Koran selbst verbindet Gebet und Gedenken: „Wenn ihr das Gebet vollzogen habt, dann gedenkt Allahs stehend, sitzend und auf der Seite.“",
+      "belege": [
+        "Koran 4:103",
+        "Koran 2:255",
+        "Koran 62:10"
+      ]
+    },
+    {
+      "id": "salawat-auf-den-propheten",
+      "titel": "Salawat — der Segensspruch auf den Propheten ﷺ",
+      "tags": [
+        "salawat",
+        "segen auf den propheten",
+        "sallallahu alaihi wa sallam",
+        "was bedeutet das zeichen nach muhammad",
+        "durood",
+        "freitag"
+      ],
+      "text": "Wenn der Name des Propheten Muhammad genannt wird, spricht man den Segenswunsch: „Sallallahu alaihi wa sallam“ — „Allahs Segen und Friede seien auf ihm“. Dafür steht auch das kleine Zeichen ﷺ in islamischen Texten und in dieser App. Der Koran begründet es: „Allah und Seine Engel sprechen den Segen über den Propheten. O die ihr glaubt, sprecht den Segen über ihn und grüßt ihn mit gehörigem Gruß.“ Im Gebet wird nach dem Taschahhud die ausführliche Form gesprochen, die sogenannte Ibrahimische Formel. Salawat sind ein leichtes, jederzeit mögliches Gedenken — viele Muslime sprechen sie besonders am Freitag häufig aus, für den, der als Barmherzigkeit für die Welten gesandt wurde.",
+      "belege": [
+        "Koran 33:56",
+        "Koran 21:107"
+      ]
+    },
+    {
+      "id": "istighfar-und-tauba",
+      "titel": "Istighfar und Tauba — um Vergebung bitten und umkehren",
+      "tags": [
+        "istighfar",
+        "tauba",
+        "reue",
+        "astaghfirullah",
+        "suenden bereuen",
+        "wie bereue ich richtig",
+        "vergebung"
+      ],
+      "text": "Istighfar heißt, Allah um Vergebung zu bitten — am kürzesten mit „Astaghfirullaha wa atubu ilaih“ — „Ich bitte Allah um Vergebung und wende mich Ihm reuevoll zu“. Die umfassendste Formel heißt Sayyid al-Istighfar und beginnt: „Allahumma anta Rabbi la ilaha illa ant, chalaqtani wa ana abduk…“ — „O Allah, Du bist mein Herr, es gibt keinen Gott außer Dir. Du hast mich erschaffen, und ich bin Dein Diener…“, und sie endet mit „so vergib mir, denn niemand vergibt die Sünden außer Dir“. Tauba ist mehr als das Wort: aufhören, aufrichtig bereuen, fest entschließen, es nicht zu wiederholen — und wo Menschen Unrecht geschehen ist, deren Recht zurückgeben oder sie um Verzeihung bitten. Der Koran lässt keinen Zweifel: „Verliert nicht die Hoffnung auf Allahs Barmherzigkeit. Gewiss, Allah vergibt die Sünden alle.“ Im Hadith Qudsi heißt es: „Solange du Mich anrufst und auf Mich hoffst, vergebe Ich dir, was auch immer von dir war.“",
+      "belege": [
+        "Koran 39:53",
+        "Koran 66:8",
+        "Koran 3:135",
+        "Koran 71:10",
+        "an-Nawawī Nr. 42 — Sunan at-Tirmidhi (hasan, Hadith Qudsi)"
+      ]
+    },
+    {
+      "id": "bismillah-bedeutung",
+      "titel": "Bismillah — was die Formel bedeutet",
+      "tags": [
+        "bismillah",
+        "was bedeutet bismillah",
+        "im namen allahs",
+        "basmala",
+        "bismillahir rahmanir rahim",
+        "wann sagt man bismillah"
+      ],
+      "text": "„Bismillahir-Rahmanir-Rahim“ heißt „Im Namen Allahs, des Allerbarmers, des Barmherzigen“. Mit diesem Satz beginnt die Fatiha, und er steht am Anfang fast jeder Sure des Korans. Im Alltag genügt oft die Kurzform „Bismillah“ — „Im Namen Allahs“: vor dem Essen, vor der Waschung, beim Losfahren, vor der Arbeit, beim Betreten des Hauses. Die Formel ist keine Zauberformel, sondern eine Ausrichtung: Ich beginne diese Sache nicht aus eigener Kraft und nicht für mich allein, sondern mit dem Namen Dessen, Der Erbarmen zu Seinem Wesenszug gemacht hat. Der Koran zeigt sie auch als Formel der Propheten — Nuh sprach sie beim Besteigen des Schiffes, und Sulaimans Brief begann damit.",
+      "belege": [
+        "Koran 1:1",
+        "Koran 27:30",
+        "Koran 11:41"
+      ]
+    },
+    {
+      "id": "inschallah-maschallah-alhamdulillah",
+      "titel": "In scha Allah, ma scha Allah, alhamdulillah — die Alltagsformeln",
+      "tags": [
+        "inschallah bedeutung",
+        "maschallah bedeutung",
+        "alhamdulillah bedeutung",
+        "subhanallah",
+        "was heisst das",
+        "arabische ausdruecke",
+        "dschazakallahu chairan"
+      ],
+      "text": "„In scha Allah“ heißt „so Allah will“ und gehört zu jedem Vorhaben in der Zukunft; der Koran sagt ausdrücklich, man solle nicht von einer Sache behaupten „Ich werde dies morgen tun“, ohne „wenn Allah will“ hinzuzufügen. „Ma scha Allah“ heißt „was Allah gewollt hat“ und wird gesagt, wenn man etwas Schönes sieht — im Koran verbunden mit „es gibt keine Kraft außer durch Allah“, damit Bewunderung nicht in Neid kippt. „Alhamdulillah“ heißt „alles Lob gehört Allah“ und ist die Antwort auf Gutes wie auf Alltägliches; Allah verspricht: „Wenn ihr dankbar seid, werde Ich euch ganz gewiss noch mehr erweisen.“ Dazu kommen „Subhanallah“ (Gepriesen sei Allah) beim Staunen, „Astaghfirullah“ (Ich bitte Allah um Vergebung) beim Fehler und „Dschazakallahu chairan“ — „Möge Allah dich mit Gutem belohnen“ als Dank an einen Menschen. Diese Formeln sind keine Floskeln: Sie verankern den ganzen Tag in der Erinnerung an Allah.",
+      "belege": [
+        "Koran 18:23",
+        "Koran 18:24",
+        "Koran 18:39",
+        "Koran 1:2",
+        "Koran 14:7"
+      ]
+    },
+    {
+      "id": "eltern-ehren",
+      "titel": "Die Eltern ehren",
+      "tags": [
+        "eltern",
+        "mutter",
+        "vater",
+        "eltern respektieren",
+        "streit mit eltern",
+        "dua fuer eltern",
+        "elternrecht"
+      ],
+      "text": "Der Koran stellt die Güte zu den Eltern direkt hinter das Bekenntnis zu Allah: „Und dein Herr hat bestimmt, dass ihr nur Ihm dienen und zu den Eltern gütig sein sollt.“ Werden sie alt, darf man nicht einmal ein genervtes „Pfui!“ sagen, sondern soll ehrerbietig sprechen und „den Flügel der Demut“ senken. Der Koran gibt dazu ein fertiges Bittgebet: „Rabbi irhamhuma kama rabbayani saghira“ — „Mein Herr, erbarme Dich ihrer, wie sie mich aufgezogen haben, als ich klein war“. Besonders die Mutter wird hervorgehoben, die unter Schwäche getragen und geboren hat. Wenn Eltern etwas verlangen, das Allah widerspricht, wird ihnen darin nicht gehorcht — aber der Umgang mit ihnen bleibt trotzdem freundlich und anständig; bei schwierigen Familienlagen ist es klug, eine kundige Person oder Gelehrte um Rat zu fragen. Auch nach ihrem Tod bleibt der Weg offen: Bittgebet, Sadaqa und das Pflegen ihrer Beziehungen.",
+      "belege": [
+        "Koran 17:23",
+        "Koran 17:24",
+        "Koran 31:14",
+        "Koran 31:15",
+        "Koran 46:15"
+      ]
+    },
+    {
+      "id": "nachbarn",
+      "titel": "Nachbarn — Rechte und guter Umgang",
+      "tags": [
+        "nachbarn",
+        "nachbarschaft",
+        "nachbar aergert mich",
+        "nachbarrechte",
+        "wohnung",
+        "hausgemeinschaft"
+      ],
+      "text": "Der Koran nennt in einer Reihe mit Eltern und Verwandten ausdrücklich „den verwandten Nachbarn, den fremden Nachbarn, den Gefährten zur Seite“ — Nachbarschaft ist also ein eigenes Recht, unabhängig von Religion oder Verwandtschaft. Der Prophet ﷺ sagte: „Wer an Allah und den Jüngsten Tag glaubt, der ehre seinen Nachbarn“, und im selben Atemzug: „der spreche Gutes oder schweige“ und „der ehre seinen Gast“. Praktisch heißt das: keinen Lärm und keinen Müll auf Kosten anderer, Grüßen, Hilfe bei Krankheit oder Umzug, etwas vom Essen abgeben, Fehler übersehen. Wer einem anderen eine Not abnimmt, dem nimmt Allah eine Not am Jüngsten Tag — das gilt auch für die kleine Not im Treppenhaus. Und wenn der Nachbar selbst stört, gilt zuerst Geduld und ein ruhiges Gespräch, nicht Vergeltung.",
+      "belege": [
+        "Koran 4:36",
+        "an-Nawawī Nr. 15 — Sahih al-Buchari 6018",
+        "an-Nawawī Nr. 36 — Sahih Muslim"
+      ]
+    },
+    {
+      "id": "ehrlichkeit-und-luege",
+      "titel": "Ehrlichkeit und die Lüge",
+      "tags": [
+        "ehrlichkeit",
+        "luegen",
+        "ist luegen erlaubt",
+        "wahrheit sagen",
+        "versprechen halten",
+        "aufrichtigkeit"
+      ],
+      "text": "Wahrhaftigkeit (Sidq) ist im Islam kein Nebenthema: „Fürchtet Allah und seid mit den Wahrhaftigen“, sagt der Koran, und an anderer Stelle: „sagt treffende Worte“. Die falsche Aussage wird in einem Atemzug mit dem Götzendienst gemieden — „meidet den Greuel der Götzenbilder, und meidet die falsche Aussage“. Besonders scharf ist der Koran, wenn Reden und Tun auseinanderfallen: „Warum sagt ihr, was ihr nicht tut?“ Ein guter Prüfstein stammt vom Propheten ﷺ: „Sünde ist das, was in deiner Seele nagt und von dem du nicht willst, dass die Menschen es erfahren.“ Wer einmal gelogen hat, macht es wieder gut, indem er die Sache richtigstellt, um Vergebung bittet und beim nächsten Mal lieber schweigt als beschönigt.",
+      "belege": [
+        "Koran 9:119",
+        "Koran 33:70",
+        "Koran 22:30",
+        "Koran 61:2",
+        "Koran 61:3",
+        "an-Nawawī Nr. 27 — Sahih Muslim"
+      ]
+    },
+    {
+      "id": "gheeba-nachrede",
+      "titel": "Ghiba — üble Nachrede",
+      "tags": [
+        "gheeba",
+        "ghiba",
+        "laestern",
+        "ueble nachrede",
+        "hinter dem ruecken reden",
+        "tratsch",
+        "geruechte"
+      ],
+      "text": "Ghiba heißt, über einen abwesenden Menschen etwas zu sagen, das er nicht gern hören würde — auch wenn es stimmt. Der Koran vergleicht das mit einem drastischen Bild: „führt nicht üble Nachrede übereinander. Möchte denn einer von euch gern das Fleisch seines Bruders, wenn er tot sei, essen?“ Im selben Zusammenhang stehen das Verbot, andere auszukundschaften, schlechte Mutmaßungen und Spott über andere. Das Gegenmittel ist einfach und schwer zugleich: „Wer an Allah und den Jüngsten Tag glaubt, der spreche Gutes oder schweige.“ Wer Fehler eines anderen kennt, deckt sie zu — „wer die Fehler eines Muslims verbirgt, dessen Fehler verbirgt Allah im Diesseits und Jenseits“. Kein Lästern heißt nicht Schweigen um jeden Preis: Warnung vor echter Gefahr, Beratung und die Schilderung eines Unrechts vor der zuständigen Stelle sind etwas anderes als Tratsch.",
+      "belege": [
+        "Koran 49:12",
+        "Koran 49:11",
+        "Koran 68:11",
+        "an-Nawawī Nr. 15 — Sahih al-Buchari 6018",
+        "an-Nawawī Nr. 36 — Sahih Muslim"
+      ]
+    },
+    {
+      "id": "zorn-beherrschen",
+      "titel": "Zorn beherrschen",
+      "tags": [
+        "wut",
+        "zorn",
+        "aggression",
+        "wie beruhige ich mich",
+        "streit",
+        "ausrasten",
+        "selbstbeherrschung"
+      ],
+      "text": "Ein Mann bat den Propheten ﷺ um einen Rat. Er sagte: „Werde nicht zornig.“ Der Mann fragte mehrmals nach — und jedes Mal kam dieselbe Antwort. Der Koran lobt die Gläubigen, „die ihren Grimm zurückhalten und den Menschen verzeihen“, und die, die „wenn sie zornig sind, doch vergeben“. Praktisch hilft: erst die Zufluchtsformel sprechen — „A'udhu billahi minasch-schaitanir-radschim“ — „Ich suche Zuflucht bei Allah vor dem verfluchten Satan“ —, dann schweigen, den Raum verlassen, Wasser nehmen, und erst reden, wenn der Puls wieder unten ist. Und dann gilt der schönste Rat des Korans: „Wehre mit einer Tat, die besser ist, die schlechte ab, dann wird derjenige, zwischen dem und dir Feindschaft besteht, so, als wäre er ein warmherziger Freund.“",
+      "belege": [
+        "an-Nawawī Nr. 16 — Sahih al-Buchari 6116",
+        "Koran 3:134",
+        "Koran 42:37",
+        "Koran 41:34"
+      ]
+    },
+    {
+      "id": "neid",
+      "titel": "Neid (Hasad) und wie man ihn löst",
+      "tags": [
+        "neid",
+        "hasad",
+        "eifersucht",
+        "boeser blick",
+        "warum haben andere mehr",
+        "missgunst"
+      ],
+      "text": "Neid heißt, einem anderen das zu missgönnen, was Allah ihm gegeben hat. Der Koran lässt uns sogar Zuflucht suchen „vor dem Übel eines jeden Neidenden, wenn er neidet“, und er stellt klar: „Wünscht euch nicht das, womit Allah die einen von euch vor den anderen bevorzugt hat… Und bittet Allah um etwas von Seiner Huld.“ Der Prophet ﷺ sagte kurz und deutlich: „Beneidet einander nicht… sondern seid, ihr Diener Allahs, Brüder.“ Der Ausweg ist nicht, Gefühle zu verdrängen, sondern sie zu drehen: für den anderen Segen erbitten („Ma scha Allah, Allahumma barik“), das eigene Gute zählen und Allah um mehr bitten — Sein Vorrat wird nicht knapp, wenn ein anderer bekommt. Und ein Maßstab bleibt: Erst wer für seinen Bruder liebt, was er für sich selbst liebt, glaubt wirklich.",
+      "belege": [
+        "Koran 113:5",
+        "Koran 4:32",
+        "an-Nawawī Nr. 35 — Sahih Muslim",
+        "an-Nawawī Nr. 13 — Sahih al-Buchari 13"
+      ]
+    },
+    {
+      "id": "hochmut",
+      "titel": "Hochmut (Kibr)",
+      "tags": [
+        "hochmut",
+        "arroganz",
+        "stolz",
+        "ueberheblich",
+        "angeben",
+        "kibr",
+        "herablassend"
+      ],
+      "text": "Hochmut heißt, die Wahrheit abzulehnen und Menschen geringzuschätzen. Der Koran beschreibt ihn sehr bildhaft: „Zeige den Menschen nicht geringschätzig die Wange und gehe nicht übermütig auf der Erde einher, denn Allah liebt niemanden, der eingebildet und prahlerisch ist“ — und nüchtern: „Du wirst ja die Erde nicht aufreißen noch die Berge an Höhe erreichen können.“ Die jenseitige Wohnstätte ist denen bestimmt, die „weder Überheblichkeit auf der Erde noch Unheil begehren“. Der Prophet ﷺ zeigte dreimal auf seine Brust und sagte: „Die Frömmigkeit ist hier“ — Rang bemisst sich nicht an Herkunft, Geld oder Aussehen. Wer merkt, dass er innerlich auf andere herabsieht, hat schon den ersten Schritt getan; der zweite ist, denselben Menschen zu grüßen, ihm zuzuhören und ihm etwas Gutes zu tun.",
+      "belege": [
+        "Koran 31:18",
+        "Koran 17:37",
+        "Koran 16:23",
+        "Koran 28:83",
+        "an-Nawawī Nr. 35 — Sahih Muslim"
+      ]
+    },
+    {
+      "id": "geduld",
+      "titel": "Geduld (Sabr)",
+      "tags": [
+        "geduld",
+        "sabr",
+        "durchhalten",
+        "schwere zeit",
+        "pruefung",
+        "warum passiert mir das",
+        "aushalten"
+      ],
+      "text": "Sabr ist mehr als Zähne zusammenbeißen: standhaft bleiben im Gehorsam, standhaft bleiben gegenüber dem Verbotenen und ruhig bleiben, wenn etwas wehtut. Der Koran kündigt Prüfungen offen an — „mit ein wenig Furcht und Hunger und Mangel an Besitz, Seelen und Früchten“ — und gibt den Standhaften gleich die Worte mit: „Wir gehören Allah, und zu Ihm kehren wir zurück.“ Ihnen gelten „Segnungen von ihrem Herrn und Erbarmen“, und ihr Lohn wird „ohne Berechnung in vollem Maß“ zukommen. Praktisch hilft, was der Koran daneben stellt: „Sucht Hilfe in der Standhaftigkeit und im Gebet! Allah ist mit den Standhaften.“ Geduld heißt nicht, nichts zu tun oder Unrecht hinzunehmen — man darf klagen, weinen, um Hilfe bitten und handeln; entscheidend ist, dabei nicht das Vertrauen in Allah zu verlieren.",
+      "belege": [
+        "Koran 2:153",
+        "Koran 2:155",
+        "Koran 2:156",
+        "Koran 2:157",
+        "Koran 39:10",
+        "Koran 103:3"
+      ]
+    },
+    {
+      "id": "dankbarkeit",
+      "titel": "Dankbarkeit (Schukr)",
+      "tags": [
+        "dankbarkeit",
+        "schukr",
+        "danken",
+        "alhamdulillah sagen",
+        "zufriedenheit",
+        "gnade allahs"
+      ],
+      "text": "Schukr heißt, Allahs Gaben zu erkennen, sie auszusprechen und sie richtig zu benutzen. Allah verknüpft daran ein Versprechen: „Wenn ihr dankbar seid, werde Ich euch ganz gewiss noch mehr erweisen.“ Und Er sagt: „Gedenkt Meiner, so gedenke Ich eurer. Seid Mir dankbar und seid nicht undankbar gegen Mich.“ Dass wir nie fertig werden, ist ausdrücklich gesagt: „Wenn ihr die Gunsterweise Allahs aufzählen wolltet, könntet ihr sie nicht erfassen.“ Im Alltag ist das Wort dafür „Alhamdulillah“ — „Alles Lob gebührt Allah“; bei etwas Erfreulichem ist überliefert: „Alhamdu lillahil-ladhi bi ni'matihi tatimmus-salihat“ — „Alles Lob gebührt Allah, durch Dessen Gnade die guten Werke vollendet werden“. Der Prophet ﷺ sagte, dass „Alhamdulillah“ die Waagschale füllt — ein Wort, das nichts kostet und viel wiegt.",
+      "belege": [
+        "Koran 14:7",
+        "Koran 2:152",
+        "Koran 31:12",
+        "Koran 16:18",
+        "an-Nawawī Nr. 23 — Sahih Muslim"
+      ]
+    },
+    {
+      "id": "gottvertrauen-tawakkul",
+      "titel": "Tawakkul — Gottvertrauen",
+      "tags": [
+        "tawakkul",
+        "gottvertrauen",
+        "vertrauen auf allah",
+        "angst vor der zukunft",
+        "sorgen um geld",
+        "loslassen"
+      ],
+      "text": "Tawakkul heißt: die Mittel ergreifen und das Ergebnis Allah überlassen. Der Koran sagt es in dieser Reihenfolge: „Und wenn du dich entschlossen hast, dann verlasse dich auf Allah! Gewiss, Allah liebt die sich auf Ihn Verlassenden“ — also erst planen, arbeiten, sich behandeln lassen, und dann das Herz loslassen. Die Zusage ist groß: „Wer sich auf Allah verlässt, dem ist Er seine Genüge.“ Die passenden Worte dazu sind „Hasbunallahu wa ni'mal-wakil“ — „Allah genügt uns, und Er ist der beste Sachwalter“ — und „Hasbiyallahu la ilaha illa huwa, alaihi tawakkaltu wa huwa Rabbul-arschil-azim“ — „Allah genügt mir. Es gibt keinen Gott außer Ihm. Auf Ihn vertraue ich, und Er ist der Herr des gewaltigen Throns“. Der Prophet ﷺ fasste es für Ibn Abbas so zusammen: „Wenn du bittest, so bitte Allah; wenn du um Hilfe ersuchst, so ersuche Allah um Hilfe.“",
+      "belege": [
+        "Koran 3:159",
+        "Koran 65:3",
+        "Koran 9:51",
+        "Koran 3:173",
+        "an-Nawawī Nr. 19 — Sunan at-Tirmidhi (hasan sahih)"
+      ]
+    },
+    {
+      "id": "bescheidenheit",
+      "titel": "Bescheidenheit (Tawadu)",
+      "tags": [
+        "bescheidenheit",
+        "demut",
+        "tawadu",
+        "einfach leben",
+        "nicht angeben",
+        "auftreten"
+      ],
+      "text": "Der Koran zeichnet ein sehr konkretes Bild der Bescheidenen: „Die Diener des Allerbarmers sind diejenigen, die maßvoll auf der Erde umhergehen und die, wenn die Toren sie ansprechen, sagen: Frieden!“ Luqman rät seinem Sohn dasselbe im Alltagsformat: nicht geringschätzig zur Seite blicken, nicht übermütig gehen, das rechte Maß im Gang halten und die Stimme dämpfen. Bescheidenheit ist dabei kein Kleinmachen: Man darf Gutes leisten, Erfolg haben und sich freuen — nur nicht über andere stellen. Der Prophet ﷺ gab einem Mann, der von Allah und den Menschen geliebt werden wollte, den Rat: „Entsage der Welt, so wird Allah dich lieben; und entsage dem, was in den Händen der Menschen ist, so werden dich die Menschen lieben.“ Wer weniger vergleicht, lebt leichter.",
+      "belege": [
+        "Koran 25:63",
+        "Koran 31:18",
+        "Koran 31:19",
+        "Koran 17:37",
+        "an-Nawawī Nr. 31 — Sunan Ibn Majah (hasan)"
+      ]
+    },
+    {
+      "id": "versoehnung-und-streit",
+      "titel": "Streit und Versöhnung",
+      "tags": [
+        "streit",
+        "versoehnung",
+        "verzeihen",
+        "wieder vertragen",
+        "kontaktabbruch",
+        "entschuldigen",
+        "familienstreit"
+      ],
+      "text": "Der Koran macht Versöhnung zur Aufgabe der Gemeinschaft, nicht nur der Streitenden: „Die Gläubigen sind doch Brüder. So stiftet Frieden zwischen euren beiden Brüdern.“ Wer zwischen Menschen vermittelt, tut etwas Gutes: In vielen vertraulichen Gesprächen sei nichts Gutes, „außer derer, die Almosen, Rechtes oder Aussöhnung unter den Menschen befehlen“. Vergelten darf man höchstens im gleichen Maß — „wer aber verzeiht und Besserung bringt, dessen Lohn obliegt Allah“. Und der Koran stellt eine Frage, die jeden Groll aushebelt: „Liebt ihr es selbst nicht, dass Allah euch vergibt?“ Der Prophet ﷺ verbot, sich voneinander abzuwenden und einander zu hassen. Praktisch heißt das: zuerst grüßen, den ersten Schritt tun, den eigenen Anteil zugeben — und wenn ein Gespräch nicht mehr geht, wenigstens im Herzen und im Bittgebet freilassen.",
+      "belege": [
+        "Koran 49:10",
+        "Koran 49:9",
+        "Koran 4:114",
+        "Koran 42:40",
+        "Koran 24:22",
+        "an-Nawawī Nr. 35 — Sahih Muslim"
+      ]
+    },
+    {
+      "id": "umgang-mit-nichtmuslimen",
+      "titel": "Umgang mit Nichtmuslimen",
+      "tags": [
+        "nichtmuslime",
+        "andere religion",
+        "kollegen",
+        "freunde",
+        "christen und juden",
+        "wie verhalte ich mich",
+        "zusammenleben"
+      ],
+      "text": "Der Grundsatz steht klar im Koran: „Allah verbietet euch nicht, gegenüber denjenigen, die nicht gegen euch der Religion wegen gekämpft und euch nicht aus euren Wohnstätten vertrieben haben, gütig zu sein und sie gerecht zu behandeln. Gewiss, Allah liebt die Gerechten.“ Glaube lässt sich nicht erzwingen — „Es gibt keinen Zwang im Glauben“ —, und wer über den Islam spricht, tut es „mit Weisheit und schöner Ermahnung“ und streitet „in bester Weise“. Sogar das Beschimpfen fremder Glaubensinhalte wird untersagt, damit nicht aus Unwissen zurückgeschmäht wird. Gerechtigkeit gilt auch dann, wenn man jemanden nicht mag: „Der Hass, den ihr gegen bestimmte Leute hegt, soll euch ja nicht dazu bringen, dass ihr nicht gerecht handelt.“ Nachbarschaft, Gastfreundschaft, Kollegialität, Pflege kranker Angehöriger — all das kennt keine Religionsgrenze; Maßstab ist bei Allah die Gottesfurcht, nicht die Herkunft.",
+      "belege": [
+        "Koran 60:8",
+        "Koran 2:256",
+        "Koran 16:125",
+        "Koran 29:46",
+        "Koran 6:108",
+        "Koran 5:8",
+        "Koran 49:13"
+      ]
+    },
+    {
+      "id": "tiere-und-umwelt",
+      "titel": "Tiere und Umwelt",
+      "tags": [
+        "tiere",
+        "tierschutz",
+        "umwelt",
+        "natur",
+        "muell",
+        "verschwendung",
+        "haustier",
+        "klima"
+      ],
+      "text": "Der Koran sieht Tiere nicht als Sachen: „Es gibt kein Tier auf der Erde und keinen Vogel, der mit seinen Flügeln fliegt, die nicht Gemeinschaften wären gleich euch.“ Der Prophet ﷺ sagte: „Allah hat die Vortrefflichkeit für alle Dinge vorgeschrieben“ — und nannte ausdrücklich, dass man beim Schlachten die Klinge schärft und dem Tier Leid erspart. Für den Umgang mit der Schöpfung gilt Maß: „Esst und trinkt, aber seid nicht maßlos! Er liebt nicht die Maßlosen.“ Der Koran benennt sogar den Zusammenhang zwischen menschlichem Handeln und Schaden an Land und Meer. Ganz praktisch zählt schon Kleines: Ein störendes Hindernis vom Weg zu räumen ist Sadaqa — Müll, Wasser, Strom und Essen achtsam zu behandeln, gehört genau dorthin.",
+      "belege": [
+        "Koran 6:38",
+        "Koran 7:31",
+        "Koran 30:41",
+        "an-Nawawī Nr. 17 — Sahih Muslim 1955",
+        "an-Nawawī Nr. 26 — Sahih al-Buchari, Sahih Muslim"
+      ]
+    },
+    {
+      "id": "arbeit-und-ehrlicher-handel",
+      "titel": "Arbeit und ehrlicher Handel",
+      "tags": [
+        "arbeit",
+        "beruf",
+        "handel",
+        "geld verdienen",
+        "halal einkommen",
+        "betrug",
+        "zinsen",
+        "kunden"
+      ],
+      "text": "Arbeit ist im Islam kein Gegensatz zur Frömmigkeit: „Wenn das Gebet beendet ist, dann breitet euch im Land aus und trachtet nach etwas von Allahs Huld. Und gedenkt Allahs viel.“ Ehrlich muss sie sein: „Wehe den das Maß Kürzenden, die, wenn sie sich von den Menschen zumessen lassen, sich volles Maß geben lassen, wenn sie ihnen aber zumessen oder wägen, Verlust zufügen.“ Positiv gewendet: „Gebt volles Maß, wenn ihr meßt, und wägt mit der richtigen Waage.“ Vermögen darf nicht „auf nichtige Weise“ erworben werden, sondern durch Handel in gegenseitigem Einvernehmen; Zinsnehmen ist verboten, Verkaufen erlaubt. Der Prophet ﷺ machte deutlich, dass unerlaubtes Einkommen sogar das Bittgebet blockiert, und riet, Zweifelhaftes zu meiden, um Religion und Ehre rein zu halten. Bei konkreten Vertrags-, Finanz- oder Berufsfragen — etwa zu Krediten oder Versicherungen — sollte man kundige Gelehrte fragen, statt sich auf eine pauschale Antwort zu verlassen.",
+      "belege": [
+        "Koran 62:10",
+        "Koran 83:1",
+        "Koran 83:2",
+        "Koran 83:3",
+        "Koran 17:35",
+        "Koran 4:29",
+        "an-Nawawī Nr. 10 — Sahih Muslim 1015",
+        "an-Nawawī Nr. 6 — Sahih al-Buchari 52"
+      ]
+    },
+    {
+      "id": "zeit-und-gewohnheiten",
+      "titel": "Zeit nutzen und kleine beständige Taten",
+      "tags": [
+        "zeit",
+        "gewohnheiten",
+        "routine",
+        "aufschieben",
+        "zeit verschwenden",
+        "kleine taten",
+        "bestaendigkeit",
+        "disziplin"
+      ],
+      "text": "Sure Al-Asr schwört bei der Zeit und stellt fest: „Der Mensch befindet sich wahrlich in Verlust“ — außer denen, die glauben, rechtschaffen handeln und einander Wahrheit und Standhaftigkeit empfehlen. Zeit ist damit das Kapital, mit dem gearbeitet wird. Der Prophet ﷺ nahm Ibn Umar an der Schulter und sagte: „Sei in dieser Welt, als wärst du ein Fremder oder ein Wegereisender“ — und Ibn Umar ergänzte: „Nimm von deiner Gesundheit für deine Krankheit, und von deinem Leben für deinen Tod.“ Der Koran gibt den Takt dazu vor: „Wenn du nun fertig bist, dann strenge dich an, und nach deinem Herrn richte dein Begehren aus.“ Praktisch heißt das: kleine, feste Gewohnheiten statt großer Vorsätze — zwei Seiten Koran täglich, ein Dhikr nach dem Gebet, eine Sadaqa pro Woche. Beständigkeit schlägt Intensität, weil sie den Tag trägt, auch wenn die Motivation schwankt.",
+      "belege": [
+        "Koran 103:2",
+        "Koran 103:3",
+        "Koran 94:7",
+        "Koran 94:8",
+        "an-Nawawī Nr. 40 — Sahih al-Buchari"
+      ]
+    }
+  ]
+}

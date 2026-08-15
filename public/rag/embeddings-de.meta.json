@@ -1,0 +1,9 @@
+{
+  "v": 1,
+  "model": "Xenova/multilingual-e5-small",
+  "sprache": "de",
+  "dim": 384,
+  "quant": "int8",
+  "count": 7222,
+  "letzteId": "w-umgang-mit-fehlern-und-reue-1"
+}

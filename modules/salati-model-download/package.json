@@ -1,0 +1,7 @@
+{
+  "name": "salati-model-download",
+  "version": "1.0.0",
+  "description": "Lokales Expo-Module: echter Android-Hintergrund-Download des KI-Modells ueber den System-DownloadManager (laeuft weiter bei App im Hintergrund/geschlossen).",
+  "main": "index.ts",
+  "private": true
+}

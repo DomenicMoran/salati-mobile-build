@@ -1,0 +1,3359 @@
+{
+ "lessons": [
+  {
+   "id": "vocab-1",
+   "words": [
+    {
+     "arabic": "رَبّ",
+     "translit": "rabb",
+     "meaning": {
+      "de": "Herr",
+      "en": "Lord",
+      "tr": "Rab",
+      "ar": "السيد المالك",
+      "es": "Señor",
+      "fr": "Seigneur",
+      "id": "Tuhan",
+      "bn": "প্রভু",
+      "fa": "پروردگار",
+      "ms": "Tuhan",
+      "ur": "رب",
+      "ru": "Господь",
+      "sw": "Bwana",
+      "ps": "رب"
+     }
+    },
+    {
+     "arabic": "اِسْم",
+     "translit": "ism",
+     "meaning": {
+      "de": "Name",
+      "en": "name",
+      "tr": "isim",
+      "ar": "الاسم",
+      "es": "nombre",
+      "fr": "nom",
+      "id": "nama",
+      "bn": "নাম",
+      "fa": "نام",
+      "ms": "nama",
+      "ur": "نام",
+      "ru": "имя",
+      "sw": "jina",
+      "ps": "نوم"
+     }
+    },
+    {
+     "arabic": "حَقّ",
+     "translit": "ḥaqq",
+     "meaning": {
+      "de": "Wahrheit",
+      "en": "truth",
+      "tr": "hak, gerçek",
+      "ar": "الصدق",
+      "es": "verdad",
+      "fr": "vérité",
+      "id": "kebenaran",
+      "bn": "সত্য",
+      "fa": "حقیقت",
+      "ms": "kebenaran",
+      "ur": "حق",
+      "ru": "истина",
+      "sw": "ukweli",
+      "ps": "حقیقت"
+     }
+    },
+    {
+     "arabic": "نُور",
+     "translit": "nūr",
+     "meaning": {
+      "de": "Licht",
+      "en": "light",
+      "tr": "nur, ışık",
+      "ar": "الضياء",
+      "es": "luz",
+      "fr": "lumière",
+      "id": "cahaya",
+      "bn": "আলো",
+      "fa": "نور",
+      "ms": "cahaya",
+      "ur": "نور",
+      "ru": "свет",
+      "sw": "nuru",
+      "ps": "رڼا"
+     }
+    },
+    {
+     "arabic": "دِين",
+     "translit": "dīn",
+     "meaning": {
+      "de": "Religion",
+      "en": "religion",
+      "tr": "din",
+      "ar": "الدين",
+      "es": "religión",
+      "fr": "religion",
+      "id": "agama",
+      "bn": "ধর্ম",
+      "fa": "دین",
+      "ms": "agama",
+      "ur": "دین",
+      "ru": "религия",
+      "sw": "dini",
+      "ps": "دین"
+     }
+    },
+    {
+     "arabic": "قَلْب",
+     "translit": "qalb",
+     "meaning": {
+      "de": "Herz",
+      "en": "heart",
+      "tr": "kalp",
+      "ar": "الفؤاد",
+      "es": "corazón",
+      "fr": "cœur",
+      "id": "hati",
+      "bn": "হৃদয়",
+      "fa": "قلب",
+      "ms": "hati",
+      "ur": "دل",
+      "ru": "сердце",
+      "sw": "moyo",
+      "ps": "زړه"
+     }
+    },
+    {
+     "arabic": "كِتَاب",
+     "translit": "kitāb",
+     "meaning": {
+      "de": "Buch",
+      "en": "book",
+      "tr": "kitap",
+      "ar": "السِّفر",
+      "es": "libro",
+      "fr": "livre",
+      "id": "kitab",
+      "bn": "কিতাব",
+      "fa": "کتاب",
+      "ms": "kitab",
+      "ur": "کتاب",
+      "ru": "книга",
+      "sw": "kitabu",
+      "ps": "کتاب"
+     }
+    },
+    {
+     "arabic": "مَاء",
+     "translit": "māʾ",
+     "meaning": {
+      "de": "Wasser",
+      "en": "water",
+      "tr": "su",
+      "ar": "الماء",
+      "es": "agua",
+      "fr": "eau",
+      "id": "air",
+      "bn": "পানি",
+      "fa": "آب",
+      "ms": "air",
+      "ur": "پانی",
+      "ru": "вода",
+      "sw": "maji",
+      "ps": "اوبه"
+     }
+    },
+    {
+     "arabic": "يَوْم",
+     "translit": "yawm",
+     "meaning": {
+      "de": "Tag",
+      "en": "day",
+      "tr": "gün",
+      "ar": "اليوم",
+      "es": "día",
+      "fr": "jour",
+      "id": "hari",
+      "bn": "দিন",
+      "fa": "روز",
+      "ms": "hari",
+      "ur": "دن",
+      "ru": "день",
+      "sw": "siku",
+      "ps": "ورځ"
+     }
+    },
+    {
+     "arabic": "سَلَام",
+     "translit": "salām",
+     "meaning": {
+      "de": "Friede",
+      "en": "peace",
+      "tr": "selam, barış",
+      "ar": "السلام",
+      "es": "paz",
+      "fr": "paix",
+      "id": "damai",
+      "bn": "শান্তি",
+      "fa": "صلح، آرامش",
+      "ms": "damai",
+      "ur": "امن، سلامتی",
+      "ru": "мир",
+      "sw": "amani",
+      "ps": "سوله"
+     }
+    },
+    {
+     "arabic": "خَيْر",
+     "translit": "khayr",
+     "meaning": {
+      "de": "das Gute",
+      "en": "good, goodness",
+      "tr": "hayır, iyilik",
+      "ar": "الخير",
+      "es": "bien",
+      "fr": "bien",
+      "id": "kebaikan",
+      "bn": "কল্যাণ",
+      "fa": "نیکی",
+      "ms": "kebaikan",
+      "ur": "بھلائی",
+      "ru": "добро",
+      "sw": "wema",
+      "ps": "ښېګڼه"
+     }
+    },
+    {
+     "arabic": "شَرّ",
+     "translit": "sharr",
+     "meaning": {
+      "de": "das Böse",
+      "en": "evil",
+      "tr": "şer, kötülük",
+      "ar": "الشر",
+      "es": "mal",
+      "fr": "mal",
+      "id": "keburukan",
+      "bn": "অকল্যাণ",
+      "fa": "بدی",
+      "ms": "keburukan",
+      "ur": "برائی",
+      "ru": "зло",
+      "sw": "ubaya",
+      "ps": "بدي"
+     }
+    },
+    {
+     "arabic": "نَار",
+     "translit": "nār",
+     "meaning": {
+      "de": "Feuer",
+      "en": "fire",
+      "tr": "ateş",
+      "ar": "النار",
+      "es": "fuego",
+      "fr": "feu",
+      "id": "api",
+      "bn": "আগুন",
+      "fa": "آتش",
+      "ms": "api",
+      "ur": "آگ",
+      "ru": "огонь",
+      "sw": "moto",
+      "ps": "اور"
+     }
+    },
+    {
+     "arabic": "جَنَّة",
+     "translit": "janna",
+     "meaning": {
+      "de": "Paradies, Garten",
+      "en": "paradise, garden",
+      "tr": "cennet",
+      "ar": "الفردوس",
+      "es": "paraíso, jardín",
+      "fr": "paradis, jardin",
+      "id": "surga, taman",
+      "bn": "জান্নাত, বাগান",
+      "fa": "بهشت، باغ",
+      "ms": "syurga, taman",
+      "ur": "جنت، باغ",
+      "ru": "рай, сад",
+      "sw": "pepo, bustani",
+      "ps": "جنت، باغ"
+     }
+    },
+    {
+     "arabic": "عَيْن",
+     "translit": "ʿayn",
+     "meaning": {
+      "de": "Auge",
+      "en": "eye",
+      "tr": "göz",
+      "ar": "الباصرة",
+      "es": "ojo",
+      "fr": "œil",
+      "id": "mata",
+      "bn": "চোখ",
+      "fa": "چشم",
+      "ms": "mata",
+      "ur": "آنکھ",
+      "ru": "глаз",
+      "sw": "jicho",
+      "ps": "سترګه"
+     }
+    }
+   ]
+  },
+  {
+   "id": "vocab-2",
+   "words": [
+    {
+     "arabic": "اِنْسَان",
+     "translit": "insān",
+     "meaning": {
+      "de": "Mensch",
+      "en": "human being",
+      "tr": "insan",
+      "ar": "البشر",
+      "es": "ser humano",
+      "fr": "être humain",
+      "id": "manusia",
+      "bn": "মানুষ",
+      "fa": "انسان",
+      "ms": "manusia",
+      "ur": "انسان",
+      "ru": "человек",
+      "sw": "binadamu",
+      "ps": "انسان"
+     }
+    },
+    {
+     "arabic": "نَاس",
+     "translit": "nās",
+     "meaning": {
+      "de": "Menschen",
+      "en": "people",
+      "tr": "insanlar",
+      "ar": "الناس",
+      "es": "gente",
+      "fr": "gens",
+      "id": "manusia (jamak)",
+      "bn": "মানবজাতি",
+      "fa": "مردم",
+      "ms": "manusia (jamak)",
+      "ur": "لوگ",
+      "ru": "люди",
+      "sw": "watu",
+      "ps": "خلک"
+     }
+    },
+    {
+     "arabic": "قَوْم",
+     "translit": "qawm",
+     "meaning": {
+      "de": "Volk",
+      "en": "folk, people",
+      "tr": "kavim, halk",
+      "ar": "القبيلة",
+      "es": "pueblo",
+      "fr": "peuple",
+      "id": "kaum",
+      "bn": "জাতি",
+      "fa": "قوم",
+      "ms": "kaum",
+      "ur": "قوم",
+      "ru": "народ",
+      "sw": "kabila",
+      "ps": "قوم"
+     }
+    },
+    {
+     "arabic": "أُمَّة",
+     "translit": "ʾumma",
+     "meaning": {
+      "de": "Gemeinschaft",
+      "en": "community",
+      "tr": "ümmet",
+      "ar": "الأمة",
+      "es": "comunidad",
+      "fr": "communauté",
+      "id": "umat",
+      "bn": "উম্মাহ",
+      "fa": "امت",
+      "ms": "umat",
+      "ur": "امت",
+      "ru": "община",
+      "sw": "umma",
+      "ps": "امت"
+     }
+    },
+    {
+     "arabic": "رَسُول",
+     "translit": "rasūl",
+     "meaning": {
+      "de": "Gesandter",
+      "en": "messenger",
+      "tr": "resul, elçi",
+      "ar": "المرسل",
+      "es": "mensajero",
+      "fr": "messager",
+      "id": "rasul",
+      "bn": "রাসূল",
+      "fa": "فرستاده، رسول",
+      "ms": "rasul",
+      "ur": "رسول",
+      "ru": "посланник",
+      "sw": "mtume",
+      "ps": "استازی"
+     }
+    },
+    {
+     "arabic": "نَبِيّ",
+     "translit": "nabīʾ",
+     "meaning": {
+      "de": "Prophet",
+      "en": "prophet",
+      "tr": "nebi, peygamber",
+      "ar": "النبي",
+      "es": "profeta",
+      "fr": "prophète",
+      "id": "nabi",
+      "bn": "নবী",
+      "fa": "پیامبر",
+      "ms": "nabi",
+      "ur": "نبی",
+      "ru": "пророк",
+      "sw": "nabii",
+      "ps": "پیغمبر"
+     }
+    },
+    {
+     "arabic": "وَجْه",
+     "translit": "wajh",
+     "meaning": {
+      "de": "Gesicht",
+      "en": "face",
+      "tr": "yüz",
+      "ar": "الوجه",
+      "es": "rostro",
+      "fr": "visage",
+      "id": "wajah",
+      "bn": "মুখ",
+      "fa": "چهره",
+      "ms": "wajah",
+      "ur": "چہرہ",
+      "ru": "лицо",
+      "sw": "uso",
+      "ps": "مخ"
+     }
+    },
+    {
+     "arabic": "يَد",
+     "translit": "yad",
+     "meaning": {
+      "de": "Hand",
+      "en": "hand",
+      "tr": "el",
+      "ar": "الكف",
+      "es": "mano",
+      "fr": "main",
+      "id": "tangan",
+      "bn": "হাত",
+      "fa": "دست",
+      "ms": "tangan",
+      "ur": "ہاتھ",
+      "ru": "рука",
+      "sw": "mkono",
+      "ps": "لاس"
+     }
+    },
+    {
+     "arabic": "لِسَان",
+     "translit": "lisān",
+     "meaning": {
+      "de": "Zunge, Sprache",
+      "en": "tongue, language",
+      "tr": "dil",
+      "ar": "اللسان",
+      "es": "lengua",
+      "fr": "langue",
+      "id": "lidah, bahasa",
+      "bn": "জিহ্বা, ভাষা",
+      "fa": "زبان",
+      "ms": "lidah, bahasa",
+      "ur": "زبان",
+      "ru": "язык",
+      "sw": "ulimi, lugha",
+      "ps": "ژبه"
+     }
+    },
+    {
+     "arabic": "نَفْس",
+     "translit": "nafs",
+     "meaning": {
+      "de": "Seele, Selbst",
+      "en": "soul, self",
+      "tr": "nefis, can",
+      "ar": "الذات",
+      "es": "alma",
+      "fr": "âme",
+      "id": "jiwa, diri",
+      "bn": "আত্মা, নিজ",
+      "fa": "نفس، خود",
+      "ms": "jiwa, diri",
+      "ur": "نفس، ذات",
+      "ru": "душа, сам",
+      "sw": "nafsi",
+      "ps": "ځان، نفس"
+     }
+    },
+    {
+     "arabic": "رُوح",
+     "translit": "rūḥ",
+     "meaning": {
+      "de": "Geist, Seele",
+      "en": "spirit, soul",
+      "tr": "ruh",
+      "ar": "الروح",
+      "es": "espíritu",
+      "fr": "esprit",
+      "id": "roh, jiwa",
+      "bn": "রুহ, আত্মা",
+      "fa": "روح",
+      "ms": "roh, jiwa",
+      "ur": "روح",
+      "ru": "дух, душа",
+      "sw": "roho",
+      "ps": "روح"
+     }
+    },
+    {
+     "arabic": "أُمّ",
+     "translit": "ʾumm",
+     "meaning": {
+      "de": "Mutter",
+      "en": "mother",
+      "tr": "anne",
+      "ar": "الأم",
+      "es": "madre",
+      "fr": "mère",
+      "id": "ibu",
+      "bn": "মা",
+      "fa": "مادر",
+      "ms": "ibu",
+      "ur": "ماں",
+      "ru": "мать",
+      "sw": "mama",
+      "ps": "مور"
+     }
+    },
+    {
+     "arabic": "أَب",
+     "translit": "ʾab",
+     "meaning": {
+      "de": "Vater",
+      "en": "father",
+      "tr": "baba",
+      "ar": "الأب",
+      "es": "padre",
+      "fr": "père",
+      "id": "ayah",
+      "bn": "বাবা",
+      "fa": "پدر",
+      "ms": "bapa",
+      "ur": "باپ",
+      "ru": "отец",
+      "sw": "baba",
+      "ps": "پلار"
+     }
+    },
+    {
+     "arabic": "اِبْن",
+     "translit": "ibn",
+     "meaning": {
+      "de": "Sohn",
+      "en": "son",
+      "tr": "oğul, ibn",
+      "ar": "الابن",
+      "es": "hijo",
+      "fr": "fils",
+      "id": "anak laki-laki",
+      "bn": "পুত্র",
+      "fa": "پسر",
+      "ms": "anak lelaki",
+      "ur": "بیٹا",
+      "ru": "сын",
+      "sw": "mwana",
+      "ps": "زوی"
+     }
+    },
+    {
+     "arabic": "أَخ",
+     "translit": "ʾakh",
+     "meaning": {
+      "de": "Bruder",
+      "en": "brother",
+      "tr": "kardeş",
+      "ar": "الأخ",
+      "es": "hermano",
+      "fr": "frère",
+      "id": "saudara laki-laki",
+      "bn": "ভাই",
+      "fa": "برادر",
+      "ms": "saudara lelaki",
+      "ur": "بھائی",
+      "ru": "брат",
+      "sw": "kaka",
+      "ps": "ورور"
+     }
+    }
+   ]
+  },
+  {
+   "id": "vocab-3",
+   "words": [
+    {
+     "arabic": "رَحْمَة",
+     "translit": "raḥma",
+     "meaning": {
+      "de": "Barmherzigkeit",
+      "en": "mercy",
+      "tr": "rahmet",
+      "ar": "الرحمة",
+      "es": "misericordia",
+      "fr": "miséricorde",
+      "id": "kasih sayang",
+      "bn": "দয়া",
+      "fa": "رحمت",
+      "ms": "kasih sayang",
+      "ur": "رحمت",
+      "ru": "милость",
+      "sw": "rehema",
+      "ps": "رحمت"
+     }
+    },
+    {
+     "arabic": "رَحِيم",
+     "translit": "raḥīm",
+     "meaning": {
+      "de": "der Barmherzige",
+      "en": "merciful",
+      "tr": "rahim, çok merhametli",
+      "ar": "الراحم",
+      "es": "misericordioso",
+      "fr": "miséricordieux",
+      "id": "Maha Penyayang",
+      "bn": "দয়ালু",
+      "fa": "مهربان",
+      "ms": "Maha Penyayang",
+      "ur": "رحم کرنے والا",
+      "ru": "милосердный",
+      "sw": "mwenye rehema",
+      "ps": "مهربان"
+     }
+    },
+    {
+     "arabic": "رَحْمَٰن",
+     "translit": "raḥmān",
+     "meaning": {
+      "de": "der Allerbarmer",
+      "en": "all-compassionate",
+      "tr": "rahman",
+      "ar": "الرحمن",
+      "es": "clemente",
+      "fr": "tout miséricordieux",
+      "id": "Maha Pengasih",
+      "bn": "পরম করুণাময়",
+      "fa": "بخشاینده",
+      "ms": "Maha Pemurah",
+      "ur": "نہایت مہربان",
+      "ru": "всемилостивый",
+      "sw": "mwingi wa rehema",
+      "ps": "ډېر مهربانه"
+     }
+    },
+    {
+     "arabic": "عَظِيم",
+     "translit": "ʿaẓīm",
+     "meaning": {
+      "de": "der Erhabene",
+      "en": "supreme, magnificent",
+      "tr": "azim, büyük",
+      "ar": "العظيم",
+      "es": "sublime, grandioso",
+      "fr": "immense, sublime",
+      "id": "Mahaagung",
+      "bn": "মহান",
+      "fa": "بزرگ",
+      "ms": "Maha Agung",
+      "ur": "عظیم",
+      "ru": "великий",
+      "sw": "mkuu",
+      "ps": "لوی"
+     }
+    },
+    {
+     "arabic": "عَلِيم",
+     "translit": "ʿalīm",
+     "meaning": {
+      "de": "der Allwissende",
+      "en": "all-knowing",
+      "tr": "alim, her şeyi bilen",
+      "ar": "العليم",
+      "es": "omnisciente",
+      "fr": "omniscient",
+      "id": "Maha Mengetahui",
+      "bn": "সর্বজ্ঞ",
+      "fa": "دانا",
+      "ms": "Maha Mengetahui",
+      "ur": "جاننے والا",
+      "ru": "всезнающий",
+      "sw": "mjuzi",
+      "ps": "پوه"
+     }
+    },
+    {
+     "arabic": "عَزِيز",
+     "translit": "ʿazīz",
+     "meaning": {
+      "de": "der Erhabene, Mächtige",
+      "en": "mighty, almighty",
+      "tr": "aziz, üstün",
+      "ar": "العزيز",
+      "es": "poderoso",
+      "fr": "puissant",
+      "id": "Mahaperkasa",
+      "bn": "পরাক্রমশালী",
+      "fa": "عزیز، توانا",
+      "ms": "Maha Perkasa",
+      "ur": "غالب، زبردست",
+      "ru": "могущественный",
+      "sw": "mwenye nguvu",
+      "ps": "برلاسی"
+     }
+    },
+    {
+     "arabic": "غَفُور",
+     "translit": "ghafūr",
+     "meaning": {
+      "de": "der Allvergebende",
+      "en": "most-forgiving",
+      "tr": "gafur, çok bağışlayan",
+      "ar": "الغفور",
+      "es": "perdonador",
+      "fr": "tout pardonneur",
+      "id": "Maha Pengampun",
+      "bn": "ক্ষমাশীল",
+      "fa": "آمرزنده",
+      "ms": "Maha Pengampun",
+      "ur": "بخشنے والا",
+      "ru": "прощающий",
+      "sw": "mwenye kusamehe",
+      "ps": "بښونکی"
+     }
+    },
+    {
+     "arabic": "حَكِيم",
+     "translit": "ḥakīm",
+     "meaning": {
+      "de": "der Weise",
+      "en": "wise",
+      "tr": "hakim, hikmet sahibi",
+      "ar": "الحكيم",
+      "es": "sabio",
+      "fr": "sage",
+      "id": "Mahabijaksana",
+      "bn": "প্রজ্ঞাময়",
+      "fa": "حکیم",
+      "ms": "Maha Bijaksana",
+      "ur": "حکمت والا",
+      "ru": "мудрый",
+      "sw": "mwenye hekima",
+      "ps": "حکیم"
+     }
+    },
+    {
+     "arabic": "قَدِير",
+     "translit": "qadīr",
+     "meaning": {
+      "de": "der Allmächtige",
+      "en": "all-powerful",
+      "tr": "kadir, her şeye gücü yeten",
+      "ar": "القدير",
+      "es": "todopoderoso",
+      "fr": "tout-puissant",
+      "id": "Mahakuasa",
+      "bn": "সর্বশক্তিমান",
+      "fa": "توانا",
+      "ms": "Maha Berkuasa",
+      "ur": "قدرت والا",
+      "ru": "всемогущий",
+      "sw": "muweza",
+      "ps": "قادر"
+     }
+    },
+    {
+     "arabic": "سَمِيع",
+     "translit": "samīʿ",
+     "meaning": {
+      "de": "der Allhörende",
+      "en": "all-hearing",
+      "tr": "semi, her şeyi işiten",
+      "ar": "السميع",
+      "es": "omnioyente",
+      "fr": "celui qui entend tout",
+      "id": "Maha Mendengar",
+      "bn": "সর্বশ্রোতা",
+      "fa": "شنوا",
+      "ms": "Maha Mendengar",
+      "ur": "سننے والا",
+      "ru": "всеслышащий",
+      "sw": "msikizi",
+      "ps": "اورېدونکی"
+     }
+    },
+    {
+     "arabic": "بَصِير",
+     "translit": "baṣīr",
+     "meaning": {
+      "de": "der Allsehende",
+      "en": "all-seeing",
+      "tr": "basir, her şeyi gören",
+      "ar": "البصير",
+      "es": "omnividente",
+      "fr": "celui qui voit tout",
+      "id": "Maha Melihat",
+      "bn": "সর্বদ্রষ্টা",
+      "fa": "بینا",
+      "ms": "Maha Melihat",
+      "ur": "دیکھنے والا",
+      "ru": "всевидящий",
+      "sw": "muonaji",
+      "ps": "لیدونکی"
+     }
+    },
+    {
+     "arabic": "كَرِيم",
+     "translit": "karīm",
+     "meaning": {
+      "de": "der Gütige, Edle",
+      "en": "generous, noble",
+      "tr": "kerim, cömert",
+      "ar": "الكريم",
+      "es": "generoso, noble",
+      "fr": "généreux, noble",
+      "id": "Mahamulia",
+      "bn": "মহানুভব",
+      "fa": "کریم، بزرگوار",
+      "ms": "Maha Mulia",
+      "ur": "کرم والا",
+      "ru": "щедрый",
+      "sw": "mkarimu",
+      "ps": "سخي"
+     }
+    },
+    {
+     "arabic": "حَلِيم",
+     "translit": "ḥalīm",
+     "meaning": {
+      "de": "der Nachsichtige",
+      "en": "forbearing, clement",
+      "tr": "halim, yumuşak huylu",
+      "ar": "الحليم",
+      "es": "indulgente",
+      "fr": "indulgent",
+      "id": "Maha Penyantun",
+      "bn": "সহনশীল",
+      "fa": "بردبار",
+      "ms": "Maha Penyantun",
+      "ur": "بردبار",
+      "ru": "кроткий",
+      "sw": "mpole",
+      "ps": "زغمناک"
+     }
+    },
+    {
+     "arabic": "وَكِيل",
+     "translit": "wakīl",
+     "meaning": {
+      "de": "der Sachwalter",
+      "en": "guardian, trustee",
+      "tr": "vekil",
+      "ar": "الوكيل",
+      "es": "protector, garante",
+      "fr": "garant, protecteur",
+      "id": "Pemelihara",
+      "bn": "অভিভাবক",
+      "fa": "نگهبان، وکیل",
+      "ms": "Pemelihara",
+      "ur": "کارساز، نگہبان",
+      "ru": "попечитель",
+      "sw": "mlinzi",
+      "ps": "ساتونکی"
+     }
+    },
+    {
+     "arabic": "حَمِيد",
+     "translit": "ḥamīd",
+     "meaning": {
+      "de": "der Lobenswerte",
+      "en": "praiseworthy",
+      "tr": "hamid, övgüye layık",
+      "ar": "الحميد",
+      "es": "digno de alabanza",
+      "fr": "digne de louange",
+      "id": "Maha Terpuji",
+      "bn": "প্রশংসিত",
+      "fa": "ستوده",
+      "ms": "Maha Terpuji",
+      "ur": "لائقِ تعریف",
+      "ru": "достохвальный",
+      "sw": "asifiwaye",
+      "ps": "ستایل شوی"
+     }
+    }
+   ]
+  },
+  {
+   "id": "vocab-4",
+   "words": [
+    {
+     "arabic": "شَمْس",
+     "translit": "shams",
+     "meaning": {
+      "de": "Sonne",
+      "en": "sun",
+      "tr": "güneş",
+      "ar": "الشمس",
+      "es": "sol",
+      "fr": "soleil",
+      "id": "matahari",
+      "bn": "সূর্য",
+      "fa": "خورشید",
+      "ms": "matahari",
+      "ur": "سورج",
+      "ru": "солнце",
+      "sw": "jua",
+      "ps": "لمر"
+     }
+    },
+    {
+     "arabic": "قَمَر",
+     "translit": "qamar",
+     "meaning": {
+      "de": "Mond",
+      "en": "moon",
+      "tr": "ay",
+      "ar": "القمر",
+      "es": "luna",
+      "fr": "lune",
+      "id": "bulan",
+      "bn": "চাঁদ",
+      "fa": "ماه",
+      "ms": "bulan",
+      "ur": "چاند",
+      "ru": "луна",
+      "sw": "mwezi",
+      "ps": "سپوږمۍ"
+     }
+    },
+    {
+     "arabic": "لَيْل",
+     "translit": "layl",
+     "meaning": {
+      "de": "Nacht",
+      "en": "night",
+      "tr": "gece",
+      "ar": "الليل",
+      "es": "noche",
+      "fr": "nuit",
+      "id": "malam",
+      "bn": "রাত",
+      "fa": "شب",
+      "ms": "malam",
+      "ur": "رات",
+      "ru": "ночь",
+      "sw": "usiku",
+      "ps": "شپه"
+     }
+    },
+    {
+     "arabic": "أَرْض",
+     "translit": "ʾarḍ",
+     "meaning": {
+      "de": "Erde",
+      "en": "earth",
+      "tr": "yeryüzü, arz",
+      "ar": "الأرض",
+      "es": "tierra",
+      "fr": "terre",
+      "id": "bumi",
+      "bn": "পৃথিবী",
+      "fa": "زمین",
+      "ms": "bumi",
+      "ur": "زمین",
+      "ru": "земля",
+      "sw": "ardhi",
+      "ps": "ځمکه"
+     }
+    },
+    {
+     "arabic": "سَمَاء",
+     "translit": "samāʾ",
+     "meaning": {
+      "de": "Himmel",
+      "en": "sky, heaven",
+      "tr": "sema, gökyüzü",
+      "ar": "السماء",
+      "es": "cielo",
+      "fr": "ciel",
+      "id": "langit",
+      "bn": "আকাশ",
+      "fa": "آسمان",
+      "ms": "langit",
+      "ur": "آسمان",
+      "ru": "небо",
+      "sw": "mbingu",
+      "ps": "آسمان"
+     }
+    },
+    {
+     "arabic": "بَحْر",
+     "translit": "baḥr",
+     "meaning": {
+      "de": "Meer",
+      "en": "sea",
+      "tr": "deniz",
+      "ar": "البحر",
+      "es": "mar",
+      "fr": "mer",
+      "id": "laut",
+      "bn": "সমুদ্র",
+      "fa": "دریا",
+      "ms": "laut",
+      "ur": "سمندر",
+      "ru": "море",
+      "sw": "bahari",
+      "ps": "بحر"
+     }
+    },
+    {
+     "arabic": "جَبَل",
+     "translit": "jabal",
+     "meaning": {
+      "de": "Berg",
+      "en": "mountain",
+      "tr": "dağ",
+      "ar": "الجبل",
+      "es": "montaña",
+      "fr": "montagne",
+      "id": "gunung",
+      "bn": "পাহাড়",
+      "fa": "کوه",
+      "ms": "gunung",
+      "ur": "پہاڑ",
+      "ru": "гора",
+      "sw": "mlima",
+      "ps": "غر"
+     }
+    },
+    {
+     "arabic": "نَهَر",
+     "translit": "nahar",
+     "meaning": {
+      "de": "Fluss",
+      "en": "river",
+      "tr": "nehir",
+      "ar": "النهر",
+      "es": "río",
+      "fr": "rivière",
+      "id": "sungai",
+      "bn": "নদী",
+      "fa": "رودخانه",
+      "ms": "sungai",
+      "ur": "دریا",
+      "ru": "река",
+      "sw": "mto",
+      "ps": "سیند"
+     }
+    },
+    {
+     "arabic": "دُنْيَا",
+     "translit": "dunyā",
+     "meaning": {
+      "de": "Diesseits",
+      "en": "worldly life",
+      "tr": "dünya",
+      "ar": "الحياة الدنيا",
+      "es": "vida mundanal",
+      "fr": "vie terrestre",
+      "id": "kehidupan dunia",
+      "bn": "পার্থিব জীবন",
+      "fa": "زندگی دنیا",
+      "ms": "kehidupan dunia",
+      "ur": "دنیاوی زندگی",
+      "ru": "мирская жизнь",
+      "sw": "maisha ya dunia",
+      "ps": "دنیاوي ژوند"
+     }
+    },
+    {
+     "arabic": "عَالَم",
+     "translit": "ʿālam",
+     "meaning": {
+      "de": "Welt",
+      "en": "world",
+      "tr": "âlem, dünya",
+      "ar": "العالم",
+      "es": "mundo",
+      "fr": "monde",
+      "id": "dunia, alam",
+      "bn": "জগৎ",
+      "fa": "جهان",
+      "ms": "dunia, alam",
+      "ur": "جہان",
+      "ru": "мир (вселенная)",
+      "sw": "ulimwengu",
+      "ps": "نړۍ"
+     }
+    },
+    {
+     "arabic": "سَبِيل",
+     "translit": "sabīl",
+     "meaning": {
+      "de": "Weg",
+      "en": "way, path",
+      "tr": "sebil, yol",
+      "ar": "الطريق",
+      "es": "camino",
+      "fr": "chemin",
+      "id": "jalan",
+      "bn": "পথ",
+      "fa": "راه",
+      "ms": "jalan",
+      "ur": "راستہ",
+      "ru": "путь",
+      "sw": "njia",
+      "ps": "لار"
+     }
+    },
+    {
+     "arabic": "صِرَاط",
+     "translit": "ṣirāṭ",
+     "meaning": {
+      "de": "Pfad",
+      "en": "path",
+      "tr": "sırat, yol",
+      "ar": "الصراط",
+      "es": "senda, camino",
+      "fr": "voie",
+      "id": "jalan, jalur",
+      "bn": "পথ",
+      "fa": "مسیر، صراط",
+      "ms": "jalan, jalur",
+      "ur": "صراط، راستہ",
+      "ru": "стезя",
+      "sw": "njia",
+      "ps": "لار (صراط)"
+     }
+    },
+    {
+     "arabic": "قَرْيَة",
+     "translit": "qarya",
+     "meaning": {
+      "de": "Stadt, Dorf",
+      "en": "town, village",
+      "tr": "karye, köy",
+      "ar": "القرية",
+      "es": "pueblo, ciudad",
+      "fr": "village, cité",
+      "id": "kota, desa",
+      "bn": "জনপদ",
+      "fa": "شهر، روستا",
+      "ms": "bandar, kampung",
+      "ur": "بستی، شہر",
+      "ru": "селение",
+      "sw": "mji, kijiji",
+      "ps": "کلی، ښار"
+     }
+    },
+    {
+     "arabic": "بَيْت",
+     "translit": "bayt",
+     "meaning": {
+      "de": "Haus",
+      "en": "house",
+      "tr": "beyt, ev",
+      "ar": "البيت",
+      "es": "casa",
+      "fr": "maison",
+      "id": "rumah",
+      "bn": "ঘর",
+      "fa": "خانه",
+      "ms": "rumah",
+      "ur": "گھر",
+      "ru": "дом",
+      "sw": "nyumba",
+      "ps": "کور"
+     }
+    },
+    {
+     "arabic": "مَسْجِد",
+     "translit": "masjid",
+     "meaning": {
+      "de": "Moschee",
+      "en": "mosque",
+      "tr": "mescit, cami",
+      "ar": "المسجد",
+      "es": "mezquita",
+      "fr": "mosquée",
+      "id": "masjid",
+      "bn": "মসজিদ",
+      "fa": "مسجد",
+      "ms": "masjid",
+      "ur": "مسجد",
+      "ru": "мечеть",
+      "sw": "msikiti",
+      "ps": "جومات"
+     }
+    }
+   ]
+  },
+  {
+   "id": "vocab-5",
+   "words": [
+    {
+     "arabic": "الْآخِرَة",
+     "translit": "al-ʾākhira",
+     "meaning": {
+      "de": "das Jenseits",
+      "en": "the Hereafter",
+      "tr": "ahiret",
+      "ar": "الآخرة",
+      "es": "la otra vida",
+      "fr": "l'au-delà",
+      "id": "akhirat",
+      "bn": "আখিরাত",
+      "fa": "آخرت",
+      "ms": "akhirat",
+      "ur": "آخرت",
+      "ru": "загробная жизнь",
+      "sw": "akhera",
+      "ps": "آخرت"
+     }
+    },
+    {
+     "arabic": "جَهَنَّم",
+     "translit": "jahannam",
+     "meaning": {
+      "de": "die Hölle",
+      "en": "Hell",
+      "tr": "cehennem",
+      "ar": "جهنم",
+      "es": "el infierno",
+      "fr": "l'enfer",
+      "id": "neraka",
+      "bn": "জাহান্নাম",
+      "fa": "دوزخ",
+      "ms": "neraka",
+      "ur": "جہنم",
+      "ru": "ад",
+      "sw": "jahanamu",
+      "ps": "دوزخ"
+     }
+    },
+    {
+     "arabic": "جَحِيم",
+     "translit": "jaḥīm",
+     "meaning": {
+      "de": "Höllenfeuer",
+      "en": "hellfire",
+      "tr": "cahim, alevli ateş",
+      "ar": "النار المستعرة",
+      "es": "fuego infernal",
+      "fr": "brasier",
+      "id": "api neraka",
+      "bn": "জাহান্নামের আগুন",
+      "fa": "آتش دوزخ",
+      "ms": "api neraka",
+      "ur": "جہنم کی آگ",
+      "ru": "адское пламя",
+      "sw": "moto wa jahanamu",
+      "ps": "د دوزخ اور"
+     }
+    },
+    {
+     "arabic": "قِيَامَة",
+     "translit": "qiyāma",
+     "meaning": {
+      "de": "Auferstehung",
+      "en": "resurrection",
+      "tr": "kıyamet",
+      "ar": "البعث",
+      "es": "resurrección",
+      "fr": "résurrection",
+      "id": "kebangkitan",
+      "bn": "পুনরুত্থান",
+      "fa": "رستاخیز",
+      "ms": "kebangkitan",
+      "ur": "قیامت، دوبارہ اٹھنا",
+      "ru": "воскрешение",
+      "sw": "ufufuo",
+      "ps": "بیا راژوندی کېدل"
+     }
+    },
+    {
+     "arabic": "حِسَاب",
+     "translit": "ḥisāb",
+     "meaning": {
+      "de": "Abrechnung",
+      "en": "reckoning",
+      "tr": "hesap",
+      "ar": "الحساب",
+      "es": "rendición de cuentas",
+      "fr": "reddition de comptes",
+      "id": "perhitungan",
+      "bn": "হিসাব",
+      "fa": "حساب",
+      "ms": "perhitungan",
+      "ur": "حساب",
+      "ru": "расчёт",
+      "sw": "hesabu",
+      "ps": "حساب"
+     }
+    },
+    {
+     "arabic": "سَاعَة",
+     "translit": "sāʿa",
+     "meaning": {
+      "de": "die Stunde",
+      "en": "the Hour",
+      "tr": "saat, kıyamet saati",
+      "ar": "الساعة",
+      "es": "la Hora",
+      "fr": "l'Heure",
+      "id": "waktu kiamat",
+      "bn": "কিয়ামতের ঘড়ি",
+      "fa": "ساعت (قیامت)",
+      "ms": "waktu kiamat",
+      "ur": "قیامت کی گھڑی",
+      "ru": "Час (Судный)",
+      "sw": "Saa (ya Kiama)",
+      "ps": "قیامت"
+     }
+    },
+    {
+     "arabic": "عَذَاب",
+     "translit": "ʿadhāb",
+     "meaning": {
+      "de": "Qual",
+      "en": "torment",
+      "tr": "azap",
+      "ar": "العذاب",
+      "es": "tormento",
+      "fr": "tourment",
+      "id": "siksaan",
+      "bn": "যন্ত্রণা",
+      "fa": "عذاب",
+      "ms": "seksaan",
+      "ur": "عذاب",
+      "ru": "мука",
+      "sw": "mateso",
+      "ps": "عذاب"
+     }
+    },
+    {
+     "arabic": "عِقَاب",
+     "translit": "ʿiqāb",
+     "meaning": {
+      "de": "Strafe",
+      "en": "punishment",
+      "tr": "ikab, ceza",
+      "ar": "العقاب",
+      "es": "castigo",
+      "fr": "châtiment",
+      "id": "hukuman",
+      "bn": "শাস্তি",
+      "fa": "کیفر",
+      "ms": "hukuman",
+      "ur": "سزا",
+      "ru": "наказание",
+      "sw": "adhabu",
+      "ps": "سزا"
+     }
+    },
+    {
+     "arabic": "أَجَل",
+     "translit": "ʾajal",
+     "meaning": {
+      "de": "festgesetzte Frist",
+      "en": "appointed term",
+      "tr": "ecel, süre",
+      "ar": "الأجل",
+      "es": "plazo fijado",
+      "fr": "terme fixé",
+      "id": "batas waktu yang ditentukan",
+      "bn": "নির্ধারিত সময়",
+      "fa": "اجل معین",
+      "ms": "tempoh yang ditetapkan",
+      "ur": "مقررہ وقت",
+      "ru": "назначенный срок",
+      "sw": "muda maalum",
+      "ps": "ټاکلې نیټه"
+     }
+    },
+    {
+     "arabic": "أَجْر",
+     "translit": "ʾajr",
+     "meaning": {
+      "de": "Lohn",
+      "en": "reward",
+      "tr": "ecir, mükafat",
+      "ar": "الأجر",
+      "es": "recompensa",
+      "fr": "récompense",
+      "id": "pahala",
+      "bn": "প্রতিদান",
+      "fa": "پاداش",
+      "ms": "ganjaran",
+      "ur": "اجر، ثواب",
+      "ru": "награда",
+      "sw": "malipo",
+      "ps": "اجر"
+     }
+    },
+    {
+     "arabic": "مِيثَاق",
+     "translit": "mīthāq",
+     "meaning": {
+      "de": "Bund",
+      "en": "covenant",
+      "tr": "misak, ahit",
+      "ar": "الميثاق",
+      "es": "pacto",
+      "fr": "pacte",
+      "id": "perjanjian",
+      "bn": "প্রতিশ্রুতি",
+      "fa": "پیمان",
+      "ms": "perjanjian",
+      "ur": "عہد",
+      "ru": "завет",
+      "sw": "agano",
+      "ps": "تړون"
+     }
+    },
+    {
+     "arabic": "غَيْب",
+     "translit": "ghayb",
+     "meaning": {
+      "de": "das Verborgene",
+      "en": "the unseen",
+      "tr": "gayb, bilinmeyen",
+      "ar": "الغيب",
+      "es": "lo oculto",
+      "fr": "l'invisible",
+      "id": "yang gaib",
+      "bn": "অদৃশ্য",
+      "fa": "غیب",
+      "ms": "yang ghaib",
+      "ur": "غیب",
+      "ru": "сокровенное",
+      "sw": "ghaibu",
+      "ps": "پټ (غیب)"
+     }
+    },
+    {
+     "arabic": "لِقَاء",
+     "translit": "liqāʾ",
+     "meaning": {
+      "de": "Begegnung",
+      "en": "meeting",
+      "tr": "likâ, kavuşma",
+      "ar": "اللقاء",
+      "es": "encuentro",
+      "fr": "rencontre",
+      "id": "pertemuan",
+      "bn": "সাক্ষাৎ",
+      "fa": "دیدار",
+      "ms": "pertemuan",
+      "ur": "ملاقات",
+      "ru": "встреча",
+      "sw": "mkutano",
+      "ps": "لیدنه"
+     }
+    },
+    {
+     "arabic": "عَاقِبَة",
+     "translit": "ʿāqiba",
+     "meaning": {
+      "de": "Ausgang, Ende",
+      "en": "outcome, end",
+      "tr": "akıbet, sonuç",
+      "ar": "العاقبة",
+      "es": "consecuencia final",
+      "fr": "aboutissement",
+      "id": "kesudahan",
+      "bn": "পরিণাম",
+      "fa": "عاقبت",
+      "ms": "kesudahan",
+      "ur": "انجام",
+      "ru": "исход",
+      "sw": "mwisho",
+      "ps": "پایله"
+     }
+    },
+    {
+     "arabic": "وَيْل",
+     "translit": "wayl",
+     "meaning": {
+      "de": "Wehe",
+      "en": "woe",
+      "tr": "veyl, yazıklar olsun",
+      "ar": "الويل",
+      "es": "¡ay!",
+      "fr": "malheur",
+      "id": "celakalah",
+      "bn": "দুর্ভোগ",
+      "fa": "وای",
+      "ms": "celakalah",
+      "ur": "ہلاکت",
+      "ru": "горе",
+      "sw": "ole",
+      "ps": "افسوس"
+     }
+    }
+   ]
+  },
+  {
+   "id": "vocab-6",
+   "words": [
+    {
+     "arabic": "تَقْوَى",
+     "translit": "taqwā",
+     "meaning": {
+      "de": "Gottesfurcht",
+      "en": "God-consciousness",
+      "tr": "takva",
+      "ar": "التقوى",
+      "es": "temor de Dios",
+      "fr": "piété",
+      "id": "takwa",
+      "bn": "তাকওয়া",
+      "fa": "تقوا",
+      "ms": "takwa",
+      "ur": "تقویٰ",
+      "ru": "богобоязненность",
+      "sw": "taqwa",
+      "ps": "تقوی"
+     }
+    },
+    {
+     "arabic": "حِكْمَة",
+     "translit": "ḥikma",
+     "meaning": {
+      "de": "Weisheit",
+      "en": "wisdom",
+      "tr": "hikmet",
+      "ar": "الحكمة",
+      "es": "sabiduría",
+      "fr": "sagesse",
+      "id": "hikmah",
+      "bn": "প্রজ্ঞা",
+      "fa": "حکمت",
+      "ms": "hikmah",
+      "ur": "حکمت",
+      "ru": "мудрость",
+      "sw": "hekima",
+      "ps": "حکمت"
+     }
+    },
+    {
+     "arabic": "حَمْد",
+     "translit": "ḥamd",
+     "meaning": {
+      "de": "Lob",
+      "en": "praise",
+      "tr": "hamd, övgü",
+      "ar": "الحمد",
+      "es": "alabanza",
+      "fr": "louange",
+      "id": "pujian",
+      "bn": "প্রশংসা",
+      "fa": "ستایش",
+      "ms": "pujian",
+      "ur": "تعریف",
+      "ru": "хвала",
+      "sw": "sifa",
+      "ps": "ستاینه"
+     }
+    },
+    {
+     "arabic": "زَكَاة",
+     "translit": "zakāh",
+     "meaning": {
+      "de": "Almosensteuer",
+      "en": "almsgiving",
+      "tr": "zekat",
+      "ar": "الزكاة",
+      "es": "limosna purificadora",
+      "fr": "aumône légale",
+      "id": "zakat",
+      "bn": "যাকাত",
+      "fa": "زکات",
+      "ms": "zakat",
+      "ur": "زکوٰۃ",
+      "ru": "закят",
+      "sw": "zaka",
+      "ps": "زکات"
+     }
+    },
+    {
+     "arabic": "صَلَاة",
+     "translit": "ṣalāh",
+     "meaning": {
+      "de": "Gebet",
+      "en": "prayer",
+      "tr": "salat, namaz",
+      "ar": "الصلاة",
+      "es": "oración ritual",
+      "fr": "prière",
+      "id": "salat",
+      "bn": "সালাত",
+      "fa": "نماز",
+      "ms": "solat",
+      "ur": "نماز",
+      "ru": "молитва",
+      "sw": "swala",
+      "ps": "لمونځ"
+     }
+    },
+    {
+     "arabic": "شَهَادَة",
+     "translit": "shahāda",
+     "meaning": {
+      "de": "Zeugnis",
+      "en": "testimony",
+      "tr": "şehadet",
+      "ar": "الشهادة",
+      "es": "testimonio",
+      "fr": "témoignage",
+      "id": "kesaksian",
+      "bn": "সাক্ষ্য",
+      "fa": "شهادت",
+      "ms": "kesaksian",
+      "ur": "گواہی",
+      "ru": "свидетельство",
+      "sw": "ushahidi",
+      "ps": "شاهدي"
+     }
+    },
+    {
+     "arabic": "بَاطِل",
+     "translit": "bāṭil",
+     "meaning": {
+      "de": "Falschheit",
+      "en": "falsehood",
+      "tr": "batıl",
+      "ar": "الباطل",
+      "es": "falsedad",
+      "fr": "faux, vanité",
+      "id": "kebatilan",
+      "bn": "মিথ্যা",
+      "fa": "باطل",
+      "ms": "kebatilan",
+      "ur": "باطل",
+      "ru": "ложь",
+      "sw": "batili",
+      "ps": "باطل"
+     }
+    },
+    {
+     "arabic": "حَرَام",
+     "translit": "ḥarām",
+     "meaning": {
+      "de": "verboten",
+      "en": "forbidden",
+      "tr": "haram",
+      "ar": "الحرام",
+      "es": "prohibido",
+      "fr": "interdit",
+      "id": "haram",
+      "bn": "হারাম",
+      "fa": "حرام",
+      "ms": "haram",
+      "ur": "حرام",
+      "ru": "запретное",
+      "sw": "haramu",
+      "ps": "حرام"
+     }
+    },
+    {
+     "arabic": "حَسَنَة",
+     "translit": "ḥasana",
+     "meaning": {
+      "de": "gute Tat",
+      "en": "good deed",
+      "tr": "hasene, iyilik",
+      "ar": "الحسنة",
+      "es": "buena obra",
+      "fr": "bonne action",
+      "id": "kebajikan",
+      "bn": "সৎকর্ম",
+      "fa": "کار نیک",
+      "ms": "kebajikan",
+      "ur": "نیکی",
+      "ru": "доброе дело",
+      "sw": "tendo jema",
+      "ps": "ښه عمل"
+     }
+    },
+    {
+     "arabic": "ذَنْب",
+     "translit": "dhanb",
+     "meaning": {
+      "de": "Verfehlung, (kleine) Sünde",
+      "en": "wrongdoing, (minor) sin",
+      "tr": "zenb, günah",
+      "ar": "الذنب",
+      "es": "falta, (pequeño) pecado",
+      "fr": "faute, (petit) péché",
+      "id": "kesalahan (dosa kecil)",
+      "bn": "অন্যায় (ছোট গুনাহ)",
+      "fa": "گناه (کوچک)",
+      "ms": "kesalahan (dosa kecil)",
+      "ur": "گناہِ صغیرہ",
+      "ru": "проступок (малый грех)",
+      "sw": "kosa (dhambi ndogo)",
+      "ps": "ګناه (کوچنی)"
+     }
+    },
+    {
+     "arabic": "إِثْم",
+     "translit": "ʾithm",
+     "meaning": {
+      "de": "Sünde (schwerwiegend)",
+      "en": "sin (grave wrongdoing)",
+      "tr": "ism, günah",
+      "ar": "الإثم",
+      "es": "pecado (grave)",
+      "fr": "péché (grave)",
+      "id": "dosa (besar)",
+      "bn": "গুরুতর পাপ",
+      "fa": "گناه (بزرگ)",
+      "ms": "dosa (besar)",
+      "ur": "گناہِ کبیرہ",
+      "ru": "грех (тяжкий)",
+      "sw": "dhambi (kubwa)",
+      "ps": "ګناه (لوی)"
+     }
+    },
+    {
+     "arabic": "عَمَل",
+     "translit": "ʿamal",
+     "meaning": {
+      "de": "Tat, Werk",
+      "en": "deed, work",
+      "tr": "amel, iş",
+      "ar": "العمل",
+      "es": "obra, acción",
+      "fr": "œuvre, action",
+      "id": "perbuatan",
+      "bn": "কর্ম",
+      "fa": "عمل",
+      "ms": "perbuatan",
+      "ur": "عمل",
+      "ru": "деяние",
+      "sw": "tendo",
+      "ps": "کار (عمل)"
+     }
+    },
+    {
+     "arabic": "فَضْل",
+     "translit": "faḍl",
+     "meaning": {
+      "de": "Gnade",
+      "en": "grace, favor",
+      "tr": "fazl, lütuf",
+      "ar": "الفضل",
+      "es": "gracia, favor",
+      "fr": "grâce, faveur",
+      "id": "karunia",
+      "bn": "অনুগ্রহ",
+      "fa": "فضل",
+      "ms": "kurnia",
+      "ur": "فضل، احسان",
+      "ru": "благодать",
+      "sw": "fadhila",
+      "ps": "فضل"
+     }
+    },
+    {
+     "arabic": "نِعْمَة",
+     "translit": "niʿma",
+     "meaning": {
+      "de": "Gnadengabe",
+      "en": "blessing",
+      "tr": "nimet",
+      "ar": "النعمة",
+      "es": "bendición",
+      "fr": "bienfait",
+      "id": "nikmat",
+      "bn": "নিয়ামত",
+      "fa": "نعمت",
+      "ms": "nikmat",
+      "ur": "نعمت",
+      "ru": "благо",
+      "sw": "neema",
+      "ps": "نعمت"
+     }
+    },
+    {
+     "arabic": "سَيِّئَة",
+     "translit": "sayyiʾa",
+     "meaning": {
+      "de": "schlechte Tat",
+      "en": "bad deed",
+      "tr": "seyyie, kötülük",
+      "ar": "السيئة",
+      "es": "mala obra",
+      "fr": "mauvaise action",
+      "id": "keburukan",
+      "bn": "অসৎকর্ম",
+      "fa": "کار بد",
+      "ms": "kejahatan",
+      "ur": "برائی",
+      "ru": "дурное дело",
+      "sw": "tendo baya",
+      "ps": "بد عمل"
+     }
+    }
+   ]
+  },
+  {
+   "id": "vocab-7",
+   "words": [
+    {
+     "arabic": "آدَم",
+     "translit": "ʾādam",
+     "meaning": {
+      "de": "Adam",
+      "en": "Adam",
+      "tr": "Âdem",
+      "ar": "آدم",
+      "es": "Adán",
+      "fr": "Adam",
+      "id": "Adam",
+      "bn": "আদম",
+      "fa": "آدم",
+      "ms": "Adam",
+      "ur": "آدم",
+      "ru": "Адам",
+      "sw": "Adam",
+      "ps": "آدم"
+     }
+    },
+    {
+     "arabic": "إِبْرَاهِيم",
+     "translit": "ʾibrāhīm",
+     "meaning": {
+      "de": "Abraham",
+      "en": "Abraham",
+      "tr": "İbrahim",
+      "ar": "إبراهيم",
+      "es": "Abraham",
+      "fr": "Abraham",
+      "id": "Ibrahim",
+      "bn": "ইব্রাহীম",
+      "fa": "ابراهیم",
+      "ms": "Ibrahim",
+      "ur": "ابراہیم",
+      "ru": "Ибрахим",
+      "sw": "Ibrahim",
+      "ps": "ابراهيم"
+     }
+    },
+    {
+     "arabic": "نُوح",
+     "translit": "nūḥ",
+     "meaning": {
+      "de": "Noah",
+      "en": "Noah",
+      "tr": "Nuh",
+      "ar": "نوح",
+      "es": "Noé",
+      "fr": "Noé",
+      "id": "Nuh",
+      "bn": "নূহ",
+      "fa": "نوح",
+      "ms": "Nuh",
+      "ur": "نوح",
+      "ru": "Нух",
+      "sw": "Nuhu",
+      "ps": "نوح"
+     }
+    },
+    {
+     "arabic": "مُوسَى",
+     "translit": "mūsā",
+     "meaning": {
+      "de": "Mose",
+      "en": "Moses",
+      "tr": "Musa",
+      "ar": "موسى",
+      "es": "Moisés",
+      "fr": "Moïse",
+      "id": "Musa",
+      "bn": "মূসা",
+      "fa": "موسی",
+      "ms": "Musa",
+      "ur": "موسیٰ",
+      "ru": "Муса",
+      "sw": "Musa",
+      "ps": "موسی"
+     }
+    },
+    {
+     "arabic": "عِيسَى",
+     "translit": "ʿīsā",
+     "meaning": {
+      "de": "Jesus",
+      "en": "Jesus",
+      "tr": "İsa",
+      "ar": "عيسى",
+      "es": "Jesús",
+      "fr": "Jésus",
+      "id": "Isa",
+      "bn": "ঈসা",
+      "fa": "عیسی",
+      "ms": "Isa",
+      "ur": "عیسیٰ",
+      "ru": "Иса",
+      "sw": "Isa",
+      "ps": "عیسی"
+     }
+    },
+    {
+     "arabic": "يُوسُف",
+     "translit": "yūsuf",
+     "meaning": {
+      "de": "Josef",
+      "en": "Joseph",
+      "tr": "Yusuf",
+      "ar": "يوسف",
+      "es": "José",
+      "fr": "Joseph",
+      "id": "Yusuf",
+      "bn": "ইউসুফ",
+      "fa": "یوسف",
+      "ms": "Yusuf",
+      "ur": "یوسف",
+      "ru": "Юсуф",
+      "sw": "Yusuf",
+      "ps": "یوسف"
+     }
+    },
+    {
+     "arabic": "إِسْمَاعِيل",
+     "translit": "ʾismāʿīl",
+     "meaning": {
+      "de": "Ismael",
+      "en": "Ishmael",
+      "tr": "İsmail",
+      "ar": "إسماعيل",
+      "es": "Ismael",
+      "fr": "Ismaël",
+      "id": "Ismail",
+      "bn": "ইসমাঈল",
+      "fa": "اسماعیل",
+      "ms": "Ismail",
+      "ur": "اسماعیل",
+      "ru": "Исмаил",
+      "sw": "Ismail",
+      "ps": "اسماعيل"
+     }
+    },
+    {
+     "arabic": "يَعْقُوب",
+     "translit": "yaʿqūb",
+     "meaning": {
+      "de": "Jakob",
+      "en": "Jacob",
+      "tr": "Yakup",
+      "ar": "يعقوب",
+      "es": "Jacob",
+      "fr": "Jacob",
+      "id": "Yakub",
+      "bn": "ইয়াকুব",
+      "fa": "یعقوب",
+      "ms": "Yaakob",
+      "ur": "یعقوب",
+      "ru": "Якуб",
+      "sw": "Yaqub",
+      "ps": "یعقوب"
+     }
+    },
+    {
+     "arabic": "شَيْطَان",
+     "translit": "shayṭān",
+     "meaning": {
+      "de": "Satan",
+      "en": "Satan",
+      "tr": "şeytan",
+      "ar": "الشيطان",
+      "es": "Satán",
+      "fr": "Satan",
+      "id": "setan",
+      "bn": "শয়তান",
+      "fa": "شیطان",
+      "ms": "syaitan",
+      "ur": "شیطان",
+      "ru": "шайтан",
+      "sw": "shetani",
+      "ps": "شیطان"
+     }
+    },
+    {
+     "arabic": "فِرْعَوْن",
+     "translit": "firʿawn",
+     "meaning": {
+      "de": "Pharao",
+      "en": "Pharaoh",
+      "tr": "Firavun",
+      "ar": "فرعون",
+      "es": "Faraón",
+      "fr": "Pharaon",
+      "id": "Firaun",
+      "bn": "ফিরআউন",
+      "fa": "فرعون",
+      "ms": "Firaun",
+      "ur": "فرعون",
+      "ru": "фараон",
+      "sw": "Firauni",
+      "ps": "فرعون"
+     }
+    },
+    {
+     "arabic": "مَلَك",
+     "translit": "malak",
+     "meaning": {
+      "de": "Engel",
+      "en": "angel",
+      "tr": "melek",
+      "ar": "الملَك",
+      "es": "ángel",
+      "fr": "ange",
+      "id": "malaikat",
+      "bn": "ফেরেশতা",
+      "fa": "فرشته",
+      "ms": "malaikat",
+      "ur": "فرشتہ",
+      "ru": "ангел",
+      "sw": "malaika",
+      "ps": "ملایک"
+     }
+    },
+    {
+     "arabic": "إِلَٰه",
+     "translit": "ʾilāh",
+     "meaning": {
+      "de": "Gott, Gottheit",
+      "en": "god, deity",
+      "tr": "ilah",
+      "ar": "الإله",
+      "es": "dios, divinidad",
+      "fr": "dieu, divinité",
+      "id": "tuhan, sesembahan",
+      "bn": "ইলাহ, উপাস্য",
+      "fa": "خدا، معبود",
+      "ms": "tuhan, sesembahan",
+      "ur": "الٰہ، معبود",
+      "ru": "божество",
+      "sw": "mola",
+      "ps": "معبود"
+     }
+    },
+    {
+     "arabic": "آيَة",
+     "translit": "ʾāya",
+     "meaning": {
+      "de": "Zeichen, Vers",
+      "en": "sign, verse",
+      "tr": "ayet",
+      "ar": "الآية",
+      "es": "signo, aleya",
+      "fr": "signe, verset",
+      "id": "tanda, ayat",
+      "bn": "নিদর্শন, আয়াত",
+      "fa": "نشانه، آیه",
+      "ms": "tanda, ayat",
+      "ur": "نشانی، آیت",
+      "ru": "знамение, аят",
+      "sw": "ishara, aya",
+      "ps": "نښه، آیت"
+     }
+    },
+    {
+     "arabic": "قُرْآن",
+     "translit": "qurʾān",
+     "meaning": {
+      "de": "Koran",
+      "en": "Quran, recitation",
+      "tr": "Kur'an",
+      "ar": "القرآن",
+      "es": "Corán",
+      "fr": "Coran",
+      "id": "Al-Qur'an, bacaan",
+      "bn": "কুরআন",
+      "fa": "قرآن",
+      "ms": "Al-Quran, bacaan",
+      "ur": "قرآن",
+      "ru": "Коран, чтение",
+      "sw": "Qur'an",
+      "ps": "قرآن"
+     }
+    },
+    {
+     "arabic": "حَدِيث",
+     "translit": "ḥadīth",
+     "meaning": {
+      "de": "Erzählung, Rede",
+      "en": "narration, speech",
+      "tr": "hadis",
+      "ar": "الحديث",
+      "es": "relato, dicho",
+      "fr": "récit, parole",
+      "id": "hadis, tuturan",
+      "bn": "হাদিস, বর্ণনা",
+      "fa": "حدیث، سخن",
+      "ms": "hadis, tuturan",
+      "ur": "حدیث، بات",
+      "ru": "хадис, речь",
+      "sw": "hadithi",
+      "ps": "حدیث، خبره"
+     }
+    }
+   ]
+  },
+  {
+   "id": "vocab-8",
+   "words": [
+    {
+     "arabic": "قَالَ",
+     "translit": "qāla",
+     "meaning": {
+      "de": "sagen",
+      "en": "to say",
+      "tr": "demek, söylemek",
+      "ar": "قال",
+      "es": "decir",
+      "fr": "dire",
+      "id": "mengatakan",
+      "bn": "বলা",
+      "fa": "گفتن",
+      "ms": "berkata",
+      "ur": "کہنا",
+      "ru": "говорить",
+      "sw": "kusema",
+      "ps": "ویل"
+     }
+    },
+    {
+     "arabic": "كَانَ",
+     "translit": "kāna",
+     "meaning": {
+      "de": "sein",
+      "en": "to be",
+      "tr": "olmak",
+      "ar": "كان",
+      "es": "ser, estar",
+      "fr": "être",
+      "id": "menjadi, ada",
+      "bn": "হওয়া",
+      "fa": "بودن",
+      "ms": "menjadi, ada",
+      "ur": "ہونا",
+      "ru": "быть",
+      "sw": "kuwa",
+      "ps": "کېدل"
+     }
+    },
+    {
+     "arabic": "عَلِمَ",
+     "translit": "ʿalima",
+     "meaning": {
+      "de": "wissen",
+      "en": "to know",
+      "tr": "bilmek",
+      "ar": "علم",
+      "es": "saber",
+      "fr": "savoir",
+      "id": "mengetahui",
+      "bn": "জানা",
+      "fa": "دانستن",
+      "ms": "mengetahui",
+      "ur": "جاننا",
+      "ru": "знать",
+      "sw": "kujua",
+      "ps": "پوهېدل"
+     }
+    },
+    {
+     "arabic": "عَمِلَ",
+     "translit": "ʿamila",
+     "meaning": {
+      "de": "tun, arbeiten",
+      "en": "to do, to work",
+      "tr": "yapmak, işlemek",
+      "ar": "عمل",
+      "es": "hacer, obrar",
+      "fr": "faire, œuvrer",
+      "id": "melakukan, bekerja",
+      "bn": "করা, কাজ করা",
+      "fa": "انجام‌دادن، کار کردن",
+      "ms": "melakukan, bekerja",
+      "ur": "کرنا، کام کرنا",
+      "ru": "делать, работать",
+      "sw": "kufanya, kufanya kazi",
+      "ps": "کول، کار کول"
+     }
+    },
+    {
+     "arabic": "آمَنَ",
+     "translit": "ʾāmana",
+     "meaning": {
+      "de": "glauben",
+      "en": "to believe",
+      "tr": "iman etmek, inanmak",
+      "ar": "آمن",
+      "es": "creer",
+      "fr": "croire",
+      "id": "beriman",
+      "bn": "ঈমান আনা",
+      "fa": "ایمان آوردن",
+      "ms": "beriman",
+      "ur": "ایمان لانا",
+      "ru": "верить",
+      "sw": "kuamini",
+      "ps": "ایمان راوړل"
+     }
+    },
+    {
+     "arabic": "كَفَرَ",
+     "translit": "kafara",
+     "meaning": {
+      "de": "nicht glauben",
+      "en": "to disbelieve",
+      "tr": "inkâr etmek",
+      "ar": "كفر",
+      "es": "no creer, rechazar la fe",
+      "fr": "mécroire",
+      "id": "mengingkari",
+      "bn": "অবিশ্বাস করা",
+      "fa": "کفر ورزیدن",
+      "ms": "mengingkari",
+      "ur": "انکار کرنا",
+      "ru": "не верить",
+      "sw": "kutokuamini",
+      "ps": "کفر کول"
+     }
+    },
+    {
+     "arabic": "عَبَدَ",
+     "translit": "ʿabada",
+     "meaning": {
+      "de": "anbeten",
+      "en": "to worship",
+      "tr": "ibadet etmek",
+      "ar": "عبد",
+      "es": "adorar",
+      "fr": "adorer",
+      "id": "menyembah",
+      "bn": "ইবাদত করা",
+      "fa": "پرستیدن",
+      "ms": "menyembah",
+      "ur": "عبادت کرنا",
+      "ru": "поклоняться",
+      "sw": "kuabudu",
+      "ps": "عبادت کول"
+     }
+    },
+    {
+     "arabic": "خَلَقَ",
+     "translit": "khalaqa",
+     "meaning": {
+      "de": "erschaffen",
+      "en": "to create",
+      "tr": "yaratmak",
+      "ar": "خلق",
+      "es": "crear",
+      "fr": "créer",
+      "id": "menciptakan",
+      "bn": "সৃষ্টি করা",
+      "fa": "آفریدن",
+      "ms": "mencipta",
+      "ur": "پیدا کرنا",
+      "ru": "творить",
+      "sw": "kuumba",
+      "ps": "پیدا کول"
+     }
+    },
+    {
+     "arabic": "رَزَقَ",
+     "translit": "razaqa",
+     "meaning": {
+      "de": "versorgen",
+      "en": "to provide",
+      "tr": "rızık vermek",
+      "ar": "رزق",
+      "es": "proveer sustento",
+      "fr": "pourvoir",
+      "id": "memberi rezeki",
+      "bn": "জীবিকা দেওয়া",
+      "fa": "روزی‌دادن",
+      "ms": "memberi rezeki",
+      "ur": "رزق دینا",
+      "ru": "наделять уделом",
+      "sw": "kuruzuku",
+      "ps": "روزي ورکول"
+     }
+    },
+    {
+     "arabic": "غَفَرَ",
+     "translit": "ghafara",
+     "meaning": {
+      "de": "vergeben",
+      "en": "to forgive",
+      "tr": "bağışlamak",
+      "ar": "غفر",
+      "es": "perdonar",
+      "fr": "pardonner",
+      "id": "mengampuni",
+      "bn": "ক্ষমা করা",
+      "fa": "بخشیدن",
+      "ms": "mengampuni",
+      "ur": "بخشنا",
+      "ru": "прощать",
+      "sw": "kusamehe",
+      "ps": "بښل"
+     }
+    },
+    {
+     "arabic": "رَحِمَ",
+     "translit": "raḥima",
+     "meaning": {
+      "de": "sich erbarmen",
+      "en": "to have mercy",
+      "tr": "merhamet etmek",
+      "ar": "رحم",
+      "es": "tener misericordia",
+      "fr": "faire miséricorde",
+      "id": "menyayangi",
+      "bn": "দয়া করা",
+      "fa": "رحم کردن",
+      "ms": "merahmati",
+      "ur": "رحم کرنا",
+      "ru": "миловать",
+      "sw": "kurehemu",
+      "ps": "رحم کول"
+     }
+    },
+    {
+     "arabic": "هَدَى",
+     "translit": "hadā",
+     "meaning": {
+      "de": "rechtleiten",
+      "en": "to guide",
+      "tr": "hidayet etmek, yol göstermek",
+      "ar": "هدى",
+      "es": "guiar",
+      "fr": "guider",
+      "id": "memberi petunjuk",
+      "bn": "পথ দেখানো",
+      "fa": "هدایت کردن",
+      "ms": "memberi petunjuk",
+      "ur": "ہدایت دینا",
+      "ru": "направлять",
+      "sw": "kuongoza",
+      "ps": "لار ښودل"
+     }
+    },
+    {
+     "arabic": "ذَكَرَ",
+     "translit": "dhakara",
+     "meaning": {
+      "de": "gedenken, erwähnen",
+      "en": "to remember, to mention",
+      "tr": "zikretmek, anmak",
+      "ar": "ذكر",
+      "es": "recordar, mencionar",
+      "fr": "se souvenir, mentionner",
+      "id": "mengingat, menyebut",
+      "bn": "স্মরণ করা, উল্লেখ করা",
+      "fa": "یادکردن، ذکرکردن",
+      "ms": "mengingati, menyebut",
+      "ur": "یاد کرنا، ذکر کرنا",
+      "ru": "поминать",
+      "sw": "kukumbuka, kutaja",
+      "ps": "یادول، ذکر کول"
+     }
+    },
+    {
+     "arabic": "شَكَرَ",
+     "translit": "shakara",
+     "meaning": {
+      "de": "danken",
+      "en": "to thank",
+      "tr": "şükretmek",
+      "ar": "شكر",
+      "es": "agradecer",
+      "fr": "remercier",
+      "id": "bersyukur",
+      "bn": "কৃতজ্ঞতা প্রকাশ করা",
+      "fa": "سپاسگزاری کردن",
+      "ms": "bersyukur",
+      "ur": "شکر کرنا",
+      "ru": "благодарить",
+      "sw": "kushukuru",
+      "ps": "شکر کول"
+     }
+    },
+    {
+     "arabic": "صَبَرَ",
+     "translit": "ṣabara",
+     "meaning": {
+      "de": "geduldig sein",
+      "en": "to be patient",
+      "tr": "sabretmek",
+      "ar": "صبر",
+      "es": "tener paciencia",
+      "fr": "patienter",
+      "id": "bersabar",
+      "bn": "ধৈর্য ধরা",
+      "fa": "صبر کردن",
+      "ms": "bersabar",
+      "ur": "صبر کرنا",
+      "ru": "терпеть",
+      "sw": "kuvumilia",
+      "ps": "صبر کول"
+     }
+    }
+   ]
+  },
+  {
+   "id": "vocab-9",
+   "words": [
+    {
+     "arabic": "سَمِعَ",
+     "translit": "samiʿa",
+     "meaning": {
+      "de": "hören",
+      "en": "to hear",
+      "tr": "işitmek",
+      "ar": "سمع",
+      "es": "oír",
+      "fr": "entendre",
+      "id": "mendengar",
+      "bn": "শোনা",
+      "fa": "شنیدن",
+      "ms": "mendengar",
+      "ur": "سننا",
+      "ru": "слышать",
+      "sw": "kusikia",
+      "ps": "اورېدل"
+     }
+    },
+    {
+     "arabic": "رَأَى",
+     "translit": "raʾā",
+     "meaning": {
+      "de": "sehen",
+      "en": "to see",
+      "tr": "görmek",
+      "ar": "رأى",
+      "es": "ver",
+      "fr": "voir",
+      "id": "melihat",
+      "bn": "দেখা",
+      "fa": "دیدن",
+      "ms": "melihat",
+      "ur": "دیکھنا",
+      "ru": "видеть",
+      "sw": "kuona",
+      "ps": "لیدل"
+     }
+    },
+    {
+     "arabic": "خَافَ",
+     "translit": "khāfa",
+     "meaning": {
+      "de": "fürchten",
+      "en": "to fear",
+      "tr": "korkmak",
+      "ar": "خاف",
+      "es": "temer",
+      "fr": "craindre",
+      "id": "takut",
+      "bn": "ভয় করা",
+      "fa": "ترسیدن",
+      "ms": "takut",
+      "ur": "ڈرنا",
+      "ru": "бояться",
+      "sw": "kuogopa",
+      "ps": "ویریدل"
+     }
+    },
+    {
+     "arabic": "أَحَبَّ",
+     "translit": "ʾaḥabba",
+     "meaning": {
+      "de": "lieben",
+      "en": "to love",
+      "tr": "sevmek",
+      "ar": "أحب",
+      "es": "amar",
+      "fr": "aimer",
+      "id": "mencintai",
+      "bn": "ভালোবাসা",
+      "fa": "دوست‌داشتن",
+      "ms": "mencintai",
+      "ur": "محبت کرنا",
+      "ru": "любить",
+      "sw": "kupenda",
+      "ps": "مینه کول"
+     }
+    },
+    {
+     "arabic": "دَعَا",
+     "translit": "daʿā",
+     "meaning": {
+      "de": "rufen, beten",
+      "en": "to call, to pray",
+      "tr": "dua etmek, çağırmak",
+      "ar": "دعا",
+      "es": "invocar, llamar",
+      "fr": "appeler, invoquer",
+      "id": "memanggil, berdoa",
+      "bn": "ডাকা, দোয়া করা",
+      "fa": "خواندن، دعاکردن",
+      "ms": "memanggil, berdoa",
+      "ur": "پکارنا، دعا کرنا",
+      "ru": "звать, молить",
+      "sw": "kuita, kuomba",
+      "ps": "بلل، دعا کول"
+     }
+    },
+    {
+     "arabic": "سَأَلَ",
+     "translit": "saʾala",
+     "meaning": {
+      "de": "fragen",
+      "en": "to ask",
+      "tr": "sormak",
+      "ar": "سأل",
+      "es": "preguntar",
+      "fr": "demander",
+      "id": "bertanya, meminta",
+      "bn": "জিজ্ঞাসা করা",
+      "fa": "پرسیدن، خواستن",
+      "ms": "bertanya, meminta",
+      "ur": "پوچھنا، مانگنا",
+      "ru": "спрашивать, просить",
+      "sw": "kuuliza",
+      "ps": "پوښتل"
+     }
+    },
+    {
+     "arabic": "قَرَأَ",
+     "translit": "qaraʾa",
+     "meaning": {
+      "de": "lesen, rezitieren",
+      "en": "to read, to recite",
+      "tr": "okumak",
+      "ar": "قرأ",
+      "es": "leer, recitar",
+      "fr": "lire, réciter",
+      "id": "membaca",
+      "bn": "পড়া",
+      "fa": "خواندن",
+      "ms": "membaca",
+      "ur": "پڑھنا",
+      "ru": "читать",
+      "sw": "kusoma",
+      "ps": "لوستل"
+     }
+    },
+    {
+     "arabic": "كَتَبَ",
+     "translit": "kataba",
+     "meaning": {
+      "de": "schreiben, vorschreiben",
+      "en": "to write, to prescribe",
+      "tr": "yazmak",
+      "ar": "كتب",
+      "es": "escribir, prescribir",
+      "fr": "écrire, prescrire",
+      "id": "menulis, mewajibkan",
+      "bn": "লেখা, নির্ধারণ করা",
+      "fa": "نوشتن، مقررکردن",
+      "ms": "menulis, mewajibkan",
+      "ur": "لکھنا، فرض کرنا",
+      "ru": "писать, предписывать",
+      "sw": "kuandika",
+      "ps": "لیکل"
+     }
+    },
+    {
+     "arabic": "أَكَلَ",
+     "translit": "ʾakala",
+     "meaning": {
+      "de": "essen",
+      "en": "to eat",
+      "tr": "yemek",
+      "ar": "أكل",
+      "es": "comer",
+      "fr": "manger",
+      "id": "makan",
+      "bn": "খাওয়া",
+      "fa": "خوردن",
+      "ms": "makan",
+      "ur": "کھانا",
+      "ru": "есть",
+      "sw": "kula",
+      "ps": "خوړل"
+     }
+    },
+    {
+     "arabic": "جَاءَ",
+     "translit": "jāʾa",
+     "meaning": {
+      "de": "kommen",
+      "en": "to come",
+      "tr": "gelmek",
+      "ar": "جاء",
+      "es": "venir",
+      "fr": "venir",
+      "id": "datang",
+      "bn": "আসা",
+      "fa": "آمدن",
+      "ms": "datang",
+      "ur": "آنا",
+      "ru": "приходить",
+      "sw": "kuja",
+      "ps": "راتلل"
+     }
+    },
+    {
+     "arabic": "ذَهَبَ",
+     "translit": "dhahaba",
+     "meaning": {
+      "de": "gehen",
+      "en": "to go",
+      "tr": "gitmek",
+      "ar": "ذهب",
+      "es": "ir, irse",
+      "fr": "aller",
+      "id": "pergi",
+      "bn": "যাওয়া",
+      "fa": "رفتن",
+      "ms": "pergi",
+      "ur": "جانا",
+      "ru": "идти",
+      "sw": "kwenda",
+      "ps": "تلل"
+     }
+    },
+    {
+     "arabic": "خَرَجَ",
+     "translit": "kharaja",
+     "meaning": {
+      "de": "hinausgehen",
+      "en": "to go out",
+      "tr": "çıkmak",
+      "ar": "خرج",
+      "es": "salir",
+      "fr": "sortir",
+      "id": "keluar",
+      "bn": "বের হওয়া",
+      "fa": "بیرون‌رفتن",
+      "ms": "keluar",
+      "ur": "نکلنا",
+      "ru": "выходить",
+      "sw": "kutoka",
+      "ps": "وتل"
+     }
+    },
+    {
+     "arabic": "دَخَلَ",
+     "translit": "dakhala",
+     "meaning": {
+      "de": "eintreten",
+      "en": "to enter",
+      "tr": "girmek",
+      "ar": "دخل",
+      "es": "entrar",
+      "fr": "entrer",
+      "id": "masuk",
+      "bn": "প্রবেশ করা",
+      "fa": "واردشدن",
+      "ms": "masuk",
+      "ur": "داخل ہونا",
+      "ru": "входить",
+      "sw": "kuingia",
+      "ps": "ننوتل"
+     }
+    },
+    {
+     "arabic": "وَجَدَ",
+     "translit": "wajada",
+     "meaning": {
+      "de": "finden",
+      "en": "to find",
+      "tr": "bulmak",
+      "ar": "وجد",
+      "es": "encontrar",
+      "fr": "trouver",
+      "id": "menemukan",
+      "bn": "পাওয়া",
+      "fa": "یافتن",
+      "ms": "menemui",
+      "ur": "پانا",
+      "ru": "находить",
+      "sw": "kupata",
+      "ps": "موندل"
+     }
+    },
+    {
+     "arabic": "أَرَادَ",
+     "translit": "ʾarāda",
+     "meaning": {
+      "de": "wollen, beabsichtigen",
+      "en": "to want, to intend",
+      "tr": "istemek",
+      "ar": "أراد",
+      "es": "querer, desear",
+      "fr": "vouloir",
+      "id": "menginginkan, bermaksud",
+      "bn": "চাওয়া, ইচ্ছা করা",
+      "fa": "خواستن، قصدکردن",
+      "ms": "mahu, berniat",
+      "ur": "چاہنا، ارادہ کرنا",
+      "ru": "хотеть, намереваться",
+      "sw": "kutaka, kunuia",
+      "ps": "غوښتل، اراده کول"
+     }
+    }
+   ]
+  },
+  {
+   "id": "vocab-10",
+   "words": [
+    {
+     "arabic": "كَبِير",
+     "translit": "kabīr",
+     "meaning": {
+      "de": "groß",
+      "en": "big, great",
+      "tr": "kebir, büyük",
+      "ar": "الكبير",
+      "es": "grande",
+      "fr": "grand",
+      "id": "besar",
+      "bn": "বড়",
+      "fa": "بزرگ",
+      "ms": "besar",
+      "ur": "بڑا",
+      "ru": "большой",
+      "sw": "kubwa",
+      "ps": "لوی"
+     }
+    },
+    {
+     "arabic": "قَلِيل",
+     "translit": "qalīl",
+     "meaning": {
+      "de": "wenig",
+      "en": "little, few",
+      "tr": "kalil, az",
+      "ar": "القليل",
+      "es": "poco",
+      "fr": "peu",
+      "id": "sedikit",
+      "bn": "অল্প",
+      "fa": "کم",
+      "ms": "sedikit",
+      "ur": "کم",
+      "ru": "малый",
+      "sw": "kidogo",
+      "ps": "لږ"
+     }
+    },
+    {
+     "arabic": "كَثِير",
+     "translit": "kathīr",
+     "meaning": {
+      "de": "viel",
+      "en": "much, many",
+      "tr": "kesir, çok",
+      "ar": "الكثير",
+      "es": "mucho",
+      "fr": "beaucoup",
+      "id": "banyak",
+      "bn": "অনেক",
+      "fa": "بسیار",
+      "ms": "banyak",
+      "ur": "زیادہ",
+      "ru": "многий",
+      "sw": "nyingi",
+      "ps": "ډېر"
+     }
+    },
+    {
+     "arabic": "قَرِيب",
+     "translit": "qarīb",
+     "meaning": {
+      "de": "nah",
+      "en": "near",
+      "tr": "karib, yakın",
+      "ar": "القريب",
+      "es": "cercano",
+      "fr": "proche",
+      "id": "dekat",
+      "bn": "নিকট",
+      "fa": "نزدیک",
+      "ms": "dekat",
+      "ur": "قریب",
+      "ru": "близкий",
+      "sw": "karibu",
+      "ps": "نږدې"
+     }
+    },
+    {
+     "arabic": "بَعِيد",
+     "translit": "baʿīd",
+     "meaning": {
+      "de": "fern",
+      "en": "far",
+      "tr": "baid, uzak",
+      "ar": "البعيد",
+      "es": "lejano",
+      "fr": "loin",
+      "id": "jauh",
+      "bn": "দূরে",
+      "fa": "دور",
+      "ms": "jauh",
+      "ur": "دور",
+      "ru": "далёкий",
+      "sw": "mbali",
+      "ps": "لرې"
+     }
+    },
+    {
+     "arabic": "شَدِيد",
+     "translit": "shadīd",
+     "meaning": {
+      "de": "heftig, stark",
+      "en": "severe, strong",
+      "tr": "şedid, şiddetli",
+      "ar": "الشديد",
+      "es": "severo, intenso",
+      "fr": "sévère, intense",
+      "id": "keras, kuat",
+      "bn": "কঠোর",
+      "fa": "سخت",
+      "ms": "keras, kuat",
+      "ur": "سخت",
+      "ru": "суровый",
+      "sw": "kali",
+      "ps": "سخت"
+     }
+    },
+    {
+     "arabic": "سَرِيع",
+     "translit": "sarīʿ",
+     "meaning": {
+      "de": "schnell",
+      "en": "swift, quick",
+      "tr": "seri, hızlı",
+      "ar": "السريع",
+      "es": "rápido",
+      "fr": "rapide",
+      "id": "cepat",
+      "bn": "দ্রুত",
+      "fa": "سریع",
+      "ms": "cepat",
+      "ur": "تیز",
+      "ru": "быстрый",
+      "sw": "haraka",
+      "ps": "ګړندی"
+     }
+    },
+    {
+     "arabic": "طَيِّب",
+     "translit": "ṭayyib",
+     "meaning": {
+      "de": "gut, rein",
+      "en": "good, pure",
+      "tr": "tayyib, temiz, hoş",
+      "ar": "الطيب",
+      "es": "bueno, puro",
+      "fr": "bon, pur",
+      "id": "baik, suci",
+      "bn": "পবিত্র",
+      "fa": "پاک، خوب",
+      "ms": "baik, suci",
+      "ur": "پاکیزہ، اچھا",
+      "ru": "благой, чистый",
+      "sw": "njema, safi",
+      "ps": "ښه، پاک"
+     }
+    },
+    {
+     "arabic": "أَمِين",
+     "translit": "ʾamīn",
+     "meaning": {
+      "de": "vertrauenswürdig",
+      "en": "trustworthy",
+      "tr": "emin, güvenilir",
+      "ar": "الأمين",
+      "es": "digno de confianza",
+      "fr": "digne de confiance",
+      "id": "tepercaya",
+      "bn": "বিশ্বস্ত",
+      "fa": "امین",
+      "ms": "dipercayai",
+      "ur": "امانت دار",
+      "ru": "надёжный",
+      "sw": "mwaminifu",
+      "ps": "امین"
+     }
+    },
+    {
+     "arabic": "حَفِيظ",
+     "translit": "ḥafīẓ",
+     "meaning": {
+      "de": "Beschützer",
+      "en": "protector",
+      "tr": "hafiz, koruyucu",
+      "ar": "الحفيظ",
+      "es": "protector",
+      "fr": "protecteur",
+      "id": "pelindung",
+      "bn": "রক্ষাকারী",
+      "fa": "نگهبان",
+      "ms": "pelindung",
+      "ur": "نگہبان",
+      "ru": "защитник",
+      "sw": "mlinzi",
+      "ps": "ساتونکی"
+     }
+    },
+    {
+     "arabic": "لَطِيف",
+     "translit": "laṭīf",
+     "meaning": {
+      "de": "feinfühlig, gütig",
+      "en": "subtle, gentle",
+      "tr": "latif, lütufkâr",
+      "ar": "اللطيف",
+      "es": "sutil, bondadoso",
+      "fr": "subtil, bienveillant",
+      "id": "lembut",
+      "bn": "সূক্ষ্মদর্শী",
+      "fa": "لطیف",
+      "ms": "lembut",
+      "ur": "باریک بین، مہربان",
+      "ru": "тонкий, милостивый",
+      "sw": "mpole",
+      "ps": "نرم"
+     }
+    },
+    {
+     "arabic": "خَبِير",
+     "translit": "khabīr",
+     "meaning": {
+      "de": "Allkundiger",
+      "en": "all-aware",
+      "tr": "habir, her şeyden haberdar",
+      "ar": "الخبير",
+      "es": "perfectamente informado",
+      "fr": "parfaitement informé",
+      "id": "Maha Mengetahui",
+      "bn": "সর্ববিষয়ে অবহিত",
+      "fa": "آگاه",
+      "ms": "Maha Mengetahui",
+      "ur": "باخبر",
+      "ru": "всеведущий",
+      "sw": "mjuzi wa yote",
+      "ps": "خبردار"
+     }
+    },
+    {
+     "arabic": "أَعْلَى",
+     "translit": "ʾaʿlā",
+     "meaning": {
+      "de": "höchste",
+      "en": "highest",
+      "tr": "a'la, en yüce",
+      "ar": "الأعلى",
+      "es": "altísimo",
+      "fr": "le plus haut",
+      "id": "tertinggi",
+      "bn": "সর্বোচ্চ",
+      "fa": "بالاترین",
+      "ms": "tertinggi",
+      "ur": "سب سے بلند",
+      "ru": "высочайший",
+      "sw": "aliye juu zaidi",
+      "ps": "ترټولو لوړ"
+     }
+    },
+    {
+     "arabic": "أَكْبَر",
+     "translit": "ʾakbar",
+     "meaning": {
+      "de": "größte",
+      "en": "greatest",
+      "tr": "ekber, en büyük",
+      "ar": "الأكبر",
+      "es": "el más grande",
+      "fr": "le plus grand",
+      "id": "terbesar",
+      "bn": "সর্বশ্রেষ্ঠ",
+      "fa": "بزرگ‌ترین",
+      "ms": "terbesar",
+      "ur": "سب سے بڑا",
+      "ru": "величайший",
+      "sw": "mkuu zaidi",
+      "ps": "ترټولو لوی"
+     }
+    },
+    {
+     "arabic": "عَلِيّ",
+     "translit": "ʿaliyy",
+     "meaning": {
+      "de": "der Erhabene, Höchste",
+      "en": "most high, exalted",
+      "tr": "aliyy, yüce",
+      "ar": "العلي",
+      "es": "excelso, altísimo",
+      "fr": "très-haut",
+      "id": "Yang Mahatinggi",
+      "bn": "সর্বোচ্চ, মহিমান্বিত",
+      "fa": "والامرتبه",
+      "ms": "Yang Maha Tinggi",
+      "ur": "بلند و بالا",
+      "ru": "высочайший",
+      "sw": "aliyetukuka",
+      "ps": "لوړ مرتبې"
+     }
+    }
+   ]
+  },
+  {
+   "id": "vocab-11",
+   "words": [
+    {
+     "arabic": "إِلَى",
+     "translit": "ʾilā",
+     "meaning": {
+      "de": "zu, nach",
+      "en": "to, towards",
+      "tr": "-e, -a, doğru",
+      "ar": "إلى",
+      "es": "hacia",
+      "fr": "vers",
+      "id": "ke, kepada",
+      "bn": "দিকে",
+      "fa": "به، سوی",
+      "ms": "ke, kepada",
+      "ur": "کی طرف",
+      "ru": "к",
+      "sw": "kwenda",
+      "ps": "ته"
+     }
+    },
+    {
+     "arabic": "عَلَى",
+     "translit": "ʿalā",
+     "meaning": {
+      "de": "auf",
+      "en": "on, upon",
+      "tr": "üzerine",
+      "ar": "على",
+      "es": "sobre",
+      "fr": "sur",
+      "id": "atas",
+      "bn": "উপর",
+      "fa": "بر",
+      "ms": "atas",
+      "ur": "پر",
+      "ru": "на",
+      "sw": "juu ya",
+      "ps": "پر"
+     }
+    },
+    {
+     "arabic": "فِي",
+     "translit": "fī",
+     "meaning": {
+      "de": "in",
+      "en": "in",
+      "tr": "içinde, -de",
+      "ar": "في",
+      "es": "en",
+      "fr": "dans",
+      "id": "di, dalam",
+      "bn": "মধ্যে",
+      "fa": "در",
+      "ms": "di, dalam",
+      "ur": "میں",
+      "ru": "в",
+      "sw": "katika",
+      "ps": "په ... کې"
+     }
+    },
+    {
+     "arabic": "بَيْنَ",
+     "translit": "bayna",
+     "meaning": {
+      "de": "zwischen",
+      "en": "between",
+      "tr": "arasında",
+      "ar": "بين",
+      "es": "entre",
+      "fr": "entre",
+      "id": "antara",
+      "bn": "মাঝে",
+      "fa": "بین",
+      "ms": "antara",
+      "ur": "درمیان",
+      "ru": "между",
+      "sw": "baina ya",
+      "ps": "ترمنځ"
+     }
+    },
+    {
+     "arabic": "بَعْدَ",
+     "translit": "baʿda",
+     "meaning": {
+      "de": "nach",
+      "en": "after",
+      "tr": "sonra",
+      "ar": "بعد",
+      "es": "después de",
+      "fr": "après",
+      "id": "setelah",
+      "bn": "পরে",
+      "fa": "بعد از",
+      "ms": "selepas",
+      "ur": "بعد",
+      "ru": "после",
+      "sw": "baada ya",
+      "ps": "وروسته"
+     }
+    },
+    {
+     "arabic": "قَبْلَ",
+     "translit": "qabla",
+     "meaning": {
+      "de": "vor",
+      "en": "before",
+      "tr": "önce",
+      "ar": "قبل",
+      "es": "antes de",
+      "fr": "avant",
+      "id": "sebelum",
+      "bn": "আগে",
+      "fa": "پیش از",
+      "ms": "sebelum",
+      "ur": "پہلے",
+      "ru": "до, перед",
+      "sw": "kabla ya",
+      "ps": "مخکې"
+     }
+    },
+    {
+     "arabic": "عِنْدَ",
+     "translit": "ʿinda",
+     "meaning": {
+      "de": "bei",
+      "en": "with, near",
+      "tr": "yanında, katında",
+      "ar": "عند",
+      "es": "junto a, ante",
+      "fr": "auprès de",
+      "id": "di sisi",
+      "bn": "কাছে",
+      "fa": "نزد",
+      "ms": "di sisi",
+      "ur": "کے پاس",
+      "ru": "у",
+      "sw": "kwa",
+      "ps": "سره"
+     }
+    },
+    {
+     "arabic": "كُلّ",
+     "translit": "kull",
+     "meaning": {
+      "de": "jeder, alle",
+      "en": "every, all",
+      "tr": "her, bütün",
+      "ar": "كل",
+      "es": "todo, cada",
+      "fr": "tout, chaque",
+      "id": "setiap, semua",
+      "bn": "সমস্ত, প্রত্যেক",
+      "fa": "هر، همه",
+      "ms": "setiap, semua",
+      "ur": "ہر، سب",
+      "ru": "каждый, весь",
+      "sw": "kila, yote",
+      "ps": "هر، ټول"
+     }
+    },
+    {
+     "arabic": "بَعْض",
+     "translit": "baʿḍ",
+     "meaning": {
+      "de": "manche",
+      "en": "some",
+      "tr": "bazı",
+      "ar": "بعض",
+      "es": "algunos",
+      "fr": "certains",
+      "id": "sebagian",
+      "bn": "কিছু",
+      "fa": "برخی",
+      "ms": "sebahagian",
+      "ur": "بعض، کچھ",
+      "ru": "некоторые",
+      "sw": "baadhi",
+      "ps": "ځینې"
+     }
+    },
+    {
+     "arabic": "غَيْر",
+     "translit": "ghayr",
+     "meaning": {
+      "de": "anders als, nicht",
+      "en": "other than, not",
+      "tr": "gayrı, başka",
+      "ar": "غير",
+      "es": "distinto de",
+      "fr": "autre que",
+      "id": "selain, bukan",
+      "bn": "ব্যতীত",
+      "fa": "غیر از",
+      "ms": "selain, bukan",
+      "ur": "کے سوا، نہیں",
+      "ru": "кроме, не",
+      "sw": "isipokuwa",
+      "ps": "پرته له"
+     }
+    },
+    {
+     "arabic": "إِلَّا",
+     "translit": "ʾillā",
+     "meaning": {
+      "de": "außer",
+      "en": "except",
+      "tr": "ancak, -den başka",
+      "ar": "إلا",
+      "es": "excepto",
+      "fr": "sauf",
+      "id": "kecuali",
+      "bn": "ব্যতীত",
+      "fa": "مگر",
+      "ms": "kecuali",
+      "ur": "سوائے",
+      "ru": "кроме",
+      "sw": "isipokuwa",
+      "ps": "پرته"
+     }
+    },
+    {
+     "arabic": "الَّذِي",
+     "translit": "alladhī",
+     "meaning": {
+      "de": "der (welcher)",
+      "en": "who, which (m.)",
+      "tr": "o ki",
+      "ar": "الذي",
+      "es": "el que",
+      "fr": "celui qui",
+      "id": "yang",
+      "bn": "যে",
+      "fa": "که، آنکه",
+      "ms": "yang",
+      "ur": "جو",
+      "ru": "который",
+      "sw": "ambaye",
+      "ps": "چې"
+     }
+    },
+    {
+     "arabic": "هَذَا",
+     "translit": "hādhā",
+     "meaning": {
+      "de": "dieser",
+      "en": "this (m.)",
+      "tr": "bu",
+      "ar": "هذا",
+      "es": "este",
+      "fr": "celui-ci",
+      "id": "ini",
+      "bn": "এই",
+      "fa": "این",
+      "ms": "ini",
+      "ur": "یہ",
+      "ru": "этот",
+      "sw": "hii",
+      "ps": "دا"
+     }
+    },
+    {
+     "arabic": "ذَلِكَ",
+     "translit": "dhālika",
+     "meaning": {
+      "de": "jener",
+      "en": "that (m.)",
+      "tr": "o",
+      "ar": "ذلك",
+      "es": "ese, aquel",
+      "fr": "celui-là",
+      "id": "itu",
+      "bn": "সেই",
+      "fa": "آن",
+      "ms": "itu",
+      "ur": "وہ",
+      "ru": "тот",
+      "sw": "hicho",
+      "ps": "هغه"
+     }
+    },
+    {
+     "arabic": "كَيْفَ",
+     "translit": "kayfa",
+     "meaning": {
+      "de": "wie?",
+      "en": "how?",
+      "tr": "nasıl?",
+      "ar": "كيف",
+      "es": "¿cómo?",
+      "fr": "comment",
+      "id": "bagaimana?",
+      "bn": "কেমন?",
+      "fa": "چگونه؟",
+      "ms": "bagaimana?",
+      "ur": "کیسے؟",
+      "ru": "как?",
+      "sw": "vipi?",
+      "ps": "څنګه؟"
+     }
+    }
+   ]
+  }
+ ]
+}

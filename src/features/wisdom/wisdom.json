@@ -1,0 +1,535 @@
+{
+  "note": "Eigene kuratierte Sammlung im Geist von Dunya-Erinnerungsbüchern - ausschließlich belegte Quellen (Koran, Hadith mit Nummer, klassischen Gelehrten zugeschrieben). Kein 1:1-Inhalt aus urheberrechtlich geschützten Büchern.",
+  "entries": [
+    {
+      "id": "hearts-rest",
+      "arabic": "أَلَا بِذِكْرِ اللَّهِ تَطْمَئِنُّ الْقُلُوبُ",
+      "text": {
+        "de": "Wahrlich, im Gedenken Allahs finden die Herzen Ruhe.",
+        "en": "Verily, in the remembrance of Allah do hearts find rest.",
+        "tr": "Bilesiniz ki kalpler ancak Allah'ı anmakla huzur bulur.",
+        "ar": "ألا بذكر الله تطمئن القلوب.",
+        "es": "En verdad, en el recuerdo de Allah encuentran los corazones sosiego.",
+        "fr": "En vérité, c'est par le rappel d'Allah que les cœurs trouvent l'apaisement.",
+        "id": "Ketahuilah, hanya dengan mengingat Allah hati menjadi tenteram.",
+        "bn": "জেনে রেখো, আল্লাহর স্মরণেই অন্তর প্রশান্ত হয়।",
+        "fa": "آگاه باشید که تنها با یاد خدا دل‌ها آرام می‌گیرد.",
+        "ms": "Ketahuilah, hanya dengan mengingati Allah hati menjadi tenang.",
+        "ur": "خبردار! اللہ کے ذکر ہی سے دلوں کو اطمینان ملتا ہے۔",
+        "ru": "Воистину, сердца находят покой в поминании Аллаха.",
+        "sw": "Fahamu! Kwa kumkumbuka Allah nyoyo hutulia.",
+        "ps": "پوه شئ چې يوازې د الله په ياد زړونه ارام مومي."
+      },
+      "source": "Quran 13:28"
+    },
+    {
+      "id": "ease-with-hardship",
+      "arabic": "إِنَّ مَعَ الْعُسْرِ يُسْرًا",
+      "text": {
+        "de": "Wahrlich, mit der Erschwernis kommt Erleichterung.",
+        "en": "Indeed, with hardship comes ease.",
+        "tr": "Şüphesiz zorlukla beraber bir kolaylık vardır.",
+        "ar": "إن مع العسر يسرًا.",
+        "es": "En verdad, con la dificultad viene el alivio.",
+        "fr": "En vérité, à côté de l'épreuve vient l'aisance.",
+        "id": "Sesungguhnya bersama kesulitan ada kemudahan.",
+        "bn": "নিশ্চয়ই কষ্টের সঙ্গেই রয়েছে স্বস্তি।",
+        "fa": "به‌راستی با هر سختی آسانی است.",
+        "ms": "Sesungguhnya bersama kesukaran ada kemudahan.",
+        "ur": "بے شک تنگی کے ساتھ آسانی ہے۔",
+        "ru": "Воистину, вместе с тягостью приходит облегчение.",
+        "sw": "Hakika pamoja na uzito upo wepesi.",
+        "ps": "بېشکه له سختۍ سره اسانتيا ده."
+      },
+      "source": "Quran 94:6"
+    },
+    {
+      "id": "no-burden",
+      "arabic": "لَا يُكَلِّفُ اللَّهُ نَفْسًا إِلَّا وُسْعَهَا",
+      "text": {
+        "de": "Allah erlegt keiner Seele mehr auf, als sie tragen kann.",
+        "en": "Allah does not burden a soul with more than it can bear.",
+        "tr": "Allah hiç kimseye gücünün yeteceğinden fazlasını yüklemez.",
+        "ar": "لا يكلف الله نفسًا إلا وسعها.",
+        "es": "Allah no impone a un alma más de lo que puede soportar.",
+        "fr": "Allah n'impose à une âme que ce qu'elle peut supporter.",
+        "id": "Allah tidak membebani seseorang melainkan sesuai dengan kesanggupannya.",
+        "bn": "আল্লাহ কোনো প্রাণকে তার সাধ্যের অতিরিক্ত দায়িত্ব দেন না।",
+        "fa": "خداوند هیچ‌کس را جز به اندازهٔ توانش تکلیف نمی‌کند.",
+        "ms": "Allah tidak membebani seseorang melainkan mengikut kesanggupannya.",
+        "ur": "اللہ کسی جان پر اس کی طاقت سے زیادہ بوجھ نہیں ڈالتا۔",
+        "ru": "Аллах не возлагает на душу сверх того, что она может вынести.",
+        "sw": "Allah hamkalifishi mtu ila kwa kadiri ya uwezo wake.",
+        "ps": "الله هیڅ نفس ته د هغه له وسې زیات تکلیف نه ورکوي."
+      },
+      "source": "Quran 2:286"
+    },
+    {
+      "id": "despair-not",
+      "arabic": "لَا تَقْنَطُوا مِن رَّحْمَةِ اللَّهِ",
+      "text": {
+        "de": "Verzweifelt nicht an der Barmherzigkeit Allahs - Er vergibt alle Sünden.",
+        "en": "Do not despair of the mercy of Allah - He forgives all sins.",
+        "tr": "Allah'ın rahmetinden ümit kesmeyin - O bütün günahları bağışlar.",
+        "ar": "لا تقنطوا من رحمة الله - إنه يغفر الذنوب جميعًا.",
+        "es": "No desesperéis de la misericordia de Allah - Él perdona todos los pecados.",
+        "fr": "Ne désespérez pas de la miséricorde d'Allah - Il pardonne tous les péchés.",
+        "id": "Janganlah berputus asa dari rahmat Allah - Dia mengampuni segala dosa.",
+        "bn": "আল্লাহর রহমত থেকে নিরাশ হয়ো না - তিনি সব গুনাহ ক্ষমা করেন।",
+        "fa": "از رحمت خدا نومید نشوید - او همهٔ گناهان را می‌آمرزد.",
+        "ms": "Janganlah berputus asa daripada rahmat Allah - Dia mengampunkan segala dosa.",
+        "ur": "اللہ کی رحمت سے مایوس نہ ہو - وہ تمام گناہ بخش دیتا ہے۔",
+        "ru": "Не отчаивайтесь в милости Аллаха - Он прощает все грехи.",
+        "sw": "Msikate tamaa na rehema ya Allah - Yeye husamehe dhambi zote.",
+        "ps": "د الله له رحمته مه نهيلي کېږئ - هغه ټول ګناهونه بښي."
+      },
+      "source": "Quran 39:53"
+    },
+    {
+      "id": "maybe-you-hate",
+      "arabic": "وَعَسَىٰ أَن تَكْرَهُوا شَيْئًا وَهُوَ خَيْرٌ لَّكُمْ",
+      "text": {
+        "de": "Vielleicht ist euch etwas zuwider, obwohl es gut für euch ist - und vielleicht liebt ihr etwas, obwohl es schlecht für euch ist. Allah weiß, ihr aber wisst nicht.",
+        "en": "Perhaps you dislike a thing that is good for you, and love a thing that is bad for you. Allah knows, and you do not know.",
+        "tr": "Hoşlanmadığınız bir şey sizin için hayırlı, sevdiğiniz bir şey de sizin için şer olabilir. Allah bilir, siz bilmezsiniz.",
+        "ar": "وعسى أن تكرهوا شيئًا وهو خير لكم وعسى أن تحبوا شيئًا وهو شر لكم - والله يعلم وأنتم لا تعلمون.",
+        "es": "Quizá os desagrade algo que en realidad es bueno para vosotros, y quizá améis algo que en realidad es malo para vosotros. Allah sabe, y vosotros no sabéis.",
+        "fr": "Il se peut que vous détestiez une chose alors qu'elle est un bien pour vous, et que vous aimiez une chose alors qu'elle est un mal pour vous. Allah sait, et vous ne savez pas.",
+        "id": "Boleh jadi kamu membenci sesuatu padahal itu baik bagimu, dan boleh jadi kamu menyukai sesuatu padahal itu buruk bagimu. Allah mengetahui, sedangkan kamu tidak mengetahui.",
+        "bn": "হতে পারে তোমরা এমন কিছু অপছন্দ করো যা তোমাদের জন্য ভালো, আর এমন কিছু পছন্দ করো যা তোমাদের জন্য মন্দ। আল্লাহ জানেন, তোমরা জানো না।",
+        "fa": "چه بسا چیزی را ناخوش دارید و آن برای شما خوب است، و چه بسا چیزی را دوست دارید و آن برای شما بد است. خدا می‌داند و شما نمی‌دانید.",
+        "ms": "Boleh jadi kamu membenci sesuatu padahal ia baik bagimu, dan boleh jadi kamu menyukai sesuatu padahal ia buruk bagimu. Allah mengetahui, sedangkan kamu tidak mengetahui.",
+        "ur": "ہو سکتا ہے کہ تم کسی چیز کو ناپسند کرو اور وہ تمہارے لیے بہتر ہو، اور ہو سکتا ہے کہ تم کسی چیز کو پسند کرو اور وہ تمہارے لیے بری ہو۔ اللہ جانتا ہے اور تم نہیں جانتے۔",
+        "ru": "Быть может, вам неприятно то, что хорошо для вас, и любо то, что дурно для вас. Аллах знает, а вы не знаете.",
+        "sw": "Huenda mkachukia jambo nalo ni kheri kwenu, na huenda mkapenda jambo nalo ni shari kwenu. Allah anajua, nanyi hamjui.",
+        "ps": "کېدای شي تاسو یو څه بد ګڼئ خو هغه ستاسو لپاره ښه وي، او کېدای شي یو څه خوښوئ خو هغه ستاسو لپاره بد وي. الله پوهېږي او تاسو نه پوهېږئ."
+      },
+      "source": "Quran 2:216"
+    },
+    {
+      "id": "tawakkul",
+      "arabic": "وَمَن يَتَوَكَّلْ عَلَى اللَّهِ فَهُوَ حَسْبُهُ",
+      "text": {
+        "de": "Wer auf Allah vertraut, dem genügt Er.",
+        "en": "Whoever puts their trust in Allah - He is sufficient for them.",
+        "tr": "Kim Allah'a tevekkül ederse, O ona yeter.",
+        "ar": "ومن يتوكل على الله فهو حسبه.",
+        "es": "Quien confía en Allah, Él le basta.",
+        "fr": "Quiconque place sa confiance en Allah, Il lui suffit.",
+        "id": "Barangsiapa bertawakal kepada Allah, niscaya Allah mencukupkan keperluannya.",
+        "bn": "যে আল্লাহর ওপর ভরসা করে, আল্লাহই তার জন্য যথেষ্ট।",
+        "fa": "هر که بر خدا توکل کند، خدا او را بس است.",
+        "ms": "Sesiapa yang bertawakal kepada Allah, nescaya Allah mencukupkan keperluannya.",
+        "ur": "جو اللہ پر بھروسا کرے، اللہ اسے کافی ہے۔",
+        "ru": "Кто уповает на Аллаха, тому Его довольно.",
+        "sw": "Anayemtegemea Allah, Yeye humtosha.",
+        "ps": "څوک چې پر الله توکل وکړي، الله ورته بس دی."
+      },
+      "source": "Quran 65:3"
+    },
+    {
+      "id": "remember-me",
+      "arabic": "فَاذْكُرُونِي أَذْكُرْكُمْ",
+      "text": {
+        "de": "Gedenkt Meiner, so gedenke Ich euer.",
+        "en": "Remember Me, and I will remember you.",
+        "tr": "Beni anın ki ben de sizi anayım.",
+        "ar": "فاذكروني أذكركم.",
+        "es": "Recordadme, y Yo os recordaré.",
+        "fr": "Souvenez-vous de Moi, et Je me souviendrai de vous.",
+        "id": "Ingatlah kepada-Ku, niscaya Aku ingat kepadamu.",
+        "bn": "তোমরা আমাকে স্মরণ করো, আমিও তোমাদের স্মরণ করব।",
+        "fa": "مرا یاد کنید تا شما را یاد کنم.",
+        "ms": "Ingatlah kepada-Ku, nescaya Aku ingat kepadamu.",
+        "ur": "تم مجھے یاد کرو، میں تمہیں یاد کروں گا۔",
+        "ru": "Поминайте Меня, и Я буду помнить о вас.",
+        "sw": "Nikumbukeni, nami nitawakumbuka.",
+        "ps": "ما یاد کړئ، زه به تاسو یاد کړم."
+      },
+      "source": "Quran 2:152"
+    },
+    {
+      "id": "grieve-not",
+      "arabic": "وَلَا تَهِنُوا وَلَا تَحْزَنُوا",
+      "text": {
+        "de": "Werdet nicht schwach und trauert nicht - ihr werdet die Oberhand behalten, wenn ihr gläubig seid.",
+        "en": "Do not weaken and do not grieve - you will be superior if you are believers.",
+        "tr": "Gevşemeyin, üzülmeyin - eğer inanıyorsanız üstün olan sizsiniz.",
+        "ar": "ولا تهنوا ولا تحزنوا وأنتم الأعلون إن كنتم مؤمنين.",
+        "es": "No os debilitéis ni os entristezcáis - seréis los vencedores, si sois creyentes.",
+        "fr": "Ne faiblissez pas et ne vous attristez pas - vous aurez le dessus, si vous êtes croyants.",
+        "id": "Janganlah kamu bersikap lemah dan jangan pula bersedih hati - kamulah yang paling tinggi jika kamu orang-orang beriman.",
+        "bn": "তোমরা দুর্বল হয়ো না এবং দুঃখ করো না - তোমরাই বিজয়ী হবে যদি তোমরা মুমিন হও।",
+        "fa": "سست نشوید و اندوهگین نگردید - اگر مؤمن باشید، شما برترید.",
+        "ms": "Janganlah kamu bersikap lemah dan jangan pula berdukacita - kamulah yang paling tinggi jika kamu orang beriman.",
+        "ur": "نہ کمزور پڑو اور نہ غم کرو - اگر تم مومن ہو تو تم ہی غالب رہو گے۔",
+        "ru": "Не слабейте и не печальтесь - вы будете выше, если вы верующие.",
+        "sw": "Msilegee wala msihuzunike - nyinyi ndio wa juu ikiwa ni waumini.",
+        "ps": "مه کمزوري کېږئ او مه خپه کېږئ - که مؤمنان یاست، تاسو به برلاسي یاست."
+      },
+      "source": "Quran 3:139"
+    },
+    {
+      "id": "with-allah-near",
+      "arabic": "وَإِذَا سَأَلَكَ عِبَادِي عَنِّي فَإِنِّي قَرِيبٌ",
+      "text": {
+        "de": "Und wenn dich Meine Diener nach Mir fragen: Ich bin nah. Ich erhöre den Ruf des Rufenden, wenn er Mich ruft.",
+        "en": "When My servants ask you about Me - I am near. I answer the call of the caller when he calls upon Me.",
+        "tr": "Kullarım sana beni sorduklarında: Ben yakınım. Bana dua edenin duasına karşılık veririm.",
+        "ar": "وإذا سألك عبادي عني فإني قريب، أجيب دعوة الداع إذا دعان.",
+        "es": "Y cuando Mis siervos te pregunten por Mí: Yo estoy cerca. Respondo la súplica del que suplica cuando Me invoca.",
+        "fr": "Et lorsque Mes serviteurs t'interrogent à Mon sujet : Je suis proche. Je réponds à l'appel de celui qui M'invoque quand il M'appelle.",
+        "id": "Dan apabila hamba-hamba-Ku bertanya kepadamu tentang Aku - sesungguhnya Aku dekat. Aku mengabulkan permohonan orang yang berdoa apabila ia berdoa kepada-Ku.",
+        "bn": "আর যখন আমার বান্দারা তোমাকে আমার সম্পর্কে জিজ্ঞাসা করে - নিশ্চয়ই আমি নিকটেই। আমি আহ্বানকারীর ডাকে সাড়া দিই যখন সে আমাকে ডাকে।",
+        "fa": "و چون بندگانم دربارهٔ من از تو بپرسند، من نزدیکم. دعای دعاکننده را هنگامی که مرا بخواند اجابت می‌کنم.",
+        "ms": "Dan apabila hamba-hamba-Ku bertanya kepadamu tentang Aku - sesungguhnya Aku dekat. Aku memperkenankan permohonan orang yang berdoa apabila dia berdoa kepada-Ku.",
+        "ur": "اور جب میرے بندے تم سے میرے بارے میں پوچھیں - تو میں قریب ہوں۔ میں پکارنے والے کی پکار کا جواب دیتا ہوں جب وہ مجھے پکارے۔",
+        "ru": "Когда Мои рабы спрашивают тебя обо Мне - Я близок. Я отвечаю на зов зовущего, когда он взывает ко Мне.",
+        "sw": "Na waja wangu wakikuuliza khabari zangu - Mimi ni karibu. Naitikia wito wa mwombaji anaponiomba.",
+        "ps": "او کله چې زما بندګان له تا نه زما په اړه وپوښتي - زه نږدې یم. د بلونکي بلنې ته ځواب ورکوم کله چې ما وبلي."
+      },
+      "source": "Quran 2:186"
+    },
+    {
+      "id": "believer-affair",
+      "text": {
+        "de": "Erstaunlich ist die Angelegenheit des Gläubigen: Alles ist gut für ihn. Trifft ihn Freude, dankt er - das ist gut für ihn. Trifft ihn Leid, ist er standhaft - auch das ist gut für ihn.",
+        "en": "Amazing is the affair of the believer: everything is good for him. If joy reaches him, he is grateful - and that is good for him. If harm reaches him, he is patient - and that too is good for him.",
+        "tr": "Müminin işi ne hayret vericidir: Her hâli onun için hayırlıdır. Sevinirse şükreder, bu onun için hayırdır. Sıkıntıya düşerse sabreder, bu da onun için hayırdır.",
+        "ar": "عجبًا لأمر المؤمن، إن أمره كله خير: إن أصابته سراء شكر فكان خيرًا له، وإن أصابته ضراء صبر فكان خيرًا له.",
+        "es": "Es asombroso el caso del creyente: todo es bueno para él. Si le llega una alegría, agradece - y eso es bueno para él. Si le llega una desgracia, es paciente - y eso también es bueno para él.",
+        "fr": "Étonnante est l'affaire du croyant : tout est un bien pour lui. Si une joie l'atteint, il est reconnaissant - et c'est un bien pour lui. Si un malheur l'atteint, il est patient - et c'est aussi un bien pour lui.",
+        "id": "Sungguh menakjubkan urusan seorang mukmin: segala urusannya adalah kebaikan. Jika ia mendapat kegembiraan, ia bersyukur - dan itu baik baginya. Jika ia ditimpa kesusahan, ia bersabar - dan itu pun baik baginya.",
+        "bn": "মুমিনের ব্যাপারটি বিস্ময়কর: তার সবকিছুই তার জন্য কল্যাণকর। আনন্দ পেলে সে শোকর করে - এটি তার জন্য ভালো। কষ্ট পেলে সে ধৈর্য ধরে - এটিও তার জন্য ভালো।",
+        "fa": "شگفت‌انگیز است کار مؤمن: همه چیز برای او خیر است. اگر شادی به او رسد سپاس می‌گزارد - و این برایش خیر است. و اگر گزندی به او رسد شکیبایی می‌ورزد - و این نیز برایش خیر است.",
+        "ms": "Sungguh menakjubkan urusan seorang mukmin: segala urusannya adalah kebaikan. Jika dia mendapat kegembiraan, dia bersyukur - dan itu baik baginya. Jika dia ditimpa kesusahan, dia bersabar - dan itu pun baik baginya.",
+        "ur": "مومن کا معاملہ عجیب ہے: اس کے لیے ہر بات میں خیر ہے۔ خوشی پہنچے تو شکر کرتا ہے - یہ اس کے لیے بہتر ہے۔ تکلیف پہنچے تو صبر کرتا ہے - یہ بھی اس کے لیے بہتر ہے۔",
+        "ru": "Удивительно положение верующего: всё для него благо. Если его постигает радость - он благодарит, и это благо для него. Если его постигает беда - он терпит, и это тоже благо для него.",
+        "sw": "Ni jambo la ajabu la muumini: kila jambo lake ni kheri. Akipata furaha hushukuru - na hilo ni kheri kwake. Akipata dhara husubiri - na hilo pia ni kheri kwake.",
+        "ps": "د مؤمن چاره حیرانوونکې ده: هر څه ورته خیر دي. که خوښي ورته ورسي شکر باسي - دا ورته خیر دی. که زیان ورته ورسي صبر کوي - دا هم ورته خیر دی."
+      },
+      "source": "Sahih Muslim 2999"
+    },
+    {
+      "id": "stranger",
+      "text": {
+        "de": "Sei in dieser Welt, als wärst du ein Fremder oder ein Reisender.",
+        "en": "Be in this world as if you were a stranger or a traveller.",
+        "tr": "Dünyada bir garip yahut bir yolcu gibi ol.",
+        "ar": "كن في الدنيا كأنك غريب أو عابر سبيل.",
+        "es": "Vive en este mundo como si fueras un extraño o un viajero.",
+        "fr": "Sois dans ce monde comme si tu étais un étranger ou un voyageur.",
+        "id": "Jadilah engkau di dunia ini seakan-akan engkau orang asing atau seorang musafir.",
+        "bn": "এই দুনিয়ায় এমনভাবে থাকো, যেন তুমি একজন প্রবাসী বা পথিক।",
+        "fa": "در این دنیا چنان باش که گویی غریبی یا رهگذری.",
+        "ms": "Jadilah engkau di dunia ini seakan-akan engkau orang asing atau seorang musafir.",
+        "ur": "دنیا میں یوں رہو جیسے تم اجنبی ہو یا مسافر۔",
+        "ru": "Будь в этом мире, словно чужестранец или путник.",
+        "sw": "Kuwa duniani kama vile wewe ni mgeni au msafiri.",
+        "ps": "په دې دنیا کې داسې اوسه لکه پردی یا لاروی چې يې."
+      },
+      "source": "Sahih al-Bukhari 6416"
+    },
+    {
+      "id": "dunya-shade",
+      "text": {
+        "de": "Was habe ich mit dieser Welt zu schaffen? Ich bin in ihr nur wie ein Reiter, der im Schatten eines Baumes rastet und dann weiterzieht.",
+        "en": "What do I have to do with this world? I am only like a rider who rests in the shade of a tree, then moves on.",
+        "tr": "Benim dünya ile ne işim var? Ben ancak bir ağacın gölgesinde dinlenip sonra yoluna devam eden bir yolcu gibiyim.",
+        "ar": "ما لي وللدنيا؟ ما أنا في الدنيا إلا كراكب استظل تحت شجرة ثم راح وتركها.",
+        "es": "¿Qué tengo yo que ver con este mundo? En él no soy más que un jinete que descansa a la sombra de un árbol y luego sigue su camino.",
+        "fr": "Qu'ai-je à faire de ce monde ? Je n'y suis que comme un cavalier qui se repose à l'ombre d'un arbre, puis reprend sa route.",
+        "id": "Apa urusanku dengan dunia? Aku di dunia ini hanyalah seperti seorang pengendara yang berteduh sejenak di bawah pohon, lalu meninggalkannya.",
+        "bn": "এই দুনিয়ার সঙ্গে আমার কী সম্পর্ক? আমি এতে কেবল সেই আরোহীর মতো, যে একটি গাছের ছায়ায় খানিক বিশ্রাম নিয়ে চলে যায়।",
+        "fa": "مرا با دنیا چه کار؟ من در آن جز سواری نیستم که اندکی زیر سایهٔ درختی بیاساید و سپس برود.",
+        "ms": "Apa urusanku dengan dunia? Aku di dunia ini hanyalah seperti seorang penunggang yang berteduh seketika di bawah pokok, lalu meninggalkannya.",
+        "ur": "مجھے دنیا سے کیا واسطہ؟ میں تو اس میں بس اس سوار کی مانند ہوں جو کسی درخت کے سائے میں تھوڑی دیر سستا کر آگے بڑھ جاتا ہے۔",
+        "ru": "Что мне до этого мира? Я в нём лишь как всадник, который отдохнул в тени дерева и поехал дальше.",
+        "sw": "Nina nini na dunia hii? Mimi ndani yake ni kama mpanda kipando aliyepumzika kivulini mwa mti kisha akaondoka.",
+        "ps": "زما د دنیا سره څه کار؟ زه پکې يوازې د هغه سپور په څېر یم چې د ونې تر سیوري لاندې لږ دمه وکړي او بیا لاړ شي."
+      },
+      "source": "Jami at-Tirmidhi 2377"
+    },
+    {
+      "id": "richness",
+      "text": {
+        "de": "Reichtum besteht nicht in vielen Gütern - wahrer Reichtum ist der Reichtum der Seele.",
+        "en": "Wealth is not in having many possessions - true wealth is the richness of the soul.",
+        "tr": "Zenginlik mal çokluğu değildir; asıl zenginlik gönül zenginliğidir.",
+        "ar": "ليس الغنى عن كثرة العرض، ولكن الغنى غنى النفس.",
+        "es": "La riqueza no consiste en tener muchos bienes - la verdadera riqueza es la riqueza del alma.",
+        "fr": "La richesse ne réside pas dans l'abondance des biens - la vraie richesse est celle de l'âme.",
+        "id": "Kekayaan bukanlah banyaknya harta - kekayaan yang sebenarnya adalah kekayaan jiwa.",
+        "bn": "প্রাচুর্য মানে সম্পদের আধিক্য নয় - প্রকৃত প্রাচুর্য হলো মনের প্রাচুর্য।",
+        "fa": "توانگری به فراوانی مال نیست - توانگری راستین، توانگری دل است.",
+        "ms": "Kekayaan bukanlah banyaknya harta - kekayaan yang sebenar ialah kekayaan jiwa.",
+        "ur": "مالداری مال کی کثرت سے نہیں - اصل مالداری دل کی مالداری ہے۔",
+        "ru": "Богатство не в обилии имущества - истинное богатство есть богатство души.",
+        "sw": "Utajiri si wingi wa mali - utajiri wa kweli ni utajiri wa nafsi.",
+        "ps": "شتمني د مال په ډېروالي کې نه ده - ریښتینې شتمني د زړه شتمني ده."
+      },
+      "source": "Sahih al-Bukhari 6446"
+    },
+    {
+      "id": "strong-one",
+      "text": {
+        "de": "Der Starke ist nicht der, der andere im Ringen besiegt. Der Starke ist der, der sich im Zorn beherrscht.",
+        "en": "The strong one is not the one who overcomes others in wrestling. The strong one is the one who controls himself when angry.",
+        "tr": "Güçlü, insanları güreşte yenen değildir. Asıl güçlü, öfke anında kendine hâkim olandır.",
+        "ar": "ليس الشديد بالصرعة، إنما الشديد الذي يملك نفسه عند الغضب.",
+        "es": "El fuerte no es el que vence a otros en la lucha. El fuerte es el que se domina a sí mismo cuando está enfadado.",
+        "fr": "Le fort n'est pas celui qui terrasse les autres à la lutte. Le fort est celui qui se maîtrise lorsqu'il est en colère.",
+        "id": "Orang yang kuat bukanlah yang mengalahkan orang lain dalam gulat. Orang yang kuat adalah yang mampu menguasai dirinya ketika marah.",
+        "bn": "শক্তিশালী সে নয়, যে কুস্তিতে অন্যকে হারায়। শক্তিশালী সে-ই, যে রাগের সময় নিজেকে সংযত রাখে।",
+        "fa": "نیرومند آن نیست که در کشتی بر دیگران چیره شود. نیرومند کسی است که هنگام خشم بر خود چیره شود.",
+        "ms": "Orang yang kuat bukanlah yang mengalahkan orang lain dalam gusti. Orang yang kuat ialah yang mampu menguasai dirinya ketika marah.",
+        "ur": "طاقتور وہ نہیں جو کشتی میں دوسروں کو پچھاڑ دے۔ طاقتور وہ ہے جو غصے کے وقت خود پر قابو رکھے۔",
+        "ru": "Силён не тот, кто побеждает других в борьбе. Силён тот, кто владеет собой в гневе.",
+        "sw": "Mwenye nguvu si yule anayewashinda wengine kwa mieleka. Mwenye nguvu ni yule anayejizuia wakati wa hasira.",
+        "ps": "زورور هغه نه دی چې په پهلوانۍ کې نور مات کړي. زورور هغه دی چې د غوسې پر مهال ځان کنټرول کړي."
+      },
+      "source": "Sahih al-Bukhari 6114"
+    },
+    {
+      "id": "smile-charity",
+      "text": {
+        "de": "Dein Lächeln im Angesicht deines Bruders ist eine Sadaqa.",
+        "en": "Your smile in the face of your brother is charity.",
+        "tr": "Kardeşine tebessüm etmen sadakadır.",
+        "ar": "تبسمك في وجه أخيك لك صدقة.",
+        "es": "Tu sonrisa ante tu hermano es una sadaqa.",
+        "fr": "Ton sourire envers ton frère est une aumône (sadaqa).",
+        "id": "Senyummu di hadapan saudaramu adalah sedekah.",
+        "bn": "তোমার ভাইয়ের সামনে তোমার হাসি একটি সদকা।",
+        "fa": "لبخند تو در برابر برادرت صدقه است.",
+        "ms": "Senyumanmu di hadapan saudaramu ialah sedekah.",
+        "ur": "اپنے بھائی کے سامنے تمہارا مسکرانا صدقہ ہے۔",
+        "ru": "Твоя улыбка в лицо брату - милостыня.",
+        "sw": "Tabasamu lako mbele ya ndugu yako ni sadaka.",
+        "ps": "ستا موسکا د خپل ورور په مخ کې صدقه ده."
+      },
+      "source": "Jami at-Tirmidhi 1956"
+    },
+    {
+      "id": "hearts-deeds",
+      "text": {
+        "de": "Allah schaut nicht auf eure Körper und nicht auf eure Gestalt - Er schaut auf eure Herzen und eure Taten.",
+        "en": "Allah does not look at your bodies or your appearance - He looks at your hearts and your deeds.",
+        "tr": "Allah sizin bedenlerinize ve suretlerinize bakmaz; kalplerinize ve amellerinize bakar.",
+        "ar": "إن الله لا ينظر إلى أجسادكم ولا إلى صوركم، ولكن ينظر إلى قلوبكم وأعمالكم.",
+        "es": "Allah no mira vuestros cuerpos ni vuestra apariencia - mira vuestros corazones y vuestras obras.",
+        "fr": "Allah ne regarde ni vos corps ni votre apparence - Il regarde vos cœurs et vos actes.",
+        "id": "Allah tidak melihat kepada tubuh dan rupa kalian - Dia melihat kepada hati dan amal kalian.",
+        "bn": "আল্লাহ তোমাদের দেহ ও চেহারার দিকে তাকান না - তিনি তাকান তোমাদের অন্তর ও আমলের দিকে।",
+        "fa": "خداوند به بدن‌ها و چهره‌های شما نمی‌نگرد - او به دل‌ها و کردارهای شما می‌نگرد.",
+        "ms": "Allah tidak melihat kepada tubuh dan rupa kamu - Dia melihat kepada hati dan amalan kamu.",
+        "ur": "اللہ تمہارے جسموں اور صورتوں کو نہیں دیکھتا - وہ تمہارے دلوں اور اعمال کو دیکھتا ہے۔",
+        "ru": "Аллах не смотрит на ваши тела и облик - Он смотрит на ваши сердца и дела.",
+        "sw": "Allah hatazami miili yenu wala sura zenu - anatazama nyoyo zenu na matendo yenu.",
+        "ps": "الله ستاسو بدنونو او څېرو ته نه ګوري - هغه ستاسو زړونو او کړنو ته ګوري."
+      },
+      "source": "Sahih Muslim 2564"
+    },
+    {
+      "id": "brother-love",
+      "text": {
+        "de": "Keiner von euch glaubt (vollkommen), bis er für seinen Bruder liebt, was er für sich selbst liebt.",
+        "en": "None of you truly believes until he loves for his brother what he loves for himself.",
+        "tr": "Sizden biriniz kendisi için sevdiğini kardeşi için de sevmedikçe (gerçek anlamda) iman etmiş olmaz.",
+        "ar": "لا يؤمن أحدكم حتى يحب لأخيه ما يحب لنفسه.",
+        "es": "Ninguno de vosotros cree (verdaderamente) hasta que ama para su hermano lo que ama para sí mismo.",
+        "fr": "Nul d'entre vous ne croit (véritablement) tant qu'il n'aime pas pour son frère ce qu'il aime pour lui-même.",
+        "id": "Tidak sempurna iman salah seorang di antara kalian sampai ia mencintai untuk saudaranya apa yang ia cintai untuk dirinya sendiri.",
+        "bn": "তোমাদের কেউ (পূর্ণ) মুমিন হবে না, যতক্ষণ না সে তার ভাইয়ের জন্য তা-ই পছন্দ করে যা সে নিজের জন্য পছন্দ করে।",
+        "fa": "هیچ‌یک از شما (به‌کمال) ایمان نمی‌آورد تا آنکه برای برادرش همان را بخواهد که برای خود می‌خواهد.",
+        "ms": "Tidak sempurna iman seseorang daripada kamu sehingga dia mencintai untuk saudaranya apa yang dia cintai untuk dirinya sendiri.",
+        "ur": "تم میں سے کوئی (کامل) مومن نہیں ہو سکتا جب تک وہ اپنے بھائی کے لیے وہی پسند نہ کرے جو اپنے لیے پسند کرتا ہے۔",
+        "ru": "Никто из вас не уверует (полностью), пока не станет желать брату своему того же, чего желает себе.",
+        "sw": "Hakuna miongoni mwenu anayeamini (kikamilifu) mpaka ampendee ndugu yake yale anayojipendea mwenyewe.",
+        "ps": "له تاسو څخه هیڅوک (بشپړ) مؤمن نه دی، تر څو چې د خپل ورور لپاره هغه څه خوښ نه کړي چې د ځان لپاره یې خوښوي."
+      },
+      "source": "Sahih al-Bukhari 13"
+    },
+    {
+      "id": "intentions",
+      "text": {
+        "de": "Die Taten werden nur nach den Absichten bewertet - und jedem gebührt, was er beabsichtigt hat.",
+        "en": "Deeds are judged only by intentions - and everyone will get what they intended.",
+        "tr": "Ameller ancak niyetlere göredir - herkese niyet ettiği vardır.",
+        "ar": "إنما الأعمال بالنيات، وإنما لكل امرئ ما نوى.",
+        "es": "Las acciones se valoran solo según las intenciones, y a cada uno le corresponde lo que pretendía.",
+        "fr": "Les actes ne valent que par les intentions, et chacun n'aura que ce qu'il a eu l'intention de faire.",
+        "id": "Sesungguhnya amal itu dinilai berdasarkan niat - dan setiap orang mendapatkan apa yang ia niatkan.",
+        "bn": "নিশ্চয়ই আমল নিয়তের ওপর নির্ভরশীল - এবং প্রত্যেকে তা-ই পাবে যা সে নিয়ত করেছে।",
+        "fa": "اعمال تنها به نیت‌ها سنجیده می‌شوند - و هر کس همان را می‌یابد که نیت کرده است.",
+        "ms": "Sesungguhnya amalan itu dinilai berdasarkan niat - dan setiap orang mendapat apa yang diniatkannya.",
+        "ur": "اعمال کا دار و مدار نیتوں پر ہے - اور ہر شخص کو وہی ملے گا جس کی اس نے نیت کی۔",
+        "ru": "Дела оцениваются лишь по намерениям - и каждому достанется то, что он намеревался.",
+        "sw": "Hakika matendo hupimwa kwa nia - na kila mtu atapata alichokinuia.",
+        "ps": "کړنې يوازې په نیتونو سنجول کېږي - او هر چا ته هغه رسېږي چې نیت یې کړی وي."
+      },
+      "source": "Sahih al-Bukhari 1"
+    },
+    {
+      "id": "five-before-five",
+      "text": {
+        "de": "Nutze fünf, bevor fünf kommen: deine Jugend vor dem Alter, deine Gesundheit vor der Krankheit, deinen Reichtum vor der Armut, deine freie Zeit vor der Beschäftigung und dein Leben vor dem Tod.",
+        "en": "Take advantage of five before five: your youth before old age, your health before illness, your wealth before poverty, your free time before busyness, and your life before death.",
+        "tr": "Beş şey gelmeden önce beş şeyin kıymetini bil: İhtiyarlıktan önce gençliğin, hastalıktan önce sağlığın, fakirlikten önce zenginliğin, meşguliyetten önce boş vaktin ve ölümden önce hayatın.",
+        "ar": "اغتنم خمسًا قبل خمس: شبابك قبل هرمك، وصحتك قبل سقمك، وغناك قبل فقرك، وفراغك قبل شغلك، وحياتك قبل موتك.",
+        "es": "Aprovecha cinco cosas antes de otras cinco: tu juventud antes de la vejez, tu salud antes de la enfermedad, tu riqueza antes de la pobreza, tu tiempo libre antes de tus ocupaciones y tu vida antes de tu muerte.",
+        "fr": "Profite de cinq choses avant cinq autres : ta jeunesse avant ta vieillesse, ta santé avant ta maladie, ta richesse avant ta pauvreté, ton temps libre avant tes occupations et ta vie avant ta mort.",
+        "id": "Manfaatkanlah lima perkara sebelum datang lima perkara: masa mudamu sebelum masa tuamu, masa sehatmu sebelum sakitmu, kekayaanmu sebelum kemiskinanmu, waktu luangmu sebelum kesibukanmu, dan hidupmu sebelum matimu.",
+        "bn": "পাঁচটি জিনিসকে পাঁচটি জিনিস আসার আগে কাজে লাগাও: বার্ধক্যের আগে যৌবন, অসুস্থতার আগে সুস্থতা, দারিদ্র্যের আগে সচ্ছলতা, ব্যস্ততার আগে অবসর এবং মৃত্যুর আগে জীবন।",
+        "fa": "پنج چیز را پیش از پنج چیز غنیمت شمار: جوانی‌ات را پیش از پیری، تندرستی‌ات را پیش از بیماری، توانگری‌ات را پیش از تنگدستی، فراغتت را پیش از گرفتاری و زندگی‌ات را پیش از مرگ.",
+        "ms": "Manfaatkanlah lima perkara sebelum datang lima perkara: masa mudamu sebelum tuamu, masa sihatmu sebelum sakitmu, kekayaanmu sebelum kemiskinanmu, masa lapangmu sebelum kesibukanmu, dan hidupmu sebelum matimu.",
+        "ur": "پانچ چیزوں کو پانچ چیزوں سے پہلے غنیمت جانو: بڑھاپے سے پہلے جوانی، بیماری سے پہلے صحت، محتاجی سے پہلے مالداری، مصروفیت سے پہلے فرصت اور موت سے پہلے زندگی۔",
+        "ru": "Используй пятеро до наступления пятерых: молодость до старости, здоровье до болезни, богатство до бедности, свободное время до занятости и жизнь до смерти.",
+        "sw": "Tumia matano kabla ya matano: ujana wako kabla ya uzee, afya yako kabla ya maradhi, utajiri wako kabla ya ufukara, wasaa wako kabla ya shughuli, na uhai wako kabla ya mauti.",
+        "ps": "پنځه څیزونه د پنځو نورو له راتګ مخکې غنیمت وګڼه: ځواني مو د زړښت دمخه، روغتیا مو د ناروغۍ دمخه، شتمني مو د بېوزلۍ دمخه، فرصت مو د بوختیا دمخه او ژوند مو د مرګ دمخه."
+      },
+      "source": "Al-Hakim, al-Mustadrak 7846"
+    },
+    {
+      "id": "best-people",
+      "text": {
+        "de": "Die besten Menschen sind die, die den Menschen am meisten nützen.",
+        "en": "The best of people are those who are most beneficial to people.",
+        "tr": "İnsanların en hayırlısı, insanlara en faydalı olandır.",
+        "ar": "خير الناس أنفعهم للناس.",
+        "es": "Las mejores personas son las que más benefician a los demás.",
+        "fr": "Les meilleures personnes sont celles qui sont les plus utiles aux autres.",
+        "id": "Sebaik-baik manusia adalah yang paling bermanfaat bagi manusia lain.",
+        "bn": "সর্বোত্তম মানুষ সে-ই, যে মানুষের সবচেয়ে বেশি উপকার করে।",
+        "fa": "بهترین مردم کسی است که برای مردم سودمندتر باشد.",
+        "ms": "Sebaik-baik manusia ialah yang paling bermanfaat kepada manusia lain.",
+        "ur": "بہترین لوگ وہ ہیں جو لوگوں کو سب سے زیادہ نفع پہنچائیں۔",
+        "ru": "Лучшие из людей - те, кто приносит людям больше всего пользы.",
+        "sw": "Watu bora ni wale wenye manufaa zaidi kwa watu.",
+        "ps": "تر ټولو غوره خلک هغه دي چې خلکو ته تر ټولو ډېره ګټه رسوي."
+      },
+      "source": "At-Tabarani (Hasan)"
+    },
+    {
+      "id": "days-hasan",
+      "text": {
+        "de": "O Sohn Adams! Du bist nur eine Anzahl von Tagen - geht ein Tag, geht ein Teil von dir.",
+        "en": "O son of Adam! You are but a number of days - whenever a day passes, a part of you passes with it.",
+        "tr": "Ey Âdemoğlu! Sen ancak sayılı günlersin - bir gün geçince senin bir parçan da geçmiş olur.",
+        "ar": "يا ابن آدم، إنما أنت أيام، إذا ذهب يوم ذهب بعضك.",
+        "es": "¡Oh hijo de Adán! No eres más que un número de días - cuando pasa un día, pasa una parte de ti.",
+        "fr": "Ô fils d'Adam ! Tu n'es qu'un nombre de jours - lorsqu'un jour passe, une partie de toi passe avec lui.",
+        "id": "Wahai anak Adam! Engkau hanyalah kumpulan hari - setiap kali satu hari berlalu, sebagian dirimu ikut berlalu.",
+        "bn": "হে আদম সন্তান! তুমি তো কেবল কতগুলো দিনের সমষ্টি - একটি দিন চলে গেলে তোমার একটি অংশও চলে যায়।",
+        "fa": "ای فرزند آدم! تو جز شماری روز نیستی - هر روز که بگذرد، پاره‌ای از تو رفته است.",
+        "ms": "Wahai anak Adam! Engkau hanyalah himpunan hari - setiap kali satu hari berlalu, sebahagian dirimu turut berlalu.",
+        "ur": "اے ابن آدم! تُو تو بس چند دنوں کا مجموعہ ہے - جب ایک دن گزرتا ہے تو تیرا ایک حصہ بھی گزر جاتا ہے۔",
+        "ru": "О сын Адама! Ты - лишь череда дней: уходит день - уходит часть тебя.",
+        "sw": "Ewe mwana wa Adamu! Wewe si chochote ila mkusanyiko wa siku - ikipita siku, hupita sehemu yako.",
+        "ps": "ای د آدم زویه! ته يوازې د ورځو یوه ټولګه يې - چې یوه ورځ تېره شي، ستا یوه برخه هم تېره شي."
+      },
+      "source": "Hasan al-Basri zugeschrieben"
+    },
+    {
+      "id": "account-umar",
+      "text": {
+        "de": "Rechnet mit euch selbst ab, bevor mit euch abgerechnet wird - und wägt eure Taten, bevor sie für euch gewogen werden.",
+        "en": "Hold yourselves to account before you are held to account - and weigh your deeds before they are weighed for you.",
+        "tr": "Hesaba çekilmeden önce kendinizi hesaba çekin; ameller tartılmadan önce onları kendiniz tartın.",
+        "ar": "حاسبوا أنفسكم قبل أن تحاسبوا، وزنوا أعمالكم قبل أن توزن عليكم.",
+        "es": "Rendíos cuentas a vosotros mismos antes de que os las pidan - y pesad vuestras obras antes de que sean pesadas por vosotros.",
+        "fr": "Demandez-vous des comptes à vous-mêmes avant qu'on ne vous en demande - et pesez vos actes avant qu'ils ne soient pesés pour vous.",
+        "id": "Hisablah dirimu sebelum engkau dihisab - dan timbanglah amalmu sebelum ia ditimbang untukmu.",
+        "bn": "তোমাদের হিসাব নেওয়ার আগেই নিজেদের হিসাব নাও - এবং তোমাদের আমল ওজন করার আগেই নিজেরা তা ওজন করে দেখো।",
+        "fa": "پیش از آنکه به حسابتان رسند، خود به حساب خویش برسید - و پیش از آنکه کردارتان را بسنجند، خود آن را بسنجید.",
+        "ms": "Hisablah dirimu sebelum engkau dihisab - dan timbanglah amalanmu sebelum ia ditimbang untukmu.",
+        "ur": "اپنا حساب کرو اس سے پہلے کہ تمہارا حساب لیا جائے - اور اپنے اعمال تولو اس سے پہلے کہ وہ تمہارے لیے تولے جائیں۔",
+        "ru": "Спрашивайте с себя прежде, чем спросят с вас - и взвешивайте свои дела прежде, чем они будут взвешены.",
+        "sw": "Jihesabuni nafsi zenu kabla hamjahesabiwa - na pimeni matendo yenu kabla hayajapimwa kwa ajili yenu.",
+        "ps": "له ځان سره حساب وکړئ مخکې له دې چې ستاسو حساب واخيستل شي - او خپلې کړنې وتلئ مخکې له دې چې ستاسو لپاره وتلل شي."
+      },
+      "source": "Umar ibn al-Khattab zugeschrieben"
+    },
+    {
+      "id": "heart-rest-ibnqayyim",
+      "text": {
+        "de": "Im Herzen ist eine Leere, die nichts füllt außer der Nähe zu Allah.",
+        "en": "In the heart there is a void that nothing can fill except closeness to Allah.",
+        "tr": "Kalpte öyle bir boşluk vardır ki onu Allah'a yakınlıktan başka hiçbir şey dolduramaz.",
+        "ar": "في القلب فاقة لا يسدها إلا الإقبال على الله.",
+        "es": "En el corazón hay un vacío que nada llena excepto la cercanía a Allah.",
+        "fr": "Il y a dans le cœur un vide que rien ne comble, si ce n'est la proximité d'Allah.",
+        "id": "Di dalam hati ada kekosongan yang tidak dapat diisi oleh apa pun kecuali kedekatan dengan Allah.",
+        "bn": "হৃদয়ে এমন এক শূন্যতা আছে, যা আল্লাহর নৈকট্য ছাড়া আর কিছুই পূরণ করতে পারে না।",
+        "fa": "در دل خلائی هست که هیچ چیز جز نزدیکی به خدا آن را پر نمی‌کند.",
+        "ms": "Di dalam hati ada kekosongan yang tidak dapat diisi oleh apa pun kecuali kedekatan dengan Allah.",
+        "ur": "دل میں ایک خلا ہے جسے اللہ کے قرب کے سوا کوئی چیز نہیں بھر سکتی۔",
+        "ru": "В сердце есть пустота, которую не заполнит ничто, кроме близости к Аллаху.",
+        "sw": "Ndani ya moyo kuna ombwe lisilojazwa na kitu chochote isipokuwa ukaribu na Allah.",
+        "ps": "په زړه کې یوه تشه ده چې له الله سره له نږدېوالي پرته یې بل هیڅ نه ډکوي."
+      },
+      "source": "Ibn al-Qayyim zugeschrieben (Madarij as-Salikin)"
+    },
+    {
+      "id": "dunya-bridge",
+      "text": {
+        "de": "Diese Welt ist eine Brücke - überquere sie, aber baue nicht auf ihr.",
+        "en": "This world is a bridge - cross it, but do not build upon it.",
+        "tr": "Dünya bir köprüdür - üzerinden geç, ama üzerine bina kurma.",
+        "ar": "الدنيا قنطرة فاعبروها ولا تعمروها.",
+        "es": "Este mundo es un puente - atraviésalo, pero no construyas sobre él.",
+        "fr": "Ce monde est un pont - traverse-le, mais ne construis pas dessus.",
+        "id": "Dunia ini adalah jembatan - seberangilah, tetapi jangan membangun di atasnya.",
+        "bn": "এই দুনিয়া একটি সেতু - তা পার হয়ে যাও, কিন্তু তার ওপর ঘর বানিয়ো না।",
+        "fa": "این دنیا پلی است - از آن بگذر، اما بر آن بنا مکن.",
+        "ms": "Dunia ini ialah jambatan - seberangilah, tetapi jangan membina di atasnya.",
+        "ur": "یہ دنیا ایک پل ہے - اسے پار کرو، مگر اس پر عمارت نہ بناؤ۔",
+        "ru": "Этот мир - мост: перейди его, но не строй на нём.",
+        "sw": "Dunia hii ni daraja - ivuke, lakini usijenge juu yake.",
+        "ps": "دا دنیا یوه پله ده - ترې تېر شه، خو پرې ودانۍ مه جوړوه."
+      },
+      "source": "Isa (as) zugeschrieben, überliefert bei al-Ghazali (Ihya)"
+    },
+    {
+      "id": "patience-light",
+      "text": {
+        "de": "Das Gebet ist Licht, die Sadaqa ist ein Beweis und die Geduld ist ein Leuchten.",
+        "en": "Prayer is light, charity is proof, and patience is illumination.",
+        "tr": "Namaz nurdur, sadaka delildir, sabır ise aydınlıktır.",
+        "ar": "الصلاة نور، والصدقة برهان، والصبر ضياء.",
+        "es": "La oración es luz, la sadaqa es una prueba y la paciencia es un resplandor.",
+        "fr": "La prière est lumière, l'aumône est une preuve, et la patience est une clarté.",
+        "id": "Salat itu cahaya, sedekah itu bukti, dan sabar itu sinar.",
+        "bn": "নামাজ আলো, সদকা প্রমাণ এবং ধৈর্য দীপ্তি।",
+        "fa": "نماز نور است، صدقه گواه است و صبر روشنایی است.",
+        "ms": "Solat itu cahaya, sedekah itu bukti, dan sabar itu sinar.",
+        "ur": "نماز نور ہے، صدقہ دلیل ہے اور صبر روشنی ہے۔",
+        "ru": "Молитва - свет, милостыня - доказательство, а терпение - сияние.",
+        "sw": "Swala ni nuru, sadaka ni ushahidi, na subira ni mwanga.",
+        "ps": "لمونځ رڼا ده، صدقه ثبوت دی او صبر ځلا ده."
+      },
+      "source": "Sahih Muslim 223"
+    },
+    {
+      "id": "allah-with-patient",
+      "arabic": "إِنَّ اللَّهَ مَعَ الصَّابِرِينَ",
+      "text": {
+        "de": "Wahrlich, Allah ist mit den Geduldigen.",
+        "en": "Indeed, Allah is with the patient.",
+        "tr": "Şüphesiz Allah sabredenlerle beraberdir.",
+        "ar": "إن الله مع الصابرين.",
+        "es": "En verdad, Allah está con los pacientes.",
+        "fr": "En vérité, Allah est avec les patients.",
+        "id": "Sesungguhnya Allah beserta orang-orang yang sabar.",
+        "bn": "নিশ্চয়ই আল্লাহ ধৈর্যশীলদের সঙ্গে আছেন।",
+        "fa": "به‌راستی خدا با شکیبایان است.",
+        "ms": "Sesungguhnya Allah bersama orang-orang yang sabar.",
+        "ur": "بے شک اللہ صبر کرنے والوں کے ساتھ ہے۔",
+        "ru": "Воистину, Аллах с терпеливыми.",
+        "sw": "Hakika Allah yu pamoja na wanaosubiri.",
+        "ps": "بېشکه الله له صبر کوونکو سره دی."
+      },
+      "source": "Quran 2:153"
+    }
+  ]
+}

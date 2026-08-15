@@ -1,0 +1,642 @@
+{
+  "hinweis": "Kuratierte Wissensschicht der Salati-KI zum Themenblock Lebenspraxis, Kalender/Feste, Geschichte und Einordnung. Regeln: (1) nur unstrittiges Grundwissen, keine Rechtsurteile in Einzelfällen und keine Fatwa; (2) wo Rechtsschulen abweichen, wird das ausdrücklich gesagt und auf Gelehrte bzw. den örtlichen Imam verwiesen; (3) jede Koran-Angabe muss zeichengenau zu apps/mobile/public/rag/korpus-de.json passen (Prüfskript: node scripts/check-ki-wissen.mjs src/features/ki/wissen-leben.json); (4) Hadith-Belege nur aus den 40 Nawawi-Hadithen der App mit voller Quellenangabe; (5) historische Angaben sind gegen src/features/study/data/seerah.json und sahaba.json abgeglichen und bleiben ohne Beleg-Eintrag; (6) Sprache: Deutsch, warm, klar, 3-6 Sätze.",
+  "eintraege": [
+    {
+      "id": "islamischer-kalender",
+      "titel": "Der islamische Kalender",
+      "tags": [
+        "islamischer kalender",
+        "hidschri",
+        "mondkalender",
+        "welches jahr haben wir",
+        "monate",
+        "hidschra-zaehlung"
+      ],
+      "text": "Der islamische Kalender ist ein reiner Mondkalender: Zwölf Monate, jeder beginnt mit dem neuen Mond, ein Jahr hat rund 354 Tage. Dadurch wandern alle islamischen Daten jedes Jahr etwa elf Tage nach vorn durch das Sonnenjahr — Ramadan kann also einmal im Winter und Jahre später im Hochsommer liegen. Die zwölf Monate heißen Muharram, Safar, Rabiʿ al-awwal, Rabiʿ ath-thani, Dschumada l-ula, Dschumada l-achira, Radschab, Schaban, Ramadan, Schawwal, Dhul-Qaʿda und Dhul-Hidscha; vier davon gelten als geschützte Monate. Gezählt wird ab der Hidschra, der Auswanderung des Propheten ﷺ von Mekka nach Medina — daher die Angabe „n. H.“ beziehungsweise „AH“. Weil der Monatsbeginn je nach Land und Methode (Sichtung oder Berechnung) um einen Tag abweichen kann, orientieren sich Muslime an ihrer örtlichen Gemeinde.",
+      "belege": [
+        "Koran 9:36",
+        "Koran 10:5",
+        "Koran 2:189"
+      ]
+    },
+    {
+      "id": "muharram-und-aschura",
+      "titel": "Muharram und Aschura",
+      "tags": [
+        "muharram",
+        "aschura",
+        "islamisches neujahr",
+        "wann ist aschura",
+        "heilige monate",
+        "fasten aschura"
+      ],
+      "text": "Muharram ist der erste Monat des islamischen Jahres und einer der vier geschützten Monate, in denen Unrecht besonders schwer wiegt. Der zehnte Tag heißt Aschura; überliefert ist, dass der Prophet ﷺ an diesem Tag fastete und das Fasten empfahl, weil Allah an ihm Musa und sein Volk rettete. Viele Muslime fasten deshalb den neunten und zehnten oder den zehnten und elften Muharram — freiwillig, nicht als Pflicht. Aschura ist außerdem der Tag, an dem im Jahr 61 n. H. der Prophetenenkel al-Husain bei Kerbela getötet wurde; Schiiten begehen ihn als Trauertag, sunnitische Muslime vor allem als Fastentag. Rituale, die über das Fasten hinausgehen, werden unterschiedlich bewertet — dazu berät am besten der örtliche Imam.",
+      "belege": [
+        "Koran 9:36"
+      ]
+    },
+    {
+      "id": "rabi-al-awwal",
+      "titel": "Rabiʿ al-awwal",
+      "tags": [
+        "rabi al-awwal",
+        "mawlid",
+        "geburtstag des propheten",
+        "darf man mawlid feiern",
+        "islamische monate"
+      ],
+      "text": "Rabiʿ al-awwal ist der dritte Monat des islamischen Jahres und mit dem Leben des Propheten ﷺ eng verbunden: In ihm kam er zur Welt, in ihm erreichte er nach der Hidschra Quba am Rand von Yathrib, und am Montag, dem 12. Rabiʿ al-awwal des elften Jahres n. H., verstarb er im Alter von 63 Jahren im Zimmer seiner Frau Aischa. In vielen Ländern wird in diesem Monat das Mawlid begangen — mit Rezitation, Vorträgen über die Seerah und Speisung. Ob solche Feiern erwünscht sind, beurteilen die Gelehrten unterschiedlich: Manche sehen darin eine gute Gelegenheit, die Liebe zum Propheten ﷺ zu stärken, andere lehnen sie als spätere Neuerung ab. Unstrittig ist, dass die Liebe zum Propheten ﷺ sich vor allem darin zeigt, seinem Vorbild im Alltag zu folgen.",
+      "belege": [
+        "Koran 33:21"
+      ]
+    },
+    {
+      "id": "radschab-und-schaban",
+      "titel": "Radschab und Schaban",
+      "tags": [
+        "radschab",
+        "schaban",
+        "vor ramadan",
+        "islamische monate",
+        "welcher monat kommt vor ramadan",
+        "heilige monate"
+      ],
+      "text": "Radschab ist der siebte Monat und gehört zu den vier geschützten Monaten, in denen Kampf traditionell untersagt war und gute wie schlechte Taten besonderes Gewicht haben. Schaban ist der achte Monat und damit der direkte Vormonat des Ramadan; überliefert ist, dass der Prophet ﷺ in Schaban besonders viel freiwillig fastete. Viele Muslime nutzen diese beiden Monate deshalb als Anlauf: Gebetszeiten wieder festigen, Schulden und Streit bereinigen, das Fasten üben und die Koranlesung aufnehmen. Um beide Monate haben sich regional viele besondere Nächte und Riten gebildet, die von Gelehrten sehr unterschiedlich bewertet werden — hier lohnt es sich, beim örtlichen Imam nachzufragen, statt sich auf Weitergesagtes zu verlassen.",
+      "belege": [
+        "Koran 9:36"
+      ]
+    },
+    {
+      "id": "ramadan-monat",
+      "titel": "Ramadan — der Monat des Fastens",
+      "tags": [
+        "ramadan",
+        "wann ist ramadan",
+        "fasten",
+        "laylat al-qadr",
+        "tarawih",
+        "neunter monat"
+      ],
+      "text": "Ramadan ist der neunte Monat des islamischen Jahres und der Monat, in dem der Koran herabgesandt wurde. Für erwachsene, gesunde Muslime ist das Fasten von der Morgendämmerung bis zum Sonnenuntergang in ihm Pflicht und eine der fünf Säulen des Islam; wer krank oder auf Reisen ist, holt die Tage später nach, und wer dauerhaft nicht fasten kann, speist ersatzweise Bedürftige. Der Monat lebt nicht nur vom Verzicht auf Essen und Trinken, sondern von Gebet, Koranlesung, Großzügigkeit und Geduld im Umgang miteinander. In den letzten zehn Nächten liegt die Nacht der Bestimmung (Laylat al-Qadr), die der Koran als besser als tausend Monate beschreibt. Weil das islamische Jahr ein Mondjahr ist, verschiebt sich der Ramadan jedes Jahr um etwa elf Tage nach vorn.",
+      "belege": [
+        "Koran 2:183",
+        "Koran 2:185",
+        "Koran 2:187",
+        "Koran 97:1",
+        "Koran 97:3",
+        "an-Nawawī Nr. 3 — Sahih al-Bukhari 8, Sahih Muslim 16"
+      ]
+    },
+    {
+      "id": "schawwal",
+      "titel": "Schawwal und das Fest des Fastenbrechens",
+      "tags": [
+        "schawwal",
+        "eid al-fitr",
+        "ramadanfest",
+        "zuckerfest",
+        "sechs tage schawwal",
+        "wann ist eid"
+      ],
+      "text": "Schawwal ist der zehnte Monat und beginnt mit ʿId al-Fitr, dem Fest des Fastenbrechens am ersten Tag nach dem Ramadan. Zum Fest gehören das Festgebet in Gemeinschaft, neue oder saubere Kleidung, Besuche bei Familie und Nachbarn — und vor dem Gebet die Zakat al-Fitr, eine kleine Abgabe an Bedürftige, damit auch sie mitfeiern können. Der Koran nennt als Sinn des Fastenabschlusses, die Zahl der Tage zu vollenden und Allah dafür zu preisen, dass Er rechtgeleitet hat. Überliefert ist außerdem, dass sechs freiwillige Fastentage in Schawwal, zusammen mit dem Ramadan, wie ein ganzes Jahr Fasten gelten; sie dürfen am Stück oder verteilt gefastet werden. In Deutschland ist ʿId al-Fitr kein gesetzlicher Feiertag — viele Gemeinden legen das Festgebet deshalb früh am Morgen.",
+      "belege": [
+        "Koran 2:185"
+      ]
+    },
+    {
+      "id": "dhul-hidscha",
+      "titel": "Dhul-Hidscha, Hadsch und Opferfest",
+      "tags": [
+        "dhul hidscha",
+        "hadsch",
+        "opferfest",
+        "eid al-adha",
+        "arafat",
+        "wann ist das opferfest"
+      ],
+      "text": "Dhul-Hidscha ist der zwölfte und letzte Monat des islamischen Jahres und der Monat der Pilgerfahrt. Die Hadsch nach Mekka ist einmal im Leben Pflicht für jeden Muslim, der körperlich und finanziell dazu in der Lage ist. Die ersten zehn Tage des Monats gelten als besonders gesegnete Tage; ihr Höhepunkt ist der neunte Tag, der Tag von Arafat, an dem die Pilger auf der Ebene von Arafat stehen und alle anderen Muslime freiwillig fasten können. Am zehnten Tag folgt ʿId al-Adha, das Opferfest, an dem in Erinnerung an Ibrahim ein Tier geschlachtet und das Fleisch mit Familie, Nachbarn und Bedürftigen geteilt wird. Wer in Deutschland opfern möchte, tut das in der Regel über einen zugelassenen Betrieb oder eine Hilfsorganisation — die praktische Ausgestaltung bespricht man am besten mit der eigenen Gemeinde.",
+      "belege": [
+        "Koran 2:197",
+        "Koran 3:97",
+        "Koran 22:27",
+        "Koran 22:28"
+      ]
+    },
+    {
+      "id": "freitag-bedeutung",
+      "titel": "Der Freitag im Islam",
+      "tags": [
+        "freitag",
+        "dschumua",
+        "freitagsgebet",
+        "muss ich freitags in die moschee",
+        "chutba",
+        "wochentag"
+      ],
+      "text": "Der Freitag (arabisch al-Dschumuʿa, „der Tag der Versammlung“) ist der wöchentliche Höhepunkt für Muslime. Statt des Mittagsgebets wird in der Moschee das Freitagsgebet verrichtet: zwei Gebetseinheiten in Gemeinschaft, davor eine Ansprache (Chutba). Der Koran ruft die Gläubigen auf, beim Gebetsruf am Freitag Handel und Geschäft ruhen zu lassen und zum Gedenken Allahs zu eilen — und danach wieder der Arbeit nachzugehen. Nach der Mehrheit der Gelehrten ist die Teilnahme für erwachsene, ortsansässige Männer Pflicht, für Frauen, Reisende und Kranke dagegen freiwillig; in den Einzelheiten gibt es Unterschiede zwischen den Rechtsschulen. In Deutschland ist der Freitag ein normaler Arbeitstag — viele Beschäftigte sprechen die Gebetspause deshalb frühzeitig mit dem Arbeitgeber ab. Empfohlen sind an diesem Tag außerdem Waschung, saubere Kleidung, das Lesen der Sure al-Kahf und viel Gebet für den Propheten ﷺ.",
+      "belege": [
+        "Koran 62:9",
+        "Koran 62:10"
+      ]
+    },
+    {
+      "id": "mekka-und-kaaba",
+      "titel": "Mekka und die Kaaba",
+      "tags": [
+        "mekka",
+        "kaaba",
+        "qibla",
+        "was ist die kaaba",
+        "beten muslime die kaaba an",
+        "gebetsrichtung"
+      ],
+      "text": "Mekka liegt im Westen der Arabischen Halbinsel und ist die Geburtsstadt des Propheten Muhammad ﷺ. In ihrem Zentrum steht die Kaaba, ein würfelförmiges Gebäude, das der Koran als das erste für die Menschen gegründete Gotteshaus beschreibt; Ibrahim und sein Sohn Ismaʿil errichteten seine Grundmauern und reinigten es für die Anbetung des einen Gottes. Vor dem Islam standen rund 360 Götzenbilder um die Kaaba, bis der Prophet ﷺ sie bei der Rückkehr nach Mekka entfernen ließ. Die Kaaba wird nicht angebetet: Sie ist die Qibla, die gemeinsame Gebetsrichtung, die Muslime weltweit ausrichtet — angebetet wird allein Allah. Um sie herum vollziehen Pilger den Tawaf, den siebenfachen Umlauf.",
+      "belege": [
+        "Koran 3:96",
+        "Koran 2:125",
+        "Koran 2:127",
+        "Koran 2:144",
+        "Koran 22:26"
+      ]
+    },
+    {
+      "id": "medina-und-prophetenmoschee",
+      "titel": "Medina und die Prophetenmoschee",
+      "tags": [
+        "medina",
+        "prophetenmoschee",
+        "masdschid an-nabawi",
+        "yathrib",
+        "zweitwichtigste moschee",
+        "quba"
+      ],
+      "text": "Medina hieß vor der Hidschra Yathrib und wurde nach der Ankunft des Propheten ﷺ Madinat an-Nabi genannt, die Stadt des Propheten. Auf dem Weg dorthin rastete er in Quba und gründete dort die erste Moschee des Islam. In Medina selbst bauten die Muslime gemeinsam aus Lehmziegeln und Palmstämmen die Prophetenmoschee — der Prophet ﷺ trug dabei selbst Steine wie jeder andere. Sie war weit mehr als ein Gebetsort: Schule, Versammlungsort, Gericht und Zuflucht für Arme, von deren schattiger Bank (Suffa) mittellose Gefährten lernten. In Medina schloss der Prophet ﷺ auch die Bruderschaft zwischen den Auswanderern aus Mekka (Muhadschirun) und den Helfern der Stadt (Ansar) und vereinbarte mit den dort lebenden jüdischen Stämmen eine gemeinsame Schutzordnung. Heute befindet sich in der Prophetenmoschee sein Grab; sie gilt Muslimen nach Mekka als zweitwichtigste Moschee.",
+      "belege": [
+        "Koran 9:108",
+        "Koran 59:9"
+      ]
+    },
+    {
+      "id": "al-aqsa",
+      "titel": "Al-Aqsa in Jerusalem",
+      "tags": [
+        "al-aqsa",
+        "jerusalem",
+        "erste qibla",
+        "nachtreise",
+        "isra",
+        "dritte heilige staette"
+      ],
+      "text": "Die al-Aqsa-Moschee in Jerusalem ist Muslimen nach Mekka und Medina die dritte besonders geehrte Gebetsstätte. Der Koran beginnt die Sure al-Isra mit der Nachtreise: Allah ließ Seinen Diener bei Nacht von der geschützten Gebetsstätte in Mekka zur fernsten Gebetsstätte reisen, deren Umgebung Er gesegnet hat; dort stand der Prophet ﷺ den früheren Propheten im Gebet vor. Jerusalem war außerdem die erste Qibla der Muslime, bis die Gebetsrichtung auf Anweisung Allahs nach Mekka gewendet wurde. Mit „al-Aqsa“ ist im islamischen Sprachgebrauch meist das ganze umschlossene Areal gemeint, zu dem auch der Felsendom gehört. Die Stadt ist zugleich für Juden und Christen heilig — die politische Lage dort ist umstritten und gehört nicht zum religiösen Grundwissen.",
+      "belege": [
+        "Koran 17:1",
+        "Koran 2:144"
+      ]
+    },
+    {
+      "id": "hidschra",
+      "titel": "Die Hidschra — Auswanderung nach Medina",
+      "tags": [
+        "hidschra",
+        "auswanderung",
+        "medina",
+        "hoehle thaur",
+        "beginn der zeitrechnung",
+        "622"
+      ],
+      "text": "Nach Jahren der Verfolgung in Mekka fanden die Muslime in Yathrib Verbündete: Zwölf Männer leisteten den ersten Treueid von Aqaba, ein Jahr später schworen über siebzig Männer und Frauen, den Propheten ﷺ zu schützen wie ihre eigenen Familien. Als die Quraisch beschlossen, ihn zu töten, legte sich Ali in sein Bett, während der Prophet ﷺ mit Abu Bakr das Haus verließ; drei Tage verbargen sich beide in der Höhle Thaur, wo Abu Bakr die Worte hörte: „Sei nicht traurig, Allah ist mit uns.“ Nach etwa zwei Wochen auf ungewohnten Küstenpfaden erreichten sie Quba am Rand von Yathrib. Diese Auswanderung — arabisch Hidschra, im Jahr 622 nach christlicher Zeitrechnung — wurde später zum Beginn der islamischen Zeitrechnung, weil mit ihr aus einer verfolgten Gruppe eine Gemeinschaft wurde. Der Prophet ﷺ betonte dabei, dass es bei jeder Auswanderung auf die Absicht ankommt.",
+      "belege": [
+        "Koran 9:40",
+        "Koran 8:72",
+        "an-Nawawī Nr. 1 — Sahih al-Bukhari 1, Sahih Muslim 1907"
+      ]
+    },
+    {
+      "id": "die-vier-kalifen",
+      "titel": "Die vier rechtgeleiteten Kalifen",
+      "tags": [
+        "kalifen",
+        "abu bakr",
+        "umar",
+        "uthman",
+        "ali",
+        "rechtgeleitete kalifen"
+      ],
+      "text": "Nach dem Tod des Propheten ﷺ im Jahr 632 führten nacheinander vier seiner engsten Gefährten die Gemeinschaft; sie werden die rechtgeleiteten Kalifen genannt. Abu Bakr as-Siddiq wurde als Erster gewählt, bewahrte in den Ridda-Kriegen die Einheit und ließ den Koran erstmals in einem einzigen Band sammeln. Umar ibn al-Chattab regierte rund zehn Jahre, lebte bescheidener als viele seiner Untertanen, schuf Verwaltung, Gerichtsbarkeit und ein staatliches Sozialsystem und wurde 644 während des Fadschr-Gebets ermordet. Uthman ibn ʿAffan ließ auf Grundlage der gesammelten Blätter den einheitlichen Mushaf erstellen und an die Hauptstädte senden — den Text, den Muslime bis heute rezitieren. Ali ibn Abi Talib wurde 656 zum vierten Kalifen gewählt, galt als herausragender Rechtsgelehrter und Redner und wurde 661 in Kufa ermordet. Der Prophet ﷺ hatte seiner Gemeinde geraten, an seiner Sunna und der Sunna der rechtgeleiteten Kalifen festzuhalten.",
+      "belege": [
+        "an-Nawawī Nr. 28 — Sunan Abu Dawud, Sunan at-Tirmidhi (sahih)"
+      ]
+    },
+    {
+      "id": "wer-sind-die-sahaba",
+      "titel": "Wer sind die Sahaba",
+      "tags": [
+        "sahaba",
+        "gefaehrten",
+        "wer sind die sahaba",
+        "muhadschirun",
+        "ansar",
+        "erste muslime"
+      ],
+      "text": "Sahaba heißen die Gefährten des Propheten ﷺ: Menschen, die ihn als Gläubige selbst gesehen und begleitet haben. Sie waren keine gleichförmige Gruppe, sondern ein Querschnitt der Gesellschaft — die Kauffrau Chadidscha, der wohlhabende Abu Bakr, der einst versklavte Äthiopier Bilal, die gelehrte Aischa, junge und alte, arme und reiche Menschen. Der Koran unterscheidet zwischen den Muhadschirun, die aus Mekka auswanderten und Heimat und Besitz zurückließen, und den Ansar, den Helfern aus Medina, die ihre Häuser und Ernten mit ihnen teilten. Über sie sind Koranverse offenbart, die Allahs Wohlgefallen an den Vorausgeeilten und ihren aufrichtigen Nachfolgern ausdrücken. Die Sahaba sind für Muslime deshalb wichtig, weil sie die Überlieferer des Korans und der Sunna sind — was wir über den Propheten ﷺ wissen, kam über sie zu uns.",
+      "belege": [
+        "Koran 9:100",
+        "Koran 59:8",
+        "Koran 59:9",
+        "Koran 48:29"
+      ]
+    },
+    {
+      "id": "was-ist-sunnah",
+      "titel": "Was ist die Sunnah",
+      "tags": [
+        "sunnah",
+        "was ist sunna",
+        "vorbild des propheten",
+        "quran und sunna",
+        "freiwillige gebete"
+      ],
+      "text": "Sunnah bedeutet wörtlich „Weg“ oder „Gewohnheit“ und bezeichnet die überlieferte Lebensweise des Propheten ﷺ: was er sagte, tat und stillschweigend billigte. Der Koran nennt ihn ein schönes Vorbild und weist die Gläubigen an, anzunehmen, was der Gesandte ihnen gibt, und zu lassen, was er untersagt. Die Sunnah ist damit die zweite Grundquelle des Islam neben dem Koran — sie erklärt, wie das Gebet, das Fasten oder die Zakat praktisch aussehen, was der Koran selbst nicht im Einzelnen beschreibt. Achtung: Im Alltag hat das Wort noch eine zweite, engere Bedeutung. Wenn jemand sagt „das ist Sunnah“, meint er meist eine empfohlene, freiwillige Handlung im Gegensatz zur Pflicht (fard) — zum Beispiel die freiwilligen Gebetseinheiten vor und nach den Pflichtgebeten. Welche Bedeutung gemeint ist, ergibt sich aus dem Zusammenhang.",
+      "belege": [
+        "Koran 33:21",
+        "Koran 59:7",
+        "Koran 4:80",
+        "an-Nawawī Nr. 28 — Sunan Abu Dawud, Sunan at-Tirmidhi (sahih)"
+      ]
+    },
+    {
+      "id": "was-ist-ein-hadith",
+      "titel": "Was ist ein Hadith",
+      "tags": [
+        "hadith",
+        "was ist ein hadith",
+        "isnad",
+        "sahih",
+        "hasan",
+        "daif",
+        "bukhari"
+      ],
+      "text": "Ein Hadith ist ein überlieferter Bericht über eine Aussage, Handlung oder Billigung des Propheten ﷺ. Jeder Hadith besteht aus zwei Teilen: der Überliefererkette (Isnad) — wer hat es von wem gehört, zurück bis zu einem Gefährten — und dem eigentlichen Text (Matn). Gelehrte haben über Jahrhunderte die Lebensdaten, den Ruf und die Genauigkeit jedes einzelnen Überlieferers geprüft; daraus entstand eine eigene Wissenschaft der Hadithkritik. Grob unterscheidet man drei Stufen: sahih (gesund, durchgehende Kette zuverlässiger Überlieferer), hasan (gut, etwas schwächer, aber brauchbar) und daif (schwach, etwa wegen einer Lücke in der Kette oder eines unzuverlässigen Überlieferers). Bekannte Sammlungen sind Sahih al-Buchari und Sahih Muslim; auch die vierzig Hadithe an-Nawawis, die in dieser App stehen, stammen daraus. Die Einstufung einzelner Berichte ist Fachwissen — nicht jede Aussage, die im Internet als Hadith kursiert, ist echt.",
+      "belege": [
+        "Koran 49:6"
+      ]
+    },
+    {
+      "id": "rechtsschulen-madhhab",
+      "titel": "Die Rechtsschulen (Madhhab)",
+      "tags": [
+        "madhhab",
+        "rechtsschule",
+        "was ist ein madhhab",
+        "hanafi",
+        "maliki",
+        "schafii",
+        "hanbali",
+        "welche rechtsschule"
+      ],
+      "text": "Ein Madhhab ist eine Rechtsschule: eine über Jahrhunderte gewachsene Methode, aus Koran und Sunnah konkrete Antworten für den Alltag abzuleiten. Im sunnitischen Islam sind vier verbreitet — die hanafitische, die malikitische, die schafiitische und die hanbalitische; Schiiten folgen unter anderem der dschaʿfaritischen Schule. Sie unterscheiden sich nicht im Glauben an Allah, den Propheten ﷺ oder den Koran, sondern in Detailfragen der Praxis: wie die Hände beim Gebet gehalten werden, was die Waschung ungültig macht, wie Fristen berechnet werden. Diese Vielfalt gilt traditionell als Erleichterung, nicht als Spaltung — der Koran fordert dazu auf, die Leute des Wissens zu fragen, wenn man etwas nicht weiß. Als Anfänger muss man sich nicht sofort festlegen: Meist ist es am einfachsten, der Praxis der örtlichen Moschee zu folgen und bei Unterschieden nachzufragen, statt zwischen Meinungen zu wechseln.",
+      "belege": [
+        "Koran 16:43",
+        "Koran 21:7",
+        "Koran 4:59"
+      ]
+    },
+    {
+      "id": "was-ist-eine-fatwa",
+      "titel": "Was ist eine Fatwa — und warum die Salati-KI keine gibt",
+      "tags": [
+        "fatwa",
+        "was ist eine fatwa",
+        "darf ich das",
+        "gelehrter fragen",
+        "imam fragen",
+        "rechtsauskunft"
+      ],
+      "text": "Eine Fatwa ist die Rechtsauskunft eines qualifizierten Gelehrten (Mufti) zu einer konkreten Frage. Sie ist kein Urteil, das jemanden zwingt, sondern eine begründete Antwort auf genau diesen Fall — und sie hängt stark von den Umständen ab: Ort, Zeit, Gesundheit, finanzielle Lage, geltendes Recht. Deshalb kann dieselbe Frage bei zwei Menschen zwei verschiedene richtige Antworten haben, und deshalb lassen sich Fatwas aus dem Internet selten einfach übertragen. Der Koran warnt ausdrücklich davor, über Allah zu sagen, was man nicht weiß, und dem zu folgen, wovon man kein Wissen hat. Die Salati-KI gibt aus diesem Grund keine Fatwa: Sie kann Grundwissen erklären, Belege zeigen und Begriffe einordnen — aber sie kennt deine Lebenssituation nicht, kann nicht nachfragen und trägt keine Verantwortung. Für persönliche Fragen ist der örtliche Imam oder eine anerkannte Gelehrte die richtige Adresse.",
+      "belege": [
+        "Koran 16:43",
+        "Koran 7:33",
+        "Koran 17:36"
+      ]
+    },
+    {
+      "id": "halal-und-haram-essen",
+      "titel": "Halal und Haram beim Essen",
+      "tags": [
+        "halal",
+        "haram",
+        "was darf ich essen",
+        "halal essen",
+        "gelatine",
+        "e-nummern",
+        "zweifelhaft"
+      ],
+      "text": "Der Grundsatz beim Essen ist Erlaubnis: Der Koran ruft die Menschen auf, von dem zu essen, was auf der Erde erlaubt und gut ist. Verboten ist ausdrücklich nur weniges — Verendetes, Blut, Schweinefleisch, was im Namen eines anderen als Allah geschlachtet wurde, und Berauschendes. Der Prophet ﷺ hat außerdem gelehrt, dass zwischen dem klar Erlaubten und dem klar Verbotenen zweifelhafte Dinge liegen und dass wer sich vor ihnen hütet, seinen Glauben und seine Ehre rein hält. Praktisch heißt das in Deutschland: Zutatenlisten lesen (Gelatine, Schmalz, Aromen auf Alkoholbasis), im Zweifel nachfragen und Zertifikate nutzen, wo es sie gibt. Wie streng einzelne Zusatzstoffe, Enzyme oder Spuren von Alkohol in Aromen zu bewerten sind, beurteilen Gelehrte unterschiedlich — bei wiederkehrenden Zweifelsfällen hilft ein Gespräch mit dem örtlichen Imam mehr als eine schnelle Internetantwort.",
+      "belege": [
+        "Koran 2:168",
+        "Koran 5:88",
+        "Koran 5:3",
+        "an-Nawawī Nr. 6 — Sahih al-Bukhari 52, Sahih Muslim 1599",
+        "an-Nawawī Nr. 10 — Sahih Muslim 1015"
+      ]
+    },
+    {
+      "id": "alkohol",
+      "titel": "Alkohol im Islam",
+      "tags": [
+        "alkohol",
+        "darf ich alkohol trinken",
+        "wein",
+        "bier",
+        "berauschendes",
+        "alkohol im essen"
+      ],
+      "text": "Berauschende Getränke sind im Islam verboten. Der Koran nennt sie zusammen mit dem Glücksspiel einen Greuel vom Werk des Satans, der Feindschaft und Hass sät und vom Gedenken Allahs und vom Gebet abhält; an anderer Stelle heißt es, ihre Sünde sei größer als ihr Nutzen. Das Verbot kam nicht auf einmal, sondern in Stufen — zuerst das Verbot, betrunken zum Gebet zu kommen, dann das vollständige Verbot. Es gilt nicht nur für das Trinken selbst, sondern auch für Herstellung, Handel und Ausschank. Wie mit geringen Alkoholmengen in Speisen, Medikamenten, Mundwasser oder alkoholfreiem Bier mit Restalkohol umzugehen ist, bewerten die Rechtsschulen unterschiedlich; das ist eine Frage für den örtlichen Imam. Wer mit Alkohol zu kämpfen hat, findet in Deutschland auch professionelle Suchtberatung — Hilfe zu suchen ist kein Widerspruch zum Glauben.",
+      "belege": [
+        "Koran 5:90",
+        "Koran 5:91",
+        "Koran 2:219",
+        "Koran 4:43"
+      ]
+    },
+    {
+      "id": "schweinefleisch",
+      "titel": "Schweinefleisch",
+      "tags": [
+        "schweinefleisch",
+        "darf ich schweinefleisch essen",
+        "schwein",
+        "gelatine",
+        "notlage",
+        "verboten"
+      ],
+      "text": "Schweinefleisch gehört zu den wenigen Dingen, die der Koran ausdrücklich und mehrfach als verboten nennt — neben Verendetem, Blut und dem, worüber ein anderer Name als der Allahs angerufen wurde. Ein Grund wird nicht ausführlich genannt; Muslime folgen dem Verbot als Anweisung Allahs, nicht wegen einer medizinischen Begründung. Praktisch betrifft das auch Erzeugnisse aus dem Schwein, etwa Schweineschmalz und Gelatine in Süßwaren, Joghurt oder Kapseln — hier lohnt der Blick auf die Zutatenliste. Der Koran macht zugleich eine ausdrückliche Ausnahme: Wer sich in einer echten Zwangslage befindet, ohne danach zu begehren oder das Maß zu überschreiten, trifft keine Sünde. Wenn du versehentlich etwas gegessen hast, ist das kein Grund zur Panik: Du sagst dir bewusst los davon, bittest Allah um Vergebung und achtest künftig darauf.",
+      "belege": [
+        "Koran 2:173",
+        "Koran 5:3",
+        "Koran 6:145",
+        "Koran 16:115"
+      ]
+    },
+    {
+      "id": "schaechten-und-fleisch-im-westen",
+      "titel": "Schächten und Fleisch im Westen",
+      "tags": [
+        "schaechten",
+        "halal fleisch",
+        "ist supermarktfleisch halal",
+        "betaeubung",
+        "speise der leute der schrift",
+        "maschinenschlachtung"
+      ],
+      "text": "Beim islamischen Schlachten wird das Tier mit einem scharfen Messer durch einen schnellen Halsschnitt getötet, und dabei wird der Name Allahs ausgesprochen. Der Prophet ﷺ hat dazu gelehrt, Vortrefflichkeit auch beim Schlachten zu wahren: die Klinge zu schärfen und das Tier zu schonen. Verboten ist Fleisch von Tieren, die verendet sind, erstickt oder erschlagen wurden oder über denen ein anderer Name als der Allahs angerufen wurde. In Europa wird die Sache dadurch komplizierter, dass das Tierschutzrecht in vielen Ländern eine Betäubung vor dem Schnitt verlangt, dass viel Geflügel maschinell geschlachtet wird und dass „halal“ kein einheitlich geschützter Begriff ist. Genau hier gehen die Meinungen der Gelehrten auseinander: Manche akzeptieren eine reversible Betäubung und berufen sich zusätzlich auf den Vers, der die Speise der Leute der Schrift erlaubt, andere lehnen Betäubung und Maschinenschlachtung ab. Wer sichergehen will, kauft bei einem Metzger, dessen Verfahren er kennt, oder folgt der Auskunft seines örtlichen Imams; im Zweifel gilt der Rat, das zu lassen, was Zweifel weckt.",
+      "belege": [
+        "Koran 5:3",
+        "Koran 6:118",
+        "Koran 5:5",
+        "an-Nawawī Nr. 17 — Sahih Muslim 1955",
+        "an-Nawawī Nr. 11 — Jami' at-Tirmidhi 2518, Sunan an-Nasa'i 5711"
+      ]
+    },
+    {
+      "id": "riba-zinsen",
+      "titel": "Riba — Zinsen",
+      "tags": [
+        "riba",
+        "zinsen",
+        "sind zinsen haram",
+        "kredit",
+        "hauskauf",
+        "islamische finanzen",
+        "girokonto"
+      ],
+      "text": "Riba bezeichnet den Zins beziehungsweise den unrechtmäßigen Zuwachs, der ohne Gegenleistung und ohne geteiltes Risiko entsteht. Der Koran verbietet ihn deutlich und stellt fest, dass Allah den Handel erlaubt und den Zins verboten hat; wer noch offene Zinsgeschäfte hat, soll sie lassen, behält aber sein eingesetztes Grundvermögen — so wird weder Unrecht getan noch erlitten. Der Gedanke dahinter ist, dass Gewinn aus echter Leistung und geteiltem Risiko entstehen soll, nicht aus der Notlage anderer. Im Alltag in Deutschland wirft das viele praktische Fragen auf: Girokonto, Bausparvertrag, Ratenkauf, Baufinanzierung, Verzugszinsen, betriebliche Altersvorsorge. Dazu gibt es unter Gelehrten verschiedene Positionen — von strikter Vermeidung über die Nutzung islamkonformer Finanzierungsmodelle bis zu Ausnahmen in Notlagen. Das ist eine typische Frage für eine persönliche Beratung durch eine Gelehrte oder den örtlichen Imam, nicht für eine pauschale Antwort.",
+      "belege": [
+        "Koran 2:275",
+        "Koran 2:276",
+        "Koran 2:278",
+        "Koran 2:279",
+        "Koran 3:130"
+      ]
+    },
+    {
+      "id": "kleidung-und-bedeckung",
+      "titel": "Kleidung und Bedeckung",
+      "tags": [
+        "kleidung",
+        "hidschab",
+        "kopftuch",
+        "muss ich kopftuch tragen",
+        "awra",
+        "kleidung fuer maenner",
+        "bedeckung"
+      ],
+      "text": "Der Koran richtet die Anweisung zur Zurückhaltung zuerst an die Männer: Sie sollen ihre Blicke senken und ihre Scham hüten. Unmittelbar danach gilt dasselbe für die Frauen, ergänzt um die Anweisung, ihre Kopftücher über den Brustschlitz des Gewandes zu schlagen und ihren Schmuck nicht offen zu zeigen. Unstrittig ist damit ein gemeinsamer Kern: Kleidung soll bedecken, nicht durchsichtig oder aufreizend sein, und Anstand betrifft beide Geschlechter. Über die Einzelheiten gibt es Unterschiede zwischen den Rechtsschulen — etwa, welche Körperteile bei Frauen außerhalb der Familie sichtbar bleiben dürfen und wie genau der Bereich zwischen Nabel und Knie beim Mann zu verstehen ist; Gesichtsschleier gilt der Mehrheit als freiwillig, nicht als Pflicht. Der Koran erinnert zugleich daran, dass die beste Kleidung die der Gottesfurcht ist. Für Konvertitinnen und Neueinsteiger gilt: Das wächst mit der Zeit, geschieht ohne Zwang und ist kein Maßstab, um andere zu bewerten.",
+      "belege": [
+        "Koran 24:30",
+        "Koran 24:31",
+        "Koran 33:59",
+        "Koran 7:26"
+      ]
+    },
+    {
+      "id": "ehe-im-islam",
+      "titel": "Die Ehe im Islam",
+      "tags": [
+        "ehe",
+        "heiraten",
+        "nikah",
+        "wie heiratet man islamisch",
+        "mahr",
+        "standesamt",
+        "hochzeit"
+      ],
+      "text": "Die Ehe gilt im Islam als eine der schönsten Einrichtungen und wird als Zeichen Allahs beschrieben: Er hat Gattinnen erschaffen, damit man bei ihnen Ruhe findet, und Zuneigung und Barmherzigkeit zwischen sie gelegt. Der Koran nennt den Ehebund ein festes Abkommen und beschreibt die Eheleute als Kleid füreinander — als Schutz, Nähe und Würde. Zum Eheschluss gehören nach allgemeiner Auffassung das freie Einverständnis beider, Angebot und Annahme, Zeugen sowie eine Brautgabe (Mahr) an die Frau, die ihr allein gehört. Zwangsverheiratung ist unzulässig und in Deutschland zudem strafbar. In den Einzelheiten unterscheiden sich die Rechtsschulen — etwa in der Rolle des Vormunds (Wali) der Braut, in der Zahl der Zeugen und in Formfragen. Wichtig für Deutschland: Eine religiöse Trauung allein begründet keine zivilrechtlichen Ansprüche; die standesamtliche Eheschließung schützt beide Seiten. Für die konkrete Durchführung ist die örtliche Moschee der richtige Ansprechpartner.",
+      "belege": [
+        "Koran 30:21",
+        "Koran 4:21",
+        "Koran 24:32",
+        "Koran 2:187"
+      ]
+    },
+    {
+      "id": "rechte-in-der-ehe",
+      "titel": "Rechte und Pflichten in der Ehe",
+      "tags": [
+        "rechte in der ehe",
+        "pflichten ehemann",
+        "pflichten ehefrau",
+        "streit in der ehe",
+        "gewalt in der ehe",
+        "unterhalt"
+      ],
+      "text": "Der Koran fasst das Verhältnis der Eheleute in einem Grundsatz zusammen: Geht in rechtlicher, guter Weise miteinander um — und den Frauen steht gegenüber den Männern das Gleiche zu, wie den Männern gegenüber ihnen. Daraus leiten die Gelehrten gemeinsame Grundrechte ab: Respekt, Treue, Gespräch, körperliche und seelische Zuwendung, Bewahrung der Geheimnisse des anderen. Klassisch beschrieben wird zusätzlich eine Rollenverteilung, in der der Mann für den Unterhalt aufkommt, während das Vermögen der Frau ihr allein gehört; wie das heute in einer Ehe mit zwei Berufstätigen praktisch aussieht, wird von Gelehrten unterschiedlich beantwortet und ist im Rahmen des Erlaubten Sache der Absprache. Unstrittig ist dagegen: Der Prophet ﷺ hat den Grundsatz gelehrt, dass es keinen Schaden und keine Schadenszufügung gibt. Häusliche Gewalt lässt sich damit nicht rechtfertigen — sie ist Unrecht und in Deutschland strafbar. Wer betroffen ist, darf und soll sich Hilfe holen: beim Hilfetelefon Gewalt gegen Frauen, bei Beratungsstellen und, wenn nötig, bei der Polizei.",
+      "belege": [
+        "Koran 4:19",
+        "Koran 2:228",
+        "Koran 30:21",
+        "an-Nawawī Nr. 32 — Sunan Ibn Majah (hasan)"
+      ]
+    },
+    {
+      "id": "kindererziehung",
+      "titel": "Kindererziehung im Islam",
+      "tags": [
+        "kindererziehung",
+        "kinder",
+        "erziehung",
+        "wie erziehe ich mein kind islamisch",
+        "gebet lernen",
+        "vorbild"
+      ],
+      "text": "Der Koran zeigt Erziehung am Beispiel Luqmans, der seinem Sohn zuerst den Kern des Glaubens ans Herz legt — Allah nichts beizugesellen — und ihn dann anleitet, das Gebet zu verrichten, das Rechte zu gebieten, das Verwerfliche zu verbieten und geduldig zu ertragen, was ihn trifft. Bemerkenswert ist der Ton: Luqman spricht seinen Sohn immer wieder mit „mein lieber Sohn“ an, also mit Zuneigung, nicht mit Härte. An anderer Stelle werden die Gläubigen aufgefordert, sich selbst und ihre Angehörigen zu bewahren, und der Prophet ﷺ wird angewiesen, seine Familie zum Gebet anzuhalten und selbst beharrlich darin zu sein — die eigene Praxis kommt also vor der Ermahnung. Praktisch heißt das: früh und liebevoll mitnehmen statt erzwingen, altersgerecht erklären, gemeinsam beten und lesen, Fehler verzeihen und Vertrauen aufbauen. Körperliche Züchtigung ist in Deutschland gesetzlich verboten und mit dem barmherzigen Umgang des Propheten ﷺ mit Kindern nicht vereinbar.",
+      "belege": [
+        "Koran 31:13",
+        "Koran 31:17",
+        "Koran 66:6",
+        "Koran 20:132"
+      ]
+    },
+    {
+      "id": "verwandtschaftsbande",
+      "titel": "Verwandtschaftsbande pflegen",
+      "tags": [
+        "verwandtschaft",
+        "eltern",
+        "silat ar-rahim",
+        "kontakt zur familie",
+        "eltern ehren",
+        "nichtmuslimische eltern"
+      ],
+      "text": "Die Pflege der Verwandtschaftsbande, arabisch Silat ar-Rahim, hat im Islam großes Gewicht. Der Koran nennt die Verwandtschaftsbande direkt neben der Gottesfurcht, lobt diejenigen, die verbinden, was Allah zu verbinden befohlen hat, und tadelt das Zerreißen der Bande als Unheil. Besonders hervorgehoben sind die Eltern: Man soll gütig zu ihnen sein, sie im Alter nicht anfahren, ehrerbietig mit ihnen sprechen und für sie beten — und der Koran erinnert eigens an die Mühe der Mutter, die unter wiederholter Schwäche getragen hat. Das gilt ausdrücklich auch dann, wenn die Eltern nicht muslimisch sind; für viele Konvertitinnen und Konvertiten ist das eine wichtige Klarstellung. Pflege der Bande heißt dabei nicht, jedes Unrecht hinzunehmen: Wo eine Beziehung schädlich ist, darf man Abstand halten und trotzdem freundlich bleiben, für die Person beten und die Tür offen lassen. Praktisch reichen oft kleine Dinge — ein Anruf, ein Besuch, ein Gruß zum Fest.",
+      "belege": [
+        "Koran 4:1",
+        "Koran 17:23",
+        "Koran 17:24",
+        "Koran 31:14",
+        "Koran 47:22",
+        "Koran 13:21"
+      ]
+    },
+    {
+      "id": "tod-und-trauer",
+      "titel": "Tod und Trauer",
+      "tags": [
+        "tod",
+        "trauer",
+        "trauerzeit",
+        "wie trauern muslime",
+        "beileid",
+        "inna lillah",
+        "jenseits"
+      ],
+      "text": "Der Koran stellt nüchtern fest, dass jede Seele den Tod kosten wird und das diesseitige Leben nur ein vergänglicher Genuss ist. Wenn Muslime vom Tod eines Menschen erfahren, sprechen sie deshalb die Worte, die der Koran den Geduldigen zuschreibt: „Wir gehören Allah, und zu Ihm kehren wir zurück.“ Trauer ist erlaubt und menschlich — auch der Prophet ﷺ weinte um seinen Sohn; untersagt ist nach der Überlieferung nur die maßlose Klage, die mit Allahs Bestimmung hadert. Praktisch bedeutet Beistand: die Familie besuchen, Essen bringen, für die verstorbene Person um Vergebung bitten, den Kindern altersgerecht antworten. Nach der Überlieferung enden die Taten eines Menschen mit dem Tod, außer fortwirkende Spende, nützliches Wissen und ein rechtschaffenes Kind, das für ihn betet — deshalb ist das Bittgebet für Verstorbene so wichtig. Der Prophet ﷺ riet, in dieser Welt zu leben wie ein Fremder oder Wegereisender.",
+      "belege": [
+        "Koran 3:185",
+        "Koran 21:35",
+        "Koran 2:156",
+        "an-Nawawī Nr. 40 — Sahih al-Bukhari"
+      ]
+    },
+    {
+      "id": "janazah-totengebet",
+      "titel": "Das Totengebet (Janazah)",
+      "tags": [
+        "janazah",
+        "totengebet",
+        "beerdigung",
+        "wie laeuft eine islamische beerdigung",
+        "ghusl",
+        "begraebnis",
+        "friedhof"
+      ],
+      "text": "Wenn ein Muslim stirbt, gehört es zu den Pflichten der Gemeinschaft, ihn zu waschen (Ghusl), in schlichte weiße Tücher zu hüllen (Kafan), das Totengebet zu verrichten und ihn zu bestatten. Diese Aufgaben gelten als Fard Kifaya: Verrichtet sie ein Teil der Gemeinde, ist die Pflicht für alle erfüllt. Das Totengebet selbst ist kurz und wird im Stehen verrichtet, ohne Verbeugung und Niederwerfung — vier Takbir, dazwischen die Eröffnungssure, das Gebet für den Propheten ﷺ und ein Bittgebet für die verstorbene Person; anschließend folgt der Salam. Die Bestattung soll ohne unnötige Verzögerung erfolgen, üblicherweise ohne Sarg auf der rechten Seite mit dem Gesicht zur Qibla, mit einem schlichten Grab. In Deutschland regeln die Bestattungsgesetze der Länder Fristen, Sargpflicht und Grabfelder unterschiedlich; viele Städte haben inzwischen muslimische Grabfelder. Praktische Fragen — sargloses Begräbnis, Überführung, Fristen — klärt man am besten frühzeitig mit der Gemeinde und einem erfahrenen Bestatter. Der Koran erinnert an den einfachen Gedanken dahinter: Aus der Erde wurden wir erschaffen, in sie kehren wir zurück, und aus ihr werden wir ein anderes Mal hervorgebracht.",
+      "belege": [
+        "Koran 20:55",
+        "Koran 80:21"
+      ]
+    },
+    {
+      "id": "erbrecht-grundzuege",
+      "titel": "Islamisches Erbrecht — Grundzüge",
+      "tags": [
+        "erbrecht",
+        "erben",
+        "testament",
+        "wie wird im islam vererbt",
+        "pflichtteil",
+        "deutsches recht",
+        "nachlass"
+      ],
+      "text": "Der Koran regelt die Erbfolge ungewöhnlich detailliert und legt fest, dass sowohl Männern als auch Frauen ein festgesetzter Anteil am Nachlass der Eltern und nächsten Verwandten zusteht — zu einer Zeit, in der Frauen vielerorts gar nicht erbberechtigt waren. Genannt werden konkrete Quoten für Kinder, Eltern, Ehegatten und Geschwister, jeweils nach Abzug von Schulden und eines Vermächtnisses. Dass ein Sohn in bestimmten Konstellationen doppelt so viel erhält wie eine Tochter, steht dabei im Zusammenhang mit den Unterhaltspflichten, die klassisch dem Mann zugewiesen sind, während das Vermögen der Frau ihr allein gehört; andere Konstellationen führen zu anderen Verhältnissen. Die konkrete Berechnung ist ein eigenes Fachgebiet (ʿIlm al-Faraʾid) und lässt sich nicht aus dem Gedächtnis erledigen. Für Muslime in Deutschland kommt hinzu, dass hier grundsätzlich deutsches Erbrecht mit Pflichtteilsansprüchen gilt; wer seinen Nachlass islamisch ordnen möchte, braucht dafür ein Testament und sollte sich sowohl von einer Gelehrten oder dem örtlichen Imam als auch juristisch beraten lassen.",
+      "belege": [
+        "Koran 4:7",
+        "Koran 4:11",
+        "Koran 4:12",
+        "Koran 4:176",
+        "Koran 2:180"
+      ]
+    },
+    {
+      "id": "moschee-etikette",
+      "titel": "Verhalten in der Moschee",
+      "tags": [
+        "moschee",
+        "moschee etikette",
+        "darf ich als nichtmuslim in die moschee",
+        "schuhe ausziehen",
+        "erster moscheebesuch",
+        "benehmen"
+      ],
+      "text": "Eine Moschee ist zuerst ein Ort des Gebets: Der Koran sagt, dass die Gebetsstätten Allah gehören und dass neben Ihm niemand angerufen werden soll. Üblich sind ein paar einfache Dinge: Schuhe am Eingang ausziehen, sauber und ordentlich gekleidet kommen, leise sein, nicht vor Betenden hindurchgehen, das Handy stummschalten und beim Eintreten mit dem rechten Fuß zwei kurze Gebetseinheiten zur Begrüßung der Moschee verrichten, wenn gerade Zeit dafür ist. In den meisten Moscheen beten Männer und Frauen in getrennten Bereichen. Der Koran erinnert daran, seinen Schmuck — also gepflegte Kleidung — bei jeder Gebetsstätte anzulegen, und zugleich nicht maßlos zu sein. Gäste und Nichtmuslime sind in aller Regel willkommen, besonders am Tag der offenen Moschee; ein kurzer Hinweis am Eingang oder eine Frage an eine Person vor Ort klärt Kleiderfragen und den passenden Zeitpunkt. Wer zum ersten Mal kommt, darf ruhig sagen, dass er neu ist — meistens hilft jemand gern weiter.",
+      "belege": [
+        "Koran 72:18",
+        "Koran 9:18",
+        "Koran 7:31"
+      ]
+    },
+    {
+      "id": "spenden-und-waqf",
+      "titel": "Spenden, Sadaqa und Waqf",
+      "tags": [
+        "spenden",
+        "sadaqa",
+        "waqf",
+        "stiftung",
+        "wem darf ich spenden",
+        "sadaqa dscharija",
+        "zakat empfaenger"
+      ],
+      "text": "Neben der Pflichtabgabe Zakat kennt der Islam die freiwillige Spende (Sadaqa), die jederzeit und in jeder Höhe gegeben werden kann. Der Koran vergleicht sie mit einem Saatkorn, das sieben Ähren mit je hundert Körnern wachsen lässt, und stellt fest, dass man die wahre Güte erst erreicht, wenn man von dem gibt, was einem lieb ist. Für die Zakat nennt der Koran acht Empfängergruppen, darunter Arme, Bedürftige, Verschuldete und Reisende in Not. Sadaqa ist dabei nicht auf Geld beschränkt: Der Prophet ﷺ hat gelehrt, dass ein gutes Wort, gerechtes Schlichten, Hilfe beim Tragen, jeder Schritt zum Gebet und selbst das Entfernen eines Hindernisses vom Weg Sadaqa sind — auch wer wenig hat, kann also geben. Ein Waqf ist eine dauerhafte Stiftung: Ein Grundstück, ein Brunnen, eine Moschee oder eine Schule wird unwiderruflich einem guten Zweck gewidmet, sodass der Nutzen fortlaufend fließt. Ein bekanntes Beispiel ist der Brunnen von Ruma, den Uthman ibn ʿAffan kaufte und der Gemeinschaft für immer freigab.",
+      "belege": [
+        "Koran 2:261",
+        "Koran 3:92",
+        "Koran 9:60",
+        "Koran 57:18",
+        "an-Nawawī Nr. 26 — Sahih al-Bukhari, Sahih Muslim"
+      ]
+    },
+    {
+      "id": "umgang-mit-fehlern-und-reue",
+      "titel": "Umgang mit Fehlern und Reue (Tauba)",
+      "tags": [
+        "tauba",
+        "reue",
+        "suenden",
+        "ich habe eine suende begangen",
+        "vergebung",
+        "istighfar",
+        "neuanfang"
+      ],
+      "text": "Fehler gehören zum Menschsein — entscheidend ist, was danach kommt. Der Koran richtet einen der tröstlichsten Verse überhaupt an alle, die gegen sich selbst maßlos waren: Sie sollen die Hoffnung auf Allahs Barmherzigkeit nicht verlieren, denn Allah vergibt die Sünden alle. Aufrichtige Reue (Tauba) besteht klassisch aus vier Schritten: die Tat einstellen, sie bereuen, fest entschließen, nicht dorthin zurückzukehren — und, wenn ein Mensch geschädigt wurde, das Unrecht wiedergutmachen oder um Verzeihung bitten. Es braucht dafür keinen Vermittler und kein Geständnis vor anderen; die eigenen Fehler nicht öffentlich auszubreiten gilt sogar als besser. Der Prophet ﷺ überlieferte von Allah, dass Er vergibt, solange der Mensch Ihn anruft und auf Ihn hofft — selbst wenn die Sünden fast so groß wie die Erde wären. Und sein praktischer Rat lautete: Fürchte Allah, wo immer du bist; lass einer schlechten Tat eine gute folgen, sie tilgt sie; und begegne den Menschen mit gutem Charakter.",
+      "belege": [
+        "Koran 39:53",
+        "Koran 66:8",
+        "Koran 3:135",
+        "Koran 4:110",
+        "an-Nawawī Nr. 42 — Sunan at-Tirmidhi (hasan, Hadith Qudsi)",
+        "an-Nawawī Nr. 18 — Sunan at-Tirmidhi (hasan)"
+      ]
+    }
+  ]
+}

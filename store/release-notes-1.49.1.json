@@ -1,0 +1,8 @@
+{
+  "de-DE": "Wer die Android-Freigabe „Wecker und Erinnerungen\" nachträglich erteilt hat, bekam die Erinnerungen trotzdem weiter mit Verspätung: die bereits gesetzten Weckzeiten behalten das Zeitfenster von einer Stunde, das Android ihnen ohne die Freigabe gibt. Sie werden jetzt sofort neu gesetzt, statt erst beim nächsten Start der App.",
+  "en-US": "If you granted the Android alarms-and-reminders permission after the fact, reminders still arrived late: the alarms already set keep the one-hour window Android gives them without the permission. They are now reset immediately instead of only on the next app start.",
+  "tr-TR": "If you granted the Android alarms-and-reminders permission after the fact, reminders still arrived late: the alarms already set keep the one-hour window Android gives them without the permission. They are now reset immediately instead of only on the next app start.",
+  "ar": "If you granted the Android alarms-and-reminders permission after the fact, reminders still arrived late: the alarms already set keep the one-hour window Android gives them without the permission. They are now reset immediately instead of only on the next app start.",
+  "es-ES": "If you granted the Android alarms-and-reminders permission after the fact, reminders still arrived late: the alarms already set keep the one-hour window Android gives them without the permission. They are now reset immediately instead of only on the next app start.",
+  "fr-FR": "If you granted the Android alarms-and-reminders permission after the fact, reminders still arrived late: the alarms already set keep the one-hour window Android gives them without the permission. They are now reset immediately instead of only on the next app start."
+}

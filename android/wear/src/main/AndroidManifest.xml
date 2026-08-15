@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Wear-OS-App-Manifest fuer die "Naechstes Gebet"-Tile. UNGETESTET (siehe
+  build.gradle-Kopfkommentar) - insbesondere die genaue Berechtigungs-/
+  Feature-Deklaration fuer Data-Layer-Empfang wurde nicht an einem echten
+  Geraet/Emulator verifiziert.
+-->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+  <uses-feature android:name="android.hardware.type.watch" android:required="true"/>
+
+  <!-- companion-required (nicht standalone): die Tile zeigt ausschliesslich
+       Daten, die vom Telefon-Companion (Salati-App, android/app/) via Data
+       Layer API gesendet werden - ohne gekoppeltes Telefon keine Zeiten. -->
+  <uses-permission android:name="com.google.android.permission.PROVIDE_BACKGROUND"/>
+
+  <application
+    android:allowBackup="true"
+    android:icon="@drawable/ic_tile_launcher"
+    android:label="@string/app_name"
+    android:theme="@android:style/Theme.DeviceDefault">
+
+    <!-- Companion-Pflichtangabe: verknuepft diese Wear-App mit der Telefon-
+         App fuer die Play-Store-Bundling-Logik (eine Wear-APK wird nur auf
+         Uhren installiert, die mit einem Telefon mit dieser App-ID gekoppelt
+         sind). -->
+    <meta-data
+      android:name="com.google.android.wearable.standalone"
+      android:value="false"/>
+    <meta-data
+      android:name="com.google.android.gms.version"
+      android:value="@integer/google_play_services_version"/>
+
+    <!-- App-Bildschirm (Compose for Wear OS): Tagesliste + naechstes Gebet mit
+         Restzeit. Startet auch ohne Telefonverbindung und zeigt den zuletzt
+         empfangenen Stand. -->
+    <activity
+      android:name=".MainActivity"
+      android:exported="true"
+      android:label="@string/app_name"
+      android:taskAffinity=""
+      android:theme="@android:style/Theme.DeviceDefault">
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN"/>
+        <category android:name="android.intent.category.LAUNCHER"/>
+      </intent-filter>
+    </activity>
+
+    <service
+      android:name=".PrayerTileService"
+      android:exported="true"
+      android:icon="@drawable/ic_tile_launcher"
+      android:label="@string/tile_label"
+      android:permission="com.google.android.wearable.permission.BIND_TILE_PROVIDER">
+      <intent-filter>
+        <action android:name="androidx.wear.tiles.action.BIND_TILE_PROVIDER"/>
+      </intent-filter>
+      <meta-data
+        android:name="androidx.wear.tiles.PREVIEW"
+        android:resource="@drawable/ic_tile_preview"/>
+    </service>
+
+    <!-- Zifferblatt-Komplikation: naechstes Gebet (Titel) + Uhrzeit (Text).
+         UPDATE_PERIOD_SECONDS ist die Untergrenze, in der das System von sich
+         aus neue Daten anfragt; zusaetzlich stoesst PrayerDataListenerService
+         nach jedem Telefon-Sync ein sofortiges Update an. -->
+    <service
+      android:name=".NextPrayerComplicationService"
+      android:exported="true"
+      android:icon="@drawable/ic_tile_launcher"
+      android:label="@string/tile_label"
+      android:permission="com.google.android.wearable.permission.BIND_COMPLICATION_PROVIDER">
+      <intent-filter>
+        <action android:name="android.support.wearable.complications.ACTION_COMPLICATION_UPDATE_REQUEST"/>
+      </intent-filter>
+      <meta-data
+        android:name="android.support.wearable.complications.SUPPORTED_TYPES"
+        android:value="SHORT_TEXT,LONG_TEXT"/>
+      <meta-data
+        android:name="android.support.wearable.complications.UPDATE_PERIOD_SECONDS"
+        android:value="600"/>
+    </service>
+
+    <!-- Empfaengt die vom Telefon per Wearable.DataClient gesendeten
+         Gebetszeiten (WearSyncModule.kt, Pfad /salati/prayer-times) und
+         speichert sie lokal fuer PrayerTileService (siehe dortigen
+         Kommentar zu SharedPreferences als Zwischenspeicher). -->
+    <service
+      android:name=".PrayerDataListenerService"
+      android:exported="true">
+      <intent-filter>
+        <action android:name="com.google.android.gms.wearable.DATA_CHANGED"/>
+        <data
+          android:scheme="wear"
+          android:host="*"
+          android:pathPrefix="/salati/prayer-times"/>
+      </intent-filter>
+    </service>
+
+  </application>
+</manifest>

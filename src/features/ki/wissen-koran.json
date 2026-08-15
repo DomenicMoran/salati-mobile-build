@@ -1,0 +1,592 @@
+{
+  "hinweis": "Kuratierte Wissensschicht der Salati-KI zum Themenblock Koran, Arabisch-Lesen und Tadschwied (Doc-IDs w-*). Regeln: (1) nur unstrittiges Grundwissen, keine Rechtsurteile in Einzelfällen; (2) wo Rechtsschulen oder Rezitations-Überlieferungen abweichen, wird das ausdrücklich gesagt; (3) jede Koran-Angabe muss zeichengenau zu apps/mobile/public/rag/korpus-de.json passen (Prüfskript: node scripts/check-ki-wissen.mjs src/features/ki/wissen-koran.json); (4) Hadith-Belege nur aus den 40 Nawawi-Hadithen der App oder mit voller Quellenangabe — Tadschwied-Einträge kommen bewusst meist ohne Beleg aus, weil es sich um Lehrtradition und nicht um Textstellen handelt; (5) Sprache: Deutsch, warm, klar, 3-6 Sätze, Umschrift nach scripts/umschrift-konvention.md.",
+  "eintraege": [
+    {
+      "id": "koran-grundlagen",
+      "titel": "Der Koran — Aufbau und Offenbarung",
+      "tags": [
+        "koran",
+        "quran",
+        "koran grundlagen",
+        "114 suren",
+        "30 dschuz",
+        "offenbarung",
+        "mekkanisch",
+        "medinensisch"
+      ],
+      "text": "Der Koran ist das Wort Allahs, das Muhammad ﷺ über etwa dreiundzwanzig Jahre hinweg offenbart wurde — nicht auf einmal, sondern nach und nach, passend zu den Lagen der Gemeinde. Er umfasst 114 Suren; in der verbreiteten Hafs-Zählung sind es 6236 Verse, andere Zähltraditionen kommen auf leicht abweichende Zahlen. Für das Lesen ist der Text zusätzlich in 30 gleich große Abschnitte (Dschuz) eingeteilt — so lässt sich der ganze Koran zum Beispiel in einem Ramadan durchlesen. Man unterscheidet mekkanische Suren, die vor der Auswanderung offenbart wurden und meist von Tauhid, Auferstehung und Geduld sprechen, und medinensische Suren, die stärker Gemeinschaft, Recht und Alltag ordnen. Der erste offenbarte Befehl war „Lies im Namen deines Herrn, Der erschaffen hat.“",
+      "belege": [
+        "Koran 96:1",
+        "Koran 17:106",
+        "Koran 25:32"
+      ]
+    },
+    {
+      "id": "koran-bewahrung",
+      "titel": "Wie der Koran bewahrt wurde",
+      "tags": [
+        "bewahrung",
+        "unveraendert",
+        "auswendig",
+        "mushaf",
+        "uthman",
+        "koran echtheit",
+        "ueberlieferung"
+      ],
+      "text": "Der Koran wurde von Anfang an auf zwei Wegen zugleich bewahrt: im Gedächtnis der Gefährten, die ihn auswendig lernten, und schriftlich, weil der Prophet ﷺ jede Offenbarung von Schreibern festhalten und an ihrem Platz einordnen ließ. Unter Abu Bakr wurde das Geschriebene gesammelt, unter Uthman zu einem einheitlichen Mushaf zusammengeführt und in die Provinzen versandt — diese Fassung ist die Grundlage aller heutigen Ausgaben. Bis heute gibt es weltweit Millionen Menschen, die den vollständigen Text auswendig können (Huffaz), sodass eine stille Veränderung praktisch unmöglich wäre. Allah selbst hat diese Bewahrung zugesagt: „Gewiß, Wir sind es, die Wir die Ermahnung offenbart haben, und Wir werden wahrlich ihr Hüter sein.“",
+      "belege": [
+        "Koran 15:9",
+        "Koran 85:21",
+        "Koran 85:22",
+        "Koran 41:42"
+      ]
+    },
+    {
+      "id": "sure-und-vers",
+      "titel": "Sure, Vers und die Basmala",
+      "tags": [
+        "sure",
+        "surah",
+        "vers",
+        "aja",
+        "ayah",
+        "basmala",
+        "bismillah",
+        "aufbau"
+      ],
+      "text": "Eine Sure ist ein Kapitel des Korans, ein Vers heißt auf Arabisch Aja — wörtlich „Zeichen“. Die Suren sind sehr unterschiedlich lang: Al-Baqara, die zweite Sure, hat 286 Verse, Al-Kauthar nur drei. Jede Sure trägt einen Namen, der meist auf ein auffälliges Wort oder Bild darin zurückgeht, und ist außerdem durchnummeriert; die übliche Zitierweise ist „Sure : Vers“, also 2:255 für den Thronvers. Alle Suren außer der neunten (At-Tauba) beginnen mit der Basmala: „Bismillaahi r-Rahmaani r-Rahiim“ — „Im Namen Allahs, des Allerbarmers, des Barmherzigen.“ Ob die Basmala jeweils als eigener Vers zählt, sehen die Zähltraditionen unterschiedlich; in der Fatiha ist sie in der verbreiteten Zählung Vers 1.",
+      "belege": [
+        "Koran 1:1",
+        "Koran 27:30",
+        "Koran 9:1"
+      ]
+    },
+    {
+      "id": "wie-lese-ich-koran",
+      "titel": "Wie man den Koran liest",
+      "tags": [
+        "koran lesen",
+        "tartil",
+        "istiaadha",
+        "audhu billah",
+        "basmala",
+        "rezitation",
+        "anfaenger"
+      ],
+      "text": "Vor dem Lesen sucht man Zuflucht bei Allah — die Istiaadha „Audhu billaahi mina sch-schaitaani r-radschiim“ —, denn der Koran sagt: „Wenn du nun den Qur'an vorträgst, so suche Schutz bei Allah vor dem gesteinigten Satan.“ Danach folgt die Basmala, außer man setzt mitten in Sure 9 ein. Gelesen wird in Tartil: ruhig, gegliedert, mit den richtigen Längen und Pausen, nicht gehetzt — „und trage den Qur'an wohlgeordnet vor“. Besser wenig und aufmerksam als viel und flüchtig; wer neu anfängt, nimmt kurze Suren und liest sie laut, langsam und möglichst einem Lehrer vor. Wo jemand rezitiert, gilt für die Zuhörenden: hinhören und schweigen.",
+      "belege": [
+        "Koran 16:98",
+        "Koran 73:4",
+        "Koran 7:204",
+        "Koran 2:121"
+      ]
+    },
+    {
+      "id": "koran-uebersetzung-vs-original",
+      "titel": "Übersetzung oder arabisches Original",
+      "tags": [
+        "uebersetzung",
+        "arabisch",
+        "original",
+        "deutsch lesen",
+        "bedeutung",
+        "tafsir"
+      ],
+      "text": "Der Koran wurde auf Arabisch offenbart — „Wir haben es als einen arabischen Qur'an hinabgesandt, auf daß ihr begreifen möget“ —, und der arabische Wortlaut selbst ist der Koran. Eine Übersetzung gibt darum immer nur die Bedeutung wieder, so wie ein Mensch sie verstanden hat; deshalb heißen gute Ausgaben „Die ungefähre Bedeutung des Korans“. Im Gebet wird deshalb arabisch rezitiert, auch von Menschen, die noch kein Arabisch können. Für das Verstehen ist eine Übersetzung trotzdem unverzichtbar, am besten zusammen mit einer Erklärung (Tafsir), die den Zusammenhang der Verse nennt. Ein guter Weg ist, beides nebeneinander zu lesen: den arabischen Text laut, die Übersetzung still — und das Arabische Schritt für Schritt zu lernen.",
+      "belege": [
+        "Koran 12:2",
+        "Koran 26:195",
+        "Koran 43:3",
+        "Koran 41:44"
+      ]
+    },
+    {
+      "id": "dschuz-und-hizb",
+      "titel": "Dschuz, Hizb und Rub — die Leseeinteilung",
+      "tags": [
+        "dschuz",
+        "juz",
+        "hizb",
+        "rub",
+        "dschuz amma",
+        "einteilung",
+        "leseplan"
+      ],
+      "text": "Neben Suren und Versen ist der Koran in Leseabschnitte eingeteilt, die das Durchlesen planbar machen. Die größte Einheit ist der Dschuz: 30 etwa gleich lange Teile — wer täglich einen liest, schafft den ganzen Koran in einem Monat. Jeder Dschuz besteht aus zwei Hizb, jeder Hizb aus vier Vierteln (Rub), die am Seitenrand markiert sind. Der bekannteste Abschnitt ist Dschuz Amma, der dreißigste, der die kurzen Suren vom Ende des Korans enthält und mit dem viele Lernende anfangen. Diese Einteilung ist eine spätere Lesehilfe und kein Teil der Offenbarung — Abschnittsgrenzen fallen deshalb manchmal mitten in eine Sure.",
+      "belege": [
+        "Koran 17:106",
+        "Koran 73:20"
+      ]
+    },
+    {
+      "id": "ajat-al-kursi",
+      "titel": "Ajat al-Kursi — der Thronvers",
+      "tags": [
+        "ajat al kursi",
+        "ayatul kursi",
+        "thronvers",
+        "2:255",
+        "schutz",
+        "al-baqara"
+      ],
+      "text": "Ajat al-Kursi ist Vers 255 der Sure Al-Baqara und gilt als der gewaltigste Vers des Korans, weil er in einem Zug beschreibt, wer Allah ist: „Allah — es gibt keinen Gott außer Ihm, dem Lebendigen und Beständigen. Ihn überkommt weder Schlummer noch Schlaf.“ Weiter heißt es, dass Ihm alles in Himmeln und Erde gehört, dass niemand ohne Seine Erlaubnis Fürsprache einlegt, dass Sein Wissen alles umfasst und die Behütung von Himmel und Erde Ihn nicht beschwert. Viele Muslime lesen den Vers nach jedem Pflichtgebet und vor dem Schlafengehen; dazu gibt es bekannte Überlieferungen bei al-Buchari und Muslim. Er ist außerdem einer der ersten Verse, die Lernende auswendig lernen.",
+      "belege": [
+        "Koran 2:255"
+      ]
+    },
+    {
+      "id": "sure-ichlas",
+      "titel": "Sure Al-Ichlas (112)",
+      "tags": [
+        "ichlas",
+        "ikhlas",
+        "sure 112",
+        "qul huwa allahu ahad",
+        "tauhid",
+        "kurze sure"
+      ],
+      "text": "Al-Ichlas ist die 112. Sure und hat nur vier kurze Verse, in denen der Kern des islamischen Gottesbildes steht: „Sag: Er ist Allah, ein Einer, Allah, der Überlegene. Er hat nicht gezeugt und ist nicht gezeugt worden, und niemand ist Ihm jemals gleich.“ Der Name bedeutet „die aufrichtige Hingabe“ oder „die reine Zuwendung“ — die Sure klärt in vier Zeilen, wem Anbetung zusteht und wem nicht. Nach einer bei al-Buchari überlieferten Aussage des Propheten ﷺ wiegt sie ein Drittel des Korans, weil sie dessen zentrales Thema in sich trägt. Wegen ihrer Kürze ist sie meist die erste Sure, die Kinder und neue Muslime auswendig lernen, und sie wird in vielen Gebeten rezitiert.",
+      "belege": [
+        "Koran 112:1",
+        "Koran 112:3",
+        "Koran 112:4"
+      ]
+    },
+    {
+      "id": "sure-al-falaq-und-an-nas",
+      "titel": "Al-Falaq und An-Nas — die beiden Schutzsuren",
+      "tags": [
+        "al falaq",
+        "an nas",
+        "muawwidhatan",
+        "schutzsuren",
+        "sure 113",
+        "sure 114",
+        "zuflucht"
+      ],
+      "text": "Die letzten beiden Suren des Korans, Al-Falaq (113) und An-Nas (114), heißen zusammen Al-Muawwidhataan — „die beiden Zufluchtsuren“. Al-Falaq beginnt mit „Sag: Ich nehme Zuflucht beim Herrn des Tagesanbruchs“ und nennt danach die Übel, vor denen Schutz gesucht wird: das Erschaffene, die hereinbrechende Dunkelheit, Zauber und Neid. An-Nas nimmt Zuflucht beim Herrn, König und Gott der Menschen vor dem Einflüsterer, der sich davonschleicht — also vor dem, was von innen ansetzt. Beide werden zusammen mit Al-Ichlas morgens und abends je dreimal gelesen und vor dem Schlafengehen; auch das ist bei al-Buchari überliefert. Sie sind kurz genug, um sie in wenigen Tagen auswendig zu lernen.",
+      "belege": [
+        "Koran 113:1",
+        "Koran 113:2",
+        "Koran 113:5",
+        "Koran 114:1",
+        "Koran 114:4",
+        "Koran 114:5"
+      ]
+    },
+    {
+      "id": "sure-al-kauthar",
+      "titel": "Sure Al-Kauthar (108)",
+      "tags": [
+        "al kauthar",
+        "kawthar",
+        "sure 108",
+        "kuerzeste sure",
+        "opfer",
+        "kurze sure"
+      ],
+      "text": "Al-Kauthar ist mit drei Versen die kürzeste Sure des Korans: „Wir haben dir ja al-Kautar gegeben. So bete zu deinem Herrn und opfere. Gewiß, derjenige, der dich haßt, — er ist vom Guten abgetrennt.“ Al-Kauthar heißt „die Fülle“; Gelehrte deuten es als das reiche Gut, das Allah dem Propheten ﷺ gab, und nach einer bei Muslim überlieferten Erklärung des Propheten ﷺ ist damit besonders ein Fluss im Paradies gemeint. Die Sure wurde in einer Zeit offenbart, in der Gegner ihn verspotteten, er sei ohne Nachkommen und damit ohne Zukunft — die Antwort dreht das um. Wegen ihrer Kürze eignet sie sich gut als zweite Sure im Gebet.",
+      "belege": [
+        "Koran 108:1",
+        "Koran 108:2",
+        "Koran 108:3"
+      ]
+    },
+    {
+      "id": "sure-yasin",
+      "titel": "Sure Ya-Sin (36)",
+      "tags": [
+        "yasin",
+        "ya sin",
+        "sure 36",
+        "herz des korans",
+        "rezitation"
+      ],
+      "text": "Ya-Sin ist die 36. Sure mit 83 Versen und gehört zu den bekanntesten und am häufigsten rezitierten Suren überhaupt. Sie beginnt mit den Buchstaben Ya-Sin und einem Schwur beim weisen Koran: „du bist wahrlich einer der Gesandten auf einem geraden Weg“ — die Sure bestätigt also zuerst die Sendung des Propheten ﷺ. Danach erzählt sie das Gleichnis einer Stadt, die ihre Gesandten abwies, führt Zeichen der Schöpfung vor Augen — Tag und Nacht, Sonne und Mond, das tote Land, das wieder lebt — und schließt mit der Auferstehung. Die verbreitete Bezeichnung „Herz des Korans“ stammt aus einer Überlieferung, deren Kette Gelehrte als schwach einstufen; die Sure bleibt darum verdienstvoll wie jede Koranlesung, ohne dass man ihr besondere Wirkungen zuschreiben müsste.",
+      "belege": [
+        "Koran 36:3",
+        "Koran 36:5"
+      ]
+    },
+    {
+      "id": "sure-al-kahf-freitag",
+      "titel": "Sure Al-Kahf am Freitag",
+      "tags": [
+        "al kahf",
+        "kahf",
+        "sure 18",
+        "freitag",
+        "hoehle",
+        "dadschal",
+        "wochenroutine"
+      ],
+      "text": "Al-Kahf, „die Höhle“, ist die 18. Sure mit 110 Versen. Sie erzählt vier Geschichten, die alle um Prüfungen kreisen: die Jugendlichen in der Höhle (Glaube), der Mann mit den zwei Gärten (Reichtum), Musa und al-Chidr (Wissen) und Dhul-Qarnain (Macht). Viele Muslime lesen sie am Freitag; dazu gibt es Überlieferungen bei al-Haakim und al-Baihaqi, wonach dem, der sie am Freitag liest, ein Licht zwischen den beiden Freitagen leuchtet — Gelehrte bewerten diese Ketten unterschiedlich, die Gewohnheit ist aber weit verbreitet und unbestritten gut. Zu ihren ersten und letzten zehn Versen gibt es zudem eine bei Muslim überlieferte Aussage über Schutz vor der Prüfung des Dadschal. Ihr Schlussvers fasst die Botschaft zusammen: rechtschaffen handeln und im Dienst an Allah niemanden beigesellen.",
+      "belege": [
+        "Koran 18:1",
+        "Koran 18:2",
+        "Koran 18:110"
+      ]
+    },
+    {
+      "id": "koran-auswendig-lernen",
+      "titel": "Koran auswendig lernen (Hifz)",
+      "tags": [
+        "hifz",
+        "auswendig lernen",
+        "memorieren",
+        "hafiz",
+        "wiederholen",
+        "murajaa",
+        "lernplan"
+      ],
+      "text": "Hifz heißt, den Koran im Gedächtnis zu bewahren — und der Koran sagt selbst zu: „Und Wir haben den Qur'an ja leicht zum Bedenken gemacht.“ Vier Grundprinzipien tragen fast jeden Lernweg: erstens täglich wenig statt selten viel, lieber drei Verse jeden Tag als eine Seite am Wochenende; zweitens laut lesen und dabei einer korrekten Rezitation zuhören, damit sich von Anfang an die richtige Aussprache einprägt; drittens Wiederholung (Muradschaa) — das schon Gelernte braucht mehr Zeit als das Neue, sonst zerfällt es; viertens das Gelernte im Gebet einsetzen, denn dort festigt es sich von selbst. Hilfreich ist, immer aus derselben Mushaf-Ausgabe zu lernen, weil das Auge sich das Seitenbild merkt. Und ein Lehrer, dem man vorträgt, findet Fehler, die man selbst nie bemerkt.",
+      "belege": [
+        "Koran 54:17",
+        "Koran 73:20"
+      ]
+    },
+    {
+      "id": "arabisches-alphabet",
+      "titel": "Das arabische Alphabet",
+      "tags": [
+        "arabisches alphabet",
+        "buchstaben",
+        "28 buchstaben",
+        "arabisch lernen",
+        "schrift",
+        "lesen lernen"
+      ],
+      "text": "Das arabische Alphabet hat 28 Buchstaben und wird von rechts nach links geschrieben. Es kennt keine Groß- und Kleinschreibung, dafür ändert fast jeder Buchstabe seine Gestalt je nachdem, ob er allein steht oder am Anfang, in der Mitte oder am Ende eines Wortes verbunden ist. Die Reihenfolge lautet: Alif, Ba, Ta, Tha, Dschim, Ha, Cha, Dal, Dhal, Ra, Zay, Sin, Schin, Sad, Dad, Ta, Za, Ain, Ghain, Fa, Qaf, Kaf, Lam, Mim, Nun, Ha, Waw, Ja. Mehrere Buchstaben unterscheiden sich nur durch Punkte — Ba, Ta und Tha haben denselben Grundkörper —, deshalb lohnt es sich, sie in Gruppen zu lernen. Die Hamza wird oft als eigener Laut mitgezählt, gilt aber traditionell nicht als 29. Buchstabe; Lam-Alif ist eine Schreibverbindung, kein eigener Buchstabe.",
+      "belege": [
+        "Koran 12:2",
+        "Koran 26:195"
+      ]
+    },
+    {
+      "id": "buchstabenverbindungen",
+      "titel": "Wie arabische Buchstaben verbunden werden",
+      "tags": [
+        "buchstabenverbindung",
+        "verbundene buchstaben",
+        "isoliert",
+        "anfangsform",
+        "endform",
+        "schreiben lernen",
+        "nicht verbindende buchstaben"
+      ],
+      "text": "Arabisch wird in Schreibschrift geschrieben: Buchstaben eines Wortes hängen zusammen. Jeder Buchstabe hat darum bis zu vier Formen — isoliert, am Wortanfang, in der Mitte und am Ende. Die Grundgestalt bleibt dabei erkennbar; verbundene Formen sind meist gestaucht, während die isolierte und die Endform den vollen Schwung behalten. Sechs Buchstaben verbinden nur nach rechts und nie nach links: Alif, Dal, Dhal, Ra, Zay und Waw. Steht einer von ihnen mitten im Wort, bricht die Linie danach ab, und der nächste Buchstabe beginnt neu — deshalb sieht ein Wort wie „Qur'an“ optisch aus wie zwei Stücke. Wer diese sechs kennt, kann Wortgrenzen im Mushaf viel sicherer erkennen.",
+      "belege": [
+        "Koran 26:195",
+        "Koran 12:2"
+      ]
+    },
+    {
+      "id": "harakat",
+      "titel": "Harakat — Fatha, Kasra und Damma",
+      "tags": [
+        "harakat",
+        "fatha",
+        "kasra",
+        "damma",
+        "vokalzeichen",
+        "vokale",
+        "arabisch lesen"
+      ],
+      "text": "Arabische Buchstaben tragen die kurzen Vokale nicht in sich; sie werden als kleine Zeichen (Harakat) darüber oder darunter gesetzt. Es gibt drei: die Fatha, ein Schrägstrich über dem Buchstaben, spricht ihn mit kurzem „a“; die Kasra, derselbe Strich unter dem Buchstaben, ergibt ein kurzes „i“; die Damma, ein kleines Waw über dem Buchstaben, ergibt ein kurzes „u“. Aus dem Buchstaben Ba werden so „ba“, „bi“ und „bu“. In gewöhnlichen arabischen Texten fehlen diese Zeichen meist, im Mushaf steht jedoch jedes davon — deshalb kann man den Koran korrekt lesen, sobald man Buchstaben und Harakat beherrscht. Die kurzen Vokale werden wirklich kurz gesprochen, etwa halb so lang wie ein Langvokal; das ist der erste Schritt zu sauberem Tadschwied.",
+      "belege": [
+        "Koran 73:4",
+        "Koran 75:18"
+      ]
+    },
+    {
+      "id": "sukun",
+      "titel": "Sukun — der Buchstabe ohne Vokal",
+      "tags": [
+        "sukun",
+        "sakin",
+        "vokallos",
+        "kreis",
+        "silbe",
+        "arabisch lesen"
+      ],
+      "text": "Der Sukun ist ein kleiner Kreis über einem Buchstaben und bedeutet: Dieser Buchstabe hat keinen Vokal. Er wird direkt an den vorangehenden vokalisierten Buchstaben angehängt und schließt damit die Silbe ab. In „min“ trägt das Mim eine Kasra und das Nun einen Sukun — man spricht „min“ in einem Zug, nicht „mi-na“. Ein Buchstabe mit Sukun heißt „sakin“, ein Wort kann nie mit einem sakin-Buchstaben beginnen. Der Sukun ist der Ausgangspunkt fast aller Tadschwied-Regeln: Nun Sakinah, Mim Sakinah, Qalqala und die Madd-Regeln setzen alle voraus, dass man erkennt, welcher Buchstabe vokallos ist.",
+      "belege": [
+        "Koran 73:4",
+        "Koran 75:18"
+      ]
+    },
+    {
+      "id": "schadda",
+      "titel": "Schadda — der verdoppelte Buchstabe",
+      "tags": [
+        "schadda",
+        "shadda",
+        "tashdid",
+        "verdoppelung",
+        "doppelter buchstabe",
+        "arabisch lesen"
+      ],
+      "text": "Die Schadda ist ein kleines Zeichen wie ein „w“ über einem Buchstaben und bedeutet, dass dieser Buchstabe doppelt gesprochen wird: einmal vokallos und einmal mit Vokal, in einem Zug und mit etwas mehr Druck. In „Rabb“ (Herr) oder „inna“ (gewiss) hört man die Verdoppelung deutlich. Sie ist keine Schönheitsfrage, sondern kann die Bedeutung ändern — ein einfaches und ein verdoppeltes Verb sind verschiedene Wörter. Zusammen mit der Schadda steht oft zusätzlich ein Vokalzeichen; Fatha und Damma stehen dann über der Schadda, die Kasra meist unter dem Buchstaben. Tragen Nun oder Mim eine Schadda, muss zusätzlich die Ghunna gehalten werden, der Nasenlaut von etwa zwei Zählzeiten.",
+      "belege": [
+        "Koran 73:4",
+        "Koran 108:1"
+      ]
+    },
+    {
+      "id": "tanwin",
+      "titel": "Tanwin — die Nunation am Wortende",
+      "tags": [
+        "tanwin",
+        "tanween",
+        "doppelvokal",
+        "nunation",
+        "unbestimmt",
+        "arabisch lesen"
+      ],
+      "text": "Tanwin heißt: Am Ende eines Wortes wird das Vokalzeichen verdoppelt, und man spricht ein „n“ mit — geschrieben werden zwei Fatha, zwei Kasra oder zwei Damma. Aus „kitaab“ wird so „kitaabun“, „kitaaban“ oder „kitaabin“. Dieses angehängte „n“ steht nur in der Aussprache, nicht als Buchstabe Nun; im Tadschwied wird es aber genau wie ein Nun Sakinah behandelt, weshalb dieselben Regeln — Izhar, Idgham, Iqlab, Ichfa — dafür gelten. Der doppelte Fatha wird meist auf ein zusätzlich geschriebenes Alif gesetzt. Hält man am Wortende an, verschwindet das Tanwin: Aus „kitaaban“ wird bei der Pause ein langes „kitaabaa“, aus „kitaabun“ und „kitaabin“ wird schlicht „kitaab“.",
+      "belege": [
+        "Koran 73:4",
+        "Koran 75:18"
+      ]
+    },
+    {
+      "id": "madd-langvokale",
+      "titel": "Die Langvokale (Madd-Buchstaben)",
+      "tags": [
+        "madd",
+        "langvokale",
+        "lange vokale",
+        "alif",
+        "waw",
+        "ja",
+        "dehnung",
+        "arabisch lesen"
+      ],
+      "text": "Drei Buchstaben dienen im Arabischen als Langvokale und heißen deshalb Madd-Buchstaben. Ein Alif ohne eigenen Vokal nach einer Fatha ergibt ein langes „aa“, ein vokalloses Waw nach einer Damma ein langes „uu“, ein vokalloses Ja nach einer Kasra ein langes „ii“. Entscheidend ist diese Kombination: Nur wenn der vorangehende Vokal zum Buchstaben passt, wird gedehnt — sonst ist es kein Madd. Die Grunddehnung heißt Madd Tabii, die „natürliche Dehnung“, und dauert zwei Zählzeiten (Harakat), also etwa doppelt so lang wie ein kurzer Vokal. Der Unterschied ist bedeutungstragend: Kurz und lang gesprochen können zwei völlig verschiedene Wörter sein, deshalb gehört das saubere Halten der Längen zum Kern des Koranlesens.",
+      "belege": [
+        "Koran 73:4",
+        "Koran 75:18"
+      ]
+    },
+    {
+      "id": "madd-regeln",
+      "titel": "Madd-Regeln — Tabii, Muttasil, Munfasil",
+      "tags": [
+        "madd regeln",
+        "madd tabii",
+        "madd muttasil",
+        "madd munfasil",
+        "dehnung",
+        "harakat",
+        "tadschwied",
+        "tajwid"
+      ],
+      "text": "Die Grundstufe ist der Madd Tabii, die natürliche Dehnung von zwei Zählzeiten — überall dort, wo ein Langvokal steht und kein Hamza und kein Sukun folgt, zum Beispiel in „qaala“. Folgt auf den Langvokal ein Hamza im selben Wort, spricht man vom Madd Muttasil, der „verbundenen Dehnung“, wie in „as-samaa'“ oder „dschaa'a“; sie wird länger gehalten als die natürliche Dehnung, nach der verbreiteten Hafs-Überlieferung vier bis fünf Zählzeiten, und alle Leseweisen sind sich einig, dass hier verlängert werden muss. Steht der Langvokal am Wortende und beginnt das nächste Wort mit einem Hamza, ist es der Madd Munfasil, die „getrennte Dehnung“, etwa in „innaa a'tainaaka“; hier unterscheiden sich die Überlieferungen — nach Hafs über Aasim werden meist vier bis fünf Zählzeiten gelesen, andere Wege lesen kürzer. Wichtig ist vor allem, die einmal gewählte Länge im ganzen Vortrag gleich zu halten.",
+      "belege": [
+        "Koran 108:1"
+      ]
+    },
+    {
+      "id": "sonnen-und-mondbuchstaben",
+      "titel": "Sonnen- und Mondbuchstaben",
+      "tags": [
+        "sonnenbuchstaben",
+        "mondbuchstaben",
+        "artikel al",
+        "assimilation",
+        "lam schamsijja",
+        "arabisch lesen"
+      ],
+      "text": "Der arabische Artikel „al-“ wird immer gleich geschrieben, aber nicht immer gleich gesprochen. Vor den 14 Mondbuchstaben bleibt das Lam hörbar: „al-qamar“ (der Mond), „al-kitaab“, „al-hamdu“. Vor den 14 Sonnenbuchstaben verstummt das Lam, und der folgende Buchstabe wird verdoppelt: geschrieben steht „al-schams“, gesprochen wird „asch-schams“ (die Sonne), ebenso „ar-Rahmaan“ und „as-salaam“. Im Mushaf erkennt man es sofort: Bei Sonnenbuchstaben trägt der Buchstabe nach dem Lam eine Schadda, und das Lam selbst hat kein Sukun. Die Sonnenbuchstaben sind Ta, Tha, Dal, Dhal, Ra, Zay, Sin, Schin, Sad, Dad, Ta, Za, Lam und Nun — alle übrigen sind Mondbuchstaben.",
+      "belege": [
+        "Koran 1:3",
+        "Koran 91:1",
+        "Koran 73:4"
+      ]
+    },
+    {
+      "id": "hamzat-al-wasl",
+      "titel": "Hamzat al-Wasl — das Verbindungs-Hamza",
+      "tags": [
+        "hamzat al wasl",
+        "wasl",
+        "verbindungshamza",
+        "hamzat al qat",
+        "alif",
+        "arabisch lesen"
+      ],
+      "text": "Das Hamzat al-Wasl ist ein Hilfslaut am Wortanfang: Beginnt man an dieser Stelle zu lesen, spricht man es; liest man aus dem vorherigen Wort durch, fällt es einfach weg. Im Mushaf ist es an einem kleinen Sad-artigen Zeichen über dem Alif erkennbar. Beispiele sind der Artikel „al-“ und Wörter wie „ism“ — deshalb sagt man am Anfang „Al-hamdu lillaah“, aber im Fluss „bismillaah“ ohne hörbaren Vokal vor dem „sm“. Welcher Vokal beim Neubeginn gesprochen wird, hängt vom Wort ab: Beim Artikel ist es immer ein „a“, bei Verben ein „i“ oder ein „u“, etwa „idhhab“ und „udchul“. Davon zu unterscheiden ist das Hamzat al-Qat, das feste Hamza, das immer gesprochen wird — wie in „amana“ oder „iimaan“.",
+      "belege": [
+        "Koran 1:1",
+        "Koran 1:2",
+        "Koran 73:4"
+      ]
+    },
+    {
+      "id": "ta-marbuta",
+      "titel": "Ta Marbuta — das gebundene Ta",
+      "tags": [
+        "ta marbuta",
+        "ta marbutah",
+        "gebundenes ta",
+        "feminin",
+        "endung",
+        "pause",
+        "arabisch lesen"
+      ],
+      "text": "Die Ta Marbuta ist ein Ha mit zwei Punkten darüber und steht nur am Wortende. Sie markiert meist die weibliche Form eines Wortes: „muslim“ wird zu „muslima“, „kabiir“ zu „kabiira“. Ihre Aussprache hängt davon ab, ob man weiterliest oder anhält: Liest man durch, spricht man sie als „t“ mit ihrem Vokal — „rahmatun“, „dschannatun“; hält man am Wortende an, wird sie zu einem gehauchten „h“ oder verstummt ganz — „rahmah“, „dschannah“. Genau daran erkennt man beim Zuhören, ob jemand pausiert oder verbindet. Von ihr zu unterscheiden ist das offene Ta, das auch bei der Pause ein „t“ bleibt, etwa in „bint“.",
+      "belege": [
+        "Koran 73:4",
+        "Koran 75:18"
+      ]
+    },
+    {
+      "id": "was-ist-tadschwied",
+      "titel": "Was ist Tadschwied",
+      "tags": [
+        "tadschwied",
+        "tajwid",
+        "tajweed",
+        "rezitationsregeln",
+        "aussprache",
+        "tartil",
+        "koran lesen"
+      ],
+      "text": "Tadschwied heißt wörtlich „etwas gut machen“ und bezeichnet die Regeln, jeden Buchstaben des Korans an seinem richtigen Ort und mit seinen richtigen Eigenschaften auszusprechen — mit den passenden Längen, Pausen und Nasallauten. Der Koran selbst gibt die Richtung vor: „und trage den Qur'an wohlgeordnet vor“ (Tartil). Die Regeln wurden nicht erfunden, sondern beschreiben, wie der Prophet ﷺ rezitierte; sie sind über eine ununterbrochene Kette von Lehrer zu Schüler weitergegeben worden, weshalb Tadschwied bis heute vor allem durch Vorlesen und Korrigieren gelernt wird, nicht aus Büchern allein. Gelehrte unterscheiden den groben Fehler (Lahn Dschali), der die Bedeutung verfälscht, vom feinen Fehler (Lahn Chafi), der nur die Schönheit mindert; wie streng Letzterer zu bewerten ist, sehen sie unterschiedlich. Wer noch am Anfang steht, liest langsam und ohne Angst weiter — der Prophet ﷺ hat auch dem, der sich mit dem Koran müht, ausdrücklich Lohn zugesagt.",
+      "belege": [
+        "Koran 73:4",
+        "Koran 2:121"
+      ]
+    },
+    {
+      "id": "machradsch-artikulationsorte",
+      "titel": "Machradsch — die Artikulationsorte",
+      "tags": [
+        "machradsch",
+        "makhraj",
+        "machaaridsch",
+        "artikulationsort",
+        "aussprache",
+        "tadschwied",
+        "tajwid"
+      ],
+      "text": "Der Machradsch ist die Stelle im Mund- und Rachenraum, an der ein Buchstabe entsteht — die Grundlage jeder korrekten Rezitation, denn viele arabische Laute klingen für deutsche Ohren ähnlich und unterscheiden sich allein durch ihren Ort. Die verbreitete Einteilung nach Ibn al-Dschazari kennt 17 Artikulationsorte in fünf Bereichen: dem Luftraum von Mund und Rachen (Dschauf) für die Langvokale, dem Rachen (Halq) für Hamza und Ha, Ain und Ha, Ghain und Cha, der Zunge (Lisaan) mit den meisten Buchstaben, den Lippen (Schafataan) für Ba, Mim, Waw und Fa und der Nasenhöhle (Chaischum) für die Ghunna. Andere Gelehrte zählen 16 oder 14 Orte — die Aussprache selbst ist dabei unstrittig, nur die Zählweise unterscheidet sich. Am besten lernt man Machaaridsch, indem man einen Laut vokallos ausspricht und dabei spürt, wo genau er anschlägt.",
+      "belege": [
+        "Koran 73:4",
+        "Koran 75:18"
+      ]
+    },
+    {
+      "id": "nun-sakinah-regeln",
+      "titel": "Nun Sakinah und Tanwin — die vier Regeln",
+      "tags": [
+        "nun sakinah",
+        "tanwin",
+        "izhar",
+        "idgham",
+        "iqlab",
+        "ichfa",
+        "ikhfa",
+        "tadschwied",
+        "tajwid"
+      ],
+      "text": "Trifft ein vokalloses Nun oder ein Tanwin auf den nächsten Buchstaben, gilt eine von vier Regeln. Izhar (deutliches Sprechen) vor den sechs Kehlbuchstaben Hamza, Ha, Ain, Ha, Ghain und Cha — das Nun bleibt klar hörbar, wie in „an'amta“. Idgham (Verschmelzung) vor den sechs Buchstaben des Merkworts „Jarmaluun“, also Ja, Ra, Mim, Lam, Waw und Nun: Bei Ja, Nun, Mim und Waw verschmilzt das Nun mit Ghunna, bei Lam und Ra ohne Ghunna — aus „min rabbihim“ wird „mir-rabbihim“, aus „min waliyyin“ wird „miw-waliyyin“. Iqlab (Umwandlung) vor dem Ba: Das Nun wird zu einem Mim mit Ghunna, „min ba'di“ wird zu „mim ba'di“. Ichfa (Verbergen) vor allen übrigen fünfzehn Buchstaben: Das Nun wird weder klar noch verschmolzen, sondern nasal angedeutet, wie in „min-kum“ oder „anzalnaa“. Das Idgham gilt nur über eine Wortgrenze hinweg; innerhalb eines Wortes wird deutlich gesprochen.",
+      "belege": [
+        "Koran 1:7",
+        "Koran 2:5",
+        "Koran 73:4"
+      ]
+    },
+    {
+      "id": "mim-sakinah-regeln",
+      "titel": "Mim Sakinah — die drei Regeln",
+      "tags": [
+        "mim sakinah",
+        "mim sakin",
+        "idgham schafawi",
+        "ichfa schafawi",
+        "izhar schafawi",
+        "tadschwied",
+        "tajwid"
+      ],
+      "text": "Für ein vokalloses Mim gibt es drei Regeln, alle mit dem Zusatz „schafawi“ (von den Lippen). Idgham Schafawi: Folgt ein weiteres Mim, verschmelzen beide zu einem verdoppelten Mim mit Ghunna, wie in „lahum maa jaschaa'uun“. Ichfa Schafawi: Folgt ein Ba, werden die Lippen nur leicht geschlossen, das Mim wird nasal angedeutet und mit Ghunna gehalten, etwa in „tarmiihim bi-hidschaara“. Izhar Schafawi: Vor allen übrigen Buchstaben wird das Mim klar und ohne Dehnung gesprochen, wie in „alaihim ghairi“. Besonders achtsam sein sollte man vor Waw und Fa — weil auch sie an den Lippen gebildet werden, verwischt das Mim dort leicht, obwohl es deutlich bleiben muss.",
+      "belege": [
+        "Koran 105:4",
+        "Koran 1:7",
+        "Koran 73:4"
+      ]
+    },
+    {
+      "id": "qalqala",
+      "titel": "Qalqala — der federnde Nachklang",
+      "tags": [
+        "qalqala",
+        "qalqalah",
+        "qutb dschad",
+        "nachklang",
+        "tadschwied",
+        "tajwid",
+        "aussprache"
+      ],
+      "text": "Qalqala bedeutet „Erschütterung“ und beschreibt einen kurzen, federnden Nachklang, den fünf Buchstaben bekommen, wenn sie vokallos sind: Qaf, Ta, Ba, Dschim und Dal — zusammengefasst im Merkwort „Qutb Dschad“. Der Buchstabe wird dabei nicht mit einem Vokal versehen, sondern nur leicht abgesprengt, sodass man ihn hört, ohne „qa“, „qi“ oder „qu“ zu sprechen. Man unterscheidet die kleine Qalqala, wenn der Buchstabe mitten im Wort ein Sukun trägt, wie das Dal in „jadchuluun“, und die große Qalqala am Wortende beim Anhalten, etwa das Qaf in „al-falaq“ — dort klingt sie deutlicher, besonders wenn zusätzlich eine Schadda steht. Wie stark der Nachklang ausfallen soll, beschreiben die Lehrbücher leicht unterschiedlich; übertreiben sollte man ihn nicht.",
+      "belege": [
+        "Koran 113:1"
+      ]
+    },
+    {
+      "id": "ghunna",
+      "titel": "Ghunna — der Nasallaut",
+      "tags": [
+        "ghunna",
+        "ghunnah",
+        "nasal",
+        "nun mit schadda",
+        "mim mit schadda",
+        "tadschwied",
+        "tajwid"
+      ],
+      "text": "Die Ghunna ist ein Summton, der in der Nasenhöhle entsteht und immer zu Nun und Mim gehört. Am deutlichsten ist sie, wenn eines der beiden eine Schadda trägt: In „inna“ oder „thumma“ wird der Nasallaut etwa zwei Zählzeiten gehalten, so lange wie ein natürlicher Langvokal. Ghunna begleitet außerdem mehrere Regeln der vokallosen Nun und Mim: das Idgham mit Ghunna, das Iqlab, das Ichfa und das Idgham Schafawi. Ob sie tatsächlich klingt, prüft man leicht, indem man beim Sprechen die Nase zuhält — dann muss der Ton abbrechen. Die genaue Länge wird in den Lehrbüchern gleich mit zwei Zählzeiten angegeben, ihre Stärke kann je nach Regel und Lehrtradition etwas variieren.",
+      "belege": [
+        "Koran 108:1",
+        "Koran 73:4"
+      ]
+    },
+    {
+      "id": "waqf-pausenzeichen",
+      "titel": "Waqf — Pausen und Pausenzeichen",
+      "tags": [
+        "waqf",
+        "pause",
+        "pausenzeichen",
+        "anhalten",
+        "mushaf zeichen",
+        "tadschwied",
+        "tajwid"
+      ],
+      "text": "Waqf ist das Anhalten beim Rezitieren. Weil man mitten im Satz nicht beliebig pausieren sollte, tragen die meisten Mushaf-Ausgaben kleine Buchstabenzeichen über der Zeile: Mim bedeutet, dass man anhalten soll, weil Weiterlesen den Sinn verändern würde; Ta steht für eine vollständige Pause, Dschim für eine erlaubte; Sad und Za raten dazu, eher weiterzulesen; „La“ heißt, hier nicht anzuhalten. Drei Punkte, die zweimal erscheinen, markieren die Muanaqa: Man hält an einer der beiden Stellen an, nie an beiden. Beim Anhalten wird der letzte Buchstabe vokallos gesprochen, ein Tanwin auf Fatha wird zu einem langen „aa“, und eine Ta Marbuta klingt wie ein „h“. Diese Zeichen gehen auf spätere Gelehrte wie as-Sadschawandi zurück und unterscheiden sich zwischen Druckausgaben — sie sind eine Lesehilfe, kein Teil des offenbarten Textes. Muss man ungeplant Luft holen, setzt man am besten am Wortanfang davor neu ein.",
+      "belege": [
+        "Koran 73:4",
+        "Koran 17:106"
+      ]
+    },
+    {
+      "id": "haeufige-lesefehler",
+      "titel": "Häufige Lesefehler und wie man sie vermeidet",
+      "tags": [
+        "lesefehler",
+        "fehler",
+        "aussprache",
+        "haeufige fehler",
+        "verbessern",
+        "tadschwied",
+        "tajwid",
+        "ueben"
+      ],
+      "text": "Die häufigsten Fehler beim Koranlesen betreffen ähnlich klingende Buchstaben, die im Deutschen keine Entsprechung haben: Ha, Ha und Cha; Sin und Sad; Ta und Ta; Dal und Dad; Kaf und Qaf. Sie zu verwechseln kann die Bedeutung ändern — „qalb“ heißt Herz, „kalb“ dagegen Hund. Genauso oft werden Längen nicht gehalten oder umgekehrt kurze Vokale gedehnt, Schaddas verschluckt und die Ghunna vergessen. Ein weiterer Klassiker ist zu schnelles Lesen: Wer hetzt, verliert Endungen und Pausen zugleich. Drei Gegenmittel helfen fast immer — langsam und laut lesen, sich selbst aufnehmen und mit einer guten Rezitation vergleichen, und regelmäßig einem Lehrer oder einer Lehrerin vortragen, denn den eigenen Fehler hört man selten. Fehler beim Üben sind kein Grund aufzuhören: Der Weg zum korrekten Lesen führt genau durch sie hindurch.",
+      "belege": [
+        "Koran 73:4",
+        "Koran 47:24"
+      ]
+    }
+  ]
+}

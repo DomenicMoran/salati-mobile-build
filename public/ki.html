@@ -1,0 +1,747 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title id="pageTitle">Salati KI - Fragen an Koran &amp; Duas (100% lokal)</title>
+<style>
+  /* Palette = apps/mobile/src/constants/theme.ts (Colors.light/Colors.dark):
+     paper #f7f3ea, ink #0b0b0d, gold #d4af37, accent hell #846200,
+     backgroundElement #F0EAD9/#1A1A1D, backgroundSelected #E8DFC7/#242427.
+     --ink/--paper tauschen im Dark Mode die Rollen (Text/Hintergrund). */
+  :root {
+    color-scheme: light dark;
+    --ink:#0b0b0d; --paper:#f7f3ea; --gold:#d4af37; --gold-dark:#846200;
+    --card:#f0ead9; --muted:#6b6455;
+    --border:rgba(11,11,13,.15); --border-soft:rgba(11,11,13,.08);
+    --accent-border:rgba(132,98,0,.35); --accent-border-soft:rgba(132,98,0,.3);
+    --field:#fff; --logo-bg:#0b0b0d; --on-gold:#0b0b0d;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --ink:#f7f3ea; --paper:#0b0b0d; --gold-dark:#d4af37;
+      --card:#1a1a1d; --muted:rgba(247,243,234,.65);
+      --border:rgba(247,243,234,.2); --border-soft:rgba(247,243,234,.1);
+      --accent-border:rgba(212,175,55,.45); --accent-border-soft:rgba(212,175,55,.35);
+      --field:#1a1a1d; --logo-bg:#1a1a1d;
+    }
+  }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { font-family:'Segoe UI',system-ui,sans-serif; background:var(--paper); color:var(--ink); min-height:100vh; display:flex; flex-direction:column; }
+  header { padding:14px 18px; display:flex; align-items:center; gap:10px; border-bottom:1px solid var(--border-soft); }
+  header .logo { width:30px; height:30px; border-radius:8px; background:var(--logo-bg); display:grid; place-items:center; color:var(--gold); font-size:16px; }
+  header h1 { font-size:17px; } header .sub { font-size:12px; color:var(--muted); }
+  header a { margin-left:auto; color:var(--gold-dark); font-size:13px; text-decoration:none; font-weight:600; padding:12px 10px; }
+  [dir="rtl"] header a { margin-left:0; margin-right:auto; }
+  /* Woertliches Zitat mit seiner Quellenangabe - der einzige Antworttyp im Zitat-Modus. */
+  blockquote { margin:0 0 12px; padding-left:10px; border-inline-start:3px solid var(--gold); }
+  blockquote:last-of-type { margin-bottom:0; }
+  #status { font-size:12px; color:var(--muted); padding:8px 18px; background:var(--card); }
+  #status b { color:var(--gold-dark); }
+  main { flex:1; overflow-y:auto; padding:18px; display:flex; flex-direction:column; gap:12px; max-width:760px; width:100%; margin:0 auto; }
+  .msg { border-radius:16px; padding:12px 14px; max-width:92%; line-height:1.5; font-size:14.5px; white-space:pre-wrap; }
+  .du { align-self:flex-end; background:var(--ink); color:var(--paper); }
+  .ki { align-self:flex-start; background:var(--card); }
+  .quelle { font-size:12px; color:var(--gold-dark); margin-top:8px; border-top:1px dashed var(--accent-border-soft); padding-top:6px; }
+  .hinweis { font-size:12px; color:var(--muted); font-style:italic; }
+  form { display:flex; gap:8px; padding:14px 18px 18px; max-width:760px; width:100%; margin:0 auto; }
+  input { flex:1; border:1px solid var(--border); border-radius:999px; padding:12px 16px; font-size:15px; background:var(--field); color:var(--ink); outline-color:var(--gold); }
+  button { border:0; border-radius:999px; padding:12px 22px; background:var(--gold); color:var(--on-gold); font-weight:700; font-size:15px; cursor:pointer; }
+  button:disabled { opacity:.5; cursor:default; }
+  .chips { display:flex; flex-wrap:wrap; gap:8px; }
+  .kopieren { position:absolute; top:6px; left:8px; background:none; border:0; color:var(--muted); font-size:11px; cursor:pointer; padding:6px; display:none; }
+  [dir="rtl"] .kopieren { left:auto; right:8px; }
+  .msg.ki:hover .kopieren { display:block; }
+  .msg.ki { position:relative; }
+  .quelle a { color:var(--gold-dark); text-decoration:underline; }
+  #loeschen { background:none; border:0; color:var(--muted); font-size:11px; cursor:pointer; padding:8px; margin-left:8px; text-decoration:underline; }
+  [dir="rtl"] #loeschen { margin-left:0; margin-right:8px; }
+  .chip { border:1px solid var(--accent-border); color:var(--gold-dark); background:transparent; font-size:12.5px; padding:12px 14px; font-weight:600; min-height:44px; }
+  .chip:disabled { opacity:.5; cursor:default; }
+  .msg[dir="rtl"] { text-align:right; }
+  .themen { max-width:760px; width:100%; margin:0 auto; padding:0 18px; }
+  .themen-pills { display:flex; flex-wrap:wrap; gap:6px; padding-top:10px; }
+  .pill { border:1px solid var(--border); background:var(--field); color:var(--ink); border-radius:999px; padding:8px 12px; font-size:12.5px; cursor:pointer; min-height:36px; }
+  .pill.aktiv { background:var(--ink); color:var(--paper); border-color:var(--ink); }
+  .themen-fragen { display:flex; flex-wrap:wrap; gap:6px; padding-top:6px; }
+  .themen-fragen:empty { padding-top:0; }
+</style>
+</head>
+<body>
+<header>
+  <div class="logo">✦</div>
+  <div><h1 id="appTitle">Salati KI <span style="font-size:11px;color:var(--muted)">Beta</span></h1>
+  <div class="sub" id="headerSub">Antwortet NUR aus Koran, 40-Nawawi-Hadithen, geprüften Duas &amp; Salati-Kurstexten - läuft zu 100 % auf deinem Gerät</div></div>
+  <button id="loeschen" type="button">Verlauf löschen</button>
+  <a href="/" id="backLink">← Salati</a>
+</header>
+<div class="hinweis" style="padding:4px 18px 0" id="aiDisclosure">KI-gestützte Antwort - keine Fatwa oder Gelehrten-Meinung. Sie besteht ausschließlich aus wörtlichen Auszügen der genannten Quellen; die passende Stelle kann fehlen oder unvollständig sein - lies die verlinkte Quelle.</div>
+<div id="status">Lade Wissens-Korpus …</div>
+<main id="chat">
+  <div class="msg ki"><span id="welcomeText">Salam! Stell mir eine Frage - ich suche die passenden Stellen aus dem <b>Koran</b> (Übersetzung Bubenheim), den <b>40 Hadithen an-Nawawis</b>, den <b>geprüften Duas</b> und den <b>geprüften Salati-Kurstexten (Erklärungen)</b> heraus und antworte ausschließlich auf dieser Grundlage. Nichts verlässt dein Gerät: Suche und KI laufen lokal.</span>
+  <div class="chips" id="exampleChips" style="margin-top:10px"></div></div>
+</main>
+<div class="themen">
+  <div class="themen-pills" id="themenPills"></div>
+  <div class="themen-fragen" id="themenFragen"></div>
+</div>
+<form id="f"><input id="q" placeholder="Deine Frage …" autocomplete="off" dir="auto"><button id="send" disabled>Fragen</button></form>
+<script type="module">
+const status = document.getElementById('status');
+const chat = document.getElementById('chat');
+const form = document.getElementById('f');
+const input = document.getElementById('q');
+const sendBtn = document.getElementById('send');
+
+// ---------- 0) i18n ----------
+// Eigenstaendige Web-Seite (kein Zugriff auf apps/mobile/src/lib/i18n.ts /
+// useTranslation() - lebt ausserhalb des React/Expo-Baums, siehe public/-Kopie
+// in den Web-Export). Liest denselben AsyncStorage/localStorage-Schluessel wie
+// die App (SETTINGS_STORAGE_KEY aus src/features/settings/types.ts), damit die
+// Sprachauswahl mit dem Rest von Salati konsistent bleibt. AsyncStorage nutzt
+// im Web-Build von @react-native-async-storage/async-storage denselben Key
+// direkt in window.localStorage (kein Praefix).
+const SETTINGS_STORAGE_KEY = 'salatibox:settings';
+const SUPPORTED_LOCALES = ['de','en','tr','ar','es','fr','id','bn','fa','ms','ur','ru','sw','ps'];
+const RTL_LOCALES = new Set(['ar','ur','fa','ps']);
+const T_ALL = {
+  "de": {
+    "title": "Salati KI",
+    "headerSub": "Antwortet NUR aus Koran, 40-Nawawi-Hadithen, geprüften Duas & Salati-Kurstexten - läuft zu 100 % auf deinem Gerät",
+    "clearHistory": "Verlauf löschen",
+    "aiDisclosure": "KI-gestützte Antwort - keine Fatwa oder Gelehrten-Meinung. Sie besteht ausschließlich aus wörtlichen Auszügen der genannten Quellen; die passende Stelle kann fehlen oder unvollständig sein - lies die verlinkte Quelle.",
+    "loadingCorpus": "Lade Wissens-Korpus …",
+    "welcome": "Salam! Stell mir eine Frage - ich suche die passenden Stellen aus dem <b>Koran</b> (Übersetzung Bubenheim), den <b>40 Hadithen an-Nawawis</b>, den <b>geprüften Duas</b> und den <b>geprüften Salati-Kurstexten (Erklärungen)</b> heraus und antworte ausschließlich auf dieser Grundlage. Nichts verlässt dein Gerät: Suche und KI laufen lokal.",
+    "inputPlaceholder": "Deine Frage …",
+    "send": "Fragen",
+    "corpusLoaded": "<b>{n}</b> Quellen-Passagen geladen · bereit, alles läuft lokal.",
+    "arabicNote": "Deine Frage enthielt arabische Schrift - ich habe passende Begriffe in den deutschen/transliterierten Quellen gesucht (z. B. „صبر“ ↔ „{word}“).",
+    "noResult": "Dazu finde ich in meinen lokalen Quellen keine Stelle. Für verlässliche Antworten frag bitte eine*n Gelehrte*n.",
+    "sourcesLabel": "Quellen",
+    "copy": "⧉ kopieren",
+    "copied": "✓ kopiert",
+    "themes": {
+      "patience": { "label": "Geduld", "questions": ["Was sagt der Koran über Geduld?", "Welche Dua hilft bei Ungeduld?", "Wie war der Prophet ﷺ in schwierigen Zeiten geduldig?"] },
+      "family": { "label": "Familie", "questions": ["Was steht im Koran über die Eltern?", "Wie soll man seine Kinder erziehen?", "Was sagt der Islam über Geschwister?"] },
+      "prayer": { "label": "Gebet", "questions": ["Warum ist das Gebet so wichtig?", "Welche Dua spricht man morgens?", "Was tun, wenn ich ein Gebet verpasst habe?"] },
+      "gratitude": { "label": "Dankbarkeit", "questions": ["Was sagt der Koran über Dankbarkeit?", "Wie zeige ich Allah meine Dankbarkeit?", "Welche Dua spricht man aus Dankbarkeit?"] },
+      "worry": { "label": "Angst & Sorge", "questions": ["Was hilft laut Koran gegen Sorgen?", "Welche Dua spricht man bei Angst?", "Wie vertraue ich Allah in schweren Zeiten?"] },
+      "forgiveness": { "label": "Vergebung", "questions": ["Wie bitte ich Allah um Vergebung?", "Was sagt der Koran über Vergebung unter Menschen?", "Welche Dua spricht man für Reue?"] },
+      "hope": { "label": "Hoffnung", "questions": ["Was sagt der Koran über Hoffnung?", "Wie finde ich Hoffnung nach einem Rückschlag?", "Was bedeutet „Mit der Not kommt Erleichterung“?"] }
+    }
+  },
+  "en": {
+    "title": "Salati AI",
+    "headerSub": "Answers ONLY from the Quran, the 40 Hadith of an-Nawawi, verified duas & Salati course texts - runs 100% on your device",
+    "clearHistory": "Clear history",
+    "aiDisclosure": "AI-assisted answer - not a fatwa or scholarly opinion. It consists solely of verbatim excerpts from the sources listed; the right passage may be missing or incomplete - read the linked source.",
+    "loadingCorpus": "Loading knowledge corpus …",
+    "welcome": "Salam! Ask me a question - I'll find the matching passages from the <b>Quran</b> (Bubenheim translation), the <b>40 Hadith of an-Nawawi</b>, <b>verified duas</b>, and <b>verified Salati course texts (explanations)</b>, and answer based solely on those. Nothing leaves your device: search and AI run locally.",
+    "inputPlaceholder": "Your question …",
+    "send": "Ask",
+    "corpusLoaded": "<b>{n}</b> source passages loaded · ready, everything runs locally.",
+    "arabicNote": "Your question contained Arabic script - I searched for matching terms in the German/transliterated sources (e.g. „صبر“ ↔ „{word}“).",
+    "noResult": "I couldn't find anything on this in my local sources. For a reliable answer, please ask a scholar.",
+    "sourcesLabel": "Sources",
+    "copy": "⧉ copy",
+    "copied": "✓ copied",
+    "themes": {
+      "patience": { "label": "Patience", "questions": ["What does the Quran say about patience?", "Which dua helps with impatience?", "How was the Prophet ﷺ patient in difficult times?"] },
+      "family": { "label": "Family", "questions": ["What does the Quran say about parents?", "How should I raise my children?", "What does Islam say about siblings?"] },
+      "prayer": { "label": "Prayer", "questions": ["Why is prayer so important?", "Which dua is recited in the morning?", "What should I do if I missed a prayer?"] },
+      "gratitude": { "label": "Gratitude", "questions": ["What does the Quran say about gratitude?", "How do I show Allah my gratitude?", "Which dua is recited out of gratitude?"] },
+      "worry": { "label": "Fear & Worry", "questions": ["What helps against worry according to the Quran?", "Which dua is recited in times of fear?", "How do I trust Allah in difficult times?"] },
+      "forgiveness": { "label": "Forgiveness", "questions": ["How do I ask Allah for forgiveness?", "What does the Quran say about forgiveness among people?", "Which dua is recited for repentance?"] },
+      "hope": { "label": "Hope", "questions": ["What does the Quran say about hope?", "How do I find hope after a setback?", "What does “With hardship comes ease” mean?"] }
+    }
+  },
+  "tr": {
+    "title": "Salati Yapay Zeka",
+    "headerSub": "Yalnızca Kur'an, 40 Nevevî Hadisi, doğrulanmış dualar ve Salati kurs metinlerinden yanıt verir - %100 cihazınızda çalışır",
+    "clearHistory": "Geçmişi temizle",
+    "aiDisclosure": "Yapay zeka destekli yanıt - fetva veya alim görüşü değildir. Yalnızca belirtilen kaynaklardan birebir alıntılardan oluşur; uygun bölüm eksik olabilir veya hiç bulunmayabilir - bağlantı verilen kaynağı oku.",
+    "loadingCorpus": "Bilgi kaynağı yükleniyor …",
+    "welcome": "Selam! Bana bir soru sor - <b>Kur'an</b> (Bubenheim çevirisi), <b>40 Nevevî Hadisi</b>, <b>doğrulanmış dualar</b> ve <b>doğrulanmış Salati kurs metinlerinden (açıklamalar)</b> uygun bölümleri bulup yalnızca bunlara dayanarak yanıt vereceğim. Hiçbir şey cihazından çıkmaz: arama ve yapay zeka yerel olarak çalışır.",
+    "inputPlaceholder": "Sorunuz …",
+    "send": "Sor",
+    "corpusLoaded": "<b>{n}</b> kaynak pasajı yüklendi · hazır, her şey yerel çalışıyor.",
+    "arabicNote": "Sorunuz Arapça yazı içeriyordu - Almanca/harf çevirisi yapılmış kaynaklarda uygun terimleri aradım (örn. „صبر“ ↔ „{word}“).",
+    "noResult": "Bu konuda yerel kaynaklarımda bir şey bulamadım. Güvenilir bir yanıt için lütfen bir alime danışın.",
+    "sourcesLabel": "Kaynaklar",
+    "copy": "⧉ kopyala",
+    "copied": "✓ kopyalandı",
+    "themes": {
+      "patience": { "label": "Sabır", "questions": ["Kur'an sabır hakkında ne söylüyor?", "Sabırsızlığa hangi dua yardımcı olur?", "Peygamber ﷺ zor zamanlarda nasıl sabretti?"] },
+      "family": { "label": "Aile", "questions": ["Kur'an'da ebeveynler hakkında ne yazıyor?", "Çocuklarımı nasıl yetiştirmeliyim?", "İslam kardeşler hakkında ne söylüyor?"] },
+      "prayer": { "label": "Namaz", "questions": ["Namaz neden bu kadar önemlidir?", "Sabah hangi dua okunur?", "Bir namazı kaçırırsam ne yapmalıyım?"] },
+      "gratitude": { "label": "Şükür", "questions": ["Kur'an şükür hakkında ne söylüyor?", "Allah'a şükrümü nasıl gösteririm?", "Şükür için hangi dua okunur?"] },
+      "worry": { "label": "Korku ve Endişe", "questions": ["Kur'an'a göre endişeye ne yardımcı olur?", "Korku anında hangi dua okunur?", "Zor zamanlarda Allah'a nasıl güvenirim?"] },
+      "forgiveness": { "label": "Af", "questions": ["Allah'tan nasıl af dilerim?", "Kur'an insanlar arası affetme hakkında ne söylüyor?", "Tövbe için hangi dua okunur?"] },
+      "hope": { "label": "Umut", "questions": ["Kur'an umut hakkında ne söylüyor?", "Bir başarısızlıktan sonra umudu nasıl bulurum?", "“Zorlukla beraber kolaylık vardır” ne anlama gelir?"] }
+    }
+  },
+  "ar": {
+    "title": "سلاتي الذكاء الاصطناعي",
+    "headerSub": "يجيب فقط من القرآن، والأربعين النووية، والأدعية الموثقة، ونصوص دورة سلاتي - يعمل بنسبة 100% على جهازك",
+    "clearHistory": "مسح المحادثة",
+    "aiDisclosure": "إجابة بمساعدة الذكاء الاصطناعي - وليست فتوى أو رأي عالِم شرعي. تتكوّن حصريًا من مقاطع منقولة حرفيًا من المصادر المذكورة؛ وقد يكون المقطع المناسب ناقصًا أو غير موجود - اقرأ المصدر المرتبط.",
+    "loadingCorpus": "جارٍ تحميل قاعدة المعرفة …",
+    "welcome": "السلام عليكم! اطرح عليّ سؤالًا - سأبحث عن المقاطع المناسبة من <b>القرآن</b> (ترجمة بوبنهايم)، و<b>الأربعين النووية</b>، و<b>الأدعية الموثقة</b>، و<b>نصوص دورة سلاتي الموثقة (الشروحات)</b> وأجيب بناءً عليها فقط. لا شيء يغادر جهازك: البحث والذكاء الاصطناعي يعملان محليًا.",
+    "inputPlaceholder": "سؤالك …",
+    "send": "اسأل",
+    "corpusLoaded": "تم تحميل <b>{n}</b> مقطعًا مصدريًا · جاهز، كل شيء يعمل محليًا.",
+    "arabicNote": "احتوى سؤالك على نص عربي - بحثت عن مصطلحات مطابقة في المصادر الألمانية/المترجمة صوتيًا (مثال: „صبر“ ↔ „{word}“).",
+    "noResult": "لم أجد شيئًا حول هذا في مصادري المحلية. للحصول على إجابة موثوقة، يُرجى سؤال أحد العلماء.",
+    "sourcesLabel": "المصادر",
+    "copy": "⧉ نسخ",
+    "copied": "✓ تم النسخ",
+    "themes": {
+      "patience": { "label": "الصبر", "questions": ["ماذا يقول القرآن عن الصبر؟", "أي دعاء يساعد على نفاد الصبر؟", "كيف كان النبي ﷺ صبورًا في الأوقات الصعبة؟"] },
+      "family": { "label": "الأسرة", "questions": ["ماذا ورد في القرآن عن الوالدين؟", "كيف أربي أبنائي؟", "ماذا يقول الإسلام عن الإخوة؟"] },
+      "prayer": { "label": "الصلاة", "questions": ["لماذا الصلاة مهمة جدًا؟", "أي دعاء يُقال في الصباح؟", "ماذا أفعل إذا فاتتني صلاة؟"] },
+      "gratitude": { "label": "الشكر", "questions": ["ماذا يقول القرآن عن الشكر؟", "كيف أُظهر شكري لله؟", "أي دعاء يُقال شكرًا؟"] },
+      "worry": { "label": "الخوف والقلق", "questions": ["ما الذي يساعد على القلق بحسب القرآن؟", "أي دعاء يُقال عند الخوف؟", "كيف أتوكل على الله في الأوقات الصعبة؟"] },
+      "forgiveness": { "label": "العفو", "questions": ["كيف أطلب المغفرة من الله؟", "ماذا يقول القرآن عن العفو بين الناس؟", "أي دعاء يُقال للتوبة؟"] },
+      "hope": { "label": "الأمل", "questions": ["ماذا يقول القرآن عن الأمل؟", "كيف أجد الأمل بعد نكسة؟", "ماذا تعني «إن مع العسر يسرًا»؟"] }
+    }
+  },
+  "es": {
+    "title": "Salati IA",
+    "headerSub": "Responde SOLO desde el Corán, los 40 hadices de an-Nawawi, duas verificadas y textos del curso Salati - funciona 100% en tu dispositivo",
+    "clearHistory": "Borrar historial",
+    "aiDisclosure": "Respuesta asistida por IA - no es una fatwa ni la opinión de un erudito. Se compone únicamente de extractos literales de las fuentes citadas; el pasaje adecuado puede faltar o estar incompleto - lee la fuente enlazada.",
+    "loadingCorpus": "Cargando corpus de conocimiento …",
+    "welcome": "¡Salam! Hazme una pregunta - buscaré los pasajes correspondientes del <b>Corán</b> (traducción Bubenheim), los <b>40 hadices de an-Nawawi</b>, <b>duas verificadas</b> y <b>textos verificados del curso Salati (explicaciones)</b>, y responderé solo con base en ellos. Nada sale de tu dispositivo: la búsqueda y la IA funcionan localmente.",
+    "inputPlaceholder": "Tu pregunta …",
+    "send": "Preguntar",
+    "corpusLoaded": "<b>{n}</b> pasajes fuente cargados · listo, todo funciona localmente.",
+    "arabicNote": "Tu pregunta contenía escritura árabe - busqué términos coincidentes en las fuentes en alemán/transliteradas (p. ej. „صبر“ ↔ „{word}“).",
+    "noResult": "No encuentro nada sobre esto en mis fuentes locales. Para una respuesta fiable, consulta a un erudito.",
+    "sourcesLabel": "Fuentes",
+    "copy": "⧉ copiar",
+    "copied": "✓ copiado",
+    "themes": {
+      "patience": { "label": "Paciencia", "questions": ["¿Qué dice el Corán sobre la paciencia?", "¿Qué dua ayuda con la impaciencia?", "¿Cómo fue paciente el Profeta ﷺ en tiempos difíciles?"] },
+      "family": { "label": "Familia", "questions": ["¿Qué dice el Corán sobre los padres?", "¿Cómo debo educar a mis hijos?", "¿Qué dice el islam sobre los hermanos?"] },
+      "prayer": { "label": "Oración", "questions": ["¿Por qué es tan importante la oración?", "¿Qué dua se recita por la mañana?", "¿Qué hacer si me perdí una oración?"] },
+      "gratitude": { "label": "Gratitud", "questions": ["¿Qué dice el Corán sobre la gratitud?", "¿Cómo muestro mi gratitud a Allah?", "¿Qué dua se recita por gratitud?"] },
+      "worry": { "label": "Miedo y Preocupación", "questions": ["¿Qué ayuda contra la preocupación según el Corán?", "¿Qué dua se recita ante el miedo?", "¿Cómo confío en Allah en tiempos difíciles?"] },
+      "forgiveness": { "label": "Perdón", "questions": ["¿Cómo pido perdón a Allah?", "¿Qué dice el Corán sobre el perdón entre las personas?", "¿Qué dua se recita por arrepentimiento?"] },
+      "hope": { "label": "Esperanza", "questions": ["¿Qué dice el Corán sobre la esperanza?", "¿Cómo encuentro esperanza tras un revés?", "¿Qué significa «Con la dificultad viene el alivio»?"] }
+    }
+  },
+  "fr": {
+    "title": "Salati IA",
+    "headerSub": "Répond UNIQUEMENT à partir du Coran, des 40 hadiths d'an-Nawawi, de douas vérifiées et des textes du cours Salati - fonctionne à 100 % sur votre appareil",
+    "clearHistory": "Effacer l'historique",
+    "aiDisclosure": "Réponse assistée par IA - ce n'est pas une fatwa ni l'avis d'un érudit. Elle se compose uniquement d'extraits littéraux des sources citées ; le passage adéquat peut manquer ou être incomplet - lis la source liée.",
+    "loadingCorpus": "Chargement du corpus de connaissances …",
+    "welcome": "Salam ! Pose-moi une question - je vais chercher les passages correspondants dans le <b>Coran</b> (traduction Bubenheim), les <b>40 hadiths d'an-Nawawi</b>, les <b>douas vérifiées</b> et les <b>textes vérifiés du cours Salati (explications)</b>, et répondre uniquement sur cette base. Rien ne quitte votre appareil : la recherche et l'IA fonctionnent localement.",
+    "inputPlaceholder": "Votre question …",
+    "send": "Demander",
+    "corpusLoaded": "<b>{n}</b> passages sources chargés · prêt, tout fonctionne en local.",
+    "arabicNote": "Votre question contenait de l'écriture arabe - j'ai cherché des termes correspondants dans les sources allemandes/translittérées (p. ex. „صبر“ ↔ „{word}“).",
+    "noResult": "Je ne trouve rien à ce sujet dans mes sources locales. Pour une réponse fiable, merci de consulter un érudit.",
+    "sourcesLabel": "Sources",
+    "copy": "⧉ copier",
+    "copied": "✓ copié",
+    "themes": {
+      "patience": { "label": "Patience", "questions": ["Que dit le Coran sur la patience ?", "Quelle doua aide contre l'impatience ?", "Comment le Prophète ﷺ était-il patient dans les moments difficiles ?"] },
+      "family": { "label": "Famille", "questions": ["Que dit le Coran sur les parents ?", "Comment dois-je éduquer mes enfants ?", "Que dit l'islam sur les frères et sœurs ?"] },
+      "prayer": { "label": "Prière", "questions": ["Pourquoi la prière est-elle si importante ?", "Quelle doua est récitée le matin ?", "Que faire si j'ai manqué une prière ?"] },
+      "gratitude": { "label": "Gratitude", "questions": ["Que dit le Coran sur la gratitude ?", "Comment montrer ma gratitude à Allah ?", "Quelle doua est récitée par gratitude ?"] },
+      "worry": { "label": "Peur et Inquiétude", "questions": ["Qu'est-ce qui aide contre l'inquiétude selon le Coran ?", "Quelle doua est récitée en cas de peur ?", "Comment faire confiance à Allah dans les moments difficiles ?"] },
+      "forgiveness": { "label": "Pardon", "questions": ["Comment demander pardon à Allah ?", "Que dit le Coran sur le pardon entre les gens ?", "Quelle doua est récitée pour le repentir ?"] },
+      "hope": { "label": "Espoir", "questions": ["Que dit le Coran sur l'espoir ?", "Comment trouver l'espoir après un échec ?", "Que signifie « Après la difficulté vient l'aisance » ?"] }
+    }
+  },
+  "id": {
+    "title": "Salati AI",
+    "headerSub": "Hanya menjawab dari Al-Qur'an, 40 Hadis an-Nawawi, doa terverifikasi & teks kursus Salati - berjalan 100% di perangkat Anda",
+    "clearHistory": "Hapus riwayat",
+    "aiDisclosure": "Jawaban dibantu AI - bukan fatwa atau pendapat ulama. Jawaban ini hanya terdiri dari kutipan harfiah dari sumber yang disebutkan; bagian yang tepat bisa saja tidak ada atau tidak lengkap - baca sumber yang tertaut.",
+    "loadingCorpus": "Memuat korpus pengetahuan …",
+    "welcome": "Salam! Ajukan pertanyaan kepada saya - saya akan mencari bagian yang sesuai dari <b>Al-Qur'an</b> (terjemahan Bubenheim), <b>40 Hadis an-Nawawi</b>, <b>doa terverifikasi</b>, dan <b>teks kursus Salati terverifikasi (penjelasan)</b>, lalu menjawab hanya berdasarkan itu. Tidak ada yang meninggalkan perangkat Anda: pencarian dan AI berjalan secara lokal.",
+    "inputPlaceholder": "Pertanyaan Anda …",
+    "send": "Tanya",
+    "corpusLoaded": "<b>{n}</b> bagian sumber dimuat · siap, semuanya berjalan lokal.",
+    "arabicNote": "Pertanyaan Anda mengandung tulisan Arab - saya mencari istilah yang cocok dalam sumber berbahasa Jerman/transliterasi (mis. „صبر“ ↔ „{word}“).",
+    "noResult": "Saya tidak menemukan apa pun tentang ini di sumber lokal saya. Untuk jawaban yang andal, silakan tanyakan kepada seorang ulama.",
+    "sourcesLabel": "Sumber",
+    "copy": "⧉ salin",
+    "copied": "✓ disalin",
+    "themes": {
+      "patience": { "label": "Kesabaran", "questions": ["Apa kata Al-Qur'an tentang kesabaran?", "Doa apa yang membantu mengatasi ketidaksabaran?", "Bagaimana Nabi ﷺ bersabar di masa sulit?"] },
+      "family": { "label": "Keluarga", "questions": ["Apa yang tertulis dalam Al-Qur'an tentang orang tua?", "Bagaimana cara mendidik anak-anak saya?", "Apa kata Islam tentang saudara kandung?"] },
+      "prayer": { "label": "Salat", "questions": ["Mengapa salat begitu penting?", "Doa apa yang dibaca di pagi hari?", "Apa yang harus dilakukan jika saya melewatkan salat?"] },
+      "gratitude": { "label": "Rasa Syukur", "questions": ["Apa kata Al-Qur'an tentang rasa syukur?", "Bagaimana saya menunjukkan rasa syukur kepada Allah?", "Doa apa yang dibaca sebagai rasa syukur?"] },
+      "worry": { "label": "Ketakutan & Kekhawatiran", "questions": ["Apa yang membantu mengatasi kekhawatiran menurut Al-Qur'an?", "Doa apa yang dibaca saat takut?", "Bagaimana saya percaya kepada Allah di masa sulit?"] },
+      "forgiveness": { "label": "Pengampunan", "questions": ["Bagaimana saya memohon ampunan kepada Allah?", "Apa kata Al-Qur'an tentang saling memaafkan antar manusia?", "Doa apa yang dibaca untuk bertaubat?"] },
+      "hope": { "label": "Harapan", "questions": ["Apa kata Al-Qur'an tentang harapan?", "Bagaimana saya menemukan harapan setelah kegagalan?", "Apa arti “Bersama kesulitan ada kemudahan”?"] }
+    }
+  },
+  "bn": {
+    "title": "সালাতি এআই",
+    "headerSub": "শুধুমাত্র কুরআন, ৪০টি নববী হাদিস, যাচাইকৃত দুআ ও সালাতি কোর্স টেক্সট থেকে উত্তর দেয় - আপনার ডিভাইসে ১০০% স্থানীয়ভাবে চলে",
+    "clearHistory": "ইতিহাস মুছুন",
+    "aiDisclosure": "এআই-সহায়ক উত্তর - এটি কোনো ফতোয়া বা আলেমের মতামত নয়। এটি কেবল উল্লিখিত উৎস থেকে হুবহু উদ্ধৃতি নিয়ে গঠিত; উপযুক্ত অংশটি অনুপস্থিত বা অসম্পূর্ণ হতে পারে - সংযুক্ত উৎসটি পড়ুন।",
+    "loadingCorpus": "জ্ঞান ভান্ডার লোড হচ্ছে …",
+    "welcome": "আসসালামু আলাইকুম! আমাকে একটি প্রশ্ন জিজ্ঞাসা করুন - আমি <b>কুরআন</b> (বুবেনহাইম অনুবাদ), <b>৪০টি নববী হাদিস</b>, <b>যাচাইকৃত দুআ</b> এবং <b>যাচাইকৃত সালাতি কোর্স টেক্সট (ব্যাখ্যা)</b> থেকে উপযুক্ত অংশ খুঁজে বের করে শুধুমাত্র তার ভিত্তিতে উত্তর দেব। কিছুই আপনার ডিভাইস ছেড়ে যায় না: অনুসন্ধান ও এআই স্থানীয়ভাবে চলে।",
+    "inputPlaceholder": "আপনার প্রশ্ন …",
+    "send": "জিজ্ঞাসা করুন",
+    "corpusLoaded": "<b>{n}</b>টি উৎস অংশ লোড হয়েছে · প্রস্তুত, সবকিছু স্থানীয়ভাবে চলে।",
+    "arabicNote": "আপনার প্রশ্নে আরবি লিপি ছিল - আমি জার্মান/প্রতিবর্ণীকৃত উৎসে মিলে যাওয়া শব্দ খুঁজেছি (যেমন „صبر“ ↔ „{word}“)।",
+    "noResult": "আমার স্থানীয় উৎসে এ বিষয়ে কিছু খুঁজে পাইনি। নির্ভরযোগ্য উত্তরের জন্য দয়া করে কোনো আলেমকে জিজ্ঞাসা করুন।",
+    "sourcesLabel": "উৎস",
+    "copy": "⧉ কপি করুন",
+    "copied": "✓ কপি হয়েছে",
+    "themes": {
+      "patience": { "label": "ধৈর্য", "questions": ["কুরআনে ধৈর্য সম্পর্কে কী বলা হয়েছে?", "অধৈর্যের সময় কোন দুআ সাহায্য করে?", "কঠিন সময়ে নবী ﷺ কীভাবে ধৈর্য ধরেছিলেন?"] },
+      "family": { "label": "পরিবার", "questions": ["কুরআনে পিতামাতা সম্পর্কে কী লেখা আছে?", "আমার সন্তানদের কীভাবে গড়ে তুলব?", "ইসলাম ভাইবোন সম্পর্কে কী বলে?"] },
+      "prayer": { "label": "নামাজ", "questions": ["নামাজ কেন এত গুরুত্বপূর্ণ?", "সকালে কোন দুআ পড়া হয়?", "নামাজ ছুটে গেলে কী করব?"] },
+      "gratitude": { "label": "কৃতজ্ঞতা", "questions": ["কুরআনে কৃতজ্ঞতা সম্পর্কে কী বলা হয়েছে?", "আল্লাহর প্রতি আমার কৃতজ্ঞতা কীভাবে প্রকাশ করব?", "কৃতজ্ঞতাবশত কোন দুআ পড়া হয়?"] },
+      "worry": { "label": "ভয় ও উদ্বেগ", "questions": ["কুরআন অনুযায়ী উদ্বেগে কী সাহায্য করে?", "ভয়ের সময় কোন দুআ পড়া হয়?", "কঠিন সময়ে আল্লাহর উপর কীভাবে ভরসা করব?"] },
+      "forgiveness": { "label": "ক্ষমা", "questions": ["আল্লাহর কাছে কীভাবে ক্ষমা চাইব?", "মানুষের মধ্যে ক্ষমা সম্পর্কে কুরআন কী বলে?", "তওবার জন্য কোন দুআ পড়া হয়?"] },
+      "hope": { "label": "আশা", "questions": ["কুরআনে আশা সম্পর্কে কী বলা হয়েছে?", "ব্যর্থতার পর আমি কীভাবে আশা খুঁজে পাব?", "“কষ্টের সাথে স্বস্তি আছে” এর অর্থ কী?"] }
+    }
+  },
+  "fa": {
+    "title": "سلاتی هوش مصنوعی",
+    "headerSub": "فقط بر اساس قرآن، ۴۰ حدیث نووی، دعاهای تأییدشده و متون دوره سلاتی پاسخ می‌دهد - ۱۰۰٪ روی دستگاه شما اجرا می‌شود",
+    "clearHistory": "پاک‌کردن تاریخچه",
+    "aiDisclosure": "پاسخ با کمک هوش مصنوعی - فتوا یا نظر عالم دینی نیست. تنها از نقل‌قول‌های عینی منابع یادشده تشکیل شده است؛ ممکن است بخش مناسب موجود نباشد یا ناقص باشد - منبع پیوندشده را بخوان.",
+    "loadingCorpus": "در حال بارگذاری منابع دانش …",
+    "welcome": "سلام! سؤالی از من بپرس - بخش‌های مرتبط از <b>قرآن</b> (ترجمه بوبنهایم)، <b>۴۰ حدیث نووی</b>، <b>دعاهای تأییدشده</b> و <b>متون تأییدشده دوره سلاتی (توضیحات)</b> را پیدا می‌کنم و فقط بر همان اساس پاسخ می‌دهم. هیچ‌چیز دستگاه شما را ترک نمی‌کند: جست‌وجو و هوش مصنوعی به‌صورت محلی اجرا می‌شوند.",
+    "inputPlaceholder": "سؤال شما …",
+    "send": "بپرس",
+    "corpusLoaded": "<b>{n}</b> بخش منبع بارگذاری شد · آماده است، همه‌چیز محلی اجرا می‌شود.",
+    "arabicNote": "سؤال شما شامل خط عربی بود - من اصطلاحات مشابه را در منابع آلمانی/آوانویسی‌شده جست‌وجو کردم (مثلاً „صبر“ ↔ „{word}“).",
+    "noResult": "چیزی درباره این موضوع در منابع محلی خود پیدا نکردم. برای پاسخ مطمئن، لطفاً از یک عالم دینی بپرسید.",
+    "sourcesLabel": "منابع",
+    "copy": "⧉ کپی",
+    "copied": "✓ کپی شد",
+    "themes": {
+      "patience": { "label": "صبر", "questions": ["قرآن درباره صبر چه می‌گوید؟", "کدام دعا به بی‌صبری کمک می‌کند؟", "پیامبر ﷺ در زمان‌های سخت چگونه صبر می‌کرد؟"] },
+      "family": { "label": "خانواده", "questions": ["قرآن درباره والدین چه گفته است؟", "چگونه فرزندانم را تربیت کنم؟", "اسلام درباره خواهر و برادر چه می‌گوید؟"] },
+      "prayer": { "label": "نماز", "questions": ["چرا نماز این‌قدر مهم است؟", "صبح‌ها کدام دعا خوانده می‌شود؟", "اگر نمازی را از دست دادم چه کنم؟"] },
+      "gratitude": { "label": "شکرگزاری", "questions": ["قرآن درباره شکرگزاری چه می‌گوید؟", "چگونه شکر خود را به الله نشان دهم؟", "از روی شکرگزاری کدام دعا خوانده می‌شود؟"] },
+      "worry": { "label": "ترس و نگرانی", "questions": ["طبق قرآن چه چیزی به نگرانی کمک می‌کند؟", "هنگام ترس کدام دعا خوانده می‌شود؟", "در زمان‌های سخت چگونه به الله توکل کنم؟"] },
+      "forgiveness": { "label": "بخشش", "questions": ["چگونه از الله طلب بخشش کنم؟", "قرآن درباره بخشش میان انسان‌ها چه می‌گوید؟", "برای توبه کدام دعا خوانده می‌شود؟"] },
+      "hope": { "label": "امید", "questions": ["قرآن درباره امید چه می‌گوید؟", "چگونه پس از یک شکست امید پیدا کنم؟", "«همراه با سختی، آسانی است» یعنی چه؟"] }
+    }
+  },
+  "ms": {
+    "title": "Salati AI",
+    "headerSub": "Hanya menjawab daripada Al-Quran, 40 Hadis an-Nawawi, doa yang disahkan & teks kursus Salati - berjalan 100% pada peranti anda",
+    "clearHistory": "Padam sejarah",
+    "aiDisclosure": "Jawapan dibantu AI - bukan fatwa atau pendapat ulama. Ia hanya terdiri daripada petikan harfiah daripada sumber yang dinyatakan; bahagian yang sesuai mungkin tiada atau tidak lengkap - baca sumber yang dipautkan.",
+    "loadingCorpus": "Memuatkan korpus pengetahuan …",
+    "welcome": "Salam! Tanya saya soalan - saya akan mencari bahagian yang sesuai daripada <b>Al-Quran</b> (terjemahan Bubenheim), <b>40 Hadis an-Nawawi</b>, <b>doa yang disahkan</b> dan <b>teks kursus Salati yang disahkan (penjelasan)</b>, dan menjawab hanya berdasarkan itu. Tiada apa-apa meninggalkan peranti anda: carian dan AI berjalan secara tempatan.",
+    "inputPlaceholder": "Soalan anda …",
+    "send": "Tanya",
+    "corpusLoaded": "<b>{n}</b> petikan sumber dimuatkan · sedia, semuanya berjalan setempat.",
+    "arabicNote": "Soalan anda mengandungi tulisan Arab - saya mencari istilah yang sepadan dalam sumber bahasa Jerman/transliterasi (cth. „صبر“ ↔ „{word}“).",
+    "noResult": "Saya tidak menjumpai apa-apa mengenai ini dalam sumber tempatan saya. Untuk jawapan yang boleh dipercayai, sila tanya seorang ulama.",
+    "sourcesLabel": "Sumber",
+    "copy": "⧉ salin",
+    "copied": "✓ disalin",
+    "themes": {
+      "patience": { "label": "Kesabaran", "questions": ["Apa kata Al-Quran tentang kesabaran?", "Doa apa yang membantu ketidaksabaran?", "Bagaimana Nabi ﷺ bersabar pada masa sukar?"] },
+      "family": { "label": "Keluarga", "questions": ["Apa yang tertulis dalam Al-Quran tentang ibu bapa?", "Bagaimana saya harus mendidik anak-anak saya?", "Apa kata Islam tentang adik-beradik?"] },
+      "prayer": { "label": "Solat", "questions": ["Mengapa solat begitu penting?", "Doa apa yang dibaca pada waktu pagi?", "Apa perlu dilakukan jika saya terlepas solat?"] },
+      "gratitude": { "label": "Kesyukuran", "questions": ["Apa kata Al-Quran tentang kesyukuran?", "Bagaimana saya menunjukkan kesyukuran saya kepada Allah?", "Doa apa yang dibaca kerana bersyukur?"] },
+      "worry": { "label": "Ketakutan & Kebimbangan", "questions": ["Apa yang membantu mengatasi kebimbangan menurut Al-Quran?", "Doa apa yang dibaca semasa takut?", "Bagaimana saya percaya kepada Allah pada masa sukar?"] },
+      "forgiveness": { "label": "Keampunan", "questions": ["Bagaimana saya memohon keampunan daripada Allah?", "Apa kata Al-Quran tentang saling memaafkan sesama manusia?", "Doa apa yang dibaca untuk bertaubat?"] },
+      "hope": { "label": "Harapan", "questions": ["Apa kata Al-Quran tentang harapan?", "Bagaimana saya menemui harapan selepas kegagalan?", "Apakah maksud “Bersama kesukaran ada kemudahan”?"] }
+    }
+  },
+  "ur": {
+    "title": "سلاتی اے آئی",
+    "headerSub": "صرف قرآن، ۴۰ نووی احادیث، تصدیق شدہ دعاؤں اور سلاتی کورس کے متن سے جواب دیتا ہے - آپ کے آلے پر ۱۰۰٪ چلتا ہے",
+    "clearHistory": "تاریخ صاف کریں",
+    "aiDisclosure": "AI کی مدد سے تیار کردہ جواب - یہ فتویٰ یا عالم کی رائے نہیں ہے۔ یہ صرف مذکورہ مآخذ کے لفظی اقتباسات پر مشتمل ہے؛ متعلقہ حصہ موجود نہ ہو یا ادھورا ہو سکتا ہے - منسلک ماخذ پڑھیں۔",
+    "loadingCorpus": "علمی ذخیرہ لوڈ ہو رہا ہے …",
+    "welcome": "السلام علیکم! مجھ سے سوال پوچھیں - میں <b>قرآن</b> (بوبن ہائیم ترجمہ)، <b>۴۰ نووی احادیث</b>، <b>تصدیق شدہ دعاؤں</b> اور <b>تصدیق شدہ سلاتی کورس کے متن (وضاحتیں)</b> سے متعلقہ حصے تلاش کروں گا اور صرف انہی کی بنیاد پر جواب دوں گا۔ کچھ بھی آپ کے آلے سے باہر نہیں جاتا: تلاش اور AI مقامی طور پر چلتے ہیں۔",
+    "inputPlaceholder": "آپ کا سوال …",
+    "send": "پوچھیں",
+    "corpusLoaded": "<b>{n}</b> ماخذ حصے لوڈ ہو گئے · تیار ہے، سب کچھ مقامی طور پر چلتا ہے۔",
+    "arabicNote": "آپ کے سوال میں عربی رسم الخط شامل تھا - میں نے جرمن/رومن نویسی شدہ ماخذوں میں ملتے جلتے الفاظ تلاش کیے (مثلاً „صبر“ ↔ „{word}“)۔",
+    "noResult": "مجھے اپنے مقامی ماخذ میں اس بارے میں کچھ نہیں ملا۔ قابل اعتماد جواب کے لیے براہ کرم کسی عالم سے پوچھیں۔",
+    "sourcesLabel": "ماخذ",
+    "copy": "⧉ کاپی کریں",
+    "copied": "✓ کاپی ہو گیا",
+    "themes": {
+      "patience": { "label": "صبر", "questions": ["قرآن صبر کے بارے میں کیا کہتا ہے؟", "بے صبری میں کون سی دعا مدد کرتی ہے؟", "نبی ﷺ مشکل وقتوں میں کیسے صبر کرتے تھے؟"] },
+      "family": { "label": "خاندان", "questions": ["قرآن میں والدین کے بارے میں کیا لکھا ہے؟", "میں اپنے بچوں کی تربیت کیسے کروں؟", "اسلام بہن بھائیوں کے بارے میں کیا کہتا ہے؟"] },
+      "prayer": { "label": "نماز", "questions": ["نماز اتنی اہم کیوں ہے؟", "صبح کون سی دعا پڑھی جاتی ہے؟", "اگر میری نماز چھوٹ جائے تو کیا کروں؟"] },
+      "gratitude": { "label": "شکر", "questions": ["قرآن شکر کے بارے میں کیا کہتا ہے؟", "میں اللہ کا شکر کیسے ادا کروں؟", "شکر کے لیے کون سی دعا پڑھی جاتی ہے؟"] },
+      "worry": { "label": "خوف اور فکر", "questions": ["قرآن کے مطابق فکر میں کیا مدد کرتا ہے؟", "خوف کے وقت کون سی دعا پڑھی جاتی ہے؟", "مشکل وقتوں میں اللہ پر کیسے بھروسہ کروں؟"] },
+      "forgiveness": { "label": "معافی", "questions": ["میں اللہ سے معافی کیسے مانگوں؟", "قرآن انسانوں کے درمیان معافی کے بارے میں کیا کہتا ہے؟", "توبہ کے لیے کون سی دعا پڑھی جاتی ہے؟"] },
+      "hope": { "label": "امید", "questions": ["قرآن امید کے بارے میں کیا کہتا ہے؟", "ناکامی کے بعد امید کیسے پاؤں؟", "«مشکل کے ساتھ آسانی ہے» کا کیا مطلب ہے؟"] }
+    }
+  },
+  "ru": {
+    "title": "Salati ИИ",
+    "headerSub": "Отвечает ТОЛЬКО на основе Корана, 40 хадисов ан-Навави, проверенных дуа и текстов курса Salati - работает на 100% на вашем устройстве",
+    "clearHistory": "Очистить историю",
+    "aiDisclosure": "Ответ подготовлен ИИ - это не фетва и не мнение учёного. Он состоит исключительно из дословных выдержек из указанных источников; нужный фрагмент может отсутствовать или быть неполным - прочитай указанный источник.",
+    "loadingCorpus": "Загрузка базы знаний …",
+    "welcome": "Салам! Задайте мне вопрос - я найду подходящие места из <b>Корана</b> (перевод Бубенхайма), <b>40 хадисов ан-Навави</b>, <b>проверенных дуа</b> и <b>проверенных текстов курса Salati (пояснений)</b> и отвечу только на этой основе. Ничто не покидает ваше устройство: поиск и ИИ работают локально.",
+    "inputPlaceholder": "Ваш вопрос …",
+    "send": "Спросить",
+    "corpusLoaded": "Загружено <b>{n}</b> исходных фрагментов · готово, всё работает локально.",
+    "arabicNote": "Ваш вопрос содержал арабскую вязь - я искал соответствующие термины в немецких/транслитерированных источниках (напр. „صبر“ ↔ „{word}“).",
+    "noResult": "Я не нашёл ничего по этому вопросу в своих локальных источниках. Для надёжного ответа, пожалуйста, обратитесь к учёному.",
+    "sourcesLabel": "Источники",
+    "copy": "⧉ копировать",
+    "copied": "✓ скопировано",
+    "themes": {
+      "patience": { "label": "Терпение", "questions": ["Что Коран говорит о терпении?", "Какая дуа помогает от нетерпения?", "Как Пророк ﷺ проявлял терпение в трудные времена?"] },
+      "family": { "label": "Семья", "questions": ["Что написано в Коране о родителях?", "Как мне воспитывать своих детей?", "Что ислам говорит о братьях и сёстрах?"] },
+      "prayer": { "label": "Намаз", "questions": ["Почему намаз так важен?", "Какая дуа читается утром?", "Что делать, если я пропустил намаз?"] },
+      "gratitude": { "label": "Благодарность", "questions": ["Что Коран говорит о благодарности?", "Как мне проявить благодарность Аллаху?", "Какая дуа читается из благодарности?"] },
+      "worry": { "label": "Страх и беспокойство", "questions": ["Что, согласно Корану, помогает от беспокойства?", "Какая дуа читается при страхе?", "Как довериться Аллаху в трудные времена?"] },
+      "forgiveness": { "label": "Прощение", "questions": ["Как мне просить прощения у Аллаха?", "Что Коран говорит о прощении между людьми?", "Какая дуа читается для покаяния?"] },
+      "hope": { "label": "Надежда", "questions": ["Что Коран говорит о надежде?", "Как найти надежду после неудачи?", "Что значит «Вместе с трудностью приходит облегчение»?"] }
+    }
+  },
+  "sw": {
+    "title": "Salati AI",
+    "headerSub": "Hujibu TU kutoka Qur'an, Hadithi 40 za an-Nawawi, dua zilizothibitishwa na maandiko ya kozi ya Salati - hufanya kazi 100% kwenye kifaa chako",
+    "clearHistory": "Futa historia",
+    "aiDisclosure": "Jibu lililoandaliwa kwa msaada wa AI - si fatwa wala maoni ya mwanachuoni. Linaundwa tu na nukuu za neno kwa neno kutoka vyanzo vilivyotajwa; sehemu inayofaa inaweza kukosekana au kutokamilika - soma chanzo kilichounganishwa.",
+    "loadingCorpus": "Inapakia hazina ya maarifa …",
+    "welcome": "Salamu! Niulize swali - nitatafuta sehemu zinazolingana kutoka <b>Qur'an</b> (tafsiri ya Bubenheim), <b>Hadithi 40 za an-Nawawi</b>, <b>dua zilizothibitishwa</b> na <b>maandiko ya kozi ya Salati yaliyothibitishwa (maelezo)</b>, na kujibu kwa msingi huo tu. Hakuna kinachotoka kwenye kifaa chako: utafutaji na AI hufanya kazi kwa ndani.",
+    "inputPlaceholder": "Swali lako …",
+    "send": "Uliza",
+    "corpusLoaded": "Sehemu <b>{n}</b> za vyanzo zimepakiwa · tayari, kila kitu hufanya kazi kwenye kifaa chako.",
+    "arabicNote": "Swali lako lilikuwa na maandishi ya Kiarabu - nilitafuta maneno yanayolingana katika vyanzo vya Kijerumani/vilivyoandikwa kwa herufi nyingine (mf. „صبر“ ↔ „{word}“).",
+    "noResult": "Sikupata chochote kuhusu hili katika vyanzo vyangu vya ndani. Kwa jibu la kutegemewa, tafadhali muulize mwanachuoni.",
+    "sourcesLabel": "Vyanzo",
+    "copy": "⧉ nakili",
+    "copied": "✓ imenakiliwa",
+    "themes": {
+      "patience": { "label": "Subira", "questions": ["Qur'an inasema nini kuhusu subira?", "Dua gani husaidia dhidi ya kutokuwa na subira?", "Nabii ﷺ alikuwa na subira vipi nyakati ngumu?"] },
+      "family": { "label": "Familia", "questions": ["Qur'an inasema nini kuhusu wazazi?", "Niwalee vipi watoto wangu?", "Uislamu unasema nini kuhusu ndugu?"] },
+      "prayer": { "label": "Sala", "questions": ["Kwa nini sala ni muhimu sana?", "Dua gani husomwa asubuhi?", "Nifanye nini nikikosa sala?"] },
+      "gratitude": { "label": "Shukrani", "questions": ["Qur'an inasema nini kuhusu shukrani?", "Nionyeshe vipi shukrani yangu kwa Mwenyezi Mungu?", "Dua gani husomwa kwa shukrani?"] },
+      "worry": { "label": "Hofu na Wasiwasi", "questions": ["Ni nini husaidia dhidi ya wasiwasi kulingana na Qur'an?", "Dua gani husomwa wakati wa hofu?", "Nimtegemee vipi Mwenyezi Mungu nyakati ngumu?"] },
+      "forgiveness": { "label": "Msamaha", "questions": ["Nimuombe vipi Mwenyezi Mungu msamaha?", "Qur'an inasema nini kuhusu kusameheana kati ya watu?", "Dua gani husomwa kwa toba?"] },
+      "hope": { "label": "Matumaini", "questions": ["Qur'an inasema nini kuhusu matumaini?", "Nipate vipi matumaini baada ya kushindwa?", "“Pamoja na dhiki huja faraja” ina maana gani?"] }
+    }
+  },
+  "ps": {
+    "title": "سلاتي هوښیار ماشین",
+    "headerSub": "یوازې د قرآن، ۴۰ نووي احادیثو، تایید شویو دعاګانو او د سلاتي کورس متنونو څخه ځواب ورکوي - ستاسو په وسیله کې ۱۰۰٪ چلیږي",
+    "clearHistory": "تاریخچه پاکول",
+    "aiDisclosure": "د مصنوعي ځیرکتیا په مرسته ځواب - دا فتوی یا د عالم نظر نه دی. دا يوازې د یادو سرچینو له لفظي رانقلونو جوړ دی؛ اړونده برخه کېدای شي نه وي یا نیمګړې وي - تړل شوې سرچینه ولوله.",
+    "loadingCorpus": "د پوهې زېرمه لوډ کیږي …",
+    "welcome": "السلام علیکم! زما نه پوښتنه وکړئ - زه به د <b>قرآن</b> (د بوبن هایم ژباړه)، <b>۴۰ نووي احادیثو</b>، <b>تایید شویو دعاګانو</b> او <b>تایید شویو د سلاتي کورس متنونو (تشریحات)</b> نه اړونده برخې ومومم او یوازې پر دې بنسټ به ځواب ووایم. هیڅ شی ستاسو له وسیلې نه نه وځي: لټون او هوښیار ماشین په محلي ډول کار کوي.",
+    "inputPlaceholder": "ستاسو پوښتنه …",
+    "send": "پوښتنه",
+    "corpusLoaded": "<b>{n}</b> سرچینې برخې لوډ شوې · چمتو دي، هرڅه محلي کار کوي.",
+    "arabicNote": "ستاسو پوښتنه عربي لیکدود درلود - ما په جرمني/لیکدود بدل شویو سرچینو کې ورته اصطلاحات ولټول (لکه „صبر“ ↔ „{word}“).",
+    "noResult": "زه د دې په اړه په خپلو محلي سرچینو کې هیڅ ونه موندله. د باوري ځواب لپاره مهرباني وکړئ له عالم څخه وپوښتئ.",
+    "sourcesLabel": "سرچینې",
+    "copy": "⧉ کاپي کول",
+    "copied": "✓ کاپي شو",
+    "themes": {
+      "patience": { "label": "زغم", "questions": ["قرآن د زغم په اړه څه وايي؟", "کومه دعا د بې صبرۍ سره مرسته کوي؟", "پیغمبر ﷺ په سختو وختونو کې څنګه زغم لري؟"] },
+      "family": { "label": "کورنۍ", "questions": ["قرآن د مور او پلار په اړه څه وايي؟", "زه خپل ماشومان څنګه روزم؟", "اسلام د وروڼو او خویندو په اړه څه وايي؟"] },
+      "prayer": { "label": "لمونځ", "questions": ["لمونځ ولې دومره مهم دی؟", "سهار کومه دعا ویل کیږي؟", "که چیرې زما لمونځ پاتې شي نو څه وکړم؟"] },
+      "gratitude": { "label": "شکر", "questions": ["قرآن د شکر په اړه څه وايي؟", "زه څنګه خپل شکر الله ته ښکاره کړم؟", "د شکر لپاره کومه دعا ویل کیږي؟"] },
+      "worry": { "label": "ویره او اندیښنه", "questions": ["د قرآن له مخې اندیښنې سره څه شی مرسته کوي؟", "د ویرې پر مهال کومه دعا ویل کیږي؟", "زه په سختو وختونو کې الله ته څنګه توکل وکړم؟"] },
+      "forgiveness": { "label": "بخښنه", "questions": ["زه له الله څخه بخښنه څنګه وغواړم؟", "قرآن د خلکو ترمنځ بخښنې په اړه څه وايي؟", "د توبې لپاره کومه دعا ویل کیږي؟"] },
+      "hope": { "label": "هیله", "questions": ["قرآن د هیلې په اړه څه وايي؟", "زه د ناکامۍ وروسته هیله څنګه ومومم؟", "«د سختۍ سره اسانتیا ده» څه معنی لري؟"] }
+    }
+  }
+};
+
+function erkenneSprache() {
+  // Manueller Override per ?lang=xx (QA/Deep-Links) - hat Vorrang vor der
+  // persistierten App-Einstellung, wird aber NICHT gespeichert.
+  try {
+    const qs = new URLSearchParams(location.search).get('lang');
+    if (qs && SUPPORTED_LOCALES.includes(qs)) return qs;
+  } catch {}
+  try {
+    const raw = localStorage.getItem(SETTINGS_STORAGE_KEY);
+    if (raw) {
+      const parsed = JSON.parse(raw);
+      if (parsed && SUPPORTED_LOCALES.includes(parsed.language)) return parsed.language;
+    }
+  } catch {}
+  try {
+    for (const tag of navigator.languages ?? [navigator.language]) {
+      const code = (tag || '').slice(0, 2).toLowerCase();
+      if (SUPPORTED_LOCALES.includes(code)) return code;
+    }
+  } catch {}
+  // Fallback 'de': der RAG-Wissenskorpus (rag/korpus-de.json) und der
+  // System-Prompt sind aktuell deutschsprachig - passend zum bisherigen
+  // Default dieser Seite, falls keine App-Spracheinstellung gefunden wird.
+  return 'de';
+}
+
+const LOCALE = erkenneSprache();
+const RTL = RTL_LOCALES.has(LOCALE);
+const T = T_ALL[LOCALE] ?? T_ALL.de;
+document.documentElement.lang = LOCALE;
+document.documentElement.dir = RTL ? 'rtl' : 'ltr';
+
+function fmt(str, vars) {
+  return str.replace(/\{(\w+)\}/g, (m, k) => (vars && k in vars) ? String(vars[k]) : m);
+}
+
+document.getElementById('pageTitle').textContent = `${T.title} · ${T.headerSub}`;
+document.getElementById('appTitle').firstChild.textContent = T.title + ' ';
+document.getElementById('headerSub').textContent = T.headerSub;
+const loeschenBtn = document.getElementById('loeschen');
+loeschenBtn.textContent = T.clearHistory;
+loeschenBtn.title = T.clearHistory;
+const backLink = document.getElementById('backLink');
+backLink.textContent = (RTL ? '→' : '←') + ' Salati';
+document.getElementById('aiDisclosure').textContent = T.aiDisclosure;
+status.textContent = T.loadingCorpus;
+document.getElementById('welcomeText').innerHTML = T.welcome;
+input.placeholder = T.inputPlaceholder;
+sendBtn.textContent = T.send;
+
+// Beispiel-Chips: greifen bewusst auf 3 der Themen-Fragen unten zurueck
+// (Geduld-Q1, Gebet-Q2, Familie-Q1) statt eigene Uebersetzungen zu pflegen -
+// vermeidet Text-Drift zwischen den beiden Stellen in allen 14 Sprachen.
+const exampleChipsEl = document.getElementById('exampleChips');
+for (const text of [T.themes.patience.questions[0], T.themes.prayer.questions[1], T.themes.family.questions[0]]) {
+  const c = document.createElement('button');
+  c.className = 'chip';
+  c.type = 'button';
+  c.disabled = true;
+  c.textContent = text;
+  c.addEventListener('click', () => frage(text));
+  exampleChipsEl.appendChild(c);
+}
+
+// ---------- 1) Korpus + Retrieval (ausgelagert in /rag/suche.js, per Node testbar) ----------
+import { baueIndex, suche, sucheHybrid, istArabisch } from '/rag/suche.js';
+// Zitat-Modus: die Antwort besteht ausschliesslich aus WOERTLICHEN Passagen
+// der gefundenen Quellen (1:1 wie in der App, src/features/ki/zitat.ts).
+import { zitatAntwort } from '/rag/zitat.js';
+
+let INDEX = null;
+// Sprache des tatsaechlich geladenen Korpus. Bis 2026-07-29 wurde hier IMMER
+// korpus-de.json geladen, waehrend die Vorschlags- und Themen-Chips ihren
+// uebersetzten Text abschickten — jeder nicht-deutsche Besucher bekam damit
+// "keine Stelle gefunden". Dieselbe Ursache wie in der App
+// (src/features/ki/beispielfragen.ts). Die 13 uebersetzten Korpora liegen auf
+// R2 (gleicher Bucket wie in der App, CORS erlaubt), Deutsch bleibt der
+// Rueckfall, wenn der Abruf scheitert.
+let KORPUS_LANG = 'de';
+const KORPUS_R2 = 'https://pub-d0489c0572704285af79896edb72cbed.r2.dev/rag';
+async function ladeKorpus() {
+  let daten = null;
+  if (LOCALE !== 'de') {
+    try {
+      const r = await fetch(`${KORPUS_R2}/korpus-${LOCALE}.json`);
+      if (r.ok) {
+        const j = await r.json();
+        if (Array.isArray(j.docs) && j.docs.length) { daten = j; KORPUS_LANG = LOCALE; }
+      }
+    } catch (e) {
+      console.warn('Uebersetzter Korpus nicht abrufbar, nutze den deutschen:', e);
+    }
+  }
+  if (!daten) daten = await (await fetch('/rag/korpus-de.json')).json();
+  INDEX = baueIndex(daten.docs);
+  status.innerHTML = fmt(T.corpusLoaded, { n: INDEX.docs.length.toLocaleString('en-US') });
+  // Vorschlags-Chips waren vorher ungeschützt klickbar, bevor INDEX geladen
+  // war -> Absturz beim Klick (suche() destrukturiert ein null-Objekt).
+  document.querySelectorAll('.chip').forEach((c) => { c.disabled = false; });
+}
+
+// ---------- 1b) Themen-Browser: kuratierte Fragen nach Lebensthema statt nur Freitext ----------
+// Kategorien/IDs orientieren sich an src/features/themes/collections.ts
+// (Self-Discovery-Themensammlungen), plus "Gebet" als zusätzliches, für die
+// KI naheliegendes Thema. Icons sind sprachneutral und bleiben fuer alle
+// 14 Sprachen gleich, Label/Fragen kommen aus T.themes (siehe T_ALL oben).
+const THEMEN_IDS = [
+  { id: 'patience', icon: '⏳' },
+  { id: 'family', icon: '👪' },
+  { id: 'prayer', icon: '🕌' },
+  { id: 'gratitude', icon: '🌤️' },
+  { id: 'worry', icon: '💛' },
+  { id: 'forgiveness', icon: '🍃' },
+  { id: 'hope', icon: '🧭' },
+];
+const themenPills = document.getElementById('themenPills');
+const themenFragen = document.getElementById('themenFragen');
+for (const th of THEMEN_IDS) {
+  const thema = T.themes[th.id];
+  const pill = document.createElement('button');
+  pill.type = 'button';
+  pill.className = 'pill';
+  pill.textContent = `${th.icon} ${thema.label}`;
+  pill.addEventListener('click', () => {
+    const warAktiv = pill.classList.contains('aktiv');
+    themenPills.querySelectorAll('.pill').forEach((p) => p.classList.remove('aktiv'));
+    themenFragen.innerHTML = '';
+    if (warAktiv) return; // erneuter Klick auf dieselbe Kategorie -> zuklappen
+    pill.classList.add('aktiv');
+    for (const f of thema.questions) {
+      const chip = document.createElement('button');
+      chip.type = 'button';
+      chip.className = 'chip';
+      chip.textContent = f;
+      chip.disabled = !INDEX; // wie die Beispiel-Chips oben: erst nach Korpus-Load aktiv
+      chip.addEventListener('click', () => frage(f));
+      themenFragen.appendChild(chip);
+    }
+  });
+  themenPills.appendChild(pill);
+}
+
+// ---------- 2b) Stufe-2-Retrieval: vorberechnete Embeddings (semantische Re-Rangierung) ----------
+// Lazy-Load: startet erst NACH dem Korpus (nicht im kritischen Ladepfad) und
+// blockiert nichts - schlägt der Download fehl, bleibt frage() bei der reinen
+// Keyword-Suche (suche()). Das ist das EINZIGE Modell, das die Web-Version noch
+// lädt, und es sucht nur Passagen; formuliert wird nichts (Zitat-Modus).
+// Modell: Xenova/multilingual-e5-small (~118 MB q8-ONNX, gecacht nach dem
+// ersten Laden). Die Datenschutzerklärung (datenschutz.aiText) nennt genau
+// diesen Abruf - bei Änderungen hier auch dort nachziehen.
+let EMB = null, embeddingsBereit = false;
+async function ladeEmbeddings() {
+  // Nur zum DEUTSCHEN Korpus: die vorberechneten Vektoren gehoeren zu dessen
+  // Dokumentreihenfolge. Fuer die uebersetzten Korpora gibt es (noch) keine
+  // Embeddings auf R2 — die count-Pruefung unten wuerde sie ohnehin abweisen,
+  // aber dann waere der 118-MB-Modelldownload schon anlaufen. Deshalb hier
+  // frueh raus.
+  if (KORPUS_LANG !== 'de') return;
+  try {
+    const metaR = await fetch('/rag/embeddings-de.meta.json');
+    if (!metaR.ok) return;
+    const meta = await metaR.json();
+    // Korpus seit letzter Embedding-Generierung geändert (siehe
+    // scripts/generate-ki-embeddings.mjs) -> lieber sauber auf Keyword-Suche
+    // zurückfallen, als mit falsch ausgerichteten Vektoren zu ranken.
+    if (!INDEX || meta.count !== INDEX.docs.length) return;
+    const binR = await fetch('/rag/embeddings-de.bin');
+    if (!binR.ok) return;
+    const int8 = new Int8Array(await binR.arrayBuffer());
+    const vektoren = new Float32Array(int8.length);
+    for (let i = 0; i < int8.length; i++) vektoren[i] = int8[i] / 127;
+    const { pipeline } = await import('https://esm.run/@huggingface/transformers');
+    const extractor = await pipeline('feature-extraction', meta.model, { dtype: 'q8' });
+    EMB = { vektoren, dim: meta.dim, extractor };
+    embeddingsBereit = true;
+  } catch (e) {
+    // Stumm degradieren - Quellen-Suche/Keyword-Retrieval funktioniert unabhängig davon.
+    console.warn('Semantische Suche (Stufe 2) nicht verfügbar, nutze Keyword-Suche:', e);
+  }
+}
+
+// ---------- 3) Chat ----------
+// Chat-Verlauf lokal persistieren (nur dieses Geraet, max. 40 Eintraege).
+const VERLAUF_KEY = 'salati:ki-verlauf';
+let verlauf = [];
+try { verlauf = JSON.parse(localStorage.getItem(VERLAUF_KEY) ?? '[]'); } catch {}
+function verlaufSichern(cls, html, rtl = false) {
+  verlauf.push({ cls, html, rtl });
+  if (verlauf.length > 40) verlauf = verlauf.slice(-40);
+  try { localStorage.setItem(VERLAUF_KEY, JSON.stringify(verlauf)); } catch {}
+}
+document.getElementById('loeschen').addEventListener('click', () => {
+  verlauf = [];
+  try { localStorage.removeItem(VERLAUF_KEY); } catch {}
+  [...chat.querySelectorAll('.msg')].slice(1).forEach((m) => m.remove());
+});
+
+// "Koran 2:153 (…)" in der Quellenzeile anklickbar machen -> Reader-Deeplink.
+// Die Quellenangaben selbst stammen aus dem (deutschsprachigen) RAG-Korpus
+// und bleiben unuebersetzt - siehe Hinweis bei SYSTEM oben.
+function quellenVerlinken(text) {
+  return text.replace(/Koran (\d+):(\d+)/g, (m, s2, a) => `<a href="/quran/${s2}?ayah=${a}">${m}</a>`);
+}
+
+function bubble(cls, html, sichern = true, rtl = false) {
+  const div = document.createElement('div');
+  div.className = 'msg ' + cls;
+  if (rtl) div.dir = 'rtl'; // Arabisch-Modus: eigene Frage rechtsbündig/RTL darstellen
+  div.innerHTML = html;
+  if (cls === 'ki') {
+    const btn = document.createElement('button');
+    btn.className = 'kopieren';
+    btn.type = 'button';
+    btn.textContent = T.copy;
+    btn.addEventListener('click', () => {
+      navigator.clipboard?.writeText(div.innerText.replace(T.copy, '').trim()).then(() => {
+        btn.textContent = T.copied;
+        setTimeout(() => { btn.textContent = T.copy; }, 1500);
+      });
+    });
+    div.appendChild(btn);
+  }
+  chat.appendChild(div);
+  chat.scrollTop = chat.scrollHeight;
+  if (sichern) verlaufSichern(cls, html, rtl);
+  return div;
+}
+
+// Gespeicherten Verlauf beim Start wiederherstellen
+for (const eintrag of verlauf) bubble(eintrag.cls, eintrag.html, false, eintrag.rtl);
+
+// Eingabefeld live auf RTL umschalten, sobald überwiegend arabisch getippt wird.
+input.addEventListener('input', () => { input.dir = istArabisch(input.value) ? 'rtl' : 'auto'; });
+const esc = (s) => s.replace(/[&<>]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;' }[c]));
+// Minimales Markdown des Modells darstellen statt roher **Sternchen**:
+// nur Fett (**…**/__…__) - mehr gibt das 1.5B-Modell praktisch nicht aus,
+// und alles andere soll bewusst Klartext bleiben (white-space:pre-wrap).
+const md = (s) => esc(s).replace(/\*\*([^*\n]+)\*\*/g, '<b>$1</b>').replace(/__([^_\n]+)__/g, '<b>$1</b>');
+
+async function frage(text) {
+  if (!INDEX) return; // Korpus laedt noch - Chips/Senden sind bis dahin disabled
+  const arabisch = istArabisch(text);
+  bubble('du', esc(text), true, arabisch);
+  input.dir = 'auto';
+  sendBtn.disabled = true;
+
+  let treffer;
+  if (embeddingsBereit && EMB) {
+    try {
+      // E5-Konvention: Query-Embeddings brauchen den "query: "-Prefix
+      // (Korpus wurde mit "passage: " embedded, s. generate-ki-embeddings.mjs).
+      const out = await EMB.extractor('query: ' + text, { pooling: 'mean', normalize: true });
+      treffer = sucheHybrid(INDEX, text, { vektoren: EMB.vektoren, dim: EMB.dim, queryVektor: Float32Array.from(out.data) });
+    } catch (e) {
+      treffer = suche(INDEX, text); // Embedding-Inferenz fehlgeschlagen -> Keyword-Suche als Fallback
+    }
+  } else {
+    treffer = suche(INDEX, text);
+  }
+
+  const arabischHinweis = arabisch
+    ? `<div class="hinweis">${fmt(T.arabicNote, { word: T.themes.patience.label })}</div>`
+    : '';
+  if (treffer.length === 0) {
+    bubble('ki', T.noResult + arabischHinweis);
+    sendBtn.disabled = false;
+    return;
+  }
+  // Zitat-Modus: kein Sprachmodell mehr. Jeder angezeigte Satz steht WOERTLICH
+  // in der darunter genannten Quelle - erfinden ist damit ausgeschlossen, nicht
+  // nur unwahrscheinlich. Begruendung und Messung: docs/audit-2026-07-27/
+  // KI-ZITATMODUS.md (14 Sprachen x 12 Fragen, 0 erfundene Aussagen).
+  const bloecke = zitatAntwort(text, treffer.slice(0, 3)).bloecke;
+  const zitateHtml = bloecke
+    .map((b) => `<blockquote>${esc(b.text)}<br><b>- ${esc(b.src)}</b></blockquote>`)
+    .join('');
+  const quellenHtml = `<div class="quelle">${T.sourcesLabel}: ${quellenVerlinken([...new Set(bloecke.map((b) => esc(b.src)))].join(' · '))}</div>`;
+  bubble('ki', zitateHtml + quellenHtml + arabischHinweis);
+  sendBtn.disabled = false;
+}
+
+form.addEventListener('submit', (e) => { e.preventDefault(); const t = input.value.trim(); if (t) { input.value = ''; frage(t); } });
+
+await ladeKorpus();
+ladeEmbeddings(); // Stufe 2, lazy/optional - laeuft parallel im Hintergrund, blockiert den Chat nicht
+</script>
+</body>
+</html>

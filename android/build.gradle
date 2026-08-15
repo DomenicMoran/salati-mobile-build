@@ -1,0 +1,70 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+buildscript {
+  repositories {
+    google()
+    mavenCentral()
+  }
+  dependencies {
+    classpath('com.android.tools.build:gradle')
+    classpath('com.facebook.react:react-native-gradle-plugin')
+    classpath('org.jetbrains.kotlin:kotlin-gradle-plugin')
+    classpath('org.jetbrains.kotlin.plugin.compose:org.jetbrains.kotlin.plugin.compose.gradle.plugin:2.1.20')
+  }
+}
+
+allprojects {
+  repositories {
+    google()
+    mavenCentral()
+    maven { url 'https://www.jitpack.io' }
+  }
+}
+
+apply plugin: "expo-root-project"
+apply plugin: "com.facebook.react.rootproject"
+
+// --- Windows CMAKE_OBJECT_PATH_MAX fix (ninja: manifest 'build.ninja' still dirty) ---
+// pnpm nests packages as node_modules/.pnpm/<pkg>@<ver>_<hash>/node_modules/<pkg>/android/.cxx/...
+// which pushes generated CMake object-file paths past CMake's internal 250-char
+// CMAKE_OBJECT_PATH_MAX limit on Windows (independent of the OS LongPathsEnabled
+// setting, which CMake/Ninja on Windows does not honor for this check). Redirect every
+// subproject's CMake build staging directory to a short, project-local path outside
+// node_modules so generated object-file paths stay well under the limit, without moving
+// the repo checkout itself.
+//
+// NOTE: setting android.externalNativeBuild.cmake.buildStagingDirectory via a plain
+// plugins.withId {} hook throws AgpDslLockedException ("It is too late to set
+// buildStagingDirectory") because AGP already reads/locks that DSL value before this
+// root-project subprojects{} hook runs for some modules. AGP's own suggested fix is to
+// use the variant API's finalizeDsl {} callback, which is guaranteed to run after the
+// module's own build.gradle has configured the android {} block but before AGP locks it.
+// NUR unter Windows: der kurze C:/rnb/Salati-Staging-Pfad ist ein reiner
+// Workaround gegen CMAKE_OBJECT_PATH_MAX/260-Zeichen. Auf Linux/macOS
+// (GitHub-Actions-CI, s. Memory project_salati_github_actions_build) gibt es
+// die Grenze nicht UND der Pfad "C:/rnb/..." ist dort ungültig
+// (FileNotFoundException beim CMake-Configure) — dort den Standard-Staging-Pfad
+// (unter dem jeweiligen module/build/) unangetastet lassen.
+// Mit -PohneKurzenCxxPfad laesst sich der Workaround abschalten, um zu pruefen,
+// ob die 260-Zeichen-Grenze ueberhaupt noch zuschlaegt (der pnpm-Store liegt
+// seit 2026-07-19 unter ../../.v statt tief im Projekt). Genau dieser
+// finalizeDsl-Aufruf ist der letzte Blocker fuer AGP 9 — faellt er weg, faellt
+// der Blocker mit.
+def isWindows = System.getProperty("os.name").toLowerCase().contains("windows")
+if (isWindows && !project.hasProperty("ohneKurzenCxxPfad")) {
+  def shortCxxRoot = new File("C:/rnb/Salati")
+  subprojects { sub ->
+    ["com.android.library", "com.android.application"].each { pluginId ->
+      sub.plugins.withId(pluginId) {
+        def androidComponents = sub.extensions.findByName("androidComponents")
+        if (androidComponents != null) {
+          androidComponents.finalizeDsl { ext ->
+            if (ext.externalNativeBuild?.cmake?.path != null) {
+              ext.externalNativeBuild.cmake.buildStagingDirectory = new File(shortCxxRoot, sub.name)
+            }
+          }
+        }
+      }
+    }
+  }
+}

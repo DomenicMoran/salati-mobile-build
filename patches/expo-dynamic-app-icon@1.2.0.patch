@@ -1,0 +1,41 @@
+diff --git a/android/build.gradle b/android/build.gradle
+index a50832e4b7e04df076540e8bdcd56fac98cdd279..08cdad4fad980609a35f91fc14375b3b46259302 100644
+--- a/android/build.gradle
++++ b/android/build.gradle
+@@ -55,12 +55,15 @@ android {
+   compileSdkVersion safeExtGet("compileSdkVersion", 31)
+ 
+   compileOptions {
+-    sourceCompatibility JavaVersion.VERSION_11
+-    targetCompatibility JavaVersion.VERSION_11
++    // War hart auf JVM 11 gepinnt, kollidierte mit dem Rest des Projekts
++    // (JVM 17, siehe compileDebugJavaWithJavac) - "Inconsistent JVM-target
++    // compatibility" Build-Fehler. Auf 17 angehoben.
++    sourceCompatibility JavaVersion.VERSION_17
++    targetCompatibility JavaVersion.VERSION_17
+   }
+ 
+   kotlinOptions {
+-    jvmTarget = JavaVersion.VERSION_11.majorVersion
++    jvmTarget = JavaVersion.VERSION_17.majorVersion
+   }
+ 
+   defaultConfig {
+diff --git a/ios/ExpoDynamicAppIconModule.swift b/ios/ExpoDynamicAppIconModule.swift
+index 429bfe2ce3ecf986315ecdf6c19b6e89c3426e6e..94ff9f4a8977984e832076de0dadb6dfb355cf1d 100644
+--- a/ios/ExpoDynamicAppIconModule.swift
++++ b/ios/ExpoDynamicAppIconModule.swift
+@@ -6,7 +6,12 @@ public class ExpoDynamicAppIconModule: Module {
+     Name("ExpoDynamicAppIcon")
+ 
+     Function("setAppIcon") { (name:String) -> String in
+-      self.setAppIconWithoutAlert(name)
++      // "DEFAULT" ist der von getAppIcon() dokumentierte Sentinel-Wert fuer
++      // "kein Alternate-Icon aktiv" - muss als echtes nil an die private
++      // API durchgereicht werden, sonst versucht iOS ein Alternate-Icon
++      // namens "DEFAULT" zu setzen (existiert nicht in CFBundleAlternateIcons,
++      // schlaegt still fehl statt zurueckzusetzen).
++      self.setAppIconWithoutAlert(name == "DEFAULT" ? nil : name)
+ 
+       return name
+     }

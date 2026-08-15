@@ -1,0 +1,619 @@
+{
+  "lines": [
+    {
+      "globalAyah": 1,
+      "tokens": [
+        {
+          "arabic": "بِسْمِ",
+          "translit": "bismi",
+          "meaning": {
+            "de": "im Namen",
+            "en": "in the name",
+            "tr": "adıyla",
+            "ar": "باسم",
+            "es": "en el nombre",
+            "fr": "au nom",
+            "id": "dengan nama",
+            "bn": "নামে",
+            "fa": "به نام",
+            "ms": "dengan nama",
+            "ur": "کے نام سے",
+            "ru": "во имя",
+            "sw": "kwa jina",
+            "ps": "په نوم"
+          }
+        },
+        {
+          "arabic": "اللَّهِ",
+          "translit": "llāhi",
+          "meaning": {
+            "de": "Allahs",
+            "en": "of Allah",
+            "tr": "Allah'ın",
+            "ar": "الله",
+            "es": "de Alá",
+            "fr": "d'Allah",
+            "id": "Allah",
+            "bn": "আল্লাহর",
+            "fa": "خدا",
+            "ms": "Allah",
+            "ur": "اللہ کے",
+            "ru": "Аллаха",
+            "sw": "Allah",
+            "ps": "د الله"
+          }
+        },
+        {
+          "arabic": "الرَّحْمَٰنِ",
+          "translit": "r-raḥmāni",
+          "meaning": {
+            "de": "des Allerbarmers",
+            "en": "the Most Gracious",
+            "tr": "Rahman olanın",
+            "ar": "الرحمن، كثير الرحمة",
+            "es": "el Clementísimo",
+            "fr": "le Tout Miséricordieux",
+            "id": "Yang Maha Pengasih",
+            "bn": "পরম করুণাময়",
+            "fa": "بخشاینده",
+            "ms": "Yang Maha Pemurah",
+            "ur": "نہایت مہربان",
+            "ru": "Милостивого",
+            "sw": "Mwingi wa Rehema",
+            "ps": "ډېر مهربانه"
+          }
+        },
+        {
+          "arabic": "الرَّحِيمِ",
+          "translit": "r-raḥīm",
+          "meaning": {
+            "de": "des Barmherzigen",
+            "en": "the Most Merciful",
+            "tr": "Rahim olanın",
+            "ar": "الرحيم، دائم الرحمة",
+            "es": "el Misericordiosísimo",
+            "fr": "le Très Miséricordieux",
+            "id": "Yang Maha Penyayang",
+            "bn": "পরম দয়ালু",
+            "fa": "مهربان",
+            "ms": "Yang Maha Penyayang",
+            "ur": "نہایت رحم والا",
+            "ru": "Милосердного",
+            "sw": "Mwenye Kurehemu",
+            "ps": "بښونکی"
+          }
+        }
+      ]
+    },
+    {
+      "globalAyah": 2,
+      "tokens": [
+        {
+          "arabic": "الْحَمْدُ",
+          "translit": "al-ḥamdu",
+          "meaning": {
+            "de": "das Lob",
+            "en": "all praise",
+            "tr": "hamd (övgü)",
+            "ar": "الحمد والثناء",
+            "es": "la alabanza",
+            "fr": "la louange",
+            "id": "segala puji",
+            "bn": "সমস্ত প্রশংসা",
+            "fa": "همه ستایش",
+            "ms": "segala puji",
+            "ur": "ساری تعریف",
+            "ru": "вся хвала",
+            "sw": "sifa zote",
+            "ps": "ټول ستاینه"
+          }
+        },
+        {
+          "arabic": "لِلَّهِ",
+          "translit": "lillāhi",
+          "meaning": {
+            "de": "gehört Allah",
+            "en": "belongs to Allah",
+            "tr": "Allah'a mahsustur",
+            "ar": "لله وحده",
+            "es": "pertenece a Alá",
+            "fr": "appartient à Allah",
+            "id": "milik Allah",
+            "bn": "আল্লাহর জন্য",
+            "fa": "از آنِ خداست",
+            "ms": "milik Allah",
+            "ur": "اللہ کے لیے ہے",
+            "ru": "принадлежит Аллаху",
+            "sw": "ni ya Allah",
+            "ps": "د الله لپاره ده"
+          }
+        },
+        {
+          "arabic": "رَبِّ",
+          "translit": "rabbi",
+          "meaning": {
+            "de": "dem Herrn",
+            "en": "Lord of",
+            "tr": "Rabbine",
+            "ar": "رب، سيد ومربي",
+            "es": "Señor de",
+            "fr": "Seigneur de",
+            "id": "Tuhan",
+            "bn": "প্রতিপালক",
+            "fa": "پروردگار",
+            "ms": "Tuhan",
+            "ur": "رب",
+            "ru": "Господь",
+            "sw": "Bwana wa",
+            "ps": "رب د"
+          }
+        },
+        {
+          "arabic": "الْعَالَمِينَ",
+          "translit": "l-ʿālamīn",
+          "meaning": {
+            "de": "der Welten",
+            "en": "the worlds",
+            "tr": "âlemlerin",
+            "ar": "العالمين، كل المخلوقات",
+            "es": "los mundos",
+            "fr": "des mondes",
+            "id": "semesta alam",
+            "bn": "জগৎসমূহের",
+            "fa": "جهانیان",
+            "ms": "sekalian alam",
+            "ur": "تمام جہانوں کا",
+            "ru": "миров",
+            "sw": "walimwengu",
+            "ps": "نړیوالو"
+          }
+        }
+      ]
+    },
+    {
+      "globalAyah": 3,
+      "tokens": [
+        {
+          "arabic": "الرَّحْمَٰنِ",
+          "translit": "ar-raḥmāni",
+          "meaning": {
+            "de": "des Allerbarmers",
+            "en": "the Most Gracious",
+            "tr": "Rahman olanın",
+            "ar": "الرحمن، كثير الرحمة",
+            "es": "el Clementísimo",
+            "fr": "le Tout Miséricordieux",
+            "id": "Yang Maha Pengasih",
+            "bn": "পরম করুণাময়",
+            "fa": "بخشاینده",
+            "ms": "Yang Maha Pemurah",
+            "ur": "نہایت مہربان",
+            "ru": "Милостивого",
+            "sw": "Mwingi wa Rehema",
+            "ps": "ډېر مهربانه"
+          }
+        },
+        {
+          "arabic": "الرَّحِيمِ",
+          "translit": "r-raḥīm",
+          "meaning": {
+            "de": "des Barmherzigen",
+            "en": "the Most Merciful",
+            "tr": "Rahim olanın",
+            "ar": "الرحيم، دائم الرحمة",
+            "es": "el Misericordiosísimo",
+            "fr": "le Très Miséricordieux",
+            "id": "Yang Maha Penyayang",
+            "bn": "পরম দয়ালু",
+            "fa": "مهربان",
+            "ms": "Yang Maha Penyayang",
+            "ur": "نہایت رحم والا",
+            "ru": "Милосердного",
+            "sw": "Mwenye Kurehemu",
+            "ps": "بښونکی"
+          }
+        }
+      ]
+    },
+    {
+      "globalAyah": 4,
+      "tokens": [
+        {
+          "arabic": "مَالِكِ",
+          "translit": "māliki",
+          "meaning": {
+            "de": "der Herrscher über",
+            "en": "Master of",
+            "tr": "sahibi",
+            "ar": "مالك، صاحب الملك",
+            "es": "Soberano de",
+            "fr": "Souverain de",
+            "id": "Penguasa",
+            "bn": "মালিক",
+            "fa": "مالک",
+            "ms": "Yang Menguasai",
+            "ur": "مالک",
+            "ru": "Владыка",
+            "sw": "Mmiliki wa",
+            "ps": "واکمن د"
+          }
+        },
+        {
+          "arabic": "يَوْمِ",
+          "translit": "yawmi",
+          "meaning": {
+            "de": "den Tag",
+            "en": "the day of",
+            "tr": "gününün",
+            "ar": "يوم",
+            "es": "el día de",
+            "fr": "le jour de",
+            "id": "hari",
+            "bn": "দিনের",
+            "fa": "روز",
+            "ms": "hari",
+            "ur": "دن کا",
+            "ru": "дня",
+            "sw": "siku ya",
+            "ps": "ورځې"
+          }
+        },
+        {
+          "arabic": "الدِّينِ",
+          "translit": "d-dīn",
+          "meaning": {
+            "de": "des Gerichts",
+            "en": "the Judgment",
+            "tr": "din (hesap) gününün",
+            "ar": "الدين، الحساب والجزاء",
+            "es": "el Juicio",
+            "fr": "la Rétribution",
+            "id": "pembalasan",
+            "bn": "বিচার",
+            "fa": "جزا",
+            "ms": "pembalasan",
+            "ur": "جزا",
+            "ru": "воздаяния",
+            "sw": "malipo",
+            "ps": "بدلې"
+          }
+        }
+      ]
+    },
+    {
+      "globalAyah": 5,
+      "tokens": [
+        {
+          "arabic": "إِيَّاكَ",
+          "translit": "iyyāka",
+          "meaning": {
+            "de": "Dich allein",
+            "en": "You alone",
+            "tr": "yalnız Sana",
+            "ar": "إياك وحدك",
+            "es": "sólo a Ti",
+            "fr": "C'est Toi seul",
+            "id": "hanya Engkau",
+            "bn": "শুধু তোমারই",
+            "fa": "تنها تو را",
+            "ms": "hanya Engkau",
+            "ur": "صرف تجھی کو",
+            "ru": "Тебя одного",
+            "sw": "Wewe pekee",
+            "ps": "یوازې ته"
+          }
+        },
+        {
+          "arabic": "نَعْبُدُ",
+          "translit": "naʿbudu",
+          "meaning": {
+            "de": "beten wir an",
+            "en": "we worship",
+            "tr": "kulluk ederiz",
+            "ar": "نعبد، نخضع ونطيع",
+            "es": "adoramos",
+            "fr": "que nous adorons",
+            "id": "kami sembah",
+            "bn": "আমরা ইবাদত করি",
+            "fa": "می‌پرستیم",
+            "ms": "kami sembah",
+            "ur": "ہم عبادت کرتے ہیں",
+            "ru": "мы поклоняемся",
+            "sw": "tunaabudu",
+            "ps": "عبادت کوو"
+          }
+        },
+        {
+          "arabic": "وَإِيَّاكَ",
+          "translit": "wa-iyyāka",
+          "meaning": {
+            "de": "und Dich allein",
+            "en": "and You alone",
+            "tr": "ve yalnız Senden",
+            "ar": "وإياك وحدك",
+            "es": "y sólo a Ti",
+            "fr": "et c'est Toi seul",
+            "id": "dan hanya kepada-Mu",
+            "bn": "এবং শুধু তোমারই",
+            "fa": "و تنها از تو",
+            "ms": "dan hanya kepada-Mu",
+            "ur": "اور صرف تجھی سے",
+            "ru": "и только у Тебя",
+            "sw": "na Wewe pekee",
+            "ps": "او یوازې له تا"
+          }
+        },
+        {
+          "arabic": "نَسْتَعِينُ",
+          "translit": "nastaʿīn",
+          "meaning": {
+            "de": "bitten wir um Hilfe",
+            "en": "we ask for help",
+            "tr": "yardım dileriz",
+            "ar": "نستعين، نطلب العون",
+            "es": "pedimos ayuda",
+            "fr": "que nous implorons secours",
+            "id": "kami mohon pertolongan",
+            "bn": "আমরা সাহায্য চাই",
+            "fa": "یاری می‌جوییم",
+            "ms": "kami mohon pertolongan",
+            "ur": "ہم مدد مانگتے ہیں",
+            "ru": "мы просим помощи",
+            "sw": "tunaomba msaada",
+            "ps": "مرسته غواړو"
+          }
+        }
+      ]
+    },
+    {
+      "globalAyah": 6,
+      "tokens": [
+        {
+          "arabic": "اهْدِنَا",
+          "translit": "ihdinā",
+          "meaning": {
+            "de": "leite uns",
+            "en": "guide us",
+            "tr": "bizi hidayet eyle",
+            "ar": "اهدنا، دلّنا ووفّقنا",
+            "es": "guíanos",
+            "fr": "guide-nous",
+            "id": "tunjukilah kami",
+            "bn": "আমাদের পথ দেখাও",
+            "fa": "ما را هدایت کن",
+            "ms": "tunjukilah kami",
+            "ur": "ہمیں ہدایت دے",
+            "ru": "веди нас",
+            "sw": "tuongoze",
+            "ps": "موږ ته لار وښایه"
+          }
+        },
+        {
+          "arabic": "الصِّرَاطَ",
+          "translit": "ṣ-ṣirāṭa",
+          "meaning": {
+            "de": "auf den Weg",
+            "en": "to the path",
+            "tr": "yola",
+            "ar": "الصراط، الطريق",
+            "es": "por el camino",
+            "fr": "sur le chemin",
+            "id": "ke jalan",
+            "bn": "পথের দিকে",
+            "fa": "به راه",
+            "ms": "ke jalan",
+            "ur": "راستے کی طرف",
+            "ru": "к пути",
+            "sw": "kwenye njia",
+            "ps": "لار ته"
+          }
+        },
+        {
+          "arabic": "الْمُسْتَقِيمَ",
+          "translit": "l-mustaqīm",
+          "meaning": {
+            "de": "den geraden",
+            "en": "the straight",
+            "tr": "dosdoğru olanı",
+            "ar": "المستقيم، السوي بلا اعوجاج",
+            "es": "recto",
+            "fr": "droit",
+            "id": "yang lurus",
+            "bn": "সরল",
+            "fa": "راست",
+            "ms": "yang lurus",
+            "ur": "سیدھے",
+            "ru": "прямому",
+            "sw": "iliyonyooka",
+            "ps": "سمه"
+          }
+        }
+      ]
+    },
+    {
+      "globalAyah": 7,
+      "tokens": [
+        {
+          "arabic": "صِرَاطَ",
+          "translit": "ṣirāṭa",
+          "meaning": {
+            "de": "den Weg",
+            "en": "the path of",
+            "tr": "yolu",
+            "ar": "صراط، طريق",
+            "es": "el camino de",
+            "fr": "le chemin de",
+            "id": "jalan",
+            "bn": "পথ",
+            "fa": "راه",
+            "ms": "jalan",
+            "ur": "راستہ",
+            "ru": "путь",
+            "sw": "njia ya",
+            "ps": "لار د"
+          }
+        },
+        {
+          "arabic": "الَّذِينَ",
+          "translit": "lladhīna",
+          "meaning": {
+            "de": "derer, die",
+            "en": "of those who",
+            "tr": "kendilerine",
+            "ar": "الذين",
+            "es": "de aquellos a quienes",
+            "fr": "de ceux que",
+            "id": "orang-orang yang",
+            "bn": "যাদের",
+            "fa": "کسانی که",
+            "ms": "orang-orang yang",
+            "ur": "ان لوگوں کا جن",
+            "ru": "тех, кому",
+            "sw": "wale ambao",
+            "ps": "د هغو چې"
+          }
+        },
+        {
+          "arabic": "أَنْعَمْتَ",
+          "translit": "anʿamta",
+          "meaning": {
+            "de": "Du begnadet hast",
+            "en": "You have blessed",
+            "tr": "nimet verdiğin",
+            "ar": "أنعمت، أعطيت النعمة",
+            "es": "Tú has agraciado",
+            "fr": "Tu as comblés de bienfaits",
+            "id": "Engkau beri nikmat",
+            "bn": "তুমি অনুগ্রহ করেছ",
+            "fa": "نعمت داده‌ای",
+            "ms": "Engkau kurniakan nikmat",
+            "ur": "تو نے انعام کیا",
+            "ru": "Ты одарил милостью",
+            "sw": "umewaneemesha",
+            "ps": "تا نعمت ورکړې"
+          }
+        },
+        {
+          "arabic": "عَلَيْهِمْ",
+          "translit": "ʿalayhim",
+          "meaning": {
+            "de": "sie",
+            "en": "them",
+            "tr": "kendilerine",
+            "ar": "عليهم",
+            "es": "a ellos",
+            "fr": "eux",
+            "id": "kepada mereka",
+            "bn": "তাদেরকে",
+            "fa": "بر آنان",
+            "ms": "kepada mereka",
+            "ur": "ان پر",
+            "ru": "их",
+            "sw": "wao",
+            "ps": "پرې"
+          }
+        },
+        {
+          "arabic": "غَيْرِ",
+          "translit": "ghayri",
+          "meaning": {
+            "de": "nicht",
+            "en": "not (of)",
+            "tr": "değil",
+            "ar": "غير، سوى",
+            "es": "no",
+            "fr": "non",
+            "id": "bukan",
+            "bn": "নয়",
+            "fa": "نه",
+            "ms": "bukan",
+            "ur": "نہیں",
+            "ru": "не",
+            "sw": "si",
+            "ps": "نه"
+          }
+        },
+        {
+          "arabic": "الْمَغْضُوبِ",
+          "translit": "l-maghḍūbi",
+          "meaning": {
+            "de": "derer, die (Deinen) Zorn erregten",
+            "en": "those who earned (Your) anger",
+            "tr": "gazaba uğrayanların",
+            "ar": "المغضوب عليهم",
+            "es": "de aquellos que incurrieron en ira",
+            "fr": "de ceux qui ont encouru [Ta] colère",
+            "id": "orang-orang yang dimurkai",
+            "bn": "যাদের প্রতি (তোমার) ক্রোধ নেমেছে",
+            "fa": "کسانی که مورد خشم (تو) قرار گرفتند",
+            "ms": "orang-orang yang dimurkai",
+            "ur": "جن پر (تیرا) غضب ہوا",
+            "ru": "тех, кто навлёк (Твой) гнев",
+            "sw": "waliopatwa na ghadhabu (Yako)",
+            "ps": "هغه چې (ستا) غضب پرې راغی"
+          }
+        },
+        {
+          "arabic": "عَلَيْهِمْ",
+          "translit": "ʿalayhim",
+          "meaning": {
+            "de": "sie",
+            "en": "them",
+            "tr": "kendilerine",
+            "ar": "عليهم",
+            "es": "a ellos",
+            "fr": "eux",
+            "id": "kepada mereka",
+            "bn": "তাদেরকে",
+            "fa": "بر آنان",
+            "ms": "kepada mereka",
+            "ur": "ان پر",
+            "ru": "их",
+            "sw": "wao",
+            "ps": "پرې"
+          }
+        },
+        {
+          "arabic": "وَلَا",
+          "translit": "wa-lā",
+          "meaning": {
+            "de": "und nicht",
+            "en": "and not",
+            "tr": "ve ne de",
+            "ar": "ولا",
+            "es": "ni",
+            "fr": "et non plus",
+            "id": "dan bukan",
+            "bn": "এবং নয়",
+            "fa": "و نه",
+            "ms": "dan bukan",
+            "ur": "اور نہ",
+            "ru": "и не",
+            "sw": "wala si",
+            "ps": "او نه"
+          }
+        },
+        {
+          "arabic": "الضَّالِّينَ",
+          "translit": "ḍ-ḍāllīn",
+          "meaning": {
+            "de": "der Irregehenden",
+            "en": "of those who go astray",
+            "tr": "sapmışların",
+            "ar": "الضالين، التائهين عن الحق",
+            "es": "de los extraviados",
+            "fr": "des égarés",
+            "id": "orang-orang yang sesat",
+            "bn": "যারা পথভ্রষ্ট",
+            "fa": "گمراهان",
+            "ms": "orang-orang yang sesat",
+            "ur": "گمراہوں کا",
+            "ru": "заблудших",
+            "sw": "wapotofu",
+            "ps": "بې لارې شویو"
+          }
+        }
+      ]
+    }
+  ]
+}

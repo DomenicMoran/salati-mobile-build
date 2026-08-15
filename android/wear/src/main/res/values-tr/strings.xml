@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Sichtbare Texte der Wear-OS-App (App-Screen, Kachel, Komplikation).
+  Generiert fuer alle 14 Salati-App-Sprachen (src/lib/locale-detect.ts).
+  values/ ist Englisch (Fallback fuer alle nicht gelisteten Uhr-Sprachen),
+  values-de/-tr/-ar/-es/-fr/-in/-bn/-fa/-ms/-ur/-ru/-sw/-ps die uebrigen 13.
+  Gebetsnamen sind wortgleich mit prayers.* aus src/locales/<lang>.json.
+-->
+<resources>
+    <string name="app_name">Salati</string>
+    <string name="tile_label">Sonraki namaz</string>
+    <string name="next_prayer">Sonraki namaz</string>
+    <string name="prayer_fajr">Sabah</string>
+    <string name="prayer_dhuhr">Öğle</string>
+    <string name="prayer_asr">İkindi</string>
+    <string name="prayer_maghrib">Akşam</string>
+    <string name="prayer_isha">Yatsı</string>
+    <string name="today">Bugün</string>
+    <string name="no_data_title">Henüz namaz vakti yok</string>
+    <string name="no_data_body">Telefonda Salati uygulamasını aç</string>
+    <string name="in_hours_minutes">%1$d sa %2$d dk sonra</string>
+    <string name="in_minutes">%1$d dk sonra</string>
+    <string name="time_now">şimdi</string>
+    <string name="stale_data">Vakitler güncel olmayabilir</string>
+    <string name="qibla">Kıble</string>
+    <string name="qibla_no_compass">Bu saatte pusula yok</string>
+    <string name="qibla_aligned">Kâbe yönündesin</string>
+    <string name="qibla_distance">Kâbe’ye %1$d km</string>
+    <string name="complication_description">Sonraki namazı ve vaktini gösterir</string>
+    <string name="loading">Yükleniyor…</string>
+</resources>

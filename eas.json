@@ -1,0 +1,42 @@
+{
+  "cli": {
+    "version": ">= 16.0.0",
+    "appVersionSource": "local"
+  },
+  "build": {
+    "development": {
+      "developmentClient": true,
+      "distribution": "internal",
+      "channel": "development"
+    },
+    "preview": {
+      "distribution": "internal",
+      "channel": "preview"
+    },
+    "production": {
+      "channel": "production",
+      "ios": {
+        "credentialsSource": "local"
+      },
+      "android": {
+        "credentialsSource": "local",
+        "buildType": "apk"
+      }
+    }
+  },
+  "submit": {
+    "production": {
+      "android": {
+        "serviceAccountKeyPath": "C:/Users/domen/Documents/menucloud-mobile-build/play-service-account.json",
+        "track": "production"
+      },
+      "ios": {
+        "ascAppId": "6791867298",
+        "appleTeamId": "ZKG548NGDR",
+        "ascApiKeyPath": "C:/Users/domen/Documents/MenuCloud/AuthKey_H73GL4Q2AQ_Apple.p8",
+        "ascApiKeyId": "H73GL4Q2AQ",
+        "ascApiKeyIssuerId": "de348707-2ec6-4079-b3a4-74c17c31ba0c"
+      }
+    }
+  }
+}

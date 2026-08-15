@@ -1,0 +1,578 @@
+[
+  {
+    "ort": "Berlin",
+    "lat": 52.52,
+    "lon": 13.405,
+    "tz": "Europe/Berlin",
+    "methode": 13,
+    "tag": "15-01-2026",
+    "timings": {
+      "Fajr": "06:06",
+      "Sunrise": "08:03",
+      "Dhuhr": "12:21",
+      "Asr": "14:05",
+      "Maghrib": "16:29",
+      "Isha": "18:19"
+    }
+  },
+  {
+    "ort": "Berlin",
+    "lat": 52.52,
+    "lon": 13.405,
+    "tz": "Europe/Berlin",
+    "methode": 13,
+    "tag": "21-06-2026",
+    "timings": {
+      "Fajr": "02:34",
+      "Sunrise": "04:36",
+      "Dhuhr": "13:13",
+      "Asr": "17:37",
+      "Maghrib": "21:40",
+      "Isha": "23:35"
+    }
+  },
+  {
+    "ort": "Berlin",
+    "lat": 52.52,
+    "lon": 13.405,
+    "tz": "Europe/Berlin",
+    "methode": 13,
+    "tag": "27-07-2026",
+    "timings": {
+      "Fajr": "02:51",
+      "Sunrise": "05:11",
+      "Dhuhr": "13:18",
+      "Asr": "17:32",
+      "Maghrib": "21:14",
+      "Isha": "23:26"
+    }
+  },
+  {
+    "ort": "Berlin",
+    "lat": 52.52,
+    "lon": 13.405,
+    "tz": "Europe/Berlin",
+    "methode": 13,
+    "tag": "10-12-2026",
+    "timings": {
+      "Fajr": "05:59",
+      "Sunrise": "07:59",
+      "Dhuhr": "12:04",
+      "Asr": "13:41",
+      "Maghrib": "15:59",
+      "Isha": "17:52"
+    }
+  },
+  {
+    "ort": "Kairo",
+    "lat": 30.044,
+    "lon": 31.236,
+    "tz": "Africa/Cairo",
+    "methode": 5,
+    "tag": "15-01-2026",
+    "timings": {
+      "Fajr": "05:21",
+      "Sunrise": "06:52",
+      "Dhuhr": "12:04",
+      "Asr": "14:57",
+      "Maghrib": "17:17",
+      "Isha": "18:39"
+    }
+  },
+  {
+    "ort": "Kairo",
+    "lat": 30.044,
+    "lon": 31.236,
+    "tz": "Africa/Cairo",
+    "methode": 5,
+    "tag": "21-06-2026",
+    "timings": {
+      "Fajr": "04:08",
+      "Sunrise": "05:54",
+      "Dhuhr": "12:57",
+      "Asr": "16:32",
+      "Maghrib": "19:59",
+      "Isha": "21:33"
+    }
+  },
+  {
+    "ort": "Kairo",
+    "lat": 30.044,
+    "lon": 31.236,
+    "tz": "Africa/Cairo",
+    "methode": 5,
+    "tag": "27-07-2026",
+    "timings": {
+      "Fajr": "04:31",
+      "Sunrise": "06:11",
+      "Dhuhr": "13:02",
+      "Asr": "16:39",
+      "Maghrib": "19:52",
+      "Isha": "21:20"
+    }
+  },
+  {
+    "ort": "Kairo",
+    "lat": 30.044,
+    "lon": 31.236,
+    "tz": "Africa/Cairo",
+    "methode": 5,
+    "tag": "10-12-2026",
+    "timings": {
+      "Fajr": "05:08",
+      "Sunrise": "06:40",
+      "Dhuhr": "11:48",
+      "Asr": "14:37",
+      "Maghrib": "16:56",
+      "Isha": "18:18"
+    }
+  },
+  {
+    "ort": "Mekka",
+    "lat": 21.4225,
+    "lon": 39.8262,
+    "tz": "Asia/Riyadh",
+    "methode": 4,
+    "tag": "15-01-2026",
+    "timings": {
+      "Fajr": "05:41",
+      "Sunrise": "07:01",
+      "Dhuhr": "12:30",
+      "Asr": "15:37",
+      "Maghrib": "17:59",
+      "Isha": "19:29"
+    }
+  },
+  {
+    "ort": "Mekka",
+    "lat": 21.4225,
+    "lon": 39.8262,
+    "tz": "Asia/Riyadh",
+    "methode": 4,
+    "tag": "21-06-2026",
+    "timings": {
+      "Fajr": "04:11",
+      "Sunrise": "05:39",
+      "Dhuhr": "12:22",
+      "Asr": "15:42",
+      "Maghrib": "19:06",
+      "Isha": "20:36"
+    }
+  },
+  {
+    "ort": "Mekka",
+    "lat": 21.4225,
+    "lon": 39.8262,
+    "tz": "Asia/Riyadh",
+    "methode": 4,
+    "tag": "27-07-2026",
+    "timings": {
+      "Fajr": "04:28",
+      "Sunrise": "05:52",
+      "Dhuhr": "12:27",
+      "Asr": "15:45",
+      "Maghrib": "19:02",
+      "Isha": "20:32"
+    }
+  },
+  {
+    "ort": "Mekka",
+    "lat": 21.4225,
+    "lon": 39.8262,
+    "tz": "Asia/Riyadh",
+    "methode": 4,
+    "tag": "10-12-2026",
+    "timings": {
+      "Fajr": "05:26",
+      "Sunrise": "06:48",
+      "Dhuhr": "12:13",
+      "Asr": "15:18",
+      "Maghrib": "17:39",
+      "Isha": "19:09"
+    }
+  },
+  {
+    "ort": "Istanbul",
+    "lat": 41.0082,
+    "lon": 28.9784,
+    "tz": "Europe/Istanbul",
+    "methode": 13,
+    "tag": "15-01-2026",
+    "timings": {
+      "Fajr": "06:50",
+      "Sunrise": "08:20",
+      "Dhuhr": "13:18",
+      "Asr": "15:44",
+      "Maghrib": "18:07",
+      "Isha": "19:32"
+    }
+  },
+  {
+    "ort": "Istanbul",
+    "lat": 41.0082,
+    "lon": 28.9784,
+    "tz": "Europe/Istanbul",
+    "methode": 13,
+    "tag": "21-06-2026",
+    "timings": {
+      "Fajr": "03:24",
+      "Sunrise": "05:25",
+      "Dhuhr": "13:11",
+      "Asr": "17:11",
+      "Maghrib": "20:47",
+      "Isha": "22:38"
+    }
+  },
+  {
+    "ort": "Istanbul",
+    "lat": 41.0082,
+    "lon": 28.9784,
+    "tz": "Europe/Istanbul",
+    "methode": 13,
+    "tag": "27-07-2026",
+    "timings": {
+      "Fajr": "04:01",
+      "Sunrise": "05:48",
+      "Dhuhr": "13:16",
+      "Asr": "17:12",
+      "Maghrib": "20:33",
+      "Isha": "22:12"
+    }
+  },
+  {
+    "ort": "Istanbul",
+    "lat": 41.0082,
+    "lon": 28.9784,
+    "tz": "Europe/Istanbul",
+    "methode": 13,
+    "tag": "10-12-2026",
+    "timings": {
+      "Fajr": "06:39",
+      "Sunrise": "08:11",
+      "Dhuhr": "13:02",
+      "Asr": "15:22",
+      "Maghrib": "17:43",
+      "Isha": "19:09"
+    }
+  },
+  {
+    "ort": "Jakarta",
+    "lat": -6.2088,
+    "lon": 106.8456,
+    "tz": "Asia/Jakarta",
+    "methode": 11,
+    "tag": "15-01-2026",
+    "timings": {
+      "Fajr": "04:25",
+      "Sunrise": "05:49",
+      "Dhuhr": "12:02",
+      "Asr": "15:26",
+      "Maghrib": "18:15",
+      "Isha": "19:30"
+    }
+  },
+  {
+    "ort": "Jakarta",
+    "lat": -6.2088,
+    "lon": 106.8456,
+    "tz": "Asia/Jakarta",
+    "methode": 11,
+    "tag": "21-06-2026",
+    "timings": {
+      "Fajr": "04:38",
+      "Sunrise": "06:01",
+      "Dhuhr": "11:54",
+      "Asr": "15:16",
+      "Maghrib": "17:47",
+      "Isha": "19:02"
+    }
+  },
+  {
+    "ort": "Jakarta",
+    "lat": -6.2088,
+    "lon": 106.8456,
+    "tz": "Asia/Jakarta",
+    "methode": 11,
+    "tag": "27-07-2026",
+    "timings": {
+      "Fajr": "04:43",
+      "Sunrise": "06:04",
+      "Dhuhr": "11:59",
+      "Asr": "15:21",
+      "Maghrib": "17:54",
+      "Isha": "19:07"
+    }
+  },
+  {
+    "ort": "Jakarta",
+    "lat": -6.2088,
+    "lon": 106.8456,
+    "tz": "Asia/Jakarta",
+    "methode": 11,
+    "tag": "10-12-2026",
+    "timings": {
+      "Fajr": "04:06",
+      "Sunrise": "05:31",
+      "Dhuhr": "11:45",
+      "Asr": "15:12",
+      "Maghrib": "18:00",
+      "Isha": "19:16"
+    }
+  },
+  {
+    "ort": "Tromsoe",
+    "lat": 69.6492,
+    "lon": 18.9553,
+    "tz": "Europe/Oslo",
+    "methode": 3,
+    "tag": "15-01-2026",
+    "timings": {
+      "Fajr": "06:14",
+      "Sunrise": "11:35",
+      "Dhuhr": "11:54",
+      "Asr": "11:54",
+      "Maghrib": "12:23",
+      "Isha": "17:22"
+    }
+  },
+  {
+    "ort": "Tromsoe",
+    "lat": 69.6492,
+    "lon": 18.9553,
+    "tz": "Europe/Oslo",
+    "methode": 3,
+    "tag": "21-06-2026",
+    "timings": {
+      "Fajr": "00:46",
+      "Sunrise": "00:46",
+      "Dhuhr": "12:46",
+      "Asr": "17:58",
+      "Maghrib": "00:46",
+      "Isha": "00:46"
+    }
+  },
+  {
+    "ort": "Tromsoe",
+    "lat": 69.6492,
+    "lon": 18.9553,
+    "tz": "Europe/Oslo",
+    "methode": 3,
+    "tag": "27-07-2026",
+    "timings": {
+      "Fajr": "01:05",
+      "Sunrise": "01:33",
+      "Dhuhr": "12:51",
+      "Asr": "17:38",
+      "Maghrib": "00:02",
+      "Isha": "00:28"
+    }
+  },
+  {
+    "ort": "Tromsoe",
+    "lat": 69.6492,
+    "lon": 18.9553,
+    "tz": "Europe/Oslo",
+    "methode": 3,
+    "tag": "10-12-2026",
+    "timings": {
+      "Fajr": "06:17",
+      "Sunrise": "11:37",
+      "Dhuhr": "11:37",
+      "Asr": "12:12",
+      "Maghrib": "11:37",
+      "Isha": "16:44"
+    }
+  },
+  {
+    "ort": "London",
+    "lat": 51.5074,
+    "lon": -0.1278,
+    "tz": "Europe/London",
+    "methode": 2,
+    "tag": "15-01-2026",
+    "timings": {
+      "Fajr": "06:19",
+      "Sunrise": "08:00",
+      "Dhuhr": "12:10",
+      "Asr": "14:00",
+      "Maghrib": "16:21",
+      "Isha": "18:01"
+    }
+  },
+  {
+    "ort": "London",
+    "lat": 51.5074,
+    "lon": -0.1278,
+    "tz": "Europe/London",
+    "methode": 2,
+    "tag": "21-06-2026",
+    "timings": {
+      "Fajr": "02:53",
+      "Sunrise": "04:43",
+      "Dhuhr": "13:02",
+      "Asr": "17:25",
+      "Maghrib": "21:22",
+      "Isha": "23:12"
+    }
+  },
+  {
+    "ort": "London",
+    "lat": 51.5074,
+    "lon": -0.1278,
+    "tz": "Europe/London",
+    "methode": 2,
+    "tag": "27-07-2026",
+    "timings": {
+      "Fajr": "03:12",
+      "Sunrise": "05:17",
+      "Dhuhr": "13:07",
+      "Asr": "17:20",
+      "Maghrib": "20:57",
+      "Isha": "23:02"
+    }
+  },
+  {
+    "ort": "London",
+    "lat": 51.5074,
+    "lon": -0.1278,
+    "tz": "Europe/London",
+    "methode": 2,
+    "tag": "10-12-2026",
+    "timings": {
+      "Fajr": "06:11",
+      "Sunrise": "07:55",
+      "Dhuhr": "11:53",
+      "Asr": "13:36",
+      "Maghrib": "15:51",
+      "Isha": "17:35"
+    }
+  },
+  {
+    "ort": "Kapstadt",
+    "lat": -33.9249,
+    "lon": 18.4241,
+    "tz": "Africa/Johannesburg",
+    "methode": 3,
+    "tag": "15-01-2026",
+    "timings": {
+      "Fajr": "04:11",
+      "Sunrise": "05:51",
+      "Dhuhr": "12:56",
+      "Asr": "16:41",
+      "Maghrib": "20:00",
+      "Isha": "21:34"
+    }
+  },
+  {
+    "ort": "Kapstadt",
+    "lat": -33.9249,
+    "lon": 18.4241,
+    "tz": "Africa/Johannesburg",
+    "methode": 3,
+    "tag": "21-06-2026",
+    "timings": {
+      "Fajr": "06:22",
+      "Sunrise": "07:51",
+      "Dhuhr": "12:48",
+      "Asr": "15:27",
+      "Maghrib": "17:45",
+      "Isha": "19:09"
+    }
+  },
+  {
+    "ort": "Kapstadt",
+    "lat": -33.9249,
+    "lon": 18.4241,
+    "tz": "Africa/Johannesburg",
+    "methode": 3,
+    "tag": "27-07-2026",
+    "timings": {
+      "Fajr": "06:16",
+      "Sunrise": "07:43",
+      "Dhuhr": "12:53",
+      "Asr": "15:42",
+      "Maghrib": "18:03",
+      "Isha": "19:25"
+    }
+  },
+  {
+    "ort": "Kapstadt",
+    "lat": -33.9249,
+    "lon": 18.4241,
+    "tz": "Africa/Johannesburg",
+    "methode": 3,
+    "tag": "10-12-2026",
+    "timings": {
+      "Fajr": "03:45",
+      "Sunrise": "05:28",
+      "Dhuhr": "12:39",
+      "Asr": "16:24",
+      "Maghrib": "19:50",
+      "Isha": "21:27"
+    }
+  },
+  {
+    "ort": "NewYork",
+    "lat": 40.7128,
+    "lon": -74.006,
+    "tz": "America/New_York",
+    "methode": 2,
+    "tag": "15-01-2026",
+    "timings": {
+      "Fajr": "05:58",
+      "Sunrise": "07:18",
+      "Dhuhr": "12:06",
+      "Asr": "14:33",
+      "Maghrib": "16:53",
+      "Isha": "18:14"
+    }
+  },
+  {
+    "ort": "NewYork",
+    "lat": 40.7128,
+    "lon": -74.006,
+    "tz": "America/New_York",
+    "methode": 2,
+    "tag": "21-06-2026",
+    "timings": {
+      "Fajr": "03:45",
+      "Sunrise": "05:25",
+      "Dhuhr": "12:58",
+      "Asr": "16:58",
+      "Maghrib": "20:31",
+      "Isha": "22:11"
+    }
+  },
+  {
+    "ort": "NewYork",
+    "lat": 40.7128,
+    "lon": -74.006,
+    "tz": "America/New_York",
+    "methode": 2,
+    "tag": "27-07-2026",
+    "timings": {
+      "Fajr": "04:17",
+      "Sunrise": "05:48",
+      "Dhuhr": "13:03",
+      "Asr": "16:59",
+      "Maghrib": "20:17",
+      "Isha": "21:47"
+    }
+  },
+  {
+    "ort": "NewYork",
+    "lat": 40.7128,
+    "lon": -74.006,
+    "tz": "America/New_York",
+    "methode": 2,
+    "tag": "10-12-2026",
+    "timings": {
+      "Fajr": "05:47",
+      "Sunrise": "07:09",
+      "Dhuhr": "11:49",
+      "Asr": "14:11",
+      "Maghrib": "16:29",
+      "Isha": "17:50"
+    }
+  }
+]

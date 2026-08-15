@@ -1,0 +1,2730 @@
+{
+  "nav": {
+    "prayerTimes": "Prière",
+    "qibla": "Qibla",
+    "quran": "Coran",
+    "calendar": "Calendrier",
+    "duas": "Douas",
+    "settings": "Réglages",
+    "more": "Plus",
+    "hadith": "Hadiths",
+    "mosques": "Mosquées",
+    "learn": "Apprendre à lire le Coran",
+    "quiz": "Entraînement et Quiz",
+    "hifz": "Récitation",
+    "tasbih": "Tasbih",
+    "guides": "Prière et pratique",
+    "phrases": "Formules et khutba",
+    "wisdom": "Sagesses",
+    "tracker": "Suivi des prières",
+    "khatmah": "Plan de khatma",
+    "names": "99 Noms d’Allah",
+    "fasting": "Jeûne",
+    "zakat": "Calculateur de zakat",
+    "zakatFitr": "Calculateur de Zakat al-Fitr",
+    "mirath": "Calculateur d'héritage",
+    "hijriConverter": "Convertisseur de dates",
+    "halal": "Halal à proximité",
+    "halalScanner": "Scanner Halal",
+    "study": "Étude",
+    "sync": "Synchro",
+    "home": "Accueil",
+    "impressum": "Mentions légales",
+    "datenschutz": "Politique de confidentialité",
+    "agb": "Conditions d'utilisation",
+    "changelog": "Nouveautés",
+    "tvConnect": "Connecter la TV",
+    "radio": "Radio du Coran",
+    "themes": "Versets par Thème",
+    "achievements": "Badges",
+    "journeys": "Plans du jour",
+    "search": "Recherche",
+    "gettingStarted": "Premiers pas",
+    "lernen": "Apprendre",
+    "media": "Médias",
+    "lizenzen": "Sources et licences"
+  },
+  "common": {
+    "openSettings": "Ouvrir les réglages système",
+    "continue": "Continuer",
+    "clearSearch": "Effacer la recherche",
+    "openQuran": "Aller au Coran",
+    "loading": "Chargement…",
+    "error": "Une erreur est survenue.",
+    "offline": "Hors ligne - affichage des dernières données enregistrées.",
+    "retry": "Réessayer",
+    "done": "Terminé",
+    "cancel": "Annuler",
+    "save": "Enregistrer",
+    "reset": "Réinitialiser",
+    "recommended": "Recommandé",
+    "search": "Rechercher…",
+    "locating": "Localisation…",
+    "useLocation": "Utiliser la position actuelle",
+    "refresh": "Actualiser",
+    "dismiss": "Ignorer",
+    "credit": "Développée par Domenic Moran",
+    "new": "Nouveau"
+  },
+  "quran": {
+    "surahN": "Sourate {n}",
+    "surahs": "Sourates",
+    "juz": "Juz'",
+    "juzItem": "Juz'",
+    "verse": "Verset",
+    "verses": "versets",
+    "searchPlaceholder": "Rechercher une sourate…",
+    "continueReading": "Continuer la lecture",
+    "recentlyRead": "Lus récemment",
+    "bookmarks": "Signets",
+    "noBookmarks": "Pas encore de signets - touchez ⊕ à côté d'un verset dans le lecteur.",
+    "listError": "Impossible de charger la liste des sourates.",
+    "loadError": "Impossible de charger la sourate.",
+    "playSurah": "Écouter la sourate",
+    "pause": "Pause",
+    "playbackSpeed": "Vitesse de lecture",
+    "chooseReciter": "Choisir le récitateur",
+    "chooseTranslation": "Choisir la traduction",
+    "tafsir": "Tafsir",
+    "chooseTafsir": "Choisir le tafsir",
+    "notePlaceholder": "Ta propre note sur ce verset …",
+    "noteLabel": "Ma note",
+    "transliteration": "Translittération",
+    "isolatedLetters": "Lettres isolées",
+    "tajweed": "Couleurs du tajwid",
+    "tajweedLegend": {
+      "ghunnah": "Ghunnah (son nasal)",
+      "idgham": "Idgham (fusion)",
+      "ikhafa": "Ikhfa (dissimulation)",
+      "iqlab": "Iqlab (conversion)",
+      "qalqalah": "Qalqalah (son d'écho)",
+      "madd": "Madd (allongement)",
+      "silent": "Lettres muettes"
+    },
+    "wordInfo": {
+      "title": "Info du mot",
+      "translationLabel": "Signification",
+      "translationLanguageNote": "Les significations mot à mot ne sont actuellement disponibles qu'en anglais.",
+      "pronunciationLabel": "Pourquoi se prononce-t-il ainsi ?",
+      "lettersLabel": "Lettres",
+      "rootNote": "Racine non affichée - aucune source fiable disponible.",
+      "noData": "Aucune donnée disponible pour ce mot pour le moment. Vérifiez votre connexion internet.",
+      "rules": {
+        "ghunnah": "Ghunnah : son nasal prolongé environ deux temps.",
+        "idghamGhunnah": "Idgham avec ghunnah : la lettre fusionne avec le noun/mim suivant avec un son nasal.",
+        "idghamNoGhunnah": "Idgham sans ghunnah : la lettre fusionne complètement avec la suivante, sans son nasal.",
+        "ikhafa": "Ikhfa : le noun/tanwin est prononcé de façon voilée, ni clairement ni totalement fusionné.",
+        "iqlab": "Iqlab : le noun/tanwin se transforme en son m devant ba.",
+        "qalqalah": "Qalqalah : les lettres ق ط ب ج د produisent un léger rebond d'écho lorsqu'elles portent un soukoun, surtout en s'arrêtant à la fin d'un mot.",
+        "madd": "Madd : la voyelle est allongée de 2 à 6 temps selon la règle.",
+        "sunLetter": "Lettre solaire : le l de al- ne se prononce pas, la lettre suivante est doublée.",
+        "hamzatWasl": "Hamza de liaison : prononcée seulement en début de discours, muette lors de la lecture continue.",
+        "silentLetter": "Lettre muette : écrite mais non prononcée."
+      }
+    },
+    "wordByWord": "Mot à mot",
+    "offline": "Hors ligne",
+    "download": "Télécharger",
+    "searchAyahs": "Rechercher des versets",
+    "searchAyahsPlaceholder": "Entrez un mot ou un thème…",
+    "searchResultsCount": "{count} résultats",
+    "searchNoResults": "Aucun résultat pour « {query} ».",
+    "searchError": "La recherche a échoué.",
+    "searchArabicNote": "La recherche en arabe correspond au texte littéral - les formes dérivées (p. ex. « اصبر » au lieu de « صبر ») comptent comme des résultats distincts.",
+    "loadMore": "Charger plus",
+    "tafsirCount": "{count} tafsirs",
+    "tafsirMultiHint": "Jusqu'à 3 sélections simultanées - appuyez pour activer/désactiver.",
+    "viewSettings": "Affichage et lecture",
+    "rangeTitle": "Lire un passage",
+    "rangeFrom": "Du verset",
+    "rangeTo": "Au verset",
+    "rangeLoop": "Répéter",
+    "rangePlay": "Lire le passage",
+    "rangeSelectSurah": "Choisir la sourate",
+    "rangeCrossSurahHint": "La lecture s'étend sur plusieurs sourates.",
+    "focusMode": "Mode focus",
+    "beginnerMode": "Apprendre à lire",
+    "focusExit": "Quitter le mode focus",
+    "sepia": "Sépia",
+    "mushafTitle": "Mushaf",
+    "mushafPage": "Page",
+    "mushafUthmani": "Uthmani",
+    "mushafIndopak": "IndoPak",
+    "mushafFontFallback": "L’IndoPak requiert des lettres absentes de votre police – affiché en {{font}}.",
+    "mushafGoTo": "Aller",
+    "mushafNext": "Page suivante",
+    "mushafPrev": "Page précédente",
+    "mushafOpen": "Vue mushaf",
+    "pageMode": "Mode page",
+    "mushafDesc": "Lire page par page comme un mushaf imprimé",
+    "shareImage": "Partager en image",
+    "reciteCheck": "Vérifier la récitation",
+    "labelAll": "Tous",
+    "labels": {
+      "favorite": "Favoris",
+      "memorize": "Mémoriser",
+      "reflect": "Méditer"
+    },
+    "searchInSurah": "Chercher dans cette sourate …",
+    "searchNext": "Résultat suivant",
+    "copyVerse": "Copier le verset",
+    "mushafWordInfo": "Info du mot",
+    "followAlong": "Suivre la lecture",
+    "translation": "Traduction",
+    "fontSize": "Taille du texte",
+    "mushafPlayAyah": "Écouter le verset",
+    "khatmahGoTo": "Aller à la page du jour",
+    "secondTranslation": "Deuxième traduction",
+    "chooseSecondTranslation": "Choisir la deuxième traduction",
+    "tajweedPracticeHint": "Touchez une règle pour surligner brièvement toutes ses occurrences sur cette page.",
+    "mushafPlayPage": "Lire la page",
+    "history": {
+      "title": "Historique",
+      "empty": "Aucun verset lu pour le moment - vos sourates lues récemment apparaîtront ici.",
+      "justNow": "À l’instant",
+      "minutesAgo": "il y a {n} min",
+      "hoursAgo": "il y a {n} h",
+      "yesterday": "Hier",
+      "daysAgo": "il y a {n} jours"
+    },
+    "tafsirMore": "Afficher plus",
+    "tafsirLess": "Afficher moins",
+    "sajdaTitle": "Verset de sajda",
+    "sajdaHintObligatory": "Selon l'avis le plus répandu, une prosternation (sajda) est obligatoire à cet endroit.",
+    "sajdaHintRecommended": "Une prosternation (sajda) est recommandée lors de la récitation de ce verset.",
+    "compareReciters": "Comparer les récitateurs",
+    "compareHint": "Lit {verse} à la suite avec deux récitateurs.",
+    "compareReciterA": "Récitateur A",
+    "compareReciterB": "Récitateur B",
+    "comparePlay": "Lire A → B",
+    "compareStageA": "Récitateur A …",
+    "compareStageB": "Récitateur B …",
+    "compareLoadError": "Impossible de charger l'audio.",
+    "chooseReciterA": "Choisir le récitateur A",
+    "chooseReciterB": "Choisir le récitateur B"
+  },
+  "hadith": {
+    "languagesNote": "Encyclopédie des hadiths prophétiques traduits — dans les 14 langues de l'app",
+    "loadError": "Impossible de charger la collection.",
+    "backToBooks": "Retour aux chapitres",
+    "itemLoadError": "Impossible de charger le hadith.",
+    "reference": "Livre {book}, hadith {hadith}",
+    "today": "Hadith du jour",
+    "todaySource": "An-Nawawi 40, n° {n}",
+    "searchTitle": "Recherche de hadiths",
+    "searchAllHint": "Recherche dans les 13 recueils - au moins 3 caractères",
+    "searchPlaceholder": "Terme de recherche …",
+    "searchedProgress": "{x}/{y} recueils parcourus",
+    "resultsCount": "{n} résultats",
+    "noResults": "Aucun résultat",
+    "shareText": "Partager le hadith",
+    "shareImage": "Partager en image",
+    "topicsTitle": "Par thème",
+    "topicsSubtitle": "Encyclopédie des hadiths prophétiques traduits — dans les 14 langues de l’application",
+    "topicsCount": "{n} hadiths disponibles dans votre langue",
+    "topicsSource": "Source : HadeethEnc.com — reproduit sans modification",
+    "topicsEmpty": "Aucun hadith dans votre langue pour ce thème pour le moment.",
+    "explanation": "Explication",
+    "benefits": "Enseignements"
+  },
+  "search": {
+    "globalTitle": "Recherche globale",
+    "title": "Recherche",
+    "placeholder": "Coran, Hadith, invocations, cours…",
+    "hint": "Entrez au moins 2 caractères",
+    "noResults": "Aucun résultat pour « {query} »",
+    "sectionQuran": "Coran",
+    "sectionHadith": "Hadith",
+    "sectionDuas": "Invocations",
+    "sectionCourses": "Cours",
+    "moreDesc": "Recherchez dans le Coran, les Hadiths, les invocations et les cours à la fois"
+  },
+  "share": {
+    "action": "Partager",
+    "dialogTitle": "Partager en image",
+    "linkFooter": "Partagé depuis l'application Salati",
+    "linkCopiedHint": "Lien copié dans le presse-papiers – collez-le lors du partage",
+    "courseComplete": {
+      "cardTitle": "Cours terminé !",
+      "cardSubtitle": "{n} leçons maîtrisées",
+      "shareCta": "Partager la réussite"
+    }
+  },
+  "duas": {
+    "offlineNote": "Entièrement disponible hors ligne",
+    "countOne": "1 doua",
+    "countMany": "{n} douas",
+    "shareText": "Partager le dua",
+    "shareImage": "Partager en image"
+  },
+  "learn": {
+    "title": "Apprendre à lire le Coran",
+    "subtitle": "De l'alphabet à ta première sourate - étape par étape",
+    "locked": "Verrouillé - termine d'abord la leçon précédente",
+    "start": "Commencer",
+    "back": "Retour",
+    "next": "Suivant",
+    "startQuiz": "Lancer le quiz",
+    "passed": "Réussi ! La leçon suivante est déverrouillée.",
+    "failed": "Il faut au moins 70 % pour réussir - réessaie.",
+    "retry": "Réessayer",
+    "backToCourse": "Retour au cours",
+    "phaseRead": "Apprendre à lire",
+    "deepenCta": "Plus de cours d'étude",
+    "deepenCtaDesc": "Foi, histoire, fiqh et dialectes dans la section Étude",
+    "tapToListen": "Touche pour écouter",
+    "contentFallbackNotice": "Pas encore traduit dans votre langue – affiché en anglais.",
+    "lessonTitles": {
+      "letters-1": "Alphabet 1 · ا ب ت ث",
+      "letters-2": "Alphabet 2 · ج ح خ د",
+      "letters-3": "Alphabet 3 · ذ ر ز س",
+      "letters-4": "Alphabet 4 · ش ص ض ط",
+      "letters-5": "Alphabet 5 · ظ ع غ ف",
+      "letters-6": "Alphabet 6 · ق ك ل م",
+      "letters-7": "Alphabet 7 · ن ه و ي",
+      "similar": "Distinguer les lettres semblables",
+      "forms-1": "Formes des lettres 1",
+      "forms-2": "Formes des lettres 2",
+      "forms-3": "Formes des lettres 3",
+      "fatha": "Fatha - le son a",
+      "kasra": "Kasra - le son i",
+      "damma": "Damma - le son u",
+      "tanwin": "Tanwin - an, in, un",
+      "sukun": "Soukoun - sans voyelle",
+      "shadda": "Shadda - redoublement",
+      "madd": "Voyelles longues (madd)",
+      "hamza-extras": "Hamza et signes spéciaux",
+      "sun-moon": "Lettres solaires et lunaires",
+      "words-1": "Lire les premiers mots",
+      "words-2": "Mots du Coran",
+      "reading-fatiha": "Lire Al-Fatiha",
+      "reading-ikhlas": "Lire Al-Ikhlas",
+      "vocab-1": "Vocabulaire coranique 1",
+      "vocab-2": "Vocabulaire coranique 2",
+      "vocab-3": "Vocabulaire coranique 3",
+      "vocab-4": "Vocabulaire coranique 4",
+      "vocab-5": "Vocabulaire coranique 5",
+      "vocab-6": "Vocabulaire coranique 6",
+      "vocab-7": "Vocabulaire coranique 7",
+      "vocab-8": "Vocabulaire coranique 8",
+      "vocab-9": "Vocabulaire coranique 9",
+      "vocab-10": "Vocabulaire coranique 10",
+      "vocab-11": "Vocabulaire coranique 11",
+      "reading-fatiha-deep": "Al-Fatiha - Mot à Mot",
+      "salah-words-1": "Mots de la Prière : Takbir et Ouverture",
+      "salah-words-2": "Mots de la Prière : Ruku et Sujud",
+      "salah-words-3": "Mots de la Prière : Tashahhud et Salawat",
+      "salah-words-4": "Mots de la Prière : Taslim et Clôture",
+      "reading-falaq": "Lecture : Al-Falaq",
+      "reading-nas": "Lecture : An-Nas"
+    },
+    "concepts": {
+      "similar": "Beaucoup de lettres arabes partagent la même forme de base (par ex. la « dent » ب ت ث) et ne se distinguent que par le nombre et la position des points au-dessus ou en dessous. Un point de plus ou de moins donne une lettre totalement différente - mieux vaut donc regarder attentivement dès le départ.",
+      "forms": "Les lettres arabes s'écrivent liées entre elles, comme une écriture cursive. Selon sa position dans le mot, la forme d'une lettre change : isolée (seule), initiale, médiane et finale - toujours lue et écrite de droite à gauche.",
+      "nonConnector": "Certaines lettres (par ex. ا د ذ ر ز و) ne se lient qu'à la lettre précédente, pas à la suivante. Après une telle lettre, la lettre suivante du mot recommence sous sa forme isolée ou initiale - on le repère à un petit espace dans le mot.",
+      "fatha": "La fatha (ـَ) est un petit trait oblique AU-DESSUS de la lettre et donne un son a bref, par ex. بَ = ba. C'est la voyelle la plus fréquente dans le Coran.",
+      "kasra": "La kasra (ـِ) est un petit trait oblique SOUS la lettre et donne un son i bref, par ex. بِ = bi.",
+      "damma": "La damma (ـُ) est un petit signe en forme de و AU-DESSUS de la lettre et donne un son u bref, par ex. بُ = bu.",
+      "tanwinFatha": "Le tanwin est une terminaison vocalique double qui indique que le mot est indéfini (comme « un/une » en français). Le double fatha (ـً) en fin de mot se prononce -an, par ex. كِتَابًا (kitāban) = « un livre ».",
+      "tanwinKasra": "Le double kasra (ـٍ) en fin de mot se prononce -in et marque aussi l'indéfini, par ex. خَيْرٍ (khayrin) = « d'un bien ».",
+      "tanwinDamma": "Le double damma (ـٌ) en fin de mot se prononce -un et marque l'indéfini, par ex. نُورٌ (nūrun) = « une lumière ».",
+      "sukun": "Le soukoun (petit cercle ـْ au-dessus de la lettre) signifie : pas de voyelle - la lettre se prononce sans voyelle et ferme la syllabe, par ex. قَدْ (qad).",
+      "shadda": "La shadda (petit signe en forme de w ـّ au-dessus de la lettre) double la lettre : elle se prononce avec insistance et un peu plus longuement, par ex. رَبَّ (rabba) et non raba.",
+      "maddAlif": "Un alif (ا) après une fatha allonge le son a à environ le double de sa durée : ā, par ex. قَالَ (qāla). Cet allongement fait partie intégrante de la récitation correcte (tajwīd).",
+      "maddWaw": "Un waw (و) après une damma allonge le son u à environ le double de sa durée : ū, par ex. نُور (nūr).",
+      "maddYa": "Un ya (ي) après une kasra allonge le son i à environ le double de sa durée : ī, par ex. دِين (dīn).",
+      "hamza": "La hamza (ء) est le coup de glotte - en français on l'entend un peu dans la pause de « le acte ». Elle peut être seule ou reposer sur une lettre support (alif, waw ou ya).",
+      "hamzaAlif": "Si la hamza est au-dessus de l'alif (أ), elle est suivie d'un son a ou u en début de mot. Si elle est sous l'alif (إ), elle est suivie d'un son i.",
+      "taMarbuta": "Le ta marbuta (ة) n'apparaît qu'en fin de mot, le plus souvent sur les noms féminins. En pause il se prononce -a ; enchaîné avec le mot suivant, il se prononce -at.",
+      "alifMaqsura": "L'alif maqsura (ى) ressemble à un ya sans points, mais se prononce comme un alif ordinaire, un ā long - à ne pas confondre avec le son du ya.",
+      "lamAlif": "Lam (ل) et alif (ا) fusionnent dans leur propre ligature لا (lā) - les deux lettres s'écrivent imbriquées, et cette combinaison est extrêmement fréquente (par ex. dans le mot « non/ne pas », lā).",
+      "sunLetters": "Il existe 14 lettres solaires : ت ث د ذ ر ز س ش ص ض ط ظ ل ن. Quand l'une d'elles suit l'article « al- », le L fusionne complètement avec elle et se double (shadda) - le L ne se prononce pas du tout. Exemple : al-shams devient ash-shams, al-nur devient an-nur.",
+      "moonLetters": "Les 14 lettres restantes sont les lettres lunaires : ء ب ج ح خ ع غ ف ق ك م ه و ي. Après elles, le L de l'article « al- » reste clairement audible, sans fusion. Exemples : al-qamar, al-kitab, al-bayt.",
+      "wordByWordRecap": "Lis maintenant le verset entier d'un seul tenant - tous les mots que tu viens d'apprendre séparément forment ensemble la phrase complète."
+    },
+    "quiz": {
+      "nameOfLetter": "Comment s'appelle cette lettre ?",
+      "glyphOfLetter": "Quel signe correspond à ce nom ?",
+      "formInitial": "À quoi ressemble cette lettre en début de mot ?",
+      "formMedial": "À quoi ressemble cette lettre au milieu d'un mot ?",
+      "formFinal": "À quoi ressemble cette lettre en fin de mot ?",
+      "readSyllable": "Comment lit-on ceci ?",
+      "readWord": "Comment lit-on ce mot ?",
+      "readAyah": "Comment lit-on ce verset ?",
+      "meaningOfWord": "Que signifie ce mot ?",
+      "soundOfLetter": "Quelle est cette lettre ? (écoute)"
+    },
+    "placementCta": "Test de niveau",
+    "placementCtaDesc": "Tu connais déjà les lettres ou plus ? Commence directement plus loin",
+    "practicePronunciation": "S’exercer à la prononciation",
+    "listening": "Écoute…",
+    "pronunciationGood": "Bien prononcé !",
+    "pronunciationRetry": "Réessayer",
+    "placementRepeatCta": "Test de connaissances",
+    "placementRepeatDesc": "Refais toutes les questions clés - ta progression est toujours conservée",
+    "easeVerse": {
+      "arabic": "وَلَقَدْ يَسَّرْنَا الْقُرْآنَ لِلذِّكْرِ فَهَلْ مِن مُّدَّكِرٍ",
+      "title": "Le Coran est facile à apprendre",
+      "translation": "Et Nous avons certainement facilité le Coran pour la mémorisation (c'est-à-dire pour l'apprendre et l'intérioriser). Y a-t-il quelqu'un pour réfléchir (c'est-à-dire qui fait l'effort) ?",
+      "reference": "Sourate Al-Qamar (54), verset 17 - répété aux versets 22, 32 et 40",
+      "explanation": "Ibn Kathir explique qu'Allah a facilité la lecture, la mémorisation et la compréhension du Coran pour quiconque s'y essaie sincèrement, quel que soit son âge ou sa langue. Il suffit du premier pas et d'un peu d'effort."
+    },
+    "nextLesson": "Leçon suivante",
+    "podcastIntro": "Podcast pour cette phase",
+    "podcastOptional": "Facultatif — écoute d’abord ou commence tout de suite",
+    "videoIntro": "Vidéo pour cette phase",
+    "videoOptional": "Facultatif – à regarder ou commencer directement",
+    "tableView": "Voir le tableau",
+    "tableViewDesc": "Tableau de grammaire à consulter"
+  },
+  "practice": {
+    "title": "Entraînement et Quiz",
+    "subtitle": "Choisis ce que tu veux pratiquer - de façon ludique, avec record et série",
+    "streakDays": "jours d’affilée",
+    "streakJokerUsed": "joker utilisé",
+    "playAgain": "Rejouer",
+    "backToHub": "Retour à l'aperçu",
+    "bestStreak": "Meilleure série",
+    "quiz": {
+      "connectsLeft": "Cette lettre se lie-t-elle vers la gauche (à la lettre suivante) ?",
+      "whichNonConnector": "Quelle lettre ne se lie PAS vers la gauche ?",
+      "isSunLetter": "Est-ce une lettre solaire ?"
+    },
+    "modes": {
+      "letters": {
+        "title": "Quiz des lettres",
+        "desc": "Noms et formes des 28 lettres"
+      },
+      "forms": {
+        "title": "Quiz des formes",
+        "desc": "Reconnaître les formes initiale, médiane et finale"
+      },
+      "connections": {
+        "title": "Quiz des liaisons",
+        "desc": "Quelles lettres se lient ?"
+      },
+      "harakat": {
+        "title": "Quiz des harakat",
+        "desc": "Lire des syllabes avec fatha, kasra et damma"
+      },
+      "words": {
+        "title": "Quiz des mots",
+        "desc": "Lire de vrais mots du cours"
+      },
+      "rules": {
+        "title": "Quiz des règles",
+        "desc": "Lettres solaires/lunaires et voyelles longues"
+      },
+      "knowledge": {
+        "title": "Culture islamique",
+        "desc": "Piliers, prières, fêtes et plus"
+      },
+      "quran": {
+        "title": "Quiz du Coran",
+        "desc": "Sourates, versets et faits sur le Coran"
+      },
+      "mix": {
+        "title": "Mixte",
+        "desc": "Questions aléatoires de tous les domaines"
+      },
+      "seerah": {
+        "title": "Quiz Sira",
+        "desc": "Vie et biographie du Prophète Muhammad ﷺ"
+      },
+      "sahaba": {
+        "title": "Quiz des Compagnons",
+        "desc": "Sahaba, épouses du Prophète ﷺ et les quatre grands imams"
+      },
+      "akhlaq": {
+        "title": "Quiz Akhlaq",
+        "desc": "Sidq, hilm, sabr, ikhlas, tawadu', amanah, rahma, haya et adl - traits de caractère du Coran et de la Sunna"
+      },
+      "nikah": {
+        "title": "Quiz Mariage et Famille",
+        "desc": "But du mariage, droits, le contrat de mariage, le talaq et l'éducation des enfants"
+      },
+      "dialects": {
+        "title": "Quiz des Dialectes",
+        "desc": "Phrases du quotidien en maghrébin, levantin, du Golfe et égyptien"
+      }
+    },
+    "puzzle": {
+      "title": "Puzzle de phrases",
+      "desc": "Ordonne les mots",
+      "hint": "Mets les mots dans le bon ordre",
+      "empty": "Touche les mots ci-dessous",
+      "next": "Suivant"
+    },
+    "matchingGame": {
+      "title": "Trouver les paires",
+      "desc": "Mot et translittération",
+      "hint": "Associe chaque mot à sa translittération",
+      "points": "points"
+    },
+    "listen": {
+      "title": "Écoute et choisis",
+      "desc": "Choisis le mot que tu entends",
+      "hint": "Écoute et écris la translittération",
+      "play": "Écouter",
+      "placeholder": "Écris la translittération …",
+      "check": "Vérifier",
+      "unavailableReading": "Cet exercice nécessite du son et reste masqué tant que le type d'exercice est réglé sur lecture."
+    },
+    "mistakes": {
+      "title": "Mes erreurs",
+      "desc": "Revois tes fautes",
+      "empty": "Aucune erreur en attente - bravo !",
+      "clearedHint": "Les questions réussies ont été retirées de la liste."
+    },
+    "intro": {
+      "gotIt": "Compris, c'est parti !",
+      "whatLabel": "Ce que tu vas faire",
+      "whyLabel": "Pourquoi ça aide",
+      "reopenA11y": "Réafficher l'explication",
+      "quizMode": {
+        "title": "Quiz",
+        "what": "Tu vois une question avec 3-4 réponses et tu touches la bonne. Une mauvaise réponse atterrit automatiquement dans tes erreurs.",
+        "why": "Se rappeler activement une réponse s'ancre bien mieux que la simple lecture - tu vois tout de suite ce que tu maîtrises et ce qu'il reste à travailler."
+      },
+      "puzzle": {
+        "title": "Puzzle de phrases",
+        "what": "Une phrase arabe est mélangée en mots séparés. Touche les mots dans l'ordre jusqu'à reconstituer la phrase correctement.",
+        "why": "L'ordre des mots en arabe suit souvent des règles différentes du français. Le reconstruire toi-même ancre bien mieux la grammaire que la simple lecture."
+      },
+      "matching": {
+        "title": "Trouve les paires",
+        "what": "Des mots arabes à gauche, leur translittération à droite - dans un ordre aléatoire des deux côtés. Touche d'abord un mot à gauche, puis sa translittération correspondante à droite.",
+        "why": "Cet appariement conscient t'entraîne à relier directement l'écriture arabe à son son - une compétence clé pour lire couramment sans passer par la translittération."
+      },
+      "listen": {
+        "title": "Écoute et choisis",
+        "what": "Tu écoutes un mot ou une syllabe arabe et tu choisis le bon mot parmi 3-4 options en arabe.",
+        "why": "L'arabe a des sons qui n'existent pas en français. Seuls l'écoute et la reproduction entraînent ton oreille à ces différences - la lecture seule n'y suffit pas."
+      },
+      "duel": {
+        "title": "Duel de quiz",
+        "what": "Vous vous affrontez sur les mêmes questions : soit à tour de rôle sur un même appareil, soit chacun à son rythme - tu joues ton tour, envoies le code à un ami, il l'importe et tente de battre ton score.",
+        "why": "La compétition motive à réviser ce que tu es censé déjà savoir - et le mode par code fonctionne même si vous n'avez pas de temps en commun."
+      },
+      "mistakes": {
+        "title": "Mes erreurs",
+        "what": "Chaque question à laquelle tu as mal répondu dans un quiz réapparaît automatiquement ici. Réponds-y correctement et elle disparaît de la liste.",
+        "why": "Les connaissances s'ancrent mieux en répétant précisément les lacunes pas encore comblées - plutôt qu'en révisant tout au hasard."
+      },
+      "placement": {
+        "title": "Test de niveau",
+        "what": "Tu réponds à de courts blocs de questions pour des étapes consécutives du cours. Réussis un bloc et ça passe automatiquement au suivant - le test s'arrête au premier bloc raté.",
+        "why": "Tu trouves ainsi ton vrai niveau en quelques minutes, au lieu de perdre du temps à la leçon 1 sur des choses déjà connues."
+      },
+      "write": {
+        "title": "S'exercer à écrire",
+        "what": "Dessine du doigt la lettre affichée de mémoire - le modèle reste caché. Ce n'est qu'en touchant « Comparer » que la vraie forme se superpose, semi-transparente, à ton dessin.",
+        "why": "Calquer un modèle visible s'ancre à peine, car ton cerveau n'a rien à se rappeler. Seul le rappel de mémoire - suivi d'une comparaison honnête - fait vraiment retenir la forme de la lettre."
+      }
+    },
+    "correctAnswerLabel": "Bonne réponse",
+    "wrongListTitle": "Mal répondues"
+  },
+  "hifz": {
+    "title": "Récitation",
+    "recognitionNoteCta": "Quelle est la fiabilité de cette reconnaissance ?",
+    "recognitionDisclaimer": "Cette reconnaissance utilise un petit modèle vocal qui fonctionne sur votre appareil. Il fait des erreurs et ne peut pas remplacer un vrai professeur. Pour un retour sérieux et précis sur la récitation, nous recommandons l'application Tarteel, qui utilise un système basé sur serveur et fonctionne nettement mieux.",
+    "subtitle": "Verset par verset : écoute, masque, récite, valide",
+    "searchNoResults": "Aucune sourate trouvée pour « {query} ».",
+    "memorized": "mémorisés",
+    "tapToReveal": "Touche pour révéler",
+    "listen": "Écouter",
+    "reveal": "Révéler",
+    "hide": "Masquer",
+    "micCheck": "Réciter",
+    "autoMarked": "Marqué automatiquement comme mémorisé",
+    "reciteFromReaderHint": "Appuie sur « Réciter » pour vérifier ta récitation de ce verset.",
+    "listening": "J'écoute…",
+    "micError": "Reconnaissance vocale indisponible ou annulée.",
+    "stillLearning": "Encore en cours",
+    "gotIt": "Je la connais",
+    "grade": {
+      "excellent": "Excellent !",
+      "good": "Bien - presque parfait",
+      "retry": "À retravailler"
+    },
+    "micMissedHint": "Les mots surlignés n'ont pas été reconnus - prononce-les très distinctement au prochain essai.",
+    "micNote": "La vérification compare les mots. Elle ne peut pas juger les détails fins du tajwid (longueur du madd, ghunna) - pour cela, il faut un professeur.",
+    "modeFast": "Rapide (navigateur)",
+    "modePrecise": "Précis (modèle sur l'appareil)",
+    "stopRecording": "Arrêter et évaluer",
+    "transcribing": "Évaluation …",
+    "modelDownload": "Téléchargement unique du modèle : {p} %",
+    "letterTips": {
+      "qaf": "ق vient du fond, à la luette - plus sombre que ك",
+      "kaf": "ك vient plus en avant, du dos de la langue - plus clair que ق",
+      "hha": "ح est un souffle comprimé du milieu de la gorge, sans friction",
+      "kha": "خ frotte au fond du palais - comme le ch allemand de 'Bach'",
+      "ha": "ه est un h léger comme dans 'house'",
+      "ain": "ع est un son guttural comprimé - la gorge se resserre nettement",
+      "hamza": "ء est un bref coup de glotte",
+      "dhal": "ذ est un th doux (langue aux dents) comme dans l'anglais 'this'",
+      "zay": "ز est un s sonore comme dans 'rose'",
+      "zza": "ظ est la contrepartie emphatique de ذ - langue aux dents, bouche pleine",
+      "sin": "س est un s clair et aigu",
+      "sad": "ص est le s sombre et emphatique - le fond de la bouche se remplit",
+      "ta": "ت est un t léger aux dents supérieures",
+      "tta": "ط est le t sombre et emphatique",
+      "dal": "د est un d léger aux dents supérieures",
+      "dad": "ض vient du côté de la langue aux molaires - sombre et plein",
+      "ghain": "غ est comme le r français, du palais"
+    },
+    "nearLabel": "ressemblait à",
+    "expectedLabel": "Attendu",
+    "recognizedLabel": "Reconnu",
+    "closestGuessLabel": "Estimation la plus proche (incertain)",
+    "notRecognizedLabel": "Non reconnu dans votre enregistrement",
+    "youSaid": "Vous avez dit : « {transcript} »",
+    "tapWordHint": "Appuyez sur un mot surligné pour voir ce qui a été reconnu",
+    "gapTestCta": "Mode entraînement (sans son)",
+    "gapTest": {
+      "title": "Test de récitation",
+      "noKnownVerses": "Aucun verset encore marqué « Je le sais » - apprends d'abord quelques versets, tu pourras ensuite les réviser ici sans son.",
+      "backCta": "Retour à la sourate",
+      "progressLabel": "Verset {current} sur {total}",
+      "tapGapHint": "Touche un blanc pour révéler le mot",
+      "revealWordA11y": "Révéler le mot",
+      "correctBtn": "Bien retenu",
+      "retryBtn": "À revoir",
+      "summaryTitle": "Session terminée",
+      "summaryResult": "{correct} sur {total} bien retenus",
+      "restartCta": "Recommencer",
+      "doneCta": "Terminé"
+    },
+    "modelNeededHint": "Télécharge d’abord le modèle vocal. Le téléchargement continue en arrière-plan — tu peux quitter cet écran.",
+    "surahRecite": {
+      "cta": "Réciter toute la sourate",
+      "intro": "Démarre et récite toute la sourate d’affilée — les versets se révèlent à mesure qu’ils sont reconnus.",
+      "start": "Démarrer la récitation",
+      "stop": "Arrêter",
+      "finalizing": "Évaluation de la récitation complète…",
+      "doneAll": "Sourate entière reconnue — bravo !",
+      "doneSome": "{n} mots sur {total} reconnus."
+    },
+    "speechError": {
+      "heading": "Échec de la vérification de la récitation",
+      "showDetails": "Afficher les détails techniques",
+      "hideDetails": "Masquer les détails",
+      "model": "Modèle",
+      "permission": "Micro",
+      "yes": "oui",
+      "no": "non",
+      "unknown": "inconnu",
+      "code": "Code",
+      "unavailableMsg": "La reconnaissance sur l'appareil n'est pas disponible sur cet appareil/cette version.",
+      "permissionMsg": "L'accès au micro est manquant. Autorisez l'application à utiliser le micro dans les réglages système, puis réessayez.",
+      "audioInitMsg": "Le micro n'a pas pu démarrer. Fermez les autres applications qui l'utilisent et réessayez.",
+      "modelDownloadMsg": "Le téléchargement du modèle vocal est incomplet. Vérifiez votre connexion et téléchargez-le à nouveau.",
+      "modelInitMsg": "Le modèle vocal n'a pas pu être chargé. Il a été réinitialisé — téléchargez-le à nouveau.",
+      "transcribeMsg": "L'analyse de l'enregistrement a échoué. Veuillez réessayer.",
+      "noSpeechMsg": "Aucune parole détectée. Récitez un peu plus fort et plus près du micro.",
+      "unknownMsg": "Une erreur inattendue s'est produite. Ouvrez les détails et communiquez le message."
+    }
+  },
+  "tasbih": {
+    "title": "Tasbih",
+    "today": "Total du jour",
+    "tapHint": "Touche le cercle pour compter",
+    "addCustom": "Dhikr personnalisé",
+    "customTextPlaceholder": "Texte du dhikr",
+    "customTargetPlaceholder": "Objectif (nombre)",
+    "deleteCustom": "Supprimer le dhikr personnalisé",
+    "dailyGoal": "Objectif quotidien",
+    "customGoal": "Objectif personnalisé",
+    "customGoalPlaceholder": "Objectif (nombre)",
+    "history": "Historique (7 jours)",
+    "afterSalahCta": "Dhikr après la prière (33/33/34)"
+  },
+  "guides": {
+    "title": "Prière et pratique",
+    "subtitle": "Étape par étape : woudou, ghousl, prière, rakat, witr et plus",
+    "steps": "étapes"
+  },
+  "phrases": {
+    "title": "Formules et sermon du vendredi",
+    "subtitle": "Ce qui est dit, ce que cela signifie et ce que l’on répond",
+    "reply": "Réponse",
+    "tapToHear": "Appuyez pour écouter"
+  },
+  "wisdom": {
+    "title": "Sagesses",
+    "today": "Sagesse du jour",
+    "share": "Partager",
+    "shareImage": "Partager en image"
+  },
+  "settings": {
+    "groups": {
+      "prayer": "Prière et calcul",
+      "notifications": "Notifications",
+      "reminders": "Rappels",
+      "quran": "Coran et récitation",
+      "language": "Langue et affichage",
+      "learning": "Apprentissage et exercices",
+      "data": "Stockage et données",
+      "about": "À propos et mentions légales"
+    },
+    "moreReminders": {
+      "title": "Autres rappels"
+    },
+    "location": "Position",
+    "current": "Actuelle",
+    "search": "Rechercher dans les réglages",
+    "searchNoResults": "Aucun réglage trouvé",
+    "useMyLocation": "Utiliser ma position actuelle",
+    "locating": "Localisation…",
+    "searchCity": "Rechercher une ville…",
+    "cityInvalid": "Ce résultat n’a pas de coordonnées exploitables. Choisis-en un autre.",
+    "savedLocations": {
+      "title": "Lieux enregistrés",
+      "namePlaceholder": "Nom (p. ex. Maison, Travail)…",
+      "saveCurrent": "Enregistrer le lieu actuel",
+      "delete": "Supprimer le lieu enregistré"
+    },
+    "method": "Méthode de calcul",
+    "asrSchool": "École pour l'Asr",
+    "language": "Langue",
+    "hadithLanguage": "Langue des hadiths",
+    "timeFormat": "Format de l'heure",
+    "format24": "24 heures (14:30)",
+    "format12": "12 heures (2:30 PM)",
+    "fontSize": "Taille du texte du Coran",
+    "fontSmall": "Petit",
+    "fontMedium": "Moyen",
+    "fontLarge": "Grand",
+    "fontXLarge": "Très grand",
+    "quranFont": {
+      "title": "Police du Coran",
+      "preview": "Aperçu",
+      "hint": {
+        "kfgqpc": "Caractère uthmani officiel du Complexe du Roi Fahd (édition de Médine)",
+        "amiriQuran": "Comme Amiri, avec plus de place pour les signes coraniques superposés",
+        "amiri": "Naskh classique dans le style des anciennes éditions imprimées",
+        "scheherazade": "Voyelles très nettes, convient aussi au style indo-pakistanais",
+        "lateef": "Trait fin, proche des impressions d’Asie du Sud",
+        "harmattan": "Écriture ouest-africaine, telle qu’imprimée dans la région",
+        "noto": "Moderne et net, facile à lire sur petits écrans",
+        "notoSans": "Sans empattement, contraste maximal — pour basse vision"
+      }
+    },
+    "quranSukun": {
+      "title": "Signe du soukoun",
+      "madina": "Impression de Médine (crochet)",
+      "kreis": "Cercle",
+      "hint": "Ne concerne que « KFGQPC HAFS Uthmanic ». Le mushaf de Médine imprime le soukoun sous forme de petit crochet ; le cercle y désigne une lettre écrite mais non prononcée. Avec « Cercle », les deux se ressemblent."
+    },
+    "appearance": "Apparence",
+    "themeAuto": "Automatique (réglage système)",
+    "themeLight": "Clair",
+    "themeDark": "Sombre",
+    "notifications": "Notifications de prière",
+    "resetDefaults": "Rétablir les valeurs par défaut",
+    "asrEarlier": "Tôt (Shafi/Maliki/Hanbali - standard)",
+    "asrLater": "Tard (Hanafi)",
+    "iqama": {
+      "title": "Heure de l'Iqama",
+      "enable": "Afficher l'heure de l'Iqama",
+      "enableHint": "Affiche à côté de l'heure de l'Adhan l'heure calculée de la prière en congrégation (Iqama).",
+      "offsetHint": "Délai après l'appel à l'Adhan, en minutes - réglable par prière.",
+      "minutesShort": "min"
+    },
+    "highLatitude": {
+      "title": "Règle des hautes latitudes",
+      "hint": "Au nord d'environ 48° de latitude, en été le soleil ne descend plus assez bas pour atteindre les angles du Fajr et de l'Isha. Cette règle définit comment ces deux heures sont alors déduites de la durée de la nuit. Selon la règle, le Fajr et l'Isha peuvent différer jusqu'à une heure, et il n'existe pas de solution reconnue par tous. Si vous souhaitez suivre votre mosquée, choisissez la règle qui correspond à ses horaires.",
+      "auto": "Automatique (recommandé)",
+      "autoDesc": "S'adapte à votre latitude : basé sur l'angle à partir d'environ 48°, milieu de la nuit plus près de l'équateur.",
+      "middleOfNight": "Milieu de la nuit",
+      "middleOfNightDesc": "Règle fixe : Fajr plus tôt, Isha plus tard.",
+      "seventhOfNight": "Un septième de la nuit",
+      "seventhOfNightDesc": "Règle fixe : Fajr plus tard, Isha plus tôt.",
+      "twilightAngle": "Basé sur l'angle",
+      "twilightAngleDesc": "Règle fixe : celle qu'utilisent la plupart des applications."
+    },
+    "timeAdjust": {
+      "title": "Correction en minutes",
+      "hint": "Décale chaque heure de prière jusqu'à 60 minutes afin que les horaires correspondent à votre mosquée. S'applique à l'affichage, aux notifications, aux widgets et à l'export vers le calendrier.",
+      "sunrise": "Lever du soleil",
+      "reset": "Réinitialiser toutes les corrections",
+      "minutesShort": "min"
+    },
+    "pace": {
+      "title": "Temps quotidien",
+      "min10": "10 min/jour · 1 leçon, révision courte",
+      "min20": "20 min/jour · 2 leçons (recommandé)",
+      "min45": "45 min/jour · 5 leçons",
+      "min90": "1,5 h/jour · 10 leçons",
+      "min240": "4 h/jour · rythme maximal (25 leçons)",
+      "freeUnlock": "Débloquer toutes les leçons",
+      "freeUnlockHint": "Apprendre sans ordre - pour avancés"
+    },
+    "display": {
+      "title": "AFFICHAGE",
+      "transliteration": "Afficher la translittération",
+      "transliterationHint": "Afficher ou masquer la translittération latine pour les mots et le vocabulaire",
+      "isolatedLetters": "Afficher la forme de lettre isolée",
+      "isolatedLettersHint": "Afficher aussi les mots en lettres séparées et non reliées - pour mémoriser"
+    },
+    "reviewReminder": {
+      "title": "Rappel de révision",
+      "enable": "Rappel quotidien",
+      "hint": "Rappel local à l'heure choisie quand des révisions sont dues (application uniquement, pas le web)",
+      "hour9": "Matin · 9 h",
+      "hour14": "Midi · 14 h",
+      "hour18": "Soir · 18 h",
+      "hour21": "Fin de soirée · 21 h"
+    },
+    "verseOfDay": {
+      "title": "Verset/Hadith du jour",
+      "enable": "Rappel quotidien",
+      "hint": "Un verset ou hadith connu à l'heure choisie, renouvelé chaque jour (application uniquement, pas le web)"
+    },
+    "jumuah": {
+      "title": "Rappel du Joumou'ah",
+      "enable": "Rappel du vendredi",
+      "hint": "Rappel avant la prière du vendredi avec une note sur la sourate Al-Kahf (application uniquement, pas le web)"
+    },
+    "sunnah": {
+      "title": "Prières sunna",
+      "duha": "Prière Duha",
+      "duhaHint": "Rappel le matin, peu après le lever du soleil",
+      "tahajjud": "Tahajjud",
+      "tahajjudHint": "Rappel tard dans la nuit, avant le Fajr",
+      "witr": "Prière Witr",
+      "witrHint": "Rappel après l'Isha, avant de dormir"
+    },
+    "preAdhan": {
+      "title": "Rappel avant l'appel à la prière",
+      "enable": "Rappel supplémentaire avant l'heure de prière",
+      "hint": "Rappel X minutes avant chaque prière activée, par ex. pour les ablutions ou le trajet vers la mosquée",
+      "minutes": "{n} min. avant"
+    },
+    "weeklySummary": {
+      "title": "Résumé de la semaine",
+      "enable": "Rappel hebdomadaire",
+      "hint": "Un court bilan de tes leçons et prières, chaque dimanche soir à 20h (app uniquement, pas le web)"
+    },
+    "notificationsOverview": {
+      "navLabel": "Notifications",
+      "navHint": "Gérer tous les rappels au même endroit",
+      "title": "Notifications",
+      "subtitle": "Vue d'ensemble de tous les rappels de l'app - les changements s'appliquent immédiatement au rappel concerné.",
+      "blocked": "Les notifications de Salati sont désactivées dans les réglages système. Les rappels ne peuvent pas arriver tant que vous ne les autorisez pas.",
+      "groupPrayerTimes": "Horaires de prière",
+      "groupQuran": "Coran et connaissances",
+      "groupOther": "Autres",
+      "prayerHint": "Rappel à l'heure de la prière",
+      "journeyTitle": "Rappel du parcours de versets",
+      "journeyHint": "S'active automatiquement pendant qu'un parcours de versets est en cours - pas besoin d'interrupteur séparé",
+      "zakatManageLink": "Gérer l'échéance de la zakat"
+    },
+    "dashboard": {
+      "navLabel": "Tableau de bord",
+      "navHint": "Ajuste l'ordre et la visibilité des cartes de l'accueil"
+    },
+    "widgets": {
+      "title": "Widgets d'écran d'accueil",
+      "hint": "Fais un appui long sur l'écran d'accueil et ajoute Salati : horaires de prière, dua du jour et série sont chacun disponibles en thème sombre et clair.",
+      "perWidgetHint": "Astuce : appuyez longuement sur un widget placé, puis touchez Configurer pour définir la couleur et le contenu de ce widget individuellement."
+    },
+    "support": {
+      "title": "Support",
+      "copyReport": "Copier le rapport d'erreurs",
+      "copyReportHint": "Copie les dernières erreurs enregistrées en texte - reste sur l'appareil, rien n'est envoyé automatiquement",
+      "copied": "Copié",
+      "replayOnboarding": "Revoir l’introduction"
+    },
+    "backup": {
+      "title": "Sauvegarder la progression",
+      "hint": "Pas de compte, pas de cloud - votre progression reste locale sur cet appareil. Exportez-la en fichier pour la restaurer lors d'un changement d'appareil ou d'application.",
+      "exportButton": "Exporter la progression",
+      "exportError": "Échec de l'exportation. Veuillez réessayer.",
+      "importButton": "Importer la progression",
+      "importConfirmTitle": "Importer la progression ?",
+      "importConfirmBody": "Cela remplacera votre progression de leçons actuelle, votre progression de hifz et vos favoris sur cet appareil. Cette action est irréversible.",
+      "importConfirmAction": "Remplacer",
+      "importSuccess": "Progression importée.",
+      "importInvalidFile": "Ce fichier n'est pas une sauvegarde de progression Salati valide.",
+      "importUnsupportedVersion": "Cette sauvegarde a été créée avec une version plus récente de l'application et ne peut pas être importée ici.",
+      "importError": "Échec de l'importation. Veuillez vérifier le fichier.",
+      "downloadedRecitersNote": "Récitateurs précédemment téléchargés : {list} - retéléchargez-les si besoin.",
+      "goToDownloads": "Aller aux téléchargements de récitateurs"
+    },
+    "legal": "Mentions légales",
+    "legalFeedback": "Donner un avis / signaler un bug",
+    "legalFeedbackSubject": "Salati Feedback",
+    "legalVersion": "Version de l'app",
+    "updates": {
+      "check": "Rechercher des mises à jour",
+      "checking": "Vérification …",
+      "upToDate": "À jour",
+      "ready": "Mise à jour prête",
+      "restart": "Redémarrer maintenant",
+      "failed": "Pas de connexion"
+    },
+    "exercise": {
+      "title": "Type d'exercice préféré",
+      "mixed": "Mixte (recommandé)",
+      "audio": "Plus d'exercices d'écoute",
+      "reading": "Plus d'exercices de lecture",
+      "speech": "Exercices de prononciation (micro)",
+      "speechHint": "Désactive si tu ne peux pas parler à voix haute - les exercices continuent sans micro.",
+      "mixedDesc": "Tous les types d'exercices à parts égales.",
+      "audioDesc": "Accent sur l'écoute et la reconnaissance.",
+      "readingDesc": "Accent sur la lecture de l'écriture arabe."
+    },
+    "notifPrefs": {
+      "sound": "Son",
+      "soundHint": "Jouer une sonnerie avec la notification",
+      "vibrate": "Vibration",
+      "vibrateHint": "Vibrer à la réception",
+      "headsUp": "Afficher au-dessus des autres apps",
+      "headsUpHint": "La bannière s’affiche immédiatement (Android)",
+      "ongoingCountdown": "Toujours afficher la prochaine prière",
+      "ongoingCountdownHint": "Notification non-effaçable avec l'heure de la prochaine prière (Android)",
+      "liveActivity": "Live Activity sur l'écran verrouillé",
+      "liveActivityHint": "Affiche la prochaine prière sur l'écran verrouillé et la Dynamic Island (iOS)"
+    },
+    "adhkar": {
+      "title": "Rappels d’adhkar",
+      "morning": "Adhkar du matin",
+      "morningHint": "Rappel quotidien des invocations du matin",
+      "evening": "Adhkar du soir",
+      "eveningHint": "Rappel quotidien des invocations du soir"
+    },
+    "offlinePack": {
+      "title": "Hors ligne",
+      "download": "Pack hors ligne complet",
+      "hint": "Télécharge les 114 sourates (texte + traduction) pour un usage hors ligne",
+      "done": "Toutes les sourates disponibles hors ligne"
+    },
+    "reciterAudioPack": {
+      "title": "Audio du récitateur",
+      "hint": "Télécharge la récitation complète de {reciter} — pratique pour le mode avion ou une mauvaise réception.",
+      "download": "Télécharger le récitateur complet",
+      "resume": "Reprendre le récitateur ({n}/114 déjà téléchargées)",
+      "done": "Récitateur complet disponible hors ligne",
+      "progress": "{n} / {total} sourates",
+      "startAction": "Télécharger",
+      "partialTitle": "Téléchargement partiel",
+      "partialBody": "{n} sourates n'ont pas pu être téléchargées (ex. erreurs réseau). Relance simplement pour récupérer le reste.",
+      "chooseReciter": "Choisir le récitateur à télécharger",
+      "downloadedTitle": "Récitateurs téléchargés",
+      "noDownloads": "Aucun pack de récitateur téléchargé pour l'instant.",
+      "packStatus": "{n}/114 sourates",
+      "packComplete": "Complet",
+      "deleteAction": "Supprimer",
+      "deleteConfirmTitle": "Supprimer le pack du récitateur ?",
+      "deleteConfirmBody": "Toutes les sourates téléchargées de {reciter} seront supprimées de cet appareil.",
+      "confirmTitle": "Télécharger le récitateur complet ?",
+      "confirmBody": "Les 114 sourates seront téléchargées sur cet appareil. Cela prend un moment et nécessite plusieurs centaines de mégaoctets — de préférence en Wi-Fi."
+    },
+    "storage": {
+      "title": "Gérer le stockage",
+      "openHint": "Audio des récitateurs, modèles IA et cache en un coup d'œil",
+      "subtitle": "Aperçu de l'espace de stockage utilisé par Salati sur cet appareil.",
+      "total": "Total utilisé",
+      "loading": "Calcul en cours…",
+      "unsupported": "La gestion du stockage n'est pas disponible sur cette plateforme.",
+      "reciterAudio": {
+        "title": "Audio des récitateurs",
+        "empty": "Aucun téléchargement de récitateur pour l'instant."
+      },
+      "kiModel": {
+        "title": "Modèle IA de Salati",
+        "notDownloaded": "Non téléchargé"
+      },
+      "whisperModel": {
+        "title": "Reconnaissance vocale (mode précision Hifz)",
+        "notDownloaded": "Non téléchargé",
+        "delete": "Supprimer le modèle",
+        "deleteConfirm": "Vraiment supprimer le modèle ? Le téléchargement ({size}) devra être relancé lors de la prochaine vérification de précision.",
+        "download": "Télécharger"
+      },
+      "cache": {
+        "title": "Cache",
+        "hint": "Textes/traductions mis en cache pour une utilisation hors ligne, ainsi que des fichiers temporaires restants.",
+        "clear": "Vider le cache",
+        "clearConfirmTitle": "Vider le cache ?",
+        "clearConfirmBody": "Les sourates/traductions mises en cache seront supprimées et rechargées si nécessaire. Les téléchargements audio des récitateurs et des modèles IA ne sont PAS concernés.",
+        "clearAction": "Vider"
+      },
+      "offlineQuran": {
+        "title": "Coran hors ligne (texte + traduction)",
+        "hint": "Texte et traduction des sourates téléchargées pour une utilisation hors ligne. Supprimés lorsque vous videz le cache.",
+        "empty": "Aucune sourate téléchargée hors ligne pour l'instant.",
+        "surahs": "{n} sur 114 sourates"
+      },
+      "podcast": {
+        "title": "Téléchargements du podcast",
+        "empty": "Aucun épisode téléchargé",
+        "deleteAll": "Tout supprimer",
+        "deleteAllConfirmTitle": "Supprimer tous les téléchargements ?",
+        "deleteAllConfirmBody": "Tous les épisodes téléchargés seront supprimés de votre appareil."
+      },
+      "video": {
+        "title": "Téléchargements vidéo",
+        "empty": "Aucune vidéo téléchargée",
+        "deleteAll": "Tout supprimer",
+        "deleteAllConfirmTitle": "Supprimer tous les téléchargements ?",
+        "deleteAllConfirmBody": "Toutes les vidéos téléchargées seront supprimées de votre appareil."
+      }
+    },
+    "appIcon": {
+      "title": "Icône et nom de l'app",
+      "hint": "Choisis une icône alternative pour l'écran d'accueil (Android uniquement).",
+      "iosHint": "Le choix d'icône et de nom n'est pas disponible sur iOS dans cette version — le nom de l'app ne peut pas être changé au moment de l'exécution sur iOS (restriction Apple).",
+      "variantDefault": "Salati (par défaut)",
+      "variantEmerald": "Salati (émeraude)",
+      "variantSalatibox": "Salatibox"
+    },
+    "lateNotif": {
+      "title": "Notification en retard ?",
+      "hint": "Android retarde les alarmes de plusieurs minutes pour économiser la batterie. Deux réglages corrigent cela :",
+      "exactAlarm": "1. Autoriser alarmes et rappels (choisir Salati)",
+      "battery": "2. Désactiver l'optimisation de batterie pour Salati",
+      "notGranted": "Actuellement non autorisé — active-le ci-dessous, sinon les rappels pourraient arriver en retard.",
+      "batteryPromptTitle": "Désactiver l'optimisation de la batterie ?",
+      "batteryPromptBody": "Pour que les rappels des heures de prière arrivent à temps, Salati doit être exclue de l'optimisation de la batterie de votre appareil.",
+      "batteryPromptLater": "Plus tard",
+      "batteryPromptOpen": "Ouvrir les réglages"
+    },
+    "azan": {
+      "title": "Adhan",
+      "hint": "Cet appel est diffusé sur l'écran des heures de prière. Appuie sur l'icône de lecture pour l'écouter.",
+      "systemDefault": "Tonalité par défaut (sans Adhan complet)",
+      "option": "Adhan {n}",
+      "preview": "Écouter",
+      "standardShort": "Par défaut",
+      "credit": "Enregistrements: Adhan 1 – Adam-synagda (CC0 1.0) · Adhan 2 – Andrewler (CC BY-SA 4.0) · Adhan 3 – Islamic Center Malmö (CC BY 3.0), Wikimedia Commons.",
+      "fajrNote": "L'Adhan 3 contient la phrase du Fajr « La prière vaut mieux que le sommeil » et est présélectionné ici.",
+      "iosLimit": "La notification diffuse un court extrait (Apple autorise 30 secondes au maximum). L'appel complet est ensuite joué dans l'app.",
+      "notification": "Adhan comme son de notification",
+      "notificationHint": "À l'heure de la prière, l'Adhan choisi retentit à la place du bref son système.",
+      "perPrayerHint": "Réglable séparément pour chaque prière. « Par défaut » signifie un bref son système au lieu de l'Adhan."
+    },
+    "travel": {
+      "title": "Mode voyage",
+      "enable": "Rappel du Qasr en voyage",
+      "enableHint": "Affiche un rappel sur le Qasr et le Jam' lorsque tu es à plus de 85 km de ton lieu de résidence.",
+      "setHome": "Définir la position actuelle comme domicile",
+      "home": "Domicile : {location}"
+    },
+    "udhiyah": {
+      "title": "Rappel Udhiyah",
+      "enable": "Rappeler avant l'Aïd al-Adha",
+      "hint": "Rappel unique quelques jours avant l'Aïd al-Adha pour organiser ton sacrifice (udhiyah/qurbani) (app uniquement, pas le web)"
+    },
+    "recitationModel": {
+      "title": "Modèle de récitation",
+      "base": "Standard – tout téléphone",
+      "turbo": "Rapide et précis – téléphone puissant",
+      "hint": "Un modèle plus grand reconnaît plus précisément mais nécessite plus de stockage/RAM. Le modèle choisi se télécharge lors de votre prochaine récitation (Wi-Fi recommandé)."
+    },
+    "ramadan": {
+      "title": "Ramadan",
+      "hint": "Rappels pour le jeûne. Ils n'apparaissent que pendant le Ramadan.",
+      "suhoor": "Réveil du suhour",
+      "suhoorHint": "Te réveille avant le début du jeûne pour que tu puisses encore manger et boire.",
+      "lead": "{n} min avant",
+      "leadHint": "Combien de temps avant la prière du Fajr le réveil sonne.",
+      "iftar": "Rappel de l'iftar",
+      "iftarHint": "Te prévient {n} minutes avant le coucher du soleil pour préparer la rupture du jeûne."
+    },
+    "methodHint": "Formule pour le Fajr et l'Isha ; en cas de doute, celle de ton pays.",
+    "asrEarlierDesc": "L'Asr commence dès que l'ombre est aussi longue que l'objet lui-même.",
+    "asrLaterDesc": "L'Asr ne commence qu'au double de l'ombre, soit environ une heure plus tard.",
+    "methodPickerHint": "Chaque méthode est la décision d’une autorité ou d’une fédération — celle-là même qui sert aux mosquées du pays à imprimer leurs calendriers.",
+    "methodForCountry": "Usuelle en {country}",
+    "methodCountryHint": "En {country}, la plupart des communautés suivent {method}. Ton réglage s’en écarte — ce qui est très bien si c’est voulu.",
+    "methodCountryApply": "Passer à {method}",
+    "methodParamsFooter": "Angles de cette méthode : {params}",
+    "prayerHelpFooter": "Si les horaires ne correspondent pas à l’affichage de ta mosquée : voici la voie rapide et l’explication complète.",
+    "methodParams": {
+      "minutesAfterMaghrib": "{n} min après le Maghrib",
+      "degree": "°",
+      "decimal": ","
+    },
+    "methodRegions": {
+      "worldwide": "Monde entier",
+      "europe": "Europe",
+      "northAmerica": "Amérique du Nord",
+      "arabia": "Péninsule Arabique",
+      "middleEast": "Moyen-Orient",
+      "northAfrica": "Afrique du Nord",
+      "southAsia": "Asie du Sud",
+      "southeastAsia": "Asie du Sud-Est"
+    }
+  },
+  "tracker": {
+    "title": "Suivi des prières",
+    "subtitle": "Coche tes 5 prières et construis une série",
+    "today": "Aujourd’hui",
+    "week": "7 derniers jours",
+    "streakDays": "jours d’affilée",
+    "shareStats": "Partager les stats en image",
+    "qada": {
+      "title": "Compteur de qada (prières)",
+      "desc": "Indique, pour chaque prière, combien il t'en reste à rattraper et décompte-les au fur et à mesure. Entièrement manuel - non déduit du suivi quotidien.",
+      "none": "Aucune prière à rattraper",
+      "decrease": "Une de moins",
+      "increase": "Une de plus",
+      "total": "Total : {n}",
+      "step": "Pas",
+      "adjustHint": "Avec − et +, tu modifies le compteur du pas choisi.",
+      "makeUp": "Rattrapée",
+      "makeUpOne": "Une prière rattrapée : {prayer}",
+      "makeUpDay": "Rattraper une journée entière (5 prières)",
+      "doneTotal": "Déjà rattrapées : {n}"
+    },
+    "streakDayOne": "jour d’affilée",
+    "taraweeh": {
+      "title": "Suivi du Tarawih",
+      "desc": "Indique combien de rak’ahs de Tarawih tu as priées cette nuit.",
+      "tonight": "Cette nuit",
+      "decrease": "Deux de moins",
+      "increase": "Deux de plus",
+      "summary": "{nights} nuits priées · {total} rak’ahs au total"
+    },
+    "day": {
+      "previous": "Jour précédent",
+      "next": "Jour suivant",
+      "backToToday": "Revenir à aujourd'hui",
+      "select": "Appuie pour modifier ce jour",
+      "limitHint": "Tu peux compléter jusqu'à {n} jours en arrière."
+    },
+    "exempt": {
+      "toggle": "Jour dispensé",
+      "desc": "Pour les jours où la prière est levée (p. ex. menstruations). Le jour ne compte alors ni comme accompli ni comme manqué.",
+      "marked": "Ce jour est marqué comme dispensé — les prières ne peuvent pas être cochées ici."
+    },
+    "history": {
+      "title": "Historique",
+      "week": "Semaine",
+      "month": "Mois",
+      "tapHint": "Appuie sur un jour pour le modifier."
+    },
+    "month": {
+      "empty": "Rien n'a encore été enregistré ce mois-ci.",
+      "days": "{tracked} jours sur {days} enregistrés",
+      "prayers": "{done} prières sur {possible}",
+      "full": "{n} jours complets",
+      "exempt": "{n} jours dispensés",
+      "notTracked": "Non enregistré"
+    },
+    "patterns": {
+      "title": "Analyse",
+      "empty": "Dès que tu auras enregistré quelques jours, une analyse apparaîtra ici.",
+      "mostMissed": "La plus souvent manquée : {prayer}",
+      "mostMissedDetail": "{n} fois sur {days} jours enregistrés.",
+      "allDone": "Toutes les prières ont été accomplies chaque jour enregistré.",
+      "noSingle": "Aucune prière n'est manquée nettement plus souvent que les autres.",
+      "basis": "Base : {tracked} jours enregistrés sur les {days} derniers.",
+      "weeks": "Dernières semaines",
+      "weekDetail": "{done} prières sur {possible} en {tracked} jours enregistrés",
+      "weekEmpty": "Aucune saisie cette semaine"
+    }
+  },
+  "fasting": {
+    "title": "Jeûne",
+    "total": "Jours jeûnés au total",
+    "suhoor": "Souhour jusqu’à",
+    "iftar": "Iftar",
+    "untilSuhoorEnd": "Jusqu’à la fin du souhour",
+    "untilIftar": "Jusqu’à l’iftar",
+    "afterIftar": "Jeûne du jour terminé",
+    "fastedToday": "J’ai jeûné aujourd’hui",
+    "markToday": "Jeûné aujourd’hui ? Touche pour cocher",
+    "recommended": "Jours de jeûne recommandés",
+    "recommendedText": "Ramadan (obligatoire) · lundis et jeudis · les « jours blancs » (13–15 de chaque mois hégirien) · jour de Arafat · Achoura.",
+    "qada": {
+      "title": "Compteur de qada",
+      "desc": "Indique combien de jours de Ramadan tu dois encore rattraper et décompte-les au fur et à mesure. Entièrement manuel - non calculé automatiquement à partir de ton suivi quotidien.",
+      "decrease": "Un jour rattrapé",
+      "increase": "Ajouter un jour",
+      "owed": "Il te reste {n} jour(s) à rattraper",
+      "doneAll": "Aucun jour à rattraper"
+    },
+    "ramadanCard": {
+      "heading": "Ramadan"
+    }
+  },
+  "khatmah": {
+    "title": "Plan de khatma",
+    "subtitle": "Tout le Coran à ton rythme - choisis le nombre de jours",
+    "days": "jours",
+    "day": "Jour",
+    "behind": "jours de retard",
+    "read": "Lire",
+    "newPlan": "Commencer un nouveau plan",
+    "resetConfirmTitle": "Abandonner le plan ?",
+    "resetConfirmBody": "Ta progression ({done} jours sur {total}) sera perdue et irrécupérable.",
+    "resetConfirmAction": "Abandonner",
+    "customLabel": "Ou ton propre nombre de jours (1-365) :",
+    "behindOne": "jour de retard"
+  },
+  "zakat": {
+    "title": "Calculateur de zakat",
+    "subtitle": "2,5 % sur le patrimoine zakatable au-dessus du nisab",
+    "cash": "Espèces et comptes",
+    "gold": "Or (valeur)",
+    "silver": "Argent (valeur)",
+    "business": "Actifs commerciaux",
+    "debts": "Dettes déductibles",
+    "goldPrice": "Prix du gramme d’or (actuel)",
+    "currencyLabel": "Devise",
+    "base": "Base",
+    "nisab": "Nisab",
+    "due": "Zakat à verser",
+    "belowNisab": "Sous le nisab - pas de zakat due.",
+    "note": "Calculateur simplifié (nisab : 85 g d’or). Pour les cas particuliers, demande à une personne compétente.",
+    "reminder": {
+      "title": "Rappel annuel",
+      "desc": "La zakat est due après une année hégirienne complète depuis que ton patrimoine a atteint le nisab - fixe la date à laquelle c'est arrivé.",
+      "setToday": "Fixer la date à aujourd'hui",
+      "due": "Prochain rappel : {date}",
+      "noAnchor": "Aucune date fixée pour l'instant."
+    },
+    "goldPriceRef": "Utiliser ≈ {price} {currency}/g (juillet 2026 - vérifiez le cours actuel)",
+    "goldPriceLive": "Utiliser ≈ {price} {currency}/g (cours en direct du {date})",
+    "priceMissing": "Indiquez le prix de l'or pour calculer si la zakat est due.",
+    "fitrLinkTitle": "Calculateur de Zakat al-Fitr",
+    "fitrLinkDesc": "Obligation distincte par membre du foyer, due à la fin du Ramadan"
+  },
+  "zakatFitr": {
+    "title": "Zakat al-Fitr",
+    "subtitle": "Montant fixe par personne dû à la fin du Ramadan - indépendant de la zakat sur le patrimoine",
+    "intro": "La Zakat al-Fitr est une obligation distincte de la zakat sur le patrimoine ci-dessus. C'est un montant fixe par membre du foyer, dû avant la prière de l'Aïd.",
+    "disclaimer": "Le montant par personne dépend du pays et de l'école juridique (équivalent d'environ 2,5-3 kg d'un aliment de base). En cas de doute, demandez à votre mosquée locale.",
+    "householdSize": "Personnes dans le foyer",
+    "amountPerPerson": "Montant par personne",
+    "amountMissing": "Indiquez un montant par personne pour calculer le total.",
+    "total": "Montant total"
+  },
+  "names": {
+    "title": "99 Noms d’Allah",
+    "subtitle": "al-Asma al-Husna - touche pour écouter",
+    "learn": "Apprendre",
+    "quizPrompt": "Que signifie ce nom ?",
+    "quizResult": "Manche terminée - chaque manche pose 10 nouvelles questions aléatoires."
+  },
+  "halal": {
+    "title": "Halal à proximité",
+    "osmNote": "Données : © OpenStreetMap (peut être incomplet)",
+    "empty": "Aucun lieu halal trouvé dans un rayon de 5 km - les données OSM peuvent être rares ici."
+  },
+  "scanner": {
+    "title": "Scanner Halal",
+    "subtitle": "Scannez un code-barres pour comparer les ingrédients à des marqueurs halal/haram connus.",
+    "scanPrompt": "Pointez la caméra vers le code-barres",
+    "manualEntryLabel": "Numéro de code-barres",
+    "manualEntryPlaceholder": "ex. 4008400123456",
+    "checkButton": "Vérifier le produit",
+    "scanAgain": "Scanner un autre produit",
+    "loading": "Recherche du produit…",
+    "notFound": "Produit introuvable dans la base Open Food Facts.",
+    "fetchError": "Impossible de charger les données du produit. Vérifiez votre connexion et réessayez.",
+    "webNotice": "Le scan de code-barres par caméra est disponible dans l'application mobile. Sur le web, veuillez saisir le code-barres manuellement.",
+    "cameraPermissionDenied": "L'accès à la caméra a été refusé. Activez-le dans les réglages de l'appareil pour scanner des codes-barres.",
+    "matchedIngredientsTitle": "Ingrédients correspondants",
+    "productNameFallback": "Produit inconnu",
+    "barcodeLabel": "Code-barres : {code}",
+    "statuses": {
+      "halal": "Rien à signaler",
+      "haram": "Haram",
+      "mashbooh": "Douteux (Mashbouh)",
+      "unknown": "Inconnu"
+    },
+    "statusHints": {
+      "halal": "Aucun ingrédient signalé trouvé dans les données disponibles.",
+      "haram": "Contient un ingrédient considéré comme clairement non permis.",
+      "mashbooh": "Objet de débat religieux - vérifiez l'origine en cas de doute.",
+      "unknown": "Données insuffisantes."
+    },
+    "reasons": {
+      "alcohol": "Contient de l'alcool/éthanol - non autorisé même utilisé uniquement comme support d'arôme.",
+      "pork": "Contient du porc ou un dérivé du porc (ex. gélatine, saindoux, présure ou enzyme de porc).",
+      "gelatinUnknownOrigin": "Gélatine sans origine animale précisée - peut provenir de bœuf, de poisson ou de porc.",
+      "animalRennetUnknown": "Présure animale sans preuve d'un abattage conforme au halal.",
+      "carmine": "Carmin/cochenille (E120) - colorant rouge issu d'insectes, débattu parmi les savants.",
+      "lCysteine": "L-cystéine (E920) - souvent extraite de plumes ou de cheveux, origine généralement non déclarée.",
+      "monoDiglycerides": "Mono-/diglycérides (E471) ou émulsifiants similaires - origine animale ou végétale souvent incertaine.",
+      "vanillaExtractAlcohol": "L'extrait de vanille est souvent fabriqué avec de l'alcool comme solvant.",
+      "halalCertified": "Explicitement étiqueté comme certifié halal."
+    },
+    "disclaimerTitle": "Pas une certification officielle",
+    "disclaimerBody": "Ce scanner n'est PAS une inspection halal certifiée. Le résultat provient d'une comparaison automatique de données publiques d'ingrédients (Open Food Facts) avec une liste de termes connus - il peut contenir des erreurs et ne remplace pas une certification officielle. Pour les produits importants, vérifiez vous-même l'origine ou contactez le fabricant."
+  },
+  "time": {
+    "hoursShort": "h",
+    "minutesShort": "min",
+    "secondsShort": "s"
+  },
+  "prayer": {
+    "loading": "Chargement des horaires de prière…",
+    "unavailable": "Horaires de prière actuellement indisponibles (hors ligne et sans cache).",
+    "next": "Prochaine prière",
+    "timeLeft": "dans {time}",
+    "icsExport": "Exporter le calendrier (.ics)",
+    "playAzan": "Jouer l'Adhan",
+    "weekView": "Vue hebdomadaire",
+    "travel": {
+      "banner": "En voyage · {km} km du domicile",
+      "qasrTitle": "Qasr & Jam'",
+      "qasrDesc": "En voyage, tu peux raccourcir le Dhuhr, l'Asr et l'Isha à 2 rak'ahs (Qasr), et regrouper le Dhuhr avec l'Asr ou le Maghrib avec l'Isha (Jam')."
+    },
+    "sunrise": "Chourouq (lever du soleil)",
+    "iqama": "Iqama",
+    "lateWarning": {
+      "title": "Les rappels peuvent arriver en retard",
+      "body": "Sans l’autorisation « Alarmes et rappels », Android reporte la notification de prière jusqu’à environ une heure.",
+      "action": "Autoriser maintenant"
+    }
+  },
+  "prayerWeek": {
+    "title": "Vue hebdomadaire",
+    "subtitle": "Les 5 horaires de prière pour les 7 prochains jours",
+    "loading": "Chargement des horaires de la semaine…",
+    "unavailable": "Horaires de la semaine indisponibles (hors ligne et sans cache).",
+    "locationHint": "Pour {location} — méthode de calcul/école Asr comme dans les réglages."
+  },
+  "dashboard": {
+    "reorder": {
+      "title": "Personnaliser le tableau de bord",
+      "subtitle": "Choisis l'ordre et la visibilité des cartes de l'accueil – la carte de la prochaine prière et le tableau des horaires restent toujours visibles.",
+      "locked": "Toujours visible",
+      "moveUp": "Monter",
+      "moveDown": "Descendre",
+      "reset": "Rétablir l'ordre par défaut"
+    },
+    "cards": {
+      "hero": "Prochaine prière",
+      "ramadanCard": "Compte à rebours du Ramadan",
+      "travelBanner": "Avis du mode voyage",
+      "prayerTable": "Tableau des horaires de prière"
+    }
+  },
+  "qibla": {
+    "noMagnetometer": "Aucun magnétomètre détecté sur cet appareil - la direction repose uniquement sur le cap vers la Kaaba, pas sur l'orientation de l'appareil.",
+    "bearingInfo": "Cap vers la Kaaba depuis votre position",
+    "locationFailed": "Position introuvable - la dernière position enregistrée est utilisée.",
+    "north": "N",
+    "east": "E",
+    "south": "S",
+    "west": "O",
+    "enableCompass": "Activer la boussole",
+    "dir": {
+      "n": "nord",
+      "no": "nord-est",
+      "o": "est",
+      "so": "sud-est",
+      "s": "sud",
+      "sw": "sud-ouest",
+      "w": "ouest",
+      "nw": "nord-ouest"
+    },
+    "deviceHeading": "Cap de l'appareil : {deg}°",
+    "aligned": "Aligné - tu fais face à la Kaaba",
+    "calibrateHint": "Mauvaise direction ? Calibre la boussole : bouge le téléphone en formant un 8, loin du métal/des aimants.",
+    "accuracyDisclaimer": "La direction est basée sur les données du magnétomètre de votre appareil et peut légèrement dévier à cause de métal ou d'appareils électroniques à proximité.",
+    "distanceKm": "{km} km jusqu'à la Kaaba",
+    "ar": {
+      "compassTab": "Boussole",
+      "cameraTab": "Caméra",
+      "instruction": "Déplacez votre téléphone jusqu'à ce que le repère de la Kaaba soit centré.",
+      "turnLeft": "Tournez à gauche",
+      "turnRight": "Tournez à droite",
+      "permissionTitle": "Accès à la caméra requis",
+      "permissionBody": "Salati superpose la direction de la Qibla sur l'image de la caméra. L'image est affichée en direct uniquement et n'est ni enregistrée ni envoyée.",
+      "cameraDenied": "L'accès à la caméra a été refusé. Autorisez-le dans les réglages de l'appareil ou continuez avec la boussole.",
+      "backToCompass": "Retour à la boussole",
+      "notAvailableWeb": "La vue AR nécessite la caméra du téléphone et n'est pas disponible sur le Web."
+    }
+  },
+  "calendar": {
+    "offlineNotice": "Hors ligne - les dates hégiriennes sont calculées localement et peuvent différer de ±1 jour de la date officielle.",
+    "sightingNotice": "Dates calculées - la date locale d'observation lunaire peut différer.",
+    "weekdays": {
+      "mo": "lun",
+      "tu": "mar",
+      "we": "mer",
+      "th": "jeu",
+      "fr": "ven",
+      "sa": "sam",
+      "su": "dim"
+    },
+    "months": {
+      "1": "janvier",
+      "2": "février",
+      "3": "mars",
+      "4": "avril",
+      "5": "mai",
+      "6": "juin",
+      "7": "juillet",
+      "8": "août",
+      "9": "septembre",
+      "10": "octobre",
+      "11": "novembre",
+      "12": "décembre"
+    },
+    "holidaysThisMonth": "Occasions ce mois-ci",
+    "hijriSuffix": "apr. H.",
+    "days": {
+      "newYear": "Nouvel an islamique (1er mouharram)",
+      "ashura": "Jour d'Achoura (10 mouharram)",
+      "mawlid": "Naissance du Prophète صلى الله عليه وسلم (Mawlid, 12 rabiʿ al-awwal)",
+      "miraj": "Isra et Miʿraj (27 rajab)",
+      "ramadanStart": "Début du Ramadan",
+      "laylatAlQadr": "Laylat al-Qadr (souvent la 27e nuit)",
+      "eidFitr": "Aïd el-Fitr",
+      "arafah": "Jour d'Arafat (9 dhou al-hijja)",
+      "eidAdha": "Aïd el-Adha (Fête du sacrifice)"
+    },
+    "upcoming": "Prochaines dates"
+  },
+  "hijriConverter": {
+    "title": "Convertisseur de dates Hijri",
+    "subtitle": "Convertissez n’importe quelle date entre le calendrier grégorien et le calendrier Hijri.",
+    "modeGregorianToHijri": "Grégorien → Hijri",
+    "modeHijriToGregorian": "Hijri → Grégorien",
+    "gregorianDate": "Date grégorienne",
+    "hijriDate": "Date Hijri",
+    "day": "Jour",
+    "month": "Mois",
+    "year": "Année",
+    "result": "Résultat",
+    "loading": "Calcul en cours …",
+    "offlineNotice": "Hors ligne - calculé localement, peut varier d'un jour.",
+    "disclaimer": "Les dates Hijri dépendent de la méthode d'observation lunaire et peuvent varier d'un jour selon la région.",
+    "error": {
+      "incomplete": "Renseigne le jour, le mois et l’année en chiffres.",
+      "range": "Valeur hors plage : mois 1–12, année à partir de 1.",
+      "nonexistent": "Cette date n’existe pas — vérifie le jour."
+    }
+  },
+  "mosques": {
+    "title": "Mosquées",
+    "loadError": "Impossible de charger les mosquées.",
+    "empty": "Aucune mosquée trouvée dans un rayon de {km} km.",
+    "osmNote": "Données de localisation © contributeurs OpenStreetMap - parfois incomplètes ou obsolètes.",
+    "openRoute": "Ouvrir l'itinéraire",
+    "kmAway": "à {km} km",
+    "map": "Carte",
+    "list": "Liste",
+    "mapError": "Impossible de charger la carte. Utilisez la vue en liste.",
+    "offlineCached": "Aucune connexion internet — affichage des mosquées chargées la dernière fois."
+  },
+  "a11y": {
+    "up": "Haut",
+    "down": "Bas",
+    "left": "Gauche",
+    "right": "Droite",
+    "close": "Fermer",
+    "back": "Retour",
+    "playAudio": "Écouter",
+    "addBookmark": "Ajouter un signet",
+    "removeBookmark": "Retirer le signet",
+    "share": "Partager le verset",
+    "noteAyah": "Note sur le verset",
+    "bookmarks": "Signets",
+    "previousMonth": "Mois précédent",
+    "nextMonth": "Mois suivant",
+    "markDone": "Marquer comme terminé",
+    "markNotDone": "Retirer la marque",
+    "search": "Rechercher",
+    "decrease": "Diminuer",
+    "increase": "Augmenter"
+  },
+  "study": {
+    "title": "Étude",
+    "subtitle": "Cours structurés aux sources citées - pas à pas avec quiz",
+    "source": "Source",
+    "sections": {
+      "quranArabic": "Approfondir l'arabe coranique",
+      "islamicStudies": "Foi & Histoire",
+      "bonus": "Bonus"
+    },
+    "reorder": {
+      "cta": "Ajuster l'ordre",
+      "ctaDesc": "Choisis toi-même l'ordre d'affichage de tes cours",
+      "title": "Ordre des cours",
+      "subtitle": "Les catégories restent les mêmes – réordonne les cours au sein de chaque catégorie",
+      "moveUp": "Monter",
+      "moveDown": "Descendre",
+      "reset": "Rétablir l'ordre par défaut"
+    },
+    "placementCtaDesc": "Tu connais déjà ce sujet ? Avance directement plus loin",
+    "courses": {
+      "tajwid": {
+        "title": "Tajwid - Règles de récitation",
+        "desc": "Noun sakina, qalqala, types de madd, waqf - avec audio"
+      },
+      "aqida": {
+        "title": "Aqida - Fondements de la foi",
+        "desc": "Les six piliers de la foi, expliqués clairement"
+      },
+      "fiqh-ibadat": {
+        "title": "Fiqh des actes d’adoration",
+        "desc": "Pureté, prière, jeûne, zakat et hajj comme matière : conditions, piliers, devoirs et annulants - les divergences des écoles juridiques sont nommées (24 leçons)"
+      },
+      "seerah": {
+        "title": "Sira - Vie du Prophète ﷺ",
+        "desc": "Chronologique, de La Mecque à Médine"
+      },
+      "prophets": {
+        "title": "Histoires des Prophètes",
+        "desc": "D'Adam à Issa - avec références coraniques"
+      },
+      "sahaba": {
+        "title": "Compagnons & Savants",
+        "desc": "Abou Bakr, Umar, Uthman, Ali, Khadija, Bilal, Aïcha, Fatima, Salman al-Farisi, les autres des Dix + les quatre grands imams - biographies sourcées (15 leçons)"
+      },
+      "akhlaq": {
+        "title": "Akhlaq - Caractère et Vertus",
+        "desc": "Vertus de sidq à adl et maladies du cœur : hasad, kibr, ghiba, riya, boukhl - ainsi que chukr, tawakkoul et tawba, sourcés (14 leçons)"
+      },
+      "nikah": {
+        "title": "Fiqh du Mariage et de la Famille",
+        "desc": "But du mariage, droits et devoirs, contrat, talaq, mahram, khul et idda, nafaqa, hadana, éducation des enfants - sourcés (9 leçons)"
+      },
+      "nawawi40": {
+        "title": "40 hadiths (an-Nawawi)",
+        "desc": "Les 42 hadiths essentiels (an-Nawawi + Ibn Rajab), avec explication, entièrement hors ligne"
+      },
+      "grammar": {
+        "title": "Grammaire du Coran",
+        "desc": "Cours de base de nahw + approfondissement : comprendre la structure des phrases coraniques (16 leçons)"
+      },
+      "amau": {
+        "title": "Arabe du quotidien",
+        "desc": "869 mots et phrases du quotidien : les 699 mots et les 170 phrases du quotidien au complet, en 54 leçons"
+      },
+      "madinah": {
+        "title": "Arabe de Médine",
+        "desc": "Cours classique (Dr. V. Abdur Rahim) : Livres 1 à 4 complets (83 leçons, 872 mots)"
+      },
+      "dialects": {
+        "title": "Dialectes Arabes",
+        "desc": "Maghrébin, levantin, du Golfe, égyptien - les quatre grands dialectes parlés comparés à l'arabe standard moderne (28 leçons : salutations, nombres, questions, famille, nourriture, sentiments, expressions)"
+      }
+    },
+    "dialects": {
+      "reorderTitle": "Ordre des groupes de dialectes",
+      "groups": {
+        "maghrebi": "Maghrébin",
+        "levantine": "Levantin",
+        "gulf": "Arabe du Golfe",
+        "egyptian": "Égyptien"
+      },
+      "moveUp": "Monter",
+      "moveDown": "Descendre"
+    },
+    "todayGoal": "Aujourd'hui : {x}/{y} leçons terminées",
+    "streak": "Série de {n} jours",
+    "weeklyReview": {
+      "cta": "Bilan hebdomadaire",
+      "ctaDesc": "Cette semaine en chiffres",
+      "title": "Ton bilan hebdomadaire",
+      "subtitle": "Ce que tu as appris ces 7 derniers jours",
+      "lessons": "Leçons",
+      "questions": "Questions répondues",
+      "best": "Meilleur score",
+      "streak": "Jours de série",
+      "empty": "Rien appris cette semaine pour l'instant - commence maintenant !",
+      "shareImage": "Partager en image"
+    },
+    "streakOne": "Série de 1 jour"
+  },
+  "review": {
+    "title": "Révision",
+    "emptyTitle": "Rien à réviser",
+    "emptyText": "Tout est frais. Termine des leçons - les révisions apparaîtront ici au bon moment.",
+    "passed": "Bravo ! Les intervalles s'allongent - c'est acquis.",
+    "failed": "Pas de souci - ces sujets reviendront plus tôt.",
+    "due": "à réviser",
+    "start": "Réviser maintenant"
+  },
+  "exam": {
+    "title": "Examen final",
+    "passed": "Réussi ! Tu maîtrises ce cours.",
+    "failed": "Pas encore réussi (80 % requis). Révise les leçons et réessaie.",
+    "locked": "Termine d'abord toutes les leçons",
+    "start": "Commencer l'examen",
+    "done": "Examen réussi"
+  },
+  "weak": {
+    "title": "Travailler ses faiblesses",
+    "emptyTitle": "Aucune faiblesse",
+    "emptyText": "Rien que tu aies raté récemment. Continue !",
+    "passed": "Apprendre de ses erreurs - c'est ça, progresser.",
+    "failed": "Continue - ces sujets resteront ici pour toi.",
+    "suggest": "Raté récemment - entraîne-toi maintenant"
+  },
+  "write": {
+    "title": "S'exercer à écrire",
+    "subtitle": "Dessine la lettre de mémoire puis compare-la au modèle - écoute son nom",
+    "clear": "Effacer",
+    "hit": "Réussi",
+    "next": "Suivant",
+    "compare": "Comparer",
+    "drawFromMemory": "Dessine de mémoire - le modèle n'apparaît qu'à la comparaison.",
+    "hint": "Compare ton tracé au modèle semi-transparent et évalue honnêtement - « Suivant » passe à la lettre suivante."
+  },
+  "landing": {
+    "title": "Salati",
+    "tagline": "Ton compagnon pour la prière, le Coran et le savoir",
+    "subtitle": "Horaires de prière, qibla, Coran avec récitation, duas, hadiths, recherche de mosquées et un parcours d’apprentissage complet - fonctionne hors ligne, sans publicité, sans traçage.",
+    "ctaTry": "Essayer le lecteur du Coran",
+    "ctaStudy": "Découvrir le parcours d’apprentissage",
+    "heroDownload": "Télécharger gratuitement",
+    "heroAppStore": "Télécharger dans l’App Store",
+    "heroApk": "Télécharger l’APK (Android)",
+    "heroDownloadNote": "Gratuit, sans publicité. iPhone sur l’App Store, Android en APK directe. Google Play très bientôt.",
+    "heroDownloadNotePlay": "Gratuit, sans publicité. iPhone sur l’App Store, Android sur Google Play ou en APK directe.",
+    "heroPlay": "Disponible sur Google Play",
+    "featuresTitle": "Tout ce dont tu as besoin",
+    "f1Title": "Horaires de prière et qibla",
+    "f1Desc": "Horaires précis pour ta position, boussole vers la Kaaba",
+    "f2Title": "Coran",
+    "f2Desc": "Tous les récitateurs et traductions, favoris, navigation par juz",
+    "f3Title": "Apprendre à lire le Coran",
+    "f3Desc": "Leçons de l’alphabet aux premières sourates, avec audio",
+    "f4Title": "Étude",
+    "f4Desc": "Cours d'aqida à la grammaire - avec test de niveau",
+    "f5Title": "Duas et hadiths",
+    "f5Desc": "Invocations et recueils de hadiths avec sources",
+    "f6Title": "Recherche de mosquées",
+    "f6Desc": "Mosquées et salles de prière près de toi",
+    "f7Title": "Quiz et tasbih",
+    "f7Desc": "Modes de quiz, compteur de dhikr avec objectifs et stats quotidiennes",
+    "f8Title": "Privé et hors ligne",
+    "f8Desc": "Aucun traçage, aucune publicité, aucun compte requis",
+    "screenshotsTitle": "Un aperçu de l’application",
+    "tabletTitle": "À l’aise aussi sur tablette",
+    "tabletLead": "Sur grand écran, l’accueil et les réglages s’affichent sur deux colonnes et les listes en grille, au lieu d’une mise en page de téléphone étirée.",
+    "storeTitle": "Télécharger Salati",
+    "storeSoon": "Bientôt disponible",
+    "storeAvailable": "Disponible maintenant",
+    "footer": "Salati - prière, Coran et savoir dans une seule application.",
+    "apkButton": "Télécharger l'APK Android",
+    "apkHint": "Installation directe sans store - Android demandera d'autoriser les sources inconnues.",
+    "apkDownloading": "Téléchargement … {p} %",
+    "tvTitle": "Aussi pour la télévision",
+    "tvDesc": "Salati TV est l’application compagnon gratuite pour Android TV et Google TV : un lecteur du Coran avec récitation et le mot prononcé surligné en direct, une horloge de prière apaisante pour le salon, des récitateurs en sourates complètes, la radio du Coran 24h/24, des vidéos d’apprentissage, des podcasts et un quiz de connaissances.",
+    "tvF1Title": "Horloge de prière au salon",
+    "tvF1Desc": "Un affichage grand et apaisant des cinq horaires de prière – calculé entièrement sur l’appareil, hors ligne.",
+    "tvF2Title": "Lecteur du Coran avec surlignage des mots",
+    "tvF2Desc": "Arabe, translittération et traduction – la récitation surligne en direct le mot prononcé et avance verset après verset.",
+    "tvF3Title": "Ton téléphone en télécommande",
+    "tvF3Desc": "Scanne le QR code et ton téléphone pilote la télévision sur le même Wi-Fi – et répond au quiz en second écran. Sans compte, tout en local.",
+    "tvBadge": "Salati TV · Bientôt sur Google Play",
+    "tvBadgeLive": "Salati TV · sur Google Play",
+    "trust1Title": "100 % gratuit",
+    "trust1Desc": "Toutes les fonctions, pour toujours. Sans abonnement ni paywall.",
+    "trust2Title": "Sans pub, sans traçage",
+    "trust2Desc": "Aucun compte requis. Tes données restent à toi.",
+    "trust3Title": "L’IA fonctionne sur ton appareil",
+    "trust3Desc": "La vérification de récitation traite ton enregistrement sur l’appareil - il ne le quitte jamais.",
+    "trust4Title": "Utilisable hors ligne",
+    "trust4Desc": "Chargé une fois, toujours avec toi : Coran, cours, douas - même sans internet.",
+    "ctaKi": "IA Salati (bêta)",
+    "faqTitle": "Questions fréquentes",
+    "faq1Q": "Salati est-il vraiment gratuit ?",
+    "faq1A": "Oui, entièrement. Toutes les fonctionnalités sont disponibles sans abonnement, sans achats intégrés et sans publicité. Il n'y a pas de version premium - ce que vous voyez est l'application complète.",
+    "faq2Q": "Mes données sont-elles suivies ?",
+    "faq2A": "Non. Salati ne nécessite aucun compte, ne contient aucun SDK publicitaire ou d'analyse et ne nous envoie aucune donnée d'utilisation. Les réglages, les favoris et votre progression restent sur votre appareil.",
+    "faq3Q": "L'application fonctionne-t-elle hors ligne ?",
+    "faq3A": "Le contenu principal, oui : le Coran, les cours, les douas et les hadiths fonctionnent hors ligne une fois chargés. Internet n'est nécessaire que pour l'audio de récitation à la première lecture, le localisateur de mosquées et l'actualisation des horaires de prière.",
+    "faq4Q": "Dans quelles langues Salati est-il disponible ?",
+    "faq4A": "En 14 langues : allemand, anglais, turc, arabe, espagnol, français, indonésien, malais, russe, ourdou, persan, bengali, swahili et pachto.",
+    "faq5Q": "D'où viennent les horaires de prière et quelles méthodes de calcul existent ?",
+    "faq5A": "Les horaires sont calculés pour votre position via l'API AlAdhan. Vous pouvez choisir parmi 13 méthodes de calcul (dont Diyanet, Ligue islamique mondiale, ISNA, Umm al-Qura) et basculer l'Asr entre l'horaire précoce et l'horaire hanafite.",
+    "faq6Q": "D'où provient le contenu ?",
+    "faq6A": "Le texte du Coran, les traductions et les récitations proviennent de sources ouvertes établies (alquran.cloud, quran.com, islamic.network). Les douas et hadiths portent leurs références, et les textes des cours sont relus par la rédaction. Salati ne remplace pas les savants - pour les questions importantes, adressez-vous à une personne qualifiée.",
+    "faq7Q": "L'application existe-t-elle pour iOS et Android ?",
+    "faq7A": "iOS : Salati est disponible sur l'App Store. Android : vous pouvez télécharger l'APK directement sur cette page ; la fiche Google Play est en cours d'examen. Salati fonctionne aussi dans tout navigateur moderne.",
+    "faq8Q": "Qu'est-ce que l'IA Salati, et mes questions restent-elles privées ?",
+    "faq8A": "L'IA de Salati répond aux questions uniquement à partir du Coran, des 40 hadiths d'an-Nawawi, des invocations vérifiées et des textes de cours Salati. Elle cite littéralement les passages pertinents et indique la source de chaque extrait - elle ne formule rien elle-même, elle ne peut donc rien inventer. Tout fonctionne en local : vos questions ne quittent pas votre appareil et n'atteignent aucun serveur.",
+    "tvApkButton": "Télécharger l’APK pour Fire TV"
+  },
+  "tvRemote": {
+    "back": "Retour",
+    "clock": "Horloge de prière",
+    "connectedTo": "Connecté à {name}",
+    "connecting": "Connexion …",
+    "denied": "Connexion refusée – scanne à nouveau le QR code.",
+    "disconnect": "Déconnecter",
+    "dpad": "Commandes",
+    "error": "Échec de la connexion. Le téléphone et la TV sont-ils sur le même Wi-Fi ?",
+    "home": "Accueil",
+    "manualCodePlaceholder": "Code affiché sur le téléviseur",
+    "manualConnect": "Connecter",
+    "manualHostPlaceholder": "Adresse, p. ex. 192.168.1.50:8787",
+    "manualInvalid": "Adresse ou code incorrect — les deux sont affichés sur le téléviseur.",
+    "manualOpen": "Pas de QR code ? Saisir manuellement",
+    "openOnTv": "Ouvrir sur la TV",
+    "pairing": "Connecter",
+    "permissionBody": "Pour scanner le QR code sur ta télévision, Salati a besoin d’accéder à la caméra. Rien n’est enregistré ni conservé.",
+    "podcasts": "Podcasts",
+    "quiz": "Quiz",
+    "quizDone": "Manche terminée – retourne à la TV pour une nouvelle manche.",
+    "quizProgress": "Question {i} / {n}",
+    "quran": "Lire le Coran",
+    "radio": "Radio du Coran",
+    "reciters": "Récitateurs",
+    "reels": "Reels",
+    "retry": "Scanner à nouveau",
+    "scanHint": "Ouvre Salati TV, appuie sur Connecter et scanne le QR code affiché sur la télévision.",
+    "settings": "Réglages",
+    "title": "Connecter Salati TV",
+    "videos": "Vidéos",
+    "webOnly": "L’appairage TV fonctionne uniquement dans l’app mobile Salati (iOS/Android), sur le même Wi-Fi que la télévision."
+  },
+  "placement": {
+    "title": "Test de Niveau",
+    "step": "Étape {n}/{total}",
+    "recommendation": "Nous te recommandons de commencer ici - tout ce qui précède est considéré comme réussi.",
+    "confirm": "Commencer ici"
+  },
+  "mirath": {
+    "title": "Calculateur d'Héritage (Mirath)",
+    "subtitle": "Parts d'héritage fixes selon la sourate An-Nisa 4:11-12/176 pour le conjoint, les parents, les enfants et les frères et sœurs germains",
+    "deceasedGender": "Genre du défunt",
+    "genderMale": "Masculin",
+    "genderFemale": "Féminin",
+    "hasWife": "Épouse(s) survivante(s)",
+    "hasHusband": "Époux survivant",
+    "wivesCount": "Nombre d'épouses",
+    "sons": "Fils",
+    "daughters": "Filles",
+    "fatherAlive": "Père vivant",
+    "motherAlive": "Mère vivante",
+    "fullBrothers": "Frères germains (mêmes parents)",
+    "fullSisters": "Sœurs germaines (mêmes parents)",
+    "resultTitle": "Parts de la succession",
+    "noHeirs": "Veuillez indiquer au moins un héritier.",
+    "husband": "Époux",
+    "wife": "Épouse(s)",
+    "father": "Père",
+    "mother": "Mère",
+    "son": "Fils",
+    "daughter": "Fille(s)",
+    "brother": "Frère(s)",
+    "sister": "Sœur(s)",
+    "gharrawaynNote": "Cas particulier « gharrawayn » appliqué : la mère reçoit 1/3 du reste après la part du conjoint (opinion majoritaire des savants).",
+    "awlNote": "Awl appliqué : les parts fixes dépassaient au total la succession entière et ont été réduites proportionnellement (pratique reconnue depuis les califes bien guidés).",
+    "unresolvedNote": "Reste non résolu - les savants ont des avis différents pour cette configuration d'héritiers (p. ex. radd ou autres parents). Veuillez consulter un savant qualifié.",
+    "disclaimer": "Calculateur simplifié : ne couvre que le conjoint, les parents, les enfants et les frères et sœurs germains. Les petits-enfants, demi-frères/sœurs, grands-parents et cas particuliers ne sont PAS modélisés. Pour un partage réel de succession, consultez toujours une personne qualifiée en droit successoral islamique."
+  },
+  "sync": {
+    "title": "Transférer la progression",
+    "intro": "Transfère ta progression d'apprentissage, tes signets et tes statistiques vers un autre appareil ou navigateur - sans compte et sans serveur de notre part. Un code est généré, que tu transfères toi-même (par exemple via une note ou un message à toi-même).",
+    "exportTitle": "Générer un code",
+    "exportButton": "Générer un code",
+    "exportHint": "Copie ce code et transfère-le vers ton autre appareil - via une appli de notes, un message à toi-même ou un e-mail.",
+    "copyButton": "Copier",
+    "copied": "Copié !",
+    "importTitle": "Coller le code",
+    "importPlaceholder": "Colle le code ici…",
+    "importButton": "Appliquer",
+    "importSuccess": "Progression restaurée ! Redémarre l'application pour que tout soit mis à jour partout.",
+    "importError": "Ce code est invalide ou corrompu.",
+    "confirmTitle": "Remplacer la progression ?",
+    "confirmBody": "Ce code a été créé le {date}. Votre progression actuelle sur cet appareil sera entièrement remplacée.",
+    "confirmAction": "Remplacer"
+  },
+  "impressum": {
+    "title": "Mentions légales",
+    "subtitle": "Mentions conformément au § 5 de la DDG allemande",
+    "providerSection": "Prestataire de services",
+    "company": "Entreprise",
+    "companyValue": "Salatibox - propriétaire Domenic Moran",
+    "owner": "Propriétaire",
+    "ownerValue": "Domenic Moran",
+    "address": "Adresse",
+    "addressValue": "Heidelberger Str. 36\n12059 Berlin\nAllemagne",
+    "contactSection": "Contact",
+    "phone": "Téléphone",
+    "email": "E-mail",
+    "website": "Site web",
+    "taxSection": "Informations fiscales",
+    "smallBusiness": "Petite entreprise",
+    "smallBusinessValue": "Aucune TVA n'est facturée conformément au § 19 de la loi allemande sur la TVA (Kleinunternehmerregelung).",
+    "vatId": "N° de TVA",
+    "responsibleSection": "Responsable du contenu",
+    "responsibleText": "Responsable au sens du § 18(2) MStV : Domenic Moran, Heidelberger Str. 36, 12059 Berlin, Allemagne.",
+    "disputeSection": "Règlement des litiges",
+    "disputeVsbgText": "Nous ne sommes ni disposés ni tenus de participer à une procédure de règlement des litiges devant un organisme de conciliation des consommateurs (§ 36 VSBG).",
+    "liabilitySection": "Clause de non-responsabilité",
+    "liabilityContentTitle": "Responsabilité relative aux contenus",
+    "liabilityContentText": "En tant que prestataire de services, nous sommes responsables de nos propres contenus dans cette application selon le droit commun, conformément au § 7, al. 1 de la DDG. Toutefois, en vertu des §§ 8 à 10 de la DDG, nous ne sommes pas tenus de surveiller les informations de tiers transmises ou stockées, ni de rechercher des circonstances révélant une activité illicite. Dès que nous avons connaissance d'infractions correspondantes, nous retirons immédiatement les contenus concernés.",
+    "liabilityLinksTitle": "Responsabilité relative aux sources de données externes",
+    "liabilityLinksText": "Cette application charge des données coraniques, de hadiths, cartographiques et de produits depuis des sources externes et publiques. Lesquelles est indiqué en détail dans la déclaration de confidentialité et sous « Sources et licences » dans les réglages. L'exactitude de ces contenus tiers relève de la responsabilité de leurs fournisseurs respectifs ; nous les vérifions au mieux de nos connaissances, mais ne pouvons les contrôler en permanence à chaque modification.",
+    "copyrightTitle": "Droits d'auteur",
+    "copyrightText": "Les contenus créés par les exploitants de l'application sont soumis au droit d'auteur allemand. La reproduction, l'adaptation, la diffusion et toute forme d'exploitation en dehors des limites du droit d'auteur nécessitent un accord écrit. Les contenus de tiers - textes et traductions du Coran, hadiths, données cartographiques et de produits, polices ainsi que modèles d'IA et de reconnaissance vocale - sont documentés avec leur titulaire de droits et leur licence sous « Sources et licences » dans les réglages. Si vous estimez qu'un contenu de Salati porte atteinte à des droits, écrivez-nous à salatibox@gmail.com : nous le vérifierons et retirerons immédiatement le contenu concerné."
+  },
+  "datenschutz": {
+    "title": "Politique de confidentialité",
+    "subtitle": "Informations conformément aux art. 13 et 14 du RGPD",
+    "intro": "Cette déclaration s'applique à l'application Salati (Android et iOS), à la version web sur salati.pro et à l'application Salati TV. Salati traite le moins de données personnelles possible : pas de compte utilisateur, pas d'inscription, pas de publicité, pas de pistage et pas de logiciel d'analyse. Votre progression, vos statistiques et vos réglages restent sur votre appareil. Certaines fonctions font toutefois appel à des services tiers : lesquels, quelles données sont transmises et sur quelle base juridique, tout est détaillé ci-dessous.",
+    "controllerSection": "Responsable du traitement",
+    "controllerText": "Salatibox - propriétaire Domenic Moran, Heidelberger Str. 36, 12059 Berlin, Allemagne. E-mail : salatibox@gmail.com, téléphone : +49 30 767 645 46. La loi n'impose pas la désignation d'un délégué à la protection des données.",
+    "locationSection": "Données de localisation",
+    "locationText": "Les horaires de prière, la direction de la qibla, la recherche de mosquées et la recherche de lieux halal à proximité nécessitent votre position. L'application ne la demande qu'avec votre autorisation et uniquement « pendant l'utilisation de l'application ».\n\nVos coordonnées sont alors transmises aux services indépendants suivants : api.aladhan.com (Islamic Network) pour les horaires de prière et le calendrier mensuel, overpass-api.de pour la recherche de mosquées et de lieux halal, et tile.openstreetmap.org pour l'affichage de la carte. Si vous saisissez une ville à la main, votre texte de recherche est envoyé à nominatim.openstreetmap.org.\n\nNous ne stockons pas vos coordonnées sur nos propres serveurs. Les services cités les reçoivent sans nom, compte ni identifiant d'appareil, mais - comme pour toute requête internet - avec votre adresse IP. Vous pouvez retirer l'autorisation de localisation à tout moment dans les réglages du système et saisir une ville à la place. Base juridique : art. 6, par. 1, point a) du RGPD (consentement donné en accordant l'autorisation de localisation), révocable à tout moment.",
+    "notificationsSection": "Notifications",
+    "notificationsText": "Les rappels de prière, les alertes suhoor et iftar ainsi que les rappels d'apprentissage sont planifiés localement par le système d'exploitation de votre appareil. Il n'y a pas de serveur push, pas de jetons push et aucune transmission vers nous ou vers des tiers. Base juridique : art. 6, par. 1, point a) du RGPD (autorisation de notification).",
+    "storageSection": "Stockage local",
+    "storageText": "La progression, les favoris, le suivi des prières, les statistiques, les récitations téléchargées et tous les réglages sont conservés exclusivement sur votre appareil et, dans la version web, dans le stockage de votre navigateur. Nous n'exploitons aucun serveur qui reçoive ou conserve ces données. Vous pouvez les supprimer dans l'application sous Réglages puis « Stockage », ou les effacer entièrement en désinstallant l'application.",
+    "syncSection": "Transfert entre appareils",
+    "syncText": "La fonction « transférer la progression » génère un code exclusivement sur votre appareil. C'est vous qui transmettez ce code, par exemple par une note ou un message à vous-même : nous ne le recevons, ne le voyons et ne le conservons à aucun moment.",
+    "rightsSection": "Vos droits",
+    "rightsText": "Le RGPD vous confère les droits suivants : accès (art. 15), rectification (art. 16), effacement (art. 17), limitation du traitement (art. 18), portabilité des données (art. 20) et opposition aux traitements fondés sur l'intérêt légitime (art. 21). Vous pouvez retirer tout consentement à tout moment pour l'avenir (art. 7, par. 3), en pratique en retirant l'autorisation concernée dans les réglages du système.\n\nEn pratique, les demandes d'accès et d'effacement resteront le plus souvent sans objet, car nous n'avons rien enregistré à votre sujet et, faute de compte, ne pouvons rien vous rattacher ; les données sur votre appareil, vous pouvez les consulter et les supprimer vous-même. Nous répondrons néanmoins à votre demande - écrivez-nous à salatibox@gmail.com.\n\nIndépendamment de cela, vous avez le droit d'introduire une réclamation auprès d'une autorité de contrôle de la protection des données (art. 77). L'autorité compétente pour nous est la Commissaire de Berlin à la protection des données et à la liberté de l'information, Alt-Moabit 59-61, 10555 Berlin, Allemagne. Vous pouvez également vous adresser à l'autorité de votre lieu de résidence habituelle.",
+    "cookiesSection": "Cookies et stockage local",
+    "cookiesText": "Salati ne place aucun cookie de pistage ou publicitaire et n'intègre aucun logiciel d'analyse. L'application et la version web enregistrent toutefois des données sur votre appareil pour que les fonctions puissent simplement fonctionner : vos réglages et données d'apprentissage et, dans la version web, le modèle d'IA et votre historique de conversation dans le stockage du navigateur. Cet enregistrement est strictement nécessaire aux fonctions que vous avez expressément demandées et ne requiert donc pas de consentement au sens du § 25, al. 2, n° 2 de la TDDDG allemande. Vous pouvez l'effacer via les réglages du navigateur ou via « Stockage » dans l'application.",
+    "changesSection": "Modifications de cette déclaration",
+    "changesText": "Nous adaptons cette déclaration de confidentialité dès que le traitement des données dans l'application évolue. La version en vigueur est toujours disponible dans l'application et sur salati.pro/datenschutz.",
+    "lastUpdated": "Dernière mise à jour : juillet 2026",
+    "noCollectionSection": "Ce que nous ne faisons pas",
+    "noCollectionText": "- Pas de compte utilisateur, pas d'inscription, pas de connexion - nous ne pouvons techniquement pas vous identifier.\n- Pas de publicité ni de régies publicitaires.\n- Pas de logiciel d'analyse, de pistage ou d'attribution (pas de Google Analytics, pas de Firebase, pas de SDK Facebook).\n- Pas d'envoi de rapports de plantage : les journaux d'erreurs restent sur l'appareil.\n- Pas de notifications push et donc pas de jetons push.\n- Pas de vente ni de communication de données à des fins publicitaires.\n- Pas de localisation en arrière-plan : la position n'est demandée que pendant que vous utilisez l'application.",
+    "thirdPartySection": "Destinataires : services externes",
+    "thirdPartyText": "Pour les contenus qui ne sont pas livrés avec l'application, Salati appelle des interfaces publiques de tiers. Chacune de ces requêtes transmet nécessairement votre adresse IP au fournisseur, avec les données de requête indiquées. Nous ne transmettons ni noms, ni identifiants de compte, ni identifiants publicitaires : ils n'existent pas.\n\n- api.aladhan.com (Islamic Network) : horaires de prière, calendrier mensuel, conversion hégirienne. Transmis : coordonnées ou nom de ville, date, méthode de calcul.\n- overpass-api.de, nominatim.openstreetmap.org, tile.openstreetmap.org (OpenStreetMap) : recherche de mosquées et de lieux halal, recherche de ville, tuiles de carte. Transmis : coordonnées et rayon de recherche, ou votre texte de recherche.\n- api.alquran.cloud, cdn.islamic.network (Islamic Network) : texte coranique, traductions, tafsir, audio de récitation. Transmis : la sourate, le verset ou l'édition demandés.\n- api.quran.com, audio.qurancdn.com, verses.quran.com, mirrors.quranicaudio.com (Quran.com / QuranicAudio) : analyse mot à mot, traductions, tafsir, audio de récitation. Transmis : le passage demandé.\n- www.mp3quran.net : liste des stations de la radio coranique. Transmis : la langue d'application que vous avez choisie.\n- cdn.jsdelivr.net (jsDelivr) : recueils de hadiths. Transmis : le recueil et le numéro demandés.\n- hadeethenc.com (Encyclopédie des hadiths prophétiques traduits) : hadiths classés par thème. Transmis : la langue sélectionnée et le thème ou le numéro de hadith demandé.\n- unpkg.com : la bibliothèque cartographique Leaflet pour la carte des mosquées.\n- world.openfoodfacts.org (Open Food Facts) : scanner halal. Transmis : le code-barres scanné.\n- api.gold-api.com, api.frankfurter.dev : cours de l'or et taux de change pour le nisab de la zakat. Transmis : la devise choisie.\n- huggingface.co : téléchargement unique du modèle de reconnaissance vocale pour la vérification de récitation.\n\nCes fournisseurs sont responsables de traitement autonomes pour les données qu'ils reçoivent ; leurs propres politiques de confidentialité s'appliquent en complément. Base juridique : art. 6, par. 1, point f) du RGPD (intérêt légitime à fournir la fonction que vous avez demandée) et, pour les données de localisation, également le point a).\n\nSynthèse vocale : si vous faites lire des lettres, syllabes ou mots arabes, l'application transmet le texte au moteur vocal de votre système d'exploitation. Selon l'appareil et ses réglages, ce moteur peut utiliser une voix dans le cloud ; le texte lu parvient alors au fournisseur de votre système, par exemple Google ou Apple. Vous pouvez choisir une voix embarquée dans les réglages du système.",
+    "ownInfraSection": "Notre propre infrastructure",
+    "ownInfraText": "Salati ne stocke ni comptes utilisateurs ni données d'apprentissage sur ses propres serveurs. Pour la diffusion des contenus et de la version web, nous utilisons toutefois trois prestataires dont les journaux de serveur contiennent nécessairement des adresses IP :\n\n- Cloudflare R2 (Cloudflare, Inc., États-Unis) : épisodes du podcast avec leurs pochettes et l'index des épisodes, supports PDF, vidéos d'apprentissage, reels, le corpus de sources de l'IA ainsi que les fichiers de modèle de l'IA et de la vérification de récitation, ainsi que le tafsir en allemand.\n- Supabase Storage (Supabase, Inc., États-Unis) : mises à jour des contenus de cours et index des épisodes pour les anciennes versions de l'application - requêtes en lecture seule, sans connexion. Ce stockage se trouve dans la région UE de Francfort (eu-central-1).\n- Vercel (Vercel, Inc., États-Unis) : hébergement de la version web salati.pro.\n\nNous n'établissons aucun profil d'utilisateur à partir de ces journaux et ne les recoupons avec rien. Base juridique : art. 6, par. 1, point f) du RGPD (intérêt légitime à une diffusion sûre et fonctionnelle).",
+    "aiSection": "Salati IA",
+    "aiText": "La fonction d'IA répond exclusivement à partir d'un corpus de sources livré avec l'application (traduction du Coran, hadiths, invocations vérifiées, textes de cours Salati). Votre question, l'historique de conversation et la réponse ne quittent pas votre appareil : aucun serveur ne reçoit ni ne conserve vos saisies.\n\nAucun modèle de langue n'est plus téléchargé pour cela. Le corpus source allemand est intégré à l'application ; pour toute autre langue de l'application, Salati récupère le corpus traduit (1,6-3,3 Mo) une seule fois depuis notre stockage Cloudflare R2 et le conserve localement. La version web charge le corpus depuis salati.pro et, uniquement pour améliorer la recherche de passages, un modèle de recherche (environ 118 Mo) depuis le CDN Hugging Face ainsi que sa bibliothèque via le CDN jsDelivr (esm.run). Votre adresse IP est alors transmise au fournisseur concerné. Votre historique de discussion (40 entrées au maximum) est conservé dans le stockage du navigateur ; vous pouvez le supprimer à tout moment via « Effacer l'historique ».\n\nLes réponses de l'IA sont générées par machine et ne constituent expressément pas une fatwa. Base juridique : art. 6, par. 1, point f) du RGPD (fourniture de la fonction que vous avez demandée).",
+    "legalBasisSection": "Bases juridiques",
+    "legalBasisText": "- Art. 6, par. 1, point a) du RGPD (consentement) : autorisations de localisation, de caméra et de microphone ainsi que notifications. Vous pouvez retirer chacune d'elles à tout moment dans les réglages du système ; la licéité du traitement effectué jusque-là n'en est pas affectée.\n- Art. 6, par. 1, point b) du RGPD (exécution du contrat) : fourniture des fonctions gratuites de l'application décrites dans les conditions d'utilisation.\n- Art. 6, par. 1, point f) du RGPD (intérêt légitime) : récupération des contenus auprès des fournisseurs cités ainsi que l'exploitation, la diffusion et la sécurité techniquement nécessaires de l'application et du site.\n\nLa caméra (scanner de codes-barres pour la vérification halal) et le microphone (vérification de récitation) sont exploités exclusivement sur l'appareil ; ni images ni enregistrements audio ne sont transmis ou conservés.",
+    "retentionSection": "Durées de conservation",
+    "retentionText": "Nous ne conservons nous-mêmes aucune donnée personnelle vous concernant : il n'existe pas de base de données d'utilisateurs. Les données sur votre appareil y restent jusqu'à ce que vous les supprimiez dans l'application ou désinstalliez celle-ci. Les journaux de serveur de nos prestataires de diffusion (Cloudflare, Supabase, Vercel) y sont supprimés automatiquement après leurs délais courts habituels ; nous ne les exploitons pas. La durée de conservation des journaux d'accès chez les fournisseurs tiers indépendants relève de leurs propres politiques de confidentialité. Si vous nous écrivez par e-mail, nous conservons votre message aussi longtemps que nécessaire pour traiter votre demande et respecter les obligations légales de conservation.",
+    "transferSection": "Transferts vers des pays tiers",
+    "transferText": "Une partie des fournisseurs cités est établie hors de l'UE et de l'EEE, notamment aux États-Unis : Cloudflare, Vercel, Supabase, Hugging Face, jsDelivr, unpkg et Quran.com. Avec les fournisseurs auxquels nous sommes liés contractuellement (Cloudflare, Supabase, Vercel), les clauses contractuelles types de la Commission européenne font partie des conditions d'utilisation ; pour les États-Unis s'applique en outre la décision d'adéquation de la Commission du 10 juillet 2023 (cadre de protection des données UE-États-Unis). Avec les autres interfaces, purement publiques, il n'existe aucune relation contractuelle ; la transmission de votre adresse IP y est la conséquence techniquement inévitable de votre propre requête et repose sur l'art. 49, par. 1, point b) du RGPD. Malgré ces garanties, un accès des autorités de pays tiers aux données ne peut être exclu. Seules votre adresse IP et les données de requête techniquement nécessaires sont transmises."
+  },
+  "agb": {
+    "title": "Conditions d'utilisation",
+    "subtitle": "Conditions générales d'utilisation de l'application",
+    "intro": "En utilisant cette application, vous acceptez les conditions d'utilisation suivantes. Elles complètent les mentions légales et la politique de confidentialité.",
+    "scopeSection": "Champ d'application",
+    "scopeText": "Ces conditions d'utilisation s'appliquent à l'usage de l'application Salati (fournisseur : Salatibox - propriétaire Domenic Moran) sur iOS, Android, Android TV et sur le web par des particuliers.",
+    "freeUseSection": "Utilisation gratuite",
+    "freeUseText": "L'application est entièrement gratuite. Aucun compte utilisateur n'est requis, il n'y a ni achat intégré, ni abonnement, ni publicité.",
+    "religiousContentSection": "Contenu religieux",
+    "religiousContentText": "Les calculs des heures de prière, les traductions du Coran, le tafsir et les hadiths sont fournis en toute bonne foi et à l'aide de méthodes de calcul et de sources reconnues, mais sans garantie d'exactitude religieuse ou académique absolue. En cas de doute, notamment sur des questions religieuses précises, nous recommandons de consulter des érudits locaux ou la mosquée de votre région.",
+    "externalSourcesSection": "Sources de données externes et disponibilité",
+    "externalSourcesText": "Les textes du Coran, les récitations, les hadiths, les données cartographiques et les services de localisation proviennent en partie de services publics externes de tiers (voir la politique de confidentialité). Nous ne garantissons ni leur disponibilité, ni leur exhaustivité, ni leur exactitude ; un fonctionnement ininterrompu de l'application ne peut être garanti en permanence.",
+    "personalUseSection": "Usage personnel",
+    "personalUseText": "Le contenu téléchargé - comme l'audio des récitations, les textes du Coran et les traductions - ne peut être utilisé qu'à des fins personnelles et non commerciales. Toute redistribution, mise à disposition du public ou utilisation commerciale est interdite, sauf autorisation expresse des ayants droit concernés.",
+    "liabilitySection": "Limitation de responsabilité",
+    "liabilityText": "Nous sommes responsables sans limitation en cas d'intention ou de négligence grave, ainsi qu'en vertu de la loi allemande sur la responsabilité du fait des produits. En cas de négligence légère, notre responsabilité n'est engagée qu'en cas de violation d'obligations contractuelles essentielles, et limitée au dommage prévisible typique du contrat. L'application étant fournie gratuitement, toute responsabilité supplémentaire est exclue.",
+    "changesSection": "Modifications des présentes conditions",
+    "changesText": "Nous adaptons ces conditions d'utilisation si nécessaire, par exemple en cas de changement des fonctionnalités de l'application ou de la situation juridique. La version actuelle est toujours consultable dans l'application.",
+    "lawSection": "Droit applicable",
+    "lawText": "Le droit allemand s'applique, à l'exclusion de la Convention des Nations Unies sur les contrats de vente internationale de marchandises, dans la mesure permise par la loi.",
+    "aiSection": "Salati IA",
+    "aiText": "La fonction d'IA génère ses réponses par machine à partir d'un corpus de sources livré avec l'application. Elle est identifiée comme contenu généré par IA et ne constitue expressément ni une fatwa, ni un avis de savant, ni un conseil juridique, fiscal, financier ou médical. Les réponses générées par machine peuvent être incomplètes ou erronées ; cela vaut particulièrement pour les résultats de calcul comme la zakat ou les parts successorales et pour les questions juridiques de détail. Vérifiez les informations importantes et, en cas de doute, adressez-vous à un savant qualifié. Vos saisies ne quittent pas votre appareil ; nous ne garantissons ni la disponibilité ni l'exactitude de l'IA.",
+    "sourcesSection": "Sources et licences",
+    "sourcesText": "Salati intègre des contenus de tiers - notamment des textes et traductions du Coran, des recueils de hadiths, des données cartographiques et de produits, des polices ainsi que des modèles d'IA et de reconnaissance vocale. Qui détient les droits et sous quelle licence nous utilisons ces contenus figure intégralement sous « Sources et licences » dans les réglages. Les contenus propres à Salati - textes de cours, explications, supports, productions de podcast et de vidéo - peuvent être téléchargés et utilisés à des fins personnelles. Si vous estimez qu'un contenu de Salati porte atteinte à des droits, écrivez-nous à salatibox@gmail.com : nous le vérifierons et retirerons immédiatement le contenu concerné."
+  },
+  "changelog": {
+    "title": "Nouveautés",
+    "subtitle": "Toutes les nouvelles fonctionnalités, améliorations et corrections de Salati en un coup d'œil.",
+    "versionLabel": "Version {version}",
+    "latest": "Version actuelle",
+    "typeFeature": "Nouvelles fonctionnalités",
+    "typeImprovement": "Améliorations",
+    "typeFix": "Corrections de bugs",
+    "footer": "Merci d'utiliser Salati."
+  },
+  "more": {
+    "sections": {
+      "learning": "Apprentissage et savoir",
+      "practice": "Prière et vie quotidienne",
+      "tools": "Outils",
+      "app": "Application"
+    },
+    "kiDesc": "Interroge le Coran et les douas - 100 % local"
+  },
+  "radio": {
+    "title": "Radio du Coran",
+    "subtitle": "Récitations 24h/24 - touche pour écouter",
+    "live": "DIRECT"
+  },
+  "widgets": {
+    "qibla": "Qibla",
+    "remaining": "dans {t}",
+    "themeTitle": "Couleur du widget",
+    "themeHint": "S’applique à tous les widgets placés lors de la prochaine actualisation.",
+    "theme_dark": "Sombre",
+    "theme_light": "Clair",
+    "theme_transparent": "Transparent",
+    "theme_black": "Noir",
+    "theme_white": "Blanc",
+    "theme_purple": "Violet",
+    "theme_orange": "Orange",
+    "nextPrayer": "Prochaine prière",
+    "offline": "Hors ligne - ouvrir l’app",
+    "duaOfDay": "Doua du jour",
+    "streakLabel": "jours de série",
+    "todayLessons": "Aujourd’hui : {n} leçons"
+  },
+  "prayers": {
+    "fajr": "Fajr",
+    "dhuhr": "Dhuhr",
+    "asr": "Asr",
+    "maghrib": "Maghrib",
+    "isha": "Isha"
+  },
+  "duel": {
+    "title": "Duel de quiz",
+    "subtitle": "2 joueurs, 1 appareil - qui en sait plus ?",
+    "player1": "Joueur 1",
+    "player2": "Joueur 2",
+    "turn": "Au tour de {p}",
+    "winner": "{p} gagne !",
+    "tie": "Égalité !",
+    "rematch": "Revanche",
+    "modeLocal": "1 appareil",
+    "modeAsync": "Par code",
+    "you": "Toi",
+    "opponent": "Adversaire",
+    "asyncIntro": "Joue ton tour et envoie le code à un ami – ou saisis son code et tente de battre son score.",
+    "asyncStart": "Démarrer un nouveau duel",
+    "asyncImport": "Saisir un code",
+    "asyncImportPlaceholder": "Colle le code du duel…",
+    "asyncImportButton": "Charger les questions",
+    "asyncCodeHint": "Envoie ce code à ton adversaire (chat, e-mail …). Il le saisit et tente de battre ton score.",
+    "asyncYourScore": "Ton score",
+    "asyncYouWin": "Tu gagnes !",
+    "asyncOpponentWin": "Ton adversaire gagne !",
+    "asyncNewDuel": "Nouveau duel",
+    "asyncBack": "Retour"
+  },
+  "achievements": {
+    "title": "Badges",
+    "subtitle": "Étapes que tu as franchies dans Salati - entièrement local, sans compte.",
+    "badges": {
+      "first-lesson": {
+        "title": "Premier Pas",
+        "desc": "Tu as réussi ta première leçon de \"Apprendre à lire le Coran\"."
+      },
+      "first-surah": {
+        "title": "Première Sourate",
+        "desc": "Tu as maîtrisé une sourate complète en exercice de lecture (Al-Fatiha, Al-Ikhlas, Al-Falaq ou An-Nas)."
+      },
+      "bookmark-first": {
+        "title": "Enregistré",
+        "desc": "Tu as ajouté ton premier signet dans le Coran."
+      },
+      "streak-7": {
+        "title": "Une Semaine de Suite",
+        "desc": "Tu t'es entraîné 7 jours de suite."
+      },
+      "prayer-week": {
+        "title": "Semaine Complète",
+        "desc": "Tu as coché les 5 prières dans le suivi pendant 7 jours de suite."
+      },
+      "hifz-10": {
+        "title": "10 Versets",
+        "desc": "Tu as marqué 10 versets comme \"je les connais\" en mémorisation."
+      },
+      "quiz-25": {
+        "title": "Fan d'Exercices",
+        "desc": "Tu as terminé 25 sessions d'exercices."
+      },
+      "course-complete": {
+        "title": "Premier Cours",
+        "desc": "Tu as terminé un cours d'Étude en entier."
+      },
+      "grammar-complete": {
+        "title": "Bases de Grammaire",
+        "desc": "Tu as terminé le cours de Grammaire en entier."
+      },
+      "tajwid-complete": {
+        "title": "Règles de Tajwid",
+        "desc": "Tu as terminé le cours de Tajwid en entier."
+      },
+      "khatmah-complete": {
+        "title": "Khatma",
+        "desc": "Tu as suivi un plan de lecture khatma jusqu'au bout."
+      },
+      "streak-30": {
+        "title": "Un Mois de Suite",
+        "desc": "Tu t'es entraîné 30 jours de suite."
+      },
+      "hifz-50": {
+        "title": "50 Versets",
+        "desc": "Tu as marqué 50 versets comme \"je les connais\" en mémorisation."
+      },
+      "curriculum-complete": {
+        "title": "Tu As Appris à Lire le Coran",
+        "desc": "Tu as terminé tout le cours \"Apprendre à lire le Coran\"."
+      },
+      "streak-100": {
+        "title": "100 Jours",
+        "desc": "Tu t'es entraîné 100 jours de suite - une belle constance."
+      },
+      "note-first": {
+        "title": "Première Note",
+        "desc": "Tu as écrit ta première note personnelle sur un verset."
+      },
+      "hifz-explorer": {
+        "title": "Explorateur Hifz",
+        "desc": "Tu as commencé la mémorisation dans 3 sourates différentes."
+      },
+      "bookmark-collections": {
+        "title": "Curateur",
+        "desc": "Tu as rangé tes signets dans les 3 collections (Favoris, Mémoriser, Méditer)."
+      },
+      "offline-audio": {
+        "title": "Prêt Hors Ligne",
+        "desc": "Tu as téléchargé la récitation de 3 sourates pour l'écoute hors ligne."
+      },
+      "fasting-tracker": {
+        "title": "Suivi du Jeûne",
+        "desc": "Tu as marqué 10 jours de jeûne dans le suivi du jeûne."
+      },
+      "surah-explorer": {
+        "title": "Explorateur de Sourates",
+        "desc": "Tu as poursuivi ta lecture dans 10 sourates différentes."
+      },
+      "review-master": {
+        "title": "Maître de la Révision",
+        "desc": "Tu as amené une leçon au niveau le plus élevé du système de révision."
+      },
+      "courses-3": {
+        "title": "Trois cours",
+        "desc": "Trois cours d’étude terminés en entier."
+      },
+      "courses-all": {
+        "title": "Tous les cours",
+        "desc": "Tous les cours d’étude terminés en entier."
+      }
+    },
+    "fresh": "Nouveau"
+  },
+  "themes": {
+    "title": "Versets par Thème",
+    "subtitle": "Collections de versets organisées par thème de vie - pour réfléchir et y revenir.",
+    "versesCount": "versets",
+    "collections": {
+      "patience": {
+        "title": "Patience (Sabr)",
+        "intro": "Dans le Coran, la patience n'est pas une endurance passive, mais une posture active liée à la prière, à la confiance et à la promesse d'une récompense. Ces versets montrent à quel point le sabr est lié à la force intérieure."
+      },
+      "gratitude": {
+        "title": "Gratitude (Shukr)",
+        "intro": "La gratitude dans le Coran change le regard : non pas parce que tout est parfait, mais parce que reconnaître le bien est déjà une forme de proximité avec Allah. Ces versets invitent à regarder de plus près."
+      },
+      "worry": {
+        "title": "Peur et Inquiétude",
+        "intro": "Quand les soucis grandissent, le Coran parle sans cesse d'un soulagement qui vient et de cœurs apaisés par le rappel d'Allah. Ces versets sont pour les moments où l'esprit est bruyant."
+      },
+      "family": {
+        "title": "Famille",
+        "intro": "Parents, enfants, conjoints - le Coran décrit la famille comme un lieu de miséricorde et de responsabilité mutuelle, pas seulement de devoir. Ces versets expliquent pourquoi la famille pèse tant en islam."
+      },
+      "forgiveness": {
+        "title": "Pardon",
+        "intro": "Le pardon dans le Coran n'est pas une faiblesse, mais l'une des plus hautes vertus - à la fois le pardon qu'on demande à Allah et celui qu'on accorde aux autres. Ces versets montrent les deux faces."
+      },
+      "hope": {
+        "title": "Espoir et Confiance (Tawakkul)",
+        "intro": "Faire confiance à Allah dans le Coran ne signifie pas ne rien faire, mais lâcher prise après avoir donné le meilleur de soi, avec la promesse que l'aisance suit la difficulté. Ces versets accompagnent les passages difficiles."
+      }
+    }
+  },
+  "journeys": {
+    "title": "Plans du jour",
+    "subtitle": "Parcours de versets sur un même thème - jour après jour.",
+    "tabCollections": "Collections",
+    "tabJourneys": "Plans du jour",
+    "days": "jours",
+    "day": "Jour",
+    "start": "Démarrer le plan",
+    "newPlan": "Commencer un nouveau plan",
+    "progress": "Progression",
+    "behind": "jours de retard",
+    "complete": "Parcours terminé",
+    "markDone": "Marquer comme fait",
+    "versesOfDay": "Verset(s) du jour",
+    "reflection": "Réflexion",
+    "read": "Lire",
+    "reminder": "Rappel quotidien",
+    "items": {
+      "selfDiscovery": {
+        "title": "Se découvrir",
+        "subtitle": "Dix jours pour s'arrêter et réfléchir au sens, à l'âme et à sa propre direction.",
+        "days": {
+          "0": {
+            "title": "Pourquoi es-tu là ?",
+            "text": "Le Coran répond directement à la question du sens : l'être humain a été créé pour adorer son Créateur. Ce n'est pas une cage, mais une boussole - un point fixe à partir duquel tout le reste trouve sa place."
+          },
+          "1": {
+            "title": "Ton âme connaît les deux",
+            "text": "Tu as été créé avec la capacité de reconnaître aussi bien le mal que le bien. Se découvrir commence par prendre cette voix intérieure au sérieux, plutôt que de l'étouffer."
+          },
+          "2": {
+            "title": "Des signes autour de toi et en toi",
+            "text": "Le Coran ne désigne pas seulement le monde extérieur, mais tout autant toi-même comme lieu de compréhension. Parfois la réponse n'est pas plus de savoir, mais un regard plus attentif - vers l'intérieur."
+          },
+          "3": {
+            "title": "L'épreuve comme miroir",
+            "text": "Les moments difficiles ne sont pas un hasard dans le Coran - ils font partie de ce qui rend une foi, et un soi, authentiques. Ce qui te met à l'épreuve maintenant te montre aussi qui tu es vraiment."
+          },
+          "4": {
+            "title": "En chemin vers ton Seigneur",
+            "text": "Ce verset décrit la vie comme un mouvement, non comme un arrêt : tu es en chemin, avec effort, mais avec un but clair. Ici, se découvrir ne signifie pas 'arriver', mais connaître la direction."
+          },
+          "5": {
+            "title": "Ce qui compte à la fin",
+            "text": "Le Jour du Jugement, ni la richesse ni le statut n'aideront - seul un cœur sincère. Un rappel inconfortable mais libérateur de ce pour quoi il vaut vraiment la peine de s'efforcer."
+          },
+          "6": {
+            "title": "Demander à être guidé",
+            "text": "Cette courte demande d'Al-Fatiha est l'une des questions de découverte de soi les plus honnêtes qui soient : pas 'qui suis-je', mais 'où dois-je aller'. La répéter chaque jour garde la boussole alignée."
+          },
+          "7": {
+            "title": "Garder la mesure",
+            "text": "Être mesuré - ni dépensier ni avare - est décrit ici comme un trait des sincères. Dans la découverte de soi aussi, la maturité se trouve rarement dans l'extrême, mais dans l'équilibre."
+          },
+          "8": {
+            "title": "Purifier l'âme",
+            "text": "Ici, la réussite ne se mesure pas aux choses extérieures, mais à la façon dont tu traites ta propre âme - la purifies-tu, ou la laisses-tu se corrompre ? Une décision très personnelle, prise chaque jour."
+          },
+          "9": {
+            "title": "Plus proche que tu ne le penses",
+            "text": "Ce parcours se termine non par la distance, mais par la proximité : Allah est plus proche de toi que tu ne l'es parfois toi-même. Dans le Coran, se découvrir n'éloigne pas de Dieu - cela y ramène directement."
+          }
+        }
+      },
+      "sabrJourney": {
+        "title": "Parcours du sabr",
+        "subtitle": "Sept jours, sept situations qui demandent de la patience - du quotidien à la crise.",
+        "days": {
+          "0": {
+            "title": "Les quatre qui sauvent",
+            "text": "Cette courte sourate résume ce qui protège une personne de la perte : la foi, les bonnes actions - et s'encourager mutuellement à la vérité ET à la patience. Ici, le sabr n'est pas une affaire privée, mais quelque chose qui porte des communautés entières."
+          },
+          "1": {
+            "title": "Répondre au mal par le bien",
+            "text": "Celui qui reste patient peut transformer même l'hostilité en véritable proximité - l'une des formes de sabr les plus exigeantes. Le Coran appelle explicitement cela une qualité donnée à peu de gens."
+          },
+          "2": {
+            "title": "Patience dans la perte",
+            "text": "Peur, faim, perte de biens ou d'êtres chers - le Coran ne promet pas d'immunité contre cela, mais une attitude pour y faire face : 'Nous appartenons à Allah, et c'est à Lui que nous retournons.'"
+          },
+          "3": {
+            "title": "La patience n'est pas une faiblesse",
+            "text": "Choisir la patience plutôt que la vengeance est décrit ici clairement comme le meilleur chemin - porté par Allah Lui-même, pas seulement par ta propre force. Cela enlève la pression de devoir tout porter seul."
+          },
+          "4": {
+            "title": "Patience et rappel",
+            "text": "Ici, la patience est juste à côté de la prière et de la louange, matin et soir. Un rappel que le sabr se porte rarement seul - il vit d'un lien avec Allah renouvelé chaque jour."
+          },
+          "5": {
+            "title": "Patience et gratitude",
+            "text": "Le calme et l'immobilité - comme un vent qui se calme - sont décrits ici comme un signe pour ceux qui savent faire les deux : être patients ET reconnaissants. Les deux sont plus liés qu'il n'y paraît au premier abord."
+          },
+          "6": {
+            "title": "Ce qui demeure",
+            "text": "Tout ce que tu possèdes disparaîtra - ce qui est auprès d'Allah demeure. Cette sourate clôt le parcours par une promesse : la patience n'est pas oubliée, elle est récompensée selon le meilleur de ce que tu as fait."
+          }
+        }
+      },
+      "gratitudeJourney": {
+        "title": "Gratitude",
+        "subtitle": "Cinq jours pour tourner consciemment le regard vers ce qui est déjà là.",
+        "days": {
+          "0": {
+            "title": "Des bienfaits innombrables",
+            "text": "Si tu essayais de compter chaque bienfait de ta vie, tu n'en verrais jamais la fin. Le premier pas vers la gratitude est simple : regarder vraiment ce qui est déjà là."
+          },
+          "1": {
+            "title": "Demander à être reconnaissant",
+            "text": "Même le prophète Sulaiman a activement demandé à pouvoir être reconnaissant - la gratitude n'était donc pas pour lui un état automatique, mais quelque chose pour lequel on lutte. Cela enlève la pression de l'auto-perfectionnement."
+          },
+          "2": {
+            "title": "La gratitude en actes",
+            "text": "À la famille de Dawud, il n'est pas dit 'ressentez de la gratitude', mais 'œuvrez avec gratitude'. Le shukr se montre ici non seulement dans le cœur, mais dans ce que font tes mains."
+          },
+          "3": {
+            "title": "Quel bienfait nierais-tu ?",
+            "text": "Ce verset se répète plus de 30 fois dans la sourate Ar-Rahman - presque comme un refrain destiné à réveiller. Demande-toi aujourd'hui, concrètement : quel bienfait as-tu récemment tenu pour acquis ?"
+          },
+          "4": {
+            "title": "La gratitude multiplie",
+            "text": "Une promesse à effet direct : à qui est reconnaissant, il sera donné davantage. Non comme un système de récompense, mais parce que la gratitude ouvre les yeux sur ce qui est déjà là - et en rend davantage visible."
+          }
+        }
+      },
+      "newBeginning": {
+        "title": "Nouveau départ",
+        "subtitle": "Sept jours pour qui veut repartir de zéro.",
+        "days": {
+          "0": {
+            "title": "Le premier pas : revenir",
+            "text": "Le repentir sincère est explicitement, dans le Coran, le début de quelque chose de nouveau, pas la fin. Le premier pas d'un nouveau départ est rarement spectaculaire - c'est simplement ceci : revenir honnêtement."
+          },
+          "1": {
+            "title": "Ne désespère jamais",
+            "text": "Peu importe ce qu'il y a derrière toi : ce verset interdit explicitement de désespérer de la miséricorde d'Allah. Aucune erreur n'est trop grande pour rendre un nouveau départ impossible."
+          },
+          "2": {
+            "title": "Avant qu'il ne soit trop tard",
+            "text": "La suite directe d'hier : revenir est décrit ici comme un mouvement actif - vers Allah, et maintenant, pas un jour peut-être. Un nouveau départ est un verbe, pas un état qui arrive tout seul."
+          },
+          "3": {
+            "title": "Le changement commence en toi",
+            "text": "Avant que les circonstances extérieures ne changent, quelque chose doit bouger à l'intérieur. Ce verset place la responsabilité - et la possibilité - d'un vrai changement directement entre tes mains."
+          },
+          "4": {
+            "title": "Le mal devient bien",
+            "text": "Pour ceux qui reviennent, croient et agissent, Allah promet ici quelque chose de remarquable : les erreurs passées ne sont pas seulement pardonnées, elles sont transformées en bonnes actions. Ton passé n'a pas à te définir."
+          },
+          "5": {
+            "title": "Demander de l'espace intérieur",
+            "text": "Avant de se présenter devant Pharaon, Moïse a d'abord demandé quelque chose de très personnel : une poitrine élargie, une tâche allégée. Ton nouveau départ, lui aussi, peut commencer par cette demande, pas par une perfection immédiate."
+          },
+          "6": {
+            "title": "Un pardon qui porte",
+            "text": "Cette promesse boucle la boucle : celui qui revient, croit, fait le bien et reste sur le chemin trouve un pardon qui le porte. Un nouveau départ n'est pas un instant unique - c'est une direction que tu choisis à nouveau chaque jour."
+          }
+        }
+      },
+      "ramadanPrep": {
+        "title": "Préparation au Ramadan",
+        "subtitle": "Dix jours pour préparer le cœur et les habitudes avant l'arrivée du mois.",
+        "days": {
+          "0": {
+            "title": "Pourquoi nous jeûnons",
+            "text": "Le jeûne a été prescrit aux croyants avant nous et à nous, avec un seul but : la taqwa, un cœur éveillé qui n'oublie pas Allah. Le Ramadan n'est pas un régime, c'est un entraînement de l'âme. Demande-toi aujourd'hui ce que ce mois doit changer en toi."
+          },
+          "1": {
+            "title": "Des jours comptés",
+            "text": "Le Coran appelle le jeûne 'des jours comptés'. Le mois paraît long avant de commencer et étonnamment court une fois terminé. Fixe dès maintenant un objectif petit et réaliste pour que ces jours ne t'échappent pas."
+          },
+          "2": {
+            "title": "Le mois du Coran",
+            "text": "Le Ramadan est honoré parce que le Coran y est descendu ; le jeûne et le Livre vont ensemble. Planifie aujourd'hui quand et combien tu veux lire, même si ce ne sont que quelques versets par jour."
+          },
+          "3": {
+            "title": "Il est proche",
+            "text": "Au beau milieu des versets du jeûne, Allah dit : Je suis proche, Je réponds à celui qui M'invoque. Le Ramadan est un mois de doua. Commence une petite liste de ce que tu veux vraiment demander."
+          },
+          "4": {
+            "title": "Une nuit qui vaut une vie",
+            "text": "Laylat al-Qadr vaut mieux que mille mois. Personne ne sait exactement quelle nuit c'est, et c'est justement le sens : elle veut être cherchée. Celui qui se prépare maintenant n'arrivera pas démuni aux dix dernières nuits."
+          },
+          "5": {
+            "title": "Prends la bonne provision",
+            "text": "Pour chaque voyage tu prépares des provisions, et le Coran dit que la meilleure provision est la taqwa. Le jeûne vide la journée pour que l'essentiel devienne visible. Réfléchis à l'habitude que tu veux laisser derrière toi ce mois-ci."
+          },
+          "6": {
+            "title": "S'entraîner pour les nuits",
+            "text": "Se lever la nuit est exigeant, et le Coran le dit franchement : les heures de la nuit marquent plus profondément. Tu n'as pas besoin d'heures ; commence cette nuit par quelques minutes de prière en plus et grandis à partir de là."
+          },
+          "7": {
+            "title": "Donner se multiplie",
+            "text": "Un seul grain devient sept cents : c'est ainsi que le Coran décrit le don. La générosité pendant le Ramadan n'est pas une activité annexe, elle fait partie du jeûne. Décide aujourd'hui de ce que tu donneras, même si c'est peu et régulier."
+          },
+          "8": {
+            "title": "Il a été rendu facile",
+            "text": "Allah dit qu'Il a rendu le Coran facile à méditer, puis demande : y a-t-il quelqu'un pour s'en souvenir ? L'invitation est personnelle. Quel que soit ton niveau, le Livre est à ta portée ce mois-ci."
+          },
+          "9": {
+            "title": "Commence la course maintenant",
+            "text": "Le Coran parle de s'empresser vers le pardon et vers un paradis aussi vaste que les cieux et la terre. Le Ramadan est la piste de course de l'année. N'attends pas le premier jour de jeûne : commence aujourd'hui et entre dans le mois déjà en mouvement."
+          }
+        }
+      },
+      "griefLoss": {
+        "title": "Deuil et perte",
+        "subtitle": "Sept jours de réconfort paisible pour un cœur en deuil.",
+        "days": {
+          "0": {
+            "title": "Nous Lui appartenons",
+            "text": "'Nous appartenons à Allah et c'est vers Lui que nous retournons' : ces mots ne sont pas une formule mais une vérité sur laquelle s'appuyer. Le verset suivant promet bénédictions et miséricorde à ceux qui endurent. Ton deuil est vu, et il n'est pas vain."
+          },
+          "1": {
+            "title": "La facilité est avec la difficulté",
+            "text": "Le verset ne dit pas que la facilité vient après la difficulté, mais avec elle, et il le dit deux fois. Même dans les jours les plus lourds, il y a des moments de répit : le sommeil, une parole douce, un souvenir qui te fait sourire. Autorise-toi à les remarquer sans culpabilité."
+          },
+          "2": {
+            "title": "Un chemin que chacun emprunte",
+            "text": "Toute âme goûtera la mort ; personne n'est une exception, et personne n'est visé seul. Celui que tu as perdu a suivi un chemin que nous suivrons tous. Dans le Coran, la mort n'est pas une fin mais un retour."
+          },
+          "3": {
+            "title": "Ce qui demeure",
+            "text": "Tout ce qui est sur terre périt, et demeure le Visage de ton Seigneur, plein de majesté et de noblesse. Quand la perte ébranle ce qui semblait stable, ce verset montre Celui qui ne change pas. Accroche-toi à ce qui ne peut pas t'être enlevé."
+          },
+          "4": {
+            "title": "Le repos du cœur",
+            "text": "'C'est par le rappel d'Allah que les cœurs s'apaisent.' Le deuil serre la poitrine ; le dhikr la desserre, lentement et doucement. Quelques minutes calmes de rappel aujourd'hui ne sont pas peu de chose."
+          },
+          "5": {
+            "title": "Dis-Lui tout",
+            "text": "Yaqub, un prophète, a pleuré son fils et a dit : Je ne me plains de mon chagrin et de ma tristesse qu'à Allah. Être en deuil n'est pas un manque de foi. Porte tout ce poids à Celui qui peut le porter."
+          },
+          "6": {
+            "title": "L'âme apaisée",
+            "text": "'Ô âme apaisée, retourne vers ton Seigneur, satisfaite et agréée.' Ces versets sont une porte d'espoir, pour celui qui est parti avant et pour toi. Demande à Allah de lui accorder, et un jour à toi aussi, ce doux retour."
+          }
+        }
+      },
+      "examTime": {
+        "title": "Période d'examens",
+        "subtitle": "Sept jours de concentration, de calme et de confiance pour réviser et passer tes examens.",
+        "days": {
+          "0": {
+            "title": "Demande davantage",
+            "text": "'Mon Seigneur, augmente-moi en science' est le seul accroissement que le Prophète a reçu l'ordre de demander. Fais de cette courte doua une partie de chaque session de révision. La science ne se collecte pas seulement, elle est accordée."
+          },
+          "1": {
+            "title": "Pas plus que tu ne peux porter",
+            "text": "Allah n'impose à aucune âme plus qu'elle ne peut supporter. L'examen devant toi entre dans cette promesse. Fais aujourd'hui ce que tu peux, et refuse la voix qui dit que c'est trop pour toi."
+          },
+          "2": {
+            "title": "Une chose, puis la suivante",
+            "text": "'Quand tu as terminé, lève-toi pour la tâche suivante, et tourne ton désir vers ton Seigneur.' Les versets décrivent un rythme calme : achever une chose, puis passer à la suivante. Révise par blocs concentrés et laisse les pauses être vraiment des pauses."
+          },
+          "3": {
+            "title": "Savoir a de la valeur",
+            "text": "'Sont-ils égaux, ceux qui savent et ceux qui ne savent pas ?' Le Coran traite l'apprentissage comme un honneur, pas comme une corvée. L'effort que tu fournis en ce moment a une valeur en soi, quelle que soit la note finale."
+          },
+          "4": {
+            "title": "Élevés en degrés",
+            "text": "Allah élève en degrés ceux qui croient et ceux qui ont reçu la science. Apprendre honnêtement est une forme d'adoration. Commence par Bismillah, et tes révisions deviennent plus que des points sur une copie."
+          },
+          "5": {
+            "title": "Décide, puis fais confiance",
+            "text": "'Et quand tu as pris ta décision, place ta confiance en Allah.' Le tawakkul ne remplace pas la préparation, il la couronne. Prépare-toi du mieux que tu peux, puis entre avec un cœur tranquille : tu as fait ta part."
+          },
+          "6": {
+            "title": "Il suffit",
+            "text": "Quiconque s'en remet à Allah, Il lui suffit. Une fois le résultat remis entre Ses mains, tu ne le portes plus seul. Entre, donne le meilleur de toi-même et laisse l'issue à Celui qui la décide bien."
+          }
+        }
+      },
+      "rizqWork": {
+        "title": "Rizq et travail",
+        "subtitle": "Sept jours sur la subsistance, le travail honnête et la confiance dans le Pourvoyeur.",
+        "days": {
+          "0": {
+            "title": "Ta subsistance est écrite",
+            "text": "Il n'y a pas de créature sur terre dont la subsistance n'incombe à Allah ; celle du moineau comme la tienne. Cela n'annule pas l'effort, cela en retire la panique. Travaille aujourd'hui sans craindre de perdre ce qui t'est destiné."
+          },
+          "1": {
+            "title": "Prie, puis disperse-toi",
+            "text": "'Quand la prière est achevée, dispersez-vous sur terre et recherchez de la grâce d'Allah.' Le travail et l'adoration ne sont pas rivaux ; le verset les réunit dans une seule phrase. Protège tes prières dans ta journée de travail et laisse-les lui donner un ordre."
+          },
+          "2": {
+            "title": "Parcours la terre",
+            "text": "Allah a rendu la terre praticable : 'parcourez ses étendues et mangez de Sa subsistance'. Chercher le rizq fait partie du plan lui-même. Sors, frappe aux portes, apprends : le mouvement est attendu de toi."
+          },
+          "3": {
+            "title": "L'istighfar ouvre des portes",
+            "text": "Nuh a dit à son peuple : demandez pardon, et Il enverra la pluie, des biens et des enfants. Le Coran lie l'istighfar à la subsistance de la manière la plus concrète. Quand tout semble bloqué, c'est un endroit où commencer."
+          },
+          "4": {
+            "title": "Licite et bon",
+            "text": "'Mangez de ce qui est licite et bon sur la terre.' La manière dont tu gagnes compte autant que combien tu gagnes. Un revenu plus modeste mais propre est une meilleure fondation qu'un grand revenu qui ne l'est pas."
+          },
+          "5": {
+            "title": "Les deux mondes",
+            "text": "Recherche avec ce qu'Allah t'a donné la demeure de l'au-delà, et n'oublie pas ta part de ce monde. Le verset autorise l'ambition et lui donne une direction. Travaille dur, profite de ce qui est à toi et garde la destination en vue."
+          },
+          "6": {
+            "title": "Ce que tu donnes revient",
+            "text": "'Tout ce que vous dépensez, Il le remplace, et Il est le meilleur des pourvoyeurs.' Donner ne réduit pas le rizq, il l'invite. Fais du don sur tes revenus une habitude, aussi modeste soit-elle, et fais confiance à la promesse."
+          }
+        }
+      }
+    },
+    "behindOne": "jour de retard",
+    "continuePlan": "Continuer",
+    "activeSection": "Actifs",
+    "allSection": "Tous les plans"
+  },
+  "ki": {
+    "title": "Salati IA",
+    "subtitle": "Répond uniquement à partir du Coran, des 40 hadiths d'an-Nawawi, de douas vérifiées et des textes du cours Salati - fonctionne à 100 % sur votre appareil.",
+    "aiDisclosure": "Réponse assistée par IA - ce n'est pas une fatwa ni l'avis d'un érudit. Elle se compose uniquement d'extraits littéraux des sources citées ; le passage adéquat peut manquer ou être incomplet - lis la source liée.",
+    "webOnlyNote": "L'IA native n'est disponible que dans l'application. Utilisez la version navigateur.",
+    "openWebVersion": "Ouvrir la version navigateur",
+    "deleteModel": "Supprimer le modèle",
+    "deleteModelConfirm": "Supprimer vraiment le modèle ? C'est un reliquat de versions antérieures : l'IA n'en a plus besoin et ne le retéléchargera pas. Vous libérez {size}.",
+    "inputPlaceholder": "Votre question …",
+    "send": "Demander",
+    "sourcesLabel": "Sources",
+    "noAnswer": "Je ne trouve rien à ce sujet dans mes sources locales. Pour une réponse fiable, merci de consulter un érudit.",
+    "clearHistory": "Effacer l'historique",
+    "welcome": "Salam ! Pose-moi une question - je vais chercher les passages correspondants dans le Coran, les 40 hadiths d'an-Nawawi, les douas vérifiées et les textes du cours Salati, et répondre uniquement sur cette base.",
+    "clearHistoryConfirm": "Vraiment supprimer la conversation ? Cette action est irréversible.",
+    "examplesTitle": "Par exemple :",
+    "example1": "Quels sont les cinq piliers de l'islam ?",
+    "example2": "Comment fait-on les ablutions (wudu) ?",
+    "example3": "Qu'est-ce que la prière de l'icha ?",
+    "example4": "Qu’est-ce qui rompt le jeûne ?",
+    "example5": "Combien de zakat dois-je payer ?",
+    "example6": "Que dit l'islam sur la patience ?",
+    "germanSourcesNote": "Les sources de l'IA (traduction du Coran, hadiths, textes de cours) n'existent pour l'instant qu'en allemand. Les réponses sont donc en allemand.",
+    "partlyGermanSourcesNote": "La traduction du Coran, les hadiths, les textes de cours et les guides sont disponibles dans ta langue. Certains passages du savoir de base restent en allemand.",
+    "feedbackQuestion": "Est-ce que cela t’a aidé ?",
+    "feedbackThanks": "Merci — ton retour reste sur ton appareil.",
+    "feedbackGood": "Utile",
+    "feedbackBad": "Pas utile"
+  },
+  "onboarding": {
+    "skip": "Passer",
+    "next": "Continuer",
+    "welcomeTitle": "Bienvenue sur Salati",
+    "welcomeTagline": "Horaires de prière, Coran, qibla et cours d'apprentissage dans une seule application.",
+    "welcomePrivacy": "Sans compte, sans traçage - tout reste sur votre appareil.",
+    "locationTitle": "Votre position",
+    "locationHint": "Salati a besoin de votre position pour des horaires de prière précis. Utilisez la localisation ou recherchez votre ville.",
+    "methodTitle": "Méthode de calcul",
+    "methodHint": "Choisissez la méthode utilisée dans votre région ou communauté. Vous pourrez la modifier à tout moment dans les réglages.",
+    "notifTitle": "Notifications de prière",
+    "notifHint": "Recevez un rappel à chaque heure de prière. Vous pourrez l'ajuster à tout moment dans les réglages.",
+    "newToIslam": "Nouveau dans l'Islam ? Voir tes premiers pas",
+    "offlineTitle": "Rendre disponible hors ligne",
+    "offlineHint": "Télécharge les modèles maintenant pour que la vérification de récitation et l’IA fonctionnent sans internet. Tout est optionnel.",
+    "offlineSpeech": "Modèle vocal (vérification de récitation)",
+    "offlineReady": "Téléchargé",
+    "offlineLater": "Tu peux le faire à tout moment dans les Réglages.",
+    "done": "Terminé"
+  },
+  "dhikrAfterSalah": {
+    "title": "Dhikr après la prière",
+    "subtitle": "33x SubhanAllah, 33x Alhamdulillah, 34x Allahu Akbar",
+    "tapHint": "Touche le cercle pour compter",
+    "totalProgress": "Total : {count} / {total}",
+    "completeTitle": "Ma sha Allah !",
+    "completeSubtitle": "Tu as terminé toute la séquence de dhikr après la prière.",
+    "restartCta": "Recommencer",
+    "doneCta": "Terminé"
+  },
+  "gettingStarted": {
+    "title": "Premiers pas",
+    "subtitle": "Nouveau dans l'Islam ou tu viens de prononcer la Shahada ? Voici tes premiers pas, dans un ordre pertinent.",
+    "cta": "Commencer",
+    "steps": {
+      "shahada": {
+        "title": "Comprendre l'attestation de foi",
+        "desc": "Le sens de la Shahada - expliqué dans le cours Aqida (bases de la foi)"
+      },
+      "wudu": {
+        "title": "Apprendre les ablutions",
+        "desc": "Le wudu étape par étape, avec la dua"
+      },
+      "howToPray": {
+        "title": "Apprendre ta première prière",
+        "desc": "Le déroulement et les postures de la prière"
+      },
+      "prayerTimes": {
+        "title": "Configurer les heures de prière",
+        "desc": "Définis ta localisation, la méthode de calcul et les rappels"
+      },
+      "duas": {
+        "title": "Douas essentielles",
+        "desc": "Douas pour le quotidien, le sommeil et plus"
+      },
+      "alphabet": {
+        "title": "Apprendre l'alphabet arabe",
+        "desc": "Tes premiers pas vers la lecture du Coran"
+      }
+    }
+  },
+  "prayAlong": {
+    "customize": "Personnaliser l'affichage",
+    "fontSize": "Taille du texte",
+    "show": "Afficher",
+    "showTranslation": "Traduction",
+    "showArabic": "Arabe",
+    "showNotes": "Indications",
+    "arrangement": "Disposition",
+    "translitFirst": "Translittération d'abord",
+    "arabicFirst": "Arabe d'abord"
+  },
+  "learnToPray": {
+    "title": "Apprendre à prier",
+    "subtitle": "Apprends tranquillement : arabe, translittération et traduction à chaque étape.",
+    "intro": "Comment prier, étape par étape. Prends ton temps : chaque étape montre le texte arabe, la translittération latine et la traduction. Touche le texte arabe pour l’écouter. Pour suivre pendant la prière, utilise « Prier pas à pas ».",
+    "pickPrompt": "Quelle prière veux-tu apprendre ?",
+    "coreTitle": "Al-Fatiha et courtes sourates",
+    "coreSubtitle": "La sourate Al-Fatiha complète (7 versets) ainsi qu’Al-Ikhlas et Al-Kawthar : les premiers textes que l’on mémorise.",
+    "surahsTitle": "Les deux courtes sourates",
+    "surahsSubtitle": "Al-Ikhlas et Al-Kawthar : les premières sourates que l’on mémorise."
+  },
+  "widgetConfig": {
+    "opacity": "Opacité du fond",
+    "accentColor": "Couleur d'accent",
+    "fontSize": "Taille de police",
+    "fontSmall": "Petite",
+    "fontMedium": "Moyenne",
+    "fontLarge": "Grande",
+    "corners": "Coins",
+    "cornerSharp": "Nets",
+    "cornerRounded": "Arrondis",
+    "cornerRound": "Ronds",
+    "timeFormat": "Format de l'heure",
+    "timeAuto": "Auto",
+    "time24h": "24 h",
+    "time12h": "12 h",
+    "showHijri": "Afficher la date hégirienne",
+    "showSunrise": "Afficher le lever du soleil",
+    "highlightNext": "Mettre en évidence la prochaine prière",
+    "showCountdown": "Afficher le compte à rebours",
+    "showArabic": "Afficher le texte arabe",
+    "showSource": "Afficher la source",
+    "showBearing": "Afficher les degrés",
+    "showDirection": "Afficher la direction",
+    "streakLarge": "Grand nombre",
+    "showStreakLabel": "Afficher le libellé",
+    "duaSelection": "Sélection",
+    "duaDaily": "Quotidienne",
+    "duaRandom": "Aléatoire",
+    "title": "Configurer le widget",
+    "typeCountdown": "Compte à rebours",
+    "typeStreak": "Série d'apprentissage",
+    "color": "Couleur",
+    "transparent": "Fond transparent",
+    "content": "Contenu",
+    "showCoords": "Afficher le lieu",
+    "showNextTime": "Afficher l'heure de la prochaine prière",
+    "showTranslation": "Afficher la traduction",
+    "showDistance": "Afficher la distance",
+    "cancel": "Annuler",
+    "done": "Terminé",
+    "textColor": "Couleur du texte",
+    "previewHint": "Les modifications s'appliquent uniquement à ce widget. Appuyez longuement sur un widget de l'écran d'accueil pour le configurer individuellement."
+  },
+  "podcast": {
+    "listenOnSpotify": "Écouter sur Spotify",
+    "title": "La langue du Coran",
+    "subtitle": "Comprendre l'arabe, épisode après épisode",
+    "heroDesc": "Le podcast : la grammaire du Coran, épisode après épisode.",
+    "empty": "Bientôt disponible.",
+    "episodeLabel": "Épisode",
+    "play": "Lecture",
+    "pause": "Pause",
+    "seek": "Position",
+    "volume": "Volume",
+    "previous": "Épisode précédent",
+    "next": "Épisode suivant",
+    "showTranscript": "Lire en suivant",
+    "hideTranscript": "Masquer la transcription",
+    "settings": "Réglages",
+    "repeat": "Répéter",
+    "sleepTimer": "Minuteur de veille",
+    "speed": "Vitesse",
+    "off": "Désactivé",
+    "endOfEpisode": "Fin de l'épisode",
+    "autoplay": "Lecture automatique",
+    "download": "Télécharger",
+    "downloaded": "Téléchargé",
+    "offline": "Hors ligne",
+    "cancelDownload": "Annuler le téléchargement",
+    "deleteDownload": "Supprimer le téléchargement",
+    "deleteDownloadConfirmTitle": "Supprimer le téléchargement ?",
+    "deleteDownloadConfirmBody": "Cet épisode sera supprimé de votre appareil.",
+    "moreEpisodes": "Autres épisodes",
+    "series": "Série"
+  },
+  "lernen": {
+    "learnDesc": "Plus de 2000 leçons interactives — pas à pas.",
+    "hifzDesc": "Mémorise le Coran grâce à la reconnaissance vocale.",
+    "more": "Plus d'apprentissage"
+  },
+  "reels": {
+    "title": "Reels",
+    "comingSoonTitle": "Reels bientôt disponibles",
+    "comingSoonDesc": "De courtes vidéos à faire défiler arriveront bientôt ici.",
+    "errorTitle": "Impossible de charger les reels",
+    "errorDesc": "Vérifie ta connexion et réessaie.",
+    "retry": "Réessayer",
+    "share": "Partager",
+    "back": "Retour",
+    "mute": "Couper le son",
+    "unmute": "Activer le son",
+    "webOnlyNote": "Les reels se lisent dans l'application Salati. Ouvre l'app pour les regarder.",
+    "forYou": "Pour toi",
+    "all": "Tous",
+    "like": "J’aime",
+    "play": "Lire",
+    "pause": "Pause",
+    "seek": "Position"
+  },
+  "video": {
+    "title": "Vidéos",
+    "subtitle": "Les vidéos d’apprentissage — comprendre le Coran pas à pas.",
+    "heroDesc": "Vidéos d’apprentissage : grammaire, tajwid et plus — à regarder.",
+    "reelsTitle": "Reels",
+    "reelsDesc": "Clips courts — le savoir en petites doses.",
+    "empty": "Bientôt disponible.",
+    "moreEpisodes": "Plus de vidéos",
+    "episodeLabel": "Épisode",
+    "topics": "Thèmes",
+    "continue": "Reprendre",
+    "play": "Lire",
+    "pause": "Pause",
+    "seek": "Position",
+    "previous": "Vidéo précédente",
+    "next": "Vidéo suivante",
+    "fullscreen": "Plein écran",
+    "download": "Télécharger",
+    "offline": "Hors ligne",
+    "cancelDownload": "Annuler le téléchargement",
+    "deleteDownload": "Supprimer le téléchargement",
+    "deleteDownloadConfirmTitle": "Supprimer le téléchargement ?",
+    "deleteDownloadConfirmBody": "La vidéo sera supprimée de votre appareil.",
+    "continueWatching": "Reprendre le visionnage",
+    "playlists": "Playlists",
+    "playlist": "Playlist",
+    "newPlaylist": "Nouvelle playlist",
+    "playlistNamePlaceholder": "Nom de la playlist",
+    "createPlaylist": "Créer la playlist",
+    "addToPlaylist": "Ajouter à la playlist",
+    "removeFromPlaylist": "Retirer de la playlist",
+    "deletePlaylist": "Supprimer la playlist",
+    "deletePlaylistConfirmTitle": "Supprimer la playlist ?",
+    "deletePlaylistConfirmBody": "La playlist sera supprimée. Les vidéos sont conservées.",
+    "playlistEmpty": "Aucune vidéo dans cette playlist pour l’instant.",
+    "noPlaylists": "Aucune playlist. Créez-en une pour rassembler des vidéos.",
+    "playAll": "Tout lire",
+    "videos": "Vidéos",
+    "autoplay": "Lecture automatique",
+    "autoplayHint": "Lire automatiquement la vidéo suivante",
+    "backgroundPlay": "Continuer en arrière-plan",
+    "backgroundPlayHint": "Le son continue quand vous quittez l’app",
+    "pip": "Image dans l’image",
+    "settings": "Réglages",
+    "speed": "Vitesse",
+    "renamePlaylist": "Renommer"
+  },
+  "media": {
+    "title": "Médias",
+    "subtitle": "Podcast, vidéos et reels au même endroit.",
+    "contentLanguage": "Contenu en {lang}",
+    "languages": {
+      "de": "allemand"
+    }
+  },
+  "handouts": {
+    "title": "Supports de cours",
+    "subtitle": "Supports de cours en PDF à lire et à télécharger.",
+    "empty": "Bientôt disponible.",
+    "pages": "pages",
+    "read": "Lire",
+    "download": "Télécharger",
+    "offline": "Hors ligne",
+    "cancelDownload": "Annuler le téléchargement",
+    "deleteDownload": "Supprimer le téléchargement",
+    "deleteDownloadConfirmTitle": "Supprimer le téléchargement ?",
+    "deleteDownloadConfirmBody": "Le PDF sera supprimé de votre appareil.",
+    "openInBrowser": "Ouvrir dans le navigateur",
+    "viewerError": "Le PDF n'a pas pu être chargé."
+  },
+  "lizenzen": {
+    "title": "Sources et licences",
+    "subtitle": "Titulaires de droits et licences des contenus utilisés dans Salati",
+    "intro": "Salati utilise des textes, de l'audio, des données, des polices et des modèles provenant de tiers. Tous les titulaires de droits et les licences sous lesquelles nous les utilisons sont indiqués ici. Lorsqu'une licence exige une mention - par exemple Apache-2.0, MIT ou ODbL -, cette page l'assure.",
+    "categories": {
+      "quran": "Texte coranique et traductions",
+      "recitation": "Récitations",
+      "hadith": "Recueils de hadiths",
+      "font": "Polices",
+      "ai": "Modèles d'IA",
+      "speech": "Reconnaissance vocale",
+      "maps": "Cartes et données de lieux",
+      "prayerTimes": "Horaires de prière et calendrier",
+      "data": "Autres sources de données",
+      "images": "Images",
+      "software": "Bibliothèques logicielles"
+    },
+    "terms": {
+      "providerTerms": "Conditions d'utilisation du fournisseur",
+      "reciterRights": "Droits des récitateurs et fournisseurs concernés",
+      "publicDomain": "Unlicense (domaine public)",
+      "fontEula": "Licence du fabricant (intégrée à la police)",
+      "hadeethencTerms": "Reproduction sans modification avec mention de la source (conditions du fournisseur)",
+      "rassoulRelease": "Libéré par l'auteur - reproduction inchangée avec mention de la source"
+    },
+    "distributedSection": "Ce que nous diffusons nous-mêmes",
+    "distributedText": "La plupart des contenus sont récupérés par ton appareil directement auprès du fournisseur concerné - nous ne les rediffusons pas, la mention de la source y suffit. Ce que nous diffusons nous-mêmes : le modèle de langue Qwen2.5-1.5B-Instruct et le modèle de reconnaissance vocale de Tarteel (tous deux depuis notre propre stockage), la police KFGQPC HAFS et toutes les bibliothèques logicielles contenues dans l’application. Pour ces œuvres, le texte intégral de la licence est joint - il s’ouvre directement sous l’entrée concernée. Nous diffusons également nous-mêmes le tafsir en allemand d’Abu-r-Ridā Muhammad Ibn Ahmad Ibn Rassoul - l’auteur l’a libéré de tout droit d’auteur, mais exige la mention de la source.",
+    "moreTextsSection": "Autres textes de licence",
+    "moreTextsIntro": "Licences de bibliothèques plus petites présentes dans l’application, ainsi que la liste complète de toutes les mentions de droit d’auteur (NOTICE). Les licences MIT et BSD exigent la mention originale du titulaire des droits - elle figure dans le NOTICE, pas dans le texte de la licence.",
+    "appliesTo": "S’applique à :",
+    "showFullText": "Afficher le texte intégral",
+    "hideFullText": "Masquer le texte intégral",
+    "originalOnly": "Les textes de licence sont donnés dans leur langue d'origine et ne sont pas traduits - une traduction ne serait pas la licence.",
+    "changesSection": "Modifications d’œuvres de tiers",
+    "changesText": "La licence Apache-2.0 nous oblige à signaler nos propres modifications. Nous diffusons Qwen2.5-1.5B-Instruct sous forme de fichier GGUF avec quantification Q4_K_M, et tarteel-ai/whisper-base-ar-quran sous forme de fichier GGML avec quantification q5_0 ainsi qu’en version ONNX pour le navigateur. Les deux modèles ont seulement été convertis dans un autre format de fichier et réduits - sans réentraînement et sans modification des poids. La police KFGQPC HAFS est diffusée telle quelle.",
+    "ownContentSection": "Nos propres contenus",
+    "ownContentText": "Les textes de cours, explications, questions de quiz, supports ainsi que les productions de podcast et de vidéo de Salati sont nos propres œuvres. Vous pouvez les télécharger et les utiliser à des fins personnelles ; leur rediffusion ou leur usage commercial nécessite notre accord.",
+    "noticeSection": "Avis relatif aux droits",
+    "noticeText": "Nous nous efforçons de citer correctement chaque source. Si une mention manque, si une indication de licence est inexacte ou si un contenu de Salati porte atteinte à vos droits, écrivez-nous à salatibox@gmail.com : nous corrigerons l'information ou retirerons le contenu immédiatement."
+  },
+  "mosqueMatch": {
+    "title": "Aligner sur ma mosquée",
+    "subtitle": "Recopie les horaires affichés — l’app trouve le réglage correspondant",
+    "introFooter": "Le calcul se fait pour ce lieu et cette date. Si ta mosquée est ailleurs, règle d’abord le lieu dans les réglages.",
+    "forDate": "Horaires du",
+    "enterTitle": "Horaires de ta mosquée",
+    "enterFooter": "Un seul horaire suffit ; plus tu en saisis, plus le résultat est précis. Saisis les horaires de l’adhan, pas ceux de l’iqama. Format : 05:12",
+    "placeholder": "--:--",
+    "search": "Chercher le réglage correspondant",
+    "needInput": "Saisis au moins un horaire, par exemple 05:12.",
+    "resultTitle": "Voici ce qui correspond le mieux",
+    "resultAngles": "Angles",
+    "resultExact": "Cette méthode retrouve tes horaires sans aucune correction — un résultat très sûr.",
+    "resultAdjusted": "La méthode ne tombe pas à la minute ; le reste passe dans la correction en minutes. Tes horaires restent ainsi justes toute l’année.",
+    "resultWarn": "L’écart est important. Vérifie le lieu et si tu as bien saisi les horaires de l’adhan — ceux de l’iqama sont volontairement plus tardifs.",
+    "deviation": "Écart moyen",
+    "noAdjust": "aucune nécessaire",
+    "apply": "Appliquer",
+    "appliedShort": "Appliqué",
+    "applied": "Enregistré. L’affichage, les notifications, les widgets et l’export calendrier utilisent désormais ce réglage.",
+    "applyFooter": "Définit la méthode de calcul, l’école pour le Asr, la règle des hautes latitudes et la correction en minutes.",
+    "whyTitle": "Pourquoi ne pas simplement décaler ?",
+    "whyText": "Un simple décalage n’est juste que pour le jour que tu recopies. Les méthodes diffèrent par l’angle du soleil, et cet angle agit différemment selon la saison — en Allemagne de plus d’une heure entre décembre et juin. L’app cherche donc d’abord la méthode et ne décale les minutes qu’ensuite."
+  },
+  "prayerSource": {
+    "title": "D’où viennent tes horaires de prière",
+    "subtitle": "Source, méthode et comment retrouver tes propres horaires",
+    "intro": "Les horaires de prière sont calculés, non mesurés. L’heure obtenue dépend de l’autorité retenue — les écarts vont de quelques minutes à plus d’une heure. Salati indique laquelle est utilisée.",
+    "currentTitle": "Ce qui s’applique actuellement",
+    "currentFooter": "Ces valeurs valent aussi bien pour l’affichage, les notifications, les widgets, l’horloge que pour l’export calendrier.",
+    "angles": "Angles",
+    "noAdjust": "aucune",
+    "adjustCount": "{n} ajustées",
+    "countryTitle": "À propos de ton pays",
+    "countryFooter": "En {country}, la plupart des communautés suivent {method}. Salati ne change rien de lui-même — c’est ta décision.",
+    "howTitle": "Comment retrouver tes horaires",
+    "howMosque": "Aligner sur ma mosquée",
+    "howMosqueHint": "Recopie les horaires affichés, l’app fait le reste",
+    "howSettings": "Choisir l’autorité toi-même",
+    "howSettingsHint": "Méthode de calcul, école pour le Asr, règle des hautes latitudes et correction en minutes",
+    "howMosques": "Mosquées à proximité",
+    "howMosquesHint": "Trouver une communauté proche et lui demander ses horaires",
+    "dataTitle": "Source des données",
+    "dataText": "Avec Internet, Salati récupère les horaires via l’API AlAdhan, qui reprend les paramètres des autorités. Sans Internet, l’app calcule elle-même les mêmes horaires (bibliothèque adhan, licence MIT) — avec exactement les mêmes angles, pour que le hors-ligne ne diffère jamais du en-ligne.",
+    "methodTitle": "Ce que fixe la méthode",
+    "methodText": "Le Fajr commence lorsque le soleil atteint un certain angle sous l’horizon, et le Isha de même le soir. Les autorités fixent ces angles différemment — entre 12° et 20°. Certaines définissent le Isha non par un angle mais par un nombre fixe de minutes après le Maghrib. D’autres ajoutent une marge de quelques minutes au lever, au midi et au coucher du soleil.",
+    "asrTitle": "Asr : deux longueurs d’ombre",
+    "asrText": "Le Asr commence quand l’ombre d’un objet a grandi de sa propre longueur (chaféite, malikite, hanbalite) ou du double (hanafite). Cela fait environ 45 à 90 minutes d’écart — non pas une imprécision, mais deux écoles juridiques.",
+    "highLatTitle": "Au nord du 48e parallèle",
+    "highLatText": "Dans une grande partie de l’Allemagne, le soleil ne descend pas assez bas en été pour atteindre les angles du Fajr et du Isha. Des règles de substitution déduisent alors les deux horaires de la durée de la nuit. Aucune règle ne fait l’unanimité — à Berlin, l’écart dépasse une heure. C’est pourquoi toutes les règles restent sélectionnables, et pourquoi l’affichage de ta mosquée reste, en cas de doute, la meilleure réponse.",
+    "sourcesTitle": "Sources",
+    "sourcesFooter": "Ouvre les pages dans le navigateur.",
+    "sources": {
+      "aladhan": "AlAdhan — aperçu des méthodes de calcul",
+      "adhan": "adhan — la bibliothèque du calcul hors ligne",
+      "diyanet": "Diyanet — explication de la marge de temps (temkin)",
+      "moonsighting": "Moonsighting Committee — description du procédé",
+      "highLat": "Conseil européen de la fatwa et de la recherche — hautes latitudes"
+    }
+  }
+}

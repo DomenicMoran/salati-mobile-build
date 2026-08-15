@@ -1,0 +1,27 @@
+# Ersetzt .gitignore für den EAS-Upload — Web-only-Assets fliegen raus,
+# der Native-Build braucht weder die APK-Teile noch das 102MB-Whisper-Modell.
+node_modules
+.expo
+dist
+web-build
+.playwright-mcp
+public/salati.apk.part*
+public/models
+*.log
+.DS_Store
+
+# Lokale Build-Artefakte — blaehen das EAS-Archiv sonst auf >2GB (hier android/app/build = 6.9GB).
+# Fuer den iOS-Build ist android/ irrelevant; EAS prebuildet ios/ neu.
+android/build
+android/app/build
+android/.gradle
+android/.cxx
+android/app/.cxx
+android/**/build
+android/**/.cxx
+ios/build
+ios/Pods
+ios/DerivedData
+**/*.apk
+**/*.aab
+**/*.keystore

@@ -1,0 +1,36 @@
+Salati 1.32.0 — Release-Notes (en)
+Erzeugt aus src/features/changelog/changelog.ts (node scripts/release-notes.mjs 1.32.0).
+Massgeblich sind store/release-notes-1.32.0.json (Play) und store/whatsnew-1.32.0.json (ASC);
+diese Datei ist die Copy-Paste-Fassung fuer die Konsolen.
+
+=== GOOGLE PLAY — "Was ist neu" (en-US, 479/500 Zeichen) ===
+--- ab hier kopieren ---
+Salati AI now answers in your language: the verified knowledge base exists in all 14 app languages – ask in Turkish, Russian or Bengali and the answer comes back in that language, with no detour through a translation
+
+Prayer times now work without internet: the app calculates them itself whenever the server is unreachable – including notifications and calendar export
+
+Recitation check in the Hifz trainer: new model with a 55 MB download instead of 148 MB at the same accuracy
+--- bis hier kopieren ---
+
+=== APP STORE CONNECT — "Neue Funktionen" (en-US, 1521/4000 Zeichen) ===
+--- ab hier kopieren ---
+Salati AI now answers in your language: the verified knowledge base exists in all 14 app languages – ask in Turkish, Russian or Bengali and the answer comes back in that language, with no detour through a translation
+
+Prayer times now work without internet: the app calculates them itself whenever the server is unreachable – including notifications and calendar export
+
+AI chat with conversation history, tappable sources (one tap opens the verse in the Quran reader) and example questions to get you started
+
+Prayer times can be matched to your mosque: a minute adjustment for each individual prayer plus a high-latitude rule – which finally makes Fajr and Isha usable during the European summer
+
+Recitation check in the Hifz trainer: new model with a 55 MB download instead of 148 MB at the same accuracy
+
+Practice guides (wudu, ghusl, prayer, janazah, hajj) now complete in all 14 languages, the 40 Hadith of an-Nawawi newly available in German and tafsir in 12 editions instead of 3
+
+Usability: every screen now has a visible back button, “Done” no longer scrolls out of view on the privacy, terms and imprint pages, plus better contrast and screen-reader labels
+
+The app and the web version start noticeably faster, the podcast loads quicker and is now sorted by learning path instead of release date
+
+Witr guide corrected: a further surah is recited after Al-Fatiha in all three rakat, and the Dua al-Qunut only follows after that
+
+Tajwid course: two incorrect examples in the chapter on Ra pronunciation put right
+--- bis hier kopieren ---

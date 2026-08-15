@@ -1,0 +1,2384 @@
+{
+  "lessons": [
+    {
+      "id": "salah-words-1",
+      "titleKey": "learn.lessonTitles.salah-words-1",
+      "lines": [
+        {
+          "arabic": "اللهُ أَكْبَرُ",
+          "translit": "allāhu akbar",
+          "tokens": [
+            {
+              "arabic": "اللهُ",
+              "translit": "allāhu",
+              "meaning": {
+                "de": "Allah",
+                "en": "Allah",
+                "tr": "Allah",
+                "ar": "الله",
+                "es": "Alá",
+                "fr": "Allah",
+                "id": "Allah",
+                "bn": "আল্লাহ",
+                "fa": "الله",
+                "ms": "Allah",
+                "ur": "اللہ",
+                "ru": "Аллах",
+                "sw": "Allah",
+                "ps": "الله"
+              }
+            },
+            {
+              "arabic": "أَكْبَرُ",
+              "translit": "akbar",
+              "meaning": {
+                "de": "ist am größten",
+                "en": "is the greatest",
+                "tr": "en büyüktür",
+                "ar": "أكبر، أعظم",
+                "es": "es el más grande",
+                "fr": "est le plus grand",
+                "id": "Mahabesar",
+                "bn": "সবচেয়ে মহান",
+                "fa": "بزرگ‌تر است",
+                "ms": "Maha Besar",
+                "ur": "سب سے بڑا ہے",
+                "ru": "превелик",
+                "sw": "ni Mkuu zaidi",
+                "ps": "ترټولو لوی دی"
+              }
+            }
+          ]
+        },
+        {
+          "arabic": "سُبْحَانَكَ اللَّهُمَّ",
+          "translit": "subḥānaka llāhumma",
+          "tokens": [
+            {
+              "arabic": "سُبْحَانَكَ",
+              "translit": "subḥānaka",
+              "meaning": {
+                "de": "gepriesen bist Du",
+                "en": "glory be to You",
+                "tr": "seni tesbih ederim",
+                "ar": "سبحانك، تنزيهاً لك",
+                "es": "gloria a Ti",
+                "fr": "gloire à Toi",
+                "id": "Mahasuci Engkau",
+                "bn": "তুমি পবিত্র",
+                "fa": "منزهی تو",
+                "ms": "Maha Suci Engkau",
+                "ur": "تو پاک ہے",
+                "ru": "пречист Ты",
+                "sw": "Wewe umetakasika",
+                "ps": "ته پاک يې"
+              }
+            },
+            {
+              "arabic": "اللَّهُمَّ",
+              "translit": "allāhumma",
+              "meaning": {
+                "de": "o Allah",
+                "en": "O Allah",
+                "tr": "Allah'ım",
+                "ar": "يا الله",
+                "es": "oh Alá",
+                "fr": "ô Allah",
+                "id": "Ya Allah",
+                "bn": "হে আল্লাহ",
+                "fa": "خدایا",
+                "ms": "Ya Allah",
+                "ur": "اے اللہ",
+                "ru": "о Аллах",
+                "sw": "Ewe Allah",
+                "ps": "يا الله"
+              }
+            }
+          ]
+        },
+        {
+          "arabic": "وَبِحَمْدِكَ",
+          "translit": "wa-bi-ḥamdika",
+          "tokens": [
+            {
+              "arabic": "وَ",
+              "translit": "wa",
+              "meaning": {
+                "de": "und",
+                "en": "and",
+                "tr": "ve",
+                "ar": "و",
+                "es": "y",
+                "fr": "et",
+                "id": "dan",
+                "bn": "এবং",
+                "fa": "و",
+                "ms": "dan",
+                "ur": "اور",
+                "ru": "и",
+                "sw": "na",
+                "ps": "او"
+              }
+            },
+            {
+              "arabic": "بِحَمْدِكَ",
+              "translit": "bi-ḥamdika",
+              "meaning": {
+                "de": "mit Deinem Lob",
+                "en": "with Your praise",
+                "tr": "Sana hamd ederek",
+                "ar": "بحمدك، بثنائك",
+                "es": "con Tu alabanza",
+                "fr": "avec Ta louange",
+                "id": "dengan pujian-Mu",
+                "bn": "তোমার প্রশংসাসহ",
+                "fa": "و به ستایش تو",
+                "ms": "dengan pujian-Mu",
+                "ur": "تیری تعریف کے ساتھ",
+                "ru": "с хвалой Тебе",
+                "sw": "kwa sifa Zako",
+                "ps": "ستا په ستاینه"
+              }
+            }
+          ]
+        },
+        {
+          "arabic": "وَتَبَارَكَ اسْمُكَ",
+          "translit": "wa-tabāraka smuka",
+          "tokens": [
+            {
+              "arabic": "وَتَبَارَكَ",
+              "translit": "wa-tabāraka",
+              "meaning": {
+                "de": "und gesegnet ist",
+                "en": "and blessed is",
+                "tr": "ve mübarektir",
+                "ar": "وتبارك، تعاظم بالبركة",
+                "es": "y bendito es",
+                "fr": "et béni est",
+                "id": "dan berkah bagi",
+                "bn": "এবং বরকতময়",
+                "fa": "و بلندمرتبه است",
+                "ms": "dan berkat bagi",
+                "ur": "اور برکت والا ہے",
+                "ru": "и благословенно",
+                "sw": "na limebarikiwa",
+                "ps": "او برکتناک دی"
+              }
+            },
+            {
+              "arabic": "اسْمُكَ",
+              "translit": "ismuka",
+              "meaning": {
+                "de": "Dein Name",
+                "en": "Your name",
+                "tr": "Senin adın",
+                "ar": "اسمك",
+                "es": "Tu nombre",
+                "fr": "Ton nom",
+                "id": "nama-Mu",
+                "bn": "তোমার নাম",
+                "fa": "نام تو",
+                "ms": "nama-Mu",
+                "ur": "تیرا نام",
+                "ru": "имя Твоё",
+                "sw": "jina Lako",
+                "ps": "ستا نوم"
+              }
+            }
+          ]
+        },
+        {
+          "arabic": "وَتَعَالَى جَدُّكَ",
+          "translit": "wa-taʿālā jadduka",
+          "tokens": [
+            {
+              "arabic": "وَتَعَالَى",
+              "translit": "wa-taʿālā",
+              "meaning": {
+                "de": "und erhaben ist",
+                "en": "and exalted is",
+                "tr": "ve yücedir",
+                "ar": "وتعالى، ارتفع وعلا",
+                "es": "y exaltada es",
+                "fr": "et exaltée est",
+                "id": "dan tinggi",
+                "bn": "এবং সমুন্নত",
+                "fa": "و بلند است",
+                "ms": "dan tinggi",
+                "ur": "اور بلند ہے",
+                "ru": "и возвышенно",
+                "sw": "na umetukuka",
+                "ps": "او لوړ دی"
+              }
+            },
+            {
+              "arabic": "جَدُّكَ",
+              "translit": "jadduka",
+              "meaning": {
+                "de": "Deine Majestät",
+                "en": "Your majesty",
+                "tr": "Senin yüceliğin",
+                "ar": "جدك، عظمتك وجلالك",
+                "es": "Tu majestad",
+                "fr": "Ta majesté",
+                "id": "keagungan-Mu",
+                "bn": "তোমার মহিমা",
+                "fa": "عظمت تو",
+                "ms": "keagungan-Mu",
+                "ur": "تیری شان",
+                "ru": "величие Твоё",
+                "sw": "utukufu Wako",
+                "ps": "ستا لوی والی"
+              }
+            }
+          ]
+        },
+        {
+          "arabic": "وَلَا إِلَٰهَ غَيْرُكَ",
+          "translit": "wa-lā ilāha ghayruka",
+          "tokens": [
+            {
+              "arabic": "وَلَا",
+              "translit": "wa-lā",
+              "meaning": {
+                "de": "und es gibt nicht",
+                "en": "and there is no",
+                "tr": "ve yoktur",
+                "ar": "ولا",
+                "es": "y no hay",
+                "fr": "et il n'y a pas",
+                "id": "dan tidak ada",
+                "bn": "এবং নেই",
+                "fa": "و نیست",
+                "ms": "dan tiada",
+                "ur": "اور نہیں ہے",
+                "ru": "и нет",
+                "sw": "na hakuna",
+                "ps": "او نشته"
+              }
+            },
+            {
+              "arabic": "إِلَٰهَ",
+              "translit": "ilāha",
+              "meaning": {
+                "de": "Gott",
+                "en": "god",
+                "tr": "ilah",
+                "ar": "إله، معبود",
+                "es": "dios",
+                "fr": "de divinité",
+                "id": "tuhan (yang berhak disembah)",
+                "bn": "উপাস্য",
+                "fa": "معبودی",
+                "ms": "tuhan (yang berhak disembah)",
+                "ur": "معبود",
+                "ru": "божества",
+                "sw": "mola",
+                "ps": "معبود"
+              }
+            },
+            {
+              "arabic": "غَيْرُكَ",
+              "translit": "ghayruka",
+              "meaning": {
+                "de": "außer Dir",
+                "en": "other than You",
+                "tr": "Senden başka",
+                "ar": "غيرك، سواك",
+                "es": "excepto Tú",
+                "fr": "en dehors de Toi",
+                "id": "selain Engkau",
+                "bn": "তুমি ছাড়া",
+                "fa": "جز تو",
+                "ms": "selain Engkau",
+                "ur": "تیرے سوا",
+                "ru": "кроме Тебя",
+                "sw": "isipokuwa Wewe",
+                "ps": "له تا پرته"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "salah-words-2",
+      "titleKey": "learn.lessonTitles.salah-words-2",
+      "lines": [
+        {
+          "arabic": "سُبْحَانَ رَبِّيَ الْعَظِيمِ",
+          "translit": "subḥāna rabbiya l-ʿaẓīm",
+          "tokens": [
+            {
+              "arabic": "سُبْحَانَ",
+              "translit": "subḥāna",
+              "meaning": {
+                "de": "gepriesen sei",
+                "en": "glory be to",
+                "tr": "tesbih ederim",
+                "ar": "سبحان، تنزيهاً",
+                "es": "gloria a",
+                "fr": "gloire à",
+                "id": "Mahasuci",
+                "bn": "পবিত্র",
+                "fa": "منزه است",
+                "ms": "Maha Suci",
+                "ur": "پاک ہے",
+                "ru": "пречист",
+                "sw": "ametakasika",
+                "ps": "پاک دی"
+              }
+            },
+            {
+              "arabic": "رَبِّيَ",
+              "translit": "rabbiya",
+              "meaning": {
+                "de": "mein Herr",
+                "en": "my Lord",
+                "tr": "Rabbim",
+                "ar": "ربي",
+                "es": "mi Señor",
+                "fr": "mon Seigneur",
+                "id": "Tuhanku",
+                "bn": "আমার প্রতিপালক",
+                "fa": "پروردگارم",
+                "ms": "Tuhanku",
+                "ur": "میرا رب",
+                "ru": "Господь мой",
+                "sw": "Mola wangu",
+                "ps": "زما رب"
+              }
+            },
+            {
+              "arabic": "الْعَظِيمِ",
+              "translit": "l-ʿaẓīm",
+              "meaning": {
+                "de": "der Große",
+                "en": "the Great",
+                "tr": "en yüce olan",
+                "ar": "العظيم، الجليل",
+                "es": "el Grande",
+                "fr": "le Grand",
+                "id": "Yang Mahaagung",
+                "bn": "মহান",
+                "fa": "بزرگ",
+                "ms": "Yang Maha Agung",
+                "ur": "عظمت والا",
+                "ru": "Великий",
+                "sw": "Mkuu",
+                "ps": "لوی"
+              }
+            }
+          ]
+        },
+        {
+          "arabic": "سَمِعَ اللهُ لِمَنْ حَمِدَهُ",
+          "translit": "samiʿa llāhu li-man ḥamidah",
+          "tokens": [
+            {
+              "arabic": "سَمِعَ",
+              "translit": "samiʿa",
+              "meaning": {
+                "de": "hört",
+                "en": "hears",
+                "tr": "işitir",
+                "ar": "سمع، أصغى",
+                "es": "escucha",
+                "fr": "entend",
+                "id": "mendengar",
+                "bn": "শোনেন",
+                "fa": "می‌شنود",
+                "ms": "mendengar",
+                "ur": "سنتا ہے",
+                "ru": "слышит",
+                "sw": "anasikia",
+                "ps": "اوري"
+              }
+            },
+            {
+              "arabic": "اللهُ",
+              "translit": "llāhu",
+              "meaning": {
+                "de": "Allah",
+                "en": "Allah",
+                "tr": "Allah",
+                "ar": "الله",
+                "es": "Alá",
+                "fr": "Allah",
+                "id": "Allah",
+                "bn": "আল্লাহ",
+                "fa": "الله",
+                "ms": "Allah",
+                "ur": "اللہ",
+                "ru": "Аллах",
+                "sw": "Allah",
+                "ps": "الله"
+              }
+            },
+            {
+              "arabic": "لِمَنْ",
+              "translit": "li-man",
+              "meaning": {
+                "de": "wer",
+                "en": "whoever",
+                "tr": "kim ki",
+                "ar": "لمن",
+                "es": "a quien",
+                "fr": "celui qui",
+                "id": "siapa yang",
+                "bn": "যে",
+                "fa": "هر کس که",
+                "ms": "sesiapa yang",
+                "ur": "جو کوئی",
+                "ru": "того, кто",
+                "sw": "yeyote",
+                "ps": "هر څوک چې"
+              }
+            },
+            {
+              "arabic": "حَمِدَهُ",
+              "translit": "ḥamidahu",
+              "meaning": {
+                "de": "Ihn lobt",
+                "en": "praises Him",
+                "tr": "O'na hamd eder",
+                "ar": "حمده، أثنى عليه",
+                "es": "Lo alaba",
+                "fr": "Le loue",
+                "id": "memuji-Nya",
+                "bn": "তাঁর প্রশংসা করে",
+                "fa": "او را ستایش کند",
+                "ms": "memuji-Nya",
+                "ur": "اس کی تعریف کرے",
+                "ru": "хвалит Его",
+                "sw": "anamsifu",
+                "ps": "ستاینه یې کوي"
+              }
+            }
+          ]
+        },
+        {
+          "arabic": "رَبَّنَا وَلَكَ الْحَمْدُ",
+          "translit": "rabbanā wa-laka l-ḥamd",
+          "tokens": [
+            {
+              "arabic": "رَبَّنَا",
+              "translit": "rabbanā",
+              "meaning": {
+                "de": "unser Herr",
+                "en": "our Lord",
+                "tr": "Rabbimiz",
+                "ar": "ربنا",
+                "es": "Señor nuestro",
+                "fr": "notre Seigneur",
+                "id": "Tuhan kami",
+                "bn": "হে আমাদের প্রতিপালক",
+                "fa": "پروردگارا",
+                "ms": "Tuhan kami",
+                "ur": "اے ہمارے رب",
+                "ru": "Господь наш",
+                "sw": "Mola wetu",
+                "ps": "زموږ ربه"
+              }
+            },
+            {
+              "arabic": "وَلَكَ",
+              "translit": "wa-laka",
+              "meaning": {
+                "de": "und Dir gebührt",
+                "en": "and to You belongs",
+                "tr": "ve Sana mahsustur",
+                "ar": "ولك",
+                "es": "y a Ti pertenece",
+                "fr": "et à Toi appartient",
+                "id": "dan bagi-Mu",
+                "bn": "এবং তোমারই জন্য",
+                "fa": "و تو راست",
+                "ms": "dan bagi-Mu",
+                "ur": "اور تیرے ہی لیے ہے",
+                "ru": "и Тебе принадлежит",
+                "sw": "na Wewe unayo",
+                "ps": "او ستا لپاره ده"
+              }
+            },
+            {
+              "arabic": "الْحَمْدُ",
+              "translit": "l-ḥamdu",
+              "meaning": {
+                "de": "das Lob",
+                "en": "the praise",
+                "tr": "hamd",
+                "ar": "الحمد",
+                "es": "la alabanza",
+                "fr": "la louange",
+                "id": "segala puji",
+                "bn": "সমস্ত প্রশংসা",
+                "fa": "ستایش",
+                "ms": "segala puji",
+                "ur": "ساری تعریف",
+                "ru": "хвала",
+                "sw": "sifa",
+                "ps": "ستاینه"
+              }
+            }
+          ]
+        },
+        {
+          "arabic": "حَمْدًا كَثِيرًا طَيِّبًا مُبَارَكًا فِيهِ",
+          "translit": "ḥamdan kathīran ṭayyiban mubārakan fīh",
+          "tokens": [
+            {
+              "arabic": "حَمْدًا",
+              "translit": "ḥamdan",
+              "meaning": {
+                "de": "ein Lob",
+                "en": "a praise",
+                "tr": "bir hamd",
+                "ar": "حمداً",
+                "es": "una alabanza",
+                "fr": "une louange",
+                "id": "pujian",
+                "bn": "একটি প্রশংসা",
+                "fa": "ستایشی",
+                "ms": "pujian",
+                "ur": "تعریف",
+                "ru": "хвалой",
+                "sw": "sifa",
+                "ps": "یوه ستاینه"
+              }
+            },
+            {
+              "arabic": "كَثِيرًا",
+              "translit": "kathīran",
+              "meaning": {
+                "de": "vielfach",
+                "en": "abundant",
+                "tr": "çokça",
+                "ar": "كثيراً",
+                "es": "abundante",
+                "fr": "abondante",
+                "id": "yang banyak",
+                "bn": "অজস্র",
+                "fa": "فراوان",
+                "ms": "yang banyak",
+                "ur": "بہت زیادہ",
+                "ru": "обильной",
+                "sw": "nyingi",
+                "ps": "ډېره"
+              }
+            },
+            {
+              "arabic": "طَيِّبًا",
+              "translit": "ṭayyiban",
+              "meaning": {
+                "de": "gut",
+                "en": "good",
+                "tr": "hoş",
+                "ar": "طيباً",
+                "es": "buena",
+                "fr": "bonne",
+                "id": "yang baik",
+                "bn": "উত্তম",
+                "fa": "نیکو",
+                "ms": "yang baik",
+                "ur": "پاکیزہ",
+                "ru": "благой",
+                "sw": "njema",
+                "ps": "ښه"
+              }
+            },
+            {
+              "arabic": "مُبَارَكًا",
+              "translit": "mubārakan",
+              "meaning": {
+                "de": "gesegnet",
+                "en": "blessed",
+                "tr": "mübarek",
+                "ar": "مباركاً",
+                "es": "bendita",
+                "fr": "bénie",
+                "id": "yang diberkahi",
+                "bn": "বরকতময়",
+                "fa": "مبارک",
+                "ms": "yang diberkati",
+                "ur": "بابرکت",
+                "ru": "благословенной",
+                "sw": "iliyobarikiwa",
+                "ps": "برکتناکه"
+              }
+            },
+            {
+              "arabic": "فِيهِ",
+              "translit": "fīhi",
+              "meaning": {
+                "de": "darin",
+                "en": "in it",
+                "tr": "onda",
+                "ar": "فيه",
+                "es": "en ella",
+                "fr": "en elle",
+                "id": "di dalamnya",
+                "bn": "তাতে",
+                "fa": "در آن",
+                "ms": "di dalamnya",
+                "ur": "اس میں",
+                "ru": "в ней",
+                "sw": "ndani yake",
+                "ps": "په هغې کې"
+              }
+            }
+          ]
+        },
+        {
+          "arabic": "سُبْحَانَ رَبِّيَ الْأَعْلَى",
+          "translit": "subḥāna rabbiya l-aʿlā",
+          "tokens": [
+            {
+              "arabic": "سُبْحَانَ",
+              "translit": "subḥāna",
+              "meaning": {
+                "de": "gepriesen sei",
+                "en": "glory be to",
+                "tr": "tesbih ederim",
+                "ar": "سبحان، تنزيهاً",
+                "es": "gloria a",
+                "fr": "gloire à",
+                "id": "Mahasuci",
+                "bn": "পবিত্র",
+                "fa": "منزه است",
+                "ms": "Maha Suci",
+                "ur": "پاک ہے",
+                "ru": "пречист",
+                "sw": "ametakasika",
+                "ps": "پاک دی"
+              }
+            },
+            {
+              "arabic": "رَبِّيَ",
+              "translit": "rabbiya",
+              "meaning": {
+                "de": "mein Herr",
+                "en": "my Lord",
+                "tr": "Rabbim",
+                "ar": "ربي",
+                "es": "mi Señor",
+                "fr": "mon Seigneur",
+                "id": "Tuhanku",
+                "bn": "আমার প্রতিপালক",
+                "fa": "پروردگارم",
+                "ms": "Tuhanku",
+                "ur": "میرا رب",
+                "ru": "Господь мой",
+                "sw": "Mola wangu",
+                "ps": "زما رب"
+              }
+            },
+            {
+              "arabic": "الْأَعْلَى",
+              "translit": "l-aʿlā",
+              "meaning": {
+                "de": "der Höchste",
+                "en": "the Most High",
+                "tr": "en yüce olan",
+                "ar": "الأعلى، الأرفع",
+                "es": "el Altísimo",
+                "fr": "le Très-Haut",
+                "id": "Yang Mahatinggi",
+                "bn": "সর্বোচ্চ",
+                "fa": "والاترین",
+                "ms": "Yang Maha Tinggi",
+                "ur": "سب سے بلند",
+                "ru": "Всевышний",
+                "sw": "Aliye Juu",
+                "ps": "لوړ"
+              }
+            }
+          ]
+        },
+        {
+          "arabic": "اللَّهُمَّ اغْفِرْ لِي وَارْحَمْنِي وَاهْدِنِي",
+          "translit": "allāhumma ghfir lī wa-rḥamnī wa-hdinī",
+          "tokens": [
+            {
+              "arabic": "اللَّهُمَّ",
+              "translit": "allāhumma",
+              "meaning": {
+                "de": "o Allah",
+                "en": "O Allah",
+                "tr": "Allah'ım",
+                "ar": "يا الله",
+                "es": "oh Alá",
+                "fr": "ô Allah",
+                "id": "Ya Allah",
+                "bn": "হে আল্লাহ",
+                "fa": "خدایا",
+                "ms": "Ya Allah",
+                "ur": "اے اللہ",
+                "ru": "о Аллах",
+                "sw": "Ewe Allah",
+                "ps": "يا الله"
+              }
+            },
+            {
+              "arabic": "اغْفِرْ لِي",
+              "translit": "ighfir lī",
+              "meaning": {
+                "de": "vergib mir",
+                "en": "forgive me",
+                "tr": "beni bağışla",
+                "ar": "اغفر لي",
+                "es": "perdóname",
+                "fr": "pardonne-moi",
+                "id": "ampunilah aku",
+                "bn": "আমাকে ক্ষমা করো",
+                "fa": "مرا بیامرز",
+                "ms": "ampunilah daku",
+                "ur": "مجھے بخش دے",
+                "ru": "прости меня",
+                "sw": "nisamehe",
+                "ps": "ما وبخښه"
+              }
+            },
+            {
+              "arabic": "وَارْحَمْنِي",
+              "translit": "wa-rḥamnī",
+              "meaning": {
+                "de": "und erbarme Dich meiner",
+                "en": "and have mercy on me",
+                "tr": "ve bana merhamet et",
+                "ar": "وارحمني",
+                "es": "y ten misericordia de mí",
+                "fr": "et aie pitié de moi",
+                "id": "dan sayangilah aku",
+                "bn": "এবং আমার প্রতি দয়া করো",
+                "fa": "و بر من رحم کن",
+                "ms": "dan rahmatilah daku",
+                "ur": "اور مجھ پر رحم فرما",
+                "ru": "и помилуй меня",
+                "sw": "na unirehemu",
+                "ps": "او راباندې ورحمېږه"
+              }
+            },
+            {
+              "arabic": "وَاهْدِنِي",
+              "translit": "wa-hdinī",
+              "meaning": {
+                "de": "und leite mich",
+                "en": "and guide me",
+                "tr": "ve bana hidayet ver",
+                "ar": "واهدني",
+                "es": "y guíame",
+                "fr": "et guide-moi",
+                "id": "dan tunjukilah aku",
+                "bn": "এবং আমাকে পথ দেখাও",
+                "fa": "و مرا هدایت کن",
+                "ms": "dan tunjukilah daku",
+                "ur": "اور مجھے ہدایت دے",
+                "ru": "и веди меня",
+                "sw": "na uniongoze",
+                "ps": "او لار مې وښایه"
+              }
+            }
+          ]
+        },
+        {
+          "arabic": "وَعَافِنِي وَارْزُقْنِي وَارْفَعْنِي",
+          "translit": "wa-ʿāfinī wa-rzuqnī wa-rfaʿnī",
+          "tokens": [
+            {
+              "arabic": "وَعَافِنِي",
+              "translit": "wa-ʿāfinī",
+              "meaning": {
+                "de": "und schenke mir Wohlergehen",
+                "en": "and grant me well-being",
+                "tr": "ve bana afiyet ver",
+                "ar": "وعافني",
+                "es": "y concédeme bienestar",
+                "fr": "et accorde-moi la santé",
+                "id": "dan sejahterakanlah aku",
+                "bn": "এবং আমাকে সুস্থতা দাও",
+                "fa": "و مرا عافیت ده",
+                "ms": "dan sejahterakanlah daku",
+                "ur": "اور مجھے عافیت دے",
+                "ru": "и даруй мне благополучие",
+                "sw": "na unijalie afya",
+                "ps": "او راته روغتیا راکړه"
+              }
+            },
+            {
+              "arabic": "وَارْزُقْنِي",
+              "translit": "wa-rzuqnī",
+              "meaning": {
+                "de": "und versorge mich",
+                "en": "and provide for me",
+                "tr": "ve beni rızıklandır",
+                "ar": "وارزقني",
+                "es": "y provéeme",
+                "fr": "et accorde-moi ma subsistance",
+                "id": "dan berilah aku rezeki",
+                "bn": "এবং আমাকে রিযিক দাও",
+                "fa": "و مرا روزی ده",
+                "ms": "dan kurniakanlah daku rezeki",
+                "ur": "اور مجھے رزق دے",
+                "ru": "и надели меня уделом",
+                "sw": "na unipe riziki",
+                "ps": "او روزي راکړه"
+              }
+            },
+            {
+              "arabic": "وَارْفَعْنِي",
+              "translit": "wa-rfaʿnī",
+              "meaning": {
+                "de": "und erhöhe mich",
+                "en": "and raise me (in rank)",
+                "tr": "ve beni yükselt",
+                "ar": "وارفعني",
+                "es": "y elévame",
+                "fr": "et élève-moi",
+                "id": "dan angkatlah derajatku",
+                "bn": "এবং আমার মর্যাদা উন্নত করো",
+                "fa": "و مرا بلندمرتبه گردان",
+                "ms": "dan tinggikanlah darjatku",
+                "ur": "اور میرا درجہ بلند کر",
+                "ru": "и возвысь меня",
+                "sw": "na uniinue (cheo)",
+                "ps": "او درجه مې لوړه کړه"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "salah-words-3",
+      "titleKey": "learn.lessonTitles.salah-words-3",
+      "lines": [
+        {
+          "arabic": "التَّحِيَّاتُ لِلَّهِ",
+          "translit": "at-taḥiyyātu lillāh",
+          "tokens": [
+            {
+              "arabic": "التَّحِيَّاتُ",
+              "translit": "at-taḥiyyātu",
+              "meaning": {
+                "de": "die Ehrerbietungen",
+                "en": "the greetings",
+                "tr": "tahiyyeler (saygı sözleri)",
+                "ar": "التحيات",
+                "es": "los saludos",
+                "fr": "les salutations",
+                "id": "segala penghormatan",
+                "bn": "সকল অভিবাদন",
+                "fa": "همه تحیات",
+                "ms": "segala penghormatan",
+                "ur": "سب تعظیمیں",
+                "ru": "приветствия",
+                "sw": "salamu zote",
+                "ps": "ټول درنښتونه"
+              }
+            },
+            {
+              "arabic": "لِلَّهِ",
+              "translit": "lillāhi",
+              "meaning": {
+                "de": "gehören Allah",
+                "en": "belong to Allah",
+                "tr": "Allah'a mahsustur",
+                "ar": "لله",
+                "es": "pertenecen a Alá",
+                "fr": "appartiennent à Allah",
+                "id": "milik Allah",
+                "bn": "আল্লাহর জন্য",
+                "fa": "از آنِ خداست",
+                "ms": "milik Allah",
+                "ur": "اللہ کے لیے ہیں",
+                "ru": "принадлежат Аллаху",
+                "sw": "ni za Allah",
+                "ps": "د الله لپاره دي"
+              }
+            }
+          ]
+        },
+        {
+          "arabic": "وَالصَّلَوَاتُ وَالطَّيِّبَاتُ",
+          "translit": "waṣ-ṣalawātu waṭ-ṭayyibāt",
+          "tokens": [
+            {
+              "arabic": "وَالصَّلَوَاتُ",
+              "translit": "waṣ-ṣalawātu",
+              "meaning": {
+                "de": "und die Gebete",
+                "en": "and the prayers",
+                "tr": "ve salavatlar",
+                "ar": "والصلوات",
+                "es": "y las oraciones",
+                "fr": "et les prières",
+                "id": "dan salawat",
+                "bn": "এবং সালাত",
+                "fa": "و درودها",
+                "ms": "dan selawat",
+                "ur": "اور صلاتیں",
+                "ru": "и молитвы",
+                "sw": "na sala",
+                "ps": "او لمونځونه"
+              }
+            },
+            {
+              "arabic": "وَالطَّيِّبَاتُ",
+              "translit": "waṭ-ṭayyibātu",
+              "meaning": {
+                "de": "und die guten Taten",
+                "en": "and the good deeds",
+                "tr": "ve güzel işler",
+                "ar": "والطيبات",
+                "es": "y las buenas obras",
+                "fr": "et les bonnes actions",
+                "id": "dan segala kebaikan",
+                "bn": "এবং সকল সৎকাজ",
+                "fa": "و کارهای نیک",
+                "ms": "dan segala kebaikan",
+                "ur": "اور نیک اعمال",
+                "ru": "и добрые дела",
+                "sw": "na matendo mema",
+                "ps": "او ښې کړنې"
+              }
+            }
+          ]
+        },
+        {
+          "arabic": "السَّلَامُ عَلَيْكَ أَيُّهَا النَّبِيُّ",
+          "translit": "as-salāmu ʿalayka ayyuhā n-nabiyy",
+          "tokens": [
+            {
+              "arabic": "السَّلَامُ",
+              "translit": "as-salāmu",
+              "meaning": {
+                "de": "der Friede",
+                "en": "peace",
+                "tr": "selam",
+                "ar": "السلام",
+                "es": "la paz",
+                "fr": "la paix",
+                "id": "salam sejahtera",
+                "bn": "শান্তি",
+                "fa": "سلام",
+                "ms": "salam sejahtera",
+                "ur": "سلامتی",
+                "ru": "мир",
+                "sw": "amani",
+                "ps": "سلام"
+              }
+            },
+            {
+              "arabic": "عَلَيْكَ",
+              "translit": "ʿalayka",
+              "meaning": {
+                "de": "sei mit dir",
+                "en": "be upon you",
+                "tr": "senin üzerine olsun",
+                "ar": "عليك",
+                "es": "sea contigo",
+                "fr": "soit sur toi",
+                "id": "atasmu",
+                "bn": "তোমার প্রতি",
+                "fa": "بر تو باد",
+                "ms": "ke atasmu",
+                "ur": "تجھ پر ہو",
+                "ru": "тебе",
+                "sw": "iwe juu yako",
+                "ps": "پر تا دې وي"
+              }
+            },
+            {
+              "arabic": "أَيُّهَا النَّبِيُّ",
+              "translit": "ayyuhā n-nabiyyu",
+              "meaning": {
+                "de": "o Prophet",
+                "en": "O Prophet",
+                "tr": "ey Peygamber",
+                "ar": "أيها النبي",
+                "es": "oh Profeta",
+                "fr": "ô Prophète",
+                "id": "wahai Nabi",
+                "bn": "হে নবী",
+                "fa": "ای پیامبر",
+                "ms": "wahai Nabi",
+                "ur": "اے نبی",
+                "ru": "о Пророк",
+                "sw": "Ewe Nabii",
+                "ps": "ای پیغمبره"
+              }
+            }
+          ]
+        },
+        {
+          "arabic": "وَرَحْمَةُ اللهِ وَبَرَكَاتُهُ",
+          "translit": "wa-raḥmatu llāhi wa-barakātuh",
+          "tokens": [
+            {
+              "arabic": "وَرَحْمَةُ",
+              "translit": "wa-raḥmatu",
+              "meaning": {
+                "de": "und die Barmherzigkeit",
+                "en": "and the mercy",
+                "tr": "ve rahmeti",
+                "ar": "ورحمة",
+                "es": "y la misericordia",
+                "fr": "et la miséricorde",
+                "id": "dan rahmat",
+                "bn": "এবং করুণা",
+                "fa": "و رحمت",
+                "ms": "dan rahmat",
+                "ur": "اور رحمت",
+                "ru": "и милость",
+                "sw": "na rehema",
+                "ps": "او رحمت"
+              }
+            },
+            {
+              "arabic": "اللهِ",
+              "translit": "llāhi",
+              "meaning": {
+                "de": "Allahs",
+                "en": "of Allah",
+                "tr": "Allah'ın",
+                "ar": "الله",
+                "es": "de Alá",
+                "fr": "d'Allah",
+                "id": "Allah",
+                "bn": "আল্লাহর",
+                "fa": "خدا",
+                "ms": "Allah",
+                "ur": "اللہ کی",
+                "ru": "Аллаха",
+                "sw": "ya Allah",
+                "ps": "د الله"
+              }
+            },
+            {
+              "arabic": "وَبَرَكَاتُهُ",
+              "translit": "wa-barakātuhu",
+              "meaning": {
+                "de": "und Seine Segnungen",
+                "en": "and His blessings",
+                "tr": "ve bereketleri",
+                "ar": "وبركاته",
+                "es": "y Sus bendiciones",
+                "fr": "et Ses bénédictions",
+                "id": "dan berkah-Nya",
+                "bn": "এবং তাঁর বরকত",
+                "fa": "و برکات او",
+                "ms": "dan berkat-Nya",
+                "ur": "اور اس کی برکتیں",
+                "ru": "и Его благословения",
+                "sw": "na baraka Zake",
+                "ps": "او د هغه برکتونه"
+              }
+            }
+          ]
+        },
+        {
+          "arabic": "السَّلَامُ عَلَيْنَا وَعَلَى عِبَادِ اللهِ الصَّالِحِينَ",
+          "translit": "as-salāmu ʿalaynā wa-ʿalā ʿibādi llāhi ṣ-ṣāliḥīn",
+          "tokens": [
+            {
+              "arabic": "السَّلَامُ عَلَيْنَا",
+              "translit": "as-salāmu ʿalaynā",
+              "meaning": {
+                "de": "der Friede sei auf uns",
+                "en": "peace be upon us",
+                "tr": "selam bizim üzerimize olsun",
+                "ar": "السلام علينا",
+                "es": "la paz sea con nosotros",
+                "fr": "la paix soit sur nous",
+                "id": "salam sejahtera atas kami",
+                "bn": "শান্তি বর্ষিত হোক আমাদের উপর",
+                "fa": "سلام بر ما",
+                "ms": "salam sejahtera ke atas kami",
+                "ur": "ہم پر سلامتی ہو",
+                "ru": "мир нам",
+                "sw": "amani iwe juu yetu",
+                "ps": "پر موږ دې سلام وي"
+              }
+            },
+            {
+              "arabic": "وَعَلَى",
+              "translit": "wa-ʿalā",
+              "meaning": {
+                "de": "und auf",
+                "en": "and upon",
+                "tr": "ve üzerine",
+                "ar": "وعلى",
+                "es": "y sobre",
+                "fr": "et sur",
+                "id": "dan atas",
+                "bn": "এবং উপর",
+                "fa": "و بر",
+                "ms": "dan ke atas",
+                "ur": "اور پر",
+                "ru": "и на",
+                "sw": "na juu ya",
+                "ps": "او پر"
+              }
+            },
+            {
+              "arabic": "عِبَادِ اللهِ",
+              "translit": "ʿibādi llāhi",
+              "meaning": {
+                "de": "die Diener Allahs",
+                "en": "the servants of Allah",
+                "tr": "Allah'ın kulları",
+                "ar": "عباد الله",
+                "es": "los siervos de Alá",
+                "fr": "les serviteurs d'Allah",
+                "id": "hamba-hamba Allah",
+                "bn": "আল্লাহর বান্দাদের",
+                "fa": "بندگان خدا",
+                "ms": "hamba-hamba Allah",
+                "ur": "اللہ کے بندوں",
+                "ru": "рабов Аллаха",
+                "sw": "waja wa Allah",
+                "ps": "د الله بندګان"
+              }
+            },
+            {
+              "arabic": "الصَّالِحِينَ",
+              "translit": "ṣ-ṣāliḥīn",
+              "meaning": {
+                "de": "die Rechtschaffenen",
+                "en": "the righteous",
+                "tr": "salih olanlar",
+                "ar": "الصالحين",
+                "es": "los justos",
+                "fr": "les vertueux",
+                "id": "yang saleh",
+                "bn": "সৎকর্মশীল",
+                "fa": "شایسته",
+                "ms": "yang soleh",
+                "ur": "نیک",
+                "ru": "праведных",
+                "sw": "wema",
+                "ps": "صالحان"
+              }
+            }
+          ]
+        },
+        {
+          "arabic": "أَشْهَدُ أَنْ لَا إِلَٰهَ إِلَّا اللهُ",
+          "translit": "ashhadu an lā ilāha illā llāh",
+          "tokens": [
+            {
+              "arabic": "أَشْهَدُ",
+              "translit": "ashhadu",
+              "meaning": {
+                "de": "ich bezeuge",
+                "en": "I bear witness",
+                "tr": "şahitlik ederim",
+                "ar": "أشهد",
+                "es": "atestiguo",
+                "fr": "j'atteste",
+                "id": "aku bersaksi",
+                "bn": "আমি সাক্ষ্য দিচ্ছি",
+                "fa": "گواهی می‌دهم",
+                "ms": "aku bersaksi",
+                "ur": "میں گواہی دیتا ہوں",
+                "ru": "свидетельствую",
+                "sw": "nashuhudia",
+                "ps": "شاهدي ورکوم"
+              }
+            },
+            {
+              "arabic": "أَنْ لَا إِلَٰهَ",
+              "translit": "an lā ilāha",
+              "meaning": {
+                "de": "dass es keinen Gott gibt",
+                "en": "that there is no god",
+                "tr": "hiçbir ilah olmadığına",
+                "ar": "أن لا إله",
+                "es": "que no hay ningún dios",
+                "fr": "qu'il n'y a pas de divinité",
+                "id": "bahwa tidak ada tuhan",
+                "bn": "যে কোনো উপাস্য নেই",
+                "fa": "که هیچ معبودی نیست",
+                "ms": "bahawa tiada tuhan",
+                "ur": "کہ کوئی معبود نہیں",
+                "ru": "что нет божества",
+                "sw": "kwamba hakuna mola",
+                "ps": "چې هېڅ معبود نشته"
+              }
+            },
+            {
+              "arabic": "إِلَّا اللهُ",
+              "translit": "illā llāhu",
+              "meaning": {
+                "de": "außer Allah",
+                "en": "except Allah",
+                "tr": "Allah'tan başka",
+                "ar": "إلا الله",
+                "es": "excepto Alá",
+                "fr": "à part Allah",
+                "id": "selain Allah",
+                "bn": "আল্লাহ ছাড়া",
+                "fa": "جز خدا",
+                "ms": "selain Allah",
+                "ur": "سوائے اللہ کے",
+                "ru": "кроме Аллаха",
+                "sw": "isipokuwa Allah",
+                "ps": "پرته له الله نه"
+              }
+            }
+          ]
+        },
+        {
+          "arabic": "وَأَشْهَدُ أَنَّ مُحَمَّدًا عَبْدُهُ وَرَسُولُهُ",
+          "translit": "wa-ashhadu anna muḥammadan ʿabduhū wa-rasūluh",
+          "tokens": [
+            {
+              "arabic": "وَأَشْهَدُ",
+              "translit": "wa-ashhadu",
+              "meaning": {
+                "de": "und ich bezeuge",
+                "en": "and I bear witness",
+                "tr": "ve şahitlik ederim",
+                "ar": "وأشهد",
+                "es": "y atestiguo",
+                "fr": "et j'atteste",
+                "id": "dan aku bersaksi",
+                "bn": "এবং আমি সাক্ষ্য দিচ্ছি",
+                "fa": "و گواهی می‌دهم",
+                "ms": "dan aku bersaksi",
+                "ur": "اور میں گواہی دیتا ہوں",
+                "ru": "и свидетельствую",
+                "sw": "na nashuhudia",
+                "ps": "او شاهدي ورکوم"
+              }
+            },
+            {
+              "arabic": "أَنَّ مُحَمَّدًا",
+              "translit": "anna muḥammadan",
+              "meaning": {
+                "de": "dass Muhammad",
+                "en": "that Muhammad",
+                "tr": "Muhammed'in",
+                "ar": "أن محمداً",
+                "es": "que Muhammad",
+                "fr": "que Muhammad",
+                "id": "bahwa Muhammad",
+                "bn": "যে মুহাম্মদ",
+                "fa": "که محمد",
+                "ms": "bahawa Muhammad",
+                "ur": "کہ محمد",
+                "ru": "что Мухаммад",
+                "sw": "kwamba Muhammad",
+                "ps": "چې محمد"
+              }
+            },
+            {
+              "arabic": "عَبْدُهُ",
+              "translit": "ʿabduhū",
+              "meaning": {
+                "de": "sein Diener ist",
+                "en": "is His servant",
+                "tr": "O'nun kulu",
+                "ar": "عبده",
+                "es": "es Su siervo",
+                "fr": "est Son serviteur",
+                "id": "adalah hamba-Nya",
+                "bn": "তাঁর বান্দা",
+                "fa": "بنده اوست",
+                "ms": "adalah hamba-Nya",
+                "ur": "اس کا بندہ ہے",
+                "ru": "Его раб",
+                "sw": "ni mja Wake",
+                "ps": "د هغه بنده دی"
+              }
+            },
+            {
+              "arabic": "وَرَسُولُهُ",
+              "translit": "wa-rasūluhū",
+              "meaning": {
+                "de": "und Sein Gesandter",
+                "en": "and His messenger",
+                "tr": "ve elçisidir",
+                "ar": "ورسوله",
+                "es": "y Su mensajero",
+                "fr": "et Son messager",
+                "id": "dan utusan-Nya",
+                "bn": "ও তাঁর রাসূল",
+                "fa": "و رسول اوست",
+                "ms": "dan utusan-Nya",
+                "ur": "اور اس کا رسول ہے",
+                "ru": "и Его посланник",
+                "sw": "na mtume Wake",
+                "ps": "او د هغه استازی دی"
+              }
+            }
+          ]
+        },
+        {
+          "arabic": "اللَّهُمَّ صَلِّ عَلَى مُحَمَّدٍ وَعَلَى آلِ مُحَمَّدٍ",
+          "translit": "allāhumma ṣalli ʿalā muḥammadin wa-ʿalā āli muḥammad",
+          "tokens": [
+            {
+              "arabic": "اللَّهُمَّ",
+              "translit": "allāhumma",
+              "meaning": {
+                "de": "o Allah",
+                "en": "O Allah",
+                "tr": "Allah'ım",
+                "ar": "يا الله",
+                "es": "oh Alá",
+                "fr": "ô Allah",
+                "id": "Ya Allah",
+                "bn": "হে আল্লাহ",
+                "fa": "خدایا",
+                "ms": "Ya Allah",
+                "ur": "اے اللہ",
+                "ru": "о Аллах",
+                "sw": "Ewe Allah",
+                "ps": "يا الله"
+              }
+            },
+            {
+              "arabic": "صَلِّ",
+              "translit": "ṣalli",
+              "meaning": {
+                "de": "sende Segen",
+                "en": "send blessings",
+                "tr": "salat eyle",
+                "ar": "صلِّ",
+                "es": "envía bendiciones",
+                "fr": "envoie Tes bénédictions",
+                "id": "limpahkanlah selawat",
+                "bn": "রহমত বর্ষণ করো",
+                "fa": "درود فرست",
+                "ms": "limpahkanlah selawat",
+                "ur": "درود بھیج",
+                "ru": "пошли благословения",
+                "sw": "teremsha rehema",
+                "ps": "درود ولېږه"
+              }
+            },
+            {
+              "arabic": "عَلَى مُحَمَّدٍ",
+              "translit": "ʿalā muḥammadin",
+              "meaning": {
+                "de": "auf Muhammad",
+                "en": "upon Muhammad",
+                "tr": "Muhammed'e",
+                "ar": "على محمد",
+                "es": "sobre Muhammad",
+                "fr": "sur Muhammad",
+                "id": "kepada Muhammad",
+                "bn": "মুহাম্মদের প্রতি",
+                "fa": "بر محمد",
+                "ms": "kepada Muhammad",
+                "ur": "محمد پر",
+                "ru": "на Мухаммада",
+                "sw": "juu ya Muhammad",
+                "ps": "پر محمد"
+              }
+            },
+            {
+              "arabic": "وَعَلَى آلِ مُحَمَّدٍ",
+              "translit": "wa-ʿalā āli muḥammad",
+              "meaning": {
+                "de": "und auf die Familie Muhammads",
+                "en": "and upon the family of Muhammad",
+                "tr": "ve Muhammed'in ailesine",
+                "ar": "وعلى آل محمد",
+                "es": "y sobre la familia de Muhammad",
+                "fr": "et sur la famille de Muhammad",
+                "id": "dan keluarga Muhammad",
+                "bn": "ও মুহাম্মদের পরিবারের প্রতি",
+                "fa": "و بر خاندان محمد",
+                "ms": "dan keluarga Muhammad",
+                "ur": "اور محمد کی آل پر",
+                "ru": "и на семью Мухаммада",
+                "sw": "na jamaa ya Muhammad",
+                "ps": "او د محمد پر کورنۍ"
+              }
+            }
+          ]
+        },
+        {
+          "arabic": "كَمَا صَلَّيْتَ عَلَى إِبْرَاهِيمَ وَعَلَى آلِ إِبْرَاهِيمَ",
+          "translit": "kamā ṣallayta ʿalā ibrāhīma wa-ʿalā āli ibrāhīm",
+          "tokens": [
+            {
+              "arabic": "كَمَا",
+              "translit": "kamā",
+              "meaning": {
+                "de": "so wie",
+                "en": "just as",
+                "tr": "nasıl ki",
+                "ar": "كما",
+                "es": "así como",
+                "fr": "de même que",
+                "id": "sebagaimana",
+                "bn": "যেমন",
+                "fa": "همان‌گونه که",
+                "ms": "sebagaimana",
+                "ur": "جس طرح",
+                "ru": "как",
+                "sw": "kama",
+                "ps": "لکه څنګه چې"
+              }
+            },
+            {
+              "arabic": "صَلَّيْتَ",
+              "translit": "ṣallayta",
+              "meaning": {
+                "de": "Du gesegnet hast",
+                "en": "You sent blessings",
+                "tr": "salat ettin",
+                "ar": "صليت",
+                "es": "Tú enviaste bendiciones",
+                "fr": "Tu as envoyé Tes bénédictions",
+                "id": "Engkau limpahkan selawat",
+                "bn": "তুমি রহমত বর্ষণ করেছিলে",
+                "fa": "درود فرستادی",
+                "ms": "Engkau limpahkan selawat",
+                "ur": "تو نے درود بھیجا",
+                "ru": "Ты благословил",
+                "sw": "ulivyoteremsha rehema",
+                "ps": "تا درود لېږلی"
+              }
+            },
+            {
+              "arabic": "عَلَى إِبْرَاهِيمَ",
+              "translit": "ʿalā ibrāhīma",
+              "meaning": {
+                "de": "auf Ibrahim",
+                "en": "upon Ibrahim",
+                "tr": "İbrahim'e",
+                "ar": "على إبراهيم",
+                "es": "sobre Ibrahim",
+                "fr": "sur Ibrahim",
+                "id": "kepada Ibrahim",
+                "bn": "ইব্রাহীমের প্রতি",
+                "fa": "بر ابراهیم",
+                "ms": "kepada Ibrahim",
+                "ur": "ابراہیم پر",
+                "ru": "на Ибрахима",
+                "sw": "juu ya Ibrahim",
+                "ps": "پر ابراهيم"
+              }
+            },
+            {
+              "arabic": "وَعَلَى آلِ إِبْرَاهِيمَ",
+              "translit": "wa-ʿalā āli ibrāhīm",
+              "meaning": {
+                "de": "und auf die Familie Ibrahims",
+                "en": "and upon the family of Ibrahim",
+                "tr": "ve İbrahim'in ailesine",
+                "ar": "وعلى آل إبراهيم",
+                "es": "y sobre la familia de Ibrahim",
+                "fr": "et sur la famille d'Ibrahim",
+                "id": "dan keluarga Ibrahim",
+                "bn": "ও ইব্রাহীমের পরিবারের প্রতি",
+                "fa": "و بر خاندان ابراهیم",
+                "ms": "dan keluarga Ibrahim",
+                "ur": "اور ابراہیم کی آل پر",
+                "ru": "и на семью Ибрахима",
+                "sw": "na jamaa ya Ibrahim",
+                "ps": "او د ابراهيم پر کورنۍ"
+              }
+            }
+          ]
+        },
+        {
+          "arabic": "إِنَّكَ حَمِيدٌ مَجِيدٌ",
+          "translit": "innaka ḥamīdun majīd",
+          "tokens": [
+            {
+              "arabic": "إِنَّكَ",
+              "translit": "innaka",
+              "meaning": {
+                "de": "wahrlich, Du bist",
+                "en": "indeed, You are",
+                "tr": "şüphesiz Sen",
+                "ar": "إنك",
+                "es": "en verdad, Tú eres",
+                "fr": "en vérité, Tu es",
+                "id": "sesungguhnya Engkau",
+                "bn": "নিশ্চয়ই তুমি",
+                "fa": "همانا تو",
+                "ms": "sesungguhnya Engkau",
+                "ur": "بے شک تو",
+                "ru": "поистине, Ты",
+                "sw": "hakika Wewe",
+                "ps": "یقینا ته"
+              }
+            },
+            {
+              "arabic": "حَمِيدٌ",
+              "translit": "ḥamīdun",
+              "meaning": {
+                "de": "lobenswert",
+                "en": "praiseworthy",
+                "tr": "övgüye layık",
+                "ar": "حميد، محمود",
+                "es": "digno de alabanza",
+                "fr": "digne de louange",
+                "id": "Maha Terpuji",
+                "bn": "প্রশংসিত",
+                "fa": "ستوده",
+                "ms": "Maha Terpuji",
+                "ur": "لائقِ تعریف",
+                "ru": "достохвальный",
+                "sw": "unaesifiwa",
+                "ps": "ستایل شوی"
+              }
+            },
+            {
+              "arabic": "مَجِيدٌ",
+              "translit": "majīdun",
+              "meaning": {
+                "de": "ruhmreich",
+                "en": "glorious",
+                "tr": "yüce şanlı",
+                "ar": "مجيد، ذو مجد",
+                "es": "glorioso",
+                "fr": "glorieux",
+                "id": "Mahamulia",
+                "bn": "গৌরবময়",
+                "fa": "باشکوه",
+                "ms": "Maha Mulia",
+                "ur": "بزرگی والا",
+                "ru": "славный",
+                "sw": "mtukufu",
+                "ps": "لوی مرتبې"
+              }
+            }
+          ]
+        },
+        {
+          "arabic": "اللَّهُمَّ بَارِكْ عَلَى مُحَمَّدٍ وَعَلَى آلِ مُحَمَّدٍ",
+          "translit": "allāhumma bārik ʿalā muḥammadin wa-ʿalā āli muḥammad",
+          "tokens": [
+            {
+              "arabic": "اللَّهُمَّ",
+              "translit": "allāhumma",
+              "meaning": {
+                "de": "o Allah",
+                "en": "O Allah",
+                "tr": "Allah'ım",
+                "ar": "يا الله",
+                "es": "oh Alá",
+                "fr": "ô Allah",
+                "id": "Ya Allah",
+                "bn": "হে আল্লাহ",
+                "fa": "خدایا",
+                "ms": "Ya Allah",
+                "ur": "اے اللہ",
+                "ru": "о Аллах",
+                "sw": "Ewe Allah",
+                "ps": "يا الله"
+              }
+            },
+            {
+              "arabic": "بَارِكْ",
+              "translit": "bārik",
+              "meaning": {
+                "de": "segne",
+                "en": "bless",
+                "tr": "bereketli kıl",
+                "ar": "بارك",
+                "es": "bendice",
+                "fr": "bénis",
+                "id": "berkahilah",
+                "bn": "বরকত দাও",
+                "fa": "برکت ده",
+                "ms": "berkatilah",
+                "ur": "برکت دے",
+                "ru": "благослови",
+                "sw": "bariki",
+                "ps": "برکت ورکړه"
+              }
+            },
+            {
+              "arabic": "عَلَى مُحَمَّدٍ",
+              "translit": "ʿalā muḥammadin",
+              "meaning": {
+                "de": "auf Muhammad",
+                "en": "upon Muhammad",
+                "tr": "Muhammed'e",
+                "ar": "على محمد",
+                "es": "sobre Muhammad",
+                "fr": "sur Muhammad",
+                "id": "kepada Muhammad",
+                "bn": "মুহাম্মদের প্রতি",
+                "fa": "بر محمد",
+                "ms": "kepada Muhammad",
+                "ur": "محمد پر",
+                "ru": "на Мухаммада",
+                "sw": "juu ya Muhammad",
+                "ps": "پر محمد"
+              }
+            },
+            {
+              "arabic": "وَعَلَى آلِ مُحَمَّدٍ",
+              "translit": "wa-ʿalā āli muḥammad",
+              "meaning": {
+                "de": "und auf die Familie Muhammads",
+                "en": "and upon the family of Muhammad",
+                "tr": "ve Muhammed'in ailesine",
+                "ar": "وعلى آل محمد",
+                "es": "y sobre la familia de Muhammad",
+                "fr": "et sur la famille de Muhammad",
+                "id": "dan keluarga Muhammad",
+                "bn": "ও মুহাম্মদের পরিবারের প্রতি",
+                "fa": "و بر خاندان محمد",
+                "ms": "dan keluarga Muhammad",
+                "ur": "اور محمد کی آل پر",
+                "ru": "и на семью Мухаммада",
+                "sw": "na jamaa ya Muhammad",
+                "ps": "او د محمد پر کورنۍ"
+              }
+            }
+          ]
+        },
+        {
+          "arabic": "كَمَا بَارَكْتَ عَلَى إِبْرَاهِيمَ وَعَلَى آلِ إِبْرَاهِيمَ",
+          "translit": "kamā bārakta ʿalā ibrāhīma wa-ʿalā āli ibrāhīm",
+          "tokens": [
+            {
+              "arabic": "كَمَا",
+              "translit": "kamā",
+              "meaning": {
+                "de": "so wie",
+                "en": "just as",
+                "tr": "nasıl ki",
+                "ar": "كما",
+                "es": "así como",
+                "fr": "de même que",
+                "id": "sebagaimana",
+                "bn": "যেমন",
+                "fa": "همان‌گونه که",
+                "ms": "sebagaimana",
+                "ur": "جس طرح",
+                "ru": "как",
+                "sw": "kama",
+                "ps": "لکه څنګه چې"
+              }
+            },
+            {
+              "arabic": "بَارَكْتَ",
+              "translit": "bārakta",
+              "meaning": {
+                "de": "Du gesegnet hast",
+                "en": "You blessed",
+                "tr": "bereketli kıldın",
+                "ar": "باركت",
+                "es": "Tú bendijiste",
+                "fr": "Tu as béni",
+                "id": "Engkau berkahi",
+                "bn": "তুমি বরকত দিয়েছিলে",
+                "fa": "برکت دادی",
+                "ms": "Engkau berkati",
+                "ur": "تو نے برکت دی",
+                "ru": "Ты благословил",
+                "sw": "ulivyobariki",
+                "ps": "تا برکت ورکړی و"
+              }
+            },
+            {
+              "arabic": "عَلَى إِبْرَاهِيمَ",
+              "translit": "ʿalā ibrāhīma",
+              "meaning": {
+                "de": "auf Ibrahim",
+                "en": "upon Ibrahim",
+                "tr": "İbrahim'e",
+                "ar": "على إبراهيم",
+                "es": "sobre Ibrahim",
+                "fr": "sur Ibrahim",
+                "id": "kepada Ibrahim",
+                "bn": "ইব্রাহীমের প্রতি",
+                "fa": "بر ابراهیم",
+                "ms": "kepada Ibrahim",
+                "ur": "ابراہیم پر",
+                "ru": "на Ибрахима",
+                "sw": "juu ya Ibrahim",
+                "ps": "پر ابراهيم"
+              }
+            },
+            {
+              "arabic": "وَعَلَى آلِ إِبْرَاهِيمَ",
+              "translit": "wa-ʿalā āli ibrāhīm",
+              "meaning": {
+                "de": "und auf die Familie Ibrahims",
+                "en": "and upon the family of Ibrahim",
+                "tr": "ve İbrahim'in ailesine",
+                "ar": "وعلى آل إبراهيم",
+                "es": "y sobre la familia de Ibrahim",
+                "fr": "et sur la famille d'Ibrahim",
+                "id": "dan keluarga Ibrahim",
+                "bn": "ও ইব্রাহীমের পরিবারের প্রতি",
+                "fa": "و بر خاندان ابراهیم",
+                "ms": "dan keluarga Ibrahim",
+                "ur": "اور ابراہیم کی آل پر",
+                "ru": "и на семью Ибрахима",
+                "sw": "na jamaa ya Ibrahim",
+                "ps": "او د ابراهيم پر کورنۍ"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "salah-words-4",
+      "titleKey": "learn.lessonTitles.salah-words-4",
+      "lines": [
+        {
+          "arabic": "اللَّهُمَّ إِنِّي أَعُوذُ بِكَ مِنْ عَذَابِ الْقَبْرِ",
+          "translit": "allāhumma innī aʿūdhu bika min ʿadhābi l-qabr",
+          "tokens": [
+            {
+              "arabic": "اللَّهُمَّ إِنِّي",
+              "translit": "allāhumma innī",
+              "meaning": {
+                "de": "o Allah, wahrlich ich",
+                "en": "O Allah, indeed I",
+                "tr": "Allah'ım, şüphesiz ben",
+                "ar": "اللهم إني",
+                "es": "oh Alá, en verdad yo",
+                "fr": "ô Allah, en vérité je",
+                "id": "Ya Allah, sesungguhnya aku",
+                "bn": "হে আল্লাহ, নিশ্চয়ই আমি",
+                "fa": "خدایا، همانا من",
+                "ms": "Ya Allah, sesungguhnya aku",
+                "ur": "اے اللہ، بے شک میں",
+                "ru": "о Аллах, поистине я",
+                "sw": "Ewe Allah, hakika mimi",
+                "ps": "یا الله، زه یقینا"
+              }
+            },
+            {
+              "arabic": "أَعُوذُ بِكَ",
+              "translit": "aʿūdhu bika",
+              "meaning": {
+                "de": "suche Zuflucht bei Dir",
+                "en": "seek refuge in You",
+                "tr": "sana sığınırım",
+                "ar": "أعوذ بك",
+                "es": "busco refugio en Ti",
+                "fr": "je cherche refuge auprès de Toi",
+                "id": "berlindung kepada-Mu",
+                "bn": "তোমার কাছে আশ্রয় চাই",
+                "fa": "به تو پناه می‌برم",
+                "ms": "berlindung kepada-Mu",
+                "ur": "تیری پناہ چاہتا ہوں",
+                "ru": "прибегаю к Тебе",
+                "sw": "najikinga Kwako",
+                "ps": "په تا پناه غواړم"
+              }
+            },
+            {
+              "arabic": "مِنْ عَذَابِ الْقَبْرِ",
+              "translit": "min ʿadhābi l-qabri",
+              "meaning": {
+                "de": "vor der Strafe des Grabes",
+                "en": "from the punishment of the grave",
+                "tr": "kabir azabından",
+                "ar": "من عذاب القبر",
+                "es": "del castigo de la tumba",
+                "fr": "du châtiment de la tombe",
+                "id": "dari siksa kubur",
+                "bn": "কবরের আযাব থেকে",
+                "fa": "از عذاب قبر",
+                "ms": "dari azab kubur",
+                "ur": "عذابِ قبر سے",
+                "ru": "от наказания могилы",
+                "sw": "na adhabu ya kaburi",
+                "ps": "د قبر له عذاب نه"
+              }
+            }
+          ]
+        },
+        {
+          "arabic": "وَمِنْ فِتْنَةِ الْمَسِيحِ الدَّجَّالِ",
+          "translit": "wa-min fitnati l-masīḥi d-dajjāl",
+          "tokens": [
+            {
+              "arabic": "وَمِنْ فِتْنَةِ",
+              "translit": "wa-min fitnati",
+              "meaning": {
+                "de": "und vor der Versuchung",
+                "en": "and from the trial of",
+                "tr": "ve fitnesinden",
+                "ar": "ومن فتنة",
+                "es": "y de la prueba de",
+                "fr": "et de l'épreuve de",
+                "id": "dan dari fitnah",
+                "bn": "এবং ফিতনা থেকে",
+                "fa": "و از فتنه",
+                "ms": "dan dari fitnah",
+                "ur": "اور فتنے سے",
+                "ru": "и от искушения",
+                "sw": "na fitna ya",
+                "ps": "او د فتنې نه"
+              }
+            },
+            {
+              "arabic": "الْمَسِيحِ الدَّجَّالِ",
+              "translit": "al-masīḥi d-dajjāl",
+              "meaning": {
+                "de": "des Antichristen",
+                "en": "the Antichrist (false messiah)",
+                "tr": "Mesih Deccal'in",
+                "ar": "المسيح الدجال",
+                "es": "el Anticristo",
+                "fr": "de l'Antéchrist",
+                "id": "Al-Masih Dajjal",
+                "bn": "মাসীহ দাজ্জাল",
+                "fa": "مسیح دجّال",
+                "ms": "Al-Masih Dajjal",
+                "ur": "مسیح دجال",
+                "ru": "Лжемессии (Даджаля)",
+                "sw": "Masihi Dajjali",
+                "ps": "مسیح دجال"
+              }
+            }
+          ]
+        },
+        {
+          "arabic": "وَمِنْ فِتْنَةِ الْمَحْيَا وَالْمَمَاتِ",
+          "translit": "wa-min fitnati l-maḥyā wa-l-mamāt",
+          "tokens": [
+            {
+              "arabic": "وَمِنْ فِتْنَةِ",
+              "translit": "wa-min fitnati",
+              "meaning": {
+                "de": "und vor der Versuchung",
+                "en": "and from the trial of",
+                "tr": "ve fitnesinden",
+                "ar": "ومن فتنة",
+                "es": "y de la prueba de",
+                "fr": "et de l'épreuve de",
+                "id": "dan dari fitnah",
+                "bn": "এবং ফিতনা থেকে",
+                "fa": "و از فتنه",
+                "ms": "dan dari fitnah",
+                "ur": "اور فتنے سے",
+                "ru": "и от искушения",
+                "sw": "na fitna ya",
+                "ps": "او د فتنې نه"
+              }
+            },
+            {
+              "arabic": "الْمَحْيَا",
+              "translit": "al-maḥyā",
+              "meaning": {
+                "de": "des Lebens",
+                "en": "life",
+                "tr": "hayatın",
+                "ar": "المحيا، الحياة",
+                "es": "la vida",
+                "fr": "la vie",
+                "id": "kehidupan",
+                "bn": "জীবনের",
+                "fa": "زندگی",
+                "ms": "kehidupan",
+                "ur": "زندگی",
+                "ru": "жизни",
+                "sw": "uhai",
+                "ps": "ژوند"
+              }
+            },
+            {
+              "arabic": "وَالْمَمَاتِ",
+              "translit": "wa-l-mamāti",
+              "meaning": {
+                "de": "und des Todes",
+                "en": "and death",
+                "tr": "ve ölümün",
+                "ar": "والممات، الموت",
+                "es": "y la muerte",
+                "fr": "et la mort",
+                "id": "dan kematian",
+                "bn": "এবং মৃত্যুর",
+                "fa": "و مرگ",
+                "ms": "dan kematian",
+                "ur": "اور موت",
+                "ru": "и смерти",
+                "sw": "na kifo",
+                "ps": "او مرګ"
+              }
+            }
+          ]
+        },
+        {
+          "arabic": "أَسْتَغْفِرُ اللهَ",
+          "translit": "astaghfiru llāh",
+          "tokens": [
+            {
+              "arabic": "أَسْتَغْفِرُ",
+              "translit": "astaghfiru",
+              "meaning": {
+                "de": "ich bitte um Vergebung",
+                "en": "I seek forgiveness",
+                "tr": "bağışlanma dilerim",
+                "ar": "أستغفر",
+                "es": "pido perdón",
+                "fr": "je demande pardon",
+                "id": "aku memohon ampun",
+                "bn": "আমি ক্ষমা চাই",
+                "fa": "طلب آمرزش می‌کنم",
+                "ms": "aku memohon ampun",
+                "ur": "میں بخشش مانگتا ہوں",
+                "ru": "прошу прощения",
+                "sw": "naomba msamaha",
+                "ps": "بښنه غواړم"
+              }
+            },
+            {
+              "arabic": "اللهَ",
+              "translit": "llāha",
+              "meaning": {
+                "de": "von Allah",
+                "en": "from Allah",
+                "tr": "Allah'tan",
+                "ar": "الله",
+                "es": "a Alá",
+                "fr": "à Allah",
+                "id": "kepada Allah",
+                "bn": "আল্লাহর কাছে",
+                "fa": "از خدا",
+                "ms": "kepada Allah",
+                "ur": "اللہ سے",
+                "ru": "у Аллаха",
+                "sw": "kwa Allah",
+                "ps": "د الله نه"
+              }
+            }
+          ]
+        },
+        {
+          "arabic": "اللَّهُمَّ أَنْتَ السَّلَامُ وَمِنْكَ السَّلَامُ",
+          "translit": "allāhumma anta s-salāmu wa-minka s-salām",
+          "tokens": [
+            {
+              "arabic": "اللَّهُمَّ أَنْتَ",
+              "translit": "allāhumma anta",
+              "meaning": {
+                "de": "o Allah, Du bist",
+                "en": "O Allah, You are",
+                "tr": "Allah'ım, Sen",
+                "ar": "اللهم أنت",
+                "es": "oh Alá, Tú eres",
+                "fr": "ô Allah, Tu es",
+                "id": "Ya Allah, Engkau",
+                "bn": "হে আল্লাহ, তুমি",
+                "fa": "خدایا، تو",
+                "ms": "Ya Allah, Engkaulah",
+                "ur": "اے اللہ، تو ہی",
+                "ru": "о Аллах, Ты",
+                "sw": "Ewe Allah, Wewe ndiye",
+                "ps": "یا الله، ته"
+              }
+            },
+            {
+              "arabic": "السَّلَامُ",
+              "translit": "as-salāmu",
+              "meaning": {
+                "de": "der Friede",
+                "en": "peace",
+                "tr": "Selam'sın",
+                "ar": "السلام",
+                "es": "la paz",
+                "fr": "la paix",
+                "id": "salam sejahtera",
+                "bn": "শান্তি",
+                "fa": "سلام",
+                "ms": "salam sejahtera",
+                "ur": "سلامتی",
+                "ru": "мир",
+                "sw": "amani",
+                "ps": "سلام"
+              }
+            },
+            {
+              "arabic": "وَمِنْكَ السَّلَامُ",
+              "translit": "wa-minka s-salāmu",
+              "meaning": {
+                "de": "und von Dir kommt der Friede",
+                "en": "and from You comes peace",
+                "tr": "ve selam Sendendir",
+                "ar": "ومنك السلام",
+                "es": "y de Ti viene la paz",
+                "fr": "et de Toi vient la paix",
+                "id": "dan dari-Mu datang kesejahteraan",
+                "bn": "এবং তোমার থেকেই আসে শান্তি",
+                "fa": "و سلامتی از توست",
+                "ms": "dan dari-Mu datangnya kesejahteraan",
+                "ur": "اور سلامتی تجھی سے ہے",
+                "ru": "и от Тебя мир",
+                "sw": "na Kwako kunatoka amani",
+                "ps": "او سلامتي له تا څخه ده"
+              }
+            }
+          ]
+        },
+        {
+          "arabic": "تَبَارَكْتَ يَا ذَا الْجَلَالِ وَالْإِكْرَامِ",
+          "translit": "tabārakta yā dhā l-jalāli wa-l-ikrām",
+          "tokens": [
+            {
+              "arabic": "تَبَارَكْتَ",
+              "translit": "tabārakta",
+              "meaning": {
+                "de": "gesegnet bist Du",
+                "en": "blessed are You",
+                "tr": "yücesin",
+                "ar": "تباركت",
+                "es": "bendito eres",
+                "fr": "béni es-Tu",
+                "id": "Mahasuci Engkau",
+                "bn": "তুমি বরকতময়",
+                "fa": "متعالی هستی",
+                "ms": "Maha Suci Engkau",
+                "ur": "تو بابرکت ہے",
+                "ru": "благословен Ты",
+                "sw": "umebarikiwa",
+                "ps": "ته برکتناک يې"
+              }
+            },
+            {
+              "arabic": "يَا ذَا الْجَلَالِ",
+              "translit": "yā dhā l-jalāli",
+              "meaning": {
+                "de": "o Besitzer der Majestät",
+                "en": "O Possessor of majesty",
+                "tr": "ey celal sahibi",
+                "ar": "يا ذا الجلال",
+                "es": "oh Poseedor de la majestad",
+                "fr": "ô Possesseur de majesté",
+                "id": "wahai Pemilik keagungan",
+                "bn": "হে মহিমার অধিকারী",
+                "fa": "ای صاحب جلال",
+                "ms": "wahai Pemilik keagungan",
+                "ur": "اے جلال والے",
+                "ru": "о Обладатель величия",
+                "sw": "Ewe Mwenye utukufu",
+                "ps": "ای د لوی والي څښتنه"
+              }
+            },
+            {
+              "arabic": "وَالْإِكْرَامِ",
+              "translit": "wa-l-ikrāmi",
+              "meaning": {
+                "de": "und der Ehre",
+                "en": "and honor",
+                "tr": "ve ikram sahibi",
+                "ar": "والإكرام",
+                "es": "y del honor",
+                "fr": "et de générosité",
+                "id": "dan kemuliaan",
+                "bn": "ও সম্মানের",
+                "fa": "و بزرگواری",
+                "ms": "dan kemuliaan",
+                "ur": "اور اکرام والے",
+                "ru": "и щедрости",
+                "sw": "na heshima",
+                "ps": "او درناوي"
+              }
+            }
+          ]
+        },
+        {
+          "arabic": "لَا إِلَٰهَ إِلَّا اللَّهُ وَحْدَهُ لَا شَرِيكَ لَهُ",
+          "translit": "lā ilāha illā llāhu waḥdahū lā sharīka lah",
+          "tokens": [
+            {
+              "arabic": "لَا إِلَٰهَ إِلَّا اللَّهُ",
+              "translit": "lā ilāha illā llāhu",
+              "meaning": {
+                "de": "es gibt keinen Gott außer Allah",
+                "en": "there is no god but Allah",
+                "tr": "Allah'tan başka ilah yoktur",
+                "ar": "لا إله إلا الله",
+                "es": "no hay más dios que Alá",
+                "fr": "il n'y a de divinité qu'Allah",
+                "id": "tidak ada tuhan selain Allah",
+                "bn": "আল্লাহ ছাড়া কোনো উপাস্য নেই",
+                "fa": "هیچ معبودی جز خدا نیست",
+                "ms": "tiada tuhan melainkan Allah",
+                "ur": "اللہ کے سوا کوئی معبود نہیں",
+                "ru": "нет божества, кроме Аллаха",
+                "sw": "hakuna mola ila Allah",
+                "ps": "له الله پرته بل معبود نشته"
+              }
+            },
+            {
+              "arabic": "وَحْدَهُ",
+              "translit": "waḥdahū",
+              "meaning": {
+                "de": "Er allein",
+                "en": "alone",
+                "tr": "tek başına",
+                "ar": "وحده",
+                "es": "Él solo",
+                "fr": "Lui seul",
+                "id": "Yang Esa",
+                "bn": "একক",
+                "fa": "یگانه",
+                "ms": "Yang Esa",
+                "ur": "اکیلا",
+                "ru": "единый",
+                "sw": "peke Yake",
+                "ps": "یوازې"
+              }
+            },
+            {
+              "arabic": "لَا شَرِيكَ لَهُ",
+              "translit": "lā sharīka lahū",
+              "meaning": {
+                "de": "Er hat keinen Teilhaber",
+                "en": "He has no partner",
+                "tr": "O'nun ortağı yoktur",
+                "ar": "لا شريك له",
+                "es": "no tiene ningún socio",
+                "fr": "Il n'a pas d'associé",
+                "id": "tidak ada sekutu bagi-Nya",
+                "bn": "তাঁর কোনো শরীক নেই",
+                "fa": "شریکی ندارد",
+                "ms": "tiada sekutu bagi-Nya",
+                "ur": "اس کا کوئی شریک نہیں",
+                "ru": "нет у Него сотоварища",
+                "sw": "hana mshirika",
+                "ps": "شریک نلري"
+              }
+            }
+          ]
+        },
+        {
+          "arabic": "لَهُ الْمُلْكُ وَلَهُ الْحَمْدُ",
+          "translit": "lahu l-mulku wa-lahu l-ḥamd",
+          "tokens": [
+            {
+              "arabic": "لَهُ الْمُلْكُ",
+              "translit": "lahu l-mulku",
+              "meaning": {
+                "de": "Ihm gehört die Herrschaft",
+                "en": "to Him belongs the dominion",
+                "tr": "mülk O'nundur",
+                "ar": "له الملك",
+                "es": "a Él pertenece el dominio",
+                "fr": "à Lui appartient la royauté",
+                "id": "bagi-Nya kerajaan",
+                "bn": "সার্বভৌমত্ব তাঁরই",
+                "fa": "فرمانروایی از آنِ اوست",
+                "ms": "bagi-Nya kerajaan",
+                "ur": "بادشاہی اسی کی ہے",
+                "ru": "Ему принадлежит власть",
+                "sw": "Ufalme ni Wake",
+                "ps": "واکمني د هغه ده"
+              }
+            },
+            {
+              "arabic": "وَلَهُ الْحَمْدُ",
+              "translit": "wa-lahu l-ḥamdu",
+              "meaning": {
+                "de": "und Ihm gebührt das Lob",
+                "en": "and to Him belongs all praise",
+                "tr": "ve hamd O'nadır",
+                "ar": "وله الحمد",
+                "es": "y a Él pertenece la alabanza",
+                "fr": "et à Lui appartient la louange",
+                "id": "dan bagi-Nya segala puji",
+                "bn": "এবং সমস্ত প্রশংসা তাঁরই",
+                "fa": "و ستایش از آنِ اوست",
+                "ms": "dan bagi-Nya segala puji",
+                "ur": "اور ساری تعریف اسی کی ہے",
+                "ru": "и Ему хвала",
+                "sw": "na sifa zote ni Zake",
+                "ps": "او ټوله ستاینه د هغه ده"
+              }
+            }
+          ]
+        },
+        {
+          "arabic": "يُحْيِي وَيُمِيتُ وَهُوَ عَلَى كُلِّ شَيْءٍ قَدِيرٌ",
+          "translit": "yuḥyī wa-yumītu wa-huwa ʿalā kulli shayʾin qadīr",
+          "tokens": [
+            {
+              "arabic": "يُحْيِي",
+              "translit": "yuḥyī",
+              "meaning": {
+                "de": "Er gibt Leben",
+                "en": "He gives life",
+                "tr": "hayat verir",
+                "ar": "يحيي",
+                "es": "Él da vida",
+                "fr": "Il donne la vie",
+                "id": "Dia menghidupkan",
+                "bn": "তিনি জীবন দেন",
+                "fa": "او زنده می‌کند",
+                "ms": "Dia menghidupkan",
+                "ur": "وہ زندگی دیتا ہے",
+                "ru": "Он даёт жизнь",
+                "sw": "Yeye huhuisha",
+                "ps": "هغه ژوند ورکوي"
+              }
+            },
+            {
+              "arabic": "وَيُمِيتُ",
+              "translit": "wa-yumītu",
+              "meaning": {
+                "de": "und lässt sterben",
+                "en": "and causes death",
+                "tr": "ve öldürür",
+                "ar": "ويميت",
+                "es": "y causa la muerte",
+                "fr": "et Il fait mourir",
+                "id": "dan mematikan",
+                "bn": "এবং মৃত্যু দেন",
+                "fa": "و می‌میراند",
+                "ms": "dan mematikan",
+                "ur": "اور موت دیتا ہے",
+                "ru": "и умерщвляет",
+                "sw": "na huua",
+                "ps": "او مرګ ورکوي"
+              }
+            },
+            {
+              "arabic": "وَهُوَ عَلَى كُلِّ شَيْءٍ",
+              "translit": "wa-huwa ʿalā kulli shayʾin",
+              "meaning": {
+                "de": "und Er hat über alle Dinge",
+                "en": "and He has over all things",
+                "tr": "ve O her şeye",
+                "ar": "وهو على كل شيء",
+                "es": "y Él sobre todas las cosas",
+                "fr": "et Il est sur toute chose",
+                "id": "dan Dia atas segala sesuatu",
+                "bn": "এবং তিনি সবকিছুর উপর",
+                "fa": "و او بر همه چیز",
+                "ms": "dan Dia atas segala sesuatu",
+                "ur": "اور وہ ہر چیز پر",
+                "ru": "и Он над всякой вещью",
+                "sw": "na Yeye juu ya kila kitu",
+                "ps": "او هغه پر هر شي"
+              }
+            },
+            {
+              "arabic": "قَدِيرٌ",
+              "translit": "qadīrun",
+              "meaning": {
+                "de": "Macht",
+                "en": "power (He is Most Capable)",
+                "tr": "kadirdir",
+                "ar": "قدير، قادر",
+                "es": "todopoderoso",
+                "fr": "Tout-Puissant",
+                "id": "Mahakuasa",
+                "bn": "সর্বশক্তিমান",
+                "fa": "تواناست",
+                "ms": "Maha Berkuasa",
+                "ur": "پوری قدرت رکھتا ہے",
+                "ru": "всемогущ",
+                "sw": "Muweza",
+                "ps": "قادر دی"
+              }
+            }
+          ]
+        },
+        {
+          "arabic": "اللَّهُمَّ إِنِّي أَسْأَلُكَ عِلْمًا نَافِعًا",
+          "translit": "allāhumma innī asʾaluka ʿilman nāfiʿan",
+          "tokens": [
+            {
+              "arabic": "اللَّهُمَّ إِنِّي أَسْأَلُكَ",
+              "translit": "allāhumma innī asʾaluka",
+              "meaning": {
+                "de": "o Allah, wahrlich ich bitte Dich um",
+                "en": "O Allah, indeed I ask You for",
+                "tr": "Allah'ım, senden istiyorum",
+                "ar": "اللهم إني أسألك",
+                "es": "oh Alá, en verdad Te pido",
+                "fr": "ô Allah, en vérité je Te demande",
+                "id": "Ya Allah, sesungguhnya aku memohon kepada-Mu",
+                "bn": "হে আল্লাহ, আমি তোমার কাছে চাই",
+                "fa": "خدایا، از تو می‌خواهم",
+                "ms": "Ya Allah, sesungguhnya aku memohon kepada-Mu",
+                "ur": "اے اللہ، میں تجھ سے مانگتا ہوں",
+                "ru": "о Аллах, я прошу у Тебя",
+                "sw": "Ewe Allah, ninakuomba",
+                "ps": "یا الله، زه له تا غواړم"
+              }
+            },
+            {
+              "arabic": "عِلْمًا نَافِعًا",
+              "translit": "ʿilman nāfiʿan",
+              "meaning": {
+                "de": "nützliches Wissen",
+                "en": "beneficial knowledge",
+                "tr": "faydalı ilim",
+                "ar": "علماً نافعاً",
+                "es": "conocimiento beneficioso",
+                "fr": "une science utile",
+                "id": "ilmu yang bermanfaat",
+                "bn": "উপকারী জ্ঞান",
+                "fa": "دانش سودمند",
+                "ms": "ilmu yang bermanfaat",
+                "ur": "نفع بخش علم",
+                "ru": "полезное знание",
+                "sw": "elimu yenye manufaa",
+                "ps": "ګټور علم"
+              }
+            }
+          ]
+        },
+        {
+          "arabic": "وَرِزْقًا طَيِّبًا وَعَمَلًا مُتَقَبَّلًا",
+          "translit": "wa-rizqan ṭayyiban wa-ʿamalan mutaqabbalan",
+          "tokens": [
+            {
+              "arabic": "وَرِزْقًا طَيِّبًا",
+              "translit": "wa-rizqan ṭayyiban",
+              "meaning": {
+                "de": "und gute Versorgung",
+                "en": "and good provision",
+                "tr": "ve helal rızık",
+                "ar": "ورزقاً طيباً",
+                "es": "y buena provisión",
+                "fr": "et une bonne subsistance",
+                "id": "dan rezeki yang baik",
+                "bn": "এবং উত্তম রিযিক",
+                "fa": "و روزی نیکو",
+                "ms": "dan rezeki yang baik",
+                "ur": "اور پاکیزہ رزق",
+                "ru": "и благой удел",
+                "sw": "na riziki njema",
+                "ps": "او ښه روزي"
+              }
+            },
+            {
+              "arabic": "وَعَمَلًا مُتَقَبَّلًا",
+              "translit": "wa-ʿamalan mutaqabbalan",
+              "meaning": {
+                "de": "und angenommene Taten",
+                "en": "and accepted deeds",
+                "tr": "ve kabul edilen amel",
+                "ar": "وعملاً متقبلاً",
+                "es": "y obras aceptadas",
+                "fr": "et une œuvre agréée",
+                "id": "dan amal yang diterima",
+                "bn": "এবং কবুল হওয়া আমল",
+                "fa": "و عمل مقبول",
+                "ms": "dan amal yang diterima",
+                "ur": "اور قبول شدہ عمل",
+                "ru": "и принятое деяние",
+                "sw": "na matendo yaliyokubaliwa",
+                "ps": "او منل شوی عمل"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

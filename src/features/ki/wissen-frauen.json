@@ -1,0 +1,105 @@
+{
+  "note": "Frauen-Fiqh — die im Audit 2026-07-27 gemeldete größte Lücke (0 von 147 Einträgen). Sachlich, ohne Rechtsurteil im Einzelfall; wo die Rechtsschulen abweichen, wird das ausdrücklich gesagt und auf Gelehrte verwiesen.",
+  "eintraege": [
+    {
+      "id": "menstruation-gebet-fasten",
+      "titel": "Menstruation — Gebet, Fasten und Koran",
+      "tags": [
+        "menstruation",
+        "periode",
+        "regel",
+        "hayd",
+        "darf ich beten waehrend der periode",
+        "koran beruehren",
+        "fasten periode",
+        "monatsblutung"
+      ],
+      "text": "Während der Menstruation (arabisch Hayd) entfällt das Pflichtgebet vollständig: Eine Frau betet in dieser Zeit nicht und holt die ausgefallenen Gebete danach auch nicht nach — das ist eine Erleichterung, kein Verlust. Das Fasten entfällt ebenfalls, wird aber später Tag für Tag nachgeholt. Ist die Blutung vorbei, folgt die Ganzkörperwaschung (Ghusl), danach beginnt wieder alles wie gewohnt. Dhikr, Bittgebete, Zuhören beim Rezitieren und Lernen sind die ganze Zeit über erlaubt und werden ausdrücklich empfohlen — die Verbindung zu Allah reißt nicht ab. Beim Berühren des arabischen Mushaf und beim lauten Rezitieren aus dem Gedächtnis unterscheiden sich die Rechtsschulen: Manche erlauben es ohne Einschränkung, andere nur über einen Umschlag, ein Handy oder eine Übersetzung. Wer es genau wissen will, fragt eine Gelehrte oder einen Gelehrten der eigenen Rechtsschule.",
+      "belege": ["Koran 2:222", "Koran 2:185", "Koran 22:78"]
+    },
+    {
+      "id": "nifas-wochenbett",
+      "titel": "Nifas — die Zeit nach der Geburt",
+      "tags": [
+        "nifas",
+        "wochenbett",
+        "nach der geburt",
+        "wie lange kein gebet nach geburt",
+        "blutung nach entbindung",
+        "ghusl nach geburt"
+      ],
+      "text": "Nifas ist die Blutung nach einer Entbindung. Für diese Zeit gilt dasselbe wie bei der Menstruation: kein Pflichtgebet, kein Fasten, und die Gebete werden später nicht nachgeholt; versäumte Fastentage dagegen schon. Als Höchstdauer nennen die klassischen Rechtsschulen überwiegend vierzig Tage. Hört die Blutung früher auf, macht die Frau Ghusl und nimmt Gebet und Fasten sofort wieder auf — die vierzig Tage sind eine Obergrenze, keine Wartezeit. Dauert es länger, gilt die Blutung nach der Mehrheitsmeinung als Krankheitsblutung, und die Frau betet wieder. Nach einer Fehlgeburt hängt die Einordnung davon ab, wie weit die Schwangerschaft fortgeschritten war; das ist eine Einzelfallfrage für eine Gelehrte oder einen Gelehrten. Dhikr, Dua und Koran-Hören sind in der ganzen Zeit erlaubt.",
+      "belege": ["Koran 2:222", "Koran 2:185", "Koran 65:6"]
+    },
+    {
+      "id": "fastentage-nachholen-periode",
+      "titel": "Verpasste Fastentage nachholen",
+      "tags": [
+        "fasten nachholen",
+        "qada fasten",
+        "verpasste fastentage",
+        "periode ramadan",
+        "wann nachholen",
+        "fidya"
+      ],
+      "text": "Fastentage, die wegen Menstruation, Wochenbett, Krankheit oder Reise ausgefallen sind, werden Tag für Tag nachgeholt — der Koran sagt ausdrücklich „eine gleiche Anzahl von anderen Tagen“. Die Tage müssen nicht am Stück liegen und nicht sofort kommen; sinnvoll ist, sie vor dem nächsten Ramadan abzuschließen. Viele legen sie auf kurze Wintertage oder verbinden sie mit den ohnehin empfohlenen Montagen und Donnerstagen. Wichtig: Nachholtage brauchen die Absicht vor der Morgendämmerung. Freiwilliges Fasten wie die sechs Tage im Schawwal steht dem nicht im Weg, die Pflichttage haben aber Vorrang. Wer wegen dauerhafter Krankheit oder hohen Alters gar nicht mehr fasten kann, speist ersatzweise einen Bedürftigen je Tag (Fidya). Salati zählt offene Tage im Fasten-Bereich mit.",
+      "belege": ["Koran 2:184", "Koran 2:185"]
+    },
+    {
+      "id": "awra-frau-im-gebet",
+      "titel": "Was eine Frau im Gebet bedeckt",
+      "tags": [
+        "awra",
+        "kleidung im gebet",
+        "was muss ich beim beten anziehen",
+        "kopftuch beim gebet",
+        "gebetskleidung frau",
+        "fuesse im gebet"
+      ],
+      "text": "Im Gebet gilt für die Frau nach der Mehrheit der Gelehrten: bedeckt wird der ganze Körper außer Gesicht und Händen. Das Kleidungsstück soll blickdicht sein und locker genug, dass die Körperform nicht durchgezeichnet wird; Haare und Hals gehören dazu. Ob die Füße bedeckt sein müssen, wird unterschiedlich beantwortet — die hanafitische Schule lässt sie unbedeckt, andere Schulen verlangen sie bedeckt; mit Socken ist man in jedem Fall auf der sicheren Seite. Ein eigenes Gebetsgewand ist nicht vorgeschrieben, ein weites Kleid mit Kopftuch genügt. Verrutscht das Tuch kurz und wird es sofort wieder gerichtet, ist das Gebet nach der Mehrheitsmeinung gültig. Für Männer gilt im Gebet mindestens der Bereich von Nabel bis Knie, dazu nach Möglichkeit eine bedeckte Schulter. Der Koran fasst es allgemein: „Legt euren Schmuck bei jeder Gebetsstätte an.“",
+      "belege": ["Koran 7:31", "Koran 24:31", "Koran 33:59"]
+    },
+    {
+      "id": "frauen-in-der-moschee",
+      "titel": "Frauen in der Moschee",
+      "tags": [
+        "frauen moschee",
+        "darf eine frau in die moschee",
+        "frauenbereich",
+        "freitagsgebet frau",
+        "wo steht die frau beim gebet",
+        "gemeinschaftsgebet frauen"
+      ],
+      "text": "Frauen dürfen die Moschee besuchen; überliefert ist, dass der Prophet ﷺ es untersagte, den Dienerinnen Allahs die Moscheen zu verwehren. Pflicht ist der Moscheebesuch für sie nicht: Das Freitagsgebet ist für Frauen keine Pflicht, wer kommt, dessen Gebet zählt aber voll. Im gemeinsamen Gebet stehen die Frauenreihen hinter den Männerreihen; in vielen Moscheen gibt es dafür einen eigenen Bereich oder eine eigene Etage. Betet eine Frau mit ihrer Familie zu Hause, stellt sie sich hinter den Vorbeter. Beten mehrere Frauen unter sich, führt eine von ihnen das Gebet, und sie steht dabei in der Reihe mittig, nicht davor. Das Gebet zu Hause ist für Frauen ausdrücklich mit großem Lohn verbunden — beides ist gut, keines ist ein Mangel. Wie ein bestimmter Frauenbereich gestaltet ist, entscheidet die örtliche Gemeinde.",
+      "belege": ["Koran 9:18", "Koran 24:36"]
+    },
+    {
+      "id": "schwangerschaft-und-stillen",
+      "titel": "Schwangerschaft und Stillen — Fasten und Gebet",
+      "tags": [
+        "schwanger fasten",
+        "stillen fasten",
+        "schwangerschaft",
+        "muss ich schwanger fasten",
+        "fidya",
+        "gebet im sitzen"
+      ],
+      "text": "Eine Schwangere oder Stillende darf das Fasten unterbrechen, wenn sie für sich oder das Kind eine Gefährdung befürchtet — die Grundlage ist dieselbe Erleichterung wie für Kranke und Reisende. Wie der Ausgleich aussieht, wird unterschiedlich beantwortet: Ein Teil der Gelehrten verlangt nur das Nachholen der Tage, ein anderer Teil zusätzlich oder ersatzweise die Speisung eines Bedürftigen je Tag (Fidya). Welche Meinung im eigenen Fall gilt, klärt man mit einer Gelehrten oder einem Gelehrten; die ärztliche Einschätzung gehört in diese Entscheidung hinein. Das Gebet bleibt Pflicht, darf aber körperlich angepasst werden: Wer nicht stehen kann, betet im Sitzen, wer nicht knien kann, deutet Verbeugung und Niederwerfung mit dem Oberkörper an. Nach der Geburt gilt für die Zeit der Wochenbettblutung dasselbe wie bei Nifas beschrieben.",
+      "belege": ["Koran 2:184", "Koran 2:185", "Koran 31:14", "Koran 4:103"]
+    },
+    {
+      "id": "istihada-zwischenblutung",
+      "titel": "Istihada — Blutung außerhalb der Regel",
+      "tags": [
+        "istihada",
+        "zwischenblutung",
+        "dauerblutung",
+        "blutung ausserhalb der periode",
+        "beten trotz blutung",
+        "wudu erneuern"
+      ],
+      "text": "Nicht jede Blutung ist eine Menstruation. Eine Blutung, die außerhalb des gewohnten Zyklus auftritt oder ungewöhnlich lange anhält, gilt in der Fiqh-Sprache als Istihada und wird wie eine dauerhafte Beeinträchtigung behandelt, nicht wie Hayd. Das heißt: Gebet und Fasten bleiben Pflicht. Praktisch geht man so vor, dass man die üblichen Zyklustage als Menstruation zählt und die übrige Zeit normal betet; dabei wird für jede Gebetszeit neu die Gebetswaschung gemacht, nachdem die Stelle gereinigt und geschützt wurde. Kommt in dieser Zeit ein wenig Blut, macht das das begonnene Gebet nicht ungültig. Weil die Abgrenzung vom Zyklus abhängt und im Einzelfall knifflig ist, lohnt sich die Rücksprache mit einer kundigen Gelehrten — und bei anhaltender Blutung ohnehin der Gang zur Ärztin oder zum Arzt.",
+      "belege": ["Koran 2:222", "Koran 22:78", "Koran 2:286"]
+    }
+  ]
+}

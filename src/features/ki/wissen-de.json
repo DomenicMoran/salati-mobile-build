@@ -1,0 +1,817 @@
+{
+  "hinweis": "Kuratierte Grundwissen-Schicht für die Salati-KI (Quelle: build-ki-korpus.mjs -> public/rag/korpus-de.json, Doc-IDs w-*). Regeln: (1) nur unstrittiges Grundwissen, keine Rechtsurteile in Einzelfällen; (2) wo Rechtsschulen abweichen, wird das ausdrücklich gesagt; (3) jede Koran-Angabe muss zeichengenau zu apps/mobile/public/rag/korpus-de.json passen (Prüfskript: node scripts/check-ki-wissen.mjs); (4) Hadith-Belege nur aus den 40 Nawawi-Hadithen der App oder mit voller Quellenangabe; (5) Sprache: Deutsch, warm, klar, 2-6 Sätze, Umschrift nach scripts/umschrift-konvention.md.",
+  "eintraege": [
+    {
+      "id": "wer-ist-allah",
+      "titel": "Wer ist Allah",
+      "tags": [
+        "allah",
+        "gott",
+        "wer ist allah",
+        "schoepfer",
+        "tauhid",
+        "eigenschaften"
+      ],
+      "text": "Allah ist der Eigenname Gottes im Arabischen — arabischsprachige Christen und Juden verwenden dasselbe Wort. Er ist der eine, einzige Gott: der Schöpfer und Erhalter aller Welten, ohne Partner, ohne Kind, ohne Anfang und ohne Ende. Nichts ist Ihm gleich, und niemand außer Ihm verdient Anbetung. Sure 112 (Al-Ichlas) fasst das in vier Versen zusammen: „Er ist Allah, ein Einer, Allah, der Überlegene. Er hat nicht gezeugt und ist nicht gezeugt worden, und niemand ist Ihm jemals gleich.“ Der Koran beschreibt Ihn mit Namen und Eigenschaften — der Allerbarmer, der Barmherzige, der Allwissende, der Verzeihende —, die zeigen, wie ein Muslim zu Ihm steht: in Ehrfurcht und zugleich in Hoffnung.",
+      "belege": [
+        "Koran 112:1",
+        "Koran 112:2",
+        "Koran 112:3",
+        "Koran 112:4",
+        "Koran 2:255",
+        "Koran 42:11"
+      ]
+    },
+    {
+      "id": "tauhid",
+      "titel": "Tauhid — die Einheit Allahs",
+      "tags": [
+        "tauhid",
+        "einheit",
+        "monotheismus",
+        "einzig"
+      ],
+      "text": "Tauhid bedeutet, Allah als den Einen anzuerkennen — in Seiner Herrschaft, in Seiner Anbetung und in Seinen Namen und Eigenschaften. Praktisch heißt das: Allah allein hat erschaffen und lenkt alles; Anbetung, Gebet, Bittgebet, Opfer und Vertrauen gehören Ihm allein; und Seine Namen und Eigenschaften werden so angenommen, wie Er sie beschrieben hat, ohne Ihn mit der Schöpfung zu vergleichen. Tauhid ist der Kern der Schahada „Es gibt keinen Gott außer Allah“ und der rote Faden des ganzen Korans.",
+      "belege": [
+        "Koran 112:1",
+        "Koran 2:163",
+        "Koran 42:11"
+      ]
+    },
+    {
+      "id": "schirk",
+      "titel": "Schirk — Allah etwas beigesellen",
+      "tags": [
+        "schirk",
+        "beigesellen",
+        "goetzendienst",
+        "suende"
+      ],
+      "text": "Schirk ist das Gegenteil von Tauhid: Allah in dem, was Ihm allein zusteht, jemanden oder etwas zur Seite zu stellen — etwa ein Geschöpf anzubeten, es anzurufen, ihm die Macht über Nutzen und Schaden zuzuschreiben. Der Koran nennt Schirk die schwerste Sünde, weil sie das Verhältnis zwischen Mensch und Schöpfer verkehrt. Gelehrte unterscheiden zwischen dem großen Schirk (Anbetung eines anderen neben Allah) und dem verborgenen kleinen Schirk, etwa Frömmigkeit zur Schau zu stellen. Wer Schirk aufrichtig bereut und sich Allah zuwendet, dem steht die Tür der Vergebung offen.",
+      "belege": [
+        "Koran 4:48",
+        "Koran 31:13",
+        "Koran 39:53"
+      ]
+    },
+    {
+      "id": "sechs-glaubensartikel",
+      "titel": "Die sechs Glaubensartikel (Iman)",
+      "tags": [
+        "iman",
+        "glaubensartikel",
+        "glaubensgrundlagen",
+        "sechs",
+        "saeulen des glaubens"
+      ],
+      "text": "Der Iman ruht auf sechs Grundlagen: der Glaube an Allah, an Seine Engel, an Seine offenbarten Bücher, an Seine Gesandten, an den Jüngsten Tag und an die Vorherbestimmung — das Gute wie das Schwere. So hat es der Prophet ﷺ im bekannten Dschibril-Hadith geantwortet, als ihn ein Fremder in strahlend weißen Kleidern nach dem Iman fragte. Diese sechs bilden das Weltbild eines Muslims: woher alles kommt, wer Führung gesandt hat, wohin es geht — und dass nichts ohne Allahs Wissen geschieht.",
+      "belege": [
+        "Koran 2:285",
+        "Koran 4:136",
+        "an-Nawawī Nr. 2 — Sahih Muslim 8"
+      ]
+    },
+    {
+      "id": "iman-islam-ihsan",
+      "titel": "Islam, Iman und Ihsan",
+      "tags": [
+        "islam",
+        "iman",
+        "ihsan",
+        "dschibril",
+        "hadith"
+      ],
+      "text": "Im Dschibril-Hadith erklärt der Prophet ﷺ die drei Stufen der Religion. Islam ist das äußere Tun: die fünf Säulen. Iman ist die innere Überzeugung: die sechs Glaubensartikel. Ihsan ist die Vollendung beider: „Dass du Allah dienst, als ob du Ihn sähest; denn wenn du Ihn auch nicht siehst, so sieht Er doch dich.“ Ihsan macht aus Pflichterfüllung eine bewusste Beziehung — dieselbe Handlung, nur mit wachem Herzen.",
+      "belege": [
+        "an-Nawawī Nr. 2 — Sahih Muslim 8"
+      ]
+    },
+    {
+      "id": "engel",
+      "titel": "Die Engel und ihre Aufgaben",
+      "tags": [
+        "engel",
+        "dschibril",
+        "gabriel",
+        "mikail",
+        "israfil",
+        "todesengel",
+        "malaika"
+      ],
+      "text": "Engel sind Geschöpfe Allahs aus Licht. Sie haben keinen freien Willen zum Ungehorsam, sondern führen aus, was ihnen aufgetragen ist. Bekannt sind Dschibril (Gabriel), der die Offenbarung zu den Propheten brachte; Mikail, der mit Regen und Versorgung betraut ist; Israfil, der ins Horn stoßen wird; und der Engel des Todes, der die Seelen nimmt. Weitere Engel schreiben die Taten der Menschen auf und tragen den Thron. An sie zu glauben, ist eine der sechs Glaubensgrundlagen — ihre genaue Zahl kennt nur Allah.",
+      "belege": [
+        "Koran 2:98",
+        "Koran 66:6",
+        "Koran 82:10",
+        "Koran 82:11",
+        "Koran 32:11"
+      ]
+    },
+    {
+      "id": "offenbarte-buecher",
+      "titel": "Die offenbarten Bücher",
+      "tags": [
+        "buecher",
+        "tora",
+        "tawrat",
+        "zabur",
+        "indschil",
+        "evangelium",
+        "psalmen",
+        "offenbarung"
+      ],
+      "text": "Der Koran nennt mehrere Schriften, die Allah gesandt hat: die Tawrat an Musa (Mose), den Zabur an Dawud (David), das Indschil an Isa (Jesus) — und als letzte Offenbarung den Koran an Muhammad ﷺ. An sie alle zu glauben, gehört zu den sechs Glaubensartikeln. Muslime glauben zugleich, dass allein der Koran in seinem Wortlaut unverändert bewahrt geblieben ist; Allah selbst hat seine Bewahrung zugesagt.",
+      "belege": [
+        "Koran 3:3",
+        "Koran 4:163",
+        "Koran 5:46",
+        "Koran 15:9"
+      ]
+    },
+    {
+      "id": "propheten-allgemein",
+      "titel": "Die Propheten im Islam",
+      "tags": [
+        "propheten",
+        "gesandte",
+        "nabi",
+        "rasul",
+        "adam",
+        "nuh",
+        "ibrahim",
+        "musa",
+        "isa"
+      ],
+      "text": "Allah hat zu jedem Volk einen Warner gesandt — von Adam, dem ersten Menschen und Propheten, bis Muhammad ﷺ, dem letzten. Fünfundzwanzig Propheten werden im Koran namentlich genannt, darunter Nuh (Noah), Ibrahim (Abraham), Musa (Mose), Isa (Jesus) und Muhammad ﷺ. Fünf von ihnen heißen Ulu al-Azm, „die Entschlossenen“: Nuh, Ibrahim, Musa, Isa und Muhammad ﷺ. Alle riefen zur selben Botschaft: Allah allein zu dienen. Kein Prophet wird über den anderen gestellt, um einen anderen herabzusetzen; Muslime glauben an sie alle.",
+      "belege": [
+        "Koran 16:36",
+        "Koran 2:285",
+        "Koran 46:35",
+        "Koran 21:25"
+      ]
+    },
+    {
+      "id": "letzter-prophet",
+      "titel": "Muhammad ﷺ — der letzte Prophet",
+      "tags": [
+        "letzter prophet",
+        "siegel der propheten",
+        "muhammad",
+        "chatam",
+        "abschluss"
+      ],
+      "text": "Der letzte Prophet ist Muhammad ﷺ. Der Koran nennt ihn ausdrücklich „das Siegel der Propheten“: „Muhammad ist nicht der Vater irgend jemandes von euren Männern, sondern Allahs Gesandter und das Siegel der Propheten.“ Nach ihm kommt kein weiterer Prophet. Er wurde um 570 n. Chr. in Mekka geboren, erhielt mit vierzig Jahren die erste Offenbarung und verkündete die Botschaft dreiundzwanzig Jahre lang, bis zu seinem Tod in Medina. Der Koran beschreibt seine Sendung mit einem einzigen Wort: „Und Wir haben dich nur als Barmherzigkeit für die Weltenbewohner gesandt.“",
+      "belege": [
+        "Koran 33:40",
+        "Koran 21:107",
+        "Koran 68:4"
+      ]
+    },
+    {
+      "id": "jenseits",
+      "titel": "Der Jüngste Tag und das Leben danach",
+      "tags": [
+        "jenseits",
+        "juengster tag",
+        "auferstehung",
+        "tod",
+        "grab",
+        "barzach",
+        "waage",
+        "gericht"
+      ],
+      "text": "Muslime glauben, dass dieses Leben eine Prüfung ist und dass jeder Mensch nach dem Tod wieder auferweckt und zur Rechenschaft gezogen wird. Zwischen Tod und Auferstehung liegt das Barzach, die Zwischenwelt des Grabes. Am Jüngsten Tag wird ins Horn gestoßen, die Menschen werden versammelt, ihre Bücher werden ausgehändigt und ihre Taten gewogen — und niemandem geschieht Unrecht, sei es auch nur so viel wie ein Stäubchengewicht. Danach folgt das ewige Leben: das Paradies für die Gläubigen, das Feuer für die, die sich abgewandt haben. Die genaue Stunde kennt allein Allah.",
+      "belege": [
+        "Koran 21:47",
+        "Koran 99:7",
+        "Koran 99:8",
+        "Koran 67:2",
+        "Koran 7:187"
+      ]
+    },
+    {
+      "id": "paradies-hoelle",
+      "titel": "Paradies und Hölle",
+      "tags": [
+        "paradies",
+        "dschanna",
+        "hoelle",
+        "feuer",
+        "dschahannam",
+        "jenseits"
+      ],
+      "text": "Das Paradies (Dschanna) ist der Lohn für die, die glaubten und Gutes taten: Gärten, unter denen Bäche strömen, in denen sie ewig bleiben — und, größer als alles andere, das Wohlgefallen Allahs. Die Hölle ist die Warnung vor dem entgegengesetzten Weg. Der Koran spricht von beidem meist im selben Atemzug, damit ein Mensch zwischen Hoffnung und Ehrfurcht lebt und keines von beiden verliert. Wer als Gläubiger stirbt, verweilt nach islamischer Lehre nicht auf ewig im Feuer; das letzte Wort hat Allahs Barmherzigkeit, die Seinen Zorn übertrifft.",
+      "belege": [
+        "Koran 2:25",
+        "Koran 9:72",
+        "Koran 3:133"
+      ]
+    },
+    {
+      "id": "qadar",
+      "titel": "Qadar — die Vorherbestimmung",
+      "tags": [
+        "qadar",
+        "vorherbestimmung",
+        "schicksal",
+        "wille",
+        "freiheit"
+      ],
+      "text": "An die Vorherbestimmung zu glauben heißt: Allah weiß alles, was war, ist und sein wird, und nichts geschieht außerhalb Seines Willens. Das hebt die Verantwortung des Menschen nicht auf — er wählt und handelt, und genau danach wird er gefragt. Der Prophet ﷺ hat beides zusammengehalten: „Binde dein Kamel fest und vertraue auf Allah.“ Der Glaube an Qadar nimmt Angst und Neid die Kraft: Was dich getroffen hat, hätte dich nicht verfehlen können, und was dich verfehlt hat, hätte dich nicht treffen können.",
+      "belege": [
+        "Koran 57:22",
+        "Koran 54:49",
+        "an-Nawawī Nr. 2 — Sahih Muslim 8"
+      ]
+    },
+    {
+      "id": "schahada",
+      "titel": "Die Schahada — das Glaubensbekenntnis",
+      "tags": [
+        "schahada",
+        "glaubensbekenntnis",
+        "zeugnis",
+        "la ilaha illallah"
+      ],
+      "text": "Die Schahada lautet: „Aschhadu an la ilaha illa Allah, wa aschhadu anna Muhammadan rasulullah“ — „Ich bezeuge, dass es keinen Gott gibt außer Allah, und ich bezeuge, dass Muhammad der Gesandte Allahs ist.“ Sie ist die erste der fünf Säulen und das Fundament, auf dem alle anderen ruhen. Ihr erster Teil klärt, wem Anbetung zusteht; ihr zweiter Teil klärt, auf welchem Weg sie geschieht — dem des Propheten ﷺ.",
+      "belege": [
+        "an-Nawawī Nr. 3 — Sahih al-Buchari 8",
+        "Koran 47:19"
+      ]
+    },
+    {
+      "id": "wie-werde-ich-muslim",
+      "titel": "Wie wird man Muslim",
+      "tags": [
+        "muslim werden",
+        "konvertieren",
+        "islam annehmen",
+        "schahada sprechen",
+        "neu im islam"
+      ],
+      "text": "Man wird Muslim, indem man die Schahada mit Überzeugung ausspricht: „Aschhadu an la ilaha illa Allah, wa aschhadu anna Muhammadan rasulullah.“ Es braucht dafür keine Behörde und keine Zeremonie; Zeugen sind schön, aber keine Bedingung. Danach folgen die praktischen Schritte: Ghusl (eine Ganzkörperwaschung) als Neuanfang, das Erlernen von Wudu und Gebet, und Schritt für Schritt das Weitere. Der Islam löscht, was vorher war — niemand steigt mit einer Altlast ein. Ein guter Weg ist, sich einer Moschee vor Ort vorzustellen und sich beim Lernen begleiten zu lassen.",
+      "belege": [
+        "an-Nawawī Nr. 3 — Sahih al-Buchari 8",
+        "Koran 2:186"
+      ]
+    },
+    {
+      "id": "fuenf-saeulen",
+      "titel": "Die fünf Säulen des Islam",
+      "tags": [
+        "fuenf saeulen",
+        "saeulen des islam",
+        "grundpflichten",
+        "arkan"
+      ],
+      "text": "Der Islam ruht auf fünf Säulen: erstens dem Glaubensbekenntnis (Schahada), dass es keinen Gott gibt außer Allah und Muhammad Sein Gesandter ist; zweitens dem Verrichten der fünf täglichen Gebete; drittens dem Entrichten der Zakat, der Pflichtabgabe vom Vermögen; viertens dem Fasten im Monat Ramadan; und fünftens der Pilgerfahrt nach Mekka (Hadsch), einmal im Leben, für den, der dazu imstande ist. So hat es der Prophet ﷺ aufgezählt. Die Schahada ist das Fundament, die übrigen vier sind die tragenden Pfeiler darauf.",
+      "belege": [
+        "an-Nawawī Nr. 3 — Sahih al-Buchari 8"
+      ]
+    },
+    {
+      "id": "die-fuenf-gebete",
+      "titel": "Die fünf täglichen Gebete",
+      "tags": [
+        "fuenf gebete",
+        "gebetszeiten",
+        "wie oft beten",
+        "pflichtgebete",
+        "salat",
+        "namaz"
+      ],
+      "text": "Ein Muslim betet fünfmal an jedem Tag und jeder Nacht. Die fünf Pflichtgebete heißen, in der Reihenfolge des Tages: Fadschr (Morgengebet, von der Morgendämmerung bis zum Sonnenaufgang), Dhuhr (Mittagsgebet, ab dem Überschreiten des Sonnenhöchststands), Asr (Nachmittagsgebet, wenn der Schatten deutlich länger wird, bis zum Sonnenuntergang), Maghrib (Abendgebet, direkt nach Sonnenuntergang) und Ischa (Nachtgebet, nach dem Verschwinden der Abendröte bis zur Morgendämmerung). Jedes Gebet hat ein Zeitfenster, kein starres Uhrzeit-Datum — deshalb verschieben sich die Zeiten mit Ort und Jahreszeit. Salati berechnet sie automatisch für deinen Standort.",
+      "belege": [
+        "Koran 17:78",
+        "Koran 4:103",
+        "Koran 2:238",
+        "an-Nawawī Nr. 3 — Sahih al-Buchari 8"
+      ]
+    },
+    {
+      "id": "gebet-fadschr",
+      "titel": "Fadschr — das Morgengebet",
+      "tags": [
+        "fadschr",
+        "fajr",
+        "morgengebet",
+        "subh",
+        "was ist fadschr",
+        "sobh"
+      ],
+      "text": "Fadschr ist das erste der fünf Pflichtgebete. Seine Zeit beginnt mit der echten Morgendämmerung — dem ersten waagerechten Lichtstreifen am Horizont — und endet mit dem Sonnenaufgang. Fadschr hat zwei Rakat Pflichtgebet; davor sind zwei Rakat Sunnah, die der Prophet ﷺ besonders betont hat. Es ist das Gebet, das am meisten Überwindung kostet und deshalb besonders schwer wiegt: Der Koran nennt ausdrücklich die Lesung der Morgendämmerung, weil sie bezeugt wird.",
+      "belege": [
+        "Koran 17:78",
+        "Koran 24:58"
+      ]
+    },
+    {
+      "id": "gebet-dhuhr",
+      "titel": "Dhuhr — das Mittagsgebet",
+      "tags": [
+        "dhuhr",
+        "zuhr",
+        "duhr",
+        "mittagsgebet",
+        "was ist dhuhr"
+      ],
+      "text": "Dhuhr ist das Mittagsgebet. Seine Zeit beginnt, sobald die Sonne ihren höchsten Punkt überschritten hat und der Schatten wieder länger wird, und endet mit dem Beginn der Asr-Zeit. Dhuhr hat vier Rakat Pflichtgebet. Am Freitag tritt für Männer in der Gemeinschaft das Freitagsgebet (Dschumua) mit zwei Rakat und Predigt an seine Stelle.",
+      "belege": [
+        "Koran 17:78",
+        "Koran 30:18"
+      ]
+    },
+    {
+      "id": "gebet-asr",
+      "titel": "Asr — das Nachmittagsgebet",
+      "tags": [
+        "asr",
+        "nachmittagsgebet",
+        "was ist asr",
+        "mittleres gebet"
+      ],
+      "text": "Asr ist das Nachmittagsgebet mit vier Rakat Pflichtgebet. Seine Zeit beginnt, wenn der Schatten eines Gegenstandes deutlich über seine Mittagslänge hinaus gewachsen ist — die Rechtsschulen setzen den Beginn etwas unterschiedlich an —, und endet mit dem Sonnenuntergang. Der Koran mahnt besonders zur Sorgfalt beim „mittleren Gebet“; viele Gelehrte verstehen darunter Asr, weil es mitten in den geschäftigsten Teil des Tages fällt.",
+      "belege": [
+        "Koran 2:238",
+        "Koran 17:78"
+      ]
+    },
+    {
+      "id": "gebet-maghrib",
+      "titel": "Maghrib — das Abendgebet",
+      "tags": [
+        "maghrib",
+        "magrib",
+        "abendgebet",
+        "was ist maghrib",
+        "sonnenuntergang"
+      ],
+      "text": "Maghrib ist das Abendgebet mit drei Rakat Pflichtgebet. Seine Zeit beginnt unmittelbar nach dem Sonnenuntergang und dauert, bis die Abendröte am Horizont verschwunden ist — also ein vergleichsweise kurzes Fenster; deshalb wird es zügig nach dem Gebetsruf verrichtet. Im Ramadan fällt der Fastenbruch (Iftar) genau auf den Beginn der Maghrib-Zeit.",
+      "belege": [
+        "Koran 17:78",
+        "Koran 11:114"
+      ]
+    },
+    {
+      "id": "gebet-ischa",
+      "titel": "Ischa — das Nachtgebet",
+      "tags": [
+        "ischa",
+        "isha",
+        "ishaa",
+        "nachtgebet",
+        "was ist isha",
+        "was ist ischa"
+      ],
+      "text": "Ischa ist das Nachtgebet, das letzte der fünf Pflichtgebete am Tag, mit vier Rakat Pflichtgebet. Seine Zeit beginnt, wenn die Abendröte nach Maghrib verschwunden ist, und reicht bis zum Anbruch der Morgendämmerung; verrichtet werden sollte es jedoch möglichst vor Mitternacht. Nach Ischa folgt bei vielen das Witr-Gebet als Abschluss der Nacht. In nördlichen Ländern kann die Nacht im Sommer so kurz sein, dass die Ischa-Zeit sehr spät beginnt — dafür gibt es in Salati Berechnungsmethoden für hohe Breitengrade.",
+      "belege": [
+        "Koran 17:78",
+        "Koran 24:58"
+      ]
+    },
+    {
+      "id": "rakat-uebersicht",
+      "titel": "Wie viele Rakat hat welches Gebet",
+      "tags": [
+        "rakat",
+        "rakaat",
+        "wie viele rakat",
+        "anzahl",
+        "einheiten"
+      ],
+      "text": "Die Pflichtanteile (Fard) sind: Fadschr zwei Rakat, Dhuhr vier, Asr vier, Maghrib drei und Ischa vier. Dazu kommen betonte Sunnah-Gebete, deren Zählung sich je nach Rechtsschule leicht unterscheidet; nach der verbreiteten hanafitischen Zählung sind es zwei vor Fadschr, vier vor und zwei nach Dhuhr, zwei nach Maghrib und zwei nach Ischa, dazu das Witr. Nicht betonte, aber empfohlene Sunnah-Rakat gibt es zusätzlich vor Asr und vor Ischa — nach hanafitischer Zählung je vier. Wer neu anfängt, konzentriert sich zuerst auf die Fard-Rakat — sie sind die Pflicht, alles andere kommt darauf.",
+      "belege": [
+        "Koran 4:103"
+      ]
+    },
+    {
+      "id": "gebet-ablauf",
+      "titel": "Wie das Gebet abläuft",
+      "tags": [
+        "wie bete ich",
+        "gebet ablauf",
+        "salah",
+        "beten lernen",
+        "schritt fuer schritt"
+      ],
+      "text": "Ein Gebet beginnt mit der Absicht im Herzen und dem Takbir „Allahu akbar“, wobei die Hände erhoben werden. Im Stehen wird die Fatiha rezitiert, danach ein weiterer Abschnitt aus dem Koran. Es folgt die Verbeugung (Ruku) mit „Subhana Rabbiyal Azim“, das Aufrichten mit „Sami' Allahu liman hamidah — Rabbana lakal hamd“, dann zwei Niederwerfungen (Sudschud) mit „Subhana Rabbiyal A'la“, dazwischen ein kurzes Sitzen. Das ist eine Rakat; sie wird je nach Gebet wiederholt. Am Ende folgen im Sitzen das Taschahhud und der Segensspruch auf den Propheten ﷺ, dann der Gruß nach rechts und links: „As-salamu alaikum wa rahmatullah.“",
+      "belege": [
+        "Koran 2:238",
+        "an-Nawawī Nr. 1 — Sahih al-Buchari 1"
+      ]
+    },
+    {
+      "id": "gebet-rezitationen",
+      "titel": "Was man im Gebet sagt",
+      "tags": [
+        "was sage ich im gebet",
+        "ruku",
+        "sudschud",
+        "taschahhud",
+        "subhana",
+        "verbeugung",
+        "niederwerfung"
+      ],
+      "text": "In der Verbeugung (Ruku) sagt man dreimal „Subhana Rabbiyal Azim“ — „Gepriesen sei mein Herr, der Gewaltige“. Beim Aufrichten sagt der Betende „Sami' Allahu liman hamidah“ und antwortet sich selbst mit „Rabbana wa lakal hamd“. In der Niederwerfung (Sudschud) sagt man dreimal „Subhana Rabbiyal A'la“ — „Gepriesen sei mein Herr, der Höchste“; das ist der Moment, in dem der Mensch Allah am nächsten ist, und ein guter Platz für ein persönliches Bittgebet. Zwischen den beiden Niederwerfungen sagt man „Rabbighfir li“ — „Mein Herr, vergib mir“.",
+      "belege": [
+        "Koran 96:19",
+        "Koran 87:1"
+      ]
+    },
+    {
+      "id": "fatiha-im-gebet",
+      "titel": "Die Fatiha — die Eröffnende",
+      "tags": [
+        "fatiha",
+        "faatiha",
+        "erste sure",
+        "eroeffnende",
+        "al-fatiha",
+        "sure 1"
+      ],
+      "text": "Al-Faatiha, „die Eröffnende“, ist die erste Sure des Korans und hat sieben Verse. Sie wird in jeder Rakat jedes Gebets rezitiert — kein Gebet ist ohne sie vollständig. Ihr Inhalt ist ein Gespräch: erst Lob und Dank an Allah, den Herrn der Welten, den Allerbarmer, den Herrscher am Tag des Gerichts; dann das Bekenntnis „Dir allein dienen wir, und zu Dir allein flehen wir um Hilfe“; und schließlich die Bitte, die den Rest des Korans einleitet: „Leite uns den geraden Weg.“",
+      "belege": [
+        "Koran 1:1",
+        "Koran 1:2",
+        "Koran 1:5",
+        "Koran 1:6",
+        "Koran 15:87"
+      ]
+    },
+    {
+      "id": "qibla",
+      "titel": "Die Qibla — die Gebetsrichtung",
+      "tags": [
+        "qibla",
+        "kibla",
+        "gebetsrichtung",
+        "kaaba",
+        "richtung",
+        "kompass"
+      ],
+      "text": "Die Qibla ist die Gebetsrichtung: zur Kaaba in Mekka. Anfangs beteten die Muslime in Richtung Jerusalem; dann kam der Befehl, sich der Heiligen Moschee zuzuwenden — „So wende dein Gesicht in Richtung der unverletzlichen Gebetsstätte.“ Wer die Richtung nicht sicher kennt, bemüht sich nach bestem Wissen; ein Gebet in gutgläubig bestimmter Richtung ist gültig. Salati zeigt die Qibla per Kompass und Karte an.",
+      "belege": [
+        "Koran 2:144",
+        "Koran 2:149",
+        "Koran 2:115"
+      ]
+    },
+    {
+      "id": "adhan",
+      "titel": "Der Adhan — der Gebetsruf",
+      "tags": [
+        "adhan",
+        "azan",
+        "gebetsruf",
+        "muezzin",
+        "iqama"
+      ],
+      "text": "Der Adhan ist der Ruf, der den Beginn einer Gebetszeit ankündigt. Er wurde in Medina eingeführt, nachdem die Gemeinde überlegt hatte, wie man zum Gebet rufen solle — mit Glocke, Horn oder Feuer —, und Bilal ﷺ wurde der erste Muezzin. Sein Text bekennt die Größe Allahs, die Schahada und den Ruf zu Gebet und Erfolg. Beim Fadschr kommt der Satz „Das Gebet ist besser als der Schlaf“ hinzu. Unmittelbar vor Gebetsbeginn folgt die kürzere Iqama. Wer den Adhan hört, wiederholt ihn leise mit und spricht danach den Segen auf den Propheten ﷺ.",
+      "belege": [
+        "Koran 5:58",
+        "Koran 62:9"
+      ]
+    },
+    {
+      "id": "dschumua",
+      "titel": "Das Freitagsgebet (Dschumua)",
+      "tags": [
+        "freitagsgebet",
+        "dschumua",
+        "jumua",
+        "freitag",
+        "chutba",
+        "predigt"
+      ],
+      "text": "Das Freitagsgebet ersetzt am Freitag das Dhuhr-Gebet: zwei Rakat in der Gemeinschaft, davor die Chutba (Predigt). Für erwachsene, ansässige Männer ist es Pflicht; für Frauen, Reisende und Kranke ist es keine Pflicht, die Teilnahme aber erlaubt und verdienstvoll. Der Koran ruft dazu auf, beim Ruf zum Freitagsgebet den Handel liegenzulassen und sich zum Gedenken Allahs zu eilen. Empfohlen sind Ghusl, saubere Kleidung, Wohlgeruch, früh kommen — und während der Chutba zu schweigen.",
+      "belege": [
+        "Koran 62:9",
+        "Koran 62:10"
+      ]
+    },
+    {
+      "id": "witr",
+      "titel": "Das Witr-Gebet",
+      "tags": [
+        "witr",
+        "witr gebet",
+        "ungerade",
+        "nachtgebet",
+        "tahaddschud"
+      ],
+      "text": "Witr heißt „ungerade“ und ist das Gebet, mit dem die Nacht abgeschlossen wird — mit einer ungeraden Zahl von Rakat, meist drei, mindestens einer. Seine Zeit liegt nach Ischa und reicht bis zur Morgendämmerung. Die Rechtsschulen bewerten es unterschiedlich: in der hanafitischen Schule gilt es als notwendig (wadschib), in den anderen als stark betonte Sunnah. Der Prophet ﷺ hat es nie ausgelassen, weder zu Hause noch auf Reisen.",
+      "belege": [
+        "Koran 17:79",
+        "Koran 73:20"
+      ]
+    },
+    {
+      "id": "sunnah-gebete",
+      "titel": "Sunnah- und freiwillige Gebete",
+      "tags": [
+        "sunnah gebete",
+        "nawafil",
+        "freiwillig",
+        "tahaddschud",
+        "duha",
+        "zusaetzlich"
+      ],
+      "text": "Neben den Pflichtgebeten gibt es freiwillige Gebete, die den Pflichtteil ergänzen und Lücken ausgleichen: die betonten Sunnah-Gebete rund um die fünf Zeiten, das Duha-Gebet am Vormittag, das Tahaddschud in der zweiten Nachthälfte und das Witr. Sie sind keine Pflicht — wer sie lässt, sündigt nicht. Der Prophet ﷺ hat empfohlen, freiwillige Gebete zu Hause zu verrichten, damit das Zuhause nicht zu einem Ort ohne Gebet wird.",
+      "belege": [
+        "Koran 17:79",
+        "Koran 51:17",
+        "Koran 51:18"
+      ]
+    },
+    {
+      "id": "gebet-nachholen",
+      "titel": "Verpasste Gebete nachholen",
+      "tags": [
+        "nachholen",
+        "qada",
+        "verpasst",
+        "verschlafen",
+        "gebet vergessen"
+      ],
+      "text": "Wer ein Gebet verschläft oder vergisst, holt es nach, sobald er daran denkt — der Prophet ﷺ sagte: „Wer ein Gebet vergisst, soll es beten, sobald er sich daran erinnert; eine andere Sühne gibt es dafür nicht.“ Wer es absichtlich auslässt, begeht eine schwere Nachlässigkeit, sollte es aber ebenfalls nachholen und aufrichtig bereuen. Wichtiger als das Aufrechnen alter Versäumnisse ist, ab heute eine tragfähige Gewohnheit aufzubauen; bei vielen offenen Gebeten hilft ein realistischer Plan mehr als ein perfekter.",
+      "belege": [
+        "Koran 20:14",
+        "Koran 4:103"
+      ]
+    },
+    {
+      "id": "gebet-auf-reisen",
+      "titel": "Beten auf Reisen",
+      "tags": [
+        "reise",
+        "reisegebet",
+        "qasr",
+        "kuerzen",
+        "zusammenlegen",
+        "unterwegs",
+        "flugzeug"
+      ],
+      "text": "Auf einer Reise darf ein Muslim die vierteiligen Pflichtgebete — Dhuhr, Asr und Ischa — auf je zwei Rakat kürzen (Qasr); Fadschr und Maghrib bleiben unverändert. Der Koran erlaubt das ausdrücklich, und der Prophet ﷺ hat es auf allen Reisen so gehalten. Viele Gelehrte erlauben zusätzlich, Dhuhr mit Asr und Maghrib mit Ischa zusammenzulegen. Ab welcher Entfernung und wie lange eine Reise als solche gilt, bewerten die Rechtsschulen unterschiedlich — dazu am besten die eigene Gemeinde oder eine Gelehrte fragen.",
+      "belege": [
+        "Koran 4:101"
+      ]
+    },
+    {
+      "id": "gebet-krank",
+      "titel": "Beten bei Krankheit",
+      "tags": [
+        "krank",
+        "krankheit",
+        "sitzend beten",
+        "liegend",
+        "rollstuhl",
+        "erleichterung"
+      ],
+      "text": "Wer nicht stehen kann, betet im Sitzen; wer nicht sitzen kann, betet im Liegen und deutet Verbeugung und Niederwerfung mit Kopfbewegungen an. Das Gebet fällt durch Krankheit nicht weg, es wird nur an das Mögliche angepasst — Allah fordert von niemandem mehr, als er zu leisten vermag. Auch die Reinigung wird erleichtert: Wo Wasser schadet oder fehlt, tritt Tayammum an seine Stelle.",
+      "belege": [
+        "Koran 2:286",
+        "Koran 64:16",
+        "Koran 22:78"
+      ]
+    },
+    {
+      "id": "wudu-kurz",
+      "titel": "Wudu — die Gebetswaschung",
+      "tags": [
+        "wudu",
+        "wudhu",
+        "abdest",
+        "gebetswaschung",
+        "waschung",
+        "wie mache ich wudu"
+      ],
+      "text": "Ohne Wudu kein Gebet. Die Schritte der Reihe nach: 1. Absicht fassen und „Bismillah“ sagen. 2. Beide Hände bis zu den Handgelenken waschen, dreimal. 3. Mund ausspülen, dreimal. 4. Wasser in die Nase ziehen und schnäuzen, dreimal. 5. Das Gesicht waschen, dreimal. 6. Die Arme bis einschließlich der Ellenbogen waschen, rechts vor links, je dreimal. 7. Mit nassen Händen einmal über den Kopf streichen und die Ohren mit auswischen. 8. Die Füße bis einschließlich der Knöchel waschen, rechts vor links, je dreimal. 9. Zum Abschluss die Schahada sprechen. Gewaschen wird immer rechts vor links. Pflicht sind Gesicht, Arme, Kopfstreichen und Füße; die Wiederholungen sind Sunnah.",
+      "belege": [
+        "Koran 5:6"
+      ]
+    },
+    {
+      "id": "wudu-bricht",
+      "titel": "Was den Wudu bricht",
+      "tags": [
+        "wudu bricht",
+        "ungueltig",
+        "erneuern",
+        "wann neu waschen"
+      ],
+      "text": "Der Wudu wird unter anderem ungültig durch alles, was den Körper auf natürlichem Weg verlässt — Urin, Stuhl, Winde —, durch tiefen Schlaf im Liegen, durch Bewusstlosigkeit und durch stärkeres Bluten oder Erbrechen (Letzteres bewerten die Rechtsschulen unterschiedlich). Bloßes Zweifeln reicht nicht: Wer sicher war, Wudu zu haben, und nur unsicher ist, ob er ihn verloren hat, bleibt bei der Sicherheit. Nach Geschlechtsverkehr, Samenerguss und nach dem Ende von Menstruation oder Wochenbett ist statt Wudu die Ganzkörperwaschung (Ghusl) nötig.",
+      "belege": [
+        "Koran 5:6"
+      ]
+    },
+    {
+      "id": "ghusl",
+      "titel": "Ghusl — die Ganzkörperwaschung",
+      "tags": [
+        "ghusl",
+        "ganzkoerperwaschung",
+        "grosse waschung",
+        "dusche",
+        "dschunub",
+        "wann ghusl"
+      ],
+      "text": "Ghusl ist die vollständige Waschung des ganzen Körpers. Sie wird Pflicht nach Geschlechtsverkehr oder Samenerguss sowie nach dem Ende von Menstruation und Wochenbett; empfohlen ist sie unter anderem vor dem Freitagsgebet, den Eid-Gebeten und beim Annehmen des Islam. Der Ablauf: Absicht fassen und „Bismillah“; Hände und Intimbereich waschen; ein vollständiges Wudu; dreimal Wasser über den Kopf gießen und die Haarwurzeln durchnässen; dann den ganzen Körper waschen, rechts vor links, sodass keine Stelle trocken bleibt.",
+      "belege": [
+        "Koran 5:6",
+        "Koran 4:43"
+      ]
+    },
+    {
+      "id": "tayammum",
+      "titel": "Tayammum — die Ersatzreinigung",
+      "tags": [
+        "tayammum",
+        "ersatzreinigung",
+        "kein wasser",
+        "erde",
+        "sand",
+        "staub"
+      ],
+      "text": "Wenn kein Wasser vorhanden ist oder seine Nutzung dem Körper schaden würde, tritt Tayammum an die Stelle von Wudu und Ghusl: Man fasst die Absicht, schlägt beide Handflächen auf reine Erde und streicht damit über das Gesicht und anschließend über die Arme. Wie oft geschlagen und wie weit gestrichen wird, beantworten die Rechtsschulen unterschiedlich — die hanafitische und die schafiitische Schule lehren zwei Schläge und das Streichen bis einschließlich der Ellbogen, die malikitische und die hanbalitische einen Schlag und das Streichen bis zu den Handgelenken. Der Koran erlaubt das ausdrücklich für Kranke, Reisende und alle, die kein Wasser finden. Sobald Wasser wieder verfügbar oder unschädlich ist, gilt wieder die normale Waschung.",
+      "belege": [
+        "Koran 5:6",
+        "Koran 4:43"
+      ]
+    },
+    {
+      "id": "zakat",
+      "titel": "Zakat — die Pflichtabgabe",
+      "tags": [
+        "zakat",
+        "abgabe",
+        "almosen",
+        "nisab",
+        "2,5 prozent",
+        "wie viel zakat"
+      ],
+      "text": "Zakat ist die jährliche Pflichtabgabe auf Vermögen und die dritte Säule des Islam. Wer ein Mondjahr lang Vermögen oberhalb des Nisab-Werts (traditionell gleichgesetzt mit 85 Gramm Gold oder 595 Gramm Silber) besitzt, gibt davon 2,5 Prozent ab. Betroffen sind Ersparnisse, Gold, Silber, Handelswaren und Ähnliches — nicht die selbst genutzte Wohnung oder Alltagsgegenstände. Der Koran nennt Gebet und Zakat fast immer in einem Atemzug: Das eine richtet das Verhältnis zu Allah, das andere das zu den Menschen. Für die eigene Berechnung lohnt eine Rückfrage bei einer örtlichen Zakat-Stelle.",
+      "belege": [
+        "Koran 2:43",
+        "Koran 9:103",
+        "Koran 2:110"
+      ]
+    },
+    {
+      "id": "zakat-empfaenger",
+      "titel": "Wer Zakat bekommen darf",
+      "tags": [
+        "zakat empfaenger",
+        "wem zakat",
+        "acht gruppen",
+        "arme",
+        "verteilen"
+      ],
+      "text": "Der Koran nennt acht Gruppen, denen Zakat zusteht: den Armen und den Bedürftigen, denen, die damit beschäftigt sind (der Verwaltung), denen, deren Herzen gewonnen werden sollen, für die Freilassung von Sklaven, den Verschuldeten, für den Weg Allahs und dem Reisenden in Not. Zakat ist also kein allgemeines Spendenbudget, sondern ein zweckgebundener Anspruch. An die eigenen Eltern, Kinder oder den Ehepartner wird sie nicht gegeben — für sie besteht ohnehin Unterhaltspflicht.",
+      "belege": [
+        "Koran 9:60"
+      ]
+    },
+    {
+      "id": "sadaqa",
+      "titel": "Sadaqa — die freiwillige Spende",
+      "tags": [
+        "sadaqa",
+        "spende",
+        "freiwillig",
+        "wohltaetigkeit",
+        "geben"
+      ],
+      "text": "Sadaqa ist die freiwillige Gabe — jederzeit, in jeder Höhe, an jeden. Sie ist nicht auf Geld beschränkt: Der Prophet ﷺ zählte auch ein Lächeln, ein gutes Wort, das Beseitigen eines Hindernisses vom Weg und selbst den Verzicht auf Schlechtes als Sadaqa. Besonders empfohlen ist die dauerhafte Sadaqa (Sadaqa Dscharija), deren Nutzen weiterläuft — ein Brunnen, ein Buch, Wissen, das weitergegeben wird.",
+      "belege": [
+        "Koran 2:261",
+        "Koran 2:274",
+        "an-Nawawī Nr. 26 — Sahih al-Buchari 2707"
+      ]
+    },
+    {
+      "id": "fasten-ramadan",
+      "titel": "Das Fasten im Ramadan",
+      "tags": [
+        "fasten",
+        "ramadan",
+        "sawm",
+        "wann fasten",
+        "pflicht"
+      ],
+      "text": "Im Monat Ramadan zu fasten, ist die vierte Säule des Islam. Gefastet wird von der Morgendämmerung bis zum Sonnenuntergang: kein Essen, kein Trinken, kein ehelicher Verkehr — und ebenso die Zunge und der Blick im Zaum. Vor Beginn steht die Absicht, am Ende der Fastenbruch (Iftar), traditionell mit Datteln und Wasser, vorher die Mahlzeit vor der Dämmerung (Suhur). Der Koran nennt das Ziel des Fastens ausdrücklich: „damit ihr gottesfürchtig werden möget“.",
+      "belege": [
+        "Koran 2:183",
+        "Koran 2:185",
+        "Koran 2:187"
+      ]
+    },
+    {
+      "id": "fasten-ausnahmen",
+      "titel": "Wer nicht fasten muss",
+      "tags": [
+        "nicht fasten",
+        "ausnahme",
+        "krank",
+        "schwanger",
+        "reise",
+        "nachholen",
+        "fidya"
+      ],
+      "text": "Wer krank oder auf Reisen ist, fastet die versäumten Tage später nach — der Koran sagt das ausdrücklich. Dasselbe gilt für Frauen während Menstruation und Wochenbett; sie holen die Tage nach. Schwangere und Stillende, die für sich oder das Kind fürchten, dürfen aussetzen und später nachholen. Wer dauerhaft nicht fasten kann, etwa wegen chronischer Krankheit oder hohen Alters, speist stattdessen für jeden Tag einen Bedürftigen (Fidya). Kinder müssen nicht fasten; sie werden nur behutsam herangeführt.",
+      "belege": [
+        "Koran 2:184",
+        "Koran 2:185"
+      ]
+    },
+    {
+      "id": "fasten-bricht",
+      "titel": "Was das Fasten bricht",
+      "tags": [
+        "fasten bricht",
+        "ungueltig",
+        "wasser",
+        "vergessen",
+        "zaehneputzen"
+      ],
+      "text": "Das Fasten bricht durch absichtliches Essen und Trinken, durch ehelichen Verkehr und durch absichtliches Erbrechen. Wer aus Vergesslichkeit isst oder trinkt, setzt das Fasten einfach fort — der Prophet ﷺ sagte, Allah habe ihn gespeist und getränkt. Zähneputzen, Duschen, eine Spritze zur Behandlung oder eine Blutabnahme brechen das Fasten nach verbreiteter Auffassung nicht. Wichtig bleibt: Fasten ist mehr als Verzicht auf Essen — wer Lüge und Streit nicht lässt, dem fehlt der eigentliche Sinn.",
+      "belege": [
+        "Koran 2:187"
+      ]
+    },
+    {
+      "id": "freiwilliges-fasten",
+      "titel": "Freiwilliges Fasten",
+      "tags": [
+        "freiwillig fasten",
+        "montag",
+        "donnerstag",
+        "aschura",
+        "arafa",
+        "schawwal",
+        "sechs tage"
+      ],
+      "text": "Neben dem Ramadan gibt es empfohlene Fastentage: montags und donnerstags, die drei hellen Tage in der Mitte jedes Mondmonats, der Tag von Aschura (10. Muharram) und der Tag von Arafa (9. Dhul-Hidscha) für Nichtpilger, dazu sechs Tage im Monat Schawwal nach dem Ramadan. Alle sind freiwillig — sie sind ein Angebot, kein Maßstab. Das Fasten an den beiden Eid-Tagen ist dagegen ausdrücklich untersagt.",
+      "belege": [
+        "Koran 2:184"
+      ]
+    },
+    {
+      "id": "lailat-al-qadr",
+      "titel": "Lailat al-Qadr — die Nacht der Bestimmung",
+      "tags": [
+        "lailat al qadr",
+        "nacht der bestimmung",
+        "27",
+        "letzte zehn",
+        "ramadan nacht"
+      ],
+      "text": "Die Nacht der Bestimmung liegt in den letzten zehn Nächten des Ramadan; der Prophet ﷺ riet, sie besonders in den ungeraden Nächten zu suchen. Der Koran sagt über sie: „Die Nacht der Bestimmung ist besser als tausend Monate“ — in ihr wurde der Koran herabgesandt, und die Engel steigen herab, bis der Morgen anbricht. Ein überliefertes Bittgebet für diese Nacht lautet: „Allahumma innaka afuwwun tuhibbul afwa fa'fu anni“ — „O Allah, Du bist verzeihend und liebst das Verzeihen, so verzeih mir.“",
+      "belege": [
+        "Koran 97:1",
+        "Koran 97:3",
+        "Koran 97:4",
+        "Koran 97:5",
+        "Koran 2:185"
+      ]
+    },
+    {
+      "id": "hadsch",
+      "titel": "Hadsch — die Pilgerfahrt",
+      "tags": [
+        "hadsch",
+        "hajj",
+        "pilgerfahrt",
+        "mekka",
+        "kaaba",
+        "arafa",
+        "ihram"
+      ],
+      "text": "Der Hadsch ist die Pilgerfahrt nach Mekka und die fünfte Säule des Islam — Pflicht einmal im Leben für den, der körperlich und finanziell dazu imstande ist. Er findet in den ersten Tagen des Monats Dhul-Hidscha statt. Die Hauptschritte: das Anlegen des Ihram mit der Absicht, der Umlauf um die Kaaba (Tawaf), der Lauf zwischen Safa und Marwa (Sa'y), das Stehen auf der Ebene von Arafa am 9. Dhul-Hidscha — der Kern des Hadsch —, die Nacht in Muzdalifa, das Steinigen der Säulen in Mina, das Opfer und das Kürzen oder Rasieren der Haare. Die Umra umfasst Ihram, Tawaf, Sa'y und das Kürzen oder Rasieren der Haare und kann das ganze Jahr über verrichtet werden.",
+      "belege": [
+        "Koran 3:97",
+        "Koran 2:196",
+        "Koran 2:197",
+        "Koran 22:27"
+      ]
+    },
+    {
+      "id": "eid",
+      "titel": "Die beiden Eid-Feste",
+      "tags": [
+        "eid",
+        "fest",
+        "ramadanfest",
+        "opferfest",
+        "eid al fitr",
+        "eid al adha",
+        "bayram"
+      ],
+      "text": "Im Islam gibt es zwei Feste. Eid al-Fitr, das Fest des Fastenbrechens, folgt unmittelbar auf den Ramadan; vor dem Festgebet wird die Zakat al-Fitr entrichtet, eine kleine Abgabe für jedes Haushaltsmitglied, damit auch die Ärmsten mitfeiern können. Eid al-Adha, das Opferfest, fällt auf den 10. Dhul-Hidscha, mitten in die Tage des Hadsch, und erinnert an die Bereitschaft Ibrahims. Beide Feste beginnen mit dem Eid-Gebet in der Gemeinschaft, meist am Vormittag, gefolgt von einer Predigt. An diesen beiden Tagen wird nicht gefastet.",
+      "belege": [
+        "Koran 108:2",
+        "Koran 2:185",
+        "Koran 22:36"
+      ]
+    }
+  ]
+}
