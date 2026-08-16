@@ -30,50 +30,12 @@ jobs:
       - name: pnpm install (wendet whisper.rn-Patch an)
         run: pnpm install --no-frozen-lockfile
 
-      # Swift 6.2 (Xcode 26) lehnt `weak let` als Fehler ab ("weak must be a
-      # mutable variable"). `weak var` ist die semantisch korrekte Form.
-      #
-      # ABER: In expo-modules-jsi stehen diese Deklarationen in Klassen, die
-      # `Sendable` erklaeren (HostFunctionContext, JavaScriptValue,
-      # JavaScriptError, JavaScriptPropNameID …). Aus `weak let` wird `weak var`
-      # — und Swift 6.2 lehnt dann das NAECHSTE ab: "stored property 'runtime'
-      # of 'Sendable'-conforming class is mutable" (Build 31167963722,
-      # 2026-08-07, exit 65). Der reine weak-var-Fix loest also einen Fehler aus,
-      # den er selbst erzeugt.
-      #
-      # `nonisolated(unsafe)` ist die dafuer vorgesehene Zusicherung: die
-      # Referenz bleibt genau so schwach und genau so zugreifbar wie vorher, nur
-      # traegt sie die Sendable-Pruefung nicht mehr. Auf Deklarationen, die
-      # keiner Sendable-Klasse angehoeren, ist das Attribut zulaessig und
-      # wirkungslos — deshalb genuegt eine Regel fuer alle Fundstellen.
-      - name: Swift-6.2-Fix weak-let in Expo-Modulen
-        run: |
-          cnt=0
-          while IFS= read -r f; do
-            perl -i -pe 's/\bweak let /nonisolated(unsafe) weak var /g' "$f"
-            cnt=$((cnt+1))
-          done < <(grep -rl "weak let " node_modules --include="*.swift" 2>/dev/null)
-          echo "weak-let -> nonisolated(unsafe) weak var in $cnt Swift-Dateien gepatcht"
-          grep -rn "nonisolated(unsafe) weak var" node_modules --include="*.swift" 2>/dev/null | head -10 || true
-
-      # `abs()` ist in JavaScriptCodable+Date.swift mehrdeutig, seit die Datei
-      # per `internal import ExpoModulesJSI_Cxx` C++-Interop hereinzieht: dort
-      # liegt auch das C-`abs` (Int32) aus <cstdlib>, und Xcode 26.0.1 kann
-      # zwischen beiden nicht mehr waehlen — "type of expression is ambiguous
-      # without a type annotation" (Build 31168548252, 2026-08-07).
-      #
-      # `Swift.abs` benennt genau die Ueberladung, die gemeint ist. Keine
-      # Verhaltensaenderung, nur ein aufgeloester Namensraum. Betrifft
-      # expo-modules-jsi 57.0.3 — faellt die Zeile in einer spaeteren Version
-      # weg, laeuft der Schritt einfach ins Leere (Zaehler 0).
-      - name: Swift-6.2-Fix mehrdeutiges abs() in expo-modules-jsi
-        run: |
-          cnt=0
-          while IFS= read -r f; do
-            perl -i -pe 's/(?<![.\w])abs\(milliseconds\)/Swift.abs(milliseconds)/g' "$f"
-            cnt=$((cnt+1))
-          done < <(grep -rl "abs(milliseconds)" node_modules --include="*.swift" 2>/dev/null)
-          echo "abs() eindeutig gemacht in $cnt Swift-Dateien"
+      # Zwei Anpassungen an Expo-Modulen fuer Swift 6.2. Sie stehen als Skript
+      # da, weil der Uhren-Pruefworkflow dieselbe Pod-Kette baut und sie
+      # ebenfalls braucht — zweimal derselbe Perl-Einzeiler in zwei Workflows
+      # laeuft zwangslaeufig auseinander. Begruendung je Regel im Skript.
+      - name: Swift-6.2-Anpassungen an den Expo-Modulen
+        run: bash scripts/expo-swift62-fix.sh
 
       # NICHT mehr mit `|| echo` abfangen. Genau das hat den Fehler verdeckt:
       # das Skript stieg still aus (EAS-Variable fehlt auf diesem Runner), der
@@ -101,17 +63,27 @@ jobs:
       # Compilefehler in expo-modules-jsi (`weak let`) wird separat gepatcht.
       - name: Xcode-Version wählen (26 — Expo SDK 57 SPM-Tools 6.2)
         run: |
-          sudo xcode-select -s /Applications/Xcode_26.0.app \
-            || sudo xcode-select -s /Applications/Xcode_26.1.app \
-            || sudo xcode-select -s /Applications/Xcode_26.2.app
+          # Hoechste vorhandene 26er-Version, nicht die erste: der Runner hat
+          # mehrere parallel, und ihre Plattformen sind unterschiedlich
+          # vollstaendig. Xcode 26.0.1 bringt watchOS 26.0 mit, das auf dem
+          # Abbild NICHT installiert ist — der Uhren-Build brach genau daran ab
+          # ("watchOS 26.0 is not installed"), waehrend watchOS 26.1 und 26.2
+          # daneben bereitstanden.
+          echo "--- vorhandene Xcode-Versionen ---"
+          ls -d /Applications/Xcode*.app 2>/dev/null || true
+          XCODE=$(ls -d /Applications/Xcode_26*.app 2>/dev/null | sort -V | tail -1)
+          test -n "$XCODE" || { echo "FEHLER: kein Xcode 26 auf dem Runner"; exit 1; }
+          sudo xcode-select -s "$XCODE"
           xcodebuild -version
+          echo "--- installierte watchOS-Plattformen ---"
+          xcrun simctl list runtimes | grep -i watch || echo "KEINE watchOS-Laufzeit"
 
-      # Watch-App + Komplikation aus DIESEM Build ausschliessen: sie sind
-      # ungetestetes Geruest und ihr Asset-Catalog-Compile verlangt eine
-      # watchOS-Simulator-Runtime, die der Runner nicht hat (blockierte Lauf #4/#5).
-      # Wir entfernen die @bacons-Target-Configs VOR dem prebuild -> es werden nur
-      # die (getesteten) App- + Widget/LiveActivity-Targets generiert. Rein CI-lokal,
-      # der committete App-Code bleibt unveraendert.
+      # Die Uhren-Targets sind seit 1.50.0 wieder dabei. Frueher standen sie
+      # hier auf der Ausschlussliste, weil ihr Asset-Compile eine watchOS-
+      # Laufzeit verlangt, die der Runner angeblich nicht hatte. Nachgemessen
+      # (Lauf 31912082356) bringt macos-15 watchOS 11.5, 26.1 und 26.2 mit —
+      # es fehlte nur die Laufzeit der ZUFAELLIG gewaehlten Xcode-Punktversion.
+      # Genau das loest der Schritt darueber.
       - name: expo prebuild (iOS-Projekt generieren)
         run: npx expo prebuild -p ios --no-install
 

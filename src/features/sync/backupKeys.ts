@@ -56,6 +56,8 @@ export const BACKUP_KEYS: readonly string[] = [
   'salatibox:prayer-qada-owed', // nachzuholende GEBETE, je Gebetsart (s. Dubletten-Hinweis unten)
   'salatibox:taraweeh', // Rakaat je Ramadan-Nacht
   'salatibox:fasting', // Fastentage
+  'salatibox:herausforderungen', // Herausforderungen: selbst gezaehlte Stände + erreichte Ziele
+  'salatibox:quran-lesetagebuch', // Lesetage und gelesene Suren (Grundlage der Koran-Ziele)
   'salatibox:qada-owed', // nachzuholende FASTENTAGE (s. Dubletten-Hinweis unten)
 
   // --- Dhikr ---

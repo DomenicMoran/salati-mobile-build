@@ -9,7 +9,7 @@ import type { ExpoConfig } from 'expo/config';
  * schreibt. Weichen sie ab, bietet der Update-Server einer Installation nichts
  * an und das Ausbleiben sieht aus wie „es gibt kein Update".
  */
-const VERSION = '1.49.1';
+const VERSION = '1.50.0';
 
 const config: ExpoConfig = {
   name: 'Salati',
@@ -77,7 +77,7 @@ const config: ExpoConfig = {
     icon: './assets/expo.icon',
     // appVersionSource: 'local' (eas.json) → buildNumber wird hier gelesen (kein
     // ios/-Verzeichnis, prebuild-managed). 40 > alle bisherigen App-Store-Builds.
-    buildNumber: '73',
+    buildNumber: '74',
     // ASC-App "Salati Islam" (6791867298) wurde vom User unter dieser ID
     // angelegt (2026-07-17) — beide Plattformen nutzen de.salatibox.de.
     bundleIdentifier: 'de.salatibox.de',

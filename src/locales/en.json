@@ -42,7 +42,8 @@
     "gettingStarted": "Getting Started",
     "lernen": "Learn",
     "media": "Media",
-    "lizenzen": "Sources & licences"
+    "lizenzen": "Sources & licences",
+    "challenges": "Challenges"
   },
   "common": {
     "openSettings": "Open system settings",
@@ -1764,14 +1765,14 @@
     "liabilityLinksTitle": "Liability for external data sources",
     "liabilityLinksText": "This app loads Quran, hadith, map and product data from external, public sources. Which ones is set out in full in the privacy notice and under \"Sources & licences\" in the settings. The respective providers are responsible for the accuracy of this third-party content; we check it to the best of our knowledge but cannot monitor it continuously for every change.",
     "copyrightTitle": "Copyright",
-    "copyrightText": "Content created by the app operators is subject to German copyright law. Reproduction, adaptation, distribution and any kind of exploitation beyond the limits of copyright require written consent. Third-party content - Quran texts and translations, hadiths, map and product data, fonts and AI and speech recognition models - is documented with rights holder and licence under \"Sources & licences\" in the settings. If you believe that content in Salati infringes rights, write to salatibox@gmail.com - we will check it and remove the content in question immediately."
+    "copyrightText": "Content created by the app operators is subject to German copyright law. Reproduction, adaptation, distribution and any kind of exploitation beyond the limits of copyright require written consent. Third-party content - Quran texts and translations, hadiths, map and product data, fonts and AI and speech recognition models - is documented with rights holder and licence under \"Sources & licences\" in the settings. If you believe that content in Salati infringes rights, write to info@menucloud-berlin.de - we will check it and remove the content in question immediately."
   },
   "datenschutz": {
     "title": "Privacy Policy",
     "subtitle": "Information pursuant to Art. 13 and 14 GDPR",
     "intro": "This notice applies to the Salati app (Android and iOS), the web version at salati.pro and the Salati TV app. Salati processes as little personal data as possible: there is no user account, no sign-up, no advertising, no tracking and no analytics software. Your learning progress, statistics and settings stay on your device. Some features do call third-party services, though - which ones, what data is transmitted and on what legal basis is set out in full below.",
     "controllerSection": "Controller",
-    "controllerText": "Salatibox - owner Domenic Moran, Heidelberger Str. 36, 12059 Berlin, Germany. Email: salatibox@gmail.com, phone: +49 30 767 645 46. No data protection officer needs to be appointed by law.",
+    "controllerText": "Salatibox - owner Domenic Moran, Heidelberger Str. 36, 12059 Berlin, Germany. Email: info@menucloud-berlin.de, phone: +49 30 767 645 46. No data protection officer needs to be appointed by law.",
     "locationSection": "Location data",
     "locationText": "Prayer times, the Qibla direction, the mosque finder and the nearby halal search need your location. The app only requests it with your permission and only \"while using the app\".\n\nYour coordinates are transmitted to the following independent services: api.aladhan.com (Islamic Network) for prayer times and the monthly calendar, overpass-api.de for the mosque and halal search, and tile.openstreetmap.org for the map view. If you type in a city by hand instead, your search text goes to nominatim.openstreetmap.org.\n\nWe do not store your coordinates on any server of ours. The services named receive them without a name, account or device identifier, but - as with any internet request - together with your IP address. You can withdraw the location permission at any time in your system settings and enter a city instead. Legal basis: Art. 6(1)(a) GDPR (consent given by granting the location permission), revocable at any time.",
     "notificationsSection": "Notifications",
@@ -1781,7 +1782,7 @@
     "syncSection": "Transfer between devices",
     "syncText": "The \"transfer progress\" feature generates a code exclusively on your device. You pass that code on yourself, for example as a note or a message to yourself - we never receive, see or store it.",
     "rightsSection": "Your rights",
-    "rightsText": "Under the GDPR you have the following rights: access (Art. 15), rectification (Art. 16), erasure (Art. 17), restriction of processing (Art. 18), data portability (Art. 20) and objection to processing based on legitimate interests (Art. 21). You may withdraw any consent at any time with effect for the future (Art. 7(3) GDPR), in practice by revoking the relevant permission in your system settings.\n\nIn practice, access and erasure requests will usually come to nothing, because we have stored nothing about you and, without an account, cannot link anything to you; the data on your device you can inspect and delete yourself. We will still answer your request - write to salatibox@gmail.com.\n\nIndependently of this, you have the right to lodge a complaint with a data protection supervisory authority (Art. 77 GDPR). The authority responsible for us is the Berlin Commissioner for Data Protection and Freedom of Information, Alt-Moabit 59-61, 10555 Berlin, Germany. You may also contact the authority where you habitually reside.",
+    "rightsText": "Under the GDPR you have the following rights: access (Art. 15), rectification (Art. 16), erasure (Art. 17), restriction of processing (Art. 18), data portability (Art. 20) and objection to processing based on legitimate interests (Art. 21). You may withdraw any consent at any time with effect for the future (Art. 7(3) GDPR), in practice by revoking the relevant permission in your system settings.\n\nIn practice, access and erasure requests will usually come to nothing, because we have stored nothing about you and, without an account, cannot link anything to you; the data on your device you can inspect and delete yourself. We will still answer your request - write to info@menucloud-berlin.de.\n\nIndependently of this, you have the right to lodge a complaint with a data protection supervisory authority (Art. 77 GDPR). The authority responsible for us is the Berlin Commissioner for Data Protection and Freedom of Information, Alt-Moabit 59-61, 10555 Berlin, Germany. You may also contact the authority where you habitually reside.",
     "cookiesSection": "Cookies & local storage",
     "cookiesText": "Salati sets no tracking or advertising cookies and embeds no analytics software. The app and the web version do store data on your device so the features can work at all: your settings and learning data, and in the web version additionally the AI model and your AI chat history in browser storage. This storage is strictly necessary for the features you explicitly requested and therefore requires no consent under section 25(2) no. 2 TDDDG. You can delete it via your browser settings or via \"Storage\" in the app.",
     "changesSection": "Changes to this notice",
@@ -1825,7 +1826,7 @@
     "aiSection": "Salati AI",
     "aiText": "The AI feature generates its answers by machine from a bundled source corpus. It is labelled as AI-generated content and is expressly not a fatwa, not a scholarly opinion and not legal, tax, financial or medical advice. Machine-generated answers can be incomplete or wrong; this applies particularly to calculated results such as zakat or inheritance shares and to detailed legal questions. Verify important information and, when in doubt, consult a qualified scholar. Your input never leaves your device; we give no warranty as to the availability or accuracy of the AI.",
     "sourcesSection": "Sources & licences",
-    "sourcesText": "Salati includes third-party content - among other things Quran texts and translations, hadith collections, map and product data, fonts and AI and speech recognition models. Who holds the rights and under which licence we use the content is listed in full under \"Sources & licences\" in the settings. Salati's own content - course texts, explanations, handouts, podcast and video productions - may be downloaded and used for personal purposes. If you believe that content in Salati infringes rights, write to salatibox@gmail.com - we will check it and remove the content in question immediately."
+    "sourcesText": "Salati includes third-party content - among other things Quran texts and translations, hadith collections, map and product data, fonts and AI and speech recognition models. Who holds the rights and under which licence we use the content is listed in full under \"Sources & licences\" in the settings. Salati's own content - course texts, explanations, handouts, podcast and video productions - may be downloaded and used for personal purposes. If you believe that content in Salati infringes rights, write to info@menucloud-berlin.de - we will check it and remove the content in question immediately."
   },
   "changelog": {
     "title": "What's New",
@@ -2665,7 +2666,7 @@
     "ownContentSection": "Our own content",
     "ownContentText": "Salati's course texts, explanations, quiz questions, handouts and podcast and video productions are our own works. You may download and use them for personal purposes; redistribution or commercial use requires our consent.",
     "noticeSection": "Rights notice",
-    "noticeText": "We do our best to credit every source correctly. If an attribution is missing, a licence statement is wrong or content in Salati infringes your rights, please write to salatibox@gmail.com - we will correct the entry or remove the content immediately."
+    "noticeText": "We do our best to credit every source correctly. If an attribution is missing, a licence statement is wrong or content in Salati infringes your rights, please write to info@menucloud-berlin.de - we will correct the entry or remove the content immediately."
   },
   "mosqueMatch": {
     "title": "Match my mosque",
@@ -2725,6 +2726,57 @@
       "diyanet": "Diyanet — explanation of the time margin (temkin)",
       "moonsighting": "Moonsighting Committee — description of the method",
       "highLat": "European Council for Fatwa and Research — high latitudes"
+    }
+  },
+  "challenges": {
+    "title": "Challenges",
+    "subtitle": "Small goals in six areas. Whatever the app already tracks, it counts for you.",
+    "alle": "All",
+    "stufe": "Level {n}",
+    "selbstGezaehlt": "log it yourself",
+    "frisch": "New",
+    "erreichtLabel": "achieved",
+    "eintragen": "Log",
+    "leer": "Nothing open in this area right now.",
+    "mehrLabel": "Add one entry: {ziel}",
+    "wenigerLabel": "Remove one entry: {ziel}",
+    "kategorien": {
+      "gebet": "Prayer",
+      "quran": "Quran",
+      "fasten": "Fasting",
+      "dhikr": "Dhikr",
+      "wissen": "Knowledge",
+      "charakter": "Character"
+    },
+    "vorlagen": {
+      "gebet-vollstaendig": "All five prayers on {n} days",
+      "gebet-serie": "All five prayers {n} days in a row",
+      "gebet-fajr": "The Fajr prayer on {n} days",
+      "gebet-isha": "The Isha prayer on {n} days",
+      "gebet-moschee": "Pray at the mosque {n} times",
+      "gebet-jumuah": "Attend Friday prayer {n} times",
+      "gebet-sunnah": "Pray a sunnah prayer {n} times",
+      "quran-lesetage": "Read the Quran on {n} days",
+      "quran-suren": "{n} surahs read",
+      "quran-auswendig": "{n} verses memorised",
+      "quran-kahf": "Read Surah al-Kahf on Friday {n} times",
+      "quran-nacht": "Read the Quran at night {n} times",
+      "fasten-tage": "Fast on {n} days",
+      "fasten-serie": "Fast {n} days in a row",
+      "fasten-montag-donnerstag": "Fast on a Monday or Thursday {n} times",
+      "fasten-weisse-tage": "Fast the white days {n} times",
+      "dhikr-tage": "Make dhikr on {n} days",
+      "dhikr-gesamt": "{n} dhikr in total",
+      "dhikr-nach-gebet": "Dhikr after prayer {n} times",
+      "dhikr-istighfar": "Start {n} days with istighfar",
+      "dhikr-dua-auswendig": "{n} supplications memorised",
+      "wissen-lerntage": "Study on {n} days",
+      "wissen-lektionen": "{n} lessons completed",
+      "wissen-quiz": "{n} practice rounds completed",
+      "wissen-hadith": "{n} hadiths read",
+      "charakter-sadaqa": "Give sadaqah {n} times",
+      "charakter-eltern": "Call or visit your parents {n} times",
+      "charakter-helfen": "Help someone {n} times"
     }
   }
 }

@@ -42,7 +42,8 @@
     "gettingStarted": "Premiers pas",
     "lernen": "Apprendre",
     "media": "Médias",
-    "lizenzen": "Sources et licences"
+    "lizenzen": "Sources et licences",
+    "challenges": "Défis"
   },
   "common": {
     "openSettings": "Ouvrir les réglages système",
@@ -1764,14 +1765,14 @@
     "liabilityLinksTitle": "Responsabilité relative aux sources de données externes",
     "liabilityLinksText": "Cette application charge des données coraniques, de hadiths, cartographiques et de produits depuis des sources externes et publiques. Lesquelles est indiqué en détail dans la déclaration de confidentialité et sous « Sources et licences » dans les réglages. L'exactitude de ces contenus tiers relève de la responsabilité de leurs fournisseurs respectifs ; nous les vérifions au mieux de nos connaissances, mais ne pouvons les contrôler en permanence à chaque modification.",
     "copyrightTitle": "Droits d'auteur",
-    "copyrightText": "Les contenus créés par les exploitants de l'application sont soumis au droit d'auteur allemand. La reproduction, l'adaptation, la diffusion et toute forme d'exploitation en dehors des limites du droit d'auteur nécessitent un accord écrit. Les contenus de tiers - textes et traductions du Coran, hadiths, données cartographiques et de produits, polices ainsi que modèles d'IA et de reconnaissance vocale - sont documentés avec leur titulaire de droits et leur licence sous « Sources et licences » dans les réglages. Si vous estimez qu'un contenu de Salati porte atteinte à des droits, écrivez-nous à salatibox@gmail.com : nous le vérifierons et retirerons immédiatement le contenu concerné."
+    "copyrightText": "Les contenus créés par les exploitants de l'application sont soumis au droit d'auteur allemand. La reproduction, l'adaptation, la diffusion et toute forme d'exploitation en dehors des limites du droit d'auteur nécessitent un accord écrit. Les contenus de tiers - textes et traductions du Coran, hadiths, données cartographiques et de produits, polices ainsi que modèles d'IA et de reconnaissance vocale - sont documentés avec leur titulaire de droits et leur licence sous « Sources et licences » dans les réglages. Si vous estimez qu'un contenu de Salati porte atteinte à des droits, écrivez-nous à info@menucloud-berlin.de : nous le vérifierons et retirerons immédiatement le contenu concerné."
   },
   "datenschutz": {
     "title": "Politique de confidentialité",
     "subtitle": "Informations conformément aux art. 13 et 14 du RGPD",
     "intro": "Cette déclaration s'applique à l'application Salati (Android et iOS), à la version web sur salati.pro et à l'application Salati TV. Salati traite le moins de données personnelles possible : pas de compte utilisateur, pas d'inscription, pas de publicité, pas de pistage et pas de logiciel d'analyse. Votre progression, vos statistiques et vos réglages restent sur votre appareil. Certaines fonctions font toutefois appel à des services tiers : lesquels, quelles données sont transmises et sur quelle base juridique, tout est détaillé ci-dessous.",
     "controllerSection": "Responsable du traitement",
-    "controllerText": "Salatibox - propriétaire Domenic Moran, Heidelberger Str. 36, 12059 Berlin, Allemagne. E-mail : salatibox@gmail.com, téléphone : +49 30 767 645 46. La loi n'impose pas la désignation d'un délégué à la protection des données.",
+    "controllerText": "Salatibox - propriétaire Domenic Moran, Heidelberger Str. 36, 12059 Berlin, Allemagne. E-mail : info@menucloud-berlin.de, téléphone : +49 30 767 645 46. La loi n'impose pas la désignation d'un délégué à la protection des données.",
     "locationSection": "Données de localisation",
     "locationText": "Les horaires de prière, la direction de la qibla, la recherche de mosquées et la recherche de lieux halal à proximité nécessitent votre position. L'application ne la demande qu'avec votre autorisation et uniquement « pendant l'utilisation de l'application ».\n\nVos coordonnées sont alors transmises aux services indépendants suivants : api.aladhan.com (Islamic Network) pour les horaires de prière et le calendrier mensuel, overpass-api.de pour la recherche de mosquées et de lieux halal, et tile.openstreetmap.org pour l'affichage de la carte. Si vous saisissez une ville à la main, votre texte de recherche est envoyé à nominatim.openstreetmap.org.\n\nNous ne stockons pas vos coordonnées sur nos propres serveurs. Les services cités les reçoivent sans nom, compte ni identifiant d'appareil, mais - comme pour toute requête internet - avec votre adresse IP. Vous pouvez retirer l'autorisation de localisation à tout moment dans les réglages du système et saisir une ville à la place. Base juridique : art. 6, par. 1, point a) du RGPD (consentement donné en accordant l'autorisation de localisation), révocable à tout moment.",
     "notificationsSection": "Notifications",
@@ -1781,7 +1782,7 @@
     "syncSection": "Transfert entre appareils",
     "syncText": "La fonction « transférer la progression » génère un code exclusivement sur votre appareil. C'est vous qui transmettez ce code, par exemple par une note ou un message à vous-même : nous ne le recevons, ne le voyons et ne le conservons à aucun moment.",
     "rightsSection": "Vos droits",
-    "rightsText": "Le RGPD vous confère les droits suivants : accès (art. 15), rectification (art. 16), effacement (art. 17), limitation du traitement (art. 18), portabilité des données (art. 20) et opposition aux traitements fondés sur l'intérêt légitime (art. 21). Vous pouvez retirer tout consentement à tout moment pour l'avenir (art. 7, par. 3), en pratique en retirant l'autorisation concernée dans les réglages du système.\n\nEn pratique, les demandes d'accès et d'effacement resteront le plus souvent sans objet, car nous n'avons rien enregistré à votre sujet et, faute de compte, ne pouvons rien vous rattacher ; les données sur votre appareil, vous pouvez les consulter et les supprimer vous-même. Nous répondrons néanmoins à votre demande - écrivez-nous à salatibox@gmail.com.\n\nIndépendamment de cela, vous avez le droit d'introduire une réclamation auprès d'une autorité de contrôle de la protection des données (art. 77). L'autorité compétente pour nous est la Commissaire de Berlin à la protection des données et à la liberté de l'information, Alt-Moabit 59-61, 10555 Berlin, Allemagne. Vous pouvez également vous adresser à l'autorité de votre lieu de résidence habituelle.",
+    "rightsText": "Le RGPD vous confère les droits suivants : accès (art. 15), rectification (art. 16), effacement (art. 17), limitation du traitement (art. 18), portabilité des données (art. 20) et opposition aux traitements fondés sur l'intérêt légitime (art. 21). Vous pouvez retirer tout consentement à tout moment pour l'avenir (art. 7, par. 3), en pratique en retirant l'autorisation concernée dans les réglages du système.\n\nEn pratique, les demandes d'accès et d'effacement resteront le plus souvent sans objet, car nous n'avons rien enregistré à votre sujet et, faute de compte, ne pouvons rien vous rattacher ; les données sur votre appareil, vous pouvez les consulter et les supprimer vous-même. Nous répondrons néanmoins à votre demande - écrivez-nous à info@menucloud-berlin.de.\n\nIndépendamment de cela, vous avez le droit d'introduire une réclamation auprès d'une autorité de contrôle de la protection des données (art. 77). L'autorité compétente pour nous est la Commissaire de Berlin à la protection des données et à la liberté de l'information, Alt-Moabit 59-61, 10555 Berlin, Allemagne. Vous pouvez également vous adresser à l'autorité de votre lieu de résidence habituelle.",
     "cookiesSection": "Cookies et stockage local",
     "cookiesText": "Salati ne place aucun cookie de pistage ou publicitaire et n'intègre aucun logiciel d'analyse. L'application et la version web enregistrent toutefois des données sur votre appareil pour que les fonctions puissent simplement fonctionner : vos réglages et données d'apprentissage et, dans la version web, le modèle d'IA et votre historique de conversation dans le stockage du navigateur. Cet enregistrement est strictement nécessaire aux fonctions que vous avez expressément demandées et ne requiert donc pas de consentement au sens du § 25, al. 2, n° 2 de la TDDDG allemande. Vous pouvez l'effacer via les réglages du navigateur ou via « Stockage » dans l'application.",
     "changesSection": "Modifications de cette déclaration",
@@ -1825,7 +1826,7 @@
     "aiSection": "Salati IA",
     "aiText": "La fonction d'IA génère ses réponses par machine à partir d'un corpus de sources livré avec l'application. Elle est identifiée comme contenu généré par IA et ne constitue expressément ni une fatwa, ni un avis de savant, ni un conseil juridique, fiscal, financier ou médical. Les réponses générées par machine peuvent être incomplètes ou erronées ; cela vaut particulièrement pour les résultats de calcul comme la zakat ou les parts successorales et pour les questions juridiques de détail. Vérifiez les informations importantes et, en cas de doute, adressez-vous à un savant qualifié. Vos saisies ne quittent pas votre appareil ; nous ne garantissons ni la disponibilité ni l'exactitude de l'IA.",
     "sourcesSection": "Sources et licences",
-    "sourcesText": "Salati intègre des contenus de tiers - notamment des textes et traductions du Coran, des recueils de hadiths, des données cartographiques et de produits, des polices ainsi que des modèles d'IA et de reconnaissance vocale. Qui détient les droits et sous quelle licence nous utilisons ces contenus figure intégralement sous « Sources et licences » dans les réglages. Les contenus propres à Salati - textes de cours, explications, supports, productions de podcast et de vidéo - peuvent être téléchargés et utilisés à des fins personnelles. Si vous estimez qu'un contenu de Salati porte atteinte à des droits, écrivez-nous à salatibox@gmail.com : nous le vérifierons et retirerons immédiatement le contenu concerné."
+    "sourcesText": "Salati intègre des contenus de tiers - notamment des textes et traductions du Coran, des recueils de hadiths, des données cartographiques et de produits, des polices ainsi que des modèles d'IA et de reconnaissance vocale. Qui détient les droits et sous quelle licence nous utilisons ces contenus figure intégralement sous « Sources et licences » dans les réglages. Les contenus propres à Salati - textes de cours, explications, supports, productions de podcast et de vidéo - peuvent être téléchargés et utilisés à des fins personnelles. Si vous estimez qu'un contenu de Salati porte atteinte à des droits, écrivez-nous à info@menucloud-berlin.de : nous le vérifierons et retirerons immédiatement le contenu concerné."
   },
   "changelog": {
     "title": "Nouveautés",
@@ -2665,7 +2666,7 @@
     "ownContentSection": "Nos propres contenus",
     "ownContentText": "Les textes de cours, explications, questions de quiz, supports ainsi que les productions de podcast et de vidéo de Salati sont nos propres œuvres. Vous pouvez les télécharger et les utiliser à des fins personnelles ; leur rediffusion ou leur usage commercial nécessite notre accord.",
     "noticeSection": "Avis relatif aux droits",
-    "noticeText": "Nous nous efforçons de citer correctement chaque source. Si une mention manque, si une indication de licence est inexacte ou si un contenu de Salati porte atteinte à vos droits, écrivez-nous à salatibox@gmail.com : nous corrigerons l'information ou retirerons le contenu immédiatement."
+    "noticeText": "Nous nous efforçons de citer correctement chaque source. Si une mention manque, si une indication de licence est inexacte ou si un contenu de Salati porte atteinte à vos droits, écrivez-nous à info@menucloud-berlin.de : nous corrigerons l'information ou retirerons le contenu immédiatement."
   },
   "mosqueMatch": {
     "title": "Aligner sur ma mosquée",
@@ -2725,6 +2726,57 @@
       "diyanet": "Diyanet — explication de la marge de temps (temkin)",
       "moonsighting": "Moonsighting Committee — description du procédé",
       "highLat": "Conseil européen de la fatwa et de la recherche — hautes latitudes"
+    }
+  },
+  "challenges": {
+    "title": "Défis",
+    "subtitle": "De petits objectifs dans six domaines. Ce que l’application suit déjà, elle le compte elle-même.",
+    "alle": "Tous",
+    "stufe": "Niveau {n}",
+    "selbstGezaehlt": "à noter soi-même",
+    "frisch": "Nouveau",
+    "erreichtLabel": "atteint",
+    "eintragen": "Noter",
+    "leer": "Rien d’ouvert dans ce domaine pour le moment.",
+    "mehrLabel": "Ajouter une entrée : {ziel}",
+    "wenigerLabel": "Retirer une entrée : {ziel}",
+    "kategorien": {
+      "gebet": "Prière",
+      "quran": "Coran",
+      "fasten": "Jeûne",
+      "dhikr": "Dhikr",
+      "wissen": "Savoir",
+      "charakter": "Caractère"
+    },
+    "vorlagen": {
+      "gebet-vollstaendig": "Les cinq prières pendant {n} jours",
+      "gebet-serie": "Les cinq prières {n} jours d’affilée",
+      "gebet-fajr": "La prière du Fajr pendant {n} jours",
+      "gebet-isha": "La prière de l’Icha pendant {n} jours",
+      "gebet-moschee": "Prier à la mosquée {n} fois",
+      "gebet-jumuah": "Aller à la prière du vendredi {n} fois",
+      "gebet-sunnah": "Faire une prière sunna {n} fois",
+      "quran-lesetage": "Lire le Coran pendant {n} jours",
+      "quran-suren": "{n} sourates lues",
+      "quran-auswendig": "{n} versets mémorisés",
+      "quran-kahf": "Lire la sourate al-Kahf le vendredi {n} fois",
+      "quran-nacht": "Lire le Coran la nuit {n} fois",
+      "fasten-tage": "Jeûner {n} jours",
+      "fasten-serie": "Jeûner {n} jours d’affilée",
+      "fasten-montag-donnerstag": "Jeûner un lundi ou un jeudi {n} fois",
+      "fasten-weisse-tage": "Jeûner les jours blancs {n} fois",
+      "dhikr-tage": "Faire le dhikr pendant {n} jours",
+      "dhikr-gesamt": "{n} dhikr au total",
+      "dhikr-nach-gebet": "Dhikr après la prière {n} fois",
+      "dhikr-istighfar": "Commencer {n} jours par l’istighfar",
+      "dhikr-dua-auswendig": "{n} invocations mémorisées",
+      "wissen-lerntage": "Apprendre pendant {n} jours",
+      "wissen-lektionen": "{n} leçons terminées",
+      "wissen-quiz": "{n} séries d’exercices terminées",
+      "wissen-hadith": "{n} hadiths lus",
+      "charakter-sadaqa": "Donner la sadaqa {n} fois",
+      "charakter-eltern": "Appeler ou visiter ses parents {n} fois",
+      "charakter-helfen": "Aider quelqu’un {n} fois"
     }
   }
 }

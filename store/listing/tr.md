@@ -68,7 +68,7 @@ PODCAST, VIDEO VE REELS
 VERİLERİNİZ SİZE AİTTİR
 Salati reklamsızdır, hesap ve izleme SDK'sı yoktur — verileriniz cihazınızda kalır. Konumunuz yalnızca namaz vakitleri, kıble ve çevre araması için kullanılır ve bunun için AlAdhan ile OpenStreetMap'e iletilir: anonim, kimliğinize bağlanmaz, dilediğinizde reddedebilirsiniz. Temel içerikler çevrimdışı çalışır.
 
-Soru veya geri bildirim: salatibox@gmail.com
+Soru veya geri bildirim: info@menucloud-berlin.de
 Gizlilik: https://www.salati.pro/datenschutz
 
 (3814/4000 Zeichen)

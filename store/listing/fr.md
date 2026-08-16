@@ -66,7 +66,7 @@ PODCAST, VIDÉOS ET REELS
 VOS DONNÉES VOUS APPARTIENNENT
 Sans publicité, sans compte, sans SDK de pistage : vos données restent sur votre appareil. Votre position ne sert qu'aux horaires, à la Qibla et à la recherche à proximité et est envoyée à AlAdhan et OpenStreetMap : anonyme et facultative. Fonctionne hors ligne.
 
-Questions ou remarques ? salatibox@gmail.com
+Questions ou remarques ? info@menucloud-berlin.de
 Confidentialité : https://www.salati.pro/datenschutz
 
 (3966/4000 Zeichen)

@@ -66,7 +66,7 @@ PODCAST, VIDEO & REELS
 DATAMU TETAP MILIKMU
 Tanpa iklan, tanpa akun, tanpa SDK pelacakan: datamu tetap di perangkatmu. Lokasimu hanya untuk waktu salat, Kiblat, dan pencarian terdekat, lalu dikirim ke AlAdhan dan OpenStreetMap: anonim dan opsional. Berfungsi offline.
 
-Pertanyaan atau masukan? salatibox@gmail.com
+Pertanyaan atau masukan? info@menucloud-berlin.de
 Kebijakan privasi: https://www.salati.pro/datenschutz
 
 (3856/4000 Zeichen)

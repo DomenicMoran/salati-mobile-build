@@ -40,6 +40,7 @@ const SECTIONS = [
       { href: '/calendar', labelKey: 'nav.calendar', icon: 'calendar-outline' },
       { href: '/themes', labelKey: 'nav.themes', icon: 'compass-outline' },
       { href: '/themes/journeys', labelKey: 'nav.journeys', icon: 'walk-outline' },
+      { href: '/challenges', labelKey: 'nav.challenges', icon: 'flag' },
       { href: '/achievements', labelKey: 'nav.achievements', icon: 'trophy' },
     ],
   },

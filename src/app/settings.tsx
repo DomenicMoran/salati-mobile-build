@@ -573,7 +573,7 @@ export default function SettingsScreen() {
   // eigenes Backend, öffnet nur den Standard-Mail-Client des Geräts.
   function openFeedbackMail() {
     const subject = encodeURIComponent(t('settings.legalFeedbackSubject'));
-    Linking.openURL(`mailto:salatibox@gmail.com?subject=${subject}`).catch(() => {});
+    Linking.openURL(`mailto:info@menucloud-berlin.de?subject=${subject}`).catch(() => {});
   }
 
   // App-Version für Support-Anfragen: JS-Konfigversion (app.config.ts) plus

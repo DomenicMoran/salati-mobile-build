@@ -2,6 +2,8 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 import { useFocusEffect } from 'expo-router';
 import { useCallback, useState } from 'react';
 
+import { merkeGelesen } from '@/features/challenges/quranLog';
+
 // Lesezeichen + letzte Leseposition, lokal persistiert. Bewusst ohne eigenen
 // Provider: die Screens laden bei Fokus neu (useFocusEffect), damit Reader und
 // Suren-Liste ohne geteilten Context konsistent bleiben.
@@ -175,6 +177,12 @@ export function useQuranProgress() {
   }, []);
 
   const setLastRead = useCallback((surah: number, ayah: number) => {
+    // Lesetagebuch fuer die Herausforderungen ("an 30 Tagen gelesen", "20
+    // Suren gelesen"). Bewusst hier und nirgends sonst: das ist die eine
+    // Stelle, an der die App ohnehin festhaelt, dass gelesen wurde. Der
+    // `history`-Verlauf darunter taugt dafuer nicht (auf 15 Eintraege
+    // gedeckelt, ohne Datum) — Begruendung in challenges/quranLog.ts.
+    merkeGelesen(surah);
     setProgress((prev) => {
       const now = Date.now();
       const next: QuranProgress = {

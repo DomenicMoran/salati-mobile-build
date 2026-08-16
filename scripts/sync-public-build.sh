@@ -27,6 +27,20 @@
 #   GH_TOKEN=... bash scripts/sync-public-build.sh
 set -euo pipefail
 
+# Zielzweig. Voreinstellung `main` — nur dort loest der Push den Android-Lauf
+# aus, der in den Play Store veroeffentlicht. Fuer eine Pruefrunde VOR der
+# Veroeffentlichung:
+#
+#   ZIEL_ZWEIG=pruefung GH_TOKEN=... bash scripts/sync-public-build.sh
+#
+# Dann laeuft nichts von allein; Android/iOS/Uhr werden auf diesem Zweig von
+# Hand gestartet und veroeffentlichen nichts (die Store-Schritte haengen an
+# `push` auf `main`). Ohne diesen Weg musste man den Spiegel von Hand
+# zusammenbauen — und verlor dabei genau die Schritte, die dieses Skript sonst
+# macht (exakte Versionen der gepatchten Pakete, Standalone-.npmrc): der Lauf
+# brach dann mit ERR_PNPM_UNUSED_PATCH ab.
+ZIEL_ZWEIG="${ZIEL_ZWEIG:-main}"
+
 PUBLIC_REPO="https://x-access-token:${GH_TOKEN}@github.com/DomenicMoran/salati-mobile-build.git"
 SRC="$(cd "$(dirname "$0")/.." && pwd)"          # apps/mobile
 ROOT="$(cd "$SRC/../.." && pwd)"                  # Monorepo-Root
@@ -143,7 +157,11 @@ MD
 git add -A
 if git diff --cached --quiet; then echo "Keine Änderungen."; else
   git -c user.name="MenuCloud Berlin" -c user.email="menucloudberlin@gmail.com" commit -q -m "Sync apps/mobile ($(date -u +%Y-%m-%dT%H:%MZ))"
-  git branch -M main
-  git push -u origin main
-  echo "Gepusht -> Actions-Build startet."
+  git branch -M "$ZIEL_ZWEIG"
+  git push -u -f origin "$ZIEL_ZWEIG"
+  if [ "$ZIEL_ZWEIG" = "main" ]; then
+    echo "Gepusht -> Actions-Build startet und veroeffentlicht."
+  else
+    echo "Gepusht auf '$ZIEL_ZWEIG' -> nichts wird veroeffentlicht; Laeufe von Hand starten."
+  fi
 fi

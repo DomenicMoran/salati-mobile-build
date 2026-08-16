@@ -1419,6 +1419,22 @@ export const CHANGELOG: ChangelogVersion[] = [
       },
     ],
   },
+  {
+    version: '1.50.0',
+    date: '2026-08-16',
+    entries: [
+      {
+        type: 'feature',
+        de: 'Neu: Herausforderungen. 112 Ziele in sechs Bereichen — Gebet, Koran, Fasten, Dhikr, Wissen und Charakter — jeweils in vier Stufen. Was die App ohnehin mitzählt, zählt sie selbst: verrichtete Gebete, Fastentage, Lesetage im Koran, auswendig gelernte Verse, Lektionen. Alles andere hakst du mit einem Tipp ab.',
+        en: 'New: challenges. 112 goals across six areas — prayer, Quran, fasting, dhikr, knowledge and character — each in four levels. Whatever the app already tracks, it counts for you: prayers performed, fasting days, days spent reading the Quran, verses memorised, lessons. Everything else you log with a single tap.',
+      },
+      {
+        type: 'feature',
+        de: 'Die Apple-Watch-App ist da: nächstes Gebet mit Restzeit, die Tageszeiten und die Qibla-Richtung direkt am Handgelenk, dazu eine Komplikation fürs Zifferblatt. Sie war fertig gebaut, wurde bisher aber nicht mit ausgeliefert.',
+        en: 'The Apple Watch app has arrived: next prayer with time remaining, the day’s times and the qibla direction right on your wrist, plus a complication for the watch face. It was built and ready but had never shipped.',
+      },
+    ],
+  },
 ];
 /** Neueste Version zuerst - für die Anzeige im Changelog-Screen. */
 export function changelogNewestFirst(): ChangelogVersion[] {

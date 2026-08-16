@@ -39,10 +39,20 @@ jobs:
       # mit dem Runner-Abbild, ein fester Pfad ist eine Sollbruchstelle.
       - name: Xcode 26 waehlen
         run: |
-          sudo xcode-select -s /Applications/Xcode_26.0.app \
-            || sudo xcode-select -s /Applications/Xcode_26.1.app \
-            || sudo xcode-select -s /Applications/Xcode_26.2.app
+          # Hoechste vorhandene 26er-Version, nicht die erste: der Runner hat
+          # mehrere parallel, und ihre Plattformen sind unterschiedlich
+          # vollstaendig. Xcode 26.0.1 bringt watchOS 26.0 mit, das auf dem
+          # Abbild NICHT installiert ist — der Uhren-Build brach genau daran ab
+          # ("watchOS 26.0 is not installed"), waehrend watchOS 26.1 und 26.2
+          # daneben bereitstanden.
+          echo "--- vorhandene Xcode-Versionen ---"
+          ls -d /Applications/Xcode*.app 2>/dev/null || true
+          XCODE=$(ls -d /Applications/Xcode_26*.app 2>/dev/null | sort -V | tail -1)
+          test -n "$XCODE" || { echo "FEHLER: kein Xcode 26 auf dem Runner"; exit 1; }
+          sudo xcode-select -s "$XCODE"
           xcodebuild -version
+          echo "--- installierte watchOS-Plattformen ---"
+          xcrun simctl list runtimes | grep -i watch || echo "KEINE watchOS-Laufzeit"
 
       # Ohne watchOS-Laufzeit gibt es weder Simulator noch Asset-Compile fuer
       # die Uhr — genau daran scheiterte frueher der iOS-Build. Deshalb steht
@@ -54,6 +64,12 @@ jobs:
           echo "--- Geraete ---"
           xcrun simctl list devices available | grep -i -A 12 "watchos" || true
 
+      # Der Uhren-Build haengt am iOS-Host-Target und zieht damit die ganze
+      # Pod-Kette mit — inklusive der Expo-Module, die ohne diese Anpassungen
+      # unter Swift 6.2 nicht uebersetzen (Lauf 31929279067).
+      - name: Swift-6.2-Anpassungen an den Expo-Modulen
+        run: bash scripts/expo-swift62-fix.sh
+
       - name: expo prebuild (iOS-Projekt erzeugen)
         run: npx expo prebuild -p ios --no-install
 
@@ -61,7 +77,15 @@ jobs:
         working-directory: ios
         run: pod install --repo-update
 
-      # Unsigniert fuer den Simulator — der braucht keine Profile.
+      # AD-HOC signiert, nicht unsigniert.
+      #
+      # Der Simulator braucht kein Zertifikat und kein Profil, aber er
+      # braucht die BERECHTIGUNGEN. Ohne sie hat die App keine App-Group,
+      # und UserDefaults mit einer Gruppen-Suite liest ins Leere: die Uhr
+      # zeigte in Lauf 31931968760 auf allen drei Seiten den Leerzustand,
+      # obwohl die Nutzlast nachweislich als Datei danebenlag. Mit
+      # CODE_SIGN_IDENTITY=- vergibt Xcode simulierte Berechtigungen, der
+      # Gruppen-Container entsteht, und der Schritt danach schreibt dorthin.
       - name: Uhren-App fuer den Simulator bauen
         run: |
           set -o pipefail
@@ -71,16 +95,25 @@ jobs:
             -configuration Debug \
             -destination "generic/platform=watchOS Simulator" \
             -derivedDataPath "$RUNNER_TEMP/dd" \
-            CODE_SIGNING_ALLOWED=NO \
+            CODE_SIGNING_ALLOWED=YES \
+            CODE_SIGNING_REQUIRED=NO \
+            CODE_SIGN_IDENTITY=- \
+            CODE_SIGN_STYLE=Manual \
+            PROVISIONING_PROFILE_SPECIFIER= \
             SWIFT_STRICT_CONCURRENCY=minimal \
             SWIFT_TREAT_WARNINGS_AS_ERRORS=NO
 
       - name: Simulator starten und App installieren
+        env:
+          # Die Eingabe kommt ueber die Umgebung, nicht per ${{ }} mitten in
+          # den Skripttext: dort waere sie eine Befehlsinjektion (ein Wert wie
+          # '"; rm -rf / #' liefe als Kommando auf dem Runner).
+          GERAET: ${{ inputs.geraet }}
         run: |
           set -e
           # Modellnamen wechseln mit jedem Xcode. Erst der Wunsch aus der
           # Eingabe, sonst das erste verfuegbare watchOS-Geraet.
-          UDID=$(xcrun simctl list devices available --json | node -e "let s='';process.stdin.on('data',d=>s+=d).on('end',()=>{const d=JSON.parse(s).devices;const w='${{ inputs.geraet }}'.trim();let t=[];for(const v of Object.values(d))for(const g of v)if(w&&g.name===w)t.push(g.udid);if(!t.length)for(const[k,v]of Object.entries(d))if(k.includes('watchOS'))for(const g of v)t.push(g.udid);if(!t.length){console.error('keine watchOS-Simulatoren verfuegbar');process.exit(1)}console.log(t[0])})")
+          UDID=$(xcrun simctl list devices available --json | node -e "let s='';process.stdin.on('data',d=>s+=d).on('end',()=>{const d=JSON.parse(s).devices;const w=(process.env.GERAET||'').trim();let t=[];for(const v of Object.values(d))for(const g of v)if(w&&g.name===w)t.push(g.udid);if(!t.length)for(const[k,v]of Object.entries(d))if(k.includes('watchOS'))for(const g of v)t.push(g.udid);if(!t.length){console.error('keine watchOS-Simulatoren verfuegbar');process.exit(1)}console.log(t[0])})")
           echo "UDID=$UDID" >> "$GITHUB_ENV"
           echo "Simulator: $UDID"
           xcrun simctl boot "$UDID" || true
@@ -90,23 +123,25 @@ jobs:
           echo "App: $APP"
           xcrun simctl install "$UDID" "$APP"
 
-      # Ohne gekoppeltes iPhone bleibt die App im Leerzustand ("auf dem Handy
-      # oeffnen"). Damit die drei Seiten mit echtem Inhalt zu sehen sind, wird
-      # dieselbe Nutzlast in die App-Group der Uhr gelegt, die sonst per
-      # WatchConnectivity ankommt — Schluessel und Format aus
-      # targets/salati-watch/WatchPrayerStore.swift bzw.
-      # src/features/prayer-times/ios-widget.ts.
-      - name: Gebetszeiten in die App-Group der Uhr legen
+      # Die Nutzlast geht per Startargument in die App, nicht ueber die
+      # App-Group des Simulators.
+      #
+      # Drei Anlaeufe sind an cfprefsd gescheitert (Laeufe 31933148169,
+      # 31934004643, 31935481831): bei laufendem Geraet haelt er die Suite im
+      # Speicher und sieht eine daneben geschriebene Datei nicht; faehrt man das
+      # Geraet herunter, schreibt er beim Beenden seinen leeren Stand darueber.
+      # Das Startargument umgeht diesen Apparat vollstaendig — dieselbe Loesung
+      # wie bei --seite=, und dieselbe wie bei den TV-Ladenbildern.
+      #
+      # Gegenstueck in targets/salati-watch/WatchPrayerStore.swift
+      # (ladeNutzlastAusArgumenten), dort steht auch, was das belegt und was
+      # nicht.
+      - name: Nutzlast fuer die Pruefung erzeugen
         run: |
           set -e
-          GRUPPE=$(xcrun simctl get_app_container "$UDID" de.salatibox.de.watch groups:group.de.salatibox.de)
-          echo "App-Group: $GRUPPE"
-          mkdir -p "$GRUPPE/Library/Preferences"
           NUTZLAST=$(node -e 'const z=(v)=>({Fajr:v[0],Sunrise:v[1],Dhuhr:v[2],Asr:v[3],Maghrib:v[4],Isha:v[5]});process.stdout.write(JSON.stringify({locationLabel:"Berlin, Deutschland",today:z(["03:18","05:42","13:16","17:16","20:39","22:50"]),tomorrow:z(["03:21","05:44","13:16","17:15","20:37","22:47"]),timeFormat:"24h",qiblaBearing:136.7,qiblaDistanceKm:4359,widgetTheme:"auto"}))')
-          PLIST="$GRUPPE/Library/Preferences/group.de.salatibox.de"
-          defaults write "$PLIST" "salati.widget.prayerTimes" "$NUTZLAST"
-          defaults write "$PLIST" "salati.watch.syncedAt" -float "$(date +%s)"
-          defaults read "$PLIST" | head -5
+          echo "NUTZLAST=$NUTZLAST" >> "$GITHUB_ENV"
+          echo "Nutzlast: ${#NUTZLAST} Zeichen"
 
       - name: Von jeder Seite ein Bild
         run: |
@@ -115,20 +150,33 @@ jobs:
           for SEITE in 1 2 3; do
             xcrun simctl terminate "$UDID" de.salatibox.de.watch || true
             sleep 2
-            xcrun simctl launch "$UDID" de.salatibox.de.watch --seite=$SEITE
+            xcrun simctl launch "$UDID" de.salatibox.de.watch --seite=$SEITE "--nutzlast=$NUTZLAST"
             sleep 8
             xcrun simctl io "$UDID" screenshot "$RUNNER_TEMP/uhr/seite-$SEITE.png"
             echo "Seite $SEITE aufgenommen"
           done
-          # Leerzustand ebenfalls belegen: Nutzlast entfernen, neu starten.
-          GRUPPE=$(xcrun simctl get_app_container "$UDID" de.salatibox.de.watch groups:group.de.salatibox.de)
-          rm -f "$GRUPPE/Library/Preferences/group.de.salatibox.de.plist"
+          # Leerzustand: derselbe Start, nur ohne Nutzlast-Argument. Damit ist
+          # das Vergleichsbild aus genau demselben Zustand aufgenommen und der
+          # Unterschied kann nur an den Daten liegen.
           xcrun simctl terminate "$UDID" de.salatibox.de.watch || true
           sleep 2
           xcrun simctl launch "$UDID" de.salatibox.de.watch
           sleep 8
           xcrun simctl io "$UDID" screenshot "$RUNNER_TEMP/uhr/leerzustand.png"
           ls -la "$RUNNER_TEMP/uhr"
+
+      # Ein Leerzustand auf einer Seite mit Daten waere ein stiller
+      # Fehlschlag: der Lauf saehe gruen aus und belegte nichts. Seite 1
+      # wird deshalb gegen das Leerzustands-Bild geprueft. Sind beide
+      # gleich, kamen die Daten nicht an (Lauf 31931968760).
+      - name: Nachweis, dass die Uhr echte Zeiten zeigt
+        run: |
+          set -e
+          if cmp -s "$RUNNER_TEMP/uhr/seite-1.png" "$RUNNER_TEMP/uhr/leerzustand.png"; then
+            echo "::error::Die Uhr zeigt trotz abgelegter Nutzlast den Leerzustand."
+            exit 1
+          fi
+          echo "Seite 1 unterscheidet sich vom Leerzustand - die Daten sind angekommen."
 
       - name: Absturzberichte pruefen
         run: |
@@ -141,6 +189,7 @@ jobs:
           echo "Keine Absturzberichte."
 
       - name: Bilder nach R2
+        if: always()
         env:
           CLOUDFLARE_ID: ${{ secrets.CLOUDFLARE_ID }}
           CLOUDFLARE_SEC: ${{ secrets.CLOUDFLARE_SEC }}

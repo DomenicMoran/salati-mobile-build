@@ -42,7 +42,8 @@
     "gettingStarted": "Langkah Pertama",
     "lernen": "Belajar",
     "media": "Media",
-    "lizenzen": "Sumber & lesen"
+    "lizenzen": "Sumber & lesen",
+    "challenges": "Cabaran"
   },
   "common": {
     "openSettings": "Buka tetapan sistem",
@@ -1764,14 +1765,14 @@
     "liabilityLinksTitle": "Liabiliti bagi sumber data luaran",
     "liabilityLinksText": "Aplikasi ini memuatkan data al-Quran, hadis, peta dan produk daripada sumber luaran yang bersifat awam. Sumber mana satu dijelaskan sepenuhnya dalam notis privasi dan di bawah „Sumber & lesen\" dalam tetapan. Ketepatan kandungan pihak ketiga itu menjadi tanggungjawab penyedianya masing-masing; kami menyemaknya sebaik pengetahuan kami, tetapi tidak dapat mengawasinya secara berterusan bagi setiap perubahan.",
     "copyrightTitle": "Hak cipta",
-    "copyrightText": "Kandungan yang dihasilkan oleh pengendali aplikasi tertakluk kepada undang-undang hak cipta Jerman. Penggandaan, pengubahsuaian, penyebaran dan sebarang bentuk pengeksploitasian di luar had hak cipta memerlukan kebenaran bertulis. Kandungan pihak ketiga - teks dan terjemahan al-Quran, hadis, data peta dan produk, fon serta model AI dan pengecaman pertuturan - didokumenkan bersama pemegang hak dan lesennya di bawah „Sumber & lesen\" dalam tetapan. Jika anda berpendapat sesuatu kandungan dalam Salati melanggar hak, tulis kepada salatibox@gmail.com - kami akan menyemaknya dan mengeluarkan kandungan berkenaan dengan segera."
+    "copyrightText": "Kandungan yang dihasilkan oleh pengendali aplikasi tertakluk kepada undang-undang hak cipta Jerman. Penggandaan, pengubahsuaian, penyebaran dan sebarang bentuk pengeksploitasian di luar had hak cipta memerlukan kebenaran bertulis. Kandungan pihak ketiga - teks dan terjemahan al-Quran, hadis, data peta dan produk, fon serta model AI dan pengecaman pertuturan - didokumenkan bersama pemegang hak dan lesennya di bawah „Sumber & lesen\" dalam tetapan. Jika anda berpendapat sesuatu kandungan dalam Salati melanggar hak, tulis kepada info@menucloud-berlin.de - kami akan menyemaknya dan mengeluarkan kandungan berkenaan dengan segera."
   },
   "datenschutz": {
     "title": "Dasar Privasi",
     "subtitle": "Maklumat menurut Perkara 13 dan 14 GDPR",
     "intro": "Pernyataan ini terpakai bagi aplikasi Salati (Android dan iOS), versi web di salati.pro serta aplikasi Salati TV. Salati memproses data peribadi sesedikit mungkin: tiada akaun pengguna, tiada pendaftaran, tiada iklan, tiada penjejakan dan tiada perisian analitik. Kemajuan pembelajaran, statistik dan tetapan anda kekal pada peranti anda. Namun beberapa fungsi memang memanggil perkhidmatan pihak ketiga - yang mana satu, data apa yang dihantar dan atas dasar undang-undang apa, dijelaskan sepenuhnya di bawah.",
     "controllerSection": "Pihak bertanggungjawab",
-    "controllerText": "Salatibox - pemilik Domenic Moran, Heidelberger Str. 36, 12059 Berlin, Jerman. E-mel: salatibox@gmail.com, telefon: +49 30 767 645 46. Undang-undang tidak mewajibkan pelantikan pegawai perlindungan data.",
+    "controllerText": "Salatibox - pemilik Domenic Moran, Heidelberger Str. 36, 12059 Berlin, Jerman. E-mel: info@menucloud-berlin.de, telefon: +49 30 767 645 46. Undang-undang tidak mewajibkan pelantikan pegawai perlindungan data.",
     "locationSection": "Data lokasi",
     "locationText": "Waktu solat, arah kiblat, carian masjid dan carian tempat halal berdekatan memerlukan lokasi anda. Aplikasi hanya memintanya dengan kebenaran anda dan hanya „semasa menggunakan aplikasi\".\n\nKoordinat anda kemudian dihantar kepada perkhidmatan bebas berikut: api.aladhan.com (Islamic Network) untuk waktu solat dan kalendar bulanan, overpass-api.de untuk carian masjid dan halal, serta tile.openstreetmap.org untuk paparan peta. Jika anda menaip nama bandar secara manual, teks carian anda dihantar ke nominatim.openstreetmap.org.\n\nKami tidak menyimpan koordinat anda pada pelayan kami sendiri. Perkhidmatan yang disebut menerimanya tanpa nama, akaun atau pengenal peranti, tetapi - seperti setiap permintaan internet - bersama alamat IP anda. Anda boleh menarik balik kebenaran lokasi pada bila-bila masa dalam tetapan sistem dan memasukkan nama bandar sebagai ganti. Dasar undang-undang: Perkara 6(1)(a) GDPR (persetujuan melalui pemberian kebenaran lokasi), boleh ditarik balik bila-bila masa.",
     "notificationsSection": "Pemberitahuan",
@@ -1781,7 +1782,7 @@
     "syncSection": "Pemindahan antara peranti",
     "syncText": "Fungsi „pindahkan kemajuan\" menjana kod hanya pada peranti anda. Kod itu anda sendiri yang menyampaikannya, misalnya melalui nota atau mesej kepada diri sendiri - kami tidak pernah menerimanya, melihatnya atau menyimpannya.",
     "rightsSection": "Hak anda",
-    "rightsText": "Menurut GDPR anda mempunyai hak berikut: akses (Perkara 15), pembetulan (Perkara 16), penghapusan (Perkara 17), pengehadan pemprosesan (Perkara 18), kemudahalihan data (Perkara 20) dan bantahan terhadap pemprosesan berasaskan kepentingan sah (Perkara 21). Persetujuan yang diberikan boleh anda tarik balik bila-bila masa untuk masa hadapan (Perkara 7(3)), secara praktikal dengan menarik balik kebenaran berkenaan dalam tetapan sistem.\n\nDalam amalan, permintaan akses dan penghapusan lazimnya tidak membuahkan apa-apa, kerana kami tidak menyimpan apa-apa tentang anda dan tanpa akaun kami tidak dapat mengaitkan apa-apa dengan anda; data pada peranti anda boleh anda lihat dan padam sendiri. Walau begitu kami tetap akan menjawab permintaan anda - tulis kepada salatibox@gmail.com.\n\nTanpa mengira itu, anda berhak membuat aduan kepada pihak berkuasa penyeliaan perlindungan data (Perkara 77). Pihak berkuasa yang berwenang bagi kami ialah Pesuruhjaya Berlin bagi Perlindungan Data dan Kebebasan Maklumat, Alt-Moabit 59-61, 10555 Berlin, Jerman. Anda juga boleh menghubungi pihak berkuasa di tempat kediaman biasa anda.",
+    "rightsText": "Menurut GDPR anda mempunyai hak berikut: akses (Perkara 15), pembetulan (Perkara 16), penghapusan (Perkara 17), pengehadan pemprosesan (Perkara 18), kemudahalihan data (Perkara 20) dan bantahan terhadap pemprosesan berasaskan kepentingan sah (Perkara 21). Persetujuan yang diberikan boleh anda tarik balik bila-bila masa untuk masa hadapan (Perkara 7(3)), secara praktikal dengan menarik balik kebenaran berkenaan dalam tetapan sistem.\n\nDalam amalan, permintaan akses dan penghapusan lazimnya tidak membuahkan apa-apa, kerana kami tidak menyimpan apa-apa tentang anda dan tanpa akaun kami tidak dapat mengaitkan apa-apa dengan anda; data pada peranti anda boleh anda lihat dan padam sendiri. Walau begitu kami tetap akan menjawab permintaan anda - tulis kepada info@menucloud-berlin.de.\n\nTanpa mengira itu, anda berhak membuat aduan kepada pihak berkuasa penyeliaan perlindungan data (Perkara 77). Pihak berkuasa yang berwenang bagi kami ialah Pesuruhjaya Berlin bagi Perlindungan Data dan Kebebasan Maklumat, Alt-Moabit 59-61, 10555 Berlin, Jerman. Anda juga boleh menghubungi pihak berkuasa di tempat kediaman biasa anda.",
     "cookiesSection": "Kuki & storan setempat",
     "cookiesText": "Salati tidak menetapkan kuki penjejakan atau pengiklanan dan tidak menyertakan perisian analitik. Namun aplikasi dan versi web menyimpan data pada peranti anda supaya fungsinya dapat berjalan: tetapan dan data pembelajaran anda, dan dalam versi web juga model AI serta sejarah sembang AI dalam storan pelayar. Penyimpanan ini benar-benar perlu bagi fungsi yang anda minta secara jelas, maka ia tidak memerlukan persetujuan menurut § 25(2) No. 2 TDDDG Jerman. Anda boleh memadamnya melalui tetapan pelayar atau melalui „Storan\" dalam aplikasi.",
     "changesSection": "Perubahan pernyataan ini",
@@ -1825,7 +1826,7 @@
     "aiSection": "Salati AI",
     "aiText": "Fungsi AI menjana jawapannya secara mesin daripada korpus sumber yang disertakan. Ia ditandakan sebagai kandungan janaan AI dan secara jelas bukan fatwa, bukan pandangan ulama dan bukan nasihat undang-undang, cukai, kewangan atau kesihatan. Jawapan janaan mesin boleh tidak lengkap atau salah; ini terutamanya berlaku bagi hasil pengiraan seperti zakat atau bahagian pusaka dan bagi soalan undang-undang yang terperinci. Semak semula maklumat penting dan, jika ragu, rujuk kepada ulama yang berkelayakan. Input anda tidak meninggalkan peranti anda; kami tidak menjamin ketersediaan mahupun ketepatan AI.",
     "sourcesSection": "Sumber & lesen",
-    "sourcesText": "Salati menyertakan kandungan pihak ketiga - antaranya teks dan terjemahan al-Quran, koleksi hadis, data peta dan produk, fon serta model AI dan pengecaman pertuturan. Siapa pemegang hak dan di bawah lesen apa kami menggunakannya disenaraikan sepenuhnya di bawah „Sumber & lesen\" dalam tetapan. Kandungan milik Salati sendiri - teks kursus, penjelasan, bahan, penerbitan podcast dan video - boleh anda muat turun dan gunakan untuk kegunaan peribadi. Jika anda berpendapat sesuatu kandungan dalam Salati melanggar hak, tulis kepada salatibox@gmail.com - kami akan menyemaknya dan mengeluarkan kandungan berkenaan dengan segera."
+    "sourcesText": "Salati menyertakan kandungan pihak ketiga - antaranya teks dan terjemahan al-Quran, koleksi hadis, data peta dan produk, fon serta model AI dan pengecaman pertuturan. Siapa pemegang hak dan di bawah lesen apa kami menggunakannya disenaraikan sepenuhnya di bawah „Sumber & lesen\" dalam tetapan. Kandungan milik Salati sendiri - teks kursus, penjelasan, bahan, penerbitan podcast dan video - boleh anda muat turun dan gunakan untuk kegunaan peribadi. Jika anda berpendapat sesuatu kandungan dalam Salati melanggar hak, tulis kepada info@menucloud-berlin.de - kami akan menyemaknya dan mengeluarkan kandungan berkenaan dengan segera."
   },
   "changelog": {
     "title": "Apa Baharu",
@@ -2665,7 +2666,7 @@
     "ownContentSection": "Kandungan kami sendiri",
     "ownContentText": "Teks kursus, penjelasan, soalan kuiz, bahan serta penerbitan podcast dan video Salati ialah karya kami sendiri. Anda boleh memuat turun dan menggunakannya untuk kegunaan peribadi; penyebaran semula atau penggunaan komersial memerlukan kebenaran kami.",
     "noticeSection": "Notis mengenai hak",
-    "noticeText": "Kami berusaha menyebut setiap sumber dengan betul. Jika ada penyebutan yang tertinggal, keterangan lesen yang salah atau kandungan dalam Salati yang melanggar hak anda, sila tulis kepada salatibox@gmail.com - kami akan membetulkan keterangan itu atau mengeluarkan kandungan tersebut dengan segera."
+    "noticeText": "Kami berusaha menyebut setiap sumber dengan betul. Jika ada penyebutan yang tertinggal, keterangan lesen yang salah atau kandungan dalam Salati yang melanggar hak anda, sila tulis kepada info@menucloud-berlin.de - kami akan membetulkan keterangan itu atau mengeluarkan kandungan tersebut dengan segera."
   },
   "mosqueMatch": {
     "title": "Padankan dengan masjid saya",
@@ -2725,6 +2726,57 @@
       "diyanet": "Diyanet — penjelasan margin masa (temkin)",
       "moonsighting": "Moonsighting Committee — penerangan kaedahnya",
       "highLat": "Majlis Fatwa dan Penyelidikan Eropah — latitud tinggi"
+    }
+  },
+  "challenges": {
+    "title": "Cabaran",
+    "subtitle": "Sasaran kecil dalam enam bidang. Apa yang aplikasi sudah jejaki, dikiranya sendiri.",
+    "alle": "Semua",
+    "stufe": "Tahap {n}",
+    "selbstGezaehlt": "catat sendiri",
+    "frisch": "Baharu",
+    "erreichtLabel": "tercapai",
+    "eintragen": "Catat",
+    "leer": "Tiada apa-apa yang terbuka dalam bidang ini buat masa ini.",
+    "mehrLabel": "Tambah satu catatan: {ziel}",
+    "wenigerLabel": "Buang satu catatan: {ziel}",
+    "kategorien": {
+      "gebet": "Solat",
+      "quran": "Al-Quran",
+      "fasten": "Puasa",
+      "dhikr": "Zikir",
+      "wissen": "Ilmu",
+      "charakter": "Akhlak"
+    },
+    "vorlagen": {
+      "gebet-vollstaendig": "Lima solat selama {n} hari",
+      "gebet-serie": "Lima solat {n} hari berturut-turut",
+      "gebet-fajr": "Solat Subuh selama {n} hari",
+      "gebet-isha": "Solat Isyak selama {n} hari",
+      "gebet-moschee": "Solat di masjid {n} kali",
+      "gebet-jumuah": "Solat Jumaat {n} kali",
+      "gebet-sunnah": "Solat sunat {n} kali",
+      "quran-lesetage": "Membaca Al-Quran selama {n} hari",
+      "quran-suren": "{n} surah dibaca",
+      "quran-auswendig": "{n} ayat dihafal",
+      "quran-kahf": "Membaca Surah al-Kahf pada hari Jumaat {n} kali",
+      "quran-nacht": "Membaca Al-Quran pada waktu malam {n} kali",
+      "fasten-tage": "Berpuasa {n} hari",
+      "fasten-serie": "Berpuasa {n} hari berturut-turut",
+      "fasten-montag-donnerstag": "Puasa Isnin atau Khamis {n} kali",
+      "fasten-weisse-tage": "Puasa ayyamul bidh {n} kali",
+      "dhikr-tage": "Berzikir selama {n} hari",
+      "dhikr-gesamt": "{n} zikir kesemuanya",
+      "dhikr-nach-gebet": "Zikir selepas solat {n} kali",
+      "dhikr-istighfar": "Memulakan {n} hari dengan istighfar",
+      "dhikr-dua-auswendig": "{n} doa dihafal",
+      "wissen-lerntage": "Belajar selama {n} hari",
+      "wissen-lektionen": "{n} pelajaran diselesaikan",
+      "wissen-quiz": "{n} pusingan latihan diselesaikan",
+      "wissen-hadith": "{n} hadis dibaca",
+      "charakter-sadaqa": "Bersedekah {n} kali",
+      "charakter-eltern": "Menelefon atau melawat ibu bapa {n} kali",
+      "charakter-helfen": "Menolong seseorang {n} kali"
     }
   }
 }

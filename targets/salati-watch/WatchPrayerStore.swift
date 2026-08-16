@@ -115,6 +115,39 @@ final class WatchPrayerStore: NSObject, ObservableObject, WCSessionDelegate {
     override init() {
         super.init()
         loadFromAppGroup()
+        ladeNutzlastAusArgumenten()
+    }
+
+    /// Nutzlast aus dem Startargument `--nutzlast=<json>`.
+    ///
+    /// NUR fuer die automatische Pruefung im Simulator
+    /// (.github/workflows/watch-check.yml). Ohne gekoppeltes iPhone gibt es
+    /// keinen Weg, echte Zeiten auf die Uhr zu bekommen, und die drei Seiten
+    /// waeren nie mit Inhalt zu sehen — die App lag seit 1.33 im Repo, ohne
+    /// dass ihre Oberflaeche je auf einem Bildschirm stand.
+    ///
+    /// Der Umweg ueber die App-Group des Simulators ist dreimal gescheitert
+    /// (Laeufe 31933148169, 31934004643, 31935481831): cfprefsd haelt die Suite
+    /// im Speicher, sieht eine daneben geschriebene Datei nicht und schreibt
+    /// beim Herunterfahren seinen leeren Stand darueber. Das Startargument
+    /// umgeht diesen Apparat vollstaendig.
+    ///
+    /// Im Alltag setzt das niemand: watchOS reicht Startargumente nur durch,
+    /// wenn ein Werkzeug die App damit startet. Der Pfad aendert nichts am
+    /// gespeicherten Stand und schreibt nichts in die App-Group.
+    ///
+    /// WAS DAS BELEGT UND WAS NICHT: es belegt, dass die drei Seiten mit
+    /// echten Zeiten richtig aussehen. Es belegt NICHT die Uebertragung vom
+    /// iPhone (WatchConnectivity) — die braucht ein echtes Geraetepaar.
+    private func ladeNutzlastAusArgumenten() {
+        let praefix = "--nutzlast="
+        guard let argument = ProcessInfo.processInfo.arguments.first(where: { $0.hasPrefix(praefix) }) else { return }
+        let json = String(argument.dropFirst(praefix.count))
+        guard let data = json.data(using: .utf8),
+              let decoded = try? JSONDecoder().decode(WatchPayload.self, from: data)
+        else { return }
+        payload = decoded
+        syncedAt = Date()
     }
 
     // MARK: Aktivierung

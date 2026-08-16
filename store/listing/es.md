@@ -66,7 +66,7 @@ PODCAST, VÍDEOS Y REELS
 TUS DATOS SON TUYOS
 Sin anuncios, sin cuenta y sin SDK de rastreo: tus datos se quedan en tu dispositivo. Tu ubicación solo se usa para horarios, Qibla y búsqueda cercana y se envía a AlAdhan y OpenStreetMap: anónima y opcional. Funciona sin conexión.
 
-¿Preguntas o comentarios? salatibox@gmail.com
+¿Preguntas o comentarios? info@menucloud-berlin.de
 Privacidad: https://www.salati.pro/datenschutz
 
 (3985/4000 Zeichen)

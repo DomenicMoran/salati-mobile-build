@@ -123,7 +123,7 @@ und jedes `\r` zählt mit. Ergebnis für de: 4013 Zeichen, davon werden 13 abges
 und zwar genau am Ende:
 
 ```
-… salatibox@gmail.com
+… info@menucloud-berlin.de
 Datenschutz: https://www.salati.p      ← hier endet der hochgeladene Text
 ```
 
@@ -187,8 +187,8 @@ selbst geprüft).
 
 ### 3.5 Play-Kontaktadresse (GELB)
 
-Play-API `edits/details` liefert `contactEmail: salatibox@gmail.com`.
-Impressum, App-Texte und die Listing-Dateien nennen inzwischen `salatibox@gmail.com`.
+Play-API `edits/details` liefert `contactEmail: info@menucloud-berlin.de`.
+Impressum, App-Texte und die Listing-Dateien nennen inzwischen `info@menucloud-berlin.de`.
 Angleichen (Klickpfad in 4.3).
 
 ### 3.6 iOS-Store-Texte sind zwei Feature-Generationen alt (GELB)
@@ -271,7 +271,7 @@ Play unterscheidet Berechtigung und Datenerhebung; die Aufnahme verlässt das Ge
 |---|---|
 | App-Inhalte → **Inhaltseinstufung** (IARC) | Frage nach **nutzergenerierten Inhalten** → **Nein**. Die KI-Antworten sind nicht teilbar; es gibt kein Konto, keinen Feed, keine Kommentare, keinen Chat zwischen Nutzern |
 | App-Inhalte → **Werbung** | „Enthält keine Werbung" — belegt durch 4.0 |
-| Store-Präsenz → Store-Eintrag → **Kontaktdaten** | E-Mail von `salatibox@gmail.com` auf **`salatibox@gmail.com`** ändern (3.5) |
+| Store-Präsenz → Store-Eintrag → **Kontaktdaten** | E-Mail von `info@menucloud-berlin.de` auf **`info@menucloud-berlin.de`** ändern (3.5) |
 
 ### 4.4 App Store Connect — App-Datenschutz (App 6791867298 „Salati Islam")
 
