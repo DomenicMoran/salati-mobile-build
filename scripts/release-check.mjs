@@ -25,8 +25,8 @@ const PLAY_PACKAGE = 'de.salatibox.de';
 const PLAY_SA_PATH = 'C:/Users/domen/Documents/menucloud-mobile-build/play-service-account.json';
 
 const ASC_APP_ID = '6791867298';
-const ASC_KEY_ID = 'H73GL4Q2AQ';
-const ASC_ISSUER = 'de348707-2ec6-4079-b3a4-74c17c31ba0c';
+const ASC_KEY_ID = process.env.ASC_KEY_ID || 'H73GL4Q2AQ';
+const ASC_ISSUER = process.env.ASC_ISSUER_ID || 'de348707-2ec6-4079-b3a4-74c17c31ba0c';
 const ASC_KEY_PATH = 'C:/Users/domen/Documents/MenuCloud/AuthKey_H73GL4Q2AQ_Apple.p8';
 
 const R2_BASE = 'https://pub-d0489c0572704285af79896edb72cbed.r2.dev';
