@@ -78,7 +78,15 @@ jobs:
           #  not returning a SWIFT_SHARED_REFERENCE type", Lauf 32864278770 am
           # 2026-08-25). Bis Expo das nachzieht, das neueste Xcode 26 UNTER
           # 26.3 nehmen; gibt es keins, lieber das neueste als gar keins.
-          XCODE=$(ls -d /Applications/Xcode_26*.app 2>/dev/null | grep -v 'Xcode_26\.3' | sort -V | tail -1)
+          # Nachtrag 2026-08-25: mit Xcode 26.2 kommt DERSELBE Fehler wie mit
+          # 26.3 - die Verschaerfung steckt also schon in 26.2. Deshalb das
+          # neueste Xcode 26 aus der Liste der bekannt vertraeglichen Staende
+          # (26.0/26.1); erst wenn Expo expo-modules-jsi nachzieht, darf das
+          # hier wieder auf "das neueste" gehen.
+          XCODE=""
+          for v in 26.1 26.0; do
+            [ -d "/Applications/Xcode_$v.app" ] && XCODE="/Applications/Xcode_$v.app" && break
+          done
           test -n "$XCODE" || XCODE=$(ls -d /Applications/Xcode_26*.app 2>/dev/null | sort -V | tail -1)
           test -n "$XCODE" || { echo "FEHLER: kein Xcode 26 auf dem Runner"; exit 1; }
           sudo xcode-select -s "$XCODE"
