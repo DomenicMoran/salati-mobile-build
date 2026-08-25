@@ -71,7 +71,15 @@ jobs:
           # daneben bereitstanden.
           echo "--- vorhandene Xcode-Versionen ---"
           ls -d /Applications/Xcode*.app 2>/dev/null || true
-          XCODE=$(ls -d /Applications/Xcode_26*.app 2>/dev/null | sort -V | tail -1)
+          # NICHT einfach das neueste: Xcode 26.3 verschaerft die Swift-C++-
+          # Pruefung und weist expo-modules-jsi ab
+          # ("'RuntimeScheduler' cannot be annotated with either
+          #  SWIFT_RETURNS_RETAINED or SWIFT_RETURNS_UNRETAINED because it is
+          #  not returning a SWIFT_SHARED_REFERENCE type", Lauf 32864278770 am
+          # 2026-08-25). Bis Expo das nachzieht, das neueste Xcode 26 UNTER
+          # 26.3 nehmen; gibt es keins, lieber das neueste als gar keins.
+          XCODE=$(ls -d /Applications/Xcode_26*.app 2>/dev/null | grep -v 'Xcode_26\.3' | sort -V | tail -1)
+          test -n "$XCODE" || XCODE=$(ls -d /Applications/Xcode_26*.app 2>/dev/null | sort -V | tail -1)
           test -n "$XCODE" || { echo "FEHLER: kein Xcode 26 auf dem Runner"; exit 1; }
           sudo xcode-select -s "$XCODE"
           xcodebuild -version
