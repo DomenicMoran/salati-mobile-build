@@ -98,7 +98,11 @@ overrides:
 patchedDependencies:
   '@bacons/apple-targets@5.0.0': patches/@bacons__apple-targets@5.0.0.patch
   expo-dynamic-app-icon@1.2.0: patches/expo-dynamic-app-icon@1.2.0.patch
-  expo-modules-jsi@57.0.3: patches/expo-modules-jsi@57.0.3.patch
+  # OHNE Versionsnummer: das Build-Repo loest die Abhaengigkeit frisch
+  # auf und landete dabei nicht auf 57.0.3 - pnpm brach dann mit
+  # ERR_PNPM_UNUSED_PATCH ab. Der Name allein gilt fuer jede Fassung;
+  # passt der Inhalt einmal nicht mehr, schlaegt der Patch LAUT fehl.
+  expo-modules-jsi: patches/expo-modules-jsi@57.0.3.patch
   whisper.rn@0.7.0: patches/whisper.rn@0.7.0.patch
 YAML
 # unrs-resolver-Patch bewusst NICHT aufgeführt: das Paket ist nur ein
