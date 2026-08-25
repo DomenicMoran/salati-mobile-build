@@ -71,23 +71,18 @@ jobs:
           # daneben bereitstanden.
           echo "--- vorhandene Xcode-Versionen ---"
           ls -d /Applications/Xcode*.app 2>/dev/null || true
-          # NICHT einfach das neueste: Xcode 26.3 verschaerft die Swift-C++-
-          # Pruefung und weist expo-modules-jsi ab
-          # ("'RuntimeScheduler' cannot be annotated with either
-          #  SWIFT_RETURNS_RETAINED or SWIFT_RETURNS_UNRETAINED because it is
-          #  not returning a SWIFT_SHARED_REFERENCE type", Lauf 32864278770 am
-          # 2026-08-25). Bis Expo das nachzieht, das neueste Xcode 26 UNTER
-          # 26.3 nehmen; gibt es keins, lieber das neueste als gar keins.
-          # Nachtrag 2026-08-25: mit Xcode 26.2 kommt DERSELBE Fehler wie mit
-          # 26.3 - die Verschaerfung steckt also schon in 26.2. Deshalb das
-          # neueste Xcode 26 aus der Liste der bekannt vertraeglichen Staende
-          # (26.0/26.1); erst wenn Expo expo-modules-jsi nachzieht, darf das
-          # hier wieder auf "das neueste" gehen.
-          XCODE=""
-          for v in 26.1 26.0; do
-            [ -d "/Applications/Xcode_$v.app" ] && XCODE="/Applications/Xcode_$v.app" && break
-          done
-          test -n "$XCODE" || XCODE=$(ls -d /Applications/Xcode_26*.app 2>/dev/null | sort -V | tail -1)
+          # BEFUND 2026-08-25: der Bau bricht NICHT an der Xcode-Version ab.
+          # Mit 26.3, 26.2 und 26.1.1 kommt derselbe Fehler aus
+          # expo-modules-jsi:
+          #   'RuntimeScheduler' cannot be annotated with either
+          #   SWIFT_RETURNS_RETAINED or SWIFT_RETURNS_UNRETAINED because it is
+          #   not returning a SWIFT_SHARED_REFERENCE type
+          # (Laeufe 32864278770 / 32865516245 / 32866811146). Drei Versionen
+          # durchprobiert - es liegt an der Abhaengigkeit, nicht am Compiler.
+          # Wer hier wieder an der Xcode-Wahl dreht, verbrennt nur Laufzeit:
+          # der naechste Schritt ist ein pnpm-Patch fuer expo-modules-jsi
+          # (patchedDependencies in pnpm-workspace.yaml) oder ein Expo-Update.
+          XCODE=$(ls -d /Applications/Xcode_26*.app 2>/dev/null | sort -V | tail -1)
           test -n "$XCODE" || { echo "FEHLER: kein Xcode 26 auf dem Runner"; exit 1; }
           sudo xcode-select -s "$XCODE"
           xcodebuild -version

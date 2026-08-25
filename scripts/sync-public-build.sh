@@ -98,6 +98,7 @@ overrides:
 patchedDependencies:
   '@bacons/apple-targets@5.0.0': patches/@bacons__apple-targets@5.0.0.patch
   expo-dynamic-app-icon@1.2.0: patches/expo-dynamic-app-icon@1.2.0.patch
+  expo-modules-jsi@57.0.3: patches/expo-modules-jsi@57.0.3.patch
   whisper.rn@0.7.0: patches/whisper.rn@0.7.0.patch
 YAML
 # unrs-resolver-Patch bewusst NICHT aufgeführt: das Paket ist nur ein
