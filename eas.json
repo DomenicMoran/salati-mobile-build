@@ -22,18 +22,25 @@
         "credentialsSource": "local",
         "buildType": "apk"
       }
+    },
+    "production-play": {
+      "channel": "production",
+      "android": {
+        "credentialsSource": "local",
+        "buildType": "app-bundle"
+      }
     }
   },
   "submit": {
     "production": {
       "android": {
-        "serviceAccountKeyPath": "C:/Users/domen/Documents/menucloud-mobile-build/play-service-account.json",
+        "serviceAccountKeyPath": "C:/Users/domen/Documents/90_Werkstatt/menucloud-mobile-build/play-service-account.json",
         "track": "production"
       },
       "ios": {
         "ascAppId": "6791867298",
         "appleTeamId": "ZKG548NGDR",
-        "ascApiKeyPath": "C:/Users/domen/Documents/MenuCloud/AuthKey_H73GL4Q2AQ_Apple.p8",
+        "ascApiKeyPath": "C:/Users/domen/Documents/90_Werkstatt/schluessel/AuthKey_H73GL4Q2AQ_Apple.p8",
         "ascApiKeyId": "H73GL4Q2AQ",
         "ascApiKeyIssuerId": "de348707-2ec6-4079-b3a4-74c17c31ba0c"
       }

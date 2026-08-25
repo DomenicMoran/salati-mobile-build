@@ -18,7 +18,7 @@ if (!PACKAGE || !TRACK || !NOTES_PATH) {
   console.error('Usage: play-release-notes.mjs <package> <track> <notes.json> [--dry]');
   process.exit(1);
 }
-const SA_PATH = 'C:/Users/domen/Documents/menucloud-mobile-build/play-service-account.json';
+const SA_PATH = 'C:/Users/domen/Documents/90_Werkstatt/menucloud-mobile-build/play-service-account.json';
 
 const notesMap = JSON.parse(fs.readFileSync(NOTES_PATH, 'utf8'));
 for (const [lang, text] of Object.entries(notesMap)) {

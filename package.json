@@ -99,7 +99,7 @@
     "ota:preview": "eas update --channel preview",
     "screenshots:serve": "serve dist -l 8085",
     "screenshots": "node scripts/store-screenshots-all.mjs",
-    "eas-build-post-install": "bash scripts/fix-whisper-rn-ios-sdk.sh"
+    "eas-build-post-install": "bash scripts/fix-whisper-rn-ios-sdk.sh && bash scripts/expo-swift62-fix.sh"
   },
   "private": true
 }

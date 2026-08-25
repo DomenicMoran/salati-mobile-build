@@ -36,9 +36,30 @@ export interface VideoEpisode {
    *  Oberflaeche; s. features/media/content-language.ts. OPTIONAL, Vorgabe
    *  Deutsch. */
   lang?: string;
-  /** Art des Eintrags: 'lesson' (Lernvideo) oder 'table' (Grammatik-Tabelle /
-   *  Vokabel-Video). Nur fuer Iconografie; fehlt es, gilt 'lesson'. */
-  kind?: 'lesson' | 'table';
+  /** Art des Eintrags: 'lesson' (Lernvideo), 'table' (Grammatik-Tabelle /
+   *  Vokabel-Video) oder 'course' (Lektion der eigenen Kursreihe). Nur fuer
+   *  Iconografie; fehlt es, gilt 'lesson'. */
+  kind?: 'lesson' | 'table' | 'course';
+
+  // --- Kurs -> Kapitel -> Lektion (seit 2026-08-25) ----------------------
+  // Vorher war die Medienliste EINE lange Liste mit Reihen-Kopfzeilen. Wer
+  // wissen wollte, wo er steht, musste scrollen. Diese vier Felder tragen die
+  // Ordnung des Lernwegs; gepflegt in podcast/scripts/kursordnung.py.
+  //
+  // Alle OPTIONAL: ein Index ohne sie zeigt weiterhin die flache Liste, und
+  // eine aeltere App-Version kommt mit dem neuen Index zurecht.
+  /** Kurs-Kennung, z. B. "lesen", "sprache", "tajwid". */
+  course?: string;
+  /** Anzeigename des Kurses, z. B. "Kurs 1 - Arabisch lesen". */
+  course_title?: string;
+  /** Position des Kurses im Lernweg (1 = Einstieg). */
+  course_order?: number;
+  /** Kapitelnummer innerhalb des Kurses. */
+  chapter_no?: number;
+  /** Kapitelname, z. B. "Die Vokalzeichen". */
+  chapter_title?: string;
+  /** Position der Lektion innerhalb des Kapitels. */
+  lesson_no?: number;
 }
 
 export interface VideoIndex {

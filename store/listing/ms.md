@@ -66,7 +66,7 @@ PODCAST, VIDEO & REELS
 DATA ANDA KEKAL MILIK ANDA
 Tanpa iklan, tanpa akaun, tanpa SDK penjejakan: data anda kekal pada peranti anda. Lokasi anda hanya untuk waktu solat, Kiblat dan carian berdekatan, lalu dihantar kepada AlAdhan dan OpenStreetMap: tanpa nama dan atas pilihan anda. Berfungsi luar talian.
 
-Soalan atau maklum balas? info@menucloud-berlin.de
+Soalan atau maklum balas? salati@domenicmoran.de
 Dasar privasi: https://www.salati.pro/datenschutz
 
 (3948/4000 Zeichen)

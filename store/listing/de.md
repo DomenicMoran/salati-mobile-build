@@ -68,7 +68,7 @@ PODCAST, VIDEOS & REELS
 DEINE DATEN GEHÖREN DIR
 Salati ist werbefrei, ohne Konto und ohne Tracking-SDKs — deine Daten bleiben auf deinem Gerät. Dein Standort dient nur Gebetszeiten, Qibla und Umgebungssuche und wird dafür an AlAdhan und OpenStreetMap übermittelt: anonym, nicht mit dir verknüpft, jederzeit ablehnbar. Die Kerninhalte funktionieren offline.
 
-Fragen oder Feedback? info@menucloud-berlin.de
+Fragen oder Feedback? salati@domenicmoran.de
 Datenschutz: https://www.salati.pro/datenschutz
 
 (3995/4000 Zeichen)

@@ -1765,14 +1765,14 @@
     "liabilityLinksTitle": "Dhima ya Vyanzo vya Data vya Nje",
     "liabilityLinksText": "Programu hii hupakia data ya Qur'an, hadithi, ramani na bidhaa kutoka vyanzo vya nje vya umma. Ni vipi hasa imeelezwa kikamilifu katika taarifa ya faragha na chini ya „Vyanzo na leseni\" katika mipangilio. Usahihi wa maudhui hayo ya nje ni jukumu la watoa huduma husika; tunayakagua kadri ya ujuzi wetu, lakini hatuwezi kuyafuatilia kila mabadiliko bila kukoma.",
     "copyrightTitle": "Hakimiliki",
-    "copyrightText": "Maudhui yaliyoundwa na waendeshaji wa programu yako chini ya sheria ya hakimiliki ya Ujerumani. Kunakili, kubadilisha, kusambaza na aina yoyote ya matumizi nje ya mipaka ya hakimiliki kunahitaji idhini ya maandishi. Maudhui ya wahusika wengine - matini na tafsiri za Qur'an, hadithi, data ya ramani na bidhaa, fonti pamoja na modeli za AI na utambuzi wa sauti - yameorodheshwa pamoja na mmiliki wa haki na leseni chini ya „Vyanzo na leseni\" katika mipangilio. Ukiona maudhui yoyote katika Salati yanakiuka haki, tuandikie info@menucloud-berlin.de - tutayakagua na kuondoa maudhui husika mara moja."
+    "copyrightText": "Maudhui yaliyoundwa na waendeshaji wa programu yako chini ya sheria ya hakimiliki ya Ujerumani. Kunakili, kubadilisha, kusambaza na aina yoyote ya matumizi nje ya mipaka ya hakimiliki kunahitaji idhini ya maandishi. Maudhui ya wahusika wengine - matini na tafsiri za Qur'an, hadithi, data ya ramani na bidhaa, fonti pamoja na modeli za AI na utambuzi wa sauti - yameorodheshwa pamoja na mmiliki wa haki na leseni chini ya „Vyanzo na leseni\" katika mipangilio. Ukiona maudhui yoyote katika Salati yanakiuka haki, tuandikie salati@domenicmoran.de - tutayakagua na kuondoa maudhui husika mara moja."
   },
   "datenschutz": {
     "title": "Sera ya Faragha",
     "subtitle": "Taarifa kwa mujibu wa Ibara ya 13 na 14 ya GDPR",
     "intro": "Taarifa hii inahusu programu ya Salati (Android na iOS), toleo la wavuti kwenye salati.pro na programu ya Salati TV. Salati huchakata data binafsi kwa kiwango kidogo iwezekanavyo: hakuna akaunti ya mtumiaji, hakuna usajili, hakuna matangazo, hakuna ufuatiliaji na hakuna programu ya uchambuzi. Maendeleo yako ya kujifunza, takwimu na mipangilio hubaki kwenye kifaa chako pekee. Hata hivyo baadhi ya vipengele huitisha huduma za wahusika wengine - ni zipi, data gani hutumwa na kwa msingi gani wa kisheria, imeelezwa kikamilifu hapa chini.",
     "controllerSection": "Mdhibiti wa data",
-    "controllerText": "Salatibox - mmiliki Domenic Moran, Heidelberger Str. 36, 12059 Berlin, Ujerumani. Barua pepe: info@menucloud-berlin.de, simu: +49 30 767 645 46. Sheria haihitaji kuteua afisa wa ulinzi wa data.",
+    "controllerText": "Salatibox - mmiliki Domenic Moran, Heidelberger Str. 36, 12059 Berlin, Ujerumani. Barua pepe: salati@domenicmoran.de, simu: +49 30 767 645 46. Sheria haihitaji kuteua afisa wa ulinzi wa data.",
     "locationSection": "Data ya eneo",
     "locationText": "Nyakati za sala, mwelekeo wa Kibla, utafutaji wa misikiti na utafutaji wa maeneo halali karibu unahitaji eneo lako. Programu huliomba tu kwa ruhusa yako na tu „wakati wa kutumia programu\".\n\nViwianishi vyako hutumwa kwa huduma huru zifuatazo: api.aladhan.com (Islamic Network) kwa nyakati za sala na kalenda ya mwezi, overpass-api.de kwa utafutaji wa misikiti na maeneo halali, na tile.openstreetmap.org kwa kuonyesha ramani. Ukiandika jina la mji kwa mkono badala yake, maandishi yako ya utafutaji huenda kwa nominatim.openstreetmap.org.\n\nHatuhifadhi viwianishi vyako kwenye seva zetu. Huduma zilizotajwa huvipokea bila jina, akaunti au kitambulisho cha kifaa, lakini - kama ilivyo kwa kila ombi la mtandao - pamoja na anwani yako ya IP. Unaweza kuondoa ruhusa ya eneo wakati wowote katika mipangilio ya mfumo na kuandika jina la mji badala yake. Msingi wa kisheria: Ibara ya 6(1)(a) ya GDPR (idhini iliyotolewa kwa kutoa ruhusa ya eneo), inayoweza kutenguliwa wakati wowote.",
     "notificationsSection": "Arifa",
@@ -1782,7 +1782,7 @@
     "syncSection": "Uhamisho kati ya vifaa",
     "syncText": "Kipengele cha „hamisha maendeleo\" huunda msimbo kwenye kifaa chako pekee. Msimbo huo wewe mwenyewe ndiwe unaupeleka, kwa mfano kwa dokezo au ujumbe kwako mwenyewe - sisi hatuupokei, hatuuoni wala hatuuhifadhi wakati wowote.",
     "rightsSection": "Haki zako",
-    "rightsText": "Kwa mujibu wa GDPR una haki zifuatazo: kupata taarifa (Ibara ya 15), kusahihisha (16), kufuta (17), kuzuia uchakataji (18), uhamishaji wa data (20) na kupinga uchakataji unaotegemea maslahi halali (21). Idhini uliyotoa unaweza kuitengua wakati wowote kwa siku zijazo (Ibara ya 7(3)), kwa vitendo kwa kuondoa ruhusa husika katika mipangilio ya mfumo.\n\nKivitendo maombi ya kupata taarifa na kufuta mara nyingi hayatakuwa na kitu, kwa sababu hatujahifadhi chochote kukuhusu na bila akaunti hatuwezi kukuunganisha na chochote; data iliyo kwenye kifaa chako unaweza kuiona na kuifuta mwenyewe. Hata hivyo tutajibu ombi lako - tuandikie info@menucloud-berlin.de.\n\nBila kujali hayo, una haki ya kuwasilisha malalamiko kwa mamlaka ya usimamizi wa ulinzi wa data (Ibara ya 77). Mamlaka yenye mamlaka kwetu ni Kamishna wa Berlin wa Ulinzi wa Data na Uhuru wa Habari, Alt-Moabit 59-61, 10555 Berlin, Ujerumani. Unaweza pia kuwasiliana na mamlaka ya mahali unapoishi kawaida.",
+    "rightsText": "Kwa mujibu wa GDPR una haki zifuatazo: kupata taarifa (Ibara ya 15), kusahihisha (16), kufuta (17), kuzuia uchakataji (18), uhamishaji wa data (20) na kupinga uchakataji unaotegemea maslahi halali (21). Idhini uliyotoa unaweza kuitengua wakati wowote kwa siku zijazo (Ibara ya 7(3)), kwa vitendo kwa kuondoa ruhusa husika katika mipangilio ya mfumo.\n\nKivitendo maombi ya kupata taarifa na kufuta mara nyingi hayatakuwa na kitu, kwa sababu hatujahifadhi chochote kukuhusu na bila akaunti hatuwezi kukuunganisha na chochote; data iliyo kwenye kifaa chako unaweza kuiona na kuifuta mwenyewe. Hata hivyo tutajibu ombi lako - tuandikie salati@domenicmoran.de.\n\nBila kujali hayo, una haki ya kuwasilisha malalamiko kwa mamlaka ya usimamizi wa ulinzi wa data (Ibara ya 77). Mamlaka yenye mamlaka kwetu ni Kamishna wa Berlin wa Ulinzi wa Data na Uhuru wa Habari, Alt-Moabit 59-61, 10555 Berlin, Ujerumani. Unaweza pia kuwasiliana na mamlaka ya mahali unapoishi kawaida.",
     "cookiesSection": "Vidakuzi na hifadhi ya kienyeji",
     "cookiesText": "Salati haiweki vidakuzi vya ufuatiliaji au matangazo na haiingizi programu yoyote ya uchambuzi. Hata hivyo programu na toleo la wavuti huhifadhi data kwenye kifaa chako ili vipengele viweze kufanya kazi kabisa: mipangilio yako na data ya kujifunza, na katika toleo la wavuti pia modeli ya AI na historia yako ya mazungumzo ya AI katika hifadhi ya kivinjari. Uhifadhi huu ni wa lazima kabisa kwa vipengele ulivyoomba wazi na hivyo hauhitaji idhini kwa mujibu wa § 25(2) Na. 2 ya TDDDG ya Ujerumani. Unaweza kuufuta kupitia mipangilio ya kivinjari au kupitia „Hifadhi\" katika programu.",
     "changesSection": "Mabadiliko ya taarifa hii",
@@ -1826,7 +1826,7 @@
     "aiSection": "Salati AI",
     "aiText": "Kipengele cha AI huzalisha majibu yake kimashine kutoka mkusanyiko wa vyanzo unaokuja na programu. Kimewekewa alama kama maudhui yaliyozalishwa na AI na kwa uwazi si fatwa, si maoni ya wanazuoni na si ushauri wa kisheria, kodi, kifedha au kiafya. Majibu ya kimashine yanaweza kuwa pungufu au yenye makosa; hii inahusu hasa matokeo ya hesabu kama zaka au mgao wa mirathi na maswali ya kisheria ya kina. Hakiki taarifa muhimu na, ukiwa na shaka, muulize mwanazuoni mwenye sifa. Unachoandika hakitoki kwenye kifaa chako; hatutoi dhamana ya upatikanaji wala usahihi wa AI.",
     "sourcesSection": "Vyanzo na leseni",
-    "sourcesText": "Salati hujumuisha maudhui ya wahusika wengine - miongoni mwao matini na tafsiri za Qur'an, makusanyo ya hadithi, data ya ramani na bidhaa, fonti pamoja na modeli za AI na utambuzi wa sauti. Nani mwenye haki na kwa leseni gani tunatumia maudhui hayo kumeorodheshwa kikamilifu chini ya „Vyanzo na leseni\" katika mipangilio. Maudhui ya Salati yenyewe - matini za kozi, maelezo, vipeperushi, podikasti na video - unaweza kuyapakua na kuyatumia kwa matumizi binafsi. Ukiona maudhui yoyote katika Salati yanakiuka haki, tuandikie info@menucloud-berlin.de - tutayakagua na kuondoa maudhui husika mara moja."
+    "sourcesText": "Salati hujumuisha maudhui ya wahusika wengine - miongoni mwao matini na tafsiri za Qur'an, makusanyo ya hadithi, data ya ramani na bidhaa, fonti pamoja na modeli za AI na utambuzi wa sauti. Nani mwenye haki na kwa leseni gani tunatumia maudhui hayo kumeorodheshwa kikamilifu chini ya „Vyanzo na leseni\" katika mipangilio. Maudhui ya Salati yenyewe - matini za kozi, maelezo, vipeperushi, podikasti na video - unaweza kuyapakua na kuyatumia kwa matumizi binafsi. Ukiona maudhui yoyote katika Salati yanakiuka haki, tuandikie salati@domenicmoran.de - tutayakagua na kuondoa maudhui husika mara moja."
   },
   "changelog": {
     "title": "Mapya",
@@ -2603,7 +2603,15 @@
     "pip": "Picha ndani ya picha",
     "settings": "Mipangilio",
     "speed": "Kasi",
-    "renamePlaylist": "Badilisha jina"
+    "renamePlaylist": "Badilisha jina",
+    "coursesTitle": "Kozi",
+    "coursesSubtitle": "Chagua kozi yako na ujifunze sura kwa sura",
+    "chapterCount": "Sura {n}",
+    "lessonCount": "Masomo {n}",
+    "watchedOf": "{done} kati ya {total} zimetazamwa",
+    "chapterLabel": "Sura {n}",
+    "continueCourse": "Endelea kujifunza",
+    "allEpisodes": "Onyesha video zote"
   },
   "media": {
     "title": "Media",
@@ -2666,7 +2674,7 @@
     "ownContentSection": "Maudhui yetu wenyewe",
     "ownContentText": "Matini za kozi, maelezo, maswali ya jaribio, vipeperushi pamoja na podikasti na video za Salati ni kazi zetu wenyewe. Unaweza kuzipakua na kuzitumia kwa matumizi binafsi; kusambaza upya au matumizi ya kibiashara kunahitaji idhini yetu.",
     "noticeSection": "Ilani kuhusu haki",
-    "noticeText": "Tunajitahidi kutaja kila chanzo kwa usahihi. Ikiwa taja limekosekana, taarifa ya leseni si sahihi au maudhui katika Salati yanakiuka haki zako, tafadhali tuandikie info@menucloud-berlin.de - tutasahihisha taarifa au kuondoa maudhui mara moja."
+    "noticeText": "Tunajitahidi kutaja kila chanzo kwa usahihi. Ikiwa taja limekosekana, taarifa ya leseni si sahihi au maudhui katika Salati yanakiuka haki zako, tafadhali tuandikie salati@domenicmoran.de - tutasahihisha taarifa au kuondoa maudhui mara moja."
   },
   "mosqueMatch": {
     "title": "Linganisha na msikiti wangu",

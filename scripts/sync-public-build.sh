@@ -72,6 +72,14 @@ rm -f public/salati.apk.part00 public/salati.apk.part01
 # Sicherheitsnetz: falls doch mal ein Secret getrackt wäre, hier raus.
 rm -f credentials.json .env .env.* 2>/dev/null || true
 
+# Interne Planungs-/Audit-Dokumente gehoeren NICHT in den oeffentlichen
+# Spiegel (Vorfall 2026-08-24: AGENTS.md, CLAUDE.md, BACKLOG.md und die
+# AUDIT-/PLAN-/PLAY-Dateien standen wochenlang oeffentlich lesbar auf
+# GitHub, weil `git archive` sie unveraendert mitspiegelt). docs/ enthaelt
+# ausschliesslich interne Audits/Notizen, keine Build- oder Store-Inhalte.
+rm -rf docs
+rm -f AGENTS.md CLAUDE.md BACKLOG.md AUDIT-*.md PLAN-*.md PLAY-*.md 2>/dev/null || true
+
 # debug.keystore ist Googles ÖFFENTLICHER Debug-Key (unbedenklich) — bleibt,
 # damit reine Debug-Builds funktionieren; Release signiert via Secret.
 

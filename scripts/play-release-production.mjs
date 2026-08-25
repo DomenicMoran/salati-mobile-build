@@ -13,7 +13,7 @@ const jwt = require('jsonwebtoken');
 const PACKAGE = 'de.salatibox.de';
 const AAB_PATH = process.argv[2];
 const NOTES_DE = process.argv[3] ?? '';
-const SA_PATH = 'C:/Users/domen/Documents/menucloud-mobile-build/play-service-account.json';
+const SA_PATH = 'C:/Users/domen/Documents/90_Werkstatt/menucloud-mobile-build/play-service-account.json';
 
 if (!AAB_PATH) { console.error('Usage: play-release-production.mjs <aab> "<notes>"'); process.exit(1); }
 

@@ -1765,14 +1765,14 @@
     "liabilityLinksTitle": "Tanggung jawab atas sumber data eksternal",
     "liabilityLinksText": "Aplikasi ini memuat data Al-Qur'an, hadis, peta, dan produk dari sumber eksternal yang bersifat publik. Sumber mana saja dijelaskan lengkap dalam pernyataan privasi dan di „Sumber & lisensi\" pada pengaturan. Ketepatan konten pihak ketiga itu menjadi tanggung jawab penyedianya masing-masing; kami memeriksanya sebaik pengetahuan kami, tetapi tidak dapat mengawasinya terus-menerus untuk setiap perubahan.",
     "copyrightTitle": "Hak cipta",
-    "copyrightText": "Konten yang dibuat oleh pengelola aplikasi tunduk pada hukum hak cipta Jerman. Penggandaan, pengubahan, penyebaran, dan segala bentuk pemanfaatan di luar batas hukum hak cipta memerlukan persetujuan tertulis. Konten pihak ketiga - teks dan terjemahan Al-Qur'an, hadis, data peta dan produk, huruf, serta model AI dan pengenalan suara - didokumentasikan lengkap dengan pemegang hak dan lisensinya di „Sumber & lisensi\" pada pengaturan. Jika menurutmu ada konten di Salati yang melanggar hak, tulis ke info@menucloud-berlin.de - kami akan memeriksanya dan segera menghapus konten yang bersangkutan."
+    "copyrightText": "Konten yang dibuat oleh pengelola aplikasi tunduk pada hukum hak cipta Jerman. Penggandaan, pengubahan, penyebaran, dan segala bentuk pemanfaatan di luar batas hukum hak cipta memerlukan persetujuan tertulis. Konten pihak ketiga - teks dan terjemahan Al-Qur'an, hadis, data peta dan produk, huruf, serta model AI dan pengenalan suara - didokumentasikan lengkap dengan pemegang hak dan lisensinya di „Sumber & lisensi\" pada pengaturan. Jika menurutmu ada konten di Salati yang melanggar hak, tulis ke salati@domenicmoran.de - kami akan memeriksanya dan segera menghapus konten yang bersangkutan."
   },
   "datenschutz": {
     "title": "Kebijakan Privasi",
     "subtitle": "Informasi sesuai Pasal 13 dan 14 GDPR",
     "intro": "Pernyataan ini berlaku untuk aplikasi Salati (Android dan iOS), versi web di salati.pro, serta aplikasi Salati TV. Salati memproses data pribadi sesedikit mungkin: tidak ada akun pengguna, tidak ada pendaftaran, tidak ada iklan, tidak ada pelacakan, dan tidak ada perangkat lunak analitik. Kemajuan belajar, statistik, dan pengaturanmu tetap berada di perangkatmu. Namun beberapa fitur memang memanggil layanan pihak ketiga - layanan mana saja, data apa yang dikirim, dan atas dasar hukum apa, dijelaskan lengkap di bawah ini.",
     "controllerSection": "Penanggung jawab",
-    "controllerText": "Salatibox - pemilik Domenic Moran, Heidelberger Str. 36, 12059 Berlin, Jerman. Email: info@menucloud-berlin.de, telepon: +49 30 767 645 46. Undang-undang tidak mewajibkan penunjukan petugas perlindungan data.",
+    "controllerText": "Salatibox - pemilik Domenic Moran, Heidelberger Str. 36, 12059 Berlin, Jerman. Email: salati@domenicmoran.de, telepon: +49 30 767 645 46. Undang-undang tidak mewajibkan penunjukan petugas perlindungan data.",
     "locationSection": "Data lokasi",
     "locationText": "Waktu salat, arah kiblat, pencarian masjid, dan pencarian tempat halal terdekat membutuhkan lokasimu. Aplikasi hanya memintanya dengan izinmu dan hanya „saat menggunakan aplikasi\".\n\nKoordinatmu lalu dikirim ke layanan independen berikut: api.aladhan.com (Islamic Network) untuk waktu salat dan kalender bulanan, overpass-api.de untuk pencarian masjid dan tempat halal, serta tile.openstreetmap.org untuk tampilan peta. Jika kamu mengetik nama kota secara manual, teks pencarianmu dikirim ke nominatim.openstreetmap.org.\n\nKami tidak menyimpan koordinatmu di server kami sendiri. Layanan yang disebutkan menerimanya tanpa nama, akun, atau pengenal perangkat, tetapi - seperti pada setiap permintaan internet - bersama alamat IP-mu. Kamu dapat mencabut izin lokasi kapan saja di pengaturan sistem dan memasukkan nama kota sebagai gantinya. Dasar hukum: Pasal 6(1)(a) GDPR (persetujuan melalui pemberian izin lokasi), dapat ditarik kapan saja.",
     "notificationsSection": "Notifikasi",
@@ -1782,7 +1782,7 @@
     "syncSection": "Pemindahan antarperangkat",
     "syncText": "Fitur „pindahkan kemajuan\" membuat kode hanya di perangkatmu. Kode itu kamu sendiri yang meneruskannya, misalnya lewat catatan atau pesan untuk dirimu sendiri - kami tidak pernah menerima, melihat, atau menyimpannya.",
     "rightsSection": "Hak-hakmu",
-    "rightsText": "Menurut GDPR kamu memiliki hak-hak berikut: akses (Pasal 15), pembetulan (Pasal 16), penghapusan (Pasal 17), pembatasan pemrosesan (Pasal 18), portabilitas data (Pasal 20), dan keberatan atas pemrosesan berdasarkan kepentingan sah (Pasal 21). Persetujuan yang telah diberikan dapat kamu tarik kapan saja untuk masa mendatang (Pasal 7(3)), dalam praktiknya dengan mencabut izin terkait di pengaturan sistem.\n\nDalam praktik, permintaan akses dan penghapusan umumnya tidak berdampak, karena kami tidak menyimpan apa pun tentangmu dan tanpa akun kami tidak dapat menghubungkan apa pun denganmu; data di perangkatmu dapat kamu lihat dan hapus sendiri. Meski begitu kami tetap akan menjawab permintaanmu - tulis ke info@menucloud-berlin.de.\n\nTerlepas dari itu, kamu berhak mengajukan pengaduan kepada otoritas pengawas perlindungan data (Pasal 77). Otoritas yang berwenang bagi kami adalah Komisaris Berlin untuk Perlindungan Data dan Kebebasan Informasi, Alt-Moabit 59-61, 10555 Berlin, Jerman. Kamu juga dapat menghubungi otoritas di tempat tinggalmu.",
+    "rightsText": "Menurut GDPR kamu memiliki hak-hak berikut: akses (Pasal 15), pembetulan (Pasal 16), penghapusan (Pasal 17), pembatasan pemrosesan (Pasal 18), portabilitas data (Pasal 20), dan keberatan atas pemrosesan berdasarkan kepentingan sah (Pasal 21). Persetujuan yang telah diberikan dapat kamu tarik kapan saja untuk masa mendatang (Pasal 7(3)), dalam praktiknya dengan mencabut izin terkait di pengaturan sistem.\n\nDalam praktik, permintaan akses dan penghapusan umumnya tidak berdampak, karena kami tidak menyimpan apa pun tentangmu dan tanpa akun kami tidak dapat menghubungkan apa pun denganmu; data di perangkatmu dapat kamu lihat dan hapus sendiri. Meski begitu kami tetap akan menjawab permintaanmu - tulis ke salati@domenicmoran.de.\n\nTerlepas dari itu, kamu berhak mengajukan pengaduan kepada otoritas pengawas perlindungan data (Pasal 77). Otoritas yang berwenang bagi kami adalah Komisaris Berlin untuk Perlindungan Data dan Kebebasan Informasi, Alt-Moabit 59-61, 10555 Berlin, Jerman. Kamu juga dapat menghubungi otoritas di tempat tinggalmu.",
     "cookiesSection": "Cookie & penyimpanan lokal",
     "cookiesText": "Salati tidak memasang cookie pelacakan atau iklan dan tidak menyematkan perangkat lunak analitik. Namun aplikasi dan versi web menyimpan data di perangkatmu agar fiturnya dapat bekerja: pengaturan dan data belajarmu, dan pada versi web juga model AI serta riwayat obrolan AI di penyimpanan peramban. Penyimpanan ini mutlak diperlukan untuk fitur yang secara tegas kamu minta, sehingga tidak memerlukan persetujuan menurut § 25 ayat 2 No. 2 TDDDG Jerman. Kamu dapat menghapusnya lewat pengaturan peramban atau lewat „Penyimpanan\" di aplikasi.",
     "changesSection": "Perubahan pernyataan ini",
@@ -1826,7 +1826,7 @@
     "aiSection": "Salati AI",
     "aiText": "Fitur AI menghasilkan jawabannya secara otomatis dari korpus sumber yang disertakan. Fitur ini ditandai sebagai konten hasil AI dan secara tegas bukan fatwa, bukan pendapat ulama, dan bukan nasihat hukum, pajak, keuangan, atau kesehatan. Jawaban hasil mesin bisa tidak lengkap atau salah; hal ini terutama berlaku untuk hasil perhitungan seperti zakat atau bagian waris dan untuk pertanyaan hukum yang rinci. Periksa kembali informasi penting dan, bila ragu, tanyakan kepada ulama yang berkompeten. Masukanmu tidak meninggalkan perangkatmu; kami tidak menjamin ketersediaan maupun ketepatan AI.",
     "sourcesSection": "Sumber & lisensi",
-    "sourcesText": "Salati memuat konten pihak ketiga - antara lain teks dan terjemahan Al-Qur'an, kumpulan hadis, data peta dan produk, huruf, serta model AI dan pengenalan suara. Siapa pemegang haknya dan dengan lisensi apa kami menggunakannya tercantum lengkap di „Sumber & lisensi\" pada pengaturan. Konten milik Salati sendiri - teks kursus, penjelasan, materi, produksi podcast dan video - boleh kamu unduh dan pakai untuk keperluan pribadi. Jika menurutmu ada konten di Salati yang melanggar hak, tulis ke info@menucloud-berlin.de - kami akan memeriksanya dan segera menghapus konten yang bersangkutan."
+    "sourcesText": "Salati memuat konten pihak ketiga - antara lain teks dan terjemahan Al-Qur'an, kumpulan hadis, data peta dan produk, huruf, serta model AI dan pengenalan suara. Siapa pemegang haknya dan dengan lisensi apa kami menggunakannya tercantum lengkap di „Sumber & lisensi\" pada pengaturan. Konten milik Salati sendiri - teks kursus, penjelasan, materi, produksi podcast dan video - boleh kamu unduh dan pakai untuk keperluan pribadi. Jika menurutmu ada konten di Salati yang melanggar hak, tulis ke salati@domenicmoran.de - kami akan memeriksanya dan segera menghapus konten yang bersangkutan."
   },
   "changelog": {
     "title": "Yang Baru",
@@ -2603,7 +2603,15 @@
     "pip": "Gambar dalam gambar",
     "settings": "Pengaturan",
     "speed": "Kecepatan",
-    "renamePlaylist": "Ganti nama"
+    "renamePlaylist": "Ganti nama",
+    "coursesTitle": "Kursus",
+    "coursesSubtitle": "Pilih kursusmu dan belajar bab demi bab",
+    "chapterCount": "{n} bab",
+    "lessonCount": "{n} pelajaran",
+    "watchedOf": "{done} dari {total} ditonton",
+    "chapterLabel": "Bab {n}",
+    "continueCourse": "Lanjutkan belajar",
+    "allEpisodes": "Tampilkan semua video"
   },
   "media": {
     "title": "Media",
@@ -2666,7 +2674,7 @@
     "ownContentSection": "Konten kami sendiri",
     "ownContentText": "Teks kursus, penjelasan, soal kuis, materi, serta produksi podcast dan video Salati adalah karya kami sendiri. Kamu boleh mengunduh dan memakainya untuk keperluan pribadi; penyebaran ulang atau penggunaan komersial memerlukan persetujuan kami.",
     "noticeSection": "Pemberitahuan hak",
-    "noticeText": "Kami berupaya menyebut setiap sumber dengan benar. Bila ada penyebutan yang terlewat, keterangan lisensi yang keliru, atau konten di Salati yang melanggar hakmu, silakan tulis ke info@menucloud-berlin.de - kami akan memperbaiki keterangannya atau menghapus kontennya segera."
+    "noticeText": "Kami berupaya menyebut setiap sumber dengan benar. Bila ada penyebutan yang terlewat, keterangan lisensi yang keliru, atau konten di Salati yang melanggar hakmu, silakan tulis ke salati@domenicmoran.de - kami akan memperbaiki keterangannya atau menghapus kontennya segera."
   },
   "mosqueMatch": {
     "title": "Sesuaikan dengan masjidku",

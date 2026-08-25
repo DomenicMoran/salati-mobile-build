@@ -1775,14 +1775,14 @@
     "liabilityLinksTitle": "Haftung für externe Datenquellen",
     "liabilityLinksText": "Diese App lädt Koran-, Hadith-, Karten- und Produktdaten von externen, öffentlichen Quellen. Welche das sind, steht vollständig in der Datenschutzerklärung und unter „Quellen & Lizenzen\" in den Einstellungen. Für die Richtigkeit dieser fremden Inhalte tragen die jeweiligen Anbieter die Verantwortung; wir prüfen sie nach bestem Wissen, können sie aber nicht laufend auf jede Änderung hin kontrollieren.",
     "copyrightTitle": "Urheberrecht",
-    "copyrightText": "Die durch die App-Betreiber erstellten Inhalte unterliegen dem deutschen Urheberrecht. Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechts bedürfen der schriftlichen Zustimmung. Inhalte Dritter - Koran-Texte und -Übersetzungen, Hadithe, Karten- und Produktdaten, Schriftarten sowie KI- und Spracherkennungsmodelle - sind unter „Quellen & Lizenzen\" in den Einstellungen mit Rechteinhaber und Lizenz nachgewiesen. Wenn du meinst, dass ein Inhalt in Salati Rechte verletzt, schreib uns an info@menucloud-berlin.de - wir prüfen das und entfernen betroffene Inhalte umgehend."
+    "copyrightText": "Die durch die App-Betreiber erstellten Inhalte unterliegen dem deutschen Urheberrecht. Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechts bedürfen der schriftlichen Zustimmung. Inhalte Dritter - Koran-Texte und -Übersetzungen, Hadithe, Karten- und Produktdaten, Schriftarten sowie KI- und Spracherkennungsmodelle - sind unter „Quellen & Lizenzen\" in den Einstellungen mit Rechteinhaber und Lizenz nachgewiesen. Wenn du meinst, dass ein Inhalt in Salati Rechte verletzt, schreib uns an salati@domenicmoran.de - wir prüfen das und entfernen betroffene Inhalte umgehend."
   },
   "datenschutz": {
     "title": "Datenschutz­erklärung",
     "subtitle": "Informationen gemäß Art. 13 und 14 DSGVO",
     "intro": "Diese Erklärung gilt für die Salati-App (Android und iOS), die Web-Version unter salati.pro und die Salati-TV-App. Salati verarbeitet so wenig personenbezogene Daten wie möglich: Es gibt kein Nutzerkonto, keine Registrierung, keine Werbung, kein Tracking und keine Analyse-Software. Lernfortschritt, Statistiken und Einstellungen bleiben ausschließlich auf deinem Gerät. Für einzelne Funktionen ruft die App jedoch Dienste Dritter auf - welche das sind, welche Daten dabei übermittelt werden und auf welcher Rechtsgrundlage, steht unten vollständig.",
     "controllerSection": "Verantwortlicher",
-    "controllerText": "Salatibox - Inh. Domenic Moran, Heidelberger Str. 36, 12059 Berlin, Deutschland. E-Mail: info@menucloud-berlin.de, Telefon: +49 30 767 645 46. Ein Datenschutzbeauftragter ist gesetzlich nicht zu benennen.",
+    "controllerText": "Salatibox - Inh. Domenic Moran, Heidelberger Str. 36, 12059 Berlin, Deutschland. E-Mail: salati@domenicmoran.de, Telefon: +49 30 767 645 46. Ein Datenschutzbeauftragter ist gesetzlich nicht zu benennen.",
     "locationSection": "Standortdaten",
     "locationText": "Gebetszeiten, Qibla-Richtung, Moscheen-Suche und die Halal-Umgebungssuche brauchen deinen Standort. Die App fragt ihn nur mit deiner Erlaubnis und nur „bei Nutzung der App\" ab.\n\nDeine Koordinaten werden dabei an folgende unabhängige Dienste übertragen: api.aladhan.com (Islamic Network) für Gebetszeiten und Monatskalender, overpass-api.de für die Moscheen- und Halal-Suche sowie tile.openstreetmap.org für die Kartendarstellung. Gibst du stattdessen eine Stadt von Hand ein, geht dein Suchtext an nominatim.openstreetmap.org.\n\nWir speichern deine Koordinaten nicht auf eigenen Servern. Die genannten Dienste erhalten sie ohne Namen, Konto oder Geräte-Kennung, technisch bedingt aber zusammen mit deiner IP-Adresse. Du kannst die Standortfreigabe jederzeit in den Systemeinstellungen widerrufen und stattdessen eine Stadt eingeben. Rechtsgrundlage: Art. 6 Abs. 1 lit. a DSGVO (Einwilligung durch Erteilen der Standort-Berechtigung), jederzeit widerruflich.",
     "notificationsSection": "Benachrichtigungen",
@@ -1792,7 +1792,7 @@
     "syncSection": "Geräteübergreifende Übertragung",
     "syncText": "Die Funktion „Fortschritt übertragen\" erzeugt einen Code ausschließlich auf deinem Gerät. Diesen Code überträgst du selbst, etwa per Notiz oder Nachricht an dich selbst - wir empfangen, sehen oder speichern ihn zu keinem Zeitpunkt.",
     "rightsSection": "Deine Rechte",
-    "rightsText": "Dir stehen nach der DSGVO folgende Rechte zu: Auskunft (Art. 15), Berichtigung (Art. 16), Löschung (Art. 17), Einschränkung der Verarbeitung (Art. 18), Datenübertragbarkeit (Art. 20) und Widerspruch gegen Verarbeitungen auf Grundlage berechtigter Interessen (Art. 21). Erteilte Einwilligungen kannst du jederzeit mit Wirkung für die Zukunft widerrufen (Art. 7 Abs. 3 DSGVO), praktisch durch Entzug der jeweiligen Berechtigung in den Systemeinstellungen.\n\nIn der Praxis laufen Auskunft und Löschung meist ins Leere, weil wir nichts über dich gespeichert haben und dich mangels Konto auch nicht zuordnen können; die Daten auf deinem Gerät kannst du dort selbst einsehen und löschen. Deine Anfrage beantworten wir dennoch - schreib uns an info@menucloud-berlin.de.\n\nUnabhängig davon hast du das Recht, dich bei einer Datenschutz-Aufsichtsbehörde zu beschweren (Art. 77 DSGVO). Für uns zuständig ist die Berliner Beauftragte für Datenschutz und Informationsfreiheit, Alt-Moabit 59-61, 10555 Berlin. Du kannst dich auch an die Aufsichtsbehörde deines gewöhnlichen Aufenthaltsorts wenden.",
+    "rightsText": "Dir stehen nach der DSGVO folgende Rechte zu: Auskunft (Art. 15), Berichtigung (Art. 16), Löschung (Art. 17), Einschränkung der Verarbeitung (Art. 18), Datenübertragbarkeit (Art. 20) und Widerspruch gegen Verarbeitungen auf Grundlage berechtigter Interessen (Art. 21). Erteilte Einwilligungen kannst du jederzeit mit Wirkung für die Zukunft widerrufen (Art. 7 Abs. 3 DSGVO), praktisch durch Entzug der jeweiligen Berechtigung in den Systemeinstellungen.\n\nIn der Praxis laufen Auskunft und Löschung meist ins Leere, weil wir nichts über dich gespeichert haben und dich mangels Konto auch nicht zuordnen können; die Daten auf deinem Gerät kannst du dort selbst einsehen und löschen. Deine Anfrage beantworten wir dennoch - schreib uns an salati@domenicmoran.de.\n\nUnabhängig davon hast du das Recht, dich bei einer Datenschutz-Aufsichtsbehörde zu beschweren (Art. 77 DSGVO). Für uns zuständig ist die Berliner Beauftragte für Datenschutz und Informationsfreiheit, Alt-Moabit 59-61, 10555 Berlin. Du kannst dich auch an die Aufsichtsbehörde deines gewöhnlichen Aufenthaltsorts wenden.",
     "cookiesSection": "Cookies & lokaler Speicher",
     "cookiesText": "Salati setzt keine Tracking- oder Werbe-Cookies und bindet keine Analyse-Software ein. App und Web-Version speichern aber Daten auf deinem Endgerät, damit die Funktionen überhaupt arbeiten können: deine Einstellungen und Lerndaten, in der Web-Version zusätzlich das KI-Modell und dein KI-Chatverlauf im Browser-Speicher. Diese Speicherung ist für die von dir ausdrücklich gewünschten Funktionen unbedingt erforderlich und daher nach § 25 Abs. 2 Nr. 2 TDDDG einwilligungsfrei. Löschen kannst du sie über die Browser-Einstellungen bzw. über „Speicher\" in der App.",
     "changesSection": "Änderungen dieser Erklärung",
@@ -1836,7 +1836,7 @@
     "aiSection": "Salati KI",
     "aiText": "Die KI-Funktion erzeugt ihre Antworten maschinell aus einem mitgelieferten Quellen-Korpus. Sie ist als KI-generierter Inhalt gekennzeichnet und ist ausdrücklich keine Fatwa, keine Gelehrten-Meinung und keine Rechts-, Steuer-, Finanz- oder Gesundheitsberatung. Maschinell erzeugte Antworten können unvollständig oder falsch sein; das gilt besonders für Rechenergebnisse wie Zakat oder Erbteile und für rechtliche Detailfragen. Prüfe wichtige Auskünfte nach und wende dich im Zweifel an eine qualifizierte Gelehrte oder einen qualifizierten Gelehrten. Deine Eingaben verlassen dein Gerät nicht; eine Gewähr für Verfügbarkeit oder Richtigkeit der KI übernehmen wir nicht.",
     "sourcesSection": "Quellen & Lizenzen",
-    "sourcesText": "Salati bindet Inhalte Dritter ein - unter anderem Koran-Texte und -Übersetzungen, Hadith-Sammlungen, Karten- und Produktdaten, Schriftarten sowie KI- und Spracherkennungsmodelle. Wer Rechteinhaber ist und unter welcher Lizenz wir die Inhalte nutzen, ist vollständig unter „Quellen & Lizenzen\" in den Einstellungen aufgeführt. Eigene Inhalte von Salati - Kurstexte, Erklärungen, Handouts, Podcast- und Videoproduktionen - darfst du für den persönlichen Gebrauch herunterladen und nutzen. Wenn du meinst, dass ein Inhalt in Salati Rechte verletzt, schreib uns an info@menucloud-berlin.de - wir prüfen das und entfernen betroffene Inhalte umgehend."
+    "sourcesText": "Salati bindet Inhalte Dritter ein - unter anderem Koran-Texte und -Übersetzungen, Hadith-Sammlungen, Karten- und Produktdaten, Schriftarten sowie KI- und Spracherkennungsmodelle. Wer Rechteinhaber ist und unter welcher Lizenz wir die Inhalte nutzen, ist vollständig unter „Quellen & Lizenzen\" in den Einstellungen aufgeführt. Eigene Inhalte von Salati - Kurstexte, Erklärungen, Handouts, Podcast- und Videoproduktionen - darfst du für den persönlichen Gebrauch herunterladen und nutzen. Wenn du meinst, dass ein Inhalt in Salati Rechte verletzt, schreib uns an salati@domenicmoran.de - wir prüfen das und entfernen betroffene Inhalte umgehend."
   },
   "changelog": {
     "title": "Was ist neu",
@@ -2603,7 +2603,15 @@
     "pip": "Bild-in-Bild",
     "settings": "Einstellungen",
     "speed": "Geschwindigkeit",
-    "renamePlaylist": "Umbenennen"
+    "renamePlaylist": "Umbenennen",
+    "coursesTitle": "Kurse",
+    "coursesSubtitle": "Wähle deinen Kurs und lerne Kapitel für Kapitel",
+    "chapterCount": "{n} Kapitel",
+    "lessonCount": "{n} Lektionen",
+    "watchedOf": "{done} von {total} geschaut",
+    "chapterLabel": "Kapitel {n}",
+    "continueCourse": "Weiterlernen",
+    "allEpisodes": "Alle Videos anzeigen"
   },
   "media": {
     "title": "Medien",
@@ -2666,7 +2674,7 @@
     "ownContentSection": "Eigene Inhalte",
     "ownContentText": "Kurstexte, Erklärungen, Quiz-Fragen, Handouts sowie Podcast- und Videoproduktionen von Salati sind eigene Werke. Du darfst sie für den persönlichen Gebrauch herunterladen und nutzen; eine Weiterverbreitung oder kommerzielle Nutzung bedarf unserer Zustimmung.",
     "noticeSection": "Hinweis auf Rechte",
-    "noticeText": "Wir bemühen uns, jede Quelle korrekt zu nennen. Fehlt eine Nennung, ist eine Lizenzangabe unrichtig oder verletzt ein Inhalt in Salati deine Rechte, schreib uns bitte an info@menucloud-berlin.de - wir korrigieren die Angabe oder entfernen den Inhalt umgehend."
+    "noticeText": "Wir bemühen uns, jede Quelle korrekt zu nennen. Fehlt eine Nennung, ist eine Lizenzangabe unrichtig oder verletzt ein Inhalt in Salati deine Rechte, schreib uns bitte an salati@domenicmoran.de - wir korrigieren die Angabe oder entfernen den Inhalt umgehend."
   },
   "mosqueMatch": {
     "title": "Nach meiner Moschee ausrichten",

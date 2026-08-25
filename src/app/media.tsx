@@ -17,7 +17,10 @@ import { useTranslation } from '@/lib/i18n';
 
 const MEDIA_TILES = [
   { href: '/podcast', labelKey: 'podcast.title', icon: 'headset' },
-  { href: '/videos', labelKey: 'video.title', icon: 'videocam' },
+  // Fuehrt seit 2026-08-25 auf das KURSMENUE, nicht mehr direkt in die
+  // lange Liste: erst Kurs waehlen, dann Kapitel, dann Lektion. Die
+  // vollstaendige Liste bleibt von dort aus einen Tipp entfernt.
+  { href: '/videos/kurse', labelKey: 'video.title', icon: 'videocam' },
   { href: '/reels', labelKey: 'reels.title', icon: 'film' },
   { href: '/handouts', labelKey: 'handouts.title', icon: 'document-text' },
 ] as const satisfies readonly { href: string; labelKey: string; icon: IconName }[];

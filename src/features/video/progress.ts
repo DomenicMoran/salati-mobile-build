@@ -17,14 +17,23 @@ const NEAR_END_RATIO = 0.95;
 const MIN_POSITION_SEC = 5;
 
 export interface VideoProgressEntry {
-  /** Zuletzt erreichte Position in Sekunden. */
+  /** Zuletzt erreichte Position in Sekunden. 0 = fertig geschaut oder nie
+   *  ueber die Anfangsschwelle gekommen. */
   position: number;
   /** Gesamtdauer in Sekunden (fuer die Fortschrittsanzeige). */
   duration: number;
   updatedAt: number;
+  /** Zeitpunkt, zu dem die Folge zu Ende geschaut wurde.
+   *
+   *  Bis 2026-08-25 wurde der Eintrag am Ende GELOESCHT - eine fertig
+   *  geschaute Folge hinterliess also keine Spur, und "wieviel habe ich
+   *  schon geschaut" war gar nicht beantwortbar. Die Position wird weiterhin
+   *  zurueckgesetzt (sonst stuende die Folge fuer immer unter
+   *  "Weiterschauen"), aber der Eintrag bleibt und traegt diese Marke. */
+  completedAt?: number;
 }
 
-type ProgressMap = Record<string, VideoProgressEntry>;
+export type ProgressMap = Record<string, VideoProgressEntry>;
 
 /**
  * Audit 2026-07-27 (O5): der Cast auf `ProgressMap` war ungeprueft — ein
@@ -63,15 +72,40 @@ export async function saveVideoProgress(
   duration: number,
 ): Promise<void> {
   const map = await readMap();
+  const key = String(episodeNo);
   const done = duration > 0 && position / duration >= NEAR_END_RATIO;
-  if (!Number.isFinite(position) || position < MIN_POSITION_SEC || done) {
-    if (map[String(episodeNo)]) {
-      delete map[String(episodeNo)];
+  if (done) {
+    // Fertig: Position zuruecksetzen, damit die Folge nicht unter
+    // "Weiterschauen" haengen bleibt - aber die Marke behalten.
+    map[key] = {
+      position: 0,
+      duration,
+      updatedAt: Date.now(),
+      completedAt: map[key]?.completedAt ?? Date.now(),
+    };
+    await writeMap(map);
+    return;
+  }
+  if (!Number.isFinite(position) || position < MIN_POSITION_SEC) {
+    // Ganz am Anfang abgebrochen: keine Position merken. Eine frueher
+    // erreichte Marke bleibt trotzdem stehen - wer eine Folge noch einmal
+    // anfaengt, hat sie deshalb nicht "entsehen".
+    const fertig = map[key]?.completedAt;
+    if (fertig) {
+      map[key] = { position: 0, duration, updatedAt: Date.now(), completedAt: fertig };
+      await writeMap(map);
+    } else if (map[key]) {
+      delete map[key];
       await writeMap(map);
     }
     return;
   }
-  map[String(episodeNo)] = { position, duration, updatedAt: Date.now() };
+  map[key] = {
+    position,
+    duration,
+    updatedAt: Date.now(),
+    completedAt: map[key]?.completedAt,
+  };
   await writeMap(map);
 }
 
@@ -106,4 +140,9 @@ export function useAllVideoProgress(): { progress: ProgressMap; reload: () => vo
   }, [nonce]);
 
   return { progress, reload: () => setNonce((n) => n + 1) };
+}
+
+/** Wurde diese Folge zu Ende geschaut? */
+export function isEpisodeCompleted(map: ProgressMap, episodeNo: number): boolean {
+  return !!map[String(episodeNo)]?.completedAt;
 }

@@ -66,7 +66,7 @@ PODCAST, VIDEO NA REELS
 DATA YAKO INABAKI YAKO
 Bila matangazo, bila akaunti, bila SDK za ufuatiliaji: data yako inabaki kwenye kifaa chako. Eneo lako ni kwa nyakati za sala, Kibla na utafutaji wa karibu tu, na hutumwa kwa AlAdhan na OpenStreetMap: bila jina, ni hiari. Hufanya kazi nje ya mtandao.
 
-Maswali au maoni? info@menucloud-berlin.de
+Maswali au maoni? salati@domenicmoran.de
 Sera ya faragha: https://www.salati.pro/datenschutz
 
 (3970/4000 Zeichen)

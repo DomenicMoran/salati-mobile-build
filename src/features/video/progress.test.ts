@@ -59,10 +59,27 @@ describe('Ende-Grenze (95 %)', () => {
     expect(await loadVideoProgress(2)).toBe(0);
   });
 
-  it('löscht die gemerkte Position, sobald der Nutzer bis zum Ende schaut', async () => {
+  // Seit 2026-08-25: der Eintrag bleibt und traegt `completedAt`. Vorher wurde
+  // er geloescht - eine fertig geschaute Folge hinterliess keine Spur, und die
+  // Frage "wieviel habe ich schon geschaut" war gar nicht beantwortbar.
+  it('setzt die Position zurueck, sobald der Nutzer bis zum Ende schaut', async () => {
     await saveVideoProgress(2, 300, 600);
     await saveVideoProgress(2, 600, 600);
-    expect(await loadAllVideoProgress()).toEqual({});
+    expect(await loadVideoProgress(2)).toBe(0);
+  });
+
+  it('merkt sich den Abschluss, damit der Kursfortschritt ihn zaehlen kann', async () => {
+    await saveVideoProgress(2, 600, 600);
+    const map = await loadAllVideoProgress();
+    expect(map['2']?.completedAt).toEqual(expect.any(Number));
+  });
+
+  it('behaelt den Abschluss, wenn die Folge spaeter nur kurz neu angetippt wird', async () => {
+    await saveVideoProgress(2, 600, 600);
+    await saveVideoProgress(2, 1, 600); // unter der Anfangsschwelle
+    const map = await loadAllVideoProgress();
+    expect(map['2']?.completedAt).toEqual(expect.any(Number));
+    expect(map['2']?.position).toBe(0);
   });
 });
 
@@ -114,10 +131,12 @@ describe('Mehrere Folgen', () => {
     expect(await loadVideoProgress(2)).toBe(60);
   });
 
-  it('löscht beim Fertigschauen nur die betroffene Folge', async () => {
+  it('setzt beim Fertigschauen nur die betroffene Folge zurueck', async () => {
     await saveVideoProgress(1, 30, 600);
     await saveVideoProgress(2, 60, 600);
     await saveVideoProgress(2, 600, 600);
-    expect(Object.keys(await loadAllVideoProgress())).toEqual(['1']);
+    expect(await loadVideoProgress(1)).toBe(30);
+    expect(await loadVideoProgress(2)).toBe(0);
+    expect((await loadAllVideoProgress())['1']?.completedAt).toBeUndefined();
   });
 });

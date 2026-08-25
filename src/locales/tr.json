@@ -1765,14 +1765,14 @@
     "liabilityLinksTitle": "Harici veri kaynakları sorumluluğu",
     "liabilityLinksText": "Bu uygulama Kuran, hadis, harita ve ürün verilerini harici, herkese açık kaynaklardan yükler. Bunların hangileri olduğu gizlilik bildiriminde ve ayarlardaki „Kaynaklar & lisanslar\" bölümünde tam olarak yer alır. Bu yabancı içeriklerin doğruluğundan ilgili sağlayıcılar sorumludur; biz bunları bilgimiz dahilinde denetleriz, ancak her değişiklik için sürekli kontrol edemeyiz.",
     "copyrightTitle": "Telif Hakkı",
-    "copyrightText": "Uygulama işletmecileri tarafından oluşturulan içerikler Alman telif hakkına tabidir. Çoğaltma, işleme, yayma ve telif hakkı sınırları dışındaki her türlü değerlendirme yazılı onay gerektirir. Üçüncü taraf içerikleri - Kuran metinleri ve mealleri, hadisler, harita ve ürün verileri, yazı tipleri ile yapay zeka ve konuşma tanıma modelleri - ayarlardaki „Kaynaklar & lisanslar\" bölümünde hak sahibi ve lisansıyla belgelenmiştir. Salati'deki bir içeriğin haklarınızı ihlal ettiğini düşünüyorsanız info@menucloud-berlin.de adresine yazın - inceler ve ilgili içeriği derhal kaldırırız."
+    "copyrightText": "Uygulama işletmecileri tarafından oluşturulan içerikler Alman telif hakkına tabidir. Çoğaltma, işleme, yayma ve telif hakkı sınırları dışındaki her türlü değerlendirme yazılı onay gerektirir. Üçüncü taraf içerikleri - Kuran metinleri ve mealleri, hadisler, harita ve ürün verileri, yazı tipleri ile yapay zeka ve konuşma tanıma modelleri - ayarlardaki „Kaynaklar & lisanslar\" bölümünde hak sahibi ve lisansıyla belgelenmiştir. Salati'deki bir içeriğin haklarınızı ihlal ettiğini düşünüyorsanız salati@domenicmoran.de adresine yazın - inceler ve ilgili içeriği derhal kaldırırız."
   },
   "datenschutz": {
     "title": "Gizlilik Politikası",
     "subtitle": "GDPR Madde 13 ve 14 uyarınca bilgilendirme",
     "intro": "Bu bildirim Salati uygulaması (Android ve iOS), salati.pro adresindeki web sürümü ve Salati TV uygulaması için geçerlidir. Salati mümkün olduğunca az kişisel veri işler: kullanıcı hesabı yok, kayıt yok, reklam yok, izleme yok ve analiz yazılımı yok. Öğrenme ilerlemeniz, istatistikleriniz ve ayarlarınız yalnızca cihazınızda kalır. Bazı işlevler için uygulama yine de üçüncü taraf hizmetlerini çağırır; bunların hangileri olduğu, hangi verilerin aktarıldığı ve hangi hukuki dayanağa göre işlendiği aşağıda tam olarak açıklanmıştır.",
     "controllerSection": "Veri sorumlusu",
-    "controllerText": "Salatibox - Sahibi Domenic Moran, Heidelberger Str. 36, 12059 Berlin, Almanya. E-posta: info@menucloud-berlin.de, telefon: +49 30 767 645 46. Yasal olarak bir veri koruma görevlisi atanması gerekmemektedir.",
+    "controllerText": "Salatibox - Sahibi Domenic Moran, Heidelberger Str. 36, 12059 Berlin, Almanya. E-posta: salati@domenicmoran.de, telefon: +49 30 767 645 46. Yasal olarak bir veri koruma görevlisi atanması gerekmemektedir.",
     "locationSection": "Konum verileri",
     "locationText": "Namaz vakitleri, kıble yönü, cami bulucu ve yakındaki helal arama konumunuza ihtiyaç duyar. Uygulama konumu yalnızca izninizle ve yalnızca „uygulamayı kullanırken\" ister.\n\nKoordinatlarınız şu bağımsız hizmetlere aktarılır: namaz vakitleri ve aylık takvim için api.aladhan.com (Islamic Network), cami ve helal araması için overpass-api.de, harita görünümü için tile.openstreetmap.org. Bunun yerine elle bir şehir yazarsanız arama metniniz nominatim.openstreetmap.org adresine gider.\n\nKoordinatlarınızı kendi sunucularımızda saklamıyoruz. Adı geçen hizmetler bunları isim, hesap veya cihaz kimliği olmadan alır; ancak her internet çağrısında olduğu gibi IP adresinizle birlikte alır. Konum iznini istediğiniz zaman sistem ayarlarından geri çekip bunun yerine bir şehir girebilirsiniz. Hukuki dayanak: GDPR Madde 6(1)(a) (konum izni vererek verilen açık rıza), her zaman geri alınabilir.",
     "notificationsSection": "Bildirimler",
@@ -1782,7 +1782,7 @@
     "syncSection": "Cihazlar arası aktarım",
     "syncText": "„İlerlemeyi aktar\" işlevi kodu yalnızca cihazınızda oluşturur. Bu kodu kendiniz iletirsiniz, örneğin bir not ya da kendinize gönderdiğiniz bir mesajla - biz onu hiçbir zaman almaz, görmez veya saklamayız.",
     "rightsSection": "Haklarınız",
-    "rightsText": "GDPR uyarınca şu haklara sahipsiniz: bilgi edinme (Madde 15), düzeltme (Madde 16), silme (Madde 17), işlemenin kısıtlanması (Madde 18), veri taşınabilirliği (Madde 20) ve meşru menfaate dayanan işlemelere itiraz (Madde 21). Verdiğiniz açık rızaları geleceğe etkili olacak şekilde istediğiniz zaman geri alabilirsiniz (Madde 7(3)); uygulamada bu, ilgili iznin sistem ayarlarından kaldırılmasıyla olur.\n\nUygulamada bilgi edinme ve silme talepleri çoğunlukla karşılıksız kalır, çünkü sizinle ilgili hiçbir şey saklamıyoruz ve hesap olmadığı için sizi eşleştiremiyoruz; cihazınızdaki verileri zaten kendiniz görebilir ve silebilirsiniz. Talebinizi yine de yanıtlarız - info@menucloud-berlin.de adresine yazın.\n\nBundan bağımsız olarak bir veri koruma denetim makamına şikayette bulunma hakkınız vardır (Madde 77). Bizim için yetkili makam: Berlin Veri Koruma ve Bilgi Edinme Özgürlüğü Görevlisi, Alt-Moabit 59-61, 10555 Berlin, Almanya. Mutat meskeninizin bulunduğu ülkedeki makama da başvurabilirsiniz.",
+    "rightsText": "GDPR uyarınca şu haklara sahipsiniz: bilgi edinme (Madde 15), düzeltme (Madde 16), silme (Madde 17), işlemenin kısıtlanması (Madde 18), veri taşınabilirliği (Madde 20) ve meşru menfaate dayanan işlemelere itiraz (Madde 21). Verdiğiniz açık rızaları geleceğe etkili olacak şekilde istediğiniz zaman geri alabilirsiniz (Madde 7(3)); uygulamada bu, ilgili iznin sistem ayarlarından kaldırılmasıyla olur.\n\nUygulamada bilgi edinme ve silme talepleri çoğunlukla karşılıksız kalır, çünkü sizinle ilgili hiçbir şey saklamıyoruz ve hesap olmadığı için sizi eşleştiremiyoruz; cihazınızdaki verileri zaten kendiniz görebilir ve silebilirsiniz. Talebinizi yine de yanıtlarız - salati@domenicmoran.de adresine yazın.\n\nBundan bağımsız olarak bir veri koruma denetim makamına şikayette bulunma hakkınız vardır (Madde 77). Bizim için yetkili makam: Berlin Veri Koruma ve Bilgi Edinme Özgürlüğü Görevlisi, Alt-Moabit 59-61, 10555 Berlin, Almanya. Mutat meskeninizin bulunduğu ülkedeki makama da başvurabilirsiniz.",
     "cookiesSection": "Çerezler & yerel depolama",
     "cookiesText": "Salati izleme veya reklam çerezi kullanmaz ve analiz yazılımı gömmez. Ancak işlevlerin çalışabilmesi için uygulama ve web sürümü cihazınızda veri saklar: ayarlarınız ve öğrenme verileriniz, web sürümünde ayrıca yapay zeka modeli ve yapay zeka sohbet geçmişiniz tarayıcı deposunda. Bu saklama, açıkça istediğiniz işlevler için kesinlikle gereklidir ve bu nedenle TDDDG § 25(2) No. 2 uyarınca rıza gerektirmez. Bunları tarayıcı ayarlarından ya da uygulamadaki „Depolama\" bölümünden silebilirsiniz.",
     "changesSection": "Bu bildirimdeki değişiklikler",
@@ -1826,7 +1826,7 @@
     "aiSection": "Salati yapay zeka",
     "aiText": "Yapay zeka işlevi yanıtlarını uygulamayla gelen bir kaynak külliyatından makine yoluyla üretir. Yapay zeka üretimi içerik olarak işaretlenmiştir ve açıkça fetva, alim görüşü ya da hukuki, mali, finansal veya sağlık danışmanlığı değildir. Makine üretimi yanıtlar eksik veya yanlış olabilir; bu özellikle zekat ya da miras payı gibi hesap sonuçları ve ayrıntılı hukuki sorular için geçerlidir. Önemli bilgileri doğrulayın ve tereddüt halinde ehil bir alime danışın. Girdileriniz cihazınızdan çıkmaz; yapay zekanın erişilebilirliği veya doğruluğu için garanti vermiyoruz.",
     "sourcesSection": "Kaynaklar & lisanslar",
-    "sourcesText": "Salati üçüncü taraf içerikleri kullanır - başta Kuran metinleri ve mealleri, hadis külliyatları, harita ve ürün verileri, yazı tipleri ile yapay zeka ve konuşma tanıma modelleri. Hak sahibinin kim olduğu ve içerikleri hangi lisansla kullandığımız ayarlardaki „Kaynaklar & lisanslar\" bölümünde eksiksiz listelenmiştir. Salati'nin kendi içeriklerini - kurs metinleri, açıklamalar, çalışma notları, podcast ve video prodüksiyonları - kişisel kullanım için indirebilir ve kullanabilirsiniz. Salati'deki bir içeriğin haklarınızı ihlal ettiğini düşünüyorsanız info@menucloud-berlin.de adresine yazın - inceler ve ilgili içeriği derhal kaldırırız."
+    "sourcesText": "Salati üçüncü taraf içerikleri kullanır - başta Kuran metinleri ve mealleri, hadis külliyatları, harita ve ürün verileri, yazı tipleri ile yapay zeka ve konuşma tanıma modelleri. Hak sahibinin kim olduğu ve içerikleri hangi lisansla kullandığımız ayarlardaki „Kaynaklar & lisanslar\" bölümünde eksiksiz listelenmiştir. Salati'nin kendi içeriklerini - kurs metinleri, açıklamalar, çalışma notları, podcast ve video prodüksiyonları - kişisel kullanım için indirebilir ve kullanabilirsiniz. Salati'deki bir içeriğin haklarınızı ihlal ettiğini düşünüyorsanız salati@domenicmoran.de adresine yazın - inceler ve ilgili içeriği derhal kaldırırız."
   },
   "changelog": {
     "title": "Yenilikler",
@@ -2603,7 +2603,15 @@
     "pip": "Resim içinde resim",
     "settings": "Ayarlar",
     "speed": "Hız",
-    "renamePlaylist": "Yeniden adlandır"
+    "renamePlaylist": "Yeniden adlandır",
+    "coursesTitle": "Kurslar",
+    "coursesSubtitle": "Kursunu seç ve bölüm bölüm öğren",
+    "chapterCount": "{n} bölüm",
+    "lessonCount": "{n} ders",
+    "watchedOf": "{total} dersin {done} tanesi izlendi",
+    "chapterLabel": "Bölüm {n}",
+    "continueCourse": "Öğrenmeye devam et",
+    "allEpisodes": "Tüm videoları göster"
   },
   "media": {
     "title": "Medya",
@@ -2666,7 +2674,7 @@
     "ownContentSection": "Kendi içeriklerimiz",
     "ownContentText": "Salati'nin kurs metinleri, açıklamaları, quiz soruları, çalışma notları ile podcast ve video prodüksiyonları kendi eserlerimizdir. Bunları kişisel kullanım için indirebilir ve kullanabilirsiniz; yeniden dağıtım veya ticari kullanım onayımızı gerektirir.",
     "noticeSection": "Haklara ilişkin uyarı",
-    "noticeText": "Her kaynağı doğru şekilde belirtmeye özen gösteriyoruz. Bir atıf eksikse, bir lisans bilgisi yanlışsa ya da Salati'deki bir içerik haklarınızı ihlal ediyorsa lütfen info@menucloud-berlin.de adresine yazın - kaydı düzeltir veya içeriği derhal kaldırırız."
+    "noticeText": "Her kaynağı doğru şekilde belirtmeye özen gösteriyoruz. Bir atıf eksikse, bir lisans bilgisi yanlışsa ya da Salati'deki bir içerik haklarınızı ihlal ediyorsa lütfen salati@domenicmoran.de adresine yazın - kaydı düzeltir veya içeriği derhal kaldırırız."
   },
   "mosqueMatch": {
     "title": "Camime göre ayarla",

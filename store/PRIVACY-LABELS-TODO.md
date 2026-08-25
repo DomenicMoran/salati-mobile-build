@@ -59,9 +59,9 @@ Datensicherheit → Verwalten**.
   die KI-Antworten sind nicht zwischen Nutzern teilbar, es gibt kein Konto, keinen
   Feed, keine Kommentare, keinen Chat zwischen Nutzern.
 - **Werbung:** „Enthält keine Werbung" muss gesetzt sein (kein Ad-SDK im Build).
-- **Kontakt-E-Mail des Entwicklers:** steht laut Audit auf `info@menucloud-berlin.de`.
+- **Kontakt-E-Mail des Entwicklers:** steht laut Audit auf `salati@domenicmoran.de`.
   Zielzustand nach Vereinheitlichung (Impressum, App, Store-Texte):
-  **`info@menucloud-berlin.de`**. Pfad: Play Console → Store-Präsenz → Store-Eintrag →
+  **`salati@domenicmoran.de`**. Pfad: Play Console → Store-Präsenz → Store-Eintrag →
   Kontaktdaten.
 
 ## 2. Google Play Console — `de.salatibox.tv` (Salati TV)

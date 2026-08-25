@@ -18,7 +18,7 @@ const signRS256 = (payload, key) => {
 };
 
 const PACKAGE = 'de.salatibox.de';
-const SA_PATH = 'C:/Users/domen/Documents/menucloud-mobile-build/play-service-account.json';
+const SA_PATH = 'C:/Users/domen/Documents/90_Werkstatt/menucloud-mobile-build/play-service-account.json';
 
 const FULL_DE = `Salati ist dein täglicher Begleiter im Deen – schön, respektvoll und komplett werbefrei. Alles, was du für Gebet, Koran und Alltag als Muslim brauchst, an einem Ort.
 

@@ -68,7 +68,7 @@ PODCAST, VIDEOS & REELS
 YOUR DATA STAYS YOURS
 Salati is ad-free, has no account and no tracking SDKs — your data stays on your device. Your location serves prayer times, Qibla and nearby search only and is sent to AlAdhan and OpenStreetMap for that: anonymous, optional. Works offline.
 
-Questions or feedback? info@menucloud-berlin.de
+Questions or feedback? salati@domenicmoran.de
 Privacy policy: https://www.salati.pro/datenschutz
 
 (3867/4000 Zeichen)

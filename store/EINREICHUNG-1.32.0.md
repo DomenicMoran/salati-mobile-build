@@ -123,7 +123,7 @@ und jedes `\r` zählt mit. Ergebnis für de: 4013 Zeichen, davon werden 13 abges
 und zwar genau am Ende:
 
 ```
-… info@menucloud-berlin.de
+… salati@domenicmoran.de
 Datenschutz: https://www.salati.p      ← hier endet der hochgeladene Text
 ```
 
@@ -187,8 +187,8 @@ selbst geprüft).
 
 ### 3.5 Play-Kontaktadresse (GELB)
 
-Play-API `edits/details` liefert `contactEmail: info@menucloud-berlin.de`.
-Impressum, App-Texte und die Listing-Dateien nennen inzwischen `info@menucloud-berlin.de`.
+Play-API `edits/details` liefert `contactEmail: salati@domenicmoran.de`.
+Impressum, App-Texte und die Listing-Dateien nennen inzwischen `salati@domenicmoran.de`.
 Angleichen (Klickpfad in 4.3).
 
 ### 3.6 iOS-Store-Texte sind zwei Feature-Generationen alt (GELB)
@@ -271,7 +271,7 @@ Play unterscheidet Berechtigung und Datenerhebung; die Aufnahme verlässt das Ge
 |---|---|
 | App-Inhalte → **Inhaltseinstufung** (IARC) | Frage nach **nutzergenerierten Inhalten** → **Nein**. Die KI-Antworten sind nicht teilbar; es gibt kein Konto, keinen Feed, keine Kommentare, keinen Chat zwischen Nutzern |
 | App-Inhalte → **Werbung** | „Enthält keine Werbung" — belegt durch 4.0 |
-| Store-Präsenz → Store-Eintrag → **Kontaktdaten** | E-Mail von `info@menucloud-berlin.de` auf **`info@menucloud-berlin.de`** ändern (3.5) |
+| Store-Präsenz → Store-Eintrag → **Kontaktdaten** | E-Mail von `salati@domenicmoran.de` auf **`salati@domenicmoran.de`** ändern (3.5) |
 
 ### 4.4 App Store Connect — App-Datenschutz (App 6791867298 „Salati Islam")
 
@@ -318,6 +318,6 @@ Prüfung geht.
 | `curl -L https://www.salati.pro/` | HTTP 200 |
 | `curl -L https://www.salatibox.de/datenschutz` | **Host nicht auflösbar** — die Domain existiert nicht. Produktivdomain ist ausschließlich `www.salati.pro` |
 | ASC `appInfoLocalizations` | `privacyPolicyUrl` = `https://www.salati.pro/datenschutz` in de-DE und en-US |
-| Play `edits/listings` | 6 Locales live (de-DE, en-US, tr-TR, ar, es-ES, fr-FR), alle enden auf `Datenschutz: https://www.salati.pro/datenschutz` — die aktuell live stehende Fassung ist noch die kürzere vor dem letzten Text-Update und nennt weiterhin `info@menucloud-berlin.de` |
+| Play `edits/listings` | 6 Locales live (de-DE, en-US, tr-TR, ar, es-ES, fr-FR), alle enden auf `Datenschutz: https://www.salati.pro/datenschutz` — die aktuell live stehende Fassung ist noch die kürzere vor dem letzten Text-Update und nennt weiterhin `salati@domenicmoran.de` |
 | Play Track production | completed, versionCode 51, 1.31.0 |
 | `release-check.mjs` | Play OK · ASC WAITING_FOR_REVIEW · APK 264,9 MB HTTP 200 · Podcast-Index 68 Folgen · Handout-Index 23 · KI-Korpora R2 alle 13 Sprachen erreichbar · **1 Befund: Web-Korpus veraltet** |

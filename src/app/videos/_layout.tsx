@@ -6,6 +6,8 @@ export default function VideosLayout() {
       <Stack.Screen name="index" />
       <Stack.Screen name="[episode]" />
       <Stack.Screen name="playlists" />
+      <Stack.Screen name="kurse" />
+      <Stack.Screen name="kurs/[course]" />
     </Stack>
   );
 }

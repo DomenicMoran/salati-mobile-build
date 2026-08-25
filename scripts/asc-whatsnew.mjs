@@ -16,7 +16,7 @@ const jwt = require('jsonwebtoken');
 const APP_ID = '6791867298';
 const KEY_ID = process.env.ASC_KEY_ID || 'H73GL4Q2AQ';
 const ISSUER = process.env.ASC_ISSUER_ID || 'de348707-2ec6-4079-b3a4-74c17c31ba0c';
-const KEY_PATH = 'C:/Users/domen/Documents/MenuCloud/AuthKey_H73GL4Q2AQ_Apple.p8';
+const KEY_PATH = 'C:/Users/domen/Documents/90_Werkstatt/schluessel/AuthKey_H73GL4Q2AQ_Apple.p8';
 const NOTES_PATH = process.argv[2] ?? null;
 
 const token = jwt.sign({ iss: ISSUER, aud: 'appstoreconnect-v1' }, fs.readFileSync(KEY_PATH, 'utf8'), {

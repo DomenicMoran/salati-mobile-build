@@ -68,10 +68,3 @@ credentials.json
 # ~150 MB). Reproduzierbar, deshalb nicht im Repo; Quelle fuer Play-Upload,
 # App-Store-Render und die Marketing-Bilder unter assets/marketing/.
 store-assets/device/
-
-# Base64-kodierte App-Store-Connect-API-Schluessel (P8) — nur lokales
-# Arbeits-Zwischenprodukt, wird vom Workflow ueber das GitHub-Secret
-# ASC_KEY_P8_BASE64 injiziert, nie aus dem Repo gelesen. Sicherheitsvorfall
-# 2026-08-23: versehentlich committete .b64-Datei aus der Historie entfernt.
-*.b64
-.b64

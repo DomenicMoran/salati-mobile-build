@@ -21,7 +21,7 @@ export interface NominatimResult {
 // User-Agent (z. B. okhttp/…), das führte live im Emulator zu einer leeren
 // Ergebnisliste ohne jede Fehlermeldung (Audit 2026-07-21, Bereich A:
 // "Mehrere gespeicherte Orte" - Stadtsuche lieferte nie Treffer).
-const NOMINATIM_USER_AGENT = 'SalatiBox/1.0 (+info@menucloud-berlin.de)';
+const NOMINATIM_USER_AGENT = 'SalatiBox/1.0 (+salati@domenicmoran.de)';
 
 export async function searchCity(query: string, signal?: AbortSignal): Promise<NominatimResult[]> {
   if (query.trim().length < 3) return [];

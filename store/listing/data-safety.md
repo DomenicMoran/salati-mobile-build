@@ -6,7 +6,7 @@ nicht kannte). Grundlage: tatsächliche Datenflüsse im Code (`apps/mobile`), Ab
 https://www.salati.pro/datenschutz sowie `docs/audit-2026-07-27/STORE-RECHT.md`.
 
 **Anbieter:** Salatibox — Inh. Domenic Moran, Heidelberger Str. 36, 12059 Berlin.
-**Kontakt (einheitlich in Impressum, App, Play und ASC):** `info@menucloud-berlin.de`.
+**Kontakt (einheitlich in Impressum, App, Play und ASC):** `salati@domenicmoran.de`.
 **Datenschutz-URL:** `https://www.salati.pro/datenschutz`.
 
 > Die konkreten Klick-Anweisungen für die beiden Formulare (Play Console und App Store
