@@ -10,7 +10,9 @@ import { createRequire } from 'module';
 const require = createRequire('C:/Users/domen/Documents/MenuCloud/scripts/');
 const jwt = require('jsonwebtoken');
 
-const PACKAGE = 'de.salatibox.de';
+// Vorgabe bleibt die Handy-App; PLAY_PACKAGE zeigt auf eine andere App
+// desselben Entwicklerkontos (z. B. de.salatibox.tv).
+const PACKAGE = process.env.PLAY_PACKAGE || 'de.salatibox.de';
 const AAB_PATH = process.argv[2];
 const NOTES_DE = process.argv[3] ?? '';
 const SA_PATH = 'C:/Users/domen/Documents/90_Werkstatt/menucloud-mobile-build/play-service-account.json';

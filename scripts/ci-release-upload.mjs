@@ -36,7 +36,10 @@ const arg = (name) => {
 const APK = arg('--apk');
 const AAB = arg('--aab');
 const NOTES = arg('--notes');
-const PACKAGE = 'de.salatibox.de';
+// Paketname. Ueber --package bzw. PLAY_PACKAGE ueberschreibbar, damit
+// derselbe Weg auch den Fernseher (de.salatibox.tv) veroeffentlichen kann -
+// dasselbe Dienstkonto hat Zugriff auf alle Apps des Entwicklerkontos.
+const PACKAGE = arg('--package') || process.env.PLAY_PACKAGE || 'de.salatibox.de';
 /**
  * Der Schluessel, unter dem die Webseite die APK anbietet (APK_URL in
  * app/(tabs)/index.web.tsx). Ueber R2_KEY ueberschreibbar — damit die

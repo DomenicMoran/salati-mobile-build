@@ -86,7 +86,7 @@ def jscFlavor = 'io.github.react-native-community:jsc-android:2026004.+'
  * (Policy 'appVersion' in app.config.ts) - siehe defaultConfig unten.
  * Muss beim Versions-Bump zusammen mit app.config.ts `version` geaendert werden.
  */
-def appVersionName = "1.50.0"
+def appVersionName = "1.51.0"
 
 /**
  * Sind alle vier Release-Signier-Properties da? (Pfad + 3 Geheimnisse - eine
@@ -106,7 +106,7 @@ android {
         applicationId 'de.salatibox.de'
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
-        versionCode 75
+        versionCode 76
         versionName appVersionName
 
         buildConfigField "String", "REACT_NATIVE_RELEASE_LEVEL", "\"${findProperty('reactNativeReleaseLevel') ?: 'stable'}\""
