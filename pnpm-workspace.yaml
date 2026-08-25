@@ -8,12 +8,20 @@ overrides:
   "form-data@>=4.0.0 <4.0.6": ">=4.0.6"
   "postcss@<8.5.10": ">=8.5.10"
   "qs@<6.15.2": ">=6.15.2"
+  # expo-modules-jsi 57.0.5 annotiert seine Konstruktoren mit
+  # SWIFT_RETURNS_RETAINED. Kein Xcode auf den Runnern (26.1.1/26.2/26.3)
+  # nimmt das an - der Bau bricht immer mit
+  #   'RuntimeScheduler' cannot be annotated with either
+  #   SWIFT_RETURNS_RETAINED or SWIFT_RETURNS_UNRETAINED
+  # ab, egal wo das SWIFT_SHARED_REFERENCE-Attribut steht (beides probiert,
+  # Laeufe 32877181053 und 32877956673).
+  #
+  # 57.0.3 hat die Annotation noch nicht und uebersetzt. Festhalten statt
+  # die Annotation wegpatchen: ohne sie geht Swift von "unretained" aus,
+  # obwohl das Objekt mit refCount 1 startet - das waere ein Speicherfehler
+  # mit Ansage. Wieder loesen, sobald Expo oder Xcode nachzieht.
+  expo-modules-jsi: 57.0.3
 patchedDependencies:
   '@bacons/apple-targets@5.0.0': patches/@bacons__apple-targets@5.0.0.patch
   expo-dynamic-app-icon@1.2.0: patches/expo-dynamic-app-icon@1.2.0.patch
-  # OHNE Versionsnummer: das Build-Repo loest die Abhaengigkeit frisch
-  # auf und landete dabei nicht auf 57.0.3 - pnpm brach dann mit
-  # ERR_PNPM_UNUSED_PATCH ab. Der Name allein gilt fuer jede Fassung;
-  # passt der Inhalt einmal nicht mehr, schlaegt der Patch LAUT fehl.
-  expo-modules-jsi: patches/expo-modules-jsi@57.0.5.patch
   whisper.rn@0.7.0: patches/whisper.rn@0.7.0.patch
