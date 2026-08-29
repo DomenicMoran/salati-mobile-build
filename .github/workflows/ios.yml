@@ -233,6 +233,15 @@ jobs:
       # denselben ASC-API-Schlüssel, der schon für das Provisioning hier liegt.
       # Danach taucht sie in App Store Connect als neuer Build auf.
       - name: IPA direkt zu App Store Connect laden
+        # ABSICHTLICH DEAKTIVIERT fuer diesen Neu-Einreichungs-Bau (29.08.2026):
+        # der Auftrag verbietet jeden Upload/jede Einreichung durch den Agenten
+        # ("Kein Upload, keine Einreichung"). Dieser Schritt hatte KEIN if-Gate
+        # (anders als die Play-Publish-Schritte in android.yml, die an
+        # push+main haengen) und liefe sonst bei jedem workflow_dispatch
+        # automatisch. Nur in diesem Mirror-Repo/Branch (pruefung) geaendert,
+        # NICHT in der kanonischen Vorlage apps/mobile/.github/workflows/ios.yml
+        # im privaten Haupt-Repo. Naechster echter Sync ueberschreibt das wieder.
+        if: false
         env:
           ASC_KEY_ID: ${{ secrets.ASC_KEY_ID }}
           ASC_ISSUER_ID: ${{ secrets.ASC_ISSUER_ID }}
