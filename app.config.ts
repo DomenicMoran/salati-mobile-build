@@ -77,7 +77,11 @@ const config: ExpoConfig = {
     icon: './assets/expo.icon',
     // appVersionSource: 'local' (eas.json) → buildNumber wird hier gelesen (kein
     // ios/-Verzeichnis, prebuild-managed). 40 > alle bisherigen App-Store-Builds.
-    buildNumber: '75',
+    // Android musste am 25.08. von 75 auf 76 springen (Play: "Version code 75
+    // has already been used" — s. android/app/build.gradle). Build 75 bei
+    // Apple ist die abgelehnte 1.51.0-Einreichung; fuer den naechsten Versuch
+    // hier nachgezogen, damit beide Plattformen wieder dieselbe Zahl tragen.
+    buildNumber: '77',
     // ASC-App "Salati Islam" (6791867298) wurde vom User unter dieser ID
     // angelegt (2026-07-17) — beide Plattformen nutzen de.salatibox.de.
     bundleIdentifier: 'de.salatibox.de',

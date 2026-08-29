@@ -1435,6 +1435,22 @@ export const CHANGELOG: ChangelogVersion[] = [
       },
     ],
   },
+  {
+    version: '1.51.0',
+    date: '2026-08-25',
+    entries: [
+      {
+        type: 'feature',
+        de: 'Neues Kursmenü statt einer einzigen langen Liste: Kurs, Kapitel, Lektion. Fünf Kurse führen durch den gesamten Video- und Podcast-Bestand — Arabisch lesen, Sprache des Qur\'ans, Tajweed, Wortschatz und Tabellen, Qur\'an und Wissen.',
+        en: 'New course menu instead of one long list: course, chapter, lesson. Five courses guide you through the entire video and podcast catalogue — reading Arabic, the language of the Qur\'an, tajweed, vocabulary and tables, Qur\'an and knowledge.',
+      },
+      {
+        type: 'fix',
+        de: 'Der Fortschritt einer fertig geschauten Folge bleibt jetzt sichtbar, statt beim Abschluss spurlos gelöscht zu werden.',
+        en: 'The progress of a finished episode now stays visible instead of being silently deleted once you complete it.',
+      },
+    ],
+  },
 ];
 /** Neueste Version zuerst - für die Anzeige im Changelog-Screen. */
 export function changelogNewestFirst(): ChangelogVersion[] {
