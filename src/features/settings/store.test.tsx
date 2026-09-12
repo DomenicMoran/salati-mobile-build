@@ -19,11 +19,11 @@
  */
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { render, waitFor } from '@testing-library/react-native';
-import type { ReactElement } from 'react';
+import { useEffect, type ReactElement } from 'react';
 import { Text } from 'react-native';
 
 import { SettingsProvider, useSettings } from './store';
-import { SETTINGS_STORAGE_KEY, type AppSettings } from './types';
+import { DEFAULT_SETTINGS, SETTINGS_STORAGE_KEY, type AppSettings } from './types';
 
 const mockLocales = jest.fn(() => [{ languageCode: 'tr' }]);
 jest.mock('expo-localization', () => ({
@@ -174,5 +174,104 @@ describe('Migration der entfallenen Adhan-Aufnahmen', () => {
     const view = await renderStore(<AzanProbe />);
     const el = await view.findByTestId('azan', {}, { timeout: 5000 });
     expect(String(el.props.children)).toBe('adhan2|default|adhan2|adhan2|adhan2|adhan2');
+  });
+});
+
+/**
+ * Abnahme 1.54.0: der Startbildschirm erschien bei persischer Einstellung kurz
+ * auf Deutsch. AsyncStorage arbeitet auf Android einen SerialExecutor ab, und
+ * React spuelt Effekte von innen nach aussen - die Speicherzugriffe ALLER
+ * Bildschirme unter diesem Provider standen deshalb VOR dem des Providers in
+ * der Warteschlange. Am Geraet gemessen: die Sprache stand erst 3,1 s nach
+ * dem Beginn der Splash-Ausblendung fest.
+ *
+ * Der erste Fall MUSS gegen den Stand vor der Behebung rot sein (dort wurde
+ * erst im Effekt gelesen, der Kind-Zugriff kam zuerst). Der zweite darf das
+ * NICHT: er sichert ab, dass die Vorab-Anfrage an die INSTANZ gebunden bleibt
+ * und nicht als Modul-Zwischenspeicher einen veralteten Stand wiederbelebt.
+ */
+describe('Reihenfolge der Speicherzugriffe', () => {
+  it('fragt die Einstellungen vor den Speicherzugriffen der Kinder an', async () => {
+    // Von Hand umhuellen und am Ende die urspruengliche Funktion
+    // zuruecksetzen. NICHT jest.spyOn(...).mockRestore(): der offizielle
+    // AsyncStorage-Mock ist selbst schon ein jest.fn, und mockRestore setzt
+    // dessen Umsetzung auf einen leeren Mock zurueck — die folgenden Tests
+    // bekaemen dann `undefined` statt eines Promise.
+    const reihenfolge: string[] = [];
+    const echt = AsyncStorage.getItem;
+    AsyncStorage.getItem = ((key: string) => {
+      reihenfolge.push(key);
+      return echt.call(AsyncStorage, key);
+    }) as typeof AsyncStorage.getItem;
+
+    function Kind() {
+      useEffect(() => {
+        void AsyncStorage.getItem('kind:irgendwas');
+      }, []);
+      return null;
+    }
+
+    try {
+      render(
+        <SettingsProvider>
+          <Kind />
+        </SettingsProvider>,
+      );
+
+      await waitFor(() => expect(reihenfolge).toContain('kind:irgendwas'));
+      expect(reihenfolge[0]).toBe(SETTINGS_STORAGE_KEY);
+    } finally {
+      AsyncStorage.getItem = echt;
+    }
+  });
+
+  it('liest bei einem neuen Provider erneut, statt den ersten Lesestand festzuhalten', async () => {
+    await AsyncStorage.setItem(SETTINGS_STORAGE_KEY, JSON.stringify({ language: 'es' }));
+    const erster = await renderStore();
+    const a = await erster.findByTestId('probe', {}, { timeout: 5000 });
+    expect(String(a.props.children).startsWith('es|')).toBe(true);
+    erster.unmount();
+
+    await AsyncStorage.setItem(SETTINGS_STORAGE_KEY, JSON.stringify({ language: 'fr' }));
+    const zweiter = await renderStore();
+    const b = await zweiter.findByTestId('probe', {}, { timeout: 5000 });
+    expect(String(b.props.children).startsWith('fr|')).toBe(true);
+  });
+});
+
+/**
+ * Review-Fund: die Lesekette (`gelesen.then(...).finally(...)`) im Effekt
+ * hatte kein abschliessendes `.catch`. Lehnt AsyncStorage.getItem() ab, lief
+ * das als unbehandelte Ablehnung auf - `loaded` wurde trotzdem ueber
+ * `.finally` wahr (der Start haengt also nicht), aber der Fehler verschwand
+ * spurlos statt protokolliert zu werden.
+ */
+describe('Lesefehler beim Start', () => {
+  it('faellt auf die Vorgabe-Einstellungen zurueck, wird geladen und erzeugt keine unbehandelte Ablehnung', async () => {
+    const unbehandelt: unknown[] = [];
+    const aufUnbehandelt = (grund: unknown) => unbehandelt.push(grund);
+    process.on('unhandledRejection', aufUnbehandelt);
+
+    const echt = AsyncStorage.getItem;
+    AsyncStorage.getItem = ((key: string) => {
+      if (key === SETTINGS_STORAGE_KEY) return Promise.reject(new Error('Speicher nicht verfuegbar'));
+      return echt.call(AsyncStorage, key);
+    }) as typeof AsyncStorage.getItem;
+
+    try {
+      const view = await renderStore();
+      const el = await view.findByTestId('probe', {}, { timeout: 5000 });
+      expect(String(el.props.children)).toBe(
+        `${DEFAULT_SETTINGS.language}|${DEFAULT_SETTINGS.hadithLanguage}|${DEFAULT_SETTINGS.quranTranslation}`,
+      );
+      // Der Ablehnungskette Gelegenheit geben, VOR dem Entfernen des Handlers
+      // als unbehandelt aufzulaufen, falls das `.catch` fehlen wuerde.
+      await new Promise((fertig) => setTimeout(fertig, 0));
+    } finally {
+      AsyncStorage.getItem = echt;
+      process.removeListener('unhandledRejection', aufUnbehandelt);
+    }
+
+    expect(unbehandelt).toEqual([]);
   });
 });

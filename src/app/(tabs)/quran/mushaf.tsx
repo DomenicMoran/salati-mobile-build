@@ -1,5 +1,5 @@
 import AsyncStorage from '@react-native-async-storage/async-storage';
-import { useLocalSearchParams } from 'expo-router';
+import { router, useLocalSearchParams } from 'expo-router';
 import { useCallback, useEffect, useMemo, useState } from 'react';
 import {
   ActivityIndicator,
@@ -15,6 +15,8 @@ import {
 import { SafeAreaView } from 'react-native-safe-area-context';
 
 import { IconSymbol } from '@/components/ui/icon-symbol';
+import { IntroHelpButton } from '@/components/ui/intro-help-button';
+import { IntroSheet } from '@/components/ui/intro-sheet';
 import { ThemedText } from '@/components/themed-text';
 import { ThemedView } from '@/components/themed-view';
 import { BackChipInset, Colors, MaxContentWidth, Spacing } from '@/constants/theme';
@@ -41,7 +43,12 @@ import {
 import { buildMushafPlaylist, findMushafPlaylistIndex } from '@/features/quran/mushafPlaylist';
 import { surahNameTranslation } from '@/features/quran/surahNames';
 import { useAyahPlayer } from '@/features/quran/usePlayer';
-import { WordInfoSheet } from '@/features/quran/WordInfoSheet';
+import { WortAnalyseSheet } from '@/features/quran/WortAnalyseSheet';
+import { GrammarLegend } from '@/features/quran/analyse/GrammarLegend';
+import { GrammarModeBar } from '@/features/quran/analyse/GrammarModeBar';
+import { alignedMorphWords, wortFarbe, type FarbModus } from '@/features/quran/analyse/grammarColorModes';
+import { morphVerseWords, useGroupMorphologie } from '@/features/quran/analyse/useGroupMorphologie';
+import { useGrammatikIntro } from '@/features/quran/analyse/useGrammatikIntro';
 import { dayIndexForDate, pageRangeForDay, useKhatmah } from '@/features/khatmah/plan';
 import { useSettings } from '@/features/settings/store';
 import { dayKey } from '@/features/tracker/store';
@@ -84,6 +91,16 @@ const BASMALA = 'بِسْمِ ٱللَّهِ ٱلرَّحْمَـٰنِ ٱلرَ
 const SEPIA_BG = '#f1e7d0';
 const SEPIA_CARD = '#e9dcbf';
 
+/** Fundstelle (Sure/Vers/Position) zusätzlich zum reinen Wortobjekt — nötig
+ * für WortAnalyseSheet (Morphologie-Abruf) und für die Grammatik-Farb-
+ * Zuordnung. */
+interface SelectedMushafWord {
+  word: MushafWord;
+  surah: number;
+  ayah: number;
+  position: number;
+}
+
 export default function MushafScreen() {
   const params = useLocalSearchParams<{ page?: string; surah?: string }>();
   const { t, locale } = useTranslation();
@@ -119,7 +136,24 @@ export default function MushafScreen() {
   // trotzdem auf ein Wort"). Wortdaten werden daher immer mitgeladen
   // (useMushafPage withWords=true, s.u.), nicht mehr an wordInfoOn gekoppelt.
   const [wordInfoOn, setWordInfoOn] = useState(false);
-  const [selectedWord, setSelectedWord] = useState<MushafWord | null>(null);
+  const [selectedWord, setSelectedWord] = useState<SelectedMushafWord | null>(null);
+  // Grammatik-Farbmarkierung — gleiches Muster wie im normalen Sure-Reader
+  // (features/quran/analyse/grammarColorModes.ts): GENAU EIN Modus aktiv,
+  // Standard 'aus', lokaler State statt AppSettings (wie alle übrigen
+  // Ansichts-Umschalter dieses Options-Sheets, z. B. wordInfoOn/showTranslation).
+  const [grammarMode, setGrammarMode] = useState<FarbModus>('aus');
+  // Erklär-Sheet beim ERSTEN Einschalten eines Farbmodus — gleicher Hook
+  // (und gleicher AsyncStorage-Schlüssel) wie im normalen Sure-Reader, damit
+  // "einmal gesehen" für die Grammatik-Funktion app-weit gilt, unabhängig
+  // davon, in welcher Ansicht sie zuerst eingeschaltet wurde.
+  const grammatikIntro = useGrammatikIntro();
+  const handleGrammarModeChange = (next: FarbModus) => {
+    setGrammarMode(next);
+    if (next !== 'aus') grammatikIntro.notifyActivated();
+  };
+  // Mindestens einmal ein Wort angetippt — hält die Morphologie-Abfrage warm,
+  // gleiches Muster wie wordSheetUsed im Sure-Reader.
+  const [grammarWordTapped, setGrammarWordTapped] = useState(false);
   // Optionen-Sheet: bündelt Stil, Wort-Info, Schriftgröße, Sepia, Rezitator
   // und Übersetzung an einer Stelle — analog zum "Ansicht & Wiedergabe"-Sheet
   // im normalen Sure-Reader, statt einzelner Chips im knappen Kopfbereich
@@ -215,6 +249,19 @@ export default function MushafScreen() {
     pageSurahNumbers.forEach((sn, i) => map.set(sn, groupReadings[i]?.data));
     return map;
   }, [pageSurahNumbers, groupReadings]);
+  // Morphologie NUR laden, wenn ein Grammatik-Farbmodus aktiv ist ODER
+  // bereits ein Wort angetippt wurde (gleiches Muster wie im Sure-Reader,
+  // s. grammarWordTapped oben) — kein Netzabruf für Nutzer, die weder
+  // Farbmodi noch die Wortanalyse je berühren. Gleicher queryKey wie
+  // useSurahMorphologie (morphologieHooks.ts) — teilt sich denselben Cache.
+  const grammarModeActive = grammarMode !== 'aus';
+  const morphologieBySurah = useGroupMorphologie(
+    pageSurahNumbers,
+    !!data && pageSurahNumbers.length > 0 && (grammarModeActive || grammarWordTapped),
+  );
+  // Sepia erzwingt immer die Light-Palette (s. useTheme) — Grammatik-Farben
+  // folgen demselben Umschaltprinzip.
+  const grammarScheme: 'light' | 'dark' = sepia ? 'light' : scheme;
 
   // Mushaf-Seiten-Wiedergabe (Task: "Seite vorlesen"): eine flache Playlist
   // über alle Suren dieser Druckseite, geteilt zwischen dem neuen Play-Button
@@ -371,20 +418,31 @@ export default function MushafScreen() {
                 // Highlighting im normalen Sure-Reader.
                 const isActive =
                   activePlaylistVerse?.surah === group.surah && activePlaylistVerse?.ayah === v.ayah;
+                const vWords = verseWords(v);
+                const vMorphWords = grammarModeActive
+                  ? alignedMorphWords(morphVerseWords(morphologieBySurah, group.surah, v.ayah), vWords.length)
+                  : undefined;
                 return (
                   <View key={v.ayah} style={[styles.verseBlock, isActive && styles.verseActive]}>
                     <ThemedText sepia={sepia} style={[pageTextStyle, { fontSize, lineHeight }]}>
-                      {verseWords(v).map((w, wi) => (
-                        <ThemedText
-                          key={wi}
-                          sepia={sepia}
-                          onPress={() => setSelectedWord(w)}
-                          accessibilityRole="button"
-                          accessibilityLabel={t('quran.wordInfo.title')}
-                          style={[pageTextStyle, { fontSize, lineHeight }]}>
-                          {quranFont.text(w.arabic)}{' '}
-                        </ThemedText>
-                      ))}
+                      {vWords.map((w, wi) => {
+                        const mw = vMorphWords?.find((m) => m.position === wi + 1);
+                        const farbe = mw ? wortFarbe(grammarScheme, grammarMode, mw) : undefined;
+                        return (
+                          <ThemedText
+                            key={wi}
+                            sepia={sepia}
+                            onPress={() => {
+                              setGrammarWordTapped(true);
+                              setSelectedWord({ word: w, surah: group.surah, ayah: v.ayah, position: wi + 1 });
+                            }}
+                            accessibilityRole="button"
+                            accessibilityLabel={t('quran.wordInfo.title')}
+                            style={[pageTextStyle, { fontSize, lineHeight }, farbe ? { color: farbe } : undefined]}>
+                            {quranFont.text(w.arabic)}{' '}
+                          </ThemedText>
+                        );
+                      })}
                       <ThemedText
                         sepia={sepia}
                         onPress={() => playPageVerse(group.surah, v.ayah)}
@@ -416,22 +474,33 @@ export default function MushafScreen() {
                     const audioUrl = reading?.ayahs.find((a) => a.numberInSurah === v.ayah)?.audio;
                     const isActive =
                       activePlaylistVerse?.surah === group.surah && activePlaylistVerse?.ayah === v.ayah;
+                    const vWords = verseWords(v);
+                    const vMorphWords = grammarModeActive
+                      ? alignedMorphWords(morphVerseWords(morphologieBySurah, group.surah, v.ayah), vWords.length)
+                      : undefined;
                     return (
                       <ThemedText
                         key={v.ayah}
                         sepia={sepia}
                         style={[pageTextStyle, { fontSize, lineHeight }, isActive && styles.pageVerseActive]}>
-                        {verseWords(v).map((w, wi) => (
-                          <ThemedText
-                            key={wi}
-                            sepia={sepia}
-                            onPress={() => setSelectedWord(w)}
-                            accessibilityRole="button"
-                            accessibilityLabel={t('quran.wordInfo.title')}
-                            style={[pageTextStyle, { fontSize, lineHeight }]}>
-                            {quranFont.text(w.arabic)}{' '}
-                          </ThemedText>
-                        ))}
+                        {vWords.map((w, wi) => {
+                          const mw = vMorphWords?.find((m) => m.position === wi + 1);
+                          const farbe = mw ? wortFarbe(grammarScheme, grammarMode, mw) : undefined;
+                          return (
+                            <ThemedText
+                              key={wi}
+                              sepia={sepia}
+                              onPress={() => {
+                                setGrammarWordTapped(true);
+                                setSelectedWord({ word: w, surah: group.surah, ayah: v.ayah, position: wi + 1 });
+                              }}
+                              accessibilityRole="button"
+                              accessibilityLabel={t('quran.wordInfo.title')}
+                              style={[pageTextStyle, { fontSize, lineHeight }, farbe ? { color: farbe } : undefined]}>
+                              {quranFont.text(w.arabic)}{' '}
+                            </ThemedText>
+                          );
+                        })}
                         {v.sajda && (
                           <ThemedText sepia={sepia} style={[pageTextStyle, { fontSize, lineHeight }]}>
                             {'۩ '}
@@ -660,6 +729,31 @@ export default function MushafScreen() {
                 )}
               </View>
 
+              {/* Gruppen-Überschrift + Reopen-Button + Kurzerklärung — gleiches
+                  Muster wie im normalen Sure-Reader ([surah].tsx), damit beide
+                  Reader dieselbe Bedienung UND dieselbe Erklärung zeigen. */}
+              <View style={styles.sectionHeaderRow}>
+                <ThemedText type="smallBold" themeColor="textSecondary" style={[styles.sheetSection, styles.sheetSectionInline]}>
+                  {t('quran.sectionGrammatik')}
+                </ThemedText>
+                <IntroHelpButton onPress={grammatikIntro.show} color={colors.textSecondary} />
+              </View>
+              <ThemedText type="small" themeColor="textSecondary" style={styles.groupIntro}>
+                {t('quran.captions.grammarColorModes')}
+              </ThemedText>
+              <GrammarModeBar modus={grammarMode} onChange={handleGrammarModeChange} scheme={grammarScheme} sepia={sepia} />
+              <ThemedText type="small" themeColor="textSecondary" style={styles.groupIntro}>
+                {t('quran.captions.wortAnalyseHint')}
+              </ThemedText>
+
+              <IntroSheet
+                visible={grammatikIntro.visible}
+                onClose={grammatikIntro.dismiss}
+                title={t('quran.grammatikIntro.title')}
+                what={t('quran.grammatikIntro.what')}
+                why={t('quran.grammatikIntro.why')}
+              />
+
               {khatmahRange && khatmahDayIndex !== null && (
                 <>
                   <ThemedText type="smallBold" themeColor="textSecondary" style={styles.sheetSection}>
@@ -689,11 +783,18 @@ export default function MushafScreen() {
           </ThemedView>
         </Modal>
 
-        <WordInfoSheet
+        {/* Wort-Tap öffnet immer dieses eine, zusammengeführte Sheet. */}
+        <WortAnalyseSheet
           visible={selectedWord !== null}
-          word={selectedWord}
+          surah={selectedWord?.surah ?? 0}
+          ayah={selectedWord?.ayah ?? 0}
+          position={selectedWord?.position ?? 0}
+          word={selectedWord?.word ?? null}
           loading={selectedWord !== null && spreadLoading}
           error={selectedWord !== null && spreadError}
+          onWurzelOeffnen={(wurzel) => router.push({ pathname: '/lexikon/wurzel/[wurzel]', params: { wurzel } })}
+          onLexikonOeffnen={() => router.push('/lexikon')}
+          onVerbTypOeffnen={(typ) => router.push({ pathname: '/lexikon/verbtyp/[typ]', params: { typ } })}
           onClose={() => setSelectedWord(null)}
         />
 
@@ -721,6 +822,8 @@ export default function MushafScreen() {
           }}
           onClose={() => setPickerOpen(null)}
         />
+
+        {grammarModeActive && <GrammarLegend modus={grammarMode} scheme={grammarScheme} sepia={sepia} />}
 
         {page === 0 || spreadLoading ? (
           <View style={styles.center}>
@@ -935,6 +1038,14 @@ const styles = StyleSheet.create({
     marginTop: Spacing.three,
     marginBottom: Spacing.two,
   },
+  sectionHeaderRow: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+    marginTop: Spacing.three,
+  },
+  sheetSectionInline: { marginTop: 0, marginBottom: 0 },
+  groupIntro: { marginBottom: Spacing.two },
   pickerRow: {
     flexDirection: 'row',
     justifyContent: 'center',

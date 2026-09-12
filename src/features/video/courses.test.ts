@@ -53,6 +53,22 @@ describe('groupEpisodesByCourse', () => {
     expect(hasCourses([ep({ episode_no: 1 })])).toBe(false);
     expect(hasCourses(KURS)).toBe(true);
   });
+
+  // `order` (ohne-Release-Feinpositionierung, Audit 2026-09-05): schiebt eine
+  // Lektion an eine bestimmte Stelle im Kapitel, ohne `lesson_no` der anderen
+  // Lektionen anzufassen.
+  it('bevorzugt `order` gegenueber `lesson_no` innerhalb desselben Kapitels', () => {
+    const kurse = groupEpisodesByCourse([
+      ep({ episode_no: 10, course: 'lesen', chapter_no: 1, lesson_no: 1, order: 2 }),
+      ep({ episode_no: 20, course: 'lesen', chapter_no: 1, lesson_no: 2, order: 1 }),
+    ]);
+    expect(kurse[0].chapters[0].episodes.map((e) => e.episode_no)).toEqual([20, 10]);
+  });
+
+  it('faellt ohne `order` auf `lesson_no`/`episode_no` zurueck', () => {
+    const kurse = groupEpisodesByCourse(KURS);
+    expect(kurse[0].chapters[0].episodes.map((e) => e.episode_no)).toEqual([1, 2]);
+  });
 });
 
 describe('Fortschritt', () => {

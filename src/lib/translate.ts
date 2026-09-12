@@ -47,6 +47,22 @@ export function isLocaleLoaded(locale: Locale): boolean {
   return DICTIONARIES[locale] !== undefined;
 }
 
+/**
+ * Rohes Wörterbuch einer Locale (oder `undefined`, solange eine der 12
+ * lazy geladenen Sprachen noch nicht nachgeladen ist — siehe `ensureLocale`).
+ *
+ * Für Aufrufer, die mehr als einen einzelnen String-Blattwert brauchen (z. B.
+ * ein ganzes `{name, ar, info}`-Objekt aus dem `grammatik`-Teilbaum, Lexikon-
+ * Feature): `translate()` löst nur bis zu einem String-Blatt auf, hier bleibt
+ * die Struktur erhalten. Bewusst kein Fallback auf en/de HIER — das bleibt
+ * Sache des Aufrufers (wie bei `translate()`), da manche Aufrufer die
+ * fehlende Locale selbst anders behandeln wollen (z. B. Ladezustand zeigen
+ * statt sofort auf Englisch auszuweichen).
+ */
+export function getLocaleDict(locale: Locale): unknown {
+  return DICTIONARIES[locale];
+}
+
 export function getLocalesVersion(): number {
   return version;
 }
@@ -60,6 +76,18 @@ export function subscribeToLocales(onChange: () => void): () => void {
   return () => {
     listeners.delete(onChange);
   };
+}
+
+/**
+ * Für Nachlade-Daten außerhalb der Übersetzungs-Wörterbücher selbst (z. B. die
+ * lazy geladenen Suren-Namen in `surahNames.ts`), die an dieselbe Locale hängen:
+ * bumpt denselben Versionszähler wie ein Locale-Ladevorgang, damit Aufrufer von
+ * `useTranslation()` (die bereits auf `getLocalesVersion` abonniert sind) ohne
+ * eigene zusätzliche Subscription neu rendern, sobald die Daten da sind.
+ */
+export function notifyLocalesChanged(): void {
+  version += 1;
+  for (const listener of listeners) listener();
 }
 
 /**

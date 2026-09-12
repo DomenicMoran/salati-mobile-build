@@ -31,7 +31,9 @@ import { useTranslation } from '@/lib/i18n';
  * Open Food Facts), Apache-2.0 (Qwen2.5, tarteel-Whisper, transformers.js),
  * CC BY 3.0 / CC BY-SA 4.0 (zwei der drei mitgelieferten Adhan-Aufnahmen),
  * MIT/ISC (whisper.cpp, e5), KFGQPC-EULA (Hafs-Font), Anbieterbedingungen von
- * HadeethEnc.com (unveraenderte Wiedergabe + Quellennennung).
+ * HadeethEnc.com (unveraenderte Wiedergabe + Quellennennung), Nutzungs-
+ * bedingungen der Quranic Arabic Corpus (Quellennennung + Link auf
+ * corpus.quran.com) und MIT (NoorBayan/Quranic).
  *
  * ENTFALLEN am 2026-07-30: die Hadith-Datensaetze von fawazahmed0 und
  * AhmedBaset. Beide standen selbst unter freien Lizenzen, aber die decken die
@@ -77,6 +79,30 @@ const CATEGORIES: { key: string; entries: Entry[] }[] = [
         license: '@rassoulRelease',
         url: 'https://islamicbulletin.org/de/ebooks/koran/tafsir_al_quran.pdf',
         text: 'ib-rassoul-tafsir',
+      },
+      // Morphologie (Wortarten, Wurzeln, Grundformen, Merkmale) im Koran-
+      // Lexikon (RootsListView/GrammatikListView) baut auf zwei Quellen auf,
+      // die wir zu eigenen Datendateien (roots.json/lemmas.json/meta.json)
+      // verarbeiten und ueber unseren eigenen Speicher ausliefern — also
+      // Weitergabe, kein blosser API-Aufruf. Volltext der Nutzungsbedingungen
+      // liegt bei (public/licenses/quranic-arabic-corpus.txt); der Link auf
+      // corpus.quran.com ist von den Bedingungen selbst verlangt.
+      {
+        name: 'Quranic Arabic Corpus, Version 0.4 (Kais Dukes)',
+        license: '@quranicCorpusTerms',
+        // Die Bedingungen selbst nennen http://corpus.quran.com (siehe
+        // Volltext); die Seite ist unter https erreichbar, das nutzen wir für
+        // den anklickbaren Link.
+        url: 'https://corpus.quran.com',
+        text: 'quranic-arabic-corpus',
+      },
+      // Satzsyntax-Annotation (Satzrollen wie Subjekt, Objekt, Badal,
+      // Beiordnung), die die QAC-Morphologie im Lexikon ergaenzt.
+      {
+        name: 'NoorBayan/Quranic — Satzsyntax-Annotation',
+        license: 'MIT',
+        url: 'https://github.com/NoorBayan/Quranic',
+        text: 'mit',
       },
     ],
   },

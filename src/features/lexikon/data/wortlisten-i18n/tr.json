@@ -1,0 +1,992 @@
+{
+  "schema": 1,
+  "lang": "tr",
+  "kapitel": {
+    "Kapitel 1 · Ism": "Bölüm 1 · Ism",
+    "Kapitel 2 · Fragmente": "Bölüm 2 · Parçacıklar",
+    "Kapitel 3 · Verben": "Bölüm 3 · Fiiller",
+    "Kapitel 4 · Sätze": "Bölüm 4 · Cümleler",
+    "Kapitel 5 · Morphologie – Sarf": "Bölüm 5 · Morfoloji – Sarf",
+    "Kapitel 6 · Verschiedene Ausdrücke im Qur'an": "Bölüm 6 · Kur'an'daki Çeşitli İfadeler",
+    "Kapitel 7 · Komplexe Sätze": "Bölüm 7 · Karmaşık Cümleler",
+    "Kapitel 8 · Sarf – Fortgeschrittene Morphologie": "Bölüm 8 · Sarf – İleri Morfoloji",
+    "Kapitel 9 · Balagah – Die Rhetorik des Qur'ans": "Bölüm 9 · Balagah – Kur'an'ın Retoriği"
+  },
+  "wortlisten": {
+    "wortliste-h1-ism-grundvokabular": {
+      "title": "Kelime Listesi: Ism (Temel Kelimeler)",
+      "entries": [
+        "olan kimse (e.)",
+        "kova",
+        "kuyu",
+        "nefis, kişi, benlik",
+        "cehennem",
+        "gök, sema",
+        "yeryüzü, dünya",
+        "güneş",
+        "yol",
+        "ateş",
+        "cam",
+        "şarap",
+        "ev",
+        "değnek, asa",
+        "savaş",
+        "rüzgâr",
+        "kavim, millet",
+        "nesil, kuşak",
+        "insanlar",
+        "Rab, efendi",
+        "gün",
+        "işaret, ayet",
+        "hepsi, her biri",
+        "elçi, resul",
+        "azap, ceza",
+        "şey, bir şey",
+        "kitap",
+        "hak, gerçek",
+        "mümin",
+        "cennet, bahçe",
+        "rahmet, merhamet",
+        "el",
+        "göz, pınar",
+        "Allah",
+        "sahip, mâlik"
+      ]
+    },
+    "wortliste-h12-fragmente-teil1": {
+      "title": "Kelime Listesi: Parçacıklar, 1. Kısım",
+      "entries": [
+        "-den, -dan",
+        "-e, -a, kadar",
+        "hakkında, -den",
+        "üzerinde, üstünde",
+        "içinde",
+        "kadar",
+        "ile, aracılığıyla, yanında",
+        "gibi",
+        "için, -e",
+        "andolsun (yemin edatı)",
+        "andolsun (yemin edatı)",
+        "gerçekten, muhakkak",
+        "muhakkak ki",
+        "sanki",
+        "ama, fakat",
+        "keşke",
+        "belki, diye/-sın diye",
+        "bu (e.)",
+        "bu (d.)",
+        "şu/o (e.)",
+        "şu/o (d.)",
+        "bunlar (çoğul)",
+        "şunlar/onlar (çoğul)",
+        "hayır, değil",
+        "eğer",
+        "zaten, çoktan, belki",
+        "ve",
+        "sonra",
+        "önce",
+        "altında",
+        "üstünde",
+        "etrafında",
+        "arasında",
+        "arkasında",
+        "arkasında",
+        "ile",
+        "yanında",
+        "hariç, yerine",
+        "-sız, olmayan"
+      ]
+    },
+    "wortliste-h13-fragmente-teil2": {
+      "title": "Kelime Listesi: Parçacıklar, 2. Kısım",
+      "entries": [
+        "bazıları",
+        "hangileri",
+        "özellikle ...den",
+        "ışık, nur",
+        "İsrail",
+        "Nuh (Hz. Nuh)",
+        "kelime, söz",
+        "karşılık, mükâfat",
+        "barış, selam",
+        "tenzih, yücelik",
+        "deniz",
+        "yazıklar olsun",
+        "büyük",
+        "ortak",
+        "isim, ad",
+        "izin",
+        "Müslüman, teslim olan",
+        "hesap",
+        "dağ",
+        "ölü, ölen",
+        "iyilik yapan, muhsin",
+        "iyi ve uygun olan (maruf)",
+        "sapıklık, saptırma",
+        "doğru, dosdoğru (yol)",
+        "zalim, günahkâr",
+        "günah",
+        "yetki, güç, delil",
+        "daha iyi, en iyi",
+        "secde etmek",
+        "yararlanma, zevk",
+        "zaman, bir süre",
+        "unutmak",
+        "günah",
+        "yardımcı",
+        "anlaşmazlığa düşmek, ayrılığa düşmek",
+        "gönderilen, elçi",
+        "Meryem (Hz. Meryem)",
+        "fitne, imtihan"
+      ]
+    },
+    "wortliste-h27-verben-grundvokabular": {
+      "title": "Kelime Listesi: Fiiller (Temel Kelimeler)",
+      "entries": [
+        "inanmak",
+        "bilmek",
+        "yapmak",
+        "inkâr etmek, inanmamak",
+        "yapmak",
+        "yaratmak",
+        "indirmek",
+        "yalanlamak",
+        "göndermek",
+        "almak",
+        "ki, -dığı",
+        "değil (gelecek zaman olumsuzu)",
+        "diye, -sın diye",
+        "değil (geçmiş zaman olumsuzu)",
+        "-dığında, henüz değil",
+        "ve",
+        "öyleyse, ...sın",
+        "gelmek",
+        "vermek",
+        "görmek",
+        "istemek, dilemek",
+        "çağırmak, davet etmek, dua etmek",
+        "takva sahibi olmak, korkmak",
+        "hidayet etmek, yol göstermek",
+        "kulluk etmek, ibadet etmek",
+        "çıkarmak, sürmek",
+        "yemek, tüketmek",
+        "yapmak, etmek",
+        "bakmak, seyretmek",
+        "hatırlatmak, anmak",
+        "öldürmek",
+        "korkmak",
+        "geri dönmek",
+        "yüz çevirmek",
+        "işitmek, duymak"
+      ]
+    },
+    "wortliste-h37-saetze-teil1": {
+      "title": "Kelime Listesi: Cümleler, 1. Kısım",
+      "entries": [
+        "söylemek, demek",
+        "ey",
+        "istemek",
+        "takip etmek, uymak",
+        "haksızlık etmek, zulmetmek",
+        "almak",
+        "sormak",
+        "bulmak",
+        "Güçlü, Kudretli",
+        "olmak",
+        "olmamak",
+        "kalmak",
+        "olmak, hâline gelmek",
+        "daha iyi, hayır",
+        "emir, iş, mesele",
+        "bilen, âlim",
+        "kâfir",
+        "sahibi",
+        "son, ahiret, sonraki nesiller",
+        "ilah, tanrı",
+        "Musa (Hz. Musa)",
+        "kalp",
+        "zalim",
+        "aile",
+        "açık, net",
+        "merhametli",
+        "dünya (dünya hayatı)",
+        "büyük, azametli",
+        "ücret, mükâfat, mehir",
+        "hikmet sahibi, hakim",
+        "din, iman, hesap günü",
+        "söz, ifade",
+        "çok bağışlayan, gafûr",
+        "şeytan",
+        "misal, örnek"
+      ]
+    },
+    "wortliste-h38-saetze-teil2": {
+      "title": "Kelime Listesi: Cümleler, 2. Kısım",
+      "entries": [
+        "istemek, peşinden koşmak",
+        "kalkmak, ayakta durmak",
+        "grup, taraf",
+        "yasak, dokunulmaz",
+        "kaybeden, hüsrana uğrayan",
+        "zekât, sadaka",
+        "nesil, zürriyet",
+        "yetmek, kâfi gelmek",
+        "yalancı",
+        "yasaklamak, alıkoymak",
+        "son, akıbet, sonuç",
+        "yüz çevirmek",
+        "nerede, -dığı yerde",
+        "daha güçlü, daha şiddetli",
+        "fayda vermek",
+        "iyi amel, hayır",
+        "bir (tek)",
+        "iyi, temiz (d.)",
+        "bir, tek",
+        "güç, kuvvet",
+        "Âd (kavim)",
+        "belki, umulur ki",
+        "kötülük, şer",
+        "ileri gelenler, seçkinler",
+        "kalmak, ikamet etmek",
+        "asil, cömert",
+        "görmek",
+        "ahit, vaat",
+        "ordu, topluluk",
+        "taht, arş",
+        "adam, erkek",
+        "ebedî, asla",
+        "sihir, büyü",
+        "mescit, ibadet yeri",
+        "akıbet, varış yeri"
+      ]
+    },
+    "wortliste-h53-sarf-grundvokabular": {
+      "title": "Kelime Listesi: Morfoloji – Sarf (Temel Kelimeler)",
+      "entries": [
+        "girmek",
+        "mükâfatlandırmak, ödüllendirmek",
+        "itaat etmek",
+        "vahyetmek, ilham etmek",
+        "ortak koşmak",
+        "atmak, fırlatmak, isabet ettirmek, sunmak",
+        "vaat etmek",
+        "harcamak, infak etmek",
+        "bağışlamak, affetmek",
+        "saptırmak",
+        "isabet etmek, çarpmak",
+        "sevmek, hoşlanmak",
+        "tövbe etmek, dönmek",
+        "indirmek, vahyetmek",
+        "kazanmak, elde etmek",
+        "rızıklandırmak, vermek",
+        "okumak (tilavet etmek), tabi olmak",
+        "yardım etmek",
+        "hükmetmek, karar vermek",
+        "sabretmek",
+        "akmak",
+        "dokunmak",
+        "vurmak, koymak",
+        "ikame etmek, yerine getirmek",
+        "savaşmak",
+        "çıkmak",
+        "sapmak, yolunu şaşırmak",
+        "diriltmek, göndermek",
+        "hayat vermek, diriltmek",
+        "yok etmek, helak etmek",
+        "hatırlamak, öğüt almak",
+        "uydurmak (yalan)",
+        "yükseltmek, artırmak",
+        "anlamak, düşünmek",
+        "yazmak, farz kılmak"
+      ]
+    },
+    "wortliste-h54-verschiedene-ausdruecke": {
+      "title": "Kelime Listesi: Kur'an'daki Çeşitli İfadeler",
+      "entries": [
+        "veya",
+        "sonra",
+        "sonra (hemen)",
+        "bilakis",
+        "kim",
+        "ne",
+        "ne",
+        "ne zaman",
+        "nerede",
+        "nasıl",
+        "Evet/Hayır sorusu",
+        "Evet/Hayır sorusu",
+        "ne kadar harika",
+        "ne kadar korkunç",
+        "ne kadar muhteşem",
+        "ne kadar kötü",
+        "keşke (varsayımsal)",
+        "ki (isim cümlesiyle)",
+        "-dığında, o zaman (geçmiş zaman)",
+        "hariç",
+        "veya",
+        "olmasaydı, neden olmasın",
+        "...e gelince",
+        "-ecek (gelecek zaman edatı)",
+        "asla, hayır",
+        "elbette, evet kesinlikle"
+      ]
+    },
+    "wortliste-h58-komplexe-saetze-teil1": {
+      "title": "Kelime Listesi: Karmaşık Cümleler, 1. Kısım",
+      "entries": [
+        "olanlar (e. çoğul)",
+        "o (eril/nötr)",
+        "onlar (e. çoğul)",
+        "melek",
+        "veli, koruyucu",
+        "mal, servet",
+        "lütuf, rahmet, inayet",
+        "gece",
+        "namaz, dua",
+        "ilk, eski/önceki",
+        "çocuklar, torunlar",
+        "çoğu",
+        "ashab, sakinler",
+        "eş, çift",
+        "hayat",
+        "peygamber, nebi",
+        "kardeş",
+        "ebedî kalıcı",
+        "Firavun",
+        "salih",
+        "biri, birisi",
+        "âlem, âlemler",
+        "acı verici",
+        "yüz",
+        "insan",
+        "delil, apaçık işaret",
+        "az sayıda",
+        "diriliş, kıyamet",
+        "Kur'an",
+        "İbrahim (Hz. İbrahim)",
+        "ev",
+        "sağ, sağ taraf",
+        "kavim, millet, topluluk, ümmet",
+        "atalar, babalar",
+        "çok, sayısız"
+      ]
+    },
+    "wortliste-h59-komplexe-saetze-teil2": {
+      "title": "Kelime Listesi: Karmaşık Cümleler, 2. Kısım",
+      "entries": [
+        "düzeltmek, barıştırmak",
+        "bağışlama, mağfiret",
+        "kabul etmek, cevap vermek",
+        "mümine",
+        "nasıl, nereden",
+        "erkekler",
+        "merhamet etmek",
+        "fayda vermek, gerek bırakmamak",
+        "haber, söz, hadis",
+        "eşit, aynı şekilde",
+        "affetmek, bağışlamak",
+        "kapı",
+        "gafil, dikkatsiz",
+        "önceden göndermek, sunmak",
+        "başarılı olmak, kurtuluşa ermek",
+        "mücadele etmek, çaba göstermek (cihad)",
+        "yer, mekân",
+        "münafık",
+        "ay",
+        "Yusuf (Hz. Yusuf)",
+        "Lut (Hz. Lut)",
+        "korku, endişe",
+        "batıl, geçersiz, yanlışlık",
+        "sülale, ailesi",
+        "cehennem ateşi, cehennem",
+        "şahitlik, tanıklık",
+        "hepsi, tümü",
+        "yakın",
+        "süslü göstermek, süslemek",
+        "hanımı, eşi",
+        "hile, tuzak",
+        "Semud (kavim)",
+        "fark etmek, algılamak",
+        "geçmek, sona ermek",
+        "ahit, ciddi söz"
+      ]
+    },
+    "wortliste-h164-sarf-fortgeschritten": {
+      "title": "Kelime Listesi: Sarf – İleri Morfoloji",
+      "entries": [
+        "sanmak, zannetmek",
+        "şükretmek",
+        "haber vermek, bildirmek",
+        "hükmetmek, yargılamak",
+        "bırakmak, terk etmek",
+        "uyarmak",
+        "şahitlik etmek",
+        "sanmak, inanmak",
+        "çağırmak, seslenmek",
+        "sahip olmak",
+        "hamdetmek, övmek",
+        "gücü yetmek, yapabilmek",
+        "içeri sokulmak",
+        "taşımak",
+        "cezalandırmak, azap etmek",
+        "bırakmak, geride bırakmak",
+        "kibirlenmek, büyüklenmek",
+        "hidayet üzere olmak",
+        "göstermek",
+        "korkmak",
+        "ulaşmak, varmak",
+        "bağışlanma dilemek, istiğfar etmek",
+        "tevekkül etmek (Allah'a)",
+        "ölmek",
+        "yasaklamak, haram kılmak",
+        "müjde almak",
+        "razı olmak, hoşnut olmak",
+        "üzmek",
+        "kurtarmak",
+        "toplamak",
+        "alıkoymak, engellemek",
+        "reddetmek, geri vermek",
+        "tatmak",
+        "gitmek, uzaklaşmak",
+        "doğrulmak, kalkmak"
+      ]
+    },
+    "wortliste-h185-balagah-vokabular": {
+      "title": "Kelime Listesi: Balagah – Kur'an'ın Retoriği",
+      "entries": [
+        "Âdem",
+        "İsa (Hz. İsa)",
+        "günah, suç",
+        "uzak",
+        "güç, kudret, sıkıntı",
+        "takdir etmek, belirlemek, gücü yetmek",
+        "dil",
+        "başkaldırmak, azgınlık etmek",
+        "tartışmak, çekişmek",
+        "(yalnızca) Seni (vurgu edatıyla)",
+        "neredeyse yapmak, az kalsın",
+        "yiyecek, yemek",
+        "canlı, diri",
+        "dişi",
+        "daha büyük, en büyük",
+        "canını almak, öldürmek",
+        "zengin, ihtiyaçsız",
+        "grup, kısım",
+        "vekil, güvenilir kişi",
+        "buluşma, karşılaşma",
+        "karanlık",
+        "yedi",
+        "kurtarmak",
+        "secde eden",
+        "değiştirmek",
+        "yetim",
+        "muhtaç, fakir",
+        "lanetlemek",
+        "gemi",
+        "imtihan etmek, ayartmak",
+        "öğüt, hatırlatma",
+        "yükseltmek",
+        "teslim olmak",
+        "ummak, dilemek",
+        "bağışlamak, ihsan etmek"
+      ]
+    },
+    "wortliste-h20-besondere-mudhaafs": {
+      "title": "Parçacık Listesi: Özel Mudhaaflar",
+      "entries": [
+        "sonra",
+        "önce",
+        "altında",
+        "üstünde",
+        "etrafında",
+        "arasında",
+        "arkasında",
+        "arkasında",
+        "ile",
+        "yanında",
+        "hariç, yerine",
+        "-sız, olmayan",
+        "hepsi, tümü, her biri",
+        "bazıları",
+        "hangileri",
+        "özellikle ...den"
+      ],
+      "beispiele": [
+        "her şey / hepsi",
+        "bundan sonra (kelimenin tam anlamıyla: bunun ardından)",
+        "sabredenlerle birlikte"
+      ]
+    },
+    "wortliste-h21-harf-jarr": {
+      "title": "Parçacık Listesi: Harf Jarr (Edatlar)",
+      "entries": [
+        "ile",
+        "içinde",
+        "...e yemin ederim (yalnızca اللَّه ile, nadiren)",
+        "üzerine, hakkında",
+        "gibi",
+        "üzerinde",
+        "için",
+        "kadar",
+        "(yemin ederim) ...e",
+        "-e, -a",
+        "-den, -dan"
+      ]
+    },
+    "wortliste-h22-harf-nasb": {
+      "title": "Parçacık Listesi: Harf Nasb ve Anlamları",
+      "entries": [
+        "gerçekten",
+        "ki",
+        "sanki",
+        "keşke",
+        "ama, fakat",
+        "öyle ki, umulur ki, belki"
+      ]
+    },
+    "wortliste-h56-fragewoerter-uebersicht": {
+      "title": "Parçacık Listesi: Sık Kullanılan Soru Kelimeleri",
+      "entries": [
+        "Kim",
+        "Ne",
+        "Ne zaman",
+        "Nerede",
+        "Neden",
+        "Nasıl",
+        "Hangi",
+        "Evet/Hayır sorularında kullanılır"
+      ],
+      "beispiele": [
+        "Kim öğrendi?",
+        "Zaynab öğrendi mi?",
+        "Zaynab ne zaman öğrendi?",
+        "Zaynab nerede öğrendi?",
+        "Zaynab neden öğrendi?",
+        "Zaynab nasıl öğrendi?",
+        "Zaynab ne öğrendi?",
+        "Zaynab hangi okulda öğrendi?"
+      ]
+    },
+    "wortliste-h184-balagah-vokabular-teil1": {
+      "title": "Kelime Listesi: Balagah – Kur'an'ın Retoriği (1. Kısım)",
+      "entries": [
+        "oğul",
+        "salihâ (d.), iyi amel",
+        "doğru sözlü, sadık",
+        "kadınlar",
+        "kötü amel, kötülük",
+        "uyarıcı",
+        "Rahman",
+        "şehir, köy",
+        "gündüz",
+        "şahit",
+        "çocuk, oğul",
+        "güçlü, kudretli",
+        "nehir",
+        "hepsi, tümü",
+        "süre, belirlenmiş vakit (ecel)",
+        "suçlu, günahkâr",
+        "Basîr, her şeyi gören",
+        "ölüm",
+        "düşman",
+        "nimet, bereket",
+        "zarar, kötülük",
+        "muttaki",
+        "gayb",
+        "en iyi bilen",
+        "görme gücü, bakış",
+        "saat, kıyamet saati",
+        "Semî, her şeyi işiten",
+        "baba",
+        "yol",
+        "Kadîr, her şeye gücü yeten",
+        "iman",
+        "Habîr, her şeyden haberdar",
+        "müşrik",
+        "göğüs, kalp",
+        "hamd, övgü"
+      ]
+    }
+  },
+  "beispielsatzlisten": {
+    "beispielsatzliste-h55-verbindungsbuchstaben": {
+      "title": "Bağlaç Harfleri Listesi (Harf al-'Atf)",
+      "entries": [
+        {
+          "beschreibung": "ve, iki unsuru birbirine bağlar",
+          "beispiel": "Şüphesiz Allah ve melekleri Peygamber'e salât ederler."
+        },
+        {
+          "beschreibung": "veya",
+          "beispiel": "İşte onlar taş gibidir, ya da daha da serttir."
+        },
+        {
+          "beschreibung": "ve sonra (daha uzun süre)",
+          "beispiel": "Ölüyken sizi dirilten, sonra sizi öldürecek, sonra yine diriltecek olan Allah'ı nasıl inkâr edersiniz?"
+        },
+        {
+          "beschreibung": "ve sonra/hemen",
+          "beispiel": "Sonra seni şekillendirdi ve düzgün bir biçim verdi."
+        },
+        {
+          "beschreibung": "bilakis/aksine",
+          "beispiel": "Dediler ki: Allah çocuk edindi. O, bundan münezzehtir! Bilakis göklerde olan her şey O'nundur."
+        },
+        {
+          "beschreibung": "ancak/fakat",
+          "beispiel": "Fakat bugün zalimler apaçık bir sapıklık içindedir."
+        }
+      ]
+    },
+    "beispielsatzliste-h166-istifham-partikel": {
+      "title": "Istifham (Soru Edatı) – Kur'an'dan Örneklerle",
+      "entries": [
+        {
+          "beschreibung": "mi/mı",
+          "beispiel": "Siz mi daha iyi bilirsiniz, yoksa Allah mı?"
+        },
+        {
+          "beschreibung": "mi/mı",
+          "beispiel": "Sizin kesin bir bilginiz mi var?"
+        },
+        {
+          "beschreibung": "Ne",
+          "beispiel": "Sağ elindeki nedir, ey Musa?"
+        },
+        {
+          "beschreibung": "Kim",
+          "beispiel": "Kuvvetçe bizden daha güçlü kimdir?"
+        },
+        {
+          "beschreibung": "Ne zaman",
+          "beispiel": "Bu vaat ne zaman gerçekleşecek?"
+        },
+        {
+          "beschreibung": "Ne zaman",
+          "beispiel": "Hesap günü ne zamandır?"
+        },
+        {
+          "beschreibung": "Nasıl",
+          "beispiel": "Ölüleri nasıl diriltirsin?"
+        },
+        {
+          "beschreibung": "Nerede",
+          "beispiel": "Ortak koştuklarınız nerede?"
+        },
+        {
+          "beschreibung": "Nasıl",
+          "beispiel": "Onun üzerimizde nasıl bir egemenliği olabilir?"
+        },
+        {
+          "beschreibung": "Nereden",
+          "beispiel": "Ey Meryem, bu sana nereden geldi?"
+        },
+        {
+          "beschreibung": "Ne kadar",
+          "beispiel": "Ne kadar süre kaldınız?"
+        },
+        {
+          "beschreibung": "Hangi",
+          "beispiel": "İki gruptan hangisi makamca daha hayırlıdır?"
+        }
+      ]
+    }
+  },
+  "ablaufschemata": {
+    "ablaufschema-h14-gliederung-der-sprache": {
+      "title": "Dilin Yapısı (Kalaam)",
+      "schritte": [
+        "Dil (Kalaam) üç temel yapı taşına ayrılır.",
+        "Cümleler (Jumal)",
+        "Parçacıklar — bu bölümün konusu; bunlar arasında Idaafah, Harf Jarr, Harf Nasb, Mausuf-Sifah, Ism Ishaarah de bulunur",
+        "Kelimeler (tek tek kelime türleri: Ism, Fiil, Harf)"
+      ]
+    },
+    "ablaufschema-h39-mubtada-chabar": {
+      "title": "Mubtada'dan Chabar'a (İsim Cümlesi)",
+      "schritte": [
+        "Mubtada — bir isim cümlesinin (Jumla Ismiyya) konusu/öznesi",
+        "Ara soru: Mubtada'ya ne oluyor?",
+        "Chabar — Mubtada hakkındaki ifade"
+      ],
+      "beispiel": "Allah (Mubtada), her şeyin kendisine muhtaç olduğu Mutlak Varlıktır (Chabar) — İhlas Suresi 112:2."
+    }
+  },
+  "vergleichstabellen": {
+    "vergleichstabelle-h165-satzklassifikation": {
+      "title": "Balagha'da Cümle Sınıflandırmasına Örnekler",
+      "columns": {
+        "satz": "Cümle",
+        "klassifikation": "Sınıflandırma"
+      }
+    },
+    "vergleichstabelle-h167-tashbih-quran-licht": {
+      "title": "Tashbih Örneği: Kur'an, Işık Gibi",
+      "columns": {
+        "mushabbah": "Mushabbah",
+        "adat": "Adat at-Tashbih",
+        "mushabbahBihi": "Mushabbah bihi",
+        "wajh": "Wajh ash-Shabah"
+      }
+    },
+    "vergleichstabelle-h168-tashbih-mufassal-wasser": {
+      "title": "Tashbih Mufassal: Erimiş Maden Gibi Su",
+      "columns": {
+        "mushabbah": "Mushabbah",
+        "adat": "Adat",
+        "mushabbahBihi": "Mushabbah bihi",
+        "wajh": "Wajh ash-Shabah"
+      }
+    },
+    "vergleichstabelle-h169-tashbih-maqlub": {
+      "title": "Tashbih Maqlub (Ters Çevrilmiş Benzetme): Ticaret ve Faiz",
+      "columns": {
+        "form": "Biçim",
+        "mushabbah": "Mushabbah",
+        "adat": "Adat",
+        "mushabbahBihi": "Mushabbah bihi"
+      },
+      "rows": {
+        "original": "Orijinal",
+        "umgekehrt": "Ters Çevrilmiş"
+      },
+      "cells": {
+        "original": {
+          "form": "Orijinal"
+        },
+        "umgekehrt": {
+          "form": "Ters Çevrilmiş"
+        }
+      }
+    },
+    "vergleichstabelle-h170-tashbih-dimni": {
+      "title": "Tashbih Dimni (Örtük Benzetme): Sen ve Misk",
+      "columns": {
+        "mushabbah": "Mushabbah",
+        "adat": "Adat",
+        "mushabbahBihi": "Mushabbah bihi",
+        "wajh": "Wajh ash-Shabah"
+      },
+      "cells": {
+        "r1": {
+          "wajh": "(zımni)"
+        }
+      }
+    },
+    "vergleichstabelle-h171-tashbih-arten-zusammenfassung": {
+      "title": "Tashbih Türlerinin Özeti",
+      "columns": {
+        "art": "Tür",
+        "wajh": "Wajh ash-Shabah",
+        "adat": "Adat",
+        "beispiel": "Örnek"
+      },
+      "cells": {
+        "mufassalMursal": {
+          "art": "Mufassal Mursal",
+          "wajh": "belirtilmiş",
+          "adat": "belirtilmiş"
+        },
+        "mujmalMursal": {
+          "art": "Mujmal Mursal",
+          "wajh": "belirtilmemiş",
+          "adat": "belirtilmiş"
+        },
+        "mufassalMuakkad": {
+          "art": "Mufassal Mu'akkad",
+          "wajh": "belirtilmiş",
+          "adat": "belirtilmemiş"
+        },
+        "baligh": {
+          "art": "Baligh",
+          "wajh": "belirtilmemiş",
+          "adat": "belirtilmemiş"
+        }
+      }
+    },
+    "vergleichstabelle-h172-alaqa-licht-prophet": {
+      "title": "'Alaqa Örneği: Peygamber İçin Metafor Olarak Işık",
+      "columns": {
+        "woertlich": "Hakiki Anlam",
+        "alaqa": "'Alaqa",
+        "metaphorisch": "Mecazi Anlam"
+      },
+      "cells": {
+        "r1": {
+          "woertlich": "Işık",
+          "alaqa": "Tashbih",
+          "metaphorisch": "Peygamber"
+        }
+      }
+    },
+    "vergleichstabelle-h173-istiara-musarraha-koran": {
+      "title": "Isti'ara Musarraha: Karanlık ve Işık",
+      "columns": {
+        "mushabbah": "Mushabbah",
+        "adat": "Adat at-Tashbih",
+        "mushabbahBihi": "Mushabbah bihi",
+        "mustaar": "Musta'ar",
+        "wajh": "Wajh ash-Shabah"
+      },
+      "cells": {
+        "r1": {
+          "mustaar": "-",
+          "wajh": "-"
+        },
+        "r2": {
+          "mustaar": "-",
+          "wajh": "-"
+        }
+      }
+    },
+    "vergleichstabelle-h174-istiara-asliyya-tabaiyya": {
+      "title": "Isti'ara Asliyya - Isti'ara Taba'iyya Karşılaştırması",
+      "columns": {
+        "asliyya": "Isti'ara Asliyya",
+        "tabaiyya": "Isti'ara Taba'iyya"
+      },
+      "cells": {
+        "uebersetzung": {
+          "asliyya": "Aslan bir konuşma yaptı",
+          "tabaiyya": "Hatip kükredi"
+        }
+      }
+    },
+    "vergleichstabelle-h175-istiara-sterne-perlen": {
+      "title": "Isti'ara Örneği: Bir İp Üzerindeki İnciler Gibi Yıldızlar",
+      "columns": {
+        "mushabbah": "Mushabbah",
+        "adat": "Adat at-Tashbih",
+        "mushabbahBihi": "Mushabbah bihi",
+        "wajh": "Wajh ash-Shabah"
+      },
+      "cells": {
+        "r1": {
+          "wajh": "-"
+        }
+      }
+    },
+    "vergleichstabelle-h176-istiara-mulaim-loewe": {
+      "title": "Mula'im ile Isti'ara: Aslan Olarak Cesur Adam",
+      "columns": {
+        "mushabbah": "Mushabbah",
+        "mushabbahBihi": "Mushabbah bihi",
+        "wajh": "Wajh ash-Shabah",
+        "mulaim": "Mula'im al-Mushabbah bihi"
+      },
+      "cells": {
+        "r1": {
+          "mushabbah": "cesur adam",
+          "mushabbahBihi": "aslan",
+          "wajh": "-",
+          "mulaim": "kükreme"
+        }
+      }
+    },
+    "vergleichstabelle-h177-alaqa-sababiyya": {
+      "title": "'Alaqa Sababiyya: Sebep Olarak Dil ve Eller",
+      "columns": {
+        "woertlich": "Hakiki Anlam",
+        "alaqa": "'Alaqa",
+        "metaphorisch": "Mecazi Anlam"
+      },
+      "cells": {
+        "r1": {
+          "woertlich": "Dil ve eller",
+          "alaqa": "Sababiyya",
+          "metaphorisch": "Sözler ve eylemler"
+        }
+      }
+    },
+    "vergleichstabelle-h178-alaqa-musabbabiyya": {
+      "title": "'Alaqa Musabbabiyya: Yağmurun Sonucu Olarak Rızık",
+      "columns": {
+        "woertlich": "Hakiki Anlam",
+        "alaqa": "'Alaqa",
+        "metaphorisch": "Mecazi Anlam"
+      },
+      "cells": {
+        "r1": {
+          "woertlich": "Rızık",
+          "alaqa": "Musabbabiyya",
+          "metaphorisch": "Yağmur"
+        }
+      }
+    },
+    "vergleichstabelle-h179-alaqa-kulliyya": {
+      "title": "'Alaqa Kulliyya: Parmak Ucu Yerine Parmak",
+      "columns": {
+        "woertlich": "Hakiki Anlam",
+        "alaqa": "'Alaqa",
+        "metaphorisch": "Mecazi Anlam"
+      },
+      "cells": {
+        "r1": {
+          "woertlich": "Parmak",
+          "alaqa": "Kulliyya",
+          "metaphorisch": "Parmak uçları"
+        }
+      }
+    },
+    "vergleichstabelle-h180-alaqa-juziyya": {
+      "title": "'Alaqa Juz'iyya: Köle Yerine Boyun",
+      "columns": {
+        "woertlich": "Hakiki Anlam",
+        "alaqa": "'Alaqa",
+        "metaphorisch": "Mecazi Anlam"
+      },
+      "cells": {
+        "r1": {
+          "woertlich": "Boyun",
+          "alaqa": "Juz'iyya",
+          "metaphorisch": "Köle"
+        }
+      }
+    },
+    "vergleichstabelle-h181-alaqa-itibar-ma-kana": {
+      "title": "'Alaqa I'tibar ma kana: Eski Yetimler Olarak Yetimler",
+      "columns": {
+        "woertlich": "Hakiki Anlam",
+        "alaqa": "'Alaqa",
+        "metaphorisch": "Mecazi Anlam"
+      },
+      "cells": {
+        "r1": {
+          "woertlich": "Yetimler",
+          "alaqa": "I'tibar ma kana",
+          "metaphorisch": "Eskiden yetim olan yetişkinler"
+        }
+      }
+    },
+    "vergleichstabelle-h182-alaqa-itibar-ma-yakun": {
+      "title": "'Alaqa I'tibar ma yakun: Gelecekteki Şarap Olarak Şarap",
+      "columns": {
+        "woertlich": "Hakiki Anlam",
+        "alaqa": "'Alaqa",
+        "metaphorisch": "Mecazi Anlam"
+      },
+      "cells": {
+        "r1": {
+          "woertlich": "Şarap",
+          "alaqa": "I'tibar ma yakun",
+          "metaphorisch": "Üzüm"
+        }
+      }
+    },
+    "vergleichstabelle-h183-alaqa-muqaraba": {
+      "title": "'Alaqa Muqaraba: Küfre Yakın Olmak",
+      "columns": {
+        "woertlich": "Hakiki Anlam",
+        "alaqa": "'Alaqa",
+        "metaphorisch": "Mecazi Anlam"
+      },
+      "cells": {
+        "r1": {
+          "woertlich": "Kâfir olmak",
+          "alaqa": "Muqaraba",
+          "metaphorisch": "Küfre yaklaşmak"
+        }
+      }
+    }
+  }
+}

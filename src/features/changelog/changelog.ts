@@ -1435,6 +1435,131 @@ export const CHANGELOG: ChangelogVersion[] = [
       },
     ],
   },
+  {
+    version: '1.51.0',
+    date: '2026-08-25',
+    entries: [
+      {
+        type: 'feature',
+        de: 'Neues Kursmenü statt einer einzigen langen Liste: Kurs, Kapitel, Lektion. Fünf Kurse führen durch den gesamten Video- und Podcast-Bestand — Arabisch lesen, Sprache des Qur\'ans, Tajweed, Wortschatz und Tabellen, Qur\'an und Wissen.',
+        en: 'New course menu instead of one long list: course, chapter, lesson. Five courses guide you through the entire video and podcast catalogue — reading Arabic, the language of the Qur\'an, tajweed, vocabulary and tables, Qur\'an and knowledge.',
+      },
+      {
+        type: 'fix',
+        de: 'Der Fortschritt einer fertig geschauten Folge bleibt jetzt sichtbar, statt beim Abschluss spurlos gelöscht zu werden.',
+        en: 'The progress of a finished episode now stays visible instead of being silently deleted once you complete it.',
+      },
+    ],
+  },
+  {
+    version: '1.52.0',
+    date: '2026-09-06',
+    entries: [
+      {
+        type: 'feature',
+        de: 'Tippst du im Koran-Reader ein Wort an, zeigt die Analyse jetzt jeden Baustein einzeln: Vorsilbe, Wortstamm und Nachsilbe mit ihrer jeweiligen Rolle, dazu Wortart, bei einem Nomen alle vier Eigenschaften (Genus, Numerus, Kasus und Bestimmtheit), bei einem Verb Zeitform und weitere Merkmale, Verneinung, die Satzrolle sowie die Wurzel mit ihrer Häufigkeit im Koran. Jede Angabe zeigt an, ob sie im Text belegt oder nach Regel hergeleitet ist',
+        en: 'Tap a word in the Quran reader and the analysis now shows every building block on its own: prefix, stem and suffix with their role, plus the word type, for a noun all four properties (gender, number, case and definiteness), for a verb the tense and further features, negation, the sentence role, and the root with its frequency in the Quran. Each detail shows whether it is attested in the text or derived by rule',
+      },
+      {
+        type: 'feature',
+        de: 'Fünf Farbmarkierungen für den Koran-Reader, jede einzeln zuschaltbar und mit eigener Legende: Wortart, Fragmente, Bestimmtheit, Zeitform und Verneinung. Dazu die Satzstruktur je Vers – welches Wort sich auf welches andere bezieht und mit welcher Rolle',
+        en: 'Five colour highlights for the Quran reader, each switched on separately with its own legend: word type, fragments, definiteness, tense and negation. Plus the sentence structure per verse – which word relates to which, and in what role',
+      },
+      {
+        type: 'feature',
+        de: 'Neu: das Lexikon. 1.642 Wurzeln des Korans mit allen Fundstellen und einer Konkordanz-Suche, 82 Lehrtexte zur arabischen Grammatik mit 178 Koranbeispielen in allen 14 Sprachen, dazu 146 Formentabellen in fünf Kategorien zum Nachschlagen',
+        en: 'New: the lexicon. 1,642 roots of the Quran with all their occurrences and a concordance search, 82 grammar lessons with 178 Quranic examples in all 14 languages, plus 146 reference tables in five categories',
+      },
+      {
+        type: 'feature',
+        de: 'Neu: die Analyse-Übung. Du wählst einen Vers und ordnest Wort für Wort selbst zu – Wortart, dann je nach Schwierigkeitsstufe Kasus oder Zeitform und Satzrolle. Erst danach zeigt die App die Lösung mit Begründung und listet auf, was falsch war',
+        en: 'New: the analysis exercise. Pick a verse and work it out word by word – word type, then depending on the level, case or tense, and sentence role. Only afterwards does the app reveal the answer with reasoning and list what you got wrong',
+      },
+      {
+        type: 'feature',
+        de: 'Neuer Bereich „Gemeinsam beten": fünf Aufstellungen als Zeichnung, vom Imam mit einem Mitbeter bis zur mehrreihigen Gruppe, dazu dreizehn Regeln, jede mit Quelle und Sicherheitsgrad',
+        en: 'New section “Praying together”: five formations shown as diagrams, from an imam with one fellow worshipper to a multi-row group, plus thirteen rules, each with its source and level of certainty',
+      },
+      {
+        type: 'improvement',
+        de: 'Neue Videos, ihre Reihenfolge und weitere Sprachen lassen sich jetzt ergänzen, ohne auf ein App-Update zu warten',
+        en: 'New videos, their order and additional languages can now be added without waiting for an app update',
+      },
+    ],
+  },
+  {
+    version: '1.53.0',
+    date: '2026-09-06',
+    entries: [
+      {
+        type: 'feature',
+        de: 'Das Lexikon ist jetzt vollständig: 150 Formentabellen in fünf Kategorien, 17 Wort- und Partikellisten mit 494 Einträgen, zwei Beispielsatzlisten und zwei Ablaufschemata, dazu 18 Vergleichstabellen zur Rhetorik – alles in allen 14 Sprachen',
+        en: 'The lexicon is now complete: 150 reference tables in five categories, 17 word and particle lists with 494 entries, two example-sentence lists and two flowcharts, plus 18 comparison tables on rhetoric – all in 14 languages',
+      },
+      {
+        type: 'improvement',
+        de: 'Beim Laden der Wortformen im Lexikon zeigt die App jetzt den Fortschritt an und meldet einen Fehler mit Wiederholen-Möglichkeit, statt bei einer Störung wie eingefroren zu wirken',
+        en: 'When loading word forms in the lexicon, the app now shows progress and reports errors with a retry option, instead of looking frozen when something goes wrong',
+      },
+      {
+        type: 'fix',
+        de: 'Die Namen der 114 Koran-Suren stehen jetzt in allen 14 Sprachen in der jeweils eigenen Sprache, statt wie bisher meist auf Englisch – auf Arabisch etwa „الفاتحة" statt „The Opening". Für Suaheli liegt bei 88 der 114 Suren eine belegte Bedeutung vor, bei den übrigen zeigt die App die Umschrift, statt eine Bedeutung zu erfinden',
+        en: 'The names of all 114 Quran surahs now appear in their own language in all 14 languages, instead of mostly in English as before – in Arabic “الفاتحة” instead of “The Opening”. For Swahili, 88 of the 114 surahs have a documented meaning; for the rest the app shows the transliteration rather than a guessed meaning',
+      },
+      {
+        type: 'fix',
+        de: 'Die Aufstellungs-Diagramme für gemeinsames Beten zeigten bei größeren Gruppen Fehler: Auf dem Fernseher wurden Titel und die letzte Personenreihe abgeschnitten, und arabische Beschriftungen zerfielen in Einzelzeichen. Beides ist jetzt behoben, auf Handy und Fernseher',
+        en: 'The formation diagrams for praying together had errors with larger groups: on TV, titles and the last row of people were cut off, and Arabic labels fell apart into disconnected letters. Both are now fixed, on phone and TV',
+      },
+      {
+        type: 'fix',
+        de: 'Im Qibla-Kompass zerfielen die arabischen Himmelsrichtungen ebenfalls in Einzelzeichen – auch das ist jetzt behoben',
+        en: 'In the Qibla compass, the Arabic cardinal directions also fell apart into disconnected letters – that is fixed now too',
+      },
+      {
+        type: 'fix',
+        de: 'In der Konkordanz und bei den Lizenzen stand jeweils an einer Stelle ein roher interner Schlüssel statt einer lesbaren Überschrift – behoben',
+        en: 'In the concordance and in the licenses screen, one heading each showed a raw internal key instead of readable text – fixed',
+      },
+    ],
+  },
+  {
+    version: '1.53.1',
+    date: '2026-09-06',
+    entries: [
+      {
+        type: 'improvement',
+        de: 'Die drei Gebetsruf-Aufnahmen klingen jetzt etwas klarer, vor allem bei Konsonanten und Zischlauten – die Lautstärke bleibt wie gewohnt. Kein dramatischer Sprung, aber ein hörbarer Gewinn gegenüber den bisherigen Aufnahmen',
+        en: 'The three call-to-prayer recordings now sound a bit clearer, especially on consonants and sibilants – volume stays the same as before. Not a dramatic leap, but a noticeable improvement over the previous recordings',
+      },
+    ],
+  },
+  {
+    version: '1.54.0',
+    date: '2026-09-07',
+    entries: [
+      {
+        type: 'feature',
+        de: 'Die Wort-für-Wort-Bedeutungen im Koran-Leser gibt es jetzt auch auf Türkisch, Französisch, Persisch, Indonesisch, Bengalisch und Urdu – bisher standen sie nur auf Englisch bereit. Zusammengehörende arabische Wörter tragen dabei eine gemeinsame Bedeutung, فِى ٱلْأَرْضِ steht auf Türkisch etwa als „yerde". Fehlt für einen Vers noch eine Übersetzung, bleibt er ganz auf Englisch statt halb übersetzt',
+        en: 'Word-by-word meanings in the Quran reader are now available in Turkish, French, Persian, Indonesian, Bengali and Urdu as well – until now they existed only in English. Arabic words that belong together carry one shared meaning; فِى ٱلْأَرْضِ, for example, reads “yerde” in Turkish. Where a verse has no translation yet, it stays entirely in English instead of half translated',
+      },
+      {
+        type: 'improvement',
+        de: 'Die drei Gebetsruf-Aufnahmen klingen etwas klarer, vor allem bei Konsonanten und Zischlauten – bei gleicher Lautstärke. Kein dramatischer Sprung, aber ein hörbarer Gewinn gegenüber den bisherigen Aufnahmen',
+        en: 'The three call-to-prayer recordings sound a little clearer, especially on consonants and sibilants – at the same volume as before. Not a dramatic leap, but an audible gain over the earlier recordings',
+      },
+      {
+        type: 'fix',
+        de: 'Die App warf beim Start bereits geladene Inhalte weg und musste sie erneut aus dem Netz holen. Das ist behoben: Sie ist nach dem Öffnen schneller da und verbraucht weniger Daten',
+        en: 'On every start the app threw away content it had already loaded and had to fetch it from the network again. That is fixed: it is ready faster after opening and uses less data',
+      },
+      {
+        type: 'fix',
+        de: 'Die App zeigt beim Start jetzt gleich die eingestellte Sprache. Bisher stand die Oberfläche einen Moment lang in der falschen Sprache und Leserichtung, bevor sie umsprang',
+        en: 'The app now shows the language you set right from the start. Until now, the interface briefly appeared in the wrong language and reading direction before switching',
+      },
+    ],
+  },
 ];
 /** Neueste Version zuerst - für die Anzeige im Changelog-Screen. */
 export function changelogNewestFirst(): ChangelogVersion[] {

@@ -1,0 +1,992 @@
+{
+  "schema": 1,
+  "lang": "en",
+  "kapitel": {
+    "Kapitel 1 · Ism": "Chapter 1 · Ism",
+    "Kapitel 2 · Fragmente": "Chapter 2 · Fragments",
+    "Kapitel 3 · Verben": "Chapter 3 · Verbs",
+    "Kapitel 4 · Sätze": "Chapter 4 · Sentences",
+    "Kapitel 5 · Morphologie – Sarf": "Chapter 5 · Morphology – Sarf",
+    "Kapitel 6 · Verschiedene Ausdrücke im Qur'an": "Chapter 6 · Various Expressions in the Qur'an",
+    "Kapitel 7 · Komplexe Sätze": "Chapter 7 · Complex Sentences",
+    "Kapitel 8 · Sarf – Fortgeschrittene Morphologie": "Chapter 8 · Sarf – Advanced Morphology",
+    "Kapitel 9 · Balagah – Die Rhetorik des Qur'ans": "Chapter 9 · Balagah – The Rhetoric of the Qur'an"
+  },
+  "wortlisten": {
+    "wortliste-h1-ism-grundvokabular": {
+      "title": "Vocabulary list: Ism (basic vocabulary)",
+      "entries": [
+        "the one who (m.)",
+        "bucket",
+        "well",
+        "soul, person, self",
+        "hell",
+        "heaven, sky",
+        "earth",
+        "sun",
+        "way, path",
+        "fire",
+        "glass",
+        "wine",
+        "house",
+        "staff",
+        "war",
+        "wind",
+        "people, nation",
+        "generation",
+        "people, mankind",
+        "lord",
+        "day",
+        "sign, verse",
+        "all, every",
+        "messenger",
+        "punishment",
+        "thing, something",
+        "book",
+        "truth, right",
+        "believer",
+        "paradise, garden",
+        "mercy, grace",
+        "hand",
+        "eye, source",
+        "Allah",
+        "owner, possessor"
+      ]
+    },
+    "wortliste-h12-fragmente-teil1": {
+      "title": "Vocabulary list: Fragments, Part 1",
+      "entries": [
+        "from, out of",
+        "to, toward, until",
+        "about, of",
+        "on, over",
+        "in",
+        "until",
+        "with, through, by",
+        "like, as",
+        "for, to",
+        "by (oath)",
+        "by (oath)",
+        "indeed, truly",
+        "indeed, that",
+        "as if",
+        "but, however",
+        "if only",
+        "perhaps, so that",
+        "this (m.)",
+        "this (f.)",
+        "that (m.)",
+        "that (f.)",
+        "these (plural)",
+        "those (plural)",
+        "no, not",
+        "if",
+        "already, indeed, perhaps",
+        "and",
+        "after",
+        "before",
+        "under",
+        "above",
+        "around",
+        "between",
+        "behind",
+        "behind",
+        "with",
+        "at, with",
+        "except, instead of",
+        "without, non-"
+      ]
+    },
+    "wortliste-h13-fragmente-teil2": {
+      "title": "Vocabulary list: Fragments, Part 2",
+      "entries": [
+        "some of",
+        "which of",
+        "especially of, in particular",
+        "light",
+        "Israel",
+        "Nuh (Noah)",
+        "word",
+        "reward, recompense",
+        "peace",
+        "praise be, glory",
+        "sea",
+        "woe",
+        "great, big",
+        "partner, associate",
+        "name",
+        "permission",
+        "Muslim, one who submits",
+        "reckoning",
+        "mountain",
+        "dead, deceased",
+        "doer of good",
+        "what is right, what is approved",
+        "error, misguidance",
+        "straight (path)",
+        "transgressor",
+        "sin",
+        "authority, power, proof",
+        "better, best",
+        "to prostrate",
+        "enjoyment, benefit",
+        "time, while",
+        "to forget",
+        "sin",
+        "helper",
+        "to disagree, to differ",
+        "messenger, sent",
+        "Maryam (Mary)",
+        "temptation, trial"
+      ]
+    },
+    "wortliste-h27-verben-grundvokabular": {
+      "title": "Vocabulary list: Verbs (basic vocabulary)",
+      "entries": [
+        "to believe",
+        "to know",
+        "to make, to do",
+        "to deny, to disbelieve",
+        "to make, to do",
+        "to create",
+        "to send down",
+        "to deny, to call a lie",
+        "to send",
+        "to take",
+        "that",
+        "not (future)",
+        "so that",
+        "not (past)",
+        "when, not yet",
+        "and",
+        "so that it should",
+        "to come",
+        "to give",
+        "to see",
+        "to want, to wish",
+        "to call, to invite, to pray",
+        "to fear God, to fear",
+        "to guide, to lead",
+        "to serve, to worship",
+        "to bring forth, to drive out",
+        "to eat, to consume",
+        "to do, to make",
+        "to look, to gaze",
+        "to remind, to mention",
+        "to kill",
+        "to fear, to be afraid",
+        "to return",
+        "to turn away",
+        "to hear"
+      ]
+    },
+    "wortliste-h37-saetze-teil1": {
+      "title": "Vocabulary list: Sentences, Part 1",
+      "entries": [
+        "to say",
+        "Oh",
+        "to want",
+        "to follow",
+        "to do wrong",
+        "to take",
+        "to ask",
+        "to find",
+        "Powerful, Mighty",
+        "to be",
+        "not to be",
+        "to remain",
+        "to become",
+        "better, the good",
+        "command, matter, affair",
+        "knowing, learned",
+        "disbeliever",
+        "possessor, owner of",
+        "last, hereafter, later generations",
+        "God",
+        "Musa (Moses)",
+        "heart",
+        "wrongdoer",
+        "family",
+        "clear, evident",
+        "merciful",
+        "world (worldly life)",
+        "great, mighty",
+        "reward, recompense, dowry",
+        "wise",
+        "faith, religion, day of judgment",
+        "speech, statement",
+        "all-forgiving",
+        "devil, Satan",
+        "parable, example"
+      ]
+    },
+    "wortliste-h38-saetze-teil2": {
+      "title": "Vocabulary list: Sentences, Part 2",
+      "entries": [
+        "to seek, to strive for",
+        "to stand up, to stand",
+        "group, party",
+        "forbidden, inviolable",
+        "loser",
+        "zakat, alms",
+        "offspring",
+        "to suffice",
+        "liar",
+        "to forbid, to prevent",
+        "end, outcome, consequence",
+        "to turn away",
+        "where, wherever",
+        "stronger, more severe",
+        "to benefit",
+        "good deed, good",
+        "one (single, f.)",
+        "good, pure (f.)",
+        "one, sole",
+        "strength, power",
+        "Aad (people)",
+        "perhaps, may",
+        "evil, wrongdoing",
+        "the nobles, the notables",
+        "to dwell, to remain",
+        "noble, generous",
+        "to see, to behold",
+        "covenant, promise",
+        "army, host",
+        "throne",
+        "man",
+        "eternal, never",
+        "sorcery, magic",
+        "mosque, place of prayer",
+        "fate, destination"
+      ]
+    },
+    "wortliste-h53-sarf-grundvokabular": {
+      "title": "Vocabulary list: Morphology – Sarf (basic vocabulary)",
+      "entries": [
+        "to enter",
+        "to reward",
+        "to obey",
+        "to reveal, to inspire",
+        "to associate partners (with Allah)",
+        "to throw, to cast, to strike, to offer",
+        "to promise",
+        "to spend",
+        "to forgive",
+        "to lead astray, to mislead",
+        "to strike, to befall",
+        "to love, to like",
+        "to repent, to turn back",
+        "to send down, to reveal",
+        "to earn, to acquire",
+        "to provide, to give",
+        "to recite, to follow",
+        "to help",
+        "to decide, to judge",
+        "to be patient",
+        "to flow, to run",
+        "to touch",
+        "to strike, to set up",
+        "to establish, to maintain",
+        "to fight",
+        "to go out, to come out",
+        "to go astray, to stray",
+        "to raise up, to send",
+        "to bring to life",
+        "to destroy",
+        "to remember, to take heed",
+        "to invent (a lie)",
+        "to raise, to increase",
+        "to understand, to reflect",
+        "to write, to prescribe"
+      ]
+    },
+    "wortliste-h54-verschiedene-ausdruecke": {
+      "title": "Vocabulary list: Various Expressions in the Qur'an",
+      "entries": [
+        "or",
+        "and then",
+        "and then (immediately)",
+        "rather",
+        "who",
+        "what",
+        "what",
+        "when",
+        "where",
+        "how",
+        "yes/no question",
+        "yes/no question",
+        "how wonderful",
+        "how terrible",
+        "how great",
+        "how bad",
+        "would have (hypothetical)",
+        "that (with nominal sentence)",
+        "when, at that time (past)",
+        "except",
+        "or",
+        "were it not, why not",
+        "as for",
+        "will (future particle)",
+        "by no means, no",
+        "yet, indeed"
+      ]
+    },
+    "wortliste-h58-komplexe-saetze-teil1": {
+      "title": "Vocabulary list: Complex Sentences, Part 1",
+      "entries": [
+        "those who (m. pl.)",
+        "he, it",
+        "they (m. pl.)",
+        "angel",
+        "protector, guardian",
+        "wealth, riches",
+        "favor, mercy, grace",
+        "night",
+        "prayer",
+        "first, former",
+        "children, offspring",
+        "most",
+        "companions, dwellers",
+        "pair, spouse",
+        "life",
+        "prophet",
+        "brother",
+        "abiding forever",
+        "Pharaoh",
+        "righteous",
+        "one, someone",
+        "world, worlds",
+        "painful",
+        "face",
+        "human being",
+        "proof, clear sign",
+        "few",
+        "resurrection",
+        "Qur'an",
+        "Ibrahim / Abraham",
+        "house",
+        "right, right side",
+        "people, nation, community, faith community",
+        "ancestors, forefathers",
+        "much, numerous"
+      ]
+    },
+    "wortliste-h59-komplexe-saetze-teil2": {
+      "title": "Vocabulary list: Complex Sentences, Part 2",
+      "entries": [
+        "to set right, to reconcile",
+        "forgiveness",
+        "to answer, to respond",
+        "believing woman",
+        "how, from where",
+        "men",
+        "to have mercy",
+        "to benefit, to make unnecessary",
+        "report, narration, hadith",
+        "equal, equally",
+        "to pardon, to forgive",
+        "door, gate",
+        "heedless, careless",
+        "to send ahead, to offer",
+        "to succeed, to prosper",
+        "to fight, to strive (jihad)",
+        "place, location",
+        "hypocrite",
+        "moon",
+        "Yusuf (Joseph)",
+        "Lut (Lot)",
+        "fear, dread",
+        "false, void, falsehood",
+        "clan, family of",
+        "hellfire, hell",
+        "testimony",
+        "all together, entire",
+        "near",
+        "to make appear beautiful, to adorn",
+        "wife of, spouse",
+        "guile, scheming",
+        "Thamud (people)",
+        "to notice, to perceive",
+        "to pass, to elapse",
+        "covenant, solemn promise"
+      ]
+    },
+    "wortliste-h164-sarf-fortgeschritten": {
+      "title": "Vocabulary list: Sarf – Advanced Morphology",
+      "entries": [
+        "to think, to suppose",
+        "to thank",
+        "to announce, to inform",
+        "to judge, to decide",
+        "to leave, to abandon",
+        "to warn",
+        "to bear witness",
+        "to think, to believe",
+        "to call",
+        "to possess",
+        "to praise",
+        "to be able, can",
+        "to be brought in",
+        "to carry",
+        "to punish, to torment",
+        "to let, to leave behind",
+        "to show arrogance",
+        "to be rightly guided",
+        "to show",
+        "to fear",
+        "to reach, to attain",
+        "to ask for forgiveness",
+        "to trust (in Allah)",
+        "to die",
+        "to forbid, to declare forbidden",
+        "to receive good tidings",
+        "to be pleased, to have contentment",
+        "to sadden, to grieve",
+        "to save, to rescue",
+        "to gather",
+        "to keep from, to turn away",
+        "to reject, to give back",
+        "to taste",
+        "to go, to depart",
+        "to straighten up, to rise"
+      ]
+    },
+    "wortliste-h185-balagah-vokabular": {
+      "title": "Vocabulary list: Balagah – The Rhetoric of the Qur'an",
+      "entries": [
+        "Adam",
+        "Isa (Jesus)",
+        "sin, guilt",
+        "far, distant",
+        "force, power, hardship",
+        "to measure, to determine, to have power over",
+        "tongue, language",
+        "to rebel, to transgress",
+        "to argue, to dispute",
+        "(only) You (emphasis particle)",
+        "to almost do, nearly",
+        "food, meal",
+        "alive, living",
+        "female",
+        "greater, greatest",
+        "to recall, to cause to die",
+        "rich, self-sufficient",
+        "group, part",
+        "guardian, trustee",
+        "meeting, encounter",
+        "darkness",
+        "seven",
+        "to save, to rescue",
+        "prostrating",
+        "to exchange, to change",
+        "orphan",
+        "needy, poor",
+        "to curse",
+        "ship, ark",
+        "to test, to tempt",
+        "admonition, reminder",
+        "to raise, to elevate",
+        "to submit, to surrender",
+        "to hope, to hope for",
+        "to give, to grant"
+      ]
+    },
+    "wortliste-h20-besondere-mudhaafs": {
+      "title": "Particle list: Special Mudhaafs",
+      "entries": [
+        "after",
+        "before",
+        "under",
+        "above",
+        "around",
+        "between",
+        "behind",
+        "behind",
+        "with",
+        "at, with",
+        "except, instead of",
+        "without, non-",
+        "all, all of, every",
+        "some of",
+        "which of",
+        "especially of, in particular"
+      ],
+      "beispiele": [
+        "every thing / everything",
+        "after that (lit. after this)",
+        "with the patient"
+      ]
+    },
+    "wortliste-h21-harf-jarr": {
+      "title": "Particle list: Harf Jarr (prepositions)",
+      "entries": [
+        "with",
+        "in",
+        "I swear by (only with اللَّه, rare)",
+        "about",
+        "like",
+        "on",
+        "for",
+        "until",
+        "(I swear) by",
+        "to",
+        "from, out of"
+      ]
+    },
+    "wortliste-h22-harf-nasb": {
+      "title": "Particle list: Harf Nasb and their meaning",
+      "entries": [
+        "indeed",
+        "that",
+        "as if",
+        "if only",
+        "but, however",
+        "so that, hopefully, perhaps"
+      ]
+    },
+    "wortliste-h56-fragewoerter-uebersicht": {
+      "title": "Particle list: Commonly used question words",
+      "entries": [
+        "Who",
+        "What",
+        "When",
+        "Where",
+        "Why",
+        "How",
+        "Which",
+        "Used for yes/no questions"
+      ],
+      "beispiele": [
+        "Who studied?",
+        "Did Zaynab study?",
+        "When did Zaynab study?",
+        "Where did Zaynab study?",
+        "Why did Zaynab study?",
+        "How did Zaynab study?",
+        "What did Zaynab study?",
+        "At which school did Zaynab study?"
+      ]
+    },
+    "wortliste-h184-balagah-vokabular-teil1": {
+      "title": "Vocabulary list: Balagah – The Rhetoric of the Qur'an (Part 1)",
+      "entries": [
+        "son",
+        "righteous (f.), good deed",
+        "truthful",
+        "women",
+        "bad deed, evil",
+        "warner",
+        "the All-Merciful",
+        "city, village",
+        "day (time of day)",
+        "witness",
+        "child, son",
+        "powerful, strong",
+        "river",
+        "all, entirety",
+        "term, appointed time",
+        "criminal",
+        "All-Seeing",
+        "death",
+        "enemy",
+        "favor, blessing",
+        "harm, evil",
+        "God-fearing person",
+        "the unseen",
+        "best knowing",
+        "eyesight, gaze",
+        "hour",
+        "All-Hearing",
+        "father",
+        "way, path",
+        "All-Powerful",
+        "faith",
+        "All-Aware",
+        "idol-worshipper, polytheist",
+        "chest, breast",
+        "praise, glory"
+      ]
+    }
+  },
+  "beispielsatzlisten": {
+    "beispielsatzliste-h55-verbindungsbuchstaben": {
+      "title": "List of Connecting Letters (Harf al-'Atf)",
+      "entries": [
+        {
+          "beschreibung": "and, connects two elements",
+          "beispiel": "Indeed, Allah and His angels send blessings upon the Prophet."
+        },
+        {
+          "beschreibung": "or",
+          "beispiel": "So they are like stones, or harder."
+        },
+        {
+          "beschreibung": "and then (longer duration)",
+          "beispiel": "How can you disbelieve in Allah, seeing that you were dead and He gave you life; then He will cause you to die, then bring you back to life again."
+        },
+        {
+          "beschreibung": "and then/immediately",
+          "beispiel": "Then He shaped you and proportioned you."
+        },
+        {
+          "beschreibung": "rather/instead",
+          "beispiel": "And they said: Allah has taken a son. Glory be to Him! Rather, to Him belongs whatever is in the heavens."
+        },
+        {
+          "beschreibung": "however",
+          "beispiel": "Yet the wrongdoers today are in manifest error."
+        }
+      ]
+    },
+    "beispielsatzliste-h166-istifham-partikel": {
+      "title": "Istifham (Interrogative Particles) with Examples from the Qur'an",
+      "entries": [
+        {
+          "beschreibung": "Is/Are",
+          "beispiel": "Do you know better, or does Allah?"
+        },
+        {
+          "beschreibung": "Is/Are",
+          "beispiel": "Do you have any certain knowledge?"
+        },
+        {
+          "beschreibung": "What",
+          "beispiel": "And what is that in your right hand, O Musa?"
+        },
+        {
+          "beschreibung": "Who",
+          "beispiel": "Who is stronger than us in might?"
+        },
+        {
+          "beschreibung": "When",
+          "beispiel": "When will this promise come to pass?"
+        },
+        {
+          "beschreibung": "When",
+          "beispiel": "When is the Day of Judgment?"
+        },
+        {
+          "beschreibung": "How",
+          "beispiel": "How do you give life to the dead?"
+        },
+        {
+          "beschreibung": "Where",
+          "beispiel": "Where are those you regarded as partners?"
+        },
+        {
+          "beschreibung": "How",
+          "beispiel": "How could he have authority over us?"
+        },
+        {
+          "beschreibung": "From where",
+          "beispiel": "O Maryam, from where do you have this?"
+        },
+        {
+          "beschreibung": "How many",
+          "beispiel": "How long have you remained?"
+        },
+        {
+          "beschreibung": "Which",
+          "beispiel": "Which of the two groups is better in position?"
+        }
+      ]
+    }
+  },
+  "ablaufschemata": {
+    "ablaufschema-h14-gliederung-der-sprache": {
+      "title": "The Structure of Language (Kalaam)",
+      "schritte": [
+        "Language (Kalaam) is divided into three basic building blocks.",
+        "Sentences (Jumal)",
+        "Fragments — the topic of this chapter, including Idaafah, Harf Jarr, Harf Nasb, Mausuf-Sifah, Ism Ishaarah",
+        "Words (individual word classes: Ism, Fiil, Harf)"
+      ]
+    },
+    "ablaufschema-h39-mubtada-chabar": {
+      "title": "From Mubtada to Chabar (Nominal Sentence)",
+      "schritte": [
+        "Mubtada — the topic/subject of a nominal sentence (Jumla Ismiyya)",
+        "Interim question: What about the Mubtada?",
+        "Chabar — the statement about the Mubtada"
+      ],
+      "beispiel": "Allah (Mubtada) is the Absolute, upon whom all depend (Chabar) — Surah Al-Ikhlas 112:2."
+    }
+  },
+  "vergleichstabellen": {
+    "vergleichstabelle-h165-satzklassifikation": {
+      "title": "Examples of sentence classification in Balagha",
+      "columns": {
+        "satz": "Sentence",
+        "klassifikation": "Classification"
+      }
+    },
+    "vergleichstabelle-h167-tashbih-quran-licht": {
+      "title": "Tashbih example: The Qur'an as light",
+      "columns": {
+        "mushabbah": "Mushabbah",
+        "adat": "Adat at-Tashbih",
+        "mushabbahBihi": "Mushabbah bihi",
+        "wajh": "Wajh ash-Shabah"
+      }
+    },
+    "vergleichstabelle-h168-tashbih-mufassal-wasser": {
+      "title": "Tashbih Mufassal: water as molten metal",
+      "columns": {
+        "mushabbah": "Mushabbah",
+        "adat": "Adat",
+        "mushabbahBihi": "Mushabbah bihi",
+        "wajh": "Wajh ash-Shabah"
+      }
+    },
+    "vergleichstabelle-h169-tashbih-maqlub": {
+      "title": "Tashbih Maqlub (inverted comparison): trade and usury",
+      "columns": {
+        "form": "Form",
+        "mushabbah": "Mushabbah",
+        "adat": "Adat",
+        "mushabbahBihi": "Mushabbah bihi"
+      },
+      "rows": {
+        "original": "Original",
+        "umgekehrt": "Inverted"
+      },
+      "cells": {
+        "original": {
+          "form": "Original"
+        },
+        "umgekehrt": {
+          "form": "Inverted"
+        }
+      }
+    },
+    "vergleichstabelle-h170-tashbih-dimni": {
+      "title": "Tashbih Dimni (implicit comparison): you and musk",
+      "columns": {
+        "mushabbah": "Mushabbah",
+        "adat": "Adat",
+        "mushabbahBihi": "Mushabbah bihi",
+        "wajh": "Wajh ash-Shabah"
+      },
+      "cells": {
+        "r1": {
+          "wajh": "(implicit)"
+        }
+      }
+    },
+    "vergleichstabelle-h171-tashbih-arten-zusammenfassung": {
+      "title": "Summary of the types of Tashbih",
+      "columns": {
+        "art": "Type",
+        "wajh": "Wajh ash-Shabah",
+        "adat": "Adat",
+        "beispiel": "Example"
+      },
+      "cells": {
+        "mufassalMursal": {
+          "art": "Mufassal Mursal",
+          "wajh": "mentioned",
+          "adat": "mentioned"
+        },
+        "mujmalMursal": {
+          "art": "Mujmal Mursal",
+          "wajh": "omitted",
+          "adat": "mentioned"
+        },
+        "mufassalMuakkad": {
+          "art": "Mufassal Mu'akkad, emphasized",
+          "wajh": "mentioned",
+          "adat": "omitted"
+        },
+        "baligh": {
+          "art": "Baligh",
+          "wajh": "omitted",
+          "adat": "omitted"
+        }
+      }
+    },
+    "vergleichstabelle-h172-alaqa-licht-prophet": {
+      "title": "'Alaqa example: light as a metaphor for the Prophet",
+      "columns": {
+        "woertlich": "Literal meaning",
+        "alaqa": "'Alaqa",
+        "metaphorisch": "Metaphorical meaning"
+      },
+      "cells": {
+        "r1": {
+          "woertlich": "Light",
+          "alaqa": "Tashbih",
+          "metaphorisch": "Prophet"
+        }
+      }
+    },
+    "vergleichstabelle-h173-istiara-musarraha-koran": {
+      "title": "Isti'ara Musarraha: darkness and light",
+      "columns": {
+        "mushabbah": "Mushabbah",
+        "adat": "Adat at-Tashbih",
+        "mushabbahBihi": "Mushabbah bihi",
+        "mustaar": "Musta'ar",
+        "wajh": "Wajh ash-Shabah"
+      },
+      "cells": {
+        "r1": {
+          "mustaar": "-",
+          "wajh": "-"
+        },
+        "r2": {
+          "mustaar": "-",
+          "wajh": "-"
+        }
+      }
+    },
+    "vergleichstabelle-h174-istiara-asliyya-tabaiyya": {
+      "title": "Isti'ara Asliyya vs. Isti'ara Taba'iyya (original vs. subsidiary)",
+      "columns": {
+        "asliyya": "Asliyya",
+        "tabaiyya": "Taba'iyya"
+      },
+      "cells": {
+        "uebersetzung": {
+          "asliyya": "The lion gave a speech",
+          "tabaiyya": "The speaker roared"
+        }
+      }
+    },
+    "vergleichstabelle-h175-istiara-sterne-perlen": {
+      "title": "Isti'ara example: stars like pearls on a string",
+      "columns": {
+        "mushabbah": "Mushabbah",
+        "adat": "Adat at-Tashbih",
+        "mushabbahBihi": "Mushabbah bihi",
+        "wajh": "Wajh ash-Shabah"
+      },
+      "cells": {
+        "r1": {
+          "wajh": "-"
+        }
+      }
+    },
+    "vergleichstabelle-h176-istiara-mulaim-loewe": {
+      "title": "Isti'ara with Mula'im: the brave man as a lion",
+      "columns": {
+        "mushabbah": "Mushabbah",
+        "mushabbahBihi": "Mushabbah bihi",
+        "wajh": "Wajh ash-Shabah",
+        "mulaim": "Mula'im al-Mushabbah bihi (suitable trait)"
+      },
+      "cells": {
+        "r1": {
+          "mushabbah": "brave man",
+          "mushabbahBihi": "lion",
+          "wajh": "-",
+          "mulaim": "roaring"
+        }
+      }
+    },
+    "vergleichstabelle-h177-alaqa-sababiyya": {
+      "title": "'Alaqa Sababiyya: tongue and hands as cause",
+      "columns": {
+        "woertlich": "Literal meaning",
+        "alaqa": "'Alaqa",
+        "metaphorisch": "Metaphorical meaning"
+      },
+      "cells": {
+        "r1": {
+          "woertlich": "Tongue and hands",
+          "alaqa": "Sababiyya",
+          "metaphorisch": "Words and deeds"
+        }
+      }
+    },
+    "vergleichstabelle-h178-alaqa-musabbabiyya": {
+      "title": "'Alaqa Musabbabiyya: provision as a consequence of rain",
+      "columns": {
+        "woertlich": "Literal meaning",
+        "alaqa": "'Alaqa",
+        "metaphorisch": "Metaphorical meaning"
+      },
+      "cells": {
+        "r1": {
+          "woertlich": "Provision",
+          "alaqa": "Musabbabiyya",
+          "metaphorisch": "Rain"
+        }
+      }
+    },
+    "vergleichstabelle-h179-alaqa-kulliyya": {
+      "title": "'Alaqa Kulliyya: finger for fingertip",
+      "columns": {
+        "woertlich": "Literal meaning",
+        "alaqa": "'Alaqa",
+        "metaphorisch": "Metaphorical meaning"
+      },
+      "cells": {
+        "r1": {
+          "woertlich": "Finger",
+          "alaqa": "Kulliyya",
+          "metaphorisch": "Fingertip"
+        }
+      }
+    },
+    "vergleichstabelle-h180-alaqa-juziyya": {
+      "title": "'Alaqa Juz'iyya: neck for slave",
+      "columns": {
+        "woertlich": "Literal meaning",
+        "alaqa": "'Alaqa",
+        "metaphorisch": "Metaphorical meaning"
+      },
+      "cells": {
+        "r1": {
+          "woertlich": "Neck",
+          "alaqa": "Juz'iyya",
+          "metaphorisch": "Slave"
+        }
+      }
+    },
+    "vergleichstabelle-h181-alaqa-itibar-ma-kana": {
+      "title": "'Alaqa I'tibar ma kana: orphans as former orphans",
+      "columns": {
+        "woertlich": "Literal meaning",
+        "alaqa": "'Alaqa",
+        "metaphorisch": "Metaphorical meaning"
+      },
+      "cells": {
+        "r1": {
+          "woertlich": "Orphans",
+          "alaqa": "I'tibar ma kana",
+          "metaphorisch": "Adults who were orphans"
+        }
+      }
+    },
+    "vergleichstabelle-h182-alaqa-itibar-ma-yakun": {
+      "title": "'Alaqa I'tibar ma yakun: wine as future wine",
+      "columns": {
+        "woertlich": "Literal meaning",
+        "alaqa": "'Alaqa",
+        "metaphorisch": "Metaphorical meaning"
+      },
+      "cells": {
+        "r1": {
+          "woertlich": "Wine",
+          "alaqa": "I'tibar ma yakun (future)",
+          "metaphorisch": "Grapes"
+        }
+      }
+    },
+    "vergleichstabelle-h183-alaqa-muqaraba": {
+      "title": "'Alaqa Muqaraba: close to disbelief",
+      "columns": {
+        "woertlich": "Literal meaning",
+        "alaqa": "'Alaqa",
+        "metaphorisch": "Metaphorical meaning"
+      },
+      "cells": {
+        "r1": {
+          "woertlich": "Becoming a disbeliever",
+          "alaqa": "Muqaraba",
+          "metaphorisch": "Coming close to disbelief"
+        }
+      }
+    }
+  }
+}

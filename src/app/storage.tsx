@@ -13,10 +13,13 @@ import {
   MODELL_GROESSE_BYTES,
   aktuelleModellGroesse,
   clearAppCache,
+  deleteDataStore,
   deleteKiModel,
   deleteWhisperModel,
   formatBytes,
   getStorageOverview,
+  type DataStoreKey,
+  type DeletableDataStoreKey,
   type StorageOverview,
 } from '@/features/settings/storage';
 import { whisperDownloadLaeuft, whisperModellHerunterladen } from '@/features/hifz/whisperModel';
@@ -36,6 +39,19 @@ import { isRtlLocale } from '@/lib/locale-detect';
 // für Rezitator-Audio/Modelle liegt weiterhin in offline-audio.ts/model.ts/
 // whisperModel.ts, hier nur Größenberechnung (features/settings/storage.ts)
 // + UI, die diese bestehenden Funktionen aufruft.
+
+/**
+ * Beschriftung je Bestand - als vollstaendiger Record ueber DataStoreKey, damit
+ * ein neu hinzugefuegter Bestand ohne Beschriftung schon beim Typecheck
+ * auffaellt statt als roher Schluessel im UI zu landen.
+ */
+const DATA_STORE_LABEL: Record<DataStoreKey, string> = {
+  quranWords: 'settings.storage.otherData.quranWords',
+  handouts: 'settings.storage.otherData.handouts',
+  kiCorpus: 'settings.storage.otherData.kiCorpus',
+  courses: 'settings.storage.otherData.courses',
+  other: 'settings.storage.otherData.other',
+};
 
 export default function StorageScreen() {
   const { t, locale } = useTranslation();
@@ -228,6 +244,27 @@ export default function StorageScreen() {
     void Promise.resolve().then(() => downloadWhisperModel());
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
+
+  function confirmDeleteDataStore(key: DeletableDataStoreKey) {
+    const name = t(DATA_STORE_LABEL[key]);
+    Alert.alert(
+      t('settings.storage.otherData.deleteConfirmTitle'),
+      t('settings.storage.otherData.deleteConfirmBody').replace('{name}', name),
+      [
+        { text: t('common.cancel'), style: 'cancel' },
+        {
+          text: t('settings.storage.otherData.delete'),
+          style: 'destructive',
+          onPress: async () => {
+            setBusy(`data:${key}`);
+            await deleteDataStore(key);
+            await refresh();
+            setBusy(null);
+          },
+        },
+      ],
+    );
+  }
 
   function confirmClearCache() {
     Alert.alert(t('settings.storage.cache.clearConfirmTitle'), t('settings.storage.cache.clearConfirmBody'), [
@@ -503,6 +540,38 @@ export default function StorageScreen() {
                     </Pressable>
                   )}
                 </View>
+              </Section>
+
+              <Section label={t('settings.storage.otherData.title')}>
+                <ThemedText type="small" themeColor="textSecondary" style={styles.emptyHint}>
+                  {t('settings.storage.otherData.hint')}
+                </ThemedText>
+                {overview.otherData.entries.length === 0 ? (
+                  <ThemedText type="small" themeColor="textSecondary" style={styles.emptyHint}>
+                    {t('settings.storage.otherData.empty')}
+                  </ThemedText>
+                ) : (
+                  overview.otherData.entries.map((entry) => (
+                    <View key={entry.key} style={[styles.itemRow, rtl && styles.itemRowRtl]}>
+                      <View style={styles.itemLabel}>
+                        <ThemedText type="default" style={rtl && styles.rtlText}>
+                          {t(DATA_STORE_LABEL[entry.key])}
+                        </ThemedText>
+                        <ThemedText type="small" themeColor="textSecondary" style={rtl && styles.rtlText}>
+                          {formatBytes(entry.bytes)}
+                        </ThemedText>
+                      </View>
+                      {entry.deletable && (
+                        <DeleteButton
+                          busy={busy === `data:${entry.key}`}
+                          onPress={() => confirmDeleteDataStore(entry.key as DeletableDataStoreKey)}
+                          color={colors.accent}
+                          label={t('settings.storage.otherData.delete')}
+                        />
+                      )}
+                    </View>
+                  ))
+                )}
               </Section>
 
               <Section label={t('settings.storage.cache.title')}>

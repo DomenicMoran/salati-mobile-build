@@ -1,0 +1,992 @@
+{
+  "schema": 1,
+  "lang": "sw",
+  "kapitel": {
+    "Kapitel 1 · Ism": "Sura ya 1 · Ism",
+    "Kapitel 2 · Fragmente": "Sura ya 2 · Vipande",
+    "Kapitel 3 · Verben": "Sura ya 3 · Vitenzi",
+    "Kapitel 4 · Sätze": "Sura ya 4 · Sentensi",
+    "Kapitel 5 · Morphologie – Sarf": "Sura ya 5 · Mofolojia – Sarf",
+    "Kapitel 6 · Verschiedene Ausdrücke im Qur'an": "Sura ya 6 · Misemo Mbalimbali katika Qur'ani",
+    "Kapitel 7 · Komplexe Sätze": "Sura ya 7 · Sentensi Changamano",
+    "Kapitel 8 · Sarf – Fortgeschrittene Morphologie": "Sura ya 8 · Sarf – Mofolojia ya Kina",
+    "Kapitel 9 · Balagah – Die Rhetorik des Qur'ans": "Sura ya 9 · Balagah – Ufasaha wa Qur'ani"
+  },
+  "wortlisten": {
+    "wortliste-h1-ism-grundvokabular": {
+      "title": "Orodha ya Msamiati: Ism (Msamiati wa Msingi)",
+      "entries": [
+        "yule ambaye (kiume)",
+        "ndoo",
+        "kisima",
+        "nafsi, mtu, nafsi yenyewe",
+        "jahannamu",
+        "mbingu",
+        "ardhi",
+        "jua",
+        "njia",
+        "moto",
+        "kioo",
+        "mvinyo",
+        "nyumba",
+        "fimbo",
+        "vita",
+        "upepo",
+        "watu, taifa",
+        "kizazi",
+        "watu",
+        "Mola",
+        "siku",
+        "ishara, aya",
+        "wote, kila mmoja",
+        "mjumbe",
+        "adhabu",
+        "kitu, jambo",
+        "kitabu",
+        "kweli, haki",
+        "muumini",
+        "peponi, bustani",
+        "rehema, huruma",
+        "mkono",
+        "jicho, chemchemi",
+        "Allah",
+        "mmiliki, mwenye"
+      ]
+    },
+    "wortliste-h12-fragmente-teil1": {
+      "title": "Orodha ya Msamiati: Vipande, Sehemu ya 1",
+      "entries": [
+        "kutoka, toka",
+        "kwa, hadi",
+        "kuhusu, kutoka",
+        "juu ya, kuhusu",
+        "katika",
+        "hadi",
+        "kwa, kupitia, karibu na",
+        "kama",
+        "kwa ajili ya, kwa",
+        "katika kiapo",
+        "katika kiapo",
+        "hakika, bila shaka",
+        "hakika, kwamba",
+        "kana kwamba",
+        "lakini, ila",
+        "laiti",
+        "huenda, ili",
+        "huyu (kiume)",
+        "huyu (kike)",
+        "yule (kiume)",
+        "yule (kike)",
+        "hawa (wingi)",
+        "wale (wingi)",
+        "hapana, si",
+        "ikiwa",
+        "tayari, huenda",
+        "na",
+        "baada ya",
+        "kabla ya",
+        "chini ya",
+        "juu ya",
+        "kuzunguka",
+        "kati ya",
+        "nyuma ya",
+        "nyuma ya",
+        "pamoja na",
+        "karibu na",
+        "isipokuwa, badala ya",
+        "bila, si-"
+      ]
+    },
+    "wortliste-h13-fragmente-teil2": {
+      "title": "Orodha ya Msamiati: Vipande, Sehemu ya 2",
+      "entries": [
+        "baadhi ya",
+        "gani kati ya",
+        "hasa kati ya",
+        "nuru",
+        "Israeli",
+        "Nuhu (Noa)",
+        "neno",
+        "malipo, kulipiza",
+        "amani",
+        "atukuzwe, utukufu",
+        "bahari",
+        "ole",
+        "kubwa",
+        "mshirika, mwenzake",
+        "jina",
+        "ruhusa",
+        "Muislamu, mtiifu",
+        "hesabu",
+        "mlima",
+        "aliyekufa, maiti",
+        "mtenda mema",
+        "jema, linalokubalika",
+        "upotovu, kupoteza",
+        "ulionyooka (njia)",
+        "mwenye kuasi, dhalimu",
+        "dhambi",
+        "mamlaka, uwezo, ushahidi",
+        "bora, bora zaidi",
+        "kusujudu",
+        "starehe, manufaa",
+        "wakati, muda",
+        "kusahau",
+        "dhambi",
+        "msaidizi",
+        "kutofautiana, kukhitalifiana",
+        "mjumbe, aliyetumwa",
+        "Maryam (Mariamu)",
+        "jaribu, mtihani"
+      ]
+    },
+    "wortliste-h27-verben-grundvokabular": {
+      "title": "Orodha ya Msamiati: Vitenzi (Msamiati wa Msingi)",
+      "entries": [
+        "kuamini",
+        "kujua",
+        "kufanya",
+        "kukanusha, kutokuamini",
+        "kufanya",
+        "kuumba",
+        "kuteremsha",
+        "kukanusha, kuita uongo",
+        "kutuma",
+        "kuchukua",
+        "kwamba",
+        "si (wakati ujao)",
+        "ili",
+        "si (wakati uliopita)",
+        "wakati, bado",
+        "na",
+        "basi na, iwe",
+        "kuja",
+        "kutoa",
+        "kuona",
+        "kutaka, kutamani",
+        "kuita, kualika, kuomba",
+        "kumcha Mungu, kuogopa",
+        "kuongoza",
+        "kutumikia, kuabudu",
+        "kutoa, kufukuza",
+        "kula",
+        "kutenda, kufanya",
+        "kutazama, kuangalia",
+        "kukumbuka, kutaja",
+        "kuua",
+        "kuogopa, kuwa na hofu",
+        "kurudi",
+        "kugeuka, kujiepusha",
+        "kusikia"
+      ]
+    },
+    "wortliste-h37-saetze-teil1": {
+      "title": "Orodha ya Msamiati: Sentensi, Sehemu ya 1",
+      "entries": [
+        "kusema",
+        "Ewe",
+        "kutaka",
+        "kufuata",
+        "kudhulumu",
+        "kuchukua",
+        "kuuliza",
+        "kupata",
+        "Mwenye Nguvu",
+        "kuwa",
+        "kutokuwa",
+        "kubaki",
+        "kuwa, kugeuka",
+        "bora, jema",
+        "amri, jambo",
+        "mjuzi, mwenye elimu",
+        "kafiri",
+        "mwenye, mmiliki wa",
+        "wa mwisho, akhera, vizazi vijavyo",
+        "Mungu",
+        "Musa (Mose)",
+        "moyo",
+        "dhalimu",
+        "familia",
+        "wazi, dhahiri",
+        "mwenye rehema",
+        "dunia (maisha ya hapa duniani)",
+        "kubwa, mkuu",
+        "malipo, thawabu, mahari",
+        "mwenye hekima",
+        "imani, dini, Siku ya Hukumu",
+        "hotuba, kauli",
+        "Mwingi wa Msamaha",
+        "shetani",
+        "mfano"
+      ]
+    },
+    "wortliste-h38-saetze-teil2": {
+      "title": "Orodha ya Msamiati: Sentensi, Sehemu ya 2",
+      "entries": [
+        "kutafuta, kutamani",
+        "kusimama",
+        "kikundi, kundi",
+        "haramu, kitakatifu (kisichokiukwa)",
+        "mshindwa",
+        "Zaka, sadaka",
+        "uzao",
+        "kutosha",
+        "mwongo",
+        "kukataza, kuzuia",
+        "mwisho, matokeo",
+        "kujiepusha, kugeuka",
+        "mahali, pale ambapo",
+        "imara zaidi, kali zaidi",
+        "kufaa",
+        "tendo jema, wema",
+        "moja (pekee)",
+        "njema, safi (kike)",
+        "mmoja, pekee",
+        "nguvu",
+        "Aad (kaumu)",
+        "huenda, ili",
+        "uovu, baya",
+        "waheshimiwa, wakuu",
+        "kukaa, kubaki",
+        "mkarimu, mtukufu",
+        "kuona",
+        "agano, ahadi",
+        "jeshi, kundi",
+        "kiti cha enzi",
+        "mwanaume",
+        "milele, kamwe",
+        "uchawi",
+        "msikiti, mahali pa sala",
+        "hatima, marudio"
+      ]
+    },
+    "wortliste-h53-sarf-grundvokabular": {
+      "title": "Orodha ya Msamiati: Mofolojia – Sarf (Msamiati wa Msingi)",
+      "entries": [
+        "kuingia",
+        "kulipa (thawabu), kutuza",
+        "kutii",
+        "kufunua, kufunulia (wahyi)",
+        "kushirikisha (kumshirikisha Mungu)",
+        "kutupa, kupiga, kutoa",
+        "kuahidi",
+        "kutoa (mali)",
+        "kusamehe",
+        "kupoteza, kudanganya",
+        "kupata, kusibu",
+        "kupenda",
+        "kutubu",
+        "kuteremsha, kufunua",
+        "kuchuma, kupata",
+        "kuruzuku, kutoa riziki",
+        "kusoma (Qur'ani), kufuata",
+        "kusaidia",
+        "kuamua, kuhukumu",
+        "kuwa na subira",
+        "kutiririka, kupita",
+        "kugusa",
+        "kupiga, kuweka",
+        "kusimamisha, kutekeleza",
+        "kupigana",
+        "kutoka",
+        "kupotea, kupotoka",
+        "kufufua, kutuma",
+        "kuhuisha",
+        "kuangamiza",
+        "kukumbuka, kukumbushwa",
+        "kuzua (uongo)",
+        "kuinua, kuongeza",
+        "kuelewa, kutafakari",
+        "kuandika, kuandikia (kuamuru)"
+      ]
+    },
+    "wortliste-h54-verschiedene-ausdruecke": {
+      "title": "Orodha ya Msamiati: Misemo Mbalimbali katika Qur'ani",
+      "entries": [
+        "au",
+        "kisha",
+        "mara moja kisha (papo hapo)",
+        "bali",
+        "nani",
+        "nini",
+        "nini",
+        "lini",
+        "wapi",
+        "vipi",
+        "kiulizi cha Ndiyo/Hapana",
+        "kiulizi cha Ndiyo/Hapana",
+        "jinsi ilivyo ajabu",
+        "jinsi ilivyo mbaya",
+        "jinsi ilivyo kuu",
+        "jinsi ilivyo baya",
+        "lau (kama dhahania)",
+        "kwamba (na sentensi ya kiima)",
+        "wakati, hapo (wakati uliopita)",
+        "isipokuwa",
+        "au",
+        "lau si, kwa nini si",
+        "kuhusu... (ama...)",
+        "ata- (kiambishi cha wakati ujao)",
+        "hasha, la",
+        "bali ndiyo, hakika ndiyo"
+      ]
+    },
+    "wortliste-h58-komplexe-saetze-teil1": {
+      "title": "Orodha ya Msamiati: Sentensi Changamano, Sehemu ya 1",
+      "entries": [
+        "wale ambao (wingi wa kiume)",
+        "yeye, hicho",
+        "wao (wingi wa kiume)",
+        "malaika",
+        "mlinzi, mlezi",
+        "mali, utajiri",
+        "fadhila, rehema, neema",
+        "usiku",
+        "sala",
+        "wa kwanza, wa zamani",
+        "watoto, uzao",
+        "wengi zaidi",
+        "wenzake, wakazi",
+        "jozi, mwenzi",
+        "maisha",
+        "Nabii",
+        "ndugu",
+        "anayekaa milele",
+        "Firauni",
+        "mwadilifu, mwema",
+        "mmoja, mtu fulani",
+        "ulimwengu, walimwengu",
+        "chungu, uchungu",
+        "uso",
+        "mwanadamu",
+        "ushahidi, dalili wazi",
+        "wachache",
+        "ufufuo",
+        "Qur'ani",
+        "Ibrahim (Abrahamu)",
+        "nyumba",
+        "kulia, upande wa kulia",
+        "watu, taifa, jamii, umma",
+        "mababu, baba zetu",
+        "wengi, kwa wingi"
+      ]
+    },
+    "wortliste-h59-komplexe-saetze-teil2": {
+      "title": "Orodha ya Msamiati: Sentensi Changamano, Sehemu ya 2",
+      "entries": [
+        "kutengeneza, kupatanisha",
+        "msamaha",
+        "kuitikia, kujibu",
+        "mwanamke muumini",
+        "vipi, wapi (kutoka wapi)",
+        "wanaume",
+        "kurehemu",
+        "kufaa, kutohitajika",
+        "habari, hadithi",
+        "sawa, kwa usawa",
+        "kusamehe",
+        "mlango",
+        "mzembe, asiyejali",
+        "kutanguliza, kuwasilisha",
+        "kufaulu, kustawi",
+        "kupigana, kujitahidi (Jihadi)",
+        "mahali",
+        "mnafiki",
+        "mwezi",
+        "Yusuf",
+        "Lut",
+        "hofu, uoga",
+        "batili, uongo",
+        "ukoo, jamaa wa",
+        "moto wa jahannamu, jahannamu",
+        "ushahidi",
+        "wote kwa jumla",
+        "karibu",
+        "kupamba, kufanya kuonekana kizuri",
+        "mke wa, mke",
+        "hila, njama",
+        "Thamud (kaumu)",
+        "kutambua, kugundua",
+        "kupita",
+        "agano, ahadi nzito"
+      ]
+    },
+    "wortliste-h164-sarf-fortgeschritten": {
+      "title": "Orodha ya Msamiati: Sarf – Mofolojia ya Kina",
+      "entries": [
+        "kudhani",
+        "kushukuru",
+        "kutangaza, kujulisha",
+        "kuhukumu",
+        "kuacha",
+        "kuonya",
+        "kushuhudia",
+        "kudhani, kuamini",
+        "kuita",
+        "kumiliki",
+        "kusifu, kutukuza",
+        "kuweza",
+        "kuingizwa",
+        "kubeba",
+        "kuadhibu",
+        "kuacha, kuwaacha nyuma",
+        "kujivuna",
+        "kuongoka",
+        "kuonyesha",
+        "kuogopa",
+        "kufikia",
+        "kuomba msamaha",
+        "kutegemea (Allah)",
+        "kufa",
+        "kukataza, kuharamisha",
+        "kupokea habari njema",
+        "kuridhika, kuridhia",
+        "kuhuzunisha",
+        "kuokoa",
+        "kukusanya",
+        "kuzuia, kugeuza",
+        "kukataa, kurudisha",
+        "kuonja",
+        "kwenda, kuondoka",
+        "kusimama wima, kuinuka"
+      ]
+    },
+    "wortliste-h185-balagah-vokabular": {
+      "title": "Orodha ya Msamiati: Balagah – Ufasaha wa Qur'ani",
+      "entries": [
+        "Adamu",
+        "Isa (Yesu)",
+        "dhambi, hatia",
+        "mbali",
+        "nguvu, dhiki",
+        "kukadiria, kuamua, kuweza",
+        "ulimi, lugha",
+        "kuasi, kuruka mipaka",
+        "kubishana, kujadili",
+        "(Wewe tu) (kiambishi cha msisitizo)",
+        "karibu kufanya, karibu",
+        "chakula",
+        "hai",
+        "jike, wa kike",
+        "mkubwa, mkubwa zaidi",
+        "kuchukua roho, kufisha",
+        "tajiri, asiyehitaji",
+        "kikundi, sehemu",
+        "mdhamini, mwakilishi",
+        "mkutano, kukutana",
+        "giza",
+        "saba",
+        "kuokoa",
+        "anayesujudu",
+        "kubadilisha",
+        "yatima",
+        "mhitaji, maskini",
+        "kulaani",
+        "jahazi, safina",
+        "kujaribu, kushawishi",
+        "mawaidha, ukumbusho",
+        "kuinua, kutukuza",
+        "kujisalimisha",
+        "kutumaini, kutarajia",
+        "kutoa, kujalia"
+      ]
+    },
+    "wortliste-h20-besondere-mudhaafs": {
+      "title": "Orodha ya Vipashio: Mudhaf Maalum",
+      "entries": [
+        "baada ya",
+        "kabla ya",
+        "chini ya",
+        "juu ya",
+        "kuzunguka",
+        "kati ya",
+        "nyuma ya",
+        "nyuma ya",
+        "pamoja na",
+        "karibu na",
+        "isipokuwa, badala ya",
+        "bila, si-",
+        "wote, wote wa, kila mmoja",
+        "baadhi ya",
+        "gani kati ya",
+        "hasa kati ya"
+      ],
+      "beispiele": [
+        "kila kitu / vyote",
+        "baada ya hayo (yaani baada ya hili)",
+        "pamoja na wenye subira"
+      ]
+    },
+    "wortliste-h21-harf-jarr": {
+      "title": "Orodha ya Vipashio: Harf Jarr (Vihusishi)",
+      "entries": [
+        "pamoja na",
+        "katika",
+        "naapa kwa (pamoja na اللَّه tu, nadra)",
+        "juu ya",
+        "kama",
+        "juu ya",
+        "kwa ajili ya",
+        "hadi",
+        "(naapa) kwa",
+        "kwa",
+        "kutoka"
+      ]
+    },
+    "wortliste-h22-harf-nasb": {
+      "title": "Orodha ya Vipashio: Harf Nasb na Maana Zake",
+      "entries": [
+        "hakika",
+        "kwamba",
+        "kana kwamba",
+        "laiti",
+        "lakini",
+        "ili, natumaini, huenda"
+      ]
+    },
+    "wortliste-h56-fragewoerter-uebersicht": {
+      "title": "Orodha ya Vipashio: Maneno ya Kuuliza Yanayotumika Sana",
+      "entries": [
+        "Nani",
+        "Nini",
+        "Lini",
+        "Wapi",
+        "Kwa nini",
+        "Vipi",
+        "Gani",
+        "Hutumika kwa maswali ya Ndiyo/Hapana"
+      ],
+      "beispiele": [
+        "Ni nani aliyejifunza?",
+        "Je, Zaynab alijifunza?",
+        "Zaynab alijifunza lini?",
+        "Zaynab alijifunza wapi?",
+        "Kwa nini Zaynab alijifunza?",
+        "Zaynab alijifunza vipi?",
+        "Zaynab alijifunza nini?",
+        "Zaynab alijifunza shule gani?"
+      ]
+    },
+    "wortliste-h184-balagah-vokabular-teil1": {
+      "title": "Orodha ya Msamiati: Balagah – Ufasaha wa Qur'ani (Sehemu ya 1)",
+      "entries": [
+        "mwana",
+        "mwema (kike), tendo jema",
+        "mkweli",
+        "wanawake",
+        "tendo baya, uovu",
+        "mwonyaji",
+        "Mwenye Kurehemu (Ar-Rahman)",
+        "mji, kijiji",
+        "mchana (wakati wa siku)",
+        "shahidi",
+        "mtoto, mwana",
+        "mwenye nguvu, hodari",
+        "mto",
+        "wote, jumla",
+        "muda maalum, ajali",
+        "mhalifu",
+        "Mwenye Kuona Yote (Al-Basir)",
+        "mauti, kifo",
+        "adui",
+        "fadhila, baraka",
+        "madhara, uovu",
+        "mchamungu",
+        "siri, ghaibu",
+        "ajuaye zaidi",
+        "uwezo wa kuona, mtazamo",
+        "saa",
+        "Mwenye Kusikia Yote (As-Sami')",
+        "baba",
+        "njia",
+        "Mwenye Uwezo wote (Al-Qadir)",
+        "imani",
+        "Mwenye Kujua Yote (Al-'Alim)",
+        "mshirikina",
+        "kifua",
+        "sifa, himidi"
+      ]
+    }
+  },
+  "beispielsatzlisten": {
+    "beispielsatzliste-h55-verbindungsbuchstaben": {
+      "title": "Orodha ya Herufi za Kuunganisha (Harf al-'Atf)",
+      "entries": [
+        {
+          "beschreibung": "na, huunganisha vipengele viwili",
+          "beispiel": "Hakika, Allah na Malaika Wake wanamswalia Nabii."
+        },
+        {
+          "beschreibung": "au",
+          "beispiel": "Basi wao ni kama mawe au wagumu zaidi."
+        },
+        {
+          "beschreibung": "kisha (muda mrefu zaidi)",
+          "beispiel": "Mnawezaje kumkanusha Allah, na hali mlikuwa wafu naye akawahuisha, kisha atawafisha, kisha atawahuisha tena."
+        },
+        {
+          "beschreibung": "kisha/mara moja",
+          "beispiel": "Kisha akakuumba sawasawa na kukulinganisha."
+        },
+        {
+          "beschreibung": "bali/badala yake",
+          "beispiel": "Na walisema: Allah amejifanyia mwana. Ametakasika (Subhanahu)! Bali ni Vyake vyote vilivyomo mbinguni."
+        },
+        {
+          "beschreibung": "lakini",
+          "beispiel": "Lakini madhalimu leo wamo katika upotovu ulio dhahiri."
+        }
+      ]
+    },
+    "beispielsatzliste-h166-istifham-partikel": {
+      "title": "Istifham (Vipashio vya Kuuliza) pamoja na Mifano kutoka Qur'ani",
+      "entries": [
+        {
+          "beschreibung": "Je",
+          "beispiel": "Je, mnajua zaidi ninyi au Allah?"
+        },
+        {
+          "beschreibung": "Je",
+          "beispiel": "Je, mna ujuzi wowote wa uhakika?"
+        },
+        {
+          "beschreibung": "Nini",
+          "beispiel": "Na nini hicho kilicho mkononi mwako wa kulia, ewe Musa?"
+        },
+        {
+          "beschreibung": "Nani",
+          "beispiel": "Ni nani mwenye nguvu zaidi kuliko sisi?"
+        },
+        {
+          "beschreibung": "Lini",
+          "beispiel": "Ahadi hii itatimia lini?"
+        },
+        {
+          "beschreibung": "Lini",
+          "beispiel": "Siku ya Hukumu ni lini?"
+        },
+        {
+          "beschreibung": "Vipi",
+          "beispiel": "Unawahuishaje wafu?"
+        },
+        {
+          "beschreibung": "Wapi",
+          "beispiel": "Wako wapi wale mliokuwa mkiwashirikisha?"
+        },
+        {
+          "beschreibung": "Vipi",
+          "beispiel": "Atawezaje kuwa na mamlaka juu yetu?"
+        },
+        {
+          "beschreibung": "Kutoka wapi",
+          "beispiel": "Ewe Maryam, umepata hili kutoka wapi?"
+        },
+        {
+          "beschreibung": "Ngapi",
+          "beispiel": "Mlikaa muda gani?"
+        },
+        {
+          "beschreibung": "Gani",
+          "beispiel": "Ni ipi kati ya makundi mawili iliyo bora zaidi katika hali yake?"
+        }
+      ]
+    }
+  },
+  "ablaufschemata": {
+    "ablaufschema-h14-gliederung-der-sprache": {
+      "title": "Mpangilio wa Lugha (Kalaam)",
+      "schritte": [
+        "Lugha (Kalaam) imegawanyika katika vipengele vitatu vya msingi.",
+        "Sentensi (Jumal)",
+        "Vipande — Mada ya sura hii, miongoni mwao Idaafa, Harf Jarr, Harf Nasb, Mausuf-Sifah, Ism Ishaarah",
+        "Maneno (aina za maneno mahususi: Ism, Fiil, Harf)"
+      ]
+    },
+    "ablaufschema-h39-mubtada-chabar": {
+      "title": "Kutoka Mubtada hadi Chabar (Sentensi ya Kiima-Kiarifa)",
+      "schritte": [
+        "Mubtada — mada/kiima cha sentensi ya kiima-kiarifa (Jumla Ismiyya)",
+        "Swali la kati: Mubtada inahusiana na nini?",
+        "Chabar — kauli kuhusu Mubtada"
+      ],
+      "beispiel": "Allah (Mubtada) ndiye Mkamilifu ambaye kila kitu kinamtegemea (Chabar) — Surat Al-Ikhlas 112:2."
+    }
+  },
+  "vergleichstabellen": {
+    "vergleichstabelle-h165-satzklassifikation": {
+      "title": "Mifano ya Uainishaji wa Sentensi katika Balagha",
+      "columns": {
+        "satz": "Sentensi",
+        "klassifikation": "Uainishaji"
+      }
+    },
+    "vergleichstabelle-h167-tashbih-quran-licht": {
+      "title": "Mfano wa Tashbih: Qur'ani kama Nuru",
+      "columns": {
+        "mushabbah": "Mushabbah",
+        "adat": "Adat at-Tashbih",
+        "mushabbahBihi": "Mushabbah bihi",
+        "wajh": "Wajh ash-Shabah"
+      }
+    },
+    "vergleichstabelle-h168-tashbih-mufassal-wasser": {
+      "title": "Tashbih Mufassal: Maji kama Chuma Kilichoyeyuka",
+      "columns": {
+        "mushabbah": "Mushabbah",
+        "adat": "Adat",
+        "mushabbahBihi": "Mushabbah bihi",
+        "wajh": "Wajh ash-Shabah"
+      }
+    },
+    "vergleichstabelle-h169-tashbih-maqlub": {
+      "title": "Tashbih Maqlub (mlinganisho uliogeuzwa): Biashara na Riba",
+      "columns": {
+        "form": "Umbo",
+        "mushabbah": "Mushabbah",
+        "adat": "Adat",
+        "mushabbahBihi": "Mushabbah bihi"
+      },
+      "rows": {
+        "original": "Asili",
+        "umgekehrt": "Iliyogeuzwa"
+      },
+      "cells": {
+        "original": {
+          "form": "Asili"
+        },
+        "umgekehrt": {
+          "form": "Iliyogeuzwa"
+        }
+      }
+    },
+    "vergleichstabelle-h170-tashbih-dimni": {
+      "title": "Tashbih Dimni (mlinganisho wa kificho): Wewe na Miski",
+      "columns": {
+        "mushabbah": "Mushabbah",
+        "adat": "Adat",
+        "mushabbahBihi": "Mushabbah bihi",
+        "wajh": "Wajh ash-Shabah"
+      },
+      "cells": {
+        "r1": {
+          "wajh": "(kificho)"
+        }
+      }
+    },
+    "vergleichstabelle-h171-tashbih-arten-zusammenfassung": {
+      "title": "Muhtasari wa Aina za Tashbih",
+      "columns": {
+        "art": "Aina",
+        "wajh": "Wajh ash-Shabah",
+        "adat": "Adat",
+        "beispiel": "Mfano"
+      },
+      "cells": {
+        "mufassalMursal": {
+          "art": "Mufassal Mursal",
+          "wajh": "imetajwa",
+          "adat": "imetajwa"
+        },
+        "mujmalMursal": {
+          "art": "Mujmal Mursal",
+          "wajh": "imeachwa",
+          "adat": "imetajwa"
+        },
+        "mufassalMuakkad": {
+          "art": "Mufassal Mu'akkad",
+          "wajh": "imetajwa",
+          "adat": "imeachwa"
+        },
+        "baligh": {
+          "art": "Baligh",
+          "wajh": "imeachwa",
+          "adat": "imeachwa"
+        }
+      }
+    },
+    "vergleichstabelle-h172-alaqa-licht-prophet": {
+      "title": "Mfano wa 'Alaqa: Nuru kama Sitiari ya Nabii",
+      "columns": {
+        "woertlich": "Maana Halisi",
+        "alaqa": "'Alaqa",
+        "metaphorisch": "Maana ya Kisitiari"
+      },
+      "cells": {
+        "r1": {
+          "woertlich": "Nuru",
+          "alaqa": "Tashbih",
+          "metaphorisch": "Nabii"
+        }
+      }
+    },
+    "vergleichstabelle-h173-istiara-musarraha-koran": {
+      "title": "Isti'ara Musarraha: Giza na Nuru",
+      "columns": {
+        "mushabbah": "Mushabbah",
+        "adat": "Adat at-Tashbih",
+        "mushabbahBihi": "Mushabbah bihi",
+        "mustaar": "Musta'ar",
+        "wajh": "Wajh ash-Shabah"
+      },
+      "cells": {
+        "r1": {
+          "mustaar": "-",
+          "wajh": "-"
+        },
+        "r2": {
+          "mustaar": "-",
+          "wajh": "-"
+        }
+      }
+    },
+    "vergleichstabelle-h174-istiara-asliyya-tabaiyya": {
+      "title": "Isti'ara Asliyya dhidi ya Isti'ara Taba'iyya",
+      "columns": {
+        "asliyya": "Isti'ara Asliyya",
+        "tabaiyya": "Isti'ara Taba'iyya"
+      },
+      "cells": {
+        "uebersetzung": {
+          "asliyya": "Simba alitoa hotuba",
+          "tabaiyya": "Mhutubu aliunguruma"
+        }
+      }
+    },
+    "vergleichstabelle-h175-istiara-sterne-perlen": {
+      "title": "Mfano wa Isti'ara: Nyota kama Lulu kwenye Uzi",
+      "columns": {
+        "mushabbah": "Mushabbah",
+        "adat": "Adat at-Tashbih",
+        "mushabbahBihi": "Mushabbah bihi",
+        "wajh": "Wajh ash-Shabah"
+      },
+      "cells": {
+        "r1": {
+          "wajh": "-"
+        }
+      }
+    },
+    "vergleichstabelle-h176-istiara-mulaim-loewe": {
+      "title": "Isti'ara yenye Mula'im: Mtu Jasiri kama Simba",
+      "columns": {
+        "mushabbah": "Mushabbah",
+        "mushabbahBihi": "Mushabbah bihi",
+        "wajh": "Wajh ash-Shabah",
+        "mulaim": "Mula'im al-Mushabbah bihi"
+      },
+      "cells": {
+        "r1": {
+          "mushabbah": "mtu jasiri",
+          "mushabbahBihi": "simba",
+          "wajh": "-",
+          "mulaim": "kuunguruma"
+        }
+      }
+    },
+    "vergleichstabelle-h177-alaqa-sababiyya": {
+      "title": "'Alaqa Sababiyya: Ulimi na Mikono kama Sababu",
+      "columns": {
+        "woertlich": "Maana Halisi",
+        "alaqa": "'Alaqa",
+        "metaphorisch": "Maana ya Kisitiari"
+      },
+      "cells": {
+        "r1": {
+          "woertlich": "Ulimi na mikono",
+          "alaqa": "Sababiyya",
+          "metaphorisch": "Maneno na matendo"
+        }
+      }
+    },
+    "vergleichstabelle-h178-alaqa-musabbabiyya": {
+      "title": "'Alaqa Musabbabiyya: Riziki kama Tokeo la Mvua",
+      "columns": {
+        "woertlich": "Maana Halisi",
+        "alaqa": "'Alaqa",
+        "metaphorisch": "Maana ya Kisitiari"
+      },
+      "cells": {
+        "r1": {
+          "woertlich": "Riziki",
+          "alaqa": "Musabbabiyya",
+          "metaphorisch": "Mvua"
+        }
+      }
+    },
+    "vergleichstabelle-h179-alaqa-kulliyya": {
+      "title": "'Alaqa Kulliyya: Kidole kwa Ncha ya Kidole",
+      "columns": {
+        "woertlich": "Maana Halisi",
+        "alaqa": "'Alaqa",
+        "metaphorisch": "Maana ya Kisitiari"
+      },
+      "cells": {
+        "r1": {
+          "woertlich": "Kidole",
+          "alaqa": "Kulliyya",
+          "metaphorisch": "Ncha ya kidole"
+        }
+      }
+    },
+    "vergleichstabelle-h180-alaqa-juziyya": {
+      "title": "'Alaqa Juz'iyya: Shingo kwa Mtumwa",
+      "columns": {
+        "woertlich": "Maana Halisi",
+        "alaqa": "'Alaqa",
+        "metaphorisch": "Maana ya Kisitiari"
+      },
+      "cells": {
+        "r1": {
+          "woertlich": "Shingo",
+          "alaqa": "Juz'iyya",
+          "metaphorisch": "Mtumwa"
+        }
+      }
+    },
+    "vergleichstabelle-h181-alaqa-itibar-ma-kana": {
+      "title": "'Alaqa I'tibar ma kana: Mayatima kama Waliokuwa Mayatima",
+      "columns": {
+        "woertlich": "Maana Halisi",
+        "alaqa": "'Alaqa",
+        "metaphorisch": "Maana ya Kisitiari"
+      },
+      "cells": {
+        "r1": {
+          "woertlich": "Mayatima",
+          "alaqa": "I'tibar ma kana",
+          "metaphorisch": "Watu wazima waliokuwa mayatima"
+        }
+      }
+    },
+    "vergleichstabelle-h182-alaqa-itibar-ma-yakun": {
+      "title": "'Alaqa I'tibar ma yakun: Mvinyo kama Mvinyo Ujao",
+      "columns": {
+        "woertlich": "Maana Halisi",
+        "alaqa": "'Alaqa",
+        "metaphorisch": "Maana ya Kisitiari"
+      },
+      "cells": {
+        "r1": {
+          "woertlich": "Mvinyo",
+          "alaqa": "I'tibar ma yakun",
+          "metaphorisch": "Zabibu"
+        }
+      }
+    },
+    "vergleichstabelle-h183-alaqa-muqaraba": {
+      "title": "'Alaqa Muqaraba: Karibu na Ukafiri",
+      "columns": {
+        "woertlich": "Maana Halisi",
+        "alaqa": "'Alaqa",
+        "metaphorisch": "Maana ya Kisitiari"
+      },
+      "cells": {
+        "r1": {
+          "woertlich": "Kuwa kafiri",
+          "alaqa": "Muqaraba",
+          "metaphorisch": "Kukaribia ukafiri"
+        }
+      }
+    }
+  }
+}

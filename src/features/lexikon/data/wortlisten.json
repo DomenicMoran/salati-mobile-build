@@ -1,0 +1,3324 @@
+{
+  "schema": 1,
+  "wortlisten": [
+    {
+      "id": "wortliste-h1-ism-grundvokabular",
+      "kind": "vokabelliste",
+      "titleDe": "Vokabelliste: Ism (Grundvokabular)",
+      "kapitel": "Kapitel 1 · Ism",
+      "source": {
+        "file": "handout.pdf",
+        "page": 9
+      },
+      "entries": [
+        {
+          "ar": "الَّذِي",
+          "umschrift": "alladī",
+          "de": "derjenige, der (m.)"
+        },
+        {
+          "ar": "دَلْوٌ - دِلاءٌ",
+          "umschrift": "dalw – dilā’",
+          "de": "Eimer"
+        },
+        {
+          "ar": "بِئْرٌ - آبَارٌ",
+          "umschrift": "bi’r – ābār",
+          "de": "Brunnen"
+        },
+        {
+          "ar": "نَفْسٌ - أَنْفُسٌ",
+          "umschrift": "nafs – anfus",
+          "de": "Seele, Person, Selbst"
+        },
+        {
+          "ar": "جَهَنَّمُ",
+          "umschrift": "jahannam",
+          "de": "Hölle"
+        },
+        {
+          "ar": "سَمَاءٌ - سَمَاوَاتٌ",
+          "umschrift": "samā’ – samāwāt",
+          "de": "Himmel"
+        },
+        {
+          "ar": "أَرْضٌ - أَرَاضٍ",
+          "umschrift": "arḍ – arāḍ",
+          "de": "Erde"
+        },
+        {
+          "ar": "شَمْسٌ - شُموسٌ",
+          "umschrift": "shams – shumūs",
+          "de": "Sonne"
+        },
+        {
+          "ar": "سَبِيلٌ - سُبُلٌ",
+          "umschrift": "sabīl – subul",
+          "de": "Weg"
+        },
+        {
+          "ar": "نَارٌ - نِيرَانٌ",
+          "umschrift": "nār – nīrān",
+          "de": "Feuer"
+        },
+        {
+          "ar": "كَأْسٌ - كُؤوسٌ",
+          "umschrift": "ka’s – ku’ūs",
+          "de": "Glas"
+        },
+        {
+          "ar": "خَمْرٌ - خُمورٌ",
+          "umschrift": "khamr – khumūr",
+          "de": "Wein"
+        },
+        {
+          "ar": "دَارٌ - دِيَارٌ",
+          "umschrift": "dār – diyār",
+          "de": "Haus"
+        },
+        {
+          "ar": "عَصًا - عِصِيٌّ",
+          "umschrift": "ʿaṣā – ʿiṣiyy",
+          "de": "Stab"
+        },
+        {
+          "ar": "حَرْبٌ - حُروبٌ",
+          "umschrift": "ḥarb – ḥurūb",
+          "de": "Krieg"
+        },
+        {
+          "ar": "رِيحٌ - رِيَاحٌ",
+          "umschrift": "rīḥ – riyāḥ",
+          "de": "Wind"
+        },
+        {
+          "ar": "قَوْمٌ - أَقْوَامٌ",
+          "umschrift": "qawm – aqwām",
+          "de": "Volk, Nation"
+        },
+        {
+          "ar": "قَرْنٌ - قُرونٌ",
+          "umschrift": "qarn – qurūn",
+          "de": "Generation"
+        },
+        {
+          "ar": "نَاسٌ",
+          "umschrift": "nās",
+          "de": "Menschen"
+        },
+        {
+          "ar": "رَبٌّ - أَرْبَابٌ",
+          "umschrift": "rabb – arbāb",
+          "de": "Herr"
+        },
+        {
+          "ar": "يَوْمٌ - أَيَّامٌ",
+          "umschrift": "yawm – ayyām",
+          "de": "Tag"
+        },
+        {
+          "ar": "آيَةٌ - آيَاتٌ",
+          "umschrift": "āya – āyāt",
+          "de": "Zeichen, Vers"
+        },
+        {
+          "ar": "كُلٌّ",
+          "umschrift": "kull",
+          "de": "alle, jeder"
+        },
+        {
+          "ar": "رَسولٌ - رُسُلٌ",
+          "umschrift": "rasūl – rusul",
+          "de": "Gesandter"
+        },
+        {
+          "ar": "عَذَابٌ",
+          "umschrift": "ʿadhāb",
+          "de": "Strafe"
+        },
+        {
+          "ar": "شَيْءٌ - أَشْيَاءُ",
+          "umschrift": "shay’ – ashyā’",
+          "de": "Ding, Etwas"
+        },
+        {
+          "ar": "كِتَابٌ - كُتُبٌ",
+          "umschrift": "kitāb – kutub",
+          "de": "Buch"
+        },
+        {
+          "ar": "حَقٌّ - حُقوقٌ",
+          "umschrift": "ḥaqq – ḥuqūq",
+          "de": "Wahrheit, Recht"
+        },
+        {
+          "ar": "مُؤْمِنٌ - مُؤْمِنونَ",
+          "umschrift": "mu’min – mu’minūn",
+          "de": "Gläubiger"
+        },
+        {
+          "ar": "جَنَّةٌ - جَنَّاتٌ",
+          "umschrift": "janna – jannāt",
+          "de": "Paradies, Garten"
+        },
+        {
+          "ar": "رَحْمَةٌ - رَحَمَاتٌ",
+          "umschrift": "raḥma – raḥamāt",
+          "de": "Barmherzigkeit, Gnade"
+        },
+        {
+          "ar": "يَدٌ - أَيْدٍ",
+          "umschrift": "yad – ayd",
+          "de": "Hand"
+        },
+        {
+          "ar": "عَيْنٌ - عُيونٌ",
+          "umschrift": "ʿayn – ʿuyūn",
+          "de": "Auge, Quelle"
+        },
+        {
+          "ar": "اللّه",
+          "umschrift": "Allāh",
+          "de": "Allah"
+        },
+        {
+          "ar": "ذَا",
+          "umschrift": "dhā",
+          "de": "Besitzer, Eigentümer"
+        }
+      ],
+      "notes": [
+        "Zeichengenau aus dem gerenderten Seitenbild (handout.pdf S. 9, «Vokabelliste», Kapitel 1 Ism) gelesen, nicht aus dem PyMuPDF-Textlayer (siehe LUECKEN.md, «Text-Layer von handout.pdf ist für Tabellen unbrauchbar» — gilt auch für diese zweispaltige Vokabelliste, deren automatisch extrahierter Text stark verstellt war)."
+      ]
+    },
+    {
+      "id": "wortliste-h12-fragmente-teil1",
+      "kind": "vokabelliste",
+      "titleDe": "Vokabelliste: Fragmente, Teil 1",
+      "kapitel": "Kapitel 2 · Fragmente",
+      "source": {
+        "file": "handout.pdf",
+        "page": 24
+      },
+      "entries": [
+        {
+          "ar": "مِنْ",
+          "umschrift": "min",
+          "de": "von, aus"
+        },
+        {
+          "ar": "إِلَى",
+          "umschrift": "ilā",
+          "de": "zu, nach, bis"
+        },
+        {
+          "ar": "عَنْ",
+          "umschrift": "ʿan",
+          "de": "über, von"
+        },
+        {
+          "ar": "عَلَى",
+          "umschrift": "ʿalā",
+          "de": "auf, über"
+        },
+        {
+          "ar": "فِي",
+          "umschrift": "fī",
+          "de": "in"
+        },
+        {
+          "ar": "حَتَّى",
+          "umschrift": "ḥattā",
+          "de": "bis"
+        },
+        {
+          "ar": "بِ",
+          "umschrift": "bi",
+          "de": "mit, durch, bei"
+        },
+        {
+          "ar": "كَ",
+          "umschrift": "ka",
+          "de": "wie"
+        },
+        {
+          "ar": "لِ",
+          "umschrift": "li",
+          "de": "für, zu"
+        },
+        {
+          "ar": "تَ",
+          "umschrift": "ta",
+          "de": "bei (Schwur)"
+        },
+        {
+          "ar": "وَ",
+          "umschrift": "wa",
+          "de": "bei (Schwur)"
+        },
+        {
+          "ar": "إِنَّ",
+          "umschrift": "inna",
+          "de": "wahrlich, gewiss"
+        },
+        {
+          "ar": "أَنَّ",
+          "umschrift": "anna",
+          "de": "gewiss, dass"
+        },
+        {
+          "ar": "كَأَنَّ",
+          "umschrift": "ka’anna",
+          "de": "als ob"
+        },
+        {
+          "ar": "لَكِنَّ",
+          "umschrift": "lākinna",
+          "de": "aber, jedoch"
+        },
+        {
+          "ar": "لَيْتَ",
+          "umschrift": "layta",
+          "de": "wenn doch"
+        },
+        {
+          "ar": "لَعَلَّ",
+          "umschrift": "laʿalla",
+          "de": "vielleicht, damit"
+        },
+        {
+          "ar": "هَذَا",
+          "umschrift": "hādhā",
+          "de": "dieser"
+        },
+        {
+          "ar": "هَذِهِ",
+          "umschrift": "hādhihi",
+          "de": "diese"
+        },
+        {
+          "ar": "ذَلِكَ",
+          "umschrift": "dhālika",
+          "de": "jener"
+        },
+        {
+          "ar": "تِلْكَ",
+          "umschrift": "tilka",
+          "de": "jene"
+        },
+        {
+          "ar": "هَؤلاءِ",
+          "umschrift": "hā’ulā’i",
+          "de": "diese (Plural)"
+        },
+        {
+          "ar": "أُولَئِكَ",
+          "umschrift": "ulā’ika",
+          "de": "jene (Plural)"
+        },
+        {
+          "ar": "لاَ",
+          "umschrift": "lā",
+          "de": "nein, nicht"
+        },
+        {
+          "ar": "إِذَا",
+          "umschrift": "idhā",
+          "de": "wenn"
+        },
+        {
+          "ar": "قَدْ",
+          "umschrift": "qad",
+          "de": "schon, bereits, vielleicht"
+        },
+        {
+          "ar": "وَ",
+          "umschrift": "wa",
+          "de": "und"
+        },
+        {
+          "ar": "بَعْدَ",
+          "umschrift": "baʿda",
+          "de": "nach"
+        },
+        {
+          "ar": "قَبْلَ",
+          "umschrift": "qabla",
+          "de": "bevor"
+        },
+        {
+          "ar": "تَحْتَ",
+          "umschrift": "taḥta",
+          "de": "unter"
+        },
+        {
+          "ar": "فَوْقَ",
+          "umschrift": "fawqa",
+          "de": "über"
+        },
+        {
+          "ar": "حَوْلَ",
+          "umschrift": "ḥawla",
+          "de": "um"
+        },
+        {
+          "ar": "بَيْنَ",
+          "umschrift": "bayna",
+          "de": "zwischen"
+        },
+        {
+          "ar": "وَرَاءَ",
+          "umschrift": "warā’a",
+          "de": "hinter"
+        },
+        {
+          "ar": "خَلْفَ",
+          "umschrift": "khalfa",
+          "de": "hinter"
+        },
+        {
+          "ar": "مَعَ",
+          "umschrift": "maʿa",
+          "de": "mit"
+        },
+        {
+          "ar": "عِندَ",
+          "umschrift": "ʿinda",
+          "de": "bei"
+        },
+        {
+          "ar": "دونَ",
+          "umschrift": "dūna",
+          "de": "außer, anstatt"
+        },
+        {
+          "ar": "غَيْرَ",
+          "umschrift": "ghayra",
+          "de": "ohne, nicht-"
+        }
+      ],
+      "notes": [
+        "Zeichengenau aus dem gerenderten Seitenbild (handout.pdf S. 24) gelesen. Trotz der Überschrift «Vokabelliste» überwiegend Partikeln/Präpositionen/Demonstrativa des Kapitels «Fragmente», keine Nomen — daher hier bewusst weiter als Vokabelliste (nicht Partikelliste) geführt, weil das Original selbst sie so überschreibt und thematisch mischt."
+      ]
+    },
+    {
+      "id": "wortliste-h13-fragmente-teil2",
+      "kind": "vokabelliste",
+      "titleDe": "Vokabelliste: Fragmente, Teil 2",
+      "kapitel": "Kapitel 2 · Fragmente",
+      "source": {
+        "file": "handout.pdf",
+        "page": 25
+      },
+      "entries": [
+        {
+          "ar": "بَعْضُ",
+          "umschrift": "baʿḍ",
+          "de": "einige von"
+        },
+        {
+          "ar": "أَيٌّ",
+          "umschrift": "ayy",
+          "de": "welche von"
+        },
+        {
+          "ar": "لَدُنْ",
+          "umschrift": "ladun",
+          "de": "insbesondere von"
+        },
+        {
+          "ar": "نُورٌ",
+          "umschrift": "nūr",
+          "de": "Licht"
+        },
+        {
+          "ar": "إِسْرَائِيلُ",
+          "umschrift": "Isrā’īl",
+          "de": "Israel"
+        },
+        {
+          "ar": "نُوحٌ",
+          "umschrift": "Nūḥ",
+          "de": "Nuh (Noah)"
+        },
+        {
+          "ar": "كَلِمَةٌ",
+          "umschrift": "kalima",
+          "de": "Wort"
+        },
+        {
+          "ar": "جَزَاءٌ",
+          "umschrift": "jazā’",
+          "de": "Lohn, Vergeltung"
+        },
+        {
+          "ar": "سَلَامٌ",
+          "umschrift": "salām",
+          "de": "Frieden"
+        },
+        {
+          "ar": "سُبْحَانَ",
+          "umschrift": "subḥāna",
+          "de": "Preis sei, Erhabenheit"
+        },
+        {
+          "ar": "بَحْرٌ",
+          "umschrift": "baḥr",
+          "de": "Meer"
+        },
+        {
+          "ar": "وَيْلٌ",
+          "umschrift": "wayl",
+          "de": "Wehe"
+        },
+        {
+          "ar": "كَبيرٌ",
+          "umschrift": "kabīr",
+          "de": "groß"
+        },
+        {
+          "ar": "شَريكٌ",
+          "umschrift": "sharīk",
+          "de": "Teilhaber, Partner"
+        },
+        {
+          "ar": "اسْمٌ",
+          "umschrift": "ism",
+          "de": "Name"
+        },
+        {
+          "ar": "إِذْنٌ",
+          "umschrift": "idhn",
+          "de": "Erlaubnis"
+        },
+        {
+          "ar": "مُسْلِمٌ",
+          "umschrift": "muslim",
+          "de": "Muslim, Ergebener"
+        },
+        {
+          "ar": "حِسَابٌ",
+          "umschrift": "ḥisāb",
+          "de": "Abrechnung"
+        },
+        {
+          "ar": "جَبَلٌ",
+          "umschrift": "jabal",
+          "de": "Berg"
+        },
+        {
+          "ar": "مَيِّتٌ",
+          "umschrift": "mayyit",
+          "de": "tot, Toter"
+        },
+        {
+          "ar": "مُحْسِنٌ",
+          "umschrift": "muḥsin",
+          "de": "Gutes Tuender"
+        },
+        {
+          "ar": "مَعْروفٌ",
+          "umschrift": "maʿrūf",
+          "de": "das Rechte, das Gebilligte"
+        },
+        {
+          "ar": "ضَلَالٌ",
+          "umschrift": "ḍalāl",
+          "de": "Irrtum, Irreführung"
+        },
+        {
+          "ar": "مُسْتَقِيمٌ",
+          "umschrift": "mustaqīm",
+          "de": "gerade (Weg)"
+        },
+        {
+          "ar": "فَاسِقٌ",
+          "umschrift": "fāsiq",
+          "de": "Frevler"
+        },
+        {
+          "ar": "ذَنْبٌ",
+          "umschrift": "dhanb",
+          "de": "Sünde"
+        },
+        {
+          "ar": "سُلْطَانٌ",
+          "umschrift": "sulṭān",
+          "de": "Ermächtigung, Macht, Beweis"
+        },
+        {
+          "ar": "أَحْسَنُ",
+          "umschrift": "aḥsan",
+          "de": "besser, am besten"
+        },
+        {
+          "ar": "سَجَدَ",
+          "umschrift": "sajada",
+          "de": "sich niederwerfen"
+        },
+        {
+          "ar": "مَتَاعٌ",
+          "umschrift": "matāʿ",
+          "de": "Nutznießung, Genuss"
+        },
+        {
+          "ar": "حِينٌ",
+          "umschrift": "ḥīn",
+          "de": "Zeit, Weile"
+        },
+        {
+          "ar": "نَسِيَ",
+          "umschrift": "nasiya",
+          "de": "vergessen"
+        },
+        {
+          "ar": "إِثْمٌ",
+          "umschrift": "ithm",
+          "de": "Sünde"
+        },
+        {
+          "ar": "نَصِيرٌ",
+          "umschrift": "naṣīr",
+          "de": "Helfer"
+        },
+        {
+          "ar": "اخْتَلَفَ",
+          "umschrift": "ikhtalafa",
+          "de": "uneinig sein, sich unterscheiden"
+        },
+        {
+          "ar": "مُرْسَلٌ",
+          "umschrift": "mursal",
+          "de": "Gesandter, entsandt"
+        },
+        {
+          "ar": "مَرْيَمُ",
+          "umschrift": "Maryam",
+          "de": "Maryam (Maria)"
+        },
+        {
+          "ar": "فِتْنَةٌ",
+          "umschrift": "fitna",
+          "de": "Versuchung, Prüfung"
+        }
+      ],
+      "notes": [
+        "Zeichengenau aus dem gerenderten Seitenbild (handout.pdf S. 25) gelesen."
+      ]
+    },
+    {
+      "id": "wortliste-h27-verben-grundvokabular",
+      "kind": "vokabelliste",
+      "titleDe": "Vokabelliste: Verben (Grundvokabular)",
+      "kapitel": "Kapitel 3 · Verben",
+      "source": {
+        "file": "handout.pdf",
+        "page": 43
+      },
+      "entries": [
+        {
+          "ar": "آمَنَ - يُؤْمِنُ",
+          "umschrift": "āmana – yuʾmin",
+          "de": "glauben"
+        },
+        {
+          "ar": "عَلِمَ - يَعْلَمُ",
+          "umschrift": "ʿalima – yaʿlam",
+          "de": "wissen"
+        },
+        {
+          "ar": "جَعَلَ - يَجْعَلُ",
+          "umschrift": "jaʿala – yajʿal",
+          "de": "machen"
+        },
+        {
+          "ar": "كَفَرَ - يَكْفُرُ",
+          "umschrift": "kafara – yakfur",
+          "de": "verleugnen, nicht glauben"
+        },
+        {
+          "ar": "عَمِلَ - يَعْمَلُ",
+          "umschrift": "ʿamila – yaʿmal",
+          "de": "machen"
+        },
+        {
+          "ar": "خَلَقَ - يَخْلُقُ",
+          "umschrift": "khalaqa – yakhluq",
+          "de": "erschaffen"
+        },
+        {
+          "ar": "أَنْزَلَ - يُنْزِلُ",
+          "umschrift": "anzala – yunzil",
+          "de": "herabsenden"
+        },
+        {
+          "ar": "كَذَّبَ - يُكَذِّبُ",
+          "umschrift": "kadhdhaba – yukadhdhib",
+          "de": "leugnen, der Lüge bezichtigen"
+        },
+        {
+          "ar": "أَرْسَلَ - يُرْسِلُ",
+          "umschrift": "arsala – yursil",
+          "de": "senden"
+        },
+        {
+          "ar": "أَخَذَ - يَأْخُذُ",
+          "umschrift": "akhadha – yaʾkhudh",
+          "de": "nehmen"
+        },
+        {
+          "ar": "أَنْ",
+          "umschrift": "an",
+          "de": "dass"
+        },
+        {
+          "ar": "لَنْ",
+          "umschrift": "lan",
+          "de": "nicht (Zukunft)"
+        },
+        {
+          "ar": "لِكَيْ",
+          "umschrift": "likay",
+          "de": "damit"
+        },
+        {
+          "ar": "لَمْ",
+          "umschrift": "lam",
+          "de": "nicht (Vergangenheit)"
+        },
+        {
+          "ar": "لَمَّا",
+          "umschrift": "lammā",
+          "de": "als, noch nicht"
+        },
+        {
+          "ar": "وَ",
+          "umschrift": "wa",
+          "de": "und"
+        },
+        {
+          "ar": "فَلْ",
+          "umschrift": "fal",
+          "de": "so sollte"
+        },
+        {
+          "ar": "جَاءَ",
+          "umschrift": "jāʾa",
+          "de": "kommen"
+        },
+        {
+          "ar": "آتَى",
+          "umschrift": "ātā",
+          "de": "geben"
+        },
+        {
+          "ar": "رَأَى",
+          "umschrift": "raʾā",
+          "de": "sehen"
+        },
+        {
+          "ar": "شَاءَ",
+          "umschrift": "shāʾa",
+          "de": "wollen, wünschen"
+        },
+        {
+          "ar": "دَعَا",
+          "umschrift": "daʿā",
+          "de": "rufen, einladen, beten"
+        },
+        {
+          "ar": "اتَّقَى",
+          "umschrift": "ittaqā",
+          "de": "gottesfürchtig sein, fürchten"
+        },
+        {
+          "ar": "هَدَى",
+          "umschrift": "hadā",
+          "de": "leiten, führen"
+        },
+        {
+          "ar": "عَبَدَ - يَعْبُدُ",
+          "umschrift": "ʿabada – yaʿbud",
+          "de": "dienen, anbeten"
+        },
+        {
+          "ar": "أَخْرَجَ",
+          "umschrift": "akhraja",
+          "de": "hervorbringen, vertreiben"
+        },
+        {
+          "ar": "أَكَلَ",
+          "umschrift": "akala",
+          "de": "essen, verzehren"
+        },
+        {
+          "ar": "فَعَلَ",
+          "umschrift": "faʿala",
+          "de": "tun, machen"
+        },
+        {
+          "ar": "نَظَرَ",
+          "umschrift": "naẓara",
+          "de": "blicken, ansehen"
+        },
+        {
+          "ar": "ذَكَرَ",
+          "umschrift": "dhakara",
+          "de": "erinnern, erwähnen"
+        },
+        {
+          "ar": "قَتَلَ",
+          "umschrift": "qatala",
+          "de": "töten"
+        },
+        {
+          "ar": "خَافَ",
+          "umschrift": "khāfa",
+          "de": "fürchten, Angst haben"
+        },
+        {
+          "ar": "رَجَعَ",
+          "umschrift": "rajaʿa",
+          "de": "zurückkehren"
+        },
+        {
+          "ar": "تَوَلَّى",
+          "umschrift": "tawallā",
+          "de": "sich abwenden"
+        },
+        {
+          "ar": "سَمِعَ",
+          "umschrift": "samiʿa",
+          "de": "hören"
+        }
+      ],
+      "notes": [
+        "Zeichengenau aus dem gerenderten Seitenbild (handout.pdf S. 43) gelesen."
+      ]
+    },
+    {
+      "id": "wortliste-h37-saetze-teil1",
+      "kind": "vokabelliste",
+      "titleDe": "Vokabelliste: Sätze, Teil 1",
+      "kapitel": "Kapitel 4 · Sätze",
+      "source": {
+        "file": "handout.pdf",
+        "page": 54
+      },
+      "entries": [
+        {
+          "ar": "قَالَ - يَقُولُ",
+          "umschrift": "qāla – yaqūl",
+          "de": "sagen"
+        },
+        {
+          "ar": "أَيُّهَا",
+          "umschrift": "ayyuhā",
+          "de": "Oh"
+        },
+        {
+          "ar": "أَرَادَ - يُرِيدُ",
+          "umschrift": "arāda – yurīd",
+          "de": "wollen"
+        },
+        {
+          "ar": "اتَّبَعَ - يَتَّبِعُ",
+          "umschrift": "ittabaʿa – yattabiʿ",
+          "de": "folgen"
+        },
+        {
+          "ar": "ظَلَمَ - يَظْلِمُ",
+          "umschrift": "ẓalama – yaẓlim",
+          "de": "unrecht tun"
+        },
+        {
+          "ar": "اتَّخَذَ - يَتَّخِذُ",
+          "umschrift": "ittakhadha – yattakhidh",
+          "de": "nehmen"
+        },
+        {
+          "ar": "سَأَلَ - يَسْأَلُ",
+          "umschrift": "saʾala – yasʾal",
+          "de": "fragen"
+        },
+        {
+          "ar": "وَجَدَ - يَجِدُ",
+          "umschrift": "wajada – yajid",
+          "de": "finden"
+        },
+        {
+          "ar": "عَزِيزٌ",
+          "umschrift": "ʿazīz",
+          "de": "Mächtig"
+        },
+        {
+          "ar": "كَانَ - يَكُونُ",
+          "umschrift": "kāna – yakūn",
+          "de": "sein"
+        },
+        {
+          "ar": "لَيْسَ",
+          "umschrift": "laysa",
+          "de": "nicht sein"
+        },
+        {
+          "ar": "ظَلَّ",
+          "umschrift": "ẓalla",
+          "de": "bleiben"
+        },
+        {
+          "ar": "أَصْبَحَ",
+          "umschrift": "aṣbaḥa",
+          "de": "werden"
+        },
+        {
+          "ar": "خَيْرٌ",
+          "umschrift": "khayr",
+          "de": "besser, das Gute"
+        },
+        {
+          "ar": "أَمْرٌ",
+          "umschrift": "amr",
+          "de": "Befehl, Angelegenheit, Sache"
+        },
+        {
+          "ar": "عَلِيمٌ",
+          "umschrift": "ʿalīm",
+          "de": "wissend, gelehrt"
+        },
+        {
+          "ar": "كَافِرٌ",
+          "umschrift": "kāfir",
+          "de": "Ungläubiger"
+        },
+        {
+          "ar": "ذُو",
+          "umschrift": "dhū",
+          "de": "Besitzer, Inhaber von"
+        },
+        {
+          "ar": "آخِرٌ",
+          "umschrift": "ākhir",
+          "de": "letzter, Jenseits, spätere Generationen"
+        },
+        {
+          "ar": "إِلَهٌ",
+          "umschrift": "ilāh",
+          "de": "Gott"
+        },
+        {
+          "ar": "مُوسَى",
+          "umschrift": "Mūsā",
+          "de": "Musa (Moses)"
+        },
+        {
+          "ar": "قَلْبٌ",
+          "umschrift": "qalb",
+          "de": "Herz"
+        },
+        {
+          "ar": "ظَالِمٌ",
+          "umschrift": "ẓālim",
+          "de": "Ungerechter"
+        },
+        {
+          "ar": "أَهْلٌ",
+          "umschrift": "ahl",
+          "de": "Familie"
+        },
+        {
+          "ar": "مُبِينٌ",
+          "umschrift": "mubīn",
+          "de": "klar, deutlich"
+        },
+        {
+          "ar": "رَحِيمٌ",
+          "umschrift": "raḥīm",
+          "de": "barmherzig"
+        },
+        {
+          "ar": "دُنْيَا",
+          "umschrift": "dunyā",
+          "de": "Welt (diesseitiges Leben)"
+        },
+        {
+          "ar": "عَظِيمٌ",
+          "umschrift": "ʿaẓīm",
+          "de": "groß, gewaltig"
+        },
+        {
+          "ar": "أَجْرٌ",
+          "umschrift": "ajr",
+          "de": "Lohn, Belohnung, Mitgift"
+        },
+        {
+          "ar": "حَكِيمٌ",
+          "umschrift": "ḥakīm",
+          "de": "weise"
+        },
+        {
+          "ar": "دِينٌ",
+          "umschrift": "dīn",
+          "de": "Glaube, Religion, Gerichtstag"
+        },
+        {
+          "ar": "قَوْلٌ",
+          "umschrift": "qawl",
+          "de": "Rede, Aussage"
+        },
+        {
+          "ar": "غَفُورٌ",
+          "umschrift": "ghafūr",
+          "de": "allverzeihend"
+        },
+        {
+          "ar": "شَيْطَانٌ",
+          "umschrift": "shayṭān",
+          "de": "Teufel, Satan"
+        },
+        {
+          "ar": "مَثَلٌ",
+          "umschrift": "mathal",
+          "de": "Gleichnis, Beispiel"
+        }
+      ],
+      "notes": [
+        "Zeichengenau aus dem gerenderten Seitenbild (handout.pdf S. 54) gelesen."
+      ]
+    },
+    {
+      "id": "wortliste-h38-saetze-teil2",
+      "kind": "vokabelliste",
+      "titleDe": "Vokabelliste: Sätze, Teil 2",
+      "kapitel": "Kapitel 4 · Sätze",
+      "source": {
+        "file": "handout.pdf",
+        "page": 55
+      },
+      "entries": [
+        {
+          "ar": "ابْتَغَى",
+          "umschrift": "ibtaghā",
+          "de": "erstreben, trachten nach"
+        },
+        {
+          "ar": "قَامَ",
+          "umschrift": "qāma",
+          "de": "aufstehen, stehen"
+        },
+        {
+          "ar": "فَرِيقٌ",
+          "umschrift": "farīq",
+          "de": "Gruppe, Partei"
+        },
+        {
+          "ar": "حَرَامٌ",
+          "umschrift": "ḥarām",
+          "de": "verboten, unverletzlich"
+        },
+        {
+          "ar": "خَاسِرٌ",
+          "umschrift": "khāsir",
+          "de": "Verlierer"
+        },
+        {
+          "ar": "زَكَاةٌ",
+          "umschrift": "zakāh",
+          "de": "Zakat, Almosen"
+        },
+        {
+          "ar": "ذُرِّيَّةٌ",
+          "umschrift": "dhurriyya",
+          "de": "Nachkommenschaft"
+        },
+        {
+          "ar": "كَفَى",
+          "umschrift": "kafā",
+          "de": "genügen"
+        },
+        {
+          "ar": "كَاذِبٌ",
+          "umschrift": "kādhib",
+          "de": "Lügner"
+        },
+        {
+          "ar": "نَهَى",
+          "umschrift": "nahā",
+          "de": "verbieten, abhalten"
+        },
+        {
+          "ar": "عَاقِبَةٌ",
+          "umschrift": "ʿāqiba",
+          "de": "Ende, Ausgang, Folge"
+        },
+        {
+          "ar": "أَعْرَضَ",
+          "umschrift": "aʿraḍa",
+          "de": "sich abwenden"
+        },
+        {
+          "ar": "حَيْثُ",
+          "umschrift": "ḥaythu",
+          "de": "wo, da wo"
+        },
+        {
+          "ar": "أَشَدُّ",
+          "umschrift": "ashadd",
+          "de": "stärker, heftiger"
+        },
+        {
+          "ar": "نَفَعَ",
+          "umschrift": "nafaʿa",
+          "de": "nützen"
+        },
+        {
+          "ar": "حَسَنَةٌ",
+          "umschrift": "ḥasana",
+          "de": "gute Tat, Gutes"
+        },
+        {
+          "ar": "وَاحِدَةٌ",
+          "umschrift": "wāḥida",
+          "de": "eine (einzige)"
+        },
+        {
+          "ar": "طَيِّبَةٌ",
+          "umschrift": "ṭayyiba",
+          "de": "gut, rein (f.)"
+        },
+        {
+          "ar": "وَاحِدٌ",
+          "umschrift": "wāḥid",
+          "de": "einer, einzig"
+        },
+        {
+          "ar": "قُوَّةٌ",
+          "umschrift": "quwwa",
+          "de": "Kraft, Stärke"
+        },
+        {
+          "ar": "عَادٌ",
+          "umschrift": "ʿĀd",
+          "de": "Aad (Volk)"
+        },
+        {
+          "ar": "عَسَى",
+          "umschrift": "ʿasā",
+          "de": "vielleicht, möge"
+        },
+        {
+          "ar": "شَرٌّ",
+          "umschrift": "sharr",
+          "de": "Böses, Übel"
+        },
+        {
+          "ar": "مَلَأٌ",
+          "umschrift": "malaʾ",
+          "de": "die Vornehmen, Notabeln"
+        },
+        {
+          "ar": "لَبِثَ",
+          "umschrift": "labitha",
+          "de": "verweilen, bleiben"
+        },
+        {
+          "ar": "كَرِيمٌ",
+          "umschrift": "karīm",
+          "de": "edel, großzügig"
+        },
+        {
+          "ar": "أَبْصَرَ",
+          "umschrift": "abṣara",
+          "de": "sehen, erblicken"
+        },
+        {
+          "ar": "عَهْدٌ",
+          "umschrift": "ʿahd",
+          "de": "Bund, Versprechen"
+        },
+        {
+          "ar": "جُنْدٌ",
+          "umschrift": "jund",
+          "de": "Heer, Schar"
+        },
+        {
+          "ar": "عَرْشٌ",
+          "umschrift": "ʿarsh",
+          "de": "Thron"
+        },
+        {
+          "ar": "رَجُلٌ",
+          "umschrift": "rajul",
+          "de": "Mann"
+        },
+        {
+          "ar": "أَبَدًا",
+          "umschrift": "abadan",
+          "de": "ewig, niemals"
+        },
+        {
+          "ar": "سِحْرٌ",
+          "umschrift": "siḥr",
+          "de": "Zauberei, Magie"
+        },
+        {
+          "ar": "مَسْجِدٌ",
+          "umschrift": "masjid",
+          "de": "Moschee, Gebetsstätte"
+        },
+        {
+          "ar": "مَصِيرٌ",
+          "umschrift": "maṣīr",
+          "de": "Schicksal, Bestimmungsort"
+        }
+      ],
+      "notes": [
+        "Zeichengenau aus dem gerenderten Seitenbild (handout.pdf S. 55) gelesen."
+      ]
+    },
+    {
+      "id": "wortliste-h53-sarf-grundvokabular",
+      "kind": "vokabelliste",
+      "titleDe": "Vokabelliste: Morphologie – Sarf (Grundvokabular)",
+      "kapitel": "Kapitel 5 · Morphologie – Sarf",
+      "source": {
+        "file": "handout.pdf",
+        "page": 73
+      },
+      "entries": [
+        {
+          "ar": "دَخَلَ",
+          "umschrift": "dakhala",
+          "de": "eintreten, betreten"
+        },
+        {
+          "ar": "جَزَى",
+          "umschrift": "jazā",
+          "de": "belohnen"
+        },
+        {
+          "ar": "أَطَاعَ",
+          "umschrift": "aṭāʿa",
+          "de": "gehorchen"
+        },
+        {
+          "ar": "أَوْحَى",
+          "umschrift": "awḥā",
+          "de": "offenbaren, inspirieren"
+        },
+        {
+          "ar": "أَشْرَكَ",
+          "umschrift": "ashraka",
+          "de": "Beigesellen, Partner zur Seite stellen"
+        },
+        {
+          "ar": "أَلْقَى",
+          "umschrift": "alqā",
+          "de": "werfen, hinwerfen, treffen, anbieten"
+        },
+        {
+          "ar": "وَعَدَ",
+          "umschrift": "waʿada",
+          "de": "versprechen"
+        },
+        {
+          "ar": "أَنفَقَ",
+          "umschrift": "anfaqa",
+          "de": "ausgeben"
+        },
+        {
+          "ar": "غَفَرَ",
+          "umschrift": "ghafara",
+          "de": "vergeben"
+        },
+        {
+          "ar": "أَضَلَّ",
+          "umschrift": "aḍalla",
+          "de": "in die Irre führen, irreführen"
+        },
+        {
+          "ar": "أَصَابَ",
+          "umschrift": "aṣāba",
+          "de": "treffen, befallen"
+        },
+        {
+          "ar": "أَحَبَّ",
+          "umschrift": "aḥabba",
+          "de": "lieben, mögen"
+        },
+        {
+          "ar": "تَابَ",
+          "umschrift": "tāba",
+          "de": "bereuen, umkehren"
+        },
+        {
+          "ar": "نَزَّلَ",
+          "umschrift": "nazzala",
+          "de": "herabsenden, offenbaren"
+        },
+        {
+          "ar": "كَسَبَ",
+          "umschrift": "kasaba",
+          "de": "verdienen, erwerben"
+        },
+        {
+          "ar": "رَزَقَ",
+          "umschrift": "razaqa",
+          "de": "versorgen, geben"
+        },
+        {
+          "ar": "تَلَا",
+          "umschrift": "talā",
+          "de": "rezitieren, folgen"
+        },
+        {
+          "ar": "نَصَرَ",
+          "umschrift": "naṣara",
+          "de": "helfen"
+        },
+        {
+          "ar": "قَضَى",
+          "umschrift": "qaḍā",
+          "de": "entscheiden, richten"
+        },
+        {
+          "ar": "صَبَرَ",
+          "umschrift": "ṣabara",
+          "de": "geduldig sein"
+        },
+        {
+          "ar": "جَرَى",
+          "umschrift": "jarā",
+          "de": "fließen, laufen"
+        },
+        {
+          "ar": "مَسَّ",
+          "umschrift": "massa",
+          "de": "berühren"
+        },
+        {
+          "ar": "ضَرَبَ",
+          "umschrift": "ḍaraba",
+          "de": "schlagen, hinstellen"
+        },
+        {
+          "ar": "أَقَامَ",
+          "umschrift": "aqāma",
+          "de": "aufrichten, einhalten"
+        },
+        {
+          "ar": "قَاتَلَ",
+          "umschrift": "qātala",
+          "de": "kämpfen"
+        },
+        {
+          "ar": "خَرَجَ",
+          "umschrift": "kharaja",
+          "de": "hinausgehen, herauskommen"
+        },
+        {
+          "ar": "ضَلَّ",
+          "umschrift": "ḍalla",
+          "de": "sich verirren, abirren"
+        },
+        {
+          "ar": "بَعَثَ",
+          "umschrift": "baʿatha",
+          "de": "auferwecken, senden"
+        },
+        {
+          "ar": "أَحْيَا",
+          "umschrift": "aḥyā",
+          "de": "zum Leben erwecken"
+        },
+        {
+          "ar": "أَهْلَكَ",
+          "umschrift": "ahlaka",
+          "de": "vernichten"
+        },
+        {
+          "ar": "تَذَكَّرَ",
+          "umschrift": "tadhakkara",
+          "de": "sich erinnern, ermahnt werden"
+        },
+        {
+          "ar": "افْتَرَى",
+          "umschrift": "iftarā",
+          "de": "erfinden (eine Lüge)"
+        },
+        {
+          "ar": "زَادَ",
+          "umschrift": "zāda",
+          "de": "erhöhen, vermehren"
+        },
+        {
+          "ar": "عَقَلَ",
+          "umschrift": "ʿaqala",
+          "de": "verstehen, nachdenken"
+        },
+        {
+          "ar": "كَتَبَ",
+          "umschrift": "kataba",
+          "de": "schreiben, vorschreiben"
+        }
+      ],
+      "notes": [
+        "Zeichengenau aus dem gerenderten Seitenbild (handout.pdf S. 73) gelesen."
+      ]
+    },
+    {
+      "id": "wortliste-h54-verschiedene-ausdruecke",
+      "kind": "vokabelliste",
+      "titleDe": "Vokabelliste: Verschiedene Ausdrücke im Qur'an",
+      "kapitel": "Kapitel 6 · Verschiedene Ausdrücke im Qur'an",
+      "source": {
+        "file": "handout.pdf",
+        "page": 75
+      },
+      "entries": [
+        {
+          "ar": "أَوْ",
+          "umschrift": "aw",
+          "de": "oder"
+        },
+        {
+          "ar": "ثُمَّ",
+          "umschrift": "thumma",
+          "de": "und dann"
+        },
+        {
+          "ar": "فَ",
+          "umschrift": "fa",
+          "de": "und dann (sofort)"
+        },
+        {
+          "ar": "بَلْ",
+          "umschrift": "bal",
+          "de": "vielmehr"
+        },
+        {
+          "ar": "مَنْ",
+          "umschrift": "man",
+          "de": "wer"
+        },
+        {
+          "ar": "مَاذَا",
+          "umschrift": "mādhā",
+          "de": "was"
+        },
+        {
+          "ar": "مَا",
+          "umschrift": "mā",
+          "de": "was"
+        },
+        {
+          "ar": "مَتَى",
+          "umschrift": "matā",
+          "de": "wann"
+        },
+        {
+          "ar": "أَيْنَ",
+          "umschrift": "ayna",
+          "de": "wo"
+        },
+        {
+          "ar": "كَيْفَ",
+          "umschrift": "kayfa",
+          "de": "wie"
+        },
+        {
+          "ar": "هَلْ",
+          "umschrift": "hal",
+          "de": "Ja/Nein-Frage"
+        },
+        {
+          "ar": "أَ",
+          "umschrift": "a",
+          "de": "Ja/Nein-Frage"
+        },
+        {
+          "ar": "نِعْمَ",
+          "umschrift": "niʿma",
+          "de": "wie wunderbar"
+        },
+        {
+          "ar": "بِئْسَ",
+          "umschrift": "biʾsa",
+          "de": "wie schrecklich"
+        },
+        {
+          "ar": "حَسُنَ",
+          "umschrift": "ḥasuna",
+          "de": "wie großartig"
+        },
+        {
+          "ar": "سَاءَ",
+          "umschrift": "sāʾa",
+          "de": "wie schlecht"
+        },
+        {
+          "ar": "لَوْ",
+          "umschrift": "law",
+          "de": "hätte (hypothetisch)"
+        },
+        {
+          "ar": "أَنَّ",
+          "umschrift": "anna",
+          "de": "dass (mit Nominalsatz)"
+        },
+        {
+          "ar": "إِذْ",
+          "umschrift": "idh",
+          "de": "als, damals (Vergangenheit)"
+        },
+        {
+          "ar": "إِلَّا",
+          "umschrift": "illā",
+          "de": "außer"
+        },
+        {
+          "ar": "أَمْ",
+          "umschrift": "am",
+          "de": "oder"
+        },
+        {
+          "ar": "لَوْلَا",
+          "umschrift": "lawlā",
+          "de": "wäre nicht, warum nicht"
+        },
+        {
+          "ar": "أَمَّا",
+          "umschrift": "ammā",
+          "de": "was … betrifft"
+        },
+        {
+          "ar": "سَوْفَ",
+          "umschrift": "sawfa",
+          "de": "wird (Futurpartikel)"
+        },
+        {
+          "ar": "كَلَّا",
+          "umschrift": "kallā",
+          "de": "keineswegs, nein"
+        },
+        {
+          "ar": "بَلَى",
+          "umschrift": "balā",
+          "de": "doch, ja gewiss"
+        }
+      ],
+      "notes": [
+        "Zeichengenau aus dem gerenderten Seitenbild (handout.pdf S. 75) gelesen. Mischt Konjunktionen, Fragewörter und Satzpartikel — wie im Original unter einer Überschrift geführt, nicht künstlich in Partikel-/Fragewortlisten aufgespalten."
+      ]
+    },
+    {
+      "id": "wortliste-h58-komplexe-saetze-teil1",
+      "kind": "vokabelliste",
+      "titleDe": "Vokabelliste: Komplexe Sätze, Teil 1",
+      "kapitel": "Kapitel 7 · Komplexe Sätze",
+      "source": {
+        "file": "handout.pdf",
+        "page": 91
+      },
+      "entries": [
+        {
+          "ar": "الَّذِينَ",
+          "umschrift": "alladhīna",
+          "de": "diejenigen, die (m. Pl.)"
+        },
+        {
+          "ar": "هُوَ",
+          "umschrift": "huwa",
+          "de": "er, es"
+        },
+        {
+          "ar": "هُمْ",
+          "umschrift": "hum",
+          "de": "sie (m. Pl.)"
+        },
+        {
+          "ar": "مَلَكٌ",
+          "umschrift": "malak",
+          "de": "Engel"
+        },
+        {
+          "ar": "وَلِيٌّ",
+          "umschrift": "waliyy",
+          "de": "Schutzherr, Beschützer"
+        },
+        {
+          "ar": "مَالٌ",
+          "umschrift": "māl",
+          "de": "Vermögen, Reichtum"
+        },
+        {
+          "ar": "فَضْلٌ",
+          "umschrift": "faḍl",
+          "de": "Gunst, Barmherzigkeit, Gnade"
+        },
+        {
+          "ar": "لَيْلٌ",
+          "umschrift": "layl",
+          "de": "Nacht"
+        },
+        {
+          "ar": "صَلَاةٌ",
+          "umschrift": "ṣalāh",
+          "de": "Gebet"
+        },
+        {
+          "ar": "أَوَّلُ",
+          "umschrift": "awwal",
+          "de": "erst, ehemalig"
+        },
+        {
+          "ar": "بَنِيّ",
+          "umschrift": "banī",
+          "de": "Kinder, Nachkommen"
+        },
+        {
+          "ar": "أَكْثَرُ",
+          "umschrift": "akthar",
+          "de": "die meisten"
+        },
+        {
+          "ar": "أَصْحَابٌ",
+          "umschrift": "aṣḥāb",
+          "de": "Gefährten, Bewohner"
+        },
+        {
+          "ar": "زَوْجٌ",
+          "umschrift": "zawj",
+          "de": "Paar, Gatte"
+        },
+        {
+          "ar": "حَيَاةٌ",
+          "umschrift": "ḥayāh",
+          "de": "Leben"
+        },
+        {
+          "ar": "نَبِيٌّ",
+          "umschrift": "nabiyy",
+          "de": "Prophet"
+        },
+        {
+          "ar": "أَخٌ",
+          "umschrift": "akh",
+          "de": "Bruder"
+        },
+        {
+          "ar": "خَالِدٌ",
+          "umschrift": "khālid",
+          "de": "ewig verweilend"
+        },
+        {
+          "ar": "فِرْعَوْنُ",
+          "umschrift": "Firʿawn",
+          "de": "Pharao"
+        },
+        {
+          "ar": "صَالِحٌ",
+          "umschrift": "ṣāliḥ",
+          "de": "rechtschaffen"
+        },
+        {
+          "ar": "أَحَدٌ",
+          "umschrift": "aḥad",
+          "de": "einer, jemand"
+        },
+        {
+          "ar": "عَالَمٌ",
+          "umschrift": "ʿālam",
+          "de": "Welt, Welten"
+        },
+        {
+          "ar": "أَلِيمٌ",
+          "umschrift": "alīm",
+          "de": "schmerzhaft"
+        },
+        {
+          "ar": "وَجْهٌ",
+          "umschrift": "wajh",
+          "de": "Gesicht"
+        },
+        {
+          "ar": "إِنسَانٌ",
+          "umschrift": "insān",
+          "de": "Mensch"
+        },
+        {
+          "ar": "بَيِّنَةٌ",
+          "umschrift": "bayyina",
+          "de": "Beweis, klares Zeichen"
+        },
+        {
+          "ar": "قَلِيلٌ",
+          "umschrift": "qalīl",
+          "de": "wenige"
+        },
+        {
+          "ar": "قِيَامَةٌ",
+          "umschrift": "qiyāma",
+          "de": "Auferstehung"
+        },
+        {
+          "ar": "قُرْآنٌ",
+          "umschrift": "Qurʾān",
+          "de": "Koran"
+        },
+        {
+          "ar": "إِبْرَاهِيمُ",
+          "umschrift": "Ibrāhīm",
+          "de": "Ibrahim (Abraham)"
+        },
+        {
+          "ar": "بَيْتٌ",
+          "umschrift": "bayt",
+          "de": "Haus"
+        },
+        {
+          "ar": "يَمِينٌ",
+          "umschrift": "yamīn",
+          "de": "Rechte, rechte Seite"
+        },
+        {
+          "ar": "أُمَّةٌ",
+          "umschrift": "umma",
+          "de": "Volk, Nation, Gemeinschaft, Religionsgemeinschaft"
+        },
+        {
+          "ar": "آبَاءٌ",
+          "umschrift": "ābāʾ",
+          "de": "Vorfahren, Väter"
+        },
+        {
+          "ar": "كَثِيرٌ",
+          "umschrift": "kathīr",
+          "de": "viel, zahlreich"
+        }
+      ],
+      "notes": [
+        "Zeichengenau aus dem gerenderten Seitenbild (handout.pdf S. 91) gelesen. Ergänzung zum ursprünglichen Auftragskern (H-1/H-12/H-13/H-27/H-37/H-38/H-53/H-54): laut der früheren Bilanz in LUECKEN.md gehört diese Vokabelliste zu den 'rund 24 Vokabel- und Rhetorik-Beispieltabellen aus Abschnitt C'."
+      ]
+    },
+    {
+      "id": "wortliste-h59-komplexe-saetze-teil2",
+      "kind": "vokabelliste",
+      "titleDe": "Vokabelliste: Komplexe Sätze, Teil 2",
+      "kapitel": "Kapitel 7 · Komplexe Sätze",
+      "source": {
+        "file": "handout.pdf",
+        "page": 92
+      },
+      "entries": [
+        {
+          "ar": "أَصْلَحَ",
+          "umschrift": "aṣlaḥa",
+          "de": "in Ordnung bringen, aussöhnen"
+        },
+        {
+          "ar": "مَغْفِرَةٌ",
+          "umschrift": "maghfira",
+          "de": "Vergebung"
+        },
+        {
+          "ar": "اسْتَجَابَ",
+          "umschrift": "istajāba",
+          "de": "erhören, antworten"
+        },
+        {
+          "ar": "مُؤْمِنَةٌ",
+          "umschrift": "muʾmina",
+          "de": "gläubige Frau"
+        },
+        {
+          "ar": "أَنَّى",
+          "umschrift": "annā",
+          "de": "wie, woher"
+        },
+        {
+          "ar": "رِجَالٌ",
+          "umschrift": "rijāl",
+          "de": "Männer"
+        },
+        {
+          "ar": "رَحِمَ",
+          "umschrift": "raḥima",
+          "de": "sich erbarmen"
+        },
+        {
+          "ar": "أَغْنَتْ",
+          "umschrift": "aghnat",
+          "de": "nützen, entbehrlich machen"
+        },
+        {
+          "ar": "حَدِيثٌ",
+          "umschrift": "ḥadīth",
+          "de": "Bericht, Rede, Hadith"
+        },
+        {
+          "ar": "سَوَاءٌ",
+          "umschrift": "sawāʾ",
+          "de": "gleich, gleichermaßen"
+        },
+        {
+          "ar": "عَفَا",
+          "umschrift": "ʿafā",
+          "de": "verzeihen, vergeben"
+        },
+        {
+          "ar": "بَابٌ",
+          "umschrift": "bāb",
+          "de": "Tür, Tor"
+        },
+        {
+          "ar": "غَافِلٌ",
+          "umschrift": "ghāfil",
+          "de": "achtlos, unachtsam"
+        },
+        {
+          "ar": "قَدَّمَ",
+          "umschrift": "qaddama",
+          "de": "vorausschicken, darbringen"
+        },
+        {
+          "ar": "أَفْلَحَ",
+          "umschrift": "aflaḥa",
+          "de": "erfolgreich sein, gedeihen"
+        },
+        {
+          "ar": "جَاهَدَ",
+          "umschrift": "jāhada",
+          "de": "kämpfen, sich bemühen (Dschihad)"
+        },
+        {
+          "ar": "مَكَانٌ",
+          "umschrift": "makān",
+          "de": "Ort, Platz"
+        },
+        {
+          "ar": "مُنَافِقٌ",
+          "umschrift": "munāfiq",
+          "de": "Heuchler"
+        },
+        {
+          "ar": "قَمَرٌ",
+          "umschrift": "qamar",
+          "de": "Mond"
+        },
+        {
+          "ar": "يُوسُفُ",
+          "umschrift": "Yūsuf",
+          "de": "Yusuf (Josef)"
+        },
+        {
+          "ar": "لُوطٌ",
+          "umschrift": "Lūṭ",
+          "de": "Lut (Lot)"
+        },
+        {
+          "ar": "خَوْفٌ",
+          "umschrift": "khawf",
+          "de": "Furcht, Angst"
+        },
+        {
+          "ar": "بَاطِلٌ",
+          "umschrift": "bāṭil",
+          "de": "falsch, nichtig, Falschheit"
+        },
+        {
+          "ar": "آلُ",
+          "umschrift": "āl",
+          "de": "Sippe, Familie von"
+        },
+        {
+          "ar": "جَحِيمٌ",
+          "umschrift": "jaḥīm",
+          "de": "Höllenfeuer, Hölle"
+        },
+        {
+          "ar": "شَهَادَةٌ",
+          "umschrift": "shahāda",
+          "de": "Zeugnis"
+        },
+        {
+          "ar": "أَجْمَعُ",
+          "umschrift": "ajmaʿ",
+          "de": "allesamt, gesamt"
+        },
+        {
+          "ar": "قَرِيبٌ",
+          "umschrift": "qarīb",
+          "de": "nah"
+        },
+        {
+          "ar": "زَيَّنَ",
+          "umschrift": "zayyana",
+          "de": "schön erscheinen lassen, schmücken"
+        },
+        {
+          "ar": "امْرَأَتٌ",
+          "umschrift": "imraʾa",
+          "de": "Frau von, Ehefrau"
+        },
+        {
+          "ar": "كَيْدٌ",
+          "umschrift": "kayd",
+          "de": "List, Ränke"
+        },
+        {
+          "ar": "ثَمُودُ",
+          "umschrift": "Thamūd",
+          "de": "Thamud (Volk)"
+        },
+        {
+          "ar": "يَشْعُرُ",
+          "umschrift": "yashʿur",
+          "de": "merken, wahrnehmen"
+        },
+        {
+          "ar": "خَلَا",
+          "umschrift": "khalā",
+          "de": "vergehen, vorübergehen"
+        },
+        {
+          "ar": "مِيثَاقٌ",
+          "umschrift": "mīthāq",
+          "de": "Bund, feierliches Versprechen"
+        }
+      ],
+      "notes": [
+        "Zeichengenau aus dem gerenderten Seitenbild (handout.pdf S. 92) gelesen. Fortsetzung der Kapitel-7-Vokabelliste von H-58."
+      ]
+    },
+    {
+      "id": "wortliste-h164-sarf-fortgeschritten",
+      "kind": "vokabelliste",
+      "titleDe": "Vokabelliste: Sarf – Fortgeschrittene Morphologie",
+      "kapitel": "Kapitel 8 · Sarf – Fortgeschrittene Morphologie",
+      "source": {
+        "file": "handout.pdf",
+        "page": 133
+      },
+      "entries": [
+        {
+          "ar": "ظَنَّ",
+          "umschrift": "ẓanna",
+          "de": "meinen, vermuten"
+        },
+        {
+          "ar": "شَكَرَ",
+          "umschrift": "shakara",
+          "de": "danken"
+        },
+        {
+          "ar": "نَبَّأَ",
+          "umschrift": "nabbaʾa",
+          "de": "verkünden, benachrichtigen"
+        },
+        {
+          "ar": "حَكَمَ",
+          "umschrift": "ḥakama",
+          "de": "richten, urteilen"
+        },
+        {
+          "ar": "يَذَرَ",
+          "umschrift": "yadhar",
+          "de": "lassen, verlassen"
+        },
+        {
+          "ar": "أَنذَرَ",
+          "umschrift": "andhara",
+          "de": "warnen"
+        },
+        {
+          "ar": "شَهِدَ",
+          "umschrift": "shahida",
+          "de": "bezeugen"
+        },
+        {
+          "ar": "حَسِبَ",
+          "umschrift": "ḥasiba",
+          "de": "meinen, glauben"
+        },
+        {
+          "ar": "نادَى",
+          "umschrift": "nādā",
+          "de": "rufen"
+        },
+        {
+          "ar": "مَلَكَتْ",
+          "umschrift": "malakat",
+          "de": "besitzen"
+        },
+        {
+          "ar": "سَبَّحَ",
+          "umschrift": "sabbaḥa",
+          "de": "lobpreisen"
+        },
+        {
+          "ar": "اسْتَطاعَ",
+          "umschrift": "istaṭāʿa",
+          "de": "vermögen, können"
+        },
+        {
+          "ar": "أُدْخِلَ",
+          "umschrift": "udkhila",
+          "de": "hineingebracht werden"
+        },
+        {
+          "ar": "حَمَلَ",
+          "umschrift": "ḥamala",
+          "de": "tragen"
+        },
+        {
+          "ar": "عَذَّبَ",
+          "umschrift": "ʿadhdhaba",
+          "de": "bestrafen, peinigen"
+        },
+        {
+          "ar": "تَرَكَ",
+          "umschrift": "taraka",
+          "de": "lassen, zurücklassen"
+        },
+        {
+          "ar": "اسْتَكْبَرَ",
+          "umschrift": "istakbara",
+          "de": "sich hochmütig zeigen"
+        },
+        {
+          "ar": "اهْتَدَى",
+          "umschrift": "ihtadā",
+          "de": "rechtgeleitet sein"
+        },
+        {
+          "ar": "أَرَيْ",
+          "umschrift": "arā",
+          "de": "zeigen"
+        },
+        {
+          "ar": "خَشِيَ",
+          "umschrift": "khashiya",
+          "de": "fürchten"
+        },
+        {
+          "ar": "بَلَغَ",
+          "umschrift": "balagha",
+          "de": "erreichen, gelangen"
+        },
+        {
+          "ar": "اسْتَغْفَرَ",
+          "umschrift": "istaghfara",
+          "de": "um Vergebung bitten"
+        },
+        {
+          "ar": "تَوَكَّلْ",
+          "umschrift": "tawakkal",
+          "de": "vertrauen (auf Allah)"
+        },
+        {
+          "ar": "ماتَ",
+          "umschrift": "māta",
+          "de": "sterben"
+        },
+        {
+          "ar": "حَرَّمَ",
+          "umschrift": "ḥarrama",
+          "de": "verbieten, für verboten erklären"
+        },
+        {
+          "ar": "بُشِّرَ",
+          "umschrift": "bushshira",
+          "de": "frohe Botschaft erhalten"
+        },
+        {
+          "ar": "رَضِيَ",
+          "umschrift": "raḍiya",
+          "de": "zufrieden sein, Wohlgefallen haben"
+        },
+        {
+          "ar": "يَحْزُنَ",
+          "umschrift": "yaḥzuna",
+          "de": "traurig machen, betrüben"
+        },
+        {
+          "ar": "نَجَّى",
+          "umschrift": "najjā",
+          "de": "erretten"
+        },
+        {
+          "ar": "حَشَرَ",
+          "umschrift": "ḥashara",
+          "de": "versammeln"
+        },
+        {
+          "ar": "صَدَّ",
+          "umschrift": "ṣadda",
+          "de": "abhalten, abwenden"
+        },
+        {
+          "ar": "رَدَّ",
+          "umschrift": "radda",
+          "de": "zurückweisen, zurückgeben"
+        },
+        {
+          "ar": "ذاقَ",
+          "umschrift": "dhāqa",
+          "de": "kosten, schmecken"
+        },
+        {
+          "ar": "ذَهَبَ",
+          "umschrift": "dhahaba",
+          "de": "gehen, fortgehen"
+        },
+        {
+          "ar": "اسْتَوَى",
+          "umschrift": "istawā",
+          "de": "sich aufrichten, sich erheben"
+        }
+      ],
+      "notes": [
+        "Zeichengenau aus dem gerenderten Seitenbild (handout.pdf S. 133) gelesen — H-164 lag in der früheren Bilanz noch in einem Atemzug mit H-185 als '19x4-Raster' beschrieben; das gerenderte Bild zeigt zwei getrennte Spaltenpaare mit je eigener Deutsch-Spalte, hier als eine Liste mit 35 Einträgen übernommen."
+      ]
+    },
+    {
+      "id": "wortliste-h185-balagah-vokabular",
+      "kind": "vokabelliste",
+      "titleDe": "Vokabelliste: Balagah – Die Rhetorik des Qur'ans",
+      "kapitel": "Kapitel 9 · Balagah – Die Rhetorik des Qur'ans",
+      "source": {
+        "file": "handout.pdf",
+        "page": 171
+      },
+      "entries": [
+        {
+          "ar": "آدَمَ",
+          "umschrift": "Ādam",
+          "de": "Adam"
+        },
+        {
+          "ar": "عِيسَى",
+          "umschrift": "ʿĪsā",
+          "de": "Isa (Jesus)"
+        },
+        {
+          "ar": "جُناحَ",
+          "umschrift": "junāḥ",
+          "de": "Sünde, Schuld"
+        },
+        {
+          "ar": "بَعِيدَ",
+          "umschrift": "baʿīd",
+          "de": "fern, weit"
+        },
+        {
+          "ar": "بَأْسَ",
+          "umschrift": "baʾs",
+          "de": "Gewalt, Macht, Not"
+        },
+        {
+          "ar": "قَدَرَ",
+          "umschrift": "qadara",
+          "de": "bemessen, bestimmen, vermögen"
+        },
+        {
+          "ar": "لِسانَ",
+          "umschrift": "lisān",
+          "de": "Zunge, Sprache"
+        },
+        {
+          "ar": "بَغَى",
+          "umschrift": "baghā",
+          "de": "sich auflehnen, freveln"
+        },
+        {
+          "ar": "جادَلَ",
+          "umschrift": "jādala",
+          "de": "streiten, disputieren"
+        },
+        {
+          "ar": "إِيّا",
+          "umschrift": "iyyā",
+          "de": "(nur) Dich (Verstärkungspartikel)"
+        },
+        {
+          "ar": "كادَ",
+          "umschrift": "kāda",
+          "de": "beinahe tun, fast"
+        },
+        {
+          "ar": "طَعامَ",
+          "umschrift": "ṭaʿām",
+          "de": "Speise, Essen"
+        },
+        {
+          "ar": "حَيّ",
+          "umschrift": "ḥayy",
+          "de": "lebendig, lebend"
+        },
+        {
+          "ar": "أُنثَى",
+          "umschrift": "unthā",
+          "de": "weiblich, Weibchen"
+        },
+        {
+          "ar": "أَكْبَر",
+          "umschrift": "akbar",
+          "de": "größer, am größten"
+        },
+        {
+          "ar": "تَوَفَّى",
+          "umschrift": "tawaffā",
+          "de": "abberufen, sterben lassen"
+        },
+        {
+          "ar": "غَنِيّ",
+          "umschrift": "ghaniyy",
+          "de": "reich, unabhängig"
+        },
+        {
+          "ar": "طائِفَة",
+          "umschrift": "ṭāʾifa",
+          "de": "Gruppe, Teil"
+        },
+        {
+          "ar": "وَكيل",
+          "umschrift": "wakīl",
+          "de": "Sachwalter, Treuhänder"
+        },
+        {
+          "ar": "لِقاء",
+          "umschrift": "liqāʾ",
+          "de": "Begegnung, Treffen"
+        },
+        {
+          "ar": "ظُلْمَة",
+          "umschrift": "ẓulma",
+          "de": "Finsternis"
+        },
+        {
+          "ar": "سَبْع",
+          "umschrift": "sabʿ",
+          "de": "sieben"
+        },
+        {
+          "ar": "أَنجَى",
+          "umschrift": "anjā",
+          "de": "erretten"
+        },
+        {
+          "ar": "ساجِد",
+          "umschrift": "sājid",
+          "de": "sich niederwerfend"
+        },
+        {
+          "ar": "بَدَّلَ",
+          "umschrift": "baddala",
+          "de": "austauschen, ändern"
+        },
+        {
+          "ar": "يَتيم",
+          "umschrift": "yatīm",
+          "de": "Waise"
+        },
+        {
+          "ar": "مِسْكين",
+          "umschrift": "miskīn",
+          "de": "Bedürftiger, Armer"
+        },
+        {
+          "ar": "لَعَنَ",
+          "umschrift": "laʿana",
+          "de": "verfluchen"
+        },
+        {
+          "ar": "فُلْك",
+          "umschrift": "fulk",
+          "de": "Schiff, Arche"
+        },
+        {
+          "ar": "فَتَنَ",
+          "umschrift": "fatana",
+          "de": "prüfen, verführen"
+        },
+        {
+          "ar": "ذِكْرَى",
+          "umschrift": "dhikrā",
+          "de": "Ermahnung, Erinnerung"
+        },
+        {
+          "ar": "رَفَعَ",
+          "umschrift": "rafaʿa",
+          "de": "erheben, erhöhen"
+        },
+        {
+          "ar": "أَسْلَمَ",
+          "umschrift": "aslama",
+          "de": "sich hingeben, sich ergeben"
+        },
+        {
+          "ar": "يَرْجُوْا",
+          "umschrift": "yarjū",
+          "de": "hoffen, erhoffen"
+        },
+        {
+          "ar": "وَهَبَ",
+          "umschrift": "wahaba",
+          "de": "schenken, gewähren"
+        }
+      ],
+      "notes": [
+        "Zeichengenau aus dem gerenderten Seitenbild (handout.pdf S. 171) gelesen. Reines Vokabular (Kapitel 9 endet mit dieser Liste, davor liegen S. 138-171 die eigentlichen Balagah-Beispiel-/Analysetabellen H-165...H-184 — siehe Abschnitt 'Nicht übernommen' unten in LUECKEN.md: für diese wurden in dieser Sitzung keine gerenderten Seitenbilder beschafft, deshalb bewusst nicht geraten)."
+      ]
+    },
+    {
+      "id": "wortliste-h20-besondere-mudhaafs",
+      "kind": "partikelliste",
+      "titleDe": "Partikelliste: Besondere Mudhaafs",
+      "kapitel": "Kapitel 2 · Fragmente",
+      "source": {
+        "file": "handout.pdf",
+        "page": 32
+      },
+      "entries": [
+        {
+          "ar": "بَعْدَ",
+          "umschrift": "baʿda",
+          "de": "nach"
+        },
+        {
+          "ar": "قَبْلَ",
+          "umschrift": "qabla",
+          "de": "bevor"
+        },
+        {
+          "ar": "تَحْتَ",
+          "umschrift": "taḥta",
+          "de": "unter"
+        },
+        {
+          "ar": "فَوْقَ",
+          "umschrift": "fawqa",
+          "de": "über"
+        },
+        {
+          "ar": "حَوْلَ",
+          "umschrift": "ḥawla",
+          "de": "um"
+        },
+        {
+          "ar": "بَيْنَ",
+          "umschrift": "bayna",
+          "de": "zwischen"
+        },
+        {
+          "ar": "وَرَاءَ",
+          "umschrift": "warāʾa",
+          "de": "hinter"
+        },
+        {
+          "ar": "خَلْفَ",
+          "umschrift": "khalfa",
+          "de": "hinter"
+        },
+        {
+          "ar": "مَعَ",
+          "umschrift": "maʿa",
+          "de": "mit"
+        },
+        {
+          "ar": "عِنْدَ",
+          "umschrift": "ʿinda",
+          "de": "bei"
+        },
+        {
+          "ar": "دُونَ",
+          "umschrift": "dūna",
+          "de": "außer, anstatt"
+        },
+        {
+          "ar": "غَيْرَ",
+          "umschrift": "ghayra",
+          "de": "ohne, nicht-"
+        },
+        {
+          "ar": "كُلُّ",
+          "umschrift": "kullu",
+          "de": "alle, alle von, jede/r"
+        },
+        {
+          "ar": "بَعْضُ",
+          "umschrift": "baʿḍu",
+          "de": "einige von"
+        },
+        {
+          "ar": "أَيُّ",
+          "umschrift": "ayyu",
+          "de": "welche von"
+        },
+        {
+          "ar": "لَدُنْ",
+          "umschrift": "ladun",
+          "de": "insbesondere von"
+        }
+      ],
+      "beispiele": [
+        {
+          "ar": "كُلُّ شَيْءٍ",
+          "umschrift": "kullu shayʾin",
+          "de": "jedes Ding / alles"
+        },
+        {
+          "ar": "بَعْدَ ذَلِكَ",
+          "umschrift": "baʿda dhālika",
+          "de": "danach (wörtl. nach diesem)"
+        },
+        {
+          "ar": "مَعَ الصَّابِرِينَ",
+          "umschrift": "maʿa ṣ-ṣābirīn",
+          "de": "mit den Geduldigen"
+        }
+      ],
+      "notes": [
+        "Abbildung 13, handout.pdf S. 32 (Kapitel 2, Abschnitt 'Besondere Mudhaafs'). Diese Präpositionen/Partikel stehen im Original in Idaafah-Konstruktion (als Mudhaaf vor einem nachfolgenden Ism) — dieselbe Wortliste wird in H-12 bereits als Teil der Kapitel-Vokabelliste geführt; hier eigenständig mit den drei im Original abgedruckten Anwendungsbeispielen übernommen."
+      ]
+    },
+    {
+      "id": "wortliste-h21-harf-jarr",
+      "kind": "partikelliste",
+      "titleDe": "Partikelliste: Harf Jarr (Präpositionen)",
+      "kapitel": "Kapitel 2 · Fragmente",
+      "source": {
+        "file": "handout.pdf",
+        "page": 33
+      },
+      "entries": [
+        {
+          "ar": "بِ",
+          "umschrift": "bi",
+          "de": "mit"
+        },
+        {
+          "ar": "فِي",
+          "umschrift": "fī",
+          "de": "in"
+        },
+        {
+          "ar": "تَ",
+          "umschrift": "ta",
+          "de": "ich schwöre bei (nur mit اللَّه, selten)"
+        },
+        {
+          "ar": "عَنْ",
+          "umschrift": "ʿan",
+          "de": "über"
+        },
+        {
+          "ar": "كَ",
+          "umschrift": "ka",
+          "de": "wie"
+        },
+        {
+          "ar": "عَلَى",
+          "umschrift": "ʿalā",
+          "de": "auf"
+        },
+        {
+          "ar": "لِ",
+          "umschrift": "li",
+          "de": "für"
+        },
+        {
+          "ar": "حَتَّى",
+          "umschrift": "ḥattā",
+          "de": "bis"
+        },
+        {
+          "ar": "وَ",
+          "umschrift": "wa",
+          "de": "(ich schwöre) bei"
+        },
+        {
+          "ar": "إِلَى",
+          "umschrift": "ilā",
+          "de": "zu"
+        },
+        {
+          "ar": "مِنْ",
+          "umschrift": "min",
+          "de": "von, aus"
+        }
+      ],
+      "notes": [
+        "'Liste der Harf Jarr', handout.pdf S. 33 (Kapitel 2, Abschnitt 2.2). Die einbuchstabigen Harf Jarr (بِ/تَ/كَ/لِ/وَ) tragen laut dem im Original abgedruckten Hinweis ein festes Vokalzeichen (بِ nimmt Kasra, تَ/كَ nehmen Fatha, لِ nimmt Kasra, vor Pronomen Fatha) — hier wie im Original vokalisiert übernommen."
+      ]
+    },
+    {
+      "id": "wortliste-h22-harf-nasb",
+      "kind": "partikelliste",
+      "titleDe": "Partikelliste: Harf Nasb und ihre Bedeutung",
+      "kapitel": "Kapitel 2 · Fragmente",
+      "source": {
+        "file": "handout.pdf",
+        "page": 35
+      },
+      "entries": [
+        {
+          "ar": "إِنَّ",
+          "umschrift": "inna",
+          "de": "wahrlich"
+        },
+        {
+          "ar": "أَنَّ",
+          "umschrift": "anna",
+          "de": "dass"
+        },
+        {
+          "ar": "كَأَنَّ",
+          "umschrift": "kaʾanna",
+          "de": "als wäre, als ob"
+        },
+        {
+          "ar": "لَيْتَ",
+          "umschrift": "layta",
+          "de": "wenn bloß"
+        },
+        {
+          "ar": "لَكِنَّ",
+          "umschrift": "lākinna",
+          "de": "aber, jedoch"
+        },
+        {
+          "ar": "لَعَلَّ",
+          "umschrift": "laʿalla",
+          "de": "sodass, hoffentlich, vielleicht"
+        }
+      ],
+      "notes": [
+        "Abbildung 14, handout.pdf S. 35 (Kapitel 2, Abschnitt 2.3). Jeder Harf Nasb bringt das nachfolgende Ism laut Original in den Nasb-Status (Beispiel im Handout: إِنَّ اللَّهَ عَلَى كُلِّ شَيْءٍ قَدِيرٌ, Al-Baqarah 2:20 — نnicht als eigener Beispiel-Eintrag übernommen, weil dieselbe Ayah bereits in der Beispielsatzliste dieses Bestands (siehe wortlisten.beispielsatzlisten) nicht vorkommt und hier keine Dublette einer bereits vorhandenen Paradigmen-Notiz angelegt werden sollte)."
+      ]
+    },
+    {
+      "id": "wortliste-h56-fragewoerter-uebersicht",
+      "kind": "partikelliste",
+      "titleDe": "Partikelliste: Häufig verwendete Fragewörter",
+      "kapitel": "Kapitel 6 · Verschiedene Ausdrücke im Qur'an",
+      "source": {
+        "file": "handout.pdf",
+        "page": 81
+      },
+      "entries": [
+        {
+          "ar": "مَنْ",
+          "umschrift": "man",
+          "de": "Wer"
+        },
+        {
+          "ar": "مَا / مَاذَا",
+          "umschrift": "mā / mādhā",
+          "de": "Was"
+        },
+        {
+          "ar": "مَتَى",
+          "umschrift": "matā",
+          "de": "Wann"
+        },
+        {
+          "ar": "أَيْنَ",
+          "umschrift": "ayna",
+          "de": "Wo"
+        },
+        {
+          "ar": "لِمَاذَا",
+          "umschrift": "limādhā",
+          "de": "Warum"
+        },
+        {
+          "ar": "كَيْفَ",
+          "umschrift": "kayfa",
+          "de": "Wie"
+        },
+        {
+          "ar": "أَيٌّ",
+          "umschrift": "ayy",
+          "de": "Welcher/Welche/Welches"
+        },
+        {
+          "ar": "هَلْ / أَ",
+          "umschrift": "hal / a",
+          "de": "Wird genutzt für Ja/Nein-Fragen"
+        }
+      ],
+      "beispiele": [
+        {
+          "ar": "مَنْ دَرَسَ؟",
+          "umschrift": "man darasa?",
+          "de": "Wer hat gelernt?"
+        },
+        {
+          "ar": "هَلْ دَرَسَتْ زَيْنَبُ؟",
+          "umschrift": "hal darasat Zaynabu?",
+          "de": "Hat Zaynab gelernt?"
+        },
+        {
+          "ar": "مَتَى دَرَسَتْ زَيْنَبُ؟",
+          "umschrift": "matā darasat Zaynabu?",
+          "de": "Wann hat Zaynab gelernt?"
+        },
+        {
+          "ar": "أَيْنَ دَرَسَتْ زَيْنَبُ؟",
+          "umschrift": "ayna darasat Zaynabu?",
+          "de": "Wo hat Zaynab gelernt?"
+        },
+        {
+          "ar": "لِمَاذَا دَرَسَتْ زَيْنَبُ؟",
+          "umschrift": "limādhā darasat Zaynabu?",
+          "de": "Warum hat Zaynab gelernt?"
+        },
+        {
+          "ar": "كَيْفَ دَرَسَتْ زَيْنَبُ؟",
+          "umschrift": "kayfa darasat Zaynabu?",
+          "de": "Wie hat Zaynab gelernt?"
+        },
+        {
+          "ar": "مَاذَا دَرَسَتْ زَيْنَبُ؟",
+          "umschrift": "mādhā darasat Zaynabu?",
+          "de": "Was hat Zaynab gelernt?"
+        },
+        {
+          "ar": "فِي أَيِّ مَدْرَسَةٍ دَرَسَتْ زَيْنَبُ؟",
+          "umschrift": "fī ayyi madrasatin darasat Zaynabu?",
+          "de": "An welcher Schule hat Zaynab gelernt?"
+        }
+      ],
+      "notes": [
+        "Abbildung 39, handout.pdf S. 81 (Kapitel 6, Abschnitt 6.4.1). Überschneidet sich teilweise mit der bereits vorhandenen Paradigmentabelle 'fragewoerter' (paradigmen.json, aus tabellen-sprache.pdf): dort zusätzlich كَمْ (wie viel), hier zusätzlich لِمَاذَا (warum) — beide Listen zeichengenau wie im jeweiligen Original übernommen, keine der beiden Listen ist eine reine Dublette der anderen."
+      ]
+    },
+    {
+      "id": "wortliste-h184-balagah-vokabular-teil1",
+      "kind": "vokabelliste",
+      "titleDe": "Vokabelliste: Balagah – Die Rhetorik des Qur'ans (Teil 1)",
+      "kapitel": "Kapitel 9 · Balagah – Die Rhetorik des Qur'ans",
+      "source": {
+        "file": "handout.pdf",
+        "page": 170
+      },
+      "entries": [
+        { "ar": "اِبْن", "umschrift": "ibn", "de": "Sohn" },
+        { "ar": "صَالِحَة", "umschrift": "ṣāliḥa", "de": "rechtschaffen (f.), gute Tat" },
+        { "ar": "صَادِق", "umschrift": "ṣādiq", "de": "wahrhaftig" },
+        { "ar": "نِسَاء", "umschrift": "nisāʾ", "de": "Frauen" },
+        { "ar": "سَيِّئَة", "umschrift": "sayyiʾa", "de": "schlechte Tat, Übel" },
+        { "ar": "نَذِير", "umschrift": "nadhīr", "de": "Warner" },
+        { "ar": "رَحْمٰن", "umschrift": "raḥmān", "de": "der Allerbarmer" },
+        { "ar": "قَرْيَة", "umschrift": "qarya", "de": "Stadt, Dorf" },
+        { "ar": "نَهار", "umschrift": "nahār", "de": "Tag (Tageszeit)" },
+        { "ar": "شَهِيد", "umschrift": "shahīd", "de": "Zeuge" },
+        { "ar": "وَلَد", "umschrift": "walad", "de": "Kind, Sohn" },
+        { "ar": "شَدِيد", "umschrift": "shadīd", "de": "mächtig, stark" },
+        { "ar": "نَهَر", "umschrift": "nahar", "de": "Fluss" },
+        { "ar": "جَمِيع", "umschrift": "jamīʿ", "de": "alle, Gesamtheit" },
+        { "ar": "أَجَل", "umschrift": "ajal", "de": "Frist, festgelegte Zeit" },
+        { "ar": "مُجْرِم", "umschrift": "mujrim", "de": "Verbrecher" },
+        { "ar": "بَصِير", "umschrift": "baṣīr", "de": "Allsehend" },
+        { "ar": "مَوْت", "umschrift": "mawt", "de": "Tod" },
+        { "ar": "عَدُوّ", "umschrift": "ʿaduww", "de": "Feind" },
+        { "ar": "نِعْمَة", "umschrift": "niʿma", "de": "Gunst, Segen" },
+        { "ar": "سُوء", "umschrift": "sūʾ", "de": "Schaden, Übel" },
+        { "ar": "مُتَّقِي", "umschrift": "muttaqī", "de": "Gottesfürchtiger" },
+        { "ar": "غَيْب", "umschrift": "ghayb", "de": "das Verborgene" },
+        { "ar": "أَعْلَم", "umschrift": "aʿlam", "de": "am besten wissend" },
+        { "ar": "بَصَر", "umschrift": "baṣar", "de": "Sehkraft, Blick" },
+        { "ar": "سَاعَة", "umschrift": "sāʿa", "de": "Stunde" },
+        { "ar": "سَمِيع", "umschrift": "samīʿ", "de": "Allhörend" },
+        { "ar": "أَب", "umschrift": "ab", "de": "Vater" },
+        { "ar": "صِراط", "umschrift": "ṣirāṭ", "de": "Weg, Pfad" },
+        { "ar": "قَدِير", "umschrift": "qadīr", "de": "Allmächtig" },
+        { "ar": "إِيمان", "umschrift": "īmān", "de": "Glaube" },
+        { "ar": "خَبِير", "umschrift": "khabīr", "de": "Allkundig" },
+        { "ar": "مُشْرِك", "umschrift": "mushrik", "de": "Götzendiener, Polytheist" },
+        { "ar": "صَدْر", "umschrift": "ṣadr", "de": "Brust" },
+        { "ar": "حَمْد", "umschrift": "ḥamd", "de": "Lob, Preis" }
+      ],
+      "notes": [
+        "Zeichengenau aus dem gerenderten Seitenbild (handout.pdf S. 170, Überschrift 'Vokabelliste') gelesen — anders als H-164/H-185 (dieselbe Struktur, aber Seiten 133/171) war diese Seite in der vorherigen Sitzung übersehen worden. 'Teil 1', weil S. 171 (H-185) dieselbe Kapitel-9-Vokabelliste unmittelbar fortsetzt (bereits als wortliste-h185-balagah-vokabular übernommen)."
+      ]
+    }
+  ],
+  "beispielsatzlisten": [
+    {
+      "id": "beispielsatzliste-h55-verbindungsbuchstaben",
+      "titleDe": "Liste der Verbindungsbuchstaben (Harf al-'Atf)",
+      "kapitel": "Kapitel 6 · Verschiedene Ausdrücke im Qur'an",
+      "source": {
+        "file": "handout.pdf",
+        "page": 77
+      },
+      "entries": [
+        {
+          "ar": "وَ",
+          "umschrift": "wa",
+          "beschreibung": "und, verbindet zwei Elemente",
+          "beispielAr": "إِنَّ اللَّهَ وَمَلَائِكَتَهُ يُصَلُّونَ عَلَى النَّبِيِّ",
+          "beispielDe": "Wahrlich, Allah und Seine Engel senden Segnungen auf den Propheten."
+        },
+        {
+          "ar": "أَوْ",
+          "umschrift": "aw",
+          "beschreibung": "oder",
+          "beispielAr": "فَهِيَ كَالْحِجَارَةِ أَوْ أَشَدُّ قَسْوَةً",
+          "beispielDe": "So sind sie wie Steine oder härter."
+        },
+        {
+          "ar": "ثُمَّ",
+          "umschrift": "thumma",
+          "beschreibung": "und dann (längere Dauer)",
+          "beispielAr": "كَيْفَ تَكْفُرُونَ بِاللَّهِ وَكُنتُمْ أَمْوَاتًا فَأَحْيَاكُمْ ثُمَّ يُمِيتُكُمْ ثُمَّ يُحْيِيكُمْ",
+          "beispielDe": "Wie könnt ihr Allah verleugnen, da ihr tot wart und Er euch lebendig gemacht hat, dann wird Er euch sterben lassen und euch erneut lebendig machen."
+        },
+        {
+          "ar": "فَ",
+          "umschrift": "fa",
+          "beschreibung": "und dann/sofort",
+          "beispielAr": "فَسَوَّاكَ فَعَدَلَكَ",
+          "beispielDe": "Dann hat Er dich geformt und zurechtgerückt."
+        },
+        {
+          "ar": "بَلْ",
+          "umschrift": "bal",
+          "beschreibung": "vielmehr/stattdessen",
+          "beispielAr": "وَقَالُوا اتَّخَذَ اللَّهُ وَلَدًا سُبْحَانَهُ بَلْ لَهُ مَا فِي السَّمَاوَاتِ",
+          "beispielDe": "Und sie sagten: Allah hat einen Sohn genommen. Gepriesen sei Er! Vielmehr gehört Ihm, was in den Himmeln ist."
+        },
+        {
+          "ar": "لَكِنْ",
+          "umschrift": "lākin",
+          "beschreibung": "jedoch",
+          "beispielAr": "لَكِنِ الظَّالِمُونَ الْيَوْمَ فِي ضَلَالٍ مُبِينٍ",
+          "beispielDe": "Jedoch sind die Ungerechten heute in offenkundigem Irrtum."
+        }
+      ],
+      "notes": [
+        "'6.1.3 Liste der Verbindungsbuchstaben', handout.pdf S. 77. Anders als die übrigen Wortlisten dieses Bestands steht hier je Partikel ein ganzer, aus dem Qur'an zitierter Beispielsatz mit Übersetzung im Zentrum (keine Wörterbuch-Bedeutung) — deshalb als eigener Datentyp 'Beispielsatzliste' geführt, nicht als Vokabel-/Partikelliste. Im Original ist zu keinem der sechs Beispiele eine Sure-/Vers-Angabe abgedruckt — deshalb hier bewusst KEINE erfunden (siehe 'Oberste Regel: Kein geratenes Arabisch')."
+      ]
+    },
+    {
+      "id": "beispielsatzliste-h166-istifham-partikel",
+      "titleDe": "Istifham (Fragepartikel) mit Beispielen aus dem Qur'an",
+      "kapitel": "Kapitel 9 · Balagah – Die Rhetorik des Qur'ans",
+      "source": {
+        "file": "handout.pdf",
+        "page": 144
+      },
+      "entries": [
+        {
+          "ar": "أَ",
+          "umschrift": "a",
+          "beschreibung": "Ist/Sind",
+          "beispielAr": "ءَاَنْتُمْ أَعْلَمُ أَمِ اللَّهُ",
+          "beispielDe": "Wisst ihr es besser oder Allah?"
+        },
+        {
+          "ar": "هَلْ",
+          "umschrift": "hal",
+          "beschreibung": "Ist/Sind",
+          "beispielAr": "هَلْ عِنْدَكُمْ مِنْ عِلْمٍ",
+          "beispielDe": "Habt ihr irgendein sicheres Wissen?"
+        },
+        {
+          "ar": "مَا",
+          "umschrift": "mā",
+          "beschreibung": "Was",
+          "beispielAr": "وَمَا تِلْكَ بِيَمِينِكَ يَا مُوسَى",
+          "beispielDe": "Und was ist das in deiner rechten Hand, o Musa?"
+        },
+        {
+          "ar": "مَنْ",
+          "umschrift": "man",
+          "beschreibung": "Wer",
+          "beispielAr": "مَنْ أَشَدُّ مِنَّا قُوَّةً",
+          "beispielDe": "Wer ist stärker als wir in Macht?"
+        },
+        {
+          "ar": "مَتَى",
+          "umschrift": "matā",
+          "beschreibung": "Wann",
+          "beispielAr": "مَتَى هَذَا الْوَعْدُ",
+          "beispielDe": "Wann wird dieses Versprechen eintreten?"
+        },
+        {
+          "ar": "أَيَّانَ",
+          "umschrift": "ayyāna",
+          "beschreibung": "Wann",
+          "beispielAr": "أَيَّانَ يَوْمُ الدِّينِ",
+          "beispielDe": "Wann ist der Tag des Gerichts?"
+        },
+        {
+          "ar": "كَيْفَ",
+          "umschrift": "kayfa",
+          "beschreibung": "Wie",
+          "beispielAr": "كَيْفَ تُحْيِي الْمَوْتَى",
+          "beispielDe": "Wie belebst du die Toten?"
+        },
+        {
+          "ar": "أَيْنَ",
+          "umschrift": "ayna",
+          "beschreibung": "Wo",
+          "beispielAr": "أَيْنَ شُرَكَاؤُكُمْ",
+          "beispielDe": "Wo sind diejenigen, die ihr als Partner betrachtet habt?"
+        },
+        {
+          "ar": "أَنَّى",
+          "umschrift": "annā",
+          "beschreibung": "Wie",
+          "beispielAr": "أَنَّى يَكُونُ لَهُ الْمُلْكُ عَلَيْنَا",
+          "beispielDe": "Wie könnte er Herrschaft über uns haben?"
+        },
+        {
+          "ar": "أَنَّى",
+          "umschrift": "annā",
+          "beschreibung": "Woher",
+          "beispielAr": "يَا مَرْيَمُ أَنَّى لَكِ هَذَا",
+          "beispielDe": "O Maryam, woher hast du das?"
+        },
+        {
+          "ar": "كَمْ",
+          "umschrift": "kam",
+          "beschreibung": "Wie viele",
+          "beispielAr": "كَمْ لَبِثْتُمْ",
+          "beispielDe": "Wie lange habt ihr verweilt?"
+        },
+        {
+          "ar": "أَيُّ",
+          "umschrift": "ayy",
+          "beschreibung": "Welcher",
+          "beispielAr": "أَيُّ الْفَرِيقَيْنِ خَيْرٌ مَقَامًا",
+          "beispielDe": "Welche der beiden Gruppen ist besser in ihrer Position?"
+        }
+      ],
+      "notes": [
+        "'Table 3: Beispielen und Bedeutungen mit Istifham von Partikel', handout.pdf S. 144 (Kapitel 9, Balagah). Bonus-Übernahme über den ursprünglichen Auftragskern hinaus: fügt den bereits vorhandenen Fragewort-Listen (paradigmen.json 'fragewoerter', wortliste-h56-fragewoerter-uebersicht) reale Qur'an-Beispielsätze hinzu. Ergänzt die Partikel أَنَّى zweimal, weil im Original zwei verschiedene Bedeutungen (Wie/Woher) mit je einem eigenen Beispiel unter demselben Partikel-Kopf gedruckt sind. Wie bei H-55 ist im Original keine Sure-/Vers-Angabe abgedruckt — deshalb keine erfunden."
+      ]
+    }
+  ],
+  "ablaufschemata": [
+    {
+      "id": "ablaufschema-h14-gliederung-der-sprache",
+      "titleDe": "Gliederung der Sprache (Kalaam)",
+      "kapitel": "Kapitel 2 · Fragmente",
+      "source": {
+        "file": "handout.pdf",
+        "page": 26
+      },
+      "schritte": [
+        {
+          "kastenDe": "Sprache (Kalaam) gliedert sich in drei Grundbausteine."
+        },
+        {
+          "kastenDe": "Sätze (Jumal)"
+        },
+        {
+          "kastenDe": "Fragmente — Thema dieses Kapitels, u. a. Idaafah, Harf Jarr, Harf Nasb, Mausuf-Sifah, Ism Ishaarah"
+        },
+        {
+          "kastenDe": "Wörter (einzelne Wortarten: Ism, Fiil, Harf)"
+        }
+      ],
+      "notes": [
+        "Vom automatischen Tabellenfinder fälschlich als Tabelle erkanntes Kästchen-Flussdiagramm (handout.pdf S. 26, Kapitel 2 'Fragmente'): 'Sprache' verzweigt zu Sätze/Fragmente/Wörter, mit Idaafah/Harf Jarr/Harf Nasb/Mausuf-Sifah/Ism Ishaarah als Beispielkästchen unter 'Fragmente' (siehe LUECKEN.md, Abschnitt 'H-14'). Als Entscheidungsfolge in Textform wiedergegeben statt als Grafik nachgebaut. WICHTIG: für diese Sitzung stand kein gerendertes Seitenbild von S. 26 zur Verfügung (es fehlt in der Bildersammlung unter scratchpad/handout) — die hier wiedergegebene Struktur stammt unverändert aus der bereits in einer früheren Sitzung dieses Projekts dokumentierten Bildprüfung (LUECKEN.md); es wurde in dieser Sitzung kein neues Arabisch daraus gelesen. Bewusst OHNE arabische Schrift wiedergegeben (nur die bereits im Fließtext dieses Bestands verwendeten deutschen/transliterierten Fachbegriffe Idaafah/Harf Jarr/Harf Nasb/Mausuf-Sifah/Ism Ishaarah) — für diese Sitzung nicht zeichengenau aus einem Bild nachprüfbar."
+      ]
+    },
+    {
+      "id": "ablaufschema-h39-mubtada-chabar",
+      "titleDe": "Vom Mubtada zum Chabar (Nominalsatz)",
+      "kapitel": "Kapitel 4 · Sätze",
+      "source": {
+        "file": "handout.pdf",
+        "page": 58
+      },
+      "schritte": [
+        {
+          "kastenDe": "Mubtada — das Satzthema/Subjekt eines Nominalsatzes (Jumla Ismiyya)",
+          "kastenAr": "مُبْتَدَأ"
+        },
+        {
+          "kastenDe": "Zwischenfrage: Was ist mit dem Mubtada?"
+        },
+        {
+          "kastenDe": "Chabar — die Aussage über das Mubtada",
+          "kastenAr": "خَبَر"
+        }
+      ],
+      "beispielAr": "اللَّهُ الصَّمَدُ",
+      "beispielDe": "Allah (Mubtada) ist der Absolute, von dem alles abhängt (Chabar) — Sure Al-Ikhlas 112:2.",
+      "notes": [
+        "Vom automatischen Tabellenfinder fälschlich als Tabelle erkanntes Kästchen-Flussdiagramm (handout.pdf S. 58, Kapitel 4 'Sätze'): Mubtada-Kästchen → Zwischenfrage 'Was ist mit dem Mubtada?' → Chabar-Kästchen, mit dem Beispiel اللَّهُ الصَّمَدُ (siehe LUECKEN.md, Abschnitt 'H-39'). WICHTIG: für diese Sitzung stand kein gerendertes Seitenbild von S. 58 zur Verfügung — die Kästchen-Struktur stammt unverändert aus der bereits in einer früheren Sitzung dokumentierten Bildprüfung. Die Vokalisierung des Beispiels اللَّهُ الصَّمَدُ (Sure Al-Ikhlas 112:2) wurde in DIESER Sitzung nicht aus dem Handout-Bild, sondern gegen die im Repo vorhandene Qur'an-Morphologiedatenbank (.daten-cache/out/morphologie/v2/112.json, Vers 2: ٱللَّهُ ٱلصَّمَدُ) geprüft und in die im Druck übliche Naskh-Form ohne Wasla-Zeichen übertragen — kein geratenes Arabisch, siehe 'Oberste Regel'."
+      ]
+    }
+  ],
+  "vergleichstabellen": [
+    {
+      "id": "vergleichstabelle-h165-satzklassifikation",
+      "titleDe": "Beispiele für die Klassifikation von Sätzen in Balagha",
+      "kapitel": "Kapitel 9 · Balagah – Die Rhetorik des Qur'ans",
+      "source": { "file": "handout.pdf", "page": 138 },
+      "columns": [
+        { "id": "satz", "labelDe": "Satz" },
+        { "id": "klassifikation", "labelDe": "Klassifikation" }
+      ],
+      "rows": [
+        { "id": "r1" },
+        { "id": "r2" },
+        { "id": "r3" }
+      ],
+      "cells": {
+        "r1": { "satz": { "ar": "زَيْدٌ صَائِمٌ" }, "klassifikation": { "ar": "جُمْلَة اِسْمِيَّة" } },
+        "r2": { "satz": { "ar": "زَيْنَبُ تَصُومُ" }, "klassifikation": { "ar": "جُمْلَة فِعْلِيَّة" } },
+        "r3": { "satz": { "ar": "تَصُومُ زَيْنَبُ" }, "klassifikation": { "ar": "جُمْلَة فِعْلِيَّة" } }
+      },
+      "notes": [
+        "Table 2, handout.pdf S. 138 (Kapitel 9, Abschnitt 9.2.5), bei Zoom 3 gegen das gerenderte Seitenbild gelesen. Zeigt die Balagha-eigene Regel aus dem Fließtext derselben Seite: ein mit Substantiv beginnender Satz OHNE Verb ist Jumla Ismiyya (Zeile 1), einer MIT Verb dagegen Jumla Fi'liyya — unabhängig davon, ob das Verb am Anfang steht (Zeile 3) oder nicht (Zeile 2). Neuer Datentyp 'Vergleichstabelle' statt ParadigmTabelle, weil dieses Raster kein Person-/Numerus-/Kasus-Flexionsschema ist, siehe wortlistenTypes.ts."
+      ]
+    },
+    {
+      "id": "vergleichstabelle-h167-tashbih-quran-licht",
+      "titleDe": "Tashbih-Beispiel: Der Qur'an wie das Licht",
+      "kapitel": "Kapitel 9 · Balagah – Die Rhetorik des Qur'ans",
+      "source": { "file": "handout.pdf", "page": 159 },
+      "columns": [
+        { "id": "mushabbah", "labelDe": "Mushabbah" },
+        { "id": "adat", "labelDe": "Adat at-Tashbih" },
+        { "id": "mushabbahBihi", "labelDe": "Mushabbah bihi" },
+        { "id": "wajh", "labelDe": "Wajh ash-Shabah" }
+      ],
+      "rows": [{ "id": "r1" }],
+      "cells": {
+        "r1": {
+          "mushabbah": { "ar": "الْقُرْآنُ" },
+          "adat": { "ar": "ك" },
+          "mushabbahBihi": { "ar": "النُّوْرِ" },
+          "wajh": { "ar": "فِي الْهِدَايَةِ" }
+        }
+      },
+      "notes": [
+        "handout.pdf S. 159, Abschnitt 9.3.1, Beispielsatz الْقُرْآنُ كَالنُّوْرِ فِي الْهِدَايَةِ ('Der Quran ist wie das Licht in seiner Rechtleitung.'). Zerlegung der vier Tashbih-Elemente in die im Original gedruckte Tabelle unmittelbar unter dem Beispielsatz."
+      ]
+    },
+    {
+      "id": "vergleichstabelle-h168-tashbih-mufassal-wasser",
+      "titleDe": "Tashbih Mufassal: Wasser wie geschmolzenes Metall",
+      "kapitel": "Kapitel 9 · Balagah – Die Rhetorik des Qur'ans",
+      "source": { "file": "handout.pdf", "page": 159 },
+      "columns": [
+        { "id": "mushabbah", "labelDe": "Mushabbah" },
+        { "id": "adat", "labelDe": "Adat" },
+        { "id": "mushabbahBihi", "labelDe": "Mushabbah bihi" },
+        { "id": "wajh", "labelDe": "Wajh ash-Shabah" }
+      ],
+      "rows": [{ "id": "r1" }],
+      "cells": {
+        "r1": {
+          "mushabbah": { "ar": "مَاء" },
+          "adat": { "ar": "ك" },
+          "mushabbahBihi": { "ar": "الْمُهْل" },
+          "wajh": { "ar": "يَشْوِي الْوُجُوْه" }
+        }
+      },
+      "notes": [
+        "handout.pdf S. 159, Abschnitt 9.3.2 (Tashbih Mufassal), zum Qur'an-Beispiel Sure 18:29 ('… wird ihnen mit Wasser wie geschmolzenem Metall geholfen, das die Gesichter versengt.') — der Wajh ash-Shabah ist hier ausdrücklich ERWÄHNT (Definition von Mufassal), anders als bei Tashbih Mujmal."
+      ]
+    },
+    {
+      "id": "vergleichstabelle-h169-tashbih-maqlub",
+      "titleDe": "Tashbih Maqlub (umgekehrter Vergleich): Handel und Wucher",
+      "kapitel": "Kapitel 9 · Balagah – Die Rhetorik des Qur'ans",
+      "source": { "file": "handout.pdf", "page": 160 },
+      "columns": [
+        { "id": "form", "labelDe": "Form" },
+        { "id": "mushabbah", "labelDe": "Mushabbah" },
+        { "id": "adat", "labelDe": "Adat" },
+        { "id": "mushabbahBihi", "labelDe": "Mushabbah bihi" }
+      ],
+      "rows": [
+        { "id": "original", "labelDe": "Original" },
+        { "id": "umgekehrt", "labelDe": "Umgekehrt" }
+      ],
+      "cells": {
+        "original": {
+          "form": { "de": "Original" },
+          "mushabbah": { "ar": "الرِّبَوا" },
+          "adat": { "ar": "مِثْلُ" },
+          "mushabbahBihi": { "ar": "الْبَيْعُ" }
+        },
+        "umgekehrt": {
+          "form": { "de": "Umgekehrt" },
+          "mushabbah": { "ar": "الْبَيْعُ" },
+          "adat": { "ar": "مِثْلُ" },
+          "mushabbahBihi": { "ar": "الرِّبَوا" }
+        }
+      },
+      "notes": [
+        "handout.pdf S. 160, Abschnitt 9.3.4 'Tashbih Maqlub' — Beleg-Vers Sure 2:275 (قَالُوا إِنَّمَا الْبَيْعُ مِثْلُ الرِّبَوا). Original vertauscht Mushabbah/Mushabbah bihi gegenüber der eigentlich gemeinten Aussage 'Wucher ist wie Handel', um den Wucher zu beschönigen — beide Zeilen im Original selbst als Tabelle gedruckt (nicht vom Autor dieser Sitzung ergänzt)."
+      ]
+    },
+    {
+      "id": "vergleichstabelle-h170-tashbih-dimni",
+      "titleDe": "Tashbih Dimni (impliziter Vergleich): Du und der Moschus",
+      "kapitel": "Kapitel 9 · Balagah – Die Rhetorik des Qur'ans",
+      "source": { "file": "handout.pdf", "page": 160 },
+      "columns": [
+        { "id": "mushabbah", "labelDe": "Mushabbah" },
+        { "id": "adat", "labelDe": "Adat" },
+        { "id": "mushabbahBihi", "labelDe": "Mushabbah bihi" },
+        { "id": "wajh", "labelDe": "Wajh ash-Shabah" }
+      ],
+      "rows": [{ "id": "r1" }],
+      "cells": {
+        "r1": {
+          "mushabbah": { "ar": "أَنْتَ" },
+          "adat": { "ar": "مِثْلُ" },
+          "mushabbahBihi": { "ar": "الْمِسْك" },
+          "wajh": { "de": "(implizit)" }
+        }
+      },
+      "notes": [
+        "handout.pdf S. 160, Abschnitt 9.3.4 'Tashbih Dimni' — die Elemente sind über den Beispielsatz فَإِنْ تَفُقِ الْاَنامَ وَاَنْتَ مِنْهُمْ فَإِنَّ الْمِسْكَ بَعْضُ دَمِ الْغَزَالِ verteilt statt in einer festen Vergleichsformel zu stehen; Wajh ash-Shabah ist im Original nicht als eigenes Wort ausgedrückt, deshalb 'de': '(implizit)' statt einer erfundenen arabischen Form."
+      ]
+    },
+    {
+      "id": "vergleichstabelle-h171-tashbih-arten-zusammenfassung",
+      "titleDe": "Zusammenfassung der Tashbih-Arten",
+      "kapitel": "Kapitel 9 · Balagah – Die Rhetorik des Qur'ans",
+      "source": { "file": "handout.pdf", "page": 161 },
+      "columns": [
+        { "id": "art", "labelDe": "Art" },
+        { "id": "wajh", "labelDe": "Wajh ash-Shabah" },
+        { "id": "adat", "labelDe": "Adat" },
+        { "id": "beispiel", "labelDe": "Beispiel" }
+      ],
+      "rows": [
+        { "id": "mufassalMursal" },
+        { "id": "mujmalMursal" },
+        { "id": "mufassalMuakkad" },
+        { "id": "baligh" }
+      ],
+      "cells": {
+        "mufassalMursal": {
+          "art": { "de": "Mufassal Mursal" },
+          "wajh": { "de": "erwähnt" },
+          "adat": { "de": "erwähnt" },
+          "beispiel": { "ar": "زَيْد كَالْأَسَدِ فِي الشَّجَاعَةِ" }
+        },
+        "mujmalMursal": {
+          "art": { "de": "Mujmal Mursal" },
+          "wajh": { "de": "weggelassen" },
+          "adat": { "de": "erwähnt" },
+          "beispiel": { "ar": "زَيْد كَالْأَسَدِ" }
+        },
+        "mufassalMuakkad": {
+          "art": { "de": "Mufassal Mu'akkad" },
+          "wajh": { "de": "erwähnt" },
+          "adat": { "de": "weggelassen" },
+          "beispiel": { "ar": "زَيْد أَسَد فِي الشَّجَاعَةِ" }
+        },
+        "baligh": {
+          "art": { "de": "Baligh" },
+          "wajh": { "de": "weggelassen" },
+          "adat": { "de": "weggelassen" },
+          "beispiel": { "ar": "زَيْد أَسَد" }
+        }
+      },
+      "notes": [
+        "handout.pdf S. 161, Abschnitt 9.3.5 — fasst die vier vorher einzeln eingeführten Tashbih-Arten (Mufassal/Mujmal × Mursal/Mu'akkad, plus Baligh = beides weggelassen) in einem Raster zusammen. Eines der drei ursprünglich als 'Balagha-Vergleichstabelle' zurückgestellten Beispiele (siehe LUECKEN.md), jetzt als Vergleichstabelle übernommen."
+      ]
+    },
+    {
+      "id": "vergleichstabelle-h172-alaqa-licht-prophet",
+      "titleDe": "'Alaqa-Beispiel: Licht als Metapher für den Propheten",
+      "kapitel": "Kapitel 9 · Balagah – Die Rhetorik des Qur'ans",
+      "source": { "file": "handout.pdf", "page": 161 },
+      "columns": [
+        { "id": "woertlich", "labelDe": "Wörtliche Bedeutung" },
+        { "id": "alaqa", "labelDe": "'Alaqa" },
+        { "id": "metaphorisch", "labelDe": "Metaphorische Bedeutung" }
+      ],
+      "rows": [{ "id": "r1" }],
+      "cells": {
+        "r1": {
+          "woertlich": { "de": "Licht" },
+          "alaqa": { "de": "Tashbih" },
+          "metaphorisch": { "de": "Prophet" }
+        }
+      },
+      "notes": [
+        "handout.pdf S. 161, Abschnitt 9.3.7 ('Alaqa/Verbindung) — Analyse des Majaz in Sure 5:15 (قَدْ جَاءَكُمْ مِنَ اللَّهِ نُورٌ), wo Nur (Licht) metaphorisch für den Propheten steht; die Verbindung zwischen wörtlicher und übertragener Bedeutung ist hier selbst ein Tashbih."
+      ]
+    },
+    {
+      "id": "vergleichstabelle-h173-istiara-musarraha-koran",
+      "titleDe": "Isti'ara Musarraha: Finsternis und Licht",
+      "kapitel": "Kapitel 9 · Balagah – Die Rhetorik des Qur'ans",
+      "source": { "file": "handout.pdf", "page": 162 },
+      "columns": [
+        { "id": "mushabbah", "labelDe": "Mushabbah" },
+        { "id": "adat", "labelDe": "Adat at-Tashbih" },
+        { "id": "mushabbahBihi", "labelDe": "Mushabbah bihi" },
+        { "id": "mustaar", "labelDe": "Musta'ar" },
+        { "id": "wajh", "labelDe": "Wajh ash-Shabah" }
+      ],
+      "rows": [
+        { "id": "r1" },
+        { "id": "r2" }
+      ],
+      "cells": {
+        "r1": {
+          "mushabbah": { "ar": "الضَّلَالَةُ" },
+          "adat": { "ar": "ك" },
+          "mushabbahBihi": { "ar": "الظُّلُمَاتِ" },
+          "mustaar": { "de": "-" },
+          "wajh": { "de": "-" }
+        },
+        "r2": {
+          "mushabbah": { "ar": "الْهِدَايَةُ" },
+          "adat": { "ar": "ك" },
+          "mushabbahBihi": { "ar": "النُّوْرِ" },
+          "mustaar": { "de": "-" },
+          "wajh": { "de": "-" }
+        }
+      },
+      "notes": [
+        "handout.pdf S. 162, Abschnitt 9.3.9 (Isti'ara Musarraha), zum Beispielvers Sure 14:1 (كِتَابٌ أَنْزَلْنَاهُ إِلَيْكَ لِتُخْرِجَ النَّاسَ مِنَ الظُّلُمَاتِ إِلَى النُّورِ). Musta'ar und Wajh ash-Shabah sind im Original für beide Zeilen als '-' gedruckt (bei einer expliziten/Musarraha-Isti'ara bleibt der Musta'ar-Name ungenannt, weil hier keine eigene dritte Ebene wie bei Isti'ara Makniyya existiert) — nicht stillschweigend leer gelassen, sondern wie im Original übernommen."
+      ]
+    },
+    {
+      "id": "vergleichstabelle-h174-istiara-asliyya-tabaiyya",
+      "titleDe": "Isti'ara Asliyya vs. Isti'ara Taba'iyya",
+      "kapitel": "Kapitel 9 · Balagah – Die Rhetorik des Qur'ans",
+      "source": { "file": "handout.pdf", "page": 162 },
+      "columns": [
+        { "id": "asliyya", "labelDe": "Isti'ara Asliyya" },
+        { "id": "tabaiyya", "labelDe": "Isti'ara Taba'iyya" }
+      ],
+      "rows": [
+        { "id": "beispiel" },
+        { "id": "uebersetzung" }
+      ],
+      "cells": {
+        "beispiel": {
+          "asliyya": { "ar": "خَطَبَ الْأَسَدُ" },
+          "tabaiyya": { "ar": "زَأَرَ الْخَطِيْبُ" }
+        },
+        "uebersetzung": {
+          "asliyya": { "de": "Der Löwe hielt eine Rede" },
+          "tabaiyya": { "de": "Der Redner brüllte" }
+        }
+      },
+      "notes": [
+        "handout.pdf S. 162, Abschnitt 9.3.10 — im ersten Beispiel wird das Nomen 'Löwe' (Ism Jamid) metaphorisch für eine tapfere Person verwendet (Isti'ara Asliyya), im zweiten das Verb 'brüllen' (Ism Mushtaqq/abgeleitet) metaphorisch für selbstbewusstes Sprechen (Isti'ara Taba'iyya)."
+      ]
+    },
+    {
+      "id": "vergleichstabelle-h175-istiara-sterne-perlen",
+      "titleDe": "Isti'ara-Beispiel: Sterne wie Perlen auf einer Schnur",
+      "kapitel": "Kapitel 9 · Balagah – Die Rhetorik des Qur'ans",
+      "source": { "file": "handout.pdf", "page": 163 },
+      "columns": [
+        { "id": "mushabbah", "labelDe": "Mushabbah" },
+        { "id": "adat", "labelDe": "Adat at-Tashbih" },
+        { "id": "mushabbahBihi", "labelDe": "Mushabbah bihi" },
+        { "id": "wajh", "labelDe": "Wajh ash-Shabah" }
+      ],
+      "rows": [{ "id": "r1" }],
+      "cells": {
+        "r1": {
+          "mushabbah": { "ar": "الْكَوَاكِبُ" },
+          "adat": { "ar": "ك" },
+          "mushabbahBihi": { "ar": "الْجَوَاهِرِ فِيْ سِلْكِهَا" },
+          "wajh": { "de": "-" }
+        }
+      },
+      "notes": [
+        "handout.pdf S. 163, Abschnitt 'Beispielanalyse für Isti'ara Makniyya' — zeigt den zugrunde liegenden expliziten Tashbih (الْكَوَاكِبُ مِثْلُ الْجَوَاهِرِ فِيْ سِلْكِهَا, 'Die Sterne sind wie Perlen auf einer Schnur') VOR der eigentlichen Isti'ara Makniyya; Wajh ash-Shabah ist im Original als '-' gedruckt. Der Lazim des Mushabbah bihi (das Verb اِنْتَشَرَ) ist im Fließtext direkt unter der Tabelle genannt, nicht Teil des Rasters selbst."
+      ]
+    },
+    {
+      "id": "vergleichstabelle-h176-istiara-mulaim-loewe",
+      "titleDe": "Isti'ara mit Mula'im: Der tapfere Mann als Löwe",
+      "kapitel": "Kapitel 9 · Balagah – Die Rhetorik des Qur'ans",
+      "source": { "file": "handout.pdf", "page": 163 },
+      "columns": [
+        { "id": "mushabbah", "labelDe": "Mushabbah" },
+        { "id": "mushabbahBihi", "labelDe": "Mushabbah bihi" },
+        { "id": "wajh", "labelDe": "Wajh ash-Shabah" },
+        { "id": "mulaim", "labelDe": "Mula'im al-Mushabbah bihi" }
+      ],
+      "rows": [{ "id": "r1" }],
+      "cells": {
+        "r1": {
+          "mushabbah": { "de": "tapferer Mann" },
+          "mushabbahBihi": { "de": "Löwe" },
+          "wajh": { "de": "-" },
+          "mulaim": { "de": "Brüllen" }
+        }
+      },
+      "notes": [
+        "handout.pdf S. 163, Abschnitt 'Kategorisierung nach Erweiterung' — Analyse des Beispielsatzes 'Der Löwe betrat den Debattiersaal und mit einem Brüllen brachte er die Gegner dazu, ihre Niederlage einzugestehen.' Alle vier Werte sind im Original als deutsche Analysebegriffe gedruckt, kein eigenes arabisches Zitat in dieser Tabelle."
+      ]
+    },
+    {
+      "id": "vergleichstabelle-h177-alaqa-sababiyya",
+      "titleDe": "'Alaqa Sababiyya: Zunge und Hände als Ursache",
+      "kapitel": "Kapitel 9 · Balagah – Die Rhetorik des Qur'ans",
+      "source": { "file": "handout.pdf", "page": 164 },
+      "columns": [
+        { "id": "woertlich", "labelDe": "Wörtliche Bedeutung" },
+        { "id": "alaqa", "labelDe": "'Alaqa" },
+        { "id": "metaphorisch", "labelDe": "Metaphorische Bedeutung" }
+      ],
+      "rows": [{ "id": "r1" }],
+      "cells": {
+        "r1": {
+          "woertlich": { "de": "Zunge und Hände" },
+          "alaqa": { "de": "Sababiyya" },
+          "metaphorisch": { "de": "Worte und Taten" }
+        }
+      },
+      "notes": [
+        "handout.pdf S. 164, Abschnitt 9.3.12 (Majaz Mursal), Beleg-Hadith الْمُسْلِمُ مَنْ سَلِمَ الْمُسْلِمُونَ مِنْ لِسَانِهِ وَيَدِهِ — Sababiyya: die wörtliche Bedeutung (Zunge/Hände) ist die URSACHE der metaphorischen Bedeutung (Worte/Taten)."
+      ]
+    },
+    {
+      "id": "vergleichstabelle-h178-alaqa-musabbabiyya",
+      "titleDe": "'Alaqa Musabbabiyya: Versorgung als Folge des Regens",
+      "kapitel": "Kapitel 9 · Balagah – Die Rhetorik des Qur'ans",
+      "source": { "file": "handout.pdf", "page": 164 },
+      "columns": [
+        { "id": "woertlich", "labelDe": "Wörtliche Bedeutung" },
+        { "id": "alaqa", "labelDe": "'Alaqa" },
+        { "id": "metaphorisch", "labelDe": "Metaphorische Bedeutung" }
+      ],
+      "rows": [{ "id": "r1" }],
+      "cells": {
+        "r1": {
+          "woertlich": { "de": "Versorgung" },
+          "alaqa": { "de": "Musabbabiyya" },
+          "metaphorisch": { "de": "Regen" }
+        }
+      },
+      "notes": [
+        "handout.pdf S. 164, Beleg-Vers وَيُنَزِّلُ لَكُمْ مِنَ السَّمَاءِ رِزْقًا (Sure 40:13) — Musabbabiyya: die wörtliche Bedeutung (Versorgung) ist das ERGEBNIS der metaphorischen Bedeutung (Regen), umgekehrte Richtung zu Sababiyya."
+      ]
+    },
+    {
+      "id": "vergleichstabelle-h179-alaqa-kulliyya",
+      "titleDe": "'Alaqa Kulliyya: Finger für Fingerspitzen",
+      "kapitel": "Kapitel 9 · Balagah – Die Rhetorik des Qur'ans",
+      "source": { "file": "handout.pdf", "page": 164 },
+      "columns": [
+        { "id": "woertlich", "labelDe": "Wörtliche Bedeutung" },
+        { "id": "alaqa", "labelDe": "'Alaqa" },
+        { "id": "metaphorisch", "labelDe": "Metaphorische Bedeutung" }
+      ],
+      "rows": [{ "id": "r1" }],
+      "cells": {
+        "r1": {
+          "woertlich": { "de": "Finger" },
+          "alaqa": { "de": "Kulliyya" },
+          "metaphorisch": { "de": "Fingerspitzen" }
+        }
+      },
+      "notes": [
+        "handout.pdf S. 164, Beleg-Vers يَجْعَلُونَ أَصَابِعَهُمْ فِي آذَانِهِمْ (Sure 2:19) — Kulliyya: die wörtliche Bedeutung (Finger, das GANZE) steht für die metaphorische Bedeutung (Fingerspitzen, ein Teil davon)."
+      ]
+    },
+    {
+      "id": "vergleichstabelle-h180-alaqa-juziyya",
+      "titleDe": "'Alaqa Juz'iyya: Nacken für Sklave",
+      "kapitel": "Kapitel 9 · Balagah – Die Rhetorik des Qur'ans",
+      "source": { "file": "handout.pdf", "page": 164 },
+      "columns": [
+        { "id": "woertlich", "labelDe": "Wörtliche Bedeutung" },
+        { "id": "alaqa", "labelDe": "'Alaqa" },
+        { "id": "metaphorisch", "labelDe": "Metaphorische Bedeutung" }
+      ],
+      "rows": [{ "id": "r1" }],
+      "cells": {
+        "r1": {
+          "woertlich": { "de": "Nacken" },
+          "alaqa": { "de": "Juz'iyya" },
+          "metaphorisch": { "de": "Sklave" }
+        }
+      },
+      "notes": [
+        "handout.pdf S. 164, Beleg-Vers أَوْ تَحْرِيرُ رَقَبَةٍ ('oder die Befreiung eines Nackens') — Juz'iyya: die wörtliche Bedeutung (Nacken, ein TEIL) steht für die metaphorische Bedeutung (Sklave, das Ganze) — umgekehrte Richtung zu Kulliyya."
+      ]
+    },
+    {
+      "id": "vergleichstabelle-h181-alaqa-itibar-ma-kana",
+      "titleDe": "'Alaqa I'tibar ma kana: Waisen als frühere Waisen",
+      "kapitel": "Kapitel 9 · Balagah – Die Rhetorik des Qur'ans",
+      "source": { "file": "handout.pdf", "page": 165 },
+      "columns": [
+        { "id": "woertlich", "labelDe": "Wörtliche Bedeutung" },
+        { "id": "alaqa", "labelDe": "'Alaqa" },
+        { "id": "metaphorisch", "labelDe": "Metaphorische Bedeutung" }
+      ],
+      "rows": [{ "id": "r1" }],
+      "cells": {
+        "r1": {
+          "woertlich": { "de": "Waisen" },
+          "alaqa": { "de": "I'tibar ma kana" },
+          "metaphorisch": { "de": "Erwachsene, die Waisen waren" }
+        }
+      },
+      "notes": [
+        "handout.pdf S. 165, Beleg-Vers وَآتُوا الْيَتَامَى أَمْوَالَهُمْ (Sure 4:2) — I'tibar ma kana: die metaphorische Bedeutung berücksichtigt den FRÜHEREN Zustand (als sie noch Waisen waren, auch wenn sie inzwischen erwachsen sind)."
+      ]
+    },
+    {
+      "id": "vergleichstabelle-h182-alaqa-itibar-ma-yakun",
+      "titleDe": "'Alaqa I'tibar ma yakun: Wein als künftiger Wein",
+      "kapitel": "Kapitel 9 · Balagah – Die Rhetorik des Qur'ans",
+      "source": { "file": "handout.pdf", "page": 165 },
+      "columns": [
+        { "id": "woertlich", "labelDe": "Wörtliche Bedeutung" },
+        { "id": "alaqa", "labelDe": "'Alaqa" },
+        { "id": "metaphorisch", "labelDe": "Metaphorische Bedeutung" }
+      ],
+      "rows": [{ "id": "r1" }],
+      "cells": {
+        "r1": {
+          "woertlich": { "de": "Wein" },
+          "alaqa": { "de": "I'tibar ma yakun" },
+          "metaphorisch": { "de": "Trauben" }
+        }
+      },
+      "notes": [
+        "handout.pdf S. 165, Beleg-Vers قَالَ أَحَدُهُمَا إِنِّي أَرَانِي أَعْصِرُ خَمْرًا (Sure 12:36, 'Ich sah mich Wein pressen') — I'tibar ma yakun: die metaphorische Bedeutung berücksichtigt den KÜNFTIGEN Zustand (Trauben werden erst noch zu Wein, man 'presst' keinen fertigen Wein)."
+      ]
+    },
+    {
+      "id": "vergleichstabelle-h183-alaqa-muqaraba",
+      "titleDe": "'Alaqa Muqaraba: Nahe am Unglauben",
+      "kapitel": "Kapitel 9 · Balagah – Die Rhetorik des Qur'ans",
+      "source": { "file": "handout.pdf", "page": 165 },
+      "columns": [
+        { "id": "woertlich", "labelDe": "Wörtliche Bedeutung" },
+        { "id": "alaqa", "labelDe": "'Alaqa" },
+        { "id": "metaphorisch", "labelDe": "Metaphorische Bedeutung" }
+      ],
+      "rows": [{ "id": "r1" }],
+      "cells": {
+        "r1": {
+          "woertlich": { "de": "Ungläubig werden" },
+          "alaqa": { "de": "Muqaraba" },
+          "metaphorisch": { "de": "Dem Unglauben nahe kommen" }
+        }
+      },
+      "notes": [
+        "handout.pdf S. 165, Beleg-Hadith مَنْ تَرَكَ (الصَّلَاةَ) فَقَدْ كَفَرَ ('Wer es [das Gebet] verlässt, hat [beinahe] den Glauben verleugnet') — Muqaraba: die wörtliche Bedeutung liegt zeitlich/räumlich NAHE bei der metaphorischen Bedeutung, ohne sie tatsächlich zu erreichen."
+      ]
+    }
+  ]
+}

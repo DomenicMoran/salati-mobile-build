@@ -1,0 +1,774 @@
+{
+  "schema": 1,
+  "lang": "tr",
+  "bereich": "nomen",
+  "eintraege": {
+    "ism": {
+      "titel": "İsim (Ism)",
+      "ar": "اِسْم",
+      "umschrift": "Ism",
+      "erklaerung": [
+        "İsim (Ism), fiil (Fiʿl) ve harf (Harf) ile birlikte Arapçanın üç temel kelime türünden biridir. Türkçedeki \"isim\" kavramından farklı olarak Arapçada İsim, dar anlamda sadece varlık adlarını değil çok daha fazlasını kapsar: özel isimler, yer adları, nesneler, kavramlar, sıfatlar, zamirler, sayı isimleri ve hatta zaman/yer bildiren kelimeler de bu sınıfa girer. Ortak özellik olumsuz biçimde tanımlanır: Bir İsim kendi başına ne bir zaman (mazi/muzari) ne de bir emir kipi taşır - fiili İsimden ayıran tam olarak budur.",
+        "Her İsim aynı anda dört temel özelliğe sahiptir: cins (müzekker/müennes), sayı (müfred/müsennâ/cemi), belirlilik (marife/nekre) ve hâl (merfû/mansûb/mecrûr). Bu dört kategori asla isteğe bağlı değildir - Kur'an'daki her İsim bu dört özellikle eksiksiz tanımlanabilir. Bunlar, bu sözlüğün isimle ilgili diğer tüm maddelerinin iskeletini oluşturur.",
+        "Ayrıca bir İsmin sonunun hâle göre değişip değişmediği de ayrı bir ayrımdır. Mu'rab (i'rablı/çekimli) bir İsim ref, nasb ve cerr hâllerini farklı sonlarla gösterir; mebni (i'rapsız/değişmez) bir İsim ise her konumda aynı şekli korur. Üçüncü ve daha küçük bir grup ise ayrıca hiçbir zaman tenvin almaz ve cerr hâlinde kesrayı fetha ile değiştirir (gayri munsarif, memnû'un mine's-sarf).",
+        "İsim bu kadar çok alt kategori içerdiği için, bu kelime türünü tek başına değil her zaman karşılaştırmalı öğrenmek daha faydalıdır: Bu kelime bir İsim mi, bir fiil mi, yoksa bir harf mi? Güvenilir bir test, kelimeye zihinsel olarak ال harf-i tarifini veya bir tenvin sonunu ekleyip ekleyemeyeceğinizdir - bu pratikte yalnızca bir İsimde işe yarar."
+      ],
+      "erkennung": [
+        "(En azından zihinsel olarak) başına ال harf-i tarifi getirilebilir veya sonuna bir tenvin eki (ـً ـٍ ـٌ) eklenebilir.",
+        "Fiilin zaman öneklerini asla taşımaz (gelecek için سَـ/سَوْفَ yok, muzari için يـ/تـ/أـ/نـ kalıbı yok, emir kipi yok).",
+        "Tek başına tam bir cümle ögesi olarak yer alabilir (özne, nesne, bir idafenin ikinci ögesi) ve bir sıfat veya zamir gibi kendisine bağlı bir unsuru çekebilir - bir harf bunu yapamaz."
+      ],
+      "belege": [
+        {
+          "sure": 1,
+          "vers": 1,
+          "wort": 1,
+          "zeigt": "Bir harf-i cerden sonra cerr hâlinde İsim",
+          "warum": "بِسْمِ kesra sonu taşır, çünkü öne gelen بِ harf-i ceri (\"ile/-de\") cerr hâlini gerektirir - bu, yalnızca bir İsmin gösterebileceği tipik bir davranıştır."
+        },
+        {
+          "sure": 1,
+          "vers": 2,
+          "wort": 1,
+          "zeigt": "İsim cümlesinde özne olarak ref hâlinde İsim",
+          "warum": "ٱلْحَمْدُ damme sonu taşır ve mübteda olarak cümleyi açar - özne işlevi ile ref sonu yalnızca bir İsimde mümkündür, bir fiilde veya harfte değil."
+        }
+      ],
+      "lernen": [
+        "Herhangi bir isim özelliğini öğrenmeden önce, karşılaştığın her yeni kelimede önce şu temel soruyu sor: Bu bir İsim mi, bir fiil mi, yoksa bir harf mi? Harf-i tarif/tenvin testiyle kontrol et.",
+        "Fatiha Sûresi'nin tamamını ele al ve ayrıntılı özelliklere geçmeden önce her kelimeyi üç kelime türünden birine yerleştir - bu temel olmadan geri kalan her şey anlamadan ezberlemek olarak kalır.",
+        "Karşına çıkan her İsimde, bir sonraki kelimeye geçmeden önce dört temel özelliği sesli olarak hemen adlandırmayı alıştırma hâline getir (cins? sayı? marife mi nekre mi? hangi hâl?)."
+      ],
+      "tabellen": ["nomen-muslim"],
+      "siehe": ["genus", "numerus", "bestimmtheit", "kasus", "murab", "mabni"]
+    },
+
+    "genus": {
+      "titel": "İsmin Cinsi (Müzekker-Müennes)",
+      "ar": "التَّذْكِير وَالتَّأْنِيث",
+      "umschrift": "at-Tadhkir wa-t-Taʾnith (Mudhakkar/Muannath)",
+      "erklaerung": [
+        "Her Arapça İsim ya müzekker (eril) ya da müennestir (dişil) - Türkçedeki gibi bir nötr cins Arapçada yoktur. Bu ayrım yalnızca canlıları değil, Türkçede sabit bir cinsiyeti olmayan varlıkları da kapsar: güneş (شَمْس) ve yer/toprak (أَرْض) Arapçada müennestir, kitap (كِتَاب) veya Rab (رَبّ) ise müzekkerdir. Bu tür \"gizli\" müennes kelimelerin cinsi ezbere öğrenilmelidir, çünkü şekilden anlaşılmaz.",
+        "Müenneslik için en güvenilir görünür belirti, kelime sonundaki tâ-i merbûta (ة) harfidir. Bu veya başka bir müenneslik biçim belirtisi taşımayan bir İsim, temel varsayım olarak müzekker kabul edilir - istisnalarla: bir grup kelime ة taşımadığı hâlde \"tabiatı gereği\" müennestir; bunlar arasında çift organ olan uzuvlar (el, göz, kulak), doğa olayları (güneş, ateş, rüzgâr) ve pek çok ülke ismi bulunur.",
+        "Cins yalnızca şekil meselesi değildir, tüm cümle yapısına etki eder: Bir sıfat (sıfat), bağlı olduğu ismin (mevsuf) cinsine uymak zorundadır ve 3. şahıs bir fiil de öznesinin cinsine uymalıdır. Bir ismin cinsini yanlış belirleyen kişi, kaçınılmaz olarak etrafına yanlış bir sıfat veya fiil sonu kurar.",
+        "Cinse sıkı sıkıya bağlı önemli bir özel kural daha vardır: Cansız varlıkları ifade eden bir kırık çoğul (cem-i teksir), fiil ve sıfatla uyum bakımından müfred bir müennes kelime gibi işlem görür - tekil şeklinin cinsi ne olursa olsun. Bu, korpusta aslen müzekker olan bazı kelimelerin çoğul hâlde neden \"müennes\" etiketiyle göründüğünü açıklar."
+      ],
+      "erkennung": [
+        "Kelime sonunda ة (tâ-i merbûta) eki = müennes - en güvenilir görünür belirti.",
+        "Müenneslik belirtisi yoksa = temel varsayım olarak müzekker, meğer ki kelime istisna listesinde olsun (çift organlar, belirli doğa olayları, pek çok ülke ismi).",
+        "Eşlik eden bir sıfat veya 3. şahıs bir fiil, kendi sonuyla (sıfatta ة, fiilde تْ) bağlı olduğu kelimenin cinsini geriye dönük olarak gösterir."
+      ],
+      "belege": [
+        {
+          "sure": 1,
+          "vers": 2,
+          "wort": 3,
+          "zeigt": "Görünür cins belirtisi olmayan müzekker İsim",
+          "warum": "رَبِّ ne ة ne de başka bir müenneslik belirtisi taşır - korpustaki \"gender: m\" etiketinin doğruladığı gibi, temel varsayıma göre müzekkerdir."
+        },
+        {
+          "sure": 2,
+          "vers": 3,
+          "wort": 5,
+          "zeigt": "ة ekinden tanınan müennes İsim",
+          "warum": "ٱلصَّلَوٰةَ ة ekini taşır (burada nasb fethasından önce ة olarak görünür) ve bu yüzden müennestir - korpusta \"gender: f\" olarak işaretlenmiştir."
+        },
+        {
+          "sure": 114,
+          "vers": 6,
+          "wort": 2,
+          "zeigt": "Bir varlık grubunda (cin) bile ة ekiyle müennes İsim",
+          "warum": "ٱلْجِنَّةِ ة ekini taşır ve bir varlık grubunu ifade etmesine rağmen müennes olarak işaretlenmiştir - burada belirleyici olan kastedilen varlıkların doğal cinsiyeti değil, biçimsel belirtidir."
+        }
+      ],
+      "lernen": [
+        "Cinsi asla tek başına bir kural olarak değil, her zaman kelime çiftleriyle öğren: رَبّ (müzekker) ile صَلَاة (müennes) kelimelerini art arda sesli oku, ta ki sonlardaki fark kulağına yerleşene kadar.",
+        "Bir sûreden 10 isim al ve bunları ezbereden iki sütuna (müzekker/müennes) ayır - ardından bu sözlükteki belirtilerle kontrol et.",
+        "\"Gizli müennes\" kelimelerin kısa bir listesini oluştur (çift organlar, güneş, ateş, toprak, rüzgâr) - bunlar \"ة yoksa müzekkerdir\" temel varsayımının geçerli olmadığı durumlardır.",
+        "Bir kelime listesinde cins sütununu kapat ve kontrol etmeden önce ezberden eşleştirmeyi dene."
+      ],
+      "tabellen": ["nomen-muslim"],
+      "siehe": ["ism", "numerus", "jam-taksir"]
+    },
+
+    "numerus": {
+      "titel": "İsmin Sayısı: Müfred, Müsennâ, Cemi",
+      "ar": "الْمُفْرَد وَالْمُثَنَّى وَالْجَمْع",
+      "umschrift": "al-Mufrad wa-l-Muthanna wa-l-Jamʿ",
+      "erklaerung": [
+        "Arapça, Türkçedeki gibi iki değil üç sayı ayrımı yapar: bir için müfred, tam olarak iki için müsennâ ve üç veya daha fazlası için cemi. Müsennâ, kendi eklerine sahip bağımsız ve tam bir sistemdir - basitçe bir çoğul gibi işlem görmez, kendine ait bir ref hâli ve kendine ait bir nasb/cerr hâli vardır.",
+        "Müsennâ, ref hâlinde ـَانِ, nasb/cerr hâlinde ise ـَيْنِ ekiyle kurulur; örneğin مُسْلِمَانِ (\"iki Müslüman\", ref) karşısında مُسْلِمَيْنِ (aynı iki kişinin nasb/cerr hâli). Bu ek, çoğulunun nasıl kurulduğuna bakılmaksızın hemen hemen her İsme eklenebilir.",
+        "Çoğul yapımında birbirinden temelden farklı iki yol vardır. \"Sağlam\" çoğul (cem-i sâlim), değişmeyen müfred gövdeye yalnızca bir ek getirir: müzekkerde genellikle ـُونَ/ـِينَ (neredeyse yalnızca kişi isimlerinde ve partisiplerde), müennes de ise genellikle ـَات. \"Kırık\" çoğul (cem-i teksir) ise kelimenin iç yapısını bizzat değiştirir, örneğin قَلْب → قُلُوب (\"kalp\" → \"kalpler\"). Kur'an'da eşya isimlerinde kırık çoğul çok daha sık görülen durumdur - bunun için tek bir sabit yapım kuralı bulunmadığından, kendine ait daha kapsamlı bir sözlük maddesi vardır.",
+        "Cümle yapısı için önemli olan şudur: Cansız varlıkları ifade eden bir kırık çoğul, sıfat ve fiille uyumda -altındaki müfredin cinsine bakılmaksızın- müfred bir müennes kelimeyle aynı uyumu gerektirir. Bu kural okuma sırasında sürekli karşınıza çıkar ve ilk bakışta bir hata gibi görünür, ama aslında standart kuraldır."
+      ],
+      "erkennung": [
+        "Müsennâ: ـَانِ (ref) veya ـَيْنِ (nasb/cerr) eki, hemen hemen her zaman önünde bir fetha ile.",
+        "Cem-i müzekker sâlim: ـُونَ (ref) / ـِينَ (nasb/cerr) eki - neredeyse yalnızca kişi isimlerinde ve ism-i fâillerde görülür.",
+        "Cem-i müennes sâlim: genellikle müfredin asıl ة'sini taşımayan gövdeye eklenen ـَات eki.",
+        "Cem-i teksir (kırık çoğul): sabit bir eki yoktur - kelimenin özü değişir ve yalnızca bilinen müfredle karşılaştırarak tanınabilir."
+      ],
+      "belege": [
+        {
+          "sure": 12,
+          "vers": 36,
+          "wort": 4,
+          "zeigt": "Ref hâlinde müsennâ",
+          "warum": "فَتَيَانِ (\"iki genç\") özne olarak ref hâlinde bulunduğu için müsennâ eki ـَانِ'yi taşır - korpusta number: du, case: nom olarak işaretlenmiştir."
+        },
+        {
+          "sure": 16,
+          "vers": 51,
+          "wort": 5,
+          "zeigt": "Nasb hâlinde müsennâ",
+          "warum": "إِلَٰهَيْنِ (\"iki ilah\") \"almak\" fiilinin nasb hâlindeki nesnesi olduğu için ـَيْنِ müsennâ ekini taşır - فَتَيَانِ ile aynı müsennâ, ama nasb/cerr eki ile."
+        },
+        {
+          "sure": 1,
+          "vers": 2,
+          "wort": 4,
+          "zeigt": "Cem-i müzekker sâlim",
+          "warum": "ٱلْعَٰلَمِينَ, kişi/varlık isimlerinde nasb/cerr hâli için tipik çoğul eki olan ـِينَ ile biter - korpusta number: pl olarak işaretlenmiştir."
+        },
+        {
+          "sure": 113,
+          "vers": 4,
+          "wort": 3,
+          "zeigt": "Cem-i müennes sâlim",
+          "warum": "ٱلنَّفَّٰثَٰتِ, kelime gövdesi başka türlü değişmeden, cem-i müennes sâlimin tipik eki olan ـَٰتِ ile biter."
+        }
+      ],
+      "lernen": [
+        "Üç sayı biçimini asla soyut bir kural olarak değil, bir kelime dizisi üzerinden öğren: مُسْلِم / مُسْلِمَانِ / مُسْلِمُونَ kelimelerini art arda sesli oku, ta ki eklerin ritmi yerleşene kadar.",
+        "Müsennâyı çoğuldan ayrı olarak çalış - Türkçede karşılığı olmadığı için öğrenirken sıkça atlanır. Kur'an'da 5 tane daha müsennâ biçimi bul ve sesli oku.",
+        "Sağlam çoğullar için ek kuralı yeterlidir; kırık çoğullar için (ayrı maddeye bakınız) müfred→çoğul kelime listesine ihtiyacın vardır, çünkü bunun için bir yapım kuralı yoktur.",
+        "Bir kelime listesinde sırayla müfred, müsennâ veya cemi sütununu kapat ve eksik biçimi ezberden tamamla."
+      ],
+      "tabellen": ["nomen-muslim"],
+      "siehe": ["ism", "genus", "jam-taksir"]
+    },
+
+    "jam-taksir": {
+      "titel": "Kırık Çoğul (Cem-i Teksir)",
+      "ar": "جَمْع التَّكْسِير",
+      "umschrift": "Jamʿ at-Taksir",
+      "erklaerung": [
+        "Sağlam çoğul (cem-i sâlim) değişmeyen müfred gövdeye yalnızca bir ek eklerken, kırık çoğul (cem-i teksir) kelimenin iç yapısını bizzat değiştirir - ünsüzler (kök) korunur, ama ünlüler ve bazen ek harfler tamamen yer değiştirir; örneğin قَلْب (kalp) → قُلُوب (kalpler) veya بَصَر (görme gücü/göz) → أَبْصَار (görme güçleri/gözler).",
+        "Kırık çoğul, kişi isimleri söz konusu olmadığında Kur'an'da çok daha sık görülen durumdur - pratikte tüm eşya çoğullarını kapsar. Tekrarlanan kalıplar vardır (قُلُوب'daki gibi فُعُول veya أَبْصَار'daki gibi أَفْعَال), fakat yeni bir kelimenin çoğulunu güvenilir biçimde çıkarabileceğiniz tek bir kural yoktur. Bu yüzden her kırık çoğul, kendine özgü bir kelime çifti (müfred + çoğul) olarak öğrenilmelidir.",
+        "Kırık çoğul gramer açısından sık sık şaşırtır: Cansız varlıkları ifade ettiğinde, müfredin cinsine bakılmaksızın sıfat ve fiille uyumda müfred bir müennes kelime gibi işlem görür. Veri tabanında bu durum, müzekker müfred kelimelerin kırık çoğulda kısmen \"müennes\" etiketiyle görünmesiyle kendini gösterir - bu bir hata değil, düzenli uyum kuralıdır."
+      ],
+      "erkennung": [
+        "Kelime gövdesi müfrede kıyasla bizzat değişir (farklı ünlüler, çoğunlukla ek harfler) - eklenen basit bir son ek yoktur.",
+        "Ne ـُونَ/ـِينَ (cem-i müzekker sâlim) ne de ـَات (cem-i müennes sâlim) ile biter.",
+        "Genellikle yalnızca bilinen kalıplarla (örn. فُعُول، أَفْعَال، مَفَاعِل) veya sözlüğe bakarak tanınabilir - bir kuralla değil."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 7,
+          "wort": 4,
+          "zeigt": "قَلْب (kalp) kelimesinin kırık çoğulu",
+          "warum": "قُلُوبِهِمْ فُعُول kalıbını gösterir: müfred قَلْب, basit bir ek eklenmeden قُلُوب hâline gelir - kelimenin özü bizzat değişmiştir."
+        },
+        {
+          "sure": 2,
+          "vers": 7,
+          "wort": 8,
+          "zeigt": "بَصَر (görme gücü) kelimesinin kırık çoğulu",
+          "warum": "أَبْصَٰرِهِمْ أَفْعَال kalıbını gösterir: بَصَر, أَبْصَار hâline gelir - aynı ayette قُلُوبِهِمْ'in hemen yanında, sağlam çoğul yerine kırık çoğula bir başka örnek."
+        },
+        {
+          "sure": 113,
+          "vers": 4,
+          "wort": 5,
+          "zeigt": "عُقْدَة (düğüm) kelimesinin kırık çoğulu",
+          "warum": "ٱلْعُقَدِ, عُقْدَة (düğüm) kelimesinin kırık çoğuludur - müfred gramer açısından müennes olmasına (ة eki) rağmen korpusta number: pl, gender: m olarak işaretlenmiştir; kırık çoğulun cins belirtisi müfredinkini değil, kendi kurallarını izler."
+        }
+      ],
+      "lernen": [
+        "Baştan kabul et: Kırık çoğul için bir kestirme yol yoktur. Kendi müfred → çoğul listeni oluştur ve bunları kelime çiftleri gibi öğren.",
+        "Listende sırayla müfred veya çoğul sütununu kapat ve ezberden tamamla - önce bir yönde, sonra diğer yönde.",
+        "Kur'an okurken çoğul anlamı taşıyan ama ne ـُونَ/ـِينَ ne de ـَات ile biten kelimelere bilinçli olarak dikkat et - bunlar hemen her zaman kırık çoğuldur.",
+        "Yeni öğrendiğin kırık çoğulları kalıplarına göre grupla (فُعُول, أَفْعَال, مَفَاعِل ...) - sabit bir kural oluşturmasalar da kalıplar tekrarlanır."
+      ],
+      "tabellen": [],
+      "siehe": ["numerus", "genus"]
+    },
+
+    "bestimmtheit": {
+      "titel": "Belirlilik: Marife ve Nekre",
+      "ar": "الْمَعْرِفَة وَالنَّكِرَة",
+      "umschrift": "al-Maʿrifa wa-n-Nakira",
+      "erklaerung": [
+        "Her Arapça İsim ya marifedir (\"bilinen, belirli bir kitap\") ya da nekredir (\"herhangi bir kitap\"). Bu ayrım Türkçedeki \"o kitap\" ile \"bir kitap\" karşıtlığına yaklaşık olarak karşılık gelir, ancak Arapçada yalnızca önüne gelen bir kelimeyle değil, doğrudan kelimenin biçiminde, yani morfolojik olarak görünür hâle gelir.",
+        "Belirliliğe giden en yaygın yol, İsmin hemen önüne boşluksuz gelen أَل harf-i tarifidir (elif-lâm-ı ta'rif). İkinci, yine sık görülen bir yol ise idafe (izafet) yapısıdır: Bir idafenin ilk kelimesi (muzaf), kendi harf-i tarifi olmasa bile ikinci kelimenin (muzafun ileyh) belirli veya belirsiz olmasına göre otomatik olarak aynı durumu alır. Eklenmiş bir iyelik zamiri de bir İsmi otomatik olarak marife yapar, tıpkı özel isimlerin kendiliğinden marife olması gibi.",
+        "Nekre bir İsim, bunun yerine kural olarak tenvin taşır - konuşurken -un, -an ya da -in olarak duyulan çift son ünlü işareti (ref için ـٌ dammeteyn, nasb için ـً fethateyn, cerr için ـٍ kesreteyn). Tenvin ile أَل harf-i tarifi birbirini karşılıklı olarak dışlar: Bir kelime ya birini ya ötekini taşır, ikisini asla aynı anda taşımaz.",
+        "Bir özellik de ى (elif-i maksûre) sonuyla ilgilidir: Bu harfle biten kelimelerde tenvin, elif-i maksûre ile tek bir işarette birleştiği için göze neredeyse görünmez - bu yüzden bu \"sessiz\" tenvini yine de zihinde canlı tutmayı öğrenmek gerekir."
+      ],
+      "erkennung": [
+        "Marife oluşur: kelimenin hemen önündeki ال harf-i tarifiyle, özel isimlerle, eklenmiş iyelik zamirleriyle veya marife bir muzafun ileyhten önce muzaf konumuyla.",
+        "Nekre: tenvin taşır (ـٌ/ـً/ـٍ) ve ne harf-i tarife ne iyelik ekine ne de muzaf konumuna sahiptir.",
+        "Tenvin ile ال harf-i tarifi her durumda birbirini dışlar - ال taşıyan bir kelime asla aynı anda tenvin taşımaz."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 2,
+          "wort": 2,
+          "zeigt": "ال harf-i tarifi ile belirlilik",
+          "warum": "ٱلْكِتَٰبُ gövdenin hemen önünde ال harf-i tarifini taşır - korpusta hiçbir tenvin olmadan state: definite olarak işaretlenmiştir."
+        },
+        {
+          "sure": 1,
+          "vers": 2,
+          "wort": 3,
+          "zeigt": "Kendi harf-i tarifi olmadan muzaf konumuyla belirlilik",
+          "warum": "رَبِّ ne ال ne de tenvin taşır, ama yine de marifedir (state: definite), çünkü marife muzafun ileyh ٱلْعَٰلَمِينَ'den önce muzaf konumundadır - belirlilik idafenin ikinci kelimesinden \"miras\" alınır."
+        },
+        {
+          "sure": 112,
+          "vers": 1,
+          "wort": 4,
+          "zeigt": "Görünür dammeteyn tenviniyle nekre İsim",
+          "warum": "أَحَدٌ ـٌ (dammeteyn) sonunu taşır ve state: indefinite olarak işaretlenmiştir - meşhur İhlâs Sûresi'nin sonunda açıkça görünen bir tenvin."
+        },
+        {
+          "sure": 112,
+          "vers": 4,
+          "wort": 4,
+          "zeigt": "Görünür fethateyn tenviniyle nekre İsim",
+          "warum": "كُفُوًا nasb hâlinde ـًا (fethateyn) sonunu taşır ve state: indefinite olarak işaretlenmiştir - aynı sûre burada üç tenvin biçiminden ikincisini göstermektedir."
+        },
+        {
+          "sure": 2,
+          "vers": 17,
+          "wort": 15,
+          "zeigt": "Görünür kesreteyn tenviniyle nekre İsim",
+          "warum": "ظُلُمَٰتٍ cerr hâlinde ـٍ (kesreteyn) sonunu taşır ve state: indefinite olarak işaretlenmiştir - böylece أَحَدٌ, كُفُوًا ve ظُلُمَٰتٍ ile üç tenvin biçiminin tamamı gerçek Kur'an yerleriyle belgelenmiş olur."
+        }
+      ],
+      "lernen": [
+        "Belirlilik kurallarıyla uğraşmadan önce üç tenvin işaretini sesli okumayı öğren (ـٌ = -un, ـً = -an, ـٍ = -in) - işaretleri güvenle okuyamadan her şey teoride kalır.",
+        "Kur'an'dan rastgele bir sayfa al, önce her ال'lı kelimeyi, sonra görünür tenvinli her kelimeyi işaretle - geriye kalanlar genellikle muzaf kelimeler, özel isimler veya zamir ekli kelimelerdir.",
+        "\"ال ile tenvin birbirini dışlar\" kuralını öyle iyi öğren ki, karşına çıkan her yeni kelimede hangi özelliğin geçerli olduğunu hemen kontrol edebilesin - asla ikisi birden değil.",
+        "ى ile biten kelimelerdeki gizli tenvin biçimini ayrıca çalış, örneğin هُدًى üzerinde - onu sesli olarak \"hudan\" diye oku ve bunun yazıda ne kadar az göründüğüne dikkatlice bak."
+      ],
+      "tabellen": ["nomen-muslim"],
+      "siehe": ["ism", "idafa", "murab"]
+    },
+
+    "kasus": {
+      "titel": "Hâl: Ref, Nasb, Cerr",
+      "ar": "الرَّفْع وَالنَّصْب وَالْجَرّ",
+      "umschrift": "ar-Rafʿ, an-Nasb, al-Dscharr",
+      "erklaerung": [
+        "Arapça, İsim için üç hâl bilir: ref (yaklaşık olarak yalın hâle/nominatife karşılık gelir), nasb (belirtme hâline/akuzatife karşılık gelir) ve cerr (tamlayan hâline/genitife karşılık gelir - cerr sözlük anlamıyla \"çekmek/sürüklemek\" demektir ve harf-i cerlerden sonraki hâli ifade eder). Her hâlin, mu'rab bir İsimde işitilebilen ve genellikle görülebilen kendine ait bir son ünlü işareti vardır.",
+        "Ref, -u sonuyla kendini gösterir (marife kelimelerde damme ـُ, nekre kelimelerde tenvin olarak ـٌ). Tipik olarak bir cümlenin öznesini işaretler (fiil cümlesinde fâil, isim cümlesinde mübteda), ama aynı zamanda bir isim cümlesinin yüklemini (haber) de işaretler.",
+        "Nasb, -a sonuyla kendini gösterir (fetha ـَ ya da tenvin olarak ـً). Öncelikle bir fiilin doğrudan nesnesini (mef'ûlün bih) işaretler, bunun yanında hâl (durum bildiren nasb) veya mef'ûlün leh/li-eclihi (gerekçe bildiren nasb) gibi bir dizi başka işlevi de üstlenir.",
+        "Cerr, -i sonuyla kendini gösterir (kesra ـِ ya da tenvin olarak ـٍ). Tam olarak iki durumda ortaya çıkar: bir harf-i cerden sonra ve bir idafenin ikinci ögesi (muzafun ileyh) olarak. Gayri munsarif (memnû'un mine's-sarf) bir İsim bundan sapar ve cerr hâlindeki kesrayı fetha ile değiştirir - bkz. ayrı madde."
+      ],
+      "erkennung": [
+        "Ref: -u/ـُ (marife) veya -un/ـٌ (nekre, dammeteyn tenvini) sonu - genellikle özne veya yüklem.",
+        "Nasb: -a/ـَ (marife) veya -an/ـً (nekre, fethateyn tenvini) sonu - genellikle doğrudan nesne.",
+        "Cerr: -i/ـِ (marife) veya -in/ـٍ (nekre, kesreteyn tenvini) sonu - her zaman bir harf-i cerden sonra veya idafenin ikinci ögesi olarak."
+      ],
+      "belege": [
+        {
+          "sure": 1,
+          "vers": 2,
+          "wort": 1,
+          "zeigt": "İsim cümlesinin öznesinde ref",
+          "warum": "ٱلْحَمْدُ mübteda olarak cümlenin öznesini oluşturduğu için -u damme sonunu taşır - korpusta case: nom olarak işaretlenmiştir."
+        },
+        {
+          "sure": 1,
+          "vers": 6,
+          "wort": 2,
+          "zeigt": "Bir emrin doğrudan nesnesinde nasb",
+          "warum": "ٱلصِّرَٰطَ, ٱهْدِنَا (\"bizi hidayete erdir\") emrinin doğrudan nesnesi (mef'ûlün bih) olduğu için -a fetha sonunu taşır - korpusta case: acc olarak işaretlenmiştir."
+        },
+        {
+          "sure": 1,
+          "vers": 1,
+          "wort": 1,
+          "zeigt": "Bir harf-i cerden sonra cerr",
+          "warum": "بِسْمِ, hemen önünde بِ harf-i ceri bulunduğu için -i kesra sonunu taşır - korpusta case: gen olarak işaretlenmiştir."
+        }
+      ],
+      "lernen": [
+        "Üç hâl sonunu önce sadece ses olarak öğren: -u/-un, -a/-an, -i/-in - ne için kullanıldıklarını ezberlemeden önce onları sesli oku.",
+        "Her hâli hemen ana işleviyle ilişkilendir: ref = kim/ne eyler veya nitelenir, nasb = eylemden kim/ne etkilenir, cerr = harf-i cerden sonra veya idafenin ikinci ögesi olarak.",
+        "Fatiha Sûresi'ni al ve bir çeviriye bakmadan önce her İsmin hâlini belirle - ardından metindeki sonlarla kontrol et.",
+        "Şunu bir hatırlatma cümlesi olarak aklında tut: Nasb ve tenvin biçimi ـً, Kur'an baskısında genellikle ekstra bir elif yazılan tek durumdur - bu, hareke olmadan da hâli tanımana yardımcı olur."
+      ],
+      "tabellen": ["nomen-muslim"],
+      "siehe": ["ism", "murab", "mabni", "diptot"]
+    },
+
+    "murab": {
+      "titel": "Çekimli (Mu'rab) İsim",
+      "ar": "مُعْرَب",
+      "umschrift": "Muʿrab",
+      "erklaerung": [
+        "Mu'rab, sonu hâle göre gerçekten değişen bir İsimdir - Arapça isimlerin büyük çoğunluğu bu gruba girer. Aynı kelime ref hâlinde farklı, nasb hâlinde farklı, cerr hâlinde ise yine farklı bir son ünlü işareti taşır. Sonun bu hareketliliği normal durumdur; bunun tersi (mebni, değişmez son) istisnadır ve yalnızca zamirler, işaret isimleri ve ism-i mevsuller gibi belirli kelime gruplarını ilgilendirir.",
+        "Mu'rab özelliği en açık şekilde, aynı kelimeyi Kur'an'daki farklı sözdizimsel konumlarda yan yana koyduğunuzda görülür: Tek ve aynı isim bir yerde damme sonuyla (ref), bir yerde fetha sonuyla (nasb), bir yerde de kesra sonuyla (cerr) karşınıza çıkar - aynı kelimenin cümledeki farklı işlevle salt tekrarı.",
+        "Kur'an'ı anlamak için bu belirleyicidir: Bir mu'rabda, kelimenin cümledeki rolünü kelime sırasından bağımsız olarak sonun kendisi ele verir. Bu yüzden Arapça, herhangi bir yanlış anlaşılmaya yol açmadan Türkçeden çok daha serbest bir kelime sırası kurabilir - dilbilgisel bilgiyi taşıyan hâl sonudur."
+      ],
+      "erkennung": [
+        "Kelimenin cümlede oynadığı role göre sonu, üç hâl biçimi (damme/fetha/kesra veya bunların tenvin biçimleri) arasında görünür şekilde değişir.",
+        "İsimlerin ve sıfatların çoğu mu'rabtır - şüphe hâlinde bir İsim, açıkça mebni kelime gruplarından birine (zamirler, işaret isimleri, ism-i mevsuller, harf'e yakın bazı isimler) ait olmadıkça çekimlidir.",
+        "Gayri munsarif (memnû'un mine's-sarf) bir kelime de mu'rabtır - yalnızca üç yerine iki farklı sonla ve hiçbir zaman tenvinle çekimlenir (bkz. ayrı madde)."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 7,
+          "wort": 2,
+          "zeigt": "Aynı kelime biçiminin ref hâlinde",
+          "warum": "ٱللَّهُ burada خَتَمَ fiiline fâil (özne) olduğu için -u damme sonunu taşır - korpusta case: nom olarak işaretlenmiştir."
+        },
+        {
+          "sure": 2,
+          "vers": 9,
+          "wort": 2,
+          "zeigt": "Aynı kelime biçiminin nasb hâlinde",
+          "warum": "ٱللَّهَ burada يُخَٰدِعُونَ fiilinin doğrudan nesnesi olduğu için -a fetha sonunu taşır - korpusta case: acc olarak işaretlenmiştir, 2:7'deki dammenin aksine."
+        },
+        {
+          "sure": 1,
+          "vers": 1,
+          "wort": 2,
+          "zeigt": "Aynı kelime biçiminin cerr hâlinde",
+          "warum": "ٱللَّهِ burada بِسْمِ'den sonra muzafun ileyh olduğu için -i kesra sonunu taşır - böylece aynı kelime, üç farklı gerçek Kur'an yerinde üç hâl sonuyla birden karşımıza çıkar."
+        }
+      ],
+      "lernen": [
+        "Sık geçen bir kelime seç (ٱللَّه gibi) ve onun her üç hâlde de geçtiği üç Kur'an yeri topla - aynı kelimedeki son değişimini duymak için bunları art arda sesli oku.",
+        "Şunu aklında tut: Mu'rab normal durumdur. Bunun yerine istisnaları (mebni kelime grupları) aktif olarak öğren, geri kalan için otomatik olarak \"çekimli\" kalır.",
+        "Sıfat-isim çiftleri üzerinde çalış: İsmin hâli değiştiğinde, eşlik eden sıfat da aynı hâle uymak zorundadır - bunu birden çok ayette kontrol et."
+      ],
+      "tabellen": ["nomen-muslim"],
+      "siehe": ["kasus", "mabni", "diptot"]
+    },
+
+    "mabni": {
+      "titel": "Değişmez (Mebni) İsim",
+      "ar": "مَبْنِي",
+      "umschrift": "Mabni",
+      "erklaerung": [
+        "Mebni, cümlede hangi rolü oynarsa oynasın sonu değişmeyen bir İsimdir - yani değişen bir son anlamında kendine ait bir hâli yoktur. Bu gruba zamirler (hem munfasıl hem muttasıl), işaret isimleri (esmâ-i işaret) ve ism-i mevsuller girer, bunlara ek olarak bazı sayı isimleri ve harf'e yakın bazı isimler de dâhildir.",
+        "Mu'rabtan farkı en açık şekilde şurada görülür: mebni bir kelime tamamen farklı sözdizimsel konumlarda -bir yerde özne, bir yerde nesne, bir yerde bir harf-i cerden sonra- her zaman aynı biçimi korur. Cümle yine de kelimenin hangi rolü oynadığına karar verir, ama bu rol değişen bir sondan değil, yalnızca konumdan ve bağlamdan okunur.",
+        "Önemli olan, mebniyi nekre olmakla veya \"hiç hâl yok\" anlamında \"hâl atanmamış\" olmakla karıştırmamaktır: Gramer açısından mebni bir kelime yine de bir hâl konumundadır (sözdizimsel olarak \"ref hâlinde\" veya \"cerr hâlinde\" olabilir), sadece bu konumu kendine ait bir sonla göstermez."
+      ],
+      "erkennung": [
+        "Kelimenin biçimi her cümle konumunda aynı kalır - değişen bir ref/nasb/cerr sonu yoktur.",
+        "Tipik mebni kelime grupları: munfasıl ve muttasıl zamirler, işaret isimleri (ذَٰلِكَ, هَـٰذَا, أُولَٰئِكَ ...), ism-i mevsuller (ٱلَّذِي, ٱلَّذِينَ ...).",
+        "Bu sözlüğün morfolojik korpusunda bu tür kelimelerin kendisinde hiçbir hâl etiketi görünmez - bu, mebni için açık teknik bir işarettir."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 2,
+          "wort": 1,
+          "zeigt": "Değişken hâl sonu olmayan işaret ismi",
+          "warum": "ذَٰلِكَ, cümlede öznenin rolünü üstlenmesine rağmen hiçbir hâl etiketi taşımaz - biçim, sözdizimsel işlevden bağımsız olarak aynı kalır; bu mebninin bir belirtisidir."
+        },
+        {
+          "sure": 1,
+          "vers": 7,
+          "wort": 2,
+          "zeigt": "Değişken hâl sonu olmayan ism-i mevsul",
+          "warum": "ٱلَّذِينَ burada صِرَٰطَ'dan sonra muzafun ileyh olarak yer alır, ama hiçbir hâl etiketi taşımaz - aynı ٱلَّذِينَ biçimi Kur'an'da özne veya nesne olarak da değişmeden karşımıza çıkar."
+        }
+      ],
+      "lernen": [
+        "Mebni kelime gruplarını kapalı bir liste olarak ezberle (zamirler, işaret isimleri, ism-i mevsuller) - bu istisnadır, geri kalan her şey kural olarak mu'rabtır.",
+        "Kur'an'da aynı mebni biçimini (örn. ٱلَّذِينَ) belirgin şekilde farklı cümle rolleriyle birden çok yerde ara ve biçimin değişmediğini kendine doğrula.",
+        "Mebniyi nekre olmakla karıştırma: ذَٰلِكَ marifedir (\"şu/o belirli şey\"), değişen bir hâl sonu göstermemesine rağmen - her iki özellik birbirinden bağımsızdır."
+      ],
+      "tabellen": [],
+      "siehe": ["murab", "kasus", "ism-ishara", "asma-mawsula", "pronomen-frei", "pronomen-gebunden"]
+    },
+
+    "diptot": {
+      "titel": "Gayri Munsarif (Memnû'un mine's-Sarf)",
+      "ar": "مَمْنُوعٌ مِنَ الصَّرْف",
+      "umschrift": "Mamnuʿ mina s-Sarf",
+      "erklaerung": [
+        "Gayri munsarif, mu'rab (çekimli) olan ama üç hâl sonunun tamamını birbirinden ayırt etmeyen ve -anlam bakımından nekre olsa bile- hiçbir zaman tenvin almayan özel bir isim türüdür. Ref hâlinde normal davranır (damme), nasb hâlinde de normal davranır (fetha) - ama cerr hâlinde asıl beklenen kesra yerine fetha gelir. Böylece gayri munsarif, üç yerine fiilen yalnızca iki farklı sona sahiptir.",
+        "Gayri munsarif gruplarına şunlar girer: yabancı kökenli özel isimler (örneğin Arapça kökenli olmayan فِرْعَوْن gibi kişi isimleri), belirli çoğul kalıpları (özellikle \"aşırı çokluk çoğulu\" denen مَفَاعِل/مَفَاعِيل kalıbı), أَفْعَل kalıbındaki sıfatlar (örneğin renk sıfatları) ve birkaç sabit kalıp daha. Bir gayri munsarif, ال ile veya muzaf olarak marife hâline geldiği anda yeniden munsarif (tenvinle tam çekimli) olur.",
+        "Kur'an okuma açısından gayri munsarif yararlı bir tanıma özelliğidir: Bir kelime bir harf-i cerden sonra veya muzafun ileyh olarak aslında kesra taşıması gerekirken orada fetha varsa ve hiç tenvin görünmüyorsa, bu neredeyse her zaman bir gayri munsariftir."
+      ],
+      "erkennung": [
+        "Cerr hâlinde beklenen kesra yerine fetha bulunur - nasb ile cerr arasında görünür bir son farkı yoktur.",
+        "Kelime anlam bakımından nekre olsa bile hiçbir zaman tenvin taşımaz.",
+        "Tipik nedenler: yabancı/yabancı kökenli özel isimler, belirli çoğul kalıpları (özellikle مَفَاعِل/مَفَاعِيل), أَفْعَل kalıbındaki renk ve kusur bildiren sıfatlar.",
+        "Marife hâline geldiğinde (ال ile veya muzaf olarak), gayri munsarif yeniden normal, üç hâlde tam çekimli bir isim gibi davranır."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 49,
+          "wort": 5,
+          "zeigt": "Yabancı bir özel isimde gayri munsarif: cerr hâlinde kesra yerine fetha",
+          "warum": "فِرْعَوْنَ, آلِ'den sonra cerr hâlinde muzafun ileyh olarak yer alır, ama cerr için beklenen kesra yerine -a (fetha) sonunu taşır - Arapça kökü olmayan yabancı bir özel isim için tipik bir durum."
+        },
+        {
+          "sure": 41,
+          "vers": 12,
+          "wort": 14,
+          "zeigt": "مَفَاعِيل çoğul kalıbında gayri munsarif: kesra yerine fetha, tenvinsiz",
+          "warum": "بِمَصَٰبِيحَ, بِ harf-i cerinden sonra cerr hâlindedir, ama kelime nekre olmasına rağmen kesra yerine -a (fetha) sonunu taşır ve hiç tenvin almaz - مَفَاعِيل çoğul kalıbı sabit gayri munsarif kalıplarından biridir."
+        }
+      ],
+      "lernen": [
+        "Önce tanıma kuralını refleks hâline getirerek öğren: bir harf-i cerden sonra veya muzafun ileyh olarak, aslında kesra durması gereken yerde fetha varsa bu bir gayri munsarif işaretidir.",
+        "Nedeni oluşturan grupları kısa bir liste olarak ezberle: yabancı özel isimler, مَفَاعِل/مَفَاعِيل çoğul kalıbı, أَفْعَل kalıbındaki renk sıfatları - başlangıç için daha fazlasına ihtiyacın yok.",
+        "Bilinen peygamber isimleri üzerinde çalış (فِرْعَوْن, إِبْرَٰهِيم, يَعْقُوب, إِسْحَٰق): her biri için ismin cerr hâlinde bulunduğu bir Kur'an yeri bul ve fetha sonunu gözlemle.",
+        "Kontrol için şunu aklında tut: bir gayri munsarif ال ile kullanıldığında veya muzaf olduğunda istisna ortadan kalkar - o zaman yine her mu'rab gibi davranır."
+      ],
+      "tabellen": [],
+      "siehe": ["murab", "kasus", "bestimmtheit"]
+    },
+
+    "idafa": {
+      "titel": "İzafet Terkibi (İdafe)",
+      "ar": "الْإِضَافَة",
+      "umschrift": "al-Idafa",
+      "erklaerung": [
+        "Bir idafe, Türkçedeki (\"öğrencinin kitabı\") veya İngilizcedeki (\"the student's book\") gibi ayrı bir \"-in/-nin\" kelimesine gerek kalmadan iki ismi bir sahiplik veya aitlik birimi hâlinde birleştirir. İlk kelimeye muzaf (\"eklenen\", sahip olunan şey), ikinci kelimeye ise muzafun ileyh (\"kendisine eklenen\", sahip olan) denir. İkisi birlikte, gramer açısından tek bir marife veya nekre isim gibi işlev gören sabit bir birim oluşturur.",
+        "Muzaf için üç sabit kural geçerlidir: asla ال harf-i tarifini taşımaz, asla tenvin taşımaz ve belirliliği tamamen muzafun ileyhe göre belirlenir - ikinci kelime marifeyse, kendi harf-i tarifi olmadan ilk kelime de otomatik olarak marife olur. Muzafun ileyh ise, muzafın kendisi hangi hâlde olursa olsun her zaman cerr hâlinde bulunur.",
+        "Bir idafe birden fazla halkalı da olabilir (art arda gelen birkaç izafet zincirinden oluşan bir dizi) ve bu durumda son halka tüm zincirin belirliliğini belirler. Eklenmiş bir iyelik zamiri (bkz. muttasıl zamirler maddesi) gramer açısından tam olarak bir muzafun ileyhin rolünü üstlenir - رَبِّهِمْ (\"onların Rabbi\") yapısal olarak رَبُّ الْعَٰلَمِينَ (\"âlemlerin Rabbi\") ile aynı kurgudur, sadece yazılı bir isim yerine bir zamir kullanılmıştır."
+      ],
+      "erkennung": [
+        "Muzaf (birinci kelime): ال yok, tenvin yok, arada hiçbir ayırıcı kelime olmadan doğrudan muzafun ileyhin izlemesi.",
+        "Muzafun ileyh (ikinci kelime): her zaman cerr hâlindedir, ya ال ile marifedir, ya bir özel isimdir ya da kendisi bir iyelik zamiri taşır - ve böylece tüm ifadeyi marife yapar.",
+        "Bir isme eklenen şahıs zamiri (örn. ـهِمْ, ـهُ, ـنَا) bir muzafun ileyhle aynı işlevi üstlenir ve ismi otomatik olarak marife yapar."
+      ],
+      "belege": [
+        {
+          "sure": 1,
+          "vers": 2,
+          "wort": 3,
+          "zeigt": "Muzaf: harf-i tarifsiz, tenvinsiz",
+          "warum": "رَبِّ, ال olmadan ve tenvinsiz olarak doğrudan ٱلْعَٰلَمِينَ'den önce yer alır - tam olarak bir muzafın göstermesi gereken davranış."
+        },
+        {
+          "sure": 1,
+          "vers": 2,
+          "wort": 4,
+          "zeigt": "Muzafun ileyh: marife ve cerr hâlinde",
+          "warum": "ٱلْعَٰلَمِينَ ال harf-i tarifini ve -ina cerr sonunu taşır - ve böylece kendisi hiç harf-i tarif taşımayan önceki رَبِّ'yi otomatik olarak marife yapar."
+        },
+        {
+          "sure": 113,
+          "vers": 1,
+          "wort": 3,
+          "zeigt": "İkinci bir izafet zincirinde muzaf",
+          "warum": "بِرَبِّ (بِ harf-i ceri + muzaf رَبِّ) yine ne ال ne de tenvin taşır ve ancak ardından gelen ٱلْفَلَقِ ile marife olur - 1:2'deki ile aynı yapı, başka bir Kur'an yerinde doğrulanmıştır."
+        },
+        {
+          "sure": 113,
+          "vers": 1,
+          "wort": 4,
+          "zeigt": "Harf-i tarifli ve cerr sonlu muzafun ileyh",
+          "warum": "ٱلْفَلَقِ, رَبِّ'den sonra muzafun ileyh olduğu için ال harf-i tarifini ve cerr hâlinin kesra sonunu taşır - tam idafe olan بِرَبِّ ٱلْفَلَقِ \"tan yerinin Rabbine sığınırım\" anlamına gelir."
+        }
+      ],
+      "lernen": [
+        "Önce üç muzaf kuralını sabit bir ezber cümlesi olarak öğren: ال yok, tenvin yok, belirlilik ikinci kelimeden miras alınır.",
+        "Kur'an'da 5 idafe örneği bul ve her birinde muzaf ile muzafun ileyhi ayrı ayrı işaretle - özellikle ikinci kelimedeki cerr sonuna dikkat et.",
+        "Tersini de çalış: Türkçe bir tamlama ifadesi al (\"adamın evi\") ve bir Kur'an yeriyle karşılaştırmadan önce idafeyi kendin oluştur.",
+        "Muttasıl iyelik zamirini bilinçli olarak idafeyle ilişkilendir: رَبُّهُمْ ile رَبُّ الْقَوْمِ gramer açısından aynı kurgudur - yazılı bir ismi bir zamirle değiştirdiğin çiftler üzerinde çalış."
+      ],
+      "tabellen": ["idafa-besitz"],
+      "siehe": ["bestimmtheit", "kasus", "pronomen-gebunden"]
+    },
+
+    "pronomen-frei": {
+      "titel": "Munfasıl Zamirler (Zamir-i Munfasıl)",
+      "ar": "الضَّمَائِر الْمُنْفَصِلَة",
+      "umschrift": "adh-Dhamaʾir al-Munfasila",
+      "erklaerung": [
+        "Munfasıl zamirler, cümlede her zaman başka bir kelimeye eklenen muttasıl zamirlerin aksine, diğer her kelimeden ayrı, bağımsız birer kelime olarak yer alır. Arapça bu zamirlerde şahsa (1./2./3.), cinse (müzekker/müennes) ve sayıya (müfred/müsennâ/cemi) göre ayrım yapar - 1. şahsın kendine ait bir müsennâsı olmadığı için toplam on iki farklı biçim vardır.",
+        "Munfasıl zamirler gramer açısından mebnidir: biçimleri hâlle birlikte değişmez. Öncelikle iki işlevde ortaya çıkarlar: bir isim cümlesinin öznesi olarak (örn. هُوَ اللَّهُ, \"O, Allah'tır\") veya normalde fiile muttasıl zamir olarak eklenecek bir nesneyi özellikle vurgulamak için - bu durumda asıl muttasıl olan nesne zamiri, إِيَّا- ile başlayan özel biçimle öne alınır ve böylece vurgulanır.",
+        "Bu vurgu işlevi özellikle öğreticidir: إِيَّاكَ نَعْبُدُ (\"Yalnız Sana kulluk ederiz\", harfiyen \"Seni - kulluk ederiz\") ifadesinde, نَعْبُدُ (\"kulluk ederiz\") fiili bu kelime olmadan da gramer açısından tam olmasına rağmen nesne إِيَّاكَ öne alınır - öne alma yalnızca \"sadece Sana, başka hiç kimseye değil\" vurgusuna hizmet eder."
+      ],
+      "erkennung": [
+        "Başka bir kelimeye ek olarak değil, bağımsız bir kelime olarak yer alır - önünde ve arkasında kendi kelime boşluğuyla tanınır.",
+        "Hâlden bağımsız sabit, değişmez biçim (mebni) - örn. هُوَ, هِيَ, أَنْتَ, نَحْنُ.",
+        "إِيَّا- ile başlayan biçimler (إِيَّاكَ, إِيَّاهُ ...), normalde fiile muttasıl zamir olarak eklenecek olan vurgulanmış, öne alınmış bir nesneyi işaret eder."
+      ],
+      "belege": [
+        {
+          "sure": 112,
+          "vers": 1,
+          "wort": 2,
+          "zeigt": "İsim cümlesinde özne olarak munfasıl zamir",
+          "warum": "هُوَ, bağımsız bir kelime olarak \"قُلْ هُوَ ٱللَّهُ أَحَدٌ\" (\"De ki: O, Allah'tır, tektir\") cümlesinin öznesini oluşturur - Kur'an'daki en bilinen munfasıl zamir kullanımlarından biri."
+        },
+        {
+          "sure": 1,
+          "vers": 5,
+          "wort": 1,
+          "zeigt": "Bir nesnenin vurgulu öne alınmasında munfasıl zamir",
+          "warum": "إِيَّاكَ, نَعْبُدُ fiilinden önce bağımsız, öne alınmış bir nesne olarak yer alır - إِيَّا- ile başlayan özel biçim, tam olarak bir fiilin nesnesinin vurgulu şekilde öne alınması gerektiğinde kullanılır."
+        }
+      ],
+      "lernen": [
+        "On iki munfasıl zamiri önce sabit bir sırayla salt liste olarak ezberle (1. tekil/çoğul, 2. müzekker/müennes/müsennâ/çoğul, 3. müzekker/müennes/müsennâ/çoğul) - bu sözlükteki tablo bunları eksiksiz gösterir.",
+        "Zamir tablosunun Arapça sütununu kapat ve her biçimi sesli söyle, ardından Türkçe sütunu kapatıp aynısını tersine yap.",
+        "إِيَّا- biçimlerini temel biçimlerden (أَنَا, أَنْتَ ...) ayrı olarak özellikle çalış - farklı görünürler ve yeni başlayanlar tarafından sıkça gözden kaçırılırlar.",
+        "Fatiha Sûresi'ni sesli oku ve içindeki her munfasıl zamiri bul - bu kısa sûrede vurgu işlevi özellikle açık bir şekilde ortaya çıkar."
+      ],
+      "tabellen": ["pronomen-frei"],
+      "siehe": ["pronomen-gebunden", "mabni"]
+    },
+
+    "pronomen-gebunden": {
+      "titel": "Muttasıl Zamirler (Zamir-i Muttasıl)",
+      "ar": "الضَّمَائِر الْمُتَّصِلَة",
+      "umschrift": "adh-Dhamaʾir al-Muttasila",
+      "erklaerung": [
+        "Muttasıl zamirler asla tek başına durmaz, doğrudan başka bir kelimeye eklenir - bir fiile, bir isme veya bir harf-i cere. Hangi kelime türüne eklendiklerine göre farklı bir şey ifade ederler: bir fiile eklendiklerinde eylemin nesnesidirler; bir isme eklendiklerinde iyelik zamiridirler (işlev bakımından bir muzafun ileyh gibi, bkz. idafe maddesi); bir harf-i cere eklendiklerinde onun nesnesidirler.",
+        "Biçimlerin kendisi, hangi kelime türüne eklendiklerinden büyük ölçüde bağımsız olarak aynıdır (örn. her üç durumda da \"onlar/onlara/onların\" için ـهُمْ) - bir istisna, fiile eklendiğinde ـنِي (\"beni\") olan, isme ve harf-i cere eklendiğinde ise ـِي (\"benim\"/\"bana\") olan 1. tekil şahıstır.",
+        "Muttasıl zamirler asla kendi başlarına bir kelime oluşturmadıkları için, hâle göre de biçimlerini asla değiştirmezler - munfasıl zamirler gibi gramer açısından mebnidirler. Tam anlamları yalnızca eklendikleri kelimeden ve sonun kendisinde kodlanmış olan şahıs/cins/sayıdan ortaya çıkar."
+      ],
+      "erkennung": [
+        "Önünde kendine ait bir kelime boşluğu yoktur - bağlı olduğu kelimeyle aynı yazı kelimesinin parçasıdır.",
+        "Bir fiile eklendiğinde = eylemin nesnesi; bir isme eklendiğinde = iyelik zamiri (\"benim/senin/onun ...\"); bir harf-i cere eklendiğinde = onun nesnesi.",
+        "Bağlı olduğu kelimenin hâlinden bağımsız sabit, değişmez biçim - daha uzun bir kelimenin son bir ile üç harfi olarak örn. ـهُ, ـهَا, ـهُمْ, ـنَا, ـكَ, ـكُمْ ile tanınır."
+      ],
+      "belege": [
+        {
+          "sure": 1,
+          "vers": 6,
+          "wort": 1,
+          "zeigt": "Bir fiilde nesne olarak muttasıl zamir",
+          "warum": "ٱهْدِنَا, ٱهْدِ (\"hidayete erdir!\") emir kipinden ve eylemin nesnesi olan eklenmiş نَا (\"bizi\") zamirinden oluşur - ikisi boşluksuz tek bir yazı kelimesi oluşturur."
+        },
+        {
+          "sure": 2,
+          "vers": 5,
+          "wort": 5,
+          "zeigt": "Bir isimde iyelik zamiri olarak muttasıl zamir",
+          "warum": "رَّبِّهِمْ, رَبّ (\"Rab\") isminden ve burada gramer açısından muzafun ileyh rolünü üstlenen eklenmiş هِمْ (\"onların\") zamirinden oluşur - رَبِّهِمْ harfiyen \"onların Rabbi\" demektir."
+        }
+      ],
+      "lernen": [
+        "Muttasıl zamirleri tek bir örnek kelime üzerinden baştan sona öğren (örn. كِتَاب, \"kitap\") - her biçimi sırayla ekle ve sonucu sesli söyle.",
+        "Ardından fiildeki nesne eki (\"beni\" için ـنِي) ile isimdeki iyelik eki (\"benim\" için ـِي) arasındaki farkı özellikle çalış - farklı olan tek biçim budur.",
+        "Eklenmiş zamirli bir fiil veya isim listesinde Türkçe çeviriyi kapat ve anlamı yalnızca sondan çıkar.",
+        "Kur'an'da eklenmiş zamirli 5 kelime bul ve her birinde şunu belirle: bağlı olduğu kelime bir fiil mi, bir isim mi, yoksa bir harf-i cer mi - ve bu, zamirin işlevi için ne anlama gelir?"
+      ],
+      "tabellen": ["pronomen-gebunden"],
+      "siehe": ["pronomen-frei", "idafa", "mabni"]
+    },
+
+    "ism-ishara": {
+      "titel": "İşaret İsimleri (Esmâ-i İşaret)",
+      "ar": "أَسْمَاء الْإِشَارَة",
+      "umschrift": "Asmaʾ al-Ischara",
+      "erklaerung": [
+        "İşaret isimleri, Türkçedeki \"bu\" ve \"şu/o\" işaret zamirlerine karşılık gelir. Arapça burada tutarlı biçimde yakınlığa (هَـٰذَا dizisi, \"bu, buradaki\") ve uzaklığa (ذَٰلِكَ dizisi, \"o, oradaki\") göre ayrım yapar, buna ek olarak cinse ve sayıya göre de ayrım yapılır - yani \"bu\" için tek bir kelime değil, koca bir biçim dizisi vardır.",
+        "İşaret isimleri gramer açısından mebnidir: biçimleri hâlden bağımsız olarak aynı kalır. Ya tek başına özne olarak durabilirler (\"ذَٰلِكَ ٱلْكِتَٰبُ\" - \"İşte bu kitaptır\") ya da marife bir ismin önünde doğrudan sıfat olarak işlev görebilirler (\"هَـٰذَا ٱلرَّجُلُ\" - \"bu adam\"). Her iki durumda da izleyen isim her zaman marifedir (ال ile veya özel isim olarak).",
+        "Bir işaret ismi Kur'an'da çoğu zaman yalnızca mekânsal değil, mecazi olarak da kullanılır - örneğin daha önce zikredilmiş veya içerik olarak bilinen bir şeye işaret etmek için, Bakara Sûresi'nin başındaki ذَٰلِكَ ٱلْكِتَٰبُ ifadesinde olduğu gibi; burada \"bu/o\", mekânsal olarak yakın veya uzak bir nesneye değil, Kur'an'ın bütününe işaret eder."
+      ],
+      "erkennung": [
+        "Hâlden bağımsız sabit biçim (mebni) - kelime cümlede hangi rolü oynarsa oynasın değişen bir son ünlü yoktur.",
+        "Yakınlık dizisi هَـٰذَا/هَـٰذِهِ/هَـٰؤُلَاءِ unsuruyla; uzaklık dizisi ذَٰلِكَ/تِلْكَ/أُولَـٰئِكَ unsuruyla tanınır.",
+        "Cinse (müzekker/müennes) ve sayıya (müfred/müsennâ/cemi) göre ayrım yapar - çoğul biçimleri (هَـٰؤُلَاءِ, أُولَـٰئِكَ) her iki cins için de aynı şekilde geçerlidir."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 2,
+          "wort": 1,
+          "zeigt": "Uzaklık dizisinden müzekker müfred işaret ismi",
+          "warum": "ذَٰلِكَ ayeti açar ve Kur'an'a işaret eder (\"İşte bu/o kitaptır\") - değişen bir hâl sonu olmadan müzekker müfred."
+        },
+        {
+          "sure": 2,
+          "vers": 5,
+          "wort": 1,
+          "zeigt": "Uzaklık dizisinden çoğul işaret ismi",
+          "warum": "أُو۟لَٰٓئِكَ (\"işte onlar [orada]\") özne olarak yer alır ve daha önce tasvir edilen müttakîler topluluğuna işaret eder - korpusta cins ayrımı yapılmadan number: pl olarak işaretlenmiştir."
+        }
+      ],
+      "lernen": [
+        "Yakınlık ve uzaklık dizilerini karıştırmadan iki ayrı blok olarak öğren - önce tüm هَـٰذَا biçimleri, sonra tüm ذَٰلِكَ biçimleri.",
+        "İşaret isimleri tablosunun cins/sayı sütununu kapat ve söylenen özelliğe uygun biçimi hemen söyle (\"müennes, müsennâ, yakın\" → هَـٰتَانِ).",
+        "Okurken bir işaret ismi sıfat olarak kullanıldığında neredeyse her zaman ardından ال'lı marife bir ismin geldiğine dikkat et - bu, cümle yapısını hızlıca kavramana yardımcı olur.",
+        "Mecazi kullanımı özellikle ذَٰلِكَ ٱلْكِتَٰبُ üzerinde çalış: önce harfiyen mekânsal olarak çevir (\"oradaki o kitap\"), sonra içerik olarak (\"bu [size bildirilen] Kur'an\")."
+      ],
+      "tabellen": ["hinweiswoerter"],
+      "siehe": ["mabni", "asma-mawsula", "bestimmtheit"]
+    },
+
+    "asma-mawsula": {
+      "titel": "İsm-i Mevsuller (el-Esmâ'ül-Mevsûle)",
+      "ar": "الْأَسْمَاء الْمَوْصُولَة",
+      "umschrift": "al-Asmaʾ al-Mawsula",
+      "erklaerung": [
+        "İsm-i mevsuller bir ilgi (sıla) cümlesi başlatır ve Türkçedeki \"... olan\" ya da \"kendisi ... olan kimse\" ifadelerine karşılık gelir. En yaygın ve en bilineni, cins ve sayıya göre biçimleriyle birlikte ٱلَّذِي'dir (müzekker müfred) - ٱلَّتِي (müennes müfred), ٱلَّذِينَ (müzekker çoğul), ٱللَّاتِي/ٱللَّائِي (müennes çoğul) ve kendine ait müsennâ biçimleri.",
+        "İsm-i mevsulün kendisi gramer açısından mebnidir - cümleye göre sözdizimsel olarak farklı roller (özne, nesne, muzafun ileyh) üstlenebilse de biçimi hâlle değişmez. Ardından gelen sıla cümlesi, ism-i mevsule geri gönderme yapan bir bağlantı unsuru (âid) içermek zorundadır - bu genellikle sıla cümlesindeki fiile veya isme eklenmiş bir muttasıl zamirdir.",
+        "Özel bir durum, ٱلَّذِي'den farklı olarak sabit bir cins veya sayı taşımayan ve bu yüzden her kişi ya da şey ismi için aynı kalan \"genel\" ism-i mevsuller مَنْ (\"kim/... olan kimse\" - kişiler için) ve مَا (\"ne/... olan şey\" - şeyler için) oluşturur."
+      ],
+      "erkennung": [
+        "Hâlden bağımsız sabit biçim (mebni) - burada sıradan bir belirlilik harf-i tarifi değil, ism-i mevsulün kendisinin bir parçası olan öndeki ال ile birlikte ٱلَّذِي/ٱلَّتِي/ٱلَّذِينَ unsurundan tanınır.",
+        "Her zaman, ism-i mevsule geri gönderme yapan bir bağlantı unsuru (genellikle bir muttasıl zamir) içeren kendine ait bir (yan) cümle tarafından izlenir.",
+        "مَنْ ve مَا, sırasıyla kişiler ve şeyler için cinsten/sayıdan bağımsız biçimlerdir ve dış görünüş olarak ٱلَّذِي dizisinden farklıdır."
+      ],
+      "belege": [
+        {
+          "sure": 1,
+          "vers": 7,
+          "wort": 2,
+          "zeigt": "Müzekker çoğul ism-i mevsul",
+          "warum": "ٱلَّذِينَ, \"صِرَٰطَ ٱلَّذِينَ أَنْعَمْتَ عَلَيْهِمْ\" (\"kendilerine nimet verdiğin kimselerin yolu\") ifadesini başlatır - ardından gelen أَنْعَمْتَ عَلَيْهِمْ cümlesi, عَلَيْهِمْ ile ٱلَّذِينَ'e geri gönderme yapan bağlantı unsurunu içerir."
+        },
+        {
+          "sure": 114,
+          "vers": 5,
+          "wort": 1,
+          "zeigt": "Müzekker müfred ism-i mevsul",
+          "warum": "ٱلَّذِى, \"ٱلَّذِى يُوَسْوِسُ فِى صُدُورِ ٱلنَّاسِ\" (\"insanların göğüslerine vesvese veren\") ifadesini başlatır ve önceki ayetteki ٱلْخَنَّاسِ'ye işaret eder - 1:7'deki çoğul ٱلَّذِينَ'den farklı olarak müzekker müfred."
+        }
+      ],
+      "lernen": [
+        "ٱلَّذِي/ٱلَّتِي/ٱلَّذِينَ/ٱللَّاتِي biçimlerini önce cins ve sayıya göre sıralanmış olarak öğren - işaret isimlerindekiyle aynı tabloyu, ama sıla cümleleri için düşün.",
+        "Kur'an'da 3 sıla cümlesi bul ve her birinde yan cümledeki bağlantı unsurunu (genellikle eklenmiş bir zamir) işaretle - bu unsur olmadan Arapçada bir sıla cümlesi eksik kalır.",
+        "Ayrı ayrı çalış: kişiler için مَنْ, şeyler için مَا - ٱلَّذِي dizisinin aksine ikisi de asla değişmez.",
+        "Bir ism-i mevsul listesinin Türkçe çeviri sütununu kapat ve Arapçadan çevir, sonra tersini yap."
+      ],
+      "tabellen": ["relativpronomen"],
+      "siehe": ["mabni", "ism-ishara", "pronomen-gebunden"]
+    },
+
+    "ism-fail": {
+      "titel": "Etken Ortaç (İsm-i Fâil)",
+      "ar": "اِسْم الْفَاعِل",
+      "umschrift": "Ism al-Faʿil",
+      "erklaerung": [
+        "İsm-i fâil, \"eylemi gerçekleştiren kimse\"yi tanımlar - Türkçedeki \"-en/-an\" ekli etken ortaca (\"yazan\") veya bir meslek/failiyet ismine (\"yazar\") yaklaşık olarak karşılık gelir. Ana kalıpta (I. bab) sabit فَاعِل vezniyle kurulur, örneğin كَتَبَ (\"yazmak\") fiilinden كَاتِب (\"yazan/yazıcı\").",
+        "Türetilmiş fiil kiplerinde (II-X. bablar) her babın kendine ait ama yine sabit bir ism-i fâil kalıbı vardır; genellikle öndeki bir مُـ ve sondan bir önceki kök harfin altındaki bir kesra ile tanınır (örn. VIII. bab اِتَّقَى'dan, \"sakınmak/korunmak\", مُتَّقِي; IV. bab آمَنَ'dan, \"inanmak\", مُؤْمِن).",
+        "Kalıplar farklı olsa da temel anlam aynı kalır: eylemi gerçekleştiren kimse/şey. Gramer açısından ism-i fâil sıradan bir İsim gibi davranır: hâle göre çekimlenir (mu'rab), cins ve sayı biçimleri oluşturur, hem sıfat olarak (\"takva sahibi bir adam\") hem de isim olarak (\"muttakîler\" = bir kişi topluluğu) kullanılabilir - Kur'an'da çoğunlukla ٱلْمُتَّقِينَ veya ٱلْمُؤْمِنِينَ'de olduğu gibi ikinci, isimleşmiş işlevde."
+      ],
+      "erkennung": [
+        "Ana kalıp (I. bab): فَاعِل vezni (örn. كَاتِب, حَاسِد, غَاسِق).",
+        "Türetilmiş bablar (II-X): neredeyse her zaman öndeki مُـ ile ve sondan bir önceki kök harfin altında kesra (örn. VIII. bab مُتَّقِي, IV. bab مُؤْمِن, X. bab مُسْتَقِيم).",
+        "Her zaman \"eylemi gerçekleştiren kimse/şey\" anlamına gelir - şüphe hâlinde şu soruyu sor: Burada kim veya ne bir şey yapıyor?"
+      ],
+      "belege": [
+        {
+          "sure": 1,
+          "vers": 4,
+          "wort": 1,
+          "zeigt": "I. bab etken ortaç",
+          "warum": "مَٰلِكِ (\"Hükümdar/Sahip\") م-ل-ك kökünden فَاعِل veznini izler ve korpusta voice: active, derivation: activeParticiple olarak işaretlenmiştir - \"bir şeye hükmeden\" kimse."
+        },
+        {
+          "sure": 2,
+          "vers": 2,
+          "wort": 7,
+          "zeigt": "İsimleşmiş VIII. bab etken ortaç",
+          "warum": "لِلْمُتَّقِينَ (\"takva sahipleri için\"), VIII. bab اِتَّقَى fiilinin etken ortacıdır, korpusta derivation: activeParticiple, verbForm: 8 olarak işaretlenmiştir ve burada bir kişi topluluğunun adı olarak isim gibi kullanılmıştır."
+        },
+        {
+          "sure": 113,
+          "vers": 3,
+          "wort": 3,
+          "zeigt": "Nekre biçimde I. bab etken ortaç",
+          "warum": "غَاسِقٍ (\"karardıkça karanlık\" - çöken gece) da غ-س-ق kökünden فَاعِل veznini izler ve burada nekre olarak (kesreteyn tenvini) muzafun ileyh konumundadır."
+        }
+      ],
+      "lernen": [
+        "Türetilmiş bablara geçmeden önce önce temel فَاعِل veznini 3-4 bilinen örnekle (كَاتِب، عَالِم، حَاسِد) ezberle.",
+        "Zaten bildiğin her fiil babı (I-X) için uygun ism-i fâil kalıbını kendin oluştur ve bir listeyle karşılaştır - kalıplar aynı bab içinde güvenilir biçimde tekrarlanır.",
+        "Sıfat/isim farkını رَجُلٌ مُؤْمِنٌ (\"mümin bir adam\", sıfat) ile ٱلْمُؤْمِنُونَ (\"müminler\", isim) gibi çiftler üzerinde çalış - aynı kelime biçimi, iki işlev.",
+        "Bir fiil listesinde ism-i fâil sütununu kapat ve kontrol etmeden önce biçimi kendin oluştur."
+      ],
+      "tabellen": [],
+      "siehe": ["ism-maful", "masdar", "ism"]
+    },
+
+    "ism-maful": {
+      "titel": "Edilgen Ortaç (İsm-i Mef'ûl)",
+      "ar": "اِسْم الْمَفْعُول",
+      "umschrift": "Ism al-Mafʿul",
+      "erklaerung": [
+        "İsm-i mef'ûl, \"kendisi üzerinde eylemin gerçekleştirildiği kimse/şey\"i tanımlar - Türkçedeki edilgen ortaca (\"yazılmış olan\") karşılık gelir. Ana kalıpta (I. bab) sabit مَفْعُول vezniyle kurulur, örneğin كَتَبَ (\"yazmak\") fiilinden مَكْتُوب (\"yazılmış olan\").",
+        "Türetilmiş fiil kiplerinde (II-X. bablar) her babın kendine ait sabit bir kalıbı vardır; burada da genellikle öndeki مُـ vardır, ama sondan bir önceki kök harfin altında kesra yerine fetha bulunur - aynı babın etken ortacıyla arasındaki temel fark tam olarak bu tek ünlüdedir (örn. II. bab مُطَهَّر, \"temizlenmiş\", varsayımsal etken ortaç مُطَهِّر, \"temizleyen\" karşısında).",
+        "Etken ortaç gibi edilgen ortaç da gramer açısından kendine ait cins, sayı ve hâl biçimleri olan sıradan, çekimli (mu'rab) bir İsimdir ve hem sıfat olarak hem de isimleşmiş olarak kullanılabilir - Kur'an'da örneğin ٱلْمَغْضُوبِ'de (\"kendisine gazap edilen\") olduğu gibi bir eylemden etkilenenlerin adı olarak."
+      ],
+      "erkennung": [
+        "Ana kalıp (I. bab): مَفْعُول vezni (örn. مَغْضُوب, مَعْلُوم, مَخْلُوق).",
+        "Türetilmiş bablar (II-X): etken ortaçtaki gibi öndeki مُـ, ama sondan bir önceki kök harfin altında kesra yerine fetha (örn. II. bab مُطَهَّر).",
+        "Her zaman \"eylemin kendisi üzerinde gerçekleştirildiği kimse/şey\" anlamına gelir - şüphe hâlinde şu soruyu sor: Burada kim veya ne bir şeye maruz kalıyor?"
+      ],
+      "belege": [
+        {
+          "sure": 1,
+          "vers": 7,
+          "wort": 6,
+          "zeigt": "I. bab edilgen ortaç",
+          "warum": "ٱلْمَغْضُوبِ (\"kendisine gazap edilen\") غ-ض-ب kökünden مَفْعُول veznini izler ve korpusta voice: passive, derivation: passiveParticiple olarak işaretlenmiştir."
+        },
+        {
+          "sure": 2,
+          "vers": 25,
+          "wort": 31,
+          "zeigt": "Müennes II. bab edilgen ortaç",
+          "warum": "مُّطَهَّرَةٌ (\"tertemiz kılınmış [eşler]\"), II. bab طَهَّرَ (\"temizlemek\") fiilinin edilgen ortacıdır, korpusta derivation: passiveParticiple, verbForm: 2 olarak işaretlenmiştir - aynı babın etken ortacından farklı olarak, sondan bir önceki kök harfin altında kesra yerine fetha bulunan مُـ önekinden tanınır."
+        }
+      ],
+      "lernen": [
+        "Önce temel مَفْعُول veznini 3-4 bilinen örnekle ezberle, ardından bunu aynı fiildeki paralel فَاعِل etken kalıbıyla doğrudan karşılaştır.",
+        "Türetilmiş bablardaki tek belirleyici farkı iyice öğren: etken ortaç = kesra, edilgen ortaç = sondan bir önceki kök harfin altında fetha, geri kalanı aynı مُـ öneki.",
+        "Bildiğin 5 fiil için hem etken hem edilgen ortacı oluştur ve ünlü farkını duymak için her iki biçimi art arda sesli söyle.",
+        "Yeni karşılaştığın her ism-i mef'ûlü önce harfiyen \"kendisine [fiil] yapılan kimse/şey\" olarak çevir - bu, daha serbest bir çeviriye geçmeden önce doğru edilgen anlayışı zorunlu kılar."
+      ],
+      "tabellen": [],
+      "siehe": ["ism-fail", "masdar", "ism"]
+    },
+
+    "masdar": {
+      "titel": "Mastar (Fiil İsmi)",
+      "ar": "مَصْدَر",
+      "umschrift": "Masdar",
+      "erklaerung": [
+        "Mastar, bir fiilin şahıstan, cinsten, zamandan ve kipten arındırılmış saf temel fikrinin isim olarak ifadesidir - Türkçede en yakın karşılığı isimleşmiş mastar biçimidir (\"yazma\") veya fiille aynı kökü paylaşan bağımsız bir isimdir (\"yazı\"). Arap dilbilimciler geleneksel olarak mastarı, tam tersi değil, tüm fiil kiplerinin kendisinden türediği asıl köken olarak görürler.",
+        "Ana kalıpta (I. bab) mastar için tek bir sabit yapım kalıbı yoktur - her birinin kendine ait, çok düzenli bir mastar kalıbı olan türetilmiş bablardan (II-X) farklı olarak (örn. II. bab neredeyse her zaman تَفْعِيل, X. bab اِسْتِفْعَال). Bu yüzden I. bab fiillerin mastarı her fiil için ayrı ayrı öğrenilmelidir.",
+        "Gramer açısından bir mastar, sıradan, çekimli (mu'rab) bir İsimdir: hâl sonları taşır, marife veya nekre olabilir ve neredeyse her isim işlevinde ortaya çıkabilir - özne olarak, bir harf-i cerin nesnesi olarak veya bir mastarın nasb hâlinde bir eylemin gerekçesini bildirdiği özel \"gerekçe akuzatifi\" (mef'ûlün leh/li-eclihi) işlevinde, örneğin \"korkudan\" (حَذَرَ)."
+      ],
+      "erkennung": [
+        "Şahıs, zaman veya kip olmadan bir fiilin saf eylemini/fikrini isim olarak ifade eder - \"[fiil]-me/-ma\" biçiminde veya aynı kökten uygun bir isimle çevrilebilir.",
+        "I. babda: sabit bir kalıp yok, her fiil için ayrı öğrenilmelidir. II-X. bablarda: sabit, öngörülebilir kalıplar (örn. II. bab için تَفْعِيل, X. bab için اِسْتِفْعَال).",
+        "Sık sık nasb hâlinde bir gerekçe bildirimi olarak bulunur (\"... nedeniyle/... dolayısıyla\") - bu durumda harf-i cer olmadan doğrudan ana cümleden sonra gelir."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 15,
+          "wort": 6,
+          "zeigt": "Bir harf-i cerden sonra cerr nesnesi olarak mastar",
+          "warum": "طُغْيَٰنِهِمْ (\"onların azgınlığı/isyanı\"), طَغَى (\"haddi aşmak\") fiilinin mastarıdır ve burada فِى harf-i cerinin nesnesi olarak yer alır - korpusta derivation: verbalNoun olarak işaretlenmiştir."
+        },
+        {
+          "sure": 2,
+          "vers": 19,
+          "wort": 15,
+          "zeigt": "Gerekçe akuzatifi (mef'ûlün leh/li-eclihi) olarak mastar",
+          "warum": "حَذَرَ (\"korkudan\"), حَذِرَ (\"korkmak\") fiilinin mastarıdır ve bir eylemin gerekçesini bildirmek için (\"... ölüm korkusundan\") harf-i cer olmadan nasb hâlinde yer alır - korpusta derivation: verbalNoun, case: acc olarak işaretlenmiştir."
+        }
+      ],
+      "lernen": [
+        "Her yeni I. bab fiilinin mastarını baştan itibaren fiilin kendisiyle birlikte sabit bir çift olarak öğren (örn. طَغَى → طُغْيَان) - sonradan kalıp tahmin edilemez.",
+        "Buna karşılık II-X. bab mastar kalıplarını sabit kurallar olarak ezberle (II. bab: تَفْعِيل, III. bab: مُفَاعَلَة/فِعَال, IV. bab: إِفْعَال, V. bab: تَفَعُّل, VI. bab: تَفَاعُل, VII. bab: اِنْفِعَال, VIII. bab: اِفْتِعَال, X. bab: اِسْتِفْعَال) - burada tek tek ezberlemek yerine kuralı ezberlemek daha kazançlıdır.",
+        "Gerekçe akuzatifi işlevini özellikle çalış: harf-i cersiz nasb hâlinde 3 mastar biçimi bul ve kalıbı içselleştirmek için bunları deneme amaçlı \"... dolayısıyla/... yüzünden\" diye çevir.",
+        "Bir fiil listesinde mastar sütununu kapat ve biçimi kendin oluştur - ardından I. babda doğru tahmin mi ettiğini yoksa gerçekten mi bildiğini kontrol et."
+      ],
+      "tabellen": [],
+      "siehe": ["ism-fail", "ism-maful", "ism"]
+    }
+  }
+}

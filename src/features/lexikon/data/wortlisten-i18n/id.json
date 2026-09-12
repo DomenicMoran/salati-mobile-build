@@ -1,0 +1,992 @@
+{
+  "schema": 1,
+  "lang": "id",
+  "kapitel": {
+    "Kapitel 1 · Ism": "Bab 1 · Ism",
+    "Kapitel 2 · Fragmente": "Bab 2 · Fragmen",
+    "Kapitel 3 · Verben": "Bab 3 · Kata Kerja",
+    "Kapitel 4 · Sätze": "Bab 4 · Kalimat",
+    "Kapitel 5 · Morphologie – Sarf": "Bab 5 · Morfologi – Sarf",
+    "Kapitel 6 · Verschiedene Ausdrücke im Qur'an": "Bab 6 · Berbagai Ungkapan dalam Al-Qur'an",
+    "Kapitel 7 · Komplexe Sätze": "Bab 7 · Kalimat Kompleks",
+    "Kapitel 8 · Sarf – Fortgeschrittene Morphologie": "Bab 8 · Sarf – Morfologi Lanjutan",
+    "Kapitel 9 · Balagah – Die Rhetorik des Qur'ans": "Bab 9 · Balagah – Retorika Al-Qur'an"
+  },
+  "wortlisten": {
+    "wortliste-h1-ism-grundvokabular": {
+      "title": "Daftar Kosakata: Ism (Kosakata Dasar)",
+      "entries": [
+        "yang (m.)",
+        "ember",
+        "sumur",
+        "jiwa, diri, orang",
+        "neraka",
+        "langit",
+        "bumi",
+        "matahari",
+        "jalan",
+        "api",
+        "gelas",
+        "khamar",
+        "rumah",
+        "tongkat",
+        "perang",
+        "angin",
+        "kaum, bangsa",
+        "generasi",
+        "manusia",
+        "Tuhan",
+        "hari",
+        "tanda, ayat",
+        "semua, setiap",
+        "Rasul, utusan",
+        "azab, siksaan",
+        "sesuatu, hal",
+        "kitab, buku",
+        "kebenaran, hak",
+        "orang beriman",
+        "surga, taman",
+        "kasih sayang, rahmat",
+        "tangan",
+        "mata, sumber",
+        "Allah",
+        "pemilik"
+      ]
+    },
+    "wortliste-h12-fragmente-teil1": {
+      "title": "Daftar Kosakata: Fragmen, Bagian 1",
+      "entries": [
+        "dari",
+        "kepada, menuju, sampai",
+        "tentang, dari",
+        "di atas, tentang",
+        "di, di dalam",
+        "sampai",
+        "dengan, melalui, pada",
+        "seperti",
+        "untuk, bagi",
+        "demi (sumpah)",
+        "demi (sumpah)",
+        "sesungguhnya, pasti",
+        "sesungguhnya, bahwa",
+        "seakan-akan",
+        "tetapi, namun",
+        "seandainya",
+        "semoga, agar",
+        "ini (m.)",
+        "ini (f.)",
+        "itu (m.)",
+        "itu (f.)",
+        "ini (jamak)",
+        "itu (jamak)",
+        "tidak, bukan",
+        "jika",
+        "sungguh, sudah, mungkin",
+        "dan",
+        "setelah",
+        "sebelum",
+        "di bawah",
+        "di atas",
+        "sekitar",
+        "antara",
+        "di belakang",
+        "di belakang",
+        "bersama",
+        "di sisi",
+        "kecuali, sebagai ganti",
+        "tanpa, tidak-"
+      ]
+    },
+    "wortliste-h13-fragmente-teil2": {
+      "title": "Daftar Kosakata: Fragmen, Bagian 2",
+      "entries": [
+        "sebagian dari",
+        "yang mana dari",
+        "khususnya dari",
+        "cahaya",
+        "Israel",
+        "Nuh",
+        "kata",
+        "balasan, ganjaran",
+        "kedamaian",
+        "Mahasuci, Mahatinggi",
+        "laut",
+        "celaka",
+        "besar",
+        "sekutu, mitra",
+        "nama",
+        "izin",
+        "muslim, orang yang berserah diri",
+        "perhitungan",
+        "gunung",
+        "mati, orang mati",
+        "orang yang berbuat baik",
+        "yang makruf, yang baik",
+        "kesesatan, penyesatan",
+        "lurus (jalan)",
+        "pendurhaka",
+        "dosa",
+        "kekuasaan, wewenang, bukti",
+        "lebih baik, terbaik",
+        "bersujud",
+        "kenikmatan, kesenangan",
+        "waktu, saat",
+        "lupa",
+        "dosa",
+        "penolong",
+        "berselisih, berbeda",
+        "utusan, yang diutus",
+        "Maryam (Maria)",
+        "godaan, ujian"
+      ]
+    },
+    "wortliste-h27-verben-grundvokabular": {
+      "title": "Daftar Kosakata: Kata Kerja (Kosakata Dasar)",
+      "entries": [
+        "beriman, percaya",
+        "mengetahui",
+        "membuat, melakukan",
+        "mengingkari, tidak percaya",
+        "membuat, melakukan",
+        "menciptakan",
+        "menurunkan",
+        "mendustakan",
+        "mengirim, mengutus",
+        "mengambil",
+        "bahwa",
+        "tidak (akan)",
+        "agar, supaya",
+        "tidak (lampau)",
+        "ketika, belum",
+        "dan",
+        "maka hendaknya",
+        "datang",
+        "memberi",
+        "melihat",
+        "menginginkan, mengharapkan",
+        "menyeru, mengajak, berdoa",
+        "bertakwa, takut",
+        "memberi petunjuk, membimbing",
+        "mengabdi, menyembah",
+        "mengeluarkan, mengusir",
+        "makan, memakan",
+        "berbuat, melakukan",
+        "memandang, melihat",
+        "mengingat, menyebut",
+        "membunuh",
+        "takut, merasa takut",
+        "kembali",
+        "berpaling",
+        "mendengar"
+      ]
+    },
+    "wortliste-h37-saetze-teil1": {
+      "title": "Daftar Kosakata: Kalimat, Bagian 1",
+      "entries": [
+        "berkata",
+        "Wahai",
+        "menginginkan",
+        "mengikuti",
+        "berbuat zalim",
+        "mengambil",
+        "bertanya",
+        "menemukan",
+        "Mahakuasa",
+        "menjadi, adalah",
+        "tidak menjadi, bukan",
+        "tetap, tinggal",
+        "menjadi",
+        "lebih baik, kebaikan",
+        "perintah, urusan, perkara",
+        "yang mengetahui, berilmu",
+        "orang kafir",
+        "pemilik, yang memiliki",
+        "akhir, akhirat, generasi mendatang",
+        "Tuhan, Ilah",
+        "Musa",
+        "hati",
+        "orang zalim",
+        "keluarga",
+        "jelas, terang",
+        "penyayang",
+        "dunia (kehidupan dunia)",
+        "besar, agung",
+        "upah, pahala, mahar",
+        "bijaksana",
+        "agama, keyakinan, hari pembalasan",
+        "perkataan, ucapan",
+        "Maha Pengampun",
+        "iblis, setan",
+        "perumpamaan, contoh"
+      ]
+    },
+    "wortliste-h38-saetze-teil2": {
+      "title": "Daftar Kosakata: Kalimat, Bagian 2",
+      "entries": [
+        "mengejar, mendambakan",
+        "berdiri, bangkit",
+        "kelompok, golongan",
+        "haram, tidak boleh diganggu",
+        "orang yang merugi",
+        "zakat, sedekah",
+        "keturunan",
+        "mencukupi",
+        "pendusta",
+        "melarang, mencegah",
+        "akhir, akibat, kesudahan",
+        "berpaling",
+        "di mana, tempat di mana",
+        "lebih kuat, lebih dahsyat",
+        "berguna, bermanfaat",
+        "perbuatan baik, kebaikan",
+        "satu (tunggal, f.)",
+        "baik, suci (f.)",
+        "satu, tunggal",
+        "kekuatan, daya",
+        "Aad (kaum)",
+        "semoga, mudah-mudahan",
+        "keburukan, kejahatan",
+        "para pembesar, para pemuka",
+        "menetap, tinggal",
+        "mulia, dermawan",
+        "melihat, memandang",
+        "perjanjian, janji",
+        "bala tentara, pasukan",
+        "singgasana, Arasy",
+        "laki-laki",
+        "abadi, tidak pernah",
+        "sihir",
+        "masjid, tempat sujud",
+        "takdir, tempat kembali"
+      ]
+    },
+    "wortliste-h53-sarf-grundvokabular": {
+      "title": "Daftar Kosakata: Morfologi – Sarf (Kosakata Dasar)",
+      "entries": [
+        "masuk",
+        "memberi pahala, membalas",
+        "menaati",
+        "mewahyukan",
+        "menyekutukan",
+        "melempar, mencampakkan, menimpa, menawarkan",
+        "berjanji",
+        "menafkahkan, membelanjakan",
+        "mengampuni",
+        "menyesatkan",
+        "menimpa, mengenai",
+        "mencintai, menyukai",
+        "bertobat",
+        "menurunkan, mewahyukan",
+        "memperoleh, mengusahakan",
+        "memberi rezeki, memberi",
+        "membaca, mengikuti",
+        "menolong",
+        "memutuskan, menghakimi",
+        "bersabar",
+        "mengalir",
+        "menyentuh",
+        "memukul, menempatkan",
+        "menegakkan, menunaikan",
+        "berperang, berjuang",
+        "keluar",
+        "tersesat",
+        "membangkitkan, mengutus",
+        "menghidupkan",
+        "membinasakan",
+        "mengingat, mengambil pelajaran",
+        "mengada-ada (kebohongan)",
+        "meninggikan, menambah",
+        "memahami, merenungkan",
+        "menulis, mewajibkan"
+      ]
+    },
+    "wortliste-h54-verschiedene-ausdruecke": {
+      "title": "Daftar Kosakata: Berbagai Ungkapan dalam Al-Qur'an",
+      "entries": [
+        "atau",
+        "lalu, kemudian",
+        "lalu (langsung)",
+        "bahkan, melainkan",
+        "siapa",
+        "apa",
+        "apa",
+        "kapan",
+        "di mana",
+        "seperti",
+        "kata tanya ya/tidak",
+        "kata tanya ya/tidak",
+        "alangkah indahnya",
+        "alangkah buruknya",
+        "alangkah hebatnya",
+        "alangkah jeleknya",
+        "seandainya (pengandaian)",
+        "bahwa (dengan kalimat nominal)",
+        "ketika, dahulu (lampau)",
+        "kecuali",
+        "atau",
+        "seandainya tidak, mengapa tidak",
+        "adapun …",
+        "akan (partikel masa depan)",
+        "sekali-kali tidak, tidak",
+        "bahkan, tentu saja"
+      ]
+    },
+    "wortliste-h58-komplexe-saetze-teil1": {
+      "title": "Daftar Kosakata: Kalimat Kompleks, Bagian 1",
+      "entries": [
+        "orang-orang yang (m. jamak)",
+        "dia, ia",
+        "mereka (m. jamak)",
+        "malaikat",
+        "pelindung, penolong",
+        "harta, kekayaan",
+        "karunia, kasih sayang, rahmat",
+        "malam",
+        "shalat, doa",
+        "pertama, terdahulu",
+        "anak-anak, keturunan",
+        "kebanyakan",
+        "penghuni, para sahabat",
+        "pasangan, jodoh",
+        "kehidupan",
+        "nabi",
+        "saudara laki-laki",
+        "kekal",
+        "Fir'aun",
+        "saleh",
+        "seseorang, siapa pun",
+        "alam, seluruh alam",
+        "pedih",
+        "wajah",
+        "manusia",
+        "bukti, tanda yang jelas",
+        "sedikit",
+        "kebangkitan",
+        "Al-Qur'an",
+        "Ibrahim (Abraham)",
+        "rumah",
+        "kanan, sisi kanan",
+        "kaum, bangsa, umat, komunitas agama",
+        "leluhur, bapak-bapak",
+        "banyak"
+      ]
+    },
+    "wortliste-h59-komplexe-saetze-teil2": {
+      "title": "Daftar Kosakata: Kalimat Kompleks, Bagian 2",
+      "entries": [
+        "memperbaiki, mendamaikan",
+        "ampunan",
+        "mengabulkan, menjawab",
+        "perempuan beriman",
+        "bagaimana, dari mana",
+        "laki-laki (jamak)",
+        "mengasihani, menyayangi",
+        "berguna, mencukupkan",
+        "berita, perkataan, hadis",
+        "sama, sama saja",
+        "memaafkan, mengampuni",
+        "pintu, gerbang",
+        "lalai",
+        "mendahulukan, mempersembahkan",
+        "berhasil, beruntung",
+        "berjuang, bersungguh-sungguh (jihad)",
+        "tempat",
+        "orang munafik",
+        "bulan",
+        "Yusuf",
+        "Lut (Lot)",
+        "rasa takut, kekhawatiran",
+        "batil, salah, kepalsuan",
+        "keluarga, kerabat dari",
+        "api neraka, neraka",
+        "kesaksian",
+        "seluruhnya, semuanya",
+        "dekat",
+        "menjadikan indah, menghiasi",
+        "istri dari, istri",
+        "tipu daya, muslihat",
+        "Thamud (kaum)",
+        "menyadari, merasakan",
+        "berlalu, lewat",
+        "perjanjian, janji teguh"
+      ]
+    },
+    "wortliste-h164-sarf-fortgeschritten": {
+      "title": "Daftar Kosakata: Sarf – Morfologi Lanjutan",
+      "entries": [
+        "mengira, menduga",
+        "bersyukur",
+        "mengabarkan, memberitahukan",
+        "menghakimi, memutuskan",
+        "membiarkan, meninggalkan",
+        "memperingatkan",
+        "menyaksikan",
+        "menyangka, meyakini",
+        "memanggil, menyeru",
+        "memiliki",
+        "memuji, bertasbih",
+        "mampu, sanggup",
+        "dimasukkan",
+        "membawa, memikul",
+        "menyiksa, mengazab",
+        "membiarkan, meninggalkan",
+        "menyombongkan diri",
+        "mendapat petunjuk",
+        "menunjukkan",
+        "takut",
+        "mencapai, sampai",
+        "memohon ampun",
+        "bertawakal (kepada Allah)",
+        "meninggal, mati",
+        "melarang, mengharamkan",
+        "menerima kabar gembira",
+        "rida, berkenan",
+        "menyedihkan, membuat sedih",
+        "menyelamatkan",
+        "mengumpulkan",
+        "mencegah, menghalangi",
+        "menolak, mengembalikan",
+        "merasakan",
+        "pergi, berangkat",
+        "berdiri tegak, bangkit"
+      ]
+    },
+    "wortliste-h185-balagah-vokabular": {
+      "title": "Daftar Kosakata: Balagah – Retorika Al-Qur'an",
+      "entries": [
+        "Adam",
+        "Isa (Yesus)",
+        "dosa, kesalahan",
+        "jauh",
+        "kekuatan, kekuasaan, kesengsaraan",
+        "menetapkan, menentukan, mampu",
+        "lidah, bahasa",
+        "durhaka, melampaui batas",
+        "berdebat, bertengkar",
+        "(hanya) Engkau (partikel penegas)",
+        "hampir melakukan, hampir",
+        "makanan",
+        "hidup",
+        "betina, perempuan",
+        "lebih besar, paling besar",
+        "mewafatkan, mematikan",
+        "kaya, tidak butuh",
+        "kelompok, bagian",
+        "wakil, pemegang amanah",
+        "pertemuan, perjumpaan",
+        "kegelapan",
+        "tujuh",
+        "menyelamatkan",
+        "yang bersujud",
+        "menukar, mengubah",
+        "anak yatim",
+        "orang yang membutuhkan, orang miskin",
+        "melaknat",
+        "kapal, bahtera",
+        "menguji, menggoda",
+        "peringatan, pengingat",
+        "mengangkat, meninggikan",
+        "berserah diri, menyerahkan diri",
+        "berharap, mengharapkan",
+        "menganugerahkan, memberikan"
+      ]
+    },
+    "wortliste-h20-besondere-mudhaafs": {
+      "title": "Daftar Partikel: Mudhaf Khusus",
+      "entries": [
+        "setelah",
+        "sebelum",
+        "di bawah",
+        "di atas",
+        "sekitar",
+        "antara",
+        "di belakang",
+        "di belakang",
+        "bersama",
+        "di sisi",
+        "kecuali, sebagai ganti",
+        "tanpa, tidak-",
+        "semua, seluruh dari, setiap",
+        "sebagian dari",
+        "yang mana dari",
+        "khususnya dari"
+      ],
+      "beispiele": [
+        "segala sesuatu / semuanya",
+        "setelah itu (harfiah: setelah ini)",
+        "bersama orang-orang yang sabar"
+      ]
+    },
+    "wortliste-h21-harf-jarr": {
+      "title": "Daftar Partikel: Huruf Jar (Preposisi)",
+      "entries": [
+        "bersama",
+        "di, di dalam",
+        "aku bersumpah demi (hanya dengan اللَّه, jarang dipakai)",
+        "di atas",
+        "seperti",
+        "di atas",
+        "untuk",
+        "sampai",
+        "(aku bersumpah) demi",
+        "kepada",
+        "dari"
+      ]
+    },
+    "wortliste-h22-harf-nasb": {
+      "title": "Daftar Partikel: Huruf Nashab dan Maknanya",
+      "entries": [
+        "sesungguhnya",
+        "bahwa",
+        "seakan-akan",
+        "seandainya saja",
+        "tetapi, namun",
+        "supaya, semoga, mudah-mudahan"
+      ]
+    },
+    "wortliste-h56-fragewoerter-uebersicht": {
+      "title": "Daftar Partikel: Kata Tanya yang Sering Digunakan",
+      "entries": [
+        "Siapa",
+        "Apa",
+        "Kapan",
+        "Di mana",
+        "Mengapa",
+        "Bagaimana",
+        "Yang mana",
+        "Digunakan untuk pertanyaan ya/tidak"
+      ],
+      "beispiele": [
+        "Siapa yang belajar?",
+        "Apakah Zaynab belajar?",
+        "Kapan Zaynab belajar?",
+        "Di mana Zaynab belajar?",
+        "Mengapa Zaynab belajar?",
+        "Bagaimana Zaynab belajar?",
+        "Apa yang dipelajari Zaynab?",
+        "Di sekolah mana Zaynab belajar?"
+      ]
+    },
+    "wortliste-h184-balagah-vokabular-teil1": {
+      "title": "Daftar Kosakata: Balagah – Retorika Al-Qur'an (Bagian 1)",
+      "entries": [
+        "anak laki-laki, putra",
+        "saleh (f.), perbuatan baik",
+        "jujur, benar",
+        "perempuan (jamak)",
+        "perbuatan buruk, kejahatan",
+        "pemberi peringatan",
+        "Yang Maha Pengasih",
+        "kota, desa",
+        "siang (waktu siang hari)",
+        "saksi",
+        "anak, putra",
+        "perkasa, kuat",
+        "sungai",
+        "semua, keseluruhan",
+        "batas waktu, waktu yang ditetapkan",
+        "pendosa, penjahat",
+        "Maha Melihat",
+        "kematian",
+        "musuh",
+        "karunia, nikmat",
+        "bahaya, keburukan",
+        "orang yang bertakwa",
+        "yang gaib",
+        "yang paling mengetahui",
+        "penglihatan, pandangan",
+        "saat (kiamat), jam",
+        "Maha Mendengar",
+        "ayah",
+        "jalan",
+        "Mahakuasa",
+        "iman",
+        "Maha Mengenal",
+        "penyembah berhala, musyrik",
+        "dada",
+        "puji, pujian"
+      ]
+    }
+  },
+  "beispielsatzlisten": {
+    "beispielsatzliste-h55-verbindungsbuchstaben": {
+      "title": "Daftar Huruf Penghubung (Harf al-'Atf)",
+      "entries": [
+        {
+          "beschreibung": "dan, menghubungkan dua unsur",
+          "beispiel": "Sesungguhnya Allah dan para malaikat-Nya bershalawat kepada Nabi."
+        },
+        {
+          "beschreibung": "atau",
+          "beispiel": "Maka mereka menjadi seperti batu, atau bahkan lebih keras."
+        },
+        {
+          "beschreibung": "kemudian (durasi lebih lama)",
+          "beispiel": "Bagaimana mungkin kalian mengingkari Allah, padahal kalian dahulu mati lalu Dia menghidupkan kalian, kemudian Dia akan mematikan kalian, lalu menghidupkan kalian kembali."
+        },
+        {
+          "beschreibung": "lalu/segera",
+          "beispiel": "Lalu Dia membentukmu dan menyempurnakanmu."
+        },
+        {
+          "beschreibung": "bahkan/sebaliknya",
+          "beispiel": "Dan mereka berkata: Allah telah mengambil seorang anak. Mahasuci Dia! Bahkan milik-Nyalah apa yang ada di langit."
+        },
+        {
+          "beschreibung": "namun",
+          "beispiel": "Namun orang-orang zalim pada hari ini berada dalam kesesatan yang nyata."
+        }
+      ]
+    },
+    "beispielsatzliste-h166-istifham-partikel": {
+      "title": "Istifham (Partikel Tanya) dengan Contoh-Contoh dari Al-Qur'an",
+      "entries": [
+        {
+          "beschreibung": "Apakah",
+          "beispiel": "Apakah kalian yang lebih mengetahui ataukah Allah?"
+        },
+        {
+          "beschreibung": "Apakah",
+          "beispiel": "Apakah kalian memiliki pengetahuan yang pasti?"
+        },
+        {
+          "beschreibung": "Apa",
+          "beispiel": "Dan apakah itu di tangan kananmu, wahai Musa?"
+        },
+        {
+          "beschreibung": "Siapa",
+          "beispiel": "Siapakah yang lebih kuat kekuasaannya daripada kami?"
+        },
+        {
+          "beschreibung": "Kapan",
+          "beispiel": "Kapankah janji ini akan terjadi?"
+        },
+        {
+          "beschreibung": "Kapan",
+          "beispiel": "Kapankah hari pembalasan itu?"
+        },
+        {
+          "beschreibung": "Bagaimana",
+          "beispiel": "Bagaimana Engkau menghidupkan orang yang telah mati?"
+        },
+        {
+          "beschreibung": "Di mana",
+          "beispiel": "Di manakah mereka yang kalian anggap sebagai sekutu?"
+        },
+        {
+          "beschreibung": "Bagaimana",
+          "beispiel": "Bagaimana mungkin ia berkuasa atas kami?"
+        },
+        {
+          "beschreibung": "Dari mana",
+          "beispiel": "Wahai Maryam, dari mana engkau mendapatkan ini?"
+        },
+        {
+          "beschreibung": "Berapa lama",
+          "beispiel": "Berapa lama kalian tinggal (di sana)?"
+        },
+        {
+          "beschreibung": "Yang mana",
+          "beispiel": "Kelompok manakah di antara keduanya yang lebih baik kedudukannya?"
+        }
+      ]
+    }
+  },
+  "ablaufschemata": {
+    "ablaufschema-h14-gliederung-der-sprache": {
+      "title": "Struktur Bahasa (Kalam)",
+      "schritte": [
+        "Bahasa (Kalam) terbagi menjadi tiga unsur dasar.",
+        "Kalimat (Jumal)",
+        "Fragmen — tema bab ini, antara lain Idhafah, Huruf Jar, Huruf Nashab, mausuf-sifat, Isim Isyarah",
+        "Kata (jenis-jenis kata tersendiri: Ism, Fi'il, Harf)"
+      ]
+    },
+    "ablaufschema-h39-mubtada-chabar": {
+      "title": "Dari Mubtada ke Khabar (Kalimat Nominal)",
+      "schritte": [
+        "Mubtada — topik/subjek sebuah kalimat nominal (kalimat ismiyah)",
+        "Pertanyaan antara: Ada apa dengan Mubtada?",
+        "Khabar — pernyataan tentang Mubtada"
+      ],
+      "beispiel": "Allah (Mubtada) adalah Yang Mahakekal, tempat bergantung segala sesuatu (Khabar) — Surah Al-Ikhlas 112:2."
+    }
+  },
+  "vergleichstabellen": {
+    "vergleichstabelle-h165-satzklassifikation": {
+      "title": "Contoh Klasifikasi Kalimat dalam Balagha",
+      "columns": {
+        "satz": "Kalimat",
+        "klassifikation": "Klasifikasi"
+      }
+    },
+    "vergleichstabelle-h167-tashbih-quran-licht": {
+      "title": "Contoh Tashbih: Al-Qur'an seperti Cahaya",
+      "columns": {
+        "mushabbah": "Mushabbah",
+        "adat": "Adat at-Tashbih",
+        "mushabbahBihi": "Mushabbah bihi",
+        "wajh": "Wajh ash-Shabah"
+      }
+    },
+    "vergleichstabelle-h168-tashbih-mufassal-wasser": {
+      "title": "Tashbih Mufassal: Air seperti Logam Leleh",
+      "columns": {
+        "mushabbah": "Mushabbah",
+        "adat": "Adat",
+        "mushabbahBihi": "Mushabbah bihi",
+        "wajh": "Wajh ash-Shabah"
+      }
+    },
+    "vergleichstabelle-h169-tashbih-maqlub": {
+      "title": "Tashbih Maqlub (perbandingan terbalik): Perdagangan dan Riba",
+      "columns": {
+        "form": "Bentuk",
+        "mushabbah": "Mushabbah",
+        "adat": "Adat",
+        "mushabbahBihi": "Mushabbah bihi"
+      },
+      "rows": {
+        "original": "Asli",
+        "umgekehrt": "Terbalik"
+      },
+      "cells": {
+        "original": {
+          "form": "Asli"
+        },
+        "umgekehrt": {
+          "form": "Terbalik"
+        }
+      }
+    },
+    "vergleichstabelle-h170-tashbih-dimni": {
+      "title": "Tashbih Dimni (perbandingan implisit): Engkau dan Kasturi",
+      "columns": {
+        "mushabbah": "Mushabbah",
+        "adat": "Adat",
+        "mushabbahBihi": "Mushabbah bihi",
+        "wajh": "Wajh ash-Shabah"
+      },
+      "cells": {
+        "r1": {
+          "wajh": "(implisit)"
+        }
+      }
+    },
+    "vergleichstabelle-h171-tashbih-arten-zusammenfassung": {
+      "title": "Ringkasan Jenis-Jenis Tashbih",
+      "columns": {
+        "art": "Jenis",
+        "wajh": "Wajh ash-Shabah",
+        "adat": "Adat",
+        "beispiel": "Contoh"
+      },
+      "cells": {
+        "mufassalMursal": {
+          "art": "Mufassal Mursal",
+          "wajh": "disebutkan",
+          "adat": "disebutkan"
+        },
+        "mujmalMursal": {
+          "art": "Mujmal Mursal",
+          "wajh": "tidak disebutkan",
+          "adat": "disebutkan"
+        },
+        "mufassalMuakkad": {
+          "art": "Mufassal Mu'akkad",
+          "wajh": "disebutkan",
+          "adat": "tidak disebutkan"
+        },
+        "baligh": {
+          "art": "Baligh",
+          "wajh": "tidak disebutkan",
+          "adat": "tidak disebutkan"
+        }
+      }
+    },
+    "vergleichstabelle-h172-alaqa-licht-prophet": {
+      "title": "Contoh 'Alaqa: Cahaya sebagai Metafora bagi Nabi",
+      "columns": {
+        "woertlich": "Makna Harfiah",
+        "alaqa": "'Alaqa",
+        "metaphorisch": "Makna Metaforis"
+      },
+      "cells": {
+        "r1": {
+          "woertlich": "Cahaya",
+          "alaqa": "Tashbih",
+          "metaphorisch": "Nabi"
+        }
+      }
+    },
+    "vergleichstabelle-h173-istiara-musarraha-koran": {
+      "title": "Isti'ara Musarraha: Kegelapan dan Cahaya",
+      "columns": {
+        "mushabbah": "Mushabbah",
+        "adat": "Adat at-Tashbih",
+        "mushabbahBihi": "Mushabbah bihi",
+        "mustaar": "Musta'ar",
+        "wajh": "Wajh ash-Shabah"
+      },
+      "cells": {
+        "r1": {
+          "mustaar": "-",
+          "wajh": "-"
+        },
+        "r2": {
+          "mustaar": "-",
+          "wajh": "-"
+        }
+      }
+    },
+    "vergleichstabelle-h174-istiara-asliyya-tabaiyya": {
+      "title": "Isti'ara Asliyya vs. Isti'ara Taba'iyya",
+      "columns": {
+        "asliyya": "Isti'ara Asliyya",
+        "tabaiyya": "Isti'ara Taba'iyya"
+      },
+      "cells": {
+        "uebersetzung": {
+          "asliyya": "Singa itu berpidato",
+          "tabaiyya": "Sang orator itu mengaum"
+        }
+      }
+    },
+    "vergleichstabelle-h175-istiara-sterne-perlen": {
+      "title": "Contoh Isti'ara: Bintang-bintang seperti Mutiara pada Seutas Benang",
+      "columns": {
+        "mushabbah": "Mushabbah",
+        "adat": "Adat at-Tashbih",
+        "mushabbahBihi": "Mushabbah bihi",
+        "wajh": "Wajh ash-Shabah"
+      },
+      "cells": {
+        "r1": {
+          "wajh": "-"
+        }
+      }
+    },
+    "vergleichstabelle-h176-istiara-mulaim-loewe": {
+      "title": "Isti'ara dengan Mula'im: Pria Pemberani sebagai Singa",
+      "columns": {
+        "mushabbah": "Mushabbah",
+        "mushabbahBihi": "Mushabbah bihi",
+        "wajh": "Wajh ash-Shabah",
+        "mulaim": "Mula'im al-Mushabbah bihi"
+      },
+      "cells": {
+        "r1": {
+          "mushabbah": "pria pemberani",
+          "mushabbahBihi": "singa",
+          "wajh": "-",
+          "mulaim": "Raungan"
+        }
+      }
+    },
+    "vergleichstabelle-h177-alaqa-sababiyya": {
+      "title": "'Alaqa Sababiyya: Lidah dan Tangan sebagai Sebab",
+      "columns": {
+        "woertlich": "Makna Harfiah",
+        "alaqa": "'Alaqa",
+        "metaphorisch": "Makna Metaforis"
+      },
+      "cells": {
+        "r1": {
+          "woertlich": "Lidah dan Tangan",
+          "alaqa": "Sababiyya",
+          "metaphorisch": "Kata-kata dan Perbuatan"
+        }
+      }
+    },
+    "vergleichstabelle-h178-alaqa-musabbabiyya": {
+      "title": "'Alaqa Musabbabiyya: Rezeki sebagai Akibat Hujan",
+      "columns": {
+        "woertlich": "Makna Harfiah",
+        "alaqa": "'Alaqa",
+        "metaphorisch": "Makna Metaforis"
+      },
+      "cells": {
+        "r1": {
+          "woertlich": "Rezeki",
+          "alaqa": "Musabbabiyya",
+          "metaphorisch": "Hujan"
+        }
+      }
+    },
+    "vergleichstabelle-h179-alaqa-kulliyya": {
+      "title": "'Alaqa Kulliyya: Jari untuk Ujung Jari",
+      "columns": {
+        "woertlich": "Makna Harfiah",
+        "alaqa": "'Alaqa",
+        "metaphorisch": "Makna Metaforis"
+      },
+      "cells": {
+        "r1": {
+          "woertlich": "Jari",
+          "alaqa": "Kulliyya",
+          "metaphorisch": "Ujung Jari"
+        }
+      }
+    },
+    "vergleichstabelle-h180-alaqa-juziyya": {
+      "title": "'Alaqa Juz'iyya: Leher untuk Budak",
+      "columns": {
+        "woertlich": "Makna Harfiah",
+        "alaqa": "'Alaqa",
+        "metaphorisch": "Makna Metaforis"
+      },
+      "cells": {
+        "r1": {
+          "woertlich": "Leher",
+          "alaqa": "Juz'iyya",
+          "metaphorisch": "Budak"
+        }
+      }
+    },
+    "vergleichstabelle-h181-alaqa-itibar-ma-kana": {
+      "title": "'Alaqa I'tibar ma kana: Yatim sebagai Mantan Yatim",
+      "columns": {
+        "woertlich": "Makna Harfiah",
+        "alaqa": "'Alaqa",
+        "metaphorisch": "Makna Metaforis"
+      },
+      "cells": {
+        "r1": {
+          "woertlich": "Anak yatim",
+          "alaqa": "I'tibar ma kana",
+          "metaphorisch": "Orang dewasa yang dahulu yatim"
+        }
+      }
+    },
+    "vergleichstabelle-h182-alaqa-itibar-ma-yakun": {
+      "title": "'Alaqa I'tibar ma yakun: Khamar sebagai Khamar Masa Depan",
+      "columns": {
+        "woertlich": "Makna Harfiah",
+        "alaqa": "'Alaqa",
+        "metaphorisch": "Makna Metaforis"
+      },
+      "cells": {
+        "r1": {
+          "woertlich": "Khamar",
+          "alaqa": "I'tibar ma yakun",
+          "metaphorisch": "Buah anggur"
+        }
+      }
+    },
+    "vergleichstabelle-h183-alaqa-muqaraba": {
+      "title": "'Alaqa Muqaraba: Dekat dengan Kekufuran",
+      "columns": {
+        "woertlich": "Makna Harfiah",
+        "alaqa": "'Alaqa",
+        "metaphorisch": "Makna Metaforis"
+      },
+      "cells": {
+        "r1": {
+          "woertlich": "Menjadi kafir",
+          "alaqa": "Muqaraba",
+          "metaphorisch": "Mendekati kekufuran"
+        }
+      }
+    }
+  }
+}

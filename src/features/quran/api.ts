@@ -450,12 +450,23 @@ export function parseWordByWordResponse(j: QuranComWordsResponse): QuranWord[][]
   );
 }
 
-/** Wort-für-Wort-Daten einer ganzen Sure (Index = Ayah-Reihenfolge). */
+/**
+ * Anfrage-URL der Wortliste einer Sure. Exportiert, weil der Datei-Cache
+ * (./wortliste.ts) sie mit ablegt: ändern sich `word_fields` oder `per_page`,
+ * passt eine ältere Datei nicht mehr zur Anfrage und muss verfallen. Bewusst
+ * OHNE Übersetzungs-Edition und ohne Rezitator — beides beeinflusst diese
+ * Antwort nicht (Wort-Bedeutung immer englisch, `audio_url` immer dieselben
+ * Einzelwort-Dateien unter WORD_AUDIO_BASE).
+ */
+export function wordByWordUrl(surahNumber: number): string {
+  return `${QURANCOM_BASE}/verses/by_chapter/${surahNumber}?words=true&word_fields=text_uthmani,text_uthmani_tajweed,translation,transliteration,audio_url&per_page=300`;
+}
+
+/** Wort-für-Wort-Daten einer ganzen Sure (Index = Ayah-Reihenfolge), FRISCH
+ * vom Netz. Aufrufer wollen in aller Regel ladeSurahWortliste() aus
+ * ./wortliste.ts — die Fassung mit Datei-Cache. */
 export async function fetchSurahWordByWord(surahNumber: number): Promise<QuranWord[][]> {
-  const r = await fetchWithTimeout(
-    `${QURANCOM_BASE}/verses/by_chapter/${surahNumber}?words=true&word_fields=text_uthmani,text_uthmani_tajweed,translation,transliteration,audio_url&per_page=300`,
-    { errorPrefix: 'qurancom_words' },
-  );
+  const r = await fetchWithTimeout(wordByWordUrl(surahNumber), { errorPrefix: 'qurancom_words' });
   if (!r.ok) throw new Error(`qurancom_words_${r.status}`);
   const j = (await r.json()) as QuranComWordsResponse;
   return parseWordByWordResponse(j);

@@ -55,6 +55,15 @@ export interface PodcastEpisode {
    *  offline lädt (s. features/media/content-language.ts). OPTIONAL: ältere
    *  Index-Stände haben es nicht, dort gilt Deutsch als Vorgabe. */
   lang?: string;
+  // --- Ohne-Release-Steuerung (seit 2026-09-05, gleiches Muster wie bei den
+  // Videos, s. features/video/data.ts) --------------------------------
+  /** Manuelle Feinposition — sticht `episode_no` als Sortier-Schluessel
+   *  innerhalb derselben Reihe. OPTIONAL: fehlt es, bleibt die Sortierung die
+   *  alte (episode_no). */
+  order?: number;
+  /** Blendet die Folge aus, ohne sie zu loeschen. Nur `false` wirkt; fehlt das
+   *  Feld, ist die Folge sichtbar. */
+  visible?: boolean;
 }
 
 export interface PodcastSeries {
@@ -80,26 +89,46 @@ function seriesOrderOf(ep: PodcastEpisode): number {
   return typeof o === 'number' && Number.isFinite(o) ? o : UNSORTED_SERIES;
 }
 
+/** Sortier-Schluessel innerhalb einer Reihe: `order`, falls gesetzt, sonst
+ *  `episode_no` — ohne das Feld also exakt das alte Verhalten. */
+function orderOf(ep: PodcastEpisode): number {
+  const o = ep.order;
+  return typeof o === 'number' && Number.isFinite(o) ? o : ep.episode_no;
+}
+
 /**
  * Sortiert die Folgen entlang des Lernwegs: erst nach `series_order` (Reihe),
- * innerhalb der Reihe nach `episode_no`. Folgen ohne `series_order` hängen
- * hinten an — enthält der Index das Feld gar nicht, ist das Ergebnis exakt die
- * alte Sortierung nach `episode_no`. Sortiert eine Kopie (kein Seiteneffekt).
+ * innerhalb der Reihe nach `order` (falls gesetzt) bzw. `episode_no`. Folgen
+ * ohne `series_order` hängen hinten an — enthält der Index weder das Feld
+ * noch `order`, ist das Ergebnis exakt die alte Sortierung nach `episode_no`.
+ * Sortiert eine Kopie (kein Seiteneffekt).
  */
 export function sortEpisodesByLearningPath(episodes: PodcastEpisode[]): PodcastEpisode[] {
   return [...episodes].sort((a, b) => {
     const d = seriesOrderOf(a) - seriesOrderOf(b);
-    return d !== 0 ? d : a.episode_no - b.episode_no;
+    if (d !== 0) return d;
+    const o = orderOf(a) - orderOf(b);
+    return o !== 0 ? o : a.episode_no - b.episode_no;
   });
 }
 
+/** true, solange `visible` nicht explizit auf `false` steht — ausblenden ohne
+ *  loeschen (s. features/video/data.ts, gleiches Muster). */
+function isVisible(ep: PodcastEpisode): boolean {
+  return ep.visible !== false;
+}
+
 export async function fetchPodcastIndex(): Promise<PodcastIndex> {
-  const j = await fetchJson<PodcastIndex>(PODCAST_INDEX_URL, {
+  const j = await fetchJson<Partial<PodcastIndex>>(PODCAST_INDEX_URL, {
     cache: 'no-cache',
     errorPrefix: 'podcast_index',
   });
-  j.episodes = sortEpisodesByLearningPath(j.episodes ?? []);
-  return j;
+  const raw = Array.isArray(j.episodes) ? j.episodes : [];
+  return {
+    updated_at: j.updated_at ?? '',
+    series: j.series ?? { title: '', subtitle: '', description: '', cover_url: '' },
+    episodes: sortEpisodesByLearningPath(raw.filter(isVisible)),
+  };
 }
 
 /** mm:ss aus Sekunden. */

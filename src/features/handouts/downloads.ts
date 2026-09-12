@@ -257,3 +257,19 @@ export function useHandoutDownload(handout: Handout | undefined) {
     remove,
   };
 }
+
+/**
+ * Löscht ALLE heruntergeladenen Unterlagen (PDFs + Index). Für die
+ * Speicherverwaltung (features/settings/storage.ts). Die Dateien stammen aus
+ * dem Netz und lassen sich jederzeit erneut laden; offline sind sie danach
+ * nicht mehr verfügbar — deshalb ruft der Screen das nur nach Rückfrage auf.
+ */
+export async function deleteAllHandoutDownloads(): Promise<void> {
+  if (!handoutDownloadsSupported()) return;
+  const index = await readIndex();
+  await FileSystem.deleteAsync(handoutDir(), { idempotent: true }).catch(() => {});
+  await AsyncStorage.removeItem(INDEX_KEY).catch(() => {});
+  // Offene Viewer/Listen zeigen sonst weiter „heruntergeladen", obwohl die
+  // Datei weg ist (der Status kommt aus dem Singleton, nicht von der Platte).
+  for (const id of Object.keys(index)) emit(id, { state: 'none', progress: 0 });
+}

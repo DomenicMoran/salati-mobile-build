@@ -1,6 +1,6 @@
 import * as Haptics from 'expo-haptics';
 import { useEffect, useMemo, useRef, useState } from 'react';
-import { Linking, Platform, Pressable, ScrollView, StyleSheet } from 'react-native';
+import { Linking, Platform, Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import Svg, { Circle, G, Line, Path, Text as SvgText } from 'react-native-svg';
 
@@ -26,6 +26,29 @@ const RADIUS = SIZE / 2 - 26;
 
 // Grad-Ticks der rotierenden Skala: alle 15°, kräftiger bei 45°-Schritten.
 const TICKS = Array.from({ length: 24 }, (_, i) => ({ deg: i * 15, major: (i * 15) % 45 === 0 }));
+
+// Himmelsrichtungen auf der Skala. Beschriftung NICHT als SvgText (s.
+// Overlay-Kommentar unten) — nur deg/key/accent, die eigentliche Übersetzung
+// holt sich das Overlay per t(key).
+const DIRECTIONS = [
+  { deg: 0, key: 'qibla.north', accent: true },
+  { deg: 90, key: 'qibla.east', accent: false },
+  { deg: 180, key: 'qibla.south', accent: false },
+  { deg: 270, key: 'qibla.west', accent: false },
+] as const;
+
+/** Rotiert einen Punkt um (cx, cy) um `deg` Grad im Uhrzeigersinn — dieselbe
+ *  Matrix wie SVGs `rotate(deg cx cy)`-Transform, nur in JS ausgerechnet statt
+ *  dem SVG überlassen (s. Overlay-Kommentar unten). */
+function rotatePoint(x: number, y: number, cx: number, cy: number, deg: number) {
+  const rad = (deg * Math.PI) / 180;
+  const dx = x - cx;
+  const dy = y - cy;
+  return {
+    x: cx + dx * Math.cos(rad) - dy * Math.sin(rad),
+    y: cy + dx * Math.sin(rad) + dy * Math.cos(rad),
+  };
+}
 
 export default function QiblaScreen() {
   // Breitbild: Kompassgroesse nach Fenster (Geraetebefund 2026-07-29 —
@@ -102,6 +125,25 @@ export default function QiblaScreen() {
   const kaabaScreenAngle = ((bearing - heading) % 360 + 360) % 360;
   // Live-Feedback, sobald der Nutzer (mit aktivem Sensor) grob zur Kaaba blickt.
   const aligned = available === true && (kaabaScreenAngle <= 8 || kaabaScreenAngle >= 352);
+
+  // Beschriftungen der Himmelsrichtungen (N/O/S/W) als natives Text-Overlay
+  // statt SvgText, s. Kopfkommentar bei render (react-native-svg formt
+  // Verbundschrift nicht — betrifft z. B. Paschtu "ختیځ"/"لویدیځ"). Die
+  // Skala selbst dreht sich im SVG per rotate(dialRotation); jedes Label
+  // trug zusätzlich rotate(deg). Beide Rotationen um denselben Mittelpunkt
+  // sind kommutativ, deshalb genügt eine kombinierte Drehung (deg +
+  // dialRotation) hier in JS, um dieselbe Position wie vorher im SVG zu
+  // treffen. compassScale übersetzt SVG-Koordinaten (viewBox bleibt SIZE) in
+  // die tatsächliche Pixelgröße auf Tablets.
+  const compassScale = compassSize / SIZE;
+  const directionLabels = useMemo(
+    () =>
+      DIRECTIONS.map(({ deg, key, accent }) => {
+        const p = rotatePoint(CENTER, CENTER - RADIUS + 30, CENTER, CENTER, deg + dialRotation);
+        return { key, accent, left: p.x * compassScale, top: p.y * compassScale };
+      }),
+    [dialRotation, compassScale],
+  );
 
   // Haptischer Impuls genau beim Einrasten auf die Qibla (nur native).
   // Cooldown: beim Gehen pendelt das Heading durchs Ausrichtungsfenster —
@@ -242,78 +284,95 @@ export default function QiblaScreen() {
         )}
 
         <AnimatedListItem index={2} style={styles.compassWrap}>
-          {/* Der Kompass ist ein Vektor: auf Tablets wird nur die Zeichenflaeche
-              groesser (viewBox bleibt 300), damit die Rose den Platz fuellt
-              statt als 300-dp-Telefonscheibe in der Mitte zu stehen. */}
-          <Svg width={compassSize} height={compassSize} viewBox={`0 0 ${SIZE} ${SIZE}`}>
-            {/* Fixer Zeiger oben = Blickrichtung des Geräts. */}
-            <Path
-              d={`M ${CENTER} 2 L ${CENTER + 9} 20 L ${CENTER - 9} 20 Z`}
-              fill={aligned ? Brand.gold : cardinalFill}
-            />
-            <Circle
-              cx={CENTER}
-              cy={CENTER}
-              r={RADIUS}
-              fill="none"
-              stroke={aligned ? Brand.gold : 'rgba(212,175,55,0.4)'}
-              strokeWidth={aligned ? 3 : 1}
-            />
-            {/* Rotierende Skala: Ticks + Himmelsrichtungen + Kaaba-Marke
-                drehen sich gemeinsam mit dem Geräte-Heading. */}
-            <G transform={`rotate(${dialRotation} ${CENTER} ${CENTER})`}>
-              {TICKS.map(({ deg, major }) => (
-                <Line
-                  key={deg}
-                  x1={CENTER}
-                  y1={CENTER - RADIUS}
-                  x2={CENTER}
-                  y2={CENTER - RADIUS + (major ? 12 : 7)}
-                  stroke={cardinalFill}
-                  strokeWidth={major ? 2 : 1}
-                  opacity={major ? 0.9 : 0.45}
-                  transform={`rotate(${deg} ${CENTER} ${CENTER})`}
-                />
-              ))}
-              {(
-                [
-                  { deg: 0, key: 'qibla.north', accent: true },
-                  { deg: 90, key: 'qibla.east', accent: false },
-                  { deg: 180, key: 'qibla.south', accent: false },
-                  { deg: 270, key: 'qibla.west', accent: false },
-                ] as const
-              ).map(({ deg, key, accent }) => (
-                <SvgText
-                  key={key}
-                  x={CENTER}
-                  y={CENTER - RADIUS + 30}
-                  textAnchor="middle"
-                  fill={accent ? Brand.gold : cardinalFill}
-                  fontSize={14}
-                  fontWeight="700"
-                  transform={`rotate(${deg} ${CENTER} ${CENTER})`}>
-                  {t(key)}
-                </SvgText>
-              ))}
-              {/* Kaaba sitzt fest auf der Skala beim Qibla-Bearing. */}
-              <G transform={`rotate(${bearing} ${CENTER} ${CENTER})`}>
-                <Line
-                  x1={CENTER}
-                  y1={CENTER - RADIUS + 40}
-                  x2={CENTER}
-                  y2={CENTER}
-                  stroke={Brand.gold}
-                  strokeWidth={2}
-                  opacity={0.6}
-                />
-                <Circle cx={CENTER} cy={CENTER - RADIUS + 52} r={16} fill="rgba(212,175,55,0.16)" />
-                <SvgText x={CENTER} y={CENTER - RADIUS + 58} textAnchor="middle" fontSize={17}>
-                  🕋
-                </SvgText>
+          {/* Feste Pixelgröße statt "100%": das Text-Overlay unten positioniert
+              sich in genau diesem Koordinatensystem, s. Kopfkommentar dort. */}
+          <View style={{ width: compassSize, height: compassSize }}>
+            {/* Der Kompass ist ein Vektor: auf Tablets wird nur die Zeichenflaeche
+                groesser (viewBox bleibt 300), damit die Rose den Platz fuellt
+                statt als 300-dp-Telefonscheibe in der Mitte zu stehen. */}
+            <Svg width={compassSize} height={compassSize} viewBox={`0 0 ${SIZE} ${SIZE}`}>
+              {/* Fixer Zeiger oben = Blickrichtung des Geräts. */}
+              <Path
+                d={`M ${CENTER} 2 L ${CENTER + 9} 20 L ${CENTER - 9} 20 Z`}
+                fill={aligned ? Brand.gold : cardinalFill}
+              />
+              <Circle
+                cx={CENTER}
+                cy={CENTER}
+                r={RADIUS}
+                fill="none"
+                stroke={aligned ? Brand.gold : 'rgba(212,175,55,0.4)'}
+                strokeWidth={aligned ? 3 : 1}
+              />
+              {/* Rotierende Skala: Ticks + Kaaba-Marke drehen sich gemeinsam
+                  mit dem Geräte-Heading. Die Himmelsrichtungs-Beschriftung
+                  liegt NICHT hier, sondern als Text-Overlay darüber, s.
+                  Kopfkommentar unten bei directionLabels. */}
+              <G transform={`rotate(${dialRotation} ${CENTER} ${CENTER})`}>
+                {TICKS.map(({ deg, major }) => (
+                  <Line
+                    key={deg}
+                    x1={CENTER}
+                    y1={CENTER - RADIUS}
+                    x2={CENTER}
+                    y2={CENTER - RADIUS + (major ? 12 : 7)}
+                    stroke={cardinalFill}
+                    strokeWidth={major ? 2 : 1}
+                    opacity={major ? 0.9 : 0.45}
+                    transform={`rotate(${deg} ${CENTER} ${CENTER})`}
+                  />
+                ))}
+                {/* Kaaba sitzt fest auf der Skala beim Qibla-Bearing. Das
+                    Kaaba-Emoji bleibt im SVG: ein einzelnes, nicht-kursives
+                    Piktogramm braucht kein Schrift-Shaping (anders als die
+                    Himmelsrichtungs-Wörter, z. B. Paschtu "ختیځ"/"لویدیځ"). */}
+                <G transform={`rotate(${bearing} ${CENTER} ${CENTER})`}>
+                  <Line
+                    x1={CENTER}
+                    y1={CENTER - RADIUS + 40}
+                    x2={CENTER}
+                    y2={CENTER}
+                    stroke={Brand.gold}
+                    strokeWidth={2}
+                    opacity={0.6}
+                  />
+                  <Circle cx={CENTER} cy={CENTER - RADIUS + 52} r={16} fill="rgba(212,175,55,0.16)" />
+                  <SvgText x={CENTER} y={CENTER - RADIUS + 58} textAnchor="middle" fontSize={17}>
+                    🕋
+                  </SvgText>
+                </G>
               </G>
-            </G>
-            <Circle cx={CENTER} cy={CENTER} r={5} fill={Brand.gold} />
-          </Svg>
+              <Circle cx={CENTER} cy={CENTER} r={5} fill={Brand.gold} />
+            </Svg>
+
+            {/* Himmelsrichtungs-Beschriftung als natives Text-Overlay statt
+                SvgText, s. directionLabels-Kopfkommentar oben:
+                react-native-svg formt Verbundschrift nicht (z. B. Paschtu
+                "ختیځ"/"لویدیځ" zerfiel in Einzelbuchstaben). pointerEvents
+                "none", damit das Overlay keine Antippbarkeit des Kompasses
+                blockiert. */}
+            <View style={StyleSheet.absoluteFill} pointerEvents="none">
+              {directionLabels.map(({ key, accent, left, top }) => (
+                <Text
+                  key={key}
+                  style={{
+                    position: 'absolute',
+                    left: left - 24,
+                    top: top - 10,
+                    width: 48,
+                    textAlign: 'center',
+                    fontSize: 14,
+                    fontWeight: '700',
+                    color: accent ? Brand.gold : cardinalFill,
+                  }}
+                  numberOfLines={1}
+                  adjustsFontSizeToFit
+                  minimumFontScale={0.6}>
+                  {t(key)}
+                </Text>
+              ))}
+            </View>
+          </View>
         </AnimatedListItem>
 
         <AnimatedListItem index={3}>

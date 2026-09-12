@@ -33,6 +33,13 @@ export interface Reel {
   duration_sec: number;
   /** Direkte mp4-URL (9:16). */
   video_url: string;
+  // --- Ohne-Release-Steuerung (seit 2026-09-05, gleiches Muster wie bei den
+  // Videos, s. features/video/data.ts) --------------------------------
+  /** Manuelle Feinposition — sticht `index`/`episode_no` als Sortier-
+   *  Schluessel. OPTIONAL: fehlt es, bleibt die Sortierung die alte. */
+  order?: number;
+  /** Blendet das Reel aus, ohne es zu loeschen. Nur `false` wirkt. */
+  visible?: boolean;
 }
 
 export interface ReelsIndex {
@@ -50,6 +57,7 @@ function isPlayableReel(raw: unknown): raw is Reel {
  *  optionale Felder bekommen sinnvolle Defaults — ein unvollstaendiger Eintrag
  *  soll den Feed nicht kippen). */
 function normalizeReel(raw: Reel & Record<string, unknown>): Reel {
+  const order = raw.order;
   return {
     id: String(raw.id),
     episode_no: Number(raw.episode_no) || 0,
@@ -60,7 +68,21 @@ function normalizeReel(raw: Reel & Record<string, unknown>): Reel {
     description: typeof raw.description === 'string' ? raw.description : '',
     duration_sec: Number(raw.duration_sec) || 0,
     video_url: raw.video_url,
+    ...(typeof order === 'number' && Number.isFinite(order) ? { order } : {}),
+    // Nur ein EXPLIZITES `false` blendet aus (s. features/video/data.ts).
+    ...(raw.visible === false ? { visible: false as const } : {}),
   };
+}
+
+/** true, solange `visible` nicht explizit auf `false` steht. */
+function isVisible(r: Reel): boolean {
+  return r.visible !== false;
+}
+
+/** Sortier-Schluessel: `order`, falls gesetzt, sonst der bisherige Schluessel
+ *  (episode_no, dann index) — ohne das Feld also exakt das alte Verhalten. */
+function orderOf(r: Reel): number {
+  return typeof r.order === 'number' && Number.isFinite(r.order) ? r.order : r.episode_no * 1_000_000 + r.index;
 }
 
 /**
@@ -96,7 +118,8 @@ export async function fetchReelsIndex(): Promise<ReelsIndex> {
   const reels = rawReels
     .filter(isPlayableReel)
     .map((r) => normalizeReel(r as Reel & Record<string, unknown>))
-    .sort((a, b) => a.episode_no - b.episode_no || a.index - b.index);
+    .filter(isVisible)
+    .sort((a, b) => orderOf(a) - orderOf(b));
 
   return { reels };
 }

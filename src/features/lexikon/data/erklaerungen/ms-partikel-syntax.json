@@ -1,0 +1,1046 @@
+{
+  "schema": 1,
+  "lang": "ms",
+  "bereich": "partikel-syntax",
+  "eintraege": {
+    "harf": {
+      "titel": "Huruf (Zarah Tatabahasa)",
+      "ar": "حَرْف",
+      "umschrift": "Harf",
+      "erklaerung": [
+        "Huruf ialah jenis kata ketiga dalam bahasa Arab selain Isim (kata nama) dan Fi'il (kata kerja). Sesuatu huruf tidak mempunyai makna yang berdiri sendiri — ia baru membawa maksud apabila digandingkan dengan kata yang datang selepasnya.",
+        "Sekiranya Isim dan Fi'il membawa ciri seperti jantina, bilangan atau kala, huruf tidak memiliki mana-mana kategori ini. Tugasnya hanya satu, iaitu fungsi tatabahasa: menghubungkan, menafikan, bertanya, mensyaratkan, menyeru, menegaskan, atau menetapkan i'rab kata yang mengikutinya.",
+        "Oleh sebab huruf begitu pelbagai fungsinya, ia terbahagi kepada banyak kumpulan kecil dengan sifat tersendiri — huruf jar, huruf 'ataf, huruf nafi, huruf istifham, huruf syarat dan banyak lagi. Setiap kumpulan ini dihuraikan dalam entri tersendiri."
+      ],
+      "erkennung": [
+        "Huruf tidak boleh ditashrifkan seperti isim (tiada i'rab tetap mengikut kedudukan, tiada bilangan, tiada jantina) dan biasanya sangat pendek — selalunya hanya satu hingga tiga huruf sahaja.",
+        "Dalam analisis perkataan, bahagian huruf membawa singkatan tersendiri, bukan N (kata nama) atau V (kata kerja) — misalnya P untuk huruf jar, CONJ untuk huruf 'ataf atau NEG untuk nafi.",
+        "Malah satu perkataan penuh boleh terdiri semata-mata daripada beberapa bahagian huruf yang tersusun berturutan, tanpa mengandungi walau satu pun akar isim atau fi'il."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 9,
+          "wort": 5,
+          "zeigt": "perkataan وَمَا terdiri semata-mata daripada dua bahagian huruf (وَ dan مَا), tanpa sebarang akar isim atau fi'il",
+          "warum": "menunjukkan bahawa huruf sememangnya tidak membawa ruang jenis kata sendiri seperti jantina atau bilangan — di sini dua zarah bertindih menjadi satu perkataan korpus"
+        },
+        {
+          "sure": 1,
+          "vers": 1,
+          "wort": 1,
+          "zeigt": "bahagian awalan بِ dalam بِسْمِ membawa tag POS P (huruf jar)",
+          "warum": "membuktikan contoh huruf kedua pada perkataan pertama al-Quran — di sini sebuah huruf jar, bukan nafi atau 'ataf"
+        }
+      ],
+      "lernen": [
+        "Pelajari dahulu pembahagian kasar: huruf jar, huruf 'ataf, huruf nafi, huruf istifham, huruf syarat, huruf nida — barulah beralih kepada perkataan khusus setiap kumpulan.",
+        "Berlatih pada ayat sebenar memisahkan bahagian huruf daripada akarnya: apa yang tinggal apabila huruf itu diketepikan? Adakah bakinya masih membawa makna tersendiri?",
+        "Ingat satu soalan penentu bagi setiap kumpulan: adakah huruf ini mengubah i'rab kata selepasnya, atau tidak?"
+      ],
+      "tabellen": [],
+      "siehe": ["huruf-jarr", "huruf-atf", "verneinung"]
+    },
+
+    "huruf-jarr": {
+      "titel": "Huruf Jar",
+      "ar": "حُرُوف الجَرّ",
+      "umschrift": "Huruf al-Jarr",
+      "erklaerung": [
+        "Huruf jar meletakkan isim yang datang serta-merta selepasnya ke dalam kedudukan jar (majrur). Huruf dan isim bersama-sama membentuk frasa jar-majrur: jar ialah huruf jar itu sendiri, majrur pula ialah isim yang dijarkan olehnya.",
+        "Antara huruf jar yang paling kerap digunakan ialah بِ (dengan/menerusi), لِ (untuk), كَ (seperti), مِن (daripada), عَن (tentang), عَلَى (atas), إِلَى (ke), فِي (dalam) dan حَتَّى (sehingga) — selain itu وَ dan تَ digunakan sebagai huruf sumpah yang jarang (misalnya hanya bersama nama Allah).",
+        "Huruf jar sehuruf (بِـ، كَـ، لِـ، تَـ، وَـ) tidak ditulis sebagai perkataan berasingan, sebaliknya dicantumkan terus pada isim selepasnya dan membawa baris tetap.",
+        "Terjemahan Melayu bagi sesuatu huruf jar tidak semestinya diambil secara literal: huruf jar mana yang bergandingan dengan fi'il mana selalunya mengikut logik Arab tersendiri yang boleh berbeza daripada huruf sendi Melayu yang setara."
+      ],
+      "erkennung": [
+        "Huruf jar terletak sejurus sebelum isim (yang juga boleh berupa kata ganti nama) — tidak pernah sebelum fi'il.",
+        "Berhati-hati dengan huruf jar sehuruf: huruf yang sama pada awal perkataan boleh juga sekadar sebahagian daripada akar kata (contohnya كَـ dalam كَافِر tergolong pada akar كفر, jadi bukan huruf jar)."
+      ],
+      "belege": [
+        {
+          "sure": 1,
+          "vers": 1,
+          "wort": 1,
+          "zeigt": "بِسْمِ bermula dengan huruf jar yang dicantumkan بِ, yang meletakkan isim selepasnya (سْمِ) ke dalam kedudukan jar",
+          "warum": "membuktikan pada perkataan pertama al-Quran bentuk huruf jar sehuruf yang dicantum terus"
+        },
+        {
+          "sure": 1,
+          "vers": 2,
+          "wort": 2,
+          "zeigt": "bahagian awalan لِ dalam لِلَّهِ membawa tag POS P",
+          "warum": "membuktikan huruf jar sehuruf kedua (لِ, 'untuk') dengan baris kasrah yang tetap"
+        }
+      ],
+      "lernen": [
+        "Hafal dahulu senarai huruf jar mengikut pembahagian sehuruf dan berhuruf banyak — huruf jar sehuruf memerlukan tambahan hafalan baris tetapnya.",
+        "Cari dalam sebuah ayat pilihan sendiri setiap frasa jar-majrur dan namakan jar serta majrur secara berasingan.",
+        "Setiap kali mempelajari fi'il baharu, terus catatkan huruf jar yang biasa menyertainya — ini mengelakkan kesilapan terjemahan pada masa hadapan."
+      ],
+      "tabellen": [],
+      "siehe": ["harf", "mudaf-ilayh"]
+    },
+
+    "huruf-atf": {
+      "titel": "Huruf 'Ataf",
+      "ar": "حُرُوف العَطْف",
+      "umschrift": "Huruf al-'Atf",
+      "erklaerung": [
+        "Huruf 'ataf menghubungkan dua unsur bahasa yang setaraf — sama ada isim tunggal, frasa penuh, atau keseluruhan ayat. Unsur yang mengikut dipanggil ma'tuf, manakala unsur yang mendahului serta dihubungkan kepadanya dipanggil ma'tuf 'alaih.",
+        "Kesan terpenting huruf 'ataf: ia memindahkan i'rab ma'tuf 'alaih tanpa perubahan kepada ma'tuf. Jika perkataan pertama berada dalam kedudukan jar, perkataan yang dihubungkan turut berada dalam kedudukan jar — malah merentasi beberapa perkataan yang berturutan.",
+        "Huruf 'ataf yang paling kerap ialah وَ (dan) — ia menghubungkan secara neutral, tanpa menegaskan sebarang susunan atau jarak masa. فَ menghubungkan dengan makna 'lalu/sekaligus' (susulan segera), ثُمَّ pula membawa makna 'kemudian' dengan jarak masa yang lebih panjang. أَوْ bermaksud 'atau' dalam erti pilihan, أَمْ turut bermaksud 'atau' tetapi lazimnya dalam ayat tanya ('yang mana antara keduanya?'). Selain itu, بَلْ (bahkan) dan لَكِنْ (tetapi) turut menghubungkan dengan makna percanggahan yang lebih kuat.",
+        "Selain fungsi penghubung mudah ini, فَ mempunyai dua peranan lain yang sama sekali berbeza dari segi tatabahasa walaupun membawa bentuk huruf yang sama: fa' sababiyah yang membawa makna sebab, dan fa' jawab/rabitah yang bersifat penghubung. Kedua-duanya dihuraikan dalam entri tersendiri kerana mudah dikelirukan dengan فَ biasa yang memindahkan i'rab."
+      ],
+      "erkennung": [
+        "Ujian bagi 'ataf biasa: adakah perkataan selepas huruf itu membawa i'rab yang sama (rafa'/nasab/jar) seperti perkataan sebelumnya? Jika ya, ia hanyalah penghubung mudah.",
+        "Jika selepas فَ pula terdapat fi'il mudari' dengan akhiran nasab yang kelihatan atau tersembunyi (bukannya i'rab yang sama seperti sebelumnya), kemungkinan besar ia bukan 'ataf biasa, sebaliknya fa' sababiyah (lihat entri tersendiri).",
+        "Jika فَ terletak pada awal ayat yang menjawab ayat syarat, sumpah, atau sesuatu tajuk, tanpa mengubah i'rab mana-mana perkataan, biasanya ia adalah fa' jawab/rabitah (lihat entri tersendiri)."
+      ],
+      "belege": [
+        {
+          "sure": 1,
+          "vers": 7,
+          "wort": 9,
+          "zeigt": "ٱلضَّآلِّينَ membawa hubungan conj (nilai asas mengikut relationBasis) dan dihubungkan melalui وَ kepada isim sebelumnya",
+          "warum": "membuktikan huruf 'ataf dengan وَ di penghujung al-Fatihah — dua kumpulan manusia disenaraikan berturutan dengan i'rab yang sama"
+        },
+        {
+          "sure": 2,
+          "vers": 196,
+          "wort": 31,
+          "zeigt": "صَدَقَةٍ membawa hubungan conj — dihubungkan melalui أَوْ kepada isim صِيَامٍ sebelumnya",
+          "warum": "membuktikan huruf 'ataf أَوْ (atau) sebagai pilihan sebenar antara berpuasa, bersedekah atau berkorban"
+        },
+        {
+          "sure": 2,
+          "vers": 28,
+          "wort": 10,
+          "zeigt": "يُحْيِيكُمْ membawa hubungan conj — dihubungkan melalui ثُمَّ kepada fi'il sebelumnya",
+          "warum": "membuktikan ثُمَّ sebagai huruf 'ataf yang membawa makna jarak masa antara dua perbuatan yang dihubungkan (mematikan — kemudian menghidupkan semula)"
+        },
+        {
+          "sure": 2,
+          "vers": 140,
+          "wort": 17,
+          "zeigt": "ٱللَّهُ membawa hubungan conj — dihubungkan melalui أَمِ kepada perkataan sebelumnya dalam sebuah ayat tanya",
+          "warum": "membuktikan أَمْ sebagai huruf 'ataf dalam ayat tanya pilihan sebenar ('adakah kamu lebih mengetahui, atau Allah?')"
+        }
+      ],
+      "lernen": [
+        "Pelajari enam huruf 'ataf teras و ف ثم أو أم berserta nuansa makna masing-masing (neutral / sekaligus / berjarak / pilihan / pilihan-tanya) berbanding menterjemah semuanya sekadar 'dan/atau'.",
+        "Uji pemindahan i'rab pada beberapa ayat: tentukan i'rab ma'tuf 'alaih, kemudian periksa sama ada ma'tuf membawa i'rab yang sama.",
+        "Setiap kali bertemu فَ, periksa secara sistematik ketiga-tiga kemungkinan secara berurutan: 'ataf biasa, fa' sababiyah, atau fa' jawab — sebelum menterjemah.",
+        "Bandingkan contoh yang ditemui sendiri dengan bukti di sini dan namakan ma'tuf serta ma'tuf 'alaih masing-masing."
+      ],
+      "tabellen": [],
+      "siehe": ["faa-sababiyya", "faa-jawab", "badal", "sifah"]
+    },
+
+    "faa-sababiyya": {
+      "titel": "Fa' Sababiyah",
+      "ar": "فَاء السَّبَبِيَّة",
+      "umschrift": "Faa' as-Sababiyya",
+      "erklaerung": [
+        "Fa' sababiyah kelihatan sama persis dengan فَ penghubung biasa, tetapi kesan tatabahasanya sama sekali berbeza: ia memulakan fi'il mudari' yang dengan itu diletakkan ke dalam i'rab nasab — bukan sekadar mewarisi i'rab perkataan sebelumnya.",
+        "Dari segi makna, ia membawa akibat atau kesan yang AKAN berlaku SEKIRANYA perkara sebelumnya tidak dipatuhi — biasanya diterjemahkan sebagai 'supaya' atau 'agar tidak'. Ia lazimnya mengikuti larangan, perintah, soalan atau harapan.",
+        "Dalam korpus, فَ ini hanya muncul 88 kali — jauh lebih jarang berbanding fa' jawab yang bersifat penghubung dengan 350 catatan, walaupun kedua-duanya kelihatan sebagai jujukan huruf فَ yang sama."
+      ],
+      "erkennung": [
+        "Yang menentukan bukan makna, tetapi bentuk fi'il selepasnya: jika selepasnya terdapat fi'il mudari' dalam i'rab nasab (kelihatan pada baris fathah atau ketiadaan nun pada lima bentuk fi'il), maka itu fa' sababiyah.",
+        "Konteks tipikal sebelumnya: sebuah larangan (لا + fi'il), perintah, soalan atau harapan — tidak pernah sekadar pernyataan biasa yang disenaraikan sahaja."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 35,
+          "wort": 16,
+          "zeigt": "bahagian awalan فَ dalam فَتَكُونَا membawa tag POS CAUS",
+          "warum": "membuktikan fa' sababiyah selepas sebuah larangan ('janganlah kamu berdua menghampiri pokok ini, supaya kamu berdua tidak menjadi golongan yang zalim') — fi'il selepasnya berada dalam i'rab nasab, bukan mengikut i'rab larangan sebelumnya"
+        },
+        {
+          "sure": 2,
+          "vers": 245,
+          "wort": 8,
+          "zeigt": "bahagian awalan فَ dalam فَيُضَٰعِفَهُۥ membawa tag POS CAUS",
+          "warum": "membuktikan fa' sababiyah selepas sebuah soalan retorik ('siapakah yang mahu memberi Allah pinjaman yang baik, supaya Dia melipatgandakannya untuknya?')"
+        }
+      ],
+      "lernen": [
+        "Setiap kali bertemu فَ selepas larangan, perintah, soalan atau harapan, tanya dahulu: adakah fi'il selepasnya berada dalam i'rab nasab? Jika ya, itu fa' sababiyah, bukan 'ataf biasa.",
+        "Cuba terjemahkan dahulu dengan 'lalu' — jika tidak membawa makna logik tetapi 'supaya/agar tidak' pula sesuai, itu petunjuk kuat bacaan sebab-musabab.",
+        "Bandingkan contoh di sini secara terus dengan contoh fa' jawab — kedua-duanya bermula sama, tetapi memberi kesan tatabahasa yang bertentangan."
+      ],
+      "tabellen": [],
+      "siehe": ["huruf-atf", "faa-jawab"]
+    },
+
+    "faa-jawab": {
+      "titel": "Fa' Jawab dan Rabitah",
+      "ar": "فَاء الجَوَاب / الفَاء الرَّابِطَة",
+      "umschrift": "Faa' al-Jawaab / al-Faa' ar-Raabita",
+      "erklaerung": [
+        "فَ ini juga kelihatan seperti فَ penghubung biasa, tetapi — berbeza daripada fa' sababiyah — ia TIDAK mengubah i'rab perkataan selepasnya. Ia sekadar jambatan: menghubungkan ayat selepasnya kepada apa yang disebut sebelumnya, biasanya sebagai jawapan kepada ayat syarat (jawab syarat), kadangkala juga sebagai unsur penghubung antara sesuatu tajuk (mubtada') dengan pernyataan berbentuk ayat.",
+        "Ia digunakan khususnya apabila ayat jawapan itu sendiri tidak boleh secara tatabahasa berdiri terus sebagai jawab syarat — misalnya kerana ia sebuah ayat ismiah, bermula dengan إِنَّ, atau mengandungi penafian dengan لَنْ.",
+        "Dalam korpus, فَ ini dengan 350 catatan jauh lebih kerap berbanding fa' sababiyah yang membawa makna sebab (88 catatan) — namun kedua-duanya muncul sebagai jujukan satu huruf فَ yang sama dan hanya dapat dibezakan melalui kesan tatabahasanya."
+      ],
+      "erkennung": [
+        "Berbeza daripada fa' sababiyah, fi'il selepas فَ ini kekal dalam mod asalnya (rafa' atau jazam, bergantung jenis ayat) — ia TIDAK dipaksa ke dalam i'rab nasab.",
+        "Ia lazimnya terletak pada awal ayat jawapan bagi sesuatu syarat dan sering diikuti terus oleh إِنَّ, قَدْ atau sebuah ayat ismiah."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 186,
+          "wort": 5,
+          "zeigt": "bahagian awalan فَ dalam فَإِنِّى membawa tag POS RSLT, keseluruhan perkataan membawa hubungan rslt",
+          "warum": "membuktikan fa' jawab sebagai pembuka ayat jawapan selepas ayat syarat berإذا ('apabila hamba-hamba-Ku bertanya kepadamu tentang Aku — maka sesungguhnya Aku dekat'), tanpa إِنِّي selepasnya diletakkan ke dalam i'rab nasab"
+        },
+        {
+          "sure": 2,
+          "vers": 282,
+          "wort": 10,
+          "zeigt": "فَٱكْتُبُوهُ membawa hubungan rslt, dimulakan oleh bahagian awalan فَ bertag POS RSLT",
+          "warum": "membuktikan fa' jawab sebagai jawapan kepada ayat syarat yang dimulakan dengan إِذَا tentang pencatatan hutang"
+        }
+      ],
+      "lernen": [
+        "Ingat ujian pembeza ini: adakah i'rab/mod perkataan selepasnya TIDAK berubah (kekal rafa' atau jazam)? Jika ya, itu fa' jawab, bukan fa' sababiyah.",
+        "Cari secara khusus ayat syarat yang dimulakan إِذَا dan إِنْ, dan tandakan sama ada ayat jawapan bermula dengan فَ serta sebabnya (ayat ismiah? إِنَّ? penafian?).",
+        "Buat jadual dua lajur sendiri dengan contoh fa' sababiyah dan fa' jawab supaya tidak keliru antara kedua-duanya."
+      ],
+      "tabellen": [],
+      "siehe": ["huruf-atf", "faa-sababiyya", "shart"]
+    },
+
+    "verneinung": {
+      "titel": "Nafi (Penafian)",
+      "ar": "حُرُوف النَّفْي",
+      "umschrift": "Huruf an-Nafy",
+      "erklaerung": [
+        "Untuk penafian tersedia beberapa alat yang masing-masing terikat kepada kala atau jenis ayat tertentu: لَمْ menafikan zaman lampau dengan fi'il mudari' dan meletakkan fi'il itu ke dalam i'rab jazam; لَنْ menafikan masa hadapan dengan fi'il mudari' dan meletakkannya ke dalam i'rab nasab; لَا menafikan zaman kini dengan fi'il mudari' tanpa mengubah i'rab; مَا pula menafikan fi'il mudari' mahupun fi'il madi, selalunya dalam konteks penolakan atau perbahasan, juga tanpa mengubah i'rab.",
+        "لَيْسَ dari segi tatabahasa bukanlah huruf, sebaliknya fi'il naqis (lihat Kana wa Akhawatuha) — ia menafikan ayat ismiah dan meletakkan khabarnya ke dalam i'rab nasab, manakala مَا apabila menafikan ayat ismiah membiarkan khabar kekal dalam i'rab rafa'.",
+        "Peringatan penting: مَا ialah salah satu perkataan Arab yang paling banyak fungsi. Selalunya ia BUKAN penafian, sebaliknya kata nama relatif ('sesuatu yang'), huruf istifham ('apa?'), atau huruf syarat/masdar. Sama ada مَا menafikan atau tidak hanya ditentukan oleh konteks ayat.",
+        "Selain itu, terdapat لَا النَّافِيَة لِلْجِنْس (nafi mutlak bagi jenis) untuk makna 'langsung tiada ...' — isim selepasnya berada dalam keadaan mabni di atas fathah dengan kedudukan nasab."
+      ],
+      "erkennung": [
+        "مَا adalah penafian apabila sejurus selepasnya terdapat ayat lengkap dengan fa'ilnya/mubtada'nya sendiri, yang dinafikan sebagai satu pernyataan.",
+        "مَا BUKAN penafian apabila ia mengambil peranan sesuatu unsur ayat (misalnya objek atau subjek sesuatu fi'il) dan boleh digantikan mengikut makna dengan 'sesuatu yang'.",
+        "لَا النَّافِيَة لِلْجِنْس dikenali kerana sejurus selepasnya terdapat isim nakirah tanpa tanwin ('langsung tiada ...')."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 9,
+          "wort": 6,
+          "zeigt": "يَخْدَعُونَ membawa hubungan neg, manakala مَا sebelumnya (kata 5) membawa tag POS NEG",
+          "warum": "membuktikan مَا sebagai penafian sebenar ('dan mereka tidak memperdaya sesiapa melainkan diri mereka sendiri')"
+        },
+        {
+          "sure": 2,
+          "vers": 29,
+          "wort": 5,
+          "zeigt": "مَّا di sini TIDAK membawa hubungan penafian, sebaliknya hubungan Obj (objek fi'il خَلَقَ), bahagian ini membawa POS REL",
+          "warum": "membuktikan secara terang kes yang perlu diwaspadai: dalam surah pendek yang sama, مَا muncul beberapa ayat kemudian sebagai kata nama relatif ('sesuatu yang Dia ciptakan untuk kamu di bumi') — bukan penafian"
+        }
+      ],
+      "lernen": [
+        "Buat jadual kala → alat penafian yang sesuai → i'rab yang tercetus (لَمْ/jazam, لَنْ/nasab, لَا dan مَا/tidak berubah).",
+        "Berlatih khusus pada pasangan bukti di sini: jelaskan dengan kata-kata sendiri mengapa مَا pada ayat 2:9 adalah penafian tetapi pada ayat 2:29 bukan.",
+        "Ingat لَيْسَ sebagai fi'il, bukan huruf — ini menjelaskan mengapa ia sendiri boleh meletakkan khabar ke dalam i'rab nasab, sedangkan مَا tidak berbuat demikian."
+      ],
+      "tabellen": [],
+      "siehe": ["nahy", "lam-al-amr", "kaana-wa-akhawatuha"]
+    },
+
+    "lam-al-amr": {
+      "titel": "Lam Amar",
+      "ar": "لَام الأَمْر",
+      "umschrift": "Laam al-Amr",
+      "erklaerung": [
+        "Lam amar ialah لْ yang dicantumkan sebelum fi'il mudari' bagi membentuk satu perintah tidak langsung — biasanya ditujukan kepada orang ketiga ('hendaklah dia/mereka melakukan'), atau sebagai bentuk yang lebih bergaya, juga kepada orang pertama atau kedua. Fi'il itu dengan demikian diletakkan ke dalam i'rab jazam.",
+        "Dari segi tatabahasa, lam amar ialah sebuah huruf, bukan fi'il — berbeza daripada perintah langsung (fi'il amr) yang merupakan bentuk fi'il tersendiri yang sudah ditashrifkan. Kedua-duanya membawa makna perintah, tetapi lam amar melakukannya menerusi fi'il mudari', bukan menerusi bentuk perintah tersendiri.",
+        "Dalam korpus, لْ ini muncul 78 kali — kebanyakannya didahului وَ atau فَ."
+      ],
+      "erkennung": [
+        "Satu لْ tunggal sejurus sebelum fi'il mudari' yang akhirannya menunjukkan jazam (nun gugur pada lima bentuk fi'il, sukun pada bentuk-bentuk lain).",
+        "Boleh diterjemahkan dengan 'hendaklah' berbanding 'Buatlah!' secara langsung — lam amar lazimnya (walaupun tidak semestinya) ditujukan kepada orang ketiga, yang tiada bentuk perintah tersendiri baginya."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 186,
+          "wort": 12,
+          "zeigt": "bahagian awalan لْ dalam فَلْيَسْتَجِيبُوا۟ membawa tag POS IMPV",
+          "warum": "membuktikan lam amar sebagai perintah tidak langsung kepada orang ketiga ('maka hendaklah mereka menyahut seruan-Ku')"
+        },
+        {
+          "sure": 2,
+          "vers": 186,
+          "wort": 14,
+          "zeigt": "bahagian awalan لْ dalam وَلْيُؤْمِنُوا۟ membawa tag POS IMPV",
+          "warum": "membuktikan lam amar kedua dalam ayat yang sama ('dan hendaklah mereka beriman kepada-Ku')"
+        }
+      ],
+      "lernen": [
+        "Bandingkan dalam ayat yang sama perintah langsung (fi'il amr, orang kedua) dengan contoh lam amar (orang ketiga) — kedua-duanya membawa perintah, tetapi dibina secara tatabahasa yang sama sekali berbeza.",
+        "Cari secara khusus gabungan وَلْ- dan فَلْ- pada awal perkataan dan tentukan orang yang dituju setiap kali.",
+        "Ingat risiko kekeliruan dengan bunyi لام yang lain: hanya لْ bersukun sejurus sebelum fi'il mudari' merupakan lam amar."
+      ],
+      "tabellen": [],
+      "siehe": ["nahy"]
+    },
+
+    "nahy": {
+      "titel": "Nahi (Larangan)",
+      "ar": "النَّهْي (لَا النَّاهِيَة)",
+      "umschrift": "an-Nahy (Laa an-Naahiya)",
+      "erklaerung": [
+        "Lâ nâhiyah ('lâ yang melarang') terletak sebelum fi'il mudari' — biasanya pada orang kedua — dan membentuk satu larangan ('jangan lakukan itu!'). Fi'il itu, sepertimana lam amar, dengan demikian diletakkan ke dalam i'rab jazam.",
+        "Ini membezakan nahi daripada penafian biasa dengan لَا (لَا النَّافِيَة), yang menafikan sesuatu fakta semasa tanpa mengubah mod fi'il. Kedua-dua perkataan kelihatan serupa (لَا), tetapi memberi kesan tatabahasa yang berbeza: nahi memaksa jazam, penafian biasa tidak."
+      ],
+      "erkennung": [
+        "Jika لَا terletak sebelum fi'il mudari' yang akhirannya menunjukkan jazam (nun gugur/sukun) dan maknanya adalah larangan dan bukan penyataan fakta, itu adalah lâ nâhiyah.",
+        "Dalam korpus, fi'il berkenaan membawa hubungan Pro (bagi 'Prohibition') dan bukannya hubungan penafian biasa."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 22,
+          "wort": 19,
+          "zeigt": "تَجْعَلُوا۟ membawa hubungan Pro, dimulakan oleh لَا (dalam perkataan sebelumnya فَلَا) bertag POS PRO",
+          "warum": "membuktikan lâ nâhiyah sebagai larangan sebenar ('maka janganlah kamu mengadakan sekutu-sekutu bagi Allah')"
+        },
+        {
+          "sure": 2,
+          "vers": 60,
+          "wort": 25,
+          "zeigt": "تَعْثَوْا۟ membawa hubungan Pro, dimulakan oleh لَا (dalam perkataan sebelumnya وَلَا) bertag POS PRO",
+          "warum": "membuktikan larangan kedua ('dan janganlah kamu melakukan kerosakan di bumi')"
+        }
+      ],
+      "lernen": [
+        "Bandingkan secara terus satu contoh nahi dengan satu contoh penafian biasa dengan لَا — kedua-dua perkataan kelihatan sama tetapi memberi kesan berbeza pada fi'il.",
+        "Berlatih mengenali jazam pada fi'il itu sendiri (ketiadaan nun pada lima bentuk, sukun pada yang lain) — itu petunjuk paling boleh dipercayai bagi nahi.",
+        "Susun setiap contoh لَا yang ditemui secara konsisten ke dalam salah satu daripada tiga kategori: penafian biasa, nahi, atau nafi mutlak bagi jenis (لَا النَّافِيَة لِلْجِنْس)."
+      ],
+      "tabellen": [],
+      "siehe": ["verneinung", "lam-al-amr"]
+    },
+
+    "istifham": {
+      "titel": "Huruf Istifham",
+      "ar": "أَدَوَات الاِسْتِفْهَام",
+      "umschrift": "Adawaat al-Istifhaam",
+      "erklaerung": [
+        "Huruf istifham terletak pada awal ayat dan memulakan ayat ismiah mahupun ayat fi'liah: مَنْ (siapa), مَاذَا/مَا (apa), مَتَى (bila), أَيْنَ (di mana), لِمَاذَا (mengapa), كَيْفَ (bagaimana), أَيّ (yang mana) serta هَلْ dan hamzah bercantum أَ bagi soalan ya/tidak.",
+        "Kebanyakan kata tanya tidak memberi kesan tatabahasa terhadap struktur ayat — ia sekadar diletakkan di hadapan ayat.",
+        "Apabila huruf istifham bertemu dengan huruf jar, huruf jar itu diletakkan dahulu; khusus bagi مَا, kedua-duanya bercantum menjadi satu bentuk (مِنْ + مَا → مِمَّ, عَنْ + مَا → عَمَّ, فِي + مَا → فِيمَ, لِ + مَا → لِمَ)."
+      ],
+      "erkennung": [
+        "Huruf istifham terletak pada awal ayat, tidak kira sama ada ayat ismiah atau ayat fi'liah yang mengikutinya.",
+        "أَ sebagai huruf istifham bercantum ialah satu hamzah tunggal yang diletakkan sejurus sebelum akar kata pertama — dicatat dalam korpus sebagai bahagian awalan tersendiri bertag POS INTG."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 44,
+          "wort": 1,
+          "zeigt": "bahagian awalan أَ dalam أَتَأْمُرُونَ membawa tag POS INTG",
+          "warum": "membuktikan huruf istifham bercantum أَ yang memulakan satu soalan retorik ya/tidak ('adakah kamu menyuruh manusia berbuat kebajikan...?')"
+        },
+        {
+          "sure": 2,
+          "vers": 30,
+          "wort": 11,
+          "zeigt": "bahagian awalan أَ dalam أَتَجْعَلُ membawa tag POS INTG",
+          "warum": "membuktikan huruf istifham yang sama dalam soalan malaikat yang terkenal ('adakah Engkau hendak menjadikan di bumi itu sesiapa yang akan membuat kerosakan?')"
+        }
+      ],
+      "lernen": [
+        "Pelajari jadual kata tanya berserta jenis katanya (isim seperti مَنْ/مَا/أَيّ atau huruf semata-mata seperti هَلْ/أَ), kerana ini memudahkan penentuan i'rab kemudian.",
+        "Berlatih khusus pada bentuk cantuman مِمَّ/عَمَّ/فِيمَ/لِمَ — mudah tertinggal jika hanya mencari 'مَا'.",
+        "Bandingkan ayat tanya dengan susunan kata yang sama tetapi tanpa huruf istifham, untuk melihat bahawa struktur ayat itu sendiri tidak berubah."
+      ],
+      "tabellen": [],
+      "siehe": []
+    },
+
+    "shart": {
+      "titel": "Ayat Syarat",
+      "ar": "أَدَوَات الشَّرْط وَجَوَاب الشَّرْط",
+      "umschrift": "Adawaat ash-Shart / Jawaab ash-Shart",
+      "erklaerung": [
+        "Sebuah ayat syarat (jumlah syartiyah) terdiri daripada dua bahagian: syarat (الشَّرْط) dan jawapan/kesudahannya (جَوَاب الشَّرْط) — pernyataan kedua hanya berlaku sekiranya yang pertama dipenuhi.",
+        "Huruf syarat terbahagi kepada dua kumpulan: huruf jazam (إِنْ، مَنْ، مَا dan lain-lain) meletakkan kedua-dua bahagian ayat ke dalam i'rab jazam apabila kedua-dua fi'ilnya mudari'; huruf bukan jazam (لَوْ 'sekiranya', إِذَا 'apabila/sebaik sahaja') tidak memberi kesan tatabahasa terhadap i'rab fi'il.",
+        "Sangat kerap فَ memulakan ayat jawapan, terutamanya apabila ia berbeza jenis daripada ayat syarat (misalnya ayat syarat berbentuk fi'liah, ayat jawapan berbentuk ismiah) — فَ ini ialah fa' jawab yang dihuraikan dalam entri tersendiri.",
+        "Selain ayat syarat, terdapat struktur yang sangat serupa pada perintah: selepas sebuah amr (perintah) boleh mengikuti jawab amr, yang menerangkan apa yang berlaku sekiranya perintah itu dipatuhi — juga sentiasa dalam i'rab jazam."
+      ],
+      "erkennung": [
+        "Dalam sintaksis korpus, bahagian syarat membawa hubungan cond, manakala bahagian jawapan sering membawa hubungan rslt (lihat fa' jawab) apabila dimulakan dengan فَ.",
+        "Huruf jazam dikenali kerana kedua-dua fi'il — syarat dan jawapan — berada dalam i'rab jazam, walaupun terjemahan Melayu memerlukan kala kini."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 282,
+          "wort": 5,
+          "zeigt": "تَدَايَنتُم membawa hubungan cond, dicetuskan oleh إِذَا (kata 4)",
+          "warum": "membuktikan bahagian syarat sesebuah ayat syarat ('apabila kamu berhutang untuk suatu tempoh yang ditentukan')"
+        },
+        {
+          "sure": 2,
+          "vers": 282,
+          "wort": 10,
+          "zeigt": "فَٱكْتُبُوهُ membawa hubungan rslt",
+          "warum": "membuktikan ayat jawab yang berkaitan ('maka tuliskanlah ia') dalam ayat yang sama, dimulakan dengan fa' jawab"
+        }
+      ],
+      "lernen": [
+        "Pelajari dahulu pembahagian dua kumpulan jazam/bukan jazam, barulah huruf khusus setiap kumpulan.",
+        "Cari dalam sesebuah ayat syarat secara sistematik dahulu الشَّرْط, kemudian جَوَاب الشَّرْط, dan periksa sama ada terdapat فَ di antaranya.",
+        "Bina ayat syarat pendek sendiri dengan إِنْ dan bandingkan bagaimana akhiran fi'il berubah berbanding ayat tanpa إِنْ."
+      ],
+      "tabellen": [],
+      "siehe": ["faa-jawab"]
+    },
+
+    "kaana-wa-akhawatuha": {
+      "titel": "Kana wa Akhawatuha",
+      "ar": "كَانَ وَأَخَوَاتُهَا",
+      "umschrift": "Kaana wa Akhawatuha",
+      "erklaerung": [
+        "Kana (menjadi/ialah) dan kakak-kakaknya ialah fi'il naqis (af'al naqisah): ia tidak memerlukan fa'il biasa, sebaliknya menukar keseluruhan ayat ismiah menjadi isim dan khabarnya sendiri. Keluarga ini termasuk antara lain كَانَ (ialah), لَيْسَ (bukanlah), ظَلَّ (kekal) dan أَصْبَحَ (menjadi) — ditambah ahli lain seperti صَارَ, أَمْسَى atau مَا زَالَ.",
+        "Isim Kana kekal, seperti mubtada' biasa, dalam i'rab rafa'. Perbezaan penentunya: khabar Kana berada dalam i'rab nasab — walhal khabar dalam ayat ismiah biasa sepatutnya berada dalam i'rab rafa'.",
+        "Jika khabar Kana itu sendiri merupakan satu ayat penuh (misalnya ayat fi'liah dengan fi'il mudari'), kesan nasab itu tidak kelihatan pada sebarang akhiran — namun peranan khabar tetap terpakai."
+      ],
+      "erkennung": [
+        "Sesebuah ayat kelihatan 'beralih' menjadi struktur Kana sebaik sahaja selepas كَانَ/salah seorang kakaknya terdapat isim/kata ganti nama dalam i'rab rafa' (isim), diikuti sesuatu dalam i'rab nasab atau sebuah ayat penuh (khabar), dan bukannya perkataan rafa' kedua yang biasanya diharapkan dalam ayat ismiah biasa.",
+        "Dalam sintaksis korpus, isim dan khabar keluarga ini muncul sebagai hubungan tersendiri dengan pengawal terlampir dalam kurungan sudut berganda, seperti subj<<kan>> dan pred<<kan>> — fungsi relationBasis() daripada grammatik.ts menguraikan bentuk ini kepada nilai asas (subj/pred) dan pengawal (contohnya kan, ykon)."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 10,
+          "wort": 12,
+          "zeigt": "يَكْذِبُونَ membawa hubungan \"pred <<kan>>\" (nilai asas pred, pengawal kan)",
+          "warum": "membuktikan khabar Kana sebagai satu ayat fi'liah penuh ('...kerana mereka sentiasa berdusta') selepas كَانُوا۟ dalam ayat yang sama"
+        },
+        {
+          "sure": 2,
+          "vers": 247,
+          "wort": 15,
+          "zeigt": "ٱلْمُلْكُ membawa hubungan \"subj <<ykon>>\" (nilai asas subj, pengawal ykon — bentuk mudari' bagi كَانَ)",
+          "warum": "membuktikan isim salah satu kakak Kana (يَكُونُ) dalam i'rab rafa' ('bagaimana pula dia boleh memiliki kerajaan ke atas kami')"
+        }
+      ],
+      "lernen": [
+        "Pelajari dahulu keempat-empat fi'il yang dituntut di sini كَانَ، لَيْسَ، ظَلَّ، أَصْبَحَ dengan makna asasnya, barulah hukum nasab bagi khabar.",
+        "Berlatih pada beberapa ayat menamakan isim Kana dan khabar Kana secara berasingan — terutamanya apabila khabar itu sendiri sebuah ayat.",
+        "Bandingkan satu ayat Kana dengan ayat yang sama tanpa كَانَ, untuk merasai secara terus perbezaan i'rab pada khabar."
+      ],
+      "tabellen": [],
+      "siehe": ["inna-wa-akhawatuha", "mubtada", "khabar"]
+    },
+
+    "inna-wa-akhawatuha": {
+      "titel": "Inna wa Akhawatuha",
+      "ar": "إِنَّ وَأَخَوَاتُهَا",
+      "umschrift": "Inna wa Akhawatuha",
+      "erklaerung": [
+        "Inna dan kakak-kakaknya ialah huruf nasab — zarah yang meletakkan sesebuah isim, sama ada serta-merta atau selepas frasa jar-majrur yang disisipkan ataupun mudaf khusus, ke dalam i'rab nasab, manakala khabar berkaitan kekal dalam i'rab rafa'. Dengan itu ia memberi kesan yang bertentangan sepenuhnya dengan Kana dan kakak-kakaknya.",
+        "Keluarga ini termasuk إِنَّ/أَنَّ (sesungguhnya/bahawa, bersifat penegas), كَأَنَّ (seolah-olah, bersifat perbandingan), لَكِنَّ (tetapi, bersifat percanggahan), لَيْتَ (alangkah baiknya, bersifat harapan) dan لَعَلَّ (moga-moga/mungkin, bersifat jangkaan) — setiap satu membawa nuansa makna tersendiri tetapi kesan tatabahasa yang sama.",
+        "Isim bagi sesuatu huruf nasab kekal dari segi makna sebagai pelaku/subjek pernyataan dan diterjemahkan sedemikian, walaupun secara rasmi ia berada dalam i'rab nasab — akhirannya berubah, peranannya tidak."
+      ],
+      "erkennung": [
+        "Sejurus selepas إِنَّ/أَنَّ (atau selepas frasa jar-majrur yang disisipkan) terdapat isim atau kata ganti nama terikat berakhiran fathah (isim), kemudian diikuti perkataan bertanda rafa' atau sebuah ayat penuh (khabar).",
+        "Dalam sintaksis korpus, isim dan khabar keluarga ini turut muncul sebagai subj<<...>>/pred<<...>> dengan pengawal in, an, ka'ana, lakin atau lel/la — turut boleh diuraikan menerusi relationBasis()."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 20,
+          "wort": 21,
+          "zeigt": "ٱللَّهَ membawa hubungan \"subj<<in>>\" (nilai asas subj, pengawal in)",
+          "warum": "membuktikan isim Inna dalam i'rab nasab ('sesungguhnya Allah...')"
+        },
+        {
+          "sure": 2,
+          "vers": 20,
+          "wort": 25,
+          "zeigt": "قَدِيرٌ membawa hubungan \"pred<<in>>\" (nilai asas pred, pengawal in)",
+          "warum": "membuktikan dalam ayat yang sama khabar Inna berkaitan dalam i'rab rafa' ('...Maha Berkuasa atas segala sesuatu') — ayat yang sama turut digunakan sebagai contoh dalam bab huruf nasab"
+        }
+      ],
+      "lernen": [
+        "Pelajari keenam-enam kakak berserta nuansa makna masing-masing (penegas/perbandingan/percanggahan/harapan/jangkaan), bukan sekadar sebagai 'kata penguat' yang boleh saling ditukar ganti.",
+        "Berlatih menamakan isim dan khabar secara berasingan dalam ayat yang sama serta menjelaskan akhiran masing-masing.",
+        "Bandingkan satu ayat Inna dengan satu ayat Kana: di mana isim, di mana khabar — dan dalam i'rab apakah masing-masing?"
+      ],
+      "tabellen": [],
+      "siehe": ["kaana-wa-akhawatuha", "verneinung"]
+    },
+
+    "faail": {
+      "titel": "Fa'il",
+      "ar": "فَاعِل",
+      "umschrift": "Faa'il",
+      "erklaerung": [
+        "Fa'il ialah pelaku/subjek sesebuah ayat fi'liah dan sentiasa berada dalam i'rab rafa'. Dalam susunan kata baku bahasa Arab, ia mengikuti fi'il (fi'il – fa'il – objek), bukan sebaliknya.",
+        "Setiap fi'il turut membawa pelaku dalaman tersendiri (kata ganti nama terikat) yang terkandung dalam fi'il itu sendiri. Pelaku dalaman ini boleh digantikan dengan fa'il luaran yang disebut secara jelas, apabila fi'il berada dalam bentuk dia (lelaki/perempuan) dan isim selepasnya berada dalam i'rab rafa'."
+      ],
+      "erkennung": [
+        "Sebuah isim atau kata ganti nama bertanda rafa' yang terletak sejurus atau tidak lama selepas fi'il, dan menjawab soalan 'siapa yang melakukannya?'.",
+        "Jika subjek yang mungkin itu terletak SEBELUM fi'il, ia bukan lagi fa'il, sebaliknya mubtada' dengan ayat fi'liah sebagai khabarnya."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 7,
+          "wort": 2,
+          "zeigt": "ٱللَّهُ membawa hubungan Subj",
+          "warum": "membuktikan fa'il dalam i'rab rafa' selepas fi'il ('Allah telah mematerikan hati mereka')"
+        },
+        {
+          "sure": 2,
+          "vers": 10,
+          "wort": 5,
+          "zeigt": "ٱللَّهُ membawa hubungan Subj",
+          "warum": "membuktikan fa'il kedua ('maka Allah menambahkan penyakit mereka')"
+        }
+      ],
+      "lernen": [
+        "Cari dalam beberapa ayat dahulu fi'ilnya, kemudian sejurus selepasnya perkataan pertama bertanda rafa' — itu lazimnya fa'il.",
+        "Berlatih membezakan pelaku dalaman (tersembunyi dalam fi'il) dan pelaku luaran (disebut secara jelas) pada ayat yang ada dan tiada fa'il yang disebut.",
+        "Bandingkan satu ayat berfa'il dengan ayat di mana isim yang sama menjadi mubtada' sebelum fi'il — i'rab kekal rafa', tetapi peranannya berubah."
+      ],
+      "tabellen": [],
+      "siehe": ["naib-al-fail", "mubtada"]
+    },
+
+    "naib-al-fail": {
+      "titel": "Naib Fa'il",
+      "ar": "نَائِب الفَاعِل",
+      "umschrift": "Naa'ib al-Faa'il",
+      "erklaerung": [
+        "Apabila fi'il berada dalam bentuk pasif (fi'il mabni li al-majhul), fa'il sebenar gugur atau kekal tidak diketahui. Tempatnya diambil alih oleh naib fa'il — secara literal 'wakil pelaku' — biasanya unsur yang menjadi objek dalam ayat aktif. Ia mengambil alih i'rab rafa' fa'il.",
+        "Fi'il itu sendiri menunjukkan binaan pasif (pada mudari' misalnya baris dhommah pada huruf pertama), naib fa'il pula mengikutinya seperti fa'il biasa dalam i'rab rafa'."
+      ],
+      "erkennung": [
+        "Sebuah fi'il berbentuk pasif, diikuti isim bertanda rafa' yang dari segi makna lebih menyerupai objek perbuatan itu (bukan pelakunya).",
+        "Dalam sintaksis korpus, perkataan ini membawa hubungan tersendiri Pass, bukannya hubungan fa'il biasa Subj."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 48,
+          "wort": 12,
+          "zeigt": "شَفَٰعَةٌ membawa hubungan Pass",
+          "warum": "membuktikan naib fa'il selepas fi'il pasif يُقْبَلُ ('dan tidak diterima daripadanya sebarang syafaat') — dari segi makna, unsur yang menjadi objek dalam ayat aktif"
+        },
+        {
+          "sure": 2,
+          "vers": 61,
+          "wort": 39,
+          "zeigt": "ٱلذِّلَّةُ membawa hubungan Pass",
+          "warum": "membuktikan naib fa'il kedua selepas fi'il pasif ضُرِبَتْ ('dan kehinaan ditimpakan ke atas mereka')"
+        }
+      ],
+      "lernen": [
+        "Bina bentuk pasif bagi sesebuah ayat aktif yang telah dikenali dan perhatikan bagaimana objek sebelumnya bertukar menjadi naib fa'il dalam i'rab rafa'.",
+        "Beri perhatian khusus pada corak baris fi'il (corak dhommah) sebagai petunjuk pertama fi'il pasif, sebelum mencari naib fa'il.",
+        "Bandingkan contoh di sini dengan contoh fa'il biasa — kedua-duanya dalam i'rab rafa', tetapi dengan peranan makna yang berbeza."
+      ],
+      "tabellen": [],
+      "siehe": ["faail"]
+    },
+
+    "maful-bihi": {
+      "titel": "Maf'ul Bih",
+      "ar": "مَفْعُول بِه",
+      "umschrift": "Maf'ool bihi",
+      "erklaerung": [
+        "Maf'ul bih ialah objek langsung sesebuah ayat fi'liah, sentiasa berada dalam i'rab nasab, dan menjawab soalan 'siapa/kepada siapa/apa'. Ia merupakan jenis maf'ul yang paling kerap dalam al-Quran, jauh mengatasi jenis lain.",
+        "Kata ganti nama terikat yang dicantumkan pada sesuatu fi'il sentiasa merupakan maf'ul bih, walaupun ia tidak kelihatan seperti perkataan yang berdiri sendiri."
+      ],
+      "erkennung": [
+        "Sebuah isim atau kata ganti nama bertanda nasab selepas fi'il dan fa'il, yang terus terkesan oleh perbuatan itu.",
+        "Ujian soalan: bolehkah perkataan itu ditanya dengan 'siapa/apa yang dilakukan oleh fa'il?'"
+      ],
+      "belege": [
+        {
+          "sure": 1,
+          "vers": 6,
+          "wort": 2,
+          "zeigt": "ٱلصِّرَٰطَ membawa hubungan Obj",
+          "warum": "membuktikan maf'ul bih dalam i'rab nasab selepas kata perintah ٱهْدِنَا ('tunjukilah kami jalan yang lurus')"
+        },
+        {
+          "sure": 1,
+          "vers": 5,
+          "wort": 1,
+          "zeigt": "إِيَّاكَ membawa hubungan Obj",
+          "warum": "membuktikan maf'ul bih sebagai kata ganti nama berasingan yang didahulukan ('hanya Engkaulah yang kami sembah')"
+        }
+      ],
+      "lernen": [
+        "Berlatih ujian soalan ('siapa/apa?') pada beberapa ayat dan tandakan fi'il, fa'il serta maf'ul bih secara berasingan setiap kali.",
+        "Cari secara khusus kata ganti nama yang dicantumkan pada fi'il dan namakan secara jelas sebagai maf'ul bih.",
+        "Bandingkan maf'ul bih dengan maf'ul mutlak dan maf'ul li ajlih, supaya ketiga-tiga jenis maf'ul ini tidak tercampur aduk."
+      ],
+      "tabellen": [],
+      "siehe": ["faail", "maful-mutlaq", "maful-liajlihi"]
+    },
+
+    "maful-mutlaq": {
+      "titel": "Maf'ul Mutlak",
+      "ar": "مَفْعُول مُطْلَق",
+      "umschrift": "Maf'ool Mutlaq",
+      "erklaerung": [
+        "Maf'ul mutlak ialah masdar (kata terbitan daripada fi'il) yang membawa akar yang sama dengan fi'il yang disertainya, dan berada dalam i'rab nasab. Ia tidak menjawab 'siapa/apa', sebaliknya menegaskan, menghuraikan atau menyatakan bilangan bagi perbuatan itu sendiri sekali lagi.",
+        "Tiga fungsi mungkin berlaku: sebagai perkataan tunggal, ia menegaskan perbuatan; bersama kata sifat, ia menghuraikannya dengan lebih terperinci; sebagai kata bilangan, ia menyatakan berapa kali perbuatan itu berlaku."
+      ],
+      "erkennung": [
+        "Sebuah isim bertanda nasab yang membawa huruf akar yang sama dengan fi'il sebelumnya — bukan isim lain, sebaliknya pengulangan akar fi'il sebagai isim.",
+        "Dari segi tatabahasa, tidak boleh ditanya dengan 'siapa/apa', sebaliknya dengan 'sejauh mana/dengan cara bagaimana/berapa kali'."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 25,
+          "wort": 18,
+          "zeigt": "رِّزْقًا membawa hubungan cog",
+          "warum": "membuktikan maf'ul mutlak dengan akar yang sama رزق seperti fi'il sebelumnya رُزِقُوا۟ ('setiap kali mereka diberi rezeki daripadanya')"
+        },
+        {
+          "sure": 2,
+          "vers": 245,
+          "wort": 10,
+          "zeigt": "أَضْعَافًا membawa hubungan cog",
+          "warum": "membuktikan maf'ul mutlak dengan akar yang sama ضعف seperti fi'il sebelumnya يُضَٰعِفَهُ ('supaya Dia melipatgandakannya untuknya berganda-ganda')"
+        }
+      ],
+      "lernen": [
+        "Periksa dahulu huruf akar setiap isim nasab yang disyaki, terhadap fi'il sebelumnya — jika sepadan, kemungkinan besar itu maf'ul mutlak.",
+        "Cari secara khusus ketiga-tiga fungsi (penegasan/huraian/pengiraan) pada ayat-ayat yang berlainan.",
+        "Bandingkan maf'ul mutlak secara sedar dengan maf'ul bih — hanya salah satu daripada keduanya boleh ditanya dengan 'siapa/apa'."
+      ],
+      "tabellen": [],
+      "siehe": ["maful-bihi"]
+    },
+
+    "maful-liajlihi": {
+      "titel": "Maf'ul li Ajlih",
+      "ar": "المَفْعُول لِأَجْلِه",
+      "umschrift": "al-Maf'ool li-Ajlihi",
+      "erklaerung": [
+        "Maf'ul li ajlih (turut disebut maf'ul lah) ialah masdar dalam i'rab nasab yang menyatakan SEBAB atau motif di sebalik perbuatan utama — ia menjawab soalan 'mengapa?'. Berbeza daripada maf'ul mutlak, ia TIDAK berkongsi akar yang sama dengan fi'il utama, sebaliknya menamakan motif berasingan yang lazimnya abstrak (ketakutan, keinginan, kedengkian ...).",
+        "Dengan itu maf'ul li ajlih berada di antara dua jenis maf'ul yang lain: seperti maf'ul mutlak, ia sekadar masdar dalam i'rab nasab tanpa peranan objek tersendiri; namun seperti maf'ul bih, ia dari segi makna berkaitan dengan motif di sebalik perbuatan itu, bukan pengulangannya."
+      ],
+      "erkennung": [
+        "Sebuah isim nakirah yang abstrak dalam i'rab nasab selepas fi'il utama, yang menamakan sesuatu emosi atau motif dan menjawab soalan 'atas sebab apa?'.",
+        "Pembeza daripada maf'ul mutlak: akarnya berbeza daripada fi'il utama."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 19,
+          "wort": 15,
+          "zeigt": "حَذَرَ membawa hubungan prp",
+          "warum": "membuktikan maf'ul li ajlih sebagai penyataan sebab ('mereka menyumbat jari ke dalam telinga mereka ... kerana takutkan kematian')"
+        },
+        {
+          "sure": 2,
+          "vers": 109,
+          "wort": 12,
+          "zeigt": "حَسَدًا membawa hubungan prp",
+          "warum": "membuktikan maf'ul li ajlih kedua ('kebanyakan Ahli Kitab ingin mengembalikan kamu kepada kekufuran, kerana kedengkian dalam diri mereka')"
+        }
+      ],
+      "lernen": [
+        "Berlatih ujian soalan 'mengapa?' secara khusus pada beberapa ayat, dan bezakan secara sedar daripada ujian soalan 'siapa/apa?' bagi maf'ul bih.",
+        "Kumpulkan contoh isim motif abstrak (ketakutan, kesegaan, harapan ...) dalam i'rab nasab sendiri.",
+        "Bandingkan contoh di sini dengan contoh maf'ul mutlak dan nyatakan perbezaan akarnya."
+      ],
+      "tabellen": [],
+      "siehe": ["maful-mutlaq"]
+    },
+
+    "mubtada": {
+      "titel": "Mubtada' (Subjek Ayat Ismiah)",
+      "ar": "مُبْتَدَأ",
+      "umschrift": "Mubtada",
+      "erklaerung": [
+        "Mubtada' ialah subjek/tajuk sesebuah ayat ismiah, berada dalam i'rab rafa', dan lazimnya terletak pada awal ayat. Namanya secara literal bermaksud 'sesuatu yang dengannya dimulakan'.",
+        "Daripada tiga unsur yang mungkin dalam ayat ismiah (mubtada', khabar, dan muta'alaq bi al-khabar), mubtada' sahaja yang tidak boleh ditinggalkan — khabar dan muta'alaqnya boleh digugurkan dalam keadaan tertentu jika dapat difahami daripada konteks.",
+        "Malah sesebuah frasa penuh (misalnya idafah atau pasangan mausuf-sifah) juga boleh berfungsi sebagai mubtada'."
+      ],
+      "erkennung": [
+        "Perkataan pertama bertanda rafa' dalam sesebuah ayat ismiah — atau, jika ayat itu bermula dengan huruf nasab seperti إِنَّ, huruf itu bersama isimnya.",
+        "Dikenali secara struktur juga kerana kemudian dalam ayat yang sama terdapat khabar yang merujuk kembali kepada mubtada' sebagai kata induknya (head)."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 2,
+          "wort": 1,
+          "zeigt": "ذَٰلِكَ ialah mubtada', yang kepadanya khabar هُدًى (kata 6, hubungan Pred) dalam ayat yang sama merujuk kembali",
+          "warum": "membuktikan mubtada' sebagai induk sesebuah ayat ismiah ('Kitab ini ... adalah petunjuk bagi orang yang bertakwa') — nilai head khabar itu merujuk terus kembali kepada perkataan ini"
+        },
+        {
+          "sure": 2,
+          "vers": 19,
+          "wort": 17,
+          "zeigt": "ٱللَّهُ (dalam perkataan وَٱللَّهُ) ialah mubtada', yang kepadanya khabar مُحِيطٌۢ (kata 18, hubungan Pred) merujuk kembali",
+          "warum": "membuktikan pasangan mubtada'-khabar kedua ('dan Allah meliputi orang-orang kafir')"
+        }
+      ],
+      "lernen": [
+        "Cari dalam sesebuah ayat ismiah dahulu perkataan rafa' yang pertama — itu hampir selalu mubtada'.",
+        "Berlatih pada ayat tanpa khabar yang kelihatan, melengkapkan 'ialah tersembunyi' antara mubtada' dengan muta'alaq bi al-khabar yang mengikutinya.",
+        "Bandingkan pasangan mubtada'-khabar dalam ayat ismiah biasa dengan yang terdapat dalam ayat Kana dan Inna, untuk memahami perubahan i'rab pada khabar."
+      ],
+      "tabellen": [],
+      "siehe": ["khabar", "kaana-wa-akhawatuha", "inna-wa-akhawatuha"]
+    },
+
+    "khabar": {
+      "titel": "Khabar (Predikat Ayat Ismiah)",
+      "ar": "خَبَر",
+      "umschrift": "Chabar",
+      "erklaerung": [
+        "Khabar menyampaikan pernyataan tentang mubtada' dan menjawab soalan 'apa hal mubtada'?'. Dalam ayat ismiah biasa ia berada dalam i'rab rafa'; bersama Kana dan kakak-kakaknya ia beralih ke i'rab nasab, bersama Inna dan kakak-kakaknya ia kekal dalam i'rab rafa'.",
+        "Khabar boleh berupa satu perkataan, satu frasa penuh (idafah, jar-majrur, mausuf-sifah), atau malah sebuah ayat lengkap (ismiah atau fi'liah). Jika ia sendiri sebuah ayat, ia mesti sepadan dengan mubtada' dari segi bilangan dan jantina.",
+        "Antara mubtada' dan khabar, bahasa Arab tidak mempunyai perkataan kelihatan bagi 'ialah' — ia perlu ditambah semasa menterjemah."
+      ],
+      "erkennung": [
+        "Unsur kedua bertanda rafa' dalam sesebuah ayat ismiah (atau unsur nasab dalam ayat Kana), yang dari segi makna membuat pernyataan tentang mubtada'.",
+        "Dalam sintaksis korpus, khabar sering membawa hubungan Pred, dengan rujukan head kembali kepada mubtada'nya."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 2,
+          "wort": 6,
+          "zeigt": "هُدًى membawa hubungan Pred dengan rujukan head kepada kata 1 (mubtada' ذَٰلِكَ)",
+          "warum": "membuktikan khabar sesebuah ayat ismiah biasa dalam i'rab rafa' ('...adalah petunjuk bagi orang yang bertakwa')"
+        },
+        {
+          "sure": 2,
+          "vers": 19,
+          "wort": 18,
+          "zeigt": "مُحِيطٌۢ membawa hubungan Pred dengan rujukan head kepada kata 17 (mubtada' ٱللَّهُ)",
+          "warum": "membuktikan contoh khabar kedua ('dan Allah meliputi orang-orang kafir') — ayat yang sama turut digunakan sebagai bukti kedua dalam entri mubtada'"
+        }
+      ],
+      "lernen": [
+        "Cari khabar sentiasa HANYA SELEPAS mubtada' ditemui — kedua-duanya saling berkaitan dan bersama-sama membentuk satu pernyataan yang lengkap.",
+        "Berlatih pada ayat berkhabar bentuk ayat, memeriksa kesepadanan bilangan/jantina antara mubtada' dengan ayat yang disisipkan itu.",
+        "Bandingkan khabar yang sama dalam ayat ismiah biasa dan dalam ayat Kana, untuk melihat secara terus perubahan i'rab (rafa' berbanding nasab)."
+      ],
+      "tabellen": [],
+      "siehe": ["mubtada"]
+    },
+
+    "sifah": {
+      "titel": "Sifah (Na'at)",
+      "ar": "صِفَة",
+      "umschrift": "Sifah",
+      "erklaerung": [
+        "Sifah menghuraikan sesuatu ciri mausuf (isim yang diterangkan) dan mesti sepadan dengannya pada KEEMPAT-EMPAT ciri: i'rab, bilangan, jantina dan kepastian (ma'rifah/nakirah). Kesepadanan empat perkara secara lengkap inilah yang membezakan sifah daripada badal (lihat entri berkenaan): badal hanya perlu berkongsi i'rab, tiada satu pun daripada tiga ciri lain.",
+        "Sifah sentiasa mengikut mausuf, tetapi tidak semestinya mengikutinya secara serta-merta."
+      ],
+      "erkennung": [
+        "Ujian empat perkara: adakah i'rab, bilangan, jantina dan kepastian sifah serta mausuf sepadan sepenuhnya? Jika ya, itu satu frasa mausuf-sifah.",
+        "Ujian kandungan berbanding badal: adakah perkataan kedua hanya menghuraikan satu KUALITI perkataan pertama (indah, besar, beriman ...), berbanding menamakan identiti yang lebih tepat bagi benda yang sama? Jika ya, itu sifah, bukan badal."
+      ],
+      "belege": [
+        {
+          "sure": 1,
+          "vers": 1,
+          "wort": 3,
+          "zeigt": "ٱلرَّحْمَٰنِ membawa hubungan Adj dengan rujukan head kepada kata 2 (ٱللَّهِ)",
+          "warum": "membuktikan sifah yang sepadan sepenuhnya dengan mausufnya (ma'rifah, rafa'/jar mengikut ayat, mudzakkar, mufrad): 'dengan nama Allah, Yang Maha Pemurah'"
+        },
+        {
+          "sure": 1,
+          "vers": 1,
+          "wort": 4,
+          "zeigt": "ٱلرَّحِيمِ membawa hubungan Adj dengan rujukan head kepada kata 2 (ٱللَّهِ)",
+          "warum": "membuktikan sifah kedua bagi mausuf yang sama dalam ayat yang sama ('... Yang Maha Mengasihani') — dua sifah berturutan tanpa sebarang huruf 'ataf di antaranya"
+        }
+      ],
+      "lernen": [
+        "Berlatih ujian empat perkara secara nyata pada beberapa pasangan mausuf-sifah, sehingga ia berlaku secara automatik.",
+        "Kumpulkan contoh penyangkal: cari pasangan kata yang pada pandangan pertama kelihatan seperti sifah tetapi berbeza pada i'rab — ia hanya boleh berupa badal.",
+        "Bandingkan contoh di sini secara terus dengan contoh badal daripada ayat yang sama, untuk merasai perbezaan antara menghuraikan dan menamakan semula."
+      ],
+      "tabellen": [],
+      "siehe": ["badal"]
+    },
+
+    "haal": {
+      "titel": "Hal (Penerang Keadaan)",
+      "ar": "حَال",
+      "umschrift": "Haal",
+      "erklaerung": [
+        "Hal menghuraikan KEADAAN fa'il, maf'ul, atau unsur ayat lain TEPAT PADA SAAT perbuatan utama berlaku. Ia berada dalam i'rab nasab apabila berupa satu perkataan, dan lazimnya bersifat nakirah dalam keadaan itu.",
+        "Hal juga boleh berupa satu ayat keadaan yang penuh (ayat ismiah atau fi'liah), selalunya dimulakan dengan apa yang disebut waw al-haliyah (وَ keadaan).",
+        "Pembeza daripada tamyiz (lihat entri berkenaan): hal menghuraikan satu situasi sertaan yang SEMENTARA ('bagaimana/dalam keadaan apa'), manakala tamyiz memastikan JENIS atau JUMLAH ('jenis apa/berapa banyak')."
+      ],
+      "erkennung": [
+        "Satu perkataan nakirah dalam i'rab nasab (atau satu ayat yang dimulakan dengan وَ) sejurus selepas perbuatan utama, yang memberikan huraian situasi sertaan serentak dan menjawab soalan 'bagaimana/dalam keadaan apa?'.",
+        "Ujian pembeza daripada tamyiz: bolehkah perkataan itu dijelaskan dengan 'ketika dia/ia...'? Jika ya, itu hal. Bolehkah pula dijelaskan dengan 'dari segi/berkenaan dengan...'? Jika ya, itu tamyiz."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 22,
+          "wort": 22,
+          "zeigt": "وَأَنتُمْ (bersama تَعْلَمُونَ yang mengikutinya, kata 23, hubungan circ atau Pred)",
+          "warum": "membuktikan hal sebagai satu ayat keadaan yang penuh ('...sedangkan kamu mengetahui') bagi perbuatan sebelumnya dalam ayat yang sama"
+        },
+        {
+          "sure": 2,
+          "vers": 25,
+          "wort": 27,
+          "zeigt": "مُتَشَٰبِهًا membawa hubungan circ",
+          "warum": "membuktikan hal sepatah kata dalam i'rab nasab ('dan diberikan kepada mereka [buah-buahan] yang serupa')"
+        }
+      ],
+      "lernen": [
+        "Berlatih ujian pembeza daripada tamyiz ('ketika...' berbanding 'dari segi...') pada beberapa ayat.",
+        "Cari secara khusus ayat yang dimulakan وَ sejurus selepas fi'il utama dan periksa sama ada ia memberikan huraian situasi sertaan serentak.",
+        "Kumpulkan contoh hal sepatah kata mahupun hal berbentuk ayat, supaya mengenali kedua-dua bentuk binaan."
+      ],
+      "tabellen": [],
+      "siehe": ["tamyiz"]
+    },
+
+    "tamyiz": {
+      "titel": "Tamyiz (Penjelas)",
+      "ar": "تَمْيِيز",
+      "umschrift": "Tamyeez",
+      "erklaerung": [
+        "Tamyiz ialah isim nakirah, mufrad, dalam i'rab nasab yang memperjelaskan sesuatu pernyataan yang sebaliknya kabur atau berbilang makna — biasanya selepas sesuatu bilangan, sukatan, perbandingan (isim tafdil), atau ungkapan kabur seperti 'berapa banyak'. Ia menjawab soalan 'jenis apa/berapa banyak?'.",
+        "Selepas bilangan sebelas ke atas (kecuali 100 dan 1000), objek yang dikira (al-ma'dud) itu sendiri menjadi tamyiz — nakirah, mufrad, dalam i'rab nasab.",
+        "Pembeza daripada hal: tamyiz menamakan satu JENIS atau kategori, bukan situasi sertaan yang sementara, dan sentiasa satu isim tunggal, tidak pernah satu ayat penuh."
+      ],
+      "erkennung": [
+        "Satu isim nakirah, mufrad, dalam i'rab nasab, sejurus selepas sesuatu bilangan, sukatan, atau kata perbandingan, yang memperjelaskan APA yang dikira/disukat/dibandingkan.",
+        "Tidak pernah satu ayat penuh (ini terus membezakan tamyiz daripada hal, yang juga boleh berbentuk ayat)."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 60,
+          "wort": 13,
+          "zeigt": "عَيْنًا membawa hubungan Spec",
+          "warum": "membuktikan tamyiz selepas sesuatu bilangan ('lalu terpancarlah daripadanya dua belas mata air') — عَيْنًا memperjelaskan apa yang dimaksudkan dengan 'dua belas'"
+        },
+        {
+          "sure": 2,
+          "vers": 26,
+          "wort": 28,
+          "zeigt": "مَثَلًا membawa hubungan Spec",
+          "warum": "membuktikan tamyiz yang memperjelaskan pernyataan yang sebaliknya kabur ('sesungguhnya Allah tidak malu membuat perumpamaan — sekalipun seekor nyamuk')"
+        }
+      ],
+      "lernen": [
+        "Berlatih secara khusus pada kata bilangan sebelas ke atas: cari isim nakirah mufrad dalam i'rab nasab yang mengikutinya dan namakan sebagai tamyiz.",
+        "Bandingkan contoh di sini dengan contoh hal, untuk mengukuhkan perbezaan antara 'jenis apa/berapa banyak' dengan 'bagaimana/dalam keadaan apa'.",
+        "Cari contoh tamyiz lain selepas isim tafdil (bentuk perbandingan), untuk merasai fungsinya di luar kata bilangan."
+      ],
+      "tabellen": [],
+      "siehe": ["haal"]
+    },
+
+    "badal": {
+      "titel": "Badal (Aposisi)",
+      "ar": "بَدَل",
+      "umschrift": "Badal",
+      "erklaerung": [
+        "Badal ialah binaan isim-isim di mana satu isim kedua mengikuti terus isim pertama dan menjelaskan atau memperincikannya dengan lebih lanjut — seolah-olah terdapat 'iaitu ...' atau 'yang aku maksudkan ...' yang tidak diucapkan di antara kedua-duanya.",
+        "Nama badal ('pertukaran/ganti') datang daripada hakikat bahawa setiap satu daripada kedua-dua perkataan itu, dengan sendirinya, sudah menjadikan ayat itu lengkap dan bermakna — seseorang boleh 'menukar ganti' satu dengan yang lain tanpa ayat itu menjadi tidak lengkap. Namun apabila digabungkan, ayat menjadi lebih tepat dan memberi lebih maklumat.",
+        "Hukum tatabahasa yang menentukan: kedua-dua isim badal mesti berada dalam i'rab yang SAMA (kedua-duanya rafa', kedua-duanya nasab, atau kedua-duanya jar). Itu satu-satunya syarat — berbeza daripada sifah, bilangan, jantina atau kepastian TIDAK perlu sepadan.",
+        "Inilah tepat sekali risiko kekeliruan terbesar dalam pengajaran: sesuatu badal selalunya kelihatan pada pandangan permukaan seperti sifah, kerana kedua-dua binaan terdiri daripada dua isim berturutan. Bezanya terletak pada tujuan: sifah MENGHURAIKAN satu ciri mausuf (sepadan dengannya pada keempat-empat ciri); badal pula MENAMAKAN semula benda yang sama dengan lebih tepat atau menukarnya dengan sebutan yang lebih tepat (hanya sepadan pada i'rab). Ujian 'iaitu ...' membezakan kedua-duanya dengan boleh dipercayai: jika 'iaitu' boleh disisipkan dengan bermakna di antara kedua-dua perkataan, itu badal; jika perkataan kedua hanya menghuraikan satu kualiti perkataan pertama, itu sifah."
+      ],
+      "erkennung": [
+        "Ujian 'iaitu': adakah bermakna menyisipkan 'iaitu' atau 'yakni' di antara kedua-dua isim? Jika ya, itu badal.",
+        "Ujian i'rab: adakah kedua-dua isim berada dalam i'rab yang sama (rafa'/nasab/jar)? Itu syarat yang perlu — tetapi BERBEZA daripada sifah, ketiga-tiga ciri lain (bilangan, jantina, kepastian) tidak perlu sepadan.",
+        "Ujian gantian: bolehkah salah satu daripada kedua-dua perkataan itu digugurkan dan ayat itu kekal lengkap serta betul dengan sendirinya? Jika ya, kemungkinan besar itu badal."
+      ],
+      "belege": [
+        {
+          "sure": 1,
+          "vers": 2,
+          "wort": 3,
+          "zeigt": "رَبِّ membawa hubungan App dengan rujukan head kepada kata 2 (لِلَّهِ)",
+          "warum": "membuktikan badal dalam i'rab jar: 'Segala puji bagi Allah, [iaitu] Tuhan sekalian alam' — رَبِّ memperjelaskan siapa yang dimaksudkan dengan لِلَّهِ, kedua-duanya dalam i'rab jar yang sama"
+        },
+        {
+          "sure": 1,
+          "vers": 7,
+          "wort": 1,
+          "zeigt": "صِرَٰطَ membawa hubungan App",
+          "warum": "membuktikan badal dalam i'rab nasab yang merentasi sempadan ayat: 'jalan yang lurus — [iaitu] jalan orang yang Engkau kurniakan nikmat kepada mereka' daripada ayat 6 sebelumnya"
+        }
+      ],
+      "lernen": [
+        "Ingat dahulu ujian 'iaitu' dan gunakannya secara konsisten pada setiap pasangan isim berturutan, sebelum memikirkan sifah.",
+        "Cari secara khusus contoh penyangkal: ambil satu contoh mausuf-sifah yang telah dikenali dan periksa mengapa ujian 'iaitu' TIDAK berfungsi di sana.",
+        "Berlatih pada kedua-dua bukti di sini membuktikan secara jelas kesepadanan i'rab (jar pada ayat 2, nasab pada ayat 7), walaupun kedua-dua pasangan kata berbeza pada kepastian/panjang.",
+        "Bina koleksi kecil sendiri dengan tiga hingga lima contoh badal tambahan dan namakan i'rab yang dikongsi bagi setiap satu."
+      ],
+      "tabellen": [],
+      "siehe": ["sifah", "mudaf-ilayh"]
+    },
+
+    "mudaf-ilayh": {
+      "titel": "Mudaf Ilaih",
+      "ar": "مُضَاف إِلَيْه",
+      "umschrift": "Mudaaf Ilayh",
+      "erklaerung": [
+        "Dalam sesebuah idafah (frasa pemilikan, contohnya 'kitab Allah'), mudaf ilaih ialah perkataan kedua — 'pemilik' itu. Ia sentiasa berada dalam i'rab jar, tidak kira i'rab apa yang dibawa oleh perkataan pertama (mudaf) itu sendiri.",
+        "Mudaf (perkataan pertama, 'yang dimiliki') tidak pernah membawa alif lam dan tanwin serentak — ia 'meminjam' kepastiannya (ma'rifah) daripada mudaf ilaih."
+      ],
+      "erkennung": [
+        "Sebuah isim bertanda jar sejurus selepas isim lain, yang tidak membawa alif lam mahupun tanwin.",
+        "Menjawab soalan 'kepunyaan siapa?' berkaitan perkataan sebelumnya."
+      ],
+      "belege": [
+        {
+          "sure": 1,
+          "vers": 1,
+          "wort": 2,
+          "zeigt": "ٱللَّهِ membawa hubungan Poss dengan rujukan head kepada kata 1 (بِسْمِ)",
+          "warum": "membuktikan mudaf ilaih dalam frasa idafah pertama al-Quran ('dengan nama Allah') — بِسْمِ sendiri tidak membawa alif lam mahupun tanwin"
+        },
+        {
+          "sure": 1,
+          "vers": 2,
+          "wort": 4,
+          "zeigt": "ٱلْعَٰلَمِينَ membawa hubungan Poss dengan rujukan head kepada kata 3 (رَبِّ)",
+          "warum": "membuktikan mudaf ilaih kedua ('Tuhan sekalian alam') dalam bab al-Fatihah yang sama"
+        }
+      ],
+      "lernen": [
+        "Berlatih pada beberapa ayat mencari dahulu perkataan pertama yang tiada alif lam dan tanwin — ia menandakan sesebuah idafah, perkataan jar yang mengikutinya ialah mudaf ilaih.",
+        "Bina rantaian dengan beberapa idafah yang tersusun berturutan (misalnya 'hari kiamat manusia') dan namakan setiap mata rantai mudaf ilaih.",
+        "Bandingkan mudaf ilaih dengan majrur selepas sesuatu huruf jar — kedua-duanya dalam i'rab jar, tetapi atas sebab yang berbeza."
+      ],
+      "tabellen": [],
+      "siehe": ["badal", "huruf-jarr"]
+    },
+
+    "munada": {
+      "titel": "Munada (Seruan)",
+      "ar": "مُنَادَى",
+      "umschrift": "Munaadaa",
+      "erklaerung": [
+        "Munada ialah isim yang diseru selepas huruf nida — biasanya يَا, selalunya dalam bentuk يَا أَيُّهَا apabila menyeru sesuatu kumpulan. Selalunya munada diikuti pula oleh satu isim lagi yang menamakannya dengan lebih tepat — dalam kes يَا أَيُّهَا, lazimnya sebagai badal.",
+        "Dalam seruan langsung dengan nama khas (يَا + nama), munada lazimnya ialah isim nama khas itu sendiri; bagi يَا أَيُّهَا pula, أَيُّهَا ialah munada mabni yang sebenar, dan isim yang mengikutinya (seperti ٱلنَّاسُ) memperjelaskan siapa yang dimaksudkan."
+      ],
+      "erkennung": [
+        "Satu perkataan (atau satu frasa kecil) sejurus selepas يَا atau أَيُّهَا, yang menamakan orang atau kumpulan yang diseru.",
+        "Selepas يَا أَيُّهَا biasanya mengikut satu isim penjelas dalam i'rab yang sama — sebuah badal kepada munada itu sendiri."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 21,
+          "wort": 1,
+          "zeigt": "يَٰٓأَيُّهَا membawa hubungan voc",
+          "warum": "membuktikan munada sebagai induk sesuatu seruan ('Wahai manusia, sembahlah Tuhan kamu') — ٱلنَّاسُ (kata 2) yang mengikutinya memperjelaskannya sebagai badal"
+        },
+        {
+          "sure": 2,
+          "vers": 33,
+          "wort": 2,
+          "zeigt": "يَٰٓـَٔادَمُ membawa hubungan voc",
+          "warum": "membuktikan seruan langsung kepada seorang individu dengan nama khas ('Dia berfirman: Wahai Adam, beritahulah mereka nama-nama itu')"
+        }
+      ],
+      "lernen": [
+        "Cari secara khusus dalam al-Quran ayat berbentuk يَا أَيُّهَا dan namakan munada berserta isim penjelas yang mengikutinya.",
+        "Bandingkan beberapa seruan antara satu sama lain: siapa yang diseru dalam setiap satu, dan bagaimana kumpulan itu dinamakan dengan lebih lanjut?",
+        "Kaitkan entri ini secara sedar dengan badal, untuk memahami peranan berganda يَا أَيُّهَا + isim."
+      ],
+      "tabellen": [],
+      "siehe": ["badal"]
+    },
+
+    "mustathna": {
+      "titel": "Istisna' (Pengecualian)",
+      "ar": "مُسْتَثْنَى",
+      "umschrift": "Mustathnaa",
+      "erklaerung": [
+        "Mustathna ialah perkataan yang, selepas sesuatu huruf istisna' — terutamanya إِلَّا — dikecualikan daripada satu pernyataan yang sebaliknya umum. Ia menamakan SIAPA atau APA yang dikecualikan daripada kumpulan/pernyataan yang disebut sebelumnya.",
+        "I'rab tepat mustathna bergantung pada jenis ayat (lengkap-positif, lengkap-negatif, atau tidak lengkap) — untuk peringkat permulaan, memadai mengenalinya sebagai peranan i'rab tersendiri sejurus selepas إِلَّا."
+      ],
+      "erkennung": [
+        "Sebuah isim sejurus selepas إِلَّا yang menyempitkan sesuatu kumpulan atau pernyataan yang lebih umum disebut sebelumnya ('semua kecuali ...').",
+        "Tanpa mustathna dan إِلَّا, ayat itu sudah kekal lengkap dengan sendirinya — mustathna hanya menyempitkan pernyataan yang telah dibuat sebelum itu."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 34,
+          "wort": 8,
+          "zeigt": "إِبْلِيسَ membawa hubungan exp",
+          "warum": "membuktikan mustathna selepas إِلَّا ('lalu sujudlah mereka semua, kecuali Iblis') — Iblis dikecualikan daripada pernyataan umum tentang para malaikat"
+        },
+        {
+          "sure": 2,
+          "vers": 83,
+          "wort": 26,
+          "zeigt": "قَلِيلًا membawa hubungan exp",
+          "warum": "membuktikan mustathna kedua ('kemudian kamu berpaling, kecuali sebahagian kecil daripada kamu')"
+        }
+      ],
+      "lernen": [
+        "Cari secara khusus ayat berإِلَّا dan namakan setiap kali pernyataan umum apa yang dibuat sebelumnya serta siapa/apa yang dikecualikan daripadanya.",
+        "Bandingkan beberapa contoh mustathna dan perhatikan betapa berbezanya i'rab bergantung pada jenis ayat.",
+        "Terjemahkan sebagai percubaan ayat itu tanpa إِلَّا dan mustathna — periksa sama ada pernyataan yang tinggal masih menjadi ayat yang lengkap."
+      ],
+      "tabellen": [],
+      "siehe": []
+    },
+
+    "taukid": {
+      "titel": "Taukid (Penegasan)",
+      "ar": "تَوْكِيد",
+      "umschrift": "Taukid",
+      "erklaerung": [
+        "Taukid menguatkan sesuatu isim sebelumnya tanpa menambah apa-apa yang baharu dari segi kandungan — ia berada dalam i'rab yang SAMA seperti kata rujukannya. Dua jenis amat kerap dijumpai: pengulangan literal (taukid lafzi) dan penguatan dengan perkataan tetap seperti كُلّ/جَمِيع ('semua/keseluruhan') atau نَفْس/عَيْن ('sendiri') bersama kata ganti nama terikat yang sepadan (taukid ma'nawi).",
+        "Berbeza daripada badal, taukid tidak menambah identiti baharu yang lebih tepat kepada ayat — ia sekadar mengulang atau menguatkan perkara yang sama yang telah disebut, supaya kedengaran lebih tegas."
+      ],
+      "erkennung": [
+        "Satu perkataan seperti كُلّ, جَمِيع, نَفْس atau عَيْن dengan kata ganti nama terikat yang disesuaikan dengan kata rujukan, sejurus selepas kata rujukan itu, dalam i'rab yang sama — dan tanpa maklumat kandungan baharu.",
+        "Bolehkah perkataan yang disyaki itu digugurkan tanpa sebarang maklumat hilang (hanya penegasan yang berkurang)? Jika ya, itu taukid."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 31,
+          "wort": 4,
+          "zeigt": "كُلَّهَا membawa hubungan emph",
+          "warum": "membuktikan taukid ma'nawi dengan كُلّ + kata ganti nama terikat ('dan Dia mengajarkan Adam nama-nama, kesemuanya') — menguatkan ٱلْأَسْمَآءَ tanpa menambah maklumat baharu"
+        },
+        {
+          "sure": 2,
+          "vers": 161,
+          "wort": 13,
+          "zeigt": "أَجْمَعِينَ membawa hubungan emph",
+          "warum": "membuktikan taukid dengan جَمِيع/أَجْمَعِينَ ('laknat Allah dan malaikat serta manusia sekaliannya')"
+        }
+      ],
+      "lernen": [
+        "Cari secara khusus كُلّ/جَمِيع/نَفْس/عَيْن sejurus selepas sesuatu isim dan periksa sama ada kata ganti nama yang dicantumkan sepadan dengan isim itu.",
+        "Bezakan taukid secara sedar daripada badal: taukid tidak menambah maklumat baharu, badal pula memperjelaskan/menamakan semula.",
+        "Terjemahkan ayat yang sama sekali dengan perkataan taukid dan sekali tanpanya, dan perhatikan bahawa kandungan fakta tidak berubah, hanya penegasannya."
+      ],
+      "tabellen": [],
+      "siehe": []
+    }
+  }
+}

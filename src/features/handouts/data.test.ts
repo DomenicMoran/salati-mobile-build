@@ -1,4 +1,11 @@
-import { formatSizeKb, groupHandoutsByCategory, gviewUrl, type Handout } from './data';
+import {
+  fetchHandoutIndex,
+  formatSizeKb,
+  groupHandoutsByCategory,
+  gviewUrl,
+  HANDOUT_INDEX_URL,
+  type Handout,
+} from './data';
 
 function h(id: string, category: string, category_title = ''): Handout {
   return { id, title: id, category, category_title, pdf_url: `https://example/${id}.pdf` };
@@ -32,6 +39,57 @@ describe('groupHandoutsByCategory', () => {
 
   it('liefert für eine leere Liste keine Gruppen', () => {
     expect(groupHandoutsByCategory([])).toEqual([]);
+  });
+
+  // `order` (ohne-Release-Feinpositionierung, Audit 2026-09-05, gleiches
+  // Muster wie bei den Videos).
+  it('bevorzugt `order` gegenueber der Einfuegereihenfolge innerhalb der Kategorie', () => {
+    const groups = groupHandoutsByCategory([
+      { ...h('a', 'x'), order: 2 },
+      { ...h('b', 'x'), order: 1 },
+    ]);
+    expect(groups[0].handouts.map((x) => x.id)).toEqual(['b', 'a']);
+  });
+
+  it('faellt ohne `order` auf die Einfuegereihenfolge zurueck', () => {
+    const groups = groupHandoutsByCategory([h('a', 'x'), h('b', 'x')]);
+    expect(groups[0].handouts.map((x) => x.id)).toEqual(['a', 'b']);
+  });
+});
+
+describe('fetchHandoutIndex — Robustheit + Sichtbarkeit', () => {
+  const realFetch = globalThis.fetch;
+
+  function mockResponse(status: number, body?: unknown): void {
+    globalThis.fetch = jest.fn().mockResolvedValue({
+      ok: status >= 200 && status < 300,
+      status,
+      json: () => Promise.resolve(body),
+    }) as unknown as typeof fetch;
+  }
+
+  afterEach(() => {
+    globalThis.fetch = realFetch;
+    jest.restoreAllMocks();
+  });
+
+  it('fragt die dokumentierte Index-URL ab', async () => {
+    mockResponse(200, { handouts: [] });
+    await fetchHandoutIndex();
+    expect(globalThis.fetch).toHaveBeenCalledWith(HANDOUT_INDEX_URL, expect.objectContaining({ cache: 'no-cache' }));
+  });
+
+  it('blendet `visible: false` aus, laesst alles andere sichtbar', async () => {
+    mockResponse(200, { handouts: [h('a', 'x'), { ...h('b', 'x'), visible: false }] });
+    const { handouts } = await fetchHandoutIndex();
+    expect(handouts.map((x) => x.id)).toEqual(['a']);
+  });
+
+  it('behandelt ein fehlendes oder falsch typisiertes handouts-Feld als leeren Index', async () => {
+    for (const body of [{}, { handouts: null }, { handouts: 'nope' }, []]) {
+      mockResponse(200, body);
+      await expect(fetchHandoutIndex()).resolves.toEqual({ handouts: [] });
+    }
   });
 });
 

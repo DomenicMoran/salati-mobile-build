@@ -11,13 +11,23 @@
 //   node scripts/release-notes.mjs                 # neueste Version im Changelog
 //   node scripts/release-notes.mjs 1.31.0          # bestimmte Version
 //   node scripts/release-notes.mjs --check         # nur pruefen, nichts schreiben
-//   node scripts/release-notes.mjs --overwrite     # auch handuebersetzte Sprachen neu erzeugen
 //
 // Sprachpolitik (identisch zu changelog.ts und getChangelogText()): eigene
-// Texte gibt es nur auf Deutsch und Englisch, alle anderen Store-Sprachen
-// bekommen den englischen Text. Bereits vorhandene HANDuebersetzungen einer
-// Sprache bleiben erhalten (sonst gingen sie bei jedem Lauf verloren) - mit
-// --overwrite werden auch sie durch die Changelog-Fassung ersetzt.
+// Texte gibt es nur auf Deutsch und Englisch. Store-Sprachen OHNE eigenen
+// Changelog-Text bekommen HIER KEINEN EINTRAG - Apple/Google zeigen dem
+// Nutzer dann automatisch den Text der Standardsprache des Eintrags an. Bis
+// 05.09.2026 stand hier stattdessen fuer jede fehlende Sprache eine Kopie des
+// ENGLISCHEN Texts unter dem fremden Sprachcode (z. B. "tr-TR": "<englischer
+// Text>") - das faellt nicht auf, solange der Store-Eintrag diese Sprachen
+// gar nicht listet (Play/ASC ueberspringen unbekannte Locales beim
+// Einreichen), ist aber eine Falle: sobald jemand die Sprache im Store-Eintrag
+// anlegt, bekommen z. B. tuerkische oder arabische Nutzer englische
+// Versionshinweise unter ihrer eigenen Sprachkennung angezeigt. Siehe
+// src/lib/store-sprachkennung.test.ts, der genau das erkennt.
+//
+// Echte Uebersetzungen fuer weitere Sprachen gibt es (fuer Play) bereits
+// handkuratiert in store/play-notes-<version>.json - dieses Skript fasst
+// jene Datei nicht an, sie wird unabhaengig von changelog.ts gepflegt.
 import fs from 'fs';
 import path from 'path';
 import { fileURLToPath, pathToFileURL } from 'url';
@@ -32,20 +42,12 @@ const PLAY_MAX = 500;
 /** App Store Connect "Was ist neu": 4000 Zeichen. */
 const ASC_MAX = 4000;
 
-// Store-Sprachen, in denen Salati gelistet ist. Der Wert sagt, welcher
-// Changelog-Text verwendet wird ('de' oder 'en').
-const PLAY_LOCALES = { 'de-DE': 'de', 'en-US': 'en', 'tr-TR': 'en', ar: 'en', 'es-ES': 'en', 'fr-FR': 'en' };
-const ASC_LOCALES = {
-  'de-DE': 'de',
-  de: 'de',
-  'en-US': 'en',
-  'en-GB': 'en',
-  tr: 'en',
-  ar: 'en',
-  'es-ES': 'en',
-  'es-MX': 'en',
-  'fr-FR': 'en',
-};
+// Store-Sprachen, fuer die changelog.ts einen EIGENEN Text fuehrt. Der Wert
+// sagt, welcher Changelog-Text verwendet wird ('de' oder 'en'). Nur diese
+// Locales landen in den generierten JSON-Dateien - jede weitere Store-Sprache
+// bekommt bewusst KEINEN Eintrag (siehe Kommentar oben).
+const PLAY_LOCALES = { 'de-DE': 'de', 'en-US': 'en' };
+const ASC_LOCALES = { 'de-DE': 'de', de: 'de', 'en-US': 'en', 'en-GB': 'en' };
 
 // Reihenfolge im Store-Text: erst was neu ist, dann Verbesserungen, dann
 // Fehlerbehebungen. Passt zu dem, was Nutzer im Store-Eintrag zuerst sehen
@@ -92,6 +94,33 @@ function baueText(eintraege, sprache, max) {
   return genutzt.join('\n\n');
 }
 
+/**
+ * Liest die vorhandene Datei und behaelt alle Sprachkennungen, die dieses
+ * Skript NICHT erzeugt.
+ *
+ * Hintergrund (07.09.2026): Fuer die Ausweitung des App-Store-Eintrags auf 13
+ * Sprachen wurden neun weitere Kennungen (ar-SA, bn-BD, es-ES, fr-FR, id, ms,
+ * ru, tr, ur-PK) von Hand uebersetzt in whatsnew-<version>.json eingetragen.
+ * Dieses Skript kennt nur de/en aus changelog.ts — ohne Zusammenfuehrung
+ * haette der naechste Lauf die neun Handuebersetzungen kommentarlos
+ * ueberschrieben, OHNE Fehlermeldung. Ein Verlust, den niemand bemerkt haette,
+ * bis ein tuerkischer Nutzer im Laden englische Versionshinweise sieht.
+ */
+function fuehreZusammen(datei, erzeugt) {
+  if (!fs.existsSync(datei)) return { inhalt: erzeugt, behalten: [] };
+  let vorhanden;
+  try {
+    vorhanden = JSON.parse(fs.readFileSync(datei, 'utf8'));
+  } catch {
+    return { inhalt: erzeugt, behalten: [] };
+  }
+  const behalten = Object.keys(vorhanden).filter((k) => !(k in erzeugt));
+  const inhalt = {};
+  for (const k of Object.keys(vorhanden)) inhalt[k] = k in erzeugt ? erzeugt[k] : vorhanden[k];
+  for (const k of Object.keys(erzeugt)) if (!(k in inhalt)) inhalt[k] = erzeugt[k];
+  return { inhalt, behalten };
+}
+
 function schreibeDatei(datei, inhalt, { check }) {
   const neu = `${JSON.stringify(inhalt, null, 2)}\n`;
   const alt = fs.existsSync(datei) ? fs.readFileSync(datei, 'utf8') : null;
@@ -111,7 +140,6 @@ function schreibeDatei(datei, inhalt, { check }) {
 
 const argumente = process.argv.slice(2);
 const check = argumente.includes('--check');
-const overwrite = argumente.includes('--overwrite');
 const versionArg = argumente.find((a) => !a.startsWith('--'));
 
 const changelog = await ladeChangelog();
@@ -131,27 +159,15 @@ for (const [ziel, locales, max] of [
   ['whatsnew', ASC_LOCALES, ASC_MAX],
 ]) {
   const datei = path.join(STORE_DIR, `${ziel}-${version}.json`);
-  const vorhanden = fs.existsSync(datei) ? JSON.parse(fs.readFileSync(datei, 'utf8')) : {};
   const inhalt = {};
-  const uebernommen = [];
   for (const [storeLocale, sprache] of Object.entries(locales)) {
-    const generiert = baueText(eintrag.entries, sprache, max);
-    // Handuebersetzungen (alles ausser de/en) nicht stillschweigend durch den
-    // englischen Text ersetzen - der Store-Eintrag waere sonst nach jedem Lauf
-    // schlechter als vorher.
-    const istHanduebersetzung =
-      sprache === 'en' && !storeLocale.startsWith('en') && typeof vorhanden[storeLocale] === 'string';
-    if (istHanduebersetzung && !overwrite) {
-      inhalt[storeLocale] = kuerze(vorhanden[storeLocale], max);
-      uebernommen.push(storeLocale);
-    } else {
-      inhalt[storeLocale] = generiert;
-    }
+    inhalt[storeLocale] = baueText(eintrag.entries, sprache, max);
   }
-  const laengen = Object.entries(inhalt).map(([l, t]) => `${l}:${t.length}`);
+  const { inhalt: zusammen, behalten } = fuehreZusammen(datei, inhalt);
+  const laengen = Object.entries(zusammen).map(([l, t]) => `${l}:${t.length}`);
   console.log(`\n${ziel} (max ${max}) — ${laengen.join('  ')}`);
-  if (uebernommen.length) console.log(`  bestehende Uebersetzung behalten: ${uebernommen.join(', ')} (--overwrite ersetzt sie)`);
-  okay = schreibeDatei(datei, inhalt, { check }) && okay;
+  if (behalten.length) console.log(`  handgepflegt uebernommen: ${behalten.join(', ')}`);
+  okay = schreibeDatei(datei, zusammen, { check }) && okay;
 }
 
 if (!okay) {

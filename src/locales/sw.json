@@ -27,6 +27,7 @@
     "halal": "Halali Karibu",
     "halalScanner": "Skana ya Halali",
     "study": "Masomo",
+    "lexikon": "Kamusi",
     "sync": "Usawazishaji",
     "impressum": "Taarifa za Kisheria",
     "datenschutz": "Sera ya Faragha",
@@ -202,7 +203,61 @@
     "compareStageB": "Msomaji B …",
     "compareLoadError": "Sauti haikuweza kupakiwa.",
     "chooseReciterA": "Chagua msomaji A",
-    "chooseReciterB": "Chagua msomaji B"
+    "chooseReciterB": "Chagua msomaji B",
+    "wortAnalyse": {
+      "title": "Uchambuzi wa Neno",
+      "fundstelle": "Sura {surah}, Aya {ayah}, Neno {position}",
+      "rootLabel": "Mzizi",
+      "lemmaLabel": "Umbo la Msingi",
+      "rootFrequency": "Mara {count} katika Qur'an",
+      "rootNone": "Hakuna mzizi uliorekodiwa kwa neno hili.",
+      "fragmentsTitle": "Vipande",
+      "segmentKind": {
+        "prefix": "Kiambishi Awali (سابقة)",
+        "stem": "Shina la Neno (جذع)",
+        "suffix": "Kiambishi Tamati (لاحقة)"
+      },
+      "wortartTitle": "Aina ya Neno",
+      "satzrolleTitle": "Nafasi katika Sentensi (I'rab)",
+      "satzrolleNoData": "Hakuna data ya nafasi ya sentensi kwa neno hili.",
+      "satzrolleHeadNone": "Neno linalorejelewa halipo katika aya ile ile au haliyatamkwi (limeondolewa).",
+      "satzrolleHeadLabel": "Inarejelea: {wort}",
+      "morphologyNoData": "Data ya sarufi kwa sura hii bado haipatikani.",
+      "lexikonButton": "Fungua kwenye Kamusi",
+      "verbTypLabel": "Aina ya kitenzi",
+      "wortartAr": "أقسام الكلمة",
+      "fragmentsAr": "أجزاء الكلمة"
+    },
+    "sectionLesehilfen": "Visaidizi vya kusoma",
+    "sectionAussprache": "Matamshi",
+    "sectionBedeutung": "Maana",
+    "sectionGrammatik": "Sarufi",
+    "captions": {
+      "beginnerMode": "Huwasha matamshi, herufi peke yake na neno kwa neno kwa pamoja — sehemu nzuri ya kuanzia kujifunza kusoma Kiarabu.",
+      "transliteration": "Huandika matamshi kwa herufi za Kilatini chini ya maandishi ya Kiarabu.",
+      "isolatedLetters": "Huonyesha kila herufi katika umbo lake la peke yake badala ya maandishi yaliyounganishwa — hurahisisha kutambua herufi moja moja.",
+      "wordByWord": "Hugawanya aya katika maneno mmoja mmoja pamoja na tafsiri ya kila neno chini yake.",
+      "wordByWordTeilabdeckung": "Takriban {n}% ya aya zina maana za maneno kwa lugha yako, zilizosalia zinabaki kwa Kiingereza.",
+      "wordByWordLadefehler": "Maana za maneno kwa lugha yako hazikuweza kupakiwa sasa hivi – hadi ifanikiwe, zinabaki kwa Kiingereza.",
+      "wordByWordWortlisteLadefehler": "Orodha ya maneno ya sura hii haikuweza kupakiwa kwa sasa – bila hiyo mwonekano wa neno kwa neno unabaki mtupu kabisa.",
+      "tajweed": "Hupaka rangi kanuni za usomaji (Tajwid) katika maandishi ili uzitumie kwa usahihi unaposoma.",
+      "translation": "Tafsiri inayoonyeshwa chini ya kila aya — gusa kuchagua toleo lingine.",
+      "secondTranslation": "Huonyesha tafsiri ya pili kando ya ya kwanza kwa ulinganisho.",
+      "tafsir": "Huonyesha ufafanuzi wa mwanachuoni kuhusu aya — maelezo zaidi kuliko tafsiri sahili.",
+      "grammarColorModes": "Huangazia kwa rangi sifa moja ya kisarufi katika aya — gusa tena kuizima.",
+      "satzstruktur": "Huonyesha ni neno gani linahusiana na neno gani jingine na nafasi gani katika sentensi (I'rab).",
+      "wortAnalyseHint": "Gusa neno lolote kuona uchambuzi wake kamili: mzizi, umbo la msingi, vipande na nafasi katika sentensi."
+    },
+    "tajweedGrammarConflictHint": "Hali ya rangi iliyowashwa hufunika rangi ya Tajwid kwenye maneno yaliyopakwa rangi.",
+    "grammatikIntro": {
+      "title": "Zana za sarufi",
+      "what": "Hali za rangi huonyesha sifa moja ya kisarufi moja kwa moja katika aya, kwa mfano ni maneno gani ni nomino, vitenzi au viunganishi. Muundo wa sentensi huonyesha zaidi ni neno gani linahusiana na neno gani jingine na nafasi gani (I'rab). Unaweza kugusa neno lolote wakati wowote kuona uchambuzi wake kamili.",
+      "why": "Hivyo muundo wa kisarufi wa aya huonekana, si maana yake tu — hii husaidia kujifunza Kiarabu na kuelewa maandiko ya Qur'ani kwa usahihi, hata bila ujuzi wa awali wa sarufi ya Kiarabu."
+    },
+    "satzstruktur": {
+      "chip": "Muundo wa sentensi",
+      "title": "Muundo wa sentensi"
+    }
   },
   "hadith": {
     "languagesNote": "Ensaiklopidia ya hadithi za Mtume zilizotafsiriwa — katika lugha zote 14 za programu",
@@ -972,6 +1027,19 @@
         "deleteAll": "Futa zote",
         "deleteAllConfirmTitle": "Futa upakuaji wote?",
         "deleteAllConfirmBody": "Video zote zilizopakuliwa zitaondolewa kwenye kifaa chako."
+      },
+      "otherData": {
+        "title": "Data nyingine",
+        "hint": "Data za ziada ambazo programu imepakua. Kila kitu hapa kinaweza kupakuliwa tena kikihitajika.",
+        "empty": "Hakuna data nyingine iliyohifadhiwa.",
+        "quranWords": "Data za maneno ya Qur'ani (uchambuzi wa maneno, neno kwa neno)",
+        "handouts": "Vipeperushi (PDF)",
+        "kiCorpus": "Vyanzo vya maarifa vya Salati AI",
+        "courses": "Data za kozi",
+        "other": "Faili nyingine za programu",
+        "delete": "Futa",
+        "deleteConfirmTitle": "Futa data?",
+        "deleteConfirmBody": "{name} itaondolewa kwenye kifaa chako na kupakuliwa tena ikihitajika."
       }
     },
     "appIcon": {
@@ -2636,12 +2704,179 @@
     "openInBrowser": "Fungua katika kivinjari",
     "viewerError": "PDF haikuweza kupakiwa."
   },
+  "lexikon": {
+    "title": "Kamusi",
+    "subtitle": "Rejea ya mizizi ya maneno, sarufi, Tajwid na faharasa ya Qur'an",
+    "searchPlaceholder": "Tafuta kwenye kamusi",
+    "tabs": {
+      "roots": "Mizizi na Msamiati (جذر)",
+      "grammar": "Sarufi na Sarf (صرف)",
+      "tajwid": "Tajwid (تجويد)",
+      "concordance": "Faharasa"
+    },
+    "empty": {
+      "tajwid": "Kaida za Tajwid bado hazijaongezwa."
+    },
+    "noResultsFor": "Hakuna matokeo kwa {query}.",
+    "occurrencesTruncated": "Za kwanza {shown} kati ya {total}",
+    "search": {
+      "loading": "Inaandaa utafutaji…",
+      "sectionRoots": {
+        "name": "Mizizi ya Maneno",
+        "ar": "جَذْر"
+      },
+      "sectionVocabulary": {
+        "name": "Msamiati",
+        "ar": "لَفْظ"
+      },
+      "sectionTerms": {
+        "name": "Istilahi za Sarufi",
+        "ar": "مُصْطَلَح"
+      },
+      "moreResults": "Kuna matokeo zaidi. Punguza wigo wa utafutaji wako."
+    },
+    "roots": {
+      "loadError": "Orodha ya mizizi haikuweza kupakiwa.",
+      "loading": "Inapakia mizizi…",
+      "sortByFrequency": {
+        "name": "Marudio",
+        "ar": "تَكْرَار"
+      },
+      "sortByAlphabet": {
+        "name": "Kialfabeti",
+        "ar": "أَبْجَدِيّ"
+      },
+      "occurrences": "Mara {n}",
+      "lemmaCount": "Maumbo {n}",
+      "totalCount": "Mizizi {n}"
+    },
+    "wurzel": {
+      "notFound": "Mzizi huu haukupatikana.",
+      "loadError": "Data ya mzizi haikuweza kupakiwa.",
+      "occurrencesInQuran": "Mara {n} katika Qur'an",
+      "sectionForms": {
+        "name": "Maumbo Yatokanayo",
+        "ar": "الصِّيَغ المُشْتَقَّة"
+      },
+      "sectionOccurrences": {
+        "name": "Mahali Yanapotokea",
+        "ar": "مَوَاضِع الوُرُود"
+      },
+      "formsUnclassified": {
+        "name": "Maumbo Mengine",
+        "ar": "غَيْر مُصَنَّف"
+      },
+      "formsLoading": "Inalinganisha maumbo ya maneno…",
+      "formsLoadingProgress": "Inapakia maumbo ya maneno… ({loaded} kati ya {total})",
+      "formsLoadError": "Maumbo ya maneno hayakuweza kupakiwa."
+    },
+    "concordance": {
+      "searchPlaceholder": "Andika neno la Kiarabu au mzizi",
+      "prompt": "Andika neno la Kiarabu au mzizi ili kuona linapotokea katika Qur'an.",
+      "matchesHeading": "Vinavyolingana",
+      "occurrencesHeading": "Mahali Yanapotokea",
+      "totalOccurrences": "Mara {n}",
+      "rootLabel": {
+        "name": "Mzizi",
+        "ar": "جَذْر"
+      },
+      "lemmaLabel": {
+        "name": "Umbo la Neno",
+        "ar": "لَفْظ"
+      }
+    },
+    "grammar": {
+      "loading": "Inapakia istilahi…",
+      "loadError": "Maudhui ya sarufi hayakuweza kupakiwa.",
+      "notFound": "Istilahi hii haikupatikana.",
+      "termCount": "Istilahi {n}",
+      "sectionErkennung": "Sifa za Kutambua",
+      "sectionBelege": "Mifano kutoka Qur'an",
+      "sectionLernen": "Vidokezo vya Kujifunza",
+      "sectionTabellen": "Majedwali ya Maumbo",
+      "sectionSiehe": "Angalia Pia",
+      "germanOnlyNote": "Maelezo haya kwa sasa yanapatikana kwa Kijerumani pekee.",
+      "bereichPartikelSyntax": {
+        "name": "Viunganishi na Muundo wa Sentensi",
+        "ar": "الحروف والنحو"
+      },
+      "tables": {
+        "toggleBegriffe": "Istilahi",
+        "toggleTabellen": "Majedwali ya Maumbo",
+        "searchPlaceholder": "Tafuta majedwali ya maumbo",
+        "noResults": "Hakuna majedwali yaliyopatikana.",
+        "tableCount": "Majedwali {n}",
+        "categoryNomenPronomen": {
+          "name": "Nomino na Viwakilishi",
+          "ar": "الاسم والضمائر"
+        },
+        "categoryVerbMatrizen": {
+          "name": "Kitenzi: Majedwali Kamili ya Uambishaji",
+          "ar": "تصريف الفعل الكامل"
+        },
+        "categoryVerbstammFamilien": {
+          "name": "Familia za Mizizi ya Vitenzi (Bab)",
+          "ar": "أبواب الفعل"
+        },
+        "categoryVerbstammAbleitungen": {
+          "name": "Vitenzi Vilivyoongezwa (Miundo II–X)",
+          "ar": "أوزان الفعل المزيد"
+        },
+        "categoryPartikelnZahlenWortschatz": {
+          "name": "Viunganishi, Namba na Msamiati",
+          "ar": "الحروف والأعداد والمفردات"
+        },
+        "verbFamilieSahih": {
+          "name": "Sahihi (wenye afya)",
+          "ar": "صحيح"
+        },
+        "verbFamilieMahmuz": {
+          "name": "Mahmuz (wenye hamza)",
+          "ar": "مهموز"
+        },
+        "verbFamilieMithal": {
+          "name": "Mithali (ulioungana)",
+          "ar": "مثال"
+        },
+        "verbFamilieAjwaf": {
+          "name": "Ajwaf (tupu)",
+          "ar": "أجوف"
+        },
+        "verbFamilieNaaqis": {
+          "name": "Naqis (usio kamili)",
+          "ar": "ناقص"
+        },
+        "verbFamilieLafif": {
+          "name": "Lafifu (dhaifu mara mbili)",
+          "ar": "لفيف"
+        },
+        "verbFamilieMudaaf": {
+          "name": "Mudaaf (uliorudiwa)",
+          "ar": "مضاعف"
+        },
+        "verbFamilieMurakkab": {
+          "name": "Murakkabu (mchanganyiko)",
+          "ar": "مركب"
+        }
+      },
+      "wortlisten": {
+        "toggleWortlisten": "Orodha za Msamiati",
+        "germanOnlyMeaningNote": "Maana za Kijerumani katika orodha hizi za msamiati kwa sasa zinapatikana kwa Kijerumani pekee.",
+        "listCount": "Orodha {n}"
+      }
+    },
+    "verbtyp": {
+      "title": "Familia ya Kitenzi",
+      "notFound": "Bado hakuna majedwali ya maumbo kwa aina hii ya kitenzi."
+    }
+  },
   "lizenzen": {
     "title": "Vyanzo na leseni",
     "subtitle": "Wamiliki wa haki na leseni za maudhui yanayotumika katika Salati",
     "intro": "Salati hutumia matini, sauti, data, fonti na modeli kutoka kwa wahusika wengine. Hapa wameorodheshwa wamiliki wote wa haki na leseni tunazozitumia. Pale leseni inapohitaji kutajwa - kwa mfano Apache-2.0, MIT au ODbL - ukurasa huu hutimiza hitaji hilo.",
     "categories": {
       "quran": "Matini ya Qur'an na tafsiri",
+      "adhan": "Rekodi za Adhana",
       "recitation": "Visomo",
       "hadith": "Makusanyo ya hadithi",
       "font": "Fonti",
@@ -2659,7 +2894,8 @@
       "publicDomain": "Unlicense (mali ya umma)",
       "fontEula": "Leseni ya mtengenezaji (imejumuishwa ndani ya fonti)",
       "hadeethencTerms": "Kunukuu bila mabadiliko pamoja na kutaja chanzo (masharti ya mtoa huduma)",
-      "rassoulRelease": "Imetolewa huru na mwandishi - kunakili bila mabadiliko kwa kutaja chanzo"
+      "rassoulRelease": "Imetolewa huru na mwandishi - kunakili bila mabadiliko kwa kutaja chanzo",
+      "quranicCorpusTerms": "Inahitajika kutaja chanzo na kiungo (masharti ya matumizi ya kazi)"
     },
     "distributedSection": "Tunachosambaza sisi wenyewe",
     "distributedText": "Maudhui mengi kifaa chako hukichukua moja kwa moja kutoka kwa mtoa huduma husika - hatuyasambazi upya, hapo kutaja chanzo kunatosha. Tunachosambaza sisi wenyewe: modeli ya lugha Qwen2.5-1.5B-Instruct na modeli ya utambuzi wa sauti ya Tarteel (zote mbili kutoka hifadhi yetu wenyewe), fonti ya KFGQPC HAFS na maktaba zote za programu zilizomo ndani ya kifurushi cha programu. Kwa kazi hizi maandishi kamili ya leseni yameambatishwa - yanafunguka hapo hapo chini ya kila kipengele. Pia tunatoa wenyewe tafsiri ya Kijerumani ya Abu-r-Ridā Muhammad Ibn Ahmad Ibn Rassoul - mwandishi aliiweka huru bila hakimiliki, lakini anataka chanzo kitajwe.",
@@ -2785,6 +3021,983 @@
       "charakter-sadaqa": "Kutoa sadaka mara {n}",
       "charakter-eltern": "Kuwapigia au kuwatembelea wazazi mara {n}",
       "charakter-helfen": "Kumsaidia mtu mara {n}"
+    }
+  },
+  "grammatik": {
+    "fragmentrollen": {
+      "artikel": {
+        "name": "Kiambishi cha Ubainifu (Al)",
+        "ar": "أل التعريف",
+        "info": "Kiambishi awali ال hufanya nomino kuwa bayana, sawa na kutumia \"yule/kile\" katika Kiswahili."
+      },
+      "fragepartikel": {
+        "name": "Kiulizi",
+        "ar": "حرف استفهام",
+        "info": "Huanzisha swali bila kubeba maana yake yenyewe."
+      },
+      "konjunktion": {
+        "name": "Kiunganishi",
+        "ar": "حرف عطف",
+        "info": "Huunganisha maneno mawili au sehemu za sentensi zenye hadhi sawa, mfano \"na\" au \"au\"."
+      },
+      "praeposition": {
+        "name": "Kihusishi (Harf Jarri)",
+        "ar": "حرف جر",
+        "info": "Hutangulia nomino na kuihusisha na sehemu nyingine ya sentensi; nomino inayofuata huingia katika hali ya jarri."
+      },
+      "pronomenSuffix": {
+        "name": "Kiwakilishi Kiambatani",
+        "ar": "ضمير متصل",
+        "info": "Kiwakilishi kinachoambatanishwa moja kwa moja na nomino, kitenzi au kihusishi, mfano kwa maana ya \"kitabu chake\" au \"kwake\"."
+      },
+      "stamm": {
+        "name": "Shina la Neno",
+        "ar": "الجذع",
+        "info": "Sehemu kuu ya neno inayobeba viambishi awali na viambishi tamati."
+      },
+      "verneinung": {
+        "name": "Kikanushi",
+        "ar": "حرف نفي",
+        "info": "Hukanusha kauli ya sentensi au kitenzi, mfano \"si\" au \"hakuna\"."
+      }
+    },
+    "herkunft": {
+      "beleg": {
+        "label": "Imethibitishwa Kwenye Mkusanyiko",
+        "info": "Sifa hii imeandikwa wazi hivyo kwenye mkusanyiko wa maandishi unaotumika kama msingi."
+      },
+      "hergeleitet": {
+        "label": "Imetokana na Kanuni",
+        "info": "Sifa hii haikuandikwa wazi kwenye mkusanyiko na imeongezwa kufuatana na kanuni thabiti za sarufi — kwa mfano kwa sababu ubainifu, idadi au mnyambuliko wa kitenzi hazionyeshwi peke yake katika hali ya kawaida isiyo na alama."
+      }
+    },
+    "ismEigenschaften": {
+      "bestimmtheit": {
+        "name": "Ubainifu",
+        "ar": "التعريف والتنكير",
+        "info": "Huamua kama nomino ni bayana (\"kile kitabu\") au isiyo bayana (\"kitabu fulani\") — katika Kiarabu mara nyingi hutambulika kwa kiambishi ال.",
+        "werte": {
+          "definite": {
+            "name": "bayana",
+            "ar": "معرفة"
+          },
+          "indefinite": {
+            "name": "isiyo bayana",
+            "ar": "نكرة"
+          }
+        }
+      },
+      "genus": {
+        "name": "Jinsia ya Neno",
+        "ar": "التذكير والتأنيث",
+        "info": "Huonyesha kama nomino ni ya kiume au ya kike — katika Kiarabu mara nyingi hutambulika kwa mwisho wa ة.",
+        "werte": {
+          "f": {
+            "name": "jinsia ya kike",
+            "ar": "مؤنث"
+          },
+          "m": {
+            "name": "jinsia ya kiume",
+            "ar": "مذكر"
+          }
+        }
+      },
+      "kasus": {
+        "name": "Hali ya Sarufi (I'rab)",
+        "ar": "الإعراب",
+        "info": "Huonyesha wajibu wa kisarufi wa nomino katika sentensi kupitia irabu ya mwisho — kiima, yambwa, au uhusiano na kihusishi au mnyambuliko wa umiliki.",
+        "werte": {
+          "acc": {
+            "name": "nasbi",
+            "ar": "نصب"
+          },
+          "gen": {
+            "name": "jarri",
+            "ar": "جر"
+          },
+          "nom": {
+            "name": "rafʿi",
+            "ar": "رفع"
+          }
+        }
+      },
+      "numerus": {
+        "name": "Idadi",
+        "ar": "العدد",
+        "info": "Huonyesha kama ni mtu/kitu kimoja, viwili au zaidi — Kiarabu hutofautisha pia hali ya wawili (dual) mbali na umoja na wingi.",
+        "werte": {
+          "du": {
+            "name": "wawili (dual)",
+            "ar": "مثنى"
+          },
+          "pl": {
+            "name": "wingi",
+            "ar": "جمع"
+          },
+          "sg": {
+            "name": "umoja",
+            "ar": "مفرد"
+          }
+        }
+      }
+    },
+    "nomenFlexibilitaet": {
+      "mabni": {
+        "name": "Mabni (Isiyobadilika)",
+        "ar": "مبني",
+        "info": "Neno lenye mwisho thabiti usiobadilika bila kujali hali ya sarufi — kama ilivyo kwa viwakilishi na viunganishi vingi."
+      },
+      "mamnuMinSarf": {
+        "name": "Diptoti (Mamnu' min as-Sarf)",
+        "ar": "ممنوع من الصرف",
+        "info": "Nomino ambayo, ikiwa katika hali isiyo bayana, haiwezi kuchukua tanwini wala mwisho wa jarri -i, mara nyingi kwa sababu ya umbo au maana yake, kama ilivyo kwa majina mengi mahususi na vivumishi vya rangi. Hata hivyo, ikiwa nomino kama hiyo ni sehemu ya kwanza ya muundo wa idhafa (uhusiano wa umiliki), kizuizi hicho hakitumiki tena na hupokea tena kasra ya kawaida katika hali ya jenetivu."
+      },
+      "murab": {
+        "name": "Mu'rab (Inayobadilika)",
+        "ar": "معرب",
+        "info": "Nomino ambayo irabu yake ya mwisho hubadilika kulingana na hali ya sarufi."
+      }
+    },
+    "posTags": {
+      "ACC": {
+        "name": "Kiambishi cha Nasbi",
+        "ar": "حرف نصب",
+        "info": "Kiunganishi kama \"inna\" kinachopatia nomino inayofuata hali ya nasbi na kusisitiza kauli."
+      },
+      "ADJ": {
+        "name": "Kivumishi",
+        "ar": "صفة",
+        "info": "Huelezea nomino kwa undani zaidi na hulingana nayo katika jinsia, idadi, hali ya sarufi na ubainifu."
+      },
+      "AMD": {
+        "name": "Kiambishi cha Marekebisho",
+        "ar": "حرف استدراك",
+        "info": "Hupunguza au kurekebisha kidogo kauli iliyotangulia, kwa maana ya \"hata hivyo\"."
+      },
+      "ANS": {
+        "name": "Kiambishi cha Jibu",
+        "ar": "حرف جواب",
+        "info": "Huanzisha jibu la swali au la kishazi cha sharti."
+      },
+      "AVR": {
+        "name": "Kiambishi cha Kukataa",
+        "ar": "حرف ردع",
+        "info": "Hukataa kauli au msimamo uliotangulia, kwa maana ya \"kamwe\"."
+      },
+      "CAUS": {
+        "name": "Kiambishi cha Sababu",
+        "ar": "فاء السببية",
+        "info": "فَ inayokuja baada ya ombi au tamanio na kuonyesha matokeo yanayotarajiwa, kama vile \"omba, ILI ajibu\"."
+      },
+      "CERT": {
+        "name": "Kiambishi cha Uhakika",
+        "ar": "حرف تحقيق",
+        "info": "Husisitiza kwamba kauli fulani kwa hakika imetokea, mara nyingi kabla ya kitenzi."
+      },
+      "CIRC": {
+        "name": "Kiambishi cha Hali",
+        "ar": "واو الحال",
+        "info": "Huanzisha kishazi kinachoelezea hali inayoambatana na tendo kuu."
+      },
+      "COM": {
+        "name": "Waw ya Ushirikiano",
+        "ar": "واو المعية",
+        "info": "Herufi waw inayoonyesha kuambatana, kwa maana ya \"pamoja na\"."
+      },
+      "COND": {
+        "name": "Kiunganishi cha Sharti",
+        "ar": "أداة شرط",
+        "info": "Huanzisha kishazi cha sharti, mfano \"ikiwa\"."
+      },
+      "CONJ": {
+        "name": "Kiunganishi",
+        "ar": "حرف عطف",
+        "info": "Huunganisha maneno mawili au sehemu za sentensi zenye hadhi sawa, mara nyingi kwa \"na\" au \"au\"."
+      },
+      "DEM": {
+        "name": "Kiwakilishi Kionyeshi",
+        "ar": "اسم إشارة",
+        "info": "Neno la kionyeshi kama \"huyu\" au \"yule\" linaloonyesha kitu maalum."
+      },
+      "DET": {
+        "name": "Kiambishi cha Ubainifu (Al)",
+        "ar": "أداة تعريف",
+        "info": "Kiambishi awali ال kinachofanya nomino kuwa bayana — sawa na \"yule/kile\"."
+      },
+      "EMPH": {
+        "name": "Lam ya Msisitizo",
+        "ar": "لام التوكيد",
+        "info": "Kiambishi awali cha lam kinachosisitiza kauli bila kubadilisha maana halisi ya neno."
+      },
+      "EQ": {
+        "name": "Kiambishi cha Usawa",
+        "ar": "حرف تسوية",
+        "info": "Huonyesha kwamba uwezekano mbili uliotajwa una thamani sawa au haujalishi."
+      },
+      "EXH": {
+        "name": "Kiambishi cha Kuhimiza",
+        "ar": "حرف تحضيض",
+        "info": "Huonyesha wito wa haraka au kutia moyo, mfano \"laiti\"."
+      },
+      "EXL": {
+        "name": "Kiambishi cha Maelezo",
+        "ar": "حرف تفصيل",
+        "info": "Huanzisha maelezo au orodha ya kina zaidi kuhusu jambo lililotajwa hapo awali."
+      },
+      "EXP": {
+        "name": "Kiambishi cha Ubaguzi",
+        "ar": "أداة استثناء",
+        "info": "Hutoa kitu kutoka kwenye jumla iliyotajwa hapo awali, mfano \"isipokuwa\"."
+      },
+      "FUT": {
+        "name": "Kiambishi cha Wakati Ujao",
+        "ar": "حرف استقبال",
+        "info": "Huhamisha tendo la kitenzi cha wakati uliopo hadi wakati ujao, mfano \"sawfa\" au \"sa-\"."
+      },
+      "IMPN": {
+        "name": "Nomino-Kitendo ya Amri",
+        "ar": "اسم فعل أمر",
+        "info": "Nomino-kitendo inayotumika kama amri, mfano \"nyamaza!\" badala ya hali ya amri iliyonyambuliwa."
+      },
+      "IMPV": {
+        "name": "Lam ya Amri",
+        "ar": "لام الأمر",
+        "info": "Kiambishi awali cha lam kinachobadilisha hali ya wakati uliopo kuwa amri isiyo ya moja kwa moja."
+      },
+      "INC": {
+        "name": "Kiambishi cha Mwanzo wa Sentensi",
+        "ar": "حرف ابتداء",
+        "info": "Huonyesha mwanzo wa sentensi ya kiima-kiarifa, mara nyingi mwanzoni mwa sentensi."
+      },
+      "INL": {
+        "name": "Herufi za Mwanzo za Sura (Muqattaʿah)",
+        "ar": "الحروف المقطعة",
+        "info": "Herufi zinazosomwa moja moja mwanzoni mwa baadhi ya sura, ambazo maana yake kamili haijulikani."
+      },
+      "INT": {
+        "name": "Kiambishi cha Ufafanuzi",
+        "ar": "حرف تفسير",
+        "info": "Huanzisha ufafanuzi wa jambo lililotajwa hapo awali, kwa maana ya \"yaani\"."
+      },
+      "INTG": {
+        "name": "Kiulizi",
+        "ar": "أداة استفهام",
+        "info": "Huanzisha swali, mfano \"nani\", \"nini\" au \"je\"."
+      },
+      "LOC": {
+        "name": "Kielezi cha Mahali",
+        "ar": "ظرف مكان",
+        "info": "Nomino inayoonyesha mahali, mfano \"mbele ya\" au \"juu ya\"."
+      },
+      "N": {
+        "name": "Nomino",
+        "ar": "اسم",
+        "info": "Nomino ya kawaida kama kitu, sifa au dhana isiyoshikika, bila kuwa jina mahususi."
+      },
+      "NEG": {
+        "name": "Kikanushi",
+        "ar": "حرف نفي",
+        "info": "Hukanusha kauli ya sentensi au kitenzi, mfano \"si\" au \"hakuna\"."
+      },
+      "P": {
+        "name": "Kihusishi",
+        "ar": "حرف جر",
+        "info": "Hupatia nomino inayofuata hali ya jarri na kuihusisha na sehemu nyingine ya sentensi."
+      },
+      "PN": {
+        "name": "Jina Mahususi",
+        "ar": "اسم علم",
+        "info": "Jina mahususi la mtu, mahali au taifa, ambalo kisarufi hutendewa kama nomino bayana."
+      },
+      "PREV": {
+        "name": "Kiambishi cha Kubatilisha",
+        "ar": "كافة",
+        "info": "Huondoa athari ya kisarufi ya kiambishi kilichotangulia, mfano katika \"innamā\"."
+      },
+      "PRO": {
+        "name": "Kikatazi",
+        "ar": "حرف نهي",
+        "info": "Hukanusha amri na hivyo huamuru kutofanya jambo fulani."
+      },
+      "PRON": {
+        "name": "Kiwakilishi",
+        "ar": "ضمير",
+        "info": "Huchukua nafasi ya mtu au kitu, mfano \"yeye\" au \"sisi\" — likiwa peke yake au limeambatanishwa kama kiambishi."
+      },
+      "PRP": {
+        "name": "Kiambishi cha Kusudi",
+        "ar": "لام التعليل",
+        "info": "Huonyesha kusudi au sababu ya tendo, kwa maana ya \"ili\" au \"kusudi\"."
+      },
+      "REL": {
+        "name": "Kiwakilishi Kirejeshi",
+        "ar": "اسم موصول",
+        "info": "Huanzisha kishazi kirejeshi, mfano \"yule ambaye\" au \"kile ambacho\"."
+      },
+      "REM": {
+        "name": "Kiashiria cha Mwanzo Mpya",
+        "ar": "حرف استئناف",
+        "info": "Huonyesha mwanzo wa sehemu mpya ya sentensi isiyotegemea kauli iliyotangulia."
+      },
+      "RES": {
+        "name": "Kiambishi cha Ukomo",
+        "ar": "أداة حصر",
+        "info": "Hukomesha kauli kwa jambo moja tu, kwa maana ya \"tu\" au \"peke yake\"."
+      },
+      "RET": {
+        "name": "Kiambishi cha Mageuzi",
+        "ar": "حرف إضراب",
+        "info": "Huanzisha mgeuko au marekebisho kuhusiana na kauli iliyotangulia, kwa maana ya \"bali\"."
+      },
+      "RSLT": {
+        "name": "Kiambishi cha Matokeo",
+        "ar": "فاء الجواب",
+        "info": "فَ inayounganisha sehemu ya jibu ya sentensi ya masharti, au kiima kinachofuata mada ya jumla (mfano baada ya \"ikiwa\" au \"yeyote\") — tofauti na kiungo cha sababu, haionyeshi kusudi bali huunganisha sharti na matokeo yake."
+      },
+      "SUB": {
+        "name": "Kiunganishi Tegemezi (Masdariyya)",
+        "ar": "حرف مصدري",
+        "info": "Hubadilisha kishazi kinachofuata kuwa sawa na nomino-kitendo (masdar) ambacho kinaweza kutumika kama kiima au yambwa."
+      },
+      "SUP": {
+        "name": "Kiambishi cha Ziada",
+        "ar": "حرف زائد",
+        "info": "Neno la kujaza lisilo na maana yake yenyewe, linaloongezwa kwa sababu za kimtindo."
+      },
+      "SUR": {
+        "name": "Kiambishi cha Mshangao",
+        "ar": "حرف مفاجأة",
+        "info": "Huonyesha kwamba jambo limetokea ghafla na bila kutarajiwa."
+      },
+      "T": {
+        "name": "Kielezi cha Wakati",
+        "ar": "ظرف زمان",
+        "info": "Nomino inayoonyesha wakati, mfano \"leo\" au \"wakati ule\"."
+      },
+      "V": {
+        "name": "Kitenzi",
+        "ar": "فعل",
+        "info": "Lebo ya jumla ya kitenzi, kabla ya kubainishwa zaidi kama wakati uliopita, uliopo au amri."
+      },
+      "VOC": {
+        "name": "Kiambishi cha Wito",
+        "ar": "أداة نداء",
+        "info": "Huanzisha wito wa moja kwa moja, mfano \"ewe\" kabla ya jina linaloitwa."
+      }
+    },
+    "relationen": {
+      "Adj": {
+        "name": "Neno la Kuelezea",
+        "ar": "صفة",
+        "info": "Kivumishi kinachoelezea kwa undani zaidi nomino iliyotangulia."
+      },
+      "App": {
+        "name": "Badali (Ufafanuzi)",
+        "ar": "بدل",
+        "info": "Nomino ya pili inayofafanua au kubainisha zaidi nomino iliyotangulia — zote mbili ziko katika hali sawa ya sarufi."
+      },
+      "Cpnd": {
+        "name": "Msemo Mchanganyiko",
+        "ar": "مركب",
+        "info": "Maneno mawili yanayofanya kazi pamoja kama kitengo kimoja kisichobadilika."
+      },
+      "NonRel": {
+        "name": "Bila Uhusiano",
+        "ar": "بلا علاقة",
+        "info": "Kwa neno hili hakuna uhusiano wa kisarufi na neno lingine uliorekodiwa."
+      },
+      "Obj": {
+        "name": "Yambwa",
+        "ar": "مفعول به",
+        "info": "Yambwa ya moja kwa moja ya sentensi ya kitenzi — kitu ambacho tendo la kitenzi kinaelekezwa kwacho."
+      },
+      "Pass": {
+        "name": "Kiima cha Kutendwa (Naibu wa Fa'il)",
+        "ar": "نائب فاعل",
+        "info": "Mbeba wa kisarufi wa tendo katika sentensi ya kutendwa — huchukua nafasi ya mtendaji aliyeachwa."
+      },
+      "Poss": {
+        "name": "Mnyambuliko wa Umiliki",
+        "ar": "مضاف إليه",
+        "info": "Sehemu ya pili ya mnyambuliko wa umiliki — mmiliki au ufafanuzi zaidi wa nomino ya kwanza."
+      },
+      "Pred": {
+        "name": "Kiarifa (Khabar)",
+        "ar": "خبر",
+        "info": "Sehemu ya kauli ya sentensi ya kiima-kiarifa — kile kinachosemwa kuhusu mada ya sentensi (mubtada)."
+      },
+      "Pro": {
+        "name": "Katazo",
+        "ar": "نهي",
+        "info": "Sehemu ya sentensi inayohusiana na kikatazi na kukataza tendo fulani."
+      },
+      "Spec": {
+        "name": "Ufafanuzi (Tamyiz)",
+        "ar": "تمييز",
+        "info": "Nomino isiyo bayana inayofafanua taarifa iliyokuwa haieleweki wazi hapo awali, kama kiasi au kipimo."
+      },
+      "Subj": {
+        "name": "Kiima (Fa'il)",
+        "ar": "فاعل",
+        "info": "Mtendaji wa sentensi ya kitenzi — nani au nini kinachofanya tendo."
+      },
+      "amd": {
+        "name": "Marekebisho",
+        "ar": "استدراك",
+        "info": "Hupunguza au kurekebisha kidogo kauli iliyotangulia."
+      },
+      "ans": {
+        "name": "Jibu",
+        "ar": "جواب",
+        "info": "Jibu la swali au la kishazi cha masharti."
+      },
+      "avr": {
+        "name": "Kukataa",
+        "ar": "ردع",
+        "info": "Hukataa kwa dhati kauli au msimamo uliotangulia."
+      },
+      "cert": {
+        "name": "Uthibitisho",
+        "ar": "تحقيق",
+        "info": "Husisitiza kwamba kauli inayofuata kwa hakika imetokea au itatokea."
+      },
+      "circ": {
+        "name": "Hali",
+        "ar": "حال",
+        "info": "Huelezea hali au mazingira yanayoambatana na kiima au yambwa wakati wa tendo."
+      },
+      "cog": {
+        "name": "Nomino-Kitendo ya Kusisitiza (Mafʿul Mutlaq)",
+        "ar": "مفعول مطلق",
+        "info": "Nomino-kitendo yenye shina moja na kitenzi chenyewe, inayosisitiza au kufafanua zaidi maana yake."
+      },
+      "cond": {
+        "name": "Sharti",
+        "ar": "شرط",
+        "info": "Sehemu ya sentensi inayoeleza sharti la kishazi cha masharti."
+      },
+      "conj": {
+        "name": "Neno Lililounganishwa",
+        "ar": "معطوف",
+        "info": "Neno lililoambatanishwa kwa hadhi sawa na neno lililotangulia kupitia kiunganishi."
+      },
+      "emph": {
+        "name": "Msisitizo",
+        "ar": "توكيد",
+        "info": "Neno linalorudia kauli iliyotangulia kihalisi au kimaana, na hivyo kuisisitiza."
+      },
+      "eq": {
+        "name": "Usawa",
+        "ar": "تسوية",
+        "info": "Huonyesha kwamba uwezekano mbili uliotajwa una thamani sawa."
+      },
+      "exh": {
+        "name": "Kutia Moyo",
+        "ar": "تحضيض",
+        "info": "Huonyesha wito wa haraka au shauku."
+      },
+      "exl": {
+        "name": "Maelezo ya Kina",
+        "ar": "تفصيل",
+        "info": "Huanzisha maelezo ya kina zaidi kuhusu jambo lililotajwa hapo awali."
+      },
+      "exp": {
+        "name": "Ubaguzi (Mustathna)",
+        "ar": "مستثنى",
+        "info": "Kipengele kinachotolewa kutoka kwenye jumla iliyotajwa hapo awali."
+      },
+      "fut": {
+        "name": "Wakati Ujao",
+        "ar": "استقبال",
+        "info": "Huhamisha tendo la kitenzi hadi wakati ujao."
+      },
+      "gen": {
+        "name": "Uhusiano wa Jarri",
+        "ar": "مجرور",
+        "info": "Nomino iliyo katika hali ya jarri — baada ya kihusishi au ikiwa sehemu ya pili ya mnyambuliko wa umiliki."
+      },
+      "impv": {
+        "name": "Amri",
+        "ar": "أمر",
+        "info": "Sehemu ya sentensi inayohusiana na hali ya amri."
+      },
+      "imrs": {
+        "name": "Jibu la Amri",
+        "ar": "جواب أمر",
+        "info": "Sehemu ya sentensi inayotokea kama matokeo ya amri iliyotangulia."
+      },
+      "inc": {
+        "name": "Mwanzo wa Sentensi",
+        "ar": "ابتداء",
+        "info": "Huonyesha mwanzo wa sentensi mpya ya kiima-kiarifa."
+      },
+      "int": {
+        "name": "Ufafanuzi",
+        "ar": "تفسير",
+        "info": "Huanzisha ufafanuzi wa jambo lililotajwa hapo awali."
+      },
+      "intg": {
+        "name": "Swali",
+        "ar": "استفهام",
+        "info": "Sehemu ya sentensi inayohusiana na kiulizi cha mwanzoni."
+      },
+      "link": {
+        "name": "Neno Linalorejelewa",
+        "ar": "متعلق",
+        "info": "Neno ambalo kirai cha kihusishi kinahusiana nalo kimaana — kwa kawaida kitenzi, mara nyingine kilichoachwa."
+      },
+      "muster": {
+        "predOf": {
+          "name": "Khabar ya {wort}",
+          "ar": "خبر",
+          "info": "Kaana na \"dada zake\", pamoja na inna na \"dada zake\", hubadilisha hali ya sarufi ya mada na kiarifa cha sentensi ya kiima-kiarifa — hii ni khabar (kiarifa) inayohusiana na {wort}."
+        },
+        "subjOf": {
+          "name": "Ismu ya {wort}",
+          "ar": "اسم",
+          "info": "Kaana na \"dada zake\", pamoja na inna na \"dada zake\", hubadilisha hali ya sarufi ya mada na kiarifa cha sentensi ya kiima-kiarifa — hii ni ismu inayohusiana na {wort}."
+        }
+      },
+      "neg": {
+        "name": "Ukanushi",
+        "ar": "نفي",
+        "info": "Kikanushi kinachohusiana na sehemu ya sentensi iliyokanushwa."
+      },
+      "prev": {
+        "name": "Ubatilishaji",
+        "ar": "كاف",
+        "info": "Huondoa athari ya kisarufi ya kiambishi kilichotangulia."
+      },
+      "prp": {
+        "name": "Kusudi",
+        "ar": "المفعول لأجله",
+        "info": "Huonyesha sababu au kusudi la tendo."
+      },
+      "res": {
+        "name": "Ukomo",
+        "ar": "حصر",
+        "info": "Hukomesha kauli kwa kile kilichotajwa tu."
+      },
+      "ret": {
+        "name": "Mgeuko",
+        "ar": "اضراب",
+        "info": "Huanzisha marekebisho au mabadiliko ya mada kuhusiana na kauli iliyotangulia."
+      },
+      "root": {
+        "name": "Kiini cha Sentensi",
+        "ar": "الجذر",
+        "info": "Neno kuu la sentensi, kwa kawaida kitenzi kikuu au kiarifa, ambalo maneno mengine yote huhusiana nalo moja kwa moja au isivyo moja kwa moja."
+      },
+      "rslt": {
+        "name": "Kishazi cha Jibu la Sharti",
+        "ar": "جواب الشرط",
+        "info": "Sehemu ya sentensi inayoeleza matokeo ya kishazi cha masharti — kinachotokea sharti likitimizwa."
+      },
+      "state": {
+        "name": "Nomino ya Ufafanuzi",
+        "ar": "بيان",
+        "info": "Nomino inayofafanua kimaana taarifa iliyotangulia."
+      },
+      "sub": {
+        "name": "Kishazi Kirejeshi",
+        "ar": "صلة",
+        "info": "Kishazi kinachokamilisha maana ya kiwakilishi kirejeshi."
+      },
+      "sup": {
+        "name": "Neno la Kujaza",
+        "ar": "زائد",
+        "info": "Neno lisilo na maana yake yenyewe linalokamilisha sentensi kwa sababu za kimtindo."
+      },
+      "sur": {
+        "name": "Mshangao",
+        "ar": "فجاءة",
+        "info": "Huonyesha kwamba jambo limetokea ghafla na bila kutarajiwa."
+      },
+      "voc": {
+        "name": "Wito (Munada)",
+        "ar": "منادى",
+        "info": "Mtu au kitu kinachoitwa moja kwa moja baada ya kiambishi cha wito."
+      }
+    },
+    "schwacheVerben": {
+      "ajwaf": {
+        "name": "Ajwaf (Kitenzi Tupu)",
+        "ar": "أجوف",
+        "info": "Kitenzi ambacho herufi ya kati ya mzizi wake ni herufi dhaifu na mara nyingi huungana kuwa irabu ndefu."
+      },
+      "lafif": {
+        "name": "Lafif",
+        "ar": "لفيف",
+        "info": "Kitenzi chenye herufi mbili dhaifu za mzizi zinazoathiriana katika unyambuaji wake."
+      },
+      "mahmuz": {
+        "name": "Mahmuz (Kitenzi cha Hamza)",
+        "ar": "مهموز",
+        "info": "Kitenzi kilicho na hamza kama moja ya herufi za mzizi wake, jambo linaloweza kusababisha maandishi maalum."
+      },
+      "mithal": {
+        "name": "Mithal",
+        "ar": "مثال",
+        "info": "Kitenzi ambacho herufi ya kwanza ya mzizi wake ni herufi dhaifu, kwa kawaida waw."
+      },
+      "mudaaf": {
+        "name": "Mudhaʿaf (Kitenzi cha Kuruduka)",
+        "ar": "مضاعف",
+        "info": "Kitenzi ambacho herufi yake ya pili na ya tatu ya mzizi ni sawa na huungana kuwa herufi moja yenye shadda katika baadhi ya hali."
+      },
+      "rubai": {
+        "name": "Rubai (Kitenzi chenye Mizizi Minne)",
+        "ar": "رباعي",
+        "info": "Kitenzi ambacho mzizi wake una herufi nne badala ya tatu, na huunda familia yake ya miundo, bila kujali hamza, herufi dhaifu, au kurudia herufi."
+      },
+      "naqis": {
+        "name": "Naqis (Kitenzi Pungufu)",
+        "ar": "ناقص",
+        "info": "Kitenzi ambacho herufi ya mwisho ya mzizi wake ni herufi dhaifu ambayo mara nyingi huondoka au kubadilika mwishoni mwa neno."
+      },
+      "sahih": {
+        "name": "Sahih (Kitenzi Timamu)",
+        "ar": "صحيح",
+        "info": "Kitenzi ambacho herufi za mzizi wake hazina hamza, herufi dhaifu, wala kuruduka — aina timamu zaidi ya vitenzi."
+      }
+    },
+    "verbEigenschaften": {
+      "amrNahy": {
+        "name": "Amri na Katazo",
+        "ar": "الأمر والنهي",
+        "info": "Aina mbili za maagizo zinazopingana: moja huamuru kufanya tendo, nyingine huikataza.",
+        "werte": {
+          "amr": {
+            "name": "Amri",
+            "ar": "أمر",
+            "info": "Agizo la moja kwa moja la kufanya jambo, linaloundwa kutoka hali ya amri ya kitenzi."
+          },
+          "nahy": {
+            "name": "Katazo",
+            "ar": "نهي",
+            "info": "Agizo la kutofanya jambo, linaloundwa kutoka hali ya wakati uliopo pamoja na kikanushi mbele yake."
+          }
+        }
+      },
+      "genusVerbi": {
+        "name": "Hali ya Kutenda/Kutendwa",
+        "ar": "البناء للمعلوم والمجهول",
+        "info": "Huonyesha kama kiima chenyewe hufanya tendo (hali ya kutenda) au hukumbwa na tendo (hali ya kutendwa).",
+        "werte": {
+          "active": {
+            "name": "Hali ya Kutenda",
+            "ar": "معلوم"
+          },
+          "passive": {
+            "name": "Hali ya Kutendwa",
+            "ar": "مجهول"
+          }
+        }
+      },
+      "modus": {
+        "name": "Hali ya Kitenzi Kiwakati Kilichopo",
+        "ar": "حالات الفعل المضارع",
+        "info": "Hubadilisha irabu ya mwisho ya kitenzi cha wakati uliopo kulingana na muktadha wa sentensi — kwa mfano baada ya viunganishi fulani au katika ukanushi.",
+        "werte": {
+          "ind": {
+            "name": "Rafʿi",
+            "ar": "مرفوع"
+          },
+          "juss": {
+            "name": "Jazmu",
+            "ar": "مجزوم"
+          },
+          "sub": {
+            "name": "Nasbi",
+            "ar": "منصوب"
+          }
+        }
+      },
+      "tempus": {
+        "name": "Wakati na Amri",
+        "ar": "زمن الفعل",
+        "info": "Huweka kitenzi katika wakati au kukionyesha kama hali ya amri: wakati uliopita, wa sasa/ujao, au amri (ambayo kwa hakika ni hali tofauti, lakini imewekwa hapa pamoja kwa urahisi).",
+        "werte": {
+          "imperative": {
+            "name": "Amri",
+            "ar": "أمر",
+            "info": "Huamuru moja kwa moja kufanya tendo, mfano \"andika!\"."
+          },
+          "imperfect": {
+            "name": "Uliopo/Ujao (Mudhari')",
+            "ar": "مضارع",
+            "info": "Huelezea tendo linaloendelea au litakalotokea, mfano \"anaandika\"/\"ataandika\"."
+          },
+          "perfect": {
+            "name": "Uliopita (Madhi)",
+            "ar": "ماضي",
+            "info": "Huelezea tendo lililokamilika, mfano \"aliandika\"."
+          }
+        }
+      },
+      "verbform": {
+        "name": "Mnyambuliko wa Kitenzi (Bab)",
+        "ar": "أوزان الفعل",
+        "info": "Vitenzi vya Kiarabu vinaweza kunyambuliwa kwa mifumo maalum kupata maana tofauti — kuanzia mzizi wa msingi hadi mnyambuliko wa kumi.",
+        "formen": {
+          "1": {
+            "name": "Mnyambuliko wa I",
+            "ar": "فَعَلَ",
+            "info": "Mzizi wa msingi wenye maana asili ya shina, bila alama yoyote ya ziada."
+          },
+          "2": {
+            "name": "Mnyambuliko wa II",
+            "ar": "فَعَّلَ",
+            "info": "Kwa kawaida hurudufu herufi ya kati ya mzizi na mara nyingi huleta maana ya kusababisha au ya nguvu zaidi."
+          },
+          "3": {
+            "name": "Mnyambuliko wa III",
+            "ar": "فَاعَلَ",
+            "info": "Huongeza alifu baada ya herufi ya kwanza ya mzizi na mara nyingi huelezea tendo linalofanywa pamoja na mtu mwingine."
+          },
+          "4": {
+            "name": "Mnyambuliko wa IV",
+            "ar": "أَفْعَلَ",
+            "info": "Huanza na hamza na mara nyingi hufanya kitenzi kuwa cha kusababisha — \"kumfanya mtu afanye jambo\"."
+          },
+          "5": {
+            "name": "Mnyambuliko wa V",
+            "ar": "تَفَعَّلَ",
+            "info": "Ni mfano wa kujirejesha wa Mnyambuliko wa II, mara nyingi ukiwa na maana ya kujiachia jambo litokee."
+          },
+          "6": {
+            "name": "Mnyambuliko wa VI",
+            "ar": "تَفَاعَلَ",
+            "info": "Ni mfano wa kujirejesha/kushirikiana wa Mnyambuliko wa III, mara nyingi huelezea tendo linalofanyika baina ya pande mbili."
+          },
+          "7": {
+            "name": "Mnyambuliko wa VII",
+            "ar": "انْفَعَلَ",
+            "info": "Huanza na ن iliyoongezwa na mara nyingi huelezea tendo la kutendwa au lisilokusudiwa."
+          },
+          "8": {
+            "name": "Mnyambuliko wa VIII",
+            "ar": "افْتَعَلَ",
+            "info": "Huongeza ت baada ya herufi ya kwanza ya mzizi, mara nyingi ikiwa na maana ya kujirejesha au yenye nguvu zaidi."
+          },
+          "9": {
+            "name": "Mnyambuliko wa IX",
+            "ar": "افْعَلَّ",
+            "info": "Hurudufu herufi ya mwisho ya mzizi na hutumika hasa kwa rangi na sifa za kimwili."
+          },
+          "10": {
+            "name": "Mnyambuliko wa X",
+            "ar": "اسْتَفْعَلَ",
+            "info": "Huanza na است na mara nyingi huelezea kuomba au kudai kwa nafsi maana ya asili ya mzizi."
+          }
+        }
+      },
+      "person": {
+        "name": "Nafsi",
+        "ar": "الشخص",
+        "info": "Inaonyesha kama kitenzi kinafanywa na mzungumzaji, msikilizaji, au mtu wa tatu.",
+        "werte": {
+          "1": {
+            "name": "Nafsi ya kwanza",
+            "ar": "المتكلم",
+            "info": "Anayezungumza: mimi au sisi."
+          },
+          "2": {
+            "name": "Nafsi ya pili",
+            "ar": "المخاطب",
+            "info": "Anayeambiwa: wewe au ninyi."
+          },
+          "3": {
+            "name": "Nafsi ya tatu",
+            "ar": "الغائب",
+            "info": "Anayezungumzwa: yeye au wao."
+          }
+        }
+      }
+    },
+    "wortarten": {
+      "fiil": {
+        "name": "Fiʿl (Kitenzi)",
+        "ar": "فعل",
+        "info": "Fiʿl huelezea tendo au tukio na hubeba ndani yake wakati, nafsi na idadi."
+      },
+      "harf": {
+        "name": "Harf (Kiunganishi/Kihusishi)",
+        "ar": "حرف",
+        "info": "Harf ni maneno mafupi kama vihusishi, viunganishi au vikanushi ambavyo peke yake havina maana kamili."
+      },
+      "ism": {
+        "name": "Ism (Nomino)",
+        "ar": "اسم",
+        "info": "Ism ni jina la mtu, kitu, mahali, sifa au dhana — sawa na nomino na vivumishi katika Kiswahili."
+      }
+    }
+  },
+  "gebetGemeinsam": {
+    "title": "Kusali Kwa Jamaa (جماعة)",
+    "subtitle": "Jinsi ya kupanga safu katika sala ya jamaa – kwa michoro badala ya ukuta wa maandishi.",
+    "seeAlsoFreitag": "Zaidi kuhusu sala ya Ijumaa, adabu za msikitini na eneo la wanawake: Masomo → Fiqh ya Ibada, somo la 13.",
+    "seeAlsoSutra": "Sutra ya imamu inatosha kwa safu nzima iliyo nyuma yake: Masomo → Fiqh ya Ibada, somo la 11.",
+    "footerHinweis": "Muhtasari huu hauchukui nafasi ya kujifunza fiqh. Kwa maamuzi muhimu, muulize mwanachuoni wa eneo lako.",
+    "quelle": "Chanzo",
+    "sections": {
+      "aufstellung": "Mpangilio wa Safu",
+      "rezitation": "Usomaji na Tabia",
+      "mahram": "Mahram na Khalwa"
+    },
+    "legende": {
+      "imam": "Imamu (إمام)",
+      "mann": "Mwanaume",
+      "frau": "Mwanamke",
+      "qibla": "Kibla"
+    },
+    "grad": {
+      "anerkannt": "Inakubalika kwa upana",
+      "strittig": "Yenye mgogoro kati ya madhehebu",
+      "empfehlung": "Ushauri wa kivitendo"
+    },
+    "madhhab": {
+      "alle": "Madhehebu yote",
+      "hanafi": "Kihanafi",
+      "verschieden": "Madhehebu yanatofautiana"
+    },
+    "konstellationen": {
+      "zweiPersonen": {
+        "titel": "Imamu na mfuasi mmoja",
+        "beschreibung": "Ikiwa mwanaume mmoja tu anasali na imamu, hasimami nyuma yake bali upande wake wa kulia, akiwa nyuma kidogo."
+      },
+      "imamEhefrau": {
+        "titel": "Imamu na mke",
+        "beschreibung": "Ikiwa mke anasali na mumewe akiwa imamu, husimama nyuma yake, si kando yake."
+      },
+      "dreiPersonen": {
+        "titel": "Watu watatu",
+        "beschreibung": "Mara tu mtu wa tatu anapojiunga, wafuasi wanaunda safu yao wenyewe nyuma ya imamu."
+      },
+      "familienrunde": {
+        "titel": "Kikundi cha familia kilichochanganyika",
+        "beschreibung": "Imamu husimama peke yake mbele, wanaume na wavulana wanaunda safu nyuma yake, wanawake na wasichana wanaunda safu ya mwisho."
+      },
+      "groessereGruppe": {
+        "titel": "Kikundi kikubwa zaidi, safu kadhaa",
+        "beschreibung": "Safu za mbele za wanaume zinajazwa kwanza bila nafasi wazi; safu ya wanawake inakuwa ya mwisho."
+      }
+    },
+    "regeln": {
+      "imamMitEinemMitbeter": {
+        "titel": "Imamu na mfuasi mmoja",
+        "text": "Ikiwa mwanaume mmoja tu anasali na imamu, hasimami nyuma yake bali upande wa kulia wa imamu, akiwa nyuma kidogo. Imepokewa kwamba Ibn Abbas alijiunga na Mtume ﷺ kwa sala ya usiku, kwanza akasimama upande wake wa kushoto, kisha Mtume ﷺ akamvuta kwenda upande wake wa kulia."
+      },
+      "abDreiPersonen": {
+        "titel": "Kuanzia watu watatu: safu yao wenyewe",
+        "text": "Mara tu mtu wa tatu anapojiunga, wafuasi wote (ma'mum, مأموم) wanaunda safu yao wenyewe nyuma ya imamu, ambaye husimama peke yake mbele. Imepokewa kwamba Jabir bin Abdullah na Jabbar bin Sakhr waliposimama kulia na kushoto kwa Mtume ﷺ, aliwashika mkono wote wawili na kuwaweka nyuma yake."
+      },
+      "frauZuHause": {
+        "titel": "Mke nyumbani: nyuma ya anayeongoza sala",
+        "text": "Ikiwa mwanamke anasali nyumbani na mahram wake akiwa imamu, husimama nyuma yake, si kando yake. Maelezo kamili yenye vyanzo kuhusu eneo la wanawake msikitini: Masomo → Fiqh ya Ibada, somo la 13."
+      },
+      "familienrunde": {
+        "titel": "Kikundi cha familia kilichochanganyika",
+        "text": "Familia inaposali pamoja, imamu husimama peke yake mbele, wanaume na wavulana wanaunda safu nyuma yake, wanawake na wasichana safu ya mwisho – hata kama ni mwanamke mmoja tu, husimama nyuma, si kando ya wanaume. Imepokewa kwamba yatima na Anas bin Malik walisali nyuma ya Mtume ﷺ ndani ya nyumba, wakati mwanamke mzee alisimama peke yake akiunda safu nyuma yao."
+      },
+      "reihenSchliessen": {
+        "titel": "Kufunga safu, bila mapengo",
+        "text": "Safu inafungwa kuanzia katikati, bega kwa bega, bila mapengo. Imepokewa kutoka kwa Mtume ﷺ: \"Nyoosheni safu zenu, kwani kunyoosha safu ni sehemu ya ukamilifu wa sala.\""
+      },
+      "besteReihen": {
+        "titel": "Safu bora na isiyopendekezwa zaidi",
+        "text": "Kwa wanaume, safu ya mbele inachukuliwa kuwa bora zaidi na ya nyuma isiyopendekezwa zaidi; kwa wanawake ni kinyume chake – safu ya nyuma inachukuliwa kuwa bora kwao."
+      },
+      "qiblaAusrichtung": {
+        "titel": "Kuelekea Kibla",
+        "text": "Safu zote zinaelekea Kibla pamoja, kama ilivyo katika sala ya peke yako. Qur'ani inataja mwelekeo wa Kibla waziwazi; programu inauonyesha katika dira ya Kibla."
+      },
+      "lauteUndLeiseGebete": {
+        "titel": "Sala za sauti na za kimya",
+        "text": "Imamu husoma kwa sauti katika rakaa mbili za kwanza za Alfajiri, Magharibi na Isha, na kwa kimya katika Adhuhuri na Alasiri. Qur'ani inataja hali zote mbili za sauti katika sala."
+      },
+      "verhaltenBeiLauterRezitation": {
+        "titel": "Tabia wakati wa usomaji wa sauti",
+        "text": "Kwa mujibu wa Kihanafi, wafuasi hukaa kimya kabisa wakati wa usomaji wa sauti na kusikiliza, kwa msingi wa aya ya Qur'ani: \"Na Qur'ani ikisomwa, isikilizeni na mnyamaze.\" Madhehebu mengine, kutia ndani ya Kishafi, yanahitaji kila mfuasi asome mwenyewe Al-Fatiha kwa kimya – ikiwemo basmala (بسملة) kabla yake – kwa msingi wa maneno ya Mtume ﷺ: \"Hakuna sala kwa asiyesoma Al-Fatiha.\""
+      },
+      "amin": {
+        "titel": "Kusema Amina pamoja",
+        "text": "Imamu anaposema \"Amina\" mwishoni mwa Al-Fatiha, wafuasi wote wanaungana kwa sauti inayosikika. Imepokewa kutoka kwa Mtume ﷺ: \"Imamu akisema Amina, semeni Amina.\""
+      },
+      "rabbanaUndTakbir": {
+        "titel": "Takbira, Sami'Allahu liman hamidah na Rabbana",
+        "text": "Imamu husema kwa sauti inayosikika \"Allahu Akbar\" kila mabadiliko ya hali; anaposimama baada ya rukuu, husema \"Sami'Allahu liman hamidah\", ambapo wafuasi hujibu \"Rabbana wa lakal-hamd\"."
+      },
+      "rhythmusEmpfehlung": {
+        "titel": "Ushauri wa kivitendo: kufanya mpangilio wa sauti usikike",
+        "text": "Ushauri wa kivitendo, si hukumu ya kisheria: katika sala za kimya, wafuasi husikia takbira pekee. Imamu hufanya mpangilio wa sauti usikike kwa uhakika kwa kuzisema wazi na kwa mwendo sawa – kwa sauti kubwa kidogo kuliko usomaji wake wa kimya, bila haraka."
+      },
+      "mahramUndKhilwa": {
+        "titel": "Mahram na Khalwa",
+        "text": "Kimsingi, wanaume na wanawake, jamaa au sivyo, wanaweza kushiriki pamoja katika sala ya jamaa maadamu mpangilio wa safu unafuatwa. Kizuizi halisi pekee kinahusu faragha (khalwa, خلوة): mwanaume na mwanamke ambao si mahram (محرم) kwa kila mmoja hawaruhusiwi kuwa peke yao pamoja. Mara tu mtu mwingine yupo – mahram, mfuasi mwingine, au mtu wa tatu – hilo si khalwa tena. Imepokewa kutoka kwa Mtume ﷺ: \"Mwanaume asiwe peke yake na mwanamke isipokuwa akiwa na mahram.\""
+      }
+    }
+  },
+  "analyseUebung": {
+    "title": "Zoezi la Uchambuzi wa Sarufi",
+    "intro": "Bainisha mwenyewe aina ya neno, hali au wakati, na nafasi ya kila neno katika sentensi — kisha linganisha na kile ambacho kimeandikwa hasa katika mkusanyiko wa maandishi.",
+    "setup": {
+      "title": "Zoezi jipya",
+      "schnellstart": "Anza haraka",
+      "sureWaehlen": "Sura",
+      "versWaehlen": "Aya",
+      "zufaelligerVers": "Aya ya nasibu kutoka sura hii",
+      "keineWorteHinweis": "Hakuna neno linaloweza kutathminiwa katika aya hii kwa kiwango hiki. Tafadhali chagua aya nyingine au kiwango cha chini zaidi."
+    },
+    "schwierigkeit": {
+      "title": "Kiwango cha ugumu",
+      "stufe1Label": "Kiwango cha 1",
+      "stufe1Beschreibung": "Aina ya neno tu",
+      "stufe2Label": "Kiwango cha 2",
+      "stufe2Beschreibung": "Aina ya neno pamoja na hali au wakati",
+      "stufe3Label": "Kiwango cha 3",
+      "stufe3Beschreibung": "Aina ya neno, hali/wakati na nafasi katika sentensi"
+    },
+    "start": "Anza zoezi",
+    "zuletztGeuebt": {
+      "title": "Yaliyofanywa hivi karibuni",
+      "eintrag": "{score}% sahihi"
+    },
+    "exercise": {
+      "fortschritt": "Neno {index} kati ya {total}",
+      "wortartLabel": "Aina ya neno",
+      "satzrolleLabel": "Nafasi katika sentensi (i'rab)",
+      "aufdecken": "Onyesha jibu",
+      "weiter": "Endelea",
+      "ergebnisAnsehen": "Ona matokeo",
+      "deineAntwort": "Jibu lako",
+      "richtigWaere": "Jibu sahihi lingekuwa",
+      "richtig": "Sahihi",
+      "falsch": "Sivyo",
+      "weitereMerkmale": "Sifa nyingine"
+    },
+    "satzrolleFamilie": {
+      "pred": {
+        "name": "Kiarifu (baada ya kana/inna)",
+        "ar": "خبر"
+      },
+      "subj": {
+        "name": "Kiima cha sentensi (baada ya kana/inna)",
+        "ar": "اسم"
+      }
+    },
+    "ergebnis": {
+      "title": "Matokeo",
+      "nichtBewertetHinweis": "Uhusiano {count} zaidi haukuhesabiwa kwa sababu hakuna data ya uhakika katika mkusanyiko.",
+      "perfekt": "Yote ni sahihi — bora sana!",
+      "gut": "Umefanya vizuri.",
+      "ueben": "Mazoezi kidogo zaidi na utaijua vizuri.",
+      "fehlerTitle": "Inafaa kuangalia tena haya",
+      "keineFehler": "Hakuna makosa — vizuri sana!",
+      "imReaderOeffnen": "Fungua aya katika kisomaji",
+      "wurzelImLexikon": "Ona mzizi katika kamusi",
+      "nocheinmal": "Fanya zoezi tena",
+      "zurUebersicht": "Rudi kwenye muhtasari"
     }
   }
 }

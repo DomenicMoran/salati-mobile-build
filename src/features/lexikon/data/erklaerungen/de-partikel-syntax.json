@@ -1,0 +1,1046 @@
+{
+  "schema": 1,
+  "lang": "de",
+  "bereich": "partikel-syntax",
+  "eintraege": {
+    "harf": {
+      "titel": "Der Partikel",
+      "ar": "حَرْف",
+      "umschrift": "Harf",
+      "erklaerung": [
+        "Harf ist die dritte Wortart des Arabischen neben Ism (Nomen) und Fi'l (Verb). Ein Harf hat für sich genommen keine eigenständige Bedeutung — er ergibt erst zusammen mit einem Wort danach einen Sinn.",
+        "Während Ism und Fi'l Merkmale wie Genus, Numerus oder Zeitform tragen, hat Harf diese Kategorien nicht. Seine einzige Aufgabe ist eine grammatische Funktion: verbinden, verneinen, fragen, bedingen, anreden, betonen oder den Status eines folgenden Wortes festlegen.",
+        "Weil Harf so vielseitig ist, zerfällt er in viele Untergruppen mit eigenem Verhalten — Präpositionen, Konjunktionen, Verneinungspartikeln, Fragepartikeln, Bedingungspartikeln und mehr. Jede dieser Gruppen wird in einem eigenen Eintrag behandelt."
+      ],
+      "erkennung": [
+        "Ein Harf lässt sich nicht flektieren wie ein Ism (kein Status, kein Numerus, kein Genus) und ist meist sehr kurz — oft nur ein bis drei Buchstaben.",
+        "In der Wortanalyse trägt ein Harf-Segment ein eigenes Kürzel statt N (Nomen) oder V (Verb) — zum Beispiel P für Präposition, CONJ für Konjunktion oder NEG für Verneinung.",
+        "Ein ganzes Wort kann sogar ausschließlich aus mehreren aneinandergereihten Harf-Segmenten bestehen, ohne einen einzigen Ism- oder Fi'l-Stamm zu enthalten."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 9,
+          "wort": 5,
+          "zeigt": "das Wort وَمَا besteht ausschließlich aus zwei Harf-Segmenten (وَ und مَا), kein Ism- oder Fi'l-Stamm",
+          "warum": "zeigt, dass ein Harf tatsächlich für sich genommen kein eigenes Wortfeld wie Genus oder Numerus trägt — hier stapeln sich zwei Partikeln zu einem einzigen Korpuswort"
+        },
+        {
+          "sure": 1,
+          "vers": 1,
+          "wort": 1,
+          "zeigt": "das Präfix-Segment بِ in بِسْمِ trägt das POS-Tag P (Harf Jarr)",
+          "warum": "belegt am allerersten Wort des Korans ein zweites Harf-Beispiel — hier eine Präposition statt einer Verneinung/Konjunktion"
+        }
+      ],
+      "lernen": [
+        "Lerne zuerst die Grobeinteilung: Präposition, Konjunktion, Verneinung, Fragepartikel, Bedingungspartikel, Anredepartikel — dann erst die einzelnen Wörter jeder Gruppe.",
+        "Übe an echten Versen, ein Harf-Segment vom Stamm zu trennen: Was bleibt übrig, wenn man das Harf wegdenkt? Ergibt der Rest für sich genommen noch Sinn?",
+        "Präge dir für jede Gruppe die eine entscheidende Frage ein: Ändert dieses Harf den Status (Iʿrab) des folgenden Wortes, oder nicht?"
+      ],
+      "tabellen": [],
+      "siehe": ["huruf-jarr", "huruf-atf", "verneinung"]
+    },
+
+    "huruf-jarr": {
+      "titel": "Die Präpositionen",
+      "ar": "حُرُوف الجَرّ",
+      "umschrift": "Huruf al-Jarr",
+      "erklaerung": [
+        "Ein Harf Jarr (Präposition) bringt das unmittelbar folgende Ism in den Jarr-Status (Genitiv). Zusammen bilden Harf und Ism das Fragment Jaar-Majroor: der Jaar ist die Präposition selbst, der Majroor das dadurch in den Jarr-Status versetzte Ism.",
+        "Zu den häufigsten Harf Jarr gehören بِ (mit/durch), لِ (für), كَ (wie), مِن (von/aus), عَن (über), عَلَى (auf), إِلَى (zu), فِي (in) und حَتَّى (bis) — außerdem وَ und تَ als seltene Schwureinleitungen (etwa nur bei Allahs Namen).",
+        "Die einbuchstabigen Harf Jarr (بِـ، كَـ، لِـ، تَـ، وَـ) werden nicht als eigenes Wort geschrieben, sondern direkt an das folgende Ism angehängt und tragen ein festes Vokalzeichen.",
+        "Die deutsche Übersetzung eines Harf Jarr ist nicht immer wörtlich zu nehmen: Welche Präposition zu welchem Verb gehört, folgt oft einer eigenen arabischen Logik, die von der deutschen Präposition abweichen kann."
+      ],
+      "erkennung": [
+        "Ein Harf Jarr steht unmittelbar vor einem Ism (das auch ein Pronomen sein kann) — nie vor einem Verb.",
+        "Bei einbuchstabigen Harf Jarr aufpassen: derselbe Buchstabe am Wortanfang kann auch schlicht Teil des Wortstamms sein (z. B. das كَـ in كَافِر gehört zur Wurzel كفر, ist also kein Harf Jarr)."
+      ],
+      "belege": [
+        {
+          "sure": 1,
+          "vers": 1,
+          "wort": 1,
+          "zeigt": "بِسْمِ beginnt mit dem angehängten Harf Jarr بِ, das das folgende Ism (سْمِ) in den Jarr-Status bringt",
+          "warum": "belegt am allerersten Wort des Korans die einbuchstabige, direkt angehängte Form eines Harf Jarr"
+        },
+        {
+          "sure": 1,
+          "vers": 2,
+          "wort": 2,
+          "zeigt": "das Präfix-Segment لِ in لِلَّهِ trägt das POS-Tag P",
+          "warum": "belegt einen zweiten einbuchstabigen Harf Jarr (لِ, 'für') mit festem Kasra-Vokal"
+        }
+      ],
+      "lernen": [
+        "Lerne die Liste der Harf Jarr zunächst getrennt nach ein- und mehrbuchstabigen Formen auswendig — die einbuchstabigen brauchen zusätzlich ihr festes Vokalzeichen.",
+        "Suche in einem selbstgewählten Vers gezielt jedes Jaar-Majroor-Fragment und benenne Jaar und Majroor einzeln.",
+        "Präge dir bei jedem neu gelernten Verb gleich mit ein, welcher Harf Jarr typischerweise dazugehört — das erspart spätere Übersetzungsfehler."
+      ],
+      "tabellen": [],
+      "siehe": ["harf", "mudaf-ilayh"]
+    },
+
+    "huruf-atf": {
+      "titel": "Die Konjunktionen",
+      "ar": "حُرُوف العَطْف",
+      "umschrift": "Huruf al-'Atf",
+      "erklaerung": [
+        "Huruf al-'Atf verbinden zwei gleichrangige sprachliche Einheiten — einzelne Ismen, ganze Fragmente oder ganze Sätze. Das nachfolgende Element heißt Ma'tuf, das vorangehende, an das angeknüpft wird, Ma'tuf 'Alayh.",
+        "Der wichtigste Effekt eines Harf al-'Atf: Er überträgt den grammatischen Status (Iʿrab) des Ma'tuf 'Alayh unverändert auf das Ma'tuf. Steht das erste Wort im Jarr-Status, steht auch das angeknüpfte Wort im Jarr-Status — selbst über mehrere verbundene Wörter hinweg.",
+        "Die häufigste Konjunktion ist وَ (und) — sie verbindet neutral, ohne eine Reihenfolge oder einen Zeitabstand zu behaupten. فَ verbindet mit dem Sinn von 'und dann/sofort' (unmittelbare Abfolge), ثُمَّ mit dem Sinn von 'und dann' bei einem längeren zeitlichen Abstand. أَوْ bedeutet 'oder' im Sinn einer Auswahl, أَمْ ebenfalls 'oder', aber typischerweise innerhalb einer Frage ('welches von beiden?'). Daneben verbinden auch بَلْ (vielmehr) und لَكِنْ (jedoch) mit einem stärker gegensätzlichen Sinn.",
+        "فَ hat neben dieser einfachen Verbindungsfunktion zwei weitere, grammatisch ganz andere Rollen, die dieselbe Buchstabenform تragen, aber eigene Wirkungen haben: das kausale فاء السببية und das anknüpfende فاء الجواب/الفاء الرابطة. Beide werden als eigene Einträge behandelt, weil sie leicht mit dem gewöhnlichen, status-übertragenden فَ verwechselt werden."
+      ],
+      "erkennung": [
+        "Test für gewöhnliches 'Atf: Trägt das Wort nach dem Harf denselben Status (Raf'/Nasb/Jarr) wie das Wort davor? Wenn ja, liegt einfache Verbindung vor.",
+        "Wenn nach فَ stattdessen ein Verb im Präsens mit sichtbarer oder unsichtbarer Nasb-Endung steht (statt desselben Status wie zuvor), handelt es sich vermutlich nicht um gewöhnliches 'Atf, sondern um فاء السببية (siehe eigenen Eintrag).",
+        "Wenn فَ am Anfang eines Satzes steht, der auf einen Bedingungssatz, einen Eid oder ein Thema antwortet, ohne selbst den Status eines Wortes zu verändern, handelt es sich meist um فاء الجواب/الرابطة (siehe eigenen Eintrag)."
+      ],
+      "belege": [
+        {
+          "sure": 1,
+          "vers": 7,
+          "wort": 9,
+          "zeigt": "ٱلضَّآلِّينَ trägt die Relation conj (Basiswert nach relationBasis) und ist über وَ mit dem vorangehenden Ism verbunden",
+          "warum": "belegt Huruf al-'Atf mit وَ am Ende der Fatiha — zwei Personengruppen werden mit gleichem Status aneinandergereiht"
+        },
+        {
+          "sure": 2,
+          "vers": 196,
+          "wort": 31,
+          "zeigt": "صَدَقَةٍ trägt die Relation conj — verbunden über أَوْ mit dem vorangehenden Ism صِيَامٍ",
+          "warum": "belegt die Konjunktion أَوْ (oder) als echte Auswahl zwischen Fasten, Almosen oder Opfergabe"
+        },
+        {
+          "sure": 2,
+          "vers": 28,
+          "wort": 10,
+          "zeigt": "يُحْيِيكُمْ trägt die Relation conj — verbunden über ثُمَّ mit dem vorangehenden Verb",
+          "warum": "belegt ثُمَّ als Konjunktion mit Sinn eines zeitlichen Abstands zwischen den verbundenen Handlungen (sterben lassen — dann wieder lebendig machen)"
+        },
+        {
+          "sure": 2,
+          "vers": 140,
+          "wort": 17,
+          "zeigt": "ٱللَّهُ trägt die Relation conj — verbunden über أَمِ mit dem vorangehenden Wort in einer Frage",
+          "warum": "belegt أَمْ als Konjunktion innerhalb einer echten Entweder-oder-Frage ('seid ihr wissender, oder Allah?')"
+        }
+      ],
+      "lernen": [
+        "Lerne die sechs Kern-Konjunktionen و ف ثم أو أم mit ihrer jeweiligen Sinnnuance (neutral / sofort / mit Abstand / Auswahl / Frage-Auswahl) statt sie alle nur mit 'und/oder' zu übersetzen.",
+        "Übe den Status-Übertragungstest an mehreren Versen: Bestimme den Status des Ma'tuf 'Alayh, dann prüfe, ob das Ma'tuf denselben Status trägt.",
+        "Sobald du auf فَ triffst, prüfe systematisch alle drei Möglichkeiten der Reihe nach: gewöhnliches 'Atf, فاء السببية oder فاء الجواب — bevor du übersetzt.",
+        "Vergleiche eigene Fundstellen mit den Belegen hier und benenne jeweils Ma'tuf und Ma'tuf 'Alayh."
+      ],
+      "tabellen": [],
+      "siehe": ["faa-sababiyya", "faa-jawab", "badal", "sifah"]
+    },
+
+    "faa-sababiyya": {
+      "titel": "Das kausale Fa'",
+      "ar": "فَاء السَّبَبِيَّة",
+      "umschrift": "Faa' as-Sababiyya",
+      "erklaerung": [
+        "Faa' as-Sababiyya sieht genauso aus wie das gewöhnliche verbindende فَ, hat aber eine ganz andere grammatische Wirkung: Es leitet ein Verb im Präsens (Fi'l Mudari') ein, das dadurch in den Nasb-Status (Konjunktiv) versetzt wird — statt einfach den Status des vorangehenden Wortes zu übernehmen.",
+        "Sinngemäß drückt es eine Folge oder Konsequenz aus, die eintreten würde, WENN das Vorangehende nicht beachtet wird — meist übersetzt mit 'sodass' oder 'damit nicht'. Es folgt typischerweise auf ein Verbot, einen Befehl, eine Frage oder einen Wunsch.",
+        "Im Korpus tritt dieses فَ nur 88-mal auf — deutlich seltener als das anknüpfende فاء الجواب mit 350 Belegen, obwohl beide als dieselbe Buchstabenfolge فَ erscheinen."
+      ],
+      "erkennung": [
+        "Entscheidend ist nicht die Bedeutung, sondern die Form des folgenden Verbs: Steht danach ein Fi'l Mudari' im Nasb-Status (sichtbar an der Fatha-Endung oder am fehlenden Nun bei den fünf Verbformen), liegt Faa' as-Sababiyya vor.",
+        "Typischer Kontext davor: ein Verbot (لا + Verb), ein Befehl, eine Frage oder ein Wunsch — nie eine einfache Aussage, die nur aneinandergereiht wird."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 35,
+          "wort": 16,
+          "zeigt": "das Präfix-Segment فَ in فَتَكُونَا trägt das POS-Tag CAUS",
+          "warum": "belegt Faa' as-Sababiyya nach einem Verbot ('nähert euch nicht diesem Baum, sodass ihr beide zu den Ungerechten würdet') — das folgende Verb steht im Nasb, nicht im Status des vorangehenden Verbots"
+        },
+        {
+          "sure": 2,
+          "vers": 245,
+          "wort": 8,
+          "zeigt": "das Präfix-Segment فَ in فَيُضَٰعِفَهُۥ trägt das POS-Tag CAUS",
+          "warum": "belegt Faa' as-Sababiyya nach einer rhetorischen Frage ('wer leiht Allah eine gute Anleihe, sodass Er sie ihm vervielfacht?')"
+        }
+      ],
+      "lernen": [
+        "Frage bei jedem فَ nach einem Verbot, Befehl, einer Frage oder einem Wunsch zuerst: Steht das folgende Verb im Nasb-Status? Wenn ja, ist es Faa' as-Sababiyya, kein gewöhnliches 'Atf.",
+        "Übersetze zur Probe zunächst mit 'und dann' — ergibt das keinen logischen Sinn, aber 'sodass/damit nicht' schon, ist es ein starkes Indiz für die kausale Lesart.",
+        "Vergleiche die Belegstelle hier direkt mit einem Beleg zu فاء الجواب — beide beginnen gleich, wirken aber grammatisch entgegengesetzt."
+      ],
+      "tabellen": [],
+      "siehe": ["huruf-atf", "faa-jawab"]
+    },
+
+    "faa-jawab": {
+      "titel": "Das anknüpfende Fa' (Jawab und Rabita)",
+      "ar": "فَاء الجَوَاب / الفَاء الرَّابِطَة",
+      "umschrift": "Faa' al-Jawaab / al-Faa' ar-Raabita",
+      "erklaerung": [
+        "Auch dieses فَ sieht wie das gewöhnliche verbindende فَ aus, verändert aber — anders als Faa' as-Sababiyya — den Status des folgenden Wortes NICHT. Es ist eine reine Brücke: Es knüpft den nachfolgenden Satz an das vorher Gesagte an, meist als Antwort auf einen Bedingungssatz (Jawab ash-Shart), gelegentlich auch als verbindendes Glied zwischen einem Thema (Mubtada) und einer satzförmigen Aussage.",
+        "Es wird besonders dann gebraucht, wenn der Antwortsatz selbst grammatisch nicht direkt als Jawab ash-Shart stehen könnte — etwa weil er ein Nominalsatz ist, mit إِنَّ beginnt oder eine Verneinung mit لَنْ enthält.",
+        "Im Korpus ist dieses فَ mit 350 Belegen deutlich häufiger als das kausale فاء السببية (88 Belege) — beide erscheinen aber als dieselbe einzelne Buchstabenfolge فَ und sind nur an ihrer grammatischen Wirkung zu unterscheiden."
+      ],
+      "erkennung": [
+        "Anders als bei Faa' as-Sababiyya bleibt das Verb nach diesem فَ in seinem eigentlichen Modus (Raf' bzw. Jussiv, je nach Satzart) — es wird NICHT in den Nasb-Status gezwungen.",
+        "Es steht typischerweise am Beginn des Antwortsatzes einer Bedingung und wird oft direkt von إِنَّ, قَدْ oder einem Nominalsatz gefolgt."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 186,
+          "wort": 5,
+          "zeigt": "das Präfix-Segment فَ in فَإِنِّى trägt das POS-Tag RSLT, das ganze Wort die Relation rslt",
+          "warum": "belegt Faa' al-Jawaab als Antwortsatz-Einleitung nach einem إذا-Bedingungssatz ('wenn Meine Diener dich nach Mir fragen — so bin Ich nahe'), ohne dass das folgende إِنِّي in den Nasb-Status gebracht würde"
+        },
+        {
+          "sure": 2,
+          "vers": 282,
+          "wort": 10,
+          "zeigt": "فَٱكْتُبُوهُ trägt die Relation rslt, eingeleitet durch das Präfix-Segment فَ mit POS-Tag RSLT",
+          "warum": "belegt Faa' al-Jawaab als Antwort auf den mit إِذَا eingeleiteten Bedingungssatz über das Verschriften von Schulden"
+        }
+      ],
+      "lernen": [
+        "Präge dir die Kontrastprobe ein: Ändert sich der Status/Modus des folgenden Wortes NICHT (bleibt es Raf' bzw. Jussiv)? Dann ist es Faa' al-Jawaab, nicht Faa' as-Sababiyya.",
+        "Suche gezielt nach إِذَا- und إِنْ-Bedingungssätzen und markiere, ob der Antwortsatz mit فَ beginnt und warum (Nominalsatz? إِنَّ? Verneinung?).",
+        "Erstelle dir eine eigene Zwei-Spalten-Übersicht mit Beispielen für فاء السببية und فاء الجواب, um die beiden nicht zu verwechseln."
+      ],
+      "tabellen": [],
+      "siehe": ["huruf-atf", "faa-sababiyya", "shart"]
+    },
+
+    "verneinung": {
+      "titel": "Die Verneinung",
+      "ar": "حُرُوف النَّفْي",
+      "umschrift": "Huruf an-Nafy",
+      "erklaerung": [
+        "Zur Verneinung stehen mehrere Werkzeuge zur Verfügung, die jeweils an eine bestimmte Zeitform bzw. Satzart gebunden sind: لَمْ verneint mit einem Präsensverb die Vergangenheit und versetzt das Verb in den Jussiv (Majzum); لَنْ verneint mit einem Präsensverb die Zukunft und versetzt es in den Nasb-Status (Mansub); لَا verneint mit einem Präsensverb die Gegenwart, ohne den Status zu verändern; مَا verneint sowohl Vergangenheits- als auch Präsensverben, oft in einem Kontext der Ablehnung oder Debatte, ebenfalls ohne Statusänderung.",
+        "لَيْسَ ist grammatisch gesehen kein Harf, sondern ein unvollständiges Verb (siehe Kaana und ihre Schwestern) — es verneint Nominalsätze und versetzt deren Chabar in den Nasb-Status, während مَا als Verneinung eines Nominalsatzes den Chabar im Raf'-Status belässt.",
+        "Wichtiger Hinweis: مَا ist eines der vielseitigsten Wörter des Arabischen. Sehr oft ist es KEINE Verneinung, sondern ein Relativpronomen ('das, was'), eine Fragepartikel ('was?') oder eine Bedingungs-/Verbalnomen-Partikel. Ob مَا verneint oder nicht, entscheidet ausschließlich der Satzzusammenhang.",
+        "Daneben gibt es لَا النَّافِيَة لِلْجِنْس (die absolute Verneinung) für die Bedeutung 'es gibt überhaupt kein...' — das folgende Ism steht dabei mabni auf Fatha im Nasb-Status."
+      ],
+      "erkennung": [
+        "مَا ist eine Verneinung, wenn direkt danach ein vollständiger Satz mit eigenem Fa'il/Mubtada steht, der als Behauptung verneint wird.",
+        "مَا ist KEINE Verneinung, wenn es die Rolle eines Satzglieds übernimmt (z. B. Objekt oder Subjekt eines Verbs) und sich sinngemäß durch 'das, was' ersetzen lässt.",
+        "لَا النَّافِيَة لِلْجِنْس erkennst du daran, dass unmittelbar danach ein unbestimmtes Ism ohne Tanwin steht ('es gibt absolut kein...')."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 9,
+          "wort": 6,
+          "zeigt": "يَخْدَعُونَ trägt die Relation neg, das vorangehende مَا (Wort 5) das POS-Tag NEG",
+          "warum": "belegt مَا als echte Verneinung ('und sie täuschen niemanden außer sich selbst')"
+        },
+        {
+          "sure": 2,
+          "vers": 29,
+          "wort": 5,
+          "zeigt": "مَّا trägt hier NICHT die Verneinungs-Relation, sondern die Relation Obj (Objekt des Verbs خَلَقَ), das Segment trägt POS REL",
+          "warum": "belegt ausdrücklich den Warnfall: an derselben kurzen Sure taucht مَا wenige Verse später als Relativpronomen ('das, was Er für euch auf der Erde erschuf') auf — keine Verneinung"
+        }
+      ],
+      "lernen": [
+        "Lege dir eine Tabelle mit Zeitform → passendem Verneinungswerkzeug → ausgelöstem Status an (لَمْ/Majzum, لَنْ/Mansub, لَا und مَا/unverändert).",
+        "Übe gezielt am Beleg-Paar hier: Erkläre in eigenen Worten, warum مَا in 2:9 Verneinung ist und in 2:29 nicht.",
+        "Merke dir لَيْسَ als Verb, nicht als Harf — das erklärt, warum es allein den Chabar in den Nasb-Status versetzen kann, während مَا das nicht tut."
+      ],
+      "tabellen": [],
+      "siehe": ["nahy", "lam-al-amr", "kaana-wa-akhawatuha"]
+    },
+
+    "lam-al-amr": {
+      "titel": "Das Lam des Befehls",
+      "ar": "لَام الأَمْر",
+      "umschrift": "Laam al-Amr",
+      "erklaerung": [
+        "Laam al-Amr ist ein angehängtes لْ vor einem Präsensverb (Fi'l Mudari'), das einen indirekten Befehl bildet — meist an die 3. Person ('er/sie/sie soll(en) tun') oder als besonders feierliche Form auch an die 1. oder 2. Person. Das Verb wird dadurch in den Jussiv (Majzum) versetzt.",
+        "Grammatisch ist Laam al-Amr ein Harf, kein Verb — anders als der direkte Imperativ (Fi'l Amr), der eine eigene, bereits konjugierte Verbform ist. Beide drücken einen Befehl aus, aber Laam al-Amr tut dies über ein Präsensverb, nicht über eine eigene Imperativform.",
+        "Im Korpus kommt dieses لْ 78-mal vor — meist mit vorangestelltem وَ oder فَ."
+      ],
+      "erkennung": [
+        "Ein einzelnes لْ direkt vor einem Präsensverb, dessen Endung den Jussiv anzeigt (abgeworfenes Nun bei den fünf Verbformen, Sukun bei den übrigen Formen).",
+        "Übersetzbar mit 'soll/sollen' statt mit einem direkten 'Tu!' — Laam al-Amr richtet sich typischerweise (nicht ausschließlich) an eine dritte Person, für die es keine eigene Imperativform gibt."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 186,
+          "wort": 12,
+          "zeigt": "das Präfix-Segment لْ in فَلْيَسْتَجِيبُوا۟ trägt das POS-Tag IMPV",
+          "warum": "belegt Laam al-Amr als indirekten Befehl an eine dritte Person ('so sollen sie Mir antworten')"
+        },
+        {
+          "sure": 2,
+          "vers": 186,
+          "wort": 14,
+          "zeigt": "das Präfix-Segment لْ in وَلْيُؤْمِنُوا۟ trägt das POS-Tag IMPV",
+          "warum": "belegt im selben Vers ein zweites Laam al-Amr ('und sie sollen an Mich glauben')"
+        }
+      ],
+      "lernen": [
+        "Vergleiche in demselben Vers den direkten Imperativ (Fi'l Amr, 2. Person) mit einem Beispiel für Laam al-Amr (3. Person) — beide drücken einen Befehl aus, aber grammatisch völlig unterschiedlich gebaut.",
+        "Suche gezielt nach وَلْ- und فَلْ-Kombinationen am Wortanfang und bestimme jeweils die angesprochene Person.",
+        "Merke dir die Verwechslungsgefahr mit dem بِـ-artigen اللام-Lauten: Nur ein لْ mit Sukun direkt vor einem Präsensverb ist Laam al-Amr."
+      ],
+      "tabellen": [],
+      "siehe": ["nahy"]
+    },
+
+    "nahy": {
+      "titel": "Das Verbot",
+      "ar": "النَّهْي (لَا النَّاهِيَة)",
+      "umschrift": "an-Nahy (Laa an-Naahiya)",
+      "erklaerung": [
+        "Laa an-Naahiya ('das verbietende Laa') steht vor einem Präsensverb — meist in der 2. Person — und formt daraus ein Verbot ('tu das nicht!'). Das Verb wird dadurch, wie bei Laam al-Amr, in den Jussiv (Majzum) versetzt.",
+        "Das unterscheidet Nahy von der einfachen Verneinung mit لَا (لَا النَّافِيَة), die eine gegenwärtige Tatsache verneint, ohne den Modus des Verbs zu ändern. Beide Wörter sehen identisch aus (لَا), wirken aber grammatisch unterschiedlich: Nahy erzwingt den Jussiv, einfache Verneinung nicht."
+      ],
+      "erkennung": [
+        "Steht لَا vor einem Präsensverb, dessen Endung den Jussiv zeigt (abgeworfenes Nun/Sukun), und ist die Bedeutung ein Verbot statt einer Tatsachenfeststellung, handelt es sich um Laa an-Naahiya.",
+        "Im Korpus trägt das dazugehörige Verb die Relation Pro (für 'Prohibition') statt der gewöhnlichen Verneinungsrelation."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 22,
+          "wort": 19,
+          "zeigt": "تَجْعَلُوا۟ trägt die Relation Pro, eingeleitet durch لَا (im vorangehenden Wort فَلَا) mit POS-Tag PRO",
+          "warum": "belegt Laa an-Naahiya als echtes Verbot ('so setzt Allah keine Ebenbürtigen zur Seite')"
+        },
+        {
+          "sure": 2,
+          "vers": 60,
+          "wort": 25,
+          "zeigt": "تَعْثَوْا۟ trägt die Relation Pro, eingeleitet durch لَا (im vorangehenden Wort وَلَا) mit POS-Tag PRO",
+          "warum": "belegt ein zweites Verbot ('und treibt kein Unheil auf der Erde')"
+        }
+      ],
+      "lernen": [
+        "Vergleiche direkt einen Beleg zu Nahy mit einem Beleg zu einfacher Verneinung mit لَا — beide Wörter sehen gleich aus, wirken aber verschieden auf das Verb.",
+        "Übe, im Verb selbst den Jussiv zu erkennen (fehlendes Nun bei den fünf Formen, Sukun sonst) — das ist der zuverlässigste Hinweis auf Nahy.",
+        "Ordne gefundene لَا-Belege konsequent einer von drei Kategorien zu: einfache Verneinung, Nahy, oder absolute Verneinung (لَا النَّافِيَة لِلْجِنْس)."
+      ],
+      "tabellen": [],
+      "siehe": ["verneinung", "lam-al-amr"]
+    },
+
+    "istifham": {
+      "titel": "Die Fragepartikeln",
+      "ar": "أَدَوَات الاِسْتِفْهَام",
+      "umschrift": "Adawaat al-Istifhaam",
+      "erklaerung": [
+        "Fragepartikeln stehen am Satzanfang und leiten sowohl Nominal- als auch Verbalsätze ein: مَنْ (wer), مَاذَا/مَا (was), مَتَى (wann), أَيْنَ (wo), لِمَاذَا (warum), كَيْفَ (wie), أَيّ (welcher/welche/welches) sowie هَلْ und die angehängte Hamza أَ für Ja/Nein-Fragen.",
+        "Die meisten Fragewörter haben keinen grammatischen Einfluss auf die Satzstruktur — sie werden einfach vor den Satz gestellt.",
+        "Trifft eine Fragepartikel mit einem Harf Jarr zusammen, wird der Harf Jarr vorangestellt; bei مَا verschmelzen beide zu einer Form (مِنْ + مَا → مِمَّ, عَنْ + مَا → عَمَّ, فِي + مَا → فِيمَ, لِ + مَا → لِمَ)."
+      ],
+      "erkennung": [
+        "Fragepartikeln stehen am Satzanfang, unabhängig davon, ob ein Nominal- oder Verbalsatz folgt.",
+        "أَ als angehängte Fragepartikel ist eine einzelne vorangestellte Hamza direkt vor dem ersten Wortstamm — im Korpus als eigenes Präfix-Segment mit POS-Tag INTG erfasst."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 44,
+          "wort": 1,
+          "zeigt": "das Präfix-Segment أَ in أَتَأْمُرُونَ trägt das POS-Tag INTG",
+          "warum": "belegt die angehängte Fragepartikel أَ als Einleitung einer rhetorischen Ja/Nein-Frage ('gebietet ihr den Menschen Rechtschaffenheit...?')"
+        },
+        {
+          "sure": 2,
+          "vers": 30,
+          "wort": 11,
+          "zeigt": "das Präfix-Segment أَ in أَتَجْعَلُ trägt das POS-Tag INTG",
+          "warum": "belegt dieselbe Fragepartikel in der berühmten Engel-Frage ('willst Du darin jemanden einsetzen, der Unheil stiftet?')"
+        }
+      ],
+      "lernen": [
+        "Lerne die Fragewörter-Tabelle zusammen mit ihrer Wortart (Ism wie مَنْ/مَا/أَيّ oder reines Harf wie هَلْ/أَ), da das die spätere Iʿrab-Bestimmung erleichtert.",
+        "Übe die Verschmelzungsformen مِمَّ/عَمَّ/فِيمَ/لِمَ gesondert — sie sind leicht zu übersehen, wenn man nur nach 'مَا' sucht.",
+        "Vergleiche Fragesätze mit sonst identischem Wortlaut ohne Fragepartikel, um zu sehen, dass sich am Satzbau selbst nichts ändert."
+      ],
+      "tabellen": [],
+      "siehe": []
+    },
+
+    "shart": {
+      "titel": "Die Bedingungssätze",
+      "ar": "أَدَوَات الشَّرْط وَجَوَاب الشَّرْط",
+      "umschrift": "Adawaat ash-Shart / Jawaab ash-Shart",
+      "erklaerung": [
+        "Ein Bedingungssatz (Jumla Shartiyya) besteht aus zwei Teilen: der Bedingung (الشَّرْط) und ihrer Antwort/ihrem Ergebnis (جَوَاب الشَّرْط) — die zweite Aussage tritt nur ein, wenn die erste erfüllt ist.",
+        "Bedingungspartikeln zerfallen in zwei Gruppen: Adawaat al-Jazm (إِنْ، مَنْ، مَا und weitere) versetzen bei zwei Präsensverben beide Satzteile in den Jussiv; Adawaat ghayr Jaazima (لَوْ 'hätte', إِذَا 'wenn/sobald') haben keine grammatische Wirkung auf den Status der Verben.",
+        "Sehr häufig leitet ein فَ den Antwortsatz ein, besonders wenn dieser sich vom Bedingungssatz unterscheidet (etwa: Bedingungssatz verbal, Antwortsatz nominal) — dieses فَ ist das in einem eigenen Eintrag behandelte Faa' al-Jawaab.",
+        "Neben dem Bedingungssatz gibt es eine ganz ähnliche Struktur bei Befehlen: Auf einen Amr (Befehl) kann ein Jawaab al-Amr folgen, der beschreibt, was bei Befolgung geschieht — ebenfalls immer im Jussiv."
+      ],
+      "erkennung": [
+        "Der Bedingungsteil trägt in der Korpus-Syntax die Relation cond, der Antwortteil sehr oft die Relation rslt (siehe Faa' al-Jawaab), wenn er mit فَ eingeleitet wird.",
+        "Adawaat al-Jazm erkennst du daran, dass beide Verben — Bedingung und Antwort — im Jussiv stehen, selbst wenn die deutsche Übersetzung Präsens verlangt."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 282,
+          "wort": 5,
+          "zeigt": "تَدَايَنتُم trägt die Relation cond, ausgelöst durch إِذَا (Wort 4)",
+          "warum": "belegt den Bedingungsteil eines Shart-Satzes ('wenn ihr eine Schuld auf Zeit eingeht')"
+        },
+        {
+          "sure": 2,
+          "vers": 282,
+          "wort": 10,
+          "zeigt": "فَٱكْتُبُوهُ trägt die Relation rslt",
+          "warum": "belegt den zugehörigen Jawab-Satz ('so schreibt sie auf') im selben Vers, eingeleitet mit Faa' al-Jawaab"
+        }
+      ],
+      "lernen": [
+        "Lerne zuerst die Zweiteilung Jazim/ghayr Jazim, dann erst die einzelnen Partikeln jeder Gruppe.",
+        "Suche in einem Bedingungssatz systematisch zuerst الشَّرْط, dann جَوَاب الشَّرْط, und prüfe, ob ein فَ dazwischensteht.",
+        "Bilde eigene kurze Bedingungssätze mit إِنْ und vergleiche, wie sich die Verbendung gegenüber einem Satz ohne إِنْ verändert."
+      ],
+      "tabellen": [],
+      "siehe": ["faa-jawab"]
+    },
+
+    "kaana-wa-akhawatuha": {
+      "titel": "Kaana und ihre Schwestern",
+      "ar": "كَانَ وَأَخَوَاتُهَا",
+      "umschrift": "Kaana wa Akhawatuha",
+      "erklaerung": [
+        "Kaana (sein) und ihre Schwestern sind unvollständige Verben (Af'aal Naaqisa): Sie verlangen keinen gewöhnlichen Fa'il, sondern verwandeln einen ganzen Nominalsatz in ihr eigenes Ism und Chabar. Zur Familie gehören unter anderem كَانَ (sein), لَيْسَ (nicht sein), ظَلَّ (bleiben) und أَصْبَحَ (werden) — dazu weitere wie صَارَ, أَمْسَى oder مَا زَالَ.",
+        "Das Ism Kaana bleibt, wie ein gewöhnlicher Mubtada, im Raf'-Status. Der entscheidende Unterschied: Der Chabar Kaana steht im Nasb-Status — obwohl ein Chabar in einem normalen Nominalsatz eigentlich im Raf'-Status stehen müsste.",
+        "Ist der Chabar Kaana selbst ein ganzer Satz (etwa ein Verbalsatz mit Präsensverb), ist die Nasb-Wirkung nicht an einer sichtbaren Endung zu erkennen — die Chabar-Rolle bleibt trotzdem bestehen."
+      ],
+      "erkennung": [
+        "Ein Vers 'kippt' erkennbar in eine Kaana-Konstruktion, sobald nach كَانَ/einer ihrer Schwestern ein Ism/Pronomen im Raf'-Status (das Ism) und danach etwas im Nasb-Status oder ein ganzer Satz (der Chabar) folgt, statt des für einen gewöhnlichen Nominalsatz erwarteten zweiten Raf'-Wortes.",
+        "In der Korpus-Syntax erscheinen Ism und Chabar dieser Familie als eigene Relationen mit angehängtem Regens in doppelten spitzen Klammern, etwa subj<<kan>> und pred<<kan>> — relationBasis() aus grammatik.ts löst diese Form in Basiswert (subj/pred) und Regens (z. B. kan, ykon) auf."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 10,
+          "wort": 12,
+          "zeigt": "يَكْذِبُونَ trägt die Relation \"pred <<kan>>\" (Basiswert pred, Regens kan)",
+          "warum": "belegt den Chabar Kaana als ganzen Verbalsatz ('...weil sie zu lügen pflegten') nach كَانُوا۟ im selben Vers"
+        },
+        {
+          "sure": 2,
+          "vers": 247,
+          "wort": 15,
+          "zeigt": "ٱلْمُلْكُ trägt die Relation \"subj <<ykon>>\" (Basiswert subj, Regens ykon — die Präsensform von كَانَ)",
+          "warum": "belegt das Ism einer Kaana-Schwesternform (يَكُونُ) im Raf'-Status ('wie sollte ihm die Herrschaft über uns zustehen')"
+        }
+      ],
+      "lernen": [
+        "Lerne die vier hier geforderten Verben كَانَ، لَيْسَ، ظَلَّ، أَصْبَحَ zuerst mit ihrer Grundbedeutung, dann erst die Nasb-Regel für den Chabar.",
+        "Übe an mehreren Versen, Ism Kaana und Chabar Kaana getrennt zu benennen — insbesondere wenn der Chabar selbst ein Satz ist.",
+        "Vergleiche einen Kaana-Satz mit demselben Satz ohne كَانَ, um den Unterschied im Chabar-Status unmittelbar zu spüren."
+      ],
+      "tabellen": [],
+      "siehe": ["inna-wa-akhawatuha", "mubtada", "khabar"]
+    },
+
+    "inna-wa-akhawatuha": {
+      "titel": "Inna und ihre Schwestern",
+      "ar": "إِنَّ وَأَخَوَاتُهَا",
+      "umschrift": "Inna wa Akhawatuha",
+      "erklaerung": [
+        "Inna und ihre Schwestern sind Harf Nasb — Partikeln, die ein Ism unmittelbar (oder nach einem eingeschobenen Jaar-Majroor bzw. besonderen Mudaaf) in den Nasb-Status versetzen, während der zugehörige Chabar im Raf'-Status bleibt. Damit wirken sie genau umgekehrt zu Kaana und ihren Schwestern.",
+        "Zur Familie gehören إِنَّ/أَنَّ (wahrlich/dass, betonend), كَأَنَّ (als ob, vergleichend), لَكِنَّ (jedoch, gegensätzlich), لَيْتَ (wenn bloß, wünschend) und لَعَلَّ (hoffentlich/vielleicht, erwartend) — jede mit eigener Sinnfärbung, aber identischer grammatischer Wirkung.",
+        "Das Ism eines Harf Nasb bleibt inhaltlich der Macher/das Thema der Aussage und wird auch so übersetzt, obwohl es formal im Nasb-Status steht — die Endung ändert sich, die Rolle nicht."
+      ],
+      "erkennung": [
+        "Direkt nach إِنَّ/أَنَّ (oder nach einem eingeschobenen Jaar-Majroor) steht ein Ism oder gebundenes Pronomen mit Fatha-Endung (das Ism), später folgt ein Raf'-markiertes Wort oder ein ganzer Satz (der Chabar).",
+        "In der Korpus-Syntax erscheinen Ism und Chabar dieser Familie ebenfalls als subj<<...>>/pred<<...>> mit Regens in, an, ka'ana, lakin oder lel/la — auch hier über relationBasis() auflösbar."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 20,
+          "wort": 21,
+          "zeigt": "ٱللَّهَ trägt die Relation \"subj<<in>>\" (Basiswert subj, Regens in)",
+          "warum": "belegt das Ism Inna im Nasb-Status ('wahrlich, Allah...')"
+        },
+        {
+          "sure": 2,
+          "vers": 20,
+          "wort": 25,
+          "zeigt": "قَدِيرٌ trägt die Relation \"pred<<in>>\" (Basiswert pred, Regens in)",
+          "warum": "belegt im selben Vers den zugehörigen Chabar Inna im Raf'-Status ('...ist über alle Dinge mächtig') — derselbe Vers, den auch das Handout-Kapitel zum Harf Nasb als Beispiel nutzt"
+        }
+      ],
+      "lernen": [
+        "Lerne die sechs Schwestern mit ihrer je eigenen Sinnfärbung (betonend/vergleichend/gegensätzlich/wünschend/erwartend), nicht nur als austauschbare 'Verstärkerwörter'.",
+        "Übe, im selben Vers Ism und Chabar getrennt zu benennen und ihre jeweilige Endung zu erklären.",
+        "Stelle einen Inna-Satz einem Kaana-Satz gegenüber: Wo steht das Ism, wo der Chabar — und in welchem Status jeweils?"
+      ],
+      "tabellen": [],
+      "siehe": ["kaana-wa-akhawatuha", "verneinung"]
+    },
+
+    "faail": {
+      "titel": "Der Fa'il",
+      "ar": "فَاعِل",
+      "umschrift": "Faa'il",
+      "erklaerung": [
+        "Der Fa'il ist der Macher/das Subjekt eines Verbalsatzes und steht immer im Raf'-Status. In der arabischen Standard-Wortstellung folgt er dem Verb (Verb – Fa'il – Objekt), nicht umgekehrt.",
+        "Jedes Verb trägt außerdem einen inneren, im Verb selbst steckenden Macher (ein gebundenes Pronomen). Dieser innere Macher kann durch einen äußeren, explizit genannten Fa'il ersetzt werden, wenn das Verb in der Er/Sie-Form steht und das Nomen danach im Raf'-Status folgt."
+      ],
+      "erkennung": [
+        "Ein Raf'-markiertes Nomen oder Pronomen, das unmittelbar oder kurz nach einem Verb steht und die Frage 'Wer hat es getan?' beantwortet.",
+        "Steht das mögliche Subjekt VOR dem Verb, ist es kein Fa'il mehr, sondern ein Mubtada mit einem Verbalsatz als Chabar."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 7,
+          "wort": 2,
+          "zeigt": "ٱللَّهُ trägt die Relation Subj",
+          "warum": "belegt den Fa'il im Raf'-Status nach dem Verb ('Allah hat ihre Herzen versiegelt')"
+        },
+        {
+          "sure": 2,
+          "vers": 10,
+          "wort": 5,
+          "zeigt": "ٱللَّهُ trägt die Relation Subj",
+          "warum": "belegt einen zweiten Fa'il ('so hat Allah ihre Krankheit vermehrt')"
+        }
+      ],
+      "lernen": [
+        "Suche in mehreren Versen zuerst das Verb, dann direkt danach das erste Raf'-markierte Wort — das ist in aller Regel der Fa'il.",
+        "Übe den Unterschied zwischen innerem (im Verb versteckten) und äußerem (explizit genanntem) Macher an Versen mit und ohne genanntem Fa'il.",
+        "Vergleiche einen Fa'il-Satz mit einem Satz, in dem dasselbe Nomen als Mubtada vor dem Verb steht — der Status bleibt Raf', die Rolle ändert sich."
+      ],
+      "tabellen": [],
+      "siehe": ["naib-al-fail", "mubtada"]
+    },
+
+    "naib-al-fail": {
+      "titel": "Der Naa'ib al-Fa'il",
+      "ar": "نَائِب الفَاعِل",
+      "umschrift": "Naa'ib al-Faa'il",
+      "erklaerung": [
+        "Steht das Verb im Passiv (Fi'l Mabni lil-Madschhul), fällt der eigentliche Fa'il weg oder bleibt unbekannt. An seine Stelle tritt der Naa'ib al-Fa'il — wörtlich 'Stellvertreter des Machers' — meist das, was in einem aktiven Satz das Objekt gewesen wäre. Er übernimmt dabei den Raf'-Status des Fa'il.",
+        "Das Verb selbst zeigt die passive Bildung (im Präsens etwa Damma auf dem ersten Radikal), der Naa'ib al-Fa'il folgt ihm wie ein gewöhnlicher Fa'il im Raf'-Status."
+      ],
+      "erkennung": [
+        "Ein passiv gebildetes Verb, gefolgt von einem Raf'-markierten Nomen, das inhaltlich eher als Objekt der Handlung erscheint (nicht als deren Ausführer).",
+        "In der Korpus-Syntax trägt dieses Wort die eigene Relation Pass statt der gewöhnlichen Fa'il-Relation Subj."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 48,
+          "wort": 12,
+          "zeigt": "شَفَٰعَةٌ trägt die Relation Pass",
+          "warum": "belegt den Naa'ib al-Fa'il nach dem Passivverb يُقْبَلُ ('und keine Fürsprache wird von ihr angenommen') — inhaltlich das, was in einem Aktivsatz das Objekt wäre"
+        },
+        {
+          "sure": 2,
+          "vers": 61,
+          "wort": 39,
+          "zeigt": "ٱلذِّلَّةُ trägt die Relation Pass",
+          "warum": "belegt einen zweiten Naa'ib al-Fa'il nach dem Passivverb ضُرِبَتْ ('und Erniedrigung wurde über sie verhängt')"
+        }
+      ],
+      "lernen": [
+        "Bilde dir zu einem bekannten Aktivsatz die Passivform und beobachte, wie das frühere Objekt zum Naa'ib al-Fa'il im Raf'-Status wird.",
+        "Achte gezielt auf die Vokalisierung des Verbs (Damma-Muster) als erstes Erkennungszeichen für ein Passivverb, bevor du nach dem Naa'ib al-Fa'il suchst.",
+        "Vergleiche den Beleg hier mit einem gewöhnlichen Fa'il-Beleg — beide stehen im Raf'-Status, aber mit unterschiedlicher inhaltlicher Rolle."
+      ],
+      "tabellen": [],
+      "siehe": ["faail"]
+    },
+
+    "maful-bihi": {
+      "titel": "Das direkte Objekt",
+      "ar": "مَفْعُول بِه",
+      "umschrift": "Maf'ool bihi",
+      "erklaerung": [
+        "Der Maf'ool bihi ist das direkte Objekt eines Verbalsatzes, steht immer im Nasb-Status und beantwortet die Frage 'wer/wem/wen/was'. Es ist die im Koran mit Abstand häufigste Art von Detail (Maf'ool).",
+        "Ein an ein Verb angehängtes gebundenes Pronomen ist immer ein Maf'ool bihi, auch wenn es nicht wie ein eigenständiges Wort aussieht."
+      ],
+      "erkennung": [
+        "Ein Nasb-markiertes Nomen oder Pronomen nach Verb und Fa'il, das direkt von der Handlung betroffen ist.",
+        "Frage-Test: Lässt sich das Wort mit 'wen/was tut der Fa'il?' erfragen?"
+      ],
+      "belege": [
+        {
+          "sure": 1,
+          "vers": 6,
+          "wort": 2,
+          "zeigt": "ٱلصِّرَٰطَ trägt die Relation Obj",
+          "warum": "belegt den Maf'ool bihi im Nasb-Status nach dem Imperativ ٱهْدِنَا ('leite uns den geraden Weg')"
+        },
+        {
+          "sure": 1,
+          "vers": 5,
+          "wort": 1,
+          "zeigt": "إِيَّاكَ trägt die Relation Obj",
+          "warum": "belegt den Maf'ool bihi als vorangestelltes, getrenntes Pronomen ('Dich allein beten wir an')"
+        }
+      ],
+      "lernen": [
+        "Übe den Frage-Test ('wen/was?') an mehreren Versen und markiere jeweils Verb, Fa'il und Maf'ool bihi getrennt.",
+        "Suche gezielt nach an Verben angehängten Pronomen und benenne sie explizit als Maf'ool bihi.",
+        "Vergleiche den Maf'ool bihi mit Maf'ool Mutlaq und al-Maf'ool li-Ajlihi, um die drei Detail-Arten nicht zu vermischen."
+      ],
+      "tabellen": [],
+      "siehe": ["faail", "maful-mutlaq", "maful-liajlihi"]
+    },
+
+    "maful-mutlaq": {
+      "titel": "Das absolute Objekt",
+      "ar": "مَفْعُول مُطْلَق",
+      "umschrift": "Maf'ool Mutlaq",
+      "erklaerung": [
+        "Der Maf'ool Mutlaq ist ein Masdar (Verbalnomen) mit derselben Wurzel wie das Verb, das es begleitet, und steht im Nasb-Status. Er beantwortet nicht 'wen/was', sondern verstärkt, beschreibt oder beziffert die Handlung selbst noch einmal.",
+        "Drei Funktionen sind möglich: als einzelnes Wort betont er die Handlung; mit einem Adjektiv beschreibt er sie näher; als Zahlwort gibt er an, wie oft die Handlung stattfand."
+      ],
+      "erkennung": [
+        "Ein Nasb-markiertes Ism, das dieselben Wurzelbuchstaben trägt wie das vorangehende Verb — nicht ein anderes Nomen, sondern eine Wiederholung der Verbwurzel als Nomen.",
+        "Grammatisch nicht mit 'wen/was' erfragbar, sondern eher mit 'wie sehr/auf welche Weise/wie oft'."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 25,
+          "wort": 18,
+          "zeigt": "رِّزْقًا trägt die Relation cog",
+          "warum": "belegt den Maf'ool Mutlaq mit derselben Wurzel رزق wie das vorangehende Verb رُزِقُوا۟ ('sooft sie davon an Versorgung versorgt wurden')"
+        },
+        {
+          "sure": 2,
+          "vers": 245,
+          "wort": 10,
+          "zeigt": "أَضْعَافًا trägt die Relation cog",
+          "warum": "belegt den Maf'ool Mutlaq mit derselben Wurzel ضعف wie das vorangehende Verb يُضَٰعِفَهُ ('sodass Er es ihm um ein Vielfaches vervielfacht')"
+        }
+      ],
+      "lernen": [
+        "Prüfe bei jedem verdächtigen Nasb-Ism zuerst die Wurzelbuchstaben gegen das vorangehende Verb — stimmen sie überein, ist es sehr wahrscheinlich Maf'ool Mutlaq.",
+        "Suche gezielt nach den drei Funktionen (Betonung/Beschreibung/Zählung) in unterschiedlichen Versen.",
+        "Vergleiche Maf'ool Mutlaq bewusst mit Maf'ool bihi — nur eines der beiden lässt sich mit 'wen/was' erfragen."
+      ],
+      "tabellen": [],
+      "siehe": ["maful-bihi"]
+    },
+
+    "maful-liajlihi": {
+      "titel": "Das Objekt des Grundes",
+      "ar": "المَفْعُول لِأَجْلِه",
+      "umschrift": "al-Maf'ool li-Ajlihi",
+      "erklaerung": [
+        "Al-Maf'ool li-Ajlihi (auch Maf'ool lahu) ist ein Masdar im Nasb-Status, der den GRUND oder das Motiv hinter der Haupthandlung nennt — er beantwortet die Frage 'warum?'. Anders als der Maf'ool Mutlaq teilt er sich NICHT dieselbe Wurzel mit dem Hauptverb, sondern benennt ein eigenständiges, meist abstraktes Motiv (Furcht, Wunsch, Eifersucht ...).",
+        "Damit steht al-Maf'ool li-Ajlihi zwischen den anderen beiden Detail-Arten: Wie der Maf'ool Mutlaq ist er ein reiner Masdar im Nasb-Status ohne eigene Objekt-Rolle, wie der Maf'ool bihi bezieht er sich aber inhaltlich auf die Motivation hinter der Handlung, nicht auf ihre Wiederholung."
+      ],
+      "erkennung": [
+        "Ein unbestimmtes, abstraktes Nasb-Ism nach dem Hauptverb, das eine Emotion oder ein Motiv bezeichnet und die Frage 'aus welchem Grund?' beantwortet.",
+        "Abgrenzung zum Maf'ool Mutlaq: die Wurzel unterscheidet sich vom Hauptverb."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 19,
+          "wort": 15,
+          "zeigt": "حَذَرَ trägt die Relation prp",
+          "warum": "belegt al-Maf'ool li-Ajlihi als Nennung des Grundes ('sie stecken ihre Finger in ihre Ohren ... aus Furcht vor dem Tod')"
+        },
+        {
+          "sure": 2,
+          "vers": 109,
+          "wort": 12,
+          "zeigt": "حَسَدًا trägt die Relation prp",
+          "warum": "belegt ein zweites Objekt des Grundes ('viele der Schriftbesitzer wünschten, euch aus Neid wieder zu Ungläubigen zu machen')"
+        }
+      ],
+      "lernen": [
+        "Übe den Frage-Test 'warum?' gezielt an mehreren Versen und unterscheide ihn bewusst vom Frage-Test 'wen/was?' des Maf'ool bihi.",
+        "Sammle eigene Beispiele abstrakter Motiv-Nomen (Furcht, Ehrfurcht, Hoffnung ...) im Nasb-Status.",
+        "Stelle den Beleg hier einem Maf'ool-Mutlaq-Beleg gegenüber und benenne den Wurzel-Unterschied."
+      ],
+      "tabellen": [],
+      "siehe": ["maful-mutlaq"]
+    },
+
+    "mubtada": {
+      "titel": "Das Satzsubjekt im Nominalsatz",
+      "ar": "مُبْتَدَأ",
+      "umschrift": "Mubtada",
+      "erklaerung": [
+        "Der Mubtada ist das Subjekt/Thema eines Nominalsatzes, steht im Raf'-Status und in der Regel am Satzanfang. Sein Name bedeutet wörtlich 'das, womit begonnen wird'.",
+        "Von den drei möglichen Teilen eines Nominalsatzes (Mubtada, Chabar, Mutaʿalliq bil-Chabar) ist der Mubtada der einzige unverzichtbare — Chabar und Mutaʿalliq bil-Chabar können unter bestimmten Bedingungen entfallen, wenn sie aus dem Zusammenhang erschließbar sind.",
+        "Auch ein ganzes Fragment (etwa eine Idaafa oder ein Mowsoof-Sifah-Paar) kann als Mubtada fungieren."
+      ],
+      "erkennung": [
+        "Das erste Wort im Raf'-Status eines Nominalsatzes — oder, falls der Satz mit einem Harf Nasb wie إِنَّ beginnt, dieser Harf zusammen mit seinem Ism.",
+        "Strukturell erkennbar auch daran, dass später im selben Satz ein Chabar auf den Mubtada als sein Bezugswort (Head) verweist."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 2,
+          "wort": 1,
+          "zeigt": "ذَٰلِكَ ist der Mubtada, auf den sich der Chabar هُدًى (Wort 6, Relation Pred) im selben Vers bezieht",
+          "warum": "belegt den Mubtada als Kopf eines Nominalsatzes ('Dieses Buch ... ist Rechtleitung für die Gottesfürchtigen') — der Chabar verweist mit seinem head-Wert direkt auf dieses Wort zurück"
+        },
+        {
+          "sure": 2,
+          "vers": 19,
+          "wort": 17,
+          "zeigt": "ٱللَّهُ (im Wort وَٱللَّهُ) ist der Mubtada, auf den sich der Chabar مُحِيطٌۢ (Wort 18, Relation Pred) bezieht",
+          "warum": "belegt ein zweites Mubtada-Chabar-Paar ('und Allah umfasst die Ungläubigen')"
+        }
+      ],
+      "lernen": [
+        "Suche in einem Nominalsatz zuerst das erste Raf'-Wort — das ist fast immer der Mubtada.",
+        "Übe an Versen ohne sichtbaren Chabar, das 'unsichtbare Ist' zwischen Mubtada und einem folgenden Mutaʿalliq bil-Chabar zu ergänzen.",
+        "Vergleiche Mubtada-Chabar-Paare in gewöhnlichen Nominalsätzen mit denen in Kaana- und Inna-Sätzen, um den Statuswechsel beim Chabar zu verinnerlichen."
+      ],
+      "tabellen": [],
+      "siehe": ["khabar", "kaana-wa-akhawatuha", "inna-wa-akhawatuha"]
+    },
+
+    "khabar": {
+      "titel": "Die Satzaussage im Nominalsatz",
+      "ar": "خَبَر",
+      "umschrift": "Chabar",
+      "erklaerung": [
+        "Der Chabar liefert die Aussage über den Mubtada und beantwortet die Frage 'Was ist mit dem Mubtada?'. In einem gewöhnlichen Nominalsatz steht er im Raf'-Status; bei Kaana und ihren Schwestern wechselt er in den Nasb-Status, bei Inna und ihren Schwestern bleibt er im Raf'-Status.",
+        "Der Chabar kann ein einzelnes Wort, ein ganzes Fragment (Idaafa, Jaar-Majroor, Mowsoof-Sifah) oder sogar ein vollständiger Satz (Nominal- oder Verbalsatz) sein. Ist er selbst ein Satz, muss er in Numerus und Genus zum Mubtada passen.",
+        "Zwischen Mubtada und Chabar steht im Arabischen kein sichtbares Wort für 'ist' — es muss beim Übersetzen ergänzt werden."
+      ],
+      "erkennung": [
+        "Das zweite Raf'-markierte Element eines Nominalsatzes (bzw. das Nasb-Element bei Kaana-Sätzen), das inhaltlich eine Aussage über den Mubtada trifft.",
+        "In der Korpus-Syntax trägt der Chabar häufig die Relation Pred, mit einem head-Verweis zurück auf seinen Mubtada."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 2,
+          "wort": 6,
+          "zeigt": "هُدًى trägt die Relation Pred mit head-Verweis auf Wort 1 (den Mubtada ذَٰلِكَ)",
+          "warum": "belegt den Chabar eines gewöhnlichen Nominalsatzes im Raf'-Status ('...ist Rechtleitung für die Gottesfürchtigen')"
+        },
+        {
+          "sure": 2,
+          "vers": 19,
+          "wort": 18,
+          "zeigt": "مُحِيطٌۢ trägt die Relation Pred mit head-Verweis auf Wort 17 (den Mubtada ٱللَّهُ)",
+          "warum": "belegt ein zweites Chabar-Beispiel ('und Allah umfasst die Ungläubigen') — derselbe Vers, den auch der Mubtada-Eintrag als zweiten Beleg nutzt"
+        }
+      ],
+      "lernen": [
+        "Suche den Chabar immer erst, NACHDEM du den Mubtada gefunden hast — beide gehören zusammen und ergänzen sich zu einer vollständigen Aussage.",
+        "Übe an Versen mit satzförmigem Chabar, die Übereinstimmung in Numerus/Genus zwischen Mubtada und dem eingebetteten Satz zu prüfen.",
+        "Stelle denselben Chabar in einem gewöhnlichen Nominalsatz und in einem Kaana-Satz gegenüber, um den Statuswechsel (Raf' vs. Nasb) direkt zu sehen."
+      ],
+      "tabellen": [],
+      "siehe": ["mubtada"]
+    },
+
+    "sifah": {
+      "titel": "Das Adjektiv",
+      "ar": "صِفَة",
+      "umschrift": "Sifah",
+      "erklaerung": [
+        "Die Sifah beschreibt eine Eigenschaft des Mowsoof (des beschriebenen Nomens) und muss dabei in ALLEN VIER Merkmalen mit ihm übereinstimmen: Status (Iʿrab), Numerus, Genus und Bestimmtheit. Diese vollständige Vier-Punkte-Übereinstimmung ist genau das, was die Sifah vom Badal unterscheidet (siehe dort): Ein Badal muss nur den Status teilen, keine der anderen drei Eigenschaften.",
+        "Die Sifah folgt stets auf den Mowsoof, muss ihm aber nicht unmittelbar folgen."
+      ],
+      "erkennung": [
+        "Vier-Punkte-Test: Stimmen Status, Numerus, Genus und Bestimmtheit von Sifah und Mowsoof exakt überein? Wenn ja, liegt ein Mowsoof-Sifah-Fragment vor.",
+        "Inhaltlicher Test gegen Badal: Beschreibt das zweite Wort nur eine QUALITÄT des ersten (schön, groß, gläubig ...), statt eine präzisere Identität desselben Dings zu nennen? Dann ist es Sifah, kein Badal."
+      ],
+      "belege": [
+        {
+          "sure": 1,
+          "vers": 1,
+          "wort": 3,
+          "zeigt": "ٱلرَّحْمَٰنِ trägt die Relation Adj mit head-Verweis auf Wort 2 (ٱللَّهِ)",
+          "warum": "belegt die Sifah in vollständiger Übereinstimmung mit ihrem Mowsoof (bestimmt, Raf'/Jarr je nach Vers, maskulin, Singular): 'im Namen Allahs, des Allerbarmers'"
+        },
+        {
+          "sure": 1,
+          "vers": 1,
+          "wort": 4,
+          "zeigt": "ٱلرَّحِيمِ trägt die Relation Adj mit head-Verweis auf Wort 2 (ٱللَّهِ)",
+          "warum": "belegt eine zweite Sifah zum selben Mowsoof im selben Vers ('... des Barmherzigen') — zwei Sifah hintereinander ohne Harf al-'Atf dazwischen"
+        }
+      ],
+      "lernen": [
+        "Übe den Vier-Punkte-Test explizit an mehreren Mowsoof-Sifah-Paaren, bis er automatisch abläuft.",
+        "Sammle Gegenbeispiele: Finde Wortpaare, die auf den ersten Blick wie Sifah aussehen, aber im Status voneinander abweichen — sie können nur Badal sein.",
+        "Vergleiche den Beleg hier direkt mit einem Badal-Beleg aus dem gleichen Vers, um Beschreibung und Umbenennung im Kontrast zu erleben."
+      ],
+      "tabellen": [],
+      "siehe": ["badal"]
+    },
+
+    "haal": {
+      "titel": "Der Zustandsbeschreiber",
+      "ar": "حَال",
+      "umschrift": "Haal",
+      "erklaerung": [
+        "Der Haal beschreibt den ZUSTAND des Fa'il, Maf'ool oder eines anderen Satzglieds GENAU IN DEM MOMENT, in dem die Haupthandlung geschieht. Er steht im Nasb-Status, wenn er ein einzelnes Wort ist, und ist dabei typischerweise unbestimmt.",
+        "Der Haal kann auch eine ganze Zustandssatz-Klausel sein (Jumla Ismiyya oder Fi'liyya), oft eingeleitet durch das sogenannte وَ الحَالِيَّة (Waw al-Haaliyya).",
+        "Abgrenzung zu Tamyeez (siehe dort): Der Haal beschreibt eine VORÜBERGEHENDE Begleitumstand-Situation ('wie/in welchem Zustand'), während Tamyeez eine ART oder MENGE präzisiert ('was für ein/wie viel')."
+      ],
+      "erkennung": [
+        "Ein unbestimmtes Nasb-Wort (oder eine mit وَ eingeleitete Klausel) direkt nach der Haupthandlung, das eine gleichzeitige Begleitumstands-Beschreibung liefert und die Frage 'wie/in welchem Zustand?' beantwortet.",
+        "Abgrenzungstest zu Tamyeez: Lässt sich das Wort mit 'während er/sie/es ...' umschreiben? Dann Haal. Lässt es sich eher mit 'in Bezug auf/an ...' umschreiben? Dann Tamyeez."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 22,
+          "wort": 22,
+          "zeigt": "وَأَنتُمْ (mit dem folgenden تَعْلَمُونَ, Wort 23, Relation circ bzw. Pred)",
+          "warum": "belegt den Haal als ganze Zustandsklausel ('... während ihr es wisst') zur vorangehenden Handlung im selben Vers"
+        },
+        {
+          "sure": 2,
+          "vers": 25,
+          "wort": 27,
+          "zeigt": "مُتَشَٰبِهًا trägt die Relation circ",
+          "warum": "belegt einen einwortigen Haal im Nasb-Status ('und es wird ihnen einander ähnlich gebracht')"
+        }
+      ],
+      "lernen": [
+        "Übe den Abgrenzungstest gegen Tamyeez ('während ...' vs. 'in Bezug auf ...') an mehreren Versen.",
+        "Suche gezielt nach وَ-eingeleiteten Klauseln direkt nach einem Hauptverb und prüfe, ob sie eine gleichzeitige Begleitumstands-Beschreibung liefern.",
+        "Sammle sowohl Ein-Wort-Haal- als auch Klausel-Haal-Beispiele, um beide Bauformen zu kennen."
+      ],
+      "tabellen": [],
+      "siehe": ["tamyiz"]
+    },
+
+    "tamyiz": {
+      "titel": "Die Spezifizierung",
+      "ar": "تَمْيِيز",
+      "umschrift": "Tamyeez",
+      "erklaerung": [
+        "Der Tamyeez ist ein unbestimmtes, singularisches Nasb-Nomen, das eine sonst vage oder mehrdeutige Angabe präzisiert — meist nach einer Zahl, einem Maß, einem Vergleich (Ism Tafdeel) oder einem vagen Ausdruck wie 'wie viel'. Er beantwortet die Frage 'was für ein(e)/wie viel(e)?'.",
+        "Nach Zahlen ab elf (außer 100 und 1000) steht das gezählte Objekt (Al-Ma'duud) selbst als Tamyeez — unbestimmt, singular, im Nasb-Status.",
+        "Abgrenzung zu Haal: Tamyeez benennt eine ART oder Kategorie, keine vorübergehende Begleitsituation, und ist immer ein einzelnes Ism, nie eine ganze Klausel."
+      ],
+      "erkennung": [
+        "Ein unbestimmtes, singularisches Nasb-Ism direkt nach einer Zahl, einem Maß oder einem Vergleichswort, das präzisiert, WAS gezählt/gemessen/verglichen wird.",
+        "Nie eine ganze Klausel (das unterscheidet Tamyeez sofort von Haal, der auch klauselförmig auftreten kann)."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 60,
+          "wort": 13,
+          "zeigt": "عَيْنًا trägt die Relation Spec",
+          "warum": "belegt den Tamyeez nach einer Zahl ('da sprudelten aus ihm zwölf Quellen hervor') — عَيْنًا präzisiert, was mit 'zwölf' gemeint ist"
+        },
+        {
+          "sure": 2,
+          "vers": 26,
+          "wort": 28,
+          "zeigt": "مَثَلًا trägt die Relation Spec",
+          "warum": "belegt einen Tamyeez, der eine sonst vage Aussage präzisiert ('Allah scheut sich nicht, ein Beispiel zu nennen — sei es eine Mücke')"
+        }
+      ],
+      "lernen": [
+        "Übe gezielt an Zahlwörtern ab elf: Finde das nachfolgende unbestimmte Singular-Ism im Nasb-Status und benenne es als Tamyeez.",
+        "Vergleiche den Beleg hier mit einem Haal-Beleg, um den Unterschied 'was für ein/wie viel' gegenüber 'wie/in welchem Zustand' zu festigen.",
+        "Suche weitere Tamyeez-Beispiele nach einem Ism Tafdeel (Vergleichsform), um die Funktion außerhalb von Zahlwörtern zu erleben."
+      ],
+      "tabellen": [],
+      "siehe": ["haal"]
+    },
+
+    "badal": {
+      "titel": "Die Apposition",
+      "ar": "بَدَل",
+      "umschrift": "Badal",
+      "erklaerung": [
+        "Ein Badal ist eine Ism-Ism-Konstruktion, bei der ein zweites Ism direkt auf ein erstes folgt und es näher erläutert oder präzisiert — so, als stünde zwischen beiden ein unausgesprochenes 'das heißt ...' oder 'womit ich meine ...'.",
+        "Der Name Badal ('Austausch/Ersatz') kommt daher, dass jedes der beiden Wörter für sich allein den Satz vollständig und sinnvoll machen würde — man könnte das eine durch das andere 'ersetzen', ohne dass der Satz unvollständig würde. In der Kombination wird der Satz jedoch genauer und informativer.",
+        "Die entscheidende grammatische Regel: Beide Isms eines Badals müssen im GLEICHEN Status stehen (beide Raf', beide Nasb oder beide Jarr). Das ist die einzige Bedingung — anders als bei der Sifah müssen Numerus, Genus oder Bestimmtheit NICHT übereinstimmen.",
+        "Genau das ist die wichtigste Verwechslungsgefahr im Unterricht: Ein Badal sieht oberflächlich oft wie eine Sifah (Adjektiv-Beschreibung) aus, weil beide Konstruktionen aus zwei aufeinanderfolgenden Isms bestehen. Der Unterschied liegt im Zweck: Eine Sifah BESCHREIBT eine Eigenschaft des Mowsoof (in allen vier Merkmalen mit ihm übereinstimmend); ein Badal BENENNT dasselbe Ding noch einmal präziser oder tauscht es gegen eine genauere Bezeichnung aus (nur im Status übereinstimmend). Der 'das heißt ...'-Test trennt beide zuverlässig: Lässt sich zwischen die beiden Wörter sinnvoll 'das heißt' einsetzen, ist es ein Badal; beschreibt das zweite Wort nur eine Qualität des ersten, ist es eine Sifah."
+      ],
+      "erkennung": [
+        "'Das heißt'-Test: Ergibt es Sinn, zwischen die beiden Isms 'das heißt' oder 'nämlich' einzufügen? Dann ist es ein Badal.",
+        "Status-Test: Stehen beide Isms im selben Status (Raf'/Nasb/Jarr)? Das ist notwendige Bedingung — aber ANDERS als bei der Sifah müssen die übrigen drei Merkmale (Numerus, Genus, Bestimmtheit) nicht übereinstimmen.",
+        "Austausch-Test: Könnte man eines der beiden Wörter weglassen und der Satz bliebe für sich allein vollständig und korrekt? Dann liegt sehr wahrscheinlich ein Badal vor."
+      ],
+      "belege": [
+        {
+          "sure": 1,
+          "vers": 2,
+          "wort": 3,
+          "zeigt": "رَبِّ trägt die Relation App mit head-Verweis auf Wort 2 (لِلَّهِ)",
+          "warum": "belegt Badal im Jarr-Status: 'Alles Lob gebührt Allah, [das heißt] dem Herrn der Welten' — رَبِّ präzisiert, wer mit لِلَّهِ gemeint ist, beide im gleichen Jarr-Status"
+        },
+        {
+          "sure": 1,
+          "vers": 7,
+          "wort": 1,
+          "zeigt": "صِرَٰطَ trägt die Relation App",
+          "warum": "belegt Badal im Nasb-Status über eine Versgrenze hinweg: 'den geraden Weg — [das heißt] den Weg derer, denen Du Gnade erwiesen hast' aus dem vorangehenden Vers 6"
+        }
+      ],
+      "lernen": [
+        "Präge dir zuerst den 'Das heißt'-Test ein und wende ihn konsequent auf jedes Paar aufeinanderfolgender Isms an, bevor du an Sifah denkst.",
+        "Suche gezielt Gegenbeispiele: Nimm einen bekannten Mowsoof-Sifah-Beleg und prüfe, warum der 'Das heißt'-Test dort NICHT funktioniert.",
+        "Übe an den beiden Belegen hier explizit die Status-Übereinstimmung nachzuweisen (Jarr in Vers 2, Nasb in Vers 7), obwohl sich die beiden Wortpaare in Bestimmtheit/Länge unterscheiden.",
+        "Baue dir eine eigene kleine Sammlung von drei bis fünf weiteren Badal-Stellen und benenne jeweils den gemeinsamen Status."
+      ],
+      "tabellen": [],
+      "siehe": ["sifah", "mudaf-ilayh"]
+    },
+
+    "mudaf-ilayh": {
+      "titel": "Das zweite Idaafa-Glied",
+      "ar": "مُضَاف إِلَيْه",
+      "umschrift": "Mudaaf Ilayh",
+      "erklaerung": [
+        "In einer Idaafa (Besitzverhältnis-Fragment, z. B. 'Buch Allahs') ist der Mudaaf Ilayh das zweite Wort — der 'Besitzer'. Er steht immer im Jarr-Status, unabhängig davon, welchen Status das erste Wort (der Mudaaf) selbst trägt.",
+        "Der Mudaaf (das erste Wort, das 'Besessene') trägt niemals gleichzeitig den bestimmten Artikel und Tanwin — er 'leiht' sich seine Bestimmtheit vom Mudaaf Ilayh."
+      ],
+      "erkennung": [
+        "Ein Jarr-markiertes Nomen direkt nach einem anderen Nomen, das selbst weder Artikel noch Tanwin trägt.",
+        "Beantwortet die Frage 'wessen?' in Bezug auf das vorangehende Wort."
+      ],
+      "belege": [
+        {
+          "sure": 1,
+          "vers": 1,
+          "wort": 2,
+          "zeigt": "ٱللَّهِ trägt die Relation Poss mit head-Verweis auf Wort 1 (بِسْمِ)",
+          "warum": "belegt den Mudaaf Ilayh im allerersten Idaafa-Fragment des Korans ('im Namen Allahs') — بِسْمِ trägt selbst weder Artikel noch Tanwin"
+        },
+        {
+          "sure": 1,
+          "vers": 2,
+          "wort": 4,
+          "zeigt": "ٱلْعَٰلَمِينَ trägt die Relation Poss mit head-Verweis auf Wort 3 (رَبِّ)",
+          "warum": "belegt einen zweiten Mudaaf Ilayh ('Herr der Welten') im selben Kapitel der Fatiha"
+        }
+      ],
+      "lernen": [
+        "Übe, in mehreren Versen zuerst das artikel- und tanwinlose erste Wort zu finden — es zeigt eine Idaafa an, das folgende Jarr-Wort ist der Mudaaf Ilayh.",
+        "Bilde Ketten mit mehreren aneinandergereihten Idaafas (z. B. 'Tag des Gerichts der Menschen') und benenne jedes Mudaaf-Ilayh-Glied.",
+        "Vergleiche den Mudaaf Ilayh mit dem Majroor nach einem Harf Jarr — beide stehen im Jarr-Status, aber aus verschiedenem Grund."
+      ],
+      "tabellen": [],
+      "siehe": ["badal", "huruf-jarr"]
+    },
+
+    "munada": {
+      "titel": "Die Anrede",
+      "ar": "مُنَادَى",
+      "umschrift": "Munaadaa",
+      "erklaerung": [
+        "Der Munada ist das angesprochene Nomen nach einer Anredepartikel — meist يَا, oft in der Form يَا أَيُّهَا bei der Anrede einer Gruppe. Häufig folgt dem Munada zusätzlich ein weiteres Ism, das ihn genauer benennt (im Fall von يَا أَيُّهَا typischerweise als Badal).",
+        "Bei der direkten Anrede mit Eigennamen (يَا + Name) ist der Munada meist das Eigennamen-Ism selbst; bei يَا أَيُّهَا ist أَيُّهَا das eigentliche, mabni Munada, und das darauffolgende Ism (etwa ٱلنَّاسُ) präzisiert, wer damit gemeint ist."
+      ],
+      "erkennung": [
+        "Ein Wort (oder ein kleines Fragment) direkt nach يَا oder أَيُّهَا, das die angesprochene Person oder Gruppe benennt.",
+        "Bei يَا أَيُّهَا folgt danach meist ein präzisierendes Ism im gleichen Status — ein Badal zum Munada selbst."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 21,
+          "wort": 1,
+          "zeigt": "يَٰٓأَيُّهَا trägt die Relation voc",
+          "warum": "belegt den Munada als Kopf einer Anrede ('O ihr Menschen, dient eurem Herrn') — das folgende ٱلنَّاسُ (Wort 2) präzisiert ihn als Badal"
+        },
+        {
+          "sure": 2,
+          "vers": 33,
+          "wort": 2,
+          "zeigt": "يَٰٓـَٔادَمُ trägt die Relation voc",
+          "warum": "belegt eine direkte Anrede an eine einzelne Person mit Eigennamen ('Er sagte: O Adam, teile ihnen ihre Namen mit')"
+        }
+      ],
+      "lernen": [
+        "Suche im Koran gezielt يَا أَيُّهَا-Stellen und benenne sowohl den Munada als auch das darauffolgende präzisierende Ism.",
+        "Vergleiche mehrere Anreden miteinander: Wer wird jeweils angesprochen, und wie wird die Gruppe zusätzlich benannt?",
+        "Verbinde diesen Eintrag bewusst mit Badal, um die Doppelrolle von يَا أَيُّهَا + Ism zu verstehen."
+      ],
+      "tabellen": [],
+      "siehe": ["badal"]
+    },
+
+    "mustathna": {
+      "titel": "Die Ausnahme",
+      "ar": "مُسْتَثْنَى",
+      "umschrift": "Mustathnaa",
+      "erklaerung": [
+        "Der Mustathna ist das Wort, das nach einer Ausnahmepartikel — vor allem إِلَّا — aus einer sonst allgemeinen Aussage ausgeschlossen wird. Er benennt, WER oder WAS von der vorher genannten Gruppe/Aussage ausgenommen ist.",
+        "Der genaue Status des Mustathna hängt vom Satztyp ab (vollständig-bejaht, vollständig-verneint oder unvollständig) — für den Einstieg reicht es, ihn als eigenständige Iʿrab-Rolle direkt nach إِلَّا zu erkennen."
+      ],
+      "erkennung": [
+        "Ein Nomen direkt nach إِلَّا, das eine zuvor genannte, allgemeinere Gruppe oder Aussage einschränkt ('alle außer ...').",
+        "Ohne den Mustathna und إِلَّا bleibt der Satz für sich genommen bereits vollständig — der Mustathna engt die zuvor gemachte Aussage nur nachträglich ein."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 34,
+          "wort": 8,
+          "zeigt": "إِبْلِيسَ trägt die Relation exp",
+          "warum": "belegt den Mustathna nach إِلَّا ('da warfen sie sich alle nieder, außer Iblis') — Iblis wird aus der allgemeinen Aussage über die Engel ausgenommen"
+        },
+        {
+          "sure": 2,
+          "vers": 83,
+          "wort": 26,
+          "zeigt": "قَلِيلًا trägt die Relation exp",
+          "warum": "belegt einen zweiten Mustathna ('dann kehrtet ihr euch ab, bis auf wenige von euch')"
+        }
+      ],
+      "lernen": [
+        "Suche gezielt nach إِلَّا-Stellen und benenne jeweils, welche allgemeine Aussage vorher gemacht wird und wer/was davon ausgenommen wird.",
+        "Vergleiche mehrere Mustathna-Belege und beobachte, wie unterschiedlich der Status je nach Satztyp ausfallen kann.",
+        "Übersetze probeweise den Satz ohne إِلَّا und den Mustathna — prüfe, ob die verbleibende Aussage weiterhin ein vollständiger Satz ist."
+      ],
+      "tabellen": [],
+      "siehe": []
+    },
+
+    "taukid": {
+      "titel": "Die Betonung",
+      "ar": "تَوْكِيد",
+      "umschrift": "Taukid",
+      "erklaerung": [
+        "Taukid bekräftigt ein vorangehendes Nomen, ohne inhaltlich etwas Neues hinzuzufügen — es steht im GLEICHEN Status wie sein Bezugswort. Zwei Typen sind besonders häufig: die wörtliche Wiederholung (Taukid Lafzi) und die Verstärkung mit festen Wörtern wie كُلّ/جَمِيع ('alle/insgesamt') oder نَفْس/عَيْن ('selbst') zusammen mit einem passenden gebundenen Pronomen (Taukid Ma'nawi).",
+        "Anders als Badal fügt Taukid dem Satz keine neue, präzisierende Identität hinzu — es wiederholt oder verstärkt lediglich dieselbe bereits genannte Sache, damit sie besonders nachdrücklich klingt."
+      ],
+      "erkennung": [
+        "Ein Wort wie كُلّ, جَمِيع, نَفْس oder عَيْن mit einem an das Bezugswort angepassten gebundenen Pronomen, direkt nach diesem Bezugswort, im selben Status — und ohne neue inhaltliche Information.",
+        "Lässt sich das fragliche Wort ersatzlos streichen, ohne dass eine Information verloren geht (nur die Betonung schwächt sich ab)? Dann handelt es sich um Taukid."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 31,
+          "wort": 4,
+          "zeigt": "كُلَّهَا trägt die Relation emph",
+          "warum": "belegt Taukid Ma'nawi mit كُلّ + gebundenem Pronomen ('und Er lehrte Adam die Namen, sie alle') — bekräftigt ٱلْأَسْمَآءَ ohne neue Information hinzuzufügen"
+        },
+        {
+          "sure": 2,
+          "vers": 161,
+          "wort": 13,
+          "zeigt": "أَجْمَعِينَ trägt die Relation emph",
+          "warum": "belegt Taukid mit جَمِيع/أَجْمَعِينَ ('der Fluch Allahs und der Engel und der Menschen allesamt')"
+        }
+      ],
+      "lernen": [
+        "Suche gezielt nach كُلّ/جَمِيع/نَفْس/عَيْن direkt nach einem Nomen und prüfe, ob das angehängte Pronomen zu diesem Nomen passt.",
+        "Unterscheide Taukid bewusst von Badal: Taukid fügt keine neue Information hinzu, Badal präzisiert/benennt neu.",
+        "Übersetze denselben Satz einmal mit und einmal ohne das Taukid-Wort und beobachte, dass sich der Sachinhalt nicht ändert, nur die Nachdrücklichkeit."
+      ],
+      "tabellen": [],
+      "siehe": []
+    }
+  }
+}

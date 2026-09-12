@@ -1,0 +1,774 @@
+{
+  "schema": 1,
+  "lang": "ms",
+  "bereich": "nomen",
+  "eintraege": {
+    "ism": {
+      "titel": "Isim (Ism)",
+      "ar": "اِسْم",
+      "umschrift": "Ism",
+      "erklaerung": [
+        "Isim ialah salah satu daripada tiga jenis kata dalam bahasa Arab, di samping kata kerja (Fi'il) dan huruf (Harf). Berbeza daripada anggapan biasa, Isim merangkumi lebih daripada sekadar kata nama dalam erti sempit: nama orang dan tempat, benda, konsep, kata sifat, kata ganti nama, kata bilangan, malah keterangan waktu/tempat turut tergolong di dalamnya. Ciri sepunya ditakrifkan secara negatif: sesuatu Isim itu sendiri tidak membawa sebarang zaman (kala) dan tidak membawa bentuk perintah - itulah yang membezakannya daripada Fi'il.",
+        "Setiap Isim memiliki empat sifat asas serentak: jantina (mudzakkar/muannats), bilangan (mufrad/mutsanna/jamak), ketentuan (makrifah/nakirah) dan i'rab (rafa'/nasab/jar). Keempat-empat kategori ini tidak pernah bersifat pilihan - setiap Isim dalam al-Quran boleh diterangkan sepenuhnya dengan sifat-sifat ini. Sifat-sifat inilah yang menjadi rangka kepada semua entri lain dalam kamus ini berkaitan isim.",
+        "Selain itu, perlu dibezakan sama ada hujung sesuatu Isim berubah mengikut i'rab atau tidak. Isim Mu'rab (boleh diva'rabkan) menunjukkan rafa', nasab dan jar melalui baris akhir yang berbeza-beza; Isim Mabni (tidak berubah) pula kekal dalam bentuk yang sama pada setiap kedudukan. Terdapat pula sekumpulan kecil bentuk Isim yang tidak boleh sama sekali membawa tanwin dan menggantikan kasrah dengan fathah pada kedudukan jar (Mamnu' minas-Sarf, iaitu Isim Ghair Munsarif).",
+        "Oleh sebab Isim merangkumi begitu banyak sub-kategori, elok dipelajari bukan secara berasingan tetapi sentiasa secara perbandingan: adakah kalimah ini suatu Isim, Fi'il atau Harf? Satu ujian yang boleh dipercayai ialah sama ada kalimah itu - sekurang-kurangnya pada fikiran - boleh diletakkan ال di hadapannya atau diberi baris tanwin di hujungnya - ini secara praktikalnya hanya berlaku pada Isim."
+      ],
+      "erkennung": [
+        "Boleh (sekurang-kurangnya pada fikiran) diletakkan huruf ال di hadapannya atau diberi baris tanwin (ـً ـٍ ـٌ) di hujungnya.",
+        "Tidak pernah membawa awalan zaman kata kerja (tiada سَـ/سَوْفَ untuk masa hadapan, tiada corak يـ/تـ/أـ/نـ bagi fi'il mudhari', tiada bentuk perintah).",
+        "Boleh berdiri sendiri sebagai satu unsur ayat yang lengkap (subjek, objek, unsur kedua dalam Idafah) dan menarik kata bergantung seperti sifat atau kata ganti nama kepada dirinya - sesuatu Huruf tidak mampu melakukan ini."
+      ],
+      "belege": [
+        {
+          "sure": 1,
+          "vers": 1,
+          "wort": 1,
+          "zeigt": "Isim pada i'rab jar selepas huruf jar",
+          "warum": "بِسْمِ membawa baris kasrah kerana huruf jar بِ (\"dengan/pada\") yang mendahuluinya menuntut i'rab jar - suatu sifat yang hanya boleh ditunjukkan oleh sebuah Isim."
+        },
+        {
+          "sure": 1,
+          "vers": 2,
+          "wort": 1,
+          "zeigt": "Isim pada i'rab rafa' sebagai subjek Jumlah Ismiyyah",
+          "warum": "ٱلْحَمْدُ membawa baris dhammah dan membuka ayat sebagai Mubtada - fungsi subjek serta baris rafa' hanya mungkin berlaku pada Isim, bukan pada Fi'il atau Huruf."
+        }
+      ],
+      "lernen": [
+        "Sebelum mempelajari mana-mana sifat isim, tanyakan dahulu soalan asas bagi setiap kalimah baharu: adakah ini Isim, Fi'il atau Harf? Uji dengan ujian ال/tanwin.",
+        "Ambil keseluruhan Surah al-Fatihah dan kelaskan setiap kalimah kepada salah satu daripada tiga jenis kata tersebut sebelum beralih kepada sifat terperinci - tanpa asas ini, segala yang seterusnya hanya menjadi hafalan tanpa kefahaman.",
+        "Latih diri menyebut dengan kuat keempat-empat sifat asas bagi setiap Isim yang ditemui (jantina? bilangan? makrifah atau nakirah? i'rab yang mana?) sebelum beralih kepada kalimah seterusnya."
+      ],
+      "tabellen": ["nomen-muslim"],
+      "siehe": ["genus", "numerus", "bestimmtheit", "kasus", "murab", "mabni"]
+    },
+
+    "genus": {
+      "titel": "Jantina Isim (Mudzakkar-Muannats)",
+      "ar": "التَّذْكِير وَالتَّأْنِيث",
+      "umschrift": "at-Tadhkir wa-t-Taʾnith (Mudhakkar/Muannath)",
+      "erklaerung": [
+        "Setiap Isim Arab sama ada mudzakkar (jantan) atau muannats (betina) - tidak wujud kategori neutral di sini. Perkara ini bukan sahaja melibatkan makhluk bernyawa, tetapi juga benda yang tidak mempunyai jantina tetap dalam bahasa Melayu: matahari (شَمْس) dan bumi (أَرْض) adalah muannats dalam bahasa Arab, manakala kitab (كِتَاب) atau tuan (رَبّ) adalah mudzakkar. Peruntukan jantina bagi kalimah yang \"tersembunyi\" muannats sebegini perlu dihafal, kerana ia tidak dapat dikesan daripada bentuk perkataan itu sendiri.",
+        "Petanda paling boleh dipercayai bagi jantina muannats ialah akhiran ta marbutah (ة) di hujung kalimah. Isim yang tidak membawa akhiran ini atau petanda muannats yang lain dianggap mudzakkar sebagai andaian asas - dengan pengecualian: sekumpulan kalimah bersifat muannats \"secara semula jadi\" walaupun tidak membawa ة, antaranya anggota badan berpasangan (tangan, mata, telinga), fenomena alam (matahari, api, angin) dan banyak nama negara.",
+        "Jantina bukan sekadar hal bentuk perkataan, tetapi turut memberi kesan kepada keseluruhan struktur ayat: sesuatu sifat (na'at) mesti sepadan jantinanya dengan kalimah yang diterangkan (man'ut), dan kata kerja bagi orang ketiga mesti sepadan jantinanya dengan subjeknya. Sesiapa yang tersilap menentukan jantina sesuatu isim pasti akan membina akhiran sifat atau kata kerja yang salah di sekelilingnya.",
+        "Satu kaedah khas yang berkait rapat dengan jantina ialah: Jamak Taksir yang merujuk kepada benda tidak bernyawa dilayan seperti kalimah muannats mufrad dari segi persetujuan dengan kata kerja dan sifat - tidak kira apa jua jantina bentuk mufradnya. Inilah sebabnya dalam korpus, sesetengah kalimah yang asalnya mudzakkar muncul dalam bentuk jamak dengan petanda \"muannats\"."
+      ],
+      "erkennung": [
+        "Akhiran ة (ta marbutah) di hujung kalimah = muannats - petanda paling boleh dipercayai yang dapat dilihat.",
+        "Tiada petanda bentuk muannats = mudzakkar sebagai andaian asas, kecuali kalimah itu tergolong dalam senarai pengecualian (anggota badan berpasangan, fenomena alam tertentu, banyak nama negara).",
+        "Sifat yang mengiringi atau kata kerja bagi orang ketiga menunjukkan melalui akhirannya sendiri (ة pada sifat, تْ pada kata kerja) jantina bagi kalimah yang dirujuknya."
+      ],
+      "belege": [
+        {
+          "sure": 1,
+          "vers": 2,
+          "wort": 3,
+          "zeigt": "Isim mudzakkar tanpa petanda jantina yang kelihatan",
+          "warum": "رَبِّ tidak membawa ة mahupun petanda muannats yang lain - ia mudzakkar menurut andaian asas, sebagaimana disahkan oleh petanda \"gender: m\" dalam korpus."
+        },
+        {
+          "sure": 2,
+          "vers": 3,
+          "wort": 5,
+          "zeigt": "Isim muannats, dikenali melalui akhiran ة",
+          "warum": "ٱلصَّلَوٰةَ membawa akhiran ة (di sini kelihatan sebelum fathah nasab sebagai ة) dan dengan itu bersifat muannats - ditandakan dalam korpus sebagai \"gender: f\"."
+        },
+        {
+          "sure": 114,
+          "vers": 6,
+          "wort": 2,
+          "zeigt": "Isim muannats melalui akhiran ة, walaupun bagi sekumpulan makhluk (jin)",
+          "warum": "ٱلْجِنَّةِ membawa akhiran ة dan ditandakan muannats walaupun ia merujuk kepada sekumpulan makhluk - petanda bentuk yang menentukan, bukan jantina semula jadi makhluk yang dimaksudkan."
+        }
+      ],
+      "lernen": [
+        "Jangan sekali-kali pelajari jantina sebagai peraturan berasingan, tetapi sentiasa sebagai pasangan kalimah: sebut رَبّ (mudzakkar) dan صَلَاة (muannats) dengan kuat berturut-turut, sehingga perbezaan akhiran itu melekat di telinga.",
+        "Ambil 10 isim daripada mana-mana surah dan susunkan secara ingatan ke dalam dua lajur (mudzakkar/muannats) - kemudian semak dengan petanda-petanda dalam kamus ini.",
+        "Sediakan senarai ringkas kalimah \"muannats tersembunyi\" (anggota badan berpasangan, matahari, api, bumi, angin) - itulah kes-kes di mana andaian asas \"tiada ة = mudzakkar\" tidak terpakai.",
+        "Tutup lajur jantina pada mana-mana senarai kosa kata dan padankan secara ingatan sebelum menyemak."
+      ],
+      "tabellen": ["nomen-muslim"],
+      "siehe": ["ism", "numerus", "jam-taksir"]
+    },
+
+    "numerus": {
+      "titel": "Bilangan Isim: Mufrad, Mutsanna, Jamak",
+      "ar": "الْمُفْرَد وَالْمُثَنَّى وَالْجَمْع",
+      "umschrift": "al-Mufrad wa-l-Muthanna wa-l-Jamʿ",
+      "erklaerung": [
+        "Bahasa Arab membezakan tiga bilangan, bukan dua seperti kebiasaan dalam bahasa Melayu: mufrad untuk satu, mutsanna untuk tepat dua, dan jamak untuk tiga atau lebih. Mutsanna merupakan satu sistem tersendiri yang lengkap dengan akhirannya sendiri - ia tidak dilayan sekadar sebagai satu bentuk jamak, tetapi mempunyai bentuk rafa'nya sendiri serta bentuk nasab/jarnya sendiri.",
+        "Mutsanna dibentuk dengan akhiran ـَانِ pada i'rab rafa' dan ـَيْنِ pada i'rab nasab/jar, contohnya مُسْلِمَانِ (\"dua orang Muslim\", rafa') berbanding مُسْلِمَيْنِ (nasab/jar bagi dua orang yang sama). Akhiran ini boleh disandarkan kepada hampir setiap Isim, tanpa mengira bagaimana bentuk jamaknya dibentuk.",
+        "Bagi bentuk jamak, terdapat dua kaedah pembentukan yang berbeza sama sekali. Jamak Salim (\"jamak yang sempurna\") hanya menambah akhiran kepada akar kata mufrad tanpa mengubahnya: bagi mudzakkar kebiasaannya ـُونَ/ـِينَ (hampir semata-mata bagi nama orang dan Isim Fa'il), bagi muannats kebiasaannya ـَات. Jamak Taksir (\"jamak pecah\") pula mengubah struktur dalaman kalimah itu sendiri, contohnya قَلْب → قُلُوب (\"hati\" → \"hati-hati\"). Dalam al-Quran, Jamak Taksir jauh lebih kerap berlaku bagi nama benda - ia mempunyai bab kamus tersendiri yang lebih terperinci, kerana tiada satu pun peraturan pembentukan yang tetap untuknya.",
+        "Yang penting bagi struktur ayat: Jamak Taksir yang merujuk kepada benda tidak bernyawa menuntut persetujuan yang sama dengan sifat dan kata kerja seperti kalimah muannats mufrad - tanpa mengira jantina bentuk mufrad asalnya. Peraturan ini sering ditemui semasa membaca dan pada mulanya kelihatan seperti suatu kesilapan, tetapi sebenarnya ia adalah kelaziman."
+      ],
+      "erkennung": [
+        "Mutsanna: akhiran ـَانِ (rafa') atau ـَيْنِ (nasab/jar), hampir selalu didahului oleh fathah.",
+        "Jamak Mudzakkar Salim: akhiran ـُونَ (rafa') / ـِينَ (nasab/jar) - hampir hanya terdapat pada nama orang dan Isim Fa'il.",
+        "Jamak Muannats Salim: akhiran ـَات, biasanya pada akar kata tanpa ة asal daripada bentuk mufradnya.",
+        "Jamak Taksir: tiada akhiran yang tetap - inti kalimah itu sendiri berubah dan hanya dikenali melalui perbandingan dengan bentuk mufrad yang telah diketahui."
+      ],
+      "belege": [
+        {
+          "sure": 12,
+          "vers": 36,
+          "wort": 4,
+          "zeigt": "Mutsanna pada i'rab rafa'",
+          "warum": "فَتَيَانِ (\"dua orang pemuda\") membawa akhiran mutsanna ـَانِ, kerana ia menjadi subjek pada i'rab rafa' - ditandakan dalam korpus sebagai number: du, case: nom."
+        },
+        {
+          "sure": 16,
+          "vers": 51,
+          "wort": 5,
+          "zeigt": "Mutsanna pada i'rab nasab",
+          "warum": "إِلَٰهَيْنِ (\"dua tuhan\") membawa akhiran mutsanna ـَيْنِ, kerana ia menjadi objek kata kerja \"mengambil\" pada i'rab nasab - mutsanna yang sama seperti فَتَيَانِ, tetapi dengan akhiran nasab/jar."
+        },
+        {
+          "sure": 1,
+          "vers": 2,
+          "wort": 4,
+          "zeigt": "Jamak Mudzakkar Salim",
+          "warum": "ٱلْعَٰلَمِينَ berakhir dengan ـِينَ, iaitu akhiran jamak yang lazim bagi nama orang/makhluk pada i'rab nasab/jar - ditandakan dalam korpus sebagai number: pl."
+        },
+        {
+          "sure": 113,
+          "vers": 4,
+          "wort": 3,
+          "zeigt": "Jamak Muannats Salim",
+          "warum": "ٱلنَّفَّٰثَٰتِ berakhir dengan ـَٰتِ - akhiran lazim bagi Jamak Muannats Salim, tanpa akar kata itu berubah."
+        }
+      ],
+      "lernen": [
+        "Jangan pelajari ketiga-tiga bilangan ini sebagai peraturan abstrak, tetapi melalui satu rentetan kalimah: sebut مُسْلِم / مُسْلِمَانِ / مُسْلِمُونَ dengan kuat berturut-turut, sehingga rentak akhirannya melekat.",
+        "Latih mutsanna secara berasingan daripada jamak - ia sering terlepas pandang semasa belajar kerana tiada bentuk seumpamanya dalam bahasa Melayu. Cari 5 lagi bentuk mutsanna dalam al-Quran dan baca dengan kuat.",
+        "Bagi jamak salim, peraturan akhiran sudah memadai; bagi jamak taksir (lihat entri berasingan) diperlukan senarai kosa kata mufrad→jamak, kerana tiada peraturan pembentukan untuknya.",
+        "Tutup secara bergilir lajur mufrad, mutsanna atau jamak pada sesuatu senarai kalimah dan lengkapkan bentuk yang tertinggal secara ingatan."
+      ],
+      "tabellen": ["nomen-muslim"],
+      "siehe": ["ism", "genus", "jam-taksir"]
+    },
+
+    "jam-taksir": {
+      "titel": "Jamak Taksir (Jamak Pecah)",
+      "ar": "جَمْع التَّكْسِير",
+      "umschrift": "Jamʿ at-Taksir",
+      "erklaerung": [
+        "Sekiranya Jamak Salim hanya menambah akhiran kepada akar kata mufrad tanpa mengubahnya, Jamak Taksir pula mengubah struktur dalaman kalimah itu sendiri - konsonan (akar kata) kekal terpelihara, tetapi vokal dan kadang-kadang huruf tambahan berubah sepenuhnya, contohnya قَلْب (hati) → قُلُوب (hati-hati) atau بَصَر (penglihatan/mata) → أَبْصَار (penglihatan-penglihatan/mata-mata).",
+        "Jamak Taksir jauh lebih kerap ditemui dalam al-Quran apabila ia bukan berkenaan nama orang - ia melibatkan hampir semua jamak bagi nama benda. Memang terdapat corak yang berulang (misalnya فُعُول seperti dalam قُلُوب, atau أَفْعَال seperti dalam أَبْصَار), tetapi tiada satu pun peraturan yang membolehkan bentuk jamak sesuatu kalimah baharu diramal dengan yakin. Oleh itu, setiap Jamak Taksir perlu dipelajari sebagai pasangan kosa kata tersendiri (mufrad + jamak).",
+        "Dari segi nahu, Jamak Taksir sering mengejutkan: apabila ia merujuk kepada benda tidak bernyawa, ia dilayan seperti kalimah muannats mufrad dari segi persetujuan dengan sifat dan kata kerja, tanpa mengira jantina bentuk mufradnya. Dalam korpus, ini kelihatan apabila kalimah mufrad yang asalnya mudzakkar muncul dalam Jamak Taksir dengan petanda \"muannats\" - ini bukan kesilapan, sebaliknya peraturan persetujuan yang lazim."
+      ],
+      "erkennung": [
+        "Akar kata itu sendiri berubah berbanding bentuk mufrad (vokal berbeza, sering dengan huruf tambahan) - tiada akhiran mudah yang ditambah.",
+        "Tidak berakhir dengan ـُونَ/ـِينَ (Jamak Mudzakkar Salim) mahupun ـَات (Jamak Muannats Salim).",
+        "Kebiasaannya hanya dikenali melalui corak yang telah diketahui (contohnya فُعُول، أَفْعَال، مَفَاعِل) atau dengan merujuk kamus - bukan melalui satu peraturan."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 7,
+          "wort": 4,
+          "zeigt": "Jamak Taksir bagi قَلْب (hati)",
+          "warum": "قُلُوبِهِمْ menunjukkan corak فُعُول: bentuk mufrad قَلْب bertukar menjadi قُلُوب, tanpa sebarang akhiran mudah ditambah - inti kalimah itu sendiri telah berubah."
+        },
+        {
+          "sure": 2,
+          "vers": 7,
+          "wort": 8,
+          "zeigt": "Jamak Taksir bagi بَصَر (penglihatan)",
+          "warum": "أَبْصَٰرِهِمْ menunjukkan corak أَفْعَال: بَصَر bertukar menjadi أَبْصَار - satu lagi contoh Jamak Taksir dan bukannya Jamak Salim, terletak terus di sebelah قُلُوبِهِمْ dalam ayat yang sama."
+        },
+        {
+          "sure": 113,
+          "vers": 4,
+          "wort": 5,
+          "zeigt": "Jamak Taksir bagi عُقْدَة (simpulan)",
+          "warum": "ٱلْعُقَدِ ialah Jamak Taksir bagi عُقْدَة (simpulan) - ditandakan dalam korpus sebagai number: pl, gender: m, walaupun bentuk mufradnya dari segi nahu bersifat muannats (akhiran ة); petanda jantina bagi Jamak Taksir mengikut peraturannya sendiri, bukan peraturan bentuk mufradnya."
+        }
+      ],
+      "lernen": [
+        "Terimalah dari awal lagi: tiada jalan pintas bagi Jamak Taksir. Sediakan senarai mufrad → jamak sendiri dan pelajari seperti pasangan kosa kata.",
+        "Tutup secara bergilir lajur mufrad atau lajur jamak pada senarai anda dan lengkapkan secara ingatan - mula-mula dalam satu arah, kemudian arah sebaliknya.",
+        "Semasa membaca al-Quran, beri perhatian khusus kepada kalimah yang membawa maksud jamak tetapi tidak berakhir dengan ـُونَ/ـِينَ mahupun ـَات - kalimah sebegini hampir selalu Jamak Taksir.",
+        "Kelompokkan Jamak Taksir yang baharu dipelajari mengikut coraknya (فُعُول, أَفْعَال, مَفَاعِل ...) - corak ini berulang, walaupun tidak membentuk satu peraturan yang tetap."
+      ],
+      "tabellen": [],
+      "siehe": ["numerus", "genus"]
+    },
+
+    "bestimmtheit": {
+      "titel": "Ketentuan: Makrifah dan Nakirah",
+      "ar": "الْمَعْرِفَة وَالنَّكِرَة",
+      "umschrift": "al-Maʿrifa wa-n-Nakira",
+      "erklaerung": [
+        "Setiap Isim Arab sama ada makrifah (\"sebuah kitab tertentu yang telah diketahui\") atau nakirah (\"mana-mana kitab sahaja\"). Perbezaan ini lebih kurang sepadan dengan perbezaan \"kitab itu\" berbanding \"sebuah kitab\", tetapi dalam bahasa Arab ia ditunjukkan secara morfologi, iaitu terus pada bentuk kalimah itu sendiri, bukan sekadar melalui kalimah yang mendahuluinya.",
+        "Jalan paling lazim menuju makrifah ialah huruf ال (Al at-Ta'rif) yang disandarkan terus tanpa jarak di hadapan Isim. Satu lagi jalan yang sama lazimnya ialah melalui Idafah: kalimah pertama dalam Idafah (Mudaf) secara automatik bersifat makrifah atau nakirah sebagaimana kalimah kedua (Mudaf Ilaih) - walaupun tanpa huruf ال sendiri. Kata ganti nama pemilik yang disandarkan turut secara automatik menjadikan sesuatu Isim itu makrifah, sama seperti nama khas yang memang makrifah dengan sendirinya.",
+        "Isim nakirah pula kebiasaannya membawa tanwin - petanda baris ganda dua di hujung kalimah (ـٌ untuk dhammatain/rafa', ـً untuk fathatain/nasab, ـٍ untuk kasratain/jar), yang disebut sebagai -un, -an atau -in. Tanwin dan huruf ال saling meniadakan antara satu sama lain: sesuatu kalimah hanya membawa salah satu daripadanya, tidak pernah kedua-duanya serentak.",
+        "Satu keistimewaan berkaitan akhiran ى (alif maqsurah): bagi kalimah yang berakhir dengannya, tanwin hampir tidak kelihatan pada mata kerana ia bergabung dengan alif maqsurah menjadi satu tanda sahaja - oleh itu perlu dilatih untuk tetap mengingati tanwin \"senyap\" ini walaupun tidak kelihatan."
+      ],
+      "erkennung": [
+        "Makrifah terbentuk melalui: huruf ال terus di hadapan kalimah, nama khas, kata ganti nama pemilik yang disandarkan, atau kedudukan sebagai Mudaf di hadapan Mudaf Ilaih yang makrifah.",
+        "Nakirah: membawa tanwin (ـٌ/ـً/ـٍ) dan tidak mempunyai ال, tiada kata ganti nama pemilik yang disandarkan, mahupun kedudukan sebagai Mudaf.",
+        "Tanwin dan huruf ال saling meniadakan dalam setiap keadaan - kalimah yang membawa ال tidak pernah membawa tanwin pada masa yang sama."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 2,
+          "wort": 2,
+          "zeigt": "Makrifah melalui huruf ال",
+          "warum": "ٱلْكِتَٰبُ membawa huruf ال terus di hadapan akar katanya - ditandakan dalam korpus sebagai state: definite, tanpa sebarang tanwin."
+        },
+        {
+          "sure": 1,
+          "vers": 2,
+          "wort": 3,
+          "zeigt": "Makrifah melalui kedudukan Mudaf, tanpa ال sendiri",
+          "warum": "رَبِّ tidak membawa ال mahupun tanwin, namun tetap makrifah (state: definite), kerana ia berkedudukan sebagai Mudaf di hadapan Mudaf Ilaih yang makrifah, iaitu ٱلْعَٰلَمِينَ - sifat makrifah \"diwarisi\" daripada kalimah kedua dalam Idafah."
+        },
+        {
+          "sure": 112,
+          "vers": 1,
+          "wort": 4,
+          "zeigt": "Isim nakirah dengan tanwin dhammatain yang kelihatan",
+          "warum": "أَحَدٌ membawa akhiran ـٌ (dhammatain) dan ditandakan sebagai state: indefinite - tanwin yang jelas kelihatan di penghujung Surah al-Ikhlas yang masyhur."
+        },
+        {
+          "sure": 112,
+          "vers": 4,
+          "wort": 4,
+          "zeigt": "Isim nakirah dengan tanwin fathatain yang kelihatan",
+          "warum": "كُفُوًا membawa akhiran ـًا (fathatain) pada i'rab nasab dan ditandakan sebagai state: indefinite - surah yang sama menunjukkan di sini bentuk tanwin kedua daripada tiga bentuk."
+        },
+        {
+          "sure": 2,
+          "vers": 17,
+          "wort": 15,
+          "zeigt": "Isim nakirah dengan tanwin kasratain yang kelihatan",
+          "warum": "ظُلُمَٰتٍ membawa akhiran ـٍ (kasratain) pada i'rab jar dan ditandakan sebagai state: indefinite - dengan itu أَحَدٌ, كُفُوًا dan ظُلُمَٰتٍ menyempurnakan ketiga-tiga bentuk tanwin pada ayat-ayat al-Quran yang sebenar."
+        }
+      ],
+      "lernen": [
+        "Pelajari dahulu ketiga-tiga tanda tanwin secara sebutan (ـٌ = -un, ـً = -an, ـٍ = -in) sebelum mendalami peraturan ketentuan - tanpa kemahiran menyebut tanda-tanda ini dengan yakin, segala yang lain hanya kekal sebagai teori.",
+        "Ambil mana-mana halaman al-Quran dan tandakan dahulu setiap kalimah ber-ال, kemudian setiap kalimah dengan tanwin yang kelihatan - yang tinggal kebiasaannya ialah kalimah Mudaf, nama khas atau kalimah dengan kata ganti nama yang disandarkan.",
+        "Tanamkan peraturan \"ال dan tanwin saling meniadakan\" sehingga anda dapat serta-merta memeriksa sifat mana yang terpakai pada setiap kalimah baharu - tidak pernah kedua-duanya serentak.",
+        "Latih bentuk tanwin tersembunyi pada kalimah yang berakhir dengan ى secara berasingan, contohnya pada هُدًى - sebutlah dengan kuat sebagai \"hudan\" dan perhatikan betapa sedikitnya tanwin itu kelihatan pada tulisan."
+      ],
+      "tabellen": ["nomen-muslim"],
+      "siehe": ["ism", "idafa", "murab"]
+    },
+
+    "kasus": {
+      "titel": "I'rab: Rafa', Nasab, Jar",
+      "ar": "الرَّفْع وَالنَّصْب وَالْجَرّ",
+      "umschrift": "ar-Rafʿ, an-Nasb, al-Dscharr",
+      "erklaerung": [
+        "Bahasa Arab mempunyai tiga i'rab bagi Isim: rafa' (lebih kurang sepadan dengan kes subjek), nasab (sepadan dengan kes objek) dan jar (sepadan dengan kes sandaran - jar bermaksud harfiah \"menarik/menyeret\" dan merujuk kepada i'rab selepas huruf jar). Setiap i'rab mempunyai petanda baris akhirnya sendiri, yang pada Isim Mu'rab dapat didengar dan kebiasaannya juga dapat dilihat.",
+        "Rafa' ditunjukkan melalui akhiran -u (dhammah, ـُ bagi kalimah makrifah, ـٌ sebagai tanwin bagi kalimah nakirah). Ia biasanya menandakan subjek sesuatu ayat (Fa'il dalam Jumlah Fi'liyyah, Mubtada dalam Jumlah Ismiyyah), tetapi turut menandakan predikat (Khabar) bagi Jumlah Ismiyyah.",
+        "Nasab ditunjukkan melalui akhiran -a (fathah, ـَ atau ـً sebagai tanwin). Ia terutamanya menandakan objek langsung (Maf'ul Bih) sesuatu kata kerja, di samping sejumlah fungsi lain seperti Hal (keadaan) atau Maf'ul li-Ajlih (sebab).",
+        "Jar ditunjukkan melalui akhiran -i (kasrah, ـِ atau ـٍ sebagai tanwin). Ia berlaku tepat dalam dua keadaan: selepas huruf jar dan sebagai unsur kedua dalam Idafah (Mudaf Ilaih). Isim Ghair Munsarif (Mamnu' minas-Sarf) menyimpang daripada peraturan ini dan menggantikan kasrah pada i'rab jar dengan fathah - lihat entri berasingan mengenainya."
+      ],
+      "erkennung": [
+        "Rafa': akhiran -u/ـُ (makrifah) atau -un/ـٌ (nakirah, tanwin dhammatain) - kebiasaannya subjek atau predikat.",
+        "Nasab: akhiran -a/ـَ (makrifah) atau -an/ـً (nakirah, tanwin fathatain) - kebiasaannya objek langsung.",
+        "Jar: akhiran -i/ـِ (makrifah) atau -in/ـٍ (nakirah, tanwin kasratain) - sentiasa selepas huruf jar atau sebagai unsur kedua dalam Idafah."
+      ],
+      "belege": [
+        {
+          "sure": 1,
+          "vers": 2,
+          "wort": 1,
+          "zeigt": "Rafa' pada subjek sesuatu Jumlah Ismiyyah",
+          "warum": "ٱلْحَمْدُ membawa akhiran dhammah -u, kerana ia menjadi Mubtada iaitu subjek ayat - ditandakan dalam korpus sebagai case: nom."
+        },
+        {
+          "sure": 1,
+          "vers": 6,
+          "wort": 2,
+          "zeigt": "Nasab pada objek langsung sesuatu kata perintah",
+          "warum": "ٱلصِّرَٰطَ membawa akhiran fathah -a, kerana ia menjadi objek langsung (Maf'ul Bih) bagi kata perintah ٱهْدِنَا (\"tunjukilah kami\") - ditandakan dalam korpus sebagai case: acc."
+        },
+        {
+          "sure": 1,
+          "vers": 1,
+          "wort": 1,
+          "zeigt": "Jar selepas huruf jar",
+          "warum": "بِسْمِ membawa akhiran kasrah -i, kerana huruf jar بِ terus mendahuluinya - ditandakan dalam korpus sebagai case: gen."
+        }
+      ],
+      "lernen": [
+        "Pelajari ketiga-tiga akhiran i'rab dahulu sebagai bunyi semata-mata: -u/-un, -a/-an, -i/-in - sebutlah dengan kuat sebelum menghafal fungsinya.",
+        "Kaitkan setiap i'rab serta-merta dengan fungsi utamanya: rafa' = siapa/apa yang bertindak atau diterangkan, nasab = siapa/apa yang terkena kesan perbuatan, jar = selepas huruf jar atau sebagai unsur kedua Idafah.",
+        "Ambil Surah al-Fatihah dan tentukan i'rab setiap Isim sebelum menyemak terjemahan - kemudian sahkan dengan baris akhir dalam teks.",
+        "Ingatkan diri sebagai panduan: nasab dan bentuk tanwinnya ـً ialah satu-satunya keadaan di mana dalam cetakan al-Quran biasanya ditulis alif tambahan - ini membantu mengesan i'rab walaupun tanpa baris."
+      ],
+      "tabellen": ["nomen-muslim"],
+      "siehe": ["ism", "murab", "mabni", "diptot"]
+    },
+
+    "murab": {
+      "titel": "Isim Mu'rab (Boleh Diva'rabkan)",
+      "ar": "مُعْرَب",
+      "umschrift": "Muʿrab",
+      "erklaerung": [
+        "Isim Mu'rab ialah sesuatu Isim yang hujungnya benar-benar berubah mengikut i'rab - majoriti besar kesemua isim Arab tergolong dalam kumpulan ini. Kalimah yang sama membawa petanda baris akhir yang berbeza pada rafa' berbanding pada nasab, dan berbeza lagi pada jar. Sifat berubah-ubah pada hujung kalimah ini merupakan keadaan biasa; keadaan sebaliknya (Mabni, iaitu hujung yang tidak berubah) adalah pengecualian dan hanya melibatkan kumpulan kalimah tertentu seperti kata ganti nama, kata tunjuk dan kata hubung (relatif).",
+        "Isim Mu'rab paling jelas dilihat apabila kalimah yang sama diletakkan bersebelahan pada kedudukan nahu yang berbeza dalam al-Quran: satu-satu Isim yang sama muncul sekali dengan baris dhammah (rafa'), sekali dengan baris fathah (nasab) dan sekali dengan baris kasrah (jar) - hanya pengulangan kalimah yang sama dengan fungsi berbeza dalam ayat.",
+        "Perkara ini penting bagi kefahaman al-Quran: pada Isim Mu'rab, baris akhir itu sendiri mendedahkan peranan kalimah dalam ayat, tanpa mengira susunan kata. Oleh itulah bahasa Arab dapat mengatur susunan kata jauh lebih bebas berbanding bahasa Melayu tanpa menimbulkan salah faham - baris i'rab itulah yang membawa maklumat nahu tersebut."
+      ],
+      "erkennung": [
+        "Hujung kalimah berubah dengan jelas antara ketiga-tiga bentuk i'rab (dhammah/fathah/kasrah atau bentuk tanwinnya), bergantung kepada peranan yang dimainkannya dalam ayat.",
+        "Majoriti kata nama dan kata sifat adalah Mu'rab - jika ragu-ragu, sesuatu Isim itu boleh diva'rabkan, melainkan ia jelas tergolong dalam salah satu kumpulan Mabni (kata ganti nama, kata tunjuk, kata hubung, sesetengah isim yang hampir seperti huruf).",
+        "Isim Ghair Munsarif (Mamnu' minas-Sarf) juga tergolong Mu'rab - hanya sahaja ia diva'rabkan dengan dua bentuk akhiran sahaja, bukan tiga, dan tidak pernah dengan tanwin (lihat entri berasingan)."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 7,
+          "wort": 2,
+          "zeigt": "Bentuk kalimah yang sama pada i'rab rafa'",
+          "warum": "ٱللَّهُ di sini membawa akhiran dhammah -u, kerana ia berkedudukan sebagai Fa'il (subjek) bagi kata kerja خَتَمَ - ditandakan dalam korpus sebagai case: nom."
+        },
+        {
+          "sure": 2,
+          "vers": 9,
+          "wort": 2,
+          "zeigt": "Bentuk kalimah yang sama pada i'rab nasab",
+          "warum": "ٱللَّهَ di sini membawa akhiran fathah -a, kerana ia menjadi objek langsung bagi kata kerja يُخَٰدِعُونَ - ditandakan dalam korpus sebagai case: acc, berbeza daripada dhammah pada 2:7."
+        },
+        {
+          "sure": 1,
+          "vers": 1,
+          "wort": 2,
+          "zeigt": "Bentuk kalimah yang sama pada i'rab jar",
+          "warum": "ٱللَّهِ di sini membawa akhiran kasrah -i, kerana ia menjadi Mudaf Ilaih selepas بِسْمِ - kalimah yang sama muncul dengan ketiga-tiga baris i'rab pada tiga ayat al-Quran yang sebenar dan berbeza."
+        }
+      ],
+      "lernen": [
+        "Cari sesuatu kalimah yang kerap muncul (seperti ٱللَّه) dan kumpulkan tiga ayat al-Quran di mana ia muncul dalam ketiga-tiga i'rab - bacalah berturut-turut dengan kuat untuk mendengar perubahan baris akhir pada kalimah yang sama.",
+        "Ingat: Mu'rab ialah keadaan biasa. Sebaliknya, pelajari secara aktif pengecualiannya (kumpulan Mabni), maka selebihnya secara automatik kekal \"boleh diva'rabkan\".",
+        "Berlatih dengan pasangan sifat-isim: apabila isim berubah i'rab, sifat yang mengiringinya mesti turut berubah kepada i'rab yang sama - semak perkara ini pada beberapa ayat."
+      ],
+      "tabellen": ["nomen-muslim"],
+      "siehe": ["kasus", "mabni", "diptot"]
+    },
+
+    "mabni": {
+      "titel": "Isim Mabni (Tidak Berubah)",
+      "ar": "مَبْنِي",
+      "umschrift": "Mabni",
+      "erklaerung": [
+        "Isim Mabni ialah sesuatu Isim yang hujungnya tidak berubah, tidak kira apa peranan yang dimainkannya dalam ayat - jadi ia tidak mempunyai i'rab tersendiri dalam erti hujung yang berubah-ubah. Kumpulan ini termasuk kata ganti nama (Dhamir, sama ada Munfasil mahupun Muttasil), kata tunjuk (Asma al-Isyarah) dan kata hubung/relatif (al-Asma al-Maussulah), di samping sesetengah kata bilangan dan isim yang hampir seperti huruf.",
+        "Perbezaan dengan Isim Mu'rab paling jelas dilihat pada hakikat bahawa kalimah Mabni, walaupun pada kedudukan nahu yang berbeza sama sekali - sekali sebagai subjek, sekali sebagai objek, sekali selepas huruf jar - sentiasa mengekalkan bentuk yang sama. Ayat itu tetap menentukan peranan kalimah tersebut, tetapi peranan itu tidak dapat dibaca daripada hujung yang berubah, hanya daripada kedudukan dan konteksnya.",
+        "Yang penting, Mabni tidak boleh dikelirukan dengan nakirah atau dengan \"tiada i'rab\" dalam erti \"tidak diberikan i'rab\": dari segi nahu, kalimah Mabni tetap berkedudukan pada suatu i'rab (ia boleh secara nahu berada \"pada rafa'\" atau \"pada jar\"), cuma kedudukan itu tidak ditunjukkan melalui akhirannya sendiri."
+      ],
+      "erkennung": [
+        "Bentuk kalimah kekal sama pada setiap kedudukan ayat - tiada akhiran rafa'/nasab/jar yang berubah-ubah.",
+        "Kumpulan Mabni yang lazim: kata ganti nama Munfasil dan Muttasil, kata tunjuk (ذَٰلِكَ, هَـٰذَا, أُولَٰئِكَ ...), kata hubung (ٱلَّذِي, ٱلَّذِينَ ...).",
+        "Dalam korpus morfologi kamus ini, kalimah-kalimah sebegini tidak mempunyai sebarang petanda i'rab pada kalimah itu sendiri - satu petunjuk teknikal yang jelas bagi Mabni."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 2,
+          "wort": 1,
+          "zeigt": "Kata tunjuk tanpa akhiran i'rab yang berubah",
+          "warum": "ذَٰلِكَ tidak membawa sebarang petanda i'rab, walaupun ia membuka peranan subjek dalam ayat - bentuknya kekal sama tanpa mengira fungsi nahunya, satu ciri Mabni."
+        },
+        {
+          "sure": 1,
+          "vers": 7,
+          "wort": 2,
+          "zeigt": "Kata hubung tanpa akhiran i'rab yang berubah",
+          "warum": "ٱلَّذِينَ di sini berkedudukan sebagai Mudaf Ilaih selepas صِرَٰطَ, tetapi tidak membawa sebarang petanda i'rab - bentuk ٱلَّذِينَ yang sama muncul dalam al-Quran juga sebagai subjek atau objek tanpa berubah."
+        }
+      ],
+      "lernen": [
+        "Hafal kumpulan Mabni sebagai senarai tertutup (kata ganti nama, kata tunjuk, kata hubung) - itulah pengecualian, selebihnya pada dasarnya Mu'rab.",
+        "Cari dalam al-Quran bentuk Mabni yang sama (contohnya ٱلَّذِينَ) di beberapa tempat dengan peranan ayat yang jelas berbeza dan sahkan sendiri bahawa bentuknya tidak berubah.",
+        "Jangan kelirukan Mabni dengan nakirah: ذَٰلِكَ adalah makrifah (\"benda tertentu ini/itu\"), walaupun ia tidak menunjukkan akhiran i'rab yang berubah - kedua-dua sifat ini tidak berkaitan antara satu sama lain."
+      ],
+      "tabellen": [],
+      "siehe": ["murab", "kasus", "ism-ishara", "asma-mawsula", "pronomen-frei", "pronomen-gebunden"]
+    },
+
+    "diptot": {
+      "titel": "Isim Ghair Munsarif (Mamnu' minas-Sarf)",
+      "ar": "مَمْنُوعٌ مِنَ الصَّرْف",
+      "umschrift": "Mamnuʿ mina s-Sarf",
+      "erklaerung": [
+        "Isim Ghair Munsarif ialah sejenis isim khas yang boleh diva'rabkan (Mu'rab), namun tidak membezakan ketiga-tiga akhiran i'rab dan tidak pernah boleh membawa tanwin - walaupun ia bermaksud nakirah dari segi makna. Pada rafa' ia berkelakuan biasa (dhammah), pada nasab juga biasa (fathah) - tetapi pada jar, kasrah yang sepatutnya digantikan dengan fathah. Dengan itu, Isim Ghair Munsarif hanya mempunyai dua akhiran berbeza secara berkesan, bukan tiga.",
+        "Antara kumpulan Isim Ghair Munsarif termasuklah: nama khas berasal daripada bahasa asing (contohnya nama orang seperti فِرْعَوْن yang bukan berasal daripada bahasa Arab), corak jamak tertentu (terutamanya corak مَفَاعِل/مَفَاعِيل, yang dikenali sebagai \"jamak amat banyak\"), serta kata sifat mengikut corak أَفْعَل (misalnya sifat warna) dan beberapa corak tetap yang lain. Isim Ghair Munsarif kembali menjadi Munsarif sepenuhnya (boleh diva'rabkan penuh dengan tanwin) sebaik sahaja ia menjadi makrifah - contohnya melalui ال atau berkedudukan sebagai Mudaf.",
+        "Bagi pembacaan al-Quran, Isim Ghair Munsarif merupakan petanda pengenalan yang berguna: jika sesuatu kalimah selepas huruf jar atau sebagai Mudaf Ilaih sepatutnya membawa kasrah, tetapi sebaliknya menunjukkan fathah tanpa sebarang tanwin, ia hampir pasti sebuah Isim Ghair Munsarif."
+      ],
+      "erkennung": [
+        "Pada i'rab jar, fathah muncul menggantikan kasrah yang sepatutnya - tiada perbezaan akhiran yang kelihatan antara nasab dan jar.",
+        "Tidak pernah membawa tanwin, walaupun kalimah itu bermaksud nakirah.",
+        "Punca lazim: nama khas berasal daripada bahasa asing, corak jamak tertentu (terutamanya مَفَاعِل/مَفَاعِيل), sifat warna dan kecacatan fizikal mengikut corak أَفْعَل.",
+        "Apabila menjadi makrifah (melalui ال atau berkedudukan sebagai Mudaf), Isim Ghair Munsarif kembali berkelakuan seperti isim biasa yang boleh diva'rabkan sepenuhnya."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 49,
+          "wort": 5,
+          "zeigt": "Isim Ghair Munsarif pada nama khas asing: fathah menggantikan kasrah pada i'rab jar",
+          "warum": "فِرْعَوْنَ berkedudukan sebagai Mudaf Ilaih selepas آلِ pada i'rab jar, tetapi membawa akhiran -a (fathah) menggantikan kasrah yang sepatutnya bagi jar - lazim bagi nama khas berasal daripada bahasa asing tanpa akar kata Arab."
+        },
+        {
+          "sure": 41,
+          "vers": 12,
+          "wort": 14,
+          "zeigt": "Isim Ghair Munsarif pada corak jamak مَفَاعِيل: fathah menggantikan kasrah, tanpa tanwin",
+          "warum": "بِمَصَٰبِيحَ berkedudukan selepas huruf jar بِ pada i'rab jar, tetapi membawa akhiran -a (fathah) menggantikan kasrah dan tanpa tanwin, walaupun kalimah itu nakirah - corak jamak مَفَاعِيل ialah salah satu corak Ghair Munsarif yang tetap."
+        }
+      ],
+      "lernen": [
+        "Pelajari dahulu peraturan pengenalan sebagai gerak balas: fathah selepas huruf jar atau sebagai Mudaf Ilaih, pada tempat yang sepatutnya kasrah, adalah petanda sebuah Isim Ghair Munsarif.",
+        "Hafal kumpulan punca sebagai senarai ringkas: nama khas asing, corak jamak مَفَاعِل/مَفَاعِيل, sifat warna mengikut corak أَفْعَل - itu sudah memadai untuk permulaan.",
+        "Berlatih dengan nama-nama nabi yang dikenali (فِرْعَوْن, إِبْرَٰهِيم, يَعْقُوب, إِسْحَٰق): cari satu ayat al-Quran bagi setiap nama di mana ia berkedudukan pada i'rab jar, dan perhatikan akhiran fathahnya.",
+        "Ingat sebagai semakan: sebaik sahaja sebuah Isim Ghair Munsarif membawa ال atau menjadi Mudaf, pengecualian itu hilang - ia kembali berkelakuan seperti mana-mana Isim Mu'rab yang lain."
+      ],
+      "tabellen": [],
+      "siehe": ["murab", "kasus", "bestimmtheit"]
+    },
+
+    "idafa": {
+      "titel": "Idafah (Susunan Sandaran)",
+      "ar": "الْإِضَافَة",
+      "umschrift": "al-Idafa",
+      "erklaerung": [
+        "Idafah menggabungkan dua isim menjadi satu unit pemilikan atau kepunyaan, tanpa memerlukan kalimah tersendiri seperti \"punya\" - berbeza daripada bahasa Melayu (\"buku pelajar itu\"). Kalimah pertama dinamakan Mudaf (\"yang disandarkan\", iaitu benda yang dimiliki), kalimah kedua dinamakan Mudaf Ilaih (\"yang kepadanya disandarkan\", iaitu pemilik). Kedua-duanya bersama membentuk satu unit tetap yang berfungsi dari segi nahu seperti sebuah isim makrifah atau nakirah yang tunggal.",
+        "Tiga peraturan tetap terpakai bagi Mudaf: ia tidak pernah membawa huruf ال, ia tidak pernah membawa tanwin, dan sifat ketentuannya bergantung sepenuhnya kepada Mudaf Ilaih - jika kalimah kedua itu makrifah, kalimah pertama secara automatik turut makrifah, tanpa huruf ال sendiri. Mudaf Ilaih pula sentiasa berkedudukan pada i'rab jar, tanpa mengira i'rab apa yang dibawa oleh Mudaf itu sendiri.",
+        "Sesebuah Idafah boleh juga terdiri daripada beberapa unsur (satu rantaian beberapa susunan Idafah berturut-turut), dan unsur terakhir itulah yang menentukan sifat ketentuan bagi keseluruhan rantaian tersebut. Kata ganti nama pemilik yang disandarkan (lihat entri kata ganti nama bersambung) mengambil alih peranan yang sama seperti Mudaf Ilaih dari segi nahu - رَبِّهِمْ (\"tuhan mereka\") sebenarnya struktur yang sama dengan رَبُّ الْعَٰلَمِينَ (\"tuhan sekalian alam\"), hanya sahaja dengan kata ganti nama sebagai ganti isim yang dieja penuh."
+      ],
+      "erkennung": [
+        "Mudaf (kalimah pertama): tiada ال, tiada tanwin, terus diikuti oleh Mudaf Ilaih tanpa sebarang kalimah pemisah di antaranya.",
+        "Mudaf Ilaih (kalimah kedua): sentiasa berkedudukan pada i'rab jar, sama ada makrifah dengan ال, nama khas, atau membawa sendiri kata ganti nama pemilik - dan dengan itu menjadikan keseluruhan ungkapan tersebut makrifah.",
+        "Kata ganti diri yang disandarkan pada sesuatu isim (contohnya ـهِمْ, ـهُ, ـنَا) mengambil alih fungsi yang sama seperti Mudaf Ilaih dan secara automatik menjadikan isim tersebut makrifah."
+      ],
+      "belege": [
+        {
+          "sure": 1,
+          "vers": 2,
+          "wort": 3,
+          "zeigt": "Mudaf: tiada huruf ال, tiada tanwin",
+          "warum": "رَبِّ berkedudukan tanpa ال dan tanpa tanwin, terus di hadapan ٱلْعَٰلَمِينَ - tepat sifat yang mesti ditunjukkan oleh sesebuah Mudaf."
+        },
+        {
+          "sure": 1,
+          "vers": 2,
+          "wort": 4,
+          "zeigt": "Mudaf Ilaih: makrifah dan pada i'rab jar",
+          "warum": "ٱلْعَٰلَمِينَ membawa huruf ال dan akhiran jar -ina - dan dengan itu menjadikan رَبِّ sebelumnya secara automatik makrifah, walaupun رَبِّ sendiri tidak membawa ال."
+        },
+        {
+          "sure": 113,
+          "vers": 1,
+          "wort": 3,
+          "zeigt": "Mudaf pada satu lagi rantaian Idafah",
+          "warum": "بِرَبِّ (huruf jar بِ + Mudaf رَبِّ) sekali lagi tidak membawa ال mahupun tanwin dan hanya menjadi makrifah melalui ٱلْفَلَقِ yang menyusul - struktur yang sama seperti pada 1:2, disahkan pada satu lagi ayat al-Quran."
+        },
+        {
+          "sure": 113,
+          "vers": 1,
+          "wort": 4,
+          "zeigt": "Mudaf Ilaih dengan huruf ال dan akhiran jar",
+          "warum": "ٱلْفَلَقِ membawa huruf ال dan akhiran kasrah bagi i'rab jar, kerana ia berkedudukan sebagai Mudaf Ilaih selepas رَبِّ - keseluruhan Idafah بِرَبِّ ٱلْفَلَقِ bermaksud \"dengan tuhan waktu subuh\"."
+        }
+      ],
+      "lernen": [
+        "Hafal dahulu ketiga-tiga peraturan Mudaf sebagai satu ayat hafalan yang tetap: tiada ال, tiada tanwin, sifat ketentuan diwarisi daripada kalimah kedua.",
+        "Cari 5 contoh Idafah dalam al-Quran dan tandakan secara berasingan Mudaf serta Mudaf Ilaih pada setiap satu - beri perhatian khusus kepada akhiran jar pada kalimah kedua.",
+        "Berlatih arah sebaliknya: ambil ungkapan pemilikan dalam bahasa Melayu (\"rumah lelaki itu\") dan bentuk sendiri Idafahnya sebelum membandingkannya dengan sesuatu ayat al-Quran.",
+        "Kaitkan kata ganti nama pemilik yang disandarkan dengan Idafah secara sedar: رَبُّهُمْ dan رَبُّ الْقَوْمِ merupakan struktur nahu yang sama - berlatih dengan pasangan di mana anda menggantikan isim yang dieja penuh dengan kata ganti nama."
+      ],
+      "tabellen": ["idafa-besitz"],
+      "siehe": ["bestimmtheit", "kasus", "pronomen-gebunden"]
+    },
+
+    "pronomen-frei": {
+      "titel": "Dhamir Munfasil (Kata Ganti Nama Bebas)",
+      "ar": "الضَّمَائِر الْمُنْفَصِلَة",
+      "umschrift": "adh-Dhamaʾir al-Munfasila",
+      "erklaerung": [
+        "Dhamir Munfasil berdiri sebagai kalimah tersendiri dalam ayat, terpisah daripada mana-mana kalimah lain - berbeza daripada Dhamir Muttasil (kata ganti nama bersambung) yang sentiasa disandarkan kepada kalimah lain. Bahasa Arab membezakan di sini mengikut orang (pertama/kedua/ketiga), jantina (mudzakkar/muannats) dan bilangan (mufrad/mutsanna/jamak) - kesemuanya dua belas bentuk berbeza, kerana orang pertama tidak mempunyai bentuk mutsanna tersendiri.",
+        "Dhamir Munfasil dari segi nahu bersifat Mabni: bentuknya tidak berubah mengikut i'rab. Ia terutamanya muncul dalam dua fungsi: sebagai subjek Jumlah Ismiyyah (contohnya هُوَ اللَّهُ, \"Dialah Allah\") atau untuk menekankan secara khusus sesuatu objek yang sepatutnya disandarkan sebagai kata ganti nama bersambung pada kata kerja - dalam keadaan ini, kata ganti nama objek yang sepatutnya bersambung didahulukan dalam bentuk khas dengan إِيَّا-, lalu ditekankan.",
+        "Fungsi penekanan ini amat mendidik: إِيَّاكَ نَعْبُدُ (\"Hanya kepada-Mu kami menyembah\", secara harfiah \"Engkau - kami menyembah\") mendahulukan objek إِيَّاكَ, sedangkan kata kerja نَعْبُدُ (\"kami menyembah\") sudah lengkap dari segi nahu tanpa kalimah ini - pendahuluan itu semata-mata bertujuan menekankan \"hanya Engkau, tiada sesiapa yang lain\"."
+      ],
+      "erkennung": [
+        "Berdiri sebagai kalimah tersendiri, bukan sebagai sandaran kepada kalimah lain - dikenali melalui jarak katanya sendiri sebelum dan selepasnya.",
+        "Bentuk tetap yang tidak berubah tanpa mengira i'rab (Mabni) - contohnya هُوَ, هِيَ, أَنْتَ, نَحْنُ.",
+        "Bentuk dengan إِيَّا- (إِيَّاكَ, إِيَّاهُ ...) menandakan objek yang ditekankan dan didahulukan, yang sepatutnya disandarkan sebagai kata ganti nama bersambung pada kata kerja."
+      ],
+      "belege": [
+        {
+          "sure": 112,
+          "vers": 1,
+          "wort": 2,
+          "zeigt": "Dhamir Munfasil sebagai subjek Jumlah Ismiyyah",
+          "warum": "هُوَ berdiri sebagai kalimah tersendiri dan membentuk subjek ayat \"قُلْ هُوَ ٱللَّهُ أَحَدٌ\" (\"Katakanlah: Dialah Allah, Yang Maha Esa\") - salah satu penggunaan Dhamir Munfasil yang paling dikenali dalam al-Quran."
+        },
+        {
+          "sure": 1,
+          "vers": 5,
+          "wort": 1,
+          "zeigt": "Dhamir Munfasil untuk pendahuluan objek secara bertekanan",
+          "warum": "إِيَّاكَ berdiri sebagai objek tersendiri yang didahulukan sebelum kata kerja نَعْبُدُ - bentuk khas dengan إِيَّا- digunakan tepat apabila objek sesuatu kata kerja hendak didahulukan secara bertekanan."
+        }
+      ],
+      "lernen": [
+        "Hafal dahulu kedua belas Dhamir Munfasil sebagai senarai semata-mata, mengikut susunan tetap (orang pertama tunggal/jamak, orang kedua mudzakkar/muannats/mutsanna/jamak, orang ketiga mudzakkar/muannats/mutsanna/jamak) - jadual dalam kamus ini menunjukkannya dengan lengkap.",
+        "Tutup lajur Arab pada jadual kata ganti nama dan sebutkan setiap bentuk dengan kuat, kemudian tutup lajur Melayu dan lakukan sebaliknya.",
+        "Berlatih secara khusus bentuk إِيَّا- secara berasingan daripada bentuk asas (أَنَا, أَنْتَ ...) - bentuk ini kelihatan berbeza dan sering terlepas pandang oleh pemula.",
+        "Baca Surah al-Fatihah dengan kuat dan cari setiap Dhamir Munfasil di dalamnya - dalam surah yang pendek ini, fungsi penekanan kelihatan amat jelas."
+      ],
+      "tabellen": ["pronomen-frei"],
+      "siehe": ["pronomen-gebunden", "mabni"]
+    },
+
+    "pronomen-gebunden": {
+      "titel": "Dhamir Muttasil (Kata Ganti Nama Bersambung)",
+      "ar": "الضَّمَائِر الْمُتَّصِلَة",
+      "umschrift": "adh-Dhamaʾir al-Muttasila",
+      "erklaerung": [
+        "Dhamir Muttasil tidak pernah berdiri sendiri, sebaliknya disandarkan terus kepada kalimah lain - kepada kata kerja, kepada isim, atau kepada huruf jar. Bergantung kepada jenis kata yang disandarinya, ia membawa maksud yang berbeza: apabila disandarkan pada kata kerja, ia menjadi objek perbuatan; apabila disandarkan pada isim, ia menjadi kata ganti nama pemilik (berfungsi seperti Mudaf Ilaih, lihat entri Idafah); apabila disandarkan pada huruf jar, ia menjadi objek huruf jar tersebut.",
+        "Bentuk-bentuk ini sebahagian besarnya sama sahaja tanpa mengira jenis kata yang disandarinya (contohnya ـهُمْ untuk \"mereka/kepada mereka/kepunyaan mereka\" pada ketiga-tiga keadaan) - satu pengecualian ialah orang pertama tunggal, yang pada kata kerja berbentuk ـنِي (\"aku\" sebagai objek), tetapi pada isim dan huruf jar berbentuk ـِي (\"kepunyaanku\"/\"kepadaku\").",
+        "Oleh sebab Dhamir Muttasil tidak pernah membentuk kalimah tersendiri, ia juga tidak pernah berubah bentuk mengikut i'rab - seperti Dhamir Munfasil, ia dari segi nahu bersifat Mabni. Maksud sebenarnya hanya terhasil daripada kalimah yang disandarinya serta daripada orang/jantina/bilangan yang terkandung dalam akhirannya sendiri."
+      ],
+      "erkennung": [
+        "Tidak mempunyai jarak kata tersendiri di hadapannya - ia sebahagian daripada kalimah tulisan yang sama dengan kalimah yang disandarinya.",
+        "Disandarkan pada kata kerja = objek perbuatan; disandarkan pada isim = kata ganti nama pemilik (\"kepunyaanku/kepunyaanmu/kepunyaannya ...\"); disandarkan pada huruf jar = objek huruf jar tersebut.",
+        "Bentuk tetap yang tidak berubah tanpa mengira i'rab kalimah yang disandarinya - dikenali contohnya melalui ـهُ, ـهَا, ـهُمْ, ـنَا, ـكَ, ـكُمْ sebagai satu hingga tiga huruf terakhir bagi sesuatu kalimah yang lebih panjang."
+      ],
+      "belege": [
+        {
+          "sure": 1,
+          "vers": 6,
+          "wort": 1,
+          "zeigt": "Dhamir Muttasil sebagai objek pada sesuatu kata kerja",
+          "warum": "ٱهْدِنَا terdiri daripada kata perintah ٱهْدِ (\"tunjukilah!\") dan kata ganti nama yang disandarkan نَا (\"kami\") sebagai objek perbuatan - kedua-duanya membentuk satu kalimah tulisan tanpa jarak."
+        },
+        {
+          "sure": 2,
+          "vers": 5,
+          "wort": 5,
+          "zeigt": "Dhamir Muttasil sebagai kata ganti nama pemilik pada sesuatu isim",
+          "warum": "رَّبِّهِمْ terdiri daripada isim رَبّ (\"tuhan\") dan kata ganti nama yang disandarkan هِمْ (\"mereka\"), yang di sini dari segi nahu mengambil alih peranan Mudaf Ilaih - رَبِّهِمْ secara harfiah bermaksud \"tuhan bagi mereka\"."
+        }
+      ],
+      "lernen": [
+        "Latih Dhamir Muttasil pada satu kalimah contoh sahaja (contohnya كِتَاب, \"kitab\") - sandarkan setiap bentuk satu demi satu dan sebutkan hasilnya dengan kuat.",
+        "Kemudian berlatih secara khusus perbezaan antara akhiran objek pada kata kerja (ـنِي untuk \"aku\") dan akhiran pemilik pada isim (ـِي untuk \"kepunyaanku\") - ini satu-satunya bentuk yang berbeza.",
+        "Tutup terjemahan Melayu pada senarai kata kerja atau isim yang bersandarkan kata ganti nama dan hasilkan maksudnya semata-mata daripada akhirannya.",
+        "Cari 5 kalimah dengan kata ganti nama bersandar dalam al-Quran dan tentukan bagi setiap satu: adakah kalimah yang disandarinya itu kata kerja, isim atau huruf jar - dan apa maksudnya bagi fungsi kata ganti nama tersebut?"
+      ],
+      "tabellen": ["pronomen-gebunden"],
+      "siehe": ["pronomen-frei", "idafa", "mabni"]
+    },
+
+    "ism-ishara": {
+      "titel": "Isim Isyarah (Kata Tunjuk)",
+      "ar": "أَسْمَاء الْإِشَارَة",
+      "umschrift": "Asmaʾ al-Ischara",
+      "erklaerung": [
+        "Isim Isyarah sepadan dengan kata tunjuk \"ini\" dan \"itu\" dalam bahasa Melayu. Bahasa Arab secara konsisten membezakan di sini mengikut kedekatan (rangkaian هَـٰذَا, \"ini di sini\") dan kejauhan (rangkaian ذَٰلِكَ, \"itu di sana\"), di samping mengikut jantina dan bilangan - jadi tidak wujud satu kalimah sahaja untuk \"ini\", sebaliknya satu rangkaian bentuk yang lengkap.",
+        "Dari segi nahu, Isim Isyarah bersifat Mabni: bentuknya kekal sama tanpa mengira i'rab. Ia boleh berdiri sendiri sebagai subjek (\"ذَٰلِكَ ٱلْكِتَٰبُ\" - \"Inilah kitab itu\") atau berfungsi terus sebagai penerang di hadapan isim makrifah (\"هَـٰذَا ٱلرَّجُلُ\" - \"lelaki ini\"). Dalam kedua-dua keadaan, isim yang menyusul sentiasa makrifah (dengan ال atau nama khas).",
+        "Sesuatu Isim Isyarah sering digunakan dalam al-Quran bukan sekadar dari segi tempat, tetapi secara kiasan - misalnya untuk merujuk kepada sesuatu yang telah disebut atau diketahui dari segi kandungan, seperti pada ذَٰلِكَ ٱلْكِتَٰبُ di awal Surah al-Baqarah, di mana \"ini/itu\" merujuk kepada al-Quran secara keseluruhan, bukan kepada sesuatu benda yang dekat atau jauh dari segi tempat."
+      ],
+      "erkennung": [
+        "Bentuk tetap tanpa mengira i'rab (Mabni) - tiada baris akhir yang berubah, tidak kira peranan apa yang dimainkan kalimah itu dalam ayat.",
+        "Rangkaian kedekatan dikenali melalui unsur هَـٰذَا/هَـٰذِهِ/هَـٰؤُلَاءِ; rangkaian kejauhan dikenali melalui unsur ذَٰلِكَ/تِلْكَ/أُولَـٰئِكَ.",
+        "Membezakan mengikut jantina (mudzakkar/muannats) dan bilangan (mufrad/mutsanna/jamak) - bentuk jamak (هَـٰؤُلَاءِ, أُولَـٰئِكَ) terpakai sama rata bagi kedua-dua jantina."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 2,
+          "wort": 1,
+          "zeigt": "Isim Isyarah rangkaian kejauhan, mudzakkar mufrad",
+          "warum": "ذَٰلِكَ membuka ayat dan merujuk kepada al-Quran (\"Inilah/Itulah Kitab\") - mudzakkar mufrad, tanpa akhiran i'rab yang berubah."
+        },
+        {
+          "sure": 2,
+          "vers": 5,
+          "wort": 1,
+          "zeigt": "Isim Isyarah rangkaian kejauhan, jamak",
+          "warum": "أُو۟لَٰٓئِكَ (\"mereka [di sana]\") berkedudukan sebagai subjek dan merujuk kepada kumpulan orang bertakwa yang telah diterangkan sebelumnya - ditandakan dalam korpus sebagai number: pl, tanpa perbezaan jantina."
+        }
+      ],
+      "lernen": [
+        "Pelajari rangkaian kedekatan dan kejauhan sebagai dua blok berasingan, tidak dicampurkan - mula-mula semua bentuk هَـٰذَا, kemudian semua bentuk ذَٰلِكَ.",
+        "Tutup lajur jantina/bilangan pada jadual kata tunjuk dan sebutkan bentuk yang sepadan apabila diminta (\"muannats, mutsanna, dekat\" → هَـٰتَانِ).",
+        "Perhatikan semasa membaca bahawa sesuatu Isim Isyarah yang digunakan sebagai penerang hampir selalu diikuti oleh isim makrifah dengan ال - ini membantu memahami struktur ayat dengan pantas.",
+        "Berlatih penggunaan kiasan secara khusus pada ذَٰلِكَ ٱلْكِتَٰبُ: terjemahkan dahulu secara harfiah mengikut tempat (\"kitab itu di sana\"), kemudian secara kandungan (\"al-Quran [yang telah dijanjikan kepada kamu] ini\")."
+      ],
+      "tabellen": ["hinweiswoerter"],
+      "siehe": ["mabni", "asma-mawsula", "bestimmtheit"]
+    },
+
+    "asma-mawsula": {
+      "titel": "Asma Maussul (Kata Hubung/Relatif)",
+      "ar": "الْأَسْمَاء الْمَوْصُولَة",
+      "umschrift": "al-Asmaʾ al-Mawsula",
+      "erklaerung": [
+        "Asma Maussul membuka satu ayat hubung (relatif) dan sepadan dengan \"yang ...\" dalam bahasa Melayu. Yang paling lazim dan paling dikenali ialah ٱلَّذِي (mudzakkar mufrad) berserta bentuk-bentuknya mengikut jantina dan bilangan - ٱلَّتِي (muannats mufrad), ٱلَّذِينَ (mudzakkar jamak), ٱللَّاتِي/ٱللَّائِي (muannats jamak), dan bentuk mutsannanya yang tersendiri.",
+        "Dari segi nahu, Asma Maussul itu sendiri bersifat Mabni - bentuknya tidak berubah mengikut i'rab, walaupun secara nahu ia boleh mengambil peranan yang berbeza mengikut ayat (subjek, objek, Mudaf Ilaih). Ayat hubung yang menyusul (Silat al-Maussul) mesti sentiasa mengandungi unsur rujukan balik yang merujuk kepada Asma Maussul tersebut - biasanya kata ganti nama bersambung pada kata kerja atau isim di dalam ayat hubung itu.",
+        "Satu keadaan khas ialah Asma Maussul \"umum\" مَنْ (\"sesiapa/orang yang\" - bagi orang) dan مَا (\"apa/perkara yang\" - bagi benda), yang berbeza daripada ٱلَّذِي kerana tidak membawa jantina atau bilangan yang tetap, dan dengan itu kekal sama bagi mana-mana rujukan kepada orang atau benda."
+      ],
+      "erkennung": [
+        "Bentuk tetap tanpa mengira i'rab (Mabni) - dikenali melalui unsur ٱلَّذِي/ٱلَّتِي/ٱلَّذِينَ dengan ال di hadapannya, yang di sini bukan huruf penentu makrifah biasa, sebaliknya sebahagian daripada Asma Maussul itu sendiri.",
+        "Sentiasa diikuti oleh ayat (sampingan) tersendiri yang mengandungi unsur rujukan balik (biasanya kata ganti nama bersambung) kepada Asma Maussul tersebut.",
+        "مَنْ dan مَا ialah bentuk neutral dari segi jantina/bilangan bagi orang dan benda, dan kelihatan berbeza dari segi luaran berbanding rangkaian ٱلَّذِي."
+      ],
+      "belege": [
+        {
+          "sure": 1,
+          "vers": 7,
+          "wort": 2,
+          "zeigt": "Asma Maussul mudzakkar jamak",
+          "warum": "ٱلَّذِينَ membuka \"صِرَٰطَ ٱلَّذِينَ أَنْعَمْتَ عَلَيْهِمْ\" (\"jalan orang-orang yang Engkau kurniakan nikmat ke atas mereka\") - ayat yang menyusul, iaitu أَنْعَمْتَ عَلَيْهِمْ, mengandungi pada عَلَيْهِمْ unsur rujukan balik kepada ٱلَّذِينَ."
+        },
+        {
+          "sure": 114,
+          "vers": 5,
+          "wort": 1,
+          "zeigt": "Asma Maussul mudzakkar mufrad",
+          "warum": "ٱلَّذِى membuka \"ٱلَّذِى يُوَسْوِسُ فِى صُدُورِ ٱلنَّاسِ\" (\"yang membisikkan waswas ke dalam dada manusia\") dan merujuk kepada ٱلْخَنَّاسِ pada ayat sebelumnya - mudzakkar mufrad, berbeza daripada bentuk jamak ٱلَّذِينَ pada 1:7."
+        }
+      ],
+      "lernen": [
+        "Pelajari dahulu bentuk ٱلَّذِي/ٱلَّتِي/ٱلَّذِينَ/ٱللَّاتِي disusun mengikut jantina dan bilangan - bayangkan jadual yang sama seperti kata tunjuk, tetapi bagi ayat hubung.",
+        "Cari 3 ayat hubung dalam al-Quran dan tandakan unsur rujukan balik pada setiap ayat sampingan tersebut (biasanya kata ganti nama yang disandarkan) - tanpa unsur ini, sesuatu ayat hubung dalam bahasa Arab tidak lengkap.",
+        "Berlatih secara berasingan: مَنْ bagi orang, مَا bagi benda - kedua-duanya tidak pernah berubah, berbeza daripada rangkaian ٱلَّذِي.",
+        "Tutup lajur terjemahan Melayu pada senarai kata hubung dan terjemahkan daripada bahasa Arab, kemudian sebaliknya."
+      ],
+      "tabellen": ["relativpronomen"],
+      "siehe": ["mabni", "ism-ishara", "pronomen-gebunden"]
+    },
+
+    "ism-fail": {
+      "titel": "Isim Fa'il (Kata Nama Pelaku)",
+      "ar": "اِسْم الْفَاعِل",
+      "umschrift": "Ism al-Faʿil",
+      "erklaerung": [
+        "Isim Fa'il menerangkan \"orang yang melaksanakan perbuatan itu\" - lebih kurang sepadan dengan kata nama pelaku dalam bahasa Melayu (\"penulis\") atau bentuk \"yang menulis\". Pada wazan asas (Bab I), ia dibentuk mengikut wazan tetap فَاعِل, contohnya daripada كَتَبَ (\"menulis\") menjadi كَاتِب (\"yang menulis/penulis\").",
+        "Pada bab terbitan (II-X), setiap bab mempunyai wazan Isim Fa'ilnya sendiri, tetapi juga tetap, biasanya dikenali melalui awalan مُـ dan kasrah di bawah huruf akar kedua terakhir (contohnya Bab VIII مُتَّقِي daripada اِتَّقَى, \"bertakwa/menjaga diri\"; Bab IV مُؤْمِن daripada آمَنَ, \"beriman\"). Walaupun wazannya berbeza-beza, maksud asasnya kekal sama: orang yang bertindak.",
+        "Dari segi nahu, Isim Fa'il berkelakuan seperti isim biasa: ia diva'rabkan mengikut i'rab (Mu'rab), membentuk bentuk jantina dan bilangan, dan boleh digunakan sama ada sebagai kata sifat (\"seorang lelaki yang bertakwa\") mahupun secara nama (\"orang-orang yang bertakwa\" = sekumpulan orang) - dalam al-Quran sering dalam fungsi kedua ini, iaitu sebagai kata nama, seperti pada ٱلْمُتَّقِينَ atau ٱلْمُؤْمِنِينَ."
+      ],
+      "erkennung": [
+        "Wazan asas (Bab I): wazan فَاعِل (contohnya كَاتِب, حَاسِد, غَاسِق).",
+        "Bab terbitan (II-X): hampir sentiasa dengan awalan مُـ dan kasrah di bawah huruf akar kedua terakhir (contohnya مُتَّقِي Bab VIII, مُؤْمِن Bab IV, مُسْتَقِيم Bab X).",
+        "Sentiasa bermaksud \"orang yang melaksanakan perbuatan itu\" - jika ragu-ragu, tanyakan: siapa atau apa yang melakukan sesuatu di sini?"
+      ],
+      "belege": [
+        {
+          "sure": 1,
+          "vers": 4,
+          "wort": 1,
+          "zeigt": "Isim Fa'il Bab I",
+          "warum": "مَٰلِكِ (\"penguasa/pemilik\") mengikut wazan فَاعِل daripada akar kata م-ل-ك dan ditandakan dalam korpus sebagai voice: active, derivation: activeParticiple - \"yang menguasai sesuatu\"."
+        },
+        {
+          "sure": 2,
+          "vers": 2,
+          "wort": 7,
+          "zeigt": "Isim Fa'il Bab VIII, digunakan secara nama",
+          "warum": "لِلْمُتَّقِينَ (\"bagi orang-orang yang bertakwa\") ialah Isim Fa'il bagi Bab VIII اِتَّقَى, ditandakan dalam korpus sebagai derivation: activeParticiple, verbForm: 8, dan di sini digunakan secara nama untuk merujuk kepada sekumpulan orang."
+        },
+        {
+          "sure": 113,
+          "vers": 3,
+          "wort": 3,
+          "zeigt": "Isim Fa'il Bab I dalam bentuk nakirah",
+          "warum": "غَاسِقٍ (\"apa yang menjadi gelap\" - malam yang tiba) turut mengikut wazan فَاعِل daripada akar kata غ-س-ق dan di sini berkedudukan sebagai nakirah (tanwin kasratain) sebagai Mudaf Ilaih."
+        }
+      ],
+      "lernen": [
+        "Hafal dahulu wazan asas فَاعِل melalui 3-4 contoh yang dikenali (كَاتِب، عَالِم، حَاسِد) sebelum menangani bab terbitan.",
+        "Bagi setiap bab kata kerja (I-X) yang telah anda ketahui, bentuk sendiri wazan Isim Fa'il yang sepadan dan bandingkan dengan sesuatu senarai - wazan ini berulang secara konsisten dalam bab yang sama.",
+        "Berlatih perbezaan penggunaan sebagai sifat/nama pada pasangan seperti رَجُلٌ مُؤْمِنٌ (\"seorang lelaki yang beriman\", sifat) berbanding ٱلْمُؤْمِنُونَ (\"orang-orang yang beriman\", nama) - bentuk kalimah yang sama, dua fungsi.",
+        "Tutup lajur Isim Fa'il pada senarai kata kerja dan bentuk sendiri wazannya sebelum menyemak."
+      ],
+      "tabellen": [],
+      "siehe": ["ism-maful", "masdar", "ism"]
+    },
+
+    "ism-maful": {
+      "titel": "Isim Maf'ul (Kata Nama Objek Perbuatan)",
+      "ar": "اِسْم الْمَفْعُول",
+      "umschrift": "Ism al-Mafʿul",
+      "erklaerung": [
+        "Isim Maf'ul menerangkan \"orang/benda yang ke atasnya perbuatan itu dilaksanakan\" - sepadan dengan bentuk pasif dalam bahasa Melayu (\"yang ditulis\"). Pada wazan asas (Bab I), ia dibentuk mengikut wazan tetap مَفْعُول, contohnya daripada كَتَبَ (\"menulis\") menjadi مَكْتُوب (\"sesuatu yang ditulis\").",
+        "Pada bab terbitan (II-X), setiap bab mempunyai wazan tetapnya sendiri, juga biasanya dengan awalan مُـ, tetapi dengan fathah menggantikan kasrah di bawah huruf akar kedua terakhir - perbezaan utama dengan Isim Fa'il bagi bab yang sama terletak tepat pada satu vokal ini sahaja (contohnya Bab II مُطَهَّر, \"disucikan\", berbanding Isim Fa'il yang bersifat andaian مُطَهِّر, \"yang menyucikan\").",
+        "Seperti Isim Fa'il, Isim Maf'ul juga dari segi nahu ialah isim biasa yang boleh diva'rabkan (Mu'rab) dengan bentuk jantina, bilangan dan i'rabnya sendiri, dan boleh digunakan sama ada sebagai kata sifat mahupun secara nama - dalam al-Quran misalnya sebagai gelaran bagi mereka yang terkena kesan sesuatu perbuatan, seperti pada ٱلْمَغْضُوبِ (\"orang yang ditimpa kemurkaan\")."
+      ],
+      "erkennung": [
+        "Wazan asas (Bab I): wazan مَفْعُول (contohnya مَغْضُوب, مَعْلُوم, مَخْلُوق).",
+        "Bab terbitan (II-X): awalan مُـ seperti Isim Fa'il, tetapi dengan fathah menggantikan kasrah di bawah huruf akar kedua terakhir (contohnya مُطَهَّر Bab II).",
+        "Sentiasa bermaksud \"orang/benda yang ke atasnya perbuatan itu dilaksanakan\" - jika ragu-ragu, tanyakan: siapa atau apa yang menerima sesuatu di sini?"
+      ],
+      "belege": [
+        {
+          "sure": 1,
+          "vers": 7,
+          "wort": 6,
+          "zeigt": "Isim Maf'ul Bab I",
+          "warum": "ٱلْمَغْضُوبِ (\"orang yang dimurkai\") mengikut wazan مَفْعُول daripada akar kata غ-ض-ب dan ditandakan dalam korpus sebagai voice: passive, derivation: passiveParticiple."
+        },
+        {
+          "sure": 2,
+          "vers": 25,
+          "wort": 31,
+          "zeigt": "Isim Maf'ul Bab II, muannats",
+          "warum": "مُّطَهَّرَةٌ (\"[pasangan-pasangan] yang disucikan\") ialah Isim Maf'ul bagi Bab II طَهَّرَ (\"menyucikan\"), ditandakan dalam korpus sebagai derivation: passiveParticiple, verbForm: 2 - dikenali melalui awalan مُـ dengan fathah menggantikan kasrah di bawah huruf akar kedua terakhir, berbeza daripada Isim Fa'il bagi bab yang sama."
+        }
+      ],
+      "lernen": [
+        "Hafal dahulu wazan asas مَفْعُول melalui 3-4 contoh yang dikenali, kemudian bandingkan terus dengan wazan Isim Fa'il yang selari, iaitu فَاعِل, pada kata kerja yang sama.",
+        "Tanamkan perbezaan penentu bagi bab terbitan: Isim Fa'il = kasrah, Isim Maf'ul = fathah di bawah huruf akar kedua terakhir, selain itu awalan مُـ yang sama.",
+        "Bentuk bagi 5 kata kerja yang anda ketahui kedua-dua Isim Fa'il dan Isim Maf'ul, dan sebutkan kedua-dua bentuk itu berturut-turut dengan kuat untuk mendengar perbezaan vokalnya.",
+        "Bagi setiap Isim Maf'ul baharu, terjemahkan dahulu secara harfiah dengan \"orang/benda yang ... di[kata kerja]\" - ini memaksa kefahaman pasif yang betul sebelum beralih kepada terjemahan yang lebih bebas."
+      ],
+      "tabellen": [],
+      "siehe": ["ism-fail", "masdar", "ism"]
+    },
+
+    "masdar": {
+      "titel": "Masdar (Kata Nama Terbitan Kerja)",
+      "ar": "مَصْدَر",
+      "umschrift": "Masdar",
+      "erklaerung": [
+        "Masdar ialah idea asas sesuatu kata kerja yang semata-mata, terlepas daripada orang, jantina, zaman dan mod, dinyatakan sebagai kata nama - dalam bahasa Melayu paling hampir dengan kata nama terbitan (\"penulisan\") atau kata nama tersendiri yang berkongsi akar kata yang sama dengan kata kerjanya (\"tulisan\"). Ahli nahu Arab secara tradisi malah menganggap Masdar sebagai punca asal yang daripadanya semua bentuk kata kerja diterbitkan, bukan sebaliknya.",
+        "Pada wazan asas (Bab I), tiada satu pun wazan pembentukan tetap bagi Masdar - berbeza daripada bab terbitan (II-X), yang masing-masing mempunyai wazan Masdarnya sendiri yang amat teratur (contohnya Bab II hampir sentiasa تَفْعِيل, Bab X اِسْتِفْعَال). Masdar bagi kata kerja Bab I oleh itu perlu dipelajari satu demi satu bagi setiap kata kerja.",
+        "Dari segi nahu, Masdar ialah isim biasa yang boleh diva'rabkan: ia membawa akhiran i'rab, boleh bersifat makrifah atau nakirah dan boleh muncul dalam hampir setiap fungsi isim - sebagai subjek, sebagai objek huruf jar, atau dalam fungsi khas \"Maf'ul li-Ajlih\" (akusatif sebab), di mana Masdar pada i'rab nasab menyatakan sebab sesuatu perbuatan, contohnya \"kerana takut\" (حَذَرَ)."
+      ],
+      "erkennung": [
+        "Menerangkan perbuatan/idea sesuatu kata kerja secara semata-mata sebagai kata nama, tanpa orang, zaman atau mod - boleh diterjemahkan dengan \"perihal [kata kerja]\" atau kata nama Melayu yang sepadan daripada akar kata yang sama.",
+        "Pada Bab I: tiada wazan tetap, perlu dipelajari bagi setiap kata kerja. Pada Bab II-X: wazan tetap yang boleh diramal (contohnya تَفْعِيل bagi Bab II, اِسْتِفْعَال bagi Bab X).",
+        "Sering ditemui pada i'rab nasab sebagai penyataan sebab (\"kerana/disebabkan ...\") - dalam keadaan ini tanpa huruf jar, terus selepas ayat utama."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 15,
+          "wort": 6,
+          "zeigt": "Masdar sebagai objek huruf jar, pada i'rab jar",
+          "warum": "طُغْيَٰنِهِمْ (\"kesombongan/pemberontakan mereka\") ialah Masdar bagi طَغَى (\"melampaui batas\") dan di sini berkedudukan sebagai objek huruf jar فِى - ditandakan dalam korpus sebagai derivation: verbalNoun."
+        },
+        {
+          "sure": 2,
+          "vers": 19,
+          "wort": 15,
+          "zeigt": "Masdar sebagai Maf'ul li-Ajlih (akusatif sebab)",
+          "warum": "حَذَرَ (\"kerana takut\") ialah Masdar bagi حَذِرَ (\"takut\") dan berkedudukan pada i'rab nasab tanpa huruf jar, untuk menyatakan sebab sesuatu perbuatan (\"... kerana takut akan kematian\") - ditandakan dalam korpus sebagai derivation: verbalNoun, case: acc."
+        }
+      ],
+      "lernen": [
+        "Pelajari Masdar bagi setiap kata kerja Bab I yang baharu sejak awal bersama kata kerja itu sendiri sebagai satu pasangan tetap (contohnya طَغَى → طُغْيَان) - wazannya tidak dapat diteka kemudian.",
+        "Sebaliknya, hafal wazan Masdar bagi Bab II-X sebagai peraturan tetap (Bab II: تَفْعِيل, Bab III: مُفَاعَلَة/فِعَال, Bab IV: إِفْعَال, Bab V: تَفَعُّل, Bab VI: تَفَاعُل, Bab VII: اِنْفِعَال, Bab VIII: اِفْتِعَال, Bab X: اِسْتِفْعَال) - di sini lebih berbaloi menghafal peraturannya daripada menghafal setiap kes satu demi satu.",
+        "Berlatih fungsi akusatif sebab secara khusus: cari 3 bentuk Masdar pada i'rab nasab tanpa huruf jar dan terjemahkan secara percubaan dengan \"kerana/disebabkan ...\", untuk menghayati corak tersebut.",
+        "Tutup lajur Masdar pada senarai kata kerja dan bentuk sendiri wazannya - kemudian semak sama ada anda meneka dengan betul bagi Bab I atau memang sudah mengetahuinya."
+      ],
+      "tabellen": [],
+      "siehe": ["ism-fail", "ism-maful", "ism"]
+    }
+  }
+}

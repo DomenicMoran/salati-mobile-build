@@ -27,6 +27,7 @@
     "halal": "Yakındaki helal",
     "halalScanner": "Helal Tarayıcı",
     "study": "İlim",
+    "lexikon": "Sözlük",
     "sync": "Senkron.",
     "home": "Ana sayfa",
     "impressum": "Yasal Bildirim",
@@ -202,7 +203,61 @@
     "compareStageB": "Kâri B …",
     "compareLoadError": "Ses yüklenemedi.",
     "chooseReciterA": "Kâri A seç",
-    "chooseReciterB": "Kâri B seç"
+    "chooseReciterB": "Kâri B seç",
+    "wortAnalyse": {
+      "title": "Kelime Analizi",
+      "fundstelle": "Sure {surah}, Ayet {ayah}, Kelime {position}",
+      "rootLabel": "Kök",
+      "lemmaLabel": "Sözlük Biçimi",
+      "rootFrequency": "Kur'an'da {count} kez",
+      "rootNone": "Bu kelime için bir kök kaydedilmemiş.",
+      "fragmentsTitle": "Parçalar",
+      "segmentKind": {
+        "prefix": "Ön Ek (سابقة)",
+        "stem": "Gövde (جذع)",
+        "suffix": "Son Ek (لاحقة)"
+      },
+      "wortartTitle": "Kelime Türü",
+      "satzrolleTitle": "Cümledeki Görevi (İ'rab)",
+      "satzrolleNoData": "Bu kelime için cümle görevi bilgisi yok.",
+      "satzrolleHeadNone": "Bağlı olduğu kelime aynı ayette değil veya telaffuz edilmiyor (düşürülmüş).",
+      "satzrolleHeadLabel": "Şuna bağlı: {wort}",
+      "morphologyNoData": "Bu sure için dil bilgisi verileri henüz mevcut değil.",
+      "lexikonButton": "Sözlükte Aç",
+      "verbTypLabel": "Fiil türü",
+      "wortartAr": "أقسام الكلمة",
+      "fragmentsAr": "أجزاء الكلمة"
+    },
+    "sectionLesehilfen": "Okuma yardımcıları",
+    "sectionAussprache": "Telaffuz",
+    "sectionBedeutung": "Anlam",
+    "sectionGrammatik": "Dil bilgisi",
+    "captions": {
+      "beginnerMode": "Çeviriyazı, ayrı harfler ve kelime kelime gösterimini birlikte açar — Arapça okumayı öğrenmek için iyi bir başlangıç.",
+      "transliteration": "Arapça metnin altına telaffuzu Latin harfleriyle yazar.",
+      "isolatedLetters": "Her harfi bitişik yazım yerine tek başına duran temel şekliyle gösterir — harfleri tek tek tanımayı kolaylaştırır.",
+      "wordByWord": "Ayeti tek tek kelimelere ayırır ve her birinin altına anlamını yazar.",
+      "wordByWordTeilabdeckung": "Ayetlerin yaklaşık %{n} kadarında kelime anlamları senin dilinde var, kalanlar İngilizce kalır.",
+      "wordByWordLadefehler": "Kelime anlamları senin dilinde şu anda yüklenemedi – yüklenene kadar İngilizce kalır.",
+      "wordByWordWortlisteLadefehler": "Bu surenin kelime listesi şu anda yüklenemedi – onsuz kelime kelime görünümü tamamen boş kalır.",
+      "tajweed": "Tecvid kurallarını metinde renklendirir, böylece okurken doğru uygularsın.",
+      "translation": "Her ayetin altında gösterilen meal — farklı bir çeviri seçmek için dokun.",
+      "secondTranslation": "Karşılaştırmak için ek bir ikinci meal gösterir.",
+      "tafsir": "Ayet için bir alimin açıklamasını (tefsir) gösterir — sade mealden daha fazla arka plan bilgisi verir.",
+      "grammarColorModes": "Ayette bir dil bilgisi özelliğini renkle vurgular — tekrar dokunmak kapatır.",
+      "satzstruktur": "Hangi kelimenin hangi kelimeyle ilişkili olduğunu ve hangi cümle görevini (İ'rab) üstlendiğini gösterir.",
+      "wortAnalyseHint": "Tam analizi için herhangi bir kelimeye dokun: kök, sözlük hâli, parçalar ve cümledeki görevi."
+    },
+    "tajweedGrammarConflictHint": "Etkin bir renk modu, renklendirilen kelimelerde tecvid rengini geçersiz kılar.",
+    "grammatikIntro": {
+      "title": "Dil bilgisi araçları",
+      "what": "Renk modları ayette doğrudan bir dil bilgisi özelliğini işaretler — örneğin hangi kelimelerin isim, fiil veya edat olduğunu. Cümle yapısı ise ayrıca hangi kelimenin hangi kelimeyle ilişkili olduğunu ve hangi cümle görevini (İ'rab) üstlendiğini gösterir. İstediğin an herhangi bir kelimeye dokunarak tam analizini görebilirsin.",
+      "why": "Böylece bir ayetin sadece anlamı değil, dil bilgisi yapısı da görünür hâle gelir — Arapça öğrenirken ve Kur'an metnini tam olarak anlarken yardımcı olur, Arapça dil bilgisi bilgisi olmasa bile."
+    },
+    "satzstruktur": {
+      "chip": "Cümle yapısı",
+      "title": "Cümle yapısı"
+    }
   },
   "hadith": {
     "languagesNote": "Tercüme edilmiş hadis ansiklopedisi — 14 uygulama dilinin tümünde",
@@ -972,6 +1027,19 @@
         "deleteAll": "Tümünü sil",
         "deleteAllConfirmTitle": "Tüm indirmeler silinsin mi?",
         "deleteAllConfirmBody": "İndirilen tüm videolar cihazınızdan kaldırılacak."
+      },
+      "otherData": {
+        "title": "Diğer veriler",
+        "hint": "Uygulamanın sonradan indirdiği ek veriler. Buradaki her şey gerektiğinde yeniden indirilebilir.",
+        "empty": "Başka veri kaydedilmedi.",
+        "quranWords": "Kur'an kelime verileri (kelime çözümlemesi, kelime kelime)",
+        "handouts": "Belgeler (PDF)",
+        "kiCorpus": "Salati yapay zekâsının bilgi kaynakları",
+        "courses": "Kurs verileri",
+        "other": "Diğer uygulama dosyaları",
+        "delete": "Sil",
+        "deleteConfirmTitle": "Veriler silinsin mi?",
+        "deleteConfirmBody": "{name} cihazınızdan kaldırılır ve gerektiğinde yeniden indirilir."
       }
     },
     "appIcon": {
@@ -2636,12 +2704,179 @@
     "openInBrowser": "Tarayıcıda aç",
     "viewerError": "PDF yüklenemedi."
   },
+  "lexikon": {
+    "title": "Sözlük",
+    "subtitle": "Kökler, dil bilgisi, tecvid ve Kur'an dizini için bir başvuru kaynağı",
+    "searchPlaceholder": "Sözlükte ara",
+    "tabs": {
+      "roots": "Kökler ve Kelime Hazinesi (جذر)",
+      "grammar": "Dil Bilgisi ve Sarf (صرف)",
+      "tajwid": "Tecvid (تجويد)",
+      "concordance": "Dizin"
+    },
+    "empty": {
+      "tajwid": "Tecvid kuralları henüz eklenmedi."
+    },
+    "noResultsFor": "{query} için sonuç bulunamadı.",
+    "occurrencesTruncated": "{total} bulgudan ilk {shown}",
+    "search": {
+      "loading": "Arama hazırlanıyor…",
+      "sectionRoots": {
+        "name": "Kökler",
+        "ar": "جَذْر"
+      },
+      "sectionVocabulary": {
+        "name": "Kelime Hazinesi",
+        "ar": "لَفْظ"
+      },
+      "sectionTerms": {
+        "name": "Dil Bilgisi Terimleri",
+        "ar": "مُصْطَلَح"
+      },
+      "moreResults": "Daha fazla sonuç var. Aramanızı daraltın."
+    },
+    "roots": {
+      "loadError": "Kök listesi yüklenemedi.",
+      "loading": "Kökler yükleniyor…",
+      "sortByFrequency": {
+        "name": "Sıklık",
+        "ar": "تَكْرَار"
+      },
+      "sortByAlphabet": {
+        "name": "Alfabetik",
+        "ar": "أَبْجَدِيّ"
+      },
+      "occurrences": "{n} geçiş",
+      "lemmaCount": "{n} kelime biçimi",
+      "totalCount": "{n} kök"
+    },
+    "wurzel": {
+      "notFound": "Bu kök bulunamadı.",
+      "loadError": "Kök verileri yüklenemedi.",
+      "occurrencesInQuran": "Kur'an'da {n} geçiş",
+      "sectionForms": {
+        "name": "Türetilmiş Kelime Biçimleri",
+        "ar": "الصِّيَغ المُشْتَقَّة"
+      },
+      "sectionOccurrences": {
+        "name": "Geçtiği Yerler",
+        "ar": "مَوَاضِع الوُرُود"
+      },
+      "formsUnclassified": {
+        "name": "Diğer Biçimler",
+        "ar": "غَيْر مُصَنَّف"
+      },
+      "formsLoading": "Kelime biçimleri eşleştiriliyor…",
+      "formsLoadingProgress": "Kelime biçimleri yükleniyor… ({total} içinden {loaded})",
+      "formsLoadError": "Kelime biçimleri yüklenemedi."
+    },
+    "concordance": {
+      "searchPlaceholder": "Arapça bir kelime veya kök girin",
+      "prompt": "Kur'an'daki geçtiği yerleri görmek için Arapça bir kelime veya kök girin.",
+      "matchesHeading": "Eşleşmeler",
+      "occurrencesHeading": "Geçtiği Yerler",
+      "totalOccurrences": "{n} geçiş",
+      "rootLabel": {
+        "name": "Kök",
+        "ar": "جَذْر"
+      },
+      "lemmaLabel": {
+        "name": "Kelime Biçimi",
+        "ar": "لَفْظ"
+      }
+    },
+    "grammar": {
+      "loading": "Terimler yükleniyor…",
+      "loadError": "Dil bilgisi içerikleri yüklenemedi.",
+      "notFound": "Bu terim bulunamadı.",
+      "termCount": "{n} terim",
+      "sectionErkennung": "Tanıma Özellikleri",
+      "sectionBelege": "Kur'an Örnekleri",
+      "sectionLernen": "Öğrenme İpuçları",
+      "sectionTabellen": "Biçim Tabloları",
+      "sectionSiehe": "Ayrıca Bakınız",
+      "germanOnlyNote": "Bu açıklamalar şu anda yalnızca Almanca olarak mevcuttur.",
+      "bereichPartikelSyntax": {
+        "name": "Edatlar ve Cümle Yapısı",
+        "ar": "الحروف والنحو"
+      },
+      "tables": {
+        "toggleBegriffe": "Terimler",
+        "toggleTabellen": "Biçim Tabloları",
+        "searchPlaceholder": "Biçim tablolarında ara",
+        "noResults": "Tablo bulunamadı.",
+        "tableCount": "{n} tablo",
+        "categoryNomenPronomen": {
+          "name": "İsimler ve Zamirler",
+          "ar": "الاسم والضمائر"
+        },
+        "categoryVerbMatrizen": {
+          "name": "Fiil: Tam Çekim Tabloları",
+          "ar": "تصريف الفعل الكامل"
+        },
+        "categoryVerbstammFamilien": {
+          "name": "Fiil Kökü Aileleri (Bab)",
+          "ar": "أبواب الفعل"
+        },
+        "categoryVerbstammAbleitungen": {
+          "name": "Fiil Kökü Türevleri (II–X. Formlar)",
+          "ar": "أوزان الفعل المزيد"
+        },
+        "categoryPartikelnZahlenWortschatz": {
+          "name": "Edatlar, Sayılar ve Kelime Hazinesi",
+          "ar": "الحروف والأعداد والمفردات"
+        },
+        "verbFamilieSahih": {
+          "name": "Sahih (sağlam)",
+          "ar": "صحيح"
+        },
+        "verbFamilieMahmuz": {
+          "name": "Mehmuz (hemzeli)",
+          "ar": "مهموز"
+        },
+        "verbFamilieMithal": {
+          "name": "Misal (asimile)",
+          "ar": "مثال"
+        },
+        "verbFamilieAjwaf": {
+          "name": "Ecvef (içi boş)",
+          "ar": "أجوف"
+        },
+        "verbFamilieNaaqis": {
+          "name": "Nakıs (eksik)",
+          "ar": "ناقص"
+        },
+        "verbFamilieLafif": {
+          "name": "Lefif (çift illetli)",
+          "ar": "لفيف"
+        },
+        "verbFamilieMudaaf": {
+          "name": "Müzaaf (ikizleşmiş)",
+          "ar": "مضاعف"
+        },
+        "verbFamilieMurakkab": {
+          "name": "Mürekkep (bileşik)",
+          "ar": "مركب"
+        }
+      },
+      "wortlisten": {
+        "toggleWortlisten": "Kelime Listeleri",
+        "germanOnlyMeaningNote": "Bu kelime listelerindeki Almanca anlamlar şu anda yalnızca Almanca olarak mevcuttur.",
+        "listCount": "{n} liste"
+      }
+    },
+    "verbtyp": {
+      "title": "Fiil Ailesi",
+      "notFound": "Bu fiil türü için henüz biçim tablosu yok."
+    }
+  },
   "lizenzen": {
     "title": "Kaynaklar & lisanslar",
     "subtitle": "Salati'de kullanılan içeriklerin hak sahipleri ve lisansları",
     "intro": "Salati üçüncü taraflara ait metin, ses, veri, yazı tipi ve modeller kullanır. Tüm hak sahipleri ve bunları hangi lisansla kullandığımız burada listelenmiştir. Bir lisans atıf zorunluluğu getiriyorsa - örneğin Apache-2.0, MIT veya ODbL - bu sayfa o zorunluluğu yerine getirir.",
     "categories": {
       "quran": "Kuran metni & mealler",
+      "adhan": "Ezan kayıtları",
       "recitation": "Kıraatler",
       "hadith": "Hadis külliyatları",
       "font": "Yazı tipleri",
@@ -2659,7 +2894,8 @@
       "publicDomain": "Unlicense (kamu malı)",
       "fontEula": "Üretici lisansı (yazı tipine gömülü)",
       "hadeethencTerms": "Kaynak belirtilerek değiştirilmeden aktarım (sağlayıcı şartları)",
-      "rassoulRelease": "Yazar tarafından serbest bırakıldı - kaynak belirtilerek değiştirilmeden çoğaltma"
+      "rassoulRelease": "Yazar tarafından serbest bırakıldı - kaynak belirtilerek değiştirilmeden çoğaltma",
+      "quranicCorpusTerms": "Kaynak belirtme ve bağlantı zorunlu (eserin kullanım koşulları)"
     },
     "distributedSection": "Kendimiz dağıttıklarımız",
     "distributedText": "İçeriklerin çoğunu cihazın doğrudan ilgili sağlayıcıdan alır - onları biz dağıtmıyoruz, orada kaynağı belirtmek yeterli. Kendimiz şunları dağıtıyoruz: Qwen2.5-1.5B-Instruct dil modeli ve Tarteel’in konuşma tanıma modeli (ikisi de kendi depomuzdan), KFGQPC HAFS yazı tipi ve uygulama paketindeki tüm yazılım kütüphaneleri. Bu eserler için lisans metninin tamamı ektedir - ilgili kaydın altından açabilirsin. Abu-r-Ridā Muhammad Ibn Ahmad Ibn Rassoul’un Almanca tefsirini de biz sunuyoruz - yazar eseri telif hakkından muaf tuttu, ancak kaynağın belirtilmesini şart koşuyor.",
@@ -2785,6 +3021,983 @@
       "charakter-sadaqa": "{n} kez sadaka vermek",
       "charakter-eltern": "{n} kez anne babayı aramak veya ziyaret etmek",
       "charakter-helfen": "{n} kez birine yardım etmek"
+    }
+  },
+  "grammatik": {
+    "fragmentrollen": {
+      "artikel": {
+        "name": "Belirlilik Takısı",
+        "ar": "أل التعريف",
+        "info": "Başa gelen ال bir ismi belirli hâle getirir, Türkçedeki \"o/bu\" göndermesine benzer bir işlev görür."
+      },
+      "fragepartikel": {
+        "name": "Soru Edatı",
+        "ar": "حرف استفهام",
+        "info": "Kendi başına bir anlam taşımadan bir soruyu başlatır."
+      },
+      "konjunktion": {
+        "name": "Bağlaç",
+        "ar": "حرف عطف",
+        "info": "İki eşdeğer sözcüğü veya cümle parçasını birbirine bağlar, örneğin \"ve\" ya da \"veya\"."
+      },
+      "praeposition": {
+        "name": "Edat (Harf-i Cer)",
+        "ar": "حرف جر",
+        "info": "Bir ismin önünde bulunur ve onu cümlenin geri kalanıyla ilişkilendirir; kendinden sonraki isim böylece tamlama hâline girer."
+      },
+      "pronomenSuffix": {
+        "name": "Bitişik Zamir",
+        "ar": "ضمير متصل",
+        "info": "Doğrudan bir isme, fiile ya da edata eklenen zamirdir, örneğin \"onun kitabı\" ya da \"ona\" anlamında."
+      },
+      "stamm": {
+        "name": "Kelime Gövdesi",
+        "ar": "الجذع",
+        "info": "Bir kelimenin, önek ve eklerin bağlandığı taşıyıcı öz kısmıdır."
+      },
+      "verneinung": {
+        "name": "Olumsuzluk Edatı",
+        "ar": "حرف نفي",
+        "info": "Bir cümlenin veya fiilin anlamını olumsuzlar, örneğin \"değil\" ya da \"yok\" anlamında."
+      }
+    },
+    "herkunft": {
+      "beleg": {
+        "label": "Derlemde Belgelenmiş",
+        "info": "Bu özellik, temel alınan derlemde açıkça bu şekilde yer alır."
+      },
+      "hergeleitet": {
+        "label": "Kurala Göre Türetilmiş",
+        "info": "Bu özellik derlemde açıkça belirtilmemiştir ve sabit dilbilgisi kurallarına göre eklenmiştir — örneğin işaretlenmemiş standart durumda belirlilik, sayı veya fiil kalıbı ayrıca gösterilmediği için."
+      }
+    },
+    "ismEigenschaften": {
+      "bestimmtheit": {
+        "name": "Belirlilik",
+        "ar": "التعريف والتنكير",
+        "info": "Bir ismin belirli (\"kitap\") mi belirsiz (\"bir kitap\") mi olduğunu gösterir — Arapçada genelde ال takısıyla anlaşılır.",
+        "werte": {
+          "definite": {
+            "name": "belirli",
+            "ar": "معرفة"
+          },
+          "indefinite": {
+            "name": "belirsiz",
+            "ar": "نكرة"
+          }
+        }
+      },
+      "genus": {
+        "name": "Cinsiyet",
+        "ar": "التذكير والتأنيث",
+        "info": "Bir ismin eril mi dişil mi olduğunu gösterir — Arapçada genelde ة ekiyle belli olur.",
+        "werte": {
+          "f": {
+            "name": "dişil",
+            "ar": "مؤنث"
+          },
+          "m": {
+            "name": "eril",
+            "ar": "مذكر"
+          }
+        }
+      },
+      "kasus": {
+        "name": "Hâl (İ'râb)",
+        "ar": "الإعراب",
+        "info": "Bir ismin cümledeki görevini son ses harekesiyle gösterir — özne, nesne veya bir edat/tamlamaya bağlılık.",
+        "werte": {
+          "acc": {
+            "name": "belirtme hâli",
+            "ar": "نصب"
+          },
+          "gen": {
+            "name": "tamlama hâli",
+            "ar": "جر"
+          },
+          "nom": {
+            "name": "yalın hâl",
+            "ar": "رفع"
+          }
+        }
+      },
+      "numerus": {
+        "name": "Sayı",
+        "ar": "العدد",
+        "info": "Bir veya iki ya da daha çok kişi/nesneden söz edildiğini belirtir — Arapçada tekil ve çoğulun yanında ikil (tesniye) de vardır.",
+        "werte": {
+          "du": {
+            "name": "ikil",
+            "ar": "مثنى"
+          },
+          "pl": {
+            "name": "çoğul",
+            "ar": "جمع"
+          },
+          "sg": {
+            "name": "tekil",
+            "ar": "مفرد"
+          }
+        }
+      }
+    },
+    "nomenFlexibilitaet": {
+      "mabni": {
+        "name": "Mebni (Değişmez)",
+        "ar": "مبني",
+        "info": "Hâlden bağımsız olarak değişmeyen sabit bir sona sahip kelime — birçok zamir ve edatta olduğu gibi."
+      },
+      "mamnuMinSarf": {
+        "name": "Munsarif Olmayan (Diptot)",
+        "ar": "ممنوع من الصرف",
+        "info": "Belirsiz hâldeyken ne tenvin ne de tamlama hâli eki -i alabilen isim; genelde biçimi veya anlamı yüzünden, birçok özel isim ve renk sıfatında olduğu gibi. Ancak böyle bir isim bir tamlamanın (izafet) birinci unsuru olduğunda bu kısıtlama kalkar ve isim genitif hâlde yeniden düzenli bir kesre alır."
+      },
+      "murab": {
+        "name": "Mu'rab (Değişken)",
+        "ar": "معرب",
+        "info": "Son ses harekesi hâle göre değişen bir isim."
+      }
+    },
+    "posTags": {
+      "ACC": {
+        "name": "Belirtme Edatı",
+        "ar": "حرف نصب",
+        "info": "\"inna\" gibi, kendinden sonraki isme belirtme hâlini veren ve ifadeyi vurgulayan bir edat."
+      },
+      "ADJ": {
+        "name": "Sıfat",
+        "ar": "صفة",
+        "info": "Bir ismi daha yakından tanımlar ve cinsiyet, sayı, hâl ve belirlilik bakımından ona uyar."
+      },
+      "AMD": {
+        "name": "Düzeltme Edatı",
+        "ar": "حرف استدراك",
+        "info": "Önceki bir ifadeyi hafifçe sınırlar veya düzeltir, \"ancak\" anlamında."
+      },
+      "ANS": {
+        "name": "Cevap Edatı",
+        "ar": "حرف جواب",
+        "info": "Bir sorunun ya da şart cümlesinin cevabını başlatır."
+      },
+      "AVR": {
+        "name": "Reddetme Edatı",
+        "ar": "حرف ردع",
+        "info": "Önceki bir ifadeyi ya da tutumu kesin biçimde reddeder, \"asla\" anlamında."
+      },
+      "CAUS": {
+        "name": "Sebep Edatı",
+        "ar": "فاء السببية",
+        "info": "Bir istek veya dilekten sonra gelen ve istenen sonucu ifade eden فَ, örneğin \"dua et, ki sana cevap versin\" gibi."
+      },
+      "CERT": {
+        "name": "Kesinlik Edatı",
+        "ar": "حرف تحقيق",
+        "info": "Bir ifadenin gerçekten veya kesin olarak gerçekleştiğini vurgular, genelde bir fiilden önce gelir."
+      },
+      "CIRC": {
+        "name": "Hâl Edatı",
+        "ar": "واو الحال",
+        "info": "Ana eylemle birlikte gerçekleşen durumu anlatan bir cümleciği başlatır."
+      },
+      "COM": {
+        "name": "Beraberlik Vâvı",
+        "ar": "واو المعية",
+        "info": "Beraberlik anlamı taşıyan bir vâv, \"ile birlikte\" anlamında."
+      },
+      "COND": {
+        "name": "Şart Edatı",
+        "ar": "أداة شرط",
+        "info": "Bir şart cümlesini başlatır, örneğin \"eğer\" anlamında."
+      },
+      "CONJ": {
+        "name": "Bağlaç",
+        "ar": "حرف عطف",
+        "info": "İki eşdeğer sözcüğü veya cümle parçasını genelde \"ve\" ya da \"veya\" ile birbirine bağlar."
+      },
+      "DEM": {
+        "name": "İşaret Zamiri",
+        "ar": "اسم إشارة",
+        "info": "Belirli bir şeyi gösteren \"bu\" ya da \"şu\" gibi bir işaret sözcüğü."
+      },
+      "DET": {
+        "name": "Belirlilik Takısı",
+        "ar": "أداة تعريف",
+        "info": "Bir ismi belirli hâle getiren, başa eklenen ال takısıdır."
+      },
+      "EMPH": {
+        "name": "Vurgu Lâmı",
+        "ar": "لام التوكيد",
+        "info": "Bir ifadeyi vurgulayan, kelimenin asıl anlamını değiştirmeyen başa eklenmiş bir lâm."
+      },
+      "EQ": {
+        "name": "Eşitlik Edatı",
+        "ar": "حرف تسوية",
+        "info": "İki belirtilen olasılığın eşdeğer ya da fark etmez olduğunu ifade eder."
+      },
+      "EXH": {
+        "name": "Teşvik Edatı",
+        "ar": "حرف تحضيض",
+        "info": "Acil bir çağrı veya özendirme ifade eder, \"keşke\" anlamında."
+      },
+      "EXL": {
+        "name": "Ayrıntı Edatı",
+        "ar": "حرف تفصيل",
+        "info": "Daha önce söylenene dair daha ayrıntılı bir açıklama ya da sıralama başlatır."
+      },
+      "EXP": {
+        "name": "İstisna Edatı",
+        "ar": "أداة استثناء",
+        "info": "Daha önce anılan bir bütünden bir şeyi hariç tutar, \"hariç\" anlamında."
+      },
+      "FUT": {
+        "name": "Gelecek Zaman Edatı",
+        "ar": "حرف استقبال",
+        "info": "Şimdiki zaman fiilinin eylemini geleceğe taşır, \"sevfe\" ya da \"se-\" gibi."
+      },
+      "IMPN": {
+        "name": "Emir İsim-Fiili",
+        "ar": "اسم فعل أمر",
+        "info": "Çekimli bir emir yerine bir emir gibi kullanılan mastar, örneğin \"sus!\" anlamında."
+      },
+      "IMPV": {
+        "name": "Emir Lâmı",
+        "ar": "لام الأمر",
+        "info": "Şimdiki zaman kipini dolaylı bir emre çeviren, başa eklenen bir lâm."
+      },
+      "INC": {
+        "name": "Başlangıç Edatı",
+        "ar": "حرف ابتداء",
+        "info": "Genelde cümlenin başında bir isim cümlesinin başladığını belirtir."
+      },
+      "INL": {
+        "name": "Kur'an Harfleri (Mukattaa)",
+        "ar": "الحروف المقطعة",
+        "info": "Bazı surelerin başında tek tek okunan, kesin anlamı bilinmeyen harfler."
+      },
+      "INT": {
+        "name": "Açıklama Edatı",
+        "ar": "حرف تفسير",
+        "info": "Daha önce söylenenin açıklayıcı bir yeniden ifadesini başlatır, \"yani\" anlamında."
+      },
+      "INTG": {
+        "name": "Soru Edatı",
+        "ar": "أداة استفهام",
+        "info": "Bir soruyu başlatır, örneğin \"kim\", \"ne\" ya da \"mi\" anlamında."
+      },
+      "LOC": {
+        "name": "Yer Zarfı",
+        "ar": "ظرف مكان",
+        "info": "Bir yer bildiren isim, örneğin \"önünde\" ya da \"üstünde\" anlamında."
+      },
+      "N": {
+        "name": "İsim",
+        "ar": "اسم",
+        "info": "Özel isim olmayan; bir nesneyi, özelliği veya soyut kavramı ifade eden sıradan bir isim."
+      },
+      "NEG": {
+        "name": "Olumsuzluk Edatı",
+        "ar": "حرف نفي",
+        "info": "Bir cümlenin veya fiilin anlamını olumsuzlar, örneğin \"değil\" ya da \"yok\" anlamında."
+      },
+      "P": {
+        "name": "Edat (Harf-i Cer)",
+        "ar": "حرف جر",
+        "info": "Kendinden sonraki isme tamlama hâlini verir ve onu cümlenin geri kalanıyla ilişkilendirir."
+      },
+      "PN": {
+        "name": "Özel İsim",
+        "ar": "اسم علم",
+        "info": "Bir kişi, yer veya topluluk için kullanılan, dilbilgisel olarak genelde belirli bir isim gibi davranan özel isim."
+      },
+      "PREV": {
+        "name": "Engelleyici Edat",
+        "ar": "كافة",
+        "info": "\"innamâ\" gibi durumlarda önceki bir edatın dilbilgisel etkisini ortadan kaldırır."
+      },
+      "PRO": {
+        "name": "Nehiy (Yasak) Edatı",
+        "ar": "حرف نهي",
+        "info": "Bir emri olumsuzlayarak bir şeyden kaçınmaya çağırır."
+      },
+      "PRON": {
+        "name": "Zamir",
+        "ar": "ضمير",
+        "info": "Bir kişi ya da nesnenin yerine geçer, örneğin \"o\" ya da \"biz\" — bağımsız ya da ek olarak eklenmiş biçimde."
+      },
+      "PRP": {
+        "name": "Amaç Lâmı",
+        "ar": "لام التعليل",
+        "info": "Bir eylemin amacını veya sebebini belirtir, \"-mek için\" anlamında."
+      },
+      "REL": {
+        "name": "İlgi Zamiri",
+        "ar": "اسم موصول",
+        "info": "Bir ilgi cümlesini başlatır, örneğin \"-en kişi\" ya da \"olan şey\" anlamında."
+      },
+      "REM": {
+        "name": "Yeni Başlangıç Edatı",
+        "ar": "حرف استئناف",
+        "info": "Önceki ifadeden bağımsız yeni bir cümle bölümünün başladığını belirtir."
+      },
+      "RES": {
+        "name": "Sınırlama Edatı",
+        "ar": "أداة حصر",
+        "info": "Bir ifadeyi tam olarak tek bir şeyle sınırlar, \"sadece\" anlamında."
+      },
+      "RET": {
+        "name": "Dönüş Edatı",
+        "ar": "حرف إضراب",
+        "info": "Önceki ifadeye göre bir geçişi veya düzeltmeyi başlatır, \"aksine\" anlamında."
+      },
+      "RSLT": {
+        "name": "Sonuç Edatı",
+        "ar": "فاء الجواب",
+        "info": "Bir şart cümlesinin cevap kısmını ya da genelleyici bir öznenin ardından gelen yüklemi bağlayan فَ — örneğin \"eğer\" veya \"her kim\" sonrası; sebep edatından farklı olarak amaç değil, şart ile sonucu birbirine bağlar."
+      },
+      "SUB": {
+        "name": "Bağlaç (Masdariye)",
+        "ar": "حرف مصدري",
+        "info": "Kendinden sonraki cümleyi, özne veya nesne olarak kullanılabilen bir mastar eşdeğerine dönüştürür."
+      },
+      "SUP": {
+        "name": "Fazlalık Edatı",
+        "ar": "حرف زائد",
+        "info": "Üslup gereği eklenen, kendi başına bir anlamı olmayan bir sözcük."
+      },
+      "SUR": {
+        "name": "Şaşkınlık Edatı",
+        "ar": "حرف مفاجأة",
+        "info": "Bir şeyin aniden ve beklenmedik biçimde gerçekleştiğini ifade eder."
+      },
+      "T": {
+        "name": "Zaman Zarfı",
+        "ar": "ظرف زمان",
+        "info": "Bir zaman bildiren isim, örneğin \"bugün\" ya da \"o zaman\" anlamında."
+      },
+      "V": {
+        "name": "Fiil",
+        "ar": "فعل",
+        "info": "Geçmiş, şimdiki zaman ya da emir kipi ayrımı yapılmadan önce fiili gösteren genel etiket."
+      },
+      "VOC": {
+        "name": "Nida Edatı",
+        "ar": "أداة نداء",
+        "info": "Doğrudan bir seslenmeyi başlatır, çağrılan bir isimden önceki \"ey\" gibi."
+      }
+    },
+    "relationen": {
+      "Adj": {
+        "name": "Niteleyici Kelime",
+        "ar": "صفة",
+        "info": "Önceki bir ismi daha yakından tanımlayan sıfat."
+      },
+      "App": {
+        "name": "Bedel (Açıklayıcı Ek)",
+        "ar": "بدل",
+        "info": "Önceki bir ismi daha yakından belirleyen ya da netleştiren ikinci bir isim — ikisi de aynı hâldedir."
+      },
+      "Cpnd": {
+        "name": "Bileşik İfade",
+        "ar": "مركب",
+        "info": "Birlikte tek bir sabit birim gibi işlev gören iki kelime."
+      },
+      "NonRel": {
+        "name": "İlişkisiz",
+        "ar": "بلا علاقة",
+        "info": "Bu kelime için başka bir kelimeyle kaydedilmiş bir sözdizimsel ilişki yoktur."
+      },
+      "Obj": {
+        "name": "Nesne",
+        "ar": "مفعول به",
+        "info": "Bir fiil cümlesinin doğrudan nesnesi — eylemin yöneldiği şey."
+      },
+      "Pass": {
+        "name": "Edilgen Özne (Naib-i Fail)",
+        "ar": "نائب فاعل",
+        "info": "Edilgen bir cümlede eylemin dilbilgisel taşıyıcısı — düşürülen eyleyenin yerine geçer."
+      },
+      "Poss": {
+        "name": "Tamlanan Öge",
+        "ar": "مضاف إليه",
+        "info": "Bir tamlamanın ikinci ögesi — ilk ismin sahibi ya da onu daha yakından belirleyen kısım."
+      },
+      "Pred": {
+        "name": "Yüklem",
+        "ar": "خبر",
+        "info": "Bir isim cümlesinin bildiren kısmı — özne (mübteda) hakkında ne söylendiği."
+      },
+      "Pro": {
+        "name": "Yasak",
+        "ar": "نهي",
+        "info": "Yasak edatına ait olan ve bir eylemi men eden cümle parçası."
+      },
+      "Spec": {
+        "name": "Ayırt Edici Öge (Temyiz)",
+        "ar": "تمييز",
+        "info": "Daha önce belirsiz kalan bir miktar veya ölçü bildirimini netleştiren belirsiz bir isim."
+      },
+      "Subj": {
+        "name": "Özne",
+        "ar": "فاعل",
+        "info": "Bir fiil cümlesinin eyleyeni — eylemi kimin ya da neyin gerçekleştirdiği."
+      },
+      "amd": {
+        "name": "Düzeltme",
+        "ar": "استدراك",
+        "info": "Önceki bir ifadeyi hafifçe sınırlar veya düzeltir."
+      },
+      "ans": {
+        "name": "Cevap",
+        "ar": "جواب",
+        "info": "Bir sorunun ya da şart cümlesinin cevabı."
+      },
+      "avr": {
+        "name": "Reddetme",
+        "ar": "ردع",
+        "info": "Önceki bir ifadeyi ya da tutumu kesin biçimde reddeder."
+      },
+      "cert": {
+        "name": "Kesinlik",
+        "ar": "تحقيق",
+        "info": "Sonraki ifadenin gerçekten gerçekleştiğini ya da gerçekleşeceğini vurgular."
+      },
+      "circ": {
+        "name": "Hâl",
+        "ar": "حال",
+        "info": "Eylem sırasında öznenin ya da nesnenin durumunu veya eşlik eden koşulları anlatır."
+      },
+      "cog": {
+        "name": "Pekiştirici Mastar (Mef'ûlü Mutlak)",
+        "ar": "مفعول مطلق",
+        "info": "Fiille aynı kökten gelen ve onun anlamını pekiştiren ya da daha yakından tanımlayan bir mastar."
+      },
+      "cond": {
+        "name": "Şart",
+        "ar": "شرط",
+        "info": "Bir şart cümlesinin koşulunu oluşturan cümle parçası."
+      },
+      "conj": {
+        "name": "Bağlanan Kelime",
+        "ar": "معطوف",
+        "info": "Bir bağlaç aracılığıyla önceki bir kelimeye eşdeğer biçimde bağlanan kelime."
+      },
+      "emph": {
+        "name": "Pekiştirme",
+        "ar": "توكيد",
+        "info": "Önceki bir ifadeyi harfiyen ya da anlamca tekrarlayarak pekiştiren bir kelime."
+      },
+      "eq": {
+        "name": "Eşitleme",
+        "ar": "تسوية",
+        "info": "İki belirtilen olasılığın eşdeğer olduğunu ifade eder."
+      },
+      "exh": {
+        "name": "Özendirme",
+        "ar": "تحضيض",
+        "info": "Acil bir çağrı veya dilek ifade eder."
+      },
+      "exl": {
+        "name": "Ayrıntılandırma",
+        "ar": "تفصيل",
+        "info": "Daha önce söylenene dair daha ayrıntılı bir açıklama başlatır."
+      },
+      "exp": {
+        "name": "İstisna",
+        "ar": "مستثنى",
+        "info": "Daha önce anılan bir bütünden hariç tutulan öge."
+      },
+      "fut": {
+        "name": "Gelecek",
+        "ar": "استقبال",
+        "info": "Bir fiilin eylemini geleceğe taşır."
+      },
+      "gen": {
+        "name": "Tamlama Bağı",
+        "ar": "مجرور",
+        "info": "Bir edattan sonra ya da bir tamlamanın ikinci ögesi olarak tamlama hâlinde bulunan isim."
+      },
+      "impv": {
+        "name": "Emir",
+        "ar": "أمر",
+        "info": "Emir kipine ait olan cümle parçası."
+      },
+      "imrs": {
+        "name": "Emrin Sonucu",
+        "ar": "جواب أمر",
+        "info": "Önceki bir emrin sonucu olarak ortaya çıkan cümle parçası."
+      },
+      "inc": {
+        "name": "Cümle Başlangıcı",
+        "ar": "ابتداء",
+        "info": "Yeni bir isim cümlesinin başladığını belirtir."
+      },
+      "int": {
+        "name": "Açıklama",
+        "ar": "تفسير",
+        "info": "Daha önce söylenenin açıklayıcı bir yeniden ifadesini başlatır."
+      },
+      "intg": {
+        "name": "Soru",
+        "ar": "استفهام",
+        "info": "Başlangıçtaki soru edatına ait olan cümle parçası."
+      },
+      "link": {
+        "name": "Bağlantı Kelimesi",
+        "ar": "متعلق",
+        "info": "Bir edat öbeğinin anlamca bağlandığı kelime — genelde bir fiil, bazen düşürülmüş bir fiil."
+      },
+      "muster": {
+        "predOf": {
+          "name": "{wort} Yüklemi",
+          "ar": "خبر",
+          "info": "Kâne ve kardeşleri ile inne ve kardeşleri, bir isim cümlesinin öznesinin ve yükleminin hâlini değiştirir — bu, {wort} kelimesine ait yüklemdir."
+        },
+        "subjOf": {
+          "name": "{wort} İsmi",
+          "ar": "اسم",
+          "info": "Kâne ve kardeşleri ile inne ve kardeşleri, bir isim cümlesinin öznesinin ve yükleminin hâlini değiştirir — bu, {wort} kelimesine ait isimdir."
+        }
+      },
+      "neg": {
+        "name": "Olumsuzluk",
+        "ar": "نفي",
+        "info": "Olumsuzlanan cümle parçasına ait olan olumsuzluk edatı."
+      },
+      "prev": {
+        "name": "Etkisizleştirme",
+        "ar": "كاف",
+        "info": "Önceki bir edatın dilbilgisel etkisini ortadan kaldırır."
+      },
+      "prp": {
+        "name": "Amaç",
+        "ar": "المفعول لأجله",
+        "info": "Bir eylemin sebebini ya da amacını belirtir."
+      },
+      "res": {
+        "name": "Sınırlama",
+        "ar": "حصر",
+        "info": "İfadeyi tam olarak belirtilen ögeyle sınırlar."
+      },
+      "ret": {
+        "name": "Geçiş",
+        "ar": "اضراب",
+        "info": "Önceki ifadeye göre bir düzeltme veya konu değişikliği başlatır."
+      },
+      "root": {
+        "name": "Cümle Başı",
+        "ar": "الجذر",
+        "info": "Cümlenin diğer tüm kelimelerin doğrudan ya da dolaylı bağlandığı merkezi kelimesi, genelde ana fiil veya yüklem."
+      },
+      "rslt": {
+        "name": "Şartın Cevabı",
+        "ar": "جواب الشرط",
+        "info": "Bir şart cümlesinin sonucunu ifade eden cümle parçası — koşul gerçekleşince ne olacağı."
+      },
+      "state": {
+        "name": "Açıklayıcı İsim",
+        "ar": "بيان",
+        "info": "Önceki bir ifadeyi anlamca netleştiren isim."
+      },
+      "sub": {
+        "name": "İlgi Cümlesi",
+        "ar": "صلة",
+        "info": "Bir ilgi zamirinin anlamını tamamlayan cümle parçası."
+      },
+      "sup": {
+        "name": "Dolgu Kelime",
+        "ar": "زائد",
+        "info": "Kendi başına bir anlamı olmayan, cümleyi üslupça tamamlayan kelime."
+      },
+      "sur": {
+        "name": "Şaşkınlık",
+        "ar": "فجاءة",
+        "info": "Bir şeyin aniden ve beklenmedik biçimde gerçekleştiğini ifade eder."
+      },
+      "voc": {
+        "name": "Seslenme",
+        "ar": "منادى",
+        "info": "Bir nida edatından sonra doğrudan seslenilen kişi ya da şey."
+      }
+    },
+    "schwacheVerben": {
+      "ajwaf": {
+        "name": "Ecvef (Boş Fiil)",
+        "ar": "أجوف",
+        "info": "Orta kök harfi illetli bir harf olan ve sıkça uzun bir sesliye dönüşen fiil."
+      },
+      "lafif": {
+        "name": "Lefîf",
+        "ar": "لفيف",
+        "info": "Çekimde birbirini etkileyen iki illetli kök harfine sahip fiil."
+      },
+      "mahmuz": {
+        "name": "Mehmûz (Hemzeli Fiil)",
+        "ar": "مهموز",
+        "info": "Kök harflerinden biri hemze olan, bu yüzden özel yazımlara yol açabilen fiil."
+      },
+      "mithal": {
+        "name": "Misâl",
+        "ar": "مثال",
+        "info": "İlk kök harfi illetli bir harf, genelde vâv olan fiil."
+      },
+      "mudaaf": {
+        "name": "Muzaaf (İkizleşmiş Fiil)",
+        "ar": "مضاعف",
+        "info": "İkinci ve üçüncü kök harfi aynı olan ve belirli kalıplarda şedde ile tek harfe dönüşen fiil."
+      },
+      "rubai": {
+        "name": "Rubai (Dört Kök Harfli Fiil)",
+        "ar": "رباعي",
+        "info": "Kökü üç yerine dört harften oluşan ve hemze, illetli harf ya da ikizleşmeden bağımsız kendi çekim ailesini oluşturan fiil."
+      },
+      "naqis": {
+        "name": "Nâkıs (Eksik Fiil)",
+        "ar": "ناقص",
+        "info": "Son kök harfi illetli bir harf olan ve kelime sonunda genelde düşen ya da değişen fiil."
+      },
+      "sahih": {
+        "name": "Sahih (Sağlam Fiil)",
+        "ar": "صحيح",
+        "info": "Kök harflerinde ne hemze ne illetli bir harf ne de ikizleşme bulunan, en düzenli fiil türü."
+      }
+    },
+    "verbEigenschaften": {
+      "amrNahy": {
+        "name": "Emir ve Nehiy",
+        "ar": "الأمر والنهي",
+        "info": "Birbirinin zıddı iki çağrı biçimi: biri bir eylemi yapmaya çağırır, diğeri o eylemi yasaklar.",
+        "werte": {
+          "amr": {
+            "name": "Emir",
+            "ar": "أمر",
+            "info": "Fiilin emir kipinden oluşan, bir şeyi yapmaya doğrudan çağıran biçim."
+          },
+          "nahy": {
+            "name": "Nehiy (Yasak)",
+            "ar": "نهي",
+            "info": "Başına olumsuzluk eklenmiş şimdiki zaman kipinden oluşan, bir şeyden kaçınmaya çağıran biçim."
+          }
+        }
+      },
+      "genusVerbi": {
+        "name": "Çatı (Etken/Edilgen)",
+        "ar": "البناء للمعلوم والمجهول",
+        "info": "Öznenin eylemi bizzat mı yaptığını (etken) yoksa eylemden etkilenip etkilenmediğini (edilgen) gösterir.",
+        "werte": {
+          "active": {
+            "name": "Etken",
+            "ar": "معلوم"
+          },
+          "passive": {
+            "name": "Edilgen",
+            "ar": "مجهول"
+          }
+        }
+      },
+      "modus": {
+        "name": "Kip (Şimdiki Zaman)",
+        "ar": "حالات الفعل المضارع",
+        "info": "Cümledeki bağlama göre şimdiki zaman fiilinin son harekesini değiştirir — örneğin belirli edatlardan sonra veya olumsuzlukta.",
+        "werte": {
+          "ind": {
+            "name": "Merfû (bildirme)",
+            "ar": "مرفوع"
+          },
+          "juss": {
+            "name": "Meczûm (cezm)",
+            "ar": "مجزوم"
+          },
+          "sub": {
+            "name": "Mansûb (bağ)",
+            "ar": "منصوب"
+          }
+        }
+      },
+      "tempus": {
+        "name": "Zaman ve Emir Kipi",
+        "ar": "زمن الفعل",
+        "info": "Bir fiili zaman açısından sınıflandırır ya da onu emir kipi olarak işaretler: geçmiş, şimdiki/gelecek zaman ya da emir kipi (aslında ayrı bir kip olsa da, kolaylık için burada birlikte ele alınmıştır).",
+        "werte": {
+          "imperative": {
+            "name": "Emir kipi",
+            "ar": "أمر",
+            "info": "Doğrudan bir eylemi yapmaya çağırır, örneğin \"yaz!\"."
+          },
+          "imperfect": {
+            "name": "Şimdiki/geniş zaman",
+            "ar": "مضارع",
+            "info": "Süregelen ya da gelecekte olacak bir eylemi anlatır, örneğin \"yazıyor\"/\"yazacak\"."
+          },
+          "perfect": {
+            "name": "Geçmiş zaman",
+            "ar": "ماضي",
+            "info": "Tamamlanmış bir eylemi anlatır, örneğin \"yazdı\"."
+          }
+        }
+      },
+      "verbform": {
+        "name": "Fiil Kalıbı (Bab)",
+        "ar": "أوزان الفعل",
+        "info": "Arapça fiiller, sabit kalıplar üzerinden anlam çeşitlemelerine genişletilebilir — ana kalıptan onuncu kalıba kadar.",
+        "formen": {
+          "1": {
+            "name": "I. Kalıp",
+            "ar": "فَعَلَ",
+            "info": "Kökün asıl anlamını taşıyan, herhangi bir ek almamış temel kalıp."
+          },
+          "2": {
+            "name": "II. Kalıp",
+            "ar": "فَعَّلَ",
+            "info": "Genelde kökün orta harfini ikizleştirir ve çoğunlukla ettirgen veya yoğunluk anlamı katar."
+          },
+          "3": {
+            "name": "III. Kalıp",
+            "ar": "فَاعَلَ",
+            "info": "İlk kök harfinden sonra bir elif ekler ve genelde karşılıklı yapılan bir eylemi anlatır."
+          },
+          "4": {
+            "name": "IV. Kalıp",
+            "ar": "أَفْعَلَ",
+            "info": "Bir hemze ile başlar ve fiili genelde ettirgen yapar — \"birine bir şey yaptırmak\"."
+          },
+          "5": {
+            "name": "V. Kalıp",
+            "ar": "تَفَعَّلَ",
+            "info": "II. kalıbın dönüşlü karşılığıdır; genelde bir şeyin kendiliğinden gerçekleşmesini anlatır."
+          },
+          "6": {
+            "name": "VI. Kalıp",
+            "ar": "تَفَاعَلَ",
+            "info": "III. kalıbın dönüşlü/karşılıklı biçimidir; genelde birbirine karşı yapılan bir eylemi anlatır."
+          },
+          "7": {
+            "name": "VII. Kalıp",
+            "ar": "انْفَعَلَ",
+            "info": "Araya eklenen bir ن ile başlar ve genelde edilgen ya da isteğe bağlı olmayan bir eylemi anlatır."
+          },
+          "8": {
+            "name": "VIII. Kalıp",
+            "ar": "افْتَعَلَ",
+            "info": "İlk kök harfinden sonra bir ت ekler; genelde dönüşlü veya pekiştirilmiş bir anlam taşır."
+          },
+          "9": {
+            "name": "IX. Kalıp",
+            "ar": "افْعَلَّ",
+            "info": "Son kök harfini ikizleştirir; çoğunlukla renkler ve bedensel özellikler için kullanılır."
+          },
+          "10": {
+            "name": "X. Kalıp",
+            "ar": "اسْتَفْعَلَ",
+            "info": "است ile başlar ve genelde kök anlamını kendisi için istemeyi veya talep etmeyi ifade eder."
+          }
+        }
+      },
+      "person": {
+        "name": "Şahıs",
+        "ar": "الشخص",
+        "info": "Fiilin konuşan kişi tarafından mı, muhatap tarafından mı yoksa üçüncü bir kişi tarafından mı yapıldığını gösterir.",
+        "werte": {
+          "1": {
+            "name": "1. şahıs",
+            "ar": "المتكلم",
+            "info": "Konuşan kişi: ben veya biz."
+          },
+          "2": {
+            "name": "2. şahıs",
+            "ar": "المخاطب",
+            "info": "Muhatap kişi: sen veya siz."
+          },
+          "3": {
+            "name": "3. şahıs",
+            "ar": "الغائب",
+            "info": "Sözü edilen kişi veya şey: o veya onlar."
+          }
+        }
+      }
+    },
+    "wortarten": {
+      "fiil": {
+        "name": "Fiʿl (Fiil)",
+        "ar": "فعل",
+        "info": "Fiʿl bir eylemi veya oluşu anlatır; zaman, şahıs ve sayı bilgisini kendi içinde taşır."
+      },
+      "harf": {
+        "name": "Harf (Edat)",
+        "ar": "حرف",
+        "info": "Harf; edat, bağlaç veya olumsuzluk gibi tek başına tam bir anlam taşımayan kısa sözcüklerdir."
+      },
+      "ism": {
+        "name": "İsim (Ad)",
+        "ar": "اسم",
+        "info": "İsim; kişi, nesne, yer, özellik veya soyut bir kavramı ifade eder — Türkçedeki isim ve sıfatlara benzer."
+      }
+    }
+  },
+  "gebetGemeinsam": {
+    "title": "Birlikte Namaz Kılmak – Cemaat (جماعة)",
+    "subtitle": "Cemaatle namazda nasıl saf tutulur – uzun metin yerine şemalarla.",
+    "seeAlsoFreitag": "Cuma namazı, cami adabı ve kadınlar bölümü hakkında daha fazlası: Çalışma → İbadet Fıkhı, 13. ders.",
+    "seeAlsoSutra": "İmamın sütresi arkasındaki tüm safı kapsar: Çalışma → İbadet Fıkhı, 11. ders.",
+    "footerHinweis": "Bu genel bakış fıkıh çalışmasının yerini tutmaz. Önemli kararlarda yerel bir alime danışın.",
+    "quelle": "Kaynak",
+    "sections": {
+      "aufstellung": "Saf Düzeni",
+      "rezitation": "Kıraat ve Davranış",
+      "mahram": "Mahrem ve Halvet"
+    },
+    "legende": {
+      "imam": "İmam (إمام)",
+      "mann": "Erkek",
+      "frau": "Kadın",
+      "qibla": "Kıble"
+    },
+    "grad": {
+      "anerkannt": "Geniş çapta kabul görür",
+      "strittig": "Mezhepler arasında tartışmalı",
+      "empfehlung": "Pratik öneri"
+    },
+    "madhhab": {
+      "alle": "Tüm mezhepler",
+      "hanafi": "Hanefi",
+      "verschieden": "Mezhepler farklı görüşte"
+    },
+    "konstellationen": {
+      "zweiPersonen": {
+        "titel": "İmam ve tek bir cemaatçi",
+        "beschreibung": "İmamla sadece bir erkek namaz kılıyorsa, arkasında değil, hafifçe geride sağında durur."
+      },
+      "imamEhefrau": {
+        "titel": "İmam ve eşi",
+        "beschreibung": "Bir kadın, imamlık yapan kocasıyla namaz kılıyorsa, yanında değil arkasında durur."
+      },
+      "dreiPersonen": {
+        "titel": "Üç kişi",
+        "beschreibung": "Üçüncü kişi katılınca, cemaat imamın arkasında kendi safını oluşturur."
+      },
+      "familienrunde": {
+        "titel": "Karma aile cemaati",
+        "beschreibung": "İmam önde tek başına durur, erkekler ve erkek çocuklar arkasında saf(lar), kadınlar ve kız çocukları en arkadaki safı oluşturur."
+      },
+      "groessereGruppe": {
+        "titel": "Daha büyük grup, birden çok saf",
+        "beschreibung": "Öndeki erkek safları boşluksuz önce tamamlanır; kadın safı en arkada yer alır."
+      }
+    },
+    "regeln": {
+      "imamMitEinemMitbeter": {
+        "titel": "İmam ve tek bir cemaatçi",
+        "text": "İmamla sadece bir erkek namaz kılıyorsa, arkasında değil, imamın hafifçe geride sağında durur. Rivayete göre İbn Abbas, Peygamber ﷺ ile gece namazına katılmış, önce solunda durmuş, Peygamber ﷺ onu sağ tarafına çekmiştir."
+      },
+      "abDreiPersonen": {
+        "titel": "Üç kişiden itibaren: kendi safı",
+        "text": "Üçüncü bir kişi katılınca, tüm cemaat (me'mum, مأموم) imamın arkasında kendi safını oluşturur; imam önde tek başına durur. Rivayete göre Cabir b. Abdullah ile Cabbar b. Sahr, Peygamber ﷺ'in sağına ve soluna durunca, Peygamber ﷺ ikisini de elinden tutup arkasına almıştır."
+      },
+      "frauZuHause": {
+        "titel": "Evde eş: imamlık yapanın arkasında",
+        "text": "Bir kadın evde mahremi imamlık yaparken namaz kılıyorsa, yanında değil arkasında durur. Camideki kadınlar bölümüyle ilgili ayrıntılı ve kaynaklı bilgi: Çalışma → İbadet Fıkhı, 13. ders."
+      },
+      "familienrunde": {
+        "titel": "Karma aile cemaati",
+        "text": "Bir aile birlikte namaz kılıyorsa, imam önde tek başına durur, erkekler ve erkek çocuklar arkasında saf(lar), kadınlar ve kız çocukları en arkadaki safı oluşturur – tek bir kadın bile olsa, erkeklerin yanında değil en arkada durur. Rivayete göre bir yetim çocuk ile Enes b. Malik bir evde Peygamber ﷺ'in arkasında namaz kılmış, yaşlı bir kadın da tek başına arkalarındaki safı oluşturmuştur."
+      },
+      "reihenSchliessen": {
+        "titel": "Safları sıklaştırın, boşluk bırakmayın",
+        "text": "Saf (saff, صف) ortadan başlayarak omuz omuza, boşluksuz sıklaştırılır. Peygamber ﷺ'den rivayet edilir: \"Saflarınızı düzeltin, çünkü safları düzeltmek namazın tamamlanmasındandır.\""
+      },
+      "besteReihen": {
+        "titel": "En iyi ve en az tercih edilen saf",
+        "text": "Erkekler için en öndeki saf en iyisi, en arkadaki saf ise en az tercih edilenidir; kadınlarda bu tam tersidir – onlar için en arkadaki saf en iyisi sayılır."
+      },
+      "qiblaAusrichtung": {
+        "titel": "Kıbleye yönelme",
+        "text": "Tüm saflar, tek başına kılınan namazda olduğu gibi birlikte kıbleye yönelir. Kur'an kıble yönünü açıkça belirtir; uygulama bunu kıble pusulasında gösterir."
+      },
+      "lauteUndLeiseGebete": {
+        "titel": "Sesli ve sessiz namazlar",
+        "text": "İmam, Sabah, Akşam ve Yatsı namazlarının ilk iki rekatını sesli, Öğle ve İkindi'yi ise sessiz kıraat eder. Kur'an, namazda her iki ses tonunu da anar."
+      },
+      "verhaltenBeiLauterRezitation": {
+        "titel": "Sesli kıraat sırasında davranış",
+        "text": "Hanefi görüşe göre cemaat, sesli kıraat sırasında tamamen susar ve dinler; dayanağı şu ayettir: \"Kur'an okunduğu zaman onu dinleyin ve susun.\" Şafii mezhebi başta olmak üzere diğer mezhepler ise her cemaatçinin Fatiha'yı -öncesindeki besmele (بسملة) dahil- kendisinin de sessizce okumasını ister; dayanağı Peygamber ﷺ'in şu sözüdür: \"Fatiha'yı okumayanın namazı yoktur.\""
+      },
+      "amin": {
+        "titel": "Birlikte amin demek",
+        "text": "İmam, Fatiha'nın sonunda \"amin\" deyince, tüm cemaat sesli olarak katılır. Peygamber ﷺ'den rivayet edilir: \"İmam amin dediğinde siz de amin deyin.\""
+      },
+      "rabbanaUndTakbir": {
+        "titel": "Tekbir, Semi'allahu limen hamideh ve Rabbena",
+        "text": "İmam, her duruş değişiminde sesli olarak \"Allahu Ekber\" der; rükudan doğrulurken \"Semi'allahu limen hamideh\" der, cemaat de \"Rabbena ve lekel-hamd\" diye karşılık verir."
+      },
+      "rhythmusEmpfehlung": {
+        "titel": "Pratik öneri: ritmi duyulur kılmak",
+        "text": "Pratik bir öneridir, bir hüküm değildir: Sessiz namazlarda cemaat yalnızca tekbirleri duyar. Bir imam, tekbirleri net ve düzenli bir tempoda söyleyerek – kendi sessiz kıraatinden biraz daha yüksek sesle, aceleye getirmeden – ritmi güvenilir biçimde duyulur kılar."
+      },
+      "mahramUndKhilwa": {
+        "titel": "Mahrem ve halvet",
+        "text": "Saf düzeni korunduğu sürece, akraba olsun olmasın erkekler ve kadınlar cemaat namazına birlikte katılabilir. Tek gerçek sınırlama halvetle (خلوة) ilgilidir: Birbirine mahrem (محرم) olmayan bir erkekle bir kadın baş başa kalamaz. Başka bir kişi -bir mahrem, başka bir cemaatçi ya da üçüncü bir kişi- bulunduğu anda halvet söz konusu olmaktan çıkar. Peygamber ﷺ'den rivayet edilir: \"Bir erkek, yanında bir mahremi olmadıkça bir kadınla baş başa kalmasın.\""
+      }
+    }
+  },
+  "analyseUebung": {
+    "title": "Dil Bilgisi Tahlil Alıştırması",
+    "intro": "Her kelimenin sözcük türünü, hâlini ya da zamanını ve cümledeki görevini önce kendin belirle — sonra bunu külliyatta gerçekten kayıtlı olanla karşılaştır.",
+    "setup": {
+      "title": "Yeni alıştırma",
+      "schnellstart": "Hızlı başlangıç",
+      "sureWaehlen": "Sure",
+      "versWaehlen": "Ayet",
+      "zufaelligerVers": "Bu sureden rastgele bir ayet",
+      "keineWorteHinweis": "Bu ayette ve bu seviyede değerlendirilebilecek bir kelime yok. Lütfen başka bir ayet veya daha düşük bir seviye seç."
+    },
+    "schwierigkeit": {
+      "title": "Zorluk seviyesi",
+      "stufe1Label": "Seviye 1",
+      "stufe1Beschreibung": "Yalnızca sözcük türü",
+      "stufe2Label": "Seviye 2",
+      "stufe2Beschreibung": "Sözcük türü ile hâl veya zaman",
+      "stufe3Label": "Seviye 3",
+      "stufe3Beschreibung": "Sözcük türü, hâl/zaman ve cümledeki görev"
+    },
+    "start": "Alıştırmayı başlat",
+    "zuletztGeuebt": {
+      "title": "Son çalışılanlar",
+      "eintrag": "Doğru oranı: %{score}"
+    },
+    "exercise": {
+      "fortschritt": "Kelime {index} / {total}",
+      "wortartLabel": "Sözcük türü",
+      "satzrolleLabel": "Cümledeki görev (i'rab)",
+      "aufdecken": "Cevabı göster",
+      "weiter": "İleri",
+      "ergebnisAnsehen": "Sonucu görüntüle",
+      "deineAntwort": "Senin cevabın",
+      "richtigWaere": "Doğrusu",
+      "richtig": "Doğru",
+      "falsch": "Yanlış",
+      "weitereMerkmale": "Diğer özellikler"
+    },
+    "satzrolleFamilie": {
+      "pred": {
+        "name": "Yüklem (kâne/inne sonrası)",
+        "ar": "خبر"
+      },
+      "subj": {
+        "name": "Cümlenin öznesi (kâne/inne sonrası)",
+        "ar": "اسم"
+      }
+    },
+    "ergebnis": {
+      "title": "Sonuç",
+      "nichtBewertetHinweis": "Külliyatta güvenilir veri bulunmadığından {count} eşleştirme değerlendirmeye alınmadı.",
+      "perfekt": "Hepsi doğru — mükemmel!",
+      "gut": "Aferin.",
+      "ueben": "Biraz daha alıştırmayla tam oturacak.",
+      "fehlerTitle": "Bunlara bir daha bakmalısın",
+      "keineFehler": "Hiç hata yok — harika!",
+      "imReaderOeffnen": "Ayeti okuyucuda aç",
+      "wurzelImLexikon": "Kökü sözlükte görüntüle",
+      "nocheinmal": "Tekrar çalış",
+      "zurUebersicht": "Genel bakışa dön"
     }
   }
 }

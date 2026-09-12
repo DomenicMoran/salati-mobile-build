@@ -1,0 +1,751 @@
+{
+  "schema": 1,
+  "tables": [
+    {
+      "id": "kaana-matrix",
+      "kind": "verb",
+      "titleDe": "كَانَ (sein, Vergangenheit) — vollständige Personenmatrix",
+      "termAr": "كَانَ",
+      "columns": [
+        { "id": "plural", "labelDe": "Plural" },
+        { "id": "dual", "labelDe": "Dual" },
+        { "id": "singular", "labelDe": "Singular" }
+      ],
+      "rows": [
+        { "id": "3-m", "labelDe": "3. Person maskulin" },
+        { "id": "3-f", "labelDe": "3. Person feminin" },
+        { "id": "2-m", "labelDe": "2. Person maskulin" },
+        { "id": "2-f", "labelDe": "2. Person feminin" },
+        { "id": "1", "labelDe": "1. Person" }
+      ],
+      "cells": {
+        "3-m": {
+          "plural": { "ar": "كَانُوْا", "de": "sie (m) waren" },
+          "dual": { "ar": "كَانَا", "de": "die beiden waren" },
+          "singular": { "ar": "كَانَ", "de": "er war" }
+        },
+        "3-f": {
+          "plural": { "ar": "كُنَّ", "de": "sie (f) waren" },
+          "dual": { "ar": "كَانَتَا", "de": "die beiden (f) waren" },
+          "singular": { "ar": "كَانَتْ", "de": "sie war" }
+        },
+        "2-m": {
+          "plural": { "ar": "كُنْتُمْ", "de": "ihr (m) wart" },
+          "dual": { "ar": "كُنْتُمَا", "de": "ihr beide (m) wart" },
+          "singular": { "ar": "كُنْتَ", "de": "du (m) warst" }
+        },
+        "2-f": {
+          "plural": { "ar": "كُنْتُنَّ", "de": "ihr (f) wart" },
+          "dual": { "ar": "كُنْتُمَا", "de": "ihr beide (f) wart" },
+          "singular": { "ar": "كُنْتِ", "de": "du (f) warst" }
+        },
+        "1": {
+          "plural": { "ar": "كُنَّا", "de": "wir waren" },
+          "dual": null,
+          "singular": { "ar": "كُنْتُ", "de": "ich war" }
+        }
+      },
+      "notes": [
+        "كَانَ ist das unvollständige Verb (Fi'l Naaqis) schlechthin — es bildet zusammen mit Mubtada/Khabar eine Jumlah Ismiyyah, deren Khabar dabei im Nasb-Status statt im sonst üblichen Raf'a-Status steht (siehe Begleittext auf derselben Seite). Diese Matrix zeigt nur die Konjugation von كَانَ selbst (Vergangenheit), nicht die Nasb-Endung des Khabar.",
+        "Zeichengenau aus dem gerenderten Seitenbild von handout.pdf S. 61 (Abbildung 28: 'Kaana in der Vergangenheit') gelesen, Tabellen-Bbox per PyMuPDF find_tables ermittelt, bei Zoom 20–45 zellenweise zugeschnitten.",
+        "Auffälligkeit im Originaldruck, bei ≥45-fachem Zoom bestätigt: in der Zeile '1. Person' steht die Plural-Form كُنَّا ('wir waren') im gedruckten Raster unter der Kopfzeile 'Dual' (die Spalte 'Plural' ist in dieser einen Zeile leer gelassen) — vermutlich ein Layout-Versatz des Originals, da كَانَ für die 1. Person grammatisch ohnehin keinen Dual kennt. Hier wie in allen anderen Personenmatrizen dieses Bestands semantisch korrekt unter 'plural' einsortiert (Zelle 'dual' bleibt wie überall sonst bei der 1. Person null) statt den mutmaßlichen Druckversatz zu übernehmen — die Zeichenkette selbst (كُنَّا) ist unverändert die im Bild stehende.",
+        "Korpus-Gegenprobe über die Wurzel كون (kāna ist Ajwaf, hohler Mittelradikal Waw, im Korpus unter dieser Wurzel indiziert) — siehe paradigmen-weitere.test.ts."
+      ],
+      "source": { "file": "handout.pdf", "page": 61 }
+    },
+    {
+      "id": "mudari-mansub-nasara-matrix",
+      "kind": "verb",
+      "titleDe": "نَصَرَ (Gegenwart, Mudari Mansub/Konjunktiv, „leichte Form“) — vollständige Personenmatrix",
+      "termAr": "يَنْصُرَ",
+      "columns": [
+        { "id": "plural", "labelDe": "Plural" },
+        { "id": "dual", "labelDe": "Dual" },
+        { "id": "singular", "labelDe": "Singular" }
+      ],
+      "rows": [
+        { "id": "3-m", "labelDe": "3. Person maskulin" },
+        { "id": "3-f", "labelDe": "3. Person feminin" },
+        { "id": "2-m", "labelDe": "2. Person maskulin" },
+        { "id": "2-f", "labelDe": "2. Person feminin" },
+        { "id": "1", "labelDe": "1. Person" }
+      ],
+      "cells": {
+        "3-m": {
+          "plural": { "ar": "يَنْصُرُوْا", "de": "sie (m) helfen (Konjunktiv)" },
+          "dual": { "ar": "يَنْصُرَا", "de": "die beiden helfen (Konjunktiv)" },
+          "singular": { "ar": "يَنْصُرَ", "de": "er hilft (Konjunktiv)" }
+        },
+        "3-f": {
+          "plural": { "ar": "يَنْصُرْنَ", "de": "sie (f) helfen (Konjunktiv)" },
+          "dual": { "ar": "تَنْصُرَا", "de": "die beiden (f) helfen (Konjunktiv)" },
+          "singular": { "ar": "تَنْصُرَ", "de": "sie hilft (Konjunktiv)" }
+        },
+        "2-m": {
+          "plural": { "ar": "تَنْصُرُوْا", "de": "ihr (m) helft (Konjunktiv)" },
+          "dual": { "ar": "تَنْصُرَا", "de": "ihr beide (m) helft (Konjunktiv)" },
+          "singular": { "ar": "تَنْصُرَ", "de": "du (m) hilfst (Konjunktiv)" }
+        },
+        "2-f": {
+          "plural": { "ar": "تَنْصُرْنَ", "de": "ihr (f) helft (Konjunktiv)" },
+          "dual": { "ar": "تَنْصُرَا", "de": "ihr beide (f) helft (Konjunktiv)" },
+          "singular": { "ar": "تَنْصُرِيْ", "de": "du (f) hilfst (Konjunktiv)" }
+        },
+        "1": {
+          "plural": { "ar": "نَنْصُرَ", "de": "wir helfen (Konjunktiv)" },
+          "dual": null,
+          "singular": { "ar": "أَنْصُرَ", "de": "ich helfe (Konjunktiv)" }
+        }
+      },
+      "notes": [
+        "„Leichte Form“ des Mudari (Mudari Mansub/Konjunktiv, nach Partikeln wie أَنْ, لَنْ, كَيْ u. a.): Singular und 1. Person Plural erhalten ein Fatha statt Damma auf dem letzten Buchstaben; Dual und maskuliner Plural verlieren das abschließende ن (mit stummem ا nach dem Plural); femininer Plural bleibt gegenüber der Grundform (Mudari Marfu') unverändert — Regel wie auf S. 47 explizit beschrieben und in der Tabelle farbig hervorgehoben.",
+        "Ergänzt die bereits vorhandenen Kurztabellen amr-nasara-matrix/nahy-nasara-matrix (nur 2. Person) um die VOLLE Personenmatrix des Konjunktivs (alle Personen), wie sie für Konstruktionen mit أَنْ/لَنْ/كَيْ u. Ä. (nicht nur für die Verneinung) gebraucht wird.",
+        "Zeichengenau aus dem gerenderten Seitenbild von handout.pdf S. 47 (Abbildung 22: 'Nasara-Tabelle (leichte Form)') gelesen, Tabellen-Bbox per PyMuPDF find_tables ermittelt.",
+        "Die im Original mit einem hochgestellten ا nach dem Plural gedruckte, aber laut Fließtext stumme Alif-Schreibweise (يَنْصُرُوْا, تَنْصُرُوْا) wurde zeichengenau übernommen (kein separates Sukun-Zeichen auf dem ا, da das ا selbst orthografisches Füllzeichen ist, keine eigene Lautform)."
+      ],
+      "source": { "file": "handout.pdf", "page": 47 }
+    },
+    {
+      "id": "mudari-majzum-nasara-matrix",
+      "kind": "verb",
+      "titleDe": "نَصَرَ (Gegenwart, Mudari Majzum/Jussiv, „leichteste Form“) — vollständige Personenmatrix",
+      "termAr": "يَنْصُرْ",
+      "columns": [
+        { "id": "plural", "labelDe": "Plural" },
+        { "id": "dual", "labelDe": "Dual" },
+        { "id": "singular", "labelDe": "Singular" }
+      ],
+      "rows": [
+        { "id": "3-m", "labelDe": "3. Person maskulin" },
+        { "id": "3-f", "labelDe": "3. Person feminin" },
+        { "id": "2-m", "labelDe": "2. Person maskulin" },
+        { "id": "2-f", "labelDe": "2. Person feminin" },
+        { "id": "1", "labelDe": "1. Person" }
+      ],
+      "cells": {
+        "3-m": {
+          "plural": { "ar": "يَنْصُرُوْا", "de": "sie (m) helfen (Jussiv)" },
+          "dual": { "ar": "يَنْصُرَا", "de": "die beiden helfen (Jussiv)" },
+          "singular": { "ar": "يَنْصُرْ", "de": "er hilft (Jussiv)" }
+        },
+        "3-f": {
+          "plural": { "ar": "يَنْصُرْنَ", "de": "sie (f) helfen (Jussiv)" },
+          "dual": { "ar": "تَنْصُرَا", "de": "die beiden (f) helfen (Jussiv)" },
+          "singular": { "ar": "تَنْصُرْ", "de": "sie hilft (Jussiv)" }
+        },
+        "2-m": {
+          "plural": { "ar": "تَنْصُرُوْا", "de": "ihr (m) helft (Jussiv)" },
+          "dual": { "ar": "تَنْصُرَا", "de": "ihr beide (m) helft (Jussiv)" },
+          "singular": { "ar": "تَنْصُرْ", "de": "du (m) hilfst (Jussiv)" }
+        },
+        "2-f": {
+          "plural": { "ar": "تَنْصُرْنَ", "de": "ihr (f) helft (Jussiv)" },
+          "dual": { "ar": "تَنْصُرَا", "de": "ihr beide (f) helft (Jussiv)" },
+          "singular": { "ar": "تَنْصُرِيْ", "de": "du (f) hilfst (Jussiv)" }
+        },
+        "1": {
+          "plural": { "ar": "نَنْصُرْ", "de": "wir helfen (Jussiv)" },
+          "dual": null,
+          "singular": { "ar": "أَنْصُرْ", "de": "ich helfe (Jussiv)" }
+        }
+      },
+      "notes": [
+        "„Leichteste Form“ des Mudari (Mudari Majzum/Jussiv, nach Partikeln wie لَمْ, لَمَّا, لِ, لَا-Befehlsform u. a.): identisch zur leichten Form (Konjunktiv), außer dass Singular und 1. Person Plural ein Sukun statt Fatha auf dem letzten Buchstaben tragen — Regel wie auf S. 48 explizit beschrieben.",
+        "Ergänzt nahy-nasara-matrix (paradigmen-verben.json, nur 2. Person MIT vorangestelltem لَا) um die VOLLE Personenmatrix des bloßen Jussivs (ohne لَا, für Konstruktionen mit لَمْ/لَمَّا/لِ u. Ä.).",
+        "Zeichengenau aus dem gerenderten Seitenbild von handout.pdf S. 48 (Abbildung 24: 'Nasara-Tabelle (leichteste Form)') gelesen, Tabellen-Bbox per PyMuPDF find_tables ermittelt.",
+        "Wie bei der leichten Form (Konjunktiv) ist das hochgestellte ا nach dem maskulinen Plural (يَنْصُرُوْا, تَنْصُرُوْا) ein stummes Füllzeichen des Originals, zeichengenau übernommen."
+      ],
+      "source": { "file": "handout.pdf", "page": 48 }
+    },
+    {
+      "id": "nun-tawkid-thaqila-nasara-matrix",
+      "kind": "verb",
+      "titleDe": "نَصَرَ (Gegenwart + schweres Nūn der Betonung, Nūn at-Tawkīd Thaqīla) — vollständige Personenmatrix",
+      "termAr": "يَنْصُرَنَّ",
+      "columns": [
+        { "id": "plural", "labelDe": "Plural" },
+        { "id": "dual", "labelDe": "Dual" },
+        { "id": "singular", "labelDe": "Singular" }
+      ],
+      "rows": [
+        { "id": "3-m", "labelDe": "3. Person maskulin" },
+        { "id": "3-f", "labelDe": "3. Person feminin" },
+        { "id": "2-m", "labelDe": "2. Person maskulin" },
+        { "id": "2-f", "labelDe": "2. Person feminin" },
+        { "id": "1", "labelDe": "1. Person" }
+      ],
+      "cells": {
+        "3-m": {
+          "plural": { "ar": "هُمْ يَنْصُرُنَّ", "de": "sie (m) werden ganz gewiss helfen" },
+          "dual": { "ar": "هُمَا يَنْصُرَانِّ", "de": "die beiden werden ganz gewiss helfen" },
+          "singular": { "ar": "هُوَ يَنْصُرَنَّ", "de": "er wird ganz gewiss helfen" }
+        },
+        "3-f": {
+          "plural": { "ar": "هُنَّ يَنْصُرْنَانِّ", "de": "sie (f) werden ganz gewiss helfen" },
+          "dual": { "ar": "هُمَا تَنْصُرَانِّ", "de": "die beiden (f) werden ganz gewiss helfen" },
+          "singular": { "ar": "هِيَ تَنْصُرَنَّ", "de": "sie wird ganz gewiss helfen" }
+        },
+        "2-m": {
+          "plural": { "ar": "أَنْتُمْ تَنْصُرُنَّ", "de": "ihr (m) werdet ganz gewiss helfen" },
+          "dual": { "ar": "أَنْتُمَا تَنْصُرَانِّ", "de": "ihr beide (m) werdet ganz gewiss helfen" },
+          "singular": { "ar": "أَنْتَ تَنْصُرَنَّ", "de": "du (m) wirst ganz gewiss helfen" }
+        },
+        "2-f": {
+          "plural": { "ar": "أَنْتُنَّ تَنْصُرْنَانِّ", "de": "ihr (f) werdet ganz gewiss helfen" },
+          "dual": { "ar": "أَنْتُمَا تَنْصُرَانِّ", "de": "ihr beide (f) werdet ganz gewiss helfen" },
+          "singular": { "ar": "أَنْتِ تَنْصُرِنَّ", "de": "du (f) wirst ganz gewiss helfen" }
+        },
+        "1": {
+          "plural": { "ar": "نَحْنُ نَنْصُرَنَّ", "de": "wir werden ganz gewiss helfen" },
+          "dual": null,
+          "singular": { "ar": "أَنَا أَنْصُرَنَّ", "de": "ich werde ganz gewiss helfen" }
+        }
+      },
+      "notes": [
+        "Nūn at-Tawkīd Thaqīla (schweres Nūn der Betonung) hängt sich mit Schadda an den Mudari an und drückt Nachdruck aus ('ganz sicher', 'unter keinen Umständen' bei Verneinung mit لَا) — Formen hier ohne Freiem Pronomen wären mehrdeutig, deshalb druckt das Original je Zelle Pronomen + Verbform gemeinsam; hier 1:1 übernommen statt das Pronomen abzutrennen.",
+        "3. Person feminin Plural (Zeile '3-f', Spalte 'plural') fügt zwischen dem bereits vorhandenen Nūn der weiblichen Pluralendung (نَ) und dem geminierten Nūn der Betonung ein Alif ein (يَنْصُرْنَانِّ statt einem unaussprechlichen *يَنْصُرْننَّ) — bei ≥45-fachem Zoom gegengeprüft, keine Fehllesung.",
+        "1. Person: Dual ist null (keine eigene Dual-Form der 1. Person im Arabischen, wie bei allen anderen Personenmatrizen dieses Bestands) — im Original stehen Dual- und Singular-Spalte dieser Zeile als EINE über beide Spalten verschmolzene Zelle gedruckt (أَنَا أَنْصُرَنَّ), hier unter 'singular' einsortiert.",
+        "Zeichengenau aus dem gerenderten Seitenbild von handout.pdf S. 85 (Abbildung 40: 'Formen der Verben mit schwerem Nun der Betonung') gelesen, Tabellen-Bbox per PyMuPDF find_tables ermittelt, mehrere Zellen bei Zoom 45 zellenweise nachgeschnitten.",
+        "Deutsche Bedeutungsangaben sind eigene Übersetzungen (im Original stehen nur die Personenbezeichnungen, keine deutschen Glossen)."
+      ],
+      "source": { "file": "handout.pdf", "page": 85 }
+    },
+    {
+      "id": "ism-mawsul-raster",
+      "kind": "pronoun",
+      "titleDe": "Die Relativpronomen (Ism Mawṣūl) — Raster nach Geschlecht × Anzahl",
+      "termAr": "الَّذِي",
+      "columns": [
+        { "id": "plural", "labelDe": "Plural" },
+        { "id": "dual", "labelDe": "Dual" },
+        { "id": "singular", "labelDe": "Singular" }
+      ],
+      "rows": [
+        { "id": "m", "labelDe": "Maskulin" },
+        { "id": "f", "labelDe": "Feminin" }
+      ],
+      "cells": {
+        "m": {
+          "plural": { "ar": "الَّذِيْنَ", "de": "diejenigen, die (m)" },
+          "dual": { "ar": "اللَّذَانِ", "de": "die beiden (m), die" },
+          "singular": { "ar": "الَّذِي", "de": "derjenige, der" }
+        },
+        "f": {
+          "plural": { "ar": "اللَّاتِي", "de": "diejenigen, die (f)" },
+          "dual": { "ar": "اللَّتَانِ", "de": "die beiden (f), die" },
+          "singular": { "ar": "الَّتِي", "de": "diejenige, die" }
+        }
+      },
+      "notes": [
+        "Dieselben sechs Formen wie in der bereits vorhandenen Tabelle 'relativpronomen' (paradigmen.json, dort als flache Liste m-sg/f-sg/m-du/f-du/m-pl/f-pl), hier zusätzlich im 2×3-Raster (Geschlecht × Anzahl) wie im Original abgebildet — auf ausdrücklichen Wunsch des Auftrags übernommen, siehe LUECKEN.md.",
+        "Hinweis aus dem Original (Fließtext direkt unter der Tabelle): Singular- und Pluralformen sind nicht-flexibel (keine Status-Änderung), nur die Dual-Formen sind voll-flexibel (اللَّذَانِ/اللَّتَانِ im Raf'a-Status, im Nasb/Jarr-Status اللَّذَيْنِ/اللَّتَيْنِ — diese beiden Nasb/Jarr-Formen zeigt das Original an dieser Stelle nicht, deshalb hier nicht miterfunden).",
+        "Zeichengenau aus dem gerenderten Seitenbild von handout.pdf S. 22 (Abbildung 7: 'Ism Mousool') gelesen, Tabellen-Bbox per PyMuPDF find_tables ermittelt, bei Zoom 55 zellenweise gegengeprüft.",
+        "Alle sechs Formen sind identisch mit den bereits über paradigmen.json/paradigmen.test.ts verifizierten Werten der Tabelle 'relativpronomen' — keine neue Korpus-Gegenprobe nötig, siehe dortige Testdatei."
+      ],
+      "source": { "file": "handout.pdf", "page": 22 }
+    },
+    {
+      "id": "ism-flexibilitaet-arten",
+      "kind": "noun",
+      "titleDe": "Die drei Arten der Flexibilität (Voll-/Halb-/Nicht-Flexibel) am Beispiel",
+      "termAr": "مُسْلِمٌ",
+      "columns": [
+        { "id": "voll-flexibel", "labelDe": "Voll-Flexibel", "labelAr": "مُسْلِمٌ" },
+        { "id": "halb-flexibel", "labelDe": "Halb-Flexibel", "labelAr": "إِبْرَاهِيمُ" },
+        { "id": "nicht-flexibel", "labelDe": "Nicht-Flexibel", "labelAr": "مُوسَى" }
+      ],
+      "rows": [
+        { "id": "raf", "labelDe": "Raf'a (Nominativ)", "labelAr": "رَفْعٌ" },
+        { "id": "nasb", "labelDe": "Nasb (Akkusativ)", "labelAr": "نَصْبٌ" },
+        { "id": "jarr", "labelDe": "Jarr (Genitiv)", "labelAr": "جَرٌّ" }
+      ],
+      "cells": {
+        "raf": {
+          "voll-flexibel": { "ar": "مُسْلِمٌ", "de": "ein Muslim (Nominativ)" },
+          "halb-flexibel": { "ar": "إِبْرَاهِيمُ", "de": "Ibrahim (Nominativ)" },
+          "nicht-flexibel": { "ar": "مُوسَى", "de": "Musa (Nominativ)" }
+        },
+        "nasb": {
+          "voll-flexibel": { "ar": "مُسْلِمًا", "de": "einen Muslim (Akkusativ)" },
+          "halb-flexibel": { "ar": "إِبْرَاهِيمَ", "de": "Ibrahim (Akkusativ)" },
+          "nicht-flexibel": { "ar": "مُوسَى", "de": "Musa (Akkusativ)" }
+        },
+        "jarr": {
+          "voll-flexibel": { "ar": "مُسْلِمٍ", "de": "eines Muslims (Genitiv)" },
+          "halb-flexibel": { "ar": "إِبْرَاهِيمَ", "de": "Ibrahim (Genitiv)" },
+          "nicht-flexibel": { "ar": "مُوسَى", "de": "Musa (Genitiv)" }
+        }
+      },
+      "notes": [
+        "Ergänzt die bereits vorhandene Deklinationstabelle 'nomen-muslim' (paradigmen.json, nur voll-flexibel) um die beiden anderen Flexibilitätsklassen am selben, im Original verwendeten Beispiel-Trio.",
+        "Halb-Flexibel (hier: der nichtarabische Eigenname إِبْرَاهِيمُ, Diptot/Mamnu' min as-Sarf): kein Tanwin, Nasb UND Jarr fallen auf dieselbe Fatha-Endung zusammen (إِبْرَاهِيمَ in beiden Zeilen identisch) — bei Zoom 30 gegengeprüft, kein Lesefehler.",
+        "Nicht-Flexibel (hier: مُوسَى, endet auf Alif maqsura): alle drei Status-Zellen sind identisch مُوسَى — im Original ausdrücklich so beschrieben ('sehen im Raf'a-, Nasb- und Jarr-Status immer gleich aus').",
+        "Zeichengenau aus dem gerenderten Seitenbild von handout.pdf S. 15 (Abbildung 5: 'Die verschiedenen Arten der Flexibilität') gelesen, Tabellen-Bbox per PyMuPDF find_tables ermittelt."
+      ],
+      "source": { "file": "handout.pdf", "page": 15 }
+    },
+    {
+      "id": "ism-plural-muster-unregelmaessig",
+      "kind": "noun",
+      "titleDe": "Muster des unregelmäßigen (gebrochenen) Plurals — sechs häufige Wazn-Muster",
+      "termAr": "أَوْزَانٌ",
+      "columns": [
+        { "id": "muster", "labelDe": "Muster (Wazn)" },
+        { "id": "singular", "labelDe": "Singular" },
+        { "id": "plural", "labelDe": "Plural" }
+      ],
+      "rows": [
+        { "id": "fuul-qalb", "labelDe": "Muster فُعُولٌ" },
+        { "id": "fial-jabal", "labelDe": "Muster فِعَالٌ" },
+        { "id": "afal-bab", "labelDe": "Muster أَفْعَالٌ" },
+        { "id": "fuul2-rasul", "labelDe": "Muster فُعُلٌ" },
+        { "id": "fualaa-shahid", "labelDe": "Muster فُعَلَاءُ" },
+        { "id": "afilaa-nabi", "labelDe": "Muster أَفْعِلَاءُ" }
+      ],
+      "cells": {
+        "fuul-qalb": {
+          "muster": { "ar": "فُعُولٌ", "de": "Muster Fu'ul" },
+          "singular": { "ar": "قَلْبٌ", "de": "ein Herz" },
+          "plural": { "ar": "قُلُوبٌ", "de": "Herzen" }
+        },
+        "fial-jabal": {
+          "muster": { "ar": "فِعَالٌ", "de": "Muster Fi'al" },
+          "singular": { "ar": "جَبَلٌ", "de": "ein Berg" },
+          "plural": { "ar": "جِبَالٌ", "de": "Berge" }
+        },
+        "afal-bab": {
+          "muster": { "ar": "أَفْعَالٌ", "de": "Muster Af'al" },
+          "singular": { "ar": "بَابٌ", "de": "eine Tür" },
+          "plural": { "ar": "أَبْوَابٌ", "de": "Türen" }
+        },
+        "fuul2-rasul": {
+          "muster": { "ar": "فُعُلٌ", "de": "Muster Fu'ul" },
+          "singular": { "ar": "رَسُولٌ", "de": "ein Gesandter" },
+          "plural": { "ar": "رُسُلٌ", "de": "Gesandte" }
+        },
+        "fualaa-shahid": {
+          "muster": { "ar": "فُعَلَاءُ", "de": "Muster Fu'alaa (halb-flexibel)" },
+          "singular": { "ar": "شَهِيدٌ", "de": "ein Zeuge" },
+          "plural": { "ar": "شُهَدَاءُ", "de": "Zeugen" }
+        },
+        "afilaa-nabi": {
+          "muster": { "ar": "أَفْعِلَاءُ", "de": "Muster Af'ilaa (halb-flexibel)" },
+          "singular": { "ar": "نَبِيٌّ", "de": "ein Prophet" },
+          "plural": { "ar": "أَنْبِيَاءُ", "de": "Propheten" }
+        }
+      },
+      "notes": [
+        "Unregelmäßige (gebrochene) Plurale lassen sich nicht aus dem Singular ableiten, folgen aber wenigen festen Mustern (أَوْزَانٌ), die im Qur'an immer wieder vorkommen — das Muster ersetzt die drei Wurzelbuchstaben eines Wortes durch ف, ع und ل.",
+        "Die letzten beiden Muster (فُعَلَاءُ und أَفْعِلَاءُ) sind halb-flexibel und tragen deshalb am Ende ein Damma OHNE Tanwin (شُهَدَاءُ, أَنْبِيَاءُ, أَفْعِلَاءُ, فُعَلَاءُ) — im Original ausdrücklich vermerkt, bei Zoom 20 gegengeprüft (kein Tanwin-Zeichen sichtbar).",
+        "Zeichengenau aus dem gerenderten Seitenbild von handout.pdf S. 18 (Abbildung 6 begleitende Tabelle, kein eigener Abbildungstitel) gelesen, Tabellen-Bbox per PyMuPDF find_tables ermittelt."
+      ],
+      "source": { "file": "handout.pdf", "page": 18 }
+    },
+    {
+      "id": "leichte-muslimun-maennlich",
+      "kind": "noun",
+      "titleDe": "مُسْلِم (leichte Form, männlich) — Deklination ohne Tanwin/Nūn",
+      "termAr": "مُسْلِمٌ",
+      "columns": [
+        { "id": "plural", "labelDe": "Plural" },
+        { "id": "dual", "labelDe": "Dual" },
+        { "id": "singular", "labelDe": "Singular" }
+      ],
+      "rows": [
+        { "id": "raf", "labelDe": "Raf'a (Nominativ)", "labelAr": "رَفْعٌ" },
+        { "id": "nasb", "labelDe": "Nasb (Akkusativ)", "labelAr": "نَصْبٌ" },
+        { "id": "jarr", "labelDe": "Jarr (Genitiv)", "labelAr": "جَرٌّ" }
+      ],
+      "cells": {
+        "raf": {
+          "plural": { "ar": "مُسْلِمُوْ", "de": "Muslime (Nominativ, leichte Form)" },
+          "dual": { "ar": "مُسْلِمَا", "de": "zwei Muslime (Nominativ, leichte Form)" },
+          "singular": { "ar": "مُسْلِمُ", "de": "ein Muslim (Nominativ, leichte Form)" }
+        },
+        "nasb": {
+          "plural": { "ar": "مُسْلِمِيْ", "de": "Muslime (Akkusativ, leichte Form)" },
+          "dual": { "ar": "مُسْلِمَيْ", "de": "zwei Muslime (Akkusativ, leichte Form)" },
+          "singular": { "ar": "مُسْلِمَ", "de": "einen Muslim (Akkusativ, leichte Form)" }
+        },
+        "jarr": {
+          "plural": { "ar": "مُسْلِمِيْ", "de": "Muslime (Genitiv, leichte Form)" },
+          "dual": { "ar": "مُسْلِمَيْ", "de": "zwei Muslime (Genitiv, leichte Form)" },
+          "singular": { "ar": "مُسْلِمِ", "de": "eines Muslims (Genitiv, leichte Form)" }
+        }
+      },
+      "notes": [
+        "„Leichte Form“ eines Ism (Kapitel 1): im Singular wird das Tanwin zu seinem reinen Vokal reduziert (-un→-u, -an→-a, -in→-i, ohne abschließendes 'n'), im Dual/Plural entfällt das Buchstaben-Nūn der Endung ganz. Ergänzt die bereits vorhandene 'schwere' Tabelle 'nomen-muslim' (paradigmen.json) um diese Variante.",
+        "Plural Raf' (مُسْلِمُوْ) und Nasb/Jarr (مُسْلِمِيْ) tragen im Original ein hochgestelltes Sukun auf dem letzten Langvokal-Buchstaben (Waw bzw. Ya) — dieselbe Schreibkonvention wie bei den Bab-Tabellen aus Kapitel 8 (z. B. مَقْرُوء-Ableitungen), zeichengenau übernommen.",
+        "Zeichengenau aus dem gerenderten Seitenbild von handout.pdf S. 14 (Abbildung 3: 'Leichte Muslimun-Tabelle (männlich)') gelesen, Tabellen-Bbox per PyMuPDF find_tables ermittelt, jede Zelle bei Zoom 40 einzeln zugeschnitten und gegengeprüft."
+      ],
+      "source": { "file": "handout.pdf", "page": 14 }
+    },
+    {
+      "id": "leichte-muslimun-weiblich",
+      "kind": "noun",
+      "titleDe": "مُسْلِمَة (leichte Form, weiblich) — Deklination ohne Tanwin/Nūn",
+      "termAr": "مُسْلِمَةٌ",
+      "columns": [
+        { "id": "plural", "labelDe": "Plural" },
+        { "id": "dual", "labelDe": "Dual" },
+        { "id": "singular", "labelDe": "Singular" }
+      ],
+      "rows": [
+        { "id": "raf", "labelDe": "Raf'a (Nominativ)", "labelAr": "رَفْعٌ" },
+        { "id": "nasb", "labelDe": "Nasb (Akkusativ)", "labelAr": "نَصْبٌ" },
+        { "id": "jarr", "labelDe": "Jarr (Genitiv)", "labelAr": "جَرٌّ" }
+      ],
+      "cells": {
+        "raf": {
+          "plural": { "ar": "مُسْلِمَاتُ", "de": "Musliminnen (Nominativ, leichte Form)" },
+          "dual": { "ar": "مُسْلِمَتَا", "de": "zwei Musliminnen (Nominativ, leichte Form)" },
+          "singular": { "ar": "مُسْلِمَة", "de": "eine Muslimin (Nominativ, leichte Form)" }
+        },
+        "nasb": {
+          "plural": { "ar": "مُسْلِمَاتِ", "de": "Musliminnen (Akkusativ, leichte Form)" },
+          "dual": { "ar": "مُسْلِمَتَيْ", "de": "zwei Musliminnen (Akkusativ, leichte Form)" },
+          "singular": { "ar": "مُسْلِمَة", "de": "eine Muslimin (Akkusativ, leichte Form)" }
+        },
+        "jarr": {
+          "plural": { "ar": "مُسْلِمَاتِ", "de": "Musliminnen (Genitiv, leichte Form)" },
+          "dual": { "ar": "مُسْلِمَتَيْ", "de": "zwei Musliminnen (Genitiv, leichte Form)" },
+          "singular": { "ar": "مُسْلِمَة", "de": "eine Muslimin (Genitiv, leichte Form)" }
+        }
+      },
+      "notes": [
+        "„Leichte Form“, weiblich — Gegenstück zu 'leichte-muslimun-maennlich'. Plural: Raf' verliert das Tanwin zu bloßem Damma (مُسْلِمَاتُ), Nasb UND Jarr fallen beide auf dieselbe Kasra-Endung (مُسْلِمَاتِ, im Arabischen für den gesunden weiblichen Plural schon in der 'schweren' Form so — Nasb/Jarr sind bei diesem Pluraltyp grammatisch immer identisch).",
+        "SINGULAR-BESONDERHEIT (bei ≥90-fachem Zoom mehrfach gegengeprüft, kein Lesefehler): in allen drei Status-Zeilen (Raf'/Nasb/Jarr) steht im Original zeichengleich دieselbe Form مُسْلِمَة — die Tā' marbūṭa trägt in KEINER der drei Zeilen ein sichtbares Status-Vokalzeichen (weder Damma noch Fatha noch Kasra), nur der vorausgehende Mīm behält sein Fatha. Linguistisch schlüssig: eine Tā' marbūṭa wird in Pausalform unabhängig vom Status als bloßes '-ah' gelesen, weshalb die 'leichte Form' des weiblichen Singulars den Status gar nicht mehr sichtbar unterscheidet. Die drei Zellen sind deshalb ABSICHTLICH identisch befüllt (keine Kopiervorlage/kein Fehler) — mit `notes` statt stillschweigend vereinheitlicht.",
+        "Zeichengenau aus dem gerenderten Seitenbild von handout.pdf S. 15 (Abbildung 4: 'Leichte Muslimun-Tabelle (weiblich)') gelesen, Tabellen-Bbox per PyMuPDF find_tables ermittelt, jede Zelle bei Zoom 40–100 einzeln zugeschnitten und gegengeprüft."
+      ],
+      "source": { "file": "handout.pdf", "page": 15 }
+    },
+    {
+      "id": "sarf-familie-1-allama",
+      "kind": "verb",
+      "titleDe": "Sarf, 1. große Familie (Form II, تَفْعِيل) — عَلَّمَ (lehren)",
+      "termAr": "عَلَّمَ",
+      "columns": [
+        { "id": "madhi", "labelDe": "Madhi / Amr" },
+        { "id": "mudari", "labelDe": "Mudari / Nahy" },
+        { "id": "masdar", "labelDe": "Masdar" },
+        { "id": "ism", "labelDe": "Ism (Fa'il / Maf'ul / Ableitung)" }
+      ],
+      "rows": [
+        { "id": "aktiv", "labelDe": "Aktiv" },
+        { "id": "passiv", "labelDe": "Passiv" },
+        { "id": "imperativ", "labelDe": "Imperativ (Amr/Nahy)" }
+      ],
+      "cells": {
+        "aktiv": {
+          "madhi": { "ar": "عَلَّمَ", "de": "er lehrte" },
+          "mudari": { "ar": "يُعَلِّمُ", "de": "er lehrt" },
+          "masdar": { "ar": "تَعْلِيمًا", "de": "das Lehren (Masdar)" },
+          "ism": { "ar": "مُعَلِّمٌ", "de": "ein Lehrer (Ism Fa'il)" }
+        },
+        "passiv": {
+          "madhi": { "ar": "عُلِّمَ", "de": "ihm wurde gelehrt" },
+          "mudari": { "ar": "يُعَلَّمُ", "de": "ihm wird gelehrt" },
+          "masdar": { "ar": "تَعْلِيمًا", "de": "das Lehren (Masdar)" },
+          "ism": { "ar": "مُعَلَّمٌ", "de": "ein Schüler, der Angetane (Ism Maf'ul)" }
+        },
+        "imperativ": {
+          "madhi": { "ar": "عَلِّمْ", "de": "Lehr!" },
+          "mudari": { "ar": "لَا تُعَلِّمْ", "de": "Lehr nicht!" },
+          "ism": { "ar": "مُعَلَّمٌ", "de": "Ort/Zeit, in der gelehrt wird (Ableitung)" }
+        }
+      },
+      "notes": [
+        "Kapitel 5.2 lehrt die 'acht großen Familien' (Sarf-Grundschema der Verbformen II–X ohne IX) am gesunden Referenzwurzel-Beispiel ع-ل-م statt an den schwachen/hamzierten Beispielen aus Kapitel 8 — inhaltlich dasselbe 3×4-Bab-Raster (Aktiv/Passiv/Imperativ × Madhi/Mudari/Masdar/Ism) wie paradigmen-verben.json, hier aber mit gedruckten deutschen Begriffs-Glossen je Zelle (Macher, Grundform/Idee, Gegenwart, Vergangenheit usw.), die 1:1 in die 'de'-Felder übernommen wurden.",
+        "Die im Original gedruckte Einleitungsfloskel فَهُوَ ('so ist er') vor Ism Fa'il/Ism Maf'ul wurde wie bei den Bab-Tabellen aus Kapitel 8 weggelassen (keine eigene Wortform).",
+        "Markenzeichen der 1. großen Familie: Schadda auf dem mittleren Wurzelbuchstaben (تَضْعِيف) in allen Formen außer dem einfachen Masdar-/Ism-Stamm.",
+        "Zeichengenau aus dem gerenderten Seitenbild von handout.pdf S. 66 (Abbildung 31: 'Tabelle für die erste große Familie') gelesen."
+      ],
+      "source": { "file": "handout.pdf", "page": 66 }
+    },
+    {
+      "id": "sarf-familie-2-jaadala",
+      "kind": "verb",
+      "titleDe": "Sarf, 2. große Familie (Form III, مُفَاعَلَة) — جَادَلَ (streiten)",
+      "termAr": "جَادَلَ",
+      "columns": [
+        { "id": "madhi", "labelDe": "Madhi / Amr" },
+        { "id": "mudari", "labelDe": "Mudari / Nahy" },
+        { "id": "masdar", "labelDe": "Masdar" },
+        { "id": "ism", "labelDe": "Ism (Fa'il / Maf'ul / Ableitung)" }
+      ],
+      "rows": [
+        { "id": "aktiv", "labelDe": "Aktiv" },
+        { "id": "passiv", "labelDe": "Passiv" },
+        { "id": "imperativ", "labelDe": "Imperativ (Amr/Nahy)" }
+      ],
+      "cells": {
+        "aktiv": {
+          "madhi": { "ar": "جَادَلَ", "de": "er stritt" },
+          "mudari": { "ar": "يُجَادِلُ", "de": "er streitet" },
+          "masdar": { "ar": "جِدَالًا ومُجَادَلَةً", "de": "das Streiten (Masdar, zwei Formen)" },
+          "ism": { "ar": "مُجَادِلٌ", "de": "ein Streiter (Ism Fa'il)" }
+        },
+        "passiv": {
+          "madhi": { "ar": "جُوْدِلَ", "de": "es wurde gestritten (mit ihm)" },
+          "mudari": { "ar": "يُجَادَلُ", "de": "es wird gestritten (mit ihm)" },
+          "masdar": { "ar": "جِدَالًا ومُجَادَلَةً", "de": "das Streiten (Masdar, zwei Formen)" },
+          "ism": { "ar": "مُجَادَلٌ", "de": "derjenige, mit dem gestritten wird (Ism Maf'ul)" }
+        },
+        "imperativ": {
+          "madhi": { "ar": "جَادِلْ", "de": "Streite!" },
+          "mudari": { "ar": "لَا تُجَادِلْ", "de": "Streite nicht!" },
+          "ism": { "ar": "مُجَادَلٌ", "de": "Ort/Zeit, in der gestritten wurde (Ableitung)" }
+        }
+      },
+      "notes": [
+        "Form III (مُفَاعَلَة) hat im Original ZWEI gleichwertige Masdar-Formen, mit و verbunden gedruckt (جِدَالًا ومُجَادَلَةً) — zeichengenau als eine Zelle übernommen statt künstlich in zwei Zellen aufzuspalten.",
+        "Rhetorische Implikation laut Original: Form III drückt aus, dass eine Partei einer anderen Partei etwas antut (Gegenseitigkeit/Interaktion).",
+        "Zeichengenau aus dem gerenderten Seitenbild von handout.pdf S. 67 (Abbildung 32: 'Tabelle für die zweite grosse Familie') gelesen."
+      ],
+      "source": { "file": "handout.pdf", "page": 67 }
+    },
+    {
+      "id": "sarf-familie-3-akhbara",
+      "kind": "verb",
+      "titleDe": "Sarf, 3. große Familie (Form IV, إِفْعَال) — أَخْبَرَ (informieren)",
+      "termAr": "أَخْبَرَ",
+      "columns": [
+        { "id": "madhi", "labelDe": "Madhi / Amr" },
+        { "id": "mudari", "labelDe": "Mudari / Nahy" },
+        { "id": "masdar", "labelDe": "Masdar" },
+        { "id": "ism", "labelDe": "Ism (Fa'il / Maf'ul / Ableitung)" }
+      ],
+      "rows": [
+        { "id": "aktiv", "labelDe": "Aktiv" },
+        { "id": "passiv", "labelDe": "Passiv" },
+        { "id": "imperativ", "labelDe": "Imperativ (Amr/Nahy)" }
+      ],
+      "cells": {
+        "aktiv": {
+          "madhi": { "ar": "أَخْبَرَ", "de": "er informierte" },
+          "mudari": { "ar": "يُخْبِرُ", "de": "er informiert" },
+          "masdar": { "ar": "إِخْبَارًا", "de": "das Informieren (Masdar)" },
+          "ism": { "ar": "مُخْبِرٌ", "de": "ein Informierer (Ism Fa'il)" }
+        },
+        "passiv": {
+          "madhi": { "ar": "أُخْبِرَ", "de": "er wurde informiert" },
+          "mudari": { "ar": "يُخْبَرُ", "de": "er wird informiert" },
+          "masdar": { "ar": "إِخْبَارًا", "de": "das Informieren (Masdar)" },
+          "ism": { "ar": "مُخْبَرٌ", "de": "eine informierte Person (Ism Maf'ul)" }
+        },
+        "imperativ": {
+          "madhi": { "ar": "أَخْبِرْ", "de": "Informier!" },
+          "mudari": { "ar": "لَا تُخْبِرْ", "de": "Informier nicht!" },
+          "ism": { "ar": "مُخْبَرٌ", "de": "Ort/Zeit, in der informiert wurde (Ableitung)" }
+        }
+      },
+      "notes": [
+        "Zeichengenau aus dem gerenderten Seitenbild von handout.pdf S. 67 (Abbildung 33: 'Tabelle für die dritte große Familie') gelesen."
+      ],
+      "source": { "file": "handout.pdf", "page": 67 }
+    },
+    {
+      "id": "sarf-familie-4-taallama",
+      "kind": "verb",
+      "titleDe": "Sarf, 4. große Familie (Form V, تَفَعُّل) — تَعَلَّمَ (lernen)",
+      "termAr": "تَعَلَّمَ",
+      "columns": [
+        { "id": "madhi", "labelDe": "Madhi / Amr" },
+        { "id": "mudari", "labelDe": "Mudari / Nahy" },
+        { "id": "masdar", "labelDe": "Masdar" },
+        { "id": "ism", "labelDe": "Ism (Fa'il / Maf'ul / Ableitung)" }
+      ],
+      "rows": [
+        { "id": "aktiv", "labelDe": "Aktiv" },
+        { "id": "passiv", "labelDe": "Passiv (im Original ohne deutsche Bedeutungsangabe)" },
+        { "id": "imperativ", "labelDe": "Imperativ (Amr/Nahy)" }
+      ],
+      "cells": {
+        "aktiv": {
+          "madhi": { "ar": "تَعَلَّمَ", "de": "er lernte" },
+          "mudari": { "ar": "يَتَعَلَّمُ", "de": "er lernt" },
+          "masdar": { "ar": "تَعَلُّمًا", "de": "das Lernen (Masdar)" },
+          "ism": { "ar": "مُتَعَلِّمٌ", "de": "ein Lerner (Ism Fa'il)" }
+        },
+        "passiv": {
+          "madhi": { "ar": "تُعُلِّمَ", "de": "(grammatisch gebildete Passivform ohne eigenständigen Sinn)" },
+          "mudari": { "ar": "يُتَعَلَّمُ", "de": "(grammatisch gebildete Passivform ohne eigenständigen Sinn)" },
+          "masdar": { "ar": "تَعَلُّمًا", "de": "das Lernen (Masdar)" },
+          "ism": { "ar": "مُتَعَلَّمٌ", "de": "(grammatisch gebildete Passivform ohne eigenständigen Sinn)" }
+        },
+        "imperativ": {
+          "madhi": { "ar": "تَعَلَّمْ", "de": "Lern!" },
+          "mudari": { "ar": "لَا تَتَعَلَّمْ", "de": "Lern nicht!" },
+          "ism": { "ar": "مُتَعَلَّمٌ", "de": "Ort/Zeit, in der gelernt wurde (Ableitung)" }
+        }
+      },
+      "notes": [
+        "Rhetorische Implikation laut Original ausdrücklich vermerkt: Form V ist Laazim (intransitiv) und hat KEIN eigenes Passiv. Trotzdem druckt das Original für die Passiv-Zeile alle vier Arabisch-Formen (تُعُلِّمَ/يُتَعَلَّمُ/تَعَلُّمًا/مُتَعَلَّمٌ) — LÄSST DABEI ABER JEDE DEUTSCHE BEDEUTUNGSANGABE LEER (bei ≥20-fachem Zoom bestätigt: keine Textzeile unter der Passiv-Zeile, anders als bei allen anderen Zeilen dieser Tabelle und allen Zeilen der übrigen sieben Familientabellen).",
+        "Die vier Arabisch-Formen der Passiv-Zeile wurden zeichengenau wie gedruckt übernommen (nichts geraten); die deutschen 'de'-Werte dieser drei Zellen sind eine eigene, ausdrücklich als bedeutungslos gekennzeichnete Notiz, KEINE Übersetzung des Originals — anders als bei allen anderen Zellen dieser Datei, wo 'de' eine echte Bedeutungsangabe ist.",
+        "Zeichengenau aus dem gerenderten Seitenbild von handout.pdf S. 68 (Abbildung 34: 'Tabelle für die vierte große Familie') gelesen."
+      ],
+      "source": { "file": "handout.pdf", "page": 68 }
+    },
+    {
+      "id": "sarf-familie-5-tasaaala",
+      "kind": "verb",
+      "titleDe": "Sarf, 5. große Familie (Form VI, تَفَاعُل) — تَسَاءَلَ (sich gegenseitig fragen)",
+      "termAr": "تَسَاءَلَ",
+      "columns": [
+        { "id": "madhi", "labelDe": "Madhi / Amr" },
+        { "id": "mudari", "labelDe": "Mudari / Nahy" },
+        { "id": "masdar", "labelDe": "Masdar" },
+        { "id": "ism", "labelDe": "Ism (Fa'il / Maf'ul / Ableitung)" }
+      ],
+      "rows": [
+        { "id": "aktiv", "labelDe": "Aktiv" },
+        { "id": "passiv", "labelDe": "Passiv" },
+        { "id": "imperativ", "labelDe": "Imperativ (Amr/Nahy)" }
+      ],
+      "cells": {
+        "aktiv": {
+          "madhi": { "ar": "تَسَاءَلَ", "de": "er fragte sich/einander" },
+          "mudari": { "ar": "يَتَسَاءَلُ", "de": "er fragt sich/einander" },
+          "masdar": { "ar": "تَسَاؤُلًا", "de": "das gegenseitige Fragen (Masdar)" },
+          "ism": { "ar": "مُتَسَائِلٌ", "de": "ein sich Fragender (Ism Fa'il)" }
+        },
+        "passiv": {
+          "madhi": { "ar": "تُسُؤِلَ", "de": "es wurde (gegenseitig) gefragt" },
+          "mudari": { "ar": "يُتَسَاءَلُ", "de": "es wird (gegenseitig) gefragt" },
+          "masdar": { "ar": "تَسَائُلًا", "de": "das gegenseitige Fragen (Masdar, Passiv-Schreibung)" },
+          "ism": { "ar": "مُتَسَاءَلٌ", "de": "das, wonach gefragt wird (Ism Maf'ul)" }
+        },
+        "imperativ": {
+          "madhi": { "ar": "تَسَاءَلْ", "de": "Frag (dich/einander)!" },
+          "mudari": { "ar": "لَا تَتَسَاءَلْ", "de": "Frag nicht (dich/einander)!" },
+          "ism": { "ar": "مُتَسَاءَلٌ", "de": "Ort/Zeit des gegenseitigen Fragens (Ableitung)" }
+        }
+      },
+      "notes": [
+        "Im Original tragen alle Zeilen dieser Tabelle KEINE deutsche Bedeutungsangabe (anders als bei den Familien 1–4) — alle 'de'-Werte dieser Tabelle sind daher eigene Übersetzungen, keine aus dem Original übernommenen Glossen.",
+        "Hamza-Träger-Unterschied zwischen Aktiv- und Passiv-Masdar, bei ≥120-fachem Zoom verifiziert: Aktiv-Masdar تَسَاؤُلًا trägt das Hamza auf einem Waw-Träger (ؤ) mit Damma, Passiv-Masdar تَسَائُلًا auf einem Ya-Träger (ئ) mit Damma — zwei unterschiedliche, im Original tatsächlich verschieden gedruckte Schreibweisen desselben Lautes, nicht vereinheitlicht. Dies ist der Beispiel-Fall, an dem die neue Normalisierungs-Hilfsfunktion orthografieSkelett.ts (Hamza-Träger-Vereinheitlichung) mit einem eigenen Testfall verifiziert ist.",
+        "Passiv-Madhi تُسُؤِلَ: Hamza auf Waw-Träger mit Kasra, bei ≥50-fachem Zoom bestätigt.",
+        "Zeichengenau aus dem gerenderten Seitenbild von handout.pdf S. 69 (Abbildung 35: 'Tabelle für die fünfte große Familie') gelesen."
+      ],
+      "source": { "file": "handout.pdf", "page": 69 }
+    },
+    {
+      "id": "sarf-familie-6-inkasara",
+      "kind": "verb",
+      "titleDe": "Sarf, 6. große Familie (Form VII, اِنْفِعَال) — اِنْكَسَرَ (zerbrechen, intransitiv)",
+      "termAr": "اِنْكَسَرَ",
+      "columns": [
+        { "id": "madhi", "labelDe": "Madhi / Amr" },
+        { "id": "mudari", "labelDe": "Mudari / Nahy" },
+        { "id": "masdar", "labelDe": "Masdar" },
+        { "id": "ism", "labelDe": "Ism (Fa'il / Ableitung)" }
+      ],
+      "rows": [
+        { "id": "aktiv", "labelDe": "Aktiv" },
+        { "id": "imperativ", "labelDe": "Imperativ (Amr/Nahy)" }
+      ],
+      "cells": {
+        "aktiv": {
+          "madhi": { "ar": "اِنْكَسَرَ", "de": "es zerbrach" },
+          "mudari": { "ar": "يَنْكَسِرُ", "de": "es zerbricht" },
+          "masdar": { "ar": "اِنْكِسَارًا", "de": "das Zerbrechen (Masdar)" },
+          "ism": { "ar": "مُنْكَسِرٌ", "de": "zerbrochen, ein Zerbrechender (Ism Fa'il)" }
+        },
+        "imperativ": {
+          "madhi": { "ar": "اِنْكَسِرْ", "de": "Zerbrich!" },
+          "mudari": { "ar": "لَا تَنْكَسِرْ", "de": "Zerbrich nicht!" },
+          "ism": { "ar": "مُنْكَسِرٌ", "de": "Ort/Zeit des Zerbrechens (Ableitung)" }
+        }
+      },
+      "notes": [
+        "Rhetorische Implikation laut Original ausdrücklich vermerkt: 'Alle Wörter dieser Familie sind intransitiv und haben somit keine passive Form.' Anders als bei Familie 4 (تعلم) druckt das Original hier NICHT EINMAL eine leere/unbeschriftete Passiv-Zeile — die Tabelle hat im Original nur zwei Datenzeilen (Aktiv, Imperativ). Deshalb hier bewusst KEINE 'passiv'-Zeile angelegt (weder mit Formen noch als Platzhalter) statt eine im Original nicht vorhandene Zeile zu erfinden.",
+        "Zeichengenau aus dem gerenderten Seitenbild von handout.pdf S. 69 (Abbildung 36: 'Tabelle für die sechste große Familie') gelesen."
+      ],
+      "source": { "file": "handout.pdf", "page": 69 }
+    },
+    {
+      "id": "sarf-familie-7-iqtaraba",
+      "kind": "verb",
+      "titleDe": "Sarf, 7. große Familie (Form VIII, اِفْتِعَال) — اِقْتَرَبَ (sich nähern)",
+      "termAr": "اِقْتَرَبَ",
+      "columns": [
+        { "id": "madhi", "labelDe": "Madhi / Amr" },
+        { "id": "mudari", "labelDe": "Mudari / Nahy" },
+        { "id": "masdar", "labelDe": "Masdar" },
+        { "id": "ism", "labelDe": "Ism (Fa'il / Maf'ul / Ableitung)" }
+      ],
+      "rows": [
+        { "id": "aktiv", "labelDe": "Aktiv" },
+        { "id": "passiv", "labelDe": "Passiv" },
+        { "id": "imperativ", "labelDe": "Imperativ (Amr/Nahy)" }
+      ],
+      "cells": {
+        "aktiv": {
+          "madhi": { "ar": "اِقْتَرَبَ", "de": "er näherte sich" },
+          "mudari": { "ar": "يَقْتَرِبُ", "de": "er nähert sich" },
+          "masdar": { "ar": "اِقْتِرَابًا", "de": "das Sich-Nähern (Masdar)" },
+          "ism": { "ar": "مُقْتَرِبٌ", "de": "ein sich Nähernder (Ism Fa'il)" }
+        },
+        "passiv": {
+          "madhi": { "ar": "أُقْتُرِبَ", "de": "es wurde sich genähert" },
+          "mudari": { "ar": "يُقْتَرَبُ", "de": "es wird sich genähert" },
+          "masdar": { "ar": "اِقْتِرَابًا", "de": "das Sich-Nähern (Masdar)" },
+          "ism": { "ar": "مُقْتَرَبٌ", "de": "das, dem man sich nähert (Ism Maf'ul)" }
+        },
+        "imperativ": {
+          "madhi": { "ar": "اِقْتَرِبْ", "de": "Nähere dich!" },
+          "mudari": { "ar": "لَا تَقْتَرِبْ", "de": "Nähere dich nicht!" },
+          "ism": { "ar": "مُقْتَرَبٌ", "de": "Ort/Zeit der Annäherung (Ableitung)" }
+        }
+      },
+      "notes": [
+        "Passiv-Madhi أُقْتُرِبَ mit Hamza-Qat' + Damma auf dem Anfangs-Alif, bei ≥60-fachem Zoom verifiziert (zwei getrennte Zeichen: Hamza-Bogen und Damma-Schleife über dem Alif) — wie im Original gedruckt übernommen, auch wenn die Standardgrammatik für Form VIII an dieser Stelle eine Hamzat-al-Wasl erwarten ließe.",
+        "Rhetorische Implikation laut Original: Form VIII drückt aus, dass die Handlung in übertriebenem Maße ausgeführt wird (Beispiel im Original: سَمِعَ 'hören' → اِسْتَمَعَ 'sehr gut zuhören' — dieses Beispiel gehört jedoch zur 8. Familie/Form X, nicht zur hier gezeigten 7.).",
+        "Zeichengenau aus dem gerenderten Seitenbild von handout.pdf S. 70 (Abbildung 37: 'Tabelle für die siebte große Familie') gelesen."
+      ],
+      "source": { "file": "handout.pdf", "page": 70 }
+    },
+    {
+      "id": "sarf-familie-8-istaghfara",
+      "kind": "verb",
+      "titleDe": "Sarf, 8. große Familie (Form X, اِسْتِفْعَال) — اِسْتَغْفَرَ (um Vergebung bitten)",
+      "termAr": "اِسْتَغْفَرَ",
+      "columns": [
+        { "id": "madhi", "labelDe": "Madhi / Amr" },
+        { "id": "mudari", "labelDe": "Mudari / Nahy" },
+        { "id": "masdar", "labelDe": "Masdar" },
+        { "id": "ism", "labelDe": "Ism (Fa'il / Maf'ul / Ableitung)" }
+      ],
+      "rows": [
+        { "id": "aktiv", "labelDe": "Aktiv" },
+        { "id": "passiv", "labelDe": "Passiv" },
+        { "id": "imperativ", "labelDe": "Imperativ (Amr/Nahy)" }
+      ],
+      "cells": {
+        "aktiv": {
+          "madhi": { "ar": "اِسْتَغْفَرَ", "de": "er bat um Vergebung" },
+          "mudari": { "ar": "يَسْتَغْفِرُ", "de": "er bittet um Vergebung" },
+          "masdar": { "ar": "اِسْتِغْفَارًا", "de": "das Bitten um Vergebung (Masdar)" },
+          "ism": { "ar": "مُسْتَغْفِرٌ", "de": "ein um Vergebung Bittender (Ism Fa'il)" }
+        },
+        "passiv": {
+          "madhi": { "ar": "أُسْتَغْفِرَ", "de": "es wurde um Vergebung dafür gebeten" },
+          "mudari": { "ar": "يُسْتَغْفَرُ", "de": "es wird um Vergebung dafür gebeten" },
+          "masdar": { "ar": "اِسْتِغْفَارًا", "de": "das Bitten um Vergebung (Masdar)" },
+          "ism": { "ar": "مُسْتَغْفَرٌ", "de": "das, wofür um Vergebung gebeten wird (Ism Maf'ul)" }
+        },
+        "imperativ": {
+          "madhi": { "ar": "اِسْتَغْفِرْ", "de": "Bitte um Vergebung!" },
+          "mudari": { "ar": "لَا تَسْتَغْفِرْ", "de": "Bitte nicht um Vergebung!" },
+          "ism": { "ar": "مُسْتَغْفَرٌ", "de": "Ort/Zeit der Bitte um Vergebung (Ableitung)" }
+        }
+      },
+      "notes": [
+        "Passiv-Madhi أُسْتَغْفِرَ mit Hamza-Qat' + Damma auf dem Anfangs-Alif, bei ≥60-fachem Zoom verifiziert (analog zur 7. Familie) — wie im Original gedruckt übernommen.",
+        "Rhetorische Implikation laut Original: Form X (hier am Beispiel اِسْتَمَعَ 'sehr gut zuhören', abgeleitet von سَمِعَ 'hören') drückt eine übertriebene Ausführung der Grundbedeutung aus.",
+        "Zeichengenau aus dem gerenderten Seitenbild von handout.pdf S. 70 (Abbildung 38: 'Tabelle für die achte große Familie') gelesen."
+      ],
+      "source": { "file": "handout.pdf", "page": 70 }
+    }
+  ]
+}

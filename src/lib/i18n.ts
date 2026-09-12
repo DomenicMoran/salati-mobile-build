@@ -10,7 +10,7 @@ import {
 } from './translate';
 
 export { detectDeviceLocale, type Locale } from './locale-detect';
-export { ensureLocale, isLocaleLoaded, preloadLocale, translate } from './translate';
+export { ensureLocale, getLocaleDict, isLocaleLoaded, preloadLocale, translate } from './translate';
 
 /**
  * Übersetzungs-Hook, gebunden an die persistierte Spracheinstellung.

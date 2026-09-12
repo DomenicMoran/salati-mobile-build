@@ -1,0 +1,1306 @@
+{
+  "schema": 1,
+  "tables": [
+    {
+      "id": "verb-madi-nasara-aktiv-matrix",
+      "kind": "verb",
+      "titleDe": "نَصَرَ (Vergangenheit, Aktiv) — vollständige Personenmatrix",
+      "termAr": "نَصَرَ",
+      "columns": [
+        {
+          "id": "plural",
+          "labelDe": "Plural"
+        },
+        {
+          "id": "dual",
+          "labelDe": "Dual"
+        },
+        {
+          "id": "singular",
+          "labelDe": "Singular"
+        }
+      ],
+      "rows": [
+        {
+          "id": "3-m",
+          "labelDe": "3. Person maskulin",
+          "labelAr": "الغَائِب المُذَكَّر"
+        },
+        {
+          "id": "3-f",
+          "labelDe": "3. Person feminin",
+          "labelAr": "الغَائِبَة"
+        },
+        {
+          "id": "2-m",
+          "labelDe": "2. Person maskulin",
+          "labelAr": "المُخَاطَب المُذَكَّر"
+        },
+        {
+          "id": "2-f",
+          "labelDe": "2. Person feminin",
+          "labelAr": "المُخَاطَبَة"
+        },
+        {
+          "id": "1",
+          "labelDe": "1. Person",
+          "labelAr": "المُتَكَلِّم"
+        }
+      ],
+      "cells": {
+        "1": {
+          "plural": {
+            "ar": "نَصَرْنَا",
+            "de": "wir halfen"
+          },
+          "dual": null,
+          "singular": {
+            "ar": "نَصَرْتُ",
+            "de": "ich half"
+          }
+        },
+        "3-m": {
+          "plural": {
+            "ar": "نَصَرُوا",
+            "de": "sie (m) halfen"
+          },
+          "dual": {
+            "ar": "نَصَرَا",
+            "de": "die beiden halfen"
+          },
+          "singular": {
+            "ar": "نَصَرَ",
+            "de": "er half"
+          }
+        },
+        "3-f": {
+          "plural": {
+            "ar": "نَصَرْنَ",
+            "de": "sie (w) halfen"
+          },
+          "dual": {
+            "ar": "نَصَرَتَا",
+            "de": "die beiden (w) halfen"
+          },
+          "singular": {
+            "ar": "نَصَرَتْ",
+            "de": "sie half"
+          }
+        },
+        "2-m": {
+          "plural": {
+            "ar": "نَصَرْتُمْ",
+            "de": "ihr (m) halftet"
+          },
+          "dual": {
+            "ar": "نَصَرْتُمَا",
+            "de": "ihr beide (m) halftet"
+          },
+          "singular": {
+            "ar": "نَصَرْتَ",
+            "de": "du (m) halfst"
+          }
+        },
+        "2-f": {
+          "plural": {
+            "ar": "نَصَرْتُنَّ",
+            "de": "ihr (w) halftet"
+          },
+          "dual": {
+            "ar": "نَصَرْتُمَا",
+            "de": "ihr beide (w) halftet"
+          },
+          "singular": {
+            "ar": "نَصَرْتِ",
+            "de": "du (w) halfst"
+          }
+        }
+      },
+      "notes": [
+        "Spaltenreihenfolge im Original (links→rechts gedruckt): Plural | Dual | Singular | Person. Die Anzeige folgt der arabischen Leserichtung (RTL): gelesen wird rechts beginnend, daher steht die Person-Spalte (hier als Zeilenbeschriftung geführt) rechts, danach Singular, dann Dual, zuletzt Plural links.",
+        "Vollständige Matrix inkl. der 2. Person Dual (2m-du/2f-du), die in tabellen-sprache.pdf (paradigmen.json, Tabelle verb-madi-nasara) NICHT abgedruckt ist. Diese Tabelle stammt aus handout.pdf, Abbildung 19, die die 2.-Person-Dual-Zeile enthält.",
+        "2m-du und 2f-du sind im Original identisch (نَصَرْتُمَا) — der 2. Person Dual unterscheidet das Arabische nicht nach Geschlecht.",
+        "Zeichengenau aus dem gerenderten Seitenbild von handout.pdf S. 45 (Abbildung 19) bei ≥12-fachem Zoom gelesen und mit den bereits verifizierten Formen aus paradigmen.json (verb-madi-nasara) abgeglichen (identisch für alle dort vorhandenen Zeilen).",
+        "Die 1. Person hat im Arabischen keinen eigenen Dual (nur Singular/Plural) — die Zelle \"1\"/\"dual\" ist daher null. Keine Lücke in der Quelle, sondern eine im Arabischen fehlende Grammatikkategorie (ebenso dokumentiert bei den freien Pronomen in paradigmen.json, Tabelle pronomen-frei)."
+      ],
+      "source": {
+        "file": "handout.pdf",
+        "page": 45
+      }
+    },
+    {
+      "id": "verb-mudari-nasara-aktiv-matrix",
+      "kind": "verb",
+      "titleDe": "يَنْصُرُ (Gegenwart, Aktiv) — vollständige Personenmatrix",
+      "termAr": "يَنْصُرُ",
+      "columns": [
+        {
+          "id": "plural",
+          "labelDe": "Plural"
+        },
+        {
+          "id": "dual",
+          "labelDe": "Dual"
+        },
+        {
+          "id": "singular",
+          "labelDe": "Singular"
+        }
+      ],
+      "rows": [
+        {
+          "id": "3-m",
+          "labelDe": "3. Person maskulin",
+          "labelAr": "الغَائِب المُذَكَّر"
+        },
+        {
+          "id": "3-f",
+          "labelDe": "3. Person feminin",
+          "labelAr": "الغَائِبَة"
+        },
+        {
+          "id": "2-m",
+          "labelDe": "2. Person maskulin",
+          "labelAr": "المُخَاطَب المُذَكَّر"
+        },
+        {
+          "id": "2-f",
+          "labelDe": "2. Person feminin",
+          "labelAr": "المُخَاطَبَة"
+        },
+        {
+          "id": "1",
+          "labelDe": "1. Person",
+          "labelAr": "المُتَكَلِّم"
+        }
+      ],
+      "cells": {
+        "1": {
+          "plural": {
+            "ar": "نَنْصُرُ",
+            "de": "wir helfen"
+          },
+          "dual": null,
+          "singular": {
+            "ar": "أَنْصُرُ",
+            "de": "ich helfe"
+          }
+        },
+        "3-m": {
+          "plural": {
+            "ar": "يَنْصُرُونَ",
+            "de": "sie (m) helfen"
+          },
+          "dual": {
+            "ar": "يَنْصُرَانِ",
+            "de": "die beiden helfen"
+          },
+          "singular": {
+            "ar": "يَنْصُرُ",
+            "de": "er hilft"
+          }
+        },
+        "3-f": {
+          "plural": {
+            "ar": "يَنْصُرْنَ",
+            "de": "sie (w) helfen"
+          },
+          "dual": {
+            "ar": "تَنْصُرَانِ",
+            "de": "die beiden (w) helfen"
+          },
+          "singular": {
+            "ar": "تَنْصُرُ",
+            "de": "sie hilft"
+          }
+        },
+        "2-m": {
+          "plural": {
+            "ar": "تَنْصُرُونَ",
+            "de": "ihr (m) helft"
+          },
+          "dual": {
+            "ar": "تَنْصُرَانِ",
+            "de": "ihr beide (m) helft"
+          },
+          "singular": {
+            "ar": "تَنْصُرُ",
+            "de": "du (m) hilfst"
+          }
+        },
+        "2-f": {
+          "plural": {
+            "ar": "تَنْصُرْنَ",
+            "de": "ihr (w) helft"
+          },
+          "dual": {
+            "ar": "تَنْصُرَانِ",
+            "de": "ihr beide (w) helft"
+          },
+          "singular": {
+            "ar": "تَنْصُرِينَ",
+            "de": "du (w) hilfst"
+          }
+        }
+      },
+      "notes": [
+        "Spaltenreihenfolge im Original (links→rechts gedruckt): Plural | Dual | Singular | Person. Die Anzeige folgt der arabischen Leserichtung (RTL): gelesen wird rechts beginnend, daher steht die Person-Spalte (hier als Zeilenbeschriftung geführt) rechts, danach Singular, dann Dual, zuletzt Plural links.",
+        "Vollständige Matrix inkl. der 2./3. Person Dual, die in tabellen-sprache.pdf (paradigmen.json, Tabelle verb-mudari-nasara) NICHT abgedruckt ist. Diese Tabelle stammt aus handout.pdf, Abbildung 20.",
+        "3f-du, 2m-du und 2f-du sind im Original identisch (تَنْصُرَانِ) — im Dual unterscheidet die Gegenwartsform nur die 3. Person maskulin (يَنْصُرَانِ) von allen übrigen Personen (تَنْصُرَانِ); das ist im Original-Text explizit so erklärt (Seite 46: 'Die 3. Person feminin im Dual gleicht der 2. Person im Dual, sowohl maskulin als auch feminin').",
+        "Ebenso erklärt das Original: 'die 3. Person feminin im Singular gleicht der 2. Person maskulin im Singular' (تَنْصُرُ für 3f-sg und 2m-sg identisch).",
+        "Zeichengenau aus dem gerenderten Seitenbild von handout.pdf S. 46 (Abbildung 20) bei ≥12-fachem Zoom gelesen und mit den bereits verifizierten Formen aus paradigmen.json (verb-mudari-nasara) abgeglichen (identisch für alle dort vorhandenen Zeilen).",
+        "Die 1. Person hat im Arabischen keinen eigenen Dual (nur Singular/Plural) — die Zelle \"1\"/\"dual\" ist daher null. Keine Lücke in der Quelle, sondern eine im Arabischen fehlende Grammatikkategorie (ebenso dokumentiert bei den freien Pronomen in paradigmen.json, Tabelle pronomen-frei)."
+      ],
+      "source": {
+        "file": "handout.pdf",
+        "page": 46
+      }
+    },
+    {
+      "id": "verb-madi-nasara-passiv-matrix",
+      "kind": "verb",
+      "titleDe": "نُصِرَ (Vergangenheit, Passiv) — vollständige Personenmatrix",
+      "termAr": "نُصِرَ",
+      "columns": [
+        {
+          "id": "plural",
+          "labelDe": "Plural"
+        },
+        {
+          "id": "dual",
+          "labelDe": "Dual"
+        },
+        {
+          "id": "singular",
+          "labelDe": "Singular"
+        }
+      ],
+      "rows": [
+        {
+          "id": "3-m",
+          "labelDe": "3. Person maskulin",
+          "labelAr": "الغَائِب المُذَكَّر"
+        },
+        {
+          "id": "3-f",
+          "labelDe": "3. Person feminin",
+          "labelAr": "الغَائِبَة"
+        },
+        {
+          "id": "2-m",
+          "labelDe": "2. Person maskulin",
+          "labelAr": "المُخَاطَب المُذَكَّر"
+        },
+        {
+          "id": "2-f",
+          "labelDe": "2. Person feminin",
+          "labelAr": "المُخَاطَبَة"
+        },
+        {
+          "id": "1",
+          "labelDe": "1. Person",
+          "labelAr": "المُتَكَلِّم"
+        }
+      ],
+      "cells": {
+        "1": {
+          "plural": {
+            "ar": "نُصِرْنَا",
+            "de": "uns wurde geholfen"
+          },
+          "dual": null,
+          "singular": {
+            "ar": "نُصِرْتُ",
+            "de": "mir wurde geholfen"
+          }
+        },
+        "3-m": {
+          "plural": {
+            "ar": "نُصِرُوا",
+            "de": "ihnen wurde geholfen"
+          },
+          "dual": {
+            "ar": "نُصِرَا",
+            "de": "ihnen beiden wurde geholfen"
+          },
+          "singular": {
+            "ar": "نُصِرَ",
+            "de": "ihm wurde geholfen"
+          }
+        },
+        "3-f": {
+          "plural": {
+            "ar": "نُصِرْنَ",
+            "de": "ihnen (f.) wurde geholfen"
+          },
+          "dual": {
+            "ar": "نُصِرَتَا",
+            "de": "ihnen beiden (f.) wurde geholfen"
+          },
+          "singular": {
+            "ar": "نُصِرَتْ",
+            "de": "ihr wurde geholfen"
+          }
+        },
+        "2-m": {
+          "plural": {
+            "ar": "نُصِرْتُمْ",
+            "de": "euch wurde geholfen"
+          },
+          "dual": {
+            "ar": "نُصِرْتُمَا",
+            "de": "euch beiden wurde geholfen"
+          },
+          "singular": {
+            "ar": "نُصِرْتَ",
+            "de": "dir wurde geholfen"
+          }
+        },
+        "2-f": {
+          "plural": {
+            "ar": "نُصِرْتُنَّ",
+            "de": "euch (f.) wurde geholfen"
+          },
+          "dual": {
+            "ar": "نُصِرْتُمَا",
+            "de": "euch beiden (f.) wurde geholfen"
+          },
+          "singular": {
+            "ar": "نُصِرْتِ",
+            "de": "dir (f.) wurde geholfen"
+          }
+        }
+      },
+      "notes": [
+        "Spaltenreihenfolge im Original (links→rechts gedruckt): Plural | Dual | Singular | Person. Die Anzeige folgt der arabischen Leserichtung (RTL): gelesen wird rechts beginnend, daher steht die Person-Spalte (hier als Zeilenbeschriftung geführt) rechts, danach Singular, dann Dual, zuletzt Plural links.",
+        "Passiv der Vergangenheit: Bildungsregel laut Original (handout.pdf S. 64): jeder Buchstabe außer Sukun erhält einen 'u'-Laut (Damma), der letzte Buchstabe vor den (unveränderten) Personalendungen erhält einen 'i'-Laut (Kasra).",
+        "2m-du und 2f-du sind im Original identisch (نُصِرْتُمَا).",
+        "Zeichengenau aus dem gerenderten Seitenbild von handout.pdf S. 64 (Abbildung 29) bei ≥14-fachem Zoom, zellenweise zugeschnitten, gelesen.",
+        "Die 1. Person hat im Arabischen keinen eigenen Dual (nur Singular/Plural) — die Zelle \"1\"/\"dual\" ist daher null. Keine Lücke in der Quelle, sondern eine im Arabischen fehlende Grammatikkategorie (ebenso dokumentiert bei den freien Pronomen in paradigmen.json, Tabelle pronomen-frei)."
+      ],
+      "source": {
+        "file": "handout.pdf",
+        "page": 64
+      }
+    },
+    {
+      "id": "verb-mudari-nasara-passiv-matrix",
+      "kind": "verb",
+      "titleDe": "يُنْصَرُ (Gegenwart, Passiv) — vollständige Personenmatrix",
+      "termAr": "يُنْصَرُ",
+      "columns": [
+        {
+          "id": "plural",
+          "labelDe": "Plural"
+        },
+        {
+          "id": "dual",
+          "labelDe": "Dual"
+        },
+        {
+          "id": "singular",
+          "labelDe": "Singular"
+        }
+      ],
+      "rows": [
+        {
+          "id": "3-m",
+          "labelDe": "3. Person maskulin",
+          "labelAr": "الغَائِب المُذَكَّر"
+        },
+        {
+          "id": "3-f",
+          "labelDe": "3. Person feminin",
+          "labelAr": "الغَائِبَة"
+        },
+        {
+          "id": "2-m",
+          "labelDe": "2. Person maskulin",
+          "labelAr": "المُخَاطَب المُذَكَّر"
+        },
+        {
+          "id": "2-f",
+          "labelDe": "2. Person feminin",
+          "labelAr": "المُخَاطَبَة"
+        },
+        {
+          "id": "1",
+          "labelDe": "1. Person",
+          "labelAr": "المُتَكَلِّم"
+        }
+      ],
+      "cells": {
+        "1": {
+          "plural": {
+            "ar": "نُنْصَرُ",
+            "de": "uns wird geholfen"
+          },
+          "dual": null,
+          "singular": {
+            "ar": "أُنْصَرُ",
+            "de": "mir wird geholfen"
+          }
+        },
+        "3-m": {
+          "plural": {
+            "ar": "يُنْصَرُونَ",
+            "de": "ihnen wird geholfen"
+          },
+          "dual": {
+            "ar": "يُنْصَرَانِ",
+            "de": "ihnen beiden wird geholfen"
+          },
+          "singular": {
+            "ar": "يُنْصَرُ",
+            "de": "ihm wird geholfen"
+          }
+        },
+        "3-f": {
+          "plural": {
+            "ar": "يُنْصَرْنَ",
+            "de": "ihnen (f.) wird geholfen"
+          },
+          "dual": {
+            "ar": "تُنْصَرَانِ",
+            "de": "ihnen beiden (f.) wird geholfen"
+          },
+          "singular": {
+            "ar": "تُنْصَرُ",
+            "de": "ihr wird geholfen"
+          }
+        },
+        "2-m": {
+          "plural": {
+            "ar": "تُنْصَرُونَ",
+            "de": "euch wird geholfen"
+          },
+          "dual": {
+            "ar": "تُنْصَرَانِ",
+            "de": "euch beiden wird geholfen"
+          },
+          "singular": {
+            "ar": "تُنْصَرُ",
+            "de": "dir wird geholfen"
+          }
+        },
+        "2-f": {
+          "plural": {
+            "ar": "تُنْصَرْنَ",
+            "de": "euch (f.) wird geholfen"
+          },
+          "dual": {
+            "ar": "تُنْصَرَانِ",
+            "de": "euch beiden (f.) wird geholfen"
+          },
+          "singular": {
+            "ar": "تُنْصَرِينَ",
+            "de": "dir (f.) wird geholfen"
+          }
+        }
+      },
+      "notes": [
+        "Spaltenreihenfolge im Original (links→rechts gedruckt): Plural | Dual | Singular | Person. Die Anzeige folgt der arabischen Leserichtung (RTL): gelesen wird rechts beginnend, daher steht die Person-Spalte (hier als Zeilenbeschriftung geführt) rechts, danach Singular, dann Dual, zuletzt Plural links.",
+        "Passiv der Gegenwart: Bildungsregel laut Original (handout.pdf S. 65): der erste Buchstabe erhält einen 'u'-Laut (Damma), alle anderen (außer Sukun) einen 'a'-Laut (Fatha).",
+        "3f-du, 2m-du und 2f-du sind im Original identisch (تُنْصَرَانِ) — dieselbe Dual-Zusammenfall-Regel wie im Aktiv.",
+        "Zeichengenau aus dem gerenderten Seitenbild von handout.pdf S. 65 (Abbildung 30) bei ≥20-fachem Zoom, zellenweise zugeschnitten, gelesen.",
+        "Die 1. Person hat im Arabischen keinen eigenen Dual (nur Singular/Plural) — die Zelle \"1\"/\"dual\" ist daher null. Keine Lücke in der Quelle, sondern eine im Arabischen fehlende Grammatikkategorie (ebenso dokumentiert bei den freien Pronomen in paradigmen.json, Tabelle pronomen-frei)."
+      ],
+      "source": {
+        "file": "handout.pdf",
+        "page": 65
+      }
+    },
+    {
+      "id": "amr-nasara-matrix",
+      "kind": "verb",
+      "titleDe": "الأَمْر (Befehlsform, aus نَصَرَ: hilf!) — vollständige Personenmatrix",
+      "termAr": "الأَمْر",
+      "columns": [
+        {
+          "id": "plural",
+          "labelDe": "Plural"
+        },
+        {
+          "id": "dual",
+          "labelDe": "Dual"
+        },
+        {
+          "id": "singular",
+          "labelDe": "Singular"
+        }
+      ],
+      "rows": [
+        {
+          "id": "3-m",
+          "labelDe": "3. Person maskulin",
+          "labelAr": "الغَائِب المُذَكَّر"
+        },
+        {
+          "id": "3-f",
+          "labelDe": "3. Person feminin",
+          "labelAr": "الغَائِبَة"
+        },
+        {
+          "id": "2-m",
+          "labelDe": "2. Person maskulin",
+          "labelAr": "المُخَاطَب المُذَكَّر"
+        },
+        {
+          "id": "2-f",
+          "labelDe": "2. Person feminin",
+          "labelAr": "المُخَاطَبَة"
+        },
+        {
+          "id": "1",
+          "labelDe": "1. Person",
+          "labelAr": "المُتَكَلِّم"
+        }
+      ],
+      "cells": {
+        "1": {
+          "plural": null,
+          "dual": null,
+          "singular": null
+        },
+        "3-m": {
+          "plural": null,
+          "dual": null,
+          "singular": null
+        },
+        "3-f": {
+          "plural": null,
+          "dual": null,
+          "singular": null
+        },
+        "2-m": {
+          "plural": {
+            "ar": "اُنْصُرُوا",
+            "de": "Helft! (m)"
+          },
+          "dual": {
+            "ar": "اُنْصُرَا",
+            "de": "Helft (ihr beide)!"
+          },
+          "singular": {
+            "ar": "اُنْصُرْ",
+            "de": "Hilf! (m)"
+          }
+        },
+        "2-f": {
+          "plural": {
+            "ar": "اُنْصُرْنَ",
+            "de": "Helft! (w)"
+          },
+          "dual": {
+            "ar": "اُنْصُرَا",
+            "de": "Helft (ihr beide)!"
+          },
+          "singular": {
+            "ar": "اُنْصُرِي",
+            "de": "Hilf! (w)"
+          }
+        }
+      },
+      "notes": [
+        "Spaltenreihenfolge im Original (links→rechts gedruckt): Plural | Dual | Singular | Person. Die Anzeige folgt der arabischen Leserichtung (RTL): gelesen wird rechts beginnend, daher steht die Person-Spalte (hier als Zeilenbeschriftung geführt) rechts, danach Singular, dann Dual, zuletzt Plural links.",
+        "Formen sind identisch mit paradigmen.json, Tabelle amr-nasara (dort aus tabellen-sprache.pdf S. 11) — kreuzverifiziert.",
+        "Das Anfangs-Alif (hier als اُ notiert) ist ein 'Hamzat al Wasl': ein tonloses Verbindungs-Alif, dessen Lesung (hier 'u') vom folgenden Buchstaben abhängt und beim Weiterlesen im Satz entfällt (handout.pdf S. 49).",
+        "Der Imperativ (Amr) existiert grammatisch nur für die 2. Person — die Zeilen \"3-m\", \"3-f\" und \"1\" sind daher vollständig null. Keine Lücke, sondern grammatische Vollständigkeit.",
+        "Die Dual-Form ist im Original für 2. Person maskulin und feminin identisch abgedruckt und wird daher unverändert in beide Zellen (2-m/dual und 2-f/dual) übernommen — keine neu erfundene Form, sondern dieselbe bereits geprüfte Zeichenkette aus der vormals gemeinsam geführten Zeile \"2-du\"."
+      ],
+      "source": {
+        "file": "handout.pdf",
+        "page": 50
+      }
+    },
+    {
+      "id": "nahy-nasara-matrix",
+      "kind": "verb",
+      "titleDe": "النَّهْي (Verbot, aus نَصَرَ: hilf nicht!) — vollständige Personenmatrix",
+      "termAr": "النَّهْي",
+      "columns": [
+        {
+          "id": "plural",
+          "labelDe": "Plural"
+        },
+        {
+          "id": "dual",
+          "labelDe": "Dual"
+        },
+        {
+          "id": "singular",
+          "labelDe": "Singular"
+        }
+      ],
+      "rows": [
+        {
+          "id": "3-m",
+          "labelDe": "3. Person maskulin",
+          "labelAr": "الغَائِب المُذَكَّر"
+        },
+        {
+          "id": "3-f",
+          "labelDe": "3. Person feminin",
+          "labelAr": "الغَائِبَة"
+        },
+        {
+          "id": "2-m",
+          "labelDe": "2. Person maskulin",
+          "labelAr": "المُخَاطَب المُذَكَّر"
+        },
+        {
+          "id": "2-f",
+          "labelDe": "2. Person feminin",
+          "labelAr": "المُخَاطَبَة"
+        },
+        {
+          "id": "1",
+          "labelDe": "1. Person",
+          "labelAr": "المُتَكَلِّم"
+        }
+      ],
+      "cells": {
+        "1": {
+          "plural": null,
+          "dual": null,
+          "singular": null
+        },
+        "3-m": {
+          "plural": null,
+          "dual": null,
+          "singular": null
+        },
+        "3-f": {
+          "plural": null,
+          "dual": null,
+          "singular": null
+        },
+        "2-m": {
+          "plural": {
+            "ar": "لَا تَنْصُرُوا",
+            "de": "Helft nicht! (m)"
+          },
+          "dual": {
+            "ar": "لَا تَنْصُرَا",
+            "de": "Helft nicht (ihr beide)!"
+          },
+          "singular": {
+            "ar": "لَا تَنْصُرْ",
+            "de": "Hilf nicht! (m)"
+          }
+        },
+        "2-f": {
+          "plural": {
+            "ar": "لَا تَنْصُرْنَ",
+            "de": "Helft nicht! (w)"
+          },
+          "dual": {
+            "ar": "لَا تَنْصُرَا",
+            "de": "Helft nicht (ihr beide)!"
+          },
+          "singular": {
+            "ar": "لَا تَنْصُرِي",
+            "de": "Hilf nicht! (w)"
+          }
+        }
+      },
+      "notes": [
+        "Spaltenreihenfolge im Original (links→rechts gedruckt): Plural | Dual | Singular | Person. Die Anzeige folgt der arabischen Leserichtung (RTL): gelesen wird rechts beginnend, daher steht die Person-Spalte (hier als Zeilenbeschriftung geführt) rechts, danach Singular, dann Dual, zuletzt Plural links.",
+        "Gebildet aus لَا (Verneinungspartikel für den Imperativ) + der Gegenwartsform im Jussiv (Majzum), Endung wie beim Amr verkürzt.",
+        "Das Verbot (Nahy) existiert grammatisch nur für die 2. Person — die Zeilen \"3-m\", \"3-f\" und \"1\" sind daher vollständig null. Keine Lücke, sondern grammatische Vollständigkeit.",
+        "Die Dual-Form ist im Original für 2. Person maskulin und feminin identisch abgedruckt und wird daher unverändert in beide Zellen (2-m/dual und 2-f/dual) übernommen — keine neu erfundene Form, sondern dieselbe bereits geprüfte Zeichenkette aus der vormals gemeinsam geführten Zeile \"2-du\"."
+      ],
+      "source": {
+        "file": "handout.pdf",
+        "page": 49
+      }
+    },
+    {
+      "id": "bab-fataha-mahmooz-qaraa",
+      "kind": "verb",
+      "titleDe": "Bab Fata'ha (Mahmooz) — قَرَأَ (lesen)",
+      "termAr": "قَرَأَ",
+      "columns": [
+        {
+          "id": "madhi",
+          "labelDe": "Madhi / Amr"
+        },
+        {
+          "id": "mudari",
+          "labelDe": "Mudari / Nahy"
+        },
+        {
+          "id": "masdar",
+          "labelDe": "Masdar"
+        },
+        {
+          "id": "ism",
+          "labelDe": "Ism (Fa'il / Maf'ul / Ableitung)"
+        }
+      ],
+      "rows": [
+        {
+          "id": "aktiv",
+          "labelDe": "Aktiv"
+        },
+        {
+          "id": "passiv",
+          "labelDe": "Passiv"
+        },
+        {
+          "id": "imperativ",
+          "labelDe": "Imperativ (Amr/Nahy)"
+        }
+      ],
+      "cells": {
+        "aktiv": {
+          "madhi": {
+            "ar": "قَرَأَ",
+            "de": "er las"
+          },
+          "mudari": {
+            "ar": "يَقْرَأُ",
+            "de": "er liest"
+          },
+          "masdar": {
+            "ar": "قِرَاءَةً",
+            "de": "das Lesen (Masdar)"
+          },
+          "ism": {
+            "ar": "قَارِئ",
+            "de": "Lesender (Ism Fa'il)"
+          }
+        },
+        "passiv": {
+          "madhi": {
+            "ar": "قُرِئَ",
+            "de": "es wurde gelesen"
+          },
+          "mudari": {
+            "ar": "يُقْرَأُ",
+            "de": "es wird gelesen"
+          },
+          "masdar": {
+            "ar": "قِرَاءَةً",
+            "de": "das Lesen (Masdar)"
+          },
+          "ism": {
+            "ar": "مَقْرُوء",
+            "de": "Gelesenes (Ism Maf'ul)"
+          }
+        },
+        "imperativ": {
+          "madhi": {
+            "ar": "اِقْرَأْ",
+            "de": "Lies!"
+          },
+          "mudari": {
+            "ar": "لَا تَقْرَأْ",
+            "de": "Lies nicht!"
+          },
+          "ism": {
+            "ar": "مَقْرَأ",
+            "de": "Ort/Zeit des Lesens (Ableitung, Ism Makan/Zaman)"
+          }
+        }
+      },
+      "notes": [
+        "Kapitel 8 (Sarf – Fortgeschrittene Morphologie) behandelt Mahmooz-Verben (Verben mit Hamza als Wurzelbuchstabe) systematisch anhand solcher 3×4-Tabellen: Zeile 'Aktiv' = Madhi/Mudari/Masdar/Ism Fa'il, Zeile 'Passiv' = die passiven Gegenstücke, Zeile 'Imperativ' = Amr/Nahy sowie eine weitere Ableitung (hier Ism Makan/Zaman). Diese Zuordnung ist eine anhand des gerenderten Seitenbilds verifizierte Struktur-Beobachtung (keine gedruckten Spaltenüberschriften im Original).",
+        "Die Spalte 'fahuwa' (فَهُوَ, 'so ist er/es') aus dem Original wurde als reine Lese-Einleitungsfloskel vor Ism Fa'il/Ism Maf'ul weggelassen (keine eigene Wortform).",
+        "In 'imperativ'/'masdar' gibt es im Original keine Zelle (Imperativ hat keinen Masdar) — daher hier ausgelassen statt geraten.",
+        "Ism Fa'il (قَارِئ) und Ism Maf'ul (مَقْرُوء) sind im Original ohne Tanwin/Kasus-Endung abgedruckt (bloße Zitierform); der Masdar (قِرَاءَةً) und die Ableitung sind uneinheitlich — hier zeichengenau wie im gerenderten Bild übernommen (Masdar mit Fathatan, مَقْرَأ ohne Tanwin).",
+        "Zeichengenau aus dem gerenderten Seitenbild von handout.pdf S. 103 (Abbildung 41, Tabellen-Bbox per PyMuPDF find_tables ermittelt) bei ≥16- bis 50-fachem Zoom, zellenweise zugeschnitten, gelesen."
+      ],
+      "source": {
+        "file": "handout.pdf",
+        "page": 103
+      }
+    },
+    {
+      "id": "bab-samia-mahmooz-amina",
+      "kind": "verb",
+      "titleDe": "Bab Sami'a (Mahmooz) — أَمِنَ (sicher/vertrauensvoll sein)",
+      "termAr": "أَمِنَ",
+      "columns": [
+        {
+          "id": "madhi",
+          "labelDe": "Madhi / Amr"
+        },
+        {
+          "id": "mudari",
+          "labelDe": "Mudari / Nahy"
+        },
+        {
+          "id": "masdar",
+          "labelDe": "Masdar"
+        },
+        {
+          "id": "ism",
+          "labelDe": "Ism (Fa'il / Maf'ul / Ableitung)"
+        }
+      ],
+      "rows": [
+        {
+          "id": "aktiv",
+          "labelDe": "Aktiv"
+        },
+        {
+          "id": "passiv",
+          "labelDe": "Passiv"
+        },
+        {
+          "id": "imperativ",
+          "labelDe": "Imperativ (Amr/Nahy)"
+        }
+      ],
+      "cells": {
+        "aktiv": {
+          "madhi": {
+            "ar": "أَمِنَ",
+            "de": "er war sicher / er vertraute"
+          },
+          "mudari": {
+            "ar": "يَأْمَنُ",
+            "de": "er ist sicher / er vertraut"
+          },
+          "masdar": {
+            "ar": "أَمْنًا",
+            "de": "Sicherheit (Masdar)"
+          },
+          "ism": {
+            "ar": "آمِن",
+            "de": "Sicherer / Gläubiger (Ism Fa'il)"
+          }
+        },
+        "passiv": {
+          "madhi": {
+            "ar": "أُمِنَ",
+            "de": "ihm wurde vertraut"
+          },
+          "mudari": {
+            "ar": "يُؤْمَنُ",
+            "de": "ihm wird vertraut"
+          },
+          "masdar": {
+            "ar": "أَمْنًا",
+            "de": "Sicherheit (Masdar)"
+          },
+          "ism": {
+            "ar": "مَأْمُون",
+            "de": "Vertrauenswürdiger (Ism Maf'ul)"
+          }
+        },
+        "imperativ": {
+          "madhi": {
+            "ar": "إِيْمَنْ",
+            "de": "Sei sicher! / Vertraue!"
+          },
+          "mudari": {
+            "ar": "لَا تَأْمَنْ",
+            "de": "Sei nicht sicher! / Vertraue nicht!"
+          },
+          "ism": {
+            "ar": "مَأْمَن",
+            "de": "Zufluchtsort (Ableitung, Ism Makan/Zaman)"
+          }
+        }
+      },
+      "notes": [
+        "Gleiche Tabellenstruktur wie bab-fataha-mahmooz-qaraa (siehe dortige Notes zur 3×4-Struktur und zur weggelassenen 'fahuwa'-Spalte).",
+        "Sonderfall Mahmooz al-Fa' (Hamza als 1. Wurzelbuchstabe): die Befehlsform اِيْمَنْ ist unregelmäßig gebildet, weil das eingangs nötige tonlose Hilfs-Alif (Hamzat al Wasl) mit dem wurzeleigenen Hamza verschmilzt; im Original als Alif mit Hamza darunter/darüber plus Ya geschrieben (kein Diktat-/Rate-Fehler).",
+        "Ism Fa'il (آمِن) und Ism Maf'ul (مَأْمُون) sind im Original ohne Tanwin/Kasus-Endung abgedruckt (bloße Zitierform), ebenso die Ableitung مَأْمَن; der Masdar (أَمْنًا) trägt Fathatan — zeichengenau wie im gerenderten Bild übernommen.",
+        "Zeichengenau aus dem gerenderten Seitenbild von handout.pdf S. 104 (Abbildung 42, Tabellen-Bbox per PyMuPDF find_tables ermittelt) bei ≥16- bis 40-fachem Zoom, zellenweise zugeschnitten, gelesen."
+      ],
+      "source": {
+        "file": "handout.pdf",
+        "page": 104
+      }
+    },
+    {
+      "id": "bab-daraba-mahmooz-abaqa",
+      "kind": "verb",
+      "titleDe": "Bab Daraba (Mahmooz) — أَبَقَ (weglaufen, bes. ein Sklave)",
+      "termAr": "أَبَقَ",
+      "columns": [
+        { "id": "madhi", "labelDe": "Madhi / Amr" },
+        { "id": "mudari", "labelDe": "Mudari / Nahy" },
+        { "id": "masdar", "labelDe": "Masdar" },
+        { "id": "ism", "labelDe": "Ism (Fa'il / Maf'ul / Ableitung)" }
+      ],
+      "rows": [
+        { "id": "aktiv", "labelDe": "Aktiv" },
+        { "id": "passiv", "labelDe": "Passiv" },
+        { "id": "imperativ", "labelDe": "Imperativ (Amr/Nahy)" }
+      ],
+      "cells": {
+        "aktiv": {
+          "madhi": { "ar": "أَبَقَ", "de": "er lief weg / entfloh (bes. ein Sklave)" },
+          "mudari": { "ar": "يَأْبِقُ", "de": "er läuft weg / entflieht" },
+          "masdar": { "ar": "إِبَاقًا", "de": "das Weglaufen (Masdar)" },
+          "ism": { "ar": "آبِق", "de": "Ausreißer/Flüchtiger (Ism Fa'il)" }
+        },
+        "passiv": {
+          "madhi": { "ar": "أُبِقَ", "de": "(Passivform, morphologisch — أبق ist eigentlich intransitiv)" },
+          "mudari": { "ar": "يُؤْبَقُ", "de": "(Passivform, morphologisch)" },
+          "masdar": { "ar": "إِبَاقًا", "de": "das Weglaufen (Masdar)" },
+          "ism": { "ar": "مَأْبُوْق", "de": "(Ism Maf'ul, morphologisch)" }
+        },
+        "imperativ": {
+          "madhi": { "ar": "اِيْبِقْ", "de": "Lauf weg!" },
+          "mudari": { "ar": "لَا تَأْبِقْ", "de": "Lauf nicht weg!" },
+          "ism": { "ar": "مَأْبَق", "de": "Ort/Zeit des Weglaufens (Ableitung, Ism Makan/Zaman)" }
+        }
+      },
+      "notes": [
+        "Gleiche 3×5-Tabellenstruktur wie bab-fataha-mahmooz-qaraa (Zeile Aktiv = Madhi/Mudari/Masdar/Ism Fa'il, Zeile Passiv = passive Gegenstücke, Zeile Imperativ = Amr/Nahy/Ableitung; 'fahuwa'-Spalte weggelassen).",
+        "أَبَقَ ist grammatisch intransitiv (weglaufen); die Passiv-Zeile wird im Original dennoch rein morphologisch dekliniert (wie bei allen Bab-Tabellen dieses Kapitels) — die 'de'-Glossen für die Passiv-Zeile sind daher bewusst als reine Formangabe gekennzeichnet statt eine erfundene natürliche Bedeutung vorzutäuschen.",
+        "Imperativ اِيْبِقْ: Mahmooz al-Fa' (Hamza als 1. Wurzelbuchstabe, Bab-Daraba-Muster mit Kasra im Mudari) — Hamzat-al-Wasl (Kasra) + wurzeleigenes Hamza (Sukun) verschmelzen zu Ya, exakt dieselbe Tachfif-Regel wie bei اِيْمَنْ in bab-samia-mahmooz-amina belegt und dort begründet.",
+        "Ism Fa'il (آبِق) und Ism Maf'ul (مَأْبُوْق) ohne Tanwin/Kasus-Endung (Zitierform); Masdar (إِبَاقًا) mit Fathatan.",
+        "Zeichengenau aus dem gerenderten Seitenbild von handout.pdf S. 104 (Abbildung 43, Tabellen-Bbox per PyMuPDF find_tables ermittelt, Tabellenindex 2 von 6 auf der Seite) bei 20- bis 90-fachem Zoom, ganze Tabelle und einzelne Zellen zugeschnitten, gelesen. Amr-Zelle zusätzlich bei 200-fachem Zoom auf das Anfangs-Alif gegengeprüft (kein separates Hamza-Zeichen, reines Kasra-Alif)."
+      ],
+      "source": { "file": "handout.pdf", "page": 104 }
+    },
+    {
+      "id": "bab-nasara-mahmooz-akala",
+      "kind": "verb",
+      "titleDe": "Bab Nasara (Mahmooz) — أَكَلَ (essen)",
+      "termAr": "أَكَلَ",
+      "columns": [
+        { "id": "madhi", "labelDe": "Madhi / Amr" },
+        { "id": "mudari", "labelDe": "Mudari / Nahy" },
+        { "id": "masdar", "labelDe": "Masdar" },
+        { "id": "ism", "labelDe": "Ism (Fa'il / Maf'ul / Ableitung)" }
+      ],
+      "rows": [
+        { "id": "aktiv", "labelDe": "Aktiv" },
+        { "id": "passiv", "labelDe": "Passiv" },
+        { "id": "imperativ", "labelDe": "Imperativ (Amr/Nahy)" }
+      ],
+      "cells": {
+        "aktiv": {
+          "madhi": { "ar": "أَكَلَ", "de": "er aß" },
+          "mudari": { "ar": "يَأْكُلُ", "de": "er isst" },
+          "masdar": { "ar": "أَكْلًا", "de": "das Essen (Masdar)" },
+          "ism": { "ar": "آكِل", "de": "Essender (Ism Fa'il)" }
+        },
+        "passiv": {
+          "madhi": { "ar": "أُكِلَ", "de": "es wurde gegessen" },
+          "mudari": { "ar": "يُؤْكَلُ", "de": "es wird gegessen" },
+          "masdar": { "ar": "أَكْلًا", "de": "das Essen (Masdar)" },
+          "ism": { "ar": "مَأْكُوْل", "de": "Gegessenes (Ism Maf'ul)" }
+        },
+        "imperativ": {
+          "madhi": { "ar": "كُلْ", "de": "Iss!" },
+          "mudari": { "ar": "لَا تَأْكُلْ", "de": "Iss nicht!" },
+          "ism": { "ar": "مَأْكَل", "de": "Speise / Ort des Essens (Ableitung, Ism Makan/Zaman)" }
+        }
+      },
+      "notes": [
+        "Gleiche 3×5-Tabellenstruktur wie bab-fataha-mahmooz-qaraa (siehe dortige Notes).",
+        "Amr كُلْ (ohne jedes Hamza-Element): أَكَلَ gehört neben أَخَذَ und أَمَرَ zu den drei klassischen Ausnahmen der arabischen Grammatik, bei denen das wurzeleigene Hamza im Imperativ vollständig entfällt (keine Verkürzung wie bei anderen Mahmooz-al-Fa'-Verben, sondern Wegfall) — bei ≥90-fachem Zoom gegengeprüft: nur ك (Damma) + ل (Sukun), kein Hamza-Zeichen vorhanden.",
+        "Ism Fa'il (آكِل) und Ism Maf'ul (مَأْكُوْل) ohne Tanwin/Kasus-Endung; Masdar (أَكْلًا) mit Fathatan — bei ≥90-fachem Zoom gegen Hamza-Verwechslung geprüft (zwei parallele Striche = Fathatan, kein Hamza-Haken).",
+        "Zeichengenau aus dem gerenderten Seitenbild von handout.pdf S. 104 (Abbildung 44, Tabellenindex 3 von 6 auf der Seite) bei 30- bis 90-fachem Zoom, ganze Tabelle und einzelne Zellen zugeschnitten, gelesen."
+      ],
+      "source": { "file": "handout.pdf", "page": 104 }
+    },
+    {
+      "id": "bab-tafil2-mahmooz-ajjara",
+      "kind": "verb",
+      "titleDe": "Taf'il II (Mahmooz) — أَجَّرَ (vermieten)",
+      "termAr": "أَجَّرَ",
+      "columns": [
+        { "id": "madhi", "labelDe": "Madhi / Amr" },
+        { "id": "mudari", "labelDe": "Mudari / Nahy" },
+        { "id": "masdar", "labelDe": "Masdar" },
+        { "id": "ism", "labelDe": "Ism (Fa'il / Maf'ul / Ableitung)" }
+      ],
+      "rows": [
+        { "id": "aktiv", "labelDe": "Aktiv" },
+        { "id": "passiv", "labelDe": "Passiv" },
+        { "id": "imperativ", "labelDe": "Imperativ (Amr/Nahy)" }
+      ],
+      "cells": {
+        "aktiv": {
+          "madhi": { "ar": "أَجَّرَ", "de": "er vermietete" },
+          "mudari": { "ar": "يُؤَجِّرُ", "de": "er vermietet" },
+          "masdar": { "ar": "تَأْجِيْرًا", "de": "das Vermieten (Masdar)" },
+          "ism": { "ar": "مُؤَجِّر", "de": "Vermieter (Ism Fa'il)" }
+        },
+        "passiv": {
+          "madhi": { "ar": "أُجِّرَ", "de": "es wurde vermietet" },
+          "mudari": { "ar": "يُؤَجَّرُ", "de": "es wird vermietet" },
+          "masdar": { "ar": "تَأْجِيْرًا", "de": "das Vermieten (Masdar)" },
+          "ism": { "ar": "مُؤَجَّر", "de": "Vermietetes/Angestellter (Ism Maf'ul)" }
+        },
+        "imperativ": {
+          "madhi": { "ar": "أَجِّر", "de": "Vermiete!" },
+          "mudari": { "ar": "لَا تُؤَجِّرْ", "de": "Vermiete nicht!" },
+          "ism": { "ar": "مُؤَجَّر", "de": "(Ableitung — dieselbe Form wie Ism Maf'ul)" }
+        }
+      },
+      "notes": [
+        "Erste Tabelle einer verstärkten Form (Form II, Taf'il) in dieser Sammlung: Struktur bleibt 3×5 wie bei Form I, aber Ism Fa'il/Ism Maf'ul folgen dem Form-II-Muster مُفَعِّل/مُفَعَّل (Doppelkonsonant mit Kasra bzw. Fatha) statt der Form-I-Muster.",
+        "Beobachtung: bei Form II (und den weiteren verstärkten Formen dieser Sammlung) ist die 'Ableitung' in der Imperativ-Zeile keine eigene Ism-Makan/Zaman-Bildung wie bei Form I, sondern dieselbe Ism-Maf'ul-Form wird wiederverwendet — bei ≥90-fachem Zoom verifiziert (مُؤَجَّر mit Fatha auf dem verdoppelten Jim, identisch zur Passiv-Zeile, nicht مُؤَجِّر mit Kasra wie die Ism-Fa'il-Zeile).",
+        "Die Imperativ-/Ableitungs-Zelle sitzt im gerenderten Bild sichtbar rechts von der nominellen Spaltengrenze der Ism-Spalte (die leere 'fahuwa'-Spalte der Zeile bleibt ungenutzt und das Wort wird dadurch weiter zur Bildmitte gesetzt) — inhaltlich trotzdem eindeutig der Ism-Spalte zugeordnet.",
+        "Zeichengenau aus dem gerenderten Seitenbild von handout.pdf S. 104 (Abbildung 45, Tabellenindex 4 von 6 auf der Seite) bei 30- bis 130-fachem Zoom, ganze Tabelle, Zeilenpaare und einzelne Zellen zugeschnitten, gelesen."
+      ],
+      "source": { "file": "handout.pdf", "page": 104 }
+    },
+    {
+      "id": "bab-mufaala3-mahmooz-aakhadha",
+      "kind": "verb",
+      "titleDe": "Mufa'ala III (Mahmooz) — آخَذَ (zur Rechenschaft ziehen)",
+      "termAr": "آخَذَ",
+      "columns": [
+        { "id": "madhi", "labelDe": "Madhi / Amr" },
+        { "id": "mudari", "labelDe": "Mudari / Nahy" },
+        { "id": "masdar", "labelDe": "Masdar" },
+        { "id": "ism", "labelDe": "Ism (Fa'il / Maf'ul / Ableitung)" }
+      ],
+      "rows": [
+        { "id": "aktiv", "labelDe": "Aktiv" },
+        { "id": "passiv", "labelDe": "Passiv" },
+        { "id": "imperativ", "labelDe": "Imperativ (Amr/Nahy)" }
+      ],
+      "cells": {
+        "aktiv": {
+          "madhi": { "ar": "آخَذَ", "de": "er zog zur Rechenschaft / nahm übel" },
+          "mudari": { "ar": "يُؤَاخِذُ", "de": "er zieht zur Rechenschaft" },
+          "masdar": { "ar": "مُؤَاخَذَة", "de": "das Zur-Rechenschaft-Ziehen (Masdar)" },
+          "ism": { "ar": "مُؤَاخِذ", "de": "zur-Rechenschaft-Ziehender (Ism Fa'il)" }
+        },
+        "passiv": {
+          "madhi": { "ar": "أُوْخِذَ", "de": "er wurde zur Rechenschaft gezogen" },
+          "mudari": { "ar": "يُؤَاخَذُ", "de": "er wird zur Rechenschaft gezogen" },
+          "masdar": { "ar": "مُؤَاخَذَة", "de": "das Zur-Rechenschaft-Ziehen (Masdar)" },
+          "ism": { "ar": "مُؤَاخَذ", "de": "zur Rechenschaft Gezogener (Ism Maf'ul)" }
+        },
+        "imperativ": {
+          "madhi": { "ar": "آخِذ", "de": "Zieh zur Rechenschaft!" },
+          "mudari": { "ar": "لَا تُؤَاخِذْ", "de": "Zieh nicht zur Rechenschaft! (auch: nimm es mir nicht übel)" },
+          "ism": { "ar": "مُؤَاخَذ", "de": "(Ableitung — dieselbe Form wie Ism Maf'ul)" }
+        }
+      },
+      "notes": [
+        "Erste Form-III-Tabelle (Mufa'ala) dieser Sammlung: Masdar folgt dem Form-III-Muster مُفَاعَلَة (hier مُؤَاخَذَة, Ta-marbuta statt Tanwin-Alif wie bei Form I), Passiv-Madhi dem Muster فُوعِلَ (أُوْخِذَ — Hamzat-al-Wasl+Damma vor wurzeleigenem Hamza-Sukun wird zu Waw, gleiche Tachfif-Familie wie die Ya-Bildung bei Mahmooz-al-Fa'-Verben mit Kasra).",
+        "لَا تُؤَاخِذْ ist ein im heutigen Arabisch geläufiger Höflichkeitsausdruck ('nimm es mir nicht übel', wörtlich 'zieh mich nicht zur Rechenschaft') — hier als wörtliche Grammatikform belegt, nicht als eigene Vokabel ergänzt.",
+        "Ableitungs-Zelle der Imperativ-Zeile identisch zur Ism-Maf'ul-Form (مُؤَاخَذ mit Fatha) — dieselbe Beobachtung wie bei bab-tafil2-mahmooz-ajjara, bei ≥100-fachem Zoom verifiziert.",
+        "Zeichengenau aus dem gerenderten Seitenbild von handout.pdf S. 104 (Abbildung 46, Tabellenindex 5 von 6 auf der Seite) bei 30- bis 100-fachem Zoom, ganze Tabelle und einzelne Zellen zugeschnitten, gelesen."
+      ],
+      "source": { "file": "handout.pdf", "page": 104 }
+    },
+    {
+      "id": "bab-ifal4-mahmooz-aamana",
+      "kind": "verb",
+      "titleDe": "If'al IV (Mahmooz) — آمَنَ (glauben)",
+      "termAr": "آمَنَ",
+      "columns": [
+        { "id": "madhi", "labelDe": "Madhi / Amr" },
+        { "id": "mudari", "labelDe": "Mudari / Nahy" },
+        { "id": "masdar", "labelDe": "Masdar" },
+        { "id": "ism", "labelDe": "Ism (Fa'il / Maf'ul / Ableitung)" }
+      ],
+      "rows": [
+        { "id": "aktiv", "labelDe": "Aktiv" },
+        { "id": "passiv", "labelDe": "Passiv" },
+        { "id": "imperativ", "labelDe": "Imperativ (Amr/Nahy)" }
+      ],
+      "cells": {
+        "aktiv": {
+          "madhi": { "ar": "آمَنَ", "de": "er glaubte" },
+          "mudari": { "ar": "يُؤْمِنُ", "de": "er glaubt" },
+          "masdar": { "ar": "إِيْمَانًا", "de": "der Glaube (Masdar)" },
+          "ism": { "ar": "مُؤْمِن", "de": "Gläubiger (Ism Fa'il)" }
+        },
+        "passiv": {
+          "madhi": { "ar": "أُوْمِنَ", "de": "ihm wurde geglaubt" },
+          "mudari": { "ar": "يُؤْمَنُ", "de": "ihm wird geglaubt" },
+          "masdar": { "ar": "إِيْمَانًا", "de": "der Glaube (Masdar)" },
+          "ism": { "ar": "مُؤْمَن", "de": "(Ism Maf'ul)" }
+        },
+        "imperativ": {
+          "madhi": { "ar": "آمِن", "de": "Glaube!" },
+          "mudari": { "ar": "لَا تُؤْمِنْ", "de": "Glaube nicht!" },
+          "ism": { "ar": "مُؤْمَن", "de": "(Ableitung — dieselbe Form wie Ism Maf'ul)" }
+        }
+      },
+      "notes": [
+        "Form IV (If'al) desselben Wurzel-Musters wie bab-samia-mahmooz-amina (أَمِنَ, Wurzel ء-م-ن), hier die verstärkte Form آمَنَ (glauben) — nicht zu verwechseln mit der Form-I-Bedeutung 'sicher sein/vertrauen' der bereits vorhandenen Tabelle.",
+        "Passiv-Madhi أُوْمِنَ: Hamzat-al-Wasl+Damma vor wurzeleigenem Hamza-Sukun wird zu Waw (gleiche Tachfif-Regel wie bei bab-mufaala3-mahmooz-aakhadha).",
+        "Masdar إِيْمَانًا mit Fathatan (zwei parallele Striche vor dem Alif) — bei ≥30-fachem Zoom im Vollbild klar von einem einzelnen Hamza-Haken unterscheidbar geprüft.",
+        "Zeichengenau aus dem gerenderten Seitenbild von handout.pdf S. 105 (Abbildung 47, erste von fünf Tabellen auf der Seite) bei 30-fachem Zoom, ganze Tabelle zugeschnitten, gelesen."
+      ],
+      "source": { "file": "handout.pdf", "page": 105 }
+    },
+    {
+      "id": "bab-tafaul5-mahmooz-taammala",
+      "kind": "verb",
+      "titleDe": "Tafa'ul V (Mahmooz) — تَأَمَّلَ (nachdenken, betrachten)",
+      "termAr": "تَأَمَّلَ",
+      "columns": [
+        { "id": "madhi", "labelDe": "Madhi / Amr" },
+        { "id": "mudari", "labelDe": "Mudari / Nahy" },
+        { "id": "masdar", "labelDe": "Masdar" },
+        { "id": "ism", "labelDe": "Ism (Fa'il / Maf'ul / Ableitung)" }
+      ],
+      "rows": [
+        { "id": "aktiv", "labelDe": "Aktiv" },
+        { "id": "passiv", "labelDe": "Passiv" },
+        { "id": "imperativ", "labelDe": "Imperativ (Amr/Nahy)" }
+      ],
+      "cells": {
+        "aktiv": {
+          "madhi": { "ar": "تَأَمَّلَ", "de": "er dachte nach / betrachtete" },
+          "mudari": { "ar": "يَتَأَمَّلُ", "de": "er denkt nach / betrachtet" },
+          "masdar": { "ar": "تَأَمُّلًا", "de": "das Nachdenken/Betrachten (Masdar)" },
+          "ism": { "ar": "مُتَأَمِّل", "de": "Nachdenkender/Betrachtender (Ism Fa'il)" }
+        },
+        "passiv": {
+          "madhi": { "ar": "تُؤُمِّلَ", "de": "es wurde betrachtet" },
+          "mudari": { "ar": "يُتَأَمَّلُ", "de": "es wird betrachtet" },
+          "masdar": { "ar": "تَأَمُّلًا", "de": "das Nachdenken/Betrachten (Masdar)" },
+          "ism": { "ar": "مُتَأَمَّل", "de": "Betrachtetes (Ism Maf'ul)" }
+        },
+        "imperativ": {
+          "madhi": { "ar": "تَأَمَّلْ", "de": "Denk nach! / Betrachte!" },
+          "mudari": { "ar": "لَا تَتَأَمَّلْ", "de": "Denk nicht nach! / Betrachte nicht!" },
+          "ism": { "ar": "مُتَأَمَّل", "de": "(Ableitung — dieselbe Form wie Ism Maf'ul)" }
+        }
+      },
+      "notes": [
+        "Erste Form-V-Tabelle (Tafa'ul) dieser Sammlung, Wurzel ء-م-ل (Hoffnung/Erwartung). Passiv-Madhi تُؤُمِّلَ folgt dem Form-V-Muster تُفُعِّلَ (Damma-Damma-Kasra) — bei ≥100-fachem Zoom gegen die Aktiv-Form تَأَمَّلَ (Fatha-Fatha-Fatha) verifiziert, keine Verwechslung.",
+        "Ism Fa'il (مُتَأَمِّل, Kasra auf dem verdoppelten Mim) vs. Ism Maf'ul (مُتَأَمَّل, Fatha) — dasselbe Muster wie bei Form II bereits belegt.",
+        "Zeichengenau aus dem gerenderten Seitenbild von handout.pdf S. 105 (Abbildung 48, zweite von fünf Tabellen auf der Seite) bei 30- bis 100-fachem Zoom, ganze Tabelle und Passiv-Madhi-Zelle zugeschnitten, gelesen."
+      ],
+      "source": { "file": "handout.pdf", "page": 105 }
+    },
+    {
+      "id": "bab-tafaul6-mahmooz-taamara",
+      "kind": "verb",
+      "titleDe": "Tafa'ul VI (Mahmooz) — تَآمَرَ (sich verschwören)",
+      "termAr": "تَآمَرَ",
+      "columns": [
+        { "id": "madhi", "labelDe": "Madhi / Amr" },
+        { "id": "mudari", "labelDe": "Mudari / Nahy" },
+        { "id": "masdar", "labelDe": "Masdar" },
+        { "id": "ism", "labelDe": "Ism (Fa'il / Maf'ul / Ableitung)" }
+      ],
+      "rows": [
+        { "id": "aktiv", "labelDe": "Aktiv" },
+        { "id": "passiv", "labelDe": "Passiv" },
+        { "id": "imperativ", "labelDe": "Imperativ (Amr/Nahy)" }
+      ],
+      "cells": {
+        "aktiv": {
+          "madhi": { "ar": "تَآمَرَ", "de": "er verschwor sich" },
+          "mudari": { "ar": "يَتَآمَرُ", "de": "er verschwört sich" },
+          "masdar": { "ar": "تَآمُرًا", "de": "das Sich-Verschwören (Masdar)" },
+          "ism": { "ar": "مُتَآمِر", "de": "Verschwörer (Ism Fa'il)" }
+        },
+        "passiv": {
+          "madhi": { "ar": "تُؤُوْمِرَ", "de": "(Passivform, morphologisch)" },
+          "mudari": { "ar": "يُتَآمَرُ", "de": "(Passivform, morphologisch)" },
+          "masdar": { "ar": "تَآمُرًا", "de": "das Sich-Verschwören (Masdar)" },
+          "ism": { "ar": "مُتَآمَر", "de": "(Ism Maf'ul, morphologisch)" }
+        },
+        "imperativ": {
+          "madhi": { "ar": "تَآمَرْ", "de": "Verschwöre dich!" },
+          "mudari": { "ar": "لَا تَتَآمَرْ", "de": "Verschwöre dich nicht!" },
+          "ism": { "ar": "مُتَآمَر", "de": "(Ableitung — dieselbe Form wie Ism Maf'ul)" }
+        }
+      },
+      "notes": [
+        "Erste Form-VI-Tabelle (Tafa'ul, gegenseitige Handlung) dieser Sammlung, Wurzel ء-م-ر (befehlen). تَآمَرَ ist wie أَبَقَ semantisch reziprok/schwer passivierbar; die Passiv-Zeile ist auch hier rein morphologisch gebildet, die 'de'-Glossen sind entsprechend als Formangabe statt erfundener Bedeutung gekennzeichnet.",
+        "Passiv-Madhi تُؤُوْمِرَ folgt dem Form-VI-Muster تُفُوعِلَ (Damma-Damma-Waw/Sukun-Kasra-Fatha): Hamzat-al-Wasl+Damma vor wurzeleigenem Hamza wird zu Waw, danach das eingeschobene lange Vokal-Waw der Form VI — bei ≥30-fachem Zoom im Vollbild gelesen, sechs Buchstaben klar unterscheidbar (ت-ء-و-م-ر).",
+        "آ (Alif-Madda) in تَآمَرَ/يَتَآمَرُ steht für Fatha+wurzeleigenes Hamza+langes Alif (Tachfif) — keine Verwechslung mit Tanwin, da hier kein Tanwin-Zeichen vorkommt, sondern eine durchgezogene Madda-Wellenlinie.",
+        "Zeichengenau aus dem gerenderten Seitenbild von handout.pdf S. 105 (Abbildung 49, dritte von fünf Tabellen auf der Seite) bei 30-fachem Zoom, ganze Tabelle zugeschnitten, gelesen."
+      ],
+      "source": { "file": "handout.pdf", "page": 105 }
+    },
+    {
+      "id": "bab-iftial8-mahmooz-itamara",
+      "kind": "verb",
+      "titleDe": "Ifti'al VIII (Mahmooz) — اِيْتَمَرَ (einen Befehl befolgen, sich beraten)",
+      "termAr": "اِيْتَمَرَ",
+      "columns": [
+        { "id": "madhi", "labelDe": "Madhi / Amr" },
+        { "id": "mudari", "labelDe": "Mudari / Nahy" },
+        { "id": "masdar", "labelDe": "Masdar" },
+        { "id": "ism", "labelDe": "Ism (Fa'il / Maf'ul / Ableitung)" }
+      ],
+      "rows": [
+        { "id": "aktiv", "labelDe": "Aktiv" },
+        { "id": "passiv", "labelDe": "Passiv" },
+        { "id": "imperativ", "labelDe": "Imperativ (Amr/Nahy)" }
+      ],
+      "cells": {
+        "aktiv": {
+          "madhi": { "ar": "اِيْتَمَرَ", "de": "er befolgte einen Befehl / beriet sich" },
+          "mudari": { "ar": "يَأْتَمِرُ", "de": "er befolgt einen Befehl / berät sich" },
+          "masdar": { "ar": "اِيْتِمَارًا", "de": "das Befolgen/Sich-Beraten (Masdar)" },
+          "ism": { "ar": "مُؤْتَمِر", "de": "Sich-Beratender (Ism Fa'il)" }
+        },
+        "passiv": {
+          "madhi": { "ar": "أُوْتُمِرَ", "de": "(Passivform, morphologisch)" },
+          "mudari": { "ar": "يُؤْتَمَرُ", "de": "(Passivform, morphologisch)" },
+          "masdar": { "ar": "اِيْتِمَارًا", "de": "das Befolgen/Sich-Beraten (Masdar)" },
+          "ism": { "ar": "مُؤْتَمَر", "de": "(Ism Maf'ul, morphologisch — auch als eigenständiges Wort 'Konferenz' gebräuchlich)" }
+        },
+        "imperativ": {
+          "madhi": { "ar": "اِيْتَمِرْ", "de": "Befolge!/Berate dich!" },
+          "mudari": { "ar": "لَا تَأْتَمِرْ", "de": "Befolge nicht!/Berate dich nicht!" },
+          "ism": { "ar": "مُؤْتَمَر", "de": "(Ableitung — dieselbe Form wie Ism Maf'ul)" }
+        }
+      },
+      "notes": [
+        "Erste Form-VIII-Tabelle (Ifti'al) dieser Sammlung, Wurzel ء-م-ر (befehlen). Bei Mahmooz-al-Fa'-Wurzeln verschmilzt in Form VIII das wurzeleigene Hamza mit dem eingeschobenen ت zu اِيْتَمَرَ/يَأْتَمِرُ — dieselbe Tachfif-Familie wie bei اِيْمَنْ (bab-samia-mahmooz-amina) und اِيْبِقْ (bab-daraba-mahmooz-abaqa), hier aber im Madhi (nicht nur im Imperativ) und mit Kasra-Muster.",
+        "Passiv-Madhi أُوْتُمِرَ: Hamzat-al-Wasl+Damma vor wurzeleigenem Hamza-Sukun wird zu Waw (gleiche Regel wie bei bab-mufaala3-mahmooz-aakhadha und bab-ifal4-mahmooz-aamana).",
+        "مُؤْتَمَر ist im heutigen Arabisch als eigenständiges Substantiv ('Konferenz') geläufig — hier ausschließlich als grammatische Ism-Maf'ul-Form der Tabelle belegt, nicht als separate Vokabel recherchiert.",
+        "Zeichengenau aus dem gerenderten Seitenbild von handout.pdf S. 105 (Abbildung 50, vierte von fünf Tabellen auf der Seite) bei 30-fachem Zoom, ganze Tabelle zugeschnitten, gelesen."
+      ],
+      "source": { "file": "handout.pdf", "page": 105 }
+    },
+    {
+      "id": "bab-istifal10-mahmooz-istajara",
+      "kind": "verb",
+      "titleDe": "Istif'al X (Mahmooz) — اِسْتَأْجَرَ (mieten, anheuern)",
+      "termAr": "اِسْتَأْجَرَ",
+      "columns": [
+        { "id": "madhi", "labelDe": "Madhi / Amr" },
+        { "id": "mudari", "labelDe": "Mudari / Nahy" },
+        { "id": "masdar", "labelDe": "Masdar" },
+        { "id": "ism", "labelDe": "Ism (Fa'il / Maf'ul / Ableitung)" }
+      ],
+      "rows": [
+        { "id": "aktiv", "labelDe": "Aktiv" },
+        { "id": "passiv", "labelDe": "Passiv" },
+        { "id": "imperativ", "labelDe": "Imperativ (Amr/Nahy)" }
+      ],
+      "cells": {
+        "aktiv": {
+          "madhi": { "ar": "اِسْتَأْجَرَ", "de": "er mietete / heuerte an" },
+          "mudari": { "ar": "يَسْتَأْجِرُ", "de": "er mietet / heuert an" },
+          "masdar": { "ar": "اِسْتِئْجَارًا", "de": "das Mieten/Anheuern (Masdar)" },
+          "ism": { "ar": "مُسْتَأْجِر", "de": "Mieter (Ism Fa'il)" }
+        },
+        "passiv": {
+          "madhi": { "ar": "اُسْتُؤْجِرَ", "de": "er/es wurde gemietet" },
+          "mudari": { "ar": "يُسْتَأْجَرُ", "de": "er/es wird gemietet" },
+          "masdar": { "ar": "اِسْتِئْجَارًا", "de": "das Mieten/Anheuern (Masdar)" },
+          "ism": { "ar": "مُسْتَأْجَر", "de": "Gemietetes/Angestellter (Ism Maf'ul)" }
+        },
+        "imperativ": {
+          "madhi": { "ar": "اِسْتَأْجِرْ", "de": "Miete!/Heuere an!" },
+          "mudari": { "ar": "لَا تَسْتَأْجِرْ", "de": "Miete nicht!/Heuere nicht an!" },
+          "ism": { "ar": "مُسْتَأْجَر", "de": "(Ableitung — dieselbe Form wie Ism Maf'ul)" }
+        }
+      },
+      "notes": [
+        "Erste Form-X-Tabelle (Istif'al) dieser Sammlung, Wurzel ء-ج-ر (verwandt mit dem Nomen أجر 'Lohn'; vgl. Form II أَجَّرَ 'vermieten' aus bab-tafil2-mahmooz-ajjara — Form X استأجر ist die Gegenseite 'mieten').",
+        "Passiv-Madhi اُسْتُؤْجِرَ: Hamzat-al-Wasl+Damma vor wurzeleigenem Hamza-Sukun bleibt hier als eigenes Hamza-Zeichen auf Waw-Träger erhalten (ؤ) statt zu reinem Waw zu verschmelzen — bei ≥30-fachem Zoom im Vollbild gelesen, sechs Konsonanten klar unterscheidbar (ا-س-ت-ء-ج-ر).",
+        "Zeichengenau aus dem gerenderten Seitenbild von handout.pdf S. 105 (Abbildung 51, fünfte von fünf Tabellen auf der Seite) bei 30-fachem Zoom, ganze Tabelle zugeschnitten, gelesen."
+      ],
+      "source": { "file": "handout.pdf", "page": 105 }
+    }
+  ]
+}

@@ -1,0 +1,190 @@
+{
+  "schema": 1,
+  "tables": [
+    {
+      "id": "freie-pronomen-nasb-status",
+      "kind": "pronoun",
+      "titleDe": "Freie Pronomen (Nasb-Status) — إِيَّا-Reihe",
+      "termAr": "إِيَّاهُ",
+      "columns": [
+        { "id": "plural", "labelDe": "Plural" },
+        { "id": "dual", "labelDe": "Dual" },
+        { "id": "singular", "labelDe": "Singular" }
+      ],
+      "rows": [
+        { "id": "3-m", "labelDe": "3. Person maskulin" },
+        { "id": "3-f", "labelDe": "3. Person feminin" },
+        { "id": "2-m", "labelDe": "2. Person maskulin" },
+        { "id": "2-f", "labelDe": "2. Person feminin" },
+        { "id": "1", "labelDe": "1. Person" }
+      ],
+      "cells": {
+        "3-m": {
+          "plural": { "ar": "إِيَّاهُمْ", "de": "sie (Objekt, betont)" },
+          "dual": { "ar": "إِيَّاهُمَا", "de": "sie beide (Objekt, betont)" },
+          "singular": { "ar": "إِيَّاهُ", "de": "ihn (Objekt, betont)" }
+        },
+        "3-f": {
+          "plural": { "ar": "إِيَّاهُنَّ", "de": "sie (Objekt, betont)" },
+          "dual": { "ar": "إِيَّاهُمَا", "de": "sie beide (Objekt, betont)" },
+          "singular": { "ar": "إِيَّاهَا", "de": "sie (Objekt, betont)" }
+        },
+        "2-m": {
+          "plural": { "ar": "إِيَّاكُمْ", "de": "euch (Objekt, betont)" },
+          "dual": { "ar": "إِيَّاكُمَا", "de": "euch beide (Objekt, betont)" },
+          "singular": { "ar": "إِيَّاكَ", "de": "dich (Objekt, betont)" }
+        },
+        "2-f": {
+          "plural": { "ar": "إِيَّاكُنَّ", "de": "euch (Objekt, betont)" },
+          "dual": { "ar": "إِيَّاكُمَا", "de": "euch beide (Objekt, betont)" },
+          "singular": { "ar": "إِيَّاكِ", "de": "dich (Objekt, betont)" }
+        },
+        "1": {
+          "plural": { "ar": "إِيَّانَا", "de": "uns (Objekt, betont)" },
+          "dual": null,
+          "singular": { "ar": "إِيَّايَ", "de": "mich (Objekt, betont)" }
+        }
+      },
+      "notes": [
+        "Handout-Lücke H-16 (siehe LUECKEN.md, Abschnitt 'Identifizierte, aber in diesem Lauf NICHT übernommene echte Lücken' der Vorsitzung): 'Abbildung 9: Freie Pronomen (Nasb-Status)', handout.pdf S. 28, direkt unter der bereits vorhandenen Tabelle 'pronomen-frei' (dort Raf'a-Status, aus tabellen-sprache.pdf) abgedruckt.",
+        "Eigenständige Betonungsform des gebundenen Objektpronomens: gebildet mit dem Träger إِيَّا plus denselben Endungen wie bei den gebundenen Pronomen (paradigmen.json, Tabelle 'pronomen-gebunden'). Laut Fließtext im Handout (Kasten 'Gut zu wissen', S. 28) verwendet, wenn das Objekt (Maf'ul bihi) zur Betonung an den Satzanfang gestellt wird und daher nicht an das Verb angehängt werden kann — Beispiel im Original: إِيَّاكَ نَعْبُدُ وَإِيَّاكَ نَسْتَعِينُ (Al-Fatiha 1:5).",
+        "Spalten-/Zeilenraster wie bei den sechs vollständigen Verb-Personenmatrizen (paradigmen-verben.json) übernommen, weil exakt so im Original abgedruckt (Kopfzeile 'Plural | Dual | Singular | Person', RTL gelesen; die Person-Spalte ist als Zeilenbeschriftung geführt).",
+        "1. Person hat keinen eigenen Dual (Zelle '1'/'dual' ist null) — keine Extraktionslücke, sondern dieselbe im Arabischen fehlende Grammatikkategorie wie bei 'pronomen-frei' und allen sechs Verb-Personenmatrizen.",
+        "Zeichengenau aus dem gerenderten Seitenbild von handout.pdf S. 28 gelesen, Tabellen-Bbox per PyMuPDF find_tables ermittelt, bei Zoom 8 die ganze Tabelle und bei Zoom 10 jede Zeile einzeln gegengeprüft (u. a. Hamza-Sitz auf dem Alif von إِيَّا, Fatha/Kasra-Unterscheidung دِيَّاكَ/إِيَّاكِ).",
+        "Keine Korpus-Gegenprobe: Pronomen sind Funktionswörter ohne dreiradikalige Wurzel und werden im vorhandenen Testbestand grundsätzlich nicht gegen das Qur'an-Korpus geprüft (ebenso 'pronomen-frei'/'pronomen-gebunden'/'hinweiswoerter' in paradigmen.test.ts ohne Korpus-Block)."
+      ],
+      "source": { "file": "handout.pdf", "page": 28 }
+    },
+    {
+      "id": "zeigewoerter-dual-status",
+      "kind": "demonstrative",
+      "titleDe": "Zeigewörter im Dual — Status-Flexion (Raf'a / Nasb / Jarr)",
+      "termAr": "هَذَانِ",
+      "columns": [
+        { "id": "nah-m", "labelDe": "Nah · maskulin" },
+        { "id": "nah-f", "labelDe": "Nah · feminin" },
+        { "id": "fern-m", "labelDe": "Fern · maskulin" },
+        { "id": "fern-f", "labelDe": "Fern · feminin" }
+      ],
+      "rows": [
+        { "id": "raf", "labelDe": "Raf'a (Nominativ)", "labelAr": "رَفْعٌ" },
+        { "id": "nasb", "labelDe": "Nasb (Akkusativ)", "labelAr": "نَصْبٌ" },
+        { "id": "jarr", "labelDe": "Jarr (Genitiv)", "labelAr": "جَرٌّ" }
+      ],
+      "cells": {
+        "raf": {
+          "nah-m": { "ar": "هَذَانِ", "de": "diese beiden (m, Nominativ)" },
+          "nah-f": { "ar": "هَتَانِ", "de": "diese beiden (f, Nominativ)" },
+          "fern-m": { "ar": "ذَانِكَ", "de": "jene beiden (m, Nominativ)" },
+          "fern-f": { "ar": "تَانِكَ", "de": "jene beiden (f, Nominativ)" }
+        },
+        "nasb": {
+          "nah-m": { "ar": "هَذَيْنِ", "de": "diese beiden (m, Akkusativ)" },
+          "nah-f": { "ar": "هَتَيْنِ", "de": "diese beiden (f, Akkusativ)" },
+          "fern-m": { "ar": "ذَيْنِكَ", "de": "jene beiden (m, Akkusativ)" },
+          "fern-f": { "ar": "تَيْنِكَ", "de": "jene beiden (f, Akkusativ)" }
+        },
+        "jarr": {
+          "nah-m": { "ar": "هَذَيْنِ", "de": "diese beiden (m, Genitiv)" },
+          "nah-f": { "ar": "هَتَيْنِ", "de": "diese beiden (f, Genitiv)" },
+          "fern-m": { "ar": "ذَيْنِكَ", "de": "jene beiden (m, Genitiv)" },
+          "fern-f": { "ar": "تَيْنِكَ", "de": "jene beiden (f, Genitiv)" }
+        }
+      },
+      "notes": [
+        "Handout-Lücke H-25 (siehe LUECKEN.md, Abschnitt 'Identifizierte, aber in diesem Lauf NICHT übernommene echte Lücken' der Vorsitzung): 'Abbildung 17: Zeigewörter im Dual und ihre Status', handout.pdf S. 40.",
+        "Ergänzt die bereits vorhandene Tabelle 'hinweiswoerter' (paradigmen.json): dort ist der Dual (م-du/f-du) nur in der Raf'a-Form abgedruckt (aus tabellen-sprache.pdf); diese Tabelle liefert zusätzlich die Nasb- und Jarr-Formen, die dort fehlen — keine Doppelarbeit, sondern eine echte Ergänzung.",
+        "Nasb und Jarr sind für alle vier Zellen identisch (هَذَيْنِ/هَتَيْنِ/ذَيْنِكَ/تَيْنِكَ) — der Dual unterscheidet im Arabischen grammatisch nur zwei Statusformen (Raf'a gegen den zusammengefallenen Nasb/Jarr), nicht drei. Bei Zoom 22 zeilenweise gegengeprüft: Nasb- und Jarr-Zeile sind im Original zeichengleich gedruckt, kein Kopierfehler.",
+        "Dokumentierter Unterschied zur bestehenden Tabelle 'hinweiswoerter': deren Raf'a-Dual-Formen هَـٰذَانِ/ذَانِكَ (aus tabellen-sprache.pdf) tragen einen Dagger-Alif über dem Ha bzw. Dhal; diese Tabelle (aus handout.pdf, anderer Drucksatz) zeigt an derselben Stelle bei ≥22-fachem Zoom KEINEN Dagger-Alif, nur eine einfache Fatha (هَذَانِ/ذَانِكَ) — kein Lesefehler, sondern eine Drucksatz-Abweichung zwischen den beiden Quelldokumenten, zeichengenau wie im jeweiligen Bild übernommen.",
+        "Die 'Fern'-Formen (ذَانِكَ/تَانِكَ bzw. ذَيْنِكَ/تَيْنِكَ) bestehen erkennbar aus dem Nah-Stamm ohne انfangs-Ha (ذَا/تَا bzw. ذَي/تَي) plus angehängtem كَ — dieselbe Bauweise wie bei den bereits vorhandenen Singular-Fern-Formen ذَٰلِكَ/تِلْكَ in 'hinweiswoerter'.",
+        "Zeichengenau aus dem gerenderten Seitenbild von handout.pdf S. 40 gelesen, Tabellen-Bbox per PyMuPDF find_tables ermittelt, bei Zoom 10 die ganze Tabelle und bei Zoom 22 die Raf'a-Zeile einzeln gegengeprüft (Dagger-Alif-Frage, Sukun-Kreis auf dem Ya der Nasb/Jarr-Formen gegen Verwechslung mit Punkten geprüft).",
+        "Keine Korpus-Gegenprobe: Demonstrativpronomen sind Funktionswörter ohne dreiradikalige Wurzel — ebenso wie 'hinweiswoerter' in paradigmen.test.ts ohne Korpus-Block geführt."
+      ],
+      "source": { "file": "handout.pdf", "page": 40 }
+    },
+    {
+      "id": "kleine-familie-nasara",
+      "kind": "verb",
+      "titleDe": "Bab Nasara (Kleine Familie, Referenzverb) — نَصَرَ",
+      "termAr": "نَصَرَ",
+      "columns": [
+        { "id": "madhi", "labelDe": "Madhi / Amr" },
+        { "id": "mudari", "labelDe": "Mudari / Nahy" },
+        { "id": "masdar", "labelDe": "Masdar" },
+        { "id": "ism", "labelDe": "Ism (Fa'il / Maf'ul / Ableitung)" }
+      ],
+      "rows": [
+        { "id": "aktiv", "labelDe": "Aktiv" },
+        { "id": "passiv", "labelDe": "Passiv" },
+        { "id": "imperativ", "labelDe": "Imperativ (Amr/Nahy)" }
+      ],
+      "cells": {
+        "aktiv": {
+          "madhi": { "ar": "نَصَرَ", "de": "er half" },
+          "mudari": { "ar": "يَنْصُرُ", "de": "er hilft" },
+          "masdar": { "ar": "نَصْرًا", "de": "das Helfen (Masdar)" },
+          "ism": { "ar": "نَاصِرٌ", "de": "Helfender (Ism Fa'il)" }
+        },
+        "passiv": {
+          "madhi": { "ar": "نُصِرَ", "de": "ihm wurde geholfen" },
+          "mudari": { "ar": "يُنْصَرُ", "de": "ihm wird geholfen" },
+          "masdar": { "ar": "نَصْرًا", "de": "das Helfen (Masdar)" },
+          "ism": { "ar": "مَنْصُورٌ", "de": "dem geholfen wird (Ism Maf'ul)" }
+        },
+        "imperativ": {
+          "madhi": { "ar": "أُنْصُرْ", "de": "Hilf!" },
+          "mudari": { "ar": "لَا تَنْصُرْ", "de": "Hilf nicht!" },
+          "ism": { "ar": "مَنْصِرٌ ومَنْصَرٌ ومَنْصَرَةٌ", "de": "Ort/Zeit des Helfens (Ableitung, Ism Makan/Zaman — drei im Original alternativ gedruckte Formen)" }
+        }
+      },
+      "notes": [
+        "Handout-Reintext-Fragment H-51 (siehe LUECKEN.md, 'ungeprüfte Reintext-Fragmente' der Vorsitzung), bei Prüfung als ECHTE Bab-Tabelle erkannt und deshalb übernommen: handout.pdf S. 72 (erste Tabelle), Kapitel 5.3 'Kleine Familie'.",
+        "ACHTUNG andere Achse als Kapitel 8: die 'Kleine Familie' (Abschnitt 5.3, unmittelbar nach den acht Sarf-Großfamilien aus Abschnitt 5.2) beschreibt sechs Vokalmuster-Untergruppen des GESUNDEN (ṣaḥīḥ) Form-I-Verbs selbst (a-a/a-i/a-u/i-a/i-i/u-u je nach Vokal auf Madhi/Mudari) — NICHT die Wurzelgesundheits-Achse (Mahmuz/Mithal/Ajwaf/…) aus Kapitel 8. Laut Fließtext (S. 71) konjugieren fünf der sechs Untergruppen (a-a, a-i, a-u, i-a, i-i) exakt wie diese نَصَرَ-Tabelle; nur die sechste Untergruppe (u-u, كَرُمَ) weicht ab — siehe Tabelle 'kleine-familie-karama'.",
+        "Dieselbe Bab-Struktur (3 Zeilen × 4 Spalten, Spalte 'fahuwa' als reine Lese-Einleitungsfloskel weggelassen) wie die Bab-Tabellen in paradigmen-verben.json/paradigmen-bab-*.json — ergänzt dort erstmals um das Referenzverb نصر selbst, das in Kapitel 8 nur als Vorbild ('Gleiche Tabellenstruktur wie …') erwähnt, aber nie in dieser Form (mit Masdar/Ism) abgedruckt ist. Die bereits vorhandenen Tabellen 'verb-madi-nasara-aktiv-matrix' usw. (vollständige Personenmatrizen) decken das nicht ab — dort fehlen Masdar und Ism vollständig.",
+        "Imperativ-Ism-Zelle: im Original zweizeilig gedruckt und aus drei Wörtern zusammengesetzt (مَنْصِرٌ ومَنْصَرٌ ومَنْصَرَةٌ, zwei Ism-Makan/Zaman-Varianten plus feminine Form) — bei Zoom 18 zellenweise nachgeschnitten, alle drei Formen einzeln gegen Hamza/Tanwin-Verwechslung geprüft. Wie bereits bei 'sarf-familie-2-jaadala' (paradigmen-weitere.json) als EIN zusammengesetzter String übernommen, kein Rateversuch bei der Worttrennung.",
+        "Zeichengenau aus dem gerenderten Seitenbild von handout.pdf S. 72 gelesen, Tabellen-Bbox per PyMuPDF find_tables ermittelt, bei Zoom 10 die ganze Tabelle und bei Zoom 18 die Imperativ-Zeile einzeln gegengeprüft.",
+        "Korpus-Gegenprobe (siehe paradigmen-nachtrag.test.ts, Wurzel نصر): Madhi/Mudari/Masdar/Ism sind sowohl aktiv als auch passiv sowie der Amr belegt; nur die verneinte Nahy-Form (لَا davor macht sie zu einem längeren Token, wie bei allen anderen Bab-Tabellen dieses Bestands) und die zusammengesetzte Ism-Ableitung (drei Wörter, kein einzelnes Korpus-Token) sind Ausnahmen — empirisch ermittelt, nicht geraten."
+      ],
+      "source": { "file": "handout.pdf", "page": 72 }
+    },
+    {
+      "id": "kleine-familie-karama",
+      "kind": "verb",
+      "titleDe": "Bab Karama (Kleine Familie, Ausnahme-Verb, ohne Passiv) — كَرُمَ",
+      "termAr": "كَرُمَ",
+      "columns": [
+        { "id": "madhi", "labelDe": "Madhi / Amr" },
+        { "id": "mudari", "labelDe": "Mudari / Nahy" },
+        { "id": "masdar", "labelDe": "Masdar" },
+        { "id": "ism", "labelDe": "Ism (Fa'il / Ableitung)" }
+      ],
+      "rows": [
+        { "id": "aktiv", "labelDe": "Aktiv" },
+        { "id": "imperativ", "labelDe": "Imperativ (Amr/Nahy)" }
+      ],
+      "cells": {
+        "aktiv": {
+          "madhi": { "ar": "كَرُمَ", "de": "er war edel/großzügig" },
+          "mudari": { "ar": "يَكْرُمُ", "de": "er ist edel/großzügig" },
+          "masdar": { "ar": "كَرَامَةً", "de": "die Großzügigkeit/der Edelmut (Masdar)" },
+          "ism": { "ar": "كَرِيْمٌ", "de": "edel, großzügig (Ism Fa'il, unregelmäßiges Muster)" }
+        },
+        "imperativ": {
+          "madhi": { "ar": "أُكْرُمْ", "de": "Sei edel/großzügig!" },
+          "mudari": { "ar": "لَا تَكْرُمْ", "de": "Sei nicht edel/großzügig!" },
+          "ism": { "ar": "مَكْرِمٌ وَمَكْرَمٌ ومَكْرَمَةٌ", "de": "Ort/Zeit des Edelseins (Ableitung, Ism Makan/Zaman — drei im Original alternativ gedruckte Formen)" }
+        }
+      },
+      "notes": [
+        "Handout-Reintext-Fragment H-52 (siehe LUECKEN.md, 'ungeprüfte Reintext-Fragmente' der Vorsitzung), bei Prüfung als ECHTE Bab-Tabelle erkannt und deshalb übernommen: handout.pdf S. 72 (zweite Tabelle), Kapitel 5.3 'Kleine Familie', direkt unter der نَصَرَ-Tabelle (Tabelle 'kleine-familie-nasara').",
+        "Laut Fließtext im Original (Satz direkt vor dieser Tabelle): 'Die einzige Ausnahme bildet die كَرُمَ, يَكْرُمُ-Untergruppe. Diese hat keine passive Form und unterscheidet sich außerdem bei der Bildung des Machers [= Ism Fa'il].' Deshalb bewusst KEINE 'passiv'-Zeile angelegt (anders als bei 'kleine-familie-nasara') — kein Extraktionsfehler, sondern exakt die im Original benannte grammatische Besonderheit dieser einzigen u-u-Untergruppe der Kleinen Familie.",
+        "Ism Fa'il folgt hier ausdrücklich NICHT dem sonst üblichen فَاعِل-Muster (wie ناصِرٌ bei نصر), sondern dem unregelmäßigen فَعِيل-Muster (كَرِيْمٌ) — genau die im Fließtext angekündigte Abweichung 'bei der Bildung des Machers'.",
+        "Imperativ-Ism-Zelle: wie bei 'kleine-familie-nasara' im Original zweizeilig aus drei zusammengesetzten Wörtern gedruckt (مَكْرِمٌ وَمَكْرَمٌ ومَكْرَمَةٌ) — bei Zoom 16 und, für den verbindenden Waw, bei ≥40-fachem Zoom zellenweise nachgeschnitten und Wort für Wort gegen die Parallel-Struktur der نَصَرَ-Tabelle (مَنْصِرٌ/مَنْصَرٌ/مَنْصَرَةٌ) verglichen, kein Kopierfehler.",
+        "Dokumentierte Drucksatz-Unstimmigkeit zwischen den beiden Tabellen dieser Seite: der ERSTE verbindende Waw dieser Zelle trägt im Original sichtbar eine Fatha (وَ), der zweite (am Zeilenumbruch) dagegen nicht (و) — bei der strukturell identischen Zelle in 'kleine-familie-nasara' tragen dort BEIDE verbindenden Waw keine Fatha (و/و). Bei ≥40-fachem Zoom für beide Tabellen gegengeprüft, kein Lesefehler, sondern eine reine Drucksatz-Unregelmäßigkeit — zeichengenau wie gedruckt übernommen, nicht vereinheitlicht.",
+        "Zeichengenau aus dem gerenderten Seitenbild von handout.pdf S. 72 gelesen, Tabellen-Bbox per PyMuPDF find_tables ermittelt, bei Zoom 10 die ganze Tabelle und bei Zoom 16 die Imperativ-Zeile einzeln gegengeprüft.",
+        "Korpus-Gegenprobe (siehe paradigmen-nachtrag.test.ts, Wurzel كرم): Madhi, Ism Fa'il und der Amr sind belegt; Mudari (يَكْرُمُ), Masdar (كَرَامَةً), die verneinte Nahy-Form und die zusammengesetzte Ism-Ableitung sind Ausnahmen — empirisch ermittelt (das Qur'an-Korpus belegt die Wurzel ك-ر-م fast ausschließlich in Form II/IV sowie als Adjektiv كَرِيم, nicht als einfaches Form-I-Mudari), nicht geraten."
+      ],
+      "source": { "file": "handout.pdf", "page": 72 }
+    }
+  ]
+}

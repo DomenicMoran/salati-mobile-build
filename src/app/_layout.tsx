@@ -16,7 +16,7 @@ import { syncCoursesFromRemote } from '@/features/study/courseSync';
 import { useResolvedScheme } from '@/hooks/use-resolved-scheme';
 import { useVorblendeFreigabe } from '@/lib/vorblende';
 import { installGlobalErrorHandler } from '@/lib/errorLog';
-import { QUERY_PERSIST_MAX_AGE, queryClient, queryPersister } from '@/lib/queryClient';
+import { QUERY_PERSIST_MAX_AGE, queryClient, queryPersister, sollInDieAblage } from '@/lib/queryClient';
 
 SplashScreen.preventAutoHideAsync();
 installGlobalErrorHandler();
@@ -57,7 +57,14 @@ export default function RootLayout() {
     <ErrorBoundary>
       <PersistQueryClientProvider
         client={queryClient}
-        persistOptions={{ persister: queryPersister, maxAge: QUERY_PERSIST_MAX_AGE }}>
+        persistOptions={{
+          persister: queryPersister,
+          maxAge: QUERY_PERSIST_MAX_AGE,
+          // Hält Fehlschläge und die ohnehin lokal vorliegenden Großdaten aus
+          // der EINEN AsyncStorage-Zeile heraus — Begründung und Messwerte in
+          // lib/queryClient.ts.
+          dehydrateOptions: { shouldDehydrateQuery: sollInDieAblage },
+        }}>
         <SettingsProvider>
           <SharedPlayerProvider>
             <ThemedApp />
@@ -172,6 +179,7 @@ function ThemedApp() {
         <Stack.Screen name="guides" />
         <Stack.Screen name="phrases" />
         <Stack.Screen name="pray-along" />
+        <Stack.Screen name="gebet-gemeinsam" />
         <Stack.Screen name="learn-to-pray" />
         <Stack.Screen name="wisdom" />
         <Stack.Screen name="tracker" />
@@ -191,6 +199,8 @@ function ThemedApp() {
         <Stack.Screen name="podcast" />
         <Stack.Screen name="videos" />
         <Stack.Screen name="handouts" />
+        <Stack.Screen name="lexikon" />
+        <Stack.Screen name="analyse-uebung" />
         <Stack.Screen name="halal" />
         <Stack.Screen name="halal-scanner" />
         <Stack.Screen name="mosques" />

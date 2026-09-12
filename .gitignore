@@ -38,6 +38,11 @@ yarn-error.*
 # typescript
 *.tsbuildinfo
 
+# Lokaler Cache für scripts/build-morphologie.mjs (QAC 0.4 + NoorBayan/Quranic
+# CSV, ~40 MB Quellen + ~44 MB Ausgabe) — reproduzierbar per Skript, nicht
+# committen.
+.daten-cache/
+
 example
 
 # Native-Ordner sind seit dem Wechsel weg vom Pure-Managed-Workflow

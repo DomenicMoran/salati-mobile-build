@@ -1,0 +1,774 @@
+{
+  "schema": 1,
+  "lang": "sw",
+  "bereich": "nomen",
+  "eintraege": {
+    "ism": {
+      "titel": "Jina (Ism)",
+      "ar": "اِسْم",
+      "umschrift": "Ism",
+      "erklaerung": [
+        "Ism ni mojawapo ya aina tatu za maneno katika Kiarabu, pamoja na kitenzi (Fi'il) na herufi (Harf). Tofauti na dhana ya kawaida ya \"nomino\", Ism inajumuisha zaidi ya majina ya vitu tu: majina ya watu na mahali, vitu, dhana, vivumishi, dhamiri, majina ya hesabu, hata maneno ya wakati na mahali - yote hayo ni Ism. Sifa ya pamoja inaelezwa kwa njia hasi: Ism yenyewe haibebi wakati (zamani/sasa) wala hali ya amri - hilo ndilo linalotofautisha na Fi'il.",
+        "Kila Ism ina sifa nne za msingi kwa wakati mmoja: jinsia (kiume/kike), idadi (umoja/uwili/wingi), hali ya kubainika (maalumu/isiyo maalumu) na hali ya i'rabu (rafu'i/nasbu/jarri). Sifa hizi nne si za hiari kamwe - kila Ism katika Qur'ani inaweza kuelezwa kikamilifu kwa sifa hizo nne. Zinaunda msingi wa maelezo mengine yote ya kamusi hii kuhusu jina.",
+        "Zaidi ya hayo, hutofautishwa kama kiishio cha Ism kinabadilika kulingana na hali ya i'rabu au la. Ism mu'rabu (inayobadilika) huonyesha rafu'i, nasbu na jarri kwa viishio tofauti; Ism mabniyyu (isiyobadilika) hubaki na umbo lilelile katika kila nafasi. Kundi la tatu, dogo zaidi, la maumbo ya Ism haliruhusiwi kamwe kubeba tanwini na katika jarri hubadilisha kasra kuwa fatha (mamnuu min a-sarf).",
+        "Kwa kuwa Ism inajumuisha jamii ndogo nyingi, ni vyema kutojifunza aina hii ya neno peke yake, bali daima kwa kulinganisha: Je, neno hili ni Ism, Fi'il, au herufi? Mtihani wa kuaminika ni kama unaweza kuliwazia neno hilo likiwa na kiambishi ال mwanzoni au kiishio cha tanwini mwishoni - hilo linafanya kazi kivitendo kwa Ism pekee."
+      ],
+      "erkennung": [
+        "Linaweza (angalau kiakili) kuwekewa kiambishi ال mwanzoni au kiishio cha tanwini (ـً ـٍ ـٌ) mwishoni.",
+        "Halibebi kamwe viambishi vya wakati vya kitenzi (hakuna سَـ/سَوْفَ kwa wakati ujao, hakuna muundo wa يـ/تـ/أـ/نـ wa wakati wa sasa, wala hali ya amri).",
+        "Linaweza kusimama peke yake kama kipengele kamili cha sentensi (kiima, shamirisho, sehemu ya pili ya idhafa) na kuvuta kwake neno tegemezi kama kivumishi au dhamiri - herufi haiwezi kufanya hivyo."
+      ],
+      "belege": [
+        {
+          "sure": 1,
+          "vers": 1,
+          "wort": 1,
+          "zeigt": "Ism katika hali ya jarri baada ya kihusishi",
+          "warum": "بِسْمِ ina kiishio cha kasra kwa sababu kihusishi بِ (\"kwa/katika\") kilichotangulia kinahitaji hali ya jarri - tabia hii ni ya pekee kwa Ism, si kwa kitenzi wala herufi."
+        },
+        {
+          "sure": 1,
+          "vers": 2,
+          "wort": 1,
+          "zeigt": "Ism katika hali ya rafu'i kama kiima cha sentensi ya kiima",
+          "warum": "ٱلْحَمْدُ ina kiishio cha damma na inafungua sentensi ikiwa kiima (mubtada) - kazi ya kiima pamoja na kiishio cha rafu'i vinawezekana kwa Ism pekee, si kwa kitenzi wala herufi."
+        }
+      ],
+      "lernen": [
+        "Kabla ya kujifunza sifa yoyote ya jina, jiulize swali la msingi kwa kila neno jipya: Je, hili ni Ism, Fi'il, au herufi? Kagua kwa mtihani wa ال/tanwini.",
+        "Chukua Surat al-Fatiha nzima na uweke kila neno katika mojawapo ya aina tatu za maneno kabla ya kuendelea na sifa za kina - bila msingi huu, kila kitu kingine kinabaki kukariri bila kuelewa.",
+        "Jizoeze kutaja kwa sauti sifa nne za msingi za kila Ism unalokutana nalo (jinsia? idadi? maalumu au isiyo maalumu? hali gani ya i'rabu?) kabla ya kuendelea na neno linalofuata."
+      ],
+      "tabellen": ["nomen-muslim"],
+      "siehe": ["genus", "numerus", "bestimmtheit", "kasus", "murab", "mabni"]
+    },
+
+    "genus": {
+      "titel": "Jinsia ya Jina",
+      "ar": "التَّذْكِير وَالتَّأْنِيث",
+      "umschrift": "at-Tadhkir wa-t-Taʾnith (Mudhakkar/Muannath)",
+      "erklaerung": [
+        "Kila Ism ya Kiarabu ni ya kiume (mudhakkar) au ya kike (muannath) - hakuna jinsia ya kati. Hii haihusu tu viumbe hai, bali pia vitu ambavyo katika Kiswahili havina jinsia maalum: jua (شَمْس) na ardhi (أَرْض) ni vya kike katika Kiarabu, wakati kitabu (كِتَاب) au Bwana/Mola (رَبّ) ni vya kiume. Ugawaji huu wa maneno \"yaliyofichika\" kuwa ya kike lazima ujifunzwe kwa kukariri, kwa sababu hauonekani kwenye umbo la neno.",
+        "Alama inayoonekana zaidi na ya kuaminika ya jinsia ya kike ni kiishio ة (tá marbuta) mwishoni mwa neno. Ism isiyo na kiishio hiki au alama nyingine ya kike inachukuliwa kwa msingi kuwa ya kiume - isipokuwa: kuna kundi la maneno ambayo \"kwa asili\" ni ya kike ijapokuwa hayana ة, miongoni mwavyo ni viungo vya mwili vyenye jozi (mkono, jicho, sikio), matukio ya kimaumbile (jua, moto, upepo) na majina mengi ya nchi.",
+        "Jinsia si suala la umbo tu, bali inaingia katika muundo mzima wa sentensi: kivumishi lazima kilingane kwa jinsia na neno linalokielezea (mausuf), na kitenzi cha nafsi ya tatu lazima kilingane kwa jinsia na kiima chake. Yeyote anayekosea kubainisha jinsia ya jina hujenga bila kuepukika kiishio kibaya cha kivumishi au kitenzi kinachozunguka jina hilo.",
+        "Kanuni maalum muhimu inahusiana kwa karibu na jinsia: jamu taksiri (wingi uliobadilika muundo) inayoashiria vitu visivyo na uhai hutendewa, kwa upatanisho na kitenzi na kivumishi, kama neno la umoja la kike - bila kujali jinsia ya umbo lake la umoja. Hii inaeleza kwa nini katika kongano baadhi ya maneno ambayo asili yake ni ya kiume yanaonekana katika wingi yakiwa na alama ya \"kike\"."
+      ],
+      "erkennung": [
+        "Kiishio ة (tá marbuta) mwishoni mwa neno = ya kike - alama inayoonekana ya kuaminika zaidi.",
+        "Kutokuwepo kwa alama ya kike = kwa msingi ni ya kiume, isipokuwa neno liko kwenye orodha ya tofauti (viungo vya mwili vyenye jozi, matukio fulani ya kimaumbile, majina mengi ya nchi).",
+        "Kivumishi kinachoambatana au kitenzi cha nafsi ya tatu huonyesha kupitia kiishio chake (ة kwenye kivumishi, تْ kwenye kitenzi) jinsia ya neno linalorejelewa."
+      ],
+      "belege": [
+        {
+          "sure": 1,
+          "vers": 2,
+          "wort": 3,
+          "zeigt": "Ism ya kiume isiyo na alama ya jinsia inayoonekana",
+          "warum": "رَبِّ haina ة wala alama nyingine ya kike - ni ya kiume kwa msingi, kama inavyothibitishwa na alama \"gender: m\" katika kongano."
+        },
+        {
+          "sure": 2,
+          "vers": 3,
+          "wort": 5,
+          "zeigt": "Ism ya kike, inayotambulika kwa kiishio ة",
+          "warum": "ٱلصَّلَوٰةَ ina kiishio ة (hapa kinaonekana kabla ya fatha ya nasbu kama ة) na kwa hivyo ni ya kike - imewekwa alama katika kongano kama \"gender: f\"."
+        },
+        {
+          "sure": 114,
+          "vers": 6,
+          "wort": 2,
+          "zeigt": "Ism ya kike kwa kiishio ة, hata kwa kundi la viumbe (majini)",
+          "warum": "ٱلْجِنَّةِ ina kiishio ة na imewekwa alama ya kike, ingawa inaashiria kundi la viumbe - alama ya umbo ndiyo inayoamua, si jinsia halisi ya viumbe wanaokusudiwa."
+        }
+      ],
+      "lernen": [
+        "Usijifunze jinsia kama kanuni pekee, bali daima kwa jozi ya maneno: sema رَبّ (kiume) na صَلَاة (kike) kwa sauti mfululizo, mpaka tofauti ya viishio iwe imekaa sikioni mwako.",
+        "Chukua majina 10 kutoka sura moja na uyapange kutoka kichwani katika safu mbili (kiume/kike) - kisha thibitisha kwa alama zilizoko katika kamusi hii.",
+        "Tengeneza orodha fupi ya kukukumbusha ya maneno \"yaliyofichika kuwa ya kike\" (viungo vya mwili vyenye jozi, jua, moto, ardhi, upepo) - hizi ndizo hali ambazo msingi wa \"hakuna ة = ya kiume\" haufanyi kazi.",
+        "Katika orodha ya msamiati, funika safu ya jinsia na ujaribu kupanga kutoka kumbukumbu kabla ya kukagua."
+      ],
+      "tabellen": ["nomen-muslim"],
+      "siehe": ["ism", "numerus", "jam-taksir"]
+    },
+
+    "numerus": {
+      "titel": "Idadi ya Jina: Umoja, Uwili, Wingi",
+      "ar": "الْمُفْرَد وَالْمُثَنَّى وَالْجَمْع",
+      "umschrift": "al-Mufrad wa-l-Muthanna wa-l-Jamʿ",
+      "erklaerung": [
+        "Kiarabu kinatofautisha idadi tatu, si mbili: umoja (mufrad) kwa kimoja, uwili (muthanna) kwa viwili hasa, na wingi (jam') kwa vitatu au zaidi. Uwili ni mfumo kamili na wa kujitegemea wenye viishio vyake - hautendewi kama aina ya wingi tu, bali una hali yake ya rafu'i na hali yake ya nasbu/jarri.",
+        "Uwili huundwa kwa kiishio ـَانِ katika rafu'i na ـَيْنِ katika nasbu/jarri, mfano مُسْلِمَانِ (\"Waislamu wawili\", rafu'i) ikilinganishwa na مُسْلِمَيْنِ (nasbu/jarri ya watu hao hao wawili). Kiishio hiki huongezwa kwenye karibu kila Ism, bila kujali wingi wake unaundwaje.",
+        "Katika kuunda wingi kuna njia mbili tofauti kabisa. Jamu salimu (wingi safi) huongeza tu kiishio kwenye shina la umoja lisilobadilika: kwa kiume mara nyingi ـُونَ/ـِينَ (karibu peke yake kwa majina ya watu na ismu fa'ili), kwa kike mara nyingi ـَات. Jamu taksiri (wingi uliobadilika) kinyume chake hubadilisha muundo wa ndani wa neno lenyewe, mfano قَلْب → قُلُوب (\"moyo\" → \"mioyo\"). Katika Qur'ani jamu taksiri ndiyo hali inayotokea zaidi kwa majina ya vitu - ina sehemu yake ya kina zaidi ya kamusi hii, kwa sababu hakuna kanuni moja thabiti ya kuiunda.",
+        "Muhimu kwa muundo wa sentensi: jamu taksiri inayoashiria vitu visivyo na uhai inahitaji upatanisho ulewule na kivumishi na kitenzi kama neno la umoja la kike - bila kujali jinsia ya umoja wake wa asili. Kanuni hii hukutana nayo mara kwa mara wakati wa kusoma na mwanzoni inaonekana kama kosa, lakini ni kawaida."
+      ],
+      "erkennung": [
+        "Uwili: kiishio ـَانِ (rafu'i) au ـَيْنِ (nasbu/jarri), karibu daima kikitanguliwa na fatha.",
+        "Jamu mudhakkar salimu (wingi safi wa kiume): kiishio ـُونَ (rafu'i) / ـِينَ (nasbu/jarri) - hutokea karibu tu kwa majina ya watu na ismu fa'ili.",
+        "Jamu muannath salimu (wingi safi wa kike): kiishio ـَات, mara nyingi kwenye shina la neno bila ة ya asili ya umoja.",
+        "Jamu taksiri (wingi uliobadilika): hakuna kiishio thabiti - kiini cha neno chenyewe kinabadilika na kinaweza kutambuliwa tu kwa kulinganisha na umoja unaojulikana."
+      ],
+      "belege": [
+        {
+          "sure": 12,
+          "vers": 36,
+          "wort": 4,
+          "zeigt": "Uwili katika rafu'i",
+          "warum": "فَتَيَانِ (\"vijana wawili\") kina kiishio cha uwili ـَانِ kwa sababu kimesimama kama kiima katika rafu'i - kimewekwa alama katika kongano kama number: du, case: nom."
+        },
+        {
+          "sure": 16,
+          "vers": 51,
+          "wort": 5,
+          "zeigt": "Uwili katika nasbu",
+          "warum": "إِلَٰهَيْنِ (\"miungu wawili\") kina kiishio cha uwili ـَيْنِ kwa sababu ni shamirisho la kitenzi \"kuchukua\" katika nasbu - uwili ulewule kama فَتَيَانِ, lakini kwa kiishio cha nasbu/jarri."
+        },
+        {
+          "sure": 1,
+          "vers": 2,
+          "wort": 4,
+          "zeigt": "Jamu mudhakkar salimu",
+          "warum": "ٱلْعَٰلَمِينَ inaishia kwa ـِينَ, kiishio cha kawaida cha wingi kwa majina ya watu/viumbe katika nasbu/jarri - kimewekwa alama katika kongano kama number: pl."
+        },
+        {
+          "sure": 113,
+          "vers": 4,
+          "wort": 3,
+          "zeigt": "Jamu muannath salimu",
+          "warum": "ٱلنَّفَّٰثَٰتِ inaishia kwa ـَٰتِ - kiishio cha kawaida cha jamu muannath salimu, bila shina la neno kubadilika vinginevyo."
+        }
+      ],
+      "lernen": [
+        "Usijifunze idadi tatu kama kanuni ya kufikirika, bali kupitia mfululizo wa maneno: sema مُسْلِم / مُسْلِمَانِ / مُسْلِمُونَ kwa sauti mfululizo, mpaka mahadhi ya viishio yakae vizuri.",
+        "Jizoeze uwili kando na wingi - mara nyingi husahaulika wakati wa kujifunza, kwa sababu haupo katika Kiswahili kwa namna ile ile. Tafuta maumbo mengine 5 ya uwili katika Qur'ani na uyasome kwa sauti.",
+        "Kwa jamu salimu kanuni ya kiishio inatosha; kwa jamu taksiri (angalia kipengele chake) unahitaji orodha ya umoja→wingi, kwa sababu hakuna kanuni ya kuiunda.",
+        "Katika orodha ya maneno, funika kwa zamu umoja, uwili au wingi na ukamilishe umbo linalokosekana kutoka kumbukumbu."
+      ],
+      "tabellen": ["nomen-muslim"],
+      "siehe": ["ism", "genus", "jam-taksir"]
+    },
+
+    "jam-taksir": {
+      "titel": "Jamu Taksiri (Wingi Uliobadilika Muundo)",
+      "ar": "جَمْع التَّكْسِير",
+      "umschrift": "Jamʿ at-Taksir",
+      "erklaerung": [
+        "Wakati jamu salimu (wingi safi) inaongeza tu kiishio kwenye shina la umoja lisilobadilika, jamu taksiri (wingi uliobadilika) hubadilisha muundo wa ndani wa neno lenyewe - konsonanti zinabaki (mzizi), lakini vokali na wakati mwingine herufi za ziada zinahamishwa kabisa, mfano قَلْب (moyo) → قُلُوب (mioyo) au بَصَر (uwezo wa kuona/jicho) → أَبْصَار (uwezo wa kuona/macho).",
+        "Jamu taksiri ndiyo hali inayotokea zaidi katika Qur'ani mara tu isipokuwa suala la majina ya watu - inahusu karibu wingi wote wa vitu. Kuna mifumo inayojirudia (mfano فُعُول kama katika قُلُوب, au أَفْعَال kama katika أَبْصَار), lakini hakuna kanuni moja ambayo kwayo mtu angeweza kutoa kwa uhakika wingi wa neno jipya. Kwa hivyo kila jamu taksiri lazima ijifunzwe kama jozi yake ya msamiati (umoja + wingi).",
+        "Kisarufi, jamu taksiri mara nyingi hushangaza: inapoashiria vitu visivyo na uhai, hutendewa katika upatanisho na kivumishi na kitenzi kama neno la umoja la kike, bila kujali jinsia ya umoja wake. Katika kongano hili linaonekana kwa kuwa maneno ya umoja wa kiume wakati mwingine yanaonekana katika jamu taksiri yakiwa na alama ya \"kike\" - hili si kosa, bali ni kanuni ya kawaida ya upatanisho."
+      ],
+      "erkennung": [
+        "Shina la neno lenyewe linabadilika ikilinganishwa na umoja (vokali tofauti, mara nyingi herufi za ziada) - hakuna kiishio rahisi kinachoongezwa.",
+        "Haliishii kwa ـُونَ/ـِينَ (jamu mudhakkar salimu) wala kwa ـَات (jamu muannath salimu).",
+        "Linatambulika mara nyingi tu kwa mifumo inayojulikana (mfano فُعُول، أَفْعَال، مَفَاعِل) au kwa kutafuta kamusini - si kwa kanuni."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 7,
+          "wort": 4,
+          "zeigt": "Jamu taksiri ya قَلْب (moyo)",
+          "warum": "قُلُوبِهِمْ inaonyesha muundo فُعُول: umoja قَلْب unakuwa قُلُوب, bila kiishio rahisi kuongezwa - kiini cha neno chenyewe kimebadilika."
+        },
+        {
+          "sure": 2,
+          "vers": 7,
+          "wort": 8,
+          "zeigt": "Jamu taksiri ya بَصَر (uwezo wa kuona)",
+          "warum": "أَبْصَٰرِهِمْ inaonyesha muundo أَفْعَال: kutoka بَصَر inakuwa أَبْصَار - mfano mwingine wa wingi uliobadilika badala ya wingi safi, karibu na قُلُوبِهِمْ katika aya ileile."
+        },
+        {
+          "sure": 113,
+          "vers": 4,
+          "wort": 5,
+          "zeigt": "Jamu taksiri ya عُقْدَة (fundo)",
+          "warum": "ٱلْعُقَدِ ni jamu taksiri ya عُقْدَة (fundo) - imewekwa alama katika kongano kama number: pl, gender: m, ijapokuwa umoja wake ni wa kike kisarufi (kiishio ة); alama ya jinsia ya jamu taksiri inafuata kanuni zake yenyewe, si za umoja wake."
+        }
+      ],
+      "lernen": [
+        "Kubali tangu mwanzo: kwa jamu taksiri hakuna njia ya mkato. Tengeneza orodha yako mwenyewe ya umoja → wingi na ujifunze kama jozi za msamiati.",
+        "Katika orodha yako, funika kwa zamu safu ya umoja au ya wingi na ukamilishe kutoka kumbukumbu - kwanza upande mmoja, kisha upande mwingine.",
+        "Wakati wa kusoma Qur'ani, angalia kwa makusudi maneno yenye maana ya wingi lakini hayaishii kwa ـُونَ/ـِينَ wala ـَات - hayo karibu daima ni jamu taksiri.",
+        "Panga jamu taksiri mpya ulizojifunza kulingana na muundo wake (فُعُول, أَفْعَال, مَفَاعِل ...) - mifumo hiyo hujirudia, ijapokuwa haiundi kanuni thabiti."
+      ],
+      "tabellen": [],
+      "siehe": ["numerus", "genus"]
+    },
+
+    "bestimmtheit": {
+      "titel": "Hali ya Kubainika: Maalumu na Isiyo Maalumu",
+      "ar": "الْمَعْرِفَة وَالنَّكِرَة",
+      "umschrift": "al-Maʿrifa wa-n-Nakira",
+      "erklaerung": [
+        "Kila Ism ya Kiarabu ni ama maalumu (marifa, \"kitabu maalum kinachojulikana\") au isiyo maalumu (nakira, \"kitabu chochote kile\"). Tofauti hii inalingana kwa kiasi na tofauti ya kimatumizi kati ya \"kile kitabu\" na \"kitabu fulani\", lakini katika Kiarabu inaonyeshwa kimofolojia, yaani moja kwa moja kwenye umbo la neno lenyewe, si kwa neno tu linalotangulia.",
+        "Njia ya kawaida zaidi ya kufikia hali ya kubainika ni kiambishi أَل (Al at-Ta'rif), ambacho hukaa moja kwa moja na bila nafasi mbele ya Ism. Njia nyingine, inayotokea mara kwa mara pia, ni kupitia idhafa (uunganisho wa umilikaji): neno la kwanza la idhafa (mudhafu) huwa maalumu au lisilo maalumu kiotomatiki kulingana na neno la pili (mudhaf ilayhi) - hata bila kuwa na kiambishi chake chenyewe. Dhamiri ya umilikaji iliyoungwa nayo hufanya Ism iwe maalumu kiotomatiki, kama vile majina mahususi yanavyokuwa maalumu kwa asili yake.",
+        "Ism isiyo maalumu badala yake hubeba kwa kawaida tanwini - alama ya vokali maradufu mwishoni (ـٌ kwa dammatan/rafu'i, ـً kwa fathatan/nasbu, ـٍ kwa kasratan/jarri), inayosikika inaposemwa kama -un, -an au -in. Tanwini na kiambishi أَل hazipatani kamwe: neno hubeba kimoja tu, kamwe si vyote viwili kwa wakati mmoja.",
+        "Sifa moja maalum inahusu kiishio ى (alif maqsura): kwa maneno yanayoishia hivyo, tanwini haionekani vizuri kwa jicho, kwa sababu inaungana na alif maqsura na kuwa alama moja tu - kwa hivyo ni lazima ujifunze kuifikiria tanwini hiyo \"kimya\" hata hivyo."
+      ],
+      "erkennung": [
+        "Maalumu (marifa) kupitia: kiambishi ال moja kwa moja kabla ya neno, majina mahususi, dhamiri za umilikaji zilizoungwa, au nafasi ya mudhafu kabla ya mudhaf ilayhi aliye maalumu.",
+        "Isiyo maalumu (nakira): hubeba tanwini (ـٌ/ـً/ـٍ) na haina wala kiambishi ال, wala kiambishi cha umilikaji, wala hali ya mudhafu.",
+        "Tanwini na kiambishi ال hazipatani kila wakati - neno lenye ال halibebi kamwe tanwini kwa wakati mmoja."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 2,
+          "wort": 2,
+          "zeigt": "Hali ya kubainika kupitia kiambishi ال",
+          "warum": "ٱلْكِتَٰبُ ina kiambishi ال moja kwa moja kabla ya shina - kimewekwa alama katika kongano kama state: definite, bila tanwini yoyote."
+        },
+        {
+          "sure": 1,
+          "vers": 2,
+          "wort": 3,
+          "zeigt": "Hali ya kubainika kupitia nafasi ya mudhafu, bila kiambishi chake",
+          "warum": "رَبِّ haina wala ال wala tanwini, lakini bado ni maalumu (state: definite), kwa sababu iko katika nafasi ya mudhafu kabla ya mudhaf ilayhi maalumu ٱلْعَٰلَمِينَ - hali ya kubainika \"inarithiwa\" kutoka neno la pili la idhafa."
+        },
+        {
+          "sure": 112,
+          "vers": 1,
+          "wort": 4,
+          "zeigt": "Ism isiyo maalumu yenye tanwini dammatan inayoonekana",
+          "warum": "أَحَدٌ ina kiishio ـٌ (dammatan) na imewekwa alama kama state: indefinite - tanwini inayoonekana wazi mwishoni mwa Surat al-Ikhlas maarufu."
+        },
+        {
+          "sure": 112,
+          "vers": 4,
+          "wort": 4,
+          "zeigt": "Ism isiyo maalumu yenye tanwini fathatan inayoonekana",
+          "warum": "كُفُوًا ina kiishio ـًا (fathatan) katika nasbu na imewekwa alama kama state: indefinite - sura ileile inaonyesha hapa aina ya pili kati ya aina tatu za tanwini."
+        },
+        {
+          "sure": 2,
+          "vers": 17,
+          "wort": 15,
+          "zeigt": "Ism isiyo maalumu yenye tanwini kasratan inayoonekana",
+          "warum": "ظُلُمَٰتٍ ina kiishio ـٍ (kasratan) katika jarri na imewekwa alama kama state: indefinite - kwa hiyo pamoja na أَحَدٌ, كُفُوًا na ظُلُمَٰتٍ, aina zote tatu za tanwini zimethibitishwa katika sehemu halisi za Qur'ani."
+        }
+      ],
+      "lernen": [
+        "Jifunze kwanza kusoma kwa sauti alama tatu za tanwini (ـٌ = -un, ـً = -an, ـٍ = -in), kabla ya kushughulikia kanuni za hali ya kubainika - bila kusoma alama hizo kwa uhakika, kila kitu kingine kinabaki nadharia tu.",
+        "Chukua ukurasa wowote wa Qur'ani na kwanza tia alama kila neno lenye ال, kisha kila neno lenye tanwini inayoonekana - kilichobaki kwa kawaida ni maneno ya mudhafu, majina mahususi, au maneno yenye kiambishi cha dhamiri.",
+        "Weka kanuni \"ال na tanwini hazipatani\" akilini kwa nguvu ili kwa kila neno jipya uweze kukagua mara moja ni sifa ipi inatumika - kamwe si zote mbili kwa pamoja.",
+        "Jizoeze umbo la tanwini iliyofichika kwa maneno yanayoishia kwa ى kando, mfano katika هُدًى - lisome kwa sauti kama \"hudan\" na uangalie kwa makini jinsi kidogo linavyoonekana kwenye maandishi."
+      ],
+      "tabellen": ["nomen-muslim"],
+      "siehe": ["ism", "idafa", "murab"]
+    },
+
+    "kasus": {
+      "titel": "Hali za I'rabu: Rafu'i, Nasbu, Jarri",
+      "ar": "الرَّفْع وَالنَّصْب وَالْجَرّ",
+      "umschrift": "ar-Rafʿ, an-Nasb, al-Dscharr",
+      "erklaerung": [
+        "Kiarabu kina hali tatu za i'rabu kwa Ism: rafu'i (inayolingana kwa kiasi na hali ya kiima), nasbu (inayolingana na hali ya shamirisho) na jarri (inayolingana na hali ya umilikaji - jarri kwa maana halisi ni \"kuvuta/kukokota\" na inaashiria hali baada ya vihusishi). Kila hali ina alama yake ya vokali mwishoni, ambayo katika Ism mu'rabu inasikika na mara nyingi inaonekana pia.",
+        "Rafu'i unaonekana kwa kiishio -u (damma, ـُ kwa maneno maalumu, ـٌ kama tanwini kwa yasiyo maalumu). Kwa kawaida unaashiria kiima cha sentensi (fa'ili katika sentensi ya kitenzi, mubtada katika sentensi ya kiima), lakini pia kiarifu (khabar) cha sentensi ya kiima.",
+        "Nasbu unaonekana kwa kiishio -a (fatha, ـَ au ـً kama tanwini). Unaashiria hasa shamirisho la moja kwa moja (mafuli bihi) la kitenzi, na pia kazi nyingine mbalimbali kama hali ya mazingira (haal) au sababu ya kitendo (mafuli li-ajlih).",
+        "Jarri unaonekana kwa kiishio -i (kasra, ـِ au ـٍ kama tanwini). Hutokea katika hali mbili hasa: baada ya kihusishi (harfu jarri) na kama neno la pili la idhafa (mudhaf ilayhi). Ism ya mamnuu min a-sarf (isiyoruhusiwa kupinda) inatoka kwenye kanuni hii na kubadilisha kasra ya jarri kuwa fatha - angalia kipengele chake."
+      ],
+      "erkennung": [
+        "Rafu'i: kiishio -u/ـُ (maalumu) au -un/ـٌ (isiyo maalumu, tanwini dammatan) - kwa kawaida kiima au kiarifu.",
+        "Nasbu: kiishio -a/ـَ (maalumu) au -an/ـً (isiyo maalumu, tanwini fathatan) - kwa kawaida shamirisho la moja kwa moja.",
+        "Jarri: kiishio -i/ـِ (maalumu) au -in/ـٍ (isiyo maalumu, tanwini kasratan) - daima baada ya kihusishi au kama neno la pili la idhafa."
+      ],
+      "belege": [
+        {
+          "sure": 1,
+          "vers": 2,
+          "wort": 1,
+          "zeigt": "Rafu'i kwenye kiima cha sentensi ya kiima",
+          "warum": "ٱلْحَمْدُ ina kiishio cha damma -u, kwa sababu ni mubtada anayeunda kiima cha sentensi - kimewekwa alama katika kongano kama case: nom."
+        },
+        {
+          "sure": 1,
+          "vers": 6,
+          "wort": 2,
+          "zeigt": "Nasbu kwenye shamirisho la moja kwa moja la amri",
+          "warum": "ٱلصِّرَٰطَ ina kiishio cha fatha -a, kwa sababu ni shamirisho la moja kwa moja (mafuli bihi) la amri ٱهْدِنَا (\"tuongoze\") - kimewekwa alama katika kongano kama case: acc."
+        },
+        {
+          "sure": 1,
+          "vers": 1,
+          "wort": 1,
+          "zeigt": "Jarri baada ya kihusishi",
+          "warum": "بِسْمِ ina kiishio cha kasra -i, kwa sababu kihusishi بِ kiko moja kwa moja mbele yake - kimewekwa alama katika kongano kama case: gen."
+        }
+      ],
+      "lernen": [
+        "Jifunze kwanza viishio vitatu vya hali kama sauti tu: -u/-un, -a/-an, -i/-in - visome kwa sauti kabla ya kukumbuka vinawakilisha nini.",
+        "Unganisha kila hali mara moja na kazi yake kuu: rafu'i = nani/nini anatenda au anaelezwa, nasbu = nani/nini kinachoathiriwa na kitendo, jarri = baada ya kihusishi au kama neno la pili la idhafa.",
+        "Chukua Surat al-Fatiha na ubainishe hali ya kila Ism kabla ya kuangalia tafsiri - kisha thibitisha kwa viishio vilivyoko kwenye maandishi.",
+        "Weka akilini kama kikumbusho: nasbu na umbo lake la tanwini ـً ndizo pekee ambazo mara nyingi huandikwa na alifu ya ziada katika machapisho ya Qur'ani - hilo husaidia kutambua hali hata bila alama za vokali."
+      ],
+      "tabellen": ["nomen-muslim"],
+      "siehe": ["ism", "murab", "mabni", "diptot"]
+    },
+
+    "murab": {
+      "titel": "Jina Linalobadilika (Mu'rabu)",
+      "ar": "مُعْرَب",
+      "umschrift": "Muʿrab",
+      "erklaerung": [
+        "Mu'rabu ni Ism ambayo kiishio chake hubadilika kikweli kulingana na hali ya i'rabu - wingi mkubwa wa majina yote ya Kiarabu ni ya kundi hili. Neno lilelile hubeba alama tofauti ya vokali mwishoni katika rafu'i kuliko katika nasbu, na tena alama nyingine katika jarri. Mabadiliko haya ya kiishio ndiyo hali ya kawaida; kinyume chake (mabniyyu, kiishio kisichobadilika) ni ubaguzi na kinahusu tu makundi fulani ya maneno kama dhamiri, ismu ishara na ismu mawsul.",
+        "Mu'rabu unaonekana wazi zaidi unapoweka pamoja neno lilelile katika nafasi tofauti za kisarufi katika Qur'ani: jina lilelile linaonekana wakati mmoja na kiishio cha damma (rafu'i), wakati mwingine na kiishio cha fatha (nasbu), na wakati mwingine na kiishio cha kasra (jarri) - ni kurudiwa tu kwa neno lilelile, likiwa na kazi tofauti katika sentensi kila mara.",
+        "Kwa kuelewa Qur'ani, jambo hili ni la msingi: katika mu'rabu, kiishio chenyewe kinaeleza nafasi ya neno katika sentensi, bila kujali mpangilio wa maneno. Ndiyo maana Kiarabu kinaweza kuunda mpangilio wa maneno kwa uhuru zaidi kuliko lugha nyingine bila kuleta utata - kiishio cha hali ya i'rabu ndicho kinachobeba taarifa ya kisarufi."
+      ],
+      "erkennung": [
+        "Kiishio cha neno kinabadilika kwa uwazi kati ya maumbo matatu ya hali (damma/fatha/kasra au maumbo yake ya tanwini), kulingana na nafasi linalocheza katika sentensi.",
+        "Wingi wa majina na vivumishi vyote ni mu'rabu - kwa mashaka, Ism ni ya kubadilika isipokuwa ionekane wazi kuwa ni ya mojawapo ya makundi ya mabniyyu (dhamiri, ismu ishara, ismu mawsul, baadhi ya majina yanayokaribiana na herufi).",
+        "Mamnuu min a-sarf pia ni mu'rabu - hubadilika tu kwa viishio viwili badala ya vitatu na kamwe kwa tanwini (angalia kipengele chake)."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 7,
+          "wort": 2,
+          "zeigt": "Umbo lilelile la neno katika rafu'i",
+          "warum": "ٱللَّهُ hapa ina kiishio cha damma -u, kwa sababu iko kama fa'ili (kiima) kwa kitenzi خَتَمَ - kimewekwa alama katika kongano kama case: nom."
+        },
+        {
+          "sure": 2,
+          "vers": 9,
+          "wort": 2,
+          "zeigt": "Umbo lilelile la neno katika nasbu",
+          "warum": "ٱللَّهَ hapa ina kiishio cha fatha -a, kwa sababu ni shamirisho la moja kwa moja la kitenzi يُخَٰدِعُونَ - kimewekwa alama katika kongano kama case: acc, tofauti na damma katika 2:7."
+        },
+        {
+          "sure": 1,
+          "vers": 1,
+          "wort": 2,
+          "zeigt": "Umbo lilelile la neno katika jarri",
+          "warum": "ٱللَّهِ hapa ina kiishio cha kasra -i, kwa sababu ni mudhaf ilayhi baada ya بِسْمِ - neno lilelile linaonekana kwa hivyo likiwa na viishio vyote vitatu vya hali katika sehemu tatu tofauti, halisi, za Qur'ani."
+        }
+      ],
+      "lernen": [
+        "Chagua neno linalotokea mara nyingi (kama ٱللَّه) na kusanya sehemu tatu za Qur'ani ambapo linatokea katika hali zote tatu - lisome kwa sauti mfululizo ili kusikia mabadiliko ya kiishio kwenye neno lilelile.",
+        "Kumbuka: mu'rabu ni hali ya kawaida. Badala yake jifunze kwa makusudi ubaguzi (makundi ya mabniyyu), na kilichobaki kinakuwa kiotomatiki \"kinachobadilika\".",
+        "Jizoeze kwa jozi za kivumishi-jina: jina linapobadilisha hali, kivumishi kinachoambatana lazima kifuate hali ileile - thibitisha hilo katika aya kadhaa."
+      ],
+      "tabellen": ["nomen-muslim"],
+      "siehe": ["kasus", "mabni", "diptot"]
+    },
+
+    "mabni": {
+      "titel": "Jina Lisilobadilika (Mabniyyu)",
+      "ar": "مَبْنِي",
+      "umschrift": "Mabni",
+      "erklaerung": [
+        "Mabniyyu ni Ism ambayo kiishio chake hakibadiliki, haijalishi ni nafasi gani inayocheza katika sentensi - kwa hivyo haina hali yake ya i'rabu kwa maana ya kiishio kinachobadilika. Katika kundi hili kuna dhamiri (iliyofichika na iliyoungwa), ismu ishara, na ismu mawsul, pamoja na baadhi ya majina ya hesabu na majina yanayokaribiana na herufi.",
+        "Tofauti na mu'rabu inaonekana wazi zaidi kwa kuwa neno la mabniyyu, katika nafasi tofauti kabisa za kisarufi - wakati mmoja kama kiima, wakati mwingine kama shamirisho, wakati mwingine baada ya kihusishi - hubaki na umbo lilelile daima. Sentensi bado ndiyo inayoamua nafasi gani neno linacheza, lakini nafasi hiyo hausomwi kwenye kiishio kinachobadilika, bali tu kwenye nafasi yake na muktadha wake.",
+        "Jambo muhimu ni kutochanganya mabniyyu na kutokuwa maalumu au na \"kutokuwa na hali ya i'rabu\" kwa maana ya \"haikupewa hali\": kisarufi, neno la mabniyyu bado liko katika nafasi fulani ya hali (linaweza kisarufi kuwa \"katika rafu'i\" au \"katika jarri\"), tu haionyeshi nafasi hiyo kwa kiishio chake chenyewe."
+      ],
+      "erkennung": [
+        "Umbo la neno linabaki lilelile katika kila nafasi ya sentensi - hakuna kiishio cha rafu'i/nasbu/jarri kinachobadilika.",
+        "Makundi ya kawaida ya mabniyyu: dhamiri iliyofichika na iliyoungwa, ismu ishara (ذَٰلِكَ, هَـٰذَا, أُولَٰئِكَ ...), ismu mawsul (ٱلَّذِي, ٱلَّذِينَ ...).",
+        "Katika kongano ya kimofolojia ya kamusi hii, maneno kama hayo hayaonyeshi alama yoyote ya hali kwenye neno lenyewe - hii ni ishara wazi ya kiufundi ya mabniyyu."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 2,
+          "wort": 1,
+          "zeigt": "Ismu ishara isiyo na kiishio cha hali kinachobadilika",
+          "warum": "ذَٰلِكَ haibebi alama yoyote ya hali, ijapokuwa katika sentensi inaanzisha nafasi ya kiima - umbo linabaki lilelile bila kujali kazi ya kisarufi, hii ni alama ya mabniyyu."
+        },
+        {
+          "sure": 1,
+          "vers": 7,
+          "wort": 2,
+          "zeigt": "Ismu mawsul isiyo na kiishio cha hali kinachobadilika",
+          "warum": "ٱلَّذِينَ hapa iko kama mudhaf ilayhi baada ya صِرَٰطَ, lakini haibebi alama yoyote ya hali - umbo lilelile ٱلَّذِينَ linaonekana katika Qur'ani pia kama kiima au shamirisho bila kubadilika."
+        }
+      ],
+      "lernen": [
+        "Jifunze makundi ya mabniyyu kama orodha iliyofungwa kwa kukariri (dhamiri, ismu ishara, ismu mawsul) - hii ndiyo ubaguzi, kila kitu kingine kwa kawaida ni mu'rabu.",
+        "Tafuta katika Qur'ani umbo lilelile la mabniyyu (mfano ٱلَّذِينَ) katika sehemu kadhaa zenye nafasi tofauti wazi za kisentensi na uthibitishe kwako mwenyewe kuwa umbo halibadiliki.",
+        "Usichanganye mabniyyu na kutokuwa maalumu: ذَٰلِكَ ni maalumu (\"kitu hiki/kile maalum\"), ijapokuwa hakionyeshi kiishio cha hali kinachobadilika - sifa hizo mbili ni huru kutoka kwa kila mmoja."
+      ],
+      "tabellen": [],
+      "siehe": ["murab", "kasus", "ism-ishara", "asma-mawsula", "pronomen-frei", "pronomen-gebunden"]
+    },
+
+    "diptot": {
+      "titel": "Mamnuu min a-Sarf (Isiyoruhusiwa Kupinda)",
+      "ar": "مَمْنُوعٌ مِنَ الصَّرْف",
+      "umschrift": "Mamnuʿ mina s-Sarf",
+      "erklaerung": [
+        "Mamnuu min a-sarf ni aina maalum ya jina, ya mu'rabu (inayobadilika), lakini isiyotofautisha viishio vyote vitatu vya hali na kamwe haibebi tanwini - hata kama kwa maana yake si maalumu. Katika rafu'i inatenda kawaida (damma), katika nasbu pia kawaida (fatha) - lakini katika jarri kasra inayotarajiwa inabadilishwa na fatha. Kwa hivyo mamnuu min a-sarf ina viishio viwili tu tofauti badala ya vitatu.",
+        "Miongoni mwa makundi ya mamnuu min a-sarf ni: majina mahususi ya kigeni (mfano majina ya watu kama فِرْعَوْن, ambayo hayana asili ya Kiarabu), mifumo fulani ya wingi (hasa mfumo مَفَاعِل/مَفَاعِيل, unaoitwa \"wingi wa wingi wa kupindukia\"), pamoja na vivumishi vya muundo أَفْعَل (mfano vivumishi vya rangi) na mifumo mingine michache thabiti. Mamnuu min a-sarf hurudi kuwa mu'rabu kamili (inayobadilika kikamilifu na tanwini) mara tu inapokuwa maalumu - kwa mfano kwa ال au kama mudhafu.",
+        "Kwa kusoma Qur'ani, mamnuu min a-sarf ni alama muhimu ya kutambua: neno linapotakiwa kubeba kasra baada ya kihusishi au kama mudhaf ilayhi, lakini badala yake linaonyesha fatha na hakuna tanwini inayoonekana, mara nyingi ni mamnuu min a-sarf."
+      ],
+      "erkennung": [
+        "Katika jarri kuna fatha badala ya kasra inayotarajiwa - hakuna tofauti ya kiishio inayoonekana kati ya nasbu na jarri.",
+        "Kamwe haibebi tanwini, hata kama neno kwa maana yake si maalumu.",
+        "Visababishi vya kawaida: majina mahususi ya kigeni/yasiyo ya Kiarabu, mifumo fulani ya wingi (hasa مَفَاعِل/مَفَاعِيل), vivumishi vya rangi na kasoro za mwili vya muundo أَفْعَل.",
+        "Inapokuwa maalumu (kwa ال au kama mudhafu), mamnuu min a-sarf inarudi kutenda kama jina la kawaida, linalobadilika kikamilifu."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 49,
+          "wort": 5,
+          "zeigt": "Mamnuu min a-sarf kwa jina mahususi la kigeni: fatha badala ya kasra katika jarri",
+          "warum": "فِرْعَوْنَ iko kama mudhaf ilayhi baada ya آلِ katika jarri, lakini inabeba kiishio -a (fatha) badala ya kasra inayotarajiwa kwa jarri - jambo la kawaida kwa jina mahususi la kigeni lisilo na mzizi wa Kiarabu."
+        },
+        {
+          "sure": 41,
+          "vers": 12,
+          "wort": 14,
+          "zeigt": "Mamnuu min a-sarf kwa mfumo wa wingi مَفَاعِيل: fatha badala ya kasra, hakuna tanwini",
+          "warum": "بِمَصَٰبِيحَ iko baada ya kihusishi بِ katika jarri, lakini inabeba kiishio -a (fatha) badala ya kasra na hakuna tanwini, ijapokuwa neno si maalumu - mfumo wa wingi مَفَاعِيل ni mojawapo ya mifumo thabiti ya mamnuu min a-sarf."
+        }
+      ],
+      "lernen": [
+        "Jifunze kwanza kanuni ya kutambua kama tabia ya haraka: fatha baada ya kihusishi au kama mudhaf ilayhi, mahali ambapo kasra ilipaswa kuwepo, ndiyo ishara ya mamnuu min a-sarf.",
+        "Jifunze makundi ya visababishi kama orodha fupi ya kukariri: majina mahususi ya kigeni, mfumo wa wingi مَفَاعِل/مَفَاعِيل, vivumishi vya rangi vya muundo أَفْعَل - huhitaji zaidi ya hivyo kuanza.",
+        "Jizoeze kwa majina ya manabii yanayojulikana (فِرْعَوْن, إِبْرَٰهِيم, يَعْقُوب, إِسْحَٰق): tafuta sehemu moja ya Qur'ani kwa kila jina ambapo jina liko katika jarri, na uangalie kiishio cha fatha.",
+        "Weka akilini kwa ukaguzi: mara tu mamnuu min a-sarf inapowekwa na ال au kuwa mudhafu, ubaguzi unatoweka - kisha inatenda tena kama mu'rabu yoyote nyingine."
+      ],
+      "tabellen": [],
+      "siehe": ["murab", "kasus", "bestimmtheit"]
+    },
+
+    "idafa": {
+      "titel": "Idhafa (Muunganiko wa Umilikaji)",
+      "ar": "الْإِضَافَة",
+      "umschrift": "al-Idafa",
+      "erklaerung": [
+        "Idhafa huunganisha majina mawili kuwa kitengo cha umilikaji au uhusiano, bila kuhitaji neno tofauti la kuunganisha - neno la kwanza linaitwa mudhafu (\"kilichoongezwa\", kitu kinachomilikiwa), la pili mudhaf ilayhi (\"kile kinachoongezwa kwake\", mmiliki). Vyote viwili kwa pamoja vinaunda kitengo thabiti kinachotenda kisarufi kama jina moja tu, maalumu au lisilo maalumu.",
+        "Kwa mudhafu kuna kanuni tatu thabiti: kamwe haubebi kiambishi ال, kamwe haubebi tanwini, na hali yake ya kubainika inategemea kikamilifu mudhaf ilayhi - kama neno la pili ni maalumu, la kwanza pia linakuwa maalumu kiotomatiki, bila kiambishi chake chenyewe. Mudhaf ilayhi kwa upande wake huwa daima katika jarri, bila kujali mudhafu wenyewe unabeba hali gani.",
+        "Idhafa inaweza pia kuwa na viungo vingi (mfululizo wa muunganiko kadhaa wa umilikaji mfululizo), na kiungo cha mwisho ndicho kinachoamua hali ya kubainika ya mfululizo mzima. Dhamiri ya umilikaji iliyoungwa (angalia kipengele cha dhamiri iliyoungwa) inachukua kisarufi nafasi ileile ya mudhaf ilayhi - رَبِّهِمْ (\"Mola wao\") ni muundo ulewule kisarufi kama رَبُّ الْعَٰلَمِينَ (\"Mola wa walimwengu\"), tofauti ni kwamba badala ya jina lililoandikwa kuna dhamiri."
+      ],
+      "erkennung": [
+        "Mudhafu (neno la kwanza): hakuna ال, hakuna tanwini, linafuatwa moja kwa moja na mudhaf ilayhi bila neno la kutenganisha kati yao.",
+        "Mudhaf ilayhi (neno la pili): huwa daima katika jarri, ni ama maalumu kwa ال, ni jina mahususi, au yenyewe inabeba dhamiri ya umilikaji - na hivyo kufanya usemi mzima kuwa maalumu.",
+        "Dhamiri ya nafsi iliyoambatanishwa kwenye jina (mfano ـهِمْ, ـهُ, ـنَا) inachukua kazi ileile ya mudhaf ilayhi na inafanya jina kuwa maalumu kiotomatiki."
+      ],
+      "belege": [
+        {
+          "sure": 1,
+          "vers": 2,
+          "wort": 3,
+          "zeigt": "Mudhafu: hakuna kiambishi, hakuna tanwini",
+          "warum": "رَبِّ inasimama bila ال na bila tanwini moja kwa moja kabla ya ٱلْعَٰلَمِينَ - hasa tabia ambayo mudhafu lazima aionyeshe."
+        },
+        {
+          "sure": 1,
+          "vers": 2,
+          "wort": 4,
+          "zeigt": "Mudhaf ilayhi: maalumu na katika jarri",
+          "warum": "ٱلْعَٰلَمِينَ inabeba kiambishi ال na kiishio -ina cha jarri - na hivyo kufanya رَبِّ iliyotangulia kuwa maalumu kiotomatiki, ijapokuwa رَبِّ yenyewe haibebi kiambishi."
+        },
+        {
+          "sure": 113,
+          "vers": 1,
+          "wort": 3,
+          "zeigt": "Mudhafu katika mfululizo wa pili wa idhafa",
+          "warum": "بِرَبِّ (kihusishi بِ + mudhafu رَبِّ) tena haibebi wala ال wala tanwini na inakuwa maalumu tu baada ya ٱلْفَلَقِ - muundo ulewule kama katika 1:2, ukithibitishwa katika sehemu nyingine ya Qur'ani."
+        },
+        {
+          "sure": 113,
+          "vers": 1,
+          "wort": 4,
+          "zeigt": "Mudhaf ilayhi mwenye kiambishi na kiishio cha jarri",
+          "warum": "ٱلْفَلَقِ inabeba kiambishi ال na kiishio cha kasra cha jarri, kwa sababu iko kama mudhaf ilayhi baada ya رَبِّ - idhafa kamili بِرَبِّ ٱلْفَلَقِ ina maana \"kwa Mola wa mapambazuko\"."
+        }
+      ],
+      "lernen": [
+        "Jifunze kwanza kanuni tatu za mudhafu kwa kukariri kama sentensi thabiti ya kukumbuka: hakuna ال, hakuna tanwini, hali ya kubainika inarithiwa kutoka neno la pili.",
+        "Tafuta mifano 5 ya idhafa katika Qur'ani na tia alama mudhafu na mudhaf ilayhi kwa kila mmoja tofauti - zingatia hasa kiishio cha jarri kwenye neno la pili.",
+        "Jizoeze kinyume chake: chukua usemi wa umilikaji katika lugha yako (\"nyumba ya mtu\") na uunde idhafa wewe mwenyewe kabla ya kuulinganisha na sehemu ya Qur'ani.",
+        "Unganisha kwa makusudi dhamiri ya umilikaji iliyoambatanishwa na idhafa: رَبُّهُمْ na رَبُّ الْقَوْمِ ni muundo ulewule kisarufi - jizoeze kwa jozi ambazo unabadilisha jina lililoandikwa na dhamiri."
+      ],
+      "tabellen": ["idafa-besitz"],
+      "siehe": ["bestimmtheit", "kasus", "pronomen-gebunden"]
+    },
+
+    "pronomen-frei": {
+      "titel": "Dhamiri Iliyofichika (Dhamir Munfasil)",
+      "ar": "الضَّمَائِر الْمُنْفَصِلَة",
+      "umschrift": "adh-Dhamaʾir al-Munfasila",
+      "erklaerung": [
+        "Dhamiri iliyofichika (munfasil) husimama kama neno lenye kujitegemea katika sentensi, likiwa mbali na kila neno lingine - tofauti na dhamiri iliyoungwa (muttasil), ambayo daima huambatanishwa kwenye neno lingine. Kiarabu kinatofautisha hapa kwa nafsi (ya kwanza/pili/tatu), jinsia (kiume/kike) na idadi (umoja/uwili/wingi) - kwa jumla maumbo kumi na mawili, kwa sababu nafsi ya kwanza haina uwili wake.",
+        "Dhamiri iliyofichika ni mabniyyu kisarufi: umbo lake halibadiliki kulingana na hali. Hutokea hasa katika kazi mbili: kama kiima cha sentensi ya kiima (mfano هُوَ اللَّهُ, \"Yeye ni Mwenyezi Mungu\") au kwa msisitizo maalum wa shamirisho ambalo lingine lingeambatanishwa kama dhamiri iliyoungwa kwenye kitenzi - katika hali hiyo dhamiri ya shamirisho, ambayo kwa kawaida ingeambatanishwa, badala yake inatangulizwa katika umbo maalum lenye إِيَّا-, na hivyo kusisitizwa.",
+        "Kazi hii ya msisitizo ni ya kufundisha hasa: إِيَّاكَ نَعْبُدُ (\"Wewe peke yako tunakuabudu\", kwa herufi \"Wewe - tunaabudu\") linatangulizwa shamirisho إِيَّاكَ, ijapokuwa kitenzi نَعْبُدُ (\"tunaabudu\") kingekuwa kamili kisarufi hata bila neno hilo - kutangulizwa huko kunatumika tu kusisitiza \"Wewe peke yako, hakuna mwingine\"."
+      ],
+      "erkennung": [
+        "Husimama kama neno lenye kujitegemea, si kama kiambatisho cha neno lingine - linatambulika kwa nafasi yake ya maneno kabla na baada yake.",
+        "Umbo thabiti, lisilobadilika bila kujali hali (mabniyyu) - mfano هُوَ, هِيَ, أَنْتَ, نَحْنُ.",
+        "Maumbo yenye إِيَّا- (إِيَّاكَ, إِيَّاهُ ...) huashiria shamirisho lililosisitizwa na kutangulizwa, ambalo kwa kawaida lingeambatanishwa kama dhamiri kwenye kitenzi."
+      ],
+      "belege": [
+        {
+          "sure": 112,
+          "vers": 1,
+          "wort": 2,
+          "zeigt": "Dhamiri iliyofichika kama kiima cha sentensi ya kiima",
+          "warum": "هُوَ inasimama kama neno lenye kujitegemea na kuunda kiima cha sentensi \"قُلْ هُوَ ٱللَّهُ أَحَدٌ\" (\"Sema: Yeye ni Mwenyezi Mungu, wa pekee\") - mojawapo ya matumizi maarufu zaidi ya dhamiri iliyofichika katika Qur'ani."
+        },
+        {
+          "sure": 1,
+          "vers": 5,
+          "wort": 1,
+          "zeigt": "Dhamiri iliyofichika kwa kutangulizwa kwa msisitizo kwa shamirisho",
+          "warum": "إِيَّاكَ inasimama kama shamirisho lenye kujitegemea, lililotangulizwa kabla ya kitenzi نَعْبُدُ - umbo maalum lenye إِيَّا- linatumika hasa wakati shamirisho la kitenzi linahitaji kutangulizwa kwa msisitizo."
+        }
+      ],
+      "lernen": [
+        "Jifunze kwanza dhamiri kumi na mbili zilizofichika kama orodha safi kwa kukariri, kwa mpangilio thabiti (nafsi ya 1 umoja/wingi, nafsi ya 2 kiume/kike/uwili/wingi, nafsi ya 3 kiume/kike/uwili/wingi) - jedwali katika kamusi hii linazionyesha kikamilifu.",
+        "Funika safu ya Kiarabu ya jedwali la dhamiri na useme kila umbo kwa sauti, kisha funika safu ya tafsiri na ufanye kinyume chake.",
+        "Jizoeze maumbo ya إِيَّا- kando na maumbo ya msingi (أَنَا, أَنْتَ ...) - yanaonekana tofauti na mara nyingi hupuuzwa na wanaoanza.",
+        "Soma Surat al-Fatiha kwa sauti na tafuta kila dhamiri iliyofichika ndani yake - katika sura hii fupi, kazi ya msisitizo inaonekana wazi hasa."
+      ],
+      "tabellen": ["pronomen-frei"],
+      "siehe": ["pronomen-gebunden", "mabni"]
+    },
+
+    "pronomen-gebunden": {
+      "titel": "Dhamiri Iliyoungwa (Dhamir Muttasil)",
+      "ar": "الضَّمَائِر الْمُتَّصِلَة",
+      "umschrift": "adh-Dhamaʾir al-Muttasila",
+      "erklaerung": [
+        "Dhamiri iliyoungwa (muttasil) haisimami kamwe peke yake, bali huambatanishwa moja kwa moja kwenye neno lingine - kitenzi, jina, au kihusishi. Kulingana na aina ya neno inayoambatanishwa nayo, huelezea kitu tofauti: ikiambatanishwa kwenye kitenzi, ni shamirisho la kitendo; ikiambatanishwa kwenye jina, ni dhamiri ya umilikaji (inayotenda kama mudhaf ilayhi, angalia kipengele cha idhafa); ikiambatanishwa kwenye kihusishi, ni shamirisho lake.",
+        "Maumbo yenyewe kwa kiasi kikubwa ni sawa bila kujali aina ya neno inayoambatanishwa nayo (mfano ـهُمْ kwa \"wao/kwao/wao\" katika hali zote tatu) - ubaguzi ni nafsi ya kwanza umoja, ambayo kwenye kitenzi ni ـنِي (\"mimi\"), lakini kwenye majina na vihusishi ni ـِي (\"yangu\"/\"kwangu\").",
+        "Kwa kuwa dhamiri iliyoungwa kamwe haiundi neno lake yenyewe, pia kamwe haibadilishi umbo lake kulingana na hali - kama dhamiri iliyofichika, ni mabniyyu kisarufi. Maana yake halisi hutokana pekee na neno linaloambatanishwa nalo na nafsi/jinsia/idadi iliyowekwa alama katika kiishio chenyewe."
+      ],
+      "erkennung": [
+        "Haina nafasi yake ya neno kabla yake - ni sehemu ya neno lilelile la maandishi kama neno linalorejelewa.",
+        "Ikiambatanishwa kwenye kitenzi = shamirisho la kitendo; ikiambatanishwa kwenye jina = dhamiri ya umilikaji (\"yangu/yako/yake ...\"); ikiambatanishwa kwenye kihusishi = shamirisho lake.",
+        "Umbo thabiti, lisilobadilika bila kujali hali ya neno linalorejelewa - linatambulika mfano kwa ـهُ, ـهَا, ـهُمْ, ـنَا, ـكَ, ـكُمْ kama herufi moja hadi tatu za mwisho za neno refu zaidi."
+      ],
+      "belege": [
+        {
+          "sure": 1,
+          "vers": 6,
+          "wort": 1,
+          "zeigt": "Dhamiri iliyoungwa kama shamirisho la kitenzi",
+          "warum": "ٱهْدِنَا inaundwa na amri ٱهْدِ (\"tuongoze!\") na dhamiri iliyoambatanishwa نَا (\"sisi\") kama shamirisho la kitendo - vyote viwili vinaunda neno moja tu la maandishi bila nafasi."
+        },
+        {
+          "sure": 2,
+          "vers": 5,
+          "wort": 5,
+          "zeigt": "Dhamiri iliyoungwa kama dhamiri ya umilikaji kwenye jina",
+          "warum": "رَّبِّهِمْ inaundwa na jina رَبّ (\"Mola\") na dhamiri iliyoambatanishwa هِمْ (\"wao\"), ambayo hapa kisarufi inachukua nafasi ya mudhaf ilayhi - رَبِّهِمْ kwa herufi ina maana \"Mola wao\"."
+        }
+      ],
+      "lernen": [
+        "Fanyia kazi dhamiri zilizoungwa kwa neno moja la mfano (mfano كِتَاب, \"kitabu\") - ambatanisha kila umbo kimoja baada ya kingine na useme matokeo kwa sauti.",
+        "Kisha jizoeze kwa makusudi tofauti kati ya kiambishi cha shamirisho kwenye kitenzi (ـنِي kwa \"mimi\") na kiambishi cha umilikaji kwenye jina (ـِي kwa \"yangu\") - hii ndiyo umbo pekee linalotofautiana.",
+        "Katika orodha ya vitenzi au majina yenye dhamiri iliyoambatanishwa, funika tafsiri na utoe maana kutoka kwa kiishio pekee.",
+        "Tafuta maneno 5 yenye dhamiri iliyoambatanishwa katika Qur'ani na kwa kila moja bainisha: neno linalorejelewa ni kitenzi, jina, au kihusishi - na hilo lina maana gani kwa kazi ya dhamiri?"
+      ],
+      "tabellen": ["pronomen-gebunden"],
+      "siehe": ["pronomen-frei", "idafa", "mabni"]
+    },
+
+    "ism-ishara": {
+      "titel": "Ismu Ishara (Majina ya Kuashiria)",
+      "ar": "أَسْمَاء الْإِشَارَة",
+      "umschrift": "Asmaʾ al-Ischara",
+      "erklaerung": [
+        "Ismu ishara zinalingana na viwakilishi vya kuashiria \"huyu/hawa\" na \"yule/wale\". Kiarabu kinatofautisha hapa kwa uthabiti ukaribu (mfululizo wa هَـٰذَا, \"huyu hapa\") na umbali (mfululizo wa ذَٰلِكَ, \"yule pale\"), na zaidi ya hayo kwa jinsia na idadi - kwa hivyo hakuna neno moja tu la \"huyu\", bali mfululizo mzima wa maumbo.",
+        "Kisarufi, ismu ishara ni mabniyyu: umbo lake linabaki lilelile bila kujali hali. Zinaweza kusimama peke yake kama kiima (\"ذَٰلِكَ ٱلْكِتَٰبُ\" - \"Hiki ni Kitabu\") au kutenda moja kwa moja kama sifa kabla ya jina maalumu (\"هَـٰذَا ٱلرَّجُلُ\" - \"mtu huyu\"). Katika hali zote mbili, jina linalofuata daima ni maalumu (kwa ال au jina mahususi).",
+        "Ismu ishara mara nyingi hutumika katika Qur'ani si tu kwa maana ya nafasi, bali pia kwa maana ya mfano - mfano kurejelea kitu kilichotajwa tayari au kinachojulikana kimaudhui, kama katika ذَٰلِكَ ٱلْكِتَٰبُ mwanzoni mwa Surat al-Baqara, ambapo \"hiki/hicho\" kinarejelea Qur'ani nzima, si kitu kilicho karibu au mbali kimahali."
+      ],
+      "erkennung": [
+        "Umbo thabiti bila kujali hali (mabniyyu) - hakuna vokali ya mwisho inayobadilika, haijalishi nafasi gani ya sentensi neno linacheza.",
+        "Mfululizo wa ukaribu unatambulika kwa kipengele هَـٰذَا/هَـٰذِهِ/هَـٰؤُلَاءِ; mfululizo wa umbali unatambulika kwa kipengele ذَٰلِكَ/تِلْكَ/أُولَـٰئِكَ.",
+        "Hutofautisha kwa jinsia (kiume/kike) na idadi (umoja/uwili/wingi) - maumbo ya wingi (هَـٰؤُلَاءِ, أُولَـٰئِكَ) yanatumika sawa kwa jinsia zote mbili."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 2,
+          "wort": 1,
+          "zeigt": "Ismu ishara ya mfululizo wa umbali, kiume umoja",
+          "warum": "ذَٰلِكَ inafungua aya na kurejelea Qur'ani (\"Hiki/Kile ni Kitabu\") - kiume umoja, bila kiishio cha hali kinachobadilika."
+        },
+        {
+          "sure": 2,
+          "vers": 5,
+          "wort": 1,
+          "zeigt": "Ismu ishara ya mfululizo wa umbali, wingi",
+          "warum": "أُو۟لَٰٓئِكَ (\"wale [pale]\") inasimama kama kiima na kurejelea kundi la watu wenye taqwa lililoelezwa hapo awali - kimewekwa alama katika kongano kama number: pl, bila tofauti ya jinsia."
+        }
+      ],
+      "lernen": [
+        "Jifunze mfululizo wa ukaribu na wa umbali kama vipande viwili tofauti, si vikichanganywa - kwanza maumbo yote ya هَـٰذَا, kisha maumbo yote ya ذَٰلِكَ.",
+        "Funika safu ya jinsia/idadi ya jedwali la ismu ishara na useme umbo linalolingana pale unapoulizwa (\"kike, uwili, karibu\" → هَـٰتَانِ).",
+        "Wakati wa kusoma, angalia kuwa ismu ishara inapotumika kama sifa hufuatiwa karibu daima na jina maalumu lenye ال - hilo husaidia kuelewa muundo wa sentensi haraka.",
+        "Jizoeze matumizi ya kimfano hasa kwenye ذَٰلِكَ ٱلْكِتَٰبُ: kwanza tafsiri kwa herufi kimahali (\"kile kitabu pale\"), kisha kimaudhui (\"Qur'ani hii [iliyowaahidiwa]\")."
+      ],
+      "tabellen": ["hinweiswoerter"],
+      "siehe": ["mabni", "asma-mawsula", "bestimmtheit"]
+    },
+
+    "asma-mawsula": {
+      "titel": "Ismu Mawsul (Majina ya Kuunganisha)",
+      "ar": "الْأَسْمَاء الْمَوْصُولَة",
+      "umschrift": "al-Asmaʾ al-Mawsula",
+      "erklaerung": [
+        "Ismu mawsul huanzisha sentensi ya kuunganisha (sila) na inalingana na \"yule ambaye...\" au \"kile ambacho...\". Ile inayotumika zaidi na kujulikana zaidi ni ٱلَّذِي (kiume umoja) yenye maumbo yake ya jinsia na idadi - ٱلَّتِي (kike umoja), ٱلَّذِينَ (kiume wingi), ٱللَّاتِي/ٱللَّائِي (kike wingi), na maumbo yake ya uwili.",
+        "Kisarufi, ismu mawsul yenyewe ni mabniyyu - umbo lake halibadiliki kulingana na hali, ijapokuwa kisintaksia inaweza kuchukua nafasi tofauti kulingana na sentensi (kiima, shamirisho, mudhaf ilayhi). Sentensi ya sila inayofuata lazima daima iwe na kipengele cha kurejea kinachorudi kwenye ismu mawsul - kwa kawaida ni dhamiri iliyoungwa kwenye kitenzi au kwenye jina la sentensi hiyo ya sila.",
+        "Hali maalum ni ismu mawsul \"za jumla\" مَنْ (\"nani/yule ambaye\" - kwa watu) na مَا (\"nini/kile ambacho\" - kwa vitu), ambazo tofauti na ٱلَّذِي hazibebi jinsia wala idadi thabiti na kwa hivyo zinabaki sawa kwa kila rejeleo la mtu au kitu."
+      ],
+      "erkennung": [
+        "Umbo thabiti bila kujali hali (mabniyyu) - linatambulika kwa kipengele ٱلَّذِي/ٱلَّتِي/ٱلَّذِينَ chenye ال mbele ambacho hapa si kiambishi cha kawaida cha kubainika, bali ni sehemu ya ismu mawsul yenyewe.",
+        "Hufuatwa daima na sentensi yake yenye kuwa ndogo (tegemezi) iliyo na kipengele cha kurejea (kwa kawaida ni dhamiri iliyoungwa) kinachorudi kwenye ismu mawsul.",
+        "مَنْ na مَا ni maumbo yasiyo na jinsia/idadi thabiti kwa watu na vitu mtawalia, na yanaonekana tofauti na mfululizo wa ٱلَّذِي kwa muonekano."
+      ],
+      "belege": [
+        {
+          "sure": 1,
+          "vers": 7,
+          "wort": 2,
+          "zeigt": "Ismu mawsul, kiume wingi",
+          "warum": "ٱلَّذِينَ inaanzisha \"صِرَٰطَ ٱلَّذِينَ أَنْعَمْتَ عَلَيْهِمْ\" (\"njia ya wale uliowaneemesha\") - sentensi inayofuata أَنْعَمْتَ عَلَيْهِمْ ina, katika عَلَيْهِمْ, kipengele cha kurejea kinachorudi kwenye ٱلَّذِينَ."
+        },
+        {
+          "sure": 114,
+          "vers": 5,
+          "wort": 1,
+          "zeigt": "Ismu mawsul, kiume umoja",
+          "warum": "ٱلَّذِى inaanzisha \"ٱلَّذِى يُوَسْوِسُ فِى صُدُورِ ٱلنَّاسِ\" (\"anayetia wasiwasi katika vifua vya watu\") na inarejelea ٱلْخَنَّاسِ katika aya iliyotangulia - kiume umoja, tofauti na wingi ٱلَّذِينَ katika 1:7."
+        }
+      ],
+      "lernen": [
+        "Jifunze kwanza maumbo ٱلَّذِي/ٱلَّتِي/ٱلَّذِينَ/ٱللَّاتِي yakiwa yamepangwa kwa jinsia na idadi - fikiria jedwali lilelile kama la ismu ishara, lakini kwa sentensi za sila.",
+        "Tafuta sentensi 3 za sila katika Qur'ani na tia alama kipengele cha kurejea katika kila sentensi tegemezi (kwa kawaida ni dhamiri iliyoambatanishwa) - bila kipengele hicho, sentensi ya sila katika Kiarabu haikamiliki.",
+        "Jizoeze kando: مَنْ kwa watu, مَا kwa vitu - vyote viwili havibadiliki kamwe, tofauti na mfululizo wa ٱلَّذِي.",
+        "Funika safu ya tafsiri ya orodha ya ismu mawsul na utafsiri kutoka Kiarabu, kisha kinyume chake."
+      ],
+      "tabellen": ["relativpronomen"],
+      "siehe": ["mabni", "ism-ishara", "pronomen-gebunden"]
+    },
+
+    "ism-fail": {
+      "titel": "Ismu Fa'ili (Ismu Ambaye Anatenda)",
+      "ar": "اِسْم الْفَاعِل",
+      "umschrift": "Ism al-Faʿil",
+      "erklaerung": [
+        "Ismu fa'ili inaelezea \"yule anayetekeleza kitendo\" - inalingana kwa kiasi na kiwakilishi cha kitendo kinachoendelea (\"anayeandika\") au jina la mtenda (\"mwandishi\"). Kwa mzizi wa msingi (bab I), huundwa kwa muundo thabiti فَاعِل, mfano kutoka كَتَبَ (\"kuandika\") hadi كَاتِب (\"anayeandika/mwandishi\").",
+        "Kwa mizizi iliyotokana (bab II-X), kila bab ina muundo wake wa ismu fa'ili, uliothabiti pia, unaotambulika kwa kawaida kwa kiambishi awali مُـ na kasra chini ya herufi ya mwisho isiyokuwa ya mwisho ya mzizi (mfano bab VIII مُتَّقِي kutoka اِتَّقَى, \"kumcha Mungu/kujilinda\"; bab IV مُؤْمِن kutoka آمَنَ, \"kuamini\"). Ijapokuwa mifumo ni tofauti, maana ya msingi inabaki ileile: yule anayetenda.",
+        "Kisarufi, ismu fa'ili hutenda kama jina la kawaida: hubadilika kulingana na hali (mu'rabu), huunda maumbo ya jinsia na idadi, na inaweza kutumika kama kivumishi (\"mtu mwenye taqwa\") na pia kama nomino (\"wenye taqwa\" = kundi la watu) - katika Qur'ani mara nyingi katika kazi ya pili, iliyofanywa nomino, kama katika ٱلْمُتَّقِينَ au ٱلْمُؤْمِنِينَ."
+      ],
+      "erkennung": [
+        "Mzizi wa msingi (bab I): muundo فَاعِل (mfano كَاتِب, حَاسِد, غَاسِق).",
+        "Mizizi iliyotokana (bab II-X): karibu daima na kiambishi awali مُـ na kasra chini ya herufi ya mwisho isiyokuwa ya mwisho ya mzizi (mfano مُتَّقِي bab VIII, مُؤْمِن bab IV, مُسْتَقِيم bab X).",
+        "Daima ina maana ya \"yule anayetekeleza kitendo\" - kwa mashaka, jiulize: nani au nini kinachotenda hapa?"
+      ],
+      "belege": [
+        {
+          "sure": 1,
+          "vers": 4,
+          "wort": 1,
+          "zeigt": "Ismu fa'ili, bab I",
+          "warum": "مَٰلِكِ (\"mtawala/mmiliki\") inafuata muundo فَاعِل kutoka mzizi م-ل-ك na imewekwa alama katika kongano kama voice: active, derivation: activeParticiple - \"yule anayetawala kitu\"."
+        },
+        {
+          "sure": 2,
+          "vers": 2,
+          "wort": 7,
+          "zeigt": "Ismu fa'ili, bab VIII, iliyofanywa nomino",
+          "warum": "لِلْمُتَّقِينَ (\"kwa wenye taqwa\") ni ismu fa'ili ya bab VIII اِتَّقَى, imewekwa alama katika kongano kama derivation: activeParticiple, verbForm: 8, na hapa inatumika kama nomino kuashiria kundi la watu."
+        },
+        {
+          "sure": 113,
+          "vers": 3,
+          "wort": 3,
+          "zeigt": "Ismu fa'ili, bab I, isiyo maalumu",
+          "warum": "غَاسِقٍ (\"kile kinachozidi kuwa giza\" - usiku unaoingia) pia inafuata muundo فَاعِل kutoka mzizi غ-س-ق na iko hapa isiyo maalumu (tanwini kasratan) kama mudhaf ilayhi."
+        }
+      ],
+      "lernen": [
+        "Jifunze kwanza muundo wa msingi فَاعِل kwa mifano 3-4 inayojulikana (كَاتِب، عَالِم، حَاسِد) kabla ya kushughulikia mizizi iliyotokana.",
+        "Kwa kila bab ya kitenzi (I-X) unayoijua tayari, unda muundo unaolingana wa ismu fa'ili wewe mwenyewe na ulinganishe na orodha - mifumo hiyo hujirudia kwa uhakika ndani ya bab moja.",
+        "Jizoeze tofauti kati ya kivumishi na nomino kwa jozi kama رَجُلٌ مُؤْمِنٌ (\"mtu muumini\", kivumishi) dhidi ya ٱلْمُؤْمِنُونَ (\"waumini\", nomino) - umbo lilelile la neno, kazi mbili.",
+        "Katika orodha ya vitenzi, funika safu ya ismu fa'ili na uunde umbo wewe mwenyewe kabla ya kukagua."
+      ],
+      "tabellen": [],
+      "siehe": ["ism-maful", "masdar", "ism"]
+    },
+
+    "ism-maful": {
+      "titel": "Ismu Maf'uli (Ismu Anayetendewa)",
+      "ar": "اِسْم الْمَفْعُول",
+      "umschrift": "Ism al-Mafʿul",
+      "erklaerung": [
+        "Ismu maf'uli inaelezea \"yule/kile ambaye kitendo kinatekelezwa juu yake\" - inalingana na kiwakilishi cha kitendo kilichopita katika hali ya kutendewa (\"aliyeandikwa\"). Kwa mzizi wa msingi (bab I), huundwa kwa muundo thabiti مَفْعُول, mfano kutoka كَتَبَ (\"kuandika\") hadi مَكْتُوب (\"kilichoandikwa\").",
+        "Kwa mizizi iliyotokana (bab II-X), kila bab ina muundo wake thabiti, pia kwa kawaida na kiambishi awali مُـ, lakini na fatha badala ya kasra chini ya herufi ya mwisho isiyokuwa ya mwisho ya mzizi - tofauti kuu na ismu fa'ili ya bab ileile iko hasa katika vokali hiyo moja (mfano bab II مُطَهَّر, \"aliyetakaswa\", ikilinganishwa na ismu fa'ili ya kudhaniwa مُطَهِّر, \"anayetakasa\").",
+        "Kama ismu fa'ili, ismu maf'uli pia ni jina la kawaida, linalobadilika (mu'rabu) kisarufi, lenye maumbo yake ya jinsia, idadi na hali, na linaweza kutumika kama kivumishi na pia kama nomino - katika Qur'ani, kwa mfano, kama jina la wale walioathiriwa na kitendo, kama katika ٱلْمَغْضُوبِ (\"yule ambaye ghadhabu inamshukia\")."
+      ],
+      "erkennung": [
+        "Mzizi wa msingi (bab I): muundo مَفْعُول (mfano مَغْضُوب, مَعْلُوم, مَخْلُوق).",
+        "Mizizi iliyotokana (bab II-X): kiambishi awali مُـ kama ilivyo kwa ismu fa'ili, lakini na fatha badala ya kasra chini ya herufi ya mwisho isiyokuwa ya mwisho ya mzizi (mfano مُطَهَّر bab II).",
+        "Daima ina maana ya \"yule/kile ambaye kitendo kinatekelezwa juu yake\" - kwa mashaka, jiulize: nani au nini kinachotendewa hapa?"
+      ],
+      "belege": [
+        {
+          "sure": 1,
+          "vers": 7,
+          "wort": 6,
+          "zeigt": "Ismu maf'uli, bab I",
+          "warum": "ٱلْمَغْضُوبِ (\"yule anayeghadhibiwa\") inafuata muundo مَفْعُول kutoka mzizi غ-ض-ب na imewekwa alama katika kongano kama voice: passive, derivation: passiveParticiple."
+        },
+        {
+          "sure": 2,
+          "vers": 25,
+          "wort": 31,
+          "zeigt": "Ismu maf'uli, bab II, kike",
+          "warum": "مُّطَهَّرَةٌ (\"[wake] waliotakaswa\") ni ismu maf'uli ya bab II طَهَّرَ (\"kutakasa\"), imewekwa alama katika kongano kama derivation: passiveParticiple, verbForm: 2 - linatambulika kwa kiambishi مُـ chenye fatha badala ya kasra chini ya herufi ya mwisho isiyokuwa ya mwisho ya mzizi, tofauti na ismu fa'ili ya bab ileile."
+        }
+      ],
+      "lernen": [
+        "Jifunze kwanza muundo wa msingi مَفْعُول kwa mifano 3-4 inayojulikana, kisha ulinganishe moja kwa moja na muundo sambamba wa ismu fa'ili فَاعِل kwenye kitenzi kilekile.",
+        "Weka akilini tofauti moja ya maamuzi kwa mizizi iliyotokana: ismu fa'ili = kasra, ismu maf'uli = fatha chini ya herufi ya mwisho isiyokuwa ya mwisho ya mzizi, vinginevyo kiambishi مُـ kilekile.",
+        "Kwa vitenzi 5 unavyovijua, unda ismu fa'ili na ismu maf'uli, kisha useme maumbo yote mawili kwa sauti mfululizo ili kusikia tofauti ya vokali.",
+        "Kwa kila ismu maf'uli mpya unayokutana nayo, tafsiri kwanza kwa herufi kwa \"yule/kile ambaye ... anatendewa [kitenzi]\" - hii inalazimisha uelewa sahihi wa hali ya kutendewa kabla ya kuendelea na tafsiri huru zaidi."
+      ],
+      "tabellen": [],
+      "siehe": ["ism-fail", "masdar", "ism"]
+    },
+
+    "masdar": {
+      "titel": "Masdari (Jina la Kitenzi)",
+      "ar": "مَصْدَر",
+      "umschrift": "Masdar",
+      "erklaerung": [
+        "Masdari ni wazo safi la msingi la kitenzi, lililoachana na nafsi, jinsia, wakati na hali, likielezwa kama jina - katika mifumo mingine ya lugha ni sawa na kiwakilishi cha kitendo kilichofanywa nomino (\"kuandika\") au nomino inayojitegemea inayoshiriki mzizi ulewule na kitenzi (\"maandishi\"). Wanasarufi wa Kiarabu kwa jadi wanaona masdari hata kama chanzo ambacho maumbo yote ya vitenzi yanatokana nacho, si kinyume chake.",
+        "Kwa mzizi wa msingi (bab I), hakuna muundo mmoja thabiti wa kuunda masdari - tofauti na mizizi iliyotokana (bab II-X), ambayo kila mmoja una muundo wake wa masdari, wa kawaida sana (mfano bab II karibu daima تَفْعِيل, bab X اِسْتِفْعَال). Kwa hivyo masdari ya vitenzi vya bab I lazima ijifunzwe kila kimoja kando kwa kila kitenzi.",
+        "Kisarufi, masdari ni jina la kawaida, linalobadilika: hubeba viishio vya hali, linaweza kuwa maalumu au lisilo maalumu na linaweza kutokea katika karibu kazi zote za jina - kama kiima, kama shamirisho la kihusishi, au katika kazi maalum ya \"nasbu ya sababu\" (mafuli li-ajlih), ambapo masdari katika nasbu inaeleza sababu ya kitendo, mfano \"kwa hofu\" (حَذَرَ)."
+      ],
+      "erkennung": [
+        "Inaashiria kitendo/wazo safi la kitenzi kama jina, bila nafsi, wakati au hali - inaweza kutafsiriwa kwa \"ku[kitenzi]\" au nomino inayolingana ya mzizi ulewule.",
+        "Kwa bab I: hakuna muundo thabiti, lazima ijifunzwe kwa kila kitenzi. Kwa bab II-X: mifumo thabiti, inayoweza kutabirika (mfano تَفْعِيل kwa bab II, اِسْتِفْعَال kwa bab X).",
+        "Hupatikana mara kwa mara katika nasbu kama taarifa ya sababu (\"kwa sababu ya ...\") - wakati huo bila kihusishi, moja kwa moja baada ya sentensi kuu."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 15,
+          "wort": 6,
+          "zeigt": "Masdari kama shamirisho la kihusishi, katika jarri",
+          "warum": "طُغْيَٰنِهِمْ (\"upotovu/uasi wao\") ni masdari ya طَغَى (\"kuvuka mipaka\") na hapa iko kama shamirisho la kihusishi فِى - imewekwa alama katika kongano kama derivation: verbalNoun."
+        },
+        {
+          "sure": 2,
+          "vers": 19,
+          "wort": 15,
+          "zeigt": "Masdari kama nasbu ya sababu (mafuli li-ajlih)",
+          "warum": "حَذَرَ (\"kwa hofu\") ni masdari ya حَذِرَ (\"kuogopa\") na iko katika nasbu bila kihusishi, ili kueleza sababu ya kitendo (\"... kwa hofu ya kifo\") - imewekwa alama katika kongano kama derivation: verbalNoun, case: acc."
+        }
+      ],
+      "lernen": [
+        "Jifunze masdari ya kila kitenzi kipya cha bab I tangu mwanzo pamoja na kitenzi chenyewe kama jozi thabiti (mfano طَغَى → طُغْيَان) - muundo hauwezi kukisiwa baadaye.",
+        "Kwa upande mwingine, jifunze mifumo ya masdari ya bab II-X kama kanuni thabiti kwa kukariri (bab II: تَفْعِيل, bab III: مُفَاعَلَة/فِعَال, bab IV: إِفْعَال, bab V: تَفَعُّل, bab VI: تَفَاعُل, bab VII: اِنْفِعَال, bab VIII: اِفْتِعَال, bab X: اِسْتِفْعَال) - hapa kukariri kanuni kunafaa zaidi kuliko kukariri kila kisa kimoja kimoja.",
+        "Jizoeze kazi ya nasbu ya sababu kwa makusudi: tafuta maumbo 3 ya masdari katika nasbu bila kihusishi na uyatafsiri kwa majaribio kwa \"kwa sababu ya ...\" ili kuufanya muundo huo kuwa wa asili kwako.",
+        "Katika orodha ya vitenzi, funika safu ya masdari na uunde umbo wewe mwenyewe - kisha kagua kama ulikisia sawasawa kwa bab I au ulijua kweli."
+      ],
+      "tabellen": [],
+      "siehe": ["ism-fail", "ism-maful", "ism"]
+    }
+  }
+}

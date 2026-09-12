@@ -71,6 +71,70 @@ export const Colors = {
 
 export type ThemeColor = keyof typeof Colors.light & keyof typeof Colors.dark;
 
+/**
+ * Grammatik-Farbmarkierung im Koran-Reader (features/quran/analyse) — fünf
+ * einzeln umschaltbare Modi (Wortart/Fragmente/Bestimmtheit/Zeitform/
+ * Verneinung, s. analyse/grammarColorModes.ts), von denen IMMER nur einer
+ * gleichzeitig sichtbar ist. Farbe ist nie die einzige Information: Legende
+ * (analyse/GrammarLegend.tsx) und Wortanalyse-Sheet nennen zu jeder Farbe den
+ * Fachbegriff UND den arabischen Terminus als Klartext.
+ *
+ * Kontrast (WCAG AA, ≥4.5:1 für Normaltext) gegen ALLE DREI Reader-
+ * Hintergründe geprüft, die diese Farben als Textfarbe unterlegen können
+ * (background/backgroundElement/backgroundSelected der jeweiligen Palette
+ * oben) — je Farbe unten der schlechteste der drei Werte notiert.
+ *
+ * Farbwahl an der Okabe-Ito-Palette orientiert (für Rot-Grün-Sehschwäche
+ * entwickelt: Blau/Vermillion/Grün/Orange). Gegen simulierte Deuteranopie
+ * UND Protanopie geprüft (Machado/Oliveira/Fernandes-Transformation, gleiche
+ * Methode wie TAJWEED_COLORS in features/quran/api.ts): innerhalb JEDES
+ * Modus-Farbsatzes (die einzige Kombination, die je gleichzeitig sichtbar
+ * ist) simulierter RGB-Abstand ≥60 von max. 441 zwischen allen Farbpaaren —
+ * Fragmente (Orange/Blau/Grün) sogar ≥74, Wortart/Zeitform (Blau/Vermillion/
+ * Grün) ≥60, Bestimmtheit (Blau/Vermillion) 137-155.
+ */
+export const GrammarColors = {
+  light: {
+    // Blau — schlechtester Kontrast (backgroundSelected) 5.56:1.
+    wortartIsm: '#0a5a8a',
+    // Vermillion — 5.15:1.
+    wortartFiil: '#a3350a',
+    // Grün — 4.93:1.
+    wortartHarf: '#0a6b46',
+    // Orange — 4.77:1.
+    fragmentPrefix: '#8a5300',
+    fragmentSuffix: '#0a5a8a',
+    // Wort trägt sowohl Vor- als auch Nachsilbe — eigener dritter Ton (Grün),
+    // damit diese (häufigen, z. B. "wa-la-hum") Wörter nicht fälschlich nur
+    // eine der beiden Rollen zeigen.
+    fragmentBeide: '#0a6b46',
+    bestimmtheitDefinite: '#0a5a8a',
+    bestimmtheitIndefinite: '#a3350a',
+    zeitformPerfect: '#0a6b46',
+    zeitformImperfect: '#0a5a8a',
+    zeitformImperative: '#a3350a',
+    verneinung: '#a3350a',
+  },
+  dark: {
+    // Kontrastwerte gegen background/backgroundElement/backgroundSelected
+    // (Dark-Palette) durchweg ≥6.1:1, deutlich über der 4.5:1-Grenze.
+    wortartIsm: '#6ec3f0',
+    wortartFiil: '#f0876a',
+    wortartHarf: '#5fe0b0',
+    fragmentPrefix: '#e0a34d',
+    fragmentSuffix: '#6ec3f0',
+    fragmentBeide: '#5fe0b0',
+    bestimmtheitDefinite: '#6ec3f0',
+    bestimmtheitIndefinite: '#f0876a',
+    zeitformPerfect: '#5fe0b0',
+    zeitformImperfect: '#6ec3f0',
+    zeitformImperative: '#f0876a',
+    verneinung: '#f0876a',
+  },
+} as const;
+
+export type GrammarColorToken = keyof typeof GrammarColors.light & keyof typeof GrammarColors.dark;
+
 export const Fonts = Platform.select({
   ios: {
     /** iOS `UIFontDescriptorSystemDesignDefault` */

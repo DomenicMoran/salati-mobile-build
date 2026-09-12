@@ -1,0 +1,1046 @@
+{
+  "schema": 1,
+  "lang": "en",
+  "bereich": "partikel-syntax",
+  "eintraege": {
+    "harf": {
+      "titel": "The Particle",
+      "ar": "حَرْف",
+      "umschrift": "Harf",
+      "erklaerung": [
+        "Harf is the third word class of Arabic alongside Ism (noun) and Fi'l (verb). A harf has no independent meaning of its own — it only produces sense together with the word that follows it.",
+        "While Ism and Fi'l carry features such as gender, number, or tense, harf carries none of these categories. Its sole job is a grammatical function: to link, negate, ask, condition, address, emphasize, or fix the status of a following word.",
+        "Because harf is so versatile, it splits into many subgroups with their own behavior — prepositions, conjunctions, negation particles, interrogative particles, conditional particles, and more. Each of these groups is treated in its own entry."
+      ],
+      "erkennung": [
+        "A harf cannot be inflected the way an ism can (no case, no number, no gender) and is usually very short — often just one to three letters.",
+        "In word analysis, a harf segment carries its own tag instead of N (noun) or V (verb) — for example P for preposition, CONJ for conjunction, or NEG for negation.",
+        "An entire word can even consist purely of several harf segments strung together, without containing a single ism or fi'l stem."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 9,
+          "wort": 5,
+          "zeigt": "the word وَمَا consists purely of two harf segments (وَ and مَا), with no ism or fi'l stem",
+          "warum": "shows that a harf really does carry no word-class field of its own such as gender or number — here two particles stack together into a single corpus word"
+        },
+        {
+          "sure": 1,
+          "vers": 1,
+          "wort": 1,
+          "zeigt": "the prefix segment بِ in بِسْمِ carries the POS tag P (harf jarr)",
+          "warum": "documents a second harf example on the very first word of the Quran — here a preposition rather than a negation or conjunction"
+        }
+      ],
+      "lernen": [
+        "First learn the broad breakdown: preposition, conjunction, negation, interrogative particle, conditional particle, vocative particle — only then move on to the individual words of each group.",
+        "Practice on real verses separating a harf segment from its stem: what remains once you set the harf aside? Does the remainder still make sense on its own?",
+        "For each group, fix in mind the one decisive question: does this harf change the case (i'rab) of the following word, or not?"
+      ],
+      "tabellen": [],
+      "siehe": ["huruf-jarr", "huruf-atf", "verneinung"]
+    },
+
+    "huruf-jarr": {
+      "titel": "The Prepositions",
+      "ar": "حُرُوف الجَرّ",
+      "umschrift": "Huruf al-Jarr",
+      "erklaerung": [
+        "A harf jarr (preposition) puts the ism that immediately follows it into the jarr case (genitive). Together, the harf and the ism form the jaar-majroor fragment: the jaar is the preposition itself, the majroor is the ism that has thereby been placed in the jarr case.",
+        "Among the most common prepositions (huruf al-jarr) are بِ (with/by), لِ (for), كَ (like), مِن (from/of), عَن (about), عَلَى (on), إِلَى (to), فِي (in), and حَتَّى (until) — plus وَ and تَ as rare oath particles (used, for instance, only with the name of Allah).",
+        "The one-letter prepositions (بِـ، كَـ، لِـ، تَـ، وَـ) are not written as separate words but attached directly to the following ism and carry a fixed vowel marker.",
+        "The English translation of a preposition (harf jarr) should not always be taken literally: which preposition belongs to which verb often follows a logic of its own in Arabic that can diverge from the equivalent English preposition."
+      ],
+      "erkennung": [
+        "A preposition (harf jarr) stands immediately before an ism (which can also be a pronoun) — never before a verb.",
+        "Watch out with one-letter prepositions: the same letter at the start of a word can simply be part of the word's root (for instance the كَـ in كَافِر belongs to the root كفر, so it is not a preposition here)."
+      ],
+      "belege": [
+        {
+          "sure": 1,
+          "vers": 1,
+          "wort": 1,
+          "zeigt": "بِسْمِ begins with the attached preposition بِ, which puts the following ism (سْمِ) into the jarr case",
+          "warum": "documents, on the very first word of the Quran, the one-letter, directly attached form of a preposition"
+        },
+        {
+          "sure": 1,
+          "vers": 2,
+          "wort": 2,
+          "zeigt": "the prefix segment لِ in لِلَّهِ carries the POS tag P",
+          "warum": "documents a second one-letter preposition (لِ, 'for') with its fixed kasra vowel"
+        }
+      ],
+      "lernen": [
+        "First memorize the list of prepositions split into one-letter and multi-letter forms — the one-letter ones additionally need their fixed vowel marker.",
+        "In a verse of your choosing, deliberately search out every jaar-majroor fragment and name the jaar and the majroor separately.",
+        "For every newly learned verb, immediately note which preposition typically goes with it — this will save you translation mistakes later on."
+      ],
+      "tabellen": [],
+      "siehe": ["harf", "mudaf-ilayh"]
+    },
+
+    "huruf-atf": {
+      "titel": "The Conjunctions",
+      "ar": "حُرُوف العَطْف",
+      "umschrift": "Huruf al-'Atf",
+      "erklaerung": [
+        "Coordinating conjunctions (huruf al-'atf) link two elements of equal rank — single nouns, whole fragments, or entire clauses. The following element is called the ma'tuf, the preceding element it attaches to is the ma'tuf 'alayh.",
+        "The key effect of a coordinating conjunction: it transfers the grammatical case (i'rab) of the ma'tuf 'alayh onto the ma'tuf unchanged. If the first word stands in the jarr case, the linked word also stands in the jarr case — even across several linked words in a row.",
+        "The most common conjunction is وَ (and) — it links neutrally, without asserting any order or interval of time. فَ links with the sense of 'and then/immediately' (direct succession), ثُمَّ with the sense of 'and then' after a longer interval of time. أَوْ means 'or' in the sense of a choice, أَمْ likewise means 'or' but typically within a question ('which of the two?'). Alongside these, بَلْ (rather) and لَكِنْ (but/however) also link, with a stronger sense of contrast.",
+        "Besides this simple linking function, فَ has two further, grammatically quite different roles that share the same letter shape but have their own effects: the causal فاء السببية and the resumptive/apodosis فاء الجواب/الفاء الرابطة. Both are treated as separate entries because they are easily confused with the ordinary, case-transferring فَ."
+      ],
+      "erkennung": [
+        "Test for ordinary coordination ('atf): does the word after the particle carry the same case (raf'/nasb/jarr) as the word before it? If so, it is simple coordination.",
+        "If, after فَ, a present-tense verb follows with a visible or invisible subjunctive (nasb) ending instead of the same case as before, it is probably not ordinary coordination but the causal fa' (فاء السببية — see its own entry).",
+        "If فَ stands at the start of a clause that answers a conditional, an oath, or a topic, without itself changing the case of any word, it is usually the apodosis/resumptive fa' (فاء الجواب/الرابطة — see its own entry)."
+      ],
+      "belege": [
+        {
+          "sure": 1,
+          "vers": 7,
+          "wort": 9,
+          "zeigt": "ٱلضَّآلِّينَ carries the relation conj (base value per relationBasis) and is linked via وَ to the preceding ism",
+          "warum": "documents coordination with وَ at the end of al-Fatiha — two groups of people are strung together with the same case"
+        },
+        {
+          "sure": 2,
+          "vers": 196,
+          "wort": 31,
+          "zeigt": "صَدَقَةٍ carries the relation conj — linked via أَوْ to the preceding ism صِيَامٍ",
+          "warum": "documents the conjunction أَوْ (or) as a genuine choice between fasting, alms, or an offering"
+        },
+        {
+          "sure": 2,
+          "vers": 28,
+          "wort": 10,
+          "zeigt": "يُحْيِيكُمْ carries the relation conj — linked via ثُمَّ to the preceding verb",
+          "warum": "documents ثُمَّ as a conjunction with the sense of a temporal gap between the linked actions (causing death — then giving life again)"
+        },
+        {
+          "sure": 2,
+          "vers": 140,
+          "wort": 17,
+          "zeigt": "ٱللَّهُ carries the relation conj — linked via أَمِ to the preceding word within a question",
+          "warum": "documents أَمْ as a conjunction within a genuine either-or question ('are you more knowing, or is Allah?')"
+        }
+      ],
+      "lernen": [
+        "Learn the six core conjunctions و ف ثم أو أم together with their respective shade of meaning (neutral / immediate / with a gap / choice / question-choice) instead of translating them all simply as 'and/or'.",
+        "Practice the case-transfer test on several verses: determine the case of the ma'tuf 'alayh, then check whether the ma'tuf carries the same case.",
+        "As soon as you meet فَ, systematically check all three possibilities in turn — ordinary coordination, the causal fa', or the apodosis/resumptive fa' — before translating.",
+        "Compare examples you find yourself with the proof passages given here, and name the ma'tuf and the ma'tuf 'alayh in each case."
+      ],
+      "tabellen": [],
+      "siehe": ["faa-sababiyya", "faa-jawab", "badal", "sifah"]
+    },
+
+    "faa-sababiyya": {
+      "titel": "The Causal Fa'",
+      "ar": "فَاء السَّبَبِيَّة",
+      "umschrift": "Faa' as-Sababiyya",
+      "erklaerung": [
+        "The causal fa' (faa' as-sababiyya) looks exactly like the ordinary coordinating فَ, but has a completely different grammatical effect: it introduces a present-tense verb (fi'l mudari') that is thereby put into the subjunctive (nasb) mood — instead of simply taking on the case of the preceding word.",
+        "In terms of meaning, it expresses a consequence that WOULD occur if the preceding statement were disregarded — usually translated as 'so that' or 'lest'. It typically follows a prohibition, a command, a question, or a wish.",
+        "In the corpus this فَ occurs only 88 times — markedly rarer than the apodosis fa' (فاء الجواب) with 350 occurrences, even though both appear as the same letter sequence فَ."
+      ],
+      "erkennung": [
+        "What matters is not the meaning but the form of the following verb: if a present-tense verb (fi'l mudari') follows in the subjunctive (nasb) mood — visible from the fatha ending or from the dropped nun in the five verb forms — this is the causal fa'.",
+        "Typical preceding context: a prohibition (لا + verb), a command, a question, or a wish — never a plain statement that is simply being strung along."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 35,
+          "wort": 16,
+          "zeigt": "the prefix segment فَ in فَتَكُونَا carries the POS tag CAUS",
+          "warum": "documents the causal fa' after a prohibition ('do not approach this tree, lest you both become of the wrongdoers') — the following verb stands in the subjunctive (nasb), not in the case of the preceding prohibition"
+        },
+        {
+          "sure": 2,
+          "vers": 245,
+          "wort": 8,
+          "zeigt": "the prefix segment فَ in فَيُضَٰعِفَهُۥ carries the POS tag CAUS",
+          "warum": "documents the causal fa' after a rhetorical question ('who will lend Allah a good loan, so that He may multiply it for him?')"
+        }
+      ],
+      "lernen": [
+        "Whenever you meet فَ after a prohibition, command, question, or wish, ask first: does the following verb stand in the subjunctive (nasb)? If so, it is the causal fa', not ordinary coordination.",
+        "As a test, first translate with 'and then' — if that makes no logical sense but 'so that/lest' does, that is a strong sign of the causal reading.",
+        "Compare the proof passage given here directly with one for the apodosis fa' (فاء الجواب) — both begin the same way but work in grammatically opposite directions."
+      ],
+      "tabellen": [],
+      "siehe": ["huruf-atf", "faa-jawab"]
+    },
+
+    "faa-jawab": {
+      "titel": "The Resumptive Fa' (Answer and Link)",
+      "ar": "فَاء الجَوَاب / الفَاء الرَّابِطَة",
+      "umschrift": "Faa' al-Jawaab / al-Faa' ar-Raabita",
+      "erklaerung": [
+        "This فَ, too, looks like the ordinary coordinating فَ, but — unlike the causal fa' — it does NOT change the case of the following word. It is a pure bridge: it attaches the following clause to what was said before, usually as the apodosis of a conditional clause (jawab ash-shart), and occasionally also as a linking element between a topic (mubtada) and a clause-shaped statement.",
+        "It is used in particular when the answer clause itself could not grammatically stand directly as the apodosis of the conditional — for example because it is a nominal sentence, begins with إِنَّ, or contains a negation with لَنْ.",
+        "In the corpus this فَ, with 350 occurrences, is markedly more frequent than the causal fa' (88 occurrences) — but both appear as the very same single letter sequence فَ and can only be told apart by their grammatical effect."
+      ],
+      "erkennung": [
+        "Unlike with the causal fa', the verb after this فَ stays in its ordinary mood (indicative or jussive, depending on the sentence type) — it is NOT forced into the subjunctive (nasb).",
+        "It typically stands at the beginning of the apodosis of a conditional and is often directly followed by إِنَّ, قَدْ, or a nominal sentence."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 186,
+          "wort": 5,
+          "zeigt": "the prefix segment فَ in فَإِنِّى carries the POS tag RSLT, the whole word the relation rslt",
+          "warum": "documents the resumptive/apodosis fa' introducing the answer clause after an idha conditional ('when My servants ask you about Me — indeed I am near'), without the following إِنِّي being put into the subjunctive (nasb)"
+        },
+        {
+          "sure": 2,
+          "vers": 282,
+          "wort": 10,
+          "zeigt": "فَٱكْتُبُوهُ carries the relation rslt, introduced by the prefix segment فَ with the POS tag RSLT",
+          "warum": "documents the resumptive/apodosis fa' as the answer to the conditional clause introduced by إِذَا about recording debts"
+        }
+      ],
+      "lernen": [
+        "Fix the contrast test in mind: does the case/mood of the following word stay UNCHANGED (remaining indicative or jussive)? Then it is the resumptive/apodosis fa', not the causal fa'.",
+        "Search deliberately for إِذَا and إِنْ conditionals and note whether the answer clause begins with فَ, and why (nominal sentence? إِنَّ? negation?).",
+        "Build yourself a two-column overview of examples for the causal fa' and the resumptive/apodosis fa' so as not to confuse the two."
+      ],
+      "tabellen": [],
+      "siehe": ["huruf-atf", "faa-sababiyya", "shart"]
+    },
+
+    "verneinung": {
+      "titel": "Negation",
+      "ar": "حُرُوف النَّفْي",
+      "umschrift": "Huruf an-Nafy",
+      "erklaerung": [
+        "Several tools are available for negation, each tied to a particular tense or sentence type: لَمْ negates the past using a present-tense verb and puts that verb into the jussive (majzum); لَنْ negates the future using a present-tense verb and puts it into the subjunctive (mansub, nasb); لَا negates the present using a present-tense verb, without changing its mood; مَا negates both past- and present-tense verbs, often in a context of rejection or debate, likewise without changing the mood.",
+        "لَيْسَ is, grammatically, not a particle (harf) at all but a defective verb (see Kāna and her sisters) — it negates nominal sentences and puts their khabar into the accusative (nasb), whereas مَا, when negating a nominal sentence, leaves the khabar in the nominative (raf').",
+        "Important note: مَا is one of the most versatile words in Arabic. Very often it is NOT a negation at all, but a relative pronoun ('that which'), an interrogative particle ('what?'), or a conditional/verbal-noun particle. Whether مَا negates or not is decided solely by the sentence context.",
+        "In addition, there is لَا النَّافِيَة لِلْجِنْس (the absolute/categorical negation) for the meaning 'there is no ... whatsoever' — the following ism stands indeclinable (mabni) on fatha in the accusative (nasb) position."
+      ],
+      "erkennung": [
+        "مَا is a negation when a complete clause with its own agent/topic follows immediately, being negated as a statement.",
+        "مَا is NOT a negation when it takes on the role of a sentence part (for example the object or subject of a verb) and can sensibly be replaced by 'that which'.",
+        "You recognize لَا النَّافِيَة لِلْجِنْس by the fact that an indefinite ism without nunation immediately follows it ('there is absolutely no ...')."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 9,
+          "wort": 6,
+          "zeigt": "يَخْدَعُونَ carries the relation neg, the preceding مَا (word 5) the POS tag NEG",
+          "warum": "documents مَا as a genuine negation ('and they deceive no one but themselves')"
+        },
+        {
+          "sure": 2,
+          "vers": 29,
+          "wort": 5,
+          "zeigt": "مَّا here does NOT carry the negation relation but the relation Obj (object of the verb خَلَقَ), the segment carries POS REL",
+          "warum": "explicitly documents the cautionary case: in the very same short sura, مَا reappears a few verses later as a relative pronoun ('that which He created for you on the earth') — no negation"
+        }
+      ],
+      "lernen": [
+        "Draw up a table with tense → matching negation tool → resulting mood (لَمْ/jussive, لَنْ/subjunctive, لَا and مَا/unchanged).",
+        "Practice specifically on the pair of proof passages given here: explain in your own words why مَا is a negation in 2:9 but not in 2:29.",
+        "Remember لَيْسَ as a verb, not a particle — that explains why it alone can put the khabar into the accusative (nasb), while مَا does not."
+      ],
+      "tabellen": [],
+      "siehe": ["nahy", "lam-al-amr", "kaana-wa-akhawatuha"]
+    },
+
+    "lam-al-amr": {
+      "titel": "The Lām of Command",
+      "ar": "لَام الأَمْر",
+      "umschrift": "Laam al-Amr",
+      "erklaerung": [
+        "The lām of command (laam al-amr) is an attached لْ before a present-tense verb (fi'l mudari') that forms an indirect command — usually addressed to the third person ('he/she/they should do'), or, as an especially solemn form, also to the first or second person. The verb is thereby put into the jussive (majzum).",
+        "Grammatically, the lām of command is a particle (harf), not a verb — unlike the direct imperative (fi'l amr), which is its own, already-conjugated verb form. Both express a command, but the lām of command does so through a present-tense verb rather than through a dedicated imperative form.",
+        "In the corpus this لْ occurs 78 times — usually preceded by وَ or فَ."
+      ],
+      "erkennung": [
+        "A single لْ directly before a present-tense verb whose ending shows the jussive (dropped nun in the five verb forms, sukun in the remaining forms).",
+        "Translatable with 'should/let ... ' rather than a direct 'Do!' — the lām of command typically (though not exclusively) addresses a third person, for whom no dedicated imperative form exists."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 186,
+          "wort": 12,
+          "zeigt": "the prefix segment لْ in فَلْيَسْتَجِيبُوا۟ carries the POS tag IMPV",
+          "warum": "documents the lām of command as an indirect command to a third person ('so let them answer Me')"
+        },
+        {
+          "sure": 2,
+          "vers": 186,
+          "wort": 14,
+          "zeigt": "the prefix segment لْ in وَلْيُؤْمِنُوا۟ carries the POS tag IMPV",
+          "warum": "documents a second lām of command in the same verse ('and let them believe in Me')"
+        }
+      ],
+      "lernen": [
+        "In the same verse, compare the direct imperative (fi'l amr, 2nd person) with an example of the lām of command (3rd person) — both express a command, but are built in grammatically completely different ways.",
+        "Search deliberately for وَلْ- and فَلْ- combinations at the start of a word and determine, in each case, the person being addressed.",
+        "Remember the risk of confusion with lām-like sounds elsewhere: only a لْ with sukun directly before a present-tense verb is the lām of command."
+      ],
+      "tabellen": [],
+      "siehe": ["nahy"]
+    },
+
+    "nahy": {
+      "titel": "The Prohibition",
+      "ar": "النَّهْي (لَا النَّاهِيَة)",
+      "umschrift": "an-Nahy (Laa an-Naahiya)",
+      "erklaerung": [
+        "The prohibitive lā (laa an-naahiya, 'the forbidding lā') stands before a present-tense verb — usually in the 2nd person — and turns it into a prohibition ('do not do that!'). Like the lām of command, this puts the verb into the jussive (majzum).",
+        "This distinguishes the prohibitive from simple negation with لَا (لَا النَّافِيَة), which negates a present fact without changing the mood of the verb. Both words look identical (لَا), but work differently grammatically: the prohibitive forces the jussive, simple negation does not."
+      ],
+      "erkennung": [
+        "If لَا stands before a present-tense verb whose ending shows the jussive (dropped nun/sukun) and the meaning is a prohibition rather than a statement of fact, this is the prohibitive lā (laa an-naahiya).",
+        "In the corpus, the associated verb carries the relation Pro (for 'prohibition') instead of the ordinary negation relation."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 22,
+          "wort": 19,
+          "zeigt": "تَجْعَلُوا۟ carries the relation Pro, introduced by لَا (in the preceding word فَلَا) with the POS tag PRO",
+          "warum": "documents the prohibitive lā as a genuine prohibition ('so do not set up rivals to Allah')"
+        },
+        {
+          "sure": 2,
+          "vers": 60,
+          "wort": 25,
+          "zeigt": "تَعْثَوْا۟ carries the relation Pro, introduced by لَا (in the preceding word وَلَا) with the POS tag PRO",
+          "warum": "documents a second prohibition ('and do not go about spreading corruption on the earth')"
+        }
+      ],
+      "lernen": [
+        "Directly compare a proof passage for the prohibitive with one for simple negation with لَا — both words look the same but affect the verb differently.",
+        "Practice recognizing the jussive within the verb itself (missing nun in the five forms, sukun otherwise) — that is the most reliable clue to the prohibitive.",
+        "Consistently sort every لَا you find into one of three categories: simple negation, the prohibitive, or the absolute/categorical negation (لَا النَّافِيَة لِلْجِنْس)."
+      ],
+      "tabellen": [],
+      "siehe": ["verneinung", "lam-al-amr"]
+    },
+
+    "istifham": {
+      "titel": "The Interrogative Particles",
+      "ar": "أَدَوَات الاِسْتِفْهَام",
+      "umschrift": "Adawaat al-Istifhaam",
+      "erklaerung": [
+        "Interrogative particles stand at the start of the sentence and introduce both nominal and verbal sentences: مَنْ (who), مَاذَا/مَا (what), مَتَى (when), أَيْنَ (where), لِمَاذَا (why), كَيْفَ (how), أَيّ (which), as well as هَلْ and the attached hamza أَ for yes/no questions.",
+        "Most interrogative words have no grammatical influence on the sentence structure — they are simply placed in front of the sentence.",
+        "When an interrogative particle meets a preposition, the preposition is placed first; with مَا, the two merge into a single form (مِنْ + مَا → مِمَّ, عَنْ + مَا → عَمَّ, فِي + مَا → فِيمَ, لِ + مَا → لِمَ)."
+      ],
+      "erkennung": [
+        "Interrogative particles stand at the start of the sentence, regardless of whether a nominal or a verbal sentence follows.",
+        "أَ as an attached interrogative particle is a single prefixed hamza directly before the first word stem — recorded in the corpus as its own prefix segment with the POS tag INTG."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 44,
+          "wort": 1,
+          "zeigt": "the prefix segment أَ in أَتَأْمُرُونَ carries the POS tag INTG",
+          "warum": "documents the attached interrogative particle أَ introducing a rhetorical yes/no question ('do you enjoin righteousness upon people...?')"
+        },
+        {
+          "sure": 2,
+          "vers": 30,
+          "wort": 11,
+          "zeigt": "the prefix segment أَ in أَتَجْعَلُ carries the POS tag INTG",
+          "warum": "documents the same interrogative particle in the famous question of the angels ('will You place therein one who will cause corruption?')"
+        }
+      ],
+      "lernen": [
+        "Learn the table of interrogative words together with their word class (ism, such as مَنْ/مَا/أَيّ, or a pure particle, such as هَلْ/أَ), since that makes the later determination of case (i'rab) easier.",
+        "Practice the merged forms مِمَّ/عَمَّ/فِيمَ/لِمَ separately — they are easy to overlook if you only search for 'مَا'.",
+        "Compare questions with otherwise identical wording but no interrogative particle, to see that the sentence structure itself does not change."
+      ],
+      "tabellen": [],
+      "siehe": []
+    },
+
+    "shart": {
+      "titel": "Conditional Sentences",
+      "ar": "أَدَوَات الشَّرْط وَجَوَاب الشَّرْط",
+      "umschrift": "Adawaat ash-Shart / Jawaab ash-Shart",
+      "erklaerung": [
+        "A conditional sentence (jumla shartiyya) consists of two parts: the condition (الشَّرْط) and its answer/apodosis (جَوَاب الشَّرْط) — the second statement takes effect only if the first is fulfilled.",
+        "Conditional particles fall into two groups: the jussive-triggering conditionals (adawaat al-jazm: إِنْ، مَنْ، مَا, and others) put both clauses into the jussive when both verbs are present tense; the non-jussive-triggering conditionals (adawaat ghayr jaazima: لَوْ 'had/if only', إِذَا 'when/as soon as') have no grammatical effect on the mood of the verbs.",
+        "Very often فَ introduces the apodosis, especially when it differs in type from the conditional clause (for instance, conditional clause verbal, apodosis nominal) — this فَ is the resumptive/apodosis fa' treated in its own entry.",
+        "Alongside the conditional sentence, there is a very similar structure with commands: an amr (command) can be followed by a jawaab al-amr, which describes what happens if the command is obeyed — likewise always in the jussive."
+      ],
+      "erkennung": [
+        "In the corpus syntax, the conditional part carries the relation cond, the apodosis very often the relation rslt (see the resumptive/apodosis fa'), when it is introduced by فَ.",
+        "You recognize the jussive-triggering conditionals by the fact that both verbs — condition and apodosis — stand in the jussive, even where the English translation requires the present tense."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 282,
+          "wort": 5,
+          "zeigt": "تَدَايَنتُم carries the relation cond, triggered by إِذَا (word 4)",
+          "warum": "documents the conditional part of a shart sentence ('when you contract a debt for a specified term')"
+        },
+        {
+          "sure": 2,
+          "vers": 282,
+          "wort": 10,
+          "zeigt": "فَٱكْتُبُوهُ carries the relation rslt",
+          "warum": "documents the associated apodosis ('then write it down') in the same verse, introduced by the resumptive/apodosis fa'"
+        }
+      ],
+      "lernen": [
+        "First learn the two-way split into jussive-triggering and non-jussive-triggering, and only then the individual particles of each group.",
+        "In a conditional sentence, systematically look first for الشَّرْط, then for جَوَاب الشَّرْط, and check whether a فَ stands between them.",
+        "Form your own short conditional sentences with إِنْ and compare how the verb ending changes compared with a sentence without إِنْ."
+      ],
+      "tabellen": [],
+      "siehe": ["faa-jawab"]
+    },
+
+    "kaana-wa-akhawatuha": {
+      "titel": "Kāna and Her Sisters",
+      "ar": "كَانَ وَأَخَوَاتُهَا",
+      "umschrift": "Kaana wa Akhawatuha",
+      "erklaerung": [
+        "Kāna (to be) and her sisters are defective verbs (af'aal naaqisa): they do not take an ordinary agent (fa'il), but instead turn an entire nominal sentence into their own ism and khabar. The family includes, among others, كَانَ (to be), لَيْسَ (not to be), ظَلَّ (to remain), and أَصْبَحَ (to become) — plus further members such as صَارَ, أَمْسَى, or مَا زَالَ.",
+        "The ism of kāna stays, like an ordinary topic (mubtada), in the nominative (raf'). The crucial difference: the khabar of kāna stands in the accusative (nasb) — even though a khabar in an ordinary nominal sentence would actually have to stand in the nominative (raf').",
+        "If the khabar of kāna is itself an entire clause (for instance a verbal sentence with a present-tense verb), the accusative effect cannot be seen in a visible ending — the khabar role still holds nonetheless."
+      ],
+      "erkennung": [
+        "A verse visibly 'tips' into a kāna construction as soon as, after كَانَ or one of her sisters, an ism/pronoun in the nominative (raf') (the ism) is followed by something in the accusative (nasb) or by an entire clause (the khabar), instead of the second nominative word expected in an ordinary nominal sentence.",
+        "In the corpus syntax, the ism and khabar of this family appear as their own relations with an attached governor in double angle brackets, such as subj<<kan>> and pred<<kan>> — relationBasis() from grammatik.ts resolves this form into a base value (subj/pred) and a governor (e.g. kan, ykon)."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 10,
+          "wort": 12,
+          "zeigt": "يَكْذِبُونَ carries the relation \"pred <<kan>>\" (base value pred, governor kan)",
+          "warum": "documents the khabar of kāna as an entire verbal clause ('...because they used to lie') after كَانُوا۟ in the same verse"
+        },
+        {
+          "sure": 2,
+          "vers": 247,
+          "wort": 15,
+          "zeigt": "ٱلْمُلْكُ carries the relation \"subj <<ykon>>\" (base value subj, governor ykon — the present-tense form of كَانَ)",
+          "warum": "documents the ism of a sister of kāna (يَكُونُ) in the nominative (raf') ('how could he have dominion over us')"
+        }
+      ],
+      "lernen": [
+        "First learn the four verbs required here — كَانَ، لَيْسَ، ظَلَّ، أَصْبَحَ — with their basic meaning, and only then the accusative rule for the khabar.",
+        "Practice on several verses naming the ism of kāna and the khabar of kāna separately — especially when the khabar is itself a clause.",
+        "Compare a kāna sentence with the same sentence without كَانَ, to feel the difference in the case of the khabar directly."
+      ],
+      "tabellen": [],
+      "siehe": ["inna-wa-akhawatuha", "mubtada", "khabar"]
+    },
+
+    "inna-wa-akhawatuha": {
+      "titel": "Inna and Her Sisters",
+      "ar": "إِنَّ وَأَخَوَاتُهَا",
+      "umschrift": "Inna wa Akhawatuha",
+      "erklaerung": [
+        "Inna and her sisters are accusative-governing particles (huruf nasb) — particles that put an ism, immediately or after an inserted jaar-majroor or special construct phrase, into the accusative (nasb), while the associated khabar stays in the nominative (raf'). This makes them work exactly opposite to Kāna and her sisters.",
+        "The family includes إِنَّ/أَنَّ (indeed/that, emphatic), كَأَنَّ (as if, comparative), لَكِنَّ (however, contrastive), لَيْتَ (if only, wishing), and لَعَلَّ (hopefully/perhaps, expectant) — each with its own shade of meaning but an identical grammatical effect.",
+        "The ism of an accusative-governing particle remains, in terms of meaning, the doer/topic of the statement and is translated as such, even though formally it stands in the accusative (nasb) — the ending changes, the role does not."
+      ],
+      "erkennung": [
+        "Directly after إِنَّ/أَنَّ (or after an inserted jaar-majroor) stands an ism or bound pronoun with a fatha ending (the ism); later a word marked with the nominative (raf') or an entire clause follows (the khabar).",
+        "In the corpus syntax, the ism and khabar of this family likewise appear as subj<<...>>/pred<<...>>, with a governor of in, an, ka'ana, lakin, or lel/la — also resolvable here via relationBasis()."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 20,
+          "wort": 21,
+          "zeigt": "ٱللَّهَ carries the relation \"subj<<in>>\" (base value subj, governor in)",
+          "warum": "documents the ism of inna in the accusative (nasb) ('indeed, Allah...')"
+        },
+        {
+          "sure": 2,
+          "vers": 20,
+          "wort": 25,
+          "zeigt": "قَدِيرٌ carries the relation \"pred<<in>>\" (base value pred, governor in)",
+          "warum": "documents, in the same verse, the associated khabar of inna in the nominative (raf') ('...is able to do all things') — the same verse also used as an example by the handout chapter on accusative-governing particles"
+        }
+      ],
+      "lernen": [
+        "Learn the six sisters with their own individual shade of meaning (emphatic/comparative/contrastive/wishing/expectant), not merely as interchangeable 'intensifier words'.",
+        "Practice naming the ism and khabar separately in the same verse and explaining their respective endings.",
+        "Set an inna sentence side by side with a kāna sentence: where does the ism stand, where the khabar — and in which case in each?"
+      ],
+      "tabellen": [],
+      "siehe": ["kaana-wa-akhawatuha", "verneinung"]
+    },
+
+    "faail": {
+      "titel": "The Agent",
+      "ar": "فَاعِل",
+      "umschrift": "Faa'il",
+      "erklaerung": [
+        "The agent (fa'il) is the doer/subject of a verbal sentence and always stands in the nominative (raf'). In standard Arabic word order it follows the verb (verb – agent – object), not the other way round.",
+        "Every verb also carries an inner doer built into the verb itself (a bound pronoun). This inner doer can be replaced by an outer, explicitly named agent when the verb stands in the he/she form and the noun follows it in the nominative (raf')."
+      ],
+      "erkennung": [
+        "A noun or pronoun marked with the nominative (raf') that stands immediately or shortly after a verb and answers the question 'who did it?'.",
+        "If the possible subject stands BEFORE the verb, it is no longer an agent but a topic (mubtada) with a verbal sentence as its khabar."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 7,
+          "wort": 2,
+          "zeigt": "ٱللَّهُ carries the relation Subj",
+          "warum": "documents the agent in the nominative (raf') after the verb ('Allah has sealed their hearts')"
+        },
+        {
+          "sure": 2,
+          "vers": 10,
+          "wort": 5,
+          "zeigt": "ٱللَّهُ carries the relation Subj",
+          "warum": "documents a second agent ('so Allah has increased their sickness')"
+        }
+      ],
+      "lernen": [
+        "In several verses, look first for the verb, then directly after it for the first word marked with the nominative (raf') — as a rule, that is the agent.",
+        "Practice the difference between the inner doer (hidden in the verb) and the outer doer (explicitly named) on verses with and without a named agent.",
+        "Compare an agent sentence with a sentence in which the same noun stands as a topic (mubtada) before the verb — the case stays nominative, the role changes."
+      ],
+      "tabellen": [],
+      "siehe": ["naib-al-fail", "mubtada"]
+    },
+
+    "naib-al-fail": {
+      "titel": "The Deputy Agent",
+      "ar": "نَائِب الفَاعِل",
+      "umschrift": "Naa'ib al-Faa'il",
+      "erklaerung": [
+        "When the verb stands in the passive voice (fi'l mabni lil-madschhul), the actual agent drops out or remains unknown. Its place is taken by the deputy agent (naa'ib al-fa'il) — literally 'substitute for the doer' — usually what would have been the object in an active sentence. It takes over the nominative (raf') case of the agent.",
+        "The verb itself shows the passive formation (in the present tense, for example a damma on the first radical), and the deputy agent follows it like an ordinary agent, in the nominative (raf')."
+      ],
+      "erkennung": [
+        "A verb formed in the passive, followed by a noun marked with the nominative (raf') that, in terms of meaning, appears more as the object of the action (not as its performer).",
+        "In the corpus syntax, this word carries its own relation Pass instead of the ordinary agent relation Subj."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 48,
+          "wort": 12,
+          "zeigt": "شَفَٰعَةٌ carries the relation Pass",
+          "warum": "documents the deputy agent after the passive verb يُقْبَلُ ('and no intercession will be accepted from it') — in terms of meaning, what would be the object in an active sentence"
+        },
+        {
+          "sure": 2,
+          "vers": 61,
+          "wort": 39,
+          "zeigt": "ٱلذِّلَّةُ carries the relation Pass",
+          "warum": "documents a second deputy agent after the passive verb ضُرِبَتْ ('and humiliation was imposed upon them')"
+        }
+      ],
+      "lernen": [
+        "Form the passive of a familiar active sentence and observe how the former object becomes the deputy agent in the nominative (raf').",
+        "Pay specific attention to the vowel pattern of the verb (damma pattern) as the first sign of a passive verb, before looking for the deputy agent.",
+        "Compare the proof passage given here with an ordinary agent example — both stand in the nominative (raf'), but with a different role in terms of meaning."
+      ],
+      "tabellen": [],
+      "siehe": ["faail"]
+    },
+
+    "maful-bihi": {
+      "titel": "The Direct Object",
+      "ar": "مَفْعُول بِه",
+      "umschrift": "Maf'ool bihi",
+      "erklaerung": [
+        "The direct object (maf'ool bihi) is the direct object of a verbal sentence, always stands in the accusative (nasb), and answers the question 'who/to whom/whom/what'. It is by far the most common type of object (maf'ool) in the Quran.",
+        "A bound pronoun attached to a verb is always a direct object, even when it does not look like an independent word."
+      ],
+      "erkennung": [
+        "A noun or pronoun marked with the accusative (nasb), standing after the verb and the agent, directly affected by the action.",
+        "Question test: can the word be elicited by asking 'whom/what does the agent [do]?'"
+      ],
+      "belege": [
+        {
+          "sure": 1,
+          "vers": 6,
+          "wort": 2,
+          "zeigt": "ٱلصِّرَٰطَ carries the relation Obj",
+          "warum": "documents the direct object in the accusative (nasb) after the imperative ٱهْدِنَا ('guide us [to] the straight path')"
+        },
+        {
+          "sure": 1,
+          "vers": 5,
+          "wort": 1,
+          "zeigt": "إِيَّاكَ carries the relation Obj",
+          "warum": "documents the direct object as a fronted, independent pronoun ('You alone we worship')"
+        }
+      ],
+      "lernen": [
+        "Practice the 'whom/what?' question test on several verses and mark the verb, the agent, and the direct object separately in each case.",
+        "Search deliberately for pronouns attached to verbs and explicitly name them as direct objects.",
+        "Compare the direct object with the absolute/cognate object and the causal object, so as not to mix up the three types of object."
+      ],
+      "tabellen": [],
+      "siehe": ["faail", "maful-mutlaq", "maful-liajlihi"]
+    },
+
+    "maful-mutlaq": {
+      "titel": "The Absolute Object",
+      "ar": "مَفْعُول مُطْلَق",
+      "umschrift": "Maf'ool Mutlaq",
+      "erklaerung": [
+        "The absolute/cognate object (maf'ool mutlaq) is a verbal noun (masdar) sharing the same root as the verb it accompanies, and it stands in the accusative (nasb). It does not answer 'whom/what', but instead reinforces, describes, or quantifies the action itself once again.",
+        "Three functions are possible: as a single word, it emphasizes the action; with an adjective, it describes it more closely; as a numeral, it states how often the action took place."
+      ],
+      "erkennung": [
+        "An ism marked with the accusative (nasb) that carries the same root letters as the preceding verb — not a different noun, but a repetition of the verb's root as a noun.",
+        "Grammatically not elicited by 'whom/what', but rather by 'how much/in what way/how often'."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 25,
+          "wort": 18,
+          "zeigt": "رِّزْقًا carries the relation cog",
+          "warum": "documents the absolute/cognate object sharing the root رزق with the preceding verb رُزِقُوا۟ ('whenever they were provided a provision from it')"
+        },
+        {
+          "sure": 2,
+          "vers": 245,
+          "wort": 10,
+          "zeigt": "أَضْعَافًا carries the relation cog",
+          "warum": "documents the absolute/cognate object sharing the root ضعف with the preceding verb يُضَٰعِفَهُ ('so that He may multiply it for him many times over')"
+        }
+      ],
+      "lernen": [
+        "For every suspect accusative ism, first check its root letters against the preceding verb — if they match, it is very likely an absolute/cognate object.",
+        "Search deliberately for the three functions (emphasis/description/counting) across different verses.",
+        "Deliberately compare the absolute/cognate object with the direct object — only one of the two can be elicited with 'whom/what'."
+      ],
+      "tabellen": [],
+      "siehe": ["maful-bihi"]
+    },
+
+    "maful-liajlihi": {
+      "titel": "The Object of Reason",
+      "ar": "المَفْعُول لِأَجْلِه",
+      "umschrift": "al-Maf'ool li-Ajlihi",
+      "erklaerung": [
+        "The causal object (al-maf'ool li-ajlihi, also maf'ool lahu) is a verbal noun (masdar) in the accusative (nasb) that names the REASON or motive behind the main action — it answers the question 'why?'. Unlike the absolute/cognate object, it does NOT share the same root as the main verb, but instead names a separate, usually abstract motive (fear, wish, jealousy...).",
+        "This places the causal object between the other two types of object: like the absolute/cognate object, it is a pure verbal noun (masdar) in the accusative (nasb) with no object role of its own; but like the direct object, it relates, in terms of meaning, to the motivation behind the action rather than to its repetition."
+      ],
+      "erkennung": [
+        "An indefinite, abstract ism in the accusative (nasb) after the main verb, naming an emotion or motive and answering the question 'for what reason?'.",
+        "Distinguishing it from the absolute/cognate object: the root differs from that of the main verb."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 19,
+          "wort": 15,
+          "zeigt": "حَذَرَ carries the relation prp",
+          "warum": "documents the causal object naming the reason ('they put their fingers in their ears... out of fear of death')"
+        },
+        {
+          "sure": 2,
+          "vers": 109,
+          "wort": 12,
+          "zeigt": "حَسَدًا carries the relation prp",
+          "warum": "documents a second causal object ('many of the People of the Book wished they could turn you back to disbelief, out of envy')"
+        }
+      ],
+      "lernen": [
+        "Practice the 'why?' question test deliberately on several verses, and consciously distinguish it from the direct object's 'whom/what?' test.",
+        "Collect your own examples of abstract motive nouns (fear, awe, hope...) in the accusative (nasb).",
+        "Set the proof passage given here alongside one for the absolute/cognate object, and name the difference in root."
+      ],
+      "tabellen": [],
+      "siehe": ["maful-mutlaq"]
+    },
+
+    "mubtada": {
+      "titel": "The Topic of a Nominal Sentence",
+      "ar": "مُبْتَدَأ",
+      "umschrift": "Mubtada",
+      "erklaerung": [
+        "The topic (mubtada) is the subject/topic of a nominal sentence, stands in the nominative (raf'), and, as a rule, comes at the start of the sentence. Its name literally means 'that with which one begins'.",
+        "Of the three possible parts of a nominal sentence (mubtada, khabar, and the phrase governed by the khabar), the mubtada is the only indispensable one — the khabar and the phrase governed by it can, under certain conditions, be omitted if they are inferable from context.",
+        "An entire fragment (for instance a genitive construct, or a described-noun/adjective pair) can also function as a mubtada."
+      ],
+      "erkennung": [
+        "The first word marked with the nominative (raf') in a nominal sentence — or, if the sentence begins with an accusative-governing particle such as إِنَّ, that particle together with its ism.",
+        "Also structurally recognizable by the fact that a khabar later in the same sentence refers back to the mubtada as its head word."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 2,
+          "wort": 1,
+          "zeigt": "ذَٰلِكَ is the topic (mubtada), to which the khabar هُدًى (word 6, relation Pred) in the same verse refers back",
+          "warum": "documents the topic as the head of a nominal sentence ('This Book... is guidance for the God-conscious') — the khabar's head value points directly back to this word"
+        },
+        {
+          "sure": 2,
+          "vers": 19,
+          "wort": 17,
+          "zeigt": "ٱللَّهُ (within the word وَٱللَّهُ) is the topic (mubtada), to which the khabar مُحِيطٌۢ (word 18, relation Pred) refers back",
+          "warum": "documents a second topic–khabar pair ('and Allah encompasses the disbelievers')"
+        }
+      ],
+      "lernen": [
+        "In a nominal sentence, first look for the first word in the nominative (raf') — that is almost always the topic.",
+        "Practice, on verses without a visible khabar, supplying the 'invisible is' between the topic and a following phrase governed by the khabar.",
+        "Compare topic–khabar pairs in ordinary nominal sentences with those in kāna and inna sentences, to internalize the change of case in the khabar."
+      ],
+      "tabellen": [],
+      "siehe": ["khabar", "kaana-wa-akhawatuha", "inna-wa-akhawatuha"]
+    },
+
+    "khabar": {
+      "titel": "The Predicate of a Nominal Sentence",
+      "ar": "خَبَر",
+      "umschrift": "Chabar",
+      "erklaerung": [
+        "The khabar delivers the statement about the mubtada and answers the question 'what about the mubtada?'. In an ordinary nominal sentence it stands in the nominative (raf'); with Kāna and her sisters it shifts to the accusative (nasb); with Inna and her sisters it stays in the nominative (raf').",
+        "The khabar can be a single word, an entire fragment (genitive construct, prepositional phrase, described-noun/adjective pair), or even a complete sentence (nominal or verbal). If it is itself a sentence, it must agree with the mubtada in number and gender.",
+        "Between the mubtada and the khabar, Arabic has no visible word for 'is' — it must be supplied when translating."
+      ],
+      "erkennung": [
+        "The second element of a nominal sentence marked with the nominative (raf') (or the accusative element in kāna sentences), which, in terms of meaning, makes a statement about the mubtada.",
+        "In the corpus syntax, the khabar frequently carries the relation Pred, with a head reference back to its mubtada."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 2,
+          "wort": 6,
+          "zeigt": "هُدًى carries the relation Pred with a head reference to word 1 (the mubtada ذَٰلِكَ)",
+          "warum": "documents the khabar of an ordinary nominal sentence in the nominative (raf') ('...is guidance for the God-conscious')"
+        },
+        {
+          "sure": 2,
+          "vers": 19,
+          "wort": 18,
+          "zeigt": "مُحِيطٌۢ carries the relation Pred with a head reference to word 17 (the mubtada ٱللَّهُ)",
+          "warum": "documents a second khabar example ('and Allah encompasses the disbelievers') — the same verse the mubtada entry also uses as its second proof passage"
+        }
+      ],
+      "lernen": [
+        "Always look for the khabar only AFTER you have found the mubtada — the two belong together and combine into a complete statement.",
+        "Practice, on verses with a clause-shaped khabar, checking the agreement in number/gender between the mubtada and the embedded clause.",
+        "Set the same khabar side by side in an ordinary nominal sentence and in a kāna sentence, to see the change of case (raf' vs. nasb) directly."
+      ],
+      "tabellen": [],
+      "siehe": ["mubtada"]
+    },
+
+    "sifah": {
+      "titel": "The Adjective",
+      "ar": "صِفَة",
+      "umschrift": "Sifah",
+      "erklaerung": [
+        "The adjective (sifah) describes a property of the mowsoof (the noun being described) and must agree with it in ALL FOUR features: case (i'rab), number, gender, and definiteness. This complete four-point agreement is precisely what distinguishes the adjective from the apposition (badal — see there): an apposition only has to share the case, none of the other three features.",
+        "The adjective always follows the mowsoof, though it need not follow it immediately."
+      ],
+      "erkennung": [
+        "Four-point test: do the case, number, gender, and definiteness of the adjective and the mowsoof match exactly? If so, this is a described-noun/adjective fragment.",
+        "Content test against apposition: does the second word merely describe a QUALITY of the first (beautiful, great, believing...), rather than naming a more precise identity of the same thing? Then it is an adjective, not an apposition."
+      ],
+      "belege": [
+        {
+          "sure": 1,
+          "vers": 1,
+          "wort": 3,
+          "zeigt": "ٱلرَّحْمَٰنِ carries the relation Adj with a head reference to word 2 (ٱللَّهِ)",
+          "warum": "documents the adjective in full agreement with its mowsoof (definite, raf'/jarr depending on the verse, masculine, singular): 'in the name of Allah, the Most Gracious'"
+        },
+        {
+          "sure": 1,
+          "vers": 1,
+          "wort": 4,
+          "zeigt": "ٱلرَّحِيمِ carries the relation Adj with a head reference to word 2 (ٱللَّهِ)",
+          "warum": "documents a second adjective for the same mowsoof in the same verse ('...the Most Merciful') — two adjectives in a row, with no coordinating conjunction between them"
+        }
+      ],
+      "lernen": [
+        "Practice the four-point test explicitly on several described-noun/adjective pairs, until it runs automatically.",
+        "Collect counterexamples: find word pairs that look like adjectives at first glance but differ in case — they can only be an apposition.",
+        "Compare the proof passage given here directly with an apposition example from the same verse, to experience description versus renaming in contrast."
+      ],
+      "tabellen": [],
+      "siehe": ["badal"]
+    },
+
+    "haal": {
+      "titel": "The Circumstantial Descriptor",
+      "ar": "حَال",
+      "umschrift": "Haal",
+      "erklaerung": [
+        "The circumstantial accusative (haal) describes the STATE of the agent, the object, or another sentence part EXACTLY AT THE MOMENT the main action takes place. It stands in the accusative (nasb) when it is a single word, and is typically indefinite in that case.",
+        "The haal can also be an entire circumstantial clause (a nominal or verbal sentence), often introduced by the so-called circumstantial waw (waw al-haaliyya).",
+        "Distinguishing it from the accusative of specification (tamyeez — see there): the haal describes a TEMPORARY accompanying circumstance ('how/in what state'), while tamyeez specifies a TYPE or QUANTITY ('what kind of/how much')."
+      ],
+      "erkennung": [
+        "An indefinite word in the accusative (nasb) (or a clause introduced by وَ) directly after the main action, providing a simultaneous accompanying-circumstance description and answering the question 'how/in what state?'.",
+        "Distinguishing test against tamyeez: can the word be paraphrased with 'while he/she/it...'? Then it is haal. Can it rather be paraphrased with 'with regard to/in terms of...'? Then it is tamyeez."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 22,
+          "wort": 22,
+          "zeigt": "وَأَنتُمْ (with the following تَعْلَمُونَ, word 23, relation circ or Pred)",
+          "warum": "documents the circumstantial accusative as an entire circumstantial clause ('...while you know') for the preceding action in the same verse"
+        },
+        {
+          "sure": 2,
+          "vers": 25,
+          "wort": 27,
+          "zeigt": "مُتَشَٰبِهًا carries the relation circ",
+          "warum": "documents a single-word circumstantial accusative in the accusative (nasb) ('and it will be brought to them resembling [what they knew before]')"
+        }
+      ],
+      "lernen": [
+        "Practice the distinguishing test against tamyeez ('while...' vs. 'with regard to...') on several verses.",
+        "Search deliberately for وَ-introduced clauses directly after a main verb and check whether they provide a simultaneous accompanying-circumstance description.",
+        "Collect both single-word haal and clause-shaped haal examples, so as to know both construction types."
+      ],
+      "tabellen": [],
+      "siehe": ["tamyiz"]
+    },
+
+    "tamyiz": {
+      "titel": "The Specification",
+      "ar": "تَمْيِيز",
+      "umschrift": "Tamyeez",
+      "erklaerung": [
+        "The accusative of specification (tamyeez) is an indefinite, singular noun in the accusative (nasb) that clarifies an otherwise vague or ambiguous statement — usually after a number, a measure, a comparison (elative), or a vague expression like 'how much'. It answers the question 'what kind of/how much?'.",
+        "After numbers eleven and above (except 100 and 1000), the counted object (al-ma'duud) itself stands as the accusative of specification — indefinite, singular, in the accusative (nasb).",
+        "Distinguishing it from the circumstantial accusative (haal): tamyeez names a TYPE or category, not a temporary accompanying situation, and is always a single ism, never an entire clause."
+      ],
+      "erkennung": [
+        "An indefinite, singular ism in the accusative (nasb), directly after a number, a measure, or a comparative word, that clarifies WHAT is being counted/measured/compared.",
+        "Never an entire clause (this immediately distinguishes tamyeez from haal, which can also occur as a clause)."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 60,
+          "wort": 13,
+          "zeigt": "عَيْنًا carries the relation Spec",
+          "warum": "documents the accusative of specification after a number ('there gushed forth from it twelve springs') — عَيْنًا clarifies what is meant by 'twelve'"
+        },
+        {
+          "sure": 2,
+          "vers": 26,
+          "wort": 28,
+          "zeigt": "مَثَلًا carries the relation Spec",
+          "warum": "documents an accusative of specification that clarifies an otherwise vague statement ('indeed, Allah is not ashamed to present an example — be it a mosquito')"
+        }
+      ],
+      "lernen": [
+        "Practice deliberately on number words from eleven upward: find the following indefinite singular ism in the accusative (nasb) and name it as the accusative of specification.",
+        "Compare the proof passage given here with a haal example, to cement the difference between 'what kind of/how much' and 'how/in what state'.",
+        "Search for further examples of the accusative of specification after an elative (comparative form), to experience its function outside of number words."
+      ],
+      "tabellen": [],
+      "siehe": ["haal"]
+    },
+
+    "badal": {
+      "titel": "The Apposition",
+      "ar": "بَدَل",
+      "umschrift": "Badal",
+      "erklaerung": [
+        "An apposition (badal) is a noun-noun construction in which a second ism directly follows a first and clarifies or specifies it further — as if an unspoken 'that is ...' or 'by which I mean ...' stood between them.",
+        "The name badal ('exchange/substitution') comes from the fact that each of the two words would, on its own, make the sentence complete and sensible — one could 'substitute' one for the other without the sentence becoming incomplete. In combination, however, the sentence becomes more precise and informative.",
+        "The decisive grammatical rule: both isms of an apposition must stand in the SAME case (both nominative, both accusative, or both genitive). That is the only requirement — unlike with the adjective, number, gender, or definiteness need NOT agree.",
+        "This is precisely the greatest risk of confusion in teaching: an apposition often looks superficially like an adjective, because both constructions consist of two consecutive nouns. The difference lies in the purpose: an adjective DESCRIBES a property of the mowsoof (agreeing with it in all four features); an apposition NAMES the same thing once again, more precisely, or exchanges it for a more precise designation (agreeing only in case). The 'that is ...' test reliably separates the two: if 'that is' can sensibly be inserted between the two words, it is an apposition; if the second word merely describes a quality of the first, it is an adjective."
+      ],
+      "erkennung": [
+        "'That is' test: does it make sense to insert 'that is' or 'namely' between the two isms? Then it is an apposition.",
+        "Case test: do both isms stand in the same case (nominative/accusative/genitive)? That is a necessary condition — but UNLIKE with the adjective, the remaining three features (number, gender, definiteness) need not agree.",
+        "Substitution test: could one of the two words be omitted and the sentence remain, on its own, complete and correct? Then this is very likely an apposition."
+      ],
+      "belege": [
+        {
+          "sure": 1,
+          "vers": 2,
+          "wort": 3,
+          "zeigt": "رَبِّ carries the relation App with a head reference to word 2 (لِلَّهِ)",
+          "warum": "documents an apposition in the genitive (jarr): 'All praise is due to Allah, [that is] the Lord of the worlds' — رَبِّ clarifies who is meant by لِلَّهِ, both in the same jarr case"
+        },
+        {
+          "sure": 1,
+          "vers": 7,
+          "wort": 1,
+          "zeigt": "صِرَٰطَ carries the relation App",
+          "warum": "documents an apposition in the accusative (nasb) across a verse boundary: 'the straight path — [that is] the path of those upon whom You have bestowed favor' from the preceding verse 6"
+        }
+      ],
+      "lernen": [
+        "First fix the 'that is' test in mind and apply it consistently to every pair of consecutive isms, before even thinking of the adjective.",
+        "Search deliberately for counterexamples: take a familiar described-noun/adjective example and check why the 'that is' test does NOT work there.",
+        "Practice on the two proof passages given here explicitly demonstrating case agreement (jarr in verse 2, nasb in verse 7), even though the two word pairs differ in definiteness/length.",
+        "Build yourself a small collection of three to five further apposition passages, and name the shared case in each case."
+      ],
+      "tabellen": [],
+      "siehe": ["sifah", "mudaf-ilayh"]
+    },
+
+    "mudaf-ilayh": {
+      "titel": "The Second Term of a Genitive Construct",
+      "ar": "مُضَاف إِلَيْه",
+      "umschrift": "Mudaaf Ilayh",
+      "erklaerung": [
+        "In a genitive construct (idaafa, a possession fragment, e.g. 'the book of Allah'), the second term (mudaaf ilayh) is the second word — the 'possessor'. It always stands in the genitive (jarr), regardless of which case the first word (the mudaaf) itself carries.",
+        "The mudaaf (the first word, the 'possessed') never carries the definite article and nunation at the same time — it 'borrows' its definiteness from the second term."
+      ],
+      "erkennung": [
+        "A noun marked with the genitive (jarr) directly after another noun that itself carries neither an article nor nunation.",
+        "Answers the question 'whose?' in relation to the preceding word."
+      ],
+      "belege": [
+        {
+          "sure": 1,
+          "vers": 1,
+          "wort": 2,
+          "zeigt": "ٱللَّهِ carries the relation Poss with a head reference to word 1 (بِسْمِ)",
+          "warum": "documents the second term of the very first genitive construct in the Quran ('in the name of Allah') — بِسْمِ itself carries neither an article nor nunation"
+        },
+        {
+          "sure": 1,
+          "vers": 2,
+          "wort": 4,
+          "zeigt": "ٱلْعَٰلَمِينَ carries the relation Poss with a head reference to word 3 (رَبِّ)",
+          "warum": "documents a second instance of the second term ('Lord of the worlds') within the same chapter of al-Fatiha"
+        }
+      ],
+      "lernen": [
+        "Practice, on several verses, first finding the article-less and nunation-less first word — it signals a genitive construct, and the following genitive word is the second term.",
+        "Form chains with several genitive constructs strung together (e.g. 'the Day of Judgment of the people') and name each second-term link.",
+        "Compare the second term of a genitive construct with the majroor after a preposition — both stand in the genitive (jarr), but for different reasons."
+      ],
+      "tabellen": [],
+      "siehe": ["badal", "huruf-jarr"]
+    },
+
+    "munada": {
+      "titel": "The Vocative",
+      "ar": "مُنَادَى",
+      "umschrift": "Munaadaa",
+      "erklaerung": [
+        "The vocative (munada) is the noun being addressed after a vocative particle — usually يَا, often in the form يَا أَيُّهَا when addressing a group. The vocative is often followed by a further ism that names it more precisely — in the case of يَا أَيُّهَا, typically as an apposition.",
+        "In direct address with a proper name (يَا + name), the vocative is usually the proper-name ism itself; with يَا أَيُّهَا, أَيُّهَا is the actual, indeclinable (mabni) vocative, and the following ism (such as ٱلنَّاسُ) clarifies who is meant by it."
+      ],
+      "erkennung": [
+        "A word (or a small fragment) directly after يَا or أَيُّهَا that names the person or group being addressed.",
+        "With يَا أَيُّهَا, a clarifying ism in the same case usually follows afterward — an apposition to the vocative itself."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 21,
+          "wort": 1,
+          "zeigt": "يَٰٓأَيُّهَا carries the relation voc",
+          "warum": "documents the vocative as the head of an address ('O mankind, worship your Lord') — the following ٱلنَّاسُ (word 2) clarifies it as an apposition"
+        },
+        {
+          "sure": 2,
+          "vers": 33,
+          "wort": 2,
+          "zeigt": "يَٰٓـَٔادَمُ carries the relation voc",
+          "warum": "documents a direct address to a single person by proper name ('He said: O Adam, inform them of their names')"
+        }
+      ],
+      "lernen": [
+        "Search the Quran deliberately for يَا أَيُّهَا passages and name both the vocative and the following clarifying ism.",
+        "Compare several addresses with each other: who is being addressed in each case, and how is the group additionally named?",
+        "Deliberately link this entry with the apposition, to understand the dual role of يَا أَيُّهَا + ism."
+      ],
+      "tabellen": [],
+      "siehe": ["badal"]
+    },
+
+    "mustathna": {
+      "titel": "The Exception",
+      "ar": "مُسْتَثْنَى",
+      "umschrift": "Mustathnaa",
+      "erklaerung": [
+        "The exception (mustathna) is the word that, after an exceptive particle — chiefly إِلَّا — is excluded from an otherwise general statement. It names WHO or WHAT is exempted from the group/statement mentioned before.",
+        "The exact case of the exception depends on the sentence type (fully affirmative, fully negative, or incomplete) — for a first approach, it is enough to recognize it as its own case (i'rab) role directly after إِلَّا."
+      ],
+      "erkennung": [
+        "A noun directly after إِلَّا that restricts a previously mentioned, more general group or statement ('all except...').",
+        "Without the exception and إِلَّا, the sentence already stays complete on its own — the exception only narrows the previously made statement afterward."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 34,
+          "wort": 8,
+          "zeigt": "إِبْلِيسَ carries the relation exp",
+          "warum": "documents the exception after إِلَّا ('so they all prostrated, except Iblis') — Iblis is exempted from the general statement about the angels"
+        },
+        {
+          "sure": 2,
+          "vers": 83,
+          "wort": 26,
+          "zeigt": "قَلِيلًا carries the relation exp",
+          "warum": "documents a second exception ('then you turned away, except a few of you')"
+        }
+      ],
+      "lernen": [
+        "Search deliberately for إِلَّا passages and, in each case, name the general statement made beforehand and who/what is exempted from it.",
+        "Compare several exception passages and observe how differently the case can turn out depending on the sentence type.",
+        "As a test, translate the sentence without إِلَّا and the exception — check whether the remaining statement is still a complete sentence."
+      ],
+      "tabellen": [],
+      "siehe": []
+    },
+
+    "taukid": {
+      "titel": "The Emphasis",
+      "ar": "تَوْكِيد",
+      "umschrift": "Taukid",
+      "erklaerung": [
+        "Emphasis (taukid) reinforces a preceding noun without adding anything new in terms of content — it stands in the SAME case as the word it refers to. Two types are especially common: the literal repetition (taukid lafzi) and reinforcement with fixed words such as كُلّ/جَمِيع ('all/altogether') or نَفْس/عَيْن ('itself/same') together with a matching bound pronoun (taukid ma'nawi).",
+        "Unlike apposition, emphasis adds no new, clarifying identity to the sentence — it merely repeats or reinforces the same thing already mentioned, so that it sounds especially emphatic."
+      ],
+      "erkennung": [
+        "A word such as كُلّ, جَمِيع, نَفْس, or عَيْن with a bound pronoun matched to the word it refers to, directly after that word, in the same case — and without new content information.",
+        "Can the word in question be deleted without any information being lost (only the emphasis weakens)? Then this is emphasis (taukid)."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 31,
+          "wort": 4,
+          "zeigt": "كُلَّهَا carries the relation emph",
+          "warum": "documents taukid ma'nawi with كُلّ + bound pronoun ('and He taught Adam the names, all of them') — it reinforces ٱلْأَسْمَآءَ without adding new information"
+        },
+        {
+          "sure": 2,
+          "vers": 161,
+          "wort": 13,
+          "zeigt": "أَجْمَعِينَ carries the relation emph",
+          "warum": "documents emphasis with جَمِيع/أَجْمَعِينَ ('the curse of Allah and of the angels and of mankind, all together')"
+        }
+      ],
+      "lernen": [
+        "Search deliberately for كُلّ/جَمِيع/نَفْس/عَيْن directly after a noun and check whether the attached pronoun matches that noun.",
+        "Deliberately distinguish emphasis from apposition: emphasis adds no new information, apposition clarifies/renames.",
+        "Translate the same sentence once with and once without the emphasis word, and observe that the factual content does not change, only the emphasis."
+      ],
+      "tabellen": [],
+      "siehe": []
+    }
+  }
+}

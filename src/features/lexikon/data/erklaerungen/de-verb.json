@@ -1,0 +1,1569 @@
+{
+  "schema": 1,
+  "lang": "de",
+  "bereich": "verb",
+  "eintraege": {
+    "fiil": {
+      "titel": "Das Verb (Fiʿl) und seine Grundlagen",
+      "ar": "الفِعْل",
+      "umschrift": "al-fiʿl",
+      "erklaerung": [
+        "Das Arabische kennt drei Wortarten: Ism (Nomen), Fiʿl (Verb) und Harf (Partikel). Ein Fiʿl bezeichnet eine Handlung, die zu einem bestimmten Zeitpunkt geschieht — in der Vergangenheit, in der Gegenwart/Zukunft oder als Befehl bzw. Verbot. Damit zerfällt das Verbsystem in genau drei Grundarten: al-Fiʿl al-Māḍī, al-Fiʿl al-Muḍāriʿ und Fiʿl al-Amr/an-Nahy. Alle weiteren Verbformen (Partizipien, Verbalnomen usw.) werden von diesen drei Grundarten abgeleitet, gelten aber selbst nicht mehr als eigene Kategorie des Fiʿl.",
+        "Das Besondere am arabischen Verb: Es trägt sein Subjekt bereits in sich. Anders als im Deutschen, wo \"ich helfe\" aus zwei Wörtern besteht, steckt im arabischen Verb selbst schon die Information, wer handelt — als eingebautes Pronomen in Form einer Vorsilbe oder Endung. Ein einziges Verbwort ist deshalb bereits ein vollständiger Satz mit Fāʿil (Macher).",
+        "Diese eingebaute Personalendung ist der Schlüssel zum ganzen Kapitel: Wer sie einmal an einem Musterverb (traditionell نَصَرَ, \"er half\") gelernt hat, kann sie auf jedes andere Verb übertragen, weil sich nur der Wortstamm ändert, nicht das Baumuster der Endungen."
+      ],
+      "erkennung": [
+        "Ein Fiʿl besteht aus einem festen Wortstamm plus veränderlichen Vorsilben/Endungen, die Person, Geschlecht und Zahl anzeigen.",
+        "Im Gegensatz zum Ism trägt ein Fiʿl niemals Tanwin und niemals den Artikel اَلْ.",
+        "Ein Verbwort kann allein einen vollständigen Satz bilden, weil das Subjekt bereits im Verb steckt."
+      ],
+      "belege": [
+        {
+          "sure": 1,
+          "vers": 5,
+          "wort": 2,
+          "zeigt": "نَعْبُدُ (\"wir dienen/beten an\") — das Wort ist bereits ein vollständiger Satz: Stamm عبد + eingebautes \"wir\".",
+          "warum": "Segment ist pos:V mit person:1, number:pl — kein separates Pronomen nötig."
+        },
+        {
+          "sure": 1,
+          "vers": 6,
+          "wort": 1,
+          "zeigt": "ٱهْدِنَا (\"leite uns!\") — Befehlsform mit eingebautem \"du\" (Macher) und angehängtem \"uns\" (Objekt) in einem einzigen Wort.",
+          "warum": "Segment ist pos:V, tense:imperative, person:2 — die Wortart Fiʿl in ihrer dritten Grundart."
+        }
+      ],
+      "lernen": [
+        "Präge dir zuerst die Dreiteilung ein: Māḍī – Muḍāriʿ – Amr/Nahy. Sprich sie laut in dieser Reihenfolge, bis sie automatisch kommt.",
+        "Nimm ein einziges Musterverb (z. B. نَصَرَ) und bleib dabei, bis das Baumuster der Endungen sitzt — erst danach an anderen Verben ausprobieren.",
+        "Suche beim Lesen im Koran gezielt nach Verben ohne separates Pronomen davor und benenne laut, wer der Macher ist, bevor du weiterliest."
+      ],
+      "tabellen": [
+        "verb-madi-nasara-aktiv-matrix",
+        "verb-mudari-nasara-aktiv-matrix"
+      ],
+      "siehe": [
+        "jidhr",
+        "madi",
+        "mudari",
+        "amr",
+        "nahy"
+      ]
+    },
+    "jidhr": {
+      "titel": "Die Wurzel und das Stammprinzip",
+      "ar": "الجَذْر وَالوَزْن",
+      "umschrift": "al-jadhr wa-l-wazn",
+      "erklaerung": [
+        "Fast jedes arabische Verb geht auf eine Wurzel (Jidhr) aus meist drei Konsonanten zurück, die eine Grundbedeutung trägt. Aus dieser Wurzel lassen sich durch feste Muster (Auzān, Singular Wazn) ganze Wortfamilien bilden: das Grundverb, verstärkte oder kausative Verbformen, das Verbalnomen, die Partizipien. Man kann sich die Wurzel als Samen vorstellen, aus dem je nach Muster verschiedene Wörter wachsen.",
+        "Wichtig ist: Dieselbe Wurzel liefert je nach Muster unterschiedliche, aber verwandte Bedeutungen. Die Wurzel ع-ل-م trägt die Grundidee \"Wissen\". Im Grundmuster ergibt sie عَلِمَ, \"er wusste\". Verdoppelt man den mittleren Wurzelbuchstaben (Muster II), entsteht عَلَّمَ, \"er lehrte\" — aus reinem Wissen wird die Handlung, Wissen aktiv weiterzugeben.",
+        "Dieses Stammprinzip ist der Grund, warum arabischer Wortschatz sich systematisch statt durch reines Auswendiglernen erschließt: Kennt man Wurzel und Muster, lässt sich die Bedeutung eines unbekannten Wortes oft erschließen, bevor man es im Wörterbuch nachschlägt."
+      ],
+      "erkennung": [
+        "Die Wurzel besteht meist aus drei Konsonanten ohne feste Vokale — die Vokale und zusätzlichen Buchstaben liefert erst das Muster.",
+        "Zwei Wörter mit derselben Wurzel, aber unterschiedlichem Muster, sind bedeutungsverwandt, aber nicht identisch (z. B. \"wissen\" vs. \"lehren\").",
+        "Ein verdoppelter mittlerer Wurzelbuchstabe (Schadda) ist das auffälligste Erkennungszeichen für ein durch Muster erweitertes Verb."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 60,
+          "wort": 15,
+          "zeigt": "عَلِمَ (\"er wusste\") — Grundmuster der Wurzel ع-ل-م ohne jede Erweiterung.",
+          "warum": "Segment ist pos:V, verbForm:1 (kein Klammerwert im Korpus, also Konvention Form I), root:علم."
+        },
+        {
+          "sure": 2,
+          "vers": 31,
+          "wort": 1,
+          "zeigt": "وَعَلَّمَ (\"und Er lehrte\") — dieselbe Wurzel ع-ل-م, aber mit verdoppeltem mittlerem Buchstaben zum Muster II erweitert.",
+          "warum": "Segment ist pos:V, verbForm:2 ((II) im Rohtag), root:علم — derselbe Jidhr wie bei عَلِمَ, anderes Muster, andere Bedeutungsnuance."
+        }
+      ],
+      "lernen": [
+        "Lerne nicht das einzelne Wort, sondern das Paar Wurzel+Muster: Frag dich bei jedem neuen Verb \"welche Wurzel, welches Muster?\".",
+        "Übe an der Wurzel علم selbst: sprich عَلِمَ (wissen, Form I) und عَلَّمَ (lehren, Form II) nacheinander und benenne den Bedeutungsunterschied laut.",
+        "Führe dir bei neuen Wörtern die Grundwurzel vor Augen, bevor du die Übersetzung nachschlägst — das trainiert das Erschließen aus dem System."
+      ],
+      "tabellen": [],
+      "siehe": [
+        "fiil",
+        "form1",
+        "form2"
+      ]
+    },
+    "madi": {
+      "titel": "Die Vergangenheitsform",
+      "ar": "الماضي",
+      "umschrift": "al-māḍī",
+      "erklaerung": [
+        "Al-Māḍī ist die Grundform jedes Verbs — \"er tat\" — und der Ausgangspunkt, von dem aus alle anderen Personen gebildet werden. Der Wortstamm bleibt über alle Formen hinweg gleich; verändert wird nur die Endung, die zeigt, wer gehandelt hat. Am Musterverb نَصَرَ (\"er half\") lauten die wichtigsten Formen: نَصَرَ (er half), نَصَرَتْ (sie half), نَصَرْتَ (du halfst), نَصَرْتُ (ich half), نَصَرُوا (sie halfen, männliche Gruppe), نَصَرْنَا (wir halfen).",
+        "Verneint wird der Māḍī im Grundzustand mit dem Partikel مَا direkt vor dem Verb (مَا نَصَرْتُ, \"ich habe nicht geholfen\"). Eine zweite, rhetorisch andere Verneinungsform der Vergangenheit läuft über لَمْ + Muḍāriʿ (siehe dort) — obwohl die Form dabei wie Gegenwart aussieht.",
+        "Der Māḍī ist zugleich die Zitierform, unter der ein Verb im Wörterbuch steht, und die Grundlage, von der aus auch das Passiv der Vergangenheit gebildet wird (siehe Majhūl)."
+      ],
+      "erkennung": [
+        "Personenendungen zeigen den Macher direkt am Wortende: -تَ = du (m.), -تُ = ich, -نَا = wir, -وا = eine männliche Gruppe.",
+        "Der Māḍī trägt keine Vorsilbe für die Person (im Unterschied zum Muḍāriʿ) — die Person steckt allein in der Endung.",
+        "Verneinung im Māḍī erkennt man an مَا direkt vor dem Verb."
+      ],
+      "belege": [
+        {
+          "sure": 1,
+          "vers": 7,
+          "wort": 3,
+          "zeigt": "أَنْعَمْتَ (\"Du hast begünstigt\") — Vergangenheitsform, 2. Person maskulin Singular, an der Endung ـتَ erkennbar.",
+          "warum": "Segment ist pos:V, tense:perfect, person:2, gender:m, number:sg."
+        },
+        {
+          "sure": 3,
+          "vers": 123,
+          "wort": 2,
+          "zeigt": "نَصَرَكُمُ (\"Er half euch\") — Vergangenheitsform, 3. Person maskulin Singular ohne eigene Personalendung (das \"er\" steckt implizit im nackten Stamm).",
+          "warum": "Segment ist pos:V, tense:perfect, person:3, gender:m, number:sg."
+        }
+      ],
+      "lernen": [
+        "Lerne zuerst die Personenendungen isoliert als kleines Endungs-Alphabet (ـَ, ـَتْ, ـْتَ, ـْتُ, ـُوا, ـْنَا …), bevor du sie an Verben übst.",
+        "Decke in der Personenmatrix die arabische Spalte ab und sage die deutsche Bedeutung auf, dann umgekehrt — bis beide Richtungen sitzen.",
+        "Häufiger Fehler: die Endung ـتَ (du, m.) mit ـتِ (du, f.) oder ـتُ (ich) zu verwechseln — lies sie beim Üben stets laut, der Unterschied ist nur ein Vokal."
+      ],
+      "tabellen": [
+        "verb-madi-nasara-aktiv-matrix"
+      ],
+      "siehe": [
+        "mudari",
+        "maluum",
+        "majhul",
+        "personenmatrix"
+      ]
+    },
+    "mudari": {
+      "titel": "Die Gegenwarts-/Zukunftsform",
+      "ar": "المضارع",
+      "umschrift": "al-muḍāriʿ",
+      "erklaerung": [
+        "Al-Muḍāriʿ drückt aus, was gerade geschieht, gewohnheitsmäßig geschieht oder in der Zukunft geschehen wird (\"er tut\" / \"er wird tun\"). Im Unterschied zum Māḍī trägt der Muḍāriʿ eine Vorsilbe am Wortanfang, die die Person anzeigt: يَ für er/eine männliche Gruppe, تَ für sie (Singular) bzw. du, أَ für ich, نَ für wir — als Merkwort oft zur Buchstabenfolge \"يتأن/ja-ta-a-na\" zusammengefasst. In der Grundform endet der Muḍāriʿ zusätzlich auf ein Damma (يَنْصُرُ).",
+        "Die Zukunft wird aus dem Muḍāriʿ gebildet, indem man سَ direkt anhängt (nahe Zukunft) oder سَوْفَ davorstellt (fernere Zukunft) — beides bedeutet \"wird\". Damit deckt eine einzige Grundform sowohl Gegenwart als auch Zukunft ab.",
+        "Der Endvokal des Muḍāriʿ ist keineswegs fest: Bestimmte Partikeln verwandeln das Damma in ein Fatha (die \"leichte Form\", Mansub) oder in ein Sukun (die \"leichteste Form\", Majzum) — siehe die eigenen Einträge zu den drei Modi."
+      ],
+      "erkennung": [
+        "Vier mögliche Vorsilben markieren die Person: يَ / تَ / أَ / نَ.",
+        "Die Grundform endet auf Damma (ـُ); dieser Endvokal wechselt je nach vorangehendem Partikel (Modus).",
+        "Zukunft entsteht durch سَ (angehängt) oder سَوْفَ (vorangestellt) vor derselben Muḍāriʿ-Form."
+      ],
+      "belege": [
+        {
+          "sure": 1,
+          "vers": 5,
+          "wort": 2,
+          "zeigt": "نَعْبُدُ (\"wir dienen an\") — Muḍāriʿ mit Vorsilbe نَ für \"wir\" und Endung ـُ (Damma) im Grundzustand.",
+          "warum": "Segment ist pos:V, tense:imperfect, person:1, number:pl, mood:null und trägt kein MOOD-Tag im Rohkorpus — Grundzustand."
+        },
+        {
+          "sure": 2,
+          "vers": 268,
+          "wort": 2,
+          "zeigt": "يَعِدُكُمُ (\"er verspricht euch\") — Muḍāriʿ mit Vorsilbe يَ für \"er\" und Endung ـُ.",
+          "warum": "Segment ist pos:V, tense:imperfect, person:3, gender:m, number:sg."
+        }
+      ],
+      "lernen": [
+        "Präge dir zuerst die vier Vorsilben يتأن als Merkwort ein, bevor du an einzelne Verben gehst.",
+        "Decke in der Personenmatrix jeweils eine Spalte ab (Singular/Dual/Plural) und sage die fehlende Form laut auf — das trainiert Vorsilbe UND Endung zugleich.",
+        "Übe den Unterschied سَ vs. سَوْفَ an Koranbeispielen: beide bedeuten \"wird\", nur mit unterschiedlicher gefühlter zeitlicher Nähe."
+      ],
+      "tabellen": [
+        "verb-mudari-nasara-aktiv-matrix"
+      ],
+      "siehe": [
+        "madi",
+        "mudariMarfu",
+        "mudariMansub",
+        "mudariMajzum",
+        "amr",
+        "nahy"
+      ]
+    },
+    "amr": {
+      "titel": "Die Befehlsform",
+      "ar": "الأمر",
+      "umschrift": "al-amr",
+      "erklaerung": [
+        "Fiʿl al-Amr, der Befehl, existiert nur für die 2. Person (du/ihr) — wie im Deutschen. Gebildet wird er aus dem Muḍāriʿ der 2. Person in vier Schritten: (1) das Verb in die leichteste Form bringen (Endung wird zu Sukun), (2) die Vorsilbe تَ streichen, (3) falls der neue erste Buchstabe dadurch vokallos würde, ein Hilfs-Hamza (Hamzat al-Waṣl) davorsetzen, (4) dessen Aussprache festlegen. Aus أَنْتَ تَنْصُرُ (\"du hilfst\") wird so über تَنْصُرْ und نْصُرْ am Ende ٱنْصُرْ (\"Hilf!\").",
+        "Das Hamzat al-Waṣl am Anfang der Befehlsform wird nur gelesen, wenn davor eine Pause steht oder kein verschmelzbares Wort folgt; nach و/فَ oder einem direkt anschließbaren Wort bleibt es stumm. Sein Lesevokal richtet sich nach dem dritten Buchstaben des Verbs.",
+        "Manche Verben (die vier Mahmūz-Verben أَكَلَ, أَخَذَ, أَمَرَ, سَأَلَ) verlieren ihre Hamza im Imperativ vollständig durch Hadhf — كُلْ, خُذْ, مُرْ, سَلْ statt der erwarteten Form mit Hamza."
+      ],
+      "erkennung": [
+        "Die Befehlsform existiert nur in der 2. Person und endet meist auf Sukun.",
+        "Sie beginnt oft mit einem Hilfs-Alif/Hamzat al-Waṣl, wenn der erste echte Wurzelbuchstabe sonst vokallos wäre.",
+        "Bei den vier Verben أَكَلَ/أَخَذَ/أَمَرَ/سَأَلَ fällt die Hamza im Befehl ganz weg (Hadhf)."
+      ],
+      "belege": [
+        {
+          "sure": 1,
+          "vers": 6,
+          "wort": 1,
+          "zeigt": "ٱهْدِنَا (\"Leite uns!\") — Befehlsform, 2. Person maskulin Singular, mit angehängtem Objektpronomen \"uns\".",
+          "warum": "Segment ist pos:V, tense:imperative, person:2, gender:m, number:sg."
+        },
+        {
+          "sure": 17,
+          "vers": 14,
+          "wort": 1,
+          "zeigt": "ٱقْرَأْ (\"Lies!\") — Befehlsform mit Hilfs-Hamza am Anfang, vom Mahmūz-al-Lām-Verb قَرَأَ.",
+          "warum": "Segment ist pos:V, tense:imperative, person:2, gender:m, number:sg, root:قرا."
+        }
+      ],
+      "lernen": [
+        "Übe die vier Bildungsschritte laut an einem Verb: Gegenwart 2. Person → leichteste Form → Vorsilbe streichen → Hilfs-Hamza prüfen.",
+        "Lerne die vier Hadhf-Ausnahmen (كُلْ، خُذْ، مُرْ، سَلْ) als geschlossene Liste auswendig — sie folgen keiner Regel, die man ableiten könnte.",
+        "Decke in der Amr-Tabelle die Personen-Spalte ab und bilde die Form selbst, bevor du nachschaust."
+      ],
+      "tabellen": [
+        "amr-nasara-matrix"
+      ],
+      "siehe": [
+        "nahy",
+        "mudariMajzum",
+        "hadhf"
+      ]
+    },
+    "nahy": {
+      "titel": "Die Verbotsform",
+      "ar": "النهي",
+      "umschrift": "an-nahy",
+      "erklaerung": [
+        "An-Nahy, das Verbot, wird gebildet, indem man die Verbotspartikel لَا vor die leichteste Form des Muḍāriʿ (2. Person) stellt — dieselbe Endung auf Sukun, die auch لَمْ und إِنْ auslösen. Aus تَنْصُرُ (\"du hilfst\") wird so لَا تَنْصُرْ (\"Hilf nicht!\").",
+        "Anders als beim Befehl bleibt beim Verbot die Vorsilbe تَ erhalten — nur der Endvokal ändert sich. Nahy ist damit strukturell die Verneinung des Muḍāriʿ-Majzūm in der 2. Person, mit einer eigenen, festen Auslösepartikel لَا (grammatisch von der reinen Negationspartikel لَا zu unterscheiden, die den Grundzustand nicht verändert).",
+        "Im Koran ist diese Struktur sehr häufig: Ermahnungen und Warnungen werden regelmäßig als لَا + Muḍāriʿ-Majzūm formuliert."
+      ],
+      "erkennung": [
+        "Verbot erkennt man an لَا unmittelbar vor einem Muḍāriʿ, dessen Endung auf Sukun steht statt auf Damma.",
+        "Die Personen-Vorsilbe (meist تَ für \"du\") bleibt erhalten — im Unterschied zum Befehl, wo sie wegfällt.",
+        "Bei Verben mit Endbuchstaben و/ي (Plural) fällt zusätzlich das Nūn weg (wie bei der leichten Form)."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 11,
+          "wort": 5,
+          "zeigt": "لَا تُفْسِدُوا۟ (\"Stiftet nicht Unheil\") — Verbotsform, 2. Person maskulin Plural nach der Verbotspartikel لَا.",
+          "warum": "Vorangehendes Wort (Position 4) trägt Segment pos:PRO (Verbotspartikel); das Verb selbst zeigt mood:juss, tense:imperfect."
+        },
+        {
+          "sure": 2,
+          "vers": 22,
+          "wort": 19,
+          "zeigt": "فَلَا تَجْعَلُوا۟ (\"so setzt nicht gleich\") — Verbotsform, 2. Person maskulin Plural, ebenfalls nach لَا.",
+          "warum": "Vorangehendes Wort trägt ein Segment pos:PRO; das Verb selbst zeigt mood:juss, tense:imperfect."
+        }
+      ],
+      "lernen": [
+        "Präge dir das Muster لَا + Muḍāriʿ-Majzūm als festen Block ein, nicht Wort für Wort.",
+        "Vergleiche Befehl und Verbot am selben Verb (ٱنْصُرْ / لَا تَنْصُرْ) und benenne laut, was sich ändert (Vorsilbe bleibt oder fällt weg).",
+        "Suche beim Koranlesen gezielt nach لَا direkt vor einem Verb und überprüfe die Endung — das schult den Blick für den Majzūm-Zustand."
+      ],
+      "tabellen": [
+        "nahy-nasara-matrix"
+      ],
+      "siehe": [
+        "amr",
+        "mudariMajzum"
+      ]
+    },
+    "personenmatrix": {
+      "titel": "Person, Geschlecht und Zahl an der Endung ablesen",
+      "ar": "تَصْرِيف الفِعْل",
+      "umschrift": "taṣrīf al-fiʿl",
+      "erklaerung": [
+        "Weil das arabische Verb sein Subjekt in sich trägt, muss man lernen, aus Vorsilbe und/oder Endung abzulesen, wer handelt: welche Person (1./2./3.), welches Geschlecht (m./f.) und welche Zahl (Singular/Dual/Plural). Im Māḍī liegt diese Information komplett in der Endung; im Muḍāriʿ verteilt sie sich auf Vorsilbe (Person) und Endung (Geschlecht/Zahl).",
+        "Die Systematik ist regelmäßig genug, um sie an einem einzigen Musterverb zu lernen und dann auf jedes andere Verb zu übertragen: dieselben 14 (bei einigen Formen 5) Kombinationen aus Person/Geschlecht/Zahl kehren mit denselben Endungen bei jedem Verb wieder.",
+        "Der Dual verdient besondere Aufmerksamkeit: Er existiert nur in der 2. und 3. Person, nie in der 1. Person — im Arabischen gibt es kein \"wir beide\" als eigene Verbform."
+      ],
+      "erkennung": [
+        "Im Māḍī sitzt die gesamte Personeninformation in der Endung (ـَ / ـَتْ / ـْتَ / ـْتُ / ـُوا / ـْنَا …).",
+        "Im Muḍāriʿ zeigt die Vorsilbe die Person (يتأن), die Endung Geschlecht und Zahl.",
+        "Die 1. Person kennt keinen eigenen Dual — nur Singular und Plural."
+      ],
+      "belege": [
+        {
+          "sure": 1,
+          "vers": 5,
+          "wort": 2,
+          "zeigt": "نَعْبُدُ (\"wir dienen an\") — Vorsilbe نَ zeigt 1. Person, keine besondere Endung zeigt Plural (Konvention: Vorsilbe نَ = \"wir\").",
+          "warum": "Segment: person:1, number:pl."
+        },
+        {
+          "sure": 3,
+          "vers": 123,
+          "wort": 2,
+          "zeigt": "نَصَرَكُمُ (\"Er half euch\") — der nackte Stamm ohne Personalendung zeigt 3. Person maskulin Singular.",
+          "warum": "Segment: person:3, gender:m, number:sg."
+        }
+      ],
+      "lernen": [
+        "Die Abdeck-Methode: Nimm die Personenmatrix, decke mit der Hand die arabische Spalte ab und sage zu jeder Person/Zahl-Zeile die Form laut auf; danach umgekehrt die deutsche Bedeutung aus der arabischen Form ableiten.",
+        "Arbeite die Matrix systematisch von unten nach oben durch (1. Person → 2. Person → 3. Person), weil das die im Handout übliche Lernreihenfolge ist und die Endungen dabei nicht durcheinandergeraten.",
+        "Typischer Fehler: die 3. Person feminin Singular im Muḍāriʿ mit der 2. Person maskulin Singular zu verwechseln, weil beide Formen identisch klingen — hier hilft nur der Satzzusammenhang."
+      ],
+      "tabellen": [
+        "verb-madi-nasara-aktiv-matrix",
+        "verb-mudari-nasara-aktiv-matrix",
+        "amr-nasara-matrix",
+        "nahy-nasara-matrix"
+      ],
+      "siehe": [
+        "madi",
+        "mudari",
+        "amr"
+      ]
+    },
+    "maluum": {
+      "titel": "Das Aktiv",
+      "ar": "مَعْلُوم",
+      "umschrift": "maʿlūm",
+      "erklaerung": [
+        "Maʿlūm (\"bekannt/aktiv\") ist der unmarkierte Normalfall des Verbs: Der Handelnde (Fāʿil) steht als Subjekt fest, und das Verb beschreibt seine Handlung direkt — \"er half\", \"er wird helfen\". Alle Beispielformen aus Māḍī, Muḍāriʿ, Amr und Nahy sind zunächst Maʿlūm, solange nichts anderes markiert ist.",
+        "Erst durch eine reine Vokaländerung (siehe Majhūl) wird aus dem Aktiv das Passiv — im Arabischen ohne Hilfsverb, allein durch das Umfärben der Stammvokale."
+      ],
+      "erkennung": [
+        "Maʿlūm ist der Normalfall ohne besondere Markierung — der Fāʿil (Macher) ist das grammatische Subjekt.",
+        "Im Korpus zeigt sich Maʿlūm daran, dass das Merkmal \"Genus verbi\" leer bleibt (kein PASS-Tag).",
+        "Erkennbar auch daran, dass ein selbstständiger Fāʿil im Raf-Status nach dem Verb folgen kann."
+      ],
+      "belege": [
+        {
+          "sure": 1,
+          "vers": 5,
+          "wort": 2,
+          "zeigt": "نَعْبُدُ (\"wir dienen an\") — Aktivform: \"wir\" handelt selbst, kein Passiv-Vokalmuster.",
+          "warum": "Segment: pos:V, voice:null (kein PASS-Tag im Rohkorpus) — Grundzustand Aktiv."
+        },
+        {
+          "sure": 3,
+          "vers": 123,
+          "wort": 2,
+          "zeigt": "نَصَرَكُمُ (\"Er half euch\") — Aktivform: \"Er\" ist der Handelnde, \"euch\" das direkte Objekt.",
+          "warum": "Segment: pos:V, voice:null, tense:perfect."
+        }
+      ],
+      "lernen": [
+        "Lerne Maʿlūm immer im Kontrastpaar mit Majhūl: sprich دarara/nusira bzw. نَصَرَ/نُصِرَ direkt nacheinander, um den Vokalunterschied im Ohr zu behalten.",
+        "Merke dir: Aktiv ist der Normalfall, das Fehlen einer Markierung IST die Markierung."
+      ],
+      "tabellen": [
+        "verb-madi-nasara-aktiv-matrix",
+        "verb-mudari-nasara-aktiv-matrix"
+      ],
+      "siehe": [
+        "majhul"
+      ]
+    },
+    "majhul": {
+      "titel": "Das Passiv",
+      "ar": "مَجْهُول",
+      "umschrift": "majhūl",
+      "erklaerung": [
+        "Majhūl (\"unbekannt/passiv\") tritt ein, wenn der Handelnde in den Hintergrund tritt oder verschwiegen wird: aus \"er half\" wird \"ihm wurde geholfen\". Im Arabischen entsteht das Passiv nicht durch ein Hilfswort, sondern rein durch Umfärben der Stammvokale — ein für die deutsche Grammatik ungewöhnliches, aber vollkommen regelmäßiges Prinzip.",
+        "In der Vergangenheit erhalten alle vokaltragenden Buchstaben außer dem letzten ein \"u\", der letzte ein \"i\": aus نَصَرَ (\"er half\") wird نُصِرَ (\"ihm wurde geholfen\"). In der Gegenwart erhält der erste Buchstabe ein \"u\", alle folgenden ein \"a\": aus يَنْصُرُ wird يُنْصَرُ. Die Personalendungen selbst bleiben dabei unverändert — nur die inneren Stammvokale wandern.",
+        "Weil der Fāʿil im Passivsatz fehlt, rückt stattdessen oft ein Nāʾib al-Fāʿil (Stellvertreter des Machers) an seine syntaktische Position — im Deutschen meist das grammatische Subjekt des Passivsatzes."
+      ],
+      "erkennung": [
+        "Vergangenheit im Passiv: \"u\"-Vokal auf allen Stammbuchstaben außer dem letzten, dort \"i\" (نُصِرَ).",
+        "Gegenwart im Passiv: \"u\" auf dem ersten Buchstaben, \"a\" auf den übrigen (يُنْصَرُ).",
+        "Die Personalendungen ändern sich beim Übergang zum Passiv nicht — nur die inneren Vokale."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 4,
+          "wort": 4,
+          "zeigt": "أُنزِلَ (\"herabgesandt wurde\") — Passiv der Vergangenheit von Form IV: erster Buchstabe trägt \"u\", letzter \"i\".",
+          "warum": "Segment: pos:V, tense:perfect, voice:passive, verbForm:4."
+        },
+        {
+          "sure": 112,
+          "vers": 3,
+          "wort": 4,
+          "zeigt": "يُولَدْ (\"Er wird gezeugt\") — Passiv der Gegenwart: erster Buchstabe trägt \"u\".",
+          "warum": "Segment: pos:V, tense:imperfect, voice:passive, mood:juss (hier zusätzlich nach لَمْ in den Majzūm-Zustand versetzt)."
+        }
+      ],
+      "lernen": [
+        "Spreche Aktiv und Passiv paarweise laut: نَصَرَ/نُصِرَ, يَنْصُرُ/يُنْصَرُ — das Ohr merkt sich das Vokalmuster schneller als eine Regel auf Papier.",
+        "Decke in der Passiv-Tabelle die Vergangenheits-Spalte ab und leite die Gegenwarts-Form selbst her (und umgekehrt), um beide Muster gegeneinander zu festigen.",
+        "Typischer Fehler: das Passiv-\"u\" am Wortanfang mit der 1.-Person-Vorsilbe أَ zu verwechseln — Kontrolle über den zweiten Vokal (i in der Vergangenheit) schafft Klarheit."
+      ],
+      "tabellen": [
+        "verb-madi-nasara-passiv-matrix",
+        "verb-mudari-nasara-passiv-matrix"
+      ],
+      "siehe": [
+        "maluum",
+        "madi",
+        "mudari"
+      ]
+    },
+    "mudariMarfu": {
+      "titel": "Der Mudariʿ im Grundzustand (Marfuʿ)",
+      "ar": "المُضَارِع المَرْفُوع",
+      "umschrift": "al-muḍāriʿ al-marfūʿ",
+      "erklaerung": [
+        "Marfuʿ ist der unmarkierte Grundzustand des Muḍāriʿ: Solange kein besonderer Auslöser vorangeht, endet die Grundform auf ein Damma (ـُ) — يَنْصُرُ, \"er hilft\". Dieser Zustand entspricht dem Rafʿ-Status beim Nomen und ist ebenso der \"Normalfall ohne Markierung\".",
+        "Weil Marfuʿ der Standardfall ist, wird er im Korpus nicht eigens getaggt — nur Mansūb (durch ein MOOD-Tag SUBJ) und Majzūm (durch ein MOOD-Tag JUS) sind explizit markiert. Das Fehlen jeder Modus-Markierung ist also selbst der Beleg für Marfuʿ.",
+        "Bei den Personen mit Plural-Endung auf و oder Dual-Endung erscheint im Marfuʿ zusätzlich ein Nūn (يَنْصُرُونَ, \"sie helfen\") — dieses Nūn fällt in Mansūb und Majzūm gerade weg."
+      ],
+      "erkennung": [
+        "Grundform endet auf Damma (ـُ), ohne vorangehenden Auslöser-Partikel.",
+        "Bei Plural/Dual erscheint ein zusätzliches Nūn am Wortende (ـُونَ / ـَانِ), das in den beiden anderen Modi entfällt.",
+        "Kein MOOD-Tag im Korpus — die Abwesenheit jeder Modus-Markierung zeigt den Grundzustand an."
+      ],
+      "belege": [
+        {
+          "sure": 1,
+          "vers": 5,
+          "wort": 2,
+          "zeigt": "نَعْبُدُ (\"wir dienen an\") — Grundzustand ohne vorangehenden Auslöser, Endung auf Damma.",
+          "warum": "Segment: mood:null, tense:imperfect, und der Rohtag trägt kein MOOD-Feld."
+        },
+        {
+          "sure": 2,
+          "vers": 268,
+          "wort": 2,
+          "zeigt": "يَعِدُكُمُ (\"er verspricht euch\") — ebenfalls Grundzustand, Endung auf Damma.",
+          "warum": "Segment: mood:null, tense:imperfect, kein MOOD-Feld im Rohtag."
+        }
+      ],
+      "lernen": [
+        "Lerne Marfuʿ als den Fall, den du bekommst, wenn NICHTS davorsteht — konzentriere dich beim Üben auf das Erkennen der beiden anderen (markierten) Zustände, Marfuʿ ist der Rest.",
+        "Vergleiche an einem Verb alle drei Enden hintereinander: يَنْصُرُ (Marfuʿ) – يَنْصُرَ (Mansūb) – يَنْصُرْ (Majzūm) — sprich sie laut nacheinander."
+      ],
+      "tabellen": [
+        "verb-mudari-nasara-aktiv-matrix"
+      ],
+      "siehe": [
+        "mudariMansub",
+        "mudariMajzum"
+      ]
+    },
+    "mudariMansub": {
+      "titel": "Der Mudariʿ in der leichten Form (Mansub)",
+      "ar": "المُضَارِع المَنْصُوب",
+      "umschrift": "al-muḍāriʿ al-manṣūb",
+      "erklaerung": [
+        "Bestimmte Partikeln verwandeln das Damma am Ende des Muḍāriʿ in ein Fatha — die \"leichte Form\", Mansūb. Auslöser sind vor allem أَنْ (\"dass\"), لَنْ (verneint die Zukunft, \"wird nicht\"), لِ/كَي/لِكَي (\"damit\") und حَتَّى (\"bis\"). Aus يَنْصُرُ wird nach أَنْ die Form أَنْ يَنْصُرَ.",
+        "Bei Plural- und Dual-Formen fällt im Mansūb zusätzlich das abschließende Nūn weg, das im Grundzustand (Marfuʿ) stand — aus يَنْصُرُونَ wird لَنْ يَنْصُرُوا۟.",
+        "Semantisch macht لَنْ eine feste Zukunftsverneinung (\"wird ganz sicher nicht\"), während أَنْ meist einen Nebensatz einleitet, der eine Absicht oder ein noch nicht eingetretenes Ereignis ausdrückt."
+      ],
+      "erkennung": [
+        "Auslöser أَنْ / لَنْ / لِ / كَي / حَتَّى unmittelbar vor dem Muḍāriʿ.",
+        "Endvokal wechselt von Damma zu Fatha (ـُ → ـَ).",
+        "Bei Plural/Dual entfällt das abschließende Nūn."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 24,
+          "wort": 5,
+          "zeigt": "وَلَن تَفْعَلُوا۟ (\"und ihr werdet es nie tun\") — Mansūb nach لَنْ, das Nūn der Pluralform ist bereits gefallen.",
+          "warum": "Rohtag des Segments enthält MOOD:SUBJ; Segment: tense:imperfect, person:2, number:pl."
+        },
+        {
+          "sure": 2,
+          "vers": 143,
+          "wort": 20,
+          "zeigt": "لِنَعْلَمَ (\"damit Wir wissen\") — Mansūb nach لِ (\"damit\").",
+          "warum": "Rohtag des Segments enthält MOOD:SUBJ; Segment: tense:imperfect, person:1, number:pl, root:علم."
+        }
+      ],
+      "lernen": [
+        "Lerne die vier häufigsten Auslöser أَنْ / لَنْ / لِ / حَتَّى als feste Liste, am besten mit je einem Koranbeispiel verknüpft statt isoliert.",
+        "Übe gezielt an لَنْ, weil es sowohl den Modus (Mansūb) als auch die Bedeutung (Zukunftsverneinung) auf einmal transportiert — beides zusammen einprägen.",
+        "Kontrolliere bei Plural-Verben immer zuerst das Nūn: fehlt es, ist das ein starkes Indiz für Mansūb oder Majzūm statt Marfuʿ."
+      ],
+      "tabellen": [],
+      "siehe": [
+        "mudariMarfu",
+        "mudariMajzum"
+      ]
+    },
+    "mudariMajzum": {
+      "titel": "Der Mudariʿ in der leichtesten Form (Majzum)",
+      "ar": "المُضَارِع المَجْزُوم",
+      "umschrift": "al-muḍāriʿ al-majzūm",
+      "erklaerung": [
+        "Majzūm geht noch einen Schritt über Mansūb hinaus: Statt eines Fatha steht am Verbende gar kein Vokal mehr, sondern ein Sukun. Wichtigste Auslöser sind لَمْ und إِنْ (\"falls\"). Besonders bemerkenswert: لَمْ verneint die Vergangenheit, obwohl die Verbform äußerlich wie Gegenwart aussieht — لَمْ يَلِدْ bedeutet \"Er hat nicht gezeugt\", nicht \"Er zeugt nicht\".",
+        "Majzūm ist zugleich der Baustein für Befehl (Amr) und Verbot (Nahy): Beide gehen von der Majzūm-Form der 2. Person aus — beim Verbot bleibt die Vorsilbe تَ erhalten und لَا tritt davor, beim Befehl fällt die Vorsilbe weg und ein Hilfs-Hamza kann nötig werden.",
+        "Auch hier fällt bei Plural/Dual-Formen das abschließende Nūn weg, genau wie im Mansūb."
+      ],
+      "erkennung": [
+        "Auslöser لَمْ oder إِنْ unmittelbar vor dem Muḍāriʿ.",
+        "Verbende trägt Sukun statt Damma oder Fatha.",
+        "لَمْ + Majzūm verneint grammatisch die Vergangenheit, obwohl die Form wie Gegenwart aussieht."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 24,
+          "wort": 3,
+          "zeigt": "فَإِن لَّمْ تَفْعَلُوا۟ (\"Und wenn ihr es nicht tut\") — Majzūm nach لَمْ, Endung auf Sukun.",
+          "warum": "Segment: mood:juss, tense:imperfect, person:2, number:pl; Rohtag enthält MOOD:JUS."
+        },
+        {
+          "sure": 112,
+          "vers": 3,
+          "wort": 2,
+          "zeigt": "لَمْ يَلِدْ (\"Er hat nicht gezeugt\") — Majzūm nach لَمْ; die Form sieht wie Gegenwart aus, meint aber Vergangenheit.",
+          "warum": "Segment: mood:juss, tense:imperfect, verbForm:1; Rohtag enthält MOOD:JUS."
+        }
+      ],
+      "lernen": [
+        "Lerne لَمْ + Majzūm bewusst als Ausnahme: die auffälligste Falle beim Übersetzen ist, die Form fälschlich als Gegenwart zu lesen.",
+        "Stelle Amr, Nahy und Majzūm nebeneinander (ٱنْصُرْ / لَا تَنْصُرْ / لَمْ تَنْصُرْ) und benenne den gemeinsamen Nenner: Sukun am Ende.",
+        "Übe mit der Nahy-Tabelle: decke die Endung ab und ergänze sie selbst, bevor du die vollständige Form nachschlägst."
+      ],
+      "tabellen": [
+        "nahy-nasara-matrix"
+      ],
+      "siehe": [
+        "mudariMarfu",
+        "mudariMansub",
+        "nahy"
+      ]
+    },
+    "form1": {
+      "titel": "Verbform I – der Grundstamm",
+      "ar": "الثُّلَاثِي المُجَرَّد",
+      "umschrift": "ath-thulāthī al-mujarrad",
+      "erklaerung": [
+        "Verbform I, der \"nackte Dreikonsonanten-Stamm\" (Thulāthī Mujarrad, im Handout auch \"kleine Familie\" genannt), besteht aus der reinen Wurzel ohne jede Zutat: kein verdoppelter Buchstabe, kein zusätzliches Alif oder Hamza. Sie ist die Grundbedeutung, aus der alle anderen neun Muster (Formen II–X) durch feste Erweiterungen abgeleitet werden.",
+        "Innerhalb der Form I unterscheiden sich Verben noch einmal durch den mittleren Stammvokal in Vergangenheit und Gegenwart — sechs Untergruppen (Bāb): a-a (فَتَحَ/يَفْتَحُ), a-i (ضَرَبَ/يَضْرِبُ), a-u (نَصَرَ/يَنْصُرُ), i-a (سَمِعَ/يَسْمَعُ), i-i (حَسِبَ/يَحْسِبُ) und u-u (كَرُمَ/يَكْرُمُ). Dieser mittlere Vokal ist nicht vorhersagbar und muss mit jedem Verb einzeln gelernt werden.",
+        "Weil im Korpus jede erweiterte Form durch einen Klammerwert (II)–(X) markiert wird, gilt die Konvention: Fehlt diese Markierung, handelt es sich um Form I."
+      ],
+      "erkennung": [
+        "Kein zusätzlicher Buchstabe, kein verdoppelter Buchstabe im Verbstamm — nur die reinen Wurzelkonsonanten mit Vokalen.",
+        "Im Korpus fehlt jede (I)-(X)-Klammermarkierung; die Abwesenheit dieser Markierung IST die Kennzeichnung von Form I.",
+        "Der mittlere Vokal in Vergangenheit/Gegenwart variiert von Verb zu Verb (sechs mögliche Muster) und muss einzeln gelernt werden."
+      ],
+      "belege": [
+        {
+          "sure": 3,
+          "vers": 123,
+          "wort": 2,
+          "zeigt": "نَصَرَكُمُ (\"Er half euch\") — reine Grundform der Wurzel نصر ohne jede Erweiterung.",
+          "warum": "Segment: verbForm:1 (per Konvention, kein Klammerwert im Rohtag), tense:perfect."
+        },
+        {
+          "sure": 7,
+          "vers": 157,
+          "wort": 35,
+          "zeigt": "وَنَصَرُوهُ (\"und ihm halfen\") — dieselbe Grundform, 3. Person Plural.",
+          "warum": "Segment: verbForm:1 (kein Klammerwert), tense:perfect."
+        }
+      ],
+      "lernen": [
+        "Lerne zu jedem neu begegnenden Verb sofort den mittleren Vokal in Vergangenheit UND Gegenwart mit — Wörterbücher geben deshalb immer beide Formen an.",
+        "Übe die sechs Untergruppen (a-a, a-i, a-u, i-a, i-i, u-u) an ihren Musterverben, bis die Zuordnung automatisch geht.",
+        "Behalte im Kopf: Form I ist der Normalfall — wer eine erweiterte Form (II–X) erkennen will, muss zuerst wissen, wie die \"leere\" Grundform aussieht."
+      ],
+      "tabellen": [
+        "verb-madi-nasara-aktiv-matrix",
+        "bab-fataha-mahmooz-qaraa",
+        "bab-samia-mahmooz-amina"
+      ],
+      "siehe": [
+        "form2",
+        "form4",
+        "form10",
+        "jidhr"
+      ]
+    },
+    "form2": {
+      "titel": "Verbform II – der verdoppelte Stamm",
+      "ar": "بَاب فَعَّلَ",
+      "umschrift": "bāb faʿʿala",
+      "erklaerung": [
+        "Form II verdoppelt den mittleren Wurzelbuchstaben durch ein Schadda. Die Bedeutung wird dadurch häufig verstärkt, wiederholt oder kausativ: aus عَلِمَ (\"er wusste\") wird عَلَّمَ (\"er lehrte\", Wissen intensiv weitergeben); aus قَتَلَ (\"töten\") wird قَتَّلَ (\"massakrieren\", Übertreibung/Hyperbel).",
+        "Diese Form ist die häufigste der erweiterten Muster im Koran und liefert unter anderem viele Kausativverben mit Objekt."
+      ],
+      "erkennung": [
+        "Erkennungszeichen ist das Schadda auf dem mittleren Wurzelbuchstaben (فَعَّلَ statt فَعَلَ).",
+        "Bedeutung meist verstärkend, wiederholend oder kausativ gegenüber der Grundform.",
+        "Im Korpus mit dem Klammerwert (II) markiert."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 31,
+          "wort": 1,
+          "zeigt": "وَعَلَّمَ (\"und Er lehrte\") — Schadda auf dem mittleren Buchstaben ل, Bedeutung \"lehren\" statt \"wissen\".",
+          "warum": "Segment: verbForm:2 (Rohtag (II)), tense:perfect, root:علم."
+        },
+        {
+          "sure": 2,
+          "vers": 23,
+          "wort": 6,
+          "zeigt": "نَزَّلْنَا (\"Wir haben herabgesandt\") — Schadda auf ز, Bedeutung intensiv/wiederholt \"herabsenden\".",
+          "warum": "Segment: verbForm:2 (Rohtag (II)), tense:perfect, root:نزل."
+        }
+      ],
+      "lernen": [
+        "Präge dir das Muster فَعَّلَ optisch ein: das mittlere Schadda ist der einzige, aber zuverlässige Unterschied zur Grundform.",
+        "Bilde dir zu jedem neuen Form-II-Verb bewusst das Grundform-Gegenstück (علم/علّم), um die Bedeutungsverschiebung zu verankern."
+      ],
+      "tabellen": [],
+      "siehe": [
+        "form1",
+        "form5",
+        "jidhr"
+      ]
+    },
+    "form3": {
+      "titel": "Verbform III – der Mitmach-Stamm",
+      "ar": "بَاب فَاعَلَ",
+      "umschrift": "bāb fāʿala",
+      "erklaerung": [
+        "Form III schiebt ein langes Alif nach dem ersten Wurzelbuchstaben ein (فَاعَلَ) und drückt meist aus, etwas gemeinsam mit jemandem oder gegen jemanden zu tun: جَاهَدَ, \"sich (gemeinsam mit anderen oder gegen einen Widerstand) bemühen, kämpfen\". Die Handlung bezieht typischerweise eine zweite Partei mit ein.",
+        "Semantisch liegt der Unterschied zur Grundform oft genau in dieser Beteiligung eines Gegenübers — \"etwas an jemandem tun\" statt \"etwas tun\"."
+      ],
+      "erkennung": [
+        "Erkennungszeichen ist das lange Alif nach dem ersten Wurzelbuchstaben (فَاعَلَ statt فَعَلَ).",
+        "Bedeutung meist \"etwas gemeinsam mit / gegen jemanden tun\".",
+        "Im Korpus mit dem Klammerwert (III) markiert."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 51,
+          "wort": 2,
+          "zeigt": "وَٰعَدْنَا (\"Wir vereinbarten/versprachen\") — langes Alif nach و, gegenseitige Handlung (eine Verabredung mit Musa).",
+          "warum": "Segment: verbForm:3 (Rohtag (III)), tense:perfect, root:وعد."
+        },
+        {
+          "sure": 2,
+          "vers": 100,
+          "wort": 2,
+          "zeigt": "عَٰهَدُوا۟ (\"sie schlossen einen Bund\") — langes Alif nach ع, gegenseitige Verpflichtung.",
+          "warum": "Segment: verbForm:3 (Rohtag (III)), tense:perfect, root:عهد."
+        }
+      ],
+      "lernen": [
+        "Verankere Form III über die Bedeutung \"mit jemandem/gegen jemanden\" — das hilft mehr als das reine Auswendiglernen des Musters.",
+        "Vergleiche قَتَلَ (töten, I) mit قَاتَلَ (kämpfen gegen, III) — derselbe Wurzelkern, aber die zweite Partei kommt erst mit dem Alif hinzu."
+      ],
+      "tabellen": [],
+      "siehe": [
+        "form1",
+        "form6"
+      ]
+    },
+    "form4": {
+      "titel": "Verbform IV – der bewirkende Stamm",
+      "ar": "بَاب أَفْعَلَ",
+      "umschrift": "bāb afʿala",
+      "erklaerung": [
+        "Form IV setzt ein Hamza an den Anfang des Verbs (أَفْعَلَ) und drückt meist aus, etwas direkt und unmittelbar zu bewirken — häufig kausativ: أَنْزَلَ, \"herabsenden\" (jemanden dazu bringen herabzukommen), von نَزَلَ (\"herabkommen\"). Diese Form ist im Koran nach Form I die zweithäufigste erweiterte Form.",
+        "Weil das zusätzliche Hamza am Wortanfang steht, verschmilzt es bei manchen Verben mit einem Wurzel-Hamza oder einem schwachen ersten Radikal — siehe die Einträge zu Mahmūz und Takhfīf für diese Sonderfälle."
+      ],
+      "erkennung": [
+        "Erkennungszeichen ist das zusätzliche Hamza am Wortanfang (أَفْعَلَ statt فَعَلَ).",
+        "Bedeutung meist kausativ: \"bewirken, dass …\" oder \"unmittelbar/direkt tun\".",
+        "Im Korpus mit dem Klammerwert (IV) markiert; sehr häufig auch im Passiv belegt."
+      ],
+      "belege": [
+        {
+          "sure": 1,
+          "vers": 7,
+          "wort": 3,
+          "zeigt": "أَنْعَمْتَ (\"Du hast begünstigt\") — Hamza am Anfang, kausative Bedeutung \"Gunst erweisen\".",
+          "warum": "Segment: verbForm:4 (Rohtag (IV)), tense:perfect, root:نعم."
+        },
+        {
+          "sure": 2,
+          "vers": 4,
+          "wort": 4,
+          "zeigt": "أُنزِلَ (\"herabgesandt wurde\") — Form IV im Passiv: das Hamza am Anfang bleibt auch in der passiven Form erhalten.",
+          "warum": "Segment: verbForm:4 (Rohtag (IV)), tense:perfect, voice:passive, root:نزل."
+        }
+      ],
+      "lernen": [
+        "Lerne Form IV über bekannte Paare wie نَزَلَ/أَنْزَلَ (herabkommen/herabsenden) — die kausative Logik \"X bewirkt, dass Y geschieht\" merkt man sich über die Bedeutung leichter als über die reine Form.",
+        "Achte darauf, dass das Anfangs-Hamza auch im Muḍāriʿ erhalten bleibt (يُنْزِلُ), anders als bei manchen anderen Formen."
+      ],
+      "tabellen": [],
+      "siehe": [
+        "form1",
+        "mahmuz",
+        "takhfif"
+      ]
+    },
+    "form5": {
+      "titel": "Verbform V – der reflexive Stamm zu II",
+      "ar": "بَاب تَفَعَّلَ",
+      "umschrift": "bāb tafaʿʿala",
+      "erklaerung": [
+        "Form V stellt eine Vorsilbe تَ vor das Muster von Form II und macht die verstärkte Handlung reflexiv oder allmählich: aus عَلَّمَ (\"lehren\", II) wird تَعَلَّمَ (\"lernen\", \"sich selbst lehren lassen\", V). Häufig drückt Form V zudem aus, dass etwas mit Mühe oder schrittweise geschieht.",
+        "Ein grammatisches Kennzeichen: Verben der Form V sind meist Lāzim (intransitiv, kein direktes Objekt) und bilden kein eigenes Passiv."
+      ],
+      "erkennung": [
+        "Erkennungszeichen ist die Vorsilbe تَ vor dem verdoppelten Muster (تَفَعَّلَ statt فَعَّلَ).",
+        "Bedeutung meist reflexiv zu Form II oder \"sich um etwas bemühen, allmählich geschehen lassen\".",
+        "Im Korpus mit dem Klammerwert (V) markiert."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 37,
+          "wort": 1,
+          "zeigt": "فَتَلَقَّىٰٓ (\"da empfing er/nahm er an\") — Vorsilbe تَ vor dem verdoppelten Muster, reflexive Nuance (\"bei sich aufnehmen\").",
+          "warum": "Segment: verbForm:5 (Rohtag (V)), tense:perfect, root:لقي."
+        },
+        {
+          "sure": 2,
+          "vers": 64,
+          "wort": 2,
+          "zeigt": "تَوَلَّيْتُم (\"ihr habt euch abgewandt\") — Vorsilbe تَ, reflexive Bedeutung \"sich selbst abwenden\".",
+          "warum": "Segment: verbForm:5 (Rohtag (V)), tense:perfect, root:ولي."
+        }
+      ],
+      "lernen": [
+        "Vergleiche Form II und Form V direkt am Wortpaar (عَلَّمَ/تَعَلَّمَ, lehren/lernen) — die Vorsilbe تَ als \"Reflexiv-Signal\" merkt man sich am besten über solche Paare.",
+        "Merke: Form-V-Verben brauchen in der Regel kein direktes Objekt und kein eigenes Passiv."
+      ],
+      "tabellen": [],
+      "siehe": [
+        "form2"
+      ]
+    },
+    "form6": {
+      "titel": "Verbform VI – der wechselseitige Stamm",
+      "ar": "بَاب تَفَاعَلَ",
+      "umschrift": "bāb tafāʿala",
+      "erklaerung": [
+        "Form VI stellt eine Vorsilbe تَ vor das Muster von Form III und drückt meist eine wechselseitige Handlung innerhalb einer Gruppe aus — beide (oder alle) Beteiligten tun dasselbe zueinander: تَسَاءَلَ, \"sich gegenseitig fragen\". Sie kann auch bedeuten, etwas nur vorzutäuschen (\"so tun, als ob\").",
+        "Wie bei Form V liegt der Kern in der reflexiven/gegenseitigen Vorsilbe تَ — hier allerdings auf dem \"Mitmach\"-Muster von Form III statt auf dem verdoppelten Muster von Form II."
+      ],
+      "erkennung": [
+        "Erkennungszeichen ist die Vorsilbe تَ vor dem Alif-Muster (تَفَاعَلَ statt فَاعَلَ).",
+        "Bedeutung meist wechselseitig (\"einander etwas tun\") oder vorgetäuscht.",
+        "Im Korpus mit dem Klammerwert (VI) markiert."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 70,
+          "wort": 11,
+          "zeigt": "تَشَٰبَهَ (\"es ist uns ähnlich/gleich erschienen\") — wechselseitige Ähnlichkeit zwischen den Kühen im Vers.",
+          "warum": "Segment: verbForm:6 (Rohtag (VI)), tense:perfect, root:شبه."
+        },
+        {
+          "sure": 2,
+          "vers": 118,
+          "wort": 18,
+          "zeigt": "تَشَٰبَهَتْ (\"sie sind einander ähnlich\") — dieselbe Form, 3. Person feminin Singular (bezogen auf \"die Herzen\").",
+          "warum": "Segment: verbForm:6 (Rohtag (VI)), tense:perfect, root:شبه."
+        }
+      ],
+      "lernen": [
+        "Verankere Form VI über das Wort تَسَاءَلَ (\"sich gegenseitig fragen\") als Ankerbeispiel — daraus lässt sich die Grundidee \"wechselseitig\" gut ableiten.",
+        "Vergleiche Form III (فَاعَلَ, \"etwas mit jemandem tun\") und Form VI (تَفَاعَلَ, \"es sich gegenseitig antun\") als Paar."
+      ],
+      "tabellen": [],
+      "siehe": [
+        "form3"
+      ]
+    },
+    "form7": {
+      "titel": "Verbform VII – der passivartige Stamm",
+      "ar": "بَاب انْفَعَلَ",
+      "umschrift": "bāb infaʿala",
+      "erklaerung": [
+        "Form VII setzt die Vorsilbe اِنْ vor die Grundform und drückt meist eine Zustandsveränderung aus, die von selbst geschieht — inhaltlich oft passivähnlich, ohne grammatisch echtes Passiv zu sein: اِنْكَسَرَ, \"zerbrechen (von selbst)\". Ein wichtiges Kennzeichen: Verben dieser Form sind grundsätzlich intransitiv und bilden kein eigenes echtes Passiv, werden aber im Deutschen oft passivisch übersetzt.",
+        "Diese Form ist im Koran seltener als die Formen II–V, kommt aber zuverlässig bei Beschreibungen von Naturvorgängen und plötzlichen Zustandsänderungen vor."
+      ],
+      "erkennung": [
+        "Erkennungszeichen ist die Vorsilbe اِنْ (اِنْفَعَلَ statt فَعَلَ).",
+        "Bedeutung meist \"von selbst geschehen, sich zu etwas verändern\" — inhaltlich passivartig, ohne eigenes grammatisches Passiv.",
+        "Im Korpus mit dem Klammerwert (VII) markiert."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 60,
+          "wort": 9,
+          "zeigt": "فَٱنفَجَرَتْ (\"da brach hervor / entsprang\") — Vorsilbe اِن, das Wasser bricht von selbst aus dem Stein hervor.",
+          "warum": "Segment: verbForm:7 (Rohtag (VII)), tense:perfect, voice:null (kein eigenes Passiv), root:فجر."
+        },
+        {
+          "sure": 3,
+          "vers": 144,
+          "wort": 14,
+          "zeigt": "ٱنقَلَبْتُمْ (\"werdet ihr umkehren\") — Vorsilbe اِن, Zustandsänderung \"sich umkehren, umschwenken\".",
+          "warum": "Segment: verbForm:7 (Rohtag (VII)), tense:perfect, root:قلب."
+        }
+      ],
+      "lernen": [
+        "Merke dir das Ankerbeispiel اِنْكَسَرَ (\"zerbrechen\") und übersetze es bewusst nicht wörtlich passivisch, sondern als \"von selbst geschehen\".",
+        "Kontrolliere bei Form-VII-Verben, dass kein Passiv-Vokalmuster vorliegt — die Form klingt im Deutschen passivisch, ist es grammatisch aber nicht."
+      ],
+      "tabellen": [],
+      "siehe": [
+        "majhul"
+      ]
+    },
+    "form8": {
+      "titel": "Verbform VIII – der reflexive/gegenseitige Stamm",
+      "ar": "بَاب افْتَعَلَ",
+      "umschrift": "bāb iftaʿala",
+      "erklaerung": [
+        "Form VIII fügt ein تَ nach dem ersten Wurzelbuchstaben ein (اِفْتَعَلَ) und drückt meist eine reflexive, gegenseitige oder im eigenen Interesse liegende Handlung aus: اِجْتَمَعَ, \"sich versammeln\" (die Gruppe versammelt sich selbst). Anders als bei Form V/VI steht das reflexive تَ hier mitten im Wort statt davor.",
+        "Weil das eingeschobene تَ direkt neben dem ersten Wurzelbuchstaben steht, verschmilzt es bei bestimmten Anfangsbuchstaben (z. B. bei د/ذ/ز/س/ص/ض/ط/ظ/ث) mit diesem zu einem einzigen doppelten Laut (Idghām) — sichtbar am Schadda direkt nach dem ersten Wurzelbuchstaben."
+      ],
+      "erkennung": [
+        "Erkennungszeichen ist das eingeschobene تَ nach dem ersten Wurzelbuchstaben (اِفْتَعَلَ statt فَعَلَ), oft am Anfangs-Hamza اِ erkennbar.",
+        "Bedeutung meist reflexiv oder \"im eigenen Interesse\" (etwas für sich selbst tun).",
+        "Im Korpus mit dem Klammerwert (VIII) markiert."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 16,
+          "wort": 3,
+          "zeigt": "ٱشْتَرَوُا۟ (\"sie haben erkauft/eingetauscht\") — eingeschobenes تَ nach ش, reflexive Nuance (\"für sich selbst eintauschen\").",
+          "warum": "Segment: verbForm:8 (Rohtag (VIII)), tense:perfect, root:شري."
+        },
+        {
+          "sure": 2,
+          "vers": 29,
+          "wort": 10,
+          "zeigt": "ٱسْتَوَىٰٓ (\"Er wandte sich zu / erhob Sich\") — eingeschobenes تَ nach س.",
+          "warum": "Segment: verbForm:8 (Rohtag (VIII)), tense:perfect, root:سوي."
+        }
+      ],
+      "lernen": [
+        "Verankere Form VIII über اِجْتَمَعَ (\"sich versammeln\") als Ankerwort — die reflexive Grundidee überträgt sich gut auf andere Form-VIII-Verben.",
+        "Achte bei Verben mit Anfangsbuchstabe aus der Gruppe د/ذ/ز/س/ص/ض/ط/ظ/ث auf ein Schadda direkt am Wortanfang — das ist das eingeschobene تَ, das sich mit dem Wurzelbuchstaben verschmolzen hat."
+      ],
+      "tabellen": [],
+      "siehe": [
+        "form1",
+        "idgham"
+      ]
+    },
+    "form9": {
+      "titel": "Verbform IX – der Farben-und-Makel-Stamm",
+      "ar": "بَاب افْعَلَّ",
+      "umschrift": "bāb ifʿalla",
+      "erklaerung": [
+        "Form IX verdoppelt den letzten Wurzelbuchstaben (اِفْعَلَّ) und ist auf einen sehr engen Bedeutungsbereich beschränkt: Farben und körperliche Makel annehmen, meist als vorübergehender Zustandswechsel — اِسْوَدَّ, \"schwarz werden\", اِبْيَضَّ, \"weiß/hell werden\". Wegen dieser Verdopplung des letzten Buchstabens folgt Form IX in ihrer Konjugation denselben Regeln wie ein Muḍāʿaf-Verb.",
+        "Diese Form ist im Koran selten, aber an prägnanten Stellen belegt, etwa bei der Beschreibung von Gesichtern, die am Tag der Auferstehung schwarz oder weiß werden."
+      ],
+      "erkennung": [
+        "Erkennungszeichen ist die Verdopplung des letzten Wurzelbuchstabens am Wortende (اِفْعَلَّ statt فَعَلَ).",
+        "Bedeutung fast ausschließlich auf Farben und körperliche Makel beschränkt.",
+        "Im Korpus mit dem Klammerwert (IX) markiert; sehr selten belegt."
+      ],
+      "belege": [
+        {
+          "sure": 3,
+          "vers": 106,
+          "wort": 8,
+          "zeigt": "ٱسْوَدَّتْ (\"werden schwarz\") — Verdopplung des letzten Buchstabens د, Farbwechsel des Gesichts.",
+          "warum": "Segment: verbForm:9 (Rohtag (IX)), tense:perfect, root:سود."
+        },
+        {
+          "sure": 3,
+          "vers": 107,
+          "wort": 3,
+          "zeigt": "ٱبْيَضَّتْ (\"werden weiß/hell\") — Verdopplung des letzten Buchstabens ض, Gegenstück im selben Versabschnitt.",
+          "warum": "Segment: verbForm:9 (Rohtag (IX)), tense:perfect, root:بيض."
+        }
+      ],
+      "lernen": [
+        "Lerne Form IX nicht über ein grammatisches Muster, sondern über die inhaltliche Eselsbrücke \"Farben und Makel\" — der enge Bedeutungsbereich ist das zuverlässigste Erkennungsmerkmal.",
+        "Vergleiche die beiden Koranbelege ٱسْوَدَّتْ/ٱبْيَضَّتْ direkt nebeneinander — sie stehen im Koran unmittelbar hintereinander als Kontrastpaar."
+      ],
+      "tabellen": [],
+      "siehe": [
+        "mudaaf"
+      ]
+    },
+    "form10": {
+      "titel": "Verbform X – der erbittende Stamm",
+      "ar": "بَاب اسْتَفْعَلَ",
+      "umschrift": "bāb istafʿala",
+      "erklaerung": [
+        "Form X stellt die Vorsilbe اِسْتَ vor die Grundform (اِسْتَفْعَلَ) und drückt meist aus, um etwas zu bitten, etwas zu erbitten oder zu suchen: اِسْتَغْفَرَ, \"um Vergebung bitten\" (von غَفَرَ, \"vergeben\"). Sie kann auch bedeuten, etwas als eine bestimmte Eigenschaft zu betrachten oder für sich zu beanspruchen.",
+        "Im Koran ist diese Form sehr präsent, unter anderem in der Fatiha selbst (نَسْتَعِينُ, \"wir bitten um Hilfe\") — dort direkt neben einem Form-I-Verb (نَعْبُدُ), was den Bedeutungsunterschied zwischen Grundform und Form X unmittelbar sichtbar macht."
+      ],
+      "erkennung": [
+        "Erkennungszeichen ist die Vorsilbe اِسْتَ am Wortanfang (اِسْتَفْعَلَ statt فَعَلَ).",
+        "Bedeutung meist \"um etwas bitten, etwas erbitten/suchen\" oder \"etwas als … ansehen\".",
+        "Im Korpus mit dem Klammerwert (X) markiert."
+      ],
+      "belege": [
+        {
+          "sure": 1,
+          "vers": 5,
+          "wort": 4,
+          "zeigt": "نَسْتَعِينُ (\"wir bitten um Hilfe\") — Vorsilbe اِسْتَ, Bedeutung \"um Hilfe/Beistand bitten\".",
+          "warum": "Segment: verbForm:10 (Rohtag (X)), tense:imperfect, root:عون."
+        },
+        {
+          "sure": 2,
+          "vers": 34,
+          "wort": 10,
+          "zeigt": "وَٱسْتَكْبَرَ (\"und er verhielt sich hochmütig\") — Vorsilbe اِسْتَ, Bedeutung \"sich selbst als groß/erhaben ansehen\" (Iblis).",
+          "warum": "Segment: verbForm:10 (Rohtag (X)), tense:perfect, root:كبر."
+        }
+      ],
+      "lernen": [
+        "Nutze das Fatiha-Paar نَعْبُدُ/نَسْتَعِينُ als Ankerbeispiel: Form I = die Handlung direkt tun, Form X = um etwas bitten/es erbitten.",
+        "Präge dir اِسْتَغْفَرَ (\"um Vergebung bitten\") als zweites Ankerwort ein — von غَفَرَ (vergeben) über die Vorsilbe اِسْتَ zur Bitte um Vergebung."
+      ],
+      "tabellen": [],
+      "siehe": [
+        "form1",
+        "form4"
+      ]
+    },
+    "ismFail": {
+      "titel": "Das Partizip Aktiv (Ism al-Faʿil)",
+      "ar": "اِسْم الفَاعِل",
+      "umschrift": "ism al-fāʿil",
+      "erklaerung": [
+        "Ism al-Fāʿil beschreibt den Handelnden selbst — \"der Machende\", \"einer der [Handlung] tut\". Von عَلَّمَ (\"lehren\") abgeleitet, ergibt sich مُعَلِّم, \"ein Lehrer\" (einer der lehrt/gelehrt hat). Vom Grundstamm نَصَرَ leitet sich نَاصِر ab, \"ein Helfer\". Jede der zehn Verbformen hat ihr eigenes, aber vorhersagbares Partizip-Muster.",
+        "Grammatisch verhält sich das Ism al-Fāʿil wie ein Adjektiv/Nomen: Es trägt Kasus, Genus und Numerus wie jedes andere Ism, kann aber — anders als ein reines Adjektiv — selbst wieder ein Objekt regieren, wenn das zugrundeliegende Verb transitiv ist."
+      ],
+      "erkennung": [
+        "Beim Grundstamm (Form I) erkennbar am Muster فَاعِل (langes Alif nach dem ersten Wurzelbuchstaben, Kasra unter dem zweiten): نَاصِر، عَالِم، قَائِل.",
+        "Bei den erweiterten Formen (II–X) meist erkennbar an einer Vorsilbe مُ- mit Kasra auf dem vorletzten Buchstaben: مُعَلِّم، مُؤْمِن، مُسْتَقِيم.",
+        "Bezeichnet grundsätzlich den Träger/Ausführenden der Handlung, nicht die Handlung selbst (das wäre der Maṣdar)."
+      ],
+      "belege": [
+        {
+          "sure": 1,
+          "vers": 4,
+          "wort": 1,
+          "zeigt": "مَٰلِكِ (\"Herrscher/Eigner\") — Partizip Aktiv von مَلَكَ, \"besitzen/herrschen\": der Herrschende.",
+          "warum": "Segment: pos:N, derivation:activeParticiple, voice:active, root:ملك."
+        },
+        {
+          "sure": 2,
+          "vers": 5,
+          "wort": 8,
+          "zeigt": "ٱلْمُفْلِحُونَ (\"die Erfolgreichen\") — Partizip Aktiv von Form IV أَفْلَحَ, erkennbar an der Vorsilbe مُ-.",
+          "warum": "Segment: pos:N, derivation:activeParticiple, verbForm:4, root:فلح."
+        }
+      ],
+      "lernen": [
+        "Lerne zuerst das Grundmuster فَاعِل an mehreren Beispielen (نَاصِر، عَالِم، قَائِل), bevor du die Muster der erweiterten Formen angehst.",
+        "Bilde zu jedem gelernten Verb bewusst sein Partizip Aktiv — das trainiert das Muster schneller als isoliertes Auswendiglernen einzelner Partizipien.",
+        "Achte auf den Bedeutungsunterschied zwischen مَالِك (Ism al-Fāʿil, \"der Besitzende/Herrscher\") und einem bloßen Adjektiv — das Partizip bleibt mit der Verbhandlung verbunden."
+      ],
+      "tabellen": [],
+      "siehe": [
+        "ismMaful",
+        "masdar",
+        "fiil"
+      ]
+    },
+    "ismMaful": {
+      "titel": "Das Partizip Passiv (Ism al-Mafʿul)",
+      "ar": "اِسْم المَفْعُول",
+      "umschrift": "ism al-mafʿūl",
+      "erklaerung": [
+        "Ism al-Mafʿūl beschreibt denjenigen oder dasjenige, an dem die Handlung vollzogen wird — \"der Betroffene\", \"das, was getan wurde\". Von عَلَّمَ (\"lehren\") abgeleitet, ergibt sich مُعَلَّم, \"ein Schüler\" (einer dem gelehrt wurde). Vom Grundstamm نَصَرَ leitet sich مَنْصُور ab, \"einer dem geholfen wurde\".",
+        "Beim Grundstamm folgt das Partizip Passiv dem Muster مَفْعُول; bei den erweiterten Formen ähnelt es dem Ism al-Fāʿil, trägt aber statt der Kasra einen Fatha auf dem entsprechenden Buchstaben — der einzige, aber entscheidende Unterschied."
+      ],
+      "erkennung": [
+        "Beim Grundstamm (Form I) erkennbar am Muster مَفْعُول: مَنْصُور، مَعْلُوم، مَغْضُوب.",
+        "Bei den erweiterten Formen erkennbar an derselben مُ-Vorsilbe wie beim Ism al-Fāʿil, aber mit Fatha statt Kasra auf dem vorletzten Buchstaben: مُطَهَّرَة (statt مُطَهِّرَة).",
+        "Bezeichnet den, an dem die Handlung geschieht, nicht den Handelnden."
+      ],
+      "belege": [
+        {
+          "sure": 1,
+          "vers": 7,
+          "wort": 6,
+          "zeigt": "ٱلْمَغْضُوبِ (\"[über die,] denen gezürnt wird\") — Partizip Passiv im Muster مَفْعُول von غَضِبَ, \"zürnen\".",
+          "warum": "Segment: pos:N, derivation:passiveParticiple, voice:passive, root:غضب."
+        },
+        {
+          "sure": 2,
+          "vers": 25,
+          "wort": 31,
+          "zeigt": "مُّطَهَّرَةٌ (\"gereinigte [Gattinnen]\") — Partizip Passiv der Form II, erkennbar am Fatha statt Kasra vor dem letzten Buchstaben.",
+          "warum": "Segment: pos:ADJ, derivation:passiveParticiple, verbForm:2, root:طهر."
+        }
+      ],
+      "lernen": [
+        "Stelle Ism al-Fāʿil und Ism al-Mafʿūl im Grundstamm direkt gegenüber: نَاصِر (Helfer) vs. مَنْصُور (dem geholfen wird) — derselbe Wortstamm, entgegengesetzte Rolle.",
+        "Bei den erweiterten Formen: sprich das Wortpaar laut (مُعَلِّم/مُعَلَّم) und achte bewusst auf den einzigen Unterschied — Kasra oder Fatha vor dem letzten Buchstaben."
+      ],
+      "tabellen": [],
+      "siehe": [
+        "ismFail",
+        "majhul"
+      ]
+    },
+    "masdar": {
+      "titel": "Das Verbalnomen (Masdar)",
+      "ar": "المَصْدَر",
+      "umschrift": "al-maṣdar",
+      "erklaerung": [
+        "Der Maṣdar ist die reine Grundidee/Handlung eines Verbs als Nomen — \"das Lehren\", \"das Sagen\", \"das Herabsenden\" — losgelöst von Zeit und Person. Jedes arabische Verb hat einen (beim Grundstamm oft unregelmäßigen, bei den erweiterten Formen II–X regelmäßig vorhersagbaren) Maṣdar.",
+        "Der Maṣdar erfüllt im Satz die Funktion eines gewöhnlichen Nomens: Er kann Subjekt, Objekt oder Teil einer Idafa sein. Besonders wichtig ist seine Verwendung als Maṣdar Mafʿūl Muṭlaq, wo er die Handlung des Hauptverbs betont, indem er von derselben Wurzel stammt (etwa قَتَلَهُ قَتْلًا, \"er tötete ihn wirklich/gründlich\")."
+      ],
+      "erkennung": [
+        "Beim Grundstamm gibt es kein einheitliches Muster — der Maṣdar muss mit jedem Verb einzeln gelernt werden (قَوْل، عِلْم، نَصْر).",
+        "Bei den erweiterten Formen ist das Muster meist vorhersagbar, z. B. تَفْعِيل bei Form II (تَعْلِيم) oder إِفْعَال bei Form IV (إِنْزَال، إِحْسَان).",
+        "Funktioniert grammatisch wie ein Nomen, trägt aber inhaltlich die reine Handlung ohne Zeitbezug."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 59,
+          "wort": 4,
+          "zeigt": "قَوْلًا (\"ein Wort/eine Aussage\") — Maṣdar des Grundstamms von قَالَ, \"sagen\".",
+          "warum": "Segment: pos:N, derivation:verbalNoun, root:قول."
+        },
+        {
+          "sure": 2,
+          "vers": 83,
+          "wort": 11,
+          "zeigt": "إِحْسَانًا (\"Güte, gutes Behandeln\") — Maṣdar der Form IV (Muster إِفْعَال) von أَحْسَنَ.",
+          "warum": "Segment: pos:N, derivation:verbalNoun, verbForm:4, root:حسن."
+        }
+      ],
+      "lernen": [
+        "Lerne beim Grundstamm den Maṣdar direkt mit dem Verb zusammen als festes Paar (قَالَ – قَوْل) — hier gibt es keine Regel, nur Auswendiglernen.",
+        "Bei den erweiterten Formen genügt es, das jeweilige Maṣdar-Muster einmal pro Form zu lernen (تَفْعِيل für II, إِفْعَال für IV usw.) und dann auf beliebige Wurzeln zu übertragen."
+      ],
+      "tabellen": [],
+      "siehe": [
+        "ismFail",
+        "ismMaful"
+      ]
+    },
+    "ismTafdil": {
+      "titel": "Die Vergleichs- und Steigerungsform (Ism at-Tafdil)",
+      "ar": "اِسْم التَّفْضِيل",
+      "umschrift": "ism at-tafḍīl",
+      "erklaerung": [
+        "Ism at-Tafḍīl vergleicht oder steigert eine Eigenschaft zwischen zwei (oder mehr) Dingen — \"größer\", \"am größten\". Gebildet wird es meist im Muster أَفْعَل: von كَبِير (\"groß\") wird أَكْبَر (\"größer/am größten\"), von عَلِيم/عَالِم (\"wissend\") wird أَعْلَم (\"wissender, wissender als jeder andere\").",
+        "Steht مِن (\"als\") danach, ist der Vergleich explizit (\"größer als …\"). Ohne مِن, aber mit Artikel اَلْ oder als erstes Glied einer Idafa, wird daraus ein Superlativ (\"der Größte\")."
+      ],
+      "erkennung": [
+        "Grundmuster أَفْعَل: Hamza am Wortanfang, Fatha–Sukun–Fatha auf den drei Wurzelbuchstaben (أَكْبَر، أَعْلَم، أَحْسَن).",
+        "Mit مِن danach: expliziter Vergleich (\"größer als\").",
+        "Mit Artikel اَلْ oder in einer Idafa, ohne مِن: Superlativ (\"der Größte/Beste\")."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 140,
+          "wort": 15,
+          "zeigt": "وَٱللَّهُ أَعْلَمُ (\"und Allah weiß am besten\") — Muster أَفْعَل von عَلِمَ, hier ohne مِن als absoluter Superlativ.",
+          "warum": "Wort im Korpus als pos:N mit Lemma أَعْلَم markiert, root:علم."
+        },
+        {
+          "sure": 2,
+          "vers": 217,
+          "wort": 22,
+          "zeigt": "أَكْبَرُ (\"größer/schwerwiegender\") — Muster أَفْعَل von كَبُرَ, hier vergleichend (\"... ist schwerwiegender als das Kämpfen darin\").",
+          "warum": "Wort im Korpus als pos:N mit Lemma أَكْبَر markiert, root:كبر."
+        }
+      ],
+      "lernen": [
+        "Lerne das Muster أَفْعَل zunächst an den häufigsten Koran-Beispielen (أَكْبَر، أَعْلَم، أَقْرَب، أَحْسَن) auswendig, bevor du eigene Formen bildest.",
+        "Übe den Unterschied \"mit مِن = Vergleich\" vs. \"mit اَلْ/Idafa ohne مِن = Superlativ\" an denselben Wörtern in beiden Konstruktionen."
+      ],
+      "tabellen": [],
+      "siehe": [
+        "ismFail"
+      ]
+    },
+    "ismZamanMakan": {
+      "titel": "Das Orts- und Zeitnomen",
+      "ar": "اِسْم الزَّمَان وَالمَكَان",
+      "umschrift": "ism az-zamān wa-l-makān",
+      "erklaerung": [
+        "Das Orts-/Zeitnomen (Ẓarf/Ism az-Zamān wa-l-Makān) bezeichnet den Ort oder die Zeit, an dem/zu der eine Handlung geschieht — \"der Ort des Betens\", \"die Zeit des Sonnenaufgangs\". Vom Grundstamm meist im Muster مَفْعِل oder مَفْعَل gebildet: von سَجَدَ (\"sich niederwerfen\") leitet sich مَسْجِد ab, \"der Ort des Niederwerfens\" (Moschee); von شَرَقَ (\"aufgehen [Sonne]\") leitet sich مَشْرِق ab, \"der Ort/die Zeit des Sonnenaufgangs, Osten\".",
+        "Anders als das Partizip Passiv (Ism al-Mafʿūl), das ebenfalls oft mit مَـ beginnt, trägt das Orts-/Zeitnomen keine Handlungs-Rollenbedeutung (\"der Betroffene\"), sondern eine reine Orts-/Zeitangabe — die beiden Kategorien lassen sich nur über die Bedeutung im Satz sicher unterscheiden."
+      ],
+      "erkennung": [
+        "Häufig im Muster مَفْعِل oder مَفْعَل: مَسْجِد، مَشْرِق، مَغْرِب، مَوْعِد.",
+        "Bezeichnet einen Ort oder eine Zeit, nicht eine Person/Sache, an der etwas geschieht.",
+        "Von der äußeren Form her dem Ism al-Mafʿūl ähnlich — die Unterscheidung erfolgt über die Bedeutung im Kontext."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 114,
+          "wort": 5,
+          "zeigt": "مَسَٰجِدَ (\"Orte des Niederwerfens/Moscheen\") — Ortsnomen von سَجَدَ im Muster مَفْعِل, Plural.",
+          "warum": "Wort im Korpus als pos:N mit Lemma مَسْجِد markiert, root:سجد, derivation:null (kein Partizip)."
+        },
+        {
+          "sure": 2,
+          "vers": 115,
+          "wort": 2,
+          "zeigt": "ٱلْمَشْرِقُ (\"der Osten/Ort des Sonnenaufgangs\") — Ortsnomen von شَرَقَ im Muster مَفْعِل.",
+          "warum": "Wort im Korpus als pos:N mit Lemma مَشْرِق markiert, root:شرق, derivation:null (kein Partizip)."
+        }
+      ],
+      "lernen": [
+        "Lerne مَسْجِد als Ankerwort für das ganze Muster: \"Ort, an dem [Verbhandlung] geschieht\".",
+        "Vergleiche مَشْرِق/مَغْرِب (Osten/Westen, Sonnenaufgangs-/-untergangsort) als Wortpaar — beide im selben Muster, entgegengesetzte Himmelsrichtung."
+      ],
+      "tabellen": [],
+      "siehe": [
+        "ismMaful"
+      ]
+    },
+    "sahih": {
+      "titel": "Das gesunde Verb (Sahih)",
+      "ar": "الفِعْل الصَّحِيح",
+      "umschrift": "al-fiʿl aṣ-ṣaḥīḥ",
+      "erklaerung": [
+        "Ṣaḥīḥ (\"gesund, fehlerfrei\") bezeichnet Verben, deren drei Wurzelbuchstaben keine Besonderheit aufweisen: kein Hamza, keiner der drei schwachen Buchstaben Alif/Wāw/Yāʾ, kein doppelter Buchstabe. نَصَرَ, فَتَحَ und سَمِعَ sind klassische Ṣaḥīḥ-Verben. Sie bilden die \"einfache\" Referenz, an der man die Konjugation zuerst lernt, bevor man sich den Sonderfällen zuwendet.",
+        "Alle Regeln zu Māḍī, Muḍāriʿ, Amr, Nahy und den zehn Verbformen wurden bisher am Musterverb نَصَرَ gezeigt, weil es genau ein Ṣaḥīḥ-Verb ist: Stamm und Endungen verhalten sich vollständig regelmäßig, ohne dass ein Buchstabe wegfällt, sich umwandelt oder verschmilzt."
+      ],
+      "erkennung": [
+        "Kein Hamza in der Wurzel.",
+        "Keiner der drei Wurzelbuchstaben ist Alif, Wāw oder Yāʾ.",
+        "Kein doppelter (identischer) zweiter/dritter Wurzelbuchstabe."
+      ],
+      "belege": [
+        {
+          "sure": 3,
+          "vers": 123,
+          "wort": 2,
+          "zeigt": "نَصَرَكُمُ (\"Er half euch\") — Wurzel ن-ص-ر: kein Hamza, kein schwacher Buchstabe, keine Verdopplung.",
+          "warum": "root:نصر — alle drei Buchstaben gehören zu keiner Sondergruppe."
+        },
+        {
+          "sure": 7,
+          "vers": 157,
+          "wort": 35,
+          "zeigt": "وَنَصَرُوهُ (\"und ihm halfen sie\") — dieselbe gesunde Wurzel ن-ص-ر.",
+          "warum": "root:نصر — bestätigt dieselbe Einordnung an einer zweiten Fundstelle."
+        }
+      ],
+      "lernen": [
+        "Lerne die Konjugation zuerst vollständig an einem Ṣaḥīḥ-Verb (نَصَرَ) — erst wenn dieses Baumuster sitzt, lohnt sich die Beschäftigung mit den Sonderfällen, weil man dann genau sieht, was jeweils abweicht.",
+        "Präge dir die drei Prüffragen ein, mit denen du ein neues Verb sofort einordnen kannst: Hamza? Schwacher Buchstabe (و/ي/ا)? Verdopplung? Nein zu allen drei = Ṣaḥīḥ."
+      ],
+      "tabellen": [
+        "verb-madi-nasara-aktiv-matrix"
+      ],
+      "siehe": [
+        "mahmuz",
+        "mithal",
+        "ajwaf",
+        "naqis",
+        "mudaaf"
+      ]
+    },
+    "mahmuz": {
+      "titel": "Das Hamza-Verb (Mahmuz)",
+      "ar": "المَهْمُوز",
+      "umschrift": "al-mahmūz",
+      "erklaerung": [
+        "Mahmūz-Verben tragen ein Hamza als einen ihrer drei Wurzelbuchstaben. Je nach Position unterscheidet man Mahmūz al-Fāʾ (Hamza als 1. Radikal, z. B. أَكَلَ, \"essen\"), Mahmūz al-ʿAin (Hamza als 2. Radikal, z. B. سَأَلَ, \"fragen\") und Mahmūz al-Lām (Hamza als 3. Radikal, z. B. قَرَأَ, \"lesen/vortragen\").",
+        "Bei diesen Verben können zwei Lautveränderungen auftreten: Takhfīf (die Hamza wandelt sich je nach vorangehendem Vokal in Alif, Wāw oder Yāʾ um) und Ḥadhf (die Hamza fällt ganz weg). Ḥadhf betrifft im Arabischen genau vier Verben im Imperativ: أَكَلَ→كُلْ, أَخَذَ→خُذْ, أَمَرَ→مُرْ, سَأَلَ→سَلْ — bei allen vier fällt die Hamza im Befehl restlos weg."
+      ],
+      "erkennung": [
+        "Genau einer der drei Wurzelbuchstaben ist ein Hamza (ء/أ/إ/ؤ/ئ).",
+        "Die Position des Hamza (1., 2. oder 3. Radikal) bestimmt die Unterart (al-Fāʾ, al-ʿAin, al-Lām).",
+        "Im Imperativ der vier Verben أَكَلَ/أَخَذَ/أَمَرَ/سَأَلَ fällt die Hamza ganz weg — ein zuverlässiges Wiedererkennungsmerkmal für diese Sondergruppe."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 57,
+          "wort": 8,
+          "zeigt": "كُلُوا۟ (\"Esst!\") — Befehlsform von أَكَلَ (Mahmūz al-Fāʾ): die Anfangs-Hamza ist im Imperativ vollständig weggefallen.",
+          "warum": "root:اكل, Segment: pos:V, tense:imperative — Lemma أَكَلَ trägt ein Hamza, die Imperativform selbst nicht mehr."
+        },
+        {
+          "sure": 17,
+          "vers": 14,
+          "wort": 1,
+          "zeigt": "ٱقْرَأْ (\"Lies!\") — Befehlsform von قَرَأَ (Mahmūz al-Lām): hier bleibt die Hamza als dritter Radikal erhalten.",
+          "warum": "root:قرا, Segment: pos:V, tense:imperative — Lemma قَرَأَ trägt ein Hamza am Wortende, hier im Befehl erhalten."
+        }
+      ],
+      "lernen": [
+        "Lerne die drei Unterarten über ihre Musterwörter: أَكَلَ (al-Fāʾ), سَأَلَ (al-ʿAin), قَرَأَ (al-Lām) — die Position der Hamza im Wort verrät sofort die Unterart.",
+        "Lerne die vier Ḥadhf-Imperative كُلْ/خُذْ/مُرْ/سَلْ als geschlossene, nicht ableitbare Liste auswendig.",
+        "Nutze die Bab-Tabellen (قَرَأَ und أَمِنَ) zum lauten Durchsprechen: decke jeweils eine Spalte ab und ergänze Verbalnomen, Partizip und Befehlsform selbst."
+      ],
+      "tabellen": [
+        "bab-fataha-mahmooz-qaraa",
+        "bab-samia-mahmooz-amina"
+      ],
+      "siehe": [
+        "takhfif",
+        "hadhf",
+        "sahih"
+      ]
+    },
+    "mithal": {
+      "titel": "Das Verb mit schwachem erstem Radikal (Mithal)",
+      "ar": "المِثَال",
+      "umschrift": "al-mithāl",
+      "erklaerung": [
+        "Ein Mithāl ist ein Muʿtall-Verb (ein Verb mit einem schwachen Buchstaben Wāw/Yāʾ/Alif in der Wurzel), bei dem speziell der erste Radikal schwach ist. Ist dieser erste Buchstabe ein Wāw, heißt die Unterart Mithāl Wāwī (z. B. وَعَدَ, \"versprechen\"); ist er ein Yāʾ, Mithāl Yāʾī.",
+        "Das auffälligste Phänomen: Bei den meisten Mithāl-Wāwī-Verben fällt das anfängliche Wāw in der Gegenwartsform durch Ḥadhf komplett weg — aus وَعَدَ (\"er versprach\") wird im Muḍāriʿ nicht etwa يَوْعِدُ, sondern يَعِدُ (\"er verspricht\"). Diese Lücke am Wortanfang ist das zuverlässigste Erkennungsmerkmal überhaupt für Mithāl-Verben."
+      ],
+      "erkennung": [
+        "Der erste Wurzelbuchstabe ist Wāw oder Yāʾ (in der Vergangenheit meist noch sichtbar: وَعَدَ، وَلَدَ).",
+        "In der Gegenwartsform (Muḍāriʿ) fällt dieses anfängliche Wāw meist ersatzlos weg (وَعَدَ → يَعِدُ, nicht يَوْعِدُ).",
+        "In der Vergangenheit selbst bleibt der schwache Buchstabe dagegen oft sichtbar."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 268,
+          "wort": 2,
+          "zeigt": "يَعِدُكُمُ (\"er verspricht euch\") — Gegenwart von وَعَدَ: das anfängliche Wāw der Wurzel و-ع-د ist komplett verschwunden.",
+          "warum": "root:وعد (erster Radikal و), Segment: tense:imperfect, verbForm:1 — kein و im Wortbild trotz Wurzel و-ع-د."
+        },
+        {
+          "sure": 112,
+          "vers": 3,
+          "wort": 2,
+          "zeigt": "يَلِدْ (\"er zeugt\") — Gegenwart von وَلَدَ: auch hier ist das anfängliche Wāw der Wurzel و-ل-د weggefallen.",
+          "warum": "root:ولد (erster Radikal و), Segment: tense:imperfect, mood:juss — kein و im Wortbild."
+        }
+      ],
+      "lernen": [
+        "Merke dir das Ankerpaar وَعَدَ/يَعِدُ (\"versprechen\") als Regel-Beispiel: Wāw in der Vergangenheit sichtbar, in der Gegenwart weg.",
+        "Vergleiche die Passivform يُوعَدُ (Wāw bleibt im Passiv erhalten!) mit der Aktivform يَعِدُ — das zeigt, dass der Wegfall spezifisch an den aktiven Muḍāriʿ gebunden ist."
+      ],
+      "tabellen": [],
+      "siehe": [
+        "hadhf",
+        "qalb",
+        "idgham"
+      ]
+    },
+    "ajwaf": {
+      "titel": "Das hohle Verb (Ajwaf)",
+      "ar": "الأَجْوَف",
+      "umschrift": "al-ajwaf",
+      "erklaerung": [
+        "Ein Ajwaf ist ein Muʿtall-Verb, bei dem der mittlere Radikal schwach ist (Wāw oder Yāʾ) — der Name bedeutet wörtlich \"hohl\", weil dieser mittlere Buchstabe in vielen Formen zu einem bloßen Langvokal zusammenschmilzt oder ganz verschwindet. قَالَ (\"sagen\") geht auf die Wurzel ق-و-ل zurück (Ajwaf Wāwī), خَافَ (\"fürchten\") auf خ-و-ف.",
+        "Der mittlere schwache Buchstabe wandelt sich in der Vergangenheit durch Qalb zu einem langen Alif (قَوَلَ → قَالَ), fällt in bestimmten Personen (vor konsonantisch beginnender Endung) durch Ḥadhf ganz weg (قَالَ + تُ → قُلْتُ, nicht قَالْتُ) und wird im Imperativ oft auf einen bloßen Langvokal reduziert (قُلْ, \"Sag!\")."
+      ],
+      "erkennung": [
+        "Der mittlere (zweite) Wurzelbuchstabe ist Wāw oder Yāʾ.",
+        "In der Vergangenheit 3. Person erscheint dieser Buchstabe meist als langes Alif (قَالَ statt قَوَلَ).",
+        "Vor einer mit Konsonant beginnenden Personalendung verkürzt sich das Wort auffällig (قُلْتُ statt قَالْتُ)."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 11,
+          "wort": 8,
+          "zeigt": "قَالُوٓا۟ (\"sie sagten\") — Wurzel ق-و-ل, mittleres Wāw als langes Alif sichtbar (Qalb).",
+          "warum": "root:قول (mittlerer Radikal و), Segment: tense:perfect, verbForm:1."
+        },
+        {
+          "sure": 2,
+          "vers": 229,
+          "wort": 18,
+          "zeigt": "يَخَافَآ (\"sie beide fürchten\") — Wurzel خ-و-ف, mittleres Wāw ebenfalls als Alif erscheinend.",
+          "warum": "root:خوف (mittlerer Radikal و), Segment: tense:imperfect, number:du."
+        }
+      ],
+      "lernen": [
+        "Lerne قَالَ als Ankerverb und übe gezielt die Personen mit konsonantisch beginnender Endung (قُلْتُ، قُلْنَا), weil dort der mittlere Buchstabe ganz verschwindet — das ist der häufigste Stolperstein.",
+        "Sprich Imperativ und Gegenwart laut mit: قُلْ (Sag!) neben يَقُولُ (er sagt) — das macht die Verkürzung im Imperativ hörbar."
+      ],
+      "tabellen": [],
+      "siehe": [
+        "qalb"
+      ]
+    },
+    "naqis": {
+      "titel": "Das unvollständige Verb (Naqis)",
+      "ar": "النَّاقِص",
+      "umschrift": "an-nāqiṣ",
+      "erklaerung": [
+        "Ein Nāqiṣ ist ein Muʿtall-Verb, bei dem der letzte Radikal schwach ist (Wāw oder Yāʾ). Ist er ein Wāw, heißt die Unterart Nāqiṣ Wāwī (دَعَا, \"rufen/bitten\", von د-ع-و), ist er ein Yāʾ, Nāqiṣ Yāʾī (رَمَى, \"werfen\", von ر-م-ي). Der Name \"unvollständig\" bezieht sich darauf, dass der letzte Wurzelbuchstabe in vielen Formen nicht mehr klar als Konsonant erkennbar ist.",
+        "In der Vergangenheit der 3. Person verschmilzt der letzte schwache Buchstabe meist zu einem langen Alif oder einer Alif-Maqṣūra (دَعَوَ → دَعَا). Vor Personalendungen, die mit einem Konsonanten beginnen, wird der schwache Buchstabe dagegen oft nur vokallos (Taskīn) oder fällt in bestimmten Formen ganz weg."
+      ],
+      "erkennung": [
+        "Der letzte (dritte) Wurzelbuchstabe ist Wāw oder Yāʾ.",
+        "In der Vergangenheit 3. Person maskulin Singular endet das Wort meist auf ein (langes oder kurz geschriebenes) Alif statt auf den eigentlichen Wurzelbuchstaben.",
+        "Vor Personalendungen mit Konsonant wird der schwache Endbuchstabe oft besonders kurz oder verändert ausgesprochen."
+      ],
+      "belege": [
+        {
+          "sure": 3,
+          "vers": 38,
+          "wort": 2,
+          "zeigt": "دَعَا (\"er rief/bat\") — Wurzel د-ع-و, letztes Wāw als Alif erscheinend.",
+          "warum": "root:دعو (letzter Radikal و), Segment: tense:perfect, verbForm:1."
+        },
+        {
+          "sure": 8,
+          "vers": 17,
+          "wort": 7,
+          "zeigt": "رَمَيْتَ (\"du warfst\") — Wurzel ر-م-ي, letztes Yāʾ vor der Personalendung ـتَ als kurzer Vokal erhalten.",
+          "warum": "root:رمي (letzter Radikal ي), Segment: tense:perfect, person:2, gender:m, number:sg."
+        }
+      ],
+      "lernen": [
+        "Lerne دَعَا (rufen/bitten, Wāwī) und رَمَى (werfen, Yāʾī) als je ein Ankerbeispiel für die beiden Unterarten — an ihnen zeigt sich das Grundmuster.",
+        "Übe gezielt die 3. Person Singular in der Vergangenheit, weil dort der Wurzelbuchstabe am stärksten \"verschwindet\" (zu bloßem Alif wird) — das ist die auffälligste Stelle."
+      ],
+      "tabellen": [],
+      "siehe": [
+        "qalb"
+      ]
+    },
+    "lafif": {
+      "titel": "Das doppelt schwache Verb (Lafif)",
+      "ar": "اللَّفِيف",
+      "umschrift": "al-lafīf",
+      "erklaerung": [
+        "Ein Lafīf ist ein Verb, bei dem gleich zwei der drei Wurzelbuchstaben schwach sind (Wāw oder Yāʾ) — es vereinigt in sich also zwei Sonderfälle zugleich. Man unterscheidet Lafīf Maqrūn (\"zusammengezogen\"), bei dem der 2. und 3. Radikal schwach sind (رَوَى, \"erzählen/überliefern\" — Kombination aus Ajwaf und Nāqiṣ), und Lafīf Mafrūq (\"getrennt\"), bei dem der 1. und 3. Radikal schwach sind (وَفَى, \"erfüllen/treu sein\" — Kombination aus Mithāl und Nāqiṣ).",
+        "Weil im Lafīf zwei Sonderfälle gleichzeitig zusammentreffen, gelten grundsätzlich dieselben Veränderungsregeln wie beim jeweils zugrundeliegenden Verbtyp (Nāqiṣ-Regeln für beide Unterarten, zusätzlich Mithāl-Hadhf beim Mafrūq-Typ) — nur eben doppelt angewandt."
+      ],
+      "erkennung": [
+        "Zwei der drei Wurzelbuchstaben sind Wāw oder Yāʾ.",
+        "Lafīf Maqrūn: 2. und 3. Radikal schwach (Kombination Ajwaf + Nāqiṣ), z. B. رَوَى.",
+        "Lafīf Mafrūq: 1. und 3. Radikal schwach (Kombination Mithāl + Nāqiṣ), z. B. وَفَى."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 28,
+          "wort": 6,
+          "zeigt": "فَأَحْيَٰكُمْ (\"dann machte Er euch lebendig\") — Wurzel ح-ي-ي: 2. und 3. Radikal beide Yāʾ (Lafīf Maqrūn).",
+          "warum": "root:حيي (2. und 3. Radikal beide schwach), Segment: pos:V, verbForm:4, tense:perfect."
+        },
+        {
+          "sure": 2,
+          "vers": 40,
+          "wort": 8,
+          "zeigt": "وَأَوْفُوا۟ (\"und erfüllt/haltet ein!\") — Wurzel و-ف-ي: 1. und 3. Radikal beide schwach (Lafīf Mafrūq).",
+          "warum": "root:وفي (1. und 3. Radikal beide schwach), Segment: pos:V, verbForm:4, tense:imperative."
+        }
+      ],
+      "lernen": [
+        "Erkenne Lafīf nicht als eigenständig neues Regelwerk, sondern als Überlagerung zweier bereits bekannter Sonderfälle — lerne zuerst Mithāl, Ajwaf und Nāqiṣ einzeln sicher, dann fällt Lafīf leicht.",
+        "Ordne bei einem neuen Lafīf-Verb zuerst die beiden schwachen Positionen zu (z. B. \"1. und 3. Radikal\" = Mafrūq) und wende dann die bekannten Einzelregeln nacheinander an."
+      ],
+      "tabellen": [],
+      "siehe": [
+        "mithal",
+        "ajwaf",
+        "naqis"
+      ]
+    },
+    "mudaaf": {
+      "titel": "Das verdoppelte Verb (Mudaaf)",
+      "ar": "المُضَاعَف",
+      "umschrift": "al-muḍāʿaf",
+      "erklaerung": [
+        "Ein Muḍāʿaf hat einen doppelten (identischen) 2. und 3. Wurzelbuchstaben — die Wurzel ist eigentlich zweikonsonantig, wird aber traditionell als Drei-Buchstaben-Wurzel mit Wiederholung gezählt: رَدَّ (\"zurückgeben\") geht auf ر-د-د zurück. In der Grundform verschmelzen die beiden gleichen Buchstaben durch Idghām zu einem einzigen mit Schadda: رَدَدَ → رَدَّ.",
+        "Diese Verschmelzung findet nicht überall statt: Vor Personalendungen, die mit einem Konsonanten beginnen (die 1./2. Personen in der Vergangenheit: ـتُ، ـتَ، ـنَا …), bleiben beide Buchstaben getrennt (رَدَدْتُ, nicht رَدَّتُ), weil sonst zwei aufeinanderfolgende vokallose Buchstaben entstünden. Dasselbe passiert im Muḍāriʿ-Majzūm: يَرُدُّ (\"er gibt zurück\") verschmilzt, aber يَرْتَدِدْ (Form VIII, majzūm) bleibt wegen des folgenden Sukun ausnahmsweise getrennt."
+      ],
+      "erkennung": [
+        "Der 2. und 3. Wurzelbuchstabe sind identisch (ر-د-د, م-د-د, ض-ل-ل …).",
+        "In den meisten Formen erscheinen beide gleichen Buchstaben verschmolzen mit einem Schadda (رَدَّ statt رَدَدَ).",
+        "Vor konsonantisch beginnender Personalendung oder im Zustand des Jazm (Sukun-Endung) bleiben beide Buchstaben ausnahmsweise getrennt sichtbar."
+      ],
+      "belege": [
+        {
+          "sure": 4,
+          "vers": 83,
+          "wort": 11,
+          "zeigt": "رَدُّوهُ (\"sie hätten es zurückgemeldet\") — 2. und 3. Radikal د-د zu einem Schadda verschmolzen.",
+          "warum": "root:ردد (identischer 2./3. Radikal), Segment: tense:perfect, verbForm:1 — Wortbild trägt ein Schadda."
+        },
+        {
+          "sure": 2,
+          "vers": 217,
+          "wort": 39,
+          "zeigt": "يَرْتَدِدْ (\"er abfällt\") — dieselbe Wurzel ر-د-د, aber im Zustand des Jazm bleiben beide د-Buchstaben getrennt, kein Schadda.",
+          "warum": "root:ردد, Segment: mood:juss, verbForm:8 — Ausnahme von der sonst üblichen Verschmelzung."
+        }
+      ],
+      "lernen": [
+        "Lerne رَدَّ als Ankerverb und übe gezielt den Kontrast رَدَّ (verschmolzen) vs. رَدَدْتُ (getrennt, vor Konsonanten-Endung) — genau dieser Kontrast ist die meistgeprüfte Stelle.",
+        "Merke dir das Ausnahme-Beispiel يَرْتَدِدْ: im Jazm bleiben doppelte Buchstaben getrennt, weil sonst zwei Sukun aufeinanderträfen — sprich es bewusst getrennt aus."
+      ],
+      "tabellen": [],
+      "siehe": [
+        "idgham"
+      ]
+    },
+    "takhfif": {
+      "titel": "Hamza-Erleichterung (Takhfif)",
+      "ar": "التَّخْفِيف",
+      "umschrift": "at-takhfīf",
+      "erklaerung": [
+        "Takhfīf (\"Erleichterung\") bezeichnet die Umwandlung eines Hamza in Alif, Wāw oder Yāʾ, abhängig von der Vokalisierung des vorangehenden Buchstabens — eine reine Aussprache-/Schreiberleichterung, die die Wurzelidentität nicht verändert. Am häufigsten betrifft sie den Zusammenstoß zweier Hamzas: Treffen zwei Hamzas aufeinander, von denen das zweite sakin (vokallos) ist, wird das zweite Hamza je nach vorangehendem Vokal zu Alif, Wāw oder Yāʾ.",
+        "Ein alltägliches Beispiel liefert Form IV von Wurzeln, die selbst mit Hamza beginnen: Das Form-IV-Präfix-Hamza trifft auf das Wurzel-Hamza. Aus dem theoretischen أَأْمَنَ wird durch Takhfīf das tatsächlich geschriebene آمَنَ (\"er glaubte\") — die beiden Hamzas verschmelzen zu einem Alif mit Madda."
+      ],
+      "erkennung": [
+        "Zwei Hamzas treffen aufeinander, das zweite ist sakin (vokallos).",
+        "Das zweite Hamza wandelt sich je nach Vokal des ersten in Alif, Wāw oder Yāʾ um.",
+        "Häufigstes Erscheinungsbild im Koran: ein Alif mit Madda (آ) am Wortanfang, wo eigentlich zwei Hamzas aufeinandertreffen würden (آمَنَ statt أَأْمَنَ)."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 41,
+          "wort": 1,
+          "zeigt": "وَءَامِنُوا۟ (\"und glaubt!\") — Befehlsform von Form IV آمَنَ: die beiden Hamzas (Präfix + Wurzelanfang) sind zu einem Alif/Hamza-Verbund verschmolzen.",
+          "warum": "root:امن, Segment: pos:V, verbForm:4, tense:imperative — Lemma ءَامَنَ zeigt die verschmolzene Schreibung."
+        },
+        {
+          "sure": 2,
+          "vers": 13,
+          "wort": 6,
+          "zeigt": "ءَامَنَ (\"er glaubte\") — Vergangenheit derselben Form IV, dieselbe Takhfīf-Verschmelzung am Wortanfang.",
+          "warum": "root:امن, Segment: pos:V, verbForm:4, tense:perfect."
+        }
+      ],
+      "lernen": [
+        "Lerne آمَنَ als Ankerbeispiel und präge dir ein: Wo zwei Hamzas aufeinandertreffen müssten, erscheint im geschriebenen Koran meist ein Alif-Madda statt zwei getrennter Hamza-Zeichen.",
+        "Verwechsle Takhfīf nicht mit Ḥadhf: Bei Takhfīf wandelt sich das Hamza um, bei Ḥadhf fällt es ganz weg (siehe die vier Imperativ-Ausnahmen)."
+      ],
+      "tabellen": [
+        "bab-fataha-mahmooz-qaraa",
+        "bab-samia-mahmooz-amina"
+      ],
+      "siehe": [
+        "mahmuz"
+      ]
+    },
+    "hadhf": {
+      "titel": "Der Wegfall eines Buchstabens (Hadhf)",
+      "ar": "الحَذْف",
+      "umschrift": "al-ḥadhf",
+      "erklaerung": [
+        "Ḥadhf bedeutet schlicht das Weglassen eines Buchstabens. Der bekannteste Fall betrifft den Imperativ von genau vier Mahmūz-Verben, bei denen die Anfangs- oder Wurzel-Hamza im Befehl komplett verschwindet: أَكَلَ يَأْكُلُ → كُلْ (\"Iss!\"), أَخَذَ يَأْخُذُ → خُذْ (\"Nimm!\"), أَمَرَ يَأْمُرُ → مُرْ (\"Befiehl!\"), سَأَلَ يَسْأَلُ → سَلْ (\"Frag!\"). Bei مُرْ und سَلْ tritt der Ḥadhf allerdings nur am Satzanfang auf; folgt ein Wort davor, mit dem sich das Verb verbindet, bleibt die Hamza erhalten (وَأْمُرْ, وَٱسْأَلْ).",
+        "Ḥadhf tritt auch bei Mithāl- und Naqis-Verben auf: Beim Mithāl fällt das anfängliche Wāw im Muḍāriʿ weg (وَعَدَ → يَعِدُ statt يَوْعِدُ); beim Nāqiṣ fällt der schwache Endbuchstabe in bestimmten Pluralformen nach vorangegangenem Taskīn weg."
+      ],
+      "erkennung": [
+        "Ein erwarteter Buchstabe fehlt vollständig im tatsächlich geschriebenen Wort.",
+        "Bei den vier Mahmūz-Imperativen كُلْ/خُذْ/مُرْ/سَلْ ist der Ḥadhf lexikalisch fest — keine allgemeine Regel, sondern eine geschlossene Liste.",
+        "Bei Mithāl-Verben erkennbar daran, dass das anfängliche Wāw der Wurzel im Muḍāriʿ nirgends mehr auftaucht."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 57,
+          "wort": 8,
+          "zeigt": "كُلُوا۟ (\"Esst!\") — Befehlsform von أَكَلَ: die Anfangs-Hamza ist restlos weggefallen.",
+          "warum": "root:اكل, Segment: pos:V, tense:imperative — Lemma trägt Hamza, die Imperativform nicht."
+        },
+        {
+          "sure": 7,
+          "vers": 199,
+          "wort": 1,
+          "zeigt": "خُذِ (\"Nimm!\") — Befehlsform von أَخَذَ: auch hier ist die Anfangs-Hamza vollständig weggefallen.",
+          "warum": "root:اخذ, Segment: pos:V, tense:imperative — Lemma أَخَذَ trägt Hamza, die Imperativform nicht."
+        }
+      ],
+      "lernen": [
+        "Lerne die vier Ḥadhf-Imperative كُلْ/خُذْ/مُرْ/سَلْ als feste, nicht ableitbare Liste zusammen mit ihrer Grundform.",
+        "Achte bei مُرْ/سَلْ zusätzlich auf die Satzposition: nur am Satzanfang fällt die Hamza weg, sonst bleibt sie (وَأْمُرْ).",
+        "Vergleiche Ḥadhf (Buchstabe fällt ganz weg) bewusst gegen Takhfīf (Buchstabe wandelt sich nur um) — beide betreffen oft dasselbe Hamza, aber mit unterschiedlichem Ergebnis."
+      ],
+      "tabellen": [],
+      "siehe": [
+        "mahmuz",
+        "mithal",
+        "amr"
+      ]
+    },
+    "idgham": {
+      "titel": "Die Verschmelzung zweier Buchstaben (Idgham)",
+      "ar": "الإِدْغَام",
+      "umschrift": "al-idghām",
+      "erklaerung": [
+        "Idghām bezeichnet die Verschmelzung zweier gleicher (oder sehr ähnlicher) aufeinandertreffender Buchstaben zu einem einzigen, mit Schadda markierten Buchstaben. Am klarsten zeigt sich das bei Muḍāʿaf-Verben (verdoppelter 2./3. Radikal): رَدَدَ verschmilzt zu رَدَّ, يَرْدُدُ zu يَرُدُّ.",
+        "Idghām ist aber kein Selbstläufer: Er unterbleibt, wenn dadurch zwei aufeinanderfolgende vokallose Buchstaben entstünden — etwa vor konsonantisch beginnenden Personalendungen (رَدَدْتُ bleibt getrennt) oder im Zustand des Jazm (يَرْتَدِدْ bleibt getrennt, weil das Sukun am Wortende sonst direkt auf ein zweites Sukun träfe). Auch bei Form VIII verschmilzt das eingeschobene تَ mit bestimmten Anfangsbuchstaben der Wurzel (ٱتَّخَذَ aus ٱوْتَخَذَ, wobei zusätzlich das ت die Position des ursprünglichen و/ي einnimmt)."
+      ],
+      "erkennung": [
+        "Zwei gleiche (oder sehr ähnliche) Buchstaben treffen unmittelbar aufeinander und verschmelzen zu einem einzigen mit Schadda.",
+        "Die Verschmelzung unterbleibt, wenn danach ein weiterer vokalloser Buchstabe stünde — dann bleiben beide Buchstaben sichtbar getrennt.",
+        "Bei Muḍāʿaf-Verben das zuverlässigste Kennzeichen: Schadda auf dem letzten Wurzelbuchstaben in den meisten, aber nicht allen Personen."
+      ],
+      "belege": [
+        {
+          "sure": 4,
+          "vers": 83,
+          "wort": 11,
+          "zeigt": "رَدُّوهُ (\"sie hätten es gemeldet\") — die beiden د-Buchstaben der Wurzel ر-د-د sind zu einem Schadda-Buchstaben verschmolzen.",
+          "warum": "root:ردد, Segment: tense:perfect — Wortbild trägt ein Schadda statt zweier getrennter د."
+        },
+        {
+          "sure": 2,
+          "vers": 217,
+          "wort": 39,
+          "zeigt": "يَرْتَدِدْ (\"er abfällt\") — dieselbe Wurzel ر-د-د, aber im Jazm-Zustand bleiben beide د-Buchstaben ausnahmsweise getrennt, kein Idghām.",
+          "warum": "root:ردد, Segment: mood:juss — Gegenbeispiel ohne Schadda, weil sonst zwei Sukun aufeinanderträfen."
+        }
+      ],
+      "lernen": [
+        "Sprich das Kontrastpaar يَرُدُّ (verschmolzen) / يَرْتَدِدْ (getrennt, Jazm) laut — der Grund für den Unterschied (Vermeidung von zwei Sukun) merkt sich am besten über das Hörbeispiel.",
+        "Wende bei jedem Muḍāʿaf-Verb zuerst die Prüffrage an: \"Folgt danach ein vokalloser Buchstabe?\" — nur wenn nein, verschmelzen die beiden gleichen Buchstaben."
+      ],
+      "tabellen": [],
+      "siehe": [
+        "mudaaf",
+        "mithal"
+      ]
+    },
+    "qalb": {
+      "titel": "Die Umwandlung eines Buchstabens (Qalb)",
+      "ar": "القَلْب",
+      "umschrift": "al-qalb",
+      "erklaerung": [
+        "Qalb bezeichnet die Umwandlung eines Buchstabens in einen anderen, meist ausgelöst durch die Vokalumgebung. Bei Ajwaf-Verben (schwacher mittlerer Radikal) wandeln sich Wāw und Yāʾ in der Vergangenheit zu einem langen Alif: خَوِفَ wird zu خَافَ, بَيَعَ wird zu بَاعَ. Im Passiv wandelt sich stattdessen das Wāw zu Yāʾ, mit Kasra auf dem ersten Radikal: خُوِفَ wird zu خِيفَ.",
+        "Bei Nāqiṣ-Verben (schwacher letzter Radikal) gilt dieselbe Grundregel in der Vergangenheit 3. Person: Wāw und Yāʾ werden zu Alif (سَعَيَ → سَعَى, دَعَوَ → دَعَا). Ist dem Wāw eine Kasra vorangestellt, wandelt es sich stattdessen zu Yāʾ (دُعِوَ → دُعِيَ). Qalb ist damit der eigentliche Mechanismus, der hinter vielen der bei Ajwaf und Nāqiṣ beschriebenen Erscheinungsbilder steckt."
+      ],
+      "erkennung": [
+        "Ein Wurzelbuchstabe Wāw oder Yāʾ erscheint im tatsächlichen Wortbild als Alif.",
+        "Betrifft typischerweise die Vergangenheit 3. Person von Ajwaf- und Nāqiṣ-Verben.",
+        "Im Passiv wandelt sich ein Wāw stattdessen häufig zu Yāʾ statt zu Alif."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 11,
+          "wort": 8,
+          "zeigt": "قَالُوٓا۟ (\"sie sagten\") — die Wurzel ق-و-ل zeigt das mittlere Wāw als langes Alif (Qalb im Ajwaf).",
+          "warum": "root:قول (mittlerer Radikal و), Segment: tense:perfect — Wortbild enthält ا statt و."
+        },
+        {
+          "sure": 3,
+          "vers": 38,
+          "wort": 2,
+          "zeigt": "دَعَا (\"er rief/bat\") — die Wurzel د-ع-و zeigt das letzte Wāw als Alif (Qalb im Nāqiṣ).",
+          "warum": "root:دعو (letzter Radikal و), Segment: tense:perfect — Wortbild endet auf ا statt و."
+        }
+      ],
+      "lernen": [
+        "Vergleiche die beiden Beispiele قَالَ (Ajwaf, mittlerer Buchstabe wird Alif) und دَعَا (Nāqiṣ, letzter Buchstabe wird Alif) nebeneinander — dieselbe Umwandlungsregel, zwei verschiedene Positionen.",
+        "Merke dir die Eselsbrücke: Wāw/Yāʾ + langer a-Laut in der Nachbarschaft → wird fast immer zu Alif geschrieben, das ist Qalb."
+      ],
+      "tabellen": [],
+      "siehe": [
+        "ajwaf",
+        "naqis",
+        "mithal"
+      ]
+    }
+  }
+}

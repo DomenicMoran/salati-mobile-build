@@ -1,0 +1,992 @@
+{
+  "schema": 1,
+  "lang": "es",
+  "kapitel": {
+    "Kapitel 1 · Ism": "Capítulo 1 · Ism",
+    "Kapitel 2 · Fragmente": "Capítulo 2 · Fragmentos",
+    "Kapitel 3 · Verben": "Capítulo 3 · Verbos",
+    "Kapitel 4 · Sätze": "Capítulo 4 · Oraciones",
+    "Kapitel 5 · Morphologie – Sarf": "Capítulo 5 · Morfología – Sarf",
+    "Kapitel 6 · Verschiedene Ausdrücke im Qur'an": "Capítulo 6 · Diversas expresiones en el Corán",
+    "Kapitel 7 · Komplexe Sätze": "Capítulo 7 · Oraciones complejas",
+    "Kapitel 8 · Sarf – Fortgeschrittene Morphologie": "Capítulo 8 · Sarf – Morfología avanzada",
+    "Kapitel 9 · Balagah – Die Rhetorik des Qur'ans": "Capítulo 9 · Balagah – La retórica del Corán"
+  },
+  "wortlisten": {
+    "wortliste-h1-ism-grundvokabular": {
+      "title": "Lista de vocabulario: Ism (vocabulario básico)",
+      "entries": [
+        "el que (m.)",
+        "cubo",
+        "pozo",
+        "alma, persona, sí mismo",
+        "infierno",
+        "cielo",
+        "tierra",
+        "sol",
+        "camino",
+        "fuego",
+        "vaso",
+        "vino",
+        "casa",
+        "bastón",
+        "guerra",
+        "viento",
+        "pueblo, nación",
+        "generación",
+        "gente, personas",
+        "Señor",
+        "día",
+        "signo, versículo",
+        "todos, cada uno",
+        "mensajero",
+        "castigo",
+        "cosa, algo",
+        "libro",
+        "verdad, derecho",
+        "creyente",
+        "paraíso, jardín",
+        "misericordia, gracia",
+        "mano",
+        "ojo, fuente",
+        "Allah",
+        "dueño, propietario"
+      ]
+    },
+    "wortliste-h12-fragmente-teil1": {
+      "title": "Lista de vocabulario: Fragmentos, parte 1",
+      "entries": [
+        "de, desde",
+        "a, hacia, hasta",
+        "sobre, acerca de",
+        "en, sobre",
+        "en",
+        "hasta",
+        "con, mediante, junto a",
+        "como",
+        "para, a",
+        "por (juramento)",
+        "por (juramento)",
+        "ciertamente, en verdad",
+        "ciertamente, que",
+        "como si",
+        "pero, sin embargo",
+        "ojalá",
+        "quizás, para que",
+        "este",
+        "esta",
+        "aquel",
+        "aquella",
+        "estos/estas (plural)",
+        "aquellos/aquellas (plural)",
+        "no",
+        "si",
+        "ya, quizás",
+        "y",
+        "después de",
+        "antes de",
+        "bajo",
+        "sobre",
+        "alrededor de",
+        "entre",
+        "detrás de",
+        "detrás de",
+        "con",
+        "junto a",
+        "excepto, en lugar de",
+        "sin, no-"
+      ]
+    },
+    "wortliste-h13-fragmente-teil2": {
+      "title": "Lista de vocabulario: Fragmentos, parte 2",
+      "entries": [
+        "algunos de",
+        "cuáles de",
+        "especialmente de",
+        "luz",
+        "Israel",
+        "Nuh (Noé)",
+        "palabra",
+        "recompensa, retribución",
+        "paz",
+        "alabanza, exaltación",
+        "mar",
+        "ay, desgracia",
+        "grande",
+        "asociado, socio",
+        "nombre",
+        "permiso",
+        "musulmán, sometido",
+        "rendición de cuentas",
+        "montaña",
+        "muerto, difunto",
+        "bienhechor",
+        "lo recto, lo aprobado",
+        "error, extravío",
+        "recto (camino)",
+        "transgresor, malhechor",
+        "pecado",
+        "autoridad, poder, prueba",
+        "mejor, el mejor",
+        "prosternarse",
+        "usufructo, goce",
+        "tiempo, rato",
+        "olvidar",
+        "pecado",
+        "auxiliador",
+        "discrepar, diferir",
+        "enviado, mensajero",
+        "Maryam (María)",
+        "tentación, prueba"
+      ]
+    },
+    "wortliste-h27-verben-grundvokabular": {
+      "title": "Lista de vocabulario: Verbos (vocabulario básico)",
+      "entries": [
+        "creer",
+        "saber",
+        "hacer",
+        "negar, no creer",
+        "hacer",
+        "crear",
+        "hacer descender",
+        "negar, desmentir",
+        "enviar",
+        "tomar",
+        "que",
+        "no (futuro)",
+        "para que",
+        "no (pasado)",
+        "cuando, todavía no",
+        "y",
+        "entonces que, así pues",
+        "venir",
+        "dar",
+        "ver",
+        "querer, desear",
+        "llamar, invitar, orar",
+        "temer a Dios, temer",
+        "guiar, dirigir",
+        "servir, adorar",
+        "producir, expulsar",
+        "comer, consumir",
+        "hacer, realizar",
+        "mirar, observar",
+        "recordar, mencionar",
+        "matar",
+        "temer, tener miedo",
+        "regresar, volver",
+        "apartarse, alejarse",
+        "oír, escuchar"
+      ]
+    },
+    "wortliste-h37-saetze-teil1": {
+      "title": "Lista de vocabulario: Oraciones, parte 1",
+      "entries": [
+        "decir",
+        "Oh",
+        "querer",
+        "seguir",
+        "obrar injustamente",
+        "tomar",
+        "preguntar",
+        "encontrar",
+        "Poderoso",
+        "ser",
+        "no ser",
+        "permanecer",
+        "llegar a ser, convertirse en",
+        "mejor, el bien",
+        "orden, asunto, cosa",
+        "sabio, docto",
+        "incrédulo",
+        "dueño de, poseedor de",
+        "último, la otra vida, generaciones posteriores",
+        "Dios",
+        "Musa (Moisés)",
+        "corazón",
+        "injusto",
+        "familia",
+        "claro, evidente",
+        "misericordioso",
+        "mundo (vida terrenal)",
+        "grande, inmenso",
+        "recompensa, retribución, dote",
+        "sabio",
+        "fe, religión, día del juicio",
+        "discurso, declaración",
+        "sumamente indulgente",
+        "diablo, Satanás",
+        "parábola, ejemplo"
+      ]
+    },
+    "wortliste-h38-saetze-teil2": {
+      "title": "Lista de vocabulario: Oraciones, parte 2",
+      "entries": [
+        "aspirar a, buscar",
+        "levantarse, estar de pie",
+        "grupo, facción",
+        "prohibido, inviolable",
+        "perdedor",
+        "zakat, limosna",
+        "descendencia",
+        "bastar",
+        "mentiroso",
+        "prohibir, impedir",
+        "fin, desenlace, consecuencia",
+        "apartarse",
+        "donde, allí donde",
+        "más fuerte, más intenso",
+        "ser útil, aprovechar",
+        "buena acción, el bien",
+        "una (única)",
+        "buena, pura (f.)",
+        "uno, único",
+        "fuerza, poder",
+        "Aad (pueblo)",
+        "quizás, ojalá",
+        "mal, maldad",
+        "los nobles, los notables",
+        "permanecer, quedarse",
+        "noble, generoso",
+        "ver, divisar",
+        "pacto, promesa",
+        "ejército, hueste",
+        "trono",
+        "hombre",
+        "eterno, jamás",
+        "hechicería, magia",
+        "mezquita, lugar de oración",
+        "destino, lugar de destino"
+      ]
+    },
+    "wortliste-h53-sarf-grundvokabular": {
+      "title": "Lista de vocabulario: Morfología – Sarf (vocabulario básico)",
+      "entries": [
+        "entrar",
+        "recompensar",
+        "obedecer",
+        "revelar, inspirar",
+        "asociar, atribuir socios (a Dios)",
+        "arrojar, lanzar, alcanzar, ofrecer",
+        "prometer",
+        "gastar",
+        "perdonar",
+        "extraviar, descarriar",
+        "alcanzar, afligir",
+        "amar, gustar de",
+        "arrepentirse, volverse (a Dios)",
+        "hacer descender, revelar",
+        "merecer, adquirir",
+        "proveer, dar sustento",
+        "recitar, seguir",
+        "ayudar",
+        "decidir, juzgar",
+        "ser paciente",
+        "fluir, correr",
+        "tocar",
+        "golpear, poner",
+        "erigir, cumplir",
+        "combatir, luchar",
+        "salir",
+        "extraviarse, desviarse",
+        "resucitar, enviar",
+        "dar vida, resucitar",
+        "aniquilar, destruir",
+        "recordar, dejarse amonestar",
+        "inventar (una mentira)",
+        "elevar, aumentar",
+        "comprender, reflexionar",
+        "escribir, prescribir"
+      ]
+    },
+    "wortliste-h54-verschiedene-ausdruecke": {
+      "title": "Lista de vocabulario: Diversas expresiones en el Corán",
+      "entries": [
+        "o",
+        "y luego",
+        "y entonces (de inmediato)",
+        "más bien",
+        "quien",
+        "qué",
+        "lo que",
+        "cuándo",
+        "dónde",
+        "cómo",
+        "pregunta de sí/no",
+        "pregunta de sí/no",
+        "qué maravilloso",
+        "qué terrible",
+        "qué grandioso",
+        "qué malo",
+        "si tan solo (hipotético)",
+        "que (con oración nominal)",
+        "cuando, en aquel entonces (pasado)",
+        "excepto",
+        "o",
+        "si no fuera por, por qué no",
+        "en cuanto a",
+        "irá a (partícula de futuro)",
+        "de ningún modo, no",
+        "claro que sí, ciertamente"
+      ]
+    },
+    "wortliste-h58-komplexe-saetze-teil1": {
+      "title": "Lista de vocabulario: Oraciones complejas, parte 1",
+      "entries": [
+        "los que (m. pl.)",
+        "él, ello",
+        "ellos (m. pl.)",
+        "ángel",
+        "protector, patrono",
+        "bienes, riqueza",
+        "favor, misericordia, gracia",
+        "noche",
+        "oración",
+        "primero, anterior",
+        "hijos, descendientes",
+        "la mayoría",
+        "compañeros, habitantes",
+        "par, cónyuge",
+        "vida",
+        "profeta",
+        "hermano",
+        "eterno, perpetuo",
+        "Faraón",
+        "recto, justo",
+        "alguien, uno",
+        "mundo, mundos",
+        "doloroso",
+        "rostro",
+        "ser humano",
+        "prueba, señal clara",
+        "pocos",
+        "resurrección",
+        "Corán",
+        "Ibrahim (Abrahán)",
+        "casa",
+        "derecha, lado derecho",
+        "pueblo, nación, comunidad, comunidad religiosa",
+        "antepasados, padres",
+        "mucho, numeroso"
+      ]
+    },
+    "wortliste-h59-komplexe-saetze-teil2": {
+      "title": "Lista de vocabulario: Oraciones complejas, parte 2",
+      "entries": [
+        "arreglar, reconciliar",
+        "perdón",
+        "escuchar (una súplica), responder",
+        "creyente (f.)",
+        "cómo, de dónde",
+        "hombres",
+        "apiadarse, compadecerse",
+        "aprovechar, hacer prescindible",
+        "relato, dicho, hadiz",
+        "igual, por igual",
+        "disculpar, perdonar",
+        "puerta, portón",
+        "descuidado, negligente",
+        "adelantar, ofrecer",
+        "tener éxito, prosperar",
+        "luchar, esforzarse (yihad)",
+        "lugar, sitio",
+        "hipócrita",
+        "luna",
+        "Yusuf (José)",
+        "Lut (Lot)",
+        "temor, miedo",
+        "falso, nulo, falsedad",
+        "clan, familia de",
+        "fuego del infierno, infierno",
+        "testimonio",
+        "todos, en su totalidad",
+        "cercano",
+        "embellecer, engalanar",
+        "mujer de, esposa",
+        "artimaña, intriga",
+        "Thamud (pueblo)",
+        "notar, percibir",
+        "transcurrir, pasar",
+        "pacto, promesa solemne"
+      ]
+    },
+    "wortliste-h164-sarf-fortgeschritten": {
+      "title": "Lista de vocabulario: Sarf – Morfología avanzada",
+      "entries": [
+        "pensar, suponer",
+        "agradecer",
+        "anunciar, informar",
+        "juzgar, sentenciar",
+        "dejar, abandonar",
+        "advertir",
+        "atestiguar",
+        "opinar, creer",
+        "llamar",
+        "poseer",
+        "alabar, glorificar",
+        "ser capaz, poder",
+        "ser introducido",
+        "llevar, cargar",
+        "castigar, atormentar",
+        "dejar, abandonar",
+        "mostrarse soberbio",
+        "estar bien guiado",
+        "mostrar",
+        "temer",
+        "alcanzar, llegar",
+        "pedir perdón",
+        "confiar (en Allah)",
+        "morir",
+        "prohibir, declarar ilícito",
+        "recibir buenas nuevas",
+        "estar satisfecho, tener complacencia",
+        "entristecer, afligir",
+        "salvar",
+        "reunir",
+        "impedir, apartar",
+        "rechazar, devolver",
+        "probar, saborear",
+        "ir, marcharse",
+        "erguirse, levantarse"
+      ]
+    },
+    "wortliste-h185-balagah-vokabular": {
+      "title": "Lista de vocabulario: Balagah – La retórica del Corán",
+      "entries": [
+        "Adán",
+        "Isa (Jesús)",
+        "pecado, culpa",
+        "lejano, distante",
+        "fuerza, poder, apuro",
+        "medir, determinar, poder",
+        "lengua, idioma",
+        "rebelarse, transgredir",
+        "discutir, disputar",
+        "(solo) a Ti (partícula de énfasis)",
+        "estar a punto de, casi",
+        "alimento, comida",
+        "vivo, viviente",
+        "femenino, hembra",
+        "mayor, el mayor",
+        "recoger el alma, hacer morir",
+        "rico, autosuficiente",
+        "grupo, parte",
+        "guardián, garante",
+        "encuentro, cita",
+        "tinieblas, oscuridad",
+        "siete",
+        "salvar",
+        "quien se prosterna",
+        "intercambiar, cambiar",
+        "huérfano",
+        "necesitado, pobre",
+        "maldecir",
+        "barco, arca",
+        "probar, tentar",
+        "amonestación, recuerdo",
+        "elevar, exaltar",
+        "entregarse, someterse",
+        "esperar, anhelar",
+        "conceder, otorgar"
+      ]
+    },
+    "wortliste-h20-besondere-mudhaafs": {
+      "title": "Lista de partículas: Mudhaafs especiales",
+      "entries": [
+        "después de",
+        "antes de",
+        "bajo",
+        "sobre",
+        "alrededor de",
+        "entre",
+        "detrás de",
+        "detrás de",
+        "con",
+        "junto a",
+        "excepto, en lugar de",
+        "sin, no-",
+        "todos, todos de, cada uno",
+        "algunos de",
+        "cuáles de",
+        "especialmente de"
+      ],
+      "beispiele": [
+        "toda cosa / todo",
+        "después de esto (lit. después de esto)",
+        "con los pacientes"
+      ]
+    },
+    "wortliste-h21-harf-jarr": {
+      "title": "Lista de partículas: Harf Jarr (preposiciones)",
+      "entries": [
+        "con",
+        "en",
+        "juro por (solo con اللَّه, raro)",
+        "sobre",
+        "como",
+        "en",
+        "para",
+        "hasta",
+        "(juro) por",
+        "a",
+        "de, desde"
+      ]
+    },
+    "wortliste-h22-harf-nasb": {
+      "title": "Lista de partículas: Harf Nasb y su significado",
+      "entries": [
+        "ciertamente",
+        "que",
+        "como si",
+        "ojalá",
+        "pero, sin embargo",
+        "de modo que, ojalá, quizás"
+      ]
+    },
+    "wortliste-h56-fragewoerter-uebersicht": {
+      "title": "Lista de partículas: Palabras interrogativas de uso frecuente",
+      "entries": [
+        "Quién",
+        "Qué",
+        "Cuándo",
+        "Dónde",
+        "Por qué",
+        "Cómo",
+        "Cuál/Cuáles",
+        "Se usa para preguntas de sí/no"
+      ],
+      "beispiele": [
+        "¿Quién estudió?",
+        "¿Estudió Zaynab?",
+        "¿Cuándo estudió Zaynab?",
+        "¿Dónde estudió Zaynab?",
+        "¿Por qué estudió Zaynab?",
+        "¿Cómo estudió Zaynab?",
+        "¿Qué estudió Zaynab?",
+        "¿En qué escuela estudió Zaynab?"
+      ]
+    },
+    "wortliste-h184-balagah-vokabular-teil1": {
+      "title": "Lista de vocabulario: Balagah – La retórica del Corán (parte 1)",
+      "entries": [
+        "hijo",
+        "recta (f.), buena acción",
+        "veraz",
+        "mujeres",
+        "mala acción, mal",
+        "amonestador",
+        "el Clementísimo",
+        "ciudad, aldea",
+        "día (momento del día)",
+        "testigo",
+        "niño, hijo",
+        "poderoso, fuerte",
+        "río",
+        "todos, totalidad",
+        "plazo, tiempo fijado",
+        "criminal",
+        "Omnividente",
+        "muerte",
+        "enemigo",
+        "favor, bendición",
+        "daño, mal",
+        "temeroso de Dios",
+        "lo oculto",
+        "el más conocedor",
+        "vista, mirada",
+        "hora",
+        "Omnioyente",
+        "padre",
+        "camino, senda",
+        "Omnipotente",
+        "fe",
+        "Omnisciente",
+        "idólatra, politeísta",
+        "pecho",
+        "alabanza, loor"
+      ]
+    }
+  },
+  "beispielsatzlisten": {
+    "beispielsatzliste-h55-verbindungsbuchstaben": {
+      "title": "Lista de las letras de conexión (Harf al-'Atf)",
+      "entries": [
+        {
+          "beschreibung": "y, une dos elementos",
+          "beispiel": "En verdad, Allah y Sus ángeles envían bendiciones sobre el Profeta."
+        },
+        {
+          "beschreibung": "o",
+          "beispiel": "Así son como piedras, o aún más duros."
+        },
+        {
+          "beschreibung": "y luego (mayor duración)",
+          "beispiel": "¿Cómo podéis negar a Allah, si estabais muertos y Él os dio vida? Luego os hará morir y después os volverá a dar vida."
+        },
+        {
+          "beschreibung": "y luego/de inmediato",
+          "beispiel": "Luego te formó y te dio una figura armoniosa."
+        },
+        {
+          "beschreibung": "más bien/en cambio",
+          "beispiel": "Y dijeron: Allah ha tomado un hijo. ¡Gloria a Él! Más bien, Suyo es cuanto hay en los cielos."
+        },
+        {
+          "beschreibung": "sin embargo",
+          "beispiel": "Sin embargo, hoy los injustos están en un extravío evidente."
+        }
+      ]
+    },
+    "beispielsatzliste-h166-istifham-partikel": {
+      "title": "Istifham (partícula interrogativa) con ejemplos del Corán",
+      "entries": [
+        {
+          "beschreibung": "Es/Son",
+          "beispiel": "¿Lo sabéis vosotros mejor, o Allah?"
+        },
+        {
+          "beschreibung": "Es/Son",
+          "beispiel": "¿Tenéis acaso un conocimiento cierto?"
+        },
+        {
+          "beschreibung": "Qué",
+          "beispiel": "¿Y qué es eso que tienes en tu mano derecha, oh Musa?"
+        },
+        {
+          "beschreibung": "Quién",
+          "beispiel": "¿Quién es más fuerte que nosotros en poder?"
+        },
+        {
+          "beschreibung": "Cuándo",
+          "beispiel": "¿Cuándo se cumplirá esta promesa?"
+        },
+        {
+          "beschreibung": "Cuándo",
+          "beispiel": "¿Cuándo será el Día del Juicio?"
+        },
+        {
+          "beschreibung": "Cómo",
+          "beispiel": "¿Cómo das vida a los muertos?"
+        },
+        {
+          "beschreibung": "Dónde",
+          "beispiel": "¿Dónde están aquellos que considerabais copartícipes?"
+        },
+        {
+          "beschreibung": "Cómo",
+          "beispiel": "¿Cómo podría él tener dominio sobre nosotros?"
+        },
+        {
+          "beschreibung": "De dónde",
+          "beispiel": "Oh Maryam, ¿de dónde tienes esto?"
+        },
+        {
+          "beschreibung": "Cuántos",
+          "beispiel": "¿Cuánto tiempo habéis permanecido?"
+        },
+        {
+          "beschreibung": "Cuál",
+          "beispiel": "¿Cuál de los dos grupos es mejor en su posición?"
+        }
+      ]
+    }
+  },
+  "ablaufschemata": {
+    "ablaufschema-h14-gliederung-der-sprache": {
+      "title": "Estructura del lenguaje (Kalaam)",
+      "schritte": [
+        "El lenguaje (Kalaam) se divide en tres elementos básicos.",
+        "Oraciones (Jumal)",
+        "Fragmentos — tema de este capítulo, entre otros Idafa, Harf Jarr, Harf Nasb, Mausuf-Sifah, Ism Ishaarah",
+        "Palabras (categorías gramaticales individuales: Ism, Fiil, Harf)"
+      ]
+    },
+    "ablaufschema-h39-mubtada-chabar": {
+      "title": "Del Mubtada al Chabar (oración nominal)",
+      "schritte": [
+        "Mubtada — el tema/sujeto de una oración nominal (Jumla Ismiyya)",
+        "Pregunta intermedia: ¿Qué ocurre con el Mubtada?",
+        "Chabar — el enunciado sobre el Mubtada"
+      ],
+      "beispiel": "Allah (Mubtada) es el Absoluto, del que todo depende (Chabar) — sura Al-Ikhlas 112:2."
+    }
+  },
+  "vergleichstabellen": {
+    "vergleichstabelle-h165-satzklassifikation": {
+      "title": "Ejemplos de clasificación de oraciones en Balagha",
+      "columns": {
+        "satz": "Oración",
+        "klassifikation": "Clasificación"
+      }
+    },
+    "vergleichstabelle-h167-tashbih-quran-licht": {
+      "title": "Ejemplo de Tashbih: El Corán como la luz",
+      "columns": {
+        "mushabbah": "Mushabbah",
+        "adat": "Adat at-Tashbih",
+        "mushabbahBihi": "Mushabbah bihi",
+        "wajh": "Wajh ash-Shabah"
+      }
+    },
+    "vergleichstabelle-h168-tashbih-mufassal-wasser": {
+      "title": "Tashbih Mufassal: El agua como metal fundido",
+      "columns": {
+        "mushabbah": "Mushabbah",
+        "adat": "Adat",
+        "mushabbahBihi": "Mushabbah bihi",
+        "wajh": "Wajh ash-Shabah"
+      }
+    },
+    "vergleichstabelle-h169-tashbih-maqlub": {
+      "title": "Tashbih Maqlub (comparación invertida): Comercio y usura",
+      "columns": {
+        "form": "Forma",
+        "mushabbah": "Mushabbah",
+        "adat": "Adat",
+        "mushabbahBihi": "Mushabbah bihi"
+      },
+      "rows": {
+        "original": "Original",
+        "umgekehrt": "Invertido"
+      },
+      "cells": {
+        "original": {
+          "form": "Original"
+        },
+        "umgekehrt": {
+          "form": "Invertido"
+        }
+      }
+    },
+    "vergleichstabelle-h170-tashbih-dimni": {
+      "title": "Tashbih Dimni (comparación implícita): Tú y el almizcle",
+      "columns": {
+        "mushabbah": "Mushabbah",
+        "adat": "Adat",
+        "mushabbahBihi": "Mushabbah bihi",
+        "wajh": "Wajh ash-Shabah"
+      },
+      "cells": {
+        "r1": {
+          "wajh": "(implícito)"
+        }
+      }
+    },
+    "vergleichstabelle-h171-tashbih-arten-zusammenfassung": {
+      "title": "Resumen de los tipos de Tashbih",
+      "columns": {
+        "art": "Tipo",
+        "wajh": "Wajh ash-Shabah",
+        "adat": "Adat",
+        "beispiel": "Ejemplo"
+      },
+      "cells": {
+        "mufassalMursal": {
+          "art": "Mufassal Mursal",
+          "wajh": "mencionado",
+          "adat": "mencionado"
+        },
+        "mujmalMursal": {
+          "art": "Mujmal Mursal",
+          "wajh": "omitido",
+          "adat": "mencionado"
+        },
+        "mufassalMuakkad": {
+          "art": "Mufassal Mu'akkad",
+          "wajh": "mencionado",
+          "adat": "omitido"
+        },
+        "baligh": {
+          "art": "Baligh",
+          "wajh": "omitido",
+          "adat": "omitido"
+        }
+      }
+    },
+    "vergleichstabelle-h172-alaqa-licht-prophet": {
+      "title": "Ejemplo de 'Alaqa: La luz como metáfora del Profeta",
+      "columns": {
+        "woertlich": "Significado literal",
+        "alaqa": "'Alaqa",
+        "metaphorisch": "Significado metafórico"
+      },
+      "cells": {
+        "r1": {
+          "woertlich": "Luz",
+          "alaqa": "Tashbih",
+          "metaphorisch": "Profeta"
+        }
+      }
+    },
+    "vergleichstabelle-h173-istiara-musarraha-koran": {
+      "title": "Isti'ara Musarraha: Tinieblas y luz",
+      "columns": {
+        "mushabbah": "Mushabbah",
+        "adat": "Adat at-Tashbih",
+        "mushabbahBihi": "Mushabbah bihi",
+        "mustaar": "Musta'ar",
+        "wajh": "Wajh ash-Shabah"
+      },
+      "cells": {
+        "r1": {
+          "mustaar": "-",
+          "wajh": "-"
+        },
+        "r2": {
+          "mustaar": "-",
+          "wajh": "-"
+        }
+      }
+    },
+    "vergleichstabelle-h174-istiara-asliyya-tabaiyya": {
+      "title": "Isti'ara Asliyya frente a Isti'ara Taba'iyya",
+      "columns": {
+        "asliyya": "Isti'ara Asliyya",
+        "tabaiyya": "Isti'ara Taba'iyya"
+      },
+      "cells": {
+        "uebersetzung": {
+          "asliyya": "El león pronunció un discurso",
+          "tabaiyya": "El orador rugió"
+        }
+      }
+    },
+    "vergleichstabelle-h175-istiara-sterne-perlen": {
+      "title": "Ejemplo de Isti'ara: Las estrellas como perlas en un hilo",
+      "columns": {
+        "mushabbah": "Mushabbah",
+        "adat": "Adat at-Tashbih",
+        "mushabbahBihi": "Mushabbah bihi",
+        "wajh": "Wajh ash-Shabah"
+      },
+      "cells": {
+        "r1": {
+          "wajh": "-"
+        }
+      }
+    },
+    "vergleichstabelle-h176-istiara-mulaim-loewe": {
+      "title": "Isti'ara con Mula'im: El hombre valiente como león",
+      "columns": {
+        "mushabbah": "Mushabbah",
+        "mushabbahBihi": "Mushabbah bihi",
+        "wajh": "Wajh ash-Shabah",
+        "mulaim": "Mula'im al-Mushabbah bihi"
+      },
+      "cells": {
+        "r1": {
+          "mushabbah": "hombre valiente",
+          "mushabbahBihi": "león",
+          "wajh": "-",
+          "mulaim": "rugido"
+        }
+      }
+    },
+    "vergleichstabelle-h177-alaqa-sababiyya": {
+      "title": "'Alaqa Sababiyya: La lengua y las manos como causa",
+      "columns": {
+        "woertlich": "Significado literal",
+        "alaqa": "'Alaqa",
+        "metaphorisch": "Significado metafórico"
+      },
+      "cells": {
+        "r1": {
+          "woertlich": "Lengua y manos",
+          "alaqa": "Sababiyya",
+          "metaphorisch": "Palabras y hechos"
+        }
+      }
+    },
+    "vergleichstabelle-h178-alaqa-musabbabiyya": {
+      "title": "'Alaqa Musabbabiyya: El sustento como consecuencia de la lluvia",
+      "columns": {
+        "woertlich": "Significado literal",
+        "alaqa": "'Alaqa",
+        "metaphorisch": "Significado metafórico"
+      },
+      "cells": {
+        "r1": {
+          "woertlich": "Sustento",
+          "alaqa": "Musabbabiyya",
+          "metaphorisch": "Lluvia"
+        }
+      }
+    },
+    "vergleichstabelle-h179-alaqa-kulliyya": {
+      "title": "'Alaqa Kulliyya: El dedo por la yema del dedo",
+      "columns": {
+        "woertlich": "Significado literal",
+        "alaqa": "'Alaqa",
+        "metaphorisch": "Significado metafórico"
+      },
+      "cells": {
+        "r1": {
+          "woertlich": "Dedo",
+          "alaqa": "Kulliyya",
+          "metaphorisch": "Yema del dedo"
+        }
+      }
+    },
+    "vergleichstabelle-h180-alaqa-juziyya": {
+      "title": "'Alaqa Juz'iyya: La nuca por el esclavo",
+      "columns": {
+        "woertlich": "Significado literal",
+        "alaqa": "'Alaqa",
+        "metaphorisch": "Significado metafórico"
+      },
+      "cells": {
+        "r1": {
+          "woertlich": "Nuca",
+          "alaqa": "Juz'iyya",
+          "metaphorisch": "Esclavo"
+        }
+      }
+    },
+    "vergleichstabelle-h181-alaqa-itibar-ma-kana": {
+      "title": "'Alaqa I'tibar ma kana: Los huérfanos como antiguos huérfanos",
+      "columns": {
+        "woertlich": "Significado literal",
+        "alaqa": "'Alaqa",
+        "metaphorisch": "Significado metafórico"
+      },
+      "cells": {
+        "r1": {
+          "woertlich": "Huérfanos",
+          "alaqa": "I'tibar ma kana",
+          "metaphorisch": "Adultos que fueron huérfanos"
+        }
+      }
+    },
+    "vergleichstabelle-h182-alaqa-itibar-ma-yakun": {
+      "title": "'Alaqa I'tibar ma yakun: El vino como futuro vino",
+      "columns": {
+        "woertlich": "Significado literal",
+        "alaqa": "'Alaqa",
+        "metaphorisch": "Significado metafórico"
+      },
+      "cells": {
+        "r1": {
+          "woertlich": "Vino",
+          "alaqa": "I'tibar ma yakun",
+          "metaphorisch": "Uvas"
+        }
+      }
+    },
+    "vergleichstabelle-h183-alaqa-muqaraba": {
+      "title": "'Alaqa Muqaraba: Cerca de la incredulidad",
+      "columns": {
+        "woertlich": "Significado literal",
+        "alaqa": "'Alaqa",
+        "metaphorisch": "Significado metafórico"
+      },
+      "cells": {
+        "r1": {
+          "woertlich": "Volverse incrédulo",
+          "alaqa": "Muqaraba",
+          "metaphorisch": "Acercarse a la incredulidad"
+        }
+      }
+    }
+  }
+}

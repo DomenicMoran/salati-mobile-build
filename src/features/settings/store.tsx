@@ -3,6 +3,7 @@ import { createContext, useContext, useEffect, useMemo, useRef, useState, type R
 
 import { BEST_TAFSIRS, BEST_TRANSLATIONS } from '@/features/quran/api';
 import { setRecitationModel } from '@/features/hifz/whisperModel';
+import { logError } from '@/lib/errorLog';
 import { detectDeviceLocale } from '@/lib/locale-detect';
 import { ensureLocale, preloadLocale } from '@/lib/translate';
 import { AppSettings, DEFAULT_SETTINGS, SETTINGS_STORAGE_KEY, migrateAzanChoice } from './types';
@@ -21,6 +22,38 @@ const SettingsContext = createContext<SettingsContextValue | null>(null);
 export function SettingsProvider({ children }: { children: ReactNode }) {
   const [settings, setSettings] = useState<AppSettings>(DEFAULT_SETTINGS);
   const [loaded, setLoaded] = useState(false);
+  // Das Lesen wird schon im RENDER dieses Providers angestossen, nicht erst in
+  // seinem Effekt.
+  //
+  // Grund (Abnahme 1.54.0, gemessen am Release-Bau): AsyncStorage arbeitet auf
+  // Android einen SerialExecutor ab - eine Anfrage nach der anderen. React
+  // spuelt Effekte von innen nach aussen, die Kinder zuerst. JEDER Bildschirm
+  // unterhalb dieses Providers hatte seine Speicherzugriffe (Onboarding-Merker,
+  // OTA-Zeitstempel, Kompass-Hinweis ...) also bereits in die Warteschlange
+  // gelegt, bevor der Provider-Effekt ueberhaupt an die Reihe kam; die
+  // Spracheinstellung stand erst nach der ganzen Schlange fest. Im Mitschnitt
+  // unter Last: Splash-Ausblendung ab t=1423 ms, Einstellungen erst bei
+  // t=4553 ms - knapp drei Sekunden deutsche Oberflaeche bei persischer
+  // Einstellung.
+  //
+  // Der Render des Providers laeuft dagegen vor dem Render UND vor den Effekten
+  // aller Kinder: die Anfrage steht damit als erste in der Schlange.
+  const leseVorgang = useRef<Promise<string | null> | undefined>(undefined);
+  if (leseVorgang.current == null) {
+    let angefragt: Promise<string | null>;
+    try {
+      angefragt = AsyncStorage.getItem(SETTINGS_STORAGE_KEY);
+    } catch (fehler) {
+      // Wirft der Speicher schon beim Aufruf, darf das nicht den Render
+      // zerlegen — sonst stuende statt der Vorgabe ein weisser Bildschirm.
+      angefragt = Promise.reject(fehler);
+    }
+    // Behandelt wird der Fehlerfall unten im Effekt. Dieses leere catch haengt
+    // nur sofort einen Handler an, damit eine Ablehnung zwischen Render und
+    // Effekt nicht als unbehandelte Ablehnung auflaeuft.
+    angefragt.catch(() => {});
+    leseVorgang.current = angefragt;
+  }
   // Immer aktueller Settings-Stand für update() — vermeidet ein veraltetes
   // Merge bei mehreren synchronen update()-Aufrufen und erlaubt es, das
   // AsyncStorage-Schreib-Promise deterministisch zurückzugeben. Wird per Effekt
@@ -34,7 +67,8 @@ export function SettingsProvider({ children }: { children: ReactNode }) {
 
   useEffect(() => {
     let cancelled = false;
-    AsyncStorage.getItem(SETTINGS_STORAGE_KEY)
+    const gelesen = leseVorgang.current ?? AsyncStorage.getItem(SETTINGS_STORAGE_KEY);
+    gelesen
       .then(async (raw) => {
         if (cancelled) return;
         if (!raw) {
@@ -133,7 +167,15 @@ export function SettingsProvider({ children }: { children: ReactNode }) {
       })
       .finally(() => {
         if (!cancelled) setLoaded(true);
-      });
+      })
+      // `.finally` reicht eine Ablehnung unveraendert weiter — ohne dieses
+      // `.catch` liefe eine abgelehnte AsyncStorage.getItem()-Anfrage als
+      // unbehandelte Ablehnung auf (das `angefragt.catch(() => {})` oben haengt
+      // an einer eigenen, unabhaengigen Verzweigung desselben Promise und faengt
+      // diese Kette nicht ab). `loaded` wird ueber `.finally` trotzdem wahr,
+      // der Start haengt also so oder so nicht - hier geht es nur ums saubere
+      // Protokollieren, wie bei anderen Speicherfehlern im Repo (s. errorLog.ts).
+      .catch((fehler: unknown) => logError(fehler, 'settings: laden'));
     return () => {
       cancelled = true;
     };

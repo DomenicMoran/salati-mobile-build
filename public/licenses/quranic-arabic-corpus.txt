@@ -1,0 +1,46 @@
+Quranic Arabic Corpus
+Morphological annotation (word classes, roots, lemmas, grammatical features)
+of the Qur'an, version 0.4
+
+The following notice and terms of use are reproduced from the corpus file
+itself and are the legal basis for using the annotation in Salati.
+
+
+COPYRIGHT NOTICE AND TERMS OF USE
+
+    Quranic Arabic Corpus (morphology, version 0.4)
+    Copyright (C) 2011 Kais Dukes
+    License: GNU General Public License
+
+    The Quranic Arabic Corpus includes syntactic and morphological
+    annotation of the Quran, and builds on the verified Arabic text
+    distributed by the Tanzil project.
+
+    TERMS OF USE:
+    - Permission is granted to copy and distribute verbatim copies
+      of this file, but CHANGING IT IS NOT ALLOWED.
+    - This annotation can be used in any website or application,
+      provided its source (the Quranic Arabic Corpus) is clearly
+      indicated, and a link is made to http://corpus.quran.com to
+      enable users to keep track of changes.
+    - This copyright notice shall be included in all verbatim copies
+      of the text, and shall be reproduced appropriately in all works
+      derived from or containing substantial portion of this file.
+
+    Underlying Quran text: Tanzil Quran Text (Uthmani, version 1.0.2),
+    Copyright (C) 2008-2009 Tanzil.info, License: Creative Commons BY-ND
+    3.0 Unported. Source (Tanzil.info) must be indicated, a link to
+    http://tanzil.info is required, and the text must not be changed.
+
+
+WIE SALATI DIE AUFLAGE ERFÜLLT
+
+Salati nennt die Quranic Arabic Corpus als Grundlage der Morphologie
+(Wortarten, Wurzeln, Grundformen, grammatische Merkmale) im Koran-Lexikon
+und auf der Lizenzseite und verlinkt dort auf http://corpus.quran.com,
+wie von den Nutzungsbedingungen verlangt.
+
+Aus der Rohannotation erzeugt Salati eigene, für die App aufbereitete
+Datendateien (roots.json, lemmas.json, meta.json sowie die einzelnen
+Suren-Dateien) — der Ursprungsinhalt der Annotation selbst wird dabei
+unverändert übernommen, nur Format und Struktur sind neu.

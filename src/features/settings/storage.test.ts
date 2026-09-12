@@ -5,11 +5,16 @@ import { OFFLINE_AUDIO_INDEX_KEY } from '@/features/quran/offline-audio';
 import { QUERY_CACHE_STORAGE_KEY, queryClient } from '@/lib/queryClient';
 
 import {
+  baueDatenBestaende,
   clearAppCache,
+  deleteDataStore,
   formatBytes,
   getDirectorySize,
+  dokumentOrdnerName,
+  getDocumentEntrySizes,
   getQueryCacheBytes,
   getReciterAudioSizes,
+  getStorageOverview,
   parseOfflineQuranCache,
   utf8ByteLength,
 } from './storage';
@@ -246,5 +251,211 @@ describe('storage: clearAppCache', () => {
     expect(FileSystem.deleteAsync).toHaveBeenCalledWith('file:///cache/stray-export.ics', { idempotent: true });
     expect(FileSystem.deleteAsync).toHaveBeenCalledWith('file:///cache/temp-audio.wav', { idempotent: true });
     clearSpy.mockRestore();
+  });
+});
+
+
+describe('storage: baueDatenBestaende', () => {
+  const NICHTS = { quranWords: 0, handouts: 0, kiCorpus: 0, courses: 0, documentTotal: 0, anderweitigGezaehlt: 0 };
+
+  // Der Fall, der ANSCHLAGEN MUSS: im Dokumentverzeichnis liegen 500 Byte, die
+  // keine Kategorie fuer sich beansprucht - genau die Lage, die die drei
+  // vergessenen Ordner monatelang unsichtbar gemacht hat. Sie muessen als
+  // Restposten auftauchen, sonst faellt die Differenz aus der Gesamtsumme.
+  it('weist nicht zugeordnete Bytes des Dokumentverzeichnisses als Restposten aus', () => {
+    const { bytes, entries } = baueDatenBestaende({
+      ...NICHTS,
+      quranWords: 300,
+      anderweitigGezaehlt: 200,
+      documentTotal: 1000,
+    });
+    expect(entries).toContainEqual({ key: 'other', bytes: 500, deletable: false });
+    expect(bytes).toBe(800);
+  });
+
+  // Die Gegenprobe, die NICHT anschlagen darf: ist jedes Byte des
+  // Dokumentverzeichnisses bereits benannt, darf kein Restposten erfunden
+  // werden - sonst stuende dauerhaft ein Phantom-Eintrag in der Uebersicht.
+  it('erfindet keinen Restposten, wenn das Dokumentverzeichnis vollstaendig erklaert ist', () => {
+    const { bytes, entries } = baueDatenBestaende({
+      ...NICHTS,
+      quranWords: 300,
+      anderweitigGezaehlt: 200,
+      documentTotal: 500,
+    });
+    expect(entries.map((e) => e.key)).toEqual(['quranWords']);
+    expect(bytes).toBe(300);
+  });
+
+  // Android mit System-DownloadManager: das 1,1-GB-Modell liegt AUSSERHALB des
+  // Dokumentverzeichnisses. Die Subtraktion darf dann nicht ins Minus laufen.
+  it('bleibt bei Posten ausserhalb des Dokumentverzeichnisses bei 0 statt negativ zu werden', () => {
+    const { bytes, entries } = baueDatenBestaende({
+      ...NICHTS,
+      documentTotal: 100,
+      anderweitigGezaehlt: 900,
+    });
+    expect(entries).toEqual([]);
+    expect(bytes).toBe(0);
+  });
+
+  it('blendet leere Bestaende aus und sortiert den Rest absteigend nach Groesse', () => {
+    const { entries } = baueDatenBestaende({
+      ...NICHTS,
+      quranWords: 10,
+      kiCorpus: 30,
+      courses: 20,
+      documentTotal: 60,
+    });
+    expect(entries).toEqual([
+      { key: 'kiCorpus', bytes: 30, deletable: true },
+      { key: 'courses', bytes: 20, deletable: true },
+      { key: 'quranWords', bytes: 10, deletable: true },
+    ]);
+  });
+});
+
+describe('storage: dokumentOrdnerName', () => {
+  // MUSS greifen: der Wort-fuer-Wort-Cache liegt zwei Ebenen tief
+  // (wbw/v2/<sprache>/) - gesucht ist der Eintrag, den das
+  // Dokumentverzeichnis selbst kennt.
+  it('nennt den ersten Abschnitt unterhalb des Dokumentverzeichnisses', () => {
+    expect(dokumentOrdnerName('file:///doc/wbw/v2/ur/')).toBe('wbw');
+    expect(dokumentOrdnerName('file:///doc/wortliste/')).toBe('wortliste');
+  });
+
+  // Darf NICHT greifen: der Android-DownloadManager legt das Modell ausserhalb
+  // ab. Ein Treffer waere hier schlimmer als keiner - die Groesse wuerde vom
+  // Restposten abgezogen, obwohl sie nie darin steckte.
+  it('liefert nichts fuer Pfade ausserhalb des Dokumentverzeichnisses', () => {
+    expect(dokumentOrdnerName('/storage/emulated/0/Android/data/app/files/modell.gguf')).toBe('');
+    expect(dokumentOrdnerName('file:///cache/temp.wav')).toBe('');
+  });
+});
+
+describe('storage: getDocumentEntrySizes', () => {
+  beforeEach(() => {
+    fsMock.__reset();
+    jest.clearAllMocks();
+  });
+
+  it('misst jeden Eintrag des Dokumentverzeichnisses, laesst den AsyncStorage-Ordner aber aus', async () => {
+    // RCTAsyncLocalStorage_V1 ist auf iOS der Speicher von AsyncStorage selbst
+    // und liegt im Dokumentverzeichnis. Sein Inhalt zaehlt bereits als
+    // Query-Cache/Offline-Koran - hier mitgezaehlt waere er doppelt.
+    fsMock.__setDir('file:///doc/', ['morphologie', 'RCTAsyncLocalStorage_V1']);
+    fsMock.__setDir('file:///doc/morphologie/', ['2.json']);
+    fsMock.__setFile('file:///doc/morphologie/2.json', 700);
+    fsMock.__setDir('file:///doc/RCTAsyncLocalStorage_V1/', ['manifest.json']);
+    fsMock.__setFile('file:///doc/RCTAsyncLocalStorage_V1/manifest.json', 999_999);
+
+    expect([...(await getDocumentEntrySizes())]).toEqual([['morphologie', 700]]);
+  });
+
+});
+
+describe('storage: getStorageOverview zaehlt die Datei-Zwischenspeicher mit', () => {
+  beforeEach(async () => {
+    await AsyncStorage.clear();
+    fsMock.__reset();
+    jest.clearAllMocks();
+  });
+
+  /** Legt eine Datei an und haengt sie in ihren (flachen) Elternordner ein. */
+  function datei(ordner: string, name: string, bytes: number) {
+    fsMock.__setDir(ordner, [name]);
+    fsMock.__setFile(`${ordner}${name}`, bytes);
+  }
+
+  it('zaehlt Morphologie, Wort-fuer-Wort und Wortliste mit - sie fehlten bis 2026-09 vollstaendig', async () => {
+    fsMock.__setDir('file:///doc/', [
+      'morphologie',
+      'wbw',
+      'wortliste',
+      'handouts',
+      'ki-korpus',
+      'study-courses',
+      'dm-download-id.txt',
+      'RCTAsyncLocalStorage_V1',
+    ]);
+    datei('file:///doc/morphologie/', '2.json', 300_000);
+    fsMock.__setDir('file:///doc/wbw/', ['v2']);
+    fsMock.__setDir('file:///doc/wbw/v2/', ['ur']);
+    datei('file:///doc/wbw/v2/ur/', '2.json', 200_000);
+    // Gemessener Ist-Wert vom Geraet: Sure 2 allein ist 1,08 MB gross.
+    datei('file:///doc/wortliste/', '2.json', 1_080_000);
+    datei('file:///doc/handouts/', 'ep01.pdf', 40_000);
+    datei('file:///doc/ki-korpus/', 'korpus-tr.json', 1_600_000);
+    datei('file:///doc/study-courses/', 'tajwid.json', 500_000);
+    fsMock.__setFile('file:///doc/dm-download-id.txt', 5);
+    datei('file:///doc/RCTAsyncLocalStorage_V1/', 'manifest.json', 999_999);
+
+    const overview = await getStorageOverview();
+
+    expect(overview.otherData.entries).toEqual([
+      { key: 'kiCorpus', bytes: 1_600_000, deletable: true },
+      { key: 'quranWords', bytes: 1_580_000, deletable: true },
+      { key: 'courses', bytes: 500_000, deletable: true },
+      { key: 'handouts', bytes: 40_000, deletable: true },
+      // die uebrig gebliebene dm-download-id.txt - kein bekannter Bestand,
+      // faellt aber trotzdem nicht mehr aus der Summe.
+      { key: 'other', bytes: 5, deletable: false },
+    ]);
+    expect(overview.otherData.bytes).toBe(3_720_005);
+    // Die Gesamtsumme traegt die neuen Bestaende - und NICHT den
+    // AsyncStorage-Ordner (der zaehlt als Cache/Offline-Koran).
+    expect(overview.totalBytes).toBe(3_720_005);
+  });
+
+  it('vermisst eine Datei genau einmal - sonst laeuft der Bildschirm doppelt ueber tausende Dateien', async () => {
+    // Podcast-Folgen wurden bis zu diesem Umbau zweimal vermessen: einmal fuer
+    // die eigene Kategorie, einmal fuer die Gesamtgroesse des
+    // Dokumentverzeichnisses. Bei einem vollstaendigen Mushaf (ueber 6000
+    // MP3-Dateien) ist das die doppelte Wartezeit vor der ersten Zahl.
+    fsMock.__setDir('file:///doc/', ['podcast']);
+    datei('file:///doc/podcast/', '1.mp3', 5_000);
+
+    await getStorageOverview();
+
+    const gelesen = (FileSystem.getInfoAsync as jest.Mock).mock.calls
+      .map((c) => c[0] as string)
+      .filter((uri) => uri === 'file:///doc/podcast/1.mp3');
+    expect(gelesen).toHaveLength(1);
+  });
+
+  it('meldet keine Bestaende, wenn im Dokumentverzeichnis nichts liegt', async () => {
+    fsMock.__setDir('file:///doc/', []);
+    const overview = await getStorageOverview();
+    expect(overview.otherData).toEqual({ bytes: 0, entries: [] });
+    expect(overview.totalBytes).toBe(0);
+  });
+});
+
+describe('storage: deleteDataStore', () => {
+  beforeEach(async () => {
+    await AsyncStorage.clear();
+    fsMock.__reset();
+    jest.clearAllMocks();
+  });
+
+  it('loescht fuer die Koran-Wortdaten genau die drei Verzeichnisse', async () => {
+    await deleteDataStore('quranWords');
+    const geloescht = (FileSystem.deleteAsync as jest.Mock).mock.calls.map((c) => c[0] as string);
+    expect(geloescht.sort()).toEqual([
+      'file:///doc/morphologie/',
+      'file:///doc/wbw/',
+      'file:///doc/wortliste/',
+    ]);
+  });
+
+  it('raeumt mit den Kursdaten auch die Versions-Schluessel weg (sonst laedt der Kurs nie wieder nach)', async () => {
+    await AsyncStorage.setItem('salatibox:course-ver-tajwid', '7');
+    await AsyncStorage.setItem('salatibox:bleibt', 'x');
+
+    await deleteDataStore('courses');
+
+    expect(await AsyncStorage.getItem('salatibox:course-ver-tajwid')).toBeNull();
+    // Gegenprobe: fremde Schluessel bleiben unangetastet.
+    expect(await AsyncStorage.getItem('salatibox:bleibt')).toBe('x');
   });
 });
