@@ -1,0 +1,1046 @@
+{
+  "schema": 1,
+  "lang": "sw",
+  "bereich": "partikel-syntax",
+  "eintraege": {
+    "harf": {
+      "titel": "Herufi (Kipashio)",
+      "ar": "حَرْف",
+      "umschrift": "Harf",
+      "erklaerung": [
+        "Harf ni aina ya tatu ya maneno katika Kiarabu, pamoja na Ismu (nomino) na Fi'li (kitenzi). Herufi yenyewe haina maana kamili peke yake — inapata maana tu ikiungana na neno linalofuata.",
+        "Wakati Ismu na Fi'li hubeba sifa kama jinsia, wingi au wakati, Herufi haina sifa hizo hata kidogo. Kazi yake pekee ni ya kisarufi: kuunganisha, kukanusha, kuuliza, kuweka sharti, kuita, kusisitiza, au kuamua hadhi ya kisarufi (i'rabu) ya neno linalofuata.",
+        "Kwa sababu Herufi ina matumizi mengi hivyo, imegawanyika katika makundi madogo mengi yenye tabia zake — vihusishi, viunganishi, herufi za ukanushaji, herufi za kuuliza, herufi za sharti na mengineyo. Kila kundi linaelezwa katika somo lake tofauti."
+      ],
+      "erkennung": [
+        "Herufi haiwezi kubadilishwa umbo kama Ismu (haina hadhi ya i'rabu, wingi wala jinsia) na kwa kawaida ni fupi sana — mara nyingi herufi moja hadi tatu tu.",
+        "Katika uchambuzi wa maneno, kipande cha Herufi hubeba alama yake maalum badala ya N (Nomino) au V (Kitenzi) — kwa mfano P kwa kihusishi, CONJ kwa kiunganishi, au NEG kwa ukanushaji.",
+        "Neno zima linaweza hata kuundwa na vipande kadhaa vya Herufi vilivyounganishwa mfululizo, bila kubeba mzizi wowote wa Ismu au Fi'li."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 9,
+          "wort": 5,
+          "zeigt": "neno وَمَا limeundwa na vipande viwili tu vya Herufi (وَ na مَا), bila mzizi wowote wa Ismu au Fi'li",
+          "warum": "linaonyesha kwamba Herufi kwa hakika haibebi sehemu yake ya kisarufi kama jinsia au wingi — hapa herufi mbili zimepangwa pamoja katika neno moja la maandishi"
+        },
+        {
+          "sure": 1,
+          "vers": 1,
+          "wort": 1,
+          "zeigt": "kipande cha mwanzo بِ katika بِسْمِ kinabeba alama ya POS P (Harf Jarr)",
+          "warum": "linathibitisha, katika neno la kwanza kabisa la Qur'ani, mfano wa pili wa Herufi — hapa ni kihusishi badala ya ukanushaji au kiunganishi"
+        }
+      ],
+      "lernen": [
+        "Jifunze kwanza mgawanyo mkuu: kihusishi, kiunganishi, ukanushaji, kiulizi, kisharti, kiito — kisha ndipo maneno mahususi ya kila kundi.",
+        "Zoea kutenganisha kipande cha Herufi na mzizi katika aya halisi: Je, kinachobaki baada ya kuondoa Herufi bado kina maana peke yake?",
+        "Weka akilini swali kuu kwa kila kundi: Je, Herufi hii inabadilisha hadhi (i'rabu) ya neno linalofuata, au la?"
+      ],
+      "tabellen": [],
+      "siehe": ["huruf-jarr", "huruf-atf", "verneinung"]
+    },
+
+    "huruf-jarr": {
+      "titel": "Vihusishi (Huruf al-Jarr)",
+      "ar": "حُرُوف الجَرّ",
+      "umschrift": "Huruf al-Jarr",
+      "erklaerung": [
+        "Harf Jarr (kihusishi) huweka Ismu linalofuata mara moja katika hadhi ya Jarr (kesi ya kumiliki). Pamoja, Herufi na Ismu huunda kipande cha Jaar-Majroor: Jaar ni kihusishi chenyewe, Majroor ni Ismu lililowekwa katika hadhi ya Jarr kwa sababu yake.",
+        "Miongoni mwa Huruf Jarr za kawaida zaidi ni بِ (kwa/kwa njia ya), لِ (kwa ajili ya), كَ (kama), مِن (kutoka), عَن (kuhusu), عَلَى (juu ya), إِلَى (kuelekea), فِي (ndani ya) na حَتَّى (mpaka) — pamoja na وَ na تَ kama viashiria vya nadra vya kiapo (kwa mfano tu pamoja na jina la Allah).",
+        "Huruf Jarr za herufi moja (بِـ، كَـ، لِـ، تَـ، وَـ) haziandikwi kama neno lake peke yake, bali huambatanishwa moja kwa moja na Ismu linalofuata na hubeba alama ya sauti isiyobadilika.",
+        "Tafsiri ya Kiswahili ya Harf Jarr si lazima ichukuliwe kihalisi kila mara: Ni kihusishi gani kinachoenda na kitenzi gani mara nyingi hufuata mantiki yake ya Kiarabu, ambayo inaweza kutofautiana na kihusishi cha Kiswahili."
+      ],
+      "erkennung": [
+        "Harf Jarr husimama moja kwa moja kabla ya Ismu (ambalo laweza kuwa kiwakilishi pia) — kamwe kabla ya kitenzi.",
+        "Kwa Huruf Jarr za herufi moja, angalia kwa makini: herufi ile ile mwanzoni mwa neno inaweza kuwa sehemu tu ya mzizi wa neno (mfano كَـ katika كَافِر ni sehemu ya mzizi كفر, hivyo si Harf Jarr)."
+      ],
+      "belege": [
+        {
+          "sure": 1,
+          "vers": 1,
+          "wort": 1,
+          "zeigt": "بِسْمِ linaanza na Harf Jarr iliyoambatanishwa بِ, inayoweka Ismu linalofuata (سْمِ) katika hadhi ya Jarr",
+          "warum": "linathibitisha, katika neno la kwanza kabisa la Qur'ani, umbo la herufi-moja lililoambatanishwa moja kwa moja la Harf Jarr"
+        },
+        {
+          "sure": 1,
+          "vers": 2,
+          "wort": 2,
+          "zeigt": "kipande cha mwanzo لِ katika لِلَّهِ kinabeba alama ya POS P",
+          "warum": "linathibitisha Harf Jarr ya pili ya herufi moja (لِ, 'kwa ajili ya') yenye alama ya sauti Kasra isiyobadilika"
+        }
+      ],
+      "lernen": [
+        "Jifunze orodha ya Huruf Jarr kwa kuzitenganisha kwanza kati ya umbo la herufi moja na umbo la herufi kadhaa — zile za herufi moja unahitaji pia kujua alama yake ya sauti isiyobadilika.",
+        "Tafuta katika aya uliyoichagua kila kipande cha Jaar-Majroor na taja Jaar na Majroor kila kimoja peke yake.",
+        "Kila unapojifunza kitenzi kipya, kumbuka mara moja ni Harf Jarr gani hukienda navyo kwa kawaida — hii itakuepusha na makosa ya tafsiri baadaye."
+      ],
+      "tabellen": [],
+      "siehe": ["harf", "mudaf-ilayh"]
+    },
+
+    "huruf-atf": {
+      "titel": "Viunganishi (Huruf al-'Atf)",
+      "ar": "حُرُوف العَطْف",
+      "umschrift": "Huruf al-'Atf",
+      "erklaerung": [
+        "Huruf al-'Atf huunganisha vipengele viwili vya kisarufi vyenye hadhi sawa — maneno mawili, vipande viwili, au sentensi mbili nzima. Kipengele kinachofuata kinaitwa Ma'tuf, kile cha awali kinachounganishiwa kinaitwa Ma'tuf 'Alayh.",
+        "Athari muhimu zaidi ya Harf al-'Atf: huhamisha hadhi ya kisarufi (i'rabu) ya Ma'tuf 'Alayh bila kubadilika kwenda kwa Ma'tuf. Ikiwa neno la kwanza liko katika hadhi ya Jarr, basi neno lililounganishwa nalo pia litakuwa katika hadhi ya Jarr — hata kama maneno mengi yameunganishwa mfululizo.",
+        "Kiunganishi kinachotumika zaidi ni وَ (na) — kinaunganisha kwa upande wowote, bila kudai mpangilio wowote au pengo la wakati. فَ kinaunganisha kwa maana ya 'kisha mara moja' (mfululizo wa papo hapo), ثُمَّ kwa maana ya 'kisha' ikiwa na pengo refu zaidi la wakati. أَوْ humaanisha 'au' kwa maana ya uchaguzi, أَمْ pia humaanisha 'au', lakini kwa kawaida ndani ya swali ('ni ipi kati ya hizo mbili?'). Zaidi ya hayo, بَلْ (bali) na لَكِنْ (lakini) pia huunganisha kwa maana kali zaidi ya upinzani.",
+        "فَ, mbali na kazi hii rahisi ya kuunganisha, kina majukumu mengine mawili tofauti kabisa kisarufi yanayobeba umbo lile lile la herufi lakini yenye athari zake: فاء السببية ya kisababu na فاء الجواب/الفاء الرابطة ya kuunganisha. Yote mawili yanashughulikiwa katika masomo yao tofauti kwa sababu ni rahisi kuchanganywa na فَ ya kawaida inayohamisha hadhi."
+      ],
+      "erkennung": [
+        "Jaribio la 'Atf ya kawaida: Je, neno baada ya herufi hii linabeba hadhi sawa (Raf'/Nasb/Jarr) na neno lililotangulia? Ikiwa ndiyo, ni muunganisho rahisi.",
+        "Ikiwa baada ya فَ kunapatikana kitenzi cha wakati uliopo chenye mwisho wa Nasb unaoonekana au usioonekana (badala ya hadhi ile ile ya awali), huenda si 'Atf ya kawaida, bali فاء السببية (angalia somo lake).",
+        "Ikiwa فَ inaanza sentensi inayojibu sentensi ya sharti, kiapo, au mada, bila kubadilisha hadhi ya neno lolote lenyewe, kwa kawaida ni فاء الجواب/الرابطة (angalia somo lake)."
+      ],
+      "belege": [
+        {
+          "sure": 1,
+          "vers": 7,
+          "wort": 9,
+          "zeigt": "ٱلضَّآلِّينَ linabeba uhusiano conj (thamani ya msingi kulingana na relationBasis) na limeunganishwa na Ismu lililotangulia kupitia وَ",
+          "warum": "linathibitisha Huruf al-'Atf kwa وَ mwishoni mwa Al-Fatiha — makundi mawili ya watu yamepangwa mfululizo yakiwa na hadhi sawa"
+        },
+        {
+          "sure": 2,
+          "vers": 196,
+          "wort": 31,
+          "zeigt": "صَدَقَةٍ linabeba uhusiano conj — limeunganishwa kupitia أَوْ na Ismu lililotangulia صِيَامٍ",
+          "warum": "linathibitisha kiunganishi أَوْ (au) kama uchaguzi halisi kati ya kufunga, sadaka, au kutoa kafara"
+        },
+        {
+          "sure": 2,
+          "vers": 28,
+          "wort": 10,
+          "zeigt": "يُحْيِيكُمْ linabeba uhusiano conj — limeunganishwa kupitia ثُمَّ na kitenzi kilichotangulia",
+          "warum": "linathibitisha ثُمَّ kama kiunganishi chenye maana ya pengo la wakati kati ya matendo yaliyounganishwa (kufisha — kisha kuhuisha tena)"
+        },
+        {
+          "sure": 2,
+          "vers": 140,
+          "wort": 17,
+          "zeigt": "ٱللَّهُ linabeba uhusiano conj — limeunganishwa kupitia أَمِ na neno lililotangulia ndani ya swali",
+          "warum": "linathibitisha أَمْ kama kiunganishi ndani ya swali halisi la kuchagua kati ya mbili ('je, ninyi mnajua zaidi, au Allah?')"
+        }
+      ],
+      "lernen": [
+        "Jifunze viunganishi sita vya msingi و ف ثم أو أم pamoja na tofauti yake ya maana (ya upande wowote / ya papo hapo / yenye pengo / ya uchaguzi / ya uchaguzi wa swali), badala ya kuvitafsiri vyote kwa 'na/au' tu.",
+        "Fanya mazoezi ya jaribio la uhamishaji wa hadhi katika aya kadhaa: Bainisha hadhi ya Ma'tuf 'Alayh, kisha angalia kama Ma'tuf inabeba hadhi ile ile.",
+        "Kila unapokutana na فَ, angalia kwa utaratibu uwezekano wote watatu kwa zamu: 'Atf ya kawaida, فاء السببية, au فاء الجواب — kabla ya kutafsiri.",
+        "Linganisha mifano yako mwenyewe na ushahidi uliopo hapa na taja Ma'tuf na Ma'tuf 'Alayh kila kimoja."
+      ],
+      "tabellen": [],
+      "siehe": ["faa-sababiyya", "faa-jawab", "badal", "sifah"]
+    },
+
+    "faa-sababiyya": {
+      "titel": "Faa ya Kisababu",
+      "ar": "فَاء السَّبَبِيَّة",
+      "umschrift": "Faa' as-Sababiyya",
+      "erklaerung": [
+        "Faa' as-Sababiyya inaonekana sawa kabisa na فَ ya kawaida ya kuunganisha, lakini ina athari tofauti kabisa kisarufi: huleta kitenzi cha wakati uliopo (Fi'l Mudari') ambacho huwekwa katika hadhi ya Nasb — badala ya kuchukua tu hadhi ya neno lililotangulia.",
+        "Kimaana huonyesha matokeo au tokeo ambalo lingetokea IKIWA jambo lililotangulia halijazingatiwa — mara nyingi hutafsiriwa kwa 'ili' au 'ili isije'. Kwa kawaida hufuata baada ya katazo, amri, swali, au tamanio.",
+        "Katika mkusanyiko wa maandishi, فَ hii inatokea mara 88 tu — chini sana kuliko فاء الجواب inayounganisha yenye mifano 350, ijapokuwa zote mbili zinaonekana kama mfululizo ule ule wa herufi فَ."
+      ],
+      "erkennung": [
+        "Kinachoamua si maana bali umbo la kitenzi kinachofuata: Ikiwa baada yake kunasimama Fi'l Mudari' katika hadhi ya Nasb (inayoonekana kwa mwisho wa Fatha au kwa kukosekana kwa Nuni katika maumbo matano ya vitenzi), basi ni Faa' as-Sababiyya.",
+        "Muktadha wa kawaida kabla yake: katazo (لا + kitenzi), amri, swali, au tamanio — kamwe si kauli rahisi inayopangwa tu mfululizo."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 35,
+          "wort": 16,
+          "zeigt": "kipande cha mwanzo فَ katika فَتَكُونَا kinabeba alama ya POS CAUS",
+          "warum": "linathibitisha Faa' as-Sababiyya baada ya katazo ('msiukaribie mti huu, ili msije mkawa miongoni mwa madhalimu') — kitenzi kinachofuata kiko katika hadhi ya Nasb, si katika hadhi ya katazo lililotangulia"
+        },
+        {
+          "sure": 2,
+          "vers": 245,
+          "wort": 8,
+          "zeigt": "kipande cha mwanzo فَ katika فَيُضَٰعِفَهُۥ kinabeba alama ya POS CAUS",
+          "warum": "linathibitisha Faa' as-Sababiyya baada ya swali la kejeli ('ni nani atakayemkopesha Allah mkopo mzuri, ili Aupanue kwa ajili yake?')"
+        }
+      ],
+      "lernen": [
+        "Kwa kila فَ inayofuata katazo, amri, swali, au tamanio, uliza kwanza: Je, kitenzi kinachofuata kiko katika hadhi ya Nasb? Ikiwa ndiyo, ni Faa' as-Sababiyya, si 'Atf ya kawaida.",
+        "Jaribu kutafsiri kwanza kwa 'kisha' — ikiwa haitoi maana ya kimantiki, lakini 'ili/ili isije' inatoa maana, hiyo ni dalili kubwa ya tafsiri ya kisababu.",
+        "Linganisha ushahidi uliopo hapa moja kwa moja na ushahidi wa فاء الجواب — zote mbili zinaanza sawa, lakini zina athari tofauti kabisa kisarufi."
+      ],
+      "tabellen": [],
+      "siehe": ["huruf-atf", "faa-jawab"]
+    },
+
+    "faa-jawab": {
+      "titel": "Faa ya Kujibu (Jawab na Rabita)",
+      "ar": "فَاء الجَوَاب / الفَاء الرَّابِطَة",
+      "umschrift": "Faa' al-Jawaab / al-Faa' ar-Raabita",
+      "erklaerung": [
+        "Pia فَ hii inaonekana sawa na فَ ya kawaida ya kuunganisha, lakini — tofauti na Faa' as-Sababiyya — HAIBADILISHI hadhi ya neno linalofuata. Ni daraja tu: huunganisha sentensi inayofuata na kilichosemwa hapo awali, mara nyingi ikiwa jibu la sentensi ya sharti (Jawab ash-Shart), na mara chache kama kiungo kati ya mada (Mubtada) na kauli yenye umbo la sentensi.",
+        "Hutumika hasa pale ambapo sentensi ya jibu yenyewe haiwezi kusimama moja kwa moja kama Jawab ash-Shart kisarufi — kwa mfano kwa sababu ni sentensi ya kiima, inaanza na إِنَّ, au ina ukanushaji na لَنْ.",
+        "Katika mkusanyiko wa maandishi, فَ hii ina mifano 350, idadi kubwa zaidi kuliko فاء السببية ya kisababu (mifano 88) — zote mbili huonekana kama mfululizo ule ule wa herufi فَ na hutofautishwa tu kwa athari yake ya kisarufi."
+      ],
+      "erkennung": [
+        "Tofauti na Faa' as-Sababiyya, kitenzi baada ya فَ hii kinabaki katika hali yake halisi (Raf' au Jazm, kutegemea aina ya sentensi) — HAKILAZIMISHWI kuingia hadhi ya Nasb.",
+        "Kwa kawaida husimama mwanzoni mwa sentensi ya jibu la sharti na mara nyingi hufuatiwa moja kwa moja na إِنَّ, قَدْ, au sentensi ya kiima."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 186,
+          "wort": 5,
+          "zeigt": "kipande cha mwanzo فَ katika فَإِنِّى kinabeba alama ya POS RSLT, neno zima likibeba uhusiano rslt",
+          "warum": "linathibitisha Faa' al-Jawaab kama kianzio cha sentensi ya jibu baada ya sentensi ya sharti ya إذا ('watumishi wangu wakikuuliza kunihusu — basi mimi niko karibu'), bila kuleta إِنِّي inayofuata katika hadhi ya Nasb"
+        },
+        {
+          "sure": 2,
+          "vers": 282,
+          "wort": 10,
+          "zeigt": "فَٱكْتُبُوهُ linabeba uhusiano rslt, likianzishwa na kipande cha mwanzo فَ chenye alama ya POS RSLT",
+          "warum": "linathibitisha Faa' al-Jawaab kama jibu la sentensi ya sharti iliyoanzishwa na إِذَا kuhusu kuandika madeni"
+        }
+      ],
+      "lernen": [
+        "Weka akilini jaribio la kutofautisha: Je, hadhi/hali ya neno linalofuata HAIBADILIKI (linabaki Raf' au Jazm)? Basi ni Faa' al-Jawaab, si Faa' as-Sababiyya.",
+        "Tafuta kwa makusudi sentensi za sharti zilizoanzishwa na إِذَا na إِنْ na angalia kama sentensi ya jibu inaanza na فَ na kwa nini (sentensi ya kiima? إِنَّ? ukanushaji?).",
+        "Tengeneza jedwali lako mwenyewe la safu mbili lenye mifano ya فاء السببية na فاء الجواب, ili usizichanganye."
+      ],
+      "tabellen": [],
+      "siehe": ["huruf-atf", "faa-sababiyya", "shart"]
+    },
+
+    "verneinung": {
+      "titel": "Ukanushaji",
+      "ar": "حُرُوف النَّفْي",
+      "umschrift": "Huruf an-Nafy",
+      "erklaerung": [
+        "Kwa ukanushaji kuna zana kadhaa, kila moja ikiwa maalum kwa wakati fulani au aina fulani ya sentensi: لَمْ hukanusha wakati uliopita kwa kutumia kitenzi cha wakati uliopo na huweka kitenzi katika hadhi ya Jazm (Majzum); لَنْ hukanusha wakati ujao kwa kitenzi cha wakati uliopo na huweka katika hadhi ya Nasb (Mansub); لَا hukanusha wakati wa sasa kwa kitenzi cha wakati uliopo, bila kubadilisha hadhi; مَا hukanusha vitenzi vya wakati uliopita na wakati uliopo pia, mara nyingi katika muktadha wa kukataa au mjadala, bila kubadilisha hadhi pia.",
+        "لَيْسَ kisarufi si Herufi, bali ni kitenzi kisichokamilika (angalia Kaana na Dada Zake) — hukanusha sentensi za kiima na huweka Khabari yake katika hadhi ya Nasb, wakati مَا kama ukanushaji wa sentensi ya kiima huacha Khabari katika hadhi ya Raf'.",
+        "Kumbuka muhimu: مَا ni miongoni mwa maneno yenye matumizi mengi zaidi katika Kiarabu. Mara nyingi HAILI ukanushaji, bali ni kiwakilishi cha uhusiano ('kile ambacho'), kiulizi ('nini?'), au chembe ya sharti/jina la kitendo. Je, مَا inakanusha au la, huamuliwa na muktadha wa sentensi pekee.",
+        "Zaidi ya hayo, kuna لَا النَّافِيَة لِلْجِنْس (ukanushaji kamili) kwa maana ya 'hakuna kabisa...' — Ismu linalofuata husimama likiwa mabni juu ya Fatha katika hadhi ya Nasb."
+      ],
+      "erkennung": [
+        "مَا ni ukanushaji pale ambapo baada yake kunasimama sentensi kamili yenye Fa'ili/Mubtada yake, inayokanushwa kama kauli.",
+        "مَا SI ukanushaji pale inapochukua nafasi ya kipengele cha sentensi (kwa mfano yambwa au kiima cha kitenzi) na inaweza kubadilishwa kimaana na 'kile ambacho'.",
+        "لَا النَّافِيَة لِلْجِنْس hutambuliwa kwa kuwa mara moja baada yake kunasimama Ismu lisilo na kikomo bila Tanwini ('hakuna kabisa...')."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 9,
+          "wort": 6,
+          "zeigt": "يَخْدَعُونَ linabeba uhusiano neg, مَا lililotangulia (neno la 5) likibeba alama ya POS NEG",
+          "warum": "linathibitisha مَا kama ukanushaji halisi ('na hawadanganyi ila nafsi zao wenyewe')"
+        },
+        {
+          "sure": 2,
+          "vers": 29,
+          "wort": 5,
+          "zeigt": "مَّا hapa HAIBEBI uhusiano wa ukanushaji, bali uhusiano wa Obj (yambwa ya kitenzi خَلَقَ), kipande kinabeba POS REL",
+          "warum": "linathibitisha waziwazi kesi ya tahadhari: katika Sura hiyo hiyo fupi, mistari michache baadaye مَا inaonekana kama kiwakilishi cha uhusiano ('kile Alichokiumba kwa ajili yenu duniani') — si ukanushaji"
+        }
+      ],
+      "lernen": [
+        "Tengeneza jedwali la wakati → zana husika ya ukanushaji → hadhi inayosababishwa (لَمْ/Jazm, لَنْ/Nasb, لَا na مَا/hazibadiliki).",
+        "Fanya mazoezi kwa jozi ya ushahidi uliopo hapa: Eleza kwa maneno yako mwenyewe kwa nini مَا katika 2:9 ni ukanushaji na katika 2:29 sivyo.",
+        "Kumbuka لَيْسَ kama kitenzi, si Herufi — hii inaeleza kwa nini peke yake linaweza kuweka Khabari katika hadhi ya Nasb, wakati مَا haliwezi."
+      ],
+      "tabellen": [],
+      "siehe": ["nahy", "lam-al-amr", "kaana-wa-akhawatuha"]
+    },
+
+    "lam-al-amr": {
+      "titel": "Lamu ya Amri",
+      "ar": "لَام الأَمْر",
+      "umschrift": "Laam al-Amr",
+      "erklaerung": [
+        "Laam al-Amr ni لْ inayoambatanishwa kabla ya kitenzi cha wakati uliopo (Fi'l Mudari'), na huunda amri isiyo ya moja kwa moja — kwa kawaida kwa nafsi ya tatu ('yeye/wao afanye/wafanye') au, kwa umbo la heshima zaidi, hata kwa nafsi ya kwanza au ya pili. Kitenzi kwa sababu hiyo huwekwa katika hadhi ya Jazm (Majzum).",
+        "Kisarufi, Laam al-Amr ni Herufi, si kitenzi — tofauti na amri ya moja kwa moja (Fi'l Amr), ambayo ni umbo lake la kitenzi lililopangwa tayari. Zote mbili huonyesha amri, lakini Laam al-Amr hufanya hivyo kupitia kitenzi cha wakati uliopo, si kupitia umbo lake la amri.",
+        "Katika mkusanyiko wa maandishi, لْ hii hutokea mara 78 — mara nyingi ikiwa na وَ au فَ mbele yake."
+      ],
+      "erkennung": [
+        "لْ moja kwa moja kabla ya kitenzi cha wakati uliopo, ambacho mwisho wake unaonyesha Jazm (Nuni iliyoondolewa katika maumbo matano ya vitenzi, Sukuni katika maumbo mengine).",
+        "Inaweza kutafsiriwa kwa 'na/awe/wawe' badala ya amri ya moja kwa moja 'Fanya!' — Laam al-Amr kwa kawaida (si peke yake) huelekezwa kwa nafsi ya tatu, ambayo haina umbo lake la amri."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 186,
+          "wort": 12,
+          "zeigt": "kipande cha mwanzo لْ katika فَلْيَسْتَجِيبُوا۟ kinabeba alama ya POS IMPV",
+          "warum": "linathibitisha Laam al-Amr kama amri isiyo ya moja kwa moja kwa nafsi ya tatu ('basi wanijibu')"
+        },
+        {
+          "sure": 2,
+          "vers": 186,
+          "wort": 14,
+          "zeigt": "kipande cha mwanzo لْ katika وَلْيُؤْمِنُوا۟ kinabeba alama ya POS IMPV",
+          "warum": "linathibitisha katika aya hiyo hiyo Laam al-Amr ya pili ('na waniamini')"
+        }
+      ],
+      "lernen": [
+        "Linganisha katika aya moja amri ya moja kwa moja (Fi'l Amr, nafsi ya pili) na mfano wa Laam al-Amr (nafsi ya tatu) — zote mbili huonyesha amri, lakini kisarufi zimeundwa tofauti kabisa.",
+        "Tafuta kwa makusudi mchanganyiko wa وَلْ- na فَلْ- mwanzoni mwa neno na bainisha nafsi inayozungumziwa kila mara.",
+        "Kumbuka hatari ya kuchanganya na sauti nyingine za لام: Ni لْ tu yenye Sukuni moja kwa moja kabla ya kitenzi cha wakati uliopo ndiyo Laam al-Amr."
+      ],
+      "tabellen": [],
+      "siehe": ["nahy"]
+    },
+
+    "nahy": {
+      "titel": "Nahyi (Katazo)",
+      "ar": "النَّهْي (لَا النَّاهِيَة)",
+      "umschrift": "an-Nahy (Laa an-Naahiya)",
+      "erklaerung": [
+        "Laa an-Naahiya ('لَا inayokataza') husimama kabla ya kitenzi cha wakati uliopo — kwa kawaida nafsi ya pili — na kuunda katazo ('usifanye hivyo!'). Kitenzi kwa sababu hiyo, kama ilivyo kwa Laam al-Amr, huwekwa katika hadhi ya Jazm (Majzum).",
+        "Hii inatofautisha Nahyi na ukanushaji rahisi kwa لَا (لَا النَّافِيَة), ambao hukanusha ukweli wa sasa bila kubadilisha hali ya kitenzi. Maneno yote mawili yanaonekana sawa (لَا), lakini yana athari tofauti kisarufi: Nahyi hulazimisha Jazm, ukanushaji rahisi hauna athari hiyo."
+      ],
+      "erkennung": [
+        "Ikiwa لَا inasimama kabla ya kitenzi cha wakati uliopo ambacho mwisho wake unaonyesha Jazm (Nuni iliyoondolewa/Sukuni), na maana yake ni katazo badala ya kauli ya ukweli, basi ni Laa an-Naahiya.",
+        "Katika mkusanyiko wa maandishi, kitenzi husika hubeba uhusiano Pro (kwa 'Prohibition' — katazo) badala ya uhusiano wa kawaida wa ukanushaji."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 22,
+          "wort": 19,
+          "zeigt": "تَجْعَلُوا۟ linabeba uhusiano Pro, likianzishwa na لَا (katika neno lililotangulia فَلَا) lenye alama ya POS PRO",
+          "warum": "linathibitisha Laa an-Naahiya kama katazo halisi ('basi msimshirikishe Allah na wenzake')"
+        },
+        {
+          "sure": 2,
+          "vers": 60,
+          "wort": 25,
+          "zeigt": "تَعْثَوْا۟ linabeba uhusiano Pro, likianzishwa na لَا (katika neno lililotangulia وَلَا) lenye alama ya POS PRO",
+          "warum": "linathibitisha katazo la pili ('wala msifanye uharibifu duniani')"
+        }
+      ],
+      "lernen": [
+        "Linganisha moja kwa moja ushahidi wa Nahyi na ushahidi wa ukanushaji rahisi kwa لَا — maneno yote mawili yanaonekana sawa lakini yana athari tofauti kwa kitenzi.",
+        "Fanya mazoezi ya kutambua Jazm ndani ya kitenzi chenyewe (Nuni isiyopo katika maumbo matano, Sukuni kwa mengine) — hii ndiyo dalili ya kutegemewa zaidi ya Nahyi.",
+        "Panga ushahidi wa لَا uliopatikana kwa uthabiti katika mojawapo ya makundi matatu: ukanushaji rahisi, Nahyi, au ukanushaji kamili (لَا النَّافِيَة لِلْجِنْس)."
+      ],
+      "tabellen": [],
+      "siehe": ["verneinung", "lam-al-amr"]
+    },
+
+    "istifham": {
+      "titel": "Herufi za Kuuliza (Istifhamu)",
+      "ar": "أَدَوَات الاِسْتِفْهَام",
+      "umschrift": "Adawaat al-Istifhaam",
+      "erklaerung": [
+        "Herufi za kuuliza husimama mwanzoni mwa sentensi na huanzisha sentensi za kiima na za kitenzi pia: مَنْ (nani), مَاذَا/مَا (nini), مَتَى (lini), أَيْنَ (wapi), لِمَاذَا (kwa nini), كَيْفَ (vipi), أَيّ (yupi/ipi) pamoja na هَلْ na Hamza iliyoambatanishwa أَ kwa maswali ya ndiyo/hapana.",
+        "Maneno mengi ya kuuliza hayana athari yoyote ya kisarufi kwenye muundo wa sentensi — hupangwa tu mbele ya sentensi.",
+        "Herufi ya kuuliza inapokutana na Harf Jarr, Harf Jarr huwekwa mbele; kwa مَا, zote mbili huungana kuwa umbo moja (مِنْ + مَا → مِمَّ, عَنْ + مَا → عَمَّ, فِي + مَا → فِيمَ, لِ + مَا → لِمَ)."
+      ],
+      "erkennung": [
+        "Herufi za kuuliza husimama mwanzoni mwa sentensi, bila kujali kama inayofuata ni sentensi ya kiima au ya kitenzi.",
+        "أَ kama herufi ya kuuliza iliyoambatanishwa ni Hamza moja iliyowekwa mbele moja kwa moja kabla ya mzizi wa kwanza wa neno — katika mkusanyiko wa maandishi imeandikwa kama kipande chake cha mwanzo chenye alama ya POS INTG."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 44,
+          "wort": 1,
+          "zeigt": "kipande cha mwanzo أَ katika أَتَأْمُرُونَ kinabeba alama ya POS INTG",
+          "warum": "linathibitisha herufi ya kuuliza iliyoambatanishwa أَ kama kianzio cha swali la kejeli la ndiyo/hapana ('je, mnawaamrisha watu wema...?')"
+        },
+        {
+          "sure": 2,
+          "vers": 30,
+          "wort": 11,
+          "zeigt": "kipande cha mwanzo أَ katika أَتَجْعَلُ kinabeba alama ya POS INTG",
+          "warum": "linathibitisha herufi hiyo hiyo ya kuuliza katika swali maarufu la Malaika ('je, utaweka humo atakayefanya uharibifu?')"
+        }
+      ],
+      "lernen": [
+        "Jifunze jedwali la maneno ya kuuliza pamoja na aina yake ya neno (Ismu kama مَنْ/مَا/أَيّ au Herufi safi kama هَلْ/أَ), kwani hii huwezesha kubaini i'rabu baadaye.",
+        "Fanya mazoezi ya maumbo yaliyoungana مِمَّ/عَمَّ/فِيمَ/لِمَ kando, kwani ni rahisi kuyapuuza ukitafuta 'مَا' peke yake.",
+        "Linganisha sentensi za maswali na maneno yale yale bila herufi ya kuuliza, ili kuona kwamba muundo wa sentensi wenyewe hauathiriki."
+      ],
+      "tabellen": [],
+      "siehe": []
+    },
+
+    "shart": {
+      "titel": "Sentensi za Sharti",
+      "ar": "أَدَوَات الشَّرْط وَجَوَاب الشَّرْط",
+      "umschrift": "Adawaat ash-Shart / Jawaab ash-Shart",
+      "erklaerung": [
+        "Sentensi ya sharti (Jumla Shartiyya) huundwa na sehemu mbili: sharti (الشَّرْط) na jibu/tokeo lake (جَوَاب الشَّرْط) — kauli ya pili hutokea tu ikiwa ya kwanza imetimia.",
+        "Herufi za sharti zimegawanyika katika makundi mawili: Adawaat al-Jazm (إِنْ، مَنْ، مَا na nyinginezo) huweka sehemu zote mbili za sentensi katika hadhi ya Jazm pale vitenzi vyote viwili viko katika wakati uliopo; Adawaat ghayr Jaazima (لَوْ 'lau', إِذَا 'ikiwa/pindi') hazina athari yoyote ya kisarufi kwenye hadhi ya vitenzi.",
+        "Mara nyingi فَ huanzisha sentensi ya jibu, hasa ikiwa hii inatofautiana na sentensi ya sharti (kwa mfano: sentensi ya sharti ni ya kitenzi, sentensi ya jibu ni ya kiima) — فَ hii ndiyo Faa' al-Jawaab inayoshughulikiwa katika somo lake.",
+        "Karibu na sentensi ya sharti kuna muundo unaofanana sana kwenye amri: baada ya Amri (agizo) kunaweza kufuata Jawaab al-Amr, unaoeleza kinachotokea endapo agizo litatiiwa — nao pia huwa katika hadhi ya Jazm."
+      ],
+      "erkennung": [
+        "Sehemu ya sharti hubeba uhusiano cond katika muundo wa mkusanyiko, sehemu ya jibu mara nyingi hubeba uhusiano rslt (angalia Faa' al-Jawaab), ikiwa imeanzishwa na فَ.",
+        "Adawaat al-Jazm hutambuliwa kwa kuwa vitenzi vyote viwili — sharti na jibu — viko katika hadhi ya Jazm, hata kama tafsiri ya Kiswahili inahitaji wakati uliopo."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 282,
+          "wort": 5,
+          "zeigt": "تَدَايَنتُم linabeba uhusiano cond, likisababishwa na إِذَا (neno la 4)",
+          "warum": "linathibitisha sehemu ya sharti ya sentensi ya Shart ('mkiingia kwenye deni kwa muda maalum')"
+        },
+        {
+          "sure": 2,
+          "vers": 282,
+          "wort": 10,
+          "zeigt": "فَٱكْتُبُوهُ linabeba uhusiano rslt",
+          "warum": "linathibitisha sentensi ya Jawab inayohusiana ('basi liandikeni') katika aya hiyo hiyo, ikianzishwa na Faa' al-Jawaab"
+        }
+      ],
+      "lernen": [
+        "Jifunze kwanza mgawanyo wa Jazim/ghayr Jazim, kisha ndipo herufi mahususi za kila kundi.",
+        "Katika sentensi ya sharti tafuta kwa utaratibu kwanza الشَّرْط, kisha جَوَاب الشَّرْط, na angalia kama فَ inasimama katikati.",
+        "Tunga sentensi zako fupi za sharti kwa إِنْ na linganisha jinsi mwisho wa kitenzi unavyobadilika ukilinganisha na sentensi isiyo na إِنْ."
+      ],
+      "tabellen": [],
+      "siehe": ["faa-jawab"]
+    },
+
+    "kaana-wa-akhawatuha": {
+      "titel": "Kaana na Dada Zake",
+      "ar": "كَانَ وَأَخَوَاتُهَا",
+      "umschrift": "Kaana wa Akhawatuha",
+      "erklaerung": [
+        "Kaana (kuwa) na dada zake ni vitenzi visivyokamilika (Af'aal Naaqisa): havihitaji Fa'ili wa kawaida, bali hubadilisha sentensi nzima ya kiima kuwa Ismu na Khabari yake yenyewe. Katika familia hii yamo, miongoni mwa mengine, كَانَ (kuwa), لَيْسَ (kutokuwa), ظَلَّ (kuendelea kuwa), na أَصْبَحَ (kuwa/kugeuka) — pamoja na mengine kama صَارَ, أَمْسَى au مَا زَالَ.",
+        "Ismu la Kaana hubaki, kama Mubtada wa kawaida, katika hadhi ya Raf'. Tofauti kubwa: Khabari ya Kaana huwa katika hadhi ya Nasb — ijapokuwa Khabari katika sentensi ya kawaida ya kiima ingepaswa kuwa katika hadhi ya Raf'.",
+        "Ikiwa Khabari ya Kaana yenyewe ni sentensi nzima (kwa mfano sentensi ya kitenzi chenye kitenzi cha wakati uliopo), athari ya Nasb haionekani kwa mwisho wowote dhahiri — lakini jukumu la Khabari linabaki lipo."
+      ],
+      "erkennung": [
+        "Aya 'inageuka' kutambulika kuwa muundo wa Kaana mara tu baada ya كَانَ/mojawapo ya dada zake kunapofuata Ismu/kiwakilishi katika hadhi ya Raf' (Ismu) na kisha kitu katika hadhi ya Nasb au sentensi nzima (Khabari), badala ya neno la pili la Raf' linalotarajiwa kwa sentensi ya kawaida ya kiima.",
+        "Katika muundo wa mkusanyiko, Ismu na Khabari za familia hii huonekana kama uhusiano wake maalum wenye kiongozi kilichoambatanishwa katika mabano mawili, kwa mfano subj<<kan>> na pred<<kan>> — relationBasis() kutoka grammatik.ts huyafafanua umbo hili kuwa thamani ya msingi (subj/pred) na kiongozi (kwa mfano kan, ykon)."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 10,
+          "wort": 12,
+          "zeigt": "يَكْذِبُونَ linabeba uhusiano \"pred <<kan>>\" (thamani ya msingi pred, kiongozi kan)",
+          "warum": "linathibitisha Khabari ya Kaana kama sentensi nzima ya kitenzi ('...kwa sababu walikuwa wakisema uongo') baada ya كَانُوا۟ katika aya hiyo hiyo"
+        },
+        {
+          "sure": 2,
+          "vers": 247,
+          "wort": 15,
+          "zeigt": "ٱلْمُلْكُ linabeba uhusiano \"subj <<ykon>>\" (thamani ya msingi subj, kiongozi ykon — umbo la wakati uliopo la كَانَ)",
+          "warum": "linathibitisha Ismu la umbo la dada wa Kaana (يَكُونُ) katika hadhi ya Raf' ('vipi angekuwa na ufalme juu yetu')"
+        }
+      ],
+      "lernen": [
+        "Jifunze kwanza vitenzi vinne vinavyohitajika hapa كَانَ، لَيْسَ، ظَلَّ، أَصْبَحَ pamoja na maana yake ya msingi, kisha ndipo kanuni ya Nasb kwa Khabari.",
+        "Fanya mazoezi katika aya kadhaa kutaja Ismu la Kaana na Khabari ya Kaana kila kimoja peke yake — hasa pale Khabari yenyewe ni sentensi.",
+        "Linganisha sentensi ya Kaana na sentensi ile ile bila كَانَ, ili kuhisi mara moja tofauti katika hadhi ya Khabari."
+      ],
+      "tabellen": [],
+      "siehe": ["inna-wa-akhawatuha", "mubtada", "khabar"]
+    },
+
+    "inna-wa-akhawatuha": {
+      "titel": "Inna na Dada Zake",
+      "ar": "إِنَّ وَأَخَوَاتُهَا",
+      "umschrift": "Inna wa Akhawatuha",
+      "erklaerung": [
+        "Inna na dada zake ni Harf Nasb — herufi zinazoweka Ismu (moja kwa moja au baada ya Jaar-Majroor uliowekwa katikati au Mudhaf maalum) katika hadhi ya Nasb, wakati Khabari yake husika hubaki katika hadhi ya Raf'. Kwa hivyo huwa na athari kinyume kabisa na Kaana na dada zake.",
+        "Katika familia hii yamo إِنَّ/أَنَّ (hakika/kwamba, ya kusisitiza), كَأَنَّ (kama vile, ya kulinganisha), لَكِنَّ (lakini, ya upinzani), لَيْتَ (laiti, ya kutamani), na لَعَلَّ (huenda/labda, ya kutarajia) — kila moja ikiwa na hisia yake ya maana, lakini athari sawa kisarufi.",
+        "Ismu la Harf Nasb hubaki kimaana ndiye mtenzi/mada wa kauli na hutafsiriwa hivyo, ijapokuwa kirasmi liko katika hadhi ya Nasb — mwisho hubadilika, jukumu halibadiliki."
+      ],
+      "erkennung": [
+        "Moja kwa moja baada ya إِنَّ/أَنَّ (au baada ya Jaar-Majroor uliowekwa katikati) husimama Ismu au kiwakilishi kilichoambatanishwa chenye mwisho wa Fatha (Ismu), baadaye hufuata neno lenye alama ya Raf' au sentensi nzima (Khabari).",
+        "Katika muundo wa mkusanyiko, Ismu na Khabari za familia hii pia huonekana kama subj<<...>>/pred<<...>> zenye kiongozi in, an, ka'ana, lakin, au lel/la — hizi pia zinafafanuliwa kupitia relationBasis()."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 20,
+          "wort": 21,
+          "zeigt": "ٱللَّهَ linabeba uhusiano \"subj<<in>>\" (thamani ya msingi subj, kiongozi in)",
+          "warum": "linathibitisha Ismu la Inna katika hadhi ya Nasb ('hakika, Allah...')"
+        },
+        {
+          "sure": 2,
+          "vers": 20,
+          "wort": 25,
+          "zeigt": "قَدِيرٌ linabeba uhusiano \"pred<<in>>\" (thamani ya msingi pred, kiongozi in)",
+          "warum": "linathibitisha, katika aya hiyo hiyo, Khabari ya Inna inayohusiana katika hadhi ya Raf' ('...ni Muweza juu ya kila kitu') — aya hiyo hiyo inayotumiwa pia na sura ya vielelezo kuhusu Harf Nasb"
+        }
+      ],
+      "lernen": [
+        "Jifunze dada sita pamoja na hisia yake ya maana (ya kusisitiza/ya kulinganisha/ya upinzani/ya kutamani/ya kutarajia), si tu kama maneno ya kuongeza msisitizo yanayoweza kubadilishana.",
+        "Fanya mazoezi ya kutaja Ismu na Khabari kila kimoja katika aya moja na kueleza mwisho wake.",
+        "Linganisha sentensi ya Inna na sentensi ya Kaana: Ismu liko wapi, Khabari iko wapi — na katika hadhi gani kila mmoja?"
+      ],
+      "tabellen": [],
+      "siehe": ["kaana-wa-akhawatuha", "verneinung"]
+    },
+
+    "faail": {
+      "titel": "Fa'ili",
+      "ar": "فَاعِل",
+      "umschrift": "Faa'il",
+      "erklaerung": [
+        "Fa'ili ndiye mtenda/kiima cha sentensi ya kitenzi na husimama daima katika hadhi ya Raf'. Katika mpangilio wa kawaida wa Kiarabu, Fa'ili hufuata kitenzi (Kitenzi – Fa'ili – Yambwa), si kinyume chake.",
+        "Kila kitenzi hubeba pia mtenda wa ndani, uliomo ndani ya kitenzi chenyewe (kiwakilishi kilichoambatanishwa). Mtenda huyu wa ndani anaweza kubadilishwa na Fa'ili wa nje, aliyetajwa wazi, ikiwa kitenzi kiko katika umbo la yeye (mmoja) na jina linalofuata liko katika hadhi ya Raf'."
+      ],
+      "erkennung": [
+        "Ismu au kiwakilishi chenye alama ya Raf', kinachosimama moja kwa moja au muda mfupi baada ya kitenzi na kujibu swali 'Ni nani aliyefanya?'.",
+        "Ikiwa mtenda mwenye uwezekano husimama KABLA ya kitenzi, si tena Fa'ili, bali ni Mubtada wenye sentensi ya kitenzi kama Khabari yake."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 7,
+          "wort": 2,
+          "zeigt": "ٱللَّهُ linabeba uhusiano Subj",
+          "warum": "linathibitisha Fa'ili katika hadhi ya Raf' baada ya kitenzi ('Allah amepiga muhuri juu ya nyoyo zao')"
+        },
+        {
+          "sure": 2,
+          "vers": 10,
+          "wort": 5,
+          "zeigt": "ٱللَّهُ linabeba uhusiano Subj",
+          "warum": "linathibitisha Fa'ili wa pili ('basi Allah amewazidishia ugonjwa wao')"
+        }
+      ],
+      "lernen": [
+        "Tafuta katika aya kadhaa kwanza kitenzi, kisha moja kwa moja baada yake neno la kwanza lenye alama ya Raf' — hilo kwa kawaida ndilo Fa'ili.",
+        "Fanya mazoezi ya tofauti kati ya mtenda wa ndani (uliofichwa ndani ya kitenzi) na mtenda wa nje (aliyetajwa wazi) katika aya zenye na zisizo na Fa'ili aliyetajwa.",
+        "Linganisha sentensi yenye Fa'ili na sentensi ambapo jina lile lile ni Mubtada kabla ya kitenzi — hadhi inabaki Raf', jukumu linabadilika."
+      ],
+      "tabellen": [],
+      "siehe": ["naib-al-fail", "mubtada"]
+    },
+
+    "naib-al-fail": {
+      "titel": "Naibu wa Fa'ili",
+      "ar": "نَائِب الفَاعِل",
+      "umschrift": "Naa'ib al-Faa'il",
+      "erklaerung": [
+        "Ikiwa kitenzi kiko katika hali ya kutendwa (Fi'l Mabni lil-Madschhul), Fa'ili halisi huondoka au hubaki hajulikani. Mahali pake huchukuliwa na Naa'ib al-Fa'il — kwa tafsiri halisi 'mbadala wa mtenda' — kwa kawaida kile ambacho katika sentensi ya kutenda kingekuwa yambwa. Hubeba hadhi ya Raf' ya Fa'ili.",
+        "Kitenzi chenyewe huonyesha umbo la kutendwa (kwa mfano Damma juu ya herufi ya kwanza ya mzizi katika wakati uliopo), Naa'ib al-Fa'il humfuata kama Fa'ili wa kawaida katika hadhi ya Raf'."
+      ],
+      "erkennung": [
+        "Kitenzi kilichoundwa katika hali ya kutendwa, kikifuatiwa na Ismu lenye alama ya Raf', ambalo kimaana linaonekana zaidi kama yambwa ya kitendo (si kama mtendaji wake).",
+        "Katika muundo wa mkusanyiko, neno hili hubeba uhusiano wake maalum Pass badala ya uhusiano wa kawaida wa Fa'ili Subj."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 48,
+          "wort": 12,
+          "zeigt": "شَفَٰعَةٌ linabeba uhusiano Pass",
+          "warum": "linathibitisha Naa'ib al-Fa'il baada ya kitenzi cha kutendwa يُقْبَلُ ('wala haitakubaliwa uombezi wowote kutoka kwake') — kimaana ni kile ambacho katika sentensi ya kutenda kingekuwa yambwa"
+        },
+        {
+          "sure": 2,
+          "vers": 61,
+          "wort": 39,
+          "zeigt": "ٱلذِّلَّةُ linabeba uhusiano Pass",
+          "warum": "linathibitisha Naa'ib al-Fa'il wa pili baada ya kitenzi cha kutendwa ضُرِبَتْ ('na unyonge ukapigwa juu yao')"
+        }
+      ],
+      "lernen": [
+        "Badilisha sentensi unayoijua ya kutenda kuwa umbo la kutendwa na uangalie jinsi yambwa ya awali inavyokuwa Naa'ib al-Fa'il katika hadhi ya Raf'.",
+        "Zingatia kwa makusudi muundo wa sauti wa kitenzi (mfumo wa Damma) kama dalili ya kwanza ya kitenzi cha kutendwa, kabla ya kutafuta Naa'ib al-Fa'il.",
+        "Linganisha ushahidi uliopo hapa na ushahidi wa kawaida wa Fa'ili — zote mbili ziko katika hadhi ya Raf', lakini zenye jukumu tofauti kimaana."
+      ],
+      "tabellen": [],
+      "siehe": ["faail"]
+    },
+
+    "maful-bihi": {
+      "titel": "Yambwa ya Moja kwa Moja (Maf'ul Bihi)",
+      "ar": "مَفْعُول بِه",
+      "umschrift": "Maf'ool bihi",
+      "erklaerung": [
+        "Maf'ool bihi ni yambwa ya moja kwa moja ya sentensi ya kitenzi, husimama daima katika hadhi ya Nasb na kujibu swali 'nani/kwa nani/ni nini'. Ni aina ya Maf'ool inayotokea zaidi kuliko zote katika Qur'ani.",
+        "Kiwakilishi kilichoambatanishwa na kitenzi ni daima Maf'ool bihi, hata kama hakionekani kama neno lake peke yake."
+      ],
+      "erkennung": [
+        "Ismu au kiwakilishi chenye alama ya Nasb baada ya kitenzi na Fa'ili, ambacho kimeathiriwa moja kwa moja na kitendo.",
+        "Jaribio la swali: Je, neno hili laweza kuulizwa kwa 'Fa'ili anamfanyia nini/nani?'"
+      ],
+      "belege": [
+        {
+          "sure": 1,
+          "vers": 6,
+          "wort": 2,
+          "zeigt": "ٱلصِّرَٰطَ linabeba uhusiano Obj",
+          "warum": "linathibitisha Maf'ool bihi katika hadhi ya Nasb baada ya amri ٱهْدِنَا ('tuongoze njia iliyonyooka')"
+        },
+        {
+          "sure": 1,
+          "vers": 5,
+          "wort": 1,
+          "zeigt": "إِيَّاكَ linabeba uhusiano Obj",
+          "warum": "linathibitisha Maf'ool bihi kama kiwakilishi kilichowekwa mbele, kilichojitenga ('Wewe peke Yako tunakuabudu')"
+        }
+      ],
+      "lernen": [
+        "Fanya mazoezi ya jaribio la swali ('nani/nini?') katika aya kadhaa na taja kitenzi, Fa'ili, na Maf'ool bihi kila kimoja peke yake.",
+        "Tafuta kwa makusudi viwakilishi vilivyoambatanishwa kwenye vitenzi na uvitaje wazi kama Maf'ool bihi.",
+        "Linganisha Maf'ool bihi na Maf'ool Mutlaq na al-Maf'ool li-Ajlihi, ili usichanganye aina hizo tatu za yambwa."
+      ],
+      "tabellen": [],
+      "siehe": ["faail", "maful-mutlaq", "maful-liajlihi"]
+    },
+
+    "maful-mutlaq": {
+      "titel": "Yambwa Kamilifu (Maf'ul Mutlaki)",
+      "ar": "مَفْعُول مُطْلَق",
+      "umschrift": "Maf'ool Mutlaq",
+      "erklaerung": [
+        "Maf'ool Mutlaq ni Masdar (jina la kitendo) lenye mzizi ule ule wa kitenzi kinacholiambatana, na husimama katika hadhi ya Nasb. Halijibu 'nani/nini', bali husisitiza, huelezea, au hupima kitendo chenyewe tena.",
+        "Kazi tatu zinawezekana: kama neno moja, hulisisitiza kitendo; likiwa na kivumishi, hulielezea zaidi; kama namba, huonyesha ni mara ngapi kitendo kilifanyika."
+      ],
+      "erkennung": [
+        "Ismu lenye alama ya Nasb, linalobeba herufi za mzizi zile zile na kitenzi kilichotangulia — si jina lingine, bali marudio ya mzizi wa kitenzi kama jina.",
+        "Kisarufi haliulizwi kwa 'nani/nini', bali zaidi kwa 'kwa kiasi gani/kwa namna gani/mara ngapi'."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 25,
+          "wort": 18,
+          "zeigt": "رِّزْقًا linabeba uhusiano cog",
+          "warum": "linathibitisha Maf'ool Mutlaq lenye mzizi ule ule رزق kama kitenzi kilichotangulia رُزِقُوا۟ ('kila walipopewa riziki kutoka kwake')"
+        },
+        {
+          "sure": 2,
+          "vers": 245,
+          "wort": 10,
+          "zeigt": "أَضْعَافًا linabeba uhusiano cog",
+          "warum": "linathibitisha Maf'ool Mutlaq lenye mzizi ule ule ضعف kama kitenzi kilichotangulia يُضَٰعِفَهُ ('ili Aupanue kwa ajili yake mara nyingi')"
+        }
+      ],
+      "lernen": [
+        "Kwa kila Ismu lenye tuhuma la Nasb, angalia kwanza herufi za mzizi ukilinganisha na kitenzi kilichotangulia — zikilingana, uwezekano mkubwa ni Maf'ool Mutlaq.",
+        "Tafuta kwa makusudi kazi tatu (msisitizo/maelezo/kuhesabu) katika aya tofauti.",
+        "Linganisha Maf'ool Mutlaq kwa makusudi na Maf'ool bihi — mojawapo tu kati ya hizo mbili laweza kuulizwa kwa 'nani/nini'."
+      ],
+      "tabellen": [],
+      "siehe": ["maful-bihi"]
+    },
+
+    "maful-liajlihi": {
+      "titel": "Yambwa ya Sababu (Maf'ul li-Ajlihi)",
+      "ar": "المَفْعُول لِأَجْلِه",
+      "umschrift": "al-Maf'ool li-Ajlihi",
+      "erklaerung": [
+        "Al-Maf'ool li-Ajlihi (pia huitwa Maf'ool lahu) ni Masdar katika hadhi ya Nasb, unaotaja SABABU au KUSUDI nyuma ya kitendo kikuu — hujibu swali 'kwa nini?'. Tofauti na Maf'ool Mutlaq, HAUSHIRIKI mzizi ule ule na kitenzi kikuu, bali hutaja kusudi lake mahususi, mara nyingi la kufikirika (hofu, tamaa, wivu ...).",
+        "Kwa hivyo al-Maf'ool li-Ajlihi husimama kati ya aina nyingine mbili za yambwa: kama Maf'ool Mutlaq, ni Masdar safi katika hadhi ya Nasb bila jukumu lake la yambwa; kama Maf'ool bihi, hurejelea kimaana kusudi nyuma ya kitendo, si marudio yake."
+      ],
+      "erkennung": [
+        "Ismu lisilo na kikomo, la kufikirika, lenye alama ya Nasb baada ya kitenzi kikuu, linaloonyesha hisia au kusudi na kujibu swali 'kwa sababu gani?'.",
+        "Tofauti na Maf'ool Mutlaq: mzizi hutofautiana na kitenzi kikuu."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 19,
+          "wort": 15,
+          "zeigt": "حَذَرَ linabeba uhusiano prp",
+          "warum": "linathibitisha al-Maf'ool li-Ajlihi kama utajaji wa sababu ('huweka vidole vyao masikioni mwao ... kwa hofu ya kifo')"
+        },
+        {
+          "sure": 2,
+          "vers": 109,
+          "wort": 12,
+          "zeigt": "حَسَدًا linabeba uhusiano prp",
+          "warum": "linathibitisha yambwa ya pili ya sababu ('wengi wa watu wa Kitabu walitamani wangewarudisha kuwa makafiri tena kwa wivu')"
+        }
+      ],
+      "lernen": [
+        "Fanya mazoezi ya jaribio la swali 'kwa nini?' kwa makusudi katika aya kadhaa na ulitofautishe kwa uwazi na jaribio la swali 'nani/nini?' la Maf'ool bihi.",
+        "Kusanya mifano yako mwenyewe ya majina ya kusudi la kufikirika (hofu, heshima, tumaini ...) katika hadhi ya Nasb.",
+        "Linganisha ushahidi uliopo hapa na ushahidi wa Maf'ool Mutlaq na utaje tofauti ya mzizi."
+      ],
+      "tabellen": [],
+      "siehe": ["maful-mutlaq"]
+    },
+
+    "mubtada": {
+      "titel": "Kiima cha Sentensi ya Kiima (Mubtada)",
+      "ar": "مُبْتَدَأ",
+      "umschrift": "Mubtada",
+      "erklaerung": [
+        "Mubtada ni kiima/mada ya sentensi ya kiima, husimama katika hadhi ya Raf' na kwa kawaida mwanzoni mwa sentensi. Jina lake kihalisi humaanisha 'kile ambacho sentensi huanzia nacho'.",
+        "Miongoni mwa sehemu tatu zinazowezekana za sentensi ya kiima (Mubtada, Khabari, Mutaʿalliq bil-Khabar), Mubtada ndiyo pekee isiyoweza kuachwa — Khabari na Mutaʿalliq bil-Khabar zaweza kuachwa chini ya masharti fulani, ikiwa zinaweza kueleweka kutoka muktadha.",
+        "Hata kipande kizima (kwa mfano Idaafa au jozi ya Mowsoof-Sifah) kinaweza kutumika kama Mubtada."
+      ],
+      "erkennung": [
+        "Neno la kwanza lenye alama ya Raf' katika sentensi ya kiima — au, ikiwa sentensi inaanza na Harf Nasb kama إِنَّ, herufi hiyo pamoja na Ismu lake.",
+        "Kwa muundo, hutambulika pia kwa kuwa baadaye katika sentensi hiyo hiyo Khabari hurejelea Mubtada kama neno lake la msingi (head)."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 2,
+          "wort": 1,
+          "zeigt": "ذَٰلِكَ ndiyo Mubtada, ambayo Khabari هُدًى (neno la 6, uhusiano Pred) inarejelea katika aya hiyo hiyo",
+          "warum": "linathibitisha Mubtada kama kichwa cha sentensi ya kiima ('Kitabu hiki ... ni uongozi kwa wamchao Mungu') — Khabari inarejelea moja kwa moja neno hili kupitia thamani yake ya head"
+        },
+        {
+          "sure": 2,
+          "vers": 19,
+          "wort": 17,
+          "zeigt": "ٱللَّهُ (katika neno وَٱللَّهُ) ndiyo Mubtada, ambayo Khabari مُحِيطٌۢ (neno la 18, uhusiano Pred) inarejelea",
+          "warum": "linathibitisha jozi ya pili ya Mubtada-Khabari ('na Allah amewazunguka makafiri')"
+        }
+      ],
+      "lernen": [
+        "Katika sentensi ya kiima, tafuta kwanza neno la kwanza lenye alama ya Raf' — hilo karibu daima ndilo Mubtada.",
+        "Fanya mazoezi katika aya zisizo na Khabari inayoonekana, kuongeza kimawazo 'ni' kisichoonekana kati ya Mubtada na Mutaʿalliq bil-Khabar inayofuata.",
+        "Linganisha jozi za Mubtada-Khabari katika sentensi za kawaida za kiima na zile za sentensi za Kaana na Inna, ili kufahamu vizuri mabadiliko ya hadhi ya Khabari."
+      ],
+      "tabellen": [],
+      "siehe": ["khabar", "kaana-wa-akhawatuha", "inna-wa-akhawatuha"]
+    },
+
+    "khabar": {
+      "titel": "Khabari ya Sentensi ya Kiima",
+      "ar": "خَبَر",
+      "umschrift": "Chabar",
+      "erklaerung": [
+        "Khabari hutoa kauli kuhusu Mubtada na kujibu swali 'Mubtada iko vipi?'. Katika sentensi ya kawaida ya kiima husimama katika hadhi ya Raf'; kwa Kaana na dada zake hubadilika kuwa hadhi ya Nasb, kwa Inna na dada zake hubaki katika hadhi ya Raf'.",
+        "Khabari inaweza kuwa neno moja, kipande kizima (Idaafa, Jaar-Majroor, Mowsoof-Sifah), au hata sentensi kamili (ya kiima au ya kitenzi). Ikiwa yenyewe ni sentensi, lazima ilingane na Mubtada katika wingi na jinsia.",
+        "Kati ya Mubtada na Khabari hakuna neno linaloonekana kwa 'ni' katika Kiarabu — lazima liongezwe wakati wa kutafsiri."
+      ],
+      "erkennung": [
+        "Kipengele cha pili chenye alama ya Raf' katika sentensi ya kiima (au kipengele cha Nasb katika sentensi za Kaana), ambacho kimaana kinatoa kauli kuhusu Mubtada.",
+        "Katika muundo wa mkusanyiko, Khabari mara nyingi hubeba uhusiano Pred, ikiwa na urejeleo wa head kwa Mubtada wake."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 2,
+          "wort": 6,
+          "zeigt": "هُدًى linabeba uhusiano Pred lenye urejeleo wa head kwa neno la 1 (Mubtada ذَٰلِكَ)",
+          "warum": "linathibitisha Khabari ya sentensi ya kawaida ya kiima katika hadhi ya Raf' ('...ni uongozi kwa wamchao Mungu')"
+        },
+        {
+          "sure": 2,
+          "vers": 19,
+          "wort": 18,
+          "zeigt": "مُحِيطٌۢ linabeba uhusiano Pred lenye urejeleo wa head kwa neno la 17 (Mubtada ٱللَّهُ)",
+          "warum": "linathibitisha mfano wa pili wa Khabari ('na Allah amewazunguka makafiri') — aya hiyo hiyo inayotumiwa pia kama ushahidi wa pili wa somo la Mubtada"
+        }
+      ],
+      "lernen": [
+        "Tafuta Khabari daima BAADA ya kupata Mubtada — zote mbili huenda pamoja na hukamilishana kuunda kauli kamili.",
+        "Fanya mazoezi katika aya zenye Khabari yenye umbo la sentensi, kuangalia ulinganifu wa wingi/jinsia kati ya Mubtada na sentensi iliyowekwa ndani.",
+        "Weka pamoja Khabari ile ile katika sentensi ya kawaida ya kiima na katika sentensi ya Kaana, ili kuona moja kwa moja mabadiliko ya hadhi (Raf' dhidi ya Nasb)."
+      ],
+      "tabellen": [],
+      "siehe": ["mubtada"]
+    },
+
+    "sifah": {
+      "titel": "Sifa (Kivumishi)",
+      "ar": "صِفَة",
+      "umschrift": "Sifah",
+      "erklaerung": [
+        "Sifa huelezea sifa ya Mowsoof (jina linaloelezwa) na lazima ilingane nalo katika VIGEZO VYOTE VINNE: hadhi (i'rabu), wingi, jinsia, na ubainifu. Ulinganifu huu kamili wa vigezo vinne ndio hasa unaotofautisha Sifa na Badali (angalia somo lake): Badali huhitaji tu kushiriki hadhi, si vigezo vingine vitatu.",
+        "Sifa daima hufuata Mowsoof, lakini si lazima imfuate moja kwa moja."
+      ],
+      "erkennung": [
+        "Jaribio la vigezo vinne: Je, hadhi, wingi, jinsia, na ubainifu wa Sifa na Mowsoof vinalingana kikamilifu? Ikiwa ndiyo, kipande cha Mowsoof-Sifah kipo.",
+        "Jaribio la maana dhidi ya Badali: Je, neno la pili linaelezea tu SIFA ya la kwanza (zuri, kubwa, mwaminifu ...), badala ya kutaja utambulisho sahihi zaidi wa kitu kile kile? Basi ni Sifa, si Badali."
+      ],
+      "belege": [
+        {
+          "sure": 1,
+          "vers": 1,
+          "wort": 3,
+          "zeigt": "ٱلرَّحْمَٰنِ linabeba uhusiano Adj lenye urejeleo wa head kwa neno la 2 (ٱللَّهِ)",
+          "warum": "linathibitisha Sifa katika ulinganifu kamili na Mowsoof wake (bainifu, Raf'/Jarr kutegemea aya, kiume, umoja): 'kwa jina la Allah, Mwingi wa Rehema'"
+        },
+        {
+          "sure": 1,
+          "vers": 1,
+          "wort": 4,
+          "zeigt": "ٱلرَّحِيمِ linabeba uhusiano Adj lenye urejeleo wa head kwa neno la 2 (ٱللَّهِ)",
+          "warum": "linathibitisha Sifa ya pili kwa Mowsoof yule yule katika aya hiyo hiyo ('... Mwenye kurehemu') — Sifa mbili mfululizo bila Harf al-'Atf katikati"
+        }
+      ],
+      "lernen": [
+        "Fanya mazoezi ya jaribio la vigezo vinne kwa makusudi katika jozi kadhaa za Mowsoof-Sifah, mpaka lifanyike kiotomatiki.",
+        "Kusanya mifano ya kupingana: Tafuta jozi za maneno zinazoonekana kama Sifa mwanzoni lakini zinatofautiana katika hadhi — hizo zaweza kuwa Badali tu.",
+        "Linganisha ushahidi uliopo hapa moja kwa moja na ushahidi wa Badali kutoka aya hiyo hiyo, ili kupambanua maelezo na utajaji upya."
+      ],
+      "tabellen": [],
+      "siehe": ["badal"]
+    },
+
+    "haal": {
+      "titel": "Hali (Kielezi cha Hali)",
+      "ar": "حَال",
+      "umschrift": "Haal",
+      "erklaerung": [
+        "Hali huelezea HALI ya Fa'ili, Maf'ool, au kipengele kingine cha sentensi HASA WAKATI kitendo kikuu kinapotokea. Husimama katika hadhi ya Nasb ikiwa ni neno moja, na kwa kawaida haina kikomo.",
+        "Hali inaweza pia kuwa sentensi nzima ya hali (Jumla Ismiyya au Fi'liyya), mara nyingi ikianzishwa na kile kinachoitwa وَ الحَالِيَّة (Waw al-Haaliyya).",
+        "Tofauti na Tamyizi (angalia somo lake): Hali huelezea hali ya MUDA MFUPI ('vipi/katika hali gani'), wakati Tamyizi hufafanua AINA au KIASI ('ni aina gani/kiasi gani')."
+      ],
+      "erkennung": [
+        "Neno lisilo na kikomo lenye alama ya Nasb (au kipengele kilichoanzishwa na وَ) moja kwa moja baada ya kitendo kikuu, kinachotoa maelezo ya hali inayotokea wakati mmoja na kujibu swali 'vipi/katika hali gani?'.",
+        "Jaribio la kutofautisha na Tamyizi: Je, neno laweza kufafanuliwa na 'wakati huyo/hilo/hicho ...'? Basi ni Hali. Je, laweza kufafanuliwa zaidi na 'kuhusiana na/kwa ...'? Basi ni Tamyizi."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 22,
+          "wort": 22,
+          "zeigt": "وَأَنتُمْ (pamoja na تَعْلَمُونَ linalofuata, neno la 23, uhusiano circ au Pred)",
+          "warum": "linathibitisha Hali kama sentensi nzima ya hali ('... hali mnajua') kwa kitendo kilichotangulia katika aya hiyo hiyo"
+        },
+        {
+          "sure": 2,
+          "vers": 25,
+          "wort": 27,
+          "zeigt": "مُتَشَٰبِهًا linabeba uhusiano circ",
+          "warum": "linathibitisha Hali ya neno moja katika hadhi ya Nasb ('na wataletewa vinavyofanana')"
+        }
+      ],
+      "lernen": [
+        "Fanya mazoezi ya jaribio la kutofautisha na Tamyizi ('wakati huyo ...' dhidi ya 'kuhusiana na ...') katika aya kadhaa.",
+        "Tafuta kwa makusudi vipengele vilivyoanzishwa na وَ moja kwa moja baada ya kitenzi kikuu na angalia kama vinatoa maelezo ya hali ya wakati mmoja.",
+        "Kusanya mifano ya Hali ya neno moja pamoja na Hali ya sentensi nzima, ili kufahamu miundo yote miwili."
+      ],
+      "tabellen": [],
+      "siehe": ["tamyiz"]
+    },
+
+    "tamyiz": {
+      "titel": "Tamyizi (Ufafanuzi)",
+      "ar": "تَمْيِيز",
+      "umschrift": "Tamyeez",
+      "erklaerung": [
+        "Tamyizi ni Ismu la umoja lisilo na kikomo katika hadhi ya Nasb, linalofafanua taarifa isiyo wazi au yenye maana zaidi ya moja — kwa kawaida baada ya namba, kipimo, ulinganishi (Ism Tafdeel), au msemo usio wazi kama 'kiasi gani'. Hujibu swali 'ni aina gani/kiasi gani?'.",
+        "Baada ya namba kuanzia kumi na moja (isipokuwa 100 na 1000), kitu kilichohesabiwa (Al-Ma'duud) chenyewe husimama kama Tamyizi — kisicho na kikomo, umoja, katika hadhi ya Nasb.",
+        "Tofauti na Hali: Tamyizi hutaja AINA au aina fulani ya kitu, si hali ya muda mfupi, na daima ni Ismu moja, kamwe si sentensi nzima."
+      ],
+      "erkennung": [
+        "Ismu la umoja lisilo na kikomo katika hadhi ya Nasb, moja kwa moja baada ya namba, kipimo, au neno la kulinganisha, linalofafanua NI NINI kinachohesabiwa/kupimwa/kulinganishwa.",
+        "Kamwe si sentensi nzima (hii ndiyo inayotofautisha Tamyizi mara moja na Hali, ambayo pia yaweza kuwa sentensi)."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 60,
+          "wort": 13,
+          "zeigt": "عَيْنًا linabeba uhusiano Spec",
+          "warum": "linathibitisha Tamyizi baada ya namba ('zikabubujika kutoka humo chemchemi kumi na mbili') — عَيْنًا linafafanua kinachoashiriwa na 'kumi na mbili'"
+        },
+        {
+          "sure": 2,
+          "vers": 26,
+          "wort": 28,
+          "zeigt": "مَثَلًا linabeba uhusiano Spec",
+          "warum": "linathibitisha Tamyizi linalofafanua kauli isiyo wazi ('Allah haoni haya kutoa mfano — hata wa mbu')"
+        }
+      ],
+      "lernen": [
+        "Fanya mazoezi kwa makusudi kwenye namba kuanzia kumi na moja: Tafuta Ismu la umoja lisilo na kikomo linalofuata katika hadhi ya Nasb na ulitaje kama Tamyizi.",
+        "Linganisha ushahidi uliopo hapa na ushahidi wa Hali, ili kuimarisha tofauti kati ya 'ni aina gani/kiasi gani' na 'vipi/katika hali gani'.",
+        "Tafuta mifano zaidi ya Tamyizi baada ya Ism Tafdeel (umbo la kulinganisha), ili kuona kazi yake nje ya namba."
+      ],
+      "tabellen": [],
+      "siehe": ["haal"]
+    },
+
+    "badal": {
+      "titel": "Badali (Ubadala)",
+      "ar": "بَدَل",
+      "umschrift": "Badal",
+      "erklaerung": [
+        "Badali ni muundo wa Ismu-Ismu, ambapo Ismu la pili hufuata moja kwa moja la kwanza na kulifafanua au kulifafanua kwa usahihi zaidi — kana kwamba kati ya hayo mawili kuna 'yaani ...' isiyosemwa.",
+        "Jina Badali ('mbadala/badilisho') linatokana na ukweli kwamba kila moja ya maneno hayo mawili peke yake lingefanya sentensi kuwa kamili na yenye maana — mtu angeweza 'kubadilisha' moja na lingine bila sentensi kuwa isiyokamilika. Katika mchanganyiko, hata hivyo, sentensi huwa sahihi zaidi na yenye taarifa zaidi.",
+        "Kanuni muhimu ya kisarufi: Maneno yote mawili ya Badali lazima yawe katika hadhi ILE ILE (yote mawili Raf', yote mawili Nasb, au yote mawili Jarr). Hii ndiyo sharti pekee — tofauti na Sifa, wingi, jinsia, au ubainifu SI lazima vilingane.",
+        "Hii ndiyo hasa hatari kubwa ya kuchanganya katika masomo: Badali mara nyingi huonekana kwa nje kama Sifa (maelezo ya kivumishi), kwa sababu miundo yote miwili huundwa na maneno mawili ya Ismu yanayofuatana. Tofauti iko katika kusudi: Sifa HUELEZEA sifa ya Mowsoof (ikilingana naye katika vigezo vyote vinne); Badali HUTAJA tena kitu kile kile kwa usahihi zaidi au kukibadilisha na jina sahihi zaidi (likilingana tu katika hadhi). Jaribio la 'yaani ...' hutenganisha zote mbili kwa uhakika: Ikiwa 'yaani' laweza kuwekwa kimantiki kati ya maneno mawili, ni Badali; ikiwa neno la pili linaelezea tu sifa ya la kwanza, ni Sifa."
+      ],
+      "erkennung": [
+        "Jaribio la 'yaani': Je, ina maana kuweka 'yaani' au 'ndiyo kusema' kati ya maneno mawili ya Ismu? Basi ni Badali.",
+        "Jaribio la hadhi: Je, maneno yote mawili ya Ismu yako katika hadhi ile ile (Raf'/Nasb/Jarr)? Hilo ni sharti la lazima — lakini TOFAUTI na Sifa, vigezo vingine vitatu (wingi, jinsia, ubainifu) havihitaji kulingana.",
+        "Jaribio la kubadilishana: Je, mmoja wa maneno mawili angeweza kuachwa na sentensi ikabaki kamili na sahihi peke yake? Basi kwa uwezekano mkubwa ni Badali."
+      ],
+      "belege": [
+        {
+          "sure": 1,
+          "vers": 2,
+          "wort": 3,
+          "zeigt": "رَبِّ linabeba uhusiano App lenye urejeleo wa head kwa neno la 2 (لِلَّهِ)",
+          "warum": "linathibitisha Badali katika hadhi ya Jarr: 'Sifa zote njema ni za Allah, [yaani] Bwana wa walimwengu wote' — رَبِّ linafafanua ni nani anayekusudiwa kwa لِلَّهِ, wote wawili katika hadhi ile ile ya Jarr"
+        },
+        {
+          "sure": 1,
+          "vers": 7,
+          "wort": 1,
+          "zeigt": "صِرَٰطَ linabeba uhusiano App",
+          "warum": "linathibitisha Badali katika hadhi ya Nasb kuvuka mpaka wa aya: 'njia iliyonyooka — [yaani] njia ya wale uliowaneemesha' kutoka aya iliyotangulia ya 6"
+        }
+      ],
+      "lernen": [
+        "Weka akilini kwanza jaribio la 'yaani' na ulitumie kwa uthabiti kwenye kila jozi ya maneno mawili ya Ismu yanayofuatana, kabla ya kufikiria Sifa.",
+        "Tafuta kwa makusudi mifano ya kupingana: Chukua ushahidi wa Mowsoof-Sifah unaoujua na uangalie kwa nini jaribio la 'yaani' HALIFANYI KAZI hapo.",
+        "Fanya mazoezi kwa mifano miwili hapa kuthibitisha ulinganifu wa hadhi (Jarr katika aya 2, Nasb katika aya 7), ijapokuwa jozi hizo mbili za maneno hutofautiana katika ubainifu/urefu.",
+        "Jenga mkusanyiko wako mwenyewe wa maeneo matatu hadi matano zaidi ya Badali na utaje hadhi yao ya pamoja kila mmoja."
+      ],
+      "tabellen": [],
+      "siehe": ["sifah", "mudaf-ilayh"]
+    },
+
+    "mudaf-ilayh": {
+      "titel": "Mudhaf Ilayhi (Kiungo cha Pili cha Idhafa)",
+      "ar": "مُضَاف إِلَيْه",
+      "umschrift": "Mudaaf Ilayh",
+      "erklaerung": [
+        "Katika Idaafa (kipande cha umiliki, mfano 'Kitabu cha Allah'), Mudhaf Ilayhi ni neno la pili — 'mmiliki'. Husimama daima katika hadhi ya Jarr, bila kujali Mudhaf (neno la kwanza) lenyewe liko katika hadhi gani.",
+        "Mudhaf (neno la kwanza, 'kinachomilikiwa') halibebi kamwe wakati mmoja kikoo cha uhakika na Tanwini — 'linakopa' ubainifu wake kutoka kwa Mudhaf Ilayhi."
+      ],
+      "erkennung": [
+        "Ismu lenye alama ya Jarr moja kwa moja baada ya Ismu lingine, ambalo lenyewe halibebi kikoo wala Tanwini.",
+        "Hujibu swali 'ni ya nani?' kuhusiana na neno lililotangulia."
+      ],
+      "belege": [
+        {
+          "sure": 1,
+          "vers": 1,
+          "wort": 2,
+          "zeigt": "ٱللَّهِ linabeba uhusiano Poss lenye urejeleo wa head kwa neno la 1 (بِسْمِ)",
+          "warum": "linathibitisha Mudhaf Ilayhi katika kipande cha kwanza kabisa cha Idaafa cha Qur'ani ('kwa jina la Allah') — بِسْمِ lenyewe halibebi kikoo wala Tanwini"
+        },
+        {
+          "sure": 1,
+          "vers": 2,
+          "wort": 4,
+          "zeigt": "ٱلْعَٰلَمِينَ linabeba uhusiano Poss lenye urejeleo wa head kwa neno la 3 (رَبِّ)",
+          "warum": "linathibitisha Mudhaf Ilayhi wa pili ('Bwana wa walimwengu') katika sura hiyo hiyo ya Al-Fatiha"
+        }
+      ],
+      "lernen": [
+        "Fanya mazoezi, katika aya kadhaa, kutafuta kwanza neno la kwanza lisilo na kikoo wala Tanwini — hilo huonyesha Idaafa, neno linalofuata lenye alama ya Jarr ndilo Mudhaf Ilayhi.",
+        "Tunga mfululizo wa Idaafa kadhaa zilizounganishwa (mfano 'Siku ya Hukumu ya watu') na utaje kila kiungo cha Mudhaf Ilayhi.",
+        "Linganisha Mudhaf Ilayhi na Majroor baada ya Harf Jarr — zote mbili ziko katika hadhi ya Jarr, lakini kwa sababu tofauti."
+      ],
+      "tabellen": [],
+      "siehe": ["badal", "huruf-jarr"]
+    },
+
+    "munada": {
+      "titel": "Munada (Wito)",
+      "ar": "مُنَادَى",
+      "umschrift": "Munaadaa",
+      "erklaerung": [
+        "Munada ni Ismu linaloitwa baada ya herufi ya wito — kwa kawaida يَا, mara nyingi katika umbo يَا أَيُّهَا wakati wa kuita kundi la watu. Mara nyingi Munada hufuatiwa pia na Ismu jingine linalolitaja kwa usahihi zaidi (kwa يَا أَيُّهَا kwa kawaida kama Badali).",
+        "Katika wito wa moja kwa moja kwa jina maalum (يَا + jina), Munada kwa kawaida ni Ismu la jina lenyewe; kwa يَا أَيُّهَا, أَيُّهَا ndilo Munada halisi, lenye umbo la mabni, na Ismu linalofuata (mfano ٱلنَّاسُ) hufafanua ni nani anayekusudiwa."
+      ],
+      "erkennung": [
+        "Neno (au kipande kidogo) moja kwa moja baada ya يَا au أَيُّهَا, linalotaja mtu au kundi linaloitwa.",
+        "Kwa يَا أَيُّهَا, kwa kawaida hufuata Ismu la ufafanuzi katika hadhi ile ile — Badali kwa Munada yenyewe."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 21,
+          "wort": 1,
+          "zeigt": "يَٰٓأَيُّهَا linabeba uhusiano voc",
+          "warum": "linathibitisha Munada kama kichwa cha wito ('Enyi watu, mwabuduni Mola wenu Mlezi') — ٱلنَّاسُ inayofuata (neno la 2) inaifafanua kama Badali"
+        },
+        {
+          "sure": 2,
+          "vers": 33,
+          "wort": 2,
+          "zeigt": "يَٰٓـَٔادَمُ linabeba uhusiano voc",
+          "warum": "linathibitisha wito wa moja kwa moja kwa mtu mmoja kwa jina lake ('Akasema: Ewe Adamu, wajulishe majina yao')"
+        }
+      ],
+      "lernen": [
+        "Tafuta ndani ya Qur'ani mahali penye يَا أَيُّهَا kwa makusudi na utaje Munada pamoja na Ismu la ufafanuzi linalofuata.",
+        "Linganisha wito kadhaa: Ni nani anayeitwa kila mmoja, na kundi hilo linatajwaje zaidi?",
+        "Unganisha somo hili kwa makusudi na Badali, ili kuelewa jukumu maradufu la يَا أَيُّهَا + Ismu."
+      ],
+      "tabellen": [],
+      "siehe": ["badal"]
+    },
+
+    "mustathna": {
+      "titel": "Istithnaa (Ubaguzi)",
+      "ar": "مُسْتَثْنَى",
+      "umschrift": "Mustathnaa",
+      "erklaerung": [
+        "Mustathna ni neno linalotolewa nje — baada ya herufi ya ubaguzi, hasa إِلَّا — kutoka kauli iliyo ya jumla vinginevyo. Hutaja NANI au NINI kinachobaguliwa kutoka kundi/kauli iliyotajwa hapo awali.",
+        "Hadhi kamili ya Mustathna hutegemea aina ya sentensi (kamili-ya kuthibitisha, kamili-ya kukanusha, au isiyokamilika) — kwa mwanzo inatosha kuutambua kama jukumu lake mahususi la i'rabu moja kwa moja baada ya إِلَّا."
+      ],
+      "erkennung": [
+        "Ismu moja kwa moja baada ya إِلَّا, linaloweka mipaka kwenye kundi au kauli iliyotajwa hapo awali kwa ujumla zaidi ('wote isipokuwa ...').",
+        "Bila Mustathna na إِلَّا, sentensi tayari inabaki kamili yenyewe — Mustathna hupunguza tu kauli iliyotolewa hapo awali baadaye."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 34,
+          "wort": 8,
+          "zeigt": "إِبْلِيسَ linabeba uhusiano exp",
+          "warum": "linathibitisha Mustathna baada ya إِلَّا ('walisujudu wote, isipokuwa Iblisi') — Iblisi anatolewa nje kutoka kauli ya jumla kuhusu Malaika"
+        },
+        {
+          "sure": 2,
+          "vers": 83,
+          "wort": 26,
+          "zeigt": "قَلِيلًا linabeba uhusiano exp",
+          "warum": "linathibitisha Mustathna wa pili ('kisha mkageuka isipokuwa wachache miongoni mwenu')"
+        }
+      ],
+      "lernen": [
+        "Tafuta kwa makusudi mahali penye إِلَّا na taja kila mara ni kauli gani ya jumla iliyotangulia na ni nani/nini kinachotolewa nje kutoka kwake.",
+        "Linganisha ushahidi kadhaa wa Mustathna na uangalie jinsi hadhi inavyoweza kutofautiana kutegemea aina ya sentensi.",
+        "Jaribu kutafsiri sentensi bila إِلَّا na Mustathna — angalia kama kauli iliyobaki bado ni sentensi kamili."
+      ],
+      "tabellen": [],
+      "siehe": []
+    },
+
+    "taukid": {
+      "titel": "Taukidi (Msisitizo)",
+      "ar": "تَوْكِيد",
+      "umschrift": "Taukid",
+      "erklaerung": [
+        "Taukidi husisitiza Ismu lililotangulia, bila kuongeza chochote kipya kimaana — husimama katika hadhi ILE ILE na neno lake rejea. Aina mbili zinazotokea zaidi: marudio ya kihalisi (Taukid Lafzi) na msisitizo kwa maneno maalum kama كُلّ/جَمِيع ('wote/jumla') au نَفْس/عَيْن ('yeye mwenyewe') pamoja na kiwakilishi kinachofaa kilichoambatanishwa (Taukid Ma'nawi).",
+        "Tofauti na Badali, Taukidi hauongezei sentensi utambulisho mpya wenye usahihi zaidi — hurudia tu au husisitiza kitu kile kile kilichotajwa tayari, ili kisikike kwa msisitizo zaidi."
+      ],
+      "erkennung": [
+        "Neno kama كُلّ, جَمِيع, نَفْس, au عَيْن lenye kiwakilishi kilichoambatanishwa na kulingana na neno lake rejea, moja kwa moja baada ya neno hilo rejea, katika hadhi ile ile — bila taarifa mpya kimaana.",
+        "Je, neno linaloshukiwa laweza kufutwa bila taarifa yoyote kupotea (ni msisitizo tu unaopungua)? Basi ni Taukidi."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 31,
+          "wort": 4,
+          "zeigt": "كُلَّهَا linabeba uhusiano emph",
+          "warum": "linathibitisha Taukid Ma'nawi kwa كُلّ + kiwakilishi kilichoambatanishwa ('na akamfundisha Adamu majina, yote hayo') — inasisitiza ٱلْأَسْمَآءَ bila kuongeza taarifa mpya"
+        },
+        {
+          "sure": 2,
+          "vers": 161,
+          "wort": 13,
+          "zeigt": "أَجْمَعِينَ linabeba uhusiano emph",
+          "warum": "linathibitisha Taukidi kwa جَمِيع/أَجْمَعِينَ ('laana ya Allah na ya Malaika na ya watu wote pamoja')"
+        }
+      ],
+      "lernen": [
+        "Tafuta kwa makusudi كُلّ/جَمِيع/نَفْس/عَيْن moja kwa moja baada ya Ismu na uangalie kama kiwakilishi kilichoambatanishwa kinalingana na Ismu hilo.",
+        "Tofautisha Taukidi kwa uwazi na Badali: Taukidi hauongezi taarifa mpya, Badali hufafanua/hutaja upya.",
+        "Tafsiri sentensi hiyo hiyo mara moja na neno la Taukidi na mara moja bila hilo, na uangalie kwamba maudhui hayabadiliki, ni msisitizo tu unaobadilika."
+      ],
+      "tabellen": [],
+      "siehe": []
+    }
+  }
+}

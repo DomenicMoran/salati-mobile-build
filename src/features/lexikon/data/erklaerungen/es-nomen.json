@@ -1,0 +1,853 @@
+{
+  "schema": 1,
+  "lang": "es",
+  "bereich": "nomen",
+  "eintraege": {
+    "ism": {
+      "titel": "El nombre (Ism)",
+      "ar": "اِسْم",
+      "umschrift": "Ism",
+      "erklaerung": [
+        "Ism es una de las tres clases de palabras árabes, junto con el verbo (fiʿl) y la partícula (harf). A diferencia del español, «ism» engloba mucho más que los sustantivos en sentido estricto: nombres de persona y de lugar, objetos, ideas, adjetivos, pronombres, numerales e incluso expresiones de tiempo o lugar pertenecen a esta clase. El rasgo común se define de forma negativa: un ism no lleva en sí mismo ni tiempo verbal ni forma de mandato - precisamente eso lo distingue del fiʿl.",
+        "Cada ism posee simultáneamente cuatro propiedades básicas: género (masculino/femenino), número (singular/dual/plural), determinación (determinado/indeterminado) y caso (nominativo/acusativo/genitivo). Estas cuatro categorías nunca son opcionales - todo ism del Corán puede describirse por completo mediante ellas. Forman el armazón para todas las demás entradas de este léxico dedicadas al nombre.",
+        "Además, se distingue si la terminación de un ism cambia o no según el caso. Un nombre declinable (muʿrab) muestra el nominativo, el acusativo y el genitivo mediante terminaciones distintas; un nombre indeclinable (mabni) conserva la misma forma en cualquier posición. Un tercer grupo, más pequeño, de formas de ism no puede llevar nunca nunación y sustituye en el genitivo la kasra por una fatha (mamnūʿ min aṣ-ṣarf, el díptoto).",
+        "Como el ism abarca tantas subcategorías, conviene no aprender esta clase de palabras de forma aislada, sino siempre por contraste: ¿es esta palabra un ism, un fiʿl o un harf? Una prueba fiable consiste en comprobar si, al menos mentalmente, se le podría anteponer el artículo ال o añadir una terminación de nunación - eso funciona prácticamente solo con un ism."
+      ],
+      "erkennung": [
+        "Puede recibir (al menos mentalmente) el artículo ال antepuesto o una terminación de nunación (ـً ـٍ ـٌ) pospuesta.",
+        "Nunca lleva los prefijos de tiempo verbal (ni سَـ/سَوْفَ para el futuro, ni el patrón يـ/تـ/أـ/نـ del presente, ni una forma de imperativo).",
+        "Puede aparecer solo como un elemento completo de la oración (sujeto, complemento, segundo término de una iḍāfa) y atraer hacia sí una palabra de referencia como un adjetivo o un pronombre - algo que una partícula (harf) no puede hacer."
+      ],
+      "belege": [
+        {
+          "sure": 1,
+          "vers": 1,
+          "wort": 1,
+          "zeigt": "Ism en caso genitivo tras una preposición",
+          "warum": "بِسْمِ lleva la terminación kasra porque la preposición antepuesta بِ (\"con/en\") exige el genitivo - un comportamiento típico que solo puede mostrar un ism."
+        },
+        {
+          "sure": 1,
+          "vers": 2,
+          "wort": 1,
+          "zeigt": "Ism en caso nominativo como sujeto de una oración nominal",
+          "warum": "ٱلْحَمْدُ lleva la terminación damma y abre la oración como mubtadaʾ - la función de sujeto y la terminación de nominativo solo son posibles en un ism, no en un verbo ni en una partícula."
+        }
+      ],
+      "lernen": [
+        "Antes de aprender cualquier propiedad del nombre, plantéate ante cada palabra nueva la pregunta básica: ¿es esto un ism, un fiʿl o un harf? Compruébalo con la prueba del artículo/la nunación.",
+        "Toma la sura 1 completa y clasifica cada palabra en una de las tres clases antes de pasar a las propiedades detalladas - sin esta base, todo lo demás se queda en memorización sin comprensión.",
+        "Entrena con cada ism que encuentres a nombrar en voz alta de inmediato las cuatro propiedades básicas (¿género? ¿número? ¿determinado o indeterminado? ¿qué caso?), antes de pasar a la siguiente palabra."
+      ],
+      "tabellen": [
+        "nomen-muslim"
+      ],
+      "siehe": [
+        "genus",
+        "numerus",
+        "bestimmtheit",
+        "kasus",
+        "murab",
+        "mabni"
+      ]
+    },
+    "genus": {
+      "titel": "Género del nombre",
+      "ar": "التَّذْكِير وَالتَّأْنِيث",
+      "umschrift": "at-Tadhkir wa-t-Taʾnith (Mudhakkar/Muannath)",
+      "erklaerung": [
+        "Todo ism árabe es masculino (mudhakkar) o femenino (muannath) - no existe un neutro como en español. Esto afecta no solo a los seres vivos, sino también a cosas que en español no tienen un género fijo asociado: el sol (شَمْس) y la tierra (أَرْض) son femeninos en árabe, mientras que un libro (كِتَاب) o un señor (رَبّ) son masculinos. Esta asignación debe aprenderse junto con las palabras femeninas «invisibles», porque no puede deducirse de la forma.",
+        "La marca visible más fiable del género femenino es la terminación tāʾ marbūṭa (ة) al final de la palabra. Un ism sin esta marca u otra marca formal femenina se considera masculino por defecto - con excepciones: un grupo de palabras es femenino «por naturaleza» aunque no lleve ة, entre ellas las partes del cuerpo que van en pareja (mano, ojo, oreja), los fenómenos naturales (sol, fuego, viento) y muchos nombres de países.",
+        "El género no es una simple cuestión de forma, sino que incide en toda la construcción de la oración: un adjetivo (ṣifa) debe concordar en género con la palabra a la que se refiere (mawṣūf), y un verbo en tercera persona debe concordar en género con su sujeto. Quien determina mal el género de un nombre construye inevitablemente una terminación de adjetivo o de verbo equivocada a su alrededor.",
+        "Una regla especial importante está estrechamente ligada al género: un plural fracto (jamʿ taksir) que designa cosas inanimadas se trata, en la concordancia con el verbo y el adjetivo, como un singular femenino - independientemente del género que tuviera la forma singular. Esto explica por qué en el corpus algunas palabras en realidad masculinas aparecen en plural con el rasgo «femenino»."
+      ],
+      "erkennung": [
+        "Terminación ة (tāʾ marbūṭa) al final de la palabra = femenino - la marca visible más fiable.",
+        "Ninguna marca formal femenina = masculino por defecto, salvo que la palabra esté en la lista de excepciones (pares de partes del cuerpo, ciertos fenómenos naturales, muchos nombres de países).",
+        "Un adjetivo que acompaña o un verbo en tercera persona indican retroactivamente, mediante su propia terminación (ة en el adjetivo, تْ en el verbo), qué género tiene la palabra de referencia."
+      ],
+      "belege": [
+        {
+          "sure": 1,
+          "vers": 2,
+          "wort": 3,
+          "zeigt": "Ism masculino sin marca visible de género",
+          "warum": "رَبِّ no lleva ة ni ninguna otra marca formal femenina - es masculino por defecto, tal como confirma el rasgo «gender: m» en el corpus."
+        },
+        {
+          "sure": 2,
+          "vers": 3,
+          "wort": 5,
+          "zeigt": "Ism femenino, reconocible por la terminación ة",
+          "warum": "ٱلصَّلَوٰةَ lleva la terminación ة (aquí visible como ة antes de la fatha del acusativo) y por eso es femenino - marcado en el corpus como «gender: f»."
+        },
+        {
+          "sure": 114,
+          "vers": 6,
+          "wort": 2,
+          "zeigt": "Ism femenino por la terminación ة, incluso para un grupo de seres (yinn)",
+          "warum": "ٱلْجِنَّةِ lleva la terminación ة y está marcado como femenino, aunque designa a un grupo de seres - decide la marca formal, no el sexo natural de los seres designados."
+        }
+      ],
+      "lernen": [
+        "No aprendas nunca el género como regla aislada, sino siempre en pareja de palabras: pronuncia en voz alta رَبّ (masculino) y صَلَاة (femenino) uno tras otro, hasta que tengas la diferencia de terminación en el oído.",
+        "Toma 10 nombres de una sura y clasifícalos de memoria en dos columnas (masculino/femenino) - comprueba después con los rasgos de este léxico.",
+        "Prepárate una pequeña lista de palabras «femeninas invisibles» (pares de partes del cuerpo, sol, fuego, tierra, viento) - son los casos en los que la regla básica «sin ة = masculino» no se aplica.",
+        "Tapa la columna de género en una lista de vocabulario y clasifica de memoria antes de comprobar."
+      ],
+      "tabellen": [
+        "nomen-muslim"
+      ],
+      "siehe": [
+        "ism",
+        "numerus",
+        "jam-taksir"
+      ]
+    },
+    "numerus": {
+      "titel": "Número del nombre: singular, dual, plural",
+      "ar": "الْمُفْرَد وَالْمُثَنَّى وَالْجَمْع",
+      "umschrift": "al-Mufrad wa-l-Muthanna wa-l-Jamʿ",
+      "erklaerung": [
+        "El árabe distingue tres números, no dos como el español: singular (mufrad) para uno, dual (muthanna) para exactamente dos, y plural (jamʿ) para tres o más. El dual es un sistema propio y completo con terminaciones propias - no se trata simplemente como un plural, sino que tiene su propio caso de nominativo y su propio caso de acusativo/genitivo.",
+        "El dual se forma con la terminación ـَانِ en nominativo y ـَيْنِ en acusativo/genitivo, p. ej. مُسْلِمَانِ (\"dos musulmanes\", nominativo) frente a مُسْلِمَيْنِ (acusativo/genitivo de las mismas dos personas). Esta terminación se añade a casi cualquier ism, con independencia de cómo se forme su plural.",
+        "En el plural hay dos vías de formación radicalmente distintas. El plural sano (jamʿ sālim) añade solo una terminación a la raíz singular sin modificar: el masculino suele ser ـُونَ/ـِينَ (casi exclusivamente en designaciones de personas y participios), el femenino suele ser ـَات. El plural fracto (jamʿ taksir), en cambio, modifica la estructura interna de la propia palabra, por ejemplo قَلْب → قُلُوب (\"corazón\" → \"corazones\"). En el Corán, el plural fracto es, con diferencia, el caso más frecuente en las designaciones de cosas - tiene su propio capítulo, más extenso, en este léxico, porque no existe para él ninguna ley de formación fija.",
+        "Es importante para la sintaxis: un plural fracto que designa cosas inanimadas exige, en la concordancia con el adjetivo y el verbo, el mismo tratamiento que un singular femenino - independientemente del género del singular subyacente. Esta regla se encuentra constantemente al leer y al principio parece un error, pero es la norma."
+      ],
+      "erkennung": [
+        "Dual: terminación ـَانِ (nominativo) o ـَيْنِ (acusativo/genitivo), prácticamente siempre con una fatha delante.",
+        "Plural masculino sano (jamʿ mudhakkar sālim): terminación ـُونَ (nominativo) / ـِينَ (acusativo/genitivo) - aparece casi solo en designaciones de personas y participios activos (ism al-fāʿil).",
+        "Plural femenino sano (jamʿ muʾannath sālim): terminación ـَات, generalmente sobre la raíz de la palabra sin la ة original del singular.",
+        "Plural fracto (jamʿ taksir): sin terminación fija - el propio núcleo de la palabra cambia y solo se reconoce comparándolo con el singular conocido."
+      ],
+      "belege": [
+        {
+          "sure": 12,
+          "vers": 36,
+          "wort": 4,
+          "zeigt": "Dual en nominativo",
+          "warum": "فَتَيَانِ (\"dos jóvenes\") lleva la terminación dual ـَانِ, porque está como sujeto en nominativo - marcado en el corpus como number: du, case: nom."
+        },
+        {
+          "sure": 16,
+          "vers": 51,
+          "wort": 5,
+          "zeigt": "Dual en acusativo",
+          "warum": "إِلَٰهَيْنِ (\"dos dioses\") lleva la terminación dual ـَيْنِ, porque es complemento del verbo \"tomar\" en acusativo - el mismo dual que فَتَيَانِ, pero con la terminación de acusativo/genitivo."
+        },
+        {
+          "sure": 1,
+          "vers": 2,
+          "wort": 4,
+          "zeigt": "Plural masculino sano (jamʿ mudhakkar sālim)",
+          "warum": "ٱلْعَٰلَمِينَ termina en ـِينَ, la terminación típica de plural para designaciones de personas/seres en acusativo/genitivo - marcado en el corpus como number: pl."
+        },
+        {
+          "sure": 113,
+          "vers": 4,
+          "wort": 3,
+          "zeigt": "Plural femenino sano (jamʿ muʾannath sālim)",
+          "warum": "ٱلنَّفَّٰثَٰتِ termina en ـَٰتِ - la terminación típica del plural femenino sano, sin que la raíz de la palabra cambie por lo demás."
+        }
+      ],
+      "lernen": [
+        "No aprendas nunca los tres números como una regla abstracta, sino con una serie de palabras: pronuncia en voz alta مُسْلِم / مُسْلِمَانِ / مُسْلِمُونَ uno tras otro, hasta que el ritmo de las terminaciones se asiente.",
+        "Entrena el dual por separado del plural - suele pasarse por alto al aprender, porque no existe en español. Busca otras 5 formas de dual en el Corán y léelas en voz alta.",
+        "Para los plurales sanos basta la regla de terminación; para los plurales fractos (ver entrada propia) necesitas una lista de vocabulario singular→plural, porque no existe ley de formación para ellos.",
+        "Tapa alternadamente el singular, el dual o el plural en una lista de palabras y completa de memoria la forma que falta."
+      ],
+      "tabellen": [
+        "nomen-muslim"
+      ],
+      "siehe": [
+        "ism",
+        "genus",
+        "jam-taksir"
+      ]
+    },
+    "jam-taksir": {
+      "titel": "El plural fracto (Jamʿ Taksir)",
+      "ar": "جَمْع التَّكْسِير",
+      "umschrift": "Jamʿ at-Taksir",
+      "erklaerung": [
+        "Mientras que el plural sano (jamʿ sālim) solo añade una terminación a la raíz singular sin modificar, el plural fracto (jamʿ taksir) cambia la estructura interna de la propia palabra - las consonantes se conservan (la raíz), pero las vocales y a veces letras adicionales se desplazan por completo, por ejemplo قَلْب (corazón) → قُلُوب (corazones) o بَصَر (vista/ojo) → أَبْصَار (facultades visuales/ojos).",
+        "El plural fracto es, con mucho, el caso más frecuente en el Corán en cuanto no se trata de designaciones de personas - afecta prácticamente a todos los plurales de cosas. Existen patrones recurrentes (por ejemplo فُعُول como en قُلُوب, o أَفْعَال como en أَبْصَار), pero ninguna ley única de la que se pueda deducir con fiabilidad el plural de una palabra nueva. Por eso, cada plural fracto debe aprenderse como un par de vocabulario propio (singular + plural).",
+        "Gramaticalmente, el plural fracto suele sorprender: si designa cosas inanimadas, se trata en la concordancia con el adjetivo y el verbo como un singular femenino, independientemente del género del singular. En el corpus esto se manifiesta en que palabras singulares masculinas aparecen en plural fracto con el rasgo «femenino» - no es un error, sino la regla de concordancia habitual."
+      ],
+      "erkennung": [
+        "La propia raíz de la palabra cambia respecto al singular (otras vocales, a menudo letras adicionales) - no hay una terminación sencilla que se añada.",
+        "No termina ni en ـُونَ/ـِينَ (plural masculino sano) ni en ـَات (plural femenino sano).",
+        "Se reconoce sobre todo por patrones conocidos (p. ej. فُعُول، أَفْعَال، مَفَاعِل) o consultando el diccionario - no mediante una regla."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 7,
+          "wort": 4,
+          "zeigt": "Plural fracto de قَلْب (corazón)",
+          "warum": "قُلُوبِهِمْ muestra el patrón فُعُول: el singular قَلْب se convierte en قُلُوب, sin que se haya añadido una terminación sencilla - el propio núcleo de la palabra ha cambiado."
+        },
+        {
+          "sure": 2,
+          "vers": 7,
+          "wort": 8,
+          "zeigt": "Plural fracto de بَصَر (vista)",
+          "warum": "أَبْصَٰرِهِمْ muestra el patrón أَفْعَال: de بَصَر resulta أَبْصَار - otro ejemplo de plural fracto en lugar de sano, justo al lado de قُلُوبِهِمْ en el mismo versículo."
+        },
+        {
+          "sure": 113,
+          "vers": 4,
+          "wort": 5,
+          "zeigt": "Plural fracto de عُقْدَة (nudo)",
+          "warum": "ٱلْعُقَدِ es el plural fracto de عُقْدَة (nudo) - marcado en el corpus como number: pl, gender: m, aunque el singular es gramaticalmente femenino (terminación ة); el rasgo de género del plural fracto sigue sus propias reglas, no las del singular."
+        }
+      ],
+      "lernen": [
+        "Acepta desde el principio: para el plural fracto no hay atajo. Prepárate una lista propia singular → plural y apréndela como pares de vocabulario.",
+        "Tapa alternadamente la columna del singular o la del plural de tu lista y completa de memoria - primero en un sentido, luego en el otro.",
+        "Al leer el Corán, presta atención consciente a las palabras que significan plural pero no terminan ni en ـُونَ/ـِينَ ni en ـَات - son casi siempre plurales fractos.",
+        "Agrupa los plurales fractos recién aprendidos según su patrón (فُعُول, أَفْعَال, مَفَاعِل ...) - los patrones se repiten, aunque no formen una regla fija."
+      ],
+      "tabellen": [],
+      "siehe": [
+        "numerus",
+        "genus"
+      ]
+    },
+    "bestimmtheit": {
+      "titel": "Determinación: Maʿrifa y Nakira",
+      "ar": "الْمَعْرِفَة وَالنَّكِرَة",
+      "umschrift": "al-Maʿrifa wa-n-Nakira",
+      "erklaerung": [
+        "Todo ism árabe es determinado (maʿrifa, \"un libro concreto que se conoce\") o indeterminado (nakira, \"un libro cualquiera\"). Esta distinción corresponde aproximadamente a la oposición española entre \"el libro\" y \"un libro\", pero en árabe se hace visible morfológicamente, es decir, directamente en la forma de la palabra, en lugar de solo mediante una palabra antepuesta.",
+        "El camino más frecuente hacia la determinación es el artículo أَل (al at-taʿrīf), que se antepone al ism directamente y sin espacio intermedio. Un segundo camino, igualmente frecuente, pasa por el estado constructo (iḍāfa): la primera palabra de una iḍāfa (muḍāf) es automáticamente tan determinada o indeterminada como lo sea la segunda palabra (muḍāf ilayhi) - incluso sin artículo propio. También un pronombre posesivo sufijado determina automáticamente un ism, igual que los nombres propios son determinados por sí mismos.",
+        "Un ism indeterminado lleva en cambio, por regla general, nunación (tanwīn) - una doble marca vocálica final (ـٌ para dammatan/nominativo, ـً para fathatan/acusativo, ـٍ para kasratan/genitivo), que al hablar se oye como -un, -an o -in. La nunación y el artículo أَل se excluyen mutuamente: una palabra lleva uno u otro, nunca ambos a la vez.",
+        "Una peculiaridad afecta a la terminación ى (alif maqṣūra): en las palabras que terminan así, la nunación apenas es visible a la vista, porque se fusiona con el alif maqṣūra en un único signo - hay que aprender, por tanto, a tenerla en cuenta mentalmente aunque sea «muda»."
+      ],
+      "erkennung": [
+        "Determinado (maʿrifa) por: el artículo ال directamente antes de la palabra, los nombres propios, los pronombres posesivos sufijados, o la posición de muḍāf ante un muḍāf ilayhi determinado.",
+        "Indeterminado (nakira): lleva nunación (ـٌ/ـً/ـٍ) y no tiene ni artículo, ni sufijo posesivo, ni estatus de muḍāf.",
+        "La nunación y el artículo ال se excluyen siempre mutuamente - una palabra con ال nunca lleva nunación al mismo tiempo."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 2,
+          "wort": 2,
+          "zeigt": "Determinación mediante el artículo ال",
+          "warum": "ٱلْكِتَٰبُ lleva el artículo ال directamente ante la raíz - marcado en el corpus como state: definite, sin ninguna nunación."
+        },
+        {
+          "sure": 1,
+          "vers": 2,
+          "wort": 3,
+          "zeigt": "Determinación por posición de muḍāf, sin artículo propio",
+          "warum": "رَبِّ no lleva ni ال ni nunación, pero aun así es determinado (state: definite), porque está como muḍāf ante el muḍāf ilayhi determinado ٱلْعَٰلَمِينَ - la determinación se «hereda» de la segunda palabra de la iḍāfa."
+        },
+        {
+          "sure": 112,
+          "vers": 1,
+          "wort": 4,
+          "zeigt": "Ism indeterminado con nunación dammatan visible",
+          "warum": "أَحَدٌ lleva la terminación ـٌ (dammatan) y está marcado como state: indefinite - nunación claramente visible al final de la célebre sura al-Ikhlas."
+        },
+        {
+          "sure": 112,
+          "vers": 4,
+          "wort": 4,
+          "zeigt": "Ism indeterminado con nunación fathatan visible",
+          "warum": "كُفُوًا lleva la terminación ـًا (fathatan) en acusativo y está marcado como state: indefinite - la misma sura muestra aquí la segunda de las tres formas de nunación."
+        },
+        {
+          "sure": 2,
+          "vers": 17,
+          "wort": 15,
+          "zeigt": "Ism indeterminado con nunación kasratan visible",
+          "warum": "ظُلُمَٰتٍ lleva la terminación ـٍ (kasratan) en genitivo y está marcado como state: indefinite - con أَحَدٌ, كُفُوًا y ظُلُمَٰتٍ quedan así documentadas las tres formas de nunación en pasajes coránicos reales."
+        }
+      ],
+      "lernen": [
+        "Aprende primero a leer en voz alta los tres signos de nunación (ـٌ = -un, ـً = -an, ـٍ = -in), antes de ocuparte de las reglas de determinación - sin una lectura segura de los signos, todo queda en teoría.",
+        "Toma una página cualquiera del Corán y marca primero cada palabra con ال, luego cada palabra con nunación visible - lo que queda son casi siempre palabras en función de muḍāf, nombres propios o con sufijo pronominal.",
+        "Graba la regla «ال y nunación se excluyen» de tal forma que ante cada palabra nueva compruebes de inmediato cuál de los dos rasgos se cumple - nunca ambos a la vez.",
+        "Practica por separado la forma de nunación oculta en palabras terminadas en ى, por ejemplo con هُدًى - pronúncialo en voz alta como \"hudan\" y observa con atención lo poco que se ve de ello en la grafía."
+      ],
+      "tabellen": [
+        "nomen-muslim"
+      ],
+      "siehe": [
+        "ism",
+        "idafa",
+        "murab"
+      ]
+    },
+    "kasus": {
+      "titel": "Caso: Rafʿ, Naṣb, Jarr",
+      "ar": "الرَّفْع وَالنَّصْب وَالْجَرّ",
+      "umschrift": "ar-Rafʿ, an-Nasb, al-Dscharr",
+      "erklaerung": [
+        "El árabe conoce tres casos para el ism: rafʿ (corresponde aproximadamente al nominativo), naṣb (corresponde al acusativo) y jarr (corresponde al genitivo - jarr significa literalmente \"tirar/arrastrar\" y designa el caso que sigue a las preposiciones). Cada caso tiene su propia marca vocálica final, que en un nombre declinable (muʿrab) es audible y casi siempre también visible.",
+        "El rafʿ se manifiesta con la terminación -u (damma, ـُ en palabras determinadas, ـٌ como nunación en las indeterminadas). Marca típicamente el sujeto de una oración (fāʿil en la oración verbal, mubtadaʾ en la oración nominal), pero también el predicado (khabar) de una oración nominal.",
+        "El naṣb se manifiesta con la terminación -a (fatha, ـَ o ـً como nunación). Marca sobre todo el complemento directo (mafʿūl bihi) de un verbo, además de otras funciones como el acusativo de estado (ḥāl) o el acusativo causal (mafʿūl li-ajlihi).",
+        "El jarr se manifiesta con la terminación -i (kasra, ـِ o ـٍ como nunación). Aparece exactamente en dos situaciones: tras una preposición (ḥarf al-jarr) y como segundo término de un estado constructo (muḍāf ilayhi en la iḍāfa). Un nombre díptoto (mamnūʿ min aṣ-ṣarf) se aparta de esto y sustituye la kasra del jarr por una fatha - ver la entrada dedicada a él."
+      ],
+      "erkennung": [
+        "Rafʿ: terminación -u/ـُ (determinado) o -un/ـٌ (indeterminado, nunación dammatan) - generalmente sujeto o predicado.",
+        "Naṣb: terminación -a/ـَ (determinado) o -an/ـً (indeterminado, nunación fathatan) - generalmente complemento directo.",
+        "Jarr: terminación -i/ـِ (determinado) o -in/ـٍ (indeterminado, nunación kasratan) - siempre tras una preposición o como segundo término de una iḍāfa."
+      ],
+      "belege": [
+        {
+          "sure": 1,
+          "vers": 2,
+          "wort": 1,
+          "zeigt": "Rafʿ en el sujeto de una oración nominal",
+          "warum": "ٱلْحَمْدُ lleva la terminación damma -u, porque como mubtadaʾ forma el sujeto de la oración - marcado en el corpus como case: nom."
+        },
+        {
+          "sure": 1,
+          "vers": 6,
+          "wort": 2,
+          "zeigt": "Naṣb en el complemento directo de un imperativo",
+          "warum": "ٱلصِّرَٰطَ lleva la terminación fatha -a, porque es el complemento directo (mafʿūl bihi) del imperativo ٱهْدِنَا (\"guíanos\") - marcado en el corpus como case: acc."
+        },
+        {
+          "sure": 1,
+          "vers": 1,
+          "wort": 1,
+          "zeigt": "Jarr tras una preposición",
+          "warum": "بِسْمِ lleva la terminación kasra -i, porque la preposición بِ lo precede directamente - marcado en el corpus como case: gen."
+        }
+      ],
+      "lernen": [
+        "Aprende primero las tres terminaciones de caso como puro sonido: -u/-un, -a/-an, -i/-in - pronúncialas en voz alta antes de memorizar para qué sirven.",
+        "Vincula cada caso de inmediato con su función principal: rafʿ = quién/qué actúa o se describe, naṣb = a quién/qué afecta la acción, jarr = tras preposición o como segundo término de una iḍāfa.",
+        "Toma la sura 1 y determina el caso de cada ism antes de mirar una traducción - comprueba después con las terminaciones del texto.",
+        "Grábate como regla mnemotécnica: el naṣb y la forma de nunación ـً son las únicas en las que, en la mayoría de las ediciones impresas del Corán, se escribe además un alif adicional - eso ayuda a reconocer el caso incluso sin las marcas vocálicas."
+      ],
+      "tabellen": [
+        "nomen-muslim"
+      ],
+      "siehe": [
+        "ism",
+        "murab",
+        "mabni",
+        "diptot"
+      ]
+    },
+    "murab": {
+      "titel": "El nombre declinable (Muʿrab)",
+      "ar": "مُعْرَب",
+      "umschrift": "Muʿrab",
+      "erklaerung": [
+        "Un muʿrab es un ism cuya terminación cambia realmente según el caso - la inmensa mayoría de los nombres árabes pertenece a este grupo. La misma palabra lleva en rafʿ una marca vocálica final distinta que en naṣb, y otra distinta aún en jarr. Esta movilidad de la terminación es el caso normal; lo contrario (mabni, terminación invariable) es la excepción y solo afecta a ciertos grupos de palabras como los pronombres, los demostrativos y los pronombres relativos.",
+        "Muʿrab se ve con más claridad cuando se coloca la misma palabra, en distintas posiciones sintácticas, una junto a otra en el Corán: un mismo nombre aparece entonces una vez con terminación damma (rafʿ), otra con terminación fatha (naṣb) y otra con terminación kasra (jarr) - pura repetición de la misma palabra con una función distinta en cada oración.",
+        "Esto es decisivo para comprender el Corán: en un muʿrab, la propia terminación revela qué papel desempeña la palabra en la oración, con independencia del orden de las palabras. Por eso el árabe puede organizar el orden de las palabras con mucha más libertad que el español sin que surjan malentendidos - la terminación de caso lleva la información gramatical."
+      ],
+      "erkennung": [
+        "La terminación de la palabra alterna visiblemente entre las tres formas de caso (damma/fatha/kasra o sus variantes con nunación), según el papel que desempeñe en la oración.",
+        "La mayoría de los sustantivos y adjetivos son muʿrab - en caso de duda, un ism es declinable, salvo que pertenezca claramente a uno de los grupos mabni (pronombres, demostrativos, pronombres relativos, algunos nombres próximos a las partículas).",
+        "Un díptoto (mamnūʿ min aṣ-ṣarf) también es muʿrab - solo declina con dos terminaciones distintas en lugar de tres, y nunca con nunación (ver entrada propia)."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 7,
+          "wort": 2,
+          "zeigt": "La misma forma de palabra en rafʿ",
+          "warum": "ٱللَّهُ lleva aquí la terminación damma -u, porque está como fāʿil (sujeto) del verbo خَتَمَ - marcado en el corpus como case: nom."
+        },
+        {
+          "sure": 2,
+          "vers": 9,
+          "wort": 2,
+          "zeigt": "La misma forma de palabra en naṣb",
+          "warum": "ٱللَّهَ lleva aquí la terminación fatha -a, porque es complemento directo del verbo يُخَٰدِعُونَ - marcado en el corpus como case: acc, a diferencia de la damma en 2:7."
+        },
+        {
+          "sure": 1,
+          "vers": 1,
+          "wort": 2,
+          "zeigt": "La misma forma de palabra en jarr",
+          "warum": "ٱللَّهِ lleva aquí la terminación kasra -i, porque es muḍāf ilayhi tras بِسْمِ - la misma palabra aparece así con las tres terminaciones de caso en tres pasajes coránicos reales distintos."
+        }
+      ],
+      "lernen": [
+        "Busca una palabra frecuente (como ٱللَّه) y reúne tres pasajes coránicos en los que aparezca en los tres casos - léelos en voz alta seguidos para oír el cambio de terminación en la misma palabra.",
+        "Recuerda: muʿrab es el caso normal. Aprende en cambio activamente las excepciones (los grupos mabni), y el resto queda automáticamente como \"declinable\".",
+        "Practica con pares adjetivo-nombre: cuando el nombre cambia de caso, el adjetivo que lo acompaña debe seguirlo en el mismo caso - compruébalo en varios versículos."
+      ],
+      "tabellen": [
+        "nomen-muslim"
+      ],
+      "siehe": [
+        "kasus",
+        "mabni",
+        "diptot"
+      ]
+    },
+    "mabni": {
+      "titel": "El nombre indeclinable (Mabni)",
+      "ar": "مَبْنِي",
+      "umschrift": "Mabni",
+      "erklaerung": [
+        "Un mabni es un ism cuya terminación no cambia, sin importar qué papel desempeñe en la oración - por tanto, no tiene caso propio en el sentido de una terminación cambiante. A este grupo pertenecen los pronombres (ḍamīr, tanto independientes como afijos), los demostrativos (asmāʾ al-ishāra) y los pronombres relativos (al-asmāʾ al-mawṣūla), además de algunos numerales y nombres próximos a las partículas.",
+        "La diferencia con un muʿrab se aprecia con más claridad en que una palabra mabni, en posiciones sintácticas completamente distintas -una vez como sujeto, otra como complemento, otra tras una preposición-, conserva siempre la misma forma. La oración sigue determinando qué papel desempeña la palabra, pero ese papel no se lee en una terminación cambiante, sino solo en la posición y el contexto.",
+        "Es importante no confundir mabni con la indeterminación ni con \"no tener caso\" en el sentido de \"no tener caso asignado\": gramaticalmente, una palabra mabni sí ocupa una posición de caso (puede estar sintácticamente \"en rafʿ\" o \"en jarr\"), simplemente no señala esa posición mediante una terminación propia."
+      ],
+      "erkennung": [
+        "La forma de la palabra permanece idéntica en cualquier posición de la oración - no hay terminación cambiante de rafʿ/naṣb/jarr.",
+        "Grupos típicos mabni: pronombres independientes y afijos, demostrativos (ذَٰلِكَ, هَـٰذَا, أُولَٰئِكَ ...), pronombres relativos (ٱلَّذِي, ٱلَّذِينَ ...).",
+        "En el corpus morfológico de este léxico, en estas palabras no aparece ninguna marca de caso en la propia palabra - un indicio técnico claro de mabni."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 2,
+          "wort": 1,
+          "zeigt": "Demostrativo sin terminación de caso variable",
+          "warum": "ذَٰلِكَ no lleva ninguna marca de caso, aunque en la oración desempeña el papel de introducir el sujeto - la forma permanece igual con independencia de la función sintáctica, un rasgo característico de mabni."
+        },
+        {
+          "sure": 1,
+          "vers": 7,
+          "wort": 2,
+          "zeigt": "Pronombre relativo sin terminación de caso variable",
+          "warum": "ٱلَّذِينَ aparece aquí como muḍāf ilayhi tras صِرَٰطَ, pero no lleva ninguna marca de caso - la misma forma ٱلَّذِينَ aparece también en el Corán como sujeto o complemento sin cambiar."
+        }
+      ],
+      "lernen": [
+        "Aprende de memoria los grupos mabni como una lista cerrada (pronombres, demostrativos, pronombres relativos) - eso es la excepción, todo lo demás suele ser muʿrab.",
+        "Busca en el Corán la misma forma mabni (p. ej. ٱلَّذِينَ) en varios lugares con un papel sintáctico claramente distinto y confirma que la forma no cambia.",
+        "No confundas mabni con la indeterminación: ذَٰلِكَ es determinado (\"esa cosa concreta/aquella\"), aunque no muestre una terminación de caso cambiante - ambas propiedades son independientes entre sí."
+      ],
+      "tabellen": [],
+      "siehe": [
+        "murab",
+        "kasus",
+        "ism-ishara",
+        "asma-mawsula",
+        "pronomen-frei",
+        "pronomen-gebunden"
+      ]
+    },
+    "diptot": {
+      "titel": "El díptoto (Mamnuʿ mina s-Sarf)",
+      "ar": "مَمْنُوعٌ مِنَ الصَّرْف",
+      "umschrift": "Mamnuʿ mina s-Sarf",
+      "erklaerung": [
+        "Un díptoto es un tipo especial de nombre declinable (muʿrab) que, sin embargo, no distingue las tres terminaciones de caso y no puede llevar nunca nunación - aunque sea indeterminado en su significado. En rafʿ se comporta con normalidad (damma), en naṣb también con normalidad (fatha) - pero en jarr, la kasra esperada se sustituye por una fatha. Un díptoto tiene, por tanto, efectivamente solo dos terminaciones distintas en lugar de tres.",
+        "Entre los grupos de díptotos se cuentan, entre otros: los nombres propios extranjeros (p. ej. nombres de persona como فِرْعَوْن que no tienen origen árabe), ciertos patrones de plural (sobre todo el patrón مَفَاعِل/مَفَاعِيل, el llamado \"plural de pluralidad extrema\"), así como los adjetivos según el patrón أَفْعَل (por ejemplo los adjetivos de color) y algunos otros patrones fijos. Un díptoto vuelve a ser triptoto de inmediato (plenamente declinable con nunación) en cuanto se determina - por ejemplo mediante ال o como muḍāf.",
+        "Para la lectura del Corán, el díptoto es un rasgo de reconocimiento útil: si una palabra, tras una preposición o como muḍāf ilayhi, debería llevar en realidad kasra, pero en su lugar muestra fatha y no se ve nunación, casi siempre se trata de un díptoto."
+      ],
+      "erkennung": [
+        "En jarr aparece fatha en lugar de la kasra esperada - no hay diferencia de terminación visible entre naṣb y jarr.",
+        "Nunca lleva nunación, tampoco cuando la palabra es indeterminada en su significado.",
+        "Desencadenantes típicos: nombres propios extranjeros, ciertos patrones de plural (sobre todo مَفَاعِل/مَفَاعِيل), adjetivos de color y de defecto según el patrón أَفْعَل.",
+        "Cuando se determina (mediante ال o como muḍāf), el díptoto vuelve a comportarse como un nombre normal, plenamente declinable con tres terminaciones."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 49,
+          "wort": 5,
+          "zeigt": "Díptoto en un nombre propio extranjero: fatha en lugar de kasra en jarr",
+          "warum": "فِرْعَوْنَ está como muḍāf ilayhi tras آلِ en jarr, pero lleva la terminación -a (fatha) en lugar de la kasra esperada para el jarr - típico de un nombre propio extranjero sin raíz árabe."
+        },
+        {
+          "sure": 41,
+          "vers": 12,
+          "wort": 14,
+          "zeigt": "Díptoto en el patrón de plural مَفَاعِيل: fatha en lugar de kasra, sin nunación",
+          "warum": "بِمَصَٰبِيحَ está tras la preposición بِ en jarr, pero lleva la terminación -a (fatha) en lugar de kasra y sin nunación, aunque la palabra es indeterminada - el patrón de plural مَفَاعِيل es uno de los patrones fijos de díptoto."
+        }
+      ],
+      "lernen": [
+        "Aprende primero la regla de reconocimiento como un reflejo: una fatha tras una preposición o como muḍāf ilayhi, donde debería estar la kasra, es la señal de un díptoto.",
+        "Aprende de memoria los grupos desencadenantes como una lista breve: nombres propios extranjeros, el patrón de plural مَفَاعِل/مَفَاعِيل, los adjetivos de color según أَفْعَل - para empezar no necesitas más.",
+        "Practica con nombres de profetas conocidos (فِرْعَوْن, إِبْرَٰهِيم, يَعْقُوب, إِسْحَٰق): busca un pasaje coránico en el que el nombre esté en jarr y observa la terminación fatha.",
+        "Recuerda como control: en cuanto un díptoto lleva ال o se convierte en muḍāf, la excepción desaparece - entonces vuelve a comportarse como cualquier otro muʿrab."
+      ],
+      "tabellen": [],
+      "siehe": [
+        "murab",
+        "kasus",
+        "bestimmtheit"
+      ]
+    },
+    "idafa": {
+      "titel": "El estado constructo (Iḍāfa)",
+      "ar": "الْإِضَافَة",
+      "umschrift": "al-Idafa",
+      "erklaerung": [
+        "Una iḍāfa une dos nombres en una unidad de posesión o pertenencia, sin que haga falta una palabra propia como \"de\" - a diferencia del español (\"el libro del alumno\") o del inglés (\"the student's book\"). La primera palabra se llama muḍāf (\"lo añadido\", lo poseído), la segunda muḍāf ilayhi (\"aquello a lo que se añade\", el poseedor). Juntas forman una unidad fija que funciona gramaticalmente como un único nombre determinado o indeterminado.",
+        "Para el muḍāf rigen tres reglas fijas: nunca lleva el artículo ال, nunca lleva nunación, y su determinación depende por completo del muḍāf ilayhi - si la segunda palabra es determinada, la primera lo es automáticamente también, sin artículo propio. El muḍāf ilayhi, en cambio, está siempre en jarr (genitivo), independientemente del caso que lleve el propio muḍāf.",
+        "Una iḍāfa también puede tener varios eslabones (una cadena de varios estados constructos seguidos), y el último eslabón determina entonces la determinación de toda la cadena. Un pronombre posesivo afijo (ver la entrada sobre los pronombres afijos) asume gramaticalmente exactamente el mismo papel que un muḍāf ilayhi - رَبِّهِمْ (\"su Señor\") es estructuralmente la misma construcción que رَبُّ الْعَٰلَمِينَ (\"el Señor de los mundos\"), solo que con un pronombre en lugar de un nombre escrito por extenso."
+      ],
+      "erkennung": [
+        "Muḍāf (primera palabra): sin ال, sin nunación, seguido directamente del muḍāf ilayhi sin palabra de separación entre ambos.",
+        "Muḍāf ilayhi (segunda palabra): está siempre en jarr, es determinado por ال, es un nombre propio, o lleva él mismo un pronombre posesivo - y con ello determina toda la expresión.",
+        "Un pronombre personal afijo a un nombre (p. ej. ـهِمْ, ـهُ, ـنَا) asume la misma función que un muḍāf ilayhi y determina automáticamente el nombre."
+      ],
+      "belege": [
+        {
+          "sure": 1,
+          "vers": 2,
+          "wort": 3,
+          "zeigt": "Muḍāf: sin artículo, sin nunación",
+          "warum": "رَبِّ aparece sin ال y sin nunación directamente antes de ٱلْعَٰلَمِينَ - exactamente el comportamiento que debe mostrar un muḍāf."
+        },
+        {
+          "sure": 1,
+          "vers": 2,
+          "wort": 4,
+          "zeigt": "Muḍāf ilayhi: determinado y en jarr",
+          "warum": "ٱلْعَٰلَمِينَ lleva el artículo ال y la terminación de jarr -ina - y con ello determina automáticamente el رَبِّ precedente, aunque رَبِّ mismo no lleve artículo."
+        },
+        {
+          "sure": 113,
+          "vers": 1,
+          "wort": 3,
+          "zeigt": "Muḍāf en una segunda cadena de iḍāfa",
+          "warum": "بِرَبِّ (preposición بِ + muḍāf رَبِّ) tampoco lleva ni ال ni nunación, y solo se determina mediante ٱلْفَلَقِ que sigue - la misma estructura que en 1:2, confirmada en otro pasaje coránico distinto."
+        },
+        {
+          "sure": 113,
+          "vers": 1,
+          "wort": 4,
+          "zeigt": "Muḍāf ilayhi con artículo y terminación de jarr",
+          "warum": "ٱلْفَلَقِ lleva el artículo ال y la terminación kasra del jarr, porque está como muḍāf ilayhi tras رَبِّ - la iḍāfa completa بِرَبِّ ٱلْفَلَقِ significa \"junto al Señor del amanecer\"."
+        }
+      ],
+      "lernen": [
+        "Aprende primero de memoria las tres reglas del muḍāf como una fórmula fija: sin ال, sin nunación, determinación heredada de la segunda palabra.",
+        "Busca 5 ejemplos de iḍāfa en el Corán y marca por separado en cada uno el muḍāf y el muḍāf ilayhi - fíjate especialmente en la terminación de jarr de la segunda palabra.",
+        "Practica el proceso inverso: toma una expresión genitiva española (\"la casa del hombre\") y forma tú mismo la iḍāfa antes de compararla con un pasaje coránico.",
+        "Vincula conscientemente el pronombre posesivo afijo con la iḍāfa: رَبُّهُمْ y رَبُّ الْقَوْمِ son gramaticalmente la misma construcción - practica con pares en los que sustituyas un nombre escrito por extenso por un pronombre."
+      ],
+      "tabellen": [
+        "idafa-besitz"
+      ],
+      "siehe": [
+        "bestimmtheit",
+        "kasus",
+        "pronomen-gebunden"
+      ]
+    },
+    "pronomen-frei": {
+      "titel": "Los pronombres independientes (Ḍamīr Munfaṣil)",
+      "ar": "الضَّمَائِر الْمُنْفَصِلَة",
+      "umschrift": "adh-Dhamaʾir al-Munfasila",
+      "erklaerung": [
+        "Los pronombres independientes aparecen como palabras autónomas en la oración, separadas de cualquier otra palabra - a diferencia de los pronombres afijos (ḍamīr muttaṣil), que siempre se añaden a otra palabra. El árabe distingue aquí según persona (1.ª/2.ª/3.ª), género (masculino/femenino) y número (singular/dual/plural) - en total doce formas distintas, porque la 1.ª persona no tiene dual propio.",
+        "Los pronombres independientes son gramaticalmente mabni: su forma no cambia con el caso. Aparecen sobre todo en dos funciones: como sujeto de una oración nominal (p. ej. هُوَ اللَّهُ, \"Él es Alá\") o para dar énfasis especial a un complemento que de otro modo colgaría del verbo como pronombre afijo - entonces el pronombre de complemento, que en realidad sería afijo, se antepone en la forma especial con إِيَّا- y con ello queda destacado.",
+        "Esta función enfática resulta especialmente instructiva: إِيَّاكَ نَعْبُدُ (\"Solo a Ti adoramos\", literalmente \"A Ti - adoramos\") antepone el complemento إِيَّاكَ, aunque el verbo نَعْبُدُ (\"adoramos\") sería gramaticalmente completo también sin esta palabra - la anteposición sirve exclusivamente para enfatizar \"solo a Ti, a nadie más\"."
+      ],
+      "erkennung": [
+        "Aparece como palabra autónoma, no como añadido a otra palabra - reconocible por el espacio propio antes y después.",
+        "Forma fija e invariable con independencia del caso (mabni) - p. ej. هُوَ, هِيَ, أَنْتَ, نَحْنُ.",
+        "Las formas con إِيَّا- (إِيَّاكَ, إِيَّاهُ ...) señalan un complemento destacado y antepuesto que de otro modo colgaría del verbo como pronombre afijo."
+      ],
+      "belege": [
+        {
+          "sure": 112,
+          "vers": 1,
+          "wort": 2,
+          "zeigt": "Pronombre independiente como sujeto de una oración nominal",
+          "warum": "هُوَ aparece como palabra autónoma y forma el sujeto de la oración «قُلْ هُوَ ٱللَّهُ أَحَدٌ» (\"Di: Él es Alá, Uno\") - uno de los usos más conocidos de un pronombre independiente en el Corán."
+        },
+        {
+          "sure": 1,
+          "vers": 5,
+          "wort": 1,
+          "zeigt": "Pronombre independiente para la anteposición enfática de un complemento",
+          "warum": "إِيَّاكَ aparece como complemento autónomo y antepuesto antes del verbo نَعْبُدُ - la forma especial con إِيَّا- se usa precisamente cuando se quiere anteponer con énfasis el complemento de un verbo."
+        }
+      ],
+      "lernen": [
+        "Aprende primero de memoria los doce pronombres independientes como una simple lista, en orden fijo (1.ª sg./pl., 2.ª m/f/dual/pl., 3.ª m/f/dual/pl.) - la tabla de este léxico los muestra completos.",
+        "Tapa la columna árabe de la tabla de pronombres y recita cada forma en voz alta, después tapa la columna española y hazlo al revés.",
+        "Practica de forma específica las formas con إِيَّا- por separado de las formas básicas (أَنَا, أَنْتَ ...) - tienen un aspecto distinto y los principiantes suelen pasarlas por alto.",
+        "Lee la sura 1 en voz alta y encuentra en ella cada pronombre independiente - en esta sura breve, la función enfática se aprecia con especial claridad."
+      ],
+      "tabellen": [
+        "pronomen-frei"
+      ],
+      "siehe": [
+        "pronomen-gebunden",
+        "mabni"
+      ]
+    },
+    "pronomen-gebunden": {
+      "titel": "Los pronombres afijos (Ḍamīr Muttaṣil)",
+      "ar": "الضَّمَائِر الْمُتَّصِلَة",
+      "umschrift": "adh-Dhamaʾir al-Muttasila",
+      "erklaerung": [
+        "Los pronombres afijos nunca aparecen solos, sino que se añaden directamente a otra palabra - a un verbo, a un nombre o a una preposición. Según a qué clase de palabra se añadan, expresan algo distinto: añadidos a un verbo son el complemento de la acción; añadidos a un nombre son un pronombre posesivo (funcionalmente como un muḍāf ilayhi, ver la entrada sobre la iḍāfa); añadidos a una preposición son su término.",
+        "Las formas mismas son en su mayoría idénticas, con independencia de a qué clase de palabra se añadan (p. ej. ـهُمْ para \"ellos/a ellos/su\" en los tres casos) - una excepción es la 1.ª persona del singular, que en el verbo es ـنِي (\"me\"), pero en nombres y preposiciones es ـِي (\"mi\"/\"me\").",
+        "Como los pronombres afijos nunca forman una palabra propia, tampoco cambian nunca su forma según el caso - son, como los pronombres independientes, gramaticalmente mabni. Su significado exacto resulta únicamente de la palabra a la que se añaden y de la persona/género/número codificados en la propia terminación."
+      ],
+      "erkennung": [
+        "No tiene espacio propio delante - forma parte de la misma palabra escrita que la palabra de referencia.",
+        "Añadido a un verbo = complemento de la acción; añadido a un nombre = pronombre posesivo (\"mi/tu/su ...\"); añadido a una preposición = su término.",
+        "Forma fija e invariable con independencia del caso de la palabra de referencia - reconocible p. ej. en ـهُ, ـهَا, ـهُمْ, ـنَا, ـكَ, ـكُمْ como las últimas una a tres letras de una palabra más larga."
+      ],
+      "belege": [
+        {
+          "sure": 1,
+          "vers": 6,
+          "wort": 1,
+          "zeigt": "Pronombre afijo como complemento en un verbo",
+          "warum": "ٱهْدِنَا se compone del imperativo ٱهْدِ (\"¡guía!\") y el pronombre afijo نَا (\"nos\") como complemento de la acción - ambos forman una única palabra escrita sin espacio."
+        },
+        {
+          "sure": 2,
+          "vers": 5,
+          "wort": 5,
+          "zeigt": "Pronombre afijo como pronombre posesivo en un nombre",
+          "warum": "رَّبِّهِمْ se compone del nombre رَبّ (\"Señor\") y el pronombre afijo هِمْ (\"su/de ellos\"), que aquí asume gramaticalmente el papel de muḍāf ilayhi - رَبِّهِمْ significa literalmente \"el Señor de ellos\"."
+        }
+      ],
+      "lernen": [
+        "Aprende los pronombres afijos con una sola palabra de ejemplo (p. ej. كِتَاب, \"libro\") - añade cada forma sucesivamente y pronuncia el resultado en voz alta.",
+        "Practica después de forma específica la diferencia entre el sufijo de complemento en el verbo (ـنِي para \"me\") y el sufijo posesivo en el nombre (ـِي para \"mi\") - es la única forma que se diferencia.",
+        "Tapa la traducción española en una lista de verbos o nombres con pronombre afijo y deduce el significado solo a partir de la terminación.",
+        "Busca 5 palabras con pronombre afijo en el Corán y determina en cada caso: ¿es la palabra de referencia un verbo, un nombre o una preposición, y qué significa eso para la función del pronombre?"
+      ],
+      "tabellen": [
+        "pronomen-gebunden"
+      ],
+      "siehe": [
+        "pronomen-frei",
+        "idafa",
+        "mabni"
+      ]
+    },
+    "ism-ishara": {
+      "titel": "Los demostrativos (Asmāʾ al-Ishāra)",
+      "ar": "أَسْمَاء الْإِشَارَة",
+      "umschrift": "Asmaʾ al-Ischara",
+      "erklaerung": [
+        "Los demostrativos corresponden a los pronombres demostrativos españoles \"este/esta/esto\" y \"aquel/aquella/aquello\". El árabe distingue de forma sistemática entre cercanía (serie هَـٰذَا, \"este de aquí\") y lejanía (serie ذَٰلِكَ, \"aquel de allá\"), además de por género y número - no existe, por tanto, una sola palabra para \"este\", sino toda una serie de formas.",
+        "Gramaticalmente, los demostrativos son mabni: su forma se mantiene igual con independencia del caso. Pueden aparecer solos como sujeto (\"ذَٰلِكَ ٱلْكِتَٰبُ\" - \"Este es el libro\") o funcionar directamente como atributo ante un nombre determinado (\"هَـٰذَا ٱلرَّجُلُ\" - \"este hombre\"). En ambos casos, el nombre que sigue es siempre determinado (con ال o nombre propio).",
+        "En el Corán, un demostrativo se usa a menudo no solo en sentido espacial, sino de forma figurada - por ejemplo, para remitir a algo ya mencionado o conocido por su contenido, como en ذَٰلِكَ ٱلْكِتَٰبُ al comienzo de la sura 2, donde \"esto\" se refiere al Corán como un todo, no a un objeto próximo o lejano en el espacio."
+      ],
+      "erkennung": [
+        "Forma fija con independencia del caso (mabni) - sin vocal final cambiante, sea cual sea el papel sintáctico de la palabra.",
+        "La serie de cercanía se reconoce por el elemento هَـٰذَا/هَـٰذِهِ/هَـٰؤُلَاءِ; la serie de lejanía se reconoce por el elemento ذَٰلِكَ/تِلْكَ/أُولَـٰئِكَ.",
+        "Distingue por género (m/f) y número (sg./dual/pl.) - las formas de plural (هَـٰؤُلَاءِ, أُولَـٰئِكَ) valen por igual para ambos géneros."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 2,
+          "wort": 1,
+          "zeigt": "Demostrativo de la serie de lejanía, masculino singular",
+          "warum": "ذَٰلِكَ abre el versículo y se refiere al Corán (\"Esto/Aquello es el libro\") - masculino singular, sin terminación de caso cambiante."
+        },
+        {
+          "sure": 2,
+          "vers": 5,
+          "wort": 1,
+          "zeigt": "Demostrativo de la serie de lejanía, plural",
+          "warum": "أُو۟لَٰٓئِكَ (\"aquellos [allá]\") aparece como sujeto y se refiere al grupo de personas piadosas descrito anteriormente - marcado en el corpus como number: pl, sin distinción de género."
+        }
+      ],
+      "lernen": [
+        "Aprende la serie de cercanía y la de lejanía como dos bloques separados, sin mezclarlos - primero todas las formas de هَـٰذَا, luego todas las de ذَٰلِكَ.",
+        "Tapa la columna de género/número de la tabla de demostrativos y recita la forma correspondiente al vuelo (\"femenino, dual, cercano\" → هَـٰتَانِ).",
+        "Al leer, fíjate en que tras un demostrativo casi siempre sigue un nombre determinado con ال cuando se usa como atributo - eso ayuda a captar rápidamente la estructura de la oración.",
+        "Practica el uso figurado concretamente con ذَٰلِكَ ٱلْكِتَٰبُ: tradúcelo primero literalmente en sentido espacial (\"aquel libro de allá\"), luego en sentido de contenido (\"este Corán [que se os anuncia]\")."
+      ],
+      "tabellen": [
+        "hinweiswoerter"
+      ],
+      "siehe": [
+        "mabni",
+        "asma-mawsula",
+        "bestimmtheit"
+      ]
+    },
+    "asma-mawsula": {
+      "titel": "Los pronombres relativos (al-Asmāʾ al-Mawṣūla)",
+      "ar": "الْأَسْمَاء الْمَوْصُولَة",
+      "umschrift": "al-Asmaʾ al-Mawsula",
+      "erklaerung": [
+        "Los pronombres relativos introducen una oración de relativo y corresponden al español \"el/la/lo que ...\" o \"aquel que ...\". El más frecuente y conocido es ٱلَّذِي (masculino singular), con sus formas de género y número - ٱلَّتِي (f. sg.), ٱلَّذِينَ (m. pl.), ٱللَّاتِي/ٱللَّائِي (f. pl.) y formas de dual propias.",
+        "Gramaticalmente, el propio pronombre relativo es mabni - su forma no cambia con el caso, aunque sintácticamente puede desempeñar distintos papeles según la oración (sujeto, complemento, muḍāf ilayhi). La oración de relativo que sigue (ṣilat al-mawṣūl) debe contener siempre un elemento de referencia que remita al pronombre relativo - generalmente un pronombre afijo en el verbo o en el nombre de la oración de relativo.",
+        "Un caso especial son los pronombres relativos «generales» مَنْ (\"quien/aquel que\" - para personas) y مَا (\"lo que/aquello que\" - para cosas), que, a diferencia de ٱلَّذِي, no llevan género ni número fijos y por eso permanecen iguales para cualquier designación de persona o de cosa."
+      ],
+      "erkennung": [
+        "Forma fija con independencia del caso (mabni) - reconocible por el elemento ٱلَّذِي/ٱلَّتِي/ٱلَّذِينَ con ال antepuesto, que aquí no es un artículo de determinación corriente, sino parte del propio pronombre relativo.",
+        "Va siempre seguido de una oración (subordinada) propia que contiene un elemento de referencia (generalmente un pronombre afijo) hacia el pronombre relativo.",
+        "مَنْ y مَا son las variantes neutras en género/número para personas y cosas respectivamente, y se distinguen externamente de la serie ٱلَّذِي."
+      ],
+      "belege": [
+        {
+          "sure": 1,
+          "vers": 7,
+          "wort": 2,
+          "zeigt": "Pronombre relativo masculino plural",
+          "warum": "ٱلَّذِينَ introduce «صِرَٰطَ ٱلَّذِينَ أَنْعَمْتَ عَلَيْهِمْ» (\"el camino de aquellos a quienes has favorecido\") - la oración siguiente أَنْعَمْتَ عَلَيْهِمْ contiene con عَلَيْهِمْ el elemento de referencia hacia ٱلَّذِينَ."
+        },
+        {
+          "sure": 114,
+          "vers": 5,
+          "wort": 1,
+          "zeigt": "Pronombre relativo masculino singular",
+          "warum": "ٱلَّذِى introduce «ٱلَّذِى يُوَسْوِسُ فِى صُدُورِ ٱلنَّاسِ» (\"el que susurra en los pechos de los hombres\") y se refiere a ٱلْخَنَّاسِ en el versículo anterior - singular masculino, a diferencia del plural ٱلَّذِينَ de 1:7."
+        }
+      ],
+      "lernen": [
+        "Aprende primero las formas ٱلَّذِي/ٱلَّتِي/ٱلَّذِينَ/ٱللَّاتِي ordenadas por género y número - imagina la misma tabla que para los demostrativos, pero para oraciones de relativo.",
+        "Busca 3 oraciones de relativo en el Corán y marca en cada una el elemento de referencia en la subordinada (generalmente un pronombre afijo) - sin ese elemento, una oración de relativo en árabe queda incompleta.",
+        "Practica por separado: مَنْ para personas, مَا para cosas - ambos no cambian nunca, a diferencia de la serie ٱلَّذِي.",
+        "Tapa la columna de traducción española de una lista de pronombres relativos y traduce desde el árabe, después al revés."
+      ],
+      "tabellen": [
+        "relativpronomen"
+      ],
+      "siehe": [
+        "mabni",
+        "ism-ishara",
+        "pronomen-gebunden"
+      ]
+    },
+    "ism-fail": {
+      "titel": "El participio activo (Ism al-Fāʿil)",
+      "ar": "اِسْم الْفَاعِل",
+      "umschrift": "Ism al-Faʿil",
+      "erklaerung": [
+        "El ism al-fāʿil describe \"a quien realiza la acción\" - corresponde aproximadamente al participio de presente activo español (\"el que escribe\") o a un nombre de agente (\"el escritor\"). En la forma base (Forma I) se forma según el patrón fijo فَاعِل, p. ej. de كَتَبَ (\"escribir\") a كَاتِب (\"el que escribe/escritor\").",
+        "En las formas verbales derivadas (II-X), cada forma tiene su propio patrón de ism al-fāʿil, también fijo, reconocible casi siempre por una مُـ antepuesta y una kasra bajo el penúltimo radical (p. ej. Forma VIII مُتَّقِي de اِتَّقَى, \"ser temeroso de Dios/guardarse\"; Forma IV مُؤْمِن de آمَنَ, \"creer\"). A pesar de los distintos patrones, el significado básico se mantiene: quien realiza la acción.",
+        "Gramaticalmente, el ism al-fāʿil se comporta como un ism corriente: declina por caso (muʿrab), forma formas de género y número, y puede usarse tanto como adjetivo (\"un hombre temeroso de Dios\") como sustantivadamente (\"los temerosos de Dios\" = un grupo de personas) - en el Corán, a menudo en esta segunda función sustantivada, como en ٱلْمُتَّقِينَ o ٱلْمُؤْمِنِينَ."
+      ],
+      "erkennung": [
+        "Forma base (Forma I): patrón فَاعِل (p. ej. كَاتِب, حَاسِد, غَاسِق).",
+        "Formas derivadas (II-X): casi siempre con una مُـ antepuesta y kasra bajo el penúltimo radical (p. ej. مُتَّقِي Forma VIII, مُؤْمِن Forma IV, مُسْتَقِيم Forma X).",
+        "Siempre significa \"quien realiza la acción\" - en caso de duda, plantea la pregunta: ¿quién o qué hace algo aquí?"
+      ],
+      "belege": [
+        {
+          "sure": 1,
+          "vers": 4,
+          "wort": 1,
+          "zeigt": "Participio activo Forma I",
+          "warum": "مَٰلِكِ (\"soberano/dueño\") sigue el patrón فَاعِل de la raíz م-ل-ك y está marcado en el corpus como voice: active, derivation: activeParticiple - \"quien tiene soberanía sobre algo\"."
+        },
+        {
+          "sure": 2,
+          "vers": 2,
+          "wort": 7,
+          "zeigt": "Participio activo Forma VIII, sustantivado",
+          "warum": "لِلْمُتَّقِينَ (\"para los temerosos de Dios\") es el participio activo de la Forma VIII اِتَّقَى, marcado en el corpus como derivation: activeParticiple, verbForm: 8, y se usa aquí sustantivadamente como designación de un grupo de personas."
+        },
+        {
+          "sure": 113,
+          "vers": 3,
+          "wort": 3,
+          "zeigt": "Participio activo Forma I en forma indefinida",
+          "warum": "غَاسِقٍ (\"lo que se oscurece\" - la noche que llega) sigue también el patrón فَاعِل de la raíz غ-س-ق y aparece aquí indeterminado (nunación kasratan) como muḍāf ilayhi."
+        }
+      ],
+      "lernen": [
+        "Aprende primero de memoria el patrón base فَاعِل con 3-4 ejemplos conocidos (كَاتِب، عَالِم، حَاسِد), antes de aventurarte con las formas derivadas.",
+        "Para cada forma verbal (I-X) que ya conozcas, forma tú mismo el patrón de ism al-fāʿil correspondiente y compáralo con una lista - los patrones se repiten con fiabilidad dentro de la misma forma.",
+        "Practica la diferencia adjetival/sustantivada con pares como رَجُلٌ مُؤْمِنٌ (\"un hombre creyente\", adjetivo) frente a ٱلْمُؤْمِنُونَ (\"los creyentes\", sustantivo) - la misma forma de palabra, dos funciones.",
+        "Tapa la columna de ism al-fāʿil en una lista de verbos y forma tú mismo la forma antes de comprobar."
+      ],
+      "tabellen": [],
+      "siehe": [
+        "ism-maful",
+        "masdar",
+        "ism"
+      ]
+    },
+    "ism-maful": {
+      "titel": "El participio pasivo (Ism al-Mafʿūl)",
+      "ar": "اِسْم الْمَفْعُول",
+      "umschrift": "Ism al-Mafʿul",
+      "erklaerung": [
+        "El ism al-mafʿūl describe \"aquel/aquello sobre quien/lo que se realiza la acción\" - corresponde al participio de pasado pasivo español (\"lo escrito\"). En la forma base (Forma I) se forma según el patrón fijo مَفْعُول, p. ej. de كَتَبَ (\"escribir\") a مَكْتُوب (\"lo escrito\").",
+        "En las formas verbales derivadas (II-X), cada forma tiene su propio patrón fijo, también generalmente con مُـ antepuesta, pero con fatha en lugar de kasra bajo el penúltimo radical - la diferencia principal con el participio activo de la misma forma reside exactamente en esa vocal (p. ej. Forma II مُطَهَّر, \"purificado\", frente a un hipotético participio activo مُطَهِّر, \"que purifica\").",
+        "Al igual que el participio activo, el participio pasivo es gramaticalmente un ism corriente y declinable (muʿrab), con sus propias formas de género, número y caso, y puede usarse tanto de forma adjetival como sustantivada - en el Corán, por ejemplo, como designación de quienes son objeto de una acción, como en ٱلْمَغْضُوبِ (\"aquel sobre quien recae la ira\")."
+      ],
+      "erkennung": [
+        "Forma base (Forma I): patrón مَفْعُول (p. ej. مَغْضُوب, مَعْلُوم, مَخْلُوق).",
+        "Formas derivadas (II-X): مُـ antepuesta como en el participio activo, pero con fatha en lugar de kasra bajo el penúltimo radical (p. ej. مُطَهَّر Forma II).",
+        "Siempre significa \"aquello/aquel sobre quien se realiza la acción\" - en caso de duda, plantea la pregunta: ¿quién o qué sufre algo aquí?"
+      ],
+      "belege": [
+        {
+          "sure": 1,
+          "vers": 7,
+          "wort": 6,
+          "zeigt": "Participio pasivo Forma I",
+          "warum": "ٱلْمَغْضُوبِ (\"aquel sobre quien recae la ira\") sigue el patrón مَفْعُول de la raíz غ-ض-ب y está marcado en el corpus como voice: passive, derivation: passiveParticiple."
+        },
+        {
+          "sure": 2,
+          "vers": 25,
+          "wort": 31,
+          "zeigt": "Participio pasivo Forma II, femenino",
+          "warum": "مُّطَهَّرَةٌ (\"[esposas] purificadas\") es el participio pasivo de la Forma II طَهَّرَ (\"purificar\"), marcado en el corpus como derivation: passiveParticiple, verbForm: 2 - reconocible por el prefijo مُـ con fatha en lugar de kasra bajo el penúltimo radical, a diferencia del participio activo de la misma forma."
+        }
+      ],
+      "lernen": [
+        "Aprende primero de memoria el patrón base مَفْعُول con 3-4 ejemplos conocidos, y compáralo directamente con el patrón activo paralelo فَاعِل en el mismo verbo.",
+        "Grábate la diferencia decisiva en las formas derivadas: participio activo = kasra, participio pasivo = fatha bajo el penúltimo radical, con el mismo prefijo مُـ en ambos casos.",
+        "Forma tanto el participio activo como el pasivo de 5 verbos que conozcas y pronuncia ambas formas en voz alta seguidas, para oír la diferencia vocálica.",
+        "Traduce cada nuevo ism al-mafʿūl primero literalmente con \"aquel/aquella/aquello sobre quien/lo que se [verbo]\" - eso obliga a comprender correctamente la pasiva antes de pasar a una traducción más libre."
+      ],
+      "tabellen": [],
+      "siehe": [
+        "ism-fail",
+        "masdar",
+        "ism"
+      ]
+    },
+    "masdar": {
+      "titel": "El nombre verbal (Maṣdar)",
+      "ar": "مَصْدَر",
+      "umschrift": "Masdar",
+      "erklaerung": [
+        "El maṣdar es la idea pura de un verbo, desligada de persona, género, tiempo y modo, expresada como nombre - en español lo más cercano sería un sustantivo verbal (\"el escribir/la escritura\") o un sustantivo autónomo que comparte la misma raíz que el verbo. Los gramáticos árabes tradicionalmente consideran incluso el maṣdar como el origen del que derivan todas las formas verbales, y no al revés.",
+        "En la forma base (Forma I) no existe un único patrón fijo de formación para el maṣdar - a diferencia de las formas derivadas (II-X), cada una de las cuales tiene su propio patrón de maṣdar, muy regular (p. ej. la Forma II casi siempre تَفْعِيل, la Forma X اِسْتِفْعَال). El maṣdar de los verbos de Forma I debe aprenderse, por tanto, individualmente para cada verbo.",
+        "Gramaticalmente, un maṣdar es un ism corriente y declinable: lleva terminaciones de caso, puede ser determinado o indeterminado, y puede aparecer en casi cualquier función nominal - como sujeto, como término de una preposición, o en la función especial del \"acusativo causal\" (mafʿūl li-ajlihi), en la que un maṣdar en acusativo indica el motivo de una acción, por ejemplo \"por miedo\" (حَذَرَ)."
+      ],
+      "erkennung": [
+        "Designa la acción/idea pura de un verbo como nombre, sin persona, tiempo ni modo - se puede traducir con \"el [verbo]ar/er/ir\" o con un sustantivo español correspondiente de la misma raíz.",
+        "En la Forma I: sin patrón fijo, debe aprenderse por verbo. En las Formas II-X: patrones fijos y predecibles (p. ej. تَفْعِيل para la Forma II, اِسْتِفْعَال para la Forma X).",
+        "Se encuentra a menudo en acusativo como indicación de motivo (\"por/a causa de ...\") - entonces sin preposición, directamente tras la oración principal."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 15,
+          "wort": 6,
+          "zeigt": "Maṣdar como término genitivo tras una preposición",
+          "warum": "طُغْيَٰنِهِمْ (\"su desmesura/rebeldía\") es el maṣdar de طَغَى (\"sobrepasar el límite\") y aparece aquí como término de la preposición فِى - marcado en el corpus como derivation: verbalNoun."
+        },
+        {
+          "sure": 2,
+          "vers": 19,
+          "wort": 15,
+          "zeigt": "Maṣdar como acusativo causal (Mafʿūl li-Ajlihi)",
+          "warum": "حَذَرَ (\"por miedo\") es el maṣdar de حَذِرَ (\"temer\") y está en acusativo sin preposición, para indicar el motivo de una acción (\"... por miedo a la muerte\") - marcado en el corpus como derivation: verbalNoun, case: acc."
+        }
+      ],
+      "lernen": [
+        "Aprende el maṣdar de cada nuevo verbo de Forma I desde el principio junto con el propio verbo, como un par fijo (p. ej. طَغَى → طُغْيَان) - a posteriori, el patrón ya no se puede adivinar.",
+        "Aprende en cambio de memoria los patrones de maṣdar de las Formas II-X como reglas fijas (Forma II: تَفْعِيل, Forma III: مُفَاعَلَة/فِعَال, Forma IV: إِفْعَال, Forma V: تَفَعُّل, Forma VI: تَفَاعُل, Forma VII: اِنْفِعَال, Forma VIII: اِفْتِعَال, Forma X: اِسْتِفْعَال) - aquí conviene memorizar la regla en lugar de estudiar caso por caso.",
+        "Practica de forma específica la función de acusativo causal: busca 3 formas de maṣdar en acusativo sin preposición y tradúcelas de prueba con \"por/a causa de ...\", para interiorizar el patrón.",
+        "Tapa la columna de maṣdar en una lista de verbos y forma tú mismo la forma - comprueba después si en la Forma I has acertado por conocimiento real o solo por suposición."
+      ],
+      "tabellen": [],
+      "siehe": [
+        "ism-fail",
+        "ism-maful",
+        "ism"
+      ]
+    }
+  }
+}

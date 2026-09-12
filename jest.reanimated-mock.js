@@ -31,6 +31,9 @@ function animationBuilder() {
     'mass',
     'easing',
     'withInitialValues',
+    // components/animated-icon.tsx haengt an die Splash-Ausblendung einen
+    // Abschluss-Callback (Keyframe.duration(...).withCallback(...)).
+    'withCallback',
     'randomDelay',
     'build',
     'reduceMotion',
@@ -79,6 +82,10 @@ const Easing = {
   in: (fn) => fn,
   out: (fn) => fn,
   inOut: (fn) => fn,
+  // components/animated-icon.tsx baut seine Keyframes auf Modulebene und ruft
+  // Easing.elastic dabei sofort auf - ohne diesen Eintrag scheitert schon der
+  // Import der Datei.
+  elastic: () => (t) => t,
 };
 
 module.exports = {

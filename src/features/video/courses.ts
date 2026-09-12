@@ -91,9 +91,13 @@ export function groupEpisodesByCourse(episodes: VideoEpisode[]): Course[] {
   for (const course of courses) {
     course.chapters.sort((a, b) => a.chapterNo - b.chapterNo);
     for (const chapter of course.chapters) {
+      // `order` (falls gesetzt) sticht `lesson_no`/`episode_no` — erlaubt, eine
+      // neue Lektion zwischen zwei bestehende zu schieben (z. B. `order: 3.5`),
+      // ohne `lesson_no` aller nachfolgenden Eintraege zu verschieben. Ohne das
+      // Feld ist das Ergebnis exakt die alte Sortierung.
       chapter.episodes.sort(
         (a, b) =>
-          num(a.lesson_no, a.episode_no) - num(b.lesson_no, b.episode_no) ||
+          num(a.order, num(a.lesson_no, a.episode_no)) - num(b.order, num(b.lesson_no, b.episode_no)) ||
           a.episode_no - b.episode_no,
       );
     }

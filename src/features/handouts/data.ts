@@ -19,19 +19,31 @@ export interface Handout {
   size_kb?: number;
   /** Seitenzahl (Anzeige). */
   pages?: number;
+  // --- Ohne-Release-Steuerung (seit 2026-09-05, gleiches Muster wie bei den
+  // Videos, s. features/video/data.ts) --------------------------------
+  /** Manuelle Feinposition innerhalb der Kategorie. OPTIONAL: fehlt es,
+   *  bleibt die Reihenfolge die des Index (Einfuegereihenfolge). */
+  order?: number;
+  /** Blendet die Unterlage aus, ohne sie zu loeschen. Nur `false` wirkt. */
+  visible?: boolean;
 }
 
 export interface HandoutIndex {
   handouts: Handout[];
 }
 
+/** true, solange `visible` nicht explizit auf `false` steht. */
+function isVisible(h: Handout): boolean {
+  return h.visible !== false;
+}
+
 export async function fetchHandoutIndex(): Promise<HandoutIndex> {
-  const j = await fetchJson<HandoutIndex>(HANDOUT_INDEX_URL, {
+  const j = await fetchJson<Partial<HandoutIndex>>(HANDOUT_INDEX_URL, {
     cache: 'no-cache',
     errorPrefix: 'handout_index',
   });
-  j.handouts = j.handouts ?? [];
-  return j;
+  const raw = Array.isArray(j.handouts) ? j.handouts : [];
+  return { handouts: raw.filter(isVisible) };
 }
 
 export interface HandoutCategoryGroup {
@@ -47,7 +59,7 @@ export interface HandoutCategoryGroup {
  * Section-Header-Text kommt aus `category_title` (Fallback: `category`).
  */
 export function groupHandoutsByCategory(handouts: Handout[]): HandoutCategoryGroup[] {
-  const order: string[] = [];
+  const categoryOrder: string[] = [];
   const map = new Map<string, HandoutCategoryGroup>();
   for (const h of handouts) {
     const key = h.category?.trim() || '__default__';
@@ -55,11 +67,25 @@ export function groupHandoutsByCategory(handouts: Handout[]): HandoutCategoryGro
     if (!group) {
       group = { key, title: h.category_title?.trim() || h.category?.trim() || '', handouts: [] };
       map.set(key, group);
-      order.push(key);
+      categoryOrder.push(key);
     }
     group.handouts.push(h);
   }
-  return order.map((k) => map.get(k)!);
+  // `order` (falls gesetzt) sticht die Einfuegereihenfolge innerhalb der
+  // Kategorie — ohne das Feld bleibt die Reihenfolge exakt die des Index.
+  for (const group of map.values()) {
+    if (group.handouts.some((h) => typeof h.order === 'number' && Number.isFinite(h.order))) {
+      group.handouts = group.handouts
+        .map((h, i) => ({ h, i }))
+        .sort((a, b) => {
+          const oa = typeof a.h.order === 'number' && Number.isFinite(a.h.order) ? a.h.order : a.i;
+          const ob = typeof b.h.order === 'number' && Number.isFinite(b.h.order) ? b.h.order : b.i;
+          return oa - ob;
+        })
+        .map(({ h }) => h);
+    }
+  }
+  return categoryOrder.map((k) => map.get(k)!);
 }
 
 /** Menschliche Groessenangabe aus Kilobyte (z. B. "820 KB", "1,4 MB"). */

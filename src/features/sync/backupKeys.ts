@@ -44,6 +44,7 @@ export const BACKUP_KEYS: readonly string[] = [
   'salatibox:review', // Wiederholungs-Warteschlange (Spaced Repetition)
   'salatibox:mistakes', // Fehlerarchiv Studium
   'salatibox:writing', // Schreibübung: Fortschritt je arabischem Buchstaben
+  'salatibox:analyse-uebung', // Analyse-Übung: geübte Verse mit Trefferquote
 
   // --- Übungs-/Praxis-Statistik ---
   'salatibox:practice-stats', // Übungs-Gesamtstatistik

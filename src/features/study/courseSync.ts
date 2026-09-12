@@ -38,7 +38,14 @@ const MANIFEST_URL = `${REMOTE_BASE}/manifest.json`;
 export const COURSE_BUNDLED_VERSION = 2;
 
 const CACHE_DIR = `${FileSystem.documentDirectory}study-courses/`;
-const verKey = (id: string) => `salatibox:course-ver-${id}`;
+const VER_KEY_PREFIX = 'salatibox:course-ver-';
+const verKey = (id: string) => `${VER_KEY_PREFIX}${id}`;
+
+/** Ablageort der nachgeladenen Kurs-JSONs — für die Speicherverwaltung
+ *  (features/settings/storage.ts), die Größe und Löschung hier abholt. */
+export function courseCacheDir(): string {
+  return CACHE_DIR;
+}
 const cachePath = (id: string) => `${CACHE_DIR}${id}.json`;
 
 interface CourseManifest {
@@ -125,4 +132,24 @@ export function syncCoursesFromRemote(): Promise<void> {
     }
   })();
   return syncLaufend;
+}
+
+/**
+ * Löscht die nachgeladenen Kurs-JSONs. Verlustfrei: jeder Kurs ist in der App
+ * gebündelt (courses.ts), der Cache enthält nur eine NEUERE Fassung desselben
+ * Kurses — kein Lernfortschritt, der liegt in eigenen Schlüsseln.
+ *
+ * Die `salatibox:course-ver-*`-Schlüssel MÜSSEN mit weg: sie sind der einzige
+ * Grund, aus dem syncCoursesFromRemote() einen Kurs überspringt
+ * (`remote <= haveVersion`). Bliebe die Versionsnummer ohne Datei stehen,
+ * würde der Kurs nie wieder geladen und die App bliebe dauerhaft auf dem
+ * gebündelten Stand — ein stiller Rückschritt statt eines Zwischenspeichers,
+ * der sich nachfüllt.
+ */
+export async function deleteCourseCache(): Promise<void> {
+  if (Platform.OS === 'web') return;
+  await FileSystem.deleteAsync(CACHE_DIR, { idempotent: true }).catch(() => {});
+  const keys = await AsyncStorage.getAllKeys().catch(() => [] as readonly string[]);
+  const verKeys = keys.filter((k) => k.startsWith(VER_KEY_PREFIX));
+  if (verKeys.length > 0) await AsyncStorage.multiRemove(verKeys).catch(() => {});
 }

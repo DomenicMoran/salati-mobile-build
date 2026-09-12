@@ -27,7 +27,9 @@ import Animated, {
 import { SafeAreaView, useSafeAreaInsets } from 'react-native-safe-area-context';
 
 import { AnimatedListItem } from '@/components/ui/animated-list-item';
-import { IconSymbol } from '@/components/ui/icon-symbol';
+import { IconSymbol, type IconName } from '@/components/ui/icon-symbol';
+import { IntroHelpButton } from '@/components/ui/intro-help-button';
+import { IntroSheet } from '@/components/ui/intro-sheet';
 import { PressableCard, stopNestedPressBubble } from '@/components/ui/pressable-card';
 import { ShareCardModal } from '@/components/share-card';
 import { ThemedActivityIndicator } from '@/components/themed-activity-indicator';
@@ -70,8 +72,16 @@ import { toggleTafsirSelection } from '@/features/quran/tafsirSelection';
 import { useAyahPlayer, useComparePlayer, useSharedPlayer } from '@/features/quran/usePlayer';
 import { canShareVerseImage, shareVerseImage } from '@/features/quran/shareImage';
 import { useShareCard } from '@/features/share/useShareCard';
-import { WordInfoSheet } from '@/features/quran/WordInfoSheet';
+import { WortAnalyseSheet } from '@/features/quran/WortAnalyseSheet';
 import { getGermanWordGlosses, hasGermanWordByWord } from '@/features/quran/wbw-de';
+import { waehleVersGruppen, wbwSpracheFuerLocale, wbwUmschalterZustand } from '@/features/quran/wbw';
+import { useSurahWbw, useWbwMeta } from '@/features/quran/wbwHooks';
+import { GrammarLegend } from '@/features/quran/analyse/GrammarLegend';
+import { GrammarModeBar } from '@/features/quran/analyse/GrammarModeBar';
+import { alignedMorphWords, wortFarbe, type FarbModus } from '@/features/quran/analyse/grammarColorModes';
+import { Satzstruktur } from '@/features/quran/analyse/Satzstruktur';
+import { useGrammatikIntro } from '@/features/quran/analyse/useGrammatikIntro';
+import { useSurahMorphologie } from '@/features/quran/morphologieHooks';
 import { useSettings } from '@/features/settings/store';
 import { PLAYBACK_SPEED_OPTIONS } from '@/features/settings/types';
 import { useHydrated } from '@/hooks/use-hydrated';
@@ -139,6 +149,84 @@ function TajweedSegmentText({ text, color, pulseToken }: { text: string; color?:
   }, [pulseToken]);
   const animatedStyle = useAnimatedStyle(() => ({ opacity: opacity.value }));
   return <Animated.Text style={[color ? { color } : undefined, animatedStyle]}>{text}</Animated.Text>;
+}
+
+/** Ein Schalter im Ansicht-&-Wiedergabe-Sheet, der sich selbst erklärt: die
+ * Chip-Zeile wie gehabt, plus EIN kurzer Satz darunter, was der Schalter
+ * bewirkt (Auftrag: "jeder muss genau verstehen, was man zuschaltet und was
+ * es bringt" — nicht nur der Name). `accessibilityHint` trägt denselben Text
+ * für Screenreader-Nutzer, die die visuelle Caption nicht sehen. */
+function FeatureToggle({
+  active,
+  onPress,
+  onLongPress,
+  icon,
+  label,
+  caption,
+  captionAction,
+  accentColor,
+  textColor,
+  rtl,
+}: {
+  active: boolean;
+  onPress: () => void;
+  onLongPress?: () => void;
+  icon: IconName;
+  label: string;
+  caption: string;
+  /** Optionale Handlung direkt unter der Caption — gebraucht für den einen
+   * Fall, in dem die Caption von einem Fehlschlag berichtet und der Nutzer
+   * ihn selbst beheben können soll ("Erneut versuchen" bei den
+   * Wort-Bedeutungen). Ohne diesen Weg bliebe als Abhilfe nur, den
+   * Bildschirm zu verlassen und neu zu öffnen. */
+  captionAction?: { label: string; onPress: () => void };
+  accentColor: string;
+  textColor: string;
+  /** Chip an der Lese-Startseite ausrichten (rechts statt links) — die App
+   * spiegelt bewusst per Hand statt global (siehe hooks/use-rtl.ts), die
+   * Caption darunter selbst braucht keine Anpassung: RN richtet reinen
+   * Fließtext automatisch nach der Schreibrichtung des Inhalts aus. */
+  rtl: boolean;
+}) {
+  return (
+    <View style={styles.toggleItem}>
+      <Pressable
+        onPress={onPress}
+        onLongPress={onLongPress}
+        accessibilityRole="button"
+        accessibilityState={{ selected: active }}
+        accessibilityHint={caption}
+        style={({ pressed }) => [
+          styles.toggleChipRow,
+          rtl && styles.toggleChipRowRtl,
+          Platform.OS === 'web' ? styles.pressableWeb : undefined,
+          pressed && styles.chipPressed,
+        ]}>
+        <ThemedView type={active ? 'backgroundSelected' : 'backgroundElement'} style={[styles.chip, styles.chipRow]}>
+          <IconSymbol name={icon} size={13} color={active ? accentColor : textColor} />
+          <ThemedText type="small" themeColor={active ? 'accent' : 'text'}>
+            {label}
+          </ThemedText>
+        </ThemedView>
+      </Pressable>
+      <ThemedText type="small" themeColor="textSecondary" style={styles.toggleCaption}>
+        {caption}
+      </ThemedText>
+      {captionAction && (
+        <Pressable
+          onPress={captionAction.onPress}
+          accessibilityRole="button"
+          style={({ pressed }) => [
+            Platform.OS === 'web' ? styles.pressableWeb : undefined,
+            pressed && styles.chipPressed,
+          ]}>
+          <ThemedText type="smallBold" themeColor="accent" style={styles.toggleCaption}>
+            {captionAction.label}
+          </ThemedText>
+        </Pressable>
+      )}
+    </View>
+  );
 }
 
 // Jede weitere Sure-Etappe der suren-übergreifenden Abschnitts-Wiedergabe
@@ -221,7 +309,17 @@ export default function SurahReaderScreen() {
   // Deutsche Wort-für-Wort-Glossen (nur für die Kernsuren gepflegt, s.
   // features/quran/wbw-de) — quran.com liefert die Wort-Bedeutung sonst NUR
   // auf Englisch. Nur relevant, wenn die App auf Deutsch läuft.
-  const germanWbwAvailable = locale === 'de' && hasGermanWordByWord(surahNumber);
+  // `Boolean(...)` ist NICHT kosmetisch: ohne die Umhüllung sieht der React
+  // Compiler hier nur „Ergebnis eines fremden Aufrufs" und bricht, sobald
+  // dieser Wert an eine importierte Funktion weitergereicht wird (unten an
+  // wbwUmschalterZustand), die Optimierung des GANZEN Screens ab — Lint-Fehler
+  // "Compilation Skipped: Existing memoization could not be preserved",
+  // gemeldet an einem völlig anderen useCallback. Reproduziert am 2026-09-07.
+  const germanWbwAvailable = Boolean(locale === 'de' && hasGermanWordByWord(surahNumber));
+  // Für sechs weitere App-Sprachen gibt es einen eigenen Wort-für-Wort-
+  // Datensatz (features/quran/wbw.ts). `null` = keine Daten für diese Sprache,
+  // dann bleibt es beim englischen Gloss von quran.com.
+  const wbwSprache = wbwSpracheFuerLocale(locale);
   const [pickerOpen, setPickerOpen] = useState<
     'reciter' | 'translation' | 'translation2' | 'tafsir' | 'compareA' | 'compareB' | null
   >(null);
@@ -269,6 +367,38 @@ export default function SurahReaderScreen() {
   const [showIsolatedLetters, setShowIsolatedLetters] = useState(false);
   const [showWordByWord, setShowWordByWord] = useState(false);
   const [showTajweed, setShowTajweed] = useState(false);
+  // Grammatik-Farbmarkierung (Wortanalyse-Feature): GENAU EIN Modus aktiv,
+  // Standard 'aus' — reine Session-Ansicht wie showTajweed/showWordByWord
+  // oben, bewusst NICHT in AppSettings persistiert. Diese ganze Chip-Reihe
+  // (Tafsir/Transliteration/Tajwid/Wort-für-Wort …) ist im Repo durchgehend
+  // lokaler useState statt eines globalen Settings-Felds, obwohl AppSettings
+  // gleichnamige Felder für ANDERE Features kennt (z. B. showTransliteration
+  // wird hier bewusst NICHT mit settings.showTransliteration synchronisiert)
+  // — dasselbe Muster gilt konsequent auch für die neuen Grammatik-Modi.
+  const [grammarMode, setGrammarMode] = useState<FarbModus>('aus');
+  // Satzstruktur-Ansicht (Satzebene der Wortanalyse, s. features/quran/
+  // analyse/Satzstruktur.tsx): eigener, unabhängiger Schalter nach demselben
+  // Muster wie grammarMode/showWordByWord — Standard aus, lädt ihre
+  // Morphologie beim Aktivieren selbst (useVerseMorphologie je Vers, gleicher
+  // Sure-weiter Cache-Eintrag wie grammarMorphologie oben), daher hier KEINE
+  // zusätzliche useSurahMorphologie-Anbindung nötig.
+  const [showSatzstruktur, setShowSatzstruktur] = useState(false);
+  // Erklär-Sheet beim ERSTEN Einschalten einer Grammatik-Funktion (Auftrag:
+  // "soll er verstehen, was er jetzt sieht") — siehe useGrammatikIntro.ts.
+  // Beide Wrapper lassen den eigentlichen Toggle unverändert laufen und
+  // hängen nur die einmalige Benachrichtigung an.
+  const grammatikIntro = useGrammatikIntro();
+  const handleGrammarModeChange = (next: FarbModus) => {
+    setGrammarMode(next);
+    if (next !== 'aus') grammatikIntro.notifyActivated();
+  };
+  const toggleSatzstruktur = () => {
+    setShowSatzstruktur((s) => {
+      const next = !s;
+      if (next) grammatikIntro.notifyActivated();
+      return next;
+    });
+  };
   // Anfänger-Modus-Preset (User-Wunsch: "jeder Anfänger soll perfekt Arabisch
   // lesen lernen können"): bündelt drei bereits bestehende, unabhängige
   // Toggles zu EINEM Tap statt drei separaten im Options-Sheet. Aktiv gilt
@@ -427,8 +557,65 @@ export default function SurahReaderScreen() {
     data: wordByWord,
     isLoading: wordByWordLoading,
     isError: wordByWordError,
+    refetch: wortlisteErneutLaden,
   } = useSurahWordByWord(surahNumber, showWordByWord || wordSheetUsed);
+  // Wort-Bedeutungen in der App-Sprache — gleiches Lade-Muster wie die
+  // Morphologie unten: nur abrufen, wenn die Wort-Ansicht an ist oder schon
+  // ein Wort angetippt wurde. Schlägt der Abruf fehl, bleibt es beim
+  // englischen Gloss; die Wort-Ansicht funktioniert also weiter.
+  // `isError`/`refetch` statt nur `data`: der Fehlschlag war bisher komplett
+  // stumm — der Leser sah englische Glossen und erfuhr nie, warum (Befund der
+  // Geräteabnahme). `isError` speist die Beschriftung des Umschalters
+  // (wbwZustand unten), `refetch` den Weg zum erneuten Versuch, ohne den
+  // Bildschirm verlassen zu müssen (retryWbw unten).
+  const {
+    data: wbwDatei,
+    isError: wbwFehler,
+    refetch: wbwErneutLaden,
+  } = useSurahWbw(surahNumber, wbwSprache, showWordByWord || wordSheetUsed);
+  // meta.json trägt die Abdeckung je Sprache — nur für die ehrliche
+  // Beschriftung des Umschalters (s. wbwUmschalterZustand), daher schon dann
+  // laden, wenn die Sprache überhaupt einen Datensatz hat: die Beschriftung
+  // muss stimmen, BEVOR man den Schalter umlegt.
+  const { data: wbwMeta } = useWbwMeta(wbwSprache !== null);
+  // Zur `Boolean(...)`-Umhüllung von germanWbwAvailable siehe dort — genau
+  // dieser Aufruf ist es, an dem der React Compiler sonst aussteigt.
+  //
+  // BEIDE Abrufe speisen den Fehlerzustand, nicht nur die Sprachdatei: die
+  // Wortliste trägt die arabischen Wörter selbst, ohne sie zeigt die
+  // Wort-Ansicht überhaupt nichts (die Zeile unten rendert nur bei
+  // `wordByWord?.[index]`). Die erste Fassung fragte nur `wbwFehler` ab —
+  // „Erneut versuchen“ holte allein die Sprachdatei, das „(EN)“ verschwand,
+  // und der Leser saß vor einer Sure ganz ohne Glossen: eine Entwarnung, die
+  // nicht stimmte (Befund der Geräteabnahme 1.54.0).
+  const wbwZustand = wbwUmschalterZustand({
+    locale,
+    deutscheGlossenVerfuegbar: germanWbwAvailable,
+    meta: wbwMeta,
+    wortlisteFehler: wordByWordError,
+    sprachdateiFehler: wbwFehler,
+  });
+  // „Erneut versuchen“ muss ALLES neu holen, was die Anzeige braucht. Beide
+  // Abfragen bleiben bis zum Erfolg auf `isError` (React Query kippt den Status
+  // erst mit den Daten), die Beschriftung gibt also erst dann Entwarnung, wenn
+  // tatsächlich Glossen da sind — nicht schon beim Antippen.
+  const wbwErneutVersuchen = useCallback(() => {
+    void wortlisteErneutLaden();
+    void wbwErneutLaden();
+  }, [wortlisteErneutLaden, wbwErneutLaden]);
   const { data: tajweedSegments } = useSurahTajweed(surahNumber, showTajweed);
+  // Morphologie NUR laden, wenn ein Grammatik-Farbmodus aktiv ist ODER
+  // bereits ein Wort angetippt wurde (gleiches Muster wie showWordByWord ||
+  // wordSheetUsed oben) — kein Netzabruf für Nutzer, die weder Farbmodi noch
+  // die Wortanalyse je berühren. Gleicher queryKey wie in WortAnalyseSheet
+  // (useVerseMorphologie → useSurahMorphologie), teilt sich also denselben
+  // Cache-Eintrag statt doppelt zu laden.
+  const grammarModeActive = grammarMode !== 'aus';
+  const { data: grammarMorphologie } = useSurahMorphologie(surahNumber, grammarModeActive || wordSheetUsed);
+  // Sepia erzwingt immer die Light-Palette (s. useTheme) — Grammatik-Farben
+  // folgen demselben Umschaltprinzip, sonst wären sie auf dem hellen
+  // Sepia-Papierhintergrund im Dark-Mode unlesbar hell.
+  const grammarScheme: 'light' | 'dark' = sepia ? 'light' : scheme;
 
   const offline = useOfflineAudio(settings.quranReciter, surahNumber);
   const { audioFor } = offline;
@@ -727,6 +914,14 @@ export default function SurahReaderScreen() {
     const germanGlosses = germanWbwAvailable
       ? getGermanWordGlosses(surahNumber, item.numberInSurah)
       : undefined;
+    // Morphologie-Wörter dieses Verses für die Grammatik-Farbmarkierung —
+    // nur vorhanden, wenn grammarModeActive geladen hat UND ihre Wortanzahl
+    // exakt zum angezeigten Text passt (s. alignedMorphWords-Kommentar).
+    const ayahMorphWords = grammarModeActive
+      ? grammarMorphologie?.verses[String(item.numberInSurah)]
+      : undefined;
+    const mainTextWords = grammarModeActive ? splitArabicWords(quranFont.text(item.arabic)) : null;
+    const alignedMainMorph = mainTextWords ? alignedMorphWords(ayahMorphWords, mainTextWords.length) : undefined;
     return (
       <AnimatedListItem index={index % 12}>
         <PressableCard
@@ -855,7 +1050,23 @@ export default function SurahReaderScreen() {
             type="default"
             sepia={sepia}
             style={[styles.arabic, quranFont.style, arabicMetrics]}>
-            {showTajweed && tajweedSegments?.[index]
+            {alignedMainMorph && mainTextWords
+              ? // Grammatik-Farbmodus: derselbe Text wie sonst (mainTextWords
+                // kommt aus demselben splitArabicWords(quranFont.text(...))
+                // wie unten im Wort-Sync-Zweig), nur je Wort eingefärbt — es
+                // wird NIE ein Zeichen aus der Morphologie eingesetzt (siehe
+                // Kopf-Kommentar in analyse/grammarColorModes.ts).
+                mainTextWords.map((w, wi) => {
+                  const mw = alignedMainMorph.find((m) => m.position === wi + 1);
+                  const farbe = mw ? wortFarbe(grammarScheme, grammarMode, mw) : undefined;
+                  return (
+                    <Text key={wi} style={farbe ? { color: farbe } : undefined}>
+                      {w}
+                      {' '}
+                    </Text>
+                  );
+                })
+              : showTajweed && tajweedSegments?.[index]
               ? tajweedSegments[index].map((seg, si) => (
                   <TajweedSegmentText
                     key={si}
@@ -916,48 +1127,96 @@ export default function SurahReaderScreen() {
           )}
           {showWordByWord && wordByWord?.[index] && (
             <View style={styles.wordByWordRow}>
-              {wordByWord[index].map((w, wi, words) => {
-                // Deutsches Gloss NUR wenn die Wortanzahl exakt passt — sonst
-                // wäre die Zuordnung verschoben, dann lieber Englisch.
-                const gloss =
-                  germanGlosses && germanGlosses.length === words.length ? germanGlosses[wi] : w.translation;
-                // Aktives Wort während der Rezitation (Wort-Sync):
-                // Segment [wortIdx, wortNr, startMs, endMs] gegen
-                // die aktuelle Wiedergabeposition.
-                const isActiveWord =
-                  player.playing &&
-                  player.currentIndex === index &&
-                  syncSourceReady &&
-                  (ayahSegments?.[item.numberInSurah]?.segments.find(
-                    (s) => player.positionMs >= s[2] && player.positionMs < s[3],
-                  )?.[0] ?? -1) === wi;
-                return (
-                  <Pressable
-                    key={wi}
-                    onPress={(e) => {
-                      stopNestedPressBubble(e);
-                      setWordSheetUsed(true);
-                      setSelectedWordPos({ ayahIndex: index, wordIndex: wi });
-                    }}
-                    hitSlop={4}
-                    accessibilityRole="button"
-                    accessibilityLabel={t('quran.wordInfo.title')}
-                    style={({ pressed }) => [
-                      styles.wordColumn,
-                      isActiveWord && styles.wordActive,
-                      Platform.OS === 'web' ? styles.pressableWeb : undefined,
-                      pressed && styles.chipPressed,
-                    ]}>
-                    <ThemedText type="default" sepia={sepia} style={[styles.wordArabic, quranFont.style, wordArabicMetrics]}>
-                      {quranFont.text(w.arabic)}
-                    </ThemedText>
-                    <ThemedText type="small" themeColor="textSecondary" sepia={sepia} style={styles.wordGloss}>
-                      {gloss}
-                    </ThemedText>
-                  </Pressable>
-                );
-              })}
+              {(() => {
+                const verseWords = wordByWord[index];
+                const alignedWbwMorph = alignedMorphWords(ayahMorphWords, verseWords.length);
+                // Wortgruppen dieses Verses: eine Glosse kann MEHRERE arabische
+                // Wörter abdecken (z. B. türkisch „senden önce" für مِن قَبْلِكَ) —
+                // sie stehen dann nebeneinander mit EINEM Text darunter. Deutsch
+                // (handgepflegt) hat Vorrang. Deckt keine Quelle den Vers
+                // lückenlos ab, fällt der GANZE Vers auf das englische Gloss von
+                // quran.com zurück (je Wort eine eigene Gruppe) — nie ein halb
+                // übersetzter Vers, nie eine verschobene Zuordnung.
+                const versGruppen =
+                  waehleVersGruppen({
+                    deutscheGlossen: germanGlosses,
+                    datei: wbwDatei,
+                    ayah: item.numberInSurah,
+                    wortzahl: verseWords.length,
+                  }) ?? verseWords.map((w, i) => ({ von: i + 1, bis: i + 1, text: w.translation }));
+                // Aktive Wortposition während der Rezitation (Wort-Sync):
+                // Segment [wortIdx, wortNr, startMs, endMs] gegen die aktuelle
+                // Wiedergabeposition. 0 = gerade kein Wort aktiv.
+                const aktivePosition =
+                  player.playing && player.currentIndex === index && syncSourceReady
+                    ? (ayahSegments?.[item.numberInSurah]?.segments.find(
+                        (s) => player.positionMs >= s[2] && player.positionMs < s[3],
+                      )?.[0] ?? -1) + 1
+                    : 0;
+                return versGruppen.map((gruppe) => {
+                  const gruppeAktiv = aktivePosition >= gruppe.von && aktivePosition <= gruppe.bis;
+                  return (
+                    <View
+                      key={gruppe.von}
+                      style={[styles.wordColumn, gruppeAktiv ? styles.wordActive : undefined]}>
+                      <View style={styles.wordGroupRow}>
+                        {verseWords.slice(gruppe.von - 1, gruppe.bis).map((w, versatz) => {
+                          // Jedes arabische Wort bleibt EINZELN antippbar (die
+                          // Wortanalyse gilt dem Wort, nicht der Gruppe).
+                          const wi = gruppe.von - 1 + versatz;
+                          const wbwMorphWord = alignedWbwMorph?.find((m) => m.position === wi + 1);
+                          const grammarFarbe = wbwMorphWord
+                            ? wortFarbe(grammarScheme, grammarMode, wbwMorphWord)
+                            : undefined;
+                          return (
+                            <Pressable
+                              key={wi}
+                              onPress={(e) => {
+                                stopNestedPressBubble(e);
+                                setWordSheetUsed(true);
+                                setSelectedWordPos({ ayahIndex: index, wordIndex: wi });
+                              }}
+                              hitSlop={4}
+                              accessibilityRole="button"
+                              accessibilityLabel={t('quran.wordInfo.title')}
+                              style={({ pressed }) => [
+                                Platform.OS === 'web' ? styles.pressableWeb : undefined,
+                                pressed && styles.chipPressed,
+                              ]}>
+                              <ThemedText
+                                type="default"
+                                sepia={sepia}
+                                style={[
+                                  styles.wordArabic,
+                                  quranFont.style,
+                                  wordArabicMetrics,
+                                  grammarFarbe ? { color: grammarFarbe } : undefined,
+                                ]}>
+                                {quranFont.text(w.arabic)}
+                              </ThemedText>
+                            </Pressable>
+                          );
+                        })}
+                      </View>
+                      <ThemedText type="small" themeColor="textSecondary" sepia={sepia} style={styles.wordGloss}>
+                        {gruppe.text}
+                      </ThemedText>
+                    </View>
+                  );
+                });
+              })()}
             </View>
+          )}
+          {showSatzstruktur && (
+            <Satzstruktur
+              surah={surahNumber}
+              ayah={item.numberInSurah}
+              enabled={showSatzstruktur}
+              onWortAuswahl={(position) => {
+                setWordSheetUsed(true);
+                setSelectedWordPos({ ayahIndex: index, wordIndex: position - 1 });
+              }}
+            />
           )}
           <ThemedText
             type="small"
@@ -1198,20 +1457,6 @@ export default function SurahReaderScreen() {
                   </ThemedText>
                   <View style={styles.pickerRow}>
               <Pressable
-                onPress={toggleBeginnerMode}
-                accessibilityRole="button"
-                accessibilityState={{ selected: beginnerModeActive }}
-                style={({ pressed }) => [Platform.OS === 'web' ? styles.pressableWeb : undefined, pressed && styles.chipPressed]}>
-                <ThemedView
-                  type={beginnerModeActive ? 'backgroundSelected' : 'backgroundElement'}
-                  style={[styles.chip, styles.chipRow]}>
-                  <IconSymbol name="school-outline" size={13} color={beginnerModeActive ? colors.accent : colors.text} />
-                  <ThemedText type="small" themeColor={beginnerModeActive ? 'accent' : 'text'}>
-                    {t('quran.beginnerMode')}
-                  </ThemedText>
-                </ThemedView>
-              </Pressable>
-              <Pressable
                 onPress={() => {
                   setFocusMode(true);
                   setViewSheetOpen(false);
@@ -1271,40 +1516,6 @@ export default function SurahReaderScreen() {
                 </ThemedView>
               </Pressable>
               <Pressable
-                onPress={() => setPickerOpen('translation')}
-                accessibilityRole="button"
-                style={({ pressed }) => [Platform.OS === 'web' ? styles.pressableWeb : undefined, pressed && styles.chipPressed]}>
-                <ThemedView type="backgroundElement" style={[styles.chip, styles.chipRow]}>
-                  <IconSymbol name="globe" size={13} color={colors.text} />
-                  <ThemedText type="small">{currentTranslationName}</ThemedText>
-                </ThemedView>
-              </Pressable>
-              <Pressable
-                onPress={() => setShowSecondTranslation((s) => !s)}
-                onLongPress={() => setPickerOpen('translation2')}
-                accessibilityRole="button"
-                accessibilityState={{ selected: showSecondTranslation }}
-                style={({ pressed }) => [Platform.OS === 'web' ? styles.pressableWeb : undefined, pressed && styles.chipPressed]}>
-                <ThemedView
-                  type={showSecondTranslation ? 'backgroundSelected' : 'backgroundElement'}
-                  style={[styles.chip, styles.chipRow]}>
-                  <IconSymbol name="swap-horizontal-outline" size={13} color={showSecondTranslation ? colors.accent : colors.text} />
-                  <ThemedText type="small" themeColor={showSecondTranslation ? 'accent' : 'text'}>
-                    {t('quran.secondTranslation')}
-                  </ThemedText>
-                </ThemedView>
-              </Pressable>
-              {showSecondTranslation && (
-                <Pressable
-                  onPress={() => setPickerOpen('translation2')}
-                  accessibilityRole="button"
-                  style={({ pressed }) => [Platform.OS === 'web' ? styles.pressableWeb : undefined, pressed && styles.chipPressed]}>
-                  <ThemedView type="backgroundElement" style={styles.chip}>
-                    <ThemedText type="small">{currentTranslation2Name}</ThemedText>
-                  </ThemedView>
-                </Pressable>
-              )}
-              <Pressable
                 onPress={cyclePlaybackSpeed}
                 accessibilityRole="button"
                 accessibilityLabel={t('quran.playbackSpeed')}
@@ -1359,99 +1570,199 @@ export default function SurahReaderScreen() {
                   </ThemedView>
                 </Pressable>
               )}
-              <Pressable
+            </View>
+
+            {/* Gruppierung nach Kategorien statt einer langen, flachen
+                Schalter-Reihe (Auftrag): vom Einfachen (Lesehilfen) zum
+                Anspruchsvollen (Grammatik). Jeder Schalter bekommt über
+                FeatureToggle einen kurzen Satz, was er bewirkt — nicht nur
+                seinen Namen. */}
+            <ThemedText type="smallBold" themeColor="textSecondary" style={styles.sheetSection}>
+              {t('quran.sectionLesehilfen')}
+            </ThemedText>
+            <View style={styles.toggleGroup}>
+              <FeatureToggle
+                active={beginnerModeActive}
+                onPress={toggleBeginnerMode}
+                icon="school-outline"
+                label={t('quran.beginnerMode')}
+                caption={t('quran.captions.beginnerMode')}
+                accentColor={colors.accent}
+                textColor={colors.text}
+                rtl={rtl}
+              />
+              <FeatureToggle
+                active={showTransliteration}
                 onPress={() => setShowTransliteration((s) => !s)}
-                accessibilityRole="button"
-                accessibilityState={{ selected: showTransliteration }}
-                style={({ pressed }) => [Platform.OS === 'web' ? styles.pressableWeb : undefined, pressed && styles.chipPressed]}>
-                <ThemedView
-                  type={showTransliteration ? 'backgroundSelected' : 'backgroundElement'}
-                  style={[styles.chip, styles.chipRow]}>
-                  <IconSymbol name="text-outline" size={13} color={showTransliteration ? colors.accent : colors.text} />
-                  <ThemedText type="small" themeColor={showTransliteration ? 'accent' : 'text'}>
-                    {t('quran.transliteration')}
-                  </ThemedText>
-                </ThemedView>
-              </Pressable>
-              <Pressable
+                icon="text-outline"
+                label={t('quran.transliteration')}
+                caption={t('quran.captions.transliteration')}
+                accentColor={colors.accent}
+                textColor={colors.text}
+                rtl={rtl}
+              />
+              <FeatureToggle
+                active={showIsolatedLetters}
                 onPress={() => setShowIsolatedLetters((s) => !s)}
-                accessibilityRole="button"
-                accessibilityState={{ selected: showIsolatedLetters }}
-                style={({ pressed }) => [Platform.OS === 'web' ? styles.pressableWeb : undefined, pressed && styles.chipPressed]}>
-                <ThemedView
-                  type={showIsolatedLetters ? 'backgroundSelected' : 'backgroundElement'}
-                  style={[styles.chip, styles.chipRow]}>
-                  <IconSymbol name="apps-outline" size={13} color={showIsolatedLetters ? colors.accent : colors.text} />
-                  <ThemedText type="small" themeColor={showIsolatedLetters ? 'accent' : 'text'}>
-                    {t('quran.isolatedLetters')}
-                  </ThemedText>
-                </ThemedView>
-              </Pressable>
-              <Pressable
-                onPress={() => setShowTajweed((s) => !s)}
-                accessibilityRole="button"
-                accessibilityState={{ selected: showTajweed }}
-                style={({ pressed }) => [Platform.OS === 'web' ? styles.pressableWeb : undefined, pressed && styles.chipPressed]}>
-                <ThemedView
-                  type={showTajweed ? 'backgroundSelected' : 'backgroundElement'}
-                  style={[styles.chip, styles.chipRow]}>
-                  <IconSymbol name="color-palette-outline" size={13} color={showTajweed ? colors.accent : colors.text} />
-                  <ThemedText type="small" themeColor={showTajweed ? 'accent' : 'text'}>
-                    {t('quran.tajweed')}
-                  </ThemedText>
-                </ThemedView>
-              </Pressable>
-              <Pressable
+                icon="apps-outline"
+                label={t('quran.isolatedLetters')}
+                caption={t('quran.captions.isolatedLetters')}
+                accentColor={colors.accent}
+                textColor={colors.text}
+                rtl={rtl}
+              />
+              <FeatureToggle
+                active={showWordByWord}
                 onPress={() => setShowWordByWord((s) => !s)}
-                accessibilityRole="button"
-                accessibilityState={{ selected: showWordByWord }}
-                style={({ pressed }) => [Platform.OS === 'web' ? styles.pressableWeb : undefined, pressed && styles.chipPressed]}>
-                <ThemedView
-                  type={showWordByWord ? 'backgroundSelected' : 'backgroundElement'}
-                  style={[styles.chip, styles.chipRow]}>
-                  <IconSymbol name="grid-outline" size={13} color={showWordByWord ? colors.accent : colors.text} />
-                  <ThemedText type="small" themeColor={showWordByWord ? 'accent' : 'text'}>
-                    {/* Wort-Glossen kommen von quran.com nur auf Englisch. Für
-                        die Kernsuren gibt es aber gepflegte DEUTSCHE Glossen
-                        (germanWbwAvailable) — dann kein "(EN)"-Hinweis. Sonst in
-                        allen Nicht-EN-Sprachen ehrlich als Englisch kennzeichnen. */}
-                    {locale === 'en' || germanWbwAvailable
-                      ? t('quran.wordByWord')
-                      : `${t('quran.wordByWord')} (EN)`}
-                  </ThemedText>
-                </ThemedView>
-              </Pressable>
-              <Pressable
+                icon="grid-outline"
+                label={
+                  // Ehrliche Beschriftung (s. wbwUmschalterZustand in
+                  // features/quran/wbw.ts): quran.com liefert die Wort-Glossen
+                  // nur auf Englisch. Gibt es sie in der App-Sprache — deutsche
+                  // Kernsuren oder eigener Datensatz — steht kein "(EN)" dran;
+                  // ist der Datensatz nur teilweise da, sagt das die Caption
+                  // mit der Zahl aus meta.json statt es zu verschweigen.
+                  wbwZustand.art === 'englisch' ||
+                  (wbwZustand.art === 'fehler' && wbwZustand.quelle === 'sprachdatei')
+                    ? `${t('quran.wordByWord')} (EN)`
+                    : // Fehlt die WORTLISTE, gibt es auch kein englisches Gloss —
+                      // „(EN)“ wäre dann die Zusage eines Rückfalls, den es nicht gibt.
+                      t('quran.wordByWord')
+                }
+                caption={
+                  wbwZustand.art === 'teilweise'
+                    ? `${t('quran.captions.wordByWord')} ${t('quran.captions.wordByWordTeilabdeckung').replace(
+                        '{n}',
+                        String(wbwZustand.prozentVerse),
+                      )}`
+                    : wbwZustand.art === 'fehler'
+                      ? `${t('quran.captions.wordByWord')} ${t(
+                          wbwZustand.quelle === 'wortliste'
+                            ? 'quran.captions.wordByWordWortlisteLadefehler'
+                            : 'quran.captions.wordByWordLadefehler',
+                        )}`
+                      : t('quran.captions.wordByWord')
+                }
+                captionAction={
+                  wbwZustand.art === 'fehler'
+                    ? { label: t('common.retry'), onPress: wbwErneutVersuchen }
+                    : undefined
+                }
+                accentColor={colors.accent}
+                textColor={colors.text}
+                rtl={rtl}
+              />
+            </View>
+
+            <ThemedText type="smallBold" themeColor="textSecondary" style={styles.sheetSection}>
+              {t('quran.sectionAussprache')}
+            </ThemedText>
+            <View style={styles.toggleGroup}>
+              <FeatureToggle
+                active={showTajweed}
+                onPress={() => setShowTajweed((s) => !s)}
+                icon="color-palette-outline"
+                label={t('quran.tajweed')}
+                caption={t('quran.captions.tajweed')}
+                accentColor={colors.accent}
+                textColor={colors.text}
+                rtl={rtl}
+              />
+            </View>
+            {/* Zusammenspiel Tajwid × Grammatik-Farbmodus: siehe die
+                Vorrangregel direkt am Rendering (weiter unten,
+                "alignedMainMorph && mainTextWords ? … : showTajweed …") — der
+                Grammatik-Farbmodus gewinnt dort bewusst, weil er die
+                spezifischere, gerade bewusst gewählte Analyse ist. Zwei
+                Färbungen gleichzeitig wären unlesbar; statt eines stillen
+                Vorrangs (der wie ein Bug aussähe, wenn die Tajwid-Legende
+                weiter Farben verspricht, die gar nicht mehr zu sehen sind)
+                bekommt der Nutzer hier einen expliziten Hinweis, und die
+                Tajwid-Legende blendet sich aus (s. u. `!grammarModeActive`). */}
+            {showTajweed && grammarModeActive && (
+              <ThemedText type="small" themeColor="textSecondary" style={styles.conflictHint}>
+                {t('quran.tajweedGrammarConflictHint')}
+              </ThemedText>
+            )}
+
+            <ThemedText type="smallBold" themeColor="textSecondary" style={styles.sheetSection}>
+              {t('quran.sectionBedeutung')}
+            </ThemedText>
+            <View style={styles.toggleGroup}>
+              <FeatureToggle
+                active={false}
+                onPress={() => setPickerOpen('translation')}
+                icon="globe"
+                label={currentTranslationName}
+                caption={t('quran.captions.translation')}
+                accentColor={colors.accent}
+                textColor={colors.text}
+                rtl={rtl}
+              />
+              <FeatureToggle
+                active={showSecondTranslation}
+                onPress={() => setShowSecondTranslation((s) => !s)}
+                onLongPress={() => setPickerOpen('translation2')}
+                icon="swap-horizontal-outline"
+                label={showSecondTranslation ? currentTranslation2Name : t('quran.secondTranslation')}
+                caption={t('quran.captions.secondTranslation')}
+                accentColor={colors.accent}
+                textColor={colors.text}
+                rtl={rtl}
+              />
+              <FeatureToggle
+                active={showTafsir}
                 onPress={() => setShowTafsir((s) => !s)}
                 onLongPress={() => setPickerOpen('tafsir')}
-                accessibilityRole="button"
-                accessibilityState={{ selected: showTafsir }}
-                style={({ pressed }) => [Platform.OS === 'web' ? styles.pressableWeb : undefined, pressed && styles.chipPressed]}>
-                <ThemedView
-                  type={showTafsir ? 'backgroundSelected' : 'backgroundElement'}
-                  style={[styles.chip, styles.chipRow]}>
-                  <IconSymbol name="book" size={13} color={showTafsir ? colors.accent : colors.text} />
-                  <ThemedText type="small" themeColor={showTafsir ? 'accent' : 'text'}>
-                    {t('quran.tafsir')}
-                  </ThemedText>
-                </ThemedView>
-              </Pressable>
-              {showTafsir && (
-                <Pressable
-                  onPress={() => setPickerOpen('tafsir')}
-                  accessibilityRole="button"
-                  style={({ pressed }) => [Platform.OS === 'web' ? styles.pressableWeb : undefined, pressed && styles.chipPressed]}>
-                  <ThemedView type="backgroundElement" style={styles.chip}>
-                    <ThemedText type="small">
-                      {settings.quranTafsirs.length > 1
-                        ? t('quran.tafsirCount').replace('{count}', String(settings.quranTafsirs.length))
-                        : (tafsirEditions?.find((e) => e.identifier === settings.quranTafsirs[0])?.englishName ??
-                          settings.quranTafsirs[0])}
-                    </ThemedText>
-                  </ThemedView>
-                </Pressable>
-              )}
+                icon="book"
+                label={
+                  showTafsir && settings.quranTafsirs.length > 1
+                    ? t('quran.tafsirCount').replace('{count}', String(settings.quranTafsirs.length))
+                    : showTafsir
+                      ? (tafsirEditions?.find((e) => e.identifier === settings.quranTafsirs[0])?.englishName ??
+                        settings.quranTafsirs[0])
+                      : t('quran.tafsir')
+                }
+                caption={t('quran.captions.tafsir')}
+                accentColor={colors.accent}
+                textColor={colors.text}
+                rtl={rtl}
+              />
             </View>
+
+            <View style={styles.sectionHeaderRow}>
+              <ThemedText type="smallBold" themeColor="textSecondary" style={[styles.sheetSection, styles.sheetSectionInline]}>
+                {t('quran.sectionGrammatik')}
+              </ThemedText>
+              <IntroHelpButton onPress={grammatikIntro.show} color={colors.textSecondary} />
+            </View>
+            <ThemedText type="small" themeColor="textSecondary" style={styles.groupIntro}>
+              {t('quran.captions.grammarColorModes')}
+            </ThemedText>
+            <GrammarModeBar modus={grammarMode} onChange={handleGrammarModeChange} scheme={grammarScheme} sepia={sepia} />
+            <View style={styles.toggleGroup}>
+              <FeatureToggle
+                active={showSatzstruktur}
+                onPress={toggleSatzstruktur}
+                icon="git-network-outline"
+                label={t('quran.satzstruktur.chip')}
+                caption={t('quran.captions.satzstruktur')}
+                accentColor={colors.accent}
+                textColor={colors.text}
+                rtl={rtl}
+              />
+            </View>
+            <ThemedText type="small" themeColor="textSecondary" style={styles.groupIntro}>
+              {t('quran.captions.wortAnalyseHint')}
+            </ThemedText>
+
+            <IntroSheet
+              visible={grammatikIntro.visible}
+              onClose={grammatikIntro.dismiss}
+              title={t('quran.grammatikIntro.title')}
+              what={t('quran.grammatikIntro.what')}
+              why={t('quran.grammatikIntro.why')}
+            />
 
                   <ThemedText type="smallBold" themeColor="textSecondary" style={styles.sheetSection}>
                     {t('quran.rangeTitle')}
@@ -1674,7 +1985,11 @@ export default function SurahReaderScreen() {
               />
             )}
 
-            {showTajweed && (
+            {/* Legende nur, solange Tajwid-Farben auch tatsächlich zu sehen sind:
+                bei aktivem Grammatik-Farbmodus gewinnt dieser im Haupttext (s.
+                Vorrangregel + Hinweistext im Options-Sheet oben) — eine Legende
+                für unsichtbare Farben wäre irreführend. */}
+            {showTajweed && !grammarModeActive && (
               <>
                 <View style={styles.legendRow}>
                   {TAJWEED_LEGEND.map((entry) => (
@@ -1696,6 +2011,8 @@ export default function SurahReaderScreen() {
                 </ThemedText>
               </>
             )}
+
+            {grammarModeActive && <GrammarLegend modus={grammarMode} scheme={grammarScheme} sepia={sepia} />}
 
             {readerMode === 'page' ? (
               <ScrollView
@@ -1803,25 +2120,35 @@ export default function SurahReaderScreen() {
           </>
         )}
 
-        <WordInfoSheet
+        {/* Wort-Tap öffnet immer dieses eine, zusammengeführte Sheet — die
+            frühere Verzweigung zwischen einem schlanken (WordInfoSheet) und
+            einem tiefen Sheet hinter einem Schalter ist entfallen. */}
+        <WortAnalyseSheet
           visible={selectedWordPos !== null}
+          surah={surahNumber}
+          ayah={selectedWordPos ? (data?.ayahs?.[selectedWordPos.ayahIndex]?.numberInSurah ?? 0) : 0}
+          position={selectedWordPos ? selectedWordPos.wordIndex + 1 : 0}
           word={
             selectedWordPos
               ? (wordByWord?.[selectedWordPos.ayahIndex]?.[selectedWordPos.wordIndex] ?? null)
               : null
           }
-          // Deutsches Gloss ins Lexikon-Sheet durchreichen (nur Kernsuren, App=DE),
-          // sonst null → englisches quran.com-Gloss. Gleicher Längen-Guard wie in
-          // der Inline-Ansicht: bei abweichender Wortanzahl kein deutsches Gloss.
           translationOverride={(() => {
-            if (!selectedWordPos || !germanWbwAvailable) return null;
+            if (!selectedWordPos) return null;
             const words = wordByWord?.[selectedWordPos.ayahIndex];
             const ayahNo = data?.ayahs?.[selectedWordPos.ayahIndex]?.numberInSurah;
             if (!words || ayahNo == null) return null;
-            const glosses = getGermanWordGlosses(surahNumber, ayahNo);
-            return glosses && glosses.length === words.length
-              ? (glosses[selectedWordPos.wordIndex] ?? null)
-              : null;
+            // Dieselbe Auswahl wie in der Wort-Zeile — sonst zeigte das Sheet
+            // eine andere Bedeutung als die Zeile darüber. Deckt eine Gruppe
+            // mehrere Wörter ab, gilt ihr Text für jedes Wort der Gruppe.
+            const gruppen = waehleVersGruppen({
+              deutscheGlossen: germanWbwAvailable ? getGermanWordGlosses(surahNumber, ayahNo) : undefined,
+              datei: wbwDatei,
+              ayah: ayahNo,
+              wortzahl: words.length,
+            });
+            const position = selectedWordPos.wordIndex + 1;
+            return gruppen?.find((g) => position >= g.von && position <= g.bis)?.text ?? null;
           })()}
           loading={selectedWordPos !== null && wordByWordLoading}
           error={selectedWordPos !== null && wordByWordError}
@@ -1836,6 +2163,9 @@ export default function SurahReaderScreen() {
               : null;
             playWord(w?.audioUrl ?? null);
           }}
+          onWurzelOeffnen={(wurzel) => router.push({ pathname: '/lexikon/wurzel/[wurzel]', params: { wurzel } })}
+          onLexikonOeffnen={() => router.push('/lexikon')}
+          onVerbTypOeffnen={(typ) => router.push({ pathname: '/lexikon/verbtyp/[typ]', params: { typ } })}
           onClose={() => setSelectedWordPos(null)}
         />
 
@@ -2111,6 +2441,33 @@ const styles = StyleSheet.create({
     marginTop: Spacing.three,
     marginBottom: Spacing.two,
   },
+  // Gruppierte Schalter (Lesehilfen/Aussprache/Bedeutung/Grammatik): Spalte
+  // statt Chip-Wand, damit unter jedem Chip Platz für die erklärende Caption
+  // bleibt (Auftrag: "jeder muss genau verstehen, was man zuschaltet").
+  toggleGroup: { gap: Spacing.three, marginBottom: Spacing.three, paddingHorizontal: Spacing.three },
+  // KEIN alignItems auf toggleItem selbst (Default bleibt 'stretch'): die
+  // Caption braucht die volle Breite zum Umbrechen, sonst liefe sie auf
+  // 360dp-Screens über den Rand hinaus. Die Chip-Zeile schrumpft stattdessen
+  // per eigenem alignSelf auf toggleChipRow/-Rtl unten auf ihre Inhaltsbreite.
+  toggleItem: { gap: 4 },
+  toggleChipRow: { alignSelf: 'flex-start' },
+  // RTL (ar/fa/ur/ps): Chip an die Lese-Startseite (rechts) statt LTR-links —
+  // die App spiegelt bewusst per Hand statt global (siehe hooks/use-rtl.ts).
+  toggleChipRowRtl: { alignSelf: 'flex-end' },
+  toggleCaption: { lineHeight: 18 },
+  sectionHeaderRow: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+    marginTop: Spacing.three,
+    paddingHorizontal: Spacing.three,
+  },
+  sheetSectionInline: { marginTop: 0, marginBottom: 0 },
+  groupIntro: { marginBottom: Spacing.two, paddingHorizontal: Spacing.three },
+  // Tajwid × Grammatik-Farbmodus laufen sich sonst unsichtbar in die Quere
+  // (s. Kommentar im Options-Sheet) — dieser Hinweis macht die Vorrangregel
+  // sichtbar, statt dass Tajwid-Farben kommentarlos verschwinden.
+  conflictHint: { fontStyle: 'italic', marginBottom: Spacing.two, paddingHorizontal: Spacing.three },
   rangeRow: { flexDirection: 'row', gap: Spacing.two },
   rangeStepper: {
     flex: 1,
@@ -2232,6 +2589,16 @@ const styles = StyleSheet.create({
   },
   wordByWordRow: { flexDirection: 'row-reverse', flexWrap: 'wrap', gap: Spacing.two, marginTop: Spacing.one },
   wordColumn: { alignItems: 'center', minWidth: 44 },
+  /** Die arabischen Wörter EINER Gloss-Gruppe: enger beieinander (Spacing.one)
+   * als die Gruppen untereinander (Spacing.two in wordByWordRow) — daran liest
+   * man die Zusammengehörigkeit. `wrap` statt Überlauf, damit eine lange
+   * Gruppe das Versbild nicht sprengt. */
+  wordGroupRow: {
+    flexDirection: 'row-reverse',
+    flexWrap: 'wrap',
+    justifyContent: 'center',
+    gap: Spacing.one,
+  },
   wordArabic: {},
   wordGloss: { fontSize: 11, textAlign: 'center' },
   tafsirBox: { padding: Spacing.two, borderRadius: Spacing.two, gap: Spacing.half },

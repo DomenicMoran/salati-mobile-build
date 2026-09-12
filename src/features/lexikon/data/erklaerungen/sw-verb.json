@@ -1,0 +1,1569 @@
+{
+  "schema": 1,
+  "lang": "sw",
+  "bereich": "verb",
+  "eintraege": {
+    "fiil": {
+      "titel": "Kitenzi (Fi'il) na Misingi Yake",
+      "ar": "الفِعْل",
+      "umschrift": "al-fiʿl",
+      "erklaerung": [
+        "Kiarabu kina aina tatu za maneno: Ism (jina), Fi'il (kitenzi) na Harf (herufi). Fi'il huonyesha tendo linalotokea wakati fulani maalum - wakati uliopita, wakati wa sasa/ujao, au kama amri au katazo. Kwa hiyo mfumo wa vitenzi umegawanyika katika aina tatu za msingi tu: al-Fi'il al-Maadhi, al-Fi'il al-Mudhari' na Fi'il al-Amr/an-Nahyi. Maumbo mengine yote ya kitenzi (vivumishi vya kitenzi, nomino za kitendo n.k.) yanatokana na aina hizi tatu za msingi, lakini yenyewe hayahesabiwi tena kama aina huru ya Fi'il.",
+        "Jambo la pekee kuhusu kitenzi cha Kiarabu: kinabeba kiima chake ndani yake chenyewe. Tofauti na lugha nyingine nyingi, ambapo kwa mfano \"I help\" ya Kiingereza ni maneno mawili, kitenzi cha Kiarabu tayari kinabeba habari ya nani anayetenda - kama kiwakilishi kilichojengwa ndani yake kwa umbo la kiambishi awali au kiishio. Kwa hiyo neno moja tu la kitenzi tayari ni sentensi kamili yenye Fa'ili (mtendaji).",
+        "Kiishio hiki cha nafsi kilichojengwa ndani ndicho ufunguo wa sura nzima: yeyote aliyekijifunza mara moja kwenye kitenzi cha mfano (kwa jadi نَصَرَ, \"alisaidia\"), anaweza kukihamisha kwenye kitenzi kingine chochote, kwa sababu ni shina la neno tu linalobadilika, si muundo wa viishio."
+      ],
+      "erkennung": [
+        "Fi'il huundwa na shina thabiti la neno pamoja na viambishi awali/viishio vinavyobadilika vinavyoonyesha nafsi, jinsia na idadi.",
+        "Tofauti na Ism, Fi'il halibebi kamwe tanwini wala kiambishi اَلْ.",
+        "Neno moja la kitenzi laweza kuunda sentensi kamili peke yake, kwa sababu kiima tayari kimo ndani ya kitenzi."
+      ],
+      "belege": [
+        {
+          "sure": 1,
+          "vers": 5,
+          "wort": 2,
+          "zeigt": "نَعْبُدُ (\"tunamwabudu\") - neno hili tayari ni sentensi kamili: shina عبد + \"sisi\" kilichojengwa ndani.",
+          "warum": "Kipande ni pos:V chenye person:1, number:pl - hakuna haja ya kiwakilishi tofauti."
+        },
+        {
+          "sure": 1,
+          "vers": 6,
+          "wort": 1,
+          "zeigt": "ٱهْدِنَا (\"tuongoze!\") - umbo la amri lenye \"wewe\" (mtendaji) kilichojengwa ndani na \"sisi\" (yambwa) kilichoambatanishwa, katika neno moja tu.",
+          "warum": "Kipande ni pos:V, tense:imperative, person:2 - aina ya Fi'il katika hali yake ya tatu ya msingi."
+        }
+      ],
+      "lernen": [
+        "Jifunze kwanza mgawanyo wa sehemu tatu: Maadhi - Mudhari' - Amri/Nahyi. Yataje kwa sauti kwa mpangilio huu mpaka yakupite bila kufikiri.",
+        "Chukua kitenzi kimoja cha mfano (mfano نَصَرَ) na ubaki nacho mpaka muundo wa viishio ukae vizuri - ndipo ujaribu vitenzi vingine.",
+        "Wakati wa kusoma Qur'ani, tafuta kwa makusudi vitenzi visivyo na kiwakilishi tofauti mbele yake, na taja kwa sauti ni nani mtendaji kabla ya kuendelea kusoma."
+      ],
+      "tabellen": [
+        "verb-madi-nasara-aktiv-matrix",
+        "verb-mudari-nasara-aktiv-matrix"
+      ],
+      "siehe": [
+        "jidhr",
+        "madi",
+        "mudari",
+        "amr",
+        "nahy"
+      ]
+    },
+    "jidhr": {
+      "titel": "Mzizi na Kanuni ya Muundo",
+      "ar": "الجَذْر وَالوَزْن",
+      "umschrift": "al-jadhr wa-l-wazn",
+      "erklaerung": [
+        "Karibu kila kitenzi cha Kiarabu chatokana na mzizi (Jidhr) wenye konsonanti tatu kwa kawaida, unaobeba maana ya msingi. Kutoka mzizi huu, kupitia miundo maalum (Auzaan, umoja: Wazn), familia nzima za maneno huundwa: kitenzi cha msingi, maumbo ya kitenzi yaliyoimarishwa au ya kusababisha, nomino ya kitendo, vivumishi vya kitenzi. Mzizi waweza kufikiriwa kama mbegu, ambayo kutoka kwake maneno tofauti huota kulingana na muundo unaotumika.",
+        "Jambo muhimu: mzizi ule ule hutoa maana tofauti lakini zenye uhusiano kulingana na muundo. Mzizi ع-ل-م unabeba wazo la msingi la \"ujuzi\". Katika muundo wa msingi hutoa عَلِمَ, \"alijua\". Ukirudia herufi ya kati ya mzizi (Muundo wa II), hutokea عَلَّمَ, \"alifundisha\" - kutoka ujuzi tu kunazaliwa tendo la kuhamisha ujuzi kwa bidii.",
+        "Kanuni hii ya muundo ndiyo sababu msamiati wa Kiarabu unafunguka kimfumo badala ya kukaririwa tu: ukijua mzizi na muundo, mara nyingi waweza kukisia maana ya neno usilolijua kabla ya kulitafuta kamusini."
+      ],
+      "erkennung": [
+        "Mzizi kwa kawaida huwa na konsonanti tatu bila irabu thabiti - irabu na herufi za ziada hutolewa na muundo pekee.",
+        "Maneno mawili yenye mzizi mmoja lakini muundo tofauti yana uhusiano wa maana lakini si sawa kabisa (mfano \"kujua\" dhidi ya \"kufundisha\").",
+        "Herufi ya kati ya mzizi iliyorudiwa (shadda) ndicho kiashiria kinachoonekana zaidi cha kitenzi kilichopanuliwa kwa muundo."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 60,
+          "wort": 15,
+          "zeigt": "عَلِمَ (\"alijua\") - muundo wa msingi wa mzizi ع-ل-م bila upanuzi wowote.",
+          "warum": "Kipande ni pos:V, verbForm:1 (hakuna thamani ya mabano katika data ghafi, hivyo kwa mkataba ni Muundo I), root:علم."
+        },
+        {
+          "sure": 2,
+          "vers": 31,
+          "wort": 1,
+          "zeigt": "وَعَلَّمَ (\"na Alifundisha\") - mzizi ule ule ع-ل-م, lakini na herufi ya kati iliyorudiwa hadi Muundo II.",
+          "warum": "Kipande ni pos:V, verbForm:2 ((II) katika lebo ghafi), root:علم - Jidhr ile ile kama عَلِمَ, muundo tofauti, dokezo tofauti la maana."
+        }
+      ],
+      "lernen": [
+        "Usijifunze neno peke yake, bali jozi ya mzizi+muundo: jiulize kwa kila kitenzi kipya \"mzizi gani, muundo gani?\".",
+        "Fanya mazoezi kwenye mzizi علم wenyewe: sema عَلِمَ (kujua, Muundo I) na عَلَّمَ (kufundisha, Muundo II) mfululizo na taja tofauti ya maana kwa sauti.",
+        "Kabla ya kutafuta tafsiri ya neno jipya, jiwazie kwanza mzizi wake wa msingi - hilo hujenga uwezo wa kubaini maana kutoka kwenye mfumo."
+      ],
+      "tabellen": [],
+      "siehe": [
+        "fiil",
+        "form1",
+        "form2"
+      ]
+    },
+    "madi": {
+      "titel": "Wakati Uliopita",
+      "ar": "الماضي",
+      "umschrift": "al-māḍī",
+      "erklaerung": [
+        "Al-Maadhi ni umbo la msingi la kila kitenzi - \"alifanya\" - na ndipo maundo mengine yote ya nafsi yanapoundwa kutoka. Shina la neno hubaki sawa katika maumbo yote; kinachobadilika ni kiishio tu, kinachoonyesha ni nani aliyetenda. Katika kitenzi cha mfano نَصَرَ (\"alisaidia\"), maumbo muhimu zaidi ni: نَصَرَ (alisaidia - yeye mume), نَصَرَتْ (alisaidia - yeye mke), نَصَرْتَ (ulisaidia - wewe mume), نَصَرْتُ (nilisaidia), نَصَرُوا (walisaidia - kundi la wanaume), نَصَرْنَا (tulisaidia).",
+        "Al-Maadhi hukanushwa katika hali ya kawaida kwa herufi مَا mara moja kabla ya kitenzi (مَا نَصَرْتُ, \"sikusaidia\"). Umbo la pili la kukanusha wakati uliopita, lenye mkazo tofauti wa kimaana, hupitia لَمْ + Mudhari' (angalia sehemu husika) - ijapokuwa umbo hilo linaonekana kama wakati wa sasa.",
+        "Al-Maadhi pia ndilo umbo linalotumika kutafuta kitenzi kamusini, na ndilo msingi ambao kutoka kwake pia huundwa kitendwa cha wakati uliopita (angalia Majhuli)."
+      ],
+      "erkennung": [
+        "Viishio vya nafsi huonyesha mtendaji moja kwa moja mwishoni mwa neno: -تَ = wewe (mume), -تُ = mimi, -نَا = sisi, -وا = kundi la wanaume.",
+        "Al-Maadhi halibebi kiambishi awali cha nafsi (tofauti na Al-Mudhari') - nafsi imo kwenye kiishio pekee.",
+        "Ukanushaji katika Al-Maadhi hutambulika kwa مَا mara moja kabla ya kitenzi."
+      ],
+      "belege": [
+        {
+          "sure": 1,
+          "vers": 7,
+          "wort": 3,
+          "zeigt": "أَنْعَمْتَ (\"Umeneemesha\") - wakati uliopita, nafsi ya pili umoja mume, unaotambulika kwa kiishio ـتَ.",
+          "warum": "Kipande ni pos:V, tense:perfect, person:2, gender:m, number:sg."
+        },
+        {
+          "sure": 3,
+          "vers": 123,
+          "wort": 2,
+          "zeigt": "نَصَرَكُمُ (\"Alikusaidieni\") - wakati uliopita, nafsi ya tatu umoja mume bila kiishio chake cha pekee cha nafsi (\"yeye\" limo ndani ya shina tupu).",
+          "warum": "Kipande ni pos:V, tense:perfect, person:3, gender:m, number:sg."
+        }
+      ],
+      "lernen": [
+        "Jifunze kwanza viishio vya nafsi peke yake kama alfabeti ndogo ya viishio (ـَ, ـَتْ, ـْتَ, ـْتُ, ـُوا, ـْنَا ...), kabla ya kuvifanyia mazoezi kwenye vitenzi.",
+        "Katika jedwali la nafsi, funika safu ya Kiarabu na useme maana yake, kisha kinyume chake - mpaka pande zote mbili ziende sawa.",
+        "Kosa la kawaida: kuchanganya kiishio ـتَ (wewe, mume) na ـتِ (wewe, mke) au ـتُ (mimi) - soma kwa sauti wakati wa mazoezi, tofauti ni irabu moja tu."
+      ],
+      "tabellen": [
+        "verb-madi-nasara-aktiv-matrix"
+      ],
+      "siehe": [
+        "mudari",
+        "maluum",
+        "majhul",
+        "personenmatrix"
+      ]
+    },
+    "mudari": {
+      "titel": "Wakati wa Sasa/Ujao",
+      "ar": "المضارع",
+      "umschrift": "al-muḍāriʿ",
+      "erklaerung": [
+        "Al-Mudhari' huonyesha kinachotokea sasa hivi, kinachotokea kwa kawaida, au kitakachotokea baadaye (\"anafanya\" / \"atafanya\"). Tofauti na Al-Maadhi, Al-Mudhari' hubeba kiambishi awali mwanzoni mwa neno kinachoonyesha nafsi: يَ kwa yeye/kundi la wanaume, تَ kwa yeye (mke, umoja) au wewe, أَ kwa mimi, نَ kwa sisi - mara nyingi hukumbukwa kwa mfuatano wa herufi \"يتأن/ya-ta-a-na\". Katika hali ya msingi, Al-Mudhari' pia huishia na damma (يَنْصُرُ).",
+        "Wakati ujao huundwa kutoka Al-Mudhari' kwa kuongeza سَ moja kwa moja (wakati ujao wa karibu) au kuweka سَوْفَ mbele (wakati ujao wa mbali) - vyote viwili humaanisha \"ata-\". Kwa hiyo umbo moja tu la msingi hufunika wakati wa sasa na wakati ujao.",
+        "Irabu ya mwisho ya Al-Mudhari' si thabiti kabisa: herufi fulani hubadilisha damma kuwa fatha (umbo \"jepesi\", Mansub) au kuwa sukuni (umbo \"jepesi zaidi\", Majzum) - angalia sehemu tofauti za hali hizo tatu."
+      ],
+      "erkennung": [
+        "Viambishi awali vinne vinavyowezekana huonyesha nafsi: يَ / تَ / أَ / نَ.",
+        "Umbo la msingi huishia na damma (ـُ); irabu hii ya mwisho hubadilika kulingana na herufi inayotangulia (hali/modi).",
+        "Wakati ujao huundwa kwa سَ (kuambatanishwa) au سَوْفَ (kuwekwa mbele) kabla ya umbo lile lile la Al-Mudhari'."
+      ],
+      "belege": [
+        {
+          "sure": 1,
+          "vers": 5,
+          "wort": 2,
+          "zeigt": "نَعْبُدُ (\"tunaabudu\") - Al-Mudhari' chenye kiambishi awali نَ cha \"sisi\" na kiishio ـُ (damma) katika hali ya kawaida.",
+          "warum": "Kipande ni pos:V, tense:imperfect, person:1, number:pl, mood:null na hakibebi lebo ya MOOD katika data ghafi - hali ya kawaida."
+        },
+        {
+          "sure": 2,
+          "vers": 268,
+          "wort": 2,
+          "zeigt": "يَعِدُكُمُ (\"anakuahidini\") - Al-Mudhari' chenye kiambishi awali يَ cha \"yeye\" na kiishio ـُ.",
+          "warum": "Kipande ni pos:V, tense:imperfect, person:3, gender:m, number:sg."
+        }
+      ],
+      "lernen": [
+        "Kariri kwanza viambishi awali vinne يتأن kama neno la kukumbukia, kabla ya kwenda kwenye vitenzi mahususi.",
+        "Katika jedwali la nafsi, funika safu moja (umoja/uwili/wingi) na useme kwa sauti umbo linalokosekana - hilo hufundisha kiambishi awali NA kiishio kwa pamoja.",
+        "Fanya mazoezi ya tofauti kati ya سَ na سَوْفَ kwa mifano ya Qur'ani: zote mbili humaanisha \"ata-\", tofauti ipo tu kwenye ukaribu wa muda unaohisiwa."
+      ],
+      "tabellen": [
+        "verb-mudari-nasara-aktiv-matrix"
+      ],
+      "siehe": [
+        "madi",
+        "mudariMarfu",
+        "mudariMansub",
+        "mudariMajzum",
+        "amr",
+        "nahy"
+      ]
+    },
+    "amr": {
+      "titel": "Amri",
+      "ar": "الأمر",
+      "umschrift": "al-amr",
+      "erklaerung": [
+        "Fi'il al-Amr, amri, upo tu kwa nafsi ya pili (wewe/nyinyi) - kama ilivyo Kiswahilini. Huundwa kutoka Al-Mudhari' wa nafsi ya pili kwa hatua nne: (1) kuleta kitenzi katika umbo jepesi zaidi (kiishio kinakuwa sukuni), (2) kuondoa kiambishi awali تَ, (3) ikiwa herufi mpya ya kwanza itakuwa bila irabu, kuweka hamza ya msaada (Hamzatul-Wasli) mbele yake, (4) kuamua matamshi yake. Kutoka أَنْتَ تَنْصُرُ (\"unasaidia\") hutokea, kupitia تَنْصُرْ na نْصُرْ mwishoni, ٱنْصُرْ (\"Saidia!\").",
+        "Hamzatul-Wasli mwanzoni mwa umbo la amri husomwa tu ikiwa kabla yake pana kituo au hakuna neno linaloweza kuungana nalo; baada ya و/فَ au neno linaloweza kuunganishwa moja kwa moja, hubaki bubu. Irabu yake ya kusomwa hutegemea herufi ya tatu ya kitenzi.",
+        "Baadhi ya vitenzi (vitenzi vinne vya Mahmuz أَكَلَ, أَخَذَ, أَمَرَ, سَأَلَ) hupoteza hamza yao kabisa katika amri kwa njia ya Hadhfu - كُلْ, خُذْ, مُرْ, سَلْ badala ya umbo lililotarajiwa lenye hamza."
+      ],
+      "erkennung": [
+        "Amri ipo tu katika nafsi ya pili na kwa kawaida huishia na sukuni.",
+        "Mara nyingi huanza na alifu/hamza ya msaada (Hamzatul-Wasli), pale herufi ya kwanza halisi ya mzizi ingekuwa bila irabu vinginevyo.",
+        "Katika vitenzi vinne أَكَلَ/أَخَذَ/أَمَرَ/سَأَلَ, hamza hutoweka kabisa katika amri (Hadhfu)."
+      ],
+      "belege": [
+        {
+          "sure": 1,
+          "vers": 6,
+          "wort": 1,
+          "zeigt": "ٱهْدِنَا (\"Tuongoze!\") - umbo la amri, nafsi ya pili umoja mume, likiwa na kiwakilishi cha yambwa \"sisi\" kilichoambatanishwa.",
+          "warum": "Kipande ni pos:V, tense:imperative, person:2, gender:m, number:sg."
+        },
+        {
+          "sure": 17,
+          "vers": 14,
+          "wort": 1,
+          "zeigt": "ٱقْرَأْ (\"Soma!\") - umbo la amri lenye hamza ya msaada mwanzoni, kutoka kitenzi cha Mahmuz al-Laam قَرَأَ.",
+          "warum": "Kipande ni pos:V, tense:imperative, person:2, gender:m, number:sg, root:قرا."
+        }
+      ],
+      "lernen": [
+        "Fanya mazoezi ya hatua nne za uundaji kwa sauti kwenye kitenzi kimoja: wakati wa sasa nafsi ya pili -> umbo jepesi zaidi -> ondoa kiambishi awali -> angalia hamza ya msaada.",
+        "Kariri vibagua vinne vya Hadhfu (كُلْ، خُذْ، مُرْ، سَلْ) kama orodha funge - havifuati kanuni inayoweza kutolewa.",
+        "Katika jedwali la Amri, funika safu ya nafsi na uunde umbo lenyewe kabla ya kuangalia jibu."
+      ],
+      "tabellen": [
+        "amr-nasara-matrix"
+      ],
+      "siehe": [
+        "nahy",
+        "mudariMajzum",
+        "hadhf"
+      ]
+    },
+    "nahy": {
+      "titel": "Katazo",
+      "ar": "النهي",
+      "umschrift": "an-nahy",
+      "erklaerung": [
+        "An-Nahyi, katazo, huundwa kwa kuweka herufi ya katazo لَا kabla ya umbo jepesi zaidi la Al-Mudhari' (nafsi ya pili) - kiishio kile kile cha sukuni kinachosababishwa pia na لَمْ na إِنْ. Kutoka تَنْصُرُ (\"unasaidia\") hutokea لَا تَنْصُرْ (\"Usisaidie!\").",
+        "Tofauti na amri, katika katazo kiambishi awali تَ hubaki - kinachobadilika ni irabu ya mwisho tu. Kwa hiyo Nahyi kimuundo ni ukanushaji wa Al-Mudhari'-Majzum katika nafsi ya pili, ukiwa na herufi yake mahususi ya kusababisha لَا (inayotofautiana kimasarufi na herufi safi ya ukanushaji لَا isiyobadilisha hali ya kawaida).",
+        "Katika Qur'ani muundo huu ni wa kawaida sana: maonyo na maagizo mara nyingi huundwa kama لَا + Al-Mudhari'-Majzum."
+      ],
+      "erkennung": [
+        "Katazo hutambulika kwa لَا mara moja kabla ya Al-Mudhari', ambaye kiishio chake ni sukuni badala ya damma.",
+        "Kiambishi awali cha nafsi (kwa kawaida تَ kwa \"wewe\") hubaki - tofauti na amri, ambapo huondolewa.",
+        "Katika vitenzi vyenye herufi ya mwisho و/ي (wingi), Nuni pia huondolewa, kama ilivyo katika umbo jepesi."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 11,
+          "wort": 5,
+          "zeigt": "لَا تُفْسِدُوا۟ (\"Msifanye uharibifu\") - umbo la katazo, nafsi ya pili wingi mume, baada ya herufi ya katazo لَا.",
+          "warum": "Neno lililotangulia (nafasi 4) linabeba kipande pos:PRO (herufi ya katazo); kitenzi chenyewe kinaonyesha mood:juss, tense:imperfect."
+        },
+        {
+          "sure": 2,
+          "vers": 22,
+          "wort": 19,
+          "zeigt": "فَلَا تَجْعَلُوا۟ (\"basi msifananishe\") - umbo la katazo, nafsi ya pili wingi mume, pia baada ya لَا.",
+          "warum": "Neno lililotangulia linabeba kipande pos:PRO; kitenzi chenyewe kinaonyesha mood:juss, tense:imperfect."
+        }
+      ],
+      "lernen": [
+        "Kariri muundo لَا + Al-Mudhari'-Majzum kama kipande kimoja, si neno kwa neno.",
+        "Linganisha amri na katazo kwenye kitenzi kile kile (ٱنْصُرْ / لَا تَنْصُرْ) na taja kwa sauti kinachobadilika (kiambishi awali kinabaki au kinaondolewa).",
+        "Wakati wa kusoma Qur'ani, tafuta kwa makusudi لَا mara moja kabla ya kitenzi na kagua kiishio - hilo hujenga jicho la kutambua hali ya Majzum."
+      ],
+      "tabellen": [
+        "nahy-nasara-matrix"
+      ],
+      "siehe": [
+        "amr",
+        "mudariMajzum"
+      ]
+    },
+    "personenmatrix": {
+      "titel": "Kusoma Nafsi, Jinsia na Idadi kwenye Kiishio",
+      "ar": "تَصْرِيف الفِعْل",
+      "umschrift": "taṣrīf al-fiʿl",
+      "erklaerung": [
+        "Kwa kuwa kitenzi cha Kiarabu kinabeba kiima chake ndani yake, ni lazima kujifunza kusoma kutoka kiambishi awali na/au kiishio ni nani anayetenda: nafsi gani (ya 1/2/3), jinsia gani (mume/mke) na idadi gani (umoja/uwili/wingi). Katika Al-Maadhi, habari hii yote imo kwenye kiishio pekee; katika Al-Mudhari' inagawanyika kati ya kiambishi awali (nafsi) na kiishio (jinsia/idadi).",
+        "Mfumo huu una mpangilio wa kutosha kujifunzwa kwenye kitenzi kimoja cha mfano kisha kuhamishwa kwa kitenzi kingine chochote: mchanganyiko ule ule 14 (kwa baadhi ya maumbo 5) wa nafsi/jinsia/idadi hurudia na viishio vile vile kwa kila kitenzi.",
+        "Uwili unastahili tahadhari maalum: upo tu katika nafsi ya pili na ya tatu, kamwe si katika nafsi ya kwanza - katika Kiarabu hakuna \"sisi wawili\" kama umbo huru la kitenzi."
+      ],
+      "erkennung": [
+        "Katika Al-Maadhi, habari yote ya nafsi imo kwenye kiishio (ـَ / ـَتْ / ـْتَ / ـْتُ / ـُوا / ـْنَا ...).",
+        "Katika Al-Mudhari', kiambishi awali huonyesha nafsi (يتأن), kiishio huonyesha jinsia na idadi.",
+        "Nafsi ya kwanza haina uwili wake - umoja na wingi pekee."
+      ],
+      "belege": [
+        {
+          "sure": 1,
+          "vers": 5,
+          "wort": 2,
+          "zeigt": "نَعْبُدُ (\"tunaabudu\") - kiambishi awali نَ kinaonyesha nafsi ya kwanza, hakuna kiishio maalum kinachoonyesha wingi (mkataba: kiambishi awali نَ = \"sisi\").",
+          "warum": "Kipande: person:1, number:pl."
+        },
+        {
+          "sure": 3,
+          "vers": 123,
+          "wort": 2,
+          "zeigt": "نَصَرَكُمُ (\"Alikusaidieni\") - shina tupu bila kiishio cha nafsi kinaonyesha nafsi ya tatu umoja mume.",
+          "warum": "Kipande: person:3, gender:m, number:sg."
+        }
+      ],
+      "lernen": [
+        "Mbinu ya kufunika: Chukua jedwali la nafsi, funika safu ya Kiarabu kwa mkono na useme kwa sauti umbo la kila mstari wa nafsi/idadi; kisha kinyume chake, toa maana kutoka umbo la Kiarabu.",
+        "Fanya kazi kwenye jedwali kimfumo kutoka chini kwenda juu (nafsi ya 1 -> nafsi ya 2 -> nafsi ya 3), kwa sababu huu ndio mpangilio wa kawaida wa kujifunza na hauchanganyi viishio.",
+        "Kosa la kawaida: kuchanganya nafsi ya tatu umoja mke katika Al-Mudhari' na nafsi ya pili umoja mume, kwa sababu maumbo yote mawili yanasikika sawa - hapa muktadha wa sentensi tu ndio unaosaidia."
+      ],
+      "tabellen": [
+        "verb-madi-nasara-aktiv-matrix",
+        "verb-mudari-nasara-aktiv-matrix",
+        "amr-nasara-matrix",
+        "nahy-nasara-matrix"
+      ],
+      "siehe": [
+        "madi",
+        "mudari",
+        "amr"
+      ]
+    },
+    "maluum": {
+      "titel": "Kutenda",
+      "ar": "مَعْلُوم",
+      "umschrift": "maʿlūm",
+      "erklaerung": [
+        "Ma'lumu (\"anayejulikana/anayetenda\") ni hali ya kawaida isiyo na alama maalum ya kitenzi: mtendaji (Fa'ili) anasimama kama kiima dhahiri, na kitenzi kinaeleza tendo lake moja kwa moja - \"alisaidia\", \"atasaidia\". Maumbo yote ya mfano kutoka Al-Maadhi, Al-Mudhari', Amri na Nahyi ni Ma'lumu mwanzoni, mradi hakuna alama nyingine.",
+        "Ni kwa kubadilisha irabu tu (angalia Majhuli) ndipo kitenzi cha kutenda kinabadilika kuwa cha kutendwa - katika Kiarabu bila kitenzi kisaidizi, kwa kubadilisha rangi ya irabu za shina pekee."
+      ],
+      "erkennung": [
+        "Ma'lumu ni hali ya kawaida isiyo na alama maalum - Fa'ili (mtendaji) ndiye kiima cha kisarufi.",
+        "Katika data, Ma'lumu huonekana kwa sifa \"jinsia ya kitenzi\" kubaki tupu (hakuna lebo ya PASS).",
+        "Hutambulika pia kwa uwezekano wa Fa'ili huru kufuata kitenzi katika hadhi ya Raf'."
+      ],
+      "belege": [
+        {
+          "sure": 1,
+          "vers": 5,
+          "wort": 2,
+          "zeigt": "نَعْبُدُ (\"tunaabudu\") - umbo la kutenda: \"sisi\" wenyewe tunatenda, hakuna muundo wa irabu wa kutendwa.",
+          "warum": "Kipande: pos:V, voice:null (hakuna lebo ya PASS katika data ghafi) - hali ya kawaida ya kutenda."
+        },
+        {
+          "sure": 3,
+          "vers": 123,
+          "wort": 2,
+          "zeigt": "نَصَرَكُمُ (\"Alikusaidieni\") - umbo la kutenda: \"Yeye\" ndiye mtendaji, \"nyinyi\" ni yambwa ya moja kwa moja.",
+          "warum": "Kipande: pos:V, voice:null, tense:perfect."
+        }
+      ],
+      "lernen": [
+        "Jifunze Ma'lumu daima pamoja na Majhuli kama jozi linganishi: sema نَصَرَ/نُصِرَ mfululizo ili sikio likumbuke tofauti ya irabu.",
+        "Kumbuka: kutenda ndiyo hali ya kawaida - kutokuwepo kwa alama NDIYO alama yenyewe."
+      ],
+      "tabellen": [
+        "verb-madi-nasara-aktiv-matrix",
+        "verb-mudari-nasara-aktiv-matrix"
+      ],
+      "siehe": [
+        "majhul"
+      ]
+    },
+    "majhul": {
+      "titel": "Kutendwa",
+      "ar": "مَجْهُول",
+      "umschrift": "majhūl",
+      "erklaerung": [
+        "Majhuli (\"asiyejulikana/anayetendwa\") hutokea pale mtendaji anaporudi nyuma au kufichwa: kutoka \"alisaidia\" kunakuwa \"alisaidiwa\". Katika Kiarabu, kitendwa hakiundwi kwa neno la msaada, bali kwa kubadilisha rangi ya irabu za shina pekee - kanuni isiyo ya kawaida kwa sarufi ya Kiswahili, lakini yenye mpangilio kamili.",
+        "Katika wakati uliopita, herufi zote zenye irabu isipokuwa ya mwisho hupata \"u\", ya mwisho hupata \"i\": kutoka نَصَرَ (\"alisaidia\") kunakuwa نُصِرَ (\"alisaidiwa\"). Katika wakati wa sasa, herufi ya kwanza hupata \"u\", zote zinazofuata hupata \"a\": kutoka يَنْصُرُ kunakuwa يُنْصَرُ. Viishio vya nafsi vyenyewe havibadiliki - ni irabu za ndani za shina pekee zinazohama.",
+        "Kwa sababu Fa'ili haipo katika sentensi ya kutendwa, mara nyingi Naaibul-Fa'ili (mbadala wa mtendaji) huchukua nafasi yake ya kisarufi - katika tafsiri mara nyingi ndiye kiima cha kisarufi cha sentensi ya kutendwa."
+      ],
+      "erkennung": [
+        "Wakati uliopita wa kutendwa: irabu \"u\" kwenye herufi zote za shina isipokuwa ya mwisho, huko \"i\" (نُصِرَ).",
+        "Wakati wa sasa wa kutendwa: \"u\" kwenye herufi ya kwanza, \"a\" kwenye zilizobaki (يُنْصَرُ).",
+        "Viishio vya nafsi havibadiliki wakati wa kuhamia kutendwa - irabu za ndani pekee ndizo zinabadilika."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 4,
+          "wort": 4,
+          "zeigt": "أُنزِلَ (\"kiliteremshwa\") - kitendwa cha wakati uliopita cha Muundo IV: herufi ya kwanza inabeba \"u\", ya mwisho \"i\".",
+          "warum": "Kipande: pos:V, tense:perfect, voice:passive, verbForm:4."
+        },
+        {
+          "sure": 112,
+          "vers": 3,
+          "wort": 4,
+          "zeigt": "يُولَدْ (\"Anazaliwa\") - kitendwa cha wakati wa sasa: herufi ya kwanza inabeba \"u\".",
+          "warum": "Kipande: pos:V, tense:imperfect, voice:passive, mood:juss (hapa pia limewekwa katika hali ya Majzum baada ya لَمْ)."
+        }
+      ],
+      "lernen": [
+        "Sema kwa sauti jozi za kutenda na kutendwa: نَصَرَ/نُصِرَ, يَنْصُرُ/يُنْصَرُ - sikio hukumbuka muundo wa irabu haraka kuliko kanuni iliyoandikwa.",
+        "Katika jedwali la kutendwa, funika safu ya wakati uliopita na utoe umbo la wakati wa sasa wewe mwenyewe (na kinyume chake), ili kuimarisha miundo yote miwili dhidi ya kila mmoja.",
+        "Kosa la kawaida: kuchanganya \"u\" ya kutendwa mwanzoni mwa neno na kiambishi awali أَ cha nafsi ya kwanza - kuangalia irabu ya pili (i katika wakati uliopita) huleta uwazi."
+      ],
+      "tabellen": [
+        "verb-madi-nasara-passiv-matrix",
+        "verb-mudari-nasara-passiv-matrix"
+      ],
+      "siehe": [
+        "maluum",
+        "madi",
+        "mudari"
+      ]
+    },
+    "mudariMarfu": {
+      "titel": "Al-Mudhari' katika Hali ya Kawaida (Marfu'i)",
+      "ar": "المُضَارِع المَرْفُوع",
+      "umschrift": "al-muḍāriʿ al-marfūʿ",
+      "erklaerung": [
+        "Marfu'i ni hali ya kawaida isiyo na alama maalum ya Al-Mudhari': maadamu hakuna kisababishi maalum kabla yake, umbo la msingi huishia na damma (ـُ) - يَنْصُرُ, \"anasaidia\". Hali hii inalingana na hadhi ya Rafu'i kwenye jina, na vilevile ni \"hali ya kawaida isiyo na alama\".",
+        "Kwa kuwa Marfu'i ni hali ya kawaida, haipewi lebo maalum katika data - ni Mansub tu (kwa lebo ya MOOD SUBJ) na Majzum (kwa lebo ya MOOD JUS) ndizo zinazopewa alama wazi. Kutokuwepo kwa alama yoyote ya hali ndiyo hasa ushahidi wa Marfu'i.",
+        "Kwenye nafsi zenye kiishio cha wingi kwa و au uwili, Marfu'i huongeza Nuni (يَنْصُرُونَ, \"wanasaidia\") - Nuni hii huondolewa hasa katika Mansub na Majzum."
+      ],
+      "erkennung": [
+        "Umbo la msingi huishia na damma (ـُ), bila herufi ya kusababisha kabla yake.",
+        "Katika wingi/uwili, Nuni ya ziada huonekana mwishoni mwa neno (ـُونَ / ـَانِ), inayoondolewa katika hali nyingine mbili.",
+        "Hakuna lebo ya MOOD katika data - kutokuwepo kwa alama yoyote ya hali huonyesha hali ya kawaida."
+      ],
+      "belege": [
+        {
+          "sure": 1,
+          "vers": 5,
+          "wort": 2,
+          "zeigt": "نَعْبُدُ (\"tunaabudu\") - hali ya kawaida bila kisababishi kabla yake, kiishio cha damma.",
+          "warum": "Kipande: mood:null, tense:imperfect, na lebo ghafi haibebi sehemu ya MOOD."
+        },
+        {
+          "sure": 2,
+          "vers": 268,
+          "wort": 2,
+          "zeigt": "يَعِدُكُمُ (\"anakuahidini\") - hali ya kawaida pia, kiishio cha damma.",
+          "warum": "Kipande: mood:null, tense:imperfect, hakuna sehemu ya MOOD katika lebo ghafi."
+        }
+      ],
+      "lernen": [
+        "Jifunze Marfu'i kama hali unayopata pale HAKUNA kitu kilichowekwa mbele - wakati wa mazoezi, jikite kwenye kutambua hali nyingine mbili (zenye alama), Marfu'i ndiyo iliyobaki.",
+        "Linganisha kwenye kitenzi kimoja viishio vyote vitatu mfululizo: يَنْصُرُ (Marfu'i) - يَنْصُرَ (Mansub) - يَنْصُرْ (Majzum) - vitaje kwa sauti mfululizo."
+      ],
+      "tabellen": [
+        "verb-mudari-nasara-aktiv-matrix"
+      ],
+      "siehe": [
+        "mudariMansub",
+        "mudariMajzum"
+      ]
+    },
+    "mudariMansub": {
+      "titel": "Al-Mudhari' katika Umbo Jepesi (Mansub)",
+      "ar": "المُضَارِع المَنْصُوب",
+      "umschrift": "al-muḍāriʿ al-manṣūb",
+      "erklaerung": [
+        "Herufi fulani hubadilisha damma mwishoni mwa Al-Mudhari' kuwa fatha - umbo \"jepesi\", Mansub. Vibabishi hasa ni أَنْ (\"kwamba\"), لَنْ (kinakanusha wakati ujao, \"hatakuwa\"), لِ/كَي/لِكَي (\"ili\") na حَتَّى (\"mpaka\"). Kutoka يَنْصُرُ, baada ya أَنْ, hutokea umbo أَنْ يَنْصُرَ.",
+        "Katika maumbo ya wingi na uwili, Nuni ya mwisho iliyokuwepo katika hali ya kawaida (Marfu'i) huondolewa pia katika Mansub - kutoka يَنْصُرُونَ hutokea لَنْ يَنْصُرُوا۟.",
+        "Kimaana, لَنْ hutoa ukanushaji thabiti wa wakati ujao (\"hatakuwa kabisa\"), wakati أَنْ mara nyingi huanzisha kishazi tegemezi kinachoeleza nia au tukio lisilotokea bado."
+      ],
+      "erkennung": [
+        "Kisababishi أَنْ / لَنْ / لِ / كَي / حَتَّى mara moja kabla ya Al-Mudhari'.",
+        "Irabu ya mwisho hubadilika kutoka damma kwenda fatha (ـُ -> ـَ).",
+        "Katika wingi/uwili, Nuni ya mwisho huondolewa."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 24,
+          "wort": 5,
+          "zeigt": "وَلَن تَفْعَلُوا۟ (\"na hamtafanya kamwe\") - Mansub baada ya لَنْ, Nuni ya wingi tayari imeondolewa.",
+          "warum": "Lebo ghafi ya kipande ina MOOD:SUBJ; kipande: tense:imperfect, person:2, number:pl."
+        },
+        {
+          "sure": 2,
+          "vers": 143,
+          "wort": 20,
+          "zeigt": "لِنَعْلَمَ (\"ili tujue\") - Mansub baada ya لِ (\"ili\").",
+          "warum": "Lebo ghafi ya kipande ina MOOD:SUBJ; kipande: tense:imperfect, person:1, number:pl, root:علم."
+        }
+      ],
+      "lernen": [
+        "Jifunze vibabishi vinne vya kawaida zaidi أَنْ / لَنْ / لِ / حَتَّى kama orodha thabiti, ikiwezekana kila kimoja kikiambatana na mfano wa Qur'ani badala ya kukaririwa peke yake.",
+        "Fanya mazoezi hasa kwenye لَنْ, kwa sababu hubeba wakati mmoja hali (Mansub) na maana (ukanushaji wa wakati ujao) - kariri vyote viwili pamoja.",
+        "Katika vitenzi vya wingi, angalia kwanza Nuni: ikiwa haipo, hilo ni dalili kubwa ya Mansub au Majzum badala ya Marfu'i."
+      ],
+      "tabellen": [],
+      "siehe": [
+        "mudariMarfu",
+        "mudariMajzum"
+      ]
+    },
+    "mudariMajzum": {
+      "titel": "Al-Mudhari' katika Umbo Jepesi Zaidi (Majzum)",
+      "ar": "المُضَارِع المَجْزُوم",
+      "umschrift": "al-muḍāriʿ al-majzūm",
+      "erklaerung": [
+        "Majzum huenda hatua moja zaidi kuliko Mansub: badala ya fatha, mwisho wa kitenzi haubebi irabu kabisa, bali sukuni. Vibabishi muhimu zaidi ni لَمْ na إِنْ (\"kama\"). Jambo la kuvutia hasa: لَمْ hukanusha wakati uliopita, ijapokuwa umbo la kitenzi linaonekana kama wakati wa sasa - لَمْ يَلِدْ humaanisha \"Hakuzaa\", si \"Hazai\".",
+        "Majzum pia ndicho kipande cha msingi cha Amri na Nahyi: vyote viwili vinatokana na umbo la Majzum la nafsi ya pili - katika Nahyi kiambishi awali تَ hubaki na لَا huwekwa mbele yake, katika Amri kiambishi awali huondolewa na hamza ya msaada yaweza kuhitajika.",
+        "Hapa pia, katika maumbo ya wingi/uwili, Nuni ya mwisho huondolewa, sawa na katika Mansub."
+      ],
+      "erkennung": [
+        "Kisababishi لَمْ au إِنْ mara moja kabla ya Al-Mudhari'.",
+        "Mwisho wa kitenzi hubeba sukuni badala ya damma au fatha.",
+        "لَمْ + Majzum kikanushaji cha wakati uliopita kisarufi, ijapokuwa umbo linaonekana kama wakati wa sasa."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 24,
+          "wort": 3,
+          "zeigt": "فَإِن لَّمْ تَفْعَلُوا۟ (\"Na ikiwa hamkufanya\") - Majzum baada ya لَمْ, kiishio cha sukuni.",
+          "warum": "Kipande: mood:juss, tense:imperfect, person:2, number:pl; lebo ghafi ina MOOD:JUS."
+        },
+        {
+          "sure": 112,
+          "vers": 3,
+          "wort": 2,
+          "zeigt": "لَمْ يَلِدْ (\"Hakuzaa\") - Majzum baada ya لَمْ; umbo linaonekana kama wakati wa sasa lakini linamaanisha wakati uliopita.",
+          "warum": "Kipande: mood:juss, tense:imperfect, verbForm:1; lebo ghafi ina MOOD:JUS."
+        }
+      ],
+      "lernen": [
+        "Jifunze لَمْ + Majzum kwa makusudi kama ubaguzi: mtego mkubwa zaidi wa tafsiri ni kulisoma umbo hilo kimakosa kama wakati wa sasa.",
+        "Weka Amri, Nahyi na Majzum pamoja (ٱنْصُرْ / لَا تَنْصُرْ / لَمْ تَنْصُرْ) na taja kinachofanana: sukuni mwishoni.",
+        "Fanya mazoezi na jedwali la Nahyi: funika kiishio na ukikamilishe wewe mwenyewe, kabla ya kuangalia umbo kamili."
+      ],
+      "tabellen": [
+        "nahy-nasara-matrix"
+      ],
+      "siehe": [
+        "mudariMarfu",
+        "mudariMansub",
+        "nahy"
+      ]
+    },
+    "form1": {
+      "titel": "Umbo la I - Mzizi Tupu",
+      "ar": "الثُّلَاثِي المُجَرَّد",
+      "umschrift": "ath-thulāthī al-mujarrad",
+      "erklaerung": [
+        "Umbo la I, \"mzizi wa konsonanti tatu tupu\" (Thulathi Mujarrad, pia unaitwa \"familia ndogo\"), huundwa na mzizi safi bila nyongeza yoyote: hakuna herufi iliyorudiwa, hakuna alifu au hamza ya ziada. Ndilo maana ya msingi, ambayo kutoka kwake miundo mingine tisa (Maumbo II-X) hutokana kupitia nyongeza thabiti.",
+        "Ndani ya Umbo la I, vitenzi hutofautiana zaidi kwa irabu ya kati ya shina katika wakati uliopita na wa sasa - vikundi vidogo sita (Bab): a-a (فَتَحَ/يَفْتَحُ), a-i (ضَرَبَ/يَضْرِبُ), a-u (نَصَرَ/يَنْصُرُ), i-a (سَمِعَ/يَسْمَعُ), i-i (حَسِبَ/يَحْسِبُ) na u-u (كَرُمَ/يَكْرُمُ). Irabu hii ya kati haiwezi kutabiriwa na lazima ijifunzwe kwa kila kitenzi peke yake.",
+        "Kwa kuwa katika data kila umbo lililopanuliwa hupewa thamani ya mabano (II)-(X), mkataba ni: ikiwa alama hii haipo, ni Umbo la I."
+      ],
+      "erkennung": [
+        "Hakuna herufi ya ziada, hakuna herufi iliyorudiwa katika shina la kitenzi - konsonanti safi za mzizi na irabu zake pekee.",
+        "Katika data, alama yoyote ya mabano (I)-(X) haipo; kutokuwepo kwa alama hii NDIYO kiashiria cha Umbo la I.",
+        "Irabu ya kati katika wakati uliopita/wa sasa hutofautiana kutoka kitenzi hadi kitenzi (miundo sita inayowezekana) na lazima ijifunzwe mmoja mmoja."
+      ],
+      "belege": [
+        {
+          "sure": 3,
+          "vers": 123,
+          "wort": 2,
+          "zeigt": "نَصَرَكُمُ (\"Alikusaidieni\") - muundo safi wa msingi wa mzizi نصر bila nyongeza yoyote.",
+          "warum": "Kipande: verbForm:1 (kwa mkataba, hakuna thamani ya mabano katika lebo ghafi), tense:perfect."
+        },
+        {
+          "sure": 7,
+          "vers": 157,
+          "wort": 35,
+          "zeigt": "وَنَصَرُوهُ (\"na wakamsaidia\") - umbo lile lile la msingi, nafsi ya tatu wingi.",
+          "warum": "Kipande: verbForm:1 (hakuna thamani ya mabano), tense:perfect."
+        }
+      ],
+      "lernen": [
+        "Kwa kila kitenzi kipya unachokutana nacho, jifunze mara moja irabu ya kati katika wakati uliopita NA wa sasa - ndiyo maana kamusi daima huonyesha maumbo yote mawili.",
+        "Fanya mazoezi kwenye vikundi sita (a-a, a-i, a-u, i-a, i-i, u-u) kwa vitenzi vyao vya mfano, mpaka mgao uwe wa moja kwa moja.",
+        "Kumbuka: Umbo la I ni hali ya kawaida - anayetaka kutambua umbo lililopanuliwa (II-X) lazima kwanza ajue jinsi umbo \"tupu\" la msingi linavyoonekana."
+      ],
+      "tabellen": [
+        "verb-madi-nasara-aktiv-matrix",
+        "bab-fataha-mahmooz-qaraa",
+        "bab-samia-mahmooz-amina"
+      ],
+      "siehe": [
+        "form2",
+        "form4",
+        "form10",
+        "jidhr"
+      ]
+    },
+    "form2": {
+      "titel": "Umbo la II - Mzizi Uliorudiwa",
+      "ar": "بَاب فَعَّلَ",
+      "umschrift": "bāb faʿʿala",
+      "erklaerung": [
+        "Umbo la II hurudia herufi ya kati ya mzizi kwa shadda. Kwa hiyo maana mara nyingi huimarishwa, hurudiwa, au huwa ya kusababisha: kutoka عَلِمَ (\"alijua\") kunatokea عَلَّمَ (\"alifundisha\", kuhamisha ujuzi kwa bidii); kutoka قَتَلَ (\"kuua\") kunatokea قَتَّلَ (\"kuchinja/kuua kwa wingi\", mkazo/kuzidisha).",
+        "Umbo hili ndilo la kawaida zaidi kati ya miundo iliyopanuliwa katika Qur'ani, na hutoa, miongoni mwa mengine, vitenzi vingi vya kusababisha vyenye yambwa."
+      ],
+      "erkennung": [
+        "Kiashiria ni shadda kwenye herufi ya kati ya mzizi (فَعَّلَ badala ya فَعَلَ).",
+        "Maana mara nyingi huimarisha, kurudia, au kusababisha ikilinganishwa na umbo la msingi.",
+        "Katika data hupewa thamani ya mabano (II)."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 31,
+          "wort": 1,
+          "zeigt": "وَعَلَّمَ (\"na Alifundisha\") - shadda kwenye herufi ya kati ل, maana \"kufundisha\" badala ya \"kujua\".",
+          "warum": "Kipande: verbForm:2 (lebo ghafi (II)), tense:perfect, root:علم."
+        },
+        {
+          "sure": 2,
+          "vers": 23,
+          "wort": 6,
+          "zeigt": "نَزَّلْنَا (\"Tumeteremsha\") - shadda kwenye ز, maana kali/ya kurudiwa \"kuteremsha\".",
+          "warum": "Kipande: verbForm:2 (lebo ghafi (II)), tense:perfect, root:نزل."
+        }
+      ],
+      "lernen": [
+        "Kariri muundo فَعَّلَ kwa macho: shadda ya kati ndiyo tofauti pekee, lakini ya kuaminika, na umbo la msingi.",
+        "Kwa kila kitenzi kipya cha Umbo la II, unda kwa makusudi mshirika wake wa umbo la msingi (علم/علّم), ili kuimarisha mabadiliko ya maana."
+      ],
+      "tabellen": [],
+      "siehe": [
+        "form1",
+        "form5",
+        "jidhr"
+      ]
+    },
+    "form3": {
+      "titel": "Umbo la III - Mzizi wa Kushirikiana",
+      "ar": "بَاب فَاعَلَ",
+      "umschrift": "bāb fāʿala",
+      "erklaerung": [
+        "Umbo la III huingiza alifu ndefu baada ya herufi ya kwanza ya mzizi (فَاعَلَ) na kwa kawaida huonyesha kufanya jambo pamoja na mtu au dhidi ya mtu: جَاهَدَ, \"kujitahidi (pamoja na wengine au dhidi ya kizuizi), kupigana\". Tendo kwa kawaida huhusisha upande wa pili.",
+        "Kimaana, tofauti na umbo la msingi mara nyingi ipo hasa katika ushirikishwaji huu wa mtu mwingine - \"kumfanyia mtu jambo\" badala ya \"kufanya jambo tu\"."
+      ],
+      "erkennung": [
+        "Kiashiria ni alifu ndefu baada ya herufi ya kwanza ya mzizi (فَاعَلَ badala ya فَعَلَ).",
+        "Maana mara nyingi ni \"kufanya jambo pamoja na/dhidi ya mtu\".",
+        "Katika data hupewa thamani ya mabano (III)."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 51,
+          "wort": 2,
+          "zeigt": "وَٰعَدْنَا (\"Tulifanya agano/tuliahidi\") - alifu ndefu baada ya و, tendo la pande mbili (miadi na Musa).",
+          "warum": "Kipande: verbForm:3 (lebo ghafi (III)), tense:perfect, root:وعد."
+        },
+        {
+          "sure": 2,
+          "vers": 100,
+          "wort": 2,
+          "zeigt": "عَٰهَدُوا۟ (\"walifanya agano\") - alifu ndefu baada ya ع, wajibu wa pande mbili.",
+          "warum": "Kipande: verbForm:3 (lebo ghafi (III)), tense:perfect, root:عهد."
+        }
+      ],
+      "lernen": [
+        "Ushikilie Umbo la III kupitia maana \"pamoja na mtu/dhidi ya mtu\" - hilo husaidia zaidi kuliko kukariri muundo peke yake.",
+        "Linganisha قَتَلَ (kuua, I) na قَاتَلَ (kupigana dhidi ya, III) - mzizi ule ule, lakini upande wa pili unaingia tu na alifu."
+      ],
+      "tabellen": [],
+      "siehe": [
+        "form1",
+        "form6"
+      ]
+    },
+    "form4": {
+      "titel": "Umbo la IV - Mzizi wa Kusababisha",
+      "ar": "بَاب أَفْعَلَ",
+      "umschrift": "bāb afʿala",
+      "erklaerung": [
+        "Umbo la IV huweka hamza mwanzoni mwa kitenzi (أَفْعَلَ) na kwa kawaida huonyesha kusababisha jambo moja kwa moja - mara nyingi kwa maana ya kusababisha: أَنْزَلَ, \"kuteremsha\" (kumfanya mtu/kitu kishuke), kutoka نَزَلَ (\"kushuka\"). Umbo hili ni la pili kwa wingi baada ya Umbo la I katika Qur'ani.",
+        "Kwa kuwa hamza ya ziada ipo mwanzoni mwa neno, katika baadhi ya vitenzi huungana na hamza ya mzizi au herufi dhaifu ya kwanza - angalia sehemu za Mahmuz na Takhfifu kwa hali hizi maalum."
+      ],
+      "erkennung": [
+        "Kiashiria ni hamza ya ziada mwanzoni mwa neno (أَفْعَلَ badala ya فَعَلَ).",
+        "Maana mara nyingi ni ya kusababisha: \"kusababisha kwamba ...\" au \"kufanya jambo moja kwa moja\".",
+        "Katika data hupewa thamani ya mabano (IV); huonekana mara nyingi pia katika kutendwa."
+      ],
+      "belege": [
+        {
+          "sure": 1,
+          "vers": 7,
+          "wort": 3,
+          "zeigt": "أَنْعَمْتَ (\"Umeneemesha\") - hamza mwanzoni, maana ya kusababisha \"kutoa neema\".",
+          "warum": "Kipande: verbForm:4 (lebo ghafi (IV)), tense:perfect, root:نعم."
+        },
+        {
+          "sure": 2,
+          "vers": 4,
+          "wort": 4,
+          "zeigt": "أُنزِلَ (\"kiliteremshwa\") - Umbo la IV la kutendwa: hamza mwanzoni inabaki hata katika umbo la kutendwa.",
+          "warum": "Kipande: verbForm:4 (lebo ghafi (IV)), tense:perfect, voice:passive, root:نزل."
+        }
+      ],
+      "lernen": [
+        "Jifunze Umbo la IV kupitia jozi zinazojulikana kama نَزَلَ/أَنْزَلَ (kushuka/kuteremsha) - kanuni ya kusababisha \"X inasababisha Y itokee\" hukumbukwa vizuri zaidi kupitia maana kuliko umbo peke yake.",
+        "Zingatia kuwa hamza ya mwanzo hubaki pia katika Al-Mudhari' (يُنْزِلُ), tofauti na baadhi ya maumbo mengine."
+      ],
+      "tabellen": [],
+      "siehe": [
+        "form1",
+        "mahmuz",
+        "takhfif"
+      ]
+    },
+    "form5": {
+      "titel": "Umbo la V - Mzizi wa Kujitendea kwa II",
+      "ar": "بَاب تَفَعَّلَ",
+      "umschrift": "bāb tafaʿʿala",
+      "erklaerung": [
+        "Umbo la V huweka kiambishi awali تَ mbele ya muundo wa Umbo la II na kufanya tendo lililoimarishwa kuwa la kujitendea au la taratibu: kutoka عَلَّمَ (\"kufundisha\", II) kunatokea تَعَلَّمَ (\"kujifunza\", \"kujifanya afundishwe\", V). Mara nyingi Umbo la V pia huonyesha kwamba jambo hutokea kwa juhudi au taratibu.",
+        "Kiashiria cha kisarufi: vitenzi vya Umbo la V kwa kawaida ni Laazim (havihitaji yambwa ya moja kwa moja) na haviundi umbo lake la kutendwa."
+      ],
+      "erkennung": [
+        "Kiashiria ni kiambishi awali تَ mbele ya muundo uliorudiwa (تَفَعَّلَ badala ya فَعَّلَ).",
+        "Maana mara nyingi ni ya kujitendea kwa Umbo la II au \"kujitahidi kufanya jambo, kuliacha litokee taratibu\".",
+        "Katika data hupewa thamani ya mabano (V)."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 37,
+          "wort": 1,
+          "zeigt": "فَتَلَقَّىٰٓ (\"kisha akapokea/akakubali\") - kiambishi awali تَ mbele ya muundo uliorudiwa, dokezo la kujitendea (\"kujipokelea\").",
+          "warum": "Kipande: verbForm:5 (lebo ghafi (V)), tense:perfect, root:لقي."
+        },
+        {
+          "sure": 2,
+          "vers": 64,
+          "wort": 2,
+          "zeigt": "تَوَلَّيْتُم (\"mmegeuka\") - kiambishi awali تَ, maana ya kujitendea \"kujigeuza mwenyewe\".",
+          "warum": "Kipande: verbForm:5 (lebo ghafi (V)), tense:perfect, root:ولي."
+        }
+      ],
+      "lernen": [
+        "Linganisha Umbo la II na Umbo la V moja kwa moja kwenye jozi ya maneno (عَلَّمَ/تَعَلَّمَ, kufundisha/kujifunza) - kiambishi awali تَ kama \"ishara ya kujitendea\" hukumbukwa vizuri kupitia jozi kama hizo.",
+        "Kumbuka: vitenzi vya Umbo la V kwa kawaida havihitaji yambwa ya moja kwa moja wala umbo lake la kutendwa."
+      ],
+      "tabellen": [],
+      "siehe": [
+        "form2"
+      ]
+    },
+    "form6": {
+      "titel": "Umbo la VI - Mzizi wa Kushirikiana kwa Pande Zote",
+      "ar": "بَاب تَفَاعَلَ",
+      "umschrift": "bāb tafāʿala",
+      "erklaerung": [
+        "Umbo la VI huweka kiambishi awali تَ mbele ya muundo wa Umbo la III na kwa kawaida huonyesha tendo la kushirikiana ndani ya kundi - pande zote (au wote) hufanyiana jambo lile lile: تَسَاءَلَ, \"kuulizana wao kwa wao\". Laweza pia kumaanisha kujifanya tu (\"kujifanya kama\").",
+        "Kama ilivyo Umbo la V, msingi upo kwenye kiambishi awali تَ cha kujitendea/kushirikiana - hapa hata hivyo kwenye muundo wa \"kushirikiana\" wa Umbo la III badala ya muundo uliorudiwa wa Umbo la II."
+      ],
+      "erkennung": [
+        "Kiashiria ni kiambishi awali تَ mbele ya muundo wa alifu (تَفَاعَلَ badala ya فَاعَلَ).",
+        "Maana mara nyingi ni ya kushirikiana (\"kufanyiana jambo\") au ya kujifanya.",
+        "Katika data hupewa thamani ya mabano (VI)."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 70,
+          "wort": 11,
+          "zeigt": "تَشَٰبَهَ (\"imefanana/imeonekana kwetu sawa\") - ufananifu wa kushirikiana kati ya ng'ombe katika aya.",
+          "warum": "Kipande: verbForm:6 (lebo ghafi (VI)), tense:perfect, root:شبه."
+        },
+        {
+          "sure": 2,
+          "vers": 118,
+          "wort": 18,
+          "zeigt": "تَشَٰبَهَتْ (\"zinafanana\") - umbo lile lile, nafsi ya tatu umoja mke (kuhusiana na \"nyoyo\").",
+          "warum": "Kipande: verbForm:6 (lebo ghafi (VI)), tense:perfect, root:شبه."
+        }
+      ],
+      "lernen": [
+        "Ushikilie Umbo la VI kupitia neno تَسَاءَلَ (\"kuulizana wao kwa wao\") kama mfano wa nanga - kutoka humo wazo la msingi la \"kushirikiana\" hutolewa vizuri.",
+        "Linganisha Umbo la III (فَاعَلَ, \"kumfanyia mtu jambo\") na Umbo la VI (تَفَاعَلَ, \"kufanyiana wao kwa wao\") kama jozi."
+      ],
+      "tabellen": [],
+      "siehe": [
+        "form3"
+      ]
+    },
+    "form7": {
+      "titel": "Umbo la VII - Mzizi Unaofanana na Kutendwa",
+      "ar": "بَاب انْفَعَلَ",
+      "umschrift": "bāb infaʿala",
+      "erklaerung": [
+        "Umbo la VII huweka kiambishi awali اِنْ mbele ya umbo la msingi na kwa kawaida huonyesha mabadiliko ya hali yanayotokea yenyewe - kimaana mara nyingi hufanana na kutendwa, bila kuwa kutendwa halisi kisarufi: اِنْكَسَرَ, \"kuvunjika (chenyewe)\". Kiashiria muhimu: vitenzi vya umbo hili kwa kawaida havihitaji yambwa (havipitiliki) na haviundi umbo lake halisi la kutendwa, ijapokuwa mara nyingi hutafsiriwa kwa Kiswahili kwa hali ya kutendwa.",
+        "Umbo hili ni nadra zaidi katika Qur'ani kuliko Maumbo II-V, lakini hutokea kwa uhakika katika maelezo ya matukio ya asili na mabadiliko ya ghafla ya hali."
+      ],
+      "erkennung": [
+        "Kiashiria ni kiambishi awali اِنْ (اِنْفَعَلَ badala ya فَعَلَ).",
+        "Maana mara nyingi ni \"kutokea chenyewe, kubadilika kuwa kitu\" - kimaana hufanana na kutendwa, bila kuwa na umbo lake halisi la kisarufi la kutendwa.",
+        "Katika data hupewa thamani ya mabano (VII)."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 60,
+          "wort": 9,
+          "zeigt": "فَٱنفَجَرَتْ (\"basi likabubujika/likachimbuka\") - kiambishi awali اِن, maji yanabubujika yenyewe kutoka jiweni.",
+          "warum": "Kipande: verbForm:7 (lebo ghafi (VII)), tense:perfect, voice:null (hakuna umbo lake la kutendwa), root:فجر."
+        },
+        {
+          "sure": 3,
+          "vers": 144,
+          "wort": 14,
+          "zeigt": "ٱنقَلَبْتُمْ (\"mtageuka\") - kiambishi awali اِن, mabadiliko ya hali \"kugeuka, kurudi nyuma\".",
+          "warum": "Kipande: verbForm:7 (lebo ghafi (VII)), tense:perfect, root:قلب."
+        }
+      ],
+      "lernen": [
+        "Kumbuka mfano wa nanga اِنْكَسَرَ (\"kuvunjika\") na kwa makusudi usiutafsiri kwa hali halisi ya kutendwa, bali kama \"kutokea chenyewe\".",
+        "Kagua kwenye vitenzi vya Umbo la VII kwamba hakuna muundo wa irabu wa kutendwa - umbo hilo husikika kama kutendwa kwa Kiswahili, lakini kisarufi si hivyo."
+      ],
+      "tabellen": [],
+      "siehe": [
+        "majhul"
+      ]
+    },
+    "form8": {
+      "titel": "Umbo la VIII - Mzizi wa Kujitendea/Kushirikiana",
+      "ar": "بَاب افْتَعَلَ",
+      "umschrift": "bāb iftaʿala",
+      "erklaerung": [
+        "Umbo la VIII huingiza تَ baada ya herufi ya kwanza ya mzizi (اِفْتَعَلَ) na kwa kawaida huonyesha tendo la kujitendea, la kushirikiana, au linalofanywa kwa faida ya mtu mwenyewe: اِجْتَمَعَ, \"kukusanyika\" (kundi linajikusanya lenyewe). Tofauti na Umbo la V/VI, تَ ya kujitendea hapa ipo katikati ya neno badala ya mwanzoni.",
+        "Kwa kuwa تَ iliyoingizwa ipo karibu moja kwa moja na herufi ya kwanza ya mzizi, huungana na baadhi ya herufi za mwanzo (mfano د/ذ/ز/س/ص/ض/ط/ظ/ث) na kuwa sauti moja iliyorudiwa (Idghamu) - inayoonekana kama shadda mara moja baada ya herufi ya kwanza ya mzizi."
+      ],
+      "erkennung": [
+        "Kiashiria ni تَ iliyoingizwa baada ya herufi ya kwanza ya mzizi (اِفْتَعَلَ badala ya فَعَلَ), mara nyingi hutambulika kwa hamza ya mwanzo اِ.",
+        "Maana mara nyingi ni ya kujitendea au \"kwa faida yake mwenyewe\" (kufanya jambo kwa ajili yake mwenyewe).",
+        "Katika data hupewa thamani ya mabano (VIII)."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 16,
+          "wort": 3,
+          "zeigt": "ٱشْتَرَوُا۟ (\"wamenunua/wamebadilishana\") - تَ iliyoingizwa baada ya ش, dokezo la kujitendea (\"kubadilishana kwa ajili yao wenyewe\").",
+          "warum": "Kipande: verbForm:8 (lebo ghafi (VIII)), tense:perfect, root:شري."
+        },
+        {
+          "sure": 2,
+          "vers": 29,
+          "wort": 10,
+          "zeigt": "ٱسْتَوَىٰٓ (\"Alielekea/Alijiinua\") - تَ iliyoingizwa baada ya س.",
+          "warum": "Kipande: verbForm:8 (lebo ghafi (VIII)), tense:perfect, root:سوي."
+        }
+      ],
+      "lernen": [
+        "Ushikilie Umbo la VIII kupitia اِجْتَمَعَ (\"kukusanyika\") kama neno la nanga - wazo la msingi la kujitendea hulingana vizuri na vitenzi vingine vya Umbo la VIII.",
+        "Kwa vitenzi vyenye herufi ya mwanzo kutoka kundi د/ذ/ز/س/ص/ض/ط/ظ/ث, angalia shadda moja kwa moja mwanzoni mwa neno - hiyo ni تَ iliyoingizwa iliyounganika na herufi ya mzizi."
+      ],
+      "tabellen": [],
+      "siehe": [
+        "form1",
+        "idgham"
+      ]
+    },
+    "form9": {
+      "titel": "Umbo la IX - Mzizi wa Rangi na Kasoro",
+      "ar": "بَاب افْعَلَّ",
+      "umschrift": "bāb ifʿalla",
+      "erklaerung": [
+        "Umbo la IX hurudia herufi ya mwisho ya mzizi (اِفْعَلَّ) na umewekewa mpaka finyu sana wa maana: kupata rangi au kasoro za kimwili, kwa kawaida kama mabadiliko ya hali ya muda: اِسْوَدَّ, \"kuwa mweusi\", اِبْيَضَّ, \"kuwa mweupe/mwepesi\". Kwa sababu ya kurudiwa huku kwa herufi ya mwisho, Umbo la IX katika mnyambuliko wake hufuata kanuni zile zile za kitenzi cha Mudhaaf.",
+        "Umbo hili ni nadra katika Qur'ani, lakini limeandikwa katika sehemu za maana kubwa, kwa mfano katika maelezo ya nyuso zitakazokuwa nyeusi au nyeupe siku ya Kiyama."
+      ],
+      "erkennung": [
+        "Kiashiria ni kurudiwa kwa herufi ya mwisho ya mzizi mwishoni mwa neno (اِفْعَلَّ badala ya فَعَلَ).",
+        "Maana karibu yote imefungwa kwenye rangi na kasoro za kimwili.",
+        "Katika data hupewa thamani ya mabano (IX); nadra sana kutokea."
+      ],
+      "belege": [
+        {
+          "sure": 3,
+          "vers": 106,
+          "wort": 8,
+          "zeigt": "ٱسْوَدَّتْ (\"zinakuwa nyeusi\") - kurudiwa kwa herufi ya mwisho د, mabadiliko ya rangi ya uso.",
+          "warum": "Kipande: verbForm:9 (lebo ghafi (IX)), tense:perfect, root:سود."
+        },
+        {
+          "sure": 3,
+          "vers": 107,
+          "wort": 3,
+          "zeigt": "ٱبْيَضَّتْ (\"zinakuwa nyeupe/nyangavu\") - kurudiwa kwa herufi ya mwisho ض, mfano wa kinyume katika sehemu ile ile ya aya.",
+          "warum": "Kipande: verbForm:9 (lebo ghafi (IX)), tense:perfect, root:بيض."
+        }
+      ],
+      "lernen": [
+        "Jifunze Umbo la IX si kwa muundo wa kisarufi, bali kwa kigezo cha kimaana \"rangi na kasoro\" - eneo hilo finyu la maana ndicho kiashiria cha kuaminika zaidi.",
+        "Linganisha mifano miwili ya Qur'ani ٱسْوَدَّتْ/ٱبْيَضَّتْ moja kwa moja pamoja - inatokea katika Qur'ani mfululizo moja kwa moja kama jozi linganishi."
+      ],
+      "tabellen": [],
+      "siehe": [
+        "mudaaf"
+      ]
+    },
+    "form10": {
+      "titel": "Umbo la X - Mzizi wa Kuomba",
+      "ar": "بَاب اسْتَفْعَلَ",
+      "umschrift": "bāb istafʿala",
+      "erklaerung": [
+        "Umbo la X huweka kiambishi awali اِسْتَ mbele ya umbo la msingi (اِسْتَفْعَلَ) na kwa kawaida huonyesha kuomba jambo, kutaka kupatiwa jambo, au kutafuta: اِسْتَغْفَرَ, \"kuomba msamaha\" (kutoka غَفَرَ, \"kusamehe\"). Laweza pia kumaanisha kuchukulia jambo kuwa na sifa fulani au kudai jambo kwa ajili yake mwenyewe.",
+        "Katika Qur'ani umbo hili lipo sana, ikiwa ni pamoja na katika Al-Fatiha yenyewe (نَسْتَعِينُ, \"tunaomba msaada\") - hapo moja kwa moja kando ya kitenzi cha Umbo la I (نَعْبُدُ), jambo linalofanya tofauti ya maana kati ya umbo la msingi na Umbo la X ionekane papo hapo."
+      ],
+      "erkennung": [
+        "Kiashiria ni kiambishi awali اِسْتَ mwanzoni mwa neno (اِسْتَفْعَلَ badala ya فَعَلَ).",
+        "Maana mara nyingi ni \"kuomba jambo, kutaka kupatiwa/kutafuta jambo\" au \"kuchukulia kitu kuwa ...\".",
+        "Katika data hupewa thamani ya mabano (X)."
+      ],
+      "belege": [
+        {
+          "sure": 1,
+          "vers": 5,
+          "wort": 4,
+          "zeigt": "نَسْتَعِينُ (\"tunaomba msaada\") - kiambishi awali اِسْتَ, maana \"kuomba msaada/kutegemewa\".",
+          "warum": "Kipande: verbForm:10 (lebo ghafi (X)), tense:imperfect, root:عون."
+        },
+        {
+          "sure": 2,
+          "vers": 34,
+          "wort": 10,
+          "zeigt": "وَٱسْتَكْبَرَ (\"na alijivuna\") - kiambishi awali اِسْتَ, maana \"kujiona mkubwa/tukufu\" (Iblisi).",
+          "warum": "Kipande: verbForm:10 (lebo ghafi (X)), tense:perfect, root:كبر."
+        }
+      ],
+      "lernen": [
+        "Tumia jozi ya Al-Fatiha نَعْبُدُ/نَسْتَعِينُ kama mfano wa nanga: Umbo la I = kufanya tendo moja kwa moja, Umbo la X = kuomba jambo/kulitaka.",
+        "Kariri اِسْتَغْفَرَ (\"kuomba msamaha\") kama neno la pili la nanga - kutoka غَفَرَ (kusamehe) kupitia kiambishi awali اِسْتَ hadi kuomba msamaha."
+      ],
+      "tabellen": [],
+      "siehe": [
+        "form1",
+        "form4"
+      ]
+    },
+    "ismFail": {
+      "titel": "Kivumishi cha Kutenda (Ism al-Fa'il)",
+      "ar": "اِسْم الفَاعِل",
+      "umschrift": "ism al-fāʿil",
+      "erklaerung": [
+        "Ism al-Fa'il huelezea mtendaji mwenyewe - \"anayefanya\", \"mmoja anayefanya [tendo]\". Kutoka عَلَّمَ (\"kufundisha\") hutokana مُعَلِّم, \"mwalimu\" (mmoja anayefundisha/aliyefundisha). Kutoka umbo la msingi نَصَرَ hutokana نَاصِر, \"msaidizi\". Kila moja ya maumbo kumi ya kitenzi lina muundo wake wa Ism al-Fa'il, lakini unaotabirika.",
+        "Kisarufi, Ism al-Fa'il hufanya kazi kama kivumishi/jina: kinabeba i'rabu, jinsia na idadi kama jina lingine lolote, lakini - tofauti na kivumishi safi - chenyewe kinaweza kuongoza yambwa, ikiwa kitenzi kinachohusika kinahitaji yambwa."
+      ],
+      "erkennung": [
+        "Katika umbo la msingi (Umbo la I) hutambulika kwa muundo فَاعِل (alifu ndefu baada ya herufi ya kwanza ya mzizi, kasra chini ya ya pili): نَاصِر، عَالِم، قَائِل.",
+        "Katika maumbo yaliyopanuliwa (II-X) mara nyingi hutambulika kwa kiambishi awali مُ- chenye kasra kwenye herufi ya kabla ya mwisho: مُعَلِّم، مُؤْمِن، مُسْتَقِيم.",
+        "Huelezea kwa msingi mbebaji/mtendaji wa tendo, si tendo lenyewe (hilo lingekuwa Masdari)."
+      ],
+      "belege": [
+        {
+          "sure": 1,
+          "vers": 4,
+          "wort": 1,
+          "zeigt": "مَٰلِكِ (\"Mmiliki/Mtawala\") - Kivumishi cha Kutenda kutoka مَلَكَ, \"kumiliki/kutawala\": mwenye kutawala.",
+          "warum": "Kipande: pos:N, derivation:activeParticiple, voice:active, root:ملك."
+        },
+        {
+          "sure": 2,
+          "vers": 5,
+          "wort": 8,
+          "zeigt": "ٱلْمُفْلِحُونَ (\"waliofaulu\") - Kivumishi cha Kutenda cha Umbo IV أَفْلَحَ, kinachotambulika kwa kiambishi awali مُ-.",
+          "warum": "Kipande: pos:N, derivation:activeParticiple, verbForm:4, root:فلح."
+        }
+      ],
+      "lernen": [
+        "Jifunze kwanza muundo wa msingi فَاعِل kwa mifano kadhaa (نَاصِر، عَالِم، قَائِل), kabla ya kwenda kwenye miundo ya maumbo yaliyopanuliwa.",
+        "Kwa kila kitenzi ulichojifunza, unda kwa makusudi Kivumishi chake cha Kutenda - hilo hufundisha muundo haraka kuliko kukariri vivumishi peke yake.",
+        "Zingatia tofauti ya maana kati ya مَالِك (Ism al-Fa'il, \"mmiliki/mtawala\") na kivumishi safi tu - kivumishi hiki hubaki kimeunganika na tendo la kitenzi."
+      ],
+      "tabellen": [],
+      "siehe": [
+        "ismMaful",
+        "masdar",
+        "fiil"
+      ]
+    },
+    "ismMaful": {
+      "titel": "Kivumishi cha Kutendwa (Ism al-Maf'ul)",
+      "ar": "اِسْم المَفْعُول",
+      "umschrift": "ism al-mafʿūl",
+      "erklaerung": [
+        "Ism al-Maf'ul huelezea yule au kile ambacho tendo linafanyika juu yake - \"aliyeathirika\", \"kilichofanyiwa\". Kutoka عَلَّمَ (\"kufundisha\") hutokana مُعَلَّم, \"mwanafunzi\" (mmoja aliyefundishwa). Kutoka umbo la msingi نَصَرَ hutokana مَنْصُور, \"aliyesaidiwa\".",
+        "Katika umbo la msingi, Kivumishi cha Kutendwa hufuata muundo مَفْعُول; katika maumbo yaliyopanuliwa hufanana na Ism al-Fa'il, lakini hubeba fatha badala ya kasra kwenye herufi husika - tofauti pekee, lakini ya maamuzi."
+      ],
+      "erkennung": [
+        "Katika umbo la msingi (Umbo la I) hutambulika kwa muundo مَفْعُول: مَنْصُور، مَعْلُوم، مَغْضُوب.",
+        "Katika maumbo yaliyopanuliwa hutambulika kwa kiambishi awali مُ- kile kile kama Ism al-Fa'il, lakini kwa fatha badala ya kasra kwenye herufi ya kabla ya mwisho: مُطَهَّرَة (badala ya مُطَهِّرَة).",
+        "Huelezea yule ambaye tendo linafanyika juu yake, si mtendaji."
+      ],
+      "belege": [
+        {
+          "sure": 1,
+          "vers": 7,
+          "wort": 6,
+          "zeigt": "ٱلْمَغْضُوبِ (\"[juu ya] wanaokasirikiwa\") - Kivumishi cha Kutendwa katika muundo مَفْعُول kutoka غَضِبَ, \"kukasirika\".",
+          "warum": "Kipande: pos:N, derivation:passiveParticiple, voice:passive, root:غضب."
+        },
+        {
+          "sure": 2,
+          "vers": 25,
+          "wort": 31,
+          "zeigt": "مُّطَهَّرَةٌ (\"[wake] waliotakaswa\") - Kivumishi cha Kutendwa cha Umbo II, kinachotambulika kwa fatha badala ya kasra kabla ya herufi ya mwisho.",
+          "warum": "Kipande: pos:ADJ, derivation:passiveParticiple, verbForm:2, root:طهر."
+        }
+      ],
+      "lernen": [
+        "Linganisha Ism al-Fa'il na Ism al-Maf'ul katika umbo la msingi moja kwa moja: نَاصِر (msaidizi) dhidi ya مَنْصُور (anayesaidiwa) - shina lile lile, dhima kinyume.",
+        "Katika maumbo yaliyopanuliwa: sema kwa sauti jozi ya maneno (مُعَلِّم/مُعَلَّم) na uzingatie tofauti pekee - kasra au fatha kabla ya herufi ya mwisho."
+      ],
+      "tabellen": [],
+      "siehe": [
+        "ismFail",
+        "majhul"
+      ]
+    },
+    "masdar": {
+      "titel": "Nomino ya Kitendo (Masdari)",
+      "ar": "المَصْدَر",
+      "umschrift": "al-maṣdar",
+      "erklaerung": [
+        "Masdari ni wazo/tendo safi la kitenzi likiwa kama jina - \"kufundisha\", \"kusema\", \"kuteremsha\" - bila kuhusiana na wakati wala nafsi. Kila kitenzi cha Kiarabu kina Masdari wake (mara nyingi usiotabirika katika umbo la msingi, lakini unaotabirika kwa uthabiti katika maumbo yaliyopanuliwa II-X).",
+        "Masdari hutekeleza kazi ya jina la kawaida katika sentensi: kinaweza kuwa kiima, yambwa, au sehemu ya Idhafa. Muhimu hasa ni matumizi yake kama Masdari Maf'ul Mutlaki, ambapo husisitiza tendo la kitenzi kikuu kwa kutokana na mzizi ule ule (mfano قَتَلَهُ قَتْلًا, \"alimuua kweli kweli/kwa uhakika\")."
+      ],
+      "erkennung": [
+        "Katika umbo la msingi hakuna muundo mmoja thabiti - Masdari lazima ujifunzwe kwa kila kitenzi peke yake (قَوْل، عِلْم، نَصْر).",
+        "Katika maumbo yaliyopanuliwa muundo mara nyingi unatabirika, mfano تَفْعِيل kwa Umbo la II (تَعْلِيم) au إِفْعَال kwa Umbo la IV (إِنْزَال، إِحْسَان).",
+        "Kisarufi hufanya kazi kama jina, lakini kimaana hubeba tendo safi bila uhusiano wa wakati."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 59,
+          "wort": 4,
+          "zeigt": "قَوْلًا (\"neno/kauli\") - Masdari ya umbo la msingi kutoka قَالَ, \"kusema\".",
+          "warum": "Kipande: pos:N, derivation:verbalNoun, root:قول."
+        },
+        {
+          "sure": 2,
+          "vers": 83,
+          "wort": 11,
+          "zeigt": "إِحْسَانًا (\"wema, kutendea vizuri\") - Masdari ya Umbo IV (muundo إِفْعَال) kutoka أَحْسَنَ.",
+          "warum": "Kipande: pos:N, derivation:verbalNoun, verbForm:4, root:حسن."
+        }
+      ],
+      "lernen": [
+        "Katika umbo la msingi, jifunze Masdari moja kwa moja pamoja na kitenzi kama jozi thabiti (قَالَ - قَوْل) - hapa hakuna kanuni, kukariri tu.",
+        "Katika maumbo yaliyopanuliwa, inatosha kujifunza muundo mmoja wa Masdari kwa kila umbo (تَفْعِيل kwa II, إِفْعَال kwa IV n.k.) kisha kuuhamisha kwa mzizi wowote."
+      ],
+      "tabellen": [],
+      "siehe": [
+        "ismFail",
+        "ismMaful"
+      ]
+    },
+    "ismTafdil": {
+      "titel": "Kiwango cha Kulinganisha na Kuzidisha (Ism at-Tafdhili)",
+      "ar": "اِسْم التَّفْضِيل",
+      "umschrift": "ism at-tafḍīl",
+      "erklaerung": [
+        "Ism at-Tafdhili hulinganisha au huzidisha sifa kati ya vitu viwili (au zaidi) - \"kubwa zaidi\", \"kubwa kuliko vyote\". Huundwa mara nyingi katika muundo أَفْعَل: kutoka كَبِير (\"kubwa\") hutokana أَكْبَر (\"kubwa zaidi/kubwa kuliko vyote\"), kutoka عَلِيم/عَالِم (\"mjuzi\") hutokana أَعْلَم (\"mjuzi zaidi, mjuzi kuliko wote\").",
+        "Ikifuatiwa na مِن (\"kuliko\"), ulinganisho unakuwa wa moja kwa moja (\"kubwa kuliko ...\"). Bila مِن, lakini ikiwa na kiambishi اَلْ au ikiwa sehemu ya kwanza ya Idhafa, huwa kiwango cha juu kabisa (\"kubwa kuliko vyote\")."
+      ],
+      "erkennung": [
+        "Muundo wa msingi أَفْعَل: hamza mwanzoni mwa neno, fatha-sukuni-fatha kwenye herufi tatu za mzizi (أَكْبَر، أَعْلَم، أَحْسَن).",
+        "Ikiwa na مِن baada yake: ulinganisho wa moja kwa moja (\"kubwa kuliko\").",
+        "Ikiwa na kiambishi اَلْ au ndani ya Idhafa, bila مِن: kiwango cha juu kabisa (\"kubwa/bora kuliko vyote\")."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 140,
+          "wort": 15,
+          "zeigt": "وَٱللَّهُ أَعْلَمُ (\"na Allah anajua zaidi\") - muundo أَفْعَل kutoka عَلِمَ, hapa bila مِن kama kiwango cha juu kabisa.",
+          "warum": "Neno katika data limewekwa kama pos:N chenye Lemma أَعْلَم, root:علم."
+        },
+        {
+          "sure": 2,
+          "vers": 217,
+          "wort": 22,
+          "zeigt": "أَكْبَرُ (\"kubwa zaidi/zito zaidi\") - muundo أَفْعَل kutoka كَبُرَ, hapa kwa kulinganisha (\"... ni zito zaidi kuliko kupigana humo\").",
+          "warum": "Neno katika data limewekwa kama pos:N chenye Lemma أَكْبَر, root:كبر."
+        }
+      ],
+      "lernen": [
+        "Jifunze muundo أَفْعَل kwanza kwenye mifano ya kawaida zaidi ya Qur'ani (أَكْبَر، أَعْلَم، أَقْرَب، أَحْسَن) kwa kukariri, kabla ya kuunda maumbo yako mwenyewe.",
+        "Fanya mazoezi ya tofauti \"na مِن = ulinganisho\" dhidi ya \"na اَلْ/Idhafa bila مِن = kiwango cha juu kabisa\" kwenye maneno yale yale katika miundo yote miwili."
+      ],
+      "tabellen": [],
+      "siehe": [
+        "ismFail"
+      ]
+    },
+    "ismZamanMakan": {
+      "titel": "Jina la Mahali na Wakati",
+      "ar": "اِسْم الزَّمَان وَالمَكَان",
+      "umschrift": "ism az-zamān wa-l-makān",
+      "erklaerung": [
+        "Jina la Mahali/Wakati (Dharfu/Ism az-Zaman wa-l-Makan) huelezea mahali au wakati ambapo tendo hufanyika - \"mahali pa kusujudu\", \"wakati wa mawio ya jua\". Huundwa kutoka umbo la msingi mara nyingi katika muundo مَفْعِل au مَفْعَل: kutoka سَجَدَ (\"kusujudu\") hutokana مَسْجِد, \"mahali pa kusujudu\" (msikiti); kutoka شَرَقَ (\"kuchomoza [jua]\") hutokana مَشْرِق, \"mahali/wakati wa mawio ya jua, mashariki\".",
+        "Tofauti na Kivumishi cha Kutendwa (Ism al-Maf'ul), ambaye pia mara nyingi huanza na مَـ, Jina la Mahali/Wakati halibebi maana ya dhima ya tendo (\"aliyeathirika\"), bali dokezo safi la mahali/wakati - makundi mawili haya hutofautishwa kwa uhakika tu kupitia maana ndani ya sentensi."
+      ],
+      "erkennung": [
+        "Mara nyingi katika muundo مَفْعِل au مَفْعَل: مَسْجِد، مَشْرِق، مَغْرِب، مَوْعِد.",
+        "Huelezea mahali au wakati, si mtu/kitu kinachofanyiwa jambo.",
+        "Kwa umbo la nje unafanana na Ism al-Maf'ul - kutofautisha hufanyika kupitia maana ndani ya muktadha."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 114,
+          "wort": 5,
+          "zeigt": "مَسَٰجِدَ (\"mahali pa kusujudu/misikiti\") - Jina la Mahali kutoka سَجَدَ katika muundo مَفْعِل, wingi.",
+          "warum": "Neno katika data limewekwa kama pos:N chenye Lemma مَسْجِد, root:سجد, derivation:null (si kivumishi)."
+        },
+        {
+          "sure": 2,
+          "vers": 115,
+          "wort": 2,
+          "zeigt": "ٱلْمَشْرِقُ (\"mashariki/mahali pa mawio ya jua\") - Jina la Mahali kutoka شَرَقَ katika muundo مَفْعِل.",
+          "warum": "Neno katika data limewekwa kama pos:N chenye Lemma مَشْرِق, root:شرق, derivation:null (si kivumishi)."
+        }
+      ],
+      "lernen": [
+        "Jifunze مَسْجِد kama neno la nanga la muundo mzima: \"mahali ambapo [tendo la kitenzi] hufanyika\".",
+        "Linganisha مَشْرِق/مَغْرِب (mashariki/magharibi, mahali pa mawio/machweo ya jua) kama jozi ya maneno - yote katika muundo mmoja, mwelekeo kinyume wa anga."
+      ],
+      "tabellen": [],
+      "siehe": [
+        "ismMaful"
+      ]
+    },
+    "sahih": {
+      "titel": "Kitenzi Kizima (Sahihi)",
+      "ar": "الفِعْل الصَّحِيح",
+      "umschrift": "al-fiʿl aṣ-ṣaḥīḥ",
+      "erklaerung": [
+        "Sahihi (\"kizima, kisicho na kasoro\") huelezea vitenzi ambavyo herufi zake tatu za mzizi hazina upekee wowote: hakuna hamza, hakuna herufi yoyote kati ya herufi tatu dhaifu Alifu/Waw/Yaa, hakuna herufi iliyorudiwa. نَصَرَ, فَتَحَ na سَمِعَ ni vitenzi vya kawaida vya Sahihi. Ndivyo kigezo \"rahisi\" ambacho mnyambuliko hujifunzwa kwanza, kabla ya kuelekea kwenye visa maalum.",
+        "Kanuni zote za Al-Maadhi, Al-Mudhari', Amri, Nahyi na maumbo kumi ya kitenzi zimeonyeshwa hadi sasa kwa kitenzi cha mfano نَصَرَ, kwa sababu ni hasa kitenzi kimoja cha Sahihi: shina na viishio vinafanya kazi kwa mpangilio kamili, bila herufi yoyote kuondolewa, kubadilika, au kuungana."
+      ],
+      "erkennung": [
+        "Hakuna hamza kwenye mzizi.",
+        "Hakuna herufi yoyote kati ya herufi tatu za mzizi iliyo Alifu, Waw au Yaa.",
+        "Hakuna herufi ya pili/tatu ya mzizi iliyorudiwa (kufanana)."
+      ],
+      "belege": [
+        {
+          "sure": 3,
+          "vers": 123,
+          "wort": 2,
+          "zeigt": "نَصَرَكُمُ (\"Alikusaidieni\") - mzizi ن-ص-ر: hakuna hamza, hakuna herufi dhaifu, hakuna kurudiwa.",
+          "warum": "root:نصر - herufi zote tatu hazimo katika kundi lolote maalum."
+        },
+        {
+          "sure": 7,
+          "vers": 157,
+          "wort": 35,
+          "zeigt": "وَنَصَرُوهُ (\"na wakamsaidia\") - mzizi ule ule wa Sahihi ن-ص-ر.",
+          "warum": "root:نصر - inathibitisha uainishaji ule ule mahali pa pili."
+        }
+      ],
+      "lernen": [
+        "Jifunze mnyambuliko kwanza kikamilifu kwenye kitenzi cha Sahihi (نَصَرَ) - ndipo unapoona muundo huu ukiwa umekaa vizuri, ndipo inafaa kushughulikia visa maalum, kwa sababu hapo ndipo unaweza kuona kwa uwazi ni nini kinachotofautiana.",
+        "Kariri maswali matatu ya ukaguzi ambayo kwayo waweza kuainisha kitenzi kipya mara moja: Hamza? Herufi dhaifu (و/ي/ا)? Kurudiwa? Hapana kwa yote matatu = Sahihi."
+      ],
+      "tabellen": [
+        "verb-madi-nasara-aktiv-matrix"
+      ],
+      "siehe": [
+        "mahmuz",
+        "mithal",
+        "ajwaf",
+        "naqis",
+        "mudaaf"
+      ]
+    },
+    "mahmuz": {
+      "titel": "Kitenzi cha Hamza (Mahmuz)",
+      "ar": "المَهْمُوز",
+      "umschrift": "al-mahmūz",
+      "erklaerung": [
+        "Vitenzi vya Mahmuz hubeba hamza kama mojawapo ya herufi zake tatu za mzizi. Kulingana na nafasi, hutofautishwa Mahmuz al-Fa' (hamza kama konsonanti ya kwanza, mfano أَكَلَ, \"kula\"), Mahmuz al-'Ain (hamza kama konsonanti ya pili, mfano سَأَلَ, \"kuuliza\") na Mahmuz al-Laam (hamza kama konsonanti ya tatu, mfano قَرَأَ, \"kusoma/kusomea\").",
+        "Katika vitenzi hivi, mabadiliko mawili ya matamshi yaweza kutokea: Takhfifu (hamza hubadilika kulingana na irabu inayotangulia kuwa Alifu, Waw au Yaa) na Hadhfu (hamza huondolewa kabisa). Hadhfu katika Kiarabu huhusu hasa vitenzi vinne katika amri, ambapo hamza huondolewa kabisa: أَكَلَ->كُلْ, أَخَذَ->خُذْ, أَمَرَ->مُرْ, سَأَلَ->سَلْ."
+      ],
+      "erkennung": [
+        "Hasa moja ya herufi tatu za mzizi ni hamza (ء/أ/إ/ؤ/ئ).",
+        "Nafasi ya hamza (herufi ya 1, 2, au 3) huamua aina ndogo (al-Fa', al-'Ain, al-Laam).",
+        "Katika amri ya vitenzi vinne أَكَلَ/أَخَذَ/أَمَرَ/سَأَلَ, hamza huondolewa kabisa - kiashiria cha kuaminika cha kikundi hiki maalum."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 57,
+          "wort": 8,
+          "zeigt": "كُلُوا۟ (\"Kuleni!\") - umbo la amri la أَكَلَ (Mahmuz al-Fa'): hamza ya mwanzo imeondolewa kabisa katika amri.",
+          "warum": "root:اكل, Kipande: pos:V, tense:imperative - Lemma أَكَلَ inabeba hamza, umbo la amri lenyewe halibebi tena."
+        },
+        {
+          "sure": 17,
+          "vers": 14,
+          "wort": 1,
+          "zeigt": "ٱقْرَأْ (\"Soma!\") - umbo la amri la قَرَأَ (Mahmuz al-Laam): hapa hamza inabaki kama konsonanti ya tatu.",
+          "warum": "root:قرا, Kipande: pos:V, tense:imperative - Lemma قَرَأَ inabeba hamza mwishoni mwa neno, hapa katika amri imebaki."
+        }
+      ],
+      "lernen": [
+        "Jifunze aina tatu ndogo kupitia maneno yao ya mfano: أَكَلَ (al-Fa'), سَأَلَ (al-'Ain), قَرَأَ (al-Laam) - nafasi ya hamza katika neno hufunua mara moja aina ndogo.",
+        "Kariri amri nne za Hadhfu كُلْ/خُذْ/مُرْ/سَلْ kama orodha funge isiyoweza kutolewa.",
+        "Tumia majedwali ya Bab (قَرَأَ na أَمِنَ) kwa mazoezi ya sauti: funika safu moja na ukamilishe Masdari, Kivumishi na umbo la amri wewe mwenyewe."
+      ],
+      "tabellen": [
+        "bab-fataha-mahmooz-qaraa",
+        "bab-samia-mahmooz-amina"
+      ],
+      "siehe": [
+        "takhfif",
+        "hadhf",
+        "sahih"
+      ]
+    },
+    "mithal": {
+      "titel": "Kitenzi chenye Mzizi wa Kwanza Dhaifu (Mithali)",
+      "ar": "المِثَال",
+      "umschrift": "al-mithāl",
+      "erklaerung": [
+        "Mithali ni kitenzi cha Mu'tall (kitenzi chenye herufi dhaifu Waw/Yaa/Alifu katika mzizi), ambapo hasa konsonanti ya kwanza ni dhaifu. Ikiwa herufi hii ya kwanza ni Waw, aina ndogo inaitwa Mithali Waawi (mfano وَعَدَ, \"kuahidi\"); ikiwa ni Yaa, Mithali Yaa'i.",
+        "Jambo la kushangaza zaidi: katika vitenzi vingi vya Mithali Waawi, Waw ya mwanzo huondolewa kabisa katika umbo la wakati wa sasa kwa njia ya Hadhfu - kutoka وَعَدَ (\"aliahidi\") haitokei يَوْعِدُ katika Al-Mudhari', bali يَعِدُ (\"anaahidi\"). Pengo hili mwanzoni mwa neno ndicho kiashiria cha kuaminika kabisa cha vitenzi vya Mithali."
+      ],
+      "erkennung": [
+        "Herufi ya kwanza ya mzizi ni Waw au Yaa (katika wakati uliopita mara nyingi bado inaonekana: وَعَدَ، وَلَدَ).",
+        "Katika umbo la wakati wa sasa (Al-Mudhari'), Waw hii ya mwanzo kwa kawaida huondolewa bila kubadilishwa na kingine (وَعَدَ -> يَعِدُ, si يَوْعِدُ).",
+        "Katika wakati uliopita wenyewe, herufi dhaifu mara nyingi hubaki inaonekana."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 268,
+          "wort": 2,
+          "zeigt": "يَعِدُكُمُ (\"anakuahidini\") - wakati wa sasa wa وَعَدَ: Waw ya mwanzo ya mzizi و-ع-د imetoweka kabisa.",
+          "warum": "root:وعد (konsonanti ya kwanza و), Kipande: tense:imperfect, verbForm:1 - hakuna و katika umbo la neno ijapokuwa mzizi ni و-ع-د."
+        },
+        {
+          "sure": 112,
+          "vers": 3,
+          "wort": 2,
+          "zeigt": "يَلِدْ (\"anazaa\") - wakati wa sasa wa وَلَدَ: hapa pia Waw ya mwanzo ya mzizi و-ل-د imeondolewa.",
+          "warum": "root:ولد (konsonanti ya kwanza و), Kipande: tense:imperfect, mood:juss - hakuna و katika umbo la neno."
+        }
+      ],
+      "lernen": [
+        "Kumbuka jozi ya nanga وَعَدَ/يَعِدُ (\"kuahidi\") kama mfano wa kanuni: Waw inaonekana katika wakati uliopita, inatoweka katika wakati wa sasa.",
+        "Linganisha umbo la kutendwa يُوعَدُ (Waw inabaki katika kutendwa!) na umbo la kutenda يَعِدُ - hilo linaonyesha kuwa kuondolewa huku kunahusu hasa Al-Mudhari' wa kutenda."
+      ],
+      "tabellen": [],
+      "siehe": [
+        "hadhf",
+        "qalb",
+        "idgham"
+      ]
+    },
+    "ajwaf": {
+      "titel": "Kitenzi Kigumba (Ajwaf)",
+      "ar": "الأَجْوَف",
+      "umschrift": "al-ajwaf",
+      "erklaerung": [
+        "Ajwaf ni kitenzi cha Mu'tall, ambapo konsonanti ya kati ni dhaifu (Waw au Yaa) - jina lenyewe humaanisha kihalisi \"gumba/tupu\", kwa sababu herufi hii ya kati katika maumbo mengi huyeyuka na kuwa irabu ndefu tu au kutoweka kabisa. قَالَ (\"kusema\") chatokana na mzizi ق-و-ل (Ajwaf Waawi), خَافَ (\"kuogopa\") chatokana na خ-و-ف.",
+        "Herufi dhaifu ya kati hubadilika katika wakati uliopita kupitia Qalbu kuwa alifu ndefu (قَوَلَ -> قَالَ), huondolewa kabisa katika baadhi ya nafsi (kabla ya kiishio kinachoanza na konsonanti) kupitia Hadhfu (قَالَ + تُ -> قُلْتُ, si قَالْتُ) na mara nyingi hupunguzwa katika amri hadi irabu ndefu tupu (قُلْ, \"Sema!\")."
+      ],
+      "erkennung": [
+        "Konsonanti ya kati (ya pili) ya mzizi ni Waw au Yaa.",
+        "Katika wakati uliopita nafsi ya tatu, herufi hii mara nyingi huonekana kama alifu ndefu (قَالَ badala ya قَوَلَ).",
+        "Kabla ya kiishio cha nafsi kinachoanza na konsonanti, neno hufupika kwa namna ya kushangaza (قُلْتُ badala ya قَالْتُ)."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 11,
+          "wort": 8,
+          "zeigt": "قَالُوٓا۟ (\"walisema\") - mzizi ق-و-ل, Waw ya kati inaonekana kama alifu ndefu (Qalbu).",
+          "warum": "root:قول (konsonanti ya kati و), Kipande: tense:perfect, verbForm:1."
+        },
+        {
+          "sure": 2,
+          "vers": 229,
+          "wort": 18,
+          "zeigt": "يَخَافَآ (\"wote wawili wanaogopa\") - mzizi خ-و-ف, Waw ya kati pia inaonekana kama alifu.",
+          "warum": "root:خوف (konsonanti ya kati و), Kipande: tense:imperfect, number:du."
+        }
+      ],
+      "lernen": [
+        "Jifunze قَالَ kama kitenzi cha nanga na fanya mazoezi hasa kwenye nafsi zenye kiishio kinachoanza na konsonanti (قُلْتُ، قُلْنَا), kwa sababu hapo herufi ya kati hutoweka kabisa - ndicho kikwazo cha kawaida zaidi.",
+        "Sema kwa sauti pamoja amri na wakati wa sasa: قُلْ (Sema!) kando ya يَقُولُ (anasema) - hilo hufanya ufupishaji katika amri usikike."
+      ],
+      "tabellen": [],
+      "siehe": [
+        "qalb"
+      ]
+    },
+    "naqis": {
+      "titel": "Kitenzi Pungufu (Naaqisi)",
+      "ar": "النَّاقِص",
+      "umschrift": "an-nāqiṣ",
+      "erklaerung": [
+        "Naaqisi ni kitenzi cha Mu'tall, ambapo konsonanti ya mwisho ni dhaifu (Waw au Yaa). Ikiwa ni Waw, aina ndogo inaitwa Naaqisi Waawi (دَعَا, \"kuita/kuomba\", kutoka د-ع-و), ikiwa ni Yaa, Naaqisi Yaa'i (رَمَى, \"kutupa\", kutoka ر-م-ي). Jina \"pungufu\" linahusiana na ukweli kwamba konsonanti ya mwisho ya mzizi katika maumbo mengi haionekani tena wazi kama konsonanti.",
+        "Katika wakati uliopita nafsi ya tatu, herufi dhaifu ya mwisho kwa kawaida huyeyuka na kuwa alifu ndefu au Alifu Maqsura (دَعَوَ -> دَعَا). Kabla ya viishio vya nafsi vinavyoanza na konsonanti, herufi dhaifu mara nyingi hubaki bila irabu (Taskini) tu, au huondolewa kabisa katika maumbo fulani."
+      ],
+      "erkennung": [
+        "Konsonanti ya mwisho (ya tatu) ya mzizi ni Waw au Yaa.",
+        "Katika wakati uliopita nafsi ya tatu umoja mume, neno kwa kawaida huishia na alifu (ndefu au fupi kiandishi) badala ya konsonanti halisi ya mzizi.",
+        "Kabla ya viishio vya nafsi vinavyoanza na konsonanti, herufi dhaifu ya mwisho mara nyingi hutamkwa fupi zaidi au tofauti."
+      ],
+      "belege": [
+        {
+          "sure": 3,
+          "vers": 38,
+          "wort": 2,
+          "zeigt": "دَعَا (\"aliita/aliomba\") - mzizi د-ع-و, Waw ya mwisho inaonekana kama alifu.",
+          "warum": "root:دعو (konsonanti ya mwisho و), Kipande: tense:perfect, verbForm:1."
+        },
+        {
+          "sure": 8,
+          "vers": 17,
+          "wort": 7,
+          "zeigt": "رَمَيْتَ (\"ulitupa\") - mzizi ر-م-ي, Yaa ya mwisho kabla ya kiishio ـتَ imebaki kama irabu fupi.",
+          "warum": "root:رمي (konsonanti ya mwisho ي), Kipande: tense:perfect, person:2, gender:m, number:sg."
+        }
+      ],
+      "lernen": [
+        "Jifunze دَعَا (kuita/kuomba, Waawi) na رَمَى (kutupa, Yaa'i) kama mfano mmoja wa nanga kwa kila aina ndogo - kutoka humo muundo wa msingi unaonekana.",
+        "Fanya mazoezi hasa kwenye nafsi ya tatu umoja katika wakati uliopita, kwa sababu hapo herufi ya mzizi \"inatoweka\" zaidi (kuwa alifu tupu) - hapo ndipo sehemu inayoonekana zaidi."
+      ],
+      "tabellen": [],
+      "siehe": [
+        "qalb"
+      ]
+    },
+    "lafif": {
+      "titel": "Kitenzi Dhaifu Mara Mbili (Lafifu)",
+      "ar": "اللَّفِيف",
+      "umschrift": "al-lafīf",
+      "erklaerung": [
+        "Lafifu ni kitenzi ambapo herufi mbili kati ya tatu za mzizi ni dhaifu (Waw au Yaa) kwa wakati mmoja - kwa hiyo huchanganya visa viwili maalum kwa pamoja. Hutofautishwa Lafifu Maqrun (\"kilichokusanyika\"), ambapo konsonanti ya 2 na 3 ni dhaifu (رَوَى, \"kusimulia/kuripoti\" - mchanganyiko wa Ajwaf na Naaqisi), na Lafifu Mafruq (\"kilichotenganishwa\"), ambapo konsonanti ya 1 na 3 ni dhaifu (وَفَى, \"kutimiza/kuwa mwaminifu\" - mchanganyiko wa Mithali na Naaqisi).",
+        "Kwa kuwa katika Lafifu visa viwili maalum hukutana kwa wakati mmoja, kanuni zile zile za mabadiliko za aina husika zinatumika (kanuni za Naaqisi kwa aina zote mbili, pamoja na Hadhfu ya Mithali kwa aina ya Mafruq) - tu zinatumika mara mbili."
+      ],
+      "erkennung": [
+        "Herufi mbili kati ya tatu za mzizi ni Waw au Yaa.",
+        "Lafifu Maqrun: konsonanti ya 2 na 3 ni dhaifu (mchanganyiko wa Ajwaf + Naaqisi), mfano رَوَى.",
+        "Lafifu Mafruq: konsonanti ya 1 na 3 ni dhaifu (mchanganyiko wa Mithali + Naaqisi), mfano وَفَى."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 28,
+          "wort": 6,
+          "zeigt": "فَأَحْيَٰكُمْ (\"kisha akakupeni uhai\") - mzizi ح-ي-ي: konsonanti ya 2 na 3 zote ni Yaa (Lafifu Maqrun).",
+          "warum": "root:حيي (konsonanti ya 2 na 3 zote dhaifu), Kipande: pos:V, verbForm:4, tense:perfect."
+        },
+        {
+          "sure": 2,
+          "vers": 40,
+          "wort": 8,
+          "zeigt": "وَأَوْفُوا۟ (\"na timizeni!\") - mzizi و-ف-ي: konsonanti ya 1 na 3 zote dhaifu (Lafifu Mafruq).",
+          "warum": "root:وفي (konsonanti ya 1 na 3 zote dhaifu), Kipande: pos:V, verbForm:4, tense:imperative."
+        }
+      ],
+      "lernen": [
+        "Elewa Lafifu si kama kanuni mpya kabisa, bali kama muunganiko wa visa viwili tayari unavyovijua - jifunze kwanza Mithali, Ajwaf na Naaqisi kila kimoja kwa uthabiti, ndipo Lafifu itakuwa rahisi.",
+        "Kwa kitenzi kipya cha Lafifu, tambua kwanza nafasi mbili dhaifu (mfano \"konsonanti ya 1 na 3\" = Mafruq) kisha tumia kanuni mahususi zinazojulikana moja baada ya nyingine."
+      ],
+      "tabellen": [],
+      "siehe": [
+        "mithal",
+        "ajwaf",
+        "naqis"
+      ]
+    },
+    "mudaaf": {
+      "titel": "Kitenzi Kilichorudiwa (Mudaaf)",
+      "ar": "المُضَاعَف",
+      "umschrift": "al-muḍāʿaf",
+      "erklaerung": [
+        "Mudaaf ana konsonanti ya 2 na 3 ya mzizi zinazofanana (zilizorudiwa) - mzizi wenyewe kihalisi una konsonanti mbili tu, lakini kwa jadi huhesabiwa kama mzizi wa herufi tatu wenye kurudiwa: رَدَّ (\"kurudisha\") chatokana na ر-د-د. Katika umbo la msingi, herufi hizi mbili zinazofanana huungana kupitia Idghamu kuwa herufi moja yenye shadda: رَدَدَ -> رَدَّ.",
+        "Muunganiko huu hautokei kila mahali: kabla ya viishio vya nafsi vinavyoanza na konsonanti (nafsi ya 1./2. katika wakati uliopita: ـتُ، ـتَ، ـنَا ...), herufi zote mbili hubaki tenganishwe (رَدَدْتُ, si رَدَّتُ), kwa sababu vinginevyo herufi mbili mfululizo zisizo na irabu zingetokea. Jambo lile lile hutokea katika Al-Mudhari'-Majzum: يَرُدُّ (\"anarudisha\") huungana, lakini يَرْتَدِدْ (Umbo VIII, majzum) hubaki tenganishwe kwa kipekee kwa sababu ya sukuni inayofuata."
+      ],
+      "erkennung": [
+        "Konsonanti ya 2 na 3 ya mzizi zinafanana (ر-د-د, م-د-د, ض-ل-ل ...).",
+        "Katika maumbo mengi, herufi hizi mbili zinazofanana huonekana zimeungana na shadda (رَدَّ badala ya رَدَدَ).",
+        "Kabla ya kiishio cha nafsi kinachoanza na konsonanti au katika hali ya Jazm (kiishio cha sukuni), herufi zote mbili hubaki wazi tenganishwe kwa kipekee."
+      ],
+      "belege": [
+        {
+          "sure": 4,
+          "vers": 83,
+          "wort": 11,
+          "zeigt": "رَدُّوهُ (\"wangalimrudisha/kuripoti\") - konsonanti ya 2 na 3 د-د zimeungana kuwa shadda.",
+          "warum": "root:ردد (konsonanti ya 2/3 zinazofanana), Kipande: tense:perfect, verbForm:1 - umbo la neno linabeba shadda."
+        },
+        {
+          "sure": 2,
+          "vers": 217,
+          "wort": 39,
+          "zeigt": "يَرْتَدِدْ (\"anarudi nyuma katika imani\") - mzizi ule ule ر-د-د, lakini katika hali ya Jazm herufi zote mbili د zinabaki tenganishwe, hakuna shadda.",
+          "warum": "root:ردد, Kipande: mood:juss, verbForm:8 - ubaguzi wa muunganiko wa kawaida."
+        }
+      ],
+      "lernen": [
+        "Jifunze رَدَّ kama kitenzi cha nanga na fanya mazoezi hasa kwenye tofauti رَدَّ (kimeungana) dhidi ya رَدَدْتُ (kimetenganishwa, kabla ya kiishio cha konsonanti) - hicho ndicho kifungu kinachopimwa zaidi.",
+        "Kumbuka mfano wa ubaguzi يَرْتَدِدْ: katika Jazm herufi zilizorudiwa zinabaki tenganishwe, kwa sababu vinginevyo sukuni mbili zingekutana - litamke kwa makusudi likiwa limetenganishwa."
+      ],
+      "tabellen": [],
+      "siehe": [
+        "idgham"
+      ]
+    },
+    "takhfif": {
+      "titel": "Kupunguza Uzito wa Hamza (Takhfifu)",
+      "ar": "التَّخْفِيف",
+      "umschrift": "at-takhfīf",
+      "erklaerung": [
+        "Takhfifu (\"kupunguza uzito\") huelezea ubadilishaji wa hamza kuwa Alifu, Waw au Yaa, kulingana na irabu ya herufi inayotangulia - ni urahisishaji safi wa matamshi/uandishi usiobadilisha utambulisho wa mzizi. Mara nyingi zaidi huhusu mgongano wa hamza mbili: hamza mbili zikikutana, na ya pili ikiwa Sakini (bila irabu), hamza ya pili hubadilika kuwa Alifu, Waw au Yaa kulingana na irabu inayotangulia.",
+        "Mfano wa kawaida hutolewa na Umbo IV la mizizi inayoanza na hamza yenyewe: hamza ya kiambishi awali cha Umbo IV hukutana na hamza ya mzizi. Kutoka umbo la kinadharia أَأْمَنَ, kupitia Takhfifu, huandikwa hasa آمَنَ (\"aliamini\") - hamza mbili zinaungana kuwa alifu yenye Madda."
+      ],
+      "erkennung": [
+        "Hamza mbili hukutana, ya pili ikiwa Sakini (bila irabu).",
+        "Hamza ya pili hubadilika kulingana na irabu ya ya kwanza kuwa Alifu, Waw au Yaa.",
+        "Muonekano wa kawaida zaidi katika Qur'ani: alifu yenye Madda (آ) mwanzoni mwa neno, mahali ambapo kwa hakika hamza mbili zingekutana (آمَنَ badala ya أَأْمَنَ)."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 41,
+          "wort": 1,
+          "zeigt": "وَءَامِنُوا۟ (\"na aminini!\") - umbo la amri la Umbo IV آمَنَ: hamza mbili (kiambishi awali + mwanzo wa mzizi) zimeungana kuwa muungano wa alifu/hamza.",
+          "warum": "root:امن, Kipande: pos:V, verbForm:4, tense:imperative - Lemma ءَامَنَ inaonyesha uandishi ulioungana."
+        },
+        {
+          "sure": 2,
+          "vers": 13,
+          "wort": 6,
+          "zeigt": "ءَامَنَ (\"aliamini\") - wakati uliopita wa Umbo lile lile IV, muunganiko ule ule wa Takhfifu mwanzoni mwa neno.",
+          "warum": "root:امن, Kipande: pos:V, verbForm:4, tense:perfect."
+        }
+      ],
+      "lernen": [
+        "Jifunze آمَنَ kama mfano wa nanga na kumbuka: mahali ambapo hamza mbili zingehitajika kukutana, katika Qur'ani iliyoandikwa mara nyingi huonekana alifu-Madda badala ya alama mbili za hamza zilizotenganishwa.",
+        "Usichanganye Takhfifu na Hadhfu: katika Takhfifu hamza hubadilika, katika Hadhfu huondolewa kabisa (angalia visa vinne vya amri)."
+      ],
+      "tabellen": [
+        "bab-fataha-mahmooz-qaraa",
+        "bab-samia-mahmooz-amina"
+      ],
+      "siehe": [
+        "mahmuz"
+      ]
+    },
+    "hadhf": {
+      "titel": "Kuondoa Herufi (Hadhfu)",
+      "ar": "الحَذْف",
+      "umschrift": "al-ḥadhf",
+      "erklaerung": [
+        "Hadhfu humaanisha tu kuondoa herufi. Kisa kinachojulikana zaidi kinahusu amri ya vitenzi vinne hasa vya Mahmuz, ambapo hamza ya mwanzo au ya mzizi hutoweka kabisa katika amri: أَكَلَ يَأْكُلُ -> كُلْ (\"Kula!\"), أَخَذَ يَأْخُذُ -> خُذْ (\"Chukua!\"), أَمَرَ يَأْمُرُ -> مُرْ (\"Amuru!\"), سَأَلَ يَسْأَلُ -> سَلْ (\"Uliza!\"). Kwa مُرْ na سَلْ, hata hivyo, Hadhfu hutokea tu mwanzoni mwa sentensi; likitanguliwa na neno linaloweza kuunganika na kitenzi, hamza hubaki (وَأْمُرْ, وَٱسْأَلْ).",
+        "Hadhfu pia hutokea katika vitenzi vya Mithali na Naaqisi: katika Mithali, Waw ya mwanzo huondolewa katika Al-Mudhari' (وَعَدَ -> يَعِدُ badala ya يَوْعِدُ); katika Naaqisi, herufi dhaifu ya mwisho huondolewa katika baadhi ya maumbo ya wingi baada ya Taskini iliyotangulia."
+      ],
+      "erkennung": [
+        "Herufi iliyotarajiwa haipo kabisa katika neno lililoandikwa halisi.",
+        "Katika amri nne za Mahmuz كُلْ/خُذْ/مُرْ/سَلْ, Hadhfu ni ya kileksika thabiti - si kanuni ya jumla, bali orodha funge.",
+        "Katika vitenzi vya Mithali hutambulika kwa ukweli kwamba Waw ya mwanzo ya mzizi haionekani tena popote katika Al-Mudhari'."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 57,
+          "wort": 8,
+          "zeigt": "كُلُوا۟ (\"Kuleni!\") - umbo la amri la أَكَلَ: hamza ya mwanzo imeondolewa kabisa.",
+          "warum": "root:اكل, Kipande: pos:V, tense:imperative - Lemma inabeba hamza, umbo la amri halibebi tena."
+        },
+        {
+          "sure": 7,
+          "vers": 199,
+          "wort": 1,
+          "zeigt": "خُذِ (\"Chukua!\") - umbo la amri la أَخَذَ: hapa pia hamza ya mwanzo imeondolewa kabisa.",
+          "warum": "root:اخذ, Kipande: pos:V, tense:imperative - Lemma أَخَذَ inabeba hamza, umbo la amri halibebi."
+        }
+      ],
+      "lernen": [
+        "Kariri amri nne za Hadhfu كُلْ/خُذْ/مُرْ/سَلْ kama orodha thabiti pamoja na umbo lake la msingi.",
+        "Kwa مُرْ/سَلْ zingatia pia nafasi ndani ya sentensi: ni mwanzoni mwa sentensi tu ndipo hamza huondolewa, vinginevyo hubaki (وَأْمُرْ).",
+        "Linganisha kwa makusudi Hadhfu (herufi huondolewa kabisa) na Takhfifu (herufi hubadilika tu) - vyote mara nyingi huhusu hamza ile ile, lakini matokeo ni tofauti."
+      ],
+      "tabellen": [],
+      "siehe": [
+        "mahmuz",
+        "mithal",
+        "amr"
+      ]
+    },
+    "idgham": {
+      "titel": "Kuunganisha Herufi Mbili (Idghamu)",
+      "ar": "الإِدْغَام",
+      "umschrift": "al-idghām",
+      "erklaerung": [
+        "Idghamu huelezea muunganiko wa herufi mbili zinazofanana (au zinazofanana sana) zinazokutana, kuwa herufi moja yenye alama ya shadda. Hii huonekana wazi zaidi kwenye vitenzi vya Mudhaaf (konsonanti ya 2/3 iliyorudiwa): رَدَدَ huungana kuwa رَدَّ, يَرْدُدُ huungana kuwa يَرُدُّ.",
+        "Idghamu si ya moja kwa moja kila wakati: haitokei ikiwa hilo litasababisha herufi mbili mfululizo zisizo na irabu - kwa mfano kabla ya kiishio cha nafsi kinachoanza na konsonanti (رَدَدْتُ hubaki tenganishwe) au katika hali ya Jazm (يَرْتَدِدْ hubaki tenganishwe, kwa sababu sukuni mwishoni mwa neno vinginevyo ingekutana moja kwa moja na sukuni ya pili). Pia katika Umbo VIII, تَ iliyoingizwa huungana na baadhi ya herufi za mwanzo za mzizi (ٱتَّخَذَ kutoka ٱوْتَخَذَ, ambapo ت huchukua pia nafasi ya و/ي ya asili)."
+      ],
+      "erkennung": [
+        "Herufi mbili zinazofanana (au zinazofanana sana) hukutana moja kwa moja na kuungana kuwa herufi moja yenye shadda.",
+        "Muunganiko hautokei ikiwa baada yake ingekuwa herufi nyingine isiyo na irabu - hapo herufi zote mbili hubaki wazi tenganishwe.",
+        "Katika vitenzi vya Mudhaaf, kiashiria cha kuaminika zaidi: shadda kwenye herufi ya mwisho ya mzizi katika nafsi nyingi, lakini si zote."
+      ],
+      "belege": [
+        {
+          "sure": 4,
+          "vers": 83,
+          "wort": 11,
+          "zeigt": "رَدُّوهُ (\"wangalimripoti\") - herufi mbili د za mzizi ر-د-د zimeungana kuwa herufi moja yenye shadda.",
+          "warum": "root:ردد, Kipande: tense:perfect - umbo la neno linabeba shadda badala ya د mbili tenganishwe."
+        },
+        {
+          "sure": 2,
+          "vers": 217,
+          "wort": 39,
+          "zeigt": "يَرْتَدِدْ (\"anarudi nyuma katika imani\") - mzizi ule ule ر-د-د, lakini katika hali ya Jazm herufi zote mbili د zinabaki tenganishwe kwa kipekee, hakuna Idghamu.",
+          "warum": "root:ردد, Kipande: mood:juss - mfano wa kinyume bila shadda, kwa sababu vinginevyo sukuni mbili zingekutana."
+        }
+      ],
+      "lernen": [
+        "Sema kwa sauti jozi linganishi يَرُدُّ (kimeungana) / يَرْتَدِدْ (kimetenganishwa, Jazm) - sababu ya tofauti (kuepuka sukuni mbili) hukumbukwa vizuri zaidi kupitia mfano wa sauti.",
+        "Kwa kila kitenzi cha Mudhaaf, tumia kwanza swali la ukaguzi: \"Je, baada yake inafuata herufi isiyo na irabu?\" - ikiwa hapana tu, ndipo herufi mbili zinazofanana zinaungana."
+      ],
+      "tabellen": [],
+      "siehe": [
+        "mudaaf",
+        "mithal"
+      ]
+    },
+    "qalb": {
+      "titel": "Kubadilisha Herufi (Qalbu)",
+      "ar": "القَلْب",
+      "umschrift": "al-qalb",
+      "erklaerung": [
+        "Qalbu huelezea ubadilishaji wa herufi kuwa nyingine, kwa kawaida kwa sababu ya mazingira ya irabu. Katika vitenzi vya Ajwaf (konsonanti ya kati dhaifu), Waw na Yaa hubadilika katika wakati uliopita kuwa alifu ndefu: خَوِفَ inakuwa خَافَ, بَيَعَ inakuwa بَاعَ. Katika kutendwa, badala yake Waw hubadilika kuwa Yaa, ikiwa na kasra kwenye konsonanti ya kwanza: خُوِفَ inakuwa خِيفَ.",
+        "Katika vitenzi vya Naaqisi (konsonanti ya mwisho dhaifu), kanuni ile ile ya msingi hutumika katika wakati uliopita nafsi ya tatu: Waw na Yaa huwa alifu (سَعَيَ -> سَعَى, دَعَوَ -> دَعَا). Waw ikitanguliwa na kasra, hubadilika kuwa Yaa badala yake (دُعِوَ -> دُعِيَ). Kwa hiyo Qalbu ndio kanuni halisi iliyo nyuma ya matukio mengi yaliyoelezwa kwa Ajwaf na Naaqisi."
+      ],
+      "erkennung": [
+        "Konsonanti ya mzizi Waw au Yaa huonekana katika umbo halisi la neno kama alifu.",
+        "Kwa kawaida huhusu wakati uliopita nafsi ya tatu ya vitenzi vya Ajwaf na Naaqisi.",
+        "Katika kutendwa, Waw mara nyingi hubadilika kuwa Yaa badala ya alifu."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 11,
+          "wort": 8,
+          "zeigt": "قَالُوٓا۟ (\"walisema\") - mzizi ق-و-ل unaonyesha Waw ya kati kama alifu ndefu (Qalbu katika Ajwaf).",
+          "warum": "root:قول (konsonanti ya kati و), Kipande: tense:perfect - umbo la neno lina ا badala ya و."
+        },
+        {
+          "sure": 3,
+          "vers": 38,
+          "wort": 2,
+          "zeigt": "دَعَا (\"aliita/aliomba\") - mzizi د-ع-و unaonyesha Waw ya mwisho kama alifu (Qalbu katika Naaqisi).",
+          "warum": "root:دعو (konsonanti ya mwisho و), Kipande: tense:perfect - umbo la neno linaishia na ا badala ya و."
+        }
+      ],
+      "lernen": [
+        "Linganisha mifano miwili قَالَ (Ajwaf, herufi ya kati inakuwa alifu) na دَعَا (Naaqisi, herufi ya mwisho inakuwa alifu) pamoja - kanuni ile ile ya ubadilishaji, nafasi mbili tofauti.",
+        "Kumbuka kigezo: Waw/Yaa + sauti ndefu ya \"a\" jirani -> karibu daima huandikwa kuwa alifu, hicho ndicho Qalbu."
+      ],
+      "tabellen": [],
+      "siehe": [
+        "ajwaf",
+        "naqis",
+        "mithal"
+      ]
+    }
+  }
+}

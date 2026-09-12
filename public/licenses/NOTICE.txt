@@ -1,5 +1,5 @@
 SALATI — THIRD-PARTY NOTICES
-Last reviewed: 2026-07-28
+Last reviewed: 2026-09-05
 
 This file lists the original copyright notices of the third-party works that
 Salati distributes, together with the licence each work is used under. The
@@ -18,6 +18,7 @@ available at /licenses/ on the Salati website:
   /licenses/cc0-1.0.txt                 CC0 1.0 Universal
   /licenses/cc-by-3.0.txt               Creative Commons Attribution 3.0
   /licenses/cc-by-sa-4.0.txt            Creative Commons Attribution-ShareAlike 4.0
+  /licenses/quranic-arabic-corpus.txt   Quranic Arabic Corpus — terms of use
   /licenses/NOTICE.txt                  this file
 
 The licence texts are reproduced in their English original and are not
@@ -442,7 +443,47 @@ for a Produced Work.
 
 
 ============================================================================
-11. IMAGES
+11. QUR'AN MORPHOLOGICAL AND SYNTACTIC ANNOTATION DATA
+============================================================================
+
+Licence texts: quranic-arabic-corpus.txt (terms of use), mit.txt (MIT
+License)
+
+The word-by-word morphology shown in the lexicon (word class, root, lemma
+and grammatical features) and the sentence-syntax annotation (grammatical
+roles such as subject, object, badal, coordination) are built by Salati from
+two third-party data sources:
+
+11.1 Quranic Arabic Corpus (morphology, version 0.4)
+    Notice:   Copyright (C) 2011 Kais Dukes
+    Licence:  GNU General Public License, subject to the corpus's own terms
+              of use — see quranic-arabic-corpus.txt.
+    Source:   http://corpus.quran.com
+    Terms:    permission is granted to copy and distribute verbatim copies
+    of this file, but changing it is not allowed; this annotation can be
+    used in any website or application, provided its source (the Quranic
+    Arabic Corpus) is clearly indicated, and a link is made to
+    http://corpus.quran.com.
+    Salati indicates the source and links to http://corpus.quran.com on the
+    licences screen and in the lexicon, and reproduces the copyright notice
+    and terms of use in full in quranic-arabic-corpus.txt.
+
+11.2 NoorBayan/Quranic
+    Notice:   MIT License, Copyright (c) 2025 NoorBayan
+    Licence:  MIT — see mit.txt
+    Source:   https://github.com/NoorBayan/Quranic
+    Used for the syntactic role annotation (badal, coordination, subject,
+    object) that complements the Quranic Arabic Corpus morphology.
+
+Salati does not distribute either upstream data file unchanged; both are
+parsed at build time into Salati's own data files (roots.json, lemmas.json,
+meta.json and the per-surah files, served from Salati's own storage). The
+content of the annotation itself is carried over unchanged, only reshaped
+into a different format.
+
+
+============================================================================
+12. IMAGES
 ============================================================================
 
 Photographs in the app are used under the Unsplash License, which does not
@@ -452,7 +493,7 @@ repository.
 
 
 ============================================================================
-12. CONTENT SOURCES CALLED AS AN API
+13. CONTENT SOURCES CALLED AS AN API
 ============================================================================
 
 The Qur'an text and translations, the recitation audio, the tafsir and the

@@ -11,7 +11,6 @@ import {
   fetchSurahTafsir,
   fetchSurahTajweed,
   fetchSurahTransliteration,
-  fetchSurahWordByWord,
   fetchSurahStartPage,
   fetchTafsirEditions,
   fetchTranslationEditions,
@@ -19,6 +18,7 @@ import {
   searchQuran,
   type MushafStyle,
 } from './api';
+import { ladeSurahWortliste } from './wortliste';
 
 // Lange Cache-TTL — Editionen/Suren-Metadaten ändern sich praktisch nie.
 const STATIC_STALE_TIME = 7 * 24 * 60 * 60 * 1000;
@@ -96,11 +96,20 @@ export function useSurahSecondTranslation(surahNumber: number, edition: string, 
   });
 }
 
-/** Wort-für-Wort-Aufschlüsselung nur laden, wenn eingeschaltet (enabled). */
+/**
+ * Wort-für-Wort-Aufschlüsselung nur laden, wenn eingeschaltet (enabled).
+ *
+ * Über ladeSurahWortliste (./wortliste.ts), nicht direkt über die API: die
+ * Wortliste ist der größte Einzelposten im Query-Cache (Sure 2 allein
+ * 1.078.748 Bytes) und liegt deshalb als Datei im Dokumentverzeichnis statt in
+ * der AsyncStorage-Ablage, die auf Android bei ~2 MB reißt. lib/queryClient.ts
+ * (sollInDieAblage) nimmt diesen Schlüssel darum aus der Ablage heraus —
+ * offline geht dabei nichts verloren, der Datei-Cache trägt es.
+ */
 export function useSurahWordByWord(surahNumber: number, enabled: boolean) {
   return useQuery({
     queryKey: ['quran', 'word-by-word', surahNumber],
-    queryFn: () => fetchSurahWordByWord(surahNumber),
+    queryFn: () => ladeSurahWortliste(surahNumber),
     staleTime: STATIC_STALE_TIME,
     enabled,
   });

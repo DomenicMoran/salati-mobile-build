@@ -1,0 +1,1569 @@
+{
+  "schema": 1,
+  "lang": "ms",
+  "bereich": "verb",
+  "eintraege": {
+    "fiil": {
+      "titel": "Fi'il dan Asas-asasnya",
+      "ar": "الفِعْل",
+      "umschrift": "al-fiʿl",
+      "erklaerung": [
+        "Bahasa Arab mengenal tiga jenis kalimah: Isim (kata nama), Fi'il (kata kerja) dan Harf (kata sendi/partikel). Fi'il menunjukkan sesuatu perbuatan yang berlaku pada waktu tertentu — pada masa lampau, pada masa kini/akan datang, atau sebagai perintah mahupun larangan. Oleh itu sistem fi'il terbahagi kepada tepat tiga jenis asas: al-Fi'il al-Madi, al-Fi'il al-Mudari' dan Fi'il al-Amr/an-Nahi. Segala bentuk fi'il yang lain (isim fa'il, isim maf'ul, masdar dan sebagainya) diterbitkan daripada tiga jenis asas ini, tetapi tidak lagi dikira sebagai kategori fi'il yang berasingan.",
+        "Keistimewaan fi'il Arab: ia sudah membawa subjeknya sendiri di dalam dirinya. Berbeza dengan Bahasa Melayu, di mana \"saya menolong\" terdiri daripada dua patah kata, di dalam fi'il Arab sendiri sudah tersimpan maklumat siapa yang melakukan perbuatan itu — sebagai kata ganti nama yang terbina dalam bentuk awalan atau akhiran. Oleh itu satu patah kata fi'il sahaja sudah menjadi satu ayat yang lengkap berserta fa'il (pelaku).",
+        "Akhiran diri yang terbina ini ialah kunci kepada keseluruhan bab ini: sesiapa yang telah mempelajarinya pada satu fi'il contoh (secara tradisi نَصَرَ, \"dia telah menolong\"), boleh memindahkannya kepada mana-mana fi'il lain, kerana yang berubah hanyalah akar kata, bukan corak akhirannya."
+      ],
+      "erkennung": [
+        "Sesuatu fi'il terdiri daripada akar kata yang tetap ditambah awalan/akhiran yang berubah-ubah, yang menunjukkan diri, jantina dan bilangan.",
+        "Berbeza dengan isim, fi'il tidak pernah membawa tanwin dan tidak pernah membawa kata sandang اَلْ.",
+        "Satu patah kata fi'il sahaja boleh membentuk satu ayat yang lengkap, kerana subjeknya sudah tersimpan di dalam fi'il itu sendiri."
+      ],
+      "belege": [
+        {
+          "sure": 1,
+          "vers": 5,
+          "wort": 2,
+          "zeigt": "نَعْبُدُ (\"kami menyembah/beribadat\") — kalimah ini sudah menjadi satu ayat yang lengkap: akar kata عبد + \"kami\" yang terbina di dalamnya.",
+          "warum": "Segmen ialah pos:V dengan person:1, number:pl — tiada kata ganti nama berasingan diperlukan."
+        },
+        {
+          "sure": 1,
+          "vers": 6,
+          "wort": 1,
+          "zeigt": "ٱهْدِنَا (\"tunjukilah kami!\") — bentuk perintah dengan \"engkau\" (pelaku) yang terbina di dalamnya dan \"kami\" (objek) yang ditambah, kesemuanya dalam satu patah kata.",
+          "warum": "Segmen ialah pos:V, tense:imperative, person:2 — jenis fi'il pada bentuk asasnya yang ketiga."
+        }
+      ],
+      "lernen": [
+        "Hafazkan dahulu pembahagian tiga ini: Madi – Mudari' – Amar/Nahi. Sebutkan dengan kuat mengikut susunan ini sehingga ia keluar secara automatik.",
+        "Ambil satu fi'il contoh sahaja (misalnya نَصَرَ) dan kekal dengannya sehingga corak akhirannya benar-benar difahami — barulah cuba pada fi'il yang lain.",
+        "Semasa membaca al-Quran, carilah dengan sengaja fi'il yang tiada kata ganti nama berasingan di hadapannya, dan sebutkan dengan kuat siapa pelakunya sebelum meneruskan bacaan."
+      ],
+      "tabellen": [
+        "verb-madi-nasara-aktiv-matrix",
+        "verb-mudari-nasara-aktiv-matrix"
+      ],
+      "siehe": [
+        "jidhr",
+        "madi",
+        "mudari",
+        "amr",
+        "nahy"
+      ]
+    },
+    "jidhr": {
+      "titel": "Akar Kata dan Prinsip Wazan",
+      "ar": "الجَذْر وَالوَزْن",
+      "umschrift": "al-jadhr wa-l-wazn",
+      "erklaerung": [
+        "Hampir setiap fi'il Arab kembali kepada suatu akar kata (jazar) yang kebiasaannya terdiri daripada tiga huruf konsonan, yang membawa makna asas. Daripada akar kata ini, melalui corak-corak tetap (wazan-wazan, tunggalnya wazan), terbentuklah seluruh keluarga kalimah: fi'il asal, bentuk fi'il yang dikuatkan atau menyebabkan sesuatu, masdar, serta isim fa'il dan isim maf'ul. Akar kata boleh dibayangkan seperti benih, yang daripadanya tumbuh pelbagai kalimah mengikut wazan yang digunakan.",
+        "Yang penting: akar kata yang sama memberikan makna yang berlainan tetapi berkait rapat, bergantung kepada wazan yang dipakai. Akar kata ع-ل-م membawa makna asas \"mengetahui\". Pada wazan asal ia menjadi عَلِمَ, \"dia telah mengetahui\". Apabila huruf tengah akar kata itu digandakan (bab II), terhasillah عَلَّمَ, \"dia telah mengajar\" — daripada sekadar mengetahui, ia menjadi perbuatan menyampaikan ilmu itu secara aktif.",
+        "Prinsip wazan inilah sebabnya perbendaharaan kata Arab dapat difahami secara sistematik, bukan sekadar melalui hafazan semata-mata: apabila akar kata dan wazan sudah dikenali, makna sesuatu kalimah yang belum pernah ditemui selalunya sudah boleh dijangka sebelum merujuk kamus."
+      ],
+      "erkennung": [
+        "Akar kata kebiasaannya terdiri daripada tiga huruf konsonan tanpa baris yang tetap — baris serta huruf tambahan hanya datang daripada wazan.",
+        "Dua kalimah yang berkongsi akar kata sama tetapi wazan berlainan adalah berkait dari segi makna, tetapi tidak sama (contohnya \"mengetahui\" berbanding \"mengajar\").",
+        "Huruf tengah akar kata yang digandakan (syaddah/sabdu) ialah tanda paling ketara bagi fi'il yang telah diperluas melalui wazan."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 60,
+          "wort": 15,
+          "zeigt": "عَلِمَ (\"dia telah mengetahui\") — wazan asal akar kata ع-ل-م tanpa sebarang tambahan.",
+          "warum": "Segmen ialah pos:V, verbForm:1 (tiada nilai dalam kurungan pada korpus, maka menurut konvensyen Bab I), root:علم."
+        },
+        {
+          "sure": 2,
+          "vers": 31,
+          "wort": 1,
+          "zeigt": "وَعَلَّمَ (\"dan Dia telah mengajar\") — akar kata yang sama ع-ل-م, tetapi huruf tengahnya digandakan menjadi bab II.",
+          "warum": "Segmen ialah pos:V, verbForm:2 (dalam tag mentah (II)), root:علم — jazar yang sama seperti عَلِمَ, wazan berbeza, nuansa makna berbeza."
+        }
+      ],
+      "lernen": [
+        "Jangan hafal kalimah secara berasingan, sebaliknya hafal pasangan akar kata+wazan: tanyakan pada diri sendiri bagi setiap fi'il baharu \"akar kata apa, wazan apa?\".",
+        "Berlatih pada akar kata علم itu sendiri: sebutkan عَلِمَ (mengetahui, bab I) dan عَلَّمَ (mengajar, bab II) berturut-turut dan sebutkan dengan kuat perbezaan maknanya.",
+        "Sebelum merujuk terjemahan bagi kalimah baharu, bayangkan dahulu akar asalnya — ini melatih kemahiran mencungkil makna daripada sistem."
+      ],
+      "tabellen": [],
+      "siehe": [
+        "fiil",
+        "form1",
+        "form2"
+      ]
+    },
+    "madi": {
+      "titel": "Fi'il Madi (Kata Kerja Lampau)",
+      "ar": "الماضي",
+      "umschrift": "al-māḍī",
+      "erklaerung": [
+        "Al-Madi ialah bentuk asas bagi setiap fi'il — \"dia telah melakukan\" — dan titik permulaan bagi pembentukan semua diri yang lain. Akar kata kekal sama pada semua bentuk; yang berubah hanya akhiran yang menunjukkan siapa yang melakukan perbuatan itu. Pada fi'il contoh نَصَرَ (\"dia telah menolong\"), bentuk-bentuk yang terpenting ialah: نَصَرَ (dia [lelaki] telah menolong), نَصَرَتْ (dia [perempuan] telah menolong), نَصَرْتَ (engkau [lelaki] telah menolong), نَصَرْتُ (aku telah menolong), نَصَرُوا (mereka [kumpulan lelaki] telah menolong), نَصَرْنَا (kami telah menolong).",
+        "Pada keadaan asalnya, madi dinafikan dengan harf مَا terus di hadapan fi'il (مَا نَصَرْتُ, \"aku tidak menolong\"). Satu lagi bentuk penafian masa lampau, yang berlainan dari segi retorik, dibentuk melalui لَمْ + mudari' (lihat entri berkenaan) — walaupun bentuknya kelihatan seperti masa kini.",
+        "Madi juga merupakan bentuk rujukan sesuatu fi'il di dalam kamus, dan menjadi asas kepada pembentukan fi'il majhul (pasif) bagi masa lampau (lihat Majhul)."
+      ],
+      "erkennung": [
+        "Akhiran diri menunjukkan pelaku terus pada hujung kalimah: -تَ = engkau (lelaki), -تُ = aku, -نَا = kami, -وا = sekumpulan lelaki.",
+        "Madi tidak membawa sebarang awalan bagi diri (berbeza dengan mudari') — maklumat diri terletak semata-mata pada akhiran.",
+        "Penafian pada madi dikenali melalui مَا terus di hadapan fi'il."
+      ],
+      "belege": [
+        {
+          "sure": 1,
+          "vers": 7,
+          "wort": 3,
+          "zeigt": "أَنْعَمْتَ (\"Engkau telah mengurniakan nikmat\") — bentuk lampau, diri kedua lelaki tunggal (mufrad), dikenali melalui akhiran ـتَ.",
+          "warum": "Segmen ialah pos:V, tense:perfect, person:2, gender:m, number:sg."
+        },
+        {
+          "sure": 3,
+          "vers": 123,
+          "wort": 2,
+          "zeigt": "نَصَرَكُمُ (\"Dia telah menolong kamu\") — bentuk lampau, diri ketiga lelaki tunggal tanpa akhiran diri tersendiri (\"dia\" tersirat pada akar kata yang polos).",
+          "warum": "Segmen ialah pos:V, tense:perfect, person:3, gender:m, number:sg."
+        }
+      ],
+      "lernen": [
+        "Hafazkan dahulu akhiran diri secara berasingan sebagai satu \"abjad akhiran\" kecil (ـَ, ـَتْ, ـْتَ, ـْتُ, ـُوا, ـْنَا …), sebelum melatihnya pada fi'il sebenar.",
+        "Tutup lajur Arab pada jadual diri dan sebutkan maksudnya dalam Bahasa Melayu, kemudian sebaliknya — sehingga kedua-dua arah dikuasai.",
+        "Kesilapan biasa: mengelirukan akhiran ـتَ (engkau, lelaki) dengan ـتِ (engkau, perempuan) atau ـتُ (aku) — sentiasa sebutkan dengan kuat semasa berlatih, kerana perbezaannya hanya satu baris."
+      ],
+      "tabellen": [
+        "verb-madi-nasara-aktiv-matrix"
+      ],
+      "siehe": [
+        "mudari",
+        "maluum",
+        "majhul",
+        "personenmatrix"
+      ]
+    },
+    "mudari": {
+      "titel": "Fi'il Mudari' (Kata Kerja Kini/Akan Datang)",
+      "ar": "المضارع",
+      "umschrift": "al-muḍāriʿ",
+      "erklaerung": [
+        "Al-Mudari' menunjukkan sesuatu yang sedang berlaku, berlaku secara kebiasaan, atau akan berlaku pada masa depan (\"dia melakukan\" / \"dia akan melakukan\"). Berbeza dengan madi, mudari' membawa awalan pada permulaan kalimah yang menunjukkan diri: يَ untuk dia (lelaki)/sekumpulan lelaki, تَ untuk dia (perempuan, tunggal) atau engkau, أَ untuk aku, نَ untuk kami — selalunya diringkaskan sebagai kata bantu ingat kepada rentetan huruf \"يتأن/ya-ta-a-na\". Pada bentuk asalnya, mudari' turut berakhir dengan dhommah (يَنْصُرُ).",
+        "Masa depan dibentuk daripada mudari' dengan menambah سَ terus di hadapannya (masa depan yang dekat) atau meletakkan سَوْفَ di hadapannya (masa depan yang lebih jauh) — kedua-duanya bermaksud \"akan\". Dengan itu, satu bentuk asas sahaja sudah merangkumi masa kini dan masa depan.",
+        "Baris akhir mudari' bukanlah tetap: harf-harf tertentu menukarkan dhommah itu kepada fathah (bentuk \"ringan\", Mansub) atau kepada sukun (bentuk \"paling ringan\", Majzum) — lihat entri tersendiri bagi ketiga-tiga mod ini."
+      ],
+      "erkennung": [
+        "Empat kemungkinan awalan menunjukkan diri: يَ / تَ / أَ / نَ.",
+        "Bentuk asal berakhir dengan dhommah (ـُ); baris akhir ini berubah mengikut harf yang mendahuluinya (mod).",
+        "Masa depan terbentuk melalui سَ (ditambah di belakang) atau سَوْفَ (diletakkan di hadapan) pada bentuk mudari' yang sama."
+      ],
+      "belege": [
+        {
+          "sure": 1,
+          "vers": 5,
+          "wort": 2,
+          "zeigt": "نَعْبُدُ (\"kami menyembah\") — mudari' dengan awalan نَ bagi \"kami\" dan akhiran ـُ (dhommah) pada keadaan asal.",
+          "warum": "Segmen ialah pos:V, tense:imperfect, person:1, number:pl, mood:null dan tidak membawa tag MOOD pada korpus mentah — keadaan asal."
+        },
+        {
+          "sure": 2,
+          "vers": 268,
+          "wort": 2,
+          "zeigt": "يَعِدُكُمُ (\"dia berjanji kepada kamu\") — mudari' dengan awalan يَ bagi \"dia\" dan akhiran ـُ.",
+          "warum": "Segmen ialah pos:V, tense:imperfect, person:3, gender:m, number:sg."
+        }
+      ],
+      "lernen": [
+        "Hafazkan dahulu keempat-empat awalan يتأن sebagai kata bantu ingat, sebelum beralih kepada fi'il tertentu.",
+        "Tutup satu lajur pada jadual diri (mufrad/tathniah/jamak) dan sebutkan dengan kuat bentuk yang tertinggal — ini melatih awalan DAN akhiran serentak.",
+        "Berlatih perbezaan سَ berbanding سَوْفَ pada contoh al-Quran: kedua-duanya bermaksud \"akan\", cuma berbeza dari segi jarak masa yang dirasakan."
+      ],
+      "tabellen": [
+        "verb-mudari-nasara-aktiv-matrix"
+      ],
+      "siehe": [
+        "madi",
+        "mudariMarfu",
+        "mudariMansub",
+        "mudariMajzum",
+        "amr",
+        "nahy"
+      ]
+    },
+    "amr": {
+      "titel": "Fi'il Amar (Kata Perintah)",
+      "ar": "الأمر",
+      "umschrift": "al-amr",
+      "erklaerung": [
+        "Fi'il al-Amr, perintah, hanya wujud bagi diri kedua (engkau/kamu) — sama seperti dalam Bahasa Melayu. Ia dibentuk daripada mudari' diri kedua melalui empat langkah: (1) menjadikan fi'il itu pada bentuk paling ringan (akhiran menjadi sukun), (2) membuang awalan تَ, (3) sekiranya huruf pertama yang baharu itu menjadi tiada baris akibatnya, meletakkan hamzah bantuan (Hamzat al-Wasal) di hadapannya, (4) menetapkan sebutannya. Daripada أَنْتَ تَنْصُرُ (\"engkau menolong\") terhasillah melalui تَنْصُرْ dan نْصُرْ pada akhirnya ٱنْصُرْ (\"Tolonglah!\").",
+        "Hamzat al-Wasal pada permulaan bentuk perintah hanya dibaca sekiranya didahului oleh waqaf (perhentian) atau tiada kalimah yang boleh disambungkan sebelumnya; selepas و/فَ atau kalimah yang boleh disambung terus, ia kekal senyap. Baris sebutannya bergantung kepada huruf ketiga fi'il itu.",
+        "Sesetengah fi'il (empat fi'il mahmuz أَكَلَ, أَخَذَ, أَمَرَ, سَأَلَ) kehilangan hamzahnya sepenuhnya pada bentuk perintah melalui hazaf — كُلْ, خُذْ, مُرْ, سَلْ dan bukannya bentuk yang dijangka membawa hamzah."
+      ],
+      "erkennung": [
+        "Bentuk perintah hanya wujud pada diri kedua dan kebiasaannya berakhir dengan sukun.",
+        "Ia sering bermula dengan alif bantuan/Hamzat al-Wasal, sekiranya huruf akar yang pertama sebenarnya tiada baris.",
+        "Pada empat fi'il أَكَلَ/أَخَذَ/أَمَرَ/سَأَلَ, hamzah gugur sepenuhnya pada bentuk perintah (hazaf)."
+      ],
+      "belege": [
+        {
+          "sure": 1,
+          "vers": 6,
+          "wort": 1,
+          "zeigt": "ٱهْدِنَا (\"Tunjukilah kami!\") — bentuk perintah, diri kedua lelaki tunggal, dengan kata ganti nama objek \"kami\" yang ditambah.",
+          "warum": "Segmen ialah pos:V, tense:imperative, person:2, gender:m, number:sg."
+        },
+        {
+          "sure": 17,
+          "vers": 14,
+          "wort": 1,
+          "zeigt": "ٱقْرَأْ (\"Bacalah!\") — bentuk perintah dengan hamzah bantuan pada permulaan, daripada fi'il mahmuz al-lam قَرَأَ.",
+          "warum": "Segmen ialah pos:V, tense:imperative, person:2, gender:m, number:sg, root:قرا."
+        }
+      ],
+      "lernen": [
+        "Latih dengan kuat keempat-empat langkah pembentukan pada satu fi'il: bentuk kini diri kedua → bentuk paling ringan → buang awalan → semak hamzah bantuan.",
+        "Hafazkan keempat-empat pengecualian hazaf (كُلْ، خُذْ، مُرْ، سَلْ) sebagai satu senarai tertutup — ia tidak mengikut sebarang peraturan yang boleh diterbitkan.",
+        "Tutup lajur diri pada jadual amar dan bentukkan sendiri bentuknya, sebelum menyemak jawapan sebenar."
+      ],
+      "tabellen": [
+        "amr-nasara-matrix"
+      ],
+      "siehe": [
+        "nahy",
+        "mudariMajzum",
+        "hadhf"
+      ]
+    },
+    "nahy": {
+      "titel": "Fi'il Nahi (Kata Larangan)",
+      "ar": "النهي",
+      "umschrift": "an-nahy",
+      "erklaerung": [
+        "An-Nahi, larangan, dibentuk dengan meletakkan harf larangan لَا di hadapan bentuk paling ringan mudari' (diri kedua) — akhiran sukun yang sama, yang juga dicetuskan oleh لَمْ dan إِنْ. Daripada تَنْصُرُ (\"engkau menolong\") terhasillah لَا تَنْصُرْ (\"Jangan menolong!\").",
+        "Berbeza dengan perintah, pada larangan awalan تَ kekal — hanya baris akhir yang berubah. Nahi dari segi struktur ialah penafian mudari'-majzum pada diri kedua, dengan harf pencetus tersendiri yang tetap لَا (perlu dibezakan dari segi nahu daripada harf nafi murni لَا, yang tidak mengubah keadaan asal).",
+        "Struktur ini amat kerap dalam al-Quran: peringatan dan amaran sering dirangkakan sebagai لَا + mudari'-majzum."
+      ],
+      "erkennung": [
+        "Larangan dikenali melalui لَا sejurus di hadapan mudari' yang akhirannya berbaris sukun, bukannya dhommah.",
+        "Awalan diri (kebiasaannya تَ bagi \"engkau\") kekal — berbeza dengan perintah, di mana ia gugur.",
+        "Pada fi'il yang berakhir dengan huruf و/ي (jamak), nun turut gugur (sama seperti bentuk ringan)."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 11,
+          "wort": 5,
+          "zeigt": "لَا تُفْسِدُوا۟ (\"Janganlah kamu buat kerosakan\") — bentuk larangan, diri kedua lelaki jamak selepas harf larangan لَا.",
+          "warum": "Kalimah sebelumnya (kedudukan 4) membawa segmen pos:PRO (harf larangan); fi'il itu sendiri menunjukkan mood:juss, tense:imperfect."
+        },
+        {
+          "sure": 2,
+          "vers": 22,
+          "wort": 19,
+          "zeigt": "فَلَا تَجْعَلُوا۟ (\"maka janganlah kamu jadikan sama\") — bentuk larangan, diri kedua lelaki jamak, juga selepas لَا.",
+          "warum": "Kalimah sebelumnya membawa segmen pos:PRO; fi'il itu sendiri menunjukkan mood:juss, tense:imperfect."
+        }
+      ],
+      "lernen": [
+        "Hafazkan corak لَا + mudari'-majzum sebagai satu unit tetap, bukan kalimah demi kalimah.",
+        "Bandingkan perintah dan larangan pada fi'il yang sama (ٱنْصُرْ / لَا تَنْصُرْ) dan sebutkan dengan kuat apa yang berubah (awalan kekal atau gugur).",
+        "Semasa membaca al-Quran, carilah dengan sengaja لَا terus di hadapan sesuatu fi'il dan semak akhirannya — ini melatih mata mengesan keadaan majzum."
+      ],
+      "tabellen": [
+        "nahy-nasara-matrix"
+      ],
+      "siehe": [
+        "amr",
+        "mudariMajzum"
+      ]
+    },
+    "personenmatrix": {
+      "titel": "Membaca Diri, Jantina dan Bilangan pada Akhiran",
+      "ar": "تَصْرِيف الفِعْل",
+      "umschrift": "taṣrīf al-fiʿl",
+      "erklaerung": [
+        "Kerana fi'il Arab membawa subjeknya sendiri, seseorang perlu belajar mengesan daripada awalan dan/atau akhiran siapa yang melakukan perbuatan itu: diri yang mana (pertama/kedua/ketiga), jantina yang mana (mudzakkar/muannath) dan bilangan yang mana (mufrad/tathniah/jamak). Pada madi, maklumat ini terletak sepenuhnya pada akhiran; pada mudari', ia terbahagi antara awalan (diri) dan akhiran (jantina/bilangan).",
+        "Sistem ini cukup tetap untuk dipelajari pada satu fi'il contoh sahaja dan kemudian dipindahkan kepada fi'il lain: 14 gabungan diri/jantina/bilangan yang sama (pada sesetengah bentuk hanya 5) berulang dengan akhiran yang sama pada setiap fi'il.",
+        "Tathniah (dwi) memerlukan perhatian khusus: ia hanya wujud pada diri kedua dan ketiga, tidak sekali-kali pada diri pertama — dalam Bahasa Arab tiada \"kami berdua\" sebagai bentuk fi'il yang tersendiri."
+      ],
+      "erkennung": [
+        "Pada madi, keseluruhan maklumat diri terletak pada akhiran (ـَ / ـَتْ / ـْتَ / ـْتُ / ـُوا / ـْنَا …).",
+        "Pada mudari', awalan menunjukkan diri (يتأن), akhiran menunjukkan jantina dan bilangan.",
+        "Diri pertama tidak mempunyai tathniah tersendiri — hanya mufrad dan jamak."
+      ],
+      "belege": [
+        {
+          "sure": 1,
+          "vers": 5,
+          "wort": 2,
+          "zeigt": "نَعْبُدُ (\"kami menyembah\") — awalan نَ menunjukkan diri pertama, tiada akhiran khas menunjukkan jamak (konvensyen: awalan نَ = \"kami\").",
+          "warum": "Segmen: person:1, number:pl."
+        },
+        {
+          "sure": 3,
+          "vers": 123,
+          "wort": 2,
+          "zeigt": "نَصَرَكُمُ (\"Dia telah menolong kamu\") — akar kata polos tanpa akhiran diri menunjukkan diri ketiga lelaki tunggal.",
+          "warum": "Segmen: person:3, gender:m, number:sg."
+        }
+      ],
+      "lernen": [
+        "Kaedah menutup: ambil jadual diri, tutup lajur Arab dengan tangan dan sebutkan dengan kuat bentuk bagi setiap baris diri/bilangan; kemudian sebaliknya, terbitkan maksud Melayu daripada bentuk Arab.",
+        "Kerjakan jadual secara sistematik dari bawah ke atas (diri pertama → diri kedua → diri ketiga), kerana itulah susunan pembelajaran yang biasa digunakan dalam kitab, dan akhiran tidak bercelaru semasa berbuat demikian.",
+        "Kesilapan biasa: mengelirukan diri ketiga perempuan tunggal pada mudari' dengan diri kedua lelaki tunggal, kerana kedua-dua bentuk kedengaran sama — di sini hanya konteks ayat dapat membantu."
+      ],
+      "tabellen": [
+        "verb-madi-nasara-aktiv-matrix",
+        "verb-mudari-nasara-aktiv-matrix",
+        "amr-nasara-matrix",
+        "nahy-nasara-matrix"
+      ],
+      "siehe": [
+        "madi",
+        "mudari",
+        "amr"
+      ]
+    },
+    "maluum": {
+      "titel": "Fi'il Ma'lum (Ayat Aktif)",
+      "ar": "مَعْلُوم",
+      "umschrift": "maʿlūm",
+      "erklaerung": [
+        "Ma'lum (\"diketahui/aktif\") ialah keadaan biasa fi'il yang tidak ditandakan secara khas: pelaku (fa'il) berdiri tetap sebagai subjek, dan fi'il itu menerangkan perbuatannya secara terus — \"dia telah menolong\", \"dia akan menolong\". Semua bentuk contoh daripada madi, mudari', amar dan nahi pada mulanya adalah ma'lum, selagi tiada tanda lain.",
+        "Hanya melalui pertukaran baris semata-mata (lihat Majhul) fi'il aktif bertukar menjadi pasif — dalam Bahasa Arab tanpa kata bantu, hanya dengan menukar baris akar kata."
+      ],
+      "erkennung": [
+        "Ma'lum ialah keadaan biasa tanpa tanda khas — fa'il (pelaku) menjadi subjek nahu.",
+        "Pada korpus, ma'lum ditunjukkan melalui ciri \"genus verbi\" yang kosong (tiada tag PASS).",
+        "Dapat juga dikenali daripada kemungkinan fa'il yang berdiri sendiri dalam keadaan rafa' mengikuti fi'il itu."
+      ],
+      "belege": [
+        {
+          "sure": 1,
+          "vers": 5,
+          "wort": 2,
+          "zeigt": "نَعْبُدُ (\"kami menyembah\") — bentuk aktif: \"kami\" bertindak sendiri, tiada corak baris pasif.",
+          "warum": "Segmen: pos:V, voice:null (tiada tag PASS pada korpus mentah) — keadaan asal aktif."
+        },
+        {
+          "sure": 3,
+          "vers": 123,
+          "wort": 2,
+          "zeigt": "نَصَرَكُمُ (\"Dia telah menolong kamu\") — bentuk aktif: \"Dia\" ialah pelaku, \"kamu\" ialah objek langsung.",
+          "warum": "Segmen: pos:V, voice:null, tense:perfect."
+        }
+      ],
+      "lernen": [
+        "Sentiasa hafazkan ma'lum berpasangan dengan majhul: sebutkan نَصَرَ/نُصِرَ berturut-turut, supaya perbezaan barisnya kekal di telinga.",
+        "Ingatlah: aktif ialah keadaan biasa, ketiadaan tanda khas ITULAH tandanya."
+      ],
+      "tabellen": [
+        "verb-madi-nasara-aktiv-matrix",
+        "verb-mudari-nasara-aktiv-matrix"
+      ],
+      "siehe": [
+        "majhul"
+      ]
+    },
+    "majhul": {
+      "titel": "Fi'il Majhul (Ayat Pasif)",
+      "ar": "مَجْهُول",
+      "umschrift": "majhūl",
+      "erklaerung": [
+        "Majhul (\"tidak diketahui/pasif\") berlaku apabila pelaku beralih ke latar belakang atau tidak disebutkan: daripada \"dia menolong\" menjadi \"dia ditolong\". Dalam Bahasa Arab, pasif tidak terbentuk melalui kata bantu, tetapi semata-mata melalui pertukaran baris akar kata — suatu prinsip yang luar biasa bagi tatabahasa Melayu, tetapi sepenuhnya tetap (teratur).",
+        "Pada masa lampau, semua huruf berbaris kecuali huruf terakhir menerima baris \"u\", huruf terakhir menerima \"i\": daripada نَصَرَ (\"dia telah menolong\") terhasillah نُصِرَ (\"dia telah ditolong\"). Pada masa kini, huruf pertama menerima \"u\", kesemua huruf berikutnya menerima \"a\": daripada يَنْصُرُ terhasillah يُنْصَرُ. Akhiran diri sendiri kekal tidak berubah — hanya baris dalaman akar kata yang beralih.",
+        "Kerana fa'il tiada pada ayat pasif, sebagai gantinya sering muncul naib al-fa'il (wakil pelaku) pada kedudukan nahunya — dalam Bahasa Melayu, kebiasaannya menjadi subjek nahu bagi ayat pasif tersebut."
+      ],
+      "erkennung": [
+        "Masa lampau pada pasif: baris \"u\" pada semua huruf akar kecuali yang terakhir, di situ \"i\" (نُصِرَ).",
+        "Masa kini pada pasif: \"u\" pada huruf pertama, \"a\" pada huruf-huruf selebihnya (يُنْصَرُ).",
+        "Akhiran diri tidak berubah semasa peralihan kepada pasif — hanya baris dalaman yang berubah."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 4,
+          "wort": 4,
+          "zeigt": "أُنزِلَ (\"diturunkan\") — pasif masa lampau bagi wazan IV: huruf pertama membawa \"u\", huruf terakhir membawa \"i\".",
+          "warum": "Segmen: pos:V, tense:perfect, voice:passive, verbForm:4."
+        },
+        {
+          "sure": 112,
+          "vers": 3,
+          "wort": 4,
+          "zeigt": "يُولَدْ (\"Dia diperanakkan\") — pasif masa kini: huruf pertama membawa \"u\".",
+          "warum": "Segmen: pos:V, tense:imperfect, voice:passive, mood:juss (di sini turut diletakkan pada keadaan majzum selepas لَمْ)."
+        }
+      ],
+      "lernen": [
+        "Sebutkan aktif dan pasif berpasangan dengan kuat: نَصَرَ/نُصِرَ, يَنْصُرُ/يُنْصَرُ — telinga menghafal corak baris lebih pantas berbanding peraturan di atas kertas.",
+        "Tutup lajur masa lampau pada jadual pasif dan terbitkan sendiri bentuk masa kini (dan sebaliknya), untuk mengukuhkan kedua-dua corak.",
+        "Kesilapan biasa: mengelirukan \"u\" pasif pada permulaan kalimah dengan awalan diri pertama أَ — semakan pada baris kedua (i pada masa lampau) memberi kejelasan."
+      ],
+      "tabellen": [
+        "verb-madi-nasara-passiv-matrix",
+        "verb-mudari-nasara-passiv-matrix"
+      ],
+      "siehe": [
+        "maluum",
+        "madi",
+        "mudari"
+      ]
+    },
+    "mudariMarfu": {
+      "titel": "Mudari' dalam Keadaan Asal (Marfu')",
+      "ar": "المُضَارِع المَرْفُوع",
+      "umschrift": "al-muḍāriʿ al-marfūʿ",
+      "erklaerung": [
+        "Marfu' ialah keadaan asal mudari' yang tidak bertanda: selagi tiada pencetus khas mendahuluinya, bentuk asal berakhir dengan dhommah (ـُ) — يَنْصُرُ, \"dia menolong\". Keadaan ini sepadan dengan status rafa' pada isim, dan turut menjadi \"keadaan biasa tanpa tanda\".",
+        "Kerana marfu' ialah keadaan piawai, ia tidak ditandakan secara khusus pada korpus — hanya mansub (melalui tag MOOD SUBJ) dan majzum (melalui tag MOOD JUS) yang ditandakan secara nyata. Ketiadaan sebarang tanda mod itu sendirilah bukti bagi marfu'.",
+        "Pada diri-diri yang membawa akhiran jamak و atau akhiran tathniah, marfu' turut memaparkan nun tambahan (يَنْصُرُونَ, \"mereka menolong\") — nun ini gugur pada mansub dan majzum."
+      ],
+      "erkennung": [
+        "Bentuk asal berakhir dengan dhommah (ـُ), tanpa harf pencetus yang mendahuluinya.",
+        "Pada tathniah/jamak, muncul nun tambahan pada hujung kalimah (ـُونَ / ـَانِ), yang gugur pada kedua-dua mod yang lain.",
+        "Tiada tag MOOD pada korpus — ketiadaan sebarang tanda mod menunjukkan keadaan asal."
+      ],
+      "belege": [
+        {
+          "sure": 1,
+          "vers": 5,
+          "wort": 2,
+          "zeigt": "نَعْبُدُ (\"kami menyembah\") — keadaan asal tanpa pencetus yang mendahului, akhiran berbaris dhommah.",
+          "warum": "Segmen: mood:null, tense:imperfect, dan tag mentah tidak membawa medan MOOD."
+        },
+        {
+          "sure": 2,
+          "vers": 268,
+          "wort": 2,
+          "zeigt": "يَعِدُكُمُ (\"dia berjanji kepada kamu\") — turut keadaan asal, akhiran berbaris dhommah.",
+          "warum": "Segmen: mood:null, tense:imperfect, tiada medan MOOD pada tag mentah."
+        }
+      ],
+      "lernen": [
+        "Fahamkan marfu' sebagai keadaan yang diperoleh apabila TIADA apa-apa yang mendahuluinya — tumpukan perhatian semasa berlatih kepada pengesanan kedua-dua keadaan lain (yang bertanda), marfu' ialah bakinya.",
+        "Bandingkan ketiga-tiga akhiran pada satu fi'il berturut-turut: يَنْصُرُ (marfu') – يَنْصُرَ (mansub) – يَنْصُرْ (majzum) — sebutkan dengan kuat secara berturutan."
+      ],
+      "tabellen": [
+        "verb-mudari-nasara-aktiv-matrix"
+      ],
+      "siehe": [
+        "mudariMansub",
+        "mudariMajzum"
+      ]
+    },
+    "mudariMansub": {
+      "titel": "Mudari' dalam Bentuk Ringan (Mansub)",
+      "ar": "المُضَارِع المَنْصُوب",
+      "umschrift": "al-muḍāriʿ al-manṣūb",
+      "erklaerung": [
+        "Harf-harf tertentu menukarkan dhommah pada hujung mudari' kepada fathah — \"bentuk ringan\", mansub. Pencetus utama ialah أَنْ (\"bahawa\"), لَنْ (menafikan masa depan, \"tidak akan\"), لِ/كَي/لِكَي (\"supaya\") dan حَتَّى (\"sehingga\"). Daripada يَنْصُرُ terhasillah selepas أَنْ bentuk أَنْ يَنْصُرَ.",
+        "Pada bentuk jamak dan tathniah, mansub turut menggugurkan nun akhir yang terdapat pada keadaan asal (marfu') — daripada يَنْصُرُونَ terhasillah لَنْ يَنْصُرُوا۟.",
+        "Dari segi makna, لَنْ membawa penafian masa depan yang tegas (\"tidak akan sekali-kali\"), manakala أَنْ selalunya membuka ayat kecil yang membawa niat atau sesuatu peristiwa yang belum berlaku."
+      ],
+      "erkennung": [
+        "Pencetus أَنْ / لَنْ / لِ / كَي / حَتَّى sejurus di hadapan mudari'.",
+        "Baris akhir bertukar daripada dhommah kepada fathah (ـُ → ـَ).",
+        "Pada jamak/tathniah, nun akhir gugur."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 24,
+          "wort": 5,
+          "zeigt": "وَلَن تَفْعَلُوا۟ (\"dan kamu tidak akan sekali-kali melakukannya\") — mansub selepas لَنْ, nun bentuk jamak sudah gugur.",
+          "warum": "Tag mentah segmen membawa MOOD:SUBJ; Segmen: tense:imperfect, person:2, number:pl."
+        },
+        {
+          "sure": 2,
+          "vers": 143,
+          "wort": 20,
+          "zeigt": "لِنَعْلَمَ (\"supaya Kami mengetahui\") — mansub selepas لِ (\"supaya\").",
+          "warum": "Tag mentah segmen membawa MOOD:SUBJ; Segmen: tense:imperfect, person:1, number:pl, root:علم."
+        }
+      ],
+      "lernen": [
+        "Hafazkan keempat-empat pencetus yang paling kerap أَنْ / لَنْ / لِ / حَتَّى sebagai senarai tetap, sebaik-baiknya berserta satu contoh al-Quran bagi setiap satu, bukan secara berasingan.",
+        "Berlatih khusus pada لَنْ, kerana ia membawa serentak mod (mansub) dan makna (penafian masa depan) — hafazkan kedua-duanya bersama.",
+        "Semak dahulu nun pada fi'il jamak: sekiranya gugur, ini menjadi petunjuk kuat bagi mansub atau majzum, bukannya marfu'."
+      ],
+      "tabellen": [],
+      "siehe": [
+        "mudariMarfu",
+        "mudariMajzum"
+      ]
+    },
+    "mudariMajzum": {
+      "titel": "Mudari' dalam Bentuk Paling Ringan (Majzum)",
+      "ar": "المُضَارِع المَجْزُوم",
+      "umschrift": "al-muḍāriʿ al-majzūm",
+      "erklaerung": [
+        "Majzum melangkah lebih jauh daripada mansub: sebagai ganti fathah, pada hujung fi'il tiada langsung baris, sebaliknya sukun. Pencetus terpenting ialah لَمْ dan إِنْ (\"jika\"). Yang amat penting untuk diperhatikan: لَمْ menafikan masa lampau, walaupun bentuk fi'il itu kelihatan luaran seperti masa kini — لَمْ يَلِدْ bermaksud \"Dia tidak beranak\", bukan \"Dia tidak sedang beranak\".",
+        "Majzum juga menjadi asas bagi perintah (amar) dan larangan (nahi): kedua-duanya berasal daripada bentuk majzum diri kedua — pada larangan, awalan تَ kekal dan لَا diletakkan di hadapannya, pada perintah awalan itu gugur dan hamzah bantuan mungkin diperlukan.",
+        "Di sini juga, pada bentuk jamak/tathniah, nun akhir gugur, sama seperti pada mansub."
+      ],
+      "erkennung": [
+        "Pencetus لَمْ atau إِنْ sejurus di hadapan mudari'.",
+        "Hujung fi'il berbaris sukun, bukan dhommah atau fathah.",
+        "لَمْ + majzum menafikan masa lampau dari segi nahu, walaupun bentuknya kelihatan seperti masa kini."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 24,
+          "wort": 3,
+          "zeigt": "فَإِن لَّمْ تَفْعَلُوا۟ (\"Dan jika kamu tidak melakukannya\") — majzum selepas لَمْ, akhiran berbaris sukun.",
+          "warum": "Segmen: mood:juss, tense:imperfect, person:2, number:pl; tag mentah membawa MOOD:JUS."
+        },
+        {
+          "sure": 112,
+          "vers": 3,
+          "wort": 2,
+          "zeigt": "لَمْ يَلِدْ (\"Dia tidak beranak\") — majzum selepas لَمْ; bentuknya kelihatan seperti masa kini, tetapi bermaksud masa lampau.",
+          "warum": "Segmen: mood:juss, tense:imperfect, verbForm:1; tag mentah membawa MOOD:JUS."
+        }
+      ],
+      "lernen": [
+        "Hafazkan لَمْ + majzum secara sedar sebagai pengecualian: perangkap paling ketara semasa menterjemah ialah membaca bentuk ini secara silap sebagai masa kini.",
+        "Susunkan amar, nahi dan majzum bersebelahan (ٱنْصُرْ / لَا تَنْصُرْ / لَمْ تَنْصُرْ) dan sebutkan persamaan yang wujud: sukun pada hujung kalimah.",
+        "Berlatih dengan jadual nahi: tutup akhirannya dan lengkapkannya sendiri, sebelum menyemak bentuk yang lengkap."
+      ],
+      "tabellen": [
+        "nahy-nasara-matrix"
+      ],
+      "siehe": [
+        "mudariMarfu",
+        "mudariMansub",
+        "nahy"
+      ]
+    },
+    "form1": {
+      "titel": "Wazan I – Tsulasi Mujarrad (Akar Asal)",
+      "ar": "الثُّلَاثِي المُجَرَّد",
+      "umschrift": "ath-thulāthī al-mujarrad",
+      "erklaerung": [
+        "Wazan I, \"akar tiga huruf yang polos\" (Tsulasi Mujarrad, dalam nota juga dipanggil \"keluarga kecil\"), terdiri daripada akar kata yang tulen tanpa sebarang tambahan: tiada huruf yang digandakan, tiada alif atau hamzah tambahan. Ia ialah makna asas, daripadanya kesembilan-sembilan wazan lain (bab II–X) diterbitkan melalui tambahan yang tetap.",
+        "Dalam kalangan wazan I sendiri, fi'il masih berbeza melalui baris tengah akar kata pada madi dan mudari' — enam kumpulan kecil (bab): a-a (فَتَحَ/يَفْتَحُ), a-i (ضَرَبَ/يَضْرِبُ), a-u (نَصَرَ/يَنْصُرُ), i-a (سَمِعَ/يَسْمَعُ), i-i (حَسِبَ/يَحْسِبُ) dan u-u (كَرُمَ/يَكْرُمُ). Baris tengah ini tidak boleh diramal dan mesti dipelajari satu demi satu bagi setiap fi'il.",
+        "Kerana pada korpus setiap wazan yang diperluas ditandakan dengan nilai dalam kurungan (II)–(X), maka berlaku konvensyen: sekiranya tanda ini tiada, ia bermaksud wazan I."
+      ],
+      "erkennung": [
+        "Tiada huruf tambahan, tiada huruf yang digandakan pada akar fi'il — hanya huruf akar yang tulen berserta baris.",
+        "Pada korpus, tiada tanda kurungan (I)-(X) langsung; ketiadaan tanda inilah yang menandakan wazan I.",
+        "Baris tengah pada madi/mudari' berbeza mengikut fi'il (enam kemungkinan corak) dan mesti dipelajari satu demi satu."
+      ],
+      "belege": [
+        {
+          "sure": 3,
+          "vers": 123,
+          "wort": 2,
+          "zeigt": "نَصَرَكُمُ (\"Dia telah menolong kamu\") — bentuk asal akar kata نصر tanpa sebarang tambahan.",
+          "warum": "Segmen: verbForm:1 (mengikut konvensyen, tiada nilai kurungan pada tag mentah), tense:perfect."
+        },
+        {
+          "sure": 7,
+          "vers": 157,
+          "wort": 35,
+          "zeigt": "وَنَصَرُوهُ (\"dan mereka menolongnya\") — bentuk asal yang sama, diri ketiga jamak.",
+          "warum": "Segmen: verbForm:1 (tiada nilai kurungan), tense:perfect."
+        }
+      ],
+      "lernen": [
+        "Bagi setiap fi'il baharu yang ditemui, terus hafazkan baris tengah pada madi DAN mudari' sekali — sebab itulah kamus sentiasa memberikan kedua-dua bentuk.",
+        "Berlatih pada keenam-enam kumpulan kecil (a-a, a-i, a-u, i-a, i-i, u-u) melalui fi'il contoh masing-masing, sehingga penentuannya menjadi automatik.",
+        "Ingat: wazan I ialah keadaan biasa — sesiapa yang hendak mengenali wazan yang diperluas (II–X) mesti dahulu tahu rupa bentuk \"kosong\" ini."
+      ],
+      "tabellen": [
+        "verb-madi-nasara-aktiv-matrix",
+        "bab-fataha-mahmooz-qaraa",
+        "bab-samia-mahmooz-amina"
+      ],
+      "siehe": [
+        "form2",
+        "form4",
+        "form10",
+        "jidhr"
+      ]
+    },
+    "form2": {
+      "titel": "Wazan II – Bab Fa''ala (Akar Bergandaan)",
+      "ar": "بَاب فَعَّلَ",
+      "umschrift": "bāb faʿʿala",
+      "erklaerung": [
+        "Wazan II menggandakan huruf tengah akar kata melalui syaddah (sabdu). Maknanya sering menjadi lebih kuat, berulang, atau menyebabkan sesuatu berlaku: daripada عَلِمَ (\"dia telah mengetahui\") terhasillah عَلَّمَ (\"dia telah mengajar\", menyampaikan ilmu secara intensif); daripada قَتَلَ (\"membunuh\") terhasillah قَتَّلَ (\"membunuh secara besar-besaran\", makna yang keterlaluan/hiperbola).",
+        "Wazan ini ialah yang paling kerap antara wazan-wazan yang diperluas dalam al-Quran, dan menghasilkan antara lain banyak fi'il yang menyebabkan sesuatu berlaku pada objek."
+      ],
+      "erkennung": [
+        "Tanda pengenalan ialah syaddah pada huruf tengah akar kata (فَعَّلَ dan bukan فَعَلَ).",
+        "Makna kebiasaannya lebih kuat, berulang, atau menyebabkan sesuatu berlaku, berbanding wazan asal.",
+        "Pada korpus ditandakan dengan nilai kurungan (II)."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 31,
+          "wort": 1,
+          "zeigt": "وَعَلَّمَ (\"dan Dia telah mengajar\") — syaddah pada huruf tengah ل, makna \"mengajar\" berbanding \"mengetahui\".",
+          "warum": "Segmen: verbForm:2 (tag mentah (II)), tense:perfect, root:علم."
+        },
+        {
+          "sure": 2,
+          "vers": 23,
+          "wort": 6,
+          "zeigt": "نَزَّلْنَا (\"Kami telah menurunkan\") — syaddah pada ز, makna intensif/berulang \"menurunkan\".",
+          "warum": "Segmen: verbForm:2 (tag mentah (II)), tense:perfect, root:نزل."
+        }
+      ],
+      "lernen": [
+        "Hafazkan corak فَعَّلَ secara visual: syaddah pada huruf tengah ialah satu-satunya, tetapi tetap, perbezaan berbanding wazan asal.",
+        "Bagi setiap fi'il wazan II yang baharu, bentukkan secara sedar pasangan wazan asalnya (علم/علّم), untuk mengukuhkan peralihan makna itu."
+      ],
+      "tabellen": [],
+      "siehe": [
+        "form1",
+        "form5",
+        "jidhr"
+      ]
+    },
+    "form3": {
+      "titel": "Wazan III – Bab Faa'ala (Akar Bersama)",
+      "ar": "بَاب فَاعَلَ",
+      "umschrift": "bāb fāʿala",
+      "erklaerung": [
+        "Wazan III menyisipkan alif panjang selepas huruf akar yang pertama (فَاعَلَ) dan kebiasaannya membawa makna melakukan sesuatu bersama seseorang atau menentang seseorang: جَاهَدَ, \"berusaha (bersama orang lain atau menentang sesuatu halangan), berjuang\". Perbuatan itu biasanya melibatkan pihak kedua.",
+        "Dari segi makna, perbezaan dengan wazan asal sering terletak tepat pada penglibatan pihak kedua ini — \"melakukan sesuatu terhadap seseorang\" berbanding sekadar \"melakukan sesuatu\"."
+      ],
+      "erkennung": [
+        "Tanda pengenalan ialah alif panjang selepas huruf akar pertama (فَاعَلَ dan bukan فَعَلَ).",
+        "Makna kebiasaannya \"melakukan sesuatu bersama/menentang seseorang\".",
+        "Pada korpus ditandakan dengan nilai kurungan (III)."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 51,
+          "wort": 2,
+          "zeigt": "وَٰعَدْنَا (\"Kami telah berjanji/membuat perjanjian\") — alif panjang selepas و, perbuatan bertimbal balik (satu perjanjian dengan Musa).",
+          "warum": "Segmen: verbForm:3 (tag mentah (III)), tense:perfect, root:وعد."
+        },
+        {
+          "sure": 2,
+          "vers": 100,
+          "wort": 2,
+          "zeigt": "عَٰهَدُوا۟ (\"mereka telah membuat perjanjian\") — alif panjang selepas ع, tanggungjawab bertimbal balik.",
+          "warum": "Segmen: verbForm:3 (tag mentah (III)), tense:perfect, root:عهد."
+        }
+      ],
+      "lernen": [
+        "Kukuhkan wazan III melalui makna \"bersama seseorang/menentang seseorang\" — ini lebih membantu berbanding menghafal corak semata-mata.",
+        "Bandingkan قَتَلَ (membunuh, I) dengan قَاتَلَ (berperang menentang, III) — teras akar yang sama, tetapi pihak kedua hanya hadir selepas alif ditambah."
+      ],
+      "tabellen": [],
+      "siehe": [
+        "form1",
+        "form6"
+      ]
+    },
+    "form4": {
+      "titel": "Wazan IV – Bab Af'ala (Akar Menyebabkan)",
+      "ar": "بَاب أَفْعَلَ",
+      "umschrift": "bāb afʿala",
+      "erklaerung": [
+        "Wazan IV meletakkan hamzah pada permulaan fi'il (أَفْعَلَ) dan kebiasaannya membawa makna menyebabkan sesuatu berlaku secara langsung dan segera — sering bersifat menyebabkan (kausatif): أَنْزَلَ, \"menurunkan\" (menyebabkan sesuatu turun), daripada نَزَلَ (\"turun\"). Wazan ini ialah wazan diperluas kedua paling kerap dalam al-Quran selepas wazan I.",
+        "Kerana hamzah tambahan itu terletak pada permulaan kalimah, ia bercantum pada sesetengah fi'il dengan hamzah akar atau dengan huruf akar pertama yang lemah — lihat entri Mahmuz dan Takhfif Hamzah bagi keadaan khas ini."
+      ],
+      "erkennung": [
+        "Tanda pengenalan ialah hamzah tambahan pada permulaan kalimah (أَفْعَلَ dan bukan فَعَلَ).",
+        "Makna kebiasaannya menyebabkan sesuatu: \"menyebabkan …\" atau \"melakukan sesuatu secara langsung/segera\".",
+        "Pada korpus ditandakan dengan nilai kurungan (IV); amat kerap juga ditemui dalam bentuk pasif."
+      ],
+      "belege": [
+        {
+          "sure": 1,
+          "vers": 7,
+          "wort": 3,
+          "zeigt": "أَنْعَمْتَ (\"Engkau telah mengurniakan nikmat\") — hamzah pada permulaan, makna menyebabkan \"memberi nikmat\".",
+          "warum": "Segmen: verbForm:4 (tag mentah (IV)), tense:perfect, root:نعم."
+        },
+        {
+          "sure": 2,
+          "vers": 4,
+          "wort": 4,
+          "zeigt": "أُنزِلَ (\"diturunkan\") — wazan IV dalam bentuk pasif: hamzah pada permulaan kekal walaupun pada bentuk pasif.",
+          "warum": "Segmen: verbForm:4 (tag mentah (IV)), tense:perfect, voice:passive, root:نزل."
+        }
+      ],
+      "lernen": [
+        "Hafazkan wazan IV melalui pasangan yang dikenali seperti نَزَلَ/أَنْزَلَ (turun/menurunkan) — logik menyebabkan \"X menyebabkan Y berlaku\" lebih mudah dihafal melalui makna berbanding bentuk semata-mata.",
+        "Perhatikan bahawa hamzah pada permulaan juga kekal pada mudari' (يُنْزِلُ), berbeza dengan sesetengah wazan lain."
+      ],
+      "tabellen": [],
+      "siehe": [
+        "form1",
+        "mahmuz",
+        "takhfif"
+      ]
+    },
+    "form5": {
+      "titel": "Wazan V – Bab Tafa''ala (Refleksif kepada Wazan II)",
+      "ar": "بَاب تَفَعَّلَ",
+      "umschrift": "bāb tafaʿʿala",
+      "erklaerung": [
+        "Wazan V meletakkan awalan تَ di hadapan corak wazan II dan menjadikan perbuatan yang dikuatkan itu bersifat refleksif atau beransur-ansur: daripada عَلَّمَ (\"mengajar\", II) terhasillah تَعَلَّمَ (\"belajar\", \"menyebabkan diri sendiri diajar\", V). Wazan V sering juga membawa makna bahawa sesuatu berlaku dengan susah payah atau secara beransur-ansur.",
+        "Satu tanda nahu: fi'il wazan V kebiasaannya bersifat lazim (tidak memerlukan objek langsung) dan tidak membentuk bentuk pasifnya sendiri."
+      ],
+      "erkennung": [
+        "Tanda pengenalan ialah awalan تَ di hadapan corak yang digandakan (تَفَعَّلَ dan bukan فَعَّلَ).",
+        "Makna kebiasaannya refleksif berbanding wazan II, atau \"bersusah payah/berlaku beransur-ansur\".",
+        "Pada korpus ditandakan dengan nilai kurungan (V)."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 37,
+          "wort": 1,
+          "zeigt": "فَتَلَقَّىٰٓ (\"lalu dia menerima/mengambilnya\") — awalan تَ di hadapan corak yang digandakan, nuansa refleksif (\"menerima untuk dirinya sendiri\").",
+          "warum": "Segmen: verbForm:5 (tag mentah (V)), tense:perfect, root:لقي."
+        },
+        {
+          "sure": 2,
+          "vers": 64,
+          "wort": 2,
+          "zeigt": "تَوَلَّيْتُم (\"kamu telah berpaling\") — awalan تَ, makna refleksif \"membuat diri sendiri berpaling\".",
+          "warum": "Segmen: verbForm:5 (tag mentah (V)), tense:perfect, root:ولي."
+        }
+      ],
+      "lernen": [
+        "Bandingkan wazan II dan wazan V terus pada pasangan kalimah (عَلَّمَ/تَعَلَّمَ, mengajar/belajar) — awalan تَ sebagai \"tanda refleksif\" paling mudah dihafal melalui pasangan sebegini.",
+        "Ingat: fi'il wazan V kebiasaannya tidak memerlukan objek langsung dan tidak mempunyai bentuk pasif tersendiri."
+      ],
+      "tabellen": [],
+      "siehe": [
+        "form2"
+      ]
+    },
+    "form6": {
+      "titel": "Wazan VI – Bab Tafaa'ala (Akar Bertimbal Balik)",
+      "ar": "بَاب تَفَاعَلَ",
+      "umschrift": "bāb tafāʿala",
+      "erklaerung": [
+        "Wazan VI meletakkan awalan تَ di hadapan corak wazan III dan kebiasaannya membawa makna perbuatan bertimbal balik dalam kalangan sesuatu kumpulan — kedua-dua (atau semua) pihak yang terlibat melakukan perkara yang sama antara satu sama lain: تَسَاءَلَ, \"bertanya-tanya sesama sendiri\". Ia juga boleh bermaksud berpura-pura melakukan sesuatu (\"berlagak seolah-olah\").",
+        "Sama seperti wazan V, teras wazan VI terletak pada awalan تَ yang bersifat refleksif/bertimbal balik — cuma di sini ia berada pada corak \"bersama\" bagi wazan III, bukan corak yang digandakan bagi wazan II."
+      ],
+      "erkennung": [
+        "Tanda pengenalan ialah awalan تَ di hadapan corak beralif (تَفَاعَلَ dan bukan فَاعَلَ).",
+        "Makna kebiasaannya bertimbal balik (\"melakukan sesuatu antara satu sama lain\") atau berpura-pura.",
+        "Pada korpus ditandakan dengan nilai kurungan (VI)."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 70,
+          "wort": 11,
+          "zeigt": "تَشَٰبَهَ (\"ia kelihatan sama/serupa bagi kami\") — keserupaan bertimbal balik antara lembu-lembu dalam ayat itu.",
+          "warum": "Segmen: verbForm:6 (tag mentah (VI)), tense:perfect, root:شبه."
+        },
+        {
+          "sure": 2,
+          "vers": 118,
+          "wort": 18,
+          "zeigt": "تَشَٰبَهَتْ (\"ia serupa antara satu sama lain\") — bentuk yang sama, diri ketiga perempuan tunggal (merujuk kepada \"hati-hati\").",
+          "warum": "Segmen: verbForm:6 (tag mentah (VI)), tense:perfect, root:شبه."
+        }
+      ],
+      "lernen": [
+        "Kukuhkan wazan VI melalui kalimah تَسَاءَلَ (\"bertanya-tanya sesama sendiri\") sebagai contoh sauh — daripadanya idea asas \"bertimbal balik\" mudah diterbitkan.",
+        "Bandingkan wazan III (فَاعَلَ, \"melakukan sesuatu bersama seseorang\") dengan wazan VI (تَفَاعَلَ, \"melakukannya sesama sendiri\") sebagai satu pasangan."
+      ],
+      "tabellen": [],
+      "siehe": [
+        "form3"
+      ]
+    },
+    "form7": {
+      "titel": "Wazan VII – Bab Infa'ala (Akar Seakan Pasif)",
+      "ar": "بَاب انْفَعَلَ",
+      "umschrift": "bāb infaʿala",
+      "erklaerung": [
+        "Wazan VII meletakkan awalan اِنْ di hadapan wazan asal dan kebiasaannya membawa makna perubahan keadaan yang berlaku dengan sendirinya — dari segi makna sering kelihatan seakan-akan pasif, tanpa menjadi pasif dari segi nahu yang sebenar: اِنْكَسَرَ, \"pecah (dengan sendirinya)\". Satu tanda penting: fi'il wazan ini pada asasnya lazim (tidak memerlukan objek) dan tidak membentuk bentuk pasif yang sebenar, tetapi sering diterjemahkan secara pasif dalam Bahasa Melayu.",
+        "Wazan ini lebih jarang dalam al-Quran berbanding wazan II–V, tetapi tetap ditemui pada penerangan mengenai kejadian alam dan perubahan keadaan yang tiba-tiba."
+      ],
+      "erkennung": [
+        "Tanda pengenalan ialah awalan اِنْ (اِنْفَعَلَ dan bukan فَعَلَ).",
+        "Makna kebiasaannya \"berlaku dengan sendirinya, berubah kepada sesuatu keadaan\" — dari segi makna seakan-akan pasif, tanpa bentuk pasif nahu tersendiri.",
+        "Pada korpus ditandakan dengan nilai kurungan (VII)."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 60,
+          "wort": 9,
+          "zeigt": "فَٱنفَجَرَتْ (\"maka terpancarlah / terpancut\") — awalan اِن, air terpancar dengan sendirinya daripada batu.",
+          "warum": "Segmen: verbForm:7 (tag mentah (VII)), tense:perfect, voice:null (tiada bentuk pasif tersendiri), root:فجر."
+        },
+        {
+          "sure": 3,
+          "vers": 144,
+          "wort": 14,
+          "zeigt": "ٱنقَلَبْتُمْ (\"kamu akan berbalik/berundur\") — awalan اِن, perubahan keadaan \"berbalik, beralih arah\".",
+          "warum": "Segmen: verbForm:7 (tag mentah (VII)), tense:perfect, root:قلب."
+        }
+      ],
+      "lernen": [
+        "Ingat contoh sauh اِنْكَسَرَ (\"pecah\") dan sengaja jangan terjemahkannya secara pasif harfiah, sebaliknya sebagai \"berlaku dengan sendirinya\".",
+        "Semak pada fi'il wazan VII bahawa tiada corak baris pasif yang wujud — bentuk ini kedengaran pasif dalam Bahasa Melayu, tetapi dari segi nahu ia bukan pasif."
+      ],
+      "tabellen": [],
+      "siehe": [
+        "majhul"
+      ]
+    },
+    "form8": {
+      "titel": "Wazan VIII – Bab Ifta'ala (Akar Refleksif/Bertimbal Balik)",
+      "ar": "بَاب افْتَعَلَ",
+      "umschrift": "bāb iftaʿala",
+      "erklaerung": [
+        "Wazan VIII menyisipkan تَ selepas huruf akar pertama (اِفْتَعَلَ) dan kebiasaannya membawa makna perbuatan yang refleksif, bertimbal balik, atau demi kepentingan diri sendiri: اِجْتَمَعَ, \"berhimpun\" (kumpulan itu menghimpunkan dirinya sendiri). Berbeza dengan wazan V/VI, تَ yang bersifat refleksif ini terletak di tengah kalimah, bukan di hadapannya.",
+        "Kerana تَ yang disisipkan itu terletak terus bersebelahan huruf akar pertama, ia bercantum pada huruf permulaan tertentu (contohnya د/ذ/ز/س/ص/ض/ط/ظ/ث) menjadi satu bunyi ganda tunggal (idgham) — kelihatan melalui syaddah sejurus selepas huruf akar pertama itu."
+      ],
+      "erkennung": [
+        "Tanda pengenalan ialah تَ yang disisipkan selepas huruf akar pertama (اِفْتَعَلَ dan bukan فَعَلَ), sering dikenali pada hamzah permulaan اِ.",
+        "Makna kebiasaannya refleksif atau \"demi kepentingan diri sendiri\" (melakukan sesuatu untuk diri sendiri).",
+        "Pada korpus ditandakan dengan nilai kurungan (VIII)."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 16,
+          "wort": 3,
+          "zeigt": "ٱشْتَرَوُا۟ (\"mereka telah membeli/menukar\") — تَ yang disisipkan selepas ش, nuansa refleksif (\"menukar untuk diri sendiri\").",
+          "warum": "Segmen: verbForm:8 (tag mentah (VIII)), tense:perfect, root:شري."
+        },
+        {
+          "sure": 2,
+          "vers": 29,
+          "wort": 10,
+          "zeigt": "ٱسْتَوَىٰٓ (\"Dia bersemayam/menuju dengan tersendiri\") — تَ yang disisipkan selepas س.",
+          "warum": "Segmen: verbForm:8 (tag mentah (VIII)), tense:perfect, root:سوي."
+        }
+      ],
+      "lernen": [
+        "Kukuhkan wazan VIII melalui اِجْتَمَعَ (\"berhimpun\") sebagai kalimah sauh — idea asas refleksif ini mudah dipindahkan kepada fi'il wazan VIII yang lain.",
+        "Perhatikan pada fi'il yang bermula dengan huruf daripada kumpulan د/ذ/ز/س/ص/ض/ط/ظ/ث sebarang syaddah sejurus pada permulaan kalimah — itulah تَ yang disisipkan, yang telah bercantum dengan huruf akar."
+      ],
+      "tabellen": [],
+      "siehe": [
+        "form1",
+        "idgham"
+      ]
+    },
+    "form9": {
+      "titel": "Wazan IX – Bab If'alla (Akar Warna dan Kecacatan)",
+      "ar": "بَاب افْعَلَّ",
+      "umschrift": "bāb ifʿalla",
+      "erklaerung": [
+        "Wazan IX menggandakan huruf akar yang terakhir (اِفْعَلَّ) dan terhad kepada satu bidang makna yang amat sempit: menerima warna dan kecacatan tubuh badan, kebiasaannya sebagai perubahan keadaan yang sementara — اِسْوَدَّ, \"menjadi hitam\", اِبْيَضَّ, \"menjadi putih/cerah\". Kerana penggandaan huruf terakhir ini, wazan IX mengikuti peraturan yang sama seperti fi'il mudaaf dalam konjugasinya.",
+        "Wazan ini jarang dalam al-Quran, tetapi ditemui pada tempat-tempat yang jelas, antaranya penerangan mengenai wajah-wajah yang menjadi hitam atau putih pada hari kiamat."
+      ],
+      "erkennung": [
+        "Tanda pengenalan ialah penggandaan huruf akar terakhir pada hujung kalimah (اِفْعَلَّ dan bukan فَعَلَ).",
+        "Makna hampir keseluruhannya terhad kepada warna dan kecacatan tubuh badan.",
+        "Pada korpus ditandakan dengan nilai kurungan (IX); amat jarang ditemui."
+      ],
+      "belege": [
+        {
+          "sure": 3,
+          "vers": 106,
+          "wort": 8,
+          "zeigt": "ٱسْوَدَّتْ (\"menjadi hitam\") — penggandaan huruf terakhir د, perubahan warna wajah.",
+          "warum": "Segmen: verbForm:9 (tag mentah (IX)), tense:perfect, root:سود."
+        },
+        {
+          "sure": 3,
+          "vers": 107,
+          "wort": 3,
+          "zeigt": "ٱبْيَضَّتْ (\"menjadi putih/cerah\") — penggandaan huruf terakhir ض, pasangan pada bahagian ayat yang sama.",
+          "warum": "Segmen: verbForm:9 (tag mentah (IX)), tense:perfect, root:بيض."
+        }
+      ],
+      "lernen": [
+        "Hafazkan wazan IX bukan melalui corak nahu, sebaliknya melalui kata bantu ingat makna \"warna dan kecacatan\" — bidang makna yang sempit inilah tanda pengenalan yang paling dipercayai.",
+        "Bandingkan kedua-dua contoh al-Quran ٱسْوَدَّتْ/ٱبْيَضَّتْ bersebelahan — kedua-duanya muncul berturut-turut dalam al-Quran sebagai pasangan yang berlawanan."
+      ],
+      "tabellen": [],
+      "siehe": [
+        "mudaaf"
+      ]
+    },
+    "form10": {
+      "titel": "Wazan X – Bab Istaf'ala (Akar Meminta)",
+      "ar": "بَاب اسْتَفْعَلَ",
+      "umschrift": "bāb istafʿala",
+      "erklaerung": [
+        "Wazan X meletakkan awalan اِسْتَ di hadapan wazan asal (اِسْتَفْعَلَ) dan kebiasaannya membawa makna meminta sesuatu, mengharapkan sesuatu, atau mencari sesuatu: اِسْتَغْفَرَ, \"memohon keampunan\" (daripada غَفَرَ, \"mengampunkan\"). Ia juga boleh bermaksud memandang sesuatu sebagai sifat tertentu atau mendakwakannya untuk diri sendiri.",
+        "Wazan ini amat kerap ditemui dalam al-Quran, antaranya di dalam surah al-Fatihah sendiri (نَسْتَعِينُ, \"kami memohon pertolongan\") — di situ terus bersebelahan dengan fi'il wazan I (نَعْبُدُ), yang menjadikan perbezaan makna antara wazan asal dan wazan X kelihatan dengan jelas."
+      ],
+      "erkennung": [
+        "Tanda pengenalan ialah awalan اِسْتَ pada permulaan kalimah (اِسْتَفْعَلَ dan bukan فَعَلَ).",
+        "Makna kebiasaannya \"meminta sesuatu, mengharapkan/mencari sesuatu\" atau \"memandang sesuatu sebagai …\".",
+        "Pada korpus ditandakan dengan nilai kurungan (X)."
+      ],
+      "belege": [
+        {
+          "sure": 1,
+          "vers": 5,
+          "wort": 4,
+          "zeigt": "نَسْتَعِينُ (\"kami memohon pertolongan\") — awalan اِسْتَ, makna \"memohon bantuan/pertolongan\".",
+          "warum": "Segmen: verbForm:10 (tag mentah (X)), tense:imperfect, root:عون."
+        },
+        {
+          "sure": 2,
+          "vers": 34,
+          "wort": 10,
+          "zeigt": "وَٱسْتَكْبَرَ (\"dan dia berlaku sombong\") — awalan اِسْتَ, makna \"memandang diri sendiri sebagai besar/mulia\" (Iblis).",
+          "warum": "Segmen: verbForm:10 (tag mentah (X)), tense:perfect, root:كبر."
+        }
+      ],
+      "lernen": [
+        "Gunakan pasangan al-Fatihah نَعْبُدُ/نَسْتَعِينُ sebagai contoh sauh: wazan I = melakukan perbuatan itu secara langsung, wazan X = meminta sesuatu/memohonnya.",
+        "Hafazkan اِسْتَغْفَرَ (\"memohon keampunan\") sebagai kalimah sauh kedua — daripada غَفَرَ (mengampunkan) melalui awalan اِسْتَ kepada permohonan keampunan."
+      ],
+      "tabellen": [],
+      "siehe": [
+        "form1",
+        "form4"
+      ]
+    },
+    "ismFail": {
+      "titel": "Isim Fa'il (Kata Nama Pelaku)",
+      "ar": "اِسْم الفَاعِل",
+      "umschrift": "ism al-fāʿil",
+      "erklaerung": [
+        "Isim al-Fa'il menerangkan pelaku itu sendiri — \"yang melakukan\", \"seorang yang melakukan [perbuatan]\". Daripada عَلَّمَ (\"mengajar\") diterbitkan مُعَلِّم, \"seorang guru\" (seorang yang mengajar/telah mengajar). Daripada wazan asal نَصَرَ diterbitkan نَاصِر, \"seorang penolong\". Setiap satu daripada kesepuluh wazan mempunyai corak isim fa'ilnya sendiri, tetapi boleh diramal.",
+        "Dari segi nahu, isim fa'il berkelakuan seperti kata adjektif/kata nama: ia membawa kes nahu, jantina dan bilangan seperti mana-mana isim, tetapi — berbeza dengan kata adjektif yang tulen — ia sendiri boleh mengawal objek, sekiranya fi'il asalnya bersifat muta'addi (memerlukan objek)."
+      ],
+      "erkennung": [
+        "Pada wazan asal (wazan I), dikenali melalui corak فَاعِل (alif panjang selepas huruf akar pertama, kasrah di bawah huruf kedua): نَاصِر، عَالِم، قَائِل.",
+        "Pada wazan yang diperluas (II–X), kebiasaannya dikenali melalui awalan مُ- berserta kasrah pada huruf kedua terakhir: مُعَلِّم، مُؤْمِن، مُسْتَقِيم.",
+        "Pada asasnya menunjukkan pembawa/pelaksana perbuatan, bukan perbuatan itu sendiri (itu ialah masdar)."
+      ],
+      "belege": [
+        {
+          "sure": 1,
+          "vers": 4,
+          "wort": 1,
+          "zeigt": "مَٰلِكِ (\"Pemilik/Pemerintah\") — isim fa'il daripada مَلَكَ, \"memiliki/memerintah\": yang memerintah.",
+          "warum": "Segmen: pos:N, derivation:activeParticiple, voice:active, root:ملك."
+        },
+        {
+          "sure": 2,
+          "vers": 5,
+          "wort": 8,
+          "zeigt": "ٱلْمُفْلِحُونَ (\"orang-orang yang berjaya\") — isim fa'il daripada wazan IV أَفْلَحَ, dikenali melalui awalan مُ-.",
+          "warum": "Segmen: pos:N, derivation:activeParticiple, verbForm:4, root:فلح."
+        }
+      ],
+      "lernen": [
+        "Hafazkan dahulu corak asal فَاعِل melalui beberapa contoh (نَاصِر، عَالِم، قَائِل), sebelum meneruskan kepada corak wazan yang diperluas.",
+        "Bagi setiap fi'il yang telah dipelajari, terbitkan secara sedar isim fa'ilnya — ini lebih pantas melatih corak berbanding menghafal isim fa'il secara berasingan.",
+        "Perhatikan perbezaan makna antara مَالِك (isim fa'il, \"yang memiliki/memerintah\") dengan kata adjektif biasa — isim fa'il kekal terikat dengan perbuatan fi'ilnya."
+      ],
+      "tabellen": [],
+      "siehe": [
+        "ismMaful",
+        "masdar",
+        "fiil"
+      ]
+    },
+    "ismMaful": {
+      "titel": "Isim Maf'ul (Kata Nama Objek)",
+      "ar": "اِسْم المَفْعُول",
+      "umschrift": "ism al-mafʿūl",
+      "erklaerung": [
+        "Isim al-Maf'ul menerangkan orang atau sesuatu yang menerima perbuatan itu — \"yang terkena\", \"sesuatu yang telah dilakukan\". Daripada عَلَّمَ (\"mengajar\") diterbitkan مُعَلَّم, \"seorang murid\" (seorang yang telah diajar). Daripada wazan asal نَصَرَ diterbitkan مَنْصُور, \"seorang yang telah ditolong\".",
+        "Pada wazan asal, isim maf'ul mengikuti corak مَفْعُول; pada wazan yang diperluas, ia menyerupai isim fa'il, tetapi membawa fathah pada huruf berkenaan, bukannya kasrah — perbezaan tunggal, tetapi menentukan."
+      ],
+      "erkennung": [
+        "Pada wazan asal (wazan I), dikenali melalui corak مَفْعُول: مَنْصُور، مَعْلُوم، مَغْضُوب.",
+        "Pada wazan yang diperluas, dikenali melalui awalan مُ- yang sama seperti isim fa'il, tetapi dengan fathah bukannya kasrah pada huruf kedua terakhir: مُطَهَّرَة (bukannya مُطَهِّرَة).",
+        "Menunjukkan yang menerima perbuatan itu, bukan pelakunya."
+      ],
+      "belege": [
+        {
+          "sure": 1,
+          "vers": 7,
+          "wort": 6,
+          "zeigt": "ٱلْمَغْضُوبِ (\"[mereka yang] dimurkai\") — isim maf'ul pada corak مَفْعُول daripada غَضِبَ, \"murka\".",
+          "warum": "Segmen: pos:N, derivation:passiveParticiple, voice:passive, root:غضب."
+        },
+        {
+          "sure": 2,
+          "vers": 25,
+          "wort": 31,
+          "zeigt": "مُّطَهَّرَةٌ (\"[pasangan-pasangan] yang disucikan\") — isim maf'ul wazan II, dikenali melalui fathah bukannya kasrah sebelum huruf terakhir.",
+          "warum": "Segmen: pos:ADJ, derivation:passiveParticiple, verbForm:2, root:طهر."
+        }
+      ],
+      "lernen": [
+        "Bandingkan isim fa'il dan isim maf'ul pada wazan asal secara terus: نَاصِر (penolong) berbanding مَنْصُور (yang ditolong) — akar kata yang sama, peranan yang bertentangan.",
+        "Pada wazan yang diperluas: sebutkan pasangan kalimah dengan kuat (مُعَلِّم/مُعَلَّم) dan perhatikan secara sedar satu-satunya perbezaan — kasrah atau fathah sebelum huruf terakhir."
+      ],
+      "tabellen": [],
+      "siehe": [
+        "ismFail",
+        "majhul"
+      ]
+    },
+    "masdar": {
+      "titel": "Masdar (Kata Nama Terbitan Fi'il)",
+      "ar": "المَصْدَر",
+      "umschrift": "al-maṣdar",
+      "erklaerung": [
+        "Masdar ialah idea/perbuatan asas sesuatu fi'il sebagai kata nama — \"mengajar\", \"berkata\", \"menurunkan\" — terlepas daripada masa dan diri. Setiap fi'il Arab mempunyai masdarnya (pada wazan asal sering tidak teratur, pada wazan yang diperluas II–X boleh diramal secara tetap).",
+        "Masdar memenuhi fungsi kata nama biasa dalam ayat: ia boleh menjadi subjek, objek, atau sebahagian idafah. Yang amat penting ialah penggunaannya sebagai masdar maf'ul mutlak, di mana ia menegaskan perbuatan fi'il utama dengan berasal daripada akar kata yang sama (contohnya قَتَلَهُ قَتْلًا, \"dia benar-benar/bersungguh-sungguh membunuhnya\")."
+      ],
+      "erkennung": [
+        "Pada wazan asal, tiada corak yang seragam — masdar mesti dipelajari satu demi satu bagi setiap fi'il (قَوْل، عِلْم، نَصْر).",
+        "Pada wazan yang diperluas, corak selalunya boleh diramal, misalnya تَفْعِيل bagi wazan II (تَعْلِيم) atau إِفْعَال bagi wazan IV (إِنْزَال، إِحْسَان).",
+        "Berfungsi dari segi nahu seperti kata nama, tetapi membawa maksud perbuatan yang tulen tanpa kaitan masa."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 59,
+          "wort": 4,
+          "zeigt": "قَوْلًا (\"suatu perkataan/ucapan\") — masdar wazan asal daripada قَالَ, \"berkata\".",
+          "warum": "Segmen: pos:N, derivation:verbalNoun, root:قول."
+        },
+        {
+          "sure": 2,
+          "vers": 83,
+          "wort": 11,
+          "zeigt": "إِحْسَانًا (\"kebaikan, layanan yang baik\") — masdar wazan IV (corak إِفْعَال) daripada أَحْسَنَ.",
+          "warum": "Segmen: pos:N, derivation:verbalNoun, verbForm:4, root:حسن."
+        }
+      ],
+      "lernen": [
+        "Pada wazan asal, hafazkan masdar terus bersama fi'ilnya sebagai satu pasangan tetap (قَالَ – قَوْل) — di sini tiada peraturan, hanya hafazan.",
+        "Pada wazan yang diperluas, cukup mempelajari corak masdar bagi setiap wazan sekali sahaja (تَفْعِيل untuk II, إِفْعَال untuk IV dan seterusnya) dan kemudian dipindahkan kepada mana-mana akar kata."
+      ],
+      "tabellen": [],
+      "siehe": [
+        "ismFail",
+        "ismMaful"
+      ]
+    },
+    "ismTafdil": {
+      "titel": "Isim Tafdhil (Bentuk Perbandingan dan Peningkatan)",
+      "ar": "اِسْم التَّفْضِيل",
+      "umschrift": "ism at-tafḍīl",
+      "erklaerung": [
+        "Isim at-Tafdhil membandingkan atau meningkatkan sesuatu sifat antara dua (atau lebih) perkara — \"lebih besar\", \"yang paling besar\". Ia kebiasaannya dibentuk pada corak أَفْعَل: daripada كَبِير (\"besar\") terhasillah أَكْبَر (\"lebih besar/paling besar\"), daripada عَلِيم/عَالِم (\"mengetahui\") terhasillah أَعْلَم (\"lebih mengetahui, lebih mengetahui berbanding sesiapa pun\").",
+        "Sekiranya مِن (\"daripada\") mengikutinya, perbandingan itu jelas (\"lebih besar daripada …\"). Tanpa مِن, tetapi dengan kata sandang اَلْ atau sebagai unsur pertama idafah, ia menjadi superlatif (\"yang paling besar\")."
+      ],
+      "erkennung": [
+        "Corak asas أَفْعَل: hamzah pada permulaan kalimah, fathah–sukun–fathah pada ketiga-tiga huruf akar (أَكْبَر، أَعْلَم، أَحْسَن).",
+        "Dengan مِن selepasnya: perbandingan yang jelas (\"lebih besar daripada\").",
+        "Dengan kata sandang اَلْ atau dalam idafah, tanpa مِن: superlatif (\"yang paling besar/baik\")."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 140,
+          "wort": 15,
+          "zeigt": "وَٱللَّهُ أَعْلَمُ (\"dan Allah lebih mengetahui\") — corak أَفْعَل daripada عَلِمَ, di sini tanpa مِن sebagai superlatif mutlak.",
+          "warum": "Kalimah pada korpus ditandakan sebagai pos:N dengan lemma أَعْلَم, root:علم."
+        },
+        {
+          "sure": 2,
+          "vers": 217,
+          "wort": 22,
+          "zeigt": "أَكْبَرُ (\"lebih besar/lebih berat\") — corak أَفْعَل daripada كَبُرَ, di sini bersifat perbandingan (\"... lebih berat daripada berperang di dalamnya\").",
+          "warum": "Kalimah pada korpus ditandakan sebagai pos:N dengan lemma أَكْبَر, root:كبر."
+        }
+      ],
+      "lernen": [
+        "Hafazkan dahulu corak أَفْعَل pada contoh-contoh al-Quran yang paling kerap (أَكْبَر، أَعْلَم، أَقْرَب، أَحْسَن), sebelum membentuk corak sendiri.",
+        "Berlatih perbezaan \"dengan مِن = perbandingan\" berbanding \"dengan اَلْ/idafah tanpa مِن = superlatif\" pada kalimah yang sama dalam kedua-dua binaan."
+      ],
+      "tabellen": [],
+      "siehe": [
+        "ismFail"
+      ]
+    },
+    "ismZamanMakan": {
+      "titel": "Isim Zaman dan Makan (Kata Nama Tempat dan Masa)",
+      "ar": "اِسْم الزَّمَان وَالمَكَان",
+      "umschrift": "ism az-zamān wa-l-makān",
+      "erklaerung": [
+        "Kata nama tempat/masa (Zarf/Isim az-Zaman wa-l-Makan) menerangkan tempat atau masa berlakunya sesuatu perbuatan — \"tempat sujud/sembahyang\", \"waktu terbit matahari\". Ia kebiasaannya dibentuk daripada wazan asal pada corak مَفْعِل atau مَفْعَل: daripada سَجَدَ (\"sujud\") diterbitkan مَسْجِد, \"tempat sujud\" (masjid); daripada شَرَقَ (\"terbit [matahari]\") diterbitkan مَشْرِق, \"tempat/waktu terbit matahari, timur\".",
+        "Berbeza dengan isim maf'ul, yang juga sering bermula dengan مَـ, kata nama tempat/masa tidak membawa makna peranan perbuatan (\"yang menerima\"), sebaliknya makna tempat/masa yang tulen — kedua-dua kategori ini hanya dapat dibezakan melalui makna dalam ayat."
+      ],
+      "erkennung": [
+        "Sering pada corak مَفْعِل atau مَفْعَل: مَسْجِد، مَشْرِق، مَغْرِب، مَوْعِد.",
+        "Menunjukkan tempat atau masa, bukan seseorang/sesuatu yang menerima perbuatan.",
+        "Rupa luarannya menyerupai isim maf'ul — pembezaannya dibuat melalui makna dalam konteks."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 114,
+          "wort": 5,
+          "zeigt": "مَسَٰجِدَ (\"tempat-tempat sujud/masjid-masjid\") — kata nama tempat daripada سَجَدَ pada corak مَفْعِل, bentuk jamak.",
+          "warum": "Kalimah pada korpus ditandakan sebagai pos:N dengan lemma مَسْجِد, root:سجد, derivation:null (bukan isim fa'il/maf'ul)."
+        },
+        {
+          "sure": 2,
+          "vers": 115,
+          "wort": 2,
+          "zeigt": "ٱلْمَشْرِقُ (\"timur/tempat terbit matahari\") — kata nama tempat daripada شَرَقَ pada corak مَفْعِل.",
+          "warum": "Kalimah pada korpus ditandakan sebagai pos:N dengan lemma مَشْرِق, root:شرق, derivation:null (bukan isim fa'il/maf'ul)."
+        }
+      ],
+      "lernen": [
+        "Hafazkan مَسْجِد sebagai kalimah sauh bagi keseluruhan corak ini: \"tempat berlakunya [perbuatan fi'il]\".",
+        "Bandingkan مَشْرِق/مَغْرِب (timur/barat, tempat terbit/terbenam matahari) sebagai pasangan kalimah — kedua-duanya pada corak yang sama, arah mata angin yang bertentangan."
+      ],
+      "tabellen": [],
+      "siehe": [
+        "ismMaful"
+      ]
+    },
+    "sahih": {
+      "titel": "Fi'il Sahih (Fi'il yang Sempurna)",
+      "ar": "الفِعْل الصَّحِيح",
+      "umschrift": "al-fiʿl aṣ-ṣaḥīḥ",
+      "erklaerung": [
+        "Sahih (\"sempurna, tiada cacat\") menerangkan fi'il yang ketiga-tiga huruf akarnya tiada apa-apa keistimewaan: tiada hamzah, tiada salah satu daripada tiga huruf lemah alif/wau/ya', tiada huruf yang digandakan. نَصَرَ, فَتَحَ dan سَمِعَ ialah contoh fi'il sahih yang klasik. Fi'il-fi'il ini menjadi rujukan \"mudah\" tempat konjugasi dipelajari dahulu, sebelum beralih kepada keadaan-keadaan khas.",
+        "Semua peraturan mengenai madi, mudari', amar, nahi dan kesepuluh wazan telah ditunjukkan setakat ini pada fi'il contoh نَصَرَ, kerana ia tepat sebuah fi'il sahih: akar kata dan akhirannya berkelakuan sepenuhnya teratur, tanpa sebarang huruf yang gugur, bertukar, atau bercantum."
+      ],
+      "erkennung": [
+        "Tiada hamzah pada akar kata.",
+        "Tiada satu pun daripada ketiga-tiga huruf akar ialah alif, wau atau ya'.",
+        "Tiada huruf akar kedua/ketiga yang digandakan (sama)."
+      ],
+      "belege": [
+        {
+          "sure": 3,
+          "vers": 123,
+          "wort": 2,
+          "zeigt": "نَصَرَكُمُ (\"Dia telah menolong kamu\") — akar kata ن-ص-ر: tiada hamzah, tiada huruf lemah, tiada penggandaan.",
+          "warum": "root:نصر — ketiga-tiga huruf tidak tergolong dalam mana-mana kumpulan khas."
+        },
+        {
+          "sure": 7,
+          "vers": 157,
+          "wort": 35,
+          "zeigt": "وَنَصَرُوهُ (\"dan mereka menolongnya\") — akar kata sahih yang sama ن-ص-ر.",
+          "warum": "root:نصر — mengesahkan pengelasan yang sama pada satu lagi contoh."
+        }
+      ],
+      "lernen": [
+        "Pelajari dahulu konjugasi sepenuhnya pada satu fi'il sahih (نَصَرَ) — hanya selepas corak ini dikuasai, barulah keadaan-keadaan khas berbaloi dipelajari, kerana kita dapat melihat dengan jelas apa yang berubah pada setiap satu.",
+        "Hafazkan tiga soalan semakan untuk terus mengelaskan fi'il yang baharu: Ada hamzah? Ada huruf lemah (و/ي/ا)? Ada penggandaan? Jika tidak pada ketiga-tiganya = sahih."
+      ],
+      "tabellen": [
+        "verb-madi-nasara-aktiv-matrix"
+      ],
+      "siehe": [
+        "mahmuz",
+        "mithal",
+        "ajwaf",
+        "naqis",
+        "mudaaf"
+      ]
+    },
+    "mahmuz": {
+      "titel": "Fi'il Mahmuz (Fi'il yang Berhamzah)",
+      "ar": "المَهْمُوز",
+      "umschrift": "al-mahmūz",
+      "erklaerung": [
+        "Fi'il mahmuz membawa hamzah sebagai salah satu daripada ketiga-tiga huruf akarnya. Mengikut kedudukannya, dibezakan mahmuz al-fa' (hamzah sebagai huruf akar pertama, contohnya أَكَلَ, \"makan\"), mahmuz al-'ain (hamzah sebagai huruf akar kedua, contohnya سَأَلَ, \"bertanya\") dan mahmuz al-lam (hamzah sebagai huruf akar ketiga, contohnya قَرَأَ, \"membaca/melafazkan\").",
+        "Pada fi'il-fi'il ini, dua perubahan bunyi boleh berlaku: takhfif (hamzah bertukar menjadi alif, wau atau ya' mengikut baris huruf sebelumnya) dan hazaf (hamzah gugur sepenuhnya). Hazaf melibatkan tepat empat fi'il dalam Bahasa Arab pada bentuk perintah: أَكَلَ→كُلْ, أَخَذَ→خُذْ, أَمَرَ→مُرْ, سَأَلَ→سَلْ — pada keempat-empatnya, hamzah gugur sepenuhnya dalam bentuk perintah."
+      ],
+      "erkennung": [
+        "Tepat satu daripada ketiga-tiga huruf akar ialah hamzah (ء/أ/إ/ؤ/ئ).",
+        "Kedudukan hamzah (huruf akar pertama, kedua atau ketiga) menentukan sub-jenisnya (al-fa', al-'ain, al-lam).",
+        "Pada bentuk perintah bagi keempat-empat fi'il أَكَلَ/أَخَذَ/أَمَرَ/سَأَلَ, hamzah gugur sepenuhnya — satu ciri pengenalan yang boleh dipercayai bagi kumpulan khas ini."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 57,
+          "wort": 8,
+          "zeigt": "كُلُوا۟ (\"Makanlah!\") — bentuk perintah bagi أَكَلَ (mahmuz al-fa'): hamzah permulaan telah gugur sepenuhnya dalam bentuk perintah.",
+          "warum": "root:اكل, Segmen: pos:V, tense:imperative — lemma أَكَلَ membawa hamzah, tetapi bentuk perintah itu sendiri tidak lagi."
+        },
+        {
+          "sure": 17,
+          "vers": 14,
+          "wort": 1,
+          "zeigt": "ٱقْرَأْ (\"Bacalah!\") — bentuk perintah bagi قَرَأَ (mahmuz al-lam): di sini hamzah kekal sebagai huruf akar ketiga.",
+          "warum": "root:قرا, Segmen: pos:V, tense:imperative — lemma قَرَأَ membawa hamzah di hujung kalimah, di sini ia dikekalkan dalam bentuk perintah."
+        }
+      ],
+      "lernen": [
+        "Pelajari ketiga-tiga sub-jenis melalui kalimah contohnya: أَكَلَ (al-fa'), سَأَلَ (al-'ain), قَرَأَ (al-lam) — kedudukan hamzah dalam kalimah itu terus mendedahkan sub-jenisnya.",
+        "Hafazkan keempat-empat bentuk perintah hazaf كُلْ/خُذْ/مُرْ/سَلْ sebagai satu senarai tertutup yang tidak boleh diterbitkan.",
+        "Gunakan jadual bab (قَرَأَ dan أَمِنَ) untuk berlatih menyebut dengan kuat: tutup satu lajur setiap kali dan lengkapkan sendiri masdar, isim fa'il/isim maf'ul dan bentuk perintah."
+      ],
+      "tabellen": [
+        "bab-fataha-mahmooz-qaraa",
+        "bab-samia-mahmooz-amina"
+      ],
+      "siehe": [
+        "takhfif",
+        "hadhf",
+        "sahih"
+      ]
+    },
+    "mithal": {
+      "titel": "Fi'il Mithal (Fi'il Berhuruf Akar Pertama Lemah)",
+      "ar": "المِثَال",
+      "umschrift": "al-mithāl",
+      "erklaerung": [
+        "Mithal ialah fi'il mu'tal (fi'il yang mempunyai huruf lemah wau/ya'/alif pada akar katanya), yang mana khususnya huruf akar pertama adalah lemah. Sekiranya huruf pertama ini ialah wau, sub-jenisnya dinamakan mithal wawi (contohnya وَعَدَ, \"berjanji\"); sekiranya ia ialah ya', dinamakan mithal ya'i.",
+        "Fenomena yang paling ketara: pada kebanyakan fi'il mithal wawi, wau permulaan gugur sepenuhnya pada bentuk mudari' melalui hazaf — daripada وَعَدَ (\"dia telah berjanji\") tidak terhasil يَوْعِدُ pada mudari', sebaliknya يَعِدُ (\"dia berjanji\"). Kekosongan pada permulaan kalimah ini merupakan ciri pengenalan paling boleh dipercayai bagi fi'il mithal secara keseluruhan."
+      ],
+      "erkennung": [
+        "Huruf akar pertama ialah wau atau ya' (pada masa lampau kebiasaannya masih kelihatan: وَعَدَ، وَلَدَ).",
+        "Pada bentuk mudari', wau permulaan ini kebiasaannya gugur tanpa ganti (وَعَدَ → يَعِدُ, bukan يَوْعِدُ).",
+        "Sebaliknya, pada masa lampau itu sendiri, huruf lemah tersebut selalunya masih kelihatan."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 268,
+          "wort": 2,
+          "zeigt": "يَعِدُكُمُ (\"dia menjanjikan kamu\") — bentuk mudari' bagi وَعَدَ: wau permulaan pada akar kata و-ع-د telah hilang sepenuhnya.",
+          "warum": "root:وعد (huruf akar pertama و), Segmen: tense:imperfect, verbForm:1 — tiada و dalam bentuk kalimah walaupun akar katanya و-ع-د."
+        },
+        {
+          "sure": 112,
+          "vers": 3,
+          "wort": 2,
+          "zeigt": "يَلِدْ (\"dia melahirkan/menjadi bapa\") — bentuk mudari' bagi وَلَدَ: di sini juga, wau permulaan pada akar kata و-ل-د telah gugur.",
+          "warum": "root:ولد (huruf akar pertama و), Segmen: tense:imperfect, mood:juss — tiada و dalam bentuk kalimah."
+        }
+      ],
+      "lernen": [
+        "Ingati pasangan asas وَعَدَ/يَعِدُ (\"berjanji\") sebagai contoh peraturan: wau kelihatan pada masa lampau, gugur pada masa kini.",
+        "Bandingkan bentuk pasif يُوعَدُ (wau kekal dalam bentuk pasif!) dengan bentuk aktif يَعِدُ — ini menunjukkan bahawa kegugurannya khusus terikat kepada mudari' aktif (ma'lum)."
+      ],
+      "tabellen": [],
+      "siehe": [
+        "hadhf",
+        "qalb",
+        "idgham"
+      ]
+    },
+    "ajwaf": {
+      "titel": "Fi'il Ajwaf (Fi'il Berongga)",
+      "ar": "الأَجْوَف",
+      "umschrift": "al-ajwaf",
+      "erklaerung": [
+        "Ajwaf ialah fi'il mu'tal yang huruf akar tengahnya lemah (wau atau ya') — namanya secara harfiah bermaksud \"berongga\", kerana huruf tengah ini pada kebanyakan bentuk melebur menjadi sekadar baris panjang atau hilang sepenuhnya. قَالَ (\"berkata\") berasal daripada akar kata ق-و-ل (ajwaf wawi), خَافَ (\"takut\") daripada خ-و-ف.",
+        "Huruf lemah tengah ini bertukar pada masa lampau melalui kalb menjadi alif panjang (قَوَلَ → قَالَ), gugur sepenuhnya pada diri-diri tertentu (sebelum akhiran yang bermula dengan konsonan) melalui hazaf (قَالَ + تُ → قُلْتُ, bukan قَالْتُ), dan pada bentuk perintah selalunya diringkaskan menjadi sekadar baris panjang (قُلْ, \"Katakanlah!\")."
+      ],
+      "erkennung": [
+        "Huruf akar tengah (kedua) ialah wau atau ya'.",
+        "Pada masa lampau diri ketiga, huruf ini kebiasaannya muncul sebagai alif panjang (قَالَ dan bukan قَوَلَ).",
+        "Sebelum akhiran diri yang bermula dengan konsonan, kalimah itu memendek dengan ketara (قُلْتُ dan bukan قَالْتُ)."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 11,
+          "wort": 8,
+          "zeigt": "قَالُوٓا۟ (\"mereka telah berkata\") — akar kata ق-و-ل, wau tengah kelihatan sebagai alif panjang (kalb).",
+          "warum": "root:قول (huruf akar tengah و), Segmen: tense:perfect, verbForm:1."
+        },
+        {
+          "sure": 2,
+          "vers": 229,
+          "wort": 18,
+          "zeigt": "يَخَافَآ (\"mereka berdua takut\") — akar kata خ-و-ف, wau tengah turut muncul sebagai alif.",
+          "warum": "root:خوف (huruf akar tengah و), Segmen: tense:imperfect, number:du."
+        }
+      ],
+      "lernen": [
+        "Pelajari قَالَ sebagai fi'il asas dan berlatih secara khusus pada diri-diri yang berakhiran bermula dengan konsonan (قُلْتُ، قُلْنَا), kerana di situlah huruf tengah hilang sepenuhnya — inilah titik tersasul yang paling kerap berlaku.",
+        "Sebutkan bentuk perintah dan masa kini dengan kuat bersebelahan: قُلْ (Katakanlah!) di sisi يَقُولُ (dia berkata) — ini menjadikan pemendekan pada bentuk perintah dapat didengar."
+      ],
+      "tabellen": [],
+      "siehe": [
+        "qalb"
+      ]
+    },
+    "naqis": {
+      "titel": "Fi'il Naqis (Fi'il Tidak Sempurna)",
+      "ar": "النَّاقِص",
+      "umschrift": "an-nāqiṣ",
+      "erklaerung": [
+        "Naqis ialah fi'il mu'tal yang huruf akar terakhirnya lemah (wau atau ya'). Sekiranya ia ialah wau, sub-jenisnya dinamakan naqis wawi (دَعَا, \"memanggil/berdoa\", daripada د-ع-و); sekiranya ia ialah ya', dinamakan naqis ya'i (رَمَى, \"melempar\", daripada ر-م-ي). Nama \"tidak sempurna\" ini merujuk kepada hakikat bahawa huruf akar terakhir pada kebanyakan bentuk tidak lagi dapat dikenal pasti dengan jelas sebagai konsonan.",
+        "Pada masa lampau diri ketiga, huruf lemah terakhir kebiasaannya melebur menjadi alif panjang atau alif maqsurah (دَعَوَ → دَعَا). Sebaliknya, sebelum akhiran diri yang bermula dengan konsonan, huruf lemah itu selalunya hanya menjadi tiada baris (taskin) atau gugur sepenuhnya pada bentuk-bentuk tertentu."
+      ],
+      "erkennung": [
+        "Huruf akar terakhir (ketiga) ialah wau atau ya'.",
+        "Pada masa lampau diri ketiga lelaki tunggal, kalimah itu kebiasaannya berakhir dengan alif (sama ada panjang atau ditulis pendek), bukan dengan huruf akar sebenar.",
+        "Sebelum akhiran diri yang bermula dengan konsonan, huruf lemah akhir itu selalunya disebut dengan sangat pendek atau berubah."
+      ],
+      "belege": [
+        {
+          "sure": 3,
+          "vers": 38,
+          "wort": 2,
+          "zeigt": "دَعَا (\"dia telah memanggil/berdoa\") — akar kata د-ع-و, wau terakhir muncul sebagai alif.",
+          "warum": "root:دعو (huruf akar terakhir و), Segmen: tense:perfect, verbForm:1."
+        },
+        {
+          "sure": 8,
+          "vers": 17,
+          "wort": 7,
+          "zeigt": "رَمَيْتَ (\"engkau telah melempar\") — akar kata ر-م-ي, ya' terakhir dikekalkan sebagai baris pendek sebelum akhiran diri ـتَ.",
+          "warum": "root:رمي (huruf akar terakhir ي), Segmen: tense:perfect, person:2, gender:m, number:sg."
+        }
+      ],
+      "lernen": [
+        "Pelajari دَعَا (memanggil/berdoa, wawi) dan رَمَى (melempar, ya'i) sebagai satu contoh asas bagi setiap sub-jenis — corak asasnya dapat dilihat pada kedua-duanya.",
+        "Berlatih secara khusus pada masa lampau diri ketiga tunggal, kerana di situlah huruf akar paling \"hilang\" (bertukar menjadi sekadar alif) — inilah tempat yang paling ketara."
+      ],
+      "tabellen": [],
+      "siehe": [
+        "qalb"
+      ]
+    },
+    "lafif": {
+      "titel": "Fi'il Lafif (Fi'il Berhuruf Lemah Berganda)",
+      "ar": "اللَّفِيف",
+      "umschrift": "al-lafīf",
+      "erklaerung": [
+        "Lafif ialah fi'il yang mempunyai dua daripada ketiga-tiga huruf akarnya lemah sekaligus (wau atau ya') — ia dengan itu menggabungkan dua keadaan khas serentak. Dibezakan lafif maqrun (\"digabungkan\"), yang mana huruf akar kedua dan ketiga lemah (رَوَى, \"menceritakan/meriwayatkan\" — gabungan ajwaf dan naqis), dan lafif mafruq (\"dipisahkan\"), yang mana huruf akar pertama dan ketiga lemah (وَفَى, \"menunaikan/setia\" — gabungan mithal dan naqis).",
+        "Oleh kerana dua keadaan khas bertembung serentak pada lafif, pada dasarnya peraturan perubahan yang sama seperti pada jenis fi'il asalnya terpakai (peraturan naqis bagi kedua-dua sub-jenis, ditambah hazaf mithal pada jenis mafruq) — hanya sahaja diterapkan dua kali."
+      ],
+      "erkennung": [
+        "Dua daripada ketiga-tiga huruf akar ialah wau atau ya'.",
+        "Lafif maqrun: huruf akar kedua dan ketiga lemah (gabungan ajwaf + naqis), contohnya رَوَى.",
+        "Lafif mafruq: huruf akar pertama dan ketiga lemah (gabungan mithal + naqis), contohnya وَفَى."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 28,
+          "wort": 6,
+          "zeigt": "فَأَحْيَٰكُمْ (\"kemudian Dia menghidupkan kamu\") — akar kata ح-ي-ي: huruf akar kedua dan ketiga kedua-duanya ya' (lafif maqrun).",
+          "warum": "root:حيي (huruf akar kedua dan ketiga kedua-duanya lemah), Segmen: pos:V, verbForm:4, tense:perfect."
+        },
+        {
+          "sure": 2,
+          "vers": 40,
+          "wort": 8,
+          "zeigt": "وَأَوْفُوا۟ (\"dan tunaikanlah/patuhilah!\") — akar kata و-ف-ي: huruf akar pertama dan ketiga kedua-duanya lemah (lafif mafruq).",
+          "warum": "root:وفي (huruf akar pertama dan ketiga kedua-duanya lemah), Segmen: pos:V, verbForm:4, tense:imperative."
+        }
+      ],
+      "lernen": [
+        "Jangan anggap lafif sebagai satu set peraturan baharu yang berasingan, sebaliknya sebagai gabungan dua keadaan khas yang sudah dikenali — kuasai dahulu mithal, ajwaf dan naqis secara berasingan, barulah lafif menjadi mudah.",
+        "Pada fi'il lafif yang baharu, kenal pasti dahulu kedua-dua kedudukan lemah tersebut (contohnya \"huruf akar pertama dan ketiga\" = mafruq) dan kemudian gunakan peraturan-peraturan tersendiri yang telah diketahui secara berturutan."
+      ],
+      "tabellen": [],
+      "siehe": [
+        "mithal",
+        "ajwaf",
+        "naqis"
+      ]
+    },
+    "mudaaf": {
+      "titel": "Fi'il Mudaaf (Fi'il Huruf Akar Berganda)",
+      "ar": "المُضَاعَف",
+      "umschrift": "al-muḍāʿaf",
+      "erklaerung": [
+        "Mudaaf mempunyai huruf akar kedua dan ketiga yang sama (berganda) — akar katanya sebenarnya dwikonsonan, tetapi menurut tradisi dikira sebagai akar kata tiga huruf dengan pengulangan: رَدَّ (\"mengembalikan\") berasal daripada ر-د-د. Pada wazan asal, kedua-dua huruf yang sama ini bercantum melalui idgham menjadi satu huruf bersyaddah: رَدَدَ → رَدَّ.",
+        "Percantuman ini tidak berlaku di mana-mana sahaja: sebelum akhiran diri yang bermula dengan konsonan (diri pertama/kedua pada masa lampau: ـتُ، ـتَ، ـنَا …), kedua-dua huruf kekal berasingan (رَدَدْتُ, bukan رَدَّتُ), kerana jika tidak akan terhasil dua huruf tidak berbaris berturut-turut. Perkara yang sama berlaku pada mudari' majzum: يَرُدُّ (\"dia mengembalikan\") bercantum, tetapi يَرْتَدِدْ (wazan VIII, majzum) kekal berasingan secara terkecuali kerana sukun yang mengikutinya."
+      ],
+      "erkennung": [
+        "Huruf akar kedua dan ketiga adalah sama (ر-د-د, م-د-د, ض-ل-ل …).",
+        "Pada kebanyakan bentuk, kedua-dua huruf yang sama ini muncul bercantum dengan satu syaddah (رَدَّ dan bukan رَدَدَ).",
+        "Sebelum akhiran diri yang bermula dengan konsonan atau dalam keadaan jazam (akhiran bersukun), kedua-dua huruf kekal kelihatan berasingan secara terkecuali."
+      ],
+      "belege": [
+        {
+          "sure": 4,
+          "vers": 83,
+          "wort": 11,
+          "zeigt": "رَدُّوهُ (\"mereka telah mengembalikannya\") — huruf akar kedua dan ketiga د-د bercantum menjadi satu syaddah.",
+          "warum": "root:ردد (huruf akar kedua/ketiga sama), Segmen: tense:perfect, verbForm:1 — bentuk kalimah membawa satu syaddah."
+        },
+        {
+          "sure": 2,
+          "vers": 217,
+          "wort": 39,
+          "zeigt": "يَرْتَدِدْ (\"dia murtad\") — akar kata yang sama ر-د-د, tetapi dalam keadaan jazam, kedua-dua huruf د kekal berasingan, tiada syaddah.",
+          "warum": "root:ردد, Segmen: mood:juss, verbForm:8 — pengecualian daripada percantuman yang lazimnya berlaku."
+        }
+      ],
+      "lernen": [
+        "Pelajari رَدَّ sebagai fi'il asas dan berlatih secara khusus perbezaan رَدَّ (bercantum) berbanding رَدَدْتُ (berasingan, sebelum akhiran konsonan) — perbezaan inilah yang paling kerap diuji.",
+        "Ingati contoh pengecualian يَرْتَدِدْ: dalam keadaan jazam, huruf berganda kekal berasingan kerana jika tidak dua sukun akan bertembung — sebutkannya secara sedar dalam keadaan berasingan."
+      ],
+      "tabellen": [],
+      "siehe": [
+        "idgham"
+      ]
+    },
+    "takhfif": {
+      "titel": "Takhfif Hamzah (Peringanan Hamzah)",
+      "ar": "التَّخْفِيف",
+      "umschrift": "at-takhfīf",
+      "erklaerung": [
+        "Takhfif (\"peringanan\") merujuk kepada pertukaran hamzah menjadi alif, wau atau ya', bergantung kepada baris huruf sebelumnya — semata-mata satu kemudahan sebutan/penulisan yang tidak mengubah identiti akar kata. Paling kerap ia melibatkan pertembungan dua hamzah: apabila dua hamzah bertembung, dan yang kedua sakin (tidak berbaris), hamzah kedua itu bertukar menjadi alif, wau atau ya' mengikut baris huruf yang sebelumnya.",
+        "Satu contoh biasa diberikan oleh wazan IV bagi akar kata yang sendirinya bermula dengan hamzah: hamzah awalan wazan IV bertembung dengan hamzah akar kata. Daripada bentuk teori أَأْمَنَ, melalui takhfif terhasillah bentuk yang sebenarnya ditulis آمَنَ (\"dia telah beriman\") — kedua-dua hamzah bercantum menjadi satu alif bermad."
+      ],
+      "erkennung": [
+        "Dua hamzah bertembung, yang kedua sakin (tidak berbaris).",
+        "Hamzah kedua bertukar menjadi alif, wau atau ya' mengikut baris hamzah pertama.",
+        "Penampilan paling kerap dalam Al-Quran: satu alif bermad (آ) pada permulaan kalimah, pada tempat yang sepatutnya dua hamzah bertembung (آمَنَ dan bukan أَأْمَنَ)."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 41,
+          "wort": 1,
+          "zeigt": "وَءَامِنُوا۟ (\"dan berimanlah!\") — bentuk perintah bagi wazan IV آمَنَ: kedua-dua hamzah (awalan + permulaan akar kata) telah bercantum menjadi satu gabungan alif/hamzah.",
+          "warum": "root:امن, Segmen: pos:V, verbForm:4, tense:imperative — lemma ءَامَنَ menunjukkan penulisan yang telah bercantum."
+        },
+        {
+          "sure": 2,
+          "vers": 13,
+          "wort": 6,
+          "zeigt": "ءَامَنَ (\"dia telah beriman\") — masa lampau bagi wazan IV yang sama, percantuman takhfif yang sama pada permulaan kalimah.",
+          "warum": "root:امن, Segmen: pos:V, verbForm:4, tense:perfect."
+        }
+      ],
+      "lernen": [
+        "Pelajari آمَنَ sebagai contoh asas dan ingati: pada tempat yang sepatutnya dua hamzah bertembung, dalam tulisan Al-Quran kebiasaannya muncul satu alif bermad, bukan dua tanda hamzah yang berasingan.",
+        "Jangan keliru antara takhfif dengan hazaf: pada takhfif hamzah bertukar, pada hazaf ia gugur sepenuhnya (lihat empat pengecualian bentuk perintah)."
+      ],
+      "tabellen": [
+        "bab-fataha-mahmooz-qaraa",
+        "bab-samia-mahmooz-amina"
+      ],
+      "siehe": [
+        "mahmuz"
+      ]
+    },
+    "hadhf": {
+      "titel": "Hazaf (Kegugurun Satu Huruf)",
+      "ar": "الحَذْف",
+      "umschrift": "al-ḥadhf",
+      "erklaerung": [
+        "Hazaf bermaksud semata-mata penggugurkan satu huruf. Kes yang paling terkenal melibatkan bentuk perintah bagi tepat empat fi'il mahmuz, yang mana hamzah permulaan atau hamzah akar kata hilang sepenuhnya dalam bentuk perintah: أَكَلَ يَأْكُلُ → كُلْ (\"Makanlah!\"), أَخَذَ يَأْخُذُ → خُذْ (\"Ambillah!\"), أَمَرَ يَأْمُرُ → مُرْ (\"Perintahlah!\"), سَأَلَ يَسْأَلُ → سَلْ (\"Tanyalah!\"). Namun pada مُرْ dan سَلْ, hazaf hanya berlaku pada permulaan ayat; sekiranya didahului oleh satu kalimah yang boleh disambungkan dengan fi'il itu, hamzah dikekalkan (وَأْمُرْ, وَٱسْأَلْ).",
+        "Hazaf turut berlaku pada fi'il mithal dan naqis: pada mithal, wau permulaan gugur pada mudari' (وَعَدَ → يَعِدُ dan bukan يَوْعِدُ); pada naqis, huruf lemah akhir gugur pada bentuk jamak tertentu selepas taskin sebelumnya."
+      ],
+      "erkennung": [
+        "Satu huruf yang dijangka hilang sepenuhnya dalam kalimah yang sebenarnya ditulis.",
+        "Pada keempat-empat bentuk perintah mahmuz كُلْ/خُذْ/مُرْ/سَلْ, hazaf bersifat leksikal tetap — bukan satu peraturan umum, sebaliknya satu senarai tertutup.",
+        "Pada fi'il mithal, dikenali daripada hakikat bahawa wau permulaan akar kata tidak lagi muncul di mana-mana pada bentuk mudari'."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 57,
+          "wort": 8,
+          "zeigt": "كُلُوا۟ (\"Makanlah!\") — bentuk perintah bagi أَكَلَ: hamzah permulaan telah gugur sepenuhnya.",
+          "warum": "root:اكل, Segmen: pos:V, tense:imperative — lemma membawa hamzah, bentuk perintah tidak."
+        },
+        {
+          "sure": 7,
+          "vers": 199,
+          "wort": 1,
+          "zeigt": "خُذِ (\"Ambillah!\") — bentuk perintah bagi أَخَذَ: di sini juga, hamzah permulaan telah gugur sepenuhnya.",
+          "warum": "root:اخذ, Segmen: pos:V, tense:imperative — lemma أَخَذَ membawa hamzah, bentuk perintah tidak."
+        }
+      ],
+      "lernen": [
+        "Hafazkan keempat-empat bentuk perintah hazaf كُلْ/خُذْ/مُرْ/سَلْ sebagai satu senarai tetap yang tidak boleh diterbitkan, bersama bentuk asalnya.",
+        "Beri perhatian tambahan kepada kedudukan dalam ayat bagi مُرْ/سَلْ: hamzah hanya gugur pada permulaan ayat, jika tidak ia kekal (وَأْمُرْ).",
+        "Bandingkan secara sedar hazaf (huruf gugur sepenuhnya) dengan takhfif (huruf hanya bertukar) — kedua-duanya selalunya melibatkan hamzah yang sama, tetapi dengan hasil yang berbeza."
+      ],
+      "tabellen": [],
+      "siehe": [
+        "mahmuz",
+        "mithal",
+        "amr"
+      ]
+    },
+    "idgham": {
+      "titel": "Idgham (Percantuman Dua Huruf)",
+      "ar": "الإِدْغَام",
+      "umschrift": "al-idghām",
+      "erklaerung": [
+        "Idgham merujuk kepada percantuman dua huruf yang sama (atau sangat serupa) yang bertembung menjadi satu huruf sahaja yang ditandakan dengan syaddah. Ini paling jelas kelihatan pada fi'il mudaaf (huruf akar kedua/ketiga berganda): رَدَدَ bercantum menjadi رَدَّ, يَرْدُدُ menjadi يَرُدُّ.",
+        "Namun idgham bukanlah sesuatu yang berlaku dengan sendirinya di mana-mana: ia tidak berlaku sekiranya akan terhasil dua huruf tidak berbaris berturut-turut — misalnya sebelum akhiran diri yang bermula dengan konsonan (رَدَدْتُ kekal berasingan) atau dalam keadaan jazam (يَرْتَدِدْ kekal berasingan, kerana sukun pada hujung kalimah jika tidak akan terus bertembung dengan sukun kedua). Pada wazan VIII juga, تَ yang disisipkan bercantum dengan huruf permulaan tertentu pada akar kata (ٱتَّخَذَ daripada ٱوْتَخَذَ, di mana ت juga mengambil alih kedudukan و/ي yang asal)."
+      ],
+      "erkennung": [
+        "Dua huruf yang sama (atau sangat serupa) bertembung secara terus dan bercantum menjadi satu huruf bersyaddah.",
+        "Percantuman tidak berlaku sekiranya selepasnya terdapat satu lagi huruf tidak berbaris — pada keadaan itu, kedua-dua huruf kekal kelihatan berasingan.",
+        "Pada fi'il mudaaf, ciri yang paling boleh dipercayai: syaddah pada huruf akar terakhir bagi kebanyakan, tetapi tidak semua, diri."
+      ],
+      "belege": [
+        {
+          "sure": 4,
+          "vers": 83,
+          "wort": 11,
+          "zeigt": "رَدُّوهُ (\"mereka telah melaporkannya\") — kedua-dua huruf د pada akar kata ر-د-د telah bercantum menjadi satu huruf bersyaddah.",
+          "warum": "root:ردد, Segmen: tense:perfect — bentuk kalimah membawa satu syaddah dan bukan dua huruf د yang berasingan."
+        },
+        {
+          "sure": 2,
+          "vers": 217,
+          "wort": 39,
+          "zeigt": "يَرْتَدِدْ (\"dia murtad\") — akar kata yang sama ر-د-د, tetapi dalam keadaan jazam, kedua-dua huruf د kekal berasingan secara terkecuali, tiada idgham.",
+          "warum": "root:ردد, Segmen: mood:juss — contoh sebaliknya tanpa syaddah, kerana jika tidak dua sukun akan bertembung."
+        }
+      ],
+      "lernen": [
+        "Sebutkan pasangan kontras يَرُدُّ (bercantum) / يَرْتَدِدْ (berasingan, jazam) dengan kuat — sebab perbezaan ini (mengelakkan dua sukun) paling mudah diingati melalui contoh sebutan.",
+        "Pada setiap fi'il mudaaf, tanyakan dahulu soalan semakan ini: \"Adakah selepasnya terdapat huruf tidak berbaris?\" — hanya jika jawapannya tidak, kedua-dua huruf yang sama itu bercantum."
+      ],
+      "tabellen": [],
+      "siehe": [
+        "mudaaf",
+        "mithal"
+      ]
+    },
+    "qalb": {
+      "titel": "Qalb (Perubahan Satu Huruf)",
+      "ar": "القَلْب",
+      "umschrift": "al-qalb",
+      "erklaerung": [
+        "Qalb merujuk kepada penukaran satu huruf menjadi huruf lain, kebiasaannya dicetuskan oleh persekitaran baris. Pada fi'il ajwaf (huruf akar tengah lemah), wau dan ya' bertukar pada masa lampau menjadi alif panjang: خَوِفَ menjadi خَافَ, بَيَعَ menjadi بَاعَ. Pada bentuk pasif pula, wau bertukar menjadi ya', dengan kasrah pada huruf akar pertama: خُوِفَ menjadi خِيفَ.",
+        "Pada fi'il naqis (huruf akar terakhir lemah), peraturan asas yang sama terpakai pada masa lampau diri ketiga: wau dan ya' bertukar menjadi alif (سَعَيَ → سَعَى, دَعَوَ → دَعَا). Sekiranya wau itu didahului oleh kasrah, ia bertukar menjadi ya' sebaliknya (دُعِوَ → دُعِيَ). Qalb dengan itu merupakan mekanisme sebenar yang mendasari kebanyakan fenomena yang diterangkan pada ajwaf dan naqis."
+      ],
+      "erkennung": [
+        "Satu huruf akar wau atau ya' muncul sebagai alif dalam bentuk kalimah yang sebenar.",
+        "Lazimnya melibatkan masa lampau diri ketiga bagi fi'il ajwaf dan naqis.",
+        "Pada bentuk pasif pula, wau selalunya bertukar menjadi ya', bukan alif."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 11,
+          "wort": 8,
+          "zeigt": "قَالُوٓا۟ (\"mereka telah berkata\") — akar kata ق-و-ل menunjukkan wau tengah sebagai alif panjang (qalb pada ajwaf).",
+          "warum": "root:قول (huruf akar tengah و), Segmen: tense:perfect — bentuk kalimah mengandungi ا dan bukan و."
+        },
+        {
+          "sure": 3,
+          "vers": 38,
+          "wort": 2,
+          "zeigt": "دَعَا (\"dia telah memanggil/berdoa\") — akar kata د-ع-و menunjukkan wau terakhir sebagai alif (qalb pada naqis).",
+          "warum": "root:دعو (huruf akar terakhir و), Segmen: tense:perfect — bentuk kalimah berakhir dengan ا dan bukan و."
+        }
+      ],
+      "lernen": [
+        "Bandingkan kedua-dua contoh قَالَ (ajwaf, huruf tengah menjadi alif) dan دَعَا (naqis, huruf terakhir menjadi alif) secara bersebelahan — peraturan penukaran yang sama, dua kedudukan yang berbeza.",
+        "Ingati petua ini: wau/ya' + bunyi \"a\" panjang berdekatan → hampir selalu ditulis sebagai alif, itulah qalb."
+      ],
+      "tabellen": [],
+      "siehe": [
+        "ajwaf",
+        "naqis",
+        "mithal"
+      ]
+    }
+  }
+}

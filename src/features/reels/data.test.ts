@@ -103,4 +103,28 @@ describe('fetchReelsIndex — Normalisierung', () => {
       await expect(fetchReelsIndex()).resolves.toEqual({ reels: [] });
     }
   });
+
+  // `order`/`visible` (ohne-Release-Steuerung, Audit 2026-09-05, gleiches
+  // Muster wie bei den Videos).
+  it('bevorzugt `order` gegenueber episode_no/index', async () => {
+    mockResponse(200, {
+      reels: [
+        { id: 'a', video_url: 'https://v/a', episode_no: 1, index: 1, order: 2 },
+        { id: 'b', video_url: 'https://v/b', episode_no: 1, index: 2, order: 1 },
+      ],
+    });
+    const { reels } = await fetchReelsIndex();
+    expect(reels.map((r) => r.id)).toEqual(['b', 'a']);
+  });
+
+  it('blendet `visible: false` aus, laesst alles andere sichtbar', async () => {
+    mockResponse(200, {
+      reels: [
+        { id: 'sichtbar', video_url: 'https://v/1' },
+        { id: 'ausgeblendet', video_url: 'https://v/2', visible: false },
+      ],
+    });
+    const { reels } = await fetchReelsIndex();
+    expect(reels.map((r) => r.id)).toEqual(['sichtbar']);
+  });
 });

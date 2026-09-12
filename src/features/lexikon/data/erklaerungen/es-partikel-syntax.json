@@ -1,0 +1,1090 @@
+{
+  "schema": 1,
+  "lang": "es",
+  "bereich": "partikel-syntax",
+  "eintraege": {
+    "harf": {
+      "titel": "La partícula",
+      "ar": "حَرْف",
+      "umschrift": "Harf",
+      "erklaerung": [
+        "Harf es la tercera clase de palabras del árabe, junto al ism (nombre) y el fiʿl (verbo). Un harf, tomado por sí solo, no tiene un significado autónomo — solo cobra sentido junto con la palabra que le sigue.",
+        "Mientras que el ism y el fiʿl llevan rasgos como género, número o tiempo verbal, el harf no tiene estas categorías. Su única tarea es una función gramatical: unir, negar, preguntar, condicionar, interpelar, enfatizar o fijar el estado de la palabra siguiente.",
+        "Como el harf es tan versátil, se divide en muchos subgrupos con comportamiento propio — preposiciones, conjunciones, partículas de negación, partículas interrogativas, partículas condicionales y más. Cada uno de estos grupos se trata en una entrada propia."
+      ],
+      "erkennung": [
+        "Un harf no se flexiona como un ism (sin estado, sin número, sin género) y suele ser muy corto — a menudo solo de una a tres letras.",
+        "En el análisis de palabras, un segmento harf lleva una abreviatura propia en lugar de N (nombre) o V (verbo) — por ejemplo P para preposición, CONJ para conjunción o NEG para negación.",
+        "Una palabra entera puede incluso constar exclusivamente de varios segmentos harf encadenados, sin contener una sola raíz de ism o de fiʿl."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 9,
+          "wort": 5,
+          "zeigt": "la palabra وَمَا consta exclusivamente de dos segmentos harf (وَ y مَا), sin raíz de ism ni de fiʿl",
+          "warum": "muestra que un harf, tomado por sí solo, realmente no lleva ningún campo propio como género o número — aquí se apilan dos partículas en una única palabra del corpus"
+        },
+        {
+          "sure": 1,
+          "vers": 1,
+          "wort": 1,
+          "zeigt": "el segmento prefijo بِ en بِسْمِ lleva la etiqueta POS P (harf jarr)",
+          "warum": "documenta en la primerísima palabra del Corán un segundo ejemplo de harf — aquí una preposición en lugar de una negación o conjunción"
+        }
+      ],
+      "lernen": [
+        "Aprende primero la división general: preposición, conjunción, negación, partícula interrogativa, partícula condicional, partícula de vocativo — y solo después las palabras concretas de cada grupo.",
+        "Practica con versículos reales a separar un segmento harf de la raíz: ¿qué queda si se suprime mentalmente el harf? ¿El resto sigue teniendo sentido por sí solo?",
+        "Graba para cada grupo la pregunta decisiva: ¿este harf cambia el estado (iʿrāb) de la palabra siguiente o no?"
+      ],
+      "tabellen": [],
+      "siehe": [
+        "huruf-jarr",
+        "huruf-atf",
+        "verneinung"
+      ]
+    },
+    "huruf-jarr": {
+      "titel": "Las preposiciones",
+      "ar": "حُرُوف الجَرّ",
+      "umschrift": "Huruf al-Jarr",
+      "erklaerung": [
+        "Un ḥarf jarr (preposición) coloca el ism que le sigue inmediatamente en el estado de jarr (genitivo). Juntos, el harf y el ism forman el sintagma jārr-majrūr: el jārr es la propia preposición, el majrūr es el ism puesto por ella en estado de jarr.",
+        "Entre los ḥarf jarr más frecuentes están بِ (con/por medio de), لِ (para), كَ (como), مِن (de/desde), عَن (sobre/acerca de), عَلَى (sobre), إِلَى (hacia), فِي (en) y حَتَّى (hasta) — además de وَ y تَ como raras introducciones de juramento (por ejemplo solo con los nombres de Alá).",
+        "Los ḥarf jarr de una sola letra (بِـ، كَـ، لِـ، تَـ، وَـ) no se escriben como palabra independiente, sino que se añaden directamente al ism siguiente y llevan un signo vocálico fijo.",
+        "La traducción española de un ḥarf jarr no debe tomarse siempre al pie de la letra: qué preposición corresponde a qué verbo sigue a menudo una lógica árabe propia, que puede apartarse de la preposición española."
+      ],
+      "erkennung": [
+        "Un ḥarf jarr está inmediatamente antes de un ism (que también puede ser un pronombre) — nunca antes de un verbo.",
+        "Cuidado con los ḥarf jarr de una sola letra: la misma letra al principio de la palabra puede ser sencillamente parte de la raíz (p. ej. la كَـ de كَافِر pertenece a la raíz كفر, no es un ḥarf jarr)."
+      ],
+      "belege": [
+        {
+          "sure": 1,
+          "vers": 1,
+          "wort": 1,
+          "zeigt": "بِسْمِ empieza con el ḥarf jarr unido بِ, que pone el ism siguiente (سْمِ) en estado de jarr",
+          "warum": "documenta en la primerísima palabra del Corán la forma de una sola letra, directamente unida, de un ḥarf jarr"
+        },
+        {
+          "sure": 1,
+          "vers": 2,
+          "wort": 2,
+          "zeigt": "el segmento prefijo لِ en لِلَّهِ lleva la etiqueta POS P",
+          "warum": "documenta un segundo ḥarf jarr de una sola letra (لِ, «para») con vocal kasra fija"
+        }
+      ],
+      "lernen": [
+        "Aprende de memoria la lista de los ḥarf jarr separando primero las formas de una letra de las de varias letras — las de una letra necesitan además su signo vocálico fijo.",
+        "Busca en un versículo elegido por ti cada sintagma jārr-majrūr y nombra por separado el jārr y el majrūr.",
+        "Con cada verbo nuevo que aprendas, graba de inmediato qué ḥarf jarr le corresponde típicamente — eso evita errores de traducción posteriores."
+      ],
+      "tabellen": [],
+      "siehe": [
+        "harf",
+        "mudaf-ilayh"
+      ]
+    },
+    "huruf-atf": {
+      "titel": "Las conjunciones",
+      "ar": "حُرُوف العَطْف",
+      "umschrift": "Huruf al-'Atf",
+      "erklaerung": [
+        "Los ḥurūf al-ʿaṭf unen dos unidades lingüísticas del mismo rango — ismes sueltos, sintagmas completos u oraciones enteras. El elemento que sigue se llama maʿṭūf; el precedente, aquel al que se enlaza, maʿṭūf ʿalayhi.",
+        "El efecto más importante de un ḥarf al-ʿaṭf: transfiere sin cambios el estado gramatical (iʿrāb) del maʿṭūf ʿalayhi al maʿṭūf. Si la primera palabra está en estado de jarr, la palabra enlazada también está en estado de jarr — incluso a lo largo de varias palabras unidas.",
+        "La conjunción más frecuente es وَ (y) — une de forma neutra, sin afirmar un orden ni un intervalo temporal. فَ une con el sentido de «y entonces/enseguida» (sucesión inmediata), ثُمَّ con el sentido de «y luego» con un intervalo temporal mayor. أَوْ significa «o» en el sentido de una elección; أَمْ también «o», pero típicamente dentro de una pregunta («¿cuál de los dos?»). Junto a ellas, بَلْ (más bien) y لَكِنْ (sin embargo) unen con un sentido más adversativo.",
+        "Junto a esta simple función de enlace, فَ tiene otras dos funciones gramaticalmente muy distintas, que llevan la misma forma de letra pero tienen efectos propios: el fāʾ causal (فاء السببية) y el fāʾ de respuesta/enlace (فاء الجواب/الفاء الرابطة). Ambas se tratan en entradas propias, porque se confunden fácilmente con el فَ corriente, el que transfiere el estado."
+      ],
+      "erkennung": [
+        "Prueba del ʿaṭf corriente: ¿la palabra que sigue al harf lleva el mismo estado (rafʿ/naṣb/jarr) que la palabra anterior? Si es así, se trata de un enlace simple.",
+        "Si tras فَ hay en cambio un verbo en presente con terminación de naṣb visible o invisible (en lugar del mismo estado que antes), probablemente no se trate de un ʿaṭf corriente, sino del fāʾ causal (ver entrada propia).",
+        "Si فَ está al principio de una oración que responde a una oración condicional, a un juramento o a un tema, sin alterar por sí mismo el estado de una palabra, se trata en general del fāʾ de respuesta/enlace (ver entrada propia)."
+      ],
+      "belege": [
+        {
+          "sure": 1,
+          "vers": 7,
+          "wort": 9,
+          "zeigt": "ٱلضَّآلِّينَ lleva la relación conj (valor base según relationBasis) y está unido mediante وَ al ism precedente",
+          "warum": "documenta los ḥurūf al-ʿaṭf con وَ al final de la Fátiha — dos grupos de personas se encadenan con el mismo estado"
+        },
+        {
+          "sure": 2,
+          "vers": 196,
+          "wort": 31,
+          "zeigt": "صَدَقَةٍ lleva la relación conj — unido mediante أَوْ al ism precedente صِيَامٍ",
+          "warum": "documenta la conjunción أَوْ (o) como verdadera elección entre ayuno, limosna u ofrenda"
+        },
+        {
+          "sure": 2,
+          "vers": 28,
+          "wort": 10,
+          "zeigt": "يُحْيِيكُمْ lleva la relación conj — unido mediante ثُمَّ al verbo precedente",
+          "warum": "documenta ثُمَّ como conjunción con el sentido de un intervalo temporal entre las acciones unidas (hacer morir — luego volver a dar vida)"
+        },
+        {
+          "sure": 2,
+          "vers": 140,
+          "wort": 17,
+          "zeigt": "ٱللَّهُ lleva la relación conj — unido mediante أَمِ a la palabra precedente dentro de una pregunta",
+          "warum": "documenta أَمْ como conjunción dentro de una verdadera pregunta disyuntiva («¿sabéis vosotros más, o Alá?»)"
+        }
+      ],
+      "lernen": [
+        "Aprende las seis conjunciones básicas و ف ثم أو أم con su matiz de sentido respectivo (neutro / inmediato / con intervalo / elección / elección en pregunta), en lugar de traducirlas todas simplemente por «y/o».",
+        "Practica la prueba de transferencia de estado en varios versículos: determina el estado del maʿṭūf ʿalayhi y comprueba después si el maʿṭūf lleva el mismo estado.",
+        "En cuanto te encuentres con فَ, comprueba sistemáticamente las tres posibilidades una tras otra: ʿaṭf corriente, fāʾ causal o fāʾ de respuesta — antes de traducir.",
+        "Compara pasajes que encuentres tú mismo con los ejemplos de aquí y nombra en cada caso el maʿṭūf y el maʿṭūf ʿalayhi."
+      ],
+      "tabellen": [],
+      "siehe": [
+        "faa-sababiyya",
+        "faa-jawab",
+        "badal",
+        "sifah"
+      ]
+    },
+    "faa-sababiyya": {
+      "titel": "El fāʾ causal",
+      "ar": "فَاء السَّبَبِيَّة",
+      "umschrift": "Faa' as-Sababiyya",
+      "erklaerung": [
+        "El fāʾ as-sababiyya tiene exactamente el mismo aspecto que el فَ de enlace corriente, pero un efecto gramatical completamente distinto: introduce un verbo en presente (fiʿl muḍāriʿ) que queda por ello en estado de naṣb (subjuntivo) — en lugar de asumir simplemente el estado de la palabra precedente.",
+        "En cuanto al sentido, expresa una consecuencia o un resultado que se produciría SI no se atiende lo anterior — se traduce generalmente por «de modo que» o «para que no». Sigue típicamente a una prohibición, una orden, una pregunta o un deseo.",
+        "En el corpus, este فَ aparece solo 88 veces — claramente menos que el fāʾ de respuesta, con 350 casos, aunque ambos aparecen como la misma secuencia de letras فَ."
+      ],
+      "erkennung": [
+        "Lo decisivo no es el significado, sino la forma del verbo siguiente: si tras él hay un fiʿl muḍāriʿ en estado de naṣb (visible en la terminación fatha o en la ausencia de la nūn en las cinco formas verbales), se trata del fāʾ as-sababiyya.",
+        "Contexto típico previo: una prohibición (لا + verbo), una orden, una pregunta o un deseo — nunca una simple afirmación que solo se encadena."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 35,
+          "wort": 16,
+          "zeigt": "el segmento prefijo فَ en فَتَكُونَا lleva la etiqueta POS CAUS",
+          "warum": "documenta el fāʾ as-sababiyya tras una prohibición («no os acerquéis a este árbol, de modo que os contaríais entre los injustos») — el verbo siguiente está en naṣb, no en el estado de la prohibición precedente"
+        },
+        {
+          "sure": 2,
+          "vers": 245,
+          "wort": 8,
+          "zeigt": "el segmento prefijo فَ en فَيُضَٰعِفَهُۥ lleva la etiqueta POS CAUS",
+          "warum": "documenta el fāʾ as-sababiyya tras una pregunta retórica («¿quién presta a Alá un préstamo generoso, de modo que Él se lo multiplique?»)"
+        }
+      ],
+      "lernen": [
+        "Ante cada فَ que siga a una prohibición, una orden, una pregunta o un deseo, pregúntate primero: ¿el verbo siguiente está en estado de naṣb? Si es así, es el fāʾ as-sababiyya, no un ʿaṭf corriente.",
+        "Traduce de prueba primero con «y entonces» — si eso no da un sentido lógico, pero «de modo que/para que no» sí, es un indicio fuerte de la lectura causal.",
+        "Compara el pasaje de aquí directamente con un ejemplo del fāʾ de respuesta — ambos empiezan igual, pero actúan de forma gramaticalmente opuesta."
+      ],
+      "tabellen": [],
+      "siehe": [
+        "huruf-atf",
+        "faa-jawab"
+      ]
+    },
+    "faa-jawab": {
+      "titel": "El fāʾ de respuesta y de enlace (Jawab y Rabita)",
+      "ar": "فَاء الجَوَاب / الفَاء الرَّابِطَة",
+      "umschrift": "Faa' al-Jawaab / al-Faa' ar-Raabita",
+      "erklaerung": [
+        "También este فَ tiene el aspecto del فَ de enlace corriente, pero — a diferencia del fāʾ as-sababiyya — NO cambia el estado de la palabra siguiente. Es un puro puente: enlaza la oración siguiente con lo dicho antes, generalmente como respuesta a una oración condicional (jawāb ash-sharṭ) y, en ocasiones, también como elemento de unión entre un tema (mubtadaʾ) y un enunciado con forma de oración.",
+        "Se emplea sobre todo cuando la propia oración de respuesta no podría figurar gramaticalmente de forma directa como jawāb ash-sharṭ — por ejemplo porque es una oración nominal, empieza por إِنَّ o contiene una negación con لَنْ.",
+        "En el corpus, este فَ es, con 350 casos, claramente más frecuente que el fāʾ causal (88 casos) — pero ambos aparecen como la misma y única secuencia de letras فَ y solo se distinguen por su efecto gramatical."
+      ],
+      "erkennung": [
+        "A diferencia del fāʾ as-sababiyya, el verbo tras este فَ permanece en su propio modo (rafʿ o yusivo, según el tipo de oración) — NO se ve forzado al estado de naṣb.",
+        "Aparece típicamente al comienzo de la oración de respuesta de una condición y va seguido a menudo directamente de إِنَّ, قَدْ o de una oración nominal."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 186,
+          "wort": 5,
+          "zeigt": "el segmento prefijo فَ en فَإِنِّى lleva la etiqueta POS RSLT, y la palabra entera la relación rslt",
+          "warum": "documenta el fāʾ al-jawāb como introducción de la oración de respuesta tras una condicional con إذا («cuando Mis siervos te pregunten por Mí — pues Yo estoy cerca»), sin que el إِنِّي siguiente quede en estado de naṣb"
+        },
+        {
+          "sure": 2,
+          "vers": 282,
+          "wort": 10,
+          "zeigt": "فَٱكْتُبُوهُ lleva la relación rslt, introducida por el segmento prefijo فَ con etiqueta POS RSLT",
+          "warum": "documenta el fāʾ al-jawāb como respuesta a la oración condicional introducida por إِذَا sobre la puesta por escrito de las deudas"
+        }
+      ],
+      "lernen": [
+        "Graba la prueba de contraste: ¿el estado/modo de la palabra siguiente NO cambia (sigue en rafʿ o en yusivo)? Entonces es el fāʾ al-jawāb, no el fāʾ as-sababiyya.",
+        "Busca de forma específica oraciones condicionales con إِذَا e إِنْ y marca si la oración de respuesta empieza con فَ y por qué (¿oración nominal? ¿إِنَّ? ¿negación?).",
+        "Elabórate un cuadro propio de dos columnas con ejemplos del fāʾ causal y del fāʾ de respuesta, para no confundirlos."
+      ],
+      "tabellen": [],
+      "siehe": [
+        "huruf-atf",
+        "faa-sababiyya",
+        "shart"
+      ]
+    },
+    "verneinung": {
+      "titel": "La negación",
+      "ar": "حُرُوف النَّفْي",
+      "umschrift": "Huruf an-Nafy",
+      "erklaerung": [
+        "Para la negación se dispone de varias herramientas, ligada cada una a un tiempo verbal o a un tipo de oración determinados: لَمْ niega con un verbo en presente el pasado y pone el verbo en yusivo (majzūm); لَنْ niega con un verbo en presente el futuro y lo pone en estado de naṣb (manṣūb); لَا niega con un verbo en presente el presente, sin cambiar el estado; مَا niega tanto verbos en pasado como en presente, a menudo en un contexto de rechazo o de debate, igualmente sin cambio de estado.",
+        "لَيْسَ no es, gramaticalmente hablando, un harf, sino un verbo incompleto (ver kāna y sus hermanas) — niega oraciones nominales y pone su khabar en estado de naṣb, mientras que مَا, como negación de una oración nominal, deja el khabar en estado de rafʿ.",
+        "Advertencia importante: مَا es una de las palabras más versátiles del árabe. Muy a menudo NO es una negación, sino un pronombre relativo («lo que»), una partícula interrogativa («¿qué?») o una partícula de condición o de nombre verbal. Que مَا niegue o no lo decide exclusivamente el contexto de la oración.",
+        "Además existe لَا النَّافِيَة لِلْجِنْس (la negación absoluta) con el significado de «no hay en absoluto ningún ...» — el ism siguiente queda entonces mabni sobre fatha en estado de naṣb."
+      ],
+      "erkennung": [
+        "مَا es una negación cuando inmediatamente después hay una oración completa con su propio fāʿil/mubtadaʾ que se niega como afirmación.",
+        "مَا NO es una negación cuando asume el papel de un elemento de la oración (p. ej. complemento o sujeto de un verbo) y puede sustituirse, sin cambio de sentido, por «lo que».",
+        "Reconoces لَا النَّافِيَة لِلْجِنْس en que inmediatamente después hay un ism indeterminado sin nunación («no hay absolutamente ningún ...»)."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 9,
+          "wort": 6,
+          "zeigt": "يَخْدَعُونَ lleva la relación neg; el مَا precedente (palabra 5) lleva la etiqueta POS NEG",
+          "warum": "documenta مَا como verdadera negación («y no engañan a nadie más que a sí mismos»)"
+        },
+        {
+          "sure": 2,
+          "vers": 29,
+          "wort": 5,
+          "zeigt": "مَّا NO lleva aquí la relación de negación, sino la relación Obj (complemento del verbo خَلَقَ); el segmento lleva POS REL",
+          "warum": "documenta expresamente el caso de aviso: en la misma sura breve, unos pocos versículos después, مَا aparece como pronombre relativo («lo que Él creó para vosotros en la tierra») — no es negación"
+        }
+      ],
+      "lernen": [
+        "Prepárate una tabla con tiempo verbal → herramienta de negación adecuada → estado provocado (لَمْ/majzūm, لَنْ/manṣūb, لَا y مَا/sin cambio).",
+        "Practica específicamente con el par de ejemplos de aquí: explica con tus propias palabras por qué مَا es negación en 2:9 y no lo es en 2:29.",
+        "Recuerda لَيْسَ como verbo, no como harf — eso explica por qué puede poner por sí solo el khabar en estado de naṣb, mientras que مَا no lo hace."
+      ],
+      "tabellen": [],
+      "siehe": [
+        "nahy",
+        "lam-al-amr",
+        "kaana-wa-akhawatuha"
+      ]
+    },
+    "lam-al-amr": {
+      "titel": "El lām del imperativo",
+      "ar": "لَام الأَمْر",
+      "umschrift": "Laam al-Amr",
+      "erklaerung": [
+        "El lām al-amr es un لْ antepuesto a un verbo en presente (fiʿl muḍāriʿ) que forma una orden indirecta — generalmente a la 3.ª persona («que él/ella/ellos haga(n)») o, como forma especialmente solemne, también a la 1.ª o 2.ª persona. El verbo queda por ello en yusivo (majzūm).",
+        "Gramaticalmente, el lām al-amr es un harf, no un verbo — a diferencia del imperativo directo (fiʿl amr), que es una forma verbal propia y ya conjugada. Ambos expresan una orden, pero el lām al-amr lo hace mediante un verbo en presente, no mediante una forma de imperativo propia.",
+        "En el corpus, este لْ aparece 78 veces — casi siempre con وَ o فَ antepuestos."
+      ],
+      "erkennung": [
+        "Un لْ suelto directamente ante un verbo en presente cuya terminación indica el yusivo (nūn caída en las cinco formas verbales, sukūn en las demás formas).",
+        "Se puede traducir con «que ...» en lugar de con un «¡haz!» directo — el lām al-amr se dirige típicamente (no exclusivamente) a una tercera persona, para la que no existe una forma de imperativo propia."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 186,
+          "wort": 12,
+          "zeigt": "el segmento prefijo لْ en فَلْيَسْتَجِيبُوا۟ lleva la etiqueta POS IMPV",
+          "warum": "documenta el lām al-amr como orden indirecta a una tercera persona («que Me respondan, pues»)"
+        },
+        {
+          "sure": 2,
+          "vers": 186,
+          "wort": 14,
+          "zeigt": "el segmento prefijo لْ en وَلْيُؤْمِنُوا۟ lleva la etiqueta POS IMPV",
+          "warum": "documenta en el mismo versículo un segundo lām al-amr («y que crean en Mí»)"
+        }
+      ],
+      "lernen": [
+        "Compara en un mismo versículo el imperativo directo (fiʿl amr, 2.ª persona) con un ejemplo de lām al-amr (3.ª persona) — ambos expresan una orden, pero están construidos de forma gramaticalmente muy distinta.",
+        "Busca de forma específica las combinaciones وَلْ- y فَلْ- al principio de palabra y determina en cada caso la persona a la que se dirigen.",
+        "Recuerda el riesgo de confusión con los sonidos de lām del tipo بِـ: solo un لْ con sukūn directamente ante un verbo en presente es lām al-amr."
+      ],
+      "tabellen": [],
+      "siehe": [
+        "nahy"
+      ]
+    },
+    "nahy": {
+      "titel": "La prohibición",
+      "ar": "النَّهْي (لَا النَّاهِيَة)",
+      "umschrift": "an-Nahy (Laa an-Naahiya)",
+      "erklaerung": [
+        "Lā an-nāhiya («el lā prohibitivo») está ante un verbo en presente — generalmente en 2.ª persona — y forma con él una prohibición («¡no hagas eso!»). El verbo queda por ello, igual que con el lām al-amr, en yusivo (majzūm).",
+        "Eso distingue el nahy de la simple negación con لَا (لَا النَّافِيَة), que niega un hecho presente sin cambiar el modo del verbo. Ambas palabras tienen un aspecto idéntico (لَا), pero actúan de forma gramaticalmente distinta: el nahy fuerza el yusivo, la negación simple no."
+      ],
+      "erkennung": [
+        "Si لَا está ante un verbo en presente cuya terminación muestra el yusivo (nūn caída/sukūn) y el significado es una prohibición en lugar de la constatación de un hecho, se trata de lā an-nāhiya.",
+        "En el corpus, el verbo correspondiente lleva la relación Pro (de «prohibición») en lugar de la relación de negación habitual."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 22,
+          "wort": 19,
+          "zeigt": "تَجْعَلُوا۟ lleva la relación Pro, introducida por لَا (en la palabra precedente فَلَا) con etiqueta POS PRO",
+          "warum": "documenta lā an-nāhiya como verdadera prohibición («así que no atribuyáis iguales a Alá»)"
+        },
+        {
+          "sure": 2,
+          "vers": 60,
+          "wort": 25,
+          "zeigt": "تَعْثَوْا۟ lleva la relación Pro, introducida por لَا (en la palabra precedente وَلَا) con etiqueta POS PRO",
+          "warum": "documenta una segunda prohibición («y no sembréis corrupción en la tierra»)"
+        }
+      ],
+      "lernen": [
+        "Compara directamente un ejemplo de nahy con un ejemplo de negación simple con لَا — ambas palabras tienen el mismo aspecto, pero actúan de forma distinta sobre el verbo.",
+        "Practica reconocer el yusivo en el propio verbo (nūn ausente en las cinco formas, sukūn en las demás) — es el indicio más fiable de nahy.",
+        "Clasifica de forma consecuente los casos de لَا que encuentres en una de tres categorías: negación simple, nahy o negación absoluta (لَا النَّافِيَة لِلْجِنْس)."
+      ],
+      "tabellen": [],
+      "siehe": [
+        "verneinung",
+        "lam-al-amr"
+      ]
+    },
+    "istifham": {
+      "titel": "Las partículas interrogativas",
+      "ar": "أَدَوَات الاِسْتِفْهَام",
+      "umschrift": "Adawaat al-Istifhaam",
+      "erklaerung": [
+        "Las partículas interrogativas están al principio de la oración e introducen tanto oraciones nominales como verbales: مَنْ (quién), مَاذَا/مَا (qué), مَتَى (cuándo), أَيْنَ (dónde), لِمَاذَا (por qué), كَيْفَ (cómo), أَيّ (cuál) así como هَلْ y la hamza antepuesta أَ para las preguntas de sí/no.",
+        "La mayoría de las palabras interrogativas no tiene influencia gramatical sobre la estructura de la oración — simplemente se colocan delante de la oración.",
+        "Cuando una partícula interrogativa coincide con un ḥarf jarr, el ḥarf jarr se antepone; con مَا, ambos se funden en una sola forma (مِنْ + مَا → مِمَّ, عَنْ + مَا → عَمَّ, فِي + مَا → فِيمَ, لِ + مَا → لِمَ)."
+      ],
+      "erkennung": [
+        "Las partículas interrogativas están al principio de la oración, con independencia de que siga una oración nominal o verbal.",
+        "أَ como partícula interrogativa antepuesta es una única hamza colocada directamente ante la primera raíz de la palabra — recogida en el corpus como segmento prefijo propio con la etiqueta POS INTG."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 44,
+          "wort": 1,
+          "zeigt": "el segmento prefijo أَ en أَتَأْمُرُونَ lleva la etiqueta POS INTG",
+          "warum": "documenta la partícula interrogativa antepuesta أَ como introducción de una pregunta retórica de sí/no («¿ordenáis a la gente la rectitud ...?»)"
+        },
+        {
+          "sure": 2,
+          "vers": 30,
+          "wort": 11,
+          "zeigt": "el segmento prefijo أَ en أَتَجْعَلُ lleva la etiqueta POS INTG",
+          "warum": "documenta la misma partícula interrogativa en la célebre pregunta de los ángeles («¿vas a poner en ella a quien siembre corrupción?»)"
+        }
+      ],
+      "lernen": [
+        "Aprende la tabla de palabras interrogativas junto con su clase de palabra (ism como مَنْ/مَا/أَيّ, o harf puro como هَلْ/أَ), ya que eso facilita después la determinación del iʿrāb.",
+        "Practica por separado las formas fusionadas مِمَّ/عَمَّ/فِيمَ/لِمَ — es fácil pasarlas por alto si solo se busca «مَا».",
+        "Compara oraciones interrogativas con otras de tenor por lo demás idéntico y sin partícula interrogativa, para ver que la construcción de la oración misma no cambia."
+      ],
+      "tabellen": [],
+      "siehe": []
+    },
+    "shart": {
+      "titel": "Las oraciones condicionales",
+      "ar": "أَدَوَات الشَّرْط وَجَوَاب الشَّرْط",
+      "umschrift": "Adawaat ash-Shart / Jawaab ash-Shart",
+      "erklaerung": [
+        "Una oración condicional (jumla shartiyya) consta de dos partes: la condición (الشَّرْط) y su respuesta/resultado (جَوَاب الشَّرْط) — el segundo enunciado solo se produce si el primero se cumple.",
+        "Las partículas condicionales se dividen en dos grupos: las adawāt al-jazm (إِنْ، مَنْ، مَا y otras) ponen ambas partes de la oración en yusivo cuando hay dos verbos en presente; las adawāt ghayr jāzima (لَوْ «si [hubiera]», إِذَا «cuando/en cuanto») no tienen efecto gramatical sobre el estado de los verbos.",
+        "Con mucha frecuencia, un فَ introduce la oración de respuesta, sobre todo cuando esta se diferencia de la oración condicional (por ejemplo: condicional verbal, respuesta nominal) — ese فَ es el fāʾ al-jawāb tratado en una entrada propia.",
+        "Junto a la oración condicional existe una estructura muy parecida en el caso de las órdenes: a un amr (orden) puede seguirle un jawāb al-amr, que describe lo que ocurre si se obedece — igualmente siempre en yusivo."
+      ],
+      "erkennung": [
+        "La parte condicional lleva en la sintaxis del corpus la relación cond; la parte de respuesta, muy a menudo, la relación rslt (ver fāʾ al-jawāb) cuando se introduce con فَ.",
+        "Reconoces las adawāt al-jazm en que ambos verbos — condición y respuesta — están en yusivo, aunque la traducción española exija presente."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 282,
+          "wort": 5,
+          "zeigt": "تَدَايَنتُم lleva la relación cond, provocada por إِذَا (palabra 4)",
+          "warum": "documenta la parte condicional de una oración de sharṭ («cuando contraigáis una deuda a plazo»)"
+        },
+        {
+          "sure": 2,
+          "vers": 282,
+          "wort": 10,
+          "zeigt": "فَٱكْتُبُوهُ lleva la relación rslt",
+          "warum": "documenta la oración de jawāb correspondiente («ponedla por escrito») en el mismo versículo, introducida con el fāʾ al-jawāb"
+        }
+      ],
+      "lernen": [
+        "Aprende primero la división en jāzim/ghayr jāzim y solo después las partículas concretas de cada grupo.",
+        "Busca en una oración condicional sistemáticamente primero الشَّرْط, luego جَوَاب الشَّرْط, y comprueba si hay un فَ entre ambos.",
+        "Forma tú mismo oraciones condicionales breves con إِنْ y compara cómo cambia la terminación del verbo frente a una oración sin إِنْ."
+      ],
+      "tabellen": [],
+      "siehe": [
+        "faa-jawab"
+      ]
+    },
+    "kaana-wa-akhawatuha": {
+      "titel": "Kaana y sus hermanas",
+      "ar": "كَانَ وَأَخَوَاتُهَا",
+      "umschrift": "Kaana wa Akhawatuha",
+      "erklaerung": [
+        "Kāna (ser) y sus hermanas son verbos incompletos (afʿāl nāqiṣa): no exigen un fāʿil corriente, sino que convierten toda una oración nominal en su propio ism y khabar. A la familia pertenecen, entre otros, كَانَ (ser), لَيْسَ (no ser), ظَلَّ (permanecer) y أَصْبَحَ (llegar a ser) — además de otros como صَارَ, أَمْسَى o مَا زَالَ.",
+        "El ism de kāna permanece, como un mubtadaʾ corriente, en estado de rafʿ. La diferencia decisiva: el khabar de kāna está en estado de naṣb — aunque un khabar en una oración nominal normal debería estar en estado de rafʿ.",
+        "Si el khabar de kāna es a su vez una oración entera (por ejemplo una oración verbal con verbo en presente), el efecto del naṣb no se reconoce en ninguna terminación visible — el papel de khabar se mantiene, sin embargo, igualmente."
+      ],
+      "erkennung": [
+        "Un versículo «bascula» de forma reconocible hacia una construcción con kāna en cuanto tras كَانَ/una de sus hermanas aparece un ism/pronombre en estado de rafʿ (el ism) y después algo en estado de naṣb o una oración entera (el khabar), en lugar de la segunda palabra en rafʿ que se esperaría en una oración nominal corriente.",
+        "En la sintaxis del corpus, el ism y el khabar de esta familia aparecen como relaciones propias con su regente añadido entre dobles paréntesis angulares, por ejemplo subj<<kan>> y pred<<kan>> — relationBasis() de grammatik.ts descompone esa forma en valor base (subj/pred) y regente (p. ej. kan, ykon)."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 10,
+          "wort": 12,
+          "zeigt": "يَكْذِبُونَ lleva la relación \"pred <<kan>>\" (valor base pred, regente kan)",
+          "warum": "documenta el khabar de kāna como oración verbal entera («... porque solían mentir») tras كَانُوا۟ en el mismo versículo"
+        },
+        {
+          "sure": 2,
+          "vers": 247,
+          "wort": 15,
+          "zeigt": "ٱلْمُلْكُ lleva la relación \"subj <<ykon>>\" (valor base subj, regente ykon — la forma de presente de كَانَ)",
+          "warum": "documenta el ism de una forma hermana de kāna (يَكُونُ) en estado de rafʿ («¿cómo habría de corresponderle a él la soberanía sobre nosotros?»)"
+        }
+      ],
+      "lernen": [
+        "Aprende los cuatro verbos aquí exigidos كَانَ، لَيْسَ، ظَلَّ، أَصْبَحَ primero con su significado básico, y solo después la regla del naṣb para el khabar.",
+        "Practica en varios versículos a nombrar por separado el ism de kāna y el khabar de kāna — sobre todo cuando el khabar es a su vez una oración.",
+        "Compara una oración con kāna con la misma oración sin كَانَ, para percibir de inmediato la diferencia en el estado del khabar."
+      ],
+      "tabellen": [],
+      "siehe": [
+        "inna-wa-akhawatuha",
+        "mubtada",
+        "khabar"
+      ]
+    },
+    "inna-wa-akhawatuha": {
+      "titel": "Inna y sus hermanas",
+      "ar": "إِنَّ وَأَخَوَاتُهَا",
+      "umschrift": "Inna wa Akhawatuha",
+      "erklaerung": [
+        "Inna y sus hermanas son ḥarf naṣb — partículas que ponen un ism inmediatamente después (o tras un jārr-majrūr intercalado o un muḍāf especial) en estado de naṣb, mientras que el khabar correspondiente permanece en estado de rafʿ. Actúan así exactamente al revés que kāna y sus hermanas.",
+        "A la familia pertenecen إِنَّ/أَنَّ (ciertamente/que, enfático), كَأَنَّ (como si, comparativo), لَكِنَّ (sin embargo, adversativo), لَيْتَ (ojalá, desiderativo) y لَعَلَّ (quizá/tal vez, expectativo) — cada una con su propio matiz de sentido, pero con idéntico efecto gramatical.",
+        "El ism de un ḥarf naṣb sigue siendo, en cuanto al contenido, el agente/el tema del enunciado, y así se traduce también, aunque formalmente esté en estado de naṣb — cambia la terminación, no el papel."
+      ],
+      "erkennung": [
+        "Directamente tras إِنَّ/أَنَّ (o tras un jārr-majrūr intercalado) hay un ism o un pronombre afijo con terminación fatha (el ism); más adelante sigue una palabra marcada en rafʿ o una oración entera (el khabar).",
+        "En la sintaxis del corpus, el ism y el khabar de esta familia aparecen igualmente como subj<<...>>/pred<<...>> con el regente in, an, ka'ana, lakin o lel/la — también aquí descomponibles mediante relationBasis()."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 20,
+          "wort": 21,
+          "zeigt": "ٱللَّهَ lleva la relación \"subj<<in>>\" (valor base subj, regente in)",
+          "warum": "documenta el ism de inna en estado de naṣb («ciertamente, Alá ...»)"
+        },
+        {
+          "sure": 2,
+          "vers": 20,
+          "wort": 25,
+          "zeigt": "قَدِيرٌ lleva la relación \"pred<<in>>\" (valor base pred, regente in)",
+          "warum": "documenta en el mismo versículo el khabar de inna correspondiente en estado de rafʿ («... es poderoso sobre todas las cosas») — el mismo versículo que el capítulo del cuadernillo sobre el ḥarf naṣb utiliza como ejemplo"
+        }
+      ],
+      "lernen": [
+        "Aprende las seis hermanas con su matiz de sentido propio (enfático/comparativo/adversativo/desiderativo/expectativo), no solo como «palabras de refuerzo» intercambiables.",
+        "Practica nombrar por separado, en el mismo versículo, el ism y el khabar y explicar la terminación de cada uno.",
+        "Contrapón una oración con inna a una oración con kāna: ¿dónde está el ism, dónde el khabar — y en qué estado está cada uno?"
+      ],
+      "tabellen": [],
+      "siehe": [
+        "kaana-wa-akhawatuha",
+        "verneinung"
+      ]
+    },
+    "faail": {
+      "titel": "El agente (Faa'il)",
+      "ar": "فَاعِل",
+      "umschrift": "Faa'il",
+      "erklaerung": [
+        "El fāʿil es el agente/sujeto de una oración verbal y está siempre en estado de rafʿ. En el orden de palabras estándar del árabe sigue al verbo (verbo – fāʿil – complemento), no al revés.",
+        "Además, todo verbo lleva un agente interno, contenido en el propio verbo (un pronombre afijo). Ese agente interno puede sustituirse por un fāʿil externo, expresamente mencionado, cuando el verbo está en la forma de él/ella y el nombre sigue después en estado de rafʿ."
+      ],
+      "erkennung": [
+        "Un nombre o pronombre marcado en rafʿ que aparece inmediatamente o poco después de un verbo y responde a la pregunta «¿quién lo ha hecho?».",
+        "Si el posible sujeto está ANTES del verbo, ya no es un fāʿil, sino un mubtadaʾ con una oración verbal como khabar."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 7,
+          "wort": 2,
+          "zeigt": "ٱللَّهُ lleva la relación Subj",
+          "warum": "documenta el fāʿil en estado de rafʿ tras el verbo («Alá ha sellado sus corazones»)"
+        },
+        {
+          "sure": 2,
+          "vers": 10,
+          "wort": 5,
+          "zeigt": "ٱللَّهُ lleva la relación Subj",
+          "warum": "documenta un segundo fāʿil («así que Alá les ha aumentado la enfermedad»)"
+        }
+      ],
+      "lernen": [
+        "Busca en varios versículos primero el verbo y, justo después, la primera palabra marcada en rafʿ — por regla general, ese es el fāʿil.",
+        "Practica la diferencia entre el agente interno (oculto en el verbo) y el externo (expresamente mencionado) con versículos con y sin fāʿil explícito.",
+        "Compara una oración con fāʿil con otra en la que el mismo nombre aparece como mubtadaʾ antes del verbo — el estado sigue siendo rafʿ, el papel cambia."
+      ],
+      "tabellen": [],
+      "siehe": [
+        "naib-al-fail",
+        "mubtada"
+      ]
+    },
+    "naib-al-fail": {
+      "titel": "El sustituto del agente (Naa'ib al-Faa'il)",
+      "ar": "نَائِب الفَاعِل",
+      "umschrift": "Naa'ib al-Faa'il",
+      "erklaerung": [
+        "Si el verbo está en pasiva (fiʿl mabnī li-l-majhūl), el fāʿil propiamente dicho desaparece o queda desconocido. En su lugar aparece el nāʾib al-fāʿil — literalmente «sustituto del agente» —, generalmente aquello que en una oración activa habría sido el complemento. Asume por ello el estado de rafʿ del fāʿil.",
+        "El verbo mismo muestra la formación pasiva (en presente, por ejemplo, damma sobre el primer radical); el nāʾib al-fāʿil le sigue como un fāʿil corriente en estado de rafʿ."
+      ],
+      "erkennung": [
+        "Un verbo formado en pasiva, seguido de un nombre marcado en rafʿ que, por su contenido, aparece más bien como objeto de la acción (no como su ejecutor).",
+        "En la sintaxis del corpus, esta palabra lleva la relación propia Pass en lugar de la relación habitual del fāʿil, Subj."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 48,
+          "wort": 12,
+          "zeigt": "شَفَٰعَةٌ lleva la relación Pass",
+          "warum": "documenta el nāʾib al-fāʿil tras el verbo pasivo يُقْبَلُ («y no se le aceptará intercesión alguna») — por su contenido, aquello que en una oración activa sería el complemento"
+        },
+        {
+          "sure": 2,
+          "vers": 61,
+          "wort": 39,
+          "zeigt": "ٱلذِّلَّةُ lleva la relación Pass",
+          "warum": "documenta un segundo nāʾib al-fāʿil tras el verbo pasivo ضُرِبَتْ («y se les impuso la humillación»)"
+        }
+      ],
+      "lernen": [
+        "Forma la pasiva de una oración activa conocida y observa cómo el antiguo complemento se convierte en nāʾib al-fāʿil en estado de rafʿ.",
+        "Fíjate específicamente en la vocalización del verbo (patrón con damma) como primer signo de reconocimiento de un verbo pasivo, antes de buscar el nāʾib al-fāʿil.",
+        "Compara el ejemplo de aquí con un ejemplo de fāʿil corriente — ambos están en estado de rafʿ, pero con un papel de contenido distinto."
+      ],
+      "tabellen": [],
+      "siehe": [
+        "faail"
+      ]
+    },
+    "maful-bihi": {
+      "titel": "El complemento directo",
+      "ar": "مَفْعُول بِه",
+      "umschrift": "Maf'ool bihi",
+      "erklaerung": [
+        "El mafʿūl bihi es el complemento directo de una oración verbal, está siempre en estado de naṣb y responde a la pregunta «¿a quién/qué?». Es, con diferencia, el tipo de complemento (mafʿūl) más frecuente en el Corán.",
+        "Un pronombre afijo unido a un verbo es siempre un mafʿūl bihi, aunque no tenga el aspecto de una palabra independiente."
+      ],
+      "erkennung": [
+        "Un nombre o pronombre marcado en naṣb tras el verbo y el fāʿil, directamente afectado por la acción.",
+        "Prueba de la pregunta: ¿se puede preguntar por la palabra con «¿a quién/qué hace el fāʿil?»?"
+      ],
+      "belege": [
+        {
+          "sure": 1,
+          "vers": 6,
+          "wort": 2,
+          "zeigt": "ٱلصِّرَٰطَ lleva la relación Obj",
+          "warum": "documenta el mafʿūl bihi en estado de naṣb tras el imperativo ٱهْدِنَا («guíanos por el camino recto»)"
+        },
+        {
+          "sure": 1,
+          "vers": 5,
+          "wort": 1,
+          "zeigt": "إِيَّاكَ lleva la relación Obj",
+          "warum": "documenta el mafʿūl bihi como pronombre independiente antepuesto («solo a Ti adoramos»)"
+        }
+      ],
+      "lernen": [
+        "Practica la prueba de la pregunta («¿a quién/qué?») en varios versículos y marca por separado el verbo, el fāʿil y el mafʿūl bihi.",
+        "Busca de forma específica pronombres unidos a verbos y nómbralos explícitamente como mafʿūl bihi.",
+        "Compara el mafʿūl bihi con el mafʿūl muṭlaq y con al-mafʿūl li-ajlihi, para no mezclar los tres tipos de complemento."
+      ],
+      "tabellen": [],
+      "siehe": [
+        "faail",
+        "maful-mutlaq",
+        "maful-liajlihi"
+      ]
+    },
+    "maful-mutlaq": {
+      "titel": "El complemento absoluto",
+      "ar": "مَفْعُول مُطْلَق",
+      "umschrift": "Maf'ool Mutlaq",
+      "erklaerung": [
+        "El mafʿūl muṭlaq es un maṣdar (nombre verbal) con la misma raíz que el verbo al que acompaña, y está en estado de naṣb. No responde a «¿a quién/qué?», sino que refuerza, describe o cuantifica una vez más la propia acción.",
+        "Son posibles tres funciones: como palabra suelta enfatiza la acción; con un adjetivo la describe con más detalle; como numeral indica cuántas veces tuvo lugar la acción."
+      ],
+      "erkennung": [
+        "Un ism marcado en naṣb que lleva las mismas letras radicales que el verbo precedente — no otro nombre, sino una repetición de la raíz del verbo en forma de nombre.",
+        "Gramaticalmente no se puede preguntar por él con «¿a quién/qué?», sino más bien con «¿en qué medida/de qué manera/cuántas veces?»."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 25,
+          "wort": 18,
+          "zeigt": "رِّزْقًا lleva la relación cog",
+          "warum": "documenta el mafʿūl muṭlaq con la misma raíz رزق que el verbo precedente رُزِقُوا۟ («cada vez que sean provistos de ello como provisión»)"
+        },
+        {
+          "sure": 2,
+          "vers": 245,
+          "wort": 10,
+          "zeigt": "أَضْعَافًا lleva la relación cog",
+          "warum": "documenta el mafʿūl muṭlaq con la misma raíz ضعف que el verbo precedente يُضَٰعِفَهُ («de modo que Él se lo multiplique muchas veces»)"
+        }
+      ],
+      "lernen": [
+        "Ante cada ism sospechoso en naṣb, comprueba primero las letras radicales frente al verbo precedente — si coinciden, es muy probable que sea un mafʿūl muṭlaq.",
+        "Busca de forma específica las tres funciones (énfasis/descripción/recuento) en versículos distintos.",
+        "Compara conscientemente el mafʿūl muṭlaq con el mafʿūl bihi — solo por uno de los dos se puede preguntar con «¿a quién/qué?»."
+      ],
+      "tabellen": [],
+      "siehe": [
+        "maful-bihi"
+      ]
+    },
+    "maful-liajlihi": {
+      "titel": "El complemento causal",
+      "ar": "المَفْعُول لِأَجْلِه",
+      "umschrift": "al-Maf'ool li-Ajlihi",
+      "erklaerung": [
+        "Al-mafʿūl li-ajlihi (también mafʿūl lahu) es un maṣdar en estado de naṣb que nombra el MOTIVO o la razón que hay detrás de la acción principal — responde a la pregunta «¿por qué?». A diferencia del mafʿūl muṭlaq, NO comparte la misma raíz con el verbo principal, sino que designa un motivo autónomo, casi siempre abstracto (miedo, deseo, envidia ...).",
+        "Con ello, al-mafʿūl li-ajlihi se sitúa entre los otros dos tipos de complemento: como el mafʿūl muṭlaq, es un maṣdar puro en estado de naṣb sin papel propio de complemento; como el mafʿūl bihi, en cambio, se refiere por su contenido a la motivación que hay detrás de la acción, no a su repetición."
+      ],
+      "erkennung": [
+        "Un ism en naṣb, indeterminado y abstracto, tras el verbo principal, que designa una emoción o un motivo y responde a la pregunta «¿por qué razón?».",
+        "Delimitación frente al mafʿūl muṭlaq: la raíz se diferencia de la del verbo principal."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 19,
+          "wort": 15,
+          "zeigt": "حَذَرَ lleva la relación prp",
+          "warum": "documenta al-mafʿūl li-ajlihi como mención del motivo («se ponen los dedos en los oídos ... por miedo a la muerte»)"
+        },
+        {
+          "sure": 2,
+          "vers": 109,
+          "wort": 12,
+          "zeigt": "حَسَدًا lleva la relación prp",
+          "warum": "documenta un segundo complemento causal («muchos de la gente del Libro desearían, por envidia, volveros a la incredulidad»)"
+        }
+      ],
+      "lernen": [
+        "Practica la prueba de la pregunta «¿por qué?» de forma específica en varios versículos y distínguela conscientemente de la prueba «¿a quién/qué?» del mafʿūl bihi.",
+        "Reúne tus propios ejemplos de nombres de motivo abstractos (miedo, temor reverencial, esperanza ...) en estado de naṣb.",
+        "Contrapón el ejemplo de aquí a un ejemplo de mafʿūl muṭlaq y nombra la diferencia de raíz."
+      ],
+      "tabellen": [],
+      "siehe": [
+        "maful-mutlaq"
+      ]
+    },
+    "mubtada": {
+      "titel": "El sujeto de la oración nominal",
+      "ar": "مُبْتَدَأ",
+      "umschrift": "Mubtada",
+      "erklaerung": [
+        "El mubtadaʾ es el sujeto/tema de una oración nominal, está en estado de rafʿ y, por regla general, al principio de la oración. Su nombre significa literalmente «aquello con lo que se empieza».",
+        "De las tres partes posibles de una oración nominal (mubtadaʾ, khabar, mutaʿalliq bi-l-khabar), el mubtadaʾ es la única imprescindible — el khabar y el mutaʿalliq bi-l-khabar pueden omitirse bajo determinadas condiciones, cuando se deducen del contexto.",
+        "También un sintagma entero (por ejemplo una iḍāfa o un par mawṣūf-ṣifa) puede funcionar como mubtadaʾ."
+      ],
+      "erkennung": [
+        "La primera palabra en estado de rafʿ de una oración nominal — o, si la oración empieza con un ḥarf naṣb como إِنَّ, ese harf junto con su ism.",
+        "Estructuralmente se reconoce también en que, más adelante en la misma oración, un khabar remite al mubtadaʾ como su palabra de referencia (head)."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 2,
+          "wort": 1,
+          "zeigt": "ذَٰلِكَ es el mubtadaʾ al que se refiere el khabar هُدًى (palabra 6, relación Pred) en el mismo versículo",
+          "warum": "documenta el mubtadaʾ como núcleo de una oración nominal («Este libro ... es guía para los temerosos de Dios») — el khabar remite con su valor head directamente a esta palabra"
+        },
+        {
+          "sure": 2,
+          "vers": 19,
+          "wort": 17,
+          "zeigt": "ٱللَّهُ (en la palabra وَٱللَّهُ) es el mubtadaʾ al que se refiere el khabar مُحِيطٌۢ (palabra 18, relación Pred)",
+          "warum": "documenta un segundo par mubtadaʾ-khabar («y Alá abarca a los incrédulos»)"
+        }
+      ],
+      "lernen": [
+        "Busca en una oración nominal primero la primera palabra en rafʿ — casi siempre es el mubtadaʾ.",
+        "Practica con versículos sin khabar visible a completar el «es» invisible entre el mubtadaʾ y un mutaʿalliq bi-l-khabar que le siga.",
+        "Compara los pares mubtadaʾ-khabar de las oraciones nominales corrientes con los de las oraciones con kāna y con inna, para interiorizar el cambio de estado en el khabar."
+      ],
+      "tabellen": [],
+      "siehe": [
+        "khabar",
+        "kaana-wa-akhawatuha",
+        "inna-wa-akhawatuha"
+      ]
+    },
+    "khabar": {
+      "titel": "El predicado de la oración nominal",
+      "ar": "خَبَر",
+      "umschrift": "Chabar",
+      "erklaerung": [
+        "El khabar aporta el enunciado sobre el mubtadaʾ y responde a la pregunta «¿qué ocurre con el mubtadaʾ?». En una oración nominal corriente está en estado de rafʿ; con kāna y sus hermanas pasa al estado de naṣb; con inna y sus hermanas permanece en estado de rafʿ.",
+        "El khabar puede ser una sola palabra, un sintagma entero (iḍāfa, jārr-majrūr, mawṣūf-ṣifa) o incluso una oración completa (nominal o verbal). Si es a su vez una oración, debe concordar en número y género con el mubtadaʾ.",
+        "Entre el mubtadaʾ y el khabar no hay en árabe ninguna palabra visible para «es» — hay que añadirla al traducir."
+      ],
+      "erkennung": [
+        "El segundo elemento marcado en rafʿ de una oración nominal (o el elemento en naṣb en las oraciones con kāna) que, por su contenido, formula un enunciado sobre el mubtadaʾ.",
+        "En la sintaxis del corpus, el khabar lleva con frecuencia la relación Pred, con una remisión head a su mubtadaʾ."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 2,
+          "wort": 6,
+          "zeigt": "هُدًى lleva la relación Pred con remisión head a la palabra 1 (el mubtadaʾ ذَٰلِكَ)",
+          "warum": "documenta el khabar de una oración nominal corriente en estado de rafʿ («... es guía para los temerosos de Dios»)"
+        },
+        {
+          "sure": 2,
+          "vers": 19,
+          "wort": 18,
+          "zeigt": "مُحِيطٌۢ lleva la relación Pred con remisión head a la palabra 17 (el mubtadaʾ ٱللَّهُ)",
+          "warum": "documenta un segundo ejemplo de khabar («y Alá abarca a los incrédulos») — el mismo versículo que la entrada del mubtadaʾ utiliza como segundo ejemplo"
+        }
+      ],
+      "lernen": [
+        "Busca el khabar siempre DESPUÉS de haber encontrado el mubtadaʾ — ambos van juntos y se complementan en un enunciado completo.",
+        "Practica con versículos de khabar en forma de oración a comprobar la concordancia en número/género entre el mubtadaʾ y la oración incrustada.",
+        "Contrapón el mismo khabar en una oración nominal corriente y en una oración con kāna, para ver directamente el cambio de estado (rafʿ frente a naṣb)."
+      ],
+      "tabellen": [],
+      "siehe": [
+        "mubtada"
+      ]
+    },
+    "sifah": {
+      "titel": "El adjetivo",
+      "ar": "صِفَة",
+      "umschrift": "Sifah",
+      "erklaerung": [
+        "La ṣifa describe una cualidad del mawṣūf (el nombre descrito) y debe concordar con él en LOS CUATRO rasgos: estado (iʿrāb), número, género y determinación. Esta concordancia completa en cuatro puntos es precisamente lo que distingue la ṣifa del badal (ver esa entrada): un badal solo debe compartir el estado, ninguna de las otras tres propiedades.",
+        "La ṣifa sigue siempre al mawṣūf, aunque no tiene que seguirle de forma inmediata."
+      ],
+      "erkennung": [
+        "Prueba de los cuatro puntos: ¿coinciden exactamente el estado, el número, el género y la determinación de la ṣifa y del mawṣūf? Si es así, hay un sintagma mawṣūf-ṣifa.",
+        "Prueba de contenido frente al badal: ¿la segunda palabra describe solo una CUALIDAD de la primera (hermoso, grande, creyente ...) en lugar de nombrar una identidad más precisa de la misma cosa? Entonces es ṣifa, no badal."
+      ],
+      "belege": [
+        {
+          "sure": 1,
+          "vers": 1,
+          "wort": 3,
+          "zeigt": "ٱلرَّحْمَٰنِ lleva la relación Adj con remisión head a la palabra 2 (ٱللَّهِ)",
+          "warum": "documenta la ṣifa en concordancia completa con su mawṣūf (determinado, rafʿ/jarr según el versículo, masculino, singular): «en el nombre de Alá, el Compasivo»"
+        },
+        {
+          "sure": 1,
+          "vers": 1,
+          "wort": 4,
+          "zeigt": "ٱلرَّحِيمِ lleva la relación Adj con remisión head a la palabra 2 (ٱللَّهِ)",
+          "warum": "documenta una segunda ṣifa referida al mismo mawṣūf en el mismo versículo («... el Misericordioso») — dos ṣifa seguidas sin ḥarf al-ʿaṭf entre ellas"
+        }
+      ],
+      "lernen": [
+        "Practica la prueba de los cuatro puntos de forma explícita en varios pares mawṣūf-ṣifa, hasta que salga automáticamente.",
+        "Reúne contraejemplos: encuentra pares de palabras que a primera vista parecen ṣifa, pero que difieren en el estado — solo pueden ser badal.",
+        "Compara el ejemplo de aquí directamente con un ejemplo de badal del mismo versículo, para experimentar el contraste entre descripción y redenominación."
+      ],
+      "tabellen": [],
+      "siehe": [
+        "badal"
+      ]
+    },
+    "haal": {
+      "titel": "El circunstancial de estado",
+      "ar": "حَال",
+      "umschrift": "Haal",
+      "erklaerung": [
+        "El ḥāl describe el ESTADO del fāʿil, del mafʿūl o de otro elemento de la oración JUSTO EN EL MOMENTO en que ocurre la acción principal. Está en estado de naṣb cuando es una sola palabra y, en ese caso, es típicamente indeterminado.",
+        "El ḥāl también puede ser toda una cláusula de estado (jumla ismiyya o fiʿliyya), a menudo introducida por el llamado وَ الحَالِيَّة (wāw al-ḥāliyya).",
+        "Delimitación frente al tamyīz (ver esa entrada): el ḥāl describe una circunstancia acompañante PASAJERA («cómo/en qué estado»), mientras que el tamyīz precisa un TIPO o una CANTIDAD («qué clase de/cuánto»)."
+      ],
+      "erkennung": [
+        "Una palabra indeterminada en naṣb (o una cláusula introducida por وَ) directamente después de la acción principal, que aporta una descripción de circunstancia simultánea y responde a la pregunta «¿cómo/en qué estado?».",
+        "Prueba de delimitación frente al tamyīz: ¿se puede parafrasear la palabra con «mientras él/ella/ello ...»? Entonces es ḥāl. ¿Se parafrasea más bien con «en cuanto a/respecto de ...»? Entonces es tamyīz."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 22,
+          "wort": 22,
+          "zeigt": "وَأَنتُمْ (con el تَعْلَمُونَ siguiente, palabra 23, relación circ o Pred)",
+          "warum": "documenta el ḥāl como cláusula de estado completa («... mientras vosotros lo sabéis») respecto a la acción precedente en el mismo versículo"
+        },
+        {
+          "sure": 2,
+          "vers": 25,
+          "wort": 27,
+          "zeigt": "مُتَشَٰبِهًا lleva la relación circ",
+          "warum": "documenta un ḥāl de una sola palabra en estado de naṣb («y se les traerá algo semejante entre sí»)"
+        }
+      ],
+      "lernen": [
+        "Practica la prueba de delimitación frente al tamyīz («mientras ...» frente a «en cuanto a ...») en varios versículos.",
+        "Busca de forma específica cláusulas introducidas por وَ justo después de un verbo principal y comprueba si aportan una descripción de circunstancia simultánea.",
+        "Reúne ejemplos tanto de ḥāl de una sola palabra como de ḥāl en forma de cláusula, para conocer ambas construcciones."
+      ],
+      "tabellen": [],
+      "siehe": [
+        "tamyiz"
+      ]
+    },
+    "tamyiz": {
+      "titel": "La especificación",
+      "ar": "تَمْيِيز",
+      "umschrift": "Tamyeez",
+      "erklaerung": [
+        "El tamyīz es un nombre en naṣb, indeterminado y en singular, que precisa una indicación por lo demás vaga o ambigua — generalmente tras un numeral, una medida, una comparación (ism tafḍīl) o una expresión imprecisa como «cuánto». Responde a la pregunta «¿qué clase de/cuántos?».",
+        "Tras los numerales a partir de once (salvo 100 y 1000), el objeto contado (al-maʿdūd) figura él mismo como tamyīz — indeterminado, singular, en estado de naṣb.",
+        "Delimitación frente al ḥāl: el tamyīz nombra un TIPO o una categoría, no una situación acompañante pasajera, y es siempre un único ism, nunca una cláusula entera."
+      ],
+      "erkennung": [
+        "Un ism en naṣb, indeterminado y singular, justo después de un numeral, una medida o una palabra de comparación, que precisa QUÉ se cuenta/mide/compara.",
+        "Nunca una cláusula entera (eso distingue de inmediato el tamyīz del ḥāl, que también puede aparecer en forma de cláusula)."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 60,
+          "wort": 13,
+          "zeigt": "عَيْنًا lleva la relación Spec",
+          "warum": "documenta el tamyīz tras un numeral («entonces brotaron de ella doce manantiales») — عَيْنًا precisa qué se quiere decir con «doce»"
+        },
+        {
+          "sure": 2,
+          "vers": 26,
+          "wort": 28,
+          "zeigt": "مَثَلًا lleva la relación Spec",
+          "warum": "documenta un tamyīz que precisa un enunciado por lo demás vago («Alá no se avergüenza de proponer un ejemplo — aunque sea un mosquito»)"
+        }
+      ],
+      "lernen": [
+        "Practica de forma específica con los numerales a partir de once: encuentra el ism singular indeterminado que sigue en estado de naṣb y nómbralo como tamyīz.",
+        "Compara el ejemplo de aquí con un ejemplo de ḥāl, para afianzar la diferencia entre «qué clase de/cuánto» y «cómo/en qué estado».",
+        "Busca más ejemplos de tamyīz tras un ism tafḍīl (forma de comparación), para experimentar la función fuera de los numerales."
+      ],
+      "tabellen": [],
+      "siehe": [
+        "haal"
+      ]
+    },
+    "badal": {
+      "titel": "La aposición",
+      "ar": "بَدَل",
+      "umschrift": "Badal",
+      "erklaerung": [
+        "Un badal es una construcción ism-ism en la que un segundo ism sigue directamente a un primero y lo explica o precisa — como si entre ambos hubiera un «es decir ...» o «con lo que quiero decir ...» no expresado.",
+        "El nombre badal («intercambio/sustitución») viene de que cada una de las dos palabras, por sí sola, haría la oración completa y con sentido — se podría «sustituir» una por la otra sin que la oración quedara incompleta. En combinación, sin embargo, la oración se vuelve más precisa e informativa.",
+        "La regla gramatical decisiva: ambos ismes de un badal deben estar en el MISMO estado (los dos en rafʿ, los dos en naṣb o los dos en jarr). Esa es la única condición — a diferencia de la ṣifa, el número, el género o la determinación NO tienen que coincidir.",
+        "Precisamente ahí está el mayor riesgo de confusión en clase: un badal se parece a menudo, en la superficie, a una ṣifa (descripción adjetival), porque ambas construcciones constan de dos ismes consecutivos. La diferencia está en la finalidad: una ṣifa DESCRIBE una cualidad del mawṣūf (concordando con él en los cuatro rasgos); un badal DENOMINA la misma cosa una vez más de forma más precisa o la cambia por una designación más exacta (concordando solo en el estado). La prueba del «es decir ...» separa ambos de forma fiable: si entre las dos palabras se puede insertar con sentido «es decir», es un badal; si la segunda palabra solo describe una cualidad de la primera, es una ṣifa."
+      ],
+      "erkennung": [
+        "Prueba del «es decir»: ¿tiene sentido insertar entre los dos ismes «es decir» o «a saber»? Entonces es un badal.",
+        "Prueba del estado: ¿están ambos ismes en el mismo estado (rafʿ/naṣb/jarr)? Esa es la condición necesaria — pero, A DIFERENCIA de la ṣifa, los otros tres rasgos (número, género, determinación) no tienen que coincidir.",
+        "Prueba de sustitución: ¿se podría omitir una de las dos palabras y la oración seguiría siendo por sí sola completa y correcta? Entonces es muy probable que haya un badal."
+      ],
+      "belege": [
+        {
+          "sure": 1,
+          "vers": 2,
+          "wort": 3,
+          "zeigt": "رَبِّ lleva la relación App con remisión head a la palabra 2 (لِلَّهِ)",
+          "warum": "documenta el badal en estado de jarr: «Toda alabanza pertenece a Alá, [es decir] al Señor de los mundos» — رَبِّ precisa a quién se refiere لِلَّهِ, ambos en el mismo estado de jarr"
+        },
+        {
+          "sure": 1,
+          "vers": 7,
+          "wort": 1,
+          "zeigt": "صِرَٰطَ lleva la relación App",
+          "warum": "documenta el badal en estado de naṣb más allá del límite del versículo: «el camino recto — [es decir] el camino de aquellos a quienes has agraciado», procedente del versículo 6 precedente"
+        }
+      ],
+      "lernen": [
+        "Graba primero la prueba del «es decir» y aplícala de forma consecuente a cada par de ismes consecutivos, antes de pensar en la ṣifa.",
+        "Busca contraejemplos de forma específica: toma un ejemplo conocido de mawṣūf-ṣifa y comprueba por qué allí la prueba del «es decir» NO funciona.",
+        "Practica con los dos ejemplos de aquí a demostrar explícitamente la concordancia de estado (jarr en el versículo 2, naṣb en el versículo 7), aunque los dos pares de palabras se diferencien en determinación/extensión.",
+        "Constrúyete una pequeña colección propia de tres a cinco pasajes más con badal y nombra en cada caso el estado común."
+      ],
+      "tabellen": [],
+      "siehe": [
+        "sifah",
+        "mudaf-ilayh"
+      ]
+    },
+    "mudaf-ilayh": {
+      "titel": "El segundo término del estado constructo",
+      "ar": "مُضَاف إِلَيْه",
+      "umschrift": "Mudaaf Ilayh",
+      "erklaerung": [
+        "En una iḍāfa (sintagma de posesión, p. ej. «libro de Alá»), el muḍāf ilayhi es la segunda palabra — el «poseedor». Está siempre en estado de jarr, con independencia del estado que lleve la primera palabra (el muḍāf).",
+        "El muḍāf (la primera palabra, lo «poseído») nunca lleva a la vez el artículo determinado y la nunación — «toma prestada» su determinación del muḍāf ilayhi."
+      ],
+      "erkennung": [
+        "Un nombre marcado en jarr justo después de otro nombre que a su vez no lleva ni artículo ni nunación.",
+        "Responde a la pregunta «¿de quién?» respecto a la palabra precedente."
+      ],
+      "belege": [
+        {
+          "sure": 1,
+          "vers": 1,
+          "wort": 2,
+          "zeigt": "ٱللَّهِ lleva la relación Poss con remisión head a la palabra 1 (بِسْمِ)",
+          "warum": "documenta el muḍāf ilayhi en el primerísimo sintagma de iḍāfa del Corán («en el nombre de Alá») — بِسْمِ no lleva por sí mismo ni artículo ni nunación"
+        },
+        {
+          "sure": 1,
+          "vers": 2,
+          "wort": 4,
+          "zeigt": "ٱلْعَٰلَمِينَ lleva la relación Poss con remisión head a la palabra 3 (رَبِّ)",
+          "warum": "documenta un segundo muḍāf ilayhi («Señor de los mundos») en el mismo capítulo de la Fátiha"
+        }
+      ],
+      "lernen": [
+        "Practica en varios versículos a encontrar primero la palabra sin artículo ni nunación — indica una iḍāfa; la palabra siguiente en jarr es el muḍāf ilayhi.",
+        "Forma cadenas con varias iḍāfas encadenadas (p. ej. «el día del juicio de los hombres») y nombra cada eslabón muḍāf ilayhi.",
+        "Compara el muḍāf ilayhi con el majrūr que sigue a un ḥarf jarr — ambos están en estado de jarr, pero por motivos distintos."
+      ],
+      "tabellen": [],
+      "siehe": [
+        "badal",
+        "huruf-jarr"
+      ]
+    },
+    "munada": {
+      "titel": "El vocativo",
+      "ar": "مُنَادَى",
+      "umschrift": "Munaadaa",
+      "erklaerung": [
+        "El munādā es el nombre interpelado tras una partícula de vocativo — generalmente يَا, a menudo en la forma يَا أَيُّهَا cuando se interpela a un grupo. Con frecuencia, al munādā le sigue además otro ism que lo denomina con más precisión (en el caso de يَا أَيُّهَا, típicamente como badal).",
+        "En la interpelación directa con nombres propios (يَا + nombre), el munādā suele ser el propio ism del nombre propio; en يَا أَيُّهَا, أَيُّهَا es el munādā propiamente dicho, mabni, y el ism que le sigue (por ejemplo ٱلنَّاسُ) precisa a quién se refiere."
+      ],
+      "erkennung": [
+        "Una palabra (o un pequeño sintagma) justo después de يَا o أَيُّهَا, que nombra a la persona o al grupo interpelados.",
+        "Con يَا أَيُّهَا suele seguir después un ism precisador en el mismo estado — un badal respecto al propio munādā."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 21,
+          "wort": 1,
+          "zeigt": "يَٰٓأَيُّهَا lleva la relación voc",
+          "warum": "documenta el munādā como núcleo de una interpelación («¡Oh, humanos! Servid a vuestro Señor») — el ٱلنَّاسُ siguiente (palabra 2) lo precisa como badal"
+        },
+        {
+          "sure": 2,
+          "vers": 33,
+          "wort": 2,
+          "zeigt": "يَٰٓـَٔادَمُ lleva la relación voc",
+          "warum": "documenta una interpelación directa a una sola persona con nombre propio («Dijo: ¡Oh, Adán! Infórmales de sus nombres»)"
+        }
+      ],
+      "lernen": [
+        "Busca en el Corán de forma específica pasajes con يَا أَيُّهَا y nombra tanto el munādā como el ism precisador que le sigue.",
+        "Compara varias interpelaciones entre sí: ¿a quién se interpela en cada caso y cómo se denomina además al grupo?",
+        "Vincula conscientemente esta entrada con el badal, para comprender el doble papel de يَا أَيُّهَا + ism."
+      ],
+      "tabellen": [],
+      "siehe": [
+        "badal"
+      ]
+    },
+    "mustathna": {
+      "titel": "La excepción",
+      "ar": "مُسْتَثْنَى",
+      "umschrift": "Mustathnaa",
+      "erklaerung": [
+        "El mustathnā es la palabra que, tras una partícula de excepción — sobre todo إِلَّا —, queda excluida de un enunciado por lo demás general. Nombra QUIÉN o QUÉ queda exceptuado del grupo o del enunciado mencionado antes.",
+        "El estado exacto del mustathnā depende del tipo de oración (completa afirmativa, completa negativa o incompleta) — para empezar basta con reconocerlo como un papel propio del iʿrāb justo después de إِلَّا."
+      ],
+      "erkennung": [
+        "Un nombre justo después de إِلَّا, que restringe un grupo o un enunciado más general mencionado antes («todos excepto ...»).",
+        "Sin el mustathnā y sin إِلَّا, la oración ya es completa por sí sola — el mustathnā solo restringe a posteriori el enunciado hecho antes."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 34,
+          "wort": 8,
+          "zeigt": "إِبْلِيسَ lleva la relación exp",
+          "warum": "documenta el mustathnā tras إِلَّا («entonces se prosternaron todos, excepto Iblís») — Iblís queda exceptuado del enunciado general sobre los ángeles"
+        },
+        {
+          "sure": 2,
+          "vers": 83,
+          "wort": 26,
+          "zeigt": "قَلِيلًا lleva la relación exp",
+          "warum": "documenta un segundo mustathnā («luego os apartasteis, salvo unos pocos de vosotros»)"
+        }
+      ],
+      "lernen": [
+        "Busca de forma específica pasajes con إِلَّا y nombra en cada caso qué enunciado general se hace antes y quién o qué queda exceptuado de él.",
+        "Compara varios ejemplos de mustathnā y observa lo distinto que puede resultar el estado según el tipo de oración.",
+        "Traduce a modo de prueba la oración sin إِلَّا y sin el mustathnā — comprueba si el enunciado restante sigue siendo una oración completa."
+      ],
+      "tabellen": [],
+      "siehe": []
+    },
+    "taukid": {
+      "titel": "El énfasis",
+      "ar": "تَوْكِيد",
+      "umschrift": "Taukid",
+      "erklaerung": [
+        "El tawkīd corrobora un nombre precedente sin añadir nada nuevo en cuanto al contenido — está en el MISMO estado que su palabra de referencia. Dos tipos son especialmente frecuentes: la repetición literal (tawkīd lafẓī) y el refuerzo con palabras fijas como كُلّ/جَمِيع («todos/en su totalidad») o نَفْس/عَيْن («mismo») junto con un pronombre afijo adecuado (tawkīd maʿnawī).",
+        "A diferencia del badal, el tawkīd no añade a la oración ninguna identidad nueva y precisadora — se limita a repetir o reforzar la misma cosa ya mencionada, para que suene especialmente enfática."
+      ],
+      "erkennung": [
+        "Una palabra como كُلّ, جَمِيع, نَفْس o عَيْن con un pronombre afijo ajustado a la palabra de referencia, justo después de esa palabra de referencia, en el mismo estado — y sin información nueva de contenido.",
+        "¿Se puede suprimir sin más la palabra en cuestión sin que se pierda información alguna (solo se debilita el énfasis)? Entonces se trata de un tawkīd."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 31,
+          "wort": 4,
+          "zeigt": "كُلَّهَا lleva la relación emph",
+          "warum": "documenta el tawkīd maʿnawī con كُلّ + pronombre afijo («y Él enseñó a Adán los nombres, todos ellos») — corrobora ٱلْأَسْمَآءَ sin añadir información nueva"
+        },
+        {
+          "sure": 2,
+          "vers": 161,
+          "wort": 13,
+          "zeigt": "أَجْمَعِينَ lleva la relación emph",
+          "warum": "documenta un tawkīd con جَمِيع/أَجْمَعِينَ («la maldición de Alá, de los ángeles y de los hombres, todos juntos»)"
+        }
+      ],
+      "lernen": [
+        "Busca de forma específica كُلّ/جَمِيع/نَفْس/عَيْن justo después de un nombre y comprueba si el pronombre afijo concuerda con ese nombre.",
+        "Distingue conscientemente el tawkīd del badal: el tawkīd no añade información nueva, el badal precisa o denomina de nuevo.",
+        "Traduce la misma oración una vez con la palabra de tawkīd y otra sin ella, y observa que el contenido factual no cambia, solo el énfasis."
+      ],
+      "tabellen": [],
+      "siehe": []
+    }
+  }
+}

@@ -27,6 +27,7 @@
     "halal": "Halal nearby",
     "halalScanner": "Halal Scanner",
     "study": "Study",
+    "lexikon": "Lexicon",
     "sync": "Sync",
     "impressum": "Legal Notice",
     "datenschutz": "Privacy Policy",
@@ -202,7 +203,61 @@
     "compareStageB": "Reciter B …",
     "compareLoadError": "Audio could not be loaded.",
     "chooseReciterA": "Choose reciter A",
-    "chooseReciterB": "Choose reciter B"
+    "chooseReciterB": "Choose reciter B",
+    "wortAnalyse": {
+      "title": "Word Analysis",
+      "fundstelle": "Surah {surah}, Verse {ayah}, Word {position}",
+      "rootLabel": "Root",
+      "lemmaLabel": "Base Form",
+      "rootFrequency": "{count}× in the Qur'an",
+      "rootNone": "No root is recorded for this word.",
+      "fragmentsTitle": "Fragments",
+      "segmentKind": {
+        "prefix": "Prefix (سابقة)",
+        "stem": "Stem (جذع)",
+        "suffix": "Suffix (لاحقة)"
+      },
+      "wortartTitle": "Part of Speech",
+      "satzrolleTitle": "Sentence Role (I'rab)",
+      "satzrolleNoData": "No sentence-role data is available for this word.",
+      "satzrolleHeadNone": "The word it refers to is not in the same verse or is not pronounced (elided).",
+      "satzrolleHeadLabel": "Refers to: {wort}",
+      "morphologyNoData": "Grammar data for this surah is not available yet.",
+      "lexikonButton": "Open in Lexicon",
+      "verbTypLabel": "Verb type",
+      "wortartAr": "أقسام الكلمة",
+      "fragmentsAr": "أجزاء الكلمة"
+    },
+    "sectionLesehilfen": "Reading aids",
+    "sectionAussprache": "Pronunciation",
+    "sectionBedeutung": "Meaning",
+    "sectionGrammatik": "Grammar",
+    "captions": {
+      "beginnerMode": "Turns on transliteration, isolated letters and word-by-word together — a good starting point for learning to read Arabic.",
+      "transliteration": "Writes the pronunciation in Latin letters under the Arabic text.",
+      "isolatedLetters": "Shows each letter in its stand-alone form instead of the connected script — makes it easier to recognise individual letters.",
+      "wordByWord": "Breaks the verse into individual words with their translation underneath each one.",
+      "wordByWordTeilabdeckung": "Around {n}% of the verses have these word meanings in your language – the rest stay in English.",
+      "wordByWordLadefehler": "The word meanings for your language could not be loaded just now – until that works, they stay in English.",
+      "wordByWordWortlisteLadefehler": "The word list for this surah could not be loaded just now – without it the word view stays completely empty.",
+      "tajweed": "Colors the recitation rules (Tajweed) in the text so you apply them correctly while reciting.",
+      "translation": "The translation shown under each verse — tap to choose a different edition.",
+      "secondTranslation": "Shows a second translation alongside the first, for comparison.",
+      "tafsir": "Shows a scholar's explanation (Tafsir) of the verse — more background than the plain translation.",
+      "grammarColorModes": "Highlights one grammatical feature in color across the verse — tap again to turn it off.",
+      "satzstruktur": "Shows which word relates to which other word, and with what sentence role (I'rab).",
+      "wortAnalyseHint": "Tap any single word for its full analysis: root, base form, fragments and sentence role."
+    },
+    "tajweedGrammarConflictHint": "An active color mode overrides the Tajweed color on colored words.",
+    "grammatikIntro": {
+      "title": "Grammar tools",
+      "what": "The color modes mark a grammatical feature directly in the verse — for example which words are nouns, verbs or particles. Sentence structure additionally shows which word relates to which other word, and with what sentence role (I'rab). Tap any single word at any time for its full analysis.",
+      "why": "This makes visible how a verse is built grammatically, not just what it means — helpful for learning Arabic and for understanding the Quranic text precisely, even without prior knowledge of Arabic grammar."
+    },
+    "satzstruktur": {
+      "chip": "Sentence structure",
+      "title": "Sentence structure"
+    }
   },
   "hadith": {
     "languagesNote": "Encyclopedia of translated prophetic hadiths — in all 14 app languages",
@@ -972,6 +1027,19 @@
         "deleteAll": "Delete all",
         "deleteAllConfirmTitle": "Delete all downloads?",
         "deleteAllConfirmBody": "All downloaded videos will be removed from your device."
+      },
+      "otherData": {
+        "title": "More data",
+        "hint": "Additional data this app has downloaded. Everything here can be fetched again when needed.",
+        "empty": "No additional data stored.",
+        "quranWords": "Quran word data (word analysis, word by word)",
+        "handouts": "Handouts (PDF)",
+        "kiCorpus": "Salati AI knowledge sources",
+        "courses": "Course data",
+        "other": "Other app files",
+        "delete": "Delete",
+        "deleteConfirmTitle": "Delete data?",
+        "deleteConfirmBody": "{name} will be removed from your device and downloaded again when needed."
       }
     },
     "appIcon": {
@@ -2636,12 +2704,179 @@
     "openInBrowser": "Open in browser",
     "viewerError": "The PDF could not be loaded."
   },
+  "lexikon": {
+    "title": "Lexicon",
+    "subtitle": "A reference for roots, grammar, tajwid, and Qur'an concordance",
+    "searchPlaceholder": "Search the lexicon",
+    "tabs": {
+      "roots": "Roots & Vocabulary (جذر)",
+      "grammar": "Grammar & Sarf (صرف)",
+      "tajwid": "Tajwid (تجويد)",
+      "concordance": "Concordance"
+    },
+    "empty": {
+      "tajwid": "Tajwid rules have not been added yet."
+    },
+    "noResultsFor": "No results for {query}.",
+    "occurrencesTruncated": "First {shown} of {total} occurrences",
+    "search": {
+      "loading": "Preparing search…",
+      "sectionRoots": {
+        "name": "Roots",
+        "ar": "جَذْر"
+      },
+      "sectionVocabulary": {
+        "name": "Vocabulary",
+        "ar": "لَفْظ"
+      },
+      "sectionTerms": {
+        "name": "Grammar Terms",
+        "ar": "مُصْطَلَح"
+      },
+      "moreResults": "More results available. Narrow your search."
+    },
+    "roots": {
+      "loadError": "The root list could not be loaded.",
+      "loading": "Loading roots…",
+      "sortByFrequency": {
+        "name": "Frequency",
+        "ar": "تَكْرَار"
+      },
+      "sortByAlphabet": {
+        "name": "Alphabetical",
+        "ar": "أَبْجَدِيّ"
+      },
+      "occurrences": "{n} occurrences",
+      "lemmaCount": "{n} word forms",
+      "totalCount": "{n} roots"
+    },
+    "wurzel": {
+      "notFound": "This root could not be found.",
+      "loadError": "The root data could not be loaded.",
+      "occurrencesInQuran": "{n} occurrences in the Qur'an",
+      "sectionForms": {
+        "name": "Derived Word Forms",
+        "ar": "الصِّيَغ المُشْتَقَّة"
+      },
+      "sectionOccurrences": {
+        "name": "Occurrences",
+        "ar": "مَوَاضِع الوُرُود"
+      },
+      "formsUnclassified": {
+        "name": "Other Forms",
+        "ar": "غَيْر مُصَنَّف"
+      },
+      "formsLoading": "Matching word forms…",
+      "formsLoadingProgress": "Loading word forms… ({loaded} of {total})",
+      "formsLoadError": "Word forms could not be loaded."
+    },
+    "concordance": {
+      "searchPlaceholder": "Enter an Arabic word or root",
+      "prompt": "Enter an Arabic word or root to see where it occurs in the Qur'an.",
+      "matchesHeading": "Matches",
+      "occurrencesHeading": "Occurrences",
+      "totalOccurrences": "{n} occurrences",
+      "rootLabel": {
+        "name": "Root",
+        "ar": "جَذْر"
+      },
+      "lemmaLabel": {
+        "name": "Word Form",
+        "ar": "لَفْظ"
+      }
+    },
+    "grammar": {
+      "loading": "Loading terms…",
+      "loadError": "The grammar content could not be loaded.",
+      "notFound": "This term could not be found.",
+      "termCount": "{n} terms",
+      "sectionErkennung": "How to Recognize It",
+      "sectionBelege": "Qur'an Examples",
+      "sectionLernen": "Study Tips",
+      "sectionTabellen": "Form Tables",
+      "sectionSiehe": "See Also",
+      "germanOnlyNote": "These explanations are currently only available in German.",
+      "bereichPartikelSyntax": {
+        "name": "Particles & Syntax",
+        "ar": "الحروف والنحو"
+      },
+      "tables": {
+        "toggleBegriffe": "Terms",
+        "toggleTabellen": "Form Tables",
+        "searchPlaceholder": "Search form tables",
+        "noResults": "No tables found.",
+        "tableCount": "{n} tables",
+        "categoryNomenPronomen": {
+          "name": "Nouns & Pronouns",
+          "ar": "الاسم والضمائر"
+        },
+        "categoryVerbMatrizen": {
+          "name": "Verb: Full Conjugation Tables",
+          "ar": "تصريف الفعل الكامل"
+        },
+        "categoryVerbstammFamilien": {
+          "name": "Verb Stem Families (Bab)",
+          "ar": "أبواب الفعل"
+        },
+        "categoryVerbstammAbleitungen": {
+          "name": "Verb Stem Derivations (Forms II–X)",
+          "ar": "أوزان الفعل المزيد"
+        },
+        "categoryPartikelnZahlenWortschatz": {
+          "name": "Particles, Numbers & Vocabulary",
+          "ar": "الحروف والأعداد والمفردات"
+        },
+        "verbFamilieSahih": {
+          "name": "Ṣaḥīḥ (sound)",
+          "ar": "صحيح"
+        },
+        "verbFamilieMahmuz": {
+          "name": "Mahmūz (hamzated)",
+          "ar": "مهموز"
+        },
+        "verbFamilieMithal": {
+          "name": "Miṯāl (assimilated)",
+          "ar": "مثال"
+        },
+        "verbFamilieAjwaf": {
+          "name": "Aǧwaf (hollow)",
+          "ar": "أجوف"
+        },
+        "verbFamilieNaaqis": {
+          "name": "Nāqiṣ (defective)",
+          "ar": "ناقص"
+        },
+        "verbFamilieLafif": {
+          "name": "Lafīf (doubly weak)",
+          "ar": "لفيف"
+        },
+        "verbFamilieMudaaf": {
+          "name": "Muḍāʿaf (geminate)",
+          "ar": "مضاعف"
+        },
+        "verbFamilieMurakkab": {
+          "name": "Murakkab (combined)",
+          "ar": "مركب"
+        }
+      },
+      "wortlisten": {
+        "toggleWortlisten": "Word Lists",
+        "germanOnlyMeaningNote": "The German meanings in these word lists are currently only available in German.",
+        "listCount": "{n} lists"
+      }
+    },
+    "verbtyp": {
+      "title": "Verb Family",
+      "notFound": "No form tables exist yet for this verb type."
+    }
+  },
   "lizenzen": {
     "title": "Sources & licences",
     "subtitle": "Rights holders and licences for the content used in Salati",
     "intro": "Salati uses texts, audio, data, fonts and models from third parties. All rights holders and the licences under which we use them are listed here. Where a licence requires attribution - Apache-2.0, MIT or ODbL, for example - this page provides it.",
     "categories": {
       "quran": "Quran text & translations",
+      "adhan": "Adhan recordings",
       "recitation": "Recitations",
       "hadith": "Hadith collections",
       "font": "Fonts",
@@ -2659,7 +2894,8 @@
       "publicDomain": "Unlicense (public domain)",
       "fontEula": "Vendor licence (embedded in the font)",
       "hadeethencTerms": "Unmodified reproduction with source attribution (provider terms)",
-      "rassoulRelease": "Released by the author - unaltered reproduction with source credit"
+      "rassoulRelease": "Released by the author - unaltered reproduction with source credit",
+      "quranicCorpusTerms": "Source attribution and link required (the work's terms of use)"
     },
     "distributedSection": "What we hand out ourselves",
     "distributedText": "Most content is fetched by your device directly from the respective provider - we do not redistribute it, so naming the source is enough there. What we do hand out ourselves: the language model Qwen2.5-1.5B-Instruct and Tarteel’s speech-recognition model (both from our own storage), the KFGQPC HAFS font and every software library inside the app package. For those works the full licence text is attached - open it right at the entry. We also deliver the German tafsir by Abu-r-Ridā Muhammad Ibn Ahmad Ibn Rassoul ourselves - the author released it free of copyright but requires the source to be named.",
@@ -2785,6 +3021,983 @@
       "charakter-sadaqa": "Give sadaqah {n} times",
       "charakter-eltern": "Call or visit your parents {n} times",
       "charakter-helfen": "Help someone {n} times"
+    }
+  },
+  "grammatik": {
+    "fragmentrollen": {
+      "artikel": {
+        "name": "Definite article",
+        "ar": "أل التعريف",
+        "info": "The prefixed ال makes a noun definite, comparable to \"the\" in English."
+      },
+      "fragepartikel": {
+        "name": "Question particle",
+        "ar": "حرف استفهام",
+        "info": "Introduces a question without carrying a meaning of its own."
+      },
+      "konjunktion": {
+        "name": "Conjunction",
+        "ar": "حرف عطف",
+        "info": "Links two equal words or clauses, such as \"and\" or \"or\"."
+      },
+      "praeposition": {
+        "name": "Preposition",
+        "ar": "حرف جر",
+        "info": "Precedes a noun and relates it to the rest of the sentence; the following noun is thereby put in the genitive."
+      },
+      "pronomenSuffix": {
+        "name": "Attached pronoun",
+        "ar": "ضمير متصل",
+        "info": "A pronoun attached directly to a noun, verb or preposition, such as for \"his book\" or \"to him\"."
+      },
+      "stamm": {
+        "name": "Stem",
+        "ar": "الجذع",
+        "info": "The core part of a word that carries prefixes and suffixes."
+      },
+      "verneinung": {
+        "name": "Negation particle",
+        "ar": "حرف نفي",
+        "info": "Negates the statement of a sentence or verb, such as \"not\" or \"no\"."
+      }
+    },
+    "herkunft": {
+      "beleg": {
+        "label": "Attested in the corpus",
+        "info": "This feature is explicitly stated in the underlying corpus."
+      },
+      "hergeleitet": {
+        "label": "Derived by rule",
+        "info": "This feature is not explicitly marked in the corpus and was added following fixed grammatical conventions — for instance because definiteness, number or verb form are not separately marked in the unmarked default case."
+      }
+    },
+    "ismEigenschaften": {
+      "bestimmtheit": {
+        "name": "Definiteness",
+        "ar": "التعريف والتنكير",
+        "info": "Determines whether a noun is definite (\"the book\") or indefinite (\"a book\") — in Arabic usually shown by the article ال.",
+        "werte": {
+          "definite": {
+            "name": "definite",
+            "ar": "معرفة"
+          },
+          "indefinite": {
+            "name": "indefinite",
+            "ar": "نكرة"
+          }
+        }
+      },
+      "genus": {
+        "name": "Gender",
+        "ar": "التذكير والتأنيث",
+        "info": "Shows whether a noun is masculine or feminine — in Arabic often recognizable by the ending ة.",
+        "werte": {
+          "f": {
+            "name": "feminine",
+            "ar": "مؤنث"
+          },
+          "m": {
+            "name": "masculine",
+            "ar": "مذكر"
+          }
+        }
+      },
+      "kasus": {
+        "name": "Case",
+        "ar": "الإعراب",
+        "info": "Shows a noun's grammatical role in the sentence through its ending vowel — subject, object, or linked to a preposition or genitive construction.",
+        "werte": {
+          "acc": {
+            "name": "accusative",
+            "ar": "نصب"
+          },
+          "gen": {
+            "name": "genitive",
+            "ar": "جر"
+          },
+          "nom": {
+            "name": "nominative",
+            "ar": "رفع"
+          }
+        }
+      },
+      "numerus": {
+        "name": "Number",
+        "ar": "العدد",
+        "info": "States whether one, two or several people or things are meant — Arabic distinguishes a dual in addition to singular and plural.",
+        "werte": {
+          "du": {
+            "name": "dual",
+            "ar": "مثنى"
+          },
+          "pl": {
+            "name": "plural",
+            "ar": "جمع"
+          },
+          "sg": {
+            "name": "singular",
+            "ar": "مفرد"
+          }
+        }
+      }
+    },
+    "nomenFlexibilitaet": {
+      "mabni": {
+        "name": "Mabnī (indeclinable)",
+        "ar": "مبني",
+        "info": "A word with a fixed ending that does not change regardless of case — as with many pronouns and particles."
+      },
+      "mamnuMinSarf": {
+        "name": "Diptote",
+        "ar": "ممنوع من الصرف",
+        "info": "A noun that, in its indefinite state, can take neither nunation nor the genitive ending -i, usually because of its form or meaning, as with many proper names and colour adjectives. If such a noun is the first term of a genitive construct (idafa), however, the restriction no longer applies and it takes a regular kasra in the genitive again."
+      },
+      "murab": {
+        "name": "Muʿrab (declinable)",
+        "ar": "معرب",
+        "info": "A noun whose ending vowel changes according to case."
+      }
+    },
+    "posTags": {
+      "ACC": {
+        "name": "Accusative particle",
+        "ar": "حرف نصب",
+        "info": "A particle such as \"inna\" that assigns the accusative to the following noun and emphasises the statement."
+      },
+      "ADJ": {
+        "name": "Adjective",
+        "ar": "صفة",
+        "info": "Describes a noun more closely and agrees with it in gender, number, case and definiteness."
+      },
+      "AMD": {
+        "name": "Amendment particle",
+        "ar": "حرف استدراك",
+        "info": "Slightly limits or corrects a previous statement, in the sense of \"however\"."
+      },
+      "ANS": {
+        "name": "Answer particle",
+        "ar": "حرف جواب",
+        "info": "Introduces the answer to a question or a conditional clause."
+      },
+      "AVR": {
+        "name": "Aversion particle",
+        "ar": "حرف ردع",
+        "info": "Rejects a previous statement or attitude, in the sense of \"by no means\"."
+      },
+      "CAUS": {
+        "name": "Causal particle",
+        "ar": "فاء السببية",
+        "info": "The فَ after a request or wish that expresses the desired outcome as a consequence, as in \"pray, SO THAT he answers you\"."
+      },
+      "CERT": {
+        "name": "Certainty particle",
+        "ar": "حرف تحقيق",
+        "info": "Underlines that a statement has actually or certainly taken place, usually before a verb."
+      },
+      "CIRC": {
+        "name": "Circumstantial particle",
+        "ar": "واو الحال",
+        "info": "Introduces a clause that describes the circumstances accompanying the main action."
+      },
+      "COM": {
+        "name": "Comitative particle",
+        "ar": "واو المعية",
+        "info": "A wāw expressing accompaniment, in the sense of \"together with\"."
+      },
+      "COND": {
+        "name": "Conditional particle",
+        "ar": "أداة شرط",
+        "info": "Introduces a conditional clause, such as \"if\"."
+      },
+      "CONJ": {
+        "name": "Conjunction",
+        "ar": "حرف عطف",
+        "info": "Links two equal words or clauses, mostly with \"and\" or \"or\"."
+      },
+      "DEM": {
+        "name": "Demonstrative pronoun",
+        "ar": "اسم إشارة",
+        "info": "A pointing word like \"this\" or \"that\", indicating something specific."
+      },
+      "DET": {
+        "name": "Definite article",
+        "ar": "أداة تعريف",
+        "info": "The prefixed ال that makes a noun definite — comparable to \"the\"."
+      },
+      "EMPH": {
+        "name": "Emphatic lām",
+        "ar": "لام التوكيد",
+        "info": "A prefixed lām that emphasises a statement without changing the word's own meaning."
+      },
+      "EQ": {
+        "name": "Equalisation particle",
+        "ar": "حرف تسوية",
+        "info": "Expresses that two stated possibilities are equally valid or indifferent."
+      },
+      "EXH": {
+        "name": "Exhortation particle",
+        "ar": "حرف تحضيض",
+        "info": "Expresses an urgent call or encouragement, such as \"if only\"."
+      },
+      "EXL": {
+        "name": "Elaboration particle",
+        "ar": "حرف تفصيل",
+        "info": "Introduces a more detailed account or listing of what was said before."
+      },
+      "EXP": {
+        "name": "Exception particle",
+        "ar": "أداة استثناء",
+        "info": "Excludes something from a previously stated whole, such as \"except\" or \"apart from\"."
+      },
+      "FUT": {
+        "name": "Future particle",
+        "ar": "حرف استقبال",
+        "info": "Shifts the action of a present-tense verb into the future, such as \"sawfa\" or \"sa-\"."
+      },
+      "IMPN": {
+        "name": "Imperative verbal noun",
+        "ar": "اسم فعل أمر",
+        "info": "A verbal noun used as a command, such as \"quiet!\" instead of a conjugated imperative."
+      },
+      "IMPV": {
+        "name": "Imperative lām",
+        "ar": "لام الأمر",
+        "info": "A prefixed lām that turns a present-tense form into an indirect command."
+      },
+      "INC": {
+        "name": "Inceptive particle",
+        "ar": "حرف ابتداء",
+        "info": "Marks the beginning of a nominal sentence, usually at the start of a sentence."
+      },
+      "INL": {
+        "name": "Quranic initials",
+        "ar": "الحروف المقطعة",
+        "info": "Individually pronounced letters at the start of some surahs, whose exact meaning remains unresolved."
+      },
+      "INT": {
+        "name": "Interpretation particle",
+        "ar": "حرف تفسير",
+        "info": "Introduces an explanatory rephrasing of what was said before, in the sense of \"that is\"."
+      },
+      "INTG": {
+        "name": "Interrogative particle",
+        "ar": "أداة استفهام",
+        "info": "Introduces a question, such as \"who\", \"what\" or \"whether\"."
+      },
+      "LOC": {
+        "name": "Place adverb",
+        "ar": "ظرف مكان",
+        "info": "A noun that expresses a location, such as \"in front of\" or \"above\"."
+      },
+      "N": {
+        "name": "Noun",
+        "ar": "اسم",
+        "info": "A common noun such as an object, quality or abstract concept, without being a proper name."
+      },
+      "NEG": {
+        "name": "Negation particle",
+        "ar": "حرف نفي",
+        "info": "Negates the statement of a sentence or verb, such as \"not\" or \"no\"."
+      },
+      "P": {
+        "name": "Preposition",
+        "ar": "حرف جر",
+        "info": "Assigns the genitive to the following noun and relates it to the rest of the sentence."
+      },
+      "PN": {
+        "name": "Proper noun",
+        "ar": "اسم علم",
+        "info": "A proper name for a person, place or people, grammatically mostly treated like a definite noun."
+      },
+      "PREV": {
+        "name": "Preventive particle",
+        "ar": "كافة",
+        "info": "Cancels the grammatical effect of a preceding particle, for example with \"innamā\"."
+      },
+      "PRO": {
+        "name": "Prohibition particle",
+        "ar": "حرف نهي",
+        "info": "Negates a command, thereby instructing someone to refrain from something."
+      },
+      "PRON": {
+        "name": "Pronoun",
+        "ar": "ضمير",
+        "info": "Stands in for a person or thing, such as \"he\", \"she\" or \"we\" — either standalone or attached as a suffix."
+      },
+      "PRP": {
+        "name": "Purpose particle",
+        "ar": "لام التعليل",
+        "info": "States the purpose or reason for an action, in the sense of \"so that\" or \"in order to\"."
+      },
+      "REL": {
+        "name": "Relative pronoun",
+        "ar": "اسم موصول",
+        "info": "Introduces a relative clause, such as \"the one who\" or \"what\"."
+      },
+      "REM": {
+        "name": "Resumption particle",
+        "ar": "حرف استئناف",
+        "info": "Marks the start of a new sentence part independent of the previous statement."
+      },
+      "RES": {
+        "name": "Restriction particle",
+        "ar": "أداة حصر",
+        "info": "Limits a statement to exactly one thing, in the sense of \"only\" or \"merely\"."
+      },
+      "RET": {
+        "name": "Retraction particle",
+        "ar": "حرف إضراب",
+        "info": "Introduces a shift or correction to the previous statement, in the sense of \"rather\"."
+      },
+      "RSLT": {
+        "name": "Result particle",
+        "ar": "فاء الجواب",
+        "info": "The فَ that introduces the response clause of a conditional sentence or the predicate after a generalising subject (e.g. after \"if\" or \"whoever\") — unlike the causal particle, it does not express purpose but links a condition to its consequence."
+      },
+      "SUB": {
+        "name": "Subordinating conjunction",
+        "ar": "حرف مصدري",
+        "info": "Turns the following clause into a verbal-noun equivalent that can act as subject or object."
+      },
+      "SUP": {
+        "name": "Supplementary particle",
+        "ar": "حرف زائد",
+        "info": "A filler word with no meaning of its own, added for stylistic reasons."
+      },
+      "SUR": {
+        "name": "Surprise particle",
+        "ar": "حرف مفاجأة",
+        "info": "Expresses that something happens suddenly and unexpectedly."
+      },
+      "T": {
+        "name": "Time adverb",
+        "ar": "ظرف زمان",
+        "info": "A noun that expresses a point in time, such as \"today\" or \"back then\"."
+      },
+      "V": {
+        "name": "Verb",
+        "ar": "فعل",
+        "info": "The general label for a verb, before past, present or imperative is distinguished further."
+      },
+      "VOC": {
+        "name": "Vocative particle",
+        "ar": "أداة نداء",
+        "info": "Introduces a direct address, such as \"O\" before a named person."
+      }
+    },
+    "relationen": {
+      "Adj": {
+        "name": "Descriptive word",
+        "ar": "صفة",
+        "info": "An adjective that describes a preceding noun more closely."
+      },
+      "App": {
+        "name": "Apposition",
+        "ar": "بدل",
+        "info": "A second noun that specifies or clarifies a preceding noun — both stand in the same case."
+      },
+      "Cpnd": {
+        "name": "Compound expression",
+        "ar": "مركب",
+        "info": "Two words that together function as one fixed unit."
+      },
+      "NonRel": {
+        "name": "No relation",
+        "ar": "بلا علاقة",
+        "info": "No syntactic relation to another word is recorded for this word."
+      },
+      "Obj": {
+        "name": "Object",
+        "ar": "مفعول به",
+        "info": "The direct object of a verbal sentence — what the action of the verb is directed at."
+      },
+      "Pass": {
+        "name": "Passive subject",
+        "ar": "نائب فاعل",
+        "info": "The grammatical carrier of the action in a passive sentence — stands in for the omitted doer."
+      },
+      "Poss": {
+        "name": "Genitive construction",
+        "ar": "مضاف إليه",
+        "info": "The second part of a genitive construction — the possessor or closer specification of the first noun."
+      },
+      "Pred": {
+        "name": "Predicate",
+        "ar": "خبر",
+        "info": "The stating part of a nominal sentence — what is said about the topic (mubtada)."
+      },
+      "Pro": {
+        "name": "Prohibition",
+        "ar": "نهي",
+        "info": "The part of the sentence belonging to the prohibition particle, forbidding an action."
+      },
+      "Spec": {
+        "name": "Specification",
+        "ar": "تمييز",
+        "info": "An indefinite noun that clarifies a previously vague statement such as quantity or measure."
+      },
+      "Subj": {
+        "name": "Subject",
+        "ar": "فاعل",
+        "info": "The doer of a verbal sentence — who or what carries out the action."
+      },
+      "amd": {
+        "name": "Correction",
+        "ar": "استدراك",
+        "info": "Slightly limits or corrects a previous statement."
+      },
+      "ans": {
+        "name": "Answer",
+        "ar": "جواب",
+        "info": "The answer to a question or a conditional clause."
+      },
+      "avr": {
+        "name": "Rejection",
+        "ar": "ردع",
+        "info": "Firmly rejects a previous statement or attitude."
+      },
+      "cert": {
+        "name": "Confirmation",
+        "ar": "تحقيق",
+        "info": "Underlines that the following statement has actually happened or will happen."
+      },
+      "circ": {
+        "name": "Circumstance",
+        "ar": "حال",
+        "info": "Describes the state or accompanying circumstances of the subject or object during the action."
+      },
+      "cog": {
+        "name": "Reinforcing verbal noun",
+        "ar": "مفعول مطلق",
+        "info": "A verbal noun from the same root as the verb that reinforces or further describes its meaning."
+      },
+      "cond": {
+        "name": "Condition",
+        "ar": "شرط",
+        "info": "The part of the sentence that formulates the condition of a conditional clause."
+      },
+      "conj": {
+        "name": "Coordinated word",
+        "ar": "معطوف",
+        "info": "A word joined to a preceding word on an equal footing via a conjunction."
+      },
+      "emph": {
+        "name": "Emphasis",
+        "ar": "توكيد",
+        "info": "A word that repeats a preceding statement literally or in meaning, thereby reinforcing it."
+      },
+      "eq": {
+        "name": "Equivalence",
+        "ar": "تسوية",
+        "info": "Expresses that two stated possibilities are of equal value."
+      },
+      "exh": {
+        "name": "Encouragement",
+        "ar": "تحضيض",
+        "info": "Expresses an urgent call or wish."
+      },
+      "exl": {
+        "name": "Elaboration",
+        "ar": "تفصيل",
+        "info": "Introduces a more detailed account of what was said before."
+      },
+      "exp": {
+        "name": "Exception",
+        "ar": "مستثنى",
+        "info": "The element excluded from a previously stated whole."
+      },
+      "fut": {
+        "name": "Future",
+        "ar": "استقبال",
+        "info": "Shifts the action of a verb into the future."
+      },
+      "gen": {
+        "name": "Genitive reference",
+        "ar": "مجرور",
+        "info": "A noun in the genitive case — after a preposition or as the second part of a genitive construction."
+      },
+      "impv": {
+        "name": "Command",
+        "ar": "أمر",
+        "info": "The part of the sentence belonging to the imperative."
+      },
+      "imrs": {
+        "name": "Command response",
+        "ar": "جواب أمر",
+        "info": "The part of the sentence that occurs as a consequence of a preceding command."
+      },
+      "inc": {
+        "name": "Sentence start",
+        "ar": "ابتداء",
+        "info": "Marks the beginning of a new nominal sentence."
+      },
+      "int": {
+        "name": "Explanation",
+        "ar": "تفسير",
+        "info": "Introduces an explanatory rephrasing of what was said before."
+      },
+      "intg": {
+        "name": "Question",
+        "ar": "استفهام",
+        "info": "The part of the sentence belonging to the introductory question particle."
+      },
+      "link": {
+        "name": "Reference word",
+        "ar": "متعلق",
+        "info": "The word a prepositional phrase relates to in meaning — usually a verb, sometimes an omitted one."
+      },
+      "muster": {
+        "predOf": {
+          "name": "Predicate of {wort}",
+          "ar": "خبر",
+          "info": "Kāna-and-sisters as well as inna-and-sisters change the case of a nominal sentence's topic and predicate — this is the predicate belonging to {wort}."
+        },
+        "subjOf": {
+          "name": "Noun of {wort}",
+          "ar": "اسم",
+          "info": "Kāna-and-sisters as well as inna-and-sisters change the case of a nominal sentence's topic and predicate — this is the noun belonging to {wort}."
+        }
+      },
+      "neg": {
+        "name": "Negation",
+        "ar": "نفي",
+        "info": "The negation particle belonging to the negated part of the sentence."
+      },
+      "prev": {
+        "name": "Cancellation",
+        "ar": "كاف",
+        "info": "Cancels the grammatical effect of a preceding particle."
+      },
+      "prp": {
+        "name": "Purpose",
+        "ar": "المفعول لأجله",
+        "info": "States the reason or purpose of an action."
+      },
+      "res": {
+        "name": "Restriction",
+        "ar": "حصر",
+        "info": "Limits the statement to exactly the element named."
+      },
+      "ret": {
+        "name": "Shift",
+        "ar": "اضراب",
+        "info": "Introduces a correction or change of topic relative to the previous statement."
+      },
+      "root": {
+        "name": "Sentence head",
+        "ar": "الجذر",
+        "info": "The central word of the sentence, usually the main verb or predicate, to which all other words relate directly or indirectly."
+      },
+      "rslt": {
+        "name": "Result clause",
+        "ar": "جواب الشرط",
+        "info": "The part of the sentence expressing the consequence of a conditional clause — what happens if the condition is met."
+      },
+      "state": {
+        "name": "Clarifying noun",
+        "ar": "بيان",
+        "info": "A noun that clarifies a preceding statement in meaning."
+      },
+      "sub": {
+        "name": "Relative clause",
+        "ar": "صلة",
+        "info": "The clause that completes the meaning of a relative pronoun."
+      },
+      "sup": {
+        "name": "Filler word",
+        "ar": "زائد",
+        "info": "A word with no meaning of its own that stylistically fills out the sentence."
+      },
+      "sur": {
+        "name": "Surprise",
+        "ar": "فجاءة",
+        "info": "Expresses that something happens suddenly and unexpectedly."
+      },
+      "voc": {
+        "name": "Address",
+        "ar": "منادى",
+        "info": "The person or thing directly addressed after a vocative particle."
+      }
+    },
+    "schwacheVerben": {
+      "ajwaf": {
+        "name": "Aǧwaf (hollow verb)",
+        "ar": "أجوف",
+        "info": "A verb whose middle root letter is a weak letter and often merges into a long vowel."
+      },
+      "lafif": {
+        "name": "Lafīf",
+        "ar": "لفيف",
+        "info": "A verb with two weak root letters that influence each other in conjugation."
+      },
+      "mahmuz": {
+        "name": "Mahmūz (hamzated verb)",
+        "ar": "مهموز",
+        "info": "A verb that has a hamza as a root letter, which can lead to special spellings."
+      },
+      "mithal": {
+        "name": "Miṯāl",
+        "ar": "مثال",
+        "info": "A verb whose first root letter is a weak letter, usually wāw."
+      },
+      "mudaaf": {
+        "name": "Muḍāʿaf (doubled verb)",
+        "ar": "مضاعف",
+        "info": "A verb whose second and third root letters are identical and merge into one letter with shadda in certain forms."
+      },
+      "rubai": {
+        "name": "Rubāʿī (quadriliteral verb)",
+        "ar": "رباعي",
+        "info": "A verb whose root consists of four radicals instead of three, forming its own paradigm family, independent of hamza, weak letters, or doubling."
+      },
+      "naqis": {
+        "name": "Nāqiṣ (defective verb)",
+        "ar": "ناقص",
+        "info": "A verb whose last root letter is a weak letter that often drops or changes at the end of the word."
+      },
+      "sahih": {
+        "name": "Ṣaḥīḥ (sound verb)",
+        "ar": "صحيح",
+        "info": "A verb whose root letters contain neither a hamza, a weak letter, nor a doubling — the most regular verb class."
+      }
+    },
+    "verbEigenschaften": {
+      "amrNahy": {
+        "name": "Command and prohibition",
+        "ar": "الأمر والنهي",
+        "info": "Two opposite forms of instruction: one calls for an action, the other forbids it.",
+        "werte": {
+          "amr": {
+            "name": "Command",
+            "ar": "أمر",
+            "info": "A direct instruction to do something, formed from the imperative of the verb."
+          },
+          "nahy": {
+            "name": "Prohibition",
+            "ar": "نهي",
+            "info": "An instruction to refrain from something, formed from the present tense with a negation placed before it."
+          }
+        }
+      },
+      "genusVerbi": {
+        "name": "Voice",
+        "ar": "البناء للمعلوم والمجهول",
+        "info": "Shows whether the subject performs the action itself (active) or is affected by it (passive).",
+        "werte": {
+          "active": {
+            "name": "Active",
+            "ar": "معلوم"
+          },
+          "passive": {
+            "name": "Passive",
+            "ar": "مجهول"
+          }
+        }
+      },
+      "modus": {
+        "name": "Mood",
+        "ar": "حالات الفعل المضارع",
+        "info": "Changes the ending of the present tense depending on the sentence context — for example after certain particles or in negations.",
+        "werte": {
+          "ind": {
+            "name": "Indicative",
+            "ar": "مرفوع"
+          },
+          "juss": {
+            "name": "Jussive",
+            "ar": "مجزوم"
+          },
+          "sub": {
+            "name": "Subjunctive",
+            "ar": "منصوب"
+          }
+        }
+      },
+      "tempus": {
+        "name": "Tense and Imperative",
+        "ar": "زمن الفعل",
+        "info": "Places a verb in time or marks it as a command form: past, present/future, or imperative (which is technically a separate mood, but grouped here for simplicity).",
+        "werte": {
+          "imperative": {
+            "name": "Imperative",
+            "ar": "أمر",
+            "info": "Directly calls for an action, such as \"write!\"."
+          },
+          "imperfect": {
+            "name": "Present",
+            "ar": "مضارع",
+            "info": "Describes an ongoing or future action, such as \"he writes\"/\"he will write\"."
+          },
+          "perfect": {
+            "name": "Past",
+            "ar": "ماضي",
+            "info": "Describes a completed action, such as \"he wrote\"."
+          }
+        }
+      },
+      "verbform": {
+        "name": "Verb form (bāb)",
+        "ar": "أوزان الفعل",
+        "info": "Arabic verbs can be expanded into related meanings through fixed patterns — from the base form up to the tenth form.",
+        "formen": {
+          "1": {
+            "name": "Form I",
+            "ar": "فَعَلَ",
+            "info": "The base stem carrying the root's original meaning, unmarked."
+          },
+          "2": {
+            "name": "Form II",
+            "ar": "فَعَّلَ",
+            "info": "Usually doubles the middle root letter and often gives a causative or intensive meaning."
+          },
+          "3": {
+            "name": "Form III",
+            "ar": "فَاعَلَ",
+            "info": "Inserts an alif after the first root letter and often expresses an action done with someone else."
+          },
+          "4": {
+            "name": "Form IV",
+            "ar": "أَفْعَلَ",
+            "info": "Begins with a hamza and usually makes a verb causative — \"to make someone do something\"."
+          },
+          "5": {
+            "name": "Form V",
+            "ar": "تَفَعَّلَ",
+            "info": "The reflexive counterpart to Form II, often meaning to let something happen to oneself."
+          },
+          "6": {
+            "name": "Form VI",
+            "ar": "تَفَاعَلَ",
+            "info": "The reflexive or mutual counterpart to Form III, often expressing an action done to one another."
+          },
+          "7": {
+            "name": "Form VII",
+            "ar": "انْفَعَلَ",
+            "info": "Begins with an inserted ن and usually expresses a passive or involuntary action."
+          },
+          "8": {
+            "name": "Form VIII",
+            "ar": "افْتَعَلَ",
+            "info": "Inserts a ت after the first root letter, often with a reflexive or intensified meaning."
+          },
+          "9": {
+            "name": "Form IX",
+            "ar": "افْعَلَّ",
+            "info": "Doubles the last root letter and is mainly used for colours and physical traits."
+          },
+          "10": {
+            "name": "Form X",
+            "ar": "اسْتَفْعَلَ",
+            "info": "Begins with است and often expresses asking for or claiming the base meaning for oneself."
+          }
+        }
+      },
+      "person": {
+        "name": "Person",
+        "ar": "الشخص",
+        "info": "Shows whether the verb is carried out by the speaker, the person addressed, or a third party.",
+        "werte": {
+          "1": {
+            "name": "First person",
+            "ar": "المتكلم",
+            "info": "The speaker — I or we."
+          },
+          "2": {
+            "name": "Second person",
+            "ar": "المخاطب",
+            "info": "The person addressed — you."
+          },
+          "3": {
+            "name": "Third person",
+            "ar": "الغائب",
+            "info": "The person or thing spoken about — he, she, it or they."
+          }
+        }
+      }
+    },
+    "wortarten": {
+      "fiil": {
+        "name": "Fiʿl (verb)",
+        "ar": "فعل",
+        "info": "Fiʿl describes an action or event and carries tense, person and number."
+      },
+      "harf": {
+        "name": "Harf (particle)",
+        "ar": "حرف",
+        "info": "Harf are short words such as prepositions, conjunctions or negations that make no complete sense on their own."
+      },
+      "ism": {
+        "name": "Ism (noun)",
+        "ar": "اسم",
+        "info": "Ism covers people, things, places, qualities or ideas — similar to nouns and adjectives in English."
+      }
+    }
+  },
+  "gebetGemeinsam": {
+    "title": "Praying Together – Jama'ah (جماعة)",
+    "subtitle": "How to line up for congregational prayer – with diagrams instead of a wall of text.",
+    "seeAlsoFreitag": "More on the Friday prayer, mosque etiquette and the women's area: Study → Fiqh of Worship, lesson 13.",
+    "seeAlsoSutra": "The imam's sutra covers the whole row behind him: Study → Fiqh of Worship, lesson 11.",
+    "footerHinweis": "This overview does not replace studying fiqh. For important decisions, ask a local scholar.",
+    "quelle": "Source",
+    "sections": {
+      "aufstellung": "Formation",
+      "rezitation": "Recitation and conduct",
+      "mahram": "Mahram and khilwa"
+    },
+    "legende": {
+      "imam": "Imam (إمام)",
+      "mann": "Man",
+      "frau": "Woman",
+      "qibla": "Qibla"
+    },
+    "grad": {
+      "anerkannt": "Widely agreed",
+      "strittig": "Disputed between schools",
+      "empfehlung": "Practical tip"
+    },
+    "madhhab": {
+      "alle": "All schools of law",
+      "hanafi": "Hanafi",
+      "verschieden": "Schools differ"
+    },
+    "konstellationen": {
+      "zweiPersonen": {
+        "titel": "Imam and one follower",
+        "beschreibung": "If only one man prays with the imam, he does not stand behind him but to his right, slightly set back."
+      },
+      "imamEhefrau": {
+        "titel": "Imam and wife",
+        "beschreibung": "If a wife prays with her husband leading, she stands behind him, not beside him."
+      },
+      "dreiPersonen": {
+        "titel": "Three people",
+        "beschreibung": "Once a third person joins, the followers form their own row behind the imam."
+      },
+      "familienrunde": {
+        "titel": "Mixed family group",
+        "beschreibung": "The imam stands alone in front, men and boys form the row(s) behind him, women and girls the last row."
+      },
+      "groessereGruppe": {
+        "titel": "Larger group, several rows",
+        "beschreibung": "The front men's rows are closed first, without gaps; the women's row forms the back."
+      }
+    },
+    "regeln": {
+      "imamMitEinemMitbeter": {
+        "titel": "Imam with one follower",
+        "text": "When a single man prays with the imam, he does not stand behind him but to the imam's right, slightly set back. It is reported that Ibn Abbas joined the Prophet ﷺ for the night prayer, first stood on his left, and was drawn by the Prophet ﷺ to his right side."
+      },
+      "abDreiPersonen": {
+        "titel": "From three people: a row of their own",
+        "text": "Once a third person joins, all followers (ma'mum, مأموم) form their own row behind the imam, who stands alone in front. It is reported that when Jabir b. Abdullah and Jabbar b. Sakhr stood to the right and left of the Prophet ﷺ, he took both by the hand and placed them behind him."
+      },
+      "frauZuHause": {
+        "titel": "A wife at home: behind the one leading",
+        "text": "When a woman prays at home with her mahram leading, she stands behind him, not beside him. Full detail with sources on the women's area in the mosque: Study → Fiqh of Worship, lesson 13."
+      },
+      "familienrunde": {
+        "titel": "Mixed family group",
+        "text": "When a family prays together, the imam stands alone in front, men and boys form the row(s) behind him, women and girls the last row – even if only one woman is present, she stands at the back, not beside the men. It is reported that an orphan boy and Anas b. Malik prayed behind the Prophet ﷺ in a house while an older woman formed the row behind them alone."
+      },
+      "reihenSchliessen": {
+        "titel": "Close the rows, leave no gaps",
+        "text": "The row (saff, صف) is closed from the centre outward, shoulder to shoulder, without gaps. Reported from the Prophet ﷺ: \"Straighten your rows, for straightening the rows is part of the completeness of prayer.\""
+      },
+      "besteReihen": {
+        "titel": "Best and least recommended row",
+        "text": "For men the front row is considered best and the back row least recommended; for women it is the opposite – the back row is considered best for them."
+      },
+      "qiblaAusrichtung": {
+        "titel": "Facing the qibla",
+        "text": "All rows face the qibla together, just as in solitary prayer. The Quran names the qibla direction explicitly; the app shows it in the qibla compass."
+      },
+      "lauteUndLeiseGebete": {
+        "titel": "Loud and silent prayers",
+        "text": "The imam recites Fajr, Maghrib and Isha aloud in the first two rak'ahs, and Dhuhr and Asr silently. The Quran names both registers of voice in prayer."
+      },
+      "verhaltenBeiLauterRezitation": {
+        "titel": "Conduct during loud recitation",
+        "text": "Hanafi: followers stay completely silent during loud recitation and listen, based on the Quranic verse: \"When the Quran is recited, listen to it and be silent.\" Other schools of law, including the Shafi'i school, require every follower to recite Al-Fatiha quietly themselves – including the basmala (بسملة) before it – based on the Prophet's ﷺ words: \"There is no prayer for the one who does not recite Al-Fatiha.\""
+      },
+      "amin": {
+        "titel": "Saying Amin together",
+        "text": "When the imam says \"Amin\" at the end of Al-Fatiha, all followers join in audibly. Reported from the Prophet ﷺ: \"When the imam says Amin, say Amin.\""
+      },
+      "rabbanaUndTakbir": {
+        "titel": "Takbir, Sami'Allahu liman hamidah and Rabbana",
+        "text": "The imam says \"Allahu Akbar\" audibly at every change of posture; rising after ruku, he says \"Sami'Allahu liman hamidah\", to which the followers answer \"Rabbana wa lakal-hamd\"."
+      },
+      "rhythmusEmpfehlung": {
+        "titel": "Practical tip: making the rhythm audible",
+        "text": "Practical tip, not a legal ruling: during silent prayers, followers only hear the takbirs. An imam makes the rhythm reliably audible by saying them clearly and at an even pace – a little louder than his own silent recitation, without rushing."
+      },
+      "mahramUndKhilwa": {
+        "titel": "Mahram and khilwa",
+        "text": "In principle, men and women, related or not, may take part in congregational prayer together as long as the formation is kept. The one real restriction concerns seclusion (khilwa, خلوة): a man and a woman who are not mahram (محرم) to each other may not be alone together. As soon as another person is present – a mahram, another follower, or a third person – it is no longer khilwa. Reported from the Prophet ﷺ: \"No man should be alone with a woman except in the presence of a mahram.\""
+      }
+    }
+  },
+  "analyseUebung": {
+    "title": "Grammar Practice",
+    "intro": "Tag each word's part of speech, case or tense, and sentence role yourself — then compare it with what the corpus actually shows.",
+    "setup": {
+      "title": "New exercise",
+      "schnellstart": "Quick start",
+      "sureWaehlen": "Surah",
+      "versWaehlen": "Verse",
+      "zufaelligerVers": "Random verse from this surah",
+      "keineWorteHinweis": "There is no assessable word for this verse at this level. Please choose a different verse or a lower level."
+    },
+    "schwierigkeit": {
+      "title": "Difficulty level",
+      "stufe1Label": "Level 1",
+      "stufe1Beschreibung": "Part of speech only",
+      "stufe2Label": "Level 2",
+      "stufe2Beschreibung": "Part of speech plus case or tense",
+      "stufe3Label": "Level 3",
+      "stufe3Beschreibung": "Part of speech, case/tense, and sentence role"
+    },
+    "start": "Start exercise",
+    "zuletztGeuebt": {
+      "title": "Recently practiced",
+      "eintrag": "{score}% correct"
+    },
+    "exercise": {
+      "fortschritt": "Word {index} of {total}",
+      "wortartLabel": "Part of speech",
+      "satzrolleLabel": "Sentence role (i'rab)",
+      "aufdecken": "Reveal",
+      "weiter": "Next",
+      "ergebnisAnsehen": "View result",
+      "deineAntwort": "Your answer",
+      "richtigWaere": "Correct answer",
+      "richtig": "Correct",
+      "falsch": "Incorrect",
+      "weitereMerkmale": "More features"
+    },
+    "satzrolleFamilie": {
+      "pred": {
+        "name": "Predicate (after kāna/inna)",
+        "ar": "خبر"
+      },
+      "subj": {
+        "name": "Topic of the sentence (after kāna/inna)",
+        "ar": "اسم"
+      }
+    },
+    "ergebnis": {
+      "title": "Result",
+      "nichtBewertetHinweis": "{count} further assignment(s) without a reliable corpus value — not counted.",
+      "perfekt": "All correct — excellent!",
+      "gut": "Well done.",
+      "ueben": "A bit more practice and you'll have it.",
+      "fehlerTitle": "Worth another look",
+      "keineFehler": "No mistakes — great work!",
+      "imReaderOeffnen": "Open verse in reader",
+      "wurzelImLexikon": "View root in the lexicon",
+      "nocheinmal": "Practice again",
+      "zurUebersicht": "Back to overview"
     }
   }
 }

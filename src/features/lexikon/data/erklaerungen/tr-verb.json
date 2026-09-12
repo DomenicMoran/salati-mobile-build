@@ -1,0 +1,1569 @@
+{
+  "schema": 1,
+  "lang": "tr",
+  "bereich": "verb",
+  "eintraege": {
+    "fiil": {
+      "titel": "Fiil ve temel özellikleri",
+      "ar": "الفِعْل",
+      "umschrift": "al-fiʿl",
+      "erklaerung": [
+        "Arapçada üç kelime türü vardır: isim, fiil ve harf. Fiil, belirli bir zamanda gerçekleşen bir işi bildirir — geçmişte, şimdi/gelecekte ya da emir veya nehiy olarak. Bu yüzden fiil sistemi tam olarak üç ana türe ayrılır: el-fiilü'l-mâzî, el-fiilü'l-muzâri ve fiil-i emir/nehiy. Bundan sonraki bütün fiil türevleri (ism-i fâil, ism-i mef'ûl, masdar vb.) bu üç ana türden türetilir, ama kendileri artık fiilin ayrı bir kategorisi sayılmaz.",
+        "Arapça fiilin özelliği şudur: Öznesini zaten kendi içinde taşır. Kimin iş yaptığı bilgisi ayrı bir kelimede değil, fiilin kendisinde bir önek ya da bir şahıs eki biçiminde yerleşik bir zamir olarak durur. Bu yüzden tek bir fiil kelimesi, fâili (işi yapanı) ile birlikte başlı başına tam bir cümledir.",
+        "Bu yerleşik şahıs eki bütün konunun anahtarıdır: Onu bir kez bir örnek fiil üzerinde (geleneksel olarak نَصَرَ, \"o yardım etti\") öğrenen kişi, her fiile aktarabilir; çünkü değişen yalnızca gövdedir, eklerin kalıbı değil."
+      ],
+      "erkennung": [
+        "Fiil, sabit bir gövde ile şahsı, cinsi ve sayıyı gösteren değişken önek ve eklerden oluşur.",
+        "İsmin aksine fiil asla tenvin almaz ve asla اَلْ takısını almaz.",
+        "Özne zaten fiilin içinde olduğu için tek bir fiil kelimesi başlı başına tam bir cümle kurabilir."
+      ],
+      "belege": [
+        {
+          "sure": 1,
+          "vers": 5,
+          "wort": 2,
+          "zeigt": "نَعْبُدُ (\"kulluk ederiz\") — kelime tek başına tam bir cümledir: عبد gövdesi + içine yerleşmiş \"biz\".",
+          "warum": "Segment pos:V olup person:1, number:pl taşır — ayrı bir zamire gerek yoktur."
+        },
+        {
+          "sure": 1,
+          "vers": 6,
+          "wort": 1,
+          "zeigt": "ٱهْدِنَا (\"bizi hidayete erdir!\") — içinde gizli \"sen\" (fâil) ve sonuna eklenmiş \"bizi\" (mef'ûl) bulunan emir kipi; hepsi tek kelimede.",
+          "warum": "Segment pos:V, tense:imperative, person:2 — fiil türünün üçüncü ana biçimi."
+        }
+      ],
+      "lernen": [
+        "Önce üçlü ayrımı zihnine yerleştir: mâzî – muzâri – emir/nehiy. Kendiliğinden gelene kadar bu sırayla yüksek sesle söyle.",
+        "Tek bir örnek fiil al (örn. نَصَرَ) ve eklerin kalıbı oturana kadar ondan ayrılma — ancak ondan sonra başka fiiller üzerinde dene.",
+        "Kur'an okurken önünde ayrı bir zamir bulunmayan fiilleri özellikle ara ve devam etmeden önce fâilin kim olduğunu yüksek sesle söyle."
+      ],
+      "tabellen": [
+        "verb-madi-nasara-aktiv-matrix",
+        "verb-mudari-nasara-aktiv-matrix"
+      ],
+      "siehe": [
+        "jidhr",
+        "madi",
+        "mudari",
+        "amr",
+        "nahy"
+      ]
+    },
+    "jidhr": {
+      "titel": "Kök ve vezin ilkesi",
+      "ar": "الجَذْر وَالوَزْن",
+      "umschrift": "al-jadhr wa-l-wazn",
+      "erklaerung": [
+        "Neredeyse her Arapça fiil, çoğunlukla üç sessizden oluşan ve bir temel anlam taşıyan bir köke (cezr) dayanır. Bu kökten belirli kalıplarla (evzân, tekili vezin) koca kelime aileleri türetilir: yalın fiil, pekiştirmeli ya da ettirgen bablar, masdar, ism-i fâil ve ism-i mef'ûl. Kökü, vezne göre farklı kelimelerin yeşerdiği bir tohum gibi düşünebilirsin.",
+        "Şu önemlidir: Aynı kök, vezne göre farklı ama birbiriyle akraba anlamlar verir. ع-ل-م kökü \"bilmek\" temel fikrini taşır. Yalın kalıpta عَلِمَ, \"o bildi\" olur. Kökün orta harfi ikizlenirse (II. bab) عَلَّمَ, \"o öğretti\" ortaya çıkar — salt bilgiden, bilgiyi etkin biçimde aktarma işi doğar.",
+        "Bu vezin ilkesi, Arapça kelime hazinesinin salt ezberle değil sistemle açılmasının sebebidir: Kökü ve vezni bilen kişi, bilmediği bir kelimenin anlamını çoğu zaman sözlüğe bakmadan önce çıkarabilir."
+      ],
+      "erkennung": [
+        "Kök çoğunlukla sabit ünlüleri olmayan üç sessizden oluşur — ünlüleri ve ek harfleri ancak vezin getirir.",
+        "Aynı kökten gelen ama vezni farklı iki kelime anlamca akrabadır, ama aynı değildir (örn. \"bilmek\" ile \"öğretmek\").",
+        "Kökün orta harfinin ikizlenmesi (şedde), vezinle genişletilmiş bir fiilin en göze çarpan işaretidir."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 60,
+          "wort": 15,
+          "zeigt": "عَلِمَ (\"o bildi\") — ع-ل-م kökünün hiçbir genişletme almamış yalın kalıbı.",
+          "warum": "Segment pos:V, verbForm:1 (korpusta parantezli değer yok, yani teamül gereği I. bab), root:علم."
+        },
+        {
+          "sure": 2,
+          "vers": 31,
+          "wort": 1,
+          "zeigt": "وَعَلَّمَ (\"ve O öğretti\") — aynı ع-ل-م kökü, ama orta harfi ikizlenerek II. baba genişletilmiş.",
+          "warum": "Segment pos:V, verbForm:2 (ham etikette (II)), root:علم — عَلِمَ ile aynı cezr, farklı vezin, farklı anlam nüansı."
+        }
+      ],
+      "lernen": [
+        "Tek tek kelimeyi değil, kök+vezin çiftini öğren: Her yeni fiilde kendine \"hangi kök, hangi vezin?\" diye sor.",
+        "علم kökünün kendisi üzerinde çalış: عَلِمَ (bilmek, I. bab) ile عَلَّمَ (öğretmek, II. bab) fiillerini peş peşe söyle ve aradaki anlam farkını yüksek sesle ifade et.",
+        "Yeni kelimelerde çeviriye bakmadan önce temel kökü gözünde canlandır — bu, anlamı sistemden çıkarmayı çalıştırır."
+      ],
+      "tabellen": [],
+      "siehe": [
+        "fiil",
+        "form1",
+        "form2"
+      ]
+    },
+    "madi": {
+      "titel": "Geçmiş zaman (mâzî)",
+      "ar": "الماضي",
+      "umschrift": "al-māḍī",
+      "erklaerung": [
+        "El-mâzî her fiilin temel biçimidir — \"o yaptı\" — ve diğer bütün şahısların kendisinden kurulduğu çıkış noktasıdır. Gövde bütün biçimlerde aynı kalır; değişen yalnızca kimin iş yaptığını gösteren ektir. Örnek fiil نَصَرَ (\"o yardım etti\") üzerinde en önemli biçimler şunlardır: نَصَرَ (o yardım etti), نَصَرَتْ (o [müennes] yardım etti), نَصَرْتَ (sen yardım ettin), نَصَرْتُ (ben yardım ettim), نَصَرُوا (onlar yardım etti, müzekker topluluk), نَصَرْنَا (biz yardım ettik).",
+        "Mâzî, temel hâlinde fiilin hemen önüne gelen مَا edatıyla olumsuzlanır (مَا نَصَرْتُ, \"yardım etmedim\"). Geçmişin, üslup bakımından farklı ikinci bir olumsuzlama yolu ise لَمْ + muzâri üzerinden işler (bk. ilgili madde) — biçim bu durumda şimdiki zaman gibi görünse de.",
+        "Mâzî aynı zamanda fiilin sözlükte yer aldığı künye biçimidir ve geçmiş zamanın edilgeni de ondan kurulur (bk. mechûl)."
+      ],
+      "erkennung": [
+        "Şahıs ekleri işi yapanı doğrudan kelimenin sonunda gösterir: -تَ = sen (müzekker), -تُ = ben, -نَا = biz, -وا = müzekker bir topluluk.",
+        "Mâzî, şahıs için bir önek almaz (muzârinin aksine) — şahıs bilgisi yalnızca ektedir.",
+        "Mâzîdeki olumsuzluk, fiilin hemen önündeki مَا edatından tanınır."
+      ],
+      "belege": [
+        {
+          "sure": 1,
+          "vers": 7,
+          "wort": 3,
+          "zeigt": "أَنْعَمْتَ (\"nimet verdin\") — geçmiş zaman, 2. şahıs müzekker müfred; ـتَ ekinden anlaşılır.",
+          "warum": "Segment pos:V, tense:perfect, person:2, gender:m, number:sg."
+        },
+        {
+          "sure": 3,
+          "vers": 123,
+          "wort": 2,
+          "zeigt": "نَصَرَكُمُ (\"O size yardım etti\") — geçmiş zaman, 3. şahıs müzekker müfred; kendine ait bir şahıs eki yoktur (\"o\" çıplak gövdede gizlidir).",
+          "warum": "Segment pos:V, tense:perfect, person:3, gender:m, number:sg."
+        }
+      ],
+      "lernen": [
+        "Şahıs eklerini önce fiillerden ayrı, küçük bir ek alfabesi gibi öğren (ـَ, ـَتْ, ـْتَ, ـْتُ, ـُوا, ـْنَا …), ancak ondan sonra fiiller üzerinde çalış.",
+        "Şahıs tablosunda Arapça sütunu elinle kapat ve anlamını söyle, sonra tersini yap — iki yön de oturana kadar.",
+        "Sık yapılan hata: ـتَ (sen, müzekker) ekini ـتِ (sen, müennes) ya da ـتُ (ben) ile karıştırmak — çalışırken hep yüksek sesle oku, aradaki fark yalnızca bir ünlüdür."
+      ],
+      "tabellen": [
+        "verb-madi-nasara-aktiv-matrix"
+      ],
+      "siehe": [
+        "mudari",
+        "maluum",
+        "majhul",
+        "personenmatrix"
+      ]
+    },
+    "mudari": {
+      "titel": "Şimdiki ve gelecek zaman (muzâri)",
+      "ar": "المضارع",
+      "umschrift": "al-muḍāriʿ",
+      "erklaerung": [
+        "El-muzâri, şu anda olanı, alışkanlık hâline geleni ya da gelecekte olacak olanı bildirir (\"o yapar\" / \"o yapacak\"). Mâzîden farklı olarak muzâri, kelimenin başında şahsı gösteren bir önek taşır: o ve müzekker topluluk için يَ, o (müfred müennes) ya da sen için تَ, ben için أَ, biz için نَ — bunlar çoğu zaman \"يتأن/ye-te-e-ne\" harf dizisiyle akılda tutulur. Temel hâlinde muzâri ayrıca damme ile biter (يَنْصُرُ).",
+        "Gelecek zaman muzâriden kurulur: Başına doğrudan سَ bitiştirilir (yakın gelecek) ya da önüne سَوْفَ getirilir (daha uzak gelecek) — ikisi de \"-ecek\" demektir. Böylece tek bir temel biçim hem şimdiki hem gelecek zamanı karşılar.",
+        "Muzârinin son ünlüsü hiç de sabit değildir: Bazı edatlar dammeyi bir fethaya (\"hafif biçim\", mansûb hâli) ya da bir sükûna (\"en hafif biçim\", meczûm hâli) çevirir — üç kip için ayrı maddelere bak."
+      ],
+      "erkennung": [
+        "Şahsı dört olası önek gösterir: يَ / تَ / أَ / نَ.",
+        "Temel biçim damme (ـُ) ile biter; bu son ünlü, önündeki edata (kipe) göre değişir.",
+        "Gelecek zaman, aynı muzâri biçiminin başına سَ bitiştirilerek ya da önüne سَوْفَ getirilerek kurulur."
+      ],
+      "belege": [
+        {
+          "sure": 1,
+          "vers": 5,
+          "wort": 2,
+          "zeigt": "نَعْبُدُ (\"kulluk ederiz\") — \"biz\" için نَ öneki ve temel hâlde ـُ (damme) sonu taşıyan muzâri.",
+          "warum": "Segment pos:V, tense:imperfect, person:1, number:pl, mood:null olup ham korpusta MOOD-Tag taşımaz — temel hâl."
+        },
+        {
+          "sure": 2,
+          "vers": 268,
+          "wort": 2,
+          "zeigt": "يَعِدُكُمُ (\"o size vaad ediyor\") — \"o\" için يَ öneki ve ـُ sonu taşıyan muzâri.",
+          "warum": "Segment pos:V, tense:imperfect, person:3, gender:m, number:sg."
+        }
+      ],
+      "lernen": [
+        "Tek tek fiillere geçmeden önce dört öneki يتأن hatırlatıcısıyla belle.",
+        "Şahıs tablosunda birer sütunu kapat (müfred/müsennâ/cemi) ve eksik biçimi yüksek sesle söyle — bu, hem öneki HEM eki aynı anda çalıştırır.",
+        "سَ ile سَوْفَ arasındaki farkı Kur'an örnekleri üzerinde çalış: İkisi de \"-ecek\" demektir, yalnızca hissedilen zaman yakınlığı farklıdır."
+      ],
+      "tabellen": [
+        "verb-mudari-nasara-aktiv-matrix"
+      ],
+      "siehe": [
+        "madi",
+        "mudariMarfu",
+        "mudariMansub",
+        "mudariMajzum",
+        "amr",
+        "nahy"
+      ]
+    },
+    "amr": {
+      "titel": "Emir kipi",
+      "ar": "الأمر",
+      "umschrift": "al-amr",
+      "erklaerung": [
+        "Fiil-i emir, yani emir, yalnızca 2. şahıs (sen/siz) için vardır. Muzârinin 2. şahsından dört adımda kurulur: (1) fiili en hafif biçime sokmak (son hareke sükûna döner), (2) تَ önekini atmak, (3) yeni ilk harf bununla harekesiz kalıyorsa başına bir yardımcı hemze (hemze-i vasl) getirmek, (4) bunun okunuşunu belirlemek. Böylece أَنْتَ تَنْصُرُ (\"sen yardım ediyorsun\"), تَنْصُرْ ve نْصُرْ üzerinden sonunda ٱنْصُرْ (\"Yardım et!\") olur.",
+        "Emir kipinin başındaki hemze-i vasl yalnızca önünde bir duruş varsa ya da öncesinde bitişebileceği bir kelime yoksa okunur; و/فَ gibi bir harften ya da doğrudan bitişen bir kelimeden sonra okunmaz. Okunuş ünlüsü, fiilin üçüncü harfine göre belirlenir.",
+        "Bazı fiiller (dört mehmûz fiil أَكَلَ, أَخَذَ, أَمَرَ, سَأَلَ) emirde hemzelerini hazf yoluyla tamamen yitirir — beklenen hemzeli biçim yerine كُلْ, خُذْ, مُرْ, سَلْ olur."
+      ],
+      "erkennung": [
+        "Emir kipi yalnızca 2. şahısta bulunur ve çoğunlukla sükûnla biter.",
+        "İlk asıl kök harfi başka türlü harekesiz kalacaksa, kelime çoğu zaman bir yardımcı elif/hemze-i vasl ile başlar.",
+        "أَكَلَ/أَخَذَ/أَمَرَ/سَأَلَ fiillerinde emirde hemze tamamen düşer (hazf)."
+      ],
+      "belege": [
+        {
+          "sure": 1,
+          "vers": 6,
+          "wort": 1,
+          "zeigt": "ٱهْدِنَا (\"Bizi hidayete erdir!\") — emir kipi, 2. şahıs müzekker müfred; sonuna \"bizi\" mef'ûl zamiri eklenmiş.",
+          "warum": "Segment pos:V, tense:imperative, person:2, gender:m, number:sg."
+        },
+        {
+          "sure": 17,
+          "vers": 14,
+          "wort": 1,
+          "zeigt": "ٱقْرَأْ (\"Oku!\") — başında yardımcı hemze bulunan emir kipi; mehmûzü'l-lâm fiil قَرَأَ'dan.",
+          "warum": "Segment pos:V, tense:imperative, person:2, gender:m, number:sg, root:قرا."
+        }
+      ],
+      "lernen": [
+        "Dört kurma adımını bir fiil üzerinde yüksek sesle çalış: 2. şahıs muzâri → en hafif biçim → öneki at → yardımcı hemze gerekli mi bak.",
+        "Dört hazf istisnasını (كُلْ، خُذْ، مُرْ، سَلْ) kapalı bir liste olarak ezberle — türetilebilecek bir kuralları yoktur.",
+        "Emir tablosunda şahıs sütununu kapat ve bakmadan önce biçimi kendin kur."
+      ],
+      "tabellen": [
+        "amr-nasara-matrix"
+      ],
+      "siehe": [
+        "nahy",
+        "mudariMajzum",
+        "hadhf"
+      ]
+    },
+    "nahy": {
+      "titel": "Yasaklama kipi (nehiy)",
+      "ar": "النهي",
+      "umschrift": "an-nahy",
+      "erklaerung": [
+        "En-nehiy, yani yasak, muzârinin (2. şahıs) en hafif biçiminin önüne لَا yasaklama edatı getirilerek kurulur — sükûnlu bu son hâli لَمْ ve إِنْ de doğurur. Böylece تَنْصُرُ (\"sen yardım ediyorsun\"), لَا تَنْصُرْ (\"Yardım etme!\") olur.",
+        "Emirden farklı olarak yasakta تَ öneki korunur — yalnızca son ünlü değişir. Nehiy böylece yapı olarak 2. şahıstaki muzâri-meczûmun olumsuzudur ve kendine ait sabit bir amil edatı olan لَا ile kurulur (dilbilgisi bakımından, temel hâli değiştirmeyen salt olumsuzluk edatı لَا'dan ayrılır).",
+        "Kur'an'da bu yapı çok sık geçer: Öğütler ve uyarılar düzenli olarak لَا + muzâri-meczûm kalıbıyla kurulur."
+      ],
+      "erkennung": [
+        "Yasak, sonu damme yerine sükûnla biten bir muzârinin hemen önündeki لَا'dan tanınır.",
+        "Şahıs öneki (çoğunlukla \"sen\" için تَ) korunur — düştüğü emir kipinin aksine.",
+        "Sonunda و/ي bulunan fiillerde (cemi) ayrıca nûn da düşer (hafif biçimde, yani mansûb hâlinde olduğu gibi)."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 11,
+          "wort": 5,
+          "zeigt": "لَا تُفْسِدُوا۟ (\"Bozgunculuk etmeyin\") — لَا yasaklama edatından sonra gelen nehiy biçimi, 2. şahıs müzekker cemi.",
+          "warum": "Önündeki kelime (4. konum) pos:PRO segmenti taşır (yasaklama edatı); fiilin kendisi mood:juss, tense:imperfect gösterir."
+        },
+        {
+          "sure": 2,
+          "vers": 22,
+          "wort": 19,
+          "zeigt": "فَلَا تَجْعَلُوا۟ (\"öyleyse denk koşmayın\") — nehiy biçimi, 2. şahıs müzekker cemi; yine لَا'dan sonra.",
+          "warum": "Önündeki kelime bir pos:PRO segmenti taşır; fiilin kendisi mood:juss, tense:imperfect gösterir."
+        }
+      ],
+      "lernen": [
+        "لَا + muzâri-meczûm kalıbını kelime kelime değil, sabit bir blok olarak belle.",
+        "Emir ile nehyi aynı fiilde karşılaştır (ٱنْصُرْ / لَا تَنْصُرْ) ve neyin değiştiğini yüksek sesle söyle (önek kalıyor mu, düşüyor mu).",
+        "Kur'an okurken doğrudan bir fiilin önündeki لَا'yı özellikle ara ve son eki denetle — bu, meczûm hâline karşı gözü keskinleştirir."
+      ],
+      "tabellen": [
+        "nahy-nasara-matrix"
+      ],
+      "siehe": [
+        "amr",
+        "mudariMajzum"
+      ]
+    },
+    "personenmatrix": {
+      "titel": "Şahsı, cinsi ve sayıyı ekten okumak",
+      "ar": "تَصْرِيف الفِعْل",
+      "umschrift": "taṣrīf al-fiʿl",
+      "erklaerung": [
+        "Arapça fiil öznesini kendi içinde taşıdığı için, kimin iş yaptığını önekten ve/veya ekten okumayı öğrenmek gerekir: hangi şahıs (1./2./3.), hangi cins (müzekker/müennes) ve hangi sayı (müfred/müsennâ/cemi). Mâzîde bu bilginin tamamı ektedir; muzâride önek (şahıs) ile ek (cins/sayı) arasında paylaşılır.",
+        "Dizge, tek bir örnek fiil üzerinde öğrenilip her fiile aktarılacak kadar düzenlidir: Şahıs/cins/sayıdan oluşan aynı 14 (bazı biçimlerde 5) birleşim, her fiilde aynı eklerle karşımıza çıkar.",
+        "Müsennâ özel dikkat ister: Yalnızca 2. ve 3. şahısta bulunur, 1. şahısta asla — Arapçada \"ikimiz\" için ayrı bir fiil biçimi yoktur."
+      ],
+      "erkennung": [
+        "Mâzîde şahıs bilgisinin tamamı ektedir (ـَ / ـَتْ / ـْتَ / ـْتُ / ـُوا / ـْنَا …).",
+        "Muzâride önek şahsı (يتأن), ek ise cinsi ve sayıyı gösterir.",
+        "1. şahsın kendine ait bir müsennâsı yoktur — yalnızca müfred ve cemi."
+      ],
+      "belege": [
+        {
+          "sure": 1,
+          "vers": 5,
+          "wort": 2,
+          "zeigt": "نَعْبُدُ (\"kulluk ederiz\") — نَ öneki 1. şahsı gösterir, cemiyi gösteren ayrı bir ek yoktur (teamül: نَ öneki = \"biz\").",
+          "warum": "Segment: person:1, number:pl."
+        },
+        {
+          "sure": 3,
+          "vers": 123,
+          "wort": 2,
+          "zeigt": "نَصَرَكُمُ (\"O size yardım etti\") — şahıs eki almamış çıplak gövde 3. şahıs müzekker müfredi gösterir.",
+          "warum": "Segment: person:3, gender:m, number:sg."
+        }
+      ],
+      "lernen": [
+        "Kapatma yöntemi: Şahıs tablosunu al, Arapça sütunu elinle kapat ve her şahıs/sayı satırı için biçimi yüksek sesle söyle; ardından tersini yap ve Arapça biçimden anlamı çıkar.",
+        "Tabloyu sistemli biçimde aşağıdan yukarıya çalış (1. şahıs → 2. şahıs → 3. şahıs); çünkü ders notlarında alışılmış öğrenme sırası budur ve ekler böylece birbirine karışmaz.",
+        "Tipik hata: Muzâride 3. şahıs müennes müfredi 2. şahıs müzekker müfredle karıştırmak; çünkü iki biçim de aynı okunur — burada yalnızca cümlenin bağlamı yardımcı olur."
+      ],
+      "tabellen": [
+        "verb-madi-nasara-aktiv-matrix",
+        "verb-mudari-nasara-aktiv-matrix",
+        "amr-nasara-matrix",
+        "nahy-nasara-matrix"
+      ],
+      "siehe": [
+        "madi",
+        "mudari",
+        "amr"
+      ]
+    },
+    "maluum": {
+      "titel": "Etken çatı (ma'lûm)",
+      "ar": "مَعْلُوم",
+      "umschrift": "maʿlūm",
+      "erklaerung": [
+        "Ma'lûm (\"bilinen/etken\") fiilin işaretsiz normal hâlidir: İşi yapan (fâil) özne olarak bellidir ve fiil onun işini doğrudan anlatır — \"o yardım etti\", \"o yardım edecek\". Mâzî, muzâri, emir ve nehiyden alınan bütün örnek biçimler, aksi işaretlenmedikçe önce ma'lûmdur.",
+        "Etkenden edilgene ancak salt bir ünlü değişimiyle geçilir (bk. mechûl) — Arapçada yardımcı fiil olmadan, yalnızca gövde ünlüleri boyanarak."
+      ],
+      "erkennung": [
+        "Ma'lûm, özel bir işaret taşımayan normal hâldir — fâil (işi yapan) dilbilgisel öznedir.",
+        "Korpusta ma'lûm, \"çatı\" özelliğinin boş kalmasından (PASS-Tag bulunmamasından) anlaşılır.",
+        "Fiilden sonra merfû hâlde bağımsız bir fâilin gelebilmesinden de tanınır."
+      ],
+      "belege": [
+        {
+          "sure": 1,
+          "vers": 5,
+          "wort": 2,
+          "zeigt": "نَعْبُدُ (\"kulluk ederiz\") — etken biçim: \"biz\" işi kendisi yapar, edilgen ünlü kalıbı yoktur.",
+          "warum": "Segment: pos:V, voice:null (ham korpusta PASS-Tag yok) — temel hâl olan etken."
+        },
+        {
+          "sure": 3,
+          "vers": 123,
+          "wort": 2,
+          "zeigt": "نَصَرَكُمُ (\"O size yardım etti\") — etken biçim: \"O\" işi yapan, \"size\" ise mef'ûlün bihtir.",
+          "warum": "Segment: pos:V, voice:null, tense:perfect."
+        }
+      ],
+      "lernen": [
+        "Ma'lûmu her zaman mechûlle karşıtlık çifti hâlinde öğren: nasara/nusira, yani نَصَرَ/نُصِرَ biçimlerini peş peşe söyle ki ünlü farkı kulağında kalsın.",
+        "Şunu aklında tut: Etken normal hâldir; bir işaretin bulunmaması İŞARETİN ta kendisidir."
+      ],
+      "tabellen": [
+        "verb-madi-nasara-aktiv-matrix",
+        "verb-mudari-nasara-aktiv-matrix"
+      ],
+      "siehe": [
+        "majhul"
+      ]
+    },
+    "majhul": {
+      "titel": "Edilgen çatı (mechûl)",
+      "ar": "مَجْهُول",
+      "umschrift": "majhūl",
+      "erklaerung": [
+        "Mechûl (\"bilinmeyen/edilgen\"), işi yapan geri plana çekildiğinde ya da söylenmediğinde ortaya çıkar: \"o yardım etti\" ifadesi \"ona yardım edildi\"ye döner. Arapçada edilgenlik bir yardımcı kelimeyle değil, salt gövde ünlülerinin boyanmasıyla kurulur — Türkçenin dilbilgisine yabancı, ama tümüyle düzenli bir ilke.",
+        "Geçmiş zamanda son harf dışındaki bütün harekeli harfler \"u\", son harf ise \"i\" alır: نَصَرَ (\"o yardım etti\") biçimi نُصِرَ (\"ona yardım edildi\") olur. Şimdiki zamanda ilk harf \"u\", ondan sonraki bütün harfler \"a\" alır: يَنْصُرُ biçimi يُنْصَرُ olur. Şahıs eklerinin kendisi bu sırada değişmez — yalnızca içerideki gövde ünlüleri yer değiştirir.",
+        "Edilgen cümlede fâil bulunmadığı için onun söz dizimindeki yerine çoğunlukla bir nâib-i fâil (işi yapanın vekili) geçer — Türkçede genellikle edilgen cümlenin dilbilgisel öznesi."
+      ],
+      "erkennung": [
+        "Geçmiş zamanın edilgeni: Son harf dışındaki bütün gövde harflerinde \"u\" ünlüsü, sonda \"i\" (نُصِرَ).",
+        "Şimdiki zamanın edilgeni: İlk harfte \"u\", kalan harflerde \"a\" (يُنْصَرُ).",
+        "Edilgene geçerken şahıs ekleri değişmez — yalnızca içerideki ünlüler."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 4,
+          "wort": 4,
+          "zeigt": "أُنزِلَ (\"indirildi\") — IV. babın geçmiş zaman edilgeni: ilk harf \"u\", son harf \"i\" taşır.",
+          "warum": "Segment: pos:V, tense:perfect, voice:passive, verbForm:4."
+        },
+        {
+          "sure": 112,
+          "vers": 3,
+          "wort": 4,
+          "zeigt": "يُولَدْ (\"O doğurulur\") — şimdiki zamanın edilgeni: ilk harf \"u\" taşır.",
+          "warum": "Segment: pos:V, tense:imperfect, voice:passive, mood:juss (burada ayrıca لَمْ'den sonra meczûm hâline sokulmuş)."
+        }
+      ],
+      "lernen": [
+        "Etken ile edilgeni çiftler hâlinde yüksek sesle söyle: نَصَرَ/نُصِرَ, يَنْصُرُ/يُنْصَرُ — kulak, ünlü kalıbını kâğıttaki bir kuraldan daha çabuk beller.",
+        "Edilgen tabloda geçmiş zaman sütununu kapat ve şimdiki zaman biçimini kendin türet (sonra tersini yap), böylece iki kalıp birbirine karşı pekişir.",
+        "Tipik hata: Kelime başındaki edilgen \"u\" ünlüsünü 1. şahıs öneki أَ ile karıştırmak — ikinci ünlüyü denetlemek (geçmiş zamanda i) durumu netleştirir."
+      ],
+      "tabellen": [
+        "verb-madi-nasara-passiv-matrix",
+        "verb-mudari-nasara-passiv-matrix"
+      ],
+      "siehe": [
+        "maluum",
+        "madi",
+        "mudari"
+      ]
+    },
+    "mudariMarfu": {
+      "titel": "Muzârinin temel hâli (merfû)",
+      "ar": "المُضَارِع المَرْفُوع",
+      "umschrift": "al-muḍāriʿ al-marfūʿ",
+      "erklaerung": [
+        "Merfû, muzârinin işaretsiz temel hâlidir: Önünde özel bir amil bulunmadığı sürece temel biçim damme (ـُ) ile biter — يَنْصُرُ, \"o yardım eder\". Bu hâl, isimdeki ref' durumuna karşılık gelir ve aynı şekilde \"işaretsiz normal hâl\"dir.",
+        "Merfû standart durum olduğu için korpusta ayrıca etiketlenmez — yalnızca mansûb (SUBJ MOOD-Tag'i ile) ve meczûm (JUS MOOD-Tag'i ile) açıkça işaretlenir. Yani hiçbir kip işaretinin bulunmaması, merfûun kendisinin delilidir.",
+        "Cemi sonu و olan ya da müsennâ eki alan şahıslarda merfûda ayrıca bir nûn görünür (يَنْصُرُونَ, \"onlar yardım eder\") — bu nûn mansûb ve meczûmda tam da düşer."
+      ],
+      "erkennung": [
+        "Temel biçim, önünde bir amil edat olmaksızın damme (ـُ) ile biter.",
+        "Cemi/müsennâda kelimenin sonunda, diğer iki kipte düşen fazladan bir nûn görünür (ـُونَ / ـَانِ).",
+        "Korpusta MOOD-Tag yoktur — her türlü kip işaretinin yokluğu temel hâli gösterir."
+      ],
+      "belege": [
+        {
+          "sure": 1,
+          "vers": 5,
+          "wort": 2,
+          "zeigt": "نَعْبُدُ (\"kulluk ederiz\") — önünde bir amil bulunmayan temel hâl, sonu damme.",
+          "warum": "Segment: mood:null, tense:imperfect ve ham etikette MOOD alanı yok."
+        },
+        {
+          "sure": 2,
+          "vers": 268,
+          "wort": 2,
+          "zeigt": "يَعِدُكُمُ (\"o size vaad ediyor\") — yine temel hâl, sonu damme.",
+          "warum": "Segment: mood:null, tense:imperfect, ham etikette MOOD alanı yok."
+        }
+      ],
+      "lernen": [
+        "Merfûu, önünde HİÇBİR ŞEY olmadığında elde ettiğin hâl olarak öğren — çalışırken dikkatini diğer iki (işaretli) hâli tanımaya ver, merfû geriye kalandır.",
+        "Bir fiilde üç sonu peş peşe karşılaştır: يَنْصُرُ (merfû) – يَنْصُرَ (mansûb) – يَنْصُرْ (meczûm) — hepsini sırayla yüksek sesle söyle."
+      ],
+      "tabellen": [
+        "verb-mudari-nasara-aktiv-matrix"
+      ],
+      "siehe": [
+        "mudariMansub",
+        "mudariMajzum"
+      ]
+    },
+    "mudariMansub": {
+      "titel": "Muzâri fiilin hafif hâli (mansûb)",
+      "ar": "المُضَارِع المَنْصُوب",
+      "umschrift": "al-muḍāriʿ al-manṣūb",
+      "erklaerung": [
+        "Bazı edatlar muzâri fiilin sonundaki dammeyi fethaya çevirir — bu, fiilin \"hafif hâli\", yani mansûb hâlidir. Başlıca sebepler أَنْ (\"-mesi, -mek\"), لَنْ (geleceği olumsuzlar: \"asla ...mayacak\"), لِ/كَي/لِكَي (\"...sın diye\") ve حَتَّى (\"...e kadar\") edatlarıdır. يَنْصُرُ fiili أَنْ edatından sonra أَنْ يَنْصُرَ hâlini alır.",
+        "Cemi ve müsennâ kalıplarında mansûb hâlde ayrıca, temel durumda (merfû) bulunan sondaki nûn da düşer: يَنْصُرُونَ, لَنْ يَنْصُرُوا۟ olur.",
+        "Anlam bakımından لَنْ geleceğe dair kesin bir olumsuzluk kurar (\"kesinlikle ...mayacak\"); أَنْ ise çoğu zaman bir niyeti ya da henüz gerçekleşmemiş bir olayı anlatan yan cümleyi başlatır."
+      ],
+      "erkennung": [
+        "Muzâri fiilin hemen önünde أَنْ / لَنْ / لِ / كَي / حَتَّى edatlarından biri bulunur.",
+        "Son hareke dammeden fethaya döner (ـُ → ـَ).",
+        "Cemi/müsennâ kalıplarında sondaki nûn düşer."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 24,
+          "wort": 5,
+          "zeigt": "وَلَن تَفْعَلُوا۟ (\"ve bunu asla yapamayacaksınız\") — لَنْ edatından sonra mansûb; cemi kalıbının nûn'u çoktan düşmüş.",
+          "warum": "Segmentin ham etiketi MOOD:SUBJ içerir; segment: tense:imperfect, person:2, number:pl."
+        },
+        {
+          "sure": 2,
+          "vers": 143,
+          "wort": 20,
+          "zeigt": "لِنَعْلَمَ (\"bilelim diye\") — لِ (\"...diye\") edatından sonra mansûb.",
+          "warum": "Segmentin ham etiketi MOOD:SUBJ içerir; segment: tense:imperfect, person:1, number:pl, root:علم."
+        }
+      ],
+      "lernen": [
+        "En sık geçen dört edatı — أَنْ / لَنْ / لِ / حَتَّى — sabit bir liste hâlinde, tek tek değil, her birini bir Kur'ân örneğine bağlayarak öğren.",
+        "Özellikle لَنْ üzerinde çalış; çünkü hem îrab hâlini (mansûb) hem de anlamı (geleceğin olumsuzluğu) tek başına taşır — ikisini birlikte ezberle.",
+        "Cemi fiillerde her zaman önce nûn'a bak: nûn yoksa bu, merfû değil mansûb ya da meczûm olduğunun güçlü bir işaretidir."
+      ],
+      "tabellen": [],
+      "siehe": [
+        "mudariMarfu",
+        "mudariMajzum"
+      ]
+    },
+    "mudariMajzum": {
+      "titel": "Muzâri fiilin en hafif hâli (meczûm)",
+      "ar": "المُضَارِع المَجْزُوم",
+      "umschrift": "al-muḍāriʿ al-majzūm",
+      "erklaerung": [
+        "Meczûm, mansûbdan bir adım daha ileri gider: fiilin sonunda artık fetha bile yoktur, sükûn vardır. En önemli sebepler لَمْ ve إِنْ (\"eğer\") edatlarıdır. Özellikle dikkat çekicidir: لَمْ, fiil kalıbı dıştan geniş zaman gibi görünse de geçmişi olumsuzlar — لَمْ يَلِدْ \"doğurmadı\" demektir, \"doğurmuyor\" değil.",
+        "Meczûm aynı zamanda emir ve nehiy kalıplarının yapı taşıdır: her ikisi de ikinci şahsın meczûm hâlinden yola çıkar — nehiyde تَ öneki korunur ve önüne لَا gelir; emirde ise önek düşer ve gerektiğinde bir yardımcı hemze devreye girer.",
+        "Burada da cemi/müsennâ kalıplarında sondaki nûn düşer, tıpkı mansûbda olduğu gibi."
+      ],
+      "erkennung": [
+        "Muzâri fiilin hemen önünde لَمْ ya da إِنْ bulunur.",
+        "Fiilin sonunda damme veya fetha yerine sükûn vardır.",
+        "لَمْ + meczûm, kalıp geniş zaman gibi görünse de dilbilgisi bakımından geçmişi olumsuzlar."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 24,
+          "wort": 3,
+          "zeigt": "فَإِن لَّمْ تَفْعَلُوا۟ (\"Eğer bunu yapmazsanız\") — لَمْ edatından sonra meczûm, sonu sükûnlu.",
+          "warum": "Segment: mood:juss, tense:imperfect, person:2, number:pl; ham etiket MOOD:JUS içerir."
+        },
+        {
+          "sure": 112,
+          "vers": 3,
+          "wort": 2,
+          "zeigt": "لَمْ يَلِدْ (\"doğurmadı\") — لَمْ edatından sonra meczûm; kalıp geniş zaman gibi görünür, ama geçmişi anlatır.",
+          "warum": "Segment: mood:juss, tense:imperfect, verbForm:1; ham etiket MOOD:JUS içerir."
+        }
+      ],
+      "lernen": [
+        "لَمْ + meczûm yapısını bilinçli biçimde bir istisna olarak öğren: çeviride en sık düşülen tuzak, bu kalıbı yanlışlıkla geniş zaman diye okumaktır.",
+        "Emri, nehyi ve meczûmu yan yana koy (ٱنْصُرْ / لَا تَنْصُرْ / لَمْ تَنْصُرْ) ve ortak paydayı adlandır: sonda sükûn.",
+        "Nehiy tablosuyla çalış: eki kapat, önce kendin tamamla, tam kalıba ancak ondan sonra bak."
+      ],
+      "tabellen": [
+        "nahy-nasara-matrix"
+      ],
+      "siehe": [
+        "mudariMarfu",
+        "mudariMansub",
+        "nahy"
+      ]
+    },
+    "form1": {
+      "titel": "I. bab – sülâsî mücerred",
+      "ar": "الثُّلَاثِي المُجَرَّد",
+      "umschrift": "ath-thulāthī al-mujarrad",
+      "erklaerung": [
+        "I. bab, yani \"çıplak üç harfli gövde\" (sülâsî mücerred; ders notunda \"küçük aile\" diye de anılır), hiçbir ilave almamış saf kökten oluşur: ne şeddeli bir harf, ne fazladan bir elif ya da hemze. Diğer dokuz veznin (II–X. bablar) sabit eklerle türetildiği temel anlam budur.",
+        "I. bab içinde fiiller, mâzî ve muzâride ortadaki kök harfin harekesine göre bir kez daha ayrışır — altı alt grup (bab): a-a (فَتَحَ/يَفْتَحُ), a-i (ضَرَبَ/يَضْرِبُ), a-u (نَصَرَ/يَنْصُرُ), i-a (سَمِعَ/يَسْمَعُ), i-i (حَسِبَ/يَحْسِبُ) ve u-u (كَرُمَ/يَكْرُمُ). Bu ortadaki hareke önceden kestirilemez; her fiille birlikte tek tek öğrenilmelidir.",
+        "Korpusta her mezîd kalıp parantez içindeki bir değerle (II)–(X) işaretlendiği için şu kural geçerlidir: bu işaret yoksa fiil I. babdandır."
+      ],
+      "erkennung": [
+        "Fiil gövdesinde ne fazladan bir harf ne de şeddeli bir harf vardır — yalnızca harekeli saf kök harfleri.",
+        "Korpusta (I)-(X) parantez işaretinin hiçbiri bulunmaz; bu işaretin yokluğu, I. babın işaretinin ta kendisidir.",
+        "Mâzî/muzâride ortadaki hareke fiilden fiile değişir (altı olası kalıp) ve tek tek öğrenilmelidir."
+      ],
+      "belege": [
+        {
+          "sure": 3,
+          "vers": 123,
+          "wort": 2,
+          "zeigt": "نَصَرَكُمُ (\"size yardım etti\") — نصر kökünün hiçbir ilave almamış saf temel kalıbı.",
+          "warum": "Segment: verbForm:1 (kural gereği, ham etikette parantez değeri yok), tense:perfect."
+        },
+        {
+          "sure": 7,
+          "vers": 157,
+          "wort": 35,
+          "zeigt": "وَنَصَرُوهُ (\"ve ona yardım ettiler\") — aynı temel kalıp, 3. şahıs cemi.",
+          "warum": "Segment: verbForm:1 (parantez değeri yok), tense:perfect."
+        }
+      ],
+      "lernen": [
+        "Karşına çıkan her yeni fiilde ortadaki harekeyi hemen hem mâzîde HEM de muzâride birlikte öğren — sözlükler de bu yüzden her iki kalıbı birden verir.",
+        "Altı alt grubu (a-a, a-i, a-u, i-a, i-i, u-u) örnek fiilleri üzerinden, eşleştirme kendiliğinden gelene kadar çalış.",
+        "Şunu aklında tut: I. bab normal durumdur — mezîd bir kalıbı (II–X) tanımak isteyen, önce \"boş\" temel kalıbın neye benzediğini bilmelidir."
+      ],
+      "tabellen": [
+        "verb-madi-nasara-aktiv-matrix",
+        "bab-fataha-mahmooz-qaraa",
+        "bab-samia-mahmooz-amina"
+      ],
+      "siehe": [
+        "form2",
+        "form4",
+        "form10",
+        "jidhr"
+      ]
+    },
+    "form2": {
+      "titel": "II. bab – şeddeli gövde",
+      "ar": "بَاب فَعَّلَ",
+      "umschrift": "bāb faʿʿala",
+      "erklaerung": [
+        "II. bab, ortadaki kök harfi bir şedde ile ikizler. Anlam bununla çoğu kez pekişir, tekrar bildirir ya da ta'diye (geçişli kılma) kazanır: عَلِمَ (\"bildi\") fiilinden عَلَّمَ (\"öğretti\", bilgiyi yoğun biçimde aktardı) olur; قَتَلَ (\"öldürmek\") fiilinden قَتَّلَ (\"kırıp geçirmek\", mübalağa) doğar.",
+        "Bu bab, Kur'ân'da mezîd kalıpların en sık geçenidir ve başka şeylerin yanı sıra mef'ûlün bih alan pek çok ta'diye fiili sağlar."
+      ],
+      "erkennung": [
+        "Tanıma alâmeti, ortadaki kök harfin üzerindeki şeddedir (فَعَلَ değil فَعَّلَ).",
+        "Anlam, temel kalıba göre çoğunlukla pekiştirme, tekrar ya da ta'diye bildirir.",
+        "Korpusta (II) parantez değeriyle işaretlenir."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 31,
+          "wort": 1,
+          "zeigt": "وَعَلَّمَ (\"ve öğretti\") — ortadaki ل harfi üzerinde şedde; anlam \"bilmek\" değil \"öğretmek\".",
+          "warum": "Segment: verbForm:2 (ham etiket (II)), tense:perfect, root:علم."
+        },
+        {
+          "sure": 2,
+          "vers": 23,
+          "wort": 6,
+          "zeigt": "نَزَّلْنَا (\"indirdik\") — ز üzerinde şedde; anlam yoğun/tekrarlı biçimde \"indirmek\".",
+          "warum": "Segment: verbForm:2 (ham etiket (II)), tense:perfect, root:نزل."
+        }
+      ],
+      "lernen": [
+        "فَعَّلَ veznini gözünle kaydet: ortadaki şedde, temel kalıptan ayıran tek ama güvenilir farktır.",
+        "Her yeni II. bab fiilinde bilinçli olarak temel kalıptaki karşılığını da kur (علم/علّم); böylece anlam kayması yerleşir."
+      ],
+      "tabellen": [],
+      "siehe": [
+        "form1",
+        "form5",
+        "jidhr"
+      ]
+    },
+    "form3": {
+      "titel": "III. bab – müşâreket gövdesi",
+      "ar": "بَاب فَاعَلَ",
+      "umschrift": "bāb fāʿala",
+      "erklaerung": [
+        "III. bab, birinci kök harften sonra uzun bir elif sokar (فَاعَلَ) ve çoğunlukla bir işi biriyle birlikte ya da birine karşı yapmayı anlatır: جَاهَدَ, \"(başkalarıyla birlikte ya da bir direnişe karşı) çabalamak, mücadele etmek\". Fiil tipik olarak ikinci bir tarafı da işin içine katar.",
+        "Anlam bakımından temel kalıptan farkı çoğu zaman tam da bu karşı tarafın işe katılmasıdır — \"bir şey yapmak\" yerine \"bir şeyi birine yapmak\"."
+      ],
+      "erkennung": [
+        "Tanıma alâmeti, birinci kök harften sonraki uzun eliftir (فَعَلَ değil فَاعَلَ).",
+        "Anlam çoğunlukla \"bir işi biriyle birlikte / birine karşı yapmak\".",
+        "Korpusta (III) parantez değeriyle işaretlenir."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 51,
+          "wort": 2,
+          "zeigt": "وَٰعَدْنَا (\"sözleştik/vaad ettik\") — و harfinden sonra uzun elif, karşılıklı bir eylem (Mûsâ ile bir sözleşme).",
+          "warum": "Segment: verbForm:3 (ham etiket (III)), tense:perfect, root:وعد."
+        },
+        {
+          "sure": 2,
+          "vers": 100,
+          "wort": 2,
+          "zeigt": "عَٰهَدُوا۟ (\"bir ahit yaptılar\") — ع harfinden sonra uzun elif, karşılıklı bir yükümlülük.",
+          "warum": "Segment: verbForm:3 (ham etiket (III)), tense:perfect, root:عهد."
+        }
+      ],
+      "lernen": [
+        "III. babı \"biriyle birlikte / birine karşı\" anlamı üzerinden yerleştir — bu, vezni kuru kuruya ezberlemekten daha çok işe yarar.",
+        "قَتَلَ (öldürmek, I) ile قَاتَلَ (savaşmak, III) fiillerini karşılaştır — kök aynı, ama ikinci taraf ancak elifle birlikte devreye girer."
+      ],
+      "tabellen": [],
+      "siehe": [
+        "form1",
+        "form6"
+      ]
+    },
+    "form4": {
+      "titel": "IV. bab – ta'diye gövdesi",
+      "ar": "بَاب أَفْعَلَ",
+      "umschrift": "bāb afʿala",
+      "erklaerung": [
+        "IV. bab, fiilin başına bir hemze getirir (أَفْعَلَ) ve çoğunlukla bir işin doğrudan, aracısız biçimde meydana getirilmesini anlatır — çoğu kez ta'diye anlamı taşır: نَزَلَ (\"inmek\") fiilinden أَنْزَلَ, \"indirmek\" (birinin inmesini sağlamak). Bu kalıp, Kur'ân'da I. babdan sonra en sık geçen ikinci mezîd kalıptır.",
+        "Fazladan gelen hemze kelimenin başında durduğu için, bazı fiillerde kökteki bir hemzeyle ya da illetli birinci kök harfle kaynaşır — bu özel durumlar için mehmûz ve tahfîf maddelerine bak."
+      ],
+      "erkennung": [
+        "Tanıma alâmeti, kelimenin başındaki fazladan hemzedir (فَعَلَ değil أَفْعَلَ).",
+        "Anlam çoğunlukla ta'diye bildirir: \"...olmasını sağlamak\" ya da \"doğrudan/aracısız yapmak\".",
+        "Korpusta (IV) parantez değeriyle işaretlenir; mechûl hâlde de çok sık geçer."
+      ],
+      "belege": [
+        {
+          "sure": 1,
+          "vers": 7,
+          "wort": 3,
+          "zeigt": "أَنْعَمْتَ (\"nimet verdin\") — başta hemze, ta'diye anlamı \"lütufta bulunmak\".",
+          "warum": "Segment: verbForm:4 (ham etiket (IV)), tense:perfect, root:نعم."
+        },
+        {
+          "sure": 2,
+          "vers": 4,
+          "wort": 4,
+          "zeigt": "أُنزِلَ (\"indirildi\") — mechûl hâlde IV. bab: baştaki hemze edilgen kalıpta da korunur.",
+          "warum": "Segment: verbForm:4 (ham etiket (IV)), tense:perfect, voice:passive, root:نزل."
+        }
+      ],
+      "lernen": [
+        "IV. babı نَزَلَ/أَنْزَلَ (inmek/indirmek) gibi bilinen çiftler üzerinden öğren — \"X, Y'nin olmasını sağlar\" şeklindeki ta'diye mantığı, kuru vezinden çok anlam üzerinden akılda kalır.",
+        "Baştaki hemzenin muzâride de korunduğuna dikkat et (يُنْزِلُ); bu, bazı başka bablardan farklıdır."
+      ],
+      "tabellen": [],
+      "siehe": [
+        "form1",
+        "mahmuz",
+        "takhfif"
+      ]
+    },
+    "form5": {
+      "titel": "V. bab – II. babın dönüşlü gövdesi",
+      "ar": "بَاب تَفَعَّلَ",
+      "umschrift": "bāb tafaʿʿala",
+      "erklaerung": [
+        "V. bab, II. babın vezninin önüne bir تَ öneki koyar ve pekişmiş eylemi dönüşlü ya da tedricî kılar: عَلَّمَ (\"öğretmek\", II) fiilinden تَعَلَّمَ (\"öğrenmek\", \"kendine öğretilmesini sağlamak\", V) doğar. V. bab çoğu kez bir işin zahmetle ya da adım adım gerçekleştiğini de anlatır.",
+        "Dilbilgisel bir alâmet: V. bab fiilleri çoğunlukla lâzımdır (geçişsiz, mef'ûlün bih almaz) ve kendilerine ait bir mechûl kalıp kurmazlar."
+      ],
+      "erkennung": [
+        "Tanıma alâmeti, şeddeli veznin önündeki تَ önekidir (فَعَّلَ değil تَفَعَّلَ).",
+        "Anlam çoğunlukla II. baba göre dönüşlüdür ya da \"bir şey için çabalamak, yavaş yavaş olmasına bırakmak\" bildirir.",
+        "Korpusta (V) parantez değeriyle işaretlenir."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 37,
+          "wort": 1,
+          "zeigt": "فَتَلَقَّىٰٓ (\"derken aldı/kabul etti\") — şeddeli veznin önünde تَ öneki, dönüşlü bir nüans (\"kendine almak\").",
+          "warum": "Segment: verbForm:5 (ham etiket (V)), tense:perfect, root:لقي."
+        },
+        {
+          "sure": 2,
+          "vers": 64,
+          "wort": 2,
+          "zeigt": "تَوَلَّيْتُم (\"yüz çevirdiniz\") — تَ öneki, dönüşlü anlam \"kendisi yüz çevirmek\".",
+          "warum": "Segment: verbForm:5 (ham etiket (V)), tense:perfect, root:ولي."
+        }
+      ],
+      "lernen": [
+        "II. bab ile V. babı doğrudan bir kelime çifti üzerinde karşılaştır (عَلَّمَ/تَعَلَّمَ, öğretmek/öğrenmek) — تَ önekini \"dönüşlülük işareti\" olarak en iyi böyle çiftlerle aklında tutarsın.",
+        "Unutma: V. bab fiilleri kural olarak ne mef'ûlün bihe ne de kendilerine ait bir mechûl kalıba ihtiyaç duyar."
+      ],
+      "tabellen": [],
+      "siehe": [
+        "form2"
+      ]
+    },
+    "form6": {
+      "titel": "VI. bab – işteş gövde",
+      "ar": "بَاب تَفَاعَلَ",
+      "umschrift": "bāb tafāʿala",
+      "erklaerung": [
+        "VI. bab, III. babın vezninin önüne bir تَ öneki koyar ve çoğunlukla bir grup içindeki karşılıklı eylemi anlatır — taraflardan her biri (ya da hepsi) aynı şeyi birbirine yapar: تَسَاءَلَ, \"birbirine sormak\". Bir işi yalnızca yapar görünmeyi de (\"...mış gibi yapmak\") bildirebilir.",
+        "V. babda olduğu gibi burada da özün merkezinde dönüşlülük/işteşlik veren تَ öneki vardır — ancak bu kez II. babın şeddeli vezni üzerinde değil, III. babın \"birlikte yapma\" vezni üzerinde."
+      ],
+      "erkennung": [
+        "Tanıma alâmeti, elifli veznin önündeki تَ önekidir (فَاعَلَ değil تَفَاعَلَ).",
+        "Anlam çoğunlukla işteştir (\"birbirine bir şey yapmak\") ya da yapar görünmeyi bildirir.",
+        "Korpusta (VI) parantez değeriyle işaretlenir."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 70,
+          "wort": 11,
+          "zeigt": "تَشَٰبَهَ (\"bize benzer/aynı göründü\") — âyetteki sığırlar arasındaki karşılıklı benzerlik.",
+          "warum": "Segment: verbForm:6 (ham etiket (VI)), tense:perfect, root:شبه."
+        },
+        {
+          "sure": 2,
+          "vers": 118,
+          "wort": 18,
+          "zeigt": "تَشَٰبَهَتْ (\"birbirlerine benzediler\") — aynı kalıp, 3. şahıs müennes müfred (\"kalpler\"e râci).",
+          "warum": "Segment: verbForm:6 (ham etiket (VI)), tense:perfect, root:شبه."
+        }
+      ],
+      "lernen": [
+        "VI. babı تَسَاءَلَ (\"birbirine sormak\") kelimesiyle bir çıpa örnek olarak yerleştir — \"karşılıklılık\" ana fikri buradan iyi çıkarılır.",
+        "III. bab (فَاعَلَ, \"bir işi biriyle yapmak\") ile VI. babı (تَفَاعَلَ, \"birbirine yapmak\") bir çift olarak karşılaştır."
+      ],
+      "tabellen": [],
+      "siehe": [
+        "form3"
+      ]
+    },
+    "form7": {
+      "titel": "VII. bab – edilgen görünümlü gövde",
+      "ar": "بَاب انْفَعَلَ",
+      "umschrift": "bāb infaʿala",
+      "erklaerung": [
+        "VII. bab, temel kalıbın önüne اِنْ önekini getirir ve çoğunlukla kendiliğinden gerçekleşen bir hâl değişimini anlatır — dilbilgisi bakımından gerçek bir mechûl olmadığı hâlde anlamca çoğu kez edilgene benzer: اِنْكَسَرَ, \"(kendiliğinden) kırılmak\". Önemli bir alâmet: bu babın fiilleri esas itibarıyla geçişsizdir ve kendilerine ait gerçek bir mechûl kalıp kurmazlar; buna rağmen Türkçeye çoğu kez edilgen olarak çevrilirler.",
+        "Bu kalıp Kur'ân'da II–V. bablardan daha seyrek geçer, ama tabiat olaylarının ve ani hâl değişimlerinin anlatımında düzenli olarak karşımıza çıkar."
+      ],
+      "erkennung": [
+        "Tanıma alâmeti اِنْ önekidir (فَعَلَ değil اِنْفَعَلَ).",
+        "Anlam çoğunlukla \"kendiliğinden olmak, bir hâle dönüşmek\" — anlamca edilgen görünümlü, ama kendine ait dilbilgisel bir mechûl kalıbı yok.",
+        "Korpusta (VII) parantez değeriyle işaretlenir."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 60,
+          "wort": 9,
+          "zeigt": "فَٱنفَجَرَتْ (\"derken fışkırdı / kaynayıp çıktı\") — اِن öneki; su, taştan kendiliğinden fışkırır.",
+          "warum": "Segment: verbForm:7 (ham etiket (VII)), tense:perfect, voice:null (kendine ait mechûl yok), root:فجر."
+        },
+        {
+          "sure": 3,
+          "vers": 144,
+          "wort": 14,
+          "zeigt": "ٱنقَلَبْتُمْ (\"geri döneceksiniz\") — اِن öneki, \"geri dönmek, çark etmek\" hâl değişimi.",
+          "warum": "Segment: verbForm:7 (ham etiket (VII)), tense:perfect, root:قلب."
+        }
+      ],
+      "lernen": [
+        "اِنْكَسَرَ (\"kırılmak\") çıpa örneğini aklında tut ve onu bilinçli olarak birebir edilgen değil, \"kendiliğinden olmak\" şeklinde çevir.",
+        "VII. bab fiillerinde mechûl hareke kalıbının bulunmadığını kontrol et — kalıp Türkçede edilgen gibi duyulur, ama dilbilgisi bakımından edilgen değildir."
+      ],
+      "tabellen": [],
+      "siehe": [
+        "majhul"
+      ]
+    },
+    "form8": {
+      "titel": "VIII. bab – dönüşlülük ve karşılıklılık babı",
+      "ar": "بَاب افْتَعَلَ",
+      "umschrift": "bāb iftaʿala",
+      "erklaerung": [
+        "VIII. bab, ilk kök harfinden sonra bir تَ ekler (اِفْتَعَلَ) ve çoğunlukla dönüşlü, karşılıklı ya da kişinin kendi yararına yaptığı bir işi anlatır: اِجْتَمَعَ, \"toplanmak\" (topluluk kendi kendini toplar). V. ve VI. bablardan farklı olarak dönüşlülük bildiren تَ burada kelimenin başında değil, ortasında durur.",
+        "Araya giren تَ doğrudan ilk kök harfinin yanında bulunduğu için, belli baş harflerde (örneğin د/ذ/ز/س/ص/ض/ط/ظ/ث) onunla kaynaşıp tek bir ikiz sese dönüşür (idgam) — bunu ilk kök harfinin hemen ardından gelen şedde ele verir."
+      ],
+      "erkennung": [
+        "Tanınma alameti, ilk kök harfinden sonra araya giren تَ'dir (فَعَلَ yerine اِفْتَعَلَ); çoğu zaman kelime başındaki hemze اِ ile birlikte fark edilir.",
+        "Anlam çoğunlukla dönüşlüdür ya da \"kendi yararına\" (bir şeyi kendisi için yapmak) anlamı taşır.",
+        "Korpusta parantez içi (VIII) değeriyle işaretlenir."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 16,
+          "wort": 3,
+          "zeigt": "ٱشْتَرَوُا۟ (\"satın aldılar/değiştirdiler\") — ش harfinden sonra araya giren تَ, dönüşlü nüans (\"kendileri için değişmek\").",
+          "warum": "Segment: verbForm:8 (ham etiket (VIII)), tense:perfect, root:شري."
+        },
+        {
+          "sure": 2,
+          "vers": 29,
+          "wort": 10,
+          "zeigt": "ٱسْتَوَىٰٓ (\"yöneldi / istivâ etti\") — س harfinden sonra araya giren تَ.",
+          "warum": "Segment: verbForm:8 (ham etiket (VIII)), tense:perfect, root:سوي."
+        }
+      ],
+      "lernen": [
+        "VIII. babı اِجْتَمَعَ (\"toplanmak\") kelimesiyle çıpa olarak zihnine yerleştir — dönüşlülük fikri diğer VIII. bab fiillerine kolayca taşınır.",
+        "Baş harfi د/ذ/ز/س/ص/ض/ط/ظ/ث grubundan olan fiillerde kelimenin hemen başındaki şeddeye dikkat et — bu, kök harfiyle kaynaşmış olan araya girmiş تَ'dir."
+      ],
+      "tabellen": [],
+      "siehe": [
+        "form1",
+        "idgham"
+      ]
+    },
+    "form9": {
+      "titel": "IX. bab – renk ve kusur babı",
+      "ar": "بَاب افْعَلَّ",
+      "umschrift": "bāb ifʿalla",
+      "erklaerung": [
+        "IX. bab son kök harfini ikizler (اِفْعَلَّ) ve çok dar bir anlam alanıyla sınırlıdır: renk ve bedensel kusur kazanmak, çoğunlukla geçici bir hâl değişimi olarak — اِسْوَدَّ, \"kararmak\", اِبْيَضَّ, \"ağarmak/beyazlaşmak\". Son harf ikizlendiği için IX. bab çekimde muzâaf fiille aynı kurallara uyar.",
+        "Bu bab Kur'an'da seyrek geçer, ama çarpıcı yerlerde bulunur; örneğin kıyamet günü kararan yahut ağaran yüzlerin anlatımında."
+      ],
+      "erkennung": [
+        "Tanınma alameti, kelimenin sonunda son kök harfinin ikizlenmesidir (فَعَلَ yerine اِفْعَلَّ).",
+        "Anlam neredeyse yalnızca renkler ve bedensel kusurlarla sınırlıdır.",
+        "Korpusta parantez içi (IX) değeriyle işaretlenir; çok seyrek görülür."
+      ],
+      "belege": [
+        {
+          "sure": 3,
+          "vers": 106,
+          "wort": 8,
+          "zeigt": "ٱسْوَدَّتْ (\"kararır\") — son harf د'nin ikizlenmesi, yüzün renk değişimi.",
+          "warum": "Segment: verbForm:9 (ham etiket (IX)), tense:perfect, root:سود."
+        },
+        {
+          "sure": 3,
+          "vers": 107,
+          "wort": 3,
+          "zeigt": "ٱبْيَضَّتْ (\"ağarır/beyazlaşır\") — son harf ض'nin ikizlenmesi, aynı âyet bölümündeki karşıtı.",
+          "warum": "Segment: verbForm:9 (ham etiket (IX)), tense:perfect, root:بيض."
+        }
+      ],
+      "lernen": [
+        "IX. babı dilbilgisel bir vezinden çok \"renkler ve kusurlar\" anlam köprüsüyle öğren — bu dar anlam alanı en güvenilir tanıma ölçütüdür.",
+        "İki Kur'an şahidini ٱسْوَدَّتْ/ٱبْيَضَّتْ doğrudan yan yana karşılaştır — Kur'an'da da birbiri ardına karşıt çift olarak gelirler."
+      ],
+      "tabellen": [],
+      "siehe": [
+        "mudaaf"
+      ]
+    },
+    "form10": {
+      "titel": "X. bab – istek ve talep babı",
+      "ar": "بَاب اسْتَفْعَلَ",
+      "umschrift": "bāb istafʿala",
+      "erklaerung": [
+        "X. bab, اِسْتَ önekini kök kalıbın önüne getirir (اِسْتَفْعَلَ) ve çoğunlukla bir şey istemeyi, dilemeyi ya da aramayı anlatır: اِسْتَغْفَرَ, \"bağışlanma dilemek\" (غَفَرَ, \"bağışlamak\" fiilinden). Ayrıca bir şeyi belli bir nitelikte görmek veya kendine mal etmek anlamına da gelebilir.",
+        "Bu bab Kur'an'da çok sık geçer; Fâtiha'nın kendisinde de bulunur (نَسْتَعِينُ, \"yardım dileriz\") — hemen yanında bir I. bab fiili (نَعْبُدُ) yer aldığı için sülâsî mücerred ile X. bab arasındaki anlam farkı doğrudan görülür."
+      ],
+      "erkennung": [
+        "Tanınma alameti, kelime başındaki اِسْتَ önekidir (فَعَلَ yerine اِسْتَفْعَلَ).",
+        "Anlam çoğunlukla \"bir şey istemek, dilemek/aramak\" ya da \"bir şeyi ... saymak\" şeklindedir.",
+        "Korpusta parantez içi (X) değeriyle işaretlenir."
+      ],
+      "belege": [
+        {
+          "sure": 1,
+          "vers": 5,
+          "wort": 4,
+          "zeigt": "نَسْتَعِينُ (\"yardım dileriz\") — اِسْتَ öneki, \"yardım/destek istemek\" anlamı.",
+          "warum": "Segment: verbForm:10 (ham etiket (X)), tense:imperfect, root:عون."
+        },
+        {
+          "sure": 2,
+          "vers": 34,
+          "wort": 10,
+          "zeigt": "وَٱسْتَكْبَرَ (\"ve büyüklük tasladı\") — اِسْتَ öneki, \"kendini büyük/yüce görmek\" anlamı (İblîs).",
+          "warum": "Segment: verbForm:10 (ham etiket (X)), tense:perfect, root:كبر."
+        }
+      ],
+      "lernen": [
+        "Fâtiha'daki نَعْبُدُ/نَسْتَعِينُ çiftini çıpa örnek olarak kullan: I. bab = işi doğrudan yapmak, X. bab = bir şey istemek/dilemek.",
+        "İkinci çıpa kelime olarak اِسْتَغْفَرَ (\"bağışlanma dilemek\") kelimesini belle — غَفَرَ (bağışlamak) fiilinden اِسْتَ önekiyle bağışlanma dileğine geçilir."
+      ],
+      "tabellen": [],
+      "siehe": [
+        "form1",
+        "form4"
+      ]
+    },
+    "ismFail": {
+      "titel": "İsm-i fâil (etken ortaç)",
+      "ar": "اِسْم الفَاعِل",
+      "umschrift": "ism al-fāʿil",
+      "erklaerung": [
+        "İsm-i fâil, işi yapanın kendisini gösterir — \"yapan\", \"[o işi] işleyen kimse\". عَلَّمَ (\"öğretmek\") fiilinden مُعَلِّم, \"öğretmen\" (öğreten kimse) elde edilir. Sülâsî mücerred نَصَرَ fiilinden ise نَاصِر, \"yardım eden\" türer. On babın her birinin kendine ait, ama önceden kestirilebilir bir ism-i fâil vezni vardır.",
+        "Dilbilgisel olarak ism-i fâil bir sıfat/isim gibi davranır: her isim gibi hâl (i'râb), cins ve sayı taşır; ancak salt bir sıfattan farklı olarak, dayandığı fiil geçişliyse kendisi de bir mef'ûlün bih alabilir."
+      ],
+      "erkennung": [
+        "Sülâsî mücerredde (I. bab) فَاعِل vezninden tanınır (ilk kök harfinden sonra uzun elif, ikinci harfin altında kesra): نَاصِر، عَالِم، قَائِل.",
+        "Mezîd bablarda (II–X) çoğunlukla مُ- önekinden ve sondan bir önceki harfteki kesradan tanınır: مُعَلِّم، مُؤْمِن، مُسْتَقِيم.",
+        "Temelde işi yapanı/taşıyanı gösterir, işin kendisini değil (o masdar olurdu)."
+      ],
+      "belege": [
+        {
+          "sure": 1,
+          "vers": 4,
+          "wort": 1,
+          "zeigt": "مَٰلِكِ (\"mâlik/hükümran\") — مَلَكَ, \"sahip olmak/hükmetmek\" fiilinin ism-i fâili: hükmeden.",
+          "warum": "Segment: pos:N, derivation:activeParticiple, voice:active, root:ملك."
+        },
+        {
+          "sure": 2,
+          "vers": 5,
+          "wort": 8,
+          "zeigt": "ٱلْمُفْلِحُونَ (\"kurtuluşa erenler\") — IV. bab أَفْلَحَ fiilinin ism-i fâili, مُ- önekinden tanınır.",
+          "warum": "Segment: pos:N, derivation:activeParticiple, verbForm:4, root:فلح."
+        }
+      ],
+      "lernen": [
+        "Önce فَاعِل temel veznini birkaç örnekte öğren (نَاصِر، عَالِم، قَائِل), mezîd babların vezinlerine ancak ondan sonra geç.",
+        "Öğrendiğin her fiilin ism-i fâilini bilinçli olarak kur — bu, tek tek ism-i fâilleri ezberlemekten çok daha hızlı vezni oturtur.",
+        "مَالِك (ism-i fâil, \"sahip olan/hükümran\") ile sıradan bir sıfat arasındaki anlam farkına dikkat et — ism-i fâil, fiilin anlattığı işle bağını korur."
+      ],
+      "tabellen": [],
+      "siehe": [
+        "ismMaful",
+        "masdar",
+        "fiil"
+      ]
+    },
+    "ismMaful": {
+      "titel": "İsm-i mef'ûl (edilgen ortaç)",
+      "ar": "اِسْم المَفْعُول",
+      "umschrift": "ism al-mafʿūl",
+      "erklaerung": [
+        "İsm-i mef'ûl, işin kendisine yapıldığı kişiyi ya da şeyi gösterir — \"kendisine yapılan\", \"yapılmış olan\". عَلَّمَ (\"öğretmek\") fiilinden مُعَلَّم, \"öğrenci\" (kendisine öğretilen) elde edilir. Sülâsî mücerred نَصَرَ fiilinden ise مَنْصُور, \"kendisine yardım edilen\" türer.",
+        "Sülâsî mücerredde ism-i mef'ûl مَفْعُول veznine uyar; mezîd bablarda ism-i fâile benzer, fakat ilgili harfte kesra yerine fetha taşır — tek, ama belirleyici fark budur."
+      ],
+      "erkennung": [
+        "Sülâsî mücerredde (I. bab) مَفْعُول vezninden tanınır: مَنْصُور، مَعْلُوم، مَغْضُوب.",
+        "Mezîd bablarda ism-i fâildeki مُ- önekiyle aynıdır, ama sondan bir önceki harfte kesra yerine fetha bulunur: مُطَهَّرَة (مُطَهِّرَة değil).",
+        "İşi yapanı değil, işin kendisine yapıldığını gösterir."
+      ],
+      "belege": [
+        {
+          "sure": 1,
+          "vers": 7,
+          "wort": 6,
+          "zeigt": "ٱلْمَغْضُوبِ (\"[kendilerine] gazap edilenler\") — غَضِبَ, \"gazap etmek\" fiilinden مَفْعُول veznindeki ism-i mef'ûl.",
+          "warum": "Segment: pos:N, derivation:passiveParticiple, voice:passive, root:غضب."
+        },
+        {
+          "sure": 2,
+          "vers": 25,
+          "wort": 31,
+          "zeigt": "مُّطَهَّرَةٌ (\"tertemiz kılınmış [eşler]\") — II. babın ism-i mef'ûlü; son harften önce kesra yerine gelen fethadan tanınır.",
+          "warum": "Segment: pos:ADJ, derivation:passiveParticiple, verbForm:2, root:طهر."
+        }
+      ],
+      "lernen": [
+        "Sülâsî mücerredde ism-i fâil ile ism-i mef'ûlü doğrudan karşı karşıya koy: نَاصِر (yardım eden) ile مَنْصُور (kendisine yardım edilen) — aynı gövde, zıt roller.",
+        "Mezîd bablarda kelime çiftini sesli oku (مُعَلِّم/مُعَلَّم) ve tek farka bilinçli olarak kulak ver — son harften önce kesra mı, fetha mı."
+      ],
+      "tabellen": [],
+      "siehe": [
+        "ismFail",
+        "majhul"
+      ]
+    },
+    "masdar": {
+      "titel": "Masdar (fiil ismi)",
+      "ar": "المَصْدَر",
+      "umschrift": "al-maṣdar",
+      "erklaerung": [
+        "Masdar, bir fiilin saf temel anlamını/işini isim olarak taşır — \"öğretmek\", \"söylemek\", \"indirmek\" — zamandan ve şahıstan bağımsız olarak. Her Arapça fiilin bir masdarı vardır (sülâsî mücerredde çoğu zaman kuralsız, mezîd bablarda II–X düzenli ve önceden kestirilebilir).",
+        "Masdar cümlede sıradan bir isim işlevi görür: özne, nesne ya da bir izâfetin parçası olabilir. Özellikle önemli olan mef'ûlü mutlak kullanımıdır; burada masdar, ana fiille aynı kökten geldiği için onun işini pekiştirir (örneğin قَتَلَهُ قَتْلًا, \"onu gerçekten/adamakıllı öldürdü\")."
+      ],
+      "erkennung": [
+        "Sülâsî mücerredde tek bir vezin yoktur — masdar her fiille birlikte tek tek öğrenilmelidir (قَوْل، عِلْم، نَصْر).",
+        "Mezîd bablarda vezin çoğunlukla önceden kestirilebilir; örneğin II. babda تَفْعِيل (تَعْلِيم) ya da IV. babda إِفْعَال (إِنْزَال، إِحْسَان).",
+        "Dilbilgisel olarak isim gibi işler, ama anlam bakımından zaman bildirmeksizin saf işi taşır."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 59,
+          "wort": 4,
+          "zeigt": "قَوْلًا (\"bir söz/söyleyiş\") — قَالَ, \"söylemek\" fiilinin sülâsî mücerred masdarı.",
+          "warum": "Segment: pos:N, derivation:verbalNoun, root:قول."
+        },
+        {
+          "sure": 2,
+          "vers": 83,
+          "wort": 11,
+          "zeigt": "إِحْسَانًا (\"iyilik, güzel davranma\") — أَحْسَنَ fiilinin IV. bab masdarı (إِفْعَال vezni).",
+          "warum": "Segment: pos:N, derivation:verbalNoun, verbForm:4, root:حسن."
+        }
+      ],
+      "lernen": [
+        "Sülâsî mücerredde masdarı fiille birlikte sabit bir çift olarak öğren (قَالَ – قَوْل) — burada kural yoktur, yalnızca ezber vardır.",
+        "Mezîd bablarda her bab için masdar veznini bir kez öğrenmek yeterlidir (II için تَفْعِيل, IV için إِفْعَال vb.); sonra bunu istediğin köke uygularsın."
+      ],
+      "tabellen": [],
+      "siehe": [
+        "ismFail",
+        "ismMaful"
+      ]
+    },
+    "ismTafdil": {
+      "titel": "İsm-i tafdîl (karşılaştırma ve üstünlük şekli)",
+      "ar": "اِسْم التَّفْضِيل",
+      "umschrift": "ism at-tafḍīl",
+      "erklaerung": [
+        "İsm-i tafdîl, bir niteliği iki (ya da daha çok) şey arasında karşılaştırır veya üstün derecede gösterir — \"daha büyük\", \"en büyük\". Çoğunlukla أَفْعَل vezninde kurulur: كَبِير (\"büyük\") kelimesinden أَكْبَر (\"daha büyük/en büyük\"), عَلِيم/عَالِم (\"bilen\") kelimesinden أَعْلَم (\"daha iyi bilen, herkesten iyi bilen\") olur.",
+        "Ardından مِن (\"-den\") gelirse karşılaştırma açıktır (\"...-den daha büyük\"). مِن olmadan, ama اَلْ takısıyla ya da bir izâfetin ilk unsuru olarak kullanıldığında anlam üstünlüğe döner (\"en büyük\")."
+      ],
+      "erkennung": [
+        "Temel vezin أَفْعَل: kelime başında hemze, üç kök harfi üzerinde fetha–sükûn–fetha (أَكْبَر، أَعْلَم، أَحْسَن).",
+        "Ardından مِن gelirse: açık karşılaştırma (\"...-den daha büyük\").",
+        "اَلْ takısıyla ya da bir izâfette, مِن olmadan: üstünlük (\"en büyük/en güzel\")."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 140,
+          "wort": 15,
+          "zeigt": "وَٱللَّهُ أَعْلَمُ (\"ve Allah en iyi bilendir\") — عَلِمَ fiilinden أَفْعَل vezni, burada مِن olmadan mutlak üstünlük anlamında.",
+          "warum": "Kelime korpusta pos:N olarak, أَعْلَم lemmasıyla işaretlenmiştir, root:علم."
+        },
+        {
+          "sure": 2,
+          "vers": 217,
+          "wort": 22,
+          "zeigt": "أَكْبَرُ (\"daha büyük/daha ağır\") — كَبُرَ fiilinden أَفْعَل vezni, burada karşılaştırma anlamında (\"... oradaki savaşmaktan daha ağırdır\").",
+          "warum": "Kelime korpusta pos:N olarak, أَكْبَر lemmasıyla işaretlenmiştir, root:كبر."
+        }
+      ],
+      "lernen": [
+        "أَفْعَل veznini önce Kur'an'da en sık geçen örneklerle ezberle (أَكْبَر، أَعْلَم، أَقْرَب، أَحْسَن), kendi şekillerini kurmaya ondan sonra geç.",
+        "\"مِن ile = karşılaştırma\" ve \"مِن olmadan اَلْ/izâfet ile = üstünlük\" farkını aynı kelimeler üzerinde her iki yapıda da çalış."
+      ],
+      "tabellen": [],
+      "siehe": [
+        "ismFail"
+      ]
+    },
+    "ismZamanMakan": {
+      "titel": "İsm-i zaman ve ism-i mekân",
+      "ar": "اِسْم الزَّمَان وَالمَكَان",
+      "umschrift": "ism az-zamān wa-l-makān",
+      "erklaerung": [
+        "İsm-i zaman ve ism-i mekân (zarf), bir işin gerçekleştiği yeri ya da zamanı gösterir — \"secde edilen yer\", \"güneşin doğduğu vakit\". Sülâsî mücerredden çoğunlukla مَفْعِل veya مَفْعَل vezninde kurulur: سَجَدَ (\"secde etmek\") fiilinden مَسْجِد, \"secde edilen yer\" (mescid); شَرَقَ (\"doğmak [güneş]\") fiilinden مَشْرِق, \"güneşin doğduğu yer/vakit, doğu\" türer.",
+        "Yine sıklıkla مَـ ile başlayan ism-i mef'ûlden farklı olarak ism-i zaman ve mekân bir rol anlamı (\"kendisine yapılan\") taşımaz, salt bir yer/zaman bildirir — bu iki kategori ancak cümledeki anlamdan güvenle ayırt edilebilir."
+      ],
+      "erkennung": [
+        "Çoğunlukla مَفْعِل ya da مَفْعَل vezninde: مَسْجِد، مَشْرِق، مَغْرِب، مَوْعِد.",
+        "Bir şeyin kendisinde gerçekleştiği kişi/nesneyi değil, bir yeri ya da zamanı gösterir.",
+        "Dış görünüşü bakımından ism-i mef'ûle benzer — ayrım bağlamdaki anlama göre yapılır."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 114,
+          "wort": 5,
+          "zeigt": "مَسَٰجِدَ (\"secde edilen yerler/mescidler\") — سَجَدَ fiilinden مَفْعِل veznindeki ism-i mekân, çoğul.",
+          "warum": "Kelime korpusta pos:N olarak, مَسْجِد lemmasıyla işaretlenmiştir, root:سجد, derivation:null (ortaç değil)."
+        },
+        {
+          "sure": 2,
+          "vers": 115,
+          "wort": 2,
+          "zeigt": "ٱلْمَشْرِقُ (\"doğu/güneşin doğduğu yer\") — شَرَقَ fiilinden مَفْعِل veznindeki ism-i mekân.",
+          "warum": "Kelime korpusta pos:N olarak, مَشْرِق lemmasıyla işaretlenmiştir, root:شرق, derivation:null (ortaç değil)."
+        }
+      ],
+      "lernen": [
+        "مَسْجِد kelimesini bütün vezin için çıpa olarak öğren: \"[fiilin bildirdiği işin] gerçekleştiği yer\".",
+        "مَشْرِق/مَغْرِب (doğu/batı, güneşin doğduğu/battığı yer) kelime çiftini karşılaştır — ikisi de aynı vezinde, yönleri zıt."
+      ],
+      "tabellen": [],
+      "siehe": [
+        "ismMaful"
+      ]
+    },
+    "sahih": {
+      "titel": "Sahih (sâlim) fiil",
+      "ar": "الفِعْل الصَّحِيح",
+      "umschrift": "al-fiʿl aṣ-ṣaḥīḥ",
+      "erklaerung": [
+        "Sahih (\"sağlam, kusursuz\"), üç kök harfinde hiçbir özellik bulunmayan fiilleri adlandırır: hemze yok, üç illet harfinden (elif/vâv/yâ) hiçbiri yok, ikizlenmiş harf yok. نَصَرَ, فَتَحَ ve سَمِعَ tipik sahih fiillerdir. Çekimin ilk olarak üzerinde öğrenildiği \"kolay\" ölçüyü bunlar oluşturur; özel durumlara ancak bundan sonra geçilir.",
+        "Mâzî, muzâri, emir, nehiy ve on bab hakkındaki bütün kurallar şimdiye kadar örnek fiil نَصَرَ üzerinde gösterildi, çünkü o tam anlamıyla sahih bir fiildir: gövde ve ekler, hiçbir harf düşmeden, dönüşmeden ya da kaynaşmadan tümüyle düzenli davranır."
+      ],
+      "erkennung": [
+        "Kökte hemze yoktur.",
+        "Üç kök harfinden hiçbiri elif, vâv veya yâ değildir.",
+        "İkinci ve üçüncü kök harfi aynı (ikizlenmiş) değildir."
+      ],
+      "belege": [
+        {
+          "sure": 3,
+          "vers": 123,
+          "wort": 2,
+          "zeigt": "نَصَرَكُمُ (\"size yardım etti\") — ن-ص-ر kökü: hemze yok, illet harfi yok, ikizlenme yok.",
+          "warum": "root:نصر — üç harfin hiçbiri özel bir gruba girmez."
+        },
+        {
+          "sure": 7,
+          "vers": 157,
+          "wort": 35,
+          "zeigt": "وَنَصَرُوهُ (\"ve ona yardım ettiler\") — aynı sahih kök ن-ص-ر.",
+          "warum": "root:نصر — aynı sınıflandırmayı ikinci bir yerde doğrular."
+        }
+      ],
+      "lernen": [
+        "Çekimi önce bir sahih fiil üzerinde eksiksiz öğren (نَصَرَ) — bu temel yapı oturmadan özel durumlarla uğraşmak verimsizdir, çünkü ancak o zaman her birinde neyin farklı olduğunu tam olarak görürsün.",
+        "Yeni bir fiili hemen sınıflandırmanı sağlayan üç soruyu belle: Hemze var mı? İllet harfi (و/ي/ا) var mı? İkizlenme var mı? Üçüne de hayır = sahih."
+      ],
+      "tabellen": [
+        "verb-madi-nasara-aktiv-matrix"
+      ],
+      "siehe": [
+        "mahmuz",
+        "mithal",
+        "ajwaf",
+        "naqis",
+        "mudaaf"
+      ]
+    },
+    "mahmuz": {
+      "titel": "Mehmûz fiil (hemzeli fiil)",
+      "ar": "المَهْمُوز",
+      "umschrift": "al-mahmūz",
+      "erklaerung": [
+        "Mehmûz fiiller, üç kök harfinden biri olarak hemze taşır. Hemzenin yerine göre mehmûzü'l-fâ (1. kök harfi hemze, örneğin أَكَلَ, \"yemek\"), mehmûzü'l-ayn (2. kök harfi hemze, örneğin سَأَلَ, \"sormak\") ve mehmûzü'l-lâm (3. kök harfi hemze, örneğin قَرَأَ, \"okumak\") ayırt edilir.",
+        "Bu fiillerde iki ses değişimi görülebilir: tahfîf (hemze, kendinden önceki harekeye göre elife, vâva ya da yâya dönüşür) ve hazif (hemze büsbütün düşer). Hazif, Arapçada emir kipinde tam olarak dört fiili ilgilendirir: أَكَلَ→كُلْ, أَخَذَ→خُذْ, أَمَرَ→مُرْ, سَأَلَ→سَلْ — dördünde de hemze emirde tamamen düşer."
+      ],
+      "erkennung": [
+        "Üç kök harfinden tam olarak biri hemzedir (ء/أ/إ/ؤ/ئ).",
+        "Hemzenin yeri (1., 2. ya da 3. kök harfi) alt türü belirler (el-fâ, el-ayn, el-lâm).",
+        "أَكَلَ/أَخَذَ/أَمَرَ/سَأَلَ fiillerinin emrinde hemze büsbütün düşer — bu özel grup için güvenilir bir tanıma alameti."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 57,
+          "wort": 8,
+          "zeigt": "كُلُوا۟ (\"Yiyin!\") — أَكَلَ fiilinin (mehmûzü'l-fâ) emir şekli: baştaki hemze emirde tamamen düşmüştür.",
+          "warum": "root:اكل, Segment: pos:V, tense:imperative — أَكَلَ lemması hemze taşır, emir şeklinin kendisi artık taşımaz."
+        },
+        {
+          "sure": 17,
+          "vers": 14,
+          "wort": 1,
+          "zeigt": "ٱقْرَأْ (\"Oku!\") — قَرَأَ fiilinin (mehmûzü'l-lâm) emir şekli: burada hemze üçüncü kök harfi olarak korunur.",
+          "warum": "root:قرا, Segment: pos:V, tense:imperative — قَرَأَ lemması kelime sonunda hemze taşır, burada emirde korunmuştur."
+        }
+      ],
+      "lernen": [
+        "Üç alt türü örnek kelimeleriyle öğren: أَكَلَ (el-fâ), سَأَلَ (el-ayn), قَرَأَ (el-lâm) — hemzenin kelimedeki yeri alt türü hemen ele verir.",
+        "Dört hazif emrini كُلْ/خُذْ/مُرْ/سَلْ kapalı ve kuralla türetilemeyen bir liste olarak ezberle.",
+        "Bab tablolarını (قَرَأَ ve أَمِنَ) sesli tekrar için kullan: her seferinde bir sütunu kapat ve masdarı, ortacı ve emir şeklini kendin tamamla."
+      ],
+      "tabellen": [
+        "bab-fataha-mahmooz-qaraa",
+        "bab-samia-mahmooz-amina"
+      ],
+      "siehe": [
+        "takhfif",
+        "hadhf",
+        "sahih"
+      ]
+    },
+    "mithal": {
+      "titel": "İlk kök harfi illetli fiil (Misâl)",
+      "ar": "المِثَال",
+      "umschrift": "al-mithāl",
+      "erklaerung": [
+        "Misâl, kökünde illet harfi (vâv/yâ/elif) bulunan bir mu'tel fiildir; burada illetli olan özellikle birinci kök harfidir. Bu ilk harf vâv ise alt türe misâl-i vâvî denir (örneğin وَعَدَ, \"söz vermek\"); yâ ise misâl-i yâî denir.",
+        "En dikkat çekici olay şudur: Misâl-i vâvî fiillerin çoğunda baştaki vâv, muzâride hazf yoluyla büsbütün düşer — وَعَدَ (\"söz verdi\") fiilinin muzârisi يَوْعِدُ değil, يَعِدُ (\"söz verir\") olur. Kelimenin başındaki bu boşluk, misâl fiilleri tanımanın en güvenilir işaretidir."
+      ],
+      "erkennung": [
+        "Birinci kök harfi vâv veya yâdır (mâzîde çoğunlukla hâlâ görünür: وَعَدَ، وَلَدَ).",
+        "Muzâride bu baştaki vâv çoğunlukla hiçbir iz bırakmadan düşer (وَعَدَ → يَعِدُ, يَوْعِدُ değil).",
+        "Mâzînin kendisinde ise illet harfi çoğu zaman görünür kalır."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 268,
+          "wort": 2,
+          "zeigt": "يَعِدُكُمُ (\"size söz veriyor\") — وَعَدَ fiilinin muzârisi: و-ع-د kökünün baştaki vâvı tamamen kaybolmuştur.",
+          "warum": "root:وعد (birinci kök harfi و), segment: tense:imperfect, verbForm:1 — kök و-ع-د olmasına rağmen kelime görüntüsünde و yok."
+        },
+        {
+          "sure": 112,
+          "vers": 3,
+          "wort": 2,
+          "zeigt": "يَلِدْ (\"doğurur\") — وَلَدَ fiilinin muzârisi: burada da و-ل-د kökünün baştaki vâvı düşmüştür.",
+          "warum": "root:ولد (birinci kök harfi و), segment: tense:imperfect, mood:juss — kelime görüntüsünde و yok."
+        }
+      ],
+      "lernen": [
+        "وَعَدَ/يَعِدُ (\"söz vermek\") ikilisini kural örneği olarak aklında tut: vâv mâzîde görünür, muzâride yoktur.",
+        "Mechûl (edilgen) يُوعَدُ biçimini ma'lûm (etken) يَعِدُ ile karşılaştır — vâv mechûlde korunur! Bu da düşmenin özellikle ma'lûm muzâriye bağlı olduğunu gösterir."
+      ],
+      "tabellen": [],
+      "siehe": [
+        "hadhf",
+        "qalb",
+        "idgham"
+      ]
+    },
+    "ajwaf": {
+      "titel": "İçi boş fiil (Ecvef)",
+      "ar": "الأَجْوَف",
+      "umschrift": "al-ajwaf",
+      "erklaerung": [
+        "Ecvef, orta kök harfi illetli (vâv veya yâ) olan bir mu'tel fiildir — adı kelime anlamıyla \"içi boş\" demektir, çünkü bu ortadaki harf birçok kalıpta yalnızca bir uzun ünlüye dönüşür ya da büsbütün kaybolur. قَالَ (\"söylemek\") ق-و-ل köküne dayanır (ecvef-i vâvî), خَافَ (\"korkmak\") ise خ-و-ف köküne.",
+        "Ortadaki illet harfi mâzîde kalb yoluyla uzun bir elife dönüşür (قَوَلَ → قَالَ), belirli şahıslarda (ünsüzle başlayan ekten önce) hazf yoluyla büsbütün düşer (قَالَ + تُ → قُلْتُ, قَالْتُ değil) ve emirde çoğu zaman yalnızca bir uzun ünlüye indirgenir (قُلْ, \"Söyle!\")."
+      ],
+      "erkennung": [
+        "Orta (ikinci) kök harfi vâv veya yâdır.",
+        "Mâzî 3. şahısta bu harf çoğunlukla uzun bir elif olarak görünür (قَوَلَ yerine قَالَ).",
+        "Ünsüzle başlayan bir şahıs ekinden önce kelime belirgin biçimde kısalır (قَالْتُ yerine قُلْتُ)."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 11,
+          "wort": 8,
+          "zeigt": "قَالُوٓا۟ (\"dediler\") — kök ق-و-ل, ortadaki vâv uzun elif olarak görünüyor (kalb).",
+          "warum": "root:قول (orta kök harfi و), segment: tense:perfect, verbForm:1."
+        },
+        {
+          "sure": 2,
+          "vers": 229,
+          "wort": 18,
+          "zeigt": "يَخَافَآ (\"ikisi korkar\") — kök خ-و-ف, ortadaki vâv burada da elif olarak beliriyor.",
+          "warum": "root:خوف (orta kök harfi و), segment: tense:imperfect, number:du."
+        }
+      ],
+      "lernen": [
+        "قَالَ fiilini çekirdek örnek olarak öğren ve özellikle ünsüzle başlayan ek alan şahısları çalış (قُلْتُ، قُلْنَا), çünkü orada ortadaki harf büsbütün kaybolur — en sık takılınan yer burasıdır.",
+        "Emir ile muzâriyi sesli okuyarak birlikte söyle: قُلْ (Söyle!) yanında يَقُولُ (söyler) — böylece emirdeki kısalma kulakla duyulur."
+      ],
+      "tabellen": [],
+      "siehe": [
+        "qalb"
+      ]
+    },
+    "naqis": {
+      "titel": "Eksik fiil (Nâkıs)",
+      "ar": "النَّاقِص",
+      "umschrift": "an-nāqiṣ",
+      "erklaerung": [
+        "Nâkıs, son kök harfi illetli (vâv veya yâ) olan bir mu'tel fiildir. Bu harf vâv ise alt türe nâkıs-ı vâvî denir (دَعَا, \"çağırmak/dua etmek\", د-ع-و kökünden), yâ ise nâkıs-ı yâî (رَمَى, \"atmak\", ر-م-ي kökünden). \"Eksik\" adı, son kök harfinin birçok kalıpta artık açıkça bir ünsüz olarak seçilememesinden gelir.",
+        "Mâzî 3. şahısta sondaki illet harfi çoğunlukla uzun bir elife ya da elif-i maksûreye dönüşür (دَعَوَ → دَعَا). Ünsüzle başlayan şahıs eklerinden önce ise illet harfi çoğu zaman yalnızca harekesiz kalır (teskîn) ya da belirli kalıplarda büsbütün düşer."
+      ],
+      "erkennung": [
+        "Son (üçüncü) kök harfi vâv veya yâdır.",
+        "Mâzî 3. şahıs müzekker müfredde kelime çoğunlukla asıl kök harfiyle değil, (uzun ya da kısa yazılan) bir elifle biter.",
+        "Ünsüzle başlayan şahıs eklerinden önce sondaki illet harfi çoğu zaman belirgin biçimde kısa ya da değişmiş olarak söylenir."
+      ],
+      "belege": [
+        {
+          "sure": 3,
+          "vers": 38,
+          "wort": 2,
+          "zeigt": "دَعَا (\"çağırdı/dua etti\") — kök د-ع-و, sondaki vâv elif olarak beliriyor.",
+          "warum": "root:دعو (son kök harfi و), segment: tense:perfect, verbForm:1."
+        },
+        {
+          "sure": 8,
+          "vers": 17,
+          "wort": 7,
+          "zeigt": "رَمَيْتَ (\"attın\") — kök ر-م-ي, sondaki yâ ـتَ şahıs ekinden önce kısa bir ünlü olarak korunmuş.",
+          "warum": "root:رمي (son kök harfi ي), segment: tense:perfect, person:2, gender:m, number:sg."
+        }
+      ],
+      "lernen": [
+        "دَعَا (çağırmak/dua etmek, vâvî) ve رَمَى (atmak, yâî) fiillerini iki alt türün birer çekirdek örneği olarak öğren — temel kalıp bunlarda açıkça görünür.",
+        "Özellikle mâzî 3. şahıs müfredi çalış, çünkü kök harfi en çok orada \"kaybolur\" (yalnızca elife dönüşür) — en göze çarpan yer burasıdır."
+      ],
+      "tabellen": [],
+      "siehe": [
+        "qalb"
+      ]
+    },
+    "lafif": {
+      "titel": "Çift illetli fiil (Lefîf)",
+      "ar": "اللَّفِيف",
+      "umschrift": "al-lafīf",
+      "erklaerung": [
+        "Lefîf, üç kök harfinden ikisi birden illetli (vâv veya yâ) olan fiildir — yani iki özel durumu tek başına birleştirir. İkinci ve üçüncü kök harfi illetli olanına lefîf-i makrûn (\"bitişik\") denir (رَوَى, \"anlatmak/rivayet etmek\" — ecvef ile nâkısın birleşimi); birinci ve üçüncü kök harfi illetli olanına ise lefîf-i mefrûk (\"ayrık\") denir (وَفَى, \"yerine getirmek/vefalı olmak\" — misâl ile nâkısın birleşimi).",
+        "Lefîfte iki özel durum aynı anda bir araya geldiği için, temelde her iki fiil türünün kendi değişim kuralları geçerlidir (her iki alt tür için nâkıs kuralları, mefrûk türünde ayrıca misâl hazfi) — yalnızca iki kez uygulanmış olarak."
+      ],
+      "erkennung": [
+        "Üç kök harfinden ikisi vâv ya da yâdır.",
+        "Lefîf-i makrûn: 2. ve 3. kök harfi illetli (ecvef + nâkıs birleşimi), örneğin رَوَى.",
+        "Lefîf-i mefrûk: 1. ve 3. kök harfi illetli (misâl + nâkıs birleşimi), örneğin وَفَى."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 28,
+          "wort": 6,
+          "zeigt": "فَأَحْيَٰكُمْ (\"sonra sizi diriltti\") — kök ح-ي-ي: 2. ve 3. kök harfinin ikisi de yâ (lefîf-i makrûn).",
+          "warum": "root:حيي (2. ve 3. kök harfi ikisi de illetli), segment: pos:V, verbForm:4, tense:perfect."
+        },
+        {
+          "sure": 2,
+          "vers": 40,
+          "wort": 8,
+          "zeigt": "وَأَوْفُوا۟ (\"ve yerine getirin/tutun!\") — kök و-ف-ي: 1. ve 3. kök harfinin ikisi de illetli (lefîf-i mefrûk).",
+          "warum": "root:وفي (1. ve 3. kök harfi ikisi de illetli), segment: pos:V, verbForm:4, tense:imperative."
+        }
+      ],
+      "lernen": [
+        "Lefîfi başlı başına yeni bir kurallar bütünü olarak değil, hâlihazırda bildiğin iki özel durumun üst üste binmesi olarak gör — önce misâl, ecvef ve nâkısı tek tek sağlam öğren, sonra lefîf kolay gelir.",
+        "Yeni bir lefîf fiilde önce iki illetli konumu belirle (örneğin \"1. ve 3. kök harfi\" = mefrûk), sonra bildiğin tek tek kuralları sırayla uygula."
+      ],
+      "tabellen": [],
+      "siehe": [
+        "mithal",
+        "ajwaf",
+        "naqis"
+      ]
+    },
+    "mudaaf": {
+      "titel": "İkiz harfli fiil (Muzâaf)",
+      "ar": "المُضَاعَف",
+      "umschrift": "al-muḍāʿaf",
+      "erklaerung": [
+        "Muzâaf fiilin 2. ve 3. kök harfi aynıdır (ikizdir) — kök aslında iki ünsüzlüdür, ama geleneksel olarak son harfi tekrarlanan üç harfli bir kök sayılır: رَدَّ (\"geri vermek\") ر-د-د köküne dayanır. Mücerred kalıpta bu iki aynı harf idgam yoluyla şeddeli tek bir harfte birleşir: رَدَدَ → رَدَّ.",
+        "Bu birleşme her yerde gerçekleşmez: Ünsüzle başlayan şahıs eklerinden önce (mâzîdeki 1. ve 2. şahıslar: ـتُ، ـتَ، ـنَا …) iki harf ayrı kalır (رَدَدْتُ, رَدَّتُ değil), çünkü aksi hâlde arka arkaya iki harekesiz harf ortaya çıkardı. Aynısı meczûm muzâride de olur: يَرُدُّ (\"geri verir\") birleşir, ama يَرْتَدِدْ (VIII. bab, meczûm) kendisinden sonraki sükûn yüzünden istisnaen ayrı kalır."
+      ],
+      "erkennung": [
+        "2. ve 3. kök harfi aynıdır (ر-د-د, م-د-د, ض-ل-ل …).",
+        "Kalıpların çoğunda bu iki aynı harf tek bir şedde ile birleşmiş görünür (رَدَدَ yerine رَدَّ).",
+        "Ünsüzle başlayan şahıs ekinden önce ya da cezm hâlinde (sükûnlu son) iki harf istisnaen ayrı ayrı görünür kalır."
+      ],
+      "belege": [
+        {
+          "sure": 4,
+          "vers": 83,
+          "wort": 11,
+          "zeigt": "رَدُّوهُ (\"onu geri bildirselerdi\") — 2. ve 3. kök harfi د-د tek bir şeddede birleşmiş.",
+          "warum": "root:ردد (2. ve 3. kök harfi aynı), segment: tense:perfect, verbForm:1 — kelime görüntüsü şedde taşıyor."
+        },
+        {
+          "sure": 2,
+          "vers": 217,
+          "wort": 39,
+          "zeigt": "يَرْتَدِدْ (\"dinden döner\") — aynı kök ر-د-د, ama cezm hâlinde iki د harfi ayrı kalır, şedde yoktur.",
+          "warum": "root:ردد, segment: mood:juss, verbForm:8 — normalde olağan olan birleşmenin istisnası."
+        }
+      ],
+      "lernen": [
+        "رَدَّ fiilini çekirdek örnek olarak öğren ve رَدَّ (birleşmiş) ile رَدَدْتُ (ünsüzle başlayan ekten önce ayrı) karşıtlığını özellikle çalış — en çok sorulan yer tam olarak bu karşıtlıktır.",
+        "يَرْتَدِدْ istisna örneğini aklında tut: cezm hâlinde ikiz harfler ayrı kalır, yoksa iki sükûn üst üste gelirdi — onu bilinçli olarak birleştirmeden telaffuz et."
+      ],
+      "tabellen": [],
+      "siehe": [
+        "idgham"
+      ]
+    },
+    "takhfif": {
+      "titel": "Hemzenin hafifletilmesi (Tahfîf)",
+      "ar": "التَّخْفِيف",
+      "umschrift": "at-takhfīf",
+      "erklaerung": [
+        "Tahfîf (\"hafifletme\"), bir hemzenin kendinden önceki harfin harekesine göre elife, vâva veya yâya dönüşmesini anlatır — kökün kimliğini değiştirmeyen, salt bir söyleyiş ve yazım kolaylığıdır. En sık iki hemzenin karşılaşmasında görülür: İki hemze yan yana gelir ve bunlardan ikincisi sâkin (harekesiz) olursa, ikinci hemze kendinden önceki harekeye göre elife, vâva veya yâya dönüşür.",
+        "Günlük bir örneği, kendisi hemze ile başlayan köklerin IV. babı verir: IV. babın önekindeki hemze, kökün hemzesiyle karşılaşır. Kuramsal أَأْمَنَ biçiminden tahfîf yoluyla, fiilen yazılan آمَنَ (\"iman etti\") ortaya çıkar — iki hemze, meddli tek bir elifte birleşir."
+      ],
+      "erkennung": [
+        "İki hemze yan yana gelir ve ikincisi sâkindir (harekesizdir).",
+        "İkinci hemze, birincinin harekesine göre elife, vâva ya da yâya dönüşür.",
+        "Kur'an'daki en sık görünümü: Aslında iki hemzenin karşılaşacağı yerde, kelime başında meddli bir elif (آ) bulunur (أَأْمَنَ yerine آمَنَ)."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 41,
+          "wort": 1,
+          "zeigt": "وَءَامِنُوا۟ (\"ve iman edin!\") — IV. bab آمَنَ fiilinin emir biçimi: iki hemze (önek + kök başı) tek bir elif/hemze birleşiminde kaynaşmıştır.",
+          "warum": "root:امن, segment: pos:V, verbForm:4, tense:imperative — ءَامَنَ sözlük biçimi kaynaşmış yazımı gösteriyor."
+        },
+        {
+          "sure": 2,
+          "vers": 13,
+          "wort": 6,
+          "zeigt": "ءَامَنَ (\"iman etti\") — aynı IV. babın mâzîsi, kelime başında yine aynı tahfîf kaynaşması.",
+          "warum": "root:امن, segment: pos:V, verbForm:4, tense:perfect."
+        }
+      ],
+      "lernen": [
+        "آمَنَ fiilini çekirdek örnek olarak öğren ve şunu zihnine yerleştir: İki hemzenin karşılaşması gereken yerde, yazılı Kur'an metninde çoğunlukla iki ayrı hemze işareti yerine meddli bir elif görünür.",
+        "Tahfîfi hazf ile karıştırma: Tahfîfte hemze dönüşür, hazfte ise büsbütün düşer (dört emir istisnasına bak)."
+      ],
+      "tabellen": [
+        "bab-fataha-mahmooz-qaraa",
+        "bab-samia-mahmooz-amina"
+      ],
+      "siehe": [
+        "mahmuz"
+      ]
+    },
+    "hadhf": {
+      "titel": "Bir harfin düşmesi (Hazf)",
+      "ar": "الحَذْف",
+      "umschrift": "al-ḥadhf",
+      "erklaerung": [
+        "Hazf, kısaca bir harfin düşürülmesi demektir. En bilinen durumu, emirde baştaki ya da kökteki hemzenin büsbütün kaybolduğu tam dört mehmûz fiili ilgilendirir: أَكَلَ يَأْكُلُ → كُلْ (\"Ye!\"), أَخَذَ يَأْخُذُ → خُذْ (\"Al!\"), أَمَرَ يَأْمُرُ → مُرْ (\"Emret!\"), سَأَلَ يَسْأَلُ → سَلْ (\"Sor!\"). Ne var ki مُرْ ve سَلْ fiillerinde hazf yalnızca cümle başında olur; önlerinde, fiilin kendisine bağlandığı bir kelime gelirse hemze korunur (وَأْمُرْ, وَٱسْأَلْ).",
+        "Hazf, misâl ve nâkıs fiillerde de görülür: Misâlde baştaki vâv muzâride düşer (وَعَدَ → يَوْعِدُ yerine يَعِدُ); nâkısta ise sondaki illet harfi, kendinden önce teskîn bulunan belirli çoğul biçimlerde düşer."
+      ],
+      "erkennung": [
+        "Beklenen bir harf, fiilen yazılan kelimede büsbütün eksiktir.",
+        "كُلْ/خُذْ/مُرْ/سَلْ şeklindeki dört mehmûz emrinde hazf sözlükseldir — genel bir kural değil, kapalı bir listedir.",
+        "Misâl fiillerde şundan tanınır: Kökün baştaki vâvı muzâride hiçbir yerde artık ortaya çıkmaz."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 57,
+          "wort": 8,
+          "zeigt": "كُلُوا۟ (\"Yiyin!\") — أَكَلَ fiilinin emir biçimi: baştaki hemze tamamen düşmüştür.",
+          "warum": "root:اكل, segment: pos:V, tense:imperative — sözlük biçimi hemze taşıyor, emir biçimi taşımıyor."
+        },
+        {
+          "sure": 7,
+          "vers": 199,
+          "wort": 1,
+          "zeigt": "خُذِ (\"Al!\") — أَخَذَ fiilinin emir biçimi: burada da baştaki hemze büsbütün düşmüştür.",
+          "warum": "root:اخذ, segment: pos:V, tense:imperative — أَخَذَ sözlük biçimi hemze taşıyor, emir biçimi taşımıyor."
+        }
+      ],
+      "lernen": [
+        "كُلْ/خُذْ/مُرْ/سَلْ şeklindeki dört hazf emrini, türetilemeyen sabit bir liste olarak temel biçimleriyle birlikte öğren.",
+        "مُرْ/سَلْ fiillerinde ayrıca cümledeki yere dikkat et: hemze yalnızca cümle başında düşer, aksi hâlde kalır (وَأْمُرْ).",
+        "Hazfı (harf büsbütün düşer) tahfîf ile (harf yalnızca dönüşür) bilinçli olarak karşılaştır — çoğu zaman ikisi de aynı hemzeyi ilgilendirir, ama sonuçları farklıdır."
+      ],
+      "tabellen": [],
+      "siehe": [
+        "mahmuz",
+        "mithal",
+        "amr"
+      ]
+    },
+    "idgham": {
+      "titel": "İki harfin birleşmesi (İdgam)",
+      "ar": "الإِدْغَام",
+      "umschrift": "al-idghām",
+      "erklaerung": [
+        "İdgam, yan yana gelen iki aynı (ya da birbirine çok yakın) harfin, şedde ile işaretlenen tek bir harfte birleşmesini anlatır. En açık biçimde muzâaf fiillerde görülür (2./3. kök harfi ikiz): رَدَدَ, رَدَّ hâline gelir; يَرْدُدُ ise يَرُدُّ olur.",
+        "Ama idgam kendiliğinden her yerde işlemez: Arka arkaya iki harekesiz harf ortaya çıkacaksa gerçekleşmez — örneğin ünsüzle başlayan şahıs eklerinden önce (رَدَدْتُ ayrı kalır) ya da cezm hâlinde (يَرْتَدِدْ ayrı kalır, çünkü kelime sonundaki sükûn aksi hâlde doğrudan ikinci bir sükûnla karşılaşırdı). VIII. babda da araya giren تَ, kökün belirli baş harfleriyle birleşir (ٱوْتَخَذَ biçiminden ٱتَّخَذَ; burada ayrıca ت, asıl و/ي harfinin yerini alır)."
+      ],
+      "erkennung": [
+        "İki aynı (ya da birbirine çok yakın) harf doğrudan yan yana gelir ve şeddeli tek bir harfte birleşir.",
+        "Ardından bir harekesiz harf daha gelecek olursa birleşme gerçekleşmez — o zaman iki harf de ayrı ayrı görünür kalır.",
+        "Muzâaf fiillerde en güvenilir işaret: şahısların çoğunda — ama hepsinde değil — son kök harfi üzerinde şedde bulunur."
+      ],
+      "belege": [
+        {
+          "sure": 4,
+          "vers": 83,
+          "wort": 11,
+          "zeigt": "رَدُّوهُ (\"onu bildirselerdi\") — ر-د-د kökünün iki د harfi şeddeli tek bir harfte birleşmiştir.",
+          "warum": "root:ردد, segment: tense:perfect — kelime görüntüsü ayrı iki د yerine bir şedde taşıyor."
+        },
+        {
+          "sure": 2,
+          "vers": 217,
+          "wort": 39,
+          "zeigt": "يَرْتَدِدْ (\"dinden döner\") — aynı kök ر-د-د, ama cezm hâlinde iki د harfi istisnaen ayrı kalır, idgam yoktur.",
+          "warum": "root:ردد, segment: mood:juss — şeddesiz karşı örnek, çünkü aksi hâlde iki sükûn üst üste gelirdi."
+        }
+      ],
+      "lernen": [
+        "يَرُدُّ (birleşmiş) / يَرْتَدِدْ (ayrı, cezm) karşıt çiftini sesli oku — farkın sebebi (iki sükûnun üst üste gelmesinden kaçınma) en iyi işitsel örnekle akılda kalır.",
+        "Her muzâaf fiilde önce şu denetim sorusunu sor: \"Ardından harekesiz bir harf geliyor mu?\" — yalnızca cevap hayırsa iki aynı harf birleşir."
+      ],
+      "tabellen": [],
+      "siehe": [
+        "mudaaf",
+        "mithal"
+      ]
+    },
+    "qalb": {
+      "titel": "Bir harfin dönüşmesi (Kalb)",
+      "ar": "القَلْب",
+      "umschrift": "al-qalb",
+      "erklaerung": [
+        "Kalb, çoğunlukla ünlü çevresinin yol açtığı, bir harfin başka bir harfe dönüşmesini anlatır. Ecvef fiillerde (orta kök harfi illetli) vâv ve yâ mâzîde uzun bir elife dönüşür: خَوِفَ, خَافَ olur; بَيَعَ, بَاعَ olur. Mechûlde ise bunun yerine vâv yâya dönüşür ve ilk kök harfi kesra alır: خُوِفَ, خِيفَ olur.",
+        "Nâkıs fiillerde (son kök harfi illetli) aynı temel kural mâzî 3. şahısta geçerlidir: Vâv ve yâ elife dönüşür (سَعَيَ → سَعَى, دَعَوَ → دَعَا). Vâvdan önce bir kesra bulunuyorsa vâv, elif yerine yâya dönüşür (دُعِوَ → دُعِيَ). Böylece kalb, ecvef ve nâkısta anlatılan pek çok görünümün ardındaki asıl mekanizmadır."
+      ],
+      "erkennung": [
+        "Kökteki vâv ya da yâ harfi, gerçek kelime görüntüsünde elif olarak belirir.",
+        "Tipik olarak ecvef ve nâkıs fiillerin mâzî 3. şahsını ilgilendirir.",
+        "Mechûlde vâv, elif yerine çoğu zaman yâya dönüşür."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 11,
+          "wort": 8,
+          "zeigt": "قَالُوٓا۟ (\"dediler\") — ق-و-ل kökü, ortadaki vâvı uzun elif olarak gösteriyor (ecvefte kalb).",
+          "warum": "root:قول (orta kök harfi و), segment: tense:perfect — kelime görüntüsü و yerine ا içeriyor."
+        },
+        {
+          "sure": 3,
+          "vers": 38,
+          "wort": 2,
+          "zeigt": "دَعَا (\"çağırdı/dua etti\") — د-ع-و kökü, sondaki vâvı elif olarak gösteriyor (nâkısta kalb).",
+          "warum": "root:دعو (son kök harfi و), segment: tense:perfect — kelime görüntüsü و yerine ا ile bitiyor."
+        }
+      ],
+      "lernen": [
+        "قَالَ (ecvef, ortadaki harf elif olur) ve دَعَا (nâkıs, sondaki harf elif olur) örneklerini yan yana karşılaştır — aynı dönüşüm kuralı, iki farklı konum.",
+        "Şu hatırlatmayı aklında tut: Yakınında uzun a sesi bulunan vâv/yâ neredeyse her zaman elif olarak yazılır; işte bu kalbdır."
+      ],
+      "tabellen": [],
+      "siehe": [
+        "ajwaf",
+        "naqis",
+        "mithal"
+      ]
+    }
+  }
+}

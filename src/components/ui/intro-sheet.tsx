@@ -1,7 +1,7 @@
 // Erklärungs-Sheet für Übungstypen: "Was du machst" + "Warum das hilft" - da
 // die App keine Videos/Tutorials hat, ersetzt dieser Text die sonst übliche
 // Onboarding-Animation (User-Feedback, siehe useExerciseIntro). Struktur
-// bewusst analog zu features/quran/WordInfoSheet.tsx (etabliertes Sheet-Muster).
+// bewusst analog zu features/quran/WortAnalyseSheet.tsx (etabliertes Sheet-Muster).
 import { Modal, Platform, Pressable, ScrollView, StyleSheet, View } from 'react-native';
 
 import { IconSymbol } from '@/components/ui/icon-symbol';

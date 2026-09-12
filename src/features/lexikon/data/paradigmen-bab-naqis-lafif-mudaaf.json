@@ -1,0 +1,3620 @@
+{
+  "schema": 1,
+  "tables": [
+    {
+      "id": "bab-fataha-naqis-saa",
+      "kind": "verb",
+      "titleDe": "Bab Fataha (Naqis) — سَعَى (sich bemühen, streben)",
+      "termAr": "سَعَى",
+      "columns": [
+        {
+          "id": "madhi",
+          "labelDe": "Madhi / Amr"
+        },
+        {
+          "id": "mudari",
+          "labelDe": "Mudari / Nahy"
+        },
+        {
+          "id": "masdar",
+          "labelDe": "Masdar"
+        },
+        {
+          "id": "ism",
+          "labelDe": "Ism (Fa'il / Maf'ul / Ableitung)"
+        }
+      ],
+      "rows": [
+        {
+          "id": "aktiv",
+          "labelDe": "Aktiv"
+        },
+        {
+          "id": "passiv",
+          "labelDe": "Passiv"
+        },
+        {
+          "id": "imperativ",
+          "labelDe": "Imperativ (Amr/Nahy)"
+        }
+      ],
+      "cells": {
+        "aktiv": {
+          "madhi": {
+            "ar": "سَعَى",
+            "de": "er bemühte sich"
+          },
+          "mudari": {
+            "ar": "يَسْعَى",
+            "de": "er bemüht sich"
+          },
+          "masdar": {
+            "ar": "سَعْيًا",
+            "de": "das Bemühen (Masdar)"
+          },
+          "ism": {
+            "ar": "سَاعٍ",
+            "de": "Sich-Bemühender (Ism Fa'il)"
+          }
+        },
+        "passiv": {
+          "madhi": {
+            "ar": "سُعِيَ",
+            "de": "es wurde erstrebt"
+          },
+          "mudari": {
+            "ar": "يُسْعَى",
+            "de": "es wird erstrebt"
+          },
+          "masdar": {
+            "ar": "سَعْيًا",
+            "de": "das Bemühen (Masdar)"
+          },
+          "ism": {
+            "ar": "مَسْعِيٌّ",
+            "de": "Erstrebtes (Ism Maf'ul)"
+          }
+        },
+        "imperativ": {
+          "madhi": {
+            "ar": "اِسْعَ",
+            "de": "Bemühe dich!"
+          },
+          "mudari": {
+            "ar": "لَا تَسْعَ",
+            "de": "Bemühe dich nicht!"
+          },
+          "ism": {
+            "ar": "مَسْعَى",
+            "de": "Ort/Ziel des Bemühens (Ableitung, Ism Makan/Zaman)"
+          }
+        }
+      },
+      "notes": [
+        "Kapitel 8.7 (Naqis — Verben mit schwachem letztem Radikal) behandelt diese Verben mit denselben 3x4-Bab-Tabellen wie Kapitel 8's Mahmooz-Abschnitt. Gleiche Tabellenstruktur wie die Mahmooz-Bab-Tabellen in paradigmen-verben.json (3 Zeilen x 4 Spalten, keine gedruckten Kopfzeilen im Original; die Spalte 'fahuwa' (فَهُوَ) wurde als reine Lese-Einleitungsfloskel weggelassen). Zeile 'Aktiv' = Madhi/Mudari/Masdar/Ism Fa'il, Zeile 'Passiv' = die passiven Gegenstücke, Zeile 'Imperativ' = Amr/Nahy sowie eine weitere Ableitung (Ism Makan/Zaman bei Form I, sonst dieselbe Ism-Maf'ul-Form wie in der Passiv-Zeile).",
+        "In 'imperativ'/'masdar' gibt es im Original keine Zelle (Imperativ hat keinen Masdar) — daher hier ausgelassen statt geraten.",
+        "Zeichengenau aus dem gerenderten Seitenbild von handout.pdf S. 117 (Abbildung 84, Tabellen-Bbox per PyMuPDF find_tables ermittelt) bei 12- bis 80-fachem Zoom, zellenweise zugeschnitten, gelesen."
+      ],
+      "source": {
+        "file": "handout.pdf",
+        "page": 117
+      }
+    },
+    {
+      "id": "bab-samia-naqis-radiya",
+      "kind": "verb",
+      "titleDe": "Bab Sami'a (Naqis) — رَضِيَ (zufrieden sein)",
+      "termAr": "رَضِيَ",
+      "columns": [
+        {
+          "id": "madhi",
+          "labelDe": "Madhi / Amr"
+        },
+        {
+          "id": "mudari",
+          "labelDe": "Mudari / Nahy"
+        },
+        {
+          "id": "masdar",
+          "labelDe": "Masdar"
+        },
+        {
+          "id": "ism",
+          "labelDe": "Ism (Fa'il / Maf'ul / Ableitung)"
+        }
+      ],
+      "rows": [
+        {
+          "id": "aktiv",
+          "labelDe": "Aktiv"
+        },
+        {
+          "id": "passiv",
+          "labelDe": "Passiv"
+        },
+        {
+          "id": "imperativ",
+          "labelDe": "Imperativ (Amr/Nahy)"
+        }
+      ],
+      "cells": {
+        "aktiv": {
+          "madhi": {
+            "ar": "رَضِيَ",
+            "de": "er war zufrieden"
+          },
+          "mudari": {
+            "ar": "يَرْضَى",
+            "de": "er ist zufrieden"
+          },
+          "masdar": {
+            "ar": "رِضْوَانًا",
+            "de": "die Zufriedenheit (Masdar)"
+          },
+          "ism": {
+            "ar": "رَاضٍ",
+            "de": "Zufriedener (Ism Fa'il)"
+          }
+        },
+        "passiv": {
+          "madhi": {
+            "ar": "رُضِيَ",
+            "de": "man war mit ihm zufrieden"
+          },
+          "mudari": {
+            "ar": "يُرْضَى",
+            "de": "man ist mit ihm zufrieden"
+          },
+          "masdar": {
+            "ar": "رِضْوَانًا",
+            "de": "die Zufriedenheit (Masdar)"
+          },
+          "ism": {
+            "ar": "مَرْضِيٌّ",
+            "de": "Gebilligter (Ism Maf'ul)"
+          }
+        },
+        "imperativ": {
+          "madhi": {
+            "ar": "اِرْضَ",
+            "de": "Sei zufrieden!"
+          },
+          "mudari": {
+            "ar": "لَا تَرْضَ",
+            "de": "Sei nicht zufrieden!"
+          },
+          "ism": {
+            "ar": "مَرْضَى",
+            "de": "Ort/Zustand der Zufriedenheit (Ableitung, Ism Makan/Zaman)"
+          }
+        }
+      },
+      "notes": [
+        "Gleiche Tabellenstruktur wie die Mahmooz-Bab-Tabellen in paradigmen-verben.json (3 Zeilen x 4 Spalten, keine gedruckten Kopfzeilen im Original; die Spalte 'fahuwa' (فَهُوَ) wurde als reine Lese-Einleitungsfloskel weggelassen). Zeile 'Aktiv' = Madhi/Mudari/Masdar/Ism Fa'il, Zeile 'Passiv' = die passiven Gegenstücke, Zeile 'Imperativ' = Amr/Nahy sowie eine weitere Ableitung (Ism Makan/Zaman bei Form I, sonst dieselbe Ism-Maf'ul-Form wie in der Passiv-Zeile).",
+        "In 'imperativ'/'masdar' gibt es im Original keine Zelle — daher hier ausgelassen statt geraten.",
+        "Zeichengenau aus dem gerenderten Seitenbild von handout.pdf S. 117 (Abbildung 85, Tabellen-Bbox per PyMuPDF find_tables ermittelt) bei 12- bis 80-fachem Zoom, zellenweise zugeschnitten, gelesen."
+      ],
+      "source": {
+        "file": "handout.pdf",
+        "page": 117
+      }
+    },
+    {
+      "id": "bab-daraba-naqis-rama",
+      "kind": "verb",
+      "titleDe": "Bab Daraba (Naqis) — رَمَى (werfen)",
+      "termAr": "رَمَى",
+      "columns": [
+        {
+          "id": "madhi",
+          "labelDe": "Madhi / Amr"
+        },
+        {
+          "id": "mudari",
+          "labelDe": "Mudari / Nahy"
+        },
+        {
+          "id": "masdar",
+          "labelDe": "Masdar"
+        },
+        {
+          "id": "ism",
+          "labelDe": "Ism (Fa'il / Maf'ul / Ableitung)"
+        }
+      ],
+      "rows": [
+        {
+          "id": "aktiv",
+          "labelDe": "Aktiv"
+        },
+        {
+          "id": "passiv",
+          "labelDe": "Passiv"
+        },
+        {
+          "id": "imperativ",
+          "labelDe": "Imperativ (Amr/Nahy)"
+        }
+      ],
+      "cells": {
+        "aktiv": {
+          "madhi": {
+            "ar": "رَمَى",
+            "de": "er warf"
+          },
+          "mudari": {
+            "ar": "يَرْمِي",
+            "de": "er wirft"
+          },
+          "masdar": {
+            "ar": "رَمْيًا",
+            "de": "das Werfen (Masdar)"
+          },
+          "ism": {
+            "ar": "رَامٍ",
+            "de": "Werfender (Ism Fa'il)"
+          }
+        },
+        "passiv": {
+          "madhi": {
+            "ar": "رُمِيَ",
+            "de": "es wurde geworfen"
+          },
+          "mudari": {
+            "ar": "يُرْمَى",
+            "de": "es wird geworfen"
+          },
+          "masdar": {
+            "ar": "رَمْيًا",
+            "de": "das Werfen (Masdar)"
+          },
+          "ism": {
+            "ar": "مَرْمِيٌّ",
+            "de": "Geworfenes (Ism Maf'ul)"
+          }
+        },
+        "imperativ": {
+          "madhi": {
+            "ar": "اِرْمِ",
+            "de": "Wirf!"
+          },
+          "mudari": {
+            "ar": "لَا تَرْمِ",
+            "de": "Wirf nicht!"
+          },
+          "ism": {
+            "ar": "مَرْمَى",
+            "de": "Ort/Ziel des Werfens (Ableitung, Ism Makan/Zaman)"
+          }
+        }
+      },
+      "notes": [
+        "Gleiche Tabellenstruktur wie die Mahmooz-Bab-Tabellen in paradigmen-verben.json (3 Zeilen x 4 Spalten, keine gedruckten Kopfzeilen im Original; die Spalte 'fahuwa' (فَهُوَ) wurde als reine Lese-Einleitungsfloskel weggelassen). Zeile 'Aktiv' = Madhi/Mudari/Masdar/Ism Fa'il, Zeile 'Passiv' = die passiven Gegenstücke, Zeile 'Imperativ' = Amr/Nahy sowie eine weitere Ableitung (Ism Makan/Zaman bei Form I, sonst dieselbe Ism-Maf'ul-Form wie in der Passiv-Zeile).",
+        "In 'imperativ'/'masdar' gibt es im Original keine Zelle — daher hier ausgelassen statt geraten.",
+        "Zeichengenau aus dem gerenderten Seitenbild von handout.pdf S. 117 (Abbildung 86, Tabellen-Bbox per PyMuPDF find_tables ermittelt) bei 12- bis 80-fachem Zoom, zellenweise zugeschnitten, gelesen."
+      ],
+      "source": {
+        "file": "handout.pdf",
+        "page": 117
+      }
+    },
+    {
+      "id": "bab-nasara-naqis-daa",
+      "kind": "verb",
+      "titleDe": "Bab Nasara (Naqis) — دَعَا (rufen)",
+      "termAr": "دَعَا",
+      "columns": [
+        {
+          "id": "madhi",
+          "labelDe": "Madhi / Amr"
+        },
+        {
+          "id": "mudari",
+          "labelDe": "Mudari / Nahy"
+        },
+        {
+          "id": "masdar",
+          "labelDe": "Masdar"
+        },
+        {
+          "id": "ism",
+          "labelDe": "Ism (Fa'il / Maf'ul / Ableitung)"
+        }
+      ],
+      "rows": [
+        {
+          "id": "aktiv",
+          "labelDe": "Aktiv"
+        },
+        {
+          "id": "passiv",
+          "labelDe": "Passiv"
+        },
+        {
+          "id": "imperativ",
+          "labelDe": "Imperativ (Amr/Nahy)"
+        }
+      ],
+      "cells": {
+        "aktiv": {
+          "madhi": {
+            "ar": "دَعَا",
+            "de": "er rief"
+          },
+          "mudari": {
+            "ar": "يَدْعُو",
+            "de": "er ruft"
+          },
+          "masdar": {
+            "ar": "دُعَاءً",
+            "de": "das Rufen/der Ruf (Masdar)"
+          },
+          "ism": {
+            "ar": "دَاعٍ",
+            "de": "Rufender (Ism Fa'il)"
+          }
+        },
+        "passiv": {
+          "madhi": {
+            "ar": "دُعِيَ",
+            "de": "er wurde gerufen"
+          },
+          "mudari": {
+            "ar": "يُدْعَى",
+            "de": "er wird gerufen"
+          },
+          "masdar": {
+            "ar": "دُعَاءً",
+            "de": "das Rufen/der Ruf (Masdar)"
+          },
+          "ism": {
+            "ar": "مَدْعُوٌّ",
+            "de": "Gerufener (Ism Maf'ul)"
+          }
+        },
+        "imperativ": {
+          "madhi": {
+            "ar": "اُدْعُ",
+            "de": "Ruf!"
+          },
+          "mudari": {
+            "ar": "لَا تَدْعُ",
+            "de": "Ruf nicht!"
+          },
+          "ism": {
+            "ar": "مَدْعًى",
+            "de": "Ort/Anlass des Rufens (Ableitung, Ism Makan/Zaman)"
+          }
+        }
+      },
+      "notes": [
+        "Gleiche Tabellenstruktur wie die Mahmooz-Bab-Tabellen in paradigmen-verben.json (3 Zeilen x 4 Spalten, keine gedruckten Kopfzeilen im Original; die Spalte 'fahuwa' (فَهُوَ) wurde als reine Lese-Einleitungsfloskel weggelassen). Zeile 'Aktiv' = Madhi/Mudari/Masdar/Ism Fa'il, Zeile 'Passiv' = die passiven Gegenstücke, Zeile 'Imperativ' = Amr/Nahy sowie eine weitere Ableitung (Ism Makan/Zaman bei Form I, sonst dieselbe Ism-Maf'ul-Form wie in der Passiv-Zeile).",
+        "In 'imperativ'/'masdar' gibt es im Original keine Zelle — daher hier ausgelassen statt geraten.",
+        "Zeichengenau aus dem gerenderten Seitenbild von handout.pdf S. 117 (Abbildung 87, Tabellen-Bbox per PyMuPDF find_tables ermittelt) bei 12- bis 80-fachem Zoom, zellenweise zugeschnitten, gelesen."
+      ],
+      "source": {
+        "file": "handout.pdf",
+        "page": 117
+      }
+    },
+    {
+      "id": "bab-tafil2-naqis-salla",
+      "kind": "verb",
+      "titleDe": "Bab Taf'il II (Naqis) — صَلَّى (beten)",
+      "termAr": "صَلَّى",
+      "columns": [
+        {
+          "id": "madhi",
+          "labelDe": "Madhi / Amr"
+        },
+        {
+          "id": "mudari",
+          "labelDe": "Mudari / Nahy"
+        },
+        {
+          "id": "masdar",
+          "labelDe": "Masdar"
+        },
+        {
+          "id": "ism",
+          "labelDe": "Ism (Fa'il / Maf'ul / Ableitung)"
+        }
+      ],
+      "rows": [
+        {
+          "id": "aktiv",
+          "labelDe": "Aktiv"
+        },
+        {
+          "id": "passiv",
+          "labelDe": "Passiv"
+        },
+        {
+          "id": "imperativ",
+          "labelDe": "Imperativ (Amr/Nahy)"
+        }
+      ],
+      "cells": {
+        "aktiv": {
+          "madhi": {
+            "ar": "صَلَّى",
+            "de": "er betete"
+          },
+          "mudari": {
+            "ar": "يُصَلِّي",
+            "de": "er betet"
+          },
+          "masdar": {
+            "ar": "تَصْلِيَةً",
+            "de": "das Beten (Masdar)"
+          },
+          "ism": {
+            "ar": "مُصَلٍّ",
+            "de": "Betender (Ism Fa'il)"
+          }
+        },
+        "passiv": {
+          "madhi": {
+            "ar": "صُلِّيَ",
+            "de": "für ihn wurde gebetet"
+          },
+          "mudari": {
+            "ar": "يُصَلَّى",
+            "de": "für ihn wird gebetet"
+          },
+          "masdar": {
+            "ar": "تَصْلِيَةً",
+            "de": "das Beten (Masdar)"
+          },
+          "ism": {
+            "ar": "مُصَلًّى",
+            "de": "Gebetsstätte (Ism Maf'ul)"
+          }
+        },
+        "imperativ": {
+          "madhi": {
+            "ar": "صَلِّ",
+            "de": "Bete!"
+          },
+          "mudari": {
+            "ar": "لَا تُصَلِّ",
+            "de": "Bete nicht!"
+          },
+          "ism": {
+            "ar": "مُصَلَّى",
+            "de": "Gebetsplatz (Ableitung, dieselbe Ism-Maf'ul-Form)"
+          }
+        }
+      },
+      "notes": [
+        "Gleiche Tabellenstruktur wie die Mahmooz-Bab-Tabellen in paradigmen-verben.json (3 Zeilen x 4 Spalten, keine gedruckten Kopfzeilen im Original; die Spalte 'fahuwa' (فَهُوَ) wurde als reine Lese-Einleitungsfloskel weggelassen). Zeile 'Aktiv' = Madhi/Mudari/Masdar/Ism Fa'il, Zeile 'Passiv' = die passiven Gegenstücke, Zeile 'Imperativ' = Amr/Nahy sowie eine weitere Ableitung (Ism Makan/Zaman bei Form I, sonst dieselbe Ism-Maf'ul-Form wie in der Passiv-Zeile).",
+        "In 'imperativ'/'masdar' gibt es im Original keine Zelle — daher hier ausgelassen statt geraten.",
+        "Zeichengenau aus dem gerenderten Seitenbild von handout.pdf S. 117 (Abbildung 88, Tabellen-Bbox per PyMuPDF find_tables ermittelt) bei 12- bis 80-fachem Zoom, zellenweise zugeschnitten, gelesen."
+      ],
+      "source": {
+        "file": "handout.pdf",
+        "page": 117
+      }
+    },
+    {
+      "id": "bab-mufaala3-naqis-nada",
+      "kind": "verb",
+      "titleDe": "Bab Mufa'ala III (Naqis) — نَادَى (zurufen)",
+      "termAr": "نَادَى",
+      "columns": [
+        {
+          "id": "madhi",
+          "labelDe": "Madhi / Amr"
+        },
+        {
+          "id": "mudari",
+          "labelDe": "Mudari / Nahy"
+        },
+        {
+          "id": "masdar",
+          "labelDe": "Masdar"
+        },
+        {
+          "id": "ism",
+          "labelDe": "Ism (Fa'il / Maf'ul / Ableitung)"
+        }
+      ],
+      "rows": [
+        {
+          "id": "aktiv",
+          "labelDe": "Aktiv"
+        },
+        {
+          "id": "passiv",
+          "labelDe": "Passiv"
+        },
+        {
+          "id": "imperativ",
+          "labelDe": "Imperativ (Amr/Nahy)"
+        }
+      ],
+      "cells": {
+        "aktiv": {
+          "madhi": {
+            "ar": "نَادَى",
+            "de": "er rief (jemandem) zu"
+          },
+          "mudari": {
+            "ar": "يُنَادِي",
+            "de": "er ruft zu"
+          },
+          "masdar": {
+            "ar": "مُنَادَاةً",
+            "de": "das Zurufen (Masdar)"
+          },
+          "ism": {
+            "ar": "مُنَادٍ",
+            "de": "Ausrufer (Ism Fa'il)"
+          }
+        },
+        "passiv": {
+          "madhi": {
+            "ar": "نُودِيَ",
+            "de": "ihm wurde zugerufen"
+          },
+          "mudari": {
+            "ar": "يُنَادَى",
+            "de": "ihm wird zugerufen"
+          },
+          "masdar": {
+            "ar": "مُنَادَاةً",
+            "de": "das Zurufen (Masdar)"
+          },
+          "ism": {
+            "ar": "مُنَادًى",
+            "de": "Angerufener (Ism Maf'ul)"
+          }
+        },
+        "imperativ": {
+          "madhi": {
+            "ar": "نَادِ",
+            "de": "Ruf zu!"
+          },
+          "mudari": {
+            "ar": "لَا تُنَادِ",
+            "de": "Ruf nicht zu!"
+          },
+          "ism": {
+            "ar": "مُنَادًى",
+            "de": "Ort des Zurufens (Ableitung, dieselbe Ism-Maf'ul-Form)"
+          }
+        }
+      },
+      "notes": [
+        "Gleiche Tabellenstruktur wie die Mahmooz-Bab-Tabellen in paradigmen-verben.json (3 Zeilen x 4 Spalten, keine gedruckten Kopfzeilen im Original; die Spalte 'fahuwa' (فَهُوَ) wurde als reine Lese-Einleitungsfloskel weggelassen). Zeile 'Aktiv' = Madhi/Mudari/Masdar/Ism Fa'il, Zeile 'Passiv' = die passiven Gegenstücke, Zeile 'Imperativ' = Amr/Nahy sowie eine weitere Ableitung (Ism Makan/Zaman bei Form I, sonst dieselbe Ism-Maf'ul-Form wie in der Passiv-Zeile).",
+        "In 'imperativ'/'masdar' gibt es im Original keine Zelle — daher hier ausgelassen statt geraten.",
+        "Zeichengenau aus dem gerenderten Seitenbild von handout.pdf S. 118 (Abbildung 89, Tabellen-Bbox per PyMuPDF find_tables ermittelt) bei 12- bis 80-fachem Zoom, zellenweise zugeschnitten, gelesen."
+      ],
+      "source": {
+        "file": "handout.pdf",
+        "page": 118
+      }
+    },
+    {
+      "id": "bab-ifal4-naqis-abqa",
+      "kind": "verb",
+      "titleDe": "Bab If'al IV (Naqis) — أَبْقَى (belassen, bewahren)",
+      "termAr": "أَبْقَى",
+      "columns": [
+        {
+          "id": "madhi",
+          "labelDe": "Madhi / Amr"
+        },
+        {
+          "id": "mudari",
+          "labelDe": "Mudari / Nahy"
+        },
+        {
+          "id": "masdar",
+          "labelDe": "Masdar"
+        },
+        {
+          "id": "ism",
+          "labelDe": "Ism (Fa'il / Maf'ul / Ableitung)"
+        }
+      ],
+      "rows": [
+        {
+          "id": "aktiv",
+          "labelDe": "Aktiv"
+        },
+        {
+          "id": "passiv",
+          "labelDe": "Passiv"
+        },
+        {
+          "id": "imperativ",
+          "labelDe": "Imperativ (Amr/Nahy)"
+        }
+      ],
+      "cells": {
+        "aktiv": {
+          "madhi": {
+            "ar": "أَبْقَى",
+            "de": "er beließ"
+          },
+          "mudari": {
+            "ar": "يُبْقِي",
+            "de": "er belässt"
+          },
+          "masdar": {
+            "ar": "إِبْقَاءً",
+            "de": "das Belassen (Masdar)"
+          },
+          "ism": {
+            "ar": "مُبْقٍ",
+            "de": "Belassender (Ism Fa'il)"
+          }
+        },
+        "passiv": {
+          "madhi": {
+            "ar": "أُبْقِيَ",
+            "de": "es wurde belassen"
+          },
+          "mudari": {
+            "ar": "يُبْقَى",
+            "de": "es wird belassen"
+          },
+          "masdar": {
+            "ar": "إِبْقَاءً",
+            "de": "das Belassen (Masdar)"
+          },
+          "ism": {
+            "ar": "مُبْقًى",
+            "de": "Belassenes (Ism Maf'ul)"
+          }
+        },
+        "imperativ": {
+          "madhi": {
+            "ar": "أَبْقِ",
+            "de": "Belasse!"
+          },
+          "mudari": {
+            "ar": "لَا تُبْقِ",
+            "de": "Belasse nicht!"
+          },
+          "ism": {
+            "ar": "مُبْقَى",
+            "de": "Ort/Zustand des Belassens (Ableitung, dieselbe Ism-Maf'ul-Form)"
+          }
+        }
+      },
+      "notes": [
+        "Gleiche Tabellenstruktur wie die Mahmooz-Bab-Tabellen in paradigmen-verben.json (3 Zeilen x 4 Spalten, keine gedruckten Kopfzeilen im Original; die Spalte 'fahuwa' (فَهُوَ) wurde als reine Lese-Einleitungsfloskel weggelassen). Zeile 'Aktiv' = Madhi/Mudari/Masdar/Ism Fa'il, Zeile 'Passiv' = die passiven Gegenstücke, Zeile 'Imperativ' = Amr/Nahy sowie eine weitere Ableitung (Ism Makan/Zaman bei Form I, sonst dieselbe Ism-Maf'ul-Form wie in der Passiv-Zeile).",
+        "In 'imperativ'/'masdar' gibt es im Original keine Zelle — daher hier ausgelassen statt geraten.",
+        "Zeichengenau aus dem gerenderten Seitenbild von handout.pdf S. 118 (Abbildung 90, Tabellen-Bbox per PyMuPDF find_tables ermittelt) bei 12- bis 80-fachem Zoom, zellenweise zugeschnitten, gelesen."
+      ],
+      "source": {
+        "file": "handout.pdf",
+        "page": 118
+      }
+    },
+    {
+      "id": "bab-tafaul5-naqis-talaqqa",
+      "kind": "verb",
+      "titleDe": "Bab Tafa\"ul V (Naqis) — تَلَقَّى (empfangen, entgegennehmen)",
+      "termAr": "تَلَقَّى",
+      "columns": [
+        {
+          "id": "madhi",
+          "labelDe": "Madhi / Amr"
+        },
+        {
+          "id": "mudari",
+          "labelDe": "Mudari / Nahy"
+        },
+        {
+          "id": "masdar",
+          "labelDe": "Masdar"
+        },
+        {
+          "id": "ism",
+          "labelDe": "Ism (Fa'il / Maf'ul / Ableitung)"
+        }
+      ],
+      "rows": [
+        {
+          "id": "aktiv",
+          "labelDe": "Aktiv"
+        },
+        {
+          "id": "passiv",
+          "labelDe": "Passiv"
+        },
+        {
+          "id": "imperativ",
+          "labelDe": "Imperativ (Amr/Nahy)"
+        }
+      ],
+      "cells": {
+        "aktiv": {
+          "madhi": {
+            "ar": "تَلَقَّى",
+            "de": "er empfing"
+          },
+          "mudari": {
+            "ar": "يَتَلَقَّى",
+            "de": "er empfängt"
+          },
+          "masdar": {
+            "ar": "تَلَقِّيًا",
+            "de": "das Empfangen (Masdar)"
+          },
+          "ism": {
+            "ar": "مُتَلَقٍّ",
+            "de": "Empfangender (Ism Fa'il)"
+          }
+        },
+        "passiv": {
+          "madhi": {
+            "ar": "تُلُقِّيَ",
+            "de": "es wurde empfangen"
+          },
+          "mudari": {
+            "ar": "يُتَلَقَّى",
+            "de": "es wird empfangen"
+          },
+          "masdar": {
+            "ar": "تَلَقِّيًا",
+            "de": "das Empfangen (Masdar)"
+          },
+          "ism": {
+            "ar": "مُتَلَقًّى",
+            "de": "Empfangenes (Ism Maf'ul)"
+          }
+        },
+        "imperativ": {
+          "madhi": {
+            "ar": "تَلَقَّ",
+            "de": "Empfange!"
+          },
+          "mudari": {
+            "ar": "لَا تَتَلَقَّ",
+            "de": "Empfange nicht!"
+          },
+          "ism": {
+            "ar": "مُتَلَقًّى",
+            "de": "Ableitung, dieselbe Ism-Maf'ul-Form"
+          }
+        }
+      },
+      "notes": [
+        "Gleiche Tabellenstruktur wie die Mahmooz-Bab-Tabellen in paradigmen-verben.json (3 Zeilen x 4 Spalten, keine gedruckten Kopfzeilen im Original; die Spalte 'fahuwa' (فَهُوَ) wurde als reine Lese-Einleitungsfloskel weggelassen). Zeile 'Aktiv' = Madhi/Mudari/Masdar/Ism Fa'il, Zeile 'Passiv' = die passiven Gegenstücke, Zeile 'Imperativ' = Amr/Nahy sowie eine weitere Ableitung (Ism Makan/Zaman bei Form I, sonst dieselbe Ism-Maf'ul-Form wie in der Passiv-Zeile).",
+        "In 'imperativ'/'masdar' gibt es im Original keine Zelle — daher hier ausgelassen statt geraten.",
+        "Wurzel ل-ق-ي, Bab Tafa\"ul (V, تَفَعُّل — reflexiv zu Taf'il II): Madhi/Mudari/Masdar/Ism tragen durchgehend Shadda auf dem Qaf (تَلَقَّى, يَتَلَقَّى, تَلَقِّيًا, مُتَلَقٍّ/مُتَلَقًّى) — bei ≥60-fachem Zoom von der optisch sehr ähnlichen, aber Shadda-losen Nachbartabelle (Bab Tafa'ul VI, Abbildung 92) unterschieden.",
+        "Zeichengenau aus dem gerenderten Seitenbild von handout.pdf S. 118 (Abbildung 91, Tabellen-Bbox per PyMuPDF find_tables ermittelt) bei 12- bis 80-fachem Zoom, zellenweise zugeschnitten, gelesen."
+      ],
+      "source": {
+        "file": "handout.pdf",
+        "page": 118
+      }
+    },
+    {
+      "id": "bab-tafaul6-naqis-talaqa",
+      "kind": "verb",
+      "titleDe": "Bab Tafa'ul VI (Naqis) — تَلَقَى (wie im Original gedruckt, ohne Shadda)",
+      "termAr": "تَلَقَى",
+      "columns": [
+        {
+          "id": "madhi",
+          "labelDe": "Madhi / Amr"
+        },
+        {
+          "id": "mudari",
+          "labelDe": "Mudari / Nahy"
+        },
+        {
+          "id": "masdar",
+          "labelDe": "Masdar"
+        },
+        {
+          "id": "ism",
+          "labelDe": "Ism (Fa'il / Maf'ul / Ableitung)"
+        }
+      ],
+      "rows": [
+        {
+          "id": "aktiv",
+          "labelDe": "Aktiv"
+        },
+        {
+          "id": "passiv",
+          "labelDe": "Passiv"
+        },
+        {
+          "id": "imperativ",
+          "labelDe": "Imperativ (Amr/Nahy)"
+        }
+      ],
+      "cells": {
+        "aktiv": {
+          "madhi": {
+            "ar": "تَلَقَى",
+            "de": "(wie im Original gedruckt, siehe Notes)"
+          },
+          "mudari": {
+            "ar": "يَتَلَقَى",
+            "de": "(wie im Original gedruckt, siehe Notes)"
+          },
+          "masdar": {
+            "ar": "تَلَقِيًا",
+            "de": "(wie im Original gedruckt, siehe Notes)"
+          },
+          "ism": {
+            "ar": "مُتَلَقٍ",
+            "de": "(wie im Original gedruckt, siehe Notes)"
+          }
+        },
+        "passiv": {
+          "madhi": {
+            "ar": "تُلُووِيَ",
+            "de": "(wie im Original gedruckt, siehe Notes)"
+          },
+          "mudari": {
+            "ar": "يُتَلَقَى",
+            "de": "(wie im Original gedruckt, siehe Notes)"
+          },
+          "masdar": {
+            "ar": "تَلَقِيًا",
+            "de": "(wie im Original gedruckt, siehe Notes)"
+          },
+          "ism": {
+            "ar": "مُتَلَقَّى",
+            "de": "(wie im Original gedruckt, siehe Notes)"
+          }
+        },
+        "imperativ": {
+          "madhi": {
+            "ar": "تَلَقَ",
+            "de": "(wie im Original gedruckt, siehe Notes)"
+          },
+          "mudari": {
+            "ar": "لَا تَتَلَقَ",
+            "de": "(wie im Original gedruckt, siehe Notes)"
+          },
+          "ism": {
+            "ar": "مُتَلَقَّى",
+            "de": "(wie im Original gedruckt, siehe Notes)"
+          }
+        }
+      },
+      "notes": [
+        "Gleiche Tabellenstruktur wie die Mahmooz-Bab-Tabellen in paradigmen-verben.json (3 Zeilen x 4 Spalten, keine gedruckten Kopfzeilen im Original; die Spalte 'fahuwa' (فَهُوَ) wurde als reine Lese-Einleitungsfloskel weggelassen). Zeile 'Aktiv' = Madhi/Mudari/Masdar/Ism Fa'il, Zeile 'Passiv' = die passiven Gegenstücke, Zeile 'Imperativ' = Amr/Nahy sowie eine weitere Ableitung (Ism Makan/Zaman bei Form I, sonst dieselbe Ism-Maf'ul-Form wie in der Passiv-Zeile).",
+        "In 'imperativ'/'masdar' gibt es im Original keine Zelle — daher hier ausgelassen statt geraten.",
+        "ACHTUNG — dokumentierte Unstimmigkeit im Original (Abbildung 92, S. 118): Madhi/Mudari/Masdar/Ism der Aktiv- und der Imperativ-Zeile sind im gedruckten Bild BUCHSTABENGLEICH mit der benachbarten Tabelle bab-tafaul5-naqis-talaqqa (Wurzel ل-ق-ي), jedoch ohne die dortigen Shadda-Zeichen — bei ≥60- bis 80-fachem Zoom mehrfach gegengeprüft: kein Schadda auf dem Qaf, kein Alif zwischen Lam und Qaf. Die Passiv-Madhi-Zelle dagegen lautet تُلُووِيَ (zwei getrennte Waw-Buchstaben, ebenfalls bei ≥40-fachem Zoom verifiziert) — das ist exakt das Muster, das die Lafif-Tabelle bab-tafaul6-lafif-tadawa (Wurzel د-و-ي, Bab Tafa'ul VI) für ihre Passiv-Madhi-Form تُدُووِيَ zeigt (Infix-Waw + Wurzel-Waw der Form VI-Passiv فُوعِلَ-Erweiterung تُفَاعَلَ). Das deutlich davon abweichende Aktiv-Madhi تَلَقَى (Wurzel ل-ق-ي, kein و als 2. Radikal) passt nicht zu diesem Passiv-Muster. Es handelt sich damit sehr wahrscheinlich um einen Fehler/eine Verwechslung im Original-Handout (falsches Beispiel für die Passiv-Zeile übernommen), NICHT um einen Lese- oder Übertragungsfehler dieser Extraktion: jede einzelne Zelle wurde zeichengenau wie gedruckt übernommen, nichts wurde geraten oder stillschweigend korrigiert.",
+        "Wegen dieser Unstimmigkeit wird diese Tabelle in der Korpus-Gegenprobe des zugehörigen Tests mit einer eigenen (großzügigen) Ausnahmeliste behandelt statt mit der Wurzel ل-ق-ي geprüft.",
+        "Zeichengenau aus dem gerenderten Seitenbild von handout.pdf S. 118 (Abbildung 92, Tabellen-Bbox per PyMuPDF find_tables ermittelt) bei 12- bis 80-fachem Zoom, zellenweise zugeschnitten, gelesen."
+      ],
+      "source": {
+        "file": "handout.pdf",
+        "page": 118
+      }
+    },
+    {
+      "id": "bab-infial7-naqis-inqada",
+      "kind": "verb",
+      "titleDe": "Bab Infi'al VII (Naqis) — اِنْقَضَى (ablaufen, zu Ende gehen)",
+      "termAr": "اِنْقَضَى",
+      "columns": [
+        {
+          "id": "madhi",
+          "labelDe": "Madhi / Amr"
+        },
+        {
+          "id": "mudari",
+          "labelDe": "Mudari / Nahy"
+        },
+        {
+          "id": "masdar",
+          "labelDe": "Masdar"
+        },
+        {
+          "id": "ism",
+          "labelDe": "Ism (Fa'il / Maf'ul / Ableitung)"
+        }
+      ],
+      "rows": [
+        {
+          "id": "aktiv",
+          "labelDe": "Aktiv"
+        },
+        {
+          "id": "passiv",
+          "labelDe": "Passiv"
+        },
+        {
+          "id": "imperativ",
+          "labelDe": "Imperativ (Amr/Nahy)"
+        }
+      ],
+      "cells": {
+        "aktiv": {
+          "madhi": {
+            "ar": "اِنْقَضَى",
+            "de": "er/es lief ab, ging zu Ende"
+          },
+          "mudari": {
+            "ar": "يَنْقَضِي",
+            "de": "er/es läuft ab"
+          },
+          "masdar": {
+            "ar": "اِنْقِضَاءً",
+            "de": "das Ablaufen (Masdar)"
+          },
+          "ism": {
+            "ar": "مُنْقَضٍ",
+            "de": "Ablaufender (Ism Fa'il)"
+          }
+        },
+        "passiv": {
+          "masdar": {
+            "ar": "اِنْقِضَاءً",
+            "de": "das Ablaufen (Masdar) — einzige Zelle der Passiv-Zeile"
+          }
+        },
+        "imperativ": {
+          "madhi": {
+            "ar": "اِنْقَضِ",
+            "de": "Lauf ab!"
+          },
+          "mudari": {
+            "ar": "لَا تَنْقَضِ",
+            "de": "Lauf nicht ab!"
+          }
+        }
+      },
+      "notes": [
+        "Gleiche Tabellenstruktur wie die Mahmooz-Bab-Tabellen in paradigmen-verben.json (3 Zeilen x 4 Spalten, keine gedruckten Kopfzeilen im Original; die Spalte 'fahuwa' (فَهُوَ) wurde als reine Lese-Einleitungsfloskel weggelassen). Zeile 'Aktiv' = Madhi/Mudari/Masdar/Ism Fa'il, Zeile 'Passiv' = die passiven Gegenstücke, Zeile 'Imperativ' = Amr/Nahy sowie eine weitere Ableitung (Ism Makan/Zaman bei Form I, sonst dieselbe Ism-Maf'ul-Form wie in der Passiv-Zeile).",
+        "Form VII (Infi'al) ist grammatisch bereits intransitiv/reflexiv und hat KEINE eigene Passivform. Im Original (Abbildung 93, S. 118) ist die Passiv-Zeile entsprechend fast leer: nur der (mit der Aktiv-Zeile identische) Masdar اِنْقِضَاءً steht zentriert über die ganze Zeile gedruckt, Madhi/Mudari/Ism der Passiv-Zeile fehlen — bei ≥10-fachem Zoom verifiziert (keine weiteren Zeichen in dieser Zeile). Hier daher als einzige Zelle 'masdar' unter 'passiv' abgelegt, alle anderen Passiv-Zellen ausgelassen statt geraten.",
+        "In 'imperativ'/'masdar' und 'imperativ'/'ism' gibt es im Original keine Zelle — daher hier ausgelassen statt geraten.",
+        "Zeichengenau aus dem gerenderten Seitenbild von handout.pdf S. 118 (Abbildung 93, Tabellen-Bbox per PyMuPDF find_tables ermittelt) bei 12- bis 80-fachem Zoom, zellenweise zugeschnitten, gelesen."
+      ],
+      "source": {
+        "file": "handout.pdf",
+        "page": 118
+      }
+    },
+    {
+      "id": "bab-iftial8-naqis-ibtala",
+      "kind": "verb",
+      "titleDe": "Bab Ifti'al VIII (Naqis) — اِبْتَلَى (prüfen, auf die Probe stellen)",
+      "termAr": "اِبْتَلَى",
+      "columns": [
+        {
+          "id": "madhi",
+          "labelDe": "Madhi / Amr"
+        },
+        {
+          "id": "mudari",
+          "labelDe": "Mudari / Nahy"
+        },
+        {
+          "id": "masdar",
+          "labelDe": "Masdar"
+        },
+        {
+          "id": "ism",
+          "labelDe": "Ism (Fa'il / Maf'ul / Ableitung)"
+        }
+      ],
+      "rows": [
+        {
+          "id": "aktiv",
+          "labelDe": "Aktiv"
+        },
+        {
+          "id": "passiv",
+          "labelDe": "Passiv"
+        },
+        {
+          "id": "imperativ",
+          "labelDe": "Imperativ (Amr/Nahy)"
+        }
+      ],
+      "cells": {
+        "aktiv": {
+          "madhi": {
+            "ar": "اِبْتَلَى",
+            "de": "er prüfte"
+          },
+          "mudari": {
+            "ar": "يَبْتَلِي",
+            "de": "er prüft"
+          },
+          "masdar": {
+            "ar": "اِبْتِلَاءً",
+            "de": "das Prüfen (Masdar)"
+          },
+          "ism": {
+            "ar": "مُبْتَلٍ",
+            "de": "Prüfender (Ism Fa'il)"
+          }
+        },
+        "passiv": {
+          "madhi": {
+            "ar": "اُبْتُلِيَ",
+            "de": "er wurde geprüft"
+          },
+          "mudari": {
+            "ar": "يُبْتَلَى",
+            "de": "er wird geprüft"
+          },
+          "masdar": {
+            "ar": "اِبْتِلَاءً",
+            "de": "das Prüfen (Masdar)"
+          },
+          "ism": {
+            "ar": "مُبْتَلًى",
+            "de": "Geprüfter (Ism Maf'ul)"
+          }
+        },
+        "imperativ": {
+          "madhi": {
+            "ar": "اِبْتَلِ",
+            "de": "Prüfe!"
+          },
+          "mudari": {
+            "ar": "لَا تَبْتَلِ",
+            "de": "Prüfe nicht!"
+          },
+          "ism": {
+            "ar": "مُبْتَلَى",
+            "de": "Ableitung, dieselbe Ism-Maf'ul-Form"
+          }
+        }
+      },
+      "notes": [
+        "Gleiche Tabellenstruktur wie die Mahmooz-Bab-Tabellen in paradigmen-verben.json (3 Zeilen x 4 Spalten, keine gedruckten Kopfzeilen im Original; die Spalte 'fahuwa' (فَهُوَ) wurde als reine Lese-Einleitungsfloskel weggelassen). Zeile 'Aktiv' = Madhi/Mudari/Masdar/Ism Fa'il, Zeile 'Passiv' = die passiven Gegenstücke, Zeile 'Imperativ' = Amr/Nahy sowie eine weitere Ableitung (Ism Makan/Zaman bei Form I, sonst dieselbe Ism-Maf'ul-Form wie in der Passiv-Zeile).",
+        "In 'imperativ'/'masdar' gibt es im Original keine Zelle — daher hier ausgelassen statt geraten.",
+        "Zeichengenau aus dem gerenderten Seitenbild von handout.pdf S. 119 (Abbildung 94, Tabellen-Bbox per PyMuPDF find_tables ermittelt) bei 12- bis 80-fachem Zoom, zellenweise zugeschnitten, gelesen."
+      ],
+      "source": {
+        "file": "handout.pdf",
+        "page": 119
+      }
+    },
+    {
+      "id": "bab-istifal10-naqis-istaala",
+      "kind": "verb",
+      "titleDe": "Bab Istif'al X (Naqis) — اِسْتَعْلَى (sich erheben, dominieren)",
+      "termAr": "اِسْتَعْلَى",
+      "columns": [
+        {
+          "id": "madhi",
+          "labelDe": "Madhi / Amr"
+        },
+        {
+          "id": "mudari",
+          "labelDe": "Mudari / Nahy"
+        },
+        {
+          "id": "masdar",
+          "labelDe": "Masdar"
+        },
+        {
+          "id": "ism",
+          "labelDe": "Ism (Fa'il / Maf'ul / Ableitung)"
+        }
+      ],
+      "rows": [
+        {
+          "id": "aktiv",
+          "labelDe": "Aktiv"
+        },
+        {
+          "id": "passiv",
+          "labelDe": "Passiv"
+        },
+        {
+          "id": "imperativ",
+          "labelDe": "Imperativ (Amr/Nahy)"
+        }
+      ],
+      "cells": {
+        "aktiv": {
+          "madhi": {
+            "ar": "اِسْتَعْلَى",
+            "de": "er erhob sich"
+          },
+          "mudari": {
+            "ar": "يَسْتَعْلِي",
+            "de": "er erhebt sich"
+          },
+          "masdar": {
+            "ar": "اِسْتِعْلَاءً",
+            "de": "das Sich-Erheben (Masdar)"
+          },
+          "ism": {
+            "ar": "مُسْتَعْلٍ",
+            "de": "sich Erhebender (Ism Fa'il)"
+          }
+        },
+        "passiv": {
+          "madhi": {
+            "ar": "اُسْتُعْلِيَ",
+            "de": "es wurde überhöht"
+          },
+          "mudari": {
+            "ar": "يُسْتَعْلَى",
+            "de": "es wird überhöht"
+          },
+          "masdar": {
+            "ar": "اِسْتِعْلَاءً",
+            "de": "das Sich-Erheben (Masdar)"
+          },
+          "ism": {
+            "ar": "مُسْتَعْلًى",
+            "de": "Überhöhtes (Ism Maf'ul)"
+          }
+        },
+        "imperativ": {
+          "madhi": {
+            "ar": "اِسْتَعْلِ",
+            "de": "Erhebe dich!"
+          },
+          "mudari": {
+            "ar": "لَا تَسْتَعْلِ",
+            "de": "Erhebe dich nicht!"
+          },
+          "ism": {
+            "ar": "مُسْتَعْلَى",
+            "de": "Ableitung, dieselbe Ism-Maf'ul-Form"
+          }
+        }
+      },
+      "notes": [
+        "Gleiche Tabellenstruktur wie die Mahmooz-Bab-Tabellen in paradigmen-verben.json (3 Zeilen x 4 Spalten, keine gedruckten Kopfzeilen im Original; die Spalte 'fahuwa' (فَهُوَ) wurde als reine Lese-Einleitungsfloskel weggelassen). Zeile 'Aktiv' = Madhi/Mudari/Masdar/Ism Fa'il, Zeile 'Passiv' = die passiven Gegenstücke, Zeile 'Imperativ' = Amr/Nahy sowie eine weitere Ableitung (Ism Makan/Zaman bei Form I, sonst dieselbe Ism-Maf'ul-Form wie in der Passiv-Zeile).",
+        "In 'imperativ'/'masdar' gibt es im Original keine Zelle — daher hier ausgelassen statt geraten.",
+        "Zeichengenau aus dem gerenderten Seitenbild von handout.pdf S. 119 (Abbildung 95, Tabellen-Bbox per PyMuPDF find_tables ermittelt) bei 12- bis 80-fachem Zoom, zellenweise zugeschnitten, gelesen."
+      ],
+      "source": {
+        "file": "handout.pdf",
+        "page": 119
+      }
+    },
+    {
+      "id": "bab-samia-lafif-qawiya",
+      "kind": "verb",
+      "titleDe": "Lafif Maqrun - Bab Sami'a — قَوِيَ (stark sein)",
+      "termAr": "قَوِيَ",
+      "columns": [
+        {
+          "id": "madhi",
+          "labelDe": "Madhi / Amr"
+        },
+        {
+          "id": "mudari",
+          "labelDe": "Mudari / Nahy"
+        },
+        {
+          "id": "masdar",
+          "labelDe": "Masdar"
+        },
+        {
+          "id": "ism",
+          "labelDe": "Ism (Fa'il / Maf'ul / Ableitung)"
+        }
+      ],
+      "rows": [
+        {
+          "id": "aktiv",
+          "labelDe": "Aktiv"
+        },
+        {
+          "id": "passiv",
+          "labelDe": "Passiv"
+        },
+        {
+          "id": "imperativ",
+          "labelDe": "Imperativ (Amr/Nahy)"
+        }
+      ],
+      "cells": {
+        "aktiv": {
+          "madhi": {
+            "ar": "قَوِيَ",
+            "de": "er war stark"
+          },
+          "mudari": {
+            "ar": "يَقْوَى",
+            "de": "er ist stark"
+          },
+          "masdar": {
+            "ar": "قُوَّةً",
+            "de": "die Stärke (Masdar)"
+          },
+          "ism": {
+            "ar": "قَوِيٌّ",
+            "de": "Starker (Ism Fa'il)"
+          }
+        },
+        "passiv": {
+          "madhi": {
+            "ar": "قُوِيَ",
+            "de": "es wurde gestärkt"
+          },
+          "mudari": {
+            "ar": "يُقْوَى",
+            "de": "es wird gestärkt"
+          },
+          "masdar": {
+            "ar": "قُوَّةً",
+            "de": "die Stärke (Masdar)"
+          },
+          "ism": {
+            "ar": "مَقْوِيٌّ",
+            "de": "Gestärkter (Ism Maf'ul)"
+          }
+        },
+        "imperativ": {
+          "madhi": {
+            "ar": "اِقْوَ",
+            "de": "Sei stark!"
+          },
+          "mudari": {
+            "ar": "لَا تَقْوَ",
+            "de": "Sei nicht stark!"
+          }
+        }
+      },
+      "notes": [
+        "Kapitel 8.8 (Lafif — Verben mit zwei schwachen Radikalen) behandelt Lafif Maqrun (2./3. Radikal schwach) und Lafif Mafruq (1./3. Radikal schwach) mit denselben 3x4-Bab-Tabellen wie der Naqis-Abschnitt. Gleiche Tabellenstruktur wie die Mahmooz-Bab-Tabellen in paradigmen-verben.json (3 Zeilen x 4 Spalten, keine gedruckten Kopfzeilen im Original; die Spalte 'fahuwa' (فَهُوَ) wurde als reine Lese-Einleitungsfloskel weggelassen). Zeile 'Aktiv' = Madhi/Mudari/Masdar/Ism Fa'il, Zeile 'Passiv' = die passiven Gegenstücke, Zeile 'Imperativ' = Amr/Nahy sowie eine weitere Ableitung (Ism Makan/Zaman bei Form I, sonst dieselbe Ism-Maf'ul-Form wie in der Passiv-Zeile).",
+        "Abweichend von den Mahmooz-/Naqis-Bab-Tabellen hat die Imperativ-Zeile hier im Original KEINE dritte Zelle (keine Ism-Makan/Zaman- bzw. wiederverwendete Ism-Maf'ul-Ableitung) — bei allen zwölf Lafif-Tabellen (Abbildungen 96-107) so geprüft: die Imperativ-Zeile enthält ausschließlich Madhi (Amr) und Mudari (Nahy), die Ism-Spalte bleibt dort leer. Daher fehlt bei allen Lafif-Bab-Tabellen der Schlüssel 'ism' unter 'imperativ' komplett (nicht nur der Wert null).",
+        "Wurzel قوي ist Lafif Maqrun (2. Radikal و, 3. Radikal ي, beide schwach), wie in der Einführung auf S. 119 mit demselben Beispielverb erläutert.",
+        "Zeichengenau aus dem gerenderten Seitenbild von handout.pdf S. 120 (Abbildung 96, Tabellen-Bbox per PyMuPDF find_tables ermittelt) bei 12- bis 80-fachem Zoom, zellenweise zugeschnitten, gelesen."
+      ],
+      "source": {
+        "file": "handout.pdf",
+        "page": 120
+      }
+    },
+    {
+      "id": "bab-daraba-lafif-rawa",
+      "kind": "verb",
+      "titleDe": "Lafif Maqrun - Bab Daraba — رَوَى (berichten, überliefern)",
+      "termAr": "رَوَى",
+      "columns": [
+        {
+          "id": "madhi",
+          "labelDe": "Madhi / Amr"
+        },
+        {
+          "id": "mudari",
+          "labelDe": "Mudari / Nahy"
+        },
+        {
+          "id": "masdar",
+          "labelDe": "Masdar"
+        },
+        {
+          "id": "ism",
+          "labelDe": "Ism (Fa'il / Maf'ul / Ableitung)"
+        }
+      ],
+      "rows": [
+        {
+          "id": "aktiv",
+          "labelDe": "Aktiv"
+        },
+        {
+          "id": "passiv",
+          "labelDe": "Passiv"
+        },
+        {
+          "id": "imperativ",
+          "labelDe": "Imperativ (Amr/Nahy)"
+        }
+      ],
+      "cells": {
+        "aktiv": {
+          "madhi": {
+            "ar": "رَوَى",
+            "de": "er berichtete"
+          },
+          "mudari": {
+            "ar": "يَرْوِي",
+            "de": "er berichtet"
+          },
+          "masdar": {
+            "ar": "رِوَايَةً",
+            "de": "der Bericht/die Überlieferung (Masdar)"
+          },
+          "ism": {
+            "ar": "رَاوٍ",
+            "de": "Überliefernder (Ism Fa'il)"
+          }
+        },
+        "passiv": {
+          "madhi": {
+            "ar": "رُوِيَ",
+            "de": "es wurde überliefert"
+          },
+          "mudari": {
+            "ar": "يُرْوَى",
+            "de": "es wird überliefert"
+          },
+          "masdar": {
+            "ar": "رِوَايَةً",
+            "de": "der Bericht/die Überlieferung (Masdar)"
+          },
+          "ism": {
+            "ar": "مَرْوِيٌّ",
+            "de": "Überliefertes (Ism Maf'ul)"
+          }
+        },
+        "imperativ": {
+          "madhi": {
+            "ar": "اِرْوِ",
+            "de": "Berichte!"
+          },
+          "mudari": {
+            "ar": "لَا تَرْوِ",
+            "de": "Berichte nicht!"
+          }
+        }
+      },
+      "notes": [
+        "Gleiche Tabellenstruktur wie die Mahmooz-Bab-Tabellen in paradigmen-verben.json (3 Zeilen x 4 Spalten, keine gedruckten Kopfzeilen im Original; die Spalte 'fahuwa' (فَهُوَ) wurde als reine Lese-Einleitungsfloskel weggelassen). Zeile 'Aktiv' = Madhi/Mudari/Masdar/Ism Fa'il, Zeile 'Passiv' = die passiven Gegenstücke, Zeile 'Imperativ' = Amr/Nahy sowie eine weitere Ableitung (Ism Makan/Zaman bei Form I, sonst dieselbe Ism-Maf'ul-Form wie in der Passiv-Zeile).",
+        "Imperativ-Zeile hat im Original keine Ism-Zelle (siehe Notiz bei bab-samia-lafif-qawiya) — Schlüssel 'ism' fehlt unter 'imperativ' komplett.",
+        "Wurzel روي ist Lafif Maqrun (2. Radikal و, 3. Radikal ي).",
+        "Zeichengenau aus dem gerenderten Seitenbild von handout.pdf S. 120 (Abbildung 97, Tabellen-Bbox per PyMuPDF find_tables ermittelt) bei 12- bis 80-fachem Zoom, zellenweise zugeschnitten, gelesen."
+      ],
+      "source": {
+        "file": "handout.pdf",
+        "page": 120
+      }
+    },
+    {
+      "id": "bab-daraba-lafif-wafa",
+      "kind": "verb",
+      "titleDe": "Lafif Mafruq - Bab Daraba — وَفَى (Wort halten, treu sein)",
+      "termAr": "وَفَى",
+      "columns": [
+        {
+          "id": "madhi",
+          "labelDe": "Madhi / Amr"
+        },
+        {
+          "id": "mudari",
+          "labelDe": "Mudari / Nahy"
+        },
+        {
+          "id": "masdar",
+          "labelDe": "Masdar"
+        },
+        {
+          "id": "ism",
+          "labelDe": "Ism (Fa'il / Maf'ul / Ableitung)"
+        }
+      ],
+      "rows": [
+        {
+          "id": "aktiv",
+          "labelDe": "Aktiv"
+        },
+        {
+          "id": "passiv",
+          "labelDe": "Passiv"
+        },
+        {
+          "id": "imperativ",
+          "labelDe": "Imperativ (Amr/Nahy)"
+        }
+      ],
+      "cells": {
+        "aktiv": {
+          "madhi": {
+            "ar": "وَفَى",
+            "de": "er hielt Wort"
+          },
+          "mudari": {
+            "ar": "يَفِي",
+            "de": "er hält Wort"
+          },
+          "masdar": {
+            "ar": "وَفَاءً",
+            "de": "die Treue (Masdar)"
+          },
+          "ism": {
+            "ar": "وَافٍ",
+            "de": "Treuer (Ism Fa'il)"
+          }
+        },
+        "passiv": {
+          "madhi": {
+            "ar": "وُفِيَ",
+            "de": "ihm wurde die Treue gehalten"
+          },
+          "mudari": {
+            "ar": "يُوفَى",
+            "de": "ihm wird die Treue gehalten"
+          },
+          "masdar": {
+            "ar": "وَفَاءً",
+            "de": "die Treue (Masdar)"
+          },
+          "ism": {
+            "ar": "مَوْفِيٌّ",
+            "de": "dem die Treue Gehaltene (Ism Maf'ul)"
+          }
+        },
+        "imperativ": {
+          "madhi": {
+            "ar": "فِ",
+            "de": "Halte Wort!"
+          },
+          "mudari": {
+            "ar": "لَا تَفِ",
+            "de": "Halte nicht Wort!"
+          }
+        }
+      },
+      "notes": [
+        "Gleiche Tabellenstruktur wie die Mahmooz-Bab-Tabellen in paradigmen-verben.json (3 Zeilen x 4 Spalten, keine gedruckten Kopfzeilen im Original; die Spalte 'fahuwa' (فَهُوَ) wurde als reine Lese-Einleitungsfloskel weggelassen). Zeile 'Aktiv' = Madhi/Mudari/Masdar/Ism Fa'il, Zeile 'Passiv' = die passiven Gegenstücke, Zeile 'Imperativ' = Amr/Nahy sowie eine weitere Ableitung (Ism Makan/Zaman bei Form I, sonst dieselbe Ism-Maf'ul-Form wie in der Passiv-Zeile).",
+        "Imperativ-Zeile hat im Original keine Ism-Zelle — Schlüssel 'ism' fehlt unter 'imperativ' komplett.",
+        "Wurzel وفي ist Lafif Mafruq (1. Radikal و, 3. Radikal ي, beide schwach, 2. Radikal ف stark). Laut Einführung (S. 119) unterliegen Mudari/Amr/Nahy der Lafif-Mafruq-Verben vom Bab Daraba zusätzlich dem Hadhf wie Mithal-Verben (Wegfall des ersten Radikals و im Mudari: يَفِي statt *يَوْفِي) — die Amr-Form فِ hat dadurch nur einen einzigen Radikalbuchstaben.",
+        "Zeichengenau aus dem gerenderten Seitenbild von handout.pdf S. 120 (Abbildung 98, Tabellen-Bbox per PyMuPDF find_tables ermittelt) bei 12- bis 80-fachem Zoom, zellenweise zugeschnitten, gelesen."
+      ],
+      "source": {
+        "file": "handout.pdf",
+        "page": 120
+      }
+    },
+    {
+      "id": "bab-hasiba-lafif-waliya",
+      "kind": "verb",
+      "titleDe": "Lafif Mafruq - Bab Hasiba — وَلِيَ (nahestehen, verwalten)",
+      "termAr": "وَلِيَ",
+      "columns": [
+        {
+          "id": "madhi",
+          "labelDe": "Madhi / Amr"
+        },
+        {
+          "id": "mudari",
+          "labelDe": "Mudari / Nahy"
+        },
+        {
+          "id": "masdar",
+          "labelDe": "Masdar"
+        },
+        {
+          "id": "ism",
+          "labelDe": "Ism (Fa'il / Maf'ul / Ableitung)"
+        }
+      ],
+      "rows": [
+        {
+          "id": "aktiv",
+          "labelDe": "Aktiv"
+        },
+        {
+          "id": "passiv",
+          "labelDe": "Passiv"
+        },
+        {
+          "id": "imperativ",
+          "labelDe": "Imperativ (Amr/Nahy)"
+        }
+      ],
+      "cells": {
+        "aktiv": {
+          "madhi": {
+            "ar": "وَلِيَ",
+            "de": "er stand vor, verwaltete"
+          },
+          "mudari": {
+            "ar": "يَلِيْ",
+            "de": "er steht vor, verwaltet"
+          },
+          "masdar": {
+            "ar": "وَلْيًا",
+            "de": "das Verwalten (Masdar)"
+          },
+          "ism": {
+            "ar": "وَالٍ",
+            "de": "Verwalter (Ism Fa'il)"
+          }
+        },
+        "passiv": {
+          "madhi": {
+            "ar": "وُلِيَ",
+            "de": "es wurde verwaltet"
+          },
+          "mudari": {
+            "ar": "يُوْلَى",
+            "de": "es wird verwaltet"
+          },
+          "masdar": {
+            "ar": "وَلْيًا",
+            "de": "das Verwalten (Masdar)"
+          },
+          "ism": {
+            "ar": "مَوْلِيٌّ",
+            "de": "Verwalteter (Ism Maf'ul)"
+          }
+        },
+        "imperativ": {
+          "madhi": {
+            "ar": "لِ",
+            "de": "Verwalte!"
+          },
+          "mudari": {
+            "ar": "لَا تَلِ",
+            "de": "Verwalte nicht!"
+          }
+        }
+      },
+      "notes": [
+        "Gleiche Tabellenstruktur wie die Mahmooz-Bab-Tabellen in paradigmen-verben.json (3 Zeilen x 4 Spalten, keine gedruckten Kopfzeilen im Original; die Spalte 'fahuwa' (فَهُوَ) wurde als reine Lese-Einleitungsfloskel weggelassen). Zeile 'Aktiv' = Madhi/Mudari/Masdar/Ism Fa'il, Zeile 'Passiv' = die passiven Gegenstücke, Zeile 'Imperativ' = Amr/Nahy sowie eine weitere Ableitung (Ism Makan/Zaman bei Form I, sonst dieselbe Ism-Maf'ul-Form wie in der Passiv-Zeile).",
+        "Imperativ-Zeile hat im Original keine Ism-Zelle — Schlüssel 'ism' fehlt unter 'imperativ' komplett.",
+        "Wurzel ولي ist Lafif Mafruq (1. Radikal و, 3. Radikal ي). Wie bei bab-daraba-lafif-wafa unterliegen Mudari/Amr/Nahy zusätzlich dem Hadhf (Wegfall des ersten Radikals و): يَلِي statt *يَوْلِي, Amr لِ mit nur einem Radikalbuchstaben. Der Mudari-Aktiv يَلِيْ trägt im Original ein zusätzliches stehendes Sukun-Zeichen über dem letzten Ya — bei ≥40-fachem Zoom verifiziert, zeichengenau wie gedruckt übernommen (vgl. die auf S. 115 erläuterte uneinheitliche Schreibung schwacher Endbuchstaben bei Naqis/Lafif-Verben).",
+        "Zeichengenau aus dem gerenderten Seitenbild von handout.pdf S. 120 (Abbildung 99, Tabellen-Bbox per PyMuPDF find_tables ermittelt) bei 12- bis 80-fachem Zoom, zellenweise zugeschnitten, gelesen."
+      ],
+      "source": {
+        "file": "handout.pdf",
+        "page": 120
+      }
+    },
+    {
+      "id": "bab-tafil2-lafif-sawwa",
+      "kind": "verb",
+      "titleDe": "Bab Taf'il II (Lafif) — سَوَّى (gleichmachen, ausgleichen)",
+      "termAr": "سَوَّى",
+      "columns": [
+        {
+          "id": "madhi",
+          "labelDe": "Madhi / Amr"
+        },
+        {
+          "id": "mudari",
+          "labelDe": "Mudari / Nahy"
+        },
+        {
+          "id": "masdar",
+          "labelDe": "Masdar"
+        },
+        {
+          "id": "ism",
+          "labelDe": "Ism (Fa'il / Maf'ul / Ableitung)"
+        }
+      ],
+      "rows": [
+        {
+          "id": "aktiv",
+          "labelDe": "Aktiv"
+        },
+        {
+          "id": "passiv",
+          "labelDe": "Passiv"
+        },
+        {
+          "id": "imperativ",
+          "labelDe": "Imperativ (Amr/Nahy)"
+        }
+      ],
+      "cells": {
+        "aktiv": {
+          "madhi": {
+            "ar": "سَوَّى",
+            "de": "er glich aus"
+          },
+          "mudari": {
+            "ar": "يُسَوِّي",
+            "de": "er gleicht aus"
+          },
+          "masdar": {
+            "ar": "تَسْوِيَةً",
+            "de": "der Ausgleich (Masdar)"
+          },
+          "ism": {
+            "ar": "مُسَوٍّ",
+            "de": "Ausgleichender (Ism Fa'il)"
+          }
+        },
+        "passiv": {
+          "madhi": {
+            "ar": "سُوِّيَ",
+            "de": "es wurde ausgeglichen"
+          },
+          "mudari": {
+            "ar": "يُسَوَّى",
+            "de": "es wird ausgeglichen"
+          },
+          "masdar": {
+            "ar": "تَسْوِيَةً",
+            "de": "der Ausgleich (Masdar)"
+          },
+          "ism": {
+            "ar": "مُسَوًّى",
+            "de": "Ausgeglichenes (Ism Maf'ul)"
+          }
+        },
+        "imperativ": {
+          "madhi": {
+            "ar": "سَوِّ",
+            "de": "Gleiche aus!"
+          },
+          "mudari": {
+            "ar": "لَا تُسَوِّ",
+            "de": "Gleiche nicht aus!"
+          }
+        }
+      },
+      "notes": [
+        "Gleiche Tabellenstruktur wie die Mahmooz-Bab-Tabellen in paradigmen-verben.json (3 Zeilen x 4 Spalten, keine gedruckten Kopfzeilen im Original; die Spalte 'fahuwa' (فَهُوَ) wurde als reine Lese-Einleitungsfloskel weggelassen). Zeile 'Aktiv' = Madhi/Mudari/Masdar/Ism Fa'il, Zeile 'Passiv' = die passiven Gegenstücke, Zeile 'Imperativ' = Amr/Nahy sowie eine weitere Ableitung (Ism Makan/Zaman bei Form I, sonst dieselbe Ism-Maf'ul-Form wie in der Passiv-Zeile).",
+        "Imperativ-Zeile hat im Original keine Ism-Zelle — Schlüssel 'ism' fehlt unter 'imperativ' komplett.",
+        "Wurzel سوي ist Lafif Maqrun (2. Radikal و, 3. Radikal ي); anders als bei den Form-I-Tabellen (96-99) verwendet das Original ab Form II (Abbildungen 100-107) für jede Form ein eigenes, nicht notwendig Maqrun/Mafruq-typenreines Beispielverb, ähnlich wie im Mahmooz-Abschnitt.",
+        "Zeichengenau aus dem gerenderten Seitenbild von handout.pdf S. 121 (Abbildung 100, Tabellen-Bbox per PyMuPDF find_tables ermittelt) bei 12- bis 80-fachem Zoom, zellenweise zugeschnitten, gelesen."
+      ],
+      "source": {
+        "file": "handout.pdf",
+        "page": 121
+      }
+    },
+    {
+      "id": "bab-mufaala3-lafif-sawa",
+      "kind": "verb",
+      "titleDe": "Bab Mufa'ala III (Lafif) — سَاوَى (gleichkommen, entsprechen)",
+      "termAr": "سَاوَى",
+      "columns": [
+        {
+          "id": "madhi",
+          "labelDe": "Madhi / Amr"
+        },
+        {
+          "id": "mudari",
+          "labelDe": "Mudari / Nahy"
+        },
+        {
+          "id": "masdar",
+          "labelDe": "Masdar"
+        },
+        {
+          "id": "ism",
+          "labelDe": "Ism (Fa'il / Maf'ul / Ableitung)"
+        }
+      ],
+      "rows": [
+        {
+          "id": "aktiv",
+          "labelDe": "Aktiv"
+        },
+        {
+          "id": "passiv",
+          "labelDe": "Passiv"
+        },
+        {
+          "id": "imperativ",
+          "labelDe": "Imperativ (Amr/Nahy)"
+        }
+      ],
+      "cells": {
+        "aktiv": {
+          "madhi": {
+            "ar": "سَاوَى",
+            "de": "er kam gleich"
+          },
+          "mudari": {
+            "ar": "يُسَاوِي",
+            "de": "er kommt gleich"
+          },
+          "masdar": {
+            "ar": "مُسَاوَاةً",
+            "de": "die Gleichheit (Masdar)"
+          },
+          "ism": {
+            "ar": "مُسَاوٍ",
+            "de": "Gleichkommender (Ism Fa'il)"
+          }
+        },
+        "passiv": {
+          "madhi": {
+            "ar": "سُووِيَ",
+            "de": "es wurde gleichgestellt"
+          },
+          "mudari": {
+            "ar": "يُسَاوَى",
+            "de": "es wird gleichgestellt"
+          },
+          "masdar": {
+            "ar": "مُسَاوَاةً",
+            "de": "die Gleichheit (Masdar)"
+          },
+          "ism": {
+            "ar": "مُسَاوًى",
+            "de": "Gleichgestelltes (Ism Maf'ul)"
+          }
+        },
+        "imperativ": {
+          "madhi": {
+            "ar": "سَاوِ",
+            "de": "Komm gleich!"
+          },
+          "mudari": {
+            "ar": "لَا تُسَاوِ",
+            "de": "Komm nicht gleich!"
+          }
+        }
+      },
+      "notes": [
+        "Gleiche Tabellenstruktur wie die Mahmooz-Bab-Tabellen in paradigmen-verben.json (3 Zeilen x 4 Spalten, keine gedruckten Kopfzeilen im Original; die Spalte 'fahuwa' (فَهُوَ) wurde als reine Lese-Einleitungsfloskel weggelassen). Zeile 'Aktiv' = Madhi/Mudari/Masdar/Ism Fa'il, Zeile 'Passiv' = die passiven Gegenstücke, Zeile 'Imperativ' = Amr/Nahy sowie eine weitere Ableitung (Ism Makan/Zaman bei Form I, sonst dieselbe Ism-Maf'ul-Form wie in der Passiv-Zeile).",
+        "Imperativ-Zeile hat im Original keine Ism-Zelle — Schlüssel 'ism' fehlt unter 'imperativ' komplett.",
+        "Passiv-Madhi سُووِيَ (zwei getrennte Waw-Buchstaben statt Waw+Shadda) ist die regelmäßige Form-III-Passiv-Bildung فُوعِلَ für den Wurzel-Mittelradikal و (Infix-Waw der Form III + Wurzel-Waw) — bei ≥40-fachem Zoom verifiziert; dasselbe Muster bestätigt die Lesung von تُدُووِيَ und تُلُووِيَ bei den Form-VI-Tabellen.",
+        "Zeichengenau aus dem gerenderten Seitenbild von handout.pdf S. 121 (Abbildung 101, Tabellen-Bbox per PyMuPDF find_tables ermittelt) bei 12- bis 80-fachem Zoom, zellenweise zugeschnitten, gelesen."
+      ],
+      "source": {
+        "file": "handout.pdf",
+        "page": 121
+      }
+    },
+    {
+      "id": "bab-ifal4-lafif-awha",
+      "kind": "verb",
+      "titleDe": "Bab If'al IV (Lafif) — أَوْحَى (eingeben, offenbaren)",
+      "termAr": "أَوْحَى",
+      "columns": [
+        {
+          "id": "madhi",
+          "labelDe": "Madhi / Amr"
+        },
+        {
+          "id": "mudari",
+          "labelDe": "Mudari / Nahy"
+        },
+        {
+          "id": "masdar",
+          "labelDe": "Masdar"
+        },
+        {
+          "id": "ism",
+          "labelDe": "Ism (Fa'il / Maf'ul / Ableitung)"
+        }
+      ],
+      "rows": [
+        {
+          "id": "aktiv",
+          "labelDe": "Aktiv"
+        },
+        {
+          "id": "passiv",
+          "labelDe": "Passiv"
+        },
+        {
+          "id": "imperativ",
+          "labelDe": "Imperativ (Amr/Nahy)"
+        }
+      ],
+      "cells": {
+        "aktiv": {
+          "madhi": {
+            "ar": "أَوْحَى",
+            "de": "er gab ein, offenbarte"
+          },
+          "mudari": {
+            "ar": "يُوْحِي",
+            "de": "er gibt ein, offenbart"
+          },
+          "masdar": {
+            "ar": "إِيْحَاءً",
+            "de": "die Eingebung, Offenbarung (Masdar)"
+          },
+          "ism": {
+            "ar": "مُوْحٍ",
+            "de": "Eingebender (Ism Fa'il)"
+          }
+        },
+        "passiv": {
+          "madhi": {
+            "ar": "أُوْحِيَ",
+            "de": "es wurde eingegeben"
+          },
+          "mudari": {
+            "ar": "يُوْحَى",
+            "de": "es wird eingegeben"
+          },
+          "masdar": {
+            "ar": "إِيْحَاءً",
+            "de": "die Eingebung, Offenbarung (Masdar)"
+          },
+          "ism": {
+            "ar": "مُوْحًى",
+            "de": "Eingegebenes (Ism Maf'ul)"
+          }
+        },
+        "imperativ": {
+          "madhi": {
+            "ar": "أَوْحِ",
+            "de": "Gib ein!"
+          },
+          "mudari": {
+            "ar": "لَا تُوْحِ",
+            "de": "Gib nicht ein!"
+          }
+        }
+      },
+      "notes": [
+        "Gleiche Tabellenstruktur wie die Mahmooz-Bab-Tabellen in paradigmen-verben.json (3 Zeilen x 4 Spalten, keine gedruckten Kopfzeilen im Original; die Spalte 'fahuwa' (فَهُوَ) wurde als reine Lese-Einleitungsfloskel weggelassen). Zeile 'Aktiv' = Madhi/Mudari/Masdar/Ism Fa'il, Zeile 'Passiv' = die passiven Gegenstücke, Zeile 'Imperativ' = Amr/Nahy sowie eine weitere Ableitung (Ism Makan/Zaman bei Form I, sonst dieselbe Ism-Maf'ul-Form wie in der Passiv-Zeile).",
+        "Imperativ-Zeile hat im Original keine Ism-Zelle — Schlüssel 'ism' fehlt unter 'imperativ' komplett.",
+        "Wurzel وحي ist Lafif Mafruq (1. Radikal و, 3. Radikal ي).",
+        "Zeichengenau aus dem gerenderten Seitenbild von handout.pdf S. 121 (Abbildung 102, Tabellen-Bbox per PyMuPDF find_tables ermittelt) bei 12- bis 80-fachem Zoom, zellenweise zugeschnitten, gelesen."
+      ],
+      "source": {
+        "file": "handout.pdf",
+        "page": 121
+      }
+    },
+    {
+      "id": "bab-tafaul5-lafif-tawaffa",
+      "kind": "verb",
+      "titleDe": "Bab Tafa\"ul V (Lafif) — تَوَفَّى (abberufen, sterben lassen)",
+      "termAr": "تَوَفَّى",
+      "columns": [
+        {
+          "id": "madhi",
+          "labelDe": "Madhi / Amr"
+        },
+        {
+          "id": "mudari",
+          "labelDe": "Mudari / Nahy"
+        },
+        {
+          "id": "masdar",
+          "labelDe": "Masdar"
+        },
+        {
+          "id": "ism",
+          "labelDe": "Ism (Fa'il / Maf'ul / Ableitung)"
+        }
+      ],
+      "rows": [
+        {
+          "id": "aktiv",
+          "labelDe": "Aktiv"
+        },
+        {
+          "id": "passiv",
+          "labelDe": "Passiv"
+        },
+        {
+          "id": "imperativ",
+          "labelDe": "Imperativ (Amr/Nahy)"
+        }
+      ],
+      "cells": {
+        "aktiv": {
+          "madhi": {
+            "ar": "تَوَفَّى",
+            "de": "er berief ab (ließ sterben)"
+          },
+          "mudari": {
+            "ar": "يَتَوَفَّى",
+            "de": "er beruft ab"
+          },
+          "masdar": {
+            "ar": "تَوَفِّيًا",
+            "de": "das Abberufen (Masdar)"
+          },
+          "ism": {
+            "ar": "مُتَوَفٍّ",
+            "de": "Abberufender (Ism Fa'il)"
+          }
+        },
+        "passiv": {
+          "madhi": {
+            "ar": "تُوُفِّيَ",
+            "de": "er wurde abberufen (starb)"
+          },
+          "mudari": {
+            "ar": "يُتَوَفَّى",
+            "de": "er wird abberufen"
+          },
+          "masdar": {
+            "ar": "تَوَفِّيًا",
+            "de": "das Abberufen (Masdar)"
+          },
+          "ism": {
+            "ar": "مُتَوَفًّى",
+            "de": "Abberufener (Ism Maf'ul)"
+          }
+        },
+        "imperativ": {
+          "madhi": {
+            "ar": "تَوَفَّ",
+            "de": "Berufe ab!"
+          },
+          "mudari": {
+            "ar": "لَا تَتَوَفَّ",
+            "de": "Berufe nicht ab!"
+          }
+        }
+      },
+      "notes": [
+        "Gleiche Tabellenstruktur wie die Mahmooz-Bab-Tabellen in paradigmen-verben.json (3 Zeilen x 4 Spalten, keine gedruckten Kopfzeilen im Original; die Spalte 'fahuwa' (فَهُوَ) wurde als reine Lese-Einleitungsfloskel weggelassen). Zeile 'Aktiv' = Madhi/Mudari/Masdar/Ism Fa'il, Zeile 'Passiv' = die passiven Gegenstücke, Zeile 'Imperativ' = Amr/Nahy sowie eine weitere Ableitung (Ism Makan/Zaman bei Form I, sonst dieselbe Ism-Maf'ul-Form wie in der Passiv-Zeile).",
+        "Imperativ-Zeile hat im Original keine Ism-Zelle — Schlüssel 'ism' fehlt unter 'imperativ' komplett.",
+        "Wurzel وفي (Bab Tafa\"ul V, تَفَعُّل — reflexiv zu Taf'il II): 1. Radikal و ist hier NICHT dem Hadhf unterworfen, weil Form V (anders als die einfache Form I) das و behält.",
+        "Zeichengenau aus dem gerenderten Seitenbild von handout.pdf S. 121 (Abbildung 103, Tabellen-Bbox per PyMuPDF find_tables ermittelt) bei 12- bis 80-fachem Zoom, zellenweise zugeschnitten, gelesen."
+      ],
+      "source": {
+        "file": "handout.pdf",
+        "page": 121
+      }
+    },
+    {
+      "id": "bab-tafaul6-lafif-tadawa",
+      "kind": "verb",
+      "titleDe": "Bab Tafa'ul VI (Lafif) — تَدَاوَى (sich behandeln lassen, sich kurieren)",
+      "termAr": "تَدَاوَى",
+      "columns": [
+        {
+          "id": "madhi",
+          "labelDe": "Madhi / Amr"
+        },
+        {
+          "id": "mudari",
+          "labelDe": "Mudari / Nahy"
+        },
+        {
+          "id": "masdar",
+          "labelDe": "Masdar"
+        },
+        {
+          "id": "ism",
+          "labelDe": "Ism (Fa'il / Maf'ul / Ableitung)"
+        }
+      ],
+      "rows": [
+        {
+          "id": "aktiv",
+          "labelDe": "Aktiv"
+        },
+        {
+          "id": "passiv",
+          "labelDe": "Passiv"
+        },
+        {
+          "id": "imperativ",
+          "labelDe": "Imperativ (Amr/Nahy)"
+        }
+      ],
+      "cells": {
+        "aktiv": {
+          "madhi": {
+            "ar": "تَدَاوَى",
+            "de": "er ließ sich behandeln"
+          },
+          "mudari": {
+            "ar": "يَتَدَاوَى",
+            "de": "er lässt sich behandeln"
+          },
+          "masdar": {
+            "ar": "تَدَاوِيًا",
+            "de": "die Behandlung (Masdar)"
+          },
+          "ism": {
+            "ar": "مُتَدَاوٍ",
+            "de": "sich Behandeln-Lassender (Ism Fa'il)"
+          }
+        },
+        "passiv": {
+          "madhi": {
+            "ar": "تُدُووِيَ",
+            "de": "es wurde behandelt"
+          },
+          "mudari": {
+            "ar": "يُتَدَاوَى",
+            "de": "es wird behandelt"
+          },
+          "masdar": {
+            "ar": "تَدَاوِيًا",
+            "de": "die Behandlung (Masdar)"
+          },
+          "ism": {
+            "ar": "مُتَدَاوًى",
+            "de": "Behandeltes (Ism Maf'ul)"
+          }
+        },
+        "imperativ": {
+          "madhi": {
+            "ar": "تَدَاوَ",
+            "de": "Lass dich behandeln!"
+          },
+          "mudari": {
+            "ar": "لَا تَتَدَاوَ",
+            "de": "Lass dich nicht behandeln!"
+          }
+        }
+      },
+      "notes": [
+        "Gleiche Tabellenstruktur wie die Mahmooz-Bab-Tabellen in paradigmen-verben.json (3 Zeilen x 4 Spalten, keine gedruckten Kopfzeilen im Original; die Spalte 'fahuwa' (فَهُوَ) wurde als reine Lese-Einleitungsfloskel weggelassen). Zeile 'Aktiv' = Madhi/Mudari/Masdar/Ism Fa'il, Zeile 'Passiv' = die passiven Gegenstücke, Zeile 'Imperativ' = Amr/Nahy sowie eine weitere Ableitung (Ism Makan/Zaman bei Form I, sonst dieselbe Ism-Maf'ul-Form wie in der Passiv-Zeile).",
+        "Imperativ-Zeile hat im Original keine Ism-Zelle — Schlüssel 'ism' fehlt unter 'imperativ' komplett.",
+        "Wurzel دوي, Bab Tafa'ul (VI, تَفَاعُل — reziprok zu Mufa'ala III). Passiv-Madhi تُدُووِيَ (zwei getrennte Waw-Buchstaben: Infix-Waw der Form VI + Wurzel-Waw als 2. Radikal) bei ≥40-fachem Zoom verifiziert — dies ist die REGELMÄSSIGE, konsistente Form-VI-Passiv-Bildung für einen Wurzel-Mittelradikal و und bestätigt (im Gegensatz zur Nachbartabelle bab-tafaul6-naqis-talaqa) die Lesung als durchgehend korrekt.",
+        "Zeichengenau aus dem gerenderten Seitenbild von handout.pdf S. 121 (Abbildung 104, Tabellen-Bbox per PyMuPDF find_tables ermittelt) bei 12- bis 80-fachem Zoom, zellenweise zugeschnitten, gelesen."
+      ],
+      "source": {
+        "file": "handout.pdf",
+        "page": 121
+      }
+    },
+    {
+      "id": "bab-infial7-lafif-inzawa",
+      "kind": "verb",
+      "titleDe": "Bab Infi'al VII (Lafif) — اِنْزَوَى (sich zurückziehen, sich verkriechen)",
+      "termAr": "اِنْزَوَى",
+      "columns": [
+        {
+          "id": "madhi",
+          "labelDe": "Madhi / Amr"
+        },
+        {
+          "id": "mudari",
+          "labelDe": "Mudari / Nahy"
+        },
+        {
+          "id": "masdar",
+          "labelDe": "Masdar"
+        },
+        {
+          "id": "ism",
+          "labelDe": "Ism (Fa'il / Maf'ul / Ableitung)"
+        }
+      ],
+      "rows": [
+        {
+          "id": "aktiv",
+          "labelDe": "Aktiv"
+        },
+        {
+          "id": "imperativ",
+          "labelDe": "Imperativ (Amr/Nahy)"
+        }
+      ],
+      "cells": {
+        "aktiv": {
+          "madhi": {
+            "ar": "اِنْزَوَى",
+            "de": "er zog sich zurück"
+          },
+          "mudari": {
+            "ar": "يَنْزَوِي",
+            "de": "er zieht sich zurück"
+          },
+          "masdar": {
+            "ar": "اِنْزِوَاءً",
+            "de": "der Rückzug (Masdar)"
+          },
+          "ism": {
+            "ar": "مُنْزَوٍ",
+            "de": "sich Zurückziehender (Ism Fa'il)"
+          }
+        },
+        "imperativ": {
+          "madhi": {
+            "ar": "اِنْزَوِ",
+            "de": "Zieh dich zurück!"
+          },
+          "mudari": {
+            "ar": "لَا تَنْزَوِ",
+            "de": "Zieh dich nicht zurück!"
+          }
+        }
+      },
+      "notes": [
+        "Gleiche Tabellenstruktur wie die Mahmooz-Bab-Tabellen in paradigmen-verben.json (3 Zeilen x 4 Spalten, keine gedruckten Kopfzeilen im Original; die Spalte 'fahuwa' (فَهُوَ) wurde als reine Lese-Einleitungsfloskel weggelassen). Zeile 'Aktiv' = Madhi/Mudari/Masdar/Ism Fa'il, Zeile 'Passiv' = die passiven Gegenstücke, Zeile 'Imperativ' = Amr/Nahy sowie eine weitere Ableitung (Ism Makan/Zaman bei Form I, sonst dieselbe Ism-Maf'ul-Form wie in der Passiv-Zeile).",
+        "Form VII (Infi'al) hat keine eigene Passivform (siehe bab-infial7-naqis-inqada). Anders als dort druckt das Original hier (Abbildung 105, S. 122) für diese Lafif-Tabelle gar keine Passiv-Zeile ab — die Tabelle hat nur 2 Zeilen (Aktiv, Imperativ) statt 3, per PyMuPDF find_tables bestätigt (row_count=2). Daher fehlt der Schlüssel 'passiv' hier komplett, statt eine leere oder teilbefüllte Zeile zu erfinden.",
+        "Imperativ-Zeile hat im Original keine Ism-Zelle — Schlüssel 'ism' fehlt unter 'imperativ' komplett.",
+        "Wurzel زوي ist Lafif Maqrun (2. Radikal و, 3. Radikal ي).",
+        "Zeichengenau aus dem gerenderten Seitenbild von handout.pdf S. 122 (Abbildung 105, Tabellen-Bbox per PyMuPDF find_tables ermittelt) bei 12- bis 80-fachem Zoom, zellenweise zugeschnitten, gelesen."
+      ],
+      "source": {
+        "file": "handout.pdf",
+        "page": 122
+      }
+    },
+    {
+      "id": "bab-iftial8-lafif-istawa",
+      "kind": "verb",
+      "titleDe": "Bab Ifti'al VIII (Lafif) — اِسْتَوَى (eben/gerade sein, sich erheben)",
+      "termAr": "اِسْتَوَى",
+      "columns": [
+        {
+          "id": "madhi",
+          "labelDe": "Madhi / Amr"
+        },
+        {
+          "id": "mudari",
+          "labelDe": "Mudari / Nahy"
+        },
+        {
+          "id": "masdar",
+          "labelDe": "Masdar"
+        },
+        {
+          "id": "ism",
+          "labelDe": "Ism (Fa'il / Maf'ul / Ableitung)"
+        }
+      ],
+      "rows": [
+        {
+          "id": "aktiv",
+          "labelDe": "Aktiv"
+        },
+        {
+          "id": "passiv",
+          "labelDe": "Passiv"
+        },
+        {
+          "id": "imperativ",
+          "labelDe": "Imperativ (Amr/Nahy)"
+        }
+      ],
+      "cells": {
+        "aktiv": {
+          "madhi": {
+            "ar": "اِسْتَوَى",
+            "de": "er war eben, erhob sich"
+          },
+          "mudari": {
+            "ar": "يَسْتَوِي",
+            "de": "er ist eben, erhebt sich"
+          },
+          "masdar": {
+            "ar": "اِسْتِوَاءً",
+            "de": "das Ebensein, Sich-Erheben (Masdar)"
+          },
+          "ism": {
+            "ar": "مُسْتَوٍ",
+            "de": "Ebener, sich Erhebender (Ism Fa'il)"
+          }
+        },
+        "passiv": {
+          "madhi": {
+            "ar": "اُسْتُوِيَ",
+            "de": "(Passiv, wie im Original gedruckt)"
+          },
+          "mudari": {
+            "ar": "يُسْتَوَى",
+            "de": "(Passiv, wie im Original gedruckt)"
+          },
+          "masdar": {
+            "ar": "اِسْتِوَاءً",
+            "de": "das Ebensein, Sich-Erheben (Masdar)"
+          },
+          "ism": {
+            "ar": "مُسْتَوًى",
+            "de": "Niveau, Ebene (Ism Maf'ul)"
+          }
+        },
+        "imperativ": {
+          "madhi": {
+            "ar": "اِسْتَوِ",
+            "de": "Sei eben! Erhebe dich!"
+          },
+          "mudari": {
+            "ar": "لَا تَسْتَوِ",
+            "de": "Sei nicht eben! Erhebe dich nicht!"
+          }
+        }
+      },
+      "notes": [
+        "Gleiche Tabellenstruktur wie die Mahmooz-Bab-Tabellen in paradigmen-verben.json (3 Zeilen x 4 Spalten, keine gedruckten Kopfzeilen im Original; die Spalte 'fahuwa' (فَهُوَ) wurde als reine Lese-Einleitungsfloskel weggelassen). Zeile 'Aktiv' = Madhi/Mudari/Masdar/Ism Fa'il, Zeile 'Passiv' = die passiven Gegenstücke, Zeile 'Imperativ' = Amr/Nahy sowie eine weitere Ableitung (Ism Makan/Zaman bei Form I, sonst dieselbe Ism-Maf'ul-Form wie in der Passiv-Zeile).",
+        "Imperativ-Zeile hat im Original keine Ism-Zelle — Schlüssel 'ism' fehlt unter 'imperativ' komplett.",
+        "Wurzel سوي ist Lafif Maqrun (2. Radikal و, 3. Radikal ي). Ism Maf'ul مُسْتَوًى trägt im Original Fathatan — bei ≥60-fachem Zoom verifiziert (zwei diagonale Striche über dem Alif Maqsura, von einer bloßen Fatha unterschieden).",
+        "Zeichengenau aus dem gerenderten Seitenbild von handout.pdf S. 122 (Abbildung 106, Tabellen-Bbox per PyMuPDF find_tables ermittelt) bei 12- bis 80-fachem Zoom, zellenweise zugeschnitten, gelesen."
+      ],
+      "source": {
+        "file": "handout.pdf",
+        "page": 122
+      }
+    },
+    {
+      "id": "bab-istifal10-lafif-istawla",
+      "kind": "verb",
+      "titleDe": "Bab Istif'al X (Lafif) — اِسْتَوْلَى (die Kontrolle übernehmen)",
+      "termAr": "اِسْتَوْلَى",
+      "columns": [
+        {
+          "id": "madhi",
+          "labelDe": "Madhi / Amr"
+        },
+        {
+          "id": "mudari",
+          "labelDe": "Mudari / Nahy"
+        },
+        {
+          "id": "masdar",
+          "labelDe": "Masdar"
+        },
+        {
+          "id": "ism",
+          "labelDe": "Ism (Fa'il / Maf'ul / Ableitung)"
+        }
+      ],
+      "rows": [
+        {
+          "id": "aktiv",
+          "labelDe": "Aktiv"
+        },
+        {
+          "id": "passiv",
+          "labelDe": "Passiv"
+        },
+        {
+          "id": "imperativ",
+          "labelDe": "Imperativ (Amr/Nahy)"
+        }
+      ],
+      "cells": {
+        "aktiv": {
+          "madhi": {
+            "ar": "اِسْتَوْلَى",
+            "de": "er übernahm die Kontrolle"
+          },
+          "mudari": {
+            "ar": "يَسْتَوْلِي",
+            "de": "er übernimmt die Kontrolle"
+          },
+          "masdar": {
+            "ar": "اِسْتِيْلَاءً",
+            "de": "die Machtübernahme (Masdar)"
+          },
+          "ism": {
+            "ar": "مُسْتَوْلٍ",
+            "de": "die Kontrolle Übernehmender (Ism Fa'il)"
+          }
+        },
+        "passiv": {
+          "madhi": {
+            "ar": "اُسْتُوْلِيَ",
+            "de": "die Kontrolle wurde übernommen"
+          },
+          "mudari": {
+            "ar": "يُسْتَوْلَى",
+            "de": "die Kontrolle wird übernommen"
+          },
+          "masdar": {
+            "ar": "اِسْتِيْلَاءً",
+            "de": "die Machtübernahme (Masdar)"
+          },
+          "ism": {
+            "ar": "مُسْتَوْلًى",
+            "de": "Kontrollierter/Übernommenes (Ism Maf'ul)"
+          }
+        },
+        "imperativ": {
+          "madhi": {
+            "ar": "اِسْتَوْلِ",
+            "de": "Übernimm die Kontrolle!"
+          },
+          "mudari": {
+            "ar": "لَا تَسْتَوْلِ",
+            "de": "Übernimm nicht die Kontrolle!"
+          }
+        }
+      },
+      "notes": [
+        "Gleiche Tabellenstruktur wie die Mahmooz-Bab-Tabellen in paradigmen-verben.json (3 Zeilen x 4 Spalten, keine gedruckten Kopfzeilen im Original; die Spalte 'fahuwa' (فَهُوَ) wurde als reine Lese-Einleitungsfloskel weggelassen). Zeile 'Aktiv' = Madhi/Mudari/Masdar/Ism Fa'il, Zeile 'Passiv' = die passiven Gegenstücke, Zeile 'Imperativ' = Amr/Nahy sowie eine weitere Ableitung (Ism Makan/Zaman bei Form I, sonst dieselbe Ism-Maf'ul-Form wie in der Passiv-Zeile).",
+        "Imperativ-Zeile hat im Original keine Ism-Zelle — Schlüssel 'ism' fehlt unter 'imperativ' komplett.",
+        "Wurzel ولي ist Lafif Mafruq (1. Radikal و, 3. Radikal ي). Ism Maf'ul مُسْتَوْلًى trägt im Original Fathatan — bei ≥60-fachem Zoom verifiziert.",
+        "Zeichengenau aus dem gerenderten Seitenbild von handout.pdf S. 122 (Abbildung 107, Tabellen-Bbox per PyMuPDF find_tables ermittelt) bei 12- bis 80-fachem Zoom, zellenweise zugeschnitten, gelesen."
+      ],
+      "source": {
+        "file": "handout.pdf",
+        "page": 122
+      }
+    },
+    {
+      "id": "bab-samia-mudaaf-barra",
+      "kind": "verb",
+      "titleDe": "Bab Sami'a (Muda\"af) — بَرَّ (fromm/gütig sein)",
+      "termAr": "بَرَّ",
+      "columns": [
+        {
+          "id": "madhi",
+          "labelDe": "Madhi / Amr"
+        },
+        {
+          "id": "mudari",
+          "labelDe": "Mudari / Nahy"
+        },
+        {
+          "id": "masdar",
+          "labelDe": "Masdar"
+        },
+        {
+          "id": "ism",
+          "labelDe": "Ism (Fa'il / Maf'ul / Ableitung)"
+        }
+      ],
+      "rows": [
+        {
+          "id": "aktiv",
+          "labelDe": "Aktiv"
+        },
+        {
+          "id": "passiv",
+          "labelDe": "Passiv"
+        },
+        {
+          "id": "imperativ",
+          "labelDe": "Imperativ (Amr/Nahy)"
+        }
+      ],
+      "cells": {
+        "aktiv": {
+          "madhi": {
+            "ar": "بَرَّ",
+            "de": "er war fromm/gütig"
+          },
+          "mudari": {
+            "ar": "يَبَرُّ",
+            "de": "er ist fromm/gütig"
+          },
+          "masdar": {
+            "ar": "بِرًّا",
+            "de": "die Frömmigkeit/Güte (Masdar)"
+          },
+          "ism": {
+            "ar": "بَارٌّ",
+            "de": "Frommer (Ism Fa'il)"
+          }
+        },
+        "passiv": {
+          "madhi": {
+            "ar": "بُرَّ",
+            "de": "(Passiv, wie im Original gedruckt)"
+          },
+          "mudari": {
+            "ar": "يُبَرُّ",
+            "de": "(Passiv, wie im Original gedruckt)"
+          },
+          "masdar": {
+            "ar": "بِرًّا",
+            "de": "die Frömmigkeit/Güte (Masdar)"
+          },
+          "ism": {
+            "ar": "مَبْرُورٌ",
+            "de": "dem Gutes erwiesen wurde (Ism Maf'ul)"
+          }
+        },
+        "imperativ": {
+          "madhi": {
+            "ar": "بَرَّ",
+            "de": "Sei fromm/gütig!"
+          },
+          "mudari": {
+            "ar": "لَا تَبَرَّ",
+            "de": "Sei nicht fromm/gütig!"
+          }
+        }
+      },
+      "notes": [
+        "Kapitel 8.9 (Muda\"af — Verben mit verdoppeltem letztem Radikal) behandelt diese Verben mit denselben 3x4-Bab-Tabellen wie die vorigen Abschnitte. Gleiche Tabellenstruktur wie die Mahmooz-Bab-Tabellen in paradigmen-verben.json (3 Zeilen x 4 Spalten, keine gedruckten Kopfzeilen im Original; die Spalte 'fahuwa' (فَهُوَ) wurde als reine Lese-Einleitungsfloskel weggelassen). Zeile 'Aktiv' = Madhi/Mudari/Masdar/Ism Fa'il, Zeile 'Passiv' = die passiven Gegenstücke, Zeile 'Imperativ' = Amr/Nahy sowie eine weitere Ableitung (Ism Makan/Zaman bei Form I, sonst dieselbe Ism-Maf'ul-Form wie in der Passiv-Zeile). Bei Muda\"af-Verben verschmelzen (Idgham) die beiden gleichen Radikale im Original meist zu einem einzigen Buchstaben mit Schadda; wo das nicht der Fall ist (z.B. weil eine dritte Kopie desselben Buchstabens durch die Form-II/V-Verdoppelung hinzukommt, oder weil die gedruckte Form bewusst getrennt steht), ist das zeichengenau wie im gerenderten Bild übernommen und in den Notes vermerkt.",
+        "Imperativ-Zeile hat im Original keine Ism-Zelle (wie bei den Lafif-Tabellen) — Schlüssel 'ism' fehlt unter 'imperativ' komplett.",
+        "Amr (بَرَّ) und Nahy (لَا تَبَرَّ) zeigen die REGELMÄSSIGE Muda\"af-Bildung: die beiden gleichen Radikale bleiben im Apokopat/Jussiv verschmolzen (Idgham) und erhalten statt eines Sukun eine Fatha, um die sonst entstehende Doppel-Ruhe zu vermeiden ('Fekk al-Idgham bi-l-Fatha'). Das steht im Kontrast zur Alternative, die Radikale ganz zu trennen (Fekk al-Idgham vollständig, z.B. تَبْرُرْ) — siehe die dokumentierte Ausnahme bei bab-mufaala3-mudaaf-shaqqa und die Diskussion in LUECKEN.md zu Qur'an 2:217 (يَرْتَدِدْ).",
+        "Zeichengenau aus dem gerenderten Seitenbild von handout.pdf S. 123 (Abbildung 108, Tabellen-Bbox per PyMuPDF find_tables ermittelt) bei 12- bis 80-fachem Zoom, zellenweise zugeschnitten, gelesen."
+      ],
+      "source": {
+        "file": "handout.pdf",
+        "page": 123
+      }
+    },
+    {
+      "id": "bab-daraba-mudaaf-farra",
+      "kind": "verb",
+      "titleDe": "Bab Daraba (Muda\"af) — فَرَّ (fliehen)",
+      "termAr": "فَرَّ",
+      "columns": [
+        {
+          "id": "madhi",
+          "labelDe": "Madhi / Amr"
+        },
+        {
+          "id": "mudari",
+          "labelDe": "Mudari / Nahy"
+        },
+        {
+          "id": "masdar",
+          "labelDe": "Masdar"
+        },
+        {
+          "id": "ism",
+          "labelDe": "Ism (Fa'il / Maf'ul / Ableitung)"
+        }
+      ],
+      "rows": [
+        {
+          "id": "aktiv",
+          "labelDe": "Aktiv"
+        },
+        {
+          "id": "passiv",
+          "labelDe": "Passiv"
+        },
+        {
+          "id": "imperativ",
+          "labelDe": "Imperativ (Amr/Nahy)"
+        }
+      ],
+      "cells": {
+        "aktiv": {
+          "madhi": {
+            "ar": "فَرَّ",
+            "de": "er floh"
+          },
+          "mudari": {
+            "ar": "يَفِرُّ",
+            "de": "er flieht"
+          },
+          "masdar": {
+            "ar": "فِرَارًا",
+            "de": "die Flucht (Masdar)"
+          },
+          "ism": {
+            "ar": "فَارٌّ",
+            "de": "Flüchtender (Ism Fa'il)"
+          }
+        },
+        "passiv": {
+          "madhi": {
+            "ar": "فُرَّ",
+            "de": "(Passiv, wie im Original gedruckt)"
+          },
+          "mudari": {
+            "ar": "يُفَرُّ",
+            "de": "(Passiv, wie im Original gedruckt)"
+          },
+          "masdar": {
+            "ar": "فِرَارًا",
+            "de": "die Flucht (Masdar)"
+          },
+          "ism": {
+            "ar": "مَفْرُورٌ",
+            "de": "vor dem geflohen wurde (Ism Maf'ul)"
+          }
+        },
+        "imperativ": {
+          "madhi": {
+            "ar": "فِرَّ",
+            "de": "Flieh!"
+          },
+          "mudari": {
+            "ar": "لَا تَفِرَّ",
+            "de": "Flieh nicht!"
+          }
+        }
+      },
+      "notes": [
+        "Kapitel 8.9 (Muda\"af — Verben mit verdoppeltem letztem Radikal) behandelt diese Verben mit denselben 3x4-Bab-Tabellen wie die vorigen Abschnitte. Gleiche Tabellenstruktur wie die Mahmooz-Bab-Tabellen in paradigmen-verben.json (3 Zeilen x 4 Spalten, keine gedruckten Kopfzeilen im Original; die Spalte 'fahuwa' (فَهُوَ) wurde als reine Lese-Einleitungsfloskel weggelassen). Zeile 'Aktiv' = Madhi/Mudari/Masdar/Ism Fa'il, Zeile 'Passiv' = die passiven Gegenstücke, Zeile 'Imperativ' = Amr/Nahy sowie eine weitere Ableitung (Ism Makan/Zaman bei Form I, sonst dieselbe Ism-Maf'ul-Form wie in der Passiv-Zeile). Bei Muda\"af-Verben verschmelzen (Idgham) die beiden gleichen Radikale im Original meist zu einem einzigen Buchstaben mit Schadda; wo das nicht der Fall ist (z.B. weil eine dritte Kopie desselben Buchstabens durch die Form-II/V-Verdoppelung hinzukommt, oder weil die gedruckte Form bewusst getrennt steht), ist das zeichengenau wie im gerenderten Bild übernommen und in den Notes vermerkt.",
+        "Imperativ-Zeile hat im Original keine Ism-Zelle — Schlüssel 'ism' fehlt unter 'imperativ' komplett.",
+        "Amr مِت Kasra (فِرَّ) statt Fatha, weil der Mudari يَفِرُّ (Bab Daraba-Muster) selbst mit Kasra gebildet wird; Nahy bleibt regelmäßig mit Fatha verschmolzen (لَا تَفِرَّ).",
+        "Zeichengenau aus dem gerenderten Seitenbild von handout.pdf S. 123 (Abbildung 109, Tabellen-Bbox per PyMuPDF find_tables ermittelt) bei 12- bis 80-fachem Zoom, zellenweise zugeschnitten, gelesen."
+      ],
+      "source": {
+        "file": "handout.pdf",
+        "page": 123
+      }
+    },
+    {
+      "id": "bab-nasara-mudaaf-madda",
+      "kind": "verb",
+      "titleDe": "Bab Nasara (Muda\"af) — مَدَّ (ausdehnen, verlängern)",
+      "termAr": "مَدَّ",
+      "columns": [
+        {
+          "id": "madhi",
+          "labelDe": "Madhi / Amr"
+        },
+        {
+          "id": "mudari",
+          "labelDe": "Mudari / Nahy"
+        },
+        {
+          "id": "masdar",
+          "labelDe": "Masdar"
+        },
+        {
+          "id": "ism",
+          "labelDe": "Ism (Fa'il / Maf'ul / Ableitung)"
+        }
+      ],
+      "rows": [
+        {
+          "id": "aktiv",
+          "labelDe": "Aktiv"
+        },
+        {
+          "id": "passiv",
+          "labelDe": "Passiv"
+        },
+        {
+          "id": "imperativ",
+          "labelDe": "Imperativ (Amr/Nahy)"
+        }
+      ],
+      "cells": {
+        "aktiv": {
+          "madhi": {
+            "ar": "مَدَّ",
+            "de": "er dehnte aus"
+          },
+          "mudari": {
+            "ar": "يَمُدُّ",
+            "de": "er dehnt aus"
+          },
+          "masdar": {
+            "ar": "مَدًّا",
+            "de": "die Ausdehnung (Masdar)"
+          },
+          "ism": {
+            "ar": "مَادٌّ",
+            "de": "Ausdehnender (Ism Fa'il)"
+          }
+        },
+        "passiv": {
+          "madhi": {
+            "ar": "مُدَّ",
+            "de": "es wurde ausgedehnt"
+          },
+          "mudari": {
+            "ar": "يُمَدُّ",
+            "de": "es wird ausgedehnt"
+          },
+          "masdar": {
+            "ar": "مَدًّا",
+            "de": "die Ausdehnung (Masdar)"
+          },
+          "ism": {
+            "ar": "مَمْدُودٌ",
+            "de": "Ausgedehntes (Ism Maf'ul)"
+          }
+        },
+        "imperativ": {
+          "madhi": {
+            "ar": "مُدَّ",
+            "de": "Dehne aus!"
+          },
+          "mudari": {
+            "ar": "لَا تَمُدَّ",
+            "de": "Dehne nicht aus!"
+          }
+        }
+      },
+      "notes": [
+        "Kapitel 8.9 (Muda\"af — Verben mit verdoppeltem letztem Radikal) behandelt diese Verben mit denselben 3x4-Bab-Tabellen wie die vorigen Abschnitte. Gleiche Tabellenstruktur wie die Mahmooz-Bab-Tabellen in paradigmen-verben.json (3 Zeilen x 4 Spalten, keine gedruckten Kopfzeilen im Original; die Spalte 'fahuwa' (فَهُوَ) wurde als reine Lese-Einleitungsfloskel weggelassen). Zeile 'Aktiv' = Madhi/Mudari/Masdar/Ism Fa'il, Zeile 'Passiv' = die passiven Gegenstücke, Zeile 'Imperativ' = Amr/Nahy sowie eine weitere Ableitung (Ism Makan/Zaman bei Form I, sonst dieselbe Ism-Maf'ul-Form wie in der Passiv-Zeile). Bei Muda\"af-Verben verschmelzen (Idgham) die beiden gleichen Radikale im Original meist zu einem einzigen Buchstaben mit Schadda; wo das nicht der Fall ist (z.B. weil eine dritte Kopie desselben Buchstabens durch die Form-II/V-Verdoppelung hinzukommt, oder weil die gedruckte Form bewusst getrennt steht), ist das zeichengenau wie im gerenderten Bild übernommen und in den Notes vermerkt.",
+        "Imperativ-Zeile hat im Original keine Ism-Zelle — Schlüssel 'ism' fehlt unter 'imperativ' komplett.",
+        "Amr mit Damma (مُدَّ), weil der Mudari يَمُدُّ (Bab Nasara-Muster) mit Damma gebildet wird.",
+        "Zeichengenau aus dem gerenderten Seitenbild von handout.pdf S. 123 (Abbildung 110, Tabellen-Bbox per PyMuPDF find_tables ermittelt) bei 12- bis 80-fachem Zoom, zellenweise zugeschnitten, gelesen."
+      ],
+      "source": {
+        "file": "handout.pdf",
+        "page": 123
+      }
+    },
+    {
+      "id": "bab-tafil2-mudaaf-habbaba",
+      "kind": "verb",
+      "titleDe": "Bab Taf'il II (Muda\"af) — حَبَّبَ (lieb machen, beliebt machen)",
+      "termAr": "حَبَّبَ",
+      "columns": [
+        {
+          "id": "madhi",
+          "labelDe": "Madhi / Amr"
+        },
+        {
+          "id": "mudari",
+          "labelDe": "Mudari / Nahy"
+        },
+        {
+          "id": "masdar",
+          "labelDe": "Masdar"
+        },
+        {
+          "id": "ism",
+          "labelDe": "Ism (Fa'il / Maf'ul / Ableitung)"
+        }
+      ],
+      "rows": [
+        {
+          "id": "aktiv",
+          "labelDe": "Aktiv"
+        },
+        {
+          "id": "passiv",
+          "labelDe": "Passiv"
+        },
+        {
+          "id": "imperativ",
+          "labelDe": "Imperativ (Amr/Nahy)"
+        }
+      ],
+      "cells": {
+        "aktiv": {
+          "madhi": {
+            "ar": "حَبَّبَ",
+            "de": "er machte beliebt"
+          },
+          "mudari": {
+            "ar": "يُحَبِّبُ",
+            "de": "er macht beliebt"
+          },
+          "masdar": {
+            "ar": "تَحْبِيبًا",
+            "de": "das Beliebtmachen (Masdar)"
+          },
+          "ism": {
+            "ar": "مُحَبِّبٌ",
+            "de": "Beliebtmachender (Ism Fa'il)"
+          }
+        },
+        "passiv": {
+          "madhi": {
+            "ar": "حُبِّبَ",
+            "de": "es wurde beliebt gemacht"
+          },
+          "mudari": {
+            "ar": "يُحَبَّبُ",
+            "de": "es wird beliebt gemacht"
+          },
+          "masdar": {
+            "ar": "تَحْبِيبًا",
+            "de": "das Beliebtmachen (Masdar)"
+          },
+          "ism": {
+            "ar": "مُحَبَّبٌ",
+            "de": "Beliebt-Gemachtes (Ism Maf'ul)"
+          }
+        },
+        "imperativ": {
+          "madhi": {
+            "ar": "حَبِّبْ",
+            "de": "Mach beliebt!"
+          },
+          "mudari": {
+            "ar": "لَا تُحَبِّبْ",
+            "de": "Mach nicht beliebt!"
+          }
+        }
+      },
+      "notes": [
+        "Kapitel 8.9 (Muda\"af — Verben mit verdoppeltem letztem Radikal) behandelt diese Verben mit denselben 3x4-Bab-Tabellen wie die vorigen Abschnitte. Gleiche Tabellenstruktur wie die Mahmooz-Bab-Tabellen in paradigmen-verben.json (3 Zeilen x 4 Spalten, keine gedruckten Kopfzeilen im Original; die Spalte 'fahuwa' (فَهُوَ) wurde als reine Lese-Einleitungsfloskel weggelassen). Zeile 'Aktiv' = Madhi/Mudari/Masdar/Ism Fa'il, Zeile 'Passiv' = die passiven Gegenstücke, Zeile 'Imperativ' = Amr/Nahy sowie eine weitere Ableitung (Ism Makan/Zaman bei Form I, sonst dieselbe Ism-Maf'ul-Form wie in der Passiv-Zeile). Bei Muda\"af-Verben verschmelzen (Idgham) die beiden gleichen Radikale im Original meist zu einem einzigen Buchstaben mit Schadda; wo das nicht der Fall ist (z.B. weil eine dritte Kopie desselben Buchstabens durch die Form-II/V-Verdoppelung hinzukommt, oder weil die gedruckte Form bewusst getrennt steht), ist das zeichengenau wie im gerenderten Bild übernommen und in den Notes vermerkt.",
+        "Imperativ-Zeile hat im Original keine Ism-Zelle — Schlüssel 'ism' fehlt unter 'imperativ' komplett.",
+        "Besonderheit: Form II (Taf'il, فَعَّلَ) verdoppelt bereits selbst den 2. Radikal; bei der Wurzel حبب (2. und 3. Radikal identisch ب) entstehen dadurch DREI ب hintereinander, von denen nur zwei (die durch die Form-II-Verdoppelung) zu einem Schadda verschmelzen — das dritte ب (der 3. Wurzelradikal) bleibt als eigener Buchstabe stehen: حَبَّبَ, nicht *حَبَّ. Amr/Nahy enden deshalb auf einen echten Sukun am 3. Radikal (حَبِّبْ, لَا تُحَبِّبْ) statt auf die sonst bei Muda\"af übliche Fatha-Ausweich-Lösung — hier stellt sich die Idgham-Frage gar nicht, weil die Verdoppelung nicht am Wortende sitzt. Bei ≥40-fachem Zoom verifiziert (drei getrennte ب-Glyphen, davon zwei mit gemeinsamem Schadda).",
+        "Zeichengenau aus dem gerenderten Seitenbild von handout.pdf S. 124 (Abbildung 111, Tabellen-Bbox per PyMuPDF find_tables ermittelt) bei 12- bis 80-fachem Zoom, zellenweise zugeschnitten, gelesen."
+      ],
+      "source": {
+        "file": "handout.pdf",
+        "page": 124
+      }
+    },
+    {
+      "id": "bab-mufaala3-mudaaf-shaqqa",
+      "kind": "verb",
+      "titleDe": "Bab Mufa'ala III (Muda\"af) — شَاقَّ (entzweien, im Widerstreit liegen)",
+      "termAr": "شَاقَّ",
+      "columns": [
+        {
+          "id": "madhi",
+          "labelDe": "Madhi / Amr"
+        },
+        {
+          "id": "mudari",
+          "labelDe": "Mudari / Nahy"
+        },
+        {
+          "id": "masdar",
+          "labelDe": "Masdar"
+        },
+        {
+          "id": "ism",
+          "labelDe": "Ism (Fa'il / Maf'ul / Ableitung)"
+        }
+      ],
+      "rows": [
+        {
+          "id": "aktiv",
+          "labelDe": "Aktiv"
+        },
+        {
+          "id": "passiv",
+          "labelDe": "Passiv"
+        },
+        {
+          "id": "imperativ",
+          "labelDe": "Imperativ (Amr/Nahy)"
+        }
+      ],
+      "cells": {
+        "aktiv": {
+          "madhi": {
+            "ar": "شَاقَّ",
+            "de": "er lag im Widerstreit"
+          },
+          "mudari": {
+            "ar": "يُشَاقُّ",
+            "de": "er liegt im Widerstreit (aktiv; im Original identisch mit der Passiv-Form geschrieben, siehe Notes)"
+          },
+          "masdar": {
+            "ar": "مُشَاقَّةً",
+            "de": "der Widerstreit (Masdar)"
+          },
+          "ism": {
+            "ar": "مُشَاقٌّ",
+            "de": "im Widerstreit Liegender (Ism Fa'il)"
+          }
+        },
+        "passiv": {
+          "madhi": {
+            "ar": "شُوقَّ",
+            "de": "es wurde entzweit"
+          },
+          "mudari": {
+            "ar": "يُشَاقُّ",
+            "de": "es wird entzweit (im Original identisch mit der Aktiv-Form geschrieben, siehe Notes)"
+          },
+          "masdar": {
+            "ar": "مُشَاقَّةً",
+            "de": "der Widerstreit (Masdar)"
+          },
+          "ism": {
+            "ar": "مُشَاقٌّ",
+            "de": "Entzweiter (Ism Maf'ul; im Original identisch mit dem Ism Fa'il geschrieben)"
+          }
+        },
+        "imperativ": {
+          "madhi": {
+            "ar": "شَاقِقْ",
+            "de": "Lege dich in Widerstreit!"
+          },
+          "mudari": {
+            "ar": "لَا تُشَاقِقْ",
+            "de": "Lege dich nicht in Widerstreit!"
+          }
+        }
+      },
+      "notes": [
+        "Kapitel 8.9 (Muda\"af — Verben mit verdoppeltem letztem Radikal) behandelt diese Verben mit denselben 3x4-Bab-Tabellen wie die vorigen Abschnitte. Gleiche Tabellenstruktur wie die Mahmooz-Bab-Tabellen in paradigmen-verben.json (3 Zeilen x 4 Spalten, keine gedruckten Kopfzeilen im Original; die Spalte 'fahuwa' (فَهُوَ) wurde als reine Lese-Einleitungsfloskel weggelassen). Zeile 'Aktiv' = Madhi/Mudari/Masdar/Ism Fa'il, Zeile 'Passiv' = die passiven Gegenstücke, Zeile 'Imperativ' = Amr/Nahy sowie eine weitere Ableitung (Ism Makan/Zaman bei Form I, sonst dieselbe Ism-Maf'ul-Form wie in der Passiv-Zeile). Bei Muda\"af-Verben verschmelzen (Idgham) die beiden gleichen Radikale im Original meist zu einem einzigen Buchstaben mit Schadda; wo das nicht der Fall ist (z.B. weil eine dritte Kopie desselben Buchstabens durch die Form-II/V-Verdoppelung hinzukommt, oder weil die gedruckte Form bewusst getrennt steht), ist das zeichengenau wie im gerenderten Bild übernommen und in den Notes vermerkt.",
+        "Imperativ-Zeile hat im Original keine Ism-Zelle — Schlüssel 'ism' fehlt unter 'imperativ' komplett.",
+        "WICHTIGER BELEGTER SACHVERHALT (siehe LUECKEN.md und Test-Datei): Amr (شَاقِقْ) und Nahy (لَا تُشَاقِقْ) zeigen hier — anders als bei den meisten anderen Muda\"af-Bab-Tabellen dieses Kapitels — die Radikale GETRENNT statt zu einem Schadda verschmolzen: قِ (Kasra) + قْ (Sukun) statt قّ (Schadda). Bei ≥40-fachem Zoom mehrfach verifiziert: zwei deutlich getrennte Qaf-Glyphen mit jeweils eigenem Vokalzeichen (Kasra bzw. Sukun-Kreis), kein Schadda-Zeichen über einem einzelnen Qaf. Dies ist die vollständige Fekk-al-Idgham-Form (statt Fekk-al-Idgham-bi-l-Fatha wie bei den übrigen Tabellen dieses Kapitels) und strukturell dieselbe Erscheinung, die für Qur'an 2:217 belegt ist (يَرْتَدِدْ statt *يَرْتَدَّ, Rohstring STEM|POS:V|IMPF|(VIII)|LEM:{rotad~a|ROOT:rdd|3MS|MOOD:JUS) — dort allerdings bei einer anderen Wurzel/Form (ردد, Form VIII). Beide Belege zusammen zeigen: die Trennung der Radikale im Apokopat/Jussiv ist eine im Arabischen tatsächlich vorkommende (wenn auch seltenere) Alternative zur Fatha-Ausweich-Lösung, kein Lese- oder Druckfehler.",
+        "Aktiv- und Passiv-Mudari sind im Original BUCHSTABENGLEICH gedruckt (beide يُشَاقُّ) — bei ≥40-fachem Zoom Zeichen für Zeichen verglichen, kein Unterschied gefunden. Ebenso sind Ism Fa'il und Ism Maf'ul identisch (beide مُشَاقٌّ). Das ist eine bekannte Eigenschaft der Muda\"af-Verschmelzung: der interne Vokal, der Aktiv und Passiv normalerweise unterscheidet (Kasra vs. Fatha vor dem letzten Radikal), geht beim Idgham verloren, weil dieser Vokal genau auf dem Buchstaben lag, der mit dem folgenden Radikal verschmilzt — zeichengenau wie im Original übernommen, nicht künstlich disambiguiert.",
+        "Passiv-Madhi شُوقَّ trägt die reguläre Form-III-Passiv-Infix-Waw (فُوعِلَ-Muster: شُ+و+قّ), siehe dieselbe Bildung bei den Lafif-Tabellen bab-mufaala3-lafif-sawa (سُووِيَ) und bab-tafaul6-lafif-tadawa (تُدُووِيَ).",
+        "Zeichengenau aus dem gerenderten Seitenbild von handout.pdf S. 124 (Abbildung 112, Tabellen-Bbox per PyMuPDF find_tables ermittelt) bei 12- bis 80-fachem Zoom, zellenweise zugeschnitten, gelesen."
+      ],
+      "source": {
+        "file": "handout.pdf",
+        "page": 124
+      }
+    },
+    {
+      "id": "bab-ifal4-mudaaf-ahabba",
+      "kind": "verb",
+      "titleDe": "Bab If'al IV (Muda\"af) — أَحَبَّ (lieben)",
+      "termAr": "أَحَبَّ",
+      "columns": [
+        {
+          "id": "madhi",
+          "labelDe": "Madhi / Amr"
+        },
+        {
+          "id": "mudari",
+          "labelDe": "Mudari / Nahy"
+        },
+        {
+          "id": "masdar",
+          "labelDe": "Masdar"
+        },
+        {
+          "id": "ism",
+          "labelDe": "Ism (Fa'il / Maf'ul / Ableitung)"
+        }
+      ],
+      "rows": [
+        {
+          "id": "aktiv",
+          "labelDe": "Aktiv"
+        },
+        {
+          "id": "passiv",
+          "labelDe": "Passiv"
+        },
+        {
+          "id": "imperativ",
+          "labelDe": "Imperativ (Amr/Nahy)"
+        }
+      ],
+      "cells": {
+        "aktiv": {
+          "madhi": {
+            "ar": "أَحَبَّ",
+            "de": "er liebte"
+          },
+          "mudari": {
+            "ar": "يُحِبُّ",
+            "de": "er liebt"
+          },
+          "masdar": {
+            "ar": "إِحْبَابًا",
+            "de": "die Liebe (Masdar)"
+          },
+          "ism": {
+            "ar": "مُحِبٌّ",
+            "de": "Liebender (Ism Fa'il)"
+          }
+        },
+        "passiv": {
+          "madhi": {
+            "ar": "أُحِبَّ",
+            "de": "er wurde geliebt"
+          },
+          "mudari": {
+            "ar": "يُحَبُّ",
+            "de": "er wird geliebt"
+          },
+          "masdar": {
+            "ar": "إِحْبَابًا",
+            "de": "die Liebe (Masdar)"
+          },
+          "ism": {
+            "ar": "مُحَبٌّ",
+            "de": "Geliebter (Ism Maf'ul)"
+          }
+        },
+        "imperativ": {
+          "madhi": {
+            "ar": "أَحِبَّ",
+            "de": "Liebe!"
+          },
+          "mudari": {
+            "ar": "لَا تُحِبَّ",
+            "de": "Liebe nicht!"
+          }
+        }
+      },
+      "notes": [
+        "Kapitel 8.9 (Muda\"af — Verben mit verdoppeltem letztem Radikal) behandelt diese Verben mit denselben 3x4-Bab-Tabellen wie die vorigen Abschnitte. Gleiche Tabellenstruktur wie die Mahmooz-Bab-Tabellen in paradigmen-verben.json (3 Zeilen x 4 Spalten, keine gedruckten Kopfzeilen im Original; die Spalte 'fahuwa' (فَهُوَ) wurde als reine Lese-Einleitungsfloskel weggelassen). Zeile 'Aktiv' = Madhi/Mudari/Masdar/Ism Fa'il, Zeile 'Passiv' = die passiven Gegenstücke, Zeile 'Imperativ' = Amr/Nahy sowie eine weitere Ableitung (Ism Makan/Zaman bei Form I, sonst dieselbe Ism-Maf'ul-Form wie in der Passiv-Zeile). Bei Muda\"af-Verben verschmelzen (Idgham) die beiden gleichen Radikale im Original meist zu einem einzigen Buchstaben mit Schadda; wo das nicht der Fall ist (z.B. weil eine dritte Kopie desselben Buchstabens durch die Form-II/V-Verdoppelung hinzukommt, oder weil die gedruckte Form bewusst getrennt steht), ist das zeichengenau wie im gerenderten Bild übernommen und in den Notes vermerkt.",
+        "Imperativ-Zeile hat im Original keine Ism-Zelle — Schlüssel 'ism' fehlt unter 'imperativ' komplett.",
+        "Amr/Nahy hier regulär mit Fekk-al-Idgham-bi-l-Fatha (verschmolzen, Fatha-Ausweich): أَحِبَّ, لَا تُحِبَّ — Kontrastbeispiel zur getrennten Form bei bab-mufaala3-mudaaf-shaqqa.",
+        "Zeichengenau aus dem gerenderten Seitenbild von handout.pdf S. 124 (Abbildung 113, Tabellen-Bbox per PyMuPDF find_tables ermittelt) bei 12- bis 80-fachem Zoom, zellenweise zugeschnitten, gelesen."
+      ],
+      "source": {
+        "file": "handout.pdf",
+        "page": 124
+      }
+    },
+    {
+      "id": "bab-tafaul5-mudaaf-tahaqqaqa",
+      "kind": "verb",
+      "titleDe": "Bab Tafa\"ul V (Muda\"af) — تَحَقَّقَ (sich bewahrheiten, sich vergewissern)",
+      "termAr": "تَحَقَّقَ",
+      "columns": [
+        {
+          "id": "madhi",
+          "labelDe": "Madhi / Amr"
+        },
+        {
+          "id": "mudari",
+          "labelDe": "Mudari / Nahy"
+        },
+        {
+          "id": "masdar",
+          "labelDe": "Masdar"
+        },
+        {
+          "id": "ism",
+          "labelDe": "Ism (Fa'il / Maf'ul / Ableitung)"
+        }
+      ],
+      "rows": [
+        {
+          "id": "aktiv",
+          "labelDe": "Aktiv"
+        },
+        {
+          "id": "passiv",
+          "labelDe": "Passiv"
+        },
+        {
+          "id": "imperativ",
+          "labelDe": "Imperativ (Amr/Nahy)"
+        }
+      ],
+      "cells": {
+        "aktiv": {
+          "madhi": {
+            "ar": "تَحَقَّقَ",
+            "de": "er vergewisserte sich"
+          },
+          "mudari": {
+            "ar": "يَتَحَقَّقُ",
+            "de": "er vergewissert sich"
+          },
+          "masdar": {
+            "ar": "تَحَقُّقًا",
+            "de": "die Vergewisserung (Masdar)"
+          },
+          "ism": {
+            "ar": "مُتَحَقِّقٌ",
+            "de": "sich Vergewissernder (Ism Fa'il)"
+          }
+        },
+        "passiv": {
+          "madhi": {
+            "ar": "تُحُقِّقَ",
+            "de": "es wurde bewahrheitet"
+          },
+          "mudari": {
+            "ar": "يُتَحَقَّقُ",
+            "de": "es wird bewahrheitet"
+          },
+          "masdar": {
+            "ar": "تَحَقُّقًا",
+            "de": "die Vergewisserung (Masdar)"
+          },
+          "ism": {
+            "ar": "مُتَحَقَّقٌ",
+            "de": "Bewahrheitetes (Ism Maf'ul)"
+          }
+        },
+        "imperativ": {
+          "madhi": {
+            "ar": "تَحَقَّقْ",
+            "de": "Vergewissere dich!"
+          },
+          "mudari": {
+            "ar": "لَا تَتَحَقَّقْ",
+            "de": "Vergewissere dich nicht!"
+          }
+        }
+      },
+      "notes": [
+        "Kapitel 8.9 (Muda\"af — Verben mit verdoppeltem letztem Radikal) behandelt diese Verben mit denselben 3x4-Bab-Tabellen wie die vorigen Abschnitte. Gleiche Tabellenstruktur wie die Mahmooz-Bab-Tabellen in paradigmen-verben.json (3 Zeilen x 4 Spalten, keine gedruckten Kopfzeilen im Original; die Spalte 'fahuwa' (فَهُوَ) wurde als reine Lese-Einleitungsfloskel weggelassen). Zeile 'Aktiv' = Madhi/Mudari/Masdar/Ism Fa'il, Zeile 'Passiv' = die passiven Gegenstücke, Zeile 'Imperativ' = Amr/Nahy sowie eine weitere Ableitung (Ism Makan/Zaman bei Form I, sonst dieselbe Ism-Maf'ul-Form wie in der Passiv-Zeile). Bei Muda\"af-Verben verschmelzen (Idgham) die beiden gleichen Radikale im Original meist zu einem einzigen Buchstaben mit Schadda; wo das nicht der Fall ist (z.B. weil eine dritte Kopie desselben Buchstabens durch die Form-II/V-Verdoppelung hinzukommt, oder weil die gedruckte Form bewusst getrennt steht), ist das zeichengenau wie im gerenderten Bild übernommen und in den Notes vermerkt.",
+        "Imperativ-Zeile hat im Original keine Ism-Zelle — Schlüssel 'ism' fehlt unter 'imperativ' komplett.",
+        "Wie bei bab-tafil2-mudaaf-habbaba (Form II) verdoppelt Form V (تَفَعَّلَ) bereits selbst den 2. Radikal; bei der Wurzel حقق (2./3. Radikal identisch ق) bleibt der 3. Radikal als eigener Buchstabe stehen: تَحَقَّقَ, nicht *تَحَقَّ. Amr/Nahy enden daher auf echten Sukun am 3. Radikal (تَحَقَّقْ, لَا تَتَحَقَّقْ), keine Fatha-Ausweich-Frage.",
+        "Zeichengenau aus dem gerenderten Seitenbild von handout.pdf S. 124 (Abbildung 114, Tabellen-Bbox per PyMuPDF find_tables ermittelt) bei 12- bis 80-fachem Zoom, zellenweise zugeschnitten, gelesen."
+      ],
+      "source": {
+        "file": "handout.pdf",
+        "page": 124
+      }
+    },
+    {
+      "id": "bab-tafaul6-mudaaf-tahajja",
+      "kind": "verb",
+      "titleDe": "Bab Tafa'ul VI (Muda\"af) — تَحَاجَّ (miteinander streiten, disputieren)",
+      "termAr": "تَحَاجَّ",
+      "columns": [
+        {
+          "id": "madhi",
+          "labelDe": "Madhi / Amr"
+        },
+        {
+          "id": "mudari",
+          "labelDe": "Mudari / Nahy"
+        },
+        {
+          "id": "masdar",
+          "labelDe": "Masdar"
+        },
+        {
+          "id": "ism",
+          "labelDe": "Ism (Fa'il / Maf'ul / Ableitung)"
+        }
+      ],
+      "rows": [
+        {
+          "id": "aktiv",
+          "labelDe": "Aktiv"
+        },
+        {
+          "id": "passiv",
+          "labelDe": "Passiv"
+        },
+        {
+          "id": "imperativ",
+          "labelDe": "Imperativ (Amr/Nahy)"
+        }
+      ],
+      "cells": {
+        "aktiv": {
+          "madhi": {
+            "ar": "تَحَاجَّ",
+            "de": "sie stritten miteinander"
+          },
+          "mudari": {
+            "ar": "يَتَحَاجُّ",
+            "de": "sie streiten miteinander"
+          },
+          "masdar": {
+            "ar": "تَحَاجًّا",
+            "de": "der gegenseitige Disput (Masdar)"
+          },
+          "ism": {
+            "ar": "مُتَحَاجٌّ",
+            "de": "Disputierender (Ism Fa'il; im Original identisch mit dem Ism Maf'ul geschrieben, siehe Notes)"
+          }
+        },
+        "passiv": {
+          "madhi": {
+            "ar": "تُحُوجَّ",
+            "de": "(Passiv, wie im Original gedruckt)"
+          },
+          "mudari": {
+            "ar": "يُتَحَاجُّ",
+            "de": "(Passiv, wie im Original gedruckt)"
+          },
+          "masdar": {
+            "ar": "تَحَاجًّا",
+            "de": "der gegenseitige Disput (Masdar)"
+          },
+          "ism": {
+            "ar": "مُتَحَاجٌّ",
+            "de": "(im Original identisch mit dem Ism Fa'il geschrieben)"
+          }
+        },
+        "imperativ": {
+          "madhi": {
+            "ar": "تَحَاجَّ",
+            "de": "Streite mit ihm!"
+          },
+          "mudari": {
+            "ar": "لَا تَتَحَاجَّ",
+            "de": "Streite nicht mit ihm!"
+          }
+        }
+      },
+      "notes": [
+        "Kapitel 8.9 (Muda\"af — Verben mit verdoppeltem letztem Radikal) behandelt diese Verben mit denselben 3x4-Bab-Tabellen wie die vorigen Abschnitte. Gleiche Tabellenstruktur wie die Mahmooz-Bab-Tabellen in paradigmen-verben.json (3 Zeilen x 4 Spalten, keine gedruckten Kopfzeilen im Original; die Spalte 'fahuwa' (فَهُوَ) wurde als reine Lese-Einleitungsfloskel weggelassen). Zeile 'Aktiv' = Madhi/Mudari/Masdar/Ism Fa'il, Zeile 'Passiv' = die passiven Gegenstücke, Zeile 'Imperativ' = Amr/Nahy sowie eine weitere Ableitung (Ism Makan/Zaman bei Form I, sonst dieselbe Ism-Maf'ul-Form wie in der Passiv-Zeile). Bei Muda\"af-Verben verschmelzen (Idgham) die beiden gleichen Radikale im Original meist zu einem einzigen Buchstaben mit Schadda; wo das nicht der Fall ist (z.B. weil eine dritte Kopie desselben Buchstabens durch die Form-II/V-Verdoppelung hinzukommt, oder weil die gedruckte Form bewusst getrennt steht), ist das zeichengenau wie im gerenderten Bild übernommen und in den Notes vermerkt.",
+        "Imperativ-Zeile hat im Original keine Ism-Zelle — Schlüssel 'ism' fehlt unter 'imperativ' komplett.",
+        "Amr/Nahy regulär mit Fekk-al-Idgham-bi-l-Fatha (verschmolzen, Fatha-Ausweich): تَحَاجَّ, لَا تَتَحَاجَّ.",
+        "Passiv-Madhi تُحُوجَّ trägt die reguläre Form-VI-Passiv-Infix-Waw (تُفُوعِلَ-Muster: تُ+حُ+و+جّ, mit Idgham der beiden identischen ج) — dasselbe Muster wie bei bab-tafaul6-lafif-tadawa (تُدُووِيَ), hier aber zusätzlich mit Idgham der beiden Wurzel-ج verschmolzen statt getrennt geschrieben (da ح-ج-ج anders als د-و-ي einen Muda\"af-Fall darstellt).",
+        "Ism Fa'il und Ism Maf'ul sind im Original BUCHSTABENGLEICH gedruckt (beide مُتَحَاجٌّ) — wie bei bab-mufaala3-mudaaf-shaqqa eine Eigenschaft der Muda\"af-Verschmelzung, zeichengenau übernommen.",
+        "Zeichengenau aus dem gerenderten Seitenbild von handout.pdf S. 124 (Abbildung 115, Tabellen-Bbox per PyMuPDF find_tables ermittelt) bei 12- bis 80-fachem Zoom, zellenweise zugeschnitten, gelesen."
+      ],
+      "source": {
+        "file": "handout.pdf",
+        "page": 124
+      }
+    },
+    {
+      "id": "bab-infial7-mudaaf-inshaqqa",
+      "kind": "verb",
+      "titleDe": "Bab Infi'al VII (Muda\"af) — اِنْشَقَّ (sich spalten)",
+      "termAr": "اِنْشَقَّ",
+      "columns": [
+        {
+          "id": "madhi",
+          "labelDe": "Madhi / Amr"
+        },
+        {
+          "id": "mudari",
+          "labelDe": "Mudari / Nahy"
+        },
+        {
+          "id": "masdar",
+          "labelDe": "Masdar"
+        },
+        {
+          "id": "ism",
+          "labelDe": "Ism (Fa'il / Maf'ul / Ableitung)"
+        }
+      ],
+      "rows": [
+        {
+          "id": "aktiv",
+          "labelDe": "Aktiv"
+        },
+        {
+          "id": "passiv",
+          "labelDe": "Passiv"
+        },
+        {
+          "id": "imperativ",
+          "labelDe": "Imperativ (Amr/Nahy)"
+        }
+      ],
+      "cells": {
+        "aktiv": {
+          "madhi": {
+            "ar": "اِنْشَقَّ",
+            "de": "es spaltete sich"
+          },
+          "mudari": {
+            "ar": "يَنْشَقُّ",
+            "de": "es spaltet sich"
+          },
+          "masdar": {
+            "ar": "اِنْشِقَاقًا",
+            "de": "die Spaltung (Masdar)"
+          },
+          "ism": {
+            "ar": "مُنْشَقٌّ",
+            "de": "sich Spaltender (Ism Fa'il)"
+          }
+        },
+        "passiv": {
+          "masdar": {
+            "ar": "اِنْشِقَاقًا",
+            "de": "die Spaltung (Masdar) — einzige Zelle der Passiv-Zeile"
+          }
+        },
+        "imperativ": {
+          "madhi": {
+            "ar": "اِنْشَقَّ",
+            "de": "Spalte dich!"
+          },
+          "mudari": {
+            "ar": "لَا تَنْشَقَّ",
+            "de": "Spalte dich nicht!"
+          }
+        }
+      },
+      "notes": [
+        "Kapitel 8.9 (Muda\"af — Verben mit verdoppeltem letztem Radikal) behandelt diese Verben mit denselben 3x4-Bab-Tabellen wie die vorigen Abschnitte. Gleiche Tabellenstruktur wie die Mahmooz-Bab-Tabellen in paradigmen-verben.json (3 Zeilen x 4 Spalten, keine gedruckten Kopfzeilen im Original; die Spalte 'fahuwa' (فَهُوَ) wurde als reine Lese-Einleitungsfloskel weggelassen). Zeile 'Aktiv' = Madhi/Mudari/Masdar/Ism Fa'il, Zeile 'Passiv' = die passiven Gegenstücke, Zeile 'Imperativ' = Amr/Nahy sowie eine weitere Ableitung (Ism Makan/Zaman bei Form I, sonst dieselbe Ism-Maf'ul-Form wie in der Passiv-Zeile). Bei Muda\"af-Verben verschmelzen (Idgham) die beiden gleichen Radikale im Original meist zu einem einzigen Buchstaben mit Schadda; wo das nicht der Fall ist (z.B. weil eine dritte Kopie desselben Buchstabens durch die Form-II/V-Verdoppelung hinzukommt, oder weil die gedruckte Form bewusst getrennt steht), ist das zeichengenau wie im gerenderten Bild übernommen und in den Notes vermerkt.",
+        "Form VII (Infi'al) hat keine eigene Passivform (intransitiv/reflexiv, wie bereits bei bab-infial7-naqis-inqada und bab-infial7-lafif-inzawa dokumentiert). Die Passiv-Zeile im Original enthält nur den (mit der Aktiv-Zeile identischen) zentrierten Masdar اِنْشِقَاقًا, alle anderen Zellen fehlen — hier daher nur 'masdar' unter 'passiv' abgelegt.",
+        "Imperativ-Zeile hat im Original keine Ism-Zelle — Schlüssel 'ism' fehlt unter 'imperativ' komplett.",
+        "Amr/Nahy regulär mit Fekk-al-Idgham-bi-l-Fatha: اِنْشَقَّ, لَا تَنْشَقَّ.",
+        "Zeichengenau aus dem gerenderten Seitenbild von handout.pdf S. 125 (Abbildung 116, Tabellen-Bbox per PyMuPDF find_tables ermittelt) bei 12- bis 80-fachem Zoom, zellenweise zugeschnitten, gelesen."
+      ],
+      "source": {
+        "file": "handout.pdf",
+        "page": 125
+      }
+    },
+    {
+      "id": "bab-iftial8-mudaaf-ishtadda",
+      "kind": "verb",
+      "titleDe": "Bab Ifti'al VIII (Muda\"af) — اِشْتَدَّ (heftig/intensiv werden)",
+      "termAr": "اِشْتَدَّ",
+      "columns": [
+        {
+          "id": "madhi",
+          "labelDe": "Madhi / Amr"
+        },
+        {
+          "id": "mudari",
+          "labelDe": "Mudari / Nahy"
+        },
+        {
+          "id": "masdar",
+          "labelDe": "Masdar"
+        },
+        {
+          "id": "ism",
+          "labelDe": "Ism (Fa'il / Maf'ul / Ableitung)"
+        }
+      ],
+      "rows": [
+        {
+          "id": "aktiv",
+          "labelDe": "Aktiv"
+        },
+        {
+          "id": "passiv",
+          "labelDe": "Passiv"
+        },
+        {
+          "id": "imperativ",
+          "labelDe": "Imperativ (Amr/Nahy)"
+        }
+      ],
+      "cells": {
+        "aktiv": {
+          "madhi": {
+            "ar": "اِشْتَدَّ",
+            "de": "es wurde heftig"
+          },
+          "mudari": {
+            "ar": "يَشْتَدُّ",
+            "de": "es wird heftig"
+          },
+          "masdar": {
+            "ar": "اِشْتِدَادًا",
+            "de": "die Heftigkeit/Intensivierung (Masdar)"
+          },
+          "ism": {
+            "ar": "مُشْتَدٌّ",
+            "de": "Heftig-Werdender (Ism Fa'il)"
+          }
+        },
+        "passiv": {
+          "madhi": {
+            "ar": "اُشْتُدَّ",
+            "de": "(Passiv, wie im Original gedruckt)"
+          },
+          "mudari": {
+            "ar": "يُشْتَدُّ",
+            "de": "(Passiv, wie im Original gedruckt)"
+          },
+          "masdar": {
+            "ar": "اِشْتِدَادًا",
+            "de": "die Heftigkeit/Intensivierung (Masdar)"
+          },
+          "ism": {
+            "ar": "مُشْتَدٌّ",
+            "de": "(im Original identisch mit dem Ism Fa'il geschrieben)"
+          }
+        },
+        "imperativ": {
+          "madhi": {
+            "ar": "اِشْتَدَّ",
+            "de": "Werde heftig!"
+          },
+          "mudari": {
+            "ar": "لَا تَشْتَدَّ",
+            "de": "Werde nicht heftig!"
+          }
+        }
+      },
+      "notes": [
+        "Kapitel 8.9 (Muda\"af — Verben mit verdoppeltem letztem Radikal) behandelt diese Verben mit denselben 3x4-Bab-Tabellen wie die vorigen Abschnitte. Gleiche Tabellenstruktur wie die Mahmooz-Bab-Tabellen in paradigmen-verben.json (3 Zeilen x 4 Spalten, keine gedruckten Kopfzeilen im Original; die Spalte 'fahuwa' (فَهُوَ) wurde als reine Lese-Einleitungsfloskel weggelassen). Zeile 'Aktiv' = Madhi/Mudari/Masdar/Ism Fa'il, Zeile 'Passiv' = die passiven Gegenstücke, Zeile 'Imperativ' = Amr/Nahy sowie eine weitere Ableitung (Ism Makan/Zaman bei Form I, sonst dieselbe Ism-Maf'ul-Form wie in der Passiv-Zeile). Bei Muda\"af-Verben verschmelzen (Idgham) die beiden gleichen Radikale im Original meist zu einem einzigen Buchstaben mit Schadda; wo das nicht der Fall ist (z.B. weil eine dritte Kopie desselben Buchstabens durch die Form-II/V-Verdoppelung hinzukommt, oder weil die gedruckte Form bewusst getrennt steht), ist das zeichengenau wie im gerenderten Bild übernommen und in den Notes vermerkt.",
+        "Imperativ-Zeile hat im Original keine Ism-Zelle — Schlüssel 'ism' fehlt unter 'imperativ' komplett.",
+        "Amr/Nahy regulär mit Fekk-al-Idgham-bi-l-Fatha: اِشْتَدَّ, لَا تَشْتَدَّ. Bemerkenswerter Kontrast zu Qur'an 2:217 (يَرْتَدِدْ), das für dieselbe Form VIII (dort Wurzel ردد) die getrennte Form zeigt — dieses Bab-Beispiel (Wurzel شدد) zeigt dagegen die verschmolzene Standardform, siehe Diskussion bei bab-mufaala3-mudaaf-shaqqa.",
+        "Ism Fa'il und Ism Maf'ul sind im Original BUCHSTABENGLEICH gedruckt (beide مُشْتَدٌّ).",
+        "Zeichengenau aus dem gerenderten Seitenbild von handout.pdf S. 125 (Abbildung 117, Tabellen-Bbox per PyMuPDF find_tables ermittelt) bei 12- bis 80-fachem Zoom, zellenweise zugeschnitten, gelesen."
+      ],
+      "source": {
+        "file": "handout.pdf",
+        "page": 125
+      }
+    },
+    {
+      "id": "bab-ifilal9-mudaaf-ihmarra",
+      "kind": "verb",
+      "titleDe": "Bab If'ilal IX (Muda\"af) — اِحْمَرَّ (rot werden)",
+      "termAr": "اِحْمَرَّ",
+      "columns": [
+        {
+          "id": "madhi",
+          "labelDe": "Madhi / Amr"
+        },
+        {
+          "id": "mudari",
+          "labelDe": "Mudari / Nahy"
+        },
+        {
+          "id": "masdar",
+          "labelDe": "Masdar"
+        },
+        {
+          "id": "ism",
+          "labelDe": "Ism (Fa'il / Maf'ul / Ableitung)"
+        }
+      ],
+      "rows": [
+        {
+          "id": "aktiv",
+          "labelDe": "Aktiv"
+        },
+        {
+          "id": "passiv",
+          "labelDe": "Passiv"
+        },
+        {
+          "id": "imperativ",
+          "labelDe": "Imperativ (Amr/Nahy)"
+        }
+      ],
+      "cells": {
+        "aktiv": {
+          "madhi": {
+            "ar": "اِحْمَرَّ",
+            "de": "er/es wurde rot"
+          },
+          "mudari": {
+            "ar": "يَحْمَرُّ",
+            "de": "er/es wird rot"
+          },
+          "masdar": {
+            "ar": "اِحْمِرَارًا",
+            "de": "das Rotwerden (Masdar)"
+          },
+          "ism": {
+            "ar": "مُحْمَرٌّ",
+            "de": "Rot-Werdender (Ism Fa'il)"
+          }
+        },
+        "passiv": {
+          "masdar": {
+            "ar": "اِحْمِرَارًا",
+            "de": "das Rotwerden (Masdar) — einzige Zelle der Passiv-Zeile"
+          }
+        },
+        "imperativ": {
+          "madhi": {
+            "ar": "اِحْمَرَّ",
+            "de": "Werde rot!"
+          },
+          "mudari": {
+            "ar": "لَا تَحْمَرَّ",
+            "de": "Werde nicht rot!"
+          }
+        }
+      },
+      "notes": [
+        "Kapitel 8.9 (Muda\"af — Verben mit verdoppeltem letztem Radikal) behandelt diese Verben mit denselben 3x4-Bab-Tabellen wie die vorigen Abschnitte. Gleiche Tabellenstruktur wie die Mahmooz-Bab-Tabellen in paradigmen-verben.json (3 Zeilen x 4 Spalten, keine gedruckten Kopfzeilen im Original; die Spalte 'fahuwa' (فَهُوَ) wurde als reine Lese-Einleitungsfloskel weggelassen). Zeile 'Aktiv' = Madhi/Mudari/Masdar/Ism Fa'il, Zeile 'Passiv' = die passiven Gegenstücke, Zeile 'Imperativ' = Amr/Nahy sowie eine weitere Ableitung (Ism Makan/Zaman bei Form I, sonst dieselbe Ism-Maf'ul-Form wie in der Passiv-Zeile). Bei Muda\"af-Verben verschmelzen (Idgham) die beiden gleichen Radikale im Original meist zu einem einzigen Buchstaben mit Schadda; wo das nicht der Fall ist (z.B. weil eine dritte Kopie desselben Buchstabens durch die Form-II/V-Verdoppelung hinzukommt, oder weil die gedruckte Form bewusst getrennt steht), ist das zeichengenau wie im gerenderten Bild übernommen und in den Notes vermerkt.",
+        "Bab If'ilal (IX, اِفْعَلَّ) ist laut Einführung auf S. 122 einer der Sonderfälle, die trotz eines dritten (Thulathi-Mazid-Fihi-)Wurzelbuchstabens den Regeln des Muda\"af folgen, weil das Verdopplungsmuster selbst einen Buchstaben mit dem Wurzelbuchstaben teilt; verwendet typischerweise für Farben/Eigenschaften und ist intransitiv (daher keine Passivform, wie bei Form VII).",
+        "Die Passiv-Zeile im Original enthält nur den zentrierten Masdar اِحْمِرَارًا (identisch mit der Aktiv-Zeile) — hier daher nur 'masdar' unter 'passiv' abgelegt.",
+        "Imperativ-Zeile hat im Original keine Ism-Zelle — Schlüssel 'ism' fehlt unter 'imperativ' komplett.",
+        "Amr/Nahy regulär mit Fekk-al-Idgham-bi-l-Fatha: اِحْمَرَّ, لَا تَحْمَرَّ.",
+        "Zeichengenau aus dem gerenderten Seitenbild von handout.pdf S. 125 (Abbildung 118, Tabellen-Bbox per PyMuPDF find_tables ermittelt) bei 12- bis 80-fachem Zoom, zellenweise zugeschnitten, gelesen."
+      ],
+      "source": {
+        "file": "handout.pdf",
+        "page": 125
+      }
+    },
+    {
+      "id": "bab-istifal10-mudaaf-istahabba",
+      "kind": "verb",
+      "titleDe": "Bab Istif'al X (Muda\"af) — اِسْتَحَبَّ (für empfehlenswert halten, bevorzugen)",
+      "termAr": "اِسْتَحَبَّ",
+      "columns": [
+        {
+          "id": "madhi",
+          "labelDe": "Madhi / Amr"
+        },
+        {
+          "id": "mudari",
+          "labelDe": "Mudari / Nahy"
+        },
+        {
+          "id": "masdar",
+          "labelDe": "Masdar"
+        },
+        {
+          "id": "ism",
+          "labelDe": "Ism (Fa'il / Maf'ul / Ableitung)"
+        }
+      ],
+      "rows": [
+        {
+          "id": "aktiv",
+          "labelDe": "Aktiv"
+        },
+        {
+          "id": "passiv",
+          "labelDe": "Passiv"
+        },
+        {
+          "id": "imperativ",
+          "labelDe": "Imperativ (Amr/Nahy)"
+        }
+      ],
+      "cells": {
+        "aktiv": {
+          "madhi": {
+            "ar": "اِسْتَحَبَّ",
+            "de": "er hielt für empfehlenswert"
+          },
+          "mudari": {
+            "ar": "يَسْتَحِبُّ",
+            "de": "er hält für empfehlenswert"
+          },
+          "masdar": {
+            "ar": "اِسْتِحْبَابًا",
+            "de": "das Für-empfehlenswert-Halten (Masdar)"
+          },
+          "ism": {
+            "ar": "مُسْتَحِبٌّ",
+            "de": "für empfehlenswert Haltender (Ism Fa'il)"
+          }
+        },
+        "passiv": {
+          "madhi": {
+            "ar": "اُسْتُحِبَّ",
+            "de": "es wurde für empfehlenswert gehalten"
+          },
+          "mudari": {
+            "ar": "يُسْتَحَبُّ",
+            "de": "es wird für empfehlenswert gehalten"
+          },
+          "masdar": {
+            "ar": "اِسْتِحْبَابًا",
+            "de": "das Für-empfehlenswert-Halten (Masdar)"
+          },
+          "ism": {
+            "ar": "مُسْتَحَبٌّ",
+            "de": "für empfehlenswert Gehaltenes (Ism Maf'ul)"
+          }
+        },
+        "imperativ": {
+          "madhi": {
+            "ar": "اِسْتَحِبَّ",
+            "de": "Halte für empfehlenswert!"
+          },
+          "mudari": {
+            "ar": "لَا تَسْتَحِبَّ",
+            "de": "Halte nicht für empfehlenswert!"
+          }
+        }
+      },
+      "notes": [
+        "Kapitel 8.9 (Muda\"af — Verben mit verdoppeltem letztem Radikal) behandelt diese Verben mit denselben 3x4-Bab-Tabellen wie die vorigen Abschnitte. Gleiche Tabellenstruktur wie die Mahmooz-Bab-Tabellen in paradigmen-verben.json (3 Zeilen x 4 Spalten, keine gedruckten Kopfzeilen im Original; die Spalte 'fahuwa' (فَهُوَ) wurde als reine Lese-Einleitungsfloskel weggelassen). Zeile 'Aktiv' = Madhi/Mudari/Masdar/Ism Fa'il, Zeile 'Passiv' = die passiven Gegenstücke, Zeile 'Imperativ' = Amr/Nahy sowie eine weitere Ableitung (Ism Makan/Zaman bei Form I, sonst dieselbe Ism-Maf'ul-Form wie in der Passiv-Zeile). Bei Muda\"af-Verben verschmelzen (Idgham) die beiden gleichen Radikale im Original meist zu einem einzigen Buchstaben mit Schadda; wo das nicht der Fall ist (z.B. weil eine dritte Kopie desselben Buchstabens durch die Form-II/V-Verdoppelung hinzukommt, oder weil die gedruckte Form bewusst getrennt steht), ist das zeichengenau wie im gerenderten Bild übernommen und in den Notes vermerkt.",
+        "Imperativ-Zeile hat im Original keine Ism-Zelle — Schlüssel 'ism' fehlt unter 'imperativ' komplett.",
+        "Amr/Nahy regulär mit Fekk-al-Idgham-bi-l-Fatha: اِسْتَحِبَّ, لَا تَسْتَحِبَّ.",
+        "Zeichengenau aus dem gerenderten Seitenbild von handout.pdf S. 125 (Abbildung 119, Tabellen-Bbox per PyMuPDF find_tables ermittelt) bei 12- bis 80-fachem Zoom, zellenweise zugeschnitten, gelesen."
+      ],
+      "source": {
+        "file": "handout.pdf",
+        "page": 125
+      }
+    },
+    {
+      "id": "bab-ifilal11-mudaaf-ihmaarra",
+      "kind": "verb",
+      "titleDe": "Bab If'ilal XI (Muda\"af) — اِحْمَارَّ (sehr rot/intensiv rot werden)",
+      "termAr": "اِحْمَارَّ",
+      "columns": [
+        {
+          "id": "madhi",
+          "labelDe": "Madhi / Amr"
+        },
+        {
+          "id": "mudari",
+          "labelDe": "Mudari / Nahy"
+        },
+        {
+          "id": "masdar",
+          "labelDe": "Masdar"
+        },
+        {
+          "id": "ism",
+          "labelDe": "Ism (Fa'il / Maf'ul / Ableitung)"
+        }
+      ],
+      "rows": [
+        {
+          "id": "aktiv",
+          "labelDe": "Aktiv"
+        },
+        {
+          "id": "passiv",
+          "labelDe": "Passiv"
+        },
+        {
+          "id": "imperativ",
+          "labelDe": "Imperativ (Amr/Nahy)"
+        }
+      ],
+      "cells": {
+        "aktiv": {
+          "madhi": {
+            "ar": "اِحْمَارَّ",
+            "de": "er/es wurde sehr rot"
+          },
+          "mudari": {
+            "ar": "يَحْمَارُّ",
+            "de": "er/es wird sehr rot"
+          },
+          "masdar": {
+            "ar": "اِحْمِيرَارًا",
+            "de": "das Sehr-Rotwerden (Masdar)"
+          },
+          "ism": {
+            "ar": "مُحْمَارٌّ",
+            "de": "sehr Rot-Werdender (Ism Fa'il)"
+          }
+        },
+        "passiv": {
+          "masdar": {
+            "ar": "اِحْمِيرَارًا",
+            "de": "das Sehr-Rotwerden (Masdar) — einzige Zelle der Passiv-Zeile"
+          }
+        },
+        "imperativ": {
+          "madhi": {
+            "ar": "اِحْمَارَّ",
+            "de": "Werde sehr rot!"
+          },
+          "mudari": {
+            "ar": "لَا تَحْمَارَّ",
+            "de": "Werde nicht sehr rot!"
+          }
+        }
+      },
+      "notes": [
+        "Kapitel 8.9 (Muda\"af — Verben mit verdoppeltem letztem Radikal) behandelt diese Verben mit denselben 3x4-Bab-Tabellen wie die vorigen Abschnitte. Gleiche Tabellenstruktur wie die Mahmooz-Bab-Tabellen in paradigmen-verben.json (3 Zeilen x 4 Spalten, keine gedruckten Kopfzeilen im Original; die Spalte 'fahuwa' (فَهُوَ) wurde als reine Lese-Einleitungsfloskel weggelassen). Zeile 'Aktiv' = Madhi/Mudari/Masdar/Ism Fa'il, Zeile 'Passiv' = die passiven Gegenstücke, Zeile 'Imperativ' = Amr/Nahy sowie eine weitere Ableitung (Ism Makan/Zaman bei Form I, sonst dieselbe Ism-Maf'ul-Form wie in der Passiv-Zeile). Bei Muda\"af-Verben verschmelzen (Idgham) die beiden gleichen Radikale im Original meist zu einem einzigen Buchstaben mit Schadda; wo das nicht der Fall ist (z.B. weil eine dritte Kopie desselben Buchstabens durch die Form-II/V-Verdoppelung hinzukommt, oder weil die gedruckte Form bewusst getrennt steht), ist das zeichengenau wie im gerenderten Bild übernommen und in den Notes vermerkt.",
+        "Bab If'ilal (XI, اِفْعَالَّ) ist die zweite der drei Sonderformen aus der Einführung auf S. 122 (intensivierte Variante von Form IX, mit langem Alif nach dem 2. Radikal); intransitiv, daher keine Passivform.",
+        "Die Passiv-Zeile im Original enthält nur den zentrierten Masdar اِحْمِيرَارًا (identisch mit der Aktiv-Zeile) — hier daher nur 'masdar' unter 'passiv' abgelegt.",
+        "Imperativ-Zeile hat im Original keine Ism-Zelle — Schlüssel 'ism' fehlt unter 'imperativ' komplett.",
+        "Amr/Nahy regulär mit Fekk-al-Idgham-bi-l-Fatha: اِحْمَارَّ, لَا تَحْمَارَّ.",
+        "Zeichengenau aus dem gerenderten Seitenbild von handout.pdf S. 125 (Abbildung 120, Tabellen-Bbox per PyMuPDF find_tables ermittelt) bei 12- bis 80-fachem Zoom, zellenweise zugeschnitten, gelesen."
+      ],
+      "source": {
+        "file": "handout.pdf",
+        "page": 125
+      }
+    },
+    {
+      "id": "bab-ifillal4-mudaaf-iqshaarra",
+      "kind": "verb",
+      "titleDe": "Bab If'illal \"(IV)\" (Muda\"af) — اِقْشَعَرَّ (schaudern, Gänsehaut bekommen)",
+      "termAr": "اِقْشَعَرَّ",
+      "columns": [
+        {
+          "id": "madhi",
+          "labelDe": "Madhi / Amr"
+        },
+        {
+          "id": "mudari",
+          "labelDe": "Mudari / Nahy"
+        },
+        {
+          "id": "masdar",
+          "labelDe": "Masdar"
+        },
+        {
+          "id": "ism",
+          "labelDe": "Ism (Fa'il / Maf'ul / Ableitung)"
+        }
+      ],
+      "rows": [
+        {
+          "id": "aktiv",
+          "labelDe": "Aktiv"
+        },
+        {
+          "id": "passiv",
+          "labelDe": "Passiv"
+        },
+        {
+          "id": "imperativ",
+          "labelDe": "Imperativ (Amr/Nahy)"
+        }
+      ],
+      "cells": {
+        "aktiv": {
+          "madhi": {
+            "ar": "اِقْشَعَرَّ",
+            "de": "er schauderte"
+          },
+          "mudari": {
+            "ar": "يَقْشَعِرُّ",
+            "de": "er schaudert"
+          },
+          "masdar": {
+            "ar": "اِقْشِعْرَارًا",
+            "de": "das Schaudern (Masdar)"
+          },
+          "ism": {
+            "ar": "مُقْشَعِرٌّ",
+            "de": "Schaudernder (Ism Fa'il)"
+          }
+        },
+        "passiv": {
+          "masdar": {
+            "ar": "اِقْشِعْرَارًا",
+            "de": "das Schaudern (Masdar) — einzige Zelle der Passiv-Zeile"
+          }
+        },
+        "imperativ": {
+          "madhi": {
+            "ar": "اِقْشَعِرَّ",
+            "de": "Schaudere!"
+          },
+          "mudari": {
+            "ar": "لَا تَقْشَعِرَّ",
+            "de": "Schaudere nicht!"
+          }
+        }
+      },
+      "notes": [
+        "Kapitel 8.9 (Muda\"af — Verben mit verdoppeltem letztem Radikal) behandelt diese Verben mit denselben 3x4-Bab-Tabellen wie die vorigen Abschnitte. Gleiche Tabellenstruktur wie die Mahmooz-Bab-Tabellen in paradigmen-verben.json (3 Zeilen x 4 Spalten, keine gedruckten Kopfzeilen im Original; die Spalte 'fahuwa' (فَهُوَ) wurde als reine Lese-Einleitungsfloskel weggelassen). Zeile 'Aktiv' = Madhi/Mudari/Masdar/Ism Fa'il, Zeile 'Passiv' = die passiven Gegenstücke, Zeile 'Imperativ' = Amr/Nahy sowie eine weitere Ableitung (Ism Makan/Zaman bei Form I, sonst dieselbe Ism-Maf'ul-Form wie in der Passiv-Zeile). Bei Muda\"af-Verben verschmelzen (Idgham) die beiden gleichen Radikale im Original meist zu einem einzigen Buchstaben mit Schadda; wo das nicht der Fall ist (z.B. weil eine dritte Kopie desselben Buchstabens durch die Form-II/V-Verdoppelung hinzukommt, oder weil die gedruckte Form bewusst getrennt steht), ist das zeichengenau wie im gerenderten Bild übernommen und in den Notes vermerkt.",
+        "Dies ist die dritte der drei Sonderformen aus der Einführung auf S. 122 — ein Ruba'i Mazid Fihi (augmentierte Vierradikal-Wurzel قشعر) mit einem angehängten, den letzten Radikal verdoppelnden Muster (اِفْعَلَّ-artig), das deshalb den Muda\"af-Regeln folgt, obwohl die zugrundeliegende Wurzel vierradikalig ist. Die Original-Überschrift lautet ausdrücklich 'Bab If'illal (IV)' — diese Nummerierung '(IV)' ist NICHT die gewöhnliche Form-IV-Zählung (اَفْعَلَ), sondern eine eigene, im Handout nicht weiter erläuterte Zählung für diese Sonderform; zeichengenau wie im Original übernommen, nicht interpretiert oder korrigiert.",
+        "Intransitiv (wie If'ilal IX/XI), daher keine Passivform; die Passiv-Zeile im Original enthält nur den zentrierten Masdar اِقْشِعْرَارًا.",
+        "Imperativ-Zeile hat im Original keine Ism-Zelle — Schlüssel 'ism' fehlt unter 'imperativ' komplett.",
+        "Amr/Nahy regulär mit Fekk-al-Idgham-bi-l-Fatha: اِقْشَعِرَّ, لَا تَقْشَعِرَّ.",
+        "Zeichengenau aus dem gerenderten Seitenbild von handout.pdf S. 126 (Abbildung 121, Tabellen-Bbox per PyMuPDF find_tables ermittelt) bei 12- bis 80-fachem Zoom, zellenweise zugeschnitten, gelesen."
+      ],
+      "source": {
+        "file": "handout.pdf",
+        "page": 126
+      }
+    }
+  ]
+}

@@ -9,7 +9,7 @@
 import { Image } from 'expo-image';
 import { router, useFocusEffect } from 'expo-router';
 import { useQuery } from '@tanstack/react-query';
-import { useCallback, useState } from 'react';
+import { useCallback, useEffect, useRef, useState } from 'react';
 import { Alert, FlatList, Pressable, ScrollView, StyleSheet, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
@@ -23,11 +23,15 @@ import { ThemedView } from '@/components/themed-view';
 import { Brand, Colors, MaxContentWidth, Spacing } from '@/constants/theme';
 import { ScreenHeader } from '@/components/screen-header';
 import { ContentLanguageBadge } from '@/features/media/content-language-badge';
+import { contentLanguageNameKey, normalizeContentLanguage } from '@/features/media/content-language';
 import { AddToPlaylistSheet } from '@/features/video/add-to-playlist-sheet';
 import {
+  contentLanguagesOf,
   fetchVideoIndex,
+  filterByContentLanguage,
   formatDuration,
   groupEpisodesBySeries,
+  hasMultipleLanguages,
   hasMultipleSeries,
   type VideoEpisode,
 } from '@/features/video/data';
@@ -46,7 +50,7 @@ function seriesIcon(episodes: VideoEpisode[]): IconName {
 }
 
 export default function VideoListScreen() {
-  const { t } = useTranslation();
+  const { t, locale } = useTranslation();
   const scheme = useResolvedScheme();
   const colors = Colors[scheme];
 
@@ -71,8 +75,26 @@ export default function VideoListScreen() {
   const [activeSeries, setActiveSeries] = useState<string | null>(null);
 
   const episodes = data?.episodes ?? [];
-  const multiSeries = hasMultipleSeries(episodes);
-  const allGroups = groupEpisodesBySeries(episodes);
+
+  // Sprachfilter (Audit 2026-09-05): folgt standardmaessig der Oberflaechen-
+  // sprache, aber nur solange der Index UEBERHAUPT mehr als eine Inhalts-
+  // sprache fuehrt (heute: nur "de" — dieser Block bleibt dann komplett
+  // wirkungslos). `null` = alle Sprachen; ein Tipp auf "Alle" macht jede
+  // Sprache jederzeit erreichbar, nichts wird hart ausgeblendet.
+  const languages = contentLanguagesOf(episodes);
+  const multiLang = hasMultipleLanguages(episodes);
+  const [activeLang, setActiveLang] = useState<string | null>(null);
+  const langDefaultSet = useRef(false);
+  useEffect(() => {
+    if (langDefaultSet.current || languages.length < 2) return;
+    const uiLang = normalizeContentLanguage(locale);
+    setActiveLang(languages.includes(uiLang) ? uiLang : null);
+    langDefaultSet.current = true;
+  }, [languages, locale]);
+  const langFilteredEpisodes = multiLang ? filterByContentLanguage(episodes, activeLang) : episodes;
+
+  const multiSeries = hasMultipleSeries(langFilteredEpisodes);
+  const allGroups = groupEpisodesBySeries(langFilteredEpisodes);
   const visibleGroups = activeSeries ? allGroups.filter((g) => g.key === activeSeries) : allGroups;
   const rows: ListRow[] = [];
   let itemIndex = 0;
@@ -129,6 +151,30 @@ export default function VideoListScreen() {
                   </ThemedText>
                 </PressableCard>
               </View>
+
+              {multiLang && (
+                <ScrollView
+                  horizontal
+                  showsHorizontalScrollIndicator={false}
+                  contentContainerStyle={styles.filterRow}>
+                  <FilterChip
+                    label={t('reels.all')}
+                    active={activeLang === null}
+                    onPress={() => setActiveLang(null)}
+                  />
+                  {languages.map((lang) => {
+                    const nameKey = contentLanguageNameKey(lang);
+                    return (
+                      <FilterChip
+                        key={lang}
+                        label={nameKey ? t(nameKey) : lang.toUpperCase()}
+                        active={activeLang === lang}
+                        onPress={() => setActiveLang(activeLang === lang ? null : lang)}
+                      />
+                    );
+                  })}
+                </ScrollView>
+              )}
 
               {multiSeries && (
                 <ScrollView

@@ -17,6 +17,7 @@ import fs from 'fs';
 import path from 'path';
 import { createRequire as createNodeRequire } from 'module';
 import { fileURLToPath, pathToFileURL } from 'url';
+import { leseApkVersionVonUrl } from './lib/apk-version.mjs';
 
 const HIER = path.dirname(fileURLToPath(import.meta.url));
 const APP_ROOT = path.join(HIER, '..');
@@ -156,14 +157,43 @@ async function pruefeAsc() {
 }
 
 // ------------------------------------------------------------- Website-APK
+//
+// Befund 12.09.2026: Diese Pruefung machte bis dahin nur ein HTTP-HEAD und
+// verglich die Dateigroesse gegen 50 MB. Die auf salati.pro verlinkte APK auf
+// R2 stand zu dem Zeitpunkt auf versionCode 76 / 1.51.0, waehrend Play seit
+// dem 06.09. bereits versionCode 80 / 1.53.1 auslieferte - drei Fassungen
+// Rueckstand, unbemerkt, weil ein alter aber grosser Stand die Groessenpruefung
+// muehelos besteht. Jetzt wird zusaetzlich die tatsaechlich im APK stehende
+// Version gelesen (scripts/lib/apk-version.mjs, per HTTP-Range ohne die ganze
+// Datei zu laden) und gegen den Repo-Stand verglichen - wie pruefePlay()/
+// pruefeAsc() es fuer ihre Kanaele bereits tun.
 async function pruefeApk() {
   const r = await fetch(APK_URL, { method: 'HEAD' });
   const laenge = Number(r.headers.get('content-length') ?? 0);
   const typ = r.headers.get('content-type') ?? '?';
   // Unter 50 MB kann es die App nicht sein (Release-APK liegt bei ~265 MB) -
   // dann liegt dort vermutlich eine Fehlerseite oder ein abgebrochener Upload.
-  const plausibel = r.ok && laenge > 50_000_000;
-  zeile(plausibel ? 'OK' : 'FEHLER', 'Website-APK (R2)', `HTTP ${r.status}, ${mb(laenge)}, ${typ}`);
+  const groessePlausibel = r.ok && laenge > 50_000_000;
+  if (!groessePlausibel) {
+    zeile('FEHLER', 'Website-APK (R2)', `HTTP ${r.status}, ${mb(laenge)}, ${typ}`);
+    return;
+  }
+
+  let apkVersion;
+  try {
+    apkVersion = await leseApkVersionVonUrl(APK_URL);
+  } catch (e) {
+    zeile('FEHLER', 'Website-APK (R2)', `Version nicht lesbar (${e.message}), HTTP ${r.status}, ${mb(laenge)}, ${typ}`);
+    return;
+  }
+
+  const versionPasst = apkVersion.versionName === repoVersion && apkVersion.versionCode === repoVersionCode;
+  zeile(
+    versionPasst ? 'OK' : 'FEHLER',
+    'Website-APK (R2)',
+    `HTTP ${r.status}, ${mb(laenge)}, ${apkVersion.versionName}/${apkVersion.versionCode}` +
+      (versionPasst ? '' : ` (Repo steht auf ${repoVersion}/${repoVersionCode} - APK auf R2 hinkt hinterher)`),
+  );
 }
 
 // ------------------------------------------------------- Podcast + Handouts

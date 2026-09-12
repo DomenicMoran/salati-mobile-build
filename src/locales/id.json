@@ -27,6 +27,7 @@
     "halal": "Halal di Sekitar",
     "halalScanner": "Pemindai Halal",
     "study": "Kajian",
+    "lexikon": "Leksikon",
     "sync": "Sinkronisasi",
     "impressum": "Informasi Hukum",
     "datenschutz": "Kebijakan Privasi",
@@ -202,7 +203,61 @@
     "compareStageB": "Qari B …",
     "compareLoadError": "Audio tidak dapat dimuat.",
     "chooseReciterA": "Pilih qari A",
-    "chooseReciterB": "Pilih qari B"
+    "chooseReciterB": "Pilih qari B",
+    "wortAnalyse": {
+      "title": "Analisis Kata",
+      "fundstelle": "Surah {surah}, Ayat {ayah}, Kata {position}",
+      "rootLabel": "Akar Kata",
+      "lemmaLabel": "Bentuk Dasar",
+      "rootFrequency": "{count} kali dalam Al-Qur'an",
+      "rootNone": "Tidak ada akar kata yang tercatat untuk kata ini.",
+      "fragmentsTitle": "Fragmen",
+      "segmentKind": {
+        "prefix": "Awalan (سابقة)",
+        "stem": "Batang Kata (جذع)",
+        "suffix": "Akhiran (لاحقة)"
+      },
+      "wortartTitle": "Jenis Kata",
+      "satzrolleTitle": "Peran dalam Kalimat (I'rab)",
+      "satzrolleNoData": "Tidak ada data peran kalimat untuk kata ini.",
+      "satzrolleHeadNone": "Kata rujukannya tidak berada dalam ayat yang sama atau tidak diucapkan (dielisi).",
+      "satzrolleHeadLabel": "Merujuk pada: {wort}",
+      "morphologyNoData": "Data tata bahasa untuk surah ini belum tersedia.",
+      "lexikonButton": "Buka di Leksikon",
+      "verbTypLabel": "Jenis kata kerja",
+      "wortartAr": "أقسام الكلمة",
+      "fragmentsAr": "أجزاء الكلمة"
+    },
+    "sectionLesehilfen": "Bantuan membaca",
+    "sectionAussprache": "Pengucapan",
+    "sectionBedeutung": "Makna",
+    "sectionGrammatik": "Tata bahasa",
+    "captions": {
+      "beginnerMode": "Mengaktifkan transliterasi, huruf terpisah, dan kata per kata sekaligus — titik awal yang baik untuk belajar membaca Arab.",
+      "transliteration": "Menuliskan pelafalan dalam huruf Latin di bawah teks Arab.",
+      "isolatedLetters": "Menampilkan setiap huruf dalam bentuk berdiri sendiri, bukan tulisan sambung — memudahkan mengenali huruf satu per satu.",
+      "wordByWord": "Memecah ayat menjadi kata-kata tersendiri dengan terjemahannya di bawah setiap kata.",
+      "wordByWordTeilabdeckung": "Sekitar {n}% ayat memiliki makna kata dalam bahasamu, sisanya tetap dalam bahasa Inggris.",
+      "wordByWordLadefehler": "Makna kata dalam bahasamu belum bisa dimuat saat ini – selama itu belum berhasil, semuanya tetap dalam bahasa Inggris.",
+      "wordByWordWortlisteLadefehler": "Daftar kata surah ini tidak dapat dimuat saat ini – tanpanya tampilan kata demi kata tetap kosong sama sekali.",
+      "tajweed": "Mewarnai kaidah tajwid dalam teks agar diterapkan dengan benar saat membaca.",
+      "translation": "Terjemahan yang ditampilkan di bawah setiap ayat — sentuh untuk memilih edisi lain.",
+      "secondTranslation": "Menampilkan terjemahan kedua di samping yang pertama untuk dibandingkan.",
+      "tafsir": "Menampilkan penjelasan seorang ulama tentang ayat (tafsir) — latar belakang lebih lengkap daripada terjemahan biasa.",
+      "grammarColorModes": "Menyoroti satu ciri tata bahasa dengan warna pada ayat — sentuh lagi untuk mematikannya.",
+      "satzstruktur": "Menunjukkan kata mana yang berkaitan dengan kata lain dan peran apa dalam kalimat (I'rab).",
+      "wortAnalyseHint": "Sentuh kata mana pun untuk melihat analisis lengkapnya: akar kata, bentuk dasar, bagian kata, dan peran dalam kalimat."
+    },
+    "tajweedGrammarConflictHint": "Mode warna yang aktif menggantikan warna tajwid pada kata yang diwarnai.",
+    "grammatikIntro": {
+      "title": "Alat tata bahasa",
+      "what": "Mode warna menandai satu ciri tata bahasa langsung pada ayat, misalnya kata mana yang berupa kata benda, kata kerja, atau partikel. Struktur kalimat juga menunjukkan kata mana yang berkaitan dengan kata lain dan peran apa dalam kalimat (I'rab). Sentuh satu kata kapan saja untuk melihat analisis lengkapnya.",
+      "why": "Dengan begitu, susunan tata bahasa sebuah ayat menjadi terlihat, bukan hanya artinya — membantu belajar bahasa Arab dan memahami teks Al-Qur'an secara tepat, bahkan tanpa pengetahuan tata bahasa Arab sebelumnya."
+    },
+    "satzstruktur": {
+      "chip": "Struktur kalimat",
+      "title": "Struktur kalimat"
+    }
   },
   "hadith": {
     "languagesNote": "Ensiklopedia hadis nabawi terjemahan — dalam 14 bahasa aplikasi",
@@ -972,6 +1027,19 @@
         "deleteAll": "Hapus semua",
         "deleteAllConfirmTitle": "Hapus semua unduhan?",
         "deleteAllConfirmBody": "Semua video yang diunduh akan dihapus dari perangkat Anda."
+      },
+      "otherData": {
+        "title": "Data lainnya",
+        "hint": "Data tambahan yang diunduh aplikasi. Semua di sini dapat diunduh ulang bila diperlukan.",
+        "empty": "Tidak ada data lain yang tersimpan.",
+        "quranWords": "Data kata Al-Qur'an (analisis kata, kata per kata)",
+        "handouts": "Materi (PDF)",
+        "kiCorpus": "Sumber pengetahuan Salati AI",
+        "courses": "Data kursus",
+        "other": "Berkas aplikasi lainnya",
+        "delete": "Hapus",
+        "deleteConfirmTitle": "Hapus data?",
+        "deleteConfirmBody": "{name} akan dihapus dari perangkat dan diunduh lagi bila diperlukan."
       }
     },
     "appIcon": {
@@ -2636,12 +2704,179 @@
     "openInBrowser": "Buka di peramban",
     "viewerError": "PDF tidak dapat dimuat."
   },
+  "lexikon": {
+    "title": "Leksikon",
+    "subtitle": "Rujukan untuk akar kata, tata bahasa, tajwid, dan konkordansi Al-Qur'an",
+    "searchPlaceholder": "Cari di leksikon",
+    "tabs": {
+      "roots": "Akar Kata & Kosakata (جذر)",
+      "grammar": "Tata Bahasa & Sarf (صرف)",
+      "tajwid": "Tajwid (تجويد)",
+      "concordance": "Konkordansi"
+    },
+    "empty": {
+      "tajwid": "Kaidah tajwid belum ditambahkan."
+    },
+    "noResultsFor": "Tidak ada hasil untuk {query}.",
+    "occurrencesTruncated": "{shown} pertama dari {total} kemunculan",
+    "search": {
+      "loading": "Menyiapkan pencarian…",
+      "sectionRoots": {
+        "name": "Akar Kata",
+        "ar": "جَذْر"
+      },
+      "sectionVocabulary": {
+        "name": "Kosakata",
+        "ar": "لَفْظ"
+      },
+      "sectionTerms": {
+        "name": "Istilah Tata Bahasa",
+        "ar": "مُصْطَلَح"
+      },
+      "moreResults": "Ada hasil lain. Persempit pencarian Anda."
+    },
+    "roots": {
+      "loadError": "Daftar akar kata tidak dapat dimuat.",
+      "loading": "Memuat akar kata…",
+      "sortByFrequency": {
+        "name": "Frekuensi",
+        "ar": "تَكْرَار"
+      },
+      "sortByAlphabet": {
+        "name": "Abjad",
+        "ar": "أَبْجَدِيّ"
+      },
+      "occurrences": "{n} kemunculan",
+      "lemmaCount": "{n} bentuk kata",
+      "totalCount": "{n} akar kata"
+    },
+    "wurzel": {
+      "notFound": "Akar kata ini tidak ditemukan.",
+      "loadError": "Data akar kata tidak dapat dimuat.",
+      "occurrencesInQuran": "{n} kemunculan dalam Al-Qur'an",
+      "sectionForms": {
+        "name": "Bentuk Kata Turunan",
+        "ar": "الصِّيَغ المُشْتَقَّة"
+      },
+      "sectionOccurrences": {
+        "name": "Lokasi Kemunculan",
+        "ar": "مَوَاضِع الوُرُود"
+      },
+      "formsUnclassified": {
+        "name": "Bentuk Lainnya",
+        "ar": "غَيْر مُصَنَّف"
+      },
+      "formsLoading": "Mencocokkan bentuk kata…",
+      "formsLoadingProgress": "Memuat bentuk kata… ({loaded} dari {total})",
+      "formsLoadError": "Bentuk kata tidak dapat dimuat."
+    },
+    "concordance": {
+      "searchPlaceholder": "Masukkan kata atau akar kata Arab",
+      "prompt": "Masukkan kata atau akar kata Arab untuk melihat kemunculannya dalam Al-Qur'an.",
+      "matchesHeading": "Hasil Cocok",
+      "occurrencesHeading": "Lokasi Kemunculan",
+      "totalOccurrences": "{n} kemunculan",
+      "rootLabel": {
+        "name": "Akar Kata",
+        "ar": "جَذْر"
+      },
+      "lemmaLabel": {
+        "name": "Bentuk Kata",
+        "ar": "لَفْظ"
+      }
+    },
+    "grammar": {
+      "loading": "Memuat istilah…",
+      "loadError": "Konten tata bahasa tidak dapat dimuat.",
+      "notFound": "Istilah ini tidak ditemukan.",
+      "termCount": "{n} istilah",
+      "sectionErkennung": "Ciri Pengenal",
+      "sectionBelege": "Contoh dari Al-Qur'an",
+      "sectionLernen": "Tips Belajar",
+      "sectionTabellen": "Tabel Bentuk",
+      "sectionSiehe": "Lihat Juga",
+      "germanOnlyNote": "Penjelasan ini saat ini hanya tersedia dalam bahasa Jerman.",
+      "bereichPartikelSyntax": {
+        "name": "Partikel & Tata Kalimat",
+        "ar": "الحروف والنحو"
+      },
+      "tables": {
+        "toggleBegriffe": "Istilah",
+        "toggleTabellen": "Tabel Bentuk",
+        "searchPlaceholder": "Cari tabel bentuk",
+        "noResults": "Tidak ada tabel yang ditemukan.",
+        "tableCount": "{n} tabel",
+        "categoryNomenPronomen": {
+          "name": "Nomina & Pronomina",
+          "ar": "الاسم والضمائر"
+        },
+        "categoryVerbMatrizen": {
+          "name": "Kata Kerja: Tabel Konjugasi Lengkap",
+          "ar": "تصريف الفعل الكامل"
+        },
+        "categoryVerbstammFamilien": {
+          "name": "Rumpun Bentuk Dasar Kata Kerja (Bab)",
+          "ar": "أبواب الفعل"
+        },
+        "categoryVerbstammAbleitungen": {
+          "name": "Turunan Akar Kata Kerja (Bentuk II–X)",
+          "ar": "أوزان الفعل المزيد"
+        },
+        "categoryPartikelnZahlenWortschatz": {
+          "name": "Partikel, Angka & Kosakata",
+          "ar": "الحروف والأعداد والمفردات"
+        },
+        "verbFamilieSahih": {
+          "name": "Shahih (sehat)",
+          "ar": "صحيح"
+        },
+        "verbFamilieMahmuz": {
+          "name": "Mahmuz (berhamzah)",
+          "ar": "مهموز"
+        },
+        "verbFamilieMithal": {
+          "name": "Mitsal (asimilasi)",
+          "ar": "مثال"
+        },
+        "verbFamilieAjwaf": {
+          "name": "Ajwaf (berongga)",
+          "ar": "أجوف"
+        },
+        "verbFamilieNaaqis": {
+          "name": "Naqish (cacat)",
+          "ar": "ناقص"
+        },
+        "verbFamilieLafif": {
+          "name": "Lafif (dwi-lemah)",
+          "ar": "لفيف"
+        },
+        "verbFamilieMudaaf": {
+          "name": "Mudha'af (rangkap)",
+          "ar": "مضاعف"
+        },
+        "verbFamilieMurakkab": {
+          "name": "Murakkab (gabungan)",
+          "ar": "مركب"
+        }
+      },
+      "wortlisten": {
+        "toggleWortlisten": "Daftar Kosakata",
+        "germanOnlyMeaningNote": "Arti bahasa Jerman dalam daftar kosakata ini saat ini hanya tersedia dalam bahasa Jerman.",
+        "listCount": "{n} daftar"
+      }
+    },
+    "verbtyp": {
+      "title": "Rumpun Kata Kerja",
+      "notFound": "Belum ada tabel bentuk untuk jenis kata kerja ini."
+    }
+  },
   "lizenzen": {
     "title": "Sumber & lisensi",
     "subtitle": "Pemegang hak dan lisensi konten yang dipakai di Salati",
     "intro": "Salati memakai teks, audio, data, huruf, dan model dari pihak ketiga. Semua pemegang hak beserta lisensi yang menjadi dasar penggunaannya tercantum di sini. Bila sebuah lisensi mensyaratkan penyebutan - misalnya Apache-2.0, MIT, atau ODbL - halaman ini memenuhinya.",
     "categories": {
       "quran": "Teks Al-Qur'an & terjemahan",
+      "adhan": "Rekaman azan",
       "recitation": "Bacaan",
       "hadith": "Kumpulan hadis",
       "font": "Huruf",
@@ -2659,7 +2894,8 @@
       "publicDomain": "Unlicense (domain publik)",
       "fontEula": "Lisensi produsen (tertanam dalam huruf)",
       "hadeethencTerms": "Pemuatan tanpa perubahan dengan penyebutan sumber (ketentuan penyedia)",
-      "rassoulRelease": "Dibebaskan oleh penulis - penggandaan tanpa perubahan dengan menyebut sumber"
+      "rassoulRelease": "Dibebaskan oleh penulis - penggandaan tanpa perubahan dengan menyebut sumber",
+      "quranicCorpusTerms": "Wajib menyebutkan sumber dan menautkan (ketentuan penggunaan karya)"
     },
     "distributedSection": "Yang kami sebarkan sendiri",
     "distributedText": "Sebagian besar konten diambil perangkatmu langsung dari penyedianya - kami tidak menyebarkannya ulang, jadi menyebut sumbernya sudah cukup. Yang kami sebarkan sendiri: model bahasa Qwen2.5-1.5B-Instruct dan model pengenalan suara dari Tarteel (keduanya dari penyimpanan kami sendiri), fon KFGQPC HAFS, serta seluruh pustaka perangkat lunak di dalam paket aplikasi. Untuk karya-karya itu teks lisensi lengkapnya dilampirkan - bisa dibuka langsung pada entri terkait. Kami juga menyalurkan sendiri tafsir berbahasa Jerman karya Abu-r-Ridā Muhammad Ibn Ahmad Ibn Rassoul - penulis membebaskannya dari hak cipta, tetapi mensyaratkan penyebutan sumber.",
@@ -2785,6 +3021,983 @@
       "charakter-sadaqa": "Bersedekah {n} kali",
       "charakter-eltern": "Menelepon atau mengunjungi orang tua {n} kali",
       "charakter-helfen": "Menolong seseorang {n} kali"
+    }
+  },
+  "grammatik": {
+    "fragmentrollen": {
+      "artikel": {
+        "name": "Awalan Kepastian (Al)",
+        "ar": "أل التعريف",
+        "info": "Awalan ال yang membuat sebuah isim menjadi tertentu, mirip dengan kata \"itu/tersebut\" dalam bahasa Indonesia."
+      },
+      "fragepartikel": {
+        "name": "Partikel Tanya",
+        "ar": "حرف استفهام",
+        "info": "Membuka sebuah pertanyaan tanpa memiliki makna tersendiri."
+      },
+      "konjunktion": {
+        "name": "Kata Sambung",
+        "ar": "حرف عطف",
+        "info": "Menghubungkan dua kata atau bagian kalimat yang sederajat, misalnya \"dan\" atau \"atau\"."
+      },
+      "praeposition": {
+        "name": "Kata Depan (Harf Jar)",
+        "ar": "حرف جر",
+        "info": "Berada di depan sebuah isim dan menghubungkannya dengan bagian kalimat lain; isim setelahnya pun berada dalam kasus jarr."
+      },
+      "pronomenSuffix": {
+        "name": "Kata Ganti Bersambung",
+        "ar": "ضمير متصل",
+        "info": "Kata ganti yang langsung menempel pada isim, kata kerja, atau kata depan, misalnya untuk \"bukunya\" atau \"kepadanya\"."
+      },
+      "stamm": {
+        "name": "Akar/Batang Kata",
+        "ar": "الجذع",
+        "info": "Bagian inti sebuah kata yang menjadi tempat menempelnya awalan dan akhiran."
+      },
+      "verneinung": {
+        "name": "Partikel Negasi",
+        "ar": "حرف نفي",
+        "info": "Menyangkal pernyataan sebuah kalimat atau kata kerja, misalnya \"tidak\" atau \"bukan\"."
+      }
+    },
+    "herkunft": {
+      "beleg": {
+        "label": "Tercatat dalam Korpus",
+        "info": "Ciri ini memang tertulis secara eksplisit seperti itu dalam korpus yang menjadi acuan."
+      },
+      "hergeleitet": {
+        "label": "Diturunkan dari Kaidah",
+        "info": "Ciri ini tidak dicatat secara eksplisit dalam korpus dan ditambahkan berdasarkan kaidah tata bahasa yang baku — misalnya karena kepastian, jumlah, atau bentuk kata kerja tidak ditandai secara khusus pada keadaan standar yang tidak bertanda."
+      }
+    },
+    "ismEigenschaften": {
+      "bestimmtheit": {
+        "name": "Kepastian (Ma'rifah/Nakirah)",
+        "ar": "التعريف والتنكير",
+        "info": "Menentukan apakah sebuah isim bersifat tertentu (\"buku itu\") atau tidak tertentu (\"sebuah buku\") — dalam bahasa Arab biasanya ditandai dengan awalan ال.",
+        "werte": {
+          "definite": {
+            "name": "tertentu (ma'rifah)",
+            "ar": "معرفة"
+          },
+          "indefinite": {
+            "name": "tidak tertentu (nakirah)",
+            "ar": "نكرة"
+          }
+        }
+      },
+      "genus": {
+        "name": "Jenis Kelamin Kata (Mudzakkar/Muannats)",
+        "ar": "التذكير والتأنيث",
+        "info": "Menunjukkan apakah sebuah isim berjenis maskulin atau feminin — dalam bahasa Arab biasanya dikenali dari akhiran ة.",
+        "werte": {
+          "f": {
+            "name": "feminin",
+            "ar": "مؤنث"
+          },
+          "m": {
+            "name": "maskulin",
+            "ar": "مذكر"
+          }
+        }
+      },
+      "kasus": {
+        "name": "I'rab (Kasus)",
+        "ar": "الإعراب",
+        "info": "Menunjukkan fungsi tata bahasa sebuah isim dalam kalimat lewat harakat akhir — sebagai subjek, objek, atau berkaitan dengan kata depan/susunan idhafah.",
+        "werte": {
+          "acc": {
+            "name": "nashab",
+            "ar": "نصب"
+          },
+          "gen": {
+            "name": "jarr",
+            "ar": "جر"
+          },
+          "nom": {
+            "name": "rafa'",
+            "ar": "رفع"
+          }
+        }
+      },
+      "numerus": {
+        "name": "Jumlah (Adad)",
+        "ar": "العدد",
+        "info": "Menunjukkan apakah yang dimaksud satu, dua, atau lebih dari dua orang/benda — bahasa Arab membedakan bentuk dua (dual) selain tunggal dan jamak.",
+        "werte": {
+          "du": {
+            "name": "dua (mutsanna)",
+            "ar": "مثنى"
+          },
+          "pl": {
+            "name": "jamak",
+            "ar": "جمع"
+          },
+          "sg": {
+            "name": "tunggal",
+            "ar": "مفرد"
+          }
+        }
+      }
+    },
+    "nomenFlexibilitaet": {
+      "mabni": {
+        "name": "Mabni (Tetap)",
+        "ar": "مبني",
+        "info": "Kata dengan akhiran tetap yang tidak berubah terlepas dari kasusnya — seperti pada banyak kata ganti dan partikel."
+      },
+      "mamnuMinSarf": {
+        "name": "Mamnu' min ash-Sharf (Diptot)",
+        "ar": "ممنوع من الصرف",
+        "info": "Isim yang dalam keadaan tidak tertentu tidak bisa menerima tanwin maupun akhiran jarr -i, biasanya karena bentuk atau maknanya, misalnya pada banyak nama diri dan kata sifat warna. Namun, jika kata benda semacam itu menjadi unsur pertama dari gabungan genitif (idafa), pembatasan ini tidak berlaku lagi dan kata tersebut kembali menerima kasrah biasa dalam kasus genitif."
+      },
+      "murab": {
+        "name": "Mu'rab (Bisa Berubah)",
+        "ar": "معرب",
+        "info": "Isim yang harakat akhirnya berubah sesuai dengan kasusnya."
+      }
+    },
+    "posTags": {
+      "ACC": {
+        "name": "Partikel Nashab",
+        "ar": "حرف نصب",
+        "info": "Partikel seperti \"inna\" yang memberi kasus nashab pada isim setelahnya dan menegaskan pernyataan."
+      },
+      "ADJ": {
+        "name": "Kata Sifat",
+        "ar": "صفة",
+        "info": "Menjelaskan lebih rinci sebuah isim dan menyesuaikan diri dengan jenis kelamin, jumlah, kasus, dan kepastiannya."
+      },
+      "AMD": {
+        "name": "Partikel Koreksi",
+        "ar": "حرف استدراك",
+        "info": "Membatasi atau mengoreksi sedikit pernyataan sebelumnya, dalam arti \"namun\"."
+      },
+      "ANS": {
+        "name": "Partikel Jawaban",
+        "ar": "حرف جواب",
+        "info": "Membuka jawaban atas sebuah pertanyaan atau kalimat pengandaian."
+      },
+      "AVR": {
+        "name": "Partikel Penolakan",
+        "ar": "حرف ردع",
+        "info": "Menolak pernyataan atau sikap sebelumnya, dalam arti \"sama sekali tidak\"."
+      },
+      "CAUS": {
+        "name": "Partikel Sebab",
+        "ar": "فاء السببية",
+        "info": "فَ yang muncul setelah permintaan atau harapan dan menyatakan hasil yang diinginkan, seperti pada \"berdoalah, AGAR Dia mengabulkanmu\"."
+      },
+      "CERT": {
+        "name": "Partikel Kepastian",
+        "ar": "حرف تحقيق",
+        "info": "Menegaskan bahwa sebuah pernyataan benar-benar telah terjadi, biasanya di depan kata kerja."
+      },
+      "CIRC": {
+        "name": "Partikel Keadaan (Hal)",
+        "ar": "واو الحال",
+        "info": "Membuka anak kalimat yang menjelaskan keadaan yang menyertai perbuatan utama."
+      },
+      "COM": {
+        "name": "Wau Kebersamaan",
+        "ar": "واو المعية",
+        "info": "Huruf wau yang menyatakan kebersamaan, dalam arti \"bersama dengan\"."
+      },
+      "COND": {
+        "name": "Partikel Syarat",
+        "ar": "أداة شرط",
+        "info": "Membuka sebuah kalimat pengandaian, misalnya \"jika\"."
+      },
+      "CONJ": {
+        "name": "Kata Sambung",
+        "ar": "حرف عطف",
+        "info": "Menghubungkan dua kata atau bagian kalimat yang sederajat, umumnya dengan \"dan\" atau \"atau\"."
+      },
+      "DEM": {
+        "name": "Kata Tunjuk",
+        "ar": "اسم إشارة",
+        "info": "Kata penunjuk seperti \"ini\" atau \"itu\" yang menunjuk pada sesuatu yang tertentu."
+      },
+      "DET": {
+        "name": "Awalan Kepastian (Al)",
+        "ar": "أداة تعريف",
+        "info": "Awalan ال yang membuat sebuah isim menjadi tertentu — mirip dengan \"itu/tersebut\"."
+      },
+      "EMPH": {
+        "name": "Lam Penegas",
+        "ar": "لام التوكيد",
+        "info": "Awalan lam yang menegaskan sebuah pernyataan tanpa mengubah makna kata itu sendiri."
+      },
+      "EQ": {
+        "name": "Partikel Penyetaraan",
+        "ar": "حرف تسوية",
+        "info": "Menyatakan bahwa dua kemungkinan yang disebutkan sama nilainya atau sama saja."
+      },
+      "EXH": {
+        "name": "Partikel Anjuran",
+        "ar": "حرف تحضيض",
+        "info": "Menyatakan ajakan mendesak atau dorongan, misalnya \"seandainya saja\"."
+      },
+      "EXL": {
+        "name": "Partikel Perincian",
+        "ar": "حرف تفصيل",
+        "info": "Membuka penjelasan atau perincian lebih lanjut dari yang disebutkan sebelumnya."
+      },
+      "EXP": {
+        "name": "Partikel Pengecualian",
+        "ar": "أداة استثناء",
+        "info": "Mengecualikan sesuatu dari keseluruhan yang disebut sebelumnya, misalnya \"kecuali\"."
+      },
+      "FUT": {
+        "name": "Partikel Masa Depan",
+        "ar": "حرف استقبال",
+        "info": "Memindahkan perbuatan kata kerja bentuk sekarang ke masa depan, misalnya \"sawfa\" atau \"sa-\"."
+      },
+      "IMPN": {
+        "name": "Kata Benda Perintah",
+        "ar": "اسم فعل أمر",
+        "info": "Kata benda kerja yang dipakai seperti perintah, misalnya \"diam!\" sebagai pengganti bentuk perintah biasa."
+      },
+      "IMPV": {
+        "name": "Lam Perintah",
+        "ar": "لام الأمر",
+        "info": "Awalan lam yang mengubah bentuk sekarang menjadi perintah tidak langsung."
+      },
+      "INC": {
+        "name": "Partikel Pembuka Kalimat",
+        "ar": "حرف ابتداء",
+        "info": "Menandai awal sebuah kalimat nominal, biasanya di awal kalimat."
+      },
+      "INL": {
+        "name": "Huruf Muqattha'ah",
+        "ar": "الحروف المقطعة",
+        "info": "Huruf-huruf yang dilafalkan satu per satu di awal beberapa surah, yang maknanya belum dipastikan."
+      },
+      "INT": {
+        "name": "Partikel Penafsiran",
+        "ar": "حرف تفسير",
+        "info": "Membuka penjelasan ulang dari yang disebutkan sebelumnya, dalam arti \"yaitu\"."
+      },
+      "INTG": {
+        "name": "Partikel Tanya",
+        "ar": "أداة استفهام",
+        "info": "Membuka sebuah pertanyaan, misalnya \"siapa\", \"apa\", atau \"apakah\"."
+      },
+      "LOC": {
+        "name": "Keterangan Tempat",
+        "ar": "ظرف مكان",
+        "info": "Isim yang menyatakan keterangan tempat, misalnya \"di depan\" atau \"di atas\"."
+      },
+      "N": {
+        "name": "Kata Benda",
+        "ar": "اسم",
+        "info": "Kata benda biasa seperti benda, sifat, atau konsep abstrak, tanpa menjadi nama diri."
+      },
+      "NEG": {
+        "name": "Partikel Negasi",
+        "ar": "حرف نفي",
+        "info": "Menyangkal pernyataan sebuah kalimat atau kata kerja, misalnya \"tidak\" atau \"bukan\"."
+      },
+      "P": {
+        "name": "Kata Depan",
+        "ar": "حرف جر",
+        "info": "Memberi kasus jarr pada isim setelahnya dan menghubungkannya dengan bagian kalimat lain."
+      },
+      "PN": {
+        "name": "Nama Diri",
+        "ar": "اسم علم",
+        "info": "Nama diri untuk orang, tempat, atau bangsa, secara tata bahasa biasanya diperlakukan seperti isim tertentu."
+      },
+      "PREV": {
+        "name": "Partikel Penghenti",
+        "ar": "كافة",
+        "info": "Menghilangkan pengaruh tata bahasa dari partikel sebelumnya, misalnya pada \"innama\"."
+      },
+      "PRO": {
+        "name": "Partikel Larangan",
+        "ar": "حرف نهي",
+        "info": "Menyangkal sebuah perintah dan dengan begitu meminta agar sesuatu tidak dilakukan."
+      },
+      "PRON": {
+        "name": "Kata Ganti",
+        "ar": "ضمير",
+        "info": "Menggantikan orang atau benda, misalnya \"dia\" atau \"kami\" — berdiri sendiri atau menempel sebagai akhiran."
+      },
+      "PRP": {
+        "name": "Partikel Tujuan",
+        "ar": "لام التعليل",
+        "info": "Menyatakan tujuan atau alasan sebuah perbuatan, dalam arti \"agar\" atau \"supaya\"."
+      },
+      "REL": {
+        "name": "Kata Ganti Penghubung",
+        "ar": "اسم موصول",
+        "info": "Membuka anak kalimat penjelas, misalnya \"orang yang\" atau \"apa yang\"."
+      },
+      "REM": {
+        "name": "Partikel Awal Baru",
+        "ar": "حرف استئناف",
+        "info": "Menandai awal bagian kalimat baru yang berdiri sendiri dari pernyataan sebelumnya."
+      },
+      "RES": {
+        "name": "Partikel Pembatas",
+        "ar": "أداة حصر",
+        "info": "Membatasi pernyataan hanya pada satu hal saja, dalam arti \"hanya\" atau \"cuma\"."
+      },
+      "RET": {
+        "name": "Partikel Pengalihan",
+        "ar": "حرف إضراب",
+        "info": "Membuka sebuah peralihan atau koreksi terhadap pernyataan sebelumnya, dalam arti \"melainkan\"."
+      },
+      "RSLT": {
+        "name": "Partikel Hasil",
+        "ar": "فاء الجواب",
+        "info": "فَ yang menghubungkan jawaban kalimat syarat, atau predikat setelah subjek yang bersifat umum (misalnya setelah \"jika\" atau \"siapa pun\") — berbeda dari partikel kausal, ia tidak menyatakan tujuan, melainkan menghubungkan syarat dengan akibatnya."
+      },
+      "SUB": {
+        "name": "Kata Sambung Penyerta (Mashdariyyah)",
+        "ar": "حرف مصدري",
+        "info": "Mengubah kalimat setelahnya menjadi setara kata benda kerja (mashdar) yang bisa berfungsi sebagai subjek atau objek."
+      },
+      "SUP": {
+        "name": "Partikel Tambahan",
+        "ar": "حرف زائد",
+        "info": "Kata pengisi tanpa makna tersendiri yang ditambahkan karena alasan gaya bahasa."
+      },
+      "SUR": {
+        "name": "Partikel Kejutan",
+        "ar": "حرف مفاجأة",
+        "info": "Menyatakan bahwa sesuatu terjadi secara tiba-tiba dan tak terduga."
+      },
+      "T": {
+        "name": "Keterangan Waktu",
+        "ar": "ظرف زمان",
+        "info": "Isim yang menyatakan keterangan waktu, misalnya \"hari ini\" atau \"dahulu\"."
+      },
+      "V": {
+        "name": "Kata Kerja",
+        "ar": "فعل",
+        "info": "Label umum untuk kata kerja, sebelum dibedakan lebih lanjut menjadi bentuk lampau, sekarang, atau perintah."
+      },
+      "VOC": {
+        "name": "Partikel Panggilan",
+        "ar": "أداة نداء",
+        "info": "Membuka sebuah panggilan langsung, misalnya \"wahai\" di depan nama yang dipanggil."
+      }
+    },
+    "relationen": {
+      "Adj": {
+        "name": "Kata Penjelas",
+        "ar": "صفة",
+        "info": "Kata sifat yang menjelaskan lebih rinci isim sebelumnya."
+      },
+      "App": {
+        "name": "Badal (Penjelas)",
+        "ar": "بدل",
+        "info": "Isim kedua yang menjelaskan atau memperjelas isim sebelumnya — keduanya berada dalam kasus yang sama."
+      },
+      "Cpnd": {
+        "name": "Ungkapan Majemuk",
+        "ar": "مركب",
+        "info": "Dua kata yang bersama-sama berfungsi sebagai satu kesatuan tetap."
+      },
+      "NonRel": {
+        "name": "Tanpa Hubungan",
+        "ar": "بلا علاقة",
+        "info": "Untuk kata ini tidak tercatat hubungan sintaksis dengan kata lain."
+      },
+      "Obj": {
+        "name": "Objek",
+        "ar": "مفعول به",
+        "info": "Objek langsung dari sebuah kalimat kata kerja — sasaran dari perbuatan kata kerja tersebut."
+      },
+      "Pass": {
+        "name": "Pengganti Subjek (Naib Fa'il)",
+        "ar": "نائب فاعل",
+        "info": "Pembawa gramatikal perbuatan dalam kalimat pasif — menggantikan pelaku yang tidak disebutkan."
+      },
+      "Poss": {
+        "name": "Susunan Idhafah",
+        "ar": "مضاف إليه",
+        "info": "Bagian kedua dari susunan idhafah — pemilik atau penjelas lebih rinci dari isim pertama."
+      },
+      "Pred": {
+        "name": "Predikat (Khabar)",
+        "ar": "خبر",
+        "info": "Bagian penyataan dari kalimat nominal — apa yang dinyatakan tentang topik kalimat (mubtada)."
+      },
+      "Pro": {
+        "name": "Larangan",
+        "ar": "نهي",
+        "info": "Bagian kalimat yang menyertai partikel larangan dan melarang sebuah perbuatan."
+      },
+      "Spec": {
+        "name": "Penjelas (Tamyiz)",
+        "ar": "تمييز",
+        "info": "Isim tidak tertentu yang memperjelas keterangan yang sebelumnya masih samar, seperti jumlah atau ukuran."
+      },
+      "Subj": {
+        "name": "Subjek (Fa'il)",
+        "ar": "فاعل",
+        "info": "Pelaku dari sebuah kalimat kata kerja — siapa atau apa yang melakukan perbuatan tersebut."
+      },
+      "amd": {
+        "name": "Koreksi",
+        "ar": "استدراك",
+        "info": "Membatasi atau mengoreksi sedikit pernyataan sebelumnya."
+      },
+      "ans": {
+        "name": "Jawaban",
+        "ar": "جواب",
+        "info": "Jawaban atas sebuah pertanyaan atau kalimat pengandaian."
+      },
+      "avr": {
+        "name": "Penolakan",
+        "ar": "ردع",
+        "info": "Menolak dengan tegas pernyataan atau sikap sebelumnya."
+      },
+      "cert": {
+        "name": "Penegasan",
+        "ar": "تحقيق",
+        "info": "Menegaskan bahwa pernyataan setelahnya benar-benar telah atau akan terjadi."
+      },
+      "circ": {
+        "name": "Keadaan (Hal)",
+        "ar": "حال",
+        "info": "Menjelaskan keadaan atau situasi yang menyertai subjek atau objek selama perbuatan berlangsung."
+      },
+      "cog": {
+        "name": "Kata Benda Penegas (Maf'ul Mutlaq)",
+        "ar": "مفعول مطلق",
+        "info": "Kata benda kerja dari akar yang sama dengan kata kerjanya, yang menguatkan atau memperjelas maknanya."
+      },
+      "cond": {
+        "name": "Syarat",
+        "ar": "شرط",
+        "info": "Bagian kalimat yang merumuskan syarat dari sebuah kalimat pengandaian."
+      },
+      "conj": {
+        "name": "Kata yang Disertakan",
+        "ar": "معطوف",
+        "info": "Kata yang disambungkan sederajat pada kata sebelumnya melalui kata sambung."
+      },
+      "emph": {
+        "name": "Penegasan (Taukid)",
+        "ar": "توكيد",
+        "info": "Kata yang mengulang pernyataan sebelumnya secara harfiah atau maknawi, sehingga menguatkannya."
+      },
+      "eq": {
+        "name": "Penyetaraan",
+        "ar": "تسوية",
+        "info": "Menyatakan bahwa dua kemungkinan yang disebutkan sama nilainya."
+      },
+      "exh": {
+        "name": "Dorongan",
+        "ar": "تحضيض",
+        "info": "Menyatakan ajakan mendesak atau harapan."
+      },
+      "exl": {
+        "name": "Perincian",
+        "ar": "تفصيل",
+        "info": "Membuka penjelasan lebih rinci dari yang disebutkan sebelumnya."
+      },
+      "exp": {
+        "name": "Pengecualian (Mustatsna)",
+        "ar": "مستثنى",
+        "info": "Unsur yang dikecualikan dari keseluruhan yang disebutkan sebelumnya."
+      },
+      "fut": {
+        "name": "Masa Depan",
+        "ar": "استقبال",
+        "info": "Memindahkan perbuatan sebuah kata kerja ke masa depan."
+      },
+      "gen": {
+        "name": "Hubungan Jarr",
+        "ar": "مجرور",
+        "info": "Isim yang berada dalam kasus jarr — setelah kata depan atau sebagai bagian kedua susunan idhafah."
+      },
+      "impv": {
+        "name": "Perintah",
+        "ar": "أمر",
+        "info": "Bagian kalimat yang menyertai bentuk perintah."
+      },
+      "imrs": {
+        "name": "Jawab Perintah",
+        "ar": "جواب أمر",
+        "info": "Bagian kalimat yang muncul sebagai akibat dari perintah sebelumnya."
+      },
+      "inc": {
+        "name": "Pembuka Kalimat",
+        "ar": "ابتداء",
+        "info": "Menandai awal sebuah kalimat nominal baru."
+      },
+      "int": {
+        "name": "Penjelasan",
+        "ar": "تفسير",
+        "info": "Membuka penjelasan ulang dari yang disebutkan sebelumnya."
+      },
+      "intg": {
+        "name": "Pertanyaan",
+        "ar": "استفهام",
+        "info": "Bagian kalimat yang menyertai partikel tanya pembuka."
+      },
+      "link": {
+        "name": "Kata Rujukan",
+        "ar": "متعلق",
+        "info": "Kata yang secara makna dihubungkan oleh frasa kata depan — biasanya kata kerja, kadang kata kerja yang tidak disebutkan."
+      },
+      "muster": {
+        "predOf": {
+          "name": "Khabar dari {wort}",
+          "ar": "خبر",
+          "info": "Kana dan saudara-saudaranya, serta inna dan saudara-saudaranya, mengubah kasus topik dan predikat sebuah kalimat nominal — ini adalah khabar (predikat) untuk {wort}."
+        },
+        "subjOf": {
+          "name": "Isim dari {wort}",
+          "ar": "اسم",
+          "info": "Kana dan saudara-saudaranya, serta inna dan saudara-saudaranya, mengubah kasus topik dan predikat sebuah kalimat nominal — ini adalah isim yang terkait dengan {wort}."
+        }
+      },
+      "neg": {
+        "name": "Negasi",
+        "ar": "نفي",
+        "info": "Partikel negasi yang menjadi bagian dari bagian kalimat yang disangkal."
+      },
+      "prev": {
+        "name": "Peniadaan Pengaruh",
+        "ar": "كاف",
+        "info": "Menghilangkan pengaruh tata bahasa dari partikel sebelumnya."
+      },
+      "prp": {
+        "name": "Tujuan",
+        "ar": "المفعول لأجله",
+        "info": "Menyatakan alasan atau tujuan sebuah perbuatan."
+      },
+      "res": {
+        "name": "Pembatasan",
+        "ar": "حصر",
+        "info": "Membatasi pernyataan hanya pada unsur yang disebutkan."
+      },
+      "ret": {
+        "name": "Peralihan",
+        "ar": "اضراب",
+        "info": "Membuka koreksi atau perubahan topik dari pernyataan sebelumnya."
+      },
+      "root": {
+        "name": "Inti Kalimat",
+        "ar": "الجذر",
+        "info": "Kata utama dalam kalimat, biasanya kata kerja utama atau predikat, tempat semua kata lain berhubungan secara langsung maupun tidak langsung."
+      },
+      "rslt": {
+        "name": "Jawab Syarat",
+        "ar": "جواب الشرط",
+        "info": "Bagian kalimat yang menyatakan akibat dari kalimat pengandaian — apa yang terjadi jika syaratnya terpenuhi."
+      },
+      "state": {
+        "name": "Kata Benda Penjelas",
+        "ar": "بيان",
+        "info": "Isim yang memperjelas makna sebuah keterangan sebelumnya."
+      },
+      "sub": {
+        "name": "Anak Kalimat Penjelas",
+        "ar": "صلة",
+        "info": "Anak kalimat yang melengkapi makna sebuah kata ganti penghubung."
+      },
+      "sup": {
+        "name": "Kata Tambahan",
+        "ar": "زائد",
+        "info": "Kata tanpa makna tersendiri yang melengkapi kalimat karena alasan gaya bahasa."
+      },
+      "sur": {
+        "name": "Kejutan",
+        "ar": "فجاءة",
+        "info": "Menyatakan bahwa sesuatu terjadi secara tiba-tiba dan tak terduga."
+      },
+      "voc": {
+        "name": "Panggilan (Munada)",
+        "ar": "منادى",
+        "info": "Orang atau hal yang langsung dipanggil setelah partikel panggilan."
+      }
+    },
+    "schwacheVerben": {
+      "ajwaf": {
+        "name": "Ajwaf (Kata Kerja Berongga)",
+        "ar": "أجوف",
+        "info": "Kata kerja yang huruf akar tengahnya adalah huruf lemah dan sering melebur menjadi vokal panjang."
+      },
+      "lafif": {
+        "name": "Lafif",
+        "ar": "لفيف",
+        "info": "Kata kerja dengan dua huruf akar lemah yang saling memengaruhi dalam konjugasinya."
+      },
+      "mahmuz": {
+        "name": "Mahmuz (Kata Kerja Berhamzah)",
+        "ar": "مهموز",
+        "info": "Kata kerja yang memiliki hamzah sebagai salah satu huruf akarnya, yang bisa menyebabkan penulisan khusus."
+      },
+      "mithal": {
+        "name": "Mitsal",
+        "ar": "مثال",
+        "info": "Kata kerja yang huruf akar pertamanya adalah huruf lemah, biasanya wau."
+      },
+      "mudaaf": {
+        "name": "Mudha'af (Kata Kerja Ganda)",
+        "ar": "مضاعف",
+        "info": "Kata kerja yang huruf akar kedua dan ketiganya sama dan melebur menjadi satu huruf bertasydid pada bentuk-bentuk tertentu."
+      },
+      "rubai": {
+        "name": "Rubāʿī (Kata Kerja Berakar Empat)",
+        "ar": "رباعي",
+        "info": "Kata kerja yang akarnya terdiri atas empat huruf, bukan tiga, dan membentuk kelompok konjugasinya sendiri, terlepas dari hamzah, huruf lemah, atau penggandaan."
+      },
+      "naqis": {
+        "name": "Naqish (Kata Kerja Kurang)",
+        "ar": "ناقص",
+        "info": "Kata kerja yang huruf akar terakhirnya adalah huruf lemah yang sering hilang atau berubah di akhir kata."
+      },
+      "sahih": {
+        "name": "Sahih (Kata Kerja Sehat)",
+        "ar": "صحيح",
+        "info": "Kata kerja yang huruf akarnya tidak mengandung hamzah, huruf lemah, ataupun huruf ganda — kelompok kata kerja paling teratur."
+      }
+    },
+    "verbEigenschaften": {
+      "amrNahy": {
+        "name": "Perintah dan Larangan",
+        "ar": "الأمر والنهي",
+        "info": "Dua bentuk permintaan yang berlawanan: satu meminta melakukan sesuatu, satu lagi melarangnya.",
+        "werte": {
+          "amr": {
+            "name": "Perintah (Amr)",
+            "ar": "أمر",
+            "info": "Permintaan langsung untuk melakukan sesuatu, dibentuk dari bentuk perintah kata kerja."
+          },
+          "nahy": {
+            "name": "Larangan (Nahi)",
+            "ar": "نهي",
+            "info": "Permintaan untuk tidak melakukan sesuatu, dibentuk dari bentuk sekarang dengan kata negasi di depannya."
+          }
+        }
+      },
+      "genusVerbi": {
+        "name": "Bentuk Aktif/Pasif (Ma'lum/Majhul)",
+        "ar": "البناء للمعلوم والمجهول",
+        "info": "Menunjukkan apakah subjek melakukan perbuatan itu sendiri (aktif) atau menjadi sasaran perbuatan tersebut (pasif).",
+        "werte": {
+          "active": {
+            "name": "Aktif (Ma'lum)",
+            "ar": "معلوم"
+          },
+          "passive": {
+            "name": "Pasif (Majhul)",
+            "ar": "مجهول"
+          }
+        }
+      },
+      "modus": {
+        "name": "Modus Kata Kerja Sekarang",
+        "ar": "حالات الفعل المضارع",
+        "info": "Mengubah akhiran bentuk sekarang tergantung konteks kalimat — misalnya setelah partikel tertentu atau dalam bentuk negasi.",
+        "werte": {
+          "ind": {
+            "name": "Rafa'",
+            "ar": "مرفوع"
+          },
+          "juss": {
+            "name": "Jazm",
+            "ar": "مجزوم"
+          },
+          "sub": {
+            "name": "Nashab",
+            "ar": "منصوب"
+          }
+        }
+      },
+      "tempus": {
+        "name": "Kala dan Bentuk Perintah",
+        "ar": "زمن الفعل",
+        "info": "Menempatkan kata kerja dalam waktu atau menandainya sebagai bentuk perintah: lampau, sekarang/akan datang, atau imperatif (yang sebenarnya adalah modus tersendiri, namun dikelompokkan di sini demi kesederhanaan).",
+        "werte": {
+          "imperative": {
+            "name": "Perintah (Amr)",
+            "ar": "أمر",
+            "info": "Meminta sebuah perbuatan secara langsung, misalnya \"tulislah!\"."
+          },
+          "imperfect": {
+            "name": "Sekarang (Mudhari')",
+            "ar": "مضارع",
+            "info": "Menggambarkan perbuatan yang sedang berlangsung atau akan datang, misalnya \"dia menulis\"/\"dia akan menulis\"."
+          },
+          "perfect": {
+            "name": "Lampau (Madhi)",
+            "ar": "ماضي",
+            "info": "Menggambarkan perbuatan yang sudah selesai, misalnya \"dia menulis\"."
+          }
+        }
+      },
+      "verbform": {
+        "name": "Bentuk Kata Kerja (Bab/Wazan)",
+        "ar": "أوزان الفعل",
+        "info": "Kata kerja bahasa Arab dapat diperluas menjadi variasi makna melalui pola-pola tetap — dari bentuk dasar sampai bentuk kesepuluh.",
+        "formen": {
+          "1": {
+            "name": "Bentuk I",
+            "ar": "فَعَلَ",
+            "info": "Bentuk dasar dengan makna asli dari akar kata, tanpa tambahan."
+          },
+          "2": {
+            "name": "Bentuk II",
+            "ar": "فَعَّلَ",
+            "info": "Biasanya menggandakan huruf tengah akar kata dan sering memberi makna kausatif atau intensif."
+          },
+          "3": {
+            "name": "Bentuk III",
+            "ar": "فَاعَلَ",
+            "info": "Menambahkan alif setelah huruf akar pertama dan sering menyatakan perbuatan yang dilakukan bersama orang lain."
+          },
+          "4": {
+            "name": "Bentuk IV",
+            "ar": "أَفْعَلَ",
+            "info": "Diawali dengan hamzah dan biasanya membuat kata kerja bermakna kausatif — \"membuat seseorang melakukan sesuatu\"."
+          },
+          "5": {
+            "name": "Bentuk V",
+            "ar": "تَفَعَّلَ",
+            "info": "Bentuk refleksif dari Bentuk II, sering bermakna membiarkan sesuatu terjadi pada diri sendiri."
+          },
+          "6": {
+            "name": "Bentuk VI",
+            "ar": "تَفَاعَلَ",
+            "info": "Bentuk refleksif/timbal balik dari Bentuk III, sering menyatakan perbuatan yang saling dilakukan."
+          },
+          "7": {
+            "name": "Bentuk VII",
+            "ar": "انْفَعَلَ",
+            "info": "Diawali dengan huruf ن tambahan dan biasanya menyatakan perbuatan pasif atau tidak disengaja."
+          },
+          "8": {
+            "name": "Bentuk VIII",
+            "ar": "افْتَعَلَ",
+            "info": "Menyisipkan huruf ت setelah huruf akar pertama, sering dengan makna refleksif atau lebih intensif."
+          },
+          "9": {
+            "name": "Bentuk IX",
+            "ar": "افْعَلَّ",
+            "info": "Menggandakan huruf akar terakhir dan terutama dipakai untuk warna dan ciri fisik."
+          },
+          "10": {
+            "name": "Bentuk X",
+            "ar": "اسْتَفْعَلَ",
+            "info": "Diawali dengan است dan sering menyatakan permintaan atau mengklaim makna dasar untuk diri sendiri."
+          }
+        }
+      },
+      "person": {
+        "name": "Persona",
+        "ar": "الشخص",
+        "info": "Menunjukkan apakah kata kerja dilakukan oleh orang pertama, orang kedua, atau orang ketiga.",
+        "werte": {
+          "1": {
+            "name": "Orang pertama",
+            "ar": "المتكلم",
+            "info": "Yang berbicara: saya atau kami/kita."
+          },
+          "2": {
+            "name": "Orang kedua",
+            "ar": "المخاطب",
+            "info": "Yang diajak bicara: kamu atau kalian."
+          },
+          "3": {
+            "name": "Orang ketiga",
+            "ar": "الغائب",
+            "info": "Yang dibicarakan: dia atau mereka."
+          }
+        }
+      }
+    },
+    "wortarten": {
+      "fiil": {
+        "name": "Fi'il (Kata Kerja)",
+        "ar": "فعل",
+        "info": "Fi'il menggambarkan sebuah perbuatan atau peristiwa dan membawa informasi waktu, orang, dan jumlah."
+      },
+      "harf": {
+        "name": "Harf (Partikel)",
+        "ar": "حرف",
+        "info": "Harf adalah kata pendek seperti kata depan, kata sambung, atau kata negasi yang tidak punya makna lengkap jika berdiri sendiri."
+      },
+      "ism": {
+        "name": "Isim (Kata Benda)",
+        "ar": "اسم",
+        "info": "Isim mencakup orang, benda, tempat, sifat, atau gagasan — mirip dengan kata benda dan kata sifat dalam bahasa Indonesia."
+      }
+    }
+  },
+  "gebetGemeinsam": {
+    "title": "Salat Berjemaah (جماعة)",
+    "subtitle": "Cara berbaris dalam salat berjemaah – dengan diagram, bukan tembok teks.",
+    "seeAlsoFreitag": "Lebih lanjut tentang salat Jumat, adab masjid, dan area perempuan: Studi → Fikih Ibadah, pelajaran 13.",
+    "seeAlsoSutra": "Sutrah imam berlaku untuk seluruh saf di belakangnya: Studi → Fikih Ibadah, pelajaran 11.",
+    "footerHinweis": "Ringkasan ini tidak menggantikan belajar fikih. Untuk keputusan penting, tanyakan kepada ulama setempat.",
+    "quelle": "Sumber",
+    "sections": {
+      "aufstellung": "Barisan",
+      "rezitation": "Bacaan dan Perilaku",
+      "mahram": "Mahram dan Khalwat"
+    },
+    "legende": {
+      "imam": "Imam",
+      "mann": "Laki-laki",
+      "frau": "Perempuan",
+      "qibla": "Kiblat"
+    },
+    "grad": {
+      "anerkannt": "Disepakati secara luas",
+      "strittig": "Diperselisihkan antar mazhab",
+      "empfehlung": "Anjuran praktis"
+    },
+    "madhhab": {
+      "alle": "Semua mazhab",
+      "hanafi": "Mazhab Hanafi",
+      "verschieden": "Mazhab berbeda pendapat"
+    },
+    "konstellationen": {
+      "zweiPersonen": {
+        "titel": "Imam dan satu makmum",
+        "beschreibung": "Jika hanya satu laki-laki salat bersama imam, ia tidak berdiri di belakang, melainkan agak mundur di sebelah kanan imam."
+      },
+      "imamEhefrau": {
+        "titel": "Imam dan istri",
+        "beschreibung": "Jika istri salat dengan suaminya sebagai imam, ia berdiri di belakangnya, bukan di sampingnya."
+      },
+      "dreiPersonen": {
+        "titel": "Tiga orang",
+        "beschreibung": "Begitu orang ketiga bergabung, para makmum membentuk saf tersendiri di belakang imam."
+      },
+      "familienrunde": {
+        "titel": "Kumpulan keluarga campuran",
+        "beschreibung": "Imam berdiri sendiri di depan, laki-laki dan anak laki-laki membentuk saf di belakangnya, perempuan dan anak perempuan membentuk saf terakhir."
+      },
+      "groessereGruppe": {
+        "titel": "Kelompok lebih besar, beberapa saf",
+        "beschreibung": "Saf laki-laki di depan dirapatkan lebih dulu tanpa celah; saf perempuan menjadi penutup di belakang."
+      }
+    },
+    "regeln": {
+      "imamMitEinemMitbeter": {
+        "titel": "Imam dengan satu makmum",
+        "text": "Jika hanya satu laki-laki salat bersama imam, ia tidak berdiri di belakangnya, melainkan agak mundur di sebelah kanan imam. Diriwayatkan bahwa Ibnu Abbas bergabung dengan Nabi ﷺ untuk salat malam, mula-mula berdiri di sebelah kirinya, lalu Nabi ﷺ menariknya ke sebelah kanan."
+      },
+      "abDreiPersonen": {
+        "titel": "Mulai tiga orang: membentuk saf sendiri",
+        "text": "Begitu orang ketiga bergabung, semua makmum membentuk saf tersendiri di belakang imam, yang berdiri sendiri di depan. Diriwayatkan bahwa ketika Jabir bin Abdullah dan Jabbar bin Sakhr berdiri di kanan dan kiri Nabi ﷺ, beliau memegang tangan keduanya dan menempatkan mereka di belakangnya."
+      },
+      "frauZuHause": {
+        "titel": "Istri di rumah: di belakang yang mengimami",
+        "text": "Jika seorang perempuan salat di rumah dengan mahramnya sebagai imam, ia berdiri di belakangnya, bukan di sampingnya. Uraian lengkap dengan sumber tentang area perempuan di masjid: Studi → Fikih Ibadah, pelajaran 13."
+      },
+      "familienrunde": {
+        "titel": "Kumpulan keluarga campuran",
+        "text": "Jika satu keluarga salat bersama, imam berdiri sendiri di depan, laki-laki dan anak laki-laki membentuk saf di belakangnya, perempuan dan anak perempuan membentuk saf terakhir – bahkan jika hanya ada satu perempuan, ia tetap berdiri di belakang, bukan di samping laki-laki. Diriwayatkan bahwa seorang anak yatim dan Anas bin Malik salat di belakang Nabi ﷺ di sebuah rumah, sementara seorang perempuan tua sendirian membentuk saf di belakang mereka."
+      },
+      "reihenSchliessen": {
+        "titel": "Merapatkan saf, jangan ada celah",
+        "text": "Saf dirapatkan mulai dari tengah, bahu bertemu bahu, tanpa celah. Diriwayatkan dari Nabi ﷺ: \"Luruskanlah saf-saf kalian, karena meluruskan saf termasuk kesempurnaan salat.\""
+      },
+      "besteReihen": {
+        "titel": "Saf terbaik dan yang paling kurang dianjurkan",
+        "text": "Bagi laki-laki, saf terdepan dianggap terbaik dan saf terbelakang paling kurang dianjurkan; bagi perempuan justru sebaliknya – saf terbelakang dianggap terbaik bagi mereka."
+      },
+      "qiblaAusrichtung": {
+        "titel": "Menghadap kiblat",
+        "text": "Semua saf menghadap kiblat bersama-sama, sama seperti salat sendirian. Al-Qur'an menyebutkan arah kiblat secara jelas; aplikasi menampilkannya di kompas kiblat."
+      },
+      "lauteUndLeiseGebete": {
+        "titel": "Salat jahr dan sirr",
+        "text": "Imam membaca dengan suara keras pada dua rakaat pertama Subuh, Magrib, dan Isya, dan dengan pelan pada Zuhur dan Asar. Al-Qur'an menyebut kedua cara membaca dalam salat."
+      },
+      "verhaltenBeiLauterRezitation": {
+        "titel": "Perilaku saat bacaan dikeraskan",
+        "text": "Menurut mazhab Hanafi, makmum diam sepenuhnya saat imam mengeraskan bacaan dan mendengarkan, berdasarkan ayat Al-Qur'an: \"Apabila dibacakan Al-Qur'an, maka dengarkanlah dan diamlah.\" Mazhab lain, antara lain Syafi'i, mewajibkan setiap makmum membaca sendiri Al-Fatihah dengan pelan – termasuk basmalah (بسملة) sebelumnya – berdasarkan sabda Nabi ﷺ: \"Tidak ada salat bagi yang tidak membaca Al-Fatihah.\""
+      },
+      "amin": {
+        "titel": "Mengucapkan amin bersama",
+        "text": "Ketika imam mengucapkan \"amin\" di akhir Al-Fatihah, semua makmum ikut mengucapkannya dengan suara terdengar. Diriwayatkan dari Nabi ﷺ: \"Apabila imam mengucapkan amin, ucapkanlah amin.\""
+      },
+      "rabbanaUndTakbir": {
+        "titel": "Takbir, Sami'Allahu liman hamidah, dan Rabbana",
+        "text": "Imam mengucapkan \"Allahu Akbar\" dengan suara terdengar pada setiap perpindahan gerakan; saat bangkit setelah rukuk, ia mengucapkan \"Sami'Allahu liman hamidah\", lalu makmum menjawab \"Rabbana wa lakal-hamd\"."
+      },
+      "rhythmusEmpfehlung": {
+        "titel": "Anjuran praktis: membuat ritme terdengar",
+        "text": "Anjuran praktis, bukan hukum syariat: dalam salat sirr, makmum hanya mendengar takbir. Seorang imam membuat ritme terdengar dengan andal dengan mengucapkannya jelas dan berirama tetap – sedikit lebih keras dari bacaan sirrnya sendiri, tanpa tergesa-gesa."
+      },
+      "mahramUndKhilwa": {
+        "titel": "Mahram dan khalwat",
+        "text": "Pada dasarnya, laki-laki dan perempuan, baik kerabat maupun bukan, boleh bersama-sama mengikuti salat berjemaah selama barisan tetap terjaga. Satu-satunya batasan nyata menyangkut khalwat (خلوة): seorang laki-laki dan perempuan yang bukan mahram (محرم) satu sama lain tidak boleh berduaan. Begitu ada orang lain hadir – seorang mahram, makmum lain, atau orang ketiga – maka itu bukan lagi khalwat. Diriwayatkan dari Nabi ﷺ: \"Janganlah seorang laki-laki berduaan dengan seorang perempuan kecuali bersama mahramnya.\""
+      }
+    }
+  },
+  "analyseUebung": {
+    "title": "Latihan Analisis Tata Bahasa",
+    "intro": "Tentukan sendiri jenis kata, kasus atau bentuk waktu, serta peran setiap kata dalam kalimat — lalu bandingkan dengan data yang sebenarnya tercatat dalam korpus.",
+    "setup": {
+      "title": "Latihan baru",
+      "schnellstart": "Mulai cepat",
+      "sureWaehlen": "Surah",
+      "versWaehlen": "Ayat",
+      "zufaelligerVers": "Ayat acak dari surah ini",
+      "keineWorteHinweis": "Tidak ada kata yang dapat dinilai untuk ayat ini pada tingkat ini. Silakan pilih ayat lain atau tingkat yang lebih rendah."
+    },
+    "schwierigkeit": {
+      "title": "Tingkat kesulitan",
+      "stufe1Label": "Tingkat 1",
+      "stufe1Beschreibung": "Hanya jenis kata",
+      "stufe2Label": "Tingkat 2",
+      "stufe2Beschreibung": "Jenis kata beserta kasus atau bentuk waktu",
+      "stufe3Label": "Tingkat 3",
+      "stufe3Beschreibung": "Jenis kata, kasus/bentuk waktu, dan peran dalam kalimat"
+    },
+    "start": "Mulai latihan",
+    "zuletztGeuebt": {
+      "title": "Baru saja dilatih",
+      "eintrag": "{score}% benar"
+    },
+    "exercise": {
+      "fortschritt": "Kata {index} dari {total}",
+      "wortartLabel": "Jenis kata",
+      "satzrolleLabel": "Peran dalam kalimat (i'rab)",
+      "aufdecken": "Tampilkan jawaban",
+      "weiter": "Lanjut",
+      "ergebnisAnsehen": "Lihat hasil",
+      "deineAntwort": "Jawabanmu",
+      "richtigWaere": "Jawaban yang benar",
+      "richtig": "Benar",
+      "falsch": "Salah",
+      "weitereMerkmale": "Ciri lainnya"
+    },
+    "satzrolleFamilie": {
+      "pred": {
+        "name": "Predikat (setelah kana/inna)",
+        "ar": "خبر"
+      },
+      "subj": {
+        "name": "Subjek kalimat (setelah kana/inna)",
+        "ar": "اسم"
+      }
+    },
+    "ergebnis": {
+      "title": "Hasil",
+      "nichtBewertetHinweis": "{count} penilaian lain tidak dihitung karena tidak ada data yang pasti dalam korpus.",
+      "perfekt": "Semua benar — luar biasa!",
+      "gut": "Kerja bagus.",
+      "ueben": "Sedikit lagi latihan dan kamu akan menguasainya.",
+      "fehlerTitle": "Sebaiknya lihat lagi bagian ini",
+      "keineFehler": "Tidak ada kesalahan — hebat!",
+      "imReaderOeffnen": "Buka ayat di pembaca",
+      "wurzelImLexikon": "Lihat akar kata di leksikon",
+      "nocheinmal": "Latih lagi",
+      "zurUebersicht": "Kembali ke ringkasan"
     }
   }
 }

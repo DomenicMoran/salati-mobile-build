@@ -6,6 +6,7 @@ import fatihaDeep from './learn/data/fatiha-deep.json';
 import letterExamples from './learn/data/letter-examples.json';
 import salahWords from './learn/data/salah-words.json';
 import vocab from './learn/data/vocab.json';
+import phrases from './phrases/phrases.json';
 import trivia from './practice/trivia.json';
 import akhlaq from './study/data/akhlaq.json';
 import amau from './study/data/amau.json';
@@ -83,6 +84,13 @@ const DATASETS: [name: string, data: unknown][] = [
   ['learn/data/letter-examples.json', letterExamples],
   ['learn/data/salah-words.json', salahWords],
   ['learn/data/vocab.json', vocab],
+  // Nachgetragen 2026-09-07: phrases.json fuehrt 87 lokalisierte Knoten, stand
+  // aber in keiner Liste — die Datei wurde von gar keinem Test erfasst.
+  // Bewusst weiterhin NICHT hier: lexikon/data/paradigmen*.json und
+  // wortlisten.json. Deren Tabellenzellen sind {de, ar}-Paare (deutsche
+  // Erlaeuterung + arabische Form), also keine 14-Sprachen-Knoten; der
+  // generische Walker wuerde sie faelschlich als 12 fehlende Sprachen melden.
+  ['phrases/phrases.json', phrases],
   ['practice/trivia.json', trivia],
   ['study/data/akhlaq.json', akhlaq],
   ['study/data/amau.json', amau],

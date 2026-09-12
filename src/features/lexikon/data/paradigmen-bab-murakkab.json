@@ -1,0 +1,860 @@
+{
+  "schema": 1,
+  "tables": [
+    {
+      "id": "bab-daraba-murakkab-mithal-mahmuz-waada",
+      "kind": "verb",
+      "titleDe": "Bab Daraba (Mithal + Mahmuz al-'Ain) — وَأَدَ (ein Mädchen lebendig begraben)",
+      "termAr": "وَأَدَ",
+      "columns": [
+        { "id": "madhi", "labelDe": "Madhi / Amr" },
+        { "id": "mudari", "labelDe": "Mudari / Nahy" },
+        { "id": "masdar", "labelDe": "Masdar" },
+        { "id": "ism", "labelDe": "Ism (Fa'il / Maf'ul)" }
+      ],
+      "rows": [
+        { "id": "aktiv", "labelDe": "Aktiv" },
+        { "id": "passiv", "labelDe": "Passiv" },
+        { "id": "imperativ", "labelDe": "Imperativ (Amr/Nahy)" }
+      ],
+      "cells": {
+        "aktiv": {
+          "madhi": { "ar": "وَأَدَ", "de": "er begrub (ein Mädchen) lebendig" },
+          "mudari": { "ar": "يَئِدُ", "de": "er begräbt lebendig" },
+          "masdar": { "ar": "وَأْدًا", "de": "das Lebendigbegraben (Masdar)" },
+          "ism": { "ar": "وَائِدٌ", "de": "Lebendigbegrabender (Ism Fa'il)" }
+        },
+        "passiv": {
+          "madhi": { "ar": "وُئِدَ", "de": "sie wurde lebendig begraben" },
+          "mudari": { "ar": "يُوأَدُ", "de": "sie wird lebendig begraben" },
+          "masdar": { "ar": "وَأْدًا", "de": "das Lebendigbegraben (Masdar)" },
+          "ism": { "ar": "مَوْءُودٌ", "de": "lebendig Begrabene(r) (Ism Maf'ul)" }
+        },
+        "imperativ": {
+          "madhi": { "ar": "إِدْ", "de": "Begrabe (lebendig)!" },
+          "mudari": { "ar": "لَا تَئِدْ", "de": "Begrabe nicht (lebendig)!" }
+        }
+      },
+      "notes": [
+        "Kapitel 8.9 (Murakkab — kombinierte Verben, Abbildungen 122 ff., S. 126–133) behandelt Verben, die zwei Schwächen gleichzeitig tragen. Diese Tabelle: Mithal (schwacher 1. Radikal, hier Waw) + Mahmuz al-'Ain (Hamza als 2. Radikal). Wurzel وأد, bekannt aus dem vorislamischen 'Wa'd al-Banat' (Lebendigbegraben weiblicher Säuglinge), das der Qur'an in Sure 81 (At-Takwir), Vers 8 thematisiert: 'وَإِذَا الْمَوْءُودَةُ سُئِلَتْ' — dort in der weiblichen Ism-Maf'ul-Form (مَوْءُودَةُ), hier die maskuline Zitierform مَوْءُودٌ.",
+        "Gleiches 3x4-Raster wie die Mahmooz-/Naqis-/Lafif-/Muda\"af-Bab-Tabellen (madhi/mudari/masdar/ism je Aktiv und Passiv; die gedruckte 'fahuwa'-Spalte als Lese-Einleitungsfloskel weggelassen). Bei ALLEN 21 Murakkab-Tabellen dieser Datei hat die Imperativ-Zeile im Original nur 2 gedruckte Zellen (Amr, Nahy) — anders als bei den einfachen Naqis-Tabellen (dort zusätzlich eine Ism-Ableitung), aber wie bei Lafif/Muda\"af. Daher hier durchgehend kein Schlüssel 'masdar'/'ism' unter 'imperativ'.",
+        "Amr إِدْ zeigt die für Mahmuz-al-Fa'/al-'Ain-Verben mit Ajwaf-artiger Kürzung typische Form: Jussiv يَئِدْ minus Personalpräfix ergibt einen mit sakinem Hamza beginnenden Rest, der eine Hilfs-Alif mit Kasra (die vom Hamza-Radikal selbst getragene Vokalfarbe) erhält — zeichengenau wie gedruckt (Zoom 22, Tabellen-Bbox per PyMuPDF find_tables) übernommen, keine Rekonstruktion aus der Grammatikregel.",
+        "Zeichengenau aus dem gerenderten Seitenbild von handout.pdf S. 127 (Abbildung 122) bei 22-fachem Zoom gelesen, Struktur mit PyMuPDF find_tables() (3 Zeilen x 5 Spalten inkl. 'fahuwa') verifiziert."
+      ],
+      "source": { "file": "handout.pdf", "page": 127 }
+    },
+    {
+      "id": "bab-istifal10-murakkab-mithal-mahmuz-istayasa",
+      "kind": "verb",
+      "titleDe": "Bab Istif'al X (Mithal + Mahmuz al-'Ain) — اِسْتَيْأَسَ (völlig verzweifeln)",
+      "termAr": "اِسْتَيْأَسَ",
+      "columns": [
+        { "id": "madhi", "labelDe": "Madhi / Amr" },
+        { "id": "mudari", "labelDe": "Mudari / Nahy" },
+        { "id": "masdar", "labelDe": "Masdar" },
+        { "id": "ism", "labelDe": "Ism (Fa'il / Maf'ul)" }
+      ],
+      "rows": [
+        { "id": "aktiv", "labelDe": "Aktiv" },
+        { "id": "passiv", "labelDe": "Passiv" },
+        { "id": "imperativ", "labelDe": "Imperativ (Amr/Nahy)" }
+      ],
+      "cells": {
+        "aktiv": {
+          "madhi": { "ar": "اِسْتَيْأَسَ", "de": "er verzweifelte gänzlich" },
+          "mudari": { "ar": "يَسْتَيْئِسُ", "de": "er verzweifelt gänzlich" },
+          "masdar": { "ar": "اِسْتِيْئَاسًا", "de": "das gänzliche Verzweifeln (Masdar)" },
+          "ism": { "ar": "مُسْتَيْئِسٌ", "de": "gänzlich Verzweifelnder (Ism Fa'il)" }
+        },
+        "passiv": {
+          "madhi": { "ar": "اُسْتُوْئِسَ", "de": "es wurde gänzlich verzweifelt (unpersönlich)" },
+          "mudari": { "ar": "يُسْتَيْأَسُ", "de": "es wird gänzlich verzweifelt (unpersönlich)" },
+          "masdar": { "ar": "اِسْتِيْئَاسًا", "de": "das gänzliche Verzweifeln (Masdar)" },
+          "ism": { "ar": "مُسْتَيْأَسٌ", "de": "worüber gänzlich verzweifelt wird (Ism Maf'ul)" }
+        },
+        "imperativ": {
+          "madhi": { "ar": "اِسْتَيْئِسْ", "de": "Verzweifle gänzlich!" },
+          "mudari": { "ar": "لَا تَسْتَيْئِسْ", "de": "Verzweifle nicht gänzlich!" }
+        }
+      },
+      "notes": [
+        "Mithal (schwacher 1. Radikal, hier Ya) + Mahmuz al-'Ain (Hamza als 2. Radikal) in Form X (Istif'al). Wurzel يأس (im Korpus-Index als ياس geführt), bekannt aus Sure 12 (Yusuf), Vers 80: 'فَلَمَّا اسْتَيْأَسُوا مِنْهُ'.",
+        "Passiv-Madhi اُسْتُوْئِسَ zeigt den Ibdal Ya-zu-Waw vor Damma (Mithal-Ya'i-Regel, dieselbe Erscheinung wie bei den bereits dokumentierten Mithal-Ya'i-Tabellen in paradigmen-bab-mithal-ajwaf.json): der schwache 1. Radikal Ya wird wegen der vorangehenden Damma als Waw geschrieben.",
+        "Zeichengenau aus dem gerenderten Seitenbild von handout.pdf S. 127 (Abbildung 123) bei 22-fachem Zoom gelesen, Tabellenraster per PyMuPDF find_tables() verifiziert (3 Zeilen x 5 Spalten inkl. 'fahuwa')."
+      ],
+      "source": { "file": "handout.pdf", "page": 127 }
+    },
+    {
+      "id": "bab-samia-murakkab-mithal-mahmuz-watia",
+      "kind": "verb",
+      "titleDe": "Bab Sami'a (Mithal + Mahmuz al-Lam) — وَطِئَ (treten, betreten)",
+      "termAr": "وَطِئَ",
+      "columns": [
+        { "id": "madhi", "labelDe": "Madhi / Amr" },
+        { "id": "mudari", "labelDe": "Mudari / Nahy" },
+        { "id": "masdar", "labelDe": "Masdar" },
+        { "id": "ism", "labelDe": "Ism (Fa'il / Maf'ul)" }
+      ],
+      "rows": [
+        { "id": "aktiv", "labelDe": "Aktiv" },
+        { "id": "passiv", "labelDe": "Passiv" },
+        { "id": "imperativ", "labelDe": "Imperativ (Amr/Nahy)" }
+      ],
+      "cells": {
+        "aktiv": {
+          "madhi": { "ar": "وَطِئَ", "de": "er trat, betrat" },
+          "mudari": { "ar": "يَطَأُ", "de": "er tritt, betritt" },
+          "masdar": { "ar": "وَطْئًا", "de": "das Betreten (Masdar)" },
+          "ism": { "ar": "وَاطِئٌ", "de": "Betretender (Ism Fa'il)" }
+        },
+        "passiv": {
+          "madhi": { "ar": "وُطِئَ", "de": "es wurde betreten" },
+          "mudari": { "ar": "يُوطَأُ", "de": "es wird betreten" },
+          "masdar": { "ar": "وَطْئًا", "de": "das Betreten (Masdar)" },
+          "ism": { "ar": "مَوْطُوْءٌ", "de": "Betretenes (Ism Maf'ul)" }
+        },
+        "imperativ": {
+          "madhi": { "ar": "طَأْ", "de": "Tritt/Betritt!" },
+          "mudari": { "ar": "لَا تَطَأْ", "de": "Tritt/Betritt nicht!" }
+        }
+      },
+      "notes": [
+        "Mithal (schwacher 1. Radikal Waw) + Mahmuz al-Lam (Hamza als 3. Radikal). Wurzel وطأ, aus Sure 9 (At-Tawbah), Vers 120: 'وَلَا يَطَئُونَ مَوْطِئًا يَغِيظُ الْكُفَّارَ'.",
+        "Amr طَأْ zeigt die für Mithal-Wawi-Verben typische vollständige Elision des 1. Radikals (Waw) im Imperativ (wie bei den bereits dokumentierten Mithal-Wawi-Bab-Tabellen, z. B. عِدْ von وعد) — hier zusätzlich ohne Hilfs-Hamza, da der 2. Radikal (طـ) nach Wegfall des Waw direkt aussprechbar ist.",
+        "Zeichengenau aus dem gerenderten Seitenbild von handout.pdf S. 127 (Abbildung 124) bei 22-fachem Zoom gelesen, Tabellenraster per PyMuPDF find_tables() verifiziert."
+      ],
+      "source": { "file": "handout.pdf", "page": 127 }
+    },
+    {
+      "id": "bab-iftial8-murakkab-mithal-mahmuz-ittakaa",
+      "kind": "verb",
+      "titleDe": "Bab Ifti'al VIII (Mithal + Mahmuz al-Lam) — اِتَّكَأَ (sich zurücklehnen)",
+      "termAr": "اِتَّكَأَ",
+      "columns": [
+        { "id": "madhi", "labelDe": "Madhi / Amr" },
+        { "id": "mudari", "labelDe": "Mudari / Nahy" },
+        { "id": "masdar", "labelDe": "Masdar" },
+        { "id": "ism", "labelDe": "Ism (Fa'il / Maf'ul)" }
+      ],
+      "rows": [
+        { "id": "aktiv", "labelDe": "Aktiv" },
+        { "id": "passiv", "labelDe": "Passiv" },
+        { "id": "imperativ", "labelDe": "Imperativ (Amr/Nahy)" }
+      ],
+      "cells": {
+        "aktiv": {
+          "madhi": { "ar": "اِتَّكَأَ", "de": "er lehnte sich zurück" },
+          "mudari": { "ar": "يَتَّكِئُ", "de": "er lehnt sich zurück" },
+          "masdar": { "ar": "اِتِّكَاءً", "de": "das Sich-Zurücklehnen (Masdar)" },
+          "ism": { "ar": "مُتَّكِئٌ", "de": "sich Zurücklehnender (Ism Fa'il)" }
+        },
+        "passiv": {
+          "madhi": { "ar": "اُتُّكِئَ", "de": "es wurde sich zurückgelehnt (unpersönlich)" },
+          "mudari": { "ar": "يُتَّكَأُ", "de": "es wird sich zurückgelehnt (unpersönlich)" },
+          "masdar": { "ar": "اِتِّكَاءً", "de": "das Sich-Zurücklehnen (Masdar)" },
+          "ism": { "ar": "مُتَّكَأٌ", "de": "Liegestätte, Ort des Zurücklehnens (Ism Maf'ul)" }
+        },
+        "imperativ": {
+          "madhi": { "ar": "اِتَّكِئْ", "de": "Lehne dich zurück!" },
+          "mudari": { "ar": "لَا تَتَّكِئْ", "de": "Lehne dich nicht zurück!" }
+        }
+      },
+      "notes": [
+        "Mithal (schwacher 1. Radikal Waw) + Mahmuz al-Lam (Hamza als 3. Radikal) in Form VIII (Ifti'al). Wurzel وكأ: der Waw assimiliert in Form VIII an das eingeschobene ت (اِوْتَكَأَ → اِتَّكَأَ, Idgham). Belegt in Sure 12 (Yusuf), Vers 31: 'وَأَعْتَدَتْ لَهُنَّ مُتَّكَأً' (Ism Maf'ul, dort als Akkusativobjekt 'Bankett/Sitzgelegenheit').",
+        "Zeichengenau aus dem gerenderten Seitenbild von handout.pdf S. 128 (Abbildung 125) bei 22-fachem Zoom gelesen, Tabellenraster per PyMuPDF find_tables() verifiziert."
+      ],
+      "source": { "file": "handout.pdf", "page": 128 }
+    },
+    {
+      "id": "bab-samia-murakkab-mithal-mudaaf-wadda",
+      "kind": "verb",
+      "titleDe": "Bab Sami'a (Mithal + Muda\"af) — وَدَّ (lieben, sich wünschen)",
+      "termAr": "وَدَّ",
+      "columns": [
+        { "id": "madhi", "labelDe": "Madhi / Amr" },
+        { "id": "mudari", "labelDe": "Mudari / Nahy" },
+        { "id": "masdar", "labelDe": "Masdar" },
+        { "id": "ism", "labelDe": "Ism (Fa'il / Maf'ul)" }
+      ],
+      "rows": [
+        { "id": "aktiv", "labelDe": "Aktiv" },
+        { "id": "passiv", "labelDe": "Passiv" },
+        { "id": "imperativ", "labelDe": "Imperativ (Amr/Nahy)" }
+      ],
+      "cells": {
+        "aktiv": {
+          "madhi": { "ar": "وَدَّ", "de": "er liebte, wünschte sich" },
+          "mudari": { "ar": "يَوَدُّ", "de": "er liebt, wünscht sich" },
+          "masdar": { "ar": "وَدًّا", "de": "das Lieben, Sich-Wünschen (Masdar)" },
+          "ism": { "ar": "وَادٌّ", "de": "Liebender (Ism Fa'il)" }
+        },
+        "passiv": {
+          "madhi": { "ar": "وُدَّ", "de": "es wurde geliebt, gewünscht" },
+          "mudari": { "ar": "يُوَدُّ", "de": "es wird geliebt, gewünscht" },
+          "masdar": { "ar": "وَدًّا", "de": "das Lieben, Sich-Wünschen (Masdar)" },
+          "ism": { "ar": "مَوْدُوْدٌ", "de": "Geliebter (Ism Maf'ul)" }
+        },
+        "imperativ": {
+          "madhi": { "ar": "وَدَّ", "de": "Liebe/Wünsche dir!" },
+          "mudari": { "ar": "لَا تَوَدَّ", "de": "Liebe/Wünsche dir nicht!" }
+        }
+      },
+      "notes": [
+        "Mithal (schwacher 1. Radikal Waw) + Muda\"af (2. = 3. Radikal, hier د). Diese Kombination trägt keine Hamza — 'Murakkab' bezeichnet allgemein Verben mit mehreren gleichzeitigen Schwächen, nicht nur Hamza-Kombinationen. Wurzel ودد, sehr häufig im Qur'an belegt (z. B. Sure 68, Vers 9: 'وَدُّوا لَوْ تُدْهِنُ').",
+        "Amr وَدَّ und Nahy لَا تَوَدَّ zeigen dasselbe Fekk-al-Idgham-bi-l-Fatha-Muster wie die bereits dokumentierten reinen Muda\"af-Bab-Tabellen (z. B. bab-nasara-mudaaf-madda: لَا تَمُدَّ) — hier zusätzlich mit elidiertem 1. Radikal Waw (Mithal-Regel).",
+        "Zeichengenau aus dem gerenderten Seitenbild von handout.pdf S. 128 (Abbildung 126) bei 22-fachem Zoom gelesen. Diese Tabelle trägt im Original eine gedruckte Kopfzeile (Spaltenbeschriftungen), die restlichen Murakkab-Tabellen nicht — Struktur (madhi/mudari/masdar/ism) über find_tables() sowie durch Vergleich mit den benachbarten Tabellen verifiziert."
+      ],
+      "source": { "file": "handout.pdf", "page": 128 }
+    },
+    {
+      "id": "bab-mufaala3-murakkab-mithal-mudaaf-wadda",
+      "kind": "verb",
+      "titleDe": "Bab Mufa'ala III (Mithal + Muda\"af) — وَادَّ (sich anfreunden, gegenseitig lieben)",
+      "termAr": "وَادَّ",
+      "columns": [
+        { "id": "madhi", "labelDe": "Madhi / Amr" },
+        { "id": "mudari", "labelDe": "Mudari / Nahy" },
+        { "id": "masdar", "labelDe": "Masdar" },
+        { "id": "ism", "labelDe": "Ism (Fa'il / Maf'ul)" }
+      ],
+      "rows": [
+        { "id": "aktiv", "labelDe": "Aktiv" },
+        { "id": "passiv", "labelDe": "Passiv" },
+        { "id": "imperativ", "labelDe": "Imperativ (Amr/Nahy)" }
+      ],
+      "cells": {
+        "aktiv": {
+          "madhi": { "ar": "وَادَّ", "de": "er freundete sich (mit jmd.) an" },
+          "mudari": { "ar": "يُوَادُّ", "de": "er freundet sich (mit jmd.) an" },
+          "masdar": { "ar": "مُوَادَّةً", "de": "das gegenseitige Sich-Anfreunden (Masdar)" },
+          "ism": { "ar": "مُوَادٌّ", "de": "sich Anfreundender (Ism Fa'il)" }
+        },
+        "passiv": {
+          "madhi": { "ar": "وُودَّ", "de": "mit ihm wurde sich angefreundet" },
+          "mudari": { "ar": "يُوَادُّ", "de": "mit ihm wird sich angefreundet" },
+          "masdar": { "ar": "مُوَادَّةً", "de": "das gegenseitige Sich-Anfreunden (Masdar)" },
+          "ism": { "ar": "مُوَادٌّ", "de": "mit dem sich angefreundet wird (Ism Maf'ul)" }
+        },
+        "imperativ": {
+          "madhi": { "ar": "وَادِّ", "de": "Freunde dich an!" },
+          "mudari": { "ar": "لَا تُوَادَّ", "de": "Freunde dich nicht an!" }
+        }
+      },
+      "notes": [
+        "Mithal (schwacher 1. Radikal Waw) + Muda\"af (2. = 3. Radikal د) in Form III (Mufa'ala). Wurzel ودد.",
+        "Dokumentierte Homographie (wie bei den bereits erfassten reinen Muda\"af-Bab-Tabellen, z. B. bab-mufaala3-mudaaf-shaqqa): Aktiv-Mudari und Passiv-Mudari sind hier BUCHSTABENGLEICH gedruckt (يُوَادُّ), ebenso Aktiv-Ism und Passiv-Ism (مُوَادٌّ) — der unterscheidende Innenvokal läge auf dem beim Idgham verschmelzenden Dal, das gedruckte Schriftbild macht daher keinen Unterschied sichtbar. Zeichengenau wie gedruckt übernommen, nicht künstlich disambiguiert.",
+        "Zeichengenau aus dem gerenderten Seitenbild von handout.pdf S. 128 (Abbildung 127) bei 22-fachem Zoom gelesen. Diese Tabelle trägt im Original eine gedruckte Kopfzeile."
+      ],
+      "source": { "file": "handout.pdf", "page": 128 }
+    },
+    {
+      "id": "bab-daraba-murakkab-ajwaf-mahmuz-aada",
+      "kind": "verb",
+      "titleDe": "Bab Daraba (Ajwaf + Mahmuz al-Fa') — آدَ (stark werden, Kraft haben)",
+      "termAr": "آدَ",
+      "columns": [
+        { "id": "madhi", "labelDe": "Madhi / Amr" },
+        { "id": "mudari", "labelDe": "Mudari / Nahy" },
+        { "id": "masdar", "labelDe": "Masdar" },
+        { "id": "ism", "labelDe": "Ism (Fa'il / Maf'ul)" }
+      ],
+      "rows": [
+        { "id": "aktiv", "labelDe": "Aktiv" },
+        { "id": "passiv", "labelDe": "Passiv" },
+        { "id": "imperativ", "labelDe": "Imperativ (Amr/Nahy)" }
+      ],
+      "cells": {
+        "aktiv": {
+          "madhi": { "ar": "آدَ", "de": "er wurde stark" },
+          "mudari": { "ar": "يَئِيدُ", "de": "er wird stark" },
+          "masdar": { "ar": "أَيْدًا", "de": "das Starkwerden, die Kraft (Masdar)" },
+          "ism": { "ar": "آئِدٌ", "de": "Starker (Ism Fa'il)" }
+        },
+        "passiv": {
+          "madhi": { "ar": "أُوْيِدَ", "de": "es wurde bestärkt" },
+          "mudari": { "ar": "يُؤَادُ", "de": "es wird bestärkt" },
+          "masdar": { "ar": "أَيْدًا", "de": "das Starkwerden, die Kraft (Masdar)" },
+          "ism": { "ar": "مَئِيدٌ", "de": "Bestärktes (Ism Maf'ul)" }
+        },
+        "imperativ": {
+          "madhi": { "ar": "إِدْ", "de": "Werde stark!" },
+          "mudari": { "ar": "لَا تَئِدْ", "de": "Werde nicht stark!" }
+        }
+      },
+      "notes": [
+        "Ajwaf (schwacher mittlerer Radikal, hier Ya) + Mahmuz al-Fa' (Hamza als 1. Radikal). Wurzel أيد, verwandt mit der Form-IV-Ableitung أَيَّدَ ('bestärken'), die im Qur'an mehrfach vorkommt (z. B. Sure 2, Vers 87: 'وَأَيَّدْنَاهُ بِرُوحِ الْقُدُسِ'). Die hier abgebildete Grundform I (آدَ يَئِيدُ) ist die seltenere, dem Lehrbuch entnommene Zitierform.",
+        "Amr إِدْ ist zeichengleich mit dem Amr von bab-daraba-murakkab-mithal-mahmuz-waada (dort Wurzel وأد) — beide Wurzeln enden im Jussiv/Apokopat nach Wegfall von Präfix bzw. Medialvokal auf denselben zweikonsonantigen Rest (ء+د), was zur identischen Imperativform führt. Bei ≥45-fachem Zoom je einzeln gegengeprüft, keine Verwechslung der beiden Tabellen.",
+        "Passiv-Madhi أُوْيِدَ zeigt den für Ajwaf-Verben mit vorangehender Damma typischen Ibdal des schwachen Medialradikals Ya zu Waw (dieselbe Erscheinung wie im Passiv von bab-istifal10-murakkab-mithal-mahmuz-istayasa).",
+        "Zeichengenau aus dem gerenderten Seitenbild von handout.pdf S. 128 (Abbildung 128) bei 22- bis 45-fachem Zoom gelesen, Tabellenraster per PyMuPDF find_tables() verifiziert."
+      ],
+      "source": { "file": "handout.pdf", "page": 128 }
+    },
+    {
+      "id": "bab-nasara-murakkab-ajwaf-mahmuz-aala",
+      "kind": "verb",
+      "titleDe": "Bab Nasara (Ajwaf + Mahmuz al-Fa') — آلَ (zurückkehren, hinauslaufen auf)",
+      "termAr": "آلَ",
+      "columns": [
+        { "id": "madhi", "labelDe": "Madhi / Amr" },
+        { "id": "mudari", "labelDe": "Mudari / Nahy" },
+        { "id": "masdar", "labelDe": "Masdar" },
+        { "id": "ism", "labelDe": "Ism (Fa'il / Maf'ul)" }
+      ],
+      "rows": [
+        { "id": "aktiv", "labelDe": "Aktiv" },
+        { "id": "passiv", "labelDe": "Passiv" },
+        { "id": "imperativ", "labelDe": "Imperativ (Amr/Nahy)" }
+      ],
+      "cells": {
+        "aktiv": {
+          "madhi": { "ar": "آلَ", "de": "er kehrte zurück, lief hinaus auf" },
+          "mudari": { "ar": "يَؤُولُ", "de": "er kehrt zurück, läuft hinaus auf" },
+          "masdar": { "ar": "أَوْلًا", "de": "das Zurückkehren (Masdar)" },
+          "ism": { "ar": "آئِلٌ", "de": "Zurückkehrender (Ism Fa'il)" }
+        },
+        "passiv": {
+          "madhi": { "ar": "أُوْيِلَ", "de": "es wurde (dahin) zurückgeführt" },
+          "mudari": { "ar": "يُؤَالُ", "de": "es wird (dahin) zurückgeführt" },
+          "masdar": { "ar": "أَوْلًا", "de": "das Zurückkehren (Masdar)" },
+          "ism": { "ar": "مَؤُولٌ", "de": "Zurückgeführtes (Ism Maf'ul)" }
+        },
+        "imperativ": {
+          "madhi": { "ar": "أُلْ", "de": "Kehre zurück!" },
+          "mudari": { "ar": "لَا تَؤُلْ", "de": "Kehre nicht zurück!" }
+        }
+      },
+      "notes": [
+        "Ajwaf (schwacher mittlerer Radikal, hier Waw) + Mahmuz al-Fa' (Hamza als 1. Radikal). Wurzel أول, sehr geläufig über die Ableitungen مَآل ('Ausgang, Ende') und die Form-II-Ableitung تَأْوِيل ('Deutung, Interpretation'), die im Qur'an häufig vorkommt. Die Grundform I (آلَ يَؤُولُ) ist die Basis dieser Ableitungen.",
+        "Zeichengenau aus dem gerenderten Seitenbild von handout.pdf S. 129 (Abbildung 129) bei 22-fachem Zoom gelesen, Tabellenraster per PyMuPDF find_tables() verifiziert."
+      ],
+      "source": { "file": "handout.pdf", "page": 129 }
+    },
+    {
+      "id": "bab-samia-murakkab-ajwaf-mahmuz-shaaa",
+      "kind": "verb",
+      "titleDe": "Bab Sami'a (Ajwaf + Mahmuz al-Lam) — شَاءَ (wollen)",
+      "termAr": "شَاءَ",
+      "columns": [
+        { "id": "madhi", "labelDe": "Madhi / Amr" },
+        { "id": "mudari", "labelDe": "Mudari / Nahy" },
+        { "id": "masdar", "labelDe": "Masdar" },
+        { "id": "ism", "labelDe": "Ism (Fa'il / Maf'ul)" }
+      ],
+      "rows": [
+        { "id": "aktiv", "labelDe": "Aktiv" },
+        { "id": "passiv", "labelDe": "Passiv" },
+        { "id": "imperativ", "labelDe": "Imperativ (Amr/Nahy)" }
+      ],
+      "cells": {
+        "aktiv": {
+          "madhi": { "ar": "شَاءَ", "de": "er wollte" },
+          "mudari": { "ar": "يَشَاءُ", "de": "er will" },
+          "masdar": { "ar": "مَشِيْئَةً", "de": "der Wille (Masdar)" },
+          "ism": { "ar": "شَاءٍ", "de": "Wollender (Ism Fa'il)" }
+        },
+        "passiv": {
+          "madhi": { "ar": "شِيْءَ", "de": "es wurde gewollt" },
+          "mudari": { "ar": "يُشَاءُ", "de": "es wird gewollt" },
+          "masdar": { "ar": "مَشِيْئَةً", "de": "der Wille (Masdar)" },
+          "ism": { "ar": "مَشِيْءٌ", "de": "Gewolltes (Ism Maf'ul)" }
+        },
+        "imperativ": {
+          "madhi": { "ar": "شَأْ", "de": "Wolle!" },
+          "mudari": { "ar": "لَا تَشَأْ", "de": "Wolle nicht!" }
+        }
+      },
+      "notes": [
+        "Ajwaf (schwacher mittlerer Radikal, hier Ya) + Mahmuz al-Lam (Hamza als 3. Radikal). Wurzel شيء, eines der häufigsten Verben im Qur'an überhaupt ('إِنْ شَاءَ اللَّهُ', 'مَا شَاءَ اللَّهُ').",
+        "Zeichengenau aus dem gerenderten Seitenbild von handout.pdf S. 129 (Abbildung 130) bei 22-fachem Zoom gelesen, Tabellenraster per PyMuPDF find_tables() verifiziert."
+      ],
+      "source": { "file": "handout.pdf", "page": 129 }
+    },
+    {
+      "id": "bab-daraba-murakkab-ajwaf-mahmuz-jaaa",
+      "kind": "verb",
+      "titleDe": "Bab Daraba (Ajwaf + Mahmuz al-Lam) — جَاءَ (kommen)",
+      "termAr": "جَاءَ",
+      "columns": [
+        { "id": "madhi", "labelDe": "Madhi / Amr" },
+        { "id": "mudari", "labelDe": "Mudari / Nahy" },
+        { "id": "masdar", "labelDe": "Masdar" },
+        { "id": "ism", "labelDe": "Ism (Fa'il / Maf'ul)" }
+      ],
+      "rows": [
+        { "id": "aktiv", "labelDe": "Aktiv" },
+        { "id": "passiv", "labelDe": "Passiv" },
+        { "id": "imperativ", "labelDe": "Imperativ (Amr/Nahy)" }
+      ],
+      "cells": {
+        "aktiv": {
+          "madhi": { "ar": "جَاءَ", "de": "er kam" },
+          "mudari": { "ar": "يَجِيْءُ", "de": "er kommt" },
+          "masdar": { "ar": "مَجِيْئًا", "de": "das Kommen (Masdar)" },
+          "ism": { "ar": "جَاءٍ", "de": "Kommender (Ism Fa'il)" }
+        },
+        "passiv": {
+          "madhi": { "ar": "جِيْءَ", "de": "es wurde gebracht/gekommen (unpersönlich)" },
+          "mudari": { "ar": "يُجَاءُ", "de": "es wird gebracht/gekommen (unpersönlich)" },
+          "masdar": { "ar": "مَجِيْئًا", "de": "das Kommen (Masdar)" },
+          "ism": { "ar": "مَجِيْءٌ", "de": "Gebrachtes (Ism Maf'ul)" }
+        },
+        "imperativ": {
+          "madhi": { "ar": "جِئْ", "de": "Komm!" },
+          "mudari": { "ar": "لَا تَجِئْ", "de": "Komm nicht!" }
+        }
+      },
+      "notes": [
+        "Ajwaf (schwacher mittlerer Radikal, hier Ya) + Mahmuz al-Lam (Hamza als 3. Radikal). Wurzel جيء, eines der häufigsten Verben im Qur'an überhaupt ('جَاءَ', 'يَجِيءُ').",
+        "Zeichengenau aus dem gerenderten Seitenbild von handout.pdf S. 129 (Abbildung 131) bei 22-fachem Zoom gelesen, Tabellenraster per PyMuPDF find_tables() verifiziert."
+      ],
+      "source": { "file": "handout.pdf", "page": 129 }
+    },
+    {
+      "id": "bab-nasara-murakkab-ajwaf-mahmuz-baaa",
+      "kind": "verb",
+      "titleDe": "Bab Nasara (Ajwaf + Mahmuz al-Lam) — بَاءَ (zurückkehren, sich zuziehen)",
+      "termAr": "بَاءَ",
+      "columns": [
+        { "id": "madhi", "labelDe": "Madhi / Amr" },
+        { "id": "mudari", "labelDe": "Mudari / Nahy" },
+        { "id": "masdar", "labelDe": "Masdar" },
+        { "id": "ism", "labelDe": "Ism (Fa'il / Maf'ul)" }
+      ],
+      "rows": [
+        { "id": "aktiv", "labelDe": "Aktiv" },
+        { "id": "passiv", "labelDe": "Passiv" },
+        { "id": "imperativ", "labelDe": "Imperativ (Amr/Nahy)" }
+      ],
+      "cells": {
+        "aktiv": {
+          "madhi": { "ar": "بَاءَ", "de": "er kehrte zurück, zog sich (etwas) zu" },
+          "mudari": { "ar": "يَبُوْءُ", "de": "er kehrt zurück, zieht sich (etwas) zu" },
+          "masdar": { "ar": "بَوْءًا", "de": "das Sich-Zuziehen (Masdar)" },
+          "ism": { "ar": "بَاءٍ", "de": "sich Zuziehender (Ism Fa'il)" }
+        },
+        "passiv": {
+          "madhi": { "ar": "بِيْءَ", "de": "es wurde sich zugezogen (unpersönlich)" },
+          "mudari": { "ar": "يُبَاءُ", "de": "es wird sich zugezogen (unpersönlich)" },
+          "masdar": { "ar": "بَوْءًا", "de": "das Sich-Zuziehen (Masdar)" },
+          "ism": { "ar": "مَبُوْءٌ", "de": "Zugezogenes (Ism Maf'ul)" }
+        },
+        "imperativ": {
+          "madhi": { "ar": "بُؤْ", "de": "Ziehe dir zu!" },
+          "mudari": { "ar": "لَا تَبُؤْ", "de": "Ziehe dir nicht zu!" }
+        }
+      },
+      "notes": [
+        "Ajwaf (schwacher mittlerer Radikal, hier Waw) + Mahmuz al-Lam (Hamza als 3. Radikal). Wurzel بوأ, belegt in Sure 2 (Al-Baqarah), Vers 61: 'فَبَاءُوا بِغَضَبٍ مِنَ اللَّهِ'.",
+        "Zeichengenau aus dem gerenderten Seitenbild von handout.pdf S. 129 (Abbildung 132) bei 22-fachem Zoom gelesen, Tabellenraster per PyMuPDF find_tables() verifiziert."
+      ],
+      "source": { "file": "handout.pdf", "page": 129 }
+    },
+    {
+      "id": "bab-fataha-murakkab-naqis-mahmuz-abaa",
+      "kind": "verb",
+      "titleDe": "Bab Fataha (Naqis + Mahmuz al-Fa') — أَبَى (sich weigern)",
+      "termAr": "أَبَى",
+      "columns": [
+        { "id": "madhi", "labelDe": "Madhi / Amr" },
+        { "id": "mudari", "labelDe": "Mudari / Nahy" },
+        { "id": "masdar", "labelDe": "Masdar" },
+        { "id": "ism", "labelDe": "Ism (Fa'il / Maf'ul)" }
+      ],
+      "rows": [
+        { "id": "aktiv", "labelDe": "Aktiv" },
+        { "id": "passiv", "labelDe": "Passiv" },
+        { "id": "imperativ", "labelDe": "Imperativ (Amr/Nahy)" }
+      ],
+      "cells": {
+        "aktiv": {
+          "madhi": { "ar": "أَبَى", "de": "er weigerte sich" },
+          "mudari": { "ar": "يَأْبَى", "de": "er weigert sich" },
+          "masdar": { "ar": "إِبَاءً", "de": "das Sich-Weigern (Masdar)" },
+          "ism": { "ar": "آبٍ", "de": "sich Weigernder (Ism Fa'il)" }
+        },
+        "passiv": {
+          "madhi": { "ar": "أُبِيَ", "de": "es wurde sich geweigert (unpersönlich)" },
+          "mudari": { "ar": "يُؤْبَى", "de": "es wird sich geweigert (unpersönlich)" },
+          "masdar": { "ar": "إِبَاءً", "de": "das Sich-Weigern (Masdar)" },
+          "ism": { "ar": "مَأْبِيٌّ", "de": "das Verweigerte (Ism Maf'ul)" }
+        },
+        "imperativ": {
+          "madhi": { "ar": "إِيْبَ", "de": "Weigere dich!" },
+          "mudari": { "ar": "لَا تَأْبَ", "de": "Weigere dich nicht!" }
+        }
+      },
+      "notes": [
+        "Naqis (schwacher letzter Radikal, hier Ya) + Mahmuz al-Fa' (Hamza als 1. Radikal). Wurzel أبي, bekannt aus dem Qur'an u. a. für Iblis' Weigerung, sich niederzuwerfen (Sure 2, Vers 34: 'أَبَى وَاسْتَكْبَرَ').",
+        "Ism Fa'il آبٍ (mit Kasratan) sowie Ism Maf'ul مَأْبِيٌّ bei ≥35-fachem Zoom zellenweise nachgeschnitten und gegen Verwechslung Hamza-auf-Alif/Tanwin geprüft (bekannte Fallstricke aus LUECKEN.md) — beide Formen zweifelsfrei bestätigt.",
+        "Zeichengenau aus dem gerenderten Seitenbild von handout.pdf S. 130 (Abbildung 133) bei 22- bis 35-fachem Zoom gelesen, Tabellenraster per PyMuPDF find_tables() verifiziert."
+      ],
+      "source": { "file": "handout.pdf", "page": 130 }
+    },
+    {
+      "id": "bab-samia-murakkab-naqis-mahmuz-asiya",
+      "kind": "verb",
+      "titleDe": "Bab Sami'a (Naqis + Mahmuz al-Fa') — أَسِيَ (trauern, betrübt sein)",
+      "termAr": "أَسِيَ",
+      "columns": [
+        { "id": "madhi", "labelDe": "Madhi / Amr" },
+        { "id": "mudari", "labelDe": "Mudari / Nahy" },
+        { "id": "masdar", "labelDe": "Masdar" },
+        { "id": "ism", "labelDe": "Ism (Fa'il / Maf'ul)" }
+      ],
+      "rows": [
+        { "id": "aktiv", "labelDe": "Aktiv" },
+        { "id": "passiv", "labelDe": "Passiv" },
+        { "id": "imperativ", "labelDe": "Imperativ (Amr/Nahy)" }
+      ],
+      "cells": {
+        "aktiv": {
+          "madhi": { "ar": "أَسِيَ", "de": "er trauerte, war betrübt" },
+          "mudari": { "ar": "يَأْسَى", "de": "er trauert, ist betrübt" },
+          "masdar": { "ar": "أَسَى", "de": "die Trauer (Masdar)" },
+          "ism": { "ar": "آسٍ", "de": "Trauernder (Ism Fa'il)" }
+        },
+        "passiv": {
+          "madhi": { "ar": "أُسِيَ", "de": "es wurde betrübt (unpersönlich)" },
+          "mudari": { "ar": "يُؤْسَى", "de": "es wird betrübt (unpersönlich)" },
+          "masdar": { "ar": "أَسَى", "de": "die Trauer (Masdar)" },
+          "ism": { "ar": "مَأْسِيٌّ", "de": "Betrübtes (Ism Maf'ul)" }
+        },
+        "imperativ": {
+          "madhi": { "ar": "إِيْسَ", "de": "Traure!" },
+          "mudari": { "ar": "لَا تَأْسَ", "de": "Traure nicht!" }
+        }
+      },
+      "notes": [
+        "Naqis (schwacher letzter Radikal, hier Ya) + Mahmuz al-Fa' (Hamza als 1. Radikal). Wurzel im Korpus-Index als اسو geführt (Nebenform أسو/أسي), belegt in Sure 57 (Al-Hadid), Vers 23: 'لِكَيْلَا تَأْسَوْا عَلَى مَا فَاتَكُمْ' (dort Plural-Nahy derselben Wurzel).",
+        "Masdar أَسَى ist im Original ohne Tanwin gedruckt (bei 60-fachem Zoom nachgeschnitten und bestätigt) — anders als die meisten übrigen Masdar-Formen dieser Tabellenfamilie, die Fathatan tragen; zeichengenau wie gedruckt übernommen.",
+        "Zeichengenau aus dem gerenderten Seitenbild von handout.pdf S. 130 (Abbildung 134) bei 22- bis 60-fachem Zoom gelesen, Tabellenraster per PyMuPDF find_tables() verifiziert."
+      ],
+      "source": { "file": "handout.pdf", "page": 130 }
+    },
+    {
+      "id": "bab-daraba-murakkab-naqis-mahmuz-ataa",
+      "kind": "verb",
+      "titleDe": "Bab Daraba (Naqis + Mahmuz al-Fa') — أَتَى (kommen)",
+      "termAr": "أَتَى",
+      "columns": [
+        { "id": "madhi", "labelDe": "Madhi / Amr" },
+        { "id": "mudari", "labelDe": "Mudari / Nahy" },
+        { "id": "masdar", "labelDe": "Masdar" },
+        { "id": "ism", "labelDe": "Ism (Fa'il / Maf'ul)" }
+      ],
+      "rows": [
+        { "id": "aktiv", "labelDe": "Aktiv" },
+        { "id": "passiv", "labelDe": "Passiv" },
+        { "id": "imperativ", "labelDe": "Imperativ (Amr/Nahy)" }
+      ],
+      "cells": {
+        "aktiv": {
+          "madhi": { "ar": "أَتَى", "de": "er kam" },
+          "mudari": { "ar": "يَأْتِي", "de": "er kommt" },
+          "masdar": { "ar": "إِتْيَانًا", "de": "das Kommen (Masdar)" },
+          "ism": { "ar": "آتٍ", "de": "Kommender (Ism Fa'il)" }
+        },
+        "passiv": {
+          "madhi": { "ar": "أُتِيَ", "de": "es wurde gebracht/gekommen (unpersönlich)" },
+          "mudari": { "ar": "يُؤْتَى", "de": "es wird gebracht/gekommen (unpersönlich)" },
+          "masdar": { "ar": "إِتْيَانًا", "de": "das Kommen (Masdar)" },
+          "ism": { "ar": "مَأْتِيٌّ", "de": "Gebrachtes (Ism Maf'ul)" }
+        },
+        "imperativ": {
+          "madhi": { "ar": "إِيْتِ", "de": "Komm!" },
+          "mudari": { "ar": "لَا تَأْتِ", "de": "Komm nicht!" }
+        }
+      },
+      "notes": [
+        "Naqis (schwacher letzter Radikal, hier Ya) + Mahmuz al-Fa' (Hamza als 1. Radikal). Wurzel أتي, eines der häufigsten Verben im Qur'an überhaupt ('أَتَى', 'يَأْتِي', 'آتٍ').",
+        "Zeichengenau aus dem gerenderten Seitenbild von handout.pdf S. 130 (Abbildung 135) bei 22-fachem Zoom gelesen, Tabellenraster per PyMuPDF find_tables() verifiziert."
+      ],
+      "source": { "file": "handout.pdf", "page": 130 }
+    },
+    {
+      "id": "bab-nasara-murakkab-naqis-mahmuz-alaa",
+      "kind": "verb",
+      "titleDe": "Bab Nasara (Naqis + Mahmuz al-Fa') — أَلَا (nachlassen, sich schonen)",
+      "termAr": "أَلَا",
+      "columns": [
+        { "id": "madhi", "labelDe": "Madhi / Amr" },
+        { "id": "mudari", "labelDe": "Mudari / Nahy" },
+        { "id": "masdar", "labelDe": "Masdar" },
+        { "id": "ism", "labelDe": "Ism (Fa'il / Maf'ul)" }
+      ],
+      "rows": [
+        { "id": "aktiv", "labelDe": "Aktiv" },
+        { "id": "passiv", "labelDe": "Passiv" },
+        { "id": "imperativ", "labelDe": "Imperativ (Amr/Nahy)" }
+      ],
+      "cells": {
+        "aktiv": {
+          "madhi": { "ar": "أَلَا", "de": "er ließ nach, schonte sich" },
+          "mudari": { "ar": "يَأْلُو", "de": "er lässt nach, schont sich" },
+          "masdar": { "ar": "أَلْوًا", "de": "das Nachlassen (Masdar)" },
+          "ism": { "ar": "آلٍ", "de": "Nachlassender (Ism Fa'il)" }
+        },
+        "passiv": {
+          "madhi": { "ar": "أُلِيَ", "de": "es wurde nachgelassen (unpersönlich)" },
+          "mudari": { "ar": "يُؤْلَى", "de": "es wird nachgelassen (unpersönlich)" },
+          "masdar": { "ar": "أَلْوًا", "de": "das Nachlassen (Masdar)" },
+          "ism": { "ar": "مَأْلُوٌّ", "de": "worin nachgelassen wird (Ism Maf'ul)" }
+        },
+        "imperativ": {
+          "madhi": { "ar": "أُؤُلْ", "de": "Lass nach!" },
+          "mudari": { "ar": "لَا تَأْلُ", "de": "Lass nicht nach!" }
+        }
+      },
+      "notes": [
+        "Naqis (schwacher letzter Radikal, hier Waw) + Mahmuz al-Fa' (Hamza als 1. Radikal). Wurzel ألو (im Korpus-Index als الو geführt), belegt in Sure 3 (Al Imran), Vers 118: 'لَا يَأْلُونَكُمْ خَبَالًا'.",
+        "Amr أُؤُلْ bei 160-fachem Zoom mehrfach nachgeschnitten: zwei Hamza-Träger sichtbar (Alif mit Damma, dann Waw mit Hamza und Damma), gefolgt von unbezeichnetem (sakinem) Lam — zeichengenau wie gedruckt übernommen. Grammatisch ungewöhnlich (die Wasl-Hilfsvokal-Regel würde eher einen Rest 'أْلُ' mit Sukun auf dem Wurzel-Hamza erwarten), aber nicht stillschweigend korrigiert, sondern exakt wie im Bild belegt wiedergegeben — diese seltene Verbform (Amr von ألو wird in der Praxis kaum verwendet) ist im Lehrbuch offenbar regelhaft-konstruiert und weicht damit möglicherweise von der klassischen Norm ab.",
+        "Zeichengenau aus dem gerenderten Seitenbild von handout.pdf S. 130 (Abbildung 136) bei 22- bis 160-fachem Zoom gelesen, Tabellenraster per PyMuPDF find_tables() verifiziert."
+      ],
+      "source": { "file": "handout.pdf", "page": 130 }
+    },
+    {
+      "id": "bab-tafil2-murakkab-naqis-mahmuz-addaa",
+      "kind": "verb",
+      "titleDe": "Bab Taf'il II (Naqis + Mahmuz al-Fa') — أَدَّى (erfüllen, abliefern)",
+      "termAr": "أَدَّى",
+      "columns": [
+        { "id": "madhi", "labelDe": "Madhi / Amr" },
+        { "id": "mudari", "labelDe": "Mudari / Nahy" },
+        { "id": "masdar", "labelDe": "Masdar" },
+        { "id": "ism", "labelDe": "Ism (Fa'il / Maf'ul)" }
+      ],
+      "rows": [
+        { "id": "aktiv", "labelDe": "Aktiv" },
+        { "id": "passiv", "labelDe": "Passiv" },
+        { "id": "imperativ", "labelDe": "Imperativ (Amr/Nahy)" }
+      ],
+      "cells": {
+        "aktiv": {
+          "madhi": { "ar": "أَدَّى", "de": "er erfüllte, lieferte ab" },
+          "mudari": { "ar": "يُؤَدِّي", "de": "er erfüllt, liefert ab" },
+          "masdar": { "ar": "تَأْدِيَةً", "de": "das Erfüllen, Abliefern (Masdar)" },
+          "ism": { "ar": "مُؤَدٍّ", "de": "Erfüllender, Ablieferender (Ism Fa'il)" }
+        },
+        "passiv": {
+          "madhi": { "ar": "أُدِّيَ", "de": "es wurde erfüllt, abgeliefert" },
+          "mudari": { "ar": "يُؤَدَّى", "de": "es wird erfüllt, abgeliefert" },
+          "masdar": { "ar": "تَأْدِيَةً", "de": "das Erfüllen, Abliefern (Masdar)" },
+          "ism": { "ar": "مُؤَدًّى", "de": "Erfülltes, Abgeliefertes (Ism Maf'ul)" }
+        },
+        "imperativ": {
+          "madhi": { "ar": "أَدِّ", "de": "Erfülle/Liefere ab!" },
+          "mudari": { "ar": "لَا تُؤَدِّ", "de": "Erfülle/Liefere nicht ab!" }
+        }
+      },
+      "notes": [
+        "Naqis (schwacher letzter Radikal, hier Ya) + Mahmuz al-Fa' (Hamza als 1. Radikal) in Form II (Taf'il). Wurzel أدي, belegt in Sure 2 (Al-Baqarah), Vers 283: 'فَلْيُؤَدِّ الَّذِي اؤْتُمِنَ أَمَانَتَهُ'.",
+        "Zeichengenau aus dem gerenderten Seitenbild von handout.pdf S. 130 (Abbildung 137) bei 22-fachem Zoom gelesen, Tabellenraster per PyMuPDF find_tables() verifiziert."
+      ],
+      "source": { "file": "handout.pdf", "page": 130 }
+    },
+    {
+      "id": "bab-fataha-murakkab-naqis-mahmuz-raaa",
+      "kind": "verb",
+      "titleDe": "Bab Fataha (Naqis + Mahmuz al-'Ain) — رَأَى (sehen)",
+      "termAr": "رَأَى",
+      "columns": [
+        { "id": "madhi", "labelDe": "Madhi / Amr" },
+        { "id": "mudari", "labelDe": "Mudari / Nahy" },
+        { "id": "masdar", "labelDe": "Masdar" },
+        { "id": "ism", "labelDe": "Ism (Fa'il / Maf'ul)" }
+      ],
+      "rows": [
+        { "id": "aktiv", "labelDe": "Aktiv" },
+        { "id": "passiv", "labelDe": "Passiv" },
+        { "id": "imperativ", "labelDe": "Imperativ (Amr/Nahy)" }
+      ],
+      "cells": {
+        "aktiv": {
+          "madhi": { "ar": "رَأَى", "de": "er sah" },
+          "mudari": { "ar": "يَرَى", "de": "er sieht" },
+          "masdar": { "ar": "رُؤْيَةً", "de": "das Sehen (Masdar)" },
+          "ism": { "ar": "رَاءٍ", "de": "Sehender (Ism Fa'il)" }
+        },
+        "passiv": {
+          "madhi": { "ar": "رُئِيَ", "de": "es wurde gesehen" },
+          "mudari": { "ar": "يُرَى", "de": "es wird gesehen" },
+          "masdar": { "ar": "رُؤْيَةً", "de": "das Sehen (Masdar)" },
+          "ism": { "ar": "مَرْئِيٌّ", "de": "Gesehenes (Ism Maf'ul)" }
+        },
+        "imperativ": {
+          "madhi": { "ar": "رَ", "de": "Sieh!" },
+          "mudari": { "ar": "لَا تَرَ", "de": "Sieh nicht!" }
+        }
+      },
+      "notes": [
+        "Naqis (schwacher letzter Radikal, hier Ya) + Mahmuz al-'Ain (Hamza als 2. Radikal). Wurzel رأي, eines der häufigsten Verben im Qur'an überhaupt ('أَلَمْ تَرَ', 'يَرَى'). Der Amr رَ (nur ein Buchstabe) entsteht durch Wegfall sowohl des Hamza-Medialradikals als auch des schwachen Endradikals im Jussiv/Apokopat — dieselbe extreme Kürzung wie im gut belegten Qur'an-Sprachgebrauch ('أَلَمْ تَرَ' vom Mudari, hier als eigenständiger Amr abgebildet).",
+        "Zeichengenau aus dem gerenderten Seitenbild von handout.pdf S. 131 (Abbildung 138) bei 22-fachem Zoom gelesen, Tabellenraster per PyMuPDF find_tables() verifiziert."
+      ],
+      "source": { "file": "handout.pdf", "page": 131 }
+    },
+    {
+      "id": "bab-mufaala3-murakkab-naqis-mahmuz-raaa",
+      "kind": "verb",
+      "titleDe": "Bab Mufa'ala III (Naqis + Mahmuz al-'Ain) — رَاءَى (heucheln, sich zur Schau stellen)",
+      "termAr": "رَاءَى",
+      "columns": [
+        { "id": "madhi", "labelDe": "Madhi / Amr" },
+        { "id": "mudari", "labelDe": "Mudari / Nahy" },
+        { "id": "masdar", "labelDe": "Masdar" },
+        { "id": "ism", "labelDe": "Ism (Fa'il / Maf'ul)" }
+      ],
+      "rows": [
+        { "id": "aktiv", "labelDe": "Aktiv" },
+        { "id": "passiv", "labelDe": "Passiv" },
+        { "id": "imperativ", "labelDe": "Imperativ (Amr/Nahy)" }
+      ],
+      "cells": {
+        "aktiv": {
+          "madhi": { "ar": "رَاءَى", "de": "er heuchelte, stellte sich zur Schau" },
+          "mudari": { "ar": "يُرَائِي", "de": "er heuchelt, stellt sich zur Schau" },
+          "masdar": { "ar": "مُرَاءَاةً", "de": "das Heucheln (Masdar)" },
+          "ism": { "ar": "مُرَاءٍ", "de": "Heuchelnder (Ism Fa'il)" }
+        },
+        "passiv": {
+          "madhi": { "ar": "رُوْئِيَ", "de": "es wurde vorgeheuchelt" },
+          "mudari": { "ar": "يُرَاءَى", "de": "es wird vorgeheuchelt" },
+          "masdar": { "ar": "مُرَاءَاةً", "de": "das Heucheln (Masdar)" },
+          "ism": { "ar": "مُرَاءًى", "de": "Vorgeheucheltes (Ism Maf'ul)" }
+        },
+        "imperativ": {
+          "madhi": { "ar": "رَاءِ", "de": "Heuchle!" },
+          "mudari": { "ar": "لَا تُرَاءِ", "de": "Heuchle nicht!" }
+        }
+      },
+      "notes": [
+        "Naqis (schwacher letzter Radikal, hier Ya) + Mahmuz al-'Ain (Hamza als 2. Radikal) in Form III (Mufa'ala). Wurzel رأي, belegt in Sure 107 (Al-Ma'un), Vers 6: 'الَّذِينَ هُمْ يُرَاءُونَ' (Plural derselben Form).",
+        "Zeichengenau aus dem gerenderten Seitenbild von handout.pdf S. 131 (Abbildung 139) bei 22-fachem Zoom gelesen, Tabellenraster per PyMuPDF find_tables() verifiziert."
+      ],
+      "source": { "file": "handout.pdf", "page": 131 }
+    },
+    {
+      "id": "bab-ifal4-murakkab-naqis-mahmuz-araa",
+      "kind": "verb",
+      "titleDe": "Bab If'al IV (Naqis + Mahmuz al-'Ain) — أَرَى (zeigen, sehen lassen)",
+      "termAr": "أَرَى",
+      "columns": [
+        { "id": "madhi", "labelDe": "Madhi / Amr" },
+        { "id": "mudari", "labelDe": "Mudari / Nahy" },
+        { "id": "masdar", "labelDe": "Masdar" },
+        { "id": "ism", "labelDe": "Ism (Fa'il / Maf'ul)" }
+      ],
+      "rows": [
+        { "id": "aktiv", "labelDe": "Aktiv" },
+        { "id": "passiv", "labelDe": "Passiv" },
+        { "id": "imperativ", "labelDe": "Imperativ (Amr/Nahy)" }
+      ],
+      "cells": {
+        "aktiv": {
+          "madhi": { "ar": "أَرَى", "de": "er zeigte, ließ sehen" },
+          "mudari": { "ar": "يُرِي", "de": "er zeigt, lässt sehen" },
+          "masdar": { "ar": "إِرَاءَةً", "de": "das Zeigen (Masdar)" },
+          "ism": { "ar": "مُرٍ", "de": "Zeigender (Ism Fa'il)" }
+        },
+        "passiv": {
+          "madhi": { "ar": "أُرِيَ", "de": "ihm wurde gezeigt" },
+          "mudari": { "ar": "يُرَى", "de": "ihm wird gezeigt" },
+          "masdar": { "ar": "إِرَاءَةً", "de": "das Zeigen (Masdar)" },
+          "ism": { "ar": "مُرًى", "de": "Gezeigtes (Ism Maf'ul)" }
+        },
+        "imperativ": {
+          "madhi": { "ar": "أَرِ", "de": "Zeige!" },
+          "mudari": { "ar": "لَا تُرِ", "de": "Zeige nicht!" }
+        }
+      },
+      "notes": [
+        "Naqis (schwacher letzter Radikal, hier Ya) + Mahmuz al-'Ain (Hamza als 2. Radikal) in Form IV (If'al). Wurzel رأي, häufig im Qur'an ('أَرِنَا مَنَاسِكَنَا', 'فَأَرَاهُمُ اللَّهُ').",
+        "Zeichengenau aus dem gerenderten Seitenbild von handout.pdf S. 131 (Abbildung 140) bei 22-fachem Zoom gelesen, Tabellenraster per PyMuPDF find_tables() verifiziert."
+      ],
+      "source": { "file": "handout.pdf", "page": 131 }
+    },
+    {
+      "id": "bab-daraba-murakkab-lafif-mahmuz-awaa",
+      "kind": "verb",
+      "titleDe": "Bab Daraba (Lafif Maqrun + Mahmuz al-Fa') — أَوَى (Zuflucht suchen)",
+      "termAr": "أَوَى",
+      "columns": [
+        { "id": "madhi", "labelDe": "Madhi / Amr" },
+        { "id": "mudari", "labelDe": "Mudari / Nahy" },
+        { "id": "masdar", "labelDe": "Masdar" },
+        { "id": "ism", "labelDe": "Ism (Fa'il / Maf'ul)" }
+      ],
+      "rows": [
+        { "id": "aktiv", "labelDe": "Aktiv" },
+        { "id": "passiv", "labelDe": "Passiv" },
+        { "id": "imperativ", "labelDe": "Imperativ (Amr/Nahy)" }
+      ],
+      "cells": {
+        "aktiv": {
+          "madhi": { "ar": "أَوَى", "de": "er suchte Zuflucht" },
+          "mudari": { "ar": "يَأْوِي", "de": "er sucht Zuflucht" },
+          "masdar": { "ar": "أَيًّا", "de": "das Zuflucht-Suchen (Masdar)" },
+          "ism": { "ar": "آوٍ", "de": "Zuflucht-Suchender (Ism Fa'il)" }
+        },
+        "passiv": {
+          "madhi": { "ar": "أُوِيَ", "de": "ihm wurde Zuflucht gewährt" },
+          "mudari": { "ar": "يُؤْوَى", "de": "ihm wird Zuflucht gewährt" },
+          "masdar": { "ar": "أَيًّا", "de": "das Zuflucht-Suchen (Masdar)" },
+          "ism": { "ar": "مَأْوِيٌّ", "de": "dem Zuflucht gewährt wird (Ism Maf'ul)" }
+        },
+        "imperativ": {
+          "madhi": { "ar": "إِيْوِ", "de": "Suche Zuflucht!" },
+          "mudari": { "ar": "لَا تَأْوُ", "de": "Suche nicht Zuflucht!" }
+        }
+      },
+      "notes": [
+        "Lafif Maqrun (2. und 3. Radikal beide schwach UND unmittelbar benachbart, hier Waw+Ya) + Mahmuz al-Fa' (Hamza als 1. Radikal). Wurzel أوي, sehr geläufig über die Ableitungen مَأْوًى ('Zufluchtsort') und آوَى ('beherbergen'), z. B. Sure 8, Vers 74 ('وَآوَوا وَّنَصَرُوا').",
+        "Masdar أَيًّا trägt im Original ein Schadda auf dem Ya (Verschmelzung des 2. Radikals Waw mit dem 3. Radikal Ya durch Idgham) plus Fathatan — bei 45-fachem Zoom nachgeschnitten und gegen eine anfängliche Lesung ohne Schadda korrigiert.",
+        "Nahy لَا تَأْوُ zeigt im Original eine Damma auf dem Waw (bei 70-fachem Zoom mehrfach bestätigt) statt der aufgrund des Mudari-Musters (يَأْوِي, Kasra-Typ) zu erwartenden Kasra — eine im Vergleich zum Amr إِيْوِ (dort mit zusätzlichem sakinem Ya vor dem Waw) auffällige Unregelmäßigkeit dieser seltenen Lafif-Maqrun-Kombination. Zeichengenau wie gedruckt übernommen, nicht an die erwartete Regel angeglichen.",
+        "Zeichengenau aus dem gerenderten Seitenbild von handout.pdf S. 131 (Abbildung 141) bei 22- bis 70-fachem Zoom gelesen, Tabellenraster per PyMuPDF find_tables() verifiziert."
+      ],
+      "source": { "file": "handout.pdf", "page": 131 }
+    },
+    {
+      "id": "bab-daraba-murakkab-lafif-mahmuz-waaa",
+      "kind": "verb",
+      "titleDe": "Bab Daraba (Lafif Mafruq + Mahmuz al-'Ain) — وَأَى (versprechen)",
+      "termAr": "وَأَى",
+      "columns": [
+        { "id": "madhi", "labelDe": "Madhi / Amr" },
+        { "id": "mudari", "labelDe": "Mudari / Nahy" },
+        { "id": "masdar", "labelDe": "Masdar" },
+        { "id": "ism", "labelDe": "Ism (Fa'il / Maf'ul)" }
+      ],
+      "rows": [
+        { "id": "aktiv", "labelDe": "Aktiv" },
+        { "id": "passiv", "labelDe": "Passiv" },
+        { "id": "imperativ", "labelDe": "Imperativ (Amr/Nahy)" }
+      ],
+      "cells": {
+        "aktiv": {
+          "madhi": { "ar": "وَأَى", "de": "er versprach" },
+          "mudari": { "ar": "يَئِي", "de": "er verspricht" },
+          "masdar": { "ar": "وَأْيًا", "de": "das Versprechen (Masdar)" },
+          "ism": { "ar": "وَاءٍ", "de": "Versprechender (Ism Fa'il)" }
+        },
+        "passiv": {
+          "madhi": { "ar": "وُئِيَ", "de": "es wurde versprochen" },
+          "mudari": { "ar": "يُوْأَى", "de": "es wird versprochen" },
+          "masdar": { "ar": "وَأْيًا", "de": "das Versprechen (Masdar)" },
+          "ism": { "ar": "مَوْئِيٌّ", "de": "Versprochenes (Ism Maf'ul)" }
+        },
+        "imperativ": {
+          "madhi": { "ar": "إِ", "de": "Versprich!" },
+          "mudari": { "ar": "لَا تَئِ", "de": "Versprich nicht!" }
+        }
+      },
+      "notes": [
+        "Lafif Mafruq (1. und 3. Radikal beide schwach, aber durch den starken 2. Radikal getrennt, hier Waw...Ya mit Hamza dazwischen) + Mahmuz al-'Ain (Hamza als 2. Radikal). Wurzel وأي — eine im klassischen Sarf-Unterricht als Lehrbeispiel für diese seltene Doppelkombination verwendete Wurzel, die weder unter وأي noch unter der alternativen Schreibung واي im Qur'an-Korpus (roots.json) belegt ist. Keine Korpus-Gegenprobe für diese Tabelle möglich.",
+        "Amr إِ besteht im Original nur aus einem einzigen Buchstaben (Hamza auf Alif mit Kasra) — die extremste Kürzung in dieser Tabellenfamilie, da sowohl der 1. Radikal (Waw, im Mudari-Jussiv bereits nicht mehr vorhanden) als auch der 3. Radikal (Ya, im Jussiv durch Kasra ersetzt) wegfallen und nur der mittlere Hamza-Radikal mit Hilfsvokal übrig bleibt. Bei 55-fachem Zoom bestätigt: der Buchstabe erscheint im Original zweizeilig umgebrochen (Alif in der oberen, Hamza-Zeichen in der unteren Bildzeile derselben Zelle) — dasselbe Layout-Verhalten wie bei mehreren Zellen der Mahmooz-Bab-Tabellen in paradigmen-verben.json dokumentiert.",
+        "Passiv-Mudari يُوْأَى: die Hamza-Sitz-Entscheidung (Hamza auf der Zeile vs. auf Alif) war bei 45-fachem Zoom nicht mit letzter Sicherheit zu treffen, da beide Glyphen bei diesem Schriftschnitt sehr ähnlich aussehen; die Lesung folgt der für Mahmuz-al-'Ain-Passivformen nach sakinem Waw grammatisch erwarteten und mit dem übrigen Schriftbild konsistenten Form (vgl. يَسْأَلُ). In LUECKEN.md als Grenzfall vermerkt.",
+        "Zeichengenau aus dem gerenderten Seitenbild von handout.pdf S. 132 (Abbildung 142) bei 22- bis 120-fachem Zoom gelesen, Tabellenraster per PyMuPDF find_tables() verifiziert."
+      ],
+      "source": { "file": "handout.pdf", "page": 132 }
+    }
+  ]
+}

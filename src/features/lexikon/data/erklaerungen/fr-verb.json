@@ -1,0 +1,1569 @@
+{
+  "schema": 1,
+  "lang": "fr",
+  "bereich": "verb",
+  "eintraege": {
+    "fiil": {
+      "titel": "Le verbe (Fiʿl) et ses fondements",
+      "ar": "الفِعْل",
+      "umschrift": "al-fiʿl",
+      "erklaerung": [
+        "L'arabe connaît trois classes de mots : ism (nom), fiʿl (verbe) et harf (particule). Un fiʿl désigne une action qui se produit à un moment déterminé — dans le passé, au présent/futur, ou sous forme d'ordre ou d'interdiction. Le système verbal se divise ainsi en exactement trois catégories de base : al-fiʿl al-māḍī, al-fiʿl al-muḍāriʿ et fiʿl al-amr/an-nahy. Toutes les autres formes verbales (participes, noms verbaux, etc.) dérivent de ces trois catégories de base, mais ne comptent plus elles-mêmes comme une catégorie propre du fiʿl.",
+        "La particularité du verbe arabe : il porte déjà son sujet en lui-même. Contrairement au français, où « j'aide » se compose de deux mots, le verbe arabe contient déjà l'information de qui agit — sous forme d'un pronom intégré, en préfixe ou en suffixe. Un seul mot verbal constitue donc déjà une phrase complète avec son fāʿil (agent).",
+        "Cette terminaison personnelle intégrée est la clé de tout le chapitre : qui l'a apprise une fois sur un verbe modèle (traditionnellement نَصَرَ, « il a aidé ») peut la transposer à tout autre verbe, car seul le radical change, jamais le schéma des terminaisons."
+      ],
+      "erkennung": [
+        "Un fiʿl se compose d'un radical fixe plus des préfixes/suffixes variables qui indiquent la personne, le genre et le nombre.",
+        "Contrairement à l'ism, un fiʿl ne porte jamais le tanwin ni l'article اَلْ.",
+        "Un mot verbal peut à lui seul former une phrase complète, car le sujet est déjà contenu dans le verbe."
+      ],
+      "belege": [
+        {
+          "sure": 1,
+          "vers": 5,
+          "wort": 2,
+          "zeigt": "نَعْبُدُ (« nous adorons/servons ») — le mot est déjà une phrase complète : radical عبد + « nous » intégré.",
+          "warum": "Le segment est pos:V avec person:1, number:pl — aucun pronom séparé n'est nécessaire."
+        },
+        {
+          "sure": 1,
+          "vers": 6,
+          "wort": 1,
+          "zeigt": "ٱهْدِنَا (« guide-nous ! ») — forme impérative avec « tu » (agent) intégré et « nous » (objet) suffixé, en un seul mot.",
+          "warum": "Le segment est pos:V, tense:imperative, person:2 — la classe de mots fiʿl dans sa troisième catégorie de base."
+        }
+      ],
+      "lernen": [
+        "Grave-toi d'abord la tripartition : māḍī – muḍāriʿ – amr/nahy. Prononce-les à voix haute dans cet ordre, jusqu'à ce que cela vienne automatiquement.",
+        "Prends un seul verbe modèle (par ex. نَصَرَ) et reste dessus jusqu'à maîtriser le schéma des terminaisons — essaie-le ensuite seulement sur d'autres verbes.",
+        "En lisant le Coran, cherche spécifiquement des verbes sans pronom séparé devant eux et nomme à voix haute qui est l'agent avant de poursuivre ta lecture."
+      ],
+      "tabellen": [
+        "verb-madi-nasara-aktiv-matrix",
+        "verb-mudari-nasara-aktiv-matrix"
+      ],
+      "siehe": [
+        "jidhr",
+        "madi",
+        "mudari",
+        "amr",
+        "nahy"
+      ]
+    },
+    "jidhr": {
+      "titel": "La racine et le principe du schème",
+      "ar": "الجَذْر وَالوَزْن",
+      "umschrift": "al-jadhr wa-l-wazn",
+      "erklaerung": [
+        "Presque tout verbe arabe remonte à une racine (jidhr) le plus souvent composée de trois consonnes, porteuse d'une idée de base. À partir de cette racine, des schèmes fixes (awzān, singulier wazn) permettent de former des familles de mots entières : le verbe de base, des formes verbales intensives ou causatives, le nom verbal, les participes. On peut se représenter la racine comme une graine, d'où poussent différents mots selon le schème.",
+        "Point important : la même racine produit, selon le schème, des sens différents mais apparentés. La racine ع-ل-م porte l'idée de base « savoir ». Au schème de base, elle donne عَلِمَ, « il a su ». En doublant la lettre radicale médiane (schème II), on obtient عَلَّمَ, « il a enseigné » — du pur savoir naît l'action de transmettre activement le savoir.",
+        "Ce principe du schème explique pourquoi le vocabulaire arabe s'ouvre de façon systématique plutôt que par pur par cœur : en connaissant la racine et le schème, on peut souvent déduire le sens d'un mot inconnu avant même de le chercher dans un dictionnaire."
+      ],
+      "erkennung": [
+        "La racine se compose le plus souvent de trois consonnes sans voyelles fixes — ce sont les voyelles et les lettres supplémentaires du schème qui les fournissent.",
+        "Deux mots de même racine mais de schème différent sont apparentés par le sens, mais non identiques (par ex. « savoir » vs. « enseigner »).",
+        "Une lettre radicale médiane doublée (shadda) est le signe de reconnaissance le plus frappant d'un verbe enrichi par un schème."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 60,
+          "wort": 15,
+          "zeigt": "عَلِمَ (« il a su ») — schème de base de la racine ع-ل-م sans aucun enrichissement.",
+          "warum": "Le segment est pos:V, verbForm:1 (aucune valeur entre parenthèses dans le corpus, donc convention forme I), root:علم."
+        },
+        {
+          "sure": 2,
+          "vers": 31,
+          "wort": 1,
+          "zeigt": "وَعَلَّمَ (« et Il a enseigné ») — même racine ع-ل-م, mais avec la lettre médiane doublée pour former le schème II.",
+          "warum": "Le segment est pos:V, verbForm:2 ((II) dans l'étiquette brute), root:علم — le même jidhr que عَلِمَ, un schème différent, une nuance de sens différente."
+        }
+      ],
+      "lernen": [
+        "N'apprends pas le mot isolé, mais la paire racine+schème : demande-toi pour chaque nouveau verbe « quelle racine, quel schème ? ».",
+        "Entraîne-toi sur la racine علم elle-même : prononce عَلِمَ (savoir, forme I) puis عَلَّمَ (enseigner, forme II) l'un après l'autre et nomme à voix haute la différence de sens.",
+        "Face à un mot nouveau, visualise d'abord la racine de base avant de chercher la traduction — cela entraîne à déduire à partir du système."
+      ],
+      "tabellen": [],
+      "siehe": [
+        "fiil",
+        "form1",
+        "form2"
+      ]
+    },
+    "madi": {
+      "titel": "L'accompli",
+      "ar": "الماضي",
+      "umschrift": "al-māḍī",
+      "erklaerung": [
+        "Al-māḍī est la forme de base de tout verbe — « il a fait » — et le point de départ à partir duquel se forment toutes les autres personnes. Le radical reste le même à travers toutes les formes ; seule la terminaison, qui indique qui a agi, change. Sur le verbe modèle نَصَرَ (« il a aidé »), les formes principales sont : نَصَرَ (il a aidé), نَصَرَتْ (elle a aidé), نَصَرْتَ (tu as aidé), نَصَرْتُ (j'ai aidé), نَصَرُوا (ils ont aidé, groupe masculin), نَصَرْنَا (nous avons aidé).",
+        "Dans son état de base, le māḍī se nie avec la particule مَا directement devant le verbe (مَا نَصَرْتُ, « je n'ai pas aidé »). Une seconde forme de négation de l'accompli, de portée rhétorique différente, passe par لَمْ + muḍāriʿ (voir cette entrée) — bien que la forme ressemble alors au présent.",
+        "Le māḍī est en même temps la forme de citation sous laquelle un verbe figure dans le dictionnaire, et la base à partir de laquelle se forme aussi le passif de l'accompli (voir majhūl)."
+      ],
+      "erkennung": [
+        "Les terminaisons personnelles indiquent directement l'agent en fin de mot : -تَ = tu (m.), -تُ = je, -نَا = nous, -وا = un groupe masculin.",
+        "Le māḍī ne porte aucun préfixe de personne (à la différence du muḍāriʿ) — la personne réside uniquement dans la terminaison.",
+        "La négation au māḍī se reconnaît à مَا directement devant le verbe."
+      ],
+      "belege": [
+        {
+          "sure": 1,
+          "vers": 7,
+          "wort": 3,
+          "zeigt": "أَنْعَمْتَ (« Tu as comblé de bienfaits ») — accompli, 2e personne masculin singulier, reconnaissable à la terminaison ـتَ.",
+          "warum": "Le segment est pos:V, tense:perfect, person:2, gender:m, number:sg."
+        },
+        {
+          "sure": 3,
+          "vers": 123,
+          "wort": 2,
+          "zeigt": "نَصَرَكُمُ (« Il vous a aidés ») — accompli, 3e personne masculin singulier sans terminaison personnelle propre (le « il » est implicite dans le radical nu).",
+          "warum": "Le segment est pos:V, tense:perfect, person:3, gender:m, number:sg."
+        }
+      ],
+      "lernen": [
+        "Apprends d'abord les terminaisons personnelles isolément, comme un petit alphabet de terminaisons (ـَ, ـَتْ, ـْتَ, ـْتُ, ـُوا, ـْنَا …), avant de les exercer sur des verbes.",
+        "Cache la colonne arabe de la matrice des personnes et récite le sens français, puis fais l'inverse — jusqu'à maîtriser les deux sens.",
+        "Erreur fréquente : confondre la terminaison ـتَ (tu, m.) avec ـتِ (tu, f.) ou ـتُ (je) — lis-les toujours à voix haute à l'entraînement, la différence n'est qu'une voyelle."
+      ],
+      "tabellen": [
+        "verb-madi-nasara-aktiv-matrix"
+      ],
+      "siehe": [
+        "mudari",
+        "maluum",
+        "majhul",
+        "personenmatrix"
+      ]
+    },
+    "mudari": {
+      "titel": "L'inaccompli",
+      "ar": "المضارع",
+      "umschrift": "al-muḍāriʿ",
+      "erklaerung": [
+        "Al-muḍāriʿ exprime ce qui se produit actuellement, ce qui se produit habituellement, ou ce qui se produira dans le futur (« il fait » / « il fera »). À la différence du māḍī, le muḍāriʿ porte un préfixe en début de mot qui indique la personne : يَ pour il/un groupe masculin, تَ pour elle (singulier) ou tu, أَ pour je, نَ pour nous — souvent résumé, comme aide-mémoire, par la suite de lettres « يتأن/ya-ta-a-na ». À la forme de base, le muḍāriʿ se termine en outre par une ḍamma (يَنْصُرُ).",
+        "Le futur se forme à partir du muḍāriʿ en y accolant سَ (futur proche) ou en plaçant سَوْفَ devant (futur plus lointain) — les deux signifient « fera ». Une seule forme de base couvre ainsi à la fois le présent et le futur.",
+        "La voyelle finale du muḍāriʿ n'est nullement fixe : certaines particules transforment la ḍamma en fatha (la « forme légère », manṣūb) ou en sukūn (la « forme la plus légère », majzūm) — voir les entrées consacrées à ces trois modes."
+      ],
+      "erkennung": [
+        "Quatre préfixes possibles marquent la personne : يَ / تَ / أَ / نَ.",
+        "La forme de base se termine par une ḍamma (ـُ) ; cette voyelle finale change selon la particule qui précède (mode).",
+        "Le futur se forme par سَ (suffixé) ou سَوْفَ (antéposé) devant la même forme du muḍāriʿ."
+      ],
+      "belege": [
+        {
+          "sure": 1,
+          "vers": 5,
+          "wort": 2,
+          "zeigt": "نَعْبُدُ (« nous adorons ») — muḍāriʿ avec le préfixe نَ pour « nous » et la terminaison ـُ (ḍamma) à l'état de base.",
+          "warum": "Le segment est pos:V, tense:imperfect, person:1, number:pl, mood:null et ne porte aucune étiquette MOOD dans le corpus brut — état de base."
+        },
+        {
+          "sure": 2,
+          "vers": 268,
+          "wort": 2,
+          "zeigt": "يَعِدُكُمُ (« il vous promet ») — muḍāriʿ avec le préfixe يَ pour « il » et la terminaison ـُ.",
+          "warum": "Le segment est pos:V, tense:imperfect, person:3, gender:m, number:sg."
+        }
+      ],
+      "lernen": [
+        "Grave-toi d'abord les quatre préfixes يتأن comme aide-mémoire, avant de t'attaquer à des verbes particuliers.",
+        "Cache chaque colonne de la matrice des personnes (singulier/duel/pluriel) et récite à voix haute la forme manquante — cela entraîne à la fois le préfixe ET la terminaison.",
+        "Entraîne-toi sur la différence سَ vs. سَوْفَ à partir d'exemples coraniques : les deux signifient « fera », seule la proximité temporelle ressentie diffère."
+      ],
+      "tabellen": [
+        "verb-mudari-nasara-aktiv-matrix"
+      ],
+      "siehe": [
+        "madi",
+        "mudariMarfu",
+        "mudariMansub",
+        "mudariMajzum",
+        "amr",
+        "nahy"
+      ]
+    },
+    "amr": {
+      "titel": "La forme de l'impératif",
+      "ar": "الأمر",
+      "umschrift": "al-amr",
+      "erklaerung": [
+        "Fiʿl al-amr, l'impératif, n'existe que pour la 2e personne (tu/vous) — comme en français. Il se forme à partir du muḍāriʿ de la 2e personne en quatre étapes : (1) mettre le verbe à la forme la plus légère (la terminaison devient un sukūn), (2) supprimer le préfixe تَ, (3) si la nouvelle première lettre se retrouve ainsi sans voyelle, placer devant elle un hamza de liaison auxiliaire (hamzat al-waṣl), (4) en fixer la prononciation. De أَنْتَ تَنْصُرُ (« tu aides »), on obtient ainsi, en passant par تَنْصُرْ puis نْصُرْ à la fin, ٱنْصُرْ (« Aide ! »).",
+        "Le hamzat al-waṣl en début de forme impérative ne se lit que si une pause précède ou qu'aucun mot rattachable ne suit ; après و/فَ ou un mot qui s'y rattache directement, il reste muet. Sa voyelle de lecture dépend de la troisième lettre du verbe.",
+        "Certains verbes (les quatre verbes mahmūz أَكَلَ, أَخَذَ, أَمَرَ, سَأَلَ) perdent entièrement leur hamza à l'impératif par hadhf — كُلْ, خُذْ, مُرْ, سَلْ au lieu de la forme attendue avec hamza."
+      ],
+      "erkennung": [
+        "La forme impérative n'existe qu'à la 2e personne et se termine le plus souvent par un sukūn.",
+        "Elle commence souvent par un alif auxiliaire/hamzat al-waṣl, lorsque la première lettre radicale véritable se retrouverait sans voyelle.",
+        "Pour les quatre verbes أَكَلَ/أَخَذَ/أَمَرَ/سَأَلَ, le hamza disparaît entièrement à l'impératif (hadhf)."
+      ],
+      "belege": [
+        {
+          "sure": 1,
+          "vers": 6,
+          "wort": 1,
+          "zeigt": "ٱهْدِنَا (« Guide-nous ! ») — forme impérative, 2e personne masculin singulier, avec le pronom d'objet suffixé « nous ».",
+          "warum": "Le segment est pos:V, tense:imperative, person:2, gender:m, number:sg."
+        },
+        {
+          "sure": 17,
+          "vers": 14,
+          "wort": 1,
+          "zeigt": "ٱقْرَأْ (« Lis ! ») — forme impérative avec hamza auxiliaire au début, du verbe mahmūz al-lām قَرَأَ.",
+          "warum": "Le segment est pos:V, tense:imperative, person:2, gender:m, number:sg, root:قرا."
+        }
+      ],
+      "lernen": [
+        "Exerce-toi à voix haute sur les quatre étapes de formation avec un verbe : inaccompli 2e personne → forme la plus légère → suppression du préfixe → vérification du hamza auxiliaire.",
+        "Apprends par cœur les quatre exceptions de hadhf (كُلْ، خُذْ، مُرْ، سَلْ) comme une liste fermée — elles ne suivent aucune règle qu'on pourrait déduire.",
+        "Cache la colonne des personnes dans le tableau de l'amr et construis toi-même la forme, avant de vérifier."
+      ],
+      "tabellen": [
+        "amr-nasara-matrix"
+      ],
+      "siehe": [
+        "nahy",
+        "mudariMajzum",
+        "hadhf"
+      ]
+    },
+    "nahy": {
+      "titel": "La forme de l'interdiction",
+      "ar": "النهي",
+      "umschrift": "an-nahy",
+      "erklaerung": [
+        "An-nahy, l'interdiction, se forme en plaçant la particule d'interdiction لَا devant la forme la plus légère du muḍāriʿ (2e personne) — la même terminaison en sukūn que déclenchent aussi لَمْ et إِنْ. De تَنْصُرُ (« tu aides »), on obtient ainsi لَا تَنْصُرْ (« N'aide pas ! »).",
+        "À la différence de l'impératif, le préfixe تَ subsiste dans l'interdiction — seule la voyelle finale change. Le nahy est ainsi structurellement la négation du muḍāriʿ-majzūm à la 2e personne, avec sa propre particule fixe لَا (à distinguer grammaticalement de la particule de simple négation لَا, qui ne modifie pas l'état de base).",
+        "Dans le Coran, cette structure est très fréquente : exhortations et mises en garde sont régulièrement formulées comme لَا + muḍāriʿ-majzūm."
+      ],
+      "erkennung": [
+        "L'interdiction se reconnaît à لَا immédiatement devant un muḍāriʿ dont la terminaison est un sukūn au lieu d'une ḍamma.",
+        "Le préfixe de personne (le plus souvent تَ pour « tu ») subsiste — à la différence de l'impératif, où il disparaît.",
+        "Pour les verbes dont la dernière lettre est و/ي (pluriel), le nūn final disparaît en outre (comme dans la forme légère)."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 11,
+          "wort": 5,
+          "zeigt": "لَا تُفْسِدُوا۟ (« Ne semez pas la corruption ») — forme d'interdiction, 2e personne masculin pluriel après la particule d'interdiction لَا.",
+          "warum": "Le mot précédent (position 4) porte le segment pos:PRO (particule d'interdiction) ; le verbe lui-même affiche mood:juss, tense:imperfect."
+        },
+        {
+          "sure": 2,
+          "vers": 22,
+          "wort": 19,
+          "zeigt": "فَلَا تَجْعَلُوا۟ (« n'établissez donc pas d'égal ») — forme d'interdiction, 2e personne masculin pluriel, également après لَا.",
+          "warum": "Le mot précédent porte un segment pos:PRO ; le verbe lui-même affiche mood:juss, tense:imperfect."
+        }
+      ],
+      "lernen": [
+        "Grave-toi le schéma لَا + muḍāriʿ-majzūm comme un bloc fixe, non mot par mot.",
+        "Compare l'impératif et l'interdiction sur le même verbe (ٱنْصُرْ / لَا تَنْصُرْ) et nomme à voix haute ce qui change (le préfixe reste ou disparaît).",
+        "En lisant le Coran, cherche spécifiquement لَا directement devant un verbe et vérifie la terminaison - cela entraîne l'œil à repérer l'état majzūm."
+      ],
+      "tabellen": [
+        "nahy-nasara-matrix"
+      ],
+      "siehe": [
+        "amr",
+        "mudariMajzum"
+      ]
+    },
+    "personenmatrix": {
+      "titel": "Lire la personne, le genre et le nombre sur la terminaison",
+      "ar": "تَصْرِيف الفِعْل",
+      "umschrift": "taṣrīf al-fiʿl",
+      "erklaerung": [
+        "Comme le verbe arabe porte son sujet en lui-même, il faut apprendre à lire, sur le préfixe et/ou la terminaison, qui agit : quelle personne (1re/2e/3e), quel genre (m./f.) et quel nombre (singulier/duel/pluriel). Au māḍī, cette information réside entièrement dans la terminaison ; au muḍāriʿ, elle se répartit entre le préfixe (personne) et la terminaison (genre/nombre).",
+        "Le système est suffisamment régulier pour être appris sur un seul verbe modèle, puis transposé à tout autre verbe : les mêmes 14 (pour certaines formes, 5) combinaisons de personne/genre/nombre reviennent avec les mêmes terminaisons pour chaque verbe.",
+        "Le duel mérite une attention particulière : il n'existe qu'à la 2e et à la 3e personne, jamais à la 1re — l'arabe ne connaît pas de forme verbale propre pour « nous deux »."
+      ],
+      "erkennung": [
+        "Au māḍī, toute l'information de personne réside dans la terminaison (ـَ / ـَتْ / ـْتَ / ـْتُ / ـُوا / ـْنَا …).",
+        "Au muḍāriʿ, le préfixe indique la personne (يتأن), la terminaison le genre et le nombre.",
+        "La 1re personne ne connaît pas de duel propre — seulement singulier et pluriel."
+      ],
+      "belege": [
+        {
+          "sure": 1,
+          "vers": 5,
+          "wort": 2,
+          "zeigt": "نَعْبُدُ (« nous adorons ») — le préfixe نَ indique la 1re personne, aucune terminaison particulière n'indique le pluriel (convention : préfixe نَ = « nous »).",
+          "warum": "Segment : person:1, number:pl."
+        },
+        {
+          "sure": 3,
+          "vers": 123,
+          "wort": 2,
+          "zeigt": "نَصَرَكُمُ (« Il vous a aidés ») — le radical nu sans terminaison personnelle indique la 3e personne masculin singulier.",
+          "warum": "Segment : person:3, gender:m, number:sg."
+        }
+      ],
+      "lernen": [
+        "La méthode du cache : prends la matrice des personnes, cache de la main la colonne arabe et récite à voix haute la forme pour chaque ligne personne/nombre ; puis fais l'inverse en déduisant le sens français à partir de la forme arabe.",
+        "Parcours la matrice systématiquement de bas en haut (1re personne → 2e personne → 3e personne), car c'est l'ordre d'apprentissage habituel du support et cela évite de mélanger les terminaisons.",
+        "Erreur typique : confondre la 3e personne féminin singulier au muḍāriʿ avec la 2e personne masculin singulier, car les deux formes sonnent de façon identique — seul le contexte de la phrase permet alors de trancher."
+      ],
+      "tabellen": [
+        "verb-madi-nasara-aktiv-matrix",
+        "verb-mudari-nasara-aktiv-matrix",
+        "amr-nasara-matrix",
+        "nahy-nasara-matrix"
+      ],
+      "siehe": [
+        "madi",
+        "mudari",
+        "amr"
+      ]
+    },
+    "maluum": {
+      "titel": "L'actif",
+      "ar": "مَعْلُوم",
+      "umschrift": "maʿlūm",
+      "erklaerung": [
+        "Maʿlūm (« connu/actif ») est le cas normal non marqué du verbe : l'agent (fāʿil) est fermement établi comme sujet, et le verbe décrit directement son action — « il a aidé », « il aidera ». Toutes les formes d'exemple du māḍī, du muḍāriʿ, de l'amr et du nahy sont d'abord au maʿlūm, tant que rien d'autre n'est marqué.",
+        "Ce n'est que par un simple changement de voyelle (voir majhūl) que l'actif devient passif — en arabe sans verbe auxiliaire, uniquement par le changement de couleur des voyelles du radical."
+      ],
+      "erkennung": [
+        "Maʿlūm est le cas normal, sans marque particulière — le fāʿil (agent) est le sujet grammatical.",
+        "Dans le corpus, maʿlūm se manifeste par le fait que le trait « voix » reste vide (pas d'étiquette PASS).",
+        "Reconnaissable aussi au fait qu'un fāʿil autonome au rafʿ peut suivre le verbe."
+      ],
+      "belege": [
+        {
+          "sure": 1,
+          "vers": 5,
+          "wort": 2,
+          "zeigt": "نَعْبُدُ (« nous adorons ») — forme active : « nous » agit lui-même, aucun schème vocalique de passif.",
+          "warum": "Segment : pos:V, voice:null (pas d'étiquette PASS dans le corpus brut) — état de base actif."
+        },
+        {
+          "sure": 3,
+          "vers": 123,
+          "wort": 2,
+          "zeigt": "نَصَرَكُمُ (« Il vous a aidés ») — forme active : « Il » est l'agent, « vous » le complément d'objet direct.",
+          "warum": "Segment : pos:V, voice:null, tense:perfect."
+        }
+      ],
+      "lernen": [
+        "Apprends toujours maʿlūm en paire contrastive avec majhūl : prononce نَصَرَ/نُصِرَ l'un après l'autre pour garder la différence de voyelle dans l'oreille.",
+        "Retiens : l'actif est le cas normal, l'absence de marque EST la marque."
+      ],
+      "tabellen": [
+        "verb-madi-nasara-aktiv-matrix",
+        "verb-mudari-nasara-aktiv-matrix"
+      ],
+      "siehe": [
+        "majhul"
+      ]
+    },
+    "majhul": {
+      "titel": "Le passif",
+      "ar": "مَجْهُول",
+      "umschrift": "majhūl",
+      "erklaerung": [
+        "Majhūl (« inconnu/passif ») s'emploie lorsque l'agent passe au second plan ou reste tu : de « il a aidé » on passe à « il a été aidé ». En arabe, le passif ne se forme pas au moyen d'un mot auxiliaire, mais uniquement par le changement de couleur des voyelles du radical — un principe inhabituel pour la grammaire française, mais parfaitement régulier.",
+        "À l'accompli, toutes les lettres porteuses de voyelle sauf la dernière reçoivent un « u », la dernière un « i » : de نَصَرَ (« il a aidé ») on obtient نُصِرَ (« il a été aidé »). À l'inaccompli, la première lettre reçoit un « u », toutes les suivantes un « a » : de يَنْصُرُ on obtient يُنْصَرُ. Les terminaisons personnelles elles-mêmes restent inchangées - seules les voyelles internes du radical se déplacent.",
+        "Comme le fāʿil est absent de la phrase passive, c'est souvent un nāʾib al-fāʿil (substitut de l'agent) qui vient occuper sa position syntaxique - en français, le plus souvent le sujet grammatical de la phrase passive."
+      ],
+      "erkennung": [
+        "Passé au passif : voyelle « u » sur toutes les lettres du radical sauf la dernière, qui porte un « i » (نُصِرَ).",
+        "Présent au passif : « u » sur la première lettre, « a » sur les suivantes (يُنْصَرُ).",
+        "Les terminaisons personnelles ne changent pas en passant à la voix passive - seules les voyelles internes changent."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 4,
+          "wort": 4,
+          "zeigt": "أُنزِلَ (« a été révélé/descendu ») — passif de l'accompli de la forme IV : la première lettre porte un « u », la dernière un « i ».",
+          "warum": "Segment : pos:V, tense:perfect, voice:passive, verbForm:4."
+        },
+        {
+          "sure": 112,
+          "vers": 3,
+          "wort": 4,
+          "zeigt": "يُولَدْ (« Il est engendré ») — passif de l'inaccompli : la première lettre porte un « u ».",
+          "warum": "Segment : pos:V, tense:imperfect, voice:passive, mood:juss (ici, en outre, mis à l'état majzūm après لَمْ)."
+        }
+      ],
+      "lernen": [
+        "Prononce actif et passif par paires à voix haute : نَصَرَ/نُصِرَ, يَنْصُرُ/يُنْصَرُ — l'oreille retient le schème vocalique plus vite qu'une règle sur le papier.",
+        "Cache la colonne de l'accompli dans le tableau du passif et déduis toi-même la forme de l'inaccompli (et inversement), pour ancrer les deux schèmes l'un par rapport à l'autre.",
+        "Erreur typique : confondre le « u » du passif en début de mot avec le préfixe أَ de la 1re personne — vérifier la seconde voyelle (i à l'accompli) permet de trancher."
+      ],
+      "tabellen": [
+        "verb-madi-nasara-passiv-matrix",
+        "verb-mudari-nasara-passiv-matrix"
+      ],
+      "siehe": [
+        "maluum",
+        "madi",
+        "mudari"
+      ]
+    },
+    "mudariMarfu": {
+      "titel": "Le muḍāriʿ à l'état de base (Marfūʿ)",
+      "ar": "المُضَارِع المَرْفُوع",
+      "umschrift": "al-muḍāriʿ al-marfūʿ",
+      "erklaerung": [
+        "Marfūʿ est l'état de base non marqué du muḍāriʿ : tant qu'aucun déclencheur particulier ne précède, la forme de base se termine par une ḍamma (ـُ) — يَنْصُرُ, « il aide ». Cet état correspond au statut rafʿ du nom et constitue, de la même façon, le « cas normal sans marque ».",
+        "Comme marfūʿ est le cas standard, il n'est pas spécifiquement étiqueté dans le corpus - seuls manṣūb (par une étiquette MOOD SUBJ) et majzūm (par une étiquette MOOD JUS) sont marqués explicitement. L'absence de toute marque de mode constitue donc elle-même la preuve du marfūʿ.",
+        "Pour les personnes à terminaison plurielle en و ou à terminaison duelle, un nūn supplémentaire apparaît au marfūʿ (يَنْصُرُونَ, « ils aident ») — ce nūn disparaît justement au manṣūb et au majzūm."
+      ],
+      "erkennung": [
+        "La forme de base se termine par une ḍamma (ـُ), sans particule déclenchante devant elle.",
+        "Au pluriel/duel apparaît un nūn supplémentaire en fin de mot (ـُونَ / ـَانِ), qui disparaît dans les deux autres modes.",
+        "Aucune étiquette MOOD dans le corpus - l'absence de toute marque de mode indique l'état de base."
+      ],
+      "belege": [
+        {
+          "sure": 1,
+          "vers": 5,
+          "wort": 2,
+          "zeigt": "نَعْبُدُ (« nous adorons ») — état de base sans déclencheur précédent, terminaison en ḍamma.",
+          "warum": "Segment : mood:null, tense:imperfect, et l'étiquette brute ne porte aucun champ MOOD."
+        },
+        {
+          "sure": 2,
+          "vers": 268,
+          "wort": 2,
+          "zeigt": "يَعِدُكُمُ (« il vous promet ») — également état de base, terminaison en ḍamma.",
+          "warum": "Segment : mood:null, tense:imperfect, aucun champ MOOD dans l'étiquette brute."
+        }
+      ],
+      "lernen": [
+        "Apprends marfūʿ comme le cas que l'on obtient quand RIEN ne précède le verbe — concentre-toi, à l'entraînement, sur la reconnaissance des deux autres états (marqués), marfūʿ est ce qui reste.",
+        "Compare sur un même verbe les trois terminaisons l'une après l'autre : يَنْصُرُ (marfūʿ) – يَنْصُرَ (manṣūb) – يَنْصُرْ (majzūm) — prononce-les à voix haute l'une après l'autre."
+      ],
+      "tabellen": [
+        "verb-mudari-nasara-aktiv-matrix"
+      ],
+      "siehe": [
+        "mudariMansub",
+        "mudariMajzum"
+      ]
+    },
+    "mudariMansub": {
+      "titel": "Le muḍāriʿ à la forme légère (Manṣūb)",
+      "ar": "المُضَارِع المَنْصُوب",
+      "umschrift": "al-muḍāriʿ al-manṣūb",
+      "erklaerung": [
+        "Certaines particules transforment la ḍamma finale du muḍāriʿ en fatha — la « forme légère », manṣūb. Les déclencheurs principaux sont أَنْ (« que »), لَنْ (nie le futur, « ne ... jamais »), لِ/كَي/لِكَي (« afin que ») et حَتَّى (« jusqu'à ce que »). De يَنْصُرُ, on obtient après أَنْ la forme أَنْ يَنْصُرَ.",
+        "Pour les formes plurielles et duelles, le nūn final présent à l'état de base (marfūʿ) disparaît également au manṣūb — de يَنْصُرُونَ on obtient لَنْ يَنْصُرُوا۟.",
+        "Sur le plan sémantique, لَنْ constitue une négation ferme du futur (« ne fera absolument jamais »), tandis que أَنْ introduit le plus souvent une subordonnée exprimant une intention ou un événement pas encore survenu."
+      ],
+      "erkennung": [
+        "Déclencheurs أَنْ / لَنْ / لِ / كَي / حَتَّى immédiatement devant le muḍāriʿ.",
+        "La voyelle finale passe de ḍamma à fatha (ـُ → ـَ).",
+        "Au pluriel/duel, le nūn final disparaît."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 24,
+          "wort": 5,
+          "zeigt": "وَلَن تَفْعَلُوا۟ (« et vous ne le ferez jamais ») — manṣūb après لَنْ, le nūn de la forme plurielle est déjà tombé.",
+          "warum": "L'étiquette brute du segment contient MOOD:SUBJ ; segment : tense:imperfect, person:2, number:pl."
+        },
+        {
+          "sure": 2,
+          "vers": 143,
+          "wort": 20,
+          "zeigt": "لِنَعْلَمَ (« afin que Nous sachions ») — manṣūb après لِ (« afin que »).",
+          "warum": "L'étiquette brute du segment contient MOOD:SUBJ ; segment : tense:imperfect, person:1, number:pl, root:علم."
+        }
+      ],
+      "lernen": [
+        "Apprends les quatre déclencheurs les plus fréquents أَنْ / لَنْ / لِ / حَتَّى comme une liste fixe, de préférence associés chacun à un exemple coranique plutôt qu'isolément.",
+        "Entraîne-toi spécifiquement sur لَنْ, car il transporte à la fois le mode (manṣūb) et le sens (négation du futur) - grave-toi les deux ensemble.",
+        "Pour les verbes au pluriel, vérifie toujours d'abord le nūn : s'il manque, c'est un indice fort de manṣūb ou de majzūm plutôt que de marfūʿ."
+      ],
+      "tabellen": [],
+      "siehe": [
+        "mudariMarfu",
+        "mudariMajzum"
+      ]
+    },
+    "mudariMajzum": {
+      "titel": "Le muḍāriʿ à la forme la plus légère (Majzūm)",
+      "ar": "المُضَارِع المَجْزُوم",
+      "umschrift": "al-muḍāriʿ al-majzūm",
+      "erklaerung": [
+        "Majzūm va encore plus loin que manṣūb : au lieu d'une fatha, la fin du verbe ne porte plus aucune voyelle, mais un sukūn. Les déclencheurs principaux sont لَمْ et إِنْ (« si »). Particulièrement remarquable : لَمْ nie le passé, bien que la forme verbale ait en apparence l'aspect du présent — لَمْ يَلِدْ signifie « Il n'a pas engendré », et non « Il n'engendre pas ».",
+        "Majzūm est en même temps la brique de base de l'impératif (amr) et de l'interdiction (nahy) : tous deux partent de la forme majzūm de la 2e personne — pour l'interdiction, le préfixe تَ subsiste et لَا se place devant ; pour l'impératif, le préfixe disparaît et un hamza auxiliaire peut devenir nécessaire.",
+        "Ici aussi, le nūn final disparaît pour les formes plurielles/duelles, exactement comme au manṣūb."
+      ],
+      "erkennung": [
+        "Déclencheurs لَمْ ou إِنْ immédiatement devant le muḍāriʿ.",
+        "La fin du verbe porte un sukūn au lieu d'une ḍamma ou d'une fatha.",
+        "لَمْ + majzūm nie grammaticalement le passé, bien que la forme ait l'aspect du présent."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 24,
+          "wort": 3,
+          "zeigt": "فَإِن لَّمْ تَفْعَلُوا۟ (« Et si vous ne le faites pas ») — majzūm après لَمْ, terminaison en sukūn.",
+          "warum": "Segment : mood:juss, tense:imperfect, person:2, number:pl ; l'étiquette brute contient MOOD:JUS."
+        },
+        {
+          "sure": 112,
+          "vers": 3,
+          "wort": 2,
+          "zeigt": "لَمْ يَلِدْ (« Il n'a pas engendré ») — majzūm après لَمْ ; la forme a l'aspect du présent, mais signifie le passé.",
+          "warum": "Segment : mood:juss, tense:imperfect, verbForm:1 ; l'étiquette brute contient MOOD:JUS."
+        }
+      ],
+      "lernen": [
+        "Apprends لَمْ + majzūm consciemment comme une exception : le piège le plus frappant à la traduction est de lire à tort la forme comme un présent.",
+        "Mets côte à côte amr, nahy et majzūm (ٱنْصُرْ / لَا تَنْصُرْ / لَمْ تَنْصُرْ) et nomme le point commun : le sukūn final.",
+        "Entraîne-toi avec le tableau du nahy : cache la terminaison et complète-la toi-même, avant de vérifier la forme complète."
+      ],
+      "tabellen": [
+        "nahy-nasara-matrix"
+      ],
+      "siehe": [
+        "mudariMarfu",
+        "mudariMansub",
+        "nahy"
+      ]
+    },
+    "form1": {
+      "titel": "Forme verbale I – le schème de base",
+      "ar": "الثُّلَاثِي المُجَرَّد",
+      "umschrift": "ath-thulāthī al-mujarrad",
+      "erklaerung": [
+        "La forme I, la « racine nue à trois consonnes » (thulāthī mujarrad, parfois appelée dans les manuels la « petite famille »), consiste en la racine pure sans aucun ajout : pas de lettre doublée, pas d'alif ni de hamza supplémentaires. Elle constitue le sens de base à partir duquel les neuf autres schèmes (formes II-X) se dérivent par des augmentations fixes.",
+        "Au sein même de la forme I, les verbes se distinguent encore par la voyelle radicale médiane à l'accompli et à l'inaccompli - six sous-groupes (bāb) : a-a (فَتَحَ/يَفْتَحُ), a-i (ضَرَبَ/يَضْرِبُ), a-u (نَصَرَ/يَنْصُرُ), i-a (سَمِعَ/يَسْمَعُ), i-i (حَسِبَ/يَحْسِبُ) et u-u (كَرُمَ/يَكْرُمُ). Cette voyelle médiane n'est pas prévisible et doit être apprise verbe par verbe.",
+        "Comme, dans le corpus, chaque forme augmentée est marquée par une valeur entre parenthèses (II)-(X), la convention est la suivante : l'absence de cette marque signifie qu'il s'agit de la forme I."
+      ],
+      "erkennung": [
+        "Pas de lettre supplémentaire, pas de lettre doublée dans le radical - seulement les consonnes radicales pures avec leurs voyelles.",
+        "Dans le corpus, aucune marque entre parenthèses (I)-(X) n'apparaît ; l'absence de cette marque EST le signe de la forme I.",
+        "La voyelle médiane à l'accompli/l'inaccompli varie d'un verbe à l'autre (six schèmes possibles) et doit être apprise individuellement."
+      ],
+      "belege": [
+        {
+          "sure": 3,
+          "vers": 123,
+          "wort": 2,
+          "zeigt": "نَصَرَكُمُ (« Il vous a aidés ») — forme de base pure de la racine نصر sans aucun enrichissement.",
+          "warum": "Segment : verbForm:1 (par convention, aucune valeur entre parenthèses dans l'étiquette brute), tense:perfect."
+        },
+        {
+          "sure": 7,
+          "vers": 157,
+          "wort": 35,
+          "zeigt": "وَنَصَرُوهُ (« et ils l'ont aidé ») — la même forme de base, 3e personne pluriel.",
+          "warum": "Segment : verbForm:1 (aucune valeur entre parenthèses), tense:perfect."
+        }
+      ],
+      "lernen": [
+        "Pour chaque verbe nouvellement rencontré, apprends aussitôt la voyelle médiane à l'accompli ET à l'inaccompli - c'est pourquoi les dictionnaires indiquent toujours les deux formes.",
+        "Entraîne-toi sur les six sous-groupes (a-a, a-i, a-u, i-a, i-i, u-u) à partir de leurs verbes modèles, jusqu'à ce que le classement devienne automatique.",
+        "Garde en tête : la forme I est le cas normal - pour reconnaître une forme augmentée (II-X), il faut d'abord savoir à quoi ressemble la forme de base « vide »."
+      ],
+      "tabellen": [
+        "verb-madi-nasara-aktiv-matrix",
+        "bab-fataha-mahmooz-qaraa",
+        "bab-samia-mahmooz-amina"
+      ],
+      "siehe": [
+        "form2",
+        "form4",
+        "form10",
+        "jidhr"
+      ]
+    },
+    "form2": {
+      "titel": "Forme verbale II – le schème redoublé",
+      "ar": "بَاب فَعَّلَ",
+      "umschrift": "bāb faʿʿala",
+      "erklaerung": [
+        "La forme II redouble la lettre radicale médiane par un shadda. Le sens s'en trouve souvent renforcé, répété ou rendu causatif : de عَلِمَ (« il a su ») on obtient عَلَّمَ (« il a enseigné », transmettre intensément le savoir) ; de قَتَلَ (« tuer ») on obtient قَتَّلَ (« massacrer », exagération/hyperbole).",
+        "C'est le schème augmenté le plus fréquent dans le Coran et il fournit notamment de nombreux verbes causatifs transitifs directs."
+      ],
+      "erkennung": [
+        "Le signe de reconnaissance est le shadda sur la lettre radicale médiane (فَعَّلَ au lieu de فَعَلَ).",
+        "Le sens est le plus souvent intensif, répétitif ou causatif par rapport à la forme de base.",
+        "Marqué dans le corpus par la valeur entre parenthèses (II)."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 31,
+          "wort": 1,
+          "zeigt": "وَعَلَّمَ (« et Il a enseigné ») — shadda sur la lettre médiane ل, sens « enseigner » au lieu de « savoir ».",
+          "warum": "Segment : verbForm:2 (étiquette brute (II)), tense:perfect, root:علم."
+        },
+        {
+          "sure": 2,
+          "vers": 23,
+          "wort": 6,
+          "zeigt": "نَزَّلْنَا (« Nous avons fait descendre ») — shadda sur ز, sens intensif/répété de « faire descendre ».",
+          "warum": "Segment : verbForm:2 (étiquette brute (II)), tense:perfect, root:نزل."
+        }
+      ],
+      "lernen": [
+        "Grave-toi visuellement le schème فَعَّلَ : le shadda médian est la seule différence avec la forme de base, mais elle est fiable.",
+        "Pour chaque nouveau verbe de forme II, construis-toi consciemment le pendant à la forme de base (علم/علّم), pour ancrer le glissement de sens."
+      ],
+      "tabellen": [],
+      "siehe": [
+        "form1",
+        "form5",
+        "jidhr"
+      ]
+    },
+    "form3": {
+      "titel": "Forme verbale III – le schème d'association",
+      "ar": "بَاب فَاعَلَ",
+      "umschrift": "bāb fāʿala",
+      "erklaerung": [
+        "La forme III insère un long alif après la première lettre radicale (فَاعَلَ) et exprime le plus souvent l'idée de faire quelque chose avec quelqu'un ou contre quelqu'un : جَاهَدَ, « s'efforcer/lutter (avec d'autres ou contre une résistance) ». L'action implique typiquement une seconde partie.",
+        "Sur le plan sémantique, la différence avec la forme de base tient souvent précisément à cette implication d'un vis-à-vis - « faire quelque chose à l'égard de quelqu'un » plutôt que « faire quelque chose »."
+      ],
+      "erkennung": [
+        "Le signe de reconnaissance est le long alif après la première lettre radicale (فَاعَلَ au lieu de فَعَلَ).",
+        "Le sens est le plus souvent « faire quelque chose avec/contre quelqu'un ».",
+        "Marqué dans le corpus par la valeur entre parenthèses (III)."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 51,
+          "wort": 2,
+          "zeigt": "وَٰعَدْنَا (« Nous avons fixé un rendez-vous/promis ») — long alif après و, action réciproque (un rendez-vous avec Moïse).",
+          "warum": "Segment : verbForm:3 (étiquette brute (III)), tense:perfect, root:وعد."
+        },
+        {
+          "sure": 2,
+          "vers": 100,
+          "wort": 2,
+          "zeigt": "عَٰهَدُوا۟ (« ils ont conclu une alliance ») — long alif après ع, engagement réciproque.",
+          "warum": "Segment : verbForm:3 (étiquette brute (III)), tense:perfect, root:عهد."
+        }
+      ],
+      "lernen": [
+        "Ancre la forme III par le sens « avec quelqu'un/contre quelqu'un » - cela aide plus que le pur par cœur du schème.",
+        "Compare قَتَلَ (tuer, I) et قَاتَلَ (combattre contre, III) - le même noyau radical, mais la seconde partie n'apparaît qu'avec l'alif."
+      ],
+      "tabellen": [],
+      "siehe": [
+        "form1",
+        "form6"
+      ]
+    },
+    "form4": {
+      "titel": "Forme verbale IV – le schème causatif",
+      "ar": "بَاب أَفْعَلَ",
+      "umschrift": "bāb afʿala",
+      "erklaerung": [
+        "La forme IV place un hamza au début du verbe (أَفْعَلَ) et exprime le plus souvent l'idée de causer directement et immédiatement quelque chose - souvent au sens causatif : أَنْزَلَ, « faire descendre » (amener quelqu'un/quelque chose à descendre), de نَزَلَ (« descendre »). C'est, après la forme I, le schème augmenté le plus fréquent dans le Coran.",
+        "Comme le hamza supplémentaire se trouve en début de mot, il fusionne, chez certains verbes, avec un hamza radical ou avec un premier radical faible - voir les entrées sur mahmūz et takhfīf pour ces cas particuliers."
+      ],
+      "erkennung": [
+        "Le signe de reconnaissance est le hamza supplémentaire en début de mot (أَفْعَلَ au lieu de فَعَلَ).",
+        "Le sens est le plus souvent causatif : « faire en sorte que … » ou « faire quelque chose de façon immédiate/directe ».",
+        "Marqué dans le corpus par la valeur entre parenthèses (IV) ; très fréquemment attesté aussi au passif."
+      ],
+      "belege": [
+        {
+          "sure": 1,
+          "vers": 7,
+          "wort": 3,
+          "zeigt": "أَنْعَمْتَ (« Tu as comblé de bienfaits ») — hamza au début, sens causatif « accorder une faveur ».",
+          "warum": "Segment : verbForm:4 (étiquette brute (IV)), tense:perfect, root:نعم."
+        },
+        {
+          "sure": 2,
+          "vers": 4,
+          "wort": 4,
+          "zeigt": "أُنزِلَ (« a été révélé/descendu ») — forme IV au passif : le hamza initial subsiste même à la forme passive.",
+          "warum": "Segment : verbForm:4 (étiquette brute (IV)), tense:perfect, voice:passive, root:نزل."
+        }
+      ],
+      "lernen": [
+        "Apprends la forme IV à travers des paires connues comme نَزَلَ/أَنْزَلَ (descendre/faire descendre) - la logique causative « X fait en sorte que Y se produise » se retient plus facilement par le sens que par la seule forme.",
+        "Veille à ce que le hamza initial subsiste aussi au muḍāriʿ (يُنْزِلُ), à la différence de certaines autres formes."
+      ],
+      "tabellen": [],
+      "siehe": [
+        "form1",
+        "mahmuz",
+        "takhfif"
+      ]
+    },
+    "form5": {
+      "titel": "Forme verbale V – le schème réfléchi de la forme II",
+      "ar": "بَاب تَفَعَّلَ",
+      "umschrift": "bāb tafaʿʿala",
+      "erklaerung": [
+        "La forme V place un préfixe تَ devant le schème de la forme II et rend l'action intensive réfléchie ou progressive : de عَلَّمَ (« enseigner », II) on obtient تَعَلَّمَ (« apprendre », « se faire enseigner à soi-même », V). La forme V exprime en outre souvent que quelque chose se produit avec effort ou par étapes.",
+        "Un trait grammatical : les verbes de forme V sont le plus souvent lāzim (intransitifs, sans complément d'objet direct) et ne forment pas de passif propre."
+      ],
+      "erkennung": [
+        "Le signe de reconnaissance est le préfixe تَ devant le schème redoublé (تَفَعَّلَ au lieu de فَعَّلَ).",
+        "Le sens est le plus souvent réfléchi par rapport à la forme II, ou « s'efforcer de quelque chose, laisser se produire progressivement ».",
+        "Marqué dans le corpus par la valeur entre parenthèses (V)."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 37,
+          "wort": 1,
+          "zeigt": "فَتَلَقَّىٰٓ (« alors il reçut/accueillit ») — préfixe تَ devant le schème redoublé, nuance réfléchie (« recueillir en soi »).",
+          "warum": "Segment : verbForm:5 (étiquette brute (V)), tense:perfect, root:لقي."
+        },
+        {
+          "sure": 2,
+          "vers": 64,
+          "wort": 2,
+          "zeigt": "تَوَلَّيْتُم (« vous vous êtes détournés ») — préfixe تَ, sens réfléchi « se détourner soi-même ».",
+          "warum": "Segment : verbForm:5 (étiquette brute (V)), tense:perfect, root:ولي."
+        }
+      ],
+      "lernen": [
+        "Compare directement forme II et forme V sur la paire de mots (عَلَّمَ/تَعَلَّمَ, enseigner/apprendre) - le préfixe تَ comme « signal réfléchi » se retient le mieux à travers de telles paires.",
+        "Retiens : les verbes de forme V n'ont en règle générale pas besoin de complément d'objet direct ni de passif propre."
+      ],
+      "tabellen": [],
+      "siehe": [
+        "form2"
+      ]
+    },
+    "form6": {
+      "titel": "Forme verbale VI – le schème réciproque",
+      "ar": "بَاب تَفَاعَلَ",
+      "umschrift": "bāb tafāʿala",
+      "erklaerung": [
+        "La forme VI place un préfixe تَ devant le schème de la forme III et exprime le plus souvent une action réciproque au sein d'un groupe - les deux (ou tous les) participants font la même chose l'un à l'autre : تَسَاءَلَ, « s'interroger mutuellement ». Elle peut aussi signifier que l'on feint simplement quelque chose (« faire comme si »).",
+        "Comme pour la forme V, le cœur réside dans le préfixe تَ réfléchi/réciproque - ici cependant appliqué au schème « d'association » de la forme III plutôt qu'au schème redoublé de la forme II."
+      ],
+      "erkennung": [
+        "Le signe de reconnaissance est le préfixe تَ devant le schème en alif (تَفَاعَلَ au lieu de فَاعَلَ).",
+        "Le sens est le plus souvent réciproque (« se faire mutuellement quelque chose ») ou feint.",
+        "Marqué dans le corpus par la valeur entre parenthèses (VI)."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 70,
+          "wort": 11,
+          "zeigt": "تَشَٰبَهَ (« cela nous a paru semblable ») — ressemblance réciproque entre les vaches mentionnées dans le verset.",
+          "warum": "Segment : verbForm:6 (étiquette brute (VI)), tense:perfect, root:شبه."
+        },
+        {
+          "sure": 2,
+          "vers": 118,
+          "wort": 18,
+          "zeigt": "تَشَٰبَهَتْ (« elles se ressemblent l'une l'autre ») — même forme, 3e personne féminin singulier (se rapportant à « les cœurs »).",
+          "warum": "Segment : verbForm:6 (étiquette brute (VI)), tense:perfect, root:شبه."
+        }
+      ],
+      "lernen": [
+        "Ancre la forme VI sur le mot تَسَاءَلَ (« s'interroger mutuellement ») comme exemple de référence - l'idée de base « réciproque » s'en déduit bien pour d'autres verbes de forme VI.",
+        "Compare comme une paire la forme III (فَاعَلَ, « faire quelque chose avec quelqu'un ») et la forme VI (تَفَاعَلَ, « se le faire mutuellement »)."
+      ],
+      "tabellen": [],
+      "siehe": [
+        "form3"
+      ]
+    },
+    "form7": {
+      "titel": "Forme verbale VII – le schème à valeur passive",
+      "ar": "بَاب انْفَعَلَ",
+      "umschrift": "bāb infaʿala",
+      "erklaerung": [
+        "La forme VII place le préfixe اِنْ devant la forme de base et exprime le plus souvent un changement d'état qui se produit de lui-même - souvent de sens passif sans être grammaticalement un véritable passif : اِنْكَسَرَ, « se briser (de soi-même) ». Un trait important : les verbes de cette forme sont fondamentalement intransitifs et ne forment pas de véritable passif propre, mais se traduisent souvent en français par une tournure passive ou pronominale.",
+        "Cette forme est plus rare dans le Coran que les formes II-V, mais elle est attestée de façon marquante dans les descriptions de phénomènes naturels et de changements d'état soudains."
+      ],
+      "erkennung": [
+        "Le signe de reconnaissance est le préfixe اِنْ (اِنْفَعَلَ au lieu de فَعَلَ).",
+        "Le sens est le plus souvent « se produire de soi-même, se transformer en quelque chose » - à valeur passive quant au contenu, sans passif grammatical propre.",
+        "Marqué dans le corpus par la valeur entre parenthèses (VII)."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 60,
+          "wort": 9,
+          "zeigt": "فَٱنفَجَرَتْ (« alors elle jaillit ») — préfixe اِن, l'eau jaillit d'elle-même du rocher.",
+          "warum": "Segment : verbForm:7 (étiquette brute (VII)), tense:perfect, voice:null (pas de passif propre), root:فجر."
+        },
+        {
+          "sure": 3,
+          "vers": 144,
+          "wort": 14,
+          "zeigt": "ٱنقَلَبْتُمْ (« vous retournerez ») — préfixe اِن, changement d'état « se retourner, faire volte-face ».",
+          "warum": "Segment : verbForm:7 (étiquette brute (VII)), tense:perfect, root:قلب."
+        }
+      ],
+      "lernen": [
+        "Retiens l'exemple de référence اِنْكَسَرَ (« se briser ») et traduis-le consciemment non pas littéralement au passif, mais comme « se produire de soi-même ».",
+        "Pour les verbes de forme VII, vérifie qu'aucun schème vocalique de passif n'est présent - la forme sonne comme un passif en français, mais ne l'est pas grammaticalement."
+      ],
+      "tabellen": [],
+      "siehe": [
+        "majhul"
+      ]
+    },
+    "form8": {
+      "titel": "Forme verbale VIII – le schème réfléchi/réciproque",
+      "ar": "بَاب افْتَعَلَ",
+      "umschrift": "bāb iftaʿala",
+      "erklaerung": [
+        "La forme VIII insère un تَ après la première lettre radicale (اِفْتَعَلَ) et exprime le plus souvent une action réfléchie, réciproque ou faite dans son propre intérêt : اِجْتَمَعَ, « se rassembler » (le groupe se rassemble lui-même). À la différence des formes V/VI, le تَ réfléchi se trouve ici au milieu du mot et non devant.",
+        "Comme le تَ inséré se trouve juste à côté de la première lettre radicale, il fusionne, avec certaines lettres initiales (par ex. د/ذ/ز/س/ص/ض/ط/ظ/ث), en un seul son doublé (idghām) - visible au shadda directement après la première lettre radicale."
+      ],
+      "erkennung": [
+        "Le signe de reconnaissance est le تَ inséré après la première lettre radicale (اِفْتَعَلَ au lieu de فَعَلَ), souvent reconnaissable au hamza initial اِ.",
+        "Le sens est le plus souvent réfléchi ou « dans son propre intérêt » (faire quelque chose pour soi-même).",
+        "Marqué dans le corpus par la valeur entre parenthèses (VIII)."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 16,
+          "wort": 3,
+          "zeigt": "ٱشْتَرَوُا۟ (« ils ont acheté/échangé ») — تَ inséré après ش, nuance réfléchie (« échanger pour soi-même »).",
+          "warum": "Segment : verbForm:8 (étiquette brute (VIII)), tense:perfect, root:شري."
+        },
+        {
+          "sure": 2,
+          "vers": 29,
+          "wort": 10,
+          "zeigt": "ٱسْتَوَىٰٓ (« Il S'est tourné vers / élevé ») — تَ inséré après س.",
+          "warum": "Segment : verbForm:8 (étiquette brute (VIII)), tense:perfect, root:سوي."
+        }
+      ],
+      "lernen": [
+        "Ancre la forme VIII sur اِجْتَمَعَ (« se rassembler ») comme mot de référence - l'idée réfléchie de base se transpose bien à d'autres verbes de forme VIII.",
+        "Pour les verbes dont la première lettre appartient au groupe د/ذ/ز/س/ص/ض/ط/ظ/ث, sois attentif à un shadda directement en début de mot - c'est le تَ inséré qui a fusionné avec la lettre radicale."
+      ],
+      "tabellen": [],
+      "siehe": [
+        "form1",
+        "idgham"
+      ]
+    },
+    "form9": {
+      "titel": "Forme verbale IX – le schème des couleurs et des défauts",
+      "ar": "بَاب افْعَلَّ",
+      "umschrift": "bāb ifʿalla",
+      "erklaerung": [
+        "La forme IX redouble la dernière lettre radicale (اِفْعَلَّ) et se limite à un domaine de sens très restreint : prendre une couleur ou un défaut physique, le plus souvent comme changement d'état passager - اِسْوَدَّ, « devenir noir », اِبْيَضَّ, « devenir blanc/clair ». En raison de ce redoublement de la dernière lettre, la forme IX suit dans sa conjugaison les mêmes règles qu'un verbe muḍāʿaf (géminé).",
+        "Cette forme est rare dans le Coran, mais attestée à des endroits marquants, par exemple dans la description des visages qui deviendront noirs ou blancs au Jour de la Résurrection."
+      ],
+      "erkennung": [
+        "Le signe de reconnaissance est le redoublement de la dernière lettre radicale en fin de mot (اِفْعَلَّ au lieu de فَعَلَ).",
+        "Le sens est presque exclusivement limité aux couleurs et aux défauts physiques.",
+        "Marqué dans le corpus par la valeur entre parenthèses (IX) ; très rarement attesté."
+      ],
+      "belege": [
+        {
+          "sure": 3,
+          "vers": 106,
+          "wort": 8,
+          "zeigt": "ٱسْوَدَّتْ (« deviennent noirs ») — redoublement de la dernière lettre د, changement de couleur du visage.",
+          "warum": "Segment : verbForm:9 (étiquette brute (IX)), tense:perfect, root:سود."
+        },
+        {
+          "sure": 3,
+          "vers": 107,
+          "wort": 3,
+          "zeigt": "ٱبْيَضَّتْ (« deviennent blancs/clairs ») — redoublement de la dernière lettre ض, pendant dans le même passage du verset.",
+          "warum": "Segment : verbForm:9 (étiquette brute (IX)), tense:perfect, root:بيض."
+        }
+      ],
+      "lernen": [
+        "N'apprends pas la forme IX à travers un schème grammatical, mais à travers le repère sémantique « couleurs et défauts » - ce domaine de sens restreint est le signe de reconnaissance le plus fiable.",
+        "Compare directement les deux attestations coraniques ٱسْوَدَّتْ/ٱبْيَضَّتْ - elles se suivent immédiatement dans le Coran comme une paire contrastée."
+      ],
+      "tabellen": [],
+      "siehe": [
+        "mudaaf"
+      ]
+    },
+    "form10": {
+      "titel": "Forme verbale X – le schème de la demande",
+      "ar": "بَاب اسْتَفْعَلَ",
+      "umschrift": "bāb istafʿala",
+      "erklaerung": [
+        "La forme X place le préfixe اِسْتَ devant la forme de base (اِسْتَفْعَلَ) et exprime le plus souvent l'idée de demander quelque chose, de le solliciter ou de le rechercher : اِسْتَغْفَرَ, « demander pardon » (de غَفَرَ, « pardonner »). Elle peut aussi signifier considérer quelque chose comme ayant une certaine qualité, ou se l'attribuer.",
+        "Cette forme est très présente dans le Coran, notamment dans la Fātiḥa elle-même (نَسْتَعِينُ, « nous demandons secours ») - juste à côté d'un verbe de forme I (نَعْبُدُ), ce qui rend immédiatement visible la différence de sens entre la forme de base et la forme X."
+      ],
+      "erkennung": [
+        "Le signe de reconnaissance est le préfixe اِسْتَ en début de mot (اِسْتَفْعَلَ au lieu de فَعَلَ).",
+        "Le sens est le plus souvent « demander quelque chose, le solliciter/rechercher » ou « considérer quelque chose comme … ».",
+        "Marqué dans le corpus par la valeur entre parenthèses (X)."
+      ],
+      "belege": [
+        {
+          "sure": 1,
+          "vers": 5,
+          "wort": 4,
+          "zeigt": "نَسْتَعِينُ (« nous demandons secours ») — préfixe اِسْتَ, sens « demander aide/assistance ».",
+          "warum": "Segment : verbForm:10 (étiquette brute (X)), tense:imperfect, root:عون."
+        },
+        {
+          "sure": 2,
+          "vers": 34,
+          "wort": 10,
+          "zeigt": "وَٱسْتَكْبَرَ (« et il s'est montré orgueilleux ») — préfixe اِسْتَ, sens « se considérer soi-même comme grand/élevé » (Iblīs).",
+          "warum": "Segment : verbForm:10 (étiquette brute (X)), tense:perfect, root:كبر."
+        }
+      ],
+      "lernen": [
+        "Utilise la paire de la Fātiḥa نَعْبُدُ/نَسْتَعِينُ comme exemple de référence : forme I = accomplir directement l'action, forme X = demander/solliciter quelque chose.",
+        "Grave-toi اِسْتَغْفَرَ (« demander pardon ») comme second mot de référence - de غَفَرَ (pardonner) à la demande de pardon via le préfixe اِسْتَ."
+      ],
+      "tabellen": [],
+      "siehe": [
+        "form1",
+        "form4"
+      ]
+    },
+    "ismFail": {
+      "titel": "Le participe actif (Ism al-Fāʿil)",
+      "ar": "اِسْم الفَاعِل",
+      "umschrift": "ism al-fāʿil",
+      "erklaerung": [
+        "L'ism al-fāʿil décrit l'agent lui-même - « celui qui fait », « celui qui accomplit [l'action] ». Dérivé de عَلَّمَ (« enseigner »), on obtient مُعَلِّم, « un enseignant » (celui qui enseigne/a enseigné). De la forme de base نَصَرَ dérive نَاصِر, « un aide/secoureur ». Chacune des dix formes verbales possède son propre schème de participe, mais prévisible.",
+        "Grammaticalement, l'ism al-fāʿil se comporte comme un adjectif/nom : il porte le cas, le genre et le nombre comme tout autre ism, mais - à la différence d'un simple adjectif - il peut lui-même régir un complément d'objet si le verbe sous-jacent est transitif."
+      ],
+      "erkennung": [
+        "À la forme de base (forme I), reconnaissable au schème فَاعِل (long alif après la première lettre radicale, kasra sous la seconde) : نَاصِر، عَالِم، قَائِل.",
+        "Aux formes augmentées (II-X), reconnaissable le plus souvent à un préfixe مُ- avec kasra sur l'avant-dernière lettre : مُعَلِّم، مُؤْمِن، مُسْتَقِيم.",
+        "Désigne fondamentalement le porteur/l'exécutant de l'action, non l'action elle-même (ce serait le maṣdar)."
+      ],
+      "belege": [
+        {
+          "sure": 1,
+          "vers": 4,
+          "wort": 1,
+          "zeigt": "مَٰلِكِ (« souverain/possesseur ») — participe actif de مَلَكَ, « posséder/régner » : celui qui règne.",
+          "warum": "Segment : pos:N, derivation:activeParticiple, voice:active, root:ملك."
+        },
+        {
+          "sure": 2,
+          "vers": 5,
+          "wort": 8,
+          "zeigt": "ٱلْمُفْلِحُونَ (« ceux qui réussissent ») — participe actif de la forme IV أَفْلَحَ, reconnaissable au préfixe مُ-.",
+          "warum": "Segment : pos:N, derivation:activeParticiple, verbForm:4, root:فلح."
+        }
+      ],
+      "lernen": [
+        "Apprends d'abord le schème de base فَاعِل sur plusieurs exemples (نَاصِر، عَالِم، قَائِل), avant de t'attaquer aux schèmes des formes augmentées.",
+        "Pour chaque verbe appris, construis-toi consciemment son participe actif - cela entraîne le schème plus vite que le par cœur isolé de participes séparés.",
+        "Sois attentif à la différence de sens entre مَالِك (ism al-fāʿil, « celui qui possède/règne ») et un simple adjectif - le participe reste lié à l'action verbale."
+      ],
+      "tabellen": [],
+      "siehe": [
+        "ismMaful",
+        "masdar",
+        "fiil"
+      ]
+    },
+    "ismMaful": {
+      "titel": "Le participe passif (Ism al-Mafʿūl)",
+      "ar": "اِسْم المَفْعُول",
+      "umschrift": "ism al-mafʿūl",
+      "erklaerung": [
+        "L'ism al-mafʿūl décrit celui ou ce sur quoi l'action est accomplie - « celui qui est affecté », « ce qui a été fait ». Dérivé de عَلَّمَ (« enseigner »), on obtient مُعَلَّم, « un élève » (celui à qui l'on a enseigné). De la forme de base نَصَرَ dérive مَنْصُور, « celui à qui l'on a porté secours ».",
+        "À la forme de base, le participe passif suit le schème مَفْعُول ; aux formes augmentées, il ressemble à l'ism al-fāʿil, mais porte une fatha au lieu de la kasra sur la lettre correspondante - la seule différence, mais décisive."
+      ],
+      "erkennung": [
+        "À la forme de base (forme I), reconnaissable au schème مَفْعُول : مَنْصُور، مَعْلُوم، مَغْضُوب.",
+        "Aux formes augmentées, reconnaissable au même préfixe مُ- que l'ism al-fāʿil, mais avec une fatha au lieu d'une kasra sur l'avant-dernière lettre : مُطَهَّرَة (au lieu de مُطَهِّرَة).",
+        "Désigne celui sur qui l'action se produit, non celui qui agit."
+      ],
+      "belege": [
+        {
+          "sure": 1,
+          "vers": 7,
+          "wort": 6,
+          "zeigt": "ٱلْمَغْضُوبِ (« [sur ceux] contre qui la colère s'abat ») — participe passif au schème مَفْعُول de غَضِبَ, « s'irriter ».",
+          "warum": "Segment : pos:N, derivation:passiveParticiple, voice:passive, root:غضب."
+        },
+        {
+          "sure": 2,
+          "vers": 25,
+          "wort": 31,
+          "zeigt": "مُّطَهَّرَةٌ (« [épouses] purifiées ») — participe passif de la forme II, reconnaissable à la fatha au lieu de la kasra devant la dernière lettre.",
+          "warum": "Segment : pos:ADJ, derivation:passiveParticiple, verbForm:2, root:طهر."
+        }
+      ],
+      "lernen": [
+        "Mets directement en regard, à la forme de base, ism al-fāʿil et ism al-mafʿūl : نَاصِر (celui qui aide) face à مَنْصُور (celui à qui l'on porte secours) - le même radical, un rôle opposé.",
+        "Pour les formes augmentées : prononce la paire de mots à voix haute (مُعَلِّم/مُعَلَّم) et sois attentif à la seule différence - kasra ou fatha devant la dernière lettre."
+      ],
+      "tabellen": [],
+      "siehe": [
+        "ismFail",
+        "majhul"
+      ]
+    },
+    "masdar": {
+      "titel": "Le nom verbal (Maṣdar)",
+      "ar": "المَصْدَر",
+      "umschrift": "al-maṣdar",
+      "erklaerung": [
+        "Le maṣdar est l'idée/action pure d'un verbe en tant que nom - « le fait d'enseigner », « le fait de dire », « le fait de faire descendre » - détachée du temps et de la personne. Chaque verbe arabe possède un maṣdar (souvent irrégulier à la forme de base, mais régulièrement prévisible aux formes augmentées II-X).",
+        "Le maṣdar remplit dans la phrase la fonction d'un nom ordinaire : il peut être sujet, complément d'objet ou faire partie d'une iḍāfa. Son emploi comme maṣdar mafʿūl muṭlaq est particulièrement important, où il renforce l'action du verbe principal en provenant de la même racine (par ex. قَتَلَهُ قَتْلًا, « il l'a vraiment/complètement tué »)."
+      ],
+      "erkennung": [
+        "À la forme de base, il n'existe pas de schème uniforme - le maṣdar doit être appris individuellement pour chaque verbe (قَوْل، عِلْم، نَصْر).",
+        "Aux formes augmentées, le schème est le plus souvent prévisible, par ex. تَفْعِيل pour la forme II (تَعْلِيم) ou إِفْعَال pour la forme IV (إِنْزَال، إِحْسَان).",
+        "Fonctionne grammaticalement comme un nom, mais porte quant au sens l'action pure sans référence temporelle."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 59,
+          "wort": 4,
+          "zeigt": "قَوْلًا (« une parole/un dire ») — maṣdar de la forme de base de قَالَ, « dire ».",
+          "warum": "Segment : pos:N, derivation:verbalNoun, root:قول."
+        },
+        {
+          "sure": 2,
+          "vers": 83,
+          "wort": 11,
+          "zeigt": "إِحْسَانًا (« bonté, bien agir ») — maṣdar de la forme IV (schème إِفْعَال) de أَحْسَنَ.",
+          "warum": "Segment : pos:N, derivation:verbalNoun, verbForm:4, root:حسن."
+        }
+      ],
+      "lernen": [
+        "À la forme de base, apprends le maṣdar directement avec le verbe, comme une paire fixe (قَالَ – قَوْل) - il n'y a ici aucune règle, seulement le par cœur.",
+        "Aux formes augmentées, il suffit d'apprendre une fois par forme le schème de maṣdar correspondant (تَفْعِيل pour II, إِفْعَال pour IV, etc.) et de le transposer ensuite à n'importe quelle racine."
+      ],
+      "tabellen": [],
+      "siehe": [
+        "ismFail",
+        "ismMaful"
+      ]
+    },
+    "ismTafdil": {
+      "titel": "L'élatif, forme de comparaison et de supériorité (Ism at-Tafḍīl)",
+      "ar": "اِسْم التَّفْضِيل",
+      "umschrift": "ism at-tafḍīl",
+      "erklaerung": [
+        "L'ism at-tafḍīl (l'élatif) compare ou intensifie une qualité entre deux (ou plusieurs) choses - « plus grand », « le plus grand ». Il se forme le plus souvent selon le schème أَفْعَل : de كَبِير (« grand ») on obtient أَكْبَر (« plus grand/le plus grand »), de عَلِيم/عَالِم (« savant ») on obtient أَعْلَم (« plus savant, plus savant que tout autre »).",
+        "Si مِن (« que ») suit, la comparaison est explicite (« plus grand que … »). Sans مِن, mais avec l'article اَلْ ou comme premier terme d'une iḍāfa, il devient un superlatif (« le plus grand »)."
+      ],
+      "erkennung": [
+        "Schème de base أَفْعَل : hamza en début de mot, fatha-sukūn-fatha sur les trois lettres radicales (أَكْبَر، أَعْلَم، أَحْسَن).",
+        "Avec مِن ensuite : comparaison explicite (« plus grand que »).",
+        "Avec l'article اَلْ ou en iḍāfa, sans مِن : superlatif (« le plus grand/le meilleur »)."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 140,
+          "wort": 15,
+          "zeigt": "وَٱللَّهُ أَعْلَمُ (« et Allah sait le mieux ») — schème أَفْعَل de عَلِمَ, ici sans مِن, comme superlatif absolu.",
+          "warum": "Le mot est marqué dans le corpus comme pos:N avec le lemme أَعْلَم, root:علم."
+        },
+        {
+          "sure": 2,
+          "vers": 217,
+          "wort": 22,
+          "zeigt": "أَكْبَرُ (« plus grand/plus grave ») — schème أَفْعَل de كَبُرَ, ici comparatif (« … est plus grave que le combat qui s'y déroule »).",
+          "warum": "Le mot est marqué dans le corpus comme pos:N avec le lemme أَكْبَر, root:كبر."
+        }
+      ],
+      "lernen": [
+        "Apprends d'abord par cœur le schème أَفْعَل sur les exemples coraniques les plus fréquents (أَكْبَر، أَعْلَم، أَقْرَب، أَحْسَن), avant de construire tes propres formes.",
+        "Entraîne-toi sur la différence « avec مِن = comparatif » vs. « avec اَلْ/iḍāfa sans مِن = superlatif » sur les mêmes mots dans les deux constructions."
+      ],
+      "tabellen": [],
+      "siehe": [
+        "ismFail"
+      ]
+    },
+    "ismZamanMakan": {
+      "titel": "Le nom de lieu et de temps",
+      "ar": "اِسْم الزَّمَان وَالمَكَان",
+      "umschrift": "ism az-zamān wa-l-makān",
+      "erklaerung": [
+        "Le nom de lieu/de temps (ẓarf/ism az-zamān wa-l-makān) désigne le lieu ou le moment où se produit une action - « le lieu de la prière », « le moment du lever du soleil ». À la forme de base, il se forme le plus souvent selon le schème مَفْعِل ou مَفْعَل : de سَجَدَ (« se prosterner ») dérive مَسْجِد, « le lieu de la prosternation » (mosquée) ; de شَرَقَ (« se lever [soleil] ») dérive مَشْرِق, « le lieu/le moment du lever du soleil, l'orient ».",
+        "À la différence du participe passif (ism al-mafʿūl), qui commence lui aussi souvent par مَـ, le nom de lieu/de temps ne porte pas de sens de rôle actanciel (« celui qui est affecté »), mais une pure indication de lieu ou de temps - les deux catégories ne se distinguent de façon sûre que par le sens dans la phrase."
+      ],
+      "erkennung": [
+        "Fréquent au schème مَفْعِل ou مَفْعَل : مَسْجِد، مَشْرِق، مَغْرِب، مَوْعِد.",
+        "Désigne un lieu ou un moment, non une personne/chose sur laquelle quelque chose se produit.",
+        "Extérieurement semblable à l'ism al-mafʿūl - la distinction se fait par le sens en contexte."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 114,
+          "wort": 5,
+          "zeigt": "مَسَٰجِدَ (« lieux de prosternation/mosquées ») — nom de lieu de سَجَدَ au schème مَفْعِل, pluriel.",
+          "warum": "Le mot est marqué dans le corpus comme pos:N avec le lemme مَسْجِد, root:سجد, derivation:null (pas un participe)."
+        },
+        {
+          "sure": 2,
+          "vers": 115,
+          "wort": 2,
+          "zeigt": "ٱلْمَشْرِقُ (« l'orient/le lieu du lever du soleil ») — nom de lieu de شَرَقَ au schème مَفْعِل.",
+          "warum": "Le mot est marqué dans le corpus comme pos:N avec le lemme مَشْرِق, root:شرق, derivation:null (pas un participe)."
+        }
+      ],
+      "lernen": [
+        "Apprends مَسْجِد comme mot de référence pour tout le schème : « lieu où se produit [l'action du verbe] ».",
+        "Compare مَشْرِق/مَغْرِب (orient/occident, lieu du lever/coucher du soleil) comme paire de mots - tous deux au même schème, direction cardinale opposée."
+      ],
+      "tabellen": [],
+      "siehe": [
+        "ismMaful"
+      ]
+    },
+    "sahih": {
+      "titel": "Le verbe sain (Ṣaḥīḥ)",
+      "ar": "الفِعْل الصَّحِيح",
+      "umschrift": "al-fiʿl aṣ-ṣaḥīḥ",
+      "erklaerung": [
+        "Ṣaḥīḥ (« sain, sans défaut ») désigne les verbes dont les trois lettres radicales ne présentent aucune particularité : pas de hamza, aucune des trois lettres faibles alif/wāw/yāʾ, pas de lettre doublée. نَصَرَ, فَتَحَ et سَمِعَ sont des verbes ṣaḥīḥ classiques. Ils constituent la référence « simple » sur laquelle on apprend d'abord la conjugaison, avant de se tourner vers les cas particuliers.",
+        "Toutes les règles concernant le māḍī, le muḍāriʿ, l'amr, le nahy et les dix formes verbales ont jusqu'ici été présentées sur le verbe modèle نَصَرَ, précisément parce que c'est un verbe ṣaḥīḥ : radical et terminaisons se comportent de façon entièrement régulière, sans qu'aucune lettre ne disparaisse, ne se transforme ou ne fusionne."
+      ],
+      "erkennung": [
+        "Aucun hamza dans la racine.",
+        "Aucune des trois lettres radicales n'est alif, wāw ou yāʾ.",
+        "Aucun doublement (identité) de la 2e/3e lettre radicale."
+      ],
+      "belege": [
+        {
+          "sure": 3,
+          "vers": 123,
+          "wort": 2,
+          "zeigt": "نَصَرَكُمُ (« Il vous a aidés ») — racine ن-ص-ر : pas de hamza, pas de lettre faible, pas de doublement.",
+          "warum": "root:نصر — les trois lettres n'appartiennent à aucun groupe particulier."
+        },
+        {
+          "sure": 7,
+          "vers": 157,
+          "wort": 35,
+          "zeigt": "وَنَصَرُوهُ (« et ils l'ont aidé ») — la même racine saine ن-ص-ر.",
+          "warum": "root:نصر — confirme le même classement à un second endroit."
+        }
+      ],
+      "lernen": [
+        "Apprends d'abord la conjugaison en entier sur un verbe ṣaḥīḥ (نَصَرَ) - c'est seulement une fois ce schéma maîtrisé qu'il vaut la peine de s'attaquer aux cas particuliers, car on voit alors exactement ce qui dévie.",
+        "Grave-toi les trois questions de contrôle qui permettent de classer aussitôt un nouveau verbe : hamza ? lettre faible (و/ي/ا) ? doublement ? Non aux trois = ṣaḥīḥ."
+      ],
+      "tabellen": [
+        "verb-madi-nasara-aktiv-matrix"
+      ],
+      "siehe": [
+        "mahmuz",
+        "mithal",
+        "ajwaf",
+        "naqis",
+        "mudaaf"
+      ]
+    },
+    "mahmuz": {
+      "titel": "Le verbe hamzé (Mahmūz)",
+      "ar": "المَهْمُوز",
+      "umschrift": "al-mahmūz",
+      "erklaerung": [
+        "Les verbes mahmūz portent un hamza comme l'une de leurs trois lettres radicales. Selon la position, on distingue mahmūz al-fāʾ (hamza en 1re radicale, par ex. أَكَلَ, « manger »), mahmūz al-ʿayn (hamza en 2e radicale, par ex. سَأَلَ, « demander ») et mahmūz al-lām (hamza en 3e radicale, par ex. قَرَأَ, « lire/réciter »).",
+        "Chez ces verbes, deux altérations phonétiques peuvent se produire : takhfīf (le hamza se transforme, selon la voyelle qui précède, en alif, wāw ou yāʾ) et ḥadhf (le hamza disparaît entièrement). Le ḥadhf concerne en arabe exactement quatre verbes à l'impératif : أَكَلَ→كُلْ, أَخَذَ→خُذْ, أَمَرَ→مُرْ, سَأَلَ→سَلْ - chez ces quatre verbes, le hamza disparaît intégralement à l'impératif."
+      ],
+      "erkennung": [
+        "Exactement l'une des trois lettres radicales est un hamza (ء/أ/إ/ؤ/ئ).",
+        "La position du hamza (1re, 2e ou 3e radicale) détermine la sous-catégorie (al-fāʾ, al-ʿayn, al-lām).",
+        "À l'impératif des quatre verbes أَكَلَ/أَخَذَ/أَمَرَ/سَأَلَ, le hamza disparaît entièrement - un signe de reconnaissance fiable pour ce groupe particulier."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 57,
+          "wort": 8,
+          "zeigt": "كُلُوا۟ (« Mangez ! ») — forme impérative de أَكَلَ (mahmūz al-fāʾ) : le hamza initial a entièrement disparu à l'impératif.",
+          "warum": "root:اكل, Segment : pos:V, tense:imperative — le lemme أَكَلَ porte un hamza, la forme impérative elle-même n'en porte plus."
+        },
+        {
+          "sure": 17,
+          "vers": 14,
+          "wort": 1,
+          "zeigt": "ٱقْرَأْ (« Lis ! ») — forme impérative de قَرَأَ (mahmūz al-lām) : ici, le hamza subsiste comme troisième radicale.",
+          "warum": "root:قرا, Segment : pos:V, tense:imperative — le lemme قَرَأَ porte un hamza en fin de mot, conservé ici à l'impératif."
+        }
+      ],
+      "lernen": [
+        "Apprends les trois sous-catégories à travers leurs mots modèles : أَكَلَ (al-fāʾ), سَأَلَ (al-ʿayn), قَرَأَ (al-lām) - la position du hamza dans le mot révèle aussitôt la sous-catégorie.",
+        "Apprends par cœur les quatre impératifs de ḥadhf كُلْ/خُذْ/مُرْ/سَلْ comme une liste fermée, non déductible.",
+        "Utilise les tableaux de bāb (قَرَأَ et أَمِنَ) pour t'entraîner à voix haute : cache une colonne à la fois et complète toi-même le nom verbal, le participe et la forme impérative."
+      ],
+      "tabellen": [
+        "bab-fataha-mahmooz-qaraa",
+        "bab-samia-mahmooz-amina"
+      ],
+      "siehe": [
+        "takhfif",
+        "hadhf",
+        "sahih"
+      ]
+    },
+    "mithal": {
+      "titel": "Le verbe assimilé (Mithāl)",
+      "ar": "المِثَال",
+      "umschrift": "al-mithāl",
+      "erklaerung": [
+        "Un mithāl est un verbe muʿtall (un verbe comportant une lettre faible wāw/yāʾ/alif dans sa racine) où c'est spécifiquement la première radicale qui est faible. Si cette première lettre est un wāw, la sous-catégorie s'appelle mithāl wāwī (par ex. وَعَدَ, « promettre ») ; si c'est un yāʾ, mithāl yāʾī.",
+        "Le phénomène le plus frappant : pour la plupart des verbes mithāl wāwī, le wāw initial disparaît entièrement à l'inaccompli par ḥadhf - de وَعَدَ (« il a promis »), on n'obtient pas يَوْعِدُ au muḍāriʿ, mais يَعِدُ (« il promet »). Cette lacune en début de mot est de loin le signe de reconnaissance le plus fiable des verbes mithāl."
+      ],
+      "erkennung": [
+        "La première lettre radicale est un wāw ou un yāʾ (encore le plus souvent visible à l'accompli : وَعَدَ، وَلَدَ).",
+        "À l'inaccompli (muḍāriʿ), ce wāw initial disparaît le plus souvent sans être remplacé (وَعَدَ → يَعِدُ, et non يَوْعِدُ).",
+        "À l'accompli lui-même, en revanche, la lettre faible reste souvent visible."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 268,
+          "wort": 2,
+          "zeigt": "يَعِدُكُمُ (« il vous promet ») — inaccompli de وَعَدَ : le wāw initial de la racine و-ع-د a entièrement disparu.",
+          "warum": "root:وعد (première radicale و), Segment : tense:imperfect, verbForm:1 — pas de و dans le tracé du mot malgré la racine و-ع-د."
+        },
+        {
+          "sure": 112,
+          "vers": 3,
+          "wort": 2,
+          "zeigt": "يَلِدْ (« il engendre ») — inaccompli de وَلَدَ : ici aussi, le wāw initial de la racine و-ل-د a disparu.",
+          "warum": "root:ولد (première radicale و), Segment : tense:imperfect, mood:juss — pas de و dans le tracé du mot."
+        }
+      ],
+      "lernen": [
+        "Retiens la paire de référence وَعَدَ/يَعِدُ (« promettre ») comme exemple-règle : wāw visible à l'accompli, disparu à l'inaccompli.",
+        "Compare la forme passive يُوعَدُ (le wāw subsiste au passif !) avec la forme active يَعِدُ - cela montre que la disparition est spécifique au muḍāriʿ actif."
+      ],
+      "tabellen": [],
+      "siehe": [
+        "hadhf",
+        "qalb",
+        "idgham"
+      ]
+    },
+    "ajwaf": {
+      "titel": "Le verbe concave (Ajwaf)",
+      "ar": "الأَجْوَف",
+      "umschrift": "al-ajwaf",
+      "erklaerung": [
+        "Un ajwaf est un verbe muʿtall dont la radicale médiane est faible (wāw ou yāʾ) - le nom signifie littéralement « creux/concave », car cette lettre médiane fusionne, dans de nombreuses formes, en une simple voyelle longue, ou disparaît entièrement. قَالَ (« dire ») remonte à la racine ق-و-ل (ajwaf wāwī), خَافَ (« craindre ») à خ-و-ف.",
+        "La lettre faible médiane se transforme à l'accompli, par qalb, en un long alif (قَوَلَ → قَالَ), disparaît entièrement par ḥadhf à certaines personnes (devant une terminaison commençant par une consonne : قَالَ + تُ → قُلْتُ, et non قَالْتُ), et se réduit souvent, à l'impératif, à une simple voyelle longue (قُلْ, « Dis ! »)."
+      ],
+      "erkennung": [
+        "La lettre radicale médiane (la deuxième) est un wāw ou un yāʾ.",
+        "À l'accompli, 3e personne, cette lettre apparaît le plus souvent comme un long alif (قَالَ au lieu de قَوَلَ).",
+        "Devant une terminaison personnelle commençant par une consonne, le mot se raccourcit de façon frappante (قُلْتُ au lieu de قَالْتُ)."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 11,
+          "wort": 8,
+          "zeigt": "قَالُوٓا۟ (« ils dirent ») — racine ق-و-ل, wāw médian visible comme long alif (qalb).",
+          "warum": "root:قول (radicale médiane و), Segment : tense:perfect, verbForm:1."
+        },
+        {
+          "sure": 2,
+          "vers": 229,
+          "wort": 18,
+          "zeigt": "يَخَافَآ (« tous deux craignent ») — racine خ-و-ف, wāw médian apparaissant lui aussi comme alif.",
+          "warum": "root:خوف (radicale médiane و), Segment : tense:imperfect, number:du."
+        }
+      ],
+      "lernen": [
+        "Apprends قَالَ comme verbe de référence et entraîne-toi spécifiquement sur les personnes à terminaison commençant par une consonne (قُلْتُ، قُلْنَا), car c'est là que la lettre médiane disparaît complètement - c'est l'écueil le plus fréquent.",
+        "Prononce ensemble à voix haute l'impératif et l'inaccompli : قُلْ (Dis !) à côté de يَقُولُ (il dit) - cela rend audible le raccourcissement à l'impératif."
+      ],
+      "tabellen": [],
+      "siehe": [
+        "qalb"
+      ]
+    },
+    "naqis": {
+      "titel": "Le verbe défectueux (Nāqiṣ)",
+      "ar": "النَّاقِص",
+      "umschrift": "an-nāqiṣ",
+      "erklaerung": [
+        "Un nāqiṣ est un verbe muʿtall dont la dernière radicale est faible (wāw ou yāʾ). Si c'est un wāw, la sous-catégorie s'appelle nāqiṣ wāwī (دَعَا, « appeler/invoquer », de د-ع-و) ; si c'est un yāʾ, nāqiṣ yāʾī (رَمَى, « jeter », de ر-م-ي). Le nom « défectueux » se réfère au fait que la dernière lettre radicale n'est plus clairement reconnaissable comme consonne dans de nombreuses formes.",
+        "À l'accompli, à la 3e personne, la dernière lettre faible fusionne le plus souvent en un long alif ou un alif maqṣūra (دَعَوَ → دَعَا). Devant des terminaisons personnelles commençant par une consonne, la lettre faible devient en revanche souvent simplement sans voyelle (taskīn) ou disparaît entièrement dans certaines formes."
+      ],
+      "erkennung": [
+        "La dernière (troisième) lettre radicale est un wāw ou un yāʾ.",
+        "À l'accompli, 3e personne masculin singulier, le mot se termine le plus souvent par un alif (long ou écrit court) au lieu de la véritable lettre radicale.",
+        "Devant des terminaisons personnelles à consonne initiale, la lettre finale faible se prononce souvent de façon particulièrement brève ou modifiée."
+      ],
+      "belege": [
+        {
+          "sure": 3,
+          "vers": 38,
+          "wort": 2,
+          "zeigt": "دَعَا (« il appela/invoqua ») — racine د-ع-و, wāw final apparaissant comme alif.",
+          "warum": "root:دعو (dernière radicale و), Segment : tense:perfect, verbForm:1."
+        },
+        {
+          "sure": 8,
+          "vers": 17,
+          "wort": 7,
+          "zeigt": "رَمَيْتَ (« tu as jeté ») — racine ر-م-ي, yāʾ final conservé comme voyelle brève devant la terminaison personnelle ـتَ.",
+          "warum": "root:رمي (dernière radicale ي), Segment : tense:perfect, person:2, gender:m, number:sg."
+        }
+      ],
+      "lernen": [
+        "Apprends دَعَا (appeler/invoquer, wāwī) et رَمَى (jeter, yāʾī) comme un exemple de référence pour chacune des deux sous-catégories - le schème de base s'y observe clairement.",
+        "Entraîne-toi spécifiquement sur la 3e personne du singulier à l'accompli, car c'est là que la lettre radicale « disparaît » le plus fortement (devenant un simple alif) - c'est l'endroit le plus frappant."
+      ],
+      "tabellen": [],
+      "siehe": [
+        "qalb"
+      ]
+    },
+    "lafif": {
+      "titel": "Le verbe doublement faible (Lafīf)",
+      "ar": "اللَّفِيف",
+      "umschrift": "al-lafīf",
+      "erklaerung": [
+        "Un lafīf est un verbe où deux des trois lettres radicales sont faibles à la fois (wāw ou yāʾ) - il réunit donc en lui-même deux cas particuliers simultanément. On distingue lafīf maqrūn (« contracté »), où les 2e et 3e radicales sont faibles (رَوَى, « raconter/transmettre » - combinaison d'ajwaf et de nāqiṣ), et lafīf mafrūq (« séparé »), où les 1re et 3e radicales sont faibles (وَفَى, « accomplir/être fidèle » - combinaison de mithāl et de nāqiṣ).",
+        "Comme deux cas particuliers se rencontrent simultanément dans le lafīf, les mêmes règles de transformation que celles du type verbal sous-jacent s'appliquent en principe (règles du nāqiṣ pour les deux sous-catégories, plus le ḥadhf du mithāl pour le type mafrūq) - simplement appliquées doublement."
+      ],
+      "erkennung": [
+        "Deux des trois lettres radicales sont un wāw ou un yāʾ.",
+        "Lafīf maqrūn : 2e et 3e radicales faibles (combinaison ajwaf + nāqiṣ), par ex. رَوَى.",
+        "Lafīf mafrūq : 1re et 3e radicales faibles (combinaison mithāl + nāqiṣ), par ex. وَفَى."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 28,
+          "wort": 6,
+          "zeigt": "فَأَحْيَٰكُمْ (« puis Il vous a donné la vie ») — racine ح-ي-ي : 2e et 3e radicales toutes deux yāʾ (lafīf maqrūn).",
+          "warum": "root:حيي (2e et 3e radicales toutes deux faibles), Segment : pos:V, verbForm:4, tense:perfect."
+        },
+        {
+          "sure": 2,
+          "vers": 40,
+          "wort": 8,
+          "zeigt": "وَأَوْفُوا۟ (« et accomplissez/tenez ! ») — racine و-ف-ي : 1re et 3e radicales toutes deux faibles (lafīf mafrūq).",
+          "warum": "root:وفي (1re et 3e radicales toutes deux faibles), Segment : pos:V, verbForm:4, tense:imperative."
+        }
+      ],
+      "lernen": [
+        "Ne considère pas le lafīf comme un système de règles entièrement nouveau, mais comme la superposition de deux cas particuliers déjà connus - apprends d'abord solidement mithāl, ajwaf et nāqiṣ séparément, et le lafīf en découlera facilement.",
+        "Pour un nouveau verbe lafīf, identifie d'abord les deux positions faibles (par ex. « 1re et 3e radicale » = mafrūq), puis applique successivement les règles déjà connues de chacune."
+      ],
+      "tabellen": [],
+      "siehe": [
+        "mithal",
+        "ajwaf",
+        "naqis"
+      ]
+    },
+    "mudaaf": {
+      "titel": "Le verbe géminé (Muḍāʿaf)",
+      "ar": "المُضَاعَف",
+      "umschrift": "al-muḍāʿaf",
+      "erklaerung": [
+        "Un muḍāʿaf a une 2e et une 3e lettre radicale doublées (identiques) - la racine est en réalité biconsonantique, mais elle est traditionnellement comptée comme une racine à trois lettres avec répétition : رَدَّ (« rendre ») remonte à ر-د-د. À la forme de base, les deux lettres identiques fusionnent par idghām en une seule, marquée d'un shadda : رَدَدَ → رَدَّ.",
+        "Cette fusion ne se produit pas partout : devant des terminaisons personnelles commençant par une consonne (les 1re/2e personnes à l'accompli : ـتُ، ـتَ، ـنَا …), les deux lettres restent séparées (رَدَدْتُ, et non رَدَّتُ), car sinon deux lettres consécutives sans voyelle se suivraient. Il se passe la même chose au muḍāriʿ-majzūm : يَرُدُّ (« il rend ») fusionne, mais يَرْتَدِدْ (forme VIII, majzūm) reste exceptionnellement séparé à cause du sukūn qui suit."
+      ],
+      "erkennung": [
+        "Les 2e et 3e lettres radicales sont identiques (ر-د-د, م-د-د, ض-ل-ل …).",
+        "Dans la plupart des formes, les deux lettres identiques apparaissent fusionnées avec un shadda (رَدَّ au lieu de رَدَدَ).",
+        "Devant une terminaison personnelle à consonne initiale ou à l'état de jazm (terminaison en sukūn), les deux lettres restent exceptionnellement séparées et visibles."
+      ],
+      "belege": [
+        {
+          "sure": 4,
+          "vers": 83,
+          "wort": 11,
+          "zeigt": "رَدُّوهُ (« ils l'auraient renvoyé/signalé ») — 2e et 3e radicales د-د fusionnées en un shadda.",
+          "warum": "root:ردد (2e/3e radicale identiques), Segment : tense:perfect, verbForm:1 — le tracé du mot porte un shadda."
+        },
+        {
+          "sure": 2,
+          "vers": 217,
+          "wort": 39,
+          "zeigt": "يَرْتَدِدْ (« il apostasie ») — même racine ر-د-د, mais à l'état de jazm, les deux lettres د restent séparées, sans shadda.",
+          "warum": "root:ردد, Segment : mood:juss, verbForm:8 — exception à la fusion habituelle."
+        }
+      ],
+      "lernen": [
+        "Apprends رَدَّ comme verbe de référence et entraîne-toi spécifiquement sur le contraste رَدَّ (fusionné) vs. رَدَدْتُ (séparé, devant terminaison consonantique) - c'est exactement ce contraste qui est le plus souvent vérifié.",
+        "Retiens l'exemple d'exception يَرْتَدِدْ : au jazm, les lettres doublées restent séparées, car sinon deux sukūn se suivraient - prononce-le consciemment de façon séparée."
+      ],
+      "tabellen": [],
+      "siehe": [
+        "idgham"
+      ]
+    },
+    "takhfif": {
+      "titel": "L'allègement du hamza (Takhfīf)",
+      "ar": "التَّخْفِيف",
+      "umschrift": "at-takhfīf",
+      "erklaerung": [
+        "Le takhfīf (« allègement ») désigne la transformation d'un hamza en alif, wāw ou yāʾ, en fonction de la vocalisation de la lettre précédente - un simple allègement de prononciation/d'écriture qui ne modifie pas l'identité de la racine. Il concerne le plus souvent la rencontre de deux hamzas : lorsque deux hamzas se rencontrent, dont le second est sakin (sans voyelle), le second hamza se transforme, selon la voyelle qui précède, en alif, wāw ou yāʾ.",
+        "Un exemple courant est fourni par la forme IV de racines qui commencent elles-mêmes par un hamza : le hamza préfixe de la forme IV rencontre le hamza radical. De l'أَأْمَنَ théorique, le takhfīf produit la forme réellement écrite آمَنَ (« il a cru ») - les deux hamzas fusionnent en un alif avec madda."
+      ],
+      "erkennung": [
+        "Deux hamzas se rencontrent, le second étant sakin (sans voyelle).",
+        "Le second hamza se transforme, selon la voyelle du premier, en alif, wāw ou yāʾ.",
+        "Manifestation la plus fréquente dans le Coran : un alif avec madda (آ) en début de mot, là où deux hamzas devraient normalement se rencontrer (آمَنَ au lieu de أَأْمَنَ)."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 41,
+          "wort": 1,
+          "zeigt": "وَءَامِنُوا۟ (« et croyez ! ») — forme impérative de la forme IV آمَنَ : les deux hamzas (préfixe + début de racine) ont fusionné en un ensemble alif/hamza.",
+          "warum": "root:امن, Segment : pos:V, verbForm:4, tense:imperative — le lemme ءَامَنَ montre l'écriture fusionnée."
+        },
+        {
+          "sure": 2,
+          "vers": 13,
+          "wort": 6,
+          "zeigt": "ءَامَنَ (« il a cru ») — accompli de la même forme IV, même fusion par takhfīf en début de mot.",
+          "warum": "root:امن, Segment : pos:V, verbForm:4, tense:perfect."
+        }
+      ],
+      "lernen": [
+        "Apprends آمَنَ comme exemple de référence et grave-toi ceci : là où deux hamzas devraient se rencontrer, le Coran écrit le plus souvent un alif-madda au lieu de deux signes de hamza séparés.",
+        "Ne confonds pas takhfīf avec ḥadhf : dans le takhfīf, le hamza se transforme, dans le ḥadhf, il disparaît entièrement (voir les quatre exceptions de l'impératif)."
+      ],
+      "tabellen": [
+        "bab-fataha-mahmooz-qaraa",
+        "bab-samia-mahmooz-amina"
+      ],
+      "siehe": [
+        "mahmuz"
+      ]
+    },
+    "hadhf": {
+      "titel": "L'élision d'une lettre (Ḥadhf)",
+      "ar": "الحَذْف",
+      "umschrift": "al-ḥadhf",
+      "erklaerung": [
+        "Ḥadhf signifie simplement l'omission d'une lettre. Le cas le plus connu concerne l'impératif de exactement quatre verbes mahmūz, chez qui le hamza initial ou radical disparaît entièrement à l'impératif : أَكَلَ يَأْكُلُ → كُلْ (« Mange ! »), أَخَذَ يَأْخُذُ → خُذْ (« Prends ! »), أَمَرَ يَأْمُرُ → مُرْ (« Ordonne ! »), سَأَلَ يَسْأَلُ → سَلْ (« Demande ! »). Pour مُرْ et سَلْ, le ḥadhf ne se produit toutefois qu'en début de phrase ; si un mot précède auquel le verbe se rattache, le hamza subsiste (وَأْمُرْ, وَٱسْأَلْ).",
+        "Le ḥadhf se produit aussi chez les verbes mithāl et nāqiṣ : chez le mithāl, le wāw initial disparaît au muḍāriʿ (وَعَدَ → يَعِدُ au lieu de يَوْعِدُ) ; chez le nāqiṣ, la lettre faible finale disparaît dans certaines formes plurielles après un taskīn précédent."
+      ],
+      "erkennung": [
+        "Une lettre attendue manque entièrement dans le mot réellement écrit.",
+        "Pour les quatre impératifs mahmūz كُلْ/خُذْ/مُرْ/سَلْ, le ḥadhf est lexicalement fixe - non pas une règle générale, mais une liste fermée.",
+        "Chez les verbes mithāl, reconnaissable au fait que le wāw initial de la racine n'apparaît plus nulle part au muḍāriʿ."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 57,
+          "wort": 8,
+          "zeigt": "كُلُوا۟ (« Mangez ! ») — forme impérative de أَكَلَ : le hamza initial a disparu sans laisser de trace.",
+          "warum": "root:اكل, Segment : pos:V, tense:imperative — le lemme porte un hamza, la forme impérative non."
+        },
+        {
+          "sure": 7,
+          "vers": 199,
+          "wort": 1,
+          "zeigt": "خُذِ (« Prends ! ») — forme impérative de أَخَذَ : ici aussi, le hamza initial a entièrement disparu.",
+          "warum": "root:اخذ, Segment : pos:V, tense:imperative — le lemme أَخَذَ porte un hamza, la forme impérative non."
+        }
+      ],
+      "lernen": [
+        "Apprends les quatre impératifs de ḥadhf كُلْ/خُذْ/مُرْ/سَلْ comme une liste fixe et non déductible, en même temps que leur forme de base.",
+        "Pour مُرْ/سَلْ, sois attentif en plus à la position dans la phrase : le hamza ne disparaît qu'en début de phrase, sinon il subsiste (وَأْمُرْ).",
+        "Distingue consciemment ḥadhf (la lettre disparaît entièrement) de takhfīf (la lettre se transforme seulement) - les deux concernent souvent le même hamza, mais avec un résultat différent."
+      ],
+      "tabellen": [],
+      "siehe": [
+        "mahmuz",
+        "mithal",
+        "amr"
+      ]
+    },
+    "idgham": {
+      "titel": "La fusion de deux lettres (Idghām)",
+      "ar": "الإِدْغَام",
+      "umschrift": "al-idghām",
+      "erklaerung": [
+        "Idghām désigne la fusion de deux lettres identiques (ou très proches) qui se rencontrent, en une seule lettre marquée d'un shadda. Cela se voit le plus clairement chez les verbes muḍāʿaf (2e/3e radicale doublée) : رَدَدَ fusionne en رَدَّ, يَرْدُدُ en يَرُدُّ.",
+        "L'idghām ne se produit toutefois pas automatiquement : il n'a pas lieu lorsque cela ferait se suivre deux lettres consécutives sans voyelle - par exemple devant des terminaisons personnelles à consonne initiale (رَدَدْتُ reste séparé) ou à l'état de jazm (يَرْتَدِدْ reste séparé, car le sukūn en fin de mot rencontrerait sinon directement un second sukūn). À la forme VIII également, le تَ inséré fusionne avec certaines lettres initiales de la racine (ٱتَّخَذَ à partir de ٱوْتَخَذَ, le ت prenant en plus la position du و/ي d'origine)."
+      ],
+      "erkennung": [
+        "Deux lettres identiques (ou très proches) se suivent immédiatement et fusionnent en une seule, marquée d'un shadda.",
+        "La fusion n'a pas lieu si une autre lettre sans voyelle suivait alors - les deux lettres restent alors visiblement séparées.",
+        "Chez les verbes muḍāʿaf, le signe le plus fiable : un shadda sur la dernière lettre radicale à la plupart des personnes, mais pas toutes."
+      ],
+      "belege": [
+        {
+          "sure": 4,
+          "vers": 83,
+          "wort": 11,
+          "zeigt": "رَدُّوهُ (« ils l'auraient signalé ») — les deux lettres د de la racine ر-د-د ont fusionné en une lettre à shadda.",
+          "warum": "root:ردد, Segment : tense:perfect — le tracé du mot porte un shadda au lieu de deux د séparés."
+        },
+        {
+          "sure": 2,
+          "vers": 217,
+          "wort": 39,
+          "zeigt": "يَرْتَدِدْ (« il apostasie ») — même racine ر-د-د, mais à l'état de jazm, les deux lettres د restent exceptionnellement séparées, sans idghām.",
+          "warum": "root:ردد, Segment : mood:juss — contre-exemple sans shadda, car sinon deux sukūn se seraient suivis."
+        }
+      ],
+      "lernen": [
+        "Prononce à voix haute la paire contrastée يَرُدُّ (fusionné) / يَرْتَدِدْ (séparé, jazm) - la raison de la différence (éviter deux sukūn) se retient le mieux par l'exemple sonore.",
+        "Pour chaque verbe muḍāʿaf, pose d'abord la question de contrôle : « Une lettre sans voyelle suit-elle ensuite ? » - ce n'est que si la réponse est non que les deux lettres identiques fusionnent."
+      ],
+      "tabellen": [],
+      "siehe": [
+        "mudaaf",
+        "mithal"
+      ]
+    },
+    "qalb": {
+      "titel": "La mutation d'une lettre (Qalb)",
+      "ar": "القَلْب",
+      "umschrift": "al-qalb",
+      "erklaerung": [
+        "Qalb désigne la transformation d'une lettre en une autre, le plus souvent déclenchée par l'environnement vocalique. Chez les verbes ajwaf (radicale médiane faible), wāw et yāʾ se transforment à l'accompli en un long alif : خَوِفَ devient خَافَ, بَيَعَ devient بَاعَ. Au passif, c'est en revanche le wāw qui se transforme en yāʾ, avec une kasra sur la première radicale : خُوِفَ devient خِيفَ.",
+        "Chez les verbes nāqiṣ (radicale finale faible), la même règle de base s'applique à l'accompli, 3e personne : wāw et yāʾ deviennent alif (سَعَيَ → سَعَى, دَعَوَ → دَعَا). Si le wāw est précédé d'une kasra, il se transforme en revanche en yāʾ (دُعِوَ → دُعِيَ). Le qalb est ainsi le véritable mécanisme qui se cache derrière beaucoup des phénomènes décrits pour ajwaf et nāqiṣ."
+      ],
+      "erkennung": [
+        "Une lettre radicale wāw ou yāʾ apparaît dans le tracé réel du mot sous la forme d'un alif.",
+        "Concerne typiquement l'accompli, 3e personne, des verbes ajwaf et nāqiṣ.",
+        "Au passif, un wāw se transforme souvent en yāʾ plutôt qu'en alif."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 11,
+          "wort": 8,
+          "zeigt": "قَالُوٓا۟ (« ils dirent ») — la racine ق-و-ل montre le wāw médian comme un long alif (qalb dans l'ajwaf).",
+          "warum": "root:قول (radicale médiane و), Segment : tense:perfect — le tracé du mot contient ا au lieu de و."
+        },
+        {
+          "sure": 3,
+          "vers": 38,
+          "wort": 2,
+          "zeigt": "دَعَا (« il appela/invoqua ») — la racine د-ع-و montre le wāw final comme un alif (qalb dans le nāqiṣ).",
+          "warum": "root:دعو (dernière radicale و), Segment : tense:perfect — le tracé du mot se termine par ا au lieu de و."
+        }
+      ],
+      "lernen": [
+        "Compare côte à côte les deux exemples قَالَ (ajwaf, la lettre médiane devient alif) et دَعَا (nāqiṣ, la dernière lettre devient alif) - la même règle de transformation, deux positions différentes.",
+        "Retiens le moyen mnémotechnique : wāw/yāʾ + voisinage d'un a long → s'écrit presque toujours alif, c'est le qalb."
+      ],
+      "tabellen": [],
+      "siehe": [
+        "ajwaf",
+        "naqis",
+        "mithal"
+      ]
+    }
+  }
+}

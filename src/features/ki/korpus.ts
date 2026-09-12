@@ -22,6 +22,7 @@ import { Platform } from 'react-native';
 
 import { logError } from '@/lib/errorLog';
 
+import { korpusDatenVerzeichnis } from './korpusCache';
 import { baueIndex, type Index, type KorpusDoc } from './retrieval';
 import { KI_SPRACHEN, KORPUS_SPRACHE } from './sprachen';
 import korpusJson from '../../../public/rag/korpus-de.json';
@@ -118,7 +119,7 @@ export function dokumentNachId(id: string): KorpusDoc | undefined {
 // ---------- Laden der übrigen 13 Sprachen ----------
 
 function cacheVerzeichnis(): string {
-  return `${FileSystem.documentDirectory}ki-korpus/`;
+  return korpusDatenVerzeichnis();
 }
 
 function cachePfad(sprache: string): string {

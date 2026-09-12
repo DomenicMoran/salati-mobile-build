@@ -3,8 +3,10 @@
 // REIHE im Lernweg. Getestet wird vor allem die Rueckwaertskompatibilitaet:
 // ein Index OHNE das Feld muss sich exakt wie frueher verhalten (episode_no).
 import {
+  fetchPodcastIndex,
   groupEpisodesBySeries,
   hasMultipleSeries,
+  PODCAST_INDEX_URL,
   sortEpisodesByLearningPath,
   type PodcastEpisode,
 } from './data';
@@ -88,6 +90,60 @@ describe('sortEpisodesByLearningPath', () => {
     expect(sortiert.map((e) => e.episode_no)).toEqual([
       63, 64, 65, 66, 67, 68, 34, 35, 36, 37, 1, 2, 3, 16, 17, 48, 49, 57, 58,
     ]);
+  });
+
+  // `order` (ohne-Release-Feinpositionierung, Audit 2026-09-05, gleiches
+  // Muster wie bei den Videos): erlaubt, eine neue Folge zwischen zwei
+  // bestehende zu schieben, ohne episode_no umzunummerieren.
+  it('bevorzugt `order` gegenueber `episode_no` innerhalb derselben Reihe', () => {
+    const sortiert = sortEpisodesByLearningPath([
+      folge({ episode_no: 10, series: 'grammar', series_order: 1, order: 2 }),
+      folge({ episode_no: 5, series: 'grammar', series_order: 1, order: 1 }),
+    ]);
+    expect(sortiert.map((e) => e.episode_no)).toEqual([5, 10]);
+  });
+});
+
+describe('fetchPodcastIndex — Robustheit + Sichtbarkeit', () => {
+  const realFetch = globalThis.fetch;
+
+  function mockResponse(status: number, body?: unknown): void {
+    globalThis.fetch = jest.fn().mockResolvedValue({
+      ok: status >= 200 && status < 300,
+      status,
+      json: () => Promise.resolve(body),
+    }) as unknown as typeof fetch;
+  }
+
+  afterEach(() => {
+    globalThis.fetch = realFetch;
+    jest.restoreAllMocks();
+  });
+
+  it('fragt die dokumentierte Index-URL ab', async () => {
+    mockResponse(200, { episodes: [] });
+    await fetchPodcastIndex();
+    expect(globalThis.fetch).toHaveBeenCalledWith(PODCAST_INDEX_URL, expect.objectContaining({ cache: 'no-cache' }));
+  });
+
+  it('blendet `visible: false` aus, laesst alles andere sichtbar', async () => {
+    mockResponse(200, {
+      episodes: [
+        folge({ episode_no: 1 }),
+        { ...folge({ episode_no: 2 }), visible: false },
+      ],
+    });
+    const { episodes } = await fetchPodcastIndex();
+    expect(episodes.map((e) => e.episode_no)).toEqual([1]);
+  });
+
+  it('behandelt ein fehlendes oder falsch typisiertes episodes-Feld als leeren Index, statt abzustuerzen', async () => {
+    for (const body of [{}, { episodes: null }, { episodes: 'nope' }, []]) {
+      mockResponse(200, body);
+      await expect(fetchPodcastIndex()).resolves.toEqual(
+        expect.objectContaining({ episodes: [] }),
+      );
+    }
   });
 });
 

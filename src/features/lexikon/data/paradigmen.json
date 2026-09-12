@@ -1,0 +1,646 @@
+{
+  "schema": 1,
+  "quellenhinweis": "Die arabischen Formen wurden von gerenderten Seitenbildern des Quelldokuments abgelesen. Sie wurden durch eine unabhängige, blinde Zweitablesung (183 verglichene Zellen) sowie durch Abgleich mit dem Koran-Korpus geprüft.",
+  "tables": [
+    {
+      "id": "nomen-muslim",
+      "kind": "noun",
+      "titleDe": "Das Nomen مُسْلِم — männlich & weiblich",
+      "termAr": "مُسْلِم",
+      "columns": [
+        { "id": "m", "labelDe": "männlich", "labelAr": "مُذَكَّر" },
+        { "id": "f", "labelDe": "weiblich", "labelAr": "مُؤَنَّث" }
+      ],
+      "rows": [
+        { "id": "sg-raf", "labelDe": "Einzahl · Rafʿ" },
+        { "id": "sg-nasb", "labelDe": "Einzahl · Nasb" },
+        { "id": "sg-jarr", "labelDe": "Einzahl · Dscharr" },
+        { "id": "du-raf", "labelDe": "Zweizahl · Rafʿ" },
+        { "id": "du-nasb-jarr", "labelDe": "Zweizahl · Nasb/Dscharr" },
+        { "id": "pl-raf", "labelDe": "Mehrzahl · Rafʿ" },
+        { "id": "pl-nasb-jarr", "labelDe": "Mehrzahl · Nasb/Dscharr" }
+      ],
+      "cells": {
+        "sg-raf": {
+          "m": { "ar": "مُسْلِمٌ", "de": "ein Muslim (Nominativ)" },
+          "f": { "ar": "مُسْلِمَةٌ", "de": "eine Muslimin (Nominativ)" }
+        },
+        "sg-nasb": {
+          "m": { "ar": "مُسْلِمًا", "de": "einen Muslim (Akkusativ)" },
+          "f": { "ar": "مُسْلِمَةً", "de": "eine Muslimin (Akkusativ)" }
+        },
+        "sg-jarr": {
+          "m": { "ar": "مُسْلِمٍ", "de": "eines Muslims (Genitiv)" },
+          "f": { "ar": "مُسْلِمَةٍ", "de": "einer Muslimin (Genitiv)" }
+        },
+        "du-raf": {
+          "m": { "ar": "مُسْلِمَانِ", "de": "zwei Muslime (Nominativ)" },
+          "f": { "ar": "مُسْلِمَتَانِ", "de": "zwei Musliminnen (Nominativ)" }
+        },
+        "du-nasb-jarr": {
+          "m": { "ar": "مُسْلِمَيْنِ", "de": "zwei Muslime (Akkusativ/Genitiv)" },
+          "f": { "ar": "مُسْلِمَتَيْنِ", "de": "zwei Musliminnen (Akkusativ/Genitiv)" }
+        },
+        "pl-raf": {
+          "m": { "ar": "مُسْلِمُونَ", "de": "Muslime (Nominativ)" },
+          "f": { "ar": "مُسْلِمَاتٌ", "de": "Musliminnen (Nominativ)" }
+        },
+        "pl-nasb-jarr": {
+          "m": { "ar": "مُسْلِمِينَ", "de": "Muslime (Akkusativ/Genitiv)" },
+          "f": { "ar": "مُسْلِمَاتٍ", "de": "Musliminnen (Akkusativ/Genitiv)" }
+        }
+      },
+      "notes": [
+        "Zeichengenau aus dem Textlayer von tabellen-sprache.pdf S. 4 extrahiert und gegen das gerenderte Seitenbild (6-fach-Zoom) geprüft."
+      ],
+      "source": { "file": "tabellen-sprache.pdf", "page": 4 }
+    },
+    {
+      "id": "pronomen-frei",
+      "kind": "pronoun",
+      "titleDe": "Die freien Pronomen — الضَّمَائِر المُنْفَصِلَة",
+      "termAr": "الضَّمَائِر المُنْفَصِلَة",
+      "columns": [{ "id": "form", "labelDe": "Pronomen" }],
+      "rows": [
+        { "id": "1sg", "labelDe": "1. Person Sg." },
+        { "id": "1pl", "labelDe": "1. Person Pl." },
+        { "id": "2msg", "labelDe": "2. Person m. Sg." },
+        { "id": "2fsg", "labelDe": "2. Person f. Sg." },
+        { "id": "2du", "labelDe": "2. Person Dual" },
+        { "id": "2mpl", "labelDe": "2. Person m. Pl." },
+        { "id": "2fpl", "labelDe": "2. Person f. Pl." },
+        { "id": "3msg", "labelDe": "3. Person m. Sg." },
+        { "id": "3fsg", "labelDe": "3. Person f. Sg." },
+        { "id": "3du", "labelDe": "3. Person Dual" },
+        { "id": "3mpl", "labelDe": "3. Person m. Pl." },
+        { "id": "3fpl", "labelDe": "3. Person f. Pl." }
+      ],
+      "cells": {
+        "1sg": { "form": { "ar": "أَنَا", "de": "ich" } },
+        "1pl": { "form": { "ar": "نَحْنُ", "de": "wir" } },
+        "2msg": { "form": { "ar": "أَنْتَ", "de": "du (m)" } },
+        "2fsg": { "form": { "ar": "أَنْتِ", "de": "du (w)" } },
+        "2du": { "form": { "ar": "أَنْتُمَا", "de": "ihr beide" } },
+        "2mpl": { "form": { "ar": "أَنْتُمْ", "de": "ihr (m)" } },
+        "2fpl": { "form": { "ar": "أَنْتُنَّ", "de": "ihr (w)" } },
+        "3msg": { "form": { "ar": "هُوَ", "de": "er" } },
+        "3fsg": { "form": { "ar": "هِيَ", "de": "sie" } },
+        "3du": { "form": { "ar": "هُمَا", "de": "sie beide" } },
+        "3mpl": { "form": { "ar": "هُمْ", "de": "sie (m)" } },
+        "3fpl": { "form": { "ar": "هُنَّ", "de": "sie (w)" } }
+      },
+      "notes": [
+        "1. Person hat keinen Dual (nur Sg./Pl.) — im Original ausgelassen, keine Lücke im Extrakt."
+      ],
+      "source": { "file": "tabellen-sprache.pdf", "page": 4 }
+    },
+    {
+      "id": "pronomen-gebunden",
+      "kind": "pronoun",
+      "titleDe": "Die gebundenen Pronomen — الضَّمَائِر المُتَّصِلَة",
+      "termAr": "الضَّمَائِر المُتَّصِلَة",
+      "columns": [{ "id": "form", "labelDe": "am Wort كِتَاب", "labelAr": "كِتَاب" }],
+      "rows": [
+        { "id": "mein", "labelDe": "mein" },
+        { "id": "unser", "labelDe": "unser" },
+        { "id": "dein-m", "labelDe": "dein (m)" },
+        { "id": "dein-w", "labelDe": "dein (w)" },
+        { "id": "euer-beide", "labelDe": "euer beider" },
+        { "id": "euer-m", "labelDe": "euer (m)" },
+        { "id": "euer-w", "labelDe": "euer (w)" },
+        { "id": "sein", "labelDe": "sein" },
+        { "id": "ihr-sg", "labelDe": "ihr" },
+        { "id": "ihrer-beide", "labelDe": "ihrer beider" },
+        { "id": "ihr-m", "labelDe": "ihr (m)" },
+        { "id": "ihr-w", "labelDe": "ihr (w)" }
+      ],
+      "cells": {
+        "mein": { "form": { "ar": "كِتَابِي", "de": "mein Buch" } },
+        "unser": { "form": { "ar": "كِتَابُنَا", "de": "unser Buch" } },
+        "dein-m": { "form": { "ar": "كِتَابُكَ", "de": "dein Buch (m)" } },
+        "dein-w": { "form": { "ar": "كِتَابُكِ", "de": "dein Buch (w)" } },
+        "euer-beide": { "form": { "ar": "كِتَابُكُمَا", "de": "euer beider Buch" } },
+        "euer-m": { "form": { "ar": "كِتَابُكُمْ", "de": "euer Buch (m)" } },
+        "euer-w": { "form": { "ar": "كِتَابُكُنَّ", "de": "euer Buch (w)" } },
+        "sein": { "form": { "ar": "كِتَابُهُ", "de": "sein Buch" } },
+        "ihr-sg": { "form": { "ar": "كِتَابُهَا", "de": "ihr Buch" } },
+        "ihrer-beide": { "form": { "ar": "كِتَابُهُمَا", "de": "ihrer beider Buch" } },
+        "ihr-m": { "form": { "ar": "كِتَابُهُمْ", "de": "ihr Buch (m)" } },
+        "ihr-w": { "form": { "ar": "كِتَابُهُنَّ", "de": "ihr Buch (w)" } }
+      },
+      "source": { "file": "tabellen-sprache.pdf", "page": 5 }
+    },
+    {
+      "id": "hinweiswoerter",
+      "kind": "demonstrative",
+      "titleDe": "Die Hinweiswörter — أَسْمَاء الِإشَارَة",
+      "termAr": "أَسْمَاء الِإشَارَة",
+      "columns": [
+        { "id": "nah", "labelDe": "nah (dieser)" },
+        { "id": "fern", "labelDe": "fern (jener)" }
+      ],
+      "rows": [
+        { "id": "m-sg", "labelDe": "männlich Sg." },
+        { "id": "f-sg", "labelDe": "weiblich Sg." },
+        { "id": "m-du", "labelDe": "männlich Dual" },
+        { "id": "f-du", "labelDe": "weiblich Dual" },
+        { "id": "pl", "labelDe": "Mehrzahl (m+w)" }
+      ],
+      "cells": {
+        "m-sg": { "nah": { "ar": "هَـٰذَا", "de": "dieser" }, "fern": { "ar": "ذَٰلِكَ", "de": "jener" } },
+        "f-sg": { "nah": { "ar": "هَـٰذِهِ", "de": "diese" }, "fern": { "ar": "تِلْكَ", "de": "jene" } },
+        "m-du": { "nah": { "ar": "هَـٰذَانِ", "de": "diese beiden (m)" }, "fern": { "ar": "ذَانِكَ", "de": "jene beiden (m)" } },
+        "f-du": { "nah": { "ar": "هَتَانِ", "de": "diese beiden (w)" }, "fern": { "ar": "تَانِكَ", "de": "jene beiden (w)" } },
+        "pl": { "nah": { "ar": "هَؤُلَاءِ", "de": "diese (Mehrzahl)" }, "fern": { "ar": "أُولَئِكَ", "de": "jene (Mehrzahl)" } }
+      },
+      "notes": [
+        "Dagger-Alif (ٰ, U+0670) in هَـٰذَا/هَـٰذِهِ/هَـٰذَانِ gegen das gerenderte Seitenbild bestätigt. Bei den Mehrzahl-Formen هَؤُلَاءِ/أُولَئِكَ trägt das Seitenbild (S. 6, ≥20-facher Zoom) dagegen keinen Dagger-Alif — dort nur die einfache Fatha; entsprechend ohne Tatweel/Dagger-Alif erfasst."
+      ],
+      "source": { "file": "tabellen-sprache.pdf", "page": 6 }
+    },
+    {
+      "id": "verb-madi-nasara",
+      "kind": "verb",
+      "titleDe": "Das Verb in der Vergangenheit — نَصَرَ (er half)",
+      "termAr": "نَصَرَ",
+      "columns": [{ "id": "form", "labelDe": "Form" }],
+      "rows": [
+        { "id": "3m-sg", "labelDe": "3. m Sg." },
+        { "id": "3m-du", "labelDe": "3. m Dual" },
+        { "id": "3m-pl", "labelDe": "3. m Pl." },
+        { "id": "3f-sg", "labelDe": "3. w Sg." },
+        { "id": "3f-du", "labelDe": "3. w Dual" },
+        { "id": "3f-pl", "labelDe": "3. w Pl." },
+        { "id": "2m-sg", "labelDe": "2. m Sg." },
+        { "id": "2m-pl", "labelDe": "2. m Pl." },
+        { "id": "2f-sg", "labelDe": "2. w Sg." },
+        { "id": "2f-pl", "labelDe": "2. w Pl." },
+        { "id": "1-sg", "labelDe": "1. Sg." },
+        { "id": "1-pl", "labelDe": "1. Pl." }
+      ],
+      "cells": {
+        "3m-sg": { "form": { "ar": "نَصَرَ", "de": "er half" } },
+        "3m-du": { "form": { "ar": "نَصَرَا", "de": "die beiden halfen" } },
+        "3m-pl": { "form": { "ar": "نَصَرُوا", "de": "sie (m) halfen" } },
+        "3f-sg": { "form": { "ar": "نَصَرَتْ", "de": "sie half" } },
+        "3f-du": { "form": { "ar": "نَصَرَتَا", "de": "die beiden (w) halfen" } },
+        "3f-pl": { "form": { "ar": "نَصَرْنَ", "de": "sie (w) halfen" } },
+        "2m-sg": { "form": { "ar": "نَصَرْتَ", "de": "du (m) halfst" } },
+        "2m-pl": { "form": { "ar": "نَصَرْتُمْ", "de": "ihr (m) halft" } },
+        "2f-sg": { "form": { "ar": "نَصَرْتِ", "de": "du (w) halfst" } },
+        "2f-pl": { "form": { "ar": "نَصَرْتُنَّ", "de": "ihr (w) halft" } },
+        "1-sg": { "form": { "ar": "نَصَرْتُ", "de": "ich half" } },
+        "1-pl": { "form": { "ar": "نَصَرْنَا", "de": "wir halfen" } }
+      },
+      "notes": [
+        "Zeilenreihenfolge wie im Original: 3.m (Sg./Dual/Pl.), 3.w (Sg./Dual/Pl.), 2.m (Sg./Pl.), 2.w (Sg./Pl.), 1. (Sg./Pl.) — keine alphabetische/grammatische Umsortierung."
+      ],
+      "source": { "file": "tabellen-sprache.pdf", "page": 7 }
+    },
+    {
+      "id": "verb-mudari-nasara",
+      "kind": "verb",
+      "titleDe": "Das Verb in der Gegenwart — يَنْصُرُ (er hilft)",
+      "termAr": "يَنْصُرُ",
+      "columns": [{ "id": "form", "labelDe": "Form" }],
+      "rows": [
+        { "id": "3m-sg", "labelDe": "3. m Sg." },
+        { "id": "3m-pl", "labelDe": "3. m Pl." },
+        { "id": "3f-sg", "labelDe": "3. w Sg." },
+        { "id": "3f-pl", "labelDe": "3. w Pl." },
+        { "id": "2m-sg", "labelDe": "2. m Sg." },
+        { "id": "2m-pl", "labelDe": "2. m Pl." },
+        { "id": "2f-sg", "labelDe": "2. w Sg." },
+        { "id": "2f-pl", "labelDe": "2. w Pl." },
+        { "id": "1-sg", "labelDe": "1. Sg." },
+        { "id": "1-pl", "labelDe": "1. Pl." }
+      ],
+      "cells": {
+        "3m-sg": { "form": { "ar": "يَنْصُرُ", "de": "er hilft" } },
+        "3m-pl": { "form": { "ar": "يَنْصُرُونَ", "de": "sie (m) helfen" } },
+        "3f-sg": { "form": { "ar": "تَنْصُرُ", "de": "sie hilft" } },
+        "3f-pl": { "form": { "ar": "يَنْصُرْنَ", "de": "sie (w) helfen" } },
+        "2m-sg": { "form": { "ar": "تَنْصُرُ", "de": "du (m) hilfst" } },
+        "2m-pl": { "form": { "ar": "تَنْصُرُونَ", "de": "ihr (m) helft" } },
+        "2f-sg": { "form": { "ar": "تَنْصُرِينَ", "de": "du (w) hilfst" } },
+        "2f-pl": { "form": { "ar": "تَنْصُرْنَ", "de": "ihr (w) helft" } },
+        "1-sg": { "form": { "ar": "أَنْصُرُ", "de": "ich helfe" } },
+        "1-pl": { "form": { "ar": "نَنْصُرُ", "de": "wir helfen" } }
+      },
+      "notes": [
+        "Das Original lässt bei diesem Verb (anders als beim Madi-Paradigma auf S. 7) die Dual-Formen komplett aus der Tabelle weg — kein Extraktionsfehler, sondern Auswahl der Quelle."
+      ],
+      "source": { "file": "tabellen-sprache.pdf", "page": 8 }
+    },
+    {
+      "id": "praepositionen",
+      "kind": "particle",
+      "titleDe": "Die Präpositionen — حُرُوف الجَرّ",
+      "termAr": "حُرُوف الجَرّ",
+      "columns": [{ "id": "form", "labelDe": "Präposition" }],
+      "rows": [
+        { "id": "min", "labelDe": "von / aus" },
+        { "id": "ila", "labelDe": "zu / nach" },
+        { "id": "an", "labelDe": "über / von" },
+        { "id": "ala", "labelDe": "auf" },
+        { "id": "fi", "labelDe": "in" },
+        { "id": "bi", "labelDe": "mit / durch" },
+        { "id": "li", "labelDe": "für" },
+        { "id": "ka", "labelDe": "wie" }
+      ],
+      "cells": {
+        "min": { "form": { "ar": "مِنْ", "de": "von / aus" } },
+        "ila": { "form": { "ar": "إِلَى", "de": "zu / nach" } },
+        "an": { "form": { "ar": "عَنْ", "de": "über / von" } },
+        "ala": { "form": { "ar": "عَلَى", "de": "auf" } },
+        "fi": { "form": { "ar": "فِي", "de": "in" } },
+        "bi": { "form": { "ar": "بِ", "de": "mit / durch" } },
+        "li": { "form": { "ar": "لِ", "de": "für" } },
+        "ka": { "form": { "ar": "كَ", "de": "wie" } }
+      },
+      "source": { "file": "tabellen-sprache.pdf", "page": 8 }
+    },
+    {
+      "id": "zahlen-1-10",
+      "kind": "number",
+      "titleDe": "Die Zahlen 1–10 — الأَعْدَاد",
+      "termAr": "الأَعْدَاد",
+      "columns": [{ "id": "form", "labelDe": "Zahl" }],
+      "rows": [
+        { "id": "n1", "labelDe": "1" },
+        { "id": "n2", "labelDe": "2" },
+        { "id": "n3", "labelDe": "3" },
+        { "id": "n4", "labelDe": "4" },
+        { "id": "n5", "labelDe": "5" },
+        { "id": "n6", "labelDe": "6" },
+        { "id": "n7", "labelDe": "7" },
+        { "id": "n8", "labelDe": "8" },
+        { "id": "n9", "labelDe": "9" },
+        { "id": "n10", "labelDe": "10" }
+      ],
+      "cells": {
+        "n1": { "form": { "ar": "وَاحِد", "de": "eins" } },
+        "n2": { "form": { "ar": "اِثْنَانِ", "de": "zwei" } },
+        "n3": { "form": { "ar": "ثَلَاثَة", "de": "drei" } },
+        "n4": { "form": { "ar": "أَرْبَعَة", "de": "vier" } },
+        "n5": { "form": { "ar": "خَمْسَة", "de": "fünf" } },
+        "n6": { "form": { "ar": "سِتَّة", "de": "sechs" } },
+        "n7": { "form": { "ar": "سَبْعَة", "de": "sieben" } },
+        "n8": { "form": { "ar": "ثَمَانِيَة", "de": "acht" } },
+        "n9": { "form": { "ar": "تِسْعَة", "de": "neun" } },
+        "n10": { "form": { "ar": "عَشَرَة", "de": "zehn" } }
+      },
+      "source": { "file": "tabellen-sprache.pdf", "page": 9 }
+    },
+    {
+      "id": "fragewoerter",
+      "kind": "particle",
+      "titleDe": "Die Fragewörter — أَدَوَات الِاسْتِفْهَام",
+      "termAr": "أَدَوَات الِاسْتِفْهَام",
+      "columns": [{ "id": "form", "labelDe": "Fragewort" }],
+      "rows": [
+        { "id": "ma", "labelDe": "was" },
+        { "id": "man", "labelDe": "wer" },
+        { "id": "ayna", "labelDe": "wo" },
+        { "id": "mata", "labelDe": "wann" },
+        { "id": "kayfa", "labelDe": "wie" },
+        { "id": "limadha", "labelDe": "warum" },
+        { "id": "kam", "labelDe": "wie viel" },
+        { "id": "ayy", "labelDe": "welche(r)" }
+      ],
+      "cells": {
+        "ma": { "form": { "ar": "مَا", "de": "was" } },
+        "man": { "form": { "ar": "مَنْ", "de": "wer" } },
+        "ayna": { "form": { "ar": "أَيْنَ", "de": "wo" } },
+        "mata": { "form": { "ar": "مَتَى", "de": "wann" } },
+        "kayfa": { "form": { "ar": "كَيْفَ", "de": "wie" } },
+        "limadha": { "form": { "ar": "لِمَاذَا", "de": "warum" } },
+        "kam": { "form": { "ar": "كَمْ", "de": "wie viel" } },
+        "ayy": { "form": { "ar": "أَيٌّ", "de": "welche(r)" } }
+      },
+      "source": { "file": "tabellen-sprache.pdf", "page": 10 }
+    },
+    {
+      "id": "amr-nasara",
+      "kind": "verb",
+      "titleDe": "Der Befehl — الأَمْر (aus نَصَرَ: hilf!)",
+      "termAr": "الأَمْر",
+      "columns": [{ "id": "form", "labelDe": "Form" }],
+      "rows": [
+        { "id": "du-m", "labelDe": "du (m)" },
+        { "id": "du-w", "labelDe": "du (w)" },
+        { "id": "ihr-beide", "labelDe": "ihr beide" },
+        { "id": "ihr-m", "labelDe": "ihr (m)" },
+        { "id": "ihr-w", "labelDe": "ihr (w)" }
+      ],
+      "cells": {
+        "du-m": { "form": { "ar": "اُنْصُرْ", "de": "hilf! (m)" } },
+        "du-w": { "form": { "ar": "اُنْصُرِي", "de": "hilf! (w)" } },
+        "ihr-beide": { "form": { "ar": "اُنْصُرَا", "de": "helft! (beide)" } },
+        "ihr-m": { "form": { "ar": "اُنْصُرُوا", "de": "helft! (m)" } },
+        "ihr-w": { "form": { "ar": "اُنْصُرْنَ", "de": "helft! (w)" } }
+      },
+      "notes": [
+        "Nur 2. Person (Imperativ kennt keine 1./3. Person) — keine Lücke, sondern grammatisch vollständig."
+      ],
+      "source": { "file": "tabellen-sprache.pdf", "page": 11 }
+    },
+    {
+      "id": "relativpronomen",
+      "kind": "pronoun",
+      "titleDe": "Die Relativpronomen — الأَسْمَاء المَوْصُولَة",
+      "termAr": "الأَسْمَاء المَوْصُولَة",
+      "columns": [{ "id": "form", "labelDe": "Pronomen" }],
+      "rows": [
+        { "id": "m-sg", "labelDe": "männlich Sg." },
+        { "id": "f-sg", "labelDe": "weiblich Sg." },
+        { "id": "m-du", "labelDe": "männlich Dual" },
+        { "id": "f-du", "labelDe": "weiblich Dual" },
+        { "id": "m-pl", "labelDe": "männlich Pl." },
+        { "id": "f-pl", "labelDe": "weiblich Pl." }
+      ],
+      "cells": {
+        "m-sg": { "form": { "ar": "الَّذِي", "de": "der, welcher" } },
+        "f-sg": { "form": { "ar": "الَّتِي", "de": "die, welche" } },
+        "m-du": { "form": { "ar": "اللَّذَانِ", "de": "die beiden (m)" } },
+        "f-du": { "form": { "ar": "اللَّتَانِ", "de": "die beiden (w)" } },
+        "m-pl": { "form": { "ar": "الَّذِينَ", "de": "die (m), welche" } },
+        "f-pl": { "form": { "ar": "اللَّاتِي", "de": "die (w), welche" } }
+      },
+      "source": { "file": "tabellen-sprache.pdf", "page": 11 }
+    },
+    {
+      "id": "farben",
+      "kind": "noun",
+      "titleDe": "Die Farben — الأَلْوَان",
+      "termAr": "الأَلْوَان",
+      "columns": [{ "id": "form", "labelDe": "Farbe" }],
+      "rows": [
+        { "id": "rot", "labelDe": "rot" },
+        { "id": "gruen", "labelDe": "grün" },
+        { "id": "blau", "labelDe": "blau" },
+        { "id": "gelb", "labelDe": "gelb" },
+        { "id": "weiss", "labelDe": "weiß" },
+        { "id": "schwarz", "labelDe": "schwarz" }
+      ],
+      "cells": {
+        "rot": { "form": { "ar": "أَحْمَر", "de": "rot" } },
+        "gruen": { "form": { "ar": "أَخْضَر", "de": "grün" } },
+        "blau": { "form": { "ar": "أَزْرَق", "de": "blau" } },
+        "gelb": { "form": { "ar": "أَصْفَر", "de": "gelb" } },
+        "weiss": { "form": { "ar": "أَبْيَض", "de": "weiß" } },
+        "schwarz": { "form": { "ar": "أَسْوَد", "de": "schwarz" } }
+      },
+      "source": { "file": "tabellen-sprache.pdf", "page": 12 }
+    },
+    {
+      "id": "idafa-besitz",
+      "kind": "noun",
+      "titleDe": "Die Besitzverbindung — الِإضَافَة",
+      "termAr": "الِإضَافَة",
+      "columns": [{ "id": "form", "labelDe": "Beispiel" }],
+      "rows": [
+        { "id": "haus-allahs", "labelDe": "das Haus Allahs" },
+        { "id": "buch-schuelers", "labelDe": "das Buch des Schülers" },
+        { "id": "tuer-moschee", "labelDe": "die Tür der Moschee" },
+        { "id": "gesandter-allahs", "labelDe": "der Gesandte Allahs" },
+        { "id": "herr-welten", "labelDe": "der Herr der Welten" }
+      ],
+      "cells": {
+        "haus-allahs": { "form": { "ar": "بَيْتُ اللَّهِ", "de": "das Haus Allahs" } },
+        "buch-schuelers": { "form": { "ar": "كِتَابُ الطَّالِبِ", "de": "das Buch des Schülers" } },
+        "tuer-moschee": { "form": { "ar": "بَابُ المَسْجِدِ", "de": "die Tür der Moschee" } },
+        "gesandter-allahs": { "form": { "ar": "رَسُولُ اللَّهِ", "de": "der Gesandte Allahs" } },
+        "herr-welten": { "form": { "ar": "رَبُّ العَالَمِينَ", "de": "der Herr der Welten" } }
+      },
+      "notes": [
+        "Zweiwort-Phrasen: Leerzeichen zwischen den Wörtern anhand des gerenderten Seitenbilds gesetzt (sichtbare Wortlücke), nicht aus dem rohen Textlayer übernommen, der bei diesem Font keine verlässlichen Wortgrenzen liefert."
+      ],
+      "source": { "file": "tabellen-sprache.pdf", "page": 12 }
+    },
+    {
+      "id": "wortschatz-himmel-erde",
+      "kind": "noun",
+      "titleDe": "Wortschatz: Himmel & Erde",
+      "columns": [{ "id": "form", "labelDe": "Wort" }],
+      "rows": [
+        { "id": "himmel", "labelDe": "der Himmel" },
+        { "id": "erde", "labelDe": "die Erde" },
+        { "id": "sonne", "labelDe": "die Sonne" },
+        { "id": "mond", "labelDe": "der Mond" },
+        { "id": "sterne", "labelDe": "die Sterne" },
+        { "id": "nacht", "labelDe": "die Nacht" },
+        { "id": "tag", "labelDe": "der Tag" },
+        { "id": "wasser", "labelDe": "das Wasser" },
+        { "id": "berge", "labelDe": "die Berge" }
+      ],
+      "cells": {
+        "himmel": { "form": { "ar": "السَّمَاء", "de": "der Himmel" } },
+        "erde": { "form": { "ar": "الأَرْض", "de": "die Erde" } },
+        "sonne": { "form": { "ar": "الشَّمْس", "de": "die Sonne" } },
+        "mond": { "form": { "ar": "القَمَر", "de": "der Mond" } },
+        "sterne": { "form": { "ar": "النُّجُوم", "de": "die Sterne" } },
+        "nacht": { "form": { "ar": "اللَّيْل", "de": "die Nacht" } },
+        "tag": { "form": { "ar": "النَّهَار", "de": "der Tag" } },
+        "wasser": { "form": { "ar": "المَاء", "de": "das Wasser" } },
+        "berge": { "form": { "ar": "الجِبَال", "de": "die Berge" } }
+      },
+      "source": { "file": "tabellen-sprache.pdf", "page": 13 }
+    },
+    {
+      "id": "wortschatz-mensch-herz",
+      "kind": "noun",
+      "titleDe": "Wortschatz: Mensch & Herz",
+      "columns": [{ "id": "form", "labelDe": "Wort" }],
+      "rows": [
+        { "id": "mensch", "labelDe": "der Mensch" },
+        { "id": "herz", "labelDe": "das Herz" },
+        { "id": "seele", "labelDe": "die Seele" },
+        { "id": "geist", "labelDe": "der Geist" },
+        { "id": "auge", "labelDe": "das Auge" },
+        { "id": "hand", "labelDe": "die Hand" },
+        { "id": "gesicht", "labelDe": "das Gesicht" },
+        { "id": "zunge", "labelDe": "die Zunge" }
+      ],
+      "cells": {
+        "mensch": { "form": { "ar": "الإِنْسَان", "de": "der Mensch" } },
+        "herz": { "form": { "ar": "القَلْب", "de": "das Herz" } },
+        "seele": { "form": { "ar": "النَّفْس", "de": "die Seele" } },
+        "geist": { "form": { "ar": "الرُّوح", "de": "der Geist" } },
+        "auge": { "form": { "ar": "العَيْن", "de": "das Auge" } },
+        "hand": { "form": { "ar": "اليَد", "de": "die Hand" } },
+        "gesicht": { "form": { "ar": "الوَجْه", "de": "das Gesicht" } },
+        "zunge": { "form": { "ar": "اللِّسَان", "de": "die Zunge" } }
+      },
+      "source": { "file": "tabellen-sprache.pdf", "page": 13 }
+    },
+    {
+      "id": "wortschatz-glaube-tat",
+      "kind": "noun",
+      "titleDe": "Wortschatz: Glaube & Tat",
+      "columns": [{ "id": "form", "labelDe": "Wort" }],
+      "rows": [
+        { "id": "glaube", "labelDe": "der Glaube" },
+        { "id": "hingabe", "labelDe": "die Hingabe" },
+        { "id": "tat", "labelDe": "die Tat" },
+        { "id": "gebet", "labelDe": "das Gebet" },
+        { "id": "geduld", "labelDe": "die Geduld" },
+        { "id": "gottesfurcht", "labelDe": "die Gottesfurcht" },
+        { "id": "dankbarkeit", "labelDe": "die Dankbarkeit" },
+        { "id": "reue", "labelDe": "die Reue" }
+      ],
+      "cells": {
+        "glaube": { "form": { "ar": "الإِيمَان", "de": "der Glaube" } },
+        "hingabe": { "form": { "ar": "الإِسْلَام", "de": "die Hingabe" } },
+        "tat": { "form": { "ar": "العَمَل", "de": "die Tat" } },
+        "gebet": { "form": { "ar": "الصَّلَاة", "de": "das Gebet" } },
+        "geduld": { "form": { "ar": "الصَّبْر", "de": "die Geduld" } },
+        "gottesfurcht": { "form": { "ar": "التَّقْوَى", "de": "die Gottesfurcht" } },
+        "dankbarkeit": { "form": { "ar": "الشُّكْر", "de": "die Dankbarkeit" } },
+        "reue": { "form": { "ar": "التَّوْبَة", "de": "die Reue" } }
+      },
+      "source": { "file": "tabellen-sprache.pdf", "page": 14 }
+    },
+    {
+      "id": "wortschatz-jenseits",
+      "kind": "noun",
+      "titleDe": "Wortschatz: Das Jenseits",
+      "columns": [{ "id": "form", "labelDe": "Wort" }],
+      "rows": [
+        { "id": "paradies", "labelDe": "das Paradies" },
+        { "id": "feuer", "labelDe": "das Feuer" },
+        { "id": "juengster-tag", "labelDe": "der Jüngste Tag" },
+        { "id": "waage", "labelDe": "die Waage" },
+        { "id": "abrechnung", "labelDe": "die Abrechnung" },
+        { "id": "vergeltung", "labelDe": "die Vergeltung" },
+        { "id": "ewigkeit", "labelDe": "die Ewigkeit" }
+      ],
+      "cells": {
+        "paradies": { "form": { "ar": "الجَنَّة", "de": "das Paradies" } },
+        "feuer": { "form": { "ar": "النَّار", "de": "das Feuer" } },
+        "juengster-tag": { "form": { "ar": "اليَوْم الآخِر", "de": "der Jüngste Tag" } },
+        "waage": { "form": { "ar": "المِيزَان", "de": "die Waage" } },
+        "abrechnung": { "form": { "ar": "الحِسَاب", "de": "die Abrechnung" } },
+        "vergeltung": { "form": { "ar": "الجَزَاء", "de": "die Vergeltung" } },
+        "ewigkeit": { "form": { "ar": "الخُلُود", "de": "die Ewigkeit" } }
+      },
+      "source": { "file": "tabellen-sprache.pdf", "page": 15 }
+    },
+    {
+      "id": "wortschatz-zeit-schoepfung",
+      "kind": "noun",
+      "titleDe": "Wortschatz: Zeit & Schöpfung",
+      "columns": [{ "id": "form", "labelDe": "Wort" }],
+      "rows": [
+        { "id": "tag", "labelDe": "der Tag" },
+        { "id": "stunde", "labelDe": "die Stunde" },
+        { "id": "schoepfung", "labelDe": "die Schöpfung" },
+        { "id": "befehl", "labelDe": "der Befehl" },
+        { "id": "wahrheit", "labelDe": "die Wahrheit" },
+        { "id": "licht", "labelDe": "das Licht" },
+        { "id": "finsternisse", "labelDe": "die Finsternisse" }
+      ],
+      "cells": {
+        "tag": { "form": { "ar": "اليَوْم", "de": "der Tag" } },
+        "stunde": { "form": { "ar": "السَّاعَة", "de": "die Stunde" } },
+        "schoepfung": { "form": { "ar": "الخَلْق", "de": "die Schöpfung" } },
+        "befehl": { "form": { "ar": "الأَمْر", "de": "der Befehl" } },
+        "wahrheit": { "form": { "ar": "الحَقّ", "de": "die Wahrheit" } },
+        "licht": { "form": { "ar": "النُّور", "de": "das Licht" } },
+        "finsternisse": { "form": { "ar": "الظُّلُمَات", "de": "die Finsternisse" } }
+      },
+      "source": { "file": "tabellen-sprache.pdf", "page": 15 }
+    },
+    {
+      "id": "wortschatz-allah-namen",
+      "kind": "noun",
+      "titleDe": "Wortschatz: Allah & Seine Namen",
+      "columns": [{ "id": "form", "labelDe": "Wort" }],
+      "rows": [
+        { "id": "allah", "labelDe": "Allah" },
+        { "id": "der-allerbarmer", "labelDe": "der Allerbarmer" },
+        { "id": "der-barmherzige", "labelDe": "der Barmherzige" },
+        { "id": "der-koenig", "labelDe": "der König" },
+        { "id": "der-heilige", "labelDe": "der Heilige" },
+        { "id": "der-friede", "labelDe": "der Friede" },
+        { "id": "der-allmaechtige", "labelDe": "der Allmächtige" },
+        { "id": "der-vergebende", "labelDe": "der Vergebende" },
+        { "id": "der-allweise", "labelDe": "der Allweise" },
+        { "id": "der-allwissende", "labelDe": "der Allwissende" }
+      ],
+      "cells": {
+        "allah": { "form": { "ar": "اللَّٰه", "de": "Allah" } },
+        "der-allerbarmer": { "form": { "ar": "الرَّحْمَٰن", "de": "der Allerbarmer" } },
+        "der-barmherzige": { "form": { "ar": "الرَّحِيم", "de": "der Barmherzige" } },
+        "der-koenig": { "form": { "ar": "المَلِك", "de": "der König" } },
+        "der-heilige": { "form": { "ar": "القُدُّوس", "de": "der Heilige" } },
+        "der-friede": { "form": { "ar": "السَّلَام", "de": "der Friede" } },
+        "der-allmaechtige": { "form": { "ar": "العَزِيز", "de": "der Allmächtige" } },
+        "der-vergebende": { "form": { "ar": "الغَفُور", "de": "der Vergebende" } },
+        "der-allweise": { "form": { "ar": "الحَكِيم", "de": "der Allweise" } },
+        "der-allwissende": { "form": { "ar": "العَلِيم", "de": "der Allwissende" } }
+      },
+      "notes": [
+        "اللَّٰه und الرَّحْمَٰن enthalten den Dagger-Alif (ٰ, U+0670) über der Rasm-Schreibung, wie im gerenderten Seitenbild sichtbar."
+      ],
+      "source": { "file": "tabellen-sprache.pdf", "page": 16 }
+    },
+    {
+      "id": "wortschatz-familie",
+      "kind": "noun",
+      "titleDe": "Wortschatz: Die Familie",
+      "columns": [{ "id": "form", "labelDe": "Wort" }],
+      "rows": [
+        { "id": "vater", "labelDe": "der Vater" },
+        { "id": "mutter", "labelDe": "die Mutter" },
+        { "id": "sohn", "labelDe": "der Sohn" },
+        { "id": "tochter", "labelDe": "die Tochter" },
+        { "id": "bruder", "labelDe": "der Bruder" },
+        { "id": "schwester", "labelDe": "die Schwester" },
+        { "id": "ehemann", "labelDe": "der Ehemann" },
+        { "id": "ehefrau", "labelDe": "die Ehefrau" }
+      ],
+      "cells": {
+        "vater": { "form": { "ar": "الأَب", "de": "der Vater" } },
+        "mutter": { "form": { "ar": "الأُمّ", "de": "die Mutter" } },
+        "sohn": { "form": { "ar": "الاِبْن", "de": "der Sohn" } },
+        "tochter": { "form": { "ar": "البِنْت", "de": "die Tochter" } },
+        "bruder": { "form": { "ar": "الأَخ", "de": "der Bruder" } },
+        "schwester": { "form": { "ar": "الأُخْت", "de": "die Schwester" } },
+        "ehemann": { "form": { "ar": "الزَّوْج", "de": "der Ehemann" } },
+        "ehefrau": { "form": { "ar": "الزَّوْجَة", "de": "die Ehefrau" } }
+      },
+      "notes": [
+        "In der لا-Ligatur von الاِبْن (Sohn) sitzt die Kasra im gerenderten Seitenbild zentriert unter der verschmolzenen Lam-Alif-Form; ob der Combining-Mark-Codepoint vor oder nach dem zweiten Alif steht, ist aus dem Bild nicht eindeutig bestimmbar. Ohne inhaltliche/hörbare Auswirkung."
+      ],
+      "source": { "file": "tabellen-sprache.pdf", "page": 17 }
+    },
+    {
+      "id": "wortschatz-koerper",
+      "kind": "noun",
+      "titleDe": "Wortschatz: Der Körper",
+      "columns": [{ "id": "form", "labelDe": "Wort" }],
+      "rows": [
+        { "id": "kopf", "labelDe": "der Kopf" },
+        { "id": "gesicht", "labelDe": "das Gesicht" },
+        { "id": "auge", "labelDe": "das Auge" },
+        { "id": "ohr", "labelDe": "das Ohr" },
+        { "id": "nase", "labelDe": "die Nase" },
+        { "id": "mund", "labelDe": "der Mund" },
+        { "id": "hand", "labelDe": "die Hand" },
+        { "id": "bein", "labelDe": "das Bein" }
+      ],
+      "cells": {
+        "kopf": { "form": { "ar": "الرَّأْس", "de": "der Kopf" } },
+        "gesicht": { "form": { "ar": "الوَجْه", "de": "das Gesicht" } },
+        "auge": { "form": { "ar": "العَيْن", "de": "das Auge" } },
+        "ohr": { "form": { "ar": "الأُذُن", "de": "das Ohr" } },
+        "nase": { "form": { "ar": "الأَنْف", "de": "die Nase" } },
+        "mund": { "form": { "ar": "الفَم", "de": "der Mund" } },
+        "hand": { "form": { "ar": "اليَد", "de": "die Hand" } },
+        "bein": { "form": { "ar": "الرِّجْل", "de": "das Bein" } }
+      },
+      "source": { "file": "tabellen-sprache.pdf", "page": 17 }
+    }
+  ]
+}

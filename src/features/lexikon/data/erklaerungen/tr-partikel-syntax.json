@@ -1,0 +1,1046 @@
+{
+  "schema": 1,
+  "lang": "tr",
+  "bereich": "partikel-syntax",
+  "eintraege": {
+    "harf": {
+      "titel": "Harf",
+      "ar": "حَرْف",
+      "umschrift": "Harf",
+      "erklaerung": [
+        "Harf, Arapçada isim ve fiilin yanında üçüncü kelime türüdür. Bir harfin tek başına bağımsız bir anlamı yoktur — ancak kendisinden sonra gelen bir kelimeyle birlikte anlam kazanır.",
+        "İsim ve fiil; cins, sayı veya zaman gibi özellikler taşırken, harf bu kategorilerin hiçbirini taşımaz. Onun tek görevi gramatik bir işlevdir: bağlamak, olumsuzlamak, soru sormak, şart koşmak, seslenmek, pekiştirmek veya kendisinden sonraki kelimenin i'rabını belirlemek.",
+        "Harf bu denli çok yönlü olduğu için, kendine özgü davranışlara sahip birçok alt gruba ayrılır — harf-i cerler, atıf harfleri, nefiy edatları, istifham edatları, şart edatları ve daha fazlası. Bu grupların her biri ayrı bir maddede ele alınmaktadır."
+      ],
+      "erkennung": [
+        "Bir harf, isim gibi çekime girmez (ne i'rab, ne sayı, ne cins alır) ve genellikle çok kısadır — çoğu zaman yalnızca bir ile üç harften oluşur.",
+        "Kelime analizinde bir harf bölümü, N (isim) veya V (fiil) yerine kendine özgü bir kısaltma taşır — örneğin harf-i cer için P, atıf harfi için CONJ veya olumsuzluk için NEG gibi.",
+        "Bir kelimenin tamamı, tek bir isim veya fiil kökü içermeden, art arda dizilmiş yalnızca birkaç harf bölümünden bile oluşabilir."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 9,
+          "wort": 5,
+          "zeigt": "وَمَا kelimesi yalnızca iki harf bölümünden oluşur (وَ ve مَا), herhangi bir isim veya fiil kökü içermez",
+          "warum": "bir harfin gerçekten de tek başına cins veya sayı gibi kendine ait bir alan taşımadığını göstermektedir — burada iki harf, tek bir korpus kelimesinde üst üste gelmektedir"
+        },
+        {
+          "sure": 1,
+          "vers": 1,
+          "wort": 1,
+          "zeigt": "بِسْمِ kelimesindeki بِ ön-ek bölümü, P (harf-i cer) POS etiketini taşır",
+          "warum": "Kur'an'ın ilk kelimesinde ikinci bir harf örneğini göstermektedir — burada bir olumsuzluk veya atıf harfi değil, bir harf-i cer söz konusudur"
+        }
+      ],
+      "lernen": [
+        "Önce kaba sınıflandırmayı öğren: harf-i cer, atıf harfi, nefiy edatı, istifham edatı, şart edatı, nida harfi — ardından her grubun tek tek kelimelerini öğren.",
+        "Gerçek ayetler üzerinde bir harf bölümünü kökten ayırmayı alıştırma yap: Harfi zihinsel olarak çıkarınca geriye ne kalır? Geri kalan kısım tek başına hâlâ anlamlı mı?",
+        "Her grup için şu belirleyici soruyu aklında tut: Bu harf, kendisinden sonraki kelimenin i'rabını değiştiriyor mu, değiştirmiyor mu?"
+      ],
+      "tabellen": [],
+      "siehe": ["huruf-jarr", "huruf-atf", "verneinung"]
+    },
+
+    "huruf-jarr": {
+      "titel": "Harf-i Cerler",
+      "ar": "حُرُوف الجَرّ",
+      "umschrift": "Huruf al-Jarr",
+      "erklaerung": [
+        "Bir harf-i cer, hemen ardından gelen ismi cer hâline (mecrûr) sokar. Harf ile isim birlikte câr-mecrûr terkibini oluşturur: câr, harf-i cerin kendisidir; mecrûr ise bu sayede cer hâline giren isimdir.",
+        "En sık kullanılan harf-i cerler arasında بِ (ile/vasıtasıyla), لِ (için), كَ (gibi), مِن (-den/-dan), عَن (hakkında), عَلَى (üzerinde), إِلَى (-e/-a), فِي (içinde) ve حَتَّى (-e kadar) yer alır — bunlara ek olarak, nadiren yemin başlatmak için kullanılan وَ ve تَ da (yalnızca Allah'ın ismiyle kullanılması gibi) bulunur.",
+        "Tek harfli harf-i cerler (بِـ، كَـ، لِـ، تَـ، وَـ) ayrı bir kelime olarak yazılmaz, doğrudan kendisinden sonraki isme bitiştirilir ve sabit bir harekeyle yazılır.",
+        "Bir harf-i cerin Türkçe karşılığı her zaman birebir alınmamalıdır: Hangi harf-i cerin hangi fiille birlikte kullanıldığı, çoğunlukla Türkçedeki karşılığından farklı, kendine özgü bir Arapça mantığa dayanır."
+      ],
+      "erkennung": [
+        "Bir harf-i cer, (bir zamir de olabilen) bir isimden hemen önce gelir — asla bir fiilden önce gelmez.",
+        "Tek harfli harf-i cerlerde dikkatli olmak gerekir: kelime başındaki aynı harf, kelimenin kökünün bir parçası da olabilir (örneğin كَافِر kelimesindeki كَـ, كفر köküne aittir, dolayısıyla bir harf-i cer değildir)."
+      ],
+      "belege": [
+        {
+          "sure": 1,
+          "vers": 1,
+          "wort": 1,
+          "zeigt": "بِسْمِ kelimesi, kendisinden sonraki ismi (سْمِ) cer hâline sokan bitişik harf-i cer بِ ile başlar",
+          "warum": "Kur'an'ın ilk kelimesinde, bir harf-i cerin tek harften oluşan ve doğrudan bitişen biçimini göstermektedir"
+        },
+        {
+          "sure": 1,
+          "vers": 2,
+          "wort": 2,
+          "zeigt": "لِلَّهِ kelimesindeki لِ ön-ek bölümü, P POS etiketini taşır",
+          "warum": "sabit kesra harekesiyle yazılan ikinci bir tek harfli harf-i ceri (لِ, 'için') göstermektedir"
+        }
+      ],
+      "lernen": [
+        "Harf-i cerler listesini önce tek harfli ve çok harfli biçimler olarak ayırarak ezberle — tek harfli olanların ayrıca sabit harekelerini de öğrenmen gerekir.",
+        "Kendi seçtiğin bir ayette her bir câr-mecrûr terkibini bulmaya çalış ve câr ile mecrûru ayrı ayrı adlandır.",
+        "Yeni öğrendiğin her fiille birlikte, o fiile tipik olarak hangi harf-i cerin eşlik ettiğini de aklında tut — bu, ileride yapılacak çeviri hatalarının önüne geçer."
+      ],
+      "tabellen": [],
+      "siehe": ["harf", "mudaf-ilayh"]
+    },
+
+    "huruf-atf": {
+      "titel": "Atıf Harfleri",
+      "ar": "حُرُوف العَطْف",
+      "umschrift": "Huruf al-'Atf",
+      "erklaerung": [
+        "Atıf harfleri, birbirine denk iki dil birimini bağlar — tek tek isimleri, terkipleri veya bütün cümleleri. Sonraki unsura ma'tûf, kendisine bağlanılan öncekine ise ma'tûfun aleyh denir.",
+        "Bir atıf harfinin en önemli etkisi şudur: ma'tûfun aleyh'in i'rabını değiştirmeden ma'tûfa aktarır. İlk kelime cer hâlindeyse, kendisine bağlanan kelime de cer hâlinde olur — bu, birbirine bağlı birden fazla kelime boyunca da geçerlidir.",
+        "En sık kullanılan atıf harfi وَ (ve)'dir — herhangi bir sıralama veya zaman farkı iddia etmeden nötr biçimde bağlar. فَ, 've hemen ardından' anlamıyla (doğrudan art arda gelişi belirterek) bağlar; ثُمَّ ise daha uzun bir zaman aralığıyla 've sonra' anlamını taşır. أَوْ, bir seçim anlamıyla 'veya' demektir; أَمْ de yine 'veya' anlamına gelir, ancak tipik olarak bir soru içinde kullanılır ('ikisinden hangisi?'). Bunların yanında بَلْ (bilakis) ve لَكِنْ (ama/fakat) da daha güçlü bir karşıtlık anlamıyla bağlaç görevi görür.",
+        "فَ, bu basit bağlama işlevinin yanında, aynı harf biçimini taşıyan ama tamamen farklı gramatik etkilere sahip iki role daha sahiptir: sebep bildiren فاء السببية ve bağlantı kuran فاء الجواب/الفاء الرابطة. Her ikisi de, i'rabı aktaran olağan فَ ile kolayca karıştırıldıkları için ayrı maddelerde ele alınmaktadır."
+      ],
+      "erkennung": [
+        "Olağan atıf testi: Harften sonraki kelime, öncesindeki kelimeyle aynı i'rabı (ref/nasb/cer) mı taşıyor? Öyleyse basit bir bağlama söz konusudur.",
+        "Eğer فَ'den sonra, öncekiyle aynı i'rab yerine görünür ya da gizli nasb sonekiyle bir muzari fiil geliyorsa, muhtemelen olağan bir atıf değil, فاء السببية söz konusudur (ayrı maddeye bakınız).",
+        "Eğer فَ, bir şart cümlesine, bir yemine veya bir konuya cevap veren bir cümlenin başında bulunuyor ve herhangi bir kelimenin i'rabını değiştirmiyorsa, genellikle فاء الجواب/الرابطة söz konusudur (ayrı maddeye bakınız)."
+      ],
+      "belege": [
+        {
+          "sure": 1,
+          "vers": 7,
+          "wort": 9,
+          "zeigt": "ٱلضَّآلِّينَ, conj ilişkisini taşır (relationBasis'e göre temel değer) ve وَ aracılığıyla kendisinden önceki isimle bağlanmıştır",
+          "warum": "Fatiha'nın sonunda وَ ile kurulan atıf harfini göstermektedir — iki insan grubu aynı i'rab ile art arda sıralanmaktadır"
+        },
+        {
+          "sure": 2,
+          "vers": 196,
+          "wort": 31,
+          "zeigt": "صَدَقَةٍ, conj ilişkisini taşır — أَوْ aracılığıyla kendisinden önceki صِيَامٍ ismiyle bağlanmıştır",
+          "warum": "أَوْ (veya) atıf harfini, oruç, sadaka veya kurban arasında gerçek bir seçim olarak göstermektedir"
+        },
+        {
+          "sure": 2,
+          "vers": 28,
+          "wort": 10,
+          "zeigt": "يُحْيِيكُمْ, conj ilişkisini taşır — ثُمَّ aracılığıyla kendisinden önceki fiille bağlanmıştır",
+          "warum": "ثُمَّ'yü, birbirine bağlanan eylemler arasında bir zaman aralığı anlamı taşıyan bir atıf harfi olarak göstermektedir (öldürmek — sonra tekrar diriltmek)"
+        },
+        {
+          "sure": 2,
+          "vers": 140,
+          "wort": 17,
+          "zeigt": "ٱللَّهُ, conj ilişkisini taşır — bir soru içinde أَمِ aracılığıyla kendisinden önceki kelimeyle bağlanmıştır",
+          "warum": "أَمْ'i, gerçek bir 'ya... ya da' sorusu içindeki bir atıf harfi olarak göstermektedir ('siz mi daha iyi bilirsiniz, yoksa Allah mı?')"
+        }
+      ],
+      "lernen": [
+        "و ف ثم أو أم şeklindeki altı temel atıf harfini, hepsini yalnızca 've/veya' diye çevirmek yerine, her birinin kendine özgü anlam nüansıyla (nötr / hemen / aralıklı / seçim / soru-seçimi) öğren.",
+        "Birden fazla ayet üzerinde i'rab aktarım testini uygula: Önce ma'tûfun aleyh'in i'rabını belirle, ardından ma'tûfun da aynı i'rabı taşıyıp taşımadığını kontrol et.",
+        "Bir فَ ile karşılaştığında, çeviri yapmadan önce üç olasılığı sırayla sistematik biçimde kontrol et: olağan atıf, فاء السببية veya فاء الجواب.",
+        "Kendi bulduğun örnekleri buradaki delillerle karşılaştır ve her birinde ma'tûf ile ma'tûfun aleyh'i ayrı ayrı adlandır."
+      ],
+      "tabellen": [],
+      "siehe": ["faa-sababiyya", "faa-jawab", "badal", "sifah"]
+    },
+
+    "faa-sababiyya": {
+      "titel": "Sebep Bildiren Fâ (Fâu's-Sebebiyye)",
+      "ar": "فَاء السَّبَبِيَّة",
+      "umschrift": "Faa' as-Sababiyya",
+      "erklaerung": [
+        "Fâu's-sebebiyye, olağan bağlayıcı فَ ile tıpatıp aynı görünür, ancak tamamen farklı bir gramatik etkiye sahiptir: Kendisinden önceki kelimenin i'rabını basitçe devralmak yerine, bir muzari fiili başlatır ve bu fiili nasb hâline (bir çeşit gizli/açık nasb) sokar.",
+        "Anlam bakımından, öncesindeki söylenene uyulmadığı TAKDİRDE ortaya çıkacak bir sonucu veya neticeyi ifade eder — genellikle 'öyle ki' veya '...mesin diye' şeklinde çevrilir. Tipik olarak bir yasaktan, bir emirden, bir sorudan veya bir dilekten sonra gelir.",
+        "Korpüste bu فَ yalnızca 88 kez geçmektedir — her ikisi de aynı فَ harfi olarak görünse de, 350 örnekle bağlantı kuran فاء الجواب'a göre belirgin biçimde daha nadirdir."
+      ],
+      "erkennung": [
+        "Belirleyici olan anlam değil, sonraki fiilin biçimidir: Ardından nasb hâlinde bir muzari fiil geliyorsa (fetha sonekiyle veya beş fiilde nun'un düşmesiyle görülür), fâu's-sebebiyye söz konusudur.",
+        "Öncesindeki tipik bağlam: bir yasak (لا + fiil), bir emir, bir soru veya bir dilek — asla sadece art arda sıralanan basit bir ifade değildir."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 35,
+          "wort": 16,
+          "zeigt": "فَتَكُونَا kelimesindeki فَ ön-ek bölümü, CAUS POS etiketini taşır",
+          "warum": "bir yasaktan sonra fâu's-sebebiyye'yi göstermektedir ('bu ağaca yaklaşmayın, yoksa ikiniz de zalimlerden olursunuz') — sonraki fiil, öncesindeki yasağın i'rabında değil, nasb hâlindedir"
+        },
+        {
+          "sure": 2,
+          "vers": 245,
+          "wort": 8,
+          "zeigt": "فَيُضَٰعِفَهُۥ kelimesindeki فَ ön-ek bölümü, CAUS POS etiketini taşır",
+          "warum": "retorik bir sorudan sonra fâu's-sebebiyye'yi göstermektedir ('kim Allah'a güzel bir borç verir ki, O da bunu kendisi için kat kat artırsın?')"
+        }
+      ],
+      "lernen": [
+        "Bir yasak, emir, soru veya dilekten sonra gelen her فَ'de önce şunu sor: Sonraki fiil nasb hâlinde mi? Öyleyse bu, olağan bir atıf değil, fâu's-sebebiyye'dir.",
+        "Önce deneme amaçlı 've sonra' diye çevir — bu mantıklı bir anlam vermiyor ama 'öyle ki/...mesin diye' anlamlı oluyorsa, bu sebep bildiren okumaya güçlü bir işarettir.",
+        "Buradaki örneği doğrudan فاء الجواب'a ait bir örnekle karşılaştır — ikisi de aynı şekilde başlar, ancak gramatik olarak tam tersi etki yaparlar."
+      ],
+      "tabellen": [],
+      "siehe": ["huruf-atf", "faa-jawab"]
+    },
+
+    "faa-jawab": {
+      "titel": "Bağlantı Kuran Fâ (Cevap ve Rabıta Fâsı)",
+      "ar": "فَاء الجَوَاب / الفَاء الرَّابِطَة",
+      "umschrift": "Faa' al-Jawaab / al-Faa' ar-Raabita",
+      "erklaerung": [
+        "Bu فَ de olağan bağlayıcı فَ gibi görünür, ancak fâu's-sebebiyye'nin aksine sonraki kelimenin i'rabını DEĞİŞTİRMEZ. Yalnızca bir köprü görevi görür: Sonraki cümleyi öncesinde söylenenle bağlar; genellikle bir şart cümlesinin cevabı (cevabü'ş-şart) olarak, bazen de bir mübteda ile cümle şeklindeki bir haber arasında bağlayıcı bir unsur olarak kullanılır.",
+        "Özellikle cevap cümlesinin kendisi gramatik olarak doğrudan cevabü'ş-şart konumunda bulunamayacağı durumlarda kullanılır — örneğin bir isim cümlesi olması, إِنَّ ile başlaması veya لَنْ ile bir olumsuzluk içermesi gibi.",
+        "Korpüste bu فَ, 350 örnekle sebep bildiren فاء السببية'den (88 örnek) belirgin biçimde daha sık görülür — ancak her ikisi de aynı tek harf فَ olarak görünür ve yalnızca gramatik etkilerine bakılarak ayırt edilebilirler."
+      ],
+      "erkennung": [
+        "Fâu's-sebebiyye'nin aksine, bu فَ'den sonraki fiil kendi asıl kipinde kalır (cümle türüne göre ref ya da meczum) — nasb hâline ZORLANMAZ.",
+        "Tipik olarak bir şartın cevap cümlesinin başında bulunur ve çoğunlukla hemen ardından إِنَّ, قَدْ veya bir isim cümlesi gelir."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 186,
+          "wort": 5,
+          "zeigt": "فَإِنِّى kelimesindeki فَ ön-ek bölümü RSLT POS etiketini, kelimenin tamamı ise rslt ilişkisini taşır",
+          "warum": "bir إذا-şart cümlesinden sonra cevap cümlesini başlatan fâu'l-cevabı göstermektedir ('kullarım sana Beni sorduğunda — şüphesiz Ben yakınım'), sonraki إِنِّي kelimesi nasb hâline sokulmamaktadır"
+        },
+        {
+          "sure": 2,
+          "vers": 282,
+          "wort": 10,
+          "zeigt": "فَٱكْتُبُوهُ, RSLT POS etiketine sahip فَ ön-ek bölümüyle başlayan rslt ilişkisini taşır",
+          "warum": "borçların yazıya geçirilmesiyle ilgili إِذَا ile başlayan şart cümlesine cevap olarak fâu'l-cevabı göstermektedir"
+        }
+      ],
+      "lernen": [
+        "Şu karşılaştırma testini aklında tut: Sonraki kelimenin i'rabı/kipi DEĞİŞMİYOR mu (ref ya da meczum olarak kalıyor mu)? Öyleyse bu, fâu's-sebebiyye değil, fâu'l-cevaptır.",
+        "Özellikle إِذَا ve إِنْ ile kurulan şart cümlelerini ara ve cevap cümlesinin فَ ile başlayıp başlamadığını, başlıyorsa nedenini işaretle (isim cümlesi mi? إِنَّ mi? olumsuzluk mu?).",
+        "İkisini birbirine karıştırmamak için فاء السببية ve فاء الجواب örnekleriyle kendine iki sütunlu bir tablo hazırla."
+      ],
+      "tabellen": [],
+      "siehe": ["huruf-atf", "faa-sababiyya", "shart"]
+    },
+
+    "verneinung": {
+      "titel": "Olumsuzluk (Nefiy)",
+      "ar": "حُرُوف النَّفْي",
+      "umschrift": "Huruf an-Nafy",
+      "erklaerung": [
+        "Olumsuzluk için, her biri belirli bir zamana veya cümle türüne bağlı olan birçok araç bulunur: لَمْ, bir muzari fiille geçmiş zamanı olumsuzlar ve fiili cezm hâline (meczum) sokar; لَنْ, bir muzari fiille geleceği olumsuzlar ve onu nasb hâline (mansub) sokar; لَا, bir muzari fiille şimdiki zamanı, i'rabı değiştirmeden olumsuzlar; مَا ise hem mazi hem muzari fiilleri, çoğunlukla bir reddetme veya tartışma bağlamında, yine i'rabı değiştirmeden olumsuzlar.",
+        "لَيْسَ, gramatik açıdan bir harf değil, nakıs bir fiildir (bkz. Kâne ve kız kardeşleri) — isim cümlelerini olumsuzlar ve haberini nasb hâline sokar; buna karşılık مَا, bir isim cümlesini olumsuzladığında haberi ref hâlinde bırakır.",
+        "Önemli not: مَا, Arapçanın en çok yönlü kelimelerinden biridir. Çoğu zaman bir olumsuzluk edatı DEĞİLDİR; bir ism-i mevsul ('olan şey'), bir istifham edatı ('ne?') veya bir şart/masdar edatı olabilir. مَا'nın olumsuzluk bildirip bildirmediğine yalnızca cümle bağlamı karar verir.",
+        "Bunun yanında, 'hiç ... yoktur' anlamı için لَا النَّافِيَة لِلْجِنْس (cins olumsuzlayan lâ) bulunur — bu durumda kendisinden sonraki isim, nasb hâlinde fetha üzere mebni olur."
+      ],
+      "erkennung": [
+        "مَا, hemen ardından kendi faili/mübtedası olan ve bir iddia olarak olumsuzlanan tam bir cümle geldiğinde olumsuzluk edatıdır.",
+        "مَا, bir cümle ögesinin rolünü üstlendiğinde (örneğin bir fiilin nesnesi veya öznesi olarak) ve anlamca 'olan şey' ile değiştirilebildiğinde bir olumsuzluk edatı DEĞİLDİR.",
+        "لَا النَّافِيَة لِلْجِنْس'i, hemen ardından tenvinsiz nekre bir ismin gelmesinden tanırsın ('hiç ... yoktur')."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 9,
+          "wort": 6,
+          "zeigt": "يَخْدَعُونَ, neg ilişkisini taşır; öncesindeki مَا (5. kelime) ise NEG POS etiketini taşır",
+          "warum": "مَا'yı gerçek bir olumsuzluk edatı olarak göstermektedir ('onlar kendilerinden başkasını aldatmazlar')"
+        },
+        {
+          "sure": 2,
+          "vers": 29,
+          "wort": 5,
+          "zeigt": "مَّا burada olumsuzluk ilişkisini DEĞİL, Obj ilişkisini (خَلَقَ fiilinin nesnesi) taşımaktadır; bölüm REL POS etiketini taşır",
+          "warum": "açıkça dikkat edilmesi gereken durumu göstermektedir: aynı kısa surede مَا, birkaç ayet sonra bir ism-i mevsul olarak ('yeryüzünde sizin için yarattığı şey') karşımıza çıkar — bir olumsuzluk değildir"
+        }
+      ],
+      "lernen": [
+        "Zaman → uygun olumsuzluk edatı → tetiklenen i'rab şeklinde bir tablo hazırla (لَمْ/meczum, لَنْ/mansub, لَا ve مَا/değişmez).",
+        "Buradaki örnek çifti üzerinde özellikle alıştırma yap: مَا'nın 2:9'da neden olumsuzluk, 2:29'da neden olumsuzluk olmadığını kendi cümlelerinle açıkla.",
+        "لَيْسَ'yi bir harf değil, bir fiil olarak aklında tut — bu, tek başına haberi nasb hâline sokabilmesini açıklarken, مَا'nın bunu neden yapmadığını da gösterir."
+      ],
+      "tabellen": [],
+      "siehe": ["nahy", "lam-al-amr", "kaana-wa-akhawatuha"]
+    },
+
+    "lam-al-amr": {
+      "titel": "Emir Lâmı",
+      "ar": "لَام الأَمْر",
+      "umschrift": "Laam al-Amr",
+      "erklaerung": [
+        "Emir lâmı, bir muzari fiilden önce bitişen ve dolaylı bir emir oluşturan لْ harfidir — genellikle 3. şahsa yönelik ('o yapsın/onlar yapsınlar'), özellikle görkemli bir üslupla bazen 1. veya 2. şahsa yönelik olarak da kullanılır. Fiil bu sayede cezm hâline (meczum) girer.",
+        "Gramatik açıdan emir lâmı bir harftir, fiil değildir — kendine ait, zaten çekimlenmiş bir fiil kalıbı olan doğrudan emir fiilinden (fiil-i emir) farklıdır. Her ikisi de bir emir ifade eder, ancak emir lâmı bunu ayrı bir emir kalıbı üzerinden değil, bir muzari fiil üzerinden yapar.",
+        "Korpüste bu لْ 78 kez geçmektedir — çoğunlukla önünde وَ veya فَ ile birlikte kullanılır."
+      ],
+      "erkennung": [
+        "Sonu cezmi gösteren (beş fiil kalıbında nun'un düşmesi, diğerlerinde sükûn) bir muzari fiilden hemen önce gelen tek bir لْ harfi.",
+        "Doğrudan bir 'Yap!' yerine '-sın/-sınlar' şeklinde çevrilebilir — emir lâmı, kendisi için ayrı bir emir kalıbı bulunmayan üçüncü şahsa tipik olarak (yalnızca ona özgü olmasa da) yöneliktir."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 186,
+          "wort": 12,
+          "zeigt": "فَلْيَسْتَجِيبُوا۟ kelimesindeki لْ ön-ek bölümü, IMPV POS etiketini taşır",
+          "warum": "üçüncü şahsa yönelik dolaylı bir emir olarak emir lâmını göstermektedir ('bana icabet etsinler')"
+        },
+        {
+          "sure": 2,
+          "vers": 186,
+          "wort": 14,
+          "zeigt": "وَلْيُؤْمِنُوا۟ kelimesindeki لْ ön-ek bölümü, IMPV POS etiketini taşır",
+          "warum": "aynı ayette ikinci bir emir lâmını göstermektedir ('ve bana iman etsinler')"
+        }
+      ],
+      "lernen": [
+        "Aynı ayette doğrudan emir kalıbını (fiil-i emir, 2. şahıs) bir emir lâmı örneğiyle (3. şahıs) karşılaştır — her ikisi de bir emir ifade eder, ama gramatik yapıları tamamen farklıdır.",
+        "Kelime başında özellikle وَلْ- ve فَلْ- birleşimlerini ara ve her birinde kime seslenildiğini belirle.",
+        "لام seslerinin diğer türleriyle karıştırma tehlikesini aklında tut: Yalnızca doğrudan bir muzari fiilden önce sükûnlu بulunan لْ, emir lâmıdır."
+      ],
+      "tabellen": [],
+      "siehe": ["nahy"]
+    },
+
+    "nahy": {
+      "titel": "Nehiy (Lâ-i Nâhiye)",
+      "ar": "النَّهْي (لَا النَّاهِيَة)",
+      "umschrift": "an-Nahy (Laa an-Naahiya)",
+      "erklaerung": [
+        "Lâ-i nâhiye ('yasaklayan lâ'), bir muzari fiilden önce gelir — genellikle 2. şahısta — ve bundan bir yasak oluşturur ('bunu yapma!'). Fiil bu sayede, emir lâmında olduğu gibi, cezm hâline (meczum) girer.",
+        "Bu, nehyi, fiilin kipini değiştirmeden şu anki bir olguyu olumsuzlayan basit لَا olumsuzluğundan (لَا النَّافِيَة) ayırır. Her iki kelime de aynı görünür (لَا), ama gramatik olarak farklı etki yaparlar: nehiy cezmi zorunlu kılar, basit olumsuzluk kılmaz."
+      ],
+      "erkennung": [
+        "لَا, cezmi gösteren sonlu (nun'un düşmesi/sükûn) bir muzari fiilden önce geliyorsa ve anlam bir olgu tespiti değil bir yasaksa, lâ-i nâhiye söz konusudur.",
+        "Korpüste, ilgili fiil olağan olumsuzluk ilişkisi yerine Pro ilişkisini ('Prohibition' için) taşır."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 22,
+          "wort": 19,
+          "zeigt": "تَجْعَلُوا۟, PRO POS etiketine sahip لَا (öncesindeki فَلَا kelimesinde) ile başlayan Pro ilişkisini taşır",
+          "warum": "gerçek bir yasak olarak lâ-i nâhiye'yi göstermektedir ('artık Allah'a ortaklar koşmayın')"
+        },
+        {
+          "sure": 2,
+          "vers": 60,
+          "wort": 25,
+          "zeigt": "تَعْثَوْا۟, PRO POS etiketine sahip لَا (öncesindeki وَلَا kelimesinde) ile başlayan Pro ilişkisini taşır",
+          "warum": "ikinci bir yasağı göstermektedir ('ve yeryüzünde fesat çıkarmayın')"
+        }
+      ],
+      "lernen": [
+        "Nehye ait bir örneği doğrudan basit لَا olumsuzluğuna ait bir örnekle karşılaştır — iki kelime de aynı görünür ama fiil üzerindeki etkileri farklıdır.",
+        "Fiilin kendisinde cezmi tanımayı alıştırma yap (beş kalıpta nun'un yokluğu, diğerlerinde sükûn) — bu, nehyin en güvenilir işaretidir.",
+        "Bulduğun لَا örneklerini tutarlı biçimde şu üç kategoriden birine yerleştir: basit olumsuzluk, nehiy veya cins olumsuzlayan lâ (لَا النَّافِيَة لِلْجِنْس)."
+      ],
+      "tabellen": [],
+      "siehe": ["verneinung", "lam-al-amr"]
+    },
+
+    "istifham": {
+      "titel": "İstifham Edatları",
+      "ar": "أَدَوَات الاِسْتِفْهَام",
+      "umschrift": "Adawaat al-Istifhaam",
+      "erklaerung": [
+        "İstifham edatları cümle başında bulunur ve hem isim hem de fiil cümlelerini başlatır: مَنْ (kim), مَاذَا/مَا (ne), مَتَى (ne zaman), أَيْنَ (nerede), لِمَاذَا (niçin), كَيْفَ (nasıl), أَيّ (hangi) ile evet/hayır soruları için هَلْ ve bitişik hemze أَ.",
+        "Soru kelimelerinin çoğunun cümle yapısı üzerinde gramatik bir etkisi yoktur — bunlar basitçe cümlenin başına getirilir.",
+        "Bir istifham edatı bir harf-i cerle karşılaştığında, harf-i cer öne alınır; مَا ile birlikte kullanıldığında ise ikisi tek bir biçimde kaynaşır (مِنْ + مَا → مِمَّ, عَنْ + مَا → عَمَّ, فِي + مَا → فِيمَ, لِ + مَا → لِمَ)."
+      ],
+      "erkennung": [
+        "İstifham edatları, ardından bir isim cümlesi mi yoksa bir fiil cümlesi mi geldiğinden bağımsız olarak cümle başında bulunur.",
+        "Bitişik bir istifham edatı olan أَ, ilk kelime kökünden hemen önce gelen tek bir hemzedir — korpüste INTG POS etiketine sahip ayrı bir ön-ek bölümü olarak kaydedilmiştir."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 44,
+          "wort": 1,
+          "zeigt": "أَتَأْمُرُونَ kelimesindeki أَ ön-ek bölümü, INTG POS etiketini taşır",
+          "warum": "bitişik istifham edatı أَ'yı, retorik bir evet/hayır sorusunu başlatırken göstermektedir ('insanlara iyiliği mi emrediyorsunuz...?')"
+        },
+        {
+          "sure": 2,
+          "vers": 30,
+          "wort": 11,
+          "zeigt": "أَتَجْعَلُ kelimesindeki أَ ön-ek bölümü, INTG POS etiketini taşır",
+          "warum": "aynı istifham edatını, meleklerin meşhur sorusunda göstermektedir ('orada bozgunculuk çıkaracak birini mi yaratacaksın?')"
+        }
+      ],
+      "lernen": [
+        "Soru kelimeleri tablosunu, kelime türleriyle birlikte öğren (مَنْ/مَا/أَيّ gibi isim veya هَلْ/أَ gibi salt harf) — bu, ileride i'rab belirlemeyi kolaylaştırır.",
+        "مِمَّ/عَمَّ/فِيمَ/لِمَ kaynaşma biçimlerini ayrıca alıştırma yap — yalnızca 'مَا' arandığında bunlar kolayca gözden kaçabilir.",
+        "Cümle yapısının kendisinde hiçbir şeyin değişmediğini görmek için, soru cümlelerini istifham edatı olmadan aynı ifadeyle karşılaştır."
+      ],
+      "tabellen": [],
+      "siehe": []
+    },
+
+    "shart": {
+      "titel": "Şart Cümleleri",
+      "ar": "أَدَوَات الشَّرْط وَجَوَاب الشَّرْط",
+      "umschrift": "Adawaat ash-Shart / Jawaab ash-Shart",
+      "erklaerung": [
+        "Bir şart cümlesi (cümle-i şartiyye) iki bölümden oluşur: şart (الشَّرْط) ve onun cevabı/sonucu (جَوَاب الشَّرْط) — ikinci ifade yalnızca birincisi gerçekleştiğinde meydana gelir.",
+        "Şart edatları iki gruba ayrılır: cezm eden edatlar (cezm edatları/edevât-ı câzime: إِنْ، مَنْ، مَا ve diğerleri), iki muzari fiil söz konusu olduğunda cümlenin her iki bölümünü de cezm hâline sokar; cezm etmeyen edatlar (edevât-ı gayr-i câzime: لَوْ 'olsaydı', إِذَا 'ne zaman/-diğinde') ise fiillerin i'rabı üzerinde herhangi bir gramatik etkiye sahip değildir.",
+        "Cevap cümlesi, özellikle şart cümlesinden yapı bakımından farklıysa (örneğin şart cümlesi fiil cümlesi, cevap cümlesi isim cümlesi ise) çoğunlukla bir فَ ile başlatılır — bu فَ, ayrı bir maddede ele alınan fâu'l-cevaptır.",
+        "Şart cümlesinin yanında, emirlerde de çok benzer bir yapı bulunur: Bir emrin (emir kipinin) ardından, ona uyulduğunda ne olacağını anlatan bir cevabü'l-emr gelebilir — bu da her zaman cezm hâlindedir."
+      ],
+      "erkennung": [
+        "Korpus söz diziminde şart bölümü cond ilişkisini, cevap bölümü ise فَ ile başladığında çoğunlukla rslt ilişkisini taşır (bkz. fâu'l-cevab).",
+        "Cezm eden şart edatlarını, Türkçe çeviri şimdiki zaman gerektirse bile, hem şart hem cevap fiillerinin cezm hâlinde olmasından tanırsın."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 282,
+          "wort": 5,
+          "zeigt": "تَدَايَنتُم, إِذَا (4. kelime) tarafından tetiklenen cond ilişkisini taşır",
+          "warum": "bir şart cümlesinin şart bölümünü göstermektedir ('belirli bir süre için birbirinize borçlandığınızda')"
+        },
+        {
+          "sure": 2,
+          "vers": 282,
+          "wort": 10,
+          "zeigt": "فَٱكْتُبُوهُ, rslt ilişkisini taşır",
+          "warum": "aynı ayette, fâu'l-cevap ile başlayan ilgili cevap cümlesini göstermektedir ('onu yazın')"
+        }
+      ],
+      "lernen": [
+        "Önce câzime/gayr-i câzime ikili ayrımını öğren, ardından her grubun tek tek edatlarını öğren.",
+        "Bir şart cümlesinde sistematik olarak önce الشَّرْط'ı, sonra جَوَاب الشَّرْط'ı ara ve aralarında bir فَ olup olmadığını kontrol et.",
+        "إِنْ ile kendi kısa şart cümlelerini kur ve fiil sonekinin إِنْ olmayan bir cümleye göre nasıl değiştiğini karşılaştır."
+      ],
+      "tabellen": [],
+      "siehe": ["faa-jawab"]
+    },
+
+    "kaana-wa-akhawatuha": {
+      "titel": "Kâne ve Kız Kardeşleri",
+      "ar": "كَانَ وَأَخَوَاتُهَا",
+      "umschrift": "Kaana wa Akhawatuha",
+      "erklaerung": [
+        "Kâne (olmak) ve kız kardeşleri, nakıs fiillerdir: Olağan bir fail gerektirmez, bunun yerine bütün bir isim cümlesini kendi ismine ve haberine dönüştürürler. Bu aileye başlıca كَانَ (olmak), لَيْسَ (olmamak), ظَلَّ (kalmak) ve أَصْبَحَ (olmaya başlamak) dahildir — bunlara ek olarak صَارَ, أَمْسَى veya مَا زَالَ gibi diğerleri de bulunur.",
+        "Kâne'nin ismi, olağan bir mübteda gibi ref hâlinde kalır. Belirleyici fark şudur: kâne'nin haberi nasb hâlindedir — oysa normal bir isim cümlesinde haber aslında ref hâlinde olması gerekirdi.",
+        "Kâne'nin haberi kendisi bütün bir cümle ise (örneğin muzari fiilli bir fiil cümlesi), nasb etkisi görünür bir sonekte fark edilmez — buna rağmen haber rolü yine de geçerliliğini korur."
+      ],
+      "erkennung": [
+        "Bir ayet, كَانَ veya kız kardeşlerinden birinin ardından ref hâlinde bir isim/zamir (isim) ve sonrasında olağan bir isim cümlesinde beklenen ikinci ref kelimesi yerine nasb hâlinde bir şey veya bütün bir cümle (haber) geldiğinde, belirgin biçimde bir kâne yapısına dönüşür.",
+        "Korpus söz diziminde, bu ailenin ismi ve haberi, çift açılı ayraç içinde eklenmiş bir âmil ile kendine özgü ilişkiler olarak görünür; örneğin subj<<kan>> ve pred<<kan>> gibi — grammatik.ts dosyasındaki relationBasis() bu biçimi temel değer (subj/pred) ve âmile (örn. kan, ykon) ayrıştırır."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 10,
+          "wort": 12,
+          "zeigt": "يَكْذِبُونَ, \"pred <<kan>>\" ilişkisini taşır (temel değer pred, âmil kan)",
+          "warum": "aynı ayette كَانُوا۟'dan sonra kâne'nin haberini bütün bir fiil cümlesi olarak göstermektedir ('...yalan söylüyor olmaları sebebiyle')"
+        },
+        {
+          "sure": 2,
+          "vers": 247,
+          "wort": 15,
+          "zeigt": "ٱلْمُلْكُ, \"subj <<ykon>>\" ilişkisini taşır (temel değer subj, âmil ykon — كَانَ'nin muzari biçimi)",
+          "warum": "kâne kız kardeşlerinden birinin muzari biçiminin (يَكُونُ) ismini ref hâlinde göstermektedir ('bize karşı hükümranlık ona nasıl olabilir')"
+        }
+      ],
+      "lernen": [
+        "Burada geçen dört fiili كَانَ، لَيْسَ، ظَلَّ، أَصْبَحَ önce temel anlamlarıyla, ardından haber için geçerli nasb kuralıyla öğren.",
+        "Birden fazla ayette kâne'nin ismini ve haberini ayrı ayrı adlandırmayı alıştırma yap — özellikle haberin kendisi bir cümle olduğunda.",
+        "Haberin i'rabındaki farkı doğrudan hissetmek için bir kâne cümlesini كَانَ olmadan aynı cümleyle karşılaştır."
+      ],
+      "tabellen": [],
+      "siehe": ["inna-wa-akhawatuha", "mubtada", "khabar"]
+    },
+
+    "inna-wa-akhawatuha": {
+      "titel": "İnne ve Kız Kardeşleri",
+      "ar": "إِنَّ وَأَخَوَاتُهَا",
+      "umschrift": "Inna wa Akhawatuha",
+      "erklaerung": [
+        "İnne ve kız kardeşleri, nasb harfleridir — bir ismi doğrudan (veya araya giren bir câr-mecrûr ya da özel bir muzâftan sonra) nasb hâline sokan, buna karşılık ilgili haberi ref hâlinde bırakan edatlardır. Böylece tam olarak kâne ve kız kardeşlerinin tersi yönde etki ederler.",
+        "Bu aileye إِنَّ/أَنَّ (şüphesiz/ki, pekiştirici), كَأَنَّ (sanki, benzetme bildiren), لَكِنَّ (ama/fakat, karşıtlık bildiren), لَيْتَ (keşke, temenni bildiren) ve لَعَلَّ (umulur ki/belki, beklenti bildiren) dahildir — her biri kendine özgü bir anlam tonuna sahip olsa da gramatik etkileri aynıdır.",
+        "Bir nasb harfinin ismi, biçimsel olarak nasb hâlinde bulunsa da, içerik bakımından ifadenin öznesi/konusu olmaya devam eder ve öyle çevrilir — soneki değişir, ancak rolü değişmez."
+      ],
+      "erkennung": [
+        "إِنَّ/أَنَّ'den hemen sonra (veya araya giren bir câr-mecrûrdan sonra) fetha sonekli bir isim ya da bitişik zamir (isim) bulunur, daha sonra ref işaretli bir kelime veya bütün bir cümle (haber) gelir.",
+        "Korpus söz diziminde bu ailenin ismi ve haberi de subj<<...>>/pred<<...>> biçiminde, in, an, ka'ana, lakin veya lel/la âmilleriyle görünür — bunlar da relationBasis() ile çözümlenebilir."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 20,
+          "wort": 21,
+          "zeigt": "ٱللَّهَ, \"subj<<in>>\" ilişkisini taşır (temel değer subj, âmil in)",
+          "warum": "inne'nin ismini nasb hâlinde göstermektedir ('şüphesiz Allah...')"
+        },
+        {
+          "sure": 2,
+          "vers": 20,
+          "wort": 25,
+          "zeigt": "قَدِيرٌ, \"pred<<in>>\" ilişkisini taşır (temel değer pred, âmil in)",
+          "warum": "aynı ayette inne'nin ilgili haberini ref hâlinde göstermektedir ('...her şeye kadirdir') — nasb harfleri bölümünde de örnek olarak kullanılan aynı ayettir"
+        }
+      ],
+      "lernen": [
+        "Altı kız kardeşi, birbirinin yerine geçebilen sıradan 'pekiştirme kelimeleri' olarak değil, her birinin kendine özgü anlam tonuyla (pekiştirici/benzetme/karşıtlık/temenni/beklenti) öğren.",
+        "Aynı ayette ismi ve haberi ayrı ayrı adlandırmayı ve her birinin sonekini açıklamayı alıştırma yap.",
+        "Bir inne cümlesini bir kâne cümlesiyle karşılaştır: isim nerede, haber nerede — ve her biri hangi i'rabtadır?"
+      ],
+      "tabellen": [],
+      "siehe": ["kaana-wa-akhawatuha", "verneinung"]
+    },
+
+    "faail": {
+      "titel": "Fail",
+      "ar": "فَاعِل",
+      "umschrift": "Faa'il",
+      "erklaerung": [
+        "Fail, bir fiil cümlesinin öznesi/eylemi yapandır ve her zaman ref hâlindedir. Standart Arapça kelime dizilişinde fiilden sonra gelir (fiil – fail – nesne), tersi değil.",
+        "Her fiil ayrıca, fiilin kendi içinde bulunan gizli bir fail (bitişik bir zamir) taşır. Fiil o/o (eril/dişil, tekil 3. şahıs) kalıbında olduğunda ve ardından ref hâlinde bir isim geldiğinde, bu gizli fail açıkça belirtilen dışsal bir fail ile yer değiştirebilir."
+      ],
+      "erkennung": [
+        "Bir fiilden hemen sonra veya kısa bir süre sonra gelen ve 'Bunu kim yaptı?' sorusunu cevaplayan, ref işaretli bir isim veya zamir.",
+        "Olası özne fiilden ÖNCE geliyorsa, artık fail değil, haberi bir fiil cümlesi olan bir mübtedadır."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 7,
+          "wort": 2,
+          "zeigt": "ٱللَّهُ, Subj ilişkisini taşır",
+          "warum": "fiilden sonra faili ref hâlinde göstermektedir ('Allah kalplerini mühürledi')"
+        },
+        {
+          "sure": 2,
+          "vers": 10,
+          "wort": 5,
+          "zeigt": "ٱللَّهُ, Subj ilişkisini taşır",
+          "warum": "ikinci bir faili göstermektedir ('böylece Allah hastalıklarını artırdı')"
+        }
+      ],
+      "lernen": [
+        "Birden fazla ayette önce fiili, ardından hemen ondan sonraki ilk ref işaretli kelimeyi ara — bu, kural olarak faildir.",
+        "Fail açıkça belirtilen ve belirtilmeyen ayetler üzerinde, gizli (fiilde saklı) ve dışsal (açıkça belirtilen) fail arasındaki farkı alıştırma yap.",
+        "Bir fail cümlesini, aynı ismin fiilden önce mübteda olarak yer aldığı bir cümleyle karşılaştır — i'rab ref olarak kalır, ama rol değişir."
+      ],
+      "tabellen": [],
+      "siehe": ["naib-al-fail", "mubtada"]
+    },
+
+    "naib-al-fail": {
+      "titel": "Naib-i Fail",
+      "ar": "نَائِب الفَاعِل",
+      "umschrift": "Naa'ib al-Faa'il",
+      "erklaerung": [
+        "Fiil meçhul (edilgen) kalıpta olduğunda, asıl fail düşer veya bilinmez kalır. Onun yerine naib-i fail geçer — kelimenin tam anlamıyla 'failin vekili' — genellikle etken bir cümlede nesne olacak unsurdur. Naib-i fail bu sırada failin ref hâlini üstlenir.",
+        "Fiilin kendisi edilgen yapıyı gösterir (muzaride örneğin ilk harfte ötre), naib-i fail ise ona olağan bir fail gibi ref hâlinde eşlik eder."
+      ],
+      "erkennung": [
+        "Edilgen kalıpta bir fiil ve ardından, içerik bakımından eylemin faili değil de nesnesi gibi görünen, ref işaretli bir isim.",
+        "Korpus söz diziminde bu kelime, olağan fail ilişkisi Subj yerine kendine özgü Pass ilişkisini taşır."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 48,
+          "wort": 12,
+          "zeigt": "شَفَٰعَةٌ, Pass ilişkisini taşır",
+          "warum": "meçhul fiil يُقْبَلُ'den sonra naib-i faili göstermektedir ('ve ondan hiçbir şefaat kabul edilmez') — içerik bakımından etken bir cümlede nesne olacak unsurdur"
+        },
+        {
+          "sure": 2,
+          "vers": 61,
+          "wort": 39,
+          "zeigt": "ٱلذِّلَّةُ, Pass ilişkisini taşır",
+          "warum": "meçhul fiil ضُرِبَتْ'ten sonra ikinci bir naib-i faili göstermektedir ('ve üzerlerine zillet vurulmuştur')"
+        }
+      ],
+      "lernen": [
+        "Bildiğin etken bir cümlenin edilgen biçimini kur ve önceki nesnenin nasıl ref hâlinde bir naib-i faile dönüştüğünü gözlemle.",
+        "Naib-i faili aramadan önce, bir meçhul fiilin ilk işareti olarak fiilin harekelenmesine (ötre kalıbı) özellikle dikkat et.",
+        "Buradaki örneği olağan bir fail örneğiyle karşılaştır — ikisi de ref hâlindedir, ama içerik bakımından farklı bir role sahiptir."
+      ],
+      "tabellen": [],
+      "siehe": ["faail"]
+    },
+
+    "maful-bihi": {
+      "titel": "Doğrudan Nesne (Mef'ûlün Bih)",
+      "ar": "مَفْعُول بِه",
+      "umschrift": "Maf'ool bihi",
+      "erklaerung": [
+        "Mef'ûlün bih, bir fiil cümlesinin doğrudan nesnesidir, her zaman nasb hâlindedir ve 'kimi/neyi' sorusunu cevaplar. Kur'an'da açık ara en sık görülen mef'ûl türüdür.",
+        "Bir fiile bitişen bağlı zamir, bağımsız bir kelime gibi görünmese de, her zaman bir mef'ûlün bihtir."
+      ],
+      "erkennung": [
+        "Fiil ve failden sonra gelen, eylemden doğrudan etkilenen, nasb işaretli bir isim veya zamir.",
+        "Soru testi: Kelime, 'fail kimi/neyi yapıyor?' sorusuyla bulunabilir mi?"
+      ],
+      "belege": [
+        {
+          "sure": 1,
+          "vers": 6,
+          "wort": 2,
+          "zeigt": "ٱلصِّرَٰطَ, Obj ilişkisini taşır",
+          "warum": "emir kipi ٱهْدِنَا'dan sonra mef'ûlün bihi nasb hâlinde göstermektedir ('bizi doğru yola ilet')"
+        },
+        {
+          "sure": 1,
+          "vers": 5,
+          "wort": 1,
+          "zeigt": "إِيَّاكَ, Obj ilişkisini taşır",
+          "warum": "mef'ûlün bihi öne alınmış, ayrık bir zamir olarak göstermektedir ('yalnız Sana ibadet ederiz')"
+        }
+      ],
+      "lernen": [
+        "Birden fazla ayette 'kimi/neyi?' soru testini uygula ve her birinde fiili, faili ve mef'ûlün bihi ayrı ayrı işaretle.",
+        "Fiillere bitişen zamirleri özellikle ara ve bunları açıkça mef'ûlün bih olarak adlandır.",
+        "Üç mef'ûl türünü birbirine karıştırmamak için mef'ûlün bihi, mef'ûl-i mutlak ve mef'ûlün leh ile karşılaştır."
+      ],
+      "tabellen": [],
+      "siehe": ["faail", "maful-mutlaq", "maful-liajlihi"]
+    },
+
+    "maful-mutlaq": {
+      "titel": "Mutlak Nesne (Mef'ûl-i Mutlak)",
+      "ar": "مَفْعُول مُطْلَق",
+      "umschrift": "Maf'ool Mutlaq",
+      "erklaerung": [
+        "Mef'ûl-i mutlak, kendisine eşlik ettiği fiille aynı köke sahip bir masdardır ve nasb hâlindedir. 'Kimi/neyi' sorusunu cevaplamaz; bunun yerine eylemin kendisini bir kez daha pekiştirir, niteler veya sayısını belirtir.",
+        "Üç işlevi olabilir: tek başına bir kelime olarak eylemi pekiştirir; bir sıfatla birlikte eylemi daha yakından niteler; bir sayı ile birlikte eylemin kaç kez gerçekleştiğini belirtir."
+      ],
+      "erkennung": [
+        "Öncesindeki fiille aynı kök harflerini taşıyan, nasb işaretli bir isim — başka bir isim değil, fiil kökünün isim olarak tekrarıdır.",
+        "Gramatik olarak 'kimi/neyi' ile değil, 'ne kadar/ne şekilde/kaç kez' ile sorulabilir."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 25,
+          "wort": 18,
+          "zeigt": "رِّزْقًا, cog ilişkisini taşır",
+          "warum": "öncesindeki رُزِقُوا۟ fiiliyle aynı رزق köküne sahip mef'ûl-i mutlakı göstermektedir ('kendilerine rızık olarak verildiği her defasında')"
+        },
+        {
+          "sure": 2,
+          "vers": 245,
+          "wort": 10,
+          "zeigt": "أَضْعَافًا, cog ilişkisini taşır",
+          "warum": "öncesindeki يُضَٰعِفَهُ fiiliyle aynı ضعف köküne sahip mef'ûl-i mutlakı göstermektedir ('öyle ki onu kendisi için kat kat artırsın')"
+        }
+      ],
+      "lernen": [
+        "Şüpheli görünen her nasb isminde önce kök harflerini öncesindeki fiille karşılaştır — eşleşiyorsa, büyük olasılıkla mef'ûl-i mutlaktır.",
+        "Farklı ayetlerde üç işlevi de (pekiştirme/niteleme/sayma) özellikle ara.",
+        "Mef'ûl-i mutlakı bilinçli olarak mef'ûlün bih ile karşılaştır — ikisinden yalnızca biri 'kimi/neyi' ile sorulabilir."
+      ],
+      "tabellen": [],
+      "siehe": ["maful-bihi"]
+    },
+
+    "maful-liajlihi": {
+      "titel": "Sebep Bildiren Nesne (Mef'ûlün Leh)",
+      "ar": "المَفْعُول لِأَجْلِه",
+      "umschrift": "al-Maf'ool li-Ajlihi",
+      "erklaerung": [
+        "Mef'ûlün leh (mef'ûlün li-eclihi de denir), asıl eylemin ardındaki SEBEBİ veya saiki belirten, nasb hâlinde bir masdardır — 'niçin?' sorusunu cevaplar. Mef'ûl-i mutlaktan farklı olarak asıl fiille AYNI kökü paylaşmaz, bunun yerine bağımsız, genellikle soyut bir saiki (korku, arzu, kıskançlık...) adlandırır.",
+        "Böylece mef'ûlün leh, diğer iki mef'ûl türü arasında bir yerde durur: mef'ûl-i mutlak gibi kendine ait bir nesne rolü olmayan, nasb hâlinde salt bir masdardır; ancak mef'ûlün bih gibi, içerik olarak eylemin tekrarına değil, ardındaki saike ilişkindir."
+      ],
+      "erkennung": [
+        "Asıl fiilden sonra gelen, bir duygu veya saiki belirten ve 'hangi sebeple?' sorusunu cevaplayan, nekre ve soyut bir nasb ismi.",
+        "Mef'ûl-i mutlaktan ayrımı: kök, asıl fiilden farklıdır."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 19,
+          "wort": 15,
+          "zeigt": "حَذَرَ, prp ilişkisini taşır",
+          "warum": "mef'ûlün lehi, sebebin belirtilmesi olarak göstermektedir ('parmaklarını kulaklarına tıkarlar ... ölüm korkusuyla')"
+        },
+        {
+          "sure": 2,
+          "vers": 109,
+          "wort": 12,
+          "zeigt": "حَسَدًا, prp ilişkisini taşır",
+          "warum": "ikinci bir mef'ûlün lehi göstermektedir ('kitap ehlinin çoğu, içlerindeki kıskançlıktan dolayı sizi tekrar kâfir yapmak istediler')"
+        }
+      ],
+      "lernen": [
+        "Birden fazla ayette özellikle 'niçin?' soru testini uygula ve bunu mef'ûlün bihin 'kimi/neyi?' soru testinden bilinçli biçimde ayır.",
+        "Nasb hâlinde soyut saik isimlerinden (korku, saygı, umut...) kendi örneklerini topla.",
+        "Buradaki örneği bir mef'ûl-i mutlak örneğiyle karşılaştır ve kök farkını belirt."
+      ],
+      "tabellen": [],
+      "siehe": ["maful-mutlaq"]
+    },
+
+    "mubtada": {
+      "titel": "İsim Cümlesinin Öznesi (Mübteda)",
+      "ar": "مُبْتَدَأ",
+      "umschrift": "Mubtada",
+      "erklaerung": [
+        "Mübteda, bir isim cümlesinin öznesi/konusudur, ref hâlindedir ve genellikle cümlenin başında yer alır. Adı, kelimenin tam anlamıyla 'kendisiyle başlanılan şey' demektir.",
+        "Bir isim cümlesinin olası üç unsurundan (mübteda, haber, haberin müteallakı) yalnızca mübteda vazgeçilmezdir — haber ve haberin müteallakı, bağlamdan çıkarılabildikleri belirli koşullarda düşürülebilir.",
+        "Bütün bir terkip de (örneğin bir izafet veya bir mevsuf-sıfat çifti) mübteda görevi görebilir."
+      ],
+      "erkennung": [
+        "Bir isim cümlesinde ref hâlindeki ilk kelime — ya da cümle إِنَّ gibi bir nasb harfiyle başlıyorsa, bu harf ile kendi ismi birlikte.",
+        "Yapısal olarak, aynı cümlede daha sonra bir haberin, kendi bağlantı kelimesi (head) olarak mübtedaya işaret etmesinden de tanınır."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 2,
+          "wort": 1,
+          "zeigt": "ذَٰلِكَ, aynı ayette هُدًى (6. kelime, Pred ilişkisi) haberinin kendisine işaret ettiği mübtedadır",
+          "warum": "mübtedayı bir isim cümlesinin başı olarak göstermektedir ('bu kitap ... muttakiler için bir hidayettir') — haber, head değeriyle doğrudan bu kelimeye işaret eder"
+        },
+        {
+          "sure": 2,
+          "vers": 19,
+          "wort": 17,
+          "zeigt": "ٱللَّهُ (وَٱللَّهُ kelimesi içinde), مُحِيطٌۢ (18. kelime, Pred ilişkisi) haberinin kendisine işaret ettiği mübtedadır",
+          "warum": "ikinci bir mübteda-haber çiftini göstermektedir ('ve Allah kâfirleri kuşatmıştır')"
+        }
+      ],
+      "lernen": [
+        "Bir isim cümlesinde önce ilk ref kelimesini ara — bu, neredeyse her zaman mübtedadır.",
+        "Görünür bir haberi olmayan ayetlerde, mübteda ile ardından gelen haberin müteallakı arasındaki 'gizli -dır'ı tamamlamayı alıştırma yap.",
+        "İ'rab değişimini iyice kavramak için olağan isim cümlelerindeki mübteda-haber çiftlerini kâne ve inne cümlelerindekilerle karşılaştır."
+      ],
+      "tabellen": [],
+      "siehe": ["khabar", "kaana-wa-akhawatuha", "inna-wa-akhawatuha"]
+    },
+
+    "khabar": {
+      "titel": "İsim Cümlesinin Yüklemi (Haber)",
+      "ar": "خَبَر",
+      "umschrift": "Chabar",
+      "erklaerung": [
+        "Haber, mübteda hakkındaki ifadeyi verir ve 'mübtedaya ne oluyor?' sorusunu cevaplar. Olağan bir isim cümlesinde ref hâlindedir; kâne ve kız kardeşlerinde nasb hâline geçer, inne ve kız kardeşlerinde ise ref hâlinde kalır.",
+        "Haber tek bir kelime, bütün bir terkip (izafet, câr-mecrûr, mevsuf-sıfat) veya hatta tam bir cümle (isim ya da fiil cümlesi) olabilir. Kendisi bir cümle ise, sayı ve cins bakımından mübtedaya uymak zorundadır.",
+        "Arapçada mübteda ile haber arasında '-dır' anlamına gelen görünür bir kelime bulunmaz — bu, çeviri yaparken eklenmelidir."
+      ],
+      "erkennung": [
+        "Bir isim cümlesinin (kâne cümlelerinde nasb hâlindeki) ikinci ref işaretli unsuru olup, içerik olarak mübteda hakkında bir ifade sunan öge.",
+        "Korpus söz diziminde haber çoğunlukla Pred ilişkisini taşır ve head değeriyle kendi mübtedasına geri işaret eder."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 2,
+          "wort": 6,
+          "zeigt": "هُدًى, 1. kelimeye (mübteda ذَٰلِكَ) head ile işaret eden Pred ilişkisini taşır",
+          "warum": "olağan bir isim cümlesinin haberini ref hâlinde göstermektedir ('...muttakiler için bir hidayettir')"
+        },
+        {
+          "sure": 2,
+          "vers": 19,
+          "wort": 18,
+          "zeigt": "مُحِيطٌۢ, 17. kelimeye (mübteda ٱللَّهُ) head ile işaret eden Pred ilişkisini taşır",
+          "warum": "ikinci bir haber örneğini göstermektedir ('ve Allah kâfirleri kuşatmıştır') — mübteda maddesinin de ikinci delil olarak kullandığı aynı ayettir"
+        }
+      ],
+      "lernen": [
+        "Haberi her zaman ANCAK mübtedayı bulduktan sonra ara — ikisi birbirine aittir ve tam bir ifadeyi tamamlar.",
+        "Cümle şeklindeki haberi olan ayetlerde, mübteda ile içine yerleştirilmiş cümle arasındaki sayı/cins uyumunu kontrol etmeyi alıştırma yap.",
+        "İ'rab değişimini (ref-nasb) doğrudan görmek için aynı haberi olağan bir isim cümlesinde ve bir kâne cümlesinde karşılaştır."
+      ],
+      "tabellen": [],
+      "siehe": ["mubtada"]
+    },
+
+    "sifah": {
+      "titel": "Sıfat",
+      "ar": "صِفَة",
+      "umschrift": "Sifah",
+      "erklaerung": [
+        "Sıfat, mevsufun (nitelenen ismin) bir özelliğini betimler ve bunu yaparken DÖRT özelliğin TAMAMINDA ona uymak zorundadır: i'rab, sayı, cins ve marifelik/nekrelik. Bu tam dört noktalı uyum, tam olarak sıfatı bedelden ayıran şeydir (bkz. ilgili madde): bir bedel yalnızca i'rabı paylaşmak zorundadır, diğer üç özelliğin hiçbirini değil.",
+        "Sıfat her zaman mevsuftan sonra gelir, ancak ona bitişik olması gerekmez."
+      ],
+      "erkennung": [
+        "Dört nokta testi: Sıfat ile mevsufun i'rabı, sayısı, cinsi ve marifelik/nekrelik durumu tam olarak örtüşüyor mu? Öyleyse bir mevsuf-sıfat terkibi söz konusudur.",
+        "Bedele karşı içerik testi: İkinci kelime, aynı şeyin daha kesin bir kimliğini belirtmek yerine yalnızca birincinin bir NİTELİĞİNİ mi tanımlıyor (güzel, büyük, mümin...)? Öyleyse bu bir bedel değil, sıfattır."
+      ],
+      "belege": [
+        {
+          "sure": 1,
+          "vers": 1,
+          "wort": 3,
+          "zeigt": "ٱلرَّحْمَٰنِ, 2. kelimeye (ٱللَّهِ) head ile işaret eden Adj ilişkisini taşır",
+          "warum": "sıfatı, mevsufuyla tam uyum içinde göstermektedir (marife, ayete göre ref/cer, müzekker, müfred): 'Rahman olan Allah'ın adıyla'"
+        },
+        {
+          "sure": 1,
+          "vers": 1,
+          "wort": 4,
+          "zeigt": "ٱلرَّحِيمِ, 2. kelimeye (ٱللَّهِ) head ile işaret eden Adj ilişkisini taşır",
+          "warum": "aynı ayette aynı mevsufa ait ikinci bir sıfatı göstermektedir ('... Rahim olan') — arada bir atıf harfi olmadan art arda gelen iki sıfat"
+        }
+      ],
+      "lernen": [
+        "Dört nokta testini, otomatik hâle gelene kadar birden fazla mevsuf-sıfat çiftinde açıkça uygula.",
+        "Karşı örnekler topla: ilk bakışta sıfat gibi görünen ama i'rab bakımından birbirinden farklı olan kelime çiftlerini bul — bunlar ancak bedel olabilir.",
+        "Niteleme ile yeniden adlandırma arasındaki zıtlığı yaşamak için buradaki örneği doğrudan aynı ayetten bir bedel örneğiyle karşılaştır."
+      ],
+      "tabellen": [],
+      "siehe": ["badal"]
+    },
+
+    "haal": {
+      "titel": "Hâl",
+      "ar": "حَال",
+      "umschrift": "Haal",
+      "erklaerung": [
+        "Hâl, failin, mef'ûlün veya başka bir cümle ögesinin, asıl eylemin gerçekleştiği TAM O ANDAKİ DURUMUNU betimler. Tek bir kelime olduğunda nasb hâlindedir ve tipik olarak nekredir.",
+        "Hâl, bütün bir hâl cümlesi de olabilir (isim cümlesi ya da fiil cümlesi), bu genellikle hâliyye vavı (وَ الحَالِيَّة) denilen وَ ile başlatılır.",
+        "Temyizden ayrımı (bkz. ilgili madde): hâl, GEÇİCİ bir beraberlik durumunu betimler ('nasıl/hangi durumda'), temyiz ise bir TÜRÜ veya MİKTARI netleştirir ('ne türden/ne kadar')."
+      ],
+      "erkennung": [
+        "Asıl eylemden hemen sonra gelen, eşzamanlı bir beraberlik durumu betimleyen ve 'nasıl/hangi durumda?' sorusunu cevaplayan, nekre bir nasb kelimesi (veya وَ ile başlayan bir cümlecik).",
+        "Temyizden ayırma testi: kelime 'o ... iken' şeklinde ifade edilebiliyor mu? O zaman hâldir. 'Bakımından/açısından ...' şeklinde ifade edilebiliyorsa? O zaman temyizdir."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 22,
+          "wort": 22,
+          "zeigt": "وَأَنتُمْ (ardından gelen تَعْلَمُونَ ile birlikte, 23. kelime, circ ya da Pred ilişkisi)",
+          "warum": "aynı ayette öncesindeki eyleme ait bütün bir hâl cümlesi olarak hâli göstermektedir ('... siz bilirken')"
+        },
+        {
+          "sure": 2,
+          "vers": 25,
+          "wort": 27,
+          "zeigt": "مُتَشَٰبِهًا, circ ilişkisini taşır",
+          "warum": "nasb hâlinde tek kelimelik bir hâli göstermektedir ('ve onlara birbirine benzer olarak verilir')"
+        }
+      ],
+      "lernen": [
+        "Birden fazla ayette temyize karşı ayırma testini ('... iken' - '... bakımından') alıştırma yap.",
+        "Asıl bir fiilden hemen sonra وَ ile başlayan cümlecikleri özellikle ara ve eşzamanlı bir beraberlik durumu betimleyip betimlemediğini kontrol et.",
+        "Her iki yapıyı da tanımak için hem tek kelimelik hâl hem de cümlecik hâl örnekleri topla."
+      ],
+      "tabellen": [],
+      "siehe": ["tamyiz"]
+    },
+
+    "tamyiz": {
+      "titel": "Temyiz",
+      "ar": "تَمْيِيز",
+      "umschrift": "Tamyeez",
+      "erklaerung": [
+        "Temyiz, aksi hâlde belirsiz veya çok anlamlı olan bir ifadeyi netleştiren, nekre ve tekil bir nasb ismidir — genellikle bir sayıdan, bir ölçüden, bir karşılaştırmadan (ism-i tafdil) veya 'ne kadar' gibi belirsiz bir ifadeden sonra gelir. 'Ne türden/ne kadar?' sorusunu cevaplar.",
+        "On birden itibaren gelen sayılardan sonra (100 ve 1000 hariç), sayılan nesnenin (ma'dûd) kendisi temyiz olarak yer alır — nekre, tekil ve nasb hâlinde.",
+        "Hâlden ayrımı: temyiz bir TÜRÜ veya kategoriyi belirtir, geçici bir beraberlik durumunu değil; ve her zaman tek bir isimdir, asla bütün bir cümlecik değildir."
+      ],
+      "erkennung": [
+        "Bir sayıdan, bir ölçüden veya bir karşılaştırma kelimesinden hemen sonra gelen ve NEYİN sayıldığını/ölçüldüğünü/karşılaştırıldığını netleştiren, nekre ve tekil bir nasb ismi.",
+        "Asla bütün bir cümlecik değildir (bu, temyizi cümlecik biçiminde de görülebilen hâlden hemen ayırır)."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 60,
+          "wort": 13,
+          "zeigt": "عَيْنًا, Spec ilişkisini taşır",
+          "warum": "bir sayıdan sonra temyizi göstermektedir ('ondan on iki pınar fışkırdı') — عَيْنًا, 'on iki' ile neyin kastedildiğini netleştirir"
+        },
+        {
+          "sure": 2,
+          "vers": 26,
+          "wort": 28,
+          "zeigt": "مَثَلًا, Spec ilişkisini taşır",
+          "warum": "aksi hâlde belirsiz olan bir ifadeyi netleştiren bir temyizi göstermektedir ('Allah bir örnek vermekten çekinmez — bu bir sivrisinek de olsa')"
+        }
+      ],
+      "lernen": [
+        "On birden itibaren gelen sayı kelimeleri üzerinde özellikle alıştırma yap: ardından gelen nekre, tekil ve nasb hâlindeki ismi bul ve onu temyiz olarak adlandır.",
+        "'Ne türden/ne kadar' ile 'nasıl/hangi durumda' arasındaki farkı pekiştirmek için buradaki örneği bir hâl örneğiyle karşılaştır.",
+        "İşlevini sayı kelimeleri dışında da görmek için bir ism-i tafdilden (karşılaştırma kalıbı) sonra başka temyiz örnekleri ara."
+      ],
+      "tabellen": [],
+      "siehe": ["haal"]
+    },
+
+    "badal": {
+      "titel": "Bedel",
+      "ar": "بَدَل",
+      "umschrift": "Badal",
+      "erklaerung": [
+        "Bedel, ikinci bir ismin doğrudan birincinin ardından gelip onu daha yakından açıkladığı veya netleştirdiği bir isim-isim yapısıdır — sanki ikisinin arasında söylenmemiş bir 'yani ...' veya 'demek istediğim ...' bulunuyormuş gibi.",
+        "Bedel ('değiştirme/yerine geçme') adı, iki kelimenin her birinin tek başına cümleyi tam ve anlamlı kılmasından gelir — biri diğeriyle 'değiştirilebilir', cümle eksik kalmaz. Ancak birlikte kullanıldıklarında cümle daha kesin ve bilgilendirici olur.",
+        "Belirleyici gramer kuralı şudur: bir bedelin her iki ismi de AYNI i'rabta bulunmalıdır (ikisi de ref, ikisi de nasb veya ikisi de cer). Bu, tek koşuldur — sıfattan farklı olarak, sayı, cins veya marifelik/nekrelik uyuşmak ZORUNDA DEĞİLDİR.",
+        "Öğretimde en önemli karıştırma tehlikesi tam olarak budur: bir bedel, yüzeyde çoğu zaman bir sıfat (nitelik betimlemesi) gibi görünür, çünkü her iki yapı da art arda gelen iki isimden oluşur. Aradaki fark amaçtadır: bir sıfat, mevsufun bir özelliğini BETİMLER (dört özellikte de ona uyarak); bir bedel ise aynı şeyi bir kez daha, daha kesin biçimde ADLANDIRIR veya onu daha kesin bir isimle değiştirir (yalnızca i'rabta uyarak). 'Yani ...' testi ikisini güvenilir biçimde ayırır: iki kelime arasına anlamlı biçimde 'yani' konabiliyorsa, bu bir bedeldir; ikinci kelime yalnızca birincinin bir niteliğini betimliyorsa, bu bir sıfattır."
+      ],
+      "erkennung": [
+        "'Yani' testi: iki isim arasına 'yani' veya 'şöyle ki' eklemek anlamlı mı? Öyleyse bu bir bedeldir.",
+        "İ'rab testi: her iki isim de aynı i'rabta mı (ref/nasb/cer)? Bu gerekli bir koşuldur — ancak sıfattan FARKLI olarak, kalan üç özelliğin (sayı, cins, marifelik/nekrelik) uyuşması gerekmez.",
+        "Değiştirme testi: iki kelimeden biri çıkarılsa, cümle tek başına yine tam ve doğru kalır mı? Öyleyse büyük olasılıkla bir bedel söz konusudur."
+      ],
+      "belege": [
+        {
+          "sure": 1,
+          "vers": 2,
+          "wort": 3,
+          "zeigt": "رَبِّ, 2. kelimeye (لِلَّهِ) head ile işaret eden App ilişkisini taşır",
+          "warum": "cer hâlinde bir bedeli göstermektedir: 'Hamd Allah'a mahsustur, [yani] âlemlerin Rabbine' — رَبِّ, لِلَّهِ ile kimin kastedildiğini netleştirir, ikisi de aynı cer hâlindedir"
+        },
+        {
+          "sure": 1,
+          "vers": 7,
+          "wort": 1,
+          "zeigt": "صِرَٰطَ, App ilişkisini taşır",
+          "warum": "ayet sınırını aşan, nasb hâlinde bir bedeli göstermektedir: 'doğru yolu — [yani] kendilerine nimet verdiklerinin yolunu' — önceki 6. ayetten devam etmektedir"
+        }
+      ],
+      "lernen": [
+        "Önce 'yani' testini aklında tut ve sıfatı düşünmeden önce, art arda gelen her isim çiftine tutarlı biçimde uygula.",
+        "Özellikle karşı örnekler ara: bilinen bir mevsuf-sıfat örneğini al ve 'yani' testinin orada NEDEN işe yaramadığını kontrol et.",
+        "İki kelime çifti marifelik/uzunluk bakımından farklı olsa da, buradaki iki örnekte i'rab uyumunu (2. ayette cer, 7. ayette nasb) açıkça kanıtlamayı alıştırma yap.",
+        "Kendine üç ile beş arası ek bedel örneğinden küçük bir koleksiyon oluştur ve her birinde ortak i'rabı belirt."
+      ],
+      "tabellen": [],
+      "siehe": ["sifah", "mudaf-ilayh"]
+    },
+
+    "mudaf-ilayh": {
+      "titel": "İzafetin İkinci Unsuru (Muzâfun İleyh)",
+      "ar": "مُضَاف إِلَيْه",
+      "umschrift": "Mudaaf Ilayh",
+      "erklaerung": [
+        "Bir izafette (sahiplik terkibi, örn. 'Allah'ın kitabı') muzâfun ileyh ikinci kelimedir — 'sahip' olandır. İlk kelimenin (muzâf) kendisi hangi i'rabta olursa olsun, muzâfun ileyh her zaman cer hâlindedir.",
+        "Muzâf (birinci kelime, 'sahip olunan' şey), asla aynı anda hem belirtme takısı hem de tenvin taşımaz — marifeliğini muzâfun ileyhten 'ödünç alır'."
+      ],
+      "erkennung": [
+        "Kendisi ne belirtme takısı ne de tenvin taşıyan başka bir isimden hemen sonra gelen, cer işaretli bir isim.",
+        "Öncesindeki kelimeye ilişkin 'kimin?' sorusunu cevaplar."
+      ],
+      "belege": [
+        {
+          "sure": 1,
+          "vers": 1,
+          "wort": 2,
+          "zeigt": "ٱللَّهِ, 1. kelimeye (بِسْمِ) head ile işaret eden Poss ilişkisini taşır",
+          "warum": "Kur'an'ın ilk izafet terkibinde muzâfun ileyhi göstermektedir ('Allah'ın adıyla') — بِسْمِ kelimesinin kendisi ne belirtme takısı ne de tenvin taşır"
+        },
+        {
+          "sure": 1,
+          "vers": 2,
+          "wort": 4,
+          "zeigt": "ٱلْعَٰلَمِينَ, 3. kelimeye (رَبِّ) head ile işaret eden Poss ilişkisini taşır",
+          "warum": "aynı Fatiha suresinde ikinci bir muzâfun ileyhi göstermektedir ('âlemlerin Rabbi')"
+        }
+      ],
+      "lernen": [
+        "Birden fazla ayette önce belirtme takısı ve tenvin taşımayan ilk kelimeyi bulmayı alıştırma yap — bu, bir izafeti gösterir; ardından gelen cer kelimesi muzâfun ileyhtir.",
+        "Art arda dizilmiş birden fazla izafetten zincirler kur (örn. 'insanların hesap günü') ve her bir muzâfun ileyh unsurunu adlandır.",
+        "Muzâfun ileyhi bir harf-i cerden sonraki mecrûr ile karşılaştır — ikisi de cer hâlindedir, ama farklı sebeplerden dolayı."
+      ],
+      "tabellen": [],
+      "siehe": ["badal", "huruf-jarr"]
+    },
+
+    "munada": {
+      "titel": "Münada",
+      "ar": "مُنَادَى",
+      "umschrift": "Munaadaa",
+      "erklaerung": [
+        "Münada, bir nida harfinden sonra gelen ve kendisine seslenilen isimdir — genellikle يَا, bir gruba seslenirken çoğunlukla يَا أَيُّهَا biçimindedir. Münadadan sonra çoğunlukla, onu daha kesin biçimde adlandıran başka bir isim gelir (يَا أَيُّهَا durumunda tipik olarak bir bedel olarak).",
+        "Bir özel isimle (يَا + isim) doğrudan seslenmede münada genellikle özel ismin kendisidir; يَا أَيُّهَا'da ise asıl mebni münada أَيُّهَا'dır ve ardından gelen isim (örneğin ٱلنَّاسُ) bununla kimin kastedildiğini netleştirir."
+      ],
+      "erkennung": [
+        "يَا veya أَيُّهَا'dan hemen sonra gelen ve kendisine seslenilen kişiyi veya grubu adlandıran bir kelime (veya küçük bir terkip).",
+        "يَا أَيُّهَا'dan sonra genellikle aynı i'rabta netleştirici bir isim gelir — münadanın kendisine ait bir bedel."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 21,
+          "wort": 1,
+          "zeigt": "يَٰٓأَيُّهَا, voc ilişkisini taşır",
+          "warum": "münadayı bir seslenişin başı olarak göstermektedir ('Ey insanlar, Rabbinize kulluk edin') — ardından gelen ٱلنَّاسُ (2. kelime) onu bir bedel olarak netleştirir"
+        },
+        {
+          "sure": 2,
+          "vers": 33,
+          "wort": 2,
+          "zeigt": "يَٰٓـَٔادَمُ, voc ilişkisini taşır",
+          "warum": "özel bir isimle tek bir kişiye doğrudan seslenişi göstermektedir ('Dedi ki: Ey Âdem, onlara isimlerini bildir')"
+        }
+      ],
+      "lernen": [
+        "Kur'an'da özellikle يَا أَيُّهَا örneklerini ara ve hem münadayı hem de ardından gelen netleştirici ismi adlandır.",
+        "Birden fazla seslenişi birbiriyle karşılaştır: her birinde kime seslenilir ve grup ayrıca nasıl adlandırılır?",
+        "يَا أَيُّهَا + isim yapısının çifte rolünü anlamak için bu maddeyi bilinçli olarak bedel ile ilişkilendir."
+      ],
+      "tabellen": [],
+      "siehe": ["badal"]
+    },
+
+    "mustathna": {
+      "titel": "Müstesna",
+      "ar": "مُسْتَثْنَى",
+      "umschrift": "Mustathnaa",
+      "erklaerung": [
+        "Müstesna, bir istisna edatından — özellikle إِلَّا'dan — sonra gelen ve aksi hâlde genel olan bir ifadeden hariç tutulan kelimedir. Daha önce belirtilen grup/ifadeden KİMİN veya NEYİN hariç tutulduğunu belirtir.",
+        "Müstesnanın tam i'rabı cümlenin türüne bağlıdır (tam-olumlu, tam-olumsuz veya nakıs) — başlangıç için onu إِلَّا'dan hemen sonra gelen bağımsız bir i'rab rolü olarak tanımak yeterlidir."
+      ],
+      "erkennung": [
+        "إِلَّا'dan hemen sonra gelen ve önce belirtilen, daha genel bir grubu veya ifadeyi sınırlayan bir isim ('... hariç hepsi').",
+        "Müstesna ve إِلَّا olmadan cümle zaten tek başına tamdır — müstesna, önceden yapılan ifadeyi yalnızca sonradan daraltır."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 34,
+          "wort": 8,
+          "zeigt": "إِبْلِيسَ, exp ilişkisini taşır",
+          "warum": "إِلَّا'dan sonra müstesnayı göstermektedir ('hepsi secde etti, İblis hariç') — İblis, melekler hakkındaki genel ifadeden hariç tutulmaktadır"
+        },
+        {
+          "sure": 2,
+          "vers": 83,
+          "wort": 26,
+          "zeigt": "قَلِيلًا, exp ilişkisini taşır",
+          "warum": "ikinci bir müstesnayı göstermektedir ('sonra içinizden pek azı hariç yüz çevirdiniz')"
+        }
+      ],
+      "lernen": [
+        "Özellikle إِلَّا örneklerini ara ve her birinde önce hangi genel ifadenin yapıldığını ve kimin/neyin bundan hariç tutulduğunu belirt.",
+        "Birden fazla müstesna örneğini karşılaştır ve i'rabın cümle türüne göre ne kadar farklı olabileceğini gözlemle.",
+        "Cümleyi deneme amaçlı إِلَّا ve müstesna olmadan çevir — geriye kalan ifadenin hâlâ tam bir cümle olup olmadığını kontrol et."
+      ],
+      "tabellen": [],
+      "siehe": []
+    },
+
+    "taukid": {
+      "titel": "Tekid",
+      "ar": "تَوْكِيد",
+      "umschrift": "Taukid",
+      "erklaerung": [
+        "Tekid, içerik olarak yeni bir şey eklemeden öncesindeki bir ismi pekiştirir — bağlantılı olduğu kelimeyle AYNI i'rabtadır. İki tür özellikle sık görülür: sözcüğün olduğu gibi tekrarı (lafzi tekid) ve uygun bir bitişik zamirle birlikte كُلّ/جَمِيع ('hepsi/tamamı') veya نَفْس/عَيْن ('kendisi') gibi sabit kelimelerle yapılan pekiştirme (manevi tekid).",
+        "Bedelden farklı olarak tekid, cümleye yeni, netleştirici bir kimlik eklemez — yalnızca daha önce zikredilen aynı şeyi, özellikle vurgulu görünmesi için tekrarlar veya pekiştirir."
+      ],
+      "erkennung": [
+        "Bağlantılı olduğu kelimeden hemen sonra, aynı i'rabta gelen ve bağlantılı kelimeye uydurulmuş bitişik bir zamir taşıyan كُلّ, جَمِيع, نَفْس veya عَيْن gibi bir kelime — ve yeni bir içerik bilgisi taşımadan.",
+        "Söz konusu kelime, hiçbir bilgi kaybı olmadan (yalnızca vurgu zayıflayarak) tamamen çıkarılabiliyor mu? Öyleyse bu bir tekiddir."
+      ],
+      "belege": [
+        {
+          "sure": 2,
+          "vers": 31,
+          "wort": 4,
+          "zeigt": "كُلَّهَا, emph ilişkisini taşır",
+          "warum": "كُلّ + bitişik zamir ile manevi tekidi göstermektedir ('ve Âdem'e isimlerin hepsini öğretti') — yeni bir bilgi eklemeden ٱلْأَسْمَآءَ'yi pekiştirmektedir"
+        },
+        {
+          "sure": 2,
+          "vers": 161,
+          "wort": 13,
+          "zeigt": "أَجْمَعِينَ, emph ilişkisini taşır",
+          "warum": "جَمِيع/أَجْمَعِينَ ile tekidi göstermektedir ('Allah'ın, meleklerin ve bütün insanların laneti')"
+        }
+      ],
+      "lernen": [
+        "Bir isimden hemen sonra özellikle كُلّ/جَمِيع/نَفْس/عَيْن'i ara ve eklenen zamirin bu isme uyup uymadığını kontrol et.",
+        "Tekidi bilinçli olarak bedelden ayır: tekid yeni bir bilgi eklemez, bedel ise netleştirir/yeniden adlandırır.",
+        "Aynı cümleyi bir kez tekid kelimesiyle, bir kez de onsuz çevir ve içeriğin değil, yalnızca vurgunun değiştiğini gözlemle."
+      ],
+      "tabellen": [],
+      "siehe": []
+    }
+  }
+}
