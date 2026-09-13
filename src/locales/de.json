@@ -125,6 +125,7 @@
       }
     },
     "wordByWord": "Wort für Wort",
+    "wordByWordSource": "Wort für Wort: Quranic Universal Library (QUL), Glossen von QuranWBW",
     "offline": "Offline",
     "download": "Herunterladen",
     "searchAyahs": "Verse durchsuchen",
@@ -2895,7 +2896,8 @@
       "fontEula": "Hersteller-Lizenz (im Font eingebettet)",
       "hadeethencTerms": "Unveränderte Wiedergabe mit Quellennennung (Anbieterbedingungen)",
       "rassoulRelease": "Vom Autor freigegeben - unveränderte Wiedergabe mit Quellennennung",
-      "quranicCorpusTerms": "Quellenangabe und Verlinkung erforderlich (Nutzungsbedingungen des Werks)"
+      "quranicCorpusTerms": "Quellenangabe und Verlinkung erforderlich (Nutzungsbedingungen des Werks)",
+      "qulWbwTerms": "Keine Rechteangabe des Anbieters - Bedingungen ungeklärt, Freigabe zur Weitergabe steht aus"
     },
     "distributedSection": "Was wir selbst weitergeben",
     "distributedText": "Die meisten Inhalte holt dein Gerät direkt beim jeweiligen Anbieter - die geben wir nicht weiter, dort genügt die Nennung. Selbst weiter geben wir: das Sprachmodell Qwen2.5-1.5B-Instruct und das Spracherkennungs-Modell von Tarteel (beide über unseren eigenen Speicher), die Schriftart KFGQPC HAFS und alle Software-Bibliotheken im App-Paket. Für diese Werke liegt der vollständige Lizenztext bei - aufklappbar direkt beim jeweiligen Eintrag. Ebenfalls von uns ausgeliefert wird der deutsche Tafsir von Abu-r-Ridā Muhammad Ibn Ahmad Ibn Rassoul - der Autor hat ihn frei von Copyright gestellt, verlangt aber die Nennung der Quelle.",

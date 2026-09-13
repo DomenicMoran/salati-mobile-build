@@ -125,6 +125,7 @@
       }
     },
     "wordByWord": "Kelime kelime",
+    "wordByWordSource": "Kelime kelime: Quranic Universal Library (QUL), sözlük anlamları QuranWBW'den",
     "offline": "Çevrimdışı",
     "download": "İndir",
     "searchAyahs": "Ayet Ara",
@@ -2895,7 +2896,8 @@
       "fontEula": "Üretici lisansı (yazı tipine gömülü)",
       "hadeethencTerms": "Kaynak belirtilerek değiştirilmeden aktarım (sağlayıcı şartları)",
       "rassoulRelease": "Yazar tarafından serbest bırakıldı - kaynak belirtilerek değiştirilmeden çoğaltma",
-      "quranicCorpusTerms": "Kaynak belirtme ve bağlantı zorunlu (eserin kullanım koşulları)"
+      "quranicCorpusTerms": "Kaynak belirtme ve bağlantı zorunlu (eserin kullanım koşulları)",
+      "qulWbwTerms": "Sağlayıcıdan telif hakkı bilgisi yok - koşullar belirsiz, yeniden dağıtım izni beklemede"
     },
     "distributedSection": "Kendimiz dağıttıklarımız",
     "distributedText": "İçeriklerin çoğunu cihazın doğrudan ilgili sağlayıcıdan alır - onları biz dağıtmıyoruz, orada kaynağı belirtmek yeterli. Kendimiz şunları dağıtıyoruz: Qwen2.5-1.5B-Instruct dil modeli ve Tarteel’in konuşma tanıma modeli (ikisi de kendi depomuzdan), KFGQPC HAFS yazı tipi ve uygulama paketindeki tüm yazılım kütüphaneleri. Bu eserler için lisans metninin tamamı ektedir - ilgili kaydın altından açabilirsin. Abu-r-Ridā Muhammad Ibn Ahmad Ibn Rassoul’un Almanca tefsirini de biz sunuyoruz - yazar eseri telif hakkından muaf tuttu, ancak kaynağın belirtilmesini şart koşuyor.",

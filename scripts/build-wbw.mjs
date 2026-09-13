@@ -8,6 +8,18 @@
 // .daten-cache/qul/ (Dateinamen siehe SPRACHEN unten); heruntergeladen wird
 // hier nichts.
 //
+// RECHTELAGE (Lücken-Audit 2026-09-12) — vor dem nächsten Bau lesen: wir
+// verarbeiten diese Rohdaten zu eigenen Dateien und liefern sie über unseren
+// eigenen R2-Speicher aus (scripts/upload-wbw-r2.mjs) — das ist Weitergabe,
+// kein blosser Abruf beim Anbieter. QUL selbst führt für genau diese sechs
+// Ressourcen KEIN Urheberrechts-Kennzeichen ("We don't have copyright
+// information for this resource") und die eigene FAQ empfiehlt, die
+// Bedingungen je Ressource vor der Nutzung selbst zu prüfen. Eine Freigabe
+// zur Weitergabe liegt uns NICHT vor. Die schriftliche Anfrage an
+// Tarteel/Quran.Foundation ist offener Punkt Nr. 3 in USER-TODO.md; bis zur
+// Antwort behauptet weder die App (lizenzen.tsx, Kategorie `quran`,
+// `@qulWbwTerms`) noch dieser Kommentar eine Lizenz, die niemand erteilt hat.
+//
 // WORTGRUPPEN — der Kern dieses Skripts. Eine Glosse deckt nicht immer genau
 // ein arabisches Wort: wo mehrere Wörter zu EINER Bedeutung verschmelzen,
 // markiert die Quelle die mitgemeinten Positionen als Lücke — in der

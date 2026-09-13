@@ -74,14 +74,25 @@ const config: ExpoConfig = {
   // `version` gedacht (genau der Fall des KI-Korpus-Fixes vom 27.07.).
   runtimeVersion: VERSION,
   ios: {
-    icon: './assets/expo.icon',
+    // KEIN eigenes ios.icon: laut Expo-Doku (v57, config/app) gilt
+    // "If specified, this overrides the top-level `icon` key". Hier stand bis
+    // 13.09.2026 './assets/expo.icon' – ein Icon-Composer-Paket aus dem
+    // Expo-Geruest vom 10.07., das seither auf iOS das echte Markenicon
+    // verdraengt hat. Im App Store war dadurch ein anderes Bild zu sehen als
+    // bei Google Play: der Stern nur etwa halb so gross, in einem gerahmten
+    // Kasten mit Verlauf und Schlagschatten (icon.json setzt translucency 0.5
+    // und einen Versatz von -16 Punkten). Ohne diese Zeile nimmt iOS dasselbe
+    // assets/images/icon.png wie Android – ein Icon auf beiden Plattformen.
     // appVersionSource: 'local' (eas.json) → buildNumber wird hier gelesen (kein
     // ios/-Verzeichnis, prebuild-managed). 40 > alle bisherigen App-Store-Builds.
     // Android musste am 25.08. von 75 auf 76 springen (Play: "Version code 75
     // has already been used" — s. android/app/build.gradle). Build 75 bei
     // Apple ist die abgelehnte 1.51.0-Einreichung; fuer den naechsten Versuch
     // hier nachgezogen, damit beide Plattformen wieder dieselbe Zahl tragen.
-    buildNumber: '84',
+    // 85: Bau 84 lag am 13.09.2026 mit 1.54.0 bei Apple und trug noch das
+    // falsche App-Icon. Die Einreichung wurde zurueckgezogen (Fassung steht
+    // seither auf DEVELOPER_REJECTED); 1.54.0 geht mit diesem Bau neu raus.
+    buildNumber: '85',
     // ASC-App "Salati Islam" (6791867298) wurde vom User unter dieser ID
     // angelegt (2026-07-17) — beide Plattformen nutzen de.salatibox.de.
     bundleIdentifier: 'de.salatibox.de',

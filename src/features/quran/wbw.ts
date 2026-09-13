@@ -1,9 +1,14 @@
 // Laden der Wort-für-Wort-Bedeutungen je Sprache und Sure.
 //
-// HERKUNFT (Entwicklerdoku — an der Oberfläche wird sie bewusst NICHT
-// genannt): die Wort-für-Wort-Datensätze des Quranic-Universal-Library-
-// Projekts (qul.tarteel.ai), aufbereitet von scripts/build-wbw.mjs und
-// ausgeliefert von scripts/upload-wbw-r2.mjs unter wbw/v2/<sprache>/<sure>.json.
+// HERKUNFT: die Wort-für-Wort-Datensätze des Quranic-Universal-Library-
+// Projekts (qul.tarteel.ai, Glossen von QuranWBW), aufbereitet von
+// scripts/build-wbw.mjs und ausgeliefert von scripts/upload-wbw-r2.mjs unter
+// wbw/v2/<sprache>/<sure>.json. Seit dem Lücken-Audit vom 2026-09-12 wird die
+// Quelle auch an der Oberfläche genannt (Fußzeile im Reader, s.
+// wbwQuelleSichtbar in app/(tabs)/quran/[surah].tsx) — bis 1.54.0 war das
+// nicht der Fall. Rechtelage siehe lizenzen.tsx, Kategorie `quran`: QUL
+// selbst nennt für diese sechs Ressourcen kein Urheberrecht, eine Freigabe
+// zur Weitergabe liegt nicht vor (USER-TODO.md Nr. 3).
 //
 // WARUM ÜBERHAUPT: quran.coms Wort-Endpunkt (features/quran/api.ts,
 // fetchSurahWordByWord) liefert die Einzelwort-Bedeutung AUSSCHLIESSLICH auf

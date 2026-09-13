@@ -125,6 +125,7 @@
       }
     },
     "wordByWord": "Neno kwa neno",
+    "wordByWordSource": "Neno kwa neno: Quranic Universal Library (QUL), tafsiri fupi na QuranWBW",
     "offline": "Nje ya mtandao",
     "download": "Pakua",
     "searchAyahs": "Tafuta Aya",
@@ -2895,7 +2896,8 @@
       "fontEula": "Leseni ya mtengenezaji (imejumuishwa ndani ya fonti)",
       "hadeethencTerms": "Kunukuu bila mabadiliko pamoja na kutaja chanzo (masharti ya mtoa huduma)",
       "rassoulRelease": "Imetolewa huru na mwandishi - kunakili bila mabadiliko kwa kutaja chanzo",
-      "quranicCorpusTerms": "Inahitajika kutaja chanzo na kiungo (masharti ya matumizi ya kazi)"
+      "quranicCorpusTerms": "Inahitajika kutaja chanzo na kiungo (masharti ya matumizi ya kazi)",
+      "qulWbwTerms": "Hakuna taarifa ya hakimiliki kutoka kwa mtoa huduma - masharti hayajabainika, kibali cha kusambaza bado hakijapatikana"
     },
     "distributedSection": "Tunachosambaza sisi wenyewe",
     "distributedText": "Maudhui mengi kifaa chako hukichukua moja kwa moja kutoka kwa mtoa huduma husika - hatuyasambazi upya, hapo kutaja chanzo kunatosha. Tunachosambaza sisi wenyewe: modeli ya lugha Qwen2.5-1.5B-Instruct na modeli ya utambuzi wa sauti ya Tarteel (zote mbili kutoka hifadhi yetu wenyewe), fonti ya KFGQPC HAFS na maktaba zote za programu zilizomo ndani ya kifurushi cha programu. Kwa kazi hizi maandishi kamili ya leseni yameambatishwa - yanafunguka hapo hapo chini ya kila kipengele. Pia tunatoa wenyewe tafsiri ya Kijerumani ya Abu-r-Ridā Muhammad Ibn Ahmad Ibn Rassoul - mwandishi aliiweka huru bila hakimiliki, lakini anataka chanzo kitajwe.",

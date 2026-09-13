@@ -595,6 +595,15 @@ export default function SurahReaderScreen() {
     wortlisteFehler: wordByWordError,
     sprachdateiFehler: wbwFehler,
   });
+  // Quellennennung der Wort-für-Wort-Zeile am Ort der Nutzung (gleiches Muster
+  // wie uebersetzerZeilen unten) — nur wenn tatsächlich der QUL-Datensatz
+  // gezeigt wird: `wbwSprache` grenzt auf die sechs Sprachen mit eigenem
+  // Datensatz ein (schließt Deutsch/Englisch aus, die von wbw-de.ts bzw.
+  // quran.com kommen und dort schon genannt sind), `art` schließt den
+  // Fehler- und den "(EN)"-Rückfall aus (dann wird gar keine QUL-Glosse
+  // gezeigt). Siehe lizenzen.tsx, Kategorie `quran`, für die Rechtelage.
+  const wbwQuelleSichtbar =
+    showWordByWord && wbwSprache !== null && (wbwZustand.art === 'eigen' || wbwZustand.art === 'teilweise');
   // „Erneut versuchen“ muss ALLES neu holen, was die Anzeige braucht. Beide
   // Abfragen bleiben bis zum Erfolg auf `isError` (React Query kippt den Status
   // erst mit den Daten), die Beschriftung gibt also erst dann Entwarnung, wenn
@@ -2103,15 +2112,27 @@ export default function SurahReaderScreen() {
                  * davon ist die Namensnennung das Urheberpersönlichkeitsrecht
                  * des Übersetzers (§ 13 UrhG).
                  *
+                 * Dieselbe Fußzeile trägt seit dem Lücken-Audit vom
+                 * 2026-09-12 auch die Quelle der Wort-für-Wort-Zeile
+                 * (wbwQuelleSichtbar oben) — die stand bis 1.54.0 an keiner
+                 * Stelle im Reader, obwohl die Übersetzer direkt daneben
+                 * genannt werden. Siehe lizenzen.tsx (Kategorie `quran`) für
+                 * die ungeklärte Rechtelage dieses Datensatzes.
+                 *
                  * Im Fokus-Modus ausgeblendet: dort zählt nur der Vers. */
                 ListFooterComponent={
-                  !focusMode && uebersetzerZeilen.length > 0 ? (
+                  !focusMode && (uebersetzerZeilen.length > 0 || wbwQuelleSichtbar) ? (
                     <View style={styles.uebersetzerFuss}>
                       {uebersetzerZeilen.map((zeile) => (
                         <ThemedText key={zeile} type="small" themeColor="textSecondary" sepia={sepia}>
                           {zeile}
                         </ThemedText>
                       ))}
+                      {wbwQuelleSichtbar ? (
+                        <ThemedText type="small" themeColor="textSecondary" sepia={sepia}>
+                          {t('quran.wordByWordSource')}
+                        </ThemedText>
+                      ) : null}
                     </View>
                   ) : null
                 }

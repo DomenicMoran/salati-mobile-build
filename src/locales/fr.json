@@ -125,6 +125,7 @@
       }
     },
     "wordByWord": "Mot à mot",
+    "wordByWordSource": "Mot à mot : Quranic Universal Library (QUL), gloses de QuranWBW",
     "offline": "Hors ligne",
     "download": "Télécharger",
     "searchAyahs": "Rechercher des versets",
@@ -2895,7 +2896,8 @@
       "fontEula": "Licence du fabricant (intégrée à la police)",
       "hadeethencTerms": "Reproduction sans modification avec mention de la source (conditions du fournisseur)",
       "rassoulRelease": "Libéré par l'auteur - reproduction inchangée avec mention de la source",
-      "quranicCorpusTerms": "Mention de la source et lien requis (conditions d'utilisation de l'œuvre)"
+      "quranicCorpusTerms": "Mention de la source et lien requis (conditions d'utilisation de l'œuvre)",
+      "qulWbwTerms": "Aucune indication de droits de la part du fournisseur - conditions non clarifiées, autorisation de redistribution en attente"
     },
     "distributedSection": "Ce que nous diffusons nous-mêmes",
     "distributedText": "La plupart des contenus sont récupérés par ton appareil directement auprès du fournisseur concerné - nous ne les rediffusons pas, la mention de la source y suffit. Ce que nous diffusons nous-mêmes : le modèle de langue Qwen2.5-1.5B-Instruct et le modèle de reconnaissance vocale de Tarteel (tous deux depuis notre propre stockage), la police KFGQPC HAFS et toutes les bibliothèques logicielles contenues dans l’application. Pour ces œuvres, le texte intégral de la licence est joint - il s’ouvre directement sous l’entrée concernée. Nous diffusons également nous-mêmes le tafsir en allemand d’Abu-r-Ridā Muhammad Ibn Ahmad Ibn Rassoul - l’auteur l’a libéré de tout droit d’auteur, mais exige la mention de la source.",

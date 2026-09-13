@@ -125,6 +125,7 @@
       }
     },
     "wordByWord": "Kata per kata",
+    "wordByWordSource": "Kata per kata: Quranic Universal Library (QUL), glosa oleh QuranWBW",
     "offline": "Offline",
     "download": "Unduh",
     "searchAyahs": "Cari Ayat",
@@ -2895,7 +2896,8 @@
       "fontEula": "Lisensi produsen (tertanam dalam huruf)",
       "hadeethencTerms": "Pemuatan tanpa perubahan dengan penyebutan sumber (ketentuan penyedia)",
       "rassoulRelease": "Dibebaskan oleh penulis - penggandaan tanpa perubahan dengan menyebut sumber",
-      "quranicCorpusTerms": "Wajib menyebutkan sumber dan menautkan (ketentuan penggunaan karya)"
+      "quranicCorpusTerms": "Wajib menyebutkan sumber dan menautkan (ketentuan penggunaan karya)",
+      "qulWbwTerms": "Tidak ada keterangan hak cipta dari penyedia - ketentuan belum jelas, izin penyebaran masih tertunda"
     },
     "distributedSection": "Yang kami sebarkan sendiri",
     "distributedText": "Sebagian besar konten diambil perangkatmu langsung dari penyedianya - kami tidak menyebarkannya ulang, jadi menyebut sumbernya sudah cukup. Yang kami sebarkan sendiri: model bahasa Qwen2.5-1.5B-Instruct dan model pengenalan suara dari Tarteel (keduanya dari penyimpanan kami sendiri), fon KFGQPC HAFS, serta seluruh pustaka perangkat lunak di dalam paket aplikasi. Untuk karya-karya itu teks lisensi lengkapnya dilampirkan - bisa dibuka langsung pada entri terkait. Kami juga menyalurkan sendiri tafsir berbahasa Jerman karya Abu-r-Ridā Muhammad Ibn Ahmad Ibn Rassoul - penulis membebaskannya dari hak cipta, tetapi mensyaratkan penyebutan sumber.",

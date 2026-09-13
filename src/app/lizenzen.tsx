@@ -35,6 +35,14 @@ import { useTranslation } from '@/lib/i18n';
  * bedingungen der Quranic Arabic Corpus (Quellennennung + Link auf
  * corpus.quran.com) und MIT (NoorBayan/Quranic).
  *
+ * UNGEKLAERT statt Pflichtnennung: die Wort-für-Wort-Bedeutungen (sechs
+ * Sprachen, seit 1.54.0) stammen von der Quranic Universal Library (QUL,
+ * Glossen von QuranWBW) und werden wie die QAC-Morphologie über unseren
+ * eigenen Speicher weitergegeben — aber QUL selbst nennt für diese sechs
+ * Ressourcen KEIN Urheberrecht. `@qulWbwTerms` behauptet deshalb keine
+ * Freigabe, sondern beschreibt den ungeklärten Stand ehrlich (s. u. bei der
+ * Kategorie `quran`). Anfrage an den Anbieter: USER-TODO.md Nr. 3.
+ *
  * ENTFALLEN am 2026-07-30: die Hadith-Datensaetze von fawazahmed0 und
  * AhmedBaset. Beide standen selbst unter freien Lizenzen, aber die decken die
  * SAMMLUNG, nicht zwingend die enthaltenen Uebersetzungen — deren Rechtekette
@@ -103,6 +111,27 @@ const CATEGORIES: { key: string; entries: Entry[] }[] = [
         license: 'MIT',
         url: 'https://github.com/NoorBayan/Quranic',
         text: 'mit',
+      },
+      // Wort-fuer-Wort-Bedeutungen (WBW) im Koran-Leser fuer sechs Sprachen
+      // (Tuerkisch, Franzoesisch, Persisch, Indonesisch, Bengali, Urdu).
+      // Bezugsquelle ist die Quranic Universal Library (QUL, qul.tarteel.ai),
+      // Urheber der Glossen ist QuranWBW; wir verarbeiten die Rohdaten zu
+      // eigenen Dateien (scripts/build-wbw.mjs) und liefern sie ueber unseren
+      // eigenen R2-Speicher aus — Weitergabe, kein blosser Abruf beim
+      // Anbieter (wie beim Quranic Arabic Corpus oben).
+      //
+      // ANDERS ALS BEI JEDEM ANDEREN EINTRAG DIESER KATEGORIE liegt hier
+      // KEINE Freigabe vor: QUL fuehrt fuer genau diese sechs Ressourcen kein
+      // Urheberrechts-Kennzeichen ("We don't have copyright information for
+      // this resource") und die eigene FAQ empfiehlt, die Bedingungen je
+      // Ressource vor der Nutzung selbst zu pruefen. `@qulWbwTerms` behauptet
+      // deshalb bewusst KEINE Lizenz, sondern nennt den ungeklaerten Stand.
+      // Die schriftliche Anfrage an Tarteel/Quran.Foundation ist offener
+      // Punkt Nr. 3 in USER-TODO.md.
+      {
+        name: 'Wort-für-Wort-Bedeutungen (tr, fr, fa, id, bn, ur) — Quranic Universal Library (QUL), Glossen von QuranWBW',
+        license: '@qulWbwTerms',
+        url: 'https://qul.tarteel.ai',
       },
     ],
   },

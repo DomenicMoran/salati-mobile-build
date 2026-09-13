@@ -125,6 +125,7 @@
       }
     },
     "wordByWord": "Word by word",
+    "wordByWordSource": "Word by word: Quranic Universal Library (QUL), glosses by QuranWBW",
     "offline": "Offline",
     "download": "Download",
     "searchAyahs": "Search Verses",
@@ -2895,7 +2896,8 @@
       "fontEula": "Vendor licence (embedded in the font)",
       "hadeethencTerms": "Unmodified reproduction with source attribution (provider terms)",
       "rassoulRelease": "Released by the author - unaltered reproduction with source credit",
-      "quranicCorpusTerms": "Source attribution and link required (the work's terms of use)"
+      "quranicCorpusTerms": "Source attribution and link required (the work's terms of use)",
+      "qulWbwTerms": "No copyright information from the provider - terms unclear, permission to redistribute is pending"
     },
     "distributedSection": "What we hand out ourselves",
     "distributedText": "Most content is fetched by your device directly from the respective provider - we do not redistribute it, so naming the source is enough there. What we do hand out ourselves: the language model Qwen2.5-1.5B-Instruct and Tarteel’s speech-recognition model (both from our own storage), the KFGQPC HAFS font and every software library inside the app package. For those works the full licence text is attached - open it right at the entry. We also deliver the German tafsir by Abu-r-Ridā Muhammad Ibn Ahmad Ibn Rassoul ourselves - the author released it free of copyright but requires the source to be named.",
