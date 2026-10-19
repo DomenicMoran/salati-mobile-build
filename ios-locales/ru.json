@@ -1,0 +1,8 @@
+{
+  "ios": {
+    "NSLocationWhenInUseUsageDescription": "Salati использует ваше местоположение, чтобы рассчитать время намаза и направление киблы для вашего региона.",
+    "NSMotionUsageDescription": "Salati использует датчики движения, чтобы показать направление киблы на компасе.",
+    "NSCameraUsageDescription": "Salati использует камеру для сканирования штрих-кодов продуктов в проверке halal.",
+    "NSMicrophoneUsageDescription": "Salati использует микрофон для проверки вашего чтения Корана в режиме практики хифз."
+  }
+}

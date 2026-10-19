@@ -1,3 +1,4 @@
+import { parseSurahNumber } from '@/features/hifz/routeParams';
 import { useLocalSearchParams } from 'expo-router';
 import { useCallback, useMemo, useRef, useState, useEffect } from 'react';
 import { Linking, Platform, Pressable, ScrollView, StyleSheet, View } from 'react-native';
@@ -48,7 +49,7 @@ const NEAR_WORD_COLOR = { light: '#94500F', dark: '#e8a13c' } as const;
 // Sure fertig oder Stopp gedrückt (recognizeArabicContinuous).
 export default function ReciteSurahScreen() {
   const { surah } = useLocalSearchParams<{ surah: string }>();
-  const surahNumber = Number(surah);
+  const surahNumber = parseSurahNumber(surah);
   const { settings } = useSettings();
   const { t } = useTranslation();
   const scheme = useResolvedScheme();

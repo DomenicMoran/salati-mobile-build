@@ -27,15 +27,15 @@ export function IntroSheet({ visible, onClose, title, what, why }: IntroSheetPro
 
   return (
     <Modal visible={visible} transparent animationType="slide" onRequestClose={onClose}>
-      <Pressable
-        style={styles.backdrop}
-        accessibilityRole="button"
-        accessibilityLabel={t('a11y.close')}
-        onPress={onClose}
-      />
-      <ThemedView style={styles.sheet} accessibilityViewIsModal importantForAccessibility="yes">
-        <View style={[styles.handle, { backgroundColor: colors.textSecondary }]} />
-        <ScrollView contentContainerStyle={styles.content}>
+      <View style={styles.overlay}>
+        <Pressable
+          style={styles.backdrop}
+          accessibilityRole="button"
+          accessibilityLabel={t('a11y.close')}
+          onPress={onClose}
+        />
+        <ThemedView style={styles.sheet} accessibilityViewIsModal importantForAccessibility="yes">
+          <ScrollView contentContainerStyle={styles.content}>
           <View style={styles.header}>
             <ThemedText type="title" style={styles.title}>
               {title}
@@ -45,7 +45,7 @@ export function IntroSheet({ visible, onClose, title, what, why }: IntroSheetPro
               hitSlop={12}
               accessibilityRole="button"
               accessibilityLabel={t('a11y.close')}
-              style={Platform.OS === 'web' ? styles.pressableWeb : undefined}>
+              style={[styles.closeButton, Platform.OS === 'web' ? styles.pressableWeb : undefined]}>
               <IconSymbol name="close" size={20} color={colors.textSecondary} />
             </Pressable>
           </View>
@@ -69,27 +69,30 @@ export function IntroSheet({ visible, onClose, title, what, why }: IntroSheetPro
               {t('practice.intro.gotIt')}
             </ThemedText>
           </PressableCard>
-        </ScrollView>
-      </ThemedView>
+          </ScrollView>
+        </ThemedView>
+      </View>
     </Modal>
   );
 }
 
 const styles = StyleSheet.create({
-  backdrop: { flex: 1, backgroundColor: 'rgba(11,11,13,0.45)' },
+  overlay: { flex: 1, justifyContent: 'center', alignItems: 'center' },
+  // The backdrop must cover the whole modal window. A flex sibling before the
+  // sheet only covered the space above it, leaving the underlying screen bright
+  // on either side of a centered tablet sheet.
+  backdrop: { position: 'absolute', top: 0, right: 0, bottom: 0, left: 0, backgroundColor: 'rgba(11,11,13,0.45)' },
   sheet: {
     maxHeight: '80%',
     width: '100%',
     maxWidth: 480,
-    alignSelf: 'center',
-    borderTopLeftRadius: Spacing.four,
-    borderTopRightRadius: Spacing.four,
+    borderRadius: Spacing.four,
     paddingTop: Spacing.two,
   },
-  handle: { alignSelf: 'center', width: 44, height: 4, borderRadius: 2, opacity: 0.4, marginBottom: Spacing.two },
   content: { paddingHorizontal: Spacing.four, paddingBottom: Spacing.six, gap: Spacing.one },
-  header: { flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', marginBottom: Spacing.two },
-  title: { flex: 1 },
+  header: { flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', marginBottom: Spacing.two, gap: Spacing.two },
+  title: { flex: 1, minWidth: 0 },
+  closeButton: { width: 44, height: 44, alignItems: 'center', justifyContent: 'center' },
   section: { marginTop: Spacing.three, gap: Spacing.one },
   sectionLabel: { textTransform: 'uppercase', letterSpacing: 1 },
   gotItButton: { alignItems: 'center', marginTop: Spacing.five, padding: Spacing.three, borderRadius: Spacing.three },

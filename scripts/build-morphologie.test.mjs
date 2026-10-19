@@ -19,9 +19,9 @@ import { parseFeatures, unbekannteMerkmalswerte } from './build-morphologie.mjs'
 
 const HIER = path.dirname(fileURLToPath(import.meta.url));
 const MOBILE = path.join(HIER, '..');
-// v3: siehe MORPHOLOGIE_VERSION in build-morphologie.mjs (Versionspfad wegen
+// v4: siehe MORPHOLOGIE_VERSION in build-morphologie.mjs (Versionspfad wegen
 // immutable Cache-Control bei der Auslieferung).
-const OUT_DIR = path.join(MOBILE, '.daten-cache', 'out', 'morphologie', 'v3');
+const OUT_DIR = path.join(MOBILE, '.daten-cache', 'out', 'morphologie', 'v4');
 
 // Verszahl je Sure in der Hafs-Zählung (Summe 6236) — wörtlich übernommen aus
 // src/features/quran/korpus-koran.test.ts (dort am 2026-07-27 gegen
@@ -68,7 +68,7 @@ test('alle 114 Suren vorhanden, Verszahl je Sure stimmt mit der Hafs-Zählung ü
       continue;
     }
     const daten = ladeSure(sure);
-    assert.equal(daten.schema, 3, `Sure ${sure}: schema muss 3 sein`);
+    assert.equal(daten.schema, 4, `Sure ${sure}: schema muss 4 sein`);
     assert.equal(daten.surah, sure, `Sure ${sure}: surah-Feld muss ${sure} sein`);
     const anzahlVerse = Object.keys(daten.verses).length;
     const erwartet = AYAHS_PER_SURAH[sure - 1];
@@ -200,6 +200,24 @@ test('bekannte MOOD-Werte (IND/SUBJ/JUS) erzeugen KEINEN Eintrag in unbekannteMe
   assert.equal(unbekannteMerkmalswerte.length, vorher);
 });
 
+test('Stichprobe 12:5:4 (قَصَّ, MOOD:JUS) trägt features.mood "juss"', () => {
+  const daten = ladeSure(12);
+  const wort = daten.verses['5'].find((w) => w.position === 4);
+  assert.ok(wort, '12:5:4 nicht gefunden');
+  const stamm = wort.segments.find((s) => s.kind === 'stem' && s.pos === 'V');
+  assert.ok(stamm, '12:5:4 hat keinen Verb-Stamm');
+  assert.match(stamm.raw, /MOOD:JUS/, 'Testfall muss MOOD:JUS im Rohwert tragen');
+  assert.equal(stamm.features.mood, 'juss');
+});
+
+test('Stichprobe 2:2:5 (فِيهِ): head null mit headReason elided', () => {
+  const daten = ladeSure(2);
+  const wort = daten.verses['2'].find((w) => w.position === 5);
+  assert.ok(wort?.syntax, '2:2:5 hat keine syntax');
+  assert.equal(wort.syntax.head, null);
+  assert.equal(wort.syntax.headReason, 'elided');
+});
+
 // ---------------------------------------------------------------------------
 // Bestimmtheits-Herleitung v2 (bestimmtheitErgaenzen in build-morphologie.mjs)
 // — Mudaf und Possessivsuffix ergänzen `state: "definite"`, ein explizites
@@ -240,7 +258,7 @@ test('2:2:6 (هُدًى) bleibt explizit indefinite — Korpus-Aussage (INDEF) w
 
 test('meta.json: bestimmtheitHerleitung hat plausible Werte (>4000 je Regel, keine Widersprüche negativ)', () => {
   const meta = JSON.parse(readFileSync(path.join(OUT_DIR, 'meta.json'), 'utf8'));
-  assert.equal(meta.schema, 3);
+  assert.equal(meta.schema, 4);
   assert.ok(meta.bestimmtheitHerleitung, 'meta.json muss bestimmtheitHerleitung enthalten');
   assert.ok(meta.bestimmtheitHerleitung.mudaf > 4000);
   assert.ok(meta.bestimmtheitHerleitung.possessivsuffix > 4000);

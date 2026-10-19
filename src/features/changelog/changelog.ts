@@ -1560,6 +1560,82 @@ export const CHANGELOG: ChangelogVersion[] = [
       },
     ],
   },
+  {
+    version: '1.55.0',
+    date: '2026-09-22',
+    entries: [
+      {
+        type: 'feature',
+        de: 'Im Koran-Leser gibt es jetzt tiefere Grammatik-Hilfen: einzelne Wort-Fragmente mit Rolle und Farbe, verständliche Begründungen zu Form und Satzstellung, Ṣarf-Familien im Kontext und frische Morphologie-Daten (Schema v4) für die Wortanalyse',
+        en: 'The Quran reader now offers deeper grammar help: individual word fragments with role and colour, clear reasons for form and sentence position, ṣarf families in context, and refreshed morphology data (schema v4) for word analysis',
+      },
+    ],
+  },
+  {
+    version: '1.56.0',
+    date: '2026-10-03',
+    entries: [
+      {
+        type: 'feature',
+        de: 'Hörbücher „Islamisches Pflichtwissen“ (8 Kapitel) und „Arabische Grammatik — Kurs 3“ (10 Kapitel): Audio und Präsentationsvideo in 14 App-Sprachen — jeweils in deiner eingestellten Sprache, ohne Deutsch-Fallback',
+        en: 'Audiobooks “Essential Islamic Knowledge” (8 chapters) and “Arabic Grammar — Course 3” (10 chapters): audio and presentation video in all 14 app languages — in your chosen app language, without a German fallback',
+      },
+    ],
+  },
+  {
+    version: '1.56.1',
+    date: '2026-10-03',
+    entries: [
+      {
+        type: 'fix',
+        de: 'Stabile Wochenübersicht nach App-Neustarts, stabilere Hifz-Direktlinks, korrigierte Hörbuch-Steuerung und besser lesbare Statusleiste. Grammatik-Erklärungen und Hörbuch-Texte in allen App-Sprachen ergänzt; Zurück-Navigation beim Laden verbessert.',
+        en: 'Stable weekly prayer times after app restarts, more reliable Hifz links, corrected audiobook controls and a more readable status bar. Added grammar explanations and audiobook labels in every app language; improved back navigation while loading.',
+      },
+    ],
+  },
+  {
+    version: '1.56.2',
+    date: '2026-10-10',
+    entries: [
+      {
+        type: 'feature',
+        de: 'Vollständige Versanalyse mit Wortfragmenten, Grammatik und Satzbau jetzt direkt im Koran-Leser und in der Mushaf-Ansicht. Das Hörbuch „Islamisches Pflichtwissen“ ist mit einem Tipp über Lernen erreichbar.',
+        en: 'Full verse analysis with word fragments, grammar and sentence structure is now available directly in the Quran reader and Mushaf view. Open the “Essential Islamic Knowledge” audiobook from Learn with one tap.',
+      },
+      {
+        type: 'fix',
+        de: 'Einstufungstests verwenden nach dem Laden zuverlässig deine gewählte App-Sprache. Verbesserte Bedienung und Darstellung auf kleinen Displays.',
+        en: 'Placement quizzes now reliably use your selected app language after settings load. Improved usability and layout on small screens.',
+      },
+      {
+        type: 'feature',
+        de: 'Pflichtwissen auf Bengalisch, Persisch, Paschtu und Urdu ist hörbar und als Film gelistet. Über der Folgenliste wählst du die Sprache. In der Bibliothek merkt sich der Tafsir die zuletzt gelesene Stelle.',
+        en: 'Essential Knowledge is available in Bengali, Persian, Pashto and Urdu as audio and video. Pick the episode language above the list. The library remembers your place in the tafsir.',
+      },
+    ],
+  },
+  {
+    version: '1.56.3',
+    date: '2026-10-18',
+    entries: [
+      {
+        type: 'feature',
+        de: 'Die arabische Grammatik und die paschtunische Fassung sind als Hörbuch, Präsentationsvideo und Buch frei. Lernen und die Bibliothek stehen weiter vorn.',
+        en: 'Arabic grammar and the Pashto edition are now available as audiobook, presentation video and book. Learn and the library are easier to reach.',
+      },
+    ],
+  },
+  {
+    version: '1.56.4',
+    date: '2026-10-19',
+    entries: [
+      {
+        type: 'fix',
+        de: 'Lernunterlagen bleiben sichtbar, auch wenn die App eine andere Sprache zeigt. Auf jeder Karte steht dann, dass der Inhalt deutsch ist.',
+        en: 'Handouts stay visible when the app language is different. Each card says the content is German.',
+      },
+    ],
+  },
 ];
 /** Neueste Version zuerst - für die Anzeige im Changelog-Screen. */
 export function changelogNewestFirst(): ChangelogVersion[] {

@@ -48,6 +48,35 @@ jest.mock('@/features/quran/morphologie', () => ({
   ladeWurzeln: jest.fn(async () => mockWurzeln),
 }));
 
+const mockSarfTabelle = {
+  id: 'sarf-familie-3-akhbara',
+  kind: 'verb',
+  titleDe: 'Sarf, 3. große Familie (Form IV)',
+  termAr: 'أَخْبَرَ',
+  columns: [{ id: 'madhi', labelDe: 'Madhi / Amr' }],
+  rows: [{ id: 'aktiv', labelDe: 'Aktiv' }],
+  cells: { aktiv: { madhi: { ar: 'أَخْبَرَ', de: 'er informierte' } } },
+  source: { file: 'handout.pdf', page: 67 },
+};
+
+let mockErklaerungen: Record<string, unknown> = {};
+
+jest.mock('@/features/lexikon/paradigmenLoader', () => ({
+  useParadigmTabelle: jest.fn((tableId: string) => ({
+    data: tableId === 'sarf-familie-3-akhbara' ? mockSarfTabelle : undefined,
+    isLoading: false,
+    isError: false,
+  })),
+}));
+
+jest.mock('@/features/lexikon/erklaerungenLoader', () => ({
+  useAlleErklaerungen: jest.fn(() => ({
+    data: mockErklaerungen,
+    isLoading: false,
+    isError: false,
+  })),
+}));
+
 const queryClient = new QueryClient({ defaultOptions: { queries: { retry: false, gcTime: 0 } } });
 
 function Wrapper({ children }: { children: ReactNode }) {
@@ -67,6 +96,7 @@ beforeEach(async () => {
   mockVerse = undefined;
   mockMorphState = { isLoading: false, isError: false };
   mockWurzeln = {};
+  mockErklaerungen = {};
 });
 
 afterEach(() => {
@@ -131,6 +161,8 @@ function baseProps(overrides: Partial<ComponentProps<typeof WortAnalyseSheet>> =
     onWurzelOeffnen: jest.fn(),
     onLexikonOeffnen: jest.fn(),
     onVerbTypOeffnen: jest.fn(),
+    onSarfLexikonOeffnen: jest.fn(),
+    onLehrtextOeffnen: jest.fn(),
     ...overrides,
   };
 }
@@ -175,16 +207,20 @@ describe('WortAnalyseSheet', () => {
     expect(screen.getByText(t('quran.wortAnalyse.segmentKind.stem'))).toBeTruthy();
     expect(screen.getByText(t('quran.wortAnalyse.segmentKind.suffix'))).toBeTruthy();
 
-    // Rollen: Konjunktion (Präfix), Wortstamm, Angehängtes Pronomen (Suffix).
+    // Rollen über accessibilityLabel der Fragment-Zeilen (Stamm inkl. POS).
     expect(
-      screen.getByText(`${t('grammatik.fragmentrollen.konjunktion.name')} — ${t('grammatik.fragmentrollen.konjunktion.ar')}`),
+      screen.getByLabelText(
+        `${t('quran.wortAnalyse.segmentKind.prefix')}: ${t('grammatik.fragmentrollen.konjunktion.name')}`,
+      ),
     ).toBeTruthy();
     expect(
-      screen.getByText(`${t('grammatik.fragmentrollen.stamm.name')} — ${t('grammatik.fragmentrollen.stamm.ar')}`),
+      screen.getByLabelText(
+        `${t('quran.wortAnalyse.segmentKind.stem')}: ${t('grammatik.fragmentrollen.stamm.name')} · ${t('grammatik.posTags.V.name')}`,
+      ),
     ).toBeTruthy();
     expect(
-      screen.getByText(
-        `${t('grammatik.fragmentrollen.pronomenSuffix.name')} — ${t('grammatik.fragmentrollen.pronomenSuffix.ar')}`,
+      screen.getByLabelText(
+        `${t('quran.wortAnalyse.segmentKind.suffix')}: ${t('grammatik.fragmentrollen.pronomenSuffix.name')}`,
       ),
     ).toBeTruthy();
 
@@ -199,11 +235,6 @@ describe('WortAnalyseSheet', () => {
     expect(
       screen.getByText(
         `${t('grammatik.verbEigenschaften.tempus.werte.imperfect.name')} — ${t('grammatik.verbEigenschaften.tempus.werte.imperfect.ar')}`,
-      ),
-    ).toBeTruthy();
-    expect(
-      screen.getByText(
-        `${t('grammatik.verbEigenschaften.verbform.formen.4.name')} — ${t('grammatik.verbEigenschaften.verbform.formen.4.ar')}`,
       ),
     ).toBeTruthy();
   }, 15000);
@@ -281,10 +312,79 @@ describe('WortAnalyseSheet', () => {
       screen.getAllByText(`${t('grammatik.fragmentrollen.verneinung.name')} — ${t('grammatik.fragmentrollen.verneinung.ar')}`)
         .length,
     ).toBe(2);
-    // Satzrolle startet zugeklappt (Übersicht zuerst) — erst öffnen.
-    fireEvent.press(screen.getByLabelText(t('quran.wortAnalyse.satzrolleTitle')));
     // Kein Bezugswort, weil head === null — ehrlich benannt, nicht konstruiert.
     expect(await screen.findByText(t('quran.wortAnalyse.satzrolleHeadNone'))).toBeTruthy();
+  });
+
+  it('zeigt keinen Ṣarf-Block bei Nomen', async () => {
+    mockVerse = [
+      wort({
+        position: 4,
+        text: 'كِتَابًا',
+        segments: [segment({ text: 'كِتَابًا', kind: 'stem', pos: 'N' })],
+      }),
+    ];
+
+    await render(<WortAnalyseSheet {...baseProps()} />, { wrapper: Wrapper });
+
+    expect(screen.queryByLabelText(t('quran.wortAnalyse.sarfTitle'))).toBeNull();
+  });
+
+  it('zeigt passenden Lehrtext bei badal-Relation', async () => {
+    mockErklaerungen = {
+      'partikel-syntax': {
+        eintraege: {
+          badal: {
+            titel: 'Die Apposition',
+            ar: 'بَدَل',
+            erklaerung: ['Ein Badal erläutert ein vorangehendes Ism.'],
+            erkennung: [],
+            belege: [],
+            lernen: [],
+            tabellen: [],
+            siehe: [],
+          },
+        },
+      },
+    };
+    mockVerse = sure1.verses['2'];
+
+    await render(
+      <WortAnalyseSheet
+        {...baseProps({
+          surah: 1,
+          ayah: 2,
+          position: 3,
+          word: { arabic: 'رَبِّ', translation: 'Lord', transliteration: 'rabbi' },
+        })}
+      />,
+      { wrapper: Wrapper },
+    );
+
+    expect(await screen.findByText('Die Apposition — بَدَل')).toBeTruthy();
+    expect(await screen.findByText('Ein Badal erläutert ein vorangehendes Ism.')).toBeTruthy();
+  });
+
+  it('bettet die Sarf-Referenztabelle für Verbform IV ein', async () => {
+    mockVerse = [
+      wort({
+        position: 4,
+        text: 'يُقِيمُ',
+        root: 'قوم',
+        segments: [
+          segment({
+            text: 'يُقِيمُ',
+            kind: 'stem',
+            pos: 'V',
+            features: { tense: 'imperfect', verbForm: 4, person: '3', gender: 'm', number: 'sg' },
+          }),
+        ],
+      }),
+    ];
+
+    await render(<WortAnalyseSheet {...baseProps()} />, { wrapper: Wrapper });
+
+    expect(await screen.findByText(mockSarfTabelle.titleDe)).toBeTruthy();
   });
 
   it('benennt bei einer badal-Relation (App, echte Fixture 1:2:3) das Bezugswort', async () => {
@@ -303,7 +403,6 @@ describe('WortAnalyseSheet', () => {
       { wrapper: Wrapper },
     );
 
-    fireEvent.press(screen.getByLabelText(t('quran.wortAnalyse.satzrolleTitle')));
     expect(
       await screen.findByText(`${t('grammatik.relationen.App.name')} — ${t('grammatik.relationen.App.ar')}`),
     ).toBeTruthy();
@@ -322,7 +421,6 @@ describe('WortAnalyseSheet', () => {
       { wrapper: Wrapper },
     );
 
-    fireEvent.press(screen.getByLabelText(t('quran.wortAnalyse.satzrolleTitle')));
     expect(await screen.findByText(t('quran.wortAnalyse.satzrolleNoData'))).toBeTruthy();
     expect(screen.queryByText(t('quran.wortAnalyse.satzrolleHeadNone'))).toBeNull();
   });
@@ -388,9 +486,6 @@ describe('WortAnalyseSheet', () => {
     erwarteArabischenBegriff(t('grammatik.fragmentrollen.stamm.ar'));
     // … und die POS-Tag-Rückfallrolle für REM (kein eigener fragmentrollen-Eintrag).
     erwarteArabischenBegriff(t('grammatik.posTags.REM.ar'));
-    // Syntaktische Relation — steckt in der standardmäßig zugeklappten
-    // Satzrolle-Sektion, daher erst öffnen.
-    fireEvent.press(screen.getByLabelText(t('quran.wortAnalyse.satzrolleTitle')));
     await screen.findByText(`${t('grammatik.relationen.Adj.name')} — ${t('grammatik.relationen.Adj.ar')}`);
     erwarteArabischenBegriff(t('grammatik.relationen.Adj.ar'));
   });
@@ -406,8 +501,6 @@ describe('WortAnalyseSheet', () => {
       { wrapper: Wrapper },
     );
 
-    // Buchstaben-Sektion startet zugeklappt (Tiefe), erst öffnen.
-    fireEvent.press(screen.getByLabelText(t('quran.wordInfo.lettersLabel')));
     // كِتَابٌ zerlegt sich in Kāf, Tā', Alif, Bā' (Diakritika zählen nicht als
     // eigener Buchstabe).
     expect((await screen.findAllByText('Kāf')).length).toBeGreaterThan(0);
@@ -435,7 +528,6 @@ describe('WortAnalyseSheet', () => {
     expect(screen.getByText('a book')).toBeTruthy();
     expect(screen.getByText('kitabun')).toBeTruthy();
     // Buchstaben-Sektion ist weiterhin da (braucht keine Morphologie).
-    fireEvent.press(screen.getByLabelText(t('quran.wordInfo.lettersLabel')));
     expect((await screen.findAllByText('Kāf')).length).toBeGreaterThan(0);
     // Ehrlicher Hinweis statt leerem/fehlendem Grammatikteil.
     expect(screen.getByText(t('quran.wortAnalyse.morphologyNoData'))).toBeTruthy();

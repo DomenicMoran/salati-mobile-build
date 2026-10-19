@@ -1,4 +1,4 @@
-import { isLocaleLoaded, preloadLocale, translate } from './translate';
+import { ensureLocale, getLocaleDict, isLocaleLoaded, preloadLocale, translate } from './translate';
 
 describe('translate', () => {
   it('resolves a nested key for the requested locale', async () => {
@@ -28,5 +28,15 @@ describe('translate', () => {
     await preloadLocale('ru');
     expect(isLocaleLoaded('ru')).toBe(true);
     expect(translate('ru', 'nav.qibla')).not.toBe('Qibla');
+  });
+  it('has explicit unavailable-media copy in all fourteen languages', async () => {
+    for (const locale of ['de','en','ar','tr','es','fr','id','bn','fa','ms','ur','ru','sw','ps'] as const) {
+      await ensureLocale(locale);
+      const dict = getLocaleDict(locale) as {audiobooks: {unavailable: string}};
+      expect(typeof dict.audiobooks.unavailable).toBe('string');
+      expect(dict.audiobooks.unavailable.length).toBeGreaterThan(15);
+      expect(translate(locale, 'audiobooks.unavailable')).toBe(dict.audiobooks.unavailable);
+      if (locale !== 'en') expect(dict.audiobooks.unavailable).not.toBe(translate('en', 'audiobooks.unavailable'));
+    }
   });
 });

@@ -73,3 +73,7 @@ credentials.json
 # ~150 MB). Reproduzierbar, deshalb nicht im Repo; Quelle fuer Play-Upload,
 # App-Store-Render und die Marketing-Bilder unter assets/marketing/.
 store-assets/device/
+
+# Lokale Grammatik-Audit-Artefakte (Emulator-Matrix, Screenshots) — nicht committen
+.audit-grammatik/
+dist-grammatik-audit/

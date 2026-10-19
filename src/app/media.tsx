@@ -3,7 +3,7 @@
 // Jeder Eintrag oeffnet die bestehende Liste/Route — hier wird nichts
 // dupliziert, nur navigiert. Web-Fallbacks der Ziele (reels/index.web.tsx,
 // videos/[episode].web.tsx) bleiben unangetastet.
-import { router } from 'expo-router';
+import { router, type Href } from 'expo-router';
 import { ScrollView, StyleSheet } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
@@ -12,10 +12,12 @@ import { ListCard } from '@/components/ui/list';
 import { NavTile } from '@/components/ui/nav-tile';
 import { ThemedView } from '@/components/themed-view';
 import { ScreenHeader } from '@/components/screen-header';
-import { MaxContentWidth, Spacing } from '@/constants/theme';
+import { Spacing } from '@/constants/theme';
 import { useTranslation } from '@/lib/i18n';
 
 const MEDIA_TILES = [
+  { href: '/bibliothek', labelKey: 'bibliothek.title', icon: 'book' },
+  { href: '/audiobooks', labelKey: 'audiobooks.title', icon: 'headset' },
   { href: '/podcast', labelKey: 'podcast.title', icon: 'headset' },
   // Fuehrt seit 2026-08-25 auf das KURSMENUE, nicht mehr direkt in die
   // lange Liste: erst Kurs waehlen, dann Kapitel, dann Lektion. Die
@@ -39,7 +41,7 @@ export default function MediaHubScreen() {
                 index={index}
                 label={t(item.labelKey)}
                 icon={item.icon}
-                onPress={() => router.push(item.href)}
+                onPress={() => router.push(item.href as Href)}
               />
             ))}
           </ListCard>
@@ -58,6 +60,6 @@ const styles = StyleSheet.create({
     paddingBottom: Spacing.five,
     alignSelf: 'center',
     width: '100%',
-    maxWidth: MaxContentWidth,
+    maxWidth: 680,
   },
 });

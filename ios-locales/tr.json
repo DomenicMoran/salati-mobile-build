@@ -1,0 +1,8 @@
+{
+  "ios": {
+    "NSLocationWhenInUseUsageDescription": "Salati, bulunduğunuz bölge için namaz vakitlerini ve kıble yönünü hesaplamak için konumunuzu kullanır.",
+    "NSMotionUsageDescription": "Salati, pusulada kıble yönünü göstermek için hareket sensörlerini kullanır.",
+    "NSCameraUsageDescription": "Salati, helal tarayıcı için ürün barkodlarını okumak üzere kamerayı kullanır.",
+    "NSMicrophoneUsageDescription": "Salati, Hifz alıştırma modunda Kur'an okuyuşunuzu kontrol etmek için mikrofonu kullanır."
+  }
+}

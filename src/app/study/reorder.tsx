@@ -108,6 +108,7 @@ export default function StudyReorderScreen() {
                 <Pressable
                   disabled={isFirst}
                   accessibilityRole="button"
+                  accessibilityState={{ disabled: isFirst }}
                   accessibilityLabel={t('study.reorder.moveUp')}
                   onPress={() => move(section.category, index, 'up')}
                   style={[styles.arrowButton, isFirst && styles.arrowButtonDisabled]}>
@@ -116,6 +117,7 @@ export default function StudyReorderScreen() {
                 <Pressable
                   disabled={isLast}
                   accessibilityRole="button"
+                  accessibilityState={{ disabled: isLast }}
                   accessibilityLabel={t('study.reorder.moveDown')}
                   onPress={() => move(section.category, index, 'down')}
                   style={[styles.arrowButton, isLast && styles.arrowButtonDisabled]}>
@@ -161,8 +163,8 @@ const styles = StyleSheet.create({
   },
   rowText: { flex: 1 },
   arrowButton: {
-    width: 36,
-    height: 36,
+    width: 44,
+    height: 44,
     alignItems: 'center',
     justifyContent: 'center',
   },

@@ -5,7 +5,7 @@
 // „Mehr"-Tab als Verknuepfung erscheinen. Podcast/Videos/Reels liegen nicht
 // mehr einzeln hier, sondern gebuendelt hinter der ersten „Medien"-Kachel, die
 // den Medien-Hub (/media) oeffnet.
-import { router } from 'expo-router';
+import { router, type Href } from 'expo-router';
 import { ScrollView, StyleSheet, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
@@ -21,12 +21,20 @@ import { useTranslation } from '@/lib/i18n';
 
 export default function LernenScreen() {
   const { t } = useTranslation();
-  // Breitbild: die elf Einstiege standen auf 800 dp untereinander und endeten
-  // bei 45 % der Fensterhoehe (Gerätebefund 2026-07-29). Auf Tablets stehen
-  // sie in zwei Karten nebeneinander.
+  // Gruppierte Abschnitte halten den Funktionsumfang auffindbar; auf Tablets
+  // werden ganze Abschnitte in zwei Spalten verteilt, nicht einzelne Tiles.
   const { sectionColumns, contentWidth } = useLayout();
   const rtl = useRtl();
-  const spalten = splitSequential(LERNEN_NAV, sectionColumns, () => 1);
+  const labels = {
+    lernen: 'nav.learnGroup',
+    hoerinhalte: 'nav.audioGroup',
+    nachschlagen: 'nav.referenceGroup',
+    uebung: 'nav.practiceGroup',
+  } as const;
+  const sections = (['hoerinhalte', 'lernen', 'nachschlagen', 'uebung'] as const)
+    .map((group) => ({ group, items: LERNEN_NAV.filter((item) => item.group === group) }))
+    .filter((section) => section.items.length > 0);
+  const spalten = splitSequential(sections, sectionColumns, () => 1);
   let laufIndex = 0;
 
   return (
@@ -42,17 +50,26 @@ export default function LernenScreen() {
           <View style={sectionColumns > 1 ? [styles.columnsRow, rtl && styles.columnsRowRtl] : undefined}>
             {spalten.map((spalte, spaltenIndex) => (
               <View key={spaltenIndex} style={sectionColumns > 1 ? styles.column : undefined}>
-                <ListCard>
-                  {spalte.map((item) => (
-                    <NavTile
-                      key={item.href}
-                      index={laufIndex++}
-                      label={t(item.labelKey)}
-                      icon={item.icon}
-                      onPress={() => router.push(item.href)}
-                    />
+                <View style={styles.sectionStack}>
+                  {spalte.map((section) => (
+                    <View key={section.group}>
+                      <ThemedText type="smallBold" themeColor="textSecondary" style={styles.sectionTitle}>
+                        {t(labels[section.group])}
+                      </ThemedText>
+                      <ListCard>
+                        {section.items.map((item) => (
+                          <NavTile
+                            key={item.href}
+                            index={laufIndex++}
+                            label={t(item.labelKey)}
+                            icon={item.icon}
+                            onPress={() => router.push(item.href as Href)}
+                          />
+                        ))}
+                      </ListCard>
+                    </View>
                   ))}
-                </ListCard>
+                </View>
               </View>
             ))}
           </View>
@@ -76,4 +93,6 @@ const styles = StyleSheet.create({
   columnsRow: { flexDirection: 'row', alignItems: 'flex-start', gap: Spacing.three },
   columnsRowRtl: { flexDirection: 'row-reverse' },
   column: { flex: 1, minWidth: 0 },
+  sectionStack: { gap: Spacing.four },
+  sectionTitle: { marginBottom: Spacing.two, marginHorizontal: Spacing.two },
 });

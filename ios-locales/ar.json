@@ -1,0 +1,8 @@
+{
+  "ios": {
+    "NSLocationWhenInUseUsageDescription": "يستخدم Salati موقعك لحساب أوقات الصلاة واتجاه القبلة لمنطقتك.",
+    "NSMotionUsageDescription": "يستخدم Salati مستشعرات الحركة لعرض اتجاه القبلة على البوصلة.",
+    "NSCameraUsageDescription": "يستخدم Salati الكاميرا لمسح رموز المنتجات لفحص الحلال.",
+    "NSMicrophoneUsageDescription": "يستخدم Salati الميكروفون للتحقق من تلاوتك للقرآن في وضع الحفظ."
+  }
+}

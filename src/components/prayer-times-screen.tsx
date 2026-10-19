@@ -1,8 +1,8 @@
 import { Link, router } from 'expo-router';
 import { Fragment, useEffect, useMemo, useRef, useState, type ReactNode } from 'react';
+import { Image } from 'expo-image';
 import {
   AppState,
-  ImageBackground,
   Platform,
   Pressable,
   ScrollView,
@@ -464,16 +464,15 @@ export default function PrayerTimesScreen() {
   // Karte/Reise-Banner bleiben zusätzlich an ihre bisherige fachliche
   // Sichtbarkeitsbedingung geknüpft (nur während Ramadan bzw. auf Reisen).
   const heroCard = (
-          <ImageBackground
-            source={require('../../assets/images/guides/kaaba.jpg')}
-            style={[styles.hero, wide && styles.heroWide]}
-            imageStyle={styles.heroImage}>
-            {/* Der Innenrahmen trägt das Padding, NICHT die ImageBackground
-                selbst: RN legt das Bild als absolut positioniertes Kind in die
-                Polsterbox, ein Padding auf der ImageBackground lässt also
-                rechts/unten einen Streifen ohne Foto stehen (auf 800 dp waren
-                das 24 dp, in denen das Zahnrad ohne Bild und ohne Abdunkelung
-                stand — Gerätebefund 2026-07-29, 1600×2560). */}
+          <View style={[styles.hero, wide && styles.heroWide]}>
+            <Image
+              source={require('../../assets/images/guides/kaaba.jpg')}
+              style={[StyleSheet.absoluteFill, styles.heroImage]}
+              contentFit="cover"
+            />
+            {/* Der Innenrahmen trägt das Padding, NICHT der Bild-Container
+                selbst: ein Padding auf der äußeren Box lässt rechts/unten einen
+                Streifen ohne Foto stehen (Gerätebefund 2026-07-29, 1600×2560). */}
             <View style={styles.heroOverlay} />
             <View style={styles.heroInner}>
             <View style={styles.heroTop}>
@@ -541,7 +540,7 @@ export default function PrayerTimesScreen() {
               )}
             </View>
             </View>
-          </ImageBackground>
+          </View>
   );
 
   const ramadanCard: ReactNode = mounted && ramadanCountdown && (

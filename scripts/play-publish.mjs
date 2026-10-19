@@ -14,13 +14,13 @@ import fs from 'fs';
 import path from 'path';
 import { createRequire } from 'module';
 
-const require = createRequire('C:/Users/domen/Documents/MenuCloud/scripts/');
+const require = createRequire('C:/Users/domen/Documents/Projekte/MenuCloud/scripts/');
 const jwt = require('jsonwebtoken');
 
 const PACKAGE = 'de.salatibox.de';
 const NUR_TEXTE = process.argv.includes('--nur-texte');
 const AAB_PATH = process.argv.slice(2).find((a) => !a.startsWith('--')) ?? null;
-const SA_PATH = 'C:/Users/domen/Documents/90_Werkstatt/menucloud-mobile-build/play-service-account.json';
+const SA_PATH = 'C:/Users/domen/Documents/Projektordner/90_Werkstatt/menucloud-mobile-build/play-service-account.json';
 // Play-BCP47 je Listing-Datei. Die App spricht 14 Sprachen; Play kennt 13
 // davon — Paschtu (ps) steht nicht auf Googles Sprachliste und kann deshalb
 // keinen eigenen Store-Eintrag bekommen (Stand 2026-07). Jede hier fehlende

@@ -1,6 +1,6 @@
 // Baut die Wort-Morphologie- und Satzsyntax-Daten des Korans aus zwei
 // öffentlichen Quellen zu je einer JSON-Datei pro Sure unter
-// apps/mobile/.daten-cache/out/morphologie/v3/ (Pfad trägt die Schema-Version,
+// apps/mobile/.daten-cache/out/morphologie/v4/ (Pfad trägt die Schema-Version,
 // siehe MORPHOLOGIE_VERSION unten und Kommentar dort — nötig, weil die
 // Auslieferung per R2 mit "immutable"-Cache-Control läuft und eine neue
 // Fassung unter derselben URL nie ankäme).
@@ -52,17 +52,16 @@ import { fileURLToPath } from 'node:url';
 const HIER = path.dirname(fileURLToPath(import.meta.url));
 const MOBILE = path.join(HIER, '..');
 const CACHE_DIR = path.join(MOBILE, '.daten-cache');
-// Ausgabe- UND Ausliefer-Pfad tragen die Schema-Version (schema: 3 unten —
-// v2 hatte die erweiterte Bestimmtheits-Herleitung, Mudaf/Possessivsuffix,
-// siehe bestimmtheitErgaenzen; v3 löst zusätzlich fünf der sechs bis dahin
-// unbelegten Buckwalter-Sonderzeichen auf, siehe BUCKWALTER-Tabelle oben).
+// Ausgabe- UND Ausliefer-Pfad tragen die Schema-Version (schema: 4 unten —
+// v2: Bestimmtheits-Herleitung Mudaf/Possessivsuffix; v3: Buckwalter-Sonder-
+// zeichen; v4: MOOD:SUBJ/JUS → sub/juss korrekt, optional syntax.headReason).
 // Grund für den Versionsordner statt derselben Datei erneut hochzuladen: upload-morphologie-r2.mjs setzt
 // "Cache-Control: public, max-age=31536000, immutable" — eine neue Fassung
 // unter DERSELBEN URL käme bei Clients/CDN nie an (weder eine erneute
 // Netzabfrage noch ein Cache-Bust ist für "immutable" vorgesehen). Ein neues
 // URL-Präfix pro Schema-Version macht die neue Fassung sofort sichtbar, ohne
 // die alte, bereits ausgelieferte Version zu brechen.
-const MORPHOLOGIE_VERSION = 'v3';
+const MORPHOLOGIE_VERSION = 'v4';
 const OUT_DIR = path.join(CACHE_DIR, 'out', 'morphologie', MORPHOLOGIE_VERSION);
 
 const QAC_FILE = path.join(CACHE_DIR, 'qac-0.4.txt');
@@ -575,21 +574,27 @@ function buildWords(segmenteDerSure, noor, limitStats, bestimmtheitStats) {
     const relInfo = noor.relByLocation.get(repStem.locationKey);
     if (relInfo) {
       let head = null;
+      /** @type {'elided' | 'otherVerse' | 'none' | undefined} */
+      let headReason;
       const zielKey = `${relInfo.sentenceId}:${relInfo.refTokenId}`;
       const zielLocation = noor.sentenceTokenLocation.get(zielKey);
       if (zielLocation === undefined) {
         limitStats.kopfUnbekannt++;
+        headReason = 'none';
       } else if (zielLocation === null) {
         limitStats.kopfGetilgtesWort++; // Kopf ist ein implizites/getilgtes Wort ohne Position
+        headReason = 'elided';
       } else {
         const [zs, zv, zw] = zielLocation.split(':').map(Number);
         if (zv === verse && zs === segRaw[0].surah) {
           head = zw;
         } else {
           limitStats.kopfAndererVers++; // Schema erlaubt nur eine Wortposition IM VERS
+          headReason = 'otherVerse';
         }
       }
       syntax = { relation: relInfo.relation, relationAr: relInfo.relationAr, head };
+      if (head === null && headReason) syntax.headReason = headReason;
     } else {
       limitStats.keineRelation++;
     }
@@ -721,7 +726,7 @@ async function main() {
       }
     }
 
-    const datei = { schema: 3, surah: sure, verses };
+    const datei = { schema: 4, surah: sure, verses };
     const json = `${JSON.stringify(datei)}\n`;
     const zielPfad = path.join(OUT_DIR, `${sure}.json`);
     writeFileSync(zielPfad, json, 'utf8');
@@ -744,7 +749,7 @@ async function main() {
   writeFileSync(path.join(OUT_DIR, 'lemmas.json'), `${JSON.stringify(lemmasOut)}\n`, 'utf8');
 
   const meta = {
-    schema: 3,
+    schema: 4,
     gebaut: new Date().toISOString(),
     quellen: {
       qac: { datei: 'qac-0.4.txt', sha256: sha256(readFileSync(QAC_FILE)), url: QAC_URL },

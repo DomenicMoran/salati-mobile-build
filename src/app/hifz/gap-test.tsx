@@ -1,3 +1,4 @@
+import { parseSurahNumber } from '@/features/hifz/routeParams';
 import { useLocalSearchParams } from 'expo-router';
 import { useState } from 'react';
 import { Platform, Pressable, ScrollView, StyleSheet, View } from 'react-native';
@@ -28,7 +29,7 @@ import { useTranslation } from '@/lib/i18n';
  */
 export default function HifzGapTestScreen() {
   const { surah } = useLocalSearchParams<{ surah: string }>();
-  const surahNumber = Number(surah);
+  const surahNumber = parseSurahNumber(surah);
   const { t } = useTranslation();
   const { settings } = useSettings();
   const { progress, mark, loaded: progressLoaded } = useHifzProgress();

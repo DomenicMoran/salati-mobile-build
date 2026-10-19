@@ -16,7 +16,7 @@ import { ScreenHeader } from '@/components/screen-header';
 import { ThemedText } from '@/components/themed-text';
 import { ThemedView } from '@/components/themed-view';
 import { ActionRow, ListCard, ListSection, ValueRow } from '@/components/ui/list';
-import { MaxContentWidth, Spacing } from '@/constants/theme';
+import { Spacing } from '@/constants/theme';
 import { fetchTimingsByCoords } from '@/features/prayer-times/api';
 import {
   hatEingaben,
@@ -248,7 +248,7 @@ const styles = StyleSheet.create({
   container: { flex: 1 },
   safe: { flex: 1 },
   content: { paddingBottom: Spacing.six },
-  inner: { width: '100%', maxWidth: MaxContentWidth, alignSelf: 'center', paddingHorizontal: Spacing.four },
+  inner: { width: '100%', maxWidth: 680, alignSelf: 'center', paddingHorizontal: Spacing.four },
   zeile: {
     flexDirection: 'row',
     alignItems: 'center',
@@ -259,7 +259,9 @@ const styles = StyleSheet.create({
   zeileRtl: { flexDirection: 'row-reverse' },
   zeilenLabel: { flex: 1 },
   feld: {
+    minHeight: 44,
     minWidth: 92,
+    textAlignVertical: 'center',
     textAlign: 'center',
     paddingVertical: Spacing.two,
     paddingHorizontal: Spacing.three,

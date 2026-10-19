@@ -26,6 +26,7 @@ import {
   hasMultipleSeries,
   type PodcastEpisode,
 } from '@/features/podcast/data';
+import { filterByContentLanguage } from '@/features/media/content-language';
 import { ContentLanguageBadge } from '@/features/media/content-language-badge';
 import { usePodcastDownload } from '@/features/podcast/downloads';
 import { useSharedPlayer } from '@/features/quran/usePlayer';
@@ -42,7 +43,7 @@ type ListRow =
   | { kind: 'episode'; key: string; episode: PodcastEpisode; itemIndex: number };
 
 export default function PodcastListScreen() {
-  const { t } = useTranslation();
+  const { t, locale } = useTranslation();
   const scheme = useResolvedScheme();
   const colors = Colors[scheme];
   const { nowPlaying } = useSharedPlayer();
@@ -54,7 +55,7 @@ export default function PodcastListScreen() {
   });
 
   const series = data?.series;
-  const episodes = data?.episodes ?? [];
+  const episodes = filterByContentLanguage(data?.episodes ?? [], locale);
 
   // Reihen-Gruppierung: Section-Header nur zeigen, wenn tatsaechlich mehrere
   // Reihen vorkommen — mit den aktuellen Folgen ohne series-Feld bleibt es eine
@@ -134,9 +135,18 @@ export default function PodcastListScreen() {
               {isLoading ? (
                 <ThemedActivityIndicator />
               ) : (
-                <ThemedText type="small" themeColor="textSecondary">
-                  {isError ? t('common.error') : t('podcast.empty')}
-                </ThemedText>
+                <>
+                  <ThemedText type="small" themeColor="textSecondary">
+                    {isError
+                      ? t('common.error')
+                      : data?.episodes.length && episodes.length === 0
+                        ? t('podcast.languageOnly')
+                        : t('podcast.empty')}
+                  </ThemedText>
+                  {!isError && data?.episodes.length && episodes.length === 0 ? (
+                    <ContentLanguageBadge lang={data.episodes[0]?.lang} />
+                  ) : null}
+                </>
               )}
             </View>
           }
@@ -331,7 +341,7 @@ const styles = StyleSheet.create({
   metaRow: { flexDirection: 'row', alignItems: 'center', gap: Spacing.one, marginTop: 2, flexWrap: 'wrap' },
   offlineBadge: { flexDirection: 'row', alignItems: 'center', gap: 3, marginLeft: Spacing.one },
   offlineLabel: { fontSize: 11 },
-  dlBtn: { width: 36, height: 36, borderRadius: 18, alignItems: 'center', justifyContent: 'center' },
+  dlBtn: { width: 44, height: 44, borderRadius: 22, alignItems: 'center', justifyContent: 'center' },
   dlPct: { fontSize: 11 },
   pressed: { opacity: 0.6 },
 });

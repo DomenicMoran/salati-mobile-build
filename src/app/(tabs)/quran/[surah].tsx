@@ -78,7 +78,8 @@ import { waehleVersGruppen, wbwSpracheFuerLocale, wbwUmschalterZustand } from '@
 import { useSurahWbw, useWbwMeta } from '@/features/quran/wbwHooks';
 import { GrammarLegend } from '@/features/quran/analyse/GrammarLegend';
 import { GrammarModeBar } from '@/features/quran/analyse/GrammarModeBar';
-import { alignedMorphWords, wortFarbe, type FarbModus } from '@/features/quran/analyse/grammarColorModes';
+import { GesamtAnalyseVers } from '@/features/quran/analyse/GesamtAnalyseVers';
+import { alignedMorphWords, wortFarbeTeile, type FarbModus } from '@/features/quran/analyse/grammarColorModes';
 import { Satzstruktur } from '@/features/quran/analyse/Satzstruktur';
 import { useGrammatikIntro } from '@/features/quran/analyse/useGrammatikIntro';
 import { useSurahMorphologie } from '@/features/quran/morphologieHooks';
@@ -376,6 +377,7 @@ export default function SurahReaderScreen() {
   // wird hier bewusst NICHT mit settings.showTransliteration synchronisiert)
   // — dasselbe Muster gilt konsequent auch für die neuen Grammatik-Modi.
   const [grammarMode, setGrammarMode] = useState<FarbModus>('aus');
+  const [showGesamtanalyse, setShowGesamtanalyse] = useState(false);
   // Satzstruktur-Ansicht (Satzebene der Wortanalyse, s. features/quran/
   // analyse/Satzstruktur.tsx): eigener, unabhängiger Schalter nach demselben
   // Muster wie grammarMode/showWordByWord — Standard aus, lädt ihre
@@ -389,8 +391,15 @@ export default function SurahReaderScreen() {
   // hängen nur die einmalige Benachrichtigung an.
   const grammatikIntro = useGrammatikIntro();
   const handleGrammarModeChange = (next: FarbModus) => {
+    setShowGesamtanalyse(false);
     setGrammarMode(next);
     if (next !== 'aus') grammatikIntro.notifyActivated();
+  };
+  const toggleGesamtanalyse = () => {
+    const next = !showGesamtanalyse;
+    setShowGesamtanalyse(next);
+    setGrammarMode(next ? 'wortart' : 'aus');
+    if (next) grammatikIntro.notifyActivated();
   };
   const toggleSatzstruktur = () => {
     setShowSatzstruktur((s) => {
@@ -968,10 +977,9 @@ export default function SurahReaderScreen() {
                   stopNestedPressBubble(e);
                   toggle(surahNumber, item.numberInSurah);
                 }}
-                hitSlop={14}
                 accessibilityRole="button"
                 accessibilityLabel={bookmarked ? t('a11y.removeBookmark') : t('a11y.addBookmark')}
-                style={({ pressed }) => [Platform.OS === 'web' ? styles.pressableWeb : undefined, pressed && styles.chipPressed]}>
+                style={({ pressed }) => [styles.ayahActionBtn, Platform.OS === 'web' ? styles.pressableWeb : undefined, pressed && styles.chipPressed]}>
                 <IconSymbol
                   name={bookmarked ? 'bookmark' : 'bookmark-outline'}
                   size={16}
@@ -983,10 +991,9 @@ export default function SurahReaderScreen() {
                   stopNestedPressBubble(e);
                   copyAyah(item);
                 }}
-                hitSlop={14}
                 accessibilityRole="button"
                 accessibilityLabel={t('quran.copyVerse')}
-                style={({ pressed }) => [Platform.OS === 'web' ? styles.pressableWeb : undefined, pressed && styles.chipPressed]}>
+                style={({ pressed }) => [styles.ayahActionBtn, Platform.OS === 'web' ? styles.pressableWeb : undefined, pressed && styles.chipPressed]}>
                 <IconSymbol name="copy-outline" size={16} color={cardColors.textSecondary} />
               </Pressable>
               <Pressable
@@ -994,10 +1001,9 @@ export default function SurahReaderScreen() {
                   stopNestedPressBubble(e);
                   shareAyah(item);
                 }}
-                hitSlop={14}
                 accessibilityRole="button"
                 accessibilityLabel={t('a11y.share')}
-                style={({ pressed }) => [Platform.OS === 'web' ? styles.pressableWeb : undefined, pressed && styles.chipPressed]}>
+                style={({ pressed }) => [styles.ayahActionBtn, Platform.OS === 'web' ? styles.pressableWeb : undefined, pressed && styles.chipPressed]}>
                 <IconSymbol name="share-outline" size={16} color={cardColors.textSecondary} />
               </Pressable>
               <Pressable
@@ -1005,10 +1011,9 @@ export default function SurahReaderScreen() {
                   stopNestedPressBubble(e);
                   shareAyahImage(item);
                 }}
-                hitSlop={14}
                 accessibilityRole="button"
                 accessibilityLabel={t('quran.shareImage')}
-                style={({ pressed }) => [Platform.OS === 'web' ? styles.pressableWeb : undefined, pressed && styles.chipPressed]}>
+                style={({ pressed }) => [styles.ayahActionBtn, Platform.OS === 'web' ? styles.pressableWeb : undefined, pressed && styles.chipPressed]}>
                 <IconSymbol name="image-outline" size={16} color={cardColors.textSecondary} />
               </Pressable>
               {reciteCheckAvailable && (
@@ -1024,10 +1029,9 @@ export default function SurahReaderScreen() {
                       },
                     });
                   }}
-                  hitSlop={14}
                   accessibilityRole="button"
                   accessibilityLabel={t('quran.reciteCheck')}
-                  style={({ pressed }) => [Platform.OS === 'web' ? styles.pressableWeb : undefined, pressed && styles.chipPressed]}>
+                  style={({ pressed }) => [styles.ayahActionBtn, Platform.OS === 'web' ? styles.pressableWeb : undefined, pressed && styles.chipPressed]}>
                   <IconSymbol name="mic-outline" size={16} color={cardColors.textSecondary} />
                 </Pressable>
               )}
@@ -1042,10 +1046,9 @@ export default function SurahReaderScreen() {
                     setEditingNoteAyah(item.numberInSurah);
                   }
                 }}
-                hitSlop={14}
                 accessibilityRole="button"
                 accessibilityLabel={t('a11y.noteAyah')}
-                style={({ pressed }) => [Platform.OS === 'web' ? styles.pressableWeb : undefined, pressed && styles.chipPressed]}>
+                style={({ pressed }) => [styles.ayahActionBtn, Platform.OS === 'web' ? styles.pressableWeb : undefined, pressed && styles.chipPressed]}>
                 <IconSymbol
                   name={isEditingNote || savedNote ? 'create' : 'create-outline'}
                   size={16}
@@ -1059,18 +1062,37 @@ export default function SurahReaderScreen() {
             type="default"
             sepia={sepia}
             style={[styles.arabic, quranFont.style, arabicMetrics]}>
-            {alignedMainMorph && mainTextWords
-              ? // Grammatik-Farbmodus: derselbe Text wie sonst (mainTextWords
-                // kommt aus demselben splitArabicWords(quranFont.text(...))
-                // wie unten im Wort-Sync-Zweig), nur je Wort eingefärbt — es
-                // wird NIE ein Zeichen aus der Morphologie eingesetzt (siehe
-                // Kopf-Kommentar in analyse/grammarColorModes.ts).
+            {grammarModeActive && mainTextWords
+              ? // Grammatik-Farbmodus hat Vorrang vor Tajwid (auch wenn die
+                // Morphologie-Wortzahl nicht passt — dann bleibt der Vers
+                // ungefärbt statt still auf Tajwid zurückzufallen). Text stets
+                // aus mainTextWords, Farbe aus Morphologie (s. grammarColorModes).
                 mainTextWords.map((w, wi) => {
-                  const mw = alignedMainMorph.find((m) => m.position === wi + 1);
-                  const farbe = mw ? wortFarbe(grammarScheme, grammarMode, mw) : undefined;
+                  const mw = alignedMainMorph?.find((m) => m.position === wi + 1);
+                  if (!mw) {
+                    return (
+                      <Text key={wi}>
+                        {w}
+                        {' '}
+                      </Text>
+                    );
+                  }
+                  const teile = wortFarbeTeile(grammarScheme, grammarMode, w, mw);
+                  if (teile.length === 1) {
+                    return (
+                      <Text key={wi} style={teile[0].farbe ? { color: teile[0].farbe } : undefined}>
+                        {teile[0].text}
+                        {' '}
+                      </Text>
+                    );
+                  }
                   return (
-                    <Text key={wi} style={farbe ? { color: farbe } : undefined}>
-                      {w}
+                    <Text key={wi}>
+                      {teile.map((teil, ti) => (
+                        <Text key={ti} style={teil.farbe ? { color: teil.farbe } : undefined}>
+                          {teil.text}
+                        </Text>
+                      ))}
                       {' '}
                     </Text>
                   );
@@ -1116,6 +1138,21 @@ export default function SurahReaderScreen() {
                   })()
                 : quranFont.text(item.arabic)}
           </ThemedText>
+          {showGesamtanalyse && mainTextWords ? (
+            alignedMainMorph ? (
+              <GesamtAnalyseVers
+                words={alignedMainMorph}
+                verseWords={alignedMainMorph}
+                displayWords={splitArabicWords(item.arabic)}
+                quranFont={quranFont}
+                showEvidenceLegend={item.numberInSurah === 1}
+              />
+            ) : (
+              <ThemedText type="small" themeColor="textSecondary" style={styles.groupIntro}>
+                {t('quran.wortAnalyse.morphologyNoData')}
+              </ThemedText>
+            )
+          ) : null}
           {/* Feste Stapel-Reihenfolge (Anfänger-Modus-Wunsch): verbundene Schrift →
               isolierte Buchstaben → Umschrift MÜSSEN unmittelbar aufeinander folgen,
               wenn alle drei aktiv sind. Wort-für-Wort deshalb bewusst NACH der
@@ -1174,9 +1211,10 @@ export default function SurahReaderScreen() {
                           // Wortanalyse gilt dem Wort, nicht der Gruppe).
                           const wi = gruppe.von - 1 + versatz;
                           const wbwMorphWord = alignedWbwMorph?.find((m) => m.position === wi + 1);
-                          const grammarFarbe = wbwMorphWord
-                            ? wortFarbe(grammarScheme, grammarMode, wbwMorphWord)
-                            : undefined;
+                          const wbwText = quranFont.text(w.arabic);
+                          const grammarTeile = wbwMorphWord
+                            ? wortFarbeTeile(grammarScheme, grammarMode, wbwText, wbwMorphWord)
+                            : [{ text: wbwText }];
                           return (
                             <Pressable
                               key={wi}
@@ -1195,13 +1233,18 @@ export default function SurahReaderScreen() {
                               <ThemedText
                                 type="default"
                                 sepia={sepia}
-                                style={[
-                                  styles.wordArabic,
-                                  quranFont.style,
-                                  wordArabicMetrics,
-                                  grammarFarbe ? { color: grammarFarbe } : undefined,
-                                ]}>
-                                {quranFont.text(w.arabic)}
+                                style={[styles.wordArabic, quranFont.style, wordArabicMetrics]}>
+                                {grammarTeile.length === 1 ? (
+                                  <Text style={grammarTeile[0].farbe ? { color: grammarTeile[0].farbe } : undefined}>
+                                    {grammarTeile[0].text}
+                                  </Text>
+                                ) : (
+                                  grammarTeile.map((teil, ti) => (
+                                    <Text key={ti} style={teil.farbe ? { color: teil.farbe } : undefined}>
+                                      {teil.text}
+                                    </Text>
+                                  ))
+                                )}
                               </ThemedText>
                             </Pressable>
                           );
@@ -1345,7 +1388,11 @@ export default function SurahReaderScreen() {
                 </ThemedView>
               </Pressable>
               <View style={styles.headerTitleBlock}>
-                <ThemedText type="subtitle" sepia={sepia} numberOfLines={1}>
+                <ThemedText
+                  type="subtitle"
+                  sepia={sepia}
+                  numberOfLines={1}
+                  accessibilityLabel={data.meta.englishName}>
                   {data.meta.englishName}
                 </ThemedText>
                 <ThemedText type="small" themeColor="textSecondary" sepia={sepia} numberOfLines={1}>
@@ -1386,6 +1433,26 @@ export default function SurahReaderScreen() {
                 </ThemedView>
               </Pressable>
             </View>
+            )}
+
+            {!focusMode && (
+              <View style={styles.analysisEntryRow}>
+                <Pressable
+                  onPress={toggleGesamtanalyse}
+                  accessibilityRole="button"
+                  accessibilityLabel={t('quran.wortAnalyse.totalModeLabel')}
+                  accessibilityState={{ selected: showGesamtanalyse }}
+                  style={({ pressed }) => [Platform.OS === 'web' ? styles.pressableWeb : undefined, pressed && styles.chipPressed]}>
+                  <ThemedView
+                    type={showGesamtanalyse ? 'backgroundSelected' : 'backgroundElement'}
+                    style={[styles.analysisEntryButton, sepia && styles.sepiaCard]}>
+                    <IconSymbol name="layers-outline" size={16} color={showGesamtanalyse ? cardColors.accent : cardColors.text} />
+                    <ThemedText type="smallBold" themeColor={showGesamtanalyse ? 'accent' : 'text'} sepia={sepia}>
+                      {t('quran.wortAnalyse.totalModeLabel')}
+                    </ThemedText>
+                  </ThemedView>
+                </Pressable>
+              </View>
             )}
 
             {!focusMode && searchOpen && (
@@ -1748,7 +1815,14 @@ export default function SurahReaderScreen() {
             <ThemedText type="small" themeColor="textSecondary" style={styles.groupIntro}>
               {t('quran.captions.grammarColorModes')}
             </ThemedText>
-            <GrammarModeBar modus={grammarMode} onChange={handleGrammarModeChange} scheme={grammarScheme} sepia={sepia} />
+            <GrammarModeBar
+              modus={grammarMode}
+              onChange={handleGrammarModeChange}
+              gesamtanalyse={showGesamtanalyse}
+              onToggleGesamtanalyse={toggleGesamtanalyse}
+              scheme={grammarScheme}
+              sepia={sepia}
+            />
             <View style={styles.toggleGroup}>
               <FeatureToggle
                 active={showSatzstruktur}
@@ -2021,7 +2095,7 @@ export default function SurahReaderScreen() {
               </>
             )}
 
-            {grammarModeActive && <GrammarLegend modus={grammarMode} scheme={grammarScheme} sepia={sepia} />}
+            {grammarModeActive && !showGesamtanalyse && <GrammarLegend modus={grammarMode} scheme={grammarScheme} sepia={sepia} />}
 
             {readerMode === 'page' ? (
               <ScrollView
@@ -2187,6 +2261,12 @@ export default function SurahReaderScreen() {
           onWurzelOeffnen={(wurzel) => router.push({ pathname: '/lexikon/wurzel/[wurzel]', params: { wurzel } })}
           onLexikonOeffnen={() => router.push('/lexikon')}
           onVerbTypOeffnen={(typ) => router.push({ pathname: '/lexikon/verbtyp/[typ]', params: { typ } })}
+          onSarfLexikonOeffnen={(form) =>
+            router.push({ pathname: '/lexikon/begriff/[bereich]/[id]', params: { bereich: 'verb', id: `form${form}` } })
+          }
+          onLehrtextOeffnen={(bereich, id) =>
+            router.push({ pathname: '/lexikon/begriff/[bereich]/[id]', params: { bereich, id } })
+          }
           onClose={() => setSelectedWordPos(null)}
         />
 
@@ -2415,10 +2495,32 @@ const styles = StyleSheet.create({
     maxWidth: MaxContentWidth,
   },
   headerTitleBlock: { flex: 1, minWidth: 0 },
+  analysisEntryRow: {
+    alignSelf: 'center',
+    width: '100%',
+    maxWidth: MaxContentWidth,
+    paddingHorizontal: Spacing.three,
+    paddingBottom: Spacing.two,
+  },
+  analysisEntryButton: {
+    alignSelf: 'flex-start',
+    minHeight: 40,
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: Spacing.two,
+    paddingHorizontal: Spacing.three,
+    borderRadius: Spacing.four,
+  },
   headerIconBtn: {
-    width: 40,
-    height: 40,
-    borderRadius: 20,
+    width: 44,
+    height: 44,
+    borderRadius: 22,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  ayahActionBtn: {
+    width: 44,
+    height: 44,
     alignItems: 'center',
     justifyContent: 'center',
   },
@@ -2570,12 +2672,15 @@ const styles = StyleSheet.create({
   },
   navBtn: { width: 44, height: 44, borderRadius: 22, alignItems: 'center', justifyContent: 'center' },
   navDisabled: { opacity: 0.3 },
-  ayah: { paddingVertical: Spacing.two, borderRadius: Spacing.two, gap: Spacing.one },
+  ayah: { paddingVertical: Spacing.two, paddingHorizontal: Spacing.two, borderRadius: Spacing.two, gap: Spacing.one },
   ayahActive: { backgroundColor: 'rgba(212,175,55,0.12)' },
-  ayahHeader: { flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center' },
-  ayahNumberRow: { flexDirection: 'row', alignItems: 'center', gap: Spacing.one },
+  ayahHeader: { flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', gap: Spacing.one },
+  ayahNumberRow: { flexDirection: 'row', alignItems: 'center', gap: Spacing.one, flexShrink: 0 },
   sajdaMark: { fontSize: 15 },
-  ayahActions: { flexDirection: 'row', gap: Spacing.three },
+  // On 320–360 dp phones, six actions no longer fit beside the verse number.
+  // Let the row take the remaining width and wrap rather than clipping the
+  // final note button offscreen; the 44 dp touch targets remain unchanged.
+  ayahActions: { flex: 1, minWidth: 0, flexDirection: 'row', flexWrap: 'wrap', justifyContent: 'flex-end', gap: Spacing.one },
   // writingDirection ist Pflicht, sobald der Vers in MEHRERE Geschwister-
   // <Text>-Knoten zerlegt wird (Tajwid-Segmente, Wort-Sync-Highlight):
   // ohne diese CSS-direction reiht der Browser die Spans in DOM- statt
@@ -2583,7 +2688,7 @@ const styles = StyleSheet.create({
   // (kritischer Nutzer-Fund: Sure 18, Tajwid-Ansicht).
   // fontFamily/Größe kommen zur Laufzeit aus useQuranFont() — die Schrift ist
   // einstellbar (features/quran/fonts.ts).
-  arabic: { textAlign: 'right', writingDirection: 'rtl' },
+  arabic: { textAlign: 'right', writingDirection: 'rtl', paddingHorizontal: Spacing.two },
   basmala: { textAlign: 'center', marginBottom: Spacing.three, opacity: 0.85 },
   transliteration: { fontStyle: 'italic' },
   isolatedLetters: { letterSpacing: 4 },

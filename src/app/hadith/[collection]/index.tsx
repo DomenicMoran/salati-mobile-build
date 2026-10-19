@@ -182,7 +182,7 @@ const styles = StyleSheet.create({
     paddingBottom: Spacing.one,
     textAlign: 'center',
   },
-  langChip: { paddingVertical: Spacing.one, paddingHorizontal: Spacing.three, borderRadius: Spacing.four },
+  langChip: { minWidth: 44, minHeight: 44, paddingVertical: Spacing.one, paddingHorizontal: Spacing.three, borderRadius: Spacing.four, alignItems: 'center', justifyContent: 'center' },
   search: {
     marginHorizontal: Spacing.three,
     marginVertical: Spacing.three,

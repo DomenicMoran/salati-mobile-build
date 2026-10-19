@@ -9,7 +9,6 @@ Namaz vakitleri ve ezan, kıble pusulası, Kur'an, Ramazan — reklamsız, hesap
 (78/80 Zeichen)
 
 ## Vollständige Beschreibung
-
 Salati, bir Müslüman olarak gününüzde size eşlik eder — doğru namaz vakitleri, Kur'an, cihazda çalışan özel bir yapay zekâ ve Kur'an okumayı sıfırdan öğreten eksiksiz bir kursla. Reklamsız, hesapsız ve izleme yok.
 
 NAMAZ VE GÜNLÜK HAYAT
@@ -48,7 +47,7 @@ SALATİ YAPAY ZEKÂ
 • Açıkça belirtilir: yapay zekâ yanıtıdır, fetva veya âlim görüşü değildir
 
 İLİM VE KALP
-• İlim: kaynak gösterilen 12 kurs, 311 ders — Akide, Tecvid, 40 Hadis (Nevevî), Siyer, Peygamberler, Sahabe ve Âlimler, Ahlak, Evlilik ve Aile, Kur'an Grameri, Günlük Arapça, Medine Arapçası (1–4), Arap lehçeleri — kurs ve lehçe sırası dilediğiniz gibi
+• İlim: kaynak gösterilen 14 kurs, 363 ders — Akide, Tecvid, 40 Hadis (Nevevî), Siyer, Peygamberler, Sahabe ve Âlimler, Ahlak, Evlilik ve Aile, Kur'an Grameri, Günlük Arapça, Medine Arapçası (1–4), Arap lehçeleri — kurs ve lehçe sırası dilediğiniz gibi
 • Seviye tespit ve bilgi testi, aralıklı tekrar, zayıf nokta çalışması, öğrenme serisi ve günlük hedef
 • Alıştırma ve Quiz: 14 mod, artı yanlışları tekrar çalışmak için hata tekrarı
 • Haftalık özet paylaşılabilir görsel olarak
@@ -59,11 +58,12 @@ SALATİ YAPAY ZEKÂ
 • Fotoğraflı uygulama rehberleri: abdest, gusül, namaz, cenaze, hac ve umre ve daha fazlası
 • Zekât ve miras hesaplayıcı, kaynaklı hikmetler, zikir için tesbih sayacı
 
-PODCAST, VIDEO VE REELS
-• Salati podcast'i „Kur'an'ın Dili": Kur'an Arapçasını bölüm bölüm anlatır (Almanca) — Spotify'da da
-• Öğrenme videoları: dil bilgisi ve kelime tabloları ile ders klipleri — YouTube'da da
-• Reels: yol üstü için kısa öğrenme klipleri — Instagram'da da
-• PDF belgeler: indirilebilir çalışma materyali
+SESli KİTAPLAR, PODCAST, VİDEO VE REELS
+• Sesli kitaplar: «İslam’da Farz İlim» (8 bölüm) ve «Arap Grameri — Kurs 3» (10 bölüm) — 14 uygulama dilinde ses ve sunum videosu, uygulama dilinizde
+• Salati podcast «Kur’an Dili»: Kur’an Arapçası bölüm bölüm — Spotify’da da
+• Öğrenme videoları: gramer ve kelime tabloları, ders klipleri — YouTube’da da
+• Reels: kısa öğrenme klipleri — Instagram’da da
+• PDF el kitapları: indirilebilir materyal
 
 VERİLERİNİZ SİZE AİTTİR
 Salati reklamsızdır, hesap ve izleme SDK'sı yoktur — verileriniz cihazınızda kalır. Konumunuz yalnızca namaz vakitleri, kıble ve çevre araması için kullanılır ve bunun için AlAdhan ile OpenStreetMap'e iletilir: anonim, kimliğinize bağlanmaz, dilediğinizde reddedebilirsiniz. Temel içerikler çevrimdışı çalışır.
@@ -71,7 +71,7 @@ Salati reklamsızdır, hesap ve izleme SDK'sı yoktur — verileriniz cihazını
 Soru veya geri bildirim: salati@domenicmoran.de
 Gizlilik: https://www.salati.pro/datenschutz
 
-(3814/4000 Zeichen)
+(3931/4000 Zeichen)
 
 ## Keywords
 

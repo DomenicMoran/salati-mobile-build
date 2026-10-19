@@ -23,6 +23,18 @@ import {
   type Wortart,
   type WurzelTypKategorie,
 } from '../grammatik';
+import {
+  bestimmtheitBegruendung,
+  genusVerbiBegruendung,
+  kasusBegruendung,
+  loeseBegruendung,
+  modusBegruendung,
+  istKeinAufloesbaresBezugswort,
+  relationBegruendung,
+  relationKasusZusatzBegruendung,
+  tempusBegruendung,
+  verbformBegruendung,
+} from './begruendungen';
 import type { MorphSegment, MorphWord } from '../morphologieTypen';
 
 /** Übersetzungsfunktion — dieselbe Signatur wie `useTranslation().t`. */
@@ -42,9 +54,8 @@ const KIND_KEY: Record<MorphSegment['kind'], string> = {
 
 // Rollen mit eigenem i18n-Eintrag unter grammatik.fragmentrollen. Die beiden
 // generischen Sammelrollen aus fragmentRolle() (sonstigerHarf/sonstigesAffix)
-// haben dort BEWUSST keinen eigenen Eintrag (siehe grammatik.ts) — für sie
-// fällt onWurzelOeffnen unten auf grammatik.posTags[segment.pos] zurück, das
-// alle 45 im Korpus vorkommenden POS-Tags abdeckt.
+// haben dort BEWUSST keinen eigenen Eintrag — für sie fällt fragmentAnzeige
+// auf grammatik.posTags[segment.pos] zurück.
 const ROLLE_HAT_EIGENEN_EINTRAG = new Set<FragmentRolle>([
   'konjunktion',
   'praeposition',
@@ -53,7 +64,45 @@ const ROLLE_HAT_EIGENEN_EINTRAG = new Set<FragmentRolle>([
   'verneinung',
   'fragepartikel',
   'stamm',
+  'akkusativPartikel',
+  'amendmentPartikel',
+  'antwortpartikel',
+  'abwendungspartikel',
+  'ausnahmepartikel',
+  'equalisierungspartikel',
+  'ermahnungspartikel',
+  'erklaerungspartikel',
+  'emphaseLam',
+  'futurPartikel',
+  'gewissheitspartikel',
+  'imperativLam',
+  'inzeptivPartikel',
+  'interpretationspartikel',
+  'kausalpartikel',
+  'konditionalpartikel',
+  'komitativpartikel',
+  'neubeginnPartikel',
+  'praevPartikel',
+  'quranischeInitialen',
+  'restriktionspartikel',
+  'resultatpartikel',
+  'retraktionspartikel',
+  'supplementPartikel',
+  'ueberraschungspartikel',
+  'umstandspartikel',
+  'unterordnendeKonjunktion',
+  'verbotspartikel',
+  'vokativPartikel',
+  'zweckpartikel',
 ]);
+
+function ersetzeInfoPlatzhalter(info: string, segment: MorphSegment, t: Uebersetzer): string {
+  const posSchluessel = `grammatik.posTags.${segment.pos}`;
+  return info
+    .replaceAll('{segment}', segment.text)
+    .replaceAll('{posName}', t(`${posSchluessel}.name`))
+    .replaceAll('{posAr}', t(`${posSchluessel}.ar`));
+}
 
 export interface FragmentAnzeige {
   segment: MorphSegment;
@@ -69,9 +118,25 @@ export interface FragmentAnzeige {
 /** Anzeigedaten für EIN Fragment (Segment) eines Wortes. */
 export function fragmentAnzeige(segment: MorphSegment, t: Uebersetzer): FragmentAnzeige {
   const rolle = fragmentRolle(segment);
+  const posSchluessel = `grammatik.posTags.${segment.pos}`;
+
+  if (rolle === 'stamm') {
+    const stammSchluessel = 'grammatik.fragmentrollen.stamm';
+    return {
+      segment,
+      kind: segment.kind,
+      kindLabel: t(KIND_KEY[segment.kind]),
+      farbGruppe: farbGruppe(segment),
+      rolle,
+      name: `${t(`${stammSchluessel}.name`)} · ${t(`${posSchluessel}.name`)}`,
+      ar: `${t(`${stammSchluessel}.ar`)} · ${t(`${posSchluessel}.ar`)}`,
+      info: ersetzeInfoPlatzhalter(t(`${stammSchluessel}.info`), segment, t),
+    };
+  }
+
   const basisSchluessel = ROLLE_HAT_EIGENEN_EINTRAG.has(rolle)
     ? `grammatik.fragmentrollen.${rolle}`
-    : `grammatik.posTags.${segment.pos}`;
+    : posSchluessel;
   return {
     segment,
     kind: segment.kind,
@@ -80,7 +145,7 @@ export function fragmentAnzeige(segment: MorphSegment, t: Uebersetzer): Fragment
     rolle,
     name: t(`${basisSchluessel}.name`),
     ar: t(`${basisSchluessel}.ar`),
-    info: t(`${basisSchluessel}.info`),
+    info: ersetzeInfoPlatzhalter(t(`${basisSchluessel}.info`), segment, t),
   };
 }
 
@@ -115,12 +180,15 @@ export interface MerkmalAnzeige {
   herkunft: Herkunft;
   herkunftLabel: string;
   herkunftInfo: string;
+  /** Grammatische Begründung für den angezeigten Wert (Katalog BEGRUENDUNGEN.md). */
+  begruendung: string | null;
 }
 
 function merkmalAnzeige(
   basisSchluessel: string,
   merkmal: MerkmalMitHerkunft<string | number> | null,
   t: Uebersetzer,
+  begruendung: string | null = null,
 ): MerkmalAnzeige | null {
   if (!merkmal) return null;
   const wert = String(merkmal.wert);
@@ -135,6 +203,7 @@ function merkmalAnzeige(
     herkunft: merkmal.herkunft,
     herkunftLabel: t(`grammatik.herkunft.${merkmal.herkunft}.label`),
     herkunftInfo: t(`grammatik.herkunft.${merkmal.herkunft}.info`),
+    begruendung,
   };
 }
 
@@ -147,13 +216,28 @@ export interface IsmEigenschaftenAnzeige {
 
 /** Die vier Ism-Eigenschaften (Genus, Numerus, Bestimmtheit, Kasus) als
  * fertige Anzeigedaten, jede mit Beleg-/Herleitungs-Kennzeichnung. */
-export function ismEigenschaftenAnzeige(segment: MorphSegment, t: Uebersetzer): IsmEigenschaftenAnzeige {
+export function ismEigenschaftenAnzeige(
+  word: MorphWord,
+  segment: MorphSegment,
+  verseWords: MorphWord[] | undefined,
+  t: Uebersetzer,
+): IsmEigenschaftenAnzeige {
   const e = ismEigenschaften(segment);
   return {
-    genus: merkmalAnzeige('grammatik.ismEigenschaften.genus', e.genus, t),
-    numerus: merkmalAnzeige('grammatik.ismEigenschaften.numerus', e.numerus, t),
-    bestimmtheit: merkmalAnzeige('grammatik.ismEigenschaften.bestimmtheit', e.bestimmtheit, t),
-    kasus: merkmalAnzeige('grammatik.ismEigenschaften.kasus', e.kasus, t),
+    genus: merkmalAnzeige('grammatik.ismEigenschaften.genus', e.genus, t, null),
+    numerus: merkmalAnzeige('grammatik.ismEigenschaften.numerus', e.numerus, t, null),
+    bestimmtheit: merkmalAnzeige(
+      'grammatik.ismEigenschaften.bestimmtheit',
+      e.bestimmtheit,
+      t,
+      loeseBegruendung(bestimmtheitBegruendung(word, segment, verseWords), t),
+    ),
+    kasus: merkmalAnzeige(
+      'grammatik.ismEigenschaften.kasus',
+      e.kasus,
+      t,
+      loeseBegruendung(kasusBegruendung(word, segment, verseWords, t), t),
+    ),
   };
 }
 
@@ -166,6 +250,7 @@ export interface VerbformAnzeige {
   herkunft: Herkunft;
   herkunftLabel: string;
   herkunftInfo: string;
+  begruendung: string | null;
 }
 
 export interface VerbEigenschaftenAnzeige {
@@ -183,31 +268,71 @@ export interface VerbEigenschaftenAnzeige {
 
 /** Tempus (mit Begründung), Genus verbi, Modus, Verbform (mit typischer
  * Bedeutung) sowie Person/Genus/Numerus als fertige Anzeigedaten. */
-export function verbEigenschaftenAnzeige(segment: MorphSegment, t: Uebersetzer): VerbEigenschaftenAnzeige {
+export function verbEigenschaftenAnzeige(word: MorphWord, segment: MorphSegment, t: Uebersetzer): VerbEigenschaftenAnzeige {
   const e = verbEigenschaften(segment);
   const verbform: VerbformAnzeige | null = e.verbform
-    ? {
-        label: t('grammatik.verbEigenschaften.verbform.name'),
-        ar: t('grammatik.verbEigenschaften.verbform.ar'),
-        formName: t(`grammatik.verbEigenschaften.verbform.formen.${e.verbform.wert}.name`),
-        formAr: t(`grammatik.verbEigenschaften.verbform.formen.${e.verbform.wert}.ar`),
-        formInfo: t(`grammatik.verbEigenschaften.verbform.formen.${e.verbform.wert}.info`),
-        herkunft: e.verbform.herkunft,
-        herkunftLabel: t(`grammatik.herkunft.${e.verbform.herkunft}.label`),
-        herkunftInfo: t(`grammatik.herkunft.${e.verbform.herkunft}.info`),
-      }
+    ? (() => {
+        const form = e.verbform.wert;
+        const formSchluessel = `grammatik.verbEigenschaften.verbform.formen.${form}`;
+        const formInfoRaw = t(`${formSchluessel}.info`);
+        const formInfo = formInfoRaw !== `${formSchluessel}.info` ? formInfoRaw : '';
+        return {
+          label: t('grammatik.verbEigenschaften.verbform.name'),
+          ar: t('grammatik.verbEigenschaften.verbform.ar'),
+          formName: t(`${formSchluessel}.name`),
+          formAr: t(`${formSchluessel}.ar`),
+          formInfo,
+          herkunft: e.verbform.herkunft,
+          herkunftLabel: t(`grammatik.herkunft.${e.verbform.herkunft}.label`),
+          herkunftInfo: t(`grammatik.herkunft.${e.verbform.herkunft}.info`),
+          begruendung: loeseBegruendung(
+            verbformBegruendung(word, form, e.verbform.herkunft, formInfo),
+            t,
+          ),
+        };
+      })()
     : null;
+
+  let genusVerbi = merkmalAnzeige(
+    'grammatik.verbEigenschaften.genusVerbi',
+    e.genusVerbi,
+    t,
+    e.genusVerbi ? loeseBegruendung(genusVerbiBegruendung(word, segment), t) : null,
+  );
+  if (!genusVerbi && segment.pos === 'V') {
+    genusVerbi = {
+      schluessel: 'grammatik.verbEigenschaften.genusVerbi',
+      label: t('grammatik.verbEigenschaften.genusVerbi.name'),
+      ar: t('grammatik.verbEigenschaften.genusVerbi.ar'),
+      info: t('grammatik.verbEigenschaften.genusVerbi.info'),
+      wert: 'active',
+      wertName: t('grammatik.verbEigenschaften.genusVerbi.werte.active.name'),
+      wertAr: t('grammatik.verbEigenschaften.genusVerbi.werte.active.ar'),
+      herkunft: 'hergeleitet',
+      herkunftLabel: t('grammatik.herkunft.hergeleitet.label'),
+      herkunftInfo: t('grammatik.herkunft.hergeleitet.info'),
+      begruendung: loeseBegruendung(genusVerbiBegruendung(word, segment), t),
+    };
+  }
+
   return {
-    tempus: merkmalAnzeige('grammatik.verbEigenschaften.tempus', e.tempus, t),
-    modus: merkmalAnzeige('grammatik.verbEigenschaften.modus', e.modus, t),
-    genusVerbi: merkmalAnzeige('grammatik.verbEigenschaften.genusVerbi', e.genusVerbi, t),
+    tempus: merkmalAnzeige(
+      'grammatik.verbEigenschaften.tempus',
+      e.tempus,
+      t,
+      loeseBegruendung(tempusBegruendung(word, segment), t),
+    ),
+    modus: merkmalAnzeige(
+      'grammatik.verbEigenschaften.modus',
+      e.modus,
+      t,
+      loeseBegruendung(modusBegruendung(word, segment), t),
+    ),
+    genusVerbi,
     verbform,
-    // grammatik.verbEigenschaften.person fehlt aktuell in den Locale-Dateien
-    // (siehe Bericht des bauenden Agenten) — bis dahin liefert t() den rohen
-    // Schlüssel zurück (ehrlicher Fallback von translate(), kein Absturz).
-    person: merkmalAnzeige('grammatik.verbEigenschaften.person', e.person, t),
-    genus: merkmalAnzeige('grammatik.ismEigenschaften.genus', e.genus, t),
-    numerus: merkmalAnzeige('grammatik.ismEigenschaften.numerus', e.numerus, t),
+    person: merkmalAnzeige('grammatik.verbEigenschaften.person', e.person, t, null),
+    genus: merkmalAnzeige('grammatik.ismEigenschaften.genus', e.genus, t, null),
+    numerus: merkmalAnzeige('grammatik.ismEigenschaften.numerus', e.numerus, t, null),
   };
 }
 
@@ -309,6 +434,10 @@ export interface RelationAnzeige {
   head: number | null;
   /** Arabischer Text des Bezugsworts, wenn es im selben Vers gefunden wurde. */
   headText: string | null;
+  /** Strukturelle Begründung der Satzrolle (Katalog §13). */
+  begruendung: string | null;
+  /** Zusatz, wenn Kasus und Relation im Einzelfall zusammenpassen. */
+  begruendungKasus: string | null;
 }
 
 /**
@@ -328,30 +457,45 @@ export function relationAnzeige(
   const syntax = word.syntax;
   if (!syntax) return null;
   const { basis, regens } = relationBasis(syntax.relation);
-  const headWord = syntax.head != null ? verseWords?.find((w) => w.position === syntax.head) : undefined;
+  const keinBezug = istKeinAufloesbaresBezugswort(syntax, word.position);
+  const headWord =
+    !keinBezug && syntax.head != null ? verseWords?.find((w) => w.position === syntax.head) : undefined;
+  const head = keinBezug ? null : syntax.head;
   const headText = headWord?.text ?? null;
   // Platzhalter-Text fürs {wort}: bevorzugt der tatsächliche Wortlaut aus dem
   // Vers, sonst (Vers noch nicht geladen) das QAC-Regens-Kürzel als ehrlicher
   // Rückfall — niemals eine erfundene Übersetzung.
   const platzhalterWort = headText ?? regens ?? String(syntax.head ?? '');
 
+  const relationName = (() => {
+    if (regens) {
+      const musterSchluessel = basis === 'pred' ? 'predOf' : 'subjOf';
+      return ersetze(t(`grammatik.relationen.muster.${musterSchluessel}.name`), '{wort}', platzhalterWort);
+    }
+    return t(`grammatik.relationen.${basis}.name`);
+  })();
+
   if (regens) {
     const musterSchluessel = basis === 'pred' ? 'predOf' : 'subjOf';
     const basisSchluessel = `grammatik.relationen.muster.${musterSchluessel}`;
     return {
-      name: ersetze(t(`${basisSchluessel}.name`), '{wort}', platzhalterWort),
+      name: relationName,
       ar: t(`${basisSchluessel}.ar`),
       info: ersetze(t(`${basisSchluessel}.info`), '{wort}', platzhalterWort),
-      head: syntax.head,
+      head,
       headText,
+      begruendung: loeseBegruendung(relationBegruendung(word, verseWords, relationName), t),
+      begruendungKasus: loeseBegruendung(relationKasusZusatzBegruendung(word, t), t),
     };
   }
   const basisSchluessel = `grammatik.relationen.${basis}`;
   return {
-    name: t(`${basisSchluessel}.name`),
+    name: relationName,
     ar: t(`${basisSchluessel}.ar`),
     info: t(`${basisSchluessel}.info`),
-    head: syntax.head,
+    head,
     headText,
+    begruendung: loeseBegruendung(relationBegruendung(word, verseWords, relationName), t),
+    begruendungKasus: loeseBegruendung(relationKasusZusatzBegruendung(word, t), t),
   };
 }

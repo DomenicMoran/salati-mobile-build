@@ -64,3 +64,35 @@ export function contentLanguageLabel(
   const name = nameKey ? t(nameKey) : normalizeContentLanguage(contentLang).toUpperCase();
   return t('media.contentLanguage').replace('{lang}', name);
 }
+
+/** true, sobald mindestens ein Eintrag ein explizites `lang` fuehrt (Handouts). */
+export function indexHasContentLanguage<T extends { lang?: string }>(items: readonly T[]): boolean {
+  return items.some((item) => typeof item.lang === 'string' && item.lang.trim() !== '');
+}
+
+/**
+ * Harte Inhaltssprache: nur Eintraege, deren `lang` (fehlend = Deutsch) der
+ * UI-Locale entspricht. Kein Fallback auf andere Sprachen — fuer Podcast und
+ * Hoerbuecher, nicht fuer die weiche Video-Filterleiste.
+ */
+export function filterByContentLanguage<T extends { lang?: string }>(
+  items: readonly T[],
+  uiLocale: string,
+): T[] {
+  const target = normalizeContentLanguage(uiLocale);
+  return items.filter((item) => normalizeContentLanguage(item.lang) === target);
+}
+
+/**
+ * Handouts haben keine Sprachleiste. Ein leeres „Kommt bald" waere falsch,
+ * wenn die Unterlagen nur in einer anderen Sprache vorliegen: dann bleibt die
+ * Liste sichtbar und die Karten tragen das Sprachabzeichen.
+ */
+export function handoutsForLocale<T extends { lang?: string }>(
+  items: readonly T[],
+  uiLocale: string,
+): T[] {
+  if (!indexHasContentLanguage(items)) return [...items];
+  const matched = filterByContentLanguage(items, uiLocale);
+  return matched.length > 0 ? matched : [...items];
+}

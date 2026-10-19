@@ -8,6 +8,7 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 
 import { ScreenHeader } from '@/components/screen-header';
 import { ThemedActivityIndicator } from '@/components/themed-activity-indicator';
+import { EmptyState } from '@/components/empty-state';
 import { IntroHelpButton } from '@/components/ui/intro-help-button';
 import { IntroSheet } from '@/components/ui/intro-sheet';
 import { ThemedText } from '@/components/themed-text';
@@ -16,7 +17,7 @@ import { BackChipInset, Colors, MaxContentWidth, Spacing } from '@/constants/the
 import { lessonTitle, type Lesson } from '@/features/learn/curriculum';
 import { useCourseProgress } from '@/features/learn/progress';
 import {
-  buildCourseCheckpoints,
+  buildHydratedCourseCheckpoints,
   checkpointPassed,
   applyCoursePlacement,
   recommendedNextLessonIn,
@@ -27,6 +28,7 @@ import { useExerciseIntro } from '@/hooks/use-exercise-intro';
 import { useResolvedScheme } from '@/hooks/use-resolved-scheme';
 import { backOr } from '@/lib/nav';
 import { useTranslation } from '@/lib/i18n';
+import { useSettings } from '@/features/settings/store';
 
 // Ohne generateStaticParams rendert `expo export --platform web` diese Route
 // nur als EIN generisches, parameterloses Template (siehe ausführlicher
@@ -40,6 +42,8 @@ export default function CoursePlacementScreen() {
   const { course: courseId } = useLocalSearchParams<{ course: string }>();
   const course = courseMetaById(courseId);
   const { t, locale } = useTranslation();
+  const { loaded: settingsLoaded } = useSettings();
+  const loadedCourseId = course?.id;
   const { progress, record } = useCourseProgress(course?.storageKey ?? 'salatibox:study-unknown');
   const scheme = useResolvedScheme();
   const colors = Colors[scheme];
@@ -58,24 +62,6 @@ export default function CoursePlacementScreen() {
   // study/review.tsx.
   const [checkpoints, setCheckpoints] = useState<CourseCheckpoint[] | null>(null);
   const [lessons, setLessons] = useState<Lesson[] | null>(null);
-  useEffect(() => {
-    let cancelled = false;
-    (async () => {
-      if (!course) return;
-      const courseLessons = await loadCourseLessons(course.id);
-      const built = buildCourseCheckpoints(courseLessons, locale, Math.random);
-      if (!cancelled) {
-        setLessons(courseLessons);
-        setCheckpoints(built);
-      }
-    })();
-    return () => {
-      cancelled = true;
-    };
-    // Checkpoints einmal beim Öffnen mischen, nicht bei jedem Re-Render
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [course?.id]);
-
   const [checkpointIndex, setCheckpointIndex] = useState(0);
   const [questionIndex, setQuestionIndex] = useState(0);
   const [score, setScore] = useState(0);
@@ -83,6 +69,41 @@ export default function CoursePlacementScreen() {
   const [lastPassedId, setLastPassedId] = useState<string | null>(null);
   const [finished, setFinished] = useState(false);
   const [applied, setApplied] = useState(false);
+  const [loadError, setLoadError] = useState(false);
+  const [loadAttempt, setLoadAttempt] = useState(0);
+
+  useEffect(() => {
+    let cancelled = false;
+    (async () => {
+      // The settings provider starts with German defaults while persisted
+      // settings hydrate. Do not build localized questions with that transient
+      // locale; otherwise the Arabic UI can show German question content.
+      if (!settingsLoaded || !loadedCourseId) return;
+      setCheckpoints(null);
+      setLessons(null);
+      setCheckpointIndex(0);
+      setQuestionIndex(0);
+      setScore(0);
+      setAnswered(null);
+      setLastPassedId(null);
+      setFinished(false);
+      setApplied(false);
+      setLoadError(false);
+      try {
+        const courseLessons = await loadCourseLessons(loadedCourseId);
+        const built = buildHydratedCourseCheckpoints(courseLessons, locale, settingsLoaded, Math.random);
+        if (!cancelled && built) {
+          setLessons(courseLessons);
+          setCheckpoints(built);
+        }
+      } catch {
+        if (!cancelled) setLoadError(true);
+      }
+    })();
+    return () => {
+      cancelled = true;
+    };
+  }, [loadedCourseId, locale, settingsLoaded, loadAttempt]);
 
   const checkpoint = checkpoints?.[checkpointIndex];
   const question = checkpoint?.questions[questionIndex];
@@ -167,7 +188,14 @@ export default function CoursePlacementScreen() {
         <SafeAreaView style={styles.safeArea}>
           <ScreenHeader title={t(`study.courses.${course.id}.title`)} onBack={backToCourse} />
           <View style={styles.center}>
-            <ThemedActivityIndicator />
+            {loadError ? (
+              <EmptyState
+                icon="alert-circle-outline"
+                title={t('common.error')}
+                actionLabel={t('common.retry')}
+                onAction={() => setLoadAttempt((attempt) => attempt + 1)}
+              />
+            ) : <ThemedActivityIndicator />}
           </View>
         </SafeAreaView>
       </ThemedView>

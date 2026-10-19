@@ -1,0 +1,8 @@
+{
+  "ios": {
+    "NSLocationWhenInUseUsageDescription": "Salati menggunakan lokasi anda untuk mengira waktu solat dan arah kiblat untuk kawasan anda.",
+    "NSMotionUsageDescription": "Salati menggunakan penderia gerakan untuk memaparkan arah kiblat pada kompas.",
+    "NSCameraUsageDescription": "Salati menggunakan kamera untuk imbas kod bar produk bagi pemeriksa halal.",
+    "NSMicrophoneUsageDescription": "Salati menggunakan mikrofon untuk menyemak bacaan Al-Qur'an anda dalam mod latihan hafazan."
+  }
+}

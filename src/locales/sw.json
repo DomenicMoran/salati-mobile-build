@@ -44,7 +44,11 @@
     "lernen": "Jifunze",
     "media": "Media",
     "lizenzen": "Vyanzo na leseni",
-    "challenges": "Changamoto"
+    "challenges": "Changamoto",
+    "learnGroup": "Kujifunza na mazoezi ya kila siku",
+    "audioGroup": "Maudhui ya sauti",
+    "referenceGroup": "Marejeo",
+    "practiceGroup": "Mazoezi"
   },
   "common": {
     "openSettings": "Fungua mipangilio ya mfumo",
@@ -227,7 +231,22 @@
       "lexikonButton": "Fungua kwenye Kamusi",
       "verbTypLabel": "Aina ya kitenzi",
       "wortartAr": "أقسام الكلمة",
-      "fragmentsAr": "أجزاء الكلمة"
+      "fragmentsAr": "أجزاء الكلمة",
+      "sarfTitle": "Ṣarf / Aina ya kitenzi",
+      "sarfLexikonLink": "Fungua familia kwenye leksikon",
+      "sarfNoTable": "Hakuna jedwali la kumbukumbu la aina IX kwenye leksikon.",
+      "lehrtextTitle": "Sarufi ya juu",
+      "lehrtextLexikonLink": "Soma kwenye leksikon",
+      "totalModeLabel": "Uchambuzi kamili",
+      "attributeUnknown": "Haijaonyeshwa katika data ya sarufi inayopatikana.",
+      "negationNone": "Hakuna kipashio cha ukanushi katika neno hili.",
+      "rationaleLabel": "Kwa nini?",
+      "rationaleHide": "Ficha maelezo",
+      "negationLabel": "Kipashio cha ukanushi ndani ya neno",
+      "negationNoneShort": "hakuna",
+      "attributeUnknownShort": "haijulikani",
+      "satzrolleUnknownShort": "haijaelezwa",
+      "negatedByLabel": "Imekanushwa kwa: {wort}"
     },
     "sectionLesehilfen": "Visaidizi vya kusoma",
     "sectionAussprache": "Matamshi",
@@ -269,7 +288,7 @@
     "today": "Hadithi ya Leo",
     "todaySource": "An-Nawawi 40, Na. {n}",
     "searchTitle": "Tafuta Hadithi",
-    "searchAllHint": "Inatafuta katika mikusanyiko yote 13 - herufi 3 angalau",
+    "searchAllHint": "Tafuta katika Hadithi 40 za An-Nawawi na mada za ensaiklopidia ya hadithi — angalau herufi 3",
     "searchPlaceholder": "Neno la kutafuta …",
     "searchedProgress": "Mikusanyiko {x}/{y} imetafutwa",
     "resultsCount": "Matokeo {n}",
@@ -1359,7 +1378,8 @@
     "subtitle": "Nyakati zote 5 za sala kwa siku 7 zijazo",
     "loading": "Inapakia nyakati za wiki…",
     "unavailable": "Nyakati za wiki hazipatikani kwa sasa (bila mtandao na hakuna akiba).",
-    "locationHint": "Kwa {location} — mbinu ya hesabu/madhehebu ya Asr kama ilivyo kwenye mipangilio."
+    "locationHint": "Kwa {location} — mbinu ya hesabu/madhehebu ya Asr kama ilivyo kwenye mipangilio.",
+    "scrollHint": "Telezesha pembeni kuona nyakati zote tano za sala."
   },
   "dashboard": {
     "reorder": {
@@ -1531,6 +1551,10 @@
       "tajwid": {
         "title": "Tajwid - kaida za usomaji",
         "desc": "Nun Sakinah, Qalqalah, aina za Madd, Waqf - na sauti za aya"
+      },
+      "pflichtwissen": {
+        "title": "Elimu ya lazima ya Kiislamu",
+        "desc": "Fard ayn katika sura nane: shahada, tauhidi, Akhera, tohara, moyo, ulimi na dua, pamoja na maswali ya hadithi (masomo 8)."
       },
       "aqida": {
         "title": "Aqida - misingi ya imani",
@@ -2577,6 +2601,7 @@
     "subtitle": "Elewa Kiarabu, kipindi baada ya kipindi",
     "heroDesc": "Podikasti: sarufi ya Qurani, kipindi baada ya kipindi.",
     "empty": "Inakuja hivi karibuni.",
+    "languageOnly": "Podikasti hii inapatikana kwa sasa kwa Kijerumani pekee.",
     "episodeLabel": "Kipindi",
     "play": "Cheza",
     "pause": "Simamisha",
@@ -2688,7 +2713,8 @@
     "contentLanguage": "Maudhui kwa {lang}",
     "languages": {
       "de": "Kijerumani"
-    }
+    },
+    "audiobooks": "Vitabu vya sauti"
   },
   "handouts": {
     "title": "Nyenzo za Kujifunza",
@@ -2864,7 +2890,8 @@
         "toggleWortlisten": "Orodha za Msamiati",
         "germanOnlyMeaningNote": "Maana za Kijerumani katika orodha hizi za msamiati kwa sasa zinapatikana kwa Kijerumani pekee.",
         "listCount": "Orodha {n}"
-      }
+      },
+      "horizontalScrollHint": "Telezesha mlalo kuona jedwali lote."
     },
     "verbtyp": {
       "title": "Familia ya Kitenzi",
@@ -3055,12 +3082,162 @@
       "stamm": {
         "name": "Shina la Neno",
         "ar": "الجذع",
-        "info": "Sehemu kuu ya neno inayobeba viambishi awali na viambishi tamati."
+        "info": "{segment} ni sehemu kuu ya neno hili — kisarufi ni {posName} ({posAr})."
       },
       "verneinung": {
         "name": "Kikanushi",
         "ar": "حرف نفي",
         "info": "Hukanusha kauli ya sentensi au kitenzi, mfano \"si\" au \"hakuna\"."
+      },
+      "akkusativPartikel": {
+        "name": "Kiambishi cha Nasbi",
+        "ar": "حرف نصب",
+        "info": "Kiunganishi kama \"inna\" kinachopatia nomino inayofuata hali ya nasbi na kusisitiza kauli."
+      },
+      "amendmentPartikel": {
+        "name": "Kiambishi cha Marekebisho",
+        "ar": "حرف استدراك",
+        "info": "Hupunguza au kurekebisha kidogo kauli iliyotangulia, kwa maana ya \"hata hivyo\"."
+      },
+      "antwortpartikel": {
+        "name": "Kiambishi cha Jibu",
+        "ar": "حرف جواب",
+        "info": "Huanzisha jibu la swali au la kishazi cha sharti."
+      },
+      "abwendungspartikel": {
+        "name": "Kiambishi cha Kukataa",
+        "ar": "حرف ردع",
+        "info": "Hukataa kauli au msimamo uliotangulia, kwa maana ya \"kamwe\"."
+      },
+      "ausnahmepartikel": {
+        "name": "Kiambishi cha Ubaguzi",
+        "ar": "أداة استثناء",
+        "info": "Hutoa kitu kutoka kwenye jumla iliyotajwa hapo awali, mfano \"isipokuwa\"."
+      },
+      "equalisierungspartikel": {
+        "name": "Kiambishi cha Usawa",
+        "ar": "حرف تسوية",
+        "info": "Huonyesha kwamba uwezekano mbili uliotajwa una thamani sawa au haujalishi."
+      },
+      "ermahnungspartikel": {
+        "name": "Kiambishi cha Kuhimiza",
+        "ar": "حرف تحضيض",
+        "info": "Huonyesha wito wa haraka au kutia moyo, mfano \"laiti\"."
+      },
+      "erklaerungspartikel": {
+        "name": "Kiambishi cha Maelezo",
+        "ar": "حرف تفصيل",
+        "info": "Huanzisha maelezo au orodha ya kina zaidi kuhusu jambo lililotajwa hapo awali."
+      },
+      "emphaseLam": {
+        "name": "Lam ya Msisitizo",
+        "ar": "لام التوكيد",
+        "info": "Kiambishi awali cha lam kinachosisitiza kauli bila kubadilisha maana halisi ya neno."
+      },
+      "futurPartikel": {
+        "name": "Kiambishi cha Wakati Ujao",
+        "ar": "حرف استقبال",
+        "info": "Huhamisha tendo la kitenzi cha wakati uliopo hadi wakati ujao, mfano \"sawfa\" au \"sa-\"."
+      },
+      "gewissheitspartikel": {
+        "name": "Kiambishi cha Uhakika",
+        "ar": "حرف تحقيق",
+        "info": "Husisitiza kwamba kauli fulani kwa hakika imetokea, mara nyingi kabla ya kitenzi."
+      },
+      "imperativLam": {
+        "name": "Lam ya Amri",
+        "ar": "لام الأمر",
+        "info": "Kiambishi awali cha lam kinachobadilisha hali ya wakati uliopo kuwa amri isiyo ya moja kwa moja."
+      },
+      "inzeptivPartikel": {
+        "name": "Kiambishi cha Mwanzo wa Sentensi",
+        "ar": "حرف ابتداء",
+        "info": "Huonyesha mwanzo wa sentensi ya kiima-kiarifa, mara nyingi mwanzoni mwa sentensi."
+      },
+      "interpretationspartikel": {
+        "name": "Kiambishi cha Ufafanuzi",
+        "ar": "حرف تفسير",
+        "info": "Huanzisha ufafanuzi wa jambo lililotajwa hapo awali, kwa maana ya \"yaani\"."
+      },
+      "kausalpartikel": {
+        "name": "Kiambishi cha Sababu",
+        "ar": "فاء السببية",
+        "info": "فَ inayokuja baada ya ombi au tamanio na kuonyesha matokeo yanayotarajiwa, kama vile \"omba, ILI ajibu\"."
+      },
+      "konditionalpartikel": {
+        "name": "Kiunganishi cha Sharti",
+        "ar": "أداة شرط",
+        "info": "Huanzisha kishazi cha sharti, mfano \"ikiwa\"."
+      },
+      "komitativpartikel": {
+        "name": "Waw ya Ushirikiano",
+        "ar": "واو المعية",
+        "info": "Herufi waw inayoonyesha kuambatana, kwa maana ya \"pamoja na\"."
+      },
+      "neubeginnPartikel": {
+        "name": "Kiashiria cha Mwanzo Mpya",
+        "ar": "حرف استئناف",
+        "info": "Huonyesha mwanzo wa sehemu mpya ya sentensi isiyotegemea kauli iliyotangulia."
+      },
+      "praevPartikel": {
+        "name": "Kiambishi cha Kubatilisha",
+        "ar": "كافة",
+        "info": "Huondoa athari ya kisarufi ya kiambishi kilichotangulia, mfano katika \"innamā\"."
+      },
+      "quranischeInitialen": {
+        "name": "Herufi za Mwanzo za Sura (Muqattaʿah)",
+        "ar": "الحروف المقطعة",
+        "info": "Herufi zinazosomwa moja moja mwanzoni mwa baadhi ya sura, ambazo maana yake kamili haijulikani."
+      },
+      "restriktionspartikel": {
+        "name": "Kiambishi cha Ukomo",
+        "ar": "أداة حصر",
+        "info": "Hukomesha kauli kwa jambo moja tu, kwa maana ya \"tu\" au \"peke yake\"."
+      },
+      "resultatpartikel": {
+        "name": "Kiambishi cha Matokeo",
+        "ar": "فاء الجواب",
+        "info": "فَ inayounganisha sehemu ya jibu ya sentensi ya masharti, au kiima kinachofuata mada ya jumla (mfano baada ya \"ikiwa\" au \"yeyote\") — tofauti na kiungo cha sababu, haionyeshi kusudi bali huunganisha sharti na matokeo yake."
+      },
+      "retraktionspartikel": {
+        "name": "Kiambishi cha Mageuzi",
+        "ar": "حرف إضراب",
+        "info": "Huanzisha mgeuko au marekebisho kuhusiana na kauli iliyotangulia, kwa maana ya \"bali\"."
+      },
+      "supplementPartikel": {
+        "name": "Kiambishi cha Ziada",
+        "ar": "حرف زائد",
+        "info": "Neno la kujaza lisilo na maana yake yenyewe, linaloongezwa kwa sababu za kimtindo."
+      },
+      "ueberraschungspartikel": {
+        "name": "Kiambishi cha Mshangao",
+        "ar": "حرف مفاجأة",
+        "info": "Huonyesha kwamba jambo limetokea ghafla na bila kutarajiwa."
+      },
+      "umstandspartikel": {
+        "name": "Kiambishi cha Hali",
+        "ar": "واو الحال",
+        "info": "Huanzisha kishazi kinachoelezea hali inayoambatana na tendo kuu."
+      },
+      "unterordnendeKonjunktion": {
+        "name": "Kiunganishi Tegemezi (Masdariyya)",
+        "ar": "حرف مصدري",
+        "info": "Hubadilisha kishazi kinachofuata kuwa sawa na nomino-kitendo (masdar) ambacho kinaweza kutumika kama kiima au yambwa."
+      },
+      "verbotspartikel": {
+        "name": "Kikatazi",
+        "ar": "حرف نهي",
+        "info": "Hukanusha amri na hivyo huamuru kutofanya jambo fulani."
+      },
+      "vokativPartikel": {
+        "name": "Kiambishi cha Wito",
+        "ar": "أداة نداء",
+        "info": "Huanzisha wito wa moja kwa moja, mfano \"ewe\" kabla ya jina linaloitwa."
+      },
+      "zweckpartikel": {
+        "name": "Kiambishi cha Kusudi",
+        "ar": "لام التعليل",
+        "info": "Huonyesha kusudi au sababu ya tendo, kwa maana ya \"ili\" au \"kusudi\"."
       }
     },
     "herkunft": {
@@ -3833,6 +4010,89 @@
         "ar": "اسم",
         "info": "Ism ni jina la mtu, kitu, mahali, sifa au dhana — sawa na nomino na vivumishi katika Kiswahili."
       }
+    },
+    "begruendungen": {
+      "kasus": {
+        "grund": "{wort} iko katika hali ya {kasusname} ({kasusAr}).",
+        "fehlend": "Korpasi haijaweka hali ya kisarufi ya {wort}; hilo ni la kawaida kwa maumbo yasiyobadilika (mabni) au maneno yasiyo na hali hiyo.",
+        "praeposition": "{wort} iko katika hali ya jarr kwa sababu kihusishi {praepositionName} ({praeposition}) kinaitaka.",
+        "relationSubj": "{wort} iko katika {kasusname} kwa sababu ni kiima (fāʿil).",
+        "relationObj": "{wort} iko katika {kasusname} kwa sababu ni yambwa (mafʿūl bihi).",
+        "relationPoss": "{wort} iko katika {kasusname} kwa sababu ni sehemu ya pili ya iḍāfa (muḍāf ilayh).",
+        "relationPred": "{wort} iko katika {kasusname} kwa sababu ni kiarifu (khabar) cha sentensi ya nomino.",
+        "relationPass": "{wort} iko katika {kasusname} kwa sababu ni kiima cha kauli tendwa (nāʾib al-fāʿil).",
+        "relationCog": "{wort} iko katika {kasusname} kwa sababu ni mafʿūl muṭlaq, shamirisho linalosisitiza tendo.",
+        "relationSpec": "{wort} iko katika {kasusname} kwa sababu ni ufafanuzi (tamyīz).",
+        "relationAdj": "{wort} ina hali sawa na {headText} kwa sababu ni kivumishi chake (ṣifa).",
+        "relationApp": "{wort} ina hali sawa na {headText} kwa sababu ni kibadala chake (badal).",
+        "relationWiderspruch": "Korpasi inaweka {wort} kama {relation}, lakini hali {case} hailingani na muundo wa kawaida (inayotarajiwa: {erwartet}).",
+        "innaSubj": "{wort} iko katika {kasusname} (nasb) kwa sababu ni nomino baada ya {partikel}.",
+        "kaanaPred": "{wort} iko katika {kasusname} (nasb) kwa sababu ni khabar baada ya {partikel}."
+      },
+      "bestimmtheit": {
+        "indefinite": "{wort} si maalumu (nakira); korpasi imeiweka wazi kama INDEF.",
+        "artikel": "{wort} ni maalumu kwa sababu ina kibainishi al-.",
+        "possessiv": "{wort} ni maalumu kwa sababu imeunganishwa na kiwakilishi {suffix}; kiambishi cha umilikaji hufanya nomino iwe maalumu.",
+        "eigenname": "{wort} ni maalumu kwa sababu ni jina la pekee; majina ya pekee ni maalumu kiasili.",
+        "mudaf": "{wort} ni maalumu kwa sababu ni muḍāf kabla ya {headWort}; umaalumu unatokana na sehemu ya pili ya iḍāfa.",
+        "fehlend": "Umaalumu wa {wort} hauwezi kubainishwa."
+      },
+      "tempus": {
+        "perfect": "{wort} iko katika wakati uliopita kwa sababu korpasi ina alama PERF.",
+        "imperfect": "{wort} ina umbo la sasa/lijalo kwa sababu korpasi ina alama IMPF.",
+        "imperative": "{wort} ni amri ya moja kwa moja (nafsi ya pili), tofauti na lām al-amr ya amri isiyo ya moja kwa moja kwa nafsi ya tatu."
+      },
+      "modus": {
+        "ind": "{wort} ni marfūʿ; hakuna neno lililotangulia linalotaka mwisho tofauti.",
+        "juss": "{wort} ni majzūm kwa sababu ya kihisishi kilichotangulia, kama lam, lā al-nāhiya au in.",
+        "sub": "{wort} ni manṣūb kwa sababu ya kihisishi kilichotangulia, kama an, lan, li au ḥattā."
+      },
+      "genusVerbi": {
+        "passiv": "{wort} iko katika kauli tendwa, inayotambulika kwa muundo wa irabu wa korpasi (alama PASS).",
+        "aktiv": "{wort} iko katika kauli tendi, hali ya kawaida bila alama maalumu."
+      },
+      "verbform": {
+        "form1": "{wort} ni kitenzi cha umbo I (umbo la msingi); kutokuwa na thamani kwenye mabano ni desturi ya korpasi kwa umbo lisiloongezwa.",
+        "explizit": "{wort} ni kitenzi cha umbo {form}, lililoandikwa wazi kama ({form}) katika korpasi. {formmerkmal}",
+        "selten": "Umbo la kitenzi {form}: maelezo ya umbo hili lililopanuliwa na lisilo la kawaida bado hayapo."
+      },
+      "relation": {
+        "strukturell": "{wort} ina uhusiano {relation} na {headText}.",
+        "strukturellOhneHead": "{wort} ina jukumu la kisintaksia {relation}; neno kuu halikuweza kubainishwa katika aya hii.",
+        "kasusPassend": "Hali ({kasusname}) inalingana na jukumu la kisintaksia {relation}."
+      },
+      "praepositionen": {
+        "min": {
+          "name": "kutoka (min)"
+        },
+        "bi": {
+          "name": "kwa/kwa kutumia (bi)"
+        },
+        "li": {
+          "name": "kwa ajili ya (li)"
+        },
+        "fi": {
+          "name": "ndani ya (fi)"
+        },
+        "ala": {
+          "name": "juu ya (ʿalā)"
+        },
+        "ila": {
+          "name": "kuelekea (ʾilā)"
+        },
+        "an": {
+          "name": "kuhusu/kutoka (ʿan)"
+        },
+        "ka": {
+          "name": "kama (ka)"
+        },
+        "hatta": {
+          "name": "hadi (ḥattā)"
+        },
+        "ma3a": {
+          "name": "pamoja na (maʿa)"
+        }
+      }
     }
   },
   "gebetGemeinsam": {
@@ -4001,5 +4261,38 @@
       "nocheinmal": "Fanya zoezi tena",
       "zurUebersicht": "Rudi kwenye muhtasari"
     }
+  },
+  "audiobooks": {
+    "unavailable": "Maudhui haya hayapatikani kwa sasa katika lugha ya programu yako.",
+    "title": "Vitabu vya sauti",
+    "subtitle": "Jifunze Kiarabu na elimu ya lazima ya Kiislamu kwa sauti katika lugha ya programu yako.",
+    "empty": "Bado hakuna vitabu vya sauti katika lugha yako.",
+    "booksEmpty": "Bado hakuna vitabu katika lugha yako.",
+    "bookOpen": "Fungua kitabu (PDF)",
+    "tracks": {
+      "kurs1": "Jifunze Kiarabu — Kozi 1",
+      "kurs2": "Jifunze Kiarabu — Kozi 2",
+      "kurs3": "Jifunze Kiarabu — Kozi 3 (kitabu cha sauti cha sarufi)",
+      "pflichtwissen": "Elimu ya lazima ya Kiislamu",
+      "books": "Vitabu"
+    },
+    "watchVideo": "Tazama video ya wasilisho",
+    "back15": "Rudi nyuma sekunde 15",
+    "forward15": "Songa mbele sekunde 15"
+  },
+  "bibliothek": {
+    "title": "Maktaba",
+    "subtitle": "Vitabu vinavyoruhusiwa kusambazwa: vitabu vyetu vya sauti, maelezo, na tafsiri aliyoifungua mwandishi.",
+    "audioVideo": "Sauti na video",
+    "rassoul": "Tafsiri ya Quran Tukufu",
+    "rassoulGerman": "Maelezo yako kwa Kijerumani, maneno ya mwandishi.",
+    "handouts": "Maelezo",
+    "loadError": "Maandishi hayakupakiwa.",
+    "quran": "Quran",
+    "quranNote": "Maandishi ya Kiarabu ya Quran hayana hakimiliki.",
+    "hadith": "Kamusi ya hadithi",
+    "hadithNote": "Inaruhusiwa kusambaza ikiwa maandishi hayajabadilishwa na chanzo kimetajwa.",
+    "continueReading": "Endelea kusoma",
+    "savedPlace": "Ilisomwa hivi karibuni"
   }
 }

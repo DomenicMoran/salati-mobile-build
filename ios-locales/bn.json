@@ -1,0 +1,8 @@
+{
+  "ios": {
+    "NSLocationWhenInUseUsageDescription": "Salati আপনার এলাকার নামাজের সময় এবং কিবলার দিক হিসাব করতে আপনার অবস্থান ব্যবহার করে।",
+    "NSMotionUsageDescription": "Salati কম্পাসে কিবলার দিক দেখাতে গতি সেন্সর ব্যবহার করে।",
+    "NSCameraUsageDescription": "Salati হালাল পরীক্ষকের জন্য পণ্যের বারকোড স্ক্যান করতে ক্যামেরা ব্যবহার করে।",
+    "NSMicrophoneUsageDescription": "Salati হিফজ অনুশীলন মোডে আপনার কুরআন তিলাওয়াত যাচাই করতে মাইক্রোফোন ব্যবহার করে।"
+  }
+}

@@ -103,8 +103,8 @@ describe('WortFokusKarte — nach dem Aufdecken', () => {
     // "✗ Falsch" NUR für die Wortart (Nutzer wählte fiil, richtig ist ism) — Kasus/Satzrolle sind hier korrekt.
     expect(screen.getByText(`✗ ${t('analyseUebung.exercise.falsch')}`)).toBeTruthy();
     expect(
-      screen.getByText(`${t('grammatik.wortarten.ism.name')} — ${t('grammatik.wortarten.ism.ar')}`, { exact: false }),
-    ).toBeTruthy();
+      screen.getAllByText(`${t('grammatik.wortarten.ism.name')} — ${t('grammatik.wortarten.ism.ar')}`, { exact: false }).length,
+    ).toBeGreaterThan(0);
   });
 
   it('markiert eine korrekte Kasus-Antwort per Text (nicht nur Farbe)', async () => {
@@ -128,10 +128,21 @@ describe('WortFokusKarte — nach dem Aufdecken', () => {
       antwort: { wortart: 'ism', kasusTempus: 'gen', satzrolle: 'gen' },
       aufgedeckt: true,
     });
-    fireEvent.press(screen.getByLabelText(t('analyseUebung.exercise.weitereMerkmale')));
     // Sowohl Numerus als auch Bestimmtheit sind für dieses Wort hergeleitet
     // (Fixture: derived: ['number', 'state']) — daher mindestens EINE Zeile,
     // nicht zwangsläufig genau eine.
-    expect((await screen.findAllByText(t('grammatik.herkunft.hergeleitet.label'))).length).toBeGreaterThan(0);
+    expect((await screen.findAllByText(t('grammatik.herkunft.hergeleitet.label'), { exact: false })).length).toBeGreaterThan(0);
+  });
+
+  it('zeigt nach dem Aufdecken Segmente und Merkmale gleichzeitig ohne Disclosure-Schalter', async () => {
+    await renderKarte({
+      antwort: { wortart: 'ism', kasusTempus: 'gen', satzrolle: 'gen' },
+      aufgedeckt: true,
+    });
+    expect(screen.getAllByText(/Vorsilbe/).length).toBeGreaterThan(0);
+    expect(screen.getAllByText(/Wortstamm/).length).toBeGreaterThan(0);
+    expect(screen.getAllByText(/Bestimmtheit/).length).toBeGreaterThan(0);
+    expect(screen.getAllByText(/Kasus/).length).toBeGreaterThan(0);
+    expect(screen.queryByRole('button', { name: t('analyseUebung.exercise.weitereMerkmale') })).toBeNull();
   });
 });

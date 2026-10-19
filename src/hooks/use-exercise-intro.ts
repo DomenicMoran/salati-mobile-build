@@ -3,7 +3,8 @@
 // Nutzung nicht mehr nervt. Über das "?"-Icon im Header (IntroHelpButton)
 // kann die Erklärung jederzeit erneut geöffnet werden.
 import AsyncStorage from '@react-native-async-storage/async-storage';
-import { useEffect, useState } from 'react';
+import { useCallback, useRef, useState } from 'react';
+import { useFocusEffect } from 'expo-router';
 
 const STORAGE_KEY = 'salatibox:seenIntros';
 
@@ -41,18 +42,23 @@ export interface UseExerciseIntro {
  */
 export function useExerciseIntro(id: string): UseExerciseIntro {
   const [visible, setVisible] = useState(false);
+  const dismissedThisFocusRef = useRef(false);
 
-  useEffect(() => {
+  useFocusEffect(useCallback(() => {
     let cancelled = false;
+    dismissedThisFocusRef.current = false;
     loadSeen().then((seen) => {
-      if (!cancelled && !seen.has(id)) setVisible(true);
+      if (!cancelled && !dismissedThisFocusRef.current && !seen.has(id)) setVisible(true);
     });
     return () => {
       cancelled = true;
+      dismissedThisFocusRef.current = true;
+      setVisible(false);
     };
-  }, [id]);
+  }, [id]));
 
   function dismiss() {
+    dismissedThisFocusRef.current = true;
     setVisible(false);
     markSeen(id).catch(() => {});
   }

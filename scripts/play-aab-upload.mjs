@@ -10,11 +10,11 @@
 //   node scripts/play-aab-upload.mjs <pfad/app.aab> store/play-notes-1.48.0.json
 import fs from 'fs';
 import { createRequire } from 'module';
-const require = createRequire('C:/Users/domen/Documents/MenuCloud/scripts/');
+const require = createRequire('C:/Users/domen/Documents/Projekte/MenuCloud/scripts/');
 const jwt = require('jsonwebtoken');
 
 const PACKAGE = 'de.salatibox.de';
-const SA_PATH = 'C:/Users/domen/Documents/90_Werkstatt/menucloud-mobile-build/play-service-account.json';
+const SA_PATH = 'C:/Users/domen/Documents/Projektordner/90_Werkstatt/menucloud-mobile-build/play-service-account.json';
 
 const AAB = process.argv[2];
 const NOTES_PATH = process.argv[3];

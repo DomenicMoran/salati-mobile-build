@@ -44,7 +44,11 @@
     "lernen": "Belajar",
     "media": "Media",
     "lizenzen": "Sumber & lisensi",
-    "challenges": "Tantangan"
+    "challenges": "Tantangan",
+    "learnGroup": "Belajar & praktik harian",
+    "audioGroup": "Konten audio",
+    "referenceGroup": "Referensi",
+    "practiceGroup": "Latihan"
   },
   "common": {
     "openSettings": "Buka pengaturan sistem",
@@ -227,7 +231,22 @@
       "lexikonButton": "Buka di Leksikon",
       "verbTypLabel": "Jenis kata kerja",
       "wortartAr": "أقسام الكلمة",
-      "fragmentsAr": "أجزاء الكلمة"
+      "fragmentsAr": "أجزاء الكلمة",
+      "sarfTitle": "Ṣarf / Bentuk kata kerja",
+      "sarfLexikonLink": "Buka keluarga di leksikon",
+      "sarfNoTable": "Tidak ada tabel referensi untuk bentuk IX di leksikon.",
+      "lehrtextTitle": "Tata bahasa lanjutan",
+      "lehrtextLexikonLink": "Baca di leksikon",
+      "totalModeLabel": "Analisis lengkap",
+      "attributeUnknown": "Tidak dicantumkan dalam data tata bahasa yang tersedia.",
+      "negationNone": "Tidak ada partikel negasi dalam kata ini.",
+      "rationaleLabel": "Mengapa?",
+      "rationaleHide": "Sembunyikan penjelasan",
+      "negationLabel": "Partikel negasi dalam kata",
+      "negationNoneShort": "tidak ada",
+      "attributeUnknownShort": "tidak diketahui",
+      "satzrolleUnknownShort": "tidak dicantumkan",
+      "negatedByLabel": "Dinegasikan oleh: {wort}"
     },
     "sectionLesehilfen": "Bantuan membaca",
     "sectionAussprache": "Pengucapan",
@@ -269,7 +288,7 @@
     "today": "Hadis hari ini",
     "todaySource": "An-Nawawi 40, No. {n}",
     "searchTitle": "Cari Hadis",
-    "searchAllHint": "Mencari di 13 koleksi - minimal 3 karakter",
+    "searchAllHint": "Cari dalam 40 Hadis An-Nawawi dan topik ensiklopedia hadis — minimal 3 karakter",
     "searchPlaceholder": "Kata kunci …",
     "searchedProgress": "{x}/{y} koleksi dicari",
     "resultsCount": "{n} hasil",
@@ -1359,7 +1378,8 @@
     "subtitle": "Ke-5 waktu salat untuk 7 hari ke depan",
     "loading": "Memuat waktu mingguan…",
     "unavailable": "Waktu mingguan saat ini tidak tersedia (offline & tidak ada cache).",
-    "locationHint": "Untuk {location} — metode perhitungan/mazhab Asar seperti di pengaturan."
+    "locationHint": "Untuk {location} — metode perhitungan/mazhab Asar seperti di pengaturan.",
+    "scrollHint": "Geser secara horizontal untuk melihat kelima waktu salat."
   },
   "dashboard": {
     "reorder": {
@@ -1531,6 +1551,10 @@
       "tajwid": {
         "title": "Tajwid - kaidah bacaan",
         "desc": "Nun sakinah, qalqalah, jenis-jenis madd, waqaf - dengan audio ayat"
+      },
+      "pflichtwissen": {
+        "title": "Pengetahuan Islam wajib",
+        "desc": "Fardu ain dalam delapan bab: syahadat, tauhid, akhirat, bersuci, hati, lisan, dan doa, dengan kuis berbasis cerita (8 pelajaran)."
       },
       "aqida": {
         "title": "Akidah - dasar-dasar keimanan",
@@ -2577,6 +2601,7 @@
     "subtitle": "Pahami bahasa Arab, episode demi episode",
     "heroDesc": "Podcast: tata bahasa Al-Qur'an, episode demi episode.",
     "empty": "Segera hadir.",
+    "languageOnly": "Podcast ini saat ini hanya tersedia dalam bahasa Jerman.",
     "episodeLabel": "Episode",
     "play": "Putar",
     "pause": "Jeda",
@@ -2688,7 +2713,8 @@
     "contentLanguage": "Konten dalam bahasa {lang}",
     "languages": {
       "de": "Jerman"
-    }
+    },
+    "audiobooks": "Buku audio"
   },
   "handouts": {
     "title": "Materi Belajar",
@@ -2864,7 +2890,8 @@
         "toggleWortlisten": "Daftar Kosakata",
         "germanOnlyMeaningNote": "Arti bahasa Jerman dalam daftar kosakata ini saat ini hanya tersedia dalam bahasa Jerman.",
         "listCount": "{n} daftar"
-      }
+      },
+      "horizontalScrollHint": "Geser secara horizontal untuk melihat seluruh tabel."
     },
     "verbtyp": {
       "title": "Rumpun Kata Kerja",
@@ -3055,12 +3082,162 @@
       "stamm": {
         "name": "Akar/Batang Kata",
         "ar": "الجذع",
-        "info": "Bagian inti sebuah kata yang menjadi tempat menempelnya awalan dan akhiran."
+        "info": "{segment} adalah inti kata ini — secara tata bahasa sebuah {posName} ({posAr})."
       },
       "verneinung": {
         "name": "Partikel Negasi",
         "ar": "حرف نفي",
         "info": "Menyangkal pernyataan sebuah kalimat atau kata kerja, misalnya \"tidak\" atau \"bukan\"."
+      },
+      "akkusativPartikel": {
+        "name": "Partikel Nashab",
+        "ar": "حرف نصب",
+        "info": "Partikel seperti \"inna\" yang memberi kasus nashab pada isim setelahnya dan menegaskan pernyataan."
+      },
+      "amendmentPartikel": {
+        "name": "Partikel Koreksi",
+        "ar": "حرف استدراك",
+        "info": "Membatasi atau mengoreksi sedikit pernyataan sebelumnya, dalam arti \"namun\"."
+      },
+      "antwortpartikel": {
+        "name": "Partikel Jawaban",
+        "ar": "حرف جواب",
+        "info": "Membuka jawaban atas sebuah pertanyaan atau kalimat pengandaian."
+      },
+      "abwendungspartikel": {
+        "name": "Partikel Penolakan",
+        "ar": "حرف ردع",
+        "info": "Menolak pernyataan atau sikap sebelumnya, dalam arti \"sama sekali tidak\"."
+      },
+      "ausnahmepartikel": {
+        "name": "Partikel Pengecualian",
+        "ar": "أداة استثناء",
+        "info": "Mengecualikan sesuatu dari keseluruhan yang disebut sebelumnya, misalnya \"kecuali\"."
+      },
+      "equalisierungspartikel": {
+        "name": "Partikel Penyetaraan",
+        "ar": "حرف تسوية",
+        "info": "Menyatakan bahwa dua kemungkinan yang disebutkan sama nilainya atau sama saja."
+      },
+      "ermahnungspartikel": {
+        "name": "Partikel Anjuran",
+        "ar": "حرف تحضيض",
+        "info": "Menyatakan ajakan mendesak atau dorongan, misalnya \"seandainya saja\"."
+      },
+      "erklaerungspartikel": {
+        "name": "Partikel Perincian",
+        "ar": "حرف تفصيل",
+        "info": "Membuka penjelasan atau perincian lebih lanjut dari yang disebutkan sebelumnya."
+      },
+      "emphaseLam": {
+        "name": "Lam Penegas",
+        "ar": "لام التوكيد",
+        "info": "Awalan lam yang menegaskan sebuah pernyataan tanpa mengubah makna kata itu sendiri."
+      },
+      "futurPartikel": {
+        "name": "Partikel Masa Depan",
+        "ar": "حرف استقبال",
+        "info": "Memindahkan perbuatan kata kerja bentuk sekarang ke masa depan, misalnya \"sawfa\" atau \"sa-\"."
+      },
+      "gewissheitspartikel": {
+        "name": "Partikel Kepastian",
+        "ar": "حرف تحقيق",
+        "info": "Menegaskan bahwa sebuah pernyataan benar-benar telah terjadi, biasanya di depan kata kerja."
+      },
+      "imperativLam": {
+        "name": "Lam Perintah",
+        "ar": "لام الأمر",
+        "info": "Awalan lam yang mengubah bentuk sekarang menjadi perintah tidak langsung."
+      },
+      "inzeptivPartikel": {
+        "name": "Partikel Pembuka Kalimat",
+        "ar": "حرف ابتداء",
+        "info": "Menandai awal sebuah kalimat nominal, biasanya di awal kalimat."
+      },
+      "interpretationspartikel": {
+        "name": "Partikel Penafsiran",
+        "ar": "حرف تفسير",
+        "info": "Membuka penjelasan ulang dari yang disebutkan sebelumnya, dalam arti \"yaitu\"."
+      },
+      "kausalpartikel": {
+        "name": "Partikel Sebab",
+        "ar": "فاء السببية",
+        "info": "فَ yang muncul setelah permintaan atau harapan dan menyatakan hasil yang diinginkan, seperti pada \"berdoalah, AGAR Dia mengabulkanmu\"."
+      },
+      "konditionalpartikel": {
+        "name": "Partikel Syarat",
+        "ar": "أداة شرط",
+        "info": "Membuka sebuah kalimat pengandaian, misalnya \"jika\"."
+      },
+      "komitativpartikel": {
+        "name": "Wau Kebersamaan",
+        "ar": "واو المعية",
+        "info": "Huruf wau yang menyatakan kebersamaan, dalam arti \"bersama dengan\"."
+      },
+      "neubeginnPartikel": {
+        "name": "Partikel Awal Baru",
+        "ar": "حرف استئناف",
+        "info": "Menandai awal bagian kalimat baru yang berdiri sendiri dari pernyataan sebelumnya."
+      },
+      "praevPartikel": {
+        "name": "Partikel Penghenti",
+        "ar": "كافة",
+        "info": "Menghilangkan pengaruh tata bahasa dari partikel sebelumnya, misalnya pada \"innama\"."
+      },
+      "quranischeInitialen": {
+        "name": "Huruf Muqattha'ah",
+        "ar": "الحروف المقطعة",
+        "info": "Huruf-huruf yang dilafalkan satu per satu di awal beberapa surah, yang maknanya belum dipastikan."
+      },
+      "restriktionspartikel": {
+        "name": "Partikel Pembatas",
+        "ar": "أداة حصر",
+        "info": "Membatasi pernyataan hanya pada satu hal saja, dalam arti \"hanya\" atau \"cuma\"."
+      },
+      "resultatpartikel": {
+        "name": "Partikel Hasil",
+        "ar": "فاء الجواب",
+        "info": "فَ yang menghubungkan jawaban kalimat syarat, atau predikat setelah subjek yang bersifat umum (misalnya setelah \"jika\" atau \"siapa pun\") — berbeda dari partikel kausal, ia tidak menyatakan tujuan, melainkan menghubungkan syarat dengan akibatnya."
+      },
+      "retraktionspartikel": {
+        "name": "Partikel Pengalihan",
+        "ar": "حرف إضراب",
+        "info": "Membuka sebuah peralihan atau koreksi terhadap pernyataan sebelumnya, dalam arti \"melainkan\"."
+      },
+      "supplementPartikel": {
+        "name": "Partikel Tambahan",
+        "ar": "حرف زائد",
+        "info": "Kata pengisi tanpa makna tersendiri yang ditambahkan karena alasan gaya bahasa."
+      },
+      "ueberraschungspartikel": {
+        "name": "Partikel Kejutan",
+        "ar": "حرف مفاجأة",
+        "info": "Menyatakan bahwa sesuatu terjadi secara tiba-tiba dan tak terduga."
+      },
+      "umstandspartikel": {
+        "name": "Partikel Keadaan (Hal)",
+        "ar": "واو الحال",
+        "info": "Membuka anak kalimat yang menjelaskan keadaan yang menyertai perbuatan utama."
+      },
+      "unterordnendeKonjunktion": {
+        "name": "Kata Sambung Penyerta (Mashdariyyah)",
+        "ar": "حرف مصدري",
+        "info": "Mengubah kalimat setelahnya menjadi setara kata benda kerja (mashdar) yang bisa berfungsi sebagai subjek atau objek."
+      },
+      "verbotspartikel": {
+        "name": "Partikel Larangan",
+        "ar": "حرف نهي",
+        "info": "Menyangkal sebuah perintah dan dengan begitu meminta agar sesuatu tidak dilakukan."
+      },
+      "vokativPartikel": {
+        "name": "Partikel Panggilan",
+        "ar": "أداة نداء",
+        "info": "Membuka sebuah panggilan langsung, misalnya \"wahai\" di depan nama yang dipanggil."
+      },
+      "zweckpartikel": {
+        "name": "Partikel Tujuan",
+        "ar": "لام التعليل",
+        "info": "Menyatakan tujuan atau alasan sebuah perbuatan, dalam arti \"agar\" atau \"supaya\"."
       }
     },
     "herkunft": {
@@ -3833,6 +4010,89 @@
         "ar": "اسم",
         "info": "Isim mencakup orang, benda, tempat, sifat, atau gagasan — mirip dengan kata benda dan kata sifat dalam bahasa Indonesia."
       }
+    },
+    "begruendungen": {
+      "kasus": {
+        "grund": "{wort} berkasus {kasusname} ({kasusAr}).",
+        "fehlend": "Korpus tidak mencatat kasus untuk {wort}; ini wajar pada bentuk tak berubah (mabni) atau kata yang tidak memiliki kasus.",
+        "praeposition": "{wort} berkasus genitif (jarr) karena diwajibkan oleh preposisi {praepositionName} ({praeposition}).",
+        "relationSubj": "{wort} berkasus {kasusname} karena menjadi subjek (fāʿil).",
+        "relationObj": "{wort} berkasus {kasusname} karena menjadi objek (mafʿūl bihi).",
+        "relationPoss": "{wort} berkasus {kasusname} karena menjadi unsur kedua iḍāfa (muḍāf ilayh).",
+        "relationPred": "{wort} berkasus {kasusname} karena menjadi predikat (khabar) kalimat nominal.",
+        "relationPass": "{wort} berkasus {kasusname} karena menjadi subjek pasif (nāʾib al-fāʿil).",
+        "relationCog": "{wort} berkasus {kasusname} karena menjadi objek absolut (mafʿūl muṭlaq).",
+        "relationSpec": "{wort} berkasus {kasusname} karena menjadi penjelas (tamyīz).",
+        "relationAdj": "{wort} mengikuti kasus {headText} karena menjadi sifatnya (ṣifa).",
+        "relationApp": "{wort} mengikuti kasus {headText} karena menjadi aposisinya (badal).",
+        "relationWiderspruch": "Korpus menandai {wort} sebagai {relation}, tetapi kasus {case} tidak sesuai pola lazim (yang diharapkan: {erwartet}).",
+        "innaSubj": "{wort} berkasus {kasusname} (nasb) karena menjadi isim setelah {partikel}.",
+        "kaanaPred": "{wort} berkasus {kasusname} (nasb) karena menjadi khabar setelah {partikel}."
+      },
+      "bestimmtheit": {
+        "indefinite": "{wort} tak tentu (nakira), ditandai INDEF secara eksplisit dalam korpus.",
+        "artikel": "{wort} tentu karena memakai artikel al-.",
+        "possessiv": "{wort} tentu karena memiliki pronomina terikat {suffix}; sufiks posesif menjadikan nomina tentu.",
+        "eigenname": "{wort} tentu karena merupakan nama diri; nama diri bersifat tentu.",
+        "mudaf": "{wort} tentu karena menjadi muḍāf sebelum {headWort}; ketentuannya berasal dari unsur kedua rangkaian genitif.",
+        "fehlend": "Ketentuan {wort} tidak dapat ditentukan."
+      },
+      "tempus": {
+        "perfect": "{wort} berbentuk lampau karena korpus menandainya PERF.",
+        "imperfect": "{wort} berbentuk kini/mendatang karena korpus menandainya IMPF.",
+        "imperative": "{wort} adalah imperatif langsung (orang kedua), berbeda dari lām al-amr untuk perintah tidak langsung kepada orang ketiga."
+      },
+      "modus": {
+        "ind": "{wort} berstatus indikatif (marfūʿ); tidak ada kata sebelumnya yang mengharuskan akhiran lain.",
+        "juss": "{wort} berstatus jusif (majzūm) karena partikel sebelumnya, misalnya lam, lā al-nāhiya, atau in.",
+        "sub": "{wort} berstatus subjungtif (manṣūb) karena partikel sebelumnya, misalnya an, lan, li, atau ḥattā."
+      },
+      "genusVerbi": {
+        "passiv": "{wort} pasif, dikenali dari pola vokal dalam korpus (label PASS).",
+        "aktiv": "{wort} aktif; ini nilai baku tanpa penanda khusus."
+      },
+      "verbform": {
+        "form1": "{wort} merupakan bentuk verba I (bentuk dasar); ketiadaan nilai dalam kurung adalah konvensi korpus untuk bentuk tanpa tambahan.",
+        "explizit": "{wort} merupakan bentuk verba {form}, ditandai ({form}) secara eksplisit dalam korpus. {formmerkmal}",
+        "selten": "Bentuk verba {form}: belum tersedia uraian untuk bentuk turunan yang jarang ini."
+      },
+      "relation": {
+        "strukturell": "{wort} memiliki hubungan {relation} dengan {headText}.",
+        "strukturellOhneHead": "{wort} memiliki peran sintaksis {relation}; kata induknya dalam ayat ini tidak dapat ditentukan.",
+        "kasusPassend": "Kasus ({kasusname}) sesuai dengan peran sintaksis {relation}."
+      },
+      "praepositionen": {
+        "min": {
+          "name": "dari (min)"
+        },
+        "bi": {
+          "name": "dengan/melalui (bi)"
+        },
+        "li": {
+          "name": "untuk (li)"
+        },
+        "fi": {
+          "name": "di/dalam (fi)"
+        },
+        "ala": {
+          "name": "di atas (ʿalā)"
+        },
+        "ila": {
+          "name": "ke/menuju (ʾilā)"
+        },
+        "an": {
+          "name": "tentang/dari (ʿan)"
+        },
+        "ka": {
+          "name": "seperti (ka)"
+        },
+        "hatta": {
+          "name": "hingga (ḥattā)"
+        },
+        "ma3a": {
+          "name": "dengan/bersama (maʿa)"
+        }
+      }
     }
   },
   "gebetGemeinsam": {
@@ -4001,5 +4261,38 @@
       "nocheinmal": "Latih lagi",
       "zurUebersicht": "Kembali ke ringkasan"
     }
+  },
+  "audiobooks": {
+    "unavailable": "Konten ini saat ini tidak tersedia dalam bahasa aplikasi Anda.",
+    "title": "Buku audio",
+    "subtitle": "Belajar bahasa Arab dan pengetahuan Islam wajib melalui audio dalam bahasa aplikasi.",
+    "empty": "Belum ada buku audio dalam bahasa Anda.",
+    "booksEmpty": "Belum ada buku dalam bahasa Anda.",
+    "bookOpen": "Buka buku (PDF)",
+    "tracks": {
+      "kurs1": "Belajar bahasa Arab — Kursus 1",
+      "kurs2": "Belajar bahasa Arab — Kursus 2",
+      "kurs3": "Belajar bahasa Arab — Kursus 3 (buku audio tata bahasa)",
+      "pflichtwissen": "Pengetahuan Islam wajib",
+      "books": "Buku"
+    },
+    "watchVideo": "Tonton video presentasi",
+    "back15": "Mundur 15 detik",
+    "forward15": "Maju 15 detik"
+  },
+  "bibliothek": {
+    "title": "Perpustakaan",
+    "subtitle": "Buku yang boleh disebar: buku audio kami, materi, dan tafsir yang penulis bebaskan.",
+    "audioVideo": "Audio dan video",
+    "rassoul": "Tafsir Al-Quran Al-Karim",
+    "rassoulGerman": "Komentar berbahasa Jerman, teks penulis.",
+    "handouts": "Materi",
+    "loadError": "Teks tidak dapat dimuat.",
+    "quran": "Quran",
+    "quranNote": "Teks Arab Quran adalah domain publik.",
+    "hadith": "Ensiklopedia hadis",
+    "hadithNote": "Boleh disebar jika teks tidak diubah dan sumber disebut.",
+    "continueReading": "Lanjutkan membaca",
+    "savedPlace": "Terakhir dibaca"
   }
 }

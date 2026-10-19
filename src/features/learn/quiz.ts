@@ -234,7 +234,7 @@ function letterQuestions(
   return shuffle(questions, rand);
 }
 
-function similarQuestions(rand: Rand): QuizQuestion[] {
+function similarQuestions(rand: Rand, style: ExerciseStyle = 'mixed'): QuizQuestion[] {
   const questions = SIMILAR_SETS.map((set) => {
     const letters = set.map(letterById);
     const target = letters[Math.floor(rand() * letters.length)];
@@ -244,7 +244,9 @@ function similarQuestions(rand: Rand): QuizQuestion[] {
       display: target.arabic,
       displayArabic: true,
       optionsArabic: false,
-      tts: target.arabicName,
+      // Gleiche Regel wie letterQuestions: Glyphe lesen → Name wählen darf
+      // in reading/mixed kein Auto-Audio verraten (WP-C / Verwechselbare).
+      ...(style === 'audio' ? { tts: target.arabicName } : {}),
       ...withOptions(target.name, others, rand),
     };
   });
@@ -387,7 +389,7 @@ export function buildQuiz(
     case 'letters':
       return letterQuestions((lesson.letterIds ?? []).map(letterById), rand, style);
     case 'similar':
-      return similarQuestions(rand);
+      return similarQuestions(rand, style);
     case 'forms':
       return formQuestions((lesson.letterIds ?? []).map(letterById), rand);
     case 'haraka':

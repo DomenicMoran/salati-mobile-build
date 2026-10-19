@@ -1,0 +1,94 @@
+{
+  "keys": [
+    "NSLocationWhenInUseUsageDescription",
+    "NSMotionUsageDescription",
+    "NSCameraUsageDescription",
+    "NSMicrophoneUsageDescription"
+  ],
+  "languages": {
+    "ar": {
+      "NSLocationWhenInUseUsageDescription": "يستخدم Salati موقعك لحساب أوقات الصلاة واتجاه القبلة لمنطقتك.",
+      "NSMotionUsageDescription": "يستخدم Salati مستشعرات الحركة لعرض اتجاه القبلة على البوصلة.",
+      "NSCameraUsageDescription": "يستخدم Salati الكاميرا لمسح رموز المنتجات لفحص الحلال.",
+      "NSMicrophoneUsageDescription": "يستخدم Salati الميكروفون للتحقق من تلاوتك للقرآن في وضع الحفظ."
+    },
+    "bn": {
+      "NSLocationWhenInUseUsageDescription": "Salati আপনার এলাকার নামাজের সময় এবং কিবলার দিক হিসাব করতে আপনার অবস্থান ব্যবহার করে।",
+      "NSMotionUsageDescription": "Salati কম্পাসে কিবলার দিক দেখাতে গতি সেন্সর ব্যবহার করে।",
+      "NSCameraUsageDescription": "Salati হালাল পরীক্ষকের জন্য পণ্যের বারকোড স্ক্যান করতে ক্যামেরা ব্যবহার করে।",
+      "NSMicrophoneUsageDescription": "Salati হিফজ অনুশীলন মোডে আপনার কুরআন তিলাওয়াত যাচাই করতে মাইক্রোফোন ব্যবহার করে।"
+    },
+    "de": {
+      "NSLocationWhenInUseUsageDescription": "Salati nutzt deinen Standort, um Gebetszeiten und die Qibla-Richtung für deinen Ort zu berechnen.",
+      "NSMotionUsageDescription": "Salati nutzt Bewegungssensoren, um die Qibla-Richtung auf dem Kompass anzuzeigen.",
+      "NSCameraUsageDescription": "Salati nutzt die Kamera, um Produkt-Barcodes für den Halal-Scanner zu erkennen.",
+      "NSMicrophoneUsageDescription": "Salati nutzt das Mikrofon, um deine Koran-Rezitation im Hifz-Übungsmodus zu prüfen."
+    },
+    "en": {
+      "NSLocationWhenInUseUsageDescription": "Salati uses your location to calculate prayer times and the Qibla direction for your area.",
+      "NSMotionUsageDescription": "Salati uses motion sensors to show the Qibla direction on the compass.",
+      "NSCameraUsageDescription": "Salati uses the camera to scan product barcodes for the halal checker.",
+      "NSMicrophoneUsageDescription": "Salati uses the microphone to check your Qur'an recitation in Hifz practice mode."
+    },
+    "es": {
+      "NSLocationWhenInUseUsageDescription": "Salati usa tu ubicación para calcular los horarios de oración y la dirección de la Qibla de tu zona.",
+      "NSMotionUsageDescription": "Salati usa sensores de movimiento para mostrar la dirección de la Qibla en la brújula.",
+      "NSCameraUsageDescription": "Salati usa la cámara para escanear códigos de barras de productos en el comprobador halal.",
+      "NSMicrophoneUsageDescription": "Salati usa el micrófono para comprobar tu recitación del Corán en el modo de práctica Hifz."
+    },
+    "fa": {
+      "NSLocationWhenInUseUsageDescription": "Salati برای محاسبه اوقات نماز و جهت قبله در منطقه شما از موقعیت مکانی شما استفاده می‌کند.",
+      "NSMotionUsageDescription": "Salati از حسگرهای حرکت برای نمایش جهت قبله روی قطب‌نما استفاده می‌کند.",
+      "NSCameraUsageDescription": "Salati برای اسکن بارکد محصولات در بررسی حلال از دوربین استفاده می‌کند.",
+      "NSMicrophoneUsageDescription": "Salati برای بررسی تلاوت قرآن شما در حالت تمرین حفظ از میکروفون استفاده می‌کند."
+    },
+    "fr": {
+      "NSLocationWhenInUseUsageDescription": "Salati utilise votre position pour calculer les horaires de prière et la direction de la Qibla pour votre région.",
+      "NSMotionUsageDescription": "Salati utilise les capteurs de mouvement pour afficher la direction de la Qibla sur la boussole.",
+      "NSCameraUsageDescription": "Salati utilise l'appareil photo pour scanner les codes-barres des produits pour le vérificateur halal.",
+      "NSMicrophoneUsageDescription": "Salati utilise le micro pour vérifier votre récitation du Coran en mode pratique Hifz."
+    },
+    "id": {
+      "NSLocationWhenInUseUsageDescription": "Salati menggunakan lokasi Anda untuk menghitung waktu salat dan arah kiblat di wilayah Anda.",
+      "NSMotionUsageDescription": "Salati menggunakan sensor gerak untuk menampilkan arah kiblat pada kompas.",
+      "NSCameraUsageDescription": "Salati menggunakan kamera untuk memindai barcode produk pada pemeriksa halal.",
+      "NSMicrophoneUsageDescription": "Salati menggunakan mikrofon untuk memeriksa bacaan Al-Qur'an Anda dalam mode latihan hafalan."
+    },
+    "ms": {
+      "NSLocationWhenInUseUsageDescription": "Salati menggunakan lokasi anda untuk mengira waktu solat dan arah kiblat untuk kawasan anda.",
+      "NSMotionUsageDescription": "Salati menggunakan penderia gerakan untuk memaparkan arah kiblat pada kompas.",
+      "NSCameraUsageDescription": "Salati menggunakan kamera untuk imbas kod bar produk bagi pemeriksa halal.",
+      "NSMicrophoneUsageDescription": "Salati menggunakan mikrofon untuk menyemak bacaan Al-Qur'an anda dalam mod latihan hafazan."
+    },
+    "ps": {
+      "NSLocationWhenInUseUsageDescription": "Salati ستاسو د سيمې د لپاره د لمانځه وخت او د قبلې لور محاسبه کولو لپاره ستاسو موقعیت کاروي.",
+      "NSMotionUsageDescription": "Salati د قطب‌نما پر مخ د قبلې لور ښودلو لپاره د حرکت سینسورونه کاروي.",
+      "NSCameraUsageDescription": "Salati د حلال سکینر لپاره د محصولاتو بارکوډونه سکین کولو لپاره کیمره کاروي.",
+      "NSMicrophoneUsageDescription": "Salati په حفظ تمرین حالت کې ستاسو د قرآن تلاوت ازموي."
+    },
+    "ru": {
+      "NSLocationWhenInUseUsageDescription": "Salati использует ваше местоположение, чтобы рассчитать время намаза и направление киблы для вашего региона.",
+      "NSMotionUsageDescription": "Salati использует датчики движения, чтобы показать направление киблы на компасе.",
+      "NSCameraUsageDescription": "Salati использует камеру для сканирования штрих-кодов продуктов в проверке halal.",
+      "NSMicrophoneUsageDescription": "Salati использует микрофон для проверки вашего чтения Корана в режиме практики хифз."
+    },
+    "sw": {
+      "NSLocationWhenInUseUsageDescription": "Salati hutumia eneo lako kuhesabu nyakati za swala na mwelekeo wa Qibla kwa eneo lako.",
+      "NSMotionUsageDescription": "Salati hutumia sensa za mwendo kuonyesha mwelekeo wa Qibla kwenye dira.",
+      "NSCameraUsageDescription": "Salati hutumia kamera kuchanganua mistari ya bidhaa kwa kikagua halal.",
+      "NSMicrophoneUsageDescription": "Salati hutumia kipaza sauti kuangalia usomaji wako wa Qurani katika hali ya mazoezi ya Hifz."
+    },
+    "tr": {
+      "NSLocationWhenInUseUsageDescription": "Salati, bulunduğunuz bölge için namaz vakitlerini ve kıble yönünü hesaplamak için konumunuzu kullanır.",
+      "NSMotionUsageDescription": "Salati, pusulada kıble yönünü göstermek için hareket sensörlerini kullanır.",
+      "NSCameraUsageDescription": "Salati, helal tarayıcı için ürün barkodlarını okumak üzere kamerayı kullanır.",
+      "NSMicrophoneUsageDescription": "Salati, Hifz alıştırma modunda Kur'an okuyuşunuzu kontrol etmek için mikrofonu kullanır."
+    },
+    "ur": {
+      "NSLocationWhenInUseUsageDescription": "Salati آپ کے علاقے کے لیے نماز کے اوقات اور قبلے کی سمت کا حساب لگانے کے لیے آپ کے مقام کا استعمال کرتا ہے۔",
+      "NSMotionUsageDescription": "Salati قطب‌نما پر قبلے کی سمت دکھانے کے لیے موشن سینسر استعمال کرتا ہے۔",
+      "NSCameraUsageDescription": "Salati حلال چیکر کے لیے مصنوعات کے بارکوڈ اسکین کرنے کے لیے کیمرہ استعمال کرتا ہے۔",
+      "NSMicrophoneUsageDescription": "Salati حفظ مشق موڈ میں آپ کی قرآن کی تلاوت کی جانچ کے لیے مائیکروفون استعمال کرتا ہے۔"
+    }
+  }
+}

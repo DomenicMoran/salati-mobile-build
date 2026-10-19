@@ -11,9 +11,8 @@ import { ThemedView } from '@/components/themed-view';
 import { Spacing } from '@/constants/theme';
 import { useTranslation } from '@/lib/i18n';
 
-import { Aufklappbar } from '../analyse/Aufklappbar';
-import { MerkmalZeile } from '../analyse/MerkmalZeile';
-import { ismEigenschaftenAnzeige, relationAnzeige, verbEigenschaftenAnzeige } from '../analyse/wortAnalyseModel';
+import { relationAnzeige } from '../analyse/wortAnalyseModel';
+import { GesamtAnalyseVers } from '../analyse/GesamtAnalyseVers';
 import type { MorphWord } from '../morphologieTypen';
 import type { QuranFontResult } from '../useQuranFont';
 
@@ -166,7 +165,12 @@ export function WortFokusKarte({
               );
             })()}
 
-          <WeitereMerkmale schritt={schritt} />
+          <GesamtAnalyseVers
+            words={[wort.word]}
+            verseWords={verseWords}
+            displayWords={[wort.word.text]}
+            quranFont={quranFont}
+          />
 
           <PressableCard onPress={onWeiter} type="backgroundSelected" style={styles.hauptButton}>
             <ThemedText type="smallBold" themeColor="accent">
@@ -177,73 +181,6 @@ export function WortFokusKarte({
       )}
     </View>
   );
-}
-
-/**
- * Nicht gewertete Zusatzangaben (Genus/Numerus/Bestimmtheit bei Ism bzw.
- * Modus/Genus-Verbi/Verbform/Person bei Fiʿl) — mit sichtbarer Beleg-/
- * Herleitungs-Kennzeichnung über die bestehende MerkmalZeile-Komponente.
- * Die in diesem Schritt bereits gewertete Kasus-/Tempus-Dimension wird hier
- * NICHT wiederholt.
- */
-function WeitereMerkmale({ schritt }: { schritt: UebungsSchritt }) {
-  const { t } = useTranslation();
-  const { wort, dimensionen } = schritt;
-  const kasusTempusGewertet = dimensionen.includes('kasusTempus');
-
-  if (wort.wortart === 'ism') {
-    const e = ismEigenschaftenAnzeige(wort.stamm, t);
-    const zeilen = [e.genus, e.numerus, e.bestimmtheit, ...(kasusTempusGewertet ? [] : [e.kasus])].filter(
-      (m): m is NonNullable<typeof m> => m !== null,
-    );
-    if (zeilen.length === 0) return null;
-    return (
-      <Aufklappbar titel={t('analyseUebung.exercise.weitereMerkmale')}>
-        {zeilen.map((m) => (
-          <MerkmalZeile key={m.schluessel} merkmal={m} />
-        ))}
-      </Aufklappbar>
-    );
-  }
-
-  if (wort.wortart === 'fiil') {
-    const e = verbEigenschaftenAnzeige(wort.stamm, t);
-    const zeilen = [
-      ...(kasusTempusGewertet ? [] : [e.tempus]),
-      e.modus,
-      e.genusVerbi,
-      e.person,
-      e.genus,
-      e.numerus,
-    ].filter((m): m is NonNullable<typeof m> => m !== null);
-    const verbform = e.verbform;
-    if (zeilen.length === 0 && !verbform) return null;
-    return (
-      <Aufklappbar titel={t('analyseUebung.exercise.weitereMerkmale')}>
-        {zeilen.map((m) => (
-          <MerkmalZeile key={m.schluessel} merkmal={m} />
-        ))}
-        {verbform && (
-          <MerkmalZeile
-            merkmal={{
-              schluessel: 'grammatik.verbEigenschaften.verbform',
-              label: verbform.label,
-              ar: verbform.ar,
-              info: '',
-              wert: '',
-              wertName: verbform.formName,
-              wertAr: verbform.formAr,
-              herkunft: verbform.herkunft,
-              herkunftLabel: verbform.herkunftLabel,
-              herkunftInfo: verbform.herkunftInfo,
-            }}
-          />
-        )}
-      </Aufklappbar>
-    );
-  }
-
-  return null;
 }
 
 const styles = StyleSheet.create({

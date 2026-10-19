@@ -19,6 +19,8 @@ export interface Handout {
   size_kb?: number;
   /** Seitenzahl (Anzeige). */
   pages?: number;
+  /** Inhaltssprache (ISO), wenn der Index sie fuehrt — fuer harten UI-Filter. */
+  lang?: string;
   // --- Ohne-Release-Steuerung (seit 2026-09-05, gleiches Muster wie bei den
   // Videos, s. features/video/data.ts) --------------------------------
   /** Manuelle Feinposition innerhalb der Kategorie. OPTIONAL: fehlt es,

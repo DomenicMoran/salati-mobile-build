@@ -4,7 +4,7 @@
 // Gebetszeiten-Screen (fetchUpcomingTimings, s. features/prayer-times/api.ts)
 // über einen eigenen react-query-Hook (useWeekTimings) — reine In-App-Tabelle,
 // bewusst ohne Export/PDF (Erstwurf, s. Task-Auftrag).
-import { ScrollView, StyleSheet, View } from 'react-native';
+import { ScrollView, StyleSheet, View, useWindowDimensions } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
 import { AnimatedListItem } from '@/components/ui/animated-list-item';
@@ -27,6 +27,11 @@ export default function PrayerTimesWeekScreen() {
   const { t } = useTranslation();
   const { settings } = useSettings();
   const { data, isLoading, isError } = useWeekTimings();
+  const { width } = useWindowDimensions();
+  const tablet = width >= 600;
+  const tableWidth = Math.min(width - Spacing.three * 2, MaxContentWidth - Spacing.three * 2);
+  const labelWidth = tablet ? Math.min(112, tableWidth * 0.18) : LABEL_COL_WIDTH;
+  const prayerWidth = tablet ? (tableWidth - labelWidth) / PRAYERS.length : PRAYER_COL_WIDTH;
 
   const rows = buildWeekRows(data ?? []);
 
@@ -59,12 +64,17 @@ export default function PrayerTimesWeekScreen() {
 
         {rows.length > 0 && (
           <ScrollView contentContainerStyle={styles.scroll}>
-            <ScrollView horizontal showsHorizontalScrollIndicator={false}>
-              <ThemedView type="backgroundElement" style={styles.table}>
+            {!tablet && (
+              <ThemedText type="small" themeColor="textSecondary" style={styles.scrollHint}>
+                {t('prayerWeek.scrollHint')}
+              </ThemedText>
+            )}
+            <ScrollView horizontal showsHorizontalScrollIndicator={!tablet} persistentScrollbar={!tablet}>
+              <ThemedView type="backgroundElement" style={[styles.table, tablet && { width: tableWidth }]}>
                 <View style={styles.row}>
-                  <View style={[styles.cell, styles.labelCell]} />
+                  <View style={[styles.cell, styles.labelCell, { width: labelWidth }]} />
                   {PRAYERS.map((p) => (
-                    <View key={p} style={[styles.cell, styles.prayerCell]}>
+                    <View key={p} style={[styles.cell, styles.prayerCell, { width: prayerWidth }]}>
                       <ThemedText type="smallBold" themeColor="textSecondary" numberOfLines={1}>
                         {t(`prayers.${p.toLowerCase()}`)}
                       </ThemedText>
@@ -75,7 +85,7 @@ export default function PrayerTimesWeekScreen() {
                 {rows.map((row, i) => (
                   <AnimatedListItem key={row.date.toISOString()} index={i + 1}>
                     <View style={[styles.row, row.isToday && styles.rowToday]}>
-                      <View style={[styles.cell, styles.labelCell]}>
+                      <View style={[styles.cell, styles.labelCell, { width: labelWidth }]}>
                         <ThemedText type={row.isToday ? 'smallBold' : 'small'} themeColor={row.isToday ? 'accent' : 'text'}>
                           {t(`calendar.weekdays.${WEEKDAY_KEYS[row.weekdayIdx]}`)}
                         </ThemedText>
@@ -84,7 +94,7 @@ export default function PrayerTimesWeekScreen() {
                         </ThemedText>
                       </View>
                       {PRAYERS.map((p) => (
-                        <View key={p} style={[styles.cell, styles.prayerCell]}>
+                        <View key={p} style={[styles.cell, styles.prayerCell, { width: prayerWidth }]}>
                           <ThemedText
                             type={row.isToday ? 'smallBold' : 'small'}
                             themeColor={row.isToday ? 'accent' : 'text'}>
@@ -136,4 +146,5 @@ const styles = StyleSheet.create({
   labelCell: { width: LABEL_COL_WIDTH, alignItems: 'flex-start', paddingLeft: Spacing.three },
   prayerCell: { width: PRAYER_COL_WIDTH },
   hint: { textAlign: 'center', marginTop: Spacing.three, paddingHorizontal: Spacing.three },
+  scrollHint: { textAlign: 'center', marginBottom: Spacing.one },
 });

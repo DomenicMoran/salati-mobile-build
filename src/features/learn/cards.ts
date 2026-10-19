@@ -25,6 +25,7 @@ export interface LessonCard {
   textKey?: string;
   /** Bereits lokalisierter Fließtext (Story-Lektionen) — hat Vorrang vor textKey */
   text?: string;
+  source?: string;
   /** Arabischer Text für Geräte-TTS (Buchstabenname/Silbe/Wort) */
   tts?: string;
   /** MP3 mit echter Rezitation (Lese-Lektionen) */
@@ -142,6 +143,7 @@ export function buildCards(lesson: Lesson, locale: Locale = 'de'): LessonCard[] 
         arabic: s.arabic ?? '',
         label: localizedText(s.title, locale),
         text: localizedText(s.text, locale),
+        source: s.source,
         contentFallback: isLocalizedFallback(s.title, locale) || isLocalizedFallback(s.text, locale),
         // Echte Rezitation, wenn ein Vers referenziert ist — sonst Geräte-TTS.
         ...(s.globalAyah

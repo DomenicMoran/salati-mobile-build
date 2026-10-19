@@ -81,14 +81,18 @@ export function useAlleParadigmTabellen(): UseQueryResult<ParadigmTabelleEingeor
  *  (Reihenfolge wie PARADIGM_SOURCES). `undefined`, wenn die ID in keiner
  *  Datei vorkommt. Für die Begriff-Detailansicht (`tabellen`-Verweise aus
  *  data/erklaerungen/de-*.json). */
-export function useParadigmTabelle(tableId: string): UseQueryResult<ParadigmTabelleEingeordnet | undefined> {
+export function useParadigmTabelle(
+  tableId: string | null,
+): UseQueryResult<ParadigmTabelleEingeordnet | null> {
   return useQuery({
     queryKey: ['lexikon', 'paradigmTabelle', tableId],
     queryFn: async () => {
+      if (!tableId) return null;
       const tables = await ladeAlleParadigmTabellen();
-      return tables.find((t) => t.id === tableId);
+      return tables.find((t) => t.id === tableId) ?? null;
     },
     staleTime: STATIC_STALE_TIME,
+    enabled: Boolean(tableId),
   });
 }
 

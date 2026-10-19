@@ -27,6 +27,8 @@ import {
   groupHandoutsByCategory,
   type Handout,
 } from '@/features/handouts/data';
+import { ContentLanguageBadge } from '@/features/media/content-language-badge';
+import { handoutsForLocale } from '@/features/media/content-language';
 import { useHandoutDownload } from '@/features/handouts/downloads';
 import { useResolvedScheme } from '@/hooks/use-resolved-scheme';
 import { useTranslation } from '@/lib/i18n';
@@ -45,7 +47,7 @@ function openHandout(handout: Handout): void {
 }
 
 export default function HandoutListScreen() {
-  const { t } = useTranslation();
+  const { t, locale } = useTranslation();
 
   const { data, isLoading, isError } = useQuery({
     queryKey: ['handouts', 'index'],
@@ -53,7 +55,8 @@ export default function HandoutListScreen() {
     staleTime: 60 * 60 * 1000,
   });
 
-  const handouts = data?.handouts ?? [];
+  const rawHandouts = data?.handouts ?? [];
+  const handouts = handoutsForLocale(rawHandouts, locale);
   const groups = groupHandoutsByCategory(handouts);
   const multiCategory = groups.length > 1;
   const rows: ListRow[] = [];
@@ -189,6 +192,7 @@ function HandoutRow({ handout, index }: { handout: Handout; index: number }) {
                 </ThemedText>
               </View>
             )}
+            <ContentLanguageBadge lang={handout.lang} compact />
           </View>
         </View>
 
@@ -275,7 +279,7 @@ const styles = StyleSheet.create({
   metaRow: { flexDirection: 'row', alignItems: 'center', gap: Spacing.one, marginTop: 2, flexWrap: 'wrap' },
   metaBadge: { flexDirection: 'row', alignItems: 'center', gap: 3 },
   metaBadgeLabel: { fontSize: 11 },
-  dlBtn: { width: 36, height: 36, borderRadius: 18, alignItems: 'center', justifyContent: 'center' },
+  dlBtn: { width: 44, height: 44, borderRadius: 22, alignItems: 'center', justifyContent: 'center' },
   dlPct: { fontSize: 11 },
   pressed: { opacity: 0.6 },
 });

@@ -1,0 +1,32 @@
+
+> @salatibox/mobile@0.1.0 lint C:\Users\domen\Documents\SalatiTech\apps\mobile
+> expo lint
+
+
+C:\Users\domen\Documents\SalatiTech\apps\mobile\src\app\lexikon\index.tsx
+  15:10  warning  'ThemedText' is defined but never used  @typescript-eslint/no-unused-vars
+
+C:\Users\domen\Documents\SalatiTech\apps\mobile\src\features\lexikon\data\paradigmen-bab-mithal-ajwaf.test.ts
+  535:3  warning  Unused eslint-disable directive (no problems were reported from 'no-console')
+
+C:\Users\domen\Documents\SalatiTech\apps\mobile\src\features\lexikon\data\paradigmen-bab-murakkab.test.ts
+  462:3  warning  Unused eslint-disable directive (no problems were reported from 'no-console')
+
+C:\Users\domen\Documents\SalatiTech\apps\mobile\src\features\lexikon\data\paradigmen-bab-naqis-lafif-mudaaf.test.ts
+  808:3  warning  Unused eslint-disable directive (no problems were reported from 'no-console')
+
+C:\Users\domen\Documents\SalatiTech\apps\mobile\src\features\lexikon\data\paradigmen-nachtrag.test.ts
+  392:3  warning  Unused eslint-disable directive (no problems were reported from 'no-console')
+
+C:\Users\domen\Documents\SalatiTech\apps\mobile\src\features\lexikon\data\paradigmen-verben.test.ts
+  594:3  warning  Unused eslint-disable directive (no problems were reported from 'no-console')
+
+C:\Users\domen\Documents\SalatiTech\apps\mobile\src\features\lexikon\data\paradigmen-weitere.test.ts
+  649:3  warning  Unused eslint-disable directive (no problems were reported from 'no-console')
+
+C:\Users\domen\Documents\SalatiTech\apps\mobile\src\features\lexikon\data\paradigmen.test.ts
+  285:3  warning  Unused eslint-disable directive (no problems were reported from 'no-console')
+
+✖ 8 problems (0 errors, 8 warnings)
+  0 errors and 7 warnings potentially fixable with the `--fix` option.
+

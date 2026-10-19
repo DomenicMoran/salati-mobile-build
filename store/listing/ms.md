@@ -9,7 +9,6 @@ Waktu solat, Kiblat, Al-Quran beraudio, AI & belajar membaca — tanpa iklan
 (74/80 Zeichen)
 
 ## Vollständige Beschreibung
-
 Salati menemani hari anda sebagai seorang Muslim — dengan waktu solat yang tepat, Al-Quran, AI peribadi pada peranti, dan kursus lengkap untuk belajar membaca Al-Quran dari asas. Tanpa iklan, tanpa akaun, tanpa penjejakan.
 
 SOLAT & KEHIDUPAN HARIAN
@@ -48,7 +47,7 @@ SALATI AI
 • Dilabel jelas: jawapan janaan AI, bukan fatwa atau pandangan ulama
 
 ILMU & HATI
-• Pengajian: 12 kursus bersumber dengan 311 pelajaran — Akidah, Tajwid, 40 Hadis (Nawawi), Sirah, Para Nabi, Sahabat & Ulama, Akhlak, Perkahwinan & Keluarga, tatabahasa Al-Quran, bahasa Arab harian, bahasa Arab Madinah (buku 1–4), dialek Arab — susun semula kursus dan dialek sesuka hati
+• Pengajian: 14 kursus bersumber dengan 363 pelajaran — Akidah, Tajwid, 40 Hadis (Nawawi), Sirah, Para Nabi, Sahabat & Ulama, Akhlak, Perkahwinan & Keluarga, tatabahasa Al-Quran, bahasa Arab harian, bahasa Arab Madinah (buku 1–4), dialek Arab — susun semula kursus dan dialek sesuka hati
 • Ujian penempatan & pengetahuan, ulangan spaced-repetition, latihan kelemahan, rentetan pembelajaran & matlamat harian
 • Latihan & Kuiz: 14 mod, serta ulangan kesilapan untuk mengulang perkara yang menyukarkan anda
 • Rumusan mingguan sebagai imej boleh kongsi: pelajaran, rentetan dan skor terbaik minggu ini
@@ -59,9 +58,9 @@ ILMU & HATI
 • Panduan amali dengan foto: Wuduk, Ghusl, solat, Jenazah, Haji & Umrah dan banyak lagi
 • Kalkulator Zakat dan pusaka, hikmah bersumber, pengira Tasbih
 
-PODCAST, VIDEO & REELS
-• Podcast „Bahasa Al-Quran": bahasa Arab Al-Quran episod demi episod (bahasa Jerman) — di Spotify
-• Video pembelajaran di YouTube, Reels di Instagram, dan PDF untuk dimuat turun
+BUKU AUDIO, PODCAST, VIDEO & REELS
+• Buku audio «Ilmu Wajib Islam» (8 bab) dan «Tatabahasa Arab — Kursus 3» (10 bab): audio dan video pembentangan dalam 14 bahasa app
+• Podcast Salati, video, reels, PDF — Spotify, YouTube, Instagram
 
 DATA ANDA KEKAL MILIK ANDA
 Tanpa iklan, tanpa akaun, tanpa SDK penjejakan: data anda kekal pada peranti anda. Lokasi anda hanya untuk waktu solat, Kiblat dan carian berdekatan, lalu dihantar kepada AlAdhan dan OpenStreetMap: tanpa nama dan atas pilihan anda. Berfungsi luar talian.
@@ -69,7 +68,7 @@ Tanpa iklan, tanpa akaun, tanpa SDK penjejakan: data anda kekal pada peranti and
 Soalan atau maklum balas? salati@domenicmoran.de
 Dasar privasi: https://www.salati.pro/datenschutz
 
-(3948/4000 Zeichen)
+(3983/4000 Zeichen)
 
 ## Keywords
 

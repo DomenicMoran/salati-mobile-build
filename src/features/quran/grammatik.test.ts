@@ -296,8 +296,43 @@ describe('fragmentRolle', () => {
     expect(fragmentRolle(segment({ kind: 'suffix', pos: 'PRON' }))).toBe('pronomenSuffix');
   });
 
-  it('fällt für ein unbekanntes Harf-Tag auf die generische Sammelkategorie zurück, statt zu raten', () => {
-    expect(fragmentRolle(segment({ kind: 'prefix', pos: 'AMD' }))).toBe('sonstigerHarf');
+  it('erkennt häufige Partikel-Präfixe mit spezifischer Rolle statt sonstigerHarf', () => {
+    expect(fragmentRolle(segment({ kind: 'prefix', pos: 'FUT' }))).toBe('futurPartikel');
+    expect(fragmentRolle(segment({ kind: 'prefix', pos: 'EMPH' }))).toBe('emphaseLam');
+    expect(fragmentRolle(segment({ kind: 'prefix', pos: 'VOC' }))).toBe('vokativPartikel');
+    expect(fragmentRolle(segment({ kind: 'prefix', pos: 'ACC' }))).toBe('akkusativPartikel');
+    expect(fragmentRolle(segment({ kind: 'prefix', pos: 'SUB' }))).toBe('unterordnendeKonjunktion');
+    expect(fragmentRolle(segment({ kind: 'prefix', pos: 'PRO' }))).toBe('verbotspartikel');
+    expect(fragmentRolle(segment({ kind: 'prefix', pos: 'PRP' }))).toBe('zweckpartikel');
+    expect(fragmentRolle(segment({ kind: 'prefix', pos: 'CIRC' }))).toBe('umstandspartikel');
+    expect(fragmentRolle(segment({ kind: 'prefix', pos: 'RSLT' }))).toBe('resultatpartikel');
+    expect(fragmentRolle(segment({ kind: 'prefix', pos: 'CERT' }))).toBe('gewissheitspartikel');
+    expect(fragmentRolle(segment({ kind: 'prefix', pos: 'COND' }))).toBe('konditionalpartikel');
+    expect(fragmentRolle(segment({ kind: 'prefix', pos: 'REM' }))).toBe('neubeginnPartikel');
+    expect(fragmentRolle(segment({ kind: 'prefix', pos: 'COM' }))).toBe('komitativpartikel');
+    expect(fragmentRolle(segment({ kind: 'prefix', pos: 'CAUS' }))).toBe('kausalpartikel');
+    expect(fragmentRolle(segment({ kind: 'prefix', pos: 'IMPV', text: 'لْ' }))).toBe('imperativLam');
+    expect(fragmentRolle(segment({ kind: 'prefix', pos: 'PREV' }))).toBe('praevPartikel');
+    expect(fragmentRolle(segment({ kind: 'prefix', pos: 'RET' }))).toBe('retraktionspartikel');
+    expect(fragmentRolle(segment({ kind: 'prefix', pos: 'EXP' }))).toBe('ausnahmepartikel');
+    expect(fragmentRolle(segment({ kind: 'prefix', pos: 'AMD' }))).toBe('amendmentPartikel');
+  });
+
+  it('ordnet allen 45 POS-Tags eine sinnvolle Fragment-Rolle zu — kein Harf landet in sonstigerHarf', () => {
+    const ISM_UND_FIIL = new Set([
+      'N', 'PN', 'ADJ', 'PRON', 'DEM', 'REL', 'T', 'LOC', 'IMPN', 'V',
+    ]);
+    for (const pos of ALLE_45_POS_TAGS) {
+      if (ISM_UND_FIIL.has(pos)) {
+        expect(fragmentRolle(segment({ kind: 'stem', pos }))).toBe('stamm');
+      } else if (pos === 'PRON') {
+        expect(fragmentRolle(segment({ kind: 'suffix', pos: 'PRON' }))).toBe('pronomenSuffix');
+      } else {
+        const rolle = fragmentRolle(segment({ kind: 'prefix', pos }));
+        expect(rolle).not.toBe('sonstigerHarf');
+        expect(rolle).not.toBe('sonstigesAffix');
+      }
+    }
   });
 
   it('fällt für ein unbekanntes Wortart-Tag auf "sonstigesAffix" zurück', () => {

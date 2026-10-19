@@ -37,6 +37,7 @@ import {
   type PodcastEpisode,
   type TranscriptSegment,
 } from '@/features/podcast/data';
+import { filterByContentLanguage } from '@/features/media/content-language';
 import { ContentLanguageBadge } from '@/features/media/content-language-badge';
 import { resolveEpisodeAudioUri, usePodcastDownload } from '@/features/podcast/downloads';
 import { Slider } from '@/features/podcast/slider';
@@ -54,7 +55,7 @@ const SKIP_SEC = 15;
 export default function PodcastPlayerScreen() {
   const { episode: episodeParam } = useLocalSearchParams<{ episode: string }>();
   const episodeNo = Number(episodeParam);
-  const { t } = useTranslation();
+  const { t, locale } = useTranslation();
   const rtl = useRtl();
   const scheme = useResolvedScheme();
   const colors = Colors[scheme];
@@ -77,8 +78,9 @@ export default function PodcastPlayerScreen() {
     staleTime: 60 * 60 * 1000,
   });
 
-  const episodes = data?.episodes ?? [];
+  const episodes = filterByContentLanguage(data?.episodes ?? [], locale);
   const episode = episodes.find((e) => e.episode_no === episodeNo);
+  const sourceEpisode = data?.episodes.find((e) => e.episode_no === episodeNo);
   const dl = usePodcastDownload(episode);
   const idx = episodes.findIndex((e) => e.episode_no === episodeNo);
   const prev = idx > 0 ? episodes[idx - 1] : undefined;
@@ -322,14 +324,16 @@ export default function PodcastPlayerScreen() {
   }
 
   if (isError || !episode) {
+    const unavailableInLocale = !isError && !!sourceEpisode && !episode;
     return (
       <ThemedView style={styles.container}>
         <SafeAreaView style={styles.safeArea}>
           <ScreenHeader title={t('podcast.title')} onBack={() => backOr('/podcast')} />
           <View style={styles.stateCenter}>
             <ThemedText type="small" themeColor="textSecondary">
-              {t('common.error')}
+              {unavailableInLocale ? t('podcast.languageOnly') : t('common.error')}
             </ThemedText>
+            {unavailableInLocale ? <ContentLanguageBadge lang={sourceEpisode.lang} /> : null}
           </View>
         </SafeAreaView>
       </ThemedView>

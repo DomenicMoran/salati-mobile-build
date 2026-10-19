@@ -12,13 +12,14 @@
 // Diese Tabellen bilden arabische Grammatik ab, nicht die UI-Chrome — sie
 // bleiben deshalb bewusst bei dieser festen Ausrichtung, auch wenn die
 // UI-Sprache selbst linksläufig ist.
-import { ScrollView, StyleSheet, View } from 'react-native';
+import { ScrollView, StyleSheet, useWindowDimensions, View } from 'react-native';
 
 import { ThemedText } from '@/components/themed-text';
 import { ThemedView } from '@/components/themed-view';
 import { IconSymbol } from '@/components/ui/icon-symbol';
-import { Colors, Spacing } from '@/constants/theme';
+import { Colors, MaxContentWidth, Spacing } from '@/constants/theme';
 import { useResolvedScheme } from '@/hooks/use-resolved-scheme';
+import { useTranslation } from '@/lib/i18n';
 
 import type { ParadigmTabelle, ParadigmZelle } from './erklaerungenTypes';
 
@@ -32,12 +33,22 @@ import type { ParadigmTabelle, ParadigmZelle } from './erklaerungenTypes';
 // abgeschnittenen notes[0] zu verschwinden.
 const ACHTUNG_PRAEFIX = /^ACHTUNG/;
 
-const CELL_MIN_WIDTH = 96;
-const LABEL_MIN_WIDTH = 120;
+const CELL_WIDTH = 144;
+const LABEL_WIDTH = 152;
+const LARGE_FONT_CELL_WIDTH = 184;
+const LARGE_FONT_LABEL_WIDTH = 192;
 
 export function ParadigmTable({ table }: { table: ParadigmTabelle }) {
   const scheme = useResolvedScheme();
   const colors = Colors[scheme];
+  const { width, fontScale } = useWindowDimensions();
+  const { t } = useTranslation();
+  // A shared fixed width per column keeps every row edge aligned. At large
+  // accessibility sizes, widen the columns uniformly and allow text to wrap.
+  const cellWidth = fontScale >= 1.5 ? LARGE_FONT_CELL_WIDTH : CELL_WIDTH;
+  const labelWidth = fontScale >= 1.5 ? LARGE_FONT_LABEL_WIDTH : LABEL_WIDTH;
+  const tableWidth = table.columns.length * cellWidth + labelWidth;
+  const availableWidth = Math.min(width, MaxContentWidth) - 2 * Spacing.three;
 
   return (
     <View style={styles.wrap}>
@@ -50,13 +61,24 @@ export function ParadigmTable({ table }: { table: ParadigmTabelle }) {
         ) : null}
       </View>
 
-      <ScrollView horizontal showsHorizontalScrollIndicator style={styles.scroll}>
+      {tableWidth > availableWidth ? (
+        <ThemedText type="small" themeColor="textSecondary" style={styles.scrollHint}>
+          {t('lexikon.grammar.horizontalScrollHint')}
+        </ThemedText>
+      ) : null}
+
+      <ScrollView
+        horizontal
+        showsHorizontalScrollIndicator
+        persistentScrollbar
+        style={styles.scroll}
+        contentContainerStyle={styles.scrollContent}>
         <View>
           {/* Kopfzeile: Spaltenköpfe in Dateireihenfolge, Ecke für die
               Zeilenbeschriftung zuletzt (rechts). */}
           <View style={[styles.row, { borderColor: colors.separator }]}>
             {table.columns.map((col) => (
-              <ThemedView key={col.id} type="backgroundElement" style={[styles.cell, styles.headerCell, { borderColor: colors.separator }]}>
+              <ThemedView key={col.id} type="backgroundElement" style={[styles.cell, styles.headerCell, { width: cellWidth, borderColor: colors.separator }]}>
                 <ThemedText type="smallBold" style={styles.centerText}>
                   {col.labelDe}
                 </ThemedText>
@@ -67,15 +89,15 @@ export function ParadigmTable({ table }: { table: ParadigmTabelle }) {
                 ) : null}
               </ThemedView>
             ))}
-            <ThemedView type="backgroundElement" style={[styles.labelCell, styles.headerCell, { borderColor: colors.separator }]} />
+            <ThemedView type="backgroundElement" style={[styles.labelCell, styles.headerCell, { width: labelWidth, borderColor: colors.separator }]} />
           </View>
 
           {table.rows.map((row) => (
             <View key={row.id} style={[styles.row, { borderColor: colors.separator }]}>
               {table.columns.map((col) => (
-                <ParadigmCell key={col.id} cell={table.cells[row.id]?.[col.id] ?? null} borderColor={colors.separator} />
+                <ParadigmCell key={col.id} cell={table.cells[row.id]?.[col.id] ?? null} width={cellWidth} borderColor={colors.separator} />
               ))}
-              <ThemedView type="backgroundElement" style={[styles.labelCell, { borderColor: colors.separator }]}>
+              <ThemedView type="backgroundElement" style={[styles.labelCell, { width: labelWidth, borderColor: colors.separator }]}>
                 <ThemedText type="small" style={styles.centerText}>
                   {row.labelDe}
                 </ThemedText>
@@ -89,7 +111,6 @@ export function ParadigmTable({ table }: { table: ParadigmTabelle }) {
           ))}
         </View>
       </ScrollView>
-
       {table.notes && table.notes.length > 0 ? (
         <View style={styles.notes}>
           {table.notes.map((note, i) => (
@@ -120,9 +141,9 @@ function NoteLine({ note, colors }: { note: string; colors: { accent: string } }
   );
 }
 
-function ParadigmCell({ cell, borderColor }: { cell: ParadigmZelle; borderColor: string }) {
+function ParadigmCell({ cell, borderColor, width }: { cell: ParadigmZelle; borderColor: string; width: number }) {
   return (
-    <View style={[styles.cell, { borderColor }]}>
+    <View style={[styles.cell, { width, borderColor }]}>
       {cell ? (
         <>
           <ThemedText type="default" style={styles.centerText}>
@@ -145,9 +166,9 @@ const styles = StyleSheet.create({
   wrap: { marginBottom: Spacing.four, gap: Spacing.one },
   titleRow: { flexDirection: 'row', alignItems: 'baseline', gap: Spacing.one, flexWrap: 'wrap' },
   scroll: { alignSelf: 'stretch' },
+  scrollContent: { flexGrow: 1, minWidth: '100%', justifyContent: 'center' },
   row: { flexDirection: 'row' },
   cell: {
-    minWidth: CELL_MIN_WIDTH,
     borderWidth: StyleSheet.hairlineWidth,
     paddingVertical: Spacing.two,
     paddingHorizontal: Spacing.one,
@@ -156,7 +177,6 @@ const styles = StyleSheet.create({
     gap: 2,
   },
   labelCell: {
-    minWidth: LABEL_MIN_WIDTH,
     borderWidth: StyleSheet.hairlineWidth,
     paddingVertical: Spacing.two,
     paddingHorizontal: Spacing.two,
@@ -166,6 +186,7 @@ const styles = StyleSheet.create({
   },
   headerCell: { paddingVertical: Spacing.two },
   centerText: { textAlign: 'center' },
+  scrollHint: { marginTop: Spacing.one },
   notes: { marginTop: Spacing.one, gap: Spacing.one },
   noteLine: { flex: 1 },
   noteAchtungRow: { flexDirection: 'row', alignItems: 'flex-start', gap: Spacing.one },

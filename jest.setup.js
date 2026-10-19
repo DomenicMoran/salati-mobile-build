@@ -12,3 +12,8 @@ jest.mock('@react-native-async-storage/async-storage', () =>
 // importiert intern dieselbe echte Bibliothek. Deshalb ein eigener Mock,
 // s. jest.reanimated-mock.js.
 jest.mock('react-native-reanimated', () => require('./jest.reanimated-mock'));
+
+// Expo 57 opens a Metro development socket at import time. Unit tests have
+// no Metro runtime; mock only this transport, not Expo or router behavior.
+jest.mock('expo/src/async-require/messageSocket', () => ({}));
+global.IS_REACT_ACT_ENVIRONMENT = true;

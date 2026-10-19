@@ -30,6 +30,7 @@ import {
   StyleSheet,
   TextInput,
   View,
+  useWindowDimensions,
   type StyleProp,
   type TextInputProps,
   type ViewStyle,
@@ -153,15 +154,17 @@ export function ListNote({ text }: { text: string }) {
 /** Wertzeile: Label links, Wert rechts. Reine Anzeige — kein Tap, kein Chevron. */
 export function ValueRow({ label, value }: { label: string; value: string }) {
   const { rtl } = useRowContext();
+  const { width, fontScale } = useWindowDimensions();
+  const stacked = width < 400 || fontScale >= 1.4;
   return (
     <View
       accessible
       accessibilityLabel={`${label}: ${value}`}
-      style={[styles.row, rtl && styles.rowRtl]}>
-      <ThemedText type="default" style={[styles.rowLabel, rtl && styles.textRtl]}>
+      style={[styles.row, stacked && styles.valueRowStacked, !stacked && rtl && styles.rowRtl]}>
+      <ThemedText type="default" style={[styles.rowLabel, styles.valueLabel, stacked && styles.valueLabelStacked, rtl && styles.textRtl]}>
         {label}
       </ThemedText>
-      <ThemedText type="small" themeColor="textSecondary" style={styles.rowValue}>
+      <ThemedText type="small" themeColor="textSecondary" style={[styles.rowValue, styles.valueDetail, stacked && styles.valueDetailStacked, rtl && styles.textRtl]}>
         {value}
       </ThemedText>
     </View>
@@ -412,6 +415,11 @@ const styles = StyleSheet.create({
   // das iOS-Muster — statt das Label zu zerlegen. Reicht es trotzdem nicht,
   // bricht das Label weiterhin um, statt aus der Karte zu laufen.
   rowMain: { flexGrow: 1, flexShrink: 1, flexBasis: 'auto', gap: 2 },
+  valueLabel: { flex: 1, minWidth: '35%' },
+  valueLabelStacked: { flex: 0, minWidth: 0 },
+  valueDetail: { flex: 1, textAlign: 'right' },
+  valueRowStacked: { alignItems: 'stretch', gap: Spacing.one },
+  valueDetailStacked: { flex: 0, textAlign: 'left' },
   rowLabel: { flexGrow: 1, flexShrink: 1, flexBasis: 'auto' },
   rowValue: { flexShrink: 3, flexBasis: 'auto' },
   frame: { paddingHorizontal: Spacing.three, paddingBottom: Spacing.two },

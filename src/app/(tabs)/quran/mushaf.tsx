@@ -46,6 +46,7 @@ import { useAyahPlayer } from '@/features/quran/usePlayer';
 import { WortAnalyseSheet } from '@/features/quran/WortAnalyseSheet';
 import { GrammarLegend } from '@/features/quran/analyse/GrammarLegend';
 import { GrammarModeBar } from '@/features/quran/analyse/GrammarModeBar';
+import { GesamtAnalyseVers } from '@/features/quran/analyse/GesamtAnalyseVers';
 import { alignedMorphWords, wortFarbe, type FarbModus } from '@/features/quran/analyse/grammarColorModes';
 import { morphVerseWords, useGroupMorphologie } from '@/features/quran/analyse/useGroupMorphologie';
 import { useGrammatikIntro } from '@/features/quran/analyse/useGrammatikIntro';
@@ -142,14 +143,22 @@ export default function MushafScreen() {
   // Standard 'aus', lokaler State statt AppSettings (wie alle übrigen
   // Ansichts-Umschalter dieses Options-Sheets, z. B. wordInfoOn/showTranslation).
   const [grammarMode, setGrammarMode] = useState<FarbModus>('aus');
+  const [showGesamtanalyse, setShowGesamtanalyse] = useState(false);
   // Erklär-Sheet beim ERSTEN Einschalten eines Farbmodus — gleicher Hook
   // (und gleicher AsyncStorage-Schlüssel) wie im normalen Sure-Reader, damit
   // "einmal gesehen" für die Grammatik-Funktion app-weit gilt, unabhängig
   // davon, in welcher Ansicht sie zuerst eingeschaltet wurde.
   const grammatikIntro = useGrammatikIntro();
   const handleGrammarModeChange = (next: FarbModus) => {
+    setShowGesamtanalyse(false);
     setGrammarMode(next);
     if (next !== 'aus') grammatikIntro.notifyActivated();
+  };
+  const toggleGesamtanalyse = () => {
+    const next = !showGesamtanalyse;
+    setShowGesamtanalyse(next);
+    setGrammarMode(next ? 'wortart' : 'aus');
+    if (next) grammatikIntro.notifyActivated();
   };
   // Mindestens einmal ein Wort angetippt — hält die Morphologie-Abfrage warm,
   // gleiches Muster wie wordSheetUsed im Sure-Reader.
@@ -384,7 +393,7 @@ export default function MushafScreen() {
     return groups.map((group) => {
       const meta = surahMeta.get(group.surah);
       const reading = readingBySurah.get(group.surah);
-      const perVerseBlocks = wordInfoOn || showTranslation;
+      const perVerseBlocks = wordInfoOn || showTranslation || showGesamtanalyse;
       return (
         <View key={group.surah} style={styles.group}>
           {group.verses[0]?.ayah === 1 && (
@@ -452,6 +461,19 @@ export default function MushafScreen() {
                         {`${v.sajda ? '۩ ' : ''}${ayahMarker(quranFont.def, toArabicDigits(v.ayah))}`}
                       </ThemedText>
                     </ThemedText>
+                    {showGesamtanalyse && vMorphWords ? (
+                      <GesamtAnalyseVers
+                        words={vMorphWords}
+                        verseWords={vMorphWords}
+                        displayWords={vWords.map((word) => word.arabic)}
+                        quranFont={quranFont}
+                        showEvidenceLegend={v.ayah === 1}
+                      />
+                    ) : showGesamtanalyse ? (
+                      <ThemedText type="small" themeColor="textSecondary">
+                        {t('quran.wortAnalyse.morphologyNoData')}
+                      </ThemedText>
+                    ) : null}
                     {showTranslation && ayahReading?.translation && (
                       <ThemedText
                         type="small"
@@ -606,10 +628,28 @@ export default function MushafScreen() {
                     {juzNr}
                   </ThemedText>
                 </ThemedView>
-              </Pressable>
-            );
-          })}
+            </Pressable>
+          );
+        })}
         </ScrollView>
+
+        <View style={styles.analysisEntryRow}>
+          <Pressable
+            onPress={toggleGesamtanalyse}
+            accessibilityRole="button"
+            accessibilityLabel={t('quran.wortAnalyse.totalModeLabel')}
+            accessibilityState={{ selected: showGesamtanalyse }}
+            style={({ pressed }) => [Platform.OS === 'web' ? styles.pressableWeb : undefined, pressed && styles.pressed]}>
+            <ThemedView
+              type={showGesamtanalyse ? 'backgroundSelected' : 'backgroundElement'}
+              style={[styles.analysisEntryButton, sepia && { backgroundColor: SEPIA_CARD }]}>
+              <IconSymbol name="layers-outline" size={16} color={showGesamtanalyse ? cardColors.accent : cardColors.text} />
+              <ThemedText type="smallBold" themeColor={showGesamtanalyse ? 'accent' : 'text'} sepia={sepia}>
+                {t('quran.wortAnalyse.totalModeLabel')}
+              </ThemedText>
+            </ThemedView>
+          </Pressable>
+        </View>
 
         <Modal
           visible={optionsOpen}
@@ -741,7 +781,14 @@ export default function MushafScreen() {
               <ThemedText type="small" themeColor="textSecondary" style={styles.groupIntro}>
                 {t('quran.captions.grammarColorModes')}
               </ThemedText>
-              <GrammarModeBar modus={grammarMode} onChange={handleGrammarModeChange} scheme={grammarScheme} sepia={sepia} />
+              <GrammarModeBar
+                modus={grammarMode}
+                onChange={handleGrammarModeChange}
+                gesamtanalyse={showGesamtanalyse}
+                onToggleGesamtanalyse={toggleGesamtanalyse}
+                scheme={grammarScheme}
+                sepia={sepia}
+              />
               <ThemedText type="small" themeColor="textSecondary" style={styles.groupIntro}>
                 {t('quran.captions.wortAnalyseHint')}
               </ThemedText>
@@ -795,6 +842,12 @@ export default function MushafScreen() {
           onWurzelOeffnen={(wurzel) => router.push({ pathname: '/lexikon/wurzel/[wurzel]', params: { wurzel } })}
           onLexikonOeffnen={() => router.push('/lexikon')}
           onVerbTypOeffnen={(typ) => router.push({ pathname: '/lexikon/verbtyp/[typ]', params: { typ } })}
+          onSarfLexikonOeffnen={(form) =>
+            router.push({ pathname: '/lexikon/begriff/[bereich]/[id]', params: { bereich: 'verb', id: `form${form}` } })
+          }
+          onLehrtextOeffnen={(bereich, id) =>
+            router.push({ pathname: '/lexikon/begriff/[bereich]/[id]', params: { bereich, id } })
+          }
           onClose={() => setSelectedWord(null)}
         />
 
@@ -996,6 +1049,16 @@ const styles = StyleSheet.create({
   backChip: { width: 44, height: 44, borderRadius: 22, alignItems: 'center', justifyContent: 'center' },
   headerText: { flex: 1, minWidth: 0, gap: 1 },
   juzBar: { flexGrow: 0, marginBottom: Spacing.one },
+  analysisEntryRow: { paddingHorizontal: Spacing.three, paddingBottom: Spacing.two },
+  analysisEntryButton: {
+    alignSelf: 'flex-start',
+    minHeight: 40,
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: Spacing.two,
+    paddingHorizontal: Spacing.three,
+    borderRadius: Spacing.four,
+  },
   juzBarContent: { gap: Spacing.one, paddingHorizontal: Spacing.three },
   juzChip: {
     minWidth: 40,

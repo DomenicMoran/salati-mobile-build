@@ -74,7 +74,7 @@ export default function HadithDetailScreen() {
                 hitSlop={14}
                 accessibilityRole="button"
                 accessibilityLabel={t('hadith.shareText')}
-                style={({ pressed }) => [Platform.OS === 'web' ? styles.pressableWeb : undefined, pressed && styles.actionPressed]}>
+                style={({ pressed }) => [styles.iconAction, Platform.OS === 'web' ? styles.pressableWeb : undefined, pressed && styles.actionPressed]}>
                 <IconSymbol name="share-outline" size={18} color={colors.textSecondary} />
               </Pressable>
               <Pressable
@@ -89,7 +89,7 @@ export default function HadithDetailScreen() {
                 hitSlop={14}
                 accessibilityRole="button"
                 accessibilityLabel={t('hadith.shareImage')}
-                style={({ pressed }) => [Platform.OS === 'web' ? styles.pressableWeb : undefined, pressed && styles.actionPressed]}>
+                style={({ pressed }) => [styles.iconAction, Platform.OS === 'web' ? styles.pressableWeb : undefined, pressed && styles.actionPressed]}>
                 <IconSymbol name="image-outline" size={18} color={colors.textSecondary} />
               </Pressable>
             </View>
@@ -134,6 +134,7 @@ const styles = StyleSheet.create({
   content: { padding: Spacing.four, gap: Spacing.three, alignSelf: 'center', width: '100%', maxWidth: MaxContentWidth, },
   header: { textAlign: 'center' },
   actionsRow: { flexDirection: 'row', justifyContent: 'center', gap: Spacing.four },
+  iconAction: { width: 44, height: 44, alignItems: 'center', justifyContent: 'center' },
   actionPressed: { opacity: 0.6 },
   pressableWeb: { cursor: 'pointer' },
   arabic: { fontSize: 20, textAlign: 'right', lineHeight: 34 },

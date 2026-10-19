@@ -10,12 +10,12 @@ import path from 'path';
 import { fileURLToPath } from 'url';
 import { createRequire } from 'module';
 
-const require = createRequire('C:/Users/domen/Documents/MenuCloud/scripts/');
+const require = createRequire('C:/Users/domen/Documents/Projekte/MenuCloud/scripts/');
 const jwt = require('jsonwebtoken');
 
 const PACKAGE = 'de.salatibox.de';
 const AAB_PATH = process.argv[2];
-const SA_PATH = 'C:/Users/domen/Documents/90_Werkstatt/menucloud-mobile-build/play-service-account.json';
+const SA_PATH = 'C:/Users/domen/Documents/Projektordner/90_Werkstatt/menucloud-mobile-build/play-service-account.json';
 const LISTING_DIR = path.resolve(fileURLToPath(new URL('../store/listing', import.meta.url)));
 
 if (!AAB_PATH) { console.error('Usage: play-release-vc35.mjs <aab>'); process.exit(1); }

@@ -44,7 +44,11 @@
     "lernen": "Öğren",
     "media": "Medya",
     "lizenzen": "Kaynaklar & lisanslar",
-    "challenges": "Meydan okumalar"
+    "challenges": "Meydan okumalar",
+    "learnGroup": "Öğrenme ve günlük pratik",
+    "audioGroup": "Sesli içerikler",
+    "referenceGroup": "Başvuru",
+    "practiceGroup": "Alıştırma"
   },
   "common": {
     "openSettings": "Sistem ayarlarını aç",
@@ -227,7 +231,22 @@
       "lexikonButton": "Sözlükte Aç",
       "verbTypLabel": "Fiil türü",
       "wortartAr": "أقسام الكلمة",
-      "fragmentsAr": "أجزاء الكلمة"
+      "fragmentsAr": "أجزاء الكلمة",
+      "sarfTitle": "Ṣarf / Fiil kalıbı",
+      "sarfLexikonLink": "Aileyi Leksikonda aç",
+      "sarfNoTable": "IX. fiil kalıbı için Leksikonda referans tablosu yok.",
+      "lehrtextTitle": "İleri düzey gramer",
+      "lehrtextLexikonLink": "Leksikonda oku",
+      "totalModeLabel": "Tam analiz",
+      "attributeUnknown": "Mevcut dil bilgisi verilerinde belirtilmemiş.",
+      "negationNone": "Bu kelimede olumsuzluk edatı yok.",
+      "rationaleLabel": "Neden?",
+      "rationaleHide": "Açıklamayı gizle",
+      "negationLabel": "Kelimedeki olumsuzluk edatı",
+      "negationNoneShort": "yok",
+      "attributeUnknownShort": "bilinmiyor",
+      "satzrolleUnknownShort": "belirtilmemiş",
+      "negatedByLabel": "Şununla olumsuzlanır: {wort}"
     },
     "sectionLesehilfen": "Okuma yardımcıları",
     "sectionAussprache": "Telaffuz",
@@ -269,7 +288,7 @@
     "today": "Günün hadisi",
     "todaySource": "Nevevî 40, No. {n}",
     "searchTitle": "Hadis Arama",
-    "searchAllHint": "13 koleksiyonun tamamında arar - en az 3 karakter",
+    "searchAllHint": "Nevevî 40 Hadis ve hadis ansiklopedisi konularında ara — en az 3 karakter",
     "searchPlaceholder": "Arama terimi …",
     "searchedProgress": "{x}/{y} koleksiyon arandı",
     "resultsCount": "{n} sonuç",
@@ -1359,7 +1378,8 @@
     "subtitle": "Önümüzdeki 7 gün için tüm 5 vakit namaz saati",
     "loading": "Haftalık vakitler yükleniyor…",
     "unavailable": "Haftalık vakitler şu anda kullanılamıyor (çevrimdışı ve önbellek yok).",
-    "locationHint": "{location} için — hesaplama yöntemi/İkindi mezhebi ayarlardaki gibi."
+    "locationHint": "{location} için — hesaplama yöntemi/İkindi mezhebi ayarlardaki gibi.",
+    "scrollHint": "Beş vakit namazın tamamını görmek için yana kaydırın."
   },
   "dashboard": {
     "reorder": {
@@ -1531,6 +1551,10 @@
       "tajwid": {
         "title": "Tecvid - Kıraat Kuralları",
         "desc": "Nun-u sakine, kalkale, med çeşitleri, vakf - ayet sesli"
+      },
+      "pflichtwissen": {
+        "title": "İslami temel bilgiler",
+        "desc": "Sekiz bölümde farz-ı ayn: şehadet, tevhid, ahiret, temizlik, kalp, dil ve dua; hikâyeli sorularla (8 ders)."
       },
       "aqida": {
         "title": "Akide - İmanın Temelleri",
@@ -2577,6 +2601,7 @@
     "subtitle": "Bölüm bölüm Arapçayı anla",
     "heroDesc": "Podcast: Kur'an'ın dil bilgisi, bölüm bölüm.",
     "empty": "Yakında.",
+    "languageOnly": "Bu podcast şu anda yalnızca Almanca olarak kullanılabilir.",
     "episodeLabel": "Bölüm",
     "play": "Oynat",
     "pause": "Duraklat",
@@ -2688,7 +2713,8 @@
     "contentLanguage": "İçerik {lang} dilinde",
     "languages": {
       "de": "Almanca"
-    }
+    },
+    "audiobooks": "Sesli kitaplar"
   },
   "handouts": {
     "title": "Ders Notları",
@@ -2864,7 +2890,8 @@
         "toggleWortlisten": "Kelime Listeleri",
         "germanOnlyMeaningNote": "Bu kelime listelerindeki Almanca anlamlar şu anda yalnızca Almanca olarak mevcuttur.",
         "listCount": "{n} liste"
-      }
+      },
+      "horizontalScrollHint": "Tablonun tamamını görmek için yatay kaydırın."
     },
     "verbtyp": {
       "title": "Fiil Ailesi",
@@ -3055,12 +3082,162 @@
       "stamm": {
         "name": "Kelime Gövdesi",
         "ar": "الجذع",
-        "info": "Bir kelimenin, önek ve eklerin bağlandığı taşıyıcı öz kısmıdır."
+        "info": "{segment} bu kelimenin taşıyıcı gövdesidir — gramer olarak bir {posName} ({posAr})."
       },
       "verneinung": {
         "name": "Olumsuzluk Edatı",
         "ar": "حرف نفي",
         "info": "Bir cümlenin veya fiilin anlamını olumsuzlar, örneğin \"değil\" ya da \"yok\" anlamında."
+      },
+      "akkusativPartikel": {
+        "name": "Belirtme Edatı",
+        "ar": "حرف نصب",
+        "info": "\"inna\" gibi, kendinden sonraki isme belirtme hâlini veren ve ifadeyi vurgulayan bir edat."
+      },
+      "amendmentPartikel": {
+        "name": "Düzeltme Edatı",
+        "ar": "حرف استدراك",
+        "info": "Önceki bir ifadeyi hafifçe sınırlar veya düzeltir, \"ancak\" anlamında."
+      },
+      "antwortpartikel": {
+        "name": "Cevap Edatı",
+        "ar": "حرف جواب",
+        "info": "Bir sorunun ya da şart cümlesinin cevabını başlatır."
+      },
+      "abwendungspartikel": {
+        "name": "Reddetme Edatı",
+        "ar": "حرف ردع",
+        "info": "Önceki bir ifadeyi ya da tutumu kesin biçimde reddeder, \"asla\" anlamında."
+      },
+      "ausnahmepartikel": {
+        "name": "İstisna Edatı",
+        "ar": "أداة استثناء",
+        "info": "Daha önce anılan bir bütünden bir şeyi hariç tutar, \"hariç\" anlamında."
+      },
+      "equalisierungspartikel": {
+        "name": "Eşitlik Edatı",
+        "ar": "حرف تسوية",
+        "info": "İki belirtilen olasılığın eşdeğer ya da fark etmez olduğunu ifade eder."
+      },
+      "ermahnungspartikel": {
+        "name": "Teşvik Edatı",
+        "ar": "حرف تحضيض",
+        "info": "Acil bir çağrı veya özendirme ifade eder, \"keşke\" anlamında."
+      },
+      "erklaerungspartikel": {
+        "name": "Ayrıntı Edatı",
+        "ar": "حرف تفصيل",
+        "info": "Daha önce söylenene dair daha ayrıntılı bir açıklama ya da sıralama başlatır."
+      },
+      "emphaseLam": {
+        "name": "Vurgu Lâmı",
+        "ar": "لام التوكيد",
+        "info": "Bir ifadeyi vurgulayan, kelimenin asıl anlamını değiştirmeyen başa eklenmiş bir lâm."
+      },
+      "futurPartikel": {
+        "name": "Gelecek Zaman Edatı",
+        "ar": "حرف استقبال",
+        "info": "Şimdiki zaman fiilinin eylemini geleceğe taşır, \"sevfe\" ya da \"se-\" gibi."
+      },
+      "gewissheitspartikel": {
+        "name": "Kesinlik Edatı",
+        "ar": "حرف تحقيق",
+        "info": "Bir ifadenin gerçekten veya kesin olarak gerçekleştiğini vurgular, genelde bir fiilden önce gelir."
+      },
+      "imperativLam": {
+        "name": "Emir Lâmı",
+        "ar": "لام الأمر",
+        "info": "Şimdiki zaman kipini dolaylı bir emre çeviren, başa eklenen bir lâm."
+      },
+      "inzeptivPartikel": {
+        "name": "Başlangıç Edatı",
+        "ar": "حرف ابتداء",
+        "info": "Genelde cümlenin başında bir isim cümlesinin başladığını belirtir."
+      },
+      "interpretationspartikel": {
+        "name": "Açıklama Edatı",
+        "ar": "حرف تفسير",
+        "info": "Daha önce söylenenin açıklayıcı bir yeniden ifadesini başlatır, \"yani\" anlamında."
+      },
+      "kausalpartikel": {
+        "name": "Sebep Edatı",
+        "ar": "فاء السببية",
+        "info": "Bir istek veya dilekten sonra gelen ve istenen sonucu ifade eden فَ, örneğin \"dua et, ki sana cevap versin\" gibi."
+      },
+      "konditionalpartikel": {
+        "name": "Şart Edatı",
+        "ar": "أداة شرط",
+        "info": "Bir şart cümlesini başlatır, örneğin \"eğer\" anlamında."
+      },
+      "komitativpartikel": {
+        "name": "Beraberlik Vâvı",
+        "ar": "واو المعية",
+        "info": "Beraberlik anlamı taşıyan bir vâv, \"ile birlikte\" anlamında."
+      },
+      "neubeginnPartikel": {
+        "name": "Yeni Başlangıç Edatı",
+        "ar": "حرف استئناف",
+        "info": "Önceki ifadeden bağımsız yeni bir cümle bölümünün başladığını belirtir."
+      },
+      "praevPartikel": {
+        "name": "Engelleyici Edat",
+        "ar": "كافة",
+        "info": "\"innamâ\" gibi durumlarda önceki bir edatın dilbilgisel etkisini ortadan kaldırır."
+      },
+      "quranischeInitialen": {
+        "name": "Kur'an Harfleri (Mukattaa)",
+        "ar": "الحروف المقطعة",
+        "info": "Bazı surelerin başında tek tek okunan, kesin anlamı bilinmeyen harfler."
+      },
+      "restriktionspartikel": {
+        "name": "Sınırlama Edatı",
+        "ar": "أداة حصر",
+        "info": "Bir ifadeyi tam olarak tek bir şeyle sınırlar, \"sadece\" anlamında."
+      },
+      "resultatpartikel": {
+        "name": "Sonuç Edatı",
+        "ar": "فاء الجواب",
+        "info": "Bir şart cümlesinin cevap kısmını ya da genelleyici bir öznenin ardından gelen yüklemi bağlayan فَ — örneğin \"eğer\" veya \"her kim\" sonrası; sebep edatından farklı olarak amaç değil, şart ile sonucu birbirine bağlar."
+      },
+      "retraktionspartikel": {
+        "name": "Dönüş Edatı",
+        "ar": "حرف إضراب",
+        "info": "Önceki ifadeye göre bir geçişi veya düzeltmeyi başlatır, \"aksine\" anlamında."
+      },
+      "supplementPartikel": {
+        "name": "Fazlalık Edatı",
+        "ar": "حرف زائد",
+        "info": "Üslup gereği eklenen, kendi başına bir anlamı olmayan bir sözcük."
+      },
+      "ueberraschungspartikel": {
+        "name": "Şaşkınlık Edatı",
+        "ar": "حرف مفاجأة",
+        "info": "Bir şeyin aniden ve beklenmedik biçimde gerçekleştiğini ifade eder."
+      },
+      "umstandspartikel": {
+        "name": "Hâl Edatı",
+        "ar": "واو الحال",
+        "info": "Ana eylemle birlikte gerçekleşen durumu anlatan bir cümleciği başlatır."
+      },
+      "unterordnendeKonjunktion": {
+        "name": "Bağlaç (Masdariye)",
+        "ar": "حرف مصدري",
+        "info": "Kendinden sonraki cümleyi, özne veya nesne olarak kullanılabilen bir mastar eşdeğerine dönüştürür."
+      },
+      "verbotspartikel": {
+        "name": "Nehiy (Yasak) Edatı",
+        "ar": "حرف نهي",
+        "info": "Bir emri olumsuzlayarak bir şeyden kaçınmaya çağırır."
+      },
+      "vokativPartikel": {
+        "name": "Nida Edatı",
+        "ar": "أداة نداء",
+        "info": "Doğrudan bir seslenmeyi başlatır, çağrılan bir isimden önceki \"ey\" gibi."
+      },
+      "zweckpartikel": {
+        "name": "Amaç Lâmı",
+        "ar": "لام التعليل",
+        "info": "Bir eylemin amacını veya sebebini belirtir, \"-mek için\" anlamında."
       }
     },
     "herkunft": {
@@ -3833,6 +4010,89 @@
         "ar": "اسم",
         "info": "İsim; kişi, nesne, yer, özellik veya soyut bir kavramı ifade eder — Türkçedeki isim ve sıfatlara benzer."
       }
+    },
+    "begruendungen": {
+      "kasus": {
+        "grund": "{wort}, {kasusname} hâlindedir ({kasusAr}).",
+        "fehlend": "Derlemde {wort} için hâl bilgisi yoktur; bu, mebni biçimler veya hâl almayan sözcükler için normaldir.",
+        "praeposition": "{wort}, {praepositionName} ({praeposition}) harf-i cerri gerektirdiği için mecrurdur.",
+        "relationSubj": "{wort}, özne (fâil) olduğu için {kasusname} hâlindedir.",
+        "relationObj": "{wort}, nesne (mef'ûl bih) olduğu için {kasusname} hâlindedir.",
+        "relationPoss": "{wort}, izafetin ikinci unsuru (muzâfun ileyh) olduğu için {kasusname} hâlindedir.",
+        "relationPred": "{wort}, isim cümlesinin haberi olduğu için {kasusname} hâlindedir.",
+        "relationPass": "{wort}, edilgen cümlenin öznesi (nâib-i fâil) olduğu için {kasusname} hâlindedir.",
+        "relationCog": "{wort}, mef'ûl-i mutlak olduğu için {kasusname} hâlindedir.",
+        "relationSpec": "{wort}, temyiz olduğu için {kasusname} hâlindedir.",
+        "relationAdj": "{wort}, {headText} sözcüğünün sıfatı olduğu için onunla aynı hâldedir.",
+        "relationApp": "{wort}, {headText} sözcüğünün bedeli olduğu için onunla aynı hâldedir.",
+        "relationWiderspruch": "Derlem {wort} için {relation} ilişkisini verir; ancak {case} hâli olağan örüntüyle uyuşmaz (beklenen: {erwartet}).",
+        "innaSubj": "{wort}, {partikel} sonrasında isim olduğu için {kasusname} (nasb) hâlindedir.",
+        "kaanaPred": "{wort}, {partikel} sonrasında haber olduğu için {kasusname} (nasb) hâlindedir."
+      },
+      "bestimmtheit": {
+        "indefinite": "{wort} belirsizdir (nekre); derlemde açıkça INDEF olarak işaretlidir.",
+        "artikel": "{wort}, el- takısı taşıdığı için belirlidir.",
+        "possessiv": "{wort}, bitişik {suffix} zamirini taşıdığı için belirlidir; iyelik eki ismi belirli yapar.",
+        "eigenname": "{wort}, özel isim olduğu için belirlidir; özel isimler doğaları gereği belirlidir.",
+        "mudaf": "{wort}, {headWort} öncesinde muzâf olduğu için belirlidir; belirlilik izafetin ikinci unsurundan gelir.",
+        "fehlend": "{wort} için belirlilik saptanamıyor."
+      },
+      "tempus": {
+        "perfect": "{wort}, derlemde PERF işareti taşıdığı için mâzidir.",
+        "imperfect": "{wort}, derlemde IMPF işareti taşıdığı için muzâridir.",
+        "imperative": "{wort}, doğrudan emir (2. şahıs) biçimindedir; 3. şahsa dolaylı emir veren lâmü'l-emrden farklıdır."
+      },
+      "modus": {
+        "ind": "{wort} merfûdur; öncesindeki bir sözcük farklı bir son hareke gerektirmez.",
+        "juss": "{wort}, öncesindeki lem, nehiy lâsı veya in gibi bir edat nedeniyle meczumdur.",
+        "sub": "{wort}, öncesindeki en, len, li veya hattâ gibi bir edat nedeniyle mansubdur."
+      },
+      "genusVerbi": {
+        "passiv": "{wort} edilgendir; derlemdeki hareke örüntüsünden anlaşılır (PASS etiketi).",
+        "aktiv": "{wort} etkendir; özel işaret yoksa bu esas alınır."
+      },
+      "verbform": {
+        "form1": "{wort}, I. bâbın yalın biçimidir; derlemde parantez içi değer bulunmaması, artırılmamış biçim için kullanılan kuraldır.",
+        "explizit": "{wort}, {form}. fiil bâbındadır; derlemde açıkça ({form}) olarak işaretlidir. {formmerkmal}",
+        "selten": "{form}. fiil bâbı: bu nadir artırılmış biçim için henüz açıklama yok."
+      },
+      "relation": {
+        "strukturell": "{wort}, {headText} ile {relation} ilişkisindedir.",
+        "strukturellOhneHead": "{wort} sözcüğünün sözdizimsel görevi {relation}; bu ayette bağlı olduğu sözcük belirlenemedi.",
+        "kasusPassend": "Hâl ({kasusname}), {relation} sözdizimsel göreviyle uyumludur."
+      },
+      "praepositionen": {
+        "min": {
+          "name": "-den/-dan (min)"
+        },
+        "bi": {
+          "name": "ile/aracılığıyla (bi)"
+        },
+        "li": {
+          "name": "için (li)"
+        },
+        "fi": {
+          "name": "içinde (fi)"
+        },
+        "ala": {
+          "name": "üzerinde (ʿalā)"
+        },
+        "ila": {
+          "name": "-e/-a doğru (ʾilā)"
+        },
+        "an": {
+          "name": "hakkında/-den (ʿan)"
+        },
+        "ka": {
+          "name": "gibi (ka)"
+        },
+        "hatta": {
+          "name": "-e kadar (ḥattā)"
+        },
+        "ma3a": {
+          "name": "ile/birlikte (maʿa)"
+        }
+      }
     }
   },
   "gebetGemeinsam": {
@@ -4001,5 +4261,38 @@
       "nocheinmal": "Tekrar çalış",
       "zurUebersicht": "Genel bakışa dön"
     }
+  },
+  "audiobooks": {
+    "unavailable": "Bu içerik şu anda uygulama dilinizde mevcut değil.",
+    "title": "Sesli kitaplar",
+    "subtitle": "Arapça ve İslami temel bilgiler — yalnızca uygulama dilinizde.",
+    "empty": "Diliniz için henüz sesli kitap yok.",
+    "booksEmpty": "Diliniz için henüz kitap yok.",
+    "bookOpen": "Kitabı aç (PDF)",
+    "tracks": {
+      "kurs1": "Arapça öğren — Kurs 1",
+      "kurs2": "Arapça öğren — Kurs 2",
+      "kurs3": "Arapça öğren — Kurs 3 (gramer sesli kitap)",
+      "pflichtwissen": "İslami temel bilgiler",
+      "books": "Kitaplar"
+    },
+    "watchVideo": "Sunum videosunu izle",
+    "back15": "15 saniye geri",
+    "forward15": "15 saniye ileri"
+  },
+  "bibliothek": {
+    "title": "Kitaplik",
+    "subtitle": "Paylasilabilir kitaplar: sesli kitaplar, ders notlari ve yazarin serbest biraktigi tefsir.",
+    "audioVideo": "Ses ve video",
+    "rassoul": "Tefsirul Kuranil Kerim",
+    "rassoulGerman": "Aciklama Almanca, yazarin metni.",
+    "handouts": "Ders notlari",
+    "loadError": "Metin yuklenemedi.",
+    "quran": "Kuran",
+    "quranNote": "Arapca Kuran metni kamu malidir.",
+    "hadith": "Peygamber hadisleri ansiklopedisi",
+    "hadithNote": "Metin degismeden ve kaynak anilarak paylasilabilir.",
+    "continueReading": "Okumaya devam",
+    "savedPlace": "Son okunan"
   }
 }

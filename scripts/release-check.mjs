@@ -23,12 +23,12 @@ const HIER = path.dirname(fileURLToPath(import.meta.url));
 const APP_ROOT = path.join(HIER, '..');
 
 const PLAY_PACKAGE = 'de.salatibox.de';
-const PLAY_SA_PATH = 'C:/Users/domen/Documents/90_Werkstatt/menucloud-mobile-build/play-service-account.json';
+const PLAY_SA_PATH = 'C:/Users/domen/Documents/Projektordner/90_Werkstatt/menucloud-mobile-build/play-service-account.json';
 
 const ASC_APP_ID = '6791867298';
 const ASC_KEY_ID = process.env.ASC_KEY_ID || 'H73GL4Q2AQ';
 const ASC_ISSUER = process.env.ASC_ISSUER_ID || 'de348707-2ec6-4079-b3a4-74c17c31ba0c';
-const ASC_KEY_PATH = 'C:/Users/domen/Documents/90_Werkstatt/schluessel/AuthKey_H73GL4Q2AQ_Apple.p8';
+const ASC_KEY_PATH = 'C:/Users/domen/Documents/Projektordner/90_Werkstatt/schluessel/AuthKey_H73GL4Q2AQ_Apple.p8';
 
 const R2_BASE = 'https://pub-d0489c0572704285af79896edb72cbed.r2.dev';
 const APK_URL = `${R2_BASE}/app/salati.apk`; // src/app/(tabs)/index.web.tsx
@@ -40,7 +40,7 @@ const KORPUS_META_PFAD = 'rag/embeddings-de.meta.json';
 
 // jsonwebtoken liegt nicht in diesem Workspace, sondern im MenuCloud-Repo -
 // gleiche Aufloesung wie play-status.mjs/asc-status.mjs.
-const requireMenuCloud = createNodeRequire('C:/Users/domen/Documents/MenuCloud/scripts/');
+const requireMenuCloud = createNodeRequire('C:/Users/domen/Documents/Projekte/MenuCloud/scripts/');
 
 let befunde = 0;
 const zeile = (status, titel, text) => {

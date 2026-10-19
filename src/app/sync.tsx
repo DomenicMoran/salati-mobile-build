@@ -9,7 +9,7 @@ import { ThemedActivityIndicator } from '@/components/themed-activity-indicator'
 import { ThemedText } from '@/components/themed-text';
 import { ThemedView } from '@/components/themed-view';
 import { ScreenHeader } from '@/components/screen-header';
-import { Colors, MaxContentWidth, Spacing } from '@/constants/theme';
+import { Colors, Spacing } from '@/constants/theme';
 import { decodeSyncPayload, exportProgressCode, importProgressCode } from '@/features/sync/codeSync';
 import { useResolvedScheme } from '@/hooks/use-resolved-scheme';
 import { useTranslation } from '@/lib/i18n';
@@ -247,7 +247,7 @@ const styles = StyleSheet.create({
     gap: Spacing.two,
     alignSelf: 'center',
     width: '100%',
-    maxWidth: MaxContentWidth,
+    maxWidth: 680,
   },
   intro: { marginBottom: Spacing.three, lineHeight: 20 },
   section: { gap: Spacing.two },

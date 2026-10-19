@@ -1,6 +1,7 @@
 import { PersistQueryClientProvider } from '@tanstack/react-query-persist-client';
 import { DarkTheme, DefaultTheme, Stack, ThemeProvider } from 'expo-router';
 import * as SplashScreen from 'expo-splash-screen';
+import { StatusBar } from 'expo-status-bar';
 import { useEffect } from 'react';
 import { AppState, Linking, Platform } from 'react-native';
 
@@ -8,7 +9,7 @@ import { AnimatedSplashOverlay } from '@/components/animated-icon';
 import { ErrorBoundary } from '@/components/error-boundary';
 import { GlobalBackButton } from '@/components/global-back-button';
 import { MiniPlayer } from '@/components/mini-player';
-import { SettingsProvider } from '@/features/settings/store';
+import { SettingsProvider, useSettings } from '@/features/settings/store';
 import { refreshAllWidgets } from '@/widgets/refresh';
 import { useQuranFont } from '@/features/quran/useQuranFont';
 import { SharedPlayerProvider } from '@/features/quran/usePlayer';
@@ -66,12 +67,19 @@ export default function RootLayout() {
           dehydrateOptions: { shouldDehydrateQuery: sollInDieAblage },
         }}>
         <SettingsProvider>
-          <SharedPlayerProvider>
-            <ThemedApp />
-          </SharedPlayerProvider>
+          <LanguageAwarePlayer />
         </SettingsProvider>
       </PersistQueryClientProvider>
     </ErrorBoundary>
+  );
+}
+
+function LanguageAwarePlayer() {
+  const { settings } = useSettings();
+  return (
+    <SharedPlayerProvider contentLocale={settings.language}>
+      <ThemedApp />
+    </SharedPlayerProvider>
   );
 }
 
@@ -160,7 +168,8 @@ function ThemedApp() {
   return (
     <ThemeProvider value={colorScheme === 'dark' ? DarkTheme : DefaultTheme}>
       <AnimatedSplashOverlay />
-      <Stack screenOptions={{ headerShown: false }}>
+        <StatusBar style={colorScheme === 'dark' ? 'light' : 'dark'} />
+        <Stack screenOptions={{ headerShown: false, statusBarStyle: colorScheme === 'dark' ? 'light' : 'dark' }}>
         <Stack.Screen name="(tabs)" />
         <Stack.Screen name="onboarding" options={{ animation: 'fade' }} />
         <Stack.Screen name="settings" options={{ presentation: 'modal' }} />
@@ -197,6 +206,8 @@ function ThemedApp() {
         <Stack.Screen name="radio" />
         <Stack.Screen name="media" />
         <Stack.Screen name="podcast" />
+        <Stack.Screen name="audiobooks" />
+        <Stack.Screen name="bibliothek" />
         <Stack.Screen name="videos" />
         <Stack.Screen name="handouts" />
         <Stack.Screen name="lexikon" />

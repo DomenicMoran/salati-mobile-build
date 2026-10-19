@@ -2,7 +2,7 @@
 //
 // Ausgeliefert über denselben R2-Bucket wie der KI-Korpus (features/ki/korpus.ts)
 // und die Offline-Audios — hier aber pro SURE eine eigene, vergleichsweise
-// kleine JSON-Datei (morphologie/v<N>/<sure>.json, aktuell v3 — siehe
+// kleine JSON-Datei (morphologie/v<N>/<sure>.json, aktuell v4 — siehe
 // MORPHOLOGIE_SCHEMA_VERSION), da die Nutzung (Wortanalyse-
 // Overlay im Reader) immer genau eine Sure gleichzeitig braucht. Gleiches
 // Muster wie ki/korpus.ts: Cache im Dokumentverzeichnis prüfen, sonst von R2

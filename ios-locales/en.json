@@ -1,0 +1,8 @@
+{
+  "ios": {
+    "NSLocationWhenInUseUsageDescription": "Salati uses your location to calculate prayer times and the Qibla direction for your area.",
+    "NSMotionUsageDescription": "Salati uses motion sensors to show the Qibla direction on the compass.",
+    "NSCameraUsageDescription": "Salati uses the camera to scan product barcodes for the halal checker.",
+    "NSMicrophoneUsageDescription": "Salati uses the microphone to check your Qur'an recitation in Hifz practice mode."
+  }
+}

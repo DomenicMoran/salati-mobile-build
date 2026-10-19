@@ -1,0 +1,5 @@
+Alle Funktionen sind ohne Konto nutzbar, kein Login noetig.
+
+Build 88 behebt die Ablehnung unter Guideline 4 (Design): die System-Berechtigungsdialoge (Standort, Bewegungssensoren/Qibla-Kompass, Kamera, Mikrofon) sind jetzt in allen 14 App-Sprachen lokalisiert (InfoPlist.strings), passend zur In-App-Lokalisierung. Zusaetzlich ist NSMotionUsageDescription ergaenzt (ITMS-90683).
+
+Rezitations-Check: unterer Tab "Learn" (Kappen-Symbol) > "Recitation" > Sure waehlen > Mikrofon-Berechtigung erlauben > vorlesen. Die Pruefung laeuft auf dem Geraet. Gebetszeiten und Moschee-/Halal-Suche senden den Geraetestandort an api.aladhan.com bzw. overpass-api.de (im App-Datenschutz deklariert).

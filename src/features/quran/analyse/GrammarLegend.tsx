@@ -25,7 +25,12 @@ export function GrammarLegend({ modus, scheme, sepia }: GrammarLegendProps) {
     <View style={styles.row}>
       {eintraege.map((e) => (
         <View key={e.label} style={styles.item}>
-          <View style={[styles.swatch, { backgroundColor: e.color }]} />
+          <View
+            style={[
+              styles.swatch,
+              e.color ? { backgroundColor: e.color } : styles.swatchNeutral,
+            ]}
+          />
           <ThemedText type="small" themeColor="textSecondary" sepia={sepia}>
             <Fachbegriff text={e.label} ar={e.ar} />
           </ThemedText>
@@ -46,4 +51,5 @@ const styles = StyleSheet.create({
   },
   item: { flexDirection: 'row', alignItems: 'center', gap: 4 },
   swatch: { width: 10, height: 10, borderRadius: 5 },
+  swatchNeutral: { borderWidth: 1, borderColor: 'rgba(128,128,128,0.45)', backgroundColor: 'transparent' },
 });

@@ -1,0 +1,8 @@
+{
+  "ios": {
+    "NSLocationWhenInUseUsageDescription": "Salati ستاسو د سيمې د لپاره د لمانځه وخت او د قبلې لور محاسبه کولو لپاره ستاسو موقعیت کاروي.",
+    "NSMotionUsageDescription": "Salati د قطب‌نما پر مخ د قبلې لور ښودلو لپاره د حرکت سینسورونه کاروي.",
+    "NSCameraUsageDescription": "Salati د حلال سکینر لپاره د محصولاتو بارکوډونه سکین کولو لپاره کیمره کاروي.",
+    "NSMicrophoneUsageDescription": "Salati په حفظ تمرین حالت کې ستاسو د قرآن تلاوت ازموي."
+  }
+}

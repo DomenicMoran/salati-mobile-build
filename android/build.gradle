@@ -68,3 +68,13 @@ if (isWindows && !project.hasProperty("ohneKurzenCxxPfad")) {
     }
   }
 }
+
+// expo-dynamic-app-icon still compiles Kotlin for JVM 11 while the app's Java
+// tasks target 17. Kotlin 2 rejects that mix. Keep every library on 17.
+subprojects { sub ->
+  sub.tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile).configureEach {
+    compilerOptions {
+      jvmTarget.set(org.jetbrains.kotlin.gradle.dsl.JvmTarget.JVM_17)
+    }
+  }
+}

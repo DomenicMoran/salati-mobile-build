@@ -16,10 +16,10 @@
 import fs from 'fs';
 import { createRequire } from 'module';
 
-const require = createRequire('C:/Users/domen/Documents/MenuCloud/scripts/');
+const require = createRequire('C:/Users/domen/Documents/Projekte/MenuCloud/scripts/');
 const jwt = require('jsonwebtoken');
 
-const SA_PATH = 'C:/Users/domen/Documents/90_Werkstatt/menucloud-mobile-build/play-service-account.json';
+const SA_PATH = 'C:/Users/domen/Documents/Projektordner/90_Werkstatt/menucloud-mobile-build/play-service-account.json';
 const APPS = [
   { paket: 'de.salatibox.de', name: 'Handy/Tablet' },
   { paket: 'de.salatibox.tv', name: 'Android TV' },

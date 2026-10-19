@@ -1,4 +1,6 @@
-import { router, useLocalSearchParams } from 'expo-router';
+import { router, useLocalSearchParams, type Href } from 'expo-router';
+import { useQuery } from '@tanstack/react-query';
+import { fetchAudiobookIndex, trackHasChapters } from '@/features/audiobooks/data';
 import { useEffect, useState } from 'react';
 import { FlatList, StyleSheet, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
@@ -50,6 +52,14 @@ export default function CourseLessonsScreen() {
   const scheme = useResolvedScheme();
   const colors = Colors[scheme];
   const { settings } = useSettings();
+  const { data: audiobookIndex } = useQuery({
+    queryKey: ['audiobooks', 'index'],
+    queryFn: fetchAudiobookIndex,
+    enabled: courseId === 'pflichtwissen',
+    staleTime: 5 * 60 * 1000,
+  });
+  const hasCompanion = courseId === 'pflichtwissen' &&
+    trackHasChapters(audiobookIndex?.entries ?? [], 'pflichtwissen', locale);
   const { progress } = useCourseProgress(course?.storageKey ?? 'salatibox:study-unknown');
 
   // Lektionsinhalte des Kurses erst NACH generateStaticParams/Metadaten async
@@ -145,6 +155,21 @@ export default function CourseLessonsScreen() {
               ) : null}
               {PHASE_TABLE_VIDEO[course.id] ? (
                 <PhaseTableCard episodeNo={PHASE_TABLE_VIDEO[course.id]} />
+              ) : null}
+              {hasCompanion ? (
+                <PressableCard
+                  accessibilityRole="button"
+                  accessibilityLabel={t('audiobooks.title')}
+                  onPress={() => router.push({ pathname: '/audiobooks/[track]', params: { track: 'pflichtwissen' } } as Href)}
+                  type="backgroundElement"
+                  style={[styles.row, styles.placementRow]}>
+                  <IconSymbol name="headset" size={22} color={colors.accent} />
+                  <View style={styles.rowText}>
+                    <ThemedText type="default">{t('audiobooks.title')}</ThemedText>
+                    <ThemedText type="small" themeColor="textSecondary">{t('audiobooks.subtitle')}</ThemedText>
+                  </View>
+                  <DisclosureChevron size={18} color={colors.textSecondary} />
+                </PressableCard>
               ) : null}
               {lessons.length > 1 ? (
               // Immer verfügbar (User-Wunsch): Einstufung für Neue, danach

@@ -32,6 +32,8 @@ export interface PlayableAyah {
 // liest denselben Kontext und bleibt dadurch screen-übergreifend sichtbar.
 export interface NowPlayingInfo {
   title: string;
+  /** UI-language-bound teaching audio; omitted for language-independent recitation. */
+  contentLanguage?: string;
   /** Optionaler Untertitel (z. B. Serien-/Sendername) für den Mini-Player. */
   subtitle?: string;
   /** Route zum jeweiligen Voll-Player — ein Tap auf den Mini-Player springt
@@ -71,10 +73,19 @@ const SHARED_PLAYER_UPDATE_INTERVAL_MS = 100;
 
 /** Kein JSX, damit diese Datei .ts (nicht .tsx) bleiben kann — der
  * Positions-Polling-Hook lebt bewusst neben der Context-Definition. */
-export function SharedPlayerProvider({ children }: { children: ReactNode }) {
+export function SharedPlayerProvider({ children, contentLocale }: { children: ReactNode; contentLocale?: string }) {
   const player = useSsrSafeAudioPlayer(null, { updateInterval: SHARED_PLAYER_UPDATE_INTERVAL_MS });
   const status = useSsrSafeAudioPlayerStatus(player);
   const [nowPlaying, setNowPlaying] = useState<NowPlayingInfo | null>(null);
+  const languageMismatch = !!nowPlaying?.contentLanguage && !!contentLocale
+    && nowPlaying.contentLanguage !== contentLocale;
+  const availableNowPlaying = languageMismatch ? null : nowPlaying;
+  useEffect(() => {
+    if (!languageMismatch) return;
+    player.pause();
+    if (Platform.OS !== 'web') player.setActiveForLockScreen(false);
+    setNowPlaying(null);
+  }, [languageMismatch, player]);
 
   // Screen-unabhängiges Track-Ende: der aktive Player läuft an der App-Wurzel
   // weiter, auch wenn der jeweilige Voll-Player-Screen unmountet ist (nur
@@ -88,7 +99,7 @@ export function SharedPlayerProvider({ children }: { children: ReactNode }) {
   // läuft.
   const nowPlayingRef = useRef(nowPlaying);
   useEffect(() => {
-    nowPlayingRef.current = nowPlaying;
+    nowPlayingRef.current = availableNowPlaying;
   });
   const [lastFinish, setLastFinish] = useState(false);
   const [finishTick, setFinishTick] = useState(0);
@@ -102,8 +113,8 @@ export function SharedPlayerProvider({ children }: { children: ReactNode }) {
   }, [finishTick]);
 
   const value = useMemo<SharedPlayerContextValue>(
-    () => ({ player, status, nowPlaying, setNowPlaying }),
-    [player, status, nowPlaying],
+    () => ({ player, status, nowPlaying: availableNowPlaying, setNowPlaying }),
+    [player, status, availableNowPlaying],
   );
 
   return createElement(SharedPlayerContext.Provider, { value }, children);

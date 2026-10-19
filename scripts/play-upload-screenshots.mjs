@@ -16,11 +16,11 @@ import fs from 'fs';
 import path from 'path';
 import { createRequire } from 'module';
 
-const require = createRequire('C:/Users/domen/Documents/MenuCloud/scripts/');
+const require = createRequire('C:/Users/domen/Documents/Projekte/MenuCloud/scripts/');
 const jwt = require('jsonwebtoken');
 
 const PACKAGE = process.env.PLAY_PACKAGE ?? 'de.salatibox.de';
-const SA_PATH = 'C:/Users/domen/Documents/90_Werkstatt/menucloud-mobile-build/play-service-account.json';
+const SA_PATH = 'C:/Users/domen/Documents/Projektordner/90_Werkstatt/menucloud-mobile-build/play-service-account.json';
 
 const argv = process.argv.slice(2);
 const NUR_PRUEFEN = argv.includes('--pruefen');

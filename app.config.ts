@@ -9,7 +9,25 @@ import type { ExpoConfig } from 'expo/config';
  * schreibt. Weichen sie ab, bietet der Update-Server einer Installation nichts
  * an und das Ausbleiben sieht aus wie „es gibt kein Update".
  */
-const VERSION = '1.54.0';
+const VERSION = '1.56.4';
+
+/** App-UI + App-Store-Listing (14 Sprachen) — nativer iOS-Berechtigungstext pro Sprache. */
+const IOS_PERMISSION_LOCALES = [
+  'ar',
+  'bn',
+  'de',
+  'en',
+  'es',
+  'fa',
+  'fr',
+  'id',
+  'ms',
+  'ps',
+  'ru',
+  'sw',
+  'tr',
+  'ur',
+] as const;
 
 const config: ExpoConfig = {
   name: 'Salati',
@@ -29,7 +47,7 @@ const config: ExpoConfig = {
   scheme: 'salatibox',
   userInterfaceStyle: 'automatic',
   description:
-    'Gebetszeiten, Qibla, Koran mit wählbaren Rezitatoren und Übersetzungen, Hijri-Kalender und Duas — werbefrei.',
+    'Gebetszeiten, Qibla, Koran, Hörbücher und Studium — werbefrei, 14 Sprachen.',
   // OTA-Updates über EAS Update (Befund docs/audit-2026-07-27/AUSLIEFERUNG.md:
   // ohne expo-updates kostete jede Inhalts-/KI-Korrektur einen kompletten
   // Store-Zyklus inkl. Apple-Review). Der Kanal kommt NICHT von hier, sondern
@@ -84,7 +102,7 @@ const config: ExpoConfig = {
     // und einen Versatz von -16 Punkten). Ohne diese Zeile nimmt iOS dasselbe
     // assets/images/icon.png wie Android – ein Icon auf beiden Plattformen.
     // appVersionSource: 'local' (eas.json) → buildNumber wird hier gelesen (kein
-    // ios/-Verzeichnis, prebuild-managed). 40 > alle bisherigen App-Store-Builds.
+    // ios/-Verzeichnis, prebuild-managed). 92 > alle bisherigen App-Store-Builds.
     // Android musste am 25.08. von 75 auf 76 springen (Play: "Version code 75
     // has already been used" — s. android/app/build.gradle). Build 75 bei
     // Apple ist die abgelehnte 1.51.0-Einreichung; fuer den naechsten Versuch
@@ -92,7 +110,9 @@ const config: ExpoConfig = {
     // 85: Bau 84 lag am 13.09.2026 mit 1.54.0 bei Apple und trug noch das
     // falsche App-Icon. Die Einreichung wurde zurueckgezogen (Fassung steht
     // seither auf DEVELOPER_REJECTED); 1.54.0 geht mit diesem Bau neu raus.
-    buildNumber: '85',
+    // 86: ASC 1.55.0 abgelehnt (Guideline 4 — Berechtigungstexte nicht in App-Sprache).
+    // 87: ASC Binary Processing ITMS-90683 — NSMotionUsageDescription fehlte (Qibla/Kompass).
+    buildNumber: '95',
     // ASC-App "Salati Islam" (6791867298) wurde vom User unter dieser ID
     // angelegt (2026-07-17) — beide Plattformen nutzen de.salatibox.de.
     bundleIdentifier: 'de.salatibox.de',
@@ -102,6 +122,9 @@ const config: ExpoConfig = {
     appleTeamId: 'ZKG548NGDR',
     supportsTablet: true,
     infoPlist: {
+      // Ermoeglicht InfoPlist.strings aus `locales` (Expo prebuild); ohne dieses
+      // Flag ignoriert iOS teils gemischte Lokalisierungen.
+      CFBundleAllowMixedLocalizations: true,
       UIBackgroundModes: ['audio'],
       // Erlaubt der App, Live Activities zu starten (ActivityKit) — nötig für
       // die "nächstes Gebet"-Anzeige auf Sperrbildschirm/Dynamic Island
@@ -109,6 +132,8 @@ const config: ExpoConfig = {
       NSSupportsLiveActivities: true,
       NSLocationWhenInUseUsageDescription:
         'Salati nutzt deinen Standort, um Gebetszeiten und die Qibla-Richtung für deinen Ort zu berechnen.',
+      NSMotionUsageDescription:
+        'Salati nutzt Bewegungssensoren, um die Qibla-Richtung auf dem Kompass anzuzeigen.',
       // Nur Standard-HTTPS/TLS zu öffentlichen APIs, keine eigene/zusätzliche
       // Verschlüsselung — Export-Compliance-Erklärung, spart den manuellen
       // Schritt in App Store Connect vor jedem Build.
@@ -121,6 +146,11 @@ const config: ExpoConfig = {
       'com.apple.security.application-groups': ['group.de.salatibox.de'],
     },
   },
+  // System-Berechtigungsdialoge (NS*UsageDescription) — Schluessel muessen zu
+  // app.config/plugins passen; Paritaet: ios-locales/catalog.json + Jest.
+  locales: Object.fromEntries(
+    IOS_PERMISSION_LOCALES.map((lang) => [lang, `./ios-locales/${lang}.json`]),
+  ),
   android: {
     // Play-App wurde vom User an de.salatibox.de gebunden (Fehlermeldung der
     // Console 2026-07-17) — Android folgt; identisch mit der iOS-Bundle-ID.
@@ -158,11 +188,20 @@ const config: ExpoConfig = {
         // (persistiert über expo prebuild --clean hinweg, im Gegensatz zu
         // android/gradle.properties, das dabei gelöscht wird).
         android: {
-          enableProguardInReleaseBuilds: true,
+          enableMinifyInReleaseBuilds: true,
           enableShrinkResourcesInReleaseBuilds: true,
+          useLegacyPackaging: false,
+          extraProguardRules: [
+            '-keep class expo.modules.** { *; }',
+            '-keep class com.facebook.react.turbomodule.** { *; }',
+            '-keep class com.facebook.jni.** { *; }',
+            '-keep class com.swmansion.reanimated.** { *; }',
+            '-keep class com.swmansion.worklets.** { *; }',
+          ].join('\n'),
         },
       },
     ],
+    './plugins/android-play-r8-release.js',
     [
       'expo-splash-screen',
       {
@@ -197,12 +236,26 @@ const config: ExpoConfig = {
         supportsPictureInPicture: true,
       },
     ],
-    'expo-localization',
+    [
+      'expo-localization',
+      {
+        supportedLocales: {
+          ios: [...IOS_PERMISSION_LOCALES],
+          android: [...IOS_PERMISSION_LOCALES],
+        },
+      },
+    ],
     [
       'expo-location',
       {
         locationWhenInUsePermission:
           'Salati nutzt deinen Standort, um Gebetszeiten und die Qibla-Richtung für deinen Ort zu berechnen.',
+        // Kein „Always"-Standort — sonst setzt das Plugin englische Default-Texte.
+        // motionUsagePermission: deutscher Default (Info.plist); andere Sprachen via locales.
+        locationAlwaysPermission: false,
+        locationAlwaysAndWhenInUsePermission: false,
+        motionUsagePermission:
+          'Salati nutzt Bewegungssensoren, um die Qibla-Richtung auf dem Kompass anzuzeigen.',
         isIosBackgroundLocationEnabled: false,
         isAndroidBackgroundLocationEnabled: false,
       },
@@ -368,6 +421,10 @@ const config: ExpoConfig = {
       'expo-camera',
       {
         cameraPermission: 'Salati nutzt die Kamera, um Produkt-Barcodes für den Halal-Scanner zu erkennen.',
+        // Gleicher Wortlaut wie expo-audio — expo-camera läuft danach und würde
+        // sonst den englischen Plugin-Default setzen (Kamera nimmt kein Ton auf).
+        microphonePermission:
+          'Salati nutzt das Mikrofon, um deine Koran-Rezitation im Hifz-Übungsmodus zu prüfen.',
         // recordAudioAndroid:false spart die (hier ungenutzte) Mikrofon-Berechtigung
         // auf Android; iOS verlangt laut Plugin-Quelle trotzdem immer den
         // NSMicrophoneUsageDescription-Eintrag, unabhängig von dieser Option.
@@ -388,6 +445,7 @@ const config: ExpoConfig = {
     // Windows-Rechner ist der Plugin-Code-Pfad für keines dieser Targets
     // jemals tatsächlich ausgeführt/getestet worden (siehe USER-TODO.md).
     '@bacons/apple-targets',
+    './plugins/withWatchInfoPlistLocales.js',
     // KEIN llama.rn mehr (entfernt 2026-07-28): Die Salati-KI arbeitet im
     // Zitat-Modus (src/features/ki/zitat.ts) — sie zitiert wörtlich aus dem
     // Quellen-Korpus und führt kein Sprachmodell mehr aus. Damit entfallen

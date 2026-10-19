@@ -1,0 +1,8 @@
+{
+  "ios": {
+    "NSLocationWhenInUseUsageDescription": "Salati آپ کے علاقے کے لیے نماز کے اوقات اور قبلے کی سمت کا حساب لگانے کے لیے آپ کے مقام کا استعمال کرتا ہے۔",
+    "NSMotionUsageDescription": "Salati قطب‌نما پر قبلے کی سمت دکھانے کے لیے موشن سینسر استعمال کرتا ہے۔",
+    "NSCameraUsageDescription": "Salati حلال چیکر کے لیے مصنوعات کے بارکوڈ اسکین کرنے کے لیے کیمرہ استعمال کرتا ہے۔",
+    "NSMicrophoneUsageDescription": "Salati حفظ مشق موڈ میں آپ کی قرآن کی تلاوت کی جانچ کے لیے مائیکروفون استعمال کرتا ہے۔"
+  }
+}

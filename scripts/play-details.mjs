@@ -11,7 +11,7 @@
 import fs from 'fs';
 import { createRequire } from 'module';
 
-const require = createRequire('C:/Users/domen/Documents/MenuCloud/scripts/');
+const require = createRequire('C:/Users/domen/Documents/Projekte/MenuCloud/scripts/');
 const jwt = require('jsonwebtoken');
 
 const PACKAGE = process.argv[2];
@@ -24,7 +24,7 @@ process.argv.forEach((a, i) => {
     sets[kv.slice(0, idx)] = kv.slice(idx + 1);
   }
 });
-const SA_PATH = 'C:/Users/domen/Documents/90_Werkstatt/menucloud-mobile-build/play-service-account.json';
+const SA_PATH = 'C:/Users/domen/Documents/Projektordner/90_Werkstatt/menucloud-mobile-build/play-service-account.json';
 
 const sa = JSON.parse(fs.readFileSync(SA_PATH, 'utf8'));
 const now = Math.floor(Date.now() / 1000);

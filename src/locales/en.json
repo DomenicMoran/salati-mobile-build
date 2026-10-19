@@ -44,7 +44,11 @@
     "lernen": "Learn",
     "media": "Media",
     "lizenzen": "Sources & licences",
-    "challenges": "Challenges"
+    "challenges": "Challenges",
+    "learnGroup": "Learning & everyday practice",
+    "audioGroup": "Audio",
+    "referenceGroup": "Reference",
+    "practiceGroup": "Practice"
   },
   "common": {
     "openSettings": "Open system settings",
@@ -227,7 +231,22 @@
       "lexikonButton": "Open in Lexicon",
       "verbTypLabel": "Verb type",
       "wortartAr": "أقسام الكلمة",
-      "fragmentsAr": "أجزاء الكلمة"
+      "fragmentsAr": "أجزاء الكلمة",
+      "sarfTitle": "Ṣarf / Verb Form",
+      "sarfLexikonLink": "Open family in Lexicon",
+      "sarfNoTable": "No reference table exists in the Lexicon for verb form IX.",
+      "lehrtextTitle": "Advanced Grammar",
+      "lehrtextLexikonLink": "Read in Lexicon",
+      "totalModeLabel": "Full analysis",
+      "attributeUnknown": "Not specified in the available grammar data.",
+      "negationNone": "No negation particle in this word.",
+      "rationaleLabel": "Why?",
+      "rationaleHide": "Hide explanation",
+      "negationLabel": "Negation particle in word",
+      "negationNoneShort": "none",
+      "attributeUnknownShort": "unknown",
+      "satzrolleUnknownShort": "not stated",
+      "negatedByLabel": "Negated by: {wort}"
     },
     "sectionLesehilfen": "Reading aids",
     "sectionAussprache": "Pronunciation",
@@ -269,7 +288,7 @@
     "today": "Hadith of the day",
     "todaySource": "An-Nawawi 40, No. {n}",
     "searchTitle": "Hadith Search",
-    "searchAllHint": "Searches all 13 collections - at least 3 characters",
+    "searchAllHint": "Search An-Nawawi 40 and hadith encyclopedia topics — at least 3 characters",
     "searchPlaceholder": "Search term …",
     "searchedProgress": "{x}/{y} collections searched",
     "resultsCount": "{n} results",
@@ -1359,7 +1378,8 @@
     "subtitle": "All 5 prayer times for the next 7 days",
     "loading": "Loading week times…",
     "unavailable": "Week times currently unavailable (offline & no cache).",
-    "locationHint": "For {location} — calculation method/Asr school as in settings."
+    "locationHint": "For {location} — calculation method/Asr school as in settings.",
+    "scrollHint": "Swipe sideways to view all five prayer times."
   },
   "dashboard": {
     "reorder": {
@@ -1531,6 +1551,10 @@
       "tajwid": {
         "title": "Tajwid - Rules of Recitation",
         "desc": "Nun sakinah, qalqalah, madd types, waqf - with verse audio"
+      },
+      "pflichtwissen": {
+        "title": "Essential Islamic Knowledge",
+        "desc": "Farḍ ʿayn in eight chapters: shahada, tawhid, hereafter, purity, heart, speech and du'a — with story quizzes (8 lessons)"
       },
       "aqida": {
         "title": "Aqidah - Foundations of Faith",
@@ -2513,6 +2537,7 @@
     "subtitle": "Understand Arabic, episode by episode",
     "heroDesc": "The podcast: the grammar of the Qur’an, episode by episode.",
     "empty": "Coming soon.",
+    "languageOnly": "This podcast is currently available in German only.",
     "episodeLabel": "Episode",
     "play": "Play",
     "pause": "Pause",
@@ -2688,7 +2713,8 @@
     "contentLanguage": "Content in {lang}",
     "languages": {
       "de": "German"
-    }
+    },
+    "audiobooks": "Audiobooks"
   },
   "handouts": {
     "title": "Handouts",
@@ -2864,7 +2890,8 @@
         "toggleWortlisten": "Word Lists",
         "germanOnlyMeaningNote": "The German meanings in these word lists are currently only available in German.",
         "listCount": "{n} lists"
-      }
+      },
+      "horizontalScrollHint": "Swipe horizontally to view the full table."
     },
     "verbtyp": {
       "title": "Verb Family",
@@ -3055,12 +3082,162 @@
       "stamm": {
         "name": "Stem",
         "ar": "الجذع",
-        "info": "The core part of a word that carries prefixes and suffixes."
+        "info": "{segment} is the core part of this word — grammatically a {posName} ({posAr})."
       },
       "verneinung": {
         "name": "Negation particle",
         "ar": "حرف نفي",
         "info": "Negates the statement of a sentence or verb, such as \"not\" or \"no\"."
+      },
+      "akkusativPartikel": {
+        "name": "Accusative particle",
+        "ar": "حرف نصب",
+        "info": "A particle such as \"inna\" that assigns the accusative to the following noun and emphasises the statement."
+      },
+      "amendmentPartikel": {
+        "name": "Amendment particle",
+        "ar": "حرف استدراك",
+        "info": "Slightly limits or corrects a previous statement, in the sense of \"however\"."
+      },
+      "antwortpartikel": {
+        "name": "Answer particle",
+        "ar": "حرف جواب",
+        "info": "Introduces the answer to a question or a conditional clause."
+      },
+      "abwendungspartikel": {
+        "name": "Aversion particle",
+        "ar": "حرف ردع",
+        "info": "Rejects a previous statement or attitude, in the sense of \"by no means\"."
+      },
+      "ausnahmepartikel": {
+        "name": "Exception particle",
+        "ar": "أداة استثناء",
+        "info": "Excludes something from a previously stated whole, such as \"except\" or \"apart from\"."
+      },
+      "equalisierungspartikel": {
+        "name": "Equalisation particle",
+        "ar": "حرف تسوية",
+        "info": "Expresses that two stated possibilities are equally valid or indifferent."
+      },
+      "ermahnungspartikel": {
+        "name": "Exhortation particle",
+        "ar": "حرف تحضيض",
+        "info": "Expresses an urgent call or encouragement, such as \"if only\"."
+      },
+      "erklaerungspartikel": {
+        "name": "Elaboration particle",
+        "ar": "حرف تفصيل",
+        "info": "Introduces a more detailed account or listing of what was said before."
+      },
+      "emphaseLam": {
+        "name": "Emphatic lām",
+        "ar": "لام التوكيد",
+        "info": "A prefixed lām that emphasises a statement without changing the word's own meaning."
+      },
+      "futurPartikel": {
+        "name": "Future particle",
+        "ar": "حرف استقبال",
+        "info": "Shifts the action of a present-tense verb into the future, such as \"sawfa\" or \"sa-\"."
+      },
+      "gewissheitspartikel": {
+        "name": "Certainty particle",
+        "ar": "حرف تحقيق",
+        "info": "Underlines that a statement has actually or certainly taken place, usually before a verb."
+      },
+      "imperativLam": {
+        "name": "Imperative lām",
+        "ar": "لام الأمر",
+        "info": "A prefixed lām that turns a present-tense form into an indirect command."
+      },
+      "inzeptivPartikel": {
+        "name": "Inceptive particle",
+        "ar": "حرف ابتداء",
+        "info": "Marks the beginning of a nominal sentence, usually at the start of a sentence."
+      },
+      "interpretationspartikel": {
+        "name": "Interpretation particle",
+        "ar": "حرف تفسير",
+        "info": "Introduces an explanatory rephrasing of what was said before, in the sense of \"that is\"."
+      },
+      "kausalpartikel": {
+        "name": "Causal particle",
+        "ar": "فاء السببية",
+        "info": "The فَ after a request or wish that expresses the desired outcome as a consequence, as in \"pray, SO THAT he answers you\"."
+      },
+      "konditionalpartikel": {
+        "name": "Conditional particle",
+        "ar": "أداة شرط",
+        "info": "Introduces a conditional clause, such as \"if\"."
+      },
+      "komitativpartikel": {
+        "name": "Comitative particle",
+        "ar": "واو المعية",
+        "info": "A wāw expressing accompaniment, in the sense of \"together with\"."
+      },
+      "neubeginnPartikel": {
+        "name": "Resumption particle",
+        "ar": "حرف استئناف",
+        "info": "Marks the start of a new sentence part independent of the previous statement."
+      },
+      "praevPartikel": {
+        "name": "Preventive particle",
+        "ar": "كافة",
+        "info": "Cancels the grammatical effect of a preceding particle, for example with \"innamā\"."
+      },
+      "quranischeInitialen": {
+        "name": "Quranic initials",
+        "ar": "الحروف المقطعة",
+        "info": "Individually pronounced letters at the start of some surahs, whose exact meaning remains unresolved."
+      },
+      "restriktionspartikel": {
+        "name": "Restriction particle",
+        "ar": "أداة حصر",
+        "info": "Limits a statement to exactly one thing, in the sense of \"only\" or \"merely\"."
+      },
+      "resultatpartikel": {
+        "name": "Result particle",
+        "ar": "فاء الجواب",
+        "info": "The فَ that introduces the response clause of a conditional sentence or the predicate after a generalising subject (e.g. after \"if\" or \"whoever\") — unlike the causal particle, it does not express purpose but links a condition to its consequence."
+      },
+      "retraktionspartikel": {
+        "name": "Retraction particle",
+        "ar": "حرف إضراب",
+        "info": "Introduces a shift or correction to the previous statement, in the sense of \"rather\"."
+      },
+      "supplementPartikel": {
+        "name": "Supplementary particle",
+        "ar": "حرف زائد",
+        "info": "A filler word with no meaning of its own, added for stylistic reasons."
+      },
+      "ueberraschungspartikel": {
+        "name": "Surprise particle",
+        "ar": "حرف مفاجأة",
+        "info": "Expresses that something happens suddenly and unexpectedly."
+      },
+      "umstandspartikel": {
+        "name": "Circumstantial particle",
+        "ar": "واو الحال",
+        "info": "Introduces a clause that describes the circumstances accompanying the main action."
+      },
+      "unterordnendeKonjunktion": {
+        "name": "Subordinating conjunction",
+        "ar": "حرف مصدري",
+        "info": "Turns the following clause into a verbal-noun equivalent that can act as subject or object."
+      },
+      "verbotspartikel": {
+        "name": "Prohibition particle",
+        "ar": "حرف نهي",
+        "info": "Negates a command, thereby instructing someone to refrain from something."
+      },
+      "vokativPartikel": {
+        "name": "Vocative particle",
+        "ar": "أداة نداء",
+        "info": "Introduces a direct address, such as \"O\" before a named person."
+      },
+      "zweckpartikel": {
+        "name": "Purpose particle",
+        "ar": "لام التعليل",
+        "info": "States the purpose or reason for an action, in the sense of \"so that\" or \"in order to\"."
       }
     },
     "herkunft": {
@@ -3833,6 +4010,89 @@
         "ar": "اسم",
         "info": "Ism covers people, things, places, qualities or ideas — similar to nouns and adjectives in English."
       }
+    },
+    "begruendungen": {
+      "kasus": {
+        "grund": "{wort} is in the {kasusname} case ({kasusAr}).",
+        "fehlend": "No case feature is recorded in the corpus for {wort} — this is normal for indeclinable forms (mabni) or words that do not carry case.",
+        "praeposition": "{wort} is in the genitive (jarr) because the preposition {praepositionName} ({praeposition}) requires it.",
+        "relationSubj": "{wort} is in the {kasusname} because it is the subject (fāʿil).",
+        "relationObj": "{wort} is in the {kasusname} because it is the object (mafʿūl bihi).",
+        "relationPoss": "{wort} is in the {kasusname} because it is the second term of an iḍāfa (muḍāf ilayh).",
+        "relationPred": "{wort} is in the {kasusname} because it is the predicate (khabar) of a nominal sentence.",
+        "relationPass": "{wort} is in the {kasusname} because it is the passive subject (nāʾib al-fāʿil).",
+        "relationCog": "{wort} is in the {kasusname} because it is an absolute object (mafʿūl muṭlaq).",
+        "relationSpec": "{wort} is in the {kasusname} because it is a specification (tamyīz).",
+        "relationAdj": "{wort} shares the same case as {headText} because it is its adjective (ṣifa).",
+        "relationApp": "{wort} shares the same case as {headText} because it is its apposition (badal).",
+        "relationWiderspruch": "The corpus marks {wort} as {relation}, but case {case} does not match the usual pattern (expected: {erwartet}).",
+        "innaSubj": "{wort} is in the {kasusname} (nasb) because it is the subject after {partikel}.",
+        "kaanaPred": "{wort} is in the {kasusname} (nasb) because it is the predicate after {partikel}."
+      },
+      "bestimmtheit": {
+        "indefinite": "{wort} is indefinite (nakira) — explicitly marked INDEF in the corpus.",
+        "artikel": "{wort} is definite because it carries the article al-.",
+        "possessiv": "{wort} is definite because it carries the attached pronoun {suffix} — a possessive suffix makes a noun definite.",
+        "eigenname": "{wort} is definite because it is a proper name — proper names are definite by nature.",
+        "mudaf": "{wort} is definite because it is muḍāf before {headWort} — definiteness is taken from the second part of the genitive chain.",
+        "fehlend": "Definiteness cannot be determined for {wort}."
+      },
+      "tempus": {
+        "perfect": "{wort} is in the past tense because the corpus carries PERF.",
+        "imperfect": "{wort} is in the present/future form because the corpus carries IMPF.",
+        "imperative": "{wort} is a direct imperative (2nd person) — distinct from lām al-amr for indirect 3rd-person commands."
+      },
+      "modus": {
+        "ind": "{wort} is in the indicative (marfūʿ) — no preceding word requires a different ending.",
+        "juss": "{wort} is in the jussive (majzūm) because a preceding particle (e.g. lam, lā al-nāhiya, in) requires it.",
+        "sub": "{wort} is in the subjunctive (manṣūb) because a preceding particle (e.g. an, lan, li, ḥattā) requires it."
+      },
+      "genusVerbi": {
+        "passiv": "{wort} is passive — recognizable from the vowel pattern in the corpus (PASS tag).",
+        "aktiv": "{wort} is active — the default with no special marking."
+      },
+      "verbform": {
+        "form1": "{wort} is verb form I (base stem) — no bracket value in the corpus; convention for the unextended base form.",
+        "explizit": "{wort} is verb form {form} — explicitly marked ({form}) in the corpus. {formmerkmal}",
+        "selten": "Verb form {form} — no description is available yet for this rare extended form."
+      },
+      "relation": {
+        "strukturell": "{wort} is {relation} to {headText}.",
+        "strukturellOhneHead": "{wort} has the syntactic role {relation}; no head word could be resolved in this verse.",
+        "kasusPassend": "The case ({kasusname}) matches the syntactic role {relation}."
+      },
+      "praepositionen": {
+        "min": {
+          "name": "from/out of (min)"
+        },
+        "bi": {
+          "name": "with/by (bi)"
+        },
+        "li": {
+          "name": "for (li)"
+        },
+        "fi": {
+          "name": "in (fi)"
+        },
+        "ala": {
+          "name": "on (ʿalā)"
+        },
+        "ila": {
+          "name": "to (ʾilā)"
+        },
+        "an": {
+          "name": "about/from (ʿan)"
+        },
+        "ka": {
+          "name": "like (ka)"
+        },
+        "hatta": {
+          "name": "until (ḥattā)"
+        },
+        "ma3a": {
+          "name": "with/together (maʿa)"
+        }
+      }
     }
   },
   "gebetGemeinsam": {
@@ -4001,5 +4261,38 @@
       "nocheinmal": "Practice again",
       "zurUebersicht": "Back to overview"
     }
+  },
+  "audiobooks": {
+    "unavailable": "This media is currently unavailable in your app language.",
+    "title": "Audiobooks",
+    "subtitle": "Learn Arabic and essential knowledge. The episode language sits above the list.",
+    "empty": "No audiobooks available for your language yet.",
+    "booksEmpty": "No books in your language yet.",
+    "bookOpen": "Open book (PDF)",
+    "tracks": {
+      "kurs1": "Learn Arabic — Course 1",
+      "kurs2": "Learn Arabic — Course 2",
+      "kurs3": "Learn Arabic — Course 3 (Grammar audiobook)",
+      "pflichtwissen": "Essential Islamic knowledge",
+      "books": "Books"
+    },
+    "watchVideo": "Watch presentation video",
+    "back15": "Back 15 seconds",
+    "forward15": "Forward 15 seconds"
+  },
+  "bibliothek": {
+    "title": "Library",
+    "subtitle": "Books that may be shared: our audiobook volumes, handouts, and the tafsir the author released.",
+    "audioVideo": "Audio and video",
+    "rassoul": "Tafsir Al-Quran Al-Karim",
+    "rassoulGerman": "The commentary is German and stays in the authors wording.",
+    "handouts": "Handouts",
+    "loadError": "The text could not be loaded.",
+    "quran": "Quran",
+    "quranNote": "The Arabic Quran text is in the public domain.",
+    "hadith": "Encyclopedia of the Prophets hadith",
+    "hadithNote": "Sharing is allowed when the text stays unchanged and the source is named.",
+    "continueReading": "Continue reading",
+    "savedPlace": "Last read"
   }
 }

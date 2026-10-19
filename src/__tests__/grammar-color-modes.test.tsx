@@ -21,7 +21,9 @@ import { Pressable, Text } from 'react-native';
 import { GrammarColors } from '@/constants/theme';
 import {
   alignedMorphWords,
+  segmentFarbe,
   wortFarbe,
+  wortFarbeTeile,
   wortFarbSchluessel,
 } from '@/features/quran/analyse/grammarColorModes';
 import { SettingsProvider } from '@/features/settings/store';
@@ -217,6 +219,42 @@ describe('alignedMorphWords', () => {
   });
 });
 
+describe('wortFarbeTeile — Fragment-Modus segmentweise', () => {
+  it('färbt Präfix, Stamm und Suffix getrennt, wenn Cluster-Zahl passt', () => {
+    const morph = wort({
+      text: 'وَيُقِيمُونَ',
+      segments: [
+        segment({ text: 'وَ', kind: 'prefix', pos: 'CONJ' }),
+        segment({ text: 'يُقِيمُ', kind: 'stem', pos: 'V', features: { tense: 'imperfect' } }),
+        segment({ text: 'ونَ', kind: 'suffix', pos: 'PRON' }),
+      ],
+    });
+    const teile = wortFarbeTeile('light', 'fragment', 'وَيُقِيمُونَ', morph);
+    expect(teile).toHaveLength(3);
+    expect(teile[0]).toEqual({ text: 'وَ', farbe: GrammarColors.light.fragmentPrefix });
+    expect(teile[1]).toEqual({ text: 'يُقِيمُ', farbe: undefined });
+    expect(teile[2]).toEqual({ text: 'ونَ', farbe: GrammarColors.light.fragmentSuffix });
+  });
+
+  it('fällt bei Cluster-Mismatch auf Wort-eine-Farbe zurück', () => {
+    const morph = wort({
+      text: 'الكتاب',
+      segments: [
+        segment({ text: 'ال', kind: 'prefix', pos: 'DET' }),
+        segment({ text: 'كتاب', kind: 'stem', pos: 'N' }),
+      ],
+    });
+    const teile = wortFarbeTeile('light', 'fragment', 'كِتَابٌ', morph);
+    expect(teile).toHaveLength(1);
+    expect(teile[0].farbe).toBe(GrammarColors.light.fragmentPrefix);
+  });
+
+  it('segmentFarbe: Stamm bleibt ungefärbt', () => {
+    expect(segmentFarbe('light', 'stem')).toBeUndefined();
+    expect(segmentFarbe('dark', 'prefix')).toBe(GrammarColors.dark.fragmentPrefix);
+  });
+});
+
 // ---------- 3. Wort-Tap öffnet das Analyse-Sheet ----------
 
 jest.mock('@/features/quran/morphologieHooks', () => ({
@@ -264,6 +302,8 @@ function WortTapHarness() {
         onWurzelOeffnen={jest.fn()}
         onLexikonOeffnen={jest.fn()}
         onVerbTypOeffnen={jest.fn()}
+        onSarfLexikonOeffnen={jest.fn()}
+        onLehrtextOeffnen={jest.fn()}
         onClose={() => setSelected(false)}
       />
     </>

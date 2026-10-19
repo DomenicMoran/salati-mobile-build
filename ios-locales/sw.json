@@ -1,0 +1,8 @@
+{
+  "ios": {
+    "NSLocationWhenInUseUsageDescription": "Salati hutumia eneo lako kuhesabu nyakati za swala na mwelekeo wa Qibla kwa eneo lako.",
+    "NSMotionUsageDescription": "Salati hutumia sensa za mwendo kuonyesha mwelekeo wa Qibla kwenye dira.",
+    "NSCameraUsageDescription": "Salati hutumia kamera kuchanganua mistari ya bidhaa kwa kikagua halal.",
+    "NSMicrophoneUsageDescription": "Salati hutumia kipaza sauti kuangalia usomaji wako wa Qurani katika hali ya mazoezi ya Hifz."
+  }
+}

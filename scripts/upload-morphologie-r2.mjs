@@ -36,9 +36,9 @@ const HIER = path.dirname(fileURLToPath(import.meta.url));
 const MOBILE = path.join(HIER, '..');
 // Version im Ordner- UND R2-Präfix: dieselbe wie MORPHOLOGIE_VERSION in
 // build-morphologie.mjs bzw. MORPHOLOGIE_SCHEMA_VERSION in morphologieTypen.ts
-// (schema: 3). Grund siehe Kommentar dort — Cache-Control unten ist
+// (schema: 4). Grund siehe Kommentar dort — Cache-Control unten ist
 // "immutable", eine neue Fassung unter derselben URL käme nie an.
-const VERSION = 'v3';
+const VERSION = 'v4';
 const AUSGABE_DIR = path.join(MOBILE, '.daten-cache', 'out', 'morphologie', VERSION);
 const PRAEFIX = `morphologie/${VERSION}`;
 const SUREN = 114;

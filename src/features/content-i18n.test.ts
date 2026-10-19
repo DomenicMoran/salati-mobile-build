@@ -16,6 +16,7 @@ import fiqhIbadat from './study/data/fiqh-ibadat.json';
 import grammar from './study/data/grammar.json';
 import madinah from './study/data/madinah.json';
 import nawawi40 from './study/data/nawawi40.json';
+import pflichtwissen from './study/data/pflichtwissen.json';
 import nikah from './study/data/nikah.json';
 import prophets from './study/data/prophets.json';
 import sahaba from './study/data/sahaba.json';
@@ -100,6 +101,7 @@ const DATASETS: [name: string, data: unknown][] = [
   ['study/data/grammar.json', grammar],
   ['study/data/madinah.json', madinah],
   ['study/data/nawawi40.json', nawawi40],
+  ['study/data/pflichtwissen.json', pflichtwissen],
   ['study/data/nikah.json', nikah],
   ['study/data/prophets.json', prophets],
   ['study/data/sahaba.json', sahaba],

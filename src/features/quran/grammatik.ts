@@ -237,8 +237,78 @@ export type FragmentRolle =
   | 'verneinung'
   | 'fragepartikel'
   | 'stamm'
+  | 'akkusativPartikel'
+  | 'amendmentPartikel'
+  | 'antwortpartikel'
+  | 'abwendungspartikel'
+  | 'ausnahmepartikel'
+  | 'equalisierungspartikel'
+  | 'ermahnungspartikel'
+  | 'erklaerungspartikel'
+  | 'emphaseLam'
+  | 'futurPartikel'
+  | 'gewissheitspartikel'
+  | 'imperativLam'
+  | 'inzeptivPartikel'
+  | 'interpretationspartikel'
+  | 'kausalpartikel'
+  | 'konditionalpartikel'
+  | 'komitativpartikel'
+  | 'neubeginnPartikel'
+  | 'praevPartikel'
+  | 'quranischeInitialen'
+  | 'restriktionspartikel'
+  | 'resultatpartikel'
+  | 'retraktionspartikel'
+  | 'supplementPartikel'
+  | 'ueberraschungspartikel'
+  | 'umstandspartikel'
+  | 'unterordnendeKonjunktion'
+  | 'verbotspartikel'
+  | 'vokativPartikel'
+  | 'zweckpartikel'
   | 'sonstigerHarf'
   | 'sonstigesAffix';
+
+/** QAC-Harf-Tags → spezifische Fragment-Rolle. Alle 35 HARF_TAGS aus oben
+ * sind abgedeckt; unbekannte Harf-Tags fallen auf sonstigerHarf zurück. */
+const HARF_FRAGMENT_ROLLE: Partial<Record<string, FragmentRolle>> = {
+  ACC: 'akkusativPartikel',
+  AMD: 'amendmentPartikel',
+  ANS: 'antwortpartikel',
+  AVR: 'abwendungspartikel',
+  CAUS: 'kausalpartikel',
+  CERT: 'gewissheitspartikel',
+  CIRC: 'umstandspartikel',
+  COM: 'komitativpartikel',
+  COND: 'konditionalpartikel',
+  CONJ: 'konjunktion',
+  DET: 'artikel',
+  EMPH: 'emphaseLam',
+  EQ: 'equalisierungspartikel',
+  EXH: 'ermahnungspartikel',
+  EXL: 'erklaerungspartikel',
+  EXP: 'ausnahmepartikel',
+  FUT: 'futurPartikel',
+  IMPV: 'imperativLam',
+  INC: 'inzeptivPartikel',
+  INL: 'quranischeInitialen',
+  INT: 'interpretationspartikel',
+  INTG: 'fragepartikel',
+  NEG: 'verneinung',
+  P: 'praeposition',
+  PREV: 'praevPartikel',
+  PRO: 'verbotspartikel',
+  PRP: 'zweckpartikel',
+  REM: 'neubeginnPartikel',
+  RES: 'restriktionspartikel',
+  RET: 'retraktionspartikel',
+  RSLT: 'resultatpartikel',
+  SUB: 'unterordnendeKonjunktion',
+  SUP: 'supplementPartikel',
+  SUR: 'ueberraschungspartikel',
+  VOC: 'vokativPartikel',
+};
 
 /** Kurze, maschinenlesbare Rolle eines einzelnen Fragments — Grundlage für
  * Erklärtexte im Reader ("dieses ـو ist eine Konjunktion" usw.). Liefert
@@ -246,24 +316,9 @@ export type FragmentRolle =
  * Sammelkategorien 'sonstigerHarf'/'sonstigesAffix' statt eine falsche
  * spezifische Rolle zu behaupten. */
 export function fragmentRolle(segment: MorphSegment): FragmentRolle {
-  if (segment.pos === 'NEG') return 'verneinung';
-  if (segment.pos === 'CONJ') return 'konjunktion';
-  if (segment.pos === 'P') return 'praeposition';
-  if (segment.pos === 'INTG') return 'fragepartikel';
   if (segment.kind === 'suffix' && segment.pos === 'PRON') return 'pronomenSuffix';
-  // Bestimmter Artikel: eigenes Präfix-Segment mit POS-Tag "DET" (8377 Belege
-  // im Korpus, exakt meta.json -> posHaeufigkeit.DET). Der frühere textbasierte
-  // Abgleich (Text ohne Diakritika === Alif+Lam) wurde entfernt statt nur
-  // ergänzt: er hätte in der Praxis so gut wie NIE gegriffen. Ausgezählt über
-  // alle 114 Suren (128219 Segmente): von 8377 DET-Segmenten strippt KEIN
-  // EINZIGES nach Diakritika-Entfernung auf das einfache Alif+Lam (U+0627
-  // U+0644) — der Artikel steht im Korpus fast immer mit Wasla (Alif Wasla,
-  // U+0671) statt des einfachen Alif, in 4 Fällen mit Madda (U+0622). Nach
-  // vorangestellter Lam-Präposition (z. B. "lil-muttaqin") verliert der
-  // Artikel sein Alif sogar ganz und bleibt nur als Lam-Sukun übrig —
-  // textbasiert also gar nicht mehr als Artikel erkennbar, während das eigene
-  // DET-Segment weiterhin zuverlässig vorhanden ist.
-  if (segment.pos === 'DET') return 'artikel';
+  const harfRolle = HARF_FRAGMENT_ROLLE[segment.pos];
+  if (harfRolle) return harfRolle;
   if (segment.kind === 'stem') return 'stamm';
   return istHarf(segment) === true ? 'sonstigerHarf' : 'sonstigesAffix';
 }

@@ -9,8 +9,10 @@ import { StyleSheet, View } from 'react-native';
 import { ThemedText } from '@/components/themed-text';
 import { ThemedView } from '@/components/themed-view';
 import { Spacing } from '@/constants/theme';
+import { useResolvedScheme } from '@/hooks/use-resolved-scheme';
 import { useRtl } from '@/hooks/use-rtl';
 import type { QuranFontResult } from '../useQuranFont';
+import { segmentFarbe } from './grammarColorModes';
 import { Fachbegriff } from './Fachbegriff';
 import type { FragmentAnzeige } from './wortAnalyseModel';
 
@@ -21,12 +23,18 @@ export interface FragmentZeileProps {
 
 export function FragmentZeile({ fragment, quranFont }: FragmentZeileProps) {
   const rtl = useRtl();
+  const scheme = useResolvedScheme();
   const istStamm = fragment.kind === 'stem';
+  const akzentFarbe = segmentFarbe(scheme, fragment.kind);
 
   return (
     <ThemedView
       type={istStamm ? 'backgroundSelected' : 'backgroundElement'}
-      style={[styles.box, rtl && styles.boxRtl]}
+      style={[
+        styles.box,
+        rtl && styles.boxRtl,
+        akzentFarbe ? { borderStartWidth: 3, borderStartColor: akzentFarbe } : undefined,
+      ]}
       accessibilityRole="summary"
       accessibilityLabel={`${fragment.kindLabel}: ${fragment.name}`}>
       <View style={[styles.head, rtl && styles.headRtl]}>

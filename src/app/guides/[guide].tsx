@@ -92,7 +92,7 @@ export default function GuideDetailScreen() {
             hitSlop={12}
             accessibilityRole="button"
             accessibilityLabel={t('a11y.back')}
-            style={({ pressed }) => [Platform.OS === 'web' ? styles.pressableWeb : undefined, pressed && styles.pressed]}>
+            style={({ pressed }) => [styles.backButton, Platform.OS === 'web' ? styles.pressableWeb : undefined, pressed && styles.pressed]}>
             <IconSymbol name={rtl ? 'chevron-forward' : 'chevron-back'} size={22} color={colors.textSecondary} />
           </Pressable>
           <View style={styles.headerTitleRow}>
@@ -228,7 +228,8 @@ const styles = StyleSheet.create({
   headerRtl: { flexDirection: 'row-reverse' },
   headerTitleRow: { flex: 1, flexDirection: 'row', alignItems: 'center', justifyContent: 'center', gap: 6 },
   headerTitle: { textAlign: 'center' },
-  headerSpacer: { width: 16 },
+  backButton: { width: 44, height: 44, alignItems: 'center', justifyContent: 'center' },
+  headerSpacer: { width: 44, height: 44 },
   pressed: { opacity: 0.6 },
   list: { paddingHorizontal: Spacing.three, paddingBottom: Spacing.five, gap: Spacing.two, alignSelf: 'center', width: '100%', maxWidth: MaxContentWidth, },
   headerImage: {
@@ -259,7 +260,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
-  arabicRow: { flexDirection: 'row', alignItems: 'center', justifyContent: 'flex-end', gap: Spacing.two },
+  arabicRow: { minHeight: 48, paddingVertical: Spacing.one, flexDirection: 'row', alignItems: 'center', justifyContent: 'flex-end', gap: Spacing.two },
   arabic: { fontSize: 22, lineHeight: 40, textAlign: 'right' },
   translit: { fontStyle: 'italic' },
   fallbackNotice: { fontStyle: 'italic' },

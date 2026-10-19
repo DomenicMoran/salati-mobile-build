@@ -90,6 +90,22 @@ function hadithe(text: string): string[] {
 const bestandHadithe = new Set<string>();
 const bestandLiteratur = new Set<string>();
 
+// Zusätzlich tatsächlich eingesehene Fundstellen, nicht beliebige URLs und
+// nicht der zu prüfende Kurs selbst als Belegbestand. Nachweise/Seitenbilder:
+// docs/pflichtwissen-audit/Pruefbericht.md und docs/quellen/pflichtwissen-vergleich/.
+// Eine Fiqh-Schulposition benötigt den Beleg im Rechtswerk; ein nur für den
+// Test angehängter Koranvers würde die Aussage nicht besser belegen.
+const recherchierteLiteratur = new Set([
+  'Al-Quduri, Mukhtasar, English edition, Book of Purification, printed pp. 2–3 (PDF pp. 36–37): https://www.fountaininstitute.co.uk/wp-content/uploads/2024/11/Quduri-English.pdf',
+  'Al-Quduri, Mukhtasar, English edition, Book of Purification, printed p. 2 (PDF p. 36): https://www.fountaininstitute.co.uk/wp-content/uploads/2024/11/Quduri-English.pdf',
+  'Ali al-Sistani, Islamic Laws, Wudu, ruling 235: https://www.sistani.org/english/book/48/2154/',
+].map(normalisiere));
+
+function recherchierterLiteraturBeleg(quelle: string): boolean {
+  const teile = quelle.split('|').map(normalisiere);
+  return teile.length > 0 && teile.every((teil) => recherchierteLiteratur.has(teil));
+}
+
 function erfasseBestand(quelle: string): void {
   for (const treffer of hadithe(quelle)) bestandHadithe.add(treffer);
   for (const teil of quelle.split(';')) {
@@ -130,11 +146,11 @@ describe('Belege der 2026-07-28 ergänzten Lektionen', () => {
     expect(neu.filter(([, l]) => !l.source?.trim()).map(([, l]) => l.id)).toEqual([]);
   });
 
-  it('jede neue Lektion hat mindestens einen Koran- oder Hadith-Beleg', () => {
+  it('jede neue Lektion hat einen Koran-, Hadith- oder konkret recherchierten Literaturbeleg', () => {
     const ohne = neu
       .filter(([, l]) => {
         const teile = (l.source ?? '').split(';').map((t) => t.trim());
-        return !teile.some((t) => /^Quran \d+:\d+$/.test(t) || hadithe(t).length > 0 || /^an-Nawawi Nr\./.test(t));
+        return !teile.some((t) => /^Quran \d+:\d+$/.test(t) || hadithe(t).length > 0 || /^an-Nawawi Nr\./.test(t) || recherchierterLiteraturBeleg(t));
       })
       .map(([, l]) => l.id);
     expect(ohne).toEqual([]);
@@ -164,7 +180,7 @@ describe('Belege der 2026-07-28 ergänzten Lektionen', () => {
     expect(fehlend).toEqual([]);
   });
 
-  it('jede sonstige Quellenangabe kommt wörtlich im vorhandenen Bestand vor', () => {
+  it('jede sonstige Quellenangabe ist im Bestand oder als genaue Recherchefundstelle erfasst', () => {
     const unbekannt: string[] = [];
     for (const [kurs, lesson] of neu) {
       for (const rohteil of (lesson.source ?? '').split(';')) {
@@ -175,10 +191,19 @@ describe('Belege der 2026-07-28 ergänzten Lektionen', () => {
           for (const t of treffer) if (!bestandHadithe.has(t)) unbekannt.push(`${kurs}/${lesson.id}: ${t}`);
           continue;
         }
-        if (!bestandLiteratur.has(teil)) unbekannt.push(`${kurs}/${lesson.id}: ${teil}`);
+        if (!bestandLiteratur.has(teil) && !recherchierterLiteraturBeleg(teil)) unbekannt.push(`${kurs}/${lesson.id}: ${teil}`);
       }
     }
     expect(unbekannt).toEqual([]);
+  });
+
+  it('akzeptiert weder veränderte Fundstellen noch fremde Quellen in einer Belegkette', () => {
+    for (const quelle of recherchierteLiteratur) {
+      expect(recherchierterLiteraturBeleg(quelle)).toBe(true);
+      expect(recherchierterLiteraturBeleg(`${quelle} | unbelegte Behauptung`)).toBe(false);
+    }
+    expect(recherchierterLiteraturBeleg('')).toBe(false);
+    expect(recherchierterLiteraturBeleg('Ali al-Sistani, Islamic Laws, Wudu, ruling 999: https://www.sistani.org/english/book/48/2154/')).toBe(false);
   });
 
   it('jede neue Lektion hat mindestens 3 Abschnitte und 3 Quizfragen', () => {

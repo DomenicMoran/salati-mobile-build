@@ -33,6 +33,11 @@ export function MerkmalZeile({ merkmal }: { merkmal: MerkmalAnzeige }) {
           {merkmal.herkunftLabel}
         </ThemedText>
       </View>
+      {merkmal.begruendung ? (
+        <ThemedText type="small" themeColor="textSecondary" style={[styles.begruendung, rtl && styles.textRtl]}>
+          {merkmal.begruendung}
+        </ThemedText>
+      ) : null}
     </View>
   );
 }
@@ -45,5 +50,6 @@ const styles = StyleSheet.create({
   // Kursiv + reduzierte Deckkraft: eine Herleitung ist eine grammatische
   // Konvention, kein Fund im Korpus — soll nicht wie einer aussehen.
   herkunftHergeleitet: { fontStyle: 'italic', opacity: 0.75 },
+  begruendung: { marginTop: 2, lineHeight: 18 },
   textRtl: { textAlign: 'right' },
 });

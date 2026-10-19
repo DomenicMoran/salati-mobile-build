@@ -1,9 +1,9 @@
 // Typen für die Wort-Morphologie- und Syntaxdaten des Korans (QAC-Segmentierung).
 //
 // Herkunft: eigene Pipeline (Parallel-Agent), ausgeliefert über R2 unter
-// morphologie/v3/<sure>.json — ein Schema pro Sure, siehe ladeMorphologie in
+// morphologie/v4/<sure>.json — ein Schema pro Sure, siehe ladeMorphologie in
 // ./morphologie.ts. Die Typen hier bilden GENAU das dort festgelegte Schema
-// ab (schema: 3) und werden von der Lade-Schicht sowie von der reinen
+// ab (schema: 4) und werden von der Lade-Schicht sowie von der reinen
 // Grammatik-Logik (./grammatik.ts) gemeinsam genutzt.
 //
 // Schema-Historie:
@@ -18,6 +18,9 @@
 //   text_uthmani geprüft — siehe BUCKWALTER-Tabelle in build-morphologie.mjs).
 //   Der URL-Pfad trägt die Version mit (siehe morphologie.ts), weil die
 //   Auslieferung "immutable" gecacht ist.
+// - v4: MOOD:SUBJ → sub und MOOD:JUS → juss korrekt zugeordnet (Regression
+//   aus v3, wo der Subjunktiv-String fälschlich als unbekannt galt). Optional
+//   `syntax.headReason` ('elided' | 'otherVerse' | 'none'), wenn `head` null.
 
 /** Segmentposition im Wort: Präfix (z. B. و/ال/ب), Wortstamm, Suffix (z. B. Pronomen). */
 export type MorphSegmentKind = 'prefix' | 'stem' | 'suffix';
@@ -68,6 +71,9 @@ export interface MorphSyntax {
    * — zusammen 4.622 Fälle, siehe `grenzfaelle` in meta.json bzw.
    * build-morphologie.mjs). NIE geraten — echte Fälle, z. B. Fixture 1:3:1. */
   head: number | null;
+  /** Nur bei `head: null` (Schema v4): warum keine Wortposition im Vers
+   * auflösbar war — siehe build-morphologie.mjs. */
+  headReason?: 'elided' | 'otherVerse' | 'none';
 }
 
 /** Ein Wort eines Verses mit vollständiger morphologischer Aufschlüsselung. */
@@ -96,7 +102,7 @@ export interface MorphologieDatei {
 
 /** Aktuell unterstützte Schema-Version — siehe `istGueltig` in ./morphologie.ts.
  * Bestimmt auch das R2-URL-Präfix (MORPHOLOGIE_BASIS_URL in ./morphologie.ts). */
-export const MORPHOLOGIE_SCHEMA_VERSION = 3;
+export const MORPHOLOGIE_SCHEMA_VERSION = 4;
 
 // ---------- Wurzeln (roots.json) ----------
 

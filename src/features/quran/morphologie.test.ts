@@ -27,7 +27,7 @@ const fs = FileSystem as jest.Mocked<typeof FileSystem>;
  * bewusst als Fabrik statt fixer Konstante. */
 function gueltigeDatei(surah: number): MorphologieDatei {
   return {
-    schema: 3,
+    schema: 4,
     surah,
     verses: {
       '1': [
@@ -81,11 +81,11 @@ beforeEach(() => {
 // und zum Abgleich mit dem `surah`-Feld der Antwort nutzt.
 
 describe('morphologieUrl', () => {
-  it('zeigt auf den versionierten morphologie/v3/-Ordner desselben R2-Buckets wie Korpus/Modell', () => {
+  it('zeigt auf den versionierten morphologie/v4/-Ordner desselben R2-Buckets wie Korpus/Modell', () => {
     // Versionspfad im URL-Präfix (siehe MORPHOLOGIE_SCHEMA_VERSION in
     // morphologieTypen.ts): die Auslieferung ist "immutable" gecacht, eine
     // neue Schema-Fassung braucht deshalb ein neues Präfix statt derselben URL.
-    expect(morphologieUrl(2)).toBe('https://pub-d0489c0572704285af79896edb72cbed.r2.dev/morphologie/v3/2.json');
+    expect(morphologieUrl(2)).toBe('https://pub-d0489c0572704285af79896edb72cbed.r2.dev/morphologie/v4/2.json');
   });
 });
 

@@ -1,0 +1,8 @@
+{
+  "ios": {
+    "NSLocationWhenInUseUsageDescription": "Salati nutzt deinen Standort, um Gebetszeiten und die Qibla-Richtung für deinen Ort zu berechnen.",
+    "NSMotionUsageDescription": "Salati nutzt Bewegungssensoren, um die Qibla-Richtung auf dem Kompass anzuzeigen.",
+    "NSCameraUsageDescription": "Salati nutzt die Kamera, um Produkt-Barcodes für den Halal-Scanner zu erkennen.",
+    "NSMicrophoneUsageDescription": "Salati nutzt das Mikrofon, um deine Koran-Rezitation im Hifz-Übungsmodus zu prüfen."
+  }
+}

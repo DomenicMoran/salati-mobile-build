@@ -3,17 +3,19 @@
 // Verneinung. Immer nur EIN Modus gleichzeitig aktiv — mehrere übereinander
 // gelegte Färbungen wären unlesbar (Auftrag).
 //
-// WORT-GRANULAR, NICHT SEGMENT-GRANULAR: jedes Wort bekommt genau EINE Farbe,
-// aus dem morphologischen Stamm-Segment (bzw. bei "Fragmente" aus der
-// Segment-ZUSAMMENSETZUNG) hergeleitet — es wird niemals der angezeigte
-// arabische Text durch Zeichen aus der QAC-Morphologie ERSETZT. Die
-// Morphologie (QAC-Korpus) und der im Reader angezeigte Text (quran.com/
-// alquran.cloud) sind zwei unabhängige Textquellen mit eigener Diakritika-/
-// Wasla-Normalisierung; nur die Farbe (ein reiner Stil, kein Zeicheninhalt)
-// wird aus der Morphologie übernommen, der Text selbst bleibt immer der
-// ORIGINAL angezeigte. Dasselbe Vorsichtsprinzip wie beim wortsynchronen
-// Rezitations-Highlighting in [surah].tsx (dort wird ebenfalls nur `color`
-// auf den unveränderten Text gelegt, nie der Text selbst ausgetauscht).
+// WORT-GRANULAR in allen Modi außer "Fragmente": jedes Wort bekommt genau
+// EINE Farbe, aus dem morphologischen Stamm-Segment hergeleitet. Im Modus
+// "Fragmente" werden Präfix/Suffix/Nachsilbe WO MÖGLICH getrennt eingefärbt
+// (Stamm bleibt in Normalfarbe als visueller Anker); nur wenn die
+// Cluster-Grenzen der Morphologie nicht zum angezeigten Wort passen, fällt
+// der Modus auf die bisherige Wort-eine-Farbe-Logik zurück.
+//
+// Es wird niemals der angezeigte arabische Text durch Zeichen aus der
+// QAC-Morphologie ERSETZT. Die Morphologie (QAC-Korpus) und der im Reader
+// angezeigte Text (quran.com/alquran.cloud) sind zwei unabhängige
+// Textquellen mit eigener Diakritika-/Wasla-Normalisierung; nur die Farbe
+// (reiner Stil, kein Zeicheninhalt) wird aus der Morphologie übernommen,
+// der Text selbst bleibt immer der ORIGINAL angezeigte.
 //
 // AUSRICHTUNG ZWEIER TEXTQUELLEN: die Positions-Zuordnung (Wort Nr. N im
 // angezeigten Text = MorphWord mit position===N) setzt voraus, dass beide
@@ -25,9 +27,10 @@
 // falsch zugeordnet zu färben (Auftrag: "keine Farbe zeigen statt falsche").
 import type { IconName } from '@/components/ui/icon-symbol';
 import { GrammarColors, type GrammarColorToken } from '@/constants/theme';
+import { arabicClusters } from '@/lib/arabicText';
 
 import { ismEigenschaften, istVerneinung, verbEigenschaften } from '../grammatik';
-import type { MorphWord } from '../morphologieTypen';
+import type { MorphSegmentKind, MorphWord } from '../morphologieTypen';
 import { stammSegment, wortWortart } from './wortAnalyseModel';
 
 export type FarbModus = 'aus' | 'wortart' | 'fragment' | 'bestimmtheit' | 'zeitform' | 'verneinung';
@@ -146,6 +149,78 @@ export function wortFarbe(scheme: 'light' | 'dark', modus: FarbModus, word: Morp
   return token ? GrammarColors[scheme][token] : undefined;
 }
 
+/** Farbe für EIN Morph-Segment im Fragment-Modus (Stamm = undefined). */
+export function segmentFarbe(scheme: 'light' | 'dark', kind: MorphSegmentKind): string | undefined {
+  switch (kind) {
+    case 'prefix':
+      return GrammarColors[scheme].fragmentPrefix;
+    case 'suffix':
+      return GrammarColors[scheme].fragmentSuffix;
+    case 'stem':
+      return undefined;
+  }
+}
+
+export interface FarbigesWortteil {
+  text: string;
+  farbe?: string;
+}
+
+/** Kumulierte Cluster-Grenzen der Morph-Segmente (Basisbuchstaben + Marks). */
+function segmentClusterGrenzen(word: MorphWord): number[] {
+  const grenzen = [0];
+  for (const segment of word.segments) {
+    grenzen.push(grenzen[grenzen.length - 1] + arabicClusters(segment.text).length);
+  }
+  return grenzen;
+}
+
+/** Teilt `text` an den Cluster-Grenzen in gleich viele Teile wie `grenzen`-1. */
+function teileNachClusterGrenzen(text: string, grenzen: number[]): string[] {
+  const clusters = arabicClusters(text);
+  const teile: string[] = [];
+  for (let i = 0; i < grenzen.length - 1; i++) {
+    teile.push(clusters.slice(grenzen[i], grenzen[i + 1]).join(''));
+  }
+  return teile;
+}
+
+/**
+ * Farbteile für die Darstellung eines Wortes — im Fragment-Modus getrennt
+ * nach Präfix/Stamm/Suffix, sonst ein Teil mit Wortfarbe. `angezeigterText`
+ * ist stets der ORIGINAL-Text aus dem Reader, nie aus der Morphologie.
+ */
+export function wortFarbeTeile(
+  scheme: 'light' | 'dark',
+  modus: FarbModus,
+  angezeigterText: string,
+  word: MorphWord,
+): FarbigesWortteil[] {
+  if (modus === 'aus') return [{ text: angezeigterText }];
+
+  if (modus === 'fragment') {
+    const grenzen = segmentClusterGrenzen(word);
+    const displayClusterCount = arabicClusters(angezeigterText).length;
+    const morphClusterCount = grenzen[grenzen.length - 1];
+
+    if (displayClusterCount === morphClusterCount) {
+      const textTeile = teileNachClusterGrenzen(angezeigterText, grenzen);
+      if (textTeile.length === word.segments.length) {
+        return textTeile.map((text, i) => ({
+          text,
+          farbe: segmentFarbe(scheme, word.segments[i].kind),
+        }));
+      }
+    }
+
+    const fallback = wortFarbe(scheme, modus, word);
+    return [{ text: angezeigterText, farbe: fallback }];
+  }
+
+  const farbe = wortFarbe(scheme, modus, word);
+  return [{ text: angezeigterText, farbe }];
+}
+
 /**
  * Morphologie-Wörter eines Verses, aber NUR, wenn ihre Anzahl exakt zur
  * Wortzahl des angezeigten Textes passt — sonst `undefined` (siehe
@@ -159,7 +234,8 @@ export function alignedMorphWords(
 }
 
 export interface FarbLegendeEintrag {
-  color: string;
+  /** Fehlt bei Einträgen ohne eigene Farbe (z. B. Stamm im Fragment-Modus). */
+  color?: string;
   label: string;
   ar?: string;
 }
@@ -181,11 +257,8 @@ export function farbLegende(
     case 'fragment':
       return [
         { color: c.fragmentPrefix, label: t('quran.wortAnalyse.segmentKind.prefix') },
+        { label: t('quran.wortAnalyse.segmentKind.stem') },
         { color: c.fragmentSuffix, label: t('quran.wortAnalyse.segmentKind.suffix') },
-        {
-          color: c.fragmentBeide,
-          label: `${t('quran.wortAnalyse.segmentKind.prefix')} + ${t('quran.wortAnalyse.segmentKind.suffix')}`,
-        },
       ];
     case 'bestimmtheit':
       return [

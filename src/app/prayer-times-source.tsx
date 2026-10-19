@@ -18,7 +18,7 @@ import { ScreenHeader } from '@/components/screen-header';
 import { ThemedText } from '@/components/themed-text';
 import { ThemedView } from '@/components/themed-view';
 import { ActionRow, ListCard, ListSection, NavRow, ValueRow } from '@/components/ui/list';
-import { MaxContentWidth, Spacing } from '@/constants/theme';
+import { Spacing } from '@/constants/theme';
 import { recommendMethod } from '@/features/prayer-times/method-country';
 import { useMethodLabels } from '@/features/settings/MethodPicker';
 import { methodById, methodName, methodParamsLabel } from '@/features/settings/methods';
@@ -190,7 +190,7 @@ const styles = StyleSheet.create({
   container: { flex: 1 },
   safe: { flex: 1 },
   content: { paddingBottom: Spacing.six },
-  inner: { width: '100%', maxWidth: MaxContentWidth, alignSelf: 'center', paddingHorizontal: Spacing.four },
+  inner: { width: '100%', maxWidth: 680, alignSelf: 'center', paddingHorizontal: Spacing.four },
   absatz: { paddingVertical: Spacing.three },
   erklaerung: { paddingVertical: Spacing.three, gap: Spacing.one },
   textRtl: { textAlign: 'right', writingDirection: 'rtl' },
