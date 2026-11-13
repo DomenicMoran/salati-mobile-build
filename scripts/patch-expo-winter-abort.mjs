@@ -41,6 +41,14 @@ const headersThrowReplacement = `  if (globalThis.Headers) {
     install('fetch', () => require('./fetch').fetch);
   }`;
 
+const useRnFetchNeedle = `const useRnFetch =
+  process.env.EXPO_PUBLIC_USE_RN_FETCH === '1' || process.env.EXPO_PUBLIC_USE_RN_FETCH === 'true';`;
+
+const useRnFetchReplacement = `const useRnFetch =
+  process.env.EXPO_PUBLIC_USE_RN_FETCH === '1' ||
+  process.env.EXPO_PUBLIC_USE_RN_FETCH === 'true' ||
+  typeof navigator !== 'undefined';`;
+
 const urlImportNeedle = `import { URL, URLSearchParams } from 'whatwg-url-minimum';`;
 const urlImportReplacement = `import * as WhatwgUrl from 'whatwg-url-minimum';
 
@@ -141,6 +149,12 @@ function patchFile(root) {
   }
   if (runtimeSrc.includes(headersThrowNeedle)) {
     runtimeSrc = runtimeSrc.replace(headersThrowNeedle, headersThrowReplacement);
+  }
+  if (
+    runtimeSrc.includes(useRnFetchNeedle) &&
+    !runtimeSrc.includes('typeof navigator !==')
+  ) {
+    runtimeSrc = runtimeSrc.replace(useRnFetchNeedle, useRnFetchReplacement);
   }
   fs.writeFileSync(runtimePath, runtimeSrc);
 

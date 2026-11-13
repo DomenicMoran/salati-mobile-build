@@ -1,0 +1,22 @@
+{
+  "de-DE": "Behebt den iPad-Startabsturz (stabiler Bootstrap). Experimentell: Moschee-Display und Khutba live (standardmäßig aus).",
+  "de": "Behebt den iPad-Startabsturz (stabiler Bootstrap). Experimentell: Moschee-Display und Khutba live (standardmäßig aus).",
+  "en-US": "Fixes the iPad launch crash (stable bootstrap). Experimental: mosque display and Khutba live (off by default).",
+  "en-GB": "Fixes the iPad launch crash (stable bootstrap). Experimental: mosque display and Khutba live (off by default).",
+  "ar": "إصلاح تعطل بدء التشغيل على iPad. تجريبي: عرض المسجد وخطبة مباشرة (افتراضياً متوقف).",
+  "ar-SA": "إصلاح تعطل بدء التشغيل على iPad. تجريبي: عرض المسجد وخطبة مباشرة (افتراضياً متوقف).",
+  "bn-BD": "iPad লঞ্চ ক্র্যাশ ঠিক। পরীক্ষামূলক: মসজিদ ডিসপ্লে ও খুতবা লাইভ (ডিফল্ট বন্ধ)।",
+  "es-ES": "Corrige el bloqueo al iniciar en iPad. Experimental: pantalla de mezquita y Khutba en vivo (desactivado por defecto).",
+  "fr-FR": "Corrige le plantage au lancement sur iPad. Expérimental : affichage mosquée et Khutba live (désactivé par défaut).",
+  "id": "Memperbaiki crash peluncuran di iPad. Eksperimental: tampilan masjid dan Khutba live (default mati).",
+  "ms": "Membetulkan ranap pelancaran iPad. Eksperimen: paparan masjid dan Khutba live (lalai tutup).",
+  "ru": "Исправлен сбой запуска на iPad. Экспериментально: экран мечети и Khutba live (по умолчанию выкл.).",
+  "ru-RU": "Исправлен сбой запуска на iPad. Экспериментально: экран мечети и Khutba live (по умолчанию выкл.).",
+  "tr": "iPad açılış çökmesi düzeltildi. Deneysel: cami ekranı ve canlı hutbe (varsayılan kapalı).",
+  "tr-TR": "iPad açılış çökmesi düzeltildi. Deneysel: cami ekranı ve canlı hutbe (varsayılan kapalı).",
+  "ur": "iPad لانچ کریش درست۔ تجرباتی: مسجد ڈسپلے اور کھتبہ لائیو (ڈیفالٹ بند)۔",
+  "ur-PK": "iPad لانچ کریش درست۔ تجرباتی: مسجد ڈسپلے اور کھتبہ لائیو (ڈیفالٹ بند)۔",
+  "fa": "رفع کرش اجرا روی iPad. آزمایشی: نمایش مسجد و خطبه زنده (پیش‌فرض خاموش).",
+  "sw": "Inarekebisha kuacha kufanya kazi kwenye iPad. Majaribio: onyesho la msikiti na Khutba live (imezimwa kwa chaguo-msingi).",
+  "ps": "په iPad کې د پیل کراش سم. ازمایې: جومات ښودنه او ژونده خطبه (پخوا بند)."
+}

@@ -8,6 +8,7 @@ const config = getDefaultConfig(__dirname);
 config.resolver.assetExts = [...config.resolver.assetExts, 'mjs', 'html'];
 
 const ensureAbortSignalGlobals = path.resolve(__dirname, 'src/lib/ensureAbortSignalGlobals.ts');
+const expoWinterRuntimeShim = path.resolve(__dirname, 'src/lib/expoWinterRuntime.native.shim.ts');
 const expoWinterAbortSignalShim = path.resolve(
   __dirname,
   'src/lib/expoWinterAbortSignal.ts',
@@ -21,9 +22,13 @@ config.serializer.getModulesRunBeforeMainModule = () => {
   const before = defaultBeforeMain ? defaultBeforeMain() : [];
   const mapped = before.filter((filePath) => {
     const normalized = filePath.replace(/\\/g, '/');
-    return !normalized.endsWith('/src/lib/ensureAbortSignalGlobals.ts');
+    return (
+      !normalized.endsWith('/src/lib/ensureAbortSignalGlobals.ts') &&
+      !/\/expo\/(src|build)\/winter\/runtime\.native\.(ts|js)$/.test(normalized)
+    );
   });
-  return [ensureAbortSignalGlobals, ...mapped];
+  // ensureAbortSignal vor Expo-Winter (runtime.native per resolveRequest → Shim).
+  return [ensureAbortSignalGlobals, expoWinterRuntimeShim, ...mapped];
 };
 
 function isPdfReaderMjsAsset(filePath) {
@@ -82,6 +87,16 @@ config.resolver.resolveRequest = (context, moduleName, platform) => {
   const resolution = defaultResolveRequest
     ? defaultResolveRequest(context, moduleName, platform)
     : context.resolveRequest(context, moduleName, platform);
+
+  if (
+    resolution?.type === 'sourceFile' &&
+    platform !== 'web' &&
+    /\/expo\/(src|build)\/winter\/runtime\.native\.(ts|js)$/.test(
+      resolution.filePath.replace(/\\/g, '/'),
+    )
+  ) {
+    return { type: 'sourceFile', filePath: expoWinterRuntimeShim };
+  }
 
   if (resolution?.type === 'sourceFile' && isPdfReaderMjsAsset(resolution.filePath)) {
     return { type: 'assetFiles', filePaths: [resolution.filePath] };

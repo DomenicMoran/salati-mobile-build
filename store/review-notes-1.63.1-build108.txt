@@ -1,0 +1,7 @@
+iPad launch verification (Guideline 2.1a follow-up):
+
+Build 108 forces Expo winter bootstrap to React Native fetch on all native platforms (no throw when globalThis.Headers is missing before InitializeCore). Metro prepends ensureAbortSignalGlobals and our winter runtime shim before the main module.
+
+Tested: Jest expoWinterRuntime.native + expoWinterAbortSignal; tsc mobile green.
+
+Please verify cold launch on iPad Air 11-inch (M3), iPadOS 27.x — app should reach the prayer home screen without crashing.

@@ -1762,6 +1762,17 @@ export const CHANGELOG: ChangelogVersion[] = [
       },
     ],
   },
+  {
+    version: '1.63.1',
+    date: '2026-11-13',
+    entries: [
+      {
+        type: 'fix',
+        de: 'iPad-Start: Winter-Bootstrap nutzt durchgängig React-Native-fetch (kein Headers-Werfen mehr).',
+        en: 'iPad launch: winter bootstrap always uses React Native fetch (no throw when Headers missing).',
+      },
+    ],
+  },
 ];
 /** Neueste Version zuerst - für die Anzeige im Changelog-Screen. */
 export function changelogNewestFirst(): ChangelogVersion[] {

@@ -9,7 +9,12 @@ import type { ExpoConfig } from 'expo/config';
  * schreibt. Weichen sie ab, bietet der Update-Server einer Installation nichts
  * an und das Ausbleiben sieht aus wie „es gibt kein Update".
  */
-const VERSION = '1.63.0';
+const VERSION = '1.63.1';
+
+// Release-Bundles (xcodebuild export:embed) lesen keine lokale .env — RN-fetch auf iOS erzwingen.
+if (process.env.EXPO_PUBLIC_USE_RN_FETCH == null || process.env.EXPO_PUBLIC_USE_RN_FETCH === '') {
+  process.env.EXPO_PUBLIC_USE_RN_FETCH = '1';
+}
 
 /** App-UI + App-Store-Listing (14 Sprachen) — nativer iOS-Berechtigungstext pro Sprache. */
 const IOS_PERMISSION_LOCALES = [
@@ -114,7 +119,7 @@ const config: ExpoConfig = {
     // 87: ASC Binary Processing ITMS-90683 — NSMotionUsageDescription fehlte (Qibla/Kompass).
     // 96: Build 95 wurde von Apple beim Hochladen abgelehnt (ITMS-90208,
     // rnwhisper.framework ohne MinimumOSVersion); Android versionCode gleichgezogen.
-    buildNumber: '107',
+    buildNumber: '108',
     // ASC-App "Salati Islam" (6791867298) wurde vom User unter dieser ID
     // angelegt (2026-07-17) — beide Plattformen nutzen de.salatibox.de.
     bundleIdentifier: 'de.salatibox.de',
@@ -489,6 +494,8 @@ const config: ExpoConfig = {
     reactCompiler: true,
   },
   extra: {
+    // Zur Laufzeit lesbar; Prozess-Default oben inlined EXPO_PUBLIC_USE_RN_FETCH in Metro.
+    useRnFetch: true,
     eas: {
       // Projekt unter dem Konto `salatibox` (2026-07-28). Gewechselt, weil das
       // Bau-Kontingent von `salatipro` fuer den Monat aufgebraucht war.

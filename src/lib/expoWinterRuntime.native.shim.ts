@@ -25,16 +25,13 @@ Symbol.asyncIterator ??= Symbol.for('Symbol.asyncIterator');
 
 import { Platform } from 'react-native';
 
+// iOS Release (Hermes): expo/fetch braucht globalThis.Headers vor InitializeCore-
+// Kette — auf iPad oft noch nicht da → Startabsturz. Wie Android immer RN-fetch.
 const useRnFetch =
-  Platform.OS === 'android' ||
+  Platform.OS !== 'web' ||
   process.env.EXPO_PUBLIC_USE_RN_FETCH === '1' ||
   process.env.EXPO_PUBLIC_USE_RN_FETCH === 'true';
 
-if (!useRnFetch) {
-  if (!globalThis.Headers) {
-    throw new Error(
-      "expo/fetch expected `globalThis.Headers` to be installed by React Native's fetch polyfill.",
-    );
-  }
+if (!useRnFetch && globalThis.Headers) {
   install('fetch', () => require('expo/src/winter/fetch').fetch);
 }

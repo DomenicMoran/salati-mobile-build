@@ -1,0 +1,17 @@
+{
+  "de-DE": "Behebt den Startabsturz auf dem iPad (Technik: stabiler App-Start ohne Expo-fetch). Weitere Stabilität in der App. Experimentell (standardmäßig aus): Moschee-Admin für Salati TV, Khutba-Untertitel im WLAN und JSON-Backup.",
+  "en-US": "Fixes the iPad launch crash (stable startup without Expo fetch bootstrap). More in-app stability. Experimental (off by default): mosque admin for Salati TV, Khutba captions on your LAN, and JSON backup.",
+  "en-GB": "Fixes the iPad launch crash (stable startup without Expo fetch bootstrap). More in-app stability. Experimental (off by default): mosque admin for Salati TV, Khutba captions on your LAN, and JSON backup.",
+  "ar-SA": "إصلاح تعطل بدء التشغيل على iPad (بدء تشغيل مستقر بدون Expo fetch). مزيد من الاستقرار. تجريبي (افتراضياً متوقف): إدارة المسجد لـ Salati TV وتسميات الخطبة على الشبكة المحلية ونسخ JSON.",
+  "bn-BD": "iPad-এ লঞ্চ ক্র্যাশ ঠিক (Expo fetch ছাড়াই স্থিতিশীল স্টার্ট)। আরও স্থিতিশীলতা। পরীক্ষামূলক (ডিফল্ট বন্ধ): Salati TV মসজিদ অ্যাডমিন, LAN খুতবা ক্যাপশন ও JSON ব্যাকআপ।",
+  "es-ES": "Corrige el bloqueo al iniciar en iPad (inicio estable sin Expo fetch). Más estabilidad. Experimental (desactivado por defecto): admin de mezquita para Salati TV, subtítulos de khutba en la LAN y copia JSON.",
+  "fr-FR": "Corrige le plantage au lancement sur iPad (démarrage stable sans Expo fetch). Plus de stabilité. Expérimental (désactivé par défaut) : admin mosquée pour Salati TV, sous-titres khutba en LAN et sauvegarde JSON.",
+  "id": "Memperbaiki crash peluncuran di iPad (startup stabil tanpa Expo fetch). Stabilitas lebih. Eksperimental (default mati): admin masjid Salati TV, teks khutba LAN, cadangan JSON.",
+  "ms": "Membetulkan ranap pelancaran iPad (permulaan stabil tanpa Expo fetch). Kestabilan tambahan. Eksperimen (lalai tutup): pentadbir masjid Salati TV, kapsyen khutba LAN, sandaran JSON.",
+  "ru-RU": "Исправлен сбой запуска на iPad (стабильный старт без Expo fetch). Больше стабильности. Экспериментально (по умолчанию выкл.): админ мечети Salati TV, субтитры хутбы в LAN и резерв JSON.",
+  "tr-TR": "iPad açılış çökmesi düzeltildi (Expo fetch olmadan kararlı başlangıç). Daha fazla kararlılık. Deneysel (varsayılan kapalı): Salati TV cami yönetimi, LAN hutbe altyazısı ve JSON yedek.",
+  "ur-PK": "iPad لانچ کریش درست (Expo fetch کے بغیر مستحکم آغاز)۔ مزید استحکام۔ تجرباتی (ڈیفالٹ بند): Salati TV مسجد ایڈمن، LAN کھتبہ کیپشن اور JSON بیک اپ۔",
+  "fa": "رفع کرش اجرا روی iPad (شروع پایدار بدون Expo fetch). پایداری بیشتر. آزمایشی (پیش‌فرض خاموش): مدیریت مسجد Salati TV، زیرنویس خطبه در LAN و پشتیبان JSON.",
+  "sw": "Inarekebisha kuacha kufanya kazi kwenye iPad (kuanza thabiti bila Expo fetch). Utulivu zaidi. Majaribio (imezimwa kwa chaguo-msingi): msimamizi wa msikiti Salati TV, maandishi khutba LAN na JSON.",
+  "ps": "په iPad کې د پیل کراش سم (په Expo fetch پرته ثابت پیل). نور ثبات. ازمایښتي (پخوا بند): د Salati TV جومات اداره، په LAN کې خطبه متن او JSON بیک اپ."
+}
