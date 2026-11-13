@@ -1,7 +1,6 @@
 /**
  * Lexikon-Screen — Reiter "Wurzeln & Wortschatz" und die universelle
- * Kopf-Suche mit echtem Inhalt (Reiter "Grammatik & Sarf"/"Tajwid" bleiben
- * bewusst ehrliche Leerzustände, siehe Aufgabenstellung).
+ * Kopf-Suche mit echtem Inhalt (Reiter "Tajwid" verweist auf den Studiumskurs).
  *
  * `@/features/quran/morphologie` wird gemockt (kleine, handgebaute
  * Wurzel-/Lemma-Konkordanz) — dieser Test prüft die Anzeige-/Navigations-
@@ -35,6 +34,7 @@ jest.mock('expo-router', () => {
     // prueft nur Anzeige/Navigation der Listen, nicht das Linkverhalten,
     // daher reicht ein schlichtes Text-Element als Ersatz.
     Link: ({ children, ...rest }: { children?: ReactNode }) => createElement(Text, rest, children),
+    useLocalSearchParams: () => ({}),
   };
 });
 
@@ -134,7 +134,7 @@ describe('Lexikon-Screen', () => {
     });
   });
 
-  it('zeigt im Reiter "Grammatik & Sarf" echten Lehrtext-Inhalt und im Reiter "Tajwid" den ehrlichen Leerzustand', async () => {
+  it('zeigt im Reiter "Grammatik & Sarf" echten Lehrtext-Inhalt und verlinkt "Tajwid" in den Studiumskurs', async () => {
     await render(<LexikonScreen />, { wrapper: Wrapper });
     await screen.findByText('سمو');
 
@@ -146,6 +146,9 @@ describe('Lexikon-Screen', () => {
 
     fireEvent.press(screen.getByText(t('lexikon.tabs.tajwid')));
     expect(await screen.findByText(t('lexikon.empty.tajwid'))).toBeTruthy();
+    const cta = screen.getByText(t('study.courses.tajwid.title'));
+    fireEvent.press(cta);
+    expect(mockPush).toHaveBeenCalledWith({ pathname: '/study/[course]', params: { course: 'tajwid' } });
   });
 
   describe('universelle Kopf-Suche', () => {

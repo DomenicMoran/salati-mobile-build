@@ -9,6 +9,7 @@ Prayer times with Adhan, Qibla compass, Quran & Ramadan — ad-free, no account
 (77/80 Zeichen)
 
 ## Vollständige Beschreibung
+
 Salati accompanies you through your day as a Muslim — with accurate prayer times, the Quran, a private on-device AI, and a complete course to learn to read Quran from scratch. Ad-free, no account, no tracking.
 
 PRAYER & DAILY LIFE
@@ -47,7 +48,7 @@ SALATI AI
 • Labeled clearly: AI-generated answer, not a fatwa or scholarly opinion
 
 KNOWLEDGE & HEART
-• Study: 14 source-referenced courses with 363 lessons — Essential Islamic Knowledge, Fiqh of worship, Aqidah, Tajwid, 40 Hadith (Nawawi), Seerah, Prophets, Companions & Scholars, Akhlaq, Marriage & Family, Quranic grammar, everyday Arabic, Madinah Arabic, dialects — reorder freely
+• Study: 12 source-referenced courses with 311 lessons — Aqidah, Tajwid, 40 Hadith (Nawawi), Seerah, Prophets, Companions & Scholars, Akhlaq, Marriage & Family, Quranic grammar, everyday Arabic, Madinah Arabic (books 1–4), Arabic dialects — reorder courses and dialects freely
 • Placement & knowledge tests, spaced-repetition review, weakness training, learning streak & daily goal
 • Practice & Quiz: 14 modes, plus a mistake review to revisit what tripped you up
 • Weekly recap as a shareable image
@@ -58,9 +59,11 @@ KNOWLEDGE & HEART
 • Practice guides with photos: Wudu, Ghusl, prayer, Janazah, Hajj & Umrah and more
 • Zakat and inheritance calculators, authenticated wisdoms, Tasbih counter for dhikr
 
-AUDIOBOOKS, PODCAST, VIDEOS & REELS
-• Audiobooks “Essential Islamic Knowledge” (8 ch.) and “Arabic Grammar — Course 3” (10 ch.): audio and presentation video in 14 app languages
-• Salati podcast, learning videos, reels, PDF handouts — Spotify, YouTube, Instagram
+PODCAST, VIDEOS & REELS
+• Salati podcast "Language of the Quran": Quranic Arabic, episode by episode (in German) — also on Spotify
+• Learning videos: grammar and vocabulary tables plus lesson clips — also on YouTube
+• Reels: short learning clips for on the go — also on Instagram
+• PDF handouts: downloadable study material
 
 YOUR DATA STAYS YOURS
 Salati is ad-free, has no account and no tracking SDKs — your data stays on your device. Your location serves prayer times, Qibla and nearby search only and is sent to AlAdhan and OpenStreetMap for that: anonymous, optional. Works offline.
@@ -68,7 +71,7 @@ Salati is ad-free, has no account and no tracking SDKs — your data stays on yo
 Questions or feedback? salati@domenicmoran.de
 Privacy policy: https://www.salati.pro/datenschutz
 
-(3815/4000 Zeichen)
+(3867/4000 Zeichen)
 
 ## Keywords
 

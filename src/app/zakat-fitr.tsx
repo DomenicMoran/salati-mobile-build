@@ -8,7 +8,7 @@ import { IconSymbol } from '@/components/ui/icon-symbol';
 import { ThemedText } from '@/components/themed-text';
 import { ThemedView } from '@/components/themed-view';
 import { ScreenHeader } from '@/components/screen-header';
-import { Colors, Spacing } from '@/constants/theme';
+import { Colors, MaxContentWidth, Spacing } from '@/constants/theme';
 import { parseAmount } from '@/features/zakat/calc';
 import { calcZakatFitr } from '@/features/zakat/fitr';
 import { useResolvedScheme } from '@/hooks/use-resolved-scheme';
@@ -38,11 +38,9 @@ function Stepper({
       </ThemedText>
       <View style={styles.stepperControls}>
         <Pressable
-          disabled={value <= 0}
           onPress={() => onChange(Math.max(0, value - 1))}
           hitSlop={8}
           accessibilityRole="button"
-          accessibilityState={{ disabled: value <= 0 }}
           accessibilityLabel={`${label} ${t('a11y.decrease')}`}
           style={({ pressed }) => [styles.stepperButton, pressed && styles.stepperPressed]}>
           <IconSymbol name="remove-circle-outline" size={26} color={colors.accent} />
@@ -51,11 +49,9 @@ function Stepper({
           {value}
         </ThemedText>
         <Pressable
-          disabled={value >= max}
           onPress={() => onChange(Math.min(max, value + 1))}
           hitSlop={8}
           accessibilityRole="button"
-          accessibilityState={{ disabled: value >= max }}
           accessibilityLabel={`${label} ${t('a11y.increase')}`}
           style={({ pressed }) => [styles.stepperButton, pressed && styles.stepperPressed]}>
           <IconSymbol name="add-circle-outline" size={26} color={colors.accent} />
@@ -157,7 +153,7 @@ const styles = StyleSheet.create({
     gap: Spacing.two,
     alignSelf: 'center',
     width: '100%',
-    maxWidth: 680,
+    maxWidth: MaxContentWidth,
   },
   subtitle: { textAlign: 'center', marginBottom: Spacing.one, paddingHorizontal: Spacing.four },
   introCard: { borderRadius: Spacing.three, padding: Spacing.three, marginBottom: Spacing.one },
@@ -167,12 +163,12 @@ const styles = StyleSheet.create({
   stepperLabel: { flex: 1 },
   rtlText: { textAlign: 'right' },
   stepperControls: { flexDirection: 'row', alignItems: 'center', gap: Spacing.two },
-  stepperButton: { width: 44, height: 44, alignItems: 'center', justifyContent: 'center' },
+  stepperButton: { padding: Spacing.half },
   stepperPressed: { opacity: 0.6 },
   stepperValue: { minWidth: 24, textAlign: 'center' },
   field: { gap: Spacing.one },
   inputBox: { borderRadius: Spacing.two },
-  input: { minHeight: 44, paddingVertical: Spacing.two, paddingHorizontal: Spacing.three, fontSize: 16, textAlignVertical: 'center' },
+  input: { paddingVertical: Spacing.two, paddingHorizontal: Spacing.three, fontSize: 16 },
   resultCard: {
     borderRadius: Spacing.three,
     padding: Spacing.four,

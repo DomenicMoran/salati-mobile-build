@@ -1,0 +1,20 @@
+Der Koran — Übersetzung Max Henning (Reclam, Leipzig 1901)
+
+Rights basis: Public domain (EU/DE and US by term expiry).
+Translator: Max Henning (b. 1861-12-18, d. 1927-09-21).
+First publication: 1901 (Philipp Reclam jun., Universal-Bibliothek).
+
+EU/DE: Urheberrecht erloschen 70 Jahre nach Tod des Übersetzers (1997).
+US: Published 1901 (public domain in the United States).
+
+Salati distribution: complete Henning translation scan only; modern Reclam/Nicol
+revisions (e.g. Schimmel 1960ff.) are separate copyrighted works and are not shipped.
+
+Primary sources (verification 2026-11-10):
+- Wikipedia death-year reference: https://de.wikipedia.org/wiki/Max_Henning
+- UB Marburg digitization (PDM on scan metadata): https://archiv.ub.uni-marburg.de/eb/2026/0081
+- Internet Archive scan used in repo: https://archive.org/details/derkoran00henn
+  File: derkoran00henn.pdf (622 scan pages; bibliographic 611 content pages)
+
+Repository copy: podcast/handouts/third-party/quran-henning-1901.pdf
+SHA-256: 3c9f715c88abcfb84cbcf54f3336f89d117424deec0d25768fc82e40f2854561

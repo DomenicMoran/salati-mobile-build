@@ -37,6 +37,9 @@ export const LICENSE_TEXT_IDS = [
   'kfgqpc-hafs-font-eula',
   'ofl-1.1',
   'ib-rassoul-tafsir',
+  'pd-max-henning-koran-1901',
+  'pd-nawawi-arbaeen-matn',
+  'pd-pickthall-koran-1930',
   'quranic-arabic-corpus',
   'odbl-1.0',
   'bsd-2-clause',
@@ -62,6 +65,11 @@ export const LICENSE_TEXT_TITLES: Record<LicenseTextId, string> = {
   'kfgqpc-hafs-font-eula': 'KFGQPC HAFS — End-User License Agreement',
   'ofl-1.1': 'SIL Open Font License, Version 1.1',
   'ib-rassoul-tafsir': "Tafsīr Al-Qur'ān Al-Karīm — Freigabeerklärung des Autors",
+  'pd-max-henning-koran-1901':
+    'Der Koran — Übersetzung Max Henning (Reclam, Leipzig 1901)',
+  'pd-nawawi-arbaeen-matn': 'al-Arbaʿīn al-Nawawīyah — matn (Imam al-Nawawi)',
+  'pd-pickthall-koran-1930':
+    'The Meaning of the Glorious Koran (1930) — Marmaduke Pickthall',
   'quranic-arabic-corpus': 'Quranic Arabic Corpus — Nutzungsbedingungen',
   'odbl-1.0': 'ODC Open Database License (ODbL) 1.0',
   'bsd-2-clause': 'BSD 2-Clause License',
@@ -84,6 +92,12 @@ export const LICENSE_TEXT_WORKS: Record<LicenseTextId, string> = {
   'kfgqpc-hafs-font-eula': 'KFGQPC HAFS Uthmanic Script',
   'ofl-1.1': 'Amiri, Amiri Quran, Scheherazade New, Lateef, Harmattan, Noto Naskh Arabic, Noto Sans Arabic',
   'ib-rassoul-tafsir': "Tafsīr Al-Qur'ān Al-Karīm (Abu-r-Ridā Muhammad Ibn Ahmad Ibn Rassoul, IB Verlag Islamische Bibliothek)",
+  'pd-max-henning-koran-1901':
+    'Bibliothek — deutscher Koranübersetzungs-Scan (Henning 1901, öffentliches Gemeingut)',
+  'pd-nawawi-arbaeen-matn':
+    'Bibliothek — Nawawi-Vierzig-Hadithe-Matn (arabisch, öffentliches Gemeingut)',
+  'pd-pickthall-koran-1930':
+    'Bibliothek — englische Koranübersetzung Pickthall 1930 (öffentliches Gemeingut)',
   'quranic-arabic-corpus': 'Wortmorphologie (Wortarten, Wurzeln, Grundformen, Merkmale) im Koran-Lexikon',
   'odbl-1.0': 'OpenStreetMap, Open Food Facts',
   'bsd-2-clause': 'fontfaceobserver, webidl-conversions, css-select, dav1d',

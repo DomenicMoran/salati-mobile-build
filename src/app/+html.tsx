@@ -164,7 +164,9 @@ export default function Root({ children }: PropsWithChildren) {
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="color-scheme" content="light dark" />
-        <title>{SITE_TITLE}</title>
+        {/* Kein statisches <title> hier — sonst kollidiert es mit react-helmet
+            (leeres data-rh-Tag, #418, document.title leer). Pro Route setzt
+            patch-ssr-page-titles.mjs beim Export das deutsche Title-Tag. */}
         <meta name="description" content={SITE_DESCRIPTION} />
         <meta property="og:type" content="website" />
         <meta property="og:title" content={SITE_TITLE} />

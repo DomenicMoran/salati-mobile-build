@@ -131,11 +131,30 @@ export function istLokalOhneAblageVerfuegbar(queryKey: readonly unknown[]): bool
  * Im ARBEITSSPEICHER bleiben die ausgenommenen Einträge normal im Cache; nur
  * geschrieben wird sie nicht.
  */
+function leererMedienIndex(query: {
+  queryKey: readonly unknown[];
+  state: { status: string; data?: unknown };
+}): boolean {
+  const [bereich, art] = query.queryKey;
+  const data = query.state.data as { episodes?: unknown[]; entries?: unknown[] } | undefined;
+  if (bereich === 'podcast' && art === 'index') {
+    return !Array.isArray(data?.episodes) || data.episodes.length === 0;
+  }
+  if (bereich === 'audiobooks' && art === 'index') {
+    return !Array.isArray(data?.entries) || data.entries.length === 0;
+  }
+  return false;
+}
+
 export function sollInDieAblage(query: {
   queryKey: readonly unknown[];
-  state: { status: string };
+  state: { status: string; data?: unknown };
 }): boolean {
-  return query.state.status === 'success' && !istLokalOhneAblageVerfuegbar(query.queryKey);
+  return (
+    query.state.status === 'success' &&
+    !istLokalOhneAblageVerfuegbar(query.queryKey) &&
+    !leererMedienIndex(query)
+  );
 }
 
 // ---- Explizites "diese Übersetzung offline verfügbar machen" ----

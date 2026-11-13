@@ -1,4 +1,9 @@
-import { filterByContentLanguage, handoutsForLocale, normalizeContentLanguage } from './content-language';
+import {
+  filterByContentLanguage,
+  handoutsForLocale,
+  normalizeContentLanguage,
+  resolveHandoutsForLocale,
+} from './content-language';
 
 describe('filterByContentLanguage (hard filter)', () => {
   type Chapter = { id: string; lang?: string; title: string };
@@ -18,10 +23,33 @@ describe('filterByContentLanguage (hard filter)', () => {
     expect(de.map((c) => c.id)).toEqual(['de-only', 'implicit-de']);
   });
 
-  it('zeigt deutschsprachige Handouts, wenn die Oberflaeche keine eigenen hat', () => {
+  it('blendet fremdsprachige Handouts ohne CTA aus (VP-A-008)', () => {
     const deOnly = [{ id: 'de-only', lang: 'de' }];
-    expect(handoutsForLocale(deOnly, 'en').map((item) => item.id)).toEqual(['de-only']);
+    expect(handoutsForLocale(deOnly, 'en').map((item) => item.id)).toEqual([]);
     expect(handoutsForLocale(chapters, 'es').map((item) => item.id)).toEqual(['es-only']);
+  });
+});
+
+describe('resolveHandoutsForLocale (empty + CTA)', () => {
+  const deOnly = [{ id: 'de-a', lang: 'de' }, { id: 'de-b', lang: 'de' }];
+
+  it('EN ohne Fallback: leerer Zustand + deutsch verfuegbar', () => {
+    const ohne = resolveHandoutsForLocale(deOnly, 'en', false);
+    expect(ohne.list).toEqual([]);
+    expect(ohne.showLocaleEmpty).toBe(true);
+    expect(ohne.germanFallbackAvailable).toBe(true);
+  });
+
+  it('EN mit Fallback: deutsche Liste', () => {
+    const mit = resolveHandoutsForLocale(deOnly, 'en', true);
+    expect(mit.list.map((h) => h.id)).toEqual(['de-a', 'de-b']);
+    expect(mit.showLocaleEmpty).toBe(false);
+  });
+
+  it('DE Oberflaeche: normale Liste', () => {
+    const de = resolveHandoutsForLocale(deOnly, 'de', false);
+    expect(de.list.map((h) => h.id)).toEqual(['de-a', 'de-b']);
+    expect(de.showLocaleEmpty).toBe(false);
   });
 
   it('normalisiert Regionalcodes in UI und Inhalt gleich', () => {

@@ -25,8 +25,9 @@ import {
   groupEpisodesBySeries,
   hasMultipleSeries,
   type PodcastEpisode,
+  type PodcastSeries,
 } from '@/features/podcast/data';
-import { filterByContentLanguage } from '@/features/media/content-language';
+import podcastFallbackIndex from '@/features/podcast/index.fallback.json';
 import { ContentLanguageBadge } from '@/features/media/content-language-badge';
 import { usePodcastDownload } from '@/features/podcast/downloads';
 import { useSharedPlayer } from '@/features/quran/usePlayer';
@@ -43,7 +44,7 @@ type ListRow =
   | { kind: 'episode'; key: string; episode: PodcastEpisode; itemIndex: number };
 
 export default function PodcastListScreen() {
-  const { t, locale } = useTranslation();
+  const { t } = useTranslation();
   const scheme = useResolvedScheme();
   const colors = Colors[scheme];
   const { nowPlaying } = useSharedPlayer();
@@ -54,8 +55,10 @@ export default function PodcastListScreen() {
     staleTime: 60 * 60 * 1000,
   });
 
-  const series = data?.series;
-  const episodes = filterByContentLanguage(data?.episodes ?? [], locale);
+  const fallbackSeries = (podcastFallbackIndex as { series?: PodcastSeries }).series;
+  const fallbackEpisodes = (podcastFallbackIndex as { episodes: PodcastEpisode[] }).episodes ?? [];
+  const series = data?.series?.title || data?.series?.cover_url ? data.series : fallbackSeries;
+  const episodes = data?.episodes && data.episodes.length > 0 ? data.episodes : fallbackEpisodes;
 
   // Reihen-Gruppierung: Section-Header nur zeigen, wenn tatsaechlich mehrere
   // Reihen vorkommen — mit den aktuellen Folgen ohne series-Feld bleibt es eine
@@ -135,18 +138,9 @@ export default function PodcastListScreen() {
               {isLoading ? (
                 <ThemedActivityIndicator />
               ) : (
-                <>
-                  <ThemedText type="small" themeColor="textSecondary">
-                    {isError
-                      ? t('common.error')
-                      : data?.episodes.length && episodes.length === 0
-                        ? t('podcast.languageOnly')
-                        : t('podcast.empty')}
-                  </ThemedText>
-                  {!isError && data?.episodes.length && episodes.length === 0 ? (
-                    <ContentLanguageBadge lang={data.episodes[0]?.lang} />
-                  ) : null}
-                </>
+                <ThemedText type="small" themeColor="textSecondary">
+                  {isError ? t('common.error') : t('podcast.empty')}
+                </ThemedText>
               )}
             </View>
           }
@@ -341,7 +335,7 @@ const styles = StyleSheet.create({
   metaRow: { flexDirection: 'row', alignItems: 'center', gap: Spacing.one, marginTop: 2, flexWrap: 'wrap' },
   offlineBadge: { flexDirection: 'row', alignItems: 'center', gap: 3, marginLeft: Spacing.one },
   offlineLabel: { fontSize: 11 },
-  dlBtn: { width: 44, height: 44, borderRadius: 22, alignItems: 'center', justifyContent: 'center' },
+  dlBtn: { width: 36, height: 36, borderRadius: 18, alignItems: 'center', justifyContent: 'center' },
   dlPct: { fontSize: 11 },
   pressed: { opacity: 0.6 },
 });

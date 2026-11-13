@@ -1,5 +1,5 @@
 import { booksForLocale, chaptersForTrack, chaptersForLocale, isAudiobookReleaseAllowed, languagesForTrack, type AudiobookChapter } from './data';
-import releasePolicy from './release-policy.json';
+import { releasePolicy } from './release-policy';
 
 function kapitel(track: string, lang: string): AudiobookChapter {
   return { track, lang, chapter_no: 1, title: 'Draft', audio_url: 'https://example.test/a.mp3' };

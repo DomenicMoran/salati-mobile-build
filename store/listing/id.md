@@ -9,6 +9,7 @@ Waktu salat, Kiblat, Al-Qur'an beraudio, AI & belajar membaca — tanpa iklan
 (75/80 Zeichen)
 
 ## Vollständige Beschreibung
+
 Salati menemani harimu sebagai seorang Muslim — dengan waktu salat yang akurat, Al-Qur'an, AI privat di perangkat, dan kursus lengkap untuk belajar membaca Al-Qur'an dari nol. Tanpa iklan, tanpa akun, tanpa pelacakan.
 
 SALAT & KEHIDUPAN SEHARI-HARI
@@ -47,7 +48,7 @@ SALATI AI
 • Ditandai jelas: jawaban buatan AI, bukan fatwa atau pendapat ulama
 
 ILMU & HATI
-• Studi: 14 kursus bersumber dengan 363 pelajaran — Akidah, Tajwid, 40 Hadis (Nawawi), Sirah, Para Nabi, Sahabat & Ulama, Akhlak, Pernikahan & Keluarga, tata bahasa Al-Qur'an, bahasa Arab sehari-hari, bahasa Arab Madinah (buku 1–4), dialek Arab — atur ulang urutan kursus dan dialek sesukamu
+• Studi: 12 kursus bersumber dengan 311 pelajaran — Akidah, Tajwid, 40 Hadis (Nawawi), Sirah, Para Nabi, Sahabat & Ulama, Akhlak, Pernikahan & Keluarga, tata bahasa Al-Qur'an, bahasa Arab sehari-hari, bahasa Arab Madinah (buku 1–4), dialek Arab — atur ulang urutan kursus dan dialek sesukamu
 • Tes penempatan & pengetahuan, ulasan spaced-repetition, latihan titik lemah, rentetan belajar & target harian
 • Latihan & Kuis: 14 mode, plus ulasan kesalahan untuk mengulang yang membuatmu tersandung
 • Rekap mingguan sebagai gambar yang dapat dibagikan: pelajaran, rentetan, dan skor terbaik minggu ini
@@ -58,9 +59,9 @@ ILMU & HATI
 • Panduan praktik dengan foto: Wudu, Ghusl, salat, Janazah, Haji & Umrah, dan lainnya
 • Kalkulator Zakat dan warisan, hikmah terverifikasi, penghitung Tasbih
 
-BUKU AUDIO, PODCAST, VIDEO & REELS
-• Buku audio «Ilmu Wajib Islam» (8 bab) dan «Tata Bahasa Arab — Kursus 3» (10 bab): audio dan video presentasi dalam 14 bahasa app
-• Podcast Salati, video belajar, reels, PDF — Spotify, YouTube, Instagram
+PODCAST, VIDEO & REELS
+• Podcast „Bahasa Al-Qur'an": bahasa Arab Al-Qur'an per episode — di Spotify
+• Video di YouTube, Reels di Instagram, dan PDF untuk diunduh
 
 DATAMU TETAP MILIKMU
 Tanpa iklan, tanpa akun, tanpa SDK pelacakan: datamu tetap di perangkatmu. Lokasimu hanya untuk waktu salat, Kiblat, dan pencarian terdekat, lalu dikirim ke AlAdhan dan OpenStreetMap: anonim dan opsional. Berfungsi offline.
@@ -68,7 +69,7 @@ Tanpa iklan, tanpa akun, tanpa SDK pelacakan: datamu tetap di perangkatmu. Lokas
 Pertanyaan atau masukan? salati@domenicmoran.de
 Kebijakan privasi: https://www.salati.pro/datenschutz
 
-(3937/4000 Zeichen)
+(3856/4000 Zeichen)
 
 ## Keywords
 

@@ -2774,5 +2774,22 @@
       "transcript": "../audio/pflichtwissen/ur/kap08-transcript.json",
       "video_url": "../video/pflichtwissen/ur/kap08.mp4"
     }
-  ]
+  ],
+  "tracks": {
+    "grammatik-hoerbuch": {
+      "title": "Arabische Grammatik Hoerbuch",
+      "license": "salati-original",
+      "licenseStatus": "cleared",
+      "rightsHolder": "Salatibox - Inh. Domenic Moran",
+      "sourceUrl": null
+    },
+    "pflichtwissen": {
+      "title": "Islamisches Pflichtwissen",
+      "license": "salati-original",
+      "licenseStatus": "cleared",
+      "rightsHolder": "Salatibox - Inh. Domenic Moran",
+      "sourceUrl": null
+    }
+  },
+  "rights_schema": 1
 }

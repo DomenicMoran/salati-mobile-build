@@ -317,11 +317,6 @@ export function LessonPlayer({ lesson, backTo, record, courseId, nextTo, courseC
                     {card.text}
                   </ThemedText>
                 )}
-                {card.source && (
-                  <ThemedText type="small" themeColor="textSecondary">
-                    {t('study.source')}: {card.source}
-                  </ThemedText>
-                )}
                 {card.contentFallback && (
                   <ThemedText type="small" themeColor="textSecondary" style={styles.fallbackNotice}>
                     ⓘ {t('learn.contentFallbackNotice')}

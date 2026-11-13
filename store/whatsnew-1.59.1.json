@@ -1,0 +1,22 @@
+{
+  "de-DE": "Podcast und Hörbücher laden auf Android zuverlässiger; Offline-Fallback wenn das Netz leer liefert.",
+  "de": "Podcast und Hörbücher laden auf Android zuverlässiger; Offline-Fallback wenn das Netz leer liefert.",
+  "en-US": "Podcast and audiobooks load more reliably on Android, with a bundled fallback when the network returns empty indexes.",
+  "en-GB": "Podcast and audiobooks load more reliably on Android, with a bundled fallback when the network returns empty indexes.",
+  "ar": "تحميل البودكاست والكتب الصوتية أصبح أوثق على أندرويد مع نسخة احتياطية عند فشل الشبكة.",
+  "ar-SA": "تحميل البودكاست والكتب الصوتية أصبح أوثق على أندرويد مع نسخة احتياطية عند فشل الشبكة.",
+  "bn-BD": "অ্যান্ড্রয়েডে পডকাস্ট ও অডিওবুক আরও নির্ভরযোগ্য; নেটওয়ার্ক খালি দিলে ব্যাকআপ।",
+  "es-ES": "Podcast y audiolibros cargan mejor en Android, con copia de seguridad si la red devuelve vacío.",
+  "fr-FR": "Podcast et livres audio plus fiables sur Android, avec secours si le réseau renvoie vide.",
+  "id": "Podcast dan buku audio lebih andal di Android, dengan cadangan jika jaringan kosong.",
+  "ms": "Podcast dan buku audio lebih dipercayai pada Android, dengan sandaran jika rangkaian kosong.",
+  "ru": "Подкаст и аудиокниги надёжнее на Android, с резервом при пустом ответе сети.",
+  "ru-RU": "Подкаст и аудиокниги надёжнее на Android, с резервом при пустом ответе сети.",
+  "tr": "Podcast ve sesli kitaplar Android'de daha güvenilir; ağ boş dönerse yedek devreye girer.",
+  "tr-TR": "Podcast ve sesli kitaplar Android'de daha güvenilir; ağ boş dönerse yedek devreye girer.",
+  "ur": "اینڈرائیڈ پر پوڈکاسٹ اور آڈیو بک زیادہ قابلِ اعتماد؛ نیٹ ورک خالی ہو تو بیک اپ۔",
+  "ur-PK": "اینڈرائیڈ پر پوڈکاسٹ اور آڈیو بک زیادہ قابلِ اعتماد؛ نیٹ ورک خالی ہو تو بیک اپ۔",
+  "fa": "پادکست و کتاب صوتی روی اندروید پایدارتر؛ در صورت پاسخ خالی شبکه، نسخه پشتیبان.",
+  "sw": "Podcast na vitabu vya sauti thabiti zaidi kwenye Android; chelezo ikiwa mtandao ni tupu.",
+  "ps": "په اندروېډ کې پوډکاسټ او آډیوبوک باوري؛ شبکه خالي وي نو بیک اپ."
+}

@@ -50,6 +50,11 @@
     "referenceGroup": "Nachschlagen",
     "practiceGroup": "Üben"
   },
+  "notFound": {
+    "pageTitle": "Seite nicht gefunden",
+    "title": "Seite nicht gefunden",
+    "subtitle": "Diese Adresse gibt es in Salati nicht. Hier geht es weiter:"
+  },
   "common": {
     "openSettings": "Systemeinstellungen öffnen",
     "continue": "Weiter",
@@ -288,7 +293,7 @@
     "today": "Hadith des Tages",
     "todaySource": "An-Nawawi 40, Nr. {n}",
     "searchTitle": "Hadith-Suche",
-    "searchAllHint": "Durchsucht An-Nawawi 40 und die Themen der Hadith-Enzyklopädie — mindestens 3 Zeichen",
+    "searchAllHint": "Durchsucht alle 13 Sammlungen - mindestens 3 Zeichen",
     "searchPlaceholder": "Suchbegriff …",
     "searchedProgress": "{x}/{y} Sammlungen durchsucht",
     "resultsCount": "{n} Treffer",
@@ -345,6 +350,49 @@
     "failed": "Mindestens 70 % richtig zum Bestehen - versuch es nochmal.",
     "retry": "Nochmal",
     "backToCourse": "Zur Übersicht",
+    "abc": {
+      "title": "Koran-ABC",
+      "phaseTitle": "Koran-ABC — Zeichen verstehen",
+      "startCta": "Zuerst: Koran-ABC",
+      "startCtaDesc": "Schrift und Lesezeichen, bevor du die Buchstaben übst",
+      "skipCta": "Koran-ABC als erledigt markieren",
+      "lessonTitles": {
+        "welcome": "Willkommen & Schriftlauf",
+        "letterMark": "Buchstabe und Zeichen",
+        "tone": "Helle und dunkle Laute",
+        "vowels": "Die drei kurzen Vokale",
+        "sukun": "Sukūn / Cezm",
+        "shadda": "Schadda",
+        "madd": "Dehnung",
+        "tanwin": "Tanwīn",
+        "article": "Der Artikel al-",
+        "allah": "Das Wort Allah",
+        "waqf": "Halt am Wortende",
+        "bridge": "Abschluss — weiter zu den Buchstaben"
+      },
+      "cards": {
+        "welcomeGoal": "Du lernst zuerst, wie arabische Schrift und Lesezeichen funktionieren — in eigenen Worten, Schritt für Schritt bis zu den 28 Buchstaben.",
+        "welcomeRtl": "Arabisch liest man von rechts nach links. Die Buchstaben verbinden sich wie Schreibschrift.",
+        "letterMark": "Ein Buchstabe (Harf) ist der Konsonant. Die kleinen Striche darüber oder darunter sind Zeichen — sie sagen, welchen Laut der Buchstabe bekommt.",
+        "letterBare": "Ohne Zeichen weiß man beim Lesen nicht sicher, wie ein Wort klingt. Deshalb stehen im Koran immer Vokalzeichen.",
+        "tarqiq": "Manche Laute klingen hell und dünn (Tarqīq) — wie ein helles „s“.",
+        "tafkhim": "Andere klingen dunkel und voll (Tafkhīm) — z. B. ص oder ط. Höre den Unterschied am Audio.",
+        "fatha": "Fatha (ـَ) über dem Buchstaben = kurzes „a“, z. B. بَ = ba.",
+        "kasra": "Kasra (ـِ) unter dem Buchstaben = kurzes „i“. Auch Kesra/Esre genannt — z. B. بِ = bi.",
+        "damma": "Damma (ـُ) über dem Buchstaben = kurzes „u“, z. B. بُ = bu.",
+        "sukun": "Sukūn (manchmal Cezm/Dschesm) = kein Vokal. Der Buchstabe schließt die Silbe — er klingt gedämpft oder „vokallos“.",
+        "sukunHear": "Höre: mit Sukūn wirkt der Laut kurz und geschlossen, nicht offen wie mit Fatha.",
+        "shadda": "Schadda (ـّ) verdoppelt den Buchstaben — du hältst ihn kurz an und sprichst ihn stärker.",
+        "maddAlif": "Ein Alif nach Fatha macht den a-Laut lang: ā, z. B. in qāla.",
+        "maddSign": "Das kleine Madd-Zeichen (ٰ) verlängert einen Vokal — Details später im Tajwid-Kurs.",
+        "tanwinFatha": "Tanwīn-Fatha (ـً) am Wortende = „-an“, wie eine kurze Nachsilbe mit n.",
+        "tanwinDamma": "Tanwīn-Damma (ـٌ) = „-un“ am Wortende.",
+        "article": "al- am Wortanfang ist der bestimmte Artikel („der/die/das“). Vor Sonnenbuchstaben verschmilzt das l oft — das übst du später.",
+        "allah": "Allah wird mit eigenen Leseregeln geschrieben und ausgesprochen — aus Respekt steht es oft besonders im Text.",
+        "waqf": "Am Ende eines Verses hält man kurz an; der letzte Vokal wird dabei oft mit Sukūn gelesen — Waqf im Tajwid vertieft das.",
+        "bridge": "Du kennst jetzt die wichtigsten Zeichen. Als Nächstes lernst du die Buchstaben der Gruppe 1: ا ب ت ث."
+      }
+    },
     "phaseRead": "Lesen lernen",
     "deepenCta": "Weitere Studienkurse",
     "deepenCtaDesc": "Glaube, Geschichte, Fiqh und Dialekte im Studium-Bereich",
@@ -1562,10 +1610,6 @@
         "title": "Tajwid - Regeln der Rezitation",
         "desc": "Nun Sakina, Qalqala, Madd-Arten, Waqf - mit Vers-Audio"
       },
-      "pflichtwissen": {
-        "title": "Islamisches Pflichtwissen",
-        "desc": "Farḍ ʿayn in acht Kapiteln: Schahada, Tauhid, Jenseits, Reinheit, Herz, Zunge und Duʿā — mit Story-Quiz (8 Lektionen)"
-      },
       "aqida": {
         "title": "Aqida - Grundlagen des Glaubens",
         "desc": "Die sechs Säulen des Iman, verständlich erklärt"
@@ -1613,6 +1657,10 @@
       "dialects": {
         "title": "Arabische Dialekte",
         "desc": "Maghrebinisch, Levantinisch, Golf-Arabisch, Ägyptisch - die vier großen gesprochenen Dialekte im Vergleich zum Hocharabisch (28 Lektionen: Begrüßung, Zahlen, Fragen, Familie, Essen, Gefühle, Redewendungen)"
+      },
+      "pflichtwissen": {
+        "title": "Islamisches Pflichtwissen",
+        "desc": "Farḍ ʿayn in acht Kapiteln: Schahada, Tauhid, Jenseits, Reinheit, Herz, Zunge und Duʿā — mit Story-Quiz (8 Lektionen)"
       }
     },
     "dialects": {
@@ -1752,7 +1800,17 @@
     "faq7A": "iOS: Salati ist im App Store verfügbar. Android: Die APK kannst du direkt hier auf der Seite laden; der Google-Play-Eintrag ist in Prüfung. Salati funktioniert außerdem in jedem modernen Browser.",
     "faq8Q": "Was ist die Salati KI und bleiben meine Fragen privat?",
     "faq8A": "Die Salati KI beantwortet Fragen ausschließlich aus dem Koran, den 40 Hadithen an-Nawawis, geprüften Duas und den Salati-Kurstexten. Sie zitiert die passenden Stellen wörtlich und nennt zu jedem Abschnitt die Quelle - sie formuliert nichts selbst, also kann sie auch nichts erfinden. Alles läuft lokal: deine Fragen verlassen dein Gerät nicht und landen auf keinem Server.",
-    "tvApkButton": "APK für Fire TV laden"
+    "tvApkButton": "APK für Fire TV laden",
+    "authorBookSectionTitle": "Vom Entwickler von Salati"
+  },
+  "authorBook": {
+    "eyebrow": "Vom Entwickler von Salati",
+    "title": "Wie ich nach 26 Jahren Frieden fand",
+    "body": "Neben Salati habe ich mein persönliches Buch geschrieben — über meinen Weg zum Islam und die Shahada am 18. Oktober 2025. Erhältlich als Taschenbuch und E-Book über BoD (Selbstverlag).",
+    "meta": "Taschenbuch {printPrice} € · Erscheinung {releaseDate} · ISBN {isbn}",
+    "ebookNote": "günstiger Einstieg {ebookPrice} € (E-Book)",
+    "ctaBod": "Im BoD-Buchshop bestellen",
+    "ctaAmazon": "Bei Amazon"
   },
   "tvRemote": {
     "back": "Zurück",
@@ -1785,7 +1843,9 @@
     "settings": "Einstellungen",
     "title": "Salati TV verbinden",
     "videos": "Videos",
-    "webOnly": "Die TV-Kopplung funktioniert nur in der Salati-Handy-App (iOS/Android) im selben WLAN wie der Fernseher."
+    "webOnly": "Die TV-Kopplung funktioniert nur in der Salati-Handy-App (iOS/Android) im selben WLAN wie der Fernseher.",
+    "audiobooks": "Hörbücher",
+    "gebetgemeinsam": "Gemeinsam beten"
   },
   "placement": {
     "title": "Einstufungstest",
@@ -2537,7 +2597,6 @@
     "subtitle": "Arabisch verstehen, Folge für Folge",
     "heroDesc": "Der Podcast: die Grammatik des Qur’an, Folge für Folge zum Zuhören.",
     "empty": "Bald verfügbar.",
-    "languageOnly": "Dieser Podcast ist derzeit nur auf Deutsch verfügbar.",
     "episodeLabel": "Folge",
     "play": "Abspielen",
     "pause": "Pause",
@@ -2562,7 +2621,8 @@
     "deleteDownloadConfirmTitle": "Download löschen?",
     "deleteDownloadConfirmBody": "Die Folge wird von deinem Gerät entfernt.",
     "moreEpisodes": "Weitere Folgen",
-    "series": "Reihe"
+    "series": "Reihe",
+    "languageOnly": "Nur in dieser Sprache"
   },
   "lernen": {
     "learnDesc": "Über 2000 interaktive Lektionen — Schritt für Schritt.",
@@ -2729,7 +2789,10 @@
     "deleteDownloadConfirmTitle": "Download löschen?",
     "deleteDownloadConfirmBody": "Die PDF wird von deinem Gerät entfernt.",
     "openInBrowser": "Im Browser öffnen",
-    "viewerError": "PDF konnte nicht geladen werden."
+    "viewerError": "PDF konnte nicht geladen werden.",
+    "localeEmptyTitle": "Noch keine Unterlagen in deiner Sprache",
+    "localeEmptyText": "PDF-Lernunterlagen sind derzeit nur auf Deutsch verfügbar.",
+    "showGerman": "Deutsche Unterlagen anzeigen"
   },
   "lexikon": {
     "title": "Lexikon",
@@ -2891,7 +2954,7 @@
         "germanOnlyMeaningNote": "Die deutschen Bedeutungen dieser Wortlisten liegen aktuell nur auf Deutsch vor.",
         "listCount": "{n} Listen"
       },
-      "horizontalScrollHint": "Wische horizontal, um die ganze Tabelle zu sehen."
+      "horizontalScrollHint": "Wische horizontal für weitere Spalten."
     },
     "verbtyp": {
       "title": "Verbfamilie",
@@ -4262,12 +4325,96 @@
       "zurUebersicht": "Zur Übersicht"
     }
   },
+  "bibliothek": {
+    "title": "Bibliothek",
+    "subtitle": "Bücher, die weitergegeben werden dürfen: eigene Hörbuchbände, Lernunterlagen und der vom Autor freigegebene Tafsir.",
+    "audioVideo": "Audio und Video",
+    "rassoul": "Tafsir Al-Quran Al-Karim",
+    "rassoulGerman": "Der Kommentar ist deutsch und bleibt im Wortlaut des Autors.",
+    "tafsirGermanOnly": "Dieses Tafsir-Buch ist nur auf Deutsch verfügbar (Rassoul-Ausgabe). Die App-Sprache ändert nicht den Kommentartext.",
+    "handouts": "Lernunterlagen",
+    "loadError": "Der Text konnte nicht geladen werden.",
+    "quran": "Koran",
+    "quranNote": "Der arabische Korantext ist gemeinfrei.",
+    "hadith": "Enzyklopädie der Prophetenhadithe",
+    "hadithNote": "Weitergabe erlaubt, Inhalt unverändert, Quelle genannt.",
+    "continueReading": "Weiterlesen",
+    "continueListening": "Weiterhören",
+    "savedPlace": "Zuletzt gelesen",
+    "tafsirToc": "Inhaltsverzeichnis (114 Suren)",
+    "openInQuran": "Im Koran-Reader öffnen",
+    "openTafsirBook": "Gesamtes Tafsir-Buch",
+    "allHandouts": "Alle Lernunterlagen (Einzel-PDFs)",
+    "allHandoutsNote": "Themen-PDFs aus dem Lernbuch, einzeln zum Nachschlagen.",
+    "readerToc": "Kapitel",
+    "readerBookmarks": "Lesezeichen",
+    "readerAddBookmark": "Hinzufügen",
+    "readerNoBookmarks": "Noch keine Lesezeichen — ⊕ speichert die zuletzt gewählte Stelle.",
+    "readerPage": "Seite {{page}}",
+    "readerPageRange": "S. {{from}}–{{to}}",
+    "readerUnavailable": "Dieses Buch ist für den Reader noch nicht konfiguriert.",
+    "readerLoading": "PDF wird geladen…",
+    "readerLoadError": "Das PDF konnte in der App nicht geladen werden.",
+    "readerShellError": "Der Reader konnte nicht gestartet werden.",
+    "readerRetry": "Erneut versuchen",
+    "readerPageOf": "Seite {{page}} von {{total}}",
+    "readerPercent": "{{percent}} %",
+    "readerJump": "Springen",
+    "readerJumpGo": "Los",
+    "readerJumpPlaceholder": "Seitenzahl",
+    "readerTheme": "Thema",
+    "readerImmersive": "Vollbild",
+    "readerSearch": "Suche",
+    "readerSearchGo": "Finden",
+    "readerSearchPlaceholder": "Im PDF suchen",
+    "readerSearchEmpty": "Keine Treffer — bei gescannten Seiten fehlt oft der Textlayer.",
+    "readerChapterSearchPlaceholder": "Kapitel filtern",
+    "readerHighlights": "Markierungen",
+    "readerNoHighlights": "Noch keine Markierungen — Text im PDF markieren, sofern der Textlayer vorhanden ist.",
+    "readerHighlightNote": "Notiz",
+    "readerOfflineReady": "Offline-PDF wird genutzt",
+    "hub": {
+      "searchPlaceholder": "Bibliothek durchsuchen",
+      "sortTitle": "Titel",
+      "sortAuthor": "Autor",
+      "sortRecent": "Zuletzt geöffnet",
+      "sortAdded": "Neu hinzugefügt",
+      "sectionMyBooks": "Meine Bücher (offline)",
+      "sectionRecentlyAdded": "Zuletzt hinzugefügt",
+      "filterAll": "Alle",
+      "filterAllCategories": "Alle Kategorien",
+      "filterOffline": "Offline",
+      "filterInProgress": "Begonnen",
+      "filterRead": "Gelesen",
+      "sectionShortcuts": "Schnellzugriff",
+      "sectionAudiobooks": "Hörbuch-PDFs",
+      "emptyFiltered": "Keine Bücher passen zu deinen Filtern.",
+      "pagesMeta": "{{pages}} Seiten",
+      "percentRead": "{{percent}} % gelesen"
+    },
+    "readerExportMd": "Als Markdown teilen",
+    "readerExportTitle": "Notizen exportieren",
+    "readerShareQuote": "Zitat teilen",
+    "readerDictionary": "Nachschlagen",
+    "readerDim": "Dimmen",
+    "readerAboutBook": "Über dieses Buch",
+    "readerStatsToday": "Heute {{pages}} Seiten · Serie {{streak}}",
+    "detailsAuthor": "Autor",
+    "detailsTranslator": "Übersetzer",
+    "detailsLang": "Sprache",
+    "detailsPages": "Seiten",
+    "detailsCategory": "Kategorie",
+    "detailsEdition": "Ausgabe",
+    "detailsLicense": "Lizenz",
+    "detailsSource": "Quelle öffnen",
+    "detailsLicenseDoc": "Lizenznachweis"
+  },
   "audiobooks": {
-    "unavailable": "Dieses Medium ist in deiner App-Sprache derzeit nicht verfügbar.",
+    "unavailable": "Dieser Inhalt ist in deiner App-Sprache derzeit nicht verfügbar.",
     "title": "Hörbücher",
-    "subtitle": "Arabisch lernen und Pflichtwissen. Die Sprache der Folgen steht über der Liste.",
-    "empty": "Für deine Sprache sind noch keine Hörbücher verfügbar.",
-    "booksEmpty": "Noch keine Bücher in deiner Sprache.",
+    "subtitle": "Arabisch und islamisches Pflichtwissen — nur in deiner App-Sprache.",
+    "empty": "Noch keine Hörbücher für deine Sprache.",
+    "booksEmpty": "Noch keine Bücher für deine Sprache.",
     "bookOpen": "Buch öffnen (PDF)",
     "tracks": {
       "kurs1": "Arabisch lernen — Kurs 1",
@@ -4279,20 +4426,5 @@
     "watchVideo": "Präsentationsvideo ansehen",
     "back15": "15 Sekunden zurück",
     "forward15": "15 Sekunden vor"
-  },
-  "bibliothek": {
-    "title": "Bibliothek",
-    "subtitle": "Bücher, die weitergegeben werden dürfen: eigene Hörbuchbände, Lernunterlagen und der vom Autor freigegebene Tafsir.",
-    "audioVideo": "Audio und Video",
-    "rassoul": "Tafsir Al-Quran Al-Karim",
-    "rassoulGerman": "Der Kommentar ist deutsch und bleibt im Wortlaut des Autors.",
-    "handouts": "Lernunterlagen",
-    "loadError": "Der Text konnte nicht geladen werden.",
-    "quran": "Koran",
-    "quranNote": "Der arabische Korantext ist gemeinfrei.",
-    "hadith": "Enzyklopädie der Prophetenhadithe",
-    "hadithNote": "Weitergabe erlaubt, Inhalt unverändert, Quelle genannt.",
-    "continueReading": "Weiterlesen",
-    "savedPlace": "Zuletzt gelesen"
   }
 }

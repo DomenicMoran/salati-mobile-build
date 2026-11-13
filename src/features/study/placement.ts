@@ -32,8 +32,7 @@ export function selectCheckpointLessons(lessons: readonly Lesson[]): Lesson[] {
   const step = (lessons.length - 1) / (MAX_CHECKPOINTS - 1);
   const indices = new Set<number>();
   for (let i = 0; i < MAX_CHECKPOINTS; i++) {
-    // Floor keeps early interior lessons (e.g. Pflichtwissen Lektion 4 bei 8 Kapiteln).
-    indices.add(Math.min(lessons.length - 1, Math.floor(i * step)));
+    indices.add(Math.round(i * step));
   }
   return [...indices].sort((a, b) => a - b).map((i) => lessons[i]);
 }
@@ -47,17 +46,6 @@ export function buildCourseCheckpoints(
     lessonId: lesson.id,
     questions: buildQuiz(lesson, rand, locale),
   }));
-}
-
-/** SettingsProvider begins with defaults while persisted settings hydrate.
- * Keep localized content unbuilt until the selected UI locale is authoritative. */
-export function buildHydratedCourseCheckpoints(
-  lessons: Lesson[],
-  locale: Locale,
-  settingsLoaded: boolean,
-  random: () => number = Math.random,
-): CourseCheckpoint[] | null {
-  return settingsLoaded ? buildCourseCheckpoints(lessons, locale, random) : null;
 }
 
 /** Markiert alle Lektionen bis einschließlich upToLessonId als bestanden (volle Punktzahl). */

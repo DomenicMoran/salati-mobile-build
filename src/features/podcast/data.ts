@@ -11,6 +11,8 @@
 // (deren Medien-URLs zeigen nach dem naechsten upload.py-Lauf ebenfalls auf R2).
 import { fetchJson } from '@/lib/fetchJson';
 
+import fallbackIndex from './index.fallback.json';
+
 const PODCAST_BASE = 'https://pub-d0489c0572704285af79896edb72cbed.r2.dev/podcast';
 export const PODCAST_INDEX_URL = `${PODCAST_BASE}/index.json`;
 
@@ -118,17 +120,28 @@ function isVisible(ep: PodcastEpisode): boolean {
   return ep.visible !== false;
 }
 
-export async function fetchPodcastIndex(): Promise<PodcastIndex> {
-  const j = await fetchJson<Partial<PodcastIndex>>(PODCAST_INDEX_URL, {
-    cache: 'no-cache',
-    errorPrefix: 'podcast_index',
-  });
+function parsePodcastIndex(j: Partial<PodcastIndex>): PodcastIndex {
   const raw = Array.isArray(j.episodes) ? j.episodes : [];
   return {
     updated_at: j.updated_at ?? '',
     series: j.series ?? { title: '', subtitle: '', description: '', cover_url: '' },
     episodes: sortEpisodesByLearningPath(raw.filter(isVisible)),
   };
+}
+
+/** Remote-Index; bei Netzfehler oder leerem Body (Expo-Winter-fetch-Regression) Fallback. */
+export async function fetchPodcastIndex(): Promise<PodcastIndex> {
+  try {
+    const j = await fetchJson<Partial<PodcastIndex>>(PODCAST_INDEX_URL, {
+      cache: 'no-cache',
+      errorPrefix: 'podcast_index',
+    });
+    const parsed = parsePodcastIndex(j);
+    if (parsed.episodes.length > 0) return parsed;
+  } catch {
+    // unten: gebündelter Minimal-Index
+  }
+  return parsePodcastIndex(fallbackIndex as Partial<PodcastIndex>);
 }
 
 /** mm:ss aus Sekunden. */

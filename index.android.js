@@ -1,11 +1,19 @@
 // Android-Entry: expo-router + Registrierung des Homescreen-Widget-Handlers
 // (react-native-android-widget). Muss VOR der App-Registrierung passieren,
 // damit Widget-Updates auch headless (App geschlossen) funktionieren.
-import 'expo-router/entry';
+import 'react-native/Libraries/Core/InitializeCore';
+
 import { registerWidgetConfigurationScreen, registerWidgetTaskHandler } from 'react-native-android-widget';
 
 import { WidgetConfigScreenRoot } from './src/widgets/WidgetConfigScreen';
 import { widgetTaskHandler } from './src/widgets/widget-task-handler';
+
+// Metro fuehrt zusaetzlich ensureAbortSignalGlobals vor expo/winter aus (metro.config.js).
+// eslint-disable-next-line @typescript-eslint/no-require-imports
+require('./src/lib/ensureAbortSignalGlobals');
+
+// eslint-disable-next-line @typescript-eslint/no-require-imports
+require('expo-router/entry');
 
 registerWidgetTaskHandler(widgetTaskHandler);
 // PER-WIDGET Konfiguration: Android startet die native

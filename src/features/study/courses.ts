@@ -73,7 +73,6 @@ const COURSE_DEFS: CourseDef[] = [
   { id: 'grammar', icon: 'language', category: 'quranArabic', lessonCount: 16, load: () => import('./data/grammar.json') },
   { id: 'madinah', icon: 'school', category: 'quranArabic', lessonCount: 83, load: () => import('./data/madinah.json') },
   { id: 'amau', icon: 'chatbubble-ellipses', category: 'quranArabic', lessonCount: 54, load: () => import('./data/amau.json') },
-  { id: 'pflichtwissen', icon: 'book', category: 'islamicStudies', lessonCount: 8, load: () => import('./data/pflichtwissen.json') },
   { id: 'aqida', icon: 'diamond', category: 'islamicStudies', lessonCount: 11, load: () => import('./data/aqida.json') },
   { id: 'fiqh-ibadat', icon: 'water', category: 'islamicStudies', lessonCount: 24, load: () => import('./data/fiqh-ibadat.json') },
   { id: 'nawawi40', icon: 'library', category: 'islamicStudies', lessonCount: 42, load: () => import('./data/nawawi40.json') },

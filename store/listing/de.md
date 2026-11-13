@@ -9,6 +9,7 @@ Gebetszeiten mit Adhan, Qibla-Kompass, Koran & Ramadan — werbefrei, ohne Konto
 (78/80 Zeichen)
 
 ## Vollständige Beschreibung
+
 Salati begleitet dich durch deinen Tag als Muslim — mit genauen Gebetszeiten, dem Koran, einer privaten KI und einem kompletten Kurs, um Koranlesen von Grund auf zu lernen. Werbefrei, ohne Konto und ohne Tracking.
 
 GEBET & ALLTAG
@@ -47,20 +48,22 @@ SALATI KI
 • Kennzeichnung: KI-generierte Antwort, keine Fatwa oder Gelehrten-Meinung
 
 WISSEN & HERZ
-• Studium: 14 quellenbelegte Kurse mit 363 Lektionen — Islamisches Pflichtwissen, Fiqh der Gottesdienste, Aqida, Tajwid, 40 Hadithe (Nawawi), Seerah, Propheten, Sahaba & Gelehrte, Akhlaq, Ehe & Familie, Quran-Grammatik, Alltags-Arabisch, Madinah-Arabisch, Dialekte — Reihenfolge frei einstellbar
+• Studium: 12 quellenbelegte Kurse mit 311 Lektionen — Aqida, Tajwid, 40 Hadithe (Nawawi), Seerah, Propheten, Sahaba & Gelehrte, Akhlaq, Ehe & Familie, Quran-Grammatik, Alltags-Arabisch, Madinah-Arabisch (Bücher 1–4), arabische Dialekte — Kurs- und Dialektreihenfolge frei einstellbar
 • Einstufungstest & Wissens-Test, Spaced-Repetition-Wiederholung, Schwächen-Training, Lernserie & Tagesziel
 • Üben & Quiz: 14 Modi, plus Fehler-Wiederholung für gezieltes Nacharbeiten
 • Wochen-Rückblick als teilbares Bild
 • Abzeichen für erreichte Meilensteine
-• Hadith-Sammlungen mit Suche über alle Sammlungen
+• Hadith-Sammlungen mit Suche über alle gleichzeitig (Arabisch, Englisch, Türkisch)
 • Koran-Radio: 24/7-Rezitations-Streams
 • 99 Namen Allahs mit Audio, Duas und Adhkar nach dem Gebet mit Quellenangabe
 • Praxis-Guides mit Bildern: Wudu, Ghusl, Gebet, Janazah, Hajj & Umrah und mehr
 • Zakat- und Erbrechts-Rechner, belegte Weisheiten, Tasbih-Zähler für Dhikr
 
-HÖRBÜCHER, PODCAST, VIDEOS & REELS
-• Hörbücher „Islamisches Pflichtwissen“ (8 Kap.) und „Arabische Grammatik — Kurs 3“ (10 Kap.): Audio und Präsentationsvideo in 14 App-Sprachen, in deiner Sprache
-• Salati-Podcast „Sprache des Koran", Lern-Videos, Reels und PDF-Handouts — Spotify, YouTube, Instagram
+PODCAST, VIDEOS & REELS
+• Salati-Podcast „Sprache des Koran": Koran-Arabisch Folge für Folge erklärt — auch auf Spotify
+• Lern-Videos: Grammatik- und Vokabel-Tabellen sowie Lektions-Clips — auch auf YouTube
+• Reels: kurze Lern-Clips für zwischendurch — auch auf Instagram
+• PDF-Handouts: Lernunterlagen zum Download
 
 DEINE DATEN GEHÖREN DIR
 Salati ist werbefrei, ohne Konto und ohne Tracking-SDKs — deine Daten bleiben auf deinem Gerät. Dein Standort dient nur Gebetszeiten, Qibla und Umgebungssuche und wird dafür an AlAdhan und OpenStreetMap übermittelt: anonym, nicht mit dir verknüpft, jederzeit ablehnbar. Die Kerninhalte funktionieren offline.
@@ -68,7 +71,7 @@ Salati ist werbefrei, ohne Konto und ohne Tracking-SDKs — deine Daten bleiben 
 Fragen oder Feedback? salati@domenicmoran.de
 Datenschutz: https://www.salati.pro/datenschutz
 
-(3961/4000 Zeichen)
+(3995/4000 Zeichen)
 
 ## Keywords
 

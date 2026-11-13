@@ -131,7 +131,6 @@ export default function WisdomScreen() {
                     accessibilityRole="button"
                     accessibilityLabel={t('wisdom.shareImage')}
                     style={({ pressed }) => [
-                      styles.iconAction,
                       Platform.OS === 'web' ? styles.pressableWeb : undefined,
                       pressed && styles.pressed,
                     ]}>
@@ -162,7 +161,6 @@ const styles = StyleSheet.create({
   sourceText: { flex: 1 },
   pressableWeb: { cursor: 'pointer' },
   pressed: { opacity: 0.6 },
-  iconAction: { width: 44, height: 44, alignItems: 'center', justifyContent: 'center' },
   card: { padding: Spacing.three, gap: Spacing.one, borderRadius: 20 },
   arabic: { fontSize: 22, lineHeight: 38, textAlign: 'right' },
   arabicSmall: { fontSize: 18, lineHeight: 32, textAlign: 'right' },

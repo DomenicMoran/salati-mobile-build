@@ -1,5 +1,7 @@
+import * as Linking from 'expo-linking';
 import { router, type Href } from 'expo-router';
 import { useQuery } from '@tanstack/react-query';
+import { useEffect } from 'react';
 import { FlatList, StyleSheet, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
@@ -13,8 +15,9 @@ import { ThemedText } from '@/components/themed-text';
 import { ThemedView } from '@/components/themed-view';
 import { Colors, MaxContentWidth, Spacing } from '@/constants/theme';
 import { ScreenHeader } from '@/components/screen-header';
-import { chaptersForLocale, fetchAudiobookIndex, trackHasChapters } from '@/features/audiobooks/data';
-import { AUDIOBOOK_HUB_TRACKS } from '@/features/audiobooks/tracks';
+import { chaptersForLocale, fetchAudiobookIndex, type AudiobookChapter } from '@/features/audiobooks/data';
+import audiobookFallbackIndex from '@/features/audiobooks/index.fallback.json';
+import { hubTracksForLocale } from '@/features/audiobooks/tracks';
 import { useResolvedScheme } from '@/hooks/use-resolved-scheme';
 import { useTranslation } from '@/lib/i18n';
 
@@ -22,8 +25,30 @@ type HubRow =
   | { kind: 'track'; key: string; trackId: string; labelKey: string; index: number }
   | { kind: 'books'; key: 'books'; index: number };
 
+function maybeRedirectChapterFromUrl(url: string | null): boolean {
+  if (!url) return false;
+  const parsed = Linking.parse(url);
+  const path = (parsed.path ?? '').replace(/^\/+/, '');
+  const m = path.match(/^audiobooks\/([^/]+)\/(\d+)$/);
+  if (!m) return false;
+  const lang = typeof parsed.queryParams?.lang === 'string' ? parsed.queryParams.lang : undefined;
+  router.replace({
+    pathname: '/audiobooks/[track]/[chapter]',
+    params: { track: m[1], chapter: m[2], ...(lang ? { lang } : {}) },
+  } as Href);
+  return true;
+}
+
 export default function AudiobooksHubScreen() {
   const { t, locale } = useTranslation();
+
+  useEffect(() => {
+    void Linking.getInitialURL().then(maybeRedirectChapterFromUrl);
+    const sub = Linking.addEventListener('url', ({ url }) => {
+      maybeRedirectChapterFromUrl(url);
+    });
+    return () => sub.remove();
+  }, []);
   const scheme = useResolvedScheme();
   const colors = Colors[scheme];
 
@@ -33,11 +58,11 @@ export default function AudiobooksHubScreen() {
     staleTime: 60 * 60 * 1000,
   });
 
-  const entries = data?.entries ?? [];
+  const fallbackEntries = (audiobookFallbackIndex as { entries: AudiobookChapter[] }).entries ?? [];
+  const entries = data?.entries && data.entries.length > 0 ? data.entries : fallbackEntries;
   const rows: HubRow[] = [];
   let itemIndex = 0;
-  for (const track of AUDIOBOOK_HUB_TRACKS) {
-    if (!trackHasChapters(entries, track.id, locale)) continue;
+  for (const track of hubTracksForLocale(entries, locale)) {
     rows.push({
       kind: 'track',
       key: track.id,
@@ -46,7 +71,7 @@ export default function AudiobooksHubScreen() {
       index: itemIndex++,
     });
   }
-  const localized = chaptersForLocale(entries, locale);
+  const localized = chaptersForLocale(entries, locale, data);
   const hasBooks = localized.some(
     (e) => (e.track === 'grammatik-hoerbuch' || e.track === 'pflichtwissen') && !!e.book_pdf_url?.trim(),
   );

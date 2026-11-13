@@ -3,12 +3,16 @@
 // gebündeltes index.fallback.json (Kopie aus podcast/audiobooks/index.json).
 import { fetchJson } from '@/lib/fetchJson';
 import { filterByContentLanguage, normalizeContentLanguage } from '@/features/media/content-language';
+import {
+  type MediaLicenseMeta,
+  isMediaLicenseProductionVisible,
+} from '@/features/media/license-meta';
 
 import fallbackIndex from './index.fallback.json';
-import releasePolicy from './release-policy.json';
+import { releasePolicy } from './release-policy';
 
-const blockedGrammarLocales = new Set(releasePolicy.blockedGrammarLocales);
-const blockedPflichtwissenLocales = new Set(releasePolicy.blockedPflichtwissenLocales);
+const blockedGrammarLocales = new Set<string>(releasePolicy.blockedGrammarLocales);
+const blockedPflichtwissenLocales = new Set<string>(releasePolicy.blockedPflichtwissenLocales);
 
 export function isAudiobookReleaseAllowed(entry: Pick<AudiobookChapter, 'track' | 'lang'>): boolean {
   if (entry.track === 'grammatik-hoerbuch' && blockedGrammarLocales.has(normalizeContentLanguage(entry.lang))) return false;
@@ -18,7 +22,7 @@ export function isAudiobookReleaseAllowed(entry: Pick<AudiobookChapter, 'track' 
 const PODCAST_BASE = 'https://pub-d0489c0572704285af79896edb72cbed.r2.dev/podcast';
 export const AUDIOBOOK_INDEX_URL = `${PODCAST_BASE}/audiobooks/index.json`;
 
-export interface AudiobookChapter {
+export interface AudiobookChapter extends MediaLicenseMeta {
   track: string;
   chapter_no: number;
   title: string;
@@ -30,9 +34,15 @@ export interface AudiobookChapter {
   transcript?: string | null;
 }
 
+export interface AudiobookTrackRights extends MediaLicenseMeta {
+  title?: string;
+}
+
 export interface AudiobookIndex {
   version: number;
   updated_at: string;
+  /** Rechtskette je Hub-Spur (optional auf Kapitel-Ebene). */
+  tracks?: Record<string, AudiobookTrackRights>;
   entries: AudiobookChapter[];
 }
 
@@ -54,12 +64,33 @@ function normalizeChapter(entry: AudiobookChapter): AudiobookChapter {
   };
 }
 
+function trackLicense(index: Partial<AudiobookIndex>, track: string): MediaLicenseMeta | undefined {
+  return index.tracks?.[track];
+}
+
+function chapterLicenseVisible(entry: AudiobookChapter, index: Partial<AudiobookIndex>): boolean {
+  const fromChapter = isMediaLicenseProductionVisible(entry);
+  const fromTrack = isMediaLicenseProductionVisible(trackLicense(index, entry.track));
+  return fromChapter && fromTrack;
+}
+
+function productionVisibleChapters(
+  entries: readonly AudiobookChapter[],
+  index?: Pick<AudiobookIndex, 'tracks'>,
+): AudiobookChapter[] {
+  const rights = index ?? {};
+  return entries
+    .filter(isAudiobookReleaseAllowed)
+    .filter((e) => chapterLicenseVisible(e, rights));
+}
+
 function parseIndex(raw: Partial<AudiobookIndex>): AudiobookIndex {
   const entries = Array.isArray(raw.entries) ? raw.entries : [];
   return {
     version: typeof raw.version === 'number' ? raw.version : 1,
     updated_at: raw.updated_at ?? '',
-    entries: entries.filter(isAudiobookReleaseAllowed).map((e) => normalizeChapter(e as AudiobookChapter)),
+    tracks: raw.tracks,
+    entries: productionVisibleChapters(entries as AudiobookChapter[], raw).map((e) => normalizeChapter(e)),
   };
 }
 
@@ -69,24 +100,31 @@ export async function fetchAudiobookIndex(): Promise<AudiobookIndex> {
       cache: 'no-cache',
       errorPrefix: 'audiobook_index',
     });
-    return parseIndex(j);
+    const parsed = parseIndex(j);
+    if (parsed.entries.length > 0) return parsed;
   } catch {
-    return parseIndex(fallbackIndex as Partial<AudiobookIndex>);
+    // unten: gebündelter Index
   }
+  return parseIndex(fallbackIndex as Partial<AudiobookIndex>);
 }
 
 /** Nur Kapitel in der UI-Sprache — kein DE-Fallback für andere Locales. */
-export function chaptersForLocale(entries: readonly AudiobookChapter[], uiLocale: string): AudiobookChapter[] {
-  return filterByContentLanguage(entries.filter(isAudiobookReleaseAllowed), uiLocale);
+export function chaptersForLocale(
+  entries: readonly AudiobookChapter[],
+  uiLocale: string,
+  index?: Pick<AudiobookIndex, 'tracks'>,
+): AudiobookChapter[] {
+  return filterByContentLanguage(productionVisibleChapters(entries, index), uiLocale);
 }
 
 export function chaptersForTrack(
   entries: readonly AudiobookChapter[],
   track: string,
   uiLocale: string,
+  index?: Pick<AudiobookIndex, 'tracks'>,
 ): AudiobookChapter[] {
   const id = track.trim();
-  return chaptersForLocale(entries, uiLocale)
+  return chaptersForLocale(entries, uiLocale, index)
     .filter((e) => e.track === id)
     .sort((a, b) => a.chapter_no - b.chapter_no);
 }

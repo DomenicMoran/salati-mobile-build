@@ -8,6 +8,7 @@ import { Link } from 'expo-router';
 import { Linking, Platform, Pressable, ScrollView, StyleSheet, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
+import { AuthorBookCard } from '@/components/author-book-card';
 import { AnimatedListItem } from '@/components/ui/animated-list-item';
 import { ScrollReveal } from '@/components/ui/scroll-reveal';
 import { StarClusterDecoration } from '@/components/decorative-pattern';
@@ -18,6 +19,7 @@ import { ThemedText } from '@/components/themed-text';
 import { ThemedView } from '@/components/themed-view';
 import { Brand, Colors, MaxContentWidth, Spacing } from '@/constants/theme';
 import { useResolvedScheme } from '@/hooks/use-resolved-scheme';
+import { DocumentHeadTitle, WEB_HOME_DOCUMENT_TITLE } from '@/lib/document-head-title';
 import { useTranslation } from '@/lib/i18n';
 
 const FEATURES: { icon: IconName; titleKey: string; descKey: string }[] = [
@@ -230,6 +232,7 @@ export default function LandingScreen() {
 
   return (
     <ThemedView style={styles.container}>
+      <DocumentHeadTitle title={WEB_HOME_DOCUMENT_TITLE} />
       <SafeAreaView style={styles.safeArea}>
         <ScrollView contentContainerStyle={styles.scroll}>
           {/* Echtes Foto (Sheikh-Zayed-Moschee, Unsplash-Lizenz — siehe
@@ -496,6 +499,13 @@ export default function LandingScreen() {
               web-only Komponente mit self-contained Sprach-Map, damit die
               Landing-Erweiterung keine geteilten Locale-Dateien anfasst. */}
           <MediaShowcase />
+
+          <ScrollReveal style={styles.sectionTitle}>
+            <ThemedText type="subtitle">{t('landing.authorBookSectionTitle')}</ThemedText>
+          </ScrollReveal>
+          <ScrollReveal>
+            <AuthorBookCard variant="landing" style={styles.authorBookSection} />
+          </ScrollReveal>
 
           <View style={styles.storeSection}>
             <ThemedText type="smallBold" themeColor="textSecondary">
@@ -867,6 +877,7 @@ const styles = StyleSheet.create({
     shadowOpacity: 0.18,
     shadowRadius: 20,
   },
+  authorBookSection: { marginTop: Spacing.two, marginBottom: Spacing.four },
   storeSection: { alignItems: 'center', marginTop: Spacing.six, gap: Spacing.three },
   tvHeading: { flexDirection: 'row', gap: Spacing.two, alignItems: 'center', justifyContent: 'center' },
   tvLead: { textAlign: 'center', maxWidth: 620, marginTop: Spacing.two, alignSelf: 'center' },

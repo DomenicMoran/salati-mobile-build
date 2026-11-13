@@ -1,3 +1,4 @@
+import Head from 'expo-router/head';
 import { ScrollView, StyleSheet, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
@@ -36,8 +37,14 @@ function Row({ label, value }: { label: string; value: string }) {
 export default function ImpressumScreen() {
   const { t } = useTranslation();
 
+  const pageTitle = `${t('impressum.title')} – Salati`;
+
   return (
     <ThemedView style={styles.container}>
+      <Head>
+        <title>{pageTitle}</title>
+        <meta property="og:title" content={pageTitle} />
+      </Head>
       <SafeAreaView style={styles.safeArea}>
         <ScreenHeader title={t('impressum.title')} variant="modal" />
         <ScrollView contentContainerStyle={styles.scroll}>

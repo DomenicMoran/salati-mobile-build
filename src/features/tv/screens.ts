@@ -39,6 +39,8 @@ export const TV_SHORTCUTS: TvShortcut[] = [
   { screen: 'reciters', labelKey: 'tvRemote.reciters', icon: 'book-outline' },
   { screen: 'quran', labelKey: 'tvRemote.quran', icon: 'reader-outline' },
   { screen: 'podcasts', labelKey: 'tvRemote.podcasts', icon: 'headset-outline' },
+  { screen: 'audiobooks', labelKey: 'tvRemote.audiobooks', icon: 'book-outline' },
+  { screen: 'gebetgemeinsam', labelKey: 'tvRemote.gebetgemeinsam', icon: 'people-outline' },
   { screen: 'quiz', labelKey: 'tvRemote.quiz', icon: 'help-circle-outline' },
   { screen: 'pairing', labelKey: 'tvRemote.pairing', icon: 'qr-code-outline' },
   { screen: 'settings', labelKey: 'tvRemote.settings', icon: 'settings-outline' },

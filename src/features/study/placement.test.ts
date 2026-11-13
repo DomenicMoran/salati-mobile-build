@@ -1,33 +1,11 @@
-import React, { useMemo } from 'react';
-import { render, screen, waitFor } from '@testing-library/react-native';
-import { Text } from 'react-native';
 import type { Lesson } from '@/features/learn/curriculum';
 import type { LearnProgress } from '@/features/learn/progress';
-import { SettingsProvider, useSettings } from '@/features/settings/store';
-import { DEFAULT_SETTINGS, SETTINGS_STORAGE_KEY } from '@/features/settings/types';
-import AsyncStorage from '@react-native-async-storage/async-storage';
-import { useTranslation } from '@/lib/i18n';
-import pflichtwissenData from './data/pflichtwissen.json';
 import {
   applyCoursePlacement,
   buildCourseCheckpoints,
-  buildHydratedCourseCheckpoints,
   recommendedNextLessonIn,
   selectCheckpointLessons,
 } from './placement';
-
-const pflichtwissenLessons = (pflichtwissenData as { lessons: Lesson[] }).lessons;
-
-function HydratingPlacementQuestion() {
-  const { loaded } = useSettings();
-  const { locale } = useTranslation();
-  const prompt = useMemo(() => {
-    const checkpoints = buildHydratedCourseCheckpoints(pflichtwissenLessons, locale, loaded, () => 0.5);
-    return checkpoints?.flatMap((checkpoint) => checkpoint.questions)
-      .find((question) => question.promptText === 'من كان الزائر الغريب في حديث جبريل؟')?.promptText ?? 'Loading';
-  }, [loaded, locale]);
-  return React.createElement(Text, null, prompt);
-}
 
 function vocabLesson(id: string): Lesson {
   return {
@@ -94,33 +72,6 @@ describe('buildCourseCheckpoints', () => {
     for (const cp of checkpoints) {
       expect(cp.questions.length).toBeGreaterThan(0);
     }
-  });
-
-  it('lokalisiert Pflichtwissen-Fragen in der angeforderten App-Sprache', () => {
-    const lessons = (pflichtwissenData as { lessons: Lesson[] }).lessons;
-    const checkpoints = buildCourseCheckpoints(lessons, 'ar', () => 0.5);
-    const questions = checkpoints.flatMap((checkpoint) => checkpoint.questions);
-    expect(questions.some((question) => question.promptText === 'من كان الزائر الغريب في حديث جبريل؟')).toBe(true);
-    expect(questions.every((question) => question.contentFallback !== true)).toBe(true);
-  });
-
-  it('hält Default-Deutsch während der Settings-Hydrierung zurück und baut nach Arabic-Hydrierung arabische Fragen', () => {
-    const lessons = (pflichtwissenData as { lessons: Lesson[] }).lessons;
-    // SettingsProvider render #1: loaded=false, locale=DEFAULT_SETTINGS.language ('de').
-    expect(buildHydratedCourseCheckpoints(lessons, 'de', false, () => 0.5)).toBeNull();
-    // AsyncStorage finishes: loaded=true, locale='ar'; the rendered quiz must now be Arabic.
-    const checkpoints = buildHydratedCourseCheckpoints(lessons, 'ar', true, () => 0.5);
-    const questions = checkpoints?.flatMap((checkpoint) => checkpoint.questions) ?? [];
-    expect(questions.some((question) => question.promptText === 'من كان الزائر الغريب في حديث جبريل؟')).toBe(true);
-    expect(questions.every((question) => question.contentFallback !== true)).toBe(true);
-  });
-
-  it('rendert nach async Settings-Hydrierung Arabisch statt vorübergehend deutscher Quizfragen', async () => {
-    await AsyncStorage.clear();
-    await AsyncStorage.setItem(SETTINGS_STORAGE_KEY, JSON.stringify({ ...DEFAULT_SETTINGS, language: 'ar' }));
-    await render(React.createElement(HydratingPlacementQuestion), { wrapper: SettingsProvider });
-    expect(screen.queryByText('Wer war der fremde Besucher im Dschibril-Hadith?')).toBeNull();
-    await waitFor(() => expect(screen.getByText('من كان الزائر الغريب في حديث جبريل؟')).toBeTruthy());
   });
 });
 

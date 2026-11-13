@@ -1636,6 +1636,116 @@ export const CHANGELOG: ChangelogVersion[] = [
       },
     ],
   },
+  {
+    version: '1.56.5',
+    date: '2026-11-09',
+    entries: [
+      {
+        type: 'feature',
+        de: 'Bibliothek mit Quellen und Lizenzen, Hörbuch-Hub unter Lernen und deutsche Wortanalyse mit Fragmenten im Koran-Leser. Lernunterlagen bleiben in jeder Oberflächensprache sichtbar; QUL-Wort-für-Wort ist in der Produktion bewusst aus.',
+        en: 'Library with sources and licences, audiobook hub under Learn, and German word analysis with fragments in the Quran reader. Handouts stay visible in every UI language; QUL word-by-word is intentionally off in production.',
+      },
+    ],
+  },
+  {
+    version: '1.56.6',
+    date: '2026-11-09',
+    entries: [
+      {
+        type: 'fix',
+        de: 'Bibliothek: Lernunterlagen und Tafsîr-Bücher öffnen in der App zuverlässig als PDF (Android WebView). Gleiches Bibliotheks-Release wie 1.56.5, jetzt vollständig in den Stores.',
+        en: 'Library: handouts and Tafsir books open reliably as in-app PDFs on Android (WebView). Same library release as 1.56.5, now fully live in stores.',
+      },
+    ],
+  },
+  {
+    version: '1.56.7',
+    date: '2026-11-10',
+    entries: [
+      {
+        type: 'feature',
+        de: 'Bibliothek: Salati Islam-Lernwerk (All-in-One) als Verlags-PDF im Reader mit Kapitelnavigation — ein Sammelband im Hub statt des älteren Salati-Lernbuchs.',
+        en: 'Library: Salati Islam-Lernwerk (all-in-one) publisher PDF in the reader with chapter navigation — one compendium in the hub instead of the older Salati book.',
+      },
+    ],
+  },
+  {
+    version: '1.57.0',
+    date: '2026-11-11',
+    entries: [
+      {
+        type: 'feature',
+        de: 'Bibliothek Reader v1: pdf.js-Leser mit Kapitel-TOC, Lesezeichen, Suche und Regalen im Hub — zuverlässiger Start auf Android und Web.',
+        en: 'Library Reader v1: pdf.js reader with chapter TOC, bookmarks, search and hub shelves — more reliable startup on Android and web.',
+      },
+    ],
+  },
+  {
+    version: '1.58.0',
+    date: '2026-11-11',
+    entries: [
+      {
+        type: 'feature',
+        de: 'Salati merkt sich jetzt Podcast- und Hörbuch-Positionen, setzt Hörfortschritt nach Neustart fort und synchronisiert Fortschritt beim Gerätewechsel smarter.',
+        en: 'Salati now remembers podcast and audiobook positions, resumes after restart, and merges progress more safely when you switch devices.',
+      },
+    ],
+  },
+  {
+    version: '1.59.0',
+    date: '2026-11-12',
+    entries: [
+      {
+        type: 'feature',
+        de: 'Mushaf-Hören nutzt denselben Player und Fortschritt wie der Sure-Leser — Weiterhören bleibt auch beim Verlassen der Seitenansicht verfügbar.',
+        en: 'Mushaf listening now uses the same player and progress as surah playback — resume stays available when you leave the page view.',
+      },
+    ],
+  },
+  {
+    version: '1.59.1',
+    date: '2026-11-12',
+    entries: [
+      {
+        type: 'fix',
+        de: 'Podcast- und Hörbuch-Indizes laden auf Android zuverlässiger (leere Netzantworten und Cache-Fallback).',
+        en: 'Podcast and audiobook indexes load more reliably on Android (empty network responses and cache fallback).',
+      },
+    ],
+  },
+  {
+    version: '1.60.0',
+    date: '2026-11-12',
+    entries: [
+      {
+        type: 'feature',
+        de: 'Unter Einstellungen und auf salati.pro: Hinweis auf das Buch „Wie ich nach 26 Jahren Frieden fand“ — BoD-Buchshop als primärer Kauflink, Amazon sekundär; E-Book-Preis ohne Link, bis ein Shop-Link verifiziert ist.',
+        en: 'In settings and on salati.pro: pointer to the book “Wie ich nach 26 Jahren Frieden fand” — BoD bookshop as the primary buy link, Amazon secondary; e-book price without a link until a shop URL is verified.',
+      },
+    ],
+  },
+  {
+    version: '1.61.0',
+    date: '2026-11-13',
+    entries: [
+      {
+        type: 'fix',
+        de: 'salati.pro: Bibliothek, Handouts und PDF-Reader stabiler; schmale Displays: kompaktere Navigation und Gebetszeiten-Woche.',
+        en: 'salati.pro: more reliable library, handouts, and PDF reader; narrow screens get a tighter tab bar and prayer-times week table.',
+      },
+    ],
+  },
+  {
+    version: '1.62.0',
+    date: '2026-11-13',
+    entries: [
+      {
+        type: 'fix',
+        de: 'salati.pro: stabile Seitentitel ohne Konsolen-Hydrationsfehler; Einstellungen mit konsistenter Koran-Schriftvorschau.',
+        en: 'salati.pro: stable page titles without console hydration errors; settings with a consistent Quran font preview.',
+      },
+    ],
+  },
 ];
 /** Neueste Version zuerst - für die Anzeige im Changelog-Screen. */
 export function changelogNewestFirst(): ChangelogVersion[] {

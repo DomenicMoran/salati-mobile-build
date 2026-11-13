@@ -19,6 +19,7 @@ import { IconSymbol } from '@/components/ui/icon-symbol';
 import { ThemedText } from '@/components/themed-text';
 import { Colors, Spacing } from '@/constants/theme';
 import { useResolvedScheme } from '@/hooks/use-resolved-scheme';
+import { usePageTitle } from '@/lib/use-page-title';
 import { useTranslation } from '@/lib/i18n';
 import { isRtlLocale } from '@/lib/locale-detect';
 
@@ -56,6 +57,7 @@ export function ScreenHeader({
   right,
   children,
 }: ScreenHeaderProps) {
+  usePageTitle(title);
   const scheme = useResolvedScheme();
   const colors = Colors[scheme];
   const { t, locale } = useTranslation();

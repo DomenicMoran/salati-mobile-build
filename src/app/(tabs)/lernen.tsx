@@ -18,6 +18,7 @@ import { splitSequential, useLayout } from '@/hooks/use-layout';
 import { useRtl } from '@/hooks/use-rtl';
 import { LERNEN_NAV } from '@/lib/lernenNav';
 import { useTranslation } from '@/lib/i18n';
+import { DocumentHeadTitle } from '@/lib/document-head-title';
 
 export default function LernenScreen() {
   const { t } = useTranslation();
@@ -39,6 +40,7 @@ export default function LernenScreen() {
 
   return (
     <ThemedView type="groupedBackground" style={styles.container}>
+      <DocumentHeadTitle title={t('nav.lernen')} />
       <SafeAreaView style={styles.safeArea}>
         <ThemedText type="title" style={styles.title}>
           {t('nav.lernen')}
@@ -47,6 +49,12 @@ export default function LernenScreen() {
         <ScrollView
           contentContainerStyle={[styles.list, { maxWidth: contentWidth }]}
           showsVerticalScrollIndicator={false}>
+          <NavTile
+            icon="school"
+            label={t('learn.abc.startCta')}
+            index={laufIndex++}
+            onPress={() => router.push('/learn/abc/abc-welcome' as Href)}
+          />
           <View style={sectionColumns > 1 ? [styles.columnsRow, rtl && styles.columnsRowRtl] : undefined}>
             {spalten.map((spalte, spaltenIndex) => (
               <View key={spaltenIndex} style={sectionColumns > 1 ? styles.column : undefined}>

@@ -78,12 +78,7 @@ export function EditionPicker(props: Props) {
                   <Pressable
                     onPress={() => onSelect(item.identifier)}
                     style={({ pressed }) => [styles.row, pressed && styles.rowPressed, selected && styles.rowSelected]}>
-                    <ThemedText
-                      type={selected ? 'smallBold' : 'default'}
-                      numberOfLines={2}
-                      style={styles.rowLabel}>
-                      {editionDisplayName(item)}
-                    </ThemedText>
+                    <ThemedText type={selected ? 'smallBold' : 'default'}>{editionDisplayName(item)}</ThemedText>
                     <View style={styles.rowRight}>
                       {recommended.includes(item.identifier) && (
                         <ThemedText type="small" themeColor="textSecondary">
@@ -124,16 +119,13 @@ const styles = StyleSheet.create({
   row: {
     flexDirection: 'row',
     justifyContent: 'space-between',
-    alignItems: 'center',
-    gap: Spacing.two,
     paddingVertical: Spacing.three,
     borderBottomWidth: StyleSheet.hairlineWidth,
     borderBottomColor: 'rgba(128,124,116,0.35)',
     ...(Platform.OS === 'web' ? { cursor: 'pointer' } : null),
   },
-  rowLabel: { flex: 1, minWidth: 0 },
   rowPressed: { opacity: 0.6 },
   rowSelected: { opacity: 1 },
-  rowRight: { flexShrink: 0, flexDirection: 'row', alignItems: 'center', gap: Spacing.two },
+  rowRight: { flexDirection: 'row', alignItems: 'center', gap: Spacing.two },
   pressableWeb: { cursor: 'pointer' },
 });

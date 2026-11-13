@@ -28,20 +28,13 @@ export function mondayFirstWeekdayIdx(date: Date): number {
  * Fenster. `now` bestimmt, welche Zeile als "heute" markiert wird.
  */
 export function buildWeekRows(
-  days: { date: Date | string; timings: Timings }[],
+  days: { date: Date; timings: Timings }[],
   now: Date = new Date(),
 ): WeekDayRow[] {
-  // Der persistierte Query-Cache serialisiert Date als ISO-String. Nach
-  // einem Neustart daher am Darstellungsrand wiederherstellen, ohne den
-  // Cache zu mutieren oder das Offline-Fenster zu verwerfen.
-  return days.flatMap(({ date: rawDate, timings }) => {
-    const date = rawDate instanceof Date ? rawDate : new Date(rawDate);
-    if (!Number.isFinite(date.getTime())) return [];
-    return [{
-      date,
-      weekdayIdx: mondayFirstWeekdayIdx(date),
-      isToday: isSameDay(date, now),
-      timings,
-    }];
-  });
+  return days.map(({ date, timings }) => ({
+    date,
+    weekdayIdx: mondayFirstWeekdayIdx(date),
+    isToday: isSameDay(date, now),
+    timings,
+  }));
 }

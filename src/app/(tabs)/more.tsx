@@ -1,4 +1,4 @@
-import { router, type Href } from 'expo-router';
+import { router } from 'expo-router';
 import { Platform, ScrollView, StyleSheet, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
@@ -151,7 +151,7 @@ export default function MoreScreen() {
                           index={itemIndex++}
                           label={t(item.labelKey)}
                           icon={item.icon}
-                          onPress={() => router.push(item.href as Href)}
+                          onPress={() => router.push(item.href)}
                         />
                       ))}
                     </ListCard>

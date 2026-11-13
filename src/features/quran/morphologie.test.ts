@@ -2,6 +2,7 @@
 // gegen eigene Fixtures (kein echter Netzzugriff) — Muster wie
 // features/ki/korpus.test.ts und features/quran/offline-audio.test.ts.
 import * as FileSystem from 'expo-file-system/legacy';
+import { Platform } from 'react-native';
 
 import { ladeMorphologie, morphologieUrl } from './morphologie';
 import type { MorphologieDatei } from './morphologieTypen';
@@ -201,20 +202,23 @@ describe('ladeMorphologie — Cache statt erneutem Download', () => {
 
 describe('ladeMorphologie — ohne Dateisystem (Web)', () => {
   it('liest/schreibt keinen Cache, wenn kein Dokumentverzeichnis verfügbar ist', async () => {
-    // documentDirectory ist im echten Modul ein `const` (readonly-Export) —
-    // im Mock per Cast überschreibbar, um die Web-Plattform zu simulieren.
-    (fs as unknown as { documentDirectory: string | undefined }).documentDirectory = undefined;
+    const prevOs = Platform.OS;
+    Platform.OS = 'web';
     (globalThis.fetch as unknown as jest.Mock).mockResolvedValue({
       ok: true,
       status: 200,
       text: async () => JSON.stringify(gueltigeDatei(110)),
     });
 
-    const result = await ladeMorphologie(110);
+    try {
+      const result = await ladeMorphologie(110);
 
-    expect(result).toEqual(gueltigeDatei(110));
-    expect(fs.getInfoAsync).not.toHaveBeenCalled();
-    expect(fs.writeAsStringAsync).not.toHaveBeenCalled();
-    expect(globalThis.fetch).toHaveBeenCalledTimes(1);
+      expect(result).toEqual(gueltigeDatei(110));
+      expect(fs.getInfoAsync).not.toHaveBeenCalled();
+      expect(fs.writeAsStringAsync).not.toHaveBeenCalled();
+      expect(globalThis.fetch).toHaveBeenCalledTimes(1);
+    } finally {
+      Platform.OS = prevOs;
+    }
   });
 });

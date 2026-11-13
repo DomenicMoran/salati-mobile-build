@@ -9,6 +9,7 @@ Heures de prière avec Adhan, Qibla, Coran et Ramadan — sans pub, sans compte
 (76/80 Zeichen)
 
 ## Vollständige Beschreibung
+
 Salati vous accompagne dans votre journée de musulman — avec des heures de prière précises, le Coran, une IA privée sur votre appareil et un cours complet pour apprendre à lire le Coran à partir de zéro. Sans publicité, sans compte, sans pistage.
 
 PRIÈRE ET QUOTIDIEN
@@ -47,20 +48,20 @@ SALATI IA
 • Clairement indiqué : réponse générée par IA, pas une fatwa ni l'avis d'un savant
 
 SAVOIR ET CŒUR
-• Étude : 14 cours sourcés avec 363 leçons — aqida, tajwid, 40 hadiths (Nawawi), Sira, prophètes, compagnons et savants, akhlaq, mariage et famille, grammaire du Coran, arabe du quotidien, arabe de Médine, dialectes — ordre libre
+• Étude : 12 cours sourcés avec 311 leçons — aqida, tajwid, 40 hadiths (Nawawi), Sira, prophètes, compagnons et savants, akhlaq, mariage et famille, grammaire du Coran, arabe du quotidien, arabe de Médine (livres 1–4), dialectes arabes — ordre des cours et dialectes libre
 • Test de niveau et de connaissances, révision espacée, travail des points faibles, série d'apprentissage et objectif quotidien
 • Entraînement et Quiz : 14 modes, plus une révision des erreurs
 • Récapitulatif hebdomadaire sous forme d'image à partager
 • Badges pour les étapes franchies
-• Recueils de hadiths avec recherche dans tous à la fois
+• Recueils de hadiths avec recherche dans tous à la fois (arabe, anglais, turc)
 • Radio du Coran : récitations 24h/24
 • 99 Noms d'Allah avec audio, dhikr après la prière et douas avec indication des sources
 • Guides pratiques illustrés : woudou, ghousl, prière, janaza, hajj, omra et plus
 • Calculateurs de zakat et d'héritage, sagesses documentées, compteur de tasbih
 
-LIVRES AUDIO, PODCAST, VIDÉOS ET REELS
-• Livres audio « Connaissances islamiques essentielles » (8 ch.) et « Grammaire arabe — Cours 3 » (10 ch.) : audio et vidéo de présentation en 14 langues
-• Podcast Salati, vidéos, reels et PDF — Spotify, YouTube, Instagram
+PODCAST, VIDÉOS ET REELS
+• Podcast « La langue du Coran » : l'arabe coranique épisode par épisode — sur Spotify
+• Vidéos sur YouTube, Reels sur Instagram et PDF à télécharger
 
 VOS DONNÉES VOUS APPARTIENNENT
 Sans publicité, sans compte, sans SDK de pistage : vos données restent sur votre appareil. Votre position ne sert qu'aux horaires, à la Qibla et à la recherche à proximité et est envoyée à AlAdhan et OpenStreetMap : anonyme et facultative. Fonctionne hors ligne.
@@ -68,7 +69,7 @@ Sans publicité, sans compte, sans SDK de pistage : vos données restent sur vot
 Questions ou remarques ? salati@domenicmoran.de
 Confidentialité : https://www.salati.pro/datenschutz
 
-(3990/4000 Zeichen)
+(3966/4000 Zeichen)
 
 ## Keywords
 

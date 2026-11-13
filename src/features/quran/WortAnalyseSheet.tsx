@@ -59,6 +59,7 @@ import type { WurzelTypKategorie } from './grammatik';
 import { useVerseMorphologie } from './morphologieHooks';
 import { wordTajweedRuleFamilies } from './tajweedRuleInfo';
 import { useQuranFont } from './useQuranFont';
+import { wbwGlossFuerSheetAnzeige } from './wbw';
 
 export interface WordInfoWord {
   arabic: string;
@@ -145,7 +146,11 @@ export function WortAnalyseSheet({
   } = useVerseMorphologie(surah, ayah, visible);
   const morphWord = verse?.find((w) => w.position === position);
 
-  const displayTranslation = translationOverride ?? word?.translation ?? '';
+  const displayTranslation = wbwGlossFuerSheetAnzeige({
+    locale,
+    translationOverride,
+    englischesGloss: word?.translation,
+  });
   const hasContent = !!word && (displayTranslation !== '' || word.transliteration !== '');
   const showNoData = !loading && !error && !hasContent;
   const ruleFamilies = wordTajweedRuleFamilies(word?.tajweedRules);
@@ -270,20 +275,6 @@ export function WortAnalyseSheet({
                   <ThemedText type="default" style={rtl && styles.textRtl}>
                     {displayTranslation}
                   </ThemedText>
-                  {/* Wort-für-Wort-Übersetzung kommt von quran.com und ist dort NUR
-                      auf Englisch verfügbar (weder `language`- noch
-                      `word_translation_language`-Parameter ändern das, live
-                      geprüft) — anders als die vollständige Vers-Übersetzung im
-                      Reader, die in der jeweiligen App-Sprache läuft. Ohne diesen
-                      Hinweis würden nicht-englischsprachige Nutzer denken, das sei
-                      bereits ihre Sprache. Bei einem gepflegten deutschen Gloss
-                      (translationOverride) entfällt der Hinweis, weil dann bereits
-                      die App-Sprache angezeigt wird. */}
-                  {locale !== 'en' && !translationOverride && (
-                    <ThemedText type="small" themeColor="textSecondary" style={styles.languageNote}>
-                      {t('quran.wordInfo.translationLanguageNote')}
-                    </ThemedText>
-                  )}
                 </View>
               )}
 

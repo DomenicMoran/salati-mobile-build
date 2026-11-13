@@ -41,7 +41,7 @@ export default function AudiobookChapterVideoScreen() {
 
   const chapter = useMemo(() => {
     if (!data || !isAudiobookTrackId(trackId)) return undefined;
-    return chaptersForTrack(data.entries, trackId, contentLang).find((c) => c.chapter_no === chapterNo);
+    return chaptersForTrack(data.entries, trackId, contentLang, data).find((c) => c.chapter_no === chapterNo);
   }, [data, trackId, contentLang, chapterNo]);
 
   const trackLabelKey = AUDIOBOOK_HUB_TRACKS.find((x) => x.id === trackId)?.labelKey;

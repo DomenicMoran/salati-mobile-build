@@ -1,0 +1,14 @@
+الأربعون النووية — متن الإمام النووي (Arabic matn)
+
+Rights basis: Public domain (classical work; author died 676 AH / 1277 CE).
+Compiler: Yaḥyā ibn Sharaf al-Nawawī (d. 676 AH).
+Modern editor/commentary in other editions may be separately copyrighted; this file is the
+matn manuscript PDF only (40 hadith, without Ibn Rajab’s later additions).
+
+Primary sources (verification 2026-11-10):
+- Wikisource page: https://ar.wikisource.org/wiki/الأربعون_النووية
+- Wikisource file (public domain): https://ar.wikisource.org/wiki/ملف:الأربعون_النووية_خ.pdf
+
+Repository copy: podcast/handouts/third-party/hadith-arbaeen-nawawi-matn.pdf
+SHA-256: 0d1b46acd4d49e113e704dc167470cdad7f8c2b006dc53512c099aa0201d5e9d
+Pages: 26 (manuscript scan)

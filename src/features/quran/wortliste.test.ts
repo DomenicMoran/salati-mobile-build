@@ -6,6 +6,7 @@
 // darf (eine gültige, frische Datei spart den Abruf und ein Netzfehler wirft
 // den brauchbaren Altstand nicht weg).
 import * as FileSystem from 'expo-file-system/legacy';
+import { Platform } from 'react-native';
 
 import { wordByWordUrl, type QuranWord } from './api';
 import {
@@ -250,13 +251,18 @@ describe('ladeSurahWortliste — Cache statt erneutem Abruf', () => {
   });
 
   it('kommt ohne Dateisystem aus (Web): lädt vom Netz, schreibt nichts', async () => {
-    (fs as unknown as { documentDirectory: string | undefined }).documentDirectory = undefined;
+    const prevOs = Platform.OS;
+    Platform.OS = 'web';
     netzLiefert(antwort());
 
-    const ergebnis = await ladeSurahWortliste(8);
+    try {
+      const ergebnis = await ladeSurahWortliste(8);
 
-    expect(ergebnis).toEqual(antwort());
-    expect(fs.readAsStringAsync).not.toHaveBeenCalled();
-    expect(fs.writeAsStringAsync).not.toHaveBeenCalled();
+      expect(ergebnis).toEqual(antwort());
+      expect(fs.readAsStringAsync).not.toHaveBeenCalled();
+      expect(fs.writeAsStringAsync).not.toHaveBeenCalled();
+    } finally {
+      Platform.OS = prevOs;
+    }
   });
 });

@@ -37,11 +37,23 @@ import {
   type PodcastEpisode,
   type TranscriptSegment,
 } from '@/features/podcast/data';
-import { filterByContentLanguage } from '@/features/media/content-language';
+import podcastFallbackIndex from '@/features/podcast/index.fallback.json';
 import { ContentLanguageBadge } from '@/features/media/content-language-badge';
 import { resolveEpisodeAudioUri, usePodcastDownload } from '@/features/podcast/downloads';
 import { Slider } from '@/features/podcast/slider';
 import { useQuranFont } from '@/features/quran/useQuranFont';
+import {
+  loadAudioProgressEntry,
+  podcastProgressId,
+} from '@/features/progress/audioProgress';
+import {
+  clearSleepTimer,
+  setSleepTimerMinutes,
+  setSleepTimerEndOfEpisode,
+} from '@/features/progress/sleepTimer';
+import {
+  useSharedAudioProgress,
+} from '@/features/progress/useSharedAudioProgress';
 import { useSharedPlayer, type NowPlayingInfo } from '@/features/quran/usePlayer';
 import { useResolvedScheme } from '@/hooks/use-resolved-scheme';
 import { useRtl } from '@/hooks/use-rtl';
@@ -55,7 +67,7 @@ const SKIP_SEC = 15;
 export default function PodcastPlayerScreen() {
   const { episode: episodeParam } = useLocalSearchParams<{ episode: string }>();
   const episodeNo = Number(episodeParam);
-  const { t, locale } = useTranslation();
+  const { t } = useTranslation();
   const rtl = useRtl();
   const scheme = useResolvedScheme();
   const colors = Colors[scheme];
@@ -78,9 +90,9 @@ export default function PodcastPlayerScreen() {
     staleTime: 60 * 60 * 1000,
   });
 
-  const episodes = filterByContentLanguage(data?.episodes ?? [], locale);
+  const fallbackEpisodes = (podcastFallbackIndex as { episodes: PodcastEpisode[] }).episodes ?? [];
+  const episodes = data?.episodes && data.episodes.length > 0 ? data.episodes : fallbackEpisodes;
   const episode = episodes.find((e) => e.episode_no === episodeNo);
-  const sourceEpisode = data?.episodes.find((e) => e.episode_no === episodeNo);
   const dl = usePodcastDownload(episode);
   const idx = episodes.findIndex((e) => e.episode_no === episodeNo);
   const prev = idx > 0 ? episodes[idx - 1] : undefined;
@@ -204,7 +216,11 @@ export default function PodcastPlayerScreen() {
   // nur den Titel, sonst gingen Auto-Advance + Mini-Player-Steuerung verloren.
   async function playEpisode(ep: PodcastEpisode) {
     const uri = await resolveEpisodeAudioUri(ep);
+    const saved = await loadAudioProgressEntry(podcastProgressId(ep.episode_no));
     player.replace(uri);
+    if (saved && saved.positionSec >= 5) {
+      player.seekTo(saved.positionSec);
+    }
     player.setPlaybackRate(speed);
     configureBackground(ep);
     player.play();
@@ -259,20 +275,33 @@ export default function PodcastPlayerScreen() {
   // (s. handleEndedFor + SharedPlayerProvider) — so greift es auch, wenn dieser
   // Screen längst verlassen ist und der Podcast nur noch im Mini-Player läuft.
 
-  // Sleeptimer (Minuten): pausiert nach Ablauf. 'episode' wird oben behandelt.
-  const sleepTimeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
   useEffect(() => {
-    if (sleepTimeoutRef.current) {
-      clearTimeout(sleepTimeoutRef.current);
-      sleepTimeoutRef.current = null;
+    if (sleep == null) {
+      clearSleepTimer();
+      return;
     }
-    if (typeof sleep === 'number') {
-      sleepTimeoutRef.current = setTimeout(() => player.pause(), sleep * 60_000);
-    }
-    return () => {
-      if (sleepTimeoutRef.current) clearTimeout(sleepTimeoutRef.current);
-    };
-  }, [sleep, player]);
+    if (typeof sleep === 'number') setSleepTimerMinutes(sleep, `${sleep} min`);
+    else setSleepTimerEndOfEpisode();
+  }, [sleep]);
+
+  useSharedAudioProgress({
+    active: !!episode && isThisLoaded,
+    kind: 'podcast',
+    status,
+    buildEntry: useCallback(
+      (positionSec, durationSec) =>
+        episode
+          ? {
+              kind: 'podcast',
+              id: podcastProgressId(episode.episode_no),
+              positionSec,
+              durationSec,
+              meta: { episodeNo: episode.episode_no },
+            }
+          : null,
+      [episode],
+    ),
+  });
 
   function togglePlay() {
     if (!episode) return;
@@ -324,16 +353,14 @@ export default function PodcastPlayerScreen() {
   }
 
   if (isError || !episode) {
-    const unavailableInLocale = !isError && !!sourceEpisode && !episode;
     return (
       <ThemedView style={styles.container}>
         <SafeAreaView style={styles.safeArea}>
           <ScreenHeader title={t('podcast.title')} onBack={() => backOr('/podcast')} />
           <View style={styles.stateCenter}>
             <ThemedText type="small" themeColor="textSecondary">
-              {unavailableInLocale ? t('podcast.languageOnly') : t('common.error')}
+              {t('common.error')}
             </ThemedText>
-            {unavailableInLocale ? <ContentLanguageBadge lang={sourceEpisode.lang} /> : null}
           </View>
         </SafeAreaView>
       </ThemedView>

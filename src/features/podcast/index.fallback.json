@@ -1,0 +1,117 @@
+{
+  "updated_at": "2026-07-28T13:48:30.460622+00:00",
+  "series": {
+    "title": "Sprache des Qur'an",
+    "subtitle": "Arabisch verstehen — vom Alphabet bis zum Selbsttest",
+    "description": "Der Qur'an auf Arabisch — ruhig und verstaendlich zum Zuhoeren erklaert, mit deutscher Erzaehlstimme und arabischer Rezitation. Vom Lesenlernen ueber Tadschwied, Grammatik, das Madinah-Buch und den Wortschatz bis zu den kurzen Suren, Glaubenslehre, Sira und Selbsttest — zehn Reihen in der Reihenfolge des Lernwegs.",
+    "cover_url": "https://pub-d0489c0572704285af79896edb72cbed.r2.dev/podcast/series/cover.png"
+  },
+  "episodes": [
+    {
+      "episode_no": 63,
+      "title": "Arabisch lesen, Schritt für Schritt — das Alphabet und die Uthmani-Schrift",
+      "description": "Arabisch lesen (1): Warum die Uthmani-Schrift — und das komplette Alphabet mit Namen und Lautwert.",
+      "topics": [
+        "Warum wir die Uthmani-Schrift lernen, Die 28 Buchstaben mit Namen und Lautwert, Buchstabenkörper, Punkte und Formen"
+      ],
+      "duration_sec": 854,
+      "lang": "de",
+      "audio_url": "https://pub-d0489c0572704285af79896edb72cbed.r2.dev/podcast/ep63/de.mp3",
+      "cover_url": "https://pub-d0489c0572704285af79896edb72cbed.r2.dev/podcast/ep63/cover.png",
+      "transcript": [
+        {
+          "type": "de",
+          "text": "Assalamu alaikum und herzlich willkommen.",
+          "start_ms": 0,
+          "end_ms": 3098
+        },
+        {
+          "type": "de",
+          "text": "Heute beginnen wir gemeinsam etwas ganz Neues: eine kleine Reihe, die dich Schritt für Schritt zum Lesen der arabischen Schrift führt.",
+          "start_ms": 3098,
+          "end_ms": 13227
+        },
+        {
+          "type": "de",
+          "text": "Sechs Folgen lang gehen wir vom allerersten Buchstaben bis zu dem Punkt, an dem du eine Zeile im Mushaf selbst entziffern kannst.",
+          "start_ms": 13227,
+          "end_ms": 22977
+        },
+        {
+          "type": "de",
+          "text": "Du brauchst kein Vorwissen.",
+          "start_ms": 22977,
+          "end_ms": 25018
+        },
+        {
+          "type": "de",
+          "text": "Du brauchst nur ein bisschen Geduld mit dir selbst und ein paar ruhige Minuten am Tag.",
+          "start_ms": 25018,
+          "end_ms": 31518
+        }
+      ],
+      "series": "lesen",
+      "series_title": "Arabisch lesen — Schritt für Schritt",
+      "series_order": 1,
+      "course": "archiv",
+      "course_title": "Podcast-Folgen",
+      "course_order": 4,
+      "chapter_no": 1,
+      "chapter_title": "Lesen lernen",
+      "lesson_no": 63
+    },
+    {
+      "episode_no": 1,
+      "title": "Lesen lernen — Buchstaben, Zeichen und die ersten Lesegesetze",
+      "description": "Wie die arabische Schrift funktioniert — Buchstaben, Vokalzeichen und die ersten Lesegesetze.",
+      "topics": [
+        "Schrift & Buchstaben-Verbindungen, Vokale & Zusatzzeichen, Lesegesetze (Sonnen- und Mondbuchstaben)"
+      ],
+      "duration_sec": 714,
+      "lang": "de",
+      "audio_url": "https://pub-d0489c0572704285af79896edb72cbed.r2.dev/podcast/ep01/de.mp3",
+      "cover_url": "https://pub-d0489c0572704285af79896edb72cbed.r2.dev/podcast/ep01/cover.png",
+      "transcript": [
+        {
+          "type": "de",
+          "text": "Assalamu alaikum und herzlich willkommen.",
+          "start_ms": 0,
+          "end_ms": 3173
+        },
+        {
+          "type": "de",
+          "text": "Schön, dass du da bist.",
+          "start_ms": 3173,
+          "end_ms": 4953
+        },
+        {
+          "type": "de",
+          "text": "Wir beginnen heute eine gemeinsame Reise – Schritt für Schritt hin zur Sprache des Qur'an.",
+          "start_ms": 4953,
+          "end_ms": 11919
+        },
+        {
+          "type": "de",
+          "text": "Du brauchst kein Vorwissen, nur deine Ohren und ein bisschen Geduld mit dir selbst.",
+          "start_ms": 11919,
+          "end_ms": 18343
+        },
+        {
+          "type": "de",
+          "text": "In dieser ersten Folge legen wir das Fundament: Wir schauen uns an, wie die arabische Schrift funktioniert, welche kleinen Zeichen über und unter den Buchstaben den Klang bestimmen, und wir lernen unsere ersten beiden Lesegesetze.",
+          "start_ms": 18343,
+          "end_ms": 36145
+        }
+      ],
+      "series": "grammar",
+      "series_title": "Sprache des Qur'an",
+      "series_order": 3,
+      "course": "archiv",
+      "course_title": "Podcast-Folgen",
+      "course_order": 4,
+      "chapter_no": 2,
+      "chapter_title": "Sprache des Qur'ans",
+      "lesson_no": 1
+    }
+  ]
+}

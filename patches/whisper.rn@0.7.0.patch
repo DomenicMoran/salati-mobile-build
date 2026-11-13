@@ -1,0 +1,52 @@
+diff --git a/ios/rnwhisper.xcframework/ios-arm64/rnwhisper.framework/Info.plist b/ios/rnwhisper.xcframework/ios-arm64/rnwhisper.framework/Info.plist
+index 417aedad0c99a0e33e94c9a9735cc7942fc44bec..2e38ca6f53e6233b117dbca19469c5d5122e3a07 100644
+--- a/ios/rnwhisper.xcframework/ios-arm64/rnwhisper.framework/Info.plist
++++ b/ios/rnwhisper.xcframework/ios-arm64/rnwhisper.framework/Info.plist
+@@ -2,6 +2,8 @@
+ <!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+ <plist version="1.0">
+ <dict>
++	<key>MinimumOSVersion</key>
++	<string>15.1</string>
+ 	<key>CFBundleDevelopmentRegion</key>
+ 	<string>English</string>
+ 	<key>CFBundleExecutable</key>
+diff --git a/ios/rnwhisper.xcframework/ios-arm64_x86_64-simulator/rnwhisper.framework/Info.plist b/ios/rnwhisper.xcframework/ios-arm64_x86_64-simulator/rnwhisper.framework/Info.plist
+index 417aedad0c99a0e33e94c9a9735cc7942fc44bec..2e38ca6f53e6233b117dbca19469c5d5122e3a07 100644
+--- a/ios/rnwhisper.xcframework/ios-arm64_x86_64-simulator/rnwhisper.framework/Info.plist
++++ b/ios/rnwhisper.xcframework/ios-arm64_x86_64-simulator/rnwhisper.framework/Info.plist
+@@ -2,6 +2,8 @@
+ <!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+ <plist version="1.0">
+ <dict>
++	<key>MinimumOSVersion</key>
++	<string>15.1</string>
+ 	<key>CFBundleDevelopmentRegion</key>
+ 	<string>English</string>
+ 	<key>CFBundleExecutable</key>
+diff --git a/ios/rnwhisper.xcframework/tvos-arm64/rnwhisper.framework/Info.plist b/ios/rnwhisper.xcframework/tvos-arm64/rnwhisper.framework/Info.plist
+index 417aedad0c99a0e33e94c9a9735cc7942fc44bec..2e38ca6f53e6233b117dbca19469c5d5122e3a07 100644
+--- a/ios/rnwhisper.xcframework/tvos-arm64/rnwhisper.framework/Info.plist
++++ b/ios/rnwhisper.xcframework/tvos-arm64/rnwhisper.framework/Info.plist
+@@ -2,6 +2,8 @@
+ <!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+ <plist version="1.0">
+ <dict>
++	<key>MinimumOSVersion</key>
++	<string>15.1</string>
+ 	<key>CFBundleDevelopmentRegion</key>
+ 	<string>English</string>
+ 	<key>CFBundleExecutable</key>
+diff --git a/ios/rnwhisper.xcframework/tvos-arm64_x86_64-simulator/rnwhisper.framework/Info.plist b/ios/rnwhisper.xcframework/tvos-arm64_x86_64-simulator/rnwhisper.framework/Info.plist
+index 417aedad0c99a0e33e94c9a9735cc7942fc44bec..2e38ca6f53e6233b117dbca19469c5d5122e3a07 100644
+--- a/ios/rnwhisper.xcframework/tvos-arm64_x86_64-simulator/rnwhisper.framework/Info.plist
++++ b/ios/rnwhisper.xcframework/tvos-arm64_x86_64-simulator/rnwhisper.framework/Info.plist
+@@ -2,6 +2,8 @@
+ <!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+ <plist version="1.0">
+ <dict>
++	<key>MinimumOSVersion</key>
++	<string>15.1</string>
+ 	<key>CFBundleDevelopmentRegion</key>
+ 	<string>English</string>
+ 	<key>CFBundleExecutable</key>

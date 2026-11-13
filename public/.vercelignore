@@ -1,5 +1,0 @@
-# Expo exports bundled assets below paths that can contain node_modules.
-# Include only the compiled public asset tree, never project dependencies.
-!assets/**
-.env*
-.vercel

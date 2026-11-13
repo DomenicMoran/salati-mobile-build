@@ -53,9 +53,6 @@ export type VocabMeaning = Localized;
 export interface StorySection {
   title: Localized;
   text: Localized;
-  /** Passage-level provenance; a citation is not itself a scholarly approval. */
-  source?: string;
-  originLessonId?: string;
   /** Optionaler arabischer Bezugstext (z. B. zitierter Vers/Beispiel) */
   arabic?: string;
   /** Globale Ayah-Nummer (1–6236) für echte Rezitations-Audio des Beispiels */
@@ -66,9 +63,6 @@ export interface StorySection {
 export interface StoryQuizItem {
   q: Localized;
   options: Localized[];
-  /** The taught source lesson, not a keyword-selected unrelated question. */
-  originLessonId?: string;
-  source?: string;
 }
 
 export interface VocabWordItem {

@@ -18,6 +18,7 @@ import { cardinalKey } from '@/features/qibla/cardinal';
 import { hasSeenQiblaCalibrationHint, markQiblaCalibrationHintSeen } from '@/features/qibla/calibration';
 import { useCompass } from '@/features/qibla/useCompass';
 import { useSettings } from '@/features/settings/store';
+import { DocumentHeadTitle } from '@/lib/document-head-title';
 import { useTranslation } from '@/lib/i18n';
 
 const SIZE = 300;
@@ -192,6 +193,7 @@ export default function QiblaScreen() {
 
   return (
     <ThemedView style={styles.container}>
+      <DocumentHeadTitle title={t('nav.qibla')} />
       {/* ScrollView, damit im Querformat/auf kleinen Höhen (Kompass 300px +
           Bearing-Infos + Disclaimer) alles erreichbar bleibt. Im Hochformat
           identisch zu vorher: contentContainer zentriert horizontal, wächst

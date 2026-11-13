@@ -4,16 +4,23 @@ import * as Updates from 'expo-updates';
 import { checkForOtaUpdate, isDueForCheck, OTA_LAST_CHECK_KEY } from './otaUpdate';
 
 // expo-updates ist ein natives Modul — in Jest gibt es keine Implementierung.
-// isEnabled ist per Default true, damit die Tagesgrenze überhaupt geprüft wird;
-// einzelne Tests überschreiben es.
+// `mock*`-Variablen duerfen laut Jest in der factory referenziert werden.
+let mockUpdatesEnabled = true;
+const mockCheckForUpdateAsync = jest.fn();
+const mockFetchUpdateAsync = jest.fn();
 jest.mock('expo-updates', () => ({
-  isEnabled: true,
-  checkForUpdateAsync: jest.fn(),
-  fetchUpdateAsync: jest.fn(),
+  get isEnabled() {
+    return mockUpdatesEnabled;
+  },
+  checkForUpdateAsync: (...args: unknown[]) => mockCheckForUpdateAsync(...args),
+  fetchUpdateAsync: (...args: unknown[]) => mockFetchUpdateAsync(...args),
   reloadAsync: jest.fn(),
 }));
 
-const mockUpdates = Updates as jest.Mocked<typeof Updates>;
+const mockUpdates = {
+  checkForUpdateAsync: mockCheckForUpdateAsync,
+  fetchUpdateAsync: mockFetchUpdateAsync,
+} as jest.Mocked<Pick<typeof Updates, 'checkForUpdateAsync' | 'fetchUpdateAsync'>>;
 
 const TAG = 24 * 60 * 60 * 1000;
 const JETZT = 1_800_000_000_000;
@@ -90,14 +97,13 @@ describe('checkForOtaUpdate', () => {
   });
 
   it('tut nichts, wenn expo-updates im Build nicht aktiv ist', async () => {
-    // @ts-expect-error -- readonly Konstante, im Mock bewusst überschrieben
-    mockUpdates.isEnabled = false;
+    const war = mockUpdatesEnabled;
+    mockUpdatesEnabled = false;
     try {
       await expect(checkForOtaUpdate({ force: true })).resolves.toBe('skipped');
       expect(mockUpdates.checkForUpdateAsync).not.toHaveBeenCalled();
     } finally {
-      // @ts-expect-error -- s. o.
-      mockUpdates.isEnabled = true;
+      mockUpdatesEnabled = war;
     }
   });
 });

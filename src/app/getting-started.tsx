@@ -37,7 +37,7 @@ const STEPS: Step[] = [
   { id: 'howToPray', icon: 'body', href: { pathname: '/guides/[guide]', params: { guide: 'how-to-pray' } } },
   { id: 'prayerTimes', icon: 'time-outline', href: { pathname: '/onboarding', params: { mode: 'location' } } },
   { id: 'duas', icon: 'hand-left', href: '/duas' },
-  { id: 'alphabet', icon: 'language', href: '/learn' },
+  { id: 'alphabet', icon: 'language', href: '/learn/abc/abc-welcome' },
 ];
 
 export default function GettingStartedScreen() {

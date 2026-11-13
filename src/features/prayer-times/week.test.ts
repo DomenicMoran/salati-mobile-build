@@ -26,27 +26,6 @@ describe('mondayFirstWeekdayIdx', () => {
 });
 
 describe('buildWeekRows', () => {
-  it('restauriert Datumswerte nach einem JSON-Cache-Roundtrip ohne Mutation', () => {
-    const date = new Date(2026, 6, 20, 12);
-    const cached = JSON.parse(JSON.stringify([{ date, timings: TIMINGS }]));
-    const rows = buildWeekRows(cached, new Date(2026, 6, 20, 18));
-    expect(rows).toHaveLength(1);
-    expect(rows[0].date).toBeInstanceOf(Date);
-    expect(rows[0].date.getTime()).toBe(date.getTime());
-    expect(rows[0]).toMatchObject({ weekdayIdx: 0, isToday: true, timings: TIMINGS });
-    expect(typeof cached[0].date).toBe('string');
-  });
-
-  it('ignoriert ungueltige Cache-Daten statt die gesamte App abzustuerzen', () => {
-    const rows = buildWeekRows([
-      { date: 'invalid', timings: TIMINGS },
-      { date: new Date(NaN), timings: TIMINGS },
-      { date: new Date(2026, 6, 21).toISOString(), timings: TIMINGS },
-    ], new Date(2026, 6, 20));
-    expect(rows).toHaveLength(1);
-    expect(rows[0]).toMatchObject({ weekdayIdx: 1, isToday: false });
-  });
-
   it('gibt für jeden Tag eine Zeile mit Wochentag-Index und Timings zurück', () => {
     const days = [
       { date: new Date(2026, 6, 20), timings: TIMINGS },

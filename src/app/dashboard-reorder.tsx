@@ -6,7 +6,7 @@
 // umsortierbar, nicht ausblendbar — Ramadan-Countdown-Karte und Reise-Modus-
 // Banner sind rein optionale Zusatzinfos und lassen sich zusätzlich
 // deaktivieren.
-import { Pressable, ScrollView, StyleSheet, View, useWindowDimensions } from 'react-native';
+import { Pressable, ScrollView, StyleSheet, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
 import { IconSymbol, type IconName } from '@/components/ui/icon-symbol';
@@ -39,8 +39,6 @@ export default function DashboardReorderScreen() {
   const { t } = useTranslation();
   const scheme = useResolvedScheme();
   const colors = Colors[scheme];
-  const { width, fontScale } = useWindowDimensions();
-  const compact = width < 400 || fontScale >= 1.35;
 
   const order = normalizeDashboardCardOrder(settings.dashboardCardOrder);
 
@@ -71,11 +69,11 @@ export default function DashboardReorderScreen() {
             const locked = DASHBOARD_LOCKED_CARDS.includes(id);
             const hidden = settings.dashboardHiddenCards.includes(id);
             return (
-              <ThemedView key={id} type="backgroundElement" style={[styles.row, compact && styles.rowCompact]}>
+              <ThemedView key={id} type="backgroundElement" style={styles.row}>
                 <ThemedView type="backgroundSelected" style={styles.iconBadge}>
                   <IconSymbol name={CARD_ICONS[id]} size={18} color={colors.accent} />
                 </ThemedView>
-                <View style={[styles.rowText, compact && styles.rowTextCompact]}>
+                <View style={styles.rowText}>
                   <ThemedText type="default" style={hidden && styles.rowTextHidden}>
                     {t(`dashboard.cards.${id}`)}
                   </ThemedText>
@@ -85,44 +83,27 @@ export default function DashboardReorderScreen() {
                     </ThemedText>
                   )}
                 </View>
-                <View style={[styles.controls, compact && styles.controlsCompact]}>
-                  {locked ? (
-                    <View style={styles.lockedSpacer} />
-                  ) : (
-                    <Pressable
-                      accessibilityRole="switch"
-                      accessibilityLabel={t(`dashboard.cards.${id}`)}
-                      accessibilityState={{ checked: !hidden }}
-                      onPress={() => toggleHidden(id)}
-                      style={styles.switchTarget}>
-                      <ThemedSwitch
-                        value={!hidden}
-                        onValueChange={() => toggleHidden(id)}
-                        pointerEvents="none"
-                        accessible={false}
-                        importantForAccessibility="no-hide-descendants"
-                      />
-                    </Pressable>
-                  )}
-                  <Pressable
-                    disabled={isFirst}
-                    accessibilityRole="button"
-                    accessibilityState={{ disabled: isFirst }}
-                    accessibilityLabel={t('dashboard.reorder.moveUp')}
-                    onPress={() => move(id, 'up')}
-                    style={[styles.arrowButton, isFirst && styles.arrowButtonDisabled]}>
-                    <IconSymbol name="chevron-up" size={20} color={isFirst ? colors.textSecondary : colors.accent} />
-                  </Pressable>
-                  <Pressable
-                    disabled={isLast}
-                    accessibilityRole="button"
-                    accessibilityState={{ disabled: isLast }}
-                    accessibilityLabel={t('dashboard.reorder.moveDown')}
-                    onPress={() => move(id, 'down')}
-                    style={[styles.arrowButton, isLast && styles.arrowButtonDisabled]}>
-                    <IconSymbol name="chevron-down" size={20} color={isLast ? colors.textSecondary : colors.accent} />
-                  </Pressable>
-                </View>
+                {locked ? (
+                  <View style={styles.lockedSpacer} />
+                ) : (
+                  <ThemedSwitch value={!hidden} onValueChange={() => toggleHidden(id)} />
+                )}
+                <Pressable
+                  disabled={isFirst}
+                  accessibilityRole="button"
+                  accessibilityLabel={t('dashboard.reorder.moveUp')}
+                  onPress={() => move(id, 'up')}
+                  style={[styles.arrowButton, isFirst && styles.arrowButtonDisabled]}>
+                  <IconSymbol name="chevron-up" size={20} color={isFirst ? colors.textSecondary : colors.accent} />
+                </Pressable>
+                <Pressable
+                  disabled={isLast}
+                  accessibilityRole="button"
+                  accessibilityLabel={t('dashboard.reorder.moveDown')}
+                  onPress={() => move(id, 'down')}
+                  style={[styles.arrowButton, isLast && styles.arrowButtonDisabled]}>
+                  <IconSymbol name="chevron-down" size={20} color={isLast ? colors.textSecondary : colors.accent} />
+                </Pressable>
               </ThemedView>
             );
           })}
@@ -158,7 +139,6 @@ const styles = StyleSheet.create({
     padding: Spacing.three,
     borderRadius: 20,
   },
-  rowCompact: { flexWrap: 'wrap', alignItems: 'flex-start' },
   iconBadge: {
     width: 40,
     height: 40,
@@ -167,15 +147,11 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   rowText: { flex: 1, gap: 2 },
-  rowTextCompact: { flexBasis: '100%', marginBottom: Spacing.two },
-  controls: { flexDirection: 'row', alignItems: 'center', gap: Spacing.one },
-  controlsCompact: { alignSelf: 'flex-end', marginLeft: 'auto' },
   rowTextHidden: { opacity: 0.5 },
   lockedSpacer: { width: 4 },
-  switchTarget: { width: 48, height: 44, alignItems: 'center', justifyContent: 'center' },
   arrowButton: {
-    width: 44,
-    height: 44,
+    width: 36,
+    height: 36,
     alignItems: 'center',
     justifyContent: 'center',
   },

@@ -1,14 +1,14 @@
 // Handout-Uebersicht: die gesammelten PDF-Lernunterlagen, nach `category`
 // gruppiert (Section-Header je Kategorie). Pro Unterlage eine Karte mit Titel,
 // Beschreibung, Seitenzahl + Groesse und einem Offline-Download-Button.
-// Antippen oeffnet den PDF-Viewer (handouts/[id].tsx) — auf Web direkt im
-// Browser (Linking). Daten aus dem oeffentlichen R2-Bucket (features/handouts/
+// Antippen oeffnet den PDF-Viewer (handouts/[id].tsx / remote) in der App.
+// Daten aus dem oeffentlichen R2-Bucket (features/handouts/
 // data.ts) via react-query. Einstieg (per Merge zu verdrahten): Deep-Link
 // `salatibox://handouts` bzw. router.push('/handouts') — vorgesehen als Kachel
 // im „Studium"-Bereich (LERNEN_NAV in src/lib/lernenNav.ts), NICHT hier editiert.
-import { router } from 'expo-router';
 import { useQuery } from '@tanstack/react-query';
-import { Alert, FlatList, Linking, Platform, Pressable, StyleSheet, View } from 'react-native';
+import { useState } from 'react';
+import { Alert, FlatList, Pressable, StyleSheet, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
 import { AnimatedListItem } from '@/components/ui/animated-list-item';
@@ -28,26 +28,23 @@ import {
   type Handout,
 } from '@/features/handouts/data';
 import { ContentLanguageBadge } from '@/features/media/content-language-badge';
-import { handoutsForLocale } from '@/features/media/content-language';
+import { resolveHandoutsForLocale } from '@/features/media/content-language';
 import { useHandoutDownload } from '@/features/handouts/downloads';
 import { useResolvedScheme } from '@/hooks/use-resolved-scheme';
+import { openBibliothekHandout } from '@/features/bibliothek/openBook';
 import { useTranslation } from '@/lib/i18n';
 
 type ListRow =
   | { kind: 'section'; key: string; title: string }
   | { kind: 'handout'; key: string; handout: Handout; itemIndex: number };
 
-// Oeffnet eine Unterlage: nativ im In-App-Viewer, im Web direkt im Browser-Tab.
 function openHandout(handout: Handout): void {
-  if (Platform.OS === 'web') {
-    void Linking.openURL(handout.pdf_url);
-    return;
-  }
-  router.push({ pathname: '/handouts/[id]', params: { id: handout.id } });
+  openBibliothekHandout({ id: handout.id });
 }
 
 export default function HandoutListScreen() {
   const { t, locale } = useTranslation();
+  const [germanHandoutsByLocale, setGermanHandoutsByLocale] = useState<Readonly<Record<string, boolean>>>({});
 
   const { data, isLoading, isError } = useQuery({
     queryKey: ['handouts', 'index'],
@@ -55,8 +52,17 @@ export default function HandoutListScreen() {
     staleTime: 60 * 60 * 1000,
   });
 
+  const showGermanHandouts = germanHandoutsByLocale[locale] ?? false;
+  const setShowGermanHandouts = (next: boolean) => {
+    setGermanHandoutsByLocale((prev) => ({ ...prev, [locale]: next }));
+  };
+
   const rawHandouts = data?.handouts ?? [];
-  const handouts = handoutsForLocale(rawHandouts, locale);
+  const { list: handouts, showLocaleEmpty, germanFallbackAvailable } = resolveHandoutsForLocale(
+    rawHandouts,
+    locale,
+    showGermanHandouts,
+  );
   const groups = groupHandoutsByCategory(handouts);
   const multiCategory = groups.length > 1;
   const rows: ListRow[] = [];
@@ -90,11 +96,18 @@ export default function HandoutListScreen() {
             <View style={styles.center}>
               {isLoading ? (
                 <ThemedActivityIndicator />
-              ) : (
+              ) : isError ? (
+                <EmptyState icon="document-text-outline" title={t('common.error')} />
+              ) : showLocaleEmpty ? (
                 <EmptyState
                   icon="document-text-outline"
-                  title={isError ? t('common.error') : t('handouts.empty')}
+                  title={t('handouts.localeEmptyTitle')}
+                  text={t('handouts.localeEmptyText')}
+                  actionLabel={germanFallbackAvailable ? t('handouts.showGerman') : undefined}
+                  onAction={germanFallbackAvailable ? () => setShowGermanHandouts(true) : undefined}
                 />
+              ) : (
+                <EmptyState icon="document-text-outline" title={t('handouts.empty')} />
               )}
             </View>
           }

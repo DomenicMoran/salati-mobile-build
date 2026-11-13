@@ -7,7 +7,7 @@ import { IconSymbol } from '@/components/ui/icon-symbol';
 import { ThemedText } from '@/components/themed-text';
 import { ThemedView } from '@/components/themed-view';
 import { ScreenHeader } from '@/components/screen-header';
-import { Colors, Spacing } from '@/constants/theme';
+import { Colors, MaxContentWidth, Spacing } from '@/constants/theme';
 import { calcMirath, type Heir, type MirathInput } from '@/features/mirath/calc';
 import { useResolvedScheme } from '@/hooks/use-resolved-scheme';
 import { useTranslation } from '@/lib/i18n';
@@ -44,11 +44,9 @@ function Stepper({
       </ThemedText>
       <View style={styles.stepperControls}>
         <Pressable
-          disabled={value <= 0}
           onPress={() => onChange(Math.max(0, value - 1))}
           hitSlop={8}
           accessibilityRole="button"
-          accessibilityState={{ disabled: value <= 0 }}
           accessibilityLabel={`${label} ${t('a11y.decrease')}`}
           style={({ pressed }) => [styles.stepperButton, pressed && styles.stepperPressed]}>
           <IconSymbol name="remove-circle-outline" size={26} color={colors.accent} />
@@ -57,11 +55,9 @@ function Stepper({
           {value}
         </ThemedText>
         <Pressable
-          disabled={value >= max}
           onPress={() => onChange(Math.min(max, value + 1))}
           hitSlop={8}
           accessibilityRole="button"
-          accessibilityState={{ disabled: value >= max }}
           accessibilityLabel={`${label} ${t('a11y.increase')}`}
           style={({ pressed }) => [styles.stepperButton, pressed && styles.stepperPressed]}>
           <IconSymbol name="add-circle-outline" size={26} color={colors.accent} />
@@ -250,26 +246,24 @@ const styles = StyleSheet.create({
     gap: Spacing.three,
     alignSelf: 'center',
     width: '100%',
-    maxWidth: 680,
+    maxWidth: MaxContentWidth,
   },
   subtitle: { textAlign: 'center', marginBottom: Spacing.one, paddingHorizontal: Spacing.four },
   section: { borderRadius: Spacing.three, padding: Spacing.three, gap: Spacing.two },
   genderRow: { flexDirection: 'row', gap: Spacing.two },
-  genderChipPressable: { flex: 1, minHeight: 44 },
+  genderChipPressable: { flex: 1 },
   genderChip: {
-    minHeight: 44,
     paddingVertical: Spacing.two,
     borderRadius: Spacing.two,
     alignItems: 'center',
-    justifyContent: 'center',
   },
   stepperRow: { flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center' },
   stepperLabel: { flex: 1 },
   stepperControls: { flexDirection: 'row', alignItems: 'center', gap: Spacing.two },
-  stepperButton: { width: 44, height: 44, alignItems: 'center', justifyContent: 'center' },
+  stepperButton: { padding: Spacing.half },
   stepperPressed: { opacity: 0.6 },
   stepperValue: { minWidth: 24, textAlign: 'center' },
-  toggleRow: { minHeight: 44, flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center' },
+  toggleRow: { flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center' },
   resultCard: { borderRadius: Spacing.three, padding: Spacing.four, gap: Spacing.two },
   resultTitle: { textAlign: 'center', marginBottom: Spacing.one },
   resultRow: { flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center' },

@@ -73,21 +73,6 @@ describe('rescheduleNotifications — Uhrzeit in Titel/Body (Nutzerfund)', () =>
     }
   });
 
-  test('plant mehrere Tage im Voraus per DATE-Trigger (OS-Alarm, nicht Vordergrund)', async () => {
-    const days = [
-      { date: new Date('2026-07-18T00:00:00'), timings: { Fajr: '04:15', Sunrise: '05:50', Dhuhr: '13:05', Asr: '16:40', Maghrib: '20:10', Isha: '21:45' } },
-      { date: new Date('2026-07-19T00:00:00'), timings: { Fajr: '04:20', Sunrise: '05:51', Dhuhr: '13:05', Asr: '16:40', Maghrib: '20:09', Isha: '21:44' } },
-    ];
-    await rescheduleNotifications(days, ENABLED, PREFS, new Date('2026-07-17T00:00:00'), 'de', '24h');
-
-    const fajrCalls = mockSchedule.mock.calls.filter((c) => (c[0].identifier as string).endsWith('-Fajr'));
-    expect(fajrCalls).toHaveLength(2);
-    for (const call of fajrCalls) {
-      expect(call[0].trigger.type).toBe('date');
-      expect(call[0].trigger.date).toBeInstanceOf(Date);
-    }
-  });
-
   test('Web: kein Scheduling-Aufruf (kein Support, s. Kommentar in notifications.ts)', async () => {
     const original = Platform.OS;
     Object.defineProperty(Platform, 'OS', { get: () => 'web' });

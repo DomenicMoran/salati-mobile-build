@@ -2,8 +2,8 @@ import { audiobookChapterStaticParams } from '@/features/audiobooks/static-param
 import { setAudioModeAsync } from 'expo-audio';
 import { router, useFocusEffect, useLocalSearchParams, type Href } from 'expo-router';
 import { useQuery } from '@tanstack/react-query';
-import { useCallback, useMemo, useState } from 'react';
-import { Linking, Platform, Pressable, ScrollView, StyleSheet, View } from 'react-native';
+import { useCallback, useMemo, useRef, useState } from 'react';
+import { Platform, Pressable, ScrollView, StyleSheet, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
 import { IconSymbol } from '@/components/ui/icon-symbol';
@@ -12,9 +12,16 @@ import { ThemedActivityIndicator } from '@/components/themed-activity-indicator'
 import { ThemedText } from '@/components/themed-text';
 import { ThemedView } from '@/components/themed-view';
 import { Colors, MaxContentWidth, Spacing } from '@/constants/theme';
-import { chaptersForTrack, fetchAudiobookIndex, formatDuration } from '@/features/audiobooks/data';
+import { chaptersForTrack, fetchAudiobookIndex, formatDuration, type AudiobookChapter } from '@/features/audiobooks/data';
+import audiobookFallbackIndex from '@/features/audiobooks/index.fallback.json';
+import { openBibliothekPdf } from '@/features/bibliothek/openBook';
 import { AUDIOBOOK_HUB_TRACKS, isAudiobookTrackId } from '@/features/audiobooks/tracks';
 import { Slider } from '@/features/podcast/slider';
+import {
+  audiobookProgressId,
+  loadAudioProgressEntry,
+} from '@/features/progress/audioProgress';
+import { useSharedAudioProgress } from '@/features/progress/useSharedAudioProgress';
 import { useSharedPlayer, type NowPlayingInfo } from '@/features/quran/usePlayer';
 import { useResolvedScheme } from '@/hooks/use-resolved-scheme';
 import { useTranslation } from '@/lib/i18n';
@@ -46,10 +53,15 @@ export default function AudiobookChapterPlayerScreen() {
   });
 
   const contentLang = typeof langParam === 'string' && langParam.trim() ? langParam : locale;
+  const indexEntries = useMemo(() => {
+    if (data?.entries && data.entries.length > 0) return data.entries;
+    return (audiobookFallbackIndex as { entries: AudiobookChapter[] }).entries ?? [];
+  }, [data?.entries]);
+
   const chapters = useMemo(() => {
-    if (!data || !isAudiobookTrackId(trackId)) return [];
-    return chaptersForTrack(data.entries, trackId, contentLang);
-  }, [data, trackId, contentLang]);
+    if (!isAudiobookTrackId(trackId)) return [];
+  return chaptersForTrack(indexEntries, trackId, contentLang, data);
+  }, [indexEntries, trackId, contentLang, data]);
 
   const chapter = chapters.find((c) => c.chapter_no === chapterNo);
   const idx = chapters.findIndex((c) => c.chapter_no === chapterNo);
@@ -71,9 +83,15 @@ export default function AudiobookChapterPlayerScreen() {
   const [seekPreview, setSeekPreview] = useState<number | null>(null);
   const [bookOpenError, setBookOpenError] = useState(false);
 
+  const autoplayRef = useRef(true);
+
   const playChapter = useCallback(
-    function playSelectedChapter(ch: (typeof chapters)[number]) {
+    async function playSelectedChapter(ch: (typeof chapters)[number]) {
+      const saved = await loadAudioProgressEntry(audiobookProgressId(trackId, ch.chapter_no, contentLang));
       player.replace(ch.audio_url);
+      if (saved && saved.positionSec >= 5) {
+        player.seekTo(saved.positionSec);
+      }
       player.play();
       if (Platform.OS !== 'web') {
         setAudioModeAsync({ shouldPlayInBackground: true, playsInSilentMode: true, interruptionMode: 'doNotMix' }).catch(() => {});
@@ -107,14 +125,43 @@ export default function AudiobookChapterPlayerScreen() {
                 pathname: '/audiobooks/[track]/[chapter]',
                 params: { track: trackId, chapter: String(n.chapter_no), lang: contentLang },
               } as Href);
-              playSelectedChapter(n);
+              void playSelectedChapter(n);
+            }
+          : undefined,
+        onEnded: n
+          ? () => {
+              if (!autoplayRef.current) return;
+              router.replace({
+                pathname: '/audiobooks/[track]/[chapter]',
+                params: { track: trackId, chapter: String(n.chapter_no), lang: contentLang },
+              } as Href);
+              void playSelectedChapter(n);
             }
           : undefined,
       };
       setNowPlaying(info);
     },
-    [artist, chapters, player, setNowPlaying, trackId],
+    [artist, chapters, contentLang, player, setNowPlaying, trackId],
   );
+
+  useSharedAudioProgress({
+    active: !!chapter && isThisLoaded,
+    kind: 'audiobook',
+    status,
+    buildEntry: useCallback(
+      (positionSec, durationSec) =>
+        chapter
+          ? {
+              kind: 'audiobook',
+              id: audiobookProgressId(trackId, chapter.chapter_no, contentLang),
+              positionSec,
+              durationSec,
+              meta: { track: trackId, chapterNo: chapter.chapter_no, lang: contentLang },
+            }
+          : null,
+      [chapter, contentLang, trackId],
+    ),
+  });
 
   useFocusEffect(useCallback(() => {
     if (!chapter || isThisLoaded) return;
@@ -169,7 +216,14 @@ export default function AudiobookChapterPlayerScreen() {
               <Pressable
                 onPress={() => {
                   setBookOpenError(false);
-                  void Linking.openURL(chapter.book_pdf_url!.trim()).catch(() => setBookOpenError(true));
+                  try {
+                    openBibliothekPdf({
+                      pdfUrl: chapter.book_pdf_url!.trim(),
+                      title: t('audiobooks.bookOpen'),
+                    });
+                  } catch {
+                    setBookOpenError(true);
+                  }
                 }}
                 accessibilityRole="link"
                 accessibilityLabel={t('audiobooks.bookOpen')}

@@ -1,5 +1,10 @@
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
+import { mergeAudioProgressMaps, parseAudioProgressMap } from '@/features/progress/audioProgress';
+import { mergeQuranProgress } from '@/features/progress/mergeQuranProgress';
+import { parseProgress, QURAN_PROGRESS_STORAGE_KEY } from '@/features/quran/progress';
+import type { ProgressMap } from '@/features/video/progress';
+
 // EINE Quelle der Wahrheit dafür, was bei Gerätewechsel/Neuinstallation
 // mitgeht — genutzt von BEIDEN Sicherungswegen (Sync-Code in codeSync.ts und
 // Backup-Datei in features/settings/backup.ts). Vorher pflegte codeSync.ts eine
@@ -23,6 +28,20 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 /** Gemeinsames Präfix aller AsyncStorage-Schlüssel der App. */
 export const STORAGE_PREFIX = 'salatibox:';
 
+/** Bibliothek-Reader: eigene Schlüsselfamilie (nicht `salatibox:`), Sync inkludiert. */
+export const BIBLIOTHEK_BACKUP_KEYS: readonly string[] = [
+  'salati.bibliothek.pdf-progress.v1',
+  'salati.bibliothek.pdf-bookmarks.v1',
+  'salati.bibliothek.pdf-highlights.v1',
+  'salati.bibliothek.reading-stats.v1',
+  'salati.bibliothek.rassoul.v1',
+  'salati.bibliothek.rassoul.updatedAt.v1',
+];
+
+export const BIBLIOTHEK_BACKUP_KEY_PREFIXES: readonly string[] = [
+  'salati.bibliothek.pdf-reader-prefs.v1',
+];
+
 /** Einstellungen — Sonderfall, wird nur AUSSCHNITTSWEISE gesichert (s. u.). */
 export const SETTINGS_BACKUP_KEY = 'salatibox:settings';
 
@@ -40,6 +59,7 @@ export const BACKUP_KEYS: readonly string[] = [
 
   // --- Lernen / Studium ---
   'salatibox:learn-progress', // Basis-Kurs "Koran lesen lernen"
+  'salatibox:learn-abc-progress', // Koran-ABC-Grundkurs
   'salatibox:study-course-order', // eigene Kurs-Reihenfolge im Studium-Hub
   'salatibox:review', // Wiederholungs-Warteschlange (Spaced Repetition)
   'salatibox:mistakes', // Fehlerarchiv Studium
@@ -77,6 +97,8 @@ export const BACKUP_KEYS: readonly string[] = [
   // Fälligkeit errechnet. Nicht rekonstruierbar, wenn es der Nutzer vergisst.
   'salatibox:video-progress', // "Weiterschauen"-Position der Lernvideos
   'salatibox:video-playlists', // selbst zusammengestellte Playlists
+  'salatibox:progress:v1:audio', // Hörpositionen (Koran, Podcast, Hörbuch)
+  'salatibox:progress:v1:player-prefs', // persistente Player-Einstellungen (Speed, Sleep)
 ];
 
 /**
@@ -129,6 +151,10 @@ export const EXCLUDED_KEYS: Readonly<Record<string, string>> = {
     'Benachrichtigungs-Schalter — Benachrichtigungs-Berechtigung ist gerätegebunden, gleiche Linie wie bei den Einstellungen. Der eigentliche Inhalt (zakat-anchor) wird gesichert',
   'salatibox:video-prefs':
     'klebrige Player-Schalter (Autoplay/Hintergrundton/Tempo) — Wiedergabe-Verhalten hängt am Gerät, der Fortschritt (video-progress) wird gesichert',
+  'salatibox:progress:flush-registry':
+    'interner Flush-Marker der Progress-Schicht — kein Nutzerinhalt, nur Laufzeit-Koordination',
+  'salatibox:learn-abc-migration-v1':
+    'einmaliges Migrations-Flag für Auto-Abschluss des Koran-ABC — wird auf dem Zielgerät aus `salatibox:learn-progress` neu abgeleitet',
 };
 
 /** Wie EXCLUDED_KEYS, aber für dynamisch gebildete Schlüsselfamilien. */
@@ -157,6 +183,12 @@ export const EXCLUDED_KEY_PREFIXES: Readonly<Record<string, string>> = {
  * Audio, die Sprache an der Systemsprache des Geräts).
  */
 export const PORTABLE_SETTINGS_FIELDS: readonly string[] = [
+  'quranFontSize',
+  'quranFont',
+  'quranSukun',
+  'readerSepia',
+  'themeOverride',
+  'quranPlaybackSpeed',
   'location', // aktiver Standort
   'savedLocations', // gespeicherte Orte ("Zuhause", "Arbeit") — reine Handarbeit
   'homeLocation', // Heimatort für den Reise-Modus
@@ -175,6 +207,15 @@ export type StorageKeyClass = 'full' | 'partial' | 'excluded' | 'unclassified';
 
 function matchesPrefix(key: string, prefixes: readonly string[]): boolean {
   return prefixes.some((p) => key.startsWith(p));
+}
+
+export function isBibliothekBackupKey(key: string): boolean {
+  if (BIBLIOTHEK_BACKUP_KEYS.includes(key)) return true;
+  return matchesPrefix(key, BIBLIOTHEK_BACKUP_KEY_PREFIXES);
+}
+
+export function selectBibliothekBackupKeys(allKeys: readonly string[]): string[] {
+  return allKeys.filter(isBibliothekBackupKey).sort();
 }
 
 /**
@@ -255,7 +296,10 @@ export async function collectBackupValues(): Promise<Record<string, string>> {
   const allKeys = await AsyncStorage.getAllKeys();
   const values: Record<string, string> = {};
 
-  const entries = await AsyncStorage.multiGet(selectBackupKeys(allKeys));
+  const entries = await AsyncStorage.multiGet([
+    ...selectBackupKeys(allKeys),
+    ...selectBibliothekBackupKeys(allKeys),
+  ]);
   for (const [key, value] of entries) {
     if (value != null) values[key] = value;
   }
@@ -271,12 +315,57 @@ export async function collectBackupValues(): Promise<Record<string, string>> {
  * Schlüssel. Alles, was nicht klassifiziert gesichert wird, wird ignoriert —
  * eine manipulierte/fremde Sicherung kann so keine beliebigen Schlüssel setzen.
  */
-export async function restoreBackupValues(values: Record<string, unknown>): Promise<string[]> {
+function mergeVideoProgressMaps(local: ProgressMap, imported: ProgressMap): ProgressMap {
+  const merged: ProgressMap = { ...local };
+  for (const [id, entry] of Object.entries(imported)) {
+    const prev = merged[id];
+    if (!prev || entry.updatedAt >= prev.updatedAt) merged[id] = entry;
+  }
+  return merged;
+}
+
+function parseVideoProgressMap(raw: string | null): ProgressMap {
+  if (!raw) return {};
+  try {
+    const parsed: unknown = JSON.parse(raw);
+    if (typeof parsed !== 'object' || parsed === null || Array.isArray(parsed)) return {};
+    return parsed as ProgressMap;
+  } catch {
+    return {};
+  }
+}
+
+export async function restoreBackupValues(
+  values: Record<string, unknown>,
+  options?: { mergeProgress?: boolean },
+): Promise<string[]> {
+  const mergeProgress = options?.mergeProgress !== false;
   const writes: [string, string][] = [];
 
   for (const [key, value] of Object.entries(values)) {
     if (typeof value !== 'string') continue;
-    if (isFullBackupKey(key)) writes.push([key, value]);
+    if (!isFullBackupKey(key) && !isBibliothekBackupKey(key)) continue;
+
+    if (mergeProgress && key === QURAN_PROGRESS_STORAGE_KEY) {
+      const current = await AsyncStorage.getItem(key);
+      const merged = mergeQuranProgress(parseProgress(current), parseProgress(value));
+      writes.push([key, JSON.stringify(merged)]);
+      continue;
+    }
+    if (mergeProgress && key === 'salatibox:progress:v1:audio') {
+      const current = await AsyncStorage.getItem(key);
+      const merged = mergeAudioProgressMaps(parseAudioProgressMap(current), parseAudioProgressMap(value));
+      writes.push([key, JSON.stringify(merged)]);
+      continue;
+    }
+    if (mergeProgress && key === 'salatibox:video-progress') {
+      const current = await AsyncStorage.getItem(key);
+      const merged = mergeVideoProgressMaps(parseVideoProgressMap(current), parseVideoProgressMap(value));
+      writes.push([key, JSON.stringify(merged)]);
+      continue;
+    }
+
+    writes.push([key, value]);
   }
 
   const importedSettings = values[SETTINGS_BACKUP_KEY];

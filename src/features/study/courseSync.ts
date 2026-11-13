@@ -35,7 +35,7 @@ const MANIFEST_URL = `${REMOTE_BASE}/manifest.json`;
 // älteren zwischengespeicherten Download automatisch (ein neueres Bundle
 // schlägt immer einen älteren Cache). Muss zur höchsten Version passen, die
 // `scripts/upload_courses.py` vergeben hat; das Skript gibt sie beim Lauf aus.
-export const COURSE_BUNDLED_VERSION = 3;
+export const COURSE_BUNDLED_VERSION = 2;
 
 const CACHE_DIR = `${FileSystem.documentDirectory}study-courses/`;
 const VER_KEY_PREFIX = 'salatibox:course-ver-';

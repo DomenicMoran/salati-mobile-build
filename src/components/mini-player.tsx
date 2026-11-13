@@ -39,8 +39,7 @@ export function MiniPlayer() {
   if (
     !nowPlaying ||
     SURAH_READER_PATHNAME.test(pathname) ||
-    PODCAST_PLAYER_PATHNAME.test(pathname) ||
-    /^\/audiobooks\/[^/]+\/\d+(?:\/video)?$/.test(pathname)
+    PODCAST_PLAYER_PATHNAME.test(pathname)
   )
     return null;
 
@@ -63,7 +62,7 @@ export function MiniPlayer() {
         <Pressable
           onPress={() => (status.playing ? player.pause() : player.play())}
           accessibilityRole="button"
-          accessibilityLabel={status.playing ? t('podcast.pause') : t('podcast.play')}
+          accessibilityLabel={status.playing ? t('quran.pause') : t('quran.playSurah')}
           hitSlop={8}
           style={webCursor}>
           <IconSymbol name={status.playing ? 'pause' : 'play'} size={22} color={colors.accent} />

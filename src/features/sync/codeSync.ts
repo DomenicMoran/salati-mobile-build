@@ -28,7 +28,7 @@ import { decodeBase64, encodeBase64 } from './base64';
  * einer NEUEREN Version als dieser App bekannt wird abgelehnt, statt still
  * unvollständig importiert zu werden.
  */
-export const SYNC_FORMAT_VERSION = 2;
+export const SYNC_FORMAT_VERSION = 3;
 export const MIN_SUPPORTED_SYNC_VERSION = 1;
 
 export interface SyncPayload {

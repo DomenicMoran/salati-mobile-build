@@ -48,6 +48,8 @@ import { Platform } from 'react-native';
 import { logError } from '@/lib/errorLog';
 import { fetchWithTimeout } from '@/lib/fetchJson';
 
+import wbwReleasePolicy from './wbw-release-policy.json';
+
 /** Schema- UND Pfadversion — dieselbe Zahl wie WBW_VERSION in
  * scripts/build-wbw.mjs. Grund siehe Kopf-Kommentar. */
 export const WBW_SCHEMA_VERSION = 2;
@@ -99,10 +101,19 @@ export interface WbwMetaDatei {
   sprachen: Partial<Record<string, WbwSprachStatistik>>;
 }
 
+/** QUL-WBW nur mit Freigabe — oder lokal in __DEV__ (nicht Web: öffentliche Builds). */
+export function qulWbwInProduktionErlaubt(): boolean {
+  if (wbwReleasePolicy.qulWbwDistributionCleared) return true;
+  if (Platform.OS === 'web') return false;
+  return !!__DEV__;
+}
+
 /** Sprachschlüssel der App (Locale) → Datensatz-Sprache, oder `null`, wenn es
  * für diese Sprache keinen Datensatz gibt (de/en/es/ms/ru/sw/ps/ar). */
 export function wbwSpracheFuerLocale(locale: string): WbwSprache | null {
-  return (WBW_SPRACHEN as readonly string[]).includes(locale) ? (locale as WbwSprache) : null;
+  if (!(WBW_SPRACHEN as readonly string[]).includes(locale)) return null;
+  if (!qulWbwInProduktionErlaubt()) return null;
+  return locale as WbwSprache;
 }
 
 export function wbwUrl(sprache: WbwSprache, surah: number): string {
@@ -352,6 +363,22 @@ export function gruppenDeckenVersAb(eintraege: readonly WbwVersEintrag[] | undef
  * Vers lückenlos ab, gibt es `undefined` und der Aufrufer bleibt für den
  * ganzen Vers beim englischen Gloss von quran.com.
  */
+/**
+ * Bedeutungstext fürs Wortanalyse-Sheet: `word.translation` von quran.com ist
+ * nur Englisch. In nicht-englischen UIs ohne Override (DE wbw-de.ts oder QUL
+ * in App-Sprache) wird nichts angezeigt — kein roher EN-Text unter „Bedeutung".
+ */
+export function wbwGlossFuerSheetAnzeige(args: {
+  locale: string;
+  translationOverride?: string | null;
+  englischesGloss?: string | null;
+}): string {
+  const override = args.translationOverride?.trim() ?? '';
+  if (override !== '') return override;
+  if (args.locale === 'en') return args.englischesGloss?.trim() ?? '';
+  return '';
+}
+
 export function waehleVersGruppen(args: {
   /** Handgepflegte deutsche Glossen dieses Verses (eine je Wort), falls vorhanden. */
   deutscheGlossen: readonly string[] | undefined;

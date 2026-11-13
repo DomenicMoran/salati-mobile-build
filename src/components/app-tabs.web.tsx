@@ -8,12 +8,13 @@ import {
 } from 'expo-router/ui';
 import { Image } from 'expo-image';
 import { router, usePathname } from 'expo-router';
-import { Pressable, ScrollView, View, StyleSheet } from 'react-native';
+import { Pressable, ScrollView, View, StyleSheet, useWindowDimensions } from 'react-native';
 
 import { ThemedText } from './themed-text';
 import { ThemedView } from './themed-view';
 
 import { Colors, MaxContentWidth, Spacing } from '@/constants/theme';
+import { useHydrated } from '@/hooks/use-hydrated';
 import { useResolvedScheme } from '@/hooks/use-resolved-scheme';
 import { useTranslation } from '@/lib/i18n';
 import { isRtlLocale } from '@/lib/locale-detect';
@@ -29,12 +30,15 @@ const TABS = [
 export default function AppTabs() {
   const { t, locale } = useTranslation();
   const rtl = isRtlLocale(locale);
+  const hydrated = useHydrated();
+  const { width } = useWindowDimensions();
+  const compactNav = hydrated && width < 430;
   return (
     // Nav STATISCH über dem Inhalt (nicht absolut schwebend) — vorher scrollte
     // der Seiteninhalt sichtbar hinter die Pill (User: "Menüs überlappen").
     <Tabs style={styles.tabsRoot}>
       <TabList asChild>
-        <CustomTabList rtl={rtl}>
+        <CustomTabList rtl={rtl} compact={compactNav}>
           {/* WICHTIG: TabTrigger müssen direkte Kinder bleiben — jede
               Wrapper-View bricht expo-routers Trigger-Erkennung ("Couldn't
               find any screens for the navigator", live gesehen). Nicht-Trigger-
@@ -105,26 +109,32 @@ export function TabButton({ children, isFocused, ...props }: TabTriggerSlotProps
   );
 }
 
-export function CustomTabList(props: TabListProps & { rtl?: boolean }) {
+export function CustomTabList(props: TabListProps & { rtl?: boolean; compact?: boolean }) {
   const scheme = useResolvedScheme();
   const colors = Colors[scheme];
-  const { rtl, ...tabListProps } = props;
+  const { rtl, compact, ...tabListProps } = props;
 
   return (
     <View {...tabListProps} style={styles.tabListContainer}>
       <ThemedView
         type="backgroundElement"
-        style={[styles.innerContainer, rtl && styles.innerContainerRtl]}>
-        <View style={styles.brandBlock}>
+        style={[
+          styles.innerContainer,
+          rtl && styles.innerContainerRtl,
+          compact ? styles.innerContainerCompact : null,
+        ]}>
+        <View style={[styles.brandBlock, compact ? styles.brandBlockCompact : null]}>
           <Image
             source={require('../../assets/images/icon.png')}
             style={styles.brandIcon}
             contentFit="cover"
             alt=""
           />
-          <ThemedText type="smallBold" style={{ color: colors.accent }}>
-            Salati
-          </ThemedText>
+          {compact ? null : (
+            <ThemedText type="smallBold" style={{ color: colors.accent }}>
+              Salati
+            </ThemedText>
+          )}
         </View>
 
         {/* Auf schmalen Viewports (Handy-Browser) passen Marke + alle 5 Tabs
@@ -132,8 +142,12 @@ export function CustomTabList(props: TabListProps & { rtl?: boolean }) {
             Marke und letzte Tabs abgeschnitten statt umzubrechen. */}
         <ScrollView
           horizontal
-          showsHorizontalScrollIndicator={false}
-          contentContainerStyle={[styles.tabScrollContent, rtl && styles.tabScrollContentRtl]}
+          showsHorizontalScrollIndicator
+          contentContainerStyle={[
+            styles.tabScrollContent,
+            rtl && styles.tabScrollContentRtl,
+            compact ? styles.tabScrollContentCompact : null,
+          ]}
           style={styles.tabScroll}>
           {props.children}
         </ScrollView>
@@ -180,6 +194,7 @@ const styles = StyleSheet.create({
   // gedreht) statt Kinder umzusortieren — row-reverse kehrt sowohl
   // Rendering-Reihenfolge als auch justifyContent-Kante konsistent um.
   innerContainerRtl: { flexDirection: 'row-reverse', paddingLeft: Spacing.two, paddingRight: Spacing.three },
+  innerContainerCompact: { paddingLeft: Spacing.two, paddingRight: Spacing.one, gap: Spacing.two },
   brandBlock: {
     flexDirection: 'row',
     alignItems: 'center',
@@ -187,6 +202,7 @@ const styles = StyleSheet.create({
     flexShrink: 0,
   },
   brandIcon: { width: 26, height: 26, borderRadius: 7 },
+  brandBlockCompact: { marginRight: Spacing.one },
 
   tabScroll: {
     flexShrink: 1,
@@ -200,12 +216,13 @@ const styles = StyleSheet.create({
     justifyContent: 'flex-end',
   },
   tabScrollContentRtl: { flexDirection: 'row-reverse' },
+  tabScrollContentCompact: { gap: 0 },
   pressed: {
     opacity: 0.7,
   },
   tabButtonView: {
     paddingVertical: Spacing.one,
-    paddingHorizontal: Spacing.three,
+    paddingHorizontal: Spacing.two,
     borderRadius: 999,
     minHeight: 34,
     justifyContent: 'center',

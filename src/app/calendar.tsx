@@ -137,7 +137,7 @@ export default function CalendarScreen() {
             hitSlop={12}
             accessibilityRole="button"
             accessibilityLabel={t('a11y.previousMonth')}
-            style={({ pressed }) => [styles.monthButton, Platform.OS === 'web' ? styles.pressableWeb : undefined, pressed && styles.pressed]}>
+            style={({ pressed }) => [Platform.OS === 'web' ? styles.pressableWeb : undefined, pressed && styles.pressed]}>
             <IconSymbol name="chevron-back" size={22} color={colors.accent} />
           </Pressable>
           <ThemedText type="default">
@@ -148,7 +148,7 @@ export default function CalendarScreen() {
             hitSlop={12}
             accessibilityRole="button"
             accessibilityLabel={t('a11y.nextMonth')}
-            style={({ pressed }) => [styles.monthButton, Platform.OS === 'web' ? styles.pressableWeb : undefined, pressed && styles.pressed]}>
+            style={({ pressed }) => [Platform.OS === 'web' ? styles.pressableWeb : undefined, pressed && styles.pressed]}>
             <IconSymbol name="chevron-forward" size={22} color={colors.accent} />
           </Pressable>
         </AnimatedListItem>
@@ -279,7 +279,6 @@ const styles = StyleSheet.create({
     gap: Spacing.five,
     marginBottom: Spacing.three,
   },
-  monthButton: { minWidth: 44, minHeight: 44, alignItems: 'center', justifyContent: 'center' },
   scroll: { paddingHorizontal: Spacing.three, paddingBottom: Spacing.five, alignSelf: 'center', width: '100%', maxWidth: MaxContentWidth, },
   // Ab 840 dp nebeneinander: Raster links, Erläuterungen rechts. `flex` statt
   // fester Breiten, damit beide Spalten beim Drehen mitwachsen.

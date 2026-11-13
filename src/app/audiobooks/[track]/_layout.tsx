@@ -1,8 +1,10 @@
 import { Stack } from 'expo-router';
-import { AUDIOBOOK_HUB_TRACKS } from '@/features/audiobooks/tracks';
+
+import fallbackIndex from '@/features/audiobooks/index.fallback.json';
 
 export function generateStaticParams() {
-  return AUDIOBOOK_HUB_TRACKS.map(({ id }) => ({ track: id }));
+  const tracks = new Set(fallbackIndex.entries.map((entry) => entry.track));
+  return [...tracks].map((track) => ({ track }));
 }
 
 export default function AudiobookTrackLayout() {

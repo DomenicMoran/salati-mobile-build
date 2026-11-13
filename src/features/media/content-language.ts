@@ -83,16 +83,47 @@ export function filterByContentLanguage<T extends { lang?: string }>(
   return items.filter((item) => normalizeContentLanguage(item.lang) === target);
 }
 
+export type HandoutsLocaleResolution<T extends { lang?: string }> = {
+  list: T[];
+  /** Oberflaechensprache hat keine eigenen Unterlagen, aber andere Sprachen existieren. */
+  showLocaleEmpty: boolean;
+  /** Mindestens deutschsprachige PDFs koennen per CTA eingeblendet werden. */
+  germanFallbackAvailable: boolean;
+};
+
 /**
- * Handouts haben keine Sprachleiste. Ein leeres „Kommt bald" waere falsch,
- * wenn die Unterlagen nur in einer anderen Sprache vorliegen: dann bleibt die
- * Liste sichtbar und die Karten tragen das Sprachabzeichen.
+ * Handouts: strikt nach Inhaltssprache filtern. Fehlen Treffer, bleibt die Liste
+ * leer und `showLocaleEmpty` erklaert die DE-only-Lage — optional per CTA
+ * `showGermanFallback` die deutschen Unterlagen einblenden (Sprachabzeichen).
  */
+export function resolveHandoutsForLocale<T extends { lang?: string }>(
+  items: readonly T[],
+  uiLocale: string,
+  showGermanFallback: boolean,
+): HandoutsLocaleResolution<T> {
+  if (!indexHasContentLanguage(items)) {
+    return { list: [...items], showLocaleEmpty: false, germanFallbackAvailable: false };
+  }
+  const matched = filterByContentLanguage(items, uiLocale);
+  if (matched.length > 0) {
+    return { list: matched, showLocaleEmpty: false, germanFallbackAvailable: false };
+  }
+  const german = filterByContentLanguage(items, DEFAULT_CONTENT_LANGUAGE);
+  const germanFallbackAvailable = german.length > 0;
+  if (showGermanFallback && germanFallbackAvailable) {
+    return { list: german, showLocaleEmpty: false, germanFallbackAvailable: true };
+  }
+  return {
+    list: [],
+    showLocaleEmpty: items.length > 0,
+    germanFallbackAvailable,
+  };
+}
+
+/** Strikte Liste ohne deutschen Fallback (Hubs, Zaehler). */
 export function handoutsForLocale<T extends { lang?: string }>(
   items: readonly T[],
   uiLocale: string,
 ): T[] {
-  if (!indexHasContentLanguage(items)) return [...items];
-  const matched = filterByContentLanguage(items, uiLocale);
-  return matched.length > 0 ? matched : [...items];
+  return resolveHandoutsForLocale(items, uiLocale, false).list;
 }

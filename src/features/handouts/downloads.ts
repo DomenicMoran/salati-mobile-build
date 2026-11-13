@@ -54,6 +54,11 @@ async function readIndex(): Promise<DownloadIndex> {
   }
 }
 
+export async function listHandoutDownloadIds(): Promise<readonly string[]> {
+  const index = await readIndex();
+  return Object.keys(index);
+}
+
 async function writeIndex(index: DownloadIndex): Promise<void> {
   await AsyncStorage.setItem(INDEX_KEY, JSON.stringify(index)).catch(() => {});
 }

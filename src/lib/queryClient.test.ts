@@ -69,4 +69,19 @@ describe('sollInDieAblage', () => {
     expect(sollInDieAblage({ queryKey: ['quran', 'surah', 2], state: { status: 'error' } })).toBe(false);
     expect(sollInDieAblage({ queryKey: ['quran', 'surah', 2], state: { status: 'pending' } })).toBe(false);
   });
+
+  it('persistiert keine leeren Podcast-/Hörbuch-Indizes', () => {
+    expect(
+      sollInDieAblage({
+        queryKey: ['podcast', 'index'],
+        state: { status: 'success', data: { episodes: [] } },
+      }),
+    ).toBe(false);
+    expect(
+      sollInDieAblage({
+        queryKey: ['audiobooks', 'index'],
+        state: { status: 'success', data: { entries: [] } },
+      }),
+    ).toBe(false);
+  });
 });

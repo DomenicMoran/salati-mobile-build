@@ -20,18 +20,14 @@ import { useSettings } from '@/features/settings/store';
 import { useTranslation } from '@/lib/i18n';
 
 const WEEKDAY_KEYS = ['mo', 'tu', 'we', 'th', 'fr', 'sa', 'su'];
-const LABEL_COL_WIDTH = 84;
-const PRAYER_COL_WIDTH = 76;
-
 export default function PrayerTimesWeekScreen() {
   const { t } = useTranslation();
   const { settings } = useSettings();
   const { data, isLoading, isError } = useWeekTimings();
   const { width } = useWindowDimensions();
-  const tablet = width >= 600;
-  const tableWidth = Math.min(width - Spacing.three * 2, MaxContentWidth - Spacing.three * 2);
-  const labelWidth = tablet ? Math.min(112, tableWidth * 0.18) : LABEL_COL_WIDTH;
-  const prayerWidth = tablet ? (tableWidth - labelWidth) / PRAYERS.length : PRAYER_COL_WIDTH;
+  const narrow = width > 0 && width < 430;
+  const labelColWidth = narrow ? 68 : 84;
+  const prayerColWidth = narrow ? 66 : 76;
 
   const rows = buildWeekRows(data ?? []);
 
@@ -64,17 +60,12 @@ export default function PrayerTimesWeekScreen() {
 
         {rows.length > 0 && (
           <ScrollView contentContainerStyle={styles.scroll}>
-            {!tablet && (
-              <ThemedText type="small" themeColor="textSecondary" style={styles.scrollHint}>
-                {t('prayerWeek.scrollHint')}
-              </ThemedText>
-            )}
-            <ScrollView horizontal showsHorizontalScrollIndicator={!tablet} persistentScrollbar={!tablet}>
-              <ThemedView type="backgroundElement" style={[styles.table, tablet && { width: tableWidth }]}>
+            <ScrollView horizontal showsHorizontalScrollIndicator contentContainerStyle={styles.tableScroll}>
+              <ThemedView type="backgroundElement" style={styles.table}>
                 <View style={styles.row}>
-                  <View style={[styles.cell, styles.labelCell, { width: labelWidth }]} />
+                  <View style={[styles.cell, styles.labelCell, { width: labelColWidth }]} />
                   {PRAYERS.map((p) => (
-                    <View key={p} style={[styles.cell, styles.prayerCell, { width: prayerWidth }]}>
+                    <View key={p} style={[styles.cell, styles.prayerCell, { width: prayerColWidth }]}>
                       <ThemedText type="smallBold" themeColor="textSecondary" numberOfLines={1}>
                         {t(`prayers.${p.toLowerCase()}`)}
                       </ThemedText>
@@ -85,7 +76,7 @@ export default function PrayerTimesWeekScreen() {
                 {rows.map((row, i) => (
                   <AnimatedListItem key={row.date.toISOString()} index={i + 1}>
                     <View style={[styles.row, row.isToday && styles.rowToday]}>
-                      <View style={[styles.cell, styles.labelCell, { width: labelWidth }]}>
+                      <View style={[styles.cell, styles.labelCell, { width: labelColWidth }]}>
                         <ThemedText type={row.isToday ? 'smallBold' : 'small'} themeColor={row.isToday ? 'accent' : 'text'}>
                           {t(`calendar.weekdays.${WEEKDAY_KEYS[row.weekdayIdx]}`)}
                         </ThemedText>
@@ -94,7 +85,7 @@ export default function PrayerTimesWeekScreen() {
                         </ThemedText>
                       </View>
                       {PRAYERS.map((p) => (
-                        <View key={p} style={[styles.cell, styles.prayerCell, { width: prayerWidth }]}>
+                        <View key={p} style={[styles.cell, styles.prayerCell, { width: prayerColWidth }]}>
                           <ThemedText
                             type={row.isToday ? 'smallBold' : 'small'}
                             themeColor={row.isToday ? 'accent' : 'text'}>
@@ -131,6 +122,7 @@ const styles = StyleSheet.create({
     width: '100%',
     maxWidth: MaxContentWidth,
   },
+  tableScroll: { paddingRight: Spacing.two },
   table: {
     borderRadius: Spacing.three,
     overflow: 'hidden',
@@ -143,8 +135,7 @@ const styles = StyleSheet.create({
   },
   rowToday: { backgroundColor: 'rgba(212,175,55,0.14)' },
   cell: { paddingVertical: Spacing.two, paddingHorizontal: Spacing.one, alignItems: 'center', justifyContent: 'center' },
-  labelCell: { width: LABEL_COL_WIDTH, alignItems: 'flex-start', paddingLeft: Spacing.three },
-  prayerCell: { width: PRAYER_COL_WIDTH },
+  labelCell: { alignItems: 'flex-start', paddingLeft: Spacing.three },
+  prayerCell: {},
   hint: { textAlign: 'center', marginTop: Spacing.three, paddingHorizontal: Spacing.three },
-  scrollHint: { textAlign: 'center', marginBottom: Spacing.one },
 });

@@ -1,3 +1,5 @@
+import { canonicalBibliothekReaderBookId } from '@/features/bibliothek/allinone/constants';
+
 // Zentrale Deep-Link-URL-Konstruktion für "Vers/Hadith als Bild teilen"
 // (share-card.tsx): hält das exakte Schema (`salatibox://…`, s. `scheme` in
 // app.config.ts) an einer Stelle statt in jedem Screen erneut zusammenzubauen.
@@ -37,4 +39,22 @@ export function hadeethencDeepLink(categoryId: string, id: string): string {
  * Empfänger direkt zur Kursübersicht, s. app/study/[course]/index.tsx. */
 export function studyCourseDeepLink(courseId: string): string {
   return `${SCHEME}://study/${courseId}`;
+}
+
+/** z. B. `salatibox://bibliothek/tafsir/2?block=3` — Ibn-Rassoul-Buch in der Bibliothek. */
+export function tafsirBibliothekDeepLink(surah: number, block = 0): string {
+  const blockQuery = block > 0 ? `?block=${block}` : '';
+  return `${SCHEME}://bibliothek/tafsir/${surah}${blockQuery}`;
+}
+
+/** z. B. `salatibox://bibliothek/reader/salati-islam-lernwerk` — All-in-One Reader-Shell (Phase D). */
+export function bibliothekReaderDeepLink(bookId: string, pdfUrl?: string): string {
+  const id = canonicalBibliothekReaderBookId(bookId);
+  const query = pdfUrl?.trim() ? `?pdfUrl=${encodeURIComponent(pdfUrl.trim())}` : '';
+  return `${SCHEME}://bibliothek/reader/${encodeURIComponent(id)}${query}`;
+}
+
+/** z. B. `salatibox://quran/2` ohne Vers-Sprung. */
+export function quranSurahDeepLink(surah: number): string {
+  return `${SCHEME}://quran/${surah}`;
 }

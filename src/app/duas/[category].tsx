@@ -96,7 +96,6 @@ export default function DuaCategoryScreen() {
                       accessibilityRole="button"
                       accessibilityLabel={t('duas.shareText')}
                       style={({ pressed }) => [
-                        styles.iconAction,
                         Platform.OS === 'web' ? styles.pressableWeb : undefined,
                         pressed && styles.pressed,
                       ]}>
@@ -108,7 +107,6 @@ export default function DuaCategoryScreen() {
                       accessibilityRole="button"
                       accessibilityLabel={t('duas.shareImage')}
                       style={({ pressed }) => [
-                        styles.iconAction,
                         Platform.OS === 'web' ? styles.pressableWeb : undefined,
                         pressed && styles.pressed,
                       ]}>
@@ -158,5 +156,4 @@ const styles = StyleSheet.create({
   actions: { flexDirection: 'row', alignItems: 'center', gap: Spacing.three },
   pressableWeb: { cursor: 'pointer' },
   pressed: { opacity: 0.6 },
-  iconAction: { width: 44, height: 44, alignItems: 'center', justifyContent: 'center' },
 });

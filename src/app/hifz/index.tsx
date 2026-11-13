@@ -7,6 +7,7 @@ import { AnimatedListItem } from '@/components/ui/animated-list-item';
 import { PressableCard } from '@/components/ui/pressable-card';
 import { EmptyState } from '@/components/empty-state';
 import { ThemedActivityIndicator } from '@/components/themed-activity-indicator';
+import { QuranArabicText } from '@/components/quran-arabic-text';
 import { ThemedText } from '@/components/themed-text';
 import { ThemedView } from '@/components/themed-view';
 import { Colors, MaxContentWidth, Spacing } from '@/constants/theme';
@@ -95,9 +96,7 @@ export default function HifzSurahPickerScreen() {
                         {known} / {item.numberOfAyahs} {t('hifz.memorized')}
                       </ThemedText>
                     </View>
-                    <ThemedText type="default" style={styles.arabicName}>
-                      {item.name}
-                    </ThemedText>
+                    <QuranArabicText style={styles.arabicName}>{item.name}</QuranArabicText>
                   </PressableCard>
                 </AnimatedListItem>
               );

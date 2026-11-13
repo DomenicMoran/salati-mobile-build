@@ -1,4 +1,3 @@
-import { parseSurahNumber } from '@/features/hifz/routeParams';
 import { useSsrSafeAudioPlayer } from '@/lib/ssrSafeAudio';
 import { router, useLocalSearchParams } from 'expo-router';
 import { backOr } from '@/lib/nav';
@@ -115,7 +114,7 @@ export default function HifzPracticeScreen() {
     ayah?: string;
     recite?: string;
   }>();
-  const surahNumber = parseSurahNumber(surah);
+  const surahNumber = Number(surah);
   // Reader-Einstieg: /hifz/[surah]?ayah=N&recite=1 (siehe reciteFlow.ts)
   const { targetAyah, reciteRequested } = parseReciteParams({ ayah: ayahParam, recite });
   const { settings } = useSettings();

@@ -16,7 +16,6 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 import { EmptyState } from '@/components/empty-state';
 import { ScreenHeader } from '@/components/screen-header';
 import { ThemedActivityIndicator } from '@/components/themed-activity-indicator';
-import { ThemedText } from '@/components/themed-text';
 import { ThemedView } from '@/components/themed-view';
 import { MaxContentWidth, Spacing } from '@/constants/theme';
 import { useTranslation } from '@/lib/i18n';
@@ -25,6 +24,7 @@ import { useLocaleTerm, type Term } from '@/features/lexikon/grammatikTerm';
 import { ParadigmTable } from '@/features/lexikon/ParadigmTable';
 import { istGueltigeWurzelTypKategorie, verbFamilieVonWurzelTyp } from '@/features/lexikon/paradigmenKategorien';
 import { useParadigmTabellenByVerbFamilie } from '@/features/lexikon/paradigmenLoader';
+import { TermLabel } from '@/features/lexikon/TermLabel';
 
 const VERB_FAMILIE_LOCALE_PATH = {
   sahih: 'lexikon.grammar.tables.verbFamilieSahih',
@@ -39,7 +39,7 @@ const VERB_FAMILIE_LOCALE_PATH = {
 
 export default function VerbtypScreen() {
   const { typ } = useLocalSearchParams<{ typ: string }>();
-  const { locale, t } = useTranslation();
+  const { t } = useTranslation();
 
   const gueltig = typeof typ === 'string' && istGueltigeWurzelTypKategorie(typ);
   const familie = gueltig ? verbFamilieVonWurzelTyp(typ) : null;
@@ -64,11 +64,7 @@ export default function VerbtypScreen() {
             <EmptyState icon="alert-circle-outline" title={t('lexikon.verbtyp.notFound')} />
           ) : (
             <>
-              {locale !== 'de' ? (
-                <ThemedText type="small" themeColor="textSecondary" style={styles.languageNotice}>
-                  {t('lexikon.grammar.germanOnlyNote')}
-                </ThemedText>
-              ) : null}
+              <TermLabel term={familieTerm} nameType="title" layout="inline" style={styles.heading} />
               {data.map((tab) => (
                 <ParadigmTable key={tab.id} table={tab} />
               ))}
@@ -91,6 +87,6 @@ const styles = StyleSheet.create({
     paddingHorizontal: Spacing.three,
     paddingBottom: Spacing.six,
   },
-  languageNotice: { marginBottom: Spacing.two },
   center: { alignItems: 'center', justifyContent: 'center', paddingVertical: Spacing.five },
+  heading: { marginBottom: Spacing.three },
 });

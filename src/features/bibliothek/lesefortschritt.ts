@@ -2,6 +2,9 @@ export type Lesefortschritt = { surah: number; block: number };
 
 export const LESEFORTSCHRITT_STORAGE_KEY = 'salati.bibliothek.rassoul.v1';
 
+/** Zeitstempel des zuletzt geschriebenen Tafsir-Fortschritts (Hub „Weiterlesen“). */
+export const TAFSIR_LESEFORTSCHRITT_UPDATED_KEY = 'salati.bibliothek.rassoul.updatedAt.v1';
+
 export function parseLesefortschritt(raw: string | null): Lesefortschritt | null {
   if (raw == null || raw.trim() === '') return null;
   try {

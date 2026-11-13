@@ -15,6 +15,7 @@ import { AnimatedListItem } from '@/components/ui/animated-list-item';
 import { IconSymbol } from '@/components/ui/icon-symbol';
 import { PressableCard } from '@/components/ui/pressable-card';
 import { ThemedActivityIndicator } from '@/components/themed-activity-indicator';
+import { QuranArabicText } from '@/components/quran-arabic-text';
 import { ThemedText } from '@/components/themed-text';
 import { ThemedView } from '@/components/themed-view';
 import { Colors, MaxContentWidth, Spacing } from '@/constants/theme';
@@ -25,6 +26,7 @@ import { surahNameTranslation } from '@/features/quran/surahNames';
 import { useGrid } from '@/hooks/use-layout';
 import { useResolvedScheme } from '@/hooks/use-resolved-scheme';
 import { useTranslation } from '@/lib/i18n';
+import { DocumentHeadTitle } from '@/lib/document-head-title';
 
 type ViewMode = 'surah' | 'juz';
 
@@ -32,6 +34,7 @@ export default function QuranScreen() {
   const { data: surahs, isLoading, isError } = useSurahList();
   const { lastRead, bookmarks, history } = useQuranProgress();
   const { t, locale } = useTranslation();
+  const pageTitle = t('nav.quran');
   const [mode, setMode] = useState<ViewMode>('surah');
   const [query, setQuery] = useState('');
   const scheme = useResolvedScheme();
@@ -59,6 +62,7 @@ export default function QuranScreen() {
 
   return (
     <ThemedView style={styles.container}>
+      <DocumentHeadTitle title={pageTitle} />
       <SafeAreaView style={styles.safeArea}>
         <ThemedText type="title" style={styles.title}>
           {t('nav.quran')}
@@ -221,9 +225,7 @@ export default function QuranScreen() {
                       {surahNameTranslation(item.number, locale, item.englishNameTranslation)} · {item.numberOfAyahs} {t('quran.verses')}
                     </ThemedText>
                   </View>
-                  <ThemedText type="default" style={styles.arabicName}>
-                    {item.name}
-                  </ThemedText>
+                  <QuranArabicText style={styles.arabicName}>{item.name}</QuranArabicText>
                 </PressableCard>
               </AnimatedListItem>
               )
@@ -264,9 +266,9 @@ export default function QuranScreen() {
                         {item.ayah}
                       </ThemedText>
                     </View>
-                    <ThemedText type="default" style={styles.arabicName}>
-                      {startSurah?.name ?? ''}
-                    </ThemedText>
+                    {startSurah?.name ? (
+                      <QuranArabicText style={styles.arabicName}>{startSurah.name}</QuranArabicText>
+                    ) : null}
                   </PressableCard>
                 </AnimatedListItem>
               );

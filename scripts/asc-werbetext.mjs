@@ -27,25 +27,13 @@ const GRENZE = 170;
  * Rezitation; 14 Sprachen). Keine Hardware, kein Zubehoer, kein Kauf.
  */
 const TEXTE = {
-  // Sichtbarste Zeile: das neue 1.56.0-Merkmal, plus die bestehenden Zusagen.
+  // Seit 1.47.0: der Moschee-Abgleich ist das, was Salati von anderen
+  // Gebetszeiten-Apps unterscheidet — also gehoert er an die sichtbarste
+  // Stelle. Die Zusagen dahinter bleiben stehen.
   'de-DE':
-    'Neu: Hörbücher Pflichtwissen und Arabisch-Grammatik — Audio plus Präsentationsvideo in 14 Sprachen. Koran, Qibla, Hifz. Ohne Konto, Werbung und Tracking.',
+    'Neu: Zeiten vom Aushang deiner Moschee abtippen — Salati findet die passende Berechnung aus 23 Behörden. Dazu Koran, Qibla, Hifz. Ohne Konto, Werbung und Tracking.',
   'en-US':
-    'New: audiobooks on essential Islamic knowledge and Arabic grammar — audio plus presentation video in 14 languages. Quran, qibla, hifz. No account, ads or tracking.',
-  'ar-SA':
-    'جديد: كتب صوتية للعلم الواجب وقواعد العربية — صوت وفيديو تقديمي بـ14 لغة. قرآن، قبلة، حفظ. بلا حساب ولا إعلانات ولا تتبع.',
-  'bn-BD':
-    'নতুন: ওয়াজিব ইলম ও আরবি ব্যাকরণের অডিওবুক — ১৪ ভাষায় অডিও ও উপস্থাপনা ভিডিও। কুরআন, কিবলা, হিফজ। অ্যাকাউন্ট, বিজ্ঞাপন ও ট্র্যাকিং ছাড়া।',
-  'es-ES':
-    'Nuevo: audiolibros de conocimiento islámico esencial y gramática árabe — audio y vídeo en 14 idiomas. Corán, qibla, hifz. Sin cuenta, anuncios ni rastreo.',
-  'fr-FR':
-    'Nouveau : livres audio savoir islamique essentiel et grammaire arabe — audio et vidéo en 14 langues. Coran, qibla, hifz. Sans compte, pub ni pistage.',
-  id: 'Baru: buku audio ilmu wajib Islam dan tata bahasa Arab — audio plus video presentasi dalam 14 bahasa. Quran, kiblat, hifz. Tanpa akun, iklan, pelacakan.',
-  ms: 'Baharu: buku audio ilmu wajib Islam dan tatabahasa Arab — audio plus video pembentangan dalam 14 bahasa. Quran, kiblat, hifz. Tanpa akaun, iklan, penjejakan.',
-  ru: 'Новое: аудиокниги обязательных знаний и арабской грамматики — аудио и видео на 14 языках. Коран, кибла, хифз. Без аккаунта, рекламы и слежки.',
-  tr: 'Yeni: farz ilim ve Arap grameri sesli kitapları — 14 dilde ses ve sunum videosu. Kuran, kıble, hifz. Hesap, reklam ve takip yok.',
-  'ur-PK':
-    'نیا: فرض اسلامی علم اور عربی گرامر کی آڈیو بکس — ۱۴ زبانوں میں آڈیو اور پیشکشی ویڈیو۔ قرآن، قبلہ، حفظ۔ بغیر اکاؤنٹ، اشتہار اور ٹریکنگ۔',
+    'New: type in your mosque’s timetable — Salati finds the matching calculation out of 23 authorities. Plus Quran, qibla and hifz. No account, no ads, no tracking.',
 };
 
 const token = jwt.sign({ iss: ISSUER, aud: 'appstoreconnect-v1' }, fs.readFileSync(KEY_PATH, 'utf8'), {

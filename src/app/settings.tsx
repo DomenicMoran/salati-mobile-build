@@ -15,6 +15,7 @@ import { formatErrorReport, getErrorLog } from '@/lib/errorLog';
 import { useSsrSafeAudioPlayer } from '@/lib/ssrSafeAudio';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
+import { AuthorBookCard } from '@/components/author-book-card';
 import { AnimatedListItem } from '@/components/ui/animated-list-item';
 import {
   ActionRow,
@@ -49,7 +50,7 @@ import {
   quranFontDef,
   type QuranFontDef,
 } from '@/features/quran/fonts';
-import { useQuranFontFamily } from '@/features/quran/useQuranFont';
+import { useQuranFont, useQuranFontFamily } from '@/features/quran/useQuranFont';
 import { useQueryClient } from '@tanstack/react-query';
 
 import { BEST_TAFSIRS, BEST_TRANSLATIONS, RECOMMENDED_RECITERS, RECOMMENDED_TRANSLATIONS, fetchSurahReading } from '@/features/quran/api';
@@ -115,9 +116,11 @@ import {
   type NotificationToggles,
   type PrayerTimeOffsets,
 } from '@/features/settings/types';
+import { useHydrated } from '@/hooks/use-hydrated';
 import { splitSequential, useLayout } from '@/hooks/use-layout';
 import { useResolvedScheme } from '@/hooks/use-resolved-scheme';
 import { useRtl } from '@/hooks/use-rtl';
+import { DocumentHeadTitle } from '@/lib/document-head-title';
 import { useTranslation } from '@/lib/i18n';
 import { isRtlLocale } from '@/lib/locale-detect';
 import type { Locale } from '@/lib/locale-detect';
@@ -330,6 +333,10 @@ const SETTINGS_SEARCH_INDEX: SearchGroup[] = [
   {
     group: 'settings.groups.about',
     sections: [
+      {
+        id: 'authorBook.eyebrow',
+        keys: ['authorBook.eyebrow', 'authorBook.body', 'authorBook.ctaBod', 'authorBook.ctaAmazon'],
+      },
       { id: 'settings.legal', keys: ['settings.legal', 'nav.impressum', 'nav.datenschutz', 'nav.agb', 'nav.lizenzen', 'settings.legalFeedback', 'settings.legalVersion'] },
     ],
   },
@@ -829,6 +836,7 @@ export default function SettingsScreen() {
 
   return (
     <SettingsFilterContext.Provider value={filterVisible}>
+    <DocumentHeadTitle title={t('nav.settings')} />
     <ThemedView type="groupedBackground" style={styles.container}>
       <SafeAreaView style={styles.safeArea}>
         <ScreenHeader title={t('nav.settings')} variant="modal" align="left" />
@@ -2075,6 +2083,12 @@ export default function SettingsScreen() {
           <GroupHeader label={t('settings.groups.about')} />
 
           <AnimatedListItem index={36}>
+          <Section label={t('authorBook.eyebrow')}>
+            <AuthorBookCard />
+          </Section>
+          </AnimatedListItem>
+
+          <AnimatedListItem index={37}>
           <Section label={t('settings.legal')}>
             <NavRow onPress={() => router.push('/impressum')} label={t('nav.impressum')} />
             <NavRow onPress={() => router.push('/datenschutz')} label={t('nav.datenschutz')} />
@@ -2268,8 +2282,13 @@ function QuranFontRow({
   hint: string;
   onPress: () => void;
 }) {
-  const family = useQuranFontFamily(font.id);
-  const { fontSize, lineHeight } = arabicMetrics(font.id, FONT_PREVIEW_SIZE, FONT_PREVIEW_LINE_HEIGHT);
+  const hydrated = useHydrated();
+  const { family, text, metrics } = useQuranFont(font.id);
+  const showFontPreview = hydrated && !!family;
+  const { fontSize, lineHeight } = showFontPreview
+    ? metrics(FONT_PREVIEW_SIZE, FONT_PREVIEW_LINE_HEIGHT)
+    : { fontSize: FONT_PREVIEW_SIZE, lineHeight: FONT_PREVIEW_LINE_HEIGHT };
+  const previewText = showFontPreview ? text(FONT_PREVIEW_TEXT) : '…';
   return (
     <SelectRow
       label={font.name}
@@ -2288,11 +2307,11 @@ function QuranFontRow({
           style={[
             styles.fontPreview,
             ARABIC_FONT_FEATURES,
-            { fontFamily: family, fontSize, lineHeight },
+            showFontPreview && family ? { fontFamily: family, fontSize, lineHeight } : { fontSize, lineHeight },
           ]}>
           {/* In der Kodierung DIESER Schrift — sonst zeigt die Vorschau etwas
               anderes als der Reader danach (features/quran/fonts.ts). */}
-          {adaptQuranText(FONT_PREVIEW_TEXT, font)}
+          {previewText}
         </ThemedText>
       }
     />

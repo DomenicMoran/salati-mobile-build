@@ -15,9 +15,6 @@
     },
     "production": {
       "channel": "production",
-      "env": {
-        "NPM_CONFIG_LEGACY_PEER_DEPS": "true"
-      },
       "ios": {
         "credentialsSource": "local"
       },
@@ -28,9 +25,6 @@
     },
     "production-play": {
       "channel": "production",
-      "env": {
-        "NPM_CONFIG_LEGACY_PEER_DEPS": "true"
-      },
       "android": {
         "credentialsSource": "local",
         "buildType": "app-bundle"
@@ -38,13 +32,6 @@
     }
   },
   "submit": {
-    "production-play-draft": {
-      "android": {
-        "serviceAccountKeyPath": "C:/Users/domen/Documents/Projektordner/90_Werkstatt/menucloud-mobile-build/play-service-account.json",
-        "track": "internal",
-        "releaseStatus": "draft"
-      }
-    },
     "production": {
       "android": {
         "serviceAccountKeyPath": "C:/Users/domen/Documents/Projektordner/90_Werkstatt/menucloud-mobile-build/play-service-account.json",

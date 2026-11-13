@@ -493,6 +493,36 @@ describe('WortAnalyseSheet', () => {
   // Zusammenführung von WordInfoSheet (schlank) und WortAnalyseSheet (tief) zu
   // EINEM Sheet (2026-09): die Einzelbuchstaben-Aufschlüsselung des früheren
   // WordInfoSheet darf dabei nicht verlorengehen.
+  it('zeigt in DE-UI kein englisches WBW-Gloss ohne translationOverride (V-E-001)', async () => {
+    await render(<WortAnalyseSheet {...baseProps()} />, { wrapper: Wrapper });
+
+    expect(screen.queryByText('and they establish')).toBeNull();
+    expect(screen.queryByText(t('quran.wordInfo.translationLabel'))).toBeNull();
+    expect(screen.getByText('wa yuqimuna')).toBeTruthy();
+  });
+
+  it('zeigt ein deutsches translationOverride unter Bedeutung', async () => {
+    await render(<WortAnalyseSheet {...baseProps({ translationOverride: 'und sie errichten' })} />, {
+      wrapper: Wrapper,
+    });
+
+    expect(screen.getByText('und sie errichten')).toBeTruthy();
+    expect(screen.getByText(t('quran.wordInfo.translationLabel'))).toBeTruthy();
+    expect(screen.queryByText('and they establish')).toBeNull();
+  });
+
+  it('zeigt englisches WBW-Gloss in EN-UI', async () => {
+    await AsyncStorage.setItem(
+      SETTINGS_STORAGE_KEY,
+      JSON.stringify({ ...DEFAULT_SETTINGS, language: 'en' }),
+    );
+
+    await render(<WortAnalyseSheet {...baseProps()} />, { wrapper: Wrapper });
+
+    expect(screen.getByText('and they establish')).toBeTruthy();
+    expect(screen.queryByText(translate('en', 'quran.wordInfo.translationLanguageNote'))).toBeNull();
+  });
+
   it('schlüsselt das Wort in der Buchstaben-Sektion in Einzelbuchstaben auf', async () => {
     await render(
       <WortAnalyseSheet
@@ -510,10 +540,11 @@ describe('WortAnalyseSheet', () => {
 
   // Graceful degradation: offline oder Sure noch nicht geladen — die
   // Morphologie-Abfrage schlägt fehl, das Sheet darf trotzdem nicht leer
-  // wirken. Bedeutung, Umschrift und Buchstaben bleiben verfügbar (sie
-  // brauchen keine Morphologiedaten), und für den Grammatikteil steht ein
-  // ehrlicher Hinweis statt eines stillen Fehlers oder leeren Abschnitts.
-  it('zeigt Bedeutung, Umschrift und Buchstaben auch ohne Morphologiedaten und weist ehrlich auf die fehlenden Grammatikdaten hin', async () => {
+  // wirken. Umschrift und Buchstaben bleiben verfügbar (sie brauchen keine
+  // Morphologiedaten); englisches WBW-Gloss bleibt in DE-UI ausgeblendet
+  // (V-E-001). Für den Grammatikteil steht ein ehrlicher Hinweis statt eines
+  // stillen Fehlers oder leeren Abschnitts.
+  it('zeigt Umschrift und Buchstaben auch ohne Morphologiedaten, blendet EN-Gloss in DE-UI aus und weist ehrlich auf fehlende Grammatikdaten hin', async () => {
     mockVerse = undefined;
     mockMorphState = { isLoading: false, isError: true };
 
@@ -524,8 +555,8 @@ describe('WortAnalyseSheet', () => {
       { wrapper: Wrapper },
     );
 
-    // Kernaussage bleibt sichtbar.
-    expect(screen.getByText('a book')).toBeTruthy();
+    expect(screen.queryByText('a book')).toBeNull();
+    expect(screen.queryByText(t('quran.wordInfo.translationLanguageNote'))).toBeNull();
     expect(screen.getByText('kitabun')).toBeTruthy();
     // Buchstaben-Sektion ist weiterhin da (braucht keine Morphologie).
     expect((await screen.findAllByText('Kāf')).length).toBeGreaterThan(0);

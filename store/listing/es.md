@@ -9,6 +9,7 @@ Horarios de oración con Adhan, Qibla, Corán y Ramadán — sin anuncios ni cue
 (78/80 Zeichen)
 
 ## Vollständige Beschreibung
+
 Salati te acompaña en tu día como musulmán — con horarios de oración precisos, el Corán, una IA privada en tu dispositivo y un curso completo para aprender a leer el Corán desde cero. Sin anuncios, sin cuenta y sin rastreo.
 
 ORACIÓN Y VIDA DIARIA
@@ -47,20 +48,20 @@ SALATI IA
 • Se indica con claridad: respuesta generada por IA, no una fatwa ni la opinión de un erudito
 
 SABER Y CORAZÓN
-• Estudio: 14 cursos con fuentes y 363 lecciones — Aqida, Tayuid, 40 hadices (Nawawi), Sira, Profetas, Compañeros y sabios, Ajlaq, Matrimonio y familia, gramática del Corán, árabe cotidiano, árabe de Medina, dialectos — orden libre
+• Estudio: 12 cursos con fuentes y 311 lecciones — Aqida, Tayuid, 40 hadices (Nawawi), Sira, Profetas, Compañeros y sabios, Ajlaq, Matrimonio y familia, gramática del Corán, árabe cotidiano, árabe de Medina (libros 1–4), dialectos árabes — con orden de cursos y dialectos totalmente personalizable
 • Prueba de nivel y de conocimientos, repaso espaciado, entrenamiento de puntos débiles, racha de aprendizaje y meta diaria
 • Práctica y Quiz: 14 modos, más repaso de errores
 • Resumen semanal como imagen para compartir
 • Insignias por hitos alcanzados
-• Colecciones de hadices con búsqueda en todas a la vez
+• Colecciones de hadices (hadiz) con búsqueda en todas a la vez (árabe, inglés, turco)
 • Radio del Corán: recitaciones 24/7
 • 99 Nombres de Allah con audio, dhikr tras la oración y duas con indicación de la fuente
 • Guías prácticas con fotos: wudu, ghusl, la oración, el yanaza, hach y umra y más
 • Calculadoras de zakat y de herencia, sabidurías documentadas, contador de tasbih
 
-AUDIOLIBROS, PODCAST, VÍDEOS Y REELS
-• Audiolibros «Conocimiento islámico esencial» (8 cap.) y «Gramática árabe — Curso 3» (10 cap.): audio y vídeo de presentación en 14 idiomas de la app
-• Podcast Salati, vídeos, reels y PDF — Spotify, YouTube, Instagram
+PODCAST, VÍDEOS Y REELS
+• Podcast «La lengua del Corán»: árabe coránico episodio a episodio — en Spotify
+• Vídeos en YouTube, Reels en Instagram y PDF descargables
 
 TUS DATOS SON TUYOS
 Sin anuncios, sin cuenta y sin SDK de rastreo: tus datos se quedan en tu dispositivo. Tu ubicación solo se usa para horarios, Qibla y búsqueda cercana y se envía a AlAdhan y OpenStreetMap: anónima y opcional. Funciona sin conexión.
@@ -68,7 +69,7 @@ Sin anuncios, sin cuenta y sin SDK de rastreo: tus datos se quedan en tu disposi
 ¿Preguntas o comentarios? salati@domenicmoran.de
 Privacidad: https://www.salati.pro/datenschutz
 
-(3983/4000 Zeichen)
+(3985/4000 Zeichen)
 
 ## Keywords
 

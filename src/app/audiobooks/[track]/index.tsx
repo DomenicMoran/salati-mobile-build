@@ -50,7 +50,7 @@ export default function AudiobookTrackScreen() {
         : locale;
 
   const chapters =
-    data && isAudiobookTrackId(trackId) ? chaptersForTrack(data.entries, trackId, contentLang) : [];
+    data && isAudiobookTrackId(trackId) ? chaptersForTrack(data.entries, trackId, contentLang, data) : [];
 
   return (
     <ThemedView style={styles.container}>

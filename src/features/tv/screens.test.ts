@@ -15,6 +15,11 @@ import { TV_SHORTCUTS, tvShortcutsFor } from './screens';
 
 const NAV_TS = path.join(__dirname, '..', '..', '..', '..', 'tv', 'src', 'lib', 'nav.ts');
 
+/** TV-Home-Kacheln nutzen camelCase, Screen-IDs sind kleingeschrieben. */
+function tvHomeLabelKey(screen: string): string {
+  return screen === 'gebetgemeinsam' ? 'gebetGemeinsam' : screen;
+}
+
 /** Die `SCREENS`-Literale aus der TV-App — bewusst als Quelltext gelesen, weil
  *  `apps/tv` ausserhalb des pnpm-Workspace liegt und nicht importierbar ist. */
 function tvScreens(): string[] {
@@ -63,10 +68,11 @@ describe('Sprungziele der TV-Fernbedienung', () => {
       const mobile = require(`@/locales/${locale}.json`) as { tvRemote: Record<string, string> };
       for (const s of TV_SHORTCUTS) {
         if (s.screen === 'home') continue;
+        const homeKey = tvHomeLabelKey(s.screen);
         expect([locale, s.screen, mobile.tvRemote[s.screen]]).toEqual([
           locale,
           s.screen,
-          tv.home[s.screen],
+          tv.home[homeKey],
         ]);
       }
     }

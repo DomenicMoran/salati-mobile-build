@@ -1,7 +1,3 @@
-# npm-lockfile darf NICHT mit hoch — sonst nutzt EAS `npm ci` statt pnpm
-# (Monorepo, pnpm-lock.yaml). Das war der 1.56.0 Install-Abbruch.
-package-lock.json
-
 # Ersetzt .gitignore für den EAS-Upload — Web-only-Assets fliegen raus,
 # der Native-Build braucht weder die APK-Teile noch das 102MB-Whisper-Modell.
 node_modules
@@ -15,15 +11,12 @@ public/models
 .DS_Store
 
 # Lokale Build-Artefakte — blaehen das EAS-Archiv sonst auf >2GB (hier android/app/build = 6.9GB).
-# Fuer den iOS-Build ist android/ irrelevant; EAS prebuildet ios/ neu.
+# Lokale Android-Build-Artefakte (Quellen in Git bleiben; iOS-Build ignoriert android/ auf EAS-Seite).
 android/build
 android/app/build
 android/.gradle
 android/.cxx
 android/app/.cxx
-android/app/.cxx/
-**/.cxx
-**/.cxx/**
 android/**/build
 android/**/.cxx
 ios/build
@@ -34,16 +27,28 @@ ios/DerivedData
 **/*.keystore
 
 # Grammatik-Audit (lokal, groß) — gehoert nicht in den EAS-Upload
-.audit-grammatik
-dist-grammatik-audit
-store-assets
+.audit*
+dist*
 dist-release
+dist-grammatik-audit
+.tmp-store
 .daten-cache
-build
+store-assets
 
+# Monorepo-Schwester (wenn Archiv vom Repo-Root kommt, zusaetzlich via ../../.easignore)
+../../output/
+../../podcast/
+../../content/
+../../.claude/
+../../build-out/
+/build-out
+../../screenshots/
+../../output_videos
+../../docs
 
-# Local audit evidence may contain emulator app data; never upload it.
-**/.audit-*
-
-# Downloaded signed store artifacts are not build inputs.
-**/.tmp-store
+# Monorepo-Nachbarn (EAS laeuft oft vom Git-Root; ohne diese Zeilen >2GB-Archiv)
+../../output
+../../podcast
+../../screenshots
+../../.vercel
+../tv

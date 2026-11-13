@@ -15,6 +15,7 @@ import { IntroSheet } from '@/components/ui/intro-sheet';
 import { ThemedText } from '@/components/themed-text';
 import { ThemedView } from '@/components/themed-view';
 import { BackChipInset, Colors, MaxContentWidth, Spacing } from '@/constants/theme';
+import { markAbcCourseComplete } from '@/features/learn/abc/migration';
 import { lessonTitle } from '@/features/learn/curriculum';
 import {
   applyPlacement,
@@ -30,11 +31,9 @@ import { useResolvedScheme } from '@/hooks/use-resolved-scheme';
 import { backOr } from '@/lib/nav';
 import { useSsrSafeAudioPlayer } from '@/lib/ssrSafeAudio';
 import { useTranslation } from '@/lib/i18n';
-import { useSettings } from '@/features/settings/store';
 
 export default function PlacementScreen() {
   const { t, locale } = useTranslation();
-  const { loaded: settingsLoaded } = useSettings();
   const { progress, record } = useLearnProgress();
   const scheme = useResolvedScheme();
   const colors = Colors[scheme];
@@ -47,6 +46,19 @@ export default function PlacementScreen() {
   // study/[course]/placement.tsx, siehe dortiger Kommentar). Ein Effect
   // läuft nie während SSR — derselbe Ladezustand-Trick.
   const [checkpoints, setCheckpoints] = useState<PlacementCheckpoint[] | null>(null);
+  useEffect(() => {
+    let cancelled = false;
+    (async () => {
+      const built = buildPlacementCheckpoints(locale, Math.random);
+      if (!cancelled) setCheckpoints(built);
+    })();
+    return () => {
+      cancelled = true;
+    };
+    // Checkpoints einmal beim Öffnen mischen, nicht bei jedem Re-Render
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
   const [checkpointIndex, setCheckpointIndex] = useState(0);
   const [questionIndex, setQuestionIndex] = useState(0);
   const [score, setScore] = useState(0);
@@ -54,28 +66,6 @@ export default function PlacementScreen() {
   const [lastPassedId, setLastPassedId] = useState<string | null>(null);
   const [finished, setFinished] = useState(false);
   const [applied, setApplied] = useState(false);
-
-  useEffect(() => {
-    let cancelled = false;
-    (async () => {
-      // Settings start with German defaults and hydrate asynchronously. Build
-      // the exercise only after the persisted app language is known.
-      if (!settingsLoaded) return;
-      setCheckpoints(null);
-      setCheckpointIndex(0);
-      setQuestionIndex(0);
-      setScore(0);
-      setAnswered(null);
-      setLastPassedId(null);
-      setFinished(false);
-      setApplied(false);
-      const built = buildPlacementCheckpoints(locale, Math.random);
-      if (!cancelled) setCheckpoints(built);
-    })();
-    return () => {
-      cancelled = true;
-    };
-  }, [locale, settingsLoaded]);
 
   const checkpoint = checkpoints?.[checkpointIndex];
   const question = checkpoint?.questions[questionIndex];
@@ -145,6 +135,7 @@ export default function PlacementScreen() {
     for (const [id, result] of Object.entries(next)) {
       if (!progress[id]) record(id, result.score, result.total);
     }
+    if (lastPassedId) void markAbcCourseComplete();
     setApplied(true);
     router.replace({ pathname: '/learn/[lesson]', params: { lesson: recommended.id } });
   }

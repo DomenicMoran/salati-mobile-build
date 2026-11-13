@@ -10,7 +10,7 @@ import { ThemedSwitch } from '@/components/ui/themed-switch';
 import { ThemedText } from '@/components/themed-text';
 import { ThemedView } from '@/components/themed-view';
 import { ScreenHeader } from '@/components/screen-header';
-import { Colors, Spacing } from '@/constants/theme';
+import { Colors, MaxContentWidth, Spacing } from '@/constants/theme';
 import {
   NISAB_GOLD_GRAMS,
   REFERENCE_GOLD_PRICE_PER_GRAM,
@@ -259,7 +259,7 @@ const styles = StyleSheet.create({
   pressableWeb: { cursor: 'pointer' },
   container: { flex: 1 },
   safeArea: { flex: 1, paddingTop: Spacing.two },
-  scroll: { paddingTop: Spacing.three, paddingHorizontal: Spacing.three, paddingBottom: Spacing.five, gap: Spacing.two, alignSelf: 'center', width: '100%', maxWidth: 680, },
+  scroll: { paddingTop: Spacing.three, paddingHorizontal: Spacing.three, paddingBottom: Spacing.five, gap: Spacing.two, alignSelf: 'center', width: '100%', maxWidth: MaxContentWidth, },
   subtitle: { textAlign: 'center', marginBottom: Spacing.two, paddingHorizontal: Spacing.four },
   currencyLabel: { textAlign: 'center' },
   currencyRow: {

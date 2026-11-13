@@ -24,6 +24,52 @@ allprojects {
 apply plugin: "expo-root-project"
 apply plugin: "com.facebook.react.rootproject"
 
+// Einige Autolink-Module (z. B. expo-dynamic-app-icon) pinnen noch JVM 11 in
+// ihrer eigenen build.gradle — AGP validiert dann hart gegen Java 17.
+subprojects { sub ->
+  sub.pluginManager.withPlugin('com.android.library') {
+    sub.android.compileOptions {
+      sourceCompatibility JavaVersion.VERSION_17
+      targetCompatibility JavaVersion.VERSION_17
+    }
+  }
+  sub.pluginManager.withPlugin('com.android.application') {
+    if (sub.name != 'wear') {
+      sub.android.compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+      }
+    }
+  }
+  if (sub.state.executed) {
+    wireJvm17(sub)
+  } else {
+    sub.afterEvaluate { wireJvm17(sub) }
+  }
+}
+
+def wireJvm17(Project sub) {
+  def androidExt = sub.extensions.findByName('android')
+  if (androidExt != null) {
+    androidExt.compileOptions {
+      sourceCompatibility JavaVersion.VERSION_17
+      targetCompatibility JavaVersion.VERSION_17
+    }
+  }
+  sub.plugins.withId('org.jetbrains.kotlin.android') {
+    if (androidExt != null) {
+      androidExt.kotlinOptions {
+        jvmTarget = '17'
+      }
+    }
+  }
+  sub.tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile).configureEach {
+    kotlinOptions {
+      jvmTarget = '17'
+    }
+  }
+}
+
 // --- Windows CMAKE_OBJECT_PATH_MAX fix (ninja: manifest 'build.ninja' still dirty) ---
 // pnpm nests packages as node_modules/.pnpm/<pkg>@<ver>_<hash>/node_modules/<pkg>/android/.cxx/...
 // which pushes generated CMake object-file paths past CMake's internal 250-char
@@ -65,16 +111,6 @@ if (isWindows && !project.hasProperty("ohneKurzenCxxPfad")) {
           }
         }
       }
-    }
-  }
-}
-
-// expo-dynamic-app-icon still compiles Kotlin for JVM 11 while the app's Java
-// tasks target 17. Kotlin 2 rejects that mix. Keep every library on 17.
-subprojects { sub ->
-  sub.tasks.withType(org.jetbrains.kotlin.gradle.tasks.KotlinCompile).configureEach {
-    compilerOptions {
-      jvmTarget.set(org.jetbrains.kotlin.gradle.dsl.JvmTarget.JVM_17)
     }
   }
 }

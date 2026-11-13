@@ -1,4 +1,3 @@
-import { Linking } from 'react-native';
 import { render, screen, act, fireEvent } from '@testing-library/react-native';
 import PlayerScreen from '@/app/audiobooks/[track]/[chapter]/index';
 
@@ -41,9 +40,14 @@ jest.mock('@/features/audiobooks/data', () => ({
 jest.mock('react-native-safe-area-context', () => ({
   SafeAreaView: jest.requireActual('react-native').View,
 }));
+const mockOpenBibliothekPdf = jest.fn();
+jest.mock('@/features/bibliothek/openBook', () => ({
+  openBibliothekPdf: (...args: unknown[]) => mockOpenBibliothekPdf(...args),
+}));
 
 beforeEach(() => {
   jest.clearAllMocks();
+  mockOpenBibliothekPdf.mockImplementation(() => {});
   mockLoading = false;
   mockNowPlaying = null;
 });
@@ -81,20 +85,22 @@ it('keeps a back action visible while loading', async () => {
 
 
 it('opens the selected language book without interrupting listening', async () => {
-  const open = jest.spyOn(Linking, 'openURL').mockResolvedValue(undefined);
   await render(<PlayerScreen />);
   await fireEvent.press(screen.getByRole('link', { name: 'audiobooks.bookOpen' }));
-  expect(open).toHaveBeenCalledWith('https://example.com/book-en.pdf');
+  expect(mockOpenBibliothekPdf).toHaveBeenCalledWith({
+    pdfUrl: 'https://example.com/book-en.pdf',
+    title: 'audiobooks.bookOpen',
+  });
   expect(mockPlayer.pause).not.toHaveBeenCalled();
-  open.mockRestore();
 });
 
 it('reports book launch failures instead of silently swallowing them', async () => {
-  const open = jest.spyOn(Linking, 'openURL').mockRejectedValue(new Error('No PDF handler'));
+  mockOpenBibliothekPdf.mockImplementation(() => {
+    throw new Error('No PDF handler');
+  });
   await render(<PlayerScreen />);
   await fireEvent.press(screen.getByLabelText('audiobooks.bookOpen'));
   expect(await screen.findByRole('alert')).toBeTruthy();
-  open.mockRestore();
 });
 
 it('does not render a book action for an absent PDF', async () => {

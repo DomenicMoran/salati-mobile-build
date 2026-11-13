@@ -11,7 +11,7 @@ import { PressableCard } from '@/components/ui/pressable-card';
 import { ScreenHeader } from '@/components/screen-header';
 import { ThemedText } from '@/components/themed-text';
 import { ThemedView } from '@/components/themed-view';
-import { Colors, Spacing } from '@/constants/theme';
+import { Colors, MaxContentWidth, Spacing } from '@/constants/theme';
 import { useSurahList } from '@/features/quran/hooks';
 import { SurahRangePicker } from '@/features/quran/SurahRangePicker';
 import { surahNameTranslation } from '@/features/quran/surahNames';
@@ -225,7 +225,7 @@ const styles = StyleSheet.create({
     gap: Spacing.five,
     alignSelf: 'center',
     width: '100%',
-    maxWidth: 680,
+    maxWidth: MaxContentWidth,
   },
   block: { gap: Spacing.two },
   chipRow: { flexDirection: 'row', flexWrap: 'wrap', gap: Spacing.two },

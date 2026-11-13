@@ -1,6 +1,6 @@
 import { useSsrSafeAudioPlayer } from '@/lib/ssrSafeAudio';
 import * as Clipboard from 'expo-clipboard';
-import { router, useLocalSearchParams } from 'expo-router';
+import { router, Stack, useLocalSearchParams } from 'expo-router';
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import {
   Alert,
@@ -36,6 +36,7 @@ import { ThemedActivityIndicator } from '@/components/themed-activity-indicator'
 import { ThemedText } from '@/components/themed-text';
 import { ThemedView } from '@/components/themed-view';
 import { Colors, MaxContentWidth, Spacing } from '@/constants/theme';
+import { openTafsirSurah } from '@/features/bibliothek/openBook';
 import { recognitionAvailable } from '@/features/hifz/speech';
 import { whisperSupported } from '@/features/hifz/whisperCheck';
 import { wordToIsolatedForms } from '@/features/learn/letters';
@@ -48,6 +49,7 @@ import {
   RECOMMENDED_TRANSLATIONS,
   segmentMatchesPulseColor,
   TAJWEED_COLORS,
+  TAFSIR_DE_RASSOUL,
   wordSyncRecitationId,
 } from '@/features/quran/api';
 import {
@@ -64,6 +66,12 @@ import {
   useTranslationEditions,
 } from '@/features/quran/hooks';
 import { crossSurahCompletionLeg, crossSurahLegEndIndex, type CrossSurahLeg, type CrossSurahTarget } from '@/features/quran/crossSurahQueue';
+import {
+  loadAudioProgressEntry,
+  quranListenProgressId,
+} from '@/features/progress/audioProgress';
+import { resolveQuranListenResume } from '@/features/progress/quranListenResume';
+import { useSharedAudioProgress } from '@/features/progress/useSharedAudioProgress';
 import { useOfflineAudio } from '@/features/quran/offline-audio';
 import { getNoteText, isBookmarked, useQuranProgress } from '@/features/quran/progress';
 import { surahNameTranslation } from '@/features/quran/surahNames';
@@ -92,6 +100,7 @@ import { useQuranFont } from '@/features/quran/useQuranFont';
 import { splitArabicWords } from '@/lib/arabicText';
 import { quranAyahDeepLink } from '@/lib/deepLinks';
 import { useTranslation } from '@/lib/i18n';
+import { DocumentHeadTitle } from '@/lib/document-head-title';
 import { isRtlLanguageCode } from '@/lib/locale-detect';
 import { backOr } from '@/lib/nav';
 import { useRtl } from '@/hooks/use-rtl';
@@ -108,6 +117,8 @@ const WORD_ARABIC_LINE_HEIGHT = 26;
 // Tafsir variiert). Anders als der Mushaf sind das normale Verse, keine
 // Druckseiten-Daten.
 const AYAHS_PER_READER_PAGE = 8;
+/** Sticky-Kopf + Werkzeugleiste: ?ayah= scrollt mit viewOffset darunter. */
+const AYAH_SCROLL_HEADER_OFFSET = 132;
 
 // Gruppierte Legende statt aller 15 Rohklassen — für eine kompakte,
 // verständliche UI-Anzeige. Farben stammen direkt aus TAJWEED_COLORS.
@@ -195,6 +206,7 @@ function FeatureToggle({
         onPress={onPress}
         onLongPress={onLongPress}
         accessibilityRole="button"
+        accessibilityLabel={label}
         accessibilityState={{ selected: active }}
         accessibilityHint={caption}
         style={({ pressed }) => [
@@ -255,6 +267,10 @@ function goToCrossSurahLeg(leg: CrossSurahLeg, target: CrossSurahTarget) {
   });
 }
 
+export function generateStaticParams() {
+  return Array.from({ length: 114 }, (_, i) => ({ surah: String(i + 1) }));
+}
+
 export default function SurahReaderScreen() {
   // playFrom/crossEndSurah/crossEndAyah/crossLoop/crossStartSurah/crossStartAyah:
   // tragen eine Suren-übergreifende Abschnitts-Wiedergabe über den Suren-
@@ -296,6 +312,11 @@ export default function SurahReaderScreen() {
       : null;
   const { settings, update } = useSettings();
   const { t, locale } = useTranslation();
+  const surahPageTitle = useMemo(() => {
+    if (!Number.isFinite(surahNumber) || surahNumber < 1 || surahNumber > 114) return t('nav.quran');
+    return surahNameTranslation(surahNumber, locale, `Sure ${surahNumber}`);
+  }, [surahNumber, locale, t]);
+  const surahDocumentTitle = `${surahPageTitle} – Koran`;
   const rtl = useRtl();
   // Gewählte Koran-Schrift: Familie + arabische OpenType-Merkmale + die auf
   // diese Schrift umgerechneten Maße (jede Schrift hat eine andere natürliche
@@ -556,6 +577,7 @@ export default function SurahReaderScreen() {
     showTafsir && !!settings.quranTafsirs[2],
   );
   const tafsirTextsBySlot = [tafsirTexts0, tafsirTexts1, tafsirTexts2];
+  const tafsirBibliothekSichtbar = showTafsir && settings.quranTafsirs.includes(TAFSIR_DE_RASSOUL);
   const { data: transliterationTexts } = useSurahTransliteration(surahNumber, showTransliteration);
   const { data: secondTranslationTexts } = useSurahSecondTranslation(
     surahNumber,
@@ -677,6 +699,56 @@ export default function SurahReaderScreen() {
     sharedPlayer,
     { pathname: '/quran/[surah]', params: { surah: String(surahNumber) } },
   );
+  const quranListenId = useMemo(
+    () => quranListenProgressId(surahNumber, settings.quranReciter),
+    [surahNumber, settings.quranReciter],
+  );
+  const toggleSurahListen = useCallback(async () => {
+    if (player.playing) {
+      player.pause();
+      return;
+    }
+    if (player.currentIndex !== null) {
+      player.resume();
+      return;
+    }
+    const saved = await loadAudioProgressEntry(quranListenId);
+    const { index, seekSec } = resolveQuranListenResume(ayahsForPlayer, saved);
+    player.playFrom(index, true, seekSec > 0 ? seekSec : undefined);
+  }, [player, ayahsForPlayer, quranListenId]);
+
+  useSharedAudioProgress({
+    active: player.currentIndex !== null,
+    kind: 'quran-listen',
+    status: sharedPlayer.status,
+    buildEntry: useCallback(
+      (positionSec, durationSec) => {
+        if (player.currentIndex === null || !data) return null;
+        const ayah = data.ayahs[player.currentIndex]?.numberInSurah;
+        if (!ayah) return null;
+        return {
+          kind: 'quran-listen' as const,
+          id: quranListenId,
+          positionSec,
+          durationSec,
+          meta: {
+            surah: surahNumber,
+            ayah,
+            reciter: settings.quranReciter,
+            speed: settings.quranPlaybackSpeed,
+          },
+        };
+      },
+      [
+        player.currentIndex,
+        data,
+        quranListenId,
+        surahNumber,
+        settings.quranReciter,
+        settings.quranPlaybackSpeed,
+      ],
+    ),
+  });
   // Wort-Sync-Rennen-Schutz (Audit 2026-07-20): useSurahSegments lädt async;
   // tippt der Nutzer sofort nach einem Sure-/Rezitator-Wechsel auf Play, BEVOR
   // die Zeitstempel da sind, startet playFrom() mit der NICHT-synchronen
@@ -745,7 +817,12 @@ export default function SurahReaderScreen() {
     if (index < 0) return;
     scrolledToTargetKey.current = key;
     setTimeout(() => {
-      listRef.current?.scrollToIndex({ index, viewPosition: 0.2, animated: false });
+      listRef.current?.scrollToIndex({
+        index,
+        viewPosition: 0,
+        viewOffset: AYAH_SCROLL_HEADER_OFFSET,
+        animated: false,
+      });
     }, 100);
   }, [data, targetAyah, surahNumber]);
 
@@ -1357,6 +1434,7 @@ export default function SurahReaderScreen() {
 
   return (
     <ThemedView style={[styles.container, sepia && styles.sepiaBg]}>
+      <DocumentHeadTitle title={surahDocumentTitle} />
       <SafeAreaView style={styles.safeArea}>
         {isLoading && (
           <View style={styles.center}>
@@ -1400,7 +1478,7 @@ export default function SurahReaderScreen() {
                 </ThemedText>
               </View>
               <Pressable
-                onPress={() => (player.playing ? player.pause() : player.playFrom(player.currentIndex ?? 0))}
+                onPress={() => void toggleSurahListen()}
                 accessibilityRole="button"
                 accessibilityLabel={player.playing ? t('quran.pause') : t('quran.playSurah')}
                 style={({ pressed }) => [Platform.OS === 'web' ? styles.pressableWeb : undefined, pressed && styles.chipPressed]}>
@@ -2160,7 +2238,12 @@ export default function SurahReaderScreen() {
                   const estimate = Math.max(averageItemLength, 300);
                   listRef.current?.scrollToOffset({ offset: index * estimate, animated: false });
                   setTimeout(() => {
-                    listRef.current?.scrollToIndex({ index, viewPosition: 0.2, animated: false });
+                    listRef.current?.scrollToIndex({
+        index,
+        viewPosition: 0,
+        viewOffset: AYAH_SCROLL_HEADER_OFFSET,
+        animated: false,
+      });
                   }, 250);
                 }}
                 ListHeaderComponent={
@@ -2195,8 +2278,20 @@ export default function SurahReaderScreen() {
                  *
                  * Im Fokus-Modus ausgeblendet: dort zählt nur der Vers. */
                 ListFooterComponent={
-                  !focusMode && (uebersetzerZeilen.length > 0 || wbwQuelleSichtbar) ? (
+                  !focusMode &&
+                  (uebersetzerZeilen.length > 0 || wbwQuelleSichtbar || tafsirBibliothekSichtbar) ? (
                     <View style={styles.uebersetzerFuss}>
+                      {tafsirBibliothekSichtbar ? (
+                        <Pressable
+                          onPress={() => openTafsirSurah(surahNumber)}
+                          accessibilityRole="link"
+                          hitSlop={8}
+                          style={Platform.OS === 'web' ? styles.pressableWeb : undefined}>
+                          <ThemedText type="smallBold" themeColor="accent" sepia={sepia}>
+                            {t('bibliothek.openTafsirBook')}
+                          </ThemedText>
+                        </Pressable>
+                      ) : null}
                       {uebersetzerZeilen.map((zeile) => (
                         <ThemedText key={zeile} type="small" themeColor="textSecondary" sepia={sepia}>
                           {zeile}

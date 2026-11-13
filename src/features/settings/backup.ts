@@ -152,5 +152,5 @@ export function parseBackupFile(raw: string): ParsedBackup {
 
 /** Schreibt ein validiertes Backup zurück in AsyncStorage - überschreibt den aktuellen lokalen Fortschritt. */
 export async function applyBackupData(data: BackupData): Promise<string[]> {
-  return restoreBackupValues(data.storage);
+  return restoreBackupValues(data.storage, { mergeProgress: false });
 }

@@ -145,7 +145,8 @@ export interface NormalizeOptions {
 export function normalizeArabicText(text: string, options: NormalizeOptions = {}): string {
   if (!text) return '';
   const { form = 'NFC', carrier = NBSP, collapseWhitespace = true } = options;
-  let out = CAN_NORMALIZE ? text.normalize(form) : text;
+  let out = text.replace(/^\uFEFF/, '');
+  out = CAN_NORMALIZE ? out.normalize(form) : out;
   out = out.replace(DOTTED_CIRCLE_RE, '').replace(INVISIBLE_CONTROLS_RE, '').replace(PRIVATE_USE_RE, '');
   // Vor dem Zusammenfassen: sonst bliebe ein En-Space als eigenes „Wort" stehen
   // und `splitArabicWords` zählte an dieser Stelle ein Token zu viel.

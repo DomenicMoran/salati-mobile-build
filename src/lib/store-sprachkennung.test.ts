@@ -153,8 +153,7 @@ const version = aktuelleVersion();
  *  wird zusaetzlich explizit erwartet, damit ein Tippfehler im Dateinamen
  *  nicht als "nichts zu pruefen" durchgeht. */
 const GEPRUEFTE_DATEIEN = readdirSync(STORE_DIR)
-  // Review notes are an Apple API payload ({ notes }), not localized listings.
-  .filter((f) => /^(release-notes|whatsnew|play-notes)-.*\.json$/.test(f))
+  .filter((f) => f.endsWith('.json'))
   .sort();
 
 describe('Store-Texte (alle Fassungen): Sprachkennung passt zum Text', () => {

@@ -12,6 +12,7 @@ import { MiniPlayer } from '@/components/mini-player';
 import { SettingsProvider, useSettings } from '@/features/settings/store';
 import { refreshAllWidgets } from '@/widgets/refresh';
 import { useQuranFont } from '@/features/quran/useQuranFont';
+import { ProgressLifecycle } from '@/features/progress/ProgressLifecycle';
 import { SharedPlayerProvider } from '@/features/quran/usePlayer';
 import { syncCoursesFromRemote } from '@/features/study/courseSync';
 import { useResolvedScheme } from '@/hooks/use-resolved-scheme';
@@ -78,6 +79,7 @@ function LanguageAwarePlayer() {
   const { settings } = useSettings();
   return (
     <SharedPlayerProvider contentLocale={settings.language}>
+      <ProgressLifecycle />
       <ThemedApp />
     </SharedPlayerProvider>
   );

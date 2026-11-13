@@ -1,0 +1,257 @@
+{
+  "built": "2026-11-10",
+  "output": "output/audit-20261110-p2/builds/salati-islam-lernwerk-draft.pdf",
+  "totalPages": 901,
+  "segments": [
+    {
+      "file": "einstieg.pdf",
+      "id": "einstieg",
+      "startPage": 1,
+      "pageCount": 7,
+      "endPage": 7
+    },
+    {
+      "file": "lesen-lernen.pdf",
+      "id": "lesen-lernen",
+      "startPage": 8,
+      "pageCount": 44,
+      "endPage": 51
+    },
+    {
+      "file": "tadschwied.pdf",
+      "id": "tadschwied",
+      "startPage": 52,
+      "pageCount": 51,
+      "endPage": 102
+    },
+    {
+      "file": "grammatik.pdf",
+      "id": "grammatik",
+      "startPage": 103,
+      "pageCount": 83,
+      "endPage": 185
+    },
+    {
+      "file": "tabellen-sprache.pdf",
+      "id": "tabellen-sprache",
+      "startPage": 186,
+      "pageCount": 20,
+      "endPage": 205
+    },
+    {
+      "file": "madinah-arabisch.pdf",
+      "id": "madinah-arabisch",
+      "startPage": 206,
+      "pageCount": 155,
+      "endPage": 360
+    },
+    {
+      "file": "alltags-arabisch.pdf",
+      "id": "alltags-arabisch",
+      "startPage": 361,
+      "pageCount": 86,
+      "endPage": 446
+    },
+    {
+      "file": "dialekte.pdf",
+      "id": "dialekte",
+      "startPage": 447,
+      "pageCount": 23,
+      "endPage": 469
+    },
+    {
+      "file": "wortschatz.pdf",
+      "id": "wortschatz",
+      "startPage": 470,
+      "pageCount": 41,
+      "endPage": 510
+    },
+    {
+      "file": "kurze-suren.pdf",
+      "id": "kurze-suren",
+      "startPage": 511,
+      "pageCount": 39,
+      "endPage": 549
+    },
+    {
+      "file": "aqida.pdf",
+      "id": "aqida",
+      "startPage": 550,
+      "pageCount": 37,
+      "endPage": 586
+    },
+    {
+      "file": "namen-allahs.pdf",
+      "id": "namen-allahs",
+      "startPage": 587,
+      "pageCount": 12,
+      "endPage": 598
+    },
+    {
+      "file": "fiqh-ibadat.pdf",
+      "id": "fiqh-ibadat",
+      "startPage": 599,
+      "pageCount": 56,
+      "endPage": 654
+    },
+    {
+      "file": "duas.pdf",
+      "id": "duas",
+      "startPage": 655,
+      "pageCount": 43,
+      "endPage": 697
+    },
+    {
+      "file": "akhlaq.pdf",
+      "id": "akhlaq",
+      "startPage": 698,
+      "pageCount": 29,
+      "endPage": 726
+    },
+    {
+      "file": "ehe-familie.pdf",
+      "id": "ehe-familie",
+      "startPage": 727,
+      "pageCount": 20,
+      "endPage": 746
+    },
+    {
+      "file": "seerah.pdf",
+      "id": "seerah",
+      "startPage": 747,
+      "pageCount": 51,
+      "endPage": 797
+    },
+    {
+      "file": "propheten.pdf",
+      "id": "propheten",
+      "startPage": 798,
+      "pageCount": 48,
+      "endPage": 845
+    },
+    {
+      "file": "sahaba.pdf",
+      "id": "sahaba",
+      "startPage": 846,
+      "pageCount": 29,
+      "endPage": 874
+    },
+    {
+      "file": "pruefung-sprache.pdf",
+      "id": "pruefung-sprache",
+      "startPage": 875,
+      "pageCount": 27,
+      "endPage": 901
+    }
+  ],
+  "chapters": [
+    {
+      "index": 1,
+      "slug": "einstieg",
+      "title": "Einstieg & Absicht",
+      "startPage": 1,
+      "pageCount": 7,
+      "endPage": 7,
+      "pending": false
+    },
+    {
+      "index": 2,
+      "slug": "arabisch-lesen-tadschwied",
+      "title": "Arabisch lesen & Tadschwied",
+      "startPage": 8,
+      "pageCount": 95,
+      "endPage": 102,
+      "pending": false
+    },
+    {
+      "index": 3,
+      "slug": "sprache-quran",
+      "title": "Sprache des Qur'an — Grammatik & Tabellen",
+      "startPage": 103,
+      "pageCount": 103,
+      "endPage": 205,
+      "pending": false
+    },
+    {
+      "index": 4,
+      "slug": "madinah-alltag-dialekt",
+      "title": "Madinah, Alltag & Dialekte",
+      "startPage": 206,
+      "pageCount": 264,
+      "endPage": 469,
+      "pending": false
+    },
+    {
+      "index": 5,
+      "slug": "surenvokabular",
+      "title": "Wortschatz & kurze Suren",
+      "startPage": 470,
+      "pageCount": 80,
+      "endPage": 549,
+      "pending": false
+    },
+    {
+      "index": 6,
+      "slug": "aqida",
+      "title": "Aqida & 99 Namen",
+      "startPage": 550,
+      "pageCount": 49,
+      "endPage": 598,
+      "pending": false
+    },
+    {
+      "index": 7,
+      "slug": "ibadah",
+      "title": "Ibadah / Fiqh",
+      "startPage": 599,
+      "pageCount": 56,
+      "endPage": 654,
+      "pending": false
+    },
+    {
+      "index": 8,
+      "slug": "duas-akhlaq",
+      "title": "Duas & Akhlaq",
+      "startPage": 655,
+      "pageCount": 72,
+      "endPage": 726,
+      "pending": false
+    },
+    {
+      "index": 9,
+      "slug": "ehe-familie",
+      "title": "Ehe & Familie",
+      "startPage": 727,
+      "pageCount": 20,
+      "endPage": 746,
+      "pending": false
+    },
+    {
+      "index": 10,
+      "slug": "seerah-propheten-sahaba",
+      "title": "Seerah, Propheten & Sahaba",
+      "startPage": 747,
+      "pageCount": 128,
+      "endPage": 874,
+      "pending": false
+    },
+    {
+      "index": 11,
+      "slug": "anhang-pruefung",
+      "title": "Anhang — Prüfung & Übungen",
+      "startPage": 875,
+      "pageCount": 27,
+      "endPage": 901,
+      "pending": false
+    }
+  ],
+  "excludedPdfIds": [
+    "hadithe-40",
+    "erste-schritte-lesen",
+    "erste-schritte-kurzfassung",
+    "kurzfassung-sprache",
+    "salati-lernbuch"
+  ],
+  "tocSchema": 1,
+  "outputId": "salati-islam-lernwerk"
+}

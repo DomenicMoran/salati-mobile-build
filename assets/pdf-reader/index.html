@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=5, user-scalable=yes" />
+    <title>Salati PDF Reader</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      html,
+      body {
+        height: 100%;
+        margin: 0;
+      }
+      body {
+        display: flex;
+        flex-direction: column;
+        min-height: 100%;
+        overflow: hidden;
+      }
+      #wrap {
+        flex: 1 1 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        overflow: hidden;
+        min-height: 0;
+      }
+      #wrap.scroll-mode {
+        overflow-y: auto;
+        -webkit-overflow-scrolling: touch;
+      }
+      .page-shell {
+        margin: 10px auto;
+        line-height: 0;
+      }
+      canvas {
+        display: block;
+        max-width: 100%;
+        height: auto;
+        box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12);
+      }
+      body.theme-day {
+        background: #f2f2f2;
+        color: #111;
+      }
+      body.theme-night {
+        background: #121212;
+        color: #e8e8e8;
+      }
+      body.theme-sepia {
+        background: #f4ecd8;
+        color: #3b2f2f;
+      }
+      #status {
+        flex: 0 0 auto;
+        padding: 16px 20px 24px;
+        font: 15px/1.45 system-ui, sans-serif;
+        text-align: center;
+        font-weight: 500;
+      }
+      body.theme-day #status {
+        color: #1a1a1a;
+      }
+      body.theme-night #status {
+        color: #e8e8e8;
+      }
+      body.theme-sepia #status {
+        color: #3b2f2f;
+      }
+      #find-layer {
+        position: absolute;
+        left: -9999px;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+      }
+    </style>
+  </head>
+  <body class="theme-day">
+    <div id="wrap" class="paged" aria-live="polite"></div>
+    <div id="status">PDF wird vorbereitet…</div>
+    <div id="find-layer"></div>
+    <script type="module" src="/pdf-reader/viewer.mjs"></script>
+  </body>
+</html>

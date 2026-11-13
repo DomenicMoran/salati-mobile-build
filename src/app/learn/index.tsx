@@ -1,4 +1,4 @@
-import { router } from 'expo-router';
+import { router, type Href } from 'expo-router';
 import { useQuery } from '@tanstack/react-query';
 import { useEffect, useState } from 'react';
 import { SectionList, StyleSheet, View } from 'react-native';
@@ -14,6 +14,8 @@ import { ThemedText } from '@/components/themed-text';
 import { ThemedView } from '@/components/themed-view';
 import { Brand, Colors, MaxContentWidth, Spacing } from '@/constants/theme';
 import { ScreenHeader } from '@/components/screen-header';
+import { ABC_LESSONS, ABC_PROGRESS_STORAGE_KEY } from '@/features/learn/abc/curriculum';
+import { markAbcCourseComplete, runAbcProgressMigrationIfNeeded } from '@/features/learn/abc/migration';
 import { LESSONS, lessonTitle, type Lesson } from '@/features/learn/curriculum';
 import {
   isPassed,
@@ -119,6 +121,7 @@ function PhasePodcastCard({ episodeNo }: { episodeNo: number }) {
 
 export default function LearnOverviewScreen() {
   const { progress } = useLearnProgress();
+  const { progress: abcProgress } = useCourseProgress(ABC_PROGRESS_STORAGE_KEY);
   const { progress: tajwidProgress } = useCourseProgress(TAJWID_META.storageKey);
   const { progress: grammarProgress } = useCourseProgress(GRAMMAR_META.storageKey);
   const { progress: madinahProgress } = useCourseProgress(MADINAH_META.storageKey);
@@ -137,6 +140,10 @@ export default function LearnOverviewScreen() {
     madinah: Lesson[];
     amau: Lesson[];
   } | null>(null);
+  useEffect(() => {
+  void runAbcProgressMigrationIfNeeded();
+  }, []);
+
   useEffect(() => {
     let cancelled = false;
     Promise.all([
@@ -165,9 +172,15 @@ export default function LearnOverviewScreen() {
   // Studium-Vertiefung alle Phasen dieser Seite zusammen (User-Fund:
   // Anzeige zeigte weiter nur die Kern-Lesen-Lektionen, nicht mehr den
   // tatsaechlichen Gesamtumfang).
+  const abcDone = passedCountIn(ABC_LESSONS, abcProgress);
   const totalLessons =
-    LESSONS.length + tajwidLessons.length + grammarLessons.length + madinahLessons.length + amauLessons.length;
-  const totalDone = done + tajwidDone + grammarDone + madinahDone + amauDone;
+    ABC_LESSONS.length +
+    LESSONS.length +
+    tajwidLessons.length +
+    grammarLessons.length +
+    madinahLessons.length +
+    amauLessons.length;
+  const totalDone = abcDone + done + tajwidDone + grammarDone + madinahDone + amauDone;
   const fillWidth = useSharedValue(0);
 
   useEffect(() => {
@@ -180,22 +193,8 @@ export default function LearnOverviewScreen() {
 
   const fillStyle = useAnimatedStyle(() => ({ width: `${fillWidth.value}%` }));
 
-  // Audit 2026-07-27: Ladezweig ohne Kopf = auf nativ ohne sichtbaren Ausgang
-  // (Lern-Stack: headerShown:false, Zurueck-Chip Web-only).
-  if (!phaseLessons) {
-    return (
-      <ThemedView style={styles.container}>
-        <SafeAreaView style={styles.safeArea}>
-          <ScreenHeader title={t('learn.title')} subtitle={t('learn.subtitle')} />
-          <View style={styles.center}>
-            <ThemedActivityIndicator />
-          </View>
-        </SafeAreaView>
-      </ThemedView>
-    );
-  }
-
   const phases: Phase[] = [
+    { key: 'abc', titleKey: 'learn.abc.phaseTitle', lessons: [...ABC_LESSONS], progress: abcProgress },
     { key: 'core', titleKey: 'learn.phaseRead', lessons: LESSONS, progress, episodeNo: 1 },
     {
       key: 'tajwid',
@@ -281,6 +280,36 @@ export default function LearnOverviewScreen() {
           }}
           ListHeaderComponent={
             <>
+              {abcDone < ABC_LESSONS.length && (
+                <PressableCard
+                  onPress={() =>
+                    router.push(`/learn/abc/${ABC_LESSONS[0].id}` as unknown as Href)
+                  }
+                  type="backgroundSelected"
+                  style={[styles.row, styles.writeCard]}>
+                  <ThemedView type="backgroundSelected" style={styles.numberBadge}>
+                    <IconSymbol name="sparkles" size={16} color={colors.accent} />
+                  </ThemedView>
+                  <View style={styles.rowText}>
+                    <ThemedText type="default">{t('learn.abc.startCta')}</ThemedText>
+                    <ThemedText type="small" themeColor="textSecondary">
+                      {t('learn.abc.startCtaDesc')}
+                    </ThemedText>
+                  </View>
+                  <DisclosureChevron size={18} color={colors.textSecondary} />
+                </PressableCard>
+              )}
+              <PressableCard
+                onPress={() => void markAbcCourseComplete()}
+                type="backgroundElement"
+                style={[styles.row, styles.writeCard]}>
+                <ThemedView type="backgroundElement" style={styles.numberBadge}>
+                  <IconSymbol name="checkmark-circle-outline" size={16} color={colors.textSecondary} />
+                </ThemedView>
+                <View style={styles.rowText}>
+                  <ThemedText type="small">{t('learn.abc.skipCta')}</ThemedText>
+                </View>
+              </PressableCard>
               {/* Immer verfügbar (User-Wunsch): als Einstieg für Neue, danach
                   als wiederholbarer Wissens-Test — recordResult behält stets
                   das beste Ergebnis, Wiederholen kann nichts zurücksetzen. */}
@@ -341,9 +370,11 @@ export default function LearnOverviewScreen() {
             // Sperre mehr ZWISCHEN den Phasen (siehe Kommentar oben am Modul).
             const unlocked =
               settings.freeUnlock ||
-              (phase.courseId
-                ? courseMetaById(phase.courseId)?.nonSequential || isUnlockedIn(phase.lessons, phase.progress, item.id)
-                : isUnlocked(progress, item.id));
+              (phase.key === 'abc'
+                ? isUnlockedIn(phase.lessons, phase.progress, item.id)
+                : phase.courseId
+                  ? courseMetaById(phase.courseId)?.nonSequential || isUnlockedIn(phase.lessons, phase.progress, item.id)
+                  : isUnlocked(progress, item.id));
             const passed = isPassed(phase.progress, item.id);
             const result = phase.progress[item.id];
             return (
@@ -351,12 +382,14 @@ export default function LearnOverviewScreen() {
                 <PressableCard
                   disabled={!unlocked}
                   onPress={() =>
-                    phase.courseId
-                      ? router.push({
-                          pathname: '/study/[course]/[lesson]',
-                          params: { course: phase.courseId, lesson: item.id },
-                        })
-                      : router.push({ pathname: '/learn/[lesson]', params: { lesson: item.id } })
+                    phase.key === 'abc'
+                      ? router.push(`/learn/abc/${item.id}` as unknown as Href)
+                      : phase.courseId
+                        ? router.push({
+                            pathname: '/study/[course]/[lesson]',
+                            params: { course: phase.courseId, lesson: item.id },
+                          })
+                        : router.push({ pathname: '/learn/[lesson]', params: { lesson: item.id } })
                   }
                   type={passed ? 'backgroundSelected' : 'backgroundElement'}
                   style={styles.row}>

@@ -1,11 +1,12 @@
 import { Image } from 'expo-image';
 import { router, usePathname } from 'expo-router';
-import { Pressable, ScrollView, StyleSheet, View } from 'react-native';
+import { Pressable, ScrollView, StyleSheet, View, useWindowDimensions } from 'react-native';
 
 import { ThemedText } from './themed-text';
 import { ThemedView } from './themed-view';
 
 import { Colors, MaxContentWidth, Spacing } from '@/constants/theme';
+import { useHydrated } from '@/hooks/use-hydrated';
 import { useResolvedScheme } from '@/hooks/use-resolved-scheme';
 import { useTranslation } from '@/lib/i18n';
 import { isRtlLocale } from '@/lib/locale-detect';
@@ -22,6 +23,7 @@ const LINKS = [
   { href: '/prayer', key: 'nav.prayerTimes' },
   { href: '/qibla', key: 'nav.qibla' },
   { href: '/quran', key: 'nav.quran' },
+  { href: '/lernen', key: 'nav.lernen' },
   { href: '/more', key: 'nav.more' },
 ] as const;
 
@@ -31,25 +33,36 @@ export function WebTopBar() {
   const scheme = useResolvedScheme();
   const colors = Colors[scheme];
   const pathname = usePathname();
+  const hydrated = useHydrated();
+  const { width } = useWindowDimensions();
+  const compact = hydrated && width < 430;
 
   return (
     <View style={styles.wrap}>
-      <ThemedView type="backgroundElement" style={[styles.inner, rtl && styles.innerRtl]}>
-        <View style={styles.brandBlock}>
+      <ThemedView
+        type="backgroundElement"
+        style={[styles.inner, rtl && styles.innerRtl, compact && styles.innerCompact]}>
+        <View style={[styles.brandBlock, compact && styles.brandBlockCompact]}>
           <Image
             source={require('../../assets/images/icon.png')}
             style={styles.brandIcon}
             contentFit="cover"
             alt=""
           />
-          <ThemedText type="smallBold" style={{ color: colors.accent }}>
-            Salati
-          </ThemedText>
+          {compact ? null : (
+            <ThemedText type="smallBold" style={{ color: colors.accent }}>
+              Salati
+            </ThemedText>
+          )}
         </View>
         <ScrollView
           horizontal
-          showsHorizontalScrollIndicator={false}
-          contentContainerStyle={[styles.linkRow, rtl && styles.linkRowRtl]}
+          showsHorizontalScrollIndicator={compact}
+          contentContainerStyle={[
+            styles.linkRow,
+            rtl && styles.linkRowRtl,
+            compact && styles.linkRowCompact,
+          ]}
           style={styles.linkScroll}>
           {LINKS.map((l) => {
             const active = l.href === '/' ? pathname === '/' : pathname.startsWith(l.href);
@@ -114,6 +127,7 @@ const styles = StyleSheet.create({
   // RTL: gleiche Spiegelung wie CustomTabList in app-tabs.web.tsx (Marke
   // rechts, Link-Reihenfolge gedreht) — beide zeigen dieselbe Navigation.
   innerRtl: { flexDirection: 'row-reverse', paddingLeft: Spacing.two, paddingRight: Spacing.three },
+  innerCompact: { paddingLeft: Spacing.two, paddingRight: Spacing.one, gap: Spacing.two },
   brandBlock: {
     flexDirection: 'row',
     alignItems: 'center',
@@ -121,6 +135,7 @@ const styles = StyleSheet.create({
     flexShrink: 0,
   },
   brandIcon: { width: 26, height: 26, borderRadius: 7 },
+  brandBlockCompact: { marginRight: Spacing.one },
   linkScroll: { flexShrink: 1, minWidth: 0 },
   linkRow: {
     flexDirection: 'row',
@@ -130,6 +145,7 @@ const styles = StyleSheet.create({
     justifyContent: 'flex-end',
   },
   linkRowRtl: { flexDirection: 'row-reverse' },
+  linkRowCompact: { gap: 0 },
   pill: {
     paddingVertical: Spacing.one,
     paddingHorizontal: Spacing.three,

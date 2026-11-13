@@ -4,11 +4,12 @@
 // `fetch`). Jede Unterlage gehoert per `category` in eine Gruppe (Section-
 // Header `category_title`), analog zur Reihen-Gruppierung der Videos.
 import { fetchJson } from '@/lib/fetchJson';
+import { type MediaLicenseMeta, filterLicensedForProduction } from '@/features/media/license-meta';
 
-const HANDOUT_BASE = 'https://pub-d0489c0572704285af79896edb72cbed.r2.dev/handouts';
+export const HANDOUT_BASE = 'https://pub-d0489c0572704285af79896edb72cbed.r2.dev/handouts';
 export const HANDOUT_INDEX_URL = `${HANDOUT_BASE}/index.json`;
 
-export interface Handout {
+export interface Handout extends MediaLicenseMeta {
   id: string;
   title: string;
   category: string;
@@ -45,7 +46,7 @@ export async function fetchHandoutIndex(): Promise<HandoutIndex> {
     errorPrefix: 'handout_index',
   });
   const raw = Array.isArray(j.handouts) ? j.handouts : [];
-  return { handouts: raw.filter(isVisible) };
+  return { handouts: filterLicensedForProduction(raw.filter(isVisible) as Handout[]) };
 }
 
 export interface HandoutCategoryGroup {

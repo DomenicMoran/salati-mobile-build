@@ -1,0 +1,19 @@
+The Meaning of the Glorious Koran (1930) — Marmaduke Pickthall
+
+Rights basis: Public domain (EU/DE and US by term expiry).
+Translator: Muhammad Marmaduke Pickthall (b. 1875-04-07, d. 1936-05-19).
+First publication: 1930 (George Allen & Unwin Ltd, London).
+
+EU/DE: Urheberrecht erloschen 70 Jahre nach Tod des Übersetzers (2006).
+US: Published before 1931-01-01 (public domain in the United States).
+
+Salati distribution: complete translation text only; attribution in app “Über dieses Buch”.
+No claim on later revised editions or publisher front matter from other prints.
+
+Primary sources (verification 2026-11-10):
+- Wikisource: https://en.wikisource.org/wiki/The_Meaning_of_the_Glorious_Koran_(1930)
+- Internet Archive scan used in repo: https://archive.org/details/in.ernet.dli.2015.216140
+  File: 2015.216140.The-Meaning.pdf (710 pages, DLI 2015/216140)
+
+Repository copy: podcast/handouts/third-party/quran-pickthall-1930.pdf
+SHA-256: a73f81fa8c4161c9e2b605279d1d261eb374c696226bbdf59d2fb38912fa1f05

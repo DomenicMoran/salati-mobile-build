@@ -11,8 +11,7 @@
  */
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { render, screen } from '@testing-library/react-native';
-import { useState, type ReactNode } from 'react';
-import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
+import type { ReactNode } from 'react';
 
 import CourseScreen from '@/app/study/[course]/index';
 import { SettingsProvider } from '@/features/settings/store';
@@ -34,8 +33,7 @@ jest.mock('expo-router', () => {
 const t = (key: string) => translate('de', key);
 
 function Wrapper({ children }: { children: ReactNode }) {
-  const [client] = useState(() => new QueryClient({ defaultOptions: { queries: { retry: false, gcTime: Infinity } } }));
-  return <QueryClientProvider client={client}><SettingsProvider>{children}</SettingsProvider></QueryClientProvider>;
+  return <SettingsProvider>{children}</SettingsProvider>;
 }
 
 beforeEach(async () => {

@@ -2,12 +2,15 @@
 // Getestet wird ausschließlich gegen eigene Fixtures (kein echter Netzzugriff)
 // — Muster wie ./morphologie.test.ts.
 import * as FileSystem from 'expo-file-system/legacy';
+import { Platform } from 'react-native';
 
 import {
   gruppenDeckenVersAb,
   ladeWbw,
   ladeWbwMeta,
   waehleVersGruppen,
+  qulWbwInProduktionErlaubt,
+  wbwGlossFuerSheetAnzeige,
   wbwMetaUrl,
   wbwSpracheFuerLocale,
   wbwUmschalterZustand,
@@ -91,6 +94,32 @@ describe('wbwUrl / wbwMetaUrl', () => {
 describe('wbwSpracheFuerLocale', () => {
   it('erkennt die sechs Sprachen mit Datensatz', () => {
     for (const l of ['fr', 'fa', 'id', 'bn', 'ur', 'tr']) expect(wbwSpracheFuerLocale(l)).toBe(l);
+  });
+
+  it('blockiert QUL-Sprachen ohne Freigabe in Nicht-Dev-Builds', () => {
+    const g = globalThis as typeof globalThis & { __DEV__?: boolean };
+    const prev = g.__DEV__;
+    g.__DEV__ = false;
+    try {
+      for (const l of ['fr', 'fa', 'id', 'bn', 'ur', 'tr']) expect(wbwSpracheFuerLocale(l)).toBeNull();
+    } finally {
+      g.__DEV__ = prev;
+    }
+  });
+
+  it('blockiert QUL auf Web auch in __DEV__', () => {
+    const g = globalThis as typeof globalThis & { __DEV__?: boolean };
+    const prevDev = g.__DEV__;
+    const prevOs = Platform.OS;
+    g.__DEV__ = true;
+    (Platform as { OS: string }).OS = 'web';
+    try {
+      expect(qulWbwInProduktionErlaubt()).toBe(false);
+      expect(wbwSpracheFuerLocale('tr')).toBeNull();
+    } finally {
+      g.__DEV__ = prevDev;
+      (Platform as { OS: string }).OS = prevOs;
+    }
   });
 
   it('liefert null für App-Sprachen ohne Datensatz', () => {
@@ -315,6 +344,27 @@ describe('gruppenDeckenVersAb', () => {
     expect(gruppenDeckenVersAb([[2, 1, 'a']], 2)).toBe(false);
     expect(gruppenDeckenVersAb([], 1)).toBe(false);
     expect(gruppenDeckenVersAb(undefined, 1)).toBe(false);
+  });
+});
+
+describe('wbwGlossFuerSheetAnzeige', () => {
+  it('bevorzugt translationOverride unabhängig von der Locale', () => {
+    expect(
+      wbwGlossFuerSheetAnzeige({
+        locale: 'de',
+        translationOverride: '  und sie errichten  ',
+        englischesGloss: 'and they establish',
+      }),
+    ).toBe('und sie errichten');
+  });
+
+  it('gibt in EN-UI das englische Gloss zurück', () => {
+    expect(wbwGlossFuerSheetAnzeige({ locale: 'en', englischesGloss: 'no' })).toBe('no');
+  });
+
+  it('blendet rohes EN-Gloss in nicht-englischen UIs aus', () => {
+    expect(wbwGlossFuerSheetAnzeige({ locale: 'de', englischesGloss: '(is) sent down' })).toBe('');
+    expect(wbwGlossFuerSheetAnzeige({ locale: 'fr', englischesGloss: 'no' })).toBe('');
   });
 });
 

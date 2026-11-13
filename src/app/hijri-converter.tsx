@@ -5,7 +5,7 @@
 // (gleiches Muster wie zakat-fitr.tsx) genügen für Tag/Monat/Jahr und
 // brauchen keinen neuen nativen Build.
 import { useMemo, useState } from 'react';
-import { Pressable, ScrollView, StyleSheet, TextInput, View, useWindowDimensions } from 'react-native';
+import { Pressable, ScrollView, StyleSheet, TextInput, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
 import { AnimatedListItem } from '@/components/ui/animated-list-item';
@@ -54,13 +54,11 @@ function NumberField({
       </ThemedText>
       <ThemedView type="backgroundElement" style={styles.stepperControls}>
         <Pressable
-          disabled={current <= min}
           onPress={() => onChange(String(clamp(current - 1, min, max)))}
           hitSlop={8}
           accessibilityRole="button"
-          accessibilityState={{ disabled: current <= min }}
           accessibilityLabel={`${t('a11y.decrease')}: ${label}`}
-          style={({ pressed }) => [styles.stepperButton, current <= min && styles.stepperDisabled, pressed && styles.stepperPressed]}>
+          style={({ pressed }) => [styles.stepperButton, pressed && styles.stepperPressed]}>
           <IconSymbol name="remove-circle-outline" size={24} color={colors.accent} />
         </Pressable>
         <TextInput
@@ -71,13 +69,11 @@ function NumberField({
           style={[styles.numberInput, { color: colors.text }]}
         />
         <Pressable
-          disabled={current >= max}
           onPress={() => onChange(String(clamp(current + 1, min, max)))}
           hitSlop={8}
           accessibilityRole="button"
-          accessibilityState={{ disabled: current >= max }}
           accessibilityLabel={`${t('a11y.increase')}: ${label}`}
-          style={({ pressed }) => [styles.stepperButton, current >= max && styles.stepperDisabled, pressed && styles.stepperPressed]}>
+          style={({ pressed }) => [styles.stepperButton, pressed && styles.stepperPressed]}>
           <IconSymbol name="add-circle-outline" size={24} color={colors.accent} />
         </Pressable>
       </ThemedView>
@@ -88,8 +84,6 @@ function NumberField({
 export default function HijriConverterScreen() {
   const { t, locale } = useTranslation();
   const rtl = isRtlLocale(locale);
-  const { width, fontScale } = useWindowDimensions();
-  const stackedFields = width < 660 || fontScale >= 1.35;
   const hijriMonths = HIJRI_MONTHS[locale];
 
   const [mode, setMode] = useState<Mode>('gToH');
@@ -203,7 +197,7 @@ export default function HijriConverterScreen() {
                 <ThemedText type="smallBold" style={rtl && styles.rtlText}>
                   {t('hijriConverter.gregorianDate')}
                 </ThemedText>
-                <View style={[styles.fieldRow, stackedFields && styles.fieldRowStacked]}>
+                <View style={styles.fieldRow}>
                   <NumberField label={t('hijriConverter.day')} value={gDay} onChange={setGDay} min={1} max={31} />
                   <NumberField label={t('hijriConverter.month')} value={gMonth} onChange={setGMonth} min={1} max={12} />
                   <NumberField label={t('hijriConverter.year')} value={gYear} onChange={setGYear} min={1} max={9999} />
@@ -216,7 +210,7 @@ export default function HijriConverterScreen() {
                 <ThemedText type="smallBold" style={rtl && styles.rtlText}>
                   {t('hijriConverter.hijriDate')}
                 </ThemedText>
-                <View style={[styles.fieldRow, stackedFields && styles.fieldRowStacked]}>
+                <View style={styles.fieldRow}>
                   <NumberField label={t('hijriConverter.day')} value={hDay} onChange={setHDay} min={1} max={30} />
                   <NumberField label={t('hijriConverter.month')} value={hMonth} onChange={setHMonth} min={1} max={12} />
                   <NumberField label={t('hijriConverter.year')} value={hYear} onChange={setHYear} min={1} max={9999} />
@@ -299,10 +293,9 @@ const styles = StyleSheet.create({
   rtlText: { textAlign: 'right' },
   modeRow: { flexDirection: 'row', gap: Spacing.two },
   modeRowRtl: { flexDirection: 'row-reverse' },
-  modeChip: { minHeight: 44, borderRadius: Spacing.three, padding: Spacing.two, alignItems: 'center', justifyContent: 'center' },
+  modeChip: { borderRadius: Spacing.three, padding: Spacing.two, alignItems: 'center' },
   section: { borderRadius: Spacing.three, padding: Spacing.three, gap: Spacing.two },
   fieldRow: { flexDirection: 'row', gap: Spacing.two },
-  fieldRowStacked: { flexDirection: 'column' },
   field: { flex: 1, gap: Spacing.one },
   stepperControls: {
     flexDirection: 'row',
@@ -311,10 +304,9 @@ const styles = StyleSheet.create({
     borderRadius: Spacing.two,
     paddingHorizontal: Spacing.one,
   },
-  stepperButton: { width: 44, height: 44, alignItems: 'center', justifyContent: 'center' },
+  stepperButton: { padding: Spacing.half },
   stepperPressed: { opacity: 0.6 },
-  stepperDisabled: { opacity: 0.35 },
-  numberInput: { flex: 1, minWidth: 64, minHeight: 44, textAlign: 'center', textAlignVertical: 'center', paddingVertical: Spacing.two, fontSize: 16 },
+  numberInput: { flex: 1, textAlign: 'center', paddingVertical: Spacing.two, fontSize: 16 },
   resultCard: { borderRadius: Spacing.three, padding: Spacing.four, gap: Spacing.one, alignItems: 'center' },
   resultText: { fontSize: 24, lineHeight: 32, fontWeight: '700', textAlign: 'center' },
   errorText: { textAlign: 'center' },

@@ -102,7 +102,6 @@ export default function FastingScreen() {
               </ThemedText>
               <View style={styles.qadaRow}>
                 <PressableCard
-                  disabled={qadaOwed <= 0}
                   onPress={() => changeQada(-1)}
                   type="backgroundSelected"
                   style={styles.qadaButton}

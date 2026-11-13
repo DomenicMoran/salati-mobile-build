@@ -80,12 +80,15 @@ export function SharedPlayerProvider({ children, contentLocale }: { children: Re
   const languageMismatch = !!nowPlaying?.contentLanguage && !!contentLocale
     && nowPlaying.contentLanguage !== contentLocale;
   const availableNowPlaying = languageMismatch ? null : nowPlaying;
-  useEffect(() => {
-    if (!languageMismatch) return;
-    player.pause();
-    if (Platform.OS !== 'web') player.setActiveForLockScreen(false);
-    setNowPlaying(null);
-  }, [languageMismatch, player]);
+  const [lastLanguageMismatch, setLastLanguageMismatch] = useState(false);
+  if (languageMismatch !== lastLanguageMismatch) {
+    setLastLanguageMismatch(languageMismatch);
+    if (languageMismatch) {
+      player.pause();
+      if (Platform.OS !== 'web') player.setActiveForLockScreen(false);
+      if (nowPlaying !== null) setNowPlaying(null);
+    }
+  }
 
   // Screen-unabhängiges Track-Ende: der aktive Player läuft an der App-Wurzel
   // weiter, auch wenn der jeweilige Voll-Player-Screen unmountet ist (nur
@@ -222,7 +225,7 @@ export function useAyahPlayer(
     if (index !== null) player.setPlaybackRate(speed);
   }, [speed, index, player]);
 
-  function playFrom(i: number, continuous: boolean = true) {
+  function playFrom(i: number, continuous: boolean = true, seekSec?: number) {
     const src = ayahsRef.current[i]?.audio;
     if (!src) return;
     continuousRef.current = continuous;
@@ -249,6 +252,9 @@ export function useAyahPlayer(
       });
     }
     player.play();
+    if (seekSec != null && Number.isFinite(seekSec) && seekSec >= 5) {
+      player.seekTo(seekSec);
+    }
     if (shared) {
       const list = ayahsRef.current;
       let p = i - 1;

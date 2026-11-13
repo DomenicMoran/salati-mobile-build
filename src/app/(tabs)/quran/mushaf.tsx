@@ -17,6 +17,7 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 import { IconSymbol } from '@/components/ui/icon-symbol';
 import { IntroHelpButton } from '@/components/ui/intro-help-button';
 import { IntroSheet } from '@/components/ui/intro-sheet';
+import { QuranArabicText } from '@/components/quran-arabic-text';
 import { ThemedText } from '@/components/themed-text';
 import { ThemedView } from '@/components/themed-view';
 import { BackChipInset, Colors, MaxContentWidth, Spacing } from '@/constants/theme';
@@ -40,13 +41,15 @@ import {
   useSurahStartPage,
   useTranslationEditions,
 } from '@/features/quran/hooks';
+import { loadAudioProgressEntry, quranListenProgressId } from '@/features/progress/audioProgress';
+import { resolveMushafPlaylistResume } from '@/features/progress/quranListenResume';
+import { useSharedAudioProgress } from '@/features/progress/useSharedAudioProgress';
 import { buildMushafPlaylist, findMushafPlaylistIndex } from '@/features/quran/mushafPlaylist';
 import { surahNameTranslation } from '@/features/quran/surahNames';
-import { useAyahPlayer } from '@/features/quran/usePlayer';
+import { useAyahPlayer, useSharedPlayer } from '@/features/quran/usePlayer';
 import { WortAnalyseSheet } from '@/features/quran/WortAnalyseSheet';
 import { GrammarLegend } from '@/features/quran/analyse/GrammarLegend';
 import { GrammarModeBar } from '@/features/quran/analyse/GrammarModeBar';
-import { GesamtAnalyseVers } from '@/features/quran/analyse/GesamtAnalyseVers';
 import { alignedMorphWords, wortFarbe, type FarbModus } from '@/features/quran/analyse/grammarColorModes';
 import { morphVerseWords, useGroupMorphologie } from '@/features/quran/analyse/useGroupMorphologie';
 import { useGrammatikIntro } from '@/features/quran/analyse/useGrammatikIntro';
@@ -143,22 +146,14 @@ export default function MushafScreen() {
   // Standard 'aus', lokaler State statt AppSettings (wie alle übrigen
   // Ansichts-Umschalter dieses Options-Sheets, z. B. wordInfoOn/showTranslation).
   const [grammarMode, setGrammarMode] = useState<FarbModus>('aus');
-  const [showGesamtanalyse, setShowGesamtanalyse] = useState(false);
   // Erklär-Sheet beim ERSTEN Einschalten eines Farbmodus — gleicher Hook
   // (und gleicher AsyncStorage-Schlüssel) wie im normalen Sure-Reader, damit
   // "einmal gesehen" für die Grammatik-Funktion app-weit gilt, unabhängig
   // davon, in welcher Ansicht sie zuerst eingeschaltet wurde.
   const grammatikIntro = useGrammatikIntro();
   const handleGrammarModeChange = (next: FarbModus) => {
-    setShowGesamtanalyse(false);
     setGrammarMode(next);
     if (next !== 'aus') grammatikIntro.notifyActivated();
-  };
-  const toggleGesamtanalyse = () => {
-    const next = !showGesamtanalyse;
-    setShowGesamtanalyse(next);
-    setGrammarMode(next ? 'wortart' : 'aus');
-    if (next) grammatikIntro.notifyActivated();
   };
   // Mindestens einmal ein Wort angetippt — hält die Morphologie-Abfrage warm,
   // gleiches Muster wie wordSheetUsed im Sure-Reader.
@@ -291,30 +286,79 @@ export default function MushafScreen() {
     () => buildMushafPlaylist(data?.groups ?? [], audioBySurah),
     [data, audioBySurah],
   );
+  const sharedPlayer = useSharedPlayer();
   const pagePlayer = useAyahPlayer(
     pagePlaylist.map((v) => ({ numberInSurah: v.ayah, audio: v.audio })),
     `${t('quran.mushafTitle')} · ${t('quran.mushafPage')} ${page}`,
     settings.quranPlaybackSpeed,
+    500,
+    sharedPlayer,
+    { pathname: '/quran/mushaf', params: { page: String(page) } },
   );
+  const activePlaylistVerse =
+    pagePlayer.currentIndex !== null ? pagePlaylist[pagePlayer.currentIndex] ?? null : null;
+  const quranListenId = useMemo(
+    () =>
+      activePlaylistVerse
+        ? quranListenProgressId(activePlaylistVerse.surah, settings.quranReciter)
+        : null,
+    [activePlaylistVerse, settings.quranReciter],
+  );
+  useSharedAudioProgress({
+    active: pagePlayer.currentIndex !== null && !!quranListenId,
+    kind: 'quran-listen',
+    status: sharedPlayer.status,
+    buildEntry: useCallback(
+      (positionSec, durationSec) => {
+        if (pagePlayer.currentIndex === null || !activePlaylistVerse || !quranListenId) return null;
+        return {
+          kind: 'quran-listen' as const,
+          id: quranListenId,
+          positionSec,
+          durationSec,
+          meta: {
+            surah: activePlaylistVerse.surah,
+            ayah: activePlaylistVerse.ayah,
+            reciter: settings.quranReciter,
+            speed: settings.quranPlaybackSpeed,
+          },
+        };
+      },
+      [
+        pagePlayer.currentIndex,
+        activePlaylistVerse,
+        quranListenId,
+        settings.quranReciter,
+        settings.quranPlaybackSpeed,
+      ],
+    ),
+  });
   const playPageVerse = useCallback(
-    (surah: number, ayah: number) => {
+    async (surah: number, ayah: number) => {
       const idx = findMushafPlaylistIndex(pagePlaylist, surah, ayah);
       if (idx === -1) return;
-      pagePlayer.playFrom(idx, false);
+      let seek: number | undefined;
+      const saved = await loadAudioProgressEntry(quranListenProgressId(surah, settings.quranReciter));
+      if (saved?.meta?.surah === surah && saved.meta.ayah === ayah && saved.positionSec >= 5) {
+        seek = saved.positionSec;
+      }
+      pagePlayer.playFrom(idx, false, seek);
     },
-    [pagePlaylist, pagePlayer],
+    [pagePlaylist, pagePlayer, settings.quranReciter],
   );
-  function togglePagePlayback() {
+  const togglePagePlayback = useCallback(async () => {
     if (pagePlayer.playing) {
       pagePlayer.pause();
     } else if (pagePlayer.currentIndex !== null) {
       pagePlayer.resume();
     } else {
-      pagePlayer.playFrom(0, true);
+      const startSurah = pagePlaylist[0]?.surah ?? 1;
+      const saved = await loadAudioProgressEntry(quranListenProgressId(startSurah, settings.quranReciter));
+      const { index, seekSec } = resolveMushafPlaylistResume(pagePlaylist, saved);
+      pagePlayer.playFrom(index, true, seekSec > 0 ? seekSec : undefined);
     }
-  }
+  }, [pagePlayer, pagePlaylist, settings.quranReciter]);
   const pageHasAudio = pagePlaylist.some((v) => !!v.audio);
-  const activePlaylistVerse = pagePlayer.currentIndex !== null ? pagePlaylist[pagePlayer.currentIndex] : null;
   // Seite verlassen (Blättern/Sprung/Juz) beendet eine laufende Wiedergabe —
   // sonst liefe Audio einer bereits verlassenen Seite unsichtbar weiter.
   useEffect(() => {
@@ -393,16 +437,22 @@ export default function MushafScreen() {
     return groups.map((group) => {
       const meta = surahMeta.get(group.surah);
       const reading = readingBySurah.get(group.surah);
-      const perVerseBlocks = wordInfoOn || showTranslation || showGesamtanalyse;
+      const perVerseBlocks = wordInfoOn || showTranslation;
       return (
         <View key={group.surah} style={styles.group}>
           {group.verses[0]?.ayah === 1 && (
             <ThemedView
               type="backgroundElement"
               style={[styles.surahHeader, sepia && { backgroundColor: SEPIA_CARD }]}>
-              <ThemedText type="subtitle" sepia={sepia} style={styles.surahHeaderText}>
-                {meta?.name ?? `${group.surah}`}
-              </ThemedText>
+              {meta?.name ? (
+                <QuranArabicText baseFontSize={24} baseLineHeight={40} style={styles.surahHeaderArabic}>
+                  {meta.name}
+                </QuranArabicText>
+              ) : (
+                <ThemedText type="subtitle" sepia={sepia} style={styles.surahHeaderText}>
+                  {`${group.surah}`}
+                </ThemedText>
+              )}
               {meta && (
                 <ThemedText type="small" themeColor="textSecondary" sepia={sepia} style={styles.surahHeaderText}>
                   {group.surah}. {meta.englishName} · {surahNameTranslation(group.surah, locale, meta.englishNameTranslation)} · {meta.numberOfAyahs}{' '}
@@ -461,19 +511,6 @@ export default function MushafScreen() {
                         {`${v.sajda ? '۩ ' : ''}${ayahMarker(quranFont.def, toArabicDigits(v.ayah))}`}
                       </ThemedText>
                     </ThemedText>
-                    {showGesamtanalyse && vMorphWords ? (
-                      <GesamtAnalyseVers
-                        words={vMorphWords}
-                        verseWords={vMorphWords}
-                        displayWords={vWords.map((word) => word.arabic)}
-                        quranFont={quranFont}
-                        showEvidenceLegend={v.ayah === 1}
-                      />
-                    ) : showGesamtanalyse ? (
-                      <ThemedText type="small" themeColor="textSecondary">
-                        {t('quran.wortAnalyse.morphologyNoData')}
-                      </ThemedText>
-                    ) : null}
                     {showTranslation && ayahReading?.translation && (
                       <ThemedText
                         type="small"
@@ -628,28 +665,10 @@ export default function MushafScreen() {
                     {juzNr}
                   </ThemedText>
                 </ThemedView>
-            </Pressable>
-          );
-        })}
+              </Pressable>
+            );
+          })}
         </ScrollView>
-
-        <View style={styles.analysisEntryRow}>
-          <Pressable
-            onPress={toggleGesamtanalyse}
-            accessibilityRole="button"
-            accessibilityLabel={t('quran.wortAnalyse.totalModeLabel')}
-            accessibilityState={{ selected: showGesamtanalyse }}
-            style={({ pressed }) => [Platform.OS === 'web' ? styles.pressableWeb : undefined, pressed && styles.pressed]}>
-            <ThemedView
-              type={showGesamtanalyse ? 'backgroundSelected' : 'backgroundElement'}
-              style={[styles.analysisEntryButton, sepia && { backgroundColor: SEPIA_CARD }]}>
-              <IconSymbol name="layers-outline" size={16} color={showGesamtanalyse ? cardColors.accent : cardColors.text} />
-              <ThemedText type="smallBold" themeColor={showGesamtanalyse ? 'accent' : 'text'} sepia={sepia}>
-                {t('quran.wortAnalyse.totalModeLabel')}
-              </ThemedText>
-            </ThemedView>
-          </Pressable>
-        </View>
 
         <Modal
           visible={optionsOpen}
@@ -781,14 +800,7 @@ export default function MushafScreen() {
               <ThemedText type="small" themeColor="textSecondary" style={styles.groupIntro}>
                 {t('quran.captions.grammarColorModes')}
               </ThemedText>
-              <GrammarModeBar
-                modus={grammarMode}
-                onChange={handleGrammarModeChange}
-                gesamtanalyse={showGesamtanalyse}
-                onToggleGesamtanalyse={toggleGesamtanalyse}
-                scheme={grammarScheme}
-                sepia={sepia}
-              />
+              <GrammarModeBar modus={grammarMode} onChange={handleGrammarModeChange} scheme={grammarScheme} sepia={sepia} />
               <ThemedText type="small" themeColor="textSecondary" style={styles.groupIntro}>
                 {t('quran.captions.wortAnalyseHint')}
               </ThemedText>
@@ -1049,16 +1061,6 @@ const styles = StyleSheet.create({
   backChip: { width: 44, height: 44, borderRadius: 22, alignItems: 'center', justifyContent: 'center' },
   headerText: { flex: 1, minWidth: 0, gap: 1 },
   juzBar: { flexGrow: 0, marginBottom: Spacing.one },
-  analysisEntryRow: { paddingHorizontal: Spacing.three, paddingBottom: Spacing.two },
-  analysisEntryButton: {
-    alignSelf: 'flex-start',
-    minHeight: 40,
-    flexDirection: 'row',
-    alignItems: 'center',
-    gap: Spacing.two,
-    paddingHorizontal: Spacing.three,
-    borderRadius: Spacing.four,
-  },
   juzBarContent: { gap: Spacing.one, paddingHorizontal: Spacing.three },
   juzChip: {
     minWidth: 40,
@@ -1156,6 +1158,7 @@ const styles = StyleSheet.create({
     borderRadius: Spacing.three,
   },
   surahHeaderText: { textAlign: 'center' },
+  surahHeaderArabic: { textAlign: 'center', alignSelf: 'stretch' },
   basmala: { fontSize: 20, lineHeight: 36, textAlign: 'center' },
   // fontFamily kommt zur Laufzeit aus useQuranFont() (einstellbare Schrift).
   pageText: { textAlign: 'right', writingDirection: 'rtl' },

@@ -2,8 +2,8 @@
 // im Projekt). Genutzt fuer die Wiedergabe-Position (Scrubber) und die
 // Lautstaerke. Tap-to-seek + Drag ueber das RN-Responder-System; funktioniert
 // nativ und im Web-Export (RN-Web mappt Responder auf Maus-/Touch-Events).
-import { useEffect, useRef, useState, type KeyboardEvent } from 'react';
-import { Platform, StyleSheet, View, type GestureResponderEvent } from 'react-native';
+import { useRef, useState } from 'react';
+import { StyleSheet, View, type GestureResponderEvent } from 'react-native';
 
 import { Colors } from '@/constants/theme';
 import { useResolvedScheme } from '@/hooks/use-resolved-scheme';
@@ -27,35 +27,6 @@ export function Slider({ value, onChange, onCommit, height = 6, accessibilityLab
   const [dragValue, setDragValue] = useState(0);
 
   const shown = dragging ? dragValue : Math.max(0, Math.min(1, value || 0));
-  const keyboardValueRef = useRef(shown);
-  useEffect(() => { keyboardValueRef.current = shown; }, [shown]);
-
-  function commitValue(next: number) {
-    const clamped = Math.max(0, Math.min(1, next));
-    keyboardValueRef.current = clamped;
-    onChange?.(clamped);
-    onCommit?.(clamped);
-  }
-
-  // Native accessibility actions do not create DOM keyboard handlers. Keep
-  // browser-specific props off native views and leave unrelated keys alone.
-  const webKeyboardProps = Platform.OS === 'web' ? {
-    tabIndex: 0 as const,
-    onKeyDown: (event: KeyboardEvent<HTMLDivElement>) => {
-      let next: number;
-      switch (event.key) {
-        case 'ArrowRight': case 'ArrowUp': next = keyboardValueRef.current + 0.05; break;
-        case 'ArrowLeft': case 'ArrowDown': next = keyboardValueRef.current - 0.05; break;
-        case 'PageUp': next = keyboardValueRef.current + 0.1; break;
-        case 'PageDown': next = keyboardValueRef.current - 0.1; break;
-        case 'Home': next = 0; break;
-        case 'End': next = 1; break;
-        default: return;
-      }
-      event.preventDefault();
-      commitValue(next);
-    },
-  } : {};
 
   function ratioFromEvent(e: GestureResponderEvent): number {
     const x = e.nativeEvent.locationX;
@@ -64,20 +35,9 @@ export function Slider({ value, onChange, onCommit, height = 6, accessibilityLab
 
   return (
     <View
-      {...webKeyboardProps}
       accessibilityRole="adjustable"
       accessibilityLabel={accessibilityLabel}
-      accessibilityActions={[{ name: 'increment' }, { name: 'decrement' }]}
-      onAccessibilityAction={(event) => {
-        const action = event.nativeEvent.actionName;
-        if (action !== 'increment' && action !== 'decrement') return;
-        const next = Math.max(0, Math.min(1, shown + (action === 'increment' ? 0.05 : -0.05)));
-        commitValue(next);
-      }}
       accessibilityValue={{ min: 0, max: 100, now: Math.round(shown * 100) }}
-      aria-valuemin={0}
-      aria-valuemax={100}
-      aria-valuenow={Math.round(shown * 100)}
       onLayout={(e) => {
         widthRef.current = e.nativeEvent.layout.width || 1;
       }}

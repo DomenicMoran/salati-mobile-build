@@ -12,8 +12,10 @@ import {
   EXCLUDED_KEY_PREFIXES,
   PORTABLE_SETTINGS_FIELDS,
   SETTINGS_BACKUP_KEY,
+  BIBLIOTHEK_BACKUP_KEYS,
   classifyStorageKey,
   collectBackupValues,
+  isBibliothekBackupKey,
   isFullBackupKey,
   mergePortableSettings,
   pickPortableSettings,
@@ -187,7 +189,7 @@ describe('Einstellungen: nur der übertragbare Ausschnitt', () => {
     expect(picked.prayerTimeOffsets).toEqual({ fajr: -2 });
     expect(picked.location).toMatchObject({ city: 'Berlin' });
     expect(picked).not.toHaveProperty('language');
-    expect(picked).not.toHaveProperty('themeOverride');
+    expect(picked.themeOverride).toBe('dark');
     expect(picked).not.toHaveProperty('widgetTheme');
     expect(picked).not.toHaveProperty('recitationModel');
     expect(picked).not.toHaveProperty('notificationsEnabled');
@@ -196,14 +198,16 @@ describe('Einstellungen: nur der übertragbare Ausschnitt', () => {
   it('liefert null, wenn nichts Übertragbares gespeichert ist', () => {
     expect(pickPortableSettings(null)).toBeNull();
     expect(pickPortableSettings('kein json')).toBeNull();
-    expect(pickPortableSettings(JSON.stringify({ themeOverride: 'dark' }))).toBeNull();
+    expect(pickPortableSettings(JSON.stringify({ themeOverride: 'dark' }))).toBe(
+      JSON.stringify({ themeOverride: 'dark' }),
+    );
   });
 
   it('merge behält die gerätespezifischen Felder des Zielgeräts', () => {
     const target = JSON.stringify({ language: 'ar', themeOverride: 'light', method: 99 });
     const merged = JSON.parse(mergePortableSettings(target, pickPortableSettings(full)!)!) as Record<string, unknown>;
-    expect(merged.language).toBe('ar'); // Zielgerät gewinnt
-    expect(merged.themeOverride).toBe('light'); // Zielgerät gewinnt
+    expect(merged.language).toBe('ar'); // Zielgerät gewinnt (nicht portabel)
+    expect(merged.themeOverride).toBe('dark'); // portabel: aus der Sicherung
     expect(merged.method).toBe(3); // aus der Sicherung
   });
 
@@ -212,7 +216,7 @@ describe('Einstellungen: nur der übertragbare Ausschnitt', () => {
       mergePortableSettings('{}', JSON.stringify({ method: 5, themeOverride: 'dark', boeses: true }))!,
     ) as Record<string, unknown>;
     expect(merged.method).toBe(5);
-    expect(merged).not.toHaveProperty('themeOverride');
+    expect(merged.themeOverride).toBe('dark');
     expect(merged).not.toHaveProperty('boeses');
   });
 
@@ -247,7 +251,7 @@ describe('collectBackupValues / restoreBackupValues', () => {
       'salatibox:settings',
       'salatibox:study-tajwid',
     ]);
-    expect(JSON.parse(values[SETTINGS_BACKUP_KEY])).toEqual({ method: 3 });
+    expect(JSON.parse(values[SETTINGS_BACKUP_KEY])).toEqual({ method: 3, themeOverride: 'dark' });
   });
 
   it('schreibt zurück, ignoriert dabei ausgeschlossene und fremde Schlüssel', async () => {
@@ -266,7 +270,11 @@ describe('collectBackupValues / restoreBackupValues', () => {
     expect(await AsyncStorage.getItem('salatibox:qada-owed')).toBe('7');
     expect(await AsyncStorage.getItem('salatibox:error-log')).toBeNull();
     expect(await AsyncStorage.getItem('salatibox:etwas-fremdes')).toBeNull();
-    expect(JSON.parse((await AsyncStorage.getItem(SETTINGS_BACKUP_KEY))!)).toEqual({ language: 'ar', method: 9 });
+    expect(JSON.parse((await AsyncStorage.getItem(SETTINGS_BACKUP_KEY))!)).toEqual({
+      language: 'ar',
+      method: 9,
+      themeOverride: 'dark',
+    });
   });
 
   it('Hin- und Rückweg erhält alle Werte identisch', async () => {
@@ -284,6 +292,27 @@ describe('collectBackupValues / restoreBackupValues', () => {
     for (const [key, value] of Object.entries(original)) {
       expect([key, await AsyncStorage.getItem(key)]).toEqual([key, value]);
     }
+  });
+});
+
+describe('Bibliothek AsyncStorage (salati.bibliothek.*)', () => {
+  it('sichert Fortschritt, Lesezeichen und Markierungen', () => {
+    for (const key of BIBLIOTHEK_BACKUP_KEYS) {
+      expect(isBibliothekBackupKey(key)).toBe(true);
+    }
+  });
+
+  it('sichert Reader-Präferenzen je Buch', () => {
+    expect(isBibliothekBackupKey('salati.bibliothek.pdf-reader-prefs.v1:salati-islam-lernwerk')).toBe(true);
+  });
+
+  it('collect/restore roundtrip für Bibliothek-Schlüssel', async () => {
+    await AsyncStorage.setItem('salati.bibliothek.pdf-progress.v1', '{"salati-islam-lernwerk":{}}');
+    const collected = await collectBackupValues();
+    expect(collected['salati.bibliothek.pdf-progress.v1']).toBeDefined();
+    await AsyncStorage.clear();
+    await restoreBackupValues(collected);
+    expect(await AsyncStorage.getItem('salati.bibliothek.pdf-progress.v1')).toBe('{"salati-islam-lernwerk":{}}');
   });
 });
 

@@ -1,0 +1,22 @@
+{
+  "de-DE": "Bibliothek mit Quellen & Lizenzen, Hörbuch-Hub unter Lernen, Lernunterlagen in jeder Oberflächensprache. Deutsche Wortanalyse mit Fragmenten im Koran-Leser. QUL-Wort-für-Wort in der Produktion bewusst deaktiviert.",
+  "de": "Bibliothek mit Quellen & Lizenzen, Hörbuch-Hub unter Lernen, Lernunterlagen in jeder Oberflächensprache. Deutsche Wortanalyse mit Fragmenten im Koran-Leser. QUL-Wort-für-Wort in der Produktion bewusst deaktiviert.",
+  "en-US": "Library with sources and licences, audiobook hub under Learn, handouts in every UI language. German word analysis with fragments in the Quran reader. QUL word-by-word is intentionally off in production.",
+  "en-GB": "Library with sources and licences, audiobook hub under Learn, handouts in every UI language. German word analysis with fragments in the Quran reader. QUL word-by-word is intentionally off in production.",
+  "ar": "مكتبة بالمصادر والتراخيص، ومركز للكتب الصوتية من التعلّم، وملازم بكل لغة واجهة. تحليل كلمات ألماني بشظايا في قارئ القرآن. QUL كلمة بكلمة متعطّل في الإنتاج عمداً.",
+  "ar-SA": "مكتبة بالمصادر والتراخيص، ومركز للكتب الصوتية من التعلّم، وملازم بكل لغة واجهة. تحليل كلمات ألماني بشظايا في قارئ القرآن. QUL كلمة بكلمة متعطّل في الإنتاج عمداً.",
+  "bn-BD": "লাইসেন্সসহ গ্রন্থাগার, শেখার অংশে অডিওবুক হাব, প্রতিটি UI ভাষায় হ্যান্ডআউট। কুরআন রিডারে ফ্র্যাগমেন্টসহ জার্মান শব্দ বিশ্লেষণ। প্রোডাকশনে QUL শব্দ-শব্দ ইচ্ছাকৃত বন্ধ।",
+  "es-ES": "Biblioteca con fuentes y licencias, hub de audiolibros en Aprender, apuntes en cada idioma de la app. Análisis de palabras en alemán con fragmentos en el lector del Corán. QUL palabra por palabra desactivado en producción.",
+  "fr-FR": "Bibliothèque avec sources et licences, hub de livres audio dans Apprendre, fiches dans chaque langue de l’app. Analyse de mots en allemand avec fragments dans le lecteur du Coran. QUL mot à mot désactivé en production.",
+  "id": "Perpustakaan dengan sumber dan lisensi, hub audiobook di Belajar, handout di setiap bahasa antarmuka. Analisis kata Jerman dengan fragmen di pembaca Al-Qur'an. QUL kata per kata sengaja dimatikan di produksi.",
+  "ms": "Perpustakaan dengan sumber dan lesen, hab audiobook di Belajar, nota dalam setiap bahasa UI. Analisis perkataan Jerman dengan serpihan dalam pembaca Al-Quran. QUL perkataan demi perkataan dimatikan dalam produksi.",
+  "ru": "Библиотека с источниками и лицензиями, аудиокниги в разделе «Обучение», материалы на языке интерфейса. Немецкий разбор слов с фрагментами в читалке Корана. QUL пословно в продакшене отключён.",
+  "ru-RU": "Библиотека с источниками и лицензиями, аудиокниги в разделе «Обучение», материалы на языке интерфейса. Немецкий разбор слов с фрагментами в читалке Корана. QUL пословно в продакшене отключён.",
+  "tr": "Kaynak ve lisanslarla kütüphane, Öğren bölümünde sesli kitap merkezi, her arayüz dilinde notlar. Kur'an okuyucuda parçalarla Almanca sözcük analizi. QUL kelime kelime üretimde kasıtlı kapalı.",
+  "tr-TR": "Kaynak ve lisanslarla kütüphane, Öğren bölümünde sesli kitap merkezi, her arayüz dilinde notlar. Kur'an okuyucuda parçalarla Almanca sözcük analizi. QUL kelime kelime üretimde kasıtlı kapalı.",
+  "ur": "ذرائع و لائسنس کے ساتھ لائبریری، سیکھنے میں آڈیو بک حب، ہر UI زبان میں ہینڈ آؤٹ۔ قرآن ریڈر میں ٹکڑوں کے ساتھ جرمن لفظ تجزیہ۔ QUL لفظ بہ لفظ پروڈکشن میں جان بوجھ کر بند۔",
+  "ur-PK": "ذرائع و لائسنس کے ساتھ لائبریری، سیکھنے میں آڈیو بک حب، ہر UI زبان میں ہینڈ آؤٹ۔ قرآن ریڈر میں ٹکڑوں کے ساتھ جرمن لفظ تجزیہ۔ QUL لفظ بہ لفظ پروڈکشن میں جان بوجھ کر بند۔",
+  "fa": "کتابخانه با منابع و مجوزها، مرکز کتاب صوتی در یادگیری، جزوه‌ها به هر زبان رابط. واژه‌نامه آلمانی با تکه‌ها در نمایشگر قرآن. QUL کلمه‌به‌کلمه در تولید عمداً خاموش.",
+  "sw": "Maktaba yenye vyanzo na leseni, kitovu cha vitabu vya sauti chini ya Jifunze, maelezo katika kila lugha ya programu. Uchambuzi wa maneno ya Kijerumani na vipande katika msomaji wa Qur'an. QUL neno kwa neno imezimwa katika uzalishaji.",
+  "ps": "د سرچينو او جوازونو سره کتابتون، په زده‌کړه کې د غږیز کتابونو مرکز، په هرې UI ژبه کې لاسي پاڼې. په قرآن لوستونکي کې د ټوټو سره د الماني کلمو تحلیل. QUL کلمه په کلمه په تولید کې په قصد بند."
+}

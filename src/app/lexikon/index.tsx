@@ -2,10 +2,11 @@
 // und Konkordanz. "Wurzeln & Wortschatz", "Grammatik & Sarf" und "Konkordanz"
 // zeigen echten Inhalt (roots.json/lemmas.json der Morphologie-Pipeline bzw.
 // data/erklaerungen/de-*.json, siehe features/lexikon/hooks.ts und
-// erklaerungenLoader.ts); "Tajwid" bleibt bewusst ein ehrlicher Leerzustand,
-// bis dieser Inhalt gebaut ist. Die Kopf-Suchleiste durchsucht Wurzeln,
+// erklaerungenLoader.ts); "Tajwid" hat noch kein Lexikon-Nachschlagewerk,
+// verweist aber auf den Tajwid-Studiumskurs. Die Kopf-Suchleiste durchsucht Wurzeln,
 // Wortschatz UND die Fachbegriffe des grammatik-Teilbaums der aktiven
 // Sprache (UniversalSearchResults).
+import { router, useLocalSearchParams } from 'expo-router';
 import { useState } from 'react';
 import { StyleSheet, TextInput, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
@@ -38,15 +39,17 @@ const EMPTY_ICON: Record<LexikonTab, IconName> = {
 };
 
 export default function LexikonScreen() {
+  const params = useLocalSearchParams<{ prefill?: string }>();
+  const prefillParam = typeof params.prefill === 'string' ? params.prefill.trim() : '';
   const { t } = useTranslation();
   const scheme = useResolvedScheme();
   const colors = Colors[scheme];
   const rtl = useRtl();
-  const [query, setQuery] = useState('');
-  const [tab, setTab] = useState<LexikonTab>('roots');
+  const [query, setQuery] = useState(prefillParam);
+  const [tab, setTab] = useState<LexikonTab>(prefillParam ? 'concordance' : 'roots');
   // Von der Kopf-Suche in die Konkordanz uebergebene Vorbefuellung (Tippen auf
   // einen Wortschatz-Treffer springt direkt zu dessen Belegstellen).
-  const [concordancePrefill, setConcordancePrefill] = useState<string | null>(null);
+  const [concordancePrefill, setConcordancePrefill] = useState<string | null>(prefillParam || null);
 
   const showSearchResults = query.trim().length > 0;
 
@@ -97,7 +100,16 @@ export default function LexikonScreen() {
                   onConsumedInitialQuery={() => setConcordancePrefill(null)}
                 />
               ) : (
-                <EmptyState icon={EMPTY_ICON[tab]} title={t(`lexikon.empty.${tab}`)} />
+                <EmptyState
+                  icon={EMPTY_ICON[tab]}
+                  title={t(`lexikon.empty.${tab}`)}
+                  actionLabel={tab === 'tajwid' ? t('study.courses.tajwid.title') : undefined}
+                  onAction={
+                    tab === 'tajwid'
+                      ? () => router.push({ pathname: '/study/[course]', params: { course: 'tajwid' } })
+                      : undefined
+                  }
+                />
               )}
             </View>
           </>

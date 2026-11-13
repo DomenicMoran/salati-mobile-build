@@ -1,6 +1,6 @@
 import type { Href } from 'expo-router';
 import { useQuery } from '@tanstack/react-query';
-import { FlatList, Linking, StyleSheet, View } from 'react-native';
+import { FlatList, StyleSheet, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
 import { AnimatedListItem } from '@/components/ui/animated-list-item';
@@ -14,6 +14,7 @@ import { ThemedView } from '@/components/themed-view';
 import { Colors, MaxContentWidth, Spacing } from '@/constants/theme';
 import { ScreenHeader } from '@/components/screen-header';
 import { booksForLocale, fetchAudiobookIndex } from '@/features/audiobooks/data';
+import { openBibliothekPdf } from '@/features/bibliothek/openBook';
 import { AUDIOBOOK_HUB_TRACKS } from '@/features/audiobooks/tracks';
 import { useResolvedScheme } from '@/hooks/use-resolved-scheme';
 import { useTranslation } from '@/lib/i18n';
@@ -48,7 +49,12 @@ export default function AudiobookBooksScreen() {
             renderItem={({ item, index }) => (
               <AnimatedListItem index={index}>
                 <PressableCard
-                  onPress={() => void Linking.openURL(item.pdf_url).catch(() => {})}
+                  onPress={() =>
+                    openBibliothekPdf({
+                      pdfUrl: item.pdf_url,
+                      title: t(item.trackLabelKey),
+                    })
+                  }
                   type="backgroundElement"
                   style={styles.row}>
                   <IconSymbol name="document-text" size={22} color={colors.accent} />

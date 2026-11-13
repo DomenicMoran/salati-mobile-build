@@ -1,8 +1,6 @@
 import AsyncStorage from '@react-native-async-storage/async-storage';
-import { useFocusEffect } from 'expo-router';
-import { useCallback, useState } from 'react';
 
-import { merkeGelesen } from '@/features/challenges/quranLog';
+import { ensureQuranProgressLoaded, useQuranProgressStore } from '@/features/progress/quranProgressStore';
 
 // Lesezeichen + letzte Leseposition, lokal persistiert. Bewusst ohne eigenen
 // Provider: die Screens laden bei Fokus neu (useFocusEffect), damit Reader und
@@ -138,70 +136,12 @@ export function parseProgress(raw: string | null): QuranProgress {
 }
 
 export async function loadProgress(): Promise<QuranProgress> {
-  return parseProgress(await AsyncStorage.getItem(QURAN_PROGRESS_STORAGE_KEY));
-}
-
-async function saveProgress(progress: QuranProgress): Promise<void> {
-  await AsyncStorage.setItem(QURAN_PROGRESS_STORAGE_KEY, JSON.stringify(progress)).catch(() => {});
+  await ensureQuranProgressLoaded();
+  const { getQuranProgressSnapshot } = await import('@/features/progress/quranProgressStore');
+  return getQuranProgressSnapshot();
 }
 
 export function useQuranProgress() {
-  const [progress, setProgress] = useState<QuranProgress>(EMPTY);
-
-  useFocusEffect(
-    useCallback(() => {
-      let cancelled = false;
-      loadProgress().then((p) => {
-        if (!cancelled) setProgress(p);
-      });
-      return () => {
-        cancelled = true;
-      };
-    }, []),
-  );
-
-  const toggle = useCallback((surah: number, ayah: number) => {
-    setProgress((prev) => {
-      const next = { ...prev, bookmarks: toggleBookmark(prev.bookmarks, surah, ayah) };
-      saveProgress(next);
-      return next;
-    });
-  }, []);
-
-  const setLabel = useCallback((surah: number, ayah: number, label: BookmarkLabel | null) => {
-    setProgress((prev) => {
-      const next = { ...prev, bookmarks: setBookmarkLabel(prev.bookmarks, surah, ayah, label) };
-      saveProgress(next);
-      return next;
-    });
-  }, []);
-
-  const setLastRead = useCallback((surah: number, ayah: number) => {
-    // Lesetagebuch fuer die Herausforderungen ("an 30 Tagen gelesen", "20
-    // Suren gelesen"). Bewusst hier und nirgends sonst: das ist die eine
-    // Stelle, an der die App ohnehin festhaelt, dass gelesen wurde. Der
-    // `history`-Verlauf darunter taugt dafuer nicht (auf 15 Eintraege
-    // gedeckelt, ohne Datum) — Begruendung in challenges/quranLog.ts.
-    merkeGelesen(surah);
-    setProgress((prev) => {
-      const now = Date.now();
-      const next: QuranProgress = {
-        ...prev,
-        lastRead: { surah, ayah, updatedAt: now },
-        history: pushHistory(prev.history, surah, ayah, now),
-      };
-      saveProgress(next);
-      return next;
-    });
-  }, []);
-
-  const saveNote = useCallback((surah: number, ayah: number, text: string) => {
-    setProgress((prev) => {
-      const next: QuranProgress = { ...prev, notes: setNoteText(prev.notes, surah, ayah, text) };
-      saveProgress(next);
-      return next;
-    });
-  }, []);
-
-  return { ...progress, toggle, setLabel, setLastRead, saveNote };
+  void ensureQuranProgressLoaded();
+  return useQuranProgressStore();
 }

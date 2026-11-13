@@ -7,7 +7,15 @@ const mockVideo = { replace: jest.fn(), play: jest.fn() };
 const mockUseVideoPlayer = jest.fn((_source: string | null, _setup: unknown) => mockVideo);
 let mockLocale = 'ar';
 let mockError = false;
-let mockEntries: {track: string; chapter_no: number; title: string; lang: string; audio_url: string; video_url?: string}[];
+let mockEntries: {
+  track: string;
+  chapter_no: number;
+  title: string;
+  lang: string;
+  audio_url: string;
+  video_url?: string;
+  licenseStatus?: 'cleared' | 'pending';
+}[];
 
 jest.mock('expo-router', () => ({
   router: { replace: jest.fn(), push: jest.fn(), canGoBack: () => false },
@@ -28,7 +36,15 @@ beforeEach(() => {
   jest.clearAllMocks();
   mockLocale = 'ar';
   mockError = false;
-  mockEntries = [{track:'pflichtwissen',chapter_no:1,title:'Chapter',lang:'ar',audio_url:'https://example.com/ar.mp3',video_url:'https://example.com/ar.mp4'}];
+  mockEntries = [{
+    track: 'pflichtwissen',
+    chapter_no: 1,
+    title: 'Chapter',
+    lang: 'ar',
+    audio_url: 'https://example.com/ar.mp3',
+    video_url: 'https://example.com/ar.mp4',
+    licenseStatus: 'pending',
+  }];
 });
 
 it('filters a blocked audio entry even if a stale index still contains it', async () => {
