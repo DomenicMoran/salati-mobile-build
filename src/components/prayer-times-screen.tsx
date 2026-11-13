@@ -25,7 +25,15 @@ import { Brand, Colors, MaxContentWidth, Spacing } from '@/constants/theme';
 import { HIJRI_MONTHS } from '@/features/calendar/offline';
 import { fastCountdown, isRamadanMonth } from '@/features/fasting/store';
 import { useDeviceLocation } from '@/features/location/useDeviceLocation';
-import { countdownUnits, formatClock, formatCountdown, formatHHMM, nextPrayer, PRAYERS } from '@/features/prayer-times/next-prayer';
+import {
+  countdownUnits,
+  formatClock,
+  formatCountdown,
+  formatHHMM,
+  nextPrayer,
+  parseTimeOn,
+  PRAYERS,
+} from '@/features/prayer-times/next-prayer';
 import { formatIqama } from '@/features/prayer-times/iqama';
 import type { IqamaOffsets } from '@/features/settings/types';
 import {
@@ -43,6 +51,8 @@ import { rescheduleRamadanReminders } from '@/features/fasting/suhoorAlarm';
 import { rescheduleVerseOfDayReminder } from '@/features/verseOfDay/notifications';
 import { rescheduleUdhiyahReminder } from '@/features/udhiyah/notifications';
 import { rescheduleWeeklySummary } from '@/features/weeklySummary/notifications';
+import { syncDailyIbadahExtras } from '@/features/daily-ibadah/sync';
+import type { HadithLang } from '@/features/hadith/api';
 import { buildPrayerIcs } from '@/features/prayer-times/ics';
 import { useTimings } from '@/features/prayer-times/hooks';
 import { useTimezoneKey } from '@/features/prayer-times/useTimezoneKey';
@@ -346,6 +356,36 @@ export default function PrayerTimesScreen() {
     updateOngoingCountdown(next, settings.notificationPrefs, locale, settings.timeFormat);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [next?.nextPrayer, nextPrayerTs, settings.notificationPrefs, locale, settings.timeFormat]);
+
+  const maghribTs = data?.today?.Maghrib ? parseTimeOn(data.today.Maghrib, now).getTime() : undefined;
+  const fajrTs = data?.today?.Fajr ? parseTimeOn(data.today.Fajr, now).getTime() : undefined;
+  useEffect(() => {
+    if (!data?.today) return;
+    const maghribAt = data.today.Maghrib ? parseTimeOn(data.today.Maghrib, now) : undefined;
+    const fajrAt = data.today.Fajr ? parseTimeOn(data.today.Fajr, now) : undefined;
+    syncDailyIbadahExtras(
+      settings,
+      next,
+      locale,
+      settings.timeFormat,
+      settings.hadithLanguage as HadithLang,
+      maghribAt,
+      fajrAt,
+    ).catch(() => {});
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [
+    next?.nextPrayer,
+    nextPrayerTs,
+    settings.dailyIbadahExtrasEnabled,
+    settings.dailyIbadahOngoingNextPrayer,
+    settings.dailyIbadahFridayKahf,
+    settings.dailyIbadahTahajjudReminder,
+    settings.dailyIbadahVerseWidget,
+    locale,
+    settings.timeFormat,
+    maghribTs,
+    fajrTs,
+  ]);
 
   // iOS Live Activity ("nächstes Gebet") — Pendant zur obigen Android-
   // Ongoing-Notification, gleiches Prinzip (nur bei Wechsel des nächsten

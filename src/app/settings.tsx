@@ -2049,6 +2049,9 @@ export default function SettingsScreen() {
                 nur im "Mehr"-Tab verlinkt, hier fuer bessere Auffindbarkeit
                 direkt in der Sichern-Sektion. */}
             <NavRow onPress={() => router.push('/sync')} label={t('sync.title')} />
+            <NavRow onPress={() => router.push('/daily-ibadah-settings' as never)} label={t('dailyIbadah.settingsTitle')} />
+            <NavRow onPress={() => router.push('/expansion-hub' as never)} label={t('expansion.title')} />
+            <NavRow onPress={() => router.push('/mosque-admin' as never)} label={t('mosqueAdmin.title')} />
 
             {importedReciters !== null && importedReciters.length > 0 && (
               <>

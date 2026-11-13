@@ -30,6 +30,17 @@ if (typeof AbortSignal !== 'undefined' && AbortSignal != null) {
   installAbortSignalPatch(AbortSignal);
 }`;
 
+const headersThrowNeedle = `  if (!globalThis.Headers) {
+    throw new Error(
+      "expo/fetch expected \`globalThis.Headers\` to be installed by React Native's fetch polyfill."
+    );
+  }
+  install('fetch', () => require('./fetch').fetch);`;
+
+const headersThrowReplacement = `  if (globalThis.Headers) {
+    install('fetch', () => require('./fetch').fetch);
+  }`;
+
 const urlImportNeedle = `import { URL, URLSearchParams } from 'whatwg-url-minimum';`;
 const urlImportReplacement = `import * as WhatwgUrl from 'whatwg-url-minimum';
 
@@ -127,8 +138,11 @@ function patchFile(root) {
       return false;
     }
     runtimeSrc = runtimeSrc.replace(runtimeNeedle, runtimeReplacement);
-    fs.writeFileSync(runtimePath, runtimeSrc);
   }
+  if (runtimeSrc.includes(headersThrowNeedle)) {
+    runtimeSrc = runtimeSrc.replace(headersThrowNeedle, headersThrowReplacement);
+  }
+  fs.writeFileSync(runtimePath, runtimeSrc);
 
   console.log(`[patch-expo-winter-abort] patched ${root}`);
   return true;

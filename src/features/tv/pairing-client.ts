@@ -5,11 +5,13 @@
 // Quiz-Kommandos. KEIN Backend, keine Cloud — rein lokal.
 //
 // Protokoll (zeilengetrennte JSON-Objekte):
-//   Handy → TV:  { t:'hello', token }
+//   Handy → TV:  { t:'hello', token }  (12 Zeichen oder 6-Zeichen-Präfix-Alias)
 //                { t:'nav', screen }                 Screen umschalten
 //                { t:'key', dir:'up'|'down'|'left'|'right'|'select'|'back' }
 //                { t:'quiz', action:'answer', option }
 //                { t:'einstellungen', location, is24h, highLatitude, offsets }
+//                { t:'mosqueConfig', patch }         Moschee-Profil
+//                { t:'khutba', action:'caption', text }  Live-Untertitel
 //                     Rechenparameter — wird nach dem 'welcome' automatisch
 //                     einmal geschickt (siehe tvSyncNutzlast).
 //   TV → Handy:  { t:'welcome', name, screens? }   screens = Bildschirme des TV
@@ -292,6 +294,10 @@ export function useTvConnection() {
       /** Rechenparameter ans TV schicken (s. tvSyncNutzlast). */
       sendeEinstellungen: (settings: Parameters<typeof tvSyncNutzlast>[0]) =>
         send(tvSyncNutzlast(settings)),
+      sendMosqueConfig: (patch: unknown) => send({ t: 'mosqueConfig', patch }),
+      sendKhutbaCaption: (text: string) => send({ t: 'khutba', action: 'caption', text }),
+      sendDisplayRole: (role: string, label?: string) => send({ t: 'displayRole', role, label }),
+      sendAdminUnlock: (pin: string) => send({ t: 'adminUnlock', pin }),
     }),
     [send],
   );

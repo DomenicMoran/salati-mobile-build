@@ -20,3 +20,13 @@ export function useTheme(sepia = false) {
   const scheme = useResolvedScheme();
   return Colors[sepia ? 'light' : scheme];
 }
+
+export function amoledThemeOverlay<T extends (typeof Colors)['dark']>(base: T): T {
+  return {
+    ...base,
+    background: '#000000',
+    groupedBackground: '#000000',
+    backgroundElement: '#0a0a0a',
+    groupedCard: '#111111',
+  };
+}

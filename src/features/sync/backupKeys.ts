@@ -99,6 +99,9 @@ export const BACKUP_KEYS: readonly string[] = [
   'salatibox:video-playlists', // selbst zusammengestellte Playlists
   'salatibox:progress:v1:audio', // Hörpositionen (Koran, Podcast, Hörbuch)
   'salatibox:progress:v1:player-prefs', // persistente Player-Einstellungen (Speed, Sleep)
+  'salatibox:khutba-sessions-v1', // Khutba-Untertitel-Verlauf (lokal, optional exportieren)
+  'salatibox:expansion-habits', // Phase-3 Habit-Tracker (lokal)
+  'salatibox:expansion-sunnah-fasting', // Sunnah-Fasten-Reminder-Präferenzen
 ];
 
 /**
@@ -117,6 +120,8 @@ export const BACKUP_KEY_PREFIXES: readonly string[] = [
  * liest diese Map — eine Begründung ist damit Pflicht, kein Kommentar.
  */
 export const EXCLUDED_KEYS: Readonly<Record<string, string>> = {
+  'salatibox:votd-widget-cache-v1':
+    'Vers-des-Tages-Widget-Cache — lässt sich aus lokalen Quellen neu füllen, kein irreversibler Nutzerfortschritt.',
   // Verweise auf Dateien, die auf dem Zielgerät gar nicht liegen. Ein
   // mitgesicherter Index würde dort heruntergeladene Inhalte vortäuschen.
   'salatibox:offline-audio': 'Index heruntergeladener Rezitator-Audios — Dateien liegen nur auf diesem Gerät',

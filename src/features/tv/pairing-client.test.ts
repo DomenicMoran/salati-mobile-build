@@ -1,3 +1,4 @@
+import { defaultMosqueAdminDraft, khutbaCaptionMessage, mosqueConfigMessage } from '@/features/mosque-display/schema';
 import { PAIR_DEFAULT_PORT, parseManualPair, parsePairPayload, tvSyncNutzlast } from './pairing-client';
 
 // react-native-tcp-socket registriert beim Import einen NativeEventEmitter —
@@ -186,5 +187,20 @@ describe('parseManualPair', () => {
 
   it('laesst einen Port ausserhalb des gueltigen Bereichs nicht durch', () => {
     expect(parseManualPair('10.0.0.5:70000', 'T1')?.port).toBe(PAIR_DEFAULT_PORT);
+  });
+
+  it('akzeptiert einen 6-stelligen Kurzcode als manuellen Token', () => {
+    expect(parseManualPair('10.0.0.5:8787', 'abcdef')?.token).toBe('ABCDEF');
+  });
+});
+
+describe('mosque pairing payloads', () => {
+  it('baut mosqueConfig und khutba-Nachrichten', () => {
+    const draft = { ...defaultMosqueAdminDraft(), profile: { name: 'X', address: '', contact: '' } };
+    expect(mosqueConfigMessage(draft)).toEqual({
+      t: 'mosqueConfig',
+      patch: expect.objectContaining({ profile: { name: 'X', address: '', contact: '' } }),
+    });
+    expect(khutbaCaptionMessage('Test')).toEqual({ t: 'khutba', action: 'caption', text: 'Test' });
   });
 });

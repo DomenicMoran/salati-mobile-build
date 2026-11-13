@@ -1,0 +1,17 @@
+{
+  "de-DE": "Behebt einen Startabsturz auf dem iPad. Weitere Stabilitäts- und UI-Verbesserungen in der App. Experimentell (standardmäßig aus): Moschee-Admin für Salati TV, Khutba-Untertitel im WLAN und JSON-Backup.",
+  "en-US": "Fixes a launch crash on iPad. More stability and in-app improvements. Experimental (off by default): mosque admin for Salati TV, Khutba captions on your LAN, and JSON backup.",
+  "en-GB": "Fixes a launch crash on iPad. More stability and in-app improvements. Experimental (off by default): mosque admin for Salati TV, Khutba captions on your LAN, and JSON backup.",
+  "ar-SA": "إصلاح تعطل عند بدء التشغيل على iPad. تحسينات استقرار وواجهة. تجريبي (افتراضياً متوقف): إدارة المسجد لـ Salati TV وتسميات الخطبة على الشبكة المحلية ونسخ JSON.",
+  "bn-BD": "iPad-এ চালু করার সময় ক্র্যাশ ঠিক করা। আরও স্থিতিশীলতা ও অ্যাপের উন্নতি। পরীক্ষামূলক (ডিফল্ট বন্ধ): Salati TV-এর জন্য মসজিদ অ্যাডমিন, LAN-এ খুতবা ক্যাপশন ও JSON ব্যাকআপ।",
+  "es-ES": "Corrige un bloqueo al iniciar en iPad. Más estabilidad y mejoras en la app. Experimental (desactivado por defecto): administración de mezquita para Salati TV, subtítulos de khutba en la LAN y copia JSON.",
+  "fr-FR": "Corrige un plantage au lancement sur iPad. Stabilité et améliorations dans l'app. Expérimental (désactivé par défaut) : admin mosquée pour Salati TV, sous-titres khutba en LAN et sauvegarde JSON.",
+  "id": "Memperbaiki crash saat dibuka di iPad. Stabilitas dan perbaikan dalam aplikasi. Eksperimental (default mati): admin masjid untuk Salati TV, teks khutba di LAN, dan cadangan JSON.",
+  "ms": "Membetulkan ranap semasa pelancaran pada iPad. Kestabilan dan penambahbaikan dalam aplikasi. Eksperimen (lalai tutup): pentadbir masjid untuk Salati TV, kapsyen khutba pada LAN dan sandaran JSON.",
+  "ru-RU": "Исправлен сбой при запуске на iPad. Стабильность и улучшения в приложении. Экспериментально (по умолчанию выкл.): админ мечети для Salati TV, субтитры хутбы в LAN и резерв JSON.",
+  "tr-TR": "iPad'de açılış çökmesi düzeltildi. Uygulama içi kararlılık ve iyileştirmeler. Deneysel (varsayılan kapalı): Salati TV için cami yönetimi, LAN'da hutbe altyazısı ve JSON yedek.",
+  "ur-PK": "iPad پر لانچ کرتے وقت کریش درست کیا۔ ایپ میں مزید استحکام اور بہتری۔ تجرباتی (ڈیفالٹ بند): Salati TV کے لیے مسجد ایڈمن، LAN پر کھتبہ کیپشن اور JSON بیک اپ۔",
+  "fa": "رفع کرش هنگام اجرا روی iPad. پایداری و بهبودهای درون‌برنامه. آزمایشی (پیش‌فرض خاموش): مدیریت مسجد برای Salati TV، زیرنویس خطبه در LAN و پشتیبان JSON.",
+  "sw": "Inarekebisha kuacha kufanya kazi wakati wa kufungua kwenye iPad. Utulivu na maboresho ndani ya programu. Majaribio (imezimwa kwa chaguo-msingi): msimamizi wa msikiti kwa Salati TV, maandishi ya khutba kwenye LAN na JSON.",
+  "ps": "په iPad کې د پیل پر مهال کراش سم شو. په اپ کې ډیر ثبات او ښه والی. ازمایې (پخوا بند): د Salati TV لپاره جومات اداره، په LAN کې خطبه متن او JSON بیک اپ."
+}

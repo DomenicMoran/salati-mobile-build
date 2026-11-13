@@ -8,5 +8,5 @@
   <string name="widget_salaticountdown_description" translatable="false">Nächstes Gebet groß + Restzeit</string>
   <string name="widget_salatiqibla_description" translatable="false">Richtung und Entfernung zur Kaaba</string>
   <string name="expo_splash_screen_resize_mode" translatable="false">contain</string>
-  <string name="expo_runtime_version">1.57.0</string>
+  <string name="expo_runtime_version">1.62.0</string>
 </resources>

@@ -216,3 +216,8 @@ export function useSettings() {
   if (!ctx) throw new Error('useSettings must be used within SettingsProvider');
   return ctx;
 }
+
+/** Für UI-Schichten wie ThemedView in Tests ohne SettingsProvider. */
+export function useSettingsMaybe() {
+  return useContext(SettingsContext);
+}

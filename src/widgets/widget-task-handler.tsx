@@ -35,6 +35,8 @@ import {
   WIDGET_FONT_SCALES,
   widgetTextColorHex,
 } from './widgetTheme';
+import { loadWidgetVerseCache, refreshWidgetVerseCache } from '@/features/daily-ibadah/widgetVerseCache';
+import type { HadithLang } from '@/features/hadith/api';
 import { WisdomWidget } from './WisdomWidget';
 
 // Gemeinsame Darstellungs-Props (Theme/Deckkraft/Ecken/Schriftgröße/Farben)
@@ -133,13 +135,25 @@ function prayerRows(
   timeFormat: '24h' | '12h',
   showSunrise: boolean,
   t: (key: string) => string,
+  settings?: AppSettings,
 ): { name: string; time: string; active: boolean; passed: boolean }[] {
+  const showIqama = settings?.dailyIbadahExtrasEnabled === true;
+  const offsets = settings?.iqamaOffsets;
   const rows: { name: string; time: string; active: boolean; passed: boolean }[] = [];
   const allPassed = nextIdx < 0;
   PRAYERS.forEach((p, i) => {
+    const offKey: Record<(typeof PRAYERS)[number], keyof AppSettings['iqamaOffsets']> = {
+      Fajr: 'fajr',
+      Dhuhr: 'dhuhr',
+      Asr: 'asr',
+      Maghrib: 'maghrib',
+      Isha: 'isha',
+    };
+    const off = showIqama && offsets ? offsets[offKey[p]] : 0;
+    const base = formatHHMM(data.today[p], timeFormat);
     rows.push({
       name: t(`prayers.${p.toLowerCase()}`),
-      time: formatHHMM(data.today[p], timeFormat),
+      time: off ? `${base} (+${off})` : base,
       active: i === nextIdx,
       passed: allPassed || i < nextIdx,
     });
@@ -208,7 +222,7 @@ async function renderPrayerWidget(settings: AppSettings, cfg: ResolvedWidgetConf
       title={`${t('widgets.nextPrayer')} · ${settings.location.label}`}
       nextName={t(`prayers.${next.nextPrayer.toLowerCase()}`)}
       nextTime={formatHHMM(next.nextIdx >= 0 ? data.today[next.nextPrayer] : data.tomorrow.Fajr, timeFormat)}
-      rows={prayerRows(data, next.nextIdx, timeFormat, cfg.showSunrise, t)}
+      rows={prayerRows(data, next.nextIdx, timeFormat, cfg.showSunrise, t, settings)}
       showCoords={cfg.showCoords}
       showNextTime={cfg.showNextTime}
       highlightNext={cfg.highlightNext}
@@ -255,7 +269,7 @@ async function renderCountdownWidget(settings: AppSettings, cfg: ResolvedWidgetC
       nextName={t(`prayers.${next.nextPrayer.toLowerCase()}`)}
       nextTime={formatHHMM(next.nextIdx >= 0 ? data.today[next.nextPrayer] : data.tomorrow.Fajr, timeFormat)}
       remaining={t('widgets.remaining').replace('{t}', compact)}
-      rows={prayerRows(data, next.nextIdx, timeFormat, false, t)}
+      rows={prayerRows(data, next.nextIdx, timeFormat, false, t, settings)}
       highlightNext={cfg.highlightNext}
       showCoords={cfg.showCoords}
       showNextTime={cfg.showNextTime}
@@ -291,8 +305,29 @@ interface DuaEntry {
   source?: string;
 }
 
-function renderWisdomWidget(settings: AppSettings, cfg: ResolvedWidgetConfig, size?: WidgetSize) {
+async function renderWisdomWidget(settings: AppSettings, cfg: ResolvedWidgetConfig, size?: WidgetSize) {
   const t = (key: string) => translate(settings.language, key);
+  if (settings.dailyIbadahExtrasEnabled && settings.dailyIbadahVerseWidget) {
+    const hadithLang = settings.hadithLanguage as HadithLang;
+    const votd =
+      (await refreshWidgetVerseCache(settings.language, hadithLang)) ??
+      (await loadWidgetVerseCache());
+    if (votd) {
+      return (
+        <WisdomWidget
+          title={t('widgets.verseOfDay')}
+          arabic={votd.arabic}
+          translation={votd.translation}
+          source={votd.source}
+          showArabic={cfg.showArabic}
+          showTranslation={cfg.showTranslation}
+          showSource={cfg.showSource}
+          size={size}
+          {...styleProps(cfg)}
+        />
+      );
+    }
+  }
   const duas = (duasData as { duas: DuaEntry[] }).duas;
   // 'daily' = feste, über den Tag stabile Rotation (Tag-des-Jahres); 'random' =
   // bei jedem Widget-Update eine andere Dua.
@@ -377,7 +412,7 @@ export async function renderWidgetForInfo(
   const cfg = resolveWidgetConfig(instance, widgetName, settings);
   switch (baseWidgetName(widgetName)) {
     case 'SalatiWisdom':
-      return renderWisdomWidget(settings, cfg, size);
+      return await renderWisdomWidget(settings, cfg, size);
     case 'SalatiStreak':
       return renderStreakWidget(settings, cfg, size);
     case 'SalatiCountdown':

@@ -255,6 +255,39 @@ export interface AppSettings {
    * Update sichtbar. Nur Android; auf iOS ohne Wirkung (eigene Widgets).
    */
   widgetTheme: WidgetTheme;
+  /** Phase 1: Moschee-Display am TV (Standard aus bis Tests grün). */
+  mosqueDisplayEnabled: boolean;
+  /** Phase 1: Khutba live Untertitel-Relais (Standard aus). */
+  khutbaLiveEnabled: boolean;
+  /** Phase 2: Widgets, Erinnerungen, Tahajjud usw. (Standard aus). */
+  dailyIbadahExtrasEnabled: boolean;
+  /** Phase 2: eigene Dauer-Notification (nicht Adhan-FGS, nicht notificationPrefs.ongoingCountdown). */
+  dailyIbadahOngoingNextPrayer: boolean;
+  dailyIbadahFridayKahf: boolean;
+  dailyIbadahTahajjudReminder: boolean;
+  /** Wisdom-Widget zeigt Vers/Hadith des Tages statt Dua-Rotation. */
+  dailyIbadahVerseWidget: boolean;
+  /** Phase 3+4 experimentelle Erweiterungen (Master-Flag, Standard aus). */
+  expansionExtrasEnabled: boolean;
+  expansionMultiLocations: boolean;
+  expansionQasrJam: boolean;
+  expansionSunnahFastingReminders: boolean;
+  expansionHabitTracker: boolean;
+  expansionVoiceQuranSearch: boolean;
+  expansionPersonalBackup: boolean;
+  expansionOfflineMosquePack: boolean;
+  expansionAmoledSepia: boolean;
+  expansionFamilyMode: boolean;
+  expansionArQibla: boolean;
+  expansionQadaPlanner: boolean;
+  expansionPrintableWeek: boolean;
+  /** Nutzer bestätigt aktiv Reise (Qasr/Jam — keine stillen Annahmen). */
+  expansionTravelUserConfirmed: boolean;
+  expansionQasrMadhhab: 'hanafi' | 'maliki' | 'shafii' | 'hanbali' | 'unsure';
+  /** True-black Hintergrund im Dark Mode (AMOLED). */
+  uiAmoledBlack: boolean;
+  /** Vereinfachte Familien-Shell (lokale Profile, kein Cloud-Konto). */
+  familyModeShell: boolean;
 }
 
 export interface NotificationPrefs {
@@ -517,6 +550,30 @@ export const DEFAULT_SETTINGS: AppSettings = {
   zakatCurrency: 'EUR',
   udhiyahReminderEnabled: false,
   dashboardCardOrder: DASHBOARD_CARD_IDS,
+  mosqueDisplayEnabled: false,
+  khutbaLiveEnabled: false,
+  dailyIbadahExtrasEnabled: false,
+  dailyIbadahOngoingNextPrayer: false,
+  dailyIbadahFridayKahf: false,
+  dailyIbadahTahajjudReminder: false,
+  dailyIbadahVerseWidget: false,
+  expansionExtrasEnabled: false,
+  expansionMultiLocations: false,
+  expansionQasrJam: false,
+  expansionSunnahFastingReminders: false,
+  expansionHabitTracker: false,
+  expansionVoiceQuranSearch: false,
+  expansionPersonalBackup: false,
+  expansionOfflineMosquePack: false,
+  expansionAmoledSepia: false,
+  expansionFamilyMode: false,
+  expansionArQibla: false,
+  expansionQadaPlanner: false,
+  expansionPrintableWeek: false,
+  expansionTravelUserConfirmed: false,
+  expansionQasrMadhhab: 'unsure',
+  uiAmoledBlack: false,
+  familyModeShell: false,
   dashboardHiddenCards: [],
   widgetTheme: 'dark',
 };

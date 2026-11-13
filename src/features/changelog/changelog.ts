@@ -1746,6 +1746,22 @@ export const CHANGELOG: ChangelogVersion[] = [
       },
     ],
   },
+  {
+    version: '1.63.0',
+    date: '2026-11-13',
+    entries: [
+      {
+        type: 'fix',
+        de: 'Startabsturz auf iPad behoben (Expo-Winter/Hermes beim App-Start).',
+        en: 'Fixed launch crash on iPad (Expo winter/Hermes bootstrap at startup).',
+      },
+      {
+        type: 'feature',
+        de: 'Experimentell (standardmäßig aus): Moschee-Display per TV-Kopplung, Khutba live mit LAN-Untertitel und Backup.',
+        en: 'Experimental (off by default): mosque display via TV pairing, Khutba live with LAN captions and backup.',
+      },
+    ],
+  },
 ];
 /** Neueste Version zuerst - für die Anzeige im Changelog-Screen. */
 export function changelogNewestFirst(): ChangelogVersion[] {

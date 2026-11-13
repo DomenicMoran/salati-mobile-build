@@ -184,6 +184,9 @@ function ThemedApp() {
         <Stack.Screen name="learn" />
         <Stack.Screen name="quiz" />
         <Stack.Screen name="tv-connect" />
+        <Stack.Screen name="mosque-admin" options={{ presentation: 'modal' }} />
+        <Stack.Screen name="khutba-live" options={{ presentation: 'modal' }} />
+        <Stack.Screen name="fajr-wake" options={{ presentation: 'modal' }} />
         <Stack.Screen name="hifz" />
         <Stack.Screen name="tasbih" />
         <Stack.Screen name="dhikr-after-salah" />

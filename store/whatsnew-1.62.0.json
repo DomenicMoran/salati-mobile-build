@@ -1,4 +1,14 @@
 {
   "de-DE": "Web-Parität: stabile Seitentitel ohne Hydrationsfehler, PDF-Reader-Leertext und Gebet-Navigation. Keine neuen Buch- oder Mushaf-Features.",
-  "en-US": "Web parity: stable page titles without hydration errors, PDF reader empty state, and prayer navigation. No new book or Mushaf features."
+  "en-US": "Web parity: stable page titles without hydration errors, PDF reader empty state, and prayer navigation. No new book or Mushaf features.",
+  "en-GB": "Web parity: stable page titles without hydration errors, PDF reader empty state, and prayer navigation. No new book or Mushaf features.",
+  "ar-SA": "توافق الويب: عناوين صفحات مستقرة دون أخطاء التهيئة، وحالة فارغة لقارئ PDF، وتنقل أوضح للصلاة. لا ميزات جديدة للكتاب أو المصحف.",
+  "bn-BD": "ওয়েব প্যারিটি: হাইড্রেশন ছাড়াই স্থিতিশীল পেজ শিরোনাম, PDF রিডারের খালি অবস্থা ও নামাজ নেভিগেশন। নতুন বই বা মুসহাফ ফিচার নেই।",
+  "es-ES": "Paridad web: títulos estables sin errores de hidratación, estado vacío del lector PDF y navegación de oración. Sin novedades de libro o mushaf.",
+  "fr-FR": "Parité web : titres de page stables sans erreur d'hydratation, état vide du lecteur PDF et navigation prière. Pas de nouveautés livre ou mushaf.",
+  "id": "Paritas web: judul halaman stabil tanpa kesalahan hidrasi, keadaan kosong pembaca PDF, dan navigasi salat. Tidak ada fitur buku atau mushaf baru.",
+  "ms": "Pariti web: tajuk halaman stabil tanpa ralat hidrasi, keadaan kosong pembaca PDF dan navigasi solat. Tiada ciri buku atau mushaf baharu.",
+  "ru": "Веб-паритет: стабильные заголовки без ошибок гидратации, пустое состояние PDF-читалки и навигация молитвы. Без новых функций книги или мусхафа.",
+  "tr": "Web paritesi: hidrasyon hatası olmadan kararlı sayfa başlıkları, PDF okuyucu boş durumu ve namaz gezintisi. Yeni kitap veya mushaf özelliği yok.",
+  "ur-PK": "ویب ہم آہنگی: ہائیڈریشن کے بغیر مستحکم صفحہ عنوان، PDF ریڈر کی خالی حالت اور نماز نیویگیشن۔ کوئی نئی کتاب یا مصحف خصوصیت نہیں۔"
 }

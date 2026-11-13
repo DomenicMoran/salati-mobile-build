@@ -1,4 +1,2 @@
-// Web/iOS-Entry: unverändert expo-router. Android hat einen eigenen Entry
-// (index.android.js), der zusätzlich den Widget-Task-Handler registriert —
-// react-native-android-widget darf nicht ins Web-Bundle gelangen.
+// Web-Entry (expo export / Metro web). Native: index.android.js, index.ios.js.
 import 'expo-router/entry';

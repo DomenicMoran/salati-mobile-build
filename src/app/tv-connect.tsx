@@ -5,6 +5,7 @@
 import { CameraView, useCameraPermissions } from 'expo-camera';
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import { Linking, Pressable, ScrollView, StyleSheet, TextInput, View } from 'react-native';
+import { router } from 'expo-router';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
 import { IconSymbol, type IconName } from '@/components/ui/icon-symbol';
@@ -16,6 +17,7 @@ import { useRtl } from '@/hooks/use-rtl';
 import { useTranslation } from '@/lib/i18n';
 import { backOr } from '@/lib/nav';
 import { useSettings } from '@/features/settings/store';
+import { mosqueFlagsFromSettings } from '@/features/mosque-display/flags';
 import { parseManualPair, parsePairPayload, useTvConnection } from '@/features/tv/pairing-client';
 import { tvShortcutsFor } from '@/features/tv/screens';
 
@@ -33,6 +35,7 @@ export default function TvConnectScreen() {
   const [manuellCode, setManuellCode] = useState('');
   const [manuellFehler, setManuellFehler] = useState(false);
   const { settings } = useSettings();
+  const mosqueFlags = mosqueFlagsFromSettings(settings);
   // Sobald die Kopplung steht, gehen Ort, Berechnungsmethode, Madhab,
   // Hochbreiten-Regel, Minuten-Korrektur und Zeitformat EINMAL an den
   // Fernseher — bis 1.2.0 musste der Nutzer beides von Hand gleich einstellen,
@@ -270,6 +273,14 @@ export default function TvConnectScreen() {
             </Pressable>
           </View>
 
+          {mosqueFlags.mosqueDisplayEnabled ? (
+            <Pressable onPress={() => router.push('/mosque-admin' as never)} style={styles.mosqueLink}>
+              <ThemedText type="smallBold" themeColor="accent">
+                {t('mosqueAdmin.title')}
+              </ThemedText>
+            </Pressable>
+          ) : null}
+
           {quiz && !quiz.final ? (
             <View style={styles.quizArea}>
               <ThemedText type="small" themeColor="textSecondary">
@@ -429,6 +440,7 @@ function makeStyles() {
     smallBtn: { borderWidth: 1, borderRadius: 999, paddingVertical: Spacing.one, paddingHorizontal: Spacing.three },
     connectedArea: { flex: 1 },
     connectedContent: { padding: Spacing.four, gap: Spacing.three },
+    mosqueLink: { alignSelf: 'flex-start', paddingVertical: 6 },
     connectedHeader: { flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between' },
     statusDotRow: { flexDirection: 'row', alignItems: 'center', gap: Spacing.two },
     dot: { width: 10, height: 10, borderRadius: 5 },

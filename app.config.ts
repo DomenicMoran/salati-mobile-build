@@ -9,7 +9,7 @@ import type { ExpoConfig } from 'expo/config';
  * schreibt. Weichen sie ab, bietet der Update-Server einer Installation nichts
  * an und das Ausbleiben sieht aus wie „es gibt kein Update".
  */
-const VERSION = '1.62.0';
+const VERSION = '1.63.0';
 
 /** App-UI + App-Store-Listing (14 Sprachen) — nativer iOS-Berechtigungstext pro Sprache. */
 const IOS_PERMISSION_LOCALES = [
@@ -114,7 +114,7 @@ const config: ExpoConfig = {
     // 87: ASC Binary Processing ITMS-90683 — NSMotionUsageDescription fehlte (Qibla/Kompass).
     // 96: Build 95 wurde von Apple beim Hochladen abgelehnt (ITMS-90208,
     // rnwhisper.framework ohne MinimumOSVersion); Android versionCode gleichgezogen.
-    buildNumber: '106',
+    buildNumber: '107',
     // ASC-App "Salati Islam" (6791867298) wurde vom User unter dieser ID
     // angelegt (2026-07-17) — beide Plattformen nutzen de.salatibox.de.
     bundleIdentifier: 'de.salatibox.de',
