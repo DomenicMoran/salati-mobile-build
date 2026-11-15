@@ -89,6 +89,12 @@ export default function DailyIbadahSettingsScreen() {
             value={settings.dailyIbadahVerseWidget}
             onValueChange={(v) => update({ dailyIbadahVerseWidget: v })}
           />
+          <FlagRow
+            label={t('dailyIbadah.fajrWakeTitle')}
+            hint={t('dailyIbadah.fajrWakeAlarmOn')}
+            value={settings.dailyIbadahFajrWakeAlarm}
+            onValueChange={(v) => update({ dailyIbadahFajrWakeAlarm: v })}
+          />
           <Pressable
             onPress={() => router.push('/fajr-wake' as never)}
             style={styles.link}

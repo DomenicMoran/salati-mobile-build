@@ -6,6 +6,7 @@ import { syncFridayKahfReminders } from './fridayReminder';
 import { updateDailyIbadahOngoing } from './ongoing';
 import { refreshWidgetVerseCache } from './widgetVerseCache';
 import { syncTahajjudReminders } from './tahajjudReminder';
+import { cancelFajrWakeAlarms, localDayKey, scheduleFajrWakeAlarm } from './fajrWakeAlarm';
 
 export async function syncDailyIbadahExtras(
   settings: AppSettings,
@@ -20,6 +21,7 @@ export async function syncDailyIbadahExtras(
     await updateDailyIbadahOngoing(false, null, locale, timeFormat);
     await syncFridayKahfReminders(false, locale);
     await syncTahajjudReminders(false, maghribAt, fajrAt, locale);
+    await cancelFajrWakeAlarms();
     return;
   }
   await updateDailyIbadahOngoing(
@@ -36,5 +38,11 @@ export async function syncDailyIbadahExtras(
   }
   if (settings.dailyIbadahVerseWidget) {
     void refreshWidgetVerseCache(locale, hadithLang);
+  }
+  if (settings.dailyIbadahFajrWakeAlarm && fajrAt && fajrAt.getTime() > Date.now()) {
+    await cancelFajrWakeAlarms();
+    await scheduleFajrWakeAlarm(fajrAt, locale, localDayKey(fajrAt));
+  } else if (!settings.dailyIbadahFajrWakeAlarm) {
+    await cancelFajrWakeAlarms();
   }
 }
