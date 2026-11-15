@@ -52,8 +52,8 @@ echo "abs() eindeutig gemacht in $anzahl Swift-Dateien"
 #   'RuntimeScheduler' cannot be annotated with either SWIFT_RETURNS_RETAINED
 #   or SWIFT_RETURNS_UNRETAINED because it is not returning a SWIFT_SHARED_REFERENCE type
 # Pin 57.0.3 umging den Compilefehler, fehlt aber JavaScriptActor.runIsolated →
-# DYLD SIGABRT vor JS auf iPad (ASC 2.1a, Build 108). Deshalb 57.0.8 + diese
-# Annotation entfernen (nur Attribut, keine Semantik-Aenderung am C++-Typ).
+# DYLD SIGABRT vor JS auf iPad (ASC 2.1a, Build 108). Pin 57.1.3 + diese
+# Annotation entfernen (nur Attribut; 57.1.x nutzt create()-Factories, Strip bleibt harmlos).
 anzahl=0
 while IFS= read -r datei; do
   perl -i -pe 's/\bSWIFT_RETURNS_RETAINED\s+//g; s/\bSWIFT_RETURNS_UNRETAINED\s+//g' "$datei"

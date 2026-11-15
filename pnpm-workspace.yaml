@@ -8,11 +8,10 @@ overrides:
   "form-data@>=4.0.0 <4.0.6": ">=4.0.6"
   "postcss@<8.5.10": ">=8.5.10"
   "qs@<6.15.2": ">=6.15.2"
-  # 2026-11-15 ASC 2.1(a) iPad DYLD: 57.0.3 fehlt JavaScriptActor.runIsolated
-  # (ExpoModulesCore 57.0.6 erwartet das Symbol → SIGABRT vor JS, Build 108).
-  # Ab 57.0.6+ ist runIsolated da. SWIFT_RETURNS_RETAINED-Xcode-Bruch war 57.0.5;
-  # 57.0.8 ist der aktuelle Pin (Monorepo pnpm-workspace override + CI-Verify).
-  expo-modules-jsi: 57.0.8
+  # 2026-11-15 ASC 2.1(a) iPad DYLD: 57.0.3 fehlt JavaScriptActor.runIsolated.
+  # 57.0.8 hat runIsolated, bricht auf Xcode 26 an „sending thisPtr“ ab.
+  # 57.1.3: UncheckedSendable (expo#51040) + runIsolated; CI strippt SWIFT_RETURNS_* .
+  expo-modules-jsi: 57.1.3
 patchedDependencies:
   '@bacons/apple-targets@5.0.0': patches/@bacons__apple-targets@5.0.0.patch
   expo-dynamic-app-icon@1.2.0: patches/expo-dynamic-app-icon@1.2.0.patch
