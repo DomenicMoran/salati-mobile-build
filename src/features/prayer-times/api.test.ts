@@ -118,4 +118,22 @@ describe('fetchTimingsWithRetry — Zeitbudget bei hängendem Netz', () => {
       if (origTimeoutFactory) abortSignal.timeout = origTimeoutFactory;
     }
   });
+
+  it('fällt auch bei fetch() ohne Abort-Unterstützung innerhalb des Budgets zurück', async () => {
+    const origFetch = globalThis.fetch;
+    jest.useFakeTimers();
+    globalThis.fetch = jest.fn(
+      () => new Promise<Response>(() => {}),
+    ) as unknown as typeof globalThis.fetch;
+
+    try {
+      const pending = fetchTimingsWithRetry(BERLIN.lat, BERLIN.lon, new Date(2026, 0, 15), OPTS);
+      await jest.advanceTimersByTimeAsync(TIMINGS_BUDGET_MS + 500);
+      const result = await pending;
+      expect(result.timings.Fajr).toMatch(/^\d{2}:\d{2}$/);
+    } finally {
+      jest.useRealTimers();
+      globalThis.fetch = origFetch;
+    }
+  });
 });

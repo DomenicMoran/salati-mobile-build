@@ -1282,7 +1282,11 @@
     },
     "ramadanCard": {
       "heading": "Рамадан"
-    }
+    },
+    "imsak": "Имсак",
+    "taraweeh": "Таравих (после Иша)",
+    "ramadanToday": "Сегодня Рамадан",
+    "ramadanNextIn": "Далее: {event}"
   },
   "khatmah": {
     "title": "План хатма",
@@ -4449,7 +4453,9 @@
     "whisperOn": "Whisper on (Arabic → text)",
     "whisperRecord": "Start recording",
     "whisperStop": "Stop & send",
-    "enableExperimental": "Khutba live experimentell aktivieren"
+    "enableExperimental": "Khutba live experimentell aktivieren",
+    "sendLocal": "Сохранить локально",
+    "sendTvAndLocal": "Отправить на ТВ и сохранить"
   },
   "mosqueAdmin": {
     "addressPh": "Mosque address",
@@ -4498,13 +4504,29 @@
     "tickerEn": "Ticker English",
     "tickerLocales": "Ticker locales (CSV)",
     "tickerPh": "Ticker text",
-    "title": "Mosque admin"
+    "title": "Mosque admin",
+    "contactPh": "Контакт (телефон, почта)",
+    "logoPh": "Файл логотипа (file://…)",
+    "donation": "Пожертвование",
+    "donationTextPh": "Текст пожертвования",
+    "donationIbanPh": "IBAN",
+    "donationQrPh": "QR-данные (EPC/URL)",
+    "screenWakePh": "Пробуждение (ЧЧ:ММ)",
+    "screenSleepPh": "Ожидание (ЧЧ:ММ)",
+    "tickerAr": "Бегущая строка (араб.)",
+    "ramadanImsak": "Показать имсак",
+    "ramadanSuhur": "Показать сухур",
+    "ramadanTaraweeh": "Показать таравих",
+    "multiTvTitle": "Несколько ТВ (LAN)",
+    "multiTvEmpty": "Пока нет ТВ — сначала подключите.",
+    "multiTvPush": "Отправить настройки всем известным ТВ",
+    "multiTvResult": "{ok}/{total} ТВ применили настройки."
   },
   "dailyIbadah": {
     "gated": "Daily extras are experimental (flag off).",
     "fajrWakeBody": "Fajr time — confirm when you are awake.",
     "fajrWakeConfirm": "I am awake",
-    "fajrWakeDone": "Alhamdulillah — saved locally.",
+    "fajrWakeDone": "Альхамдулиллах — будильник остановлен (локально).",
     "fajrWakeTitle": "Fajr wake",
     "settingsTitle": "Daily ibadah (experimental)",
     "settingsIntro": "Separate from adhan service. All on-device, opt-in.",
@@ -4515,7 +4537,18 @@
     "verseWidget": "Widget: verse/hadith of the day",
     "shareVerseImage": "Share today’s verse as image",
     "enableExperimental": "Enable experimental",
-    "disableExperimental": "Disable experimental"
+    "disableExperimental": "Disable experimental",
+    "fajrWakeRinging": "Будильник звонит — завершите задание, чтобы остановить.",
+    "fajrWakeAlarmOn": "Следующий будильник Фаджр запланирован (точный, свой канал).",
+    "fajrWakeAlarmOff": "Будильник выкл. — включите в настройках.",
+    "fajrWakeEnable": "Включить будильник Фаджр",
+    "fajrWakeDisable": "Выключить будильник Фаджр",
+    "fajrWakeTaskMath": "Задание: {q} = ?",
+    "fajrWakeTaskDua": "Или введите: {dua}",
+    "fajrWakeAnswerPh": "Ответ",
+    "fajrWakeDismiss": "Остановить будильник",
+    "fajrWakeSnooze": "Отложить ({n}/{max})",
+    "fajrWakeTest2m": "Тестовый будильник через 2 минуты"
   },
   "expansion": {
     "title": "Expansion (beta)",

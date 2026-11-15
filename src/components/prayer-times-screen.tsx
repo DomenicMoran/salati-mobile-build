@@ -14,7 +14,6 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 import { WebTopBar } from '@/components/web-top-bar';
 import { useHydrated } from '@/hooks/use-hydrated';
 
-import { AnimatedListItem } from '@/components/ui/animated-list-item';
 import { DisclosureChevron } from '@/components/ui/disclosure-chevron';
 import { IconSymbol, type IconName } from '@/components/ui/icon-symbol';
 import { PressableCard } from '@/components/ui/pressable-card';
@@ -96,13 +95,20 @@ export default function PrayerTimesScreen() {
   // Countdown-Einheiten in der App-Sprache (Audit 2026-07-28, T17) — vorher
   // standen „h/m/s" auch in arabischer Oberflaeche.
   const countdownUnitLabels = useMemo(() => countdownUnits(t), [t]);
-  const { data, isLoading, isError, refetch } = useTimings();
-  const { requestLocation, loading: locLoading } = useDeviceLocation();
-  const [now, setNow] = useState(() => new Date());
   // Hydration-Guard (Web/Static-Export): die Uhr ist im vorgerenderten HTML
   // auf die Build-Zeit eingebacken — bis zur Hydration neutralen Platzhalter
   // zeigen, sonst React-#418-Hydration-Mismatch auf jedem Seitenaufruf.
   const mounted = useHydrated();
+  const { data, isLoading, isFetching, isError, refetch } = useTimings();
+  const webGated = Platform.OS !== 'web' || mounted;
+  // Spinner nur ohne anzeigbare Zeile (Platzhalter aus adhan-js zählt — nur nativ).
+  const showTimingsLoading =
+    webGated && !isError && !data?.today?.Fajr && (isLoading || isFetching);
+  const retryTimings = () => {
+    void refetch();
+  };
+  const { requestLocation, loading: locLoading } = useDeviceLocation();
+  const [now, setNow] = useState(() => new Date());
   // Tablet/Desktop: Hero und Gebetszeiten stehen NEBENEINANDER und füllen die
   // Fensterhöhe. Vorher endete der Inhalt auf 1600×2560 bei rund 48 % der
   // Höhe, der Rest war leerer Grund (docs/STORE-BILDER-2026-07-29.md §7.3).
@@ -674,7 +680,16 @@ export default function PrayerTimesScreen() {
 
   const prayerTableCard = (
     <>
-      {isLoading && (
+      {Platform.OS === 'web' && !mounted ? (
+        <View style={styles.center}>
+          <ThemedActivityIndicator />
+          <ThemedText type="small" themeColor="textSecondary" style={{ marginTop: Spacing.two }}>
+            {t('prayer.loading')}
+          </ThemedText>
+        </View>
+      ) : (
+        <>
+      {showTimingsLoading && (
         <View style={styles.center}>
           <ThemedActivityIndicator />
           <ThemedText type="small" themeColor="textSecondary" style={{ marginTop: Spacing.two }}>
@@ -683,11 +698,35 @@ export default function PrayerTimesScreen() {
         </View>
       )}
 
-      {isError && !isLoading && (
+      {isError && !showTimingsLoading && (
         <View style={styles.center}>
           <ThemedText type="small" themeColor="textSecondary">
             {t('prayer.unavailable')}
           </ThemedText>
+        </View>
+      )}
+
+      {!data && !showTimingsLoading && !isError && (
+        <View style={styles.center}>
+          <ThemedText type="small" themeColor="textSecondary">
+            {t('prayer.unavailable')}
+          </ThemedText>
+          <Pressable
+            onPress={retryTimings}
+            accessibilityRole="button"
+            accessibilityLabel={t('common.refresh')}
+            style={({ pressed }) => [
+              styles.actionChip,
+              styles.actionChipSecondary,
+              { marginTop: Spacing.two },
+              Platform.OS === 'web' ? styles.pressableWeb : undefined,
+              pressed && styles.pressed,
+            ]}>
+            <IconSymbol name="refresh-outline" size={16} color={colors.accent} />
+            <ThemedText type="smallBold" themeColor="accent">
+              {t('common.refresh')}
+            </ThemedText>
+          </Pressable>
         </View>
       )}
 
@@ -697,15 +736,17 @@ export default function PrayerTimesScreen() {
                 {/* Shuruq als reine Info-Zeile nach Fajr (Audit 2026-07-19 D4):
                     kein Gebet, daher nie als "nächstes" markiert und optisch
                     zurückgenommen - die Zeit steckt längst in der API-Antwort. */}
-                {(['Fajr', 'Sunrise', 'Dhuhr', 'Asr', 'Maghrib', 'Isha'] as const).map((p, i) => {
+                {(['Fajr', 'Sunrise', 'Dhuhr', 'Asr', 'Maghrib', 'Isha'] as const).map((p) => {
                   const prayerIdx = p === 'Sunrise' ? -1 : PRAYERS.indexOf(p);
-                  const isNext = prayerIdx >= 0 && next?.nextIdx === prayerIdx;
+                  // „Nächstes Gebet“ hängt an `now` — erst nach Hydration markieren,
+                  // sonst weicht die SSR-Zeile vom Client ab (React #418 auf /prayer).
+                  const isNext = mounted && prayerIdx >= 0 && next?.nextIdx === prayerIdx;
                   const isInfo = p === 'Sunrise';
                   // Iqama (Beginn des Gemeinschaftsgebets) gibt es nur für die
                   // 5 Pflichtgebete, nicht für die Shuruq-Infozeile.
                   const showIqama = settings.iqamaEnabled && !isInfo;
                   return (
-                    <AnimatedListItem key={p} index={i}>
+                    <View key={p}>
                       {/* Nächstes Gebet bekommt zusätzlich zum Farbton eine
                           linke Akzentkante + ein Uhr-Icon - reine Farbe allein
                           war auf hellen Themes zu subtil, um auf den ersten
@@ -725,7 +766,7 @@ export default function PrayerTimesScreen() {
                             themeColor={isNext ? 'accent' : isInfo ? 'textSecondary' : 'text'}>
                             {formatHHMM(data.today[p], settings.timeFormat)}
                           </ThemedText>
-                          {showIqama && (
+                          {showIqama && mounted && (
                             <ThemedText type="small" themeColor="textSecondary">
                               {t('prayer.iqama')}{' '}
                               {formatIqama(
@@ -738,7 +779,7 @@ export default function PrayerTimesScreen() {
                           )}
                         </View>
                       </View>
-                    </AnimatedListItem>
+                    </View>
                   );
                 })}
               </ThemedView>
@@ -753,6 +794,8 @@ export default function PrayerTimesScreen() {
                 </View>
               )}
             </>
+      )}
+        </>
       )}
     </>
   );
@@ -847,7 +890,7 @@ export default function PrayerTimesScreen() {
               </ThemedText>
             </Pressable>
             <Pressable
-              onPress={() => refetch()}
+              onPress={retryTimings}
               accessibilityRole="button"
               accessibilityLabel={t('common.refresh')}
               style={({ pressed }) => [styles.actionChip, styles.actionChipSecondary, Platform.OS === 'web' ? styles.pressableWeb : undefined, pressed && styles.pressed]}>

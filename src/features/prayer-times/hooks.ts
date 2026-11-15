@@ -1,11 +1,12 @@
 import { useQuery } from '@tanstack/react-query';
 import { useMemo } from 'react';
+import { Platform } from 'react-native';
 
 import { useSettings } from '@/features/settings/store';
 import type { PrayerTimeOffsets } from '@/features/settings/types';
 
 import { fetchTimingsWithRetry, fetchUpcomingTimings, type HijriDate, type Timings } from './api';
-import { calcOptionsFromSettings } from './calc';
+import { calcOptionsFromSettings, computeTimings } from './calc';
 import { readTimingsCache, writeTimingsCache } from './storage';
 import { useDayKey } from './useDayKey';
 import { useTimezoneKey } from './useTimezoneKey';
@@ -32,6 +33,17 @@ function offsetKey(offsets: PrayerTimeOffsets): string {
   return `${offsets.fajr},${offsets.sunrise},${offsets.dhuhr},${offsets.asr},${offsets.maghrib},${offsets.isha}`;
 }
 
+/** Sofortige Anzeige aus adhan-js — identisch zum API-Fallback in api.ts. */
+function timingsPlaceholder(lat: number, lon: number, opts: ReturnType<typeof calcOptionsFromSettings>): TimingsData {
+  const today = new Date();
+  const tomorrow = new Date(today);
+  tomorrow.setDate(tomorrow.getDate() + 1);
+  return {
+    today: computeTimings(lat, lon, today, opts),
+    tomorrow: computeTimings(lat, lon, tomorrow, opts),
+  };
+}
+
 export function useTimings() {
   const { settings } = useSettings();
   const { lat, lon } = settings.location;
@@ -41,7 +53,12 @@ export function useTimings() {
   // sind die gecachten Zeiten für die alte Zone gerechnet — siehe useTimezoneKey.
   const tzKey = useTimezoneKey();
 
+  const isWeb = Platform.OS === 'web';
+
   return useQuery<TimingsData>({
+    // Nur nativ: offline/ohne Netz trotzdem queryFn starten (sonst „paused“).
+    // Web: Default networkMode, damit SSR und erster Client-Render gleich bleiben.
+    ...(isWeb ? {} : { networkMode: 'always' as const }),
     // dayKey im Query-Key: erzwingt Refetch bei Tageswechsel statt nur beim
     // stündlichen Poll zu warten (Audit-Bug, siehe useDayKey.ts).
     queryKey: [
@@ -77,7 +94,11 @@ export function useTimings() {
       if (t.hijri) await writeTimingsCache(lat, lon, opts, data);
       return data;
     },
+    // Web/Static-Export: kein computeTimings-Platzhalter — der weicht vom
+    // vorgerenderten HTML ab und triggert React #418 (Text vs. leer).
+    placeholderData: isWeb ? undefined : () => timingsPlaceholder(lat, lon, opts),
     staleTime: 60 * 60 * 1000,
+    retry: 1,
   });
 }
 

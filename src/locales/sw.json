@@ -1282,7 +1282,11 @@
     },
     "ramadanCard": {
       "heading": "Ramadhani"
-    }
+    },
+    "imsak": "Imsak",
+    "taraweeh": "Taraweeh (baada ya Isha)",
+    "ramadanToday": "Ramadhani leo",
+    "ramadanNextIn": "Ifuatayo: {event}"
   },
   "khatmah": {
     "title": "Mpango wa Khatma",
@@ -4449,7 +4453,9 @@
     "whisperOn": "Whisper on (Arabic → text)",
     "whisperRecord": "Start recording",
     "whisperStop": "Stop & send",
-    "enableExperimental": "Khutba live experimentell aktivieren"
+    "enableExperimental": "Khutba live experimentell aktivieren",
+    "sendLocal": "Hifadhi ndani",
+    "sendTvAndLocal": "Tuma kwa TV na hifadhi ndani"
   },
   "mosqueAdmin": {
     "addressPh": "Mosque address",
@@ -4498,13 +4504,29 @@
     "tickerEn": "Ticker English",
     "tickerLocales": "Ticker locales (CSV)",
     "tickerPh": "Ticker text",
-    "title": "Mosque admin"
+    "title": "Mosque admin",
+    "contactPh": "Mawasiliano (simu, barua pepe)",
+    "logoPh": "Faili ya nembo (file://…)",
+    "donation": "Michango",
+    "donationTextPh": "Maandishi ya michango",
+    "donationIbanPh": "IBAN",
+    "donationQrPh": "Mzigo wa QR (EPC/URL)",
+    "screenWakePh": "Amka (SS:DD)",
+    "screenSleepPh": "Usingizi (SS:DD)",
+    "tickerAr": "Ticker ya Kiarabu",
+    "ramadanImsak": "Onyesha Imsak",
+    "ramadanSuhur": "Onyesha Suhur",
+    "ramadanTaraweeh": "Onyesha Taraweeh",
+    "multiTvTitle": "TV nyingi (LAN)",
+    "multiTvEmpty": "Bado hakuna TV — unganisha TV kwanza.",
+    "multiTvPush": "Tuma usanidi kwa TV zote zinazojulikana",
+    "multiTvResult": "{ok}/{total} TV zilitumia usanidi."
   },
   "dailyIbadah": {
     "gated": "Daily extras are experimental (flag off).",
     "fajrWakeBody": "Fajr time — confirm when you are awake.",
     "fajrWakeConfirm": "I am awake",
-    "fajrWakeDone": "Alhamdulillah — saved locally.",
+    "fajrWakeDone": "Alhamdulillah — kengele imesimamishwa (ndani).",
     "fajrWakeTitle": "Fajr wake",
     "settingsTitle": "Daily ibadah (experimental)",
     "settingsIntro": "Separate from adhan service. All on-device, opt-in.",
@@ -4515,7 +4537,18 @@
     "verseWidget": "Widget: verse/hadith of the day",
     "shareVerseImage": "Share today’s verse as image",
     "enableExperimental": "Enable experimental",
-    "disableExperimental": "Disable experimental"
+    "disableExperimental": "Disable experimental",
+    "fajrWakeRinging": "Kengele inalia — kamilisha kazi ili kusimamisha.",
+    "fajrWakeAlarmOn": "Kengele ijayo ya Fajr imepangwa (sahihi, kituo cha pekee).",
+    "fajrWakeAlarmOff": "Kengele imezimwa — washa katika mipangilio.",
+    "fajrWakeEnable": "Washa kengele ya Fajr",
+    "fajrWakeDisable": "Zima kengele ya Fajr",
+    "fajrWakeTaskMath": "Kazi: {q} = ?",
+    "fajrWakeTaskDua": "Au andika: {dua}",
+    "fajrWakeAnswerPh": "Jibu",
+    "fajrWakeDismiss": "Simamisha kengele",
+    "fajrWakeSnooze": "Lala tena ({n}/{max})",
+    "fajrWakeTest2m": "Kengele ya majaribio baada ya dakika 2"
   },
   "expansion": {
     "title": "Expansion (beta)",

@@ -119,7 +119,8 @@ const config: ExpoConfig = {
     // 87: ASC Binary Processing ITMS-90683 — NSMotionUsageDescription fehlte (Qibla/Kompass).
     // 96: Build 95 wurde von Apple beim Hochladen abgelehnt (ITMS-90208,
     // rnwhisper.framework ohne MinimumOSVersion); Android versionCode gleichgezogen.
-    buildNumber: '108',
+    // 109: DYLD Symbol missing — ExpoModulesCore vs ExpoModulesJSI (runIsolated); siehe IPAD-CRASH-108-ANALYSIS.md
+    buildNumber: '109',
     // ASC-App "Salati Islam" (6791867298) wurde vom User unter dieser ID
     // angelegt (2026-07-17) — beide Plattformen nutzen de.salatibox.de.
     bundleIdentifier: 'de.salatibox.de',
@@ -209,6 +210,7 @@ const config: ExpoConfig = {
       },
     ],
     './plugins/android-play-r8-release.js',
+    './plugins/with-khutba-mic.js',
     [
       'expo-splash-screen',
       {

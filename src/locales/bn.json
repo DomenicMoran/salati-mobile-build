@@ -1282,7 +1282,11 @@
     },
     "ramadanCard": {
       "heading": "রমজান"
-    }
+    },
+    "imsak": "ইমসাক",
+    "taraweeh": "তারাবীহ (এশার পর)",
+    "ramadanToday": "আজ রমজান",
+    "ramadanNextIn": "পরবর্তী: {event}"
   },
   "khatmah": {
     "title": "খতম পরিকল্পনা",
@@ -4449,7 +4453,9 @@
     "whisperOn": "Whisper on (Arabic → text)",
     "whisperRecord": "Start recording",
     "whisperStop": "Stop & send",
-    "enableExperimental": "Khutba live experimentell aktivieren"
+    "enableExperimental": "Khutba live experimentell aktivieren",
+    "sendLocal": "স্থানীয়ভাবে সংরক্ষণ",
+    "sendTvAndLocal": "টিভিতে পাঠান ও সংরক্ষণ"
   },
   "mosqueAdmin": {
     "addressPh": "Mosque address",
@@ -4498,13 +4504,29 @@
     "tickerEn": "Ticker English",
     "tickerLocales": "Ticker locales (CSV)",
     "tickerPh": "Ticker text",
-    "title": "Mosque admin"
+    "title": "Mosque admin",
+    "contactPh": "যোগাযোগ (ফোন, ইমেইল)",
+    "logoPh": "লোগো ফাইল (file://…)",
+    "donation": "দান",
+    "donationTextPh": "দানের লেখা",
+    "donationIbanPh": "IBAN",
+    "donationQrPh": "QR পেলোড (EPC/URL)",
+    "screenWakePh": "জাগানো (ঘণ্টা:মিনিট)",
+    "screenSleepPh": "স্ট্যান্ডবাই (ঘণ্টা:মিনিট)",
+    "tickerAr": "আরবি টিকার",
+    "ramadanImsak": "ইমসাক দেখান",
+    "ramadanSuhur": "সাহরি দেখান",
+    "ramadanTaraweeh": "তারাবীহ দেখান",
+    "multiTvTitle": "একাধিক টিভি (LAN)",
+    "multiTvEmpty": "এখনো টিভি নেই — আগে সংযুক্ত করুন।",
+    "multiTvPush": "সব পরিচিত টিভিতে কনফিগ পাঠান",
+    "multiTvResult": "{ok}/{total} টিভি কনফিগ প্রয়োগ করেছে।"
   },
   "dailyIbadah": {
     "gated": "Daily extras are experimental (flag off).",
     "fajrWakeBody": "Fajr time — confirm when you are awake.",
     "fajrWakeConfirm": "I am awake",
-    "fajrWakeDone": "Alhamdulillah — saved locally.",
+    "fajrWakeDone": "আলহামদুলিল্লাহ — অ্যালার্ম বন্ধ (স্থানীয়)।",
     "fajrWakeTitle": "Fajr wake",
     "settingsTitle": "Daily ibadah (experimental)",
     "settingsIntro": "Separate from adhan service. All on-device, opt-in.",
@@ -4515,7 +4537,18 @@
     "verseWidget": "Widget: verse/hadith of the day",
     "shareVerseImage": "Share today’s verse as image",
     "enableExperimental": "Enable experimental",
-    "disableExperimental": "Disable experimental"
+    "disableExperimental": "Disable experimental",
+    "fajrWakeRinging": "অ্যালার্ম বাজছে — বন্ধ করতে কাজ শেষ করুন।",
+    "fajrWakeAlarmOn": "পরবর্তী ফজর অ্যালার্ম নির্ধারিত (সঠিক, নিজস্ব চ্যানেল)।",
+    "fajrWakeAlarmOff": "অ্যালার্ম বন্ধ — সেটিংসে চালু করুন।",
+    "fajrWakeEnable": "ফজর অ্যালার্ম চালু",
+    "fajrWakeDisable": "ফজর অ্যালার্ম বন্ধ",
+    "fajrWakeTaskMath": "কাজ: {q} = ?",
+    "fajrWakeTaskDua": "অথবা লিখুন: {dua}",
+    "fajrWakeAnswerPh": "উত্তর",
+    "fajrWakeDismiss": "অ্যালার্ম বন্ধ",
+    "fajrWakeSnooze": "স্নুজ ({n}/{max})",
+    "fajrWakeTest2m": "২ মিনিটে পরীক্ষা অ্যালার্ম"
   },
   "expansion": {
     "title": "Expansion (beta)",

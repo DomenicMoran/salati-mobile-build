@@ -1282,7 +1282,11 @@
     },
     "ramadanCard": {
       "heading": "رمضان"
-    }
+    },
+    "imsak": "الإمساك",
+    "taraweeh": "التراويح (بعد العشاء)",
+    "ramadanToday": "آج رمضان",
+    "ramadanNextIn": "اگلا: {event}"
   },
   "khatmah": {
     "title": "ختم قرآن پلان",
@@ -4449,7 +4453,9 @@
     "whisperOn": "Whisper on (Arabic → text)",
     "whisperRecord": "Start recording",
     "whisperStop": "Stop & send",
-    "enableExperimental": "Khutba live experimentell aktivieren"
+    "enableExperimental": "Khutba live experimentell aktivieren",
+    "sendLocal": "مقامی محفوظ کریں",
+    "sendTvAndLocal": "ٹی وی کو بھیجیں اور محفوظ کریں"
   },
   "mosqueAdmin": {
     "addressPh": "Mosque address",
@@ -4498,13 +4504,29 @@
     "tickerEn": "Ticker English",
     "tickerLocales": "Ticker locales (CSV)",
     "tickerPh": "Ticker text",
-    "title": "Mosque admin"
+    "title": "Mosque admin",
+    "contactPh": "التواصل (هاتف، بريد)",
+    "logoPh": "ملف الشعار (file://…)",
+    "donation": "صدقہ",
+    "donationTextPh": "نص التبرع",
+    "donationIbanPh": "IBAN",
+    "donationQrPh": "حمولة QR (EPC/URL)",
+    "screenWakePh": "إيقاظ (HH:MM)",
+    "screenSleepPh": "استعداد (HH:MM)",
+    "tickerAr": "الشريط العربي",
+    "ramadanImsak": "إظهار الإمساك",
+    "ramadanSuhur": "إظهار السحور",
+    "ramadanTaraweeh": "إظهار التراويح",
+    "multiTvTitle": "کئی ٹی ویز (LAN)",
+    "multiTvEmpty": "ابھی کوئی ٹی وی نہیں — پہلے جوڑیں۔",
+    "multiTvPush": "تمام معلوم ٹی ویز کو ترتیب بھیجیں",
+    "multiTvResult": "{ok}/{total} ٹی ویز نے ترتیب لگائی۔"
   },
   "dailyIbadah": {
     "gated": "Daily extras are experimental (flag off).",
     "fajrWakeBody": "Fajr time — confirm when you are awake.",
     "fajrWakeConfirm": "I am awake",
-    "fajrWakeDone": "Alhamdulillah — saved locally.",
+    "fajrWakeDone": "الحمد للہ — الارم رک گیا (مقامی)۔",
     "fajrWakeTitle": "Fajr wake",
     "settingsTitle": "Daily ibadah (experimental)",
     "settingsIntro": "Separate from adhan service. All on-device, opt-in.",
@@ -4515,7 +4537,18 @@
     "verseWidget": "Widget: verse/hadith of the day",
     "shareVerseImage": "Share today’s verse as image",
     "enableExperimental": "Enable experimental",
-    "disableExperimental": "Disable experimental"
+    "disableExperimental": "Disable experimental",
+    "fajrWakeRinging": "الارم بج رہا ہے — بند کرنے کے لیے کام مکمل کریں۔",
+    "fajrWakeAlarmOn": "منبّه الفجر التالي مجدول (دقيق، قناة خاصة).",
+    "fajrWakeAlarmOff": "المنبّه متوقف — فعّله من الإعدادات.",
+    "fajrWakeEnable": "فجر الارم فعال کریں",
+    "fajrWakeDisable": "فجر الارم بند کریں",
+    "fajrWakeTaskMath": "مهمة: {q} = ؟",
+    "fajrWakeTaskDua": "أو اكتب: {dua}",
+    "fajrWakeAnswerPh": "الإجابة",
+    "fajrWakeDismiss": "الارم بند کریں",
+    "fajrWakeSnooze": "اسنوز ({n}/{max})",
+    "fajrWakeTest2m": "۲ منٹ میں ٹیسٹ الارم"
   },
   "expansion": {
     "title": "Expansion (beta)",

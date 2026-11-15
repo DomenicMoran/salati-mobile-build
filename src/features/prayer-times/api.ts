@@ -235,6 +235,30 @@ export async function fetchUpcomingTimings(
  * Homescreen-Widget) bekommen so auch offline gültige Zeiten. Die Korrektur-
  * Minuten sind in beiden Pfaden bereits angewandt — hier NICHT erneut anwenden.
  */
+/**
+ * Hartes Deckel auf ein Netz-Promise: React-Native-fetch respektiert AbortSignal
+ * nicht zuverlässig (halboffene TCP-Sessions, Emulator „not connected“). Ohne
+ * diese Race bleibt `await fetch()` hängen, obwohl fetchWithTimeout schon
+ * abgebrochen hat — dann kommt der adhan-js-Fallback nie an.
+ */
+async function awaitWithHardDeadline<T>(
+  promise: Promise<T>,
+  ms: number,
+): Promise<T | null> {
+  if (ms <= 0) return null;
+  let timer: ReturnType<typeof setTimeout> | undefined;
+  try {
+    return await Promise.race([
+      promise,
+      new Promise<null>((resolve) => {
+        timer = setTimeout(() => resolve(null), ms);
+      }),
+    ]);
+  } finally {
+    if (timer !== undefined) clearTimeout(timer);
+  }
+}
+
 export async function fetchTimingsWithRetry(lat: number, lon: number, date: Date, opts: PrayerCalcOptions) {
   const deadline = Date.now() + TIMINGS_BUDGET_MS;
   for (let attempt = 0; attempt < 3; attempt++) {
@@ -243,7 +267,10 @@ export async function fetchTimingsWithRetry(lat: number, lon: number, date: Date
     const remaining = deadline - Date.now();
     if (remaining <= 0) break;
     try {
-      const result = await fetchTimingsByCoords(lat, lon, date, opts, remaining);
+      const result = await awaitWithHardDeadline(
+        fetchTimingsByCoords(lat, lon, date, opts, remaining),
+        remaining,
+      );
       // Entarteter Polartag: die API hat geantwortet, aber ohne brauchbare
       // Zeiten. Kein Retry (die Antwort wäre dieselbe) — lokal rechnen und nur
       // das Hijri-Datum aus der Antwort übernehmen.

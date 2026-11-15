@@ -1282,7 +1282,11 @@
     },
     "ramadanCard": {
       "heading": "Ramazan"
-    }
+    },
+    "imsak": "İmsak",
+    "taraweeh": "Teravih (Yatsıdan sonra)",
+    "ramadanToday": "Bugün Ramazan",
+    "ramadanNextIn": "Sıradaki: {event}"
   },
   "khatmah": {
     "title": "Hatim planı",
@@ -4449,7 +4453,9 @@
     "whisperOn": "Whisper on (Arabic → text)",
     "whisperRecord": "Start recording",
     "whisperStop": "Stop & send",
-    "enableExperimental": "Khutba live experimentell aktivieren"
+    "enableExperimental": "Khutba live experimentell aktivieren",
+    "sendLocal": "Yerel kaydet",
+    "sendTvAndLocal": "TV’ye gönder ve yerel kaydet"
   },
   "mosqueAdmin": {
     "addressPh": "Mosque address",
@@ -4498,13 +4504,29 @@
     "tickerEn": "Ticker English",
     "tickerLocales": "Ticker locales (CSV)",
     "tickerPh": "Ticker text",
-    "title": "Mosque admin"
+    "title": "Mosque admin",
+    "contactPh": "İletişim (telefon, e-posta)",
+    "logoPh": "Logo dosyası (file://…)",
+    "donation": "Bağış",
+    "donationTextPh": "Bağış metni",
+    "donationIbanPh": "IBAN",
+    "donationQrPh": "QR içeriği (EPC/URL)",
+    "screenWakePh": "Uyanış (SS:DD)",
+    "screenSleepPh": "Bekleme (SS:DD)",
+    "tickerAr": "Arapça kayan yazı",
+    "ramadanImsak": "İmsak göster",
+    "ramadanSuhur": "Sahur göster",
+    "ramadanTaraweeh": "Teravih göster",
+    "multiTvTitle": "Birden fazla TV (LAN)",
+    "multiTvEmpty": "Henüz TV yok — önce bir TV bağlayın.",
+    "multiTvPush": "Yapılandırmayı bilinen tüm TV’lere gönder",
+    "multiTvResult": "{ok}/{total} TV yapılandırmayı aldı."
   },
   "dailyIbadah": {
     "gated": "Daily extras are experimental (flag off).",
     "fajrWakeBody": "Fajr time — confirm when you are awake.",
     "fajrWakeConfirm": "I am awake",
-    "fajrWakeDone": "Alhamdulillah — saved locally.",
+    "fajrWakeDone": "Elhamdülillah — alarm durdu (yerel).",
     "fajrWakeTitle": "Fajr wake",
     "settingsTitle": "Daily ibadah (experimental)",
     "settingsIntro": "Separate from adhan service. All on-device, opt-in.",
@@ -4515,7 +4537,18 @@
     "verseWidget": "Widget: verse/hadith of the day",
     "shareVerseImage": "Share today’s verse as image",
     "enableExperimental": "Enable experimental",
-    "disableExperimental": "Disable experimental"
+    "disableExperimental": "Disable experimental",
+    "fajrWakeRinging": "Alarm çalıyor — kapatmak için görevi bitirin.",
+    "fajrWakeAlarmOn": "Sonraki Sabah alarmı planlandı (kesin, ayrı kanal).",
+    "fajrWakeAlarmOff": "Alarm kapalı — ayarlardan açın.",
+    "fajrWakeEnable": "Sabah alarmını aç",
+    "fajrWakeDisable": "Sabah alarmını kapat",
+    "fajrWakeTaskMath": "Görev: {q} = ?",
+    "fajrWakeTaskDua": "Veya yazın: {dua}",
+    "fajrWakeAnswerPh": "Yanıt",
+    "fajrWakeDismiss": "Alarmı kapat",
+    "fajrWakeSnooze": "Ertele ({n}/{max})",
+    "fajrWakeTest2m": "2 dakika sonra test alarmı"
   },
   "expansion": {
     "title": "Expansion (beta)",

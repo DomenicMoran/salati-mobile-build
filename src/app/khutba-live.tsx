@@ -8,8 +8,21 @@ import * as FileSystem from 'expo-file-system/legacy';
 import { ScreenHeader } from '@/components/screen-header';
 import { ThemedText } from '@/components/themed-text';
 import { router } from 'expo-router';
-import { startWhisperRecording, whisperSupported } from '@/features/hifz/whisperCheck';
 import { istWhisperModellHeruntergeladen } from '@/features/hifz/whisperModel';
+import { whisperSupported } from '@/features/hifz/whisperCheck';
+import {
+  khutbaRecognizerSupported,
+  startKhutbaStreamingRecognizer,
+  type KhutbaSourceLang,
+  type KhutbaStreamHandle,
+} from '@/features/mosque-display/khutbaRecognizer';
+import {
+  ensureTranslateModels,
+  estimateModelBytes,
+  khutbaTranslateSupported,
+  translateKhutbaLine,
+  type KhutbaTranslateLang,
+} from '@/features/mosque-display/khutbaTranslate';
 import { mosqueFlagsFromSettings } from '@/features/mosque-display/flags';
 import {
   captionShareUrl,
@@ -19,6 +32,7 @@ import {
   startCaptionShareServer,
   stopCaptionShareServer,
 } from '@/features/mosque-display/captionShareServer';
+import { startKhutbaMicForeground, stopKhutbaMicForeground } from '@/features/mosque-display/khutbaForeground';
 import {
   appendKhutbaLine,
   endKhutbaSession,
@@ -31,32 +45,76 @@ import {
 import { useSettings } from '@/features/settings/store';
 import { useTvConnection } from '@/features/tv/pairing-client';
 import { useTranslation } from '@/lib/i18n';
+import { useTheme } from '@/hooks/use-theme';
+import { NEARBY_PEER_REASON_DE } from '@/features/mosque-display/nearbyPeerGrenze';
 
 export default function KhutbaLiveScreen() {
   const { t } = useTranslation();
   const { settings, update } = useSettings();
   const flags = mosqueFlagsFromSettings(settings);
-  const { status, sendKhutbaCaption } = useTvConnection();
+  const {
+    status,
+    sendKhutbaCaption,
+    sendKhutbaSchedule,
+    sendKhutbaPreload,
+    sendKhutbaSlide,
+    sendKhutbaControl,
+    sendKhutbaClear,
+    sendCaptionStyle,
+    sendCaptionLang,
+  } = useTvConnection();
   const [text, setText] = useState('');
   const [sessionId, setSessionId] = useState<string | null>(null);
   const [sessions, setSessions] = useState<KhutbaSession[]>([]);
   const [search, setSearch] = useState('');
   const [shareUrl, setShareUrl] = useState<string | null>(null);
   const [shareOn, setShareOn] = useState(false);
-  const [whisperOn, setWhisperOn] = useState(false);
-  const [recording, setRecording] = useState(false);
+  const [streamOn, setStreamOn] = useState(false);
+  const [streaming, setStreaming] = useState(false);
   const [whisperReady, setWhisperReady] = useState(false);
-  const recorderRef = useRef<Awaited<ReturnType<typeof startWhisperRecording>> | null>(null);
-  const styles = useMemo(() => makeStyles(), []);
+  const [sourceLang, setSourceLang] = useState<KhutbaSourceLang>('ar');
+  const [targetLang, setTargetLang] = useState<KhutbaTranslateLang>('de');
+  const [fontScale, setFontScale] = useState<0.75 | 1 | 1.25 | 1.5>(1);
+  const [modelsReady, setModelsReady] = useState(false);
+  const [preText, setPreText] = useState('');
+  const [slidesCsv, setSlidesCsv] = useState('');
+  const [scheduledAt, setScheduledAt] = useState('');
+  const streamRef = useRef<KhutbaStreamHandle | null>(null);
+  const theme = useTheme();
+  const styles = useMemo(() => makeStyles(theme), [theme]);
+  const canSend = text.trim().length > 0;
 
   const refreshSessions = useCallback(() => {
     void listKhutbaSessions().then(setSessions);
   }, []);
 
   useEffect(() => {
+    let cancelled = false;
     refreshSessions();
     void istWhisperModellHeruntergeladen().then(setWhisperReady);
-  }, [refreshSessions]);
+    if (khutbaTranslateSupported() && sourceLang !== targetLang) {
+      void ensureTranslateModels(sourceLang as KhutbaTranslateLang, targetLang)
+        .then(() => {
+          if (!cancelled) setModelsReady(true);
+        })
+        .catch(() => {
+          if (!cancelled) setModelsReady(false);
+        });
+    } else {
+      void Promise.resolve().then(() => {
+        if (!cancelled) setModelsReady(true);
+      });
+    }
+    return () => {
+      cancelled = true;
+    };
+  }, [refreshSessions, sourceLang, targetLang]);
+
+  useEffect(() => {
+    return () => {
+      void streamRef.current?.stop();
+    };
+  }, []);
 
   useEffect(() => {
     return () => {
@@ -65,25 +123,42 @@ export default function KhutbaLiveScreen() {
   }, []);
 
   useEffect(() => {
-    setCaptionShareState(text, t('khutbaLive.title'), t('khutbaLive.disclaimer'));
-  }, [text, t]);
+    setCaptionShareState(text, t('khutbaLive.title'), t('khutbaLive.disclaimer'), {
+      de: targetLang === 'de' ? text : undefined,
+      en: targetLang === 'en' ? text : undefined,
+      tr: targetLang === 'tr' ? text : undefined,
+      ar: targetLang === 'ar' ? text : undefined,
+    });
+  }, [text, t, targetLang]);
 
   const relayLine = useCallback(
     async (line: string) => {
       const trimmed = line.trim();
       if (!trimmed) return;
-      setText(trimmed);
-      if (status === 'connected') sendKhutbaCaption(trimmed);
+      const original = trimmed;
+      let translation = '';
+      const translateSource: KhutbaTranslateLang =
+        sourceLang === 'auto' ? 'ar' : (sourceLang as KhutbaTranslateLang);
+      if (khutbaTranslateSupported() && translateSource !== targetLang && modelsReady) {
+        try {
+          translation = await translateKhutbaLine(trimmed, translateSource, targetLang);
+        } catch {
+          translation = '';
+        }
+      }
+      const display = translation ? `${original}\n${translation}` : original;
+      setText(display);
+      if (status === 'connected') sendKhutbaCaption(display, original, translation);
       let sid = sessionId;
       if (!sid) {
         const s = await startKhutbaSession();
         sid = s.id;
         setSessionId(sid);
       }
-      await appendKhutbaLine(sid, trimmed);
+      await appendKhutbaLine(sid, display);
       refreshSessions();
     },
-    [sessionId, refreshSessions, sendKhutbaCaption, status],
+    [sessionId, refreshSessions, sendKhutbaCaption, status, sourceLang, targetLang, modelsReady],
   );
 
   const relay = () => {
@@ -110,27 +185,72 @@ export default function KhutbaLiveScreen() {
   };
 
   const startMic = async () => {
-    if (!whisperSupported() || !whisperReady) return;
-    setRecording(true);
+    if (!khutbaRecognizerSupported() || !whisperReady) return;
+    setStreaming(true);
+    startKhutbaMicForeground();
+    if (status === 'connected') sendKhutbaControl('start');
     try {
-      const rec = await startWhisperRecording();
-      recorderRef.current = rec;
+      const rec = await startKhutbaStreamingRecognizer({
+        language: sourceLang,
+        onLine: (line) => relayLine(line),
+      });
+      streamRef.current = rec;
+      setStreamOn(true);
     } catch {
-      setRecording(false);
+      setStreaming(false);
     }
   };
 
   const stopMic = async () => {
-    const rec = recorderRef.current;
-    recorderRef.current = null;
-    setRecording(false);
+    const rec = streamRef.current;
+    streamRef.current = null;
+    setStreamOn(false);
+    setStreaming(false);
+    if (status === 'connected') {
+      sendKhutbaControl('stop');
+      sendKhutbaClear();
+    }
+    stopKhutbaMicForeground();
     if (!rec) return;
-    const lines = await rec.stop().catch(() => [] as string[]);
-    const joined = lines.join(' ').trim();
-    if (joined) await relayLine(joined);
+    await rec.stop().catch(() => undefined);
+  };
+
+  const pauseMic = () => {
+    streamRef.current?.pause();
+    if (status === 'connected') sendKhutbaControl('pause');
+  };
+
+  const applyCaptionStyle = () => {
+    if (status !== 'connected') return;
+    sendCaptionStyle({ fontScale, lines: 2, showOriginal: true, position: 'bottom' });
+    sendCaptionLang([targetLang]);
+  };
+
+  const pushSchedule = () => {
+    if (status !== 'connected' || !scheduledAt.trim()) return;
+    const slides = slidesCsv
+      .split('\n')
+      .map((s) => s.trim())
+      .filter(Boolean);
+    sendKhutbaSchedule(new Date(scheduledAt).toISOString(), preText.trim(), slides);
+  };
+
+  const pushPreload = () => {
+    if (status !== 'connected') return;
+    const slides = slidesCsv
+      .split('\n')
+      .map((s) => s.trim())
+      .filter(Boolean);
+    sendKhutbaPreload(preText.trim(), slides);
   };
 
   const endSession = async () => {
+    if (status === 'connected') {
+      sendKhutbaClear();
+      sendKhutbaControl('stop');
+    }
+    await stopMic();
+    setText('');
     if (sessionId) await endKhutbaSession(sessionId);
     setSessionId(null);
     refreshSessions();
@@ -178,11 +298,16 @@ export default function KhutbaLiveScreen() {
           onChangeText={setText}
           placeholder={t('khutbaLive.placeholder')}
         />
-        <Pressable style={[styles.btn, status !== 'connected' && styles.btnDisabled]} onPress={relay}>
+        <Pressable style={[styles.btn, !canSend && styles.btnDisabled]} onPress={relay} disabled={!canSend}>
           <ThemedText type="smallBold">
-            {status === 'connected' ? t('khutbaLive.send') : t('khutbaLive.needTv')}
+            {status === 'connected' ? t('khutbaLive.sendTvAndLocal') : t('khutbaLive.sendLocal')}
           </ThemedText>
         </Pressable>
+        {status !== 'connected' ? (
+          <ThemedText type="small" themeColor="textSecondary">
+            {t('khutbaLive.needTv')}
+          </ThemedText>
+        ) : null}
 
         <Pressable style={[styles.btnSecondary, shareOn && styles.btnOn]} onPress={() => void toggleShare()}>
           <ThemedText type="smallBold">
@@ -196,33 +321,86 @@ export default function KhutbaLiveScreen() {
               {t('khutbaLive.shareUrl').replace('{url}', shareUrl)}
             </ThemedText>
             <ThemedText style={styles.shareSteps}>{t('khutbaLive.shareSteps')}</ThemedText>
+            <ThemedText style={styles.shareSteps}>{NEARBY_PEER_REASON_DE}</ThemedText>
           </View>
         ) : null}
         {shareOn && !shareUrl ? <ThemedText>{t('khutbaLive.shareNoLan')}</ThemedText> : null}
 
+        <View style={styles.whisperRow}>
+          {(['ar', 'de', 'tr', 'en', 'auto'] as KhutbaSourceLang[]).map((code) => (
+            <Pressable
+              key={code}
+              style={[styles.chip, sourceLang === code && styles.btnOn]}
+              onPress={() => setSourceLang(code)}>
+              <ThemedText type="smallBold">{code}</ThemedText>
+            </Pressable>
+          ))}
+        </View>
+        <View style={styles.whisperRow}>
+          {(['de', 'en', 'tr', 'ar'] as KhutbaTranslateLang[]).map((code) => (
+            <Pressable
+              key={code}
+              style={[styles.chip, targetLang === code && styles.btnOn]}
+              onPress={() => setTargetLang(code)}>
+              <ThemedText type="smallBold">{code}</ThemedText>
+            </Pressable>
+          ))}
+          {khutbaTranslateSupported() ? (
+            <ThemedText style={styles.whisperHook}>
+              ~{Math.round(estimateModelBytes(sourceLang as KhutbaTranslateLang, targetLang) / (1024 * 1024))} MB
+            </ThemedText>
+          ) : null}
+        </View>
+        <View style={styles.whisperRow}>
+          {([0.75, 1, 1.25, 1.5] as const).map((scale) => (
+            <Pressable key={scale} style={[styles.chip, fontScale === scale && styles.btnOn]} onPress={() => setFontScale(scale)}>
+              <ThemedText type="smallBold">{scale}x</ThemedText>
+            </Pressable>
+          ))}
+          <Pressable style={styles.chip} onPress={applyCaptionStyle}>
+            <ThemedText type="smallBold">TV style</ThemedText>
+          </Pressable>
+        </View>
         {whisperSupported() && whisperReady ? (
           <View style={styles.whisperRow}>
-            <Pressable style={styles.chip} onPress={() => setWhisperOn((v) => !v)}>
-              <ThemedText type="smallBold">
-                {whisperOn ? t('khutbaLive.whisperOn') : t('khutbaLive.whisperOff')}
-              </ThemedText>
-            </Pressable>
-            {whisperOn ? (
-              recording ? (
+            {streamOn ? (
+              <>
                 <Pressable style={styles.btnDanger} onPress={() => void stopMic()}>
                   <ThemedText type="smallBold">{t('khutbaLive.whisperStop')}</ThemedText>
                 </Pressable>
-              ) : (
-                <Pressable style={styles.btnSecondary} onPress={() => void startMic()}>
-                  <ThemedText type="smallBold">{t('khutbaLive.whisperRecord')}</ThemedText>
+                <Pressable style={styles.btnSecondary} onPress={pauseMic}>
+                  <ThemedText type="smallBold">Pause</ThemedText>
                 </Pressable>
-              )
-            ) : null}
-            {recording ? <ActivityIndicator style={{ marginLeft: 8 }} /> : null}
+              </>
+            ) : (
+              <Pressable style={styles.btnSecondary} onPress={() => void startMic()}>
+                <ThemedText type="smallBold">{t('khutbaLive.whisperRecord')}</ThemedText>
+              </Pressable>
+            )}
+            {streaming ? <ActivityIndicator style={{ marginLeft: 8 }} /> : null}
           </View>
         ) : (
           <ThemedText style={styles.whisperHook}>{t('khutbaLive.whisperNeedModel')}</ThemedText>
         )}
+        <TextInput
+          style={styles.search}
+          value={scheduledAt}
+          onChangeText={setScheduledAt}
+          placeholder="Schedule ISO / 2026-11-14T13:00:00"
+        />
+        <TextInput style={styles.input} multiline value={preText} onChangeText={setPreText} placeholder="Khutba pre-text" />
+        <TextInput style={styles.input} multiline value={slidesCsv} onChangeText={setSlidesCsv} placeholder="Slides (one per line)" />
+        <View style={styles.whisperRow}>
+          <Pressable style={styles.btnSecondary} onPress={pushPreload}>
+            <ThemedText type="smallBold">Preload TV</ThemedText>
+          </Pressable>
+          <Pressable style={styles.btnSecondary} onPress={pushSchedule}>
+            <ThemedText type="smallBold">Schedule</ThemedText>
+          </Pressable>
+          <Pressable style={styles.btnSecondary} onPress={() => status === 'connected' && sendKhutbaSlide(1)}>
+            <ThemedText type="smallBold">Slide +</ThemedText>
+          </Pressable>
+        </View>
 
         <Pressable style={styles.linkBtn} onPress={() => void endSession()} disabled={!sessionId}>
           <ThemedText type="link">{t('khutbaLive.endSession')}</ThemedText>
@@ -254,7 +432,7 @@ export default function KhutbaLiveScreen() {
   );
 }
 
-function makeStyles() {
+function makeStyles(theme: ReturnType<typeof useTheme>) {
   return StyleSheet.create({
     safe: { flex: 1 },
     box: { flex: 1, padding: 16, gap: 10 },
@@ -262,32 +440,34 @@ function makeStyles() {
     input: {
       minHeight: 100,
       borderWidth: 1,
-      borderColor: '#555',
+      borderColor: theme.separator,
       borderRadius: 12,
       padding: 12,
-      color: '#fff',
+      color: theme.text,
+      backgroundColor: theme.groupedCard,
       textAlignVertical: 'top',
     },
     search: {
       borderWidth: 1,
-      borderColor: '#444',
+      borderColor: theme.separator,
       borderRadius: 10,
       padding: 10,
-      color: '#fff',
+      color: theme.text,
+      backgroundColor: theme.groupedCard,
     },
-    btn: { padding: 14, borderRadius: 12, backgroundColor: '#c9a227', alignItems: 'center' },
-    btnSecondary: { padding: 12, borderRadius: 12, backgroundColor: '#333', alignItems: 'center' },
+    btn: { padding: 14, borderRadius: 12, backgroundColor: theme.accent, alignItems: 'center' },
+    btnSecondary: { padding: 12, borderRadius: 12, backgroundColor: theme.backgroundElement, alignItems: 'center' },
     btnDanger: { padding: 12, borderRadius: 12, backgroundColor: '#8b2e2e', alignItems: 'center' },
-    btnOn: { borderWidth: 1, borderColor: '#c9a227' },
-    btnDisabled: { opacity: 0.5 },
+    btnOn: { borderWidth: 1, borderColor: theme.accent },
+    btnDisabled: { opacity: 0.45 },
     whisperRow: { flexDirection: 'row', alignItems: 'center', gap: 8, flexWrap: 'wrap' },
-    chip: { padding: 10, borderRadius: 10, backgroundColor: '#2a2a2a' },
+    chip: { padding: 10, borderRadius: 10, backgroundColor: theme.backgroundElement },
     whisperHook: { fontSize: 12, opacity: 0.7 },
     qrBlock: { alignItems: 'center', gap: 8, marginVertical: 8 },
     shareUrl: { fontSize: 12, fontFamily: 'monospace' },
     shareSteps: { fontSize: 12, opacity: 0.8, textAlign: 'center' },
     linkBtn: { alignItems: 'center' },
     list: { maxHeight: 220 },
-    sessionRow: { gap: 4, paddingVertical: 8, borderBottomWidth: 1, borderBottomColor: '#333' },
+    sessionRow: { gap: 4, paddingVertical: 8, borderBottomWidth: 1, borderBottomColor: theme.separator },
   });
 }

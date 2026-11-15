@@ -1282,7 +1282,11 @@
     },
     "ramadanCard": {
       "heading": "Ramadan"
-    }
+    },
+    "imsak": "Imsak",
+    "taraweeh": "Tarawih (selepas Isyak)",
+    "ramadanToday": "Ramadan hari ini",
+    "ramadanNextIn": "Seterusnya: {event}"
   },
   "khatmah": {
     "title": "Rancangan Khatam",
@@ -4449,7 +4453,9 @@
     "whisperOn": "Whisper on (Arabic → text)",
     "whisperRecord": "Start recording",
     "whisperStop": "Stop & send",
-    "enableExperimental": "Khutba live experimentell aktivieren"
+    "enableExperimental": "Khutba live experimentell aktivieren",
+    "sendLocal": "Simpan tempatan",
+    "sendTvAndLocal": "Hantar ke TV & simpan tempatan"
   },
   "mosqueAdmin": {
     "addressPh": "Mosque address",
@@ -4498,13 +4504,29 @@
     "tickerEn": "Ticker English",
     "tickerLocales": "Ticker locales (CSV)",
     "tickerPh": "Ticker text",
-    "title": "Mosque admin"
+    "title": "Mosque admin",
+    "contactPh": "Hubungi (telefon, e-mel)",
+    "logoPh": "Fail logo (file://…)",
+    "donation": "Derma",
+    "donationTextPh": "Teks derma",
+    "donationIbanPh": "IBAN",
+    "donationQrPh": "Muatan QR (EPC/URL)",
+    "screenWakePh": "Bangun (JJ:MM)",
+    "screenSleepPh": "Sedia (JJ:MM)",
+    "tickerAr": "Ticker Arab",
+    "ramadanImsak": "Tunjuk Imsak",
+    "ramadanSuhur": "Tunjuk Sahur",
+    "ramadanTaraweeh": "Tunjuk Tarawih",
+    "multiTvTitle": "Beberapa TV (LAN)",
+    "multiTvEmpty": "Belum ada TV — sambungkan TV dahulu.",
+    "multiTvPush": "Hantar konfigurasi ke semua TV diketahui",
+    "multiTvResult": "{ok}/{total} TV menerima konfigurasi."
   },
   "dailyIbadah": {
     "gated": "Daily extras are experimental (flag off).",
     "fajrWakeBody": "Fajr time — confirm when you are awake.",
     "fajrWakeConfirm": "I am awake",
-    "fajrWakeDone": "Alhamdulillah — saved locally.",
+    "fajrWakeDone": "Alhamdulillah — penggera berhenti (tempatan).",
     "fajrWakeTitle": "Fajr wake",
     "settingsTitle": "Daily ibadah (experimental)",
     "settingsIntro": "Separate from adhan service. All on-device, opt-in.",
@@ -4515,7 +4537,18 @@
     "verseWidget": "Widget: verse/hadith of the day",
     "shareVerseImage": "Share today’s verse as image",
     "enableExperimental": "Enable experimental",
-    "disableExperimental": "Disable experimental"
+    "disableExperimental": "Disable experimental",
+    "fajrWakeRinging": "Penggera berbunyi — selesaikan tugas untuk henti.",
+    "fajrWakeAlarmOn": "Penggera Subuh seterusnya dijadualkan (tepat, saluran sendiri).",
+    "fajrWakeAlarmOff": "Penggera mati — aktifkan dalam tetapan.",
+    "fajrWakeEnable": "Aktifkan penggera Subuh",
+    "fajrWakeDisable": "Nyahaktifkan penggera Subuh",
+    "fajrWakeTaskMath": "Tugas: {q} = ?",
+    "fajrWakeTaskDua": "Atau taip: {dua}",
+    "fajrWakeAnswerPh": "Jawapan",
+    "fajrWakeDismiss": "Hentikan penggera",
+    "fajrWakeSnooze": "Tunda ({n}/{max})",
+    "fajrWakeTest2m": "Penggera ujian dalam 2 minit"
   },
   "expansion": {
     "title": "Expansion (beta)",

@@ -1282,7 +1282,11 @@
     },
     "ramadanCard": {
       "heading": "رمضان"
-    }
+    },
+    "imsak": "الإمساك",
+    "taraweeh": "التراويح (بعد العشاء)",
+    "ramadanToday": "رمضان امروز",
+    "ramadanNextIn": "بعدی: {event}"
   },
   "khatmah": {
     "title": "برنامه ختم قرآن",
@@ -4449,7 +4453,9 @@
     "whisperOn": "Whisper on (Arabic → text)",
     "whisperRecord": "Start recording",
     "whisperStop": "Stop & send",
-    "enableExperimental": "Khutba live experimentell aktivieren"
+    "enableExperimental": "Khutba live experimentell aktivieren",
+    "sendLocal": "ذخیره محلی",
+    "sendTvAndLocal": "ارسال به تلویزیون و ذخیره محلی"
   },
   "mosqueAdmin": {
     "addressPh": "Mosque address",
@@ -4498,13 +4504,29 @@
     "tickerEn": "Ticker English",
     "tickerLocales": "Ticker locales (CSV)",
     "tickerPh": "Ticker text",
-    "title": "Mosque admin"
+    "title": "Mosque admin",
+    "contactPh": "التواصل (هاتف، بريد)",
+    "logoPh": "ملف الشعار (file://…)",
+    "donation": "کمک مالی",
+    "donationTextPh": "نص التبرع",
+    "donationIbanPh": "IBAN",
+    "donationQrPh": "حمولة QR (EPC/URL)",
+    "screenWakePh": "إيقاظ (HH:MM)",
+    "screenSleepPh": "استعداد (HH:MM)",
+    "tickerAr": "الشريط العربي",
+    "ramadanImsak": "إظهار الإمساك",
+    "ramadanSuhur": "إظهار السحور",
+    "ramadanTaraweeh": "إظهار التراويح",
+    "multiTvTitle": "چند تلویزیون (LAN)",
+    "multiTvEmpty": "هنوز تلویزیونی نیست — ابتدا وصل کنید.",
+    "multiTvPush": "ارسال پیکربندی به همه تلویزیون‌های شناخته‌شده",
+    "multiTvResult": "{ok}/{total} تلویزیون پیکربندی را اعمال کردند."
   },
   "dailyIbadah": {
     "gated": "Daily extras are experimental (flag off).",
     "fajrWakeBody": "Fajr time — confirm when you are awake.",
     "fajrWakeConfirm": "I am awake",
-    "fajrWakeDone": "Alhamdulillah — saved locally.",
+    "fajrWakeDone": "الحمدلله — زنگ متوقف شد (محلی).",
     "fajrWakeTitle": "Fajr wake",
     "settingsTitle": "Daily ibadah (experimental)",
     "settingsIntro": "Separate from adhan service. All on-device, opt-in.",
@@ -4515,7 +4537,18 @@
     "verseWidget": "Widget: verse/hadith of the day",
     "shareVerseImage": "Share today’s verse as image",
     "enableExperimental": "Enable experimental",
-    "disableExperimental": "Disable experimental"
+    "disableExperimental": "Disable experimental",
+    "fajrWakeRinging": "زنگ می‌زند — برای توقف کار را تمام کنید.",
+    "fajrWakeAlarmOn": "منبّه الفجر التالي مجدول (دقيق، قناة خاصة).",
+    "fajrWakeAlarmOff": "المنبّه متوقف — فعّله من الإعدادات.",
+    "fajrWakeEnable": "فعال‌سازی زنگ فجر",
+    "fajrWakeDisable": "غیرفعال‌سازی زنگ فجر",
+    "fajrWakeTaskMath": "مهمة: {q} = ؟",
+    "fajrWakeTaskDua": "أو اكتب: {dua}",
+    "fajrWakeAnswerPh": "الإجابة",
+    "fajrWakeDismiss": "توقف زنگ",
+    "fajrWakeSnooze": "چرت ({n}/{max})",
+    "fajrWakeTest2m": "زنگ آزمایشی در ۲ دقیقه"
   },
   "expansion": {
     "title": "Expansion (beta)",

@@ -100,6 +100,7 @@ export const BACKUP_KEYS: readonly string[] = [
   'salatibox:progress:v1:audio', // Hörpositionen (Koran, Podcast, Hörbuch)
   'salatibox:progress:v1:player-prefs', // persistente Player-Einstellungen (Speed, Sleep)
   'salatibox:khutba-sessions-v1', // Khutba-Untertitel-Verlauf (lokal, optional exportieren)
+  'salatibox:tv-registry', // bekannte Salati-TV-Geräte (LAN-Pairing / Multi-TV)
   'salatibox:expansion-habits', // Phase-3 Habit-Tracker (lokal)
   'salatibox:expansion-sunnah-fasting', // Sunnah-Fasten-Reminder-Präferenzen
 ];

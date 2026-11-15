@@ -6,7 +6,10 @@ import { fileURLToPath } from 'url';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(__dirname, '../../..');
-const OUT = path.join(ROOT, 'output/audit-20261113-khutba-live/screenshots/after');
+const OUT =
+  process.env.AUDIT_OUT != null
+    ? path.join(path.resolve(process.env.AUDIT_OUT), 'screenshots')
+    : path.join(ROOT, 'output/audit-20261113-khutba-live/screenshots/after');
 const ADB = process.env.ADB ?? 'adb';
 const DEVICE = process.env.ADB_DEVICE ?? 'emulator-5554';
 const PKG = 'de.salatibox.de';
@@ -14,8 +17,8 @@ const MODE = process.env.KHUTBA_AUDIT_FLAGS ?? 'off';
 
 const SHOTS_OFF = [
   { name: 'mobile-prayer-flags-off.png', link: 'salatibox://prayer', wait: 4000 },
-  { name: 'mobile-mosque-admin-gated.png', link: 'salatibox://mosque-admin', wait: 3000 },
-  { name: 'mobile-khutba-live-gated.png', link: 'salatibox://khutba-live', wait: 3000 },
+  { name: 'mobile-mosque-admin-gated.png', link: 'salatibox://mosque-admin', wait: 5000 },
+  { name: 'mobile-khutba-live-gated.png', link: 'salatibox://khutba-live', wait: 5000 },
   { name: 'mobile-daily-ibadah-settings.png', link: 'salatibox://daily-ibadah-settings', wait: 2500 },
 ];
 
@@ -185,6 +188,8 @@ function enableFlagsViaUi() {
 
 function captureShots(shots) {
   for (const s of shots) {
+    adb('shell', 'am', 'force-stop', PKG);
+    sleep(800);
     adb('shell', 'am', 'start', '-W', '-a', 'android.intent.action.VIEW', '-d', s.link, PKG);
     sleep(s.wait);
     const png = adb('exec-out', 'screencap', '-p');
