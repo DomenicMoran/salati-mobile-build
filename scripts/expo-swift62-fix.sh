@@ -45,3 +45,18 @@ while IFS= read -r datei; do
   anzahl=$((anzahl + 1))
 done < <(grep -rl "abs(milliseconds)" node_modules --include="*.swift" 2>/dev/null || true)
 echo "abs() eindeutig gemacht in $anzahl Swift-Dateien"
+
+# ── 3. SWIFT_RETURNS_RETAINED an RuntimeScheduler ──────────────────────────
+# expo-modules-jsi ≥57.0.5 annotiert RuntimeScheduler-Konstruktoren mit
+# SWIFT_RETURNS_RETAINED. Xcode 26.x (alle 26.1–26.3 getestet) lehnt das ab:
+#   'RuntimeScheduler' cannot be annotated with either SWIFT_RETURNS_RETAINED
+#   or SWIFT_RETURNS_UNRETAINED because it is not returning a SWIFT_SHARED_REFERENCE type
+# Pin 57.0.3 umging den Compilefehler, fehlt aber JavaScriptActor.runIsolated →
+# DYLD SIGABRT vor JS auf iPad (ASC 2.1a, Build 108). Deshalb 57.0.8 + diese
+# Annotation entfernen (nur Attribut, keine Semantik-Aenderung am C++-Typ).
+anzahl=0
+while IFS= read -r datei; do
+  perl -i -pe 's/\bSWIFT_RETURNS_RETAINED\s+//g; s/\bSWIFT_RETURNS_UNRETAINED\s+//g' "$datei"
+  anzahl=$((anzahl + 1))
+done < <(grep -rl "SWIFT_RETURNS_RETAINED\|SWIFT_RETURNS_UNRETAINED" node_modules/expo-modules-jsi --include="*.h" --include="*.hpp" 2>/dev/null || true)
+echo "SWIFT_RETURNS_* entfernt in $anzahl Header-Dateien (expo-modules-jsi)"
