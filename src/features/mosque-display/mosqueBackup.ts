@@ -14,10 +14,11 @@ export type MosqueBackupFile = {
 };
 
 export function buildMosqueBackup(draft: MosqueAdminDraft, settings: AppSettings): MosqueBackupFile {
+  const { pinHash: _omit, ...draftSansPin } = draft;
   return {
     v: 1,
     savedAt: new Date().toISOString(),
-    draft,
+    draft: { ...draftSansPin, pinHash: null },
     flags: {
       mosqueDisplayEnabled: settings.mosqueDisplayEnabled === true,
       khutbaLiveEnabled: settings.khutbaLiveEnabled === true,

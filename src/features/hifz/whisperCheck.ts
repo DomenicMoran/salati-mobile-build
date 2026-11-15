@@ -582,7 +582,7 @@ export async function transcribePcm(
   // '') statt parallel gestartet — sonst „Context is already transcribing". Die
   // FINALEN Durchläufe lassen skipIfBusy weg und reihen sich stattdessen ein
   // (warten auf den letzten Live-Tick), damit ihr Ergebnis nie verloren geht.
-  opts?: { fast?: boolean; skipIfBusy?: boolean },
+  opts?: { fast?: boolean; skipIfBusy?: boolean; language?: string },
 ): Promise<string> {
   const path = `${FileSystem.cacheDirectory}${tempFileName}`;
   let dateiGeschrieben = false;
@@ -599,7 +599,7 @@ export async function transcribePcm(
         // rezitiert immer Koran-Arabisch, Sprach-Autodetektion bei kurzen/leisen
         // Aufnahmen ist unnötig fehleranfällig. temperature 0 = deterministisch.
         const handle = whisperContext.transcribe(path, {
-          language: 'ar',
+          language: opts?.language ?? 'ar',
           // Live-Tick: greedy (beamSize 1) für Tempo. Finale Bewertung: Beam-5
           // + bestOf 5 (mehr Kandidaten, Latenz dort unkritisch) = genaueste
           // Dekodierung der ganzen Aufnahme.

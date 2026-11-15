@@ -196,10 +196,12 @@ describe('parseManualPair', () => {
 
 describe('mosque pairing payloads', () => {
   it('baut mosqueConfig und khutba-Nachrichten', () => {
-    const draft = { ...defaultMosqueAdminDraft(), profile: { name: 'X', address: '', contact: '' } };
+    const draft = { ...defaultMosqueAdminDraft(), profile: { ...defaultMosqueAdminDraft().profile, name: 'X' } };
     expect(mosqueConfigMessage(draft)).toEqual({
       t: 'mosqueConfig',
-      patch: expect.objectContaining({ profile: { name: 'X', address: '', contact: '' } }),
+      patch: expect.objectContaining({
+        profile: expect.objectContaining({ name: 'X' }),
+      }),
     });
     expect(khutbaCaptionMessage('Test')).toEqual({ t: 'khutba', action: 'caption', text: 'Test' });
   });

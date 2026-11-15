@@ -267,6 +267,8 @@ export interface AppSettings {
   dailyIbadahTahajjudReminder: boolean;
   /** Wisdom-Widget zeigt Vers/Hadith des Tages statt Dua-Rotation. */
   dailyIbadahVerseWidget: boolean;
+  /** Fajr-Wecker mit Aufgabe (getrennt vom Adhan). */
+  dailyIbadahFajrWakeAlarm: boolean;
   /** Phase 3+4 experimentelle Erweiterungen (Master-Flag, Standard aus). */
   expansionExtrasEnabled: boolean;
   expansionMultiLocations: boolean;
@@ -557,6 +559,7 @@ export const DEFAULT_SETTINGS: AppSettings = {
   dailyIbadahFridayKahf: false,
   dailyIbadahTahajjudReminder: false,
   dailyIbadahVerseWidget: false,
+  dailyIbadahFajrWakeAlarm: false,
   expansionExtrasEnabled: false,
   expansionMultiLocations: false,
   expansionQasrJam: false,

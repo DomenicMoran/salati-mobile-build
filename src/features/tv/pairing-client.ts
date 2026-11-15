@@ -21,6 +21,7 @@ import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import TcpSocket from 'react-native-tcp-socket';
 
 import type { PrayerTimeOffsets } from '@/features/settings/types';
+import { markTvStatus, upsertTvRegistry } from '@/features/tv/tvPairingRegistry';
 
 export interface PairTarget {
   host: string;
@@ -168,6 +169,7 @@ export function useTvConnection() {
   const [tvScreens, setTvScreens] = useState<string[] | null>(null);
   const [quiz, setQuiz] = useState<TvQuizState | null>(null);
   const sockRef = useRef<Sock | null>(null);
+  const targetRef = useRef<PairTarget | null>(null);
   const bufRef = useRef('');
 
   const cleanup = useCallback(() => {
@@ -200,7 +202,19 @@ export function useTvConnection() {
     }
     if (msg.t === 'welcome') {
       setStatus('connected');
-      setTvName(typeof msg.name === 'string' ? msg.name : 'Salati TV');
+      const name = typeof msg.name === 'string' ? msg.name : 'Salati TV';
+      setTvName(name);
+      const t = targetRef.current;
+      if (t) {
+        void upsertTvRegistry({
+          host: t.host,
+          port: t.port,
+          token: t.token,
+          name,
+          lastSeenAt: Date.now(),
+          status: 'connected',
+        });
+      }
       // Die Liste kommt ueber ein LAN-Socket, ist also beliebig — nur
       // nicht-leere Strings uebernehmen, sonst nichts (dann greift der
       // eigene Katalog).
@@ -212,6 +226,8 @@ export function useTvConnection() {
     }
     if (msg.t === 'denied') {
       setStatus('denied');
+      const t = targetRef.current;
+      if (t) void markTvStatus(t.host, t.port, 'error');
       cleanup();
       return;
     }
@@ -261,6 +277,7 @@ export function useTvConnection() {
           /* ignore */
         }
       });
+      targetRef.current = target;
       sockRef.current = socket;
       socket.on('data', (data) => {
         bufRef.current += typeof data === 'string' ? data : data.toString();
@@ -273,9 +290,13 @@ export function useTvConnection() {
       });
       socket.on('error', () => {
         setStatus((s) => (s === 'denied' ? s : 'error'));
+        const t = targetRef.current;
+        if (t) void markTvStatus(t.host, t.port, 'error');
         cleanup();
       });
       socket.on('close', () => {
+        const t = targetRef.current;
+        if (t) void markTvStatus(t.host, t.port, 'idle');
         setStatus((s) => (s === 'connected' ? 'idle' : s));
         sockRef.current = null;
       });
@@ -295,7 +316,17 @@ export function useTvConnection() {
       sendeEinstellungen: (settings: Parameters<typeof tvSyncNutzlast>[0]) =>
         send(tvSyncNutzlast(settings)),
       sendMosqueConfig: (patch: unknown) => send({ t: 'mosqueConfig', patch }),
-      sendKhutbaCaption: (text: string) => send({ t: 'khutba', action: 'caption', text }),
+      sendKhutbaCaption: (text: string, original?: string, translation?: string) =>
+        send({ t: 'khutba', action: 'caption', text, original, translation }),
+      sendKhutbaSchedule: (at: string, text: string, slides?: string[]) =>
+        send({ t: 'khutba', action: 'schedule', at, text, slides }),
+      sendKhutbaPreload: (text: string, slides: string[]) => send({ t: 'khutba', action: 'preload', text, slides }),
+      sendKhutbaSlide: (delta: number) => send({ t: 'khutba', action: 'slide', delta }),
+      sendKhutbaControl: (action: 'start' | 'stop' | 'pause') => send({ t: 'khutbaControl', action }),
+      sendKhutbaClear: () => send({ t: 'khutba', action: 'clear' }),
+      sendCaptionStyle: (style: Record<string, unknown>) => send({ t: 'captionStyle', style }),
+      sendCaptionLang: (target: string[]) => send({ t: 'captionLang', target }),
+      sendPinChange: (oldPin: string, newPin: string | null) => send({ t: 'pinChange', oldPin, newPin }),
       sendDisplayRole: (role: string, label?: string) => send({ t: 'displayRole', role, label }),
       sendAdminUnlock: (pin: string) => send({ t: 'adminUnlock', pin }),
     }),

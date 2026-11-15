@@ -1,4 +1,4 @@
-import { useMemo, useState } from 'react';
+import { useEffect, useMemo, useRef, useState } from 'react';
 import { Pressable, ScrollView, StyleSheet, Switch, TextInput, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { router } from 'expo-router';
@@ -17,7 +17,10 @@ import { mosqueFlagsFromSettings } from '@/features/mosque-display/flags';
 import { pickMosqueBackup, shareMosqueBackup } from '@/features/mosque-display/mosqueBackup';
 import { hashAdminPin } from '@/features/mosque-display/pin';
 import { useSettings } from '@/features/settings/store';
+import { loadMosqueAdminDraft, saveMosqueAdminDraft } from '@/features/mosque-display/mosqueAdminDraftStore';
 import { useTvConnection } from '@/features/tv/pairing-client';
+import { broadcastToTvs } from '@/features/tv/multiTvBroadcast';
+import { loadTvRegistry, type RegisteredTv } from '@/features/tv/tvPairingRegistry';
 
 const LAYOUTS: LayoutTemplate[] = ['classic', 'compact', 'tickerFocus'];
 const ROLES: DisplayRole[] = ['main', 'women', 'entrance', 'custom'];
@@ -26,17 +29,41 @@ export default function MosqueAdminScreen() {
   const { t } = useTranslation();
   const { settings, update } = useSettings();
   const flags = mosqueFlagsFromSettings(settings);
-  const { status, sendMosqueConfig, sendDisplayRole, sendAdminUnlock } = useTvConnection();
+  const { status, tvName, sendMosqueConfig, sendDisplayRole, sendAdminUnlock, sendPinChange } = useTvConnection();
+  const tvKey = tvName ?? 'local';
+  const hydrated = useRef(false);
   const [draft, setDraft] = useState(() => ({
     ...defaultMosqueAdminDraft(),
     profile: { ...defaultMosqueAdminDraft().profile, name: settings.location.label },
     iqamaOffsets: { ...settings.iqamaOffsets },
   }));
   const [pinInput, setPinInput] = useState('');
+  const [oldPinInput, setOldPinInput] = useState('');
   const [pinUnlock, setPinUnlock] = useState('');
   const [backupMsg, setBackupMsg] = useState<string | null>(null);
+  const [knownTvs, setKnownTvs] = useState<RegisteredTv[]>([]);
+  const [multiPushMsg, setMultiPushMsg] = useState<string | null>(null);
 
   const styles = useMemo(() => makeStyles(), []);
+
+  useEffect(() => {
+    void loadTvRegistry().then(setKnownTvs);
+  }, [status, tvName]);
+
+  useEffect(() => {
+    void loadMosqueAdminDraft(tvKey).then((saved) => {
+      if (saved) setDraft((d) => ({ ...d, ...saved, iqamaOffsets: { ...d.iqamaOffsets, ...saved.iqamaOffsets } }));
+      hydrated.current = true;
+    });
+  }, [tvKey]);
+
+  useEffect(() => {
+    if (!hydrated.current) return;
+    const id = setTimeout(() => {
+      void saveMosqueAdminDraft(tvKey, draft);
+    }, 400);
+    return () => clearTimeout(id);
+  }, [draft, tvKey]);
 
   if (!flags.mosqueDisplayEnabled) {
     return (
@@ -61,15 +88,36 @@ export default function MosqueAdminScreen() {
     sendDisplayRole(draft.role, draft.customRoleLabel);
   };
 
-  const savePin = async () => {
-    if (!pinInput.trim()) {
-      setDraft((d) => ({ ...d, pinHash: null }));
+  const pushAllTvs = async () => {
+    const tvs = await loadTvRegistry();
+    setKnownTvs(tvs);
+    if (!tvs.length) {
+      setMultiPushMsg(t('mosqueAdmin.multiTvEmpty'));
       return;
     }
+    const results = await broadcastToTvs(tvs, mosqueConfigMessage(draft));
+    await broadcastToTvs(tvs, { t: 'displayRole', role: draft.role, label: draft.customRoleLabel });
+    const ok = Object.values(results).filter((r) => r === 'ok').length;
+    setMultiPushMsg(
+      t('mosqueAdmin.multiTvResult').replace('{ok}', String(ok)).replace('{total}', String(tvs.length)),
+    );
+  };
+
+  const savePin = async () => {
+    if (status !== 'connected') return;
     try {
+      if (!pinInput.trim()) {
+        sendPinChange(oldPinInput.trim(), null);
+        setDraft((d) => ({ ...d, pinHash: null }));
+        setPinInput('');
+        setOldPinInput('');
+        return;
+      }
       const pinHash = await hashAdminPin(pinInput);
+      sendPinChange(oldPinInput.trim(), pinInput.trim());
       setDraft((d) => ({ ...d, pinHash }));
       setPinInput('');
+      setOldPinInput('');
     } catch {
       setBackupMsg(t('mosqueAdmin.pinInvalid'));
     }
@@ -127,9 +175,69 @@ export default function MosqueAdminScreen() {
         />
         <TextInput
           style={styles.input}
+          value={draft.profile.contact}
+          onChangeText={(contact) => setDraft((d) => ({ ...d, profile: { ...d.profile, contact } }))}
+          placeholder={t('mosqueAdmin.contactPh')}
+        />
+        <TextInput
+          style={styles.input}
+          value={draft.profile.logoUri}
+          onChangeText={(logoUri) => setDraft((d) => ({ ...d, profile: { ...d.profile, logoUri } }))}
+          placeholder={t('mosqueAdmin.logoPh')}
+        />
+        <TextInput
+          style={styles.input}
           value={draft.tickerText}
           onChangeText={(tickerText) => setDraft((d) => ({ ...d, tickerText }))}
           placeholder={t('mosqueAdmin.tickerPh')}
+        />
+        <TextInput
+          style={styles.input}
+          value={draft.tickerAr}
+          onChangeText={(tickerAr) => setDraft((d) => ({ ...d, tickerAr }))}
+          placeholder={t('mosqueAdmin.tickerAr')}
+        />
+
+        <ThemedText type="subtitle">{t('mosqueAdmin.donation')}</ThemedText>
+        <TextInput
+          style={styles.input}
+          value={draft.donation.text}
+          onChangeText={(text) => setDraft((d) => ({ ...d, donation: { ...d.donation, text } }))}
+          placeholder={t('mosqueAdmin.donationTextPh')}
+        />
+        <TextInput
+          style={styles.input}
+          value={draft.donation.iban}
+          onChangeText={(iban) => setDraft((d) => ({ ...d, donation: { ...d.donation, iban } }))}
+          placeholder={t('mosqueAdmin.donationIbanPh')}
+        />
+        <TextInput
+          style={styles.input}
+          value={draft.donation.qrPayload}
+          onChangeText={(qrPayload) => setDraft((d) => ({ ...d, donation: { ...d.donation, qrPayload } }))}
+          placeholder={t('mosqueAdmin.donationQrPh')}
+        />
+        <TextInput
+          style={styles.input}
+          value={draft.tileOrderCsv}
+          onChangeText={(tileOrderCsv) => setDraft((d) => ({ ...d, tileOrderCsv }))}
+          placeholder="events,donation,contact"
+        />
+        <TextInput
+          style={styles.input}
+          value={draft.schedules.screenWake}
+          onChangeText={(screenWake) =>
+            setDraft((d) => ({ ...d, schedules: { ...d.schedules, screenWake } }))
+          }
+          placeholder={t('mosqueAdmin.screenWakePh')}
+        />
+        <TextInput
+          style={styles.input}
+          value={draft.schedules.screenSleep}
+          onChangeText={(screenSleep) =>
+            setDraft((d) => ({ ...d, schedules: { ...d.schedules, screenSleep } }))
+          }
+          placeholder={t('mosqueAdmin.screenSleepPh')}
         />
 
         <ThemedText type="subtitle">{t('mosqueAdmin.layout')}</ThemedText>
@@ -218,10 +326,31 @@ export default function MosqueAdminScreen() {
           placeholder={t('mosqueAdmin.taraweehPh')}
         />
         <View style={styles.switchRow}>
+          <ThemedText>{t('mosqueAdmin.ramadanImsak')}</ThemedText>
+          <Switch
+            value={draft.ramadan.imsak}
+            onValueChange={(imsak) => setDraft((d) => ({ ...d, ramadan: { ...d.ramadan, imsak } }))}
+          />
+        </View>
+        <View style={styles.switchRow}>
+          <ThemedText>{t('mosqueAdmin.ramadanSuhur')}</ThemedText>
+          <Switch
+            value={draft.ramadan.suhur}
+            onValueChange={(suhur) => setDraft((d) => ({ ...d, ramadan: { ...d.ramadan, suhur } }))}
+          />
+        </View>
+        <View style={styles.switchRow}>
           <ThemedText>{t('mosqueAdmin.ramadanIftar')}</ThemedText>
           <Switch
             value={draft.ramadan.iftar}
             onValueChange={(iftar) => setDraft((d) => ({ ...d, ramadan: { ...d.ramadan, iftar } }))}
+          />
+        </View>
+        <View style={styles.switchRow}>
+          <ThemedText>{t('mosqueAdmin.ramadanTaraweeh')}</ThemedText>
+          <Switch
+            value={draft.ramadan.taraweeh}
+            onValueChange={(taraweeh) => setDraft((d) => ({ ...d, ramadan: { ...d.ramadan, taraweeh } }))}
           />
         </View>
         <View style={styles.switchRow}>
@@ -243,6 +372,14 @@ export default function MosqueAdminScreen() {
         />
 
         <ThemedText type="subtitle">{t('mosqueAdmin.pin')}</ThemedText>
+        <TextInput
+          style={styles.input}
+          value={oldPinInput}
+          onChangeText={setOldPinInput}
+          placeholder={t('mosqueAdmin.pinUnlockPh')}
+          secureTextEntry
+          keyboardType="number-pad"
+        />
         <TextInput
           style={styles.input}
           value={pinInput}
@@ -276,6 +413,23 @@ export default function MosqueAdminScreen() {
           </Pressable>
         </View>
         {backupMsg ? <ThemedText style={styles.msg}>{backupMsg}</ThemedText> : null}
+
+        <ThemedText type="subtitle">{t('mosqueAdmin.multiTvTitle')}</ThemedText>
+        {knownTvs.length ? (
+          knownTvs.map((tv) => (
+            <ThemedText key={`${tv.host}:${tv.port}`} type="small" themeColor="textSecondary">
+              {tv.name} · {tv.role ?? draft.role} · {tv.status} · {tv.host}:{tv.port}
+            </ThemedText>
+          ))
+        ) : (
+          <ThemedText type="small" themeColor="textSecondary">
+            {t('mosqueAdmin.multiTvEmpty')}
+          </ThemedText>
+        )}
+        <Pressable style={styles.btnSecondary} onPress={() => void pushAllTvs()}>
+          <ThemedText type="smallBold">{t('mosqueAdmin.multiTvPush')}</ThemedText>
+        </Pressable>
+        {multiPushMsg ? <ThemedText style={styles.msg}>{multiPushMsg}</ThemedText> : null}
 
         <Pressable style={[styles.btn, status !== 'connected' && styles.btnDisabled]} onPress={pushToTv}>
           <ThemedText type="smallBold">

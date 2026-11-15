@@ -3,6 +3,15 @@ export type MosqueAdminProfile = {
   name: string;
   address: string;
   contact: string;
+  logoUri: string;
+};
+
+export type MosqueAdminEvent = { title: string; when: string };
+
+export type MosqueAdminDonation = {
+  text: string;
+  iban: string;
+  qrPayload: string;
 };
 
 export type DisplayRole = 'main' | 'women' | 'entrance' | 'custom';
@@ -31,12 +40,15 @@ export type MosqueAdminDraft = {
     screenWake: string;
     screenSleep: string;
   };
+  tileOrderCsv: string;
+  events: MosqueAdminEvent[];
+  donation: MosqueAdminDonation;
   pinHash: string | null;
 };
 
 export function defaultMosqueAdminDraft(): MosqueAdminDraft {
   return {
-    profile: { name: '', address: '', contact: '' },
+    profile: { name: '', address: '', contact: '', logoUri: '' },
     role: 'main',
     customRoleLabel: '',
     layout: 'classic',
@@ -57,6 +69,9 @@ export function defaultMosqueAdminDraft(): MosqueAdminDraft {
       screenWake: '',
       screenSleep: '',
     },
+    tileOrderCsv: 'events,donation,contact',
+    events: [],
+    donation: { text: '', iban: '', qrPayload: '' },
     pinHash: null,
   };
 }
@@ -85,7 +100,10 @@ export function draftToMosquePatch(draft: MosqueAdminDraft): Record<string, unkn
   if (draft.tickerEn.trim()) tickerByLocale.en = draft.tickerEn.trim();
   if (draft.tickerAr.trim()) tickerByLocale.ar = draft.tickerAr.trim();
   return {
-    profile: draft.profile,
+    profile: {
+      ...draft.profile,
+      logoUri: draft.profile.logoUri.trim() || null,
+    },
     role: draft.role,
     customRoleLabel: draft.customRoleLabel,
     layout: draft.layout,
@@ -104,7 +122,9 @@ export function draftToMosquePatch(draft: MosqueAdminDraft): Record<string, unkn
       screenWake: draft.schedules.screenWake.trim() || null,
       screenSleep: draft.schedules.screenSleep.trim() || null,
     },
-    pinHash: draft.pinHash,
+    tileOrder: splitLocales(draft.tileOrderCsv),
+    events: draft.events.slice(0, 24),
+    donation: draft.donation,
   };
 }
 
@@ -112,6 +132,38 @@ export function mosqueConfigMessage(draft: MosqueAdminDraft) {
   return { t: 'mosqueConfig' as const, patch: draftToMosquePatch(draft) };
 }
 
-export function khutbaCaptionMessage(text: string) {
-  return { t: 'khutba' as const, action: 'caption' as const, text };
+export function khutbaCaptionMessage(text: string, original?: string, translation?: string) {
+  return { t: 'khutba' as const, action: 'caption' as const, text, original, translation };
+}
+
+export function khutbaScheduleMessage(at: string, text: string, slides?: string[]) {
+  return { t: 'khutba' as const, action: 'schedule' as const, at, text, slides };
+}
+
+export function khutbaPreloadMessage(text: string, slides: string[]) {
+  return { t: 'khutba' as const, action: 'preload' as const, text, slides };
+}
+
+export function khutbaSlideMessage(delta: number) {
+  return { t: 'khutba' as const, action: 'slide' as const, delta };
+}
+
+export function khutbaControlMessage(action: 'start' | 'stop' | 'pause') {
+  return { t: 'khutbaControl' as const, action };
+}
+
+export function khutbaClearMessage() {
+  return { t: 'khutba' as const, action: 'clear' as const };
+}
+
+export function captionStyleMessage(style: Record<string, unknown>) {
+  return { t: 'captionStyle' as const, style };
+}
+
+export function captionLangMessage(target: string[]) {
+  return { t: 'captionLang' as const, target };
+}
+
+export function pinChangeMessage(oldPin: string, newPin: string | null) {
+  return { t: 'pinChange' as const, oldPin, newPin };
 }

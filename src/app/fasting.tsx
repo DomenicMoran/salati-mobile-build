@@ -13,8 +13,13 @@ import {
   fastCountdown,
   fastedCount,
   formatDuration,
+  isRamadanMonth,
   useFasting,
 } from '@/features/fasting/store';
+import {
+  mobileRamadanMilestones,
+  nextMobileRamadanMilestone,
+} from '@/features/fasting/ramadanMilestones';
 import { useQadaCount } from '@/features/fasting/qada';
 import { useTimings } from '@/features/prayer-times/hooks';
 import { dayKey } from '@/features/tracker/store';
@@ -44,6 +49,11 @@ export default function FastingScreen() {
 
   const today = dayKey(now);
   const countdown = timings ? fastCountdown(timings.today.Fajr, timings.today.Maghrib, now) : null;
+  const ramadan =
+    timings && isRamadanMonth(timings.hijri?.month.number)
+      ? mobileRamadanMilestones(timings.today, now)
+      : null;
+  const ramadanNext = ramadan ? nextMobileRamadanMilestone(ramadan, now) : null;
   const fastedToday = !!data[today];
 
   return (
@@ -55,8 +65,33 @@ export default function FastingScreen() {
             {t('fasting.total')}: {fastedCount(data)}
           </ThemedText>
 
-          {timings && countdown && (
+          {ramadan && (
             <AnimatedListItem index={0}>
+              <ThemedView type="backgroundElement" style={styles.card}>
+                <ThemedText type="smallBold" themeColor="accent">
+                  {t('fasting.ramadanToday')}
+                </ThemedText>
+                {ramadan.map((row) => {
+                  const hh = String(row.at.getHours()).padStart(2, '0');
+                  const mm = String(row.at.getMinutes()).padStart(2, '0');
+                  return (
+                    <ThemedText key={row.key} type="small" themeColor="textSecondary">
+                      {t(row.labelKey)}: {hh}:{mm}
+                    </ThemedText>
+                  );
+                })}
+                {ramadanNext ? (
+                  <ThemedText type="default" themeColor="accent">
+                    {t('fasting.ramadanNextIn').replace('{event}', t(ramadanNext.labelKey))}:{' '}
+                    {formatDuration(ramadanNext.at.getTime() - now.getTime())}
+                  </ThemedText>
+                ) : null}
+              </ThemedView>
+            </AnimatedListItem>
+          )}
+
+          {timings && countdown && (
+            <AnimatedListItem index={ramadan ? 1 : 0}>
               <ThemedView type="backgroundSelected" style={styles.card}>
                 <View style={styles.phaseRow}>
                   <IconSymbol name={PHASE_ICON[countdown.phase]} size={16} color={colors.accent} />
