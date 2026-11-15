@@ -113,6 +113,10 @@ jobs:
         working-directory: ios
         run: pod install --repo-update
 
+      # jsi 57.0.8 + Xcode 26: „sending 'thisPtr' risks causing data races"
+      - name: ExpoModulesJSI — SWIFT_STRICT_CONCURRENCY=minimal
+        run: bash scripts/expo-jsi-concurrency-minimal.sh ios
+
       - name: Signing einrichten (Keychain + Zertifikat + Profile)
         env:
           P12_BASE64: ${{ secrets.IOS_DIST_P12_BASE64 }}
